@@ -133,6 +133,15 @@ def should_skip(path: Path) -> bool:
     return any(frag in s for frag in SKIP_PATH_FRAGMENTS)
 
 
+FENCE_RE = re.compile(r"^\s*```")
+INLINE_CODE_RE = re.compile(r"`[^`\n]*`")
+
+
+def strip_code_spans(line: str) -> str:
+    """Remove inline-code spans so wikilinks inside backticks are ignored."""
+    return INLINE_CODE_RE.sub("", line)
+
+
 def find_broken(scope: Path) -> list[tuple[Path, int, str]]:
     broken: list[tuple[Path, int, str]] = []
     for md in scope.rglob("*.md"):
@@ -142,7 +151,14 @@ def find_broken(scope: Path) -> list[tuple[Path, int, str]]:
             text = md.read_text(errors="ignore")
         except OSError:
             continue
-        for line_num, line in enumerate(text.splitlines(), 1):
+        in_fence = False
+        for line_num, raw_line in enumerate(text.splitlines(), 1):
+            if FENCE_RE.match(raw_line):
+                in_fence = not in_fence
+                continue
+            if in_fence:
+                continue
+            line = strip_code_spans(raw_line)
             for m in WIKILINK_RE.finditer(line):
                 # Drop display label after pipe and any leading bang for embeds.
                 target = m.group(1).split("|")[0].lstrip("!")

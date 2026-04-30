@@ -12,7 +12,7 @@ sources:
     type: gmail
     bin: ingest-gmail.py
     config:
-      account: adithya@eclipselabs.example
+      account: adithya@eclipse.builders
       labels:
         - "Eclipse"
         - "Inbox"
@@ -27,7 +27,7 @@ sources:
     type: slack
     bin: ingest-slack.py
     config:
-      workspace_id: T0XXXXXX
+      workspace_id: T04472N6YUU
       channels:
         - "general"
         - "deals"
@@ -45,7 +45,7 @@ sources:
     type: drive
     bin: ingest-drive.py
     config:
-      account: adithya@eclipselabs.example
+      account: adithya@eclipse.builders
       folders:
         - "Eclipse Labs / Sales"
         - "Eclipse Labs / Vendors"

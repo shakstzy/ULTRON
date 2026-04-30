@@ -69,11 +69,15 @@ What does NOT exist after a deep search across X, Reddit (r/algotrading, r/quant
 | Direction acc | 0.49 | 0.51 | both coin-flip |
 | PIT KS | 0.53 | 0.11 | calibration broken |
 
-Quote from a commenter: "Kronos pretraining used future data, which already shows the training is invalid. The actual application has no predictive ability." This is a single test on ETFs, not the full Chinese-A-share use case the paper targets, but it is the only public independent test and it failed.
+Quote from a commenter: "Kronos pretraining used future data, which already shows the training is invalid. The actual application has no predictive ability."
 
-### Open data-leakage finding
+**Caveats on this benchmark:** single unaudited GitHub-issue test, no reproducible harness attached. Kronos was used zero-shot on US ETFs when the paper's strongest result is on fine-tuned A-shares; cutoff hygiene, sample count, horizon, and normalization may have been suboptimal. Don't read this as the final word on Kronos. Read it as: nobody has yet published a counter-result showing Kronos beating a trivial baseline on a non-A-share liquid universe.
 
-[PR #263](https://github.com/shiyu-coder/Kronos/pull/263) — open, NOT merged as of 2026-04-30. A contributor flagged that `CustomKlineDataset.__getitem__` in the fine-tune pipeline computes mean/std over the FULL window including the prediction-target period, leaking future statistics into features. A clean fix is sitting unmerged. If you fine-tune on your own data without this patch, your backtest is corrupted.
+### Open data-leakage finding (narrow blast radius)
+
+[PR #263](https://github.com/shiyu-coder/Kronos/pull/263) — open, NOT merged as of 2026-04-30. A contributor flagged that `CustomKlineDataset.__getitem__` in `finetune_csv/` computes mean/std over the FULL lookback+prediction window, leaking future scale statistics into features.
+
+**Important nuance:** the bug is in the `finetune_csv/` path only. The Qlib path (`finetune/dataset.py`) already uses `past_x` correctly, so the paper's published A-share results are NOT contaminated by this bug. The blast radius is users who fine-tune from raw OHLCV CSVs without applying the patch — which is the common DIY case. If you fine-tune via Qlib you are fine; if you fine-tune via the CSV path you must apply PR #263 locally first.
 
 ### README's own disclaimer
 
@@ -132,16 +136,17 @@ Treat it as: an experimental signal generator, useful as one feature in an ensem
 
 If you decide to use Kronos with a 15-20% hard max drawdown cap:
 
-1. **Patch first.** Apply PR #263's normalization fix locally. Otherwise fine-tune backtests are leaking.
-2. **Pick liquid universe.** SP500, Nasdaq 100, top 30 crypto by ADV. Skip microcaps.
-3. **Fine-tune on post-cutoff data only.** July 2024 onward. Fully walk-forward.
-4. **Ensemble, never solo.** Kronos + 1-2 classical signals (cross-sectional momentum, residual-reversion). Equal-weight or risk-weight the signals.
-5. **Vol-target each leg** to ~10% annualized, total portfolio ~12% annualized.
-6. **Hard portfolio kill switch at 15% drawdown.** No averaging down. No "it'll come back."
-7. **Shadow trade 60-90 days.** Compare live forecasts to realized prices. Track calibration, not just PnL.
-8. **Quarter Kelly, capped.** Cap any single position at 5% of NAV.
-9. **No options, no leveraged products initially.** Spot or 1x perp only until shadow track exists.
-10. **Quarterly re-fit, monthly performance review.** Pull plug if calibration or hit-rate degrades two consecutive months.
+1. **Patch first.** If using the `finetune_csv/` path, apply PR #263's normalization fix locally. The Qlib path is already clean.
+2. **Demand cutoff disclosure before any capital.** Open issue #265 is unanswered. Without an exact pretraining cutoff, you cannot guarantee post-cutoff walk-forward validation is clean. If you can't get the cutoff, conservative assumption: anything before 2024-07-01 is contaminated.
+3. **Pick liquid universe and the cleanest deployment surface.** Best surface: **CME E-mini index futures** (ES, NQ, RTY) — high liquidity, simple OHLCV instruments, no options-surface calibration burden, and the asset class Kronos's bar-level architecture is best aimed at. Second-best: top-15 crypto perps by ADV (more contamination/regime risk). Worst: options delta-neutral (Kronos forecasts are under-dispersed; vol predictions are uncalibrated). Skip microcaps and equities until A-share-style cross-sectional fine-tunes are proven on US data.
+4. **Fine-tune on post-cutoff data only**, fully walk-forward, with capacity and slippage modeling baked into the backtest.
+5. **Ensemble, never solo.** Kronos + 1-2 classical signals (cross-sectional momentum, residual-reversion). Equal-weight or risk-weight the signals.
+6. **Vol-target the PORTFOLIO, not just legs.** ~10% portfolio annualized vol. Per-leg targets get loose under correlation spikes; gross-up control at portfolio level.
+7. **Hard portfolio kill switch at 15% drawdown.** No averaging down. Cooldown rule: stop adding new positions for 7 days after any 8% peak-to-trough.
+8. **Shadow trade 6 months minimum, not 60-90 days.** Codex flagged 60-90 days as too thin for a forecast model with under-dispersed distributions. Track calibration (PIT, Cover90), not just PnL. Kill the strategy if Cover90 stays below 0.7 for two months.
+9. **Quarter Kelly, capped.** Cap any single position at 5% of NAV.
+10. **No options, no leveraged products initially.** Cash futures or 1x perp only until shadow track exists.
+11. **Quarterly re-fit, monthly performance review.** Pull plug if calibration or hit-rate degrades two consecutive months.
 
 ## Sources
 
@@ -151,4 +156,5 @@ If you decide to use Kronos with a 15-20% hard max drawdown cap:
 - ETF benchmark: [issue #269](https://github.com/shiyu-coder/Kronos/issues/269)
 - Cutoff transparency request: [issue #265](https://github.com/shiyu-coder/Kronos/issues/265)
 - Leakage fix unmerged: [PR #263](https://github.com/shiyu-coder/Kronos/pull/263)
-- Cross-checked via Codex live web search (2026-04-30).
+- Reddit discussion: [r/quant — how well does Kronos function in reality](https://www.reddit.com/r/quant/comments/1mzdltb/how_well_does_kronos_function_in_reality/)
+- Cross-checked twice via Codex (gpt-5.5) live web search 2026-04-30. Gemini Pro consult attempted across 3 cached accounts, all rate-limited (Pro quota exhausted; Flash unavailable). Single biggest correction from Codex's adversarial round 2: PR #263 leakage is in `finetune_csv/` only, NOT the paper's Qlib path — paper results are not contaminated by that bug.

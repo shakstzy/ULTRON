@@ -1,0 +1,17 @@
+# Python dependencies for ULTRON bin scripts.
+# Install with: pip3 install -r _shell/bin/requirements.txt
+#               or: uv pip install -r _shell/bin/requirements.txt
+
+# Hashing
+blake3>=0.4
+
+# Config files
+PyYAML>=6.0
+
+# Gmail / Drive ingest (deferred — only needed once OAuth credentials exist)
+google-api-python-client>=2.100
+google-auth>=2.20
+google-auth-oauthlib>=1.0
+
+# Slack ingest (deferred)
+slack_sdk>=3.20

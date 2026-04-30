@@ -82,20 +82,45 @@ def resolve_ws(rest: str) -> Path | None:
     return None
 
 
+def _is_safe_relative(rest: str) -> bool:
+    """Reject absolute paths and any '..' parts to prevent path-traversal exploits in wikilinks."""
+    if not rest:
+        return False
+    if rest.startswith("/") or rest.startswith("\\"):
+        return False
+    parts = rest.replace("\\", "/").split("/")
+    return all(p not in ("..", "") for p in parts) or all(p != ".." for p in parts if p)
+
+
+def _ensure_within(base: Path, candidate: Path) -> Path | None:
+    """Resolve `candidate` and return it only if still under `base` after symlink resolution."""
+    try:
+        resolved = candidate.resolve()
+        base_resolved = base.resolve()
+        resolved.relative_to(base_resolved)
+    except (OSError, ValueError):
+        return None
+    return resolved if resolved.exists() else None
+
+
 def resolve_within_ws(file: Path, segment: str, target: str) -> Path | None:
+    if not _is_safe_relative(target):
+        return None
     ws_dir = current_workspace_dir(file)
     if ws_dir is None:
         return None
     cand = ws_dir / "wiki" / segment / f"{target}.md"
-    return cand if cand.exists() else None
+    return _ensure_within(ws_dir / "wiki" / segment, cand)
 
 
 def resolve_raw(file: Path, rest: str) -> Path | None:
+    if not _is_safe_relative(rest):
+        return None
     ws_dir = current_workspace_dir(file)
     if ws_dir is None:
         return None
     cand = ws_dir / "raw" / rest
-    return cand if cand.exists() else None
+    return _ensure_within(ws_dir / "raw", cand)
 
 
 def resolve_bare(file: Path, target: str) -> Path | None:
@@ -138,7 +163,7 @@ def should_skip(path: Path) -> bool:
     return any(frag in s for frag in SKIP_PATH_FRAGMENTS)
 
 
-FENCE_RE = re.compile(r"^\s*```")
+FENCE_RE = re.compile(r"^\s*(`{3,}|~{3,})")
 INLINE_CODE_RE = re.compile(r"`[^`\n]*`")
 
 
@@ -157,9 +182,17 @@ def find_broken(scope: Path) -> list[tuple[Path, int, str]]:
         except OSError:
             continue
         in_fence = False
+        fence_marker: str | None = None
         for line_num, raw_line in enumerate(text.splitlines(), 1):
-            if FENCE_RE.match(raw_line):
-                in_fence = not in_fence
+            m_fence = FENCE_RE.match(raw_line)
+            if m_fence is not None:
+                tok = m_fence.group(1)[0]   # '`' or '~'
+                if not in_fence:
+                    in_fence = True
+                    fence_marker = tok
+                elif fence_marker == tok:
+                    in_fence = False
+                    fence_marker = None
                 continue
             if in_fence:
                 continue

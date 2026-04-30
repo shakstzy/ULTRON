@@ -4,7 +4,8 @@ build-backlinks.py — refresh the ## Backlinks section in every global entity s
 
 For each `_global/entities/<type>/<slug>.md`, scan all workspaces for matching
 `wiki/entities/<*>/<slug>.md` pages and rewrite the stub's `## Backlinks`
-section.
+section. Generated wikilinks include the entity-type segment so they remain
+unambiguous when two types share a slug (`[[ws:eclipse/entities/people/sydney]]`).
 
 Usage:
     build-backlinks.py [--dry-run] [--workspace <ws>]
@@ -26,21 +27,26 @@ def slug_from_filename(p: Path) -> str:
     return p.stem
 
 
-def find_workspace_pages_for(slug: str) -> dict[str, Path]:
-    """Return {workspace_name: workspace_page_path} for every workspace with a page on this slug."""
-    out: dict[str, Path] = {}
+def find_workspace_pages_for(slug: str, workspace_filter: str | None = None) -> dict[str, list[Path]]:
+    """Return {workspace_name: [matching_pages]} for every workspace with a page on this slug.
+
+    If `workspace_filter` is given, only that workspace is scanned.
+    """
+    out: dict[str, list[Path]] = {}
     workspaces_dir = ULTRON_ROOT / "workspaces"
     if not workspaces_dir.exists():
         return out
     for ws_dir in sorted(workspaces_dir.iterdir()):
         if not ws_dir.is_dir() or ws_dir.name.startswith("_"):
             continue
+        if workspace_filter and ws_dir.name != workspace_filter:
+            continue
         entities_dir = ws_dir / "wiki" / "entities"
         if not entities_dir.exists():
             continue
         matches = sorted(entities_dir.rglob(f"{slug}.md"))
         if matches:
-            out[ws_dir.name] = matches[0]
+            out[ws_dir.name] = matches
     return out
 
 
@@ -65,18 +71,27 @@ def extract_context_line(page: Path) -> str:
     return "(no description)"
 
 
-def regenerate_backlinks(stub: Path, dry_run: bool) -> bool:
+def page_to_link_path(ws_name: str, page: Path) -> str:
+    """Convert workspaces/<ws>/wiki/entities/<type>/<slug>.md → 'ws:<ws>/entities/<type>/<slug>'."""
+    ws_root = ULTRON_ROOT / "workspaces" / ws_name / "wiki"
+    rel = page.relative_to(ws_root).with_suffix("")
+    return f"ws:{ws_name}/{rel.as_posix()}"
+
+
+def regenerate_backlinks(stub: Path, dry_run: bool, workspace_filter: str | None) -> bool:
     """Rewrite the ## Backlinks section in `stub`. Returns True if file content would change."""
     slug = slug_from_filename(stub)
-    workspace_pages = find_workspace_pages_for(slug)
+    workspace_pages = find_workspace_pages_for(slug, workspace_filter)
 
     new_lines = [BACKLINK_HEADER, "", BACKLINK_AUTO_MARKER, ""]
     if not workspace_pages:
         new_lines.append("- (no workspace pages reference this entity)")
     else:
-        for ws, page in sorted(workspace_pages.items()):
-            ctx = extract_context_line(page)
-            new_lines.append(f"- [[ws:{ws}/{slug}]] — {ctx}")
+        for ws, pages in sorted(workspace_pages.items()):
+            for page in pages:
+                ctx = extract_context_line(page)
+                link = page_to_link_path(ws, page)
+                new_lines.append(f"- [[{link}]] — {ctx}")
     new_lines.append("")
     new_block = "\n".join(new_lines)
 
@@ -111,7 +126,7 @@ def main() -> int:
 
     changed: list[Path] = []
     for stub in sorted(global_dir.rglob("*.md")):
-        if regenerate_backlinks(stub, args.dry_run):
+        if regenerate_backlinks(stub, args.dry_run, args.workspace):
             changed.append(stub)
 
     label = "would update" if args.dry_run else "updated"

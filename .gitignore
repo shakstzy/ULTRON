@@ -1,0 +1,34 @@
+# ULTRON .gitignore
+
+# Run state, ephemeral
+_shell/runs/
+_logs/
+_graphify/runs/
+
+# Credentials — NEVER commit
+_credentials/
+**/credentials/
+**/.credentials/
+**/secrets/
+.env
+.env.local
+.env.*
+
+# Local-only Claude Code overrides (may contain API keys)
+.claude/settings.local.json
+
+# OS noise
+**/.DS_Store
+**/Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Editor
+.idea/
+.vscode/
+*.swp

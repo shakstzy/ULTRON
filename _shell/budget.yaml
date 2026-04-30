@@ -1,0 +1,8 @@
+# API spend guard.
+#
+# Adithya is on Claude Max subscription with no per-request billing,
+# so the cap is set effectively-disabled. Re-enable by lowering
+# mtd_cap_usd if API billing ever applies.
+
+mtd_cap_usd: 999999
+warn_at_pct: 80

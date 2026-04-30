@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.adithya.ultron.ingest-eclipse</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>-lc</string>
+    <string>cd /Users/shakstzy/ULTRON &amp;&amp; _shell/bin/run-stage.sh ingest eclipse</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <array><dict>
+    <key>Hour</key><integer>2</integer>
+    <key>Minute</key><integer>30</integer>
+  </dict></array>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key><string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <key>ULTRON_ROOT</key><string>/Users/shakstzy/ULTRON</string>
+    <key>HOME</key><string>/Users/shakstzy</string>
+  </dict>
+  <key>StandardOutPath</key><string>/Users/shakstzy/ULTRON/_logs/ingest-eclipse.out.log</string>
+  <key>StandardErrorPath</key><string>/Users/shakstzy/ULTRON/_logs/ingest-eclipse.err.log</string>
+  <key>RunAtLoad</key><false/>
+  <key>WorkingDirectory</key><string>/Users/shakstzy/ULTRON</string>
+</dict>
+</plist>

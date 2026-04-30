@@ -1,0 +1,20 @@
+# Eclipse — declared launchd cadence
+
+workspace: eclipse
+
+jobs:
+  - name: ingest-eclipse
+    stage: ingest
+    schedule:
+      hour: 2
+      minute: 30
+    plist_label: com.adithya.ultron.ingest-eclipse
+
+  - name: lint-eclipse
+    stage: lint
+    schedule:
+      hour: 4
+      minute: 0
+    plist_label: com.adithya.ultron.lint-eclipse
+
+# audit and weekly-review are global (cross-workspace), declared in _shell/plists/

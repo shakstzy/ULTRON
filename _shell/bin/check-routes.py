@@ -102,6 +102,11 @@ def resolve_bare(file: Path, target: str) -> Path | None:
     ws_dir = current_workspace_dir(file)
     if ws_dir is None:
         return None
+    # First: top-level wiki file (e.g., [[overview]] → wiki/overview.md).
+    top = ws_dir / "wiki" / f"{target}.md"
+    if top.exists():
+        return top
+    # Then: entity lookup under wiki/entities/<type>/.
     entities_dir = ws_dir / "wiki" / "entities"
     if not entities_dir.exists():
         return None

@@ -1,0 +1,18 @@
+# Health — declared launchd cadence
+
+workspace: health
+
+jobs:
+  - name: ingest-health
+    stage: ingest
+    schedule:
+      hour: 2
+      minute: 40
+    plist_label: com.adithya.ultron.ingest-health
+
+  - name: lint-health
+    stage: lint
+    schedule:
+      hour: 4
+      minute: 10
+    plist_label: com.adithya.ultron.lint-health

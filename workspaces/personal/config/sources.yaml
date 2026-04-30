@@ -1,0 +1,44 @@
+# Personal — declared ingestion sources
+#
+# NOTE: ingest is currently deferred. Credentials and account specifics
+# are placeholders until Adithya provisions them.
+
+workspace: personal
+wiki: true
+
+sources:
+  - id: gmail-personal
+    type: gmail
+    bin: ingest-gmail.py
+    config:
+      account: adithya.shak.kumar@gmail.com
+      labels:
+        - "Inbox"
+      exclude_labels:
+        - "Promotions"
+        - "Spam"
+        - "Eclipse"
+        - "Outerscope"
+      lookback_days: 1
+      lookback_days_initial: 365
+    output_path: raw/gmail/{YYYY-MM}/
+
+  - id: imessage-personal
+    type: imessage
+    bin: ingest-imessage.py
+    config:
+      contacts: []   # populate with phone numbers / Apple IDs of personal contacts
+      lookback_hours: 24
+    output_path: raw/imessage/{YYYY-MM}/
+
+  - id: manual-notes
+    type: manual
+    config:
+      watch_path: raw/manual/_inbox/
+      after_ingest: move_to_dated_subdir
+    output_path: raw/manual/{YYYY-MM}/
+
+global_settings:
+  attachments_inline: true
+  vision_model: sonnet
+  hash_algorithm: blake3

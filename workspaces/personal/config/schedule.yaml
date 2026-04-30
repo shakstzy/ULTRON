@@ -1,0 +1,18 @@
+# Personal — declared launchd cadence
+
+workspace: personal
+
+jobs:
+  - name: ingest-personal
+    stage: ingest
+    schedule:
+      hour: 2
+      minute: 35
+    plist_label: com.adithya.ultron.ingest-personal
+
+  - name: lint-personal
+    stage: lint
+    schedule:
+      hour: 4
+      minute: 5
+    plist_label: com.adithya.ultron.lint-personal

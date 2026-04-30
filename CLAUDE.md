@@ -1,6 +1,6 @@
 # ULTRON — Root
 
-You are in `~/ULTRON/`, a markdown-only personal memory and knowledge management system. ULTRON is the canonical Life-OS for Adithya. It replaces the prior QUANTUM and SHAKOS systems.
+You are in `~/ULTRON/`, a markdown-only personal memory and knowledge management system. ULTRON is the canonical Life-OS for Adithya.
 
 ## Tiers
 

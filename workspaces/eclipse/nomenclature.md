@@ -1,6 +1,6 @@
-# <Workspace> Nomenclature
+# Eclipse Nomenclature
 
-This file documents file-system conventions and the routing manual for this workspace. The wiki agent and lint agent both read this to know where things go.
+This file documents file-system conventions and the routing manual for workspace `eclipse`. The wiki agent and lint agent both read this to know where things go.
 
 ## File-system conventions
 
@@ -9,15 +9,18 @@ This file documents file-system conventions and the routing manual for this work
 - Wiki entity pages: `wiki/entities/<type>/<slug>.md` (type matches `schema.md` types).
 - Wiki concept pages: `wiki/concepts/<concept-slug>.md`.
 - Wiki synthesis pages: `wiki/synthesis/<topic-slug>.md`.
-- `_meta/lint-<YYYY-MM-DD>.md` per lint run.
+- `_meta/lint-<YYYY-MM-DD>.md` per lint run; `_meta/lint-<YYYY-WW>.md` for weekly rollups.
 
 ## Routing table — by query type
-
-<populated at bootstrap from Q3 + Q6>
 
 | Query type | Read first |
 |---|---|
 | "Who is X?" | `wiki/entities/people/<x>.md`, then `[[@x]]` |
+| "What's our status with company Y?" | `wiki/entities/companies/<y>.md` → linked synthesis pages |
+| "What did Sydney say about Z last week?" | `raw/gmail/<latest>/...` (verbatim) → `raw/slack/<latest>/...` |
+| "Active BD pipeline?" | `wiki/synthesis/bd-pipeline.md` (regenerated weekly) |
+| "What's the term sheet language for vendor V?" | `raw/drive/<latest>/...` (NEVER summarized in wiki) |
+| "What's our audio QA process?" | `wiki/concepts/audio-qa.md` |
 
 ## When the wiki agent creates a new page
 

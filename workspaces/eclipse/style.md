@@ -1,12 +1,15 @@
-# <Workspace> Style
+# Eclipse Style
 
 ## Capitalization
 
-<workspace-specific capitalization rules from bootstrap Q5>
+- "Eclipse Labs" (full company name) and "Eclipse" (workspace shorthand).
+- Vendor names: as the vendor capitalizes them (Fluffle, Mercor, ElevenLabs, OpenAI, Deepgram).
 
 ## Numbers
 
-<format conventions: dollars, percentages, dates, units>
+- ARR: `$XK` or `$X.XM`. Never `$X thousand`.
+- Pipeline value: `$XK` per opportunity, `$XM` for aggregates.
+- Dates: ISO `YYYY-MM-DD` in frontmatter; "Apr 15" or "April 15, 2026" in prose.
 
 ## Frontmatter
 
@@ -15,4 +18,5 @@
 
 ## Tables
 
-<workspace-specific table conventions>
+- Decision matrices use markdown tables with explicit columns.
+- Pipeline tables: stage, company, contact, last touch, next step.

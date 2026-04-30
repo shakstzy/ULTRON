@@ -11,12 +11,15 @@
 #     - Outputs land in `./graphify-out/` of the cwd at build time.
 #
 # Strategy (v1):
-#   1. For each workspace with `wiki/` content, build per-workspace graphs by
-#      cd'ing into the workspace and shelling out to `graphify cluster-only`
-#      on an existing graph if available. If no graph exists yet, skip.
-#   2. Merge per-workspace graphs into the cross-workspace graph using
-#      `graphify merge-graphs`.
-#   3. Copy the merged outputs to `_graphify/`.
+#   This script ONLY merges graphs that already exist at
+#   `workspaces/<ws>/graphify-out/graph.json`. It does NOT build per-workspace
+#   graphs itself, because the upstream graphify v5 build path is driven by
+#   Claude Code (`/graphify <path>`) and not by a plain bash entrypoint.
+#
+#   To build a per-workspace graph, run `/graphify workspaces/<ws>/wiki` from
+#   inside Claude Code while ULTRON is open. After per-workspace graphs exist,
+#   re-run this script (manually or via the audit stage) to merge them into
+#   `_graphify/GRAPH.json` and emit `_graphify/GRAPH_REPORT.md`.
 #
 # This script is best-effort. If `graphify` is not installed, it writes a
 # placeholder report and exits 0 (audit must not block on graphify).

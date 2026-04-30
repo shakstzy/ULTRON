@@ -20,7 +20,7 @@ Precise, conservative, low-emotion. Numbers cited verbatim. Currencies always ex
 ## Hard rules (workspace-specific)
 
 1. Every dollar figure has a currency and a date. No bare `1234` numbers.
-2. Account numbers, routing numbers, SSN, full credit-card numbers NEVER appear in `wiki/`. Last 4 only, and only when needed for disambiguation. Full numbers stay in `raw/` (which itself is gitignored beyond the manifest).
+2. Account numbers, routing numbers, SSN, full credit-card numbers NEVER appear in `wiki/`. Last 4 only, and only when needed for disambiguation. Full numbers stay in `raw/`. (Note: `raw/` IS tracked in git per the spec; the privacy boundary is the wiki/raw split, not the .gitignore. If you want raw uncommitted, add a `.gitignore` rule.)
 3. Synthesis pages over 200 lines split by year (`2026-cash-flow.md`, `2026-holdings.md`).
 4. Commit messages: `chore(finance): <stage> <YYYY-MM-DD>`.
 

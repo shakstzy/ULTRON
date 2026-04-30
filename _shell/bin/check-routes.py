@@ -164,7 +164,10 @@ def should_skip(path: Path) -> bool:
 
 
 FENCE_RE = re.compile(r"^\s*(`{3,}|~{3,})")
-INLINE_CODE_RE = re.compile(r"`[^`\n]*`")
+# Match variable-length inline code spans per CommonMark: a run of N backticks
+# closes only on another run of exactly N backticks. Handles `code`, ``co`de``,
+# and ```multi`tick```.
+INLINE_CODE_RE = re.compile(r"(`+)(?:(?!\1).)+?\1", re.DOTALL)
 
 
 def strip_code_spans(line: str) -> str:

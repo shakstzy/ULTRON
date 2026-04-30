@@ -15,7 +15,7 @@ if [[ -z "$STAGE" ]]; then
   exit 2
 fi
 
-ULTRON_ROOT="${ULTRON_ROOT:-$HOME/ULTRON}"
+export ULTRON_ROOT="${ULTRON_ROOT:-$HOME/ULTRON}"
 
 # 1. Stage validation BEFORE any state mutation.
 case "$STAGE" in
@@ -120,17 +120,19 @@ case "$STAGE" in
     python3 "$ULTRON_ROOT/_shell/bin/ingest-driver.py" "$WORKSPACE" "$RUN_ID" \
       > "$RUN_DIR/output/ingest-driver.log" 2>&1 || EC=$?
 
-    # If the driver staged new raw files AND the workspace has wiki: true,
-    # invoke the wiki agent to synthesize.
-    NEW_RAW="$RUN_DIR/input/new-raw.txt"
-    WIKI_AGENT="$ULTRON_ROOT/workspaces/$WORKSPACE/agents/wiki-agent.md"
-    if [[ -s "$NEW_RAW" && -f "$WIKI_AGENT" ]]; then
-      WIKI_FLAG="$(grep -E '^\s*wiki:\s*true' "$ULTRON_ROOT/workspaces/$WORKSPACE/config/sources.yaml" 2>/dev/null || true)"
-      if [[ -n "$WIKI_FLAG" ]]; then
-        claude_invoke \
-          "$WIKI_AGENT" \
-          "$RUN_DIR/output/wiki-result.json" \
-          "$RUN_DIR/output/wiki-stderr.log" || EC=$?
+    # Skip wiki-agent invocation if ingest itself failed — synthesizing on a
+    # partial / corrupted raw set is worse than skipping.
+    if [[ $EC -eq 0 ]]; then
+      NEW_RAW="$RUN_DIR/input/new-raw.txt"
+      WIKI_AGENT="$ULTRON_ROOT/workspaces/$WORKSPACE/agents/wiki-agent.md"
+      if [[ -s "$NEW_RAW" && -f "$WIKI_AGENT" ]]; then
+        WIKI_FLAG="$(grep -E '^\s*wiki:\s*true' "$ULTRON_ROOT/workspaces/$WORKSPACE/config/sources.yaml" 2>/dev/null || true)"
+        if [[ -n "$WIKI_FLAG" ]]; then
+          claude_invoke \
+            "$WIKI_AGENT" \
+            "$RUN_DIR/output/wiki-result.json" \
+            "$RUN_DIR/output/wiki-stderr.log" || EC=$?
+        fi
       fi
     fi
     ;;

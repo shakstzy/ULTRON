@@ -1,0 +1,18 @@
+# Finance — declared launchd cadence
+
+workspace: finance
+
+jobs:
+  - name: ingest-finance
+    stage: ingest
+    schedule:
+      hour: 2
+      minute: 45
+    plist_label: com.adithya.ultron.ingest-finance
+
+  - name: lint-finance
+    stage: lint
+    schedule:
+      hour: 4
+      minute: 15
+    plist_label: com.adithya.ultron.lint-finance

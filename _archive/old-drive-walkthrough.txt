@@ -1,0 +1,1261 @@
+================================================================================
+OLD/ — root contents
+================================================================================
+Top-level files: 597
+Top-level subfolders: 76
+Total nested files: 22,478
+Total size: 28.0GB
+Total nested folders: 1,169
+Max depth: 10
+All file types: octet-stream:8781, jpg:6656, x-chdr:3260, gdoc:894, png:714, mp4:684, txt:429, gsheet:145, x-csharp:111, pdf:104, audio:88, gslide:73, docx:65, vnd.google-apps.drawing:65, img:52, shortcut:41, x-gzip:40, x-freemind:38, sldworks:37, x-font-ttf:25, gform:18, rtf:17, html:16, gif:16, xml:15, xlsx:11, pptx:11, css:8, m4a:8, x-dosexec:7
+
+--------------------------------------------------------------------------------
+LOOSE FILES AT ROOT OF OLD/ (not inside any subfolder)
+--------------------------------------------------------------------------------
+  [  gsheet] s&p projections  (4.8KB, 2026-05-01)
+  [     pdf] assessment forms.pdf  (55.8MB, 2026-04-05)
+  [    gdoc] Moving Out  (1.7MB, 2026-02-24)
+  [    docx] Patent Application - Disclosure - IOT Pill Box.docx  (438.0KB, 2025-12-09)
+  [  gsheet] AMBAL KUMAR 25TH ANNIVERSARY PLANNING - NOV 2  (1.0KB, 2025-11-02)
+  [     pdf] Adithya Kumar.pdf  (123.5KB, 2025-09-24)
+  [    gdoc] SEPT 19TH  (5.3KB, 2025-09-20)
+  [    gdoc] SHAK SESSIONS  (4.2KB, 2025-09-18)
+  [    gdoc] PHILIP FLOW  (1.0KB, 2025-09-14)
+  [    gdoc] Seedbox Investor Memo Creation
+  (18.8KB, 2025-07-29)
+  [    gdoc] Polkadot US Growth Strategy
+  (37.7KB, 2025-07-29)
+  [    gdoc] Product Verticals and Marketing Plans
+  (38.2KB, 2025-07-29)
+  [    gdoc] Product Verticals and Marketing Plans
+  (38.1KB, 2025-07-29)
+  [    gdoc] Decision Making Capstone - Adithya Kumar  (120.3KB, 2025-07-23)
+  [    gdoc] Predicting the Unseen: Generative Modeling of Protein Conformational Dynamics  (19.5KB, 2025-07-15)
+  [    gdoc] Engineering Trust: A Dual-Pronged Approach to Verifiable Safety and Provenance in Artificial Intelligence  (23.0KB, 2025-07-15)
+  [    gdoc] The Efficiency Imperative: A Dual-Frontier Approach to Sustainable and Accessible AI  (20.7KB, 2025-07-15)
+  [    gdoc] Generative Physics: A Framework for Geometrically and Physically-Aware 4D World Models  (11.3KB, 2025-07-15)
+  [     pdf] Adithya Kumar.pdf  (123.0KB, 2025-06-19)
+  [    gdoc] Copy of The Invisible OS  (976.7KB, 2025-06-19)
+  [  gsheet] Copy of Unit Economics Assignment  (2.0KB, 2025-04-25)
+  [  gslide] Shak's Vision Board 2025  (11.8MB, 2024-12-21)
+  [    gdoc] ADITHYA AND RISHIKA  (24.7MB, 2024-12-18)
+  [     wav] rishika.wav  (47.4MB, 2024-12-16)
+  [vnd.google-apps.drawing] stanford - airbnb [updated]  (940.7KB, 2024-11-30)
+  [    gdoc] ADITHYA IMPROVEMENTS  (1.1MB, 2024-11-09)
+  [    gdoc] ADITHYA IMPROVEMENT  (1.0KB, 2024-11-04)
+  [     png] logoaltposition.png  (2.2MB, 2024-10-26)
+  [     png] logoaltmedium.png  (3.2MB, 2024-10-26)
+  [     png] logoalttransparent.png  (7.6MB, 2024-10-26)
+  [    gdoc] Stanford LEAD - Google in China Case Analysis  (1.0KB, 2024-10-25)
+  [   gform] College Visit Checklist  (1.3KB, 2024-10-25)
+  [vnd.google-apps.drawing] stanford - airbnb  (1.0KB, 2024-10-08)
+  [vnd.google-apps.drawing] stanford  (1.0KB, 2024-10-08)
+  [  gsheet] Shak - NW 2023  (191.8KB, 2024-04-23)
+  [    gdoc] palo meetings  (2.0KB, 2024-02-16)
+  [     png] Frame 1073715519.png  (695.0B, 2024-02-01)
+  [     png] Frame 1073715519.png  (748.0B, 2024-02-01)
+  [     png] Frame 1073715519.png  (577.0B, 2024-02-01)
+  [     png] Group 1073715676.png  (623.0B, 2024-02-01)
+  [     png] Group 1073715676.png  (1.8KB, 2024-02-01)
+  [     png] layer n logo.png  (4.1KB, 2024-02-01)
+  [     png] layer n logo.png  (9.0KB, 2024-02-01)
+  [     pdf] EDWireReceipt.pdf  (68.3KB, 2024-01-30)
+  [     pdf] account-history.pdf  (62.8KB, 2024-01-25)
+  [  gsheet] Shak - NET WORTH 2024  (6.4KB, 2024-01-21)
+  [  gsheet] aliexpress leds  (1.0KB, 2024-01-18)
+  [    gdoc] Ambal Balakrishnan Resume - Servicenow  (7.0KB, 2024-01-14)
+  [   gform] Video Questions for Chairmans Video Interview  (8.6KB, 2024-01-10)
+  [    xlsx] Shak LA REI - 2024.xlsx  (307.4KB, 2024-01-07)
+  [  gsheet] Shak Address & Employment History  (1.0KB, 2024-01-06)
+  [    gdoc] Coinbase APM Writing Assessment - Adithya Kumar  (4.6KB, 2023-11-29)
+  [    gdoc] Rainbow  (2.1KB, 2023-11-29)
+  [    gdoc] UCLA MBA App  (8.7KB, 2023-10-25)
+  [    gdoc] Layer N Parternships Lead BD Prep Doc - Final  (244.5KB, 2023-10-23)
+  [    gdoc] Layer N  (8.7KB, 2023-10-17)
+  [  gsheet] Shak - NetWorth  (7.0KB, 2023-10-13)
+  [     pdf] Adithya Kumar - Product.pdf  (66.4KB, 2023-10-05)
+  [  gsheet] LA Housing  (2.7KB, 2023-09-26)
+  [    gdoc] Sept 17th wizard Tyler shak  (2.0KB, 2023-09-18)
+  [  gsheet] Camry Servicing  (1.0KB, 2023-09-15)
+  [    docx] EF Invoice - Travel Reimbursement for Aug NY trip.docx  (456.6KB, 2023-09-13)
+  [    docx] EF Invoice - Travel Reimbursement for Sept SF trip.docx  (456.6KB, 2023-09-13)
+  [  gsheet] Shak - Job Decision Making Framework  (1.3KB, 2023-09-07)
+  [    gdoc] RX Server Build Plan  (2.1KB, 2023-09-05)
+  [    gdoc] Arya bday post  (2.0KB, 2023-08-30)
+  [    gdoc] ZK Proofs  (1.0KB, 2023-08-29)
+  [    gdoc] Entrepreneur First Application  (1.0KB, 2023-08-24)
+  [  gsheet] REI Gilmore Analysis  (15.5KB, 2023-08-22)
+  [  gsheet] Adi - GPA calculation  (3.4KB, 2023-08-17)
+  [  gslide] Orthobullets Presentation  (12.1KB, 2023-07-29)
+  [  gsheet] Shak - Full Time Recruitment - 2023  (19.1KB, 2023-07-21)
+  [    gdoc] Breakthrough Challenge 2023 - Bayes  (7.9KB, 2023-06-22)
+  [    gdoc] Breakthrough Challenge 2023  (8.1KB, 2023-06-22)
+  [    gdoc] Rob <> Shak Notes - 1/25/2023  (3.1KB, 2023-05-31)
+  [    gdoc] May 14th  (3.1KB, 2023-05-15)
+  [    gdoc] May 1  (4.1KB, 2023-05-02)
+  [    gdoc] APRIL 29  (3.2KB, 2023-04-30)
+  [  gsheet] Data Values - Digi  (0.0B, 2023-04-26)
+  [    gdoc] Verkada Prep  (5.6KB, 2023-04-20)
+  [  gsheet] Car Search - Mar 2023  (92.7KB, 2023-04-17)
+  [    gdoc] April 15th  (1.0KB, 2023-04-16)
+  [    gdoc] GS India Nehru Ministry - Arya Kumar  (6.7KB, 2023-04-15)
+  [    gdoc] March 29th  (1.0KB, 2023-03-30)
+  [    gdoc] March 28  (5.4KB, 2023-03-29)
+  [    gdoc] MARCH 27  (3.2KB, 2023-03-27)
+  [    gdoc] Sponsorship Packages - Arya Kumar  (3.2KB, 2023-03-16)
+  [    gdoc] Adithya Kumar SWE Resume - 2023  (60.2KB, 2023-03-15)
+  [  gsheet] Find Emails  (1.0KB, 2023-03-12)
+  [    gdoc] AP -> ACC  (1.0KB, 2023-02-24)
+  [    gdoc] Jane Street Assignment  (5.0KB, 2023-02-23)
+  [    gdoc] JPMC Onboarding  (19.1KB, 2023-02-17)
+  [    gdoc] China_Kumar_Arya  (3.7KB, 2023-02-09)
+  [  gsheet] Anamika  (1.0KB, 2023-02-07)
+  [    gdoc] Success at First Job  (6.3KB, 2023-01-31)
+  [    gdoc] Kleiner Perkins 2022 - Adithya Kumar  (4.2KB, 2023-01-15)
+  [    gdoc] Kleiner Perkins 2021 - Adithya Kumar  (5.1KB, 2023-01-15)
+  [  gsheet] Activity Template: Sprint Backlog  (11.2KB, 2023-01-15)
+  [  gslide] Create a SMART Goal and KPIs  (730.4KB, 2023-01-14)
+  [  gslide] Copy of Create a SMART Goal and KPIs  (730.4KB, 2023-01-14)
+  [    xlsx] sauce and spoon project.xlsx  (152.0KB, 2023-01-14)
+  [  gsheet] Activity Template: Project Plan  (11.8KB, 2023-01-14)
+  [    gdoc] Google PM Course: Refine your time estimates  (2.3KB, 2023-01-14)
+  [    gdoc] Google PM Course: Create survey questions  (2.1KB, 2023-01-14)
+  [    gdoc] Google PM Course: Refine your time estimates  (3.2KB, 2023-01-14)
+  [  gslide] Activity Template: Sauce & Spoon Test Launch Findings  (215.8KB, 2023-01-13)
+  [  gslide] Activity Template: Sauce & Spoon Test Launch Findings  (215.8KB, 2023-01-13)
+  [    gdoc] Google PM Course: Senior Stakeholder Email  (1.2KB, 2023-01-13)
+  [  gslide] Google PM Course: Impact Report  (314.5KB, 2023-01-13)
+  [    gdoc] Activity Template: Email Coalition  (1.2KB, 2023-01-13)
+  [    gdoc] Google PM Course Capstone: Project Charter  (3.7KB, 2023-01-13)
+  [  gsheet] PC Build  (1.0KB, 2022-11-27)
+  [  gsheet] JPM Chase  (1.0KB, 2022-11-26)
+  [     zip] New folder (2).zip  (545.6KB, 2022-11-21)
+  [    gdoc] Cisco Case  (4.2KB, 2022-11-09)
+  [     mp3] up top (icelandic).mp3  (3.4MB, 2022-10-30)
+  [     pdf] HW4 (1).pdf  (3.6KB, 2022-10-26)
+  [    gdoc] hearing notes  (2.2KB, 2022-10-21)
+  [    gdoc] Hermes Case  (3.2KB, 2022-10-19)
+  [    gdoc] UGBA 100 Essay  (3.1KB, 2022-10-18)
+  [     pdf] Kumar_Adithya.pdf  (250.4KB, 2022-10-04)
+  [    gdoc] 2022 APM Essay Responses  (8.3KB, 2022-09-26)
+  [    gdoc] bday post  (1.0KB, 2022-09-19)
+  [     pdf] Adithya Kumar.pdf  (163.2KB, 2022-09-15)
+  [shortcut] NVESTR - QØ Team Folder  (0.0B, 2022-09-05)
+  [    gdoc] Rio Session Lyrics - AUG 28TH  (4.2KB, 2022-08-29)
+  [    gdoc] Facebook RPM Program 2022 Responses - Adithya Kumar  (4.1KB, 2022-08-13)
+  [  gsheet] Road2Millis  (13.1KB, 2022-07-28)
+  [    gdoc] Cover Letter  (5.3KB, 2022-07-11)
+  [     pdf] Adithya_Kumar Resume.pdf  (162.9KB, 2022-07-03)
+  [  gsheet] Adi TODO  (2.4KB, 2022-07-03)
+  [    gdoc] Novelty Description  (34.5KB, 2022-06-28)
+  [  gsheet] Adi Journaling  (1.0KB, 2022-06-04)
+  [    gdoc] ShakLyrics Summer 22  (1.0KB, 2022-05-17)
+  [  gsheet] LA Summer 2022  (1.0KB, 2022-05-15)
+  [    gdoc] LinkedIn Backup  (2.1KB, 2022-05-13)
+  [    gdoc] cs170  (477.9KB, 2022-05-11)
+  [shortcut] Adi Kumar  (0.0B, 2022-05-08)
+  [shortcut] murda beatz drum kit.zip  (0.0B, 2022-05-08)
+  [shortcut] Krishnamurthy Layopasana 3 Compositions  (0.0B, 2022-05-07)
+  [shortcut] TUSKs-Audio  (0.0B, 2022-05-07)
+  [shortcut] Adi Kumar TA  (0.0B, 2022-05-06)
+  [shortcut] IMG_20191203_094509 - Adithya Shakthi Kumar.jpg  (0.0B, 2022-05-06)
+  [shortcut] EADC  (0.0B, 2022-05-05)
+  [shortcut] Sci-Tech Stuff  (0.0B, 2022-05-05)
+  [  gsheet] UC Berkeley Course Plan  (10.1KB, 2022-04-26)
+  [    gdoc] 106 Project  (23.0KB, 2022-02-12)
+  [    gdoc] Virginia Tech SOP - Reviewed  (5.0KB, 2022-02-09)
+  [    gdoc] Georgia Tech SOP - Edited Version  (6.4KB, 2022-02-04)
+  [    gdoc] signing caption  (2.1KB, 2022-01-19)
+  [    gdoc] ODX Application Questions (Adithya Kumar)  (13.9KB, 2022-01-10)
+  [    gdoc] Kleiner Perkins MET Engineering 2022 Application - Adithya Kumar  (2.7KB, 2022-01-04)
+  [    gdoc] Kleiner Perkins Engineering 2021 - Adithya Kumar  (2.8KB, 2021-12-11)
+  [  msword] PROP-0721.AmigoRecords.Shak.(03).11292021.doc  (73.0KB, 2021-11-30)
+  [    gdoc] PM Applications  (5.2KB, 2021-11-15)
+  [    gdoc] 107 Final Paper  (10.1KB, 2021-11-09)
+  [  gsheet] email bot  (0.0B, 2021-09-15)
+  [  gslide] Groov Pitch Deck  (0.0B, 2021-06-28)
+  [  gsheet] Accounts vs Orders  (0.0B, 2021-06-09)
+  [    gdoc] Visual aid  (0.0B, 2021-06-07)
+  [    gdoc] Moms Day  (0.0B, 2021-05-10)
+  [    gdoc] Final Demo  (0.0B, 2021-05-08)
+  [    gdoc] Blog  (0.0B, 2021-04-05)
+  [    gdoc] Term Paper  (0.0B, 2021-03-28)
+  [    gdoc] 2021 Bookmarks Export  (0.0B, 2021-03-27)
+  [    gdoc] Adi A/B Testing Summary  (0.0B, 2021-03-15)
+  [    gdoc] ADI script  (0.0B, 2021-03-14)
+  [vnd.google-apps.script] Email Bot  (0.0B, 2021-03-02)
+  [    gdoc] Recruitment Behaviorals  (0.0B, 2021-02-24)
+  [    gdoc] Untitled document  (0.0B, 2021-02-18)
+  [  gslide] Propend Pitch  (0.0B, 2021-02-08)
+  [    gdoc] Thatha  (0.0B, 2021-01-13)
+  [    gdoc] GMAT Prep  (0.0B, 2021-01-11)
+  [  gsheet] Cigna  (0.0B, 2020-12-31)
+  [    gdoc] Final Paper  (0.0B, 2020-12-14)
+  [  gsheet] GMAT Plan  (0.0B, 2020-12-14)
+  [  gsheet] Profs  (0.0B, 2020-12-09)
+  [    gdoc] Instagram Post  (0.0B, 2020-12-08)
+  [    gdoc] Lyrics/Script  (0.0B, 2020-12-03)
+  [    gdoc] Lyrics  (0.0B, 2020-12-03)
+  [  gslide] Minola · SlidesCarnival  (0.0B, 2020-12-01)
+  [  gslide] Minola · SlidesCarnival  (0.0B, 2020-12-01)
+  [    gdoc]  Spec  (0.0B, 2020-11-30)
+  [    gdoc] Artist Questions  (0.0B, 2020-11-25)
+  [    gdoc] IEEE Marketing Blog  (0.0B, 2020-11-22)
+  [    gdoc] Copy of Growth Mindset exercise-Coaching-CCSF  (0.0B, 2020-11-17)
+  [    gdoc] MC Assignment Sources Used  (0.0B, 2020-11-15)
+  [    gdoc] Week 8 DeCal  (0.0B, 2020-11-09)
+  [    gdoc] Paypal Assignment  (0.0B, 2020-11-05)
+  [    gdoc] Stat Writing Assignment  (0.0B, 2020-10-31)
+  [    gdoc] UGBA Discussion Post  (0.0B, 2020-10-31)
+  [  gsheet] Recruitment  (0.0B, 2020-10-30)
+  [    gdoc] CCSF Coaching  (0.0B, 2020-10-27)
+  [    gdoc] Copy of Growth Mindset exercise-Coaching-CCSF  (0.0B, 2020-10-27)
+  [    gdoc] PM Journal 3  (0.0B, 2020-10-26)
+  [     png] XR@B Signature.png  (62.2KB, 2020-10-21)
+  [    gdoc] Founder and CEO  (0.0B, 2020-10-19)
+  [    gdoc] CLAC Marketing  (0.0B, 2020-10-15)
+  [    gdoc] Personal Finance & Neobanking Industry  (0.0B, 2020-10-12)
+  [    gdoc] Journal 1 PM DeCal  (0.0B, 2020-10-11)
+  [vnd.google-apps.drawing] Untitled drawing  (0.0B, 2020-10-10)
+  [    gdoc] MET Meet and Greet  (0.0B, 2020-10-09)
+  [    gdoc] Recruiting/Networking Tracker - Adithya Kumar  (0.0B, 2020-10-01)
+  [    gdoc] Cloud@Cal Cover Letter  (0.0B, 2020-09-28)
+  [    gdoc] Venture Capital Blog  (0.0B, 2020-09-23)
+  [    gdoc] Vision Letter  (0.0B, 2020-09-22)
+  [    gdoc] Blockchain Assignment  (0.0B, 2020-09-20)
+  [    gdoc] Intro to VC DeCal  (0.0B, 2020-09-16)
+  [    gdoc] Writing assignment #2: David Spiegelhalter opinion piece  (0.0B, 2020-09-16)
+  [    gdoc] Vulnerability  (0.0B, 2020-09-15)
+  [vnd.google-apps.drawing] Soul Portrait  (0.0B, 2020-09-15)
+  [    gdoc] 61A  (0.0B, 2020-09-14)
+  [    gdoc] UGBA 10 Discussion  (0.0B, 2020-09-14)
+  [    gdoc] CIB Addendum  (0.0B, 2020-09-14)
+  [     pdf] Adithya_Kumar_Resume.pdf  (813.5KB, 2020-09-11)
+  [     jpg] Adithya_Kumar_Headshot.jpg  (137.3KB, 2020-09-11)
+  [  gsheet] Berkeley Classes  (0.0B, 2020-09-11)
+  [     pdf] Adithya_Kumar_Resume.pdf  (813.5KB, 2020-09-10)
+  [     pdf] 2024 Kumar, Adithya.pdf  (813.5KB, 2020-09-10)
+  [     pdf] Adithya_Kumar_Resume.pdf  (813.5KB, 2020-09-09)
+  [     jpg] Adithya_Kumar_Headshot.jpg  (137.3KB, 2020-09-09)
+  [     pdf] 2024 Kumar, Adithya.pdf  (813.5KB, 2020-09-07)
+  [  gslide] Copy of Norrell Consulting by Slidesgo  (0.0B, 2020-09-05)
+  [    gdoc] Scienteer 2019  (0.0B, 2020-09-05)
+  [     pdf] 2024 Kumar, Adithya.pdf  (813.5KB, 2020-09-05)
+  [     jpg] Adithya_Kumar_Headshot.jpg  (137.3KB, 2020-09-05)
+  [     pdf] VCG Cover Letter - Adithya Kumar.pdf  (34.8KB, 2020-09-05)
+  [     pdf] 2024 Kumar, Adithya.pdf  (813.5KB, 2020-09-05)
+  [     pdf] Adithya_Kumar.pdf  (813.5KB, 2020-09-04)
+  [    gdoc] Elevator Pitch  (0.0B, 2020-09-02)
+  [    gdoc] 10K Projects Internship  (0.0B, 2020-09-01)
+  [     pdf] EECS 16A Discussion  (8.3KB, 2020-08-31)
+  [    gdoc] Brother B-Day post  (0.0B, 2020-08-21)
+  [    gdoc] Identity Page  (0.0B, 2020-08-16)
+  [    docx] MET Resume Template_2020 (3).docx  (21.6KB, 2020-07-31)
+  [    gdoc] MET Resume Template_2020  (0.0B, 2020-07-31)
+  [    gdoc] MET Resume Template_2020  (0.0B, 2020-07-31)
+  [     png] National AP Scholar - Adithya Kumar.png  (164.3KB, 2020-07-30)
+  [  gslide] Scholar Workbook - Virtual LDI 2020  (0.0B, 2020-07-29)
+  [    gdoc] The Fishbowl Challenge Application/Coke Coaching  (0.0B, 2020-07-25)
+  [     jpg] Kumar.Adithya.jpg  (31.8KB, 2020-07-21)
+  [  gsheet] Berkeley Course Plan - Adithya Kumar - Amit  (0.0B, 2020-07-15)
+  [octet-stream] phire.flp  (147.1KB, 2020-07-15)
+  [  gsheet] Copy of Berkeley Class Schedule - Manav.xlsx  (0.0B, 2020-07-12)
+  [    gdoc] Rubber Gand Product  (0.0B, 2020-07-11)
+  [    gdoc] Adithya Kumar Credit Summary  (0.0B, 2020-07-07)
+  [    gdoc] 18th Bday  (0.0B, 2020-07-07)
+  [    gdoc] Father Bday Post  (0.0B, 2020-06-20)
+  [    gdoc] Burger King Accepting  (0.0B, 2020-05-30)
+  [    gdoc] Modern Physics Video analysis  (0.0B, 2020-05-24)
+  [    gdoc] 30 English Assignment  (0.0B, 2020-05-24)
+  [    gdoc] Psychology AP  (0.0B, 2020-05-19)
+  [    gdoc] AP Psych Terms  (0.0B, 2020-05-19)
+  [    gdoc] English Literature AP  (0.0B, 2020-05-13)
+  [vnd.google-apps.drawing] trees  (0.0B, 2020-05-12)
+  [    gdoc] Mother's Day  (0.0B, 2020-05-10)
+  [     jpg] Snapchat-2031986686.jpg  (243.8KB, 2020-05-08)
+  [     jpg] IMG_7326.jpg  (401.7KB, 2020-05-08)
+  [    gdoc] COVID 19 Article  (0.0B, 2020-04-21)
+  [  gsheet] Berkeley Course Plan  (0.0B, 2020-04-21)
+  [     png] Adithya Shakthi Kumar.png  (4.5KB, 2020-04-14)
+  [    gdoc] Modern Physics Assignment  (0.0B, 2020-04-11)
+  [    gdoc] Coke Scholars Bio  (0.0B, 2020-04-10)
+  [  gslide] expanding_the_canon_poetry_project  (0.0B, 2020-04-07)
+  [  gsheet] Shakthi - LASA Zoom Calls  (0.0B, 2020-04-05)
+  [    gdoc] Grimes Call  (0.0B, 2020-04-04)
+  [octet-stream] Plugin.nfo  (24.0B, 2020-03-15)
+  [    gdoc] Updated 2019-2020 Scholarships for Seniors 12.17.19  (0.0B, 2020-03-09)
+  [    gdoc] English Reading Notes  (0.0B, 2020-03-04)
+  [    gdoc] Translation poem  (0.0B, 2020-02-26)
+  [    gdoc] FBLA Business Plan 2019  (0.0B, 2020-02-25)
+  [    gdoc] In Class FRQ # 1 Revision  (0.0B, 2020-02-24)
+  [  gslide] The Asteroid Belt - Astronomy Project  (0.0B, 2020-02-24)
+  [    gdoc] The Founding Fathers Paper  (0.0B, 2020-02-20)
+  [  gslide] Package Managers  (0.0B, 2020-02-19)
+  [  gslide] Science Fair Newsletter by Slidesgo  (0.0B, 2020-02-19)
+  [  gslide] GOVT 2306 Presentation #5 - Updated  (0.0B, 2020-02-18)
+  [  gslide] GOVT 2306 Presentation #5  (0.0B, 2020-02-18)
+  [    gdoc] MET Bio  (0.0B, 2020-02-18)
+  [  gsheet] Scienteer 2020  (0.0B, 2020-02-17)
+  [    gdoc] Scienteer 2020  (0.0B, 2020-02-17)
+  [  gslide] Package Managers - Copy  (0.0B, 2020-02-13)
+  [    gdoc] Pride and Prejudice Letters #3  (0.0B, 2020-02-11)
+  [    gdoc] GOVT 2306 - Project B Essay 1 - Adithya Kumar  (0.0B, 2020-02-05)
+  [    gdoc] Pride and Prejudice Letters #2  (0.0B, 2020-01-31)
+  [  gslide] Applied Physics Project  (0.0B, 2020-01-31)
+  [    gdoc] Applied Physics Project  (0.0B, 2020-01-31)
+  [  gsheet] Science Fair Newsletter by Slidesgo  (0.0B, 2020-01-31)
+  [    gdoc] Pride and Prejudice Letters #1  (0.0B, 2020-01-30)
+  [    gdoc] Scienteer 2020 - Pictures  (0.0B, 2020-01-28)
+  [    gdoc] UPenn Interview Questions  (0.0B, 2020-01-24)
+  [    gdoc] Time Dilation/Length Contraction Resource Write-Up  (0.0B, 2020-01-13)
+  [  gsheet] insta  (0.0B, 2020-01-13)
+  [  gslide] Organs  (0.0B, 2020-01-04)
+  [     pdf] Untitled Jam  (19.8KB, 2019-12-21)
+  [    gdoc] Modern Physics Final Essay  (0.0B, 2019-12-16)
+  [    gdoc] Walking SQM Survey of Mopac and Palmer Area  (0.0B, 2019-12-11)
+  [    gdoc] Best Books Rough Draft  (0.0B, 2019-12-10)
+  [    gdoc] QM2 - Modern Physics Paper Summary  (0.0B, 2019-12-06)
+  [    gdoc] Squire  (0.0B, 2019-12-05)
+  [octet-stream] ElectraX.t2k  (9.3KB, 2019-11-23)
+  [octet-stream] ElectraX.t2k  (9.3KB, 2019-11-23)
+  [    gdoc] SIP Pitch  (0.0B, 2019-11-21)
+  [    gdoc] Best Books Outline  (0.0B, 2019-11-19)
+  [    gdoc] SIP 2019 Reflection Questions  (0.0B, 2019-11-13)
+  [  gsheet] SIP DATA  (0.0B, 2019-11-13)
+  [    gdoc] The Wife of Bath's Tale Writeup  (0.0B, 2019-11-08)
+  [    gdoc] LinkedIn  (0.0B, 2019-11-08)
+  [    gdoc] LinkedIn Awards backup  (0.0B, 2019-11-08)
+  [    docx] FWU 3.4.docx  (461.8KB, 2019-10-29)
+  [    gdoc] FRQ Psych  (0.0B, 2019-10-28)
+  [    gdoc] English College Essay  (0.0B, 2019-10-24)
+  [  gslide] Wave Particle Duality - QM2  (0.0B, 2019-10-23)
+  [    gdoc] Wave Particle Duality - QM2  (0.0B, 2019-10-23)
+  [    gdoc] Untitled document  (0.0B, 2019-10-19)
+  [     xml] calls-20191015184019.xml  (328.4KB, 2019-10-15)
+  [     xml] calls-20191015181711.xml  (328.4KB, 2019-10-15)
+  [    gdoc] John Donne Essay  (0.0B, 2019-10-15)
+  [    gdoc] Blackbody Radiation - QM1 - Modern Physics Favorite Writeup  (0.0B, 2019-10-11)
+  [    gdoc] Modern Physics Class Notes  (0.0B, 2019-10-09)
+  [    gdoc] A1.CraterLab.Adithya.Kumar  (0.0B, 2019-10-09)
+  [    docx] Adithya Kumar - Condensed Resume (1).docx  (76.8KB, 2019-10-09)
+  [    gdoc] Community Writing Guidelines  (0.0B, 2019-10-07)
+  [   gform] Community Writing Submission  (0.0B, 2019-10-07)
+  [vnd.google-apps.site] ADITHYA SHAKTHI KUMAR  (0.0B, 2019-10-07)
+  [    gdoc] Resume - College Apps  (0.0B, 2019-10-07)
+  [    gdoc] Adithya’s list of skills, knowledge and abilities  (0.0B, 2019-10-02)
+  [    gdoc] Recitation 3 - Notes  (0.0B, 2019-10-02)
+  [    gdoc] Photoelectric Effect  (0.0B, 2019-10-02)
+  [  gslide] Photoelectric Effect  (0.0B, 2019-10-02)
+  [    gdoc] Q0 Blog Post  (0.0B, 2019-10-01)
+  [  gslide] Constellation Project  (0.0B, 2019-09-30)
+  [    gdoc] Notes for Interviews  (0.0B, 2019-09-25)
+  [    gdoc] Trinity and Beyond  (0.0B, 2019-09-25)
+  [    gdoc] English Shoebox  (0.0B, 2019-09-19)
+  [  gslide] Nuclear Arms  (0.0B, 2019-09-18)
+  [    gdoc] Hamlet Dialetic Journals - After Edits  (0.0B, 2019-09-17)
+  [    gdoc] Hamlet Dialetic Journals  (0.0B, 2019-09-17)
+  [    gdoc] Nuclear Arms Essay  (0.0B, 2019-09-12)
+  [    gdoc] Copy of Friere Paper - Keyu Comments  (0.0B, 2019-09-05)
+  [    gdoc] Friere Paper  (0.0B, 2019-09-05)
+  [    gdoc] Gravitational Wave Essay  (0.0B, 2019-08-26)
+  [     xml] calls-20190824213735.xml  (323.8KB, 2019-08-25)
+  [    gdoc] Modern Physics  (0.0B, 2019-08-23)
+  [vnd.google-apps.drawing] FWU 1.1  (0.0B, 2019-08-22)
+  [    gdoc] M&T Summer Program  (0.0B, 2019-08-08)
+  [    gdoc] McCombs School of Business Summer Camp  (0.0B, 2019-07-22)
+  [  gslide] BE Anywhere Presentation - smallest personalized  (0.0B, 2019-06-30)
+  [  gslide] BE Anywhere Presentation - smallest  (0.0B, 2019-06-30)
+  [  gslide] BE Anywhere Presentation - small  (0.0B, 2019-06-30)
+  [  gslide] BE Anywhere Presentation - smaller  (0.0B, 2019-06-29)
+  [  gslide] BE Anywhere Presentation  (0.0B, 2019-06-29)
+  [    gdoc] HOBY APPLICATION  (0.0B, 2019-06-29)
+  [    gdoc] BoFA Student Leaders  (0.0B, 2019-06-29)
+  [  gslide] Pitch for Q0  (0.0B, 2019-06-25)
+  [    gdoc] FA notes - Adithya Kumar  (0.0B, 2019-06-25)
+  [     pdf] Red Dad Birthday Card.pdf  (97.7KB, 2019-06-20)
+  [    gdoc] Upenn Social Innovators Program  (0.0B, 2019-06-07)
+  [    gdoc] Schoolyard Ventures Application  (0.0B, 2019-06-07)
+  [    gdoc] Diamond Challenge Interview  (0.0B, 2019-06-07)
+  [    gdoc] Bard college application  (0.0B, 2019-06-07)
+  [    gdoc] M&T Application Essay 2019  (0.0B, 2019-06-07)
+  [  gsheet] MIT S1  (0.0B, 2019-06-05)
+  [     csv] MIT S1.csv  (3.4KB, 2019-06-05)
+  [    gdoc] Untitled document  (0.0B, 2019-05-28)
+  [    gdoc] AP Stats Final  (0.0B, 2019-05-22)
+  [  gslide] Statistics Final Project  (0.0B, 2019-05-20)
+  [  gsheet] Stats Project - Adithya Kumar (Responses)  (0.0B, 2019-05-20)
+  [    gdoc] Research Paper - Adithya Kumar  (0.0B, 2019-05-19)
+  [    gdoc] add drop notification for 19.20  (0.0B, 2019-05-11)
+  [  gsheet] Stats Project - R Data  (0.0B, 2019-05-09)
+  [   gform] Stats Project - Adithya Kumar  (0.0B, 2019-04-30)
+  [    gdoc] Q0 Application  (0.0B, 2019-04-26)
+  [    gdoc] Project Inquiry  (0.0B, 2019-04-23)
+  [  gslide] Minimalism  (0.0B, 2019-04-22)
+  [    gdoc] Physics Essay - Rainbows  (0.0B, 2019-04-18)
+  [    gdoc] AP Stats Code   (0.0B, 2019-04-18)
+  [    gdoc] Questioin Generation - AP Stats - Adithya Kumar  (0.0B, 2019-04-16)
+  [    gdoc] quotes and notes from catcher in the rye  (0.0B, 2019-04-03)
+  [    gdoc] Stereo  (0.0B, 2019-03-29)
+  [    gdoc] Wolfram Questions  (0.0B, 2019-03-11)
+  [    gdoc] Babson Application  (0.0B, 2019-03-11)
+  [    gdoc] Hall Effect  (0.0B, 2019-03-11)
+  [    gdoc] Gritte Option 1 Brainstorming Research Paper - Adithya Kumar  (0.0B, 2019-03-06)
+  [  gslide] AP Music Theory Vocab  (0.0B, 2019-03-05)
+  [    gdoc] 2019 WOLFRAM APPLICATION  (0.0B, 2019-03-04)
+  [    gdoc] Illinois Engineering Summer Camp  (0.0B, 2019-03-04)
+  [    gdoc] 2019 ILLINOIS ENGINEERING SUMMER PROGRAMS  (0.0B, 2019-03-04)
+  [    gdoc] Plan for Meeting  (0.0B, 2019-03-03)
+  [    gdoc] Research Experience - Adithya Shakthi Kumar  (0.0B, 2019-03-01)
+  [    gdoc] High School Honors Science, Math and Engineering Program application  (0.0B, 2019-02-28)
+  [    gdoc] UT Code Longhorn  (0.0B, 2019-02-25)
+  [     jpg] P1080860 (1).JPG  (953.7KB, 2019-02-22)
+  [  gslide] AP Music Theory Project  (0.0B, 2019-02-22)
+  [  gsheet] 2019 data for science fair  (0.0B, 2019-02-20)
+  [    gdoc] RPI 2019 Application  (0.0B, 2019-02-19)
+  [    gdoc] RSI 2019 FINAL  (0.0B, 2019-02-18)
+  [    gdoc] MIT Summer Program  (0.0B, 2019-02-18)
+  [    gdoc] WSSP 2019  (0.0B, 2019-02-18)
+  [    gdoc] Science Fair FAQ  (0.0B, 2019-02-18)
+  [    gdoc] MNT  (0.0B, 2019-02-17)
+  [    gdoc] Stevens Application Essay  (0.0B, 2019-02-15)
+  [    gdoc] WSSP Essay 2019  (0.0B, 2019-02-15)
+  [    gdoc] WSSP Essay  (0.0B, 2019-02-15)
+  [    gdoc] Youtube Tags  (0.0B, 2019-02-14)
+  [    gdoc] Davidson Fellows 2019-2020 - EXP  (0.0B, 2019-02-14)
+  [    gdoc] Davidson Fellows 2019-2020  (0.0B, 2019-02-14)
+  [    gdoc] English Quiz  (0.0B, 2019-02-13)
+  [    gdoc] Solenoids are most commonly used as electromagnets  (0.0B, 2019-02-13)
+  [    gdoc] Yale Bassett Award for Community Engagement Application  (0.0B, 2019-02-12)
+  [    gdoc] English 3 Project - 12 Years a Slave  (0.0B, 2019-02-12)
+  [    gdoc] English Project  (0.0B, 2019-02-08)
+  [    gdoc] Simons Summer Research Program Application  (0.0B, 2019-02-05)
+  [    gdoc] NASCENT Fellowship Program 2019 Application  (0.0B, 2019-02-05)
+  [    gdoc] SciPy 2019 Submission - Adithya Kumar  (0.0B, 2019-02-05)
+  [    gdoc] Kocian - Notes  (0.0B, 2019-02-05)
+  [    gdoc] Export Steps  (0.0B, 2019-02-04)
+  [    gdoc] English Project Proposal  (0.0B, 2019-02-04)
+  [    gdoc] HOBY Story - Adithya Kumar  (0.0B, 2019-02-01)
+  [    gdoc] Project Research  (0.0B, 2019-01-31)
+  [  gsheet] GPA Recalculation  (0.0B, 2019-01-31)
+  [     pdf] Adithya Shakthi Kumar - Condensed Resume.pdf  (495.8KB, 2019-01-31)
+  [     pdf] Adithya Shakthi Kumar - LaunchX Cover Letter.pdf  (107.6KB, 2019-01-31)
+  [    gdoc] McCombs School of Business Summer Camp - Essay B  (0.0B, 2019-01-31)
+  [    gdoc] McCombs School of Business Summer Camp - Adithya Kumar Essay A  (0.0B, 2019-01-31)
+  [    gdoc] Ms. Harrelson Recommendation  (0.0B, 2019-01-23)
+  [    gdoc] Ms. Davis Recommendation  (0.0B, 2019-01-22)
+  [    gdoc] Untitled document  (0.0B, 2019-01-17)
+  [  gsheet] College Shortlist   (0.0B, 2019-01-15)
+  [    gdoc] Physics 1 Static Lab Report  (0.0B, 2019-01-14)
+  [    gdoc] RSI 2019  (0.0B, 2019-01-13)
+  [     pdf] Ms. Harrelson Recommendation.pdf  (34.0KB, 2019-01-10)
+  [    gdoc] Development of a stereoscopic optical detection algorithm to autonomously construct and respond to an accurate real-time disparity map of foreign environments using SGM and machine learning  (0.0B, 2019-01-09)
+  [  gsheet] LASA GPA Rank - Projections for 2019 - Shakthi  (0.0B, 2018-12-24)
+  [    gdoc] NASCENT - Fellows Summer Research Program 2018  (0.0B, 2018-12-23)
+  [    gdoc] Untitled document  (0.0B, 2018-12-19)
+  [octet-stream] FLRegKey.reg  (1.9KB, 2018-12-19)
+  [    gdoc] Stats Final Project Writeup - Adithya Kumar  (0.0B, 2018-12-14)
+  [    gdoc] Google Science Fair 2018 Final  (0.0B, 2018-12-12)
+  [    pptx] CTA_Volunteer match.pptx  (102.8KB, 2018-12-12)
+  [  gsheet] Stats Data Collection  (0.0B, 2018-12-11)
+  [    gdoc] DROPSHIPPING  (0.0B, 2018-12-09)
+  [  gsheet] DROPSHIP  (0.0B, 2018-12-09)
+  [     txt] https://goo.gl/.txt  (28.0B, 2018-12-05)
+  [     txt] https://goo.gl/.txt  (28.0B, 2018-12-05)
+  [     txt] https://goo.gl/.txt  (28.0B, 2018-12-05)
+  [     txt] https://goo.gl/.txt  (28.0B, 2018-12-05)
+  [     pdf] 18-19 Student Entry Form_TXPTA_Fillable.pdf  (272.3KB, 2018-11-08)
+  [    gdoc] PTA Reflections 2018  (0.0B, 2018-11-06)
+  [     pdf] Adithya Shakthi Kumar - Resume.pdf  (120.5KB, 2018-11-01)
+  [     pdf] Adithya Shakthi Kumar Cover Letter.pdf  (95.7KB, 2018-11-01)
+  [  gsheet] Biotech Companies - Adithya Kumar  (0.0B, 2018-10-27)
+  [    gdoc] Rockefeller  (0.0B, 2018-10-26)
+  [vnd.google-apps.drawing] Science Fair 2018  (0.0B, 2018-10-21)
+  [    gdoc] MUSIC THEORY EXTRA CREDIT  (0.0B, 2018-10-18)
+  [    gdoc] Untitled document  (0.0B, 2018-10-17)
+  [     mp3] lowkeysmooth.mp3  (901.3KB, 2018-10-16)
+  [vnd.google-apps.site] Gaia Glove  (0.0B, 2018-10-15)
+  [    gdoc] High School Aerospace Scholars  (0.0B, 2018-10-02)
+  [  gslide] David and Bethesba ' memes  (0.0B, 2018-09-26)
+  [    gdoc] MOTORCYCLE  (0.0B, 2018-09-21)
+  [    gdoc] Camping with Sam  (0.0B, 2018-09-18)
+  [vnd.google-apps.drawing] Camping  (0.0B, 2018-09-13)
+  [   gform] Science Fair Interest Form  (0.0B, 2018-09-13)
+  [vnd.google-apps.drawing] club fair  (0.0B, 2018-09-13)
+  [    gdoc] thinkery volunteen application  (0.0B, 2018-09-11)
+  [    gdoc] Contract  (0.0B, 2018-09-09)
+  [    docx] HW 1.1 Stats.docx  (19.5KB, 2018-08-24)
+  [    gdoc] Whats nEEw - Adithya Kumar - Explore More  (0.0B, 2018-08-22)
+  [     pdf] My Card (1).pdf  (948.5KB, 2018-08-21)
+  [  gsheet] Data Analytics 101_v2_Chipotle Workbook (For Students) - Adithya Kumar  (0.0B, 2018-08-15)
+  [vnd.ms-pki.stl] LESLEY2.stl  (362.3KB, 2018-08-08)
+  [vnd.ms-pki.stl] LESLEY1.stl  (285.0KB, 2018-08-08)
+  [vnd.ms-pki.stl] LESLEY3.stl  (342.0KB, 2018-08-08)
+  [    gdoc] Common Application Essay  (0.0B, 2018-07-04)
+  [    gdoc] Alex HTS Writeup  (0.0B, 2018-07-02)
+  [    gdoc] 101 Affirmation for Teenagers Book  (0.0B, 2018-07-02)
+  [  gsheet] MIT/Harvard Scoping  (0.0B, 2018-06-30)
+  [    docx] THOUGHT PAPER ASSIGNMENT UNIT4.docx  (12.8KB, 2018-06-29)
+  [    gdoc] MIT LauchX Skills-Based Prework  (0.0B, 2018-06-28)
+  [    docx] HIST 1302 Book Review.docx  (18.3KB, 2018-06-27)
+  [  gsheet] College Visit Information  (0.0B, 2018-06-24)
+  [    gdoc] TEDxYouth@Austin Application  (0.0B, 2018-06-23)
+  [    gdoc] A&M Visit Notes  (0.0B, 2018-06-15)
+  [    gdoc] Team Debate Assignment - 2018  (0.0B, 2018-06-09)
+  [     pdf] Scanned_20180526-1809.pdf  (105.2KB, 2018-06-01)
+  [    docx] Adithya Shakthi Kumar - Resume.docx  (41.1KB, 2018-06-01)
+  [    gdoc] Song List  (0.0B, 2018-05-29)
+  [    gdoc] Report  (0.0B, 2018-05-29)
+  [    gdoc] End of Year WHAP Project  (0.0B, 2018-05-23)
+  [    gdoc] PLEARTH Final Project Compilation  (0.0B, 2018-05-21)
+  [  gslide] PLEARTH Final Project  (0.0B, 2018-05-21)
+  [    gdoc] PLEARTH Abstract  (0.0B, 2018-05-18)
+  [  gsheet] PLEARTH Data Analysis Table  (0.0B, 2018-05-18)
+  [    gdoc] Significant Moments in The Stranger  (0.0B, 2018-05-18)
+  [    gdoc] PLEARTH Conclusions  (0.0B, 2018-05-15)
+  [    xlsx] graphs for plearth.xlsx  (41.2KB, 2018-05-11)
+  [    gdoc] Lab Beer's Law and Spectrophotometry - Adi Kumar  (0.0B, 2018-04-30)
+  [  gsheet] Beer's Law Demonstration Spreadsheet - Adithya Kumar  (0.0B, 2018-04-30)
+  [    gdoc] PLEARTH Questions When Life Exploded  (0.0B, 2018-04-27)
+  [    gdoc] Conversation Prep  (0.0B, 2018-04-27)
+  [    gdoc] CYOA Website End of Year WHAP Project  (0.0B, 2018-04-27)
+  [    gdoc] Planet Earth Warm Ups/Notes - Adi Kumar  (0.0B, 2018-04-26)
+  [    gdoc] Samsa Questions - 4/19/18  (0.0B, 2018-04-24)
+  [    gdoc] Notes from indian raga session with Shraddha Akka  (0.0B, 2018-04-24)
+  [   gform] LSTE Exhibitor Sign Up  (0.0B, 2018-04-17)
+  [  gsheet] ACC Professors  (0.0B, 2018-04-15)
+  [    gdoc] Pre-Debate Assignment and Bibliography – LOBBYIST  (0.0B, 2018-04-13)
+  [    gdoc] Rackspace Application 2018  (0.0B, 2018-04-13)
+  [    gdoc] PLEARTH Pro Opening Speech - Adi Kumar  (0.0B, 2018-04-11)
+  [    gdoc] English Project Check in  (0.0B, 2018-04-09)
+  [    gdoc] Position Paper  (0.0B, 2018-04-07)
+  [vnd.google-apps.drawing] AR Target  (0.0B, 2018-04-05)
+  [    gdoc] Industrial Revolution Annotations - Adi Kumar  (0.0B, 2018-04-05)
+  [    gdoc] Spanish HW Present Subjunctive  (0.0B, 2018-04-04)
+  [    gdoc] Imperialism Political Cartoons - Adi Kumar  (0.0B, 2018-03-30)
+  [    gdoc] Por y para - Adi Kumar - 3/20/18  (0.0B, 2018-03-20)
+  [    gdoc] Molecule-Shapes-Lab Print Pgs 1 to 4 only - Adi Kumar  (0.0B, 2018-03-19)
+  [     pdf] Scanned_20180319-0954.pdf  (441.7KB, 2018-03-19)
+  [    gdoc] FBLA Memorized Speech  (0.0B, 2018-03-08)
+  [    gdoc] Application for LASA Students to Be Part of Research Project  (0.0B, 2018-03-08)
+  [    gdoc] Shoal Creek Writeup  (0.0B, 2018-03-07)
+  [    docx] PLEARTH Shoal Creek Business Letter.docx  (29.2KB, 2018-03-07)
+  [    gdoc] Letter for Spanish and the Questions Stuff  (0.0B, 2018-03-07)
+  [    gdoc] Bill of Rights Document Comparison - Adi Kumar  (0.0B, 2018-03-06)
+  [    docx] OP5.docx  (14.4KB, 2018-03-06)
+  [    docx] OP5.docx  (14.4KB, 2018-03-06)
+  [    gdoc] National Honor Society Essay 2018  (0.0B, 2018-03-06)
+  [    gdoc] SEES Final  (0.0B, 2018-03-06)
+  [    gdoc] NHS 2018 Application  (0.0B, 2018-03-06)
+  [    gdoc] UT Summer Research Application 2018  (0.0B, 2018-03-05)
+  [    gdoc] RSI Final  (0.0B, 2018-03-04)
+  [    gdoc] UT Code Longhorn  (0.0B, 2018-03-03)
+  [    gdoc] Plearth Project Description  (0.0B, 2018-03-02)
+  [    gdoc] TXSEF Questions  (0.0B, 2018-03-02)
+  [    gdoc] SEES  (0.0B, 2018-03-02)
+  [  gsheet] Lab Waters of Hydration  (0.0B, 2018-03-01)
+  [    gdoc] UTEACH 2018 Summer Camp  (0.0B, 2018-03-01)
+  [    gdoc] CTMUN Crisis Registration - Adithya Kumar  (0.0B, 2018-02-24)
+  [    gdoc] RUNWAY Registration Form - Adithya Kumar  (0.0B, 2018-02-24)
+  [    gdoc] AP Calculus BC HW  (0.0B, 2018-02-23)
+  [    gdoc] The Enlightenment, Docs for Discussion -- Adithya Kumar  (0.0B, 2018-02-22)
+  [    gdoc] Project Write-up - Adithya Shakthi Kumar  (0.0B, 2018-02-20)
+  [     pdf] Scanned_20180218-1128.pdf  (250.7KB, 2018-02-18)
+  [    gdoc] Davidson Questions  (0.0B, 2018-02-15)
+  [    gdoc] Script and FAQs for 2018 - Gaia Glove  (0.0B, 2018-02-15)
+  [    gdoc] Plot 3-4  (0.0B, 2018-02-13)
+  [  gslide] Spanish Product Project  (0.0B, 2018-02-10)
+  [    gdoc] Spanish Class Notes - Adi Kumar  (0.0B, 2018-02-07)
+  [    gdoc] Adi Kumar - Japan Pro Group  (0.0B, 2018-02-06)
+  [    gdoc] WSSP Application - Adithya Kumar - Recommendation Mr. Deram  (0.0B, 2018-02-05)
+  [    gdoc] Intro to Topography - Adi Kumar  (0.0B, 2018-01-31)
+  [  gslide] Spanish Project Presentation  (0.0B, 2018-01-31)
+  [    gdoc] Chairmans  (0.0B, 2018-01-30)
+  [    gdoc] Spanish Article  (0.0B, 2018-01-29)
+  [    gdoc] Davidson App 2018  (0.0B, 2018-01-28)
+  [    gdoc] Science Fair Todos  (0.0B, 2018-01-28)
+  [    gdoc] Scienteer 2018  (0.0B, 2018-01-27)
+  [    gdoc] Gaia Glove Test Consent Form  (0.0B, 2018-01-27)
+  [  msword] Activity 1 - Austin_s Topography and Geology.doc  (29.0KB, 2018-01-26)
+  [    gdoc] notes from Mr. Seagren  (0.0B, 2018-01-26)
+  [  gslide] Rackspace Presentation - 1/25/17  (0.0B, 2018-01-25)
+  [    gdoc] Discussion Questions2 for Planet Earth - 3/7  (0.0B, 2018-01-24)
+  [    gdoc] Planet Earth Questions  (0.0B, 2018-01-23)
+  [    docx] OP 4.docx  (23.1KB, 2018-01-23)
+  [    gdoc] WSSP Application - Adithya Kumar - Recommendation Brag Sheet  (0.0B, 2018-01-21)
+  [    gdoc] WSSP - Adithya Shakthi Kumar Recommendation Letter  (0.0B, 2018-01-20)
+  [    gdoc] WSSP  (0.0B, 2018-01-20)
+  [     pdf] Scanned_20180118-1209.pdf  (654.6KB, 2018-01-18)
+  [    gdoc] Handout 6.2.2c (Station 3): Art Analysis Practice - Adi Kumar  (0.0B, 2018-01-18)
+  [    gdoc] Summer App MIT  (0.0B, 2018-01-18)
+  [    gdoc] Project Proposal - Adithya Kumar - Gaia Glove  (0.0B, 2018-01-15)
+  [    gdoc] MIT LaunchX Inteview - Jan 2018  (0.0B, 2018-01-13)
+  [    gdoc] Position Paper #2 - Turkey  (0.0B, 2018-01-08)
+  [     pdf] Republic_of_Turkey.SP.Topc1.pdf  (380.1KB, 2018-01-08)
+  [     pdf] Republic_of_Turkey.SP.Topc2.pdf  (379.2KB, 2018-01-08)
+  [     pdf] infopaper.pdf  (691.4KB, 2018-01-08)
+  [    gdoc] Position Paper #1 - Turkey  (0.0B, 2018-01-08)
+  [    gdoc] SPECPOL Paper #1 - Adi Kumar  (0.0B, 2018-01-07)
+  [    gdoc] SPECPOL Paper #2 - Adi Kumar  (0.0B, 2018-01-07)
+  [    gdoc] Discussion Questions for Planet Earth  (0.0B, 2018-01-06)
+  [    gdoc] English Vocab Dante's Inferno Vocab  (0.0B, 2018-01-04)
+  [    gdoc] Blog  (0.0B, 2017-12-10)
+  [    gdoc] 52 inspirational quotes that will change your life - book  (0.0B, 2017-12-07)
+  [    gdoc] Movie Ideas  (0.0B, 2017-11-28)
+  [    gdoc] Science Fair Links  (0.0B, 2017-11-23)
+  [vnd.google-apps.drawing] App Background  (0.0B, 2017-11-21)
+  [vnd.google-apps.drawing] App Logo - final  (0.0B, 2017-11-21)
+  [    gdoc] Great Ideas 10,000 project  (0.0B, 2017-09-24)
+  [octet-stream] Magazine Final.indd  (840.0KB, 2016-12-01)
+  [    gdoc] Letter From the Editor  (0.0B, 2016-12-01)
+  [     jpg] pexels-photo-57007.jpeg  (25.6KB, 2016-11-29)
+  [     jpg] technology-computer-chips-gigabyte.jpg  (40.6KB, 2016-11-29)
+  [     jpg] board-electronics-computer-data-processing-50711.jpeg  (29.3KB, 2016-11-29)
+  [    gdoc] tample text  (0.0B, 2016-11-28)
+  [    gdoc] Feature Story Rough Draft-Adi Kumar-0A/0B  (0.0B, 2016-11-14)
+  [    gdoc] Adi ASF Proposal  (0.0B, 2016-11-11)
+
+--------------------------------------------------------------------------------
+TOP-LEVEL SUBFOLDERS (76 total)
+--------------------------------------------------------------------------------
+  Google Photos                              7194f     27.4GB  d=1  (jpg:6325, mp4:681, png:129, img:43)
+  Not needed                                  132f     92.0MB  d=1  (gdoc:75, shortcut:18, jpg:18, gsheet:10)
+  Export                                    13220f     86.7MB  d=9  (octet-stream:8636, x-chdr:3260, png:545, txt:422)
+  NVESTR                                       67f     59.5MB  d=2  (gdoc:24, jpg:13, gsheet:9, m4a:8)
+  phone backup                                172f     46.7MB  d=0  (jpg:170, mp4:1, xml:1)
+  netExport                                   208f     45.5MB  d=4  (octet-stream:102, audio:68, x-gzip:32, txt:3)
+  Amma Bday                                    33f     13.9MB  d=1  (jpg:31, gdoc:1, png:1)
+  Adithya-pictures                             38f      9.6MB  d=0  (jpg:19, png:19)
+  Echovision 2020                               9f      9.5MB  d=1  (pdf:3, pptx:2, gsheet:1, gslide:1)
+  LASA                                        165f      5.9MB  d=1  (gdoc:102, vnd.google-apps.drawing:18, pdf:18, gsheet:11)
+  Techsas Group Folder                          7f      4.7MB  d=1  (pdf:4, png:2, illustrator:1)
+  Printer Scans                                 6f      3.8MB  d=1  (pdf:6)
+  Mridangam                                    42f      2.9MB  d=1  (gdoc:24, gsheet:8, jpg:8, shortcut:2)
+  Middle School                               131f      2.2MB  d=3  (gdoc:86, gslide:10, gsheet:10, pdf:9)
+  ubuntu flash upload                          22f      1.5MB  d=0  (jpg:10, pdf:8, docx:3, png:1)
+  Robotics Program                             26f      1.2MB  d=3  (vnd.google-apps.drawing:6, gdoc:6, gform:4, gsheet:3)
+  anniversary                                   6f      1.1MB  d=0  (jpg:5, gdoc:1)
+  Shak STZY pack                                1f    963.7KB  d=2  (mp3:1)
+  Mridangam Konnakol                            1f    946.7KB  d=1  (pdf:1)
+  Personal                                     72f    901.8KB  d=1  (gdoc:47, gsheet:9, gslide:4, docx:4)
+  College Prep                                  8f    798.9KB  d=1  (gsheet:5, gdoc:2, pdf:1)
+  arya bday                                     4f    778.2KB  d=0  (jpg:4)
+  10th grade                                   42f    708.3KB  d=0  (gdoc:35, gsheet:5, vnd.google-apps.drawing:1, jpg:1)
+  final                                         2f    681.9KB  d=0  (jpg:2)
+  Photos                                        2f    645.5KB  d=0  (jpg:2)
+  LASA College                                  2f    610.3KB  d=0  (pdf:1, msword:1)
+  Nanotech                                      3f    531.7KB  d=0  (gslide:2, pptx:1)
+  College Admission Information - Adithya Kumar      4f    471.7KB  d=0  (pdf:3, jpg:1)
+  Scouts                                       19f    433.3KB  d=0  (gdoc:9, gsheet:6, pdf:2, docx:2)
+  FL STUDIO                                    38f    350.6KB  d=6  (octet-stream:20, rtf:16, x-dosexec:2)
+  blog                                         37f    228.1KB  d=3  (html:11, octet-stream:9, css:5, x-python-code:3)
+  Colab Notebooks                               2f    145.4KB  d=0  (vnd.google.colaboratory:2)
+  ugba100.fcpbundle                             6f    100.9KB  d=1  (octet-stream:3, xml:3)
+  Berkeley Club Applications                   41f     49.5KB  d=2  (gdoc:39, jpg:1, gsheet:1)
+  asciiart                                     13f     22.1KB  d=2  (html:5, css:3, octet-stream:3, x-python:1)
+  Project STZY                                  3f     10.5KB  d=0  (gdoc:2, gsheet:1)
+  M&TSI 2024                                    1f      7.3KB  d=0  (gdoc:1)
+  shvapc-to-disc transfer                       0f       0.0B  d=0  ()
+  launchx.fcpbundle                             0f       0.0B  d=0  ()
+  2022 Science Fair                             0f       0.0B  d=0  ()
+  Groov Media                                   0f       0.0B  d=0  ()
+  devin                                         0f       0.0B  d=0  ()
+  evan                                          0f       0.0B  d=1  ()
+  Get My Bag - Tito Stems                       0f       0.0B  d=0  ()
+  get my bag stems                              0f       0.0B  d=0  ()
+  vox                                           0f       0.0B  d=1  ()
+  MET 2024                                     16f       0.0B  d=1  (gdoc:12, shortcut:3, gsheet:1)
+  stems                                         0f       0.0B  d=1  ()
+  yeeyee                                        0f       0.0B  d=0  ()
+  Music                                         0f       0.0B  d=0  ()
+  Essay Brainstorming                           5f       0.0B  d=0  (gdoc:5)
+  Patents 2019 - Shakthi                        7f       0.0B  d=1  (gdoc:4, vnd.google-apps.drawing:2, gsheet:1)
+  PTA Reflections                               0f       0.0B  d=0  ()
+  Junior Year Applications                      3f       0.0B  d=0  (gdoc:3)
+  indian raga                                   0f       0.0B  d=0  ()
+  Drone Footage for 5/28/2018                   0f       0.0B  d=0  ()
+  Troop 421                                     9f       0.0B  d=0  (gform:5, gsheet:3, gdoc:1)
+  PLEARTH KT Debate                             2f       0.0B  d=0  (gdoc:2)
+  WHAP Japan Pro Group                          6f       0.0B  d=0  (gdoc:6)
+  Diamond Challenge 2017                        5f       0.0B  d=0  (gdoc:2, gslide:2, gsheet:1)
+  Trade Networks Project                        1f       0.0B  d=0  (gdoc:1)
+  MUN Topic Papers                              2f       0.0B  d=0  (gdoc:2)
+  LSTE                                          0f       0.0B  d=0  ()
+  Great Ideas Laws                              2f       0.0B  d=0  (gslide:1, gdoc:1)
+  Garza                                         4f       0.0B  d=0  (vnd.google-apps.drawing:4)
+  Classroom                                     1f       0.0B  d=1  (shortcut:1)
+  TXSEF 2017                                    1f       0.0B  d=0  (gdoc:1)
+  Applications                                  4f       0.0B  d=0  (gdoc:3, vnd.google-apps.drawing:1)
+  College Prep/Process                          3f       0.0B  d=0  (gdoc:3)
+  Science Fair 2017                             7f       0.0B  d=0  (gdoc:4, shortcut:1, vnd.google-apps.drawing:1, gslide:1)
+  3rd Grade ??? Multi-Level Edition Level 10 ??? 460 Practice Questions for CogAT?? Test Form 7?? (More 3rd grade at top of this section).zip (Unzipped Files)      0f       0.0B  d=1  ()
+  Math                                          1f       0.0B  d=0  (gdoc:1)
+  Robotics                                      4f       0.0B  d=0  (gdoc:4)
+  Cool stuff                                    9f       0.0B  d=0  (gdoc:9)
+  Robot book                                    5f       0.0B  d=0  (gdoc:4, vnd.google-apps.drawing:1)
+  Working On                                    5f       0.0B  d=0  (gdoc:5)
+
+================================================================================
+INSIDE EACH TOP-LEVEL SUBFOLDER (one level deep)
+================================================================================
+
+### OLD/Google Photos/  —  7,194 files, 27.4GB, depth 1
+  subfolders (10):
+    2018                                     5632f     18.4GB  (jpg:5113, mp4:401, png:74)
+    2019                                      723f      6.4GB  (jpg:452, mp4:222, png:49)
+    2017                                      401f      1.9GB  (jpg:349, mp4:47, png:5)
+    2013                                      168f    647.5MB  (jpg:167, mp4:1)
+    2014                                      238f    127.6MB  (jpg:222, gif:15, mp4:1)
+    2016                                       15f     71.2MB  (jpg:8, mp4:7)
+    2015                                       14f     37.7MB  (jpg:11, mp4:2, png:1)
+    2012                                        1f    707.6KB  (jpg:1)
+    2003                                        1f    541.4KB  (jpg:1)
+    2004                                        1f    531.8KB  (jpg:1)
+
+### OLD/Not needed/  —  132 files, 92.0MB, depth 1
+  loose files in OLD/Not needed/:
+    [   gdoc] Rome Essay
+    [   gdoc] Colon title
+    [shortcut] Egypt: Government Post (viewing if Jill or James)
+    [shortcut] Gray Water Worksheet Period 7
+    [shortcut] FLL FORM DT
+    [shortcut] Robot design
+    ... +98 more
+  subfolders (3):
+    ESO-Photos-June8-2013                      16f     90.5MB  (jpg:16)
+    Dark Water Rising                           4f     64.4KB  (gdoc:2, gslide:1, jpg:1)
+    Hornaday                                    8f       0.0B  (gdoc:4, vnd.google-apps.drawing:3, gsheet:1)
+
+### OLD/Export/  —  13,220 files, 86.7MB, depth 9
+  loose files in OLD/Export/:
+    [ gsheet] LASA.xlsx
+    [   docx] 9th and 10th grade student nots (1).docx
+    [   docx] 25_Kumar_Adithya_CaseStudy (1).docx
+    [   docx] 1 (1).docx
+    [   docx] movie ideas.docx
+    [sldworks] drone_final.SLDASM
+    ... +51 more
+  subfolders (15):
+    maze game                               12978f     53.5MB  (octet-stream:8559, x-chdr:3260, png:530)
+    Shak Blog                                  29f      9.1MB  (jpg:23, png:6)
+    Soundcloud                                 32f      6.9MB  (octet-stream:32)
+    Failure Report SolidWorks Files            48f      5.4MB  (sldworks:19, jpg:10, pdf:9)
+    trippy Project                             11f      3.6MB  (octet-stream:5, x-gzip:4, txt:1)
+    Sound recordings                            3f    728.5KB  (audio:3)
+    test Project                                4f    716.1KB  (x-gzip:1, octet-stream:1, txt:1)
+    FIRST Project                               5f    529.1KB  (x-gzip:2, octet-stream:1, img:1)
+    bottle Project                              4f    496.2KB  (x-gzip:1, octet-stream:1, txt:1)
+    C#                                         17f    312.5KB  (audio:10, octet-stream:7)
+    sib_network                                27f    129.2KB  (octet-stream:25, pptx:1, docx:1)
+    Powerpoint                                  2f    117.7KB  (pptx:2)
+    genius idea                                 3f     64.6KB  (octet-stream:3)
+    PSAT                                        0f       0.0B  ()
+    mazefinale                                  0f       0.0B  ()
+
+### OLD/NVESTR/  —  67 files, 59.5MB, depth 2
+  loose files in OLD/NVESTR/:
+    [shortcut] NVESTR - QØ Team Folder
+    [ gsheet] NVESTR Persona (Responses)
+    [   gdoc] Questions for James
+    [   gdoc] 30 Questions
+    [   gdoc] Pricing Plan
+    [   gdoc] Nvestr personas
+    ... +13 more
+  subfolders (7):
+    Customer Discovery                         29f     59.4MB  (jpg:13, m4a:8, gdoc:4)
+    Website                                     7f     28.9KB  (gform:2, gdoc:2, gsheet:1)
+    powerpoint                                  2f       0.0B  (gdoc:1, gslide:1)
+    Recommendations                             3f       0.0B  (vnd.google-apps.drawing:2, gdoc:1)
+    Sales                                       1f       0.0B  (gsheet:1)
+    no current actioned required on document.      3f       0.0B  (gslide:1, gsheet:1, gdoc:1)
+    Recaps                                      3f       0.0B  (gdoc:2, gslide:1)
+
+### OLD/phone backup/  —  172 files, 46.7MB, depth 0
+  loose files in OLD/phone backup/:
+    [    mp4] Snapchat-1841900215.mp4
+    [    jpg] Snapchat-387582315.jpg
+    [    jpg] Snapchat-1419357977.jpg
+    [    jpg] Snapchat-775595022.jpg
+    [    jpg] Snapchat-1104534958.jpg
+    [    jpg] Snapchat-655064532.jpg
+    ... +166 more
+
+### OLD/netExport/  —  208 files, 45.5MB, depth 4
+  loose files in OLD/netExport/:
+    [octet-stream] trash.flp
+    [octet-stream] guitar.flp
+    [octet-stream] arya.flp
+    [octet-stream] gg.flp
+    [octet-stream] gang.flp
+    [ x-gzip] shakstzyup.als
+    ... +1 more
+  subfolders (3):
+    olivia Project                            105f     27.3MB  (octet-stream:54, audio:45, x-gzip:4)
+    daFirst Project                            68f      8.5MB  (octet-stream:27, x-gzip:26, audio:13)
+    ryan Project                               28f      7.0MB  (octet-stream:15, audio:10, x-gzip:1)
+
+### OLD/Amma Bday/  —  33 files, 13.9MB, depth 1
+  loose files in OLD/Amma Bday/:
+    [   gdoc] Amma Bday
+    [    jpg] 11.jpg
+    [    jpg] 6.jpg
+    [    jpg] IMG_20180126_191332611_LL.jpg
+    [    jpg] IMG_20171225_135916624.jpg
+    [    jpg] IMG_20171225_135851546.jpg
+    ... +15 more
+  subfolders (1):
+    final                                      12f      5.1MB  (jpg:12)
+
+### OLD/Adithya-pictures/  —  38 files, 9.6MB, depth 0
+  loose files in OLD/Adithya-pictures/:
+    [    jpg] download.jpeg
+    [    jpg] 1280px-TOPIO_3.jpg
+    [    jpg] image23.jpeg
+    [    png] image1.png
+    [    jpg] image17.jpeg
+    [    jpg] image15.jpeg
+    ... +32 more
+
+### OLD/Echovision 2020/  —  9 files, 9.5MB, depth 1
+  loose files in OLD/Echovision 2020/:
+    [   pptx] EchoVisionProjectBoard1.0.pptx
+    [ gsheet] EchoVision Data
+    [ gslide] EchoVision Deck
+    [   gdoc] EchoVision Databook
+  subfolders (1):
+    Final                                       5f      7.7MB  (pdf:3, octet-stream:1, pptx:1)
+
+### OLD/LASA/  —  165 files, 5.9MB, depth 1
+  loose files in OLD/LASA/:
+    [   gdoc] HOBY Application
+    [ gsheet] UT Extracurricular
+    [vnd.google-apps.drawing] Poster
+    [   gdoc] Intensification of Trade in Period 3 - Adi Kumar
+    [   gdoc] Appeal to Achilles
+    [   gdoc] Spanish Obesity Reading Assignment
+    ... +157 more
+  subfolders (1):
+    LASA App                                    2f       0.0B  (gdoc:2)
+
+### OLD/Techsas Group Folder/  —  7 files, 4.7MB, depth 1
+  subfolders (1):
+    ASF files                                   7f      4.7MB  (pdf:4, png:2, illustrator:1)
+
+### OLD/Printer Scans/  —  6 files, 3.8MB, depth 1
+  loose files in OLD/Printer Scans/:
+    [    pdf] Scanned_20171202-1340.pdf
+    [    pdf] Scanned_20171202-1339.pdf
+    [    pdf] Scanned_20171202-1339.pdf
+    [    pdf] Scanned_20171123-1333.pdf
+    [    pdf] Scanned_20171123-1058.pdf
+    [    pdf] 20171115212743_001.pdf
+  subfolders (1):
+    From_BrotherDevice                          0f       0.0B  ()
+
+### OLD/Mridangam/  —  42 files, 2.9MB, depth 1
+  loose files in OLD/Mridangam/:
+    [shortcut] Krishnamurthy Competition Pieces
+    [shortcut] Gajana nayutham.m4a
+    [ gsheet] Rohan Classes
+    [   gdoc] Arangetram
+    [   gdoc] Wish list for Arangetram - Shakthi
+    [   gdoc] Indian Raga Write-up
+    ... +21 more
+  subfolders (2):
+    Adithya-Mridangam-Homework&Concerts        10f      2.9MB  (jpg:8, gdoc:1, gsheet:1)
+    Competition pieces                          5f       0.0B  (gdoc:4, gsheet:1)
+
+### OLD/Middle School/  —  131 files, 2.2MB, depth 3
+  loose files in OLD/Middle School/:
+    [   gdoc] Merchandise Project
+    [   gdoc] Austin Computer Science Fair Script-Adithya Kumar
+    [   gdoc] Weekly Reflection Worksheet-week 1
+    [   gdoc] Performance Review
+    [    pdf] Performance Review Example.pdf
+    [   docx] Weekly Reflection Worksheet.docx
+  subfolders (10):
+    Science Fair                               24f      1.6MB  (gdoc:17, docx:3, pdf:2)
+    Adithya - CRMS DI Service Learning - 2014-2015     27f    353.6KB  (gdoc:15, pdf:5, gsheet:4)
+    School                                     52f      9.8KB  (gdoc:37, shortcut:4, gslide:4)
+    Patent                                      1f       0.0B  (gdoc:1)
+    ELA Tips                                    2f       0.0B  (gsheet:2)
+    Student Council                             0f       0.0B  ()
+    PSAT Prep                                   2f       0.0B  (gdoc:2)
+    FTC                                         1f       0.0B  (gdoc:1)
+    Independent Study                          13f       0.0B  (gdoc:6, gslide:5, vnd.google-apps.drawing:2)
+    Reflections                                 3f       0.0B  (gdoc:3)
+
+### OLD/ubuntu flash upload/  —  22 files, 1.5MB, depth 0
+  loose files in OLD/ubuntu flash upload/:
+    [    jpg] 2019-10-30-153259.jpg
+    [    jpg] 2019-10-30-153310.jpg
+    [    jpg] 2019-10-30-153455.jpg
+    [    jpg] 2019-10-30-153155.jpg
+    [    jpg] 2019-10-30-153237.jpg
+    [    jpg] 2019-10-30-153227.jpg
+    ... +16 more
+
+### OLD/Robotics Program/  —  26 files, 1.2MB, depth 3
+  subfolders (15):
+    4th Weeks Material                          3f    761.1KB  (pptx:1, png:1, vnd.google-apps.drawing:1)
+    1st Week Materials                          5f    212.0KB  (gdoc:2, vnd.google-apps.drawing:1, octet-stream:1)
+    Flyer                                       1f    195.5KB  (pdf:1)
+    Certificate                                 1f     61.8KB  (pptx:1)
+    Permission Form                             1f     12.0KB  (docx:1)
+    Challenges                                  1f       0.0B  (vnd.google-apps.drawing:1)
+    Feedback Sheet                              1f       0.0B  (gform:1)
+    Scout Recruitment Form                      2f       0.0B  (gsheet:1, gform:1)
+    Parent sign up form                         2f       0.0B  (gsheet:1, gform:1)
+    Link to Robot Building Instructions         1f       0.0B  (gdoc:1)
+    Application Form                            2f       0.0B  (gsheet:1, gform:1)
+    Prep                                        2f       0.0B  (gdoc:2)
+    Syllabus                                    1f       0.0B  (gdoc:1)
+    2nd Week Materials                          1f       0.0B  (vnd.google-apps.drawing:1)
+    3rd Weeks Materials                         2f       0.0B  (vnd.google-apps.drawing:2)
+
+### OLD/anniversary/  —  6 files, 1.1MB, depth 0
+  loose files in OLD/anniversary/:
+    [   gdoc] Anniversary
+    [    jpg] 9.jpg
+    [    jpg] 8.jpg
+    [    jpg] 3.jpg
+    [    jpg] 2.jpg
+    [    jpg] 1.jpg
+
+### OLD/Shak STZY pack/  —  1 files, 963.7KB, depth 2
+  subfolders (2):
+    other stuff                                 1f    963.7KB  (mp3:1)
+    quality piano shit                          0f       0.0B  ()
+
+### OLD/Mridangam Konnakol/  —  1 files, 946.7KB, depth 1
+  loose files in OLD/Mridangam Konnakol/:
+    [    pdf] Why_Mrudanga_called_so_by_Dr_V_Raghavan1.pdf
+  subfolders (2):
+    English-Done                                0f       0.0B  ()
+    Tamil                                       0f       0.0B  ()
+
+### OLD/Personal/  —  72 files, 901.8KB, depth 1
+  loose files in OLD/Personal/:
+    [   gdoc] MIT Launch (Launch X)
+    [ gsheet] College Information - Visit 2018
+    [   gdoc] Shakthi Blog
+    [   gdoc] TED NYC Idea Search 2018 Entry Form - FINAL
+    [   gdoc] TED NYC Idea Search 2016 Entry Form
+    [   gdoc] Amma birthday If parody
+    ... +31 more
+  subfolders (3):
+    Scouts                                     23f    563.8KB  (gdoc:15, docx:4, shortcut:2)
+    Broadcom                                    9f    271.1KB  (gslide:4, gdoc:4, pptx:1)
+    NJHS                                        3f       0.0B  (gdoc:2, gsheet:1)
+
+### OLD/College Prep/  —  8 files, 798.9KB, depth 1
+  loose files in OLD/College Prep/:
+    [ gsheet] Math, Science and Robotics Camps
+    [   gdoc] PSAT prep with MTAT
+    [   gdoc] Kaplan Method
+    [ gsheet] College Major and Career Areas
+  subfolders (1):
+    College Prep                                4f    798.9KB  (gsheet:3, pdf:1)
+
+### OLD/arya bday/  —  4 files, 778.2KB, depth 0
+  loose files in OLD/arya bday/:
+    [    jpg] 1.jpg
+    [    jpg] 2.jpg
+    [    jpg] 3.jpg
+    [    jpg] 5.jpg
+
+### OLD/10th grade/  —  42 files, 708.3KB, depth 0
+  loose files in OLD/10th grade/:
+    [ gsheet] CMU
+    [ gsheet] 2018 Summer Applications Programs
+    [   gdoc] WHAP Period 3 Timeline
+    [   gdoc] FBLA Speech
+    [   gdoc] Cover Letter for Columbia Application
+    [   gdoc] Woody Plants Reading Questions
+    ... +36 more
+
+### OLD/final/  —  2 files, 681.9KB, depth 0
+  loose files in OLD/final/:
+    [    jpg] 5.jpg
+    [    jpg] 4.jpg
+
+### OLD/Photos/  —  2 files, 645.5KB, depth 0
+  loose files in OLD/Photos/:
+    [    jpg] IMG_7326.jpg
+    [    jpg] Snapchat-2031986686.jpg
+
+### OLD/LASA College/  —  2 files, 610.3KB, depth 0
+  loose files in OLD/LASA College/:
+    [    pdf] Brag Sheet - Adi Kumar - July 7 2017.pdf
+    [ msword] Brag Sheet - Adi Kumar - July 7 2017.doc
+
+### OLD/Nanotech/  —  3 files, 531.7KB, depth 0
+  loose files in OLD/Nanotech/:
+    [ gslide] NASCENT Pre-College Nano Program Final Presentation 2017
+    [ gslide] Cancer Research NASCENT Presentation
+    [   pptx] NASCENT Pre-College Nano Program Final Presentation Template 2017.pptx
+
+### OLD/College Admission Information - Adithya Kumar/  —  4 files, 471.7KB, depth 0
+  loose files in OLD/College Admission Information - Adithya Kumar/:
+    [    pdf] Course List - 11th Grade - 2018/2019 School Year
+    [    jpg] AP Scores - 9th Grade - May 2017
+    [    pdf] Report Card 4th Semester - Adithya Kumar
+    [    pdf] Report Card first 3 Semesters - Adithya Kumar
+
+### OLD/Scouts/  —  19 files, 433.3KB, depth 0
+  loose files in OLD/Scouts/:
+    [ gsheet] Personal Fitness Plan
+    [    pdf] Personal Fitness Plan.pdf
+    [   gdoc] Alpha Rho Eagle Project Grant Application - Adi Kumar
+    [   gdoc] Personal-Fitness.docx
+    [    pdf] Personal-Fitness.docx.pdf
+    [   gdoc] Email to Scout People
+    ... +13 more
+
+### OLD/FL STUDIO/  —  38 files, 350.6KB, depth 6
+  subfolders (1):
+    Cracked Files                              38f    350.6KB  (octet-stream:20, rtf:16, x-dosexec:2)
+
+### OLD/blog/  —  37 files, 228.1KB, depth 3
+  subfolders (1):
+    02-21-19 (Blog 2_nonjankv2)                37f    228.1KB  (html:11, octet-stream:9, css:5)
+
+### OLD/Colab Notebooks/  —  2 files, 145.4KB, depth 0
+  loose files in OLD/Colab Notebooks/:
+    [vnd.google.colaboratory] Copy of sql_chain.ipynb
+    [vnd.google.colaboratory] AI VOCAL
+
+### OLD/ugba100.fcpbundle/  —  6 files, 100.9KB, depth 1
+  loose files in OLD/ugba100.fcpbundle/:
+    [octet-stream] __Sync__
+    [    xml] .lock-info
+    [octet-stream] CurrentVersion.flexolibrary
+    [    xml] CurrentVersion.plist
+    [    xml] Settings.plist
+    [octet-stream] .lock
+  subfolders (4):
+    __Temp                                      0f       0.0B  ()
+    Motion Templates.localized                  0f       0.0B  ()
+    12-12-22                                    0f       0.0B  ()
+    .lock-dir                                   0f       0.0B  ()
+
+### OLD/Berkeley Club Applications/  —  41 files, 49.5KB, depth 2
+  loose files in OLD/Berkeley Club Applications/:
+    [   gdoc] Product Space @ UC Berkeley
+    [   gdoc] Blockchain at Berkeley
+    [    jpg] kumar-adithya.jpg
+    [   gdoc] Berkeley Innovation
+    [   gdoc] DiversaTech
+    [ gsheet] Berkeley Club Apps
+    ... +3 more
+  subfolders (1):
+    finished                                   32f       0.0B  (gdoc:32)
+
+### OLD/asciiart/  —  13 files, 22.1KB, depth 2
+  subfolders (1):
+    asciifinal                                 13f     22.1KB  (html:5, css:3, octet-stream:3)
+
+### OLD/Project STZY/  —  3 files, 10.5KB, depth 0
+  loose files in OLD/Project STZY/:
+    [ gsheet] Email Promotion
+    [   gdoc] Release Schedule
+    [   gdoc] Promotion
+
+### OLD/M&TSI 2024/  —  1 files, 7.3KB, depth 0
+  loose files in OLD/M&TSI 2024/:
+    [   gdoc] m&tsi application 2024
+
+### OLD/shvapc-to-disc transfer/  —  0 files, 0.0B, depth 0
+
+### OLD/launchx.fcpbundle/  —  0 files, 0.0B, depth 0
+
+### OLD/2022 Science Fair/  —  0 files, 0.0B, depth 0
+
+### OLD/Groov Media/  —  0 files, 0.0B, depth 0
+
+### OLD/devin/  —  0 files, 0.0B, depth 0
+
+### OLD/evan/  —  0 files, 0.0B, depth 1
+  subfolders (1):
+    tuned                                       0f       0.0B  ()
+
+### OLD/Get My Bag - Tito Stems/  —  0 files, 0.0B, depth 0
+
+### OLD/get my bag stems/  —  0 files, 0.0B, depth 0
+
+### OLD/vox/  —  0 files, 0.0B, depth 1
+  subfolders (1):
+    evan                                        0f       0.0B  ()
+
+### OLD/MET 2024/  —  16 files, 0.0B, depth 1
+  loose files in OLD/MET 2024/:
+    [   gdoc] 2/11 - Chat w/ Saikat
+    [ gsheet] 2020-2021 Fall Classes/Professors
+    [shortcut] UPDATED M.E.T. Club Contacts Bank
+    [   gdoc] 9/1 Stempalooza Notes
+    [   gdoc] 200828 consulting club forum
+    [   gdoc] Apple+EECS Notes
+    ... +9 more
+  subfolders (1):
+    Pre-Commit                                  1f       0.0B  (gdoc:1)
+
+### OLD/stems/  —  0 files, 0.0B, depth 1
+  subfolders (1):
+    meet                                        0f       0.0B  ()
+
+### OLD/yeeyee/  —  0 files, 0.0B, depth 0
+
+### OLD/Music/  —  0 files, 0.0B, depth 0
+
+### OLD/Essay Brainstorming/  —  5 files, 0.0B, depth 0
+  loose files in OLD/Essay Brainstorming/:
+    [   gdoc] 21 Details - Adithya Kumar
+    [   gdoc] "Everything I Want Colleges to Know About Me" exercise
+    [   gdoc] Essence objects exercise - Adithya Kumar
+    [   gdoc] How to Write Your Common App Activities List - Adithya Kumar
+    [   gdoc] Using the Common App "Additional Info" section - Adithya Kumar
+
+### OLD/Patents 2019 - Shakthi/  —  7 files, 0.0B, depth 1
+  loose files in OLD/Patents 2019 - Shakthi/:
+    [ gsheet] Patent Ideas -2019
+  subfolders (2):
+    Idea 2 - Camera Frame Marker                4f       0.0B  (gdoc:2, vnd.google-apps.drawing:2)
+    Idea 1 - Gaia Glove                         2f       0.0B  (gdoc:2)
+
+### OLD/PTA Reflections/  —  0 files, 0.0B, depth 0
+
+### OLD/Junior Year Applications/  —  3 files, 0.0B, depth 0
+  loose files in OLD/Junior Year Applications/:
+    [   gdoc] Davidson Fellows 2018-2019
+    [   gdoc] Rockefeller 2018-2019
+    [   gdoc] Google Science Fair 2018-2019
+
+### OLD/indian raga/  —  0 files, 0.0B, depth 0
+
+### OLD/Drone Footage for 5/28/2018/  —  0 files, 0.0B, depth 0
+
+### OLD/Troop 421/  —  9 files, 0.0B, depth 0
+  loose files in OLD/Troop 421/:
+    [ gsheet] Troop 421 Attendance
+    [  gform] Beach Campout Sign Up Sheet
+    [ gsheet] Bamboo Ranch Sign Up Sheet (Responses)
+    [  gform] Bamboo Ranch Sign Up Sheet
+    [ gsheet] Meeting Plan
+    [   gdoc] PLC
+    ... +3 more
+
+### OLD/PLEARTH KT Debate/  —  2 files, 0.0B, depth 0
+  loose files in OLD/PLEARTH KT Debate/:
+    [   gdoc] Chat
+    [   gdoc] PLEARTH Pro Stuff
+
+### OLD/WHAP Japan Pro Group/  —  6 files, 0.0B, depth 0
+  loose files in OLD/WHAP Japan Pro Group/:
+    [   gdoc] Facts they flub
+    [   gdoc] CONSTRUCTIVES
+    [   gdoc] Rebuttals/Arguments
+    [   gdoc] Points
+    [   gdoc] Sources
+    [   gdoc] Assignments
+
+### OLD/Diamond Challenge 2017/  —  5 files, 0.0B, depth 0
+  loose files in OLD/Diamond Challenge 2017/:
+    [ gsheet] Diamond Challege Buisness Assets CA-99488.xlsx
+    [   gdoc] Written Concept
+    [   gdoc] Video Outline
+    [ gslide] The IoTPillbox
+    [ gslide] Pitch
+
+### OLD/Trade Networks Project/  —  1 files, 0.0B, depth 0
+  loose files in OLD/Trade Networks Project/:
+    [   gdoc] Trade Networks in Period 3
+
+### OLD/MUN Topic Papers/  —  2 files, 0.0B, depth 0
+  loose files in OLD/MUN Topic Papers/:
+    [   gdoc] UK.ECOSOC.Topic2
+    [   gdoc] UK.ECOSOC.Topic1
+
+### OLD/LSTE/  —  0 files, 0.0B, depth 0
+
+### OLD/Great Ideas Laws/  —  2 files, 0.0B, depth 0
+  loose files in OLD/Great Ideas Laws/:
+    [ gslide] Texas Constitution Laws
+    [   gdoc] Laws that Reflect the People
+
+### OLD/Garza/  —  4 files, 0.0B, depth 0
+  loose files in OLD/Garza/:
+    [vnd.google-apps.drawing] Garza Timeline
+    [vnd.google-apps.drawing] Garza First aid information poster children
+    [vnd.google-apps.drawing] Garza thing
+    [vnd.google-apps.drawing] Garza Poster
+
+### OLD/Classroom/  —  1 files, 0.0B, depth 1
+  subfolders (1):
+    LBJ/LASA Music Production Club Music        1f       0.0B  (shortcut:1)
+
+### OLD/TXSEF 2017 /  —  1 files, 0.0B, depth 0
+  loose files in OLD/TXSEF 2017 /:
+    [   gdoc] Intelligent Pill Box
+
+### OLD/Applications/  —  4 files, 0.0B, depth 0
+  loose files in OLD/Applications/:
+    [   gdoc] UT NanoTech - Summer 2017
+    [vnd.google-apps.drawing] Garza First aid information poster adults
+    [   gdoc] CODE @ TACC - Summer 2017
+    [   gdoc] Application for COSEBOC
+
+### OLD/College Prep/Process/  —  3 files, 0.0B, depth 0
+  loose files in OLD/College Prep/Process/:
+    [   gdoc] ACC Career Workshop - Success in Your New Job
+    [   gdoc] ACC Resume Workshop
+    [   gdoc] College Prep Event on 3/11/17 for AHT
+
+### OLD/Science Fair 2017/  —  7 files, 0.0B, depth 0
+  loose files in OLD/Science Fair 2017/:
+    [shortcut] The IoTPillbox
+    [vnd.google-apps.drawing] Scienteer 2017
+    [   gdoc] IOTPillBox
+    [   gdoc] Abstract Scienteer 2017
+    [ gslide] ScienceFair 2017-Adi.pptx
+    [   gdoc] Science Fair Program 2017
+    ... +1 more
+
+### OLD/3rd Grade ??? Multi-Level Edition Level 10 ??? 460 Practice Questions for CogAT?? Test Form 7?? (More 3rd grade at top of this section).zip (Unzipped Files)/  —  0 files, 0.0B, depth 1
+  subfolders (1):
+    3rd Grade – Multi-Level Edition Level 10 – 460 Practice Questions for CogAT® Test Form 7® (More 3rd grade at top of this section)      0f       0.0B  ()
+
+### OLD/Math/  —  1 files, 0.0B, depth 0
+  loose files in OLD/Math/:
+    [   gdoc] Aops Class
+
+### OLD/Robotics/  —  4 files, 0.0B, depth 0
+  loose files in OLD/Robotics/:
+    [   gdoc] UT Summer Research Application 2017
+    [   gdoc] Adithya Shakthi Kumar - Viperbots Application for 2016-2017
+    [   gdoc] UT Summer Research Recommendation
+    [   gdoc] Teahcer Recommendation Form for Viperbots Application
+
+### OLD/Cool stuff/  —  9 files, 0.0B, depth 0
+  loose files in OLD/Cool stuff/:
+    [   gdoc] Bookmarks
+    [   gdoc] Gmail Drafts
+    [   gdoc] Photoshop Tutorials
+    [   gdoc] Kickstarter
+    [   gdoc] Birthday
+    [   gdoc] Cool chat stuff
+    ... +3 more
+
+### OLD/Robot book/  —  5 files, 0.0B, depth 0
+  loose files in OLD/Robot book/:
+    [   gdoc] Robotic Book - v1
+    [vnd.google-apps.drawing] Robot cover
+    [   gdoc] Robot book work.
+    [   gdoc] Ancient Athens Debate
+    [   gdoc] Humanoid
+
+### OLD/Working On/  —  5 files, 0.0B, depth 0
+  loose files in OLD/Working On/:
+    [   gdoc] China Project-Adithya Kumar
+    [   gdoc] Annotated Bibliography
+    [   gdoc] Soil Letter to the President
+    [   gdoc] Arts-Dark Water Rising
+    [   gdoc] Karnatic Music Theory for Miruthangam Percussion-Adithya Kumar

@@ -1,0 +1,2282 @@
+{
+  "hello@meowwolf.com": {
+    "name": "Meow Wolf",
+    "total": 4,
+    "first": "2026-03-31 13:09",
+    "last": "2026-04-30 17:06"
+  },
+  "info-aifundservices.com@shared1.ccsend.com": {
+    "name": "Akram | Assurance, Advisory & Tax Firm",
+    "total": 3,
+    "first": "2025-08-05 11:29",
+    "last": "2026-04-30 16:53"
+  },
+  "hello@tech-week.com": {
+    "name": "Katia at Tech Week",
+    "total": 2,
+    "first": "2025-10-06 11:21",
+    "last": "2026-04-30 16:36"
+  },
+  "contact@silobrooklyn.com": {
+    "name": "SILO",
+    "total": 5,
+    "first": "2026-04-02 15:01",
+    "last": "2026-04-30 13:00"
+  },
+  "info@reply.snowflake.com": {
+    "name": "Snowflake",
+    "total": 5,
+    "first": "2026-04-13 03:07",
+    "last": "2026-04-30 12:17"
+  },
+  "hub@the-block.com": {
+    "name": "TheBlock.",
+    "total": 7,
+    "first": "2025-12-03 09:26",
+    "last": "2026-04-30 09:11"
+  },
+  "sales@9885401.brevosend.com": {
+    "name": "SoFLA Vacations",
+    "total": 8,
+    "first": "2026-04-07 08:11",
+    "last": "2026-04-30 08:11"
+  },
+  "southwestairlines@iluv.southwest.com": {
+    "name": "Southwest Airlines",
+    "total": 60,
+    "first": "2025-05-06 08:37",
+    "last": "2026-04-30 07:09"
+  },
+  "marketing@campaign.chainup.com": {
+    "name": "ChainUp",
+    "total": 4,
+    "first": "2026-04-08 20:03",
+    "last": "2026-04-30 04:38"
+  },
+  "do-not-reply@gaib.ai": {
+    "name": "GAIB",
+    "total": 2,
+    "first": "2026-04-14 04:27",
+    "last": "2026-04-30 04:02"
+  },
+  "help@shortform.com": {
+    "name": "Allen from Shortform",
+    "total": 3,
+    "first": "2026-04-26 17:32",
+    "last": "2026-04-29 17:32"
+  },
+  "campaigns@campaigns.club-os.com": {
+    "name": "Lorena Medina",
+    "total": 22,
+    "first": "2026-01-24 10:08",
+    "last": "2026-04-29 15:31"
+  },
+  "hello@negotiation.news": {
+    "name": "Gerta & Alex",
+    "total": 2,
+    "first": "2026-04-26 18:13",
+    "last": "2026-04-29 14:55"
+  },
+  "crosschain@across.to": {
+    "name": "Across Protocol",
+    "total": 6,
+    "first": "2025-07-02 11:04",
+    "last": "2026-04-29 13:35"
+  },
+  "info@apmlist.com": {
+    "name": "Max at APM List",
+    "total": 2,
+    "first": "2026-04-06 12:00",
+    "last": "2026-04-29 12:00"
+  },
+  "hello@betterreport.com": {
+    "name": "Better Report",
+    "total": 2,
+    "first": "2026-04-27 13:13",
+    "last": "2026-04-29 12:26"
+  },
+  "developers@somnia.network": {
+    "name": "Somnia",
+    "total": 2,
+    "first": "2026-04-21 09:37",
+    "last": "2026-04-29 11:14"
+  },
+  "events+bvifinance.vg@icontactmail3.com": {
+    "name": "BVI Finance",
+    "total": 5,
+    "first": "2026-04-23 08:00",
+    "last": "2026-04-29 10:31"
+  },
+  "jesse@apacdao.net": {
+    "name": "APAC DAO",
+    "total": 2,
+    "first": "2026-04-20 04:42",
+    "last": "2026-04-29 10:04"
+  },
+  "admin.hikeandhealwellness.org@dxdkjn.sqspmail.com": {
+    "name": "Hike+Heal",
+    "total": 9,
+    "first": "2025-09-02 07:08",
+    "last": "2026-04-29 09:04"
+  },
+  "team@community.brinc.io": {
+    "name": "Brinc Community",
+    "total": 7,
+    "first": "2025-10-07 03:36",
+    "last": "2026-04-29 06:00"
+  },
+  "subscriptions@medium.com": {
+    "name": "QuillAudits - Web3 Security \ud83d\udee1\ufe0f",
+    "total": 22,
+    "first": "2025-05-01 08:20",
+    "last": "2026-04-29 03:40"
+  },
+  "ventureverse@mail.ventureverse.com": {
+    "name": "VentureVerse by Brinc",
+    "total": 4,
+    "first": "2026-04-09 01:52",
+    "last": "2026-04-29 01:40"
+  },
+  "hello@pinchme.com": {
+    "name": "PINCHme",
+    "total": 7,
+    "first": "2026-04-02 17:28",
+    "last": "2026-04-28 17:23"
+  },
+  "hello@takethesis.com": {
+    "name": "Thesis",
+    "total": 4,
+    "first": "2026-03-03 02:59",
+    "last": "2026-04-28 17:02"
+  },
+  "hi@everydaydose.com": {
+    "name": "Everyday Dose",
+    "total": 19,
+    "first": "2025-10-11 16:13",
+    "last": "2026-04-28 11:31"
+  },
+  "contacts@pulse.nyc": {
+    "name": "Pulse NYC",
+    "total": 5,
+    "first": "2026-04-14 10:45",
+    "last": "2026-04-28 10:37"
+  },
+  "newsletter@artsdao.io": {
+    "name": "Arts DAO Newsletter",
+    "total": 5,
+    "first": "2026-04-02 05:09",
+    "last": "2026-04-28 09:39"
+  },
+  "team@sparxlabs.io": {
+    "name": "team@sparxlabs.io",
+    "total": 4,
+    "first": "2026-04-03 09:26",
+    "last": "2026-04-28 09:28"
+  },
+  "media@digift.com.sg": {
+    "name": "DigiFT",
+    "total": 6,
+    "first": "2025-07-04 02:03",
+    "last": "2026-04-27 20:30"
+  },
+  "no-reply@startupgrind.com": {
+    "name": "Startup Grind",
+    "total": 25,
+    "first": "2025-08-27 14:00",
+    "last": "2026-04-27 19:01"
+  },
+  "care@joyous.team": {
+    "name": "Joyous Care",
+    "total": 5,
+    "first": "2026-04-10 04:54",
+    "last": "2026-04-27 16:11"
+  },
+  "exec-ed@gsbcommunications.stanford.edu": {
+    "name": "Stanford GSB \u2014 Executive Education",
+    "total": 13,
+    "first": "2025-06-04 14:50",
+    "last": "2026-04-27 15:08"
+  },
+  "info@superteam.ca": {
+    "name": "Superteam Canada",
+    "total": 2,
+    "first": "2026-04-06 11:46",
+    "last": "2026-04-27 14:45"
+  },
+  "aw3technology@user.luma-mail.com": {
+    "name": "AW3 Technology",
+    "total": 2,
+    "first": "2025-07-27 20:22",
+    "last": "2026-04-27 13:41"
+  },
+  "mail@communications.tokinvest.capital": {
+    "name": "Tokinvest",
+    "total": 2,
+    "first": "2026-04-01 13:01",
+    "last": "2026-04-27 13:01"
+  },
+  "mindchris@user.luma-mail.com": {
+    "name": "Chris Parjaszewski",
+    "total": 5,
+    "first": "2026-03-30 14:23",
+    "last": "2026-04-27 10:47"
+  },
+  "theblockglobal@user.luma-mail.com": {
+    "name": "TheBlock .",
+    "total": 2,
+    "first": "2026-04-20 02:45",
+    "last": "2026-04-27 09:52"
+  },
+  "contact@artsdao.io": {
+    "name": "Arts DAO",
+    "total": 3,
+    "first": "2026-04-17 09:51",
+    "last": "2026-04-27 09:16"
+  },
+  "usr-5nonit93s6lafhy@user.luma-mail.com": {
+    "name": "MLOps Community",
+    "total": 4,
+    "first": "2025-05-19 08:26",
+    "last": "2026-04-27 07:07"
+  },
+  "team@mail.nextfin-ai.com": {
+    "name": "NextFin Team",
+    "total": 3,
+    "first": "2026-04-13 05:02",
+    "last": "2026-04-27 06:04"
+  },
+  "info@mail.rwalpha.ai": {
+    "name": "RWAlpha.ai",
+    "total": 2,
+    "first": "2026-04-27 02:18",
+    "last": "2026-04-27 02:27"
+  },
+  "pcventures@user.luma-mail.com": {
+    "name": "Pcventures",
+    "total": 8,
+    "first": "2026-04-07 03:06",
+    "last": "2026-04-27 01:58"
+  },
+  "coltonkaplan@user.luma-mail.com": {
+    "name": "Colton Kaplan",
+    "total": 15,
+    "first": "2025-12-09 12:08",
+    "last": "2026-04-26 14:45"
+  },
+  "codame@substack.com": {
+    "name": "CODAME ART+TECH",
+    "total": 2,
+    "first": "2026-04-02 11:23",
+    "last": "2026-04-26 10:42"
+  },
+  "content@mail.token-relations.com": {
+    "name": "Token Relations",
+    "total": 22,
+    "first": "2026-02-04 08:31",
+    "last": "2026-04-26 09:03"
+  },
+  "dylanoriundo@user.luma-mail.com": {
+    "name": "Dylan Oriundo",
+    "total": 7,
+    "first": "2026-01-27 12:11",
+    "last": "2026-04-25 17:51"
+  },
+  "rhazard@cmgfi.com": {
+    "name": "Reed Hazard",
+    "total": 45,
+    "first": "2025-05-03 15:30",
+    "last": "2026-04-25 15:30"
+  },
+  "chelsea.c@ifttt.com": {
+    "name": "Chelsea with IFTTT",
+    "total": 10,
+    "first": "2025-09-17 10:14",
+    "last": "2026-04-25 11:49"
+  },
+  "relycapital@user.luma-mail.com": {
+    "name": "Toby Morning",
+    "total": 13,
+    "first": "2025-12-11 22:40",
+    "last": "2026-04-25 11:03"
+  },
+  "info+bvifinance.vg@icontactmail3.com": {
+    "name": "BVI Finance",
+    "total": 3,
+    "first": "2026-04-10 14:26",
+    "last": "2026-04-24 14:31"
+  },
+  "gangesh@user.luma-mail.com": {
+    "name": "Gangesh",
+    "total": 13,
+    "first": "2025-05-21 11:34",
+    "last": "2026-04-24 13:33"
+  },
+  "marketing@thewinzza.com": {
+    "name": "Winzza",
+    "total": 2,
+    "first": "2026-04-03 13:01",
+    "last": "2026-04-24 13:04"
+  },
+  "info@refractionfestival.com": {
+    "name": "IRL",
+    "total": 2,
+    "first": "2026-04-16 13:19",
+    "last": "2026-04-24 11:56"
+  },
+  "noreply@plpcsanjose.com": {
+    "name": "Purple Lotus",
+    "total": 6,
+    "first": "2026-04-01 11:03",
+    "last": "2026-04-24 10:55"
+  },
+  "gammaprime@user.luma-mail.com": {
+    "name": "Gamma Prime",
+    "total": 8,
+    "first": "2025-12-19 08:01",
+    "last": "2026-04-24 06:51"
+  },
+  "usr-jgutsdsejilfdaw@user.luma-mail.com": {
+    "name": "Skyler Birk-Stachon",
+    "total": 8,
+    "first": "2026-04-03 06:36",
+    "last": "2026-04-24 06:29"
+  },
+  "team@mail.conquista.co": {
+    "name": "Team",
+    "total": 2,
+    "first": "2026-04-19 06:26",
+    "last": "2026-04-24 05:19"
+  },
+  "editors-noreply@linkedin.com": {
+    "name": "LinkedIn News",
+    "total": 7,
+    "first": "2026-01-22 17:20",
+    "last": "2026-04-23 16:43"
+  },
+  "media@hinkal.pro": {
+    "name": "hinkal",
+    "total": 2,
+    "first": "2025-07-15 21:02",
+    "last": "2026-04-23 12:49"
+  },
+  "yourfriends@toyotaofglendale.net": {
+    "name": "",
+    "total": 4,
+    "first": "2026-04-10 18:51",
+    "last": "2026-04-23 11:38"
+  },
+  "husnetdinov@user.luma-mail.com": {
+    "name": "Sergey Khusnetdinov",
+    "total": 14,
+    "first": "2025-05-19 10:08",
+    "last": "2026-04-23 11:27"
+  },
+  "info@eranyc.com": {
+    "name": "ERA NYC",
+    "total": 7,
+    "first": "2025-08-26 07:03",
+    "last": "2026-04-23 09:03"
+  },
+  "hello@brickken.io": {
+    "name": "Brickken",
+    "total": 3,
+    "first": "2026-04-02 03:36",
+    "last": "2026-04-23 08:22"
+  },
+  "usr-kw9nnptxbs6tanl@user.luma-mail.com": {
+    "name": "CryptoMondays HQ",
+    "total": 6,
+    "first": "2026-03-11 13:00",
+    "last": "2026-04-23 07:18"
+  },
+  "noreply@news.vntr.vc": {
+    "name": "VNTR",
+    "total": 2,
+    "first": "2026-04-10 04:00",
+    "last": "2026-04-23 04:00"
+  },
+  "marketing@pharoslabs.xyz": {
+    "name": "Pharos Network",
+    "total": 3,
+    "first": "2026-04-02 03:56",
+    "last": "2026-04-22 19:50"
+  },
+  "usr-whvdsqnedkokcqg@user.luma-mail.com": {
+    "name": "Metaverse Post",
+    "total": 29,
+    "first": "2025-05-08 09:04",
+    "last": "2026-04-22 19:34"
+  },
+  "stephenpropel@user.luma-mail.com": {
+    "name": "Stephen Michael",
+    "total": 33,
+    "first": "2026-01-30 02:37",
+    "last": "2026-04-22 17:02"
+  },
+  "usr-hjgoxpq0fmo9cag@user.luma-mail.com": {
+    "name": "Lot45 Bushwick",
+    "total": 20,
+    "first": "2025-09-23 10:52",
+    "last": "2026-04-22 16:48"
+  },
+  "coineasy@user.luma-mail.com": {
+    "name": "CoinEasy",
+    "total": 21,
+    "first": "2025-05-07 09:50",
+    "last": "2026-04-22 14:59"
+  },
+  "admin@treefolks.org": {
+    "name": "TreeFolks",
+    "total": 14,
+    "first": "2025-05-21 12:29",
+    "last": "2026-04-22 13:00"
+  },
+  "usr-pd6ummwqw4de28b@user.luma-mail.com": {
+    "name": "iExec",
+    "total": 8,
+    "first": "2025-06-03 08:09",
+    "last": "2026-04-22 02:31"
+  },
+  "usr-axf1z0n6qgtllnb@user.luma-mail.com": {
+    "name": "Gordon Einstein",
+    "total": 65,
+    "first": "2025-05-08 00:39",
+    "last": "2026-04-22 01:58"
+  },
+  "dwaynekshrn@user.luma-mail.com": {
+    "name": "Dwayne Campbell",
+    "total": 2,
+    "first": "2025-10-11 09:58",
+    "last": "2026-04-21 20:06"
+  },
+  "preepadu@user.luma-mail.com": {
+    "name": "Preethy Padmanabhan",
+    "total": 10,
+    "first": "2025-08-27 23:13",
+    "last": "2026-04-21 17:04"
+  },
+  "shop@meowwolf.com": {
+    "name": "Meow Wolf Shop",
+    "total": 2,
+    "first": "2026-04-17 10:27",
+    "last": "2026-04-21 13:19"
+  },
+  "loukerner@user.luma-mail.com": {
+    "name": "Lou Kerner",
+    "total": 33,
+    "first": "2025-05-14 08:21",
+    "last": "2026-04-21 09:10"
+  },
+  "contact@rarenetwork.io": {
+    "name": "Rare Evo",
+    "total": 3,
+    "first": "2026-03-31 15:52",
+    "last": "2026-04-21 09:02"
+  },
+  "krispykreme_at_em_krispykreme_com_ck6zfqzktr_d99c44f6@privaterelay.appleid.com": {
+    "name": "Krispy Kreme",
+    "total": 7,
+    "first": "2026-04-02 06:16",
+    "last": "2026-04-21 06:37"
+  },
+  "no-reply@marketing.base44.com": {
+    "name": "Base44",
+    "total": 5,
+    "first": "2025-10-09 12:39",
+    "last": "2026-04-20 15:00"
+  },
+  "han-gptdao.ai@shared1.ccsend.com": {
+    "name": "GPTDAO",
+    "total": 2,
+    "first": "2025-12-29 17:54",
+    "last": "2026-04-20 14:35"
+  },
+  "team@hi.wellfound.com": {
+    "name": "Wellfound",
+    "total": 38,
+    "first": "2025-07-25 08:50",
+    "last": "2026-04-20 14:16"
+  },
+  "usr-a57wurynbs4zqc4@user.luma-mail.com": {
+    "name": "Ben Schwartz",
+    "total": 3,
+    "first": "2026-03-11 07:16",
+    "last": "2026-04-20 13:28"
+  },
+  "claw_camp@user.luma-mail.com": {
+    "name": "Colin @ Nebius",
+    "total": 2,
+    "first": "2026-04-13 22:40",
+    "last": "2026-04-20 11:33"
+  },
+  "pinkcard@rewards.pinkberry.com": {
+    "name": "Pinkberry",
+    "total": 3,
+    "first": "2026-04-06 11:24",
+    "last": "2026-04-20 11:27"
+  },
+  "rodrigoterron@user.luma-mail.com": {
+    "name": "Rodrigo Terron",
+    "total": 2,
+    "first": "2026-04-06 09:58",
+    "last": "2026-04-20 09:28"
+  },
+  "sui@user.luma-mail.com": {
+    "name": "Sui",
+    "total": 5,
+    "first": "2026-03-05 03:55",
+    "last": "2026-04-20 09:18"
+  },
+  "india_fine_arts_inc@mail.vresp.com": {
+    "name": "India Fine Arts, Inc",
+    "total": 2,
+    "first": "2026-04-04 19:56",
+    "last": "2026-04-19 21:21"
+  },
+  "noreply@pixelfilmstudios.com": {
+    "name": "Pixel Film Studios",
+    "total": 4,
+    "first": "2026-04-03 13:17",
+    "last": "2026-04-19 08:28"
+  },
+  "waibsummit@user.luma-mail.com": {
+    "name": "WAIBSummit MONACO",
+    "total": 8,
+    "first": "2025-05-03 04:56",
+    "last": "2026-04-18 16:41"
+  },
+  "setzeus@user.luma-mail.com": {
+    "name": "Jesus Najera (Setzeus)",
+    "total": 2,
+    "first": "2026-03-11 09:31",
+    "last": "2026-04-17 11:03"
+  },
+  "akindo@user.luma-mail.com": {
+    "name": "AKINDO",
+    "total": 12,
+    "first": "2025-05-20 09:54",
+    "last": "2026-04-17 09:26"
+  },
+  "business@9349032.brevosend.com": {
+    "name": "DTC Group",
+    "total": 2,
+    "first": "2025-08-29 03:19",
+    "last": "2026-04-16 21:00"
+  },
+  "info@solanaspaces.com": {
+    "name": "THE COOK by Solana Spaces",
+    "total": 2,
+    "first": "2026-04-09 15:00",
+    "last": "2026-04-16 15:02"
+  },
+  "stacks@user.luma-mail.com": {
+    "name": "Stacks Labs",
+    "total": 3,
+    "first": "2025-11-19 08:36",
+    "last": "2026-04-16 14:57"
+  },
+  "nitin@theindustryshow.org": {
+    "name": "nitin bajaj - ASAN",
+    "total": 2,
+    "first": "2026-04-12 12:48",
+    "last": "2026-04-16 13:25"
+  },
+  "hello@email.health.amazon.com": {
+    "name": "Amazon Health",
+    "total": 5,
+    "first": "2025-08-03 11:44",
+    "last": "2026-04-16 11:28"
+  },
+  "info@hello.inkind.com": {
+    "name": "inKind",
+    "total": 2,
+    "first": "2026-03-14 13:15",
+    "last": "2026-04-16 11:05"
+  },
+  "info@sui.io": {
+    "name": "Sui",
+    "total": 2,
+    "first": "2026-04-09 15:25",
+    "last": "2026-04-16 08:59"
+  },
+  "coolblaze@user.luma-mail.com": {
+    "name": "Justin Elliott",
+    "total": 4,
+    "first": "2025-11-09 01:36",
+    "last": "2026-04-15 19:05"
+  },
+  "hello@devfolio.co": {
+    "name": "Devfolio",
+    "total": 10,
+    "first": "2025-10-14 17:44",
+    "last": "2026-04-15 18:31"
+  },
+  "info@sfclimateweek.org": {
+    "name": "SF Climate Week 2026",
+    "total": 4,
+    "first": "2026-03-31 15:54",
+    "last": "2026-04-15 15:43"
+  },
+  "epicweb3@user.luma-mail.com": {
+    "name": "Epic",
+    "total": 13,
+    "first": "2025-05-06 04:03",
+    "last": "2026-04-15 14:27"
+  },
+  "info@shardeum.org": {
+    "name": "Shardeum",
+    "total": 6,
+    "first": "2025-05-11 01:30",
+    "last": "2026-04-15 13:30"
+  },
+  "doma@user.luma-mail.com": {
+    "name": "Doma",
+    "total": 3,
+    "first": "2026-03-10 12:59",
+    "last": "2026-04-15 12:59"
+  },
+  "mickm@user.luma-mail.com": {
+    "name": "Mick",
+    "total": 2,
+    "first": "2025-05-17 19:53",
+    "last": "2026-04-15 12:43"
+  },
+  "venturedock@user.luma-mail.com": {
+    "name": "Venture Dock",
+    "total": 20,
+    "first": "2025-12-08 23:37",
+    "last": "2026-04-15 09:41"
+  },
+  "superteambr@user.luma-mail.com": {
+    "name": "Superteam Brasil",
+    "total": 2,
+    "first": "2026-03-29 16:59",
+    "last": "2026-04-14 17:51"
+  },
+  "team@climatebase.org": {
+    "name": "Climatebase Weekly",
+    "total": 2,
+    "first": "2026-04-08 10:51",
+    "last": "2026-04-14 10:13"
+  },
+  "usr-ladvwjpnfaxgemb@user.luma-mail.com": {
+    "name": "Mary Pedler",
+    "total": 3,
+    "first": "2026-04-14 09:43",
+    "last": "2026-04-14 09:53"
+  },
+  "usr-qbkkjmapdcmcr76@user.luma-mail.com": {
+    "name": "Launchnodes",
+    "total": 6,
+    "first": "2025-12-02 09:04",
+    "last": "2026-04-14 09:03"
+  },
+  "gophers@user.luma-mail.com": {
+    "name": "Gopher MCP",
+    "total": 2,
+    "first": "2025-12-11 19:34",
+    "last": "2026-04-13 20:18"
+  },
+  "usr-iwekbha48wojeml@user.luma-mail.com": {
+    "name": "Damian Tenuta",
+    "total": 9,
+    "first": "2025-07-15 11:25",
+    "last": "2026-04-13 18:43"
+  },
+  "premium@sales.cryptoarena.com": {
+    "name": "Crypto.com Arena Premium",
+    "total": 2,
+    "first": "2026-04-06 13:01",
+    "last": "2026-04-13 14:41"
+  },
+  "info@allthingsblockchain.org.au": {
+    "name": "All Things Blockchain",
+    "total": 2,
+    "first": "2026-03-31 19:00",
+    "last": "2026-04-12 21:37"
+  },
+  "mpagani@user.luma-mail.com": {
+    "name": "Matheus Pagani",
+    "total": 16,
+    "first": "2025-05-06 13:43",
+    "last": "2026-04-11 14:36"
+  },
+  "crazystartupguy@user.luma-mail.com": {
+    "name": "Christopher Carew",
+    "total": 16,
+    "first": "2025-10-06 17:34",
+    "last": "2026-04-11 14:25"
+  },
+  "hello@iosg.vc": {
+    "name": "IOSG Ventures",
+    "total": 7,
+    "first": "2025-05-11 10:22",
+    "last": "2026-04-11 03:16"
+  },
+  "scale_events@user.luma-mail.com": {
+    "name": "Scale Events",
+    "total": 2,
+    "first": "2026-04-07 17:49",
+    "last": "2026-04-10 18:00"
+  },
+  "jackjskywalker@user.luma-mail.com": {
+    "name": "Jack Skywalker",
+    "total": 3,
+    "first": "2026-03-16 18:30",
+    "last": "2026-04-08 17:34"
+  },
+  "usr-4sbtvjocjimtkew@user.luma-mail.com": {
+    "name": "Neha Varshneya",
+    "total": 2,
+    "first": "2025-10-16 16:19",
+    "last": "2026-04-08 17:01"
+  },
+  "annadebacci@user.luma-mail.com": {
+    "name": "Co. Anna L. De Bacci",
+    "total": 5,
+    "first": "2025-12-03 10:21",
+    "last": "2026-04-08 07:16"
+  },
+  "noreply@sohonet.com": {
+    "name": "Adithya Kumar (via FileRunner)",
+    "total": 3,
+    "first": "2026-03-24 19:06",
+    "last": "2026-04-08 07:09"
+  },
+  "usr-jmv6htpbsgs7lf2@user.luma-mail.com": {
+    "name": "Priyanka Desai",
+    "total": 6,
+    "first": "2025-05-13 10:41",
+    "last": "2026-04-07 21:32"
+  },
+  "web@pma.la": {
+    "name": "PMA.LA",
+    "total": 3,
+    "first": "2026-01-23 17:25",
+    "last": "2026-04-07 15:00"
+  },
+  "usr-fmsj4u0n0s0ve1a@user.luma-mail.com": {
+    "name": "Emma Willinger",
+    "total": 7,
+    "first": "2025-06-27 20:39",
+    "last": "2026-04-07 12:52"
+  },
+  "usr-pvdaxfjykblubxp@user.luma-mail.com": {
+    "name": "0xMihej",
+    "total": 2,
+    "first": "2026-03-13 12:11",
+    "last": "2026-04-07 04:10"
+  },
+  "thehousesf@user.luma-mail.com": {
+    "name": "The House by Edge & Node",
+    "total": 2,
+    "first": "2026-04-02 12:29",
+    "last": "2026-04-06 11:40"
+  },
+  "hellomissionvalley@mesarim.com": {
+    "name": "Mesa Rim Mission Valley",
+    "total": 8,
+    "first": "2025-06-13 15:56",
+    "last": "2026-04-05 22:00"
+  },
+  "codame@user.luma-mail.com": {
+    "name": "CODAME ART+TECH",
+    "total": 6,
+    "first": "2026-01-28 07:57",
+    "last": "2026-04-05 11:54"
+  },
+  "laurence@user.luma-mail.com": {
+    "name": "Laurence Ion",
+    "total": 16,
+    "first": "2025-05-02 21:09",
+    "last": "2026-04-03 21:45"
+  },
+  "hello@mail.cointracker.io": {
+    "name": "Garrett Cahill",
+    "total": 11,
+    "first": "2025-07-02 09:55",
+    "last": "2026-04-03 13:15"
+  },
+  "events5@snmail.org": {
+    "name": "Sankara Nethralaya",
+    "total": 2,
+    "first": "2026-04-03 02:09",
+    "last": "2026-04-03 02:29"
+  },
+  "dogeos@user.luma-mail.com": {
+    "name": "DogeOS",
+    "total": 5,
+    "first": "2025-11-18 11:53",
+    "last": "2026-04-02 15:24"
+  },
+  "gwg-noreply@google.com": {
+    "name": "Grow with Google",
+    "total": 7,
+    "first": "2025-05-13 13:19",
+    "last": "2026-04-02 13:34"
+  },
+  "hello@learn.dynamicauth.com": {
+    "name": "Dynamic",
+    "total": 7,
+    "first": "2025-08-04 14:17",
+    "last": "2026-04-02 09:03"
+  },
+  "newsletter@joinai.la": {
+    "name": "AI LA",
+    "total": 6,
+    "first": "2025-09-11 12:15",
+    "last": "2026-04-01 13:22"
+  },
+  "cmoore@1031exchange.com": {
+    "name": "Equity Advantage",
+    "total": 7,
+    "first": "2025-06-09 12:01",
+    "last": "2026-03-31 13:06"
+  },
+  "no-reply@drop.cobrand.com": {
+    "name": "Fred again..",
+    "total": 13,
+    "first": "2025-08-29 10:57",
+    "last": "2026-03-27 14:15"
+  },
+  "info@sb.gwu.edu": {
+    "name": "GW Business",
+    "total": 2,
+    "first": "2025-11-24 21:30",
+    "last": "2026-03-27 13:07"
+  },
+  "usr-shde59i71pe9qgc@user.luma-mail.com": {
+    "name": "Venture Bridge Hub",
+    "total": 4,
+    "first": "2026-02-21 14:28",
+    "last": "2026-03-26 09:37"
+  },
+  "nerdstage@user.luma-mail.com": {
+    "name": "Nerdstage",
+    "total": 2,
+    "first": "2026-03-18 16:26",
+    "last": "2026-03-25 22:01"
+  },
+  "schmoozd@user.luma-mail.com": {
+    "name": "Schmoozd",
+    "total": 4,
+    "first": "2026-01-05 13:49",
+    "last": "2026-03-25 17:30"
+  },
+  "nataliepan@user.luma-mail.com": {
+    "name": "Natalie Pan",
+    "total": 5,
+    "first": "2025-06-03 17:56",
+    "last": "2026-03-24 14:32"
+  },
+  "glo_events@user.luma-mail.com": {
+    "name": "Global Entrepreneurs Hub (GLO)",
+    "total": 28,
+    "first": "2025-05-05 14:31",
+    "last": "2026-03-24 13:39"
+  },
+  "masterfung@user.luma-mail.com": {
+    "name": "Tsung Hung",
+    "total": 2,
+    "first": "2025-11-02 17:07",
+    "last": "2026-03-24 11:27"
+  },
+  "accelerate@cointelegraph.com": {
+    "name": "Cointelegraph Accelerator",
+    "total": 2,
+    "first": "2026-02-03 09:13",
+    "last": "2026-03-24 10:14"
+  },
+  "usr-j3ozkk8bdwc9gca@user.luma-mail.com": {
+    "name": "TechubNews",
+    "total": 3,
+    "first": "2025-12-03 10:28",
+    "last": "2026-03-24 00:27"
+  },
+  "berniekong@user.luma-mail.com": {
+    "name": "Bernie K",
+    "total": 2,
+    "first": "2026-02-27 19:23",
+    "last": "2026-03-21 23:14"
+  },
+  "usr-ahln6khcxdwfn0r@user.luma-mail.com": {
+    "name": "Arjun Subedi",
+    "total": 3,
+    "first": "2025-11-08 23:27",
+    "last": "2026-03-21 19:09"
+  },
+  "robot@craigslist.org": {
+    "name": "craigslist - automated message, do not reply",
+    "total": 4,
+    "first": "2026-02-28 16:39",
+    "last": "2026-03-21 17:40"
+  },
+  "spiceking@user.luma-mail.com": {
+    "name": "Spice King",
+    "total": 9,
+    "first": "2025-09-15 14:40",
+    "last": "2026-03-21 15:55"
+  },
+  "gargikand@user.luma-mail.com": {
+    "name": "Gargi Kand - Vently",
+    "total": 7,
+    "first": "2025-04-30 21:37",
+    "last": "2026-03-21 13:56"
+  },
+  "hello@email.clearme.com": {
+    "name": "CLEAR",
+    "total": 9,
+    "first": "2025-06-05 10:11",
+    "last": "2026-03-21 02:40"
+  },
+  "499dao@user.luma-mail.com": {
+    "name": "499",
+    "total": 13,
+    "first": "2025-07-27 03:09",
+    "last": "2026-03-20 00:51"
+  },
+  "usr-jhfzxee4l4s9i9c@user.luma-mail.com": {
+    "name": "Dr. Paul Fang",
+    "total": 2,
+    "first": "2025-05-19 21:33",
+    "last": "2026-03-19 23:21"
+  },
+  "usr-6sqwh2g0ljngybz@user.luma-mail.com": {
+    "name": "Yujian Tang",
+    "total": 5,
+    "first": "2025-05-09 00:11",
+    "last": "2026-03-19 15:05"
+  },
+  "patonchain@user.luma-mail.com": {
+    "name": "Pat Santiago",
+    "total": 6,
+    "first": "2025-07-03 15:27",
+    "last": "2026-03-18 20:19"
+  },
+  "reeseosborn@user.luma-mail.com": {
+    "name": "Reese Osborn",
+    "total": 3,
+    "first": "2026-03-18 17:14",
+    "last": "2026-03-18 20:02"
+  },
+  "sales@e.lucidmotors.com": {
+    "name": "Lucid Motors",
+    "total": 2,
+    "first": "2026-03-16 14:04",
+    "last": "2026-03-18 16:26"
+  },
+  "welcome@supabase.com": {
+    "name": "Supabase",
+    "total": 5,
+    "first": "2026-03-05 14:51",
+    "last": "2026-03-18 15:51"
+  },
+  "minhsmind@user.luma-mail.com": {
+    "name": "Minh Do",
+    "total": 6,
+    "first": "2025-05-18 22:37",
+    "last": "2026-03-18 14:30"
+  },
+  "caroline@user.luma-mail.com": {
+    "name": "Caroline Gomes",
+    "total": 2,
+    "first": "2026-01-13 10:45",
+    "last": "2026-03-18 13:47"
+  },
+  "usr-zzuqhid0gx5mvw6@user.luma-mail.com": {
+    "name": "Paul TC",
+    "total": 2,
+    "first": "2026-03-18 13:16",
+    "last": "2026-03-18 13:18"
+  },
+  "tezos@user.luma-mail.com": {
+    "name": "Tezos",
+    "total": 2,
+    "first": "2025-10-01 09:21",
+    "last": "2026-03-18 13:18"
+  },
+  "bef@berkeley.edu": {
+    "name": "Dean Asta",
+    "total": 3,
+    "first": "2026-03-12 10:45",
+    "last": "2026-03-17 21:45"
+  },
+  "refraction_irl@user.luma-mail.com": {
+    "name": "Refraction | IRL",
+    "total": 3,
+    "first": "2026-02-05 14:03",
+    "last": "2026-03-17 18:06"
+  },
+  "noreply@e.skiplagged.com": {
+    "name": "Skiplagged",
+    "total": 4,
+    "first": "2025-12-12 17:24",
+    "last": "2026-03-17 15:54"
+  },
+  "usr-ibzzmhcfhzidsj5@user.luma-mail.com": {
+    "name": "bio.xyz",
+    "total": 3,
+    "first": "2025-09-10 10:50",
+    "last": "2026-03-17 12:56"
+  },
+  "andrelandgraf@user.luma-mail.com": {
+    "name": "Andre Landgraf",
+    "total": 2,
+    "first": "2025-10-09 14:56",
+    "last": "2026-03-16 12:42"
+  },
+  "usr-vgaec2cdpmxlr26@user.luma-mail.com": {
+    "name": "Rene Turcios",
+    "total": 8,
+    "first": "2025-09-30 22:06",
+    "last": "2026-03-15 23:06"
+  },
+  "jamesjleach@user.luma-mail.com": {
+    "name": "James Jackson Leach",
+    "total": 2,
+    "first": "2026-03-13 16:44",
+    "last": "2026-03-15 13:25"
+  },
+  "nftclt@user.luma-mail.com": {
+    "name": "NFTCLT",
+    "total": 2,
+    "first": "2025-11-16 21:52",
+    "last": "2026-03-11 20:20"
+  },
+  "haldorsson@user.luma-mail.com": {
+    "name": "Tim Haldorsson",
+    "total": 3,
+    "first": "2025-12-16 12:09",
+    "last": "2026-03-11 11:45"
+  },
+  "no-reply@cokescholarsconnect.org": {
+    "name": "Coke Scholars Connect",
+    "total": 13,
+    "first": "2025-05-09 09:02",
+    "last": "2026-03-11 10:09"
+  },
+  "newsletters@ae.careem.com": {
+    "name": "Careem",
+    "total": 7,
+    "first": "2025-05-02 08:34",
+    "last": "2026-03-10 03:06"
+  },
+  "beawesomelee@user.luma-mail.com": {
+    "name": "Austin Lee",
+    "total": 3,
+    "first": "2025-05-05 19:24",
+    "last": "2026-03-09 09:41"
+  },
+  "oasisnetwork@user.luma-mail.com": {
+    "name": "Oasis Network",
+    "total": 3,
+    "first": "2025-06-09 06:48",
+    "last": "2026-03-09 05:13"
+  },
+  "alecorbella@user.luma-mail.com": {
+    "name": "Ale Corbella",
+    "total": 4,
+    "first": "2025-05-12 10:30",
+    "last": "2026-03-08 20:11"
+  },
+  "marketing@tessl.io": {
+    "name": "AI Native Dev Weekly",
+    "total": 7,
+    "first": "2025-11-14 11:14",
+    "last": "2026-03-07 08:00"
+  },
+  "agenthack@user.luma-mail.com": {
+    "name": "Colin L",
+    "total": 2,
+    "first": "2025-12-06 01:09",
+    "last": "2026-03-06 19:18"
+  },
+  "hoby@hoby.org": {
+    "name": "HOBY Youth Leadership",
+    "total": 11,
+    "first": "2025-05-02 14:07",
+    "last": "2026-03-06 17:02"
+  },
+  "updates@allevents.in": {
+    "name": "AllEvents",
+    "total": 2,
+    "first": "2025-05-15 19:38",
+    "last": "2026-03-03 19:16"
+  },
+  "starpause@user.luma-mail.com": {
+    "name": "\ud835\udd75\ud835\udd94\ud835\udd97\ud835\udd89\ud835\udd86\ud835\udd93 \ud83e\ude90\ud83d\udc9c PublicAI",
+    "total": 2,
+    "first": "2025-12-08 18:37",
+    "last": "2026-03-03 18:26"
+  },
+  "hello@ethdenver.com": {
+    "name": "ETHDenver Stewards",
+    "total": 34,
+    "first": "2025-11-18 13:03",
+    "last": "2026-02-26 11:30"
+  },
+  "usr-gkfljtayiamkl4y@user.luma-mail.com": {
+    "name": "Allen Smith",
+    "total": 10,
+    "first": "2025-05-06 09:17",
+    "last": "2026-02-23 11:28"
+  },
+  "nataliabielczyk@user.luma-mail.com": {
+    "name": "Natalia Bielczyk, PhD",
+    "total": 3,
+    "first": "2025-09-29 22:24",
+    "last": "2026-02-23 03:29"
+  },
+  "no-reply@receipts.posh.vip": {
+    "name": "Posh",
+    "total": 2,
+    "first": "2026-02-22 01:45",
+    "last": "2026-02-22 03:09"
+  },
+  "dailyatom@newsletter.thedailyatom.com": {
+    "name": "Sylmar \u00b7 Speedy Coverage",
+    "total": 18,
+    "first": "2026-01-16 12:59",
+    "last": "2026-02-20 11:43"
+  },
+  "usr-j5rdyjn2kuxzii7@user.luma-mail.com": {
+    "name": "Bee Davies",
+    "total": 2,
+    "first": "2026-01-13 16:08",
+    "last": "2026-02-18 17:59"
+  },
+  "usr-nr0hrwfbdhv6tyj@user.luma-mail.com": {
+    "name": "Cole Hlava",
+    "total": 7,
+    "first": "2025-05-06 10:04",
+    "last": "2026-02-18 12:26"
+  },
+  "noreply@zillowrentals.com": {
+    "name": "Zillow Rental Manager",
+    "total": 3,
+    "first": "2026-01-27 06:39",
+    "last": "2026-02-16 15:14"
+  },
+  "webzero@user.luma-mail.com": {
+    "name": "WebZero Events",
+    "total": 2,
+    "first": "2025-10-31 07:25",
+    "last": "2026-02-15 09:36"
+  },
+  "usr-ktdcdpkfajee1mb@user.luma-mail.com": {
+    "name": "WEEX LABs",
+    "total": 2,
+    "first": "2026-02-10 16:02",
+    "last": "2026-02-12 11:11"
+  },
+  "southwestairlines@trip.southwest.com": {
+    "name": "Southwest Airlines",
+    "total": 2,
+    "first": "2026-01-11 09:44",
+    "last": "2026-02-11 10:02"
+  },
+  "shorooq@user.luma-mail.com": {
+    "name": "Shorooq",
+    "total": 3,
+    "first": "2026-01-27 16:04",
+    "last": "2026-02-07 15:15"
+  },
+  "survey@surveysouthwest.com": {
+    "name": "Survey Southwest",
+    "total": 7,
+    "first": "2025-07-15 10:34",
+    "last": "2026-02-06 10:16"
+  },
+  "drop@cointelegraph.com": {
+    "name": "Cointelegraph Events",
+    "total": 3,
+    "first": "2026-01-27 10:47",
+    "last": "2026-02-06 06:12"
+  },
+  "tymed@user.luma-mail.com": {
+    "name": "Brandon TYMEinc CEO",
+    "total": 6,
+    "first": "2025-11-09 01:35",
+    "last": "2026-02-04 11:50"
+  },
+  "supermoon@user.luma-mail.com": {
+    "name": "Supermoon",
+    "total": 3,
+    "first": "2025-11-19 12:24",
+    "last": "2026-02-01 22:26"
+  },
+  "gaib_ai@user.luma-mail.com": {
+    "name": "GAIB",
+    "total": 3,
+    "first": "2025-09-23 20:34",
+    "last": "2026-02-01 21:06"
+  },
+  "cloud@phala.network": {
+    "name": "Phala Cloud",
+    "total": 8,
+    "first": "2025-08-31 14:38",
+    "last": "2026-01-30 15:15"
+  },
+  "daos_hub@user.luma-mail.com": {
+    "name": "Daos Hub",
+    "total": 3,
+    "first": "2025-11-17 06:54",
+    "last": "2026-01-29 09:07"
+  },
+  "ethdubai@user.luma-mail.com": {
+    "name": "EthDubai",
+    "total": 2,
+    "first": "2025-11-29 08:59",
+    "last": "2026-01-29 02:27"
+  },
+  "usr-fghwi8vdr7u2rk7@user.luma-mail.com": {
+    "name": "Kun Peng",
+    "total": 2,
+    "first": "2025-07-14 18:26",
+    "last": "2026-01-28 12:03"
+  },
+  "debit@card.southwest.com": {
+    "name": "Southwest Airlines Rapid Rewards Debit",
+    "total": 3,
+    "first": "2025-12-17 15:16",
+    "last": "2026-01-28 11:54"
+  },
+  "recommendations@mail.zillow.com": {
+    "name": "Zillow",
+    "total": 5,
+    "first": "2026-01-22 04:57",
+    "last": "2026-01-27 02:07"
+  },
+  "no-reply@youtube.com": {
+    "name": "YouTube Music",
+    "total": 12,
+    "first": "2025-08-07 06:55",
+    "last": "2026-01-20 10:08"
+  },
+  "roundup@arbitrum.io": {
+    "name": "Arbitrum",
+    "total": 3,
+    "first": "2025-05-06 09:37",
+    "last": "2026-01-16 11:15"
+  },
+  "loveth@tchicken.popeyes.com": {
+    "name": "Popeyes",
+    "total": 3,
+    "first": "2026-01-08 23:56",
+    "last": "2026-01-16 11:00"
+  },
+  "hello@airalo.com": {
+    "name": "Noelia from Airalo",
+    "total": 3,
+    "first": "2025-06-20 13:00",
+    "last": "2026-01-15 22:06"
+  },
+  "brightnights@user.luma-mail.com": {
+    "name": "Bright Nights Social",
+    "total": 2,
+    "first": "2025-12-29 14:14",
+    "last": "2026-01-15 11:29"
+  },
+  "usr-5hvkezxutduf52q@user.luma-mail.com": {
+    "name": "PMALA",
+    "total": 6,
+    "first": "2025-05-21 23:35",
+    "last": "2026-01-14 08:23"
+  },
+  "usr-vjep9ovvt5tqdnb@user.luma-mail.com": {
+    "name": "0xSaed",
+    "total": 2,
+    "first": "2025-12-11 03:07",
+    "last": "2026-01-13 06:08"
+  },
+  "jetblueairways@email.jetblue.com": {
+    "name": "JetBlue",
+    "total": 6,
+    "first": "2025-11-26 10:54",
+    "last": "2026-01-12 09:05"
+  },
+  "diogoabreu@user.luma-mail.com": {
+    "name": "Diogo nReach (@Diiogoabreu)",
+    "total": 2,
+    "first": "2025-11-03 01:53",
+    "last": "2026-01-12 04:14"
+  },
+  "hhcw@user.luma-mail.com": {
+    "name": "Gabriel Covington",
+    "total": 5,
+    "first": "2025-07-24 11:55",
+    "last": "2026-01-10 15:55"
+  },
+  "usr-epgd4cpn0upftri@user.luma-mail.com": {
+    "name": "IoTeX Team",
+    "total": 6,
+    "first": "2025-05-08 14:00",
+    "last": "2026-01-09 11:01"
+  },
+  "particle-network@ghost.io": {
+    "name": "Particle Network",
+    "total": 11,
+    "first": "2025-05-08 11:53",
+    "last": "2026-01-08 07:13"
+  },
+  "hello@lightdao.one": {
+    "name": "Light DAO",
+    "total": 3,
+    "first": "2025-05-06 11:00",
+    "last": "2026-01-05 14:51"
+  },
+  "usr-aaxdvikol7quqpo@user.luma-mail.com": {
+    "name": "Amanda Martin",
+    "total": 6,
+    "first": "2025-09-04 07:24",
+    "last": "2026-01-05 07:26"
+  },
+  "iliasanwar@user.luma-mail.com": {
+    "name": "Ilias Anwar",
+    "total": 3,
+    "first": "2025-07-07 14:18",
+    "last": "2026-01-03 15:00"
+  },
+  "quest@campaigns.meta.com": {
+    "name": "Meta Horizon",
+    "total": 2,
+    "first": "2025-10-28 12:28",
+    "last": "2025-12-29 12:43"
+  },
+  "livepeer@user.luma-mail.com": {
+    "name": "Livepeer",
+    "total": 2,
+    "first": "2025-05-19 05:46",
+    "last": "2025-12-26 16:11"
+  },
+  "hello@news.expressvpn.com": {
+    "name": "ExpressVPN",
+    "total": 4,
+    "first": "2025-10-25 08:04",
+    "last": "2025-12-25 04:01"
+  },
+  "newsletters@quranium.org": {
+    "name": "Quranium",
+    "total": 2,
+    "first": "2025-11-29 00:32",
+    "last": "2025-12-24 10:18"
+  },
+  "usr-5lb6bjl3gesrp5j@user.luma-mail.com": {
+    "name": "Marc Rose",
+    "total": 4,
+    "first": "2025-05-08 09:27",
+    "last": "2025-12-24 09:00"
+  },
+  "pcventure@user.luma-mail.com": {
+    "name": "Pcventure",
+    "total": 2,
+    "first": "2025-07-13 20:40",
+    "last": "2025-12-22 02:48"
+  },
+  "ewmbaadm@haas.berkeley.edu": {
+    "name": "Evening & Weekend Berkeley MBA",
+    "total": 25,
+    "first": "2025-07-08 10:17",
+    "last": "2025-12-17 10:07"
+  },
+  "reports@update.10xresearch.com": {
+    "name": "10x Research",
+    "total": 32,
+    "first": "2025-11-14 06:26",
+    "last": "2025-12-16 20:41"
+  },
+  "admissions@northeastern.edu": {
+    "name": "Northeastern Undergraduate Admissions",
+    "total": 20,
+    "first": "2025-10-31 14:45",
+    "last": "2025-12-16 16:41"
+  },
+  "gigs@mailer.dice.fm": {
+    "name": "DICE",
+    "total": 7,
+    "first": "2025-07-28 18:01",
+    "last": "2025-12-16 07:49"
+  },
+  "oddballnyc@user.luma-mail.com": {
+    "name": "Oddball",
+    "total": 2,
+    "first": "2025-12-10 12:41",
+    "last": "2025-12-15 14:52"
+  },
+  "googlestore-noreply@google.com": {
+    "name": "Google Store",
+    "total": 25,
+    "first": "2025-05-05 10:45",
+    "last": "2025-12-15 11:56"
+  },
+  "team@mail.perplexity.ai": {
+    "name": "Perplexity",
+    "total": 22,
+    "first": "2025-10-11 19:20",
+    "last": "2025-12-14 08:37"
+  },
+  "usr-cakoobijzkj8qz5@user.luma-mail.com": {
+    "name": "Madvi",
+    "total": 2,
+    "first": "2025-10-10 09:42",
+    "last": "2025-12-12 11:17"
+  },
+  "bc_coco@user.luma-mail.com": {
+    "name": "BC\ud83d\udc8e",
+    "total": 4,
+    "first": "2025-05-01 10:00",
+    "last": "2025-12-12 10:00"
+  },
+  "weekly@stackssnacks.com": {
+    "name": "Stacks Snacks",
+    "total": 4,
+    "first": "2025-09-20 11:53",
+    "last": "2025-12-12 09:39"
+  },
+  "usr-ozfm2jcqy8pbuzk@user.luma-mail.com": {
+    "name": "Rakshit",
+    "total": 2,
+    "first": "2025-12-11 15:36",
+    "last": "2025-12-12 09:00"
+  },
+  "usr-c374iuonlopthn3@user.luma-mail.com": {
+    "name": "Dan Jablonski",
+    "total": 2,
+    "first": "2025-12-04 03:04",
+    "last": "2025-12-11 15:12"
+  },
+  "info@mail.warriors.com": {
+    "name": "Golden State Warriors",
+    "total": 4,
+    "first": "2025-09-18 11:22",
+    "last": "2025-12-11 14:06"
+  },
+  "contact@btcmedia.org": {
+    "name": "The Bitcoin Conference",
+    "total": 2,
+    "first": "2025-12-07 22:49",
+    "last": "2025-12-11 13:12"
+  },
+  "halborn@user.luma-mail.com": {
+    "name": "Halborn",
+    "total": 2,
+    "first": "2025-12-11 03:12",
+    "last": "2025-12-11 11:01"
+  },
+  "musicconnection@weekly-bulletin.com": {
+    "name": "Music Connection",
+    "total": 6,
+    "first": "2025-07-08 11:16",
+    "last": "2025-12-11 09:14"
+  },
+  "yabai@user.luma-mail.com": {
+    "name": "yabai",
+    "total": 2,
+    "first": "2025-12-04 02:33",
+    "last": "2025-12-11 07:58"
+  },
+  "usr-kv1yqydav0ejqaf@user.luma-mail.com": {
+    "name": "CGV",
+    "total": 2,
+    "first": "2025-12-08 08:25",
+    "last": "2025-12-10 08:00"
+  },
+  "maitri@10259101.brevosend.com": {
+    "name": "Credshields",
+    "total": 2,
+    "first": "2025-11-25 20:23",
+    "last": "2025-12-09 02:22"
+  },
+  "platform@news.se.ro": {
+    "name": "Sero Weekly",
+    "total": 4,
+    "first": "2025-07-28 12:05",
+    "last": "2025-12-08 14:01"
+  },
+  "kriswang-gptdao.ai@shared1.ccsend.com": {
+    "name": "GPTDAO",
+    "total": 2,
+    "first": "2025-10-27 01:03",
+    "last": "2025-12-08 12:04"
+  },
+  "offgridcash@user.luma-mail.com": {
+    "name": "Off Grid",
+    "total": 2,
+    "first": "2025-12-04 03:07",
+    "last": "2025-12-08 10:56"
+  },
+  "support@btcmedia.org": {
+    "name": "Bitcoin Conference",
+    "total": 2,
+    "first": "2025-12-06 10:05",
+    "last": "2025-12-07 05:35"
+  },
+  "deliverystatus@logistics.costco.com": {
+    "name": "Costco",
+    "total": 3,
+    "first": "2025-12-01 18:19",
+    "last": "2025-12-04 12:29"
+  },
+  "atlassoit@user.luma-mail.com": {
+    "name": "Atlassoit Security",
+    "total": 2,
+    "first": "2025-09-07 13:12",
+    "last": "2025-12-04 03:07"
+  },
+  "kast@user.luma-mail.com": {
+    "name": "KAST",
+    "total": 3,
+    "first": "2025-11-18 06:58",
+    "last": "2025-12-04 03:07"
+  },
+  "usr-aqewfpb9k3vhfba@user.luma-mail.com": {
+    "name": "FightMania_offcial",
+    "total": 2,
+    "first": "2025-12-03 08:04",
+    "last": "2025-12-03 09:37"
+  },
+  "erika@treefolks.org": {
+    "name": "Erika Alam",
+    "total": 2,
+    "first": "2025-12-02 08:15",
+    "last": "2025-12-02 18:00"
+  },
+  "no-reply@tinyurl.email": {
+    "name": "TinyURL",
+    "total": 2,
+    "first": "2025-11-26 08:11",
+    "last": "2025-12-01 08:07"
+  },
+  "zofai@user.luma-mail.com": {
+    "name": "Zof AI",
+    "total": 2,
+    "first": "2025-10-26 09:47",
+    "last": "2025-11-30 23:40"
+  },
+  "roku@email.roku.com": {
+    "name": "Roku",
+    "total": 8,
+    "first": "2025-06-12 12:10",
+    "last": "2025-11-30 09:33"
+  },
+  "usr-msuaeugnqnaodec@user.luma-mail.com": {
+    "name": "Drishti Shah",
+    "total": 2,
+    "first": "2025-11-04 06:04",
+    "last": "2025-11-26 08:26"
+  },
+  "hello@historyfacts.com": {
+    "name": "History Facts",
+    "total": 11,
+    "first": "2025-09-11 05:24",
+    "last": "2025-11-25 19:31"
+  },
+  "quionie@user.luma-mail.com": {
+    "name": "Q",
+    "total": 2,
+    "first": "2025-11-18 07:19",
+    "last": "2025-11-24 10:00"
+  },
+  "circolo@user.luma-mail.com": {
+    "name": "Circolo Life",
+    "total": 6,
+    "first": "2025-10-07 11:05",
+    "last": "2025-11-24 09:57"
+  },
+  "usr-ezc0mjm7jgklsoj@user.luma-mail.com": {
+    "name": "Founders Common",
+    "total": 2,
+    "first": "2025-06-24 12:29",
+    "last": "2025-11-20 17:16"
+  },
+  "hackenproof@user.luma-mail.com": {
+    "name": "HackenProof",
+    "total": 4,
+    "first": "2025-10-28 14:07",
+    "last": "2025-11-20 17:00"
+  },
+  "usr-tigfgyliabf5ttr@user.luma-mail.com": {
+    "name": "limes.eth",
+    "total": 2,
+    "first": "2025-11-19 12:21",
+    "last": "2025-11-19 18:03"
+  },
+  "nolcha@user.luma-mail.com": {
+    "name": "NOLCHA",
+    "total": 2,
+    "first": "2025-07-25 12:48",
+    "last": "2025-11-19 15:20"
+  },
+  "refraction@user.luma-mail.com": {
+    "name": "Refraction",
+    "total": 4,
+    "first": "2025-06-20 13:41",
+    "last": "2025-11-18 07:18"
+  },
+  "dsc@user.luma-mail.com": {
+    "name": "Digital Spenders Club",
+    "total": 2,
+    "first": "2025-08-28 14:34",
+    "last": "2025-11-18 07:03"
+  },
+  "brevis@user.luma-mail.com": {
+    "name": "Brevis",
+    "total": 2,
+    "first": "2025-10-26 10:17",
+    "last": "2025-11-18 06:55"
+  },
+  "onepiecelabs@user.luma-mail.com": {
+    "name": "OnePiece Labs",
+    "total": 3,
+    "first": "2025-06-17 15:24",
+    "last": "2025-11-17 22:33"
+  },
+  "contact@sqd.ai": {
+    "name": "sqd team",
+    "total": 2,
+    "first": "2025-10-10 09:20",
+    "last": "2025-11-13 05:05"
+  },
+  "hello@aleo.org": {
+    "name": "The Aleo Foundation Team",
+    "total": 9,
+    "first": "2025-05-01 15:29",
+    "last": "2025-11-12 13:38"
+  },
+  "redoudou@user.luma-mail.com": {
+    "name": "Redwan Meslem",
+    "total": 3,
+    "first": "2025-09-07 09:36",
+    "last": "2025-11-12 09:16"
+  },
+  "usr-mihfmx4uw8njdha@user.luma-mail.com": {
+    "name": "Dane",
+    "total": 4,
+    "first": "2025-05-27 09:11",
+    "last": "2025-11-12 06:07"
+  },
+  "reviews@yotpo.com": {
+    "name": "Everyday Dose",
+    "total": 2,
+    "first": "2025-11-01 16:47",
+    "last": "2025-11-06 17:26"
+  },
+  "events@arbitrum.io": {
+    "name": "The Arbitrum Events Team",
+    "total": 2,
+    "first": "2025-10-22 11:40",
+    "last": "2025-11-06 14:30"
+  },
+  "bitbaselart@user.luma-mail.com": {
+    "name": "BitBasel",
+    "total": 2,
+    "first": "2025-08-04 07:46",
+    "last": "2025-11-06 08:03"
+  },
+  "jobs-noreply@linkedin.com": {
+    "name": "LinkedIn",
+    "total": 4,
+    "first": "2025-05-25 18:33",
+    "last": "2025-11-04 18:38"
+  },
+  "offchainsf@user.luma-mail.com": {
+    "name": "OffChain Global",
+    "total": 3,
+    "first": "2025-10-02 17:25",
+    "last": "2025-11-04 15:35"
+  },
+  "usr-or3g0s9pl9gxsm3@user.luma-mail.com": {
+    "name": "Colton Kaplan",
+    "total": 11,
+    "first": "2025-05-14 13:57",
+    "last": "2025-11-03 15:04"
+  },
+  "usr-fporqr4ari7lhfy@user.luma-mail.com": {
+    "name": "Vibhuti N.",
+    "total": 2,
+    "first": "2025-06-02 11:44",
+    "last": "2025-11-03 09:14"
+  },
+  "usr-zzrywrczatt6v8z@user.luma-mail.com": {
+    "name": "Dr Pavel Vinitsky",
+    "total": 4,
+    "first": "2025-05-08 06:09",
+    "last": "2025-11-01 13:08"
+  },
+  "news@fhenix.io": {
+    "name": "Fhenix",
+    "total": 5,
+    "first": "2025-05-31 16:33",
+    "last": "2025-10-31 19:29"
+  },
+  "noreply.invitations@trustpilotmail.com": {
+    "name": "23andMe",
+    "total": 2,
+    "first": "2025-10-24 15:11",
+    "last": "2025-10-31 15:23"
+  },
+  "kevinyar@user.luma-mail.com": {
+    "name": "Kevin Yar",
+    "total": 6,
+    "first": "2025-10-05 15:39",
+    "last": "2025-10-31 13:06"
+  },
+  "mdm@user.luma-mail.com": {
+    "name": "Mission Dolores Manor",
+    "total": 5,
+    "first": "2025-05-02 19:43",
+    "last": "2025-10-30 15:12"
+  },
+  "startupcoil@user.luma-mail.com": {
+    "name": "Startup Coil",
+    "total": 9,
+    "first": "2025-05-08 13:24",
+    "last": "2025-10-30 13:57"
+  },
+  "gammaprime_fi@user.luma-mail.com": {
+    "name": "Gamma Prime",
+    "total": 3,
+    "first": "2025-06-22 12:06",
+    "last": "2025-10-30 06:32"
+  },
+  "usr-7cyluunxhtnzqzf@user.luma-mail.com": {
+    "name": "The AI Agents Community",
+    "total": 2,
+    "first": "2025-09-14 20:56",
+    "last": "2025-10-29 21:29"
+  },
+  "team@m.ngrok.com": {
+    "name": "Joel @ ngrok",
+    "total": 5,
+    "first": "2025-08-31 12:33",
+    "last": "2025-10-29 18:16"
+  },
+  "space@user.luma-mail.com": {
+    "name": "Space DAO",
+    "total": 2,
+    "first": "2025-10-05 09:21",
+    "last": "2025-10-29 15:04"
+  },
+  "enquiries@simplicitygroup.xyz": {
+    "name": "Simplicity Group",
+    "total": 2,
+    "first": "2025-07-29 05:46",
+    "last": "2025-10-28 06:12"
+  },
+  "usr-n3vjyuuzuvzgeb6@user.luma-mail.com": {
+    "name": "Berachain",
+    "total": 2,
+    "first": "2025-09-29 05:18",
+    "last": "2025-10-27 09:24"
+  },
+  "sammyhep@user.luma-mail.com": {
+    "name": "Sam Hepburn",
+    "total": 2,
+    "first": "2025-09-16 13:04",
+    "last": "2025-10-24 08:03"
+  },
+  "mastersevents@london.edu": {
+    "name": "London Business School",
+    "total": 6,
+    "first": "2025-05-12 09:04",
+    "last": "2025-10-20 11:34"
+  },
+  "news@spareroom.com": {
+    "name": "SpareRoom",
+    "total": 5,
+    "first": "2025-05-16 10:28",
+    "last": "2025-10-20 10:43"
+  },
+  "gregsletter@latecheckout.studio": {
+    "name": "Greg Isenberg",
+    "total": 8,
+    "first": "2025-07-14 18:58",
+    "last": "2025-10-19 11:25"
+  },
+  "support@snowball.money": {
+    "name": "Snowball",
+    "total": 6,
+    "first": "2025-05-23 09:18",
+    "last": "2025-10-16 12:30"
+  },
+  "help@mentorcollective.org": {
+    "name": "The UC Berkeley Haas UC Berkeley Haas Student-Alumni Mentor Program Team",
+    "total": 8,
+    "first": "2025-06-17 13:45",
+    "last": "2025-10-09 18:05"
+  },
+  "rayocapital@newsletter.paragraph.xyz": {
+    "name": "Rayo Capital Group",
+    "total": 2,
+    "first": "2025-09-29 09:21",
+    "last": "2025-10-07 16:50"
+  },
+  "cryptooasis@user.luma-mail.com": {
+    "name": "Crypto Oasis",
+    "total": 2,
+    "first": "2025-05-05 03:07",
+    "last": "2025-10-06 02:59"
+  },
+  "noreply@mail.gptzero.com": {
+    "name": "GPTZero",
+    "total": 5,
+    "first": "2025-09-13 00:56",
+    "last": "2025-10-04 02:35"
+  },
+  "hello@near.org": {
+    "name": "NEAR team",
+    "total": 6,
+    "first": "2025-07-02 12:34",
+    "last": "2025-10-02 17:01"
+  },
+  "usr-cf9zs0xfbghojys@user.luma-mail.com": {
+    "name": "Hi-Note",
+    "total": 3,
+    "first": "2025-05-25 11:01",
+    "last": "2025-10-01 12:07"
+  },
+  "feedback@insights.topgolf.com": {
+    "name": "The Topgolf Experience Team",
+    "total": 3,
+    "first": "2025-07-08 12:32",
+    "last": "2025-09-28 13:32"
+  },
+  "no-reply@spotify.com": {
+    "name": "Spotify",
+    "total": 21,
+    "first": "2025-05-02 11:22",
+    "last": "2025-09-25 03:03"
+  },
+  "contact@reserve.org": {
+    "name": "Reserve",
+    "total": 2,
+    "first": "2025-05-19 13:52",
+    "last": "2025-09-24 12:19"
+  },
+  "sfoxzo@user.luma-mail.com": {
+    "name": "Zo House SF",
+    "total": 2,
+    "first": "2025-05-05 14:19",
+    "last": "2025-09-22 19:21"
+  },
+  "trevor@user.luma-mail.com": {
+    "name": "trevor.btc",
+    "total": 2,
+    "first": "2025-08-27 03:09",
+    "last": "2025-09-18 20:44"
+  },
+  "marianebekker@user.luma-mail.com": {
+    "name": "Mariane Bekker",
+    "total": 3,
+    "first": "2025-05-15 21:19",
+    "last": "2025-09-18 19:25"
+  },
+  "usr-jl7qhgabxwvcg2c@user.luma-mail.com": {
+    "name": "Matt D",
+    "total": 2,
+    "first": "2025-05-14 08:53",
+    "last": "2025-09-16 11:42"
+  },
+  "noreply@qemailserver.com": {
+    "name": "Six Flags Magic Mountain",
+    "total": 2,
+    "first": "2025-07-20 20:08",
+    "last": "2025-09-14 14:16"
+  },
+  "altlayer@user.luma-mail.com": {
+    "name": "AltLayer",
+    "total": 4,
+    "first": "2025-06-16 03:09",
+    "last": "2025-09-12 07:04"
+  },
+  "ideas@mail.gethalfbaked.com": {
+    "name": "Half Baked",
+    "total": 44,
+    "first": "2025-06-02 00:06",
+    "last": "2025-09-11 17:46"
+  },
+  "newsletter@blockworks.com": {
+    "name": "The Breakdown",
+    "total": 29,
+    "first": "2025-05-12 17:01",
+    "last": "2025-09-11 17:02"
+  },
+  "usr-ueafdyal6m046jk@user.luma-mail.com": {
+    "name": "Third Place Bar",
+    "total": 3,
+    "first": "2025-06-03 09:23",
+    "last": "2025-09-08 14:34"
+  },
+  "hey@akindo.io": {
+    "name": "AKINDO",
+    "total": 7,
+    "first": "2025-05-12 21:23",
+    "last": "2025-09-07 02:10"
+  },
+  "contactus@fxreplay.com": {
+    "name": "FX Replay",
+    "total": 3,
+    "first": "2025-08-27 07:08",
+    "last": "2025-09-05 12:02"
+  },
+  "noreply@marketing.torchystacos.com": {
+    "name": "Torchy\u2019s Tacos Rewards",
+    "total": 7,
+    "first": "2025-05-09 11:00",
+    "last": "2025-09-03 09:48"
+  },
+  "marketing@reactive.network": {
+    "name": "Reactive Network",
+    "total": 2,
+    "first": "2025-06-02 10:33",
+    "last": "2025-09-03 08:04"
+  },
+  "events@apollographql.com": {
+    "name": "Apollo GraphQL",
+    "total": 2,
+    "first": "2025-08-01 14:34",
+    "last": "2025-09-02 13:20"
+  },
+  "leifjohnsonford@alstspecials.com": {
+    "name": "Leif Johnson Ford of Austin",
+    "total": 4,
+    "first": "2025-07-01 08:39",
+    "last": "2025-09-02 10:48"
+  },
+  "goodvibes@members2.dutchbros.com": {
+    "name": "Dutch Bros Coffee",
+    "total": 14,
+    "first": "2025-05-10 05:19",
+    "last": "2025-08-31 05:27"
+  },
+  "reservationinfo@em.extendedstayamerica.com": {
+    "name": "Extended Stay America",
+    "total": 19,
+    "first": "2025-07-07 15:25",
+    "last": "2025-08-30 14:52"
+  },
+  "hello@giftory.com": {
+    "name": "Giftory",
+    "total": 6,
+    "first": "2025-06-15 19:17",
+    "last": "2025-08-29 09:00"
+  },
+  "kartik@user.luma-mail.com": {
+    "name": "Kartik Talwar",
+    "total": 2,
+    "first": "2025-05-19 12:22",
+    "last": "2025-08-28 15:10"
+  },
+  "sway@user.luma-mail.com": {
+    "name": "Sway",
+    "total": 2,
+    "first": "2025-07-01 10:12",
+    "last": "2025-08-10 08:38"
+  },
+  "usr-aroqnfwqmquyfwq@user.luma-mail.com": {
+    "name": "Ashley Wright",
+    "total": 3,
+    "first": "2025-05-13 12:30",
+    "last": "2025-08-08 13:17"
+  },
+  "hyperlane@user.luma-mail.com": {
+    "name": "Anthony Spezzano",
+    "total": 2,
+    "first": "2025-08-07 10:13",
+    "last": "2025-08-07 18:00"
+  },
+  "news@execsum.co": {
+    "name": "Exec Sum - Litquidity",
+    "total": 22,
+    "first": "2025-07-09 05:48",
+    "last": "2025-08-07 05:54"
+  },
+  "hello@interestingfacts.com": {
+    "name": "Interesting Facts",
+    "total": 133,
+    "first": "2025-05-01 05:20",
+    "last": "2025-08-07 05:21"
+  },
+  "helixfi@user.luma-mail.com": {
+    "name": "Helix Blockchain Partners",
+    "total": 2,
+    "first": "2025-07-22 20:17",
+    "last": "2025-08-05 18:06"
+  },
+  "hi@update.10xresearch.com": {
+    "name": "10x Research",
+    "total": 12,
+    "first": "2025-05-08 19:29",
+    "last": "2025-08-05 10:39"
+  },
+  "lou@cryptooracle.io": {
+    "name": "Lou Kerner",
+    "total": 4,
+    "first": "2025-05-18 09:41",
+    "last": "2025-08-04 07:39"
+  },
+  "usr-adatdd8yerr5nwn@user.luma-mail.com": {
+    "name": "Fred Grinstein",
+    "total": 9,
+    "first": "2025-05-26 03:11",
+    "last": "2025-08-03 23:55"
+  },
+  "flow_blockchain@user.luma-mail.com": {
+    "name": "Flow.com",
+    "total": 3,
+    "first": "2025-05-27 09:53",
+    "last": "2025-08-01 14:21"
+  },
+  "altcointurk@user.luma-mail.com": {
+    "name": "Altcointurk",
+    "total": 2,
+    "first": "2025-05-14 08:42",
+    "last": "2025-07-30 07:02"
+  },
+  "cafe.gm@gluwa.com": {
+    "name": "Cafe GM",
+    "total": 2,
+    "first": "2025-06-26 04:41",
+    "last": "2025-07-30 06:12"
+  },
+  "kevinkudu@user.luma-mail.com": {
+    "name": "Kevin Kudukis",
+    "total": 2,
+    "first": "2025-07-15 11:26",
+    "last": "2025-07-28 16:47"
+  },
+  "usr-eerkifyexsknumi@user.luma-mail.com": {
+    "name": "fuzzland inc",
+    "total": 2,
+    "first": "2025-06-02 16:27",
+    "last": "2025-07-28 11:46"
+  },
+  "marshalls@tr.tjx.com": {
+    "name": "Marshalls",
+    "total": 2,
+    "first": "2025-07-21 16:20",
+    "last": "2025-07-23 16:53"
+  },
+  "erickd@user.luma-mail.com": {
+    "name": "Erick Davidson",
+    "total": 2,
+    "first": "2025-05-21 13:42",
+    "last": "2025-07-16 13:30"
+  },
+  "fortress@user.luma-mail.com": {
+    "name": "Fortress",
+    "total": 4,
+    "first": "2025-05-16 15:01",
+    "last": "2025-07-15 06:32"
+  },
+  "sixflagsmagicmountain@email.sixflags.com": {
+    "name": "Six Flags Magic Mountain",
+    "total": 5,
+    "first": "2025-05-08 14:03",
+    "last": "2025-07-10 11:17"
+  },
+  "mba@london.edu": {
+    "name": "London Business School MBA",
+    "total": 3,
+    "first": "2025-05-19 09:12",
+    "last": "2025-07-09 05:32"
+  },
+  "skyviewcapital@user.luma-mail.com": {
+    "name": "Sky View Capital",
+    "total": 3,
+    "first": "2025-06-08 14:14",
+    "last": "2025-07-01 13:14"
+  },
+  "community@sending.me": {
+    "name": "SendingMe",
+    "total": 3,
+    "first": "2025-05-05 02:04",
+    "last": "2025-06-29 09:46"
+  },
+  "based@user.luma-mail.com": {
+    "name": "Dabl Club",
+    "total": 3,
+    "first": "2025-05-10 21:58",
+    "last": "2025-06-28 17:53"
+  },
+  "no-reply@em.esbnyc.com": {
+    "name": "Empire State Building",
+    "total": 4,
+    "first": "2025-06-13 16:28",
+    "last": "2025-06-26 15:02"
+  },
+  "no-reply@membership.prioritypass.com": {
+    "name": "Priority Pass",
+    "total": 3,
+    "first": "2025-05-01 04:01",
+    "last": "2025-06-26 12:04"
+  },
+  "usr-wu2bminrvhfk5m7@user.luma-mail.com": {
+    "name": "The Movement",
+    "total": 2,
+    "first": "2025-06-12 02:51",
+    "last": "2025-06-25 23:20"
+  },
+  "usr-xlkotnbbeprz7ff@user.luma-mail.com": {
+    "name": "Cynthia L",
+    "total": 4,
+    "first": "2025-06-25 00:24",
+    "last": "2025-06-25 20:00"
+  },
+  "usr-4kkhham2vfjqqi3@user.luma-mail.com": {
+    "name": "Uniswap Events",
+    "total": 2,
+    "first": "2025-06-22 08:54",
+    "last": "2025-06-23 09:30"
+  },
+  "usr-utb9qy13cxxbmpv@user.luma-mail.com": {
+    "name": "WebZero",
+    "total": 2,
+    "first": "2025-05-08 13:00",
+    "last": "2025-06-19 16:57"
+  },
+  "newsletter@sharpeconomy.org": {
+    "name": "Sharp Economy",
+    "total": 3,
+    "first": "2025-05-20 06:53",
+    "last": "2025-06-13 08:33"
+  },
+  "quicknode@user.luma-mail.com": {
+    "name": "QuickNode",
+    "total": 2,
+    "first": "2025-05-05 13:43",
+    "last": "2025-06-12 09:50"
+  },
+  "frontiertower@user.luma-mail.com": {
+    "name": "Frontier Tower | Berlinhouse",
+    "total": 3,
+    "first": "2025-05-04 18:23",
+    "last": "2025-06-11 10:09"
+  },
+  "contact@jsmastery.pro": {
+    "name": "Adrian | JS Mastery",
+    "total": 4,
+    "first": "2025-05-27 16:59",
+    "last": "2025-06-11 06:03"
+  },
+  "0g_foundation@user.luma-mail.com": {
+    "name": "0G Foundation",
+    "total": 3,
+    "first": "2025-05-03 12:31",
+    "last": "2025-06-10 13:21"
+  },
+  "olivia.hess@equinox.com": {
+    "name": "Olivia Hess",
+    "total": 2,
+    "first": "2025-06-07 15:18",
+    "last": "2025-06-10 11:40"
+  },
+  "mfischer1000@user.luma-mail.com": {
+    "name": "Michael Fischer",
+    "total": 2,
+    "first": "2025-06-01 18:34",
+    "last": "2025-06-07 15:08"
+  },
+  "a@fuelfinance.me": {
+    "name": "Alyona from Fuelfinance",
+    "total": 2,
+    "first": "2025-05-23 02:12",
+    "last": "2025-06-05 10:15"
+  },
+  "holonympress@user.luma-mail.com": {
+    "name": "human.tech by Holonym",
+    "total": 2,
+    "first": "2025-05-05 07:07",
+    "last": "2025-06-05 08:04"
+  },
+  "ryan-wardell@f.kajabimail.net": {
+    "name": "Ryan from StartupSauce",
+    "total": 8,
+    "first": "2025-05-01 07:11",
+    "last": "2025-06-04 16:01"
+  },
+  "arisa@user.luma-mail.com": {
+    "name": "Arisa Chelsea Ueno",
+    "total": 2,
+    "first": "2025-05-25 23:59",
+    "last": "2025-06-02 19:54"
+  },
+  "usr-ipijy1om3m66pr4@user.luma-mail.com": {
+    "name": "Karrier One",
+    "total": 2,
+    "first": "2025-05-14 10:15",
+    "last": "2025-05-27 10:00"
+  },
+  "usr-cb7pt9vxliep0on@user.luma-mail.com": {
+    "name": "Refraction",
+    "total": 4,
+    "first": "2025-05-08 16:50",
+    "last": "2025-05-16 19:23"
+  },
+  "newsletter@tesla.com": {
+    "name": "Tesla",
+    "total": 2,
+    "first": "2025-05-10 12:39",
+    "last": "2025-05-16 17:14"
+  },
+  "home@cabin.city": {
+    "name": "Cabin",
+    "total": 2,
+    "first": "2025-05-06 23:36",
+    "last": "2025-05-16 12:22"
+  },
+  "usr-yqcyhxxfxwidxb2@user.luma-mail.com": {
+    "name": "Joshua Field",
+    "total": 4,
+    "first": "2025-05-12 10:36",
+    "last": "2025-05-15 19:00"
+  },
+  "usr-xo2aboqzhzwoovh@user.luma-mail.com": {
+    "name": "Impossible Cloud Network",
+    "total": 3,
+    "first": "2025-05-13 16:06",
+    "last": "2025-05-15 15:00"
+  },
+  "numero1@user.luma-mail.com": {
+    "name": "Numero1",
+    "total": 3,
+    "first": "2025-05-03 06:46",
+    "last": "2025-05-14 06:16"
+  },
+  "usr-mphlqmxeqkw7lbu@user.luma-mail.com": {
+    "name": "Masha Prusso",
+    "total": 3,
+    "first": "2025-05-06 16:43",
+    "last": "2025-05-13 22:56"
+  },
+  "email@marketing.gradimages.com": {
+    "name": "Grad Images",
+    "total": 4,
+    "first": "2025-05-01 18:02",
+    "last": "2025-05-11 18:02"
+  },
+  "feedback@saudia.com": {
+    "name": "Saudia Team",
+    "total": 2,
+    "first": "2025-05-06 02:05",
+    "last": "2025-05-09 02:06"
+  },
+  "usr-b5tufkijeopff8u@user.luma-mail.com": {
+    "name": "Alex Bowman",
+    "total": 5,
+    "first": "2025-05-02 01:00",
+    "last": "2025-05-07 11:13"
+  },
+  "notification@fbworkmail.com": {
+    "name": "Stanford LEAD Program via Workplace",
+    "total": 4,
+    "first": "2025-05-01 00:01",
+    "last": "2025-05-06 21:57"
+  },
+  "usr-xtduyu113amnmph@user.luma-mail.com": {
+    "name": "Shanice Best / Expos3d Media",
+    "total": 5,
+    "first": "2025-05-01 08:01",
+    "last": "2025-05-01 11:39"
+  }
+}

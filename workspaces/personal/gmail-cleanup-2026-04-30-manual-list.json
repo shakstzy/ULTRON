@@ -1,0 +1,920 @@
+{
+  "googlecloud@google.com": {
+    "stats": {
+      "name": "Google Cloud",
+      "total": 21,
+      "first": "2025-07-17 11:17",
+      "last": "2026-04-29 13:50"
+    },
+    "reason": "skip:googlecloud@google.com"
+  },
+  "stephany@caladan.xyz": {
+    "stats": {
+      "name": "Steph Zoo | Caladan",
+      "total": 4,
+      "first": "2025-05-07 22:00",
+      "last": "2026-04-29 08:49"
+    },
+    "reason": "skip:stephany@caladan.xyz"
+  },
+  "messages-noreply@linkedin.com": {
+    "stats": {
+      "name": "LinkedIn",
+      "total": 11,
+      "first": "2026-04-04 14:33",
+      "last": "2026-04-28 02:33"
+    },
+    "reason": "skip:messages-noreply@linkedin.com"
+  },
+  "hello@tryauri.com": {
+    "stats": {
+      "name": "Auri Nutrition",
+      "total": 4,
+      "first": "2026-04-11 11:51",
+      "last": "2026-04-23 20:34"
+    },
+    "reason": "USER_KEEP"
+  },
+  "support@drinkag1.com": {
+    "stats": {
+      "name": "AG1\u00ae",
+      "total": 3,
+      "first": "2026-04-10 05:52",
+      "last": "2026-04-23 12:33"
+    },
+    "reason": "USER_KEEP"
+  },
+  "member@surveymonkeyuser.com": {
+    "stats": {
+      "name": "mcourchaine@acementor.org via SurveyMonkey",
+      "total": 6,
+      "first": "2025-05-21 08:46",
+      "last": "2026-04-22 19:45"
+    },
+    "reason": "skip:surveymonkeyuser.com"
+  },
+  "no-reply@github.com": {
+    "stats": {
+      "name": "GitHub",
+      "total": 19,
+      "first": "2025-05-13 10:32",
+      "last": "2026-04-22 12:00"
+    },
+    "reason": "skip:no-reply@github.com"
+  },
+  "no-reply@workvivo.us": {
+    "stats": {
+      "name": "Workvivo",
+      "total": 17,
+      "first": "2025-06-25 10:33",
+      "last": "2026-04-22 11:21"
+    },
+    "reason": "skip:no-reply@workvivo.us"
+  },
+  "donotreply@email.schwab.com": {
+    "stats": {
+      "name": "Charles Schwab & Co., Inc.",
+      "total": 14,
+      "first": "2025-05-01 09:36",
+      "last": "2026-04-21 06:29"
+    },
+    "reason": "skip:schwab.com"
+  },
+  "care@email.ketone.com": {
+    "stats": {
+      "name": "Ketone-IQ Team",
+      "total": 6,
+      "first": "2026-04-11 13:28",
+      "last": "2026-04-21 06:21"
+    },
+    "reason": "USER_KEEP"
+  },
+  "no-reply@comet.zillow.com": {
+    "stats": {
+      "name": "Zillow Rental Manager",
+      "total": 8,
+      "first": "2025-07-05 15:37",
+      "last": "2026-04-20 23:38"
+    },
+    "reason": "skip:comet.zillow.com"
+  },
+  "no-reply@starlink.com": {
+    "stats": {
+      "name": "Starlink",
+      "total": 10,
+      "first": "2025-05-05 05:11",
+      "last": "2026-04-20 22:59"
+    },
+    "reason": "skip:starlink.com"
+  },
+  "notifications@mail.creditkarma.com": {
+    "stats": {
+      "name": "Credit Karma",
+      "total": 5,
+      "first": "2026-01-18 09:39",
+      "last": "2026-04-19 13:20"
+    },
+    "reason": "skip:creditkarma"
+  },
+  "hello@mail.klutchcard.com": {
+    "stats": {
+      "name": "Klutch",
+      "total": 3,
+      "first": "2025-06-10 19:54",
+      "last": "2026-04-19 13:27"
+    },
+    "reason": "skip:klutchcard.com"
+  },
+  "ambal_d2d@yahoo.com": {
+    "stats": {
+      "name": "Ambal Balakrishnan",
+      "total": 15,
+      "first": "2025-05-11 15:50",
+      "last": "2026-04-17 19:03"
+    },
+    "reason": "skip:ambal_d2d@yahoo.com"
+  },
+  "carson.west@livekit.io": {
+    "stats": {
+      "name": "Carson West",
+      "total": 3,
+      "first": "2026-04-10 11:15",
+      "last": "2026-04-16 08:34"
+    },
+    "reason": "skip:carson.west@livekit.io"
+  },
+  "account@nest.com": {
+    "stats": {
+      "name": "Nest Home Report",
+      "total": 17,
+      "first": "2025-05-29 14:01",
+      "last": "2026-04-15 15:37"
+    },
+    "reason": "skip:nest.com"
+  },
+  "no-reply@mail.coinbase.com": {
+    "stats": {
+      "name": "Coinbase",
+      "total": 5,
+      "first": "2025-10-17 03:21",
+      "last": "2026-04-14 04:59"
+    },
+    "reason": "skip:mail.coinbase.com"
+  },
+  "noreply@clientfeedback.bankofamerica.com": {
+    "stats": {
+      "name": "Bank of America",
+      "total": 4,
+      "first": "2026-01-30 13:25",
+      "last": "2026-04-11 02:00"
+    },
+    "reason": "skip:bankofamerica.com"
+  },
+  "no-reply@google.com": {
+    "stats": {
+      "name": "Google",
+      "total": 7,
+      "first": "2025-08-26 04:03",
+      "last": "2026-04-10 16:24"
+    },
+    "reason": "skip:no-reply@google.com"
+  },
+  "editor@vanishmagazine.com": {
+    "stats": {
+      "name": "Paul Romhany",
+      "total": 2,
+      "first": "2025-07-01 19:41",
+      "last": "2026-04-09 21:10"
+    },
+    "reason": "skip:editor@vanishmagazine.com"
+  },
+  "anjali@intelisync.io": {
+    "stats": {
+      "name": "Anjali Chavhan",
+      "total": 2,
+      "first": "2026-04-06 05:36",
+      "last": "2026-04-09 05:48"
+    },
+    "reason": "skip:anjali@intelisync.io"
+  },
+  "donotreply@23andme.com": {
+    "stats": {
+      "name": "23andMe",
+      "total": 31,
+      "first": "2025-09-25 13:26",
+      "last": "2026-04-08 00:44"
+    },
+    "reason": "skip:donotreply@23andme.com"
+  },
+  "googlenest@google.com": {
+    "stats": {
+      "name": "Google Nest",
+      "total": 3,
+      "first": "2025-09-17 02:07",
+      "last": "2026-04-07 17:04"
+    },
+    "reason": "skip:googlenest"
+  },
+  "donotreply@mail.schwab.com": {
+    "stats": {
+      "name": "Charles Schwab & Co., Inc.",
+      "total": 12,
+      "first": "2025-05-05 00:20",
+      "last": "2026-04-04 12:17"
+    },
+    "reason": "skip:schwab.com"
+  },
+  "hello@gamma.app": {
+    "stats": {
+      "name": "Gamma",
+      "total": 2,
+      "first": "2025-05-21 15:05",
+      "last": "2026-04-03 16:41"
+    },
+    "reason": "skip:hello@gamma.app"
+  },
+  "team@go.jfrog.com": {
+    "stats": {
+      "name": "JFrog Team",
+      "total": 2,
+      "first": "2025-11-24 11:35",
+      "last": "2026-04-02 15:24"
+    },
+    "reason": "skip:team@go.jfrog.com"
+  },
+  "mail@mail.creditkarma.com": {
+    "stats": {
+      "name": "Credit Karma",
+      "total": 2,
+      "first": "2026-02-14 12:35",
+      "last": "2026-03-30 13:09"
+    },
+    "reason": "skip:creditkarma"
+  },
+  "no-reply@twitch.tv": {
+    "stats": {
+      "name": "Twitch",
+      "total": 4,
+      "first": "2025-10-25 05:50",
+      "last": "2026-03-30 21:32"
+    },
+    "reason": "skip:no-reply@twitch.tv"
+  },
+  "matt@reply.scaleupmedia.com": {
+    "stats": {
+      "name": "Matt Ganzak",
+      "total": 5,
+      "first": "2026-03-12 04:26",
+      "last": "2026-03-25 19:59"
+    },
+    "reason": "skip:matt@reply.scaleupmedia.com"
+  },
+  "yourprovider@simplepractice.com": {
+    "stats": {
+      "name": "Austin Psychological and Testing Center, LLP Client Portal",
+      "total": 7,
+      "first": "2026-03-09 13:26",
+      "last": "2026-03-25 09:15"
+    },
+    "reason": "skip:simplepractice.com"
+  },
+  "noreply@email.openai.com": {
+    "stats": {
+      "name": "ChatGPT",
+      "total": 11,
+      "first": "2025-10-16 19:32",
+      "last": "2026-03-24 19:12"
+    },
+    "reason": "skip:noreply@email.openai.com"
+  },
+  "express@airbnb.com": {
+    "stats": {
+      "name": "Airbnb",
+      "total": 11,
+      "first": "2026-03-15 17:42",
+      "last": "2026-03-20 13:23"
+    },
+    "reason": "skip:express@airbnb.com"
+  },
+  "joshua.galindez@capvision.com": {
+    "stats": {
+      "name": "Joshua Galindez",
+      "total": 2,
+      "first": "2026-03-18 16:25",
+      "last": "2026-03-20 08:37"
+    },
+    "reason": "skip:joshua.galindez@capvision.com"
+  },
+  "venmo@venmo.com": {
+    "stats": {
+      "name": "Venmo",
+      "total": 45,
+      "first": "2025-05-04 21:11",
+      "last": "2026-03-19 23:22"
+    },
+    "reason": "skip:venmo.com"
+  },
+  "ambalakr@gmail.com": {
+    "stats": {
+      "name": "Ambal Balakrishnan",
+      "total": 14,
+      "first": "2025-05-01 17:48",
+      "last": "2026-03-09 10:28"
+    },
+    "reason": "skip:ambalakr@gmail.com"
+  },
+  "no-reply@info.austinregionalclinic.com": {
+    "stats": {
+      "name": "Austin Regional Clinic",
+      "total": 10,
+      "first": "2025-05-06 14:17",
+      "last": "2026-03-04 16:03"
+    },
+    "reason": "skip:austinregionalclinic.com"
+  },
+  "admin@awskinclinic.com": {
+    "stats": {
+      "name": "AW Skin Clinic-Ann Webb",
+      "total": 5,
+      "first": "2025-08-01 10:36",
+      "last": "2026-03-03 12:25"
+    },
+    "reason": "skip:awskinclinic.com"
+  },
+  "feedback@spectrumcustomersurvey.com": {
+    "stats": {
+      "name": "Spectrum Customer Experience Team",
+      "total": 2,
+      "first": "2026-02-28 03:11",
+      "last": "2026-03-02 03:14"
+    },
+    "reason": "skip:feedback@spectrumcustomersurvey.com"
+  },
+  "notifications@creditkarma.com": {
+    "stats": {
+      "name": "Credit Karma",
+      "total": 12,
+      "first": "2025-05-03 10:09",
+      "last": "2026-03-01 10:22"
+    },
+    "reason": "skip:creditkarma"
+  },
+  "capitalone@experience.capitalone.com": {
+    "stats": {
+      "name": "Capital One",
+      "total": 2,
+      "first": "2026-02-25 17:05",
+      "last": "2026-02-28 17:48"
+    },
+    "reason": "skip:capitalone.com"
+  },
+  "google-gemini-noreply@google.com": {
+    "stats": {
+      "name": "Google Gemini",
+      "total": 2,
+      "first": "2025-12-04 18:12",
+      "last": "2026-02-24 19:40"
+    },
+    "reason": "skip:google-gemini-noreply@google.com"
+  },
+  "talent@ibm.com": {
+    "stats": {
+      "name": "IBM Talent Acquisition",
+      "total": 2,
+      "first": "2025-11-26 22:26",
+      "last": "2026-02-09 13:40"
+    },
+    "reason": "skip:talent@ibm.com"
+  },
+  "capitalone@notification.capitalone.com": {
+    "stats": {
+      "name": "Capital One",
+      "total": 33,
+      "first": "2025-06-04 08:33",
+      "last": "2026-02-06 15:53"
+    },
+    "reason": "skip:capitalone.com"
+  },
+  "email_service_usa2@mailer2.recallmax.com": {
+    "stats": {
+      "name": "River Rock Dental Mueller",
+      "total": 5,
+      "first": "2026-01-14 14:07",
+      "last": "2026-02-06 12:00"
+    },
+    "reason": "skip:mailer2.recallmax.com"
+  },
+  "evan@evanluthra.com": {
+    "stats": {
+      "name": "Evan Luthra",
+      "total": 2,
+      "first": "2025-10-06 02:53",
+      "last": "2026-02-05 04:39"
+    },
+    "reason": "skip:evan@evanluthra.com"
+  },
+  "mike@colabl.com": {
+    "stats": {
+      "name": "Mike Nemeth",
+      "total": 12,
+      "first": "2025-05-08 10:03",
+      "last": "2026-01-28 19:00"
+    },
+    "reason": "skip:mike@colabl.com"
+  },
+  "onboarding@buffermail.com": {
+    "stats": {
+      "name": "Sabreen from Buffer",
+      "total": 6,
+      "first": "2026-01-14 16:30",
+      "last": "2026-01-23 16:30"
+    },
+    "reason": "skip:onboarding@buffermail.com"
+  },
+  "fernando@hashlock.com.au": {
+    "stats": {
+      "name": "Fernando Borrase",
+      "total": 2,
+      "first": "2025-12-07 20:11",
+      "last": "2026-01-21 18:35"
+    },
+    "reason": "skip:fernando@hashlock.com.au"
+  },
+  "mail@mail15.creditkarma.com": {
+    "stats": {
+      "name": "Credit Karma",
+      "total": 2,
+      "first": "2025-07-18 11:00",
+      "last": "2026-01-20 14:43"
+    },
+    "reason": "skip:creditkarma"
+  },
+  "hello@buffer.com": {
+    "stats": {
+      "name": "The Buffer Team",
+      "total": 2,
+      "first": "2026-01-15 17:03",
+      "last": "2026-01-17 16:26"
+    },
+    "reason": "skip:hello@buffer.com"
+  },
+  "notifications@mail11.creditkarma.com": {
+    "stats": {
+      "name": "Credit Karma",
+      "total": 4,
+      "first": "2025-05-20 08:53",
+      "last": "2026-01-06 14:50"
+    },
+    "reason": "skip:creditkarma"
+  },
+  "lifetouch@e.lifetouch.com": {
+    "stats": {
+      "name": "Adithya's Collection by Lifetouch",
+      "total": 9,
+      "first": "2025-11-26 07:57",
+      "last": "2026-01-06 07:49"
+    },
+    "reason": "skip:lifetouch.com"
+  },
+  "notifications@mail6.creditkarma.com": {
+    "stats": {
+      "name": "Credit Karma",
+      "total": 2,
+      "first": "2025-09-14 11:26",
+      "last": "2026-01-01 07:20"
+    },
+    "reason": "skip:creditkarma"
+  },
+  "knagaraj_d2d@yahoo.com": {
+    "stats": {
+      "name": "Kumar Nagarajan",
+      "total": 2,
+      "first": "2025-11-09 10:26",
+      "last": "2025-12-31 10:08"
+    },
+    "reason": "skip:knagaraj_d2d@yahoo.com"
+  },
+  "noreply-c69d9ce7a9205ceca2d291e4ee7a512e@google.com": {
+    "stats": {
+      "name": "Kumar Nagarajan (via Google Photos)",
+      "total": 2,
+      "first": "2025-12-08 12:59",
+      "last": "2025-12-29 22:33"
+    },
+    "reason": "skip:family_shares"
+  },
+  "joshua@teamsalazargroup.com": {
+    "stats": {
+      "name": "Joshua Salazar",
+      "total": 2,
+      "first": "2025-11-27 23:37",
+      "last": "2025-12-24 17:50"
+    },
+    "reason": "skip:joshua@teamsalazargroup.com"
+  },
+  "visible@mail.visible.com": {
+    "stats": {
+      "name": "Visible",
+      "total": 17,
+      "first": "2025-05-01 21:41",
+      "last": "2025-12-21 22:44"
+    },
+    "reason": "skip:mail.visible.com"
+  },
+  "notifications@mail18.creditkarma.com": {
+    "stats": {
+      "name": "Credit Karma",
+      "total": 2,
+      "first": "2025-12-04 12:06",
+      "last": "2025-12-20 10:38"
+    },
+    "reason": "skip:creditkarma"
+  },
+  "noreply-00f6db751c831ad7293886e1877c06d2@google.com": {
+    "stats": {
+      "name": "Ambal Balakrishnan (via Google Photos)",
+      "total": 14,
+      "first": "2025-05-30 09:32",
+      "last": "2025-12-18 15:41"
+    },
+    "reason": "skip:family_shares"
+  },
+  "googleone-noreply@google.com": {
+    "stats": {
+      "name": "Google One",
+      "total": 5,
+      "first": "2025-09-17 18:27",
+      "last": "2025-12-17 17:06"
+    },
+    "reason": "skip:googleone-noreply@google.com"
+  },
+  "notifications@notifications3.creditkarma.com": {
+    "stats": {
+      "name": "Credit Karma",
+      "total": 3,
+      "first": "2025-08-26 10:24",
+      "last": "2025-12-07 11:20"
+    },
+    "reason": "skip:creditkarma"
+  },
+  "concierge@expensify.com": {
+    "stats": {
+      "name": "Expensify Concierge",
+      "total": 2,
+      "first": "2025-11-05 18:57",
+      "last": "2025-12-03 22:36"
+    },
+    "reason": "skip:concierge@expensify.com"
+  },
+  "mail@mail18.creditkarma.com": {
+    "stats": {
+      "name": "Credit Karma",
+      "total": 3,
+      "first": "2025-06-01 10:30",
+      "last": "2025-12-01 22:26"
+    },
+    "reason": "skip:creditkarma"
+  },
+  "notifications@mail7.creditkarma.com": {
+    "stats": {
+      "name": "Credit Karma",
+      "total": 2,
+      "first": "2025-10-14 10:24",
+      "last": "2025-11-28 07:50"
+    },
+    "reason": "skip:creditkarma"
+  },
+  "guru@gurutaxpro.com": {
+    "stats": {
+      "name": "Guru C Reddy Dorsala",
+      "total": 2,
+      "first": "2025-07-17 14:07",
+      "last": "2025-11-21 11:17"
+    },
+    "reason": "skip:guru@gurutaxpro.com"
+  },
+  "info@mail.coinbase.com": {
+    "stats": {
+      "name": "Coinbase",
+      "total": 4,
+      "first": "2025-07-14 18:31",
+      "last": "2025-11-19 15:06"
+    },
+    "reason": "skip:mail.coinbase.com"
+  },
+  "googleaistudio-noreply@google.com": {
+    "stats": {
+      "name": "Google AI Studio",
+      "total": 2,
+      "first": "2025-08-28 15:59",
+      "last": "2025-11-19 10:52"
+    },
+    "reason": "skip:googleaistudio-noreply@google.com"
+  },
+  "americanexpress@feedbackemail.americanexpress.com": {
+    "stats": {
+      "name": "American Express",
+      "total": 4,
+      "first": "2025-07-20 10:06",
+      "last": "2025-11-17 00:05"
+    },
+    "reason": "skip:americanexpress"
+  },
+  "noreply@info.wise.com": {
+    "stats": {
+      "name": "Wise",
+      "total": 5,
+      "first": "2025-09-11 06:02",
+      "last": "2025-11-14 06:05"
+    },
+    "reason": "skip:wise.com"
+  },
+  "contactcloud@google.com": {
+    "stats": {
+      "name": "Google Cloud",
+      "total": 2,
+      "first": "2025-07-31 10:22",
+      "last": "2025-11-13 10:16"
+    },
+    "reason": "skip:contactcloud@google.com"
+  },
+  "mickey@arcadiamarketing.io": {
+    "stats": {
+      "name": "Mickey Hardy",
+      "total": 4,
+      "first": "2025-10-22 08:53",
+      "last": "2025-11-12 09:36"
+    },
+    "reason": "skip:mickey@arcadiamarketing.io"
+  },
+  "googlehome@google.com": {
+    "stats": {
+      "name": "Google Home",
+      "total": 2,
+      "first": "2025-10-28 13:54",
+      "last": "2025-11-10 19:49"
+    },
+    "reason": "skip:googlehome@google.com"
+  },
+  "hello@diabrowser.com": {
+    "stats": {
+      "name": "The Browser Company",
+      "total": 3,
+      "first": "2025-11-06 18:43",
+      "last": "2025-11-10 18:51"
+    },
+    "reason": "skip:hello@diabrowser.com"
+  },
+  "caresupport@hello.springhealth.com": {
+    "stats": {
+      "name": "Spring Health",
+      "total": 15,
+      "first": "2025-05-07 16:01",
+      "last": "2025-11-07 09:00"
+    },
+    "reason": "skip:springhealth.com"
+  },
+  "notifications@notifications1.creditkarma.com": {
+    "stats": {
+      "name": "Credit Karma",
+      "total": 5,
+      "first": "2025-05-06 11:11",
+      "last": "2025-11-04 11:17"
+    },
+    "reason": "skip:creditkarma"
+  },
+  "no_reply_pharmacy@delivery.cigna.com": {
+    "stats": {
+      "name": "Cigna Pharmacy",
+      "total": 3,
+      "first": "2025-05-05 15:21",
+      "last": "2025-10-29 16:32"
+    },
+    "reason": "skip:delivery.cigna.com"
+  },
+  "invites@partiful.com": {
+    "stats": {
+      "name": "Partiful",
+      "total": 18,
+      "first": "2025-10-13 06:00",
+      "last": "2025-10-27 14:37"
+    },
+    "reason": "skip:invites@partiful.com"
+  },
+  "googleone-updates-noreply@google.com": {
+    "stats": {
+      "name": "Google One",
+      "total": 3,
+      "first": "2025-08-28 17:32",
+      "last": "2025-10-24 12:30"
+    },
+    "reason": "skip:googleone-updates-noreply@google.com"
+  },
+  "noreply@qualtrics.chime.com": {
+    "stats": {
+      "name": "Chime",
+      "total": 3,
+      "first": "2025-10-11 17:29",
+      "last": "2025-10-18 16:55"
+    },
+    "reason": "skip:chime.com"
+  },
+  "google-noreply@google.com": {
+    "stats": {
+      "name": "Google",
+      "total": 4,
+      "first": "2025-09-28 11:53",
+      "last": "2025-10-16 12:18"
+    },
+    "reason": "skip:google-noreply@google.com"
+  },
+  "surveys@surveys.oregonstate.edu": {
+    "stats": {
+      "name": "Heather Fischer",
+      "total": 3,
+      "first": "2025-09-10 10:20",
+      "last": "2025-09-24 14:28"
+    },
+    "reason": "skip:surveys@surveys.oregonstate.edu"
+  },
+  "adithya@outerscope.xyz": {
+    "stats": {
+      "name": "Adithya Kumar",
+      "total": 2,
+      "first": "2025-09-23 19:08",
+      "last": "2025-09-23 20:00"
+    },
+    "reason": "skip:adithya@outerscope.xyz"
+  },
+  "mail@mail6.creditkarma.com": {
+    "stats": {
+      "name": "Credit Karma",
+      "total": 2,
+      "first": "2025-06-09 07:46",
+      "last": "2025-09-21 08:23"
+    },
+    "reason": "skip:creditkarma"
+  },
+  "sales@gurutaxpro.com": {
+    "stats": {
+      "name": "GuruTaxPro - Sales",
+      "total": 2,
+      "first": "2025-07-05 09:33",
+      "last": "2025-09-18 10:29"
+    },
+    "reason": "skip:sales@gurutaxpro.com"
+  },
+  "service@kellerpostman.com": {
+    "stats": {
+      "name": "Keller Postman",
+      "total": 3,
+      "first": "2025-08-26 18:02",
+      "last": "2025-09-06 12:01"
+    },
+    "reason": "skip:service@kellerpostman.com"
+  },
+  "notify@mail.notion.so": {
+    "stats": {
+      "name": "Adithya Kumar via Notion",
+      "total": 3,
+      "first": "2025-08-26 02:28",
+      "last": "2025-09-01 02:29"
+    },
+    "reason": "skip:notify@mail.notion.so"
+  },
+  "product-updates@poe.com": {
+    "stats": {
+      "name": "Poe",
+      "total": 2,
+      "first": "2025-08-10 22:32",
+      "last": "2025-08-29 23:53"
+    },
+    "reason": "skip:product-updates@poe.com"
+  },
+  "member@notify.chime.com": {
+    "stats": {
+      "name": "Chime",
+      "total": 2,
+      "first": "2025-08-06 09:03",
+      "last": "2025-08-27 23:51"
+    },
+    "reason": "skip:chime.com"
+  },
+  "important@account.chime.com": {
+    "stats": {
+      "name": "Chime",
+      "total": 3,
+      "first": "2025-07-29 12:01",
+      "last": "2025-08-26 12:08"
+    },
+    "reason": "skip:chime.com"
+  },
+  "messages@fareharbor.com": {
+    "stats": {
+      "name": "Jersey Jet Ski",
+      "total": 2,
+      "first": "2025-08-07 11:36",
+      "last": "2025-08-08 15:16"
+    },
+    "reason": "skip:messages@fareharbor.com"
+  },
+  "noreply@blog.codex.storage": {
+    "stats": {
+      "name": "Codex Storage Blog",
+      "total": 3,
+      "first": "2025-06-02 07:05",
+      "last": "2025-08-04 07:00"
+    },
+    "reason": "skip:noreply@blog.codex.storage"
+  },
+  "welcome@account.chime.com": {
+    "stats": {
+      "name": "Chime",
+      "total": 2,
+      "first": "2025-07-29 00:54",
+      "last": "2025-07-31 00:54"
+    },
+    "reason": "skip:chime.com"
+  },
+  "systems@clerk.com": {
+    "stats": {
+      "name": "Clerk",
+      "total": 2,
+      "first": "2025-06-27 16:22",
+      "last": "2025-07-18 11:06"
+    },
+    "reason": "skip:systems@clerk.com"
+  },
+  "1800usbanks@email.usbank.com": {
+    "stats": {
+      "name": "U.S. Bank",
+      "total": 4,
+      "first": "2025-05-09 13:07",
+      "last": "2025-07-15 08:04"
+    },
+    "reason": "skip:email.usbank.com"
+  },
+  "no-reply@uber.com": {
+    "stats": {
+      "name": "Uber",
+      "total": 2,
+      "first": "2025-05-10 03:54",
+      "last": "2025-06-10 13:39"
+    },
+    "reason": "skip:no-reply@uber.com"
+  },
+  "workspace-noreply@google.com": {
+    "stats": {
+      "name": "The Google Workspace Team",
+      "total": 4,
+      "first": "2025-05-29 12:17",
+      "last": "2025-06-03 13:30"
+    },
+    "reason": "skip:workspace-noreply@google.com"
+  },
+  "muhammad.hannan@capvision.com": {
+    "stats": {
+      "name": "Muhammad Hannan",
+      "total": 2,
+      "first": "2025-05-29 11:47",
+      "last": "2025-06-02 10:38"
+    },
+    "reason": "skip:muhammad.hannan@capvision.com"
+  },
+  "notification@priority.instagram.com": {
+    "stats": {
+      "name": "shakstzy on Instagram",
+      "total": 4,
+      "first": "2025-05-07 17:48",
+      "last": "2025-05-31 21:04"
+    },
+    "reason": "skip:notification@priority.instagram.com"
+  },
+  "hello@libertyhomeguard.co": {
+    "stats": {
+      "name": "Liberty Home Guard",
+      "total": 2,
+      "first": "2025-05-28 19:00",
+      "last": "2025-05-28 19:00"
+    },
+    "reason": "skip:hello@libertyhomeguard.co"
+  },
+  "donotreply@cardmessage.capitalone.com": {
+    "stats": {
+      "name": "Capital One",
+      "total": 4,
+      "first": "2025-05-01 19:01",
+      "last": "2025-05-19 13:05"
+    },
+    "reason": "skip:capitalone.com"
+  },
+  "americanexpress@email.americanexpress.com": {
+    "stats": {
+      "name": "American Express",
+      "total": 2,
+      "first": "2025-05-11 23:42",
+      "last": "2025-05-14 12:11"
+    },
+    "reason": "skip:americanexpress"
+  }
+}

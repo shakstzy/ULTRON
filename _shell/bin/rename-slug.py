@@ -79,21 +79,64 @@ def rewrite_target(target: str, old: str, new: str) -> str:
     return f"{rewritten_ref}|{label}"
 
 
-def patch_file(p: Path, old: str, new: str) -> bool:
-    """Returns True if the file content changed."""
+FENCE_RE = re.compile(r"^\s*(`{3,}|~{3,})")
+INLINE_CODE_RE = re.compile(r"(`+)(?:(?!\1).)+?\1", re.DOTALL)
+
+
+def patch_text(text: str, old: str, new: str) -> str:
+    """Return the rewritten text. Skips fenced code blocks and inline code spans."""
+    out: list[str] = []
+    in_fence = False
+    fence_marker: str | None = None
+    for raw_line in text.splitlines(keepends=True):
+        stripped = raw_line.rstrip("\n")
+        m_fence = FENCE_RE.match(stripped)
+        if m_fence is not None:
+            tok = m_fence.group(1)[0]
+            if not in_fence:
+                in_fence = True
+                fence_marker = tok
+            elif fence_marker == tok:
+                in_fence = False
+                fence_marker = None
+            out.append(raw_line)
+            continue
+        if in_fence:
+            out.append(raw_line)
+            continue
+
+        # Mask inline code spans, rewrite outside, restore.
+        masks: list[str] = []
+
+        def mask(match: re.Match) -> str:
+            masks.append(match.group(0))
+            return f"\x00{len(masks) - 1}\x00"
+
+        masked = INLINE_CODE_RE.sub(mask, raw_line)
+
+        def repl(m: re.Match) -> str:
+            bang = m.group(1)
+            target = m.group(2)
+            return f"{bang}[[{rewrite_target(target, old, new)}]]"
+
+        rewritten = WIKILINK_RE.sub(repl, masked)
+        for idx, original in enumerate(masks):
+            rewritten = rewritten.replace(f"\x00{idx}\x00", original)
+        out.append(rewritten)
+    return "".join(out)
+
+
+def patch_file(p: Path, old: str, new: str, dry_run: bool = False) -> bool:
+    """Returns True if the file content changed (or would change in dry-run)."""
     try:
         text = p.read_text(errors="ignore")
     except OSError:
         return False
 
-    def repl(match: re.Match) -> str:
-        bang = match.group(1)
-        target = match.group(2)
-        return f"{bang}[[{rewrite_target(target, old, new)}]]"
-
-    new_text = WIKILINK_RE.sub(repl, text)
+    new_text = patch_text(text, old, new)
     if new_text != text:
-        p.write_text(new_text)
+        if not dry_run:
+            p.write_text(new_text)
         return True
     return False
 

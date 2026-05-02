@@ -1,0 +1,22 @@
+# Global iMessage routing defaults. Per-workspace allowlists live in each
+# workspace's config/sources.yaml.
+
+defaults:
+  unrouted: skip                  # Privacy-first: contacts not on any workspace allowlist are NOT ingested.
+  conflict: fork                  # Same contact in 2+ workspaces → write to all (each gets its own copy).
+
+# Identifiers (phone or email) that should never be ingested under any
+# circumstances. Useful for spam ranges, corporate noreply addresses,
+# verification senders.
+skip_handles:
+  - "+1800*"                      # 800 numbers
+  - "+1888*"                      # 888 numbers
+  - "+1855*"
+  - "+1866*"
+  - "+1877*"
+  - "verify@*"
+  - "noreply@*"
+  - "no-reply@*"
+
+# Group chat identifiers to skip wholesale.
+skip_groups: []

@@ -1,0 +1,14 @@
+# ULTRON cross-workspace schedule. The schedule skill compiles this into
+# launchd plists at _shell/plists/.
+
+cross_workspace:
+  graphify_supermerge:
+    cron: "0 */6 * * *"             # Every 6 hours
+  audit:
+    cron: "0 5 * * 0"               # Sundays 05:00
+  weekly_review:
+    cron: "0 7 * * 0"               # Sundays 07:00
+  apple_contacts_sync:
+    cron: "0 3 * * *"               # Nightly 03:00
+  ledger_compact:
+    cron: "0 4 1 */3 *"             # 04:00 on the 1st of every 3rd month

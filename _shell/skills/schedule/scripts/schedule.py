@@ -1,0 +1,394 @@
+#!/usr/bin/env python3
+"""
+schedule.py — compile / load / unload / status / remove launchd plists from
+the source-of-truth `_shell/config/global-schedule.yaml` plus every workspace's
+`config/schedule.yaml`.
+
+Usage:
+    schedule.py compile [--dry-run]
+    schedule.py load <plist-name | --all>
+    schedule.py unload <plist-name | --all>
+    schedule.py status
+    schedule.py remove <plist-name>
+"""
+from __future__ import annotations
+
+import argparse
+import os
+import re
+import shutil
+import subprocess
+import sys
+from pathlib import Path
+
+ULTRON_ROOT = Path(os.environ.get("ULTRON_ROOT", str(Path.home() / "ULTRON")))
+LAUNCH_AGENTS = Path.home() / "Library" / "LaunchAgents"
+PLISTS_DIR = ULTRON_ROOT / "_shell" / "plists"
+
+sys.path.insert(0, str(ULTRON_ROOT / "_shell" / "skills" / "schedule" / "scripts"))
+from cron_to_launchd import cron_to_intervals, render_intervals_xml  # noqa: E402
+
+
+def load_yaml(path: Path) -> dict:
+    """Minimal YAML loader sufficient for ULTRON's schedule.yaml shapes.
+
+    Falls back to PyYAML if available; otherwise parses the small, regular
+    structure manually.
+    """
+    if not path.exists():
+        return {}
+    text = path.read_text(errors="ignore")
+    try:
+        import yaml
+        return yaml.safe_load(text) or {}
+    except ImportError:
+        pass
+    # Tiny fallback: handles 2-level indented dicts and "key: value" lines.
+    out: dict = {}
+    stack: list[tuple[int, dict]] = [(0, out)]
+    for raw in text.splitlines():
+        if not raw.strip() or raw.lstrip().startswith("#"):
+            continue
+        indent = len(raw) - len(raw.lstrip(" "))
+        line = raw.lstrip()
+        # Pop deeper stack entries.
+        while stack and indent < stack[-1][0]:
+            stack.pop()
+        if line.endswith(":"):
+            key = line[:-1].strip()
+            new_dict: dict = {}
+            stack[-1][1][key] = new_dict
+            stack.append((indent + 2, new_dict))
+        elif ":" in line:
+            k, _, v = line.partition(":")
+            stack[-1][1][k.strip()] = v.strip().strip('"').strip("'")
+    return out
+
+
+# ---- compile ------------------------------------------------------------
+
+PLIST_TEMPLATE = """<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>{label}</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>-c</string>
+    <string>flock -n /tmp/{label}.lock {ultron_root}/_shell/bin/run-stage.sh {args} >> {ultron_root}/_logs/{label}.log 2>&amp;1</string>
+  </array>
+  {interval_block}
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key><string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <key>ULTRON_ROOT</key><string>{ultron_root}</string>
+    <key>HOME</key><string>{home}</string>
+  </dict>
+  <key>StandardOutPath</key><string>{ultron_root}/_logs/{label}.out.log</string>
+  <key>StandardErrorPath</key><string>{ultron_root}/_logs/{label}.err.log</string>
+  <key>WorkingDirectory</key><string>{ultron_root}</string>
+  <key>RunAtLoad</key><false/>
+</dict>
+</plist>
+"""
+
+
+def _account_slug(account: str) -> str:
+    """foo@bar.baz → foo-bar."""
+    if "@" not in account:
+        return account.lower()
+    local, _, domain = account.partition("@")
+    domain_stem = domain.split(".", 1)[0]
+    return f"{local}-{domain_stem}".lower()
+
+
+def collect_jobs() -> list[dict]:
+    """Walk every workspace's schedule.yaml + global-schedule.yaml and emit job specs."""
+    jobs: list[dict] = []
+
+    # 1. Cross-workspace jobs from global-schedule.yaml.
+    global_cfg = load_yaml(ULTRON_ROOT / "_shell" / "config" / "global-schedule.yaml")
+    cross = (global_cfg or {}).get("cross_workspace") or {}
+    for name, body in cross.items():
+        cron = (body or {}).get("cron")
+        if not cron:
+            continue
+        label = f"com.adithya.ultron.{name.replace('_', '-')}"
+        jobs.append({
+            "label": label,
+            "cron": cron,
+            "args": _global_args_for(name),
+            "kind": "global",
+        })
+
+    # 2. Per-workspace jobs.
+    workspaces_dir = ULTRON_ROOT / "workspaces"
+    if workspaces_dir.exists():
+        for ws_dir in sorted(workspaces_dir.iterdir()):
+            if not ws_dir.is_dir() or ws_dir.name.startswith("_"):
+                continue
+            ws_cfg = load_yaml(ws_dir / "config" / "schedule.yaml")
+            if not ws_cfg:
+                continue
+
+            # 2a. workspace_jobs (lint, graphify, etc.).
+            workspace_jobs = ws_cfg.get("workspace_jobs") or {}
+            for job_name, job_body in workspace_jobs.items():
+                cron = (job_body or {}).get("cron")
+                if not cron:
+                    continue
+                label = f"com.adithya.ultron.{job_name}-{ws_dir.name}"
+                jobs.append({
+                    "label": label,
+                    "cron": cron,
+                    "args": f"{job_name} {ws_dir.name}",
+                    "kind": "workspace_job",
+                    "workspace": ws_dir.name,
+                })
+
+            # 2b. sources (per-(source,account)).
+            sources = ws_cfg.get("sources") or {}
+            for source_name, source_body in sources.items():
+                cron = (source_body or {}).get("cron")
+                if not cron:
+                    continue
+                accounts = (source_body or {}).get("accounts") or []
+                if not accounts:
+                    accounts = ["default"]
+                for acct in accounts:
+                    acct_slug = _account_slug(acct) if acct != "default" else "default"
+                    label = f"com.adithya.ultron.ingest-{source_name}-{acct_slug}"
+                    jobs.append({
+                        "label": label,
+                        "cron": cron,
+                        "args": f"ingest {source_name} {acct}",
+                        "kind": "ingest",
+                        "source": source_name,
+                        "account": acct,
+                        "workspace_origin": ws_dir.name,
+                    })
+
+    # 3. Resolve duplicate labels (multiple workspaces declaring the same
+    # (source,account)). The most-frequent cron wins, measured by the number
+    # of seconds between firings — for ULTRON's coarse cadences this can be
+    # approximated by minute-of-the-day count.
+    by_label: dict[str, dict] = {}
+    for j in jobs:
+        if j["label"] not in by_label:
+            by_label[j["label"]] = j
+            continue
+        a = by_label[j["label"]]
+        if _slot_count(j["cron"]) > _slot_count(a["cron"]):
+            by_label[j["label"]] = j
+    return list(by_label.values())
+
+
+def _global_args_for(name: str) -> str:
+    """Translate a global-schedule.yaml key to run-stage.sh args."""
+    overrides = {
+        "graphify_supermerge": "audit",   # graphify-run.sh is invoked by audit; standalone via _shell/bin/graphify-run.sh as well
+        "audit": "audit",
+        "weekly_review": "weekly-review",
+        "apple_contacts_sync": "apple-contacts-sync",   # special: routed through schedule.py wrapper
+        "ledger_compact": "ledger-compact",
+    }
+    return overrides.get(name, name.replace("_", "-"))
+
+
+def _slot_count(cron: str) -> int:
+    try:
+        return len(cron_to_intervals(cron))
+    except Exception:
+        return 0
+
+
+def render_plist(job: dict) -> str:
+    intervals = cron_to_intervals(job["cron"])
+    interval_block = render_intervals_xml(intervals)
+    return PLIST_TEMPLATE.format(
+        label=job["label"],
+        ultron_root=str(ULTRON_ROOT),
+        home=str(Path.home()),
+        args=job["args"],
+        interval_block=interval_block,
+    )
+
+
+def cmd_compile(args: argparse.Namespace) -> int:
+    jobs = collect_jobs()
+    PLISTS_DIR.mkdir(parents=True, exist_ok=True)
+    written: list[Path] = []
+    skipped: list[tuple[str, str]] = []
+    for job in jobs:
+        try:
+            content = render_plist(job)
+        except ValueError as e:
+            skipped.append((job["label"], str(e)))
+            continue
+        out = PLISTS_DIR / f"{job['label']}.plist"
+        if not args.dry_run:
+            out.write_text(content)
+        written.append(out)
+
+    print(f"{'would write' if args.dry_run else 'wrote'} {len(written)} plist(s):")
+    for p in written:
+        print(f"  {p.relative_to(ULTRON_ROOT)}")
+
+    if skipped:
+        print("\nSKIPPED (cron pattern not yet supported by compiler):")
+        for label, err in skipped:
+            print(f"  {label}: {err}")
+
+    # Orphan detection: existing plists that don't match any current job.
+    existing = sorted(PLISTS_DIR.glob("com.adithya.ultron.*.plist"))
+    intended = {p.name for p in written}
+    orphans = [p for p in existing if p.name not in intended]
+    if orphans:
+        print("\nORPHAN plists (no matching schedule.yaml entry):")
+        for p in orphans:
+            print(f"  {p.name}  →  run /schedule remove to retire")
+
+    return 0
+
+
+# ---- load / unload ------------------------------------------------------
+
+def _label_from_arg(arg: str) -> str:
+    return arg.replace(".plist", "")
+
+
+def cmd_load(args: argparse.Namespace) -> int:
+    targets: list[Path]
+    if args.target == "--all":
+        targets = sorted(PLISTS_DIR.glob("com.adithya.ultron.*.plist"))
+    else:
+        label = _label_from_arg(args.target)
+        targets = [PLISTS_DIR / f"{label}.plist"]
+    rc_total = 0
+    LAUNCH_AGENTS.mkdir(parents=True, exist_ok=True)
+    for plist in targets:
+        if not plist.exists():
+            print(f"  missing: {plist}")
+            rc_total = 1
+            continue
+        link = LAUNCH_AGENTS / plist.name
+        if link.exists() or link.is_symlink():
+            link.unlink()
+        link.symlink_to(plist)
+        rc = subprocess.run(
+            ["launchctl", "bootstrap", f"gui/{os.getuid()}", str(link)],
+            check=False,
+        ).returncode
+        # bootstrap returns 5 if already loaded; treat as success
+        if rc not in (0, 5):
+            rc_total = rc
+        print(f"  loaded: {plist.name} (launchctl rc={rc})")
+    subprocess.run(
+        "launchctl list | grep com.adithya.ultron || true",
+        shell=True, check=False,
+    )
+    return rc_total
+
+
+def cmd_unload(args: argparse.Namespace) -> int:
+    if args.target == "--all":
+        labels = [p.stem for p in sorted(LAUNCH_AGENTS.glob("com.adithya.ultron.*.plist"))]
+    else:
+        labels = [_label_from_arg(args.target)]
+    for label in labels:
+        rc = subprocess.run(
+            ["launchctl", "bootout", f"gui/{os.getuid()}/{label}"],
+            check=False,
+        ).returncode
+        link = LAUNCH_AGENTS / f"{label}.plist"
+        if link.exists() or link.is_symlink():
+            link.unlink()
+        print(f"  unloaded: {label} (launchctl rc={rc})")
+    return 0
+
+
+# ---- status -------------------------------------------------------------
+
+def cmd_status(args: argparse.Namespace) -> int:
+    plists = sorted(PLISTS_DIR.glob("com.adithya.ultron.*.plist"))
+    loaded = subprocess.run(
+        "launchctl list | grep com.adithya.ultron || true",
+        shell=True, check=False, capture_output=True, text=True,
+    ).stdout
+    loaded_labels = {line.split()[-1] for line in loaded.splitlines() if line.strip()}
+
+    print(f"plists at {PLISTS_DIR.relative_to(ULTRON_ROOT)}:")
+    for p in plists:
+        label = p.stem
+        is_loaded = label in loaded_labels
+        out_log = ULTRON_ROOT / "_logs" / f"{label}.out.log"
+        last_run = "never"
+        if out_log.exists():
+            try:
+                stat = out_log.stat()
+                from datetime import datetime, timezone
+                last_run = datetime.fromtimestamp(stat.st_mtime, tz=timezone.utc).isoformat()
+            except OSError:
+                pass
+        print(f"  {label}  loaded={is_loaded}  last_run={last_run}")
+    return 0
+
+
+# ---- remove -------------------------------------------------------------
+
+def cmd_remove(args: argparse.Namespace) -> int:
+    label = _label_from_arg(args.target)
+    plist = PLISTS_DIR / f"{label}.plist"
+    link = LAUNCH_AGENTS / f"{label}.plist"
+    subprocess.run(
+        ["launchctl", "bootout", f"gui/{os.getuid()}/{label}"],
+        check=False,
+    )
+    if link.exists() or link.is_symlink():
+        link.unlink()
+    if plist.exists():
+        plist.unlink()
+        print(f"  removed: {plist.relative_to(ULTRON_ROOT)}")
+    else:
+        print(f"  not found: {plist.relative_to(ULTRON_ROOT)}")
+    return 0
+
+
+# ---- main ---------------------------------------------------------------
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    sub = ap.add_subparsers(dest="cmd", required=True)
+
+    c = sub.add_parser("compile")
+    c.add_argument("--dry-run", action="store_true")
+
+    l = sub.add_parser("load")
+    l.add_argument("target")
+
+    u = sub.add_parser("unload")
+    u.add_argument("target")
+
+    sub.add_parser("status")
+
+    r = sub.add_parser("remove")
+    r.add_argument("target")
+
+    args = ap.parse_args()
+
+    if args.cmd == "compile":
+        return cmd_compile(args)
+    if args.cmd == "load":
+        return cmd_load(args)
+    if args.cmd == "unload":
+        return cmd_unload(args)
+    if args.cmd == "status":
+        return cmd_status(args)
+    if args.cmd == "remove":
+        return cmd_remove(args)
+    return 2
+
+
+if __name__ == "__main__":
+    sys.exit(main())

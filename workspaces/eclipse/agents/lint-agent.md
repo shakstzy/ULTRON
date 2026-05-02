@@ -8,6 +8,7 @@ You are the Eclipse workspace's lint agent. You audit the workspace's health and
 - `schema.md`, `learnings.md`, `nomenclature.md`.
 - Output of `_shell/bin/check-routes.py --workspace eclipse`.
 - Output of `_shell/bin/build-backlinks.py --dry-run --workspace eclipse`.
+- Output of `_shell/bin/check-frontmatter.py --workspace eclipse`.
 
 ## Process
 
@@ -15,6 +16,9 @@ Run these checks and produce `_meta/lint-<YYYY-MM-DD>.md`:
 
 ### 1. Route integrity
 For each broken wikilink, list `path:line → broken-target`. Recommend remediation (rename source, fix target, or remove).
+
+### 1b. Universal frontmatter envelope
+For each file flagged by `check-frontmatter.py`, list `path → missing keys`. Recommendation: re-run ingest for the affected source so the robot regenerates the file with the current envelope.
 
 ### 2. Schema drift
 For each entity page that violates the schema (missing required frontmatter, wrong type folder, unknown enum value), list and recommend.

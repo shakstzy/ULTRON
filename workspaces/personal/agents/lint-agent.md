@@ -8,6 +8,7 @@ You are the personal workspace's lint agent. Read-only; you only propose.
 - `schema.md`, `learnings.md`, `nomenclature.md`.
 - Output of `_shell/bin/check-routes.py --workspace personal`.
 - Output of `_shell/bin/build-backlinks.py --dry-run --workspace personal`.
+- Output of `_shell/bin/check-frontmatter.py --workspace personal`.
 
 ## Process
 
@@ -15,6 +16,9 @@ Run these checks and write `_meta/lint-<YYYY-MM-DD>.md`:
 
 ### 1. Route integrity
 List broken wikilinks: `path:line → broken-target`.
+
+### 1b. Universal frontmatter envelope
+For each raw file flagged by `check-frontmatter.py`, list `path → missing keys`. Recommendation: re-run ingest for the affected source.
 
 ### 2. Schema drift
 Entity pages missing required frontmatter, wrong type folder, unknown enum values.

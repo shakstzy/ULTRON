@@ -8,6 +8,7 @@ Read-only audit. You only propose.
 - `schema.md`, `learnings.md`, `identity.md`, `nomenclature.md`.
 - Output of `_shell/bin/check-routes.py --workspace finance`.
 - Output of `_shell/bin/build-backlinks.py --dry-run --workspace finance`.
+- Output of `_shell/bin/check-frontmatter.py --workspace finance`.
 
 ## Process
 
@@ -15,6 +16,9 @@ Write `_meta/lint-<YYYY-MM-DD>.md` with sections:
 
 ### 1. Route integrity
 Broken wikilinks: `path:line → broken-target`.
+
+### 1b. Universal frontmatter envelope
+Per `check-frontmatter.py`: list `path → missing keys`. Recommendation: re-run the affected source's ingest robot.
 
 ### 2. Schema drift
 Pages missing required frontmatter (especially `currency:` on accounts/transactions, `last4:` on accounts), wrong type folder, unknown enum values.

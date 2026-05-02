@@ -226,8 +226,16 @@ def _predicate_to_q(p: str) -> str | None:
 
 
 def build_q(includes: list[str], excludes: list[str], after_ts: int | None) -> str:
-    inc_q = [t for t in (_predicate_to_q(p) for p in includes) if t]
-    exc_q = [t for t in (_predicate_to_q(p) for p in excludes) if t]
+    # Dedupe while preserving first-seen order.
+    def _dedup(seq):
+        seen, out = set(), []
+        for x in seq:
+            if x and x not in seen:
+                seen.add(x); out.append(x)
+        return out
+
+    inc_q = _dedup(t for t in (_predicate_to_q(p) for p in includes) if t)
+    exc_q = _dedup(t for t in (_predicate_to_q(p) for p in excludes) if t)
     parts: list[str] = []
     if inc_q:
         parts.append("(" + " OR ".join(inc_q) + ")")
@@ -734,6 +742,7 @@ def main() -> int:
     ap.add_argument("--account", required=True, help="Gmail address, e.g. adithya@outerscope.xyz")
     ap.add_argument("--run-id", default=datetime.now().strftime("%Y-%m-%dT%H-%M-%S"))
     ap.add_argument("--dry-run", action="store_true", help="Fetch + render but write nothing to disk; do not advance cursor.")
+    ap.add_argument("--show", action="store_true", help="(dry-run only) print the rendered frontmatter + body to stdout for inspection.")
     ap.add_argument("--max-items", type=int, default=None, help="Hard cap on threads processed this run.")
     args = ap.parse_args()
 
@@ -891,6 +900,12 @@ def main() -> int:
                     f"(hash={content_hash[:24]}{'…' if len(content_hash) > 24 else ''}, "
                     f"already_in_ledger={already})\n"
                 )
+                # In dry-run, print full content to stdout so the operator can
+                # inspect what WOULD be written.
+                if args.show:
+                    print(f"\n========== DRY-RUN ws={ws} path={rel} ==========")
+                    print(content)
+                    print("========== END DRY-RUN ==========\n")
                 written_per_ws[ws] = written_per_ws.get(ws, 0) + 1
                 continue
 

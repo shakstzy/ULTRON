@@ -110,9 +110,10 @@ def test_predicate_to_q_translations() -> None:
         "label:Eclipse/Investors": "label:Eclipse/Investors",
         "from:*@eclipse.audio": "from:eclipse.audio",
         "to:*@eclipse.audio": "to:eclipse.audio",
-        "from:noreply@*": None,            # post-`@` empty -> untranslatable
+        "from:noreply@*": "from:noreply",            # best-effort: drop trailing wildcard
+        "from:*@*": None,                            # all-wildcard -> drop
         "subject:contains:Q3 deck": 'subject:"Q3 deck"',
-        "subject:regex:^Re:.*": None,       # untranslatable to q=
+        "subject:regex:^Re:.*": None,                # untranslatable to q=
         "any:foo": None,
         "": None,
     }
@@ -129,8 +130,8 @@ def test_build_q_union_dedup_under_limit() -> None:
     q = ingest_gmail.build_q(inc, exc, after_ts=1700000000)
     # OR of translatable includes
     assert "(label:Eclipse OR from:eclipse.audio OR to:eclipse.audio OR label:INBOX)" in q, q
-    # excludes appear as -clauses (untranslatable from:noreply@* dropped)
-    for needle in ("-label:SPAM", "-label:TRASH", "-label:Eclipse"):
+    # excludes appear as -clauses
+    for needle in ("-label:SPAM", "-label:TRASH", "-label:Eclipse", "-from:noreply"):
         assert needle in q, f"missing {needle!r} in {q!r}"
     # universal hardening
     assert "-in:trash" in q and "-in:spam" in q and "after:1700000000" in q

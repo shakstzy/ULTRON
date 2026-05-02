@@ -1,3 +1,10 @@
+---
+workspace: eclipse
+wiki: true
+exclude_from_super_graphify: false
+ingest_unrouted_default: route_to_main
+---
+
 # Eclipse — Workspace Router
 
 You are in workspace `eclipse` — Eclipse Labs operating context.

@@ -1,3 +1,10 @@
+---
+workspace: finance
+wiki: true
+exclude_from_super_graphify: false
+ingest_unrouted_default: skip
+---
+
 # Finance — Workspace Router
 
 You are in workspace `finance` — Adithya's accounts, transactions, investments, taxes, and financial goals.

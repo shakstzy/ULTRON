@@ -1,3 +1,10 @@
+---
+workspace: personal
+wiki: true
+exclude_from_super_graphify: false
+ingest_unrouted_default: route_to_main
+---
+
 # Personal — Workspace Router
 
 You are in workspace `personal` — Adithya's personal life, outside of work.

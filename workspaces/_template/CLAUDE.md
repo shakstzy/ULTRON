@@ -1,3 +1,10 @@
+---
+workspace: <workspace-slug>
+wiki: true                              # set false for pipeline-only workspaces
+exclude_from_super_graphify: false      # default false; set true for private workspaces
+ingest_unrouted_default: route_to_main  # or "skip" — overrides source default
+---
+
 # <Workspace Name> — Workspace Router
 
 You are in workspace `<workspace-slug>` — <one-line domain description, populated at bootstrap>.

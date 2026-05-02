@@ -1,3 +1,10 @@
+---
+workspace: health
+wiki: true
+exclude_from_super_graphify: false
+ingest_unrouted_default: skip
+---
+
 # Health — Workspace Router
 
 You are in workspace `health` — Adithya's health, fitness, nutrition, sleep, and medical context.

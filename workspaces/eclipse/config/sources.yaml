@@ -1,67 +1,29 @@
-# Eclipse — declared ingestion sources
-#
-# NOTE: ingest is currently deferred. Sources are declared but ingest scripts
-# will skip cleanly (no-op) until credentials are provisioned in
-# `_credentials/<source>-eclipse.json`. See _credentials/README.md.
+# SMOKE-TEST CONFIG — replace with agent-extracted schema before bulk historical ingest.
+# Phase 3 starter: only the outerscope account is wired live.
 
 workspace: eclipse
 wiki: true
 
 sources:
-  - id: gmail-eclipse
-    type: gmail
-    bin: ingest-gmail.py
-    config:
-      account: adithya@eclipse.builders
-      labels:
-        - "Eclipse"
-        - "Inbox"
-      exclude_labels:
-        - "Promotions"
-        - "Spam"
-      lookback_days: 1
-      lookback_days_initial: 365
-    output_path: raw/gmail/{YYYY-MM}/
+  gmail:
+    accounts:
+      - account: adithya@outerscope.xyz
+        lookback_days_initial: 365
+        api_query:
+          include:
+            - "label:Eclipse"
+            - "from:*@eclipse.audio"
+            - "to:*@eclipse.audio"
+          exclude:
+            - "from:noreply@*"
+            - "label:SPAM"
+            - "label:TRASH"
 
-  - id: slack-eclipse
-    type: slack
-    bin: ingest-slack.py
-    config:
-      workspace_id: T04472N6YUU
-      channels:
-        - "general"
-        - "deals"
-        - "vendors"
-        - "audio-qa"
-      include_dms_with:
-        - sydney
-        - julian
-        - kayla
-        - emmett
-      lookback_hours: 24
-    output_path: raw/slack/{YYYY-MM}/
-
-  - id: drive-eclipse
-    type: drive
-    bin: ingest-drive.py
-    config:
-      account: adithya@eclipse.builders
-      folders:
-        - "Eclipse Labs / Sales"
-        - "Eclipse Labs / Vendors"
-        - "Eclipse Labs / Internal"
-      mime_types:
-        - "application/vnd.google-apps.document"
-        - "application/pdf"
-      lookback_days: 7
-    output_path: raw/drive/{YYYY-MM}/
-
-  - id: manual-notes
-    type: manual
-    config:
-      watch_path: raw/manual/_inbox/
-      after_ingest: move_to_dated_subdir
-    output_path: raw/manual/{YYYY-MM}/
+  slack: []        # deferred — credentials wired but ingest disabled in Phase 3
+  drive: []        # deferred
+  manual:
+    watch_path: raw/manual/_inbox/
+    after_ingest: move_to_dated_subdir
 
 global_settings:
   attachments_inline: true

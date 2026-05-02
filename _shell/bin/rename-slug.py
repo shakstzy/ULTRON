@@ -147,6 +147,7 @@ def parse_args() -> argparse.Namespace:
     ap.add_argument("new")
     ap.add_argument("--type", dest="type_")
     ap.add_argument("--workspace")
+    ap.add_argument("--dry-run", action="store_true", help="Print what would change without applying.")
     return ap.parse_args()
 
 
@@ -158,7 +159,6 @@ def main() -> int:
         return 0
 
     # 1. Move the canonical file, refusing to overwrite.
-    moved_path: Path | None = None
     if args.type_ and args.workspace:
         src = ULTRON_ROOT / "workspaces" / args.workspace / "wiki" / "entities" / args.type_ / f"{args.old}.md"
         dst = ULTRON_ROOT / "workspaces" / args.workspace / "wiki" / "entities" / args.type_ / f"{args.new}.md"
@@ -176,10 +176,12 @@ def main() -> int:
         if dst.exists():
             sys.stderr.write(f"rename-slug: destination already exists: {dst}\n")
             return 2
-        dst.parent.mkdir(parents=True, exist_ok=True)
-        src.rename(dst)
-        moved_path = dst
-        print(f"moved: {src} → {dst}")
+        if args.dry_run:
+            print(f"[dry-run] would move: {src} → {dst}")
+        else:
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            src.rename(dst)
+            print(f"moved: {src} → {dst}")
     elif src is not None:
         sys.stderr.write(f"rename-slug: source not found: {src} (only patching wikilinks)\n")
 
@@ -193,14 +195,18 @@ def main() -> int:
     for md in scope_dir.rglob("*.md"):
         if should_skip(md):
             continue
-        if patch_file(md, args.old, args.new):
+        if patch_file(md, args.old, args.new, dry_run=args.dry_run):
             patched.append(md)
-    print(f"patched {len(patched)} file(s):")
+    label = "would patch" if args.dry_run else "patched"
+    print(f"{label} {len(patched)} file(s):")
     for p in patched:
         try:
             print(f"  {p.relative_to(ULTRON_ROOT)}")
         except ValueError:
             print(f"  {p}")
+
+    if args.dry_run:
+        return 0
 
     # 3. Rebuild backlinks.
     subprocess.run(

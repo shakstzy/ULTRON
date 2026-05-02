@@ -1,123 +1,156 @@
 #!/usr/bin/env bash
-# graphify-run.sh — cross-workspace graph build using the safishamsi/graphify CLI.
+# graphify-run.sh — Tier 2 (super-merge) for ULTRON's two-tier Graphify model.
 #
-# Adapter notes:
-#   The upstream CLI does NOT expose `graphify build --root --workspace-aware`
-#   as the original spec assumed. Real surface (v5):
-#     - `graphify <path> [flags]` runs only via the `/graphify` skill inside
-#       Claude Code; it is not a plain bash entrypoint.
-#     - The Python CLI exposes post-build subcommands: `query`, `path`,
-#       `explain`, `add`, `watch`, `update`, `cluster-only`, `merge-graphs`, ...
-#     - Outputs land in `./graphify-out/` of the cwd at build time.
+# Tier 1 (per-workspace) is run from inside Claude Code:
+#   /graphify workspaces/<ws>/wiki
+# It produces `workspaces/<ws>/_meta/graphify-out/{graph.json, GRAPH_REPORT.md}`.
 #
-# Strategy (v1):
-#   This script ONLY merges graphs that already exist at
-#   `workspaces/<ws>/graphify-out/graph.json`. It does NOT build per-workspace
-#   graphs itself, because the upstream graphify v5 build path is driven by
-#   Claude Code (`/graphify <path>`) and not by a plain bash entrypoint.
+# Tier 2 (this script) merges those per-workspace graph.json files into a
+# cross-workspace `_graphify/super/{graph.json, GRAPH_REPORT.md}`. The audit
+# stage consumes Tier 2.
 #
-#   To build a per-workspace graph, run `/graphify workspaces/<ws>/wiki` from
-#   inside Claude Code while ULTRON is open. After per-workspace graphs exist,
-#   re-run this script (manually or via the audit stage) to merge them into
-#   `_graphify/GRAPH.json` and emit `_graphify/GRAPH_REPORT.md`.
+# Workspaces with `exclude_from_super_graphify: true` in their CLAUDE.md
+# frontmatter are skipped.
 #
-# This script is best-effort. If `graphify` is not installed, it writes a
-# placeholder report and exits 0 (audit must not block on graphify).
+# Best-effort. If `graphify` is not installed or no Tier-1 graphs exist, the
+# script writes a placeholder report and exits 0 (audit must not block on this).
 set -euo pipefail
 
 ULTRON_ROOT="${ULTRON_ROOT:-$HOME/ULTRON}"
+SUPER_DIR="$ULTRON_ROOT/_graphify/super"
 RUN_DIR="$ULTRON_ROOT/_graphify/runs/$(date +%Y-%m-%d)"
-mkdir -p "$RUN_DIR" "$ULTRON_ROOT/_graphify"
+mkdir -p "$SUPER_DIR" "$RUN_DIR"
 
 if ! command -v graphify >/dev/null 2>&1; then
-  cat > "$ULTRON_ROOT/_graphify/GRAPH_REPORT.md" <<'EOF'
-# Graphify Report — not generated
+  cat > "$SUPER_DIR/GRAPH_REPORT.md" <<'EOF'
+# Super-Graph Report — graphify CLI not installed
 
-`graphify` CLI is not installed in PATH.
+`graphify` is not on PATH. Install:
 
-Install:
 ```
 uv tool install graphifyy && graphify install
 ```
 
-Then re-run `_shell/bin/graphify-run.sh`. Audit will skip the
-"Graphify surprises" check until then.
+Then run `/graphify workspaces/<ws>/wiki` from inside Claude Code per workspace,
+and re-run this script to merge.
 EOF
   echo "graphify: not installed; placeholder report written" >&2
   exit 0
 fi
 
-# Iterate workspaces with wiki/ content.
-PER_WS_GRAPHS=()
-for ws_dir in "$ULTRON_ROOT/workspaces"/*/; do
-  ws_name="$(basename "$ws_dir")"
-  [[ "$ws_name" == _* ]] && continue
-  wiki_dir="$ws_dir/wiki"
-  [[ -d "$wiki_dir" ]] || continue
-  # Skip workspaces with no wiki content.
-  if [[ -z "$(find "$wiki_dir" -name '*.md' -print -quit)" ]]; then
+# Collect per-workspace Tier-1 graphs, honoring exclude_from_super_graphify.
+GRAPHS=()
+EXCLUDED=()
+MISSING=()
+for ws_dir in "$ULTRON_ROOT"/workspaces/*/; do
+  ws="$(basename "$ws_dir")"
+  [[ "$ws" == _* ]] && continue
+
+  ws_claude="$ws_dir/CLAUDE.md"
+  if [[ -f "$ws_claude" ]] && grep -q "^exclude_from_super_graphify: true" "$ws_claude" 2>/dev/null; then
+    EXCLUDED+=("$ws")
     continue
   fi
 
-  ws_graph="$ws_dir/graphify-out/graph.json"
-  if [[ -f "$ws_graph" ]]; then
-    PER_WS_GRAPHS+=("$ws_graph")
+  graph_file="$ws_dir/_meta/graphify-out/graph.json"
+  if [[ -f "$graph_file" ]]; then
+    GRAPHS+=("$graph_file")
+  else
+    MISSING+=("$ws")
   fi
 done
 
-if (( ${#PER_WS_GRAPHS[@]} == 0 )); then
-  cat > "$ULTRON_ROOT/_graphify/GRAPH_REPORT.md" <<'EOF'
-# Graphify Report — no per-workspace graphs found
-
-No `workspaces/<ws>/graphify-out/graph.json` files exist yet.
-
-To build per-workspace graphs, open ULTRON in Claude Code and run:
-```
-/graphify workspaces/<ws>/wiki
-```
-for each workspace. Then re-run this script to merge.
-EOF
-  echo "graphify: no per-workspace graphs; placeholder report written" >&2
+if (( ${#GRAPHS[@]} == 0 )); then
+  {
+    echo "# Super-Graph Report — no per-workspace graphs found"
+    echo
+    echo "Tier-1 graphs (\`workspaces/<ws>/_meta/graphify-out/graph.json\`) do not exist for any workspace."
+    echo
+    echo "Build them by running \`/graphify workspaces/<ws>/wiki\` from inside Claude Code per workspace."
+    if (( ${#MISSING[@]} > 0 )); then
+      echo
+      echo "## Missing per-workspace graphs"
+      for w in "${MISSING[@]}"; do
+        echo "- $w"
+      done
+    fi
+    if (( ${#EXCLUDED[@]} > 0 )); then
+      echo
+      echo "## Excluded from super-graph"
+      for w in "${EXCLUDED[@]}"; do
+        echo "- $w"
+      done
+    fi
+  } > "$SUPER_DIR/GRAPH_REPORT.md"
+  echo "graphify: no per-workspace graphs to merge; placeholder report written"
   exit 0
 fi
 
-# Merge.
-graphify merge-graphs "${PER_WS_GRAPHS[@]}" \
-  --out "$ULTRON_ROOT/_graphify/GRAPH.json" \
-  > "$RUN_DIR/merge.log" 2>&1 || {
-    echo "graphify merge-graphs failed; see $RUN_DIR/merge.log" >&2
-    exit 0
-  }
+if (( ${#GRAPHS[@]} == 1 )); then
+  cp "${GRAPHS[0]}" "$SUPER_DIR/graph.json"
+  {
+    echo "# Super-Graph Report — only one workspace has a Tier-1 graph"
+    echo
+    echo "Copied \`${GRAPHS[0]#$ULTRON_ROOT/}\` to \`_graphify/super/graph.json\` as-is."
+    if (( ${#MISSING[@]} > 0 )); then
+      echo; echo "## Missing per-workspace graphs"
+      for w in "${MISSING[@]}"; do echo "- $w"; done
+    fi
+    if (( ${#EXCLUDED[@]} > 0 )); then
+      echo; echo "## Excluded from super-graph"
+      for w in "${EXCLUDED[@]}"; do echo "- $w"; done
+    fi
+  } > "$SUPER_DIR/GRAPH_REPORT.md"
+  echo "graphify: only one Tier-1 graph; copied through to super/graph.json"
+  exit 0
+fi
 
-# Generate the cross-workspace report. Upstream does not produce a workspace-
-# aware report directly; we emit a thin index pointing to the per-workspace
-# reports plus the merged graph.
+# 2+ graphs: merge.
+if ! graphify merge-graphs "${GRAPHS[@]}" --out "$SUPER_DIR/graph.json" \
+      > "$RUN_DIR/merge.log" 2>&1; then
+  echo "graphify merge-graphs failed; see $RUN_DIR/merge.log" >&2
+  exit 0
+fi
+
+# Compose a thin index report.
 {
-  echo "# Graphify Cross-Workspace Report"
+  echo "# Super-Graph Report"
   echo
   echo "Generated $(date -u +%FT%TZ)"
   echo
-  echo "## Per-workspace graphs merged"
+  echo "## Per-workspace graphs merged (${#GRAPHS[@]})"
   echo
-  for g in "${PER_WS_GRAPHS[@]}"; do
-    ws="$(basename "$(dirname "$(dirname "$g")")")"
-    echo "- \`workspaces/$ws/graphify-out/graph.json\`"
+  for g in "${GRAPHS[@]}"; do
+    rel="${g#$ULTRON_ROOT/}"
+    ws="$(basename "$(dirname "$(dirname "$(dirname "$g")")")")"
+    echo "- \`$rel\` ($ws)"
   done
   echo
   echo "## Merged graph"
   echo
-  echo "\`_graphify/GRAPH.json\`"
+  echo "\`_graphify/super/graph.json\`"
   echo
   echo "## Per-workspace reports"
   echo
   for ws_dir in "$ULTRON_ROOT/workspaces"/*/; do
-    ws_name="$(basename "$ws_dir")"
-    [[ "$ws_name" == _* ]] && continue
-    rpt="$ws_dir/graphify-out/GRAPH_REPORT.md"
+    ws="$(basename "$ws_dir")"
+    [[ "$ws" == _* ]] && continue
+    rpt="$ws_dir/_meta/graphify-out/GRAPH_REPORT.md"
     if [[ -f "$rpt" ]]; then
-      echo "- [\`workspaces/$ws_name/graphify-out/GRAPH_REPORT.md\`](../workspaces/$ws_name/graphify-out/GRAPH_REPORT.md)"
+      rel_link="../workspaces/$ws/_meta/graphify-out/GRAPH_REPORT.md"
+      echo "- [$ws]($rel_link)"
     fi
   done
-} > "$ULTRON_ROOT/_graphify/GRAPH_REPORT.md"
+  if (( ${#MISSING[@]} > 0 )); then
+    echo
+    echo "## Missing per-workspace graphs"
+    for w in "${MISSING[@]}"; do echo "- $w"; done
+  fi
+  if (( ${#EXCLUDED[@]} > 0 )); then
+    echo
+    echo "## Excluded from super-graph"
+    for w in "${EXCLUDED[@]}"; do echo "- $w"; done
+  fi
+} > "$SUPER_DIR/GRAPH_REPORT.md"
 
-echo "graphify: $(date -u +%FT%TZ) — see $ULTRON_ROOT/_graphify/GRAPH_REPORT.md"
+echo "graphify: merged ${#GRAPHS[@]} per-workspace graphs → $SUPER_DIR/graph.json"

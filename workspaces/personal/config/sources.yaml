@@ -1,42 +1,28 @@
-# Personal — declared ingestion sources
-#
-# NOTE: ingest is currently deferred. Credentials and account specifics
-# are placeholders until Adithya provisions them.
+# SMOKE-TEST CONFIG — replace with agent-extracted schema before bulk historical ingest.
+# Phase 3 starter: scoped tight to a 7-day inbox window on the outerscope account
+# so a single ingest run lands a meaningful but small sample.
 
 workspace: personal
 wiki: true
 
 sources:
-  - id: gmail-personal
-    type: gmail
-    bin: ingest-gmail.py
-    config:
-      account: adithya.shak.kumar@gmail.com
-      labels:
-        - "Inbox"
-      exclude_labels:
-        - "Promotions"
-        - "Spam"
-        - "Eclipse"
-        - "Outerscope"
-      lookback_days: 1
-      lookback_days_initial: 365
-    output_path: raw/gmail/{YYYY-MM}/
+  gmail:
+    accounts:
+      - account: adithya@outerscope.xyz
+        lookback_days_initial: 7
+        api_query:
+          include:
+            - "label:INBOX"
+          exclude:
+            - "from:noreply@*"
+            - "label:Eclipse"
+            - "label:SPAM"
+            - "label:TRASH"
 
-  - id: imessage-personal
-    type: imessage
-    bin: ingest-imessage.py
-    config:
-      contacts: []   # populate with phone numbers / Apple IDs of personal contacts
-      lookback_hours: 24
-    output_path: raw/imessage/{YYYY-MM}/
-
-  - id: manual-notes
-    type: manual
-    config:
-      watch_path: raw/manual/_inbox/
-      after_ingest: move_to_dated_subdir
-    output_path: raw/manual/{YYYY-MM}/
+  imessage: []     # deferred (skeleton, IMPLEMENTATION_READY=False)
+  manual:
+    watch_path: raw/manual/_inbox/
+    after_ingest: move_to_dated_subdir
 
 global_settings:
   attachments_inline: true

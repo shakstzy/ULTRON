@@ -1,33 +1,18 @@
-# Health — declared ingestion sources
+# Phase 3 starter: Gmail block empty pending schema extraction.
 
 workspace: health
 wiki: true
 
 sources:
-  - id: manual-notes
-    type: manual
-    config:
-      watch_path: raw/manual/_inbox/
-      after_ingest: move_to_dated_subdir
-    output_path: raw/manual/{YYYY-MM}/
+  manual:
+    watch_path: raw/manual/_inbox/
+    after_ingest: move_to_dated_subdir
 
-  - id: apple-health
-    type: manual         # Apple Health exports are dropped manually as XML/CSV; treat as manual for now
-    config:
-      watch_path: raw/apple-health/_inbox/
-      after_ingest: move_to_dated_subdir
-    output_path: raw/apple-health/{YYYY-MM}/
+  apple-health:
+    watch_path: raw/apple-health/_inbox/
+    after_ingest: move_to_dated_subdir
 
-  - id: gmail-health
-    type: gmail
-    bin: ingest-gmail.py
-    config:
-      account: adithya.shak.kumar@gmail.com
-      labels:
-        - "Health"      # apply this label in Gmail to lab/doctor mail
-      lookback_days: 1
-      lookback_days_initial: 365
-    output_path: raw/gmail/{YYYY-MM}/
+  gmail: []   # Pending schema extraction — health-relevant Gmail rules unknown.
 
 global_settings:
   attachments_inline: true

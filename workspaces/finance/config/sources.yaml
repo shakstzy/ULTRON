@@ -1,33 +1,18 @@
-# Finance — declared ingestion sources
+# Phase 3 starter: Gmail block empty pending schema extraction.
 
 workspace: finance
 wiki: true
 
 sources:
-  - id: gmail-finance
-    type: gmail
-    bin: ingest-gmail.py
-    config:
-      account: adithya.shak.kumar@gmail.com
-      labels:
-        - "Finance"        # apply this label in Gmail to financial mail
-      lookback_days: 1
-      lookback_days_initial: 365
-    output_path: raw/gmail/{YYYY-MM}/
+  gmail: []           # Pending schema extraction — finance-relevant Gmail rules unknown.
 
-  - id: plaid-export
-    type: manual            # Plaid CSV exports dropped manually for now
-    config:
-      watch_path: raw/plaid/_inbox/
-      after_ingest: move_to_dated_subdir
-    output_path: raw/plaid/{YYYY-MM}/
+  plaid-export:
+    watch_path: raw/plaid/_inbox/
+    after_ingest: move_to_dated_subdir
 
-  - id: manual-notes
-    type: manual
-    config:
-      watch_path: raw/manual/_inbox/
-      after_ingest: move_to_dated_subdir
-    output_path: raw/manual/{YYYY-MM}/
+  manual:
+    watch_path: raw/manual/_inbox/
+    after_ingest: move_to_dated_subdir
 
 global_settings:
   attachments_inline: true

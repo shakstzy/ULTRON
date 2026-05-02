@@ -136,7 +136,7 @@ def collect_account_rules(account: str, workspaces_config: dict[str, dict]) -> t
     """
     includes: list[str] = []
     excludes: list[str] = []
-    lookback = GMAIL_INITIAL_LOOKBACK_DAYS_DEFAULT
+    lookback_seen: int | None = None  # None until any workspace specifies a value
 
     for ws, cfg in workspaces_config.items():
         sources = cfg.get("sources")
@@ -160,8 +160,8 @@ def collect_account_rules(account: str, workspaces_config: dict[str, dict]) -> t
                             includes.extend(api.get("include") or [])
                             excludes.extend(api.get("exclude") or [])
                             li = acct.get("lookback_days_initial")
-                            if isinstance(li, int) and li > lookback:
-                                lookback = li
+                            if isinstance(li, int):
+                                lookback_seen = li if lookback_seen is None else max(lookback_seen, li)
             else:
                 # Top-level api_query (no accounts list): apply if any account matches.
                 api = (block.get("api_query") or {}) if isinstance(block, dict) else {}
@@ -184,9 +184,10 @@ def collect_account_rules(account: str, workspaces_config: dict[str, dict]) -> t
                 for lbl in conf.get("exclude_labels") or []:
                     excludes.append(f"label:{lbl}")
                 li = conf.get("lookback_days_initial")
-                if isinstance(li, int) and li > lookback:
-                    lookback = li
+                if isinstance(li, int):
+                    lookback_seen = li if lookback_seen is None else max(lookback_seen, li)
 
+    lookback = lookback_seen if lookback_seen is not None else GMAIL_INITIAL_LOOKBACK_DAYS_DEFAULT
     return includes, excludes, lookback
 
 
@@ -195,7 +196,12 @@ def collect_account_rules(account: str, workspaces_config: dict[str, dict]) -> t
 # ---------------------------------------------------------------------------
 
 def _predicate_to_q(p: str) -> str | None:
-    """Translate one ULTRON predicate to a Gmail q= clause; None = untranslatable."""
+    """Translate one ULTRON predicate to a Gmail q= clause; None = untranslatable.
+
+    Translations are best-effort superset filters; route.py applies the precise
+    rule downstream. We drop predicates that would translate to something Gmail
+    interprets ambiguously (anything with a wildcard left in the result).
+    """
     p = p.strip()
     if not p:
         return None
@@ -204,9 +210,14 @@ def _predicate_to_q(p: str) -> str | None:
     if p.startswith(("from:", "to:", "cc:")):
         role, pat = p.split(":", 1)
         pat = pat.strip()
-        # `from:*@eclipse.audio` -> `from:eclipse.audio` (Gmail accepts substrings)
-        pat = pat.lstrip("*").lstrip("@")
-        return f"{role}:{pat}" if pat else None
+        # Strip wildcard noise. Gmail q= treats * literally.
+        # `from:*@eclipse.audio` -> `from:eclipse.audio`
+        # `from:noreply@*`       -> `from:noreply`
+        # `from:*@*`             -> drop (no signal)
+        pat = pat.replace("*", "").strip("@")
+        if not pat or pat.count("*") > 0:
+            return None
+        return f"{role}:{pat}"
     if p.lower().startswith("subject:contains:"):
         val = p.split(":", 2)[2].strip()
         return f'subject:"{val}"' if val else None

@@ -17,10 +17,23 @@ fi
 
 export ULTRON_ROOT="${ULTRON_ROOT:-$HOME/ULTRON}"
 
+SOURCE=""
+ACCOUNT=""
+
 # 1. Stage validation BEFORE any state mutation.
 case "$STAGE" in
   ingest|lint|audit|bootstrap|weekly-review|query) ;;
   apple-contacts-sync|ledger-compact|graphify-supermerge) ;;
+  ingest-source)
+    # Per (source, account) mode. Args: ingest-source <source> <account>.
+    SOURCE="${2:-}"
+    ACCOUNT="${3:-}"
+    WORKSPACE=""   # not workspace-scoped
+    if [[ -z "$SOURCE" ]]; then
+      echo "ingest-source requires <source> <account>" >&2
+      exit 2
+    fi
+    ;;
   *)
     echo "unknown stage: $STAGE" >&2
     exit 2
@@ -39,9 +52,14 @@ esac
 
 # 3. Stage-context existence check.
 # Helper stages don't have a stages/<stage>/CONTEXT.md; they invoke a single
-# script and exit. Skip the check for those.
+# script and exit. ingest-source uses the source's substage CONTEXT.md.
 case "$STAGE" in
-  apple-contacts-sync|ledger-compact|graphify-supermerge)
+  apple-contacts-sync|ledger-compact|graphify-supermerge) ;;
+  ingest-source)
+    if [[ ! -f "$ULTRON_ROOT/_shell/stages/ingest/$SOURCE/CONTEXT.md" ]]; then
+      echo "missing source substage: $ULTRON_ROOT/_shell/stages/ingest/$SOURCE/CONTEXT.md" >&2
+      exit 2
+    fi
     ;;
   *)
     if [[ ! -f "$ULTRON_ROOT/_shell/stages/$STAGE/CONTEXT.md" ]]; then
@@ -76,19 +94,23 @@ if ! flock -n 9; then
 fi
 
 # 7. Resolve claude binary up front so we fail loudly if PATH is wrong (esp. under launchd).
-# Helper stages (apple-contacts-sync, ledger-compact, graphify-supermerge) don't invoke claude.
+# Stages that ACTUALLY call claude need the binary. Everything else doesn't.
+NEEDS_CLAUDE=0
 case "$STAGE" in
-  apple-contacts-sync|ledger-compact|graphify-supermerge)
-    CLAUDE_BIN=""
-    ;;
-  *)
-    CLAUDE_BIN="${CLAUDE_BIN:-$(command -v claude || true)}"
-    if [[ -z "$CLAUDE_BIN" ]]; then
-      echo "ultron: 'claude' CLI not found on PATH ($PATH). Set CLAUDE_BIN or add /opt/homebrew/bin to PATH." >&2
-      exit 2
-    fi
+  lint|audit|bootstrap|weekly-review|query|ingest)
+    NEEDS_CLAUDE=1
     ;;
 esac
+
+if (( NEEDS_CLAUDE )); then
+  CLAUDE_BIN="${CLAUDE_BIN:-$(command -v claude || true)}"
+  if [[ -z "$CLAUDE_BIN" ]]; then
+    echo "ultron: 'claude' CLI not found on PATH ($PATH). Set CLAUDE_BIN or add /opt/homebrew/bin to PATH." >&2
+    exit 2
+  fi
+else
+  CLAUDE_BIN=""
+fi
 
 # 8. API budget guard (no-op while mtd_cap_usd is set high; see _shell/budget.yaml)
 if [[ -x "$ULTRON_ROOT/_shell/bin/check-budget.py" ]]; then
@@ -99,25 +121,28 @@ if [[ -x "$ULTRON_ROOT/_shell/bin/check-budget.py" ]]; then
 fi
 
 # 9. Build the prompt: root CLAUDE.md → stage CONTEXT → workspace CLAUDE.md (if scoped).
-# Helper stages don't invoke claude; skip prompt assembly.
+# Only stages that invoke claude need a prompt.
 PROMPT_FILE="$RUN_DIR/prompt.md"
-case "$STAGE" in
-  apple-contacts-sync|ledger-compact|graphify-supermerge) ;;
-  *)
-    {
-      cat "$ULTRON_ROOT/CLAUDE.md"
-      echo; echo "---"; echo
+if (( NEEDS_CLAUDE )); then
+  {
+    cat "$ULTRON_ROOT/CLAUDE.md"
+    echo; echo "---"; echo
+    if [[ "$STAGE" == "ingest-source" ]]; then
+      cat "$ULTRON_ROOT/_shell/stages/ingest/$SOURCE/CONTEXT.md"
+    else
       cat "$ULTRON_ROOT/_shell/stages/${STAGE}/CONTEXT.md"
+    fi
+    echo; echo "---"; echo
+    if [[ -n "$WORKSPACE" && -f "$ULTRON_ROOT/workspaces/$WORKSPACE/CLAUDE.md" ]]; then
+      cat "$ULTRON_ROOT/workspaces/$WORKSPACE/CLAUDE.md"
       echo; echo "---"; echo
-      if [[ -n "$WORKSPACE" && -f "$ULTRON_ROOT/workspaces/$WORKSPACE/CLAUDE.md" ]]; then
-        cat "$ULTRON_ROOT/workspaces/$WORKSPACE/CLAUDE.md"
-        echo; echo "---"; echo
-      fi
-      echo "RUN_ID: $RUN_ID"
-      echo "WORKSPACE: ${WORKSPACE:-<cross-workspace>}"
-    } > "$PROMPT_FILE"
-    ;;
-esac
+    fi
+    echo "RUN_ID: $RUN_ID"
+    echo "WORKSPACE: ${WORKSPACE:-<cross-workspace>}"
+    [[ -n "$SOURCE" ]] && echo "SOURCE: $SOURCE"
+    [[ -n "$ACCOUNT" ]] && echo "ACCOUNT: $ACCOUNT"
+  } > "$PROMPT_FILE"
+fi
 
 # claude_invoke: non-interactive (--print) call.
 claude_invoke() {

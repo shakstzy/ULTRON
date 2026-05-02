@@ -1,18 +1,18 @@
-# Finance — declared launchd cadence
+# Finance — declared launchd cadence. Conservative defaults; Adithya tunes
+# after wiring real Plaid / brokerage feeds.
 
 workspace: finance
 
-jobs:
-  - name: ingest-finance
-    stage: ingest
-    schedule:
-      hour: 2
-      minute: 45
-    plist_label: com.adithya.ultron.ingest-finance
+sources:
+  manual:
+    cron: "0 4 * * *"
+  gmail:
+    cron: "0 7 * * *"                # Daily 07:00 — finance-labeled mail
+    accounts:
+      - adithya.shak.kumar@gmail.com
 
-  - name: lint-finance
-    stage: lint
-    schedule:
-      hour: 4
-      minute: 15
-    plist_label: com.adithya.ultron.lint-finance
+workspace_jobs:
+  lint:
+    cron: "30 4 * * *"               # Daily 04:30
+  graphify:
+    cron: "0 */12 * * *"

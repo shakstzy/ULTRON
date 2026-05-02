@@ -1,18 +1,20 @@
-# Health — declared launchd cadence
+# Health — declared launchd cadence. Sources are mostly manual drops or
+# weekly batch (Apple Health export). Cadence reflects that.
 
 workspace: health
 
-jobs:
-  - name: ingest-health
-    stage: ingest
-    schedule:
-      hour: 2
-      minute: 40
-    plist_label: com.adithya.ultron.ingest-health
+sources:
+  manual:
+    cron: "0 4 * * *"                # Daily 04:00 — pick up overnight inbox drops
+  apple-health:
+    cron: "0 5 * * 0"                # Sundays 05:00 — pick up weekly export
+  gmail:
+    cron: "0 6 * * *"                # Daily 06:00 — health-labeled mail only
+    accounts:
+      - adithya.shak.kumar@gmail.com
 
-  - name: lint-health
-    stage: lint
-    schedule:
-      hour: 4
-      minute: 10
-    plist_label: com.adithya.ultron.lint-health
+workspace_jobs:
+  lint:
+    cron: "20 4 * * *"               # Daily 04:20
+  graphify:
+    cron: "0 */12 * * *"             # Twice a day; less data than work workspaces

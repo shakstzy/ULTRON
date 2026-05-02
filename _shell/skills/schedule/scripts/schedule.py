@@ -95,12 +95,13 @@ PLIST_TEMPLATE = """<?xml version="1.0" encoding="UTF-8"?>
 
 
 def _account_slug(account: str) -> str:
-    """foo@bar.baz → foo-bar."""
+    """foo.bar@baz.qux → foo-bar-baz. Replaces dots in local part with hyphens."""
     if "@" not in account:
-        return account.lower()
+        return re.sub(r"[^a-z0-9-]", "-", account.lower()).strip("-")
     local, _, domain = account.partition("@")
     domain_stem = domain.split(".", 1)[0]
-    return f"{local}-{domain_stem}".lower()
+    local_clean = re.sub(r"[^a-z0-9-]", "-", local.lower()).strip("-")
+    return f"{local_clean}-{domain_stem.lower()}"
 
 
 def collect_jobs() -> list[dict]:

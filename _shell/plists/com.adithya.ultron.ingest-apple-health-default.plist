@@ -2,17 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-  <key>Label</key><string>com.adithya.ultron.lint-eclipse</string>
+  <key>Label</key><string>com.adithya.ultron.ingest-apple-health-default</string>
   <key>ProgramArguments</key>
   <array>
     <string>/bin/bash</string>
     <string>-c</string>
-    <string>flock -n /tmp/com.adithya.ultron.lint-eclipse.lock /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh lint eclipse >> /Users/shakstzy/ULTRON/_logs/com.adithya.ultron.lint-eclipse.log 2>&amp;1</string>
+    <string>flock -n /tmp/com.adithya.ultron.ingest-apple-health-default.lock /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh ingest apple-health default >> /Users/shakstzy/ULTRON/_logs/com.adithya.ultron.ingest-apple-health-default.log 2>&amp;1</string>
   </array>
   <key>StartCalendarInterval</key>
 <dict>
-  <key>Hour</key><integer>4</integer>
+  <key>Hour</key><integer>5</integer>
   <key>Minute</key><integer>0</integer>
+  <key>Weekday</key><integer>0</integer>
 </dict>
   <key>EnvironmentVariables</key>
   <dict>
@@ -20,8 +21,8 @@
     <key>ULTRON_ROOT</key><string>/Users/shakstzy/ULTRON</string>
     <key>HOME</key><string>/Users/shakstzy</string>
   </dict>
-  <key>StandardOutPath</key><string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.lint-eclipse.out.log</string>
-  <key>StandardErrorPath</key><string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.lint-eclipse.err.log</string>
+  <key>StandardOutPath</key><string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.ingest-apple-health-default.out.log</string>
+  <key>StandardErrorPath</key><string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.ingest-apple-health-default.err.log</string>
   <key>WorkingDirectory</key><string>/Users/shakstzy/ULTRON</string>
   <key>RunAtLoad</key><false/>
 </dict>

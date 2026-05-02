@@ -1,18 +1,17 @@
-# Personal — declared launchd cadence
+# Personal — declared launchd cadence.
 
 workspace: personal
 
-jobs:
-  - name: ingest-personal
-    stage: ingest
-    schedule:
-      hour: 2
-      minute: 35
-    plist_label: com.adithya.ultron.ingest-personal
+sources:
+  gmail:
+    cron: "0 */3 * * *"              # Every 3 hours (less aggressive than work)
+    accounts:
+      - adithya.shak.kumar@gmail.com
+  imessage:
+    cron: "0 */6 * * *"              # Every 6 hours; chat.db is local
 
-  - name: lint-personal
-    stage: lint
-    schedule:
-      hour: 4
-      minute: 5
-    plist_label: com.adithya.ultron.lint-personal
+workspace_jobs:
+  lint:
+    cron: "10 4 * * *"               # Daily 04:10
+  graphify:
+    cron: "0 */6 * * *"

@@ -6,24 +6,24 @@
   <key>ProgramArguments</key>
   <array>
     <string>/bin/bash</string>
-    <string>-lc</string>
-    <string>cd /Users/shakstzy/ULTRON &amp;&amp; _shell/bin/run-stage.sh weekly-review</string>
+    <string>-c</string>
+    <string>flock -n /tmp/com.adithya.ultron.weekly-review.lock /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh weekly-review >> /Users/shakstzy/ULTRON/_logs/com.adithya.ultron.weekly-review.log 2>&amp;1</string>
   </array>
   <key>StartCalendarInterval</key>
-  <array><dict>
-    <key>Weekday</key><integer>0</integer>
-    <key>Hour</key><integer>7</integer>
-    <key>Minute</key><integer>0</integer>
-  </dict></array>
+<dict>
+  <key>Hour</key><integer>7</integer>
+  <key>Minute</key><integer>0</integer>
+  <key>Weekday</key><integer>0</integer>
+</dict>
   <key>EnvironmentVariables</key>
   <dict>
     <key>PATH</key><string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
     <key>ULTRON_ROOT</key><string>/Users/shakstzy/ULTRON</string>
     <key>HOME</key><string>/Users/shakstzy</string>
   </dict>
-  <key>StandardOutPath</key><string>/Users/shakstzy/ULTRON/_logs/weekly-review.out.log</string>
-  <key>StandardErrorPath</key><string>/Users/shakstzy/ULTRON/_logs/weekly-review.err.log</string>
-  <key>RunAtLoad</key><false/>
+  <key>StandardOutPath</key><string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.weekly-review.out.log</string>
+  <key>StandardErrorPath</key><string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.weekly-review.err.log</string>
   <key>WorkingDirectory</key><string>/Users/shakstzy/ULTRON</string>
+  <key>RunAtLoad</key><false/>
 </dict>
 </plist>

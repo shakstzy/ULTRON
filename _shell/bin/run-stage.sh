@@ -20,6 +20,7 @@ export ULTRON_ROOT="${ULTRON_ROOT:-$HOME/ULTRON}"
 # 1. Stage validation BEFORE any state mutation.
 case "$STAGE" in
   ingest|lint|audit|bootstrap|weekly-review|query) ;;
+  apple-contacts-sync|ledger-compact|graphify-supermerge) ;;
   *)
     echo "unknown stage: $STAGE" >&2
     exit 2
@@ -37,10 +38,18 @@ case "$STAGE" in
 esac
 
 # 3. Stage-context existence check.
-if [[ ! -f "$ULTRON_ROOT/_shell/stages/$STAGE/CONTEXT.md" ]]; then
-  echo "missing stage CONTEXT.md: $ULTRON_ROOT/_shell/stages/$STAGE/CONTEXT.md" >&2
-  exit 2
-fi
+# Helper stages don't have a stages/<stage>/CONTEXT.md; they invoke a single
+# script and exit. Skip the check for those.
+case "$STAGE" in
+  apple-contacts-sync|ledger-compact|graphify-supermerge)
+    ;;
+  *)
+    if [[ ! -f "$ULTRON_ROOT/_shell/stages/$STAGE/CONTEXT.md" ]]; then
+      echo "missing stage CONTEXT.md: $ULTRON_ROOT/_shell/stages/$STAGE/CONTEXT.md" >&2
+      exit 2
+    fi
+    ;;
+esac
 
 # 4. Workspace router check (for stages that scope to a workspace, except bootstrap which CREATES the workspace).
 if [[ "$STAGE" != "bootstrap" && -n "$WORKSPACE" ]]; then
@@ -67,11 +76,19 @@ if ! flock -n 9; then
 fi
 
 # 7. Resolve claude binary up front so we fail loudly if PATH is wrong (esp. under launchd).
-CLAUDE_BIN="${CLAUDE_BIN:-$(command -v claude || true)}"
-if [[ -z "$CLAUDE_BIN" ]]; then
-  echo "ultron: 'claude' CLI not found on PATH ($PATH). Set CLAUDE_BIN or add /opt/homebrew/bin to PATH." >&2
-  exit 2
-fi
+# Helper stages (apple-contacts-sync, ledger-compact, graphify-supermerge) don't invoke claude.
+case "$STAGE" in
+  apple-contacts-sync|ledger-compact|graphify-supermerge)
+    CLAUDE_BIN=""
+    ;;
+  *)
+    CLAUDE_BIN="${CLAUDE_BIN:-$(command -v claude || true)}"
+    if [[ -z "$CLAUDE_BIN" ]]; then
+      echo "ultron: 'claude' CLI not found on PATH ($PATH). Set CLAUDE_BIN or add /opt/homebrew/bin to PATH." >&2
+      exit 2
+    fi
+    ;;
+esac
 
 # 8. API budget guard (no-op while mtd_cap_usd is set high; see _shell/budget.yaml)
 if [[ -x "$ULTRON_ROOT/_shell/bin/check-budget.py" ]]; then
@@ -82,19 +99,25 @@ if [[ -x "$ULTRON_ROOT/_shell/bin/check-budget.py" ]]; then
 fi
 
 # 9. Build the prompt: root CLAUDE.md → stage CONTEXT → workspace CLAUDE.md (if scoped).
+# Helper stages don't invoke claude; skip prompt assembly.
 PROMPT_FILE="$RUN_DIR/prompt.md"
-{
-  cat "$ULTRON_ROOT/CLAUDE.md"
-  echo; echo "---"; echo
-  cat "$ULTRON_ROOT/_shell/stages/${STAGE}/CONTEXT.md"
-  echo; echo "---"; echo
-  if [[ -n "$WORKSPACE" && -f "$ULTRON_ROOT/workspaces/$WORKSPACE/CLAUDE.md" ]]; then
-    cat "$ULTRON_ROOT/workspaces/$WORKSPACE/CLAUDE.md"
-    echo; echo "---"; echo
-  fi
-  echo "RUN_ID: $RUN_ID"
-  echo "WORKSPACE: ${WORKSPACE:-<cross-workspace>}"
-} > "$PROMPT_FILE"
+case "$STAGE" in
+  apple-contacts-sync|ledger-compact|graphify-supermerge) ;;
+  *)
+    {
+      cat "$ULTRON_ROOT/CLAUDE.md"
+      echo; echo "---"; echo
+      cat "$ULTRON_ROOT/_shell/stages/${STAGE}/CONTEXT.md"
+      echo; echo "---"; echo
+      if [[ -n "$WORKSPACE" && -f "$ULTRON_ROOT/workspaces/$WORKSPACE/CLAUDE.md" ]]; then
+        cat "$ULTRON_ROOT/workspaces/$WORKSPACE/CLAUDE.md"
+        echo; echo "---"; echo
+      fi
+      echo "RUN_ID: $RUN_ID"
+      echo "WORKSPACE: ${WORKSPACE:-<cross-workspace>}"
+    } > "$PROMPT_FILE"
+    ;;
+esac
 
 # claude_invoke: non-interactive (--print) call.
 claude_invoke() {
@@ -171,8 +194,27 @@ case "$STAGE" in
       "$(cat "$PROMPT_FILE")" \
       || EC=$?
     ;;
-  weekly-review|query)
+  weekly-review)
+    # 1. Build the structured packet first.
+    python3 "$ULTRON_ROOT/_shell/bin/build-weekly-packet.py" \
+      > "$RUN_DIR/output/packet.log" 2>&1 || true
+    # 2. Hand to Claude for prose synthesis on top.
     claude_invoke "" "$RUN_DIR/output/result.json" "$RUN_DIR/output/stderr.log" || EC=$?
+    ;;
+  query)
+    claude_invoke "" "$RUN_DIR/output/result.json" "$RUN_DIR/output/stderr.log" || EC=$?
+    ;;
+  apple-contacts-sync)
+    python3 "$ULTRON_ROOT/_shell/skills/contacts-sync/scripts/sync.py" \
+      > "$RUN_DIR/output/contacts-sync.log" 2>&1 || EC=$?
+    ;;
+  ledger-compact)
+    python3 "$ULTRON_ROOT/_shell/bin/compact-ledger.py" \
+      > "$RUN_DIR/output/compact-ledger.log" 2>&1 || EC=$?
+    ;;
+  graphify-supermerge)
+    bash "$ULTRON_ROOT/_shell/bin/graphify-run.sh" \
+      > "$RUN_DIR/output/graphify-supermerge.log" 2>&1 || EC=$?
     ;;
 esac
 

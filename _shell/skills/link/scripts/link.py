@@ -71,61 +71,47 @@ def find_page(slug: str, workspace: str | None = None) -> Path | None:
     return None
 
 
-def parse_relationships(text: str) -> tuple[list[dict], int, int]:
-    """Return (edges, start_offset, end_offset) — indices of the relationships block in text."""
-    m_fm = FRONTMATTER_RE.match(text)
-    if not m_fm:
-        return [], 0, 0
-    block = m_fm.group(1)
-    m_rel = RELATIONSHIPS_RE.search(block)
-    if not m_rel:
-        return [], 0, 0
-    edges_block = m_rel.group(1)
-    edges: list[dict] = []
-    for line in edges_block.splitlines():
-        line = line.strip()
-        m_e = EDGE_RE.match(line)
-        if not m_e:
-            continue
-        rel_type = m_e.group(1).strip()
-        target = m_e.group(2).strip()
-        rest = m_e.group(3).strip()
-        kv: dict[str, str] = {}
-        for part in re.split(r",\s*(?=[a-z_]+:)", rest):
-            if ":" not in part:
-                continue
-            k, _, v = part.partition(":")
-            kv[k.strip()] = v.strip().strip('"').strip("'")
-        edges.append({"type": rel_type, "target": target, **kv})
-    fm_start = m_fm.start(1)
-    return edges, fm_start + m_rel.start(), fm_start + m_rel.end()
+def parse_fm(text: str) -> tuple[dict, str]:
+    m = FRONTMATTER_RE.match(text)
+    if not m:
+        return {}, text
+    try:
+        fm = yaml.safe_load(m.group(1)) or {}
+    except yaml.YAMLError as exc:
+        sys.stderr.write(f"link: warning — failed to parse frontmatter ({exc}); treating as empty\n")
+        fm = {}
+    if not isinstance(fm, dict):
+        fm = {}
+    return fm, text[m.end():]
+
+
+def serialize_fm(fm: dict, body: str) -> str:
+    out = yaml.safe_dump(fm, sort_keys=False, allow_unicode=True, default_flow_style=False)
+    return f"---\n{out}---\n" + body.lstrip("\n")
+
+
+def parse_relationships(text: str) -> list[dict]:
+    fm, _body = parse_fm(text)
+    rels = fm.get("relationships")
+    if not isinstance(rels, list):
+        return []
+    out: list[dict] = []
+    for r in rels:
+        if isinstance(r, dict) and "type" in r and "target" in r:
+            out.append(dict(r))
+    return out
 
 
 def write_edges(text: str, edges: list[dict]) -> str:
-    """Replace (or insert) the relationships block."""
-    lines_out = ["relationships:"]
-    for e in edges:
-        kv = ", ".join(f"{k}: {v}" for k, v in e.items())
-        lines_out.append(f"  - {{ {kv} }}")
-    edges_block = "\n".join(lines_out) + "\n"
-
-    m_fm = FRONTMATTER_RE.match(text)
-    if not m_fm:
-        new_fm = f"---\n{edges_block}---\n"
-        return new_fm + text
-    block = m_fm.group(1)
-    m_rel = RELATIONSHIPS_RE.search(block)
-    if m_rel:
-        new_block = block[:m_rel.start()] + edges_block + block[m_rel.end():]
-    else:
-        new_block = block.rstrip() + "\n" + edges_block
-    return f"---\n{new_block}---\n" + text[m_fm.end():].lstrip("\n")
+    fm, body = parse_fm(text)
+    fm["relationships"] = edges
+    return serialize_fm(fm, body)
 
 
 def add_edge(page: Path, edge: dict) -> bool:
     text = page.read_text(errors="ignore")
-    edges, _, _ = parse_relationships(text)
-    if any(e["type"] == edge["type"] and e["target"] == edge["target"] for e in edges):
+    edges = parse_relationships(text)
+    if any(e.get("type") == edge["type"] and e.get("target") == edge["target"] for e in edges):
         return False
     edges.append(edge)
     page.write_text(write_edges(text, edges))
@@ -134,8 +120,8 @@ def add_edge(page: Path, edge: dict) -> bool:
 
 def remove_edge(page: Path, edge: dict) -> bool:
     text = page.read_text(errors="ignore")
-    edges, _, _ = parse_relationships(text)
-    new_edges = [e for e in edges if not (e["type"] == edge["type"] and e["target"] == edge["target"])]
+    edges = parse_relationships(text)
+    new_edges = [e for e in edges if not (e.get("type") == edge["type"] and e.get("target") == edge["target"])]
     if len(new_edges) == len(edges):
         return False
     page.write_text(write_edges(text, new_edges))
@@ -155,7 +141,7 @@ def cmd_add(args: argparse.Namespace) -> int:
     today = date.today().isoformat()
     fwd_edge = {"type": args.relation, "target": args.object, "asserted": today}
     if args.note:
-        fwd_edge["note"] = f'"{args.note}"'
+        fwd_edge["note"] = args.note
 
     if add_edge(subject_page, fwd_edge):
         print(f"added: {args.subject} -- {args.relation} --> {args.object}")
@@ -173,7 +159,7 @@ def cmd_add(args: argparse.Namespace) -> int:
     if inverse:
         rev_edge = {"type": inverse, "target": args.subject, "asserted": today}
         if args.note:
-            rev_edge["note"] = f'"{args.note}"'
+            rev_edge["note"] = args.note
         if add_edge(object_page, rev_edge):
             print(f"added (reciprocal): {args.object} -- {inverse} --> {args.subject}")
 
@@ -205,7 +191,7 @@ def cmd_list(args: argparse.Namespace) -> int:
     if p is None:
         sys.stderr.write(f"link: not found: {args.slug}\n")
         return 1
-    edges, _, _ = parse_relationships(p.read_text(errors="ignore"))
+    edges = parse_relationships(p.read_text(errors="ignore"))
     if not edges:
         print(f"{args.slug}: no relationships")
         return 0

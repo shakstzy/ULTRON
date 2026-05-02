@@ -2,33 +2,45 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-  <key>Label</key><string>com.adithya.ultron.graphify-health</string>
-  <key>ProgramArguments</key>
-  <array>
-    <string>/bin/bash</string>
-    <string>-c</string>
-    <string>flock -n /tmp/com.adithya.ultron.graphify-health.lock /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh graphify health >> /Users/shakstzy/ULTRON/_logs/com.adithya.ultron.graphify-health.log 2>&amp;1</string>
-  </array>
-  <key>StartCalendarInterval</key>
-<array>
-  <dict>
-    <key>Hour</key><integer>0</integer>
-    <key>Minute</key><integer>0</integer>
-  </dict>
-  <dict>
-    <key>Hour</key><integer>12</integer>
-    <key>Minute</key><integer>0</integer>
-  </dict>
-</array>
-  <key>EnvironmentVariables</key>
-  <dict>
-    <key>PATH</key><string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
-    <key>ULTRON_ROOT</key><string>/Users/shakstzy/ULTRON</string>
-    <key>HOME</key><string>/Users/shakstzy</string>
-  </dict>
-  <key>StandardOutPath</key><string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.graphify-health.out.log</string>
-  <key>StandardErrorPath</key><string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.graphify-health.err.log</string>
-  <key>WorkingDirectory</key><string>/Users/shakstzy/ULTRON</string>
-  <key>RunAtLoad</key><false/>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>HOME</key>
+		<string>/Users/shakstzy</string>
+		<key>PATH</key>
+		<string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+		<key>ULTRON_ROOT</key>
+		<string>/Users/shakstzy/ULTRON</string>
+	</dict>
+	<key>Label</key>
+	<string>com.adithya.ultron.graphify-health</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/bin/bash</string>
+		<string>-c</string>
+		<string>flock -n /tmp/com.adithya.ultron.graphify-health.lock /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh graphify health &gt;&gt; /Users/shakstzy/ULTRON/_logs/com.adithya.ultron.graphify-health.log 2&gt;&amp;1</string>
+	</array>
+	<key>RunAtLoad</key>
+	<false/>
+	<key>StandardErrorPath</key>
+	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.graphify-health.err.log</string>
+	<key>StandardOutPath</key>
+	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.graphify-health.out.log</string>
+	<key>StartCalendarInterval</key>
+	<array>
+		<dict>
+			<key>Hour</key>
+			<integer>0</integer>
+			<key>Minute</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Hour</key>
+			<integer>12</integer>
+			<key>Minute</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>WorkingDirectory</key>
+	<string>/Users/shakstzy/ULTRON</string>
 </dict>
 </plist>

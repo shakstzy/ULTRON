@@ -55,13 +55,32 @@ tell application "Contacts"
         end repeat
         set _modified to ""
         try
-            set _modified to (modification date of p) as string
+            set _modified to my isoDate(modification date of p)
         end try
         set entry to "{\"name\":\"" & my escape(_name) & "\",\"emails\":" & my listToJson(_emails) & ",\"phones\":" & my listToJson(_phones) & ",\"modified\":\"" & my escape(_modified) & "\"}"
         set contactList to contactList & {entry}
     end repeat
-    return contactList as string
+    set AppleScript's text item delimiters to linefeed
+    set _out to contactList as string
+    set AppleScript's text item delimiters to ""
+    return _out
 end tell
+
+on isoDate(d)
+    set y to year of d as string
+    set m to (month of d as integer)
+    set dd to day of d
+    set hh to hours of d
+    set mm to minutes of d
+    set ss to seconds of d
+    return y & "-" & my pad(m) & "-" & my pad(dd) & "T" & my pad(hh) & ":" & my pad(mm) & ":" & my pad(ss)
+end isoDate
+
+on pad(n)
+    set s to n as string
+    if (count of s) < 2 then set s to "0" & s
+    return s
+end pad
 
 on escape(s)
     set s to my replaceText(s, "\\", "\\\\")
@@ -113,18 +132,15 @@ def query_contacts() -> list[dict] | None:
     if not out:
         return []
 
-    # The AppleScript joins entries with ", " but each entry is JSON-shaped.
-    # Split on },\s*{ boundaries (tolerant).
     entries: list[dict] = []
-    raw_pieces = re.split(r"(?<=\}),\s*(?=\{)", out)
-    for piece in raw_pieces:
-        piece = piece.strip()
-        if not piece:
+    for line in out.splitlines():
+        line = line.strip()
+        if not line:
             continue
         try:
-            entries.append(json.loads(piece))
+            entries.append(json.loads(line))
         except json.JSONDecodeError:
-            sys.stderr.write(f"contacts-sync: failed to parse contact entry: {piece[:80]}\n")
+            sys.stderr.write(f"contacts-sync: failed to parse contact entry: {line[:80]}\n")
     return entries
 
 
@@ -134,6 +150,17 @@ def kebab_ascii(s: str, max_len: int = 40) -> str:
     s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode("ascii")
     s = re.sub(r"[^a-zA-Z0-9]+", "-", s.strip()).strip("-").lower()
     return s[:max_len].rstrip("-") or "unknown"
+
+
+def _disambiguator(contact: dict) -> str:
+    """Stable 4-hex-char tag derived from the contact's identifiers."""
+    parts = [
+        (contact.get("name") or "").strip().lower(),
+        ",".join(sorted(e.lower() for e in (contact.get("emails") or []))),
+        ",".join(sorted(re.sub(r"\D", "", p) for p in (contact.get("phones") or []))),
+    ]
+    raw = "|".join(parts).encode("utf-8")
+    return hashlib.blake2b(raw, digest_size=2).hexdigest()
 
 
 def derive_slug(contact: dict) -> str:
@@ -198,7 +225,7 @@ FRONTMATTER_RE = re.compile(r"^---\s*\n.+?\n---\s*\n?", re.DOTALL)
 
 
 def upsert(contact: dict, dry_run: bool) -> str:
-    slug = derive_slug(contact)
+    slug = contact.get("__slug_override") or derive_slug(contact)
     PEOPLE_DIR.mkdir(parents=True, exist_ok=True)
     out_path = PEOPLE_DIR / f"{slug}.md"
     new_fm = render_frontmatter(contact, slug)
@@ -234,23 +261,31 @@ def main() -> int:
 
     counts = {"new": 0, "updated": 0, "unchanged": 0}
     seen_slugs: dict[str, dict] = {}
-    conflicts: list[tuple[str, dict, dict]] = []
+    disambiguated: list[tuple[str, str, dict]] = []
 
     for c in contacts:
         slug = derive_slug(c)
         if slug in seen_slugs:
-            conflicts.append((slug, seen_slugs[slug], c))
-            continue
+            tag = _disambiguator(c)
+            new_slug = f"{slug}-{tag}"[:40]
+            # extremely unlikely, but keep extending if even the disambig collides
+            i = 1
+            while new_slug in seen_slugs:
+                new_slug = f"{slug}-{tag}-{i}"[:40]
+                i += 1
+            disambiguated.append((slug, new_slug, c))
+            slug = new_slug
         seen_slugs[slug] = c
+        c["__slug_override"] = slug
         counts[upsert(c, args.dry_run)] += 1
 
     sys.stderr.write(
         f"contacts-sync: {len(contacts)} total, "
         f"{counts['new']} new, {counts['updated']} updated, "
-        f"{counts['unchanged']} unchanged, {len(conflicts)} conflicts\n"
+        f"{counts['unchanged']} unchanged, {len(disambiguated)} disambiguated\n"
     )
-    for slug, a, b in conflicts:
-        sys.stderr.write(f"  conflict: slug={slug} a={a.get('name')} b={b.get('name')}\n")
+    for original, new_slug, c in disambiguated:
+        sys.stderr.write(f"  collision: {original!r} → {new_slug!r} (name={c.get('name')!r})\n")
 
     if not args.dry_run:
         subprocess.run(

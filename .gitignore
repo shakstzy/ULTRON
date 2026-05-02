@@ -2,6 +2,7 @@
 
 # Run state, ephemeral
 _shell/runs/
+_shell/cursors/
 _logs/
 _graphify/runs/
 

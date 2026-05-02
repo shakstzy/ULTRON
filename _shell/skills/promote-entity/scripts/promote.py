@@ -16,6 +16,8 @@ import sys
 from datetime import date, datetime, timezone
 from pathlib import Path
 
+import yaml
+
 ULTRON_ROOT = Path(os.environ.get("ULTRON_ROOT", str(Path.home() / "ULTRON")))
 
 
@@ -28,37 +30,19 @@ def parse_frontmatter(text: str) -> tuple[dict, str]:
         return {}, text
     block = m.group(1)
     body = text[m.end():]
-    fm: dict[str, object] = {}
-    for line in block.splitlines():
-        line = line.rstrip()
-        if not line or ":" not in line:
-            continue
-        if line[0] in (" ", "\t", "-"):
-            continue   # nested values handled crudely; promote skill doesn't need full parser
-        key, _, val = line.partition(":")
-        fm[key.strip()] = val.strip().strip('"').strip("'")
+    try:
+        fm = yaml.safe_load(block) or {}
+    except yaml.YAMLError as exc:
+        sys.stderr.write(f"promote: warning — failed to parse frontmatter ({exc}); treating as empty\n")
+        fm = {}
+    if not isinstance(fm, dict):
+        fm = {}
     return fm, body
 
 
 def serialize_frontmatter(fm: dict) -> str:
-    out_lines = ["---"]
-    for k, v in fm.items():
-        if isinstance(v, list):
-            if not v:
-                out_lines.append(f"{k}: []")
-            else:
-                out_lines.append(f"{k}:")
-                for item in v:
-                    if isinstance(item, dict):
-                        out_lines.append("  -")
-                        for ik, iv in item.items():
-                            out_lines.append(f"    {ik}: {iv}")
-                    else:
-                        out_lines.append(f"  - {item}")
-        else:
-            out_lines.append(f"{k}: {v}")
-    out_lines.append("---")
-    return "\n".join(out_lines) + "\n"
+    body = yaml.safe_dump(fm, sort_keys=False, allow_unicode=True, default_flow_style=False)
+    return f"---\n{body}---\n"
 
 
 def find_source_pages(slug: str, type_: str | None) -> list[tuple[str, Path]]:
@@ -92,7 +76,11 @@ def merge_content(sources: list[tuple[str, Path]]) -> tuple[str, list[str]]:
         fm, body = parse_frontmatter(text)
         for k in ("aliases", "alias"):
             v = fm.get(k)
-            if isinstance(v, str) and v:
+            if isinstance(v, list):
+                for a in v:
+                    if isinstance(a, str) and a.strip():
+                        aliases.add(a.strip())
+            elif isinstance(v, str) and v:
                 for a in v.strip("[] ").split(","):
                     a = a.strip().strip('"').strip("'")
                     if a:

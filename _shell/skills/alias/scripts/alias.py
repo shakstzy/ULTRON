@@ -15,6 +15,8 @@ import sys
 from datetime import date
 from pathlib import Path
 
+import yaml
+
 ULTRON_ROOT = Path(os.environ.get("ULTRON_ROOT", str(Path.home() / "ULTRON")))
 
 
@@ -25,12 +27,19 @@ def parse_fm(text: str) -> tuple[dict, str]:
     m = FRONTMATTER_RE.match(text)
     if not m:
         return {}, text
-    fm: dict[str, str] = {}
-    for line in m.group(1).splitlines():
-        if ":" in line and not line.lstrip().startswith(("-", " ", "\t")):
-            k, _, v = line.partition(":")
-            fm[k.strip()] = v.strip().strip('"').strip("'")
+    try:
+        fm = yaml.safe_load(m.group(1)) or {}
+    except yaml.YAMLError as exc:
+        sys.stderr.write(f"alias: warning — failed to parse frontmatter ({exc}); treating as empty\n")
+        fm = {}
+    if not isinstance(fm, dict):
+        fm = {}
     return fm, text[m.end():]
+
+
+def serialize_fm(fm: dict) -> str:
+    body = yaml.safe_dump(fm, sort_keys=False, allow_unicode=True, default_flow_style=False)
+    return f"---\n{body}---\n"
 
 
 def find_pages(slug: str, type_: str | None) -> list[Path]:
@@ -72,7 +81,8 @@ def detect_canonical(slugs: list[str], type_: str | None) -> str:
         last = ""
         for p in pages:
             fm, _ = parse_fm(p.read_text(errors="ignore"))
-            t = fm.get("last_touched") or fm.get("last_updated") or ""
+            raw = fm.get("last_touched") or fm.get("last_updated") or ""
+            t = str(raw) if raw else ""
             if t > last:
                 last = t
         if len(s) > best_len or (len(s) == best_len and last > best_touched):
@@ -119,15 +129,19 @@ def update_canonical_aliases(canonical_page: Path, aliases: list[str]) -> None:
         return
     text = canonical_page.read_text(errors="ignore")
     fm, body = parse_fm(text)
-    existing = fm.get("aliases", "")
-    existing_set = {a.strip() for a in re.split(r"[,\[\]]", existing) if a.strip()}
-    merged = sorted(existing_set | set(aliases))
-    fm["aliases"] = "[" + ", ".join(merged) + "]"
-    out_lines = ["---"]
-    for k, v in fm.items():
-        out_lines.append(f"{k}: {v}")
-    out_lines.append("---")
-    canonical_page.write_text("\n".join(out_lines) + "\n" + body.lstrip("\n"))
+    existing = fm.get("aliases", [])
+    existing_set: set[str] = set()
+    if isinstance(existing, list):
+        for a in existing:
+            if isinstance(a, str) and a.strip():
+                existing_set.add(a.strip())
+    elif isinstance(existing, str) and existing:
+        for a in re.split(r"[,\[\]]", existing):
+            a = a.strip().strip('"').strip("'")
+            if a:
+                existing_set.add(a)
+    fm["aliases"] = sorted(existing_set | set(aliases))
+    canonical_page.write_text(serialize_fm(fm) + body.lstrip("\n"))
 
 
 def merge(slugs: list[str], canonical: str, type_: str | None, dry_run: bool) -> int:
@@ -168,7 +182,13 @@ def merge(slugs: list[str], canonical: str, type_: str | None, dry_run: bool) ->
             if not dry_run:
                 if target is not None:
                     merge_alias_content_into_canonical(alias_page, target, alias)
-                alias_page.write_text(render_redirect_stub(alias, canonical, inferred_type))
+                    alias_page.write_text(render_redirect_stub(alias, canonical, inferred_type))
+                else:
+                    sys.stderr.write(
+                        f"alias: WARNING — no canonical target found for {alias} "
+                        f"(no canonical page in same workspace and no global page); "
+                        f"leaving {alias_page.relative_to(ULTRON_ROOT)} untouched to avoid data loss.\n"
+                    )
             # Rewrite wikilinks across the workspace (or globally if alias was global).
             try:
                 ws = alias_page.relative_to(ULTRON_ROOT / "workspaces").parts[0]

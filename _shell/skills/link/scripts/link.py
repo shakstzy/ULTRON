@@ -17,6 +17,8 @@ import sys
 from datetime import date
 from pathlib import Path
 
+import yaml
+
 ULTRON_ROOT = Path(os.environ.get("ULTRON_ROOT", str(Path.home() / "ULTRON")))
 
 
@@ -47,8 +49,6 @@ INVERSE = {
 }
 
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.+?)\n---\s*\n?", re.DOTALL)
-RELATIONSHIPS_RE = re.compile(r"^relationships:\s*\n((?:\s+-\s+\{.*?\}\s*\n)+)", re.MULTILINE)
-EDGE_RE = re.compile(r"-\s*\{\s*type:\s*([^,]+),\s*target:\s*([^,]+),(.*?)\}\s*$")
 
 
 def find_page(slug: str, workspace: str | None = None) -> Path | None:

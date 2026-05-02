@@ -67,31 +67,41 @@ def load_yaml(path: Path) -> dict:
 
 # ---- compile ------------------------------------------------------------
 
-PLIST_TEMPLATE = """<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-  <key>Label</key><string>{label}</string>
-  <key>ProgramArguments</key>
-  <array>
-    <string>/bin/bash</string>
-    <string>-c</string>
-    <string>flock -n /tmp/{label}.lock {ultron_root}/_shell/bin/run-stage.sh {args} >> {ultron_root}/_logs/{label}.log 2>&amp;1</string>
-  </array>
-  {interval_block}
-  <key>EnvironmentVariables</key>
-  <dict>
-    <key>PATH</key><string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
-    <key>ULTRON_ROOT</key><string>{ultron_root}</string>
-    <key>HOME</key><string>{home}</string>
-  </dict>
-  <key>StandardOutPath</key><string>{ultron_root}/_logs/{label}.out.log</string>
-  <key>StandardErrorPath</key><string>{ultron_root}/_logs/{label}.err.log</string>
-  <key>WorkingDirectory</key><string>{ultron_root}</string>
-  <key>RunAtLoad</key><false/>
-</dict>
-</plist>
-"""
+import plistlib
+import shlex
+
+
+def render_plist_dict(job: dict) -> dict:
+    """Build a plist dict ready for plistlib.dumps(). Args are shell-quoted."""
+    label = job["label"]
+    args_str = job["args"]
+    args_quoted = " ".join(shlex.quote(a) for a in args_str.split())
+    cmd = (
+        f"flock -n /tmp/{shlex.quote(label)}.lock "
+        f"{shlex.quote(str(ULTRON_ROOT))}/_shell/bin/run-stage.sh "
+        f"{args_quoted} "
+        f">> {shlex.quote(str(ULTRON_ROOT))}/_logs/{shlex.quote(label)}.log 2>&1"
+    )
+    intervals = cron_to_intervals(job["cron"])
+
+    plist: dict = {
+        "Label": label,
+        "ProgramArguments": ["/bin/bash", "-c", cmd],
+        "EnvironmentVariables": {
+            "PATH": "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+            "ULTRON_ROOT": str(ULTRON_ROOT),
+            "HOME": str(Path.home()),
+        },
+        "StandardOutPath": f"{ULTRON_ROOT}/_logs/{label}.out.log",
+        "StandardErrorPath": f"{ULTRON_ROOT}/_logs/{label}.err.log",
+        "WorkingDirectory": str(ULTRON_ROOT),
+        "RunAtLoad": False,
+    }
+    if len(intervals) == 1:
+        plist["StartCalendarInterval"] = intervals[0]
+    else:
+        plist["StartCalendarInterval"] = list(intervals)
+    return plist
 
 
 def _account_slug(account: str) -> str:
@@ -163,7 +173,7 @@ def collect_jobs() -> list[dict]:
                     jobs.append({
                         "label": label,
                         "cron": cron,
-                        "args": f"ingest {source_name} {acct}",
+                        "args": f"ingest-source {source_name} {acct}",
                         "kind": "ingest",
                         "source": source_name,
                         "account": acct,
@@ -171,27 +181,46 @@ def collect_jobs() -> list[dict]:
                     })
 
     # 3. Resolve duplicate labels (multiple workspaces declaring the same
-    # (source,account)). The most-frequent cron wins, measured by the number
-    # of seconds between firings — for ULTRON's coarse cadences this can be
-    # approximated by minute-of-the-day count.
+    # (source,account)). Same cron → silently OK. Different crons → most-frequent
+    # wins AND we log the divergence so the user knows their less-frequent
+    # workspace cron was overridden. The single resulting plist still fans to
+    # ALL subscribing workspaces via route.py.
     by_label: dict[str, dict] = {}
+    divergences: list[str] = []
     for j in jobs:
-        if j["label"] not in by_label:
+        existing = by_label.get(j["label"])
+        if existing is None:
             by_label[j["label"]] = j
             continue
-        a = by_label[j["label"]]
-        if _slot_count(j["cron"]) > _slot_count(a["cron"]):
+        if existing["cron"] == j["cron"]:
+            continue
+        winner_count = _slot_count(j["cron"])
+        existing_count = _slot_count(existing["cron"])
+        if winner_count > existing_count:
+            divergences.append(
+                f"{j['label']}: {existing.get('workspace_origin')!r} cron {existing['cron']!r} "
+                f"superseded by {j.get('workspace_origin')!r} cron {j['cron']!r} (more frequent)"
+            )
             by_label[j["label"]] = j
+        elif winner_count < existing_count:
+            divergences.append(
+                f"{j['label']}: {j.get('workspace_origin')!r} cron {j['cron']!r} "
+                f"ignored (less frequent than {existing.get('workspace_origin')!r} {existing['cron']!r})"
+            )
+    if divergences:
+        sys.stderr.write("schedule: cron divergences resolved (most-frequent wins):\n")
+        for d in divergences:
+            sys.stderr.write(f"  {d}\n")
     return list(by_label.values())
 
 
 def _global_args_for(name: str) -> str:
     """Translate a global-schedule.yaml key to run-stage.sh args."""
     overrides = {
-        "graphify_supermerge": "audit",   # graphify-run.sh is invoked by audit; standalone via _shell/bin/graphify-run.sh as well
+        "graphify_supermerge": "graphify-supermerge",
         "audit": "audit",
         "weekly_review": "weekly-review",
-        "apple_contacts_sync": "apple-contacts-sync",   # special: routed through schedule.py wrapper
+        "apple_contacts_sync": "apple-contacts-sync",
         "ledger_compact": "ledger-compact",
     }
     return overrides.get(name, name.replace("_", "-"))
@@ -204,16 +233,8 @@ def _slot_count(cron: str) -> int:
         return 0
 
 
-def render_plist(job: dict) -> str:
-    intervals = cron_to_intervals(job["cron"])
-    interval_block = render_intervals_xml(intervals)
-    return PLIST_TEMPLATE.format(
-        label=job["label"],
-        ultron_root=str(ULTRON_ROOT),
-        home=str(Path.home()),
-        args=job["args"],
-        interval_block=interval_block,
-    )
+def render_plist(job: dict) -> bytes:
+    return plistlib.dumps(render_plist_dict(job))
 
 
 def cmd_compile(args: argparse.Namespace) -> int:
@@ -229,7 +250,7 @@ def cmd_compile(args: argparse.Namespace) -> int:
             continue
         out = PLISTS_DIR / f"{job['label']}.plist"
         if not args.dry_run:
-            out.write_text(content)
+            out.write_bytes(content)
         written.append(out)
 
     print(f"{'would write' if args.dry_run else 'wrote'} {len(written)} plist(s):")

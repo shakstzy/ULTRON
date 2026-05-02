@@ -63,7 +63,10 @@ def _subject_matches(thread: dict, predicate: str) -> bool:
     """`subject:contains:<text>` or `subject:regex:<pattern>`."""
     if not predicate.lower().startswith("subject:"):
         return False
-    _, kind, val = predicate.split(":", 2)
+    parts = predicate.split(":", 2)
+    if len(parts) < 3:
+        return False
+    _, kind, val = parts
     subject = thread.get("subject") or ""
     if kind == "contains":
         return val.lower() in subject.lower()
@@ -134,9 +137,25 @@ def route(thread: dict, workspaces_config: dict) -> list[str]:
             continue
 
         # New shape (preferred): accounts: [{account, api_query: {include, exclude}, rules: [...]}].
+        # Also tolerate the schedule.yaml-style `accounts: [<email-string>, ...]` by promoting strings
+        # to a minimal dict that inherits the block's top-level api_query.
         accounts = block.get("accounts") if isinstance(block, dict) else None
         if isinstance(accounts, list):
-            for acct in accounts:
+            normalized: list[dict] = []
+            for a in accounts:
+                if isinstance(a, str):
+                    normalized.append({
+                        "account": a,
+                        "api_query": {
+                            "include": (block.get("api_query", {}) or {}).get("include")
+                                or block.get("labels") or [],
+                            "exclude": (block.get("api_query", {}) or {}).get("exclude")
+                                or block.get("exclude_labels") or [],
+                        },
+                    })
+                elif isinstance(a, dict):
+                    normalized.append(a)
+            for acct in normalized:
                 if acct.get("account") and thread.get("account") and acct["account"] != thread["account"]:
                     continue
                 api = acct.get("api_query", {}) or {}
@@ -145,7 +164,8 @@ def route(thread: dict, workspaces_config: dict) -> list[str]:
                     for rule in acct.get("rules", []) or []:
                         also = rule.get("also_route_to") or []
                         for target in also:
-                            extras.add(target)
+                            if target in workspaces_config:
+                                extras.add(target)
             continue
 
         # Legacy flat shape: include / exclude on the gmail block directly.

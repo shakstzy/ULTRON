@@ -164,6 +164,16 @@ claude_invoke() {
 EC=0
 
 case "$STAGE" in
+  ingest-source)
+    # Per (source, account) ingest. Dispatches to the source's robot.
+    ROBOT="$ULTRON_ROOT/_shell/bin/ingest-${SOURCE}.py"
+    if [[ ! -x "$ROBOT" ]]; then
+      echo "ingest-source: no robot at $ROBOT" >&2
+      exit 2
+    fi
+    python3 "$ROBOT" --account "$ACCOUNT" --run-id "$RUN_ID" \
+      > "$RUN_DIR/output/ingest-${SOURCE}.log" 2>&1 || EC=$?
+    ;;
   ingest)
     python3 "$ULTRON_ROOT/_shell/bin/ingest-driver.py" "$WORKSPACE" "$RUN_ID" \
       > "$RUN_DIR/output/ingest-driver.log" 2>&1 || EC=$?

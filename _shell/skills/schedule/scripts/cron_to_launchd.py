@@ -22,15 +22,20 @@ from typing import Iterable
 
 
 def _expand_field(field: str, lo: int, hi: int) -> list[int]:
-    """Expand a cron field over the allowed integer range [lo, hi]."""
+    """Expand a cron field over the allowed integer range [lo, hi].
+
+    Handles `*`, `*/N`, `A-B`, `A-B/N`, and comma-lists of any of those.
+    """
     out: list[int] = []
     for part in field.split(","):
         part = part.strip()
         if part == "*":
-            return list(range(lo, hi + 1))
+            out.extend(range(lo, hi + 1))
+            continue
         if part.startswith("*/"):
             step = int(part[2:])
-            return list(range(lo, hi + 1, step))
+            out.extend(range(lo, hi + 1, step))
+            continue
         if "-" in part:
             range_part, _, step_str = part.partition("/")
             step = int(step_str) if step_str else 1

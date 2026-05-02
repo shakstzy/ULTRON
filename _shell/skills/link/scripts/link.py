@@ -38,6 +38,12 @@ INVERSE = {
     "vendor_of": "client_of",
     "parent_of": "child_of",
     "child_of": "parent_of",
+    "acquired": "acquired_by",
+    "acquired_by": "acquired",
+    "subsidiary_of": "parent_company_of",
+    "parent_company_of": "subsidiary_of",
+    "introduced": "introduced_by",
+    "introduced_by": "introduced",
 }
 
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.+?)\n---\s*\n?", re.DOTALL)

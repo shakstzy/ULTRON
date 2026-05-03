@@ -1,7 +1,7 @@
 ---
 source: gmail
-workspace: personal
-ingested_at: '2026-05-03T03:53:14+00:00'
+workspace: eclipse
+ingested_at: '2026-05-03T03:58:31+00:00'
 ingest_version: 1
 content_hash: blake3:40e26fc4f660e336ace26e7e24c3c30b1b0878fd86e2c9921eb13df3af7dfb6a
 provider_modified_at: '2026-04-23T23:23:14+00:00'
@@ -25,7 +25,7 @@ participants:
   roles:
   - bcc
 labels:
-- Label_19
+- Eclipse
 - UNREAD
 - IMPORTANT
 - CATEGORY_PERSONAL
@@ -34,8 +34,8 @@ last_message: '2026-04-23T23:23:14+00:00'
 message_count: 1
 attachments: []
 routed_by:
-- workspace: personal
-  rule: <unrouted-default>
+- workspace: eclipse
+  rule: label:Eclipse
 deleted_upstream: null
 ---
 # Eclipse Laboratories, Inc. - token platform update

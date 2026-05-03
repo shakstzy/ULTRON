@@ -1,7 +1,7 @@
 ---
 source: gmail
 workspace: personal
-ingested_at: '2026-05-03T03:53:14+00:00'
+ingested_at: '2026-05-03T03:58:31+00:00'
 ingest_version: 1
 content_hash: blake3:2107f21c723af7f9068b55821ab16edf5df339b986acdb6e5f26c9c6c3abe9ef
 provider_modified_at: '2026-05-02T17:00:12+00:00'

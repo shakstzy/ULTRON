@@ -1,7 +1,7 @@
 ---
 source: gmail
-workspace: personal
-ingested_at: '2026-05-03T03:53:14+00:00'
+workspace: eclipse
+ingested_at: '2026-05-03T03:58:31+00:00'
 ingest_version: 1
 content_hash: blake3:c46e551b1ba2d0652e142af4bb50b54e1f31a49a050f4aa5b44833bdb6f0e62d
 provider_modified_at: '2025-10-27T22:24:09+00:00'
@@ -36,7 +36,7 @@ participants:
   roles:
   - to
 labels:
-- Label_19
+- Eclipse
 - CATEGORY_PERSONAL
 - SENT
 - IMPORTANT
@@ -44,36 +44,36 @@ first_message: '2025-10-27T19:06:57+00:00'
 last_message: '2025-10-27T22:24:09+00:00'
 message_count: 3
 attachments:
-- id: ANGjdJ9k
+- id: ANGjdJ8t
   filename: A. Kumar - Eclipse Laboratories, Inc. - Form of Exempt Employee Offer
     Letter - CA.pdf
   size_bytes: 208196
   mime: application/pdf
   message_index: 0
-- id: ANGjdJ_h
+- id: ANGjdJ8p
   filename: A. Kumar - Eclipse Laboratories, Inc. - Form of Employee CIIAA - CA.pdf
   size_bytes: 369293
   mime: application/pdf
   message_index: 0
-- id: ANGjdJ-f
+- id: ANGjdJ8U
   filename: A. Kumar - Eclipse Laboratories, Inc. - Form of Exempt Employee Offer
     Letter - CA.pdf
   size_bytes: 208196
   mime: application/pdf
   message_index: 1
-- id: ANGjdJ9j
+- id: ANGjdJ9T
   filename: A. Kumar - Eclipse Laboratories, Inc. - Form of Employee CIIAA - CA.pdf
   size_bytes: 369293
   mime: application/pdf
   message_index: 1
-- id: ANGjdJ9N
+- id: ANGjdJ-p
   filename: A. Kumar - Eclipse Laboratories, Inc. - Form of Consulting Agreement.pdf
   size_bytes: 313700
   mime: application/pdf
   message_index: 2
 routed_by:
-- workspace: personal
-  rule: <unrouted-default>
+- workspace: eclipse
+  rule: label:Eclipse
 deleted_upstream: null
 ---
 # Congrats from Eclipse!

@@ -19,12 +19,40 @@ Routing semantics:
     rule="<unrouted-default>"; `skip` → []).
   - `also_route_to` extras append additional workspaces.
   - Return list of {workspace, rule} dicts, sorted by workspace.
+
+Rule grammar:
+  A rule string is a Gmail-q=-style space-separated AND of clauses. Each
+  clause is `[<-prefix>]predicate`. The rule fires iff every positive clause
+  matches AND no negated clause matches.
+
+  Predicates:
+    label:<exact>
+    from:<glob-or-domain>     to:/cc:/any: same shape
+    subject:"<phrase>"        contains, case-insensitive
+    subject:<text>            contains, case-insensitive
+    subject:contains:<text>   contains, case-insensitive (legacy)
+    subject:regex:<pattern>   regex
+
+  `from:<bare-domain>` (no @, no *) matches any email at that domain or any
+  subdomain (Gmail q=-like). Otherwise fnmatch on the full email.
+
+Account-level shared excludes:
+  An account block may set `api_query.exclude_from: <relative-path>` (or a
+  list of paths) pointing at a YAML file with a top-level `excludes:` list
+  of rule strings. Loaded once per path (LRU-cached), unioned with inline
+  `api_query.exclude` rules. Path is resolved relative to ULTRON_ROOT.
 """
 from __future__ import annotations
 
 import fnmatch
+import functools
+import os
 import re
+import shlex
+from pathlib import Path
 from typing import Iterable
+
+import yaml
 
 SOURCE_NAME = "gmail"
 DEFAULT_UNROUTED = "route_to_main"
@@ -33,23 +61,62 @@ MATCH_ALL_RULE = "<match-all>"
 UNROUTED_RULE = "<unrouted-default>"
 
 
+def _ultron_root() -> Path:
+    return Path(os.environ.get("ULTRON_ROOT") or (Path.home() / "ULTRON"))
+
+
+def _resolve_exclude_path(rel: str) -> Path:
+    p = Path(rel)
+    return p if p.is_absolute() else _ultron_root() / rel
+
+
+@functools.lru_cache(maxsize=64)
+def _load_exclude_file(abs_path: str) -> tuple[str, ...]:
+    p = Path(abs_path)
+    if not p.exists():
+        return ()
+    try:
+        data = yaml.safe_load(p.read_text()) or {}
+    except (yaml.YAMLError, OSError):
+        return ()
+    rules = data.get("excludes") if isinstance(data, dict) else None
+    if not isinstance(rules, list):
+        return ()
+    return tuple(r for r in rules if isinstance(r, str) and r.strip())
+
+
+def _excludes_from_field(value) -> list[str]:
+    paths: list[str] = []
+    if isinstance(value, str):
+        paths.append(value)
+    elif isinstance(value, list):
+        paths.extend(p for p in value if isinstance(p, str))
+    out: list[str] = []
+    for path in paths:
+        out.extend(_load_exclude_file(str(_resolve_exclude_path(path))))
+    return out
+
+
 def _participant_matches(thread: dict, predicate: str) -> bool:
-    """`from:foo@*`, `to:*@eclipse.audio`, etc."""
+    """`from:foo@*`, `to:*@eclipse.audio`, `from:domain.com` (bare domain)."""
     if ":" not in predicate:
         return False
     role, pat = predicate.split(":", 1)
     role = role.strip().lower()
     pat = pat.strip().lower()
+    if role not in {"from", "to", "cc", "any"}:
+        return False
+    bare_domain = pat and "@" not in pat and "*" not in pat
     for p in thread.get("participants", []):
         roles = {r.lower() for r in p.get("roles", [])}
         email = (p.get("email") or "").lower()
-        if role == "from" and "from" not in roles:
+        if role != "any" and role not in roles:
             continue
-        if role == "to" and "to" not in roles:
-            continue
-        if role == "cc" and "cc" not in roles:
-            continue
-        if role == "any" or role in {"from", "to", "cc"}:
+        if bare_domain:
+            _, _, dom = email.partition("@")
+            if dom == pat or dom.endswith("." + pat):
+                return True
+        else:
             if fnmatch.fnmatch(email, pat):
                 return True
     return False
@@ -63,35 +130,81 @@ def _label_matches(thread: dict, predicate: str) -> bool:
 
 
 def _subject_matches(thread: dict, predicate: str) -> bool:
-    """`subject:contains:<text>` or `subject:regex:<pattern>`."""
+    """`subject:"<phrase>"`, `subject:<text>`, `subject:contains:<text>`,
+    or `subject:regex:<pattern>`. Quoted/bare forms are case-insensitive
+    contains."""
     if not predicate.lower().startswith("subject:"):
         return False
-    parts = predicate.split(":", 2)
-    if len(parts) < 3:
-        return False
-    _, kind, val = parts
+    rest = predicate[len("subject:"):]
     subject = thread.get("subject") or ""
-    if kind == "contains":
-        return val.lower() in subject.lower()
-    if kind == "regex":
+    if rest.startswith('"') and rest.endswith('"') and len(rest) >= 2:
+        return rest[1:-1].lower() in subject.lower()
+    lower = rest.lower()
+    if lower.startswith("contains:"):
+        return rest[len("contains:"):].lower() in subject.lower()
+    if lower.startswith("regex:"):
         try:
-            return re.search(val, subject) is not None
+            return re.search(rest[len("regex:"):], subject) is not None
         except re.error:
             return False
+    return bool(rest) and rest.lower() in subject.lower()
+
+
+def _evaluate_predicate(thread: dict, predicate: str) -> bool:
+    predicate = predicate.strip()
+    if not predicate:
+        return False
+    if predicate.startswith("label:"):
+        return _label_matches(thread, predicate)
+    if predicate.startswith(("from:", "to:", "cc:", "any:")):
+        return _participant_matches(thread, predicate)
+    if predicate.startswith("subject:"):
+        return _subject_matches(thread, predicate)
     return False
+
+
+def _tokenize_rule(rule: str) -> list[tuple[bool, str]]:
+    """Split a compound rule into (negated, predicate) tokens. Quoted
+    phrases are preserved as single tokens and re-quoted so downstream
+    matchers see `subject:"X"` intact."""
+    try:
+        lex = shlex.shlex(rule, posix=True)
+        lex.whitespace_split = True
+        lex.commenters = ""
+        raw_tokens = list(lex)
+    except ValueError:
+        return []
+    out: list[tuple[bool, str]] = []
+    for tok in raw_tokens:
+        negated = False
+        if tok.startswith("-") and len(tok) > 1 and ":" in tok[1:]:
+            negated = True
+            tok = tok[1:]
+        if ":" not in tok:
+            continue
+        head, _, tail = tok.partition(":")
+        if head.lower() == "subject" and tail and not tail.startswith('"') \
+                and tail.lower() not in ("contains", "regex") \
+                and not tail.lower().startswith(("contains:", "regex:")):
+            tok = f'subject:"{tail}"'
+        out.append((negated, tok))
+    return out
 
 
 def _evaluate_rule(thread: dict, rule: str) -> bool:
     rule = rule.strip()
     if not rule:
         return False
-    if rule.startswith("label:"):
-        return _label_matches(thread, rule)
-    if rule.startswith(("from:", "to:", "cc:", "any:")):
-        return _participant_matches(thread, rule)
-    if rule.startswith("subject:"):
-        return _subject_matches(thread, rule)
-    return False
+    tokens = _tokenize_rule(rule)
+    if not tokens:
+        return False
+    for negated, pred in tokens:
+        matches = _evaluate_predicate(thread, pred)
+        if negated and matches:
+            return False
+        if not negated and not matches:
+            return False
+    return True
 
 
 def _first_matching_rule(thread: dict, rules: Iterable[str]) -> str | None:
@@ -166,7 +279,8 @@ def route(thread: dict, workspaces_config: dict) -> list[dict]:
                     continue
                 api = acct.get("api_query", {}) or {}
                 inc = api.get("include") or []
-                exc = api.get("exclude") or []
+                exc = list(api.get("exclude") or [])
+                exc.extend(_excludes_from_field(api.get("exclude_from")))
                 inc_rules = [r if isinstance(r, str) and ":" in r else f"label:{r}" for r in inc]
                 exc_rules = [r if isinstance(r, str) and ":" in r else f"label:{r}" for r in exc]
                 fired = _first_matching_rule(thread, inc_rules)
@@ -180,8 +294,10 @@ def route(thread: dict, workspaces_config: dict) -> list[dict]:
             continue
 
         # Legacy flat shape.
-        include = (block.get("api_query", {}) or {}).get("include") or block.get("labels") or []
-        exclude = (block.get("api_query", {}) or {}).get("exclude") or block.get("exclude_labels") or []
+        api = block.get("api_query", {}) or {}
+        include = api.get("include") or block.get("labels") or []
+        exclude = list(api.get("exclude") or block.get("exclude_labels") or [])
+        exclude.extend(_excludes_from_field(api.get("exclude_from")))
         include_rules = [r if isinstance(r, str) and ":" in r else f"label:{r}" for r in include]
         exclude_rules = [r if isinstance(r, str) and ":" in r else f"label:{r}" for r in exclude]
         fired = _first_matching_rule(thread, include_rules)

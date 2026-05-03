@@ -1134,13 +1134,17 @@ def process_thread(svc, tid: str, account: str, workspaces_config: dict,
     # pre-filter (e.g. label SPAM gets added) — its existing copies still need
     # their labels frontmatter updated to reflect the new state.
     msgs = thread_payload.get("messages", [])
-    labels: list[str] = []
+    raw_label_ids: list[str] = []
     seen: set[str] = set()
     for m in msgs:
         for lbl in m.get("labelIds") or []:
             if lbl not in seen:
                 seen.add(lbl)
-                labels.append(lbl)
+                raw_label_ids.append(lbl)
+    # Translate opaque user-label ids ('Label_19') to friendly names ('Eclipse')
+    # so sources.yaml rules like `label:Eclipse` actually fire. System labels
+    # (INBOX, SPAM, etc.) pass through unchanged.
+    labels = translate_labels(raw_label_ids, label_name_map)
     if not args.dry_run:
         n_lbl = update_labels_in_existing_files(tid, account, labels, workspaces_config)
         if n_lbl:
@@ -1197,6 +1201,7 @@ def process_thread(svc, tid: str, account: str, workspaces_config: dict,
             body_markdown=body_md,
             ingested_at=ingested_at,
             routed_by=routed_by_list,
+            labels=labels,
             deleted_upstream=existing_du,
         )
         content = fm + body_md
@@ -1310,6 +1315,12 @@ def main() -> int:
     svc = build_service(account)
     ingested_at = datetime.now(timezone.utc)
 
+    # Build {labelId: labelName} map once per run. Used to translate opaque
+    # user-label ids (Label_19) to friendly names (Eclipse) for routing and
+    # frontmatter. Empty map is fine — translate_labels passes through.
+    label_name_map = fetch_label_name_map(svc)
+    run_log.write(f"label_name_map size={len(label_name_map)}\n")
+
     # Lock 7: snapshot historyId BEFORE the fetch. New mail arriving during a
     # long messages.list/history.list pagination would be missed otherwise —
     # the next run's history.list will pick it up (idempotent via ledger).
@@ -1373,7 +1384,7 @@ def main() -> int:
         cap_clipped = True
 
     for tid in process_added + process_labelled:
-        per, errored = process_thread(svc, tid, account, workspaces_config, ingested_at, args, run_log)
+        per, errored = process_thread(svc, tid, account, workspaces_config, ingested_at, args, run_log, label_name_map)
         if errored:
             process_errors += 1
         for ws, n in per.items():

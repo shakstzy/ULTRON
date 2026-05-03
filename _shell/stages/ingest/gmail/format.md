@@ -1,19 +1,19 @@
 # Format: gmail (AUTHORITATIVE)
 
-> Locked in Phase 3 RESET §2. Every Gmail file written by `ingest-gmail.py`
-> must conform to this spec exactly.
+> The single source of truth for how Gmail becomes raw markdown. Locked
+> in the format-lock session. Routing decisions live in `sources.yaml`;
+> this file controls everything else. Re-locking requires explicit
+> session intent.
 
-## A. File granularity
-One markdown file per email **thread** (Gmail `thread_id`). New replies grow the file in place; the path never changes.
+## Lock 1 — Path template
 
-## B. Path template
 ```
-workspaces/<ws>/raw/gmail/<mailbox-slug>/<YYYY>/<MM>/<filename>
+workspaces/<ws>/raw/gmail/<account-slug>/<YYYY>/<MM>/<filename>
 ```
 
-**`<ws>`** — workspace slug. Same thread can appear in multiple workspaces; each is an independent copy.
-
-**`<mailbox-slug>`** — deterministic from the email: lowercase, take local-part + first domain segment, replace any non-`[a-z0-9-]` with `-`, strip leading/trailing `-`. Examples:
+**`<account-slug>`** — deterministic from the email. Lowercase. Take
+local-part + first domain segment. Replace any non-`[a-z0-9]` run with a
+single `-`. Strip leading / trailing `-`. ASCII only.
 
 | Email | Slug |
 |---|---|
@@ -22,20 +22,27 @@ workspaces/<ws>/raw/gmail/<mailbox-slug>/<YYYY>/<MM>/<filename>
 | `adithya@eclipse.builders` | `adithya-eclipse` |
 | `adithya.shak.kumar@gmail.com` | `adithya-shak-kumar-gmail` |
 
-**`<YYYY>/<MM>`** — year + zero-padded month of the **first message in the thread**. Stable across re-ingest.
+**`<YYYY>/<MM>`** — year + zero-padded month of the **first message in the
+thread**. Stable forever; new replies don't relocate the file.
 
-**`<filename>`** — `<date>__<subject-slug>__<threadid8>.md` where:
+**`<filename>`** — `<date>__<subject-slug>__<threadid8>.md`.
 - `<date>` is `YYYY-MM-DD` of the first message.
 - `<subject-slug>` derives from the original subject:
-  1. Strip prefixes (case-insensitive, repeat to fixed point): `Re:`, `Fwd:`, `Fw:`, `FW:`, `AW:`, `[External]`, `[EXT]`, `[CONFIDENTIAL]`, `[SPAM]`, `AUTO:`.
-  2. NFKD-normalize → ASCII (ignore non-ASCII).
-  3. Replace runs of non-`[a-zA-Z0-9]` with `-`. Lowercase. Strip leading/trailing `-`.
+  1. Strip prefixes (case-insensitive, repeat to fixed point):
+     `Re:`, `Fwd:`, `Fw:`, `FW:`, `AW:`, `RES:`, `TR:`,
+     `[External]`, `[EXT]`, `[CONFIDENTIAL]`, `[SPAM]`, `AUTO:`.
+  2. NFKD-normalize → ASCII (drop non-ASCII).
+  3. Replace runs of non-`[a-zA-Z0-9]` with `-`. Lowercase. Strip
+     leading / trailing `-`.
   4. Truncate to 60 chars; strip trailing `-`. Empty → `no-subject`.
-- `<threadid8>` is the first 8 chars of `thread_id` (uniqueness guarantee).
+- `<threadid8>` is the first 8 chars of Gmail `thread_id`.
 
-**Idempotency**: path is deterministic from `(mailbox_slug, thread_id, first-message-date, subject)`. Re-ingesting the same thread always overwrites the same file. The robot never moves files.
+**Idempotency**: path is deterministic from `(account_slug, thread_id,
+first-message-date, subject)`. Re-ingesting the same thread overwrites
+the same file. The robot never moves files.
 
-## C. Universal frontmatter envelope (REQUIRED)
+## Lock 2 — Universal frontmatter envelope (REQUIRED)
+
 ```yaml
 source: gmail
 workspace: <ws-slug>
@@ -45,9 +52,11 @@ content_hash: blake3:<64-hex>          # of body markdown only (post-frontmatter
 provider_modified_at: <ISO 8601 with TZ>   # internalDate of last message
 ```
 
-`content_hash` is computed over the body markdown ONLY. Same body bytes ⇒ same hash regardless of ingest time. This is the dedup signal.
+`content_hash` is computed over the body markdown ONLY. Same body bytes ⇒
+same hash regardless of ingest time. This is the dedup signal.
 
-## D. Gmail-specific frontmatter
+## Lock 3 — Gmail-specific frontmatter
+
 ```yaml
 account: adithya@outerscope.xyz
 account_slug: adithya-outerscope
@@ -68,21 +77,24 @@ attachments:
     mime: application/pdf
     message_index: 0                   # 0-based index into messages[]
 routed_by:
-  - "eclipse:label:Eclipse"            # <destination-ws>:<rule-marker>
-  - "personal:rules.match[0]"
+  - { workspace: eclipse, rule: "label:Eclipse" }
+  - { workspace: personal, rule: "<match-all>" }
 deleted_upstream: null                 # ISO 8601 if history.list reports messageDeleted
-superseded_by: null                    # full path if a follow-up thread merges into this one
 ```
 
 Field rules:
-- `participants[].roles` ⊆ `{from, to, cc, bcc}`. Same address across multiple roles collapses to one entry with the union of roles.
+- `participants[].roles` ⊆ `{from, to, cc, bcc}`. Same address across
+  multiple roles collapses to one entry; roles unioned.
 - `labels` mirrors Gmail's `labelIds` exactly.
 - `attachments[].id` is the first 8 chars of Gmail's `attachmentId`.
 - `attachments[].message_index` is required.
-- `routed_by` populated by `route.py`; format is `<destination-workspace>:<rule-marker>`.
-- `deleted_upstream` and `superseded_by` are the ONLY fields the robot may modify post-write (see § H).
+- `routed_by` lists every workspace this thread was routed to and the
+  rule that fired. The same list appears in every workspace copy.
+- `deleted_upstream` is the ONLY frontmatter field the robot may modify
+  post-write (besides `labels` on `labelAdded` / `labelRemoved` events).
 
-## E. Body format
+## Lock 4 — Body format
+
 ```markdown
 # <Original subject (prefixes preserved)>
 
@@ -100,30 +112,46 @@ Field rules:
 Rules:
 1. Messages chronological (`internalDate` ascending).
 2. HTML→markdown via `html2text`. Prefer `text/plain` when both parts exist.
-3. Quoted-history removal: drop everything from the first `^On <date> .* wrote:$` line; trim trailing `>`-prefixed blockquote lines.
-4. Signature stripping: cut at first `^-- ?$` delimiter. Otherwise strip a trailing >10-line block matching legal-disclaimer patterns (`This email and any attachments...`, `CONFIDENTIALITY NOTICE`, `IRS Circular 230`). Conservative — leave noise rather than strip signal.
+3. Quoted-history removal: drop everything from the first `^On <date> .*
+   wrote:$` line; trim trailing `>`-prefixed blockquote lines.
+4. Signature stripping: cut at first canonical `^-- ?$` delimiter
+   (RFC 3676). NO heuristic stripping. If no delimiter, keep everything.
 5. Inline images: reference as `[image: <filename>]`; metadata only.
-6. PDF attachments < 10 MB: extract text via `pdftotext` (preferred) or `markitdown`, append as `### Attachment: <filename>`.
-7. Larger / non-text attachments: metadata only, body says `Binary attachment, content not extracted.`
-8. **No LLM calls.** All conversion deterministic.
+6. PDF attachments < 10 MB: extract text via `pdftotext` (preferred) or
+   `markitdown`, append as `### Attachment: <filename>`.
+7. Larger / non-text attachments: metadata in frontmatter only; body
+   says `Binary attachment, content not extracted.`
+8. **No LLM calls.** All conversion is deterministic.
 
-## F. Pre-filter (deterministic, NO LLM)
+## Lock 5 — Pre-filter (deterministic, NO LLM)
+
 Skip the entire thread if any of:
+
 - **Size** > 25 MB (sum of attachment + body bytes across all messages).
-- **First-message subject** matches `/^(out of office|automatic reply|undeliverable|delivery (status )?notification)\b/i`.
-- **All senders blocklisted** — every message's `From:` matches the universal blocklist (case-insensitive):
+- **First-message subject** matches
+  `/^(out of office|automatic reply|undeliverable|delivery (status )?notification)/i`.
+- **All senders blocklisted** — every message's `From:` matches the
+  universal blocklist (case-insensitive):
   - `noreply@*`, `no-reply@*`, `*-noreply@*`, `donotreply@*`
   - `mailer-daemon@*`, `postmaster@*`
   - `calendar-notification@google.com`, `*@calendar.google.com`
   - `*@bounces.amazonses.com`, `*@accounts.google.com`
-- **Labels** `SPAM` or `TRASH` on any message. (`DRAFT` preserved.)
-- **MIME outside allowlist**: `{text/plain, text/html, application/pdf, image/*, multipart/*}`. Per-message warning; thread-skip only if every attachment is outside the allowlist.
-- **Calendar-invite-only**: every attachment is a `.ics` (text/calendar) file.
+- **Labels** — every label on the thread is in `{SPAM, TRASH}`.
+- **MIME outside allowlist**: thread-skip only if EVERY attachment is
+  outside `{text/plain, text/html, application/pdf, image/*,
+  multipart/*}`. Mixed threads with one bad attachment get a
+  per-attachment warning, not a thread skip.
+- **Calendar-invite-only**: thread has attachments and every attachment
+  is `.ics` (text/calendar).
 
-This blocklist is universal. Per-mailbox or per-workspace exclusions belong in `sources.yaml`'s `api_query.exclude`.
+This blocklist is universal. Per-account exclusions belong in
+`sources.yaml`'s `api_query.exclude`.
 
-## G. Dedup key
-`gmail:<thread_id>`. Per-workspace ledger at `workspaces/<ws>/_meta/ingested.jsonl`, one JSON line per ingest:
+## Lock 6 — Dedup
+
+Key: `gmail:<thread_id>`. Per-workspace ledger at
+`workspaces/<ws>/_meta/ingested.jsonl`, one JSON line per ingest:
+
 ```json
 {"source":"gmail","key":"gmail:17abc...","content_hash":"blake3:...","raw_path":"raw/gmail/...","ingested_at":"...","run_id":"..."}
 ```
@@ -134,17 +162,70 @@ This blocklist is universal. Per-mailbox or per-workspace exclusions belong in `
 | present | matches | no-op (silent skip, log line) |
 | present | mismatches | overwrite file, append a NEW ledger row (ledger is append-only) |
 
-## H. Forbidden behaviors (immutable contract)
-The robot **NEVER**:
-1. Deletes a raw file based on Gmail-side deletion. `messageDeleted` events set `deleted_upstream` in the existing file's frontmatter; the file persists.
-2. Moves files between paths. Path is fixed at write time. Mid-thread subject changes don't relocate the file.
-3. Runs LLM / vision calls during ingest. PDF text via `pdftotext`/`markitdown` is fine; everything else is metadata-only.
-4. Edits frontmatter post-write, except `deleted_upstream` and `superseded_by`. Every other re-ingest produces a fresh file.
-5. Writes outside `workspaces/<ws>/raw/gmail/<mailbox-slug>/...`. Ledger / log appends happen in the dispatcher, not the rendering loop.
-6. Skips the universal blocklist (§ F), even if a workspace's `api_query.include` would otherwise pull a blocklisted sender.
+## Lock 7 — Cursor + robot CLI
 
-## I. Cross-references
-- Workflow: `CONTEXT.md`.
-- sources.yaml schema: `sources-schema.md` (§3).
-- Runbook: `_shell/docs/runbook-gmail.md` (§9).
-- Credentials: `_shell/docs/credentials-gmail.md` (§9).
+**Cursor file**: `_shell/cursors/gmail/<account-slug>.txt`. Stores the
+last seen Gmail `historyId` (decimal integer, written as text).
+
+**First run** (cursor missing or empty):
+1. `users.messages.list(q=<union>)` bounded by
+   `GMAIL_INITIAL_LOOKBACK_DAYS` env var (default 365) via an `after:`
+   clause.
+2. Dedupe results to threads; fetch each via
+   `users.threads.get(format='full')`.
+3. After successful processing, persist `historyId` from
+   `users.getProfile()`.
+
+**Subsequent runs** (cursor present):
+1. `users.history.list(startHistoryId=<cursor>,
+   historyTypes=[messageAdded, messageDeleted, labelAdded,
+   labelRemoved])`.
+2. Per event:
+   - `messageAdded` — fetch thread, normal pipeline.
+   - `messageDeleted` — locate existing raw file by `thread_id`, set
+     `deleted_upstream` in frontmatter, rewrite. Don't delete the file.
+   - `labelAdded` / `labelRemoved` — re-evaluate routing. Update
+     `labels` on existing copies; new matches → write to new
+     workspaces. Existing copies stay even if no longer matching.
+3. Advance cursor to `users.getProfile().historyId` ONLY after the
+   write phase succeeds. Mid-batch failure leaves the cursor at its
+   previous value; the next run replays.
+
+**Robot CLI**:
+
+```
+ingest-gmail.py
+  --account <email>           required; e.g. adithya@outerscope.xyz
+  [--workspaces <a,b,c>]      subset; default = every subscribing workspace
+  [--dry-run]                 fetch + render but write nothing; cursor untouched
+  [--show]                    in dry-run, print full content to stdout
+  [--max-items <int>]         hard cap on threads processed
+  [--reset-cursor]            delete cursor; rebuild from lookback window
+  [--run-id <id>]             tag for ledger / log lines
+```
+
+**flock** at `/tmp/com.adithya.ultron.ingest-gmail-<account-slug>.lock`.
+Concurrent invocation for the same account exits 0 silently.
+
+## Forbidden behaviors (immutable contract)
+
+The robot **NEVER**:
+1. Deletes a raw file based on Gmail-side deletion. `messageDeleted`
+   events set `deleted_upstream`; the file persists.
+2. Moves files between paths. Path is fixed at write time. Mid-thread
+   subject changes don't relocate the file.
+3. Runs LLM / vision calls during ingest. PDF text via `pdftotext` /
+   `markitdown` is fine; everything else is metadata-only.
+4. Edits frontmatter post-write, except `deleted_upstream` and `labels`
+   (the latter only on `labelAdded` / `labelRemoved`).
+5. Writes outside `workspaces/<ws>/raw/gmail/<account-slug>/...`.
+   Ledger / log appends happen in the dispatcher, not the rendering loop.
+6. Skips the universal blocklist (Lock 5), even if a workspace's
+   `api_query.include` would otherwise pull a blocklisted sender.
+
+## Cross-references
+
+- Workflow contract: `CONTEXT.md` (this directory).
+- sources.yaml schema: `sources-schema.md`.
+- Operator runbook: `_shell/docs/runbook-gmail.md`.
+- Credentials inventory: `_credentials/INVENTORY.md`.

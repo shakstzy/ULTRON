@@ -17,9 +17,15 @@ members:
 - slug: sydney
   slack_user_id: U04QMPSF03Y
   display_name: sydney
+- slug: bm
+  slack_user_id: U055RJ51URE
+  display_name: BM
 - slug: chinghua
   slack_user_id: U056A0YD9PG
   display_name: ChingHua
+- slug: cemal
+  slack_user_id: U07JEV700QJ
+  display_name: cemal
 - slug: julien
   slack_user_id: U07V99QMTV5
   display_name: julien じゅりえん
@@ -33,5 +39,5 @@ members:
   slack_user_id: USLACKBOT
   display_name: Slackbot
 first_seen: '2026-05-02T22:28:41-05:00'
-last_updated: '2026-05-02T22:28:41-05:00'
+last_updated: '2026-05-02T22:30:41-05:00'
 ---

@@ -36,14 +36,16 @@ Priority order, applied once per contact at first sight, recorded in
 1. **Apple Contacts full name** via `Contacts.framework` (PyObjC). NFKD to
    ASCII, lowercase, runs of non-`[a-z0-9]` collapsed to `-`, max 40 chars.
 2. **Email local-part + domain stem**: `sydney@eclipse.audio` →
-   `sydney-eclipse`. Domain stem is the first label of the registrable domain.
+   `sydney-eclipse`. Domain stem is first label of the registrable domain.
 3. **E.164 phone**: `+15125551234` → `phone-15125551234`.
 4. **Hash fallback**: `unknown-<8-hex blake3 of identifier>`.
 
-Group slug: display name if set (kebab-case), else `group-<8-hex blake3 of
-chat.guid>`. `chat.guid` is the stable identity; member churn does not
-change the slug. If Apple Contacts permission is denied, fall back through
-priorities 2 to 4; do not fail.
+If priorities 1 to 3 yield an empty or dash-only slug after normalization
+(emoji-only contact names, all-non-ASCII handles), drop to priority 4.
+Group slug: display name kebab-cased if set, else
+`group-<8-hex blake3 of chat.guid>`. `chat.guid` is stable identity; member
+churn does not change the slug. Contacts permission denied: fall through
+2 to 4; never fail.
 
 ## D. Frontmatter (LOCK 4)
 Universal envelope (REQUIRED) + iMessage-specific keys:
@@ -78,17 +80,20 @@ attachments:
     attachment_path: _attachments/a3f8d901c2e7.heic   # null if not copied
     source_missing: false                 # true if iCloud-pruned or migrated
 attachment_pruned: false                  # true if any attachment skipped due to copy budget
-chat_db_message_ids: { min: 12483, max: 13901 }
+chat_message_guids_count: 142             # advisory; chat.message.guid set captured for this month
 deleted_upstream: null
 superseded_by: null
 ---
 ```
 
-Field rules: `chat_db_message_ids` rebuilds this month deterministically.
-Attachments listed even when `copied_to_raw: false` (sha256 + size_bytes
-preserved for future copy reconciliation). Reactions live inline in the
-body, not in `attachments`. Edit history beyond current text deferred to
-v1.5 (see SETUP.md).
+Field rules: attachments listed even when `copied_to_raw: false` (sha256 +
+size_bytes preserved for later copy reconciliation). Reactions live inline
+in the body, not in `attachments`. Edit history beyond current text
+deferred to v1.5 (SETUP.md). When `message.text` is null (frequent on
+macOS 13+), parse the `attributedBody` typedstream blob to recover text;
+empty body is acceptable only when both columns are null. ROWID-based
+identity (min/max) is intentionally NOT stored: ROWIDs reset and gaps
+exist; `chat.message.guid` is the stable identity.
 
 ## E. Body format (LOCK 5)
 ```markdown
@@ -111,7 +116,9 @@ v1.5 (see SETUP.md).
 ```
 
 Conventions:
-- Day headers: `## YYYY-MM-DD (DayOfWeek)`, local TZ of message timestamps.
+- **Canonical timezone**: `America/Chicago` for day-bucketing and `HH:MM` rendering. Per-workspace override via `sources.yaml.imessage.timezone`. Never use machine-local TZ; that breaks dedup when the host travels.
+- **Mac absolute time**: chat.db `date` columns are nanoseconds since 2001-01-01T00:00:00Z (pre-10.13 was seconds, detect by magnitude). Convert deterministically before bucketing.
+- Day headers: `## YYYY-MM-DD (DayOfWeek)` in canonical TZ.
 - Message line: `**HH:MM — sender:** <body>`. Sender is Apple Contacts display name, or `me` for outgoing.
 - Reactions / tapbacks: `[reaction: <type> to "<original snippet ≤ 60 chars>"]`. Types: `love`, `like`, `dislike`, `laugh`, `emphasize`, `question`. Removed reactions are not rendered (latest state wins).
 - Replies: `> **HH:MM — sender (replying to "<snippet>"):** <body>`.
@@ -138,11 +145,11 @@ here.
 ## G. Attachment copy strategy (LOCK 7)
 For each attachment in a month being rendered:
 
-1. Compute `attachment_id` = first 12 hex chars of `blake3(filename + size_bytes + ROWID)`.
-2. Track running per-month copy total.
-3. If running total + attachment size < 100 MB: copy from `~/Library/Messages/Attachments/<...>` to `raw/imessage/<individuals|groups>/<slug>/<YYYY>/_attachments/<attachment_id>.<ext>`. Set `copied_to_raw: true`, `attachment_path: _attachments/<id>.<ext>`.
-4. If running total ≥ 100 MB: skip copy. Set `copied_to_raw: false`, `attachment_path: null`. Capture `sha256` and `size_bytes`. Set `attachment_pruned: true` on the month-file frontmatter.
-5. If source binary missing (iCloud pruned, migration loss): set `copied_to_raw: false`, `attachment_path: null`, `source_missing: true`. Log warning. Do not fail.
+1. Compute `attachment_id` = first 16 hex chars of `blake3(attachment.guid OR transfer_name OR filename, size_bytes_or_zero, attachment.ROWID)`. `attachment.guid` is the stable identity when present; ROWID is the chat.db `attachment` table row, NOT `message.ROWID`. `filename` and `size_bytes` may both be null while Messages is mid-download; record `state: downloading` in metadata and retry next run.
+2. Track running per-month copy total in bytes.
+3. If `running_total + size_bytes ≤ 100 MB`: copy from `~/Library/Messages/Attachments/<...>` to `raw/imessage/<individuals|groups>/<slug>/<YYYY>/_attachments/<attachment_id>.<ext>`. Set `copied_to_raw: true`, `attachment_path: _attachments/<id>.<ext>`.
+4. If `running_total + size_bytes > 100 MB` (strict): skip copy. Set `copied_to_raw: false`, `attachment_path: null`. Capture `sha256` and `size_bytes` IF source readable; both may be null when source is missing. Set `attachment_pruned: true` on the month-file frontmatter.
+5. If source binary missing (iCloud pruned, migration loss): `copied_to_raw: false`, `attachment_path: null`, `source_missing: true`, `sha256: null`. Log warning. Do not fail.
 6. Collision guard: if `_attachments/<id>.<ext>` exists with a different sha256, log warning and skip the copy. Never overwrite.
 
 ## H. Cursor + dedup (LOCK 8)

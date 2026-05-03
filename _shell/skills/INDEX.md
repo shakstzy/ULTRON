@@ -9,6 +9,7 @@ Project-local skills for ULTRON. Each skill lives at `_shell/skills/<name>/SKILL
 | **link** | Assert structured relationships between entities (`colleague`, `reports_to`, `invested_in`, etc.) | "link", "related to", "X works with Y", "X reports to Y" | yes |
 | **schedule** | Generate / load / unload launchd plists from `schedule.yaml` files | "schedule", "every day", "load cron", "show me what's scheduled" | yes |
 | **contacts-sync** | Sync Apple Contacts → `_global/entities/people/` canonical stubs | "sync contacts", "update people", "import my contacts" | yes |
+| **reddit** | Read Reddit (search, listings, post + comments, users, subreddit info) via stdlib Python CLI hitting `*.json` endpoints | "what's on r/X", "search reddit for X", "summarize this reddit thread", "is r/X active", any `reddit.com/comments/...` URL | yes |
 
 ## How skills are wired
 

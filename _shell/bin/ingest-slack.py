@@ -913,6 +913,8 @@ def process_container(*, client: SlackClient, container: dict,
                          f"{latest_ts_seen:.6f}")
         return summary
 
+    destinations_touched: set[str] = set()
+
     thread_cache: dict[str, list[dict]] = {}
     for m in parents:
         if m.get("thread_ts") and m.get("thread_ts") == m.get("ts") \
@@ -1003,6 +1005,7 @@ def process_container(*, client: SlackClient, container: dict,
         key = f"slack:{team_id}:{container['id']}:{day.isoformat()}"
 
         for ws in destinations:
+            destinations_touched.add(ws)
             path = day_file_path(ws, workspace_slug, container, day)
             existing = ledger_index_by_ws.get(ws, {}).get(key)
             # Skip only if BOTH the ledger row matches AND the file is
@@ -1043,8 +1046,6 @@ def process_container(*, client: SlackClient, container: dict,
                 summary["files_written"] += 1
                 continue
             write_day_file(path, frontmatter, body)
-            update_channel_profile(ws, workspace_slug, container,
-                                   sorted(participant_ids), users)
             append_ledger(ws, {
                 "source": "slack", "key": key, "content_hash": body_hash,
                 "raw_path": str(path.relative_to(ULTRON_ROOT / "workspaces" / ws)),
@@ -1053,6 +1054,23 @@ def process_container(*, client: SlackClient, container: dict,
             })
             ledger_index_by_ws.setdefault(ws, {})[key] = body_hash
             summary["files_written"] += 1
+
+    if not dry_run:
+        # Refresh channel _profile.md once per destination workspace, even
+        # when every day-file deduped (so member churn / topic changes still
+        # land). Lock 7 frontmatter is the robot's responsibility.
+        if container["type"] == "channel":
+            all_participants = sorted({
+                m.get("user") for m in msgs if m.get("user")
+            })
+            for ws in destinations_touched:
+                try:
+                    update_channel_profile(ws, workspace_slug, container,
+                                           all_participants, users)
+                except Exception as exc:
+                    sys.stderr.write(
+                        f"  channel profile update failed for {ws}: {exc}\n"
+                    )
 
     if not dry_run and latest_ts_seen is not None:
         write_cursor(workspace_slug, _container_cursor_slug(container),

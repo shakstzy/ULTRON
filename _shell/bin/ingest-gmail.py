@@ -881,14 +881,21 @@ def collect_threads_first_run(svc, q: str, max_items: int | None) -> tuple[set[s
         if page_token:
             kwargs["pageToken"] = page_token
         resp = _retry(lambda: svc.users().messages().list(**kwargs).execute())
-        for m in resp.get("messages", []) or []:
+        page_msgs = resp.get("messages", []) or []
+        consumed_in_page = 0
+        for m in page_msgs:
+            consumed_in_page += 1
             tid = m.get("threadId")
             if tid:
                 thread_ids.add(tid)
             if len(thread_ids) >= cap:
                 break
         if len(thread_ids) >= cap:
-            cap_clipped = bool(resp.get("nextPageToken")) or cap_clipped
+            # cap_clipped if there are more results upstream — either more
+            # pages or unconsumed messages remaining in THIS page.
+            unconsumed_in_page = len(page_msgs) - consumed_in_page
+            if resp.get("nextPageToken") or unconsumed_in_page > 0:
+                cap_clipped = True
             break
         page_token = resp.get("nextPageToken")
         if not page_token:
@@ -958,9 +965,13 @@ def collect_history_events(svc, start_history_id: str, max_items: int | None) ->
         if not page_token:
             break
 
-    # If a thread is in `added`, drop it from `labelled` (will be processed
-    # via the normal pipeline anyway).
+    # Dedup: a thread that was added (or just relabeled) and then deleted in
+    # the same window should be processed only as deleted. This also prevents
+    # the labelled-then-deleted overlap where thread.get would 404 first and
+    # waste an error-budget slot.
+    added -= deleted
     labelled -= added
+    labelled -= deleted
     return added, deleted, labelled, cap_clipped
 
 
@@ -1083,18 +1094,24 @@ def process_thread(svc, tid: str, account: str, workspaces_config: dict,
             userId="me", id=tid, format="full"
         ).execute())
     except Exception as exc:
+        # 404 = thread was deleted upstream between history.list and thread.get.
+        # Treat as a deliberate skip (the messagesDeleted event handler will
+        # tombstone any existing copies). Returning errored=True here would
+        # permanently block cursor advancement.
+        from googleapiclient.errors import HttpError
+        if isinstance(exc, HttpError) and getattr(exc.resp, "status", None) == 404:
+            run_log.write(f"  skip tid={tid[:8]} reason=thread-404\n")
+            return written, False
         with errors_log_path().open("a") as f:
             f.write(f"{datetime.now(timezone.utc).isoformat()} thread.get tid={tid} {type(exc).__name__}: {exc}\n")
         run_log.write(f"  ERROR tid={tid[:8]} {type(exc).__name__}: {exc}\n")
         return written, True
 
-    skip_reason = pre_filter_skip(thread_payload)
-    if skip_reason:
-        run_log.write(f"  skip tid={tid[:8]} reason={skip_reason}\n")
-        return written, False
-
+    # Lock 7: refresh `labels` in any existing copies BEFORE pre_filter_skip.
+    # A label change can cause a previously-ingested thread to fall under the
+    # pre-filter (e.g. label SPAM gets added) — its existing copies still need
+    # their labels frontmatter updated to reflect the new state.
     msgs = thread_payload.get("messages", [])
-    subject = (header_val(msgs[0], "Subject") if msgs else "") or ""
     labels: list[str] = []
     seen: set[str] = set()
     for m in msgs:
@@ -1102,14 +1119,18 @@ def process_thread(svc, tid: str, account: str, workspaces_config: dict,
             if lbl not in seen:
                 seen.add(lbl)
                 labels.append(lbl)
-    participants = parse_participants(thread_payload, account)
-
-    # Lock 7: refresh `labels` in any existing copies before the dedup gate.
-    # Handles labelAdded / labelRemoved events whose bodies are unchanged.
     if not args.dry_run:
         n_lbl = update_labels_in_existing_files(tid, account, labels, workspaces_config)
         if n_lbl:
             run_log.write(f"  LABELS-UPDATE tid={tid[:8]} updated={n_lbl} file(s)\n")
+
+    skip_reason = pre_filter_skip(thread_payload)
+    if skip_reason:
+        run_log.write(f"  skip tid={tid[:8]} reason={skip_reason}\n")
+        return written, False
+
+    subject = (header_val(msgs[0], "Subject") if msgs else "") or ""
+    participants = parse_participants(thread_payload, account)
 
     thread_for_route = {
         "account": account,
@@ -1336,15 +1357,33 @@ def main() -> int:
         for ws, n in per.items():
             written_per_ws[ws] = written_per_ws.get(ws, 0) + n
 
+    # messagesDeleted fires for ANY single message in a thread (including
+    # discarded drafts), not just for full thread deletion. Verify the thread
+    # is fully gone (thread.get → 404) before tombstoning. If the thread is
+    # still alive, the delete event was for a sub-message; do nothing.
     deleted_marked = 0
     if not args.dry_run:
+        from googleapiclient.errors import HttpError
         for tid in process_deleted:
-            n = mark_deleted_upstream(tid, account, workspaces_config, ingested_at)
-            deleted_marked += n
-            run_log.write(f"  DELETE-MARK tid={tid[:8]} updated={n} file(s)\n")
+            try:
+                _retry(lambda: svc.users().threads().get(
+                    userId="me", id=tid, format="minimal"
+                ).execute())
+                run_log.write(f"  DELETE-SKIP tid={tid[:8]} reason=thread-still-alive\n")
+            except HttpError as exc:
+                if getattr(exc.resp, "status", None) == 404:
+                    n = mark_deleted_upstream(tid, account, workspaces_config, ingested_at)
+                    deleted_marked += n
+                    run_log.write(f"  DELETE-MARK tid={tid[:8]} updated={n} file(s)\n")
+                else:
+                    run_log.write(f"  DELETE-ERROR tid={tid[:8]} HTTP {exc.resp.status}\n")
+                    process_errors += 1
+            except Exception as exc:
+                run_log.write(f"  DELETE-ERROR tid={tid[:8]} {type(exc).__name__}: {exc}\n")
+                process_errors += 1
     else:
         for tid in process_deleted:
-            run_log.write(f"  DRY DELETE-MARK tid={tid[:8]}\n")
+            run_log.write(f"  DRY DELETE-MARK tid={tid[:8]} (would verify via thread.get)\n")
 
     # Cursor advance — Lock 7. Only when we are confident every event in the
     # current window was either successfully processed or deliberately skipped

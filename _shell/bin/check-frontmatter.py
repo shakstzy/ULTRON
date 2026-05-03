@@ -41,6 +41,11 @@ REQUIRED_KEYS = {
 # ingested.jsonl carries it instead).
 EXEMPT_SOURCES = {"manual", "apple-health", "plaid", "plaid-export"}
 
+# Profile stubs are identity / metadata files, not data files. They have
+# their own per-source frontmatter contract (see format.md Lock 7) and are
+# exempt from the universal envelope.
+EXEMPT_FILENAMES = {"_profile.md"}
+
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.+?)\n---", re.DOTALL)
 KEY_RE = re.compile(r"^([A-Za-z_][A-Za-z0-9_]*)\s*:", re.MULTILINE)
 
@@ -77,6 +82,8 @@ def find_violations(scope: Path) -> list[tuple[Path, set[str]]]:
                 continue
             if p.suffix.lower() != ".md":
                 continue
+            if p.name in EXEMPT_FILENAMES:
+                continue
             src = file_source(p)
             if src is None or src in EXEMPT_SOURCES:
                 continue
@@ -110,6 +117,8 @@ def main() -> int:
             raw_dir = target / "raw"
             if raw_dir.exists():
                 for p in raw_dir.rglob("*.md"):
+                    if p.name in EXEMPT_FILENAMES:
+                        continue
                     src = file_source(p)
                     if src is None or src in EXEMPT_SOURCES:
                         continue

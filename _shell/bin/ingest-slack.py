@@ -40,6 +40,11 @@ CREDENTIALS_DIR = ULTRON_ROOT / "_credentials"
 CURSOR_DIR = ULTRON_ROOT / "_shell" / "cursors" / "slack"
 
 DEFAULT_LOOKBACK_DAYS = int(os.environ.get("ULTRON_SLACK_LOOKBACK_DAYS", "365"))
+# Sliding-window overlap: every incremental run re-fetches the last N days
+# from the cursor backwards. This catches late thread replies whose parent
+# is older than the cursor (parents are not returned by conversations.history
+# unless their ts is within [oldest, latest]). Ledger dedup keeps writes idempotent.
+INCREMENTAL_OVERLAP_DAYS = int(os.environ.get("ULTRON_SLACK_OVERLAP_DAYS", "7"))
 
 LOCAL_TZ = dt.datetime.now().astimezone().tzinfo
 SLACK_BASE = "https://slack.com/api"
@@ -224,6 +229,30 @@ SLACK_ITALIC_RE = re.compile(r"(?<![A-Za-z0-9])_([^_\n]+)_(?![A-Za-z0-9])")
 SLACK_STRIKE_RE = re.compile(r"~([^~\n]+)~")
 
 
+CODE_FENCE_RE = re.compile(r"```.*?```", re.DOTALL)
+CODE_INLINE_RE = re.compile(r"`[^`\n]+`")
+
+
+def _protect_code(text: str) -> tuple[str, list[str]]:
+    """Replace fenced + inline code with placeholders so mrkdwn substitutions
+    don't corrupt them. Returns (masked_text, originals_in_order)."""
+    saved: list[str] = []
+
+    def repl(m):
+        saved.append(m.group(0))
+        return f"\x00CODE{len(saved) - 1}\x00"
+
+    text = CODE_FENCE_RE.sub(repl, text)
+    text = CODE_INLINE_RE.sub(repl, text)
+    return text, saved
+
+
+def _restore_code(text: str, saved: list[str]) -> str:
+    for i, original in enumerate(saved):
+        text = text.replace(f"\x00CODE{i}\x00", original)
+    return text
+
+
 def decode_text(text: str, users: UserCache, chan_name_by_id: dict) -> str:
     if not text:
         return ""
@@ -238,13 +267,20 @@ def decode_text(text: str, users: UserCache, chan_name_by_id: dict) -> str:
             return f"#{name}"
         return f"#{chan_name_by_id.get(cid, cid)}"
 
-    text = MENTION_USER_RE.sub(sub_user, text)
-    text = MENTION_CHAN_RE.sub(sub_chan, text)
+    # Slack angle-bracket tokens are NEVER inside literal code spans (Slack
+    # encodes them with HTML entities), so we resolve them on the raw text
+    # first. Then we mask code, run mrkdwn substitutions, and unmask.
     text = LINK_LABELED_RE.sub(r"[\2](\1)", text)
     text = LINK_BARE_RE.sub(r"\1", text)
+    text = MENTION_USER_RE.sub(sub_user, text)
+    text = MENTION_CHAN_RE.sub(sub_chan, text)
+
+    text, saved = _protect_code(text)
     text = SLACK_BOLD_RE.sub(r"**\1**", text)
     text = SLACK_ITALIC_RE.sub(r"*\1*", text)
     text = SLACK_STRIKE_RE.sub(r"~~\1~~", text)
+    text = _restore_code(text, saved)
+
     text = text.replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
     return text
 
@@ -352,16 +388,43 @@ def render_day_body(container: dict, day: dt.date, parents_for_day: list[dict],
 
 
 # ---------------------------------------------------------------------------
-# Lock 6 — pre-filter
+# Lock 6 — pre-filter + state-event normalization
 # ---------------------------------------------------------------------------
+def normalize_state_event(msg: dict) -> dict:
+    """Slack wraps message_changed / message_deleted with the real payload
+    nested under `message` / `previous_message`. Without this normalization,
+    the renderer reads the wrapper's top-level fields (no `user`, no `text`)
+    and emits blank or unknown-sender lines.
+
+    Returns a flat message dict with `original_ts` (the parent's ts), an
+    explicit `subtype`, and `deleted_ts` populated for deletions."""
+    sub = msg.get("subtype")
+    if sub == "message_changed":
+        inner = dict(msg.get("message") or {})
+        inner.setdefault("ts", inner.get("ts") or msg.get("ts"))
+        inner["edited"] = inner.get("edited") or {"ts": msg.get("ts")}
+        inner["original_ts"] = inner.get("ts")
+        return inner
+    if sub == "message_deleted":
+        old = dict(msg.get("previous_message") or {})
+        old["subtype"] = "message_deleted"
+        old["deleted_ts"] = msg.get("event_ts") or msg.get("ts")
+        # Use the original message ts for grouping so the deletion lands in
+        # the day-file the message originally belonged to (Gemini #9).
+        old.setdefault("ts", old.get("ts") or msg.get("ts"))
+        old["original_ts"] = old.get("ts")
+        return old
+    return msg
+
+
 def is_skippable(msg: dict) -> bool:
     if msg.get("bot_id"):
         return True
     sub = msg.get("subtype")
     if sub in SKIP_SUBTYPES:
         return True
-    if sub in {"message_changed", "message_deleted"}:
-        return False
+    if sub == "message_deleted":
+        return False  # render as [deleted at HH:MM]
     if not (msg.get("text") or msg.get("files") or msg.get("thread_ts")):
         return True
     return False
@@ -447,18 +510,34 @@ def read_ledger_index(ws: str) -> dict[str, str]:
 
 
 def append_ledger(ws: str, row: dict) -> None:
+    """Append-only JSONL write. Other ingest robots (gmail, imessage) write
+    to the same per-workspace ledger; flock the file during the append so
+    interleaving runs cannot corrupt the JSONL."""
     p = ledger_path(ws)
     p.parent.mkdir(parents=True, exist_ok=True)
     with p.open("a") as f:
-        f.write(json.dumps(row, separators=(",", ":")) + "\n")
+        try:
+            fcntl.flock(f.fileno(), fcntl.LOCK_EX)
+            f.write(json.dumps(row, separators=(",", ":")) + "\n")
+            f.flush()
+            os.fsync(f.fileno())
+        finally:
+            try:
+                fcntl.flock(f.fileno(), fcntl.LOCK_UN)
+            except OSError:
+                pass
 
 
 def blake3_hex(data: bytes) -> str:
     try:
         import blake3 as _blake3
-        return _blake3.blake3(data).hexdigest()
-    except ImportError:
-        return hashlib.sha256(data).hexdigest()
+    except ImportError as exc:
+        raise RuntimeError(
+            "ingest-slack requires the 'blake3' package for spec-compliant "
+            "content_hash values (format.md Lock 3). Install via "
+            "`pip install blake3` and retry."
+        ) from exc
+    return _blake3.blake3(data).hexdigest()
 
 
 # ---------------------------------------------------------------------------
@@ -624,22 +703,140 @@ def now_iso() -> str:
     return dt.datetime.now(LOCAL_TZ).isoformat(timespec="seconds")
 
 
-def write_day_file(path: Path, frontmatter: dict, body: str) -> None:
+def _atomic_write(path: Path, text: str) -> None:
+    """Write `text` to `path` atomically with fsync on the file before
+    rename. Power-loss durability per Codex #10."""
     path.parent.mkdir(parents=True, exist_ok=True)
-    text = "---\n" + yaml_dump(frontmatter) + "---\n\n" + body
     tmp = path.with_suffix(path.suffix + ".tmp")
-    tmp.write_text(text)
+    with tmp.open("w") as f:
+        f.write(text)
+        f.flush()
+        os.fsync(f.fileno())
     tmp.replace(path)
+
+
+def write_day_file(path: Path, frontmatter: dict, body: str) -> None:
+    text = "---\n" + yaml_dump(frontmatter) + "---\n\n" + body
+    _atomic_write(path, text)
 
 
 def write_profile(path: Path, frontmatter: dict, body: str = "") -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
     text = "---\n" + yaml_dump(frontmatter) + "---\n"
     if body:
         text += "\n" + body.rstrip() + "\n"
-    tmp = path.with_suffix(path.suffix + ".tmp")
-    tmp.write_text(text)
-    tmp.replace(path)
+    _atomic_write(path, text)
+
+
+def workspace_profile_path(ws: str, workspace_slug: str) -> Path:
+    return (ULTRON_ROOT / "workspaces" / ws / "raw" / "slack"
+            / workspace_slug / "_profile.md")
+
+
+def channel_profile_path(ws: str, workspace_slug: str, container: dict) -> Path:
+    base = ULTRON_ROOT / "workspaces" / ws / "raw" / "slack" / workspace_slug
+    if container["type"] == "channel":
+        sub = Path("channels") / container["slug"]
+    elif container["type"] == "dm":
+        sub = Path("dms") / container["other_user_slug"]
+    elif container["type"] == "group-dm":
+        sub = Path("group-dms") / container["slug"]
+    else:
+        raise ValueError(container["type"])
+    return base / sub / "_profile.md"
+
+
+def update_workspace_profile(ws: str, workspace_slug: str, *, team_id: str,
+                             team_name: str | None, team_url: str | None,
+                             me_user_id: str, scopes: list[str] | None,
+                             auth_token_path: str) -> None:
+    """Lock 7 workspace _profile.md. Append-only history for name changes.
+    Body is human-editable and preserved across re-renders."""
+    path = workspace_profile_path(ws, workspace_slug)
+    existing_body = ""
+    name_history: list[dict] = []
+    first_seen = now_iso()
+    if path.exists():
+        try:
+            import yaml  # type: ignore
+            raw = path.read_text()
+            if raw.startswith("---"):
+                _, fm, body = raw.split("---", 2)
+                old = yaml.safe_load(fm) or {}
+                name_history = old.get("slack_workspace_name_history") or []
+                first_seen = old.get("first_seen") or first_seen
+                existing_body = body.strip()
+        except Exception:
+            pass
+    if team_name and not any(h.get("name") == team_name for h in name_history):
+        name_history.append({"name": team_name, "observed_at": now_iso()})
+    fm = {
+        "slack_team_id": team_id,
+        "slack_workspace_slug": workspace_slug,
+        "slack_workspace_name_current": team_name,
+        "slack_workspace_name_history": name_history,
+        "slack_workspace_url": team_url,
+        "me_user_id": me_user_id,
+        "me_canonical_slug": CANONICAL_ME_SLUG,
+        "auth_token_path": auth_token_path,
+        "auth_scopes": scopes or [],
+        "first_seen": first_seen,
+        "last_updated": now_iso(),
+    }
+    write_profile(path, fm, existing_body)
+
+
+def update_channel_profile(ws: str, workspace_slug: str, container: dict,
+                           members: list[str], users: UserCache) -> None:
+    """Lock 7 container _profile.md. Append-only name + member history.
+    Members are passed as a list of user_ids that appeared in this run's
+    parents; the profile snapshots whoever is currently visible."""
+    if container["type"] != "channel":
+        return  # DM / group-dm profile generation deferred to v1.5
+    path = channel_profile_path(ws, workspace_slug, container)
+    raw = container.get("raw") or {}
+    name = container.get("name") or container["slug"]
+    name_history: list[dict] = []
+    first_seen = now_iso()
+    existing_body = ""
+    if path.exists():
+        try:
+            import yaml  # type: ignore
+            data = path.read_text()
+            if data.startswith("---"):
+                _, fm_text, body = data.split("---", 2)
+                old = yaml.safe_load(fm_text) or {}
+                name_history = old.get("channel_name_history") or []
+                first_seen = old.get("first_seen") or first_seen
+                existing_body = body.strip()
+        except Exception:
+            pass
+    if not any(h.get("name") == name for h in name_history):
+        name_history.append({"name": name, "changed_at": now_iso()})
+    members_meta = []
+    for uid in sorted(set(members)):
+        info = users.get(uid)
+        members_meta.append({
+            "slug": info["slug"],
+            "slack_user_id": uid,
+            "display_name": info["display_name"],
+        })
+    fm = {
+        "slack_channel_id": container["id"],
+        "channel_name_current": name,
+        "channel_name_history": name_history,
+        "purpose": (raw.get("purpose") or {}).get("value"),
+        "topic": (raw.get("topic") or {}).get("value"),
+        "created": dt.datetime.fromtimestamp(
+            raw["created"], tz=LOCAL_TZ).isoformat(timespec="seconds")
+            if raw.get("created") else None,
+        "is_archived": bool(raw.get("is_archived")),
+        "archived_at": None,
+        "member_count": raw.get("num_members"),
+        "members": members_meta,
+        "first_seen": first_seen,
+        "last_updated": now_iso(),
+    }
+    write_profile(path, fm, existing_body)
 
 
 # ---------------------------------------------------------------------------

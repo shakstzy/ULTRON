@@ -1,48 +1,30 @@
 #!/usr/bin/env python3
 """
-ingest-gmail.py — per-(source, account) Gmail ingest robot.
+ingest-gmail.py — per-account Gmail ingest robot.
+
+Authoritative spec: _shell/stages/ingest/gmail/format.md
+Workflow contract:  _shell/stages/ingest/gmail/CONTEXT.md
 
 Usage:
-    ingest-gmail.py --account <email> [--run-id <id>] [--dry-run] [--max-items N]
+    ingest-gmail.py --account <email> [--workspaces a,b,c] [--dry-run]
+                    [--show] [--max-items N] [--reset-cursor] [--run-id ID]
 
-Contract (Phase 2/3):
-    1. Load _credentials/gmail-<account-slug>.json (gog-derived authorized-user
-       JSON with refresh_token + shared client_id/client_secret).
-    2. Walk every workspaces/*/config/sources.yaml; collect every gmail block
-       that mentions this account. Build a union Gmail q= query (best-effort
-       server-side filter; route.py does precise routing post-fetch).
-    3. Read cursor at _shell/cursors/gmail/<account-slug>.txt.
-       - First run / empty cursor: use the largest workspace
-         lookback_days_initial value (default 365).
-       - Subsequent runs: use the cursor's "after:" timestamp directly.
-    4. Paginate users.threads.list. For each thread:
-       a. Fetch full thread via users.threads.get(format='full').
-       b. Apply deterministic pre-filter (size, OOO, blocklist, labels, .ics).
-       c. Convert HTML→markdown (html2text), strip quoted history + signatures.
-       d. Compute blake3 content_hash of the body.
-       e. Build universal frontmatter envelope + Gmail-specific fields.
-       f. Call route.py:route(thread, workspaces_config) → destination workspaces.
-       g. For each destination: write the markdown file at
-          workspaces/<ws>/raw/gmail/<account-slug>/<YYYY>/<MM>/<file>.md
-          (stable path => idempotent re-runs overwrite the same file).
-       h. Append ledger row to workspaces/<ws>/_meta/ingested.jsonl
-          (skip if same key + same content_hash already present).
-    5. Advance cursor to the latest internalDate seen.
-    6. Append summary to each affected workspace's _meta/log.md.
-
-Errors:
-    - Auth failure (401/403/invalid_grant): fast-fail with recovery message.
-    - Rate-limit (429/userRateLimitExceeded): exponential backoff, max 3 retries.
-    - Per-thread errors: log to _logs/gmail-errors-<date>.log, continue.
-    - Network errors: 1 retry, then abort.
+One run = one upstream account. flock-locked at
+/tmp/com.adithya.ultron.ingest-gmail-<account-slug>.lock. Cursor stores the
+last-seen Gmail historyId. First run uses messages.list(q=) bounded by
+GMAIL_INITIAL_LOOKBACK_DAYS; subsequent runs use history.list.
 """
 from __future__ import annotations
 
 import argparse
+import base64
+import fcntl
 import json
 import os
 import re
+import subprocess
 import sys
+import tempfile
 import time
 import unicodedata
 from datetime import datetime, timedelta, timezone
@@ -54,15 +36,20 @@ ULTRON_ROOT = Path(os.environ.get("ULTRON_ROOT", str(Path.home() / "ULTRON")))
 INGEST_VERSION = 1
 GMAIL_INITIAL_LOOKBACK_DAYS_DEFAULT = 365
 PRE_FILTER_MAX_BYTES = 25 * 1024 * 1024
+PDF_EXTRACT_MAX_BYTES = 10 * 1024 * 1024
 SUBJECT_SLUG_MAX = 60
 THREAD_ID_PREFIX_LEN = 8
 
-# Per-thread soft cap: avoid pathological signature loops eating the whole run.
-PER_THREAD_TIMEOUT_S = 30
+# Lock 5 MIME allowlist.
+ALLOWED_MIME_PREFIXES = (
+    "text/plain",
+    "text/html",
+    "application/pdf",
+    "image/",
+    "multipart/",
+)
 
-# Allow `from _shell.stages.ingest.gmail.route import route`-style import even
-# though _shell isn't a Python package (no __init__.py). Slot the route.py dir
-# directly onto sys.path.
+# Allow `from route import route` even though _shell isn't a Python package.
 _ROUTE_DIR = ULTRON_ROOT / "_shell" / "stages" / "ingest" / "gmail"
 if str(_ROUTE_DIR) not in sys.path:
     sys.path.insert(0, str(_ROUTE_DIR))
@@ -78,11 +65,11 @@ from route import route as route_thread  # noqa: E402
 # ---------------------------------------------------------------------------
 
 def account_slug(email: str) -> str:
-    """`adithya@outerscope.xyz` -> `adithya-outerscope`."""
+    """`adithya@outerscope.xyz` -> `adithya-outerscope`. Lock 1."""
     local, _, domain = email.lower().strip().partition("@")
     stem = domain.split(".", 1)[0] if domain else ""
     s = f"{local}-{stem}" if stem else local
-    return re.sub(r"[^a-z0-9-]", "-", s).strip("-") or "unknown"
+    return re.sub(r"[^a-z0-9-]+", "-", s).strip("-") or "unknown"
 
 
 def cred_path_for(account: str) -> Path:
@@ -97,6 +84,12 @@ def cursor_path_for(account: str) -> Path:
 
 def errors_log_path() -> Path:
     p = ULTRON_ROOT / "_logs" / f"gmail-errors-{datetime.now().strftime('%Y-%m-%d')}.log"
+    p.parent.mkdir(parents=True, exist_ok=True)
+    return p
+
+
+def run_log_path(account: str, run_id: str) -> Path:
+    p = ULTRON_ROOT / "_logs" / f"gmail-{account_slug(account)}-{run_id}.log"
     p.parent.mkdir(parents=True, exist_ok=True)
     return p
 
@@ -128,20 +121,19 @@ def load_all_workspaces_config() -> dict[str, dict]:
 
 
 def collect_account_rules(account: str, workspaces_config: dict[str, dict]) -> tuple[list[str], list[str], int]:
-    """For this account, return (combined_includes, combined_excludes, initial_lookback_days).
-
-    Tolerates:
-      * NEW shape:  sources.gmail.accounts = [{account, api_query: {include, exclude}}]
-      * LEGACY:     sources: [{type: gmail, config: {account, labels, exclude_labels, lookback_days_initial}}]
+    """Per-account union of include/exclude predicates across all subscribing
+    workspaces. Returns (includes, excludes, lookback_days_initial). The
+    `lookback_days_initial` is preserved for back-compat with tests, but
+    main() reads `GMAIL_INITIAL_LOOKBACK_DAYS` env var per Lock 7.
     """
     includes: list[str] = []
     excludes: list[str] = []
-    lookback_seen: int | None = None  # None until any workspace specifies a value
+    lookback_seen: int | None = None
 
     for ws, cfg in workspaces_config.items():
         sources = cfg.get("sources")
 
-        # NEW dict shape
+        # Preferred shape: sources.gmail.accounts: [{account, api_query}]
         if isinstance(sources, dict):
             block = sources.get("gmail")
             if not block:
@@ -163,14 +155,13 @@ def collect_account_rules(account: str, workspaces_config: dict[str, dict]) -> t
                             if isinstance(li, int):
                                 lookback_seen = li if lookback_seen is None else max(lookback_seen, li)
             else:
-                # Top-level api_query (no accounts list): apply if any account matches.
                 api = (block.get("api_query") or {}) if isinstance(block, dict) else {}
                 if api.get("include") or api.get("exclude"):
                     includes.extend(api.get("include") or [])
                     excludes.extend(api.get("exclude") or [])
             continue
 
-        # LEGACY list shape
+        # Legacy shape: sources: [{type: gmail, config: {...}}]
         if isinstance(sources, list):
             for s in sources:
                 if not isinstance(s, dict) or s.get("type") != "gmail":
@@ -178,7 +169,6 @@ def collect_account_rules(account: str, workspaces_config: dict[str, dict]) -> t
                 conf = s.get("config") or {}
                 if (conf.get("account") or "") != account:
                     continue
-                # Translate labels[]/exclude_labels[] to label: predicates.
                 for lbl in conf.get("labels") or []:
                     includes.append(f"label:{lbl}")
                 for lbl in conf.get("exclude_labels") or []:
@@ -192,16 +182,11 @@ def collect_account_rules(account: str, workspaces_config: dict[str, dict]) -> t
 
 
 # ---------------------------------------------------------------------------
-# Predicate -> Gmail q= translation
+# Predicate -> Gmail q= translation (best-effort superset; route.py applies
+# the precise rules post-fetch)
 # ---------------------------------------------------------------------------
 
 def _predicate_to_q(p: str) -> str | None:
-    """Translate one ULTRON predicate to a Gmail q= clause; None = untranslatable.
-
-    Translations are best-effort superset filters; route.py applies the precise
-    rule downstream. We drop predicates that would translate to something Gmail
-    interprets ambiguously (anything with a wildcard left in the result).
-    """
     p = p.strip()
     if not p:
         return None
@@ -209,29 +194,27 @@ def _predicate_to_q(p: str) -> str | None:
         return f"label:{p.split(':', 1)[1].strip()}"
     if p.startswith(("from:", "to:", "cc:")):
         role, pat = p.split(":", 1)
-        pat = pat.strip()
         # Strip wildcard noise. Gmail q= treats * literally.
         # `from:*@eclipse.audio` -> `from:eclipse.audio`
         # `from:noreply@*`       -> `from:noreply`
-        # `from:*@*`             -> drop (no signal)
-        pat = pat.replace("*", "").strip("@")
+        # `from:*@*`             -> drop
+        pat = pat.strip().replace("*", "").strip("@")
         if not pat or pat.count("*") > 0:
             return None
         return f"{role}:{pat}"
     if p.lower().startswith("subject:contains:"):
         val = p.split(":", 2)[2].strip()
         return f'subject:"{val}"' if val else None
-    # subject:regex:..., any:..., others — best handled post-fetch by route.py.
     return None
 
 
 def build_q(includes: list[str], excludes: list[str], after_ts: int | None) -> str:
-    # Dedupe while preserving first-seen order.
     def _dedup(seq):
         seen, out = set(), []
         for x in seq:
             if x and x not in seen:
-                seen.add(x); out.append(x)
+                seen.add(x)
+                out.append(x)
         return out
 
     inc_q = _dedup(t for t in (_predicate_to_q(p) for p in includes) if t)
@@ -257,7 +240,7 @@ def build_service(account: str):
     if not cred_path.exists():
         raise SystemExit(
             f"ingest-gmail: no credentials at {cred_path.relative_to(ULTRON_ROOT)}.\n"
-            f"  Recovery: see _shell/docs/runbook-gmail.md (\"wiring a new account\")."
+            f"  Recovery: see _credentials/INVENTORY.md."
         )
 
     from googleapiclient.discovery import build
@@ -277,7 +260,7 @@ def build_service(account: str):
     except Exception as exc:
         raise SystemExit(
             f"ingest-gmail: auth failed for {account}: {exc}\n"
-            f"  Likely cause: refresh_token revoked or expired.\n"
+            f"  Likely: refresh_token revoked or expired.\n"
             f"  Recovery: re-mint via gog (`gog auth login -a {account}`),\n"
             f"            update {cred_path.relative_to(ULTRON_ROOT)} with the new\n"
             f"            refresh_token, then re-run."
@@ -286,8 +269,7 @@ def build_service(account: str):
 
 
 def _retry(fn, *, attempts: int = 3, base_sleep: float = 2.0):
-    """Exponential backoff for 429 / userRateLimitExceeded / transient 5xx."""
-    last_exc = None
+    last_exc: Exception | None = None
     for i in range(attempts):
         try:
             return fn()
@@ -306,13 +288,21 @@ def _retry(fn, *, attempts: int = 3, base_sleep: float = 2.0):
 
 
 # ---------------------------------------------------------------------------
-# Pre-filter
+# Pre-filter (Lock 5)
 # ---------------------------------------------------------------------------
 
-OOO_RE = re.compile(r"^(out of office|automatic reply|undeliverable)\b", re.IGNORECASE)
-NOREPLY_RE = re.compile(r"(noreply|no-reply|no_reply)@", re.IGNORECASE)
-BLOCKLIST_DOMAINS = {
+OOO_RE = re.compile(
+    r"^(out of office|automatic reply|undeliverable|delivery (status )?notification)",
+    re.IGNORECASE,
+)
+NOREPLY_RE = re.compile(
+    r"(?:noreply|no-reply|no_reply|donotreply|do-not-reply|mailer-daemon|postmaster)@",
+    re.IGNORECASE,
+)
+BLOCKLIST_EXACT = {
     "calendar-notification@google.com",
+}
+BLOCKLIST_DOMAINS = {
     "calendar.google.com",
     "bounces.amazonses.com",
     "accounts.google.com",
@@ -320,11 +310,15 @@ BLOCKLIST_DOMAINS = {
 
 
 def is_blocklisted_email(addr: str) -> bool:
-    addr = (addr or "").lower()
+    addr = (addr or "").lower().strip()
+    if not addr:
+        return False
+    if addr in BLOCKLIST_EXACT:
+        return True
     if NOREPLY_RE.search(addr):
         return True
     for d in BLOCKLIST_DOMAINS:
-        if addr.endswith("@" + d) or addr == d:
+        if addr.endswith("@" + d):
             return True
     return False
 
@@ -350,8 +344,27 @@ def has_only_ics_attachments(thread_payload: dict) -> bool:
     return has_attach and only_ics
 
 
+def all_attachments_outside_allowlist(thread_payload: dict) -> bool:
+    """True iff thread has at least one attachment AND every attachment's
+    MIME is outside the allowlist."""
+    saw = False
+    for msg in thread_payload.get("messages", []):
+        for part in walk_parts(msg.get("payload") or {}):
+            if not part.get("filename"):
+                continue
+            saw = True
+            mime = (part.get("mimeType") or "").lower()
+            allowed = any(
+                mime == prefix or (prefix.endswith("/") and mime.startswith(prefix))
+                for prefix in ALLOWED_MIME_PREFIXES
+            )
+            if allowed:
+                return False
+    return saw
+
+
 def pre_filter_skip(thread_payload: dict) -> str | None:
-    """Return a skip reason or None to keep."""
+    """Return a skip reason string, or None to keep."""
     if total_attachment_size(thread_payload) > PRE_FILTER_MAX_BYTES:
         return "size>25MB"
 
@@ -359,7 +372,6 @@ def pre_filter_skip(thread_payload: dict) -> str | None:
     if not msgs:
         return "empty-thread"
 
-    # Subject of the FIRST message
     first_subj = header_val(msgs[0], "Subject") or ""
     if OOO_RE.match(first_subj):
         return "out-of-office"
@@ -368,10 +380,9 @@ def pre_filter_skip(thread_payload: dict) -> str | None:
     for m in msgs:
         for lbl in m.get("labelIds") or []:
             label_set.add(lbl)
-    if "SPAM" in label_set or "TRASH" in label_set:
-        return "labeled-spam-or-trash"
+    if label_set and label_set.issubset({"SPAM", "TRASH"}):
+        return "labels-all-spam-or-trash"
 
-    # All-from-blocklist check (every message's From is blocklisted).
     all_blocked = True
     saw_any = False
     for m in msgs:
@@ -389,11 +400,14 @@ def pre_filter_skip(thread_payload: dict) -> str | None:
     if has_only_ics_attachments(thread_payload):
         return "calendar-invite-only"
 
+    if all_attachments_outside_allowlist(thread_payload):
+        return "all-attachments-outside-mime-allowlist"
+
     return None
 
 
 # ---------------------------------------------------------------------------
-# Thread parsing
+# Thread parsing helpers
 # ---------------------------------------------------------------------------
 
 def header_val(message: dict, name: str) -> str | None:
@@ -404,7 +418,6 @@ def header_val(message: dict, name: str) -> str | None:
 
 
 def walk_parts(payload: dict):
-    """Yield every part (recursively) from a Gmail message payload."""
     if not payload:
         return
     yield payload
@@ -413,7 +426,6 @@ def walk_parts(payload: dict):
 
 
 def decode_part_body(part: dict) -> str:
-    import base64
     body = (part.get("body") or {}).get("data") or ""
     if not body:
         return ""
@@ -455,19 +467,17 @@ SIGNATURE_DELIM_RE = re.compile(r"^-- ?$", re.MULTILINE)
 def strip_quoted_history(body: str) -> str:
     if not body:
         return body
-    # Cut at "On <date> ... wrote:" if present.
     m = ON_WROTE_RE.search(body)
     if m:
         body = body[: m.start()].rstrip()
-    # Drop trailing blocks of '> ' lines.
     lines = body.splitlines()
     while lines and QUOTE_LINE_RE.match(lines[-1]):
         lines.pop()
-    body = "\n".join(lines).rstrip()
-    return body
+    return "\n".join(lines).rstrip()
 
 
 def strip_signature(body: str) -> str:
+    """Cut at first canonical RFC 3676 '-- ' delimiter. NO heuristic stripping."""
     if not body:
         return body
     m = SIGNATURE_DELIM_RE.search(body)
@@ -477,10 +487,10 @@ def strip_signature(body: str) -> str:
 
 
 def parse_participants(thread_payload: dict, account: str) -> list[dict]:
-    """Aggregate participants across the thread with role tags."""
+    """Aggregate participants across the thread with role tags. Lock 3."""
     seen: dict[str, dict] = {}
     for msg in thread_payload.get("messages", []):
-        for role_header, role_tag in (("From", "from"), ("To", "to"), ("Cc", "cc")):
+        for role_header, role_tag in (("From", "from"), ("To", "to"), ("Cc", "cc"), ("Bcc", "bcc")):
             raw = header_val(msg, role_header) or ""
             for part in raw.split(","):
                 name, addr = parseaddr(part.strip())
@@ -496,18 +506,20 @@ def parse_participants(thread_payload: dict, account: str) -> list[dict]:
 
 
 def parse_attachments(thread_payload: dict) -> list[dict]:
+    """Lock 3. Includes message_index for each attachment."""
     out: list[dict] = []
-    for msg in thread_payload.get("messages", []):
+    for idx, msg in enumerate(thread_payload.get("messages", [])):
         for part in walk_parts(msg.get("payload") or {}):
             fn = part.get("filename") or ""
             if not fn:
                 continue
             body = part.get("body") or {}
             out.append({
-                "id": body.get("attachmentId", "")[:8] or "",
+                "id": (body.get("attachmentId") or "")[:8] or "",
                 "filename": fn,
                 "size_bytes": body.get("size") or 0,
                 "mime": part.get("mimeType", ""),
+                "message_index": idx,
             })
     return out
 
@@ -516,6 +528,7 @@ def thread_dates(thread_payload: dict) -> tuple[datetime | None, datetime | None
     msgs = thread_payload.get("messages", [])
     if not msgs:
         return None, None
+
     def dt(msg) -> datetime | None:
         ts = msg.get("internalDate")
         if ts:
@@ -530,6 +543,7 @@ def thread_dates(thread_payload: dict) -> tuple[datetime | None, datetime | None
             except Exception:
                 return None
         return None
+
     dates = [d for d in (dt(m) for m in msgs) if d is not None]
     if not dates:
         return None, None
@@ -537,11 +551,13 @@ def thread_dates(thread_payload: dict) -> tuple[datetime | None, datetime | None
 
 
 # ---------------------------------------------------------------------------
-# Slug + path
+# Slug + path (Lock 1)
 # ---------------------------------------------------------------------------
 
 SUBJECT_PREFIX_RE = re.compile(
-    r"^(?:re|fwd?|fw|aw)\s*:\s*|^\[(?:external|confidential)\]\s*|^auto\s*:\s*",
+    r"^(?:re|fwd?|fw|aw|res|tr)\s*:\s*"
+    r"|^\[(?:external|ext|confidential|spam)\]\s*"
+    r"|^auto\s*:\s*",
     re.IGNORECASE,
 )
 
@@ -569,26 +585,82 @@ def relative_thread_path(account: str, first_dt: datetime, subj_slug: str, threa
 
 
 # ---------------------------------------------------------------------------
-# Markdown rendering
+# PDF text extraction (Lock 4 rule 6) — pdftotext preferred, markitdown fallback
 # ---------------------------------------------------------------------------
 
-def render_thread_markdown(thread_payload: dict, account: str) -> tuple[str, str]:
-    """Returns (body_markdown, subject)."""
+def extract_pdf_text(pdf_bytes: bytes) -> str | None:
+    """Try pdftotext, then markitdown. Return None on any failure. No LLM."""
+    if not pdf_bytes:
+        return None
+    with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as f:
+        f.write(pdf_bytes)
+        tmp_path = f.name
+    try:
+        try:
+            result = subprocess.run(
+                ["pdftotext", "-layout", tmp_path, "-"],
+                capture_output=True, timeout=30, text=True, check=False,
+            )
+            if result.returncode == 0 and result.stdout.strip():
+                return result.stdout.strip()
+        except (FileNotFoundError, subprocess.TimeoutExpired):
+            pass
+        try:
+            result = subprocess.run(
+                ["markitdown", tmp_path],
+                capture_output=True, timeout=60, text=True, check=False,
+            )
+            if result.returncode == 0 and result.stdout.strip():
+                return result.stdout.strip()
+        except (FileNotFoundError, subprocess.TimeoutExpired):
+            pass
+    finally:
+        try:
+            os.unlink(tmp_path)
+        except OSError:
+            pass
+    return None
+
+
+def fetch_attachment_bytes(svc, message_id: str, attachment_id: str) -> bytes | None:
+    if not attachment_id or not message_id:
+        return None
+    try:
+        resp = _retry(lambda: svc.users().messages().attachments().get(
+            userId="me", messageId=message_id, id=attachment_id
+        ).execute())
+    except Exception:
+        return None
+    data = resp.get("data") or ""
+    if not data:
+        return None
+    try:
+        pad = "=" * (-len(data) % 4)
+        return base64.urlsafe_b64decode(data + pad)
+    except Exception:
+        return None
+
+
+# ---------------------------------------------------------------------------
+# Markdown rendering (Lock 4)
+# ---------------------------------------------------------------------------
+
+def render_thread_markdown(thread_payload: dict, account: str, svc=None) -> tuple[str, str]:
+    """Render thread to markdown body + return subject. svc=None disables PDF
+    extraction (used for dry-run inspection)."""
     msgs = thread_payload.get("messages", [])
     if not msgs:
         return "", ""
     subject = header_val(msgs[0], "Subject") or "(no subject)"
     out_lines: list[str] = [f"# {subject}", ""]
+
     for msg in msgs:
         from_raw = header_val(msg, "From") or ""
         name, addr = parseaddr(from_raw)
         date_hdr = header_val(msg, "Date") or ""
         try:
             dt = parsedate_to_datetime(date_hdr)
-            if dt is not None:
-                date_disp = dt.astimezone().strftime("%Y-%m-%d %H:%M")
-            else:
-                date_disp = date_hdr
+            date_disp = dt.astimezone().strftime("%Y-%m-%d %H:%M %Z") if dt else date_hdr
         except Exception:
             date_disp = date_hdr
 
@@ -596,13 +668,6 @@ def render_thread_markdown(thread_payload: dict, account: str) -> tuple[str, str
         body = strip_quoted_history(body)
         body = strip_signature(body)
         body = body.strip()
-
-        attachments = []
-        for part in walk_parts(msg.get("payload") or {}):
-            fn = part.get("filename") or ""
-            if fn:
-                sz = (part.get("body") or {}).get("size") or 0
-                attachments.append((fn, sz))
 
         header_line = f"## {date_disp} — {name or addr or 'unknown'}"
         if addr:
@@ -612,21 +677,46 @@ def render_thread_markdown(thread_payload: dict, account: str) -> tuple[str, str
         if body:
             out_lines.append(body)
             out_lines.append("")
-        if attachments:
-            out_lines.append(
-                "**Attachments:** "
-                + ", ".join(f"{fn} ({sz} bytes)" for fn, sz in attachments)
-            )
+
+        # Lock 4 rules 6 + 7: ### Attachment per file.
+        for part in walk_parts(msg.get("payload") or {}):
+            fn = part.get("filename") or ""
+            if not fn:
+                continue
+            mime = (part.get("mimeType") or "").lower()
+            sz = (part.get("body") or {}).get("size") or 0
+            att_id = (part.get("body") or {}).get("attachmentId")
+            inline_data = (part.get("body") or {}).get("data")
+
+            extracted: str | None = None
+            if mime == "application/pdf" and sz <= PDF_EXTRACT_MAX_BYTES and svc is not None:
+                pdf_bytes: bytes | None = None
+                if inline_data:
+                    try:
+                        pad = "=" * (-len(inline_data) % 4)
+                        pdf_bytes = base64.urlsafe_b64decode(inline_data + pad)
+                    except Exception:
+                        pdf_bytes = None
+                if pdf_bytes is None and att_id:
+                    pdf_bytes = fetch_attachment_bytes(svc, msg.get("id", ""), att_id)
+                if pdf_bytes:
+                    extracted = extract_pdf_text(pdf_bytes)
+
+            out_lines.append(f"### Attachment: {fn}")
+            out_lines.append(extracted if extracted else "Binary attachment, content not extracted.")
             out_lines.append("")
+
     return "\n".join(out_lines).rstrip() + "\n", subject
 
 
 # ---------------------------------------------------------------------------
-# Frontmatter envelope
+# Frontmatter (Locks 2 + 3)
 # ---------------------------------------------------------------------------
 
 def build_frontmatter(*, workspace: str, account: str, thread_payload: dict,
-                      thread_id: str, body_markdown: str, ingested_at: datetime) -> str:
+                      thread_id: str, body_markdown: str, ingested_at: datetime,
+                      routed_by: list[dict],
+                      deleted_upstream: str | None = None) -> str:
     msgs = thread_payload.get("messages", [])
     subject = (header_val(msgs[0], "Subject") if msgs else "") or "(no subject)"
     first_dt, last_dt = thread_dates(thread_payload)
@@ -652,6 +742,7 @@ def build_frontmatter(*, workspace: str, account: str, thread_payload: dict,
         "provider_modified_at": (last_dt.replace(microsecond=0).isoformat()
                                  if last_dt else ingested_at.replace(microsecond=0).isoformat()),
         "account": account,
+        "account_slug": account_slug(account),
         "thread_id": thread_id,
         "message_ids": msg_ids,
         "subject": subject,
@@ -663,12 +754,14 @@ def build_frontmatter(*, workspace: str, account: str, thread_payload: dict,
                          if last_dt else None),
         "message_count": len(msgs),
         "attachments": parse_attachments(thread_payload),
+        "routed_by": list(routed_by),
+        "deleted_upstream": deleted_upstream,
     }
     return "---\n" + yaml.safe_dump(fm, sort_keys=False, allow_unicode=True, default_flow_style=False) + "---\n"
 
 
 # ---------------------------------------------------------------------------
-# Ledger
+# Ledger (Lock 6)
 # ---------------------------------------------------------------------------
 
 def ledger_path(workspace: str) -> Path:
@@ -676,7 +769,6 @@ def ledger_path(workspace: str) -> Path:
 
 
 def ledger_has(workspace: str, key: str, content_hash: str) -> bool:
-    """Return True if a row with the same key + hash already exists."""
     p = ledger_path(workspace)
     if not p.exists():
         return False
@@ -700,15 +792,10 @@ def ledger_append(workspace: str, record: dict) -> None:
 
 
 # ---------------------------------------------------------------------------
-# Cursor
+# Cursor (Lock 7) — stores Gmail historyId as decimal text
 # ---------------------------------------------------------------------------
 
-def read_cursor(account: str) -> int | None:
-    """Cursor stores the latest internalDate (epoch seconds) we've seen.
-
-    Returns None if missing/empty. Raises ValueError on garbage so the user
-    knows to delete it.
-    """
+def read_cursor(account: str) -> str | None:
     p = cursor_path_for(account)
     if not p.exists():
         return None
@@ -716,34 +803,307 @@ def read_cursor(account: str) -> int | None:
     if not raw:
         return None
     try:
-        ts = int(raw)
+        int(raw)  # validate
     except ValueError as exc:
         raise ValueError(
             f"ingest-gmail: cursor at {p.relative_to(ULTRON_ROOT)} is corrupt "
             f"(value={raw!r}). Delete it and re-run; ingest will fall back to the "
-            f"workspace lookback_days_initial."
+            f"GMAIL_INITIAL_LOOKBACK_DAYS lookback window."
         ) from exc
-    if ts < 0:
-        raise ValueError(f"cursor {p} has negative value {ts!r}")
-    return ts
+    return raw
 
 
-def write_cursor(account: str, epoch_seconds: int) -> None:
+def write_cursor(account: str, history_id: str) -> None:
     p = cursor_path_for(account)
-    p.write_text(str(epoch_seconds) + "\n")
+    p.write_text(str(history_id) + "\n")
+
+
+def reset_cursor(account: str) -> None:
+    p = cursor_path_for(account)
+    if p.exists():
+        p.unlink()
+
+
+# ---------------------------------------------------------------------------
+# Thread-id collection (first run + incremental)
+# ---------------------------------------------------------------------------
+
+def collect_threads_first_run(svc, q: str, max_items: int | None) -> set[str]:
+    """messages.list(q=) → dedupe to threadIds. Lock 7."""
+    page_token: str | None = None
+    thread_ids: set[str] = set()
+    cap: float = max_items if max_items else float("inf")
+
+    while True:
+        kwargs = {"userId": "me", "q": q, "maxResults": 500}
+        if page_token:
+            kwargs["pageToken"] = page_token
+        resp = _retry(lambda: svc.users().messages().list(**kwargs).execute())
+        for m in resp.get("messages", []) or []:
+            tid = m.get("threadId")
+            if tid:
+                thread_ids.add(tid)
+            if len(thread_ids) >= cap:
+                break
+        if len(thread_ids) >= cap:
+            break
+        page_token = resp.get("nextPageToken")
+        if not page_token:
+            break
+
+    return thread_ids
+
+
+def collect_history_events(svc, start_history_id: str, max_items: int | None) -> tuple[set[str], set[str], set[str]]:
+    """history.list → (added_thread_ids, deleted_thread_ids,
+    label_changed_thread_ids). Lock 7."""
+    added: set[str] = set()
+    deleted: set[str] = set()
+    labelled: set[str] = set()
+    page_token: str | None = None
+    cap: float = max_items if max_items else float("inf")
+
+    while True:
+        kwargs = {
+            "userId": "me",
+            "startHistoryId": start_history_id,
+            "historyTypes": ["messageAdded", "messageDeleted", "labelAdded", "labelRemoved"],
+            "maxResults": 500,
+        }
+        if page_token:
+            kwargs["pageToken"] = page_token
+
+        try:
+            resp = _retry(lambda: svc.users().history().list(**kwargs).execute())
+        except Exception as exc:
+            from googleapiclient.errors import HttpError
+            if isinstance(exc, HttpError) and getattr(exc.resp, "status", None) == 404:
+                sys.stderr.write(
+                    "ingest-gmail: history.list returned 404 (cursor too old). "
+                    "Re-run with --reset-cursor to backfill from the lookback window.\n"
+                )
+                raise SystemExit(3)
+            raise
+
+        for h in resp.get("history", []) or []:
+            for evt in h.get("messagesAdded") or []:
+                m = evt.get("message") or {}
+                tid = m.get("threadId")
+                if tid:
+                    added.add(tid)
+            for evt in h.get("messagesDeleted") or []:
+                m = evt.get("message") or {}
+                tid = m.get("threadId")
+                if tid:
+                    deleted.add(tid)
+            for evt in h.get("labelsAdded") or []:
+                m = evt.get("message") or {}
+                tid = m.get("threadId")
+                if tid:
+                    labelled.add(tid)
+            for evt in h.get("labelsRemoved") or []:
+                m = evt.get("message") or {}
+                tid = m.get("threadId")
+                if tid:
+                    labelled.add(tid)
+
+        if (len(added) + len(deleted) + len(labelled)) >= cap:
+            break
+        page_token = resp.get("nextPageToken")
+        if not page_token:
+            break
+
+    # If a thread is in `added`, drop it from `labelled` (will be processed
+    # via the normal pipeline anyway).
+    labelled -= added
+    return added, deleted, labelled
+
+
+# ---------------------------------------------------------------------------
+# Per-thread processing
+# ---------------------------------------------------------------------------
+
+def find_existing_raw_files(thread_id: str, account: str, workspaces_config: dict) -> list[tuple[str, Path]]:
+    """Locate existing raw/gmail files for this thread, across workspaces."""
+    out: list[tuple[str, Path]] = []
+    suffix = f"__{thread_id[:THREAD_ID_PREFIX_LEN]}.md"
+    for ws in workspaces_config:
+        base = ULTRON_ROOT / "workspaces" / ws / "raw" / "gmail" / account_slug(account)
+        if not base.exists():
+            continue
+        for p in base.rglob(f"*{suffix}"):
+            out.append((ws, p))
+    return out
+
+
+def mark_deleted_upstream(thread_id: str, account: str, workspaces_config: dict, when: datetime) -> int:
+    """Set deleted_upstream in frontmatter for every raw copy of this thread.
+    Returns count of files updated. Lock 7 + Forbidden #1."""
+    updated = 0
+    iso = when.replace(microsecond=0).isoformat()
+    for ws, path in find_existing_raw_files(thread_id, account, workspaces_config):
+        try:
+            text = path.read_text()
+        except OSError:
+            continue
+        if not text.startswith("---\n"):
+            continue
+        end = text.find("\n---\n", 4)
+        if end < 0:
+            continue
+        try:
+            fm = yaml.safe_load(text[4:end]) or {}
+        except yaml.YAMLError:
+            continue
+        if fm.get("deleted_upstream"):
+            continue
+        fm["deleted_upstream"] = iso
+        body = text[end + len("\n---\n"):]
+        new_fm = yaml.safe_dump(fm, sort_keys=False, allow_unicode=True, default_flow_style=False)
+        path.write_text(f"---\n{new_fm}---\n{body}")
+        updated += 1
+    return updated
+
+
+def process_thread(svc, tid: str, account: str, workspaces_config: dict,
+                   ingested_at: datetime, args, run_log) -> dict[str, int]:
+    """Fetch, pre-filter, render, route, write. Returns per-workspace write counts."""
+    written: dict[str, int] = {}
+
+    try:
+        thread_payload = _retry(lambda: svc.users().threads().get(
+            userId="me", id=tid, format="full"
+        ).execute())
+    except Exception as exc:
+        with errors_log_path().open("a") as f:
+            f.write(f"{datetime.now(timezone.utc).isoformat()} thread.get tid={tid} {type(exc).__name__}: {exc}\n")
+        run_log.write(f"  ERROR tid={tid[:8]} {type(exc).__name__}: {exc}\n")
+        return written
+
+    skip_reason = pre_filter_skip(thread_payload)
+    if skip_reason:
+        run_log.write(f"  skip tid={tid[:8]} reason={skip_reason}\n")
+        return written
+
+    msgs = thread_payload.get("messages", [])
+    subject = (header_val(msgs[0], "Subject") if msgs else "") or ""
+    labels: list[str] = []
+    seen: set[str] = set()
+    for m in msgs:
+        for lbl in m.get("labelIds") or []:
+            if lbl not in seen:
+                seen.add(lbl)
+                labels.append(lbl)
+    participants = parse_participants(thread_payload, account)
+    thread_for_route = {
+        "account": account,
+        "subject": subject,
+        "labels": labels,
+        "participants": participants,
+    }
+    destinations = route_thread(thread_for_route, workspaces_config)
+    if not destinations:
+        run_log.write(f"  skip tid={tid[:8]} reason=no-route\n")
+        return written
+
+    # Filter destinations by --workspaces if set.
+    if args.workspaces:
+        wanted = {w.strip() for w in args.workspaces.split(",") if w.strip()}
+        destinations = [d for d in destinations if d.get("workspace") in wanted]
+        if not destinations:
+            run_log.write(f"  skip tid={tid[:8]} reason=workspaces-filter\n")
+            return written
+
+    first_dt, _ = thread_dates(thread_payload)
+    if first_dt is None:
+        first_dt = ingested_at
+    body_md, _ = render_thread_markdown(thread_payload, account, svc=None if args.dry_run else svc)
+
+    routed_by_list = list(destinations)
+
+    for d in destinations:
+        ws = d.get("workspace")
+        if not ws:
+            continue
+        fm = build_frontmatter(
+            workspace=ws,
+            account=account,
+            thread_payload=thread_payload,
+            thread_id=tid,
+            body_markdown=body_md,
+            ingested_at=ingested_at,
+            routed_by=routed_by_list,
+        )
+        content = fm + body_md
+        m = re.search(r"^content_hash:\s*(\S+)", fm, re.MULTILINE)
+        content_hash = m.group(1) if m else ""
+        ledger_key = f"gmail:{tid}"
+        already = ledger_has(ws, ledger_key, content_hash)
+
+        rel = relative_thread_path(account, first_dt, subject_slug(subject), tid)
+        full_path = ULTRON_ROOT / "workspaces" / ws / rel
+
+        if args.dry_run:
+            run_log.write(
+                f"  DRY ws={ws} tid={tid[:8]} -> {rel} "
+                f"hash={content_hash[:24]} already_in_ledger={already}\n"
+            )
+            if args.show:
+                print(f"\n========== DRY-RUN ws={ws} path={rel} ==========")
+                print(content)
+                print("========== END DRY-RUN ==========\n")
+            written[ws] = written.get(ws, 0) + 1
+            continue
+
+        if already:
+            run_log.write(f"  skip ws={ws} tid={tid[:8]} reason=ledger-match\n")
+            continue
+
+        full_path.parent.mkdir(parents=True, exist_ok=True)
+        full_path.write_text(content)
+        ledger_append(ws, {
+            "source": "gmail",
+            "key": ledger_key,
+            "content_hash": content_hash,
+            "raw_path": str(rel),
+            "ingested_at": ingested_at.isoformat(),
+            "run_id": args.run_id,
+        })
+        written[ws] = written.get(ws, 0) + 1
+        run_log.write(f"  WRITE ws={ws} tid={tid[:8]} -> {rel}\n")
+
+    return written
 
 
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
+def acquire_lock(account: str):
+    """flock the account-specific lock file. Returns the open fd or None."""
+    lock_path = Path("/tmp") / f"com.adithya.ultron.ingest-gmail-{account_slug(account)}.lock"
+    fd = open(lock_path, "w")
+    try:
+        fcntl.flock(fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except BlockingIOError:
+        fd.close()
+        return None
+    return fd
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--account", required=True, help="Gmail address, e.g. adithya@outerscope.xyz")
+    ap.add_argument("--workspaces", default=None,
+                    help="Comma-separated subset; default = every subscribing workspace.")
     ap.add_argument("--run-id", default=datetime.now().strftime("%Y-%m-%dT%H-%M-%S"))
-    ap.add_argument("--dry-run", action="store_true", help="Fetch + render but write nothing to disk; do not advance cursor.")
-    ap.add_argument("--show", action="store_true", help="(dry-run only) print the rendered frontmatter + body to stdout for inspection.")
-    ap.add_argument("--max-items", type=int, default=None, help="Hard cap on threads processed this run.")
+    ap.add_argument("--dry-run", action="store_true",
+                    help="Fetch + render but write nothing; cursor untouched.")
+    ap.add_argument("--show", action="store_true",
+                    help="(dry-run only) print rendered output to stdout.")
+    ap.add_argument("--max-items", type=int, default=None, help="Hard cap on threads processed.")
+    ap.add_argument("--reset-cursor", action="store_true",
+                    help="Delete cursor; rebuild from lookback window.")
     args = ap.parse_args()
 
     account: str = args.account.strip()
@@ -751,183 +1111,110 @@ def main() -> int:
         sys.stderr.write(f"ingest-gmail: --account must be an email; got {account!r}\n")
         return 2
 
-    # 1. Cursor
+    # flock — Lock 7
+    lock_fd = acquire_lock(account)
+    if lock_fd is None:
+        sys.stderr.write(f"ingest-gmail: lock held for {account}; another instance running\n")
+        return 0
+
+    run_log = run_log_path(account, args.run_id).open("a")
+    run_log.write(f"\n=== run_id={args.run_id} account={account} dry_run={args.dry_run} ===\n")
+
+    if args.reset_cursor:
+        reset_cursor(account)
+        sys.stderr.write(f"ingest-gmail: cursor reset for {account}\n")
+        run_log.write("cursor reset\n")
+
     try:
-        cursor_ts = read_cursor(account)
+        cursor_history_id = read_cursor(account)
     except ValueError as exc:
         sys.stderr.write(str(exc) + "\n")
+        run_log.write(f"FATAL cursor: {exc}\n")
+        run_log.close()
         return 2
 
     workspaces_config = load_all_workspaces_config()
     if not workspaces_config:
         sys.stderr.write("ingest-gmail: no workspaces with sources.yaml found\n")
+        run_log.close()
         return 0
 
-    includes, excludes, lookback_days = collect_account_rules(account, workspaces_config)
+    includes, excludes, _ = collect_account_rules(account, workspaces_config)
     if not includes and not excludes:
         sys.stderr.write(f"ingest-gmail: no workspace subscribes to {account}; nothing to do\n")
+        run_log.close()
         return 0
 
-    # First-run window
-    if cursor_ts is None:
-        after_dt = datetime.now(tz=timezone.utc) - timedelta(days=lookback_days)
-        after_ts = int(after_dt.timestamp())
-        sys.stderr.write(
-            f"ingest-gmail: first run for {account}; using lookback_days_initial={lookback_days} "
-            f"(after={after_dt.isoformat()})\n"
-        )
-    else:
-        after_ts = cursor_ts
-        sys.stderr.write(
-            f"ingest-gmail: incremental run for {account}; cursor "
-            f"after_ts={cursor_ts} ({datetime.fromtimestamp(cursor_ts, tz=timezone.utc).isoformat()})\n"
-        )
-
-    q = build_q(includes, excludes, after_ts)
-    sys.stderr.write(f"ingest-gmail: q={q!r}\n")
-
     svc = build_service(account)
-
-    # 2. Paginate users.threads.list
-    page_token: str | None = None
-    page_size = 100
-    threads_seen: list[dict] = []
-    cap = args.max_items if args.max_items else float("inf")
-    while True:
-        kwargs = {"userId": "me", "q": q, "maxResults": page_size}
-        if page_token:
-            kwargs["pageToken"] = page_token
-        resp = _retry(lambda: svc.users().threads().list(**kwargs).execute())
-        for t in resp.get("threads", []) or []:
-            threads_seen.append(t)
-            if len(threads_seen) >= cap:
-                break
-        if len(threads_seen) >= cap:
-            break
-        page_token = resp.get("nextPageToken")
-        if not page_token:
-            break
-
-    sys.stderr.write(f"ingest-gmail: matched {len(threads_seen)} thread(s) (cap={args.max_items or 'none'})\n")
-
-    written_per_ws: dict[str, int] = {}
-    skipped_count = 0
-    error_count = 0
-    latest_internal_ms: int | None = cursor_ts * 1000 if cursor_ts else None
     ingested_at = datetime.now(timezone.utc)
 
-    for tref in threads_seen:
-        tid = tref.get("id")
-        if not tid:
-            continue
+    added_tids: set[str] = set()
+    deleted_tids: set[str] = set()
+    labelled_tids: set[str] = set()
+
+    if cursor_history_id is None:
+        lookback_days = int(os.environ.get("GMAIL_INITIAL_LOOKBACK_DAYS", str(GMAIL_INITIAL_LOOKBACK_DAYS_DEFAULT)))
+        after_dt = datetime.now(tz=timezone.utc) - timedelta(days=lookback_days)
+        after_ts = int(after_dt.timestamp())
+        q = build_q(includes, excludes, after_ts)
+        sys.stderr.write(f"ingest-gmail: first run for {account}; lookback={lookback_days}d q={q!r}\n")
+        run_log.write(f"first-run lookback={lookback_days} q={q!r}\n")
+        added_tids = collect_threads_first_run(svc, q, args.max_items)
+    else:
+        sys.stderr.write(f"ingest-gmail: incremental run for {account}; startHistoryId={cursor_history_id}\n")
+        run_log.write(f"incremental startHistoryId={cursor_history_id}\n")
+        added_tids, deleted_tids, labelled_tids = collect_history_events(svc, cursor_history_id, args.max_items)
+
+    sys.stderr.write(
+        f"ingest-gmail: tids added={len(added_tids)} deleted={len(deleted_tids)} "
+        f"label-changed={len(labelled_tids)} (cap={args.max_items or 'none'})\n"
+    )
+
+    written_per_ws: dict[str, int] = {}
+
+    cap = args.max_items if args.max_items else None
+
+    def take(s: set[str], remaining: int | None) -> list[str]:
+        items = sorted(s)
+        if remaining is None:
+            return items
+        return items[:remaining]
+
+    remaining = cap
+    process_added = take(added_tids, remaining)
+    if remaining is not None:
+        remaining -= len(process_added)
+    process_labelled = take(labelled_tids, remaining)
+    if remaining is not None:
+        remaining -= len(process_labelled)
+    process_deleted = take(deleted_tids, remaining)
+
+    for tid in process_added + process_labelled:
+        per = process_thread(svc, tid, account, workspaces_config, ingested_at, args, run_log)
+        for ws, n in per.items():
+            written_per_ws[ws] = written_per_ws.get(ws, 0) + n
+
+    deleted_marked = 0
+    if not args.dry_run:
+        for tid in process_deleted:
+            n = mark_deleted_upstream(tid, account, workspaces_config, ingested_at)
+            deleted_marked += n
+            run_log.write(f"  DELETE-MARK tid={tid[:8]} updated={n} file(s)\n")
+    else:
+        for tid in process_deleted:
+            run_log.write(f"  DRY DELETE-MARK tid={tid[:8]}\n")
+
+    # Advance cursor — Lock 7
+    if not args.dry_run:
         try:
-            thread_payload = _retry(lambda: svc.users().threads().get(
-                userId="me", id=tid, format="full"
-            ).execute())
+            profile = _retry(lambda: svc.users().getProfile(userId="me").execute())
+            new_cursor = str(profile.get("historyId") or "")
+            if new_cursor:
+                write_cursor(account, new_cursor)
+                run_log.write(f"cursor -> {new_cursor}\n")
         except Exception as exc:
-            error_count += 1
-            with errors_log_path().open("a") as f:
-                f.write(f"{datetime.now(timezone.utc).isoformat()} thread.get tid={tid} {type(exc).__name__}: {exc}\n")
-            continue
-
-        skip_reason = pre_filter_skip(thread_payload)
-        if skip_reason:
-            skipped_count += 1
-            sys.stderr.write(f"  skip tid={tid[:8]} reason={skip_reason}\n")
-            continue
-
-        # Build a thread payload for route.py
-        msgs = thread_payload.get("messages", [])
-        subject = (header_val(msgs[0], "Subject") if msgs else "") or ""
-        labels: list[str] = []
-        seen: set[str] = set()
-        for m in msgs:
-            for lbl in m.get("labelIds") or []:
-                if lbl not in seen:
-                    seen.add(lbl); labels.append(lbl)
-        participants = parse_participants(thread_payload, account)
-        thread_for_route = {
-            "account": account,
-            "subject": subject,
-            "labels": labels,
-            "participants": participants,
-        }
-        destinations = route_thread(thread_for_route, workspaces_config)
-        if not destinations:
-            sys.stderr.write(f"  skip tid={tid[:8]} reason=no-route\n")
-            skipped_count += 1
-            continue
-
-        # Render once, write per destination.
-        first_dt, last_dt = thread_dates(thread_payload)
-        if first_dt is None:
-            first_dt = ingested_at
-        body_md, _ = render_thread_markdown(thread_payload, account)
-        # Track latest internalDate for cursor advancement.
-        for m in msgs:
-            ts = m.get("internalDate")
-            if ts:
-                try:
-                    ts_int = int(ts)
-                    if latest_internal_ms is None or ts_int > latest_internal_ms:
-                        latest_internal_ms = ts_int
-                except ValueError:
-                    pass
-
-        for ws in destinations:
-            fm = build_frontmatter(
-                workspace=ws,
-                account=account,
-                thread_payload=thread_payload,
-                thread_id=tid,
-                body_markdown=body_md,
-                ingested_at=ingested_at,
-            )
-            content = fm + body_md
-            content_hash_match = re.search(r'content_hash:\s*(\S+)', fm)
-            content_hash = content_hash_match.group(1) if content_hash_match else ""
-
-            # Skip if ledger already records this exact hash.
-            ledger_key = f"gmail:{tid}"
-            already = ledger_has(ws, ledger_key, content_hash)
-
-            rel = relative_thread_path(account, first_dt, subject_slug(subject), tid)
-            full_path = ULTRON_ROOT / "workspaces" / ws / rel
-
-            if args.dry_run:
-                sys.stderr.write(
-                    f"  DRY ws={ws} tid={tid[:8]} -> {rel} "
-                    f"(hash={content_hash[:24]}{'…' if len(content_hash) > 24 else ''}, "
-                    f"already_in_ledger={already})\n"
-                )
-                # In dry-run, print full content to stdout so the operator can
-                # inspect what WOULD be written.
-                if args.show:
-                    print(f"\n========== DRY-RUN ws={ws} path={rel} ==========")
-                    print(content)
-                    print("========== END DRY-RUN ==========\n")
-                written_per_ws[ws] = written_per_ws.get(ws, 0) + 1
-                continue
-
-            full_path.parent.mkdir(parents=True, exist_ok=True)
-            full_path.write_text(content)
-
-            if not already:
-                ledger_append(ws, {
-                    "source": "gmail",
-                    "key": ledger_key,
-                    "content_hash": content_hash,
-                    "raw_path": str(rel),
-                    "ingested_at": ingested_at.isoformat(),
-                    "run_id": args.run_id,
-                })
-            written_per_ws[ws] = written_per_ws.get(ws, 0) + 1
-
-    # 3. Cursor + log summary
-    if not args.dry_run and latest_internal_ms is not None:
-        new_cursor = latest_internal_ms // 1000
-        if cursor_ts is None or new_cursor > cursor_ts:
-            write_cursor(account, new_cursor)
+            sys.stderr.write(f"ingest-gmail: failed to advance cursor: {exc}\n")
+            run_log.write(f"FATAL cursor advance: {exc}\n")
 
     if not args.dry_run:
         for ws, count in sorted(written_per_ws.items()):
@@ -938,15 +1225,18 @@ def main() -> int:
                     f"- {ingested_at.replace(microsecond=0).isoformat()} "
                     f"gmail/{account_slug(account)} "
                     f"+{count} thread(s) "
-                    f"(skipped={skipped_count}, errors={error_count}, "
-                    f"run_id={args.run_id})\n"
+                    f"(deleted_marked={deleted_marked}, run_id={args.run_id})\n"
                 )
 
     sys.stderr.write(
-        f"ingest-gmail: done. "
-        f"matched={len(threads_seen)} skipped={skipped_count} errors={error_count} "
-        f"written={dict(written_per_ws)} dry_run={args.dry_run}\n"
+        f"ingest-gmail: done. account={account} "
+        f"written={dict(written_per_ws)} deleted_marked={deleted_marked} "
+        f"dry_run={args.dry_run}\n"
     )
+    run_log.write(
+        f"=== done written={dict(written_per_ws)} deleted_marked={deleted_marked} ===\n"
+    )
+    run_log.close()
     return 0
 
 

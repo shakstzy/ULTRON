@@ -866,11 +866,15 @@ def reset_cursor(account: str) -> None:
 # Thread-id collection (first run + incremental)
 # ---------------------------------------------------------------------------
 
-def collect_threads_first_run(svc, q: str, max_items: int | None) -> set[str]:
-    """messages.list(q=) → dedupe to threadIds. Lock 7."""
+def collect_threads_first_run(svc, q: str, max_items: int | None) -> tuple[set[str], bool]:
+    """messages.list(q=) → dedupe to threadIds. Lock 7.
+    Returns (thread_ids, cap_clipped). cap_clipped=True iff pagination
+    stopped because of max_items (more results may exist upstream).
+    """
     page_token: str | None = None
     thread_ids: set[str] = set()
     cap: float = max_items if max_items else float("inf")
+    cap_clipped = False
 
     while True:
         kwargs = {"userId": "me", "q": q, "maxResults": 500}
@@ -884,22 +888,24 @@ def collect_threads_first_run(svc, q: str, max_items: int | None) -> set[str]:
             if len(thread_ids) >= cap:
                 break
         if len(thread_ids) >= cap:
+            cap_clipped = bool(resp.get("nextPageToken")) or cap_clipped
             break
         page_token = resp.get("nextPageToken")
         if not page_token:
             break
 
-    return thread_ids
+    return thread_ids, cap_clipped
 
 
-def collect_history_events(svc, start_history_id: str, max_items: int | None) -> tuple[set[str], set[str], set[str]]:
+def collect_history_events(svc, start_history_id: str, max_items: int | None) -> tuple[set[str], set[str], set[str], bool]:
     """history.list → (added_thread_ids, deleted_thread_ids,
-    label_changed_thread_ids). Lock 7."""
+    label_changed_thread_ids, cap_clipped). Lock 7."""
     added: set[str] = set()
     deleted: set[str] = set()
     labelled: set[str] = set()
     page_token: str | None = None
     cap: float = max_items if max_items else float("inf")
+    cap_clipped = False
 
     while True:
         kwargs = {
@@ -946,6 +952,7 @@ def collect_history_events(svc, start_history_id: str, max_items: int | None) ->
                     labelled.add(tid)
 
         if (len(added) + len(deleted) + len(labelled)) >= cap:
+            cap_clipped = bool(resp.get("nextPageToken")) or cap_clipped
             break
         page_token = resp.get("nextPageToken")
         if not page_token:
@@ -954,7 +961,7 @@ def collect_history_events(svc, start_history_id: str, max_items: int | None) ->
     # If a thread is in `added`, drop it from `labelled` (will be processed
     # via the normal pipeline anyway).
     labelled -= added
-    return added, deleted, labelled
+    return added, deleted, labelled, cap_clipped
 
 
 # ---------------------------------------------------------------------------
@@ -1003,9 +1010,37 @@ def mark_deleted_upstream(thread_id: str, account: str, workspaces_config: dict,
     return updated
 
 
+def _read_existing_deleted_upstream(path: Path) -> str | None:
+    """Read the existing raw file's deleted_upstream value, if any. Used to
+    preserve the timestamp across re-renders (Lock 3). Returns None if the
+    file does not exist or has no such value."""
+    if not path.exists():
+        return None
+    try:
+        text = path.read_text()
+    except OSError:
+        return None
+    if not text.startswith("---\n"):
+        return None
+    end = text.find("\n---\n", 4)
+    if end < 0:
+        return None
+    try:
+        fm = yaml.safe_load(text[4:end]) or {}
+    except yaml.YAMLError:
+        return None
+    val = fm.get("deleted_upstream")
+    return val if val else None
+
+
 def process_thread(svc, tid: str, account: str, workspaces_config: dict,
-                   ingested_at: datetime, args, run_log) -> dict[str, int]:
-    """Fetch, pre-filter, render, route, write. Returns per-workspace write counts."""
+                   ingested_at: datetime, args, run_log) -> tuple[dict[str, int], bool]:
+    """Fetch, pre-filter, render, route, write.
+    Returns (per-workspace-write-counts, errored).
+    `errored=True` means a transient/unexpected failure (e.g. thread.get HTTP
+    error). Pre-filter skips and route-skips are NOT errors — they are
+    deliberate, the messages exist and we don't want them.
+    """
     written: dict[str, int] = {}
 
     try:
@@ -1016,12 +1051,12 @@ def process_thread(svc, tid: str, account: str, workspaces_config: dict,
         with errors_log_path().open("a") as f:
             f.write(f"{datetime.now(timezone.utc).isoformat()} thread.get tid={tid} {type(exc).__name__}: {exc}\n")
         run_log.write(f"  ERROR tid={tid[:8]} {type(exc).__name__}: {exc}\n")
-        return written
+        return written, True
 
     skip_reason = pre_filter_skip(thread_payload)
     if skip_reason:
         run_log.write(f"  skip tid={tid[:8]} reason={skip_reason}\n")
-        return written
+        return written, False
 
     msgs = thread_payload.get("messages", [])
     subject = (header_val(msgs[0], "Subject") if msgs else "") or ""
@@ -1042,7 +1077,7 @@ def process_thread(svc, tid: str, account: str, workspaces_config: dict,
     destinations = route_thread(thread_for_route, workspaces_config)
     if not destinations:
         run_log.write(f"  skip tid={tid[:8]} reason=no-route\n")
-        return written
+        return written, False
 
     # Filter destinations by --workspaces if set.
     if args.workspaces:
@@ -1050,7 +1085,7 @@ def process_thread(svc, tid: str, account: str, workspaces_config: dict,
         destinations = [d for d in destinations if d.get("workspace") in wanted]
         if not destinations:
             run_log.write(f"  skip tid={tid[:8]} reason=workspaces-filter\n")
-            return written
+            return written, False
 
     first_dt, _ = thread_dates(thread_payload)
     if first_dt is None:
@@ -1063,6 +1098,11 @@ def process_thread(svc, tid: str, account: str, workspaces_config: dict,
         ws = d.get("workspace")
         if not ws:
             continue
+        rel = relative_thread_path(account, first_dt, subject_slug(subject), tid)
+        full_path = ULTRON_ROOT / "workspaces" / ws / rel
+        # Lock 3 + Forbidden #4: preserve deleted_upstream from existing file
+        # so a re-render after a labelAdded event doesn't wipe the marker.
+        existing_du = _read_existing_deleted_upstream(full_path)
         fm = build_frontmatter(
             workspace=ws,
             account=account,
@@ -1071,15 +1111,13 @@ def process_thread(svc, tid: str, account: str, workspaces_config: dict,
             body_markdown=body_md,
             ingested_at=ingested_at,
             routed_by=routed_by_list,
+            deleted_upstream=existing_du,
         )
         content = fm + body_md
         m = re.search(r"^content_hash:\s*(\S+)", fm, re.MULTILINE)
         content_hash = m.group(1) if m else ""
         ledger_key = f"gmail:{tid}"
         already = ledger_has(ws, ledger_key, content_hash)
-
-        rel = relative_thread_path(account, first_dt, subject_slug(subject), tid)
-        full_path = ULTRON_ROOT / "workspaces" / ws / rel
 
         if args.dry_run:
             run_log.write(
@@ -1110,7 +1148,7 @@ def process_thread(svc, tid: str, account: str, workspaces_config: dict,
         written[ws] = written.get(ws, 0) + 1
         run_log.write(f"  WRITE ws={ws} tid={tid[:8]} -> {rel}\n")
 
-    return written
+    return written, False
 
 
 # ---------------------------------------------------------------------------

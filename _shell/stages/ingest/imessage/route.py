@@ -30,21 +30,19 @@ def _contact_match(item: dict, contacts: list[dict]) -> bool:
 
 
 def _group_match(item: dict, groups: list[dict]) -> bool:
-    # NOTE (Codex review): `group_identifier` and `contact_name` are mutable
-    # display strings. The stable identity is `chat.guid`. Routing-session
-    # work: switch the matcher to prefer `g.get("chat_guid")` against
-    # `item.get("chat_guid")` and fall back to identifier only when the
-    # workspace's sources.yaml omits chat_guid (deprecated path).
+    # NOTE (Codex + Gemini review, deferred to routing session):
+    # `group_identifier` and `contact_name` are mutable display strings; the
+    # stable identity is `chat.guid` (per format.md § B). The routing-session
+    # patch should add a `chat_guid` field to `g` (sources.yaml) and prefer
+    # `g["chat_guid"] == item["chat_guid"]` over identifier/name matches.
+    # Hard constraint this session: do NOT change routing logic. Comment only.
     if not groups:
         return False
     if item.get("contact_type") != "group":
         return False
     item_slug = (item.get("contact_slug") or "").lower()
     item_id = item.get("group_identifier") or item.get("contact_name") or ""
-    item_guid = item.get("chat_guid") or ""
     for g in groups:
-        if g.get("chat_guid") and item_guid and g["chat_guid"] == item_guid:
-            return True
         if (g.get("slug") or "").lower() == item_slug:
             return True
         if g.get("identifier") and g["identifier"] == item_id:

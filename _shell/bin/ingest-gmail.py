@@ -965,13 +965,14 @@ def collect_history_events(svc, start_history_id: str, max_items: int | None) ->
         if not page_token:
             break
 
-    # Dedup: a thread that was added (or just relabeled) and then deleted in
-    # the same window should be processed only as deleted. This also prevents
-    # the labelled-then-deleted overlap where thread.get would 404 first and
-    # waste an error-budget slot.
-    added -= deleted
+    # `messagesDeleted` fires for ANY single message removal in the thread
+    # (including draft discards), so a thread can legitimately be in both
+    # `added`/`labelled` AND `deleted` in the same window — the new reply is
+    # real, the deleted thing was a draft. Dropping such threads from the
+    # add/label paths would silently lose the new message. Let process_thread
+    # 404-skip fully-deleted threads (Fix 2) and let process_delete verify
+    # before tombstoning (Fix 3).
     labelled -= added
-    labelled -= deleted
     return added, deleted, labelled, cap_clipped
 
 

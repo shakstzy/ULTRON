@@ -20,6 +20,7 @@ Forbidden behaviors (immutable contract — see format.md § J):
 from __future__ import annotations
 
 import argparse
+import datetime
 import fcntl
 import os
 import sqlite3
@@ -35,8 +36,11 @@ ATTACHMENTS_ROOT = Path.home() / "Library" / "Messages" / "Attachments"
 CURSOR_DIR = ULTRON_ROOT / "_shell" / "cursors" / "imessage"
 LOCK_PATH = "/tmp/com.adithya.ultron.ingest-imessage.lock"
 
-# Initial backfill window if cursor is empty AND --since not supplied.
-DEFAULT_LOOKBACK_DAYS = int(os.environ.get("ULTRON_IMESSAGE_LOOKBACK_DAYS", "365"))
+# Lookback window applied ONLY when --reset-cursor is used. First-run with
+# an empty cursor backfills the entire chat.db (Codex finding: spec said
+# full archive but constant defaulted to 365 days). Default 0 means "no
+# lookback floor; use whatever the cursor or --since says."
+DEFAULT_LOOKBACK_DAYS = int(os.environ.get("ULTRON_IMESSAGE_LOOKBACK_DAYS", "0"))
 
 # Per-month attachment copy budget (LOCK 7).
 ATTACHMENT_COPY_BUDGET_BYTES = 100 * 1024 * 1024  # 100 MB
@@ -83,16 +87,45 @@ def read_cursor(account: str = "local") -> dict:
 
 
 def write_cursor(rowid: int, message_date: str, account: str = "local") -> None:
-    """Atomic dual-write of last_rowid + last_message_date."""
+    """Crash-safe dual-write of last_rowid + last_message_date.
+
+    fsync the temp file AND the parent directory before renaming so a power
+    loss does not leave the cursor zeroed/old (Codex + Gemini finding).
+    """
     p = cursor_path(account)
     p.parent.mkdir(parents=True, exist_ok=True)
     tmp = p.with_suffix(".tmp")
-    tmp.write_text(f"last_rowid: {rowid}\nlast_message_date: {message_date}\n")
+    with open(tmp, "w") as f:
+        f.write(f"last_rowid: {rowid}\nlast_message_date: {message_date}\n")
+        f.flush()
+        os.fsync(f.fileno())
     tmp.replace(p)
+    dir_fd = os.open(str(p.parent), os.O_RDONLY)
+    try:
+        os.fsync(dir_fd)
+    finally:
+        os.close(dir_fd)
+
+
+# Mac absolute time epoch: nanoseconds since 2001-01-01T00:00:00Z (post macOS
+# 10.13 chat.db). Pre-10.13 used seconds; detect by magnitude.
+_MAC_EPOCH = datetime.datetime(2001, 1, 1, tzinfo=datetime.timezone.utc)
+
+
+def mac_absolute_to_dt(val: int | float | None) -> datetime.datetime | None:
+    if val is None:
+        return None
+    secs = float(val) / 1e9 if val > 10**11 else float(val)
+    return _MAC_EPOCH + datetime.timedelta(seconds=secs)
 
 
 def cursor_sanity_check(conn: sqlite3.Connection, cur: dict) -> str:
-    """Returns 'rowid' if fast path is safe, 'date' if ROWID was reset."""
+    """Returns 'rowid' if fast path is safe, 'date' if ROWID was reset/reused.
+
+    Compares the actual `message.date` at ROWID against `last_message_date`.
+    If they diverge by more than 60s, ROWID was reused after a chat.db
+    rebuild (Mac migration / Messages reset / iCloud rebuild). Fall back.
+    """
     rowid = cur.get("last_rowid", 0)
     expected_date = cur.get("last_message_date")
     if rowid <= 0 or expected_date is None:
@@ -106,8 +139,23 @@ def cursor_sanity_check(conn: sqlite3.Connection, cur: dict) -> str:
             "falling back to date-based cursor (per format.md § H).\n"
         )
         return "date"
-    # NOTE: full implementation compares row[0] to expected_date with TZ
-    # normalization. Mismatch implies ROWID reuse; fall back.
+    actual_dt = mac_absolute_to_dt(row[0])
+    try:
+        expected_dt = datetime.datetime.fromisoformat(expected_date)
+    except ValueError:
+        sys.stderr.write(
+            f"ingest-imessage: stored last_message_date is not ISO 8601; "
+            "falling back to date-based cursor.\n"
+        )
+        return "date"
+    if actual_dt is None or abs((actual_dt - expected_dt).total_seconds()) > 60:
+        sys.stderr.write(
+            f"ingest-imessage: ROWID {rowid} date drift detected (expected "
+            f"{expected_dt.isoformat()}, got "
+            f"{actual_dt.isoformat() if actual_dt else 'null'}); ROWID was "
+            "reused after a chat.db rebuild. Falling back to date cursor.\n"
+        )
+        return "date"
     return "rowid"
 
 
@@ -207,23 +255,28 @@ def parse_args() -> argparse.Namespace:
 # Lock + main
 # ---------------------------------------------------------------------------
 def _try_lock(path: str):
-    """Returns the open file handle if lock acquired, else None (silent exit)."""
-    fh = open(path, "w")
+    """Returns an open fd if lock acquired, else None (silent exit).
+
+    Uses os.open with O_CREAT|O_RDWR so we do NOT truncate the file before
+    flock (Gemini + Codex finding: `open(path, "w")` raced two parallel
+    runs by clobbering each other's lock file before the flock call).
+    """
+    fd = os.open(path, os.O_CREAT | os.O_RDWR, 0o600)
     try:
-        fcntl.flock(fh.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
-        return fh
+        fcntl.flock(fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        return fd
     except BlockingIOError:
-        fh.close()
+        os.close(fd)
         return None
 
 
 def main() -> int:
     args = parse_args()
 
-    # Concurrent-run guard.
-    lock = _try_lock(LOCK_PATH)
-    if lock is None:
-        sys.stderr.write("ingest-imessage: another run holds the lock; exiting 0 silently.\n")
+    # Concurrent-run guard. Per CONTEXT.md the silent exit is silent: no
+    # stderr message (Codex finding: code contradicted the contract).
+    lock_fd = _try_lock(LOCK_PATH)
+    if lock_fd is None:
         return 0
 
     try:
@@ -233,7 +286,9 @@ def main() -> int:
                 "to the process running this script. See "
                 "_shell/stages/ingest/imessage/SETUP.md § 1.\n"
             )
-            return 0
+            # Exit non-zero so cron / launchd treats setup failure as failure
+            # (Codex finding: was returning 0 and hiding misconfiguration).
+            return 3
 
         if not IMPLEMENTATION_READY:
             sys.stderr.write(
@@ -285,7 +340,7 @@ def main() -> int:
         return 0
     finally:
         try:
-            lock.close()
+            os.close(lock_fd)
         except Exception:
             pass
 

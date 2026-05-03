@@ -22,8 +22,9 @@ Steps:
    `Error: unable to open database file` or `Operation not permitted`,
    FDA is not granted.
 
-The robot bails with an actionable error message on FDA failure; it does
-not retry silently.
+The robot bails with **exit code 3** and an actionable stderr message on
+FDA failure. cron / launchd will see the failure (it does not silently
+return 0).
 
 ## 2. Apple Contacts permission (RECOMMENDED)
 Slug derivation priority 1 reads contact names via `Contacts.framework`
@@ -79,7 +80,8 @@ deferrals; do not attempt them in v1.
 
 | Gap | v1 behavior | v1.5 plan |
 |---|---|---|
-| Edit history | Stores `is_edited: true`, renders current text only | Parse `message.message_summary_info` plist, walk the edit chain, render full prior text |
+| Edit history | Stores `is_edited: true`, renders current text only | Parse `message.message_summary_info` plist, walk edit chain, render full prior text |
+| Vanished-row auto-detection | `deleted_upstream` set only on cursor-resync rediscovery | Periodic full-table scan to detect rows missing from chat.db and mark `deleted_upstream` on the corresponding month files |
 | Voice-memo transcription | Recorded as `[audio: <filename>, <size>]` only | Whisper-based transcription on demand via separate skill |
 | Vision / OCR on images | Metadata only | Wiki-promotion-time skill `_shell/skills/imessage-attachment-extract/` |
 | Cross-platform merge (iMessage + Slack DMs + WhatsApp) | Per-source archives stay independent | Wiki entity page synthesizes across sources |

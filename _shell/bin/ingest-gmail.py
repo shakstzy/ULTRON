@@ -29,7 +29,6 @@ import time
 import unicodedata
 from datetime import datetime, timedelta, timezone
 from email.utils import parseaddr, parsedate_to_datetime
-from html import unescape
 from pathlib import Path
 
 ULTRON_ROOT = Path(os.environ.get("ULTRON_ROOT", str(Path.home() / "ULTRON")))
@@ -120,15 +119,35 @@ def load_all_workspaces_config() -> dict[str, dict]:
     return out
 
 
-def collect_account_rules(account: str, workspaces_config: dict[str, dict]) -> tuple[list[str], list[str], int]:
-    """Per-account union of include/exclude predicates across all subscribing
-    workspaces. Returns (includes, excludes, lookback_days_initial). The
-    `lookback_days_initial` is preserved for back-compat with tests, but
-    main() reads `GMAIL_INITIAL_LOOKBACK_DAYS` env var per Lock 7.
+def collect_account_rules(account: str, workspaces_config: dict[str, dict]) -> tuple[list[str], list[str], int, bool, bool]:
+    """Per-account discovery across all subscribing workspaces.
+    Returns (includes, excludes, lookback_days_initial, any_match_all, any_subscription).
+
+    `includes` / `excludes` are unioned for diagnostic / back-compat use, BUT
+    build_q() must NOT apply unioned `excludes` directly — workspace-specific
+    excludes belong in route.py (post-fetch). Cross-workspace exclude bleed
+    was an active bug: personal's `-label:Eclipse` exclude was filtering out
+    threads that eclipse explicitly included.
+
+    `any_match_all` = at least one subscribing workspace declared no include
+    rules (= match-all). build_q must omit the OR clause in that case.
+    `any_subscription` = at least one workspace has a gmail account block
+    matching this account. Used by main() to decide early-exit.
     """
     includes: list[str] = []
     excludes: list[str] = []
     lookback_seen: int | None = None
+    any_match_all = False
+    any_subscription = False
+
+    def _record(inc, exc):
+        nonlocal any_match_all
+        inc = inc or []
+        exc = exc or []
+        if not inc:
+            any_match_all = True
+        includes.extend(inc)
+        excludes.extend(exc)
 
     for ws, cfg in workspaces_config.items():
         sources = cfg.get("sources")
@@ -143,22 +162,22 @@ def collect_account_rules(account: str, workspaces_config: dict[str, dict]) -> t
                 for acct in accounts:
                     if isinstance(acct, str):
                         if acct == account:
+                            any_subscription = True
                             api = (block.get("api_query") or {})
-                            includes.extend(api.get("include") or [])
-                            excludes.extend(api.get("exclude") or [])
+                            _record(api.get("include"), api.get("exclude"))
                     elif isinstance(acct, dict):
                         if (acct.get("account") or "") == account:
+                            any_subscription = True
                             api = acct.get("api_query") or {}
-                            includes.extend(api.get("include") or [])
-                            excludes.extend(api.get("exclude") or [])
+                            _record(api.get("include"), api.get("exclude"))
                             li = acct.get("lookback_days_initial")
                             if isinstance(li, int):
                                 lookback_seen = li if lookback_seen is None else max(lookback_seen, li)
             else:
                 api = (block.get("api_query") or {}) if isinstance(block, dict) else {}
                 if api.get("include") or api.get("exclude"):
-                    includes.extend(api.get("include") or [])
-                    excludes.extend(api.get("exclude") or [])
+                    any_subscription = True
+                    _record(api.get("include"), api.get("exclude"))
             continue
 
         # Legacy shape: sources: [{type: gmail, config: {...}}]
@@ -169,16 +188,16 @@ def collect_account_rules(account: str, workspaces_config: dict[str, dict]) -> t
                 conf = s.get("config") or {}
                 if (conf.get("account") or "") != account:
                     continue
-                for lbl in conf.get("labels") or []:
-                    includes.append(f"label:{lbl}")
-                for lbl in conf.get("exclude_labels") or []:
-                    excludes.append(f"label:{lbl}")
+                any_subscription = True
+                inc = [f"label:{lbl}" for lbl in (conf.get("labels") or [])]
+                exc = [f"label:{lbl}" for lbl in (conf.get("exclude_labels") or [])]
+                _record(inc, exc)
                 li = conf.get("lookback_days_initial")
                 if isinstance(li, int):
                     lookback_seen = li if lookback_seen is None else max(lookback_seen, li)
 
     lookback = lookback_seen if lookback_seen is not None else GMAIL_INITIAL_LOOKBACK_DAYS_DEFAULT
-    return includes, excludes, lookback
+    return includes, excludes, lookback, any_match_all, any_subscription
 
 
 # ---------------------------------------------------------------------------
@@ -208,7 +227,20 @@ def _predicate_to_q(p: str) -> str | None:
     return None
 
 
-def build_q(includes: list[str], excludes: list[str], after_ts: int | None) -> str:
+def build_q(includes: list[str], after_ts: int | None, *, any_match_all: bool = False) -> str:
+    """Build the first-run Gmail q= query.
+
+    Excludes are deliberately NOT applied here. They are workspace-specific
+    and applied accurately by route.py post-fetch. Unioning excludes across
+    workspaces (the previous behaviour) caused cross-workspace bleed: e.g.
+    personal's `-label:Eclipse` filtered out threads that eclipse explicitly
+    included. Cost of fetching some threads we'll later route-skip is small;
+    cost of silently losing mail is large.
+
+    `any_match_all=True` => at least one workspace wants every thread for this
+    account => omit the OR-include clause entirely (true match-all). The
+    universal pre-filter (Lock 5) and route.py still run.
+    """
     def _dedup(seq):
         seen, out = set(), []
         for x in seq:
@@ -217,13 +249,11 @@ def build_q(includes: list[str], excludes: list[str], after_ts: int | None) -> s
                 out.append(x)
         return out
 
-    inc_q = _dedup(t for t in (_predicate_to_q(p) for p in includes) if t)
-    exc_q = _dedup(t for t in (_predicate_to_q(p) for p in excludes) if t)
     parts: list[str] = []
-    if inc_q:
-        parts.append("(" + " OR ".join(inc_q) + ")")
-    for e in exc_q:
-        parts.append(f"-{e}")
+    if not any_match_all:
+        inc_q = _dedup(t for t in (_predicate_to_q(p) for p in includes) if t)
+        if inc_q:
+            parts.append("(" + " OR ".join(inc_q) + ")")
     parts.append("-in:trash")
     parts.append("-in:spam")
     if after_ts:
@@ -435,10 +465,13 @@ def decode_part_body(part: dict) -> str:
 
 
 def extract_message_text(message: dict) -> str:
-    """Prefer text/plain; fall back to html2text(text/html)."""
+    """Prefer text/plain; fall back to html2text(text/html). Skip parts that are
+    file attachments (they're rendered separately as ### Attachment blocks)."""
     plain_chunks: list[str] = []
     html_chunks: list[str] = []
     for part in walk_parts(message.get("payload") or {}):
+        if part.get("filename"):
+            continue
         mime = part.get("mimeType", "")
         if mime == "text/plain":
             plain_chunks.append(decode_part_body(part))
@@ -451,7 +484,7 @@ def extract_message_text(message: dict) -> str:
         h2t.body_width = 0
         h2t.ignore_links = False
         h2t.ignore_images = True
-        return h2t.handle(unescape("\n".join(html_chunks))).strip()
+        return h2t.handle("\n".join(html_chunks)).strip()
     return ""
 
 
@@ -772,12 +805,17 @@ def ledger_has(workspace: str, key: str, content_hash: str) -> bool:
     p = ledger_path(workspace)
     if not p.exists():
         return False
-    needle_key = f'"key":"{key}"'
-    needle_hash = f'"content_hash":"{content_hash}"'
     try:
         with p.open() as f:
             for line in f:
-                if needle_key in line and needle_hash in line:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    rec = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                if rec.get("key") == key and rec.get("content_hash") == content_hash:
                     return True
     except OSError:
         pass
@@ -788,7 +826,7 @@ def ledger_append(workspace: str, record: dict) -> None:
     p = ledger_path(workspace)
     p.parent.mkdir(parents=True, exist_ok=True)
     with p.open("a") as f:
-        f.write(json.dumps(record) + "\n")
+        f.write(json.dumps(record, separators=(",", ":")) + "\n")
 
 
 # ---------------------------------------------------------------------------

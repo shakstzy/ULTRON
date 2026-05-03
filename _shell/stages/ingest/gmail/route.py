@@ -165,8 +165,12 @@ def route(thread: dict, workspaces_config: dict) -> list[dict]:
                 if acct.get("account") and thread.get("account") and acct["account"] != thread["account"]:
                     continue
                 api = acct.get("api_query", {}) or {}
-                fired = _first_matching_rule(thread, api.get("include"))
-                if fired and not _evaluate_excludes(thread, api.get("exclude")):
+                inc = api.get("include") or []
+                exc = api.get("exclude") or []
+                inc_rules = [r if isinstance(r, str) and ":" in r else f"label:{r}" for r in inc]
+                exc_rules = [r if isinstance(r, str) and ":" in r else f"label:{r}" for r in exc]
+                fired = _first_matching_rule(thread, inc_rules)
+                if fired and not _evaluate_excludes(thread, exc_rules):
                     matched[ws] = fired
                     for rule in acct.get("rules", []) or []:
                         also = rule.get("also_route_to") or []
@@ -185,15 +189,13 @@ def route(thread: dict, workspaces_config: dict) -> list[dict]:
             matched[ws] = fired
 
     if not matched:
-        defaults = {
-            _unrouted_default_for(cfg)
-            for ws, cfg in workspaces_config.items()
-            if _gmail_block(cfg) is not None
-        }
-        if "skip" in defaults:
-            return []
+        # Per-workspace eval, not pooled. A non-main workspace declaring
+        # `ingest_unrouted_default: skip` must NOT veto the main fallback.
         main = _main_workspace(workspaces_config)
         if main is not None:
+            main_default = _unrouted_default_for(workspaces_config.get(main, {}))
+            if main_default == "skip":
+                return []
             matched[main] = UNROUTED_RULE
 
     # Extras shouldn't overwrite explicit matches.

@@ -86,14 +86,7 @@ superseded_by: null
 ---
 ```
 
-Field rules: attachments listed even when `copied_to_raw: false` (sha256 +
-size_bytes preserved for later copy reconciliation). Reactions live inline
-in the body, not in `attachments`. Edit history beyond current text
-deferred to v1.5 (SETUP.md). When `message.text` is null (frequent on
-macOS 13+), parse the `attributedBody` typedstream blob to recover text;
-empty body is acceptable only when both columns are null. ROWID-based
-identity (min/max) is intentionally NOT stored: ROWIDs reset and gaps
-exist; `chat.message.guid` is the stable identity.
+Field rules: attachments listed even when `copied_to_raw: false` (sha256 + size_bytes preserved for later reconciliation). Reactions live inline in the body, not in `attachments`. Full edit history deferred to v1.5. When `message.text` is null (frequent on macOS 13+), parse the `attributedBody` typedstream blob to recover text; empty body acceptable only when both columns are null. ROWID min/max intentionally NOT stored (ROWIDs reset / have gaps); `chat.message.guid` is stable identity.
 
 ## E. Body format (LOCK 5)
 ```markdown
@@ -128,19 +121,15 @@ Conventions:
 - Unsents: `**HH:MM — sender:** [unsent at HH:MM]`. Preserves existence.
 
 ## F. Pre-filter (LOCK 6, deterministic, NO LLM)
-Universal blocklist applied before render. Per-contact allowlists are a
-routing concern, not a format concern.
+Universal blocklist before render. Per-contact / per-group allowlists and
+allowlist-overrides live in `sources.yaml`, not here.
 
 Skip messages where the handle matches:
 - `+1800*`, `+1888*`, `+1877*`, `+1866*`, `+1855*`, `+1844*`, `+1833*` (toll-free)
-- 5-digit short codes (e.g., `24365`, `33728`, `262966`) typically OTP / 2FA
+- 5-digit short codes (`24365`, `33728`, `262966`) typically OTP / 2FA
 - `verify@*`, `noreply@*`, `no-reply@*`, `donotreply@*`
 
-Skip app messages where `balloon_bundle_id` is in:
-- `com.apple.messages.URLBalloonProvider` **with no text body** (link previews captured once inline; standalone preview rows are dropped).
-
-Group-chat skip lists (e.g., "Pickup Soccer") live in `sources.yaml`, not
-here.
+Skip app messages where `balloon_bundle_id` is `com.apple.messages.URLBalloonProvider` **with no text body** (standalone link previews; the preview captured once inline on the original message is preserved).
 
 ## G. Attachment copy strategy (LOCK 7)
 For each attachment in a month being rendered:
@@ -162,12 +151,14 @@ last_message_date: <ISO 8601>
 
 Sanity check on every run, in order:
 1. `SELECT date FROM message WHERE ROWID = <last_rowid>`.
-2. If row exists AND date matches `last_message_date`: ROWID path (`SELECT ... WHERE ROWID > last_rowid`). Fast.
-3. If row missing OR date mismatch: ROWID was reset (Messages reset, migration, rebuild). Fall back to date path (`SELECT ... WHERE date > last_message_date`). Log warning.
-4. After successful run, advance both values atomically.
+2. If row exists AND date matches `last_message_date` (within 60s): ROWID path. Fast.
+3. If row missing OR date mismatch: ROWID was reset / reused (migration, rebuild). Fall back to date path (`SELECT ... WHERE date > last_message_date`). Log warning.
+4. After successful run, advance both values atomically (fsync temp + parent dir before rename).
+
+Incremental scan also captures **mutations to past months**, not just new rows: tapback rows whose `associated_message_guid` targets a message older than the cursor, edited rows with `date_edited > last_message_date`, and unsent rows. Mark every `(contact_slug, YYYY-MM)` bucket touched by such mutations for re-render this run; otherwise past months go stale.
 
 Dedup ledger: `workspaces/<ws>/_meta/ingested.jsonl`. Key:
-`imessage:<contact_slug>:<YYYY-MM>` (per-month, not per-message).
+`imessage:<contact_type>:<contact_slug>:<YYYY-MM>` where `contact_type ∈ {individual, group}`. The contact_type prefix prevents individual / group slug collisions.
 
 | Existing ledger row | content_hash | Action |
 |---|---|---|
@@ -182,14 +173,14 @@ Tapbacks are separate `message` rows where `associated_message_type` is in
 
 The renderer must:
 1. Filter all tapback rows out of the main message stream.
-2. Build a map `target_guid -> list[(type, sender, removed?)]`.
-3. Apply 3xxx removals (latest per `(target, sender, type)` wins).
-4. Attach surviving tapbacks inline below their target message per § E.
+2. Build a map `target_guid -> list[(type, sender, tapback_date, removed?)]`.
+3. Apply 3xxx removals; latest per `(target, sender, type)` by `tapback_date` wins. Removal-without-prior-add: log and ignore.
+4. Attach surviving tapbacks inline below their target message per § E. If target is in a different month bucket, mark that bucket for re-render (see § H). If target is unsent / deleted, render the tapback under a `[deleted target]` placeholder.
 5. Never emit tapbacks as standalone message rows.
 
 ## J. Forbidden behaviors (immutable contract)
 The robot NEVER:
-1. Deletes a raw file based on chat.db deletion. Vanished message rows set `deleted_upstream` on the existing month file; the file persists.
+1. Deletes a raw file based on chat.db deletion. v1 sets `deleted_upstream` only on cursor-resync rediscovery; auto-detection of vanished rows is deferred to v1.5.
 2. Modifies `chat.db`. Read-only `sqlite3` URI mode required (`?mode=ro`).
 3. Runs LLM or vision calls during ingest. Pure Python only.
 4. Edits frontmatter post-write, except `deleted_upstream` and `superseded_by`.
@@ -198,10 +189,7 @@ The robot NEVER:
 7. Skips § F's universal blocklist, even if a workspace allowlists the handle.
 
 ## K. Default for unrouted contacts
-**SKIP** (privacy-first; opposite of Gmail). A contact must be explicitly
-allowlisted in some workspace's `sources.yaml.imessage` block to land.
+**SKIP** (privacy-first; opposite of Gmail). Contacts must be explicitly allowlisted in some workspace's `sources.yaml.imessage` block to land.
 
 ## L. Cross-references
-Workflow: `CONTEXT.md`. Setup, permissions, caveats: `SETUP.md`. Routing:
-`route.py` (allowlist, default skip). Universal envelope check:
-`_shell/bin/check-frontmatter.py`.
+Workflow: `CONTEXT.md`. Setup / permissions / caveats: `SETUP.md`. Routing: `route.py`. Universal envelope: `_shell/bin/check-frontmatter.py`.

@@ -19,7 +19,17 @@ sources:
             - "label:SPAM"
             - "label:TRASH"
 
-  slack: []        # deferred — credentials wired but ingest disabled in Phase 3
+  slack:
+    workspace_id: T04472N6YUU
+    workspace_slug: eclipse
+    channels:
+      - app-team
+      - eclipse-ugc
+      - data-sourcing
+      - deals
+      - engineering
+      - general
+    include_dms_with: []        # routing-time DM allowlist; populate later
   drive: []        # deferred
   manual:
     watch_path: raw/manual/_inbox/

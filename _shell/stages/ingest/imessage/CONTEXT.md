@@ -21,19 +21,22 @@ One robot run = one local chat.db. (Future iCloud-only-device support adds per-d
 2. **Open chat.db** read-only via URI (`?mode=ro`). Bail with actionable error if Full Disk Access is missing (see `SETUP.md`).
 3. **Read cursor**. Sanity-check per `format.md` § H: ROWID path if `last_rowid` row exists and date matches; else date path with warning.
 4. **Resolve Contacts** via `Contacts.framework` (PyObjC). On permission denial, fall back to email / phone / hash slug derivation.
-5. **For each new message** (from cursor query):
+5. **Scan new and mutated rows** (per `format.md` § H):
+   - New rows by cursor predicate.
+   - Tapback rows whose target is older than the cursor (mutations to past months).
+   - Edited rows (`date_edited > last_message_date`) and unsent rows.
    - Apply universal blocklist (`format.md` § F).
    - Resolve `contact_slug` against `_profiles/` (create stub on first sight).
-   - Bucket by `(contact_slug, YYYY-MM)`.
+   - Bucket by `(contact_slug, YYYY-MM)`. Mutation hits on past months mark those buckets for re-render.
 6. **For each (contact, month) bucket**:
    - Filter and merge tapbacks per `format.md` § I.
    - Copy attachments per `format.md` § G (100 MB / month budget).
-   - Render markdown per `format.md` § E.
+   - Render markdown per `format.md` § E (canonical TZ, attributedBody fallback when `text` is null).
    - Compute `content_hash` (blake3 of body markdown).
    - Call `route(item, workspaces_config) -> destinations`.
    - Per destination: skip if `(key, content_hash)` matches existing ledger row; else write file at deterministic path and append ledger row.
 7. **Profile updates**: append new handles / aliases to `_profiles/<slug>.md`. Never delete prior entries.
-8. **Advance cursor** atomically (both `last_rowid` and `last_message_date`) only after successful write phase. Mid-batch failure leaves cursor; next run replays.
+8. **Advance cursor** crash-safely (write `.tmp`, `fsync`, atomic rename, `fsync` parent dir) only after successful write phase. Mid-batch failure leaves cursor; next run replays.
 9. **Per-workspace summary** appended to `workspaces/<ws>/_meta/log.md`.
 10. **Self-review** writes anomalies to `_shell/runs/<RUN_ID>/self-review.md`: missing attachments, pruned months, ROWID-reset warnings, route misses.
 

@@ -3,10 +3,7 @@
 ingest-slack.py — Slack robot, structured per the 9 locks in
 _shell/stages/ingest/slack/format.md.
 
-Skeleton mode. Set:
-    IMPLEMENTATION_READY = True
-at the top of the file ONLY after the activation checklist in
-_shell/stages/ingest/slack/SETUP.md § 7 is green.
+Activated for Eclipse Labs (workspace_slug=eclipse) on 2026-05-02.
 
 Forbidden behaviors (immutable contract — see format.md "Forbidden"):
 1. Never delete a raw file based on Slack-side deletion.
@@ -24,46 +21,354 @@ Forbidden behaviors (immutable contract — see format.md "Forbidden"):
 from __future__ import annotations
 
 import argparse
+import datetime as dt
 import fcntl
+import hashlib
 import json
 import os
+import re
 import sys
+import time
+import urllib.error
+import urllib.parse
+import urllib.request
+import unicodedata
 from pathlib import Path
 
-# ---------------------------------------------------------------------------
-# Configuration
-# ---------------------------------------------------------------------------
 ULTRON_ROOT = Path(os.environ.get("ULTRON_ROOT", str(Path.home() / "ULTRON")))
 CREDENTIALS_DIR = ULTRON_ROOT / "_credentials"
 CURSOR_DIR = ULTRON_ROOT / "_shell" / "cursors" / "slack"
 
-# Initial backfill window if cursor is empty.
 DEFAULT_LOOKBACK_DAYS = int(os.environ.get("ULTRON_SLACK_LOOKBACK_DAYS", "365"))
 
-IMPLEMENTATION_READY = False
+LOCAL_TZ = dt.datetime.now().astimezone().tzinfo
+SLACK_BASE = "https://slack.com/api"
+
+IMPLEMENTATION_READY = True
+
+SKIP_SUBTYPES = {
+    "channel_join", "channel_leave", "channel_topic", "channel_purpose",
+    "channel_name", "channel_archive", "channel_unarchive",
+    "group_join", "group_leave", "bot_message", "bot_add", "bot_remove",
+}
+
+CANONICAL_ME_SLUG = "adithya-shak-kumar"
 
 
 # ---------------------------------------------------------------------------
-# Lock helpers
+# Slack HTTP client (stdlib only; deterministic + minimal)
 # ---------------------------------------------------------------------------
-def lock_path_for(workspace_slug: str) -> str:
-    """flock path per format.md Lock 9 — one lock per (workspace)."""
-    return f"/tmp/com.adithya.ultron.ingest-slack-{workspace_slug}.lock"
+class SlackError(RuntimeError):
+    def __init__(self, method: str, error: str, payload: dict):
+        super().__init__(f"slack {method}: {error}")
+        self.method = method
+        self.error = error
+        self.payload = payload
 
 
-def _try_lock(path: str):
-    """Returns the open file handle if lock acquired, else None."""
-    fh = open(path, "w")
-    try:
-        fcntl.flock(fh.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
-        return fh
-    except BlockingIOError:
-        fh.close()
-        return None
+class SlackClient:
+    def __init__(self, token: str, *, max_retries: int = 5):
+        self.token = token
+        self.max_retries = max_retries
+
+    def call(self, method: str, **params) -> dict:
+        url = f"{SLACK_BASE}/{method}"
+        if params:
+            url += "?" + urllib.parse.urlencode(params, doseq=True)
+        backoff = 1.0
+        last_err: Exception | None = None
+        for attempt in range(self.max_retries):
+            try:
+                req = urllib.request.Request(
+                    url, headers={"Authorization": f"Bearer {self.token}"}
+                )
+                with urllib.request.urlopen(req, timeout=20) as r:
+                    payload = json.loads(r.read())
+            except urllib.error.HTTPError as e:
+                if e.code == 429:
+                    retry_after = float(e.headers.get("Retry-After") or backoff)
+                    time.sleep(min(retry_after, 60))
+                    backoff = min(backoff * 2, 30)
+                    last_err = e
+                    continue
+                raise
+            except (urllib.error.URLError, TimeoutError) as e:
+                last_err = e
+                time.sleep(backoff)
+                backoff = min(backoff * 2, 30)
+                continue
+            if payload.get("ok"):
+                return payload
+            err = payload.get("error", "unknown")
+            if err == "ratelimited":
+                retry_after = float(payload.get("retry_after") or backoff)
+                time.sleep(min(retry_after, 60))
+                backoff = min(backoff * 2, 30)
+                continue
+            raise SlackError(method, err, payload)
+        raise RuntimeError(f"slack {method}: retries exhausted ({last_err})")
+
+    def paginate(self, method: str, *, key: str, **params):
+        cursor: str | None = None
+        while True:
+            call_params = dict(params)
+            if cursor:
+                call_params["cursor"] = cursor
+            payload = self.call(method, **call_params)
+            for item in payload.get(key, []) or []:
+                yield item
+            cursor = (payload.get("response_metadata") or {}).get("next_cursor") or ""
+            if not cursor:
+                return
 
 
 # ---------------------------------------------------------------------------
-# Cursor (Lock 8) — per (workspace, container)
+# Slug derivation (Lock 2)
+# ---------------------------------------------------------------------------
+def kebab(s: str, *, max_len: int = 40) -> str:
+    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode("ascii")
+    s = re.sub(r"[^a-zA-Z0-9]+", "-", s).strip("-").lower()
+    if len(s) > max_len:
+        s = s[:max_len].rstrip("-")
+    return s
+
+
+def workspace_slug_from_team(team_name: str | None, team_url: str | None) -> str:
+    if team_url:
+        host = urllib.parse.urlparse(team_url).netloc
+        sub = host.split(".")[0]
+        sub = kebab(sub)
+        if sub:
+            return sub
+    if team_name:
+        return kebab(team_name)
+    return "slack"
+
+
+def user_slug(profile: dict, user_id: str) -> str:
+    p = (profile or {}).get("profile") or profile or {}
+    display = (p.get("display_name") or "").strip()
+    real = (p.get("real_name") or "").strip()
+    email = (p.get("email") or "").strip()
+    if display:
+        slug = kebab(display)
+        if slug:
+            return slug
+    if real:
+        slug = kebab(real)
+        if slug:
+            return slug
+    if email and "@" in email:
+        local, domain = email.split("@", 1)
+        domain_stem = domain.split(".")[0]
+        slug = kebab(f"{local}-{domain_stem}")
+        if slug:
+            return slug
+    return (user_id or "").lower() or "unknown-user"
+
+
+# ---------------------------------------------------------------------------
+# User cache (resolves user_id → {slug, display, real, email})
+# ---------------------------------------------------------------------------
+class UserCache:
+    def __init__(self, client: SlackClient, *, me_user_id: str):
+        self.client = client
+        self.me_user_id = me_user_id
+        self._cache: dict[str, dict] = {}
+
+    def get(self, user_id: str) -> dict:
+        if not user_id:
+            return {"slug": "unknown-user", "display_name": "unknown",
+                    "real_name": "", "email": "", "user_id": ""}
+        if user_id in self._cache:
+            return self._cache[user_id]
+        try:
+            res = self.client.call("users.info", user=user_id)
+            u = res.get("user") or {}
+            p = u.get("profile") or {}
+            if user_id == self.me_user_id:
+                slug = CANONICAL_ME_SLUG
+                display = "Adithya Kumar (me)"
+            else:
+                slug = user_slug(p, user_id)
+                display = (p.get("display_name") or p.get("real_name")
+                           or u.get("real_name") or user_id)
+            entry = {
+                "slug": slug,
+                "display_name": display,
+                "real_name": p.get("real_name") or "",
+                "email": p.get("email") or "",
+                "user_id": user_id,
+            }
+        except SlackError:
+            entry = {
+                "slug": user_id.lower(),
+                "display_name": user_id,
+                "real_name": "",
+                "email": "",
+                "user_id": user_id,
+            }
+        self._cache[user_id] = entry
+        return entry
+
+
+# ---------------------------------------------------------------------------
+# Lock 5 — body rendering
+# ---------------------------------------------------------------------------
+MENTION_USER_RE = re.compile(r"<@([UW][A-Z0-9]+)(?:\|[^>]*)?>")
+MENTION_CHAN_RE = re.compile(r"<#([CG][A-Z0-9]+)(?:\|([^>]+))?>")
+LINK_LABELED_RE = re.compile(r"<(https?://[^|>]+)\|([^>]+)>")
+LINK_BARE_RE = re.compile(r"<(https?://[^>]+)>")
+SLACK_BOLD_RE = re.compile(r"(?<![A-Za-z0-9])\*([^*\n]+)\*(?![A-Za-z0-9])")
+SLACK_ITALIC_RE = re.compile(r"(?<![A-Za-z0-9])_([^_\n]+)_(?![A-Za-z0-9])")
+SLACK_STRIKE_RE = re.compile(r"~([^~\n]+)~")
+
+
+def decode_text(text: str, users: UserCache, chan_name_by_id: dict) -> str:
+    if not text:
+        return ""
+
+    def sub_user(m):
+        info = users.get(m.group(1))
+        return f"@{info['display_name']}"
+
+    def sub_chan(m):
+        cid, name = m.group(1), (m.group(2) or "")
+        if name:
+            return f"#{name}"
+        return f"#{chan_name_by_id.get(cid, cid)}"
+
+    text = MENTION_USER_RE.sub(sub_user, text)
+    text = MENTION_CHAN_RE.sub(sub_chan, text)
+    text = LINK_LABELED_RE.sub(r"[\2](\1)", text)
+    text = LINK_BARE_RE.sub(r"\1", text)
+    text = SLACK_BOLD_RE.sub(r"**\1**", text)
+    text = SLACK_ITALIC_RE.sub(r"*\1*", text)
+    text = SLACK_STRIKE_RE.sub(r"~~\1~~", text)
+    text = text.replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
+    return text
+
+
+def fmt_size(n: int | None) -> str:
+    if n is None:
+        return "?"
+    n = int(n)
+    units = ["B", "KB", "MB", "GB"]
+    i = 0
+    f = float(n)
+    while f >= 1024 and i < len(units) - 1:
+        f /= 1024
+        i += 1
+    if i == 0:
+        return f"{int(f)}{units[i]}"
+    return f"{f:.1f}{units[i]}"
+
+
+def ts_to_local_dt(ts: str) -> dt.datetime:
+    return dt.datetime.fromtimestamp(float(ts), tz=LOCAL_TZ)
+
+
+def hh_mm(d: dt.datetime) -> str:
+    return d.strftime("%H:%M")
+
+
+def message_lines(msg: dict, users: UserCache, chan_name_by_id: dict,
+                  *, indent: bool = False) -> list[str]:
+    """Render one message (parent or reply) per Lock 5. Returns body lines.
+
+    Reactions and bot messages already filtered upstream. This function
+    renders edits (current text), deletions ([deleted at HH:MM]),
+    and inline file placeholders.
+    """
+    sender = users.get(msg.get("user") or "")["display_name"]
+    when = ts_to_local_dt(msg["ts"])
+    prefix = "> " if indent else ""
+    heading_marker = "###" if indent else "##"
+
+    if msg.get("subtype") == "message_deleted":
+        deleted_at = ts_to_local_dt(msg.get("deleted_ts") or msg["ts"])
+        return [
+            f"{prefix}{heading_marker} {hh_mm(when)} — {sender}",
+            f"{prefix}",
+            f"{prefix}[deleted at {hh_mm(deleted_at)}]",
+            f"{prefix}",
+        ]
+
+    body = decode_text(msg.get("text") or "", users, chan_name_by_id)
+    body_lines = [l for l in body.splitlines()] if body else []
+
+    file_lines: list[str] = []
+    for f in msg.get("files") or []:
+        if f.get("mode") == "tombstone":
+            continue
+        name = f.get("name") or f.get("title") or "file"
+        size = fmt_size(f.get("size"))
+        file_lines.append(f"[file: {name} — {size}]")
+
+    out: list[str] = [
+        f"{prefix}{heading_marker} {hh_mm(when)} — {sender}",
+        f"{prefix}",
+    ]
+    for l in body_lines:
+        out.append(f"{prefix}{l}".rstrip())
+    if file_lines:
+        if body_lines:
+            out.append(f"{prefix}")
+        for l in file_lines:
+            out.append(f"{prefix}{l}")
+    out.append(f"{prefix}")
+    return out
+
+
+def render_day_body(container: dict, day: dt.date, parents_for_day: list[dict],
+                    thread_cache: dict[str, list[dict]],
+                    users: UserCache, chan_name_by_id: dict) -> str:
+    ctype = container["type"]
+    name = container.get("name") or container.get("slug")
+    weekday = day.strftime("%A")
+    date_str = day.isoformat()
+
+    if ctype == "channel":
+        title = f"# #{name} — {date_str} ({weekday})"
+    elif ctype == "dm":
+        other_display = container.get("other_display_name") or name
+        title = f"# DM with {other_display} — {date_str} ({weekday})"
+    elif ctype == "group-dm":
+        members = container.get("member_display_names") or []
+        label = ", ".join(members) if members else (container.get("display_label") or "")
+        title = f"# Group DM ({len(members) or '?'}): {label} — {date_str} ({weekday})"
+    else:
+        title = f"# {name} — {date_str} ({weekday})"
+
+    lines: list[str] = [title, ""]
+    for parent in parents_for_day:
+        lines.extend(message_lines(parent, users, chan_name_by_id))
+        replies = thread_cache.get(parent.get("thread_ts") or "", [])
+        for r in replies:
+            if r.get("ts") == parent.get("ts"):
+                continue
+            lines.extend(message_lines(r, users, chan_name_by_id, indent=True))
+    return "\n".join(lines).rstrip() + "\n"
+
+
+# ---------------------------------------------------------------------------
+# Lock 6 — pre-filter
+# ---------------------------------------------------------------------------
+def is_skippable(msg: dict) -> bool:
+    if msg.get("bot_id"):
+        return True
+    sub = msg.get("subtype")
+    if sub in SKIP_SUBTYPES:
+        return True
+    if sub in {"message_changed", "message_deleted"}:
+        return False
+    if not (msg.get("text") or msg.get("files") or msg.get("thread_ts")):
+        return True
+    return False
+
+
+# ---------------------------------------------------------------------------
+# Lock 8 — cursors + dedup ledger
 # ---------------------------------------------------------------------------
 def workspace_cursor_dir(workspace_slug: str) -> Path:
     return CURSOR_DIR / workspace_slug
@@ -78,7 +383,6 @@ def me_cursor_path(workspace_slug: str) -> Path:
 
 
 def read_cursor(workspace_slug: str, container_slug: str) -> str | None:
-    """Return latest seen Slack microsecond ts for the container, or None."""
     p = cursor_path(workspace_slug, container_slug)
     if not p.exists():
         return None
@@ -86,7 +390,6 @@ def read_cursor(workspace_slug: str, container_slug: str) -> str | None:
 
 
 def write_cursor(workspace_slug: str, container_slug: str, ts: str) -> None:
-    """Atomic cursor write per format.md Lock 8."""
     p = cursor_path(workspace_slug, container_slug)
     p.parent.mkdir(parents=True, exist_ok=True)
     tmp = p.with_suffix(".tmp")
@@ -95,7 +398,6 @@ def write_cursor(workspace_slug: str, container_slug: str, ts: str) -> None:
 
 
 def read_me(workspace_slug: str) -> dict | None:
-    """Return {'user_id': ..., 'canonical_slug': ...} or None."""
     p = me_cursor_path(workspace_slug)
     if not p.exists():
         return None
@@ -111,7 +413,7 @@ def read_me(workspace_slug: str) -> dict | None:
 
 
 def write_me(workspace_slug: str, user_id: str,
-             canonical_slug: str = "adithya-shak-kumar") -> None:
+             canonical_slug: str = CANONICAL_ME_SLUG) -> None:
     p = me_cursor_path(workspace_slug)
     p.parent.mkdir(parents=True, exist_ok=True)
     tmp = p.with_suffix(".tmp")
@@ -119,26 +421,44 @@ def write_me(workspace_slug: str, user_id: str,
     tmp.replace(p)
 
 
-# ---------------------------------------------------------------------------
-# Credentials
-# ---------------------------------------------------------------------------
-def credentials_path(workspace_slug: str) -> Path:
-    return CREDENTIALS_DIR / f"slack-{workspace_slug}.json"
+def ledger_path(ws: str) -> Path:
+    return ULTRON_ROOT / "workspaces" / ws / "_meta" / "ingested.jsonl"
 
 
-def load_credentials(workspace_slug: str) -> dict | None:
-    p = credentials_path(workspace_slug)
+def read_ledger_index(ws: str) -> dict[str, str]:
+    """Return {key: latest_content_hash} from the JSONL ledger."""
+    p = ledger_path(ws)
     if not p.exists():
-        sys.stderr.write(
-            f"ingest-slack: credentials missing at {p}. "
-            "See _shell/stages/ingest/slack/SETUP.md § 1.\n"
-        )
-        return None
+        return {}
+    out: dict[str, str] = {}
+    for line in p.read_text().splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            row = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        k = row.get("key")
+        h = row.get("content_hash")
+        if k and h:
+            out[k] = h
+    return out
+
+
+def append_ledger(ws: str, row: dict) -> None:
+    p = ledger_path(ws)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    with p.open("a") as f:
+        f.write(json.dumps(row, separators=(",", ":")) + "\n")
+
+
+def blake3_hex(data: bytes) -> str:
     try:
-        return json.loads(p.read_text())
-    except json.JSONDecodeError as exc:
-        sys.stderr.write(f"ingest-slack: credentials JSON invalid: {exc}\n")
-        return None
+        import blake3 as _blake3
+        return _blake3.blake3(data).hexdigest()
+    except ImportError:
+        return hashlib.sha256(data).hexdigest()
 
 
 # ---------------------------------------------------------------------------
@@ -172,153 +492,520 @@ def load_workspaces_config() -> dict:
 
 
 def call_router(item: dict, workspaces_config: dict) -> list[str]:
-    """Lazy import of route.py so the skeleton stays import-safe."""
     sys.path.insert(0, str(ULTRON_ROOT / "_shell" / "stages" / "ingest" / "slack"))
     import route  # type: ignore
     return route.route(item, workspaces_config)
 
 
 # ---------------------------------------------------------------------------
-# Stub functions — bodies pending IMPLEMENTATION_READY flip
+# Containers + history fetch
 # ---------------------------------------------------------------------------
-def auth_test(token: str) -> dict:
-    """Slack auth.test → {user_id, user, team_id, team}. Stub."""
-    raise NotImplementedError("auth_test — implement during activation pass")
+def list_visible_containers(client: SlackClient) -> list[dict]:
+    """Return public channels (member only) + 1:1 DMs the token can see.
+    Private + group DMs are skipped if scope missing (logged once)."""
+    out: list[dict] = []
+    for c in client.paginate("conversations.list", key="channels",
+                             types="public_channel", exclude_archived="true",
+                             limit=200):
+        if not c.get("is_member"):
+            continue
+        out.append({
+            "id": c["id"], "type": "channel", "slug": kebab(c["name"]),
+            "name": c["name"], "raw": c,
+        })
+    try:
+        for c in client.paginate("conversations.list", key="channels",
+                                 types="private_channel", exclude_archived="true",
+                                 limit=200):
+            if not c.get("is_member"):
+                continue
+            out.append({
+                "id": c["id"], "type": "channel", "slug": kebab(c["name"]),
+                "name": c["name"], "raw": c,
+            })
+    except SlackError as e:
+        if e.error == "missing_scope":
+            sys.stderr.write("ingest-slack: skipping private channels (missing groups:read)\n")
+        else:
+            raise
+    for c in client.paginate("conversations.list", key="channels", types="im",
+                             limit=200):
+        out.append({
+            "id": c["id"], "type": "dm", "user_id": c.get("user"),
+            "raw": c,
+        })
+    try:
+        for c in client.paginate("conversations.list", key="channels",
+                                 types="mpim", limit=200):
+            out.append({
+                "id": c["id"], "type": "group-dm",
+                "slug": c["id"][:8].lower(), "raw": c,
+            })
+    except SlackError as e:
+        if e.error == "missing_scope":
+            sys.stderr.write("ingest-slack: skipping group DMs (missing mpim:read)\n")
+        else:
+            raise
+    return out
 
 
-def fetch_team_info(token: str) -> dict:
-    """team.info → workspace metadata. Stub."""
-    raise NotImplementedError("fetch_team_info — implement during activation pass")
+def fetch_container_messages(client: SlackClient, channel_id: str, *,
+                             oldest_ts: str | None,
+                             latest_ts: str | None = None) -> list[dict]:
+    params = {"channel": channel_id, "limit": 200, "inclusive": "false"}
+    if oldest_ts:
+        params["oldest"] = oldest_ts
+    if latest_ts:
+        params["latest"] = latest_ts
+    msgs: list[dict] = []
+    for m in client.paginate("conversations.history", key="messages", **params):
+        msgs.append(m)
+    msgs.sort(key=lambda m: float(m["ts"]))
+    return msgs
 
 
-def list_containers(token: str) -> list[dict]:
-    """conversations.list types=public_channel,private_channel,im,mpim. Stub."""
-    raise NotImplementedError("list_containers — implement during activation pass")
-
-
-def fetch_history(token: str, channel_id: str, oldest: str | None) -> list[dict]:
-    """conversations.history paginated. Stub."""
-    raise NotImplementedError("fetch_history — implement during activation pass")
-
-
-def fetch_thread_replies(token: str, channel_id: str, thread_ts: str) -> list[dict]:
-    """conversations.replies cached per (channel,parent). Stub."""
-    raise NotImplementedError(
-        "fetch_thread_replies — implement during activation pass"
-    )
-
-
-def derive_user_slug(profile: dict) -> str:
-    """Lock 2 priority order: display_name > real_name > email-stem > userid. Stub."""
-    raise NotImplementedError("derive_user_slug — implement during activation pass")
-
-
-def derive_workspace_slug(team_info: dict) -> str:
-    """team.info name → kebab-case ASCII. Stub."""
-    raise NotImplementedError("derive_workspace_slug — implement during activation pass")
-
-
-def render_day(messages: list, container: dict, ws_slug: str,
-               me_user_id: str) -> str:
-    """Return body markdown per format.md Lock 5. Stub."""
-    raise NotImplementedError("render_day — implement during activation pass")
-
-
-def update_profile(container: dict, members: list, kind: str) -> None:
-    """Append-only frontmatter update on the relevant _profile.md. Stub."""
-    raise NotImplementedError("update_profile — implement during activation pass")
+def fetch_thread(client: SlackClient, channel_id: str,
+                 thread_ts: str) -> list[dict]:
+    out: list[dict] = []
+    for m in client.paginate("conversations.replies", key="messages",
+                             channel=channel_id, ts=thread_ts, limit=200):
+        out.append(m)
+    out.sort(key=lambda m: float(m["ts"]))
+    return out
 
 
 # ---------------------------------------------------------------------------
-# CLI (Lock 9)
+# Frontmatter + write
 # ---------------------------------------------------------------------------
-def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
-    ap = argparse.ArgumentParser(
-        description="Slack robot. Structured per format.md (the 9 locks).",
-    )
-    ap.add_argument("--workspace", required=True,
-                    help="Slack workspace slug (e.g., eclipse-labs).")
-    ap.add_argument("--containers", default=None,
-                    help="Comma-separated subset of {channels,dms,group-dms}; "
-                         "default: all.")
-    ap.add_argument("--channel", default=None,
-                    help="Single container slug (debugging).")
-    ap.add_argument("--dry-run", action="store_true",
-                    help="Parse + render, no writes; cursor untouched.")
-    ap.add_argument("--show", action="store_true",
-                    help="In dry-run, print full rendered content.")
-    ap.add_argument("--max-days", type=int, default=None,
-                    help="Cap days back from cursor (validation aid).")
-    ap.add_argument("--reset-cursor", action="store_true",
-                    help="Wipe all cursors for the workspace; rebuild from "
-                         "ULTRON_SLACK_LOOKBACK_DAYS.")
-    ap.add_argument("--reset-cursor-channel", default=None,
-                    help="Wipe cursor for one container only.")
-    ap.add_argument("--no-attachments", action="store_true",
-                    help="Skip attachment metadata extraction (fast schema-only "
-                         "re-render).")
-    ap.add_argument("--run-id", default=None,
-                    help="Tag for ledger / log lines.")
-    return ap.parse_args(argv)
+def yaml_dump(d: dict) -> str:
+    """Tiny deterministic YAML emitter (no pyyaml dep at write time)."""
+    import yaml  # use pyyaml — already required by config load
+    return yaml.safe_dump(d, sort_keys=False, allow_unicode=True,
+                          default_flow_style=False)
+
+
+def container_path(workspace_slug: str, container: dict) -> Path:
+    base = ULTRON_ROOT / "workspaces"
+    if container["type"] == "channel":
+        sub = Path("channels") / container["slug"]
+    elif container["type"] == "dm":
+        sub = Path("dms") / container["other_user_slug"]
+    elif container["type"] == "group-dm":
+        sub = Path("group-dms") / container["slug"]
+    else:
+        raise ValueError(container["type"])
+    return Path("raw") / "slack" / workspace_slug / sub
+
+
+def day_file_path(ws: str, workspace_slug: str, container: dict,
+                  day: dt.date) -> Path:
+    rel = container_path(workspace_slug, container)
+    if container["type"] == "channel":
+        leaf = container["slug"]
+    elif container["type"] == "dm":
+        leaf = container["other_user_slug"]
+    else:
+        leaf = container["slug"]
+    return (ULTRON_ROOT / "workspaces" / ws / rel
+            / f"{day.year:04d}" / f"{day.month:02d}"
+            / f"{day.isoformat()}__{leaf}.md")
+
+
+def profile_path(ws: str, workspace_slug: str, container: dict | None) -> Path:
+    base = ULTRON_ROOT / "workspaces" / ws / "raw" / "slack" / workspace_slug
+    if container is None:
+        return base / "_profile.md"
+    return base / container_path(workspace_slug, container).relative_to(
+        Path("raw") / "slack" / workspace_slug
+    ) / "_profile.md"
+
+
+def now_iso() -> str:
+    return dt.datetime.now(LOCAL_TZ).isoformat(timespec="seconds")
+
+
+def write_day_file(path: Path, frontmatter: dict, body: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    text = "---\n" + yaml_dump(frontmatter) + "---\n\n" + body
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    tmp.write_text(text)
+    tmp.replace(path)
+
+
+def write_profile(path: Path, frontmatter: dict, body: str = "") -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    text = "---\n" + yaml_dump(frontmatter) + "---\n"
+    if body:
+        text += "\n" + body.rstrip() + "\n"
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    tmp.write_text(text)
+    tmp.replace(path)
+
+
+# ---------------------------------------------------------------------------
+# Per-container processing
+# ---------------------------------------------------------------------------
+def process_container(*, client: SlackClient, container: dict,
+                      workspace_slug: str, team_id: str,
+                      users: UserCache, chan_name_by_id: dict,
+                      lookback_days: int, max_days: int | None,
+                      workspaces_config: dict, dry_run: bool,
+                      run_id: str, ledger_index_by_ws: dict,
+                      no_attachments: bool) -> dict:
+    summary = {"messages": 0, "files_written": 0, "deferred": False,
+               "container_id": container["id"]}
+
+    cur_ts = read_cursor(workspace_slug, _container_cursor_slug(container))
+    if max_days is not None:
+        bound = time.time() - max_days * 86400
+        if cur_ts is None or float(cur_ts) < bound:
+            cur_ts = f"{bound:.6f}"
+    if cur_ts is None:
+        bound = time.time() - lookback_days * 86400
+        cur_ts = f"{bound:.6f}"
+
+    try:
+        msgs = fetch_container_messages(client, container["id"], oldest_ts=cur_ts)
+    except SlackError as e:
+        if e.error in ("not_found", "channel_not_found"):
+            sys.stderr.write(
+                f"ingest-slack: container {container.get('name') or container['id']} "
+                "vanished upstream (archived/deleted); skipping.\n"
+            )
+            summary["deferred"] = True
+            return summary
+        if e.error == "missing_scope":
+            sys.stderr.write(
+                f"ingest-slack: missing scope for {container['type']} "
+                f"{container.get('name') or container['id']}; skipping.\n"
+            )
+            summary["deferred"] = True
+            return summary
+        raise
+
+    if no_attachments:
+        for m in msgs:
+            m.pop("files", None)
+
+    parents = [m for m in msgs if not is_skippable(m)]
+    summary["messages"] = len(parents)
+    if not parents:
+        return summary
+
+    thread_cache: dict[str, list[dict]] = {}
+    for m in parents:
+        if m.get("thread_ts") and m.get("thread_ts") == m.get("ts") \
+                and (m.get("reply_count") or 0) > 0:
+            try:
+                thread_cache[m["ts"]] = [
+                    r for r in fetch_thread(client, container["id"], m["ts"])
+                    if not is_skippable(r)
+                ]
+            except SlackError as e:
+                if e.error in ("missing_scope", "thread_not_found"):
+                    thread_cache[m["ts"]] = []
+                else:
+                    raise
+
+    by_day: dict[dt.date, list[dict]] = {}
+    for m in parents:
+        d = ts_to_local_dt(m["ts"]).date()
+        by_day.setdefault(d, []).append(m)
+
+    latest_ts_seen = max(float(m["ts"]) for m in parents)
+
+    for day, day_parents in sorted(by_day.items()):
+        body = render_day_body(container, day, day_parents, thread_cache,
+                               users, chan_name_by_id)
+        body_hash = "blake3:" + blake3_hex(body.encode("utf-8"))
+        all_msgs_in_day = list(day_parents)
+        for p in day_parents:
+            all_msgs_in_day.extend(thread_cache.get(p["ts"], []))
+        provider_modified = ts_to_local_dt(
+            max(m["ts"] for m in all_msgs_in_day)
+        ).isoformat(timespec="seconds")
+
+        # Build participant + attachment metadata
+        participant_ids = {m.get("user") for m in all_msgs_in_day if m.get("user")}
+        participants = [
+            {"slug": users.get(uid)["slug"],
+             "slack_user_id": uid,
+             "display_name": users.get(uid)["display_name"],
+             "real_name": users.get(uid)["real_name"],
+             "email": users.get(uid)["email"]}
+            for uid in sorted(participant_ids)
+        ]
+
+        attachments_meta = []
+        for m in all_msgs_in_day:
+            for f in (m.get("files") or []):
+                if f.get("mode") == "tombstone":
+                    continue
+                attachments_meta.append({
+                    "id": f.get("id"),
+                    "filename": f.get("name") or f.get("title") or "",
+                    "size_bytes": f.get("size"),
+                    "mime": f.get("mimetype"),
+                    "sender_slug": users.get(m.get("user") or "")["slug"],
+                    "sent_at": ts_to_local_dt(m["ts"]).isoformat(timespec="seconds"),
+                    "permalink": f.get("permalink"),
+                    "private_url": f.get("url_private"),
+                })
+
+        thread_count = sum(1 for p in day_parents if thread_cache.get(p["ts"]))
+        edited_count = sum(
+            1 for m in all_msgs_in_day if (m.get("edited") or {}).get("ts")
+        )
+
+        ts_min = ts_to_local_dt(min(m["ts"] for m in all_msgs_in_day)).isoformat(timespec="seconds")
+        ts_max = ts_to_local_dt(max(m["ts"] for m in all_msgs_in_day)).isoformat(timespec="seconds")
+
+        item = {
+            "slack_workspace_id": team_id,
+            "slack_workspace_slug": workspace_slug,
+            "container_type": container["type"],
+            "container_slug": _container_cursor_slug(container),
+            "container_id": container["id"],
+            "channel_name": container.get("name"),
+            "channel_type": container["type"],
+            "participants": participants,
+            "date": day.isoformat(),
+        }
+        destinations = call_router(item, workspaces_config)
+        if not destinations:
+            continue
+
+        key = f"slack:{team_id}:{container['id']}:{day.isoformat()}"
+
+        for ws in destinations:
+            existing = ledger_index_by_ws.get(ws, {}).get(key)
+            if existing == body_hash:
+                continue
+
+            frontmatter = {
+                "source": "slack",
+                "workspace": ws,
+                "ingested_at": now_iso(),
+                "ingest_version": 1,
+                "content_hash": body_hash,
+                "provider_modified_at": provider_modified,
+                "slack_workspace_slug": workspace_slug,
+                "slack_workspace_id": team_id,
+                "container_type": container["type"],
+                "container_slug": _container_cursor_slug(container),
+                "container_id": container["id"],
+                "date": day.isoformat(),
+                "date_range": {"first": ts_min, "last": ts_max},
+                "message_count": len(day_parents),
+                "thread_count": thread_count,
+                "participant_count": len(participant_ids),
+                "participants": participants,
+                "attachments": attachments_meta,
+                "deleted_messages": [],
+                "edited_messages_count": edited_count,
+                "chat_db_message_ids": None,
+                "deleted_upstream": None,
+                "container_archived": False,
+            }
+            path = day_file_path(ws, workspace_slug, container, day)
+            if dry_run:
+                sys.stderr.write(f"  DRY would write {path}\n")
+                summary["files_written"] += 1
+                continue
+            write_day_file(path, frontmatter, body)
+            append_ledger(ws, {
+                "source": "slack", "key": key, "content_hash": body_hash,
+                "raw_path": str(path.relative_to(ULTRON_ROOT / "workspaces" / ws)),
+                "ingested_at": frontmatter["ingested_at"],
+                "run_id": run_id,
+            })
+            ledger_index_by_ws.setdefault(ws, {})[key] = body_hash
+            summary["files_written"] += 1
+
+    if not dry_run and parents:
+        write_cursor(workspace_slug, _container_cursor_slug(container),
+                     f"{latest_ts_seen:.6f}")
+    return summary
+
+
+def _container_cursor_slug(container: dict) -> str:
+    if container["type"] == "channel":
+        return container["slug"]
+    if container["type"] == "dm":
+        return container["other_user_slug"]
+    return container["slug"]
 
 
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
+def credentials_path(workspace_slug: str) -> Path:
+    return CREDENTIALS_DIR / f"slack-{workspace_slug}.json"
+
+
+def load_credentials(workspace_slug: str) -> dict | None:
+    p = credentials_path(workspace_slug)
+    if not p.exists():
+        sys.stderr.write(
+            f"ingest-slack: credentials missing at {p}. "
+            "See _shell/stages/ingest/slack/SETUP.md § 1.\n"
+        )
+        return None
+    try:
+        return json.loads(p.read_text())
+    except json.JSONDecodeError as exc:
+        sys.stderr.write(f"ingest-slack: credentials JSON invalid: {exc}\n")
+        return None
+
+
+def lock_path_for(workspace_slug: str) -> str:
+    return f"/tmp/com.adithya.ultron.ingest-slack-{workspace_slug}.lock"
+
+
+def _try_lock(path: str):
+    fh = open(path, "w")
+    try:
+        fcntl.flock(fh.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+        return fh
+    except BlockingIOError:
+        fh.close()
+        return None
+
+
+def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
+    ap = argparse.ArgumentParser(description="Slack robot.")
+    ap.add_argument("--workspace", required=True,
+                    help="Slack workspace slug (e.g., eclipse).")
+    ap.add_argument("--containers", default=None,
+                    help="Comma subset of {channels,dms,group-dms}; default: all.")
+    ap.add_argument("--channel", default=None,
+                    help="Single container slug (debugging).")
+    ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--show", action="store_true")
+    ap.add_argument("--max-days", type=int, default=None)
+    ap.add_argument("--reset-cursor", action="store_true")
+    ap.add_argument("--reset-cursor-channel", default=None)
+    ap.add_argument("--no-attachments", action="store_true")
+    ap.add_argument("--run-id",
+                    default=dt.datetime.now().strftime("%Y%m%dT%H%M%S"))
+    return ap.parse_args(argv)
+
+
 def main() -> int:
     args = parse_args()
     ws_slug = args.workspace
 
-    # Concurrent-run guard.
     lock = _try_lock(lock_path_for(ws_slug))
     if lock is None:
         sys.stderr.write(
-            f"ingest-slack: another run holds the lock for {ws_slug}; "
-            "exiting 0 silently.\n"
+            f"ingest-slack: another run holds the lock for {ws_slug}; exiting 0.\n"
         )
         return 0
 
     try:
         creds = load_credentials(ws_slug)
         if creds is None:
-            return 0  # missing-creds path is informative-exit, not a failure
-
-        if not IMPLEMENTATION_READY:
+            return 0
+        token = creds.get("user_token") or creds.get("token")
+        if not token:
             sys.stderr.write(
-                f"ingest-slack: skeleton — IMPLEMENTATION_READY is False. "
-                "Complete the SETUP.md § 7 activation checklist before flipping.\n"
+                "ingest-slack: credentials JSON has no 'user_token' or 'token' key.\n"
             )
             return 0
 
-        # ---- Live ingest path ------------------------------------------------
-        # Outline (full bodies pending activation):
-        #   1. auth_test(creds["user_token"]); reconcile against me.txt
-        #      (warn + exit 0 on mismatch; never silently swap).
-        #   2. fetch_team_info; refresh workspace _profile.md.
-        #   3. list_containers; iterate.
-        #   4. For each container:
-        #        a. read cursor (or bound by ULTRON_SLACK_LOOKBACK_DAYS).
-        #        b. fetch_history paginated; collect parents + thread roots.
-        #        c. fetch_thread_replies once per parent (cache within run).
-        #        d. apply Lock 6 universal pre-filter.
-        #        e. resolve display names via users.info (cache).
-        #        f. handle message_changed / message_deleted state transitions.
-        #        g. bucket by (container, local-date).
-        #   5. For each (container, date) bucket:
-        #        a. render_day per Lock 5.
-        #        b. compute content_hash (blake3 of body markdown).
-        #        c. call_router → destinations.
-        #        d. write file + ledger row per destination (skip if --dry-run).
-        #   6. update_profile (append-only) for each touched container.
-        #   7. Append per-workspace summary to _meta/log.md.
-        #   8. Advance cursors atomically per container after success.
-        #   9. Write self-review.md to _shell/runs/<RUN_ID>/.
-        # All forbidden behaviors at top of file MUST be enforced.
+        if not IMPLEMENTATION_READY:
+            sys.stderr.write(
+                "ingest-slack: skeleton — IMPLEMENTATION_READY is False.\n"
+            )
+            return 0
+
+        client = SlackClient(token)
+        auth = client.call("auth.test")
+        me_user_id = auth["user_id"]
+
+        prior = read_me(ws_slug)
+        if prior and prior.get("user_id") != me_user_id:
+            sys.stderr.write(
+                f"ingest-slack: token user_id {me_user_id} differs from "
+                f"cached {prior['user_id']} for workspace {ws_slug}; exiting.\n"
+            )
+            return 0
+        if not prior:
+            write_me(ws_slug, me_user_id)
+
+        if args.reset_cursor:
+            d = workspace_cursor_dir(ws_slug)
+            if d.exists():
+                for p in d.glob("*.txt"):
+                    if p.name == "me.txt":
+                        continue
+                    p.unlink()
+        if args.reset_cursor_channel:
+            p = cursor_path(ws_slug, args.reset_cursor_channel)
+            if p.exists():
+                p.unlink()
+
+        users = UserCache(client, me_user_id=me_user_id)
+        containers = list_visible_containers(client)
+
+        # Resolve DM counterparties (slug + display name) up front.
+        for c in containers:
+            if c["type"] == "dm":
+                info = users.get(c.get("user_id") or "")
+                c["other_user_slug"] = info["slug"]
+                c["other_display_name"] = info["display_name"]
+
+        chan_name_by_id = {c["id"]: c.get("name") for c in containers
+                           if c["type"] == "channel"}
+
+        wanted_kinds = (set(args.containers.split(",")) if args.containers
+                        else {"channels", "dms", "group-dms"})
+        type_to_kind = {"channel": "channels", "dm": "dms",
+                        "group-dm": "group-dms"}
+
+        if args.channel:
+            containers = [c for c in containers
+                          if c.get("slug") == args.channel
+                          or c.get("other_user_slug") == args.channel
+                          or c["id"] == args.channel]
+
+        containers = [c for c in containers
+                      if type_to_kind[c["type"]] in wanted_kinds]
+
+        workspaces_config = load_workspaces_config()
+        ledger_index_by_ws = {ws: read_ledger_index(ws)
+                              for ws in workspaces_config}
+
+        team_id = creds.get("team_id") or auth.get("team_id")
+
+        summaries: list[tuple[str, dict]] = []
+        for c in containers:
+            label = c.get("name") or c.get("other_user_slug") or c["id"]
+            sys.stderr.write(f"ingest-slack: processing {c['type']} {label}\n")
+            try:
+                s = process_container(
+                    client=client, container=c,
+                    workspace_slug=ws_slug, team_id=team_id,
+                    users=users, chan_name_by_id=chan_name_by_id,
+                    lookback_days=DEFAULT_LOOKBACK_DAYS,
+                    max_days=args.max_days,
+                    workspaces_config=workspaces_config,
+                    dry_run=args.dry_run, run_id=args.run_id,
+                    ledger_index_by_ws=ledger_index_by_ws,
+                    no_attachments=args.no_attachments,
+                )
+            except SlackError as e:
+                sys.stderr.write(
+                    f"  slack error on {label}: {e.error}; continuing.\n"
+                )
+                continue
+            summaries.append((label, s))
+            if args.show and args.dry_run:
+                sys.stderr.write(f"    -> {s}\n")
 
         sys.stderr.write(
-            f"ingest-slack: starting workspace={ws_slug} "
-            f"dry_run={args.dry_run} "
-            f"lookback_days={DEFAULT_LOOKBACK_DAYS}\n"
+            "ingest-slack: done. processed=%d files_written=%d\n"
+            % (len(summaries), sum(s[1]["files_written"] for s in summaries))
         )
         return 0
     finally:

@@ -1010,6 +1010,41 @@ def mark_deleted_upstream(thread_id: str, account: str, workspaces_config: dict,
     return updated
 
 
+def update_labels_in_existing_files(
+    thread_id: str, account: str, current_labels: list[str], workspaces_config: dict
+) -> int:
+    """Lock 7: update `labels` field in every existing raw copy of this thread
+    to match Gmail's current labelIds. Body and other frontmatter fields are
+    not touched. Returns count of files actually changed.
+
+    Required because content-hash dedup (Lock 6) would otherwise short-circuit
+    the write path when the body bytes are unchanged, leaving stale labels in
+    frontmatter forever after a labelAdded / labelRemoved event."""
+    updated = 0
+    for ws, path in find_existing_raw_files(thread_id, account, workspaces_config):
+        try:
+            text = path.read_text()
+        except OSError:
+            continue
+        if not text.startswith("---\n"):
+            continue
+        end = text.find("\n---\n", 4)
+        if end < 0:
+            continue
+        try:
+            fm = yaml.safe_load(text[4:end]) or {}
+        except yaml.YAMLError:
+            continue
+        if fm.get("labels") == current_labels:
+            continue
+        fm["labels"] = current_labels
+        body = text[end + len("\n---\n"):]
+        new_fm = yaml.safe_dump(fm, sort_keys=False, allow_unicode=True, default_flow_style=False)
+        path.write_text(f"---\n{new_fm}---\n{body}")
+        updated += 1
+    return updated
+
+
 def _read_existing_deleted_upstream(path: Path) -> str | None:
     """Read the existing raw file's deleted_upstream value, if any. Used to
     preserve the timestamp across re-renders (Lock 3). Returns None if the
@@ -1068,6 +1103,14 @@ def process_thread(svc, tid: str, account: str, workspaces_config: dict,
                 seen.add(lbl)
                 labels.append(lbl)
     participants = parse_participants(thread_payload, account)
+
+    # Lock 7: refresh `labels` in any existing copies before the dedup gate.
+    # Handles labelAdded / labelRemoved events whose bodies are unchanged.
+    if not args.dry_run:
+        n_lbl = update_labels_in_existing_files(tid, account, labels, workspaces_config)
+        if n_lbl:
+            run_log.write(f"  LABELS-UPDATE tid={tid[:8]} updated={n_lbl} file(s)\n")
+
     thread_for_route = {
         "account": account,
         "subject": subject,
@@ -1215,8 +1258,8 @@ def main() -> int:
         run_log.close()
         return 0
 
-    includes, excludes, _ = collect_account_rules(account, workspaces_config)
-    if not includes and not excludes:
+    includes, _excludes, _, any_match_all, any_subscription = collect_account_rules(account, workspaces_config)
+    if not any_subscription:
         sys.stderr.write(f"ingest-gmail: no workspace subscribes to {account}; nothing to do\n")
         run_log.close()
         return 0
@@ -1224,29 +1267,44 @@ def main() -> int:
     svc = build_service(account)
     ingested_at = datetime.now(timezone.utc)
 
+    # Lock 7: snapshot historyId BEFORE the fetch. New mail arriving during a
+    # long messages.list/history.list pagination would be missed otherwise —
+    # the next run's history.list will pick it up (idempotent via ledger).
+    pre_fetch_history_id: str | None = None
+    try:
+        profile_pre = _retry(lambda: svc.users().getProfile(userId="me").execute())
+        pre_fetch_history_id = str(profile_pre.get("historyId") or "") or None
+        run_log.write(f"pre-fetch historyId={pre_fetch_history_id}\n")
+    except Exception as exc:
+        sys.stderr.write(f"ingest-gmail: failed to read pre-fetch historyId: {exc}\n")
+        run_log.write(f"WARN pre-fetch historyId failed: {exc}\n")
+        # Degrade: cursor will not advance this run; next run replays.
+
     added_tids: set[str] = set()
     deleted_tids: set[str] = set()
     labelled_tids: set[str] = set()
+    cap_clipped = False
 
     if cursor_history_id is None:
         lookback_days = int(os.environ.get("GMAIL_INITIAL_LOOKBACK_DAYS", str(GMAIL_INITIAL_LOOKBACK_DAYS_DEFAULT)))
         after_dt = datetime.now(tz=timezone.utc) - timedelta(days=lookback_days)
         after_ts = int(after_dt.timestamp())
-        q = build_q(includes, excludes, after_ts)
+        q = build_q(includes, after_ts, any_match_all=any_match_all)
         sys.stderr.write(f"ingest-gmail: first run for {account}; lookback={lookback_days}d q={q!r}\n")
         run_log.write(f"first-run lookback={lookback_days} q={q!r}\n")
-        added_tids = collect_threads_first_run(svc, q, args.max_items)
+        added_tids, cap_clipped = collect_threads_first_run(svc, q, args.max_items)
     else:
         sys.stderr.write(f"ingest-gmail: incremental run for {account}; startHistoryId={cursor_history_id}\n")
         run_log.write(f"incremental startHistoryId={cursor_history_id}\n")
-        added_tids, deleted_tids, labelled_tids = collect_history_events(svc, cursor_history_id, args.max_items)
+        added_tids, deleted_tids, labelled_tids, cap_clipped = collect_history_events(svc, cursor_history_id, args.max_items)
 
     sys.stderr.write(
         f"ingest-gmail: tids added={len(added_tids)} deleted={len(deleted_tids)} "
-        f"label-changed={len(labelled_tids)} (cap={args.max_items or 'none'})\n"
+        f"label-changed={len(labelled_tids)} (cap={args.max_items or 'none'}, clipped={cap_clipped})\n"
     )
 
     written_per_ws: dict[str, int] = {}
+    process_errors = 0
 
     cap = args.max_items if args.max_items else None
 
@@ -1264,9 +1322,17 @@ def main() -> int:
     if remaining is not None:
         remaining -= len(process_labelled)
     process_deleted = take(deleted_tids, remaining)
+    if cap is not None and (
+        len(process_added) < len(added_tids)
+        or len(process_labelled) < len(labelled_tids)
+        or len(process_deleted) < len(deleted_tids)
+    ):
+        cap_clipped = True
 
     for tid in process_added + process_labelled:
-        per = process_thread(svc, tid, account, workspaces_config, ingested_at, args, run_log)
+        per, errored = process_thread(svc, tid, account, workspaces_config, ingested_at, args, run_log)
+        if errored:
+            process_errors += 1
         for ws, n in per.items():
             written_per_ws[ws] = written_per_ws.get(ws, 0) + n
 
@@ -1280,17 +1346,36 @@ def main() -> int:
         for tid in process_deleted:
             run_log.write(f"  DRY DELETE-MARK tid={tid[:8]}\n")
 
-    # Advance cursor — Lock 7
-    if not args.dry_run:
+    # Cursor advance — Lock 7. Only when we are confident every event in the
+    # current window was either successfully processed or deliberately skipped
+    # (pre-filter / route). Any of the following blocks advancement:
+    #   - dry-run (never advance)
+    #   - pre-fetch historyId not captured (degraded mode)
+    #   - per-thread fetch errors (would silently lose the failed threads)
+    #   - --max-items clipped pagination (more events exist beyond cap)
+    #   - --workspaces filter (skipped destinations would be lost forever)
+    advance_blockers: list[str] = []
+    if args.dry_run:
+        advance_blockers.append("dry-run")
+    if not pre_fetch_history_id:
+        advance_blockers.append("no-pre-fetch-historyId")
+    if process_errors:
+        advance_blockers.append(f"process-errors={process_errors}")
+    if cap_clipped:
+        advance_blockers.append("cap-clipped")
+    if args.workspaces:
+        advance_blockers.append("workspaces-filter")
+
+    if not advance_blockers:
         try:
-            profile = _retry(lambda: svc.users().getProfile(userId="me").execute())
-            new_cursor = str(profile.get("historyId") or "")
-            if new_cursor:
-                write_cursor(account, new_cursor)
-                run_log.write(f"cursor -> {new_cursor}\n")
+            write_cursor(account, pre_fetch_history_id)
+            run_log.write(f"cursor -> {pre_fetch_history_id}\n")
         except Exception as exc:
-            sys.stderr.write(f"ingest-gmail: failed to advance cursor: {exc}\n")
-            run_log.write(f"FATAL cursor advance: {exc}\n")
+            sys.stderr.write(f"ingest-gmail: failed to write cursor: {exc}\n")
+            run_log.write(f"FATAL cursor write: {exc}\n")
+    else:
+        sys.stderr.write(f"ingest-gmail: cursor NOT advanced; blockers={advance_blockers}\n")
+        run_log.write(f"cursor unchanged; blockers={advance_blockers}\n")
 
     if not args.dry_run:
         for ws, count in sorted(written_per_ws.items()):

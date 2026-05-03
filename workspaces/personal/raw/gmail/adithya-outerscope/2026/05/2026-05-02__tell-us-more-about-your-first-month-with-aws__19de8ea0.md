@@ -1,0 +1,113 @@
+---
+source: gmail
+workspace: personal
+ingested_at: '2026-05-03T03:53:14+00:00'
+ingest_version: 1
+content_hash: blake3:50cee82a8568f663f18d6b05f89cf2dcbf23e4c1c645f3a0046c0e7e1b0bc1f0
+provider_modified_at: '2026-05-02T13:39:05+00:00'
+account: adithya@outerscope.xyz
+account_slug: adithya-outerscope
+thread_id: 19de8ea0cac79417
+message_ids:
+- <0100019de8ea0a95-510c742c-14de-4e71-9f7a-ee4c1b36ea9e-000000@email.amazonses.com>
+subject: Tell us more about your first month with AWS
+participants:
+- name: Amazon Web Services
+  email: aws-marketing-email-replies@amazon.com
+  roles:
+  - from
+- name: ''
+  email: adithya@outerscope.xyz
+  roles:
+  - to
+labels:
+- UNREAD
+- CATEGORY_UPDATES
+- INBOX
+first_message: '2026-05-02T13:39:05+00:00'
+last_message: '2026-05-02T13:39:05+00:00'
+message_count: 1
+attachments: []
+routed_by:
+- workspace: personal
+  rule: label:INBOX
+deleted_upstream: null
+---
+# Tell us more about your first month with AWS
+
+## 2026-05-02 08:39 CDT — Amazon Web Services <aws-marketing-email-replies@amazon.com>
+
+We want to hear from you
+
+<https://email.awscloud.com/MTEyLVRaTS03NjYAAAGhh-KweGP-8c2128xbfB55BPmxoO8lCuVag6Pw8dI794P5-h-i7pIlvgT8nrpFcXgYJ3vLcdw=>
+
+
+How is it going using AWS?
+Thank you for recently creating an Amazon Web Services (AWS) account. We hope you are finding what you need to get started.
+
+
+We are always looking for ways to improve the customer experience and would appreciate your feedback <https://email.awscloud.com/MTEyLVRaTS03NjYAAAGhh-KwePqs9D1D7elrWKEd7Si8ZHYx_tTPTNf3bGVMWUWSoqn1DNg_ZBFN3-6ciuDm6JJZjGg=>.
+Start the survey <https://email.awscloud.com/MTEyLVRaTS03NjYAAAGhh-KweJSbtca8wZXgiGkuN8fpSH7fxSvSYxNYQVHKmSm_WmoXMCcB7NwlllGn3R0Zme3slQc=>
+This survey is hosted by an external company (Qualtrics), so the link above does not lead to our website. Please note that AWS will own the data gathered via this survey, and will not share the information/results collected with survey respondents. 
+
+
+
+
+Your responses will be subject to the AWS Privacy Policy <https://email.awscloud.com/MTEyLVRaTS03NjYAAAGhh-KweBMgjpJi8-qKp-kzoQ7DmqHhOXZ18wFuT-KdBCEG8rLc_ZWCJ-au_LMDSIidpxSQ4CY=>.
+
+
+Thank you for your input and insight.
+
+
+Sincerely,
+The AWS Customer Research Team
+
+AWS News Blog: https://email.awscloud.com/dc/ajD_BapU74vzOhWVQvr7pwr993A-PVrTjB0O_rEx8WJekHpgmf6GDEXryO7LOS0q_8_cBnn5SuLGEaNh88nkBvLRp1PFWhvETXh-b6kd9uLnc3noBj207PhCpV-F4wBayL7drYMcTWgpzSWmeZWI4NzO007Ba4fwMEjxJsSgubGipiYfygjGBi6pzfdjdqbW869snveqjVQA1ScN_WJkdRaNa2S95IInqpHnRwkgIsuPRTwtRDZYTBD2LfsgmTi1Bg7nbZb7mSTTbsPy6dFxe9F2PjxarJJVwapkjraOiak=/MTEyLVRaTS03NjYAAAGhh-KweLFuhykGNGChut6TiL7Py42yG1vRUrR-DJB1Pz8SGqeIwipR4Q5laxPAispsjVa5_nc=
+AWS on X: https://email.awscloud.com/MTEyLVRaTS03NjYAAAGhh-KweCCn1UyqAOh2TvoF4cTNxmw5UjUXQ-iRY8Xb1qYn1Ot3Ct-RaPSD6XmclcA5MxlmUK8=
+AWS on Facebook: https://email.awscloud.com/MTEyLVRaTS03NjYAAAGhh-KwePYvy3U7Ip9fIBEkWObjgQuQ9Umqy9uq8bYvZjKY0KTkaIorLPuX9oFYL-u4m3f-Qrs=
+AWS on Twitch: https://email.awscloud.com/MTEyLVRaTS03NjYAAAGhh-KweHXEOPLINsTxbVdAz0ranPnQP5By4S1P2OWcVNkEQ0W04ddaGXVeSrdWGbon6SydnkU=
+AWS on YouTube: https://email.awscloud.com/MTEyLVRaTS03NjYAAAGhh-KweBVUl0OKrniBjzrCHduj8-qbr6GmHcTnTNytx_-VPgzbZ-L8DQ9ymqILyCx_T_7brQM=
+AWS Podcast: https://email.awscloud.com/MTEyLVRaTS03NjYAAAGhh-KweJ3hIo4lhO6V3w1w50BtzSnQlMDTudPDMHzImxMIKg8xu0Qqau7oi8y_2W3EolaghKg=
+
+
+My Account: https://email.awscloud.com/dc/yuZkfPEXXFT65tdReNucEvTRm1nqq5Eg9ByfCCxPZLA-dZcf09-NdDKKAYHJm2RG7opiiMUGLirOzEUiivBzL2m063f00ZRtcVRzvvsl0SsHvHW4a4LevXev6tJ4zr6ErhO4lF3ap7r3OI9y6Tj-XurBTKRvPCS2ugUYTCb7KrrZwd8IQIw3xf-L9Gk9Q2o94aI1hjwmSFYaSWNVQ9svq9TmkctMNxQ2uO9_0jjjSacxpy7UzjwHCM192z-DIoish3gR9bWrJOCX89BSwUxpLh3YEn1U3TU_5R3RdBPFYPg=/MTEyLVRaTS03NjYAAAGhh-KweLFuhykGNGChut6TiL7Py42yG1vRUrR-DJB1Pz8SGqeIwipR4Q5laxPAispsjVa5_nc=
+
+Getting Started: https://email.awscloud.com/dc/KwqiTCOQ16Q1JCi3MdelD3ZZGcncVANDEUTkhckMhmjKLpc5CeluLOBeryeJSliZPzfCMNffP1MOZfwUFD_d61V72hWNTkwbh7wWrL16NCNytuVzKhO_ZaFx9Z7XLLVVox9_I4R9GfsDN98l9gF0VB0OS4OdfQYSfcvb2edNDljBAbq__PJwy1foQ1yn1afGo2BgyT0OCgGcDOcSRIErLH89G5begFiYZbSMr-hnh3P0_x4U8urzaZ60CPmxLeNYXjrtTrh7DVUWc1h0vTFeEYzsMBRhp9MbeP_QHlMQXZQ=/MTEyLVRaTS03NjYAAAGhh-KweLFuhykGNGChut6TiL7Py42yG1vRUrR-DJB1Pz8SGqeIwipR4Q5laxPAispsjVa5_nc=
+
+Products: https://email.awscloud.com/dc/KwqiTCOQ16Q1JCi3MdelD9sCd73ybn5pIK6Q1s91TsIjNhRpZ-baZ8Nr1b7W6TYPtwggpLRqN7lv_ubzoY08Kc7uNUa7bgt1Xr0Q61R94LDgcTWLuCpv44wE7InO3quTbIYtFfDItKoLINCOrujt_C0PoeLPl2GCRr3m4CJCGVuBDh2WxugU8Q3M09KAtebA658UnhCAZVeUNGqtIA95ZJP3HxHZX3F_pi2e9tRZN_4a4T61QkIakkxlW8LfINe_idE0lC8P5EZGt7DEKqJ223mzvrHwkDQlIGaqEZH-zdI=/MTEyLVRaTS03NjYAAAGhh-KweLFuhykGNGChut6TiL7Py42yG1vRUrR-DJB1Pz8SGqeIwipR4Q5laxPAispsjVa5_nc=
+
+Solutions: https://email.awscloud.com/dc/KwqiTCOQ16Q1JCi3MdelD4QZshU8GqrOd2k3p3rKZqhzwaMpBT8E9ly6lfYMY3yjMvsnah9VHSNnONzGEPVWuNKEBW9DWU4yWa_WbZR90RkyAo9Kmp0YhiXZ6_FYVbgv5E64sdIpE__jvjESp6wKgisdP8K1AK9cByPfLvZW_9caerC5lNdNS5LYpCPY5J0KflrIknhPSJX4TWzbQd59ikGtNHWXcA6w2JDc20mHfZEnYQkVecQl2n2GNaAMypF3XHrJXQkPfdXO1SSvaYtZnmhG9Drf7lMq-bwFYp907_k=/MTEyLVRaTS03NjYAAAGhh-KweLFuhykGNGChut6TiL7Py42yG1vRUrR-DJB1Pz8SGqeIwipR4Q5laxPAispsjVa5_nc=
+
+Pricing: https://email.awscloud.com/dc/KwqiTCOQ16Q1JCi3MdelD8mEuGpWjSN1ahZchBoZx6NAwHw94ctMuvf21evms7kbjyujW6Y-kkmUQVrItBvTHeFyzz_n4jvv1mwU9GSB_ERAIGzhRYFsEIhmaApJbn2VVuYKSnJKbbybXgSOjU24zWgdodHFVzLMla2YmVsEKRiNnqr9VlWK2RsC8NvlgiWyaLujX6RBi9BjJErYmODeqn2Pd9ABlAFVR03stJqWm1LqxYVQLVoBfqHb2Dp8Bg3aU5ihsW4I2f09eLSyqTkGNhoC03adW7PyrmQL6Zecu24=/MTEyLVRaTS03NjYAAAGhh-KweLFuhykGNGChut6TiL7Py42yG1vRUrR-DJB1Pz8SGqeIwipR4Q5laxPAispsjVa5_nc=
+
+Partners: https://email.awscloud.com/dc/KwqiTCOQ16Q1JCi3MdelD5jQ51lhLdWIOW7AEKXGYGVpLB4pRiwLCSPPuwdC-54o4tL-Q7Ju6ZbWqnmb1mzA0QGTzBzt_8oLzAPR5SrsQ81Qzf2pyuyqiaG7cDPacP8FmkvbYV0zkHslskNjJsjvP85HnjI_KJlk48RskZccVT_3Q-_urvHa0v6DQHEr2w3UQYsfiVaUKMz4aFStCI4ExgjOUwAKkOcaO3UI0RSHk7Z18NcHabfTund6Q2KDmh3AJbMih6BOAuk5NYd3SDLr5OP8GNjmmFK7X68gIBX8JDA=/MTEyLVRaTS03NjYAAAGhh-KweLFuhykGNGChut6TiL7Py42yG1vRUrR-DJB1Pz8SGqeIwipR4Q5laxPAispsjVa5_nc=
+
+Documentation: https://email.awscloud.com/MTEyLVRaTS03NjYAAAGhh-KweDfxF7tmZ2hIlmHQh_culcueEpj-qxAcpQ5iNYZEPlZ7OyGMxrSHVudYRAtCd1zhEeY=
+
+Training: https://email.awscloud.com/dc/KwqiTCOQ16Q1JCi3MdelD1hIp1f2qRxHRhoDJWBUmM7_fXNx5b8-f1dvhJJI6u4zljHpb2MqWfX-S_GThVqBbqgKB9cDDVQe8vogXnsbTouE6QzeU4rn1i5fgpprSCeXjVDJ-_jreXmJfebR2dFOoCe8CsjdPMAJMa1CtHa6pKmiKqeSvrxgNZmqgeKtYYQhnfoAkLgkyUhJft7e0jhGol46s_Uvamy0PxouGSXtVBHk00_sW6WoHHJabqfMhlagt1fX0ni7X21zE9IPZPogL-7VCmz2Apl7XGw58cuc6AM=/MTEyLVRaTS03NjYAAAGhh-KweLFuhykGNGChut6TiL7Py42yG1vRUrR-DJB1Pz8SGqeIwipR4Q5laxPAispsjVa5_nc=
+
+Events & Webinars: https://email.awscloud.com/dc/KwqiTCOQ16Q1JCi3MdelD1n0M3o1Ml601F1cD0S1yZrWxr0g6PFluRY3XfQY7NwCaViXRxvhZJ3Tke2JG3z_vrOkJVEK9BqoR-tcqVACk7ZSJxTxFAdpfhtEKTpcQhraACfnzr3vxcOxdoaJWQhTOpRiIBNpgp9DhXCWQdQzNFoACR4sWAVHG3ZdM6eoDauA5lu-LHU3CkYF0-eJ20qLjfYnyGE1_MuwyiizBMRxV4z5EsXTlyacve1lfjGZy8ukxb2daExvnguM115zhZasnuAR0Qim98DEalY-YIQgVpg=/MTEyLVRaTS03NjYAAAGhh-KweLFuhykGNGChut6TiL7Py42yG1vRUrR-DJB1Pz8SGqeIwipR4Q5laxPAispsjVa5_nc=
+
+AWS Activate: https://email.awscloud.com/dc/KwqiTCOQ16Q1JCi3MdelD18t_h1onwWPVSVq3tmAnNayJ57WDqS1TzOSJVtPwSAMhm6Pe9LONFs2F7ZDW7sUxjik0p-eAcov35FmwYtzqKK02iY6HV4vvZKgzof9SAGg2MiG2AKYTYRsQZf_H-RDBD206-iVtNRSeAAlX-4LIApcUaD0PxaOyTXLc-985jtDrfnAkEGYGCMrOsbnfZ7cgZJm2C5V3tzXsVWoCi22hP-UYIGb1IuSPE5Tbve7txdzF684gDqkMxyx332srnqGLe1LfK9-ihtKAxriX6MQGtgz_WvxOrnDQ42JEN485ZUJ/MTEyLVRaTS03NjYAAAGhh-KweLFuhykGNGChut6TiL7Py42yG1vRUrR-DJB1Pz8SGqeIwipR4Q5laxPAispsjVa5_nc=
+
+Marketplace: https://email.awscloud.com/dc/KwqiTCOQ16Q1JCi3MdelD78in__VMI_zdbVDMzZ3kSvR93Srg3KACAeaH-feV6n8HVeoCyoRNL8_abhcFlccuY-gnsgsVL9F9Zu0cU4x8oWOFeoL6aEnj6nKAmxGubc9b29wIY3b-KshcGmu-KGzWHLx-v2Z4zVhTjX6rwrxkvNoubWlu0aliGAhsMFBUEHw2AdCR8PAa6K1B_akl5zffVUky0nIJBduG0P49EMQWN25NJ7OOjCqkQWCNdJe6OcJCaKCriB91TQF_0sxI5DwT-OWup6BpsSduObp8776MIk=/MTEyLVRaTS03NjYAAAGhh-KweLFuhykGNGChut6TiL7Py42yG1vRUrR-DJB1Pz8SGqeIwipR4Q5laxPAispsjVa5_nc=
+
+What's New: https://email.awscloud.com/dc/KwqiTCOQ16Q1JCi3MdelD4n87CSJUnooghbVARMp3WkPAEYRH5yCRtuqhrKehe1NslFKMa8HidhhD4qGiyC4lwxstedApdVGSQKCm_8sJnkdT32mqrAvcnLUbtmdifu0Ae3B30aXjl_RGbugcKXYlKhe_l-wmzr49H5QC4jHyTgznOisjrlU7c4TtPvkt4JCoRv-zSWxMaoaR6fWG_bkHg61v11cw_oJ0cfIXvt7vRPfc5btPqdgJgkmh92_Qi1Ib9e6GvYPowRGiSgqB3urgN_8PD57gyW2eMtuOmUMfLM=/MTEyLVRaTS03NjYAAAGhh-KweLFuhykGNGChut6TiL7Py42yG1vRUrR-DJB1Pz8SGqeIwipR4Q5laxPAispsjVa5_nc=
+
+Blog: https://email.awscloud.com/dc/KwqiTCOQ16Q1JCi3MdelDzHH7BSS9MdSB9ovXKz-LIg9nOkTB8cHgVabuRKAFKWckj2x-BM7ujy2HHCVf2zqSgEnjraIZg2PWtAv1oSKgCr8zByrCM43en1pqJvGn8pqIWR9NOBIy6W4qZrbs7xAe1Qxm09mwGiWVqkzAV9tI6QrkaHrpZVP7NhvO4XjfH6TopycSI4YlU1E64Syh44Ohsgmpsh31HfOK9UsNF0ap8a1dzDZpcUdO4SVWVt3t7YRKVV9Y5ZaJELYlifvIkU17jF2xk_dxWZDvkBpTf7B_So=/MTEyLVRaTS03NjYAAAGhh-KweLFuhykGNGChut6TiL7Py42yG1vRUrR-DJB1Pz8SGqeIwipR4Q5laxPAispsjVa5_nc=
+
+Analyst Reports: https://email.awscloud.com/dc/KwqiTCOQ16Q1JCi3MdelD5aQqce63OVL6baXF6dCre2fFfS1oodd2_7Kq1Lg_WJRi8IOWMc6LUBIdAnqXU3Q56IWwTstMJJMwzUbgBN4q_6zwtEEe4mG9AEXnAEkFAmDKF5XNPetKgIzl8P-3yao2rWc-1SytzqM5LK8q4MFzagn1-WrZRHnWgff2jJn4cro7fx3vIrqdoWEnzi_8Ty3Hf-RLzv4sF91IakdYIJ2LJAuTe5-ezxxR8PnKJhl6II9iPAI_lnVdioxSv2COj-2enORtckDI_o8NRP5z3D9LAd9ykxrTtMe6xMO_vCCoAb_depd41bRd8e55rVKCwbXqA==/MTEyLVRaTS03NjYAAAGhh-KweLFuhykGNGChut6TiL7Py42yG1vRUrR-DJB1Pz8SGqeIwipR4Q5laxPAispsjVa5_nc=
+
+View Online: [[https://email.awscloud.com/v/MTEyLVRaTS03NjYAAAGhh-KweOxPnOUCSbri4X27UcAby8gF0ila-x-ixzhCur1HMrLAm57LtiApUx8OK2KDBDINxbU=]]
+
+
+
+If you'd rather not receive future emails from Amazon Web Services, unsubscribe here https://email.awscloud.com/dc/sRhgdM26bquWWERQj_H99lCavgYp1xy4_-5c9n1WxRAg-Iit3iVTUYZUZlQmzz1BTdI04NvsSqvrTM6rSnQGNK7Z_G6-zH4bcFNO__1cW3t0Jqvaaq1Fu3tLjqmbY1BRWYnqKOpABZjz84TY8S3vBPbfrOk-w2rC0A4nkBiHtbJ5VkwqbS5ldR48LWGd6iLQgNbmMIdhlhxlopRMDHmJytcvJVoVjhGK8aKCz5KLA_HuEzS9sjAgyPcvRJ4tVRhrkSIlWW5w_nGDFHG1KTWokr0ulhh49eH7UfkZkTa6Dhhd7XTjr4iqMGZ6x-hHITpnH-Sntgc0QuPybsFUHxbFkIkFBY5m3117LBV4kRVDAsQ=/MTEyLVRaTS03NjYAAAGhh-KweLFuhykGNGChut6TiL7Py42yG1vRUrR-DJB1Pz8SGqeIwipR4Q5laxPAispsjVa5_nc=.
+
+Amazon Web Services, Inc. is a subsidiary of Amazon.com, Inc. Amazon.com is a registered trademark of Amazon.com.
+
+This message was produced and distributed by Amazon Web Services, Inc. or its affiliates, 410 Terry Ave. North, Seattle, WA 98109 https://email.awscloud.com/MTEyLVRaTS03NjYAAAGhh-KweMrUzjPxDUw8aFNCoE0YqDxBz4za5vWmb2zKyYw_FjUOOzAIKdrSnuXOCYPe54AW4qU=.
+
+© 2025, Amazon Web Services, Inc. or its affiliates. All rights reserved. Read our Privacy Notice https://email.awscloud.com/MTEyLVRaTS03NjYAAAGhh-KweFI1cOFcMhBFdbkKcxbFPdDMmx3OQ8yvnHY2ZfOAp3a8zvIESOID12enOTssm_31ggI=.
+
+--------------------------------------------

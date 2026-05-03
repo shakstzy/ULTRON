@@ -853,16 +853,23 @@ def process_container(*, client: SlackClient, container: dict,
                "container_id": container["id"]}
 
     cur_ts = read_cursor(workspace_slug, _container_cursor_slug(container))
+
+    # Sliding window: when an incremental cursor exists, fetch from
+    # max(cursor - OVERLAP_DAYS, 0). Catches late thread replies whose parent
+    # is older than the cursor (Codex #1, Gemini #2). Ledger dedup on body
+    # hash keeps writes idempotent.
+    if cur_ts is not None:
+        fetch_oldest = f"{max(float(cur_ts) - INCREMENTAL_OVERLAP_DAYS * 86400, 0):.6f}"
+    else:
+        fetch_oldest = f"{time.time() - lookback_days * 86400:.6f}"
     if max_days is not None:
-        bound = time.time() - max_days * 86400
-        if cur_ts is None or float(cur_ts) < bound:
-            cur_ts = f"{bound:.6f}"
-    if cur_ts is None:
-        bound = time.time() - lookback_days * 86400
-        cur_ts = f"{bound:.6f}"
+        bound = f"{time.time() - max_days * 86400:.6f}"
+        if float(fetch_oldest) < float(bound):
+            fetch_oldest = bound
 
     try:
-        msgs = fetch_container_messages(client, container["id"], oldest_ts=cur_ts)
+        msgs = fetch_container_messages(client, container["id"],
+                                        oldest_ts=fetch_oldest)
     except SlackError as e:
         if e.error in ("not_found", "channel_not_found"):
             sys.stderr.write(
@@ -880,13 +887,30 @@ def process_container(*, client: SlackClient, container: dict,
             return summary
         raise
 
+    # Normalize message_changed / message_deleted wrappers (Codex #2).
+    msgs = [normalize_state_event(m) for m in msgs]
+
     if no_attachments:
         for m in msgs:
             m.pop("files", None)
 
-    parents = [m for m in msgs if not is_skippable(m)]
+    # conversations.history can return thread replies as top-level entries
+    # when the user is "subscribed" to the thread. We only want parents at
+    # the top level — replies are pulled via conversations.replies below.
+    parents = [m for m in msgs
+               if (not m.get("thread_ts") or m.get("thread_ts") == m.get("ts"))
+               and not is_skippable(m)]
     summary["messages"] = len(parents)
+
+    # Cursor must advance past every fetched event, not just renderable ones,
+    # or noisy bot/meta channels infinitely re-fetch the same tail (Codex #3,
+    # Gemini #1).
+    latest_ts_seen = max((float(m["ts"]) for m in msgs), default=None)
+
     if not parents:
+        if not dry_run and latest_ts_seen is not None:
+            write_cursor(workspace_slug, _container_cursor_slug(container),
+                         f"{latest_ts_seen:.6f}")
         return summary
 
     thread_cache: dict[str, list[dict]] = {}
@@ -908,8 +932,6 @@ def process_container(*, client: SlackClient, container: dict,
     for m in parents:
         d = ts_to_local_dt(m["ts"]).date()
         by_day.setdefault(d, []).append(m)
-
-    latest_ts_seen = max(float(m["ts"]) for m in parents)
 
     for day, day_parents in sorted(by_day.items()):
         body = render_day_body(container, day, day_parents, thread_cache,
@@ -957,6 +979,12 @@ def process_container(*, client: SlackClient, container: dict,
         ts_min = ts_to_local_dt(min(m["ts"] for m in all_msgs_in_day)).isoformat(timespec="seconds")
         ts_max = ts_to_local_dt(max(m["ts"] for m in all_msgs_in_day)).isoformat(timespec="seconds")
 
+        # router-channel-type alias: route.py expects Slack-native "im" /
+        # "mpim" for DM matching (Codex #6).
+        router_channel_type = {
+            "channel": "channel", "dm": "im", "group-dm": "mpim",
+        }.get(container["type"], container["type"])
+
         item = {
             "slack_workspace_id": team_id,
             "slack_workspace_slug": workspace_slug,
@@ -964,7 +992,7 @@ def process_container(*, client: SlackClient, container: dict,
             "container_slug": _container_cursor_slug(container),
             "container_id": container["id"],
             "channel_name": container.get("name"),
-            "channel_type": container["type"],
+            "channel_type": router_channel_type,
             "participants": participants,
             "date": day.isoformat(),
         }
@@ -975,8 +1003,14 @@ def process_container(*, client: SlackClient, container: dict,
         key = f"slack:{team_id}:{container['id']}:{day.isoformat()}"
 
         for ws in destinations:
+            path = day_file_path(ws, workspace_slug, container, day)
             existing = ledger_index_by_ws.get(ws, {}).get(key)
-            if existing == body_hash:
+            # Skip only if BOTH the ledger row matches AND the file is
+            # actually present on disk. After a channel rename or manual
+            # delete, the path changes/is gone but the old hash still
+            # matches; without this check, the new path never gets
+            # written (Codex #4, Gemini #6).
+            if existing == body_hash and path.exists():
                 continue
 
             frontmatter = {
@@ -1004,12 +1038,13 @@ def process_container(*, client: SlackClient, container: dict,
                 "deleted_upstream": None,
                 "container_archived": False,
             }
-            path = day_file_path(ws, workspace_slug, container, day)
             if dry_run:
                 sys.stderr.write(f"  DRY would write {path}\n")
                 summary["files_written"] += 1
                 continue
             write_day_file(path, frontmatter, body)
+            update_channel_profile(ws, workspace_slug, container,
+                                   sorted(participant_ids), users)
             append_ledger(ws, {
                 "source": "slack", "key": key, "content_hash": body_hash,
                 "raw_path": str(path.relative_to(ULTRON_ROOT / "workspaces" / ws)),
@@ -1019,7 +1054,7 @@ def process_container(*, client: SlackClient, container: dict,
             ledger_index_by_ws.setdefault(ws, {})[key] = body_hash
             summary["files_written"] += 1
 
-    if not dry_run and parents:
+    if not dry_run and latest_ts_seen is not None:
         write_cursor(workspace_slug, _container_cursor_slug(container),
                      f"{latest_ts_seen:.6f}")
     return summary
@@ -1119,14 +1154,26 @@ def main() -> int:
         client = SlackClient(token)
         auth = client.call("auth.test")
         me_user_id = auth["user_id"]
+        auth_team_id = auth.get("team_id")
+
+        creds_team_id = creds.get("team_id")
+        if creds_team_id and auth_team_id and creds_team_id != auth_team_id:
+            sys.stderr.write(
+                "ingest-slack: FATAL credential team_id "
+                f"{creds_team_id} != auth.test team_id {auth_team_id}. "
+                "Token belongs to a different workspace; exiting non-zero.\n"
+            )
+            return 2
 
         prior = read_me(ws_slug)
         if prior and prior.get("user_id") != me_user_id:
             sys.stderr.write(
-                f"ingest-slack: token user_id {me_user_id} differs from "
-                f"cached {prior['user_id']} for workspace {ws_slug}; exiting.\n"
+                "ingest-slack: FATAL token user_id "
+                f"{me_user_id} differs from cached {prior['user_id']} "
+                f"for workspace {ws_slug}. Refusing to corrupt the archive; "
+                "exiting non-zero.\n"
             )
-            return 0
+            return 2
         if not prior:
             write_me(ws_slug, me_user_id)
 
@@ -1173,7 +1220,19 @@ def main() -> int:
         ledger_index_by_ws = {ws: read_ledger_index(ws)
                               for ws in workspaces_config}
 
-        team_id = creds.get("team_id") or auth.get("team_id")
+        # Auth.test is the source of truth for team_id, full stop.
+        team_id = auth_team_id or creds_team_id
+
+        # Workspace _profile.md (Lock 7): refresh on every run.
+        try:
+            update_workspace_profile(
+                ws=ws_slug, workspace_slug=ws_slug, team_id=team_id,
+                team_name=auth.get("team"), team_url=auth.get("url"),
+                me_user_id=me_user_id, scopes=creds.get("scopes"),
+                auth_token_path=str(credentials_path(ws_slug).relative_to(ULTRON_ROOT)),
+            )
+        except Exception as exc:
+            sys.stderr.write(f"ingest-slack: workspace profile update failed: {exc}\n")
 
         summaries: list[tuple[str, dict]] = []
         for c in containers:

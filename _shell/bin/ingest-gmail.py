@@ -298,6 +298,33 @@ def build_service(account: str):
     return build("gmail", "v1", credentials=creds, cache_discovery=False)
 
 
+def fetch_label_name_map(svc) -> dict[str, str]:
+    """Build {labelId: labelName} for the mailbox. Gmail returns USER labels in
+    every thread payload as opaque ids like 'Label_19'; rules in sources.yaml
+    use friendly names like `label:Eclipse`. We translate ids -> names so
+    routing rules and the rendered frontmatter match what humans wrote.
+
+    System labels (INBOX, SPAM, TRASH, IMPORTANT, UNREAD, CATEGORY_*, SENT,
+    DRAFT, etc.) have name == id so they pass through unchanged.
+    """
+    out: dict[str, str] = {}
+    try:
+        resp = _retry(lambda: svc.users().labels().list(userId="me").execute())
+    except Exception:
+        return out
+    for lbl in resp.get("labels") or []:
+        lid = lbl.get("id")
+        nm = lbl.get("name")
+        if lid:
+            out[lid] = nm or lid
+    return out
+
+
+def translate_labels(label_ids: list[str], name_map: dict[str, str]) -> list[str]:
+    """Map opaque labelIds to friendly names. Unknown ids pass through."""
+    return [name_map.get(lid, lid) for lid in label_ids]
+
+
 def _retry(fn, *, attempts: int = 3, base_sleep: float = 2.0):
     last_exc: Exception | None = None
     for i in range(attempts):
@@ -748,19 +775,12 @@ def render_thread_markdown(thread_payload: dict, account: str, svc=None) -> tupl
 
 def build_frontmatter(*, workspace: str, account: str, thread_payload: dict,
                       thread_id: str, body_markdown: str, ingested_at: datetime,
-                      routed_by: list[dict],
+                      routed_by: list[dict], labels: list[str],
                       deleted_upstream: str | None = None) -> str:
     msgs = thread_payload.get("messages", [])
     subject = (header_val(msgs[0], "Subject") if msgs else "") or "(no subject)"
     first_dt, last_dt = thread_dates(thread_payload)
     participants = parse_participants(thread_payload, account)
-    labels: list[str] = []
-    seen_labels: set[str] = set()
-    for m in msgs:
-        for lbl in m.get("labelIds") or []:
-            if lbl not in seen_labels:
-                seen_labels.add(lbl)
-                labels.append(lbl)
     msg_ids = [header_val(m, "Message-ID") or "" for m in msgs]
     msg_ids = [m for m in msg_ids if m]
 
@@ -1081,7 +1101,8 @@ def _read_existing_deleted_upstream(path: Path) -> str | None:
 
 
 def process_thread(svc, tid: str, account: str, workspaces_config: dict,
-                   ingested_at: datetime, args, run_log) -> tuple[dict[str, int], bool]:
+                   ingested_at: datetime, args, run_log,
+                   label_name_map: dict[str, str]) -> tuple[dict[str, int], bool]:
     """Fetch, pre-filter, render, route, write.
     Returns (per-workspace-write-counts, errored).
     `errored=True` means a transient/unexpected failure (e.g. thread.get HTTP

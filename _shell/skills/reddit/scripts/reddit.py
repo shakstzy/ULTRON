@@ -12,6 +12,8 @@ Subcommands: search, hot, new, top, controversial, rising, post, user, info
 
 import argparse
 import base64
+import datetime as _dt
+import hashlib
 import json
 import os
 import pathlib
@@ -21,6 +23,9 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+
+ULTRON_ROOT = pathlib.Path.home() / "ULTRON"
+INGEST_VERSION = 1
 
 DEFAULT_UA = "reddit-cli/1.1 (read-only; ULTRON local)"
 ANON_BASE = "https://www.reddit.com"

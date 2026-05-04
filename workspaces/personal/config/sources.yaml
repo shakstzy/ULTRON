@@ -26,6 +26,12 @@ sources:
         - label:CATEGORY_PROMOTIONS
         - label:CATEGORY_SOCIAL
         exclude_from: _shell/config/account-excludes/adithya-synps.yaml
+  drive:
+    accounts:
+    - account: adithya@outerscope.xyz
+      folders:
+      - id: 1aQen7BupLIHLA_Dvbo4FN34-ZxW0HWWE
+        name: INCLUSIVELAYER
   imessage:
     contacts:
     - slug: ryan-xie

@@ -40,7 +40,14 @@ sources:
             - "label:CATEGORY_SOCIAL"
           exclude_from: _shell/config/account-excludes/adithya-synps.yaml
 
-  imessage: []     # deferred (skeleton, IMPLEMENTATION_READY=False)
+  imessage:
+    # Privacy-first opt-in (per format.md § K). Default for unrouted contacts
+    # is SKIP; only the entries below are ingested into this workspace.
+    contacts:
+      - slug: brennan-noah-austin
+        handles: ["+15128458988"]
+        full_archive: true
+    groups: []
   manual:
     watch_path: raw/manual/_inbox/
     after_ingest: move_to_dated_subdir

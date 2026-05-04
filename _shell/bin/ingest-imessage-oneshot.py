@@ -1,32 +1,43 @@
 #!/usr/bin/env python3
 """
 ingest-imessage-oneshot.py — first-ingest tool for allowlisted iMessage
-contacts. Writes per-(contact, month) markdown to workspace `raw/imessage/`.
-Attachments are DESCRIBED via Gemini (vision), not copied (per format.md § G).
+contacts AND group chats. Writes per-(target, month) markdown to workspace
+`raw/imessage/`. Attachments are DESCRIBED via Gemini (vision), not copied.
 
 Distinct from `ingest-imessage.py` (cron-driven production robot,
 IMPLEMENTATION_READY=False). This script is the activation tool for
-explicitly allowlisted contacts.
+explicitly allowlisted targets.
 
 Usage:
-    ingest-imessage-oneshot.py --workspace personal [--contact <slug>] [--dry-run] [--no-descriptions]
+    ingest-imessage-oneshot.py --workspace personal
+                              [--contact <slug>] [--group <slug>]
+                              [--dry-run] [--no-descriptions]
+                              [--workers 64]
 
 Idempotency: descriptions keyed by (sha256, description_model) of the
 source binary; re-runs reuse prior descriptions and only call Gemini for
 new / changed attachments.
+
+Parallelism: descriptions are batched into one parallel pre-pass per
+target via ThreadPoolExecutor (default 64 workers). Each worker shells
+out to `gemini` CLI; subprocess releases the GIL so threading is fine.
+429 / quota errors trigger exponential backoff up to 3 retries.
 """
 from __future__ import annotations
 
 import argparse
+import concurrent.futures
 import datetime
 import hashlib
 import json
 import os
+import random
 import re
 import shlex
 import sqlite3
 import subprocess
 import sys
+import time
 from contextlib import contextmanager
 from pathlib import Path
 
@@ -49,20 +60,26 @@ TZ = ZoneInfo("America/Chicago")
 MAC_EPOCH = datetime.datetime(2001, 1, 1, tzinfo=datetime.timezone.utc)
 _MAC_LOWER = datetime.datetime(2001, 1, 1, tzinfo=datetime.timezone.utc)
 _MAC_UPPER = datetime.datetime(2200, 1, 1, tzinfo=datetime.timezone.utc)
-DESCRIPTION_MODEL = "gemini-3-flash-preview"  # Flash by default; Pro is for adversarial review
+DESCRIPTION_MODEL = "gemini-3-flash-preview"
+DEFAULT_WORKERS = 64
 
-# Mime / UTI groupings for description routing per format.md § G
 VISION_PREFIXES = ("image/", "video/")
 TEXT_READABLE = ("text/", "application/pdf", "application/json")
 
 TOLL_FREE = ("+1800", "+1888", "+1877", "+1866", "+1855", "+1844", "+1833")
-NOREPLY_LOCAL = ("verify", "noreply", "no-reply", "donotreply")
+NOREPLY_LOCAL = ("verify", "noreply", "no-reply", "donotreply", "alerts",
+                 "notification", "notifications", "info", "support",
+                 "system", "mailer-daemon", "postmaster")
 TAPBACK_NAMES = {2000: "love", 2001: "like", 2002: "dislike",
                  2003: "laugh", 2004: "emphasize", 2005: "question"}
 TARGET_GUID_PREFIX_RE = re.compile(r"^(?:p:0/|bp:|p:\d+/)")
 URL_BALLOON_SKIP = "com.apple.messages.URLBalloonProvider"
+PHONE_NONDIGIT_RE = re.compile(r"[^\d+]")
 
 
+# ---------------------------------------------------------------------------
+# Time + handle helpers
+# ---------------------------------------------------------------------------
 def to_dt(val):
     if val is None:
         return None
@@ -78,14 +95,38 @@ def to_dt(val):
         return None
 
 
+def normalize_phone(s):
+    if not s:
+        return None
+    digits = PHONE_NONDIGIT_RE.sub("", s)
+    if not digits:
+        return None
+    if not digits.startswith("+"):
+        if len(digits) == 10:
+            digits = "+1" + digits
+        elif len(digits) == 11 and digits.startswith("1"):
+            digits = "+" + digits
+    return digits or None
+
+
+def normalize_handle(h):
+    if not h:
+        return None
+    h = h.strip()
+    if "@" in h:
+        return h.lower()
+    return normalize_phone(h)
+
+
 def is_blocked(handle):
     if not handle:
         return False
     if any(handle.startswith(p) for p in TOLL_FREE):
         return True
-    if "@" in handle and any(handle.split("@")[0].lower().startswith(p) for p in NOREPLY_LOCAL):
+    if "@" in handle and any(handle.split("@")[0].lower().startswith(p)
+                             for p in NOREPLY_LOCAL):
         return True
-    if re.fullmatch(r"\d{5}", handle):
+    if re.fullmatch(r"\d{5,6}", handle):
         return True
     return False
 
@@ -163,8 +204,72 @@ def _nullctx():
     yield
 
 
+def name_to_slug(name):
+    import unicodedata
+    s = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()
+    s = s.lower().strip()
+    s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+    return s or "unnamed"
+
+
+def handle_to_slug(h):
+    if not h:
+        return "unknown"
+    if "@" in h:
+        local, domain = h.split("@", 1)
+        return f"email-{name_to_slug(local)}-at-{name_to_slug(domain)}"
+    digits = PHONE_NONDIGIT_RE.sub("", h)
+    return f"phone-{digits}"
+
+
 # ---------------------------------------------------------------------------
-# Attachment description (Gemini Flash via CLI @<path>)
+# Apple Contacts handle → name resolver (for group sender display)
+# ---------------------------------------------------------------------------
+def load_apple_contacts():
+    """Returns {normalized_handle: name}. Combines phones + emails."""
+    try:
+        from Contacts import (  # type: ignore
+            CNContactStore, CNContactFetchRequest,
+            CNContactGivenNameKey, CNContactFamilyNameKey,
+            CNContactNicknameKey, CNContactOrganizationNameKey,
+            CNContactPhoneNumbersKey, CNContactEmailAddressesKey,
+        )
+    except ImportError:
+        return {}
+
+    store = CNContactStore.alloc().init()
+    keys = [CNContactGivenNameKey, CNContactFamilyNameKey, CNContactNicknameKey,
+            CNContactOrganizationNameKey, CNContactPhoneNumbersKey,
+            CNContactEmailAddressesKey]
+    req = CNContactFetchRequest.alloc().initWithKeysToFetch_(keys)
+    out = {}
+
+    def cb(contact, stop):
+        given = contact.givenName() or ""
+        family = contact.familyName() or ""
+        nick = contact.nickname() or ""
+        org = contact.organizationName() or ""
+        name = (given + " " + family).strip() or nick or org or None
+        if not name:
+            return
+        for p in contact.phoneNumbers():
+            n = normalize_phone(p.value().stringValue())
+            if n:
+                out[n] = name
+        for e in contact.emailAddresses():
+            v = str(e.value() or "").strip().lower()
+            if v:
+                out[v] = name
+
+    try:
+        store.enumerateContactsWithFetchRequest_error_usingBlock_(req, None, cb)
+    except Exception:
+        pass
+    return out
+
+
+# ---------------------------------------------------------------------------
+# Gemini description (single + parallel)
 # ---------------------------------------------------------------------------
 PROMPT_VISION = (
     "Describe what's in this in one sentence under 100 characters. "
@@ -175,13 +280,22 @@ PROMPT_TEXT = (
     "Surface-level only: what is it, what's the gist."
 )
 
+ATTACHMENTS_INCLUDE = str(Path.home() / "Library" / "Messages" / "Attachments")
 
-def hash_source(path: Path) -> tuple[str | None, bool]:
-    """Returns (sha256_hex_or_None, source_available_bool)."""
+_REFUSAL_RE = re.compile(
+    r"(cannot access|cannot describe|cannot view|unable to (access|view|read)|"
+    r"outside (the |my )?(allowed )?workspace|outside the allowed|"
+    r"i (don't|do not) have (permission|access)|file path is outside)",
+    re.IGNORECASE,
+)
+_RATE_LIMIT_RE = re.compile(r"(rate ?limit|quota|429|resource[_ ]exhausted|too many requests)", re.IGNORECASE)
+
+
+def hash_source(path):
     if not path.exists():
         return None, False
     if path.is_dir():
-        return None, True  # bundle, no single-file hash
+        return None, True
     try:
         h = hashlib.sha256()
         with open(path, "rb") as f:
@@ -192,7 +306,7 @@ def hash_source(path: Path) -> tuple[str | None, bool]:
         return None, False
 
 
-def kind_of(mime: str | None, src: Path | None) -> str:
+def kind_of(mime, src):
     if src is not None and src.is_dir():
         return "bundle"
     if not mime:
@@ -208,8 +322,7 @@ def kind_of(mime: str | None, src: Path | None) -> str:
     return "file"
 
 
-def bundle_description(src: Path, ext: str) -> str:
-    """Fixed placeholder for known bundle types. No Gemini call."""
+def bundle_description(src, ext):
     table = {
         ".logicx": "Logic Pro project bundle",
         ".band": "GarageBand project bundle",
@@ -220,30 +333,14 @@ def bundle_description(src: Path, ext: str) -> str:
     return table.get(ext.lower(), f"{ext.lstrip('.')} bundle")
 
 
-# Patterns that indicate Gemini refused to read the file (sandbox / access).
-# Treat as failed extraction; return None so body falls back to filename.
-_REFUSAL_RE = re.compile(
-    r"(cannot access|cannot describe|cannot view|unable to (access|view|read)|"
-    r"outside (the |my )?(allowed )?workspace|outside the allowed|"
-    r"i (don't|do not) have (permission|access)|file path is outside)",
-    re.IGNORECASE,
-)
-
-# Messages attachments live outside any workspace; pass via --include-directories
-# so Gemini's plan-mode sandbox allows reads. Round-trip across the CLI fence.
-ATTACHMENTS_INCLUDE = str(Path.home() / "Library" / "Messages" / "Attachments")
-
-
-def gemini_describe(path: Path, kind: str) -> tuple[str | None, str | None]:
-    """Returns (description, model) for a kind we extract; (None, None) otherwise.
-
-    v1: `image` / `video` / `text` go through Gemini Flash. Audio / opaque /
-    bundles return (None, None) per format.md § G.
-    """
+def gemini_describe_once(path, kind, timeout=180):
+    """Single Gemini CLI call. Returns (description, model, error_kind)
+    where error_kind is one of: None (success), 'rate_limit', 'refusal',
+    'timeout', 'failure'."""
     if kind not in ("image", "video", "text"):
-        return None, None
+        return None, None, "unsupported"
     if not path.exists() or path.is_dir():
-        return None, None
+        return None, None, "missing"
     prompt = PROMPT_VISION if kind in ("image", "video") else PROMPT_TEXT
     cmd = [
         "gemini",
@@ -253,33 +350,103 @@ def gemini_describe(path: Path, kind: str) -> tuple[str | None, str | None]:
         "--include-directories", ATTACHMENTS_INCLUDE,
     ]
     try:
-        proc = subprocess.run(
-            cmd, capture_output=True, text=True, timeout=120,
-        )
-    except (subprocess.TimeoutExpired, FileNotFoundError):
-        return None, None
+        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
+    except subprocess.TimeoutExpired:
+        return None, None, "timeout"
+    except FileNotFoundError:
+        return None, None, "no_cli"
+
+    combined = (proc.stdout or "") + "\n" + (proc.stderr or "")
     if proc.returncode != 0:
-        return None, None
-    desc = proc.stdout.strip()
-    # Some CLI runs prepend boilerplate; take last non-empty line if it's a
-    # one-liner. Truncate to spec budget.
+        if _RATE_LIMIT_RE.search(combined):
+            return None, None, "rate_limit"
+        return None, None, "failure"
+
+    desc = (proc.stdout or "").strip()
     lines = [ln.strip() for ln in desc.splitlines() if ln.strip()]
     if not lines:
-        return None, None
+        return None, None, "empty"
     desc = lines[-1]
-    # Defense in depth: if the response is a refusal / sandbox-error string,
-    # don't bake it into the markdown.
     if _REFUSAL_RE.search(desc):
-        return None, None
+        return None, None, "refusal"
     cap = 100 if kind in ("image", "video") else 200
     if len(desc) > cap:
         desc = desc[: cap - 1].rstrip() + "…"
-    return desc, DESCRIPTION_MODEL
+    return desc, DESCRIPTION_MODEL, None
 
 
-def load_prior_descriptions(month_path: Path) -> dict[tuple[str, str], tuple[str, str]]:
-    """Read existing month file's frontmatter, build {(sha256, model): (description, extracted_at)}.
-    Re-runs reuse description AND original extracted_at for byte-stable output."""
+def gemini_describe_with_retry(path, kind, max_retries=3):
+    """Single-call wrapper with exponential backoff on rate limits."""
+    delay = 5.0
+    for attempt in range(max_retries + 1):
+        desc, model, err = gemini_describe_once(path, kind)
+        if err != "rate_limit":
+            return desc, model, err
+        if attempt >= max_retries:
+            return desc, model, err
+        # jittered exponential backoff
+        sleep_for = delay + random.uniform(0, delay)
+        time.sleep(sleep_for)
+        delay = min(delay * 2, 60)
+    return None, None, "rate_limit"
+
+
+def parallel_describe(worklist, workers, on_progress=None):
+    """Run gemini_describe_with_retry over worklist in parallel.
+
+    worklist: list of dicts with keys {sha256, src, kind, ext}
+    Returns: dict {sha256: {description, model, extracted_at, error}}
+    """
+    results = {}
+    if not worklist:
+        return results
+    done_count = [0]
+    total = len(worklist)
+
+    def task(item):
+        sha = item["sha256"]
+        src = item["src"]
+        kind = item["kind"]
+        ext = item.get("ext") or ""
+        if kind == "bundle":
+            desc = bundle_description(src, ext)
+            return sha, {
+                "description": desc,
+                "model": None,
+                "extracted_at": None,
+                "error": None,
+            }
+        desc, model, err = gemini_describe_with_retry(src, kind)
+        if desc:
+            return sha, {
+                "description": desc,
+                "model": model,
+                "extracted_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+                "error": None,
+            }
+        return sha, {
+            "description": None,
+            "model": None,
+            "extracted_at": None,
+            "error": err,
+        }
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as ex:
+        futures = [ex.submit(task, item) for item in worklist]
+        for fut in concurrent.futures.as_completed(futures):
+            sha, payload = fut.result()
+            results[sha] = payload
+            done_count[0] += 1
+            if on_progress and (done_count[0] % 25 == 0 or done_count[0] == total):
+                on_progress(done_count[0], total)
+    return results
+
+
+# ---------------------------------------------------------------------------
+# Prior-description cache (idempotency)
+# ---------------------------------------------------------------------------
+def load_prior_descriptions(month_path):
+    """Read existing month file's frontmatter, build {sha256: (description, model, extracted_at)}."""
     if not month_path.exists():
         return {}
     try:
@@ -290,8 +457,7 @@ def load_prior_descriptions(month_path: Path) -> dict[tuple[str, str], tuple[str
     if not m:
         return {}
     try:
-        import yaml as _yaml
-        fm = _yaml.safe_load(m.group(1)) or {}
+        fm = yaml.safe_load(m.group(1)) or {}
     except Exception:
         return {}
     out = {}
@@ -300,13 +466,17 @@ def load_prior_descriptions(month_path: Path) -> dict[tuple[str, str], tuple[str
         model = a.get("description_model")
         desc = a.get("description")
         extracted_at = a.get("extracted_at")
-        if sha and model and desc:
-            out[(sha, model)] = (desc, extracted_at)
+        if sha and desc:
+            out[sha] = (desc, model, extracted_at)
     return out
 
 
+# ---------------------------------------------------------------------------
+# Chat resolution
+# ---------------------------------------------------------------------------
 def find_chats_for_handles(conn, handles):
-    """Return chat ROWIDs whose participants exactly match the handle set."""
+    """Return chat ROWIDs for 1:1 chats containing any of the given handles.
+    No service_name filter — SMS, iMessage, RCS all eligible."""
     placeholders = ",".join(["?"] * len(handles))
     rows = conn.execute(f"""
         SELECT DISTINCT c.ROWID
@@ -314,25 +484,40 @@ def find_chats_for_handles(conn, handles):
         JOIN chat_handle_join chj ON chj.chat_id = c.ROWID
         JOIN handle h ON h.ROWID = chj.handle_id
         WHERE c.style != 43
-          AND c.service_name = 'iMessage'
           AND h.id IN ({placeholders})
     """, handles).fetchall()
     return [r[0] for r in rows]
 
 
-def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes):
-    slug = contact_cfg["slug"]
-    handles = contact_cfg["handles"]
-    full_archive = contact_cfg.get("full_archive", False)
-    print(f"\n=== {slug} (handles={handles}, full_archive={full_archive}) ===")
+def find_chat_for_guid(conn, chat_guid):
+    """Return [chat ROWID] for a single guid (group chat)."""
+    rows = conn.execute(
+        "SELECT ROWID FROM chat WHERE guid = ?", (chat_guid,)
+    ).fetchall()
+    return [r[0] for r in rows]
 
-    chat_ids = find_chats_for_handles(conn, handles)
+
+def chat_handles(conn, chat_ids):
+    """Return ordered list of handles for the given chat set."""
     if not chat_ids:
-        print(f"  no iMessage chat found for handles {handles}")
-        return None
-
+        return []
     ph = ",".join(["?"] * len(chat_ids))
-    rows = list(conn.execute(f"""
+    return [h for (h,) in conn.execute(f"""
+        SELECT DISTINCT h.id
+        FROM chat_handle_join chj
+        JOIN handle h ON h.ROWID = chj.handle_id
+        WHERE chj.chat_id IN ({ph})
+        ORDER BY h.id
+    """, chat_ids).fetchall()]
+
+
+# ---------------------------------------------------------------------------
+# Render — unified for individuals + groups
+# ---------------------------------------------------------------------------
+def gather_messages_and_attachments(conn, chat_ids):
+    """Pull messages + attachments for chat set."""
+    ph = ",".join(["?"] * len(chat_ids))
+    msg_rows = list(conn.execute(f"""
         SELECT m.ROWID, m.guid, m.text, m.date, m.is_from_me,
                m.associated_message_type, m.associated_message_guid,
                m.balloon_bundle_id, m.attributedBody, m.date_edited,
@@ -343,7 +528,6 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
         WHERE cmj.chat_id IN ({ph})
         ORDER BY m.date ASC
     """, chat_ids))
-
     att_rows = list(conn.execute(f"""
         SELECT maj.message_id, a.guid, a.filename, a.transfer_name,
                a.total_bytes, a.uti, a.mime_type, a.ROWID
@@ -354,19 +538,25 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
     """, chat_ids))
     att_by_msg = {}
     for mid, aguid, fn, tn, sz, uti, mime, arow in att_rows:
-        # `fn` is the full Mac path; `tn` is the user-visible display name
-        # (basename). Spec § D wants basename in frontmatter.
         display_name = tn or (Path(fn).name if fn else "untitled")
         att_by_msg.setdefault(mid, []).append({
             "guid": aguid, "filename": display_name,
             "transfer_name": tn, "size_bytes": sz, "uti": uti, "mime": mime,
             "rowid": arow, "src_path": fn,
         })
+    return msg_rows, att_by_msg
 
-    # Tapback resolution
+
+def filter_blocked_messages(msgs):
+    blocked = sum(1 for r in msgs if r[10] and is_blocked(r[10]))
+    msgs = [r for r in msgs if not (r[10] and is_blocked(r[10]))]
+    return msgs, blocked
+
+
+def split_tapbacks(msgs):
     raw_tap = {}
-    msgs = []
-    for r in rows:
+    body_msgs = []
+    for r in msgs:
         amt = r[5]
         atg = strip_target_guid(r[6])
         if amt and 2000 <= amt <= 2005:
@@ -382,7 +572,7 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
                 "date": r[3], "removed": True,
             })
         else:
-            msgs.append(r)
+            body_msgs.append(r)
 
     tapbacks = {}
     for target, events in raw_tap.items():
@@ -394,10 +584,10 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
                      for e in latest.values() if not e["removed"]]
         if surviving:
             tapbacks[target] = surviving
+    return body_msgs, tapbacks
 
-    blocked = sum(1 for r in msgs if r[10] and is_blocked(r[10]))
-    msgs = [r for r in msgs if not (r[10] and is_blocked(r[10]))]
 
+def recover_attributed_bodies(msgs):
     recovered = 0
     failed = 0
     skipped_url = 0
@@ -416,13 +606,74 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
                 skipped_url += 1
                 continue
             fixed.append(r)
-    msgs = fixed
+    return fixed, recovered, failed, skipped_url
 
-    if not msgs:
-        print(f"  no renderable messages after filtering")
+
+def build_attachment_worklist(msgs, att_by_msg, prior_desc_combined, skip_descriptions):
+    """Build flat worklist of attachments needing Gemini calls.
+    Skips those already in `prior_desc_combined` (sha256 -> tuple)."""
+    worklist = []
+    seen_sha = set()
+    for r in msgs:
+        for a in att_by_msg.get(r[0], []):
+            src = Path(os.path.expanduser(a["src_path"])) if a["src_path"] else None
+            if src is None:
+                continue
+            sha256, source_available = hash_source(src)
+            if not source_available or sha256 is None:
+                continue
+            if sha256 in seen_sha:
+                continue
+            seen_sha.add(sha256)
+            kind = kind_of(a["mime"], src)
+            if skip_descriptions:
+                continue
+            if sha256 in prior_desc_combined:
+                continue
+            if kind not in ("image", "video", "text", "bundle"):
+                continue
+            worklist.append({
+                "sha256": sha256,
+                "src": src,
+                "kind": kind,
+                "ext": Path(a["filename"]).suffix or "",
+            })
+    return worklist
+
+
+def render_target(conn, target_cfg, target_kind, ws, out_root, dry_run,
+                  workers, skip_descriptions, contacts_map):
+    """Unified renderer for `individual` and `group` targets."""
+    slug = target_cfg["slug"]
+    chat_ids = []
+    handles_for_target = []
+    chat_guid = None
+
+    if target_kind == "individual":
+        handles_for_target = target_cfg["handles"]
+        chat_ids = find_chats_for_handles(conn, handles_for_target)
+    else:
+        chat_guid = target_cfg["chat_guid"]
+        chat_ids = find_chat_for_guid(conn, chat_guid)
+
+    if not chat_ids:
+        print(f"  [{target_kind}] {slug}: no chat found")
         return None
 
-    # Bucket by (year, month)
+    # For groups, also collect ALL participant handles for member roster
+    all_handles = chat_handles(conn, chat_ids)
+
+    msg_rows, att_by_msg = gather_messages_and_attachments(conn, chat_ids)
+
+    raw_msgs, tapbacks = split_tapbacks(msg_rows)
+    raw_msgs, blocked = filter_blocked_messages(raw_msgs)
+    msgs, recovered, failed, skipped_url = recover_attributed_bodies(raw_msgs)
+
+    if not msgs:
+        print(f"  [{target_kind}] {slug}: no renderable messages after filtering")
+        return None
+
+    # Bucket by month
     by_month = {}
     for r in msgs:
         dt = to_dt(r[3])
@@ -431,24 +682,76 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
         key = dt.astimezone(TZ).strftime("%Y-%m")
         by_month.setdefault(key, []).append(r)
 
-    individuals_dir = out_root / "individuals" / slug
+    # Pre-pass: load prior descriptions across ALL months so we don't re-ask Gemini
+    if target_kind == "individual":
+        target_dir = out_root / "individuals" / slug
+    else:
+        target_dir = out_root / "groups" / slug
     profiles_dir = out_root / "_profiles"
     if not dry_run:
         profiles_dir.mkdir(parents=True, exist_ok=True)
 
+    prior_combined = {}
+    for month_key in by_month:
+        first_dt = to_dt(by_month[month_key][0][3]).astimezone(TZ)
+        year = first_dt.year
+        month_dir = target_dir / str(year)
+        month_path = month_dir / f"{month_key}__{slug}.md"
+        prior = load_prior_descriptions(month_path)
+        prior_combined.update(prior)
+
+    # Build attachment worklist (flat, deduped on sha256)
+    worklist = build_attachment_worklist(msgs, att_by_msg, prior_combined, skip_descriptions)
+    if worklist:
+        print(f"  [{target_kind}] {slug}: {len(worklist)} new descriptions ({workers}x parallel)")
+        def progress(done, total):
+            sys.stdout.write(f"\r    ...{done}/{total} described")
+            sys.stdout.flush()
+            if done == total:
+                sys.stdout.write("\n")
+        new_descriptions = parallel_describe(worklist, workers, on_progress=progress)
+    else:
+        new_descriptions = {}
+
+    # Combine prior + new for fast lookup during render
+    all_desc = {}
+    for sha, (desc, model, extracted_at) in prior_combined.items():
+        all_desc[sha] = {
+            "description": desc, "model": model,
+            "extracted_at": extracted_at, "error": None,
+        }
+    all_desc.update(new_descriptions)
+
     # Profile stub
-    primary_handle = handles[0]
+    primary_handle = handles_for_target[0] if handles_for_target else None
     first_seen_dt = to_dt(msgs[0][3]).astimezone(TZ).date()
-    profile = {
-        "slug": slug,
-        "contact_type": "individual",
-        "contact_handles": handles,
-        "contact_name": " ".join(p.capitalize() for p in slug.split("-")),
-        "slug_derivation": "contacts_full_name",
-        "chat_guid": None,
-        "first_seen": str(first_seen_dt),
-        "aliases": [],
-    }
+    if target_kind == "individual":
+        profile = {
+            "slug": slug,
+            "contact_type": "individual",
+            "contact_handles": handles_for_target,
+            "contact_name": " ".join(p.capitalize() for p in slug.split("-")),
+            "slug_derivation": "contacts_full_name",
+            "chat_guid": None,
+            "first_seen": str(first_seen_dt),
+            "aliases": [],
+        }
+    else:
+        members = []
+        for h in all_handles:
+            n = normalize_handle(h)
+            members.append({
+                "handle": h,
+                "name": (contacts_map.get(n) if n else None) or None,
+            })
+        profile = {
+            "slug": slug,
+            "contact_type": "group",
+            "chat_guid": chat_guid,
+            "display_name": target_cfg.get("display_name") or None,
+            "first_seen": str(first_seen_dt),
+            "members": members,
+        }
     if not dry_run:
         prof_path = profiles_dir / f"{slug}.md"
         prof_text = "---\n" + yaml.safe_dump(profile, sort_keys=False) + "---\n"
@@ -458,9 +761,30 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
     written_files = []
     total_atts_inlined = 0
     total_atts_described = 0
-    total_atts_skipped = 0   # null description (audio / opaque / bundle)
+    total_atts_skipped = 0
     total_atts_unavailable = 0
     total_atts_reused = 0
+    total_atts_errored = 0
+
+    if target_kind == "individual":
+        peer_display = slug.split("-")[0].capitalize()
+    else:
+        peer_display = None  # per-message resolution for groups
+
+    def sender_display(r):
+        from_me = r[4]
+        handle_id = r[10]
+        if from_me:
+            return "me", "me"
+        if target_kind == "individual":
+            return peer_display, slug
+        # group: resolve via contacts map, else first-name from contact, else handle slug
+        n = normalize_handle(handle_id) if handle_id else None
+        name = contacts_map.get(n) if n else None
+        if name:
+            first = name.split()[0]
+            return first, name_to_slug(name)
+        return handle_id or "unknown", handle_to_slug(handle_id)
 
     for month_key in sorted(by_month):
         month_msgs = by_month[month_key]
@@ -470,17 +794,12 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
         their_count = sum(1 for r in month_msgs if not r[4])
 
         year = first_dt.year
-        month_dir = individuals_dir / str(year)
+        month_dir = target_dir / str(year)
         if not dry_run:
             month_dir.mkdir(parents=True, exist_ok=True)
 
-        # Idempotency: load prior descriptions keyed on (sha256, model).
-        month_path = month_dir / f"{month_key}__{slug}.md"
-        prior_desc = load_prior_descriptions(month_path)
-
-        # Build attachments[] via description extraction per § G
+        # Build attachments[] frontmatter
         fm_atts = []
-        skip_descriptions = (attach_budget_bytes == 0)  # --no-descriptions
         for r in month_msgs:
             for a in att_by_msg.get(r[0], []):
                 aid = _blake3(
@@ -495,34 +814,31 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
                 description = None
                 model = None
                 extracted_at = None
-                if not source_available:
-                    pass
-                elif skip_descriptions:
-                    pass
-                elif sha256 and (sha256, DESCRIPTION_MODEL) in prior_desc:
-                    description, extracted_at = prior_desc[(sha256, DESCRIPTION_MODEL)]
-                    model = DESCRIPTION_MODEL
-                    total_atts_reused += 1
-                elif kind == "bundle":
-                    ext = Path(a["filename"]).suffix or ""
-                    description = bundle_description(src, ext)
-                    model = None  # static, no model; not cached
-                    total_atts_described += 1
-                elif kind in ("image", "video", "text"):
-                    description, model = gemini_describe(src, kind)
-                    if description:
-                        extracted_at = datetime.datetime.now(datetime.timezone.utc).isoformat()
-                        total_atts_described += 1
+                if source_available and sha256:
+                    if sha256 in all_desc:
+                        d = all_desc[sha256]
+                        description = d["description"]
+                        model = d["model"]
+                        extracted_at = d["extracted_at"]
+                        if description:
+                            if sha256 in prior_combined and sha256 not in new_descriptions:
+                                total_atts_reused += 1
+                            else:
+                                total_atts_described += 1
+                        else:
+                            if d.get("error"):
+                                total_atts_errored += 1
+                            else:
+                                total_atts_skipped += 1
                     else:
                         total_atts_skipped += 1
-                else:
-                    total_atts_skipped += 1
+                _, sender_slug = sender_display(r)
                 fm_atts.append({
                     "id": aid,
                     "filename": a["filename"],
                     "mime": a["mime"],
                     "size_bytes": a["size_bytes"],
-                    "sender": "me" if r[4] else slug,
+                    "sender": "me" if r[4] else sender_slug,
                     "sent_at": to_dt(r[3]).astimezone(TZ).isoformat(),
                     "sha256": sha256,
                     "description": description,
@@ -531,11 +847,13 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
                     "source_available": source_available,
                 })
 
-        # Render body. First-name-only display in body lines (spec example
-        # uses "Sydney" not "Sydney Hayes" in `**HH:MM — sender:**`).
-        # Frontmatter `contact_name` keeps the full name.
-        peer_display = slug.split("-")[0].capitalize()
-        lines = [f"# {peer_display} — {first_dt.strftime('%B %Y')}", ""]
+        # Render body
+        if target_kind == "individual":
+            title = f"# {peer_display} — {first_dt.strftime('%B %Y')}"
+        else:
+            display_name = target_cfg.get("display_name") or slug
+            title = f"# {display_name} — {first_dt.strftime('%B %Y')}"
+        lines = [title, ""]
         last_day = None
         for r in month_msgs:
             (rowid, guid, text, date, from_me, _amt, _atg, bbi,
@@ -548,40 +866,45 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
                 lines.append(f"## {day}")
                 lines.append("")
                 last_day = day
-            sender = "me" if from_me else peer_display
+            sender_disp, _ = sender_display(r)
             edited = " (edited)" if dedit and dedit > 0 else ""
 
             atts = att_by_msg.get(rowid, [])
-            # Look up the description we computed in the frontmatter pass
-            atts_meta = {a["id"]: a for a in fm_atts if a["sent_at"] == to_dt(r[3]).astimezone(TZ).isoformat() and a["sender"] == ("me" if from_me else slug)}
             for a in atts:
-                aid = _blake3(
-                    f"{a['guid'] or a['filename']}|"
-                    f"{a['size_bytes'] or 0}|{a['rowid']}".encode()
-                ).hexdigest()[:16]
-                kind = attachment_kind(a["mime"]) if not (Path(os.path.expanduser(a["src_path"] or "")).is_dir() if a["src_path"] else False) else "file"
-                meta = atts_meta.get(aid)
-                desc = (meta or {}).get("description") if meta else None
+                src = Path(os.path.expanduser(a["src_path"])) if a["src_path"] else None
+                sha256, source_available = (None, False) if src is None else hash_source(src)
+                kind = kind_of(a["mime"], src)
+                desc = None
+                if sha256 and sha256 in all_desc:
+                    desc = all_desc[sha256]["description"]
                 if desc:
-                    lines.append(f"**{dt.strftime('%H:%M')} — {sender}:** [{kind}: {desc}]")
+                    lines.append(f"**{dt.strftime('%H:%M')} — {sender_disp}:** [{kind}: {desc}]")
                 else:
-                    lines.append(f"**{dt.strftime('%H:%M')} — {sender}:** [{kind}: {a['filename']}]")
+                    lines.append(f"**{dt.strftime('%H:%M')} — {sender_disp}:** [{kind}: {a['filename']}]")
                 total_atts_inlined += 1
             body_text = (text or "").strip().replace("￼", "").strip()
             if body_text:
-                lines.append(f"**{dt.strftime('%H:%M')} — {sender}{edited}:** {body_text}")
+                lines.append(f"**{dt.strftime('%H:%M')} — {sender_disp}{edited}:** {body_text}")
             elif bbi and not atts:
-                lines.append(f"**{dt.strftime('%H:%M')} — {sender}:** [app message: {bbi}]")
+                lines.append(f"**{dt.strftime('%H:%M')} — {sender_disp}:** [app message: {bbi}]")
             stripped = strip_target_guid(guid)
-            for tname, tsender, tdate in tapbacks.get(stripped, []):
+            for tname, tsender_handle, tdate in tapbacks.get(stripped, []):
                 tdt = to_dt(tdate)
                 if tdt is None:
                     continue
                 tdt = tdt.astimezone(TZ)
                 snippet = body_text.replace('"', '\\"')[:60]
-                tsender_render = "me" if tsender == "me" else (
-                    peer_display if tsender == handles[0] else tsender
-                )
+                if tsender_handle == "me":
+                    tsender_render = "me"
+                else:
+                    n = normalize_handle(tsender_handle)
+                    nm = contacts_map.get(n) if n else None
+                    if nm:
+                        tsender_render = nm.split()[0]
+                    elif target_kind == "individual" and tsender_handle == handles_for_target[0]:
+                        tsender_render = peer_display
+                    else:
+                        tsender_render = tsender_handle
                 lines.append(
                     f'**{tdt.strftime("%H:%M")} — {tsender_render}:** '
                     f'[reaction: {tname} to "{snippet}"]'
@@ -590,8 +913,6 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
         body = "\n".join(lines).rstrip() + "\n"
         ch = "blake3:" + _blake3(body.encode()).hexdigest()
         guids_in_month = len({r[1] for r in month_msgs})
-        chat_msgid_min = min(r[0] for r in month_msgs)
-        chat_msgid_max = max(r[0] for r in month_msgs)
 
         fm = {
             "source": "imessage",
@@ -601,10 +922,7 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
             "content_hash": ch,
             "provider_modified_at": last_dt.isoformat(),
             "contact_slug": slug,
-            "contact_type": "individual",
-            "contact_handles": handles,
-            "contact_name": " ".join(p.capitalize() for p in slug.split("-")),
-            "chat_guid": None,
+            "contact_type": target_kind,
             "month": month_key,
             "date_range": [str(first_dt.date()), str(last_dt.date())],
             "message_count": len(month_msgs),
@@ -615,6 +933,15 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
             "deleted_upstream": None,
             "superseded_by": None,
         }
+        if target_kind == "individual":
+            fm["contact_handles"] = handles_for_target
+            fm["contact_name"] = " ".join(p.capitalize() for p in slug.split("-"))
+            fm["chat_guid"] = None
+        else:
+            fm["chat_guid"] = chat_guid
+            fm["display_name"] = target_cfg.get("display_name") or None
+            fm["member_count"] = len(all_handles)
+
         fm_text = "---\n" + yaml.safe_dump(fm, sort_keys=False, default_flow_style=False) + "---\n\n"
         out_path = month_dir / f"{month_key}__{slug}.md"
         if not dry_run:
@@ -623,6 +950,7 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
 
     return {
         "slug": slug,
+        "kind": target_kind,
         "files": written_files,
         "blocked": blocked,
         "recovered": recovered,
@@ -633,13 +961,12 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
         "atts_skipped": total_atts_skipped,
         "atts_unavailable": total_atts_unavailable,
         "atts_reused": total_atts_reused,
+        "atts_errored": total_atts_errored,
         "tapbacks_attached": sum(len(v) for v in tapbacks.values()),
     }
 
 
-def append_ledger(ws_root, slug, files, run_id="oneshot"):
-    """Append rows per format.md § H. Skip if a prior row with the same
-    (key, content_hash) already exists; otherwise append a new row."""
+def append_ledger(ws_root, slug, target_kind, files, run_id="oneshot"):
     ledger = ws_root / "_meta" / "ingested.jsonl"
     ledger.parent.mkdir(parents=True, exist_ok=True)
     existing = set()
@@ -657,8 +984,7 @@ def append_ledger(ws_root, slug, files, run_id="oneshot"):
     with ledger.open("a") as f:
         for path, _msg_count, _atts, _size, content_hash in files:
             month = path.stem.split("__")[0]
-            ctype = "individual" if "/individuals/" in str(path) else "group"
-            key = f"imessage:{ctype}:{slug}:{month}"
+            key = f"imessage:{target_kind}:{slug}:{month}"
             if (key, content_hash) in existing:
                 skipped += 1
                 continue
@@ -672,64 +998,86 @@ def append_ledger(ws_root, slug, files, run_id="oneshot"):
             }
             f.write(json.dumps(row) + "\n")
             appended += 1
-    print(f"  ledger: {appended} appended, {skipped} skipped (already up-to-date)")
+    if appended or skipped:
+        print(f"  ledger: {appended} appended, {skipped} skipped (already up-to-date)")
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--workspace", required=True)
-    ap.add_argument("--contact", help="filter to single allowlisted slug")
+    ap.add_argument("--contact", help="filter to a single allowlisted 1:1 slug")
+    ap.add_argument("--group", help="filter to a single allowlisted group slug")
     ap.add_argument("--dry-run", action="store_true")
-    ap.add_argument("--no-descriptions", action="store_true",
-                    help="skip Gemini description calls (body falls back to filename)")
+    ap.add_argument("--no-descriptions", action="store_true")
+    ap.add_argument("--workers", type=int, default=DEFAULT_WORKERS,
+                    help=f"parallel Gemini calls (default {DEFAULT_WORKERS})")
     args = ap.parse_args()
 
     ws_root = ULTRON_ROOT / "workspaces" / args.workspace
     cfg_path = ws_root / "config" / "sources.yaml"
     if not cfg_path.exists():
         sys.exit(f"sources.yaml not found at {cfg_path}")
-    cfg = yaml.safe_load(cfg_path.read_text())
-    imsg = (cfg.get("sources") or {}).get("imessage") or {}
+    cfg = yaml.safe_load(cfg_path.read_text()) or {}
+    imsg = ((cfg.get("sources") or {}).get("imessage") or {})
     contacts = imsg.get("contacts") or []
-    if not contacts:
-        sys.exit(f"no imessage contacts allowlisted in {cfg_path}")
+    groups = imsg.get("groups") or []
 
     if args.contact:
         contacts = [c for c in contacts if c.get("slug") == args.contact]
-        if not contacts:
-            sys.exit(f"--contact {args.contact} not in allowlist")
+        groups = []
+    if args.group:
+        groups = [g for g in groups if g.get("slug") == args.group]
+        contacts = []
+
+    if not contacts and not groups:
+        sys.exit("no targets after filter")
 
     out_root = ws_root / "raw" / "imessage"
-    print(f"workspace: {args.workspace}")
-    print(f"output:    {out_root}")
-    print(f"dry-run:   {args.dry_run}")
+    print(f"workspace:    {args.workspace}")
+    print(f"output:       {out_root}")
+    print(f"dry-run:      {args.dry_run}")
+    print(f"workers:      {args.workers}")
+    print(f"contacts:     {len(contacts)}")
+    print(f"groups:       {len(groups)}")
+
+    print(f"loading Apple Contacts handle map (for group sender resolution)...")
+    contacts_map = load_apple_contacts()
+    print(f"  {len(contacts_map)} handles mapped")
 
     conn = sqlite3.connect(f"file:{DB}?mode=ro", uri=True)
-    # `attach_budget_bytes`: 0 = skip Gemini calls, anything else = enable.
-    budget = 0 if args.no_descriptions else 1
-    for c in contacts:
-        result = render_contact(conn, c, args.workspace, out_root, args.dry_run, budget)
+
+    skip_desc = args.no_descriptions
+
+    def report(result):
         if not result:
-            continue
-        print(f"\n  files written: {len(result['files'])}")
+            return
+        print(f"\n  [{result['kind']}] {result['slug']}: {len(result['files'])} files")
         for path, mcount, acount, size, _ch in result["files"]:
             try:
                 rel = path.relative_to(ULTRON_ROOT)
             except ValueError:
                 rel = path
             print(f"    {rel}: {mcount} msgs, {acount} atts, {size:,} bytes")
-        print(f"  blocklisted:           {result['blocked']}")
-        print(f"  attrBody recovered:    {result['recovered']}")
-        print(f"  attrBody failed:       {result['failed']}")
-        print(f"  url-balloon skipped:   {result['url_balloon_skipped']}")
-        print(f"  attachments inlined:   {result['atts_inlined']}")
-        print(f"  attachments described: {result['atts_described']}")
-        print(f"  attachments reused:    {result['atts_reused']} (idempotent)")
-        print(f"  attachments skipped:   {result['atts_skipped']} (audio/opaque/bundle)")
-        print(f"  attachments unavail:   {result['atts_unavailable']} (source missing)")
-        print(f"  tapbacks attached:     {result['tapbacks_attached']}")
-        if not args.dry_run:
-            append_ledger(ws_root, result["slug"], result["files"])
+        if result['blocked']: print(f"  blocked: {result['blocked']}")
+        if result['recovered']: print(f"  attrBody recovered: {result['recovered']}")
+        if result['atts_described']: print(f"  atts described: {result['atts_described']}")
+        if result['atts_reused']: print(f"  atts reused: {result['atts_reused']}")
+        if result['atts_errored']: print(f"  atts errored: {result['atts_errored']}")
+        if result['tapbacks_attached']: print(f"  tapbacks: {result['tapbacks_attached']}")
+
+    for c in contacts:
+        result = render_target(conn, c, "individual", args.workspace, out_root,
+                              args.dry_run, args.workers, skip_desc, contacts_map)
+        report(result)
+        if result and not args.dry_run:
+            append_ledger(ws_root, result["slug"], "individual", result["files"])
+
+    for g in groups:
+        result = render_target(conn, g, "group", args.workspace, out_root,
+                              args.dry_run, args.workers, skip_desc, contacts_map)
+        report(result)
+        if result and not args.dry_run:
+            append_ledger(ws_root, result["slug"], "group", result["files"])
 
     conn.close()
     print("\ndone")

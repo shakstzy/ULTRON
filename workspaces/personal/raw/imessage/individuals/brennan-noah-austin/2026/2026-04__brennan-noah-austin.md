@@ -1,16 +1,12 @@
 ---
 source: imessage
 workspace: personal
-ingested_at: '2026-05-04T03:53:27.182240+00:00'
+ingested_at: '2026-05-04T21:10:07.821764+00:00'
 ingest_version: 1
-content_hash: blake3:803a8e28a899142e707db4efabc38a5874faa454bc848dd378bb8c5bb0b76b68
+content_hash: blake3:ff3aefd4a086a46c764ee8aa6991d236bcc637e6dae43e7c77112dc7aa1b4410
 provider_modified_at: '2026-04-30T22:24:22.451915-05:00'
 contact_slug: brennan-noah-austin
 contact_type: individual
-contact_handles:
-- '+15128458988'
-contact_name: Brennan Noah Austin
-chat_guid: null
 month: 2026-04
 date_range:
 - '2026-04-15'
@@ -171,7 +167,7 @@ attachments:
   sender: me
   sent_at: '2026-04-30T13:45:24.579579-05:00'
   sha256: null
-  description: Logic Pro project bundle
+  description: null
   description_model: null
   extracted_at: null
   source_available: true
@@ -190,6 +186,10 @@ attachments:
 chat_message_guids_count: 134
 deleted_upstream: null
 superseded_by: null
+contact_handles:
+- '+15128458988'
+contact_name: Brennan Noah Austin
+chat_guid: null
 ---
 
 # Brennan — April 2026
@@ -361,7 +361,7 @@ I can’t believe u happy when u somewhere in the distance
 **13:44 — Brennan:** Bet that
 **13:45 — me:** This is logic template
 **13:45 — me:** Will drop fl in a bit too
-**13:45 — me:** [file: Logic Pro project bundle]
+**13:45 — me:** [bundle: template.logicx]
 **13:45 — Brennan:** Yeah I’m Trynna scale my capital to make larger trades without leveraging or marginal trading
 **13:45 — me:** [image: A screenshot of an iMessage chat showing a shared Logic Pro project template.]
 **13:45 — me:** Fuck its bugging

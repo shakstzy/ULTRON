@@ -1,57 +1,4072 @@
-# SMOKE-TEST CONFIG — replace with agent-extracted schema before bulk historical ingest.
-# Phase 3 starter: scoped tight to a 7-day inbox window on the outerscope account
-# so a single ingest run lands a meaningful but small sample.
-
 workspace: personal
 wiki: true
-
 sources:
   gmail:
-    # Documents intent for unrouted threads on this workspace's gmail
-    # subscriptions. Currently advisory; route.py reads the per-workspace
-    # `_workspace_meta.ingest_unrouted_default` for enforcement.
     unrouted_default: route_to_main
     accounts:
-      - account: adithya@outerscope.xyz
-        lookback_days_initial: 7
-        api_query:
-          include:
-            - "label:INBOX"
-          exclude:
-            - "from:noreply@*"
-            - "label:Eclipse"
-            - "label:SPAM"
-            - "label:TRASH"
-
-      # Synapse founder mailbox. Lookback covers the full ~12-month account
-      # history. Synapse workspace doesn't exist yet; personal is the
-      # holding pen until it's bootstrapped (then flip the account block
-      # over). Match-all + exclude_from keeps cold-pitch / promo noise out.
-      - account: adithya@synps.xyz
-        lookback_days_initial: 365
-        api_query:
-          include: []          # match-all → every non-excluded thread routes here
-          exclude:
-            - "label:SPAM"
-            - "label:TRASH"
-            - "label:DRAFT"
-            - "label:CHAT"
-            - "label:CATEGORY_PROMOTIONS"
-            - "label:CATEGORY_SOCIAL"
-          exclude_from: _shell/config/account-excludes/adithya-synps.yaml
-
+    - account: adithya@outerscope.xyz
+      lookback_days_initial: 7
+      api_query:
+        include:
+        - label:INBOX
+        exclude:
+        - from:noreply@*
+        - label:Eclipse
+        - label:SPAM
+        - label:TRASH
+    - account: adithya@synps.xyz
+      lookback_days_initial: 365
+      api_query:
+        include: []
+        exclude:
+        - label:SPAM
+        - label:TRASH
+        - label:DRAFT
+        - label:CHAT
+        - label:CATEGORY_PROMOTIONS
+        - label:CATEGORY_SOCIAL
+        exclude_from: _shell/config/account-excludes/adithya-synps.yaml
   imessage:
-    # Privacy-first opt-in (per format.md § K). Default for unrouted contacts
-    # is SKIP; only the entries below are ingested into this workspace.
     contacts:
-      - slug: brennan-noah-austin
-        handles: ["+15128458988"]
-        full_archive: true
-    groups: []
+    - slug: brennan-noah-austin
+      handles:
+      - '+15128458988'
+      full_archive: true
+    - slug: ryan-xie
+      handles:
+      - '+17048901338'
+      full_archive: true
+    - slug: aaliyah-hinge-austin
+      handles:
+      - '+14154042088'
+      full_archive: true
+    - slug: sydney-huang-eclipse
+      handles:
+      - '+13238288528'
+      full_archive: true
+    - slug: rushil-jha-uc-berkeley-nyc
+      handles:
+      - '+12039063000'
+      full_archive: true
+    - slug: brandon-encrypto
+      handles:
+      - '+15162629447'
+      full_archive: true
+    - slug: bhanu-pratap-singh-tak
+      handles:
+      - '+18043127204'
+      full_archive: true
+    - slug: rishika-uc-berkeley
+      handles:
+      - '+17404172867'
+      full_archive: true
+    - slug: mikaela-hinge-austin
+      handles:
+      - '+18087220595'
+      full_archive: true
+    - slug: avery-abraham-stanford-biotech-nyc
+      handles:
+      - '+19135445450'
+      full_archive: true
+    - slug: anika-hinge-austin
+      handles:
+      - '+18622162258'
+      full_archive: true
+    - slug: alex
+      handles:
+      - '+12155786361'
+      full_archive: true
+    - slug: mychal-kendricks-malik-crypto-nfl-producer-la
+      handles:
+      - '+15599166247'
+      full_archive: true
+    - slug: wes-cyphers-la
+      handles:
+      - '+16466325713'
+      full_archive: true
+    - slug: rene-hinge-austin
+      handles:
+      - '+15126667718'
+      full_archive: true
+    - slug: sheyla-renter-showing26
+      handles:
+      - '+18188566458'
+      full_archive: true
+    - slug: jaeden-podcast
+      handles:
+      - '+14802785850'
+      full_archive: true
+    - slug: emmy-hinge-sd
+      handles:
+      - '+14159198323'
+      full_archive: true
+    - slug: sanvi-sister
+      handles:
+      - '+16828029163'
+      full_archive: true
+    - slug: binni
+      handles:
+      - '+15175056849'
+      full_archive: true
+    - slug: hunter-uc-berkeley-sammys
+      handles:
+      - '+12133266233'
+      full_archive: true
+    - slug: aamir-khan-uc-berkeley
+      handles:
+      - '+14047477188'
+      full_archive: true
+    - slug: zach-johnson
+      handles:
+      - '+17602777885'
+      full_archive: true
+    - slug: mom
+      handles:
+      - '+15104499964'
+      full_archive: true
+    - slug: janice-hinge-austin
+      handles:
+      - '+15129682934'
+      full_archive: true
+    - slug: ryan-ut-austin
+      handles:
+      - '+17177047895'
+      full_archive: true
+    - slug: shreya-uc-berkeley
+      handles:
+      - '+14087683294'
+      full_archive: true
+    - slug: mike-uc-berkeley
+      handles:
+      - '+18587741253'
+      full_archive: true
+    - slug: sam-garcia
+      handles:
+      - '+15127696614'
+      full_archive: true
+    - slug: teresa-hinge-austin
+      handles:
+      - '+13013669193'
+      full_archive: true
+    - slug: faris-irys
+      handles:
+      - '+19739602267'
+      full_archive: true
+    - slug: sanjana-hinge-austin
+      handles:
+      - '+18324470092'
+      full_archive: true
+    - slug: parth-croft-austin
+      handles:
+      - '+15125458881'
+      full_archive: true
+    - slug: aurat
+      handles:
+      - '+18313206618'
+      full_archive: true
+    - slug: blake-williams
+      handles:
+      - '+13173089141'
+      full_archive: true
+    - slug: gabriella-hinge-austin
+      handles:
+      - '+17373859611'
+      full_archive: true
+    - slug: shubhan-dua-uc-berkeley
+      handles:
+      - '+13413338845'
+      full_archive: true
+    - slug: devna-hinge-austin
+      handles:
+      - '+14694278775'
+      full_archive: true
+    - slug: keith-varon
+      handles:
+      - '+19256838470'
+      full_archive: true
+    - slug: mitch-sammys-uc-berkeley
+      handles:
+      - '+14084443402'
+      full_archive: true
+    - slug: neema-amya
+      handles:
+      - '+17147677736'
+      full_archive: true
+    - slug: ayush-blockchain-uc-berkeley
+      handles:
+      - '+14088056878'
+      full_archive: true
+    - slug: dravin-raj-austin
+      handles:
+      - '+17372025302'
+      full_archive: true
+    - slug: sydney-renter-showing26
+      handles:
+      - '+19092448074'
+      full_archive: true
+    - slug: noah-bailie
+      handles:
+      - '+15128036395'
+      full_archive: true
+    - slug: sriya-hinge-austin
+      handles:
+      - '+15102749010'
+      full_archive: true
+    - slug: mod-yensuang-uc-berkeley
+      handles:
+      - '+15109449082'
+      full_archive: true
+    - slug: yolanda-hinge-austin
+      handles:
+      - '+17146312102'
+      full_archive: true
+    - slug: ryan-ogren
+      handles:
+      - '+16097051239'
+      full_archive: true
+    - slug: jeff-sei
+      handles:
+      - '+19259848679'
+      full_archive: true
+    - slug: caitlin
+      handles:
+      - '+12016213897'
+      full_archive: true
+    - slug: sharaf-zaman-ut-austin
+      handles:
+      - '+15127044707'
+      full_archive: true
+    - slug: decela-hinge-austin
+      handles:
+      - '+12547028526'
+      full_archive: true
+    - slug: sierra-hinge-austin
+      handles:
+      - '+15715654324'
+      full_archive: true
+    - slug: lolly-hinge-austin
+      handles:
+      - '+17376158284'
+      full_archive: true
+    - slug: skylar-hinge-sd
+      handles:
+      - '+19253317759'
+      full_archive: true
+    - slug: tess-hinge-sd
+      handles:
+      - '+19293205628'
+      full_archive: true
+    - slug: jae-shervin-blockchain-la
+      handles:
+      - '+12135514979'
+      full_archive: true
+    - slug: keona-hinge-austin
+      handles:
+      - '+15597449130'
+      full_archive: true
+    - slug: aditya-desai
+      handles:
+      - '+15127133343'
+      full_archive: true
+    - slug: nayely-hinge-sd
+      handles:
+      - '+12107090614'
+      full_archive: true
+    - slug: paul-renter-showing26
+      handles:
+      - '+17477455365'
+      full_archive: true
+    - slug: alan-renter-showing26
+      handles:
+      - '+19164323640'
+      full_archive: true
+    - slug: shervin-blockchain-uc-berkeley
+      handles:
+      - '+12813808018'
+      full_archive: true
+    - slug: bala-kumar
+      handles:
+      - '+15129647276'
+      full_archive: true
+    - slug: cleo-hinge-austin
+      handles:
+      - '+13852987869'
+      full_archive: true
+    - slug: lauren-hinge-austin
+      handles:
+      - '+17374652375'
+      full_archive: true
+    - slug: hugh-lau-uc-berkeley
+      handles:
+      - '+18588882863'
+      full_archive: true
+    - slug: chance-reeve-lasa
+      handles:
+      - '+15127697736'
+      full_archive: true
+    - slug: makaya-hinge-austin
+      handles:
+      - '+15125954229'
+      full_archive: true
+    - slug: presley-hinge-austin
+      handles:
+      - '+15125214828'
+      full_archive: true
+    - slug: sandeep-chinchali-austin
+      handles:
+      - '+14084554861'
+      full_archive: true
+    - slug: lena-hinge-austin
+      handles:
+      - '+17373005235'
+      full_archive: true
+    - slug: vihan-bhargava-uc-berkeley-nyc
+      handles:
+      - '+19259513773'
+      full_archive: true
+    - slug: akshara-hinge-austin
+      handles:
+      - '+15128651940'
+      full_archive: true
+    - slug: anjali-hinge-austin
+      handles:
+      - '+19793448369'
+      full_archive: true
+    - slug: leeci-hinge-austin
+      handles:
+      - '+17372188033'
+      full_archive: true
+    - slug: ana-hinge-austin
+      handles:
+      - '+13463700198'
+      full_archive: true
+    - slug: rahul-umapathy-usc-la
+      handles:
+      - '+12134317188'
+      full_archive: true
+    - slug: kelsey-renter-showing
+      handles:
+      - '+18126602078'
+      full_archive: true
+    - slug: celine-hinge-austin
+      handles:
+      - '+16122478523'
+      full_archive: true
+    - slug: junaid-rasool-lasa
+      handles:
+      - '+15128883350'
+      full_archive: true
+    - slug: munji-hinge-austin
+      handles:
+      - '+12105198074'
+      full_archive: true
+    - slug: amit-sundaram-lasa
+      handles:
+      - '+15129883058'
+      full_archive: true
+    - slug: ben-guitar-uc-berkeley
+      handles:
+      - '+12099966535'
+      full_archive: true
+    - slug: natalie-hinge-sd
+      handles:
+      - '+14087053104'
+      full_archive: true
+    - slug: manal-hinge-austin
+      handles:
+      - '+14694657672'
+      full_archive: true
+    - slug: siddarth-ganesan-uc-berkeley
+      handles:
+      - '+14088326173'
+      full_archive: true
+    - slug: saagarika-hinge-dallas
+      handles:
+      - '+19459003966'
+      full_archive: true
+    - slug: jaliah-hinge-austin
+      handles:
+      - '+18328988345'
+      full_archive: true
+    - slug: ananya-hinge-austin
+      handles:
+      - '+12624441568'
+      full_archive: true
+    - slug: john-renter-showing
+      handles:
+      - '+18185186184'
+      full_archive: true
+    - slug: anika-hinge-austin-4148
+      handles:
+      - '+14085954148'
+      full_archive: true
+    - slug: prabhat-nuthakki-uc-berkeley
+      handles:
+      - '+15103635546'
+      full_archive: true
+    - slug: shriya-hinge-indiana
+      handles:
+      - '+17655436847'
+      full_archive: true
+    - slug: yogitha-hinge-austin
+      handles:
+      - '+15104748250'
+      full_archive: true
+    - slug: miki-hinge-sd
+      handles:
+      - '+16507733171'
+      full_archive: true
+    - slug: jocelyn-hinge-austin
+      handles:
+      - '+19728043310'
+      full_archive: true
+    - slug: mehak-hinge-austin
+      handles:
+      - '+19722685020'
+      full_archive: true
+    - slug: jannat-hinge-austin
+      handles:
+      - '+19795956063'
+      full_archive: true
+    - slug: arthur-embry-lasa
+      handles:
+      - '+15128257586'
+      full_archive: true
+    - slug: sudhanva-athreya-sportssense
+      handles:
+      - '+14706425469'
+      full_archive: true
+    - slug: hannah-warner-uc-berkeley
+      handles:
+      - '+14086636371'
+      full_archive: true
+    - slug: cat-hinge-sd
+      handles:
+      - '+17753545924'
+      full_archive: true
+    - slug: danashi-uc-berkeley
+      handles:
+      - '+19166623494'
+      full_archive: true
+    - slug: riya-hinge-austin-nyc
+      handles:
+      - '+15126509827'
+      full_archive: true
+    - slug: nathan-prabhat-uc-berkeley
+      handles:
+      - '+19259227366'
+      full_archive: true
+    - slug: riya-hinge-dallas
+      handles:
+      - '+14695800401'
+      full_archive: true
+    - slug: shipransh-uc-berkeley
+      handles:
+      - '+13413339654'
+      full_archive: true
+    - slug: rohin-uc-berkeley
+      handles:
+      - '+18584420098'
+      full_archive: true
+    - slug: sid-sridhar-uc-berkeley
+      handles:
+      - '+19732293457'
+      full_archive: true
+    - slug: jesse-cruise-dirty-6th
+      handles:
+      - '+19165172698'
+      full_archive: true
+    - slug: jae-hinge-sd
+      handles:
+      - '+19569756228'
+      full_archive: true
+    - slug: miriah-hinge-sd
+      handles:
+      - '+14085175118'
+      full_archive: true
+    - slug: avik-ahuja-lasa
+      handles:
+      - '+15126901977'
+      full_archive: true
+    - slug: rohan-vaidya-uc-berkeley
+      handles:
+      - '+19259981053'
+      full_archive: true
+    - slug: karla-hinge-austin
+      handles:
+      - '+18702782262'
+      full_archive: true
+    - slug: angad-austin
+      handles:
+      - '+14698181386'
+      full_archive: true
+    - slug: aleena-hinge-austin
+      handles:
+      - '+18329930912'
+      full_archive: true
+    - slug: zaos-prabhat-uc-berkeley-la
+      handles:
+      - '+19256401543'
+      full_archive: true
+    - slug: taliyah-hinge-sd
+      handles:
+      - '+16692783645'
+      full_archive: true
+    - slug: adarsh-pinjala
+      handles:
+      - '+14088767840'
+      full_archive: true
+    - slug: shailee-hinge-dallas
+      handles:
+      - '+19047167373'
+      full_archive: true
+    - slug: aayush-uc-berkeley
+      handles:
+      - '+18327400771'
+      full_archive: true
+    - slug: adrian-roomate-uc-berkeley
+      handles:
+      - '+17606016124'
+      full_archive: true
+    - slug: michael-grimes-uc-berkeley
+      handles:
+      - '+16502350018'
+      full_archive: true
+    - slug: shreeya-hinge-sd
+      handles:
+      - '+16693008872'
+      full_archive: true
+    - slug: xanos-movednetwork
+      handles:
+      - '+16504409804'
+      full_archive: true
+    - slug: pseuhas-uc-berkeley-nyc
+      handles:
+      - '+14085150312'
+      full_archive: true
+    - slug: sabrina-hinge-dallas
+      handles:
+      - '+18177341880'
+      full_archive: true
+    - slug: sarah-chieng-austin
+      handles:
+      - '+15126290311'
+      full_archive: true
+    - slug: paige-hinge-sd
+      handles:
+      - '+19714197900'
+      full_archive: true
+    - slug: anusha-hinge-austin
+      handles:
+      - '+12817251960'
+      full_archive: true
+    - slug: maxi-lasa
+      handles:
+      - '+15124664080'
+      full_archive: true
+    - slug: adi-hinge-austin
+      handles:
+      - '+12817405613'
+      full_archive: true
+    - slug: desiree-hinge-austin
+      handles:
+      - '+14323608213'
+      full_archive: true
+    - slug: edwin-gregory-uc-berkeley
+      handles:
+      - '+12034341081'
+      full_archive: true
+    - slug: aisha-hinge-sd
+      handles:
+      - '+12096655989'
+      full_archive: true
+    - slug: zach-jesse-brother-cruise-austin
+      handles:
+      - '+19165190404'
+      full_archive: true
+    - slug: neha-hair-tie-uc-berkeley
+      handles:
+      - '+16692342121'
+      full_archive: true
+    - slug: naia-hinge-sd
+      handles:
+      - '+15103309136'
+      full_archive: true
+    - slug: jurnee-hinge-austin
+      handles:
+      - '+18063391197'
+      full_archive: true
+    - slug: riley-hernandez-uc-berkeley
+      handles:
+      - '+15595545667'
+      full_archive: true
+    - slug: aniruddh-mishra-austin
+      handles:
+      - aniruddhm17@gmail.com
+      full_archive: true
+    - slug: sai-guraijala-austin-casco
+      handles:
+      - '+17757204118'
+      full_archive: true
+    - slug: sabrina-hinge-austin
+      handles:
+      - '+18122199866'
+      full_archive: true
+    - slug: derek-zhu-uc-berkeley
+      handles:
+      - '+15107668956'
+      full_archive: true
+    - slug: munji-hinge-austin-8074
+      handles:
+      - "ourchatisgoingtoexpiretodaybuti\u2019dliketogettoknowyoubetter.wehavethesamepersonalhellhahabuti\u2019\
+        dlovetotalkabouthowwecanmakeourownheavenonearth\U0001F48Bnotreallyonsocialmedia:2105198074"
+      full_archive: true
+    - slug: savannah-hinge-austin
+      handles:
+      - '+12544219568'
+      full_archive: true
+    - slug: max-martin-lasa
+      handles:
+      - '+15126953928'
+      full_archive: true
+    - slug: ozzy-lasa
+      handles:
+      - oscaradillon@gmail.com
+      full_archive: true
+    - slug: varshika-hinge-dallas
+      handles:
+      - '+15129559091'
+      full_archive: true
+    - slug: aniruth-narayanan-uc-berkeley
+      handles:
+      - '+18137600693'
+      full_archive: true
+    - slug: mitchell-lasa
+      handles:
+      - '+15129543941'
+      full_archive: true
+    - slug: kavish-loomba-uc-berkeley
+      handles:
+      - '+17609839698'
+      full_archive: true
+    - slug: philip-liu-avax
+      handles:
+      - '+12066641503'
+      full_archive: true
+    - slug: sreya-hinge-austin
+      handles:
+      - '+12145517395'
+      full_archive: true
+    - slug: nathan-lasa
+      handles:
+      - '+15122021648'
+      full_archive: true
+    - slug: nathan-tran-uc-berkeley
+      handles:
+      - '+15105858399'
+      full_archive: true
+    - slug: ianna-hinge-austin
+      handles:
+      - '+13612220201'
+      full_archive: true
+    - slug: swathi-hinge-austin
+      handles:
+      - '+16304019881'
+      full_archive: true
+    - slug: harshini-hinge-austin
+      handles:
+      - '+15107378308'
+      full_archive: true
+    - slug: abhi-hinge-austin
+      handles:
+      - '+15128289369'
+      full_archive: true
+    - slug: nikhil-nagarajan-bay-area
+      handles:
+      - '+19258548437'
+      full_archive: true
+    - slug: adriana-hinge-austin
+      handles:
+      - '+14088321414'
+      full_archive: true
+    - slug: maanav-khaitan-uc-berkeley-nyc
+      handles:
+      - '+15108475711'
+      full_archive: true
+    - slug: adithya-kumar
+      handles:
+      - '+15126601911'
+      full_archive: true
+    - slug: trey-austin
+      handles:
+      - '+15126986556'
+      full_archive: true
+    - slug: dottie-hinge-austin
+      handles:
+      - '+12107123574'
+      full_archive: true
+    - slug: varun-nair-uc-berkeley
+      handles:
+      - '+15107174587'
+      full_archive: true
+    - slug: marc-porras-lasa
+      handles:
+      - '+15127402279'
+      full_archive: true
+    - slug: anita-hinge-austin
+      handles:
+      - '+12103551337'
+      full_archive: true
+    - slug: viraj-uc-berkeley
+      handles:
+      - '+971527984819'
+      full_archive: true
+    - slug: saniyya-hinge-austin
+      handles:
+      - '+19852852211'
+      full_archive: true
+    - slug: anisha-hinge-austin
+      handles:
+      - '+17039091846'
+      full_archive: true
+    - slug: samara-hinge-sd
+      handles:
+      - '+18312973138'
+      full_archive: true
+    - slug: anai-hinge-austin
+      handles:
+      - '+18178228867'
+      full_archive: true
+    - slug: will-avery-crypto
+      handles:
+      - '+18479024696'
+      full_archive: true
+    - slug: smriti-panchal-uc-berkeley
+      handles:
+      - '+18582753832'
+      full_archive: true
+    - slug: gabriela-hinge-sd
+      handles:
+      - '+16692785954'
+      full_archive: true
+    - slug: shiv-nagamandla
+      handles:
+      - '+19546819535'
+      full_archive: true
+    - slug: nivetha-hinge-sf
+      handles:
+      - '+14693951128'
+      full_archive: true
+    - slug: kirti-hinge-austin
+      handles:
+      - '+18323604300'
+      full_archive: true
+    - slug: shree-hinge-nyc
+      handles:
+      - '+19162807158'
+      full_archive: true
+    - slug: jj-hinge-austin
+      handles:
+      - '+17033577999'
+      full_archive: true
+    - slug: vani-hinge-austin
+      handles:
+      - '+15129833281'
+      full_archive: true
+    - slug: arya-hinge-la
+      handles:
+      - '+15106020499'
+      full_archive: true
+    - slug: mandira-hinge-austin
+      handles:
+      - '+14259740281'
+      full_archive: true
+    - slug: nara-renter-showing26
+      handles:
+      - '+12132000224'
+      full_archive: true
+    - slug: lex-hinge-la
+      handles:
+      - '+13024019256'
+      full_archive: true
+    - slug: ritu-hinge-dallas
+      handles:
+      - '+19363557763'
+      full_archive: true
+    - slug: yosef-producer-la
+      handles:
+      - '+18453007658'
+      full_archive: true
+    - slug: jayy-hinge-la
+      handles:
+      - '+19163465119'
+      full_archive: true
+    - slug: ava-hinge-austin
+      handles:
+      - '+16572501242'
+      full_archive: true
+    - slug: benti-hinge-la
+      handles:
+      - '+18182828722'
+      full_archive: true
+    - slug: rasam-hinge-la
+      handles:
+      - '+13015308843'
+      full_archive: true
+    - slug: dixie-hinge-austin
+      handles:
+      - '+15412501195'
+      full_archive: true
+    - slug: miya-hinge-austin
+      handles:
+      - '+15124170419'
+      full_archive: true
+    - slug: ishika-hinge-la
+      handles:
+      - '+14086804178'
+      full_archive: true
+    - slug: shante-hinge-austin
+      handles:
+      - '+18062414321'
+      full_archive: true
+    - slug: amos-music-crypto-la
+      handles:
+      - '+14754706627'
+      full_archive: true
+    - slug: mannah-hinge-austin
+      handles:
+      - '+19843639459'
+      full_archive: true
+    - slug: naomi-hinge-austin
+      handles:
+      - '+16266343738'
+      full_archive: true
+    - slug: prishaa-hinge-la
+      handles:
+      - '+12814105753'
+      full_archive: true
+    - slug: bella-tinder-la
+      handles:
+      - '+15127550532'
+      full_archive: true
+    - slug: areza-hinge-austin
+      handles:
+      - '+19729776000'
+      full_archive: true
+    - slug: memoria-xi-la
+      handles:
+      - '+13015028364'
+      full_archive: true
+    - slug: shahiya-hinge-la
+      handles:
+      - '+15625654365'
+      full_archive: true
+    - slug: dad
+      handles:
+      - '+15104499967'
+      full_archive: true
+    - slug: kelly-hinge-austin
+      handles:
+      - '+12109903761'
+      full_archive: true
+    - slug: zaara-hinge-la
+      handles:
+      - '+19253956963'
+      full_archive: true
+    - slug: sadhvi-hinge-la
+      handles:
+      - '+15623268777'
+      full_archive: true
+    - slug: neha-hinge-austin
+      handles:
+      - '+17372819515'
+      full_archive: true
+    - slug: graciela-hinge-austin
+      handles:
+      - '+17373594719'
+      full_archive: true
+    - slug: jada-hinge-la
+      handles:
+      - '+18175035864'
+      full_archive: true
+    - slug: bella-tinder-la-9157
+      handles:
+      - '+17013359157'
+      full_archive: true
+    - slug: huma-hinge-la
+      handles:
+      - '+18044990239'
+      full_archive: true
+    - slug: samhita-hinge-la
+      handles:
+      - '+12248294274'
+      full_archive: true
+    - slug: roxanne-hinge-la
+      handles:
+      - '+13237605527'
+      full_archive: true
+    - slug: parth-akshar-usc-nyc
+      handles:
+      - '+16692819606'
+      full_archive: true
+    - slug: mane-hinge-la
+      handles:
+      - '+18184413597'
+      full_archive: true
+    - slug: antara-hinge-la
+      handles:
+      - '+18328339413'
+      full_archive: true
+    - slug: justine-renter-showing26
+      handles:
+      - '+17145763847'
+      full_archive: true
+    - slug: shivani-hinge-la
+      handles:
+      - '+17142714332'
+      full_archive: true
+    - slug: angelica-hinge-la
+      handles:
+      - '+18186261480'
+      full_archive: true
+    - slug: audrey-hinge-la
+      handles:
+      - '+19712459380'
+      full_archive: true
+    - slug: mara-hinge-la
+      handles:
+      - '+17195020868'
+      full_archive: true
+    - slug: saif-ali-nyc
+      handles:
+      - '+17247999990'
+      full_archive: true
+    - slug: adithi-hinge-la
+      handles:
+      - '+19164621721'
+      full_archive: true
+    - slug: garima-hinge-la
+      handles:
+      - '+12138069119'
+      full_archive: true
+    - slug: diva-hinge-la
+      handles:
+      - '+18183100305'
+      full_archive: true
+    - slug: vanshika-hinge-la
+      handles:
+      - '+14252814747'
+      full_archive: true
+    - slug: divya-hinge-la
+      handles:
+      - '+19294069029'
+      full_archive: true
+    - slug: carolina-hinge-austin
+      handles:
+      - '+15126655900'
+      full_archive: true
+    - slug: tobi-hinge-austin
+      handles:
+      - '+12816924343'
+      full_archive: true
+    - slug: benti-hinge-la-8721
+      handles:
+      - '+18182828721'
+      full_archive: true
+    - slug: clair-hinge-austin
+      handles:
+      - '+19567087273'
+      full_archive: true
+    - slug: ana-hinge-la
+      handles:
+      - '+12135706925'
+      full_archive: true
+    - slug: kayla-hinge-dallas
+      handles:
+      - '+14698834136'
+      full_archive: true
+    - slug: sansita-hinge-la
+      handles:
+      - '+14244457736'
+      full_archive: true
+    - slug: arka-hinge-la
+      handles:
+      - '+19515086427'
+      full_archive: true
+    - slug: olivia-hinge-la
+      handles:
+      - '+18178975681'
+      full_archive: true
+    - slug: eesha-hinge-la
+      handles:
+      - '+19083133636'
+      full_archive: true
+    - slug: prachi-hinge-la
+      handles:
+      - '+15104918676'
+      full_archive: true
+    - slug: zach-mychal-kendricks-athletecoin
+      handles:
+      - '+16506194476'
+      full_archive: true
+    - slug: evan-renter
+      handles:
+      - '+18186877771'
+      full_archive: true
+    - slug: kira-tinder-la
+      handles:
+      - '+15106480201'
+      full_archive: true
+    - slug: ayushi-hinge-dallas
+      handles:
+      - '+13463071341'
+      full_archive: true
+    - slug: vaishnavi-hinge-nc
+      handles:
+      - '+17373464734'
+      full_archive: true
+    - slug: methvindi-hinge-la
+      handles:
+      - '+13236176148'
+      full_archive: true
+    - slug: palak-hinge-la
+      handles:
+      - '+17144891813'
+      full_archive: true
+    - slug: ash-renter-showing
+      handles:
+      - '+14089019210'
+      full_archive: true
+    - slug: esha-hinge-la
+      handles:
+      - '+13109185198'
+      full_archive: true
+    - slug: shevanti-hinge-la
+      handles:
+      - '+14084441226'
+      full_archive: true
+    - slug: elise-hinge-la
+      handles:
+      - '+17322453291'
+      full_archive: true
+    - slug: lupe-hinge-austin
+      handles:
+      - '+19034740503'
+      full_archive: true
+    - slug: taruni-hinge-dallas
+      handles:
+      - '+18048142257'
+      full_archive: true
+    - slug: ariana-hinge-la
+      handles:
+      - '+17626997012'
+      full_archive: true
+    - slug: nidhi-hinge-nyc
+      handles:
+      - '+19739087347'
+      full_archive: true
+    - slug: mansi-hinge-la
+      handles:
+      - '+12033215019'
+      full_archive: true
+    - slug: megan-hinge-sanantonio
+      handles:
+      - '+14079701293'
+      full_archive: true
+    - slug: miloni-hinge-austin
+      handles:
+      - '+15129948198'
+      full_archive: true
+    - slug: natasha-hinge-la
+      handles:
+      - '+16572227607'
+      full_archive: true
+    - slug: ananya-hinge-la
+      handles:
+      - '+19493099311'
+      full_archive: true
+    - slug: eldy-hinge-austin
+      handles:
+      - '+14693212564'
+      full_archive: true
+    - slug: gen-hinge-austin
+      handles:
+      - '+18323910436'
+      full_archive: true
+    - slug: kamryn-hinge-la
+      handles:
+      - '+16267201053'
+      full_archive: true
+    - slug: zenith-jahid
+      handles:
+      - '+15122297866'
+      full_archive: true
+    - slug: anna-tinder-la
+      handles:
+      - '+19512169482'
+      full_archive: true
+    - slug: alejandra-tinder-la
+      handles:
+      - '+13236725780'
+      full_archive: true
+    - slug: linzie-hinge-la
+      handles:
+      - '+12093529345'
+      full_archive: true
+    - slug: riddhi-hinge-austin
+      handles:
+      - '+15124009808'
+      full_archive: true
+    - slug: kaiya-hinge-la
+      handles:
+      - '+19099912949'
+      full_archive: true
+    - slug: abby-hinge-dallas
+      handles:
+      - '+18062283959'
+      full_archive: true
+    - slug: shree-hinge-la
+      handles:
+      - '+14697346339'
+      full_archive: true
+    - slug: ngoc-hinge-austin
+      handles:
+      - '+17752210759'
+      full_archive: true
+    - slug: armiyah-hinge-la
+      handles:
+      - '+18136477978'
+      full_archive: true
+    - slug: laila-hinge-austin
+      handles:
+      - '+18328449165'
+      full_archive: true
+    - slug: shreya-hinge-austin
+      handles:
+      - '+16038814884'
+      full_archive: true
+    - slug: sonia-hinge-la
+      handles:
+      - '+16614328775'
+      full_archive: true
+    - slug: morgan-hinge-houston
+      handles:
+      - '+18326750583'
+      full_archive: true
+    - slug: prisha-hinge-nyc
+      handles:
+      - '+19299300927'
+      full_archive: true
+    - slug: farzana-hinge-la
+      handles:
+      - '+14242365693'
+      full_archive: true
+    - slug: aashna-hinge-la
+      handles:
+      - '+18184422869'
+      full_archive: true
+    - slug: kushi-hinge-philly
+      handles:
+      - '+19453587166'
+      full_archive: true
+    - slug: khushi-hinge-la
+      handles:
+      - '+12146038487'
+      full_archive: true
+    - slug: melody-hinge-la
+      handles:
+      - '+13236793584'
+      full_archive: true
+    - slug: aarti-dad
+      handles:
+      - '+17609726234'
+      full_archive: true
+    - slug: stark-zhang-onesphere
+      handles:
+      - '+19493971862'
+      full_archive: true
+    - slug: hazel-hinge-austin
+      handles:
+      - '+14694409761'
+      full_archive: true
+    - slug: ash-hinge-la
+      handles:
+      - '+17147206772'
+      full_archive: true
+    - slug: yvette-renter-showing
+      handles:
+      - '+18186210638'
+      full_archive: true
+    - slug: steve-renter-showing
+      handles:
+      - '+18186214864'
+      full_archive: true
+    - slug: mykala-hinge-austin
+      handles:
+      - '+12546305967'
+      full_archive: true
+    - slug: kirti-hinge-austin-2682
+      handles:
+      - '+15126532682'
+      full_archive: true
+    - slug: lorenzo-mom
+      handles:
+      - '+13232512924'
+      full_archive: true
+    - slug: shervin-crypto-recruiter
+      handles:
+      - '+17172195423'
+      full_archive: true
+    - slug: ria-hinge-la
+      handles:
+      - '+13023326258'
+      full_archive: true
+    - slug: riya-nyc
+      handles:
+      - '+14088875180'
+      full_archive: true
+    - slug: divya-hinge-austin
+      handles:
+      - '+12106204098'
+      full_archive: true
+    - slug: marc-e-crypto-james-la
+      handles:
+      - '+12139528774'
+      full_archive: true
+    - slug: vanshika-hinge-nyc
+      handles:
+      - '+17328090191'
+      full_archive: true
+    - slug: amadeus-renter
+      handles:
+      - '+14243547387'
+      full_archive: true
+    - slug: evan-layer
+      handles:
+      - '+15038631866'
+      full_archive: true
+    - slug: daniela-hinge-chicago
+      handles:
+      - '+13125368451'
+      full_archive: true
+    - slug: stacey-brandon
+      handles:
+      - '+13104353309'
+      full_archive: true
+    - slug: akhila-hinge-nyc
+      handles:
+      - '+16307314352'
+      full_archive: true
+    - slug: bryan-renter-showing
+      handles:
+      - '+13233620575'
+      full_archive: true
+    - slug: trisha-hinge-alabama
+      handles:
+      - '+12052611661'
+      full_archive: true
+    - slug: anika-hinge-austin-0555
+      handles:
+      - '+14696730555'
+      full_archive: true
+    - slug: pali-hinge-la
+      handles:
+      - '+16692148800'
+      full_archive: true
+    - slug: addi-hinge-dallas
+      handles:
+      - '+15129021372'
+      full_archive: true
+    - slug: ziggy-renter-showing
+      handles:
+      - '+13237624134'
+      full_archive: true
+    - slug: divya-hinge-austin-4098
+      handles:
+      - '+12206204098'
+      full_archive: true
+    - slug: audrey-hinge-la-2366
+      handles:
+      - '+17473332366'
+      full_archive: true
+    - slug: carla-hinge-austin
+      handles:
+      - '+19893355207'
+      full_archive: true
+    - slug: arya-kumar
+      handles:
+      - '+17372262287'
+      full_archive: true
+    - slug: anna-hinge-lasvegas
+      handles:
+      - '+17029136554'
+      full_archive: true
+    - slug: gayathri-hinge-dallas
+      handles:
+      - '+19794531099'
+      full_archive: true
+    - slug: ishika-hinge-la-7597
+      handles:
+      - '+15712467597'
+      full_archive: true
+    - slug: jason-renter-showing
+      handles:
+      - '+18184824680'
+      full_archive: true
+    - slug: karthika-hinge-la
+      handles:
+      - '+19169961766'
+      full_archive: true
+    - slug: jason-renter-showing-2293
+      handles:
+      - '+13102002293'
+      full_archive: true
+    - slug: vera-hinge-la
+      handles:
+      - '+16619036552'
+      full_archive: true
+    - slug: griffin-noah-roomate
+      handles:
+      - '+15128002447'
+      full_archive: true
+    - slug: taylor-hinge-la
+      handles:
+      - '+13108834081'
+      full_archive: true
+    - slug: niyati-hinge-austin
+      handles:
+      - '+15124207058'
+      full_archive: true
+    - slug: yoshiro-ucla
+      handles:
+      - '+14423852787'
+      full_archive: true
+    - slug: anisha-hinge-la
+      handles:
+      - '+19498129268'
+      full_archive: true
+    - slug: sanjana-hinge-philly
+      handles:
+      - '+12673373567'
+      full_archive: true
+    - slug: roshni-hinge-la
+      handles:
+      - '+18592296716'
+      full_archive: true
+    - slug: dimpal-aarti
+      handles:
+      - '+13235992166'
+      full_archive: true
+    - slug: ankur-uncle
+      handles:
+      - '+14084258686'
+      full_archive: true
+    - slug: zubair-renter-showing
+      handles:
+      - '+12138005007'
+      full_archive: true
+    - slug: kyle-renter-showing
+      handles:
+      - '+12602003660'
+      full_archive: true
+    - slug: kyara-renter-showing
+      handles:
+      - '+17472941811'
+      full_archive: true
+    - slug: mary-tinder-la
+      handles:
+      - '+13142294773'
+      full_archive: true
+    - slug: adamaris-renter-showing26
+      handles:
+      - '+18183071715'
+      full_archive: true
+    - slug: elin-hinge-philly
+      handles:
+      - '+14844773979'
+      full_archive: true
+    - slug: geno-catalano-la
+      handles:
+      - '+13042819947'
+      full_archive: true
+    - slug: smera-hinge-la
+      handles:
+      - '+16099204138'
+      full_archive: true
+    - slug: shruthi-hinge-dallas
+      handles:
+      - '+14696396901'
+      full_archive: true
+    - slug: samya-hinge-philly
+      handles:
+      - '+12247646087'
+      full_archive: true
+    - slug: arielle-hinge-la
+      handles:
+      - '+15098311791'
+      full_archive: true
+    - slug: aaniyah-hinge-sanantonio
+      handles:
+      - '+18324416927'
+      full_archive: true
+    - slug: divya-hinge-dallas
+      handles:
+      - '+14693436423'
+      full_archive: true
+    - slug: bela-mcscoggin-lasa-austin
+      handles:
+      - '+17373423410'
+      full_archive: true
+    - slug: eli-rentermanager-showing26
+      handles:
+      - '+18184392537'
+      full_archive: true
+    - slug: anju-hinge-dallas
+      handles:
+      - '+19723639138'
+      full_archive: true
+    - slug: sakshi-nyc
+      handles:
+      - '+18562853260'
+      full_archive: true
+    - slug: lewis-renter-showing26
+      handles:
+      - '+16613629260'
+      full_archive: true
+    - slug: ashley-renter-showing
+      handles:
+      - '+18184421722'
+      full_archive: true
+    - slug: kyara-renter-showing-7457
+      handles:
+      - '+18188187457'
+      full_archive: true
+    - slug: pseuwin-crypto
+      handles:
+      - '+19253229443'
+      full_archive: true
+    - slug: jack-renter-showing26
+      handles:
+      - '+18185785340'
+      full_archive: true
+    - slug: anabhra-hinge-la
+      handles:
+      - '+19095065057'
+      full_archive: true
+    - slug: riddhi-hinge-austin-9500
+      handles:
+      - '+14696429500'
+      full_archive: true
+    - slug: ankita-hinge-nyc
+      handles:
+      - '+14086366799'
+      full_archive: true
+    - slug: noah-bailie-2
+      handles:
+      - nebailie@gmail.com
+      full_archive: true
+    - slug: nikki-hinge-dallas
+      handles:
+      - '+18326126747'
+      full_archive: true
+    - slug: megann-hinge-la
+      handles:
+      - '+19167046229'
+      full_archive: true
+    - slug: brandon-co-beats-la
+      handles:
+      - '+13108903369'
+      full_archive: true
+    - slug: nira-hinge-nyc
+      handles:
+      - '+15164747827'
+      full_archive: true
+    - slug: sidhant-renter-showing26
+      handles:
+      - '+17074956331'
+      full_archive: true
+    - slug: arlene-hinge-la
+      handles:
+      - '+16612047623'
+      full_archive: true
+    - slug: shravani-nyc
+      handles:
+      - '+18607682575'
+      full_archive: true
+    - slug: kara-hinge-dallas
+      handles:
+      - '+15126365560'
+      full_archive: true
+    - slug: janet-hinge-austin
+      handles:
+      - '+17372303236'
+      full_archive: true
+    - slug: saadhvi-hinge-la
+      handles:
+      - '+19145368878'
+      full_archive: true
+    - slug: rushu-hinge-dallas
+      handles:
+      - '+14697421004'
+      full_archive: true
+    - slug: shiva-austin
+      handles:
+      - '+15129648652'
+      full_archive: true
+    - slug: samuel-renter-showing
+      handles:
+      - '+18182711226'
+      full_archive: true
+    - slug: raz-evan-inspector-friend
+      handles:
+      - '+16263468877'
+      full_archive: true
+    - slug: shefali-hinge-la
+      handles:
+      - '+14257851175'
+      full_archive: true
+    - slug: ashley-hinge-austin
+      handles:
+      - '+19562203725'
+      full_archive: true
+    - slug: tanisha-hinge-austin
+      handles:
+      - '+19254003105'
+      full_archive: true
+    - slug: kam-shinecapital
+      handles:
+      - '+17144741613'
+      full_archive: true
+    - slug: zoya-hinge-la
+      handles:
+      - '+14257771960'
+      full_archive: true
+    - slug: ranjana-tinder-la
+      handles:
+      - '+16693458641'
+      full_archive: true
+    - slug: amru-hinge-dallas
+      handles:
+      - '+14693899335'
+      full_archive: true
+    - slug: darshit-renter-showing
+      handles:
+      - '+12134775452'
+      full_archive: true
+    - slug: sree-hinge-nyc
+      handles:
+      - '+12015087091'
+      full_archive: true
+    - slug: jt-huskins-crypto-la
+      handles:
+      - '+14153028077'
+      full_archive: true
+    - slug: moonee-tinder-la
+      handles:
+      - '+18058625935'
+      full_archive: true
+    - slug: sasoon-insurance
+      handles:
+      - '+18182680081'
+      full_archive: true
+    - slug: brandon-guo-uc-berkeley
+      handles:
+      - '+13036194539'
+      full_archive: true
+    - slug: keena-renter-showing
+      handles:
+      - '+19196757009'
+      full_archive: true
+    - slug: neha-hinge-la
+      handles:
+      - '+14254425900'
+      full_archive: true
+    - slug: jose-renter-showing
+      handles:
+      - '+18186267129'
+      full_archive: true
+    - slug: tanisha-hinge-la
+      handles:
+      - '+14752361156'
+      full_archive: true
+    - slug: ryan-hinge-la
+      handles:
+      - '+15626187307'
+      full_archive: true
+    - slug: mo-snaps-uc-berkeley
+      handles:
+      - '+19178554934'
+      full_archive: true
+    - slug: austin-davis-renter-showing
+      handles:
+      - '+13103673816'
+      full_archive: true
+    - slug: varun-houston
+      handles:
+      - '+14698431198'
+      full_archive: true
+    - slug: ram-routerprotocol
+      handles:
+      - '+918800684331'
+      full_archive: true
+    - slug: tyler-sheppard-la
+      handles:
+      - '+12399199597'
+      full_archive: true
+    - slug: trevor
+      handles:
+      - '+15127430323'
+      full_archive: true
+    - slug: luke-whitney-ucla-globalization-la
+      handles:
+      - '+17146162454'
+      full_archive: true
+    - slug: ladi-saka-merch-tech
+      handles:
+      - '+18186409881'
+      full_archive: true
+    - slug: jamal-nyc
+      handles:
+      - '+13474911196'
+      full_archive: true
+    - slug: peter-usa-plumbing
+      handles:
+      - '+16265888604'
+      full_archive: true
+    - slug: nishka-nova
+      handles:
+      - '+14699687649'
+      full_archive: true
+    - slug: brian-correll-music
+      handles:
+      - '+15408453152'
+      full_archive: true
+    - slug: maria-maintanence
+      handles:
+      - '+18188188204'
+      full_archive: true
+    - slug: bryce-yeazell-la
+      handles:
+      - '+15123546619'
+      full_archive: true
+    - slug: christine-bailie
+      handles:
+      - '+15127739851'
+      full_archive: true
+    - slug: smayan-uc-berkeley
+      handles:
+      - '+19047287797'
+      full_archive: true
+    - slug: abraham-crypto-lightnodeventures-la
+      handles:
+      - '+16315991922'
+      full_archive: true
+    - slug: larry-lawyer-la
+      handles:
+      - '+12013158687'
+      full_archive: true
+    - slug: homepad
+      handles:
+      - kumarhouseipad@icloud.com
+      full_archive: true
+    - slug: chaitanya
+      handles:
+      - '+15124687042'
+      full_archive: true
+    - slug: ankur-uc-berkeley
+      handles:
+      - '+18186023397'
+      full_archive: true
+    - slug: groove-chambers-la
+      handles:
+      - '+17707899277'
+      full_archive: true
+    - slug: deven-matthews-blockchain-berkeley
+      handles:
+      - '+13102271435'
+      full_archive: true
+    - slug: arvind-rajaraman-uc-berkeley
+      handles:
+      - '+17323972736'
+      full_archive: true
+    - slug: dr-satasivan
+      handles:
+      - '+15127319278'
+      full_archive: true
+    - slug: gio-octane
+      handles:
+      - '+13106250774'
+      full_archive: true
+    - slug: akshar-usc-nyc
+      handles:
+      - '+19256210295'
+      full_archive: true
+    - slug: louie-gomez-tyler-producer-la
+      handles:
+      - '+15625727824'
+      full_archive: true
+    - slug: patrick-lasa-austin
+      handles:
+      - '+15128650555'
+      full_archive: true
+    - slug: shanks-producer-la
+      handles:
+      - '+13109626916'
+      full_archive: true
+    - slug: extendo
+      handles:
+      - '+17604025621'
+      full_archive: true
+    - slug: michael-apan
+      handles:
+      - '+16195133367'
+      full_archive: true
+    - slug: harold
+      handles:
+      - '+14696886007'
+      full_archive: true
+    - slug: angel-renter-showing
+      handles:
+      - '+18184710605'
+      full_archive: true
+    - slug: mom-2
+      handles:
+      - ambal_d2d@yahoo.com
+      full_archive: true
+    - slug: maansi-nova
+      handles:
+      - '+14694861252'
+      full_archive: true
+    - slug: sai-om-uncle-antimetal-nyc
+      handles:
+      - '+15185776996'
+      full_archive: true
+    - slug: akash-the-house-fund-uc-berkeley
+      handles:
+      - '+18189838398'
+      full_archive: true
+    - slug: malhaar-nova
+      handles:
+      - '+12149187459'
+      full_archive: true
+    - slug: andy-alajuani
+      handles:
+      - '+14087028739'
+      full_archive: true
+    - slug: aggy-akshar-prabhat-usc-san-ramon
+      handles:
+      - '+19253441012'
+      full_archive: true
+    - slug: michelle-allen-all-state
+      handles:
+      - '+19365602462'
+      full_archive: true
+    - slug: devang-uc-berkeley
+      handles:
+      - '+15104231361'
+      full_archive: true
+    - slug: cam-ryan-producer-la
+      handles:
+      - '+13104294232'
+      full_archive: true
+    - slug: donny-producer-la
+      handles:
+      - '+14134548846'
+      full_archive: true
+    - slug: peter-fenn-la
+      handles:
+      - '+17607022136'
+      full_archive: true
+    - slug: nora-renter-showing
+      handles:
+      - '+18189327867'
+      full_archive: true
+    - slug: sahil-dutta-producer-la
+      handles:
+      - '+14042859315'
+      full_archive: true
+    - slug: chase-sherman
+      handles:
+      - '+13107757605'
+      full_archive: true
+    - slug: parth-lasa
+      handles:
+      - parthmshroff@gmail.com
+      full_archive: true
+    - slug: gigi-renter-showing
+      handles:
+      - '+16575491230'
+      full_archive: true
+    - slug: ryan-silver-lining-la
+      handles:
+      - '+16235127644'
+      full_archive: true
+    - slug: shasta-subramaniam-union-city-la
+      handles:
+      - '+19254136887'
+      full_archive: true
+    - slug: nandini-aunty-bay-area-california
+      handles:
+      - '+15103644695'
+      full_archive: true
+    - slug: rema-hariharan-aunty-austin
+      handles:
+      - '+15124266532'
+      full_archive: true
+    - slug: chandler-spacex-uc-berkeley
+      handles:
+      - '+16505334214'
+      full_archive: true
+    - slug: karthik-dallas
+      handles:
+      - '+15129022093'
+      full_archive: true
+    - slug: riz-zobayer-renter-showing
+      handles:
+      - '+12133095691'
+      full_archive: true
+    - slug: perla-renter-showing
+      handles:
+      - '+18184938375'
+      full_archive: true
+    - slug: emir-karabeg-uc-berkeley
+      handles:
+      - '+17144255363'
+      full_archive: true
+    - slug: richard-lda-crypto
+      handles:
+      - '+16197481546'
+      full_archive: true
+    - slug: pari-uncle
+      handles:
+      - '+15129699918'
+      full_archive: true
+    - slug: ralph-renter-showing
+      handles:
+      - '+15593625658'
+      full_archive: true
+    - slug: fakhri-widodo-uc-berkeley
+      handles:
+      - '+15125212724'
+      full_archive: true
+    - slug: rhea-prescription-la
+      handles:
+      - '+12483462325'
+      full_archive: true
+    - slug: cole-jollymarket
+      handles:
+      - '+19515959452'
+      full_archive: true
+    - slug: varshni-nyc
+      handles:
+      - '+14435384524'
+      full_archive: true
+    - slug: carlos-mychal-kendrick-nyc-mets
+      handles:
+      - '+17326901810'
+      full_archive: true
+    - slug: mom-9964
+      handles:
+      - "\u200E+1 (510) 449-9964"
+      full_archive: true
+    - slug: lance-pitch-songwriting-la
+      handles:
+      - '+12532274910'
+      full_archive: true
+    - slug: ballr-hallr-la
+      handles:
+      - '+17605673852'
+      full_archive: true
+    - slug: andrew-yu-launchx
+      handles:
+      - '+19362060739'
+      full_archive: true
+    - slug: shruti-nyc
+      handles:
+      - '+17328502346'
+      full_archive: true
+    - slug: rad-nfvnetwork
+      handles:
+      - '+14696698878'
+      full_archive: true
+    - slug: ace-brooklyn-crypto-meetup
+      handles:
+      - '+19295499499'
+      full_archive: true
+    - slug: andy-blockchain-uc-berkeley
+      handles:
+      - '+18083789287'
+      full_archive: true
+    - slug: ajay-crypto
+      handles:
+      - '+13107961111'
+      full_archive: true
+    - slug: alec-pi-kapp-uc-berkeley
+      handles:
+      - smartalecalec@icloud.com
+      full_archive: true
+    - slug: david-bloom-the-house-fund
+      handles:
+      - '+19168445008'
+      full_archive: true
+    - slug: jean-parker-producer-la
+      handles:
+      - '+16318358665'
+      full_archive: true
+    - slug: vitals-producer-la
+      handles:
+      - '+16509182312'
+      full_archive: true
+    - slug: jason-gregory
+      handles:
+      - '+13233635294'
+      full_archive: true
+    - slug: john-renter-showing-6184
+      handles:
+      - "\u200E+1 (818) 518-6184"
+      full_archive: true
+    - slug: veer-stylist-la
+      handles:
+      - '+13108769131'
+      full_archive: true
+    - slug: sabaa-nyc
+      handles:
+      - '+13168801264'
+      full_archive: true
+    - slug: isiri-nyc
+      handles:
+      - '+13128382971'
+      full_archive: true
+    - slug: neil-towari-uc-berkeley
+      handles:
+      - '+16465737514'
+      full_archive: true
+    - slug: kamali-nyc
+      handles:
+      - '+18482608407'
+      full_archive: true
+    - slug: randy-mychal-kendricks-nyc
+      handles:
+      - '+16266232946'
+      full_archive: true
+    - slug: anuka-nyc
+      handles:
+      - '+17812409532'
+      full_archive: true
+    - slug: monika-nyc
+      handles:
+      - monikavarma2303@gmail.com
+      full_archive: true
+    - slug: jayani-hinge-austin
+      handles:
+      - '+19037221878'
+      full_archive: true
+    - slug: clint-gibbs-la
+      handles:
+      - '+17025921842'
+      full_archive: true
+    - slug: neek-la
+      handles:
+      - '+13042809449'
+      full_archive: true
+    - slug: arya-nyc
+      handles:
+      - '+16317101761'
+      full_archive: true
+    - slug: diya-nyc
+      handles:
+      - '+15169726302'
+      full_archive: true
+    - slug: radhika-nyc
+      handles:
+      - '+18476243223'
+      full_archive: true
+    - slug: sayli-nyc
+      handles:
+      - '+19088680802'
+      full_archive: true
+    - slug: gurleen-nyc
+      handles:
+      - '+19168967986'
+      full_archive: true
+    - slug: kareem-koujah-uc-berkeley
+      handles:
+      - '+17142273538'
+      full_archive: true
+    - slug: nikitha-nyc
+      handles:
+      - '+17743295351'
+      full_archive: true
+    - slug: jxne-artist-la
+      handles:
+      - '+13478330214'
+      full_archive: true
+    - slug: shriya-nyc
+      handles:
+      - '+12017745280'
+      full_archive: true
+    - slug: divyesh-khatri-uc-berkeley
+      handles:
+      - '+18328538990'
+      full_archive: true
+    - slug: rhea-nyc
+      handles:
+      - '+12039186218'
+      full_archive: true
+    - slug: b-ham-la
+      handles:
+      - '+17579456736'
+      full_archive: true
+    - slug: dheeraj-arrow-nyc
+      handles:
+      - '+16072626780'
+      full_archive: true
+    - slug: abhi-nyc
+      handles:
+      - '+17324916987'
+      full_archive: true
+    - slug: yoshi-nyc
+      handles:
+      - '+19739809145'
+      full_archive: true
+    - slug: prateeksha-nyc
+      handles:
+      - '+19089622301'
+      full_archive: true
+    - slug: khushi-nyc
+      handles:
+      - '+19512357217'
+      full_archive: true
+    - slug: kenny-hair-of-the-dog-nyc-austin
+      handles:
+      - '+16465327363'
+      full_archive: true
+    - slug: shakthi-nyc
+      handles:
+      - '+17328127418'
+      full_archive: true
+    - slug: jersey-jetski
+      handles:
+      - '+17322018266'
+      full_archive: true
+    - slug: jayna-hinge-austin
+      handles:
+      - '+12103639254'
+      full_archive: true
+    - slug: dr-luke-prescription-la
+      handles:
+      - '+19176222340'
+      full_archive: true
+    - slug: farbin-nyc
+      handles:
+      - '+19293699840'
+      full_archive: true
+    - slug: rio-root-la
+      handles:
+      - '+15109100925'
+      full_archive: true
+    - slug: abhi-usc-akshar-la
+      handles:
+      - '+13129982713'
+      full_archive: true
+    - slug: anagha-nyc
+      handles:
+      - '+17323190824'
+      full_archive: true
+    - slug: akshara-nyc
+      handles:
+      - '+19086701615'
+      full_archive: true
+    - slug: misha-nyc
+      handles:
+      - '+12019254482'
+      full_archive: true
+    - slug: dhanvi-nyc
+      handles:
+      - '+19173408700'
+      full_archive: true
+    - slug: vina-nyc
+      handles:
+      - '+16617473071'
+      full_archive: true
+    - slug: rashmi-hinge-nyc
+      handles:
+      - '+17039437056'
+      full_archive: true
+    - slug: ankit-uc-berkeley
+      handles:
+      - '+19179407854'
+      full_archive: true
+    - slug: bilal-akshar-usc-nyc
+      handles:
+      - '+14434228290'
+      full_archive: true
+    - slug: aneesha-nyc
+      handles:
+      - '+19144683871'
+      full_archive: true
+    - slug: bhavana-hinge-dallas
+      handles:
+      - '+15126186355'
+      full_archive: true
+    - slug: amulya-nyc
+      handles:
+      - '+17329979670'
+      full_archive: true
+    - slug: james-carr-engineer-vellese-la
+      handles:
+      - '+13057537471'
+      full_archive: true
+    - slug: sahithi-nyc
+      handles:
+      - '+17034241782'
+      full_archive: true
+    - slug: matthew-lorber-lasa
+      handles:
+      - '+18185854946'
+      full_archive: true
+    - slug: amritha-nyc
+      handles:
+      - '+17326668792'
+      full_archive: true
+    - slug: neha-nyc
+      handles:
+      - '+14842017100'
+      full_archive: true
+    - slug: gayathri-hinge-dallas-2063
+      handles:
+      - '+15125772063'
+      full_archive: true
+    - slug: tejes-srinivasan-nyc
+      handles:
+      - '+15109319559'
+      full_archive: true
+    - slug: athira-nyc
+      handles:
+      - '+16099034975'
+      full_archive: true
+    - slug: will-slatton-nyc
+      handles:
+      - '+17378881579'
+      full_archive: true
+    - slug: jugg-artist-la
+      handles:
+      - '+16465127741'
+      full_archive: true
+    - slug: propita-nyc
+      handles:
+      - '+19297612392'
+      full_archive: true
+    - slug: rashmi-nyc
+      handles:
+      - '+16089824437'
+      full_archive: true
+    - slug: nikki-hinge-nyc
+      handles:
+      - '+17323518507'
+      full_archive: true
+    - slug: sam-mcgrath-la
+      handles:
+      - '+17742653259'
+      full_archive: true
+    - slug: ashank-parikh-uc-berkeley
+      handles:
+      - '+14088367840'
+      full_archive: true
+    - slug: aditi-nyc
+      handles:
+      - '+16788147860'
+      full_archive: true
+    - slug: ruchi-nyc
+      handles:
+      - '+17324707442'
+      full_archive: true
+    - slug: shruthi-nyc
+      handles:
+      - '+19842692022'
+      full_archive: true
+    - slug: ronit-uc-berkeley
+      handles:
+      - '+15107178577'
+      full_archive: true
+    - slug: steven-uncle-nyc
+      handles:
+      - '+12123658833'
+      full_archive: true
+    - slug: eccha-hinge-austin
+      handles:
+      - '+15128381676'
+      full_archive: true
+    - slug: mo-nyc
+      handles:
+      - '+19193444816'
+      full_archive: true
+    - slug: ishita-hinge-nyc
+      handles:
+      - '+18482472893'
+      full_archive: true
+    - slug: reyshme-aunty-austin
+      handles:
+      - '+18034743337'
+      full_archive: true
+    - slug: ananya-nyc
+      handles:
+      - '+14085695367'
+      full_archive: true
+    - slug: michael-v-silver-lining-la
+      handles:
+      - '+16232174534'
+      full_archive: true
+    - slug: amisha-nyc
+      handles:
+      - '+19734627146'
+      full_archive: true
+    - slug: simon-hinge-austin
+      handles:
+      - '+16822666837'
+      full_archive: true
+    - slug: shreya-hinge-austin-4354
+      handles:
+      - '+19452414354'
+      full_archive: true
+    - slug: abi-anna
+      handles:
+      - '+15129654222'
+      full_archive: true
+    - slug: jeanetta-renter-showing
+      handles:
+      - '+18187204114'
+      full_archive: true
+    - slug: erik-rushil-nyc
+      handles:
+      - '+12038585916'
+      full_archive: true
+    - slug: geshna-philly
+      handles:
+      - '+14258777380'
+      full_archive: true
+    - slug: malik-ninety-five-producer-la
+      handles:
+      - '+15049208346'
+      full_archive: true
+    - slug: anusha-hinge-austin-5817
+      handles:
+      - '+18478345817'
+      full_archive: true
+    - slug: yash-purohit-uc-berkeley
+      handles:
+      - '+13463801896'
+      full_archive: true
+    - slug: jj-nyc
+      handles:
+      - '+16468308833'
+      full_archive: true
+    - slug: ritvik-coke-scholars
+      handles:
+      - '+14849831532'
+      full_archive: true
+    - slug: riya23-hinge-austin
+      handles:
+      - '+15128888201'
+      full_archive: true
+    - slug: khushi-hinge-austin
+      handles:
+      - '+15125252721'
+      full_archive: true
+    - slug: anisha-hinge-dallas
+      handles:
+      - '+16509605280'
+      full_archive: true
+    - slug: older-tamil-bro-nyc
+      handles:
+      - '+19179403998'
+      full_archive: true
+    - slug: isha-nyc
+      handles:
+      - '+16105137125'
+      full_archive: true
+    - slug: tisha-hinge-austin
+      handles:
+      - '+14792248041'
+      full_archive: true
+    - slug: aisha-hinge-austin
+      handles:
+      - '+18177712756'
+      full_archive: true
+    - slug: vishnu-rajan-austin
+      handles:
+      - '+15129133272'
+      full_archive: true
+    - slug: veronica-nyc
+      handles:
+      - '+18457910192'
+      full_archive: true
+    - slug: sahiba-nyc
+      handles:
+      - '+14253007353'
+      full_archive: true
+    - slug: urmi-hinge-dallas
+      handles:
+      - '+12813893663'
+      full_archive: true
+    - slug: sanaya-hinge-dallas
+      handles:
+      - '+12142508079'
+      full_archive: true
+    - slug: kevin-bai-sf
+      handles:
+      - '+13108670973'
+      full_archive: true
+    - slug: joy-dallas
+      handles:
+      - '+19403011377'
+      full_archive: true
+    - slug: neil-nick-finalitycapital-nyc
+      handles:
+      - '+17039462243'
+      full_archive: true
+    - slug: shivani-hinge-austin
+      handles:
+      - '+13468180031'
+      full_archive: true
+    - slug: risheek-sammys-uc-berkeley-nyc
+      handles:
+      - '+16092505308'
+      full_archive: true
+    - slug: juliette-hinge-austin
+      handles:
+      - '+15126653889'
+      full_archive: true
+    - slug: omar-waseem
+      handles:
+      - '+14086600998'
+      full_archive: true
+    - slug: jaylem-brar-uc-berkeley-nyc
+      handles:
+      - '+13109038966'
+      full_archive: true
+    - slug: david-layer
+      handles:
+      - '+14082042411'
+      full_archive: true
+    - slug: balu-sukanya-aunty-austin
+      handles:
+      - '+16502422860'
+      full_archive: true
+    - slug: raunak-hinge-austin
+      handles:
+      - '+12022884007'
+      full_archive: true
+    - slug: riyanorth-nyc
+      handles:
+      - '+16463848298'
+      full_archive: true
+    - slug: score-beats-producer-nyc
+      handles:
+      - '+16316976626'
+      full_archive: true
+    - slug: savitha-hinge-dallas
+      handles:
+      - '+17372264157'
+      full_archive: true
+    - slug: ananya-nyc-0250
+      handles:
+      - '+12018840250'
+      full_archive: true
+    - slug: kaylie-hinge-austin
+      handles:
+      - '+12813811537'
+      full_archive: true
+    - slug: santosh-mathialgan-sammys-uc-berkeley-nyc
+      handles:
+      - '+16157208980'
+      full_archive: true
+    - slug: vidhi-nyc
+      handles:
+      - '+19293896206'
+      full_archive: true
+    - slug: kimaya-hinge-austin
+      handles:
+      - '+19712009894'
+      full_archive: true
+    - slug: diya-nyc-9395
+      handles:
+      - '+17329399395'
+      full_archive: true
+    - slug: alpin-yukseloglu-uc-berkeley
+      handles:
+      - '+19173994692'
+      full_archive: true
+    - slug: hansika-hinge-austin
+      handles:
+      - '+15125504329'
+      full_archive: true
+    - slug: alefia-hinge-austin
+      handles:
+      - '+12817349064'
+      full_archive: true
+    - slug: jodie-hinge-austin
+      handles:
+      - '+15127979450'
+      full_archive: true
+    - slug: aasritha-nyc
+      handles:
+      - '+14433556234'
+      full_archive: true
+    - slug: ananya-nyc-2509
+      handles:
+      - '+17709032509'
+      full_archive: true
+    - slug: ziya-nyc
+      handles:
+      - '+17185814183'
+      full_archive: true
+    - slug: celeste-renter-showing
+      handles:
+      - '+18187149843'
+      full_archive: true
+    - slug: rylen-patel-uc-berkeley
+      handles:
+      - '+19492787033'
+      full_archive: true
+    - slug: areebah-nyc
+      handles:
+      - '+15169745553'
+      full_archive: true
+    - slug: matt-stefanina-nyc
+      handles:
+      - '+14349623567'
+      full_archive: true
+    - slug: david-bailie
+      handles:
+      - '+15122289156'
+      full_archive: true
+    - slug: sridhar-sundaram-uncle
+      handles:
+      - '+17378889711'
+      full_archive: true
+    - slug: kevo-prescription-producer-la
+      handles:
+      - '+13146145551'
+      full_archive: true
+    - slug: shlok-uc-berkeley-nyc
+      handles:
+      - '+14089217743'
+      full_archive: true
+    - slug: tiya-nyc
+      handles:
+      - '+16578885454'
+      full_archive: true
+    - slug: ankit-rish-friend
+      handles:
+      - '+16145566227'
+      full_archive: true
+    - slug: james-harkin
+      handles:
+      - '+13079200178'
+      full_archive: true
+    - slug: tyler-sapient-crypto
+      handles:
+      - '+17329774369'
+      full_archive: true
+    - slug: jv-producer
+      handles:
+      - '+14153194913'
+      full_archive: true
+    - slug: neeraj-prabhat-adarsh-uc-berkeley
+      handles:
+      - '+16505878115'
+      full_archive: true
+    - slug: arnav-gurudatt
+      handles:
+      - arnavgurudatt@gmail.com
+      full_archive: true
+    - slug: delvia-zhang-lasa
+      handles:
+      - '+16262740877'
+      full_archive: true
+    - slug: lorenz-redlefsen-austin
+      handles:
+      - '+16505751974'
+      full_archive: true
+    - slug: sashi-anna
+      handles:
+      - '+14258940361'
+      full_archive: true
+    - slug: exxtra-video-editor
+      handles:
+      - '+13522787657'
+      full_archive: true
+    - slug: accupuncture-doctor-austin
+      handles:
+      - '+15129217699'
+      full_archive: true
+    - slug: ian-empirestrategies
+      handles:
+      - '+12065181546'
+      full_archive: true
+    - slug: kap-judge
+      handles:
+      - '+19545900662'
+      full_archive: true
+    - slug: anthony-de-leon
+      handles:
+      - '+12139268565'
+      full_archive: true
+    - slug: adam-kory-financial-modeling
+      handles:
+      - '+13039563351'
+      full_archive: true
+    - slug: kalani-prescription-la
+      handles:
+      - '+18084294591'
+      full_archive: true
+    - slug: elaine-renter-showing
+      handles:
+      - '+18187441267'
+      full_archive: true
+    - slug: david-renter-showing
+      handles:
+      - '+18182334068'
+      full_archive: true
+    - slug: maneesh-uc-berkeley
+      handles:
+      - '+17035872779'
+      full_archive: true
+    - slug: ethan-uc-berkeley
+      handles:
+      - '+19133132100'
+      full_archive: true
+    - slug: krishna-nyc
+      handles:
+      - '+19255490655'
+      full_archive: true
+    - slug: adi-rao-uc-berkeley-nyc
+      handles:
+      - '+18582849064'
+      full_archive: true
+    - slug: alec-pi-kapp-uc-berkeley-6689
+      handles:
+      - '+17604576689'
+      full_archive: true
+    - slug: joshua-renter-showing
+      handles:
+      - '+16268334922'
+      full_archive: true
+    - slug: prasad-uncle-cpa
+      handles:
+      - '+15127503357'
+      full_archive: true
+    - slug: daniel-kim-uc-berkeley
+      handles:
+      - '+19253939059'
+      full_archive: true
+    - slug: ryan-mchargue
+      handles:
+      - '+19197445727'
+      full_archive: true
+    - slug: preethi-launchx
+      handles:
+      - '+15127771343'
+      full_archive: true
+    - slug: ryan-ryster-producer-la
+      handles:
+      - '+14325827996'
+      full_archive: true
+    - slug: kia-shervin-la
+      handles:
+      - '+19493329401'
+      full_archive: true
+    - slug: rishika-dad
+      handles:
+      - '+16143781619'
+      full_archive: true
+    - slug: darnelle-producer-koko-la
+      handles:
+      - '+12138876866'
+      full_archive: true
+    - slug: pranav-lasa
+      handles:
+      - '+15126457282'
+      full_archive: true
+    - slug: noah-renter
+      handles:
+      - '+18472223813'
+      full_archive: true
+    - slug: zander-middle-school
+      handles:
+      - '+15123545719'
+      full_archive: true
+    - slug: kamran-prabhat-usc-la
+      handles:
+      - '+19254217893'
+      full_archive: true
+    - slug: rachel-lasa-usc
+      handles:
+      - '+15126505088'
+      full_archive: true
+    - slug: victor-cardenas
+      handles:
+      - '+14243248487'
+      full_archive: true
+    - slug: suhas
+      handles:
+      - '+15103090802'
+      full_archive: true
+    - slug: cris-renter
+      handles:
+      - '+18183357991'
+      full_archive: true
+    - slug: sam-hopper-lasa
+      handles:
+      - '+15126601290'
+      full_archive: true
+    - slug: ananya-lasa
+      handles:
+      - '+15125457129'
+      full_archive: true
+    - slug: savraj-prabhat-usc-la
+      handles:
+      - '+19259841756'
+      full_archive: true
+    - slug: rei-la-fernando-morales-rental
+      handles:
+      - '+18182665307'
+      full_archive: true
+    - slug: jacob-masuno-lasa
+      handles:
+      - '+13104653876'
+      full_archive: true
+    - slug: c-tag-malik-producer-la
+      handles:
+      - '+14842135034'
+      full_archive: true
+    - slug: april-angel-landlord
+      handles:
+      - '+16263933681'
+      full_archive: true
+    - slug: mack-post-sound-factory-la
+      handles:
+      - '+17813307618'
+      full_archive: true
+    - slug: thana-mclain-lasa
+      handles:
+      - '+15123128888'
+      full_archive: true
+    - slug: reed-hazard-lender
+      handles:
+      - '+19499735226'
+      full_archive: true
+    - slug: alex-duckworth-crypto
+      handles:
+      - '+13027406209'
+      full_archive: true
+    - slug: patrick-luna-la
+      handles:
+      - '+13055090120'
+      full_archive: true
+    - slug: om-uncle-new-york
+      handles:
+      - '+15183304187'
+      full_archive: true
+    - slug: mombru-producer-la
+      handles:
+      - '+18572336278'
+      full_archive: true
+    - slug: evan-lasa
+      handles:
+      - '+17379323314'
+      full_archive: true
+    - slug: arushi-lasa
+      handles:
+      - '+15125997036'
+      full_archive: true
+    - slug: zahir-lasa
+      handles:
+      - '+19167651634'
+      full_archive: true
+    - slug: latoya-spring-health
+      handles:
+      - '+19727748947'
+      full_archive: true
+    - slug: haan-la
+      handles:
+      - '+17472753223'
+      full_archive: true
+    - slug: mikey-silver-lining-la
+      handles:
+      - '+16519687031'
+      full_archive: true
+    - slug: dele-atanda
+      handles:
+      - '+17182869798'
+      full_archive: true
+    - slug: donut-producer-la
+      handles:
+      - '+18189665096'
+      full_archive: true
+    - slug: aryan-goyal-uc-berkeley
+      handles:
+      - '+14089664594'
+      full_archive: true
+    - slug: mike-smrtdeath-la-music
+      handles:
+      - '+13237689133'
+      full_archive: true
+    - slug: lourdiz-producer-la
+      handles:
+      - '+12103157026'
+      full_archive: true
+    - slug: filip-evan-friend
+      handles:
+      - '+13234287967'
+      full_archive: true
+    - slug: chris-smith-lasa
+      handles:
+      - '+15125712865'
+      full_archive: true
+    - slug: johnny-lee-uc-berkeley
+      handles:
+      - '+14082033788'
+      full_archive: true
+    - slug: aiden-persia-cruise
+      handles:
+      - '+18185779866'
+      full_archive: true
+    - slug: kyle-stemberger-prescription-la
+      handles:
+      - '+14707659419'
+      full_archive: true
+    - slug: akash-bobba-uc-berkeley
+      handles:
+      - '+19173532349'
+      full_archive: true
+    - slug: sonia-renter-showing
+      handles:
+      - '+18187954364'
+      full_archive: true
+    - slug: candice-stylist-la
+      handles:
+      - '+13106131991'
+      full_archive: true
+    - slug: george-beall-bd-crypto-gauntlet-la
+      handles:
+      - '+19096477557'
+      full_archive: true
+    - slug: gavin-hadley-la
+      handles:
+      - '+19202685370'
+      full_archive: true
+    - slug: gabriel-renter
+      handles:
+      - '+19515430021'
+      full_archive: true
+    - slug: inannaini-renter-showing
+      handles:
+      - '+16609091999'
+      full_archive: true
+    - slug: eshita-lasa
+      handles:
+      - '+15129869953'
+      full_archive: true
+    - slug: andrew-liutev-crypto
+      handles:
+      - '+14168260302'
+      full_archive: true
+    - slug: shriya-shaadi
+      handles:
+      - '+19712948207'
+      full_archive: true
+    - slug: shreya-new-york
+      handles:
+      - '+15127050825'
+      full_archive: true
+    - slug: yvs-village-la
+      handles:
+      - '+18186439352'
+      full_archive: true
+    - slug: lorenzo
+      handles:
+      - '+13232512937'
+      full_archive: true
+    - slug: liam-lasa
+      handles:
+      - '+15127655426'
+      full_archive: true
+    - slug: kuji-producer-la
+      handles:
+      - '+972545814463'
+      full_archive: true
+    - slug: kalen-lasa
+      handles:
+      - '+17373462115'
+      full_archive: true
+    - slug: usha-manju-aunty-bay-area
+      handles:
+      - '+14084765778'
+      full_archive: true
+    - slug: jeremy-uribe-producer-la
+      handles:
+      - '+17143516841'
+      full_archive: true
+    - slug: andrew-cedar-la
+      handles:
+      - '+17148784999'
+      full_archive: true
+    - slug: nick-guilmette-la
+      handles:
+      - '+18609515381'
+      full_archive: true
+    - slug: liz-reed-lasa
+      handles:
+      - '+15129987223'
+      full_archive: true
+    - slug: kaine-songwriter-la
+      handles:
+      - '+12488397307'
+      full_archive: true
+    - slug: anna
+      handles:
+      - '+13238726596'
+      full_archive: true
+    - slug: housepvrty
+      handles:
+      - '+13476315880'
+      full_archive: true
+    - slug: abhishek
+      handles:
+      - '+15712587031'
+      full_archive: true
+    - slug: scott-broock
+      handles:
+      - '+16467732259'
+      full_archive: true
+    - slug: jaxxy-producer-la
+      handles:
+      - '+18186127688'
+      full_archive: true
+    - slug: cameel-hanna-sound-factory-la
+      handles:
+      - '+13234676001'
+      full_archive: true
+    - slug: karthik-anna
+      handles:
+      - '+14379866850'
+      full_archive: true
+    - slug: nina
+      handles:
+      - '+16503804061'
+      full_archive: true
+    - slug: ben-silver-lining-la
+      handles:
+      - '+19162932435'
+      full_archive: true
+    - slug: arya-kapoor-uc-berkeley
+      handles:
+      - '+18054058386'
+      full_archive: true
+    - slug: maxim-kraft-spacex-uc-berkeley
+      handles:
+      - '+19088481161'
+      full_archive: true
+    - slug: jim-edmunds
+      handles:
+      - '+16463517009'
+      full_archive: true
+    - slug: devang-patel-uc-berkeley
+      handles:
+      - '+15164911753'
+      full_archive: true
+    - slug: alena-renter-showing
+      handles:
+      - '+18188004406'
+      full_archive: true
+    - slug: durgi-uncle-bay-area
+      handles:
+      - '+14083066206'
+      full_archive: true
+    - slug: laszlo-kopits-ef-program
+      handles:
+      - '+19145529494'
+      full_archive: true
+    - slug: georg-bitlayer
+      handles:
+      - '+19173621156'
+      full_archive: true
+    - slug: jakkyboi-la-music
+      handles:
+      - '+13237949191'
+      full_archive: true
+    - slug: nikhil-lasa
+      handles:
+      - '+15125865769'
+      full_archive: true
+    - slug: lou-cryptooracle
+      handles:
+      - '+13107102271'
+      full_archive: true
+    - slug: jacob-kintlze-austin
+      handles:
+      - '+15127042078'
+      full_archive: true
+    - slug: miles-noah
+      handles:
+      - '+17048089071'
+      full_archive: true
+    - slug: mike-crook-la
+      handles:
+      - '+16266105322'
+      full_archive: true
+    - slug: tony-uncle
+      handles:
+      - '+12146681312'
+      full_archive: true
+    - slug: leaked
+      handles:
+      - '+14157184323'
+      full_archive: true
+    - slug: taylor
+      handles:
+      - '+13237235313'
+      full_archive: true
+    - slug: mizzylott-producer-la
+      handles:
+      - '+18602618715'
+      full_archive: true
+    - slug: nishad-naik-uday-son
+      handles:
+      - '+14086371577'
+      full_archive: true
+    - slug: armaan-uc-berkeley
+      handles:
+      - '+17147198179'
+      full_archive: true
+    - slug: jay-sethi
+      handles:
+      - '+15103877874'
+      full_archive: true
+    - slug: luis
+      handles:
+      - '+17473332667'
+      full_archive: true
+    - slug: kraogotthesauce
+      handles:
+      - '+14082043911'
+      full_archive: true
+    - slug: johny-hadar-producer-la
+      handles:
+      - '+18189157470'
+      full_archive: true
+    - slug: harshil-uc-berkeley
+      handles:
+      - '+17632598560'
+      full_archive: true
+    - slug: gautam-uc-berkeley
+      handles:
+      - '+16692889907'
+      full_archive: true
+    - slug: ian-sid
+      handles:
+      - '+14157699424'
+      full_archive: true
+    - slug: curtis-lee
+      handles:
+      - '+16265599626'
+      full_archive: true
+    - slug: nidhir-guggila-uc-berkeley
+      handles:
+      - '+14087057310'
+      full_archive: true
+    - slug: kai-producer-la
+      handles:
+      - '+18083979958'
+      full_archive: true
+    - slug: arjun-adapalli
+      handles:
+      - '+15127589381'
+      full_archive: true
+    - slug: daniel-blockchain-uc-berkeley
+      handles:
+      - '+18186012210'
+      full_archive: true
+    - slug: mooji-uc-berkeley
+      handles:
+      - '+19253892373'
+      full_archive: true
+    - slug: aayush-cricket-uc-berkeley
+      handles:
+      - '+17633602030'
+      full_archive: true
+    - slug: matt-kang-uc-berkeley
+      handles:
+      - '+19254133032'
+      full_archive: true
+    - slug: naman-kapasi-uc-berkeley
+      handles:
+      - '+17204671997'
+      full_archive: true
+    - slug: will-lee-uc-berkeley
+      handles:
+      - '+14437166848'
+      full_archive: true
+    - slug: shreejal-luitel-uc-berkeley
+      handles:
+      - '+15107344849'
+      full_archive: true
+    - slug: anthony-realtor-la
+      handles:
+      - '+16262349517'
+      full_archive: true
+    - slug: safwan-uc-berkeley
+      handles:
+      - '+13013661647'
+      full_archive: true
+    - slug: alan-rodrigo-producer-la
+      handles:
+      - '+17034708432'
+      full_archive: true
+    - slug: suchith-palyam-uc-berkeley
+      handles:
+      - '+15125089066'
+      full_archive: true
+    - slug: jameson
+      handles:
+      - '+13232471848'
+      full_archive: true
+    - slug: jay-blockchain-uc-berkeley
+      handles:
+      - '+16507032160'
+      full_archive: true
+    - slug: jeff-marshall
+      handles:
+      - '+13104355293'
+      full_archive: true
+    - slug: ellie-silver-lining-studios
+      handles:
+      - '+16085196442'
+      full_archive: true
+    - slug: zachary-falkowski-uc-berkeley
+      handles:
+      - '+19495109371'
+      full_archive: true
+    - slug: tyler-liu-uc-berkeley
+      handles:
+      - '+16502859752'
+      full_archive: true
+    - slug: grant-goodman-uc-berkeley
+      handles:
+      - '+15163614836'
+      full_archive: true
+    - slug: lance-baker
+      handles:
+      - '+16502294734'
+      full_archive: true
+    - slug: anton-lin-uc-berkeley
+      handles:
+      - '+15107714175'
+      full_archive: true
+    - slug: james-cryptobitmag
+      handles:
+      - '+15123750051'
+      full_archive: true
+    - slug: shawn-renter-showing26
+      handles:
+      - '+16614761150'
+      full_archive: true
+    - slug: vee-hinge-austin
+      handles:
+      - '+18315855023'
+      full_archive: true
+    - slug: magaly-renter-showing26
+      handles:
+      - '+19092286131'
+      full_archive: true
+    - slug: ariel-hinge-austin
+      handles:
+      - '+15127603938'
+      full_archive: true
+    - slug: ethan-baldonado
+      handles:
+      - '+15122691050'
+      full_archive: true
+    - slug: terri-renter-showing26
+      handles:
+      - '+13233374987'
+      full_archive: true
+    - slug: varsha-hinge-la
+      handles:
+      - '+15173884621'
+      full_archive: true
+    - slug: mythree-hinge-la
+      handles:
+      - '+19162209049'
+      full_archive: true
+    - slug: arianna-hinge-austin
+      handles:
+      - '+15126087342'
+      full_archive: true
+    - slug: shubhi-hinge-la
+      handles:
+      - '+13143137445'
+      full_archive: true
+    - slug: rhea-hinge-la
+      handles:
+      - '+17477243260'
+      full_archive: true
+    - slug: nedal-renter-showing
+      handles:
+      - '+14238178376'
+      full_archive: true
+    - slug: ernestina-renter-showing
+      handles:
+      - '+17474659055'
+      full_archive: true
+    - slug: isaac-renter-showing26
+      handles:
+      - '+16612193417'
+      full_archive: true
+    - slug: julia-renter-showing
+      handles:
+      - '+12134448918'
+      full_archive: true
+    - slug: jose-renter-showing-5742
+      handles:
+      - '+18182725742'
+      full_archive: true
+    - slug: ray-hamili-renter-showing26
+      handles:
+      - '+18185737944'
+      full_archive: true
+    - slug: krisha-hinge-austin
+      handles:
+      - '+15127090392'
+      full_archive: true
+    - slug: jake-garcia
+      handles:
+      - '+15126509948'
+      full_archive: true
+    - slug: bibby-grade-a-la
+      handles:
+      - '+13122418552'
+      full_archive: true
+    - slug: sarah-a16z
+      handles:
+      - '+16282866274'
+      full_archive: true
+    - slug: james-dai-uc-berkeley
+      handles:
+      - '+18324919965'
+      full_archive: true
+    groups:
+    - slug: group-avery
+      chat_guid: any;+;4fdebf3dd405415aacf396ddf29ea2cb
+      full_archive: true
+    - slug: gold-kums-powna-ams-family
+      chat_guid: any;+;chat50575956801953166
+      full_archive: true
+    - slug: group-arya-rushil
+      chat_guid: any;+;b3071bab794c4ebd936ac0c1c678c3d0
+      full_archive: true
+    - slug: intervention-4-shakti
+      chat_guid: any;+;chat274991755290674277
+      full_archive: true
+    - slug: group-rushil
+      chat_guid: any;+;4cba8cf3e4534622a962d65f90638a72
+      full_archive: true
+    - slug: mit-launchx-sf
+      chat_guid: any;+;chat907511830298826879
+      full_archive: true
+    - slug: group-noah-sam
+      chat_guid: any;+;chat521822493869662372
+      full_archive: true
+    - slug: group-avery-2
+      chat_guid: any;+;chat979923998700193954
+      full_archive: true
+    - slug: group-wes
+      chat_guid: any;+;chat342280937719310241
+      full_archive: true
+    - slug: chillski
+      chat_guid: any;+;chat358155234308828981
+      full_archive: true
+    - slug: group-avery-will
+      chat_guid: any;+;3cd6d9b32aca4d4dbe2f1a87a640a99d
+      full_archive: true
+    - slug: group-miles-noah-sam
+      chat_guid: any;+;93584061386f49eba23b24013f8fa216
+      full_archive: true
+    - slug: group-noah
+      chat_guid: any;+;ab52da20967c44229b82d664b0a10ec7
+      full_archive: true
+    - slug: group-dravin-ryan-sam
+      chat_guid: any;+;9d6f58688abd49ed99c35d1b8d8628ec
+      full_archive: true
+    - slug: group-avery-philip
+      chat_guid: any;+;chat450828649520068161
+      full_archive: true
+    - slug: group-pseuhas-rushil
+      chat_guid: any;+;chat695855693289409174
+      full_archive: true
+    - slug: group-dad-mom
+      chat_guid: any;+;chat387301513996727991
+      full_archive: true
+    - slug: group-arya-mom
+      chat_guid: any;+;chat507083773155670326
+      full_archive: true
+    - slug: group-evan-mychal
+      chat_guid: any;+;81d6824358d4438faae566cbc31b47a3
+      full_archive: true
+    - slug: group-mo-vihan
+      chat_guid: any;+;chat25120181844403644
+      full_archive: true
+    - slug: unkal
+      chat_guid: any;+;chat68302081160000807
+      full_archive: true
+    - slug: group-adarsh-prabhat-pseuhas
+      chat_guid: any;+;chat439178430840063950
+      full_archive: true
+    - slug: group-dad-mychal
+      chat_guid: any;+;chat317840630631119211
+      full_archive: true
+    - slug: group-erik-pseuhas-rushil
+      chat_guid: any;+;chat175164867133826146
+      full_archive: true
+    - slug: group-rushil-sam
+      chat_guid: any;+;9fb3f585d56f4594aec6dbabff42cfbe
+      full_archive: true
+    - slug: group-ashank-rushil
+      chat_guid: any;+;cfb48325676f41b0861d495a95d42f5d
+      full_archive: true
+    - slug: group-dravin-shiva
+      chat_guid: any;+;97fc3b0036b6423391d52297d9459ad3
+      full_archive: true
+    - slug: group-isaac-lewis
+      chat_guid: any;+;62703c738c734463a92e84c5b1d0118e
+      full_archive: true
+    - slug: group-sid
+      chat_guid: any;+;d0d60b7c9b3c4c6cb9f0df7987bf2a81
+      full_archive: true
+    - slug: group-pseuhas-rushil-2
+      chat_guid: any;+;chat374139229874425621
+      full_archive: true
+    - slug: group-dad-mom-2
+      chat_guid: any;+;chat614379883125509849
+      full_archive: true
+    - slug: beach-bois-abroad
+      chat_guid: any;+;655b893ddc7245349241d2a67d118bbe
+      full_archive: true
+    - slug: group-will
+      chat_guid: any;+;74157f8d8ebc474b832e17245cfc47fd
+      full_archive: true
+    - slug: group-avery-3
+      chat_guid: any;+;chat672540604433327055
+      full_archive: true
+    - slug: group-arya
+      chat_guid: any;+;d808713ca59e45b58f19714df7b9a8f6
+      full_archive: true
+    - slug: group-arya-2
+      chat_guid: any;+;chat48418855654288882
+      full_archive: true
+    - slug: group-mychal-ram
+      chat_guid: any;+;3b1a060c36cc4a3ea8bcf7673b77a29f
+      full_archive: true
+    - slug: group-dravin-sai-sam
+      chat_guid: any;+;c8359b6eaf014ea4a76953bdb8d0302b
+      full_archive: true
+    - slug: group-louie-tyler-yosef
+      chat_guid: any;+;chat878560780941305399
+      full_archive: true
+    - slug: group-amadeus-evan
+      chat_guid: any;+;chat979301548593890461
+      full_archive: true
+    - slug: group-evan-lorenzo
+      chat_guid: any;+;chat538074616057638
+      full_archive: true
+    - slug: group-arya-dad
+      chat_guid: any;+;2d6d14162ef14659aea21bcc757c053a
+      full_archive: true
+    - slug: group-dravin-edwin-hunter
+      chat_guid: any;+;chat98899826554182016
+      full_archive: true
+    - slug: group-adarsh-prabhat-pseuhas-2
+      chat_guid: any;+;chat237173127427245183
+      full_archive: true
+    - slug: group-caitlin-ryan
+      chat_guid: any;+;chat315514146860171287
+      full_archive: true
+    - slug: group-noah-rushil
+      chat_guid: any;+;6b690b91a4274306bc63e8563c81fbb0
+      full_archive: true
+    - slug: group-luke
+      chat_guid: any;+;2ab162410636409d85e45f16e7443793
+      full_archive: true
+    - slug: group-amadeus-evan-sasoon
+      chat_guid: any;+;chat147946280414309184
+      full_archive: true
+    - slug: group-avery-4
+      chat_guid: any;+;3e8bfe45f12e4f94ad1a1463737460ac
+      full_archive: true
+    - slug: group-arya-mychal
+      chat_guid: any;+;chat868662385616499023
+      full_archive: true
+    - slug: group-avinash-sandeep
+      chat_guid: any;+;a06cf62defaf495db6ee6a5355b47bb8
+      full_archive: true
+    - slug: deus-shak-verb
+      chat_guid: any;+;chat628020167924513802
+      full_archive: true
+    - slug: group-adarsh-prabhat-pseuhas-3
+      chat_guid: any;+;chat458085558200217397
+      full_archive: true
+    - slug: tweakers
+      chat_guid: any;+;4b181b2bf86448bf96e05f75b79cd7f2
+      full_archive: true
+    - slug: nova-outerscope
+      chat_guid: any;+;chat22233463388461864
+      full_archive: true
+    - slug: group-evan
+      chat_guid: any;+;chat404441230385448558
+      full_archive: true
+    - slug: group-riz-zubair
+      chat_guid: any;+;chat118742041220662387
+      full_archive: true
+    - slug: group-amadeus-angel-austin
+      chat_guid: any;+;chat462920821962632556
+      full_archive: true
+    - slug: group-jarrod-nicole-yosef
+      chat_guid: any;+;chat605320033193746129
+      full_archive: true
+    - slug: group-evan-noah
+      chat_guid: any;+;chat817954285874098301
+      full_archive: true
+    - slug: group-cam-ryan
+      chat_guid: any;+;chat244196247324113104
+      full_archive: true
+    - slug: group-keena-mom
+      chat_guid: any;+;chat94240729121287321
+      full_archive: true
+    - slug: group-jose-mom
+      chat_guid: any;+;chat510918379537244362
+      full_archive: true
+    - slug: group-hunter-rylen
+      chat_guid: any;+;chat378486070352501452
+      full_archive: true
+    - slug: group-chance-griffin-nikhil
+      chat_guid: any;+;chat190713075381755499
+      full_archive: true
+    - slug: group-peter-tyler-yosef
+      chat_guid: any;+;chat261150558442673184
+      full_archive: true
+    - slug: group-mom
+      chat_guid: any;+;chat663007949681845062
+      full_archive: true
+    - slug: group-donny-tyler-yosef
+      chat_guid: any;+;chat926103358818610685
+      full_archive: true
+    - slug: group-mom-2
+      chat_guid: any;+;chat516934858164945726
+      full_archive: true
+    - slug: group-cris-evan-mom
+      chat_guid: any;+;chat311022392433072744
+      full_archive: true
+    - slug: group-bibby-dr-ryan
+      chat_guid: any;+;chat237886334742468698
+      full_archive: true
+    - slug: group-austin-dad
+      chat_guid: any;+;chat254801864162682148
+      full_archive: true
+    - slug: group-mom-3
+      chat_guid: any;+;chat51543604952514364
+      full_archive: true
+    - slug: group-caitlin-mychal-ryan
+      chat_guid: any;+;chat33710812127621814
+      full_archive: true
+    - slug: group-adarsh-rushil
+      chat_guid: any;+;chat220480843708961167
+      full_archive: true
+    - slug: group-austin-evan
+      chat_guid: any;+;chat834359096950709240
+      full_archive: true
+    - slug: swol-patrol
+      chat_guid: any;+;chat31918678893786522
+      full_archive: true
+    - slug: group-donny-yosef
+      chat_guid: any;+;chat201012398148612656
+      full_archive: true
+    - slug: group-jacob-noah-sam
+      chat_guid: any;+;chat646223604637736709
+      full_archive: true
+    - slug: group-arthur-dravin-patrick
+      chat_guid: any;+;chat520172004752303665
+      full_archive: true
+    - slug: group-mom-4
+      chat_guid: any;+;chat844436858526547880
+      full_archive: true
+    - slug: group-keith-ryan
+      chat_guid: any;+;chat875354165152797308
+      full_archive: true
+    - slug: group-dad-evan
+      chat_guid: any;+;chat881304435870411115
+      full_archive: true
+    - slug: group-tyler-yosef
+      chat_guid: any;+;chat894043071803850010
+      full_archive: true
+    - slug: group-adarsh-prabhat-rushil
+      chat_guid: any;+;chat17947909715266356
+      full_archive: true
+    - slug: group-abraham-avery
+      chat_guid: any;+;chat13618458587313733
+      full_archive: true
+    - slug: group-griffin-nikhil-noah
+      chat_guid: any;+;chat755518427933218789
+      full_archive: true
+    - slug: group-rushil-2
+      chat_guid: any;+;chat845532027596838917
+      full_archive: true
+    - slug: group-mom-steve
+      chat_guid: any;+;chat845294520652037404
+      full_archive: true
+    - slug: group-donny-malik
+      chat_guid: any;+;chat993044599997114213
+      full_archive: true
+    - slug: group-dr-jim
+      chat_guid: any;+;chat924451825320301514
+      full_archive: true
+    - slug: group-arya-dad-mom
+      chat_guid: any;+;chat586235224862922719
+      full_archive: true
+    - slug: group-aiden-alex-ananya
+      chat_guid: any;+;chat653603342752350843
+      full_archive: true
+    - slug: group-dad-mom-3
+      chat_guid: any;+;chat68815810227604614
+      full_archive: true
+    - slug: group-amadeus-angel-austin-2
+      chat_guid: any;+;chat737562944169103487
+      full_archive: true
+    - slug: group-evan-zubair
+      chat_guid: any;+;chat346807137966289552
+      full_archive: true
+    - slug: group-arya-dad-mom-2
+      chat_guid: any;+;chat720787842752018265
+      full_archive: true
+    - slug: group-mom-5
+      chat_guid: any;+;chat950215228294004398
+      full_archive: true
+    - slug: group-aniruddh-dravin-eva
+      chat_guid: any;+;chat520245120999446811
+      full_archive: true
+    - slug: group-edgar-mom
+      chat_guid: any;+;chat542027356508048705
+      full_archive: true
+    - slug: group-amit-avik-chance
+      chat_guid: any;+;chat612975923442014214
+      full_archive: true
+    - slug: group-amadeus-evan-jose
+      chat_guid: any;+;chat209630200588776137
+      full_archive: true
+    - slug: group-jose-mom-2
+      chat_guid: any;+;chat38738359920373489
+      full_archive: true
+    - slug: group-mom-steve-2
+      chat_guid: any;+;chat38669510974768153
+      full_archive: true
+    - slug: group-arya-dravin
+      chat_guid: any;+;chat840340419316350474
+      full_archive: true
+    - slug: group-pseuhas-xanos
+      chat_guid: any;+;chat827126189446160043
+      full_archive: true
+    - slug: group-caitlin-dr-rhea
+      chat_guid: any;+;chat417038367271321699
+      full_archive: true
+    - slug: group-pseuhas-rushil-saif
+      chat_guid: any;+;chat863423958824814529
+      full_archive: true
+    - slug: group-brennan-griffin-miles
+      chat_guid: any;+;chat298399421284850832
+      full_archive: true
+    - slug: group-ben-prabhat-rushil
+      chat_guid: any;+;chat336756397777227434
+      full_archive: true
+    - slug: group-caitlin-keith-ryan
+      chat_guid: any;+;chat3615686836534068
+      full_archive: true
+    - slug: group-abhi-akshar-rushil
+      chat_guid: any;+;chat888318680963581175
+      full_archive: true
+    - slug: group-caitlin-rhea
+      chat_guid: any;+;chat89126594766872449
+      full_archive: true
+    - slug: group-ryan-vitals
+      chat_guid: any;+;chat419530985874950410
+      full_archive: true
+    - slug: group-caitlin
+      chat_guid: any;+;chat248032675444310928
+      full_archive: true
+    - slug: group-jason
+      chat_guid: any;+;chat279665220544976369
+      full_archive: true
+    - slug: group-ace
+      chat_guid: any;+;chat11417904594904067
+      full_archive: true
+    - slug: group-evan-filip
+      chat_guid: any;+;chat563967653419380746
+      full_archive: true
+    - slug: group-dad
+      chat_guid: any;+;chat88144661564331718
+      full_archive: true
+    - slug: group-mo-pseuhas-shervin
+      chat_guid: any;+;chat95939376960216558
+      full_archive: true
+    - slug: group-abhi-akshar
+      chat_guid: any;+;chat784984306635925484
+      full_archive: true
+    - slug: group-caitlin-rhea-2
+      chat_guid: any;+;chat383478040295595746
+      full_archive: true
+    - slug: group-rushil-saif
+      chat_guid: any;+;chat699749730857856406
+      full_archive: true
+    - slug: group-caitlin-rhea-ryan
+      chat_guid: any;+;chat383983337588805976
+      full_archive: true
+    - slug: group-akshar-parth
+      chat_guid: any;+;chat929917030418033247
+      full_archive: true
+    - slug: group-haan-kevo
+      chat_guid: any;+;chat357246037888831909
+      full_archive: true
+    - slug: group-avery-pseuhas
+      chat_guid: any;+;chat419572732434965563
+      full_archive: true
+    - slug: group-prabhat-rushil-saif
+      chat_guid: any;+;chat613591654854956865
+      full_archive: true
+    - slug: group-amadeus-evan-perla
+      chat_guid: any;+;chat622679803424167729
+      full_archive: true
+    - slug: group-carlos-mychal
+      chat_guid: any;+;chat992569101144585940
+      full_archive: true
+    - slug: group-adi-shlok
+      chat_guid: any;+;chat808814323431714648
+      full_archive: true
+    - slug: group-arya-dad-mom-3
+      chat_guid: any;+;chat596926587101453351
+      full_archive: true
+    - slug: group-amadeus-evan-jason
+      chat_guid: any;+;chat825669835894662569
+      full_archive: true
+    - slug: group-arya-keith
+      chat_guid: any;+;chat577524708937140768
+      full_archive: true
+    - slug: group-pseuhas-risheek-santosh
+      chat_guid: any;+;chat726144821707779449
+      full_archive: true
+    - slug: group-amadeus-evan-2
+      chat_guid: any;+;chat137891297989176234
+      full_archive: true
+    - slug: group-rishika
+      chat_guid: any;+;chat905172563267650983
+      full_archive: true
+    - slug: group-keith-mom-ryan
+      chat_guid: any;+;chat210765288736411913
+      full_archive: true
+    - slug: group-jamal
+      chat_guid: any;+;chat596663733133669579
+      full_archive: true
+    - slug: nozzed
+      chat_guid: any;+;chat83971869331713757
+      full_archive: true
+    - slug: group-abraham-pseuhas-xanos
+      chat_guid: any;+;chat52480967253886948
+      full_archive: true
+    - slug: group-mo-shlok-vihan
+      chat_guid: any;+;chat357866773693663630
+      full_archive: true
+    - slug: group-edwin-rushil
+      chat_guid: any;+;chat303507237140574891
+      full_archive: true
+    - slug: xx
+      chat_guid: any;+;chat666816675245322793
+      full_archive: true
+    - slug: group-arya-keith-2
+      chat_guid: any;+;chat674922737674412370
+      full_archive: true
+    - slug: group-dr-ryan
+      chat_guid: any;+;chat245153138537692397
+      full_archive: true
+    - slug: group-keith-mom-ryan-2
+      chat_guid: any;+;chat720403917864867841
+      full_archive: true
+    - slug: group-adarsh-prabhat-saif
+      chat_guid: any;+;chat737474744159867037
+      full_archive: true
+    - slug: group-aamir-ryan
+      chat_guid: any;+;chat969918749539782492
+      full_archive: true
+    - slug: group-adarsh-saif
+      chat_guid: any;+;chat605363114718412745
+      full_archive: true
+    - slug: group-evan-mo
+      chat_guid: any;+;chat387128197667752574
+      full_archive: true
+    - slug: group-deven-pseuhas-risheek
+      chat_guid: any;+;chat588576449859277619
+      full_archive: true
+    - slug: group-adarsh-neeraj
+      chat_guid: any;+;chat867670483765284370
+      full_archive: true
+    - slug: group-hunter-rylen-2
+      chat_guid: any;+;chat324087756627787181
+      full_archive: true
+    - slug: group-dr-jim-ryan
+      chat_guid: any;+;chat24848304737134624
+      full_archive: true
+    - slug: group-deven-pseuhas-risheek-2
+      chat_guid: any;+;chat128732578630667469
+      full_archive: true
+    - slug: group-arya-hunter-rylen
+      chat_guid: any;+;chat41014161943421160
+      full_archive: true
+    - slug: group-griffin-noah
+      chat_guid: any;+;chat507770748112955650
+      full_archive: true
+    - slug: group-mom-sandeep
+      chat_guid: any;+;chat265761213251307180
+      full_archive: true
+    - slug: group-amadeus-evan-stacey
+      chat_guid: any;+;chat45056665911602943
+      full_archive: true
+    - slug: group-diana-keith-larry
+      chat_guid: any;+;chat41028616111500196
+      full_archive: true
+    - slug: group-neeraj-shervin
+      chat_guid: any;+;chat281150047936177064
+      full_archive: true
+    - slug: group-adarsh-prabhat
+      chat_guid: any;+;chat91159384120987677
+      full_archive: true
+    - slug: group-dad-mom-rema
+      chat_guid: any;+;chat14103144675412984
+      full_archive: true
+    - slug: group-mo-shervin
+      chat_guid: any;+;chat597013917522665062
+      full_archive: true
+    - slug: group-mom-6
+      chat_guid: any;+;chat192419575423304908
+      full_archive: true
+    - slug: group-dad-mom-rema-2
+      chat_guid: any;+;chat395843358754784250
+      full_archive: true
+    - slug: group-griffin-noah-2
+      chat_guid: any;+;chat117916676478662451
+      full_archive: true
+    - slug: group-shervin-xanos
+      chat_guid: any;+;chat944942823832182380
+      full_archive: true
+    - slug: group-nikhil-rylen
+      chat_guid: any;+;chat489145498177924146
+      full_archive: true
+    - slug: group-amadeus-david-evan
+      chat_guid: any;+;chat515726970318882608
+      full_archive: true
+    - slug: group-andy-kevin
+      chat_guid: any;+;chat204552231393471743
+      full_archive: true
+    - slug: group-noah-2
+      chat_guid: any;+;chat524480639227937648
+      full_archive: true
+    - slug: group-amadeus-darshit-evan
+      chat_guid: any;+;chat555938012970993712
+      full_archive: true
+    - slug: group-adarsh-prabhat-rushil-2
+      chat_guid: any;+;chat32142031935816665
+      full_archive: true
+    - slug: group-mom-sandeep-2
+      chat_guid: any;+;chat979782752236924436
+      full_archive: true
+    - slug: group-arya-hunter-rylen-2
+      chat_guid: any;+;chat849535077394048914
+      full_archive: true
+    - slug: '23109'
+      chat_guid: any;+;chat481093118121964907
+      full_archive: true
+    - slug: group-pseuhas-shervin-xanos
+      chat_guid: any;+;chat180082222106694380
+      full_archive: true
+    - slug: group-alec-ashank
+      chat_guid: any;+;chat137636795592690024
+      full_archive: true
+    - slug: group-amadeus-brandon-evan
+      chat_guid: any;+;chat3501929793132212
+      full_archive: true
+    - slug: group-prabhat-saif
+      chat_guid: any;+;chat68960381485874529
+      full_archive: true
+    - slug: group-ankit-edwin-rohin
+      chat_guid: any;+;chat266192133338940664
+      full_archive: true
+    - slug: group-nikhil-noah-parth
+      chat_guid: any;+;chat354593509670965170
+      full_archive: true
+    - slug: group-angel-mom
+      chat_guid: any;+;chat412288859719684929
+      full_archive: true
+    - slug: group-amadeus-austin-evan
+      chat_guid: any;+;chat227751139432869567
+      full_archive: true
+    - slug: group-amadeus-evan-3
+      chat_guid: any;+;chat707647789870531264
+      full_archive: true
+    - slug: group-amadeus-evan-4
+      chat_guid: any;+;chat273804744865403890
+      full_archive: true
+    - slug: group-amadeus-ashley-evan
+      chat_guid: any;+;chat8841976493084274
+      full_archive: true
+    - slug: group-dheeraj
+      chat_guid: any;+;chat359422534720462646
+      full_archive: true
+    - slug: group-amadeus-evan-nedal
+      chat_guid: any;+;chat761660676180820342
+      full_archive: true
+    - slug: group-diana-ryan
+      chat_guid: any;+;chat55556929593506875
+      full_archive: true
+    - slug: group-amadeus-angel-evan
+      chat_guid: any;+;chat20424418642023843
+      full_archive: true
+    - slug: group-amadeus-evan-noah
+      chat_guid: any;+;chat70712743752068620
+      full_archive: true
+    - slug: group-austin-mom
+      chat_guid: any;+;chat996430279790225562
+      full_archive: true
+    - slug: group-amadeus-evan-yvette
+      chat_guid: any;+;chat749879599183016463
+      full_archive: true
+    - slug: group-evan-noah-2
+      chat_guid: any;+;chat121525226665702692
+      full_archive: true
+    - slug: group-amadeus-bryan
+      chat_guid: any;+;chat213199645868081022
+      full_archive: true
+    - slug: group-diana-larry-ryan
+      chat_guid: any;+;chat890073293506405248
+      full_archive: true
+    - slug: group-aiden-alex-ananya-2
+      chat_guid: any;+;chat28621163454286657
+      full_archive: true
+    - slug: group-amadeus-ziggy
+      chat_guid: any;+;chat951538199283843103
+      full_archive: true
+    - slug: group-austin
+      chat_guid: any;+;chat69939549229152181
+      full_archive: true
+    - slug: group-amadeus-evan-julia
+      chat_guid: any;+;chat476052893179988867
+      full_archive: true
+    - slug: group-nikhil-parth
+      chat_guid: any;+;chat319750684765986101
+      full_archive: true
+    - slug: group-aiden-alex-ananya-3
+      chat_guid: any;+;chat729955659250959947
+      full_archive: true
+    - slug: group-amadeus-ernestina-evan
+      chat_guid: any;+;chat314295219194201584
+      full_archive: true
+    - slug: group-angel-mom-2
+      chat_guid: any;+;chat788460393144172065
+      full_archive: true
+    - slug: group-adithya-ryan-tyler
+      chat_guid: any;+;chat800911952621559613
+      full_archive: true
+    - slug: group-ankit-edwin-rohin-2
+      chat_guid: any;+;chat800511207185085757
+      full_archive: true
+    - slug: group-adarsh-nathan-prabhat
+      chat_guid: any;+;chat849071462129522143
+      full_archive: true
+    - slug: group-amadeus-evan-gabriel
+      chat_guid: any;+;chat881185902160255546
+      full_archive: true
+    - slug: group-mom-rei
+      chat_guid: any;+;chat855645105604681529
+      full_archive: true
+    - slug: group-ankit-edwin
+      chat_guid: any;+;chat963882125224883421
+      full_archive: true
+    - slug: group-mom-ryan
+      chat_guid: any;+;chat805764520150420193
+      full_archive: true
+    - slug: group-anthony-dad-mom
+      chat_guid: any;+;chat304935172592211127
+      full_archive: true
+    - slug: group-ankit-edwin-rohin-3
+      chat_guid: any;+;chat702431437114484234
+      full_archive: true
+    - slug: group-linh-rishika
+      chat_guid: any;+;chat795178047893569667
+      full_archive: true
+    - slug: group-christine-david-mark
+      chat_guid: any;+;chat48729418867102146
+      full_archive: true
+    - slug: klein-roomates
+      chat_guid: any;+;chat996232446126221942
+      full_archive: true
+    - slug: group-amadeus-arya
+      chat_guid: any;+;chat70879544876452271
+      full_archive: true
+    - slug: group-amadeus-arya-2
+      chat_guid: any;+;chat532914945399634
+      full_archive: true
+    - slug: group-geno-neek-tito
+      chat_guid: any;+;chat501109079223638570
+      full_archive: true
+    - slug: group-ben-ryan
+      chat_guid: any;+;chat975455576644533912
+      full_archive: true
+    - slug: group-amadeus-cris-evan
+      chat_guid: any;+;chat764329597682501
+      full_archive: true
+    - slug: group-caitlin-keith-ryan-2
+      chat_guid: any;+;chat264406873384197690
+      full_archive: true
+    - slug: group-adarsh-prabhat-rushil-3
+      chat_guid: any;+;chat344925250724604983
+      full_archive: true
+    - slug: group-cris-gabriel
+      chat_guid: any;+;chat129922688626586904
+      full_archive: true
+    - slug: group-ballr
+      chat_guid: any;+;chat509146455418320867
+      full_archive: true
+    - slug: group-arya-brandon-dad
+      chat_guid: any;+;chat67575690131876705
+      full_archive: true
+    - slug: group-arya-mom-2
+      chat_guid: any;+;chat262863955807051547
+      full_archive: true
+    - slug: group-kumar-z
+      chat_guid: any;+;chat388711428231167128
+      full_archive: true
+    - slug: group-caitlin-keith-nick
+      chat_guid: any;+;chat220819096244241882
+      full_archive: true
+    - slug: group-mike-zach
+      chat_guid: any;+;chat736803275852718874
+      full_archive: true
+    - slug: group-dad-mom-rei
+      chat_guid: any;+;chat356515766945673040
+      full_archive: true
+    - slug: group-amadeus-noah-rei
+      chat_guid: any;+;chat275860483779653092
+      full_archive: true
+    - slug: group-arya-caitlin
+      chat_guid: any;+;chat423558599833830083
+      full_archive: true
+    - slug: group-amadeus-arya-3
+      chat_guid: any;+;chat540864198435128390
+      full_archive: true
+    - slug: group-ryan-tyler
+      chat_guid: any;+;chat751773787983139719
+      full_archive: true
+    - slug: group-arya-caitlin-keith
+      chat_guid: any;+;chat16860283654451558
+      full_archive: true
+    - slug: group-dad-mom-rei-2
+      chat_guid: any;+;chat508875505171571032
+      full_archive: true
+    - slug: group-dad-mom-reed
+      chat_guid: any;+;chat205417496619712957
+      full_archive: true
+    - slug: group-reed
+      chat_guid: any;+;chat494905910970211150
+      full_archive: true
+    - slug: group-dad-2
+      chat_guid: any;+;chat23990055735088844
+      full_archive: true
+    - slug: group-candice-keith-ryan
+      chat_guid: any;+;chat922204611265046838
+      full_archive: true
+    - slug: group-covaughn-mychal
+      chat_guid: any;+;chat997147409424880940
+      full_archive: true
+    - slug: group-brandon-stacey
+      chat_guid: any;+;chat393237041131074083
+      full_archive: true
+    - slug: group-dad-mom-4
+      chat_guid: any;+;chat925435650616209011
+      full_archive: true
+    - slug: group-keith-ryan-tyler
+      chat_guid: any;+;chat69890956404016916
+      full_archive: true
+    - slug: amsterdam
+      chat_guid: any;+;chat295442887130691409
+      full_archive: true
+    - slug: group-dylan-johny
+      chat_guid: any;+;chat77924388497824184
+      full_archive: true
+    - slug: group-christine-mom-noah
+      chat_guid: any;+;chat41883537775034647
+      full_archive: true
+    - slug: group-adarsh-prabhat-rushil-4
+      chat_guid: any;+;chat401334562339148213
+      full_archive: true
+    - slug: group-arya-lance
+      chat_guid: any;+;chat17614637129456201
+      full_archive: true
+    - slug: group-kalani-ryan-tyler
+      chat_guid: any;+;chat98132519041129127
+      full_archive: true
+    - slug: group-divyesh-maanav
+      chat_guid: any;+;chat680133768427948852
+      full_archive: true
+    - slug: group-matt-ryan-score
+      chat_guid: any;+;chat772307223776493730
+      full_archive: true
+    - slug: group-koko-keith-ryan
+      chat_guid: any;+;chat698070707667781163
+      full_archive: true
+    - slug: group-aamir
+      chat_guid: any;+;chat958916649980987814
+      full_archive: true
+    - slug: group-anthony-dad-mom-2
+      chat_guid: any;+;chat667798179908878584
+      full_archive: true
+    - slug: group-dad-3
+      chat_guid: any;+;chat772779842309688961
+      full_archive: true
+    - slug: group-prabhat-rushil
+      chat_guid: any;+;chat498683901264061973
+      full_archive: true
+    - slug: group-noah-ryan
+      chat_guid: any;+;chat36089885968644541
+      full_archive: true
+    - slug: group-dhamo-narayanan
+      chat_guid: any;+;chat356398078297806303
+      full_archive: true
+    - slug: group-divyesh-maxim
+      chat_guid: any;+;chat190382097428035818
+      full_archive: true
+    - slug: group-maanav-mod-sid
+      chat_guid: any;+;chat685175980729624879
+      full_archive: true
+    - slug: group-rishika-z
+      chat_guid: any;+;chat88309024019100955
+      full_archive: true
+    - slug: group-johny-shanks
+      chat_guid: any;+;chat23244851614393731
+      full_archive: true
+    - slug: group-covaughn-mychal-randy
+      chat_guid: any;+;chat562654781116170776
+      full_archive: true
+    - slug: kumar-family
+      chat_guid: any;+;chat186047608327962281
+      full_archive: true
+    - slug: group-lucy-nick
+      chat_guid: any;+;chat915618893182766269
+      full_archive: true
+    - slug: group-rahul
+      chat_guid: any;+;chat293536268236225089
+      full_archive: true
+    - slug: group-ryan-score
+      chat_guid: any;+;chat74736243342048654
+      full_archive: true
+    - slug: grad
+      chat_guid: any;+;chat245470331854122839
+      full_archive: true
+    - slug: group-jillian-keith-ryan
+      chat_guid: any;+;chat905095925100738284
+      full_archive: true
+    - slug: group-mo-ryan
+      chat_guid: any;+;chat105106492102108537
+      full_archive: true
+    - slug: group-ryan
+      chat_guid: any;+;chat249897649353509994
+      full_archive: true
+    - slug: group-dad-mom-5
+      chat_guid: any;+;chat978186427117103316
+      full_archive: true
+    - slug: group-dad-4
+      chat_guid: any;+;chat47902370870470121
+      full_archive: true
+    - slug: group-mom-sidhant
+      chat_guid: any;+;72ca9bd192564770afe2dfeff0fef9a3
+      full_archive: true
+    - slug: group-arya-evan
+      chat_guid: any;+;chat375030139770980701
+      full_archive: true
+    - slug: group-kelsey-mom
+      chat_guid: any;+;3f648b181faf41fd8bcc03d6bbf44f98
+      full_archive: true
+    - slug: group-dad-john-mom
+      chat_guid: any;+;e2cc2d2754824549b533899e5c70fac9
+      full_archive: true
+    - slug: group-amadeus-angel-evan-2
+      chat_guid: any;+;chat765488002460644736
+      full_archive: true
+    - slug: group-amadeus-angel-dad
+      chat_guid: any;+;df2b5537f8514397a5a0bc0c3b6c4b33
+      full_archive: true
+    - slug: group-mom-7
+      chat_guid: any;+;3bfddb3ac75b40da83d97d4571dd530f
+      full_archive: true
+    - slug: group-john-mom
+      chat_guid: any;+;3d7345ec45874ccb9d385a78cdc7e9ad
+      full_archive: true
+    - slug: group-mom-8
+      chat_guid: any;+;chat476616132322272093
+      full_archive: true
+    - slug: group-mom-9
+      chat_guid: any;+;chat61761788920226889
+      full_archive: true
+    - slug: group-amadeus-evan-filip
+      chat_guid: any;+;chat139370904324907166
+      full_archive: true
+    - slug: group-francesco-james
+      chat_guid: any;+;chat874084084407927032
+      full_archive: true
+    - slug: group-ajay-james
+      chat_guid: any;+;chat523366792273221270
+      full_archive: true
+    - slug: group-mom-10
+      chat_guid: any;+;chat331146652655476210
+      full_archive: true
+    - slug: group-amadeus-darshit-evan-2
+      chat_guid: any;+;chat434677248509379102
+      full_archive: true
+    - slug: group-yosef-zach
+      chat_guid: any;+;1e8fe811c2ab4e43afa84e530a210dff
+      full_archive: true
+    - slug: group-mikey-zach
+      chat_guid: any;+;93d1e895b4dd4b26a015770629875b34
+      full_archive: true
+    - slug: group-donny-zach
+      chat_guid: any;+;99f68439e6154b3c8bc465dce6649695
+      full_archive: true
+    - slug: group-mychal
+      chat_guid: any;+;eab83d1c2cef4ad292ee357ee4c8c6be
+      full_archive: true
+    - slug: brick-city-mob
+      chat_guid: any;+;84782f1044b94e09acfbbc55ef7c9eda
+      full_archive: true
+    - slug: group-avery-5
+      chat_guid: any;+;6619b7260076433ab4a717afc1bcc7f4
+      full_archive: true
+    - slug: group-brennan-noah-sam
+      chat_guid: any;+;37fb5c76df1a45b3b9acca9406124394
+      full_archive: true
+    - slug: group-cameron-mychal-rebecca
+      chat_guid: any;+;ca0e525100e444e79d4deabfae11eac6
+      full_archive: true
+    - slug: group-jake-noah-sam
+      chat_guid: any;+;f2af57a45bc946b9aaa12446480801cf
+      full_archive: true
   manual:
     watch_path: raw/manual/_inbox/
     after_ingest: move_to_dated_subdir
-
 global_settings:
   attachments_inline: true
   vision_model: sonnet

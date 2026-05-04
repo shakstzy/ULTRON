@@ -1,23 +1,19 @@
 ---
 source: imessage
 workspace: personal
-ingested_at: '2026-05-04T03:54:58.276810+00:00'
+ingested_at: '2026-05-04T21:10:07.827470+00:00'
 ingest_version: 1
-content_hash: blake3:b10ee8390ea373319c12388476a71986f33e0f35280d504a78cf51c0de9a7dbe
-provider_modified_at: '2026-05-03T21:46:24.510803-05:00'
+content_hash: blake3:9a676477f74732b2ad31111dd4e737a7629d115d9fae0ce2f3eb5dfe362e0362
+provider_modified_at: '2026-05-03T23:48:30.874856-05:00'
 contact_slug: brennan-noah-austin
 contact_type: individual
-contact_handles:
-- '+15128458988'
-contact_name: Brennan Noah Austin
-chat_guid: null
 month: 2026-05
 date_range:
 - '2026-05-01'
 - '2026-05-03'
-message_count: 68
-my_message_count: 34
-their_message_count: 34
+message_count: 73
+my_message_count: 35
+their_message_count: 38
 attachments:
 - id: e9ff2f37e72213c5
   filename: 058C9693-A6EB-43E1-AFD3-D97C4E2DC86E.pluginPayloadAttachment
@@ -64,7 +60,7 @@ attachments:
   description_model: gemini-3-flash-preview
   extracted_at: '2026-05-04T03:53:46.902177+00:00'
   source_available: true
-- id: f9f657b1be384482
+- id: 14301bb033d2c016
   filename: IMG_4717.png
   mime: image/png
   size_bytes: 115531
@@ -75,19 +71,19 @@ attachments:
   description_model: gemini-3-flash-preview
   extracted_at: '2026-05-04T03:53:57.563141+00:00'
   source_available: true
-- id: d8cb3c20dbb9e9d4
+- id: 6362e2de02b2876f
   filename: IMG_1079.png
   mime: image/png
   size_bytes: 109020
   sender: me
   sent_at: '2026-05-03T21:08:12.431000-05:00'
   sha256: 2f3c3475d92090ee6f61b24b0343e131cff200c7d49a07ccdb08d585e5027173
-  description: Track info for "Mortal", a 3:13 Playboi Carti type beat produced by
-    Wherescarlos.
+  description: A 3:13 music track titled "Mortal", a Playboi Carti x Pierre Bourne
+    type beat.
   description_model: gemini-3-flash-preview
-  extracted_at: '2026-05-04T03:54:07.461954+00:00'
+  extracted_at: '2026-05-04T03:54:17.597643+00:00'
   source_available: true
-- id: de690ca02596dd9a
+- id: 2cfba350fc3023b7
   filename: IMG_4132.png
   mime: image/png
   size_bytes: 109020
@@ -99,7 +95,7 @@ attachments:
   description_model: gemini-3-flash-preview
   extracted_at: '2026-05-04T03:54:17.597643+00:00'
   source_available: true
-- id: 0005876ef6c76b56
+- id: 2bedd8788dc56fa4
   filename: IMG_5723.png
   mime: image/png
   size_bytes: 172630
@@ -111,7 +107,7 @@ attachments:
   description_model: gemini-3-flash-preview
   extracted_at: '2026-05-04T03:54:25.716531+00:00'
   source_available: true
-- id: 0feca5e84cfcc4b0
+- id: e92f13ffcc540d35
   filename: IMG_2507.png
   mime: image/png
   size_bytes: 213934
@@ -123,7 +119,7 @@ attachments:
   description_model: gemini-3-flash-preview
   extracted_at: '2026-05-04T03:54:49.599356+00:00'
   source_available: true
-- id: 6ea27d0ecd17de52
+- id: 3fb3057ca23f1f6b
   filename: IMG_2980.png
   mime: image/png
   size_bytes: 238257
@@ -135,9 +131,13 @@ attachments:
   description_model: gemini-3-flash-preview
   extracted_at: '2026-05-04T03:54:58.275390+00:00'
   source_available: true
-chat_message_guids_count: 68
+chat_message_guids_count: 73
 deleted_upstream: null
 superseded_by: null
+contact_handles:
+- '+15128458988'
+contact_name: Brennan Noah Austin
+chat_guid: null
 ---
 
 # Brennan — May 2026
@@ -205,7 +205,7 @@ superseded_by: null
 **21:05 — me:** Insane beat bruh
 **21:07 — Brennan:** Bro I want to make some rap tn but my goddamn setup I don’t understand how to work it with your template
 **21:07 — Brennan:** If you down to chill tn lmk
-**21:08 — me:** [image: Track info for "Mortal", a 3:13 Playboi Carti type beat produced by Wherescarlos.]
+**21:08 — me:** [image: A 3:13 music track titled "Mortal", a Playboi Carti x Pierre Bourne type beat.]
 **21:08 — me:** This shit fire too
 **21:08 — me:** Bro yee defo could be down
 **21:08 — me:** Might have to call it early tho got early morning calls tomorrow
@@ -222,3 +222,8 @@ superseded_by: null
 **21:16 — Brennan:** :bet
 **21:20 — me:** [image: A music player playing a 2:27 track titled "Messenger" by [FREE] Playboi Carti Type Beat.]
 **21:46 — Brennan:** Jake prolly not gonna come but I could pull up for a bit soon illl lyk for sure in about 15 mins
+**23:47 — me:** Yoo dude can we cop from ur homie tomo
+**23:48 — Brennan:** He reupping later tmrw for carts
+**23:48 — Brennan:** So after I get off work we can prolly trip
+**23:48 — Brennan:** Reup
+**23:48 — Brennan:** Not trip

@@ -29,11 +29,9 @@ sources:
       - data-sourcing
       - deals
       - engineering
+      - eclipse-ugc        # private channel C0AR2P8H268, 6 members
       - general
-      # eclipse-ugc dropped 2026-05-04: only `ugc` exists (archived public,
-      # 0 messages, not a member). If a private channel by that name exists,
-      # add it back here once the token has groups:read scope.
-    include_dms_with: []        # routing-time DM allowlist; populate later
+    include_dms_with: []   # routing-time DM allowlist; populate later
   drive: []        # deferred
   manual:
     watch_path: raw/manual/_inbox/

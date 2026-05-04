@@ -9,7 +9,7 @@ topic: ''
 created: '2024-08-28T11:11:13-05:00'
 is_archived: false
 archived_at: null
-member_count: 15
+member_count: 16
 members:
 - slug: daniel
   slack_user_id: U04HQ1YK91Q
@@ -35,9 +35,12 @@ members:
 - slug: adithya-shak-kumar
   slack_user_id: U0A993YPZ1Q
   display_name: Adithya Kumar (me)
+- slug: boomie-alert-bot
+  slack_user_id: U0ASF16V3LH
+  display_name: Boomie-alert-bot
 - slug: slackbot
   slack_user_id: USLACKBOT
   display_name: Slackbot
 first_seen: '2026-05-02T22:28:41-05:00'
-last_updated: '2026-05-02T22:30:41-05:00'
+last_updated: '2026-05-04T16:07:16-05:00'
 ---

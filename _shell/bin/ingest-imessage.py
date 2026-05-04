@@ -113,10 +113,20 @@ _MAC_EPOCH = datetime.datetime(2001, 1, 1, tzinfo=datetime.timezone.utc)
 
 
 def mac_absolute_to_dt(val: int | float | None) -> datetime.datetime | None:
+    """Convert chat.db Mac absolute time to datetime.
+
+    Round-2 fix (Codex + Gemini): use abs(val) to detect nanosecond vs
+    second magnitude. Pre-2001 dates store as NEGATIVE nanoseconds; the
+    old `val > 10**11` check sent them down the seconds branch and
+    raised OverflowError on the timedelta.
+    """
     if val is None:
         return None
-    secs = float(val) / 1e9 if val > 10**11 else float(val)
-    return _MAC_EPOCH + datetime.timedelta(seconds=secs)
+    secs = float(val) / 1e9 if abs(val) > 10**11 else float(val)
+    try:
+        return _MAC_EPOCH + datetime.timedelta(seconds=secs)
+    except (OverflowError, ValueError):
+        return None
 
 
 def cursor_sanity_check(conn: sqlite3.Connection, cur: dict) -> str:

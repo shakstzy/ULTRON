@@ -1,0 +1,167 @@
+# Account-level exclude clauses for adithya@synps.xyz
+# Applied post-fetch by route.py. Referenced from any sources.yaml that
+# subscribes this account via `accounts[].api_query.exclude_from`.
+#
+# Generated from gmail-schema-adithya-synps.md (Sections 3c, 4, 5, 7, 8).
+# Last refreshed: 2026-05-03.
+#
+# Rule grammar (route.py):
+#   - "from:<domain>"            bare domain, matches the domain or any subdomain
+#   - "from:*@<domain>"          fnmatch, only that exact domain
+#   - "from:<email>"             exact email
+#   - "from:*.<tld>"             fnmatch wildcard for TLD heuristic
+#   - "subject:\"<phrase>\""     case-insensitive contains
+#   - "from:X subject:\"Y\""     compound AND (Gmail-q=-style)
+#   - "from:X -subject:\"Y\""    compound AND-NOT (negation)
+
+excludes:
+  # ─────────────────────────────────────────────────────────────────────
+  # Cold-pitch / sales-spam domains (Section 3c, table 1) — auto-trash.
+  # Each line covers all senders at the domain (and its subdomains).
+  # ─────────────────────────────────────────────────────────────────────
+  - "from:igniteyourfunnels.com"
+  - "from:contentmarketingspot.net"
+  - "from:taxcoachpilot.com"
+  - "from:investglobalstartupfunds.com"
+  - "from:axcethrchampion.info"
+  - "from:leads-picker.net"
+  - "from:thegrowthsystemzlive.com"
+  - "from:aspenlineadvisors.com"
+  - "from:kitrumsvc.com"
+  - "from:labspublicrelations.top"
+  - "from:crmoutreach.com"
+  - "from:edgecatalystgroup.com"
+  - "from:rafazgroup.site"
+  - "from:hailgtm.com"
+  - "from:appointmentssell.com"
+  - "from:getladminssnow.com"
+  - "from:trynaveomarketing.top"
+  - "from:dinnerhqzilch.co"
+  - "from:dinnerhqswift.co"
+  - "from:strategicvertical.com"
+  - "from:drftbd.com"
+  - "from:vokerapps.com"
+  - "from:reachloopusa.info"
+  - "from:inthepitpodcast.com"
+  - "from:loopsystemsusa.info"
+  - "from:mypaulcampbell.com"
+  - "from:campbellaihiring.com"
+  - "from:redditagencycampaign.com"
+  - "from:marketingculturepilot.com"
+  - "from:websitesbycambridgestudio.com"
+  - "from:launchpathosglobal.com"
+  - "from:triviumservicestoday.co"
+  - "from:leadsendactivation.live"
+  - "from:growzifydigital.com"
+  - "from:jobzzard-base.com"
+  - "from:yeslinkdoctrllc.com"
+  - "from:stakeholderusa.com"
+  - "from:growthadvisoryexperts.com"
+  - "from:peakridgecleaning.co"
+  - "from:acquirelead.services"
+  - "from:webmobtechnologies.com"
+  - "from:hyscaler.com"
+  - "from:shared1.ccsend.com"
+  # Specific cold-pitch personas
+  - "from:insliderslide@gmail.com"
+  - "from:munchi.vega@quira.co"
+  - "from:richard@skinternationaltailors.com"
+
+  # ─────────────────────────────────────────────────────────────────────
+  # Throwaway TLDs (Section 5 heuristic) — synps-only.
+  # Cheap-domain spam detector. Real firms ship from .com.
+  # If a legit .info / .live / etc. ever needs through, surface a
+  # carve-out via a more-specific include rule on the workspace.
+  # ─────────────────────────────────────────────────────────────────────
+  - "from:*.info"
+  - "from:*.live"
+  - "from:*.site"
+  - "from:*.top"
+  - "from:*.services"
+  - "from:*.work"
+
+  # ─────────────────────────────────────────────────────────────────────
+  # Newsletter / product-update / promo senders (Section 3c, table 2).
+  # Bare domain unless a specific local-part is the only one we kill.
+  # ─────────────────────────────────────────────────────────────────────
+  # Solana ecosystem newsletters (breakpoint, accelerate, skyline, devrel)
+  - "from:mail.solana.org"
+  # Instagram — kill the whole subdomain except security@ alerts
+  - "from:mail.instagram.com -from:security@mail.instagram.com"
+  # ExpressVPN promos
+  - "from:news.expressvpn.com"
+  - "from:info.expressvpn.com"
+  # Cluely founder / company mass-blasts (looks personal, isn't)
+  - "from:cluely.com"
+  - "from:askcluely.com"
+  - "from:mail.cluely.com"
+  # NVIDIA news (NOT inceptionprogram@nvidia.com — that's critical Programs)
+  - "from:news@nvidia.com"
+  # GitBook newsletter senders
+  - "from:stateofdocs@gitbook.com"
+  - "from:notifications@gitbook.com"
+  - "from:addison@gitbook.com"
+  # FX Replay newsletter aliases
+  - "from:fxreplay.com"
+  # Google Cloud marketing
+  - "from:googlecloud@google.com"
+  # Zoom 3rd-party "live training" promo abuse
+  - "from:no-reply@zoom.us"
+  # Google Cloud Startups newsletter / welcome blasts
+  - "from:GoogleCloudStartups@google.com"
+  - "from:No-replyStartups@google.com"
+  - "from:no-replyStartups@google.com"
+  # Notion recommendation spam (kept auth/login codes via subject scoping)
+  - 'from:notify@mail.notion.so subject:"Trending in"'
+  - 'from:notify@mail.notion.so subject:"For you in"'
+  # Alchemy: marketing local-part dies, real human contacts (mihir@) survive
+  - "from:noreply@alchemy.com"
+  - 'from:hello@alchemy.com -subject:"invited to"'
+  # TradingView marketing (welcome only — kept transactional)
+  - "from:hello@tradingview.com"
+  - 'from:noreply@tradingview.com subject:"Welcome"'
+  # Cursor newsletters (kept billing alerts via subject scoping)
+  - "from:hi@mail.cursor.com"
+  - "from:michael@mail.cursor.com"
+  - 'from:hi@cursor.com subject:"Welcome to Cursor"'
+  - 'from:hi@cursor.com subject:"Making the most of Cursor"'
+  # TinyURL Black Friday promos
+  - "from:no-reply@tinyurl.email"
+  # Motion retention spam
+  - "from:harry@usemotion.app"
+  # DocSend pings — user explicitly killed all
+  - "from:no-reply@docsend.com"
+  # Workspace-noreply dual-personality (Section 8) — operational survives,
+  # marketing dies, scoped per-subject.
+  - 'from:workspace-noreply@google.com subject:"Product Update"'
+  - 'from:workspace-noreply@google.com subject:"Upgrade"'
+  - 'from:workspace-noreply@google.com subject:"Reach new customers"'
+  - 'from:workspace-noreply@google.com subject:"professional edge"'
+  - 'from:workspace-noreply@google.com subject:"Stand out on Google"'
+  - 'from:workspace-noreply@google.com subject:"conversation retention"'
+  - 'from:workspace-noreply@google.com subject:"Gemini in Workspace"'
+  - 'from:workspace-noreply@google.com subject:"Get paid by referring"'
+  - 'from:workspace-noreply@google.com subject:"refer Google Workspace"'
+  # Vercel "Ship" newsletter
+  - "from:ship@info.vercel.com"
+  # Squarespace product marketing (NOT no-reply@squarespace.com — that's domain-action)
+  - "from:noreply@mail.squarespace.com"
+  # Linktree privacy / promo
+  - "from:notifications@ae.linktr.ee"
+  - "from:hello@ma.linktr.ee"
+  # AWS startup-rep promos (Adithya is on GCP, not AWS)
+  - "from:ablelnat@amazon.com"
+  # Stale Workspace trial reminders
+  - 'from:workspace@google.com subject:"free trial is ending"'
+  # Calendly onboarding promos
+  - "from:teamcalendly@send.calendly.com"
+  # GCS feedback surveys (kept Re: Action Needed)
+  - 'from:cloudstartupsupport@google.com subject:"Your Feedback Matters"'
+  # Workspace ads-credit promo
+  - "from:googleworkspace-noreply@google.com"
+
+  # ─────────────────────────────────────────────────────────────────────
+  # Subject-only excludes (Section 4, 7) — kill regardless of sender.
+  # ─────────────────────────────────────────────────────────────────────
+  - 'subject:"Someone viewed the document deck"'
+  - 'subject:"weekly activity report"'

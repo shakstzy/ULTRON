@@ -120,7 +120,7 @@ Skip the entire thread if any of:
 - **MIME outside allowlist**: skip only if EVERY attachment is outside `{text/plain, text/html, application/pdf, image/*, multipart/*}`.
 - **Calendar-invite-only**: thread has attachments and every one is `.ics` (text/calendar).
 
-This blocklist is universal. Per-account exclusions go in `sources.yaml`'s `api_query.exclude`.
+This blocklist is universal. Per-account exclusions go in `sources.yaml`'s `api_query.exclude` (inline) or `api_query.exclude_from` (a path to a shared YAML at `_shell/config/account-excludes/<account-slug>.yaml` with a top-level `excludes:` list — used when the same noise sender list applies across multiple workspaces). Both are unioned post-fetch by `route.py`. Rule grammar supports compound predicates (`from:X subject:"Y"`) and negation (`-subject:"Z"`); see `route.py` docstring.
 
 ## Lock 6 — Dedup
 

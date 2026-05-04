@@ -1,9 +1,9 @@
 ---
 source: imessage
 workspace: personal
-ingested_at: '2026-05-04T03:51:37.881552+00:00'
+ingested_at: '2026-05-04T03:53:27.182240+00:00'
 ingest_version: 1
-content_hash: blake3:69c7a09d94426d664de118f8db899b059a16d04536634305e4ac894e071c0c50
+content_hash: blake3:803a8e28a899142e707db4efabc38a5874faa454bc848dd378bb8c5bb0b76b68
 provider_modified_at: '2026-04-30T22:24:22.451915-05:00'
 contact_slug: brennan-noah-austin
 contact_type: individual
@@ -26,10 +26,10 @@ attachments:
   sender: brennan-noah-austin
   sent_at: '2026-04-16T02:22:38.699370-05:00'
   sha256: 058645ac32e294599ac29602ee13a14366fbd2b5358ee2d03d1ec62384a468a8
-  description: First-person view from inside a car as the driver drifts around a dark
-    corner at night.
+  description: First-person view of a car performing a brief drift in an empty lot
+    at night.
   description_model: gemini-3-flash-preview
-  extracted_at: '2026-05-04T03:51:37.840136+00:00'
+  extracted_at: '2026-05-04T03:53:05.925165+00:00'
   source_available: true
 - id: a32a44357ff11a2e
   filename: FREE 0kmateo x zvch type beat (prod.G1mmpy!).mp3
@@ -137,10 +137,10 @@ attachments:
   sender: me
   sent_at: '2026-04-25T23:34:55.349211-05:00'
   sha256: 523c6dabb85db3d2da48d1a13300ba77a5b99de5e352b6ea32113af1b0017200
-  description: A dark Tesla (TX plate VYZ-0246) waits in heavy nighttime traffic near
-    the Duval Rd exit.
+  description: Black car in night traffic on a Texas highway near Duval Rd and Anderson
+    Mill Rd.
   description_model: gemini-3-flash-preview
-  extracted_at: '2026-05-04T03:51:37.878684+00:00'
+  extracted_at: '2026-05-04T03:53:16.688584+00:00'
   source_available: true
 - id: 2860ea127038d464
   filename: A0D8A865-8C94-4306-ABC0-E394FC6DC6BC.pluginPayloadAttachment
@@ -182,10 +182,10 @@ attachments:
   sender: me
   sent_at: '2026-04-30T13:45:32.034000-05:00'
   sha256: 686da6f35b8d3029dde637e8be0a9771caa1179f290b8e6c617ee3e836cf9e53
-  description: Screenshot of an iMessage chat sharing a Logic Pro project template
-    file.
+  description: A screenshot of an iMessage chat showing a shared Logic Pro project
+    template.
   description_model: gemini-3-flash-preview
-  extracted_at: '2026-05-04T03:51:37.878910+00:00'
+  extracted_at: '2026-05-04T03:53:27.178554+00:00'
   source_available: true
 chat_message_guids_count: 134
 deleted_upstream: null
@@ -200,7 +200,7 @@ superseded_by: null
 
 ## 2026-04-16 (Thursday)
 
-**02:22 — Brennan:** [video: First-person view from inside a car as the driver drifts around a dark corner at night.]
+**02:22 — Brennan:** [video: First-person view of a car performing a brief drift in an empty lot at night.]
 **02:22 — Brennan:** Lil drift before arriving home cause duck it
 **02:22 — Brennan:** Fuck*
 
@@ -320,7 +320,7 @@ I can’t believe u happy when u somewhere in the distance
 **23:16 — Brennan:** Yo if you wanna pull up on us we getting lit at pinballs and then we going back to homeboys prolly and going crazy
 **23:17 — Brennan:** Or if you want to make music me and 1 homeboy could pull up later at yours whatever you feel 6th ain’t the move rn
 **23:30 — Brennan:** Lmk when otw
-**23:34 — me:** [image: A dark Tesla (TX plate VYZ-0246) waits in heavy nighttime traffic near the Duval Rd exit.]
+**23:34 — me:** [image: Black car in night traffic on a Texas highway near Duval Rd and Anderson Mill Rd.]
 **23:35 — me:** I’m otw bro traffics fucked
 **23:38 — Brennan:** All good how far
 **23:44 — me:** There in 2
@@ -363,7 +363,7 @@ I can’t believe u happy when u somewhere in the distance
 **13:45 — me:** Will drop fl in a bit too
 **13:45 — me:** [file: Logic Pro project bundle]
 **13:45 — Brennan:** Yeah I’m Trynna scale my capital to make larger trades without leveraging or marginal trading
-**13:45 — me:** [image: Screenshot of an iMessage chat sharing a Logic Pro project template file.]
+**13:45 — me:** [image: A screenshot of an iMessage chat showing a shared Logic Pro project template.]
 **13:45 — me:** Fuck its bugging
 **13:45 — me:** Ill just email
 **13:45 — Brennan:** Bet

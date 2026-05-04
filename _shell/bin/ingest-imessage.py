@@ -100,11 +100,17 @@ def write_cursor(rowid: int, message_date: str, account: str = "local") -> None:
         f.flush()
         os.fsync(f.fileno())
     tmp.replace(p)
-    dir_fd = os.open(str(p.parent), os.O_RDONLY)
+    # Round-3 fix (Gemini): some macOS filesystems return EINVAL on
+    # fsync(dir_fd). Wrap so the cursor write doesn't fail when the rename
+    # already landed durably enough for our purposes.
     try:
-        os.fsync(dir_fd)
-    finally:
-        os.close(dir_fd)
+        dir_fd = os.open(str(p.parent), os.O_RDONLY)
+        try:
+            os.fsync(dir_fd)
+        finally:
+            os.close(dir_fd)
+    except OSError:
+        pass
 
 
 # Mac absolute time epoch: nanoseconds since 2001-01-01T00:00:00Z (post macOS
@@ -112,19 +118,29 @@ def write_cursor(rowid: int, message_date: str, account: str = "local") -> None:
 _MAC_EPOCH = datetime.datetime(2001, 1, 1, tzinfo=datetime.timezone.utc)
 
 
-def mac_absolute_to_dt(val: int | float | None) -> datetime.datetime | None:
-    """Convert chat.db Mac absolute time to datetime.
+_MAC_LOWER = datetime.datetime(2001, 1, 1, tzinfo=datetime.timezone.utc)
+_MAC_UPPER = datetime.datetime(2200, 1, 1, tzinfo=datetime.timezone.utc)
 
-    Round-2 fix (Codex + Gemini): use abs(val) to detect nanosecond vs
-    second magnitude. Pre-2001 dates store as NEGATIVE nanoseconds; the
-    old `val > 10**11` check sent them down the seconds branch and
-    raised OverflowError on the timedelta.
+
+def mac_absolute_to_dt(val: int | float | None) -> datetime.datetime | None:
+    """Convert chat.db Mac absolute time to UTC datetime.
+
+    Round-2 fix (Codex + Gemini): use abs(val) so pre-2001 negative dates
+    don't blow up the timedelta. Round-3 fix (Gemini): magnitude-based
+    detection (`> 10**11`) misclassifies values within ~100s of the 2001
+    epoch as seconds and shoots them into the year 2318. Try nanoseconds
+    first; if the result lands outside [2001, 2200), retry as seconds.
     """
     if val is None:
         return None
-    secs = float(val) / 1e9 if abs(val) > 10**11 else float(val)
     try:
-        return _MAC_EPOCH + datetime.timedelta(seconds=secs)
+        ns_dt = _MAC_EPOCH + datetime.timedelta(seconds=float(val) / 1e9)
+        if _MAC_LOWER <= ns_dt < _MAC_UPPER:
+            return ns_dt
+    except (OverflowError, ValueError):
+        pass
+    try:
+        return _MAC_EPOCH + datetime.timedelta(seconds=float(val))
     except (OverflowError, ValueError):
         return None
 

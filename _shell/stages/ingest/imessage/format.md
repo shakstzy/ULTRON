@@ -109,7 +109,7 @@ Field rules: attachments listed even when `copied_to_raw: false` (sha256 + size_
 ```
 
 Conventions:
-- **Canonical timezone**: `America/Chicago` for day-bucketing and `HH:MM` rendering. Per-workspace override via `sources.yaml.imessage.timezone`. Never use machine-local TZ; that breaks dedup when the host travels.
+- **Canonical timezone**: `America/Chicago`, applied to day-bucketing AND `HH:MM` rendering. Universal (no per-workspace override): bucketing must produce identical paths across workspaces or routing breaks. Round-3 fix (Gemini): the prior "per-workspace override" claim conflicted with single-pass render-then-route in `CONTEXT.md`. Machine-local TZ is forbidden.
 - **Mac absolute time**: chat.db `date` columns are nanoseconds since 2001-01-01T00:00:00Z (pre-10.13 was seconds, detect by magnitude). Convert deterministically before bucketing.
 - Day headers: `## YYYY-MM-DD (DayOfWeek)` in canonical TZ.
 - Message line: `**HH:MM — sender:** <body>`. Sender is Apple Contacts display name, or `me` for outgoing.
@@ -175,7 +175,7 @@ The renderer must:
 1. Filter all tapback rows out of the main message stream.
 2. Strip prefix from `associated_message_guid`: `p:0/`, `bp:`, `p:<n>/`. Target's own `message.guid` does not carry this prefix.
 3. Build map `stripped_target_guid -> list[(type, sender, tapback_date, removed?)]`.
-4. Apply 3xxx removals; latest per `(target, sender, type)` by `tapback_date` wins. **Removal-without-prior-add in the current batch**: query chat.db for the target's date, mark its month bucket for re-render (the prior add is baked into the existing markdown).
+4. Apply 3xxx removals; latest per `(target, sender, type)` by `tapback_date` wins. **Tapback events targeting messages outside the current batch (add OR remove)**: query chat.db for the target's date, compute its month bucket, and mark that bucket for re-render. This applies to both adds (cross-month new tapback) and removes (cross-month deletion of a baked-in tapback). Round-3 fix (Gemini): prior wording only flagged removes, leaving cross-month adds permanently lost.
 5. Render with the **tapback row's** `HH:MM`, not the target's. If target is in a different month bucket, mark that bucket for re-render (§ H). If target is unsent / deleted, render under a `[deleted target]` placeholder.
 6. Never emit tapbacks as standalone message rows.
 

@@ -121,18 +121,20 @@ def normalize_handle(h: str | None) -> str | None:
 
 
 def is_blocked(handle: str | None) -> bool:
+    """Universal blocklist; checks normalized form to catch
+    `1-800-...`, `(800)`, raw shortcodes, etc."""
     if not handle:
         return False
-    if any(handle.startswith(p) for p in TOLL_FREE):
+    n = normalize_handle(handle) or handle
+    if "@" in n:
+        local = n.split("@")[0].lower()
+        return any(local.startswith(p) for p in NOREPLY_LOCAL)
+    if any(n.startswith(p) for p in TOLL_FREE):
         return True
-    if "@" in handle and any(handle.split("@")[0].lower().startswith(p)
-                             for p in NOREPLY_LOCAL):
+    raw_digits = PHONE_NONDIGIT_RE.sub("", handle)
+    if raw_digits == handle and len(raw_digits) <= 6:
         return True
-    if re.fullmatch(r"\d{5,6}", handle):
-        return True
-    # 5-6 digit shortcode without `+` prefix and no leading 1
-    digits = PHONE_NONDIGIT_RE.sub("", handle)
-    if digits and digits == handle and len(digits) <= 6:
+    if re.fullmatch(r"\d{5,6}", n):
         return True
     return False
 
@@ -202,11 +204,15 @@ def scan_chats(conn) -> list[dict]:
 # Classification
 # ---------------------------------------------------------------------------
 def classify(chat: dict, phones: dict, emails: dict) -> tuple[str, dict]:
-    """Returns (tier, extras) where tier in {'1I','1G','2','3','4'}."""
-    is_group = chat["style"] == 43
-    matched_handles = []   # [(handle, name)]
+    """Returns (tier, extras) where tier in {'1I','1G','2','3','4'}.
+
+    Group classification is by handle COUNT (>1), not chat.style==43,
+    because SMS/RCS group fallbacks may not carry style=43 (Codex round 4).
+    """
+    is_group = len(chat["handles"]) > 1
+    matched_handles = []
     blocked_handles = []
-    raw_handles = []       # [(handle, normalized, name_or_None)]
+    raw_handles = []
     for h in chat["handles"]:
         n = normalize_handle(h)
         name = None
@@ -440,18 +446,28 @@ def main():
     for c, t, _ in classified:
         msgs_by_tier[t] += c["total_msgs"]
 
-    # Build tier-1 entries
+    # Build tier-1 entries.
+    # Group dedup: SMS/MMS fallback creates a new chat_guid with same
+    # member set; pick the chat with the most messages as canonical
+    # (Gemini round 4 / Codex round 4).
     used_slugs = set()
     individuals_entries = []
     groups_entries = []
+    seen_group_member_sets = {}  # frozenset(handles) -> chat dict
     for chat, tier, extras in classified:
         if tier == "1I":
             name = extras["matched"][0][1] if extras["matched"] else None
             individuals_entries.append(
                 build_individual_entry(chat, name, used_slugs))
         elif tier == "1G":
-            groups_entries.append(
-                build_group_entry(chat, phones, emails, used_slugs))
+            members = frozenset(chat["handles"])
+            prior = seen_group_member_sets.get(members)
+            if prior is None or chat["total_msgs"] > prior["total_msgs"]:
+                seen_group_member_sets[members] = chat
+    # Emit one group entry per unique member set
+    for members, chat in seen_group_member_sets.items():
+        groups_entries.append(
+            build_group_entry(chat, phones, emails, used_slugs))
 
     # Merge into sources.yaml
     new_indiv, new_group = merge_sources_yaml(cfg_path, individuals_entries, groups_entries,

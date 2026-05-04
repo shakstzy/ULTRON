@@ -418,9 +418,16 @@ def normalize_state_event(msg: dict) -> dict:
 
 
 def is_skippable(msg: dict) -> bool:
-    if msg.get("bot_id"):
-        return True
     sub = msg.get("subtype")
+    # Slack tags every API-posted message with `bot_id`, including
+    # messages sent from a user's own xoxp token via chat.postMessage.
+    # The discriminator for "bot vs user" is presence of a `user` field
+    # AND subtype != bot_message. A real bot post has no `user` (or
+    # subtype=bot_message); an app-issued user post has both.
+    if sub == "bot_message":
+        return True
+    if msg.get("bot_id") and not msg.get("user"):
+        return True
     if sub in SKIP_SUBTYPES:
         return True
     if sub == "message_deleted":

@@ -28,10 +28,6 @@ sources:
         exclude_from: _shell/config/account-excludes/adithya-synps.yaml
   imessage:
     contacts:
-    - slug: brennan-noah-austin
-      handles:
-      - '+15128458988'
-      full_archive: true
     - slug: ryan-xie
       handles:
       - '+17048901338'
@@ -2089,6 +2085,10 @@ sources:
       handles:
       - '+16617473071'
       full_archive: true
+    - slug: dad-9967
+      handles:
+      - '+15104499967'
+      full_archive: true
     - slug: rashmi-hinge-nyc
       handles:
       - '+17039437056'
@@ -3145,6 +3145,10 @@ sources:
       handles:
       - '+15126509948'
       full_archive: true
+    - slug: brennan-noah-austin
+      handles:
+      - '+15128458988'
+      full_archive: true
     - slug: bibby-grade-a-la
       handles:
       - '+13122418552'
@@ -3207,7 +3211,7 @@ sources:
       chat_guid: any;+;chat695855693289409174
       full_archive: true
     - slug: group-dad-mom
-      chat_guid: any;+;chat387301513996727991
+      chat_guid: any;+;chat68815810227604614
       full_archive: true
     - slug: group-arya-mom
       chat_guid: any;+;chat507083773155670326
@@ -3245,9 +3249,6 @@ sources:
     - slug: group-sid
       chat_guid: any;+;d0d60b7c9b3c4c6cb9f0df7987bf2a81
       full_archive: true
-    - slug: group-pseuhas-rushil-2
-      chat_guid: any;+;chat374139229874425621
-      full_archive: true
     - slug: group-dad-mom-2
       chat_guid: any;+;chat614379883125509849
       full_archive: true
@@ -3275,8 +3276,8 @@ sources:
     - slug: group-louie-tyler-yosef
       chat_guid: any;+;chat878560780941305399
       full_archive: true
-    - slug: group-amadeus-evan
-      chat_guid: any;+;chat979301548593890461
+    - slug: deus-shak-verb
+      chat_guid: any;+;chat628020167924513802
       full_archive: true
     - slug: group-evan-lorenzo
       chat_guid: any;+;chat538074616057638
@@ -3311,12 +3312,6 @@ sources:
     - slug: group-avinash-sandeep
       chat_guid: any;+;a06cf62defaf495db6ee6a5355b47bb8
       full_archive: true
-    - slug: deus-shak-verb
-      chat_guid: any;+;chat628020167924513802
-      full_archive: true
-    - slug: group-adarsh-prabhat-pseuhas-3
-      chat_guid: any;+;chat458085558200217397
-      full_archive: true
     - slug: tweakers
       chat_guid: any;+;4b181b2bf86448bf96e05f75b79cd7f2
       full_archive: true
@@ -3345,7 +3340,7 @@ sources:
       chat_guid: any;+;chat94240729121287321
       full_archive: true
     - slug: group-jose-mom
-      chat_guid: any;+;chat510918379537244362
+      chat_guid: any;+;chat38738359920373489
       full_archive: true
     - slug: group-hunter-rylen
       chat_guid: any;+;chat378486070352501452
@@ -3423,7 +3418,7 @@ sources:
       chat_guid: any;+;chat845532027596838917
       full_archive: true
     - slug: group-mom-steve
-      chat_guid: any;+;chat845294520652037404
+      chat_guid: any;+;chat38669510974768153
       full_archive: true
     - slug: group-donny-malik
       chat_guid: any;+;chat993044599997114213
@@ -3436,9 +3431,6 @@ sources:
       full_archive: true
     - slug: group-aiden-alex-ananya
       chat_guid: any;+;chat653603342752350843
-      full_archive: true
-    - slug: group-dad-mom-3
-      chat_guid: any;+;chat68815810227604614
       full_archive: true
     - slug: group-amadeus-angel-austin-2
       chat_guid: any;+;chat737562944169103487
@@ -3463,12 +3455,6 @@ sources:
       full_archive: true
     - slug: group-amadeus-evan-jose
       chat_guid: any;+;chat209630200588776137
-      full_archive: true
-    - slug: group-jose-mom-2
-      chat_guid: any;+;chat38738359920373489
-      full_archive: true
-    - slug: group-mom-steve-2
-      chat_guid: any;+;chat38669510974768153
       full_archive: true
     - slug: group-arya-dravin
       chat_guid: any;+;chat840340419316350474
@@ -3511,9 +3497,6 @@ sources:
       full_archive: true
     - slug: group-evan-filip
       chat_guid: any;+;chat563967653419380746
-      full_archive: true
-    - slug: group-dad
-      chat_guid: any;+;chat88144661564331718
       full_archive: true
     - slug: group-mo-pseuhas-shervin
       chat_guid: any;+;chat95939376960216558
@@ -3563,20 +3546,14 @@ sources:
     - slug: group-pseuhas-risheek-santosh
       chat_guid: any;+;chat726144821707779449
       full_archive: true
-    - slug: group-amadeus-evan-2
-      chat_guid: any;+;chat137891297989176234
-      full_archive: true
-    - slug: group-rishika
-      chat_guid: any;+;chat905172563267650983
+    - slug: xx
+      chat_guid: any;+;chat666816675245322793
       full_archive: true
     - slug: group-keith-mom-ryan
       chat_guid: any;+;chat210765288736411913
       full_archive: true
     - slug: group-jamal
       chat_guid: any;+;chat596663733133669579
-      full_archive: true
-    - slug: nozzed
-      chat_guid: any;+;chat83971869331713757
       full_archive: true
     - slug: group-abraham-pseuhas-xanos
       chat_guid: any;+;chat52480967253886948
@@ -3587,17 +3564,8 @@ sources:
     - slug: group-edwin-rushil
       chat_guid: any;+;chat303507237140574891
       full_archive: true
-    - slug: xx
-      chat_guid: any;+;chat666816675245322793
-      full_archive: true
-    - slug: group-arya-keith-2
-      chat_guid: any;+;chat674922737674412370
-      full_archive: true
     - slug: group-dr-ryan
       chat_guid: any;+;chat245153138537692397
-      full_archive: true
-    - slug: group-keith-mom-ryan-2
-      chat_guid: any;+;chat720403917864867841
       full_archive: true
     - slug: group-adarsh-prabhat-saif
       chat_guid: any;+;chat737474744159867037
@@ -3633,7 +3601,7 @@ sources:
       chat_guid: any;+;chat507770748112955650
       full_archive: true
     - slug: group-mom-sandeep
-      chat_guid: any;+;chat265761213251307180
+      chat_guid: any;+;chat979782752236924436
       full_archive: true
     - slug: group-amadeus-evan-stacey
       chat_guid: any;+;chat45056665911602943
@@ -3656,9 +3624,6 @@ sources:
     - slug: group-mom-6
       chat_guid: any;+;chat192419575423304908
       full_archive: true
-    - slug: group-dad-mom-rema-2
-      chat_guid: any;+;chat395843358754784250
-      full_archive: true
     - slug: group-griffin-noah-2
       chat_guid: any;+;chat117916676478662451
       full_archive: true
@@ -3678,16 +3643,10 @@ sources:
       chat_guid: any;+;chat524480639227937648
       full_archive: true
     - slug: group-amadeus-darshit-evan
-      chat_guid: any;+;chat555938012970993712
+      chat_guid: any;+;chat434677248509379102
       full_archive: true
     - slug: group-adarsh-prabhat-rushil-2
-      chat_guid: any;+;chat32142031935816665
-      full_archive: true
-    - slug: group-mom-sandeep-2
-      chat_guid: any;+;chat979782752236924436
-      full_archive: true
-    - slug: group-arya-hunter-rylen-2
-      chat_guid: any;+;chat849535077394048914
+      chat_guid: any;+;chat401334562339148213
       full_archive: true
     - slug: '23109'
       chat_guid: any;+;chat481093118121964907
@@ -3711,15 +3670,15 @@ sources:
       chat_guid: any;+;chat354593509670965170
       full_archive: true
     - slug: group-angel-mom
-      chat_guid: any;+;chat412288859719684929
+      chat_guid: any;+;chat788460393144172065
       full_archive: true
     - slug: group-amadeus-austin-evan
       chat_guid: any;+;chat227751139432869567
       full_archive: true
-    - slug: group-amadeus-evan-3
+    - slug: group-amadeus-evan
       chat_guid: any;+;chat707647789870531264
       full_archive: true
-    - slug: group-amadeus-evan-4
+    - slug: group-amadeus-evan-2
       chat_guid: any;+;chat273804744865403890
       full_archive: true
     - slug: group-amadeus-ashley-evan
@@ -3770,20 +3729,11 @@ sources:
     - slug: group-nikhil-parth
       chat_guid: any;+;chat319750684765986101
       full_archive: true
-    - slug: group-aiden-alex-ananya-3
-      chat_guid: any;+;chat729955659250959947
-      full_archive: true
     - slug: group-amadeus-ernestina-evan
       chat_guid: any;+;chat314295219194201584
       full_archive: true
-    - slug: group-angel-mom-2
-      chat_guid: any;+;chat788460393144172065
-      full_archive: true
     - slug: group-adithya-ryan-tyler
       chat_guid: any;+;chat800911952621559613
-      full_archive: true
-    - slug: group-ankit-edwin-rohin-2
-      chat_guid: any;+;chat800511207185085757
       full_archive: true
     - slug: group-adarsh-nathan-prabhat
       chat_guid: any;+;chat849071462129522143
@@ -3803,9 +3753,6 @@ sources:
     - slug: group-anthony-dad-mom
       chat_guid: any;+;chat304935172592211127
       full_archive: true
-    - slug: group-ankit-edwin-rohin-3
-      chat_guid: any;+;chat702431437114484234
-      full_archive: true
     - slug: group-linh-rishika
       chat_guid: any;+;chat795178047893569667
       full_archive: true
@@ -3816,10 +3763,7 @@ sources:
       chat_guid: any;+;chat996232446126221942
       full_archive: true
     - slug: group-amadeus-arya
-      chat_guid: any;+;chat70879544876452271
-      full_archive: true
-    - slug: group-amadeus-arya-2
-      chat_guid: any;+;chat532914945399634
+      chat_guid: any;+;chat540864198435128390
       full_archive: true
     - slug: group-geno-neek-tito
       chat_guid: any;+;chat501109079223638570
@@ -3833,9 +3777,6 @@ sources:
     - slug: group-caitlin-keith-ryan-2
       chat_guid: any;+;chat264406873384197690
       full_archive: true
-    - slug: group-adarsh-prabhat-rushil-3
-      chat_guid: any;+;chat344925250724604983
-      full_archive: true
     - slug: group-cris-gabriel
       chat_guid: any;+;chat129922688626586904
       full_archive: true
@@ -3844,9 +3785,6 @@ sources:
       full_archive: true
     - slug: group-arya-brandon-dad
       chat_guid: any;+;chat67575690131876705
-      full_archive: true
-    - slug: group-arya-mom-2
-      chat_guid: any;+;chat262863955807051547
       full_archive: true
     - slug: group-kumar-z
       chat_guid: any;+;chat388711428231167128
@@ -3866,9 +3804,6 @@ sources:
     - slug: group-arya-caitlin
       chat_guid: any;+;chat423558599833830083
       full_archive: true
-    - slug: group-amadeus-arya-3
-      chat_guid: any;+;chat540864198435128390
-      full_archive: true
     - slug: group-ryan-tyler
       chat_guid: any;+;chat751773787983139719
       full_archive: true
@@ -3884,7 +3819,7 @@ sources:
     - slug: group-reed
       chat_guid: any;+;chat494905910970211150
       full_archive: true
-    - slug: group-dad-2
+    - slug: group-dad
       chat_guid: any;+;chat23990055735088844
       full_archive: true
     - slug: group-candice-keith-ryan
@@ -3896,7 +3831,7 @@ sources:
     - slug: group-brandon-stacey
       chat_guid: any;+;chat393237041131074083
       full_archive: true
-    - slug: group-dad-mom-4
+    - slug: group-dad-mom-3
       chat_guid: any;+;chat925435650616209011
       full_archive: true
     - slug: group-keith-ryan-tyler
@@ -3910,9 +3845,6 @@ sources:
       full_archive: true
     - slug: group-christine-mom-noah
       chat_guid: any;+;chat41883537775034647
-      full_archive: true
-    - slug: group-adarsh-prabhat-rushil-4
-      chat_guid: any;+;chat401334562339148213
       full_archive: true
     - slug: group-arya-lance
       chat_guid: any;+;chat17614637129456201
@@ -3935,7 +3867,7 @@ sources:
     - slug: group-anthony-dad-mom-2
       chat_guid: any;+;chat667798179908878584
       full_archive: true
-    - slug: group-dad-3
+    - slug: group-dad-2
       chat_guid: any;+;chat772779842309688961
       full_archive: true
     - slug: group-prabhat-rushil
@@ -3962,9 +3894,6 @@ sources:
     - slug: group-covaughn-mychal-randy
       chat_guid: any;+;chat562654781116170776
       full_archive: true
-    - slug: kumar-family
-      chat_guid: any;+;chat186047608327962281
-      full_archive: true
     - slug: group-lucy-nick
       chat_guid: any;+;chat915618893182766269
       full_archive: true
@@ -3986,10 +3915,10 @@ sources:
     - slug: group-ryan
       chat_guid: any;+;chat249897649353509994
       full_archive: true
-    - slug: group-dad-mom-5
+    - slug: group-dad-mom-4
       chat_guid: any;+;chat978186427117103316
       full_archive: true
-    - slug: group-dad-4
+    - slug: group-dad-3
       chat_guid: any;+;chat47902370870470121
       full_archive: true
     - slug: group-mom-sidhant
@@ -4022,9 +3951,6 @@ sources:
     - slug: group-mom-9
       chat_guid: any;+;chat61761788920226889
       full_archive: true
-    - slug: group-amadeus-evan-filip
-      chat_guid: any;+;chat139370904324907166
-      full_archive: true
     - slug: group-francesco-james
       chat_guid: any;+;chat874084084407927032
       full_archive: true
@@ -4033,9 +3959,6 @@ sources:
       full_archive: true
     - slug: group-mom-10
       chat_guid: any;+;chat331146652655476210
-      full_archive: true
-    - slug: group-amadeus-darshit-evan-2
-      chat_guid: any;+;chat434677248509379102
       full_archive: true
     - slug: group-yosef-zach
       chat_guid: any;+;1e8fe811c2ab4e43afa84e530a210dff

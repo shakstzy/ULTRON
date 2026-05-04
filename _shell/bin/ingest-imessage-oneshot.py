@@ -163,6 +163,128 @@ def _nullctx():
     yield
 
 
+# ---------------------------------------------------------------------------
+# Attachment description (Gemini Flash via CLI @<path>)
+# ---------------------------------------------------------------------------
+PROMPT_VISION = (
+    "Describe what's in this in one sentence under 100 characters. "
+    "Be specific and concrete. No preamble, just the description."
+)
+PROMPT_TEXT = (
+    "Summarize this file in two sentences under 200 characters total. "
+    "Surface-level only: what is it, what's the gist."
+)
+
+
+def hash_source(path: Path) -> tuple[str | None, bool]:
+    """Returns (sha256_hex_or_None, source_available_bool)."""
+    if not path.exists():
+        return None, False
+    if path.is_dir():
+        return None, True  # bundle, no single-file hash
+    try:
+        h = hashlib.sha256()
+        with open(path, "rb") as f:
+            for chunk in iter(lambda: f.read(64 * 1024), b""):
+                h.update(chunk)
+        return h.hexdigest(), True
+    except OSError:
+        return None, False
+
+
+def kind_of(mime: str | None, src: Path | None) -> str:
+    if src is not None and src.is_dir():
+        return "bundle"
+    if not mime:
+        return "file"
+    if mime.startswith("image/"):
+        return "image"
+    if mime.startswith("video/"):
+        return "video"
+    if mime.startswith("audio/"):
+        return "audio"
+    if mime.startswith("text/") or mime in ("application/pdf", "application/json"):
+        return "text"
+    return "file"
+
+
+def bundle_description(src: Path, ext: str) -> str:
+    """Fixed placeholder for known bundle types. No Gemini call."""
+    table = {
+        ".logicx": "Logic Pro project bundle",
+        ".band": "GarageBand project bundle",
+        ".photoslibrary": "Apple Photos library bundle",
+        ".app": "macOS application bundle",
+        ".pkg": "Installer package bundle",
+    }
+    return table.get(ext.lower(), f"{ext.lstrip('.')} bundle")
+
+
+def gemini_describe(path: Path, kind: str) -> tuple[str | None, str | None]:
+    """Returns (description, model) for a kind we extract; (None, None) otherwise.
+
+    v1: only `image` and `video` go through Gemini Flash. Audio / opaque /
+    bundles return (None, None) per format.md § G.
+    """
+    if kind not in ("image", "video", "text"):
+        return None, None
+    if not path.exists() or path.is_dir():
+        return None, None
+    prompt = PROMPT_VISION if kind in ("image", "video") else PROMPT_TEXT
+    cmd = [
+        "gemini",
+        "-p", f"{prompt}\n\n@{path}",
+        "-o", "text",
+        "--approval-mode", "plan",
+    ]
+    try:
+        proc = subprocess.run(
+            cmd, capture_output=True, text=True, timeout=120,
+        )
+    except (subprocess.TimeoutExpired, FileNotFoundError):
+        return None, None
+    if proc.returncode != 0:
+        return None, None
+    desc = proc.stdout.strip()
+    # Some CLI runs prepend boilerplate; take last non-empty line if it's a
+    # one-liner. Truncate to spec budget.
+    lines = [ln.strip() for ln in desc.splitlines() if ln.strip()]
+    if not lines:
+        return None, None
+    desc = lines[-1]
+    cap = 100 if kind in ("image", "video") else 200
+    if len(desc) > cap:
+        desc = desc[: cap - 1].rstrip() + "…"
+    return desc, DESCRIPTION_MODEL
+
+
+def load_prior_descriptions(month_path: Path) -> dict[tuple[str, str], str]:
+    """Read existing month file's frontmatter, build {(sha256, model): description}.
+    Used for idempotent re-runs: skip Gemini call if same binary + same model."""
+    if not month_path.exists():
+        return {}
+    try:
+        text = month_path.read_text()
+    except OSError:
+        return {}
+    m = re.match(r"^---\n(.+?)\n---\n", text, re.DOTALL)
+    if not m:
+        return {}
+    try:
+        import yaml as _yaml  # already imported at module scope
+        fm = _yaml.safe_load(m.group(1)) or {}
+    except Exception:
+        return {}
+    out = {}
+    for a in fm.get("attachments", []) or []:
+        sha = a.get("sha256")
+        model = a.get("description_model")
+        desc = a.get("description")
+        if sha and model and desc:
+            out[(sha, model)] = desc
+    return out
+
+
 def find_chats_for_handles(conn, handles):
     """Return chat ROWIDs whose participants exactly match the handle set."""
     placeholders = ",".join(["?"] * len(handles))
@@ -314,12 +436,11 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
 
     # Render months
     written_files = []
-    bucket_attach_budget = {}
-    for month_key in sorted(by_month):
-        bucket_attach_budget[month_key] = attach_budget_bytes
     total_atts_inlined = 0
-    total_atts_copied = 0
-    total_atts_pruned = 0
+    total_atts_described = 0
+    total_atts_skipped = 0   # null description (audio / opaque / bundle)
+    total_atts_unavailable = 0
+    total_atts_reused = 0
 
     for month_key in sorted(by_month):
         month_msgs = by_month[month_key]
@@ -330,93 +451,66 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
 
         year = first_dt.year
         month_dir = individuals_dir / str(year)
-        att_dir = month_dir / "_attachments"
         if not dry_run:
             month_dir.mkdir(parents=True, exist_ok=True)
 
-        # Render attachments + copy per § G
-        running = 0
-        attachment_pruned = False
+        # Idempotency: load prior descriptions keyed on (sha256, model).
+        month_path = month_dir / f"{month_key}__{slug}.md"
+        prior_desc = load_prior_descriptions(month_path)
+
+        # Build attachments[] via description extraction per § G
         fm_atts = []
+        skip_descriptions = (attach_budget_bytes == 0)  # --no-descriptions
         for r in month_msgs:
             for a in att_by_msg.get(r[0], []):
                 aid = _blake3(
                     f"{a['guid'] or a['filename']}|"
                     f"{a['size_bytes'] or 0}|{a['rowid']}".encode()
                 ).hexdigest()[:16]
-                size = a["size_bytes"] or 0
-                ext = (Path(a["filename"]).suffix or "").lower() or ".bin"
-                copied = False
-                rel_path = None
-                src_missing = False
-                sha256 = None
-                if a["src_path"]:
-                    src = Path(os.path.expanduser(a["src_path"]))
-                else:
-                    src = None
-                if src is None or not src.exists():
-                    src_missing = True
-                # Bundles (.logicx, .photoslibrary, .app, ...) come through
-                # as directories. Compute on-disk size, copy via copytree.
-                is_bundle = src is not None and src.is_dir()
-                if is_bundle:
-                    try:
-                        actual_size = sum(
-                            p.stat().st_size for p in src.rglob("*") if p.is_file()
-                        )
-                    except OSError:
-                        actual_size = size or 0
-                else:
-                    actual_size = size or 0
-                if running + actual_size > attach_budget_bytes:
-                    attachment_pruned = True
-                    total_atts_pruned += 1
-                elif src_missing:
+                src = Path(os.path.expanduser(a["src_path"])) if a["src_path"] else None
+                sha256, source_available = (None, False) if src is None else hash_source(src)
+                if not source_available:
+                    total_atts_unavailable += 1
+                kind = kind_of(a["mime"], src)
+                description = None
+                model = None
+                if not source_available:
                     pass
+                elif skip_descriptions:
+                    pass
+                elif sha256 and (sha256, DESCRIPTION_MODEL) in prior_desc:
+                    description = prior_desc[(sha256, DESCRIPTION_MODEL)]
+                    model = DESCRIPTION_MODEL
+                    total_atts_reused += 1
+                elif kind == "bundle":
+                    ext = Path(a["filename"]).suffix or ""
+                    description = bundle_description(src, ext)
+                    model = None  # static, no model
+                    total_atts_described += 1
+                elif kind in ("image", "video", "text"):
+                    description, model = gemini_describe(src, kind)
+                    if description:
+                        total_atts_described += 1
+                    else:
+                        total_atts_skipped += 1
                 else:
-                    rel_path = f"_attachments/{aid}{ext}"
-                    if not dry_run:
-                        att_dir.mkdir(parents=True, exist_ok=True)
-                        dest = att_dir / f"{aid}{ext}"
-                        if dest.exists():
-                            pass  # idempotent re-run; skip copy
-                        elif is_bundle:
-                            shutil.copytree(src, dest)
-                        else:
-                            shutil.copy2(src, dest)
-                        # sha256: hash file contents directly, or for
-                        # bundles hash a sorted manifest of (relpath, size, sha256)
-                        if is_bundle:
-                            h = hashlib.sha256()
-                            for p in sorted(dest.rglob("*")):
-                                if p.is_file():
-                                    h.update(str(p.relative_to(dest)).encode())
-                                    h.update(b":")
-                                    sub = hashlib.sha256()
-                                    with open(p, "rb") as f:
-                                        for chunk in iter(lambda: f.read(64 * 1024), b""):
-                                            sub.update(chunk)
-                                    h.update(sub.digest())
-                                    h.update(b"\n")
-                            sha256 = h.hexdigest()
-                        else:
-                            h = hashlib.sha256()
-                            with open(dest, "rb") as f:
-                                for chunk in iter(lambda: f.read(64 * 1024), b""):
-                                    h.update(chunk)
-                            sha256 = h.hexdigest()
-                    copied = True
-                    running += actual_size
-                    total_atts_copied += 1
+                    # audio / opaque / unknown
+                    total_atts_skipped += 1
                 fm_atts.append({
-                    "id": aid, "filename": a["filename"], "mime": a["mime"],
+                    "id": aid,
+                    "filename": a["filename"],
+                    "mime": a["mime"],
                     "size_bytes": a["size_bytes"],
                     "sender": "me" if r[4] else slug,
                     "sent_at": to_dt(r[3]).astimezone(TZ).isoformat(),
                     "sha256": sha256,
-                    "copied_to_raw": copied,
-                    "attachment_path": rel_path,
-                    "source_missing": src_missing,
+                    "description": description,
+                    "description_model": model,
+                    "extracted_at": (
+                        datetime.datetime.now(datetime.timezone.utc).isoformat()
+                        if description and model else None
+                    ),
+                    "source_available": source_available,
                 })
 
         # Render body. First-name-only display in body lines (spec example
@@ -440,12 +534,20 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
             edited = " (edited)" if dedit and dedit > 0 else ""
 
             atts = att_by_msg.get(rowid, [])
+            # Look up the description we computed in the frontmatter pass
+            atts_meta = {a["id"]: a for a in fm_atts if a["sent_at"] == to_dt(r[3]).astimezone(TZ).isoformat() and a["sender"] == ("me" if from_me else slug)}
             for a in atts:
-                kind = attachment_kind(a["mime"])
-                lines.append(
-                    f"**{dt.strftime('%H:%M')} — {sender}:** "
-                    f"[{kind}: {a['filename']}, {human_size(a['size_bytes'])}]"
-                )
+                aid = _blake3(
+                    f"{a['guid'] or a['filename']}|"
+                    f"{a['size_bytes'] or 0}|{a['rowid']}".encode()
+                ).hexdigest()[:16]
+                kind = attachment_kind(a["mime"]) if not (Path(os.path.expanduser(a["src_path"] or "")).is_dir() if a["src_path"] else False) else "file"
+                meta = atts_meta.get(aid)
+                desc = (meta or {}).get("description") if meta else None
+                if desc:
+                    lines.append(f"**{dt.strftime('%H:%M')} — {sender}:** [{kind}: {desc}]")
+                else:
+                    lines.append(f"**{dt.strftime('%H:%M')} — {sender}:** [{kind}: {a['filename']}]")
                 total_atts_inlined += 1
             body_text = (text or "").strip().replace("￼", "").strip()
             if body_text:
@@ -491,7 +593,6 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
             "my_message_count": my_count,
             "their_message_count": their_count,
             "attachments": fm_atts,
-            "attachment_pruned": attachment_pruned,
             "chat_message_guids_count": guids_in_month,
             "deleted_upstream": None,
             "superseded_by": None,
@@ -510,8 +611,10 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
         "failed": failed,
         "url_balloon_skipped": skipped_url,
         "atts_inlined": total_atts_inlined,
-        "atts_copied": total_atts_copied,
-        "atts_pruned": total_atts_pruned,
+        "atts_described": total_atts_described,
+        "atts_skipped": total_atts_skipped,
+        "atts_unavailable": total_atts_unavailable,
+        "atts_reused": total_atts_reused,
         "tapbacks_attached": sum(len(v) for v in tapbacks.values()),
     }
 
@@ -559,8 +662,8 @@ def main():
     ap.add_argument("--workspace", required=True)
     ap.add_argument("--contact", help="filter to single allowlisted slug")
     ap.add_argument("--dry-run", action="store_true")
-    ap.add_argument("--no-attachments", action="store_true",
-                    help="skip attachment copy (still inline references)")
+    ap.add_argument("--no-descriptions", action="store_true",
+                    help="skip Gemini description calls (body falls back to filename)")
     args = ap.parse_args()
 
     ws_root = ULTRON_ROOT / "workspaces" / args.workspace
@@ -584,7 +687,8 @@ def main():
     print(f"dry-run:   {args.dry_run}")
 
     conn = sqlite3.connect(f"file:{DB}?mode=ro", uri=True)
-    budget = 0 if args.no_attachments else ATTACHMENT_BUDGET_BYTES
+    # `attach_budget_bytes`: 0 = skip Gemini calls, anything else = enable.
+    budget = 0 if args.no_descriptions else 1
     for c in contacts:
         result = render_contact(conn, c, args.workspace, out_root, args.dry_run, budget)
         if not result:
@@ -601,8 +705,10 @@ def main():
         print(f"  attrBody failed:       {result['failed']}")
         print(f"  url-balloon skipped:   {result['url_balloon_skipped']}")
         print(f"  attachments inlined:   {result['atts_inlined']}")
-        print(f"  attachments copied:    {result['atts_copied']}")
-        print(f"  attachments pruned:    {result['atts_pruned']}")
+        print(f"  attachments described: {result['atts_described']}")
+        print(f"  attachments reused:    {result['atts_reused']} (idempotent)")
+        print(f"  attachments skipped:   {result['atts_skipped']} (audio/opaque/bundle)")
+        print(f"  attachments unavail:   {result['atts_unavailable']} (source missing)")
         print(f"  tapbacks attached:     {result['tapbacks_attached']}")
         if not args.dry_run:
             append_ledger(ws_root, result["slug"], result["files"])

@@ -86,7 +86,7 @@ superseded_by: null
 ---
 ```
 
-Field rules: attachments listed even when `copied_to_raw: false` (sha256 + size_bytes preserved for later reconciliation). Reactions live inline in the body, not in `attachments`. Full edit history deferred to v1.5. When `message.text` is null (frequent on macOS 13+), parse the `attributedBody` typedstream blob to recover text; empty body acceptable only when both columns are null. ROWID min/max intentionally NOT stored (ROWIDs reset / have gaps); `chat.message.guid` is stable identity.
+Field rules: attachments described, not copied (§ G). `description` may be null for audio / opaque / bundles; body falls back to filename. Reactions inline in body, not `attachments`. Full edit history deferred to v1.5. When `message.text` is null (frequent macOS 13+), parse `attributedBody` typedstream blob; empty body acceptable only when both columns null. ROWID min/max NOT stored; `chat.message.guid` is stable identity.
 
 ## E. Body format (LOCK 5)
 ```markdown
@@ -131,15 +131,21 @@ Skip messages where the handle matches:
 
 Skip app messages where `balloon_bundle_id` is `com.apple.messages.URLBalloonProvider` **with no text body** (standalone link previews; the preview captured once inline on the original message is preserved).
 
-## G. Attachment copy strategy (LOCK 7)
-For each attachment in a month being rendered:
+## G. Attachment description strategy (LOCK 7)
+Raw stores **descriptions, not binaries.** Reduces disk, keeps markdown
+self-contained, gives wiki queryable content without binary deref.
 
-1. Compute `attachment_id` = first 16 hex chars of `blake3(attachment.guid OR transfer_name OR filename, size_bytes_or_zero, attachment.ROWID)`. `attachment.guid` is the stable identity when present; ROWID is the chat.db `attachment` table row, NOT `message.ROWID`. `filename` and `size_bytes` may both be null while Messages is mid-download; record `state: downloading` in metadata and retry next run.
-2. Track running per-month copy total in bytes.
-3. If `running_total + size_bytes ≤ 100 MB`: copy from `~/Library/Messages/Attachments/<...>` to `raw/imessage/<individuals|groups>/<slug>/<YYYY>/_attachments/<attachment_id>.<ext>`. Set `copied_to_raw: true`, `attachment_path: _attachments/<id>.<ext>`.
-4. If `running_total + size_bytes > 100 MB` (strict): skip copy. Set `copied_to_raw: false`, `attachment_path: null`. Capture `sha256` and `size_bytes` IF source readable; both may be null when source is missing. Set `attachment_pruned: true` on the month-file frontmatter.
-5. If source binary missing (iCloud pruned, migration loss): `copied_to_raw: false`, `attachment_path: null`, `source_missing: true`, `sha256: null`. Log warning. Do not fail.
-6. Collision guard: if `_attachments/<id>.<ext>` exists with a different sha256, log warning and skip the copy. Never overwrite.
+1. `attachment_id` = first 16 hex of `blake3(attachment.guid OR transfer_name OR filename, size_bytes_or_zero, attachment.ROWID)`. `attachment.guid` is stable identity; ROWID is `attachment` table row, NOT `message.ROWID`.
+2. `sha256` of source binary at `~/Library/Messages/Attachments/<...>` if readable; null if missing or source is a bundle directory.
+3. Description method by `mime` / `uti`:
+   - **Image / Video** (`image/*`, `video/*`): Gemini Flash via CLI `@<path>`, ≤ 100 chars.
+   - **Audio** (`audio/*`): no extraction v1 (CLI `@<path>` does not pass audio). `description: null`; body falls back to `[audio: <filename>]`. v1.5 wires audio.
+   - **Bundle** (source is a directory): placeholder like `"Logic Pro project bundle"` derived from `uti`.
+   - **`*.pluginpayloadattachment`** / opaque mime: `description: null`; body falls back to `[file: <filename>]`.
+   - **Text-readable** (`text/*`, `application/pdf`, `application/json`): Gemini Flash 2-sentence summary, ≤ 200 chars.
+4. Record `description`, `description_model` (`gemini-3-flash-preview`), `extracted_at`, `source_available`.
+5. Idempotency: if a prior frontmatter row matches `sha256` AND `description_model`, REUSE the prior description; never re-extract.
+6. Gemini calls are limited to attachment descriptions; routing, hashing, body, dedup remain pure Python.
 
 ## H. Cursor + dedup (LOCK 8)
 Cursor at `_shell/cursors/imessage/<account>.txt`. Account is `local` for
@@ -183,11 +189,10 @@ The renderer must:
 The robot NEVER:
 1. Deletes a raw file based on chat.db deletion. v1 sets `deleted_upstream` only on cursor-resync rediscovery; auto-detection of vanished rows is deferred to v1.5.
 2. Modifies `chat.db`. Read-only `sqlite3` URI mode required (`?mode=ro`).
-3. Runs LLM or vision calls during ingest. Pure Python only.
+3. Runs LLM / vision calls outside the attachment-description subsystem (§ G). Routing, slug derivation, body rendering, content_hash, dedup, and cursor mutation are pure Python.
 4. Edits frontmatter post-write, except `deleted_upstream` and `superseded_by`.
-5. Writes outside `workspaces/<ws>/raw/imessage/...` and the `_attachments/` path under it.
-6. Overwrites an existing `_attachments/<id>.<ext>` whose sha256 differs.
-7. Skips § F's universal blocklist, even if a workspace allowlists the handle.
+5. Writes outside `workspaces/<ws>/raw/imessage/...`. No `_attachments/` binary store; descriptions live in frontmatter only.
+6. Skips § F's universal blocklist, even if a workspace allowlists the handle.
 
 ## K. Default for unrouted contacts
 **SKIP** (privacy-first; opposite of Gmail). Contacts must be explicitly allowlisted in some workspace's `sources.yaml.imessage` block to land.

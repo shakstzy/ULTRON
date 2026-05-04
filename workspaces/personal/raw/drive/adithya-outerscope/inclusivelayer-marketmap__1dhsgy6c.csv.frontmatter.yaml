@@ -1,8 +1,8 @@
 source: "drive"
 workspace: "personal"
-ingested_at: "2026-05-04T17:17:09-05:00"
+ingested_at: "2026-05-04T17:25:19-05:00"
 ingest_version: 1
-content_hash: "blake3:99f02be85db9628257fe3b55dc3b7c1dcd4e7825d760b912d987a74e5c29d203"
+content_hash: "blake3:29cb1a76e95ded1ef282f03d18eb982f1257166fa3dff9340acd2432feb1888e"
 provider_modified_at: "2025-03-12T18:19:10.128Z"
 drive_account: "adithya@outerscope.xyz"
 drive_account_slug: "adithya-outerscope"
@@ -43,3 +43,4 @@ sheet_tab_names:
 - "Priority 1"
 - "Denver Recap"
 sheet_exported_tab: "Large Ecosystem Integrations"
+sheet_metadata_visible: true

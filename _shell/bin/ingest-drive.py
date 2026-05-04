@@ -77,16 +77,17 @@ _HEX_FILTER_RE = re.compile(r"[^a-z0-9]")
 MARKITDOWN_BIN = shutil.which("markitdown") or "/Users/shakstzy/.local/bin/markitdown"
 PDFTOTEXT_BIN = shutil.which("pdftotext")
 
-# File metadata fields requested across the run. Single source of truth.
 DRIVE_FIELDS = (
     "id,name,mimeType,size,createdTime,modifiedTime,parents,trashed,"
     "owners(emailAddress,displayName),"
     "lastModifyingUser(emailAddress,displayName,permissionId),"
     "webViewLink,headRevisionId,shortcutDetails,"
     "capabilities(canDownload,canReadRevisions),"
-    "explicitlyTrashed,sharedWithMeTime,driveId,"
-    "contentRestrictions(readOnly,reason)"
+    "explicitlyTrashed,sharedWithMeTime,driveId"
 )
+
+# How many extra hex chars to try on filename collision before aborting.
+COLLISION_LADDER = (8, 12, 16, 24)
 
 
 # ============================================================================
@@ -215,20 +216,10 @@ class DriveClient:
                 f"&fields={urllib.parse.quote(fields)}"
                 f"&pageSize=200"
                 f"&supportsAllDrives=true&includeItemsFromAllDrives=true"
-                f"&corpora=allDrives"
             )
             if page:
                 url += f"&pageToken={urllib.parse.quote(page)}"
-            try:
-                resp = self._request(url)
-            except urllib.error.HTTPError as e:
-                if e.code == 400:
-                    # `corpora=allDrives` requires driveId for shared drives;
-                    # retry with default corpora for My Drive folders.
-                    url2 = url.replace("&corpora=allDrives", "")
-                    resp = self._request(url2)
-                else:
-                    raise
+            resp = self._request(url)
             assert isinstance(resp, dict)
             out.extend(resp.get("files", []))
             page = resp.get("nextPageToken", "")
@@ -244,16 +235,25 @@ class DriveClient:
         return resp
 
     def list_permissions(self, file_id: str) -> tuple[list[dict], bool]:
-        """Returns (permissions, visible). visible=False if 403."""
-        url = (
-            f"{DRIVE_API}/files/{urllib.parse.quote(file_id)}/permissions"
-            f"?fields=permissions(emailAddress,displayName,role,type)"
-            f"&supportsAllDrives=true&pageSize=100"
-        )
+        """Returns (permissions, visible). Paginated. visible=False on 403."""
+        out: list[dict] = []
+        page = ""
         try:
-            resp = self._request(url)
-            assert isinstance(resp, dict)
-            return (resp.get("permissions") or [], True)
+            while True:
+                url = (
+                    f"{DRIVE_API}/files/{urllib.parse.quote(file_id)}/permissions"
+                    f"?fields=permissions(emailAddress,displayName,role,type),nextPageToken"
+                    f"&supportsAllDrives=true&pageSize=100"
+                )
+                if page:
+                    url += f"&pageToken={urllib.parse.quote(page)}"
+                resp = self._request(url)
+                assert isinstance(resp, dict)
+                out.extend(resp.get("permissions") or [])
+                page = resp.get("nextPageToken", "")
+                if not page:
+                    break
+            return (out, True)
         except urllib.error.HTTPError as e:
             if e.code in (403, 404):
                 return ([], False)
@@ -278,6 +278,7 @@ class DriveClient:
         return resp["startPageToken"]
 
     def sheet_metadata(self, file_id: str) -> dict | None:
+        """Returns sheet metadata, or None if API call failed."""
         url = (
             f"{SHEETS_API}/spreadsheets/{urllib.parse.quote(file_id)}"
             f"?fields=sheets.properties(title,index,sheetType)"
@@ -294,9 +295,7 @@ class DriveClient:
 # Body rendering (Lock 4)
 # ============================================================================
 
-def _extract_text_from_pdf_bytes(data: bytes, want_per_page: bool = False):
-    """Returns (body_text, method, succeeded). When want_per_page=True with
-    pdftotext, returns text with form-feed page breaks preserved."""
+def _extract_text_from_pdf_bytes(data: bytes):
     if PDFTOTEXT_BIN:
         tmp = None
         try:
@@ -335,24 +334,19 @@ def _extract_text_from_pdf_bytes(data: bytes, want_per_page: bool = False):
 
 
 def _render_slides_from_pdf(data: bytes) -> tuple[str, str, bool]:
-    """Lock 4: each slide separated by `---`. pdftotext preserves form feeds
-    as page breaks; markitdown does its own page splitting on Slides PDFs."""
     text, method, ok = _extract_text_from_pdf_bytes(data)
     if not ok or not text.strip():
         return ("", method, False)
 
-    # pdftotext puts \f between pages.
     if "\f" in text:
         pages = [p.strip() for p in text.split("\f") if p.strip()]
     else:
-        # markitdown output: split on its own page markers / large gaps; fall
-        # back to whole-doc rendering if no obvious break points.
         pages = re.split(r"\n{3,}", text.strip())
         pages = [p.strip() for p in pages if p.strip()]
         if not pages:
             pages = [text.strip()]
 
-    rendered_chunks: list[str] = []
+    chunks: list[str] = []
     for page in pages:
         lines = [ln.rstrip() for ln in page.splitlines() if ln.strip()]
         if not lines:
@@ -362,14 +356,12 @@ def _render_slides_from_pdf(data: bytes) -> tuple[str, str, bool]:
         chunk = f"# {title}"
         if body_lines:
             chunk += "\n\n" + "\n".join(body_lines)
-        rendered_chunks.append(chunk)
+        chunks.append(chunk)
 
-    return ("\n\n---\n\n".join(rendered_chunks), method, True)
+    return ("\n\n---\n\n".join(chunks), method, True)
 
 
 def render_body(client: DriveClient, file_meta: dict) -> tuple[str, str, bool, str]:
-    """Returns (body, method, succeeded, ext). ext ∈ {.md, .csv}.
-    Raises urllib.error.HTTPError on API failure (caller treats as fatal)."""
     mime = file_meta["mimeType"]
     if mime == MIME_DOC:
         body = client.export(file_meta["id"], "text/markdown")
@@ -400,7 +392,6 @@ def should_skip(file_meta: dict) -> tuple[bool, str | None]:
         return True, "trashed"
     caps = file_meta.get("capabilities") or {}
     if caps.get("canDownload") is False:
-        # IRM / per-permission download block — actual extraction-is-impossible signal
         return True, "cannot-download"
     mime = file_meta.get("mimeType") or ""
     if any(mime.startswith(p) for p in MIME_SKIP_PREFIXES):
@@ -416,7 +407,7 @@ def should_skip(file_meta: dict) -> tuple[bool, str | None]:
 
 
 # ============================================================================
-# Frontmatter (Lock 2, Lock 3) — uses PyYAML safe_dump for correctness
+# Frontmatter (Lock 2, Lock 3)
 # ============================================================================
 
 class _QuotedStr(str):
@@ -431,9 +422,6 @@ _yaml.add_representer(_QuotedStr, _quoted_str_representer, Dumper=_yaml.SafeDump
 
 
 def _ensure_string_safety(value):
-    """Recursively wrap string values in _QuotedStr so PyYAML emits them
-    explicitly quoted — defends against `null`, `true`, `1234`, dates, etc.
-    parsing back as non-strings."""
     if isinstance(value, str):
         return _QuotedStr(value)
     if isinstance(value, dict):
@@ -463,11 +451,13 @@ def build_frontmatter(
     text_method: str,
     text_ok: bool,
     shortcut_origin_id: str | None,
+    shortcut_visible_name: str | None,
     re_ingest_count: int,
     last_re_ingested_at: str | None,
     shared_with: list[dict],
     shared_with_visible: bool,
     sheet_meta: dict | None,
+    sheet_metadata_visible: bool,
     raw_identity_id: str,
 ) -> dict:
     import blake3 as _blake3
@@ -477,6 +467,10 @@ def build_frontmatter(
 
     owner = (file_meta.get("owners") or [{}])[0]
     last_mod = file_meta.get("lastModifyingUser") or {}
+
+    # drive_file_name: shortcut's visible name when applicable, target's name
+    # otherwise. Path uses shortcut name's slug; frontmatter records both ids.
+    visible_name = shortcut_visible_name or file_meta.get("name") or ""
 
     fm: dict = {
         "source": "drive",
@@ -492,7 +486,7 @@ def build_frontmatter(
         "drive_raw_identity_id": raw_identity_id,
         "drive_mime_type": file_meta["mimeType"],
         "drive_file_type": drive_file_type,
-        "drive_file_name": file_meta.get("name") or "",
+        "drive_file_name": visible_name,
         "drive_file_size_bytes": int(file_meta.get("size") or 0),
         "drive_web_view_link": file_meta.get("webViewLink") or "",
         "drive_created_at": file_meta.get("createdTime") or "",
@@ -537,6 +531,7 @@ def build_frontmatter(
             fm["multi_tab_sheet"] = False
             fm["sheet_tab_names"] = []
             fm["sheet_exported_tab"] = None
+        fm["sheet_metadata_visible"] = sheet_metadata_visible
     return fm
 
 
@@ -563,66 +558,68 @@ def _read_raw_frontmatter(path: Path) -> dict | None:
         return None
 
 
-def _enumerate_raw(account: str, workspaces: list[str], designated_folder_id: str) -> dict:
-    """Returns { drive_raw_identity_id: {path, modified_at, re_ingest_count, frontmatter} }."""
+def _enumerate_raw(account: str, ws: str, designated_folder_id: str) -> dict:
+    """Returns { drive_raw_identity_id: {path, modified_at, ...} } for a single workspace."""
     out: dict[str, dict] = {}
-    for ws in workspaces:
-        base = ULTRON_ROOT / "workspaces" / ws / "raw" / "drive" / account_slug(account)
-        if not base.exists():
+    base = ULTRON_ROOT / "workspaces" / ws / "raw" / "drive" / account_slug(account)
+    if not base.exists():
+        return out
+    for p in base.rglob("*"):
+        if not p.is_file():
             continue
-        for p in base.rglob("*"):
-            if not p.is_file():
-                continue
-            if p.suffix not in (".md", ".csv"):
-                continue
-            if p.name.endswith(".csv.frontmatter.yaml"):
-                continue
-            fm = _read_raw_frontmatter(p)
-            if not fm:
-                continue
-            if fm.get("source") != "drive":
-                continue
-            if fm.get("drive_designated_folder_id") != designated_folder_id:
-                continue
-            ident = fm.get("drive_raw_identity_id") or fm.get("drive_file_id")
-            if not ident:
-                continue
-            # First-seen wins; duplicate identities across workspaces are
-            # routed copies — each workspace has its own raw_set.
-            key = (ws, ident)
-            out[key] = {
-                "path": p,
-                "modified_at": fm.get("provider_modified_at") or fm.get("drive_modified_at") or "",
-                "re_ingest_count": int(fm.get("re_ingest_count") or 0),
-                "last_re_ingested_at": fm.get("last_re_ingested_at"),
-                "frontmatter": fm,
-                "workspace": ws,
-            }
+        if p.suffix not in (".md", ".csv"):
+            continue
+        if p.name.endswith(".csv.frontmatter.yaml"):
+            continue
+        fm = _read_raw_frontmatter(p)
+        if not fm:
+            continue
+        if fm.get("source") != "drive":
+            continue
+        if fm.get("drive_designated_folder_id") != designated_folder_id:
+            continue
+        ident = fm.get("drive_raw_identity_id") or fm.get("drive_file_id")
+        if not ident:
+            continue
+        out[ident] = {
+            "path": p,
+            "modified_at": fm.get("provider_modified_at") or fm.get("drive_modified_at") or "",
+            "re_ingest_count": int(fm.get("re_ingest_count") or 0),
+            "last_re_ingested_at": fm.get("last_re_ingested_at"),
+            "frontmatter": fm,
+        }
     return out
 
 
 # ============================================================================
-# Serialization
+# Atomic write helpers
 # ============================================================================
 
+def _atomic_write_text(path: Path, content: str) -> None:
+    """Write text via temp + rename so partial writes never land at the final path."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_name(path.name + f".tmp.{os.getpid()}")
+    tmp.write_text(content, encoding="utf-8")
+    os.replace(tmp, path)
+
+
 def serialize_md(file_path: Path, frontmatter: dict, body: str) -> None:
-    file_path.parent.mkdir(parents=True, exist_ok=True)
     yaml_block = emit_frontmatter_yaml(frontmatter)
     out = f"---\n{yaml_block}\n---\n\n{body}"
     if not out.endswith("\n"):
         out += "\n"
-    file_path.write_text(out, encoding="utf-8")
+    _atomic_write_text(file_path, out)
 
 
 def serialize_csv_with_sidecar(file_path: Path, frontmatter: dict, body: str) -> None:
-    file_path.parent.mkdir(parents=True, exist_ok=True)
-    file_path.write_text(body, encoding="utf-8")
+    """Write sidecar FIRST (so a body-without-sidecar window never exists),
+    then body. Both via atomic temp+rename."""
     sidecar = file_path.with_suffix(".csv.frontmatter.yaml")
-    sidecar.write_text(emit_frontmatter_yaml(frontmatter) + "\n", encoding="utf-8")
+    _atomic_write_text(sidecar, emit_frontmatter_yaml(frontmatter) + "\n")
+    _atomic_write_text(file_path, body)
 
 
 def hard_delete(path: Path, log_action) -> None:
-    """Delete body file + sidecar (if any). Idempotent."""
     if path.exists():
         path.unlink()
         log_action({"action": "delete", "path": str(path.relative_to(ULTRON_ROOT))})
@@ -644,10 +641,11 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     p.add_argument("--account", required=True)
     p.add_argument("--workspaces", help="Comma-separated subset; default = all subscribers")
     p.add_argument("--mode", choices=("reconcile", "incremental"), default="reconcile",
-                   help="reconcile (default) is the Lock 6 source of truth. incremental is the cursor-based fast-path (Lock 7); not yet implemented.")
+                   help="reconcile = Lock 6 source of truth (v1 default). incremental = Lock 7 (first-run falls back to reconcile; cursor-driven path NotImplementedError until Lock 7 ships).")
     p.add_argument("--dry-run", action="store_true")
     p.add_argument("--show", action="store_true")
-    p.add_argument("--max-files", type=int, default=0)
+    p.add_argument("--max-files", type=int, default=0,
+                   help="Cap on files processed. When hit, skips the deletion phase to avoid wiping unvisited raw files.")
     p.add_argument("--folder", help="Restrict to one designated folder ID")
     p.add_argument("--reset-cursor", action="store_true")
     p.add_argument("--no-content", action="store_true")
@@ -656,7 +654,7 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
 
 
 def acquire_flock(path: Path):
-    """Per-account flock. Concurrent invocation exits 0 silently (no stderr)."""
+    """Per-account flock. Concurrent invocation exits 0 silently."""
     import fcntl
     fh = open(path, "w")
     try:
@@ -723,30 +721,31 @@ def load_drive_route_module():
 
 
 # ============================================================================
-# Reconcile (Lock 6)
+# Reconcile (Lock 6) — phased: enumerate → plan → write → delete
 # ============================================================================
 
-def reconcile(args, designated, client, account):
+def reconcile(args, designated, client, account, workspaces_filter: dict[str, dict] | None = None):
+    workspaces = workspaces_filter if workspaces_filter is not None else load_workspace_configs()
     drive_route = load_drive_route_module()
-    workspaces = load_workspace_configs()
 
-    # Capture cursor BEFORE enumeration so changes during the run replay.
+    # Cursor captured BEFORE any enumeration so changes during the run replay.
     pre_cursor: str | None = None
     try:
         pre_cursor = client.start_page_token()
     except Exception as e:
         sys.stderr.write(f"ingest-drive: cursor-pre fetch failed (non-fatal): {e}\n")
 
-    # Logging
     log_path = LOGS_DIR / f"drive-{account_slug(account)}-{args.run_id}.log"
     log_path.parent.mkdir(parents=True, exist_ok=True)
-    log_lines: list[dict] = []
+    log_fh = log_path.open("a") if not args.dry_run else None
 
     def log(record: dict) -> None:
         record.setdefault("ts", datetime.now(timezone.utc).isoformat(timespec="seconds"))
         record.setdefault("account", account)
         record.setdefault("run_id", args.run_id)
-        log_lines.append(record)
+        if log_fh:
+            log_fh.write(json.dumps(record, ensure_ascii=False) + "\n")
+            log_fh.flush()
 
     log({"action": "run-start", "mode": "reconcile",
          "designated_folders": [{"workspace": d["workspace"], "id": d["folder_id"], "name": d["folder_name"]} for d in designated],
@@ -755,79 +754,113 @@ def reconcile(args, designated, client, account):
     written = updated = unchanged = skipped = deleted = 0
     failed: list[tuple[str, str]] = []
     cap = args.max_files or 10**9
-    sheet_meta_cache: dict[str, dict | None] = {}
+    cap_hit = False
+    sheet_meta_cache: dict[str, tuple[dict | None, bool]] = {}
     perms_cache: dict[str, tuple[list[dict], bool]] = {}
 
-    for d in designated:
-        sys.stderr.write(f"ingest-drive: reconciling '{d['folder_name']}' ({d['folder_id']}) → {d['workspace']}\n")
-        excluded = set(d.get("exclude_subfolders") or [])
-        designated_workspaces = [d["workspace"]]
-        raw_index = _enumerate_raw(account, designated_workspaces, d["folder_id"])
-        # Mark every raw entry as "candidate for deletion"; removed as we re-confirm them.
-        live_keys: set[tuple[str, str]] = set()
+    try:
+        for d in designated:
+            sys.stderr.write(f"ingest-drive: reconciling '{d['folder_name']}' ({d['folder_id']}) → {d['workspace']}\n")
+            excluded = set(d.get("exclude_subfolders") or [])
+            raw_index = _enumerate_raw(account, d["workspace"], d["folder_id"])
 
-        # Drive-side BFS
-        def walk(parent_id: str, path_segments: list[str], path_ids: list[str]):
-            nonlocal written, updated, unchanged, skipped
-            try:
-                children = client.list_children(parent_id)
-            except urllib.error.HTTPError as e:
-                failed.append((parent_id, f"list_children HTTP {e.code}"))
-                return
-            for child in children:
-                if (written + updated + unchanged + skipped) >= cap:
-                    return
-                if child["mimeType"] == MIME_FOLDER:
-                    if child["id"] in excluded:
-                        log({"action": "exclude-subfolder", "id": child["id"], "name": child["name"]})
-                        continue
-                    walk(
-                        child["id"],
-                        path_segments + [folder_segment_slug(child["name"])],
-                        path_ids + [child["id"]],
-                    )
-                    continue
+            # ----- PHASE 1: enumerate Drive ----------------------------------
+            # Track per-subtree enumeration failures. If any subtree failed,
+            # the deletion pass is skipped for that designated folder.
+            enum_failed = False
+            drive_files: list[dict] = []  # each: {file_meta, shortcut_origin_id, shortcut_visible_name, path_segments, path_ids}
 
-                # Resolve shortcut → target content; identity = origin shortcut id
-                shortcut_origin_id: str | None = None
-                file_meta = child
-                if child["mimeType"] == MIME_SHORTCUT:
-                    sd = child.get("shortcutDetails") or {}
-                    target_id = sd.get("targetId")
-                    target_mime = sd.get("targetMimeType")
-                    if not target_id:
-                        skipped += 1
-                        log({"action": "skip", "name": child.get("name"), "reason": "shortcut-no-target"})
+            def walk(parent_id: str, path_segments: list[str], path_ids: list[str]) -> bool:
+                """Returns True if subtree fully enumerated."""
+                nonlocal enum_failed, cap_hit
+                try:
+                    children = client.list_children(parent_id)
+                except urllib.error.HTTPError as e:
+                    failed.append((parent_id, f"list_children HTTP {e.code}"))
+                    log({"action": "fail", "subtree": parent_id, "reason": f"list_children HTTP {e.code}"})
+                    enum_failed = True
+                    return False
+                for child in children:
+                    if len(drive_files) >= cap:
+                        cap_hit = True
+                        log({"action": "cap-hit", "limit": cap})
+                        return False
+                    if child["mimeType"] == MIME_FOLDER:
+                        if child["id"] in excluded:
+                            log({"action": "exclude-subfolder", "id": child["id"], "name": child["name"]})
+                            continue
+                        ok = walk(
+                            child["id"],
+                            path_segments + [folder_segment_slug(child["name"])],
+                            path_ids + [child["id"]],
+                        )
+                        if not ok:
+                            return False
                         continue
-                    if target_mime not in MIME_ALLOWED:
-                        skipped += 1
-                        log({"action": "skip", "name": child.get("name"), "reason": f"shortcut-target-mime:{target_mime}"})
-                        continue
-                    try:
-                        file_meta = client.get_file(target_id)
-                    except urllib.error.HTTPError as e:
-                        failed.append((child["name"], f"shortcut-target {target_id}: HTTP {e.code}"))
-                        continue
-                    shortcut_origin_id = child["id"]
 
-                skip, reason = should_skip(file_meta)
-                if skip:
-                    skipped += 1
-                    sys.stderr.write(f"  skip {file_meta.get('name')}: {reason}\n")
-                    log({"action": "skip", "name": file_meta.get("name"), "reason": reason})
-                    continue
+                    shortcut_origin_id: str | None = None
+                    shortcut_visible_name: str | None = None
+                    file_meta = child
+                    if child["mimeType"] == MIME_SHORTCUT:
+                        sd = child.get("shortcutDetails") or {}
+                        target_id = sd.get("targetId")
+                        target_mime = sd.get("targetMimeType")
+                        if not target_id:
+                            skipped_local("shortcut-no-target", child)
+                            continue
+                        if target_mime not in MIME_ALLOWED:
+                            skipped_local(f"shortcut-target-mime:{target_mime}", child)
+                            continue
+                        try:
+                            file_meta = client.get_file(target_id)
+                        except urllib.error.HTTPError as e:
+                            failed.append((child.get("name", ""), f"shortcut-target {target_id}: HTTP {e.code}"))
+                            log({"action": "fail", "name": child.get("name"),
+                                 "reason": f"shortcut-target HTTP {e.code}"})
+                            enum_failed = True  # don't delete the shortcut's existing raw on transient failure
+                            continue
+                        shortcut_origin_id = child["id"]
+                        shortcut_visible_name = child.get("name")
+
+                    skip, reason = should_skip(file_meta)
+                    if skip:
+                        skipped_local(reason, file_meta)
+                        continue
+
+                    drive_files.append({
+                        "file_meta": file_meta,
+                        "shortcut_origin_id": shortcut_origin_id,
+                        "shortcut_visible_name": shortcut_visible_name,
+                        "path_segments": path_segments,
+                        "path_ids": path_ids,
+                    })
+                return True
+
+            def skipped_local(reason: str, fm: dict) -> None:
+                nonlocal skipped
+                skipped += 1
+                sys.stderr.write(f"  skip {fm.get('name')}: {reason}\n")
+                log({"action": "skip", "name": fm.get("name"), "reason": reason})
+
+            walk(d["folder_id"], [], [])
+
+            # ----- PHASE 2: plan + write/update -----------------------------
+            live_keys: set[str] = set()
+            for entry in drive_files:
+                file_meta = entry["file_meta"]
+                shortcut_origin_id = entry["shortcut_origin_id"]
+                shortcut_visible_name = entry["shortcut_visible_name"]
+                path_segments = entry["path_segments"]
+                path_ids = entry["path_ids"]
 
                 drive_file_type = MIME_ALLOWED[file_meta["mimeType"]]
                 ext = ".csv" if drive_file_type == "sheet" else ".md"
-                # Identity for the raw record: shortcut_origin_id if present
-                # (so two shortcuts to same target in different folders are
-                # distinct), else file_meta["id"].
                 raw_identity_id = shortcut_origin_id or file_meta["id"]
+                live_keys.add(raw_identity_id)
 
-                # Filename slug + collision-extending file-id-short
-                slug_stem = file_slug(file_meta.get("name") or "")
-                id8 = file_id_short(raw_identity_id, 8)
-                filename = f"{slug_stem}__{id8}{ext}"
+                # Slug: shortcut's name when applicable, else target/file name
+                slug_source = shortcut_visible_name or file_meta.get("name") or ""
+                slug_stem = file_slug(slug_source)
 
                 # Routing
                 routing_meta = {
@@ -835,9 +868,10 @@ def reconcile(args, designated, client, account):
                     "drive_designated_folder_id": d["folder_id"],
                 }
                 routes = drive_route.route(routing_meta, workspaces)
+                routes = [r for r in routes if r["workspace"] == d["workspace"]]
                 if not routes:
                     skipped += 1
-                    log({"action": "skip", "name": file_meta.get("name"), "reason": "unrouted"})
+                    log({"action": "skip", "name": slug_source, "reason": "unrouted"})
                     continue
 
                 for r in routes:
@@ -845,55 +879,42 @@ def reconcile(args, designated, client, account):
                     out_dir = ULTRON_ROOT / "workspaces" / ws / "raw" / "drive" / account_slug(account)
                     if path_segments:
                         out_dir = out_dir.joinpath(*path_segments)
-                    out_path = out_dir / filename
 
-                    # Filename collision check (Lock 9)
-                    if out_path.exists():
-                        existing_fm = _read_raw_frontmatter(out_path)
-                        if existing_fm and existing_fm.get("drive_raw_identity_id") not in (raw_identity_id, None):
-                            # Same slug + 8-char id-short, different identity → extend to 12 chars
-                            id12 = file_id_short(raw_identity_id, 12)
-                            filename = f"{slug_stem}__{id12}{ext}"
-                            out_path = out_dir / filename
-                            sys.stderr.write(f"  collision-extend: {file_meta.get('name')} → 12-char id-short\n")
-                            log({"action": "collision-extend", "name": file_meta.get("name"), "id_short": id12})
-
-                    key = (ws, raw_identity_id)
-                    live_keys.add(key)
-                    existing = raw_index.get(key)
-
-                    # Skip when nothing changed (modifiedTime + path identical)
-                    drive_mtime = file_meta.get("modifiedTime") or ""
-                    if existing and existing["modified_at"] == drive_mtime and existing["path"] == out_path:
-                        unchanged += 1
-                        log({"action": "unchanged", "path": str(out_path.relative_to(ULTRON_ROOT)),
-                             "modified_at": drive_mtime})
+                    # Filename collision ladder
+                    out_path = None
+                    for length in COLLISION_LADDER:
+                        idn = file_id_short(raw_identity_id, length)
+                        cand = out_dir / f"{slug_stem}__{idn}{ext}"
+                        if not cand.exists():
+                            out_path = cand
+                            break
+                        existing_fm = _read_raw_frontmatter(cand)
+                        if existing_fm and existing_fm.get("drive_raw_identity_id") in (raw_identity_id, None):
+                            out_path = cand
+                            break
+                        # collision: same path, different identity → try longer
+                        log({"action": "collision-extend", "path": str(cand.relative_to(ULTRON_ROOT)),
+                             "id_short_attempted": idn, "next_attempt_length": length})
+                    if out_path is None:
+                        failed.append((slug_source, "filename-collision-unresolved"))
+                        log({"action": "fail", "name": slug_source, "reason": "filename-collision-unresolved"})
                         continue
 
-                    # Path changed (move) → delete old, ingest at new
-                    if existing and existing["path"] != out_path and not args.dry_run:
-                        hard_delete(existing["path"], log)
-                        deleted += 0  # moves don't count as deletes for the summary
+                    existing = raw_index.get(raw_identity_id)
+                    drive_mtime = file_meta.get("modifiedTime") or ""
+                    body_unchanged = bool(existing and existing["modified_at"] == drive_mtime
+                                          and existing["path"] == out_path)
 
-                    # Render body (failures are FATAL — don't advance cursor)
-                    if args.no_content:
-                        body, method, ok = "", "skipped", True
-                    else:
-                        try:
-                            body, method, ok, _ext_check = render_body(client, file_meta)
-                        except urllib.error.HTTPError as e:
-                            failed.append((file_meta.get("name", ""), f"render: HTTP {e.code}"))
-                            log({"action": "fail", "name": file_meta.get("name"), "reason": f"render HTTP {e.code}"})
-                            continue
-
-                    # Sheet metadata (real tab names)
+                    # Sheet metadata (cache per file_id)
                     sheet_meta = None
+                    sheet_visible = True
                     if drive_file_type == "sheet":
                         if file_meta["id"] not in sheet_meta_cache:
-                            sheet_meta_cache[file_meta["id"]] = client.sheet_metadata(file_meta["id"])
-                        sheet_meta = sheet_meta_cache[file_meta["id"]]
+                            sm = client.sheet_metadata(file_meta["id"])
+                            sheet_meta_cache[file_meta["id"]] = (sm, sm is not None)
+                        sheet_meta, sheet_visible = sheet_meta_cache[file_meta["id"]]
 
-                    # Permissions (separate API call, 403-tolerant)
+                    # Permissions (cache per file_id)
                     if file_meta["id"] not in perms_cache:
                         try:
                             perms_cache[file_meta["id"]] = client.list_permissions(file_meta["id"])
@@ -901,10 +922,40 @@ def reconcile(args, designated, client, account):
                             perms_cache[file_meta["id"]] = ([], False)
                     shared, shared_visible = perms_cache[file_meta["id"]]
 
+                    # Render body only when modifiedTime advanced (or first ingest)
+                    if body_unchanged:
+                        # Reuse existing body to avoid API churn but rebuild
+                        # frontmatter so permission/sharing changes propagate.
+                        try:
+                            existing_text = existing["path"].read_text(errors="ignore")
+                            if ext == ".csv":
+                                body = existing_text
+                            else:
+                                body_match = re.match(r"^---\s*\n.+?\n---\s*\n+", existing_text, re.DOTALL)
+                                body = existing_text[body_match.end():] if body_match else existing_text
+                        except OSError:
+                            body_unchanged = False  # force re-render
+                        method = existing.get("frontmatter", {}).get("text_extraction_method", "native")
+                        ok = bool(existing.get("frontmatter", {}).get("text_extraction_succeeded", True))
+
+                    if not body_unchanged:
+                        if args.no_content:
+                            body, method, ok = "", "skipped", True
+                        else:
+                            try:
+                                body, method, ok, _ext_check = render_body(client, file_meta)
+                            except urllib.error.HTTPError as e:
+                                failed.append((slug_source, f"render: HTTP {e.code}"))
+                                log({"action": "fail", "name": slug_source, "reason": f"render HTTP {e.code}"})
+                                continue
+
                     # Re-ingest counters preserve existing values
-                    if existing:
+                    if existing and not body_unchanged:
                         re_count = existing["re_ingest_count"] + 1
                         re_at = datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds")
+                    elif existing:
+                        re_count = existing["re_ingest_count"]
+                        re_at = existing["last_re_ingested_at"]
                     else:
                         re_count = 0
                         re_at = None
@@ -915,81 +966,117 @@ def reconcile(args, designated, client, account):
                         file_meta=file_meta, drive_file_type=drive_file_type,
                         body=body, text_method=method, text_ok=ok,
                         shortcut_origin_id=shortcut_origin_id,
+                        shortcut_visible_name=shortcut_visible_name,
                         re_ingest_count=re_count, last_re_ingested_at=re_at,
                         shared_with=shared, shared_with_visible=shared_visible,
-                        sheet_meta=sheet_meta, raw_identity_id=raw_identity_id,
+                        sheet_meta=sheet_meta, sheet_metadata_visible=sheet_visible,
+                        raw_identity_id=raw_identity_id,
                     )
                     rel = out_path.relative_to(ULTRON_ROOT)
+
                     if args.dry_run:
-                        sys.stderr.write(f"  [dry] {rel} ({len(body)}b, method={method})\n")
+                        sys.stderr.write(f"  [dry] {rel} ({len(body)}b, method={method}, body_unchanged={body_unchanged})\n")
                         if args.show:
                             print(f"\n══════ {rel} ══════")
                             print(f"---\n{emit_frontmatter_yaml(fm)}\n---\n")
                             print(body)
-                    else:
-                        if drive_file_type == "sheet":
-                            serialize_csv_with_sidecar(out_path, fm, body)
+                        if existing:
+                            updated += 1
                         else:
-                            serialize_md(out_path, fm, body)
-                        action = "update" if existing else "write"
-                        sys.stderr.write(f"  {action} {rel} ({len(body)}b, method={method})\n")
-                        log({"action": action, "path": str(rel), "method": method,
-                             "drive_file_id": file_meta["id"], "raw_identity_id": raw_identity_id,
-                             "modified_at": drive_mtime})
+                            written += 1
+                        continue
+
+                    # Atomic write (new path first; existing at different
+                    # path is deleted in PHASE 4 / move-cleanup below).
+                    if drive_file_type == "sheet":
+                        serialize_csv_with_sidecar(out_path, fm, body)
+                    else:
+                        serialize_md(out_path, fm, body)
+
+                    # If this was a move, the old path lives in raw_index
+                    # under the same identity → schedule for delete after
+                    # write succeeds.
+                    if existing and existing["path"] != out_path:
+                        hard_delete(existing["path"], log)
+                        log({"action": "move-cleanup", "from": str(existing["path"].relative_to(ULTRON_ROOT)),
+                             "to": str(rel)})
+
                     if existing:
-                        updated += 1
+                        if body_unchanged:
+                            unchanged += 1
+                            log({"action": "frontmatter-only", "path": str(rel)})
+                        else:
+                            updated += 1
+                            log({"action": "update", "path": str(rel), "method": method,
+                                 "drive_file_id": file_meta["id"], "raw_identity_id": raw_identity_id,
+                                 "modified_at": drive_mtime})
                     else:
                         written += 1
+                        log({"action": "write", "path": str(rel), "method": method,
+                             "drive_file_id": file_meta["id"], "raw_identity_id": raw_identity_id,
+                             "modified_at": drive_mtime})
+                    sys.stderr.write(f"  {'frontmatter-only' if (existing and body_unchanged) else ('update' if existing else 'write')} {rel}\n")
 
-        walk(d["folder_id"], [], [])
-
-        # Hard-delete: anything in raw_index under this designated folder
-        # whose identity wasn't seen during the Drive walk → removed upstream.
-        for key, entry in raw_index.items():
-            ws_in_key, _ident = key
-            if ws_in_key != d["workspace"]:
-                continue
-            if key in live_keys:
-                continue
-            if not args.dry_run:
-                hard_delete(entry["path"], log)
+            # ----- PHASE 3: DELETE — only if enum complete + no cap hit -----
+            if enum_failed:
+                log({"action": "delete-pass-skipped", "reason": "enum-failures",
+                     "designated_folder_id": d["folder_id"]})
+                sys.stderr.write(f"  delete pass SKIPPED for {d['folder_id']} (enum had failures)\n")
+            elif cap_hit:
+                log({"action": "delete-pass-skipped", "reason": "cap-hit",
+                     "designated_folder_id": d["folder_id"]})
+                sys.stderr.write(f"  delete pass SKIPPED for {d['folder_id']} (--max-files cap hit)\n")
             else:
-                sys.stderr.write(f"  [dry] would delete {entry['path'].relative_to(ULTRON_ROOT)}\n")
-                log({"action": "would-delete", "path": str(entry["path"].relative_to(ULTRON_ROOT))})
-            deleted += 1
+                for ident, entry in raw_index.items():
+                    if ident in live_keys:
+                        continue
+                    if not args.dry_run:
+                        hard_delete(entry["path"], log)
+                    else:
+                        sys.stderr.write(f"  [dry] would delete {entry['path'].relative_to(ULTRON_ROOT)}\n")
+                        log({"action": "would-delete", "path": str(entry["path"].relative_to(ULTRON_ROOT))})
+                    deleted += 1
 
-    sys.stderr.write(
-        f"\ningest-drive: reconcile done — written={written}, updated={updated}, "
-        f"unchanged={unchanged}, deleted={deleted}, skipped={skipped}, failed={len(failed)}\n"
-    )
-    for name, why in failed:
-        sys.stderr.write(f"  FAIL {name}: {why}\n")
+        sys.stderr.write(
+            f"\ningest-drive: reconcile done — written={written}, updated={updated}, "
+            f"unchanged={unchanged}, deleted={deleted}, skipped={skipped}, failed={len(failed)}\n"
+        )
+        for name, why in failed:
+            sys.stderr.write(f"  FAIL {name}: {why}\n")
 
-    log({"action": "run-end", "summary": {
-        "written": written, "updated": updated, "unchanged": unchanged,
-        "deleted": deleted, "skipped": skipped, "failed": len(failed),
-    }})
+        log({"action": "run-end", "summary": {
+            "written": written, "updated": updated, "unchanged": unchanged,
+            "deleted": deleted, "skipped": skipped, "failed": len(failed),
+            "cap_hit": cap_hit,
+        }})
 
-    # Persist log
-    if not args.dry_run:
-        with log_path.open("a") as fh:
-            for line in log_lines:
-                fh.write(json.dumps(line, ensure_ascii=False) + "\n")
+        # Cursor advances ONLY if no failures + no cap hit + not dry-run
+        if not args.dry_run and not failed and not cap_hit and pre_cursor:
+            CURSORS_DIR.mkdir(parents=True, exist_ok=True)
+            cursor_path(account).write_text(pre_cursor + "\n")
+            sys.stderr.write(f"ingest-drive: cursor → {pre_cursor}\n")
+        elif failed:
+            sys.stderr.write("ingest-drive: cursor NOT advanced (run had failures)\n")
+        elif cap_hit:
+            sys.stderr.write("ingest-drive: cursor NOT advanced (--max-files cap hit)\n")
 
-    # Persist cursor ONLY if no failures and not dry-run
-    if not args.dry_run and not failed and pre_cursor:
-        CURSORS_DIR.mkdir(parents=True, exist_ok=True)
-        cursor_path(account).write_text(pre_cursor + "\n")
-        sys.stderr.write(f"ingest-drive: cursor → {pre_cursor}\n")
-    elif failed:
-        sys.stderr.write("ingest-drive: cursor NOT advanced (run had failures)\n")
-
-    return 0 if not failed else 1
+        return 0 if not failed else 1
+    finally:
+        if log_fh:
+            log_fh.close()
 
 
-def incremental(args, designated, client, account):
+def incremental(args, designated, client, account, workspaces_filter=None):
+    """Lock 7 fast-path. First-run (cursor missing/empty) falls through to
+    reconcile per spec. Cursor-driven event stream not yet implemented;
+    raises NotImplementedError when a cursor exists."""
+    cur_p = cursor_path(account)
+    if not cur_p.exists() or not cur_p.read_text().strip():
+        sys.stderr.write("ingest-drive: incremental first-run → falling back to reconcile per Lock 7.\n")
+        return reconcile(args, designated, client, account, workspaces_filter)
     raise NotImplementedError(
-        "incremental() is the Lock 7 fast-path. Use --mode reconcile until incremental ships."
+        "Lock 7 cursor-driven incremental is not yet implemented. "
+        "Use --mode reconcile until it ships, or --reset-cursor to force first-run reconcile."
     )
 
 
@@ -1034,8 +1121,8 @@ def main(argv: list[str]) -> int:
     fh = acquire_flock(lock_path(args.account))
     try:
         if args.mode == "reconcile":
-            return reconcile(args, designated, client, args.account)
-        return incremental(args, designated, client, args.account)
+            return reconcile(args, designated, client, args.account, workspaces)
+        return incremental(args, designated, client, args.account, workspaces)
     finally:
         fh.close()
 

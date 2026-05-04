@@ -1,17 +1,18 @@
 ---
-source: drive
-workspace: personal
-ingested_at: "2026-05-04T16:51:19-05:00"
+source: "drive"
+workspace: "personal"
+ingested_at: "2026-05-04T17:25:20-05:00"
 ingest_version: 1
 content_hash: "blake3:31f41c80fd94b78f896117037cc5979466c0c0db85fd06a81e14b7c225cfa407"
 provider_modified_at: "2025-01-15T20:08:48.048Z"
 drive_account: "adithya@outerscope.xyz"
-drive_account_slug: adithya-outerscope
-drive_file_id: 1VHL7d-I2IrMM3t5DaXQoJDrolhpnyWzc_Q6_nOqgMGA
-drive_file_id_short: 1vhl7d_i
-drive_mime_type: application/vnd.google-apps.document
-drive_file_type: doc
-drive_file_name: InclusiveLayer Memorandum of Understanding Template
+drive_account_slug: "adithya-outerscope"
+drive_file_id: "1VHL7d-I2IrMM3t5DaXQoJDrolhpnyWzc_Q6_nOqgMGA"
+drive_file_id_short: "1vhl7d_i"
+drive_raw_identity_id: "1VHL7d-I2IrMM3t5DaXQoJDrolhpnyWzc_Q6_nOqgMGA"
+drive_mime_type: "application/vnd.google-apps.document"
+drive_file_type: "doc"
+drive_file_name: "InclusiveLayer Memorandum of Understanding Template"
 drive_file_size_bytes: 9670
 drive_web_view_link: "https://docs.google.com/document/d/1VHL7d-I2IrMM3t5DaXQoJDrolhpnyWzc_Q6_nOqgMGA/edit?usp=drivesdk"
 drive_created_at: "2025-01-06T21:01:56.455Z"
@@ -19,20 +20,21 @@ drive_modified_at: "2025-01-15T20:08:48.048Z"
 drive_version: ""
 drive_folder_path: []
 drive_folder_id_path: []
-drive_designated_folder_id: 1aQen7BupLIHLA_Dvbo4FN34-ZxW0HWWE
-drive_designated_folder_name: INCLUSIVELAYER
+drive_designated_folder_id: "1aQen7BupLIHLA_Dvbo4FN34-ZxW0HWWE"
+drive_designated_folder_name: "INCLUSIVELAYER"
 owner:
   email: "adithya@outerscope.xyz"
-  display_name: Adithya Kumar
+  display_name: "Adithya Kumar"
 last_modifier:
   email: "adithya@outerscope.xyz"
-  display_name: Adithya Kumar
+  display_name: "Adithya Kumar"
   modified_at: "2025-01-15T20:08:48.048Z"
 shared_with:
-  - email: "adithya@outerscope.xyz"
-    role: owner
-    display_name: Adithya Kumar
-text_extraction_method: native
+- email: "adithya@outerscope.xyz"
+  role: "owner"
+  display_name: "Adithya Kumar"
+shared_with_visible: true
+text_extraction_method: "native"
 text_extraction_succeeded: true
 last_re_ingested_at: null
 re_ingest_count: 0

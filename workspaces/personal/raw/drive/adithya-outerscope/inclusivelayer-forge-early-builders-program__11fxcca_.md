@@ -1,16 +1,17 @@
 ---
-source: drive
-workspace: personal
-ingested_at: "2026-05-04T16:51:22-05:00"
+source: "drive"
+workspace: "personal"
+ingested_at: "2026-05-04T17:25:21-05:00"
 ingest_version: 1
-content_hash: "blake3:5335f27da5357d5e03412dd73db662d24f67c2d03fd38d3f7f3fd37db7917f76"
+content_hash: "blake3:a4748010bd682570d1f329f4ea0c4c4ebffd94f4c9e1b4cad41bb820a04217fb"
 provider_modified_at: "2025-01-06T21:19:09.225Z"
 drive_account: "adithya@outerscope.xyz"
-drive_account_slug: adithya-outerscope
-drive_file_id: 11fXcca-j4IFq5GqOub59EsvZV13J81_d3Y6eKv7u470
-drive_file_id_short: 11fxcca_
-drive_mime_type: application/vnd.google-apps.document
-drive_file_type: doc
+drive_account_slug: "adithya-outerscope"
+drive_file_id: "11fXcca-j4IFq5GqOub59EsvZV13J81_d3Y6eKv7u470"
+drive_file_id_short: "11fxcca_"
+drive_raw_identity_id: "11fXcca-j4IFq5GqOub59EsvZV13J81_d3Y6eKv7u470"
+drive_mime_type: "application/vnd.google-apps.document"
+drive_file_type: "doc"
 drive_file_name: "InclusiveLayer Forge: Early Builders Program"
 drive_file_size_bytes: 5506
 drive_web_view_link: "https://docs.google.com/document/d/11fXcca-j4IFq5GqOub59EsvZV13J81_d3Y6eKv7u470/edit?usp=drivesdk"
@@ -19,20 +20,21 @@ drive_modified_at: "2025-01-06T21:19:09.225Z"
 drive_version: ""
 drive_folder_path: []
 drive_folder_id_path: []
-drive_designated_folder_id: 1aQen7BupLIHLA_Dvbo4FN34-ZxW0HWWE
-drive_designated_folder_name: INCLUSIVELAYER
+drive_designated_folder_id: "1aQen7BupLIHLA_Dvbo4FN34-ZxW0HWWE"
+drive_designated_folder_name: "INCLUSIVELAYER"
 owner:
   email: "adithya@outerscope.xyz"
-  display_name: Adithya Kumar
+  display_name: "Adithya Kumar"
 last_modifier:
   email: "adithya@outerscope.xyz"
-  display_name: Adithya Kumar
+  display_name: "Adithya Kumar"
   modified_at: "2025-01-06T21:19:09.225Z"
 shared_with:
-  - email: "adithya@outerscope.xyz"
-    role: owner
-    display_name: Adithya Kumar
-text_extraction_method: native
+- email: "adithya@outerscope.xyz"
+  role: "owner"
+  display_name: "Adithya Kumar"
+shared_with_visible: true
+text_extraction_method: "native"
 text_extraction_succeeded: true
 last_re_ingested_at: null
 re_ingest_count: 0

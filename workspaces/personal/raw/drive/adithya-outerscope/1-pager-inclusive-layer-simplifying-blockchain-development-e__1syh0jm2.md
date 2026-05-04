@@ -1,16 +1,17 @@
 ---
-source: drive
-workspace: personal
-ingested_at: "2026-05-04T16:51:18-05:00"
+source: "drive"
+workspace: "personal"
+ingested_at: "2026-05-04T17:25:19-05:00"
 ingest_version: 1
 content_hash: "blake3:d4300ff015c1024b527e7b1a3a6c227a640faf578a4c33897af00512a43c7d8b"
 provider_modified_at: "2025-02-04T17:08:06.286Z"
 drive_account: "adithya@outerscope.xyz"
-drive_account_slug: adithya-outerscope
-drive_file_id: 1syh0jm2haD4SGkaqh4rpA3KjsjTWcDfSYRO68GuRWgc
-drive_file_id_short: 1syh0jm2
-drive_mime_type: application/vnd.google-apps.document
-drive_file_type: doc
+drive_account_slug: "adithya-outerscope"
+drive_file_id: "1syh0jm2haD4SGkaqh4rpA3KjsjTWcDfSYRO68GuRWgc"
+drive_file_id_short: "1syh0jm2"
+drive_raw_identity_id: "1syh0jm2haD4SGkaqh4rpA3KjsjTWcDfSYRO68GuRWgc"
+drive_mime_type: "application/vnd.google-apps.document"
+drive_file_type: "doc"
 drive_file_name: "1-pager - Inclusive Layer: Simplifying Blockchain Development - EDITS"
 drive_file_size_bytes: 98812
 drive_web_view_link: "https://docs.google.com/document/d/1syh0jm2haD4SGkaqh4rpA3KjsjTWcDfSYRO68GuRWgc/edit?usp=drivesdk"
@@ -19,20 +20,21 @@ drive_modified_at: "2025-02-04T17:08:06.286Z"
 drive_version: ""
 drive_folder_path: []
 drive_folder_id_path: []
-drive_designated_folder_id: 1aQen7BupLIHLA_Dvbo4FN34-ZxW0HWWE
-drive_designated_folder_name: INCLUSIVELAYER
+drive_designated_folder_id: "1aQen7BupLIHLA_Dvbo4FN34-ZxW0HWWE"
+drive_designated_folder_name: "INCLUSIVELAYER"
 owner:
   email: "adithya@outerscope.xyz"
-  display_name: Adithya Kumar
+  display_name: "Adithya Kumar"
 last_modifier:
   email: "adithya@outerscope.xyz"
-  display_name: Adithya Kumar
+  display_name: "Adithya Kumar"
   modified_at: "2025-02-04T17:08:06.286Z"
 shared_with:
-  - email: "adithya@outerscope.xyz"
-    role: owner
-    display_name: Adithya Kumar
-text_extraction_method: native
+- email: "adithya@outerscope.xyz"
+  role: "owner"
+  display_name: "Adithya Kumar"
+shared_with_visible: true
+text_extraction_method: "native"
 text_extraction_succeeded: true
 last_re_ingested_at: null
 re_ingest_count: 0

@@ -20,6 +20,12 @@ members:
 - slug: adithya-shak-kumar
   slack_user_id: U0A993YPZ1Q
   display_name: Adithya Kumar (me)
+- slug: sharon-hou
+  slack_user_id: U0A9PK12CJE
+  display_name: Sharon Hou
+- slug: katie-xu
+  slack_user_id: U0A9T79R6FN
+  display_name: Katie Xu
 - slug: karen-dong
   slack_user_id: U0ALPFY8R7Z
   display_name: Karen Dong
@@ -27,5 +33,5 @@ members:
   slack_user_id: USLACKBOT
   display_name: Slackbot
 first_seen: '2026-05-04T16:07:17-05:00'
-last_updated: '2026-05-04T16:53:21-05:00'
+last_updated: '2026-05-04T17:09:45-05:00'
 ---

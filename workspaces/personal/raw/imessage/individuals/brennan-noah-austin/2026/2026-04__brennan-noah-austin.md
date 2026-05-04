@@ -1,7 +1,7 @@
 ---
 source: imessage
 workspace: personal
-ingested_at: '2026-05-04T03:49:35.768759+00:00'
+ingested_at: '2026-05-04T03:51:37.881552+00:00'
 ingest_version: 1
 content_hash: blake3:69c7a09d94426d664de118f8db899b059a16d04536634305e4ac894e071c0c50
 provider_modified_at: '2026-04-30T22:24:22.451915-05:00'
@@ -29,7 +29,7 @@ attachments:
   description: First-person view from inside a car as the driver drifts around a dark
     corner at night.
   description_model: gemini-3-flash-preview
-  extracted_at: '2026-05-04T03:48:58.611886+00:00'
+  extracted_at: '2026-05-04T03:51:37.840136+00:00'
   source_available: true
 - id: a32a44357ff11a2e
   filename: FREE 0kmateo x zvch type beat (prod.G1mmpy!).mp3
@@ -140,7 +140,7 @@ attachments:
   description: A dark Tesla (TX plate VYZ-0246) waits in heavy nighttime traffic near
     the Duval Rd exit.
   description_model: gemini-3-flash-preview
-  extracted_at: '2026-05-04T03:49:26.546859+00:00'
+  extracted_at: '2026-05-04T03:51:37.878684+00:00'
   source_available: true
 - id: 2860ea127038d464
   filename: A0D8A865-8C94-4306-ABC0-E394FC6DC6BC.pluginPayloadAttachment
@@ -185,7 +185,7 @@ attachments:
   description: Screenshot of an iMessage chat sharing a Logic Pro project template
     file.
   description_model: gemini-3-flash-preview
-  extracted_at: '2026-05-04T03:49:35.765288+00:00'
+  extracted_at: '2026-05-04T03:51:37.878910+00:00'
   source_available: true
 chat_message_guids_count: 134
 deleted_upstream: null

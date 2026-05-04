@@ -277,9 +277,9 @@ def gemini_describe(path: Path, kind: str) -> tuple[str | None, str | None]:
     return desc, DESCRIPTION_MODEL
 
 
-def load_prior_descriptions(month_path: Path) -> dict[tuple[str, str], str]:
-    """Read existing month file's frontmatter, build {(sha256, model): description}.
-    Used for idempotent re-runs: skip Gemini call if same binary + same model."""
+def load_prior_descriptions(month_path: Path) -> dict[tuple[str, str], tuple[str, str]]:
+    """Read existing month file's frontmatter, build {(sha256, model): (description, extracted_at)}.
+    Re-runs reuse description AND original extracted_at for byte-stable output."""
     if not month_path.exists():
         return {}
     try:
@@ -290,7 +290,7 @@ def load_prior_descriptions(month_path: Path) -> dict[tuple[str, str], str]:
     if not m:
         return {}
     try:
-        import yaml as _yaml  # already imported at module scope
+        import yaml as _yaml
         fm = _yaml.safe_load(m.group(1)) or {}
     except Exception:
         return {}
@@ -299,8 +299,9 @@ def load_prior_descriptions(month_path: Path) -> dict[tuple[str, str], str]:
         sha = a.get("sha256")
         model = a.get("description_model")
         desc = a.get("description")
+        extracted_at = a.get("extracted_at")
         if sha and model and desc:
-            out[(sha, model)] = desc
+            out[(sha, model)] = (desc, extracted_at)
     return out
 
 
@@ -493,27 +494,28 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
                 kind = kind_of(a["mime"], src)
                 description = None
                 model = None
+                extracted_at = None
                 if not source_available:
                     pass
                 elif skip_descriptions:
                     pass
                 elif sha256 and (sha256, DESCRIPTION_MODEL) in prior_desc:
-                    description = prior_desc[(sha256, DESCRIPTION_MODEL)]
+                    description, extracted_at = prior_desc[(sha256, DESCRIPTION_MODEL)]
                     model = DESCRIPTION_MODEL
                     total_atts_reused += 1
                 elif kind == "bundle":
                     ext = Path(a["filename"]).suffix or ""
                     description = bundle_description(src, ext)
-                    model = None  # static, no model
+                    model = None  # static, no model; not cached
                     total_atts_described += 1
                 elif kind in ("image", "video", "text"):
                     description, model = gemini_describe(src, kind)
                     if description:
+                        extracted_at = datetime.datetime.now(datetime.timezone.utc).isoformat()
                         total_atts_described += 1
                     else:
                         total_atts_skipped += 1
                 else:
-                    # audio / opaque / unknown
                     total_atts_skipped += 1
                 fm_atts.append({
                     "id": aid,
@@ -525,10 +527,7 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
                     "sha256": sha256,
                     "description": description,
                     "description_model": model,
-                    "extracted_at": (
-                        datetime.datetime.now(datetime.timezone.utc).isoformat()
-                        if description and model else None
-                    ),
+                    "extracted_at": extracted_at,
                     "source_available": source_available,
                 })
 

@@ -1071,6 +1071,32 @@ def collect_history_events(svc, start_history_id: str, max_items: int | None) ->
 # Per-thread processing
 # ---------------------------------------------------------------------------
 
+_THREAD_ID_LINE_RE = re.compile(r"^thread_id:\s*(\S+)\s*$", re.MULTILINE)
+
+
+def _frontmatter_thread_id(text: str) -> str | None:
+    """Pull `thread_id` from a raw file's frontmatter without requiring the
+    YAML to be parseable. yaml.safe_load is preferred (correct), with a
+    line-regex fallback so a manual edit that introduces a YAML syntax
+    error elsewhere in the frontmatter doesn't permanently lose the
+    deletion-tombstone signal for that thread."""
+    if not text.startswith("---\n"):
+        return None
+    end = text.find("\n---\n", 4)
+    if end < 0:
+        return None
+    fm_text = text[4:end]
+    try:
+        fm = yaml.safe_load(fm_text) or {}
+        tid = fm.get("thread_id")
+        if isinstance(tid, str):
+            return tid
+    except yaml.YAMLError:
+        pass
+    m = _THREAD_ID_LINE_RE.search(fm_text)
+    return m.group(1) if m else None
+
+
 def find_existing_raw_files(thread_id: str, account: str, workspaces_config: dict) -> list[tuple[str, Path]]:
     """Locate existing raw/gmail files for this thread, across workspaces.
     The 8-char thread-id suffix in the filename is for human readability
@@ -1091,16 +1117,14 @@ def find_existing_raw_files(thread_id: str, account: str, workspaces_config: dic
                 text = p.read_text()
             except OSError:
                 continue
-            if not text.startswith("---\n"):
+            tid = _frontmatter_thread_id(text)
+            if tid is None:
+                sys.stderr.write(
+                    f"ingest-gmail: WARN cannot read thread_id from {p.relative_to(ULTRON_ROOT)}; "
+                    f"skipping mutation of this candidate. Hand-edit frontmatter and re-run.\n"
+                )
                 continue
-            end = text.find("\n---\n", 4)
-            if end < 0:
-                continue
-            try:
-                fm = yaml.safe_load(text[4:end]) or {}
-            except yaml.YAMLError:
-                continue
-            if fm.get("thread_id") == thread_id:
+            if tid == thread_id:
                 out.append((ws, p))
     return out
 

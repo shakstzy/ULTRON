@@ -135,7 +135,19 @@ IMPLEMENTATION_READY = True
 First live run should be `--max-contacts 3` to validate end-to-end before
 unlocking the full archive.
 
-## 8. Troubleshooting
+## 8. Crash recovery + orphan cleanup
+A SIGTERM mid-run (launchd timeout, OS shutdown) can leave **orphaned
+attachments**: copied to `_attachments/<id>.<ext>` after the budget check
+but before the cursor / ledger advance. On the next run, the renderer
+recomputes `attachment_id` for each attachment in the bucket and:
+- If `_attachments/<id>.<ext>` exists with matching sha256: re-link, do not re-copy.
+- If exists with mismatching sha256: collision-guard (per `format.md` § J.6); skip and warn.
+- If exists but the bucket no longer references it (e.g., chat re-routed): leave for an explicit `--gc-attachments` pass; never delete in the normal ingest path.
+
+The flock at `/tmp/com.adithya.ultron.ingest-imessage.lock` prevents two
+runs from racing on the same `_attachments/` directory.
+
+## 9. Troubleshooting
 - **ROWID reset warning in logs**: chat.db was rebuilt (Mac migration,
   Messages reset, iCloud resync). The robot fell back to date-based
   cursor. Expected behavior; no action required.

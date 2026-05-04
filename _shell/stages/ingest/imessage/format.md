@@ -38,7 +38,7 @@ Priority order, applied once per contact at first sight, recorded in
 2. **Email local-part + domain stem**: `sydney@eclipse.audio` →
    `sydney-eclipse`. Domain stem is first label of the registrable domain.
 3. **E.164 phone**: `+15125551234` → `phone-15125551234`.
-4. **Hash fallback**: `unknown-<8-hex blake3 of identifier>`.
+4. **Hash fallback**: `unknown-<12-hex blake3 of identifier>`. 12 hex (48 bits) keeps birthday-collision risk negligible across the personal contact set; 8 was undersized.
 
 If priorities 1 to 3 yield an empty or dash-only slug after normalization
 (emoji-only contact names, all-non-ASCII handles), drop to priority 4.
@@ -173,10 +173,11 @@ Tapbacks are separate `message` rows where `associated_message_type` is in
 
 The renderer must:
 1. Filter all tapback rows out of the main message stream.
-2. Build a map `target_guid -> list[(type, sender, tapback_date, removed?)]`.
-3. Apply 3xxx removals; latest per `(target, sender, type)` by `tapback_date` wins. Removal-without-prior-add: log and ignore.
-4. Attach surviving tapbacks inline below their target message per § E. If target is in a different month bucket, mark that bucket for re-render (see § H). If target is unsent / deleted, render the tapback under a `[deleted target]` placeholder.
-5. Never emit tapbacks as standalone message rows.
+2. Strip prefix from `associated_message_guid`: `p:0/`, `bp:`, `p:<n>/`. Target's own `message.guid` does not carry this prefix.
+3. Build map `stripped_target_guid -> list[(type, sender, tapback_date, removed?)]`.
+4. Apply 3xxx removals; latest per `(target, sender, type)` by `tapback_date` wins. **Removal-without-prior-add in the current batch**: query chat.db for the target's date, mark its month bucket for re-render (the prior add is baked into the existing markdown).
+5. Render with the **tapback row's** `HH:MM`, not the target's. If target is in a different month bucket, mark that bucket for re-render (§ H). If target is unsent / deleted, render under a `[deleted target]` placeholder.
+6. Never emit tapbacks as standalone message rows.
 
 ## J. Forbidden behaviors (immutable contract)
 The robot NEVER:

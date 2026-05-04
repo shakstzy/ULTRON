@@ -12,7 +12,7 @@
 | Source DB | `~/Library/Messages/chat.db` | Local SQLite, opened read-only |
 | Attachments root | `~/Library/Messages/Attachments/` | Binary copies (per § G of `format.md`) |
 | Apple Contacts | `Contacts.framework` via PyObjC | Slug derivation priority 1 |
-| Ledger | `workspaces/<ws>/_meta/ingested.jsonl` | Per-workspace dedup keyed by `imessage:<contact_slug>:<YYYY-MM>` |
+| Ledger | `workspaces/<ws>/_meta/ingested.jsonl` | Per-workspace dedup keyed by `imessage:<contact_type>:<contact_slug>:<YYYY-MM>` (per `format.md` § H) |
 
 ## Process
 One robot run = one local chat.db. (Future iCloud-only-device support adds per-device cursors.)

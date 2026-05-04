@@ -49,9 +49,14 @@ Steps:
 
 PyObjC is the dependency. Install with:
 ```bash
-pip3 install pyobjc-framework-Contacts
+pip3 install pyobjc-framework-Contacts pyobjc-framework-Cocoa
 ```
-(Pin in `_shell/bin/requirements.txt` only when activating the robot.)
+`pyobjc-framework-Cocoa` is also required: the v1 attributedBody parser uses `Foundation.NSUnarchiver`. Pin in `_shell/bin/requirements.txt` only when activating the robot.
+
+**attributedBody parser caveats** (verified live, round-2 review):
+- Wrap each `NSUnarchiver.decodeObject()` call in `objc.autorelease_pool()`. Without it, ObjC temporaries accumulate over a 100K-message backfill and OOM the process.
+- Catch `NSInvalidUnarchiveOperationException`. Some messages contain undocumented Apple classes (`MSMessage`, app-extension payloads). Decode failure → fall back to `[app message: <balloon_bundle_id>]` per `format.md` § E. Never crash; never emit raw obj-descriptions.
+- When the decoded `NSAttributedString` includes `NSTextAttachment`, the underlying string contains `U+FFFC` (object replacement character). Strip these from rendered text; the attachment itself is captured separately via `message_attachment_join`.
 
 ## 3. chat.db read-only verification
 The robot uses SQLite URI mode `?mode=ro`. Confirm read-only behavior with:
@@ -66,11 +71,8 @@ rename or add columns). Bail and re-spec before running.
 **Schema variants (verified against macOS Sonoma)**: the columns
 `is_edited` and `is_unsent` are NOT present on Sonoma's `message` table.
 Detection alternatives the implementation must use:
-- **Edited**: `date_edited > 0` (verified working).
-- **Unsent**: no clean column; parse `message_summary_info` plist for the
-  unsent sentinel, or treat `text IS NULL AND attributedBody IS NULL AND
-  date_edited > 0` as a candidate. v1 may render edits and skip unsent
-  detection until the parser lands; v1.5 wires both up properly.
+- **Edited**: `date_edited > 0` (verified working; 42/187K msgs flagged on this Mac).
+- **Unsent**: no clean column. The heuristic `text IS NULL AND attributedBody IS NULL AND date_edited > 0` is **NOT reliable**: media-only messages and quirks fire false positives (Gemini round 2). Parse the `message_summary_info` binary plist for the unsent sentinel. v1 renders edits via `date_edited`; v1.5 implements the plist parser for unsents.
 
 **1:1 vs group**: distinguished by `chat.style` (`style = 43` is group;
 otherwise 1:1). Group chats route to `groups/<slug>/`, 1:1 to

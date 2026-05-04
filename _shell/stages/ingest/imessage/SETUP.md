@@ -63,9 +63,23 @@ This must list (at minimum): `attachment`, `chat`, `chat_handle_join`,
 Missing tables means the schema has shifted (newer macOS releases sometimes
 rename or add columns). Bail and re-spec before running.
 
+**Schema variants (verified against macOS Sonoma)**: the columns
+`is_edited` and `is_unsent` are NOT present on Sonoma's `message` table.
+Detection alternatives the implementation must use:
+- **Edited**: `date_edited > 0` (verified working).
+- **Unsent**: no clean column; parse `message_summary_info` plist for the
+  unsent sentinel, or treat `text IS NULL AND attributedBody IS NULL AND
+  date_edited > 0` as a candidate. v1 may render edits and skip unsent
+  detection until the parser lands; v1.5 wires both up properly.
+
+**1:1 vs group**: distinguished by `chat.style` (`style = 43` is group;
+otherwise 1:1). Group chats route to `groups/<slug>/`, 1:1 to
+`individuals/<slug>/`.
+
 ## 4. Realistic timing expectations
-- **First run** with empty cursor: 10 to 30 minutes for a typical 100K
-  message chat.db. Attachment copy (per `format.md` § G) is the bottleneck;
+- **First run** with empty cursor: 20 to 60 minutes for a 150-200K message
+  chat.db with ~10K attachments (this Mac measures 187K msgs / 8.6K
+  attachments). Attachment copy (per `format.md` § G) is the bottleneck;
   I/O bound, not CPU bound.
 - **Incremental runs** (cursor non-empty): seconds to minutes depending on
   daily message volume.

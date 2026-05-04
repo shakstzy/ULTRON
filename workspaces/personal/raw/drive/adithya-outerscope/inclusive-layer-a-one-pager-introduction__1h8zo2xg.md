@@ -1,16 +1,17 @@
 ---
-source: drive
-workspace: personal
-ingested_at: "2026-05-04T16:51:17-05:00"
+source: "drive"
+workspace: "personal"
+ingested_at: "2026-05-04T17:17:08-05:00"
 ingest_version: 1
 content_hash: "blake3:8c92adb2ae862e35bb832120a38c90bde32f49722adcd34e61ffe1c376711fe5"
 provider_modified_at: "2025-01-21T01:22:43.937Z"
 drive_account: "adithya@outerscope.xyz"
-drive_account_slug: adithya-outerscope
-drive_file_id: 1-F6e1WIVxHpf88kH17AjQ18vjDsf9WbGsLEprplhbDQ
-drive_file_id_short: 1_f6e1wi
-drive_mime_type: application/vnd.google-apps.document
-drive_file_type: doc
+drive_account_slug: "adithya-outerscope"
+drive_file_id: "1-F6e1WIVxHpf88kH17AjQ18vjDsf9WbGsLEprplhbDQ"
+drive_file_id_short: "1_f6e1wi"
+drive_raw_identity_id: "1h8zO2xGjoZ6HSQ3uKHOlTRdpe0HsyQx7"
+drive_mime_type: "application/vnd.google-apps.document"
+drive_file_type: "doc"
 drive_file_name: "Inclusive Layer: A One-Pager Introduction"
 drive_file_size_bytes: 11048
 drive_web_view_link: "https://docs.google.com/document/d/1-F6e1WIVxHpf88kH17AjQ18vjDsf9WbGsLEprplhbDQ/edit?usp=drivesdk"
@@ -19,33 +20,34 @@ drive_modified_at: "2025-01-21T01:22:43.937Z"
 drive_version: ""
 drive_folder_path: []
 drive_folder_id_path: []
-drive_designated_folder_id: 1aQen7BupLIHLA_Dvbo4FN34-ZxW0HWWE
-drive_designated_folder_name: INCLUSIVELAYER
+drive_designated_folder_id: "1aQen7BupLIHLA_Dvbo4FN34-ZxW0HWWE"
+drive_designated_folder_name: "INCLUSIVELAYER"
 owner:
   email: "blas@deltafund.io"
-  display_name: blas
+  display_name: "blas"
 last_modifier:
   email: "frank@gmidigital.xyz"
-  display_name: frank
+  display_name: "frank"
   modified_at: "2025-01-21T01:22:43.937Z"
 shared_with:
-  - email: "blas@deltafund.io"
-    role: owner
-    display_name: blas
-  - email: "frank@gmidigital.xyz"
-    role: writer
-    display_name: frank
-  - email: "adithya@outerscope.xyz"
-    role: writer
-    display_name: Adithya Kumar
-  - email: "kavita@deltafund.io"
-    role: writer
-    display_name: kavita
-text_extraction_method: native
+- email: "blas@deltafund.io"
+  role: "owner"
+  display_name: "blas"
+- email: "frank@gmidigital.xyz"
+  role: "writer"
+  display_name: "frank"
+- email: "adithya@outerscope.xyz"
+  role: "writer"
+  display_name: "Adithya Kumar"
+- email: "kavita@deltafund.io"
+  role: "writer"
+  display_name: "kavita"
+shared_with_visible: true
+text_extraction_method: "native"
 text_extraction_succeeded: true
 last_re_ingested_at: null
 re_ingest_count: 0
-drive_shortcut_origin_id: 1h8zO2xGjoZ6HSQ3uKHOlTRdpe0HsyQx7
+drive_shortcut_origin_id: "1h8zO2xGjoZ6HSQ3uKHOlTRdpe0HsyQx7"
 ---
 
 # Inclusive Layer: A One-Pager Introduction

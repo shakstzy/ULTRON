@@ -1,11 +1,41 @@
-"""drive/route.py — see _template/route.py for the contract."""
+"""
+drive/route.py — given a Drive file and the parsed sources.yaml of every
+workspace, decide which workspace(s) get a copy.
+
+Public API:
+    route(file_meta, workspaces_config) -> list[{workspace, rule}]
+
+`file_meta` is a Drive file dict normalized to the helpers below. Required
+keys:
+    drive_account              # full email
+    drive_designated_folder_id # the designated root that this file rolled up
+                               # under (set by the ingest robot when it
+                               # enumerates a designated folder, NOT
+                               # something the API gives you)
+
+`workspaces_config` is {ws_slug: parsed_sources_yaml}.
+
+Routing semantics (v1):
+  - For each workspace's `sources.drive` block: scan
+    `accounts[].folders[].id`. A workspace matches when one of its
+    folder IDs equals `file_meta["drive_designated_folder_id"]` AND the
+    `accounts[].account` equals `file_meta["drive_account"]`.
+  - Folder claims are exclusive in v1. If two workspaces claim the same
+    folder ID, the validator (validate-drive-config.py) flags it; this
+    function still returns both, sorted, leaving the operator to fix the
+    config.
+  - No `<unrouted-default>` fallback. A Drive file is only ever ingested
+    via a designated folder claim, so an "unrouted" Drive file is a bug
+    upstream (the robot shouldn't have fetched it).
+  - `also_route_to` and folder glob patterns are deferred to v1.5.
+
+Returned shape mirrors gmail/route.py: `[{workspace, rule}]`, sorted by
+workspace. The rule is `folder:<designated_folder_id>` so the ledger row
+records what claimed the file.
+"""
 from __future__ import annotations
 
-import fnmatch
-
 SOURCE_NAME = "drive"
-DEFAULT_UNROUTED = "route_to_main"
-MAIN_WS_FALLBACK = ("main", "personal")
 
 
 def _drive_block(ws_cfg: dict) -> dict | None:
@@ -14,58 +44,40 @@ def _drive_block(ws_cfg: dict) -> dict | None:
         return sources.get(SOURCE_NAME)
     if isinstance(sources, list):
         for s in sources:
-            if s.get("type") == SOURCE_NAME:
+            if isinstance(s, dict) and s.get("type") == SOURCE_NAME:
                 return s.get("config") or s
     return None
 
 
-def _folder_match(file_meta: dict, folders: list[str]) -> bool:
-    if not folders:
-        return True
-    parents = file_meta.get("parent_paths") or []
-    for pat in folders:
-        for parent in parents:
-            if fnmatch.fnmatch(parent, pat) or parent.startswith(pat):
-                return True
-    return False
+def _normalize_accounts(block: dict) -> list[dict]:
+    """Drive block uses `accounts: [{account, folders: [...]}]`."""
+    accts = block.get("accounts")
+    if isinstance(accts, list):
+        return [a for a in accts if isinstance(a, dict)]
+    return []
 
 
-def _mime_match(file_meta: dict, allowlist: list[str]) -> bool:
-    if not allowlist:
-        return True
-    mime = file_meta.get("mime") or ""
-    return any(fnmatch.fnmatch(mime, p) for p in allowlist)
+def route(file_meta: dict, workspaces_config: dict) -> list[dict]:
+    """Returns list of {workspace, rule} entries, sorted by workspace."""
+    file_account = (file_meta.get("drive_account") or "").lower()
+    file_folder_id = file_meta.get("drive_designated_folder_id")
+    if not file_account or not file_folder_id:
+        return []
 
+    matched: dict[str, str] = {}
 
-def _main_workspace(workspaces_config: dict) -> str | None:
-    for cand in MAIN_WS_FALLBACK:
-        if cand in workspaces_config:
-            return cand
-    return None
-
-
-def route(file_meta: dict, workspaces_config: dict) -> list[str]:
-    matched: set[str] = set()
     for ws, cfg in workspaces_config.items():
         block = _drive_block(cfg)
         if not block:
             continue
-        if file_meta.get("account") and block.get("account") and block["account"] != file_meta["account"]:
-            continue
-        folders = block.get("folders") or []
-        mimes = block.get("mime_types") or []
-        if _folder_match(file_meta, folders) and _mime_match(file_meta, mimes):
-            matched.add(ws)
+        for acct in _normalize_accounts(block):
+            if (acct.get("account") or "").lower() != file_account:
+                continue
+            for folder in acct.get("folders") or []:
+                if not isinstance(folder, dict):
+                    continue
+                if folder.get("id") == file_folder_id:
+                    matched[ws] = f"folder:{file_folder_id}"
+                    break
 
-    if not matched:
-        defaults = {
-            (cfg or {}).get("_workspace_meta", {}).get("ingest_unrouted_default", DEFAULT_UNROUTED)
-            for ws, cfg in workspaces_config.items()
-            if _drive_block(cfg) is not None
-        }
-        if "skip" in defaults:
-            return []
-        main = _main_workspace(workspaces_config)
-        if main is not None:
-            matched.add(main)
-    return sorted(matched)
+    return [{"workspace": ws, "rule": rule} for ws, rule in sorted(matched.items())]

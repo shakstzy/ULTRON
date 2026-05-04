@@ -4,6 +4,13 @@
 workspace: eclipse
 wiki: true
 
+# Slack ingest: eclipse claims everything from this Slack workspace OR
+# nothing — unrouted containers must NOT spill into personal/. Setting
+# ingest_unrouted_default=skip makes route.py return [] instead of
+# falling back to _main_workspace.
+_workspace_meta:
+  ingest_unrouted_default: skip
+
 sources:
   gmail:
     accounts:

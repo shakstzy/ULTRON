@@ -497,7 +497,7 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
         out_path = month_dir / f"{month_key}__{slug}.md"
         if not dry_run:
             out_path.write_text(fm_text + body)
-        written_files.append((out_path, len(month_msgs), len(fm_atts), len(body) + len(fm_text)))
+        written_files.append((out_path, len(month_msgs), len(fm_atts), len(body) + len(fm_text), ch))
 
     return {
         "slug": slug,
@@ -513,22 +513,42 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
     }
 
 
-def append_ledger(ws_root, slug, files):
+def append_ledger(ws_root, slug, files, run_id="oneshot"):
+    """Append rows per format.md § H. Skip if a prior row with the same
+    (key, content_hash) already exists; otherwise append a new row."""
     ledger = ws_root / "_meta" / "ingested.jsonl"
     ledger.parent.mkdir(parents=True, exist_ok=True)
+    existing = set()
+    if ledger.exists():
+        for line in ledger.read_text().splitlines():
+            try:
+                r = json.loads(line)
+                if r.get("source") == "imessage" and r.get("content_hash"):
+                    existing.add((r["key"], r["content_hash"]))
+            except Exception:
+                pass
     now = datetime.datetime.now(datetime.timezone.utc).isoformat()
+    appended = 0
+    skipped = 0
     with ledger.open("a") as f:
-        for path, msg_count, _atts, _size in files:
+        for path, _msg_count, _atts, _size, content_hash in files:
             month = path.stem.split("__")[0]
+            ctype = "individual" if "/individuals/" in str(path) else "group"
+            key = f"imessage:{ctype}:{slug}:{month}"
+            if (key, content_hash) in existing:
+                skipped += 1
+                continue
             row = {
                 "source": "imessage",
-                "key": f"imessage:individual:{slug}:{month}",
-                "content_hash": None,  # filled by re-read; oneshot uses fm.content_hash
+                "key": key,
+                "content_hash": content_hash,
                 "raw_path": str(path.relative_to(ws_root.parent.parent)),
                 "ingested_at": now,
-                "run_id": "oneshot",
+                "run_id": run_id,
             }
             f.write(json.dumps(row) + "\n")
+            appended += 1
+    print(f"  ledger: {appended} appended, {skipped} skipped (already up-to-date)")
 
 
 def main():
@@ -567,7 +587,7 @@ def main():
         if not result:
             continue
         print(f"\n  files written: {len(result['files'])}")
-        for path, mcount, acount, size in result["files"]:
+        for path, mcount, acount, size, _ch in result["files"]:
             try:
                 rel = path.relative_to(ULTRON_ROOT)
             except ValueError:

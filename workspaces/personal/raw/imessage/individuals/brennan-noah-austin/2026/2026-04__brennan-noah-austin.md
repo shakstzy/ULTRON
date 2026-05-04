@@ -1,9 +1,9 @@
 ---
 source: imessage
 workspace: personal
-ingested_at: '2026-05-04T03:19:44.065698+00:00'
+ingested_at: '2026-05-04T03:22:43.606816+00:00'
 ingest_version: 1
-content_hash: blake3:239df39366ff4051a492e5798227e85bed365160fcf6a11d00b356d292889bba
+content_hash: blake3:f38155f0e9b99bb5b312b5e33c18e53f6f0e407254cbeb9e4d9ef81d6668150f
 provider_modified_at: '2026-04-30T22:24:22.451915-05:00'
 contact_slug: brennan-noah-austin
 contact_type: individual
@@ -20,7 +20,7 @@ my_message_count: 63
 their_message_count: 71
 attachments:
 - id: 8b53c35471955827
-  filename: ~/Library/Messages/Attachments/bf/15/8C596654-4234-4488-9D53-E9976C3A3953/IMG_1384.mov
+  filename: IMG_1384.mov
   mime: video/quicktime
   size_bytes: 5766487
   sender: brennan-noah-austin
@@ -30,8 +30,7 @@ attachments:
   attachment_path: _attachments/8b53c35471955827.mov
   source_missing: false
 - id: a32a44357ff11a2e
-  filename: ~/Library/Messages/Attachments/14/04/502803A9-C4B5-4599-880C-60BD886C2805/FREE
-    0kmateo x zvch type beat (prod.G1mmpy!).mp3
+  filename: FREE 0kmateo x zvch type beat (prod.G1mmpy!).mp3
   mime: audio/mpeg
   size_bytes: 2237710
   sender: brennan-noah-austin
@@ -41,7 +40,7 @@ attachments:
   attachment_path: _attachments/a32a44357ff11a2e.mp3
   source_missing: false
 - id: f4a23d1d02c0c58a
-  filename: ~/Library/Messages/Attachments/51/01/D9678DC5-09E5-42B1-84ED-E9AC791F09FB/C7E5A3C0-CDC5-4B71-B019-85DB99A4FEE1.pluginPayloadAttachment
+  filename: C7E5A3C0-CDC5-4B71-B019-85DB99A4FEE1.pluginPayloadAttachment
   mime: null
   size_bytes: 1150
   sender: brennan-noah-austin
@@ -51,7 +50,7 @@ attachments:
   attachment_path: _attachments/f4a23d1d02c0c58a.pluginpayloadattachment
   source_missing: false
 - id: 2e6bdee01db8e1a6
-  filename: ~/Library/Messages/Attachments/97/07/EDD6455A-1351-41AD-BC02-578E19B6EDF8/CA198456-82E8-4A73-908B-60BFF2B764DA.pluginPayloadAttachment
+  filename: CA198456-82E8-4A73-908B-60BFF2B764DA.pluginPayloadAttachment
   mime: null
   size_bytes: 113077
   sender: brennan-noah-austin
@@ -61,8 +60,7 @@ attachments:
   attachment_path: _attachments/2e6bdee01db8e1a6.pluginpayloadattachment
   source_missing: false
 - id: d7ae07a14d514a12
-  filename: ~/Library/Messages/Attachments/01/01/1356057D-090D-4A6A-8723-CE48D6BC132D/[FREE
-    FOR PROFIT] Trippie Redd x 9lives x sample type beat - TEK IT.mp3
+  filename: '[FREE FOR PROFIT] Trippie Redd x 9lives x sample type beat - TEK IT.mp3'
   mime: audio/mpeg
   size_bytes: 3997498
   sender: brennan-noah-austin
@@ -72,7 +70,7 @@ attachments:
   attachment_path: _attachments/d7ae07a14d514a12.mp3
   source_missing: false
 - id: 74c4b835a5c03e1b
-  filename: ~/Library/Messages/Attachments/55/05/5BB91180-7D0F-486F-8982-B6E46371F79E/Ethereal.m4a
+  filename: Ethereal.m4a
   mime: audio/x-m4a
   size_bytes: 1774697
   sender: brennan-noah-austin
@@ -82,7 +80,7 @@ attachments:
   attachment_path: _attachments/74c4b835a5c03e1b.m4a
   source_missing: false
 - id: 0475e2ce6f9fd690
-  filename: ~/Library/Messages/Attachments/87/07/F1AF53B2-7BBE-4AB1-B662-F7674141389E/control.wav
+  filename: control.wav
   mime: audio/x-wav
   size_bytes: 27686048
   sender: me
@@ -92,7 +90,7 @@ attachments:
   attachment_path: _attachments/0475e2ce6f9fd690.wav
   source_missing: false
 - id: 79c76119afb7af88
-  filename: ~/Library/Messages/Attachments/84/04/9F02DC60-F226-4C1D-BE92-9B6BA40CEC9D/cold.wav
+  filename: cold.wav
   mime: audio/x-wav
   size_bytes: 28331666
   sender: me
@@ -102,7 +100,7 @@ attachments:
   attachment_path: _attachments/79c76119afb7af88.wav
   source_missing: false
 - id: e30b2a18db4ae3e8
-  filename: ~/Library/Messages/Attachments/7a/10/15C1C940-91F7-43C7-8258-1ABC157780D2/bestfriends.wav
+  filename: bestfriends.wav
   mime: audio/x-wav
   size_bytes: 32662756
   sender: me
@@ -112,8 +110,7 @@ attachments:
   attachment_path: _attachments/e30b2a18db4ae3e8.wav
   source_missing: false
 - id: c2af2f8a211d7122
-  filename: ~/Library/Messages/Attachments/cc/12/6501D9DE-CAA9-4804-B25F-DC7590247C27/free
-    type beat - feelings - Dom Corleo x zvch x 0kmateo (prod. SH Beats).mp3
+  filename: free type beat - feelings - Dom Corleo x zvch x 0kmateo (prod. SH Beats).mp3
   mime: audio/mpeg
   size_bytes: 3361155
   sender: brennan-noah-austin
@@ -123,7 +120,7 @@ attachments:
   attachment_path: null
   source_missing: false
 - id: 4d4b581ca3adc0a8
-  filename: ~/Library/Messages/Attachments/f0/00/492D589D-4867-4955-8762-D5C785B1A66D/79887088459__7AE3B324-AAAD-4FA5-A56D-72625C98670E.HEIC
+  filename: 79887088459__7AE3B324-AAAD-4FA5-A56D-72625C98670E.HEIC
   mime: image/heic
   size_bytes: 7455484
   sender: me
@@ -133,7 +130,7 @@ attachments:
   attachment_path: null
   source_missing: false
 - id: 2860ea127038d464
-  filename: ~/Library/Messages/Attachments/9a/10/05876C00-BCDC-4123-B9BF-9A204E07663A/A0D8A865-8C94-4306-ABC0-E394FC6DC6BC.pluginPayloadAttachment
+  filename: A0D8A865-8C94-4306-ABC0-E394FC6DC6BC.pluginPayloadAttachment
   mime: null
   size_bytes: 1150
   sender: brennan-noah-austin
@@ -143,7 +140,7 @@ attachments:
   attachment_path: _attachments/2860ea127038d464.pluginpayloadattachment
   source_missing: false
 - id: 182689f612ff0b1f
-  filename: ~/Library/Messages/Attachments/86/06/AF9F614A-E989-4972-9EE7-1BC09A43866B/C4585126-3E3E-409A-98C2-BD9EF8B2E187.pluginPayloadAttachment
+  filename: C4585126-3E3E-409A-98C2-BD9EF8B2E187.pluginPayloadAttachment
   mime: null
   size_bytes: 73364
   sender: brennan-noah-austin
@@ -153,7 +150,7 @@ attachments:
   attachment_path: _attachments/182689f612ff0b1f.pluginpayloadattachment
   source_missing: false
 - id: 86c57e6e80233ab8
-  filename: ~/Library/Messages/Attachments/10/00/132FEB2C-C63F-4A69-A02A-9504565D5BA8/template.logicx
+  filename: template.logicx
   mime: null
   size_bytes: 128
   sender: me
@@ -163,7 +160,7 @@ attachments:
   attachment_path: null
   source_missing: false
 - id: 62add41f92ad36c5
-  filename: ~/Library/Messages/Attachments/fe/14/31C1571A-0F5E-43D2-95BF-F8EC9A06F179/IMG_2609.png
+  filename: IMG_2609.png
   mime: image/png
   size_bytes: 64103
   sender: me
@@ -178,78 +175,78 @@ deleted_upstream: null
 superseded_by: null
 ---
 
-# Brennan Noah Austin — April 2026
+# Brennan — April 2026
 
 ## 2026-04-15 (Wednesday)
 
-**23:38 — Brennan Noah Austin:** Too
+**23:38 — Brennan:** Too
 
 ## 2026-04-16 (Thursday)
 
-**02:22 — Brennan Noah Austin:** [video: ~/Library/Messages/Attachments/bf/15/8C596654-4234-4488-9D53-E9976C3A3953/IMG_1384.mov, 5.5MB]
-**02:22 — Brennan Noah Austin:** Lil drift before arriving home cause duck it
-**02:22 — Brennan Noah Austin:** Fuck*
+**02:22 — Brennan:** [video: IMG_1384.mov, 5.5MB]
+**02:22 — Brennan:** Lil drift before arriving home cause duck it
+**02:22 — Brennan:** Fuck*
 
 ## 2026-04-17 (Friday)
 
-**01:04 — Brennan Noah Austin:** [audio: ~/Library/Messages/Attachments/14/04/502803A9-C4B5-4599-880C-60BD886C2805/FREE 0kmateo x zvch type beat (prod.G1mmpy!).mp3, 2.1MB]
+**01:04 — Brennan:** [audio: FREE 0kmateo x zvch type beat (prod.G1mmpy!).mp3, 2.1MB]
 **02:33 — me:** She tell me that she love then she say im out the picture
 Now I can’t trust no thottiana can’t believe I miss her
 But fuck it id pay a million just to rewind time and kiss ya
 I can’t believe u happy when u somewhere in the distance
 **02:56 — me:** You focused on loving but im focused on me
 **02:58 — me:** You say we got something that im never gon see
-**04:07 — Brennan Noah Austin:** [file: ~/Library/Messages/Attachments/51/01/D9678DC5-09E5-42B1-84ED-E9AC791F09FB/C7E5A3C0-CDC5-4B71-B019-85DB99A4FEE1.pluginPayloadAttachment, 1.1KB]
-**04:07 — Brennan Noah Austin:** [file: ~/Library/Messages/Attachments/97/07/EDD6455A-1351-41AD-BC02-578E19B6EDF8/CA198456-82E8-4A73-908B-60BFF2B764DA.pluginPayloadAttachment, 110.4KB]
-**04:07 — Brennan Noah Austin:** https://youtu.be/KL-ugwxAQtw
+**04:07 — Brennan:** [file: C7E5A3C0-CDC5-4B71-B019-85DB99A4FEE1.pluginPayloadAttachment, 1.1KB]
+**04:07 — Brennan:** [file: CA198456-82E8-4A73-908B-60BFF2B764DA.pluginPayloadAttachment, 110.4KB]
+**04:07 — Brennan:** https://youtu.be/KL-ugwxAQtw
 
 ## 2026-04-19 (Sunday)
 
-**22:25 — Brennan Noah Austin:** Yo
+**22:25 — Brennan:** Yo
 
 ## 2026-04-20 (Monday)
 
-**00:38 — Brennan Noah Austin:** [audio: ~/Library/Messages/Attachments/01/01/1356057D-090D-4A6A-8723-CE48D6BC132D/[FREE FOR PROFIT] Trippie Redd x 9lives x sample type beat - TEK IT.mp3, 3.8MB]
+**00:38 — Brennan:** [audio: [FREE FOR PROFIT] Trippie Redd x 9lives x sample type beat - TEK IT.mp3, 3.8MB]
 
 ## 2026-04-21 (Tuesday)
 
-**17:47 — Brennan Noah Austin:** Yo got new lyrics to a couple of good beats and they go well so we can make some bangers also lmk when done with the one I made I there last time.
+**17:47 — Brennan:** Yo got new lyrics to a couple of good beats and they go well so we can make some bangers also lmk when done with the one I made I there last time.
 **22:26 — me:** Yoo fire ezily down bro
 
 ## 2026-04-22 (Wednesday)
 
-**17:45 — Brennan Noah Austin:** We hanging tn
-**17:46 — Brennan Noah Austin:** ?
+**17:45 — Brennan:** We hanging tn
+**17:46 — Brennan:** ?
 **21:14 — me:** Yoo tn might be clipped g but how’s tomorrow looking for u bro
-**21:23 — Brennan Noah Austin:** Tomorrows chill
-**21:24 — Brennan Noah Austin:** I’m off work Friday so Thursday after work we can do it
+**21:23 — Brennan:** Tomorrows chill
+**21:24 — Brennan:** I’m off work Friday so Thursday after work we can do it
 
 ## 2026-04-23 (Thursday)
 
-**20:01 — Brennan Noah Austin:** Tn?
+**20:01 — Brennan:** Tn?
 **21:34 — me:** Yoo down bro
-**21:34 — Brennan Noah Austin:** Bet
+**21:34 — Brennan:** Bet
 **21:35 — me:** U and Jake aboutta slide later
-**21:35 — Brennan Noah Austin:** Jake can’t but I’m down
-**22:28 — Brennan Noah Austin:** Gonna be on the way here shortly
+**21:35 — Brennan:** Jake can’t but I’m down
+**22:28 — Brennan:** Gonna be on the way here shortly
 **22:28 — me:** Yoo dude moms friends still over
 **22:28 — me:** Mind if I ping u when bro dips
-**22:28 — Brennan Noah Austin:** Yessir
-**23:06 — Brennan Noah Austin:** I’m gonna go to the store to pick up a pack for us but I’m Trynna do it on the way to you if it’s not gonna be until after 12 then I’ll go now
-**23:25 — Brennan Noah Austin:** Yo?
+**22:28 — Brennan:** Yessir
+**23:06 — Brennan:** I’m gonna go to the store to pick up a pack for us but I’m Trynna do it on the way to you if it’s not gonna be until after 12 then I’ll go now
+**23:25 — Brennan:** Yo?
 **23:26 — me:** Yooo
 **23:26 — me:** Broski still hasn’t dipped out bruh
 **23:26 — me:** Rip
 **23:27 — me:** Hes yapping w my parents rn
-**23:27 — Brennan Noah Austin:** Damn shall we do a diff night or shall I run to the store and grab a pack and then hopefully by then they’ll be gone
+**23:27 — Brennan:** Damn shall we do a diff night or shall I run to the store and grab a pack and then hopefully by then they’ll be gone
 **23:30 — me:** Fuckkk bro lemme see wsg one sec
-**23:30 — Brennan Noah Austin:** Aight
+**23:30 — Brennan:** Aight
 **23:30 — me:** My b bro ik this mad last min
-**23:30 — Brennan Noah Austin:** lol no worries
-**23:30 — Brennan Noah Austin:** I’m off Friday so tns like perfect for me being up late and shit
-**23:34 — Brennan Noah Austin:** We can always do another night tho
+**23:30 — Brennan:** lol no worries
+**23:30 — Brennan:** I’m off Friday so tns like perfect for me being up late and shit
+**23:34 — Brennan:** We can always do another night tho
 **23:40 — me:** Fuckkk bro I’m hella down to run it up but this mf ain’t dippin out
-**23:41 — Brennan Noah Austin:** Does he need to go for me to head over
+**23:41 — Brennan:** Does he need to go for me to head over
 **23:41 — me:** U wanna run tomorrow or some shit
 **23:41 — me:** Fuckk bro prolly
 **23:41 — me:** My moms college homie
@@ -257,103 +254,103 @@ I can’t believe u happy when u somewhere in the distance
 **23:42 — me:** Bruh fuck that tho
 **23:42 — me:** U don’t got  work tomorrow either
 **23:42 — me:** Damn bruh
-**23:43 — Brennan Noah Austin:** Yeah so it’s like the perfect night but tomorrow we could run it he’s probably gonna be there a while if college homie
+**23:43 — Brennan:** Yeah so it’s like the perfect night but tomorrow we could run it he’s probably gonna be there a while if college homie
 **23:43 — me:** Oh shit bruh he dippin out
-**23:44 — Brennan Noah Austin:** Then bet I can head over now
+**23:44 — Brennan:** Then bet I can head over now
 **23:44 — me:** Perfect timing
-**23:44 — Brennan Noah Austin:** Shall I be on the way
+**23:44 — Brennan:** Shall I be on the way
 **23:44 — me:** Yee
-**23:44 — Brennan Noah Austin:** Bet see ya soon
+**23:44 — Brennan:** Bet see ya soon
 **23:44 — me:** Fye
-**23:44 — Brennan Noah Austin:** I’ll call when there
+**23:44 — Brennan:** I’ll call when there
 
 ## 2026-04-24 (Friday)
 
-**00:19 — Brennan Noah Austin:** I’m here
+**00:19 — Brennan:** I’m here
 **00:22 — me:** Sliding
-**01:40 — Brennan Noah Austin:** [audio: ~/Library/Messages/Attachments/55/05/5BB91180-7D0F-486F-8982-B6E46371F79E/Ethereal.m4a, 1.7MB]
-**04:50 — me:** [audio: ~/Library/Messages/Attachments/87/07/F1AF53B2-7BBE-4AB1-B662-F7674141389E/control.wav, 26.4MB]
-**05:01 — me:** [audio: ~/Library/Messages/Attachments/84/04/9F02DC60-F226-4C1D-BE92-9B6BA40CEC9D/cold.wav, 27.0MB]
-**05:38 — me:** [audio: ~/Library/Messages/Attachments/7a/10/15C1C940-91F7-43C7-8258-1ABC157780D2/bestfriends.wav, 31.1MB]
-**06:16 — Brennan Noah Austin:** Shits fire definitely a few tuneups on my vocals in some parts to match correctly but that’s fire shit right there
-**06:19 — Brennan Noah Austin:** We can also rerap cold my parts and fine tune them better so it flows consistent that shit will go hard
-**18:30 — Brennan Noah Austin:** That was heat last night dawg  just played it this morning sober and it’s bangers
+**01:40 — Brennan:** [audio: Ethereal.m4a, 1.7MB]
+**04:50 — me:** [audio: control.wav, 26.4MB]
+**05:01 — me:** [audio: cold.wav, 27.0MB]
+**05:38 — me:** [audio: bestfriends.wav, 31.1MB]
+**06:16 — Brennan:** Shits fire definitely a few tuneups on my vocals in some parts to match correctly but that’s fire shit right there
+**06:19 — Brennan:** We can also rerap cold my parts and fine tune them better so it flows consistent that shit will go hard
+**18:30 — Brennan:** That was heat last night dawg  just played it this morning sober and it’s bangers
 **20:40 — me:** Factual broski
 **20:41 — me:** U and Jake tryna run up 6th tn
-**20:41 — Brennan Noah Austin:** Jake’s not 21
-**23:13 — Brennan Noah Austin:** �
-**23:45 — Brennan Noah Austin:** [audio: ~/Library/Messages/Attachments/cc/12/6501D9DE-CAA9-4804-B25F-DC7590247C27/free type beat - feelings - Dom Corleo x zvch x 0kmateo (prod. SH Beats).mp3, 3.2MB]
+**20:41 — Brennan:** Jake’s not 21
+**23:13 — Brennan:** �
+**23:45 — Brennan:** [audio: free type beat - feelings - Dom Corleo x zvch x 0kmateo (prod. SH Beats).mp3, 3.2MB]
 
 ## 2026-04-25 (Saturday)
 
 **20:42 — me:** Yoo what yall on tn
 **20:42 — me:** Oh bruh wtf u doin in Leander
-**20:43 — Brennan Noah Austin:** Boutta go to pinballs with an old homie
+**20:43 — Brennan:** Boutta go to pinballs with an old homie
 **20:47 — me:** Oh fire the one up north or mid austin
-**20:51 — Brennan Noah Austin:** Mid maybe
-**20:52 — Brennan Noah Austin:** Not sure yet
-**20:52 — Brennan Noah Austin:** Let’s run shit after if down
+**20:51 — Brennan:** Mid maybe
+**20:52 — Brennan:** Not sure yet
+**20:52 — Brennan:** Let’s run shit after if down
 **20:57 — me:** Yee ez bro I’ll ring u in a few
-**21:22 — Brennan Noah Austin:** Bet that
+**21:22 — Brennan:** Bet that
 **21:34 — me:** Yo does ur boy have an id
-**21:35 — Brennan Noah Austin:** Everyone here is of age
-**21:36 — Brennan Noah Austin:** There’s two
-**21:36 — Brennan Noah Austin:** But we got my car and it’s 2 of them no room so it’d be hard to go far with my car
+**21:35 — Brennan:** Everyone here is of age
+**21:36 — Brennan:** There’s two
+**21:36 — Brennan:** But we got my car and it’s 2 of them no room so it’d be hard to go far with my car
 **21:54 — me:** Oh fire bruh wait lets mob 6th slide mine and i can take on of yall think mine should be otw
 **21:55 — me:** Few of my boys poppin out too tn we can link w them
-**21:59 — Brennan Noah Austin:** Bet we finish here and pull up
+**21:59 — Brennan:** Bet we finish here and pull up
 **22:01 — me:** Ez when yall thinkin yall boutta head
-**23:16 — Brennan Noah Austin:** Yo if you wanna pull up on us we getting lit at pinballs and then we going back to homeboys prolly and going crazy
-**23:17 — Brennan Noah Austin:** Or if you want to make music me and 1 homeboy could pull up later at yours whatever you feel 6th ain’t the move rn
-**23:30 — Brennan Noah Austin:** Lmk when otw
-**23:34 — me:** [image: ~/Library/Messages/Attachments/f0/00/492D589D-4867-4955-8762-D5C785B1A66D/79887088459__7AE3B324-AAAD-4FA5-A56D-72625C98670E.HEIC, 7.1MB]
+**23:16 — Brennan:** Yo if you wanna pull up on us we getting lit at pinballs and then we going back to homeboys prolly and going crazy
+**23:17 — Brennan:** Or if you want to make music me and 1 homeboy could pull up later at yours whatever you feel 6th ain’t the move rn
+**23:30 — Brennan:** Lmk when otw
+**23:34 — me:** [image: 79887088459__7AE3B324-AAAD-4FA5-A56D-72625C98670E.HEIC, 7.1MB]
 **23:35 — me:** I’m otw bro traffics fucked
-**23:38 — Brennan Noah Austin:** All good how far
+**23:38 — Brennan:** All good how far
 **23:44 — me:** There in 2
-**23:46 — Brennan Noah Austin:** Bet
+**23:46 — Brennan:** Bet
 **23:46 — me:** J got here
 
 ## 2026-04-26 (Sunday)
 
-**22:10 — Brennan Noah Austin:** [file: ~/Library/Messages/Attachments/9a/10/05876C00-BCDC-4123-B9BF-9A204E07663A/A0D8A865-8C94-4306-ABC0-E394FC6DC6BC.pluginPayloadAttachment, 1.1KB]
-**22:10 — Brennan Noah Austin:** [file: ~/Library/Messages/Attachments/86/06/AF9F614A-E989-4972-9EE7-1BC09A43866B/C4585126-3E3E-409A-98C2-BD9EF8B2E187.pluginPayloadAttachment, 71.6KB]
-**22:10 — Brennan Noah Austin:** https://youtu.be/moxyAo4FkUI
+**22:10 — Brennan:** [file: A0D8A865-8C94-4306-ABC0-E394FC6DC6BC.pluginPayloadAttachment, 1.1KB]
+**22:10 — Brennan:** [file: C4585126-3E3E-409A-98C2-BD9EF8B2E187.pluginPayloadAttachment, 71.6KB]
+**22:10 — Brennan:** https://youtu.be/moxyAo4FkUI
 
 ## 2026-04-27 (Monday)
 
 **21:44 — me:** Yoo dude do u have an addy plug
-**21:44 — Brennan Noah Austin:** Nah no addy
-**23:30 — Brennan Noah Austin:** What do you use for tuning your voice for recording I have everything setup just not sure what to use for tuning
+**21:44 — Brennan:** Nah no addy
+**23:30 — Brennan:** What do you use for tuning your voice for recording I have everything setup just not sure what to use for tuning
 **23:44 — me:** Autotune pro bro
 **23:44 — me:** rutracker plus a vpn plus torrent
 **23:44 — me:** Utorrent
 **23:44 — me:** thats the secret sauce
 **23:44 — me:** U can get any plugin u want
-**23:44 — Brennan Noah Austin:** Bet dat
+**23:44 — Brennan:** Bet dat
 
 ## 2026-04-30 (Thursday)
 
-**03:00 — Brennan Noah Austin:** Send me dat template or preset or whatever when you get a chance please 🙏
+**03:00 — Brennan:** Send me dat template or preset or whatever when you get a chance please 🙏
 **03:16 — me:** Yee course broski gotchu
-**03:18 — Brennan Noah Austin:** Preciate it lmk if you need my email to send it
+**03:18 — Brennan:** Preciate it lmk if you need my email to send it
 **13:43 — me:** Yoo dude lets mob paint balling tomorrow
 **13:43 — me:** And yee drop ur email bro
-**13:43 — Brennan Noah Austin:** Bet that if it’s not raining for show
-**13:43 — Brennan Noah Austin:** It looks like it finna rain here’s the email
-**13:44 — Brennan Noah Austin:** Tradingwithbrennan@gmail.com
-**13:44 — Brennan Noah Austin:** This storm just hit us like crazy
+**13:43 — Brennan:** Bet that if it’s not raining for show
+**13:43 — Brennan:** It looks like it finna rain here’s the email
+**13:44 — Brennan:** Tradingwithbrennan@gmail.com
+**13:44 — Brennan:** This storm just hit us like crazy
 **13:44 — me:** Damn bro ur hella into the trading shit thats fire we defo gotta chop it up about that soon too
 **13:44 — me:** Ok fire will drop it rn
-**13:44 — Brennan Noah Austin:** Bet that
+**13:44 — Brennan:** Bet that
 **13:45 — me:** This is logic template
 **13:45 — me:** Will drop fl in a bit too
-**13:45 — me:** [file: ~/Library/Messages/Attachments/10/00/132FEB2C-C63F-4A69-A02A-9504565D5BA8/template.logicx, 128B]
-**13:45 — Brennan Noah Austin:** Yeah I’m Trynna scale my capital to make larger trades without leveraging or marginal trading
-**13:45 — me:** [image: ~/Library/Messages/Attachments/fe/14/31C1571A-0F5E-43D2-95BF-F8EC9A06F179/IMG_2609.png, 62.6KB]
+**13:45 — me:** [file: template.logicx, 128B]
+**13:45 — Brennan:** Yeah I’m Trynna scale my capital to make larger trades without leveraging or marginal trading
+**13:45 — me:** [image: IMG_2609.png, 62.6KB]
 **13:45 — me:** Fuck its bugging
 **13:45 — me:** Ill just email
-**13:45 — Brennan Noah Austin:** Bet
-**13:46 — Brennan Noah Austin:** If not paintball we could do pinballs possibly I’ll figure it out and lyk
+**13:45 — Brennan:** Bet
+**13:46 — Brennan:** If not paintball we could do pinballs possibly I’ll figure it out and lyk
 **13:47 — me:** Fire Emily
 **13:47 — me:** *ezily
-**22:24 — Brennan Noah Austin:** Yo I never got the fl template in my email
+**22:24 — Brennan:** Yo I never got the fl template in my email

@@ -209,8 +209,11 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
     """, chat_ids))
     att_by_msg = {}
     for mid, aguid, fn, tn, sz, uti, mime, arow in att_rows:
+        # `fn` is the full Mac path; `tn` is the user-visible display name
+        # (basename). Spec § D wants basename in frontmatter.
+        display_name = tn or (Path(fn).name if fn else "untitled")
         att_by_msg.setdefault(mid, []).append({
-            "guid": aguid, "filename": fn or tn or "untitled",
+            "guid": aguid, "filename": display_name,
             "transfer_name": tn, "size_bytes": sz, "uti": uti, "mime": mime,
             "rowid": arow, "src_path": fn,
         })
@@ -413,8 +416,10 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
                     "source_missing": src_missing,
                 })
 
-        # Render body
-        peer_display = " ".join(p.capitalize() for p in slug.split("-"))
+        # Render body. First-name-only display in body lines (spec example
+        # uses "Sydney" not "Sydney Hayes" in `**HH:MM — sender:**`).
+        # Frontmatter `contact_name` keeps the full name.
+        peer_display = slug.split("-")[0].capitalize()
         lines = [f"# {peer_display} — {first_dt.strftime('%B %Y')}", ""]
         last_day = None
         for r in month_msgs:
@@ -475,7 +480,7 @@ def render_contact(conn, contact_cfg, ws, out_root, dry_run, attach_budget_bytes
             "contact_slug": slug,
             "contact_type": "individual",
             "contact_handles": handles,
-            "contact_name": peer_display,
+            "contact_name": " ".join(p.capitalize() for p in slug.split("-")),
             "chat_guid": None,
             "month": month_key,
             "date_range": [str(first_dt.date()), str(last_dt.date())],

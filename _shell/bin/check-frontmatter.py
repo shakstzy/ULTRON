@@ -59,14 +59,23 @@ def parse_frontmatter_keys(text: str) -> set[str]:
 
 
 def file_source(p: Path) -> str | None:
-    """Infer source from path: workspaces/<ws>/raw/<source>/..."""
+    """Infer source from path: workspaces/<ws>/raw/<source>/...
+
+    Returns None for files inside any `_<system-dir>/` segment under the
+    source root (e.g. `raw/imessage/_profiles/`, `_attachments/`).
+    Underscore-prefixed dirs are system metadata (identity stubs, attachment
+    binaries) and don't carry the per-ingest universal envelope by design.
+    """
     try:
         rel = p.relative_to(ULTRON_ROOT).parts
     except ValueError:
         return None
-    if len(rel) >= 4 and rel[0] == "workspaces" and rel[2] == "raw":
-        return rel[3]
-    return None
+    if len(rel) < 4 or rel[0] != "workspaces" or rel[2] != "raw":
+        return None
+    for seg in rel[4:]:
+        if seg.startswith("_"):
+            return None
+    return rel[3]
 
 
 def find_violations(scope: Path) -> list[tuple[Path, set[str]]]:

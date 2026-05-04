@@ -116,7 +116,7 @@ Skip the entire thread if any of:
 - **All senders blocklisted** — every message's `From:` matches the universal blocklist (case-insensitive):
   - `noreply@*`, `no-reply@*`, `*-noreply@*`, `donotreply@*`, `mailer-daemon@*`, `postmaster@*`
   - `calendar-notification@google.com`, `*@calendar.google.com`, `*@bounces.amazonses.com`, `*@accounts.google.com`
-- **Labels** — every label on the thread is in `{SPAM, TRASH}`.
+- **Labels** — any message on the thread carries `SPAM` or `TRASH`. (`issubset({SPAM,TRASH})` was the original check, but Gmail keeps `UNREAD` / `IMPORTANT` / `CATEGORY_*` on spam-flagged threads, so the subset form almost never fired.)
 - **MIME outside allowlist**: skip only if EVERY attachment is outside `{text/plain, text/html, application/pdf, image/*, multipart/*}`.
 - **Calendar-invite-only**: thread has attachments and every one is `.ics` (text/calendar).
 
@@ -124,12 +124,21 @@ This blocklist is universal. Per-account exclusions go in `sources.yaml`'s `api_
 
 ## Lock 6 — Dedup
 
-Key: `gmail:<thread_id>`. Per-workspace ledger at
-`workspaces/<ws>/_meta/ingested.jsonl`, one JSON line per ingest:
+Key: `gmail:<account-slug>:<thread_id>`. Account-namespaced because Gmail
+thread ids are mailbox-scoped — two accounts that route to the same
+workspace can produce identical thread ids, and a body-hash + tid collision
+across mailboxes would otherwise silently skip the second account's write.
+Pre-namespace ledger entries (`gmail:<thread_id>`) are still honored on
+read for the same account (raw_path-prefix-disambiguated). Per-workspace
+ledger at `workspaces/<ws>/_meta/ingested.jsonl`, one JSON line per ingest:
 
 ```json
-{"source":"gmail","key":"gmail:17abc...","content_hash":"blake3:...","raw_path":"raw/gmail/...","ingested_at":"...","run_id":"..."}
+{"source":"gmail","key":"gmail:adithya-outerscope:17abc...","content_hash":"blake3:...","raw_path":"raw/gmail/...","ingested_at":"...","run_id":"..."}
 ```
+
+Ledger appends acquire an exclusive `fcntl.flock` per ingest; flock is
+per-mailbox elsewhere, but two robots for different accounts can route to
+the same workspace concurrently, and unlocked appends would interleave.
 
 | Existing ledger row | content_hash | Action |
 |---|---|---|

@@ -280,7 +280,23 @@ def validate_workspaces_config(workspaces_config: dict) -> list[str]:
             continue
         accounts = block.get("accounts") if isinstance(block, dict) else None
         if isinstance(accounts, list):
+            block_api = block.get("api_query") or {}
+            block_inc = block_api.get("include") or block.get("labels") or []
+            block_exc = block_api.get("exclude") or block.get("exclude_labels") or []
+            block_excf = _excludes_from_field(block_api.get("exclude_from"))
             for a in accounts:
+                if isinstance(a, str):
+                    # String-form accounts inherit the block-level api_query
+                    # at runtime (see route() normalization). Validate those
+                    # block-level rules under this account's label so a typo
+                    # surfaces with context, not as a mid-run ValueError.
+                    for r in block_inc:
+                        _check(ws, f"account={a} include (block)", r)
+                    for r in block_exc:
+                        _check(ws, f"account={a} exclude (block)", r)
+                    for r in block_excf:
+                        _check(ws, f"account={a} exclude_from (block)", r)
+                    continue
                 if not isinstance(a, dict):
                     continue
                 api = a.get("api_query") or {}

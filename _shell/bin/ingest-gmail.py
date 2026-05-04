@@ -1071,7 +1071,7 @@ def collect_history_events(svc, start_history_id: str, max_items: int | None) ->
 # Per-thread processing
 # ---------------------------------------------------------------------------
 
-_THREAD_ID_LINE_RE = re.compile(r"^thread_id:\s*(\S+)\s*$", re.MULTILINE)
+_THREAD_ID_LINE_RE = re.compile(r"^thread_id:\s*[\"']?([0-9a-zA-Z]+)[\"']?", re.MULTILINE)
 
 
 def _frontmatter_thread_id(text: str) -> str | None:

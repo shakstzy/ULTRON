@@ -265,6 +265,23 @@ def validate_workspaces_config(workspaces_config: dict) -> list[str]:
     """
     errors: list[str] = []
 
+    def _check_list(ws: str, where: str, rules) -> list:
+        # Bare strings would be iterated character-by-character ("subject:Bug"
+        # → 's','u','b',...) by route()'s comprehension, silently turning a
+        # config typo into "matches nothing." Reject up front.
+        if rules is None:
+            return []
+        if isinstance(rules, str):
+            errors.append(
+                f"workspace={ws} {where}: must be a list, got str ({rules!r}). "
+                f"Wrap single rules in a list: [{rules!r}]."
+            )
+            return []
+        if not isinstance(rules, list):
+            errors.append(f"workspace={ws} {where}: must be a list, got {type(rules).__name__}.")
+            return []
+        return rules
+
     def _check(ws: str, where: str, rule: str) -> None:
         if not isinstance(rule, str) or not rule.strip():
             return
@@ -281,8 +298,8 @@ def validate_workspaces_config(workspaces_config: dict) -> list[str]:
         accounts = block.get("accounts") if isinstance(block, dict) else None
         if isinstance(accounts, list):
             block_api = block.get("api_query") or {}
-            block_inc = block_api.get("include") or block.get("labels") or []
-            block_exc = block_api.get("exclude") or block.get("exclude_labels") or []
+            block_inc = _check_list(ws, "block include", block_api.get("include")) or _check_list(ws, "block labels", block.get("labels"))
+            block_exc = _check_list(ws, "block exclude", block_api.get("exclude")) or _check_list(ws, "block exclude_labels", block.get("exclude_labels"))
             block_excf = _excludes_from_field(block_api.get("exclude_from"))
             for a in accounts:
                 if isinstance(a, str):
@@ -301,17 +318,19 @@ def validate_workspaces_config(workspaces_config: dict) -> list[str]:
                     continue
                 api = a.get("api_query") or {}
                 acct_label = a.get("account") or "<unknown>"
-                for r in api.get("include") or []:
+                for r in _check_list(ws, f"account={acct_label} include", api.get("include")):
                     _check(ws, f"account={acct_label} include", r)
-                for r in api.get("exclude") or []:
+                for r in _check_list(ws, f"account={acct_label} exclude", api.get("exclude")):
                     _check(ws, f"account={acct_label} exclude", r)
                 for r in _excludes_from_field(api.get("exclude_from")):
                     _check(ws, f"account={acct_label} exclude_from", r)
             continue
         api = block.get("api_query", {}) or {}
-        for r in (api.get("include") or block.get("labels") or []):
+        for r in (_check_list(ws, "include (legacy)", api.get("include"))
+                  or _check_list(ws, "labels (legacy)", block.get("labels"))):
             _check(ws, "include (legacy)", r)
-        for r in list(api.get("exclude") or block.get("exclude_labels") or []):
+        for r in (_check_list(ws, "exclude (legacy)", api.get("exclude"))
+                  or _check_list(ws, "exclude_labels (legacy)", block.get("exclude_labels"))):
             _check(ws, "exclude (legacy)", r)
         for r in _excludes_from_field(api.get("exclude_from")):
             _check(ws, "exclude_from (legacy)", r)
@@ -343,13 +362,17 @@ def route(thread: dict, workspaces_config: dict) -> list[dict]:
             normalized: list[dict] = []
             for a in accounts:
                 if isinstance(a, str):
+                    block_api = block.get("api_query") or {}
                     normalized.append({
                         "account": a,
                         "api_query": {
-                            "include": (block.get("api_query", {}) or {}).get("include")
-                                or block.get("labels") or [],
-                            "exclude": (block.get("api_query", {}) or {}).get("exclude")
-                                or block.get("exclude_labels") or [],
+                            "include": block_api.get("include") or block.get("labels") or [],
+                            "exclude": block_api.get("exclude") or block.get("exclude_labels") or [],
+                            # exclude_from was dropped here previously, so any
+                            # workspace using string-form accounts + a shared
+                            # exclude file (e.g., the synps cold-pitch list)
+                            # silently lost the file's rules at runtime.
+                            "exclude_from": block_api.get("exclude_from"),
                         },
                     })
                 elif isinstance(a, dict):

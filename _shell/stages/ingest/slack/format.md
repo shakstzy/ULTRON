@@ -143,9 +143,19 @@ Conventions:
 - Thread replies render inline at the parent message's location,
   chronologically, inside a `> ` quoted block, with `### HH:MM —` (one
   heading level deeper than the parent).
-- Attachments inline at the moment sent: `[file: <filename> — <size>]`.
-  No content extraction. No binary copy. Image-only messages are a
-  bare `[file: ...]` line — no "Sender said:" filler.
+- Attachments inline at the moment sent.
+  - **Images** (`mimetype` starts with `image/`) render as
+    `[image: <Gemini-generated description>]`. Descriptions are 1-2
+    concise sentences focused on visible content (text, faces, charts,
+    screenshots) for archival search. Cached by Slack `file_id` in
+    `_shell/cursors/slack/<ws-slug>/image-descriptions.json` so
+    re-renders are free. On Gemini failure (rate limit, oversized,
+    unsupported format), fall back to
+    `[image: <name> — <size> (description unavailable)]`.
+  - **Non-image files** render as `[file: <filename> — <size>]`. No
+    content extraction, no binary copy. Permalink lives in frontmatter.
+  - Image-only messages are a bare `[image: ...]` / `[file: ...]`
+    line — no "Sender said:" filler.
 - Edits: render the CURRENT text only. No `(edited)` flag in body.
   The count of edits is recorded in frontmatter
   (`edited_messages_count`). Edit history is NOT captured.
@@ -312,8 +322,12 @@ The robot **NEVER**:
 1. Deletes a raw file based on a Slack-side deletion. Vanished
    messages set `deleted_upstream` (container) or append to
    `deleted_messages[]` (single message). The file persists.
-2. Copies attachment binaries. Metadata + permalinks only.
-3. Runs LLM / vision calls during ingest. Pure Python only.
+2. Copies attachment binaries. Image bytes are downloaded transiently
+   for Gemini description, then deleted; non-image attachments are
+   metadata + permalinks only.
+3. Runs LLM calls on text. Vision calls on image attachments are
+   permitted (Gemini Flash, ~1-2 sentence descriptions, file_id-keyed
+   cache). Cache hits are free; misses cost ~10s + Flash pricing.
 4. Edits frontmatter post-write except `deleted_messages`,
    `edited_messages_count`, `container_archived`, `deleted_upstream`.
 5. Writes outside `workspaces/<ws>/raw/slack/<workspace-slug>/...`.

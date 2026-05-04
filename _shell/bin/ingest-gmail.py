@@ -71,6 +71,32 @@ def account_slug(email: str) -> str:
     return re.sub(r"[^a-z0-9-]+", "-", s).strip("-") or "unknown"
 
 
+def detect_slug_collisions(workspaces_config: dict) -> dict[str, list[str]]:
+    """Return {slug: [emails]} for any slug shared by 2+ configured accounts.
+    Lock 1's slug uses only the first domain segment, so `*@eclipse.audio`
+    and `*@eclipse.builders` would both resolve to `adithya-eclipse` and
+    silently share cursor / lock / raw paths. Block the run loudly so the
+    user picks distinct local-parts or renames the upstream account."""
+    by_slug: dict[str, set[str]] = {}
+    for cfg in workspaces_config.values():
+        sources = cfg.get("sources")
+        if isinstance(sources, dict):
+            block = sources.get("gmail")
+            accounts = block.get("accounts") if isinstance(block, dict) else None
+            if isinstance(accounts, list):
+                for a in accounts:
+                    email = a if isinstance(a, str) else (a.get("account") if isinstance(a, dict) else None)
+                    if email:
+                        by_slug.setdefault(account_slug(email), set()).add(email)
+        elif isinstance(sources, list):
+            for s in sources:
+                if isinstance(s, dict) and s.get("type") == "gmail":
+                    email = (s.get("config") or {}).get("account")
+                    if email:
+                        by_slug.setdefault(account_slug(email), set()).add(email)
+    return {slug: sorted(emails) for slug, emails in by_slug.items() if len(emails) > 1}
+
+
 def cred_path_for(account: str) -> Path:
     return ULTRON_ROOT / "_credentials" / f"gmail-{account_slug(account)}.json"
 
@@ -437,8 +463,11 @@ def pre_filter_skip(thread_payload: dict) -> str | None:
     for m in msgs:
         for lbl in m.get("labelIds") or []:
             label_set.add(lbl)
-    if label_set and label_set.issubset({"SPAM", "TRASH"}):
-        return "labels-all-spam-or-trash"
+    # Gmail keeps system labels (UNREAD, IMPORTANT, CATEGORY_*) on threads
+    # moved to spam/trash, so issubset({SPAM,TRASH}) is almost never true in
+    # practice. User intent is to skip anything Gmail flagged as spam/trash.
+    if "SPAM" in label_set or "TRASH" in label_set:
+        return "label-spam-or-trash"
 
     all_blocked = True
     saw_any = False
@@ -1043,7 +1072,14 @@ def collect_history_events(svc, start_history_id: str, max_items: int | None) ->
 # ---------------------------------------------------------------------------
 
 def find_existing_raw_files(thread_id: str, account: str, workspaces_config: dict) -> list[tuple[str, Path]]:
-    """Locate existing raw/gmail files for this thread, across workspaces."""
+    """Locate existing raw/gmail files for this thread, across workspaces.
+    The 8-char thread-id suffix in the filename is for human readability
+    and disambiguation only — it is not a unique key. Two distinct threads
+    can share the same prefix, so we read each candidate's frontmatter and
+    require an exact `thread_id` match before letting the caller mutate
+    (tombstone or label-rewrite) it. Without this, label/delete events for
+    one thread could silently overwrite an unrelated thread's frontmatter.
+    """
     out: list[tuple[str, Path]] = []
     suffix = f"__{thread_id[:THREAD_ID_PREFIX_LEN]}.md"
     for ws in workspaces_config:
@@ -1051,7 +1087,21 @@ def find_existing_raw_files(thread_id: str, account: str, workspaces_config: dic
         if not base.exists():
             continue
         for p in base.rglob(f"*{suffix}"):
-            out.append((ws, p))
+            try:
+                text = p.read_text()
+            except OSError:
+                continue
+            if not text.startswith("---\n"):
+                continue
+            end = text.find("\n---\n", 4)
+            if end < 0:
+                continue
+            try:
+                fm = yaml.safe_load(text[4:end]) or {}
+            except yaml.YAMLError:
+                continue
+            if fm.get("thread_id") == thread_id:
+                out.append((ws, p))
     return out
 
 
@@ -1348,7 +1398,19 @@ def main() -> int:
         run_log.close()
         return 0
 
-    includes, _excludes, _, any_match_all, any_subscription = collect_account_rules(account, workspaces_config)
+    collisions = detect_slug_collisions(workspaces_config)
+    if collisions:
+        for slug, emails in collisions.items():
+            sys.stderr.write(
+                f"ingest-gmail: account_slug collision: {slug!r} shared by "
+                f"{emails}. Cursor/lock/raw paths would corrupt each other. "
+                f"Resolve in sources.yaml before re-running.\n"
+            )
+            run_log.write(f"FATAL slug collision {slug}: {emails}\n")
+        run_log.close()
+        return 2
+
+    includes, _excludes, lookback_days_cfg, any_match_all, any_subscription = collect_account_rules(account, workspaces_config)
     if not any_subscription:
         sys.stderr.write(f"ingest-gmail: no workspace subscribes to {account}; nothing to do\n")
         run_log.close()
@@ -1382,7 +1444,10 @@ def main() -> int:
     cap_clipped = False
 
     if cursor_history_id is None:
-        lookback_days = int(os.environ.get("GMAIL_INITIAL_LOOKBACK_DAYS", str(GMAIL_INITIAL_LOOKBACK_DAYS_DEFAULT)))
+        # Precedence: env override > workspace config (lookback_days_initial)
+        # > module default. The config value comes from
+        # `accounts[].lookback_days_initial` in sources.yaml.
+        lookback_days = int(os.environ.get("GMAIL_INITIAL_LOOKBACK_DAYS", str(lookback_days_cfg)))
         after_dt = datetime.now(tz=timezone.utc) - timedelta(days=lookback_days)
         after_ts = int(after_dt.timestamp())
         q = build_q(includes, after_ts, any_match_all=any_match_all)

@@ -76,7 +76,7 @@ deleted_upstream: null                 # ISO 8601 if history.list reports messag
 
 Field rules:
 - `participants[].roles` ⊆ `{from, to, cc, bcc}`. Same address across roles collapses; roles unioned.
-- `labels` mirrors Gmail's `labelIds` exactly.
+- `labels` stores friendly label names. System labels (`INBOX`, `SPAM`, `TRASH`, `IMPORTANT`, `UNREAD`, `CATEGORY_*`, `SENT`, `DRAFT`, etc.) pass through unchanged because their id == name. User labels arrive as opaque ids (`Label_19`) and are translated to their human name (`Eclipse`) via `users.labels.list`. Required so routing rules — humans write `label:Eclipse`, not `label:Label_19` — match what the robot stores.
 - `attachments[].id` is first 8 chars of Gmail's `attachmentId`. `message_index` is required.
 - `routed_by` lists every workspace that received this thread + the rule that fired. Same list in every workspace copy.
 - `deleted_upstream` is the ONLY frontmatter field the robot may modify post-write (besides `labels` on `labelAdded` / `labelRemoved`).

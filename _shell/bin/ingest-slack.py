@@ -46,6 +46,12 @@ DEFAULT_LOOKBACK_DAYS = int(os.environ.get("ULTRON_SLACK_LOOKBACK_DAYS", "365"))
 # unless their ts is within [oldest, latest]). Ledger dedup keeps writes idempotent.
 INCREMENTAL_OVERLAP_DAYS = int(os.environ.get("ULTRON_SLACK_OVERLAP_DAYS", "7"))
 
+# Image description (Gemini Flash). Cached by Slack file_id.
+GEMINI_TMP_DIR = Path.home() / ".gemini" / "tmp" / "ultron"
+GEMINI_MODEL = os.environ.get("ULTRON_SLACK_GEMINI_MODEL", "gemini-3-flash-preview")
+IMAGE_DESCRIBE_TIMEOUT = int(os.environ.get("ULTRON_SLACK_IMAGE_TIMEOUT", "60"))
+IMAGE_MAX_BYTES = int(os.environ.get("ULTRON_SLACK_IMAGE_MAX_BYTES", str(15 * 1024 * 1024)))
+
 LOCAL_TZ = dt.datetime.now().astimezone().tzinfo
 SLACK_BASE = "https://slack.com/api"
 
@@ -283,6 +289,122 @@ def decode_text(text: str, users: UserCache, chan_name_by_id: dict) -> str:
 
     text = text.replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
     return text
+
+
+# ---------------------------------------------------------------------------
+# Image description (Gemini Flash) with file-id cache
+# ---------------------------------------------------------------------------
+def image_cache_path(workspace_slug: str) -> Path:
+    return workspace_cursor_dir(workspace_slug) / "image-descriptions.json"
+
+
+def load_image_cache(workspace_slug: str) -> dict[str, str]:
+    p = image_cache_path(workspace_slug)
+    if not p.exists():
+        return {}
+    try:
+        return json.loads(p.read_text())
+    except json.JSONDecodeError:
+        return {}
+
+
+def save_image_cache(workspace_slug: str, cache: dict[str, str]) -> None:
+    p = image_cache_path(workspace_slug)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    tmp = p.with_suffix(".tmp")
+    tmp.write_text(json.dumps(cache, indent=2, sort_keys=True))
+    tmp.replace(p)
+
+
+def _ext_for_mime(mime: str | None, filename: str | None) -> str:
+    if filename and "." in filename:
+        ext = filename.rsplit(".", 1)[-1].lower()
+        if 1 <= len(ext) <= 5:
+            return f".{ext}"
+    if mime:
+        if "png" in mime:
+            return ".png"
+        if "jpeg" in mime or "jpg" in mime:
+            return ".jpg"
+        if "gif" in mime:
+            return ".gif"
+        if "webp" in mime:
+            return ".webp"
+        if "heic" in mime:
+            return ".heic"
+    return ".bin"
+
+
+def describe_image(token: str, file_id: str, url_private: str,
+                   mime: str | None, filename: str | None,
+                   size_bytes: int | None) -> str | None:
+    """Download an image from Slack via auth'd url_private, send to Gemini
+    Flash for a 1-2 sentence description, return the description or None
+    on any failure. Failures are logged to stderr and surface as None so
+    the caller can fall back to metadata-only rendering."""
+    if size_bytes and size_bytes > IMAGE_MAX_BYTES:
+        sys.stderr.write(
+            f"  image {file_id} skipped: {size_bytes} bytes > limit\n"
+        )
+        return None
+    GEMINI_TMP_DIR.mkdir(parents=True, exist_ok=True)
+    ext = _ext_for_mime(mime, filename)
+    path = GEMINI_TMP_DIR / f"{file_id}{ext}"
+    try:
+        req = urllib.request.Request(
+            url_private, headers={"Authorization": f"Bearer {token}"}
+        )
+        with urllib.request.urlopen(req, timeout=30) as r:
+            img = r.read()
+        if len(img) > IMAGE_MAX_BYTES:
+            sys.stderr.write(
+                f"  image {file_id} skipped: {len(img)} bytes > limit\n"
+            )
+            return None
+        path.write_bytes(img)
+    except Exception as exc:
+        sys.stderr.write(f"  image {file_id} download failed: {exc}\n")
+        return None
+
+    prompt = (
+        f"@{path}\n\n"
+        "Describe what's shown in this image in 1-2 sentences for an "
+        "archival search index. Be concrete: list visible objects, text, "
+        "faces, charts, screenshots. If it's a screenshot, transcribe key "
+        "visible text. Output ONLY the description sentence(s), no preamble."
+    )
+    try:
+        import subprocess
+        result = subprocess.run(
+            ["gemini", "-m", GEMINI_MODEL, "--approval-mode", "plan",
+             "-p", prompt, "-o", "text"],
+            capture_output=True, text=True, timeout=IMAGE_DESCRIBE_TIMEOUT,
+        )
+    except subprocess.TimeoutExpired:
+        sys.stderr.write(f"  image {file_id} gemini timeout\n")
+        try:
+            path.unlink()
+        except OSError:
+            pass
+        return None
+    finally:
+        try:
+            path.unlink()
+        except OSError:
+            pass
+    if result.returncode != 0:
+        sys.stderr.write(
+            f"  image {file_id} gemini exit={result.returncode}: "
+            f"{result.stderr.strip()[:200]}\n"
+        )
+        return None
+    desc = result.stdout.strip()
+    # Strip Markdown emphasis the model occasionally adds + collapse
+    # whitespace so it renders cleanly inside `[image: ...]`.
+    desc = re.sub(r"\s+", " ", desc).strip()
+    if not desc:
+        return None
+    return desc
 
 
 def fmt_size(n: int | None) -> str:

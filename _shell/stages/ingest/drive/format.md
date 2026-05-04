@@ -138,16 +138,27 @@ failed extraction.
 Skip comments and suggestions. Embedded images render as `[image: <inline>]`
 metadata-only — the robot never fetches binaries.
 
-**Google Sheets** (`.csv`):
+**Google Sheets** (`.csv` + sidecar `.csv.frontmatter.yaml`):
+
+The body file is pure CSV (no frontmatter fences, no comment headers — must
+parse cleanly with any CSV reader). The universal envelope + Drive
+frontmatter (Locks 2 + 3) lives in a sidecar at
+`<file-slug>__<file-id-short>.csv.frontmatter.yaml`, same directory as the
+body. The sidecar carries the same YAML block that would otherwise be the
+frontmatter on a `.md` file.
 
 ```
 [CSV content of the FIRST tab only — no markdown wrapper, no frontmatter
 fences in the body]
 ```
 
-V1: first tab only. Frontmatter `multi_tab_sheet: true` and full
-`sheet_tab_names` list flag the rest for manual follow-up. File extension is
-`.csv`, not `.md`.
+V1: first tab only. The sidecar's `multi_tab_sheet: true` flag and full
+`sheet_tab_names` list flag the rest for manual follow-up.
+
+`check-frontmatter.py` exempts `.csv` files from the body-frontmatter
+requirement; the sidecar carries the universal envelope instead. Sidecar
+files MUST be hard-deleted alongside their body file during reconciliation
+(Lock 6).
 
 **Google Slides** (`.md`):
 

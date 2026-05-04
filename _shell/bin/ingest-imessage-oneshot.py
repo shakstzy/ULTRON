@@ -1,21 +1,19 @@
 #!/usr/bin/env python3
 """
 ingest-imessage-oneshot.py — first-ingest tool for allowlisted iMessage
-contacts. Uses the proven probe engine (3-round bug-hunt loop validated)
-to write per-(contact, month) markdown into a workspace's raw/imessage/.
+contacts. Writes per-(contact, month) markdown to workspace `raw/imessage/`.
+Attachments are DESCRIBED via Gemini (vision), not copied (per format.md § G).
 
-Distinct from `ingest-imessage.py` (the cron-driven production robot,
-still IMPLEMENTATION_READY=False). This script is for activation /
-first-ingest of explicitly allowlisted contacts.
+Distinct from `ingest-imessage.py` (cron-driven production robot,
+IMPLEMENTATION_READY=False). This script is the activation tool for
+explicitly allowlisted contacts.
 
 Usage:
-    ingest-imessage-oneshot.py --workspace personal [--contact <slug>] [--dry-run]
+    ingest-imessage-oneshot.py --workspace personal [--contact <slug>] [--dry-run] [--no-descriptions]
 
-Reads `workspaces/<ws>/config/sources.yaml` `sources.imessage.contacts`.
-For each allowlisted contact (or only the one specified by --contact),
-queries chat.db, applies the universal blocklist, recovers attributedBody
-text, resolves tapbacks, copies attachments per format.md § G (100 MB /
-month budget), and writes month files + _profiles/<slug>.md.
+Idempotency: descriptions keyed by (sha256, description_model) of the
+source binary; re-runs reuse prior descriptions and only call Gemini for
+new / changed attachments.
 """
 from __future__ import annotations
 
@@ -25,8 +23,9 @@ import hashlib
 import json
 import os
 import re
-import shutil
+import shlex
 import sqlite3
+import subprocess
 import sys
 from contextlib import contextmanager
 from pathlib import Path
@@ -50,7 +49,11 @@ TZ = ZoneInfo("America/Chicago")
 MAC_EPOCH = datetime.datetime(2001, 1, 1, tzinfo=datetime.timezone.utc)
 _MAC_LOWER = datetime.datetime(2001, 1, 1, tzinfo=datetime.timezone.utc)
 _MAC_UPPER = datetime.datetime(2200, 1, 1, tzinfo=datetime.timezone.utc)
-ATTACHMENT_BUDGET_BYTES = 100 * 1024 * 1024
+DESCRIPTION_MODEL = "gemini-3-flash-preview"  # Flash by default; Pro is for adversarial review
+
+# Mime / UTI groupings for description routing per format.md § G
+VISION_PREFIXES = ("image/", "video/")
+TEXT_READABLE = ("text/", "application/pdf", "application/json")
 
 TOLL_FREE = ("+1800", "+1888", "+1877", "+1866", "+1855", "+1844", "+1833")
 NOREPLY_LOCAL = ("verify", "noreply", "no-reply", "donotreply")

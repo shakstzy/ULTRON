@@ -4,9 +4,7 @@
 > to this spec exactly. The 9 locks below are the contract.
 
 ## A. File granularity (LOCK 1)
-One markdown file per `(contact, year-month)`. 1:1 chats live under
-`individuals/<slug>/`, group chats under `groups/<slug>/`. Months with no
-messages produce no file. Re-ingest of a current month rewrites in place.
+One markdown file per `(contact, year-month)`. 1:1 chats under `individuals/<slug>/`, groups under `groups/<slug>/`. Empty months produce no file. Re-ingest of a current month rewrites in place.
 
 ## B. Path template + _profiles (LOCK 2)
 ```
@@ -195,7 +193,7 @@ The robot NEVER:
 6. Skips § F's universal blocklist, even if a workspace allowlists the handle.
 
 ## K. Default for unrouted contacts
-**SKIP** (privacy-first; opposite of Gmail). Contacts must be explicitly allowlisted in some workspace's `sources.yaml.imessage` block to land.
+**SKIP** (privacy-first). Contacts must be allowlisted in `sources.yaml.imessage` to land.
 
 ## L. Cross-references
-Workflow: `CONTEXT.md`. Setup / permissions / caveats: `SETUP.md`. Routing: `route.py`. Universal envelope: `_shell/bin/check-frontmatter.py`.
+Workflow: `CONTEXT.md`. Setup: `SETUP.md`. Routing: `route.py`. Envelope: `_shell/bin/check-frontmatter.py`.

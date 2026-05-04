@@ -10,7 +10,8 @@
 | Subscriptions | `workspaces/*/config/sources.yaml` (imessage block) | Per-contact / per-group allowlist + per-workspace routing |
 | Cursor | `_shell/cursors/imessage/<account>.txt` | `last_rowid` + `last_message_date` (account = `local`) |
 | Source DB | `~/Library/Messages/chat.db` | Local SQLite, opened read-only |
-| Attachments root | `~/Library/Messages/Attachments/` | Binary copies (per § G of `format.md`) |
+| Attachments source | `~/Library/Messages/Attachments/` | Read-only; descriptions extracted via Gemini per § G |
+| Gemini CLI | `gemini -p "@<path>"` (Flash by default) | Vision descriptions for image / video attachments |
 | Apple Contacts | `Contacts.framework` via PyObjC | Slug derivation priority 1 |
 | Ledger | `workspaces/<ws>/_meta/ingested.jsonl` | Per-workspace dedup keyed by `imessage:<contact_type>:<contact_slug>:<YYYY-MM>` (per `format.md` § H) |
 
@@ -30,7 +31,7 @@ One robot run = one local chat.db. (Future iCloud-only-device support adds per-d
    - Bucket by `(contact_slug, YYYY-MM)`. Mutation hits on past months mark those buckets for re-render.
 6. **For each (contact, month) bucket**:
    - Filter and merge tapbacks per `format.md` § I.
-   - Copy attachments per `format.md` § G (100 MB / month budget).
+   - Extract attachment descriptions per `format.md` § G (Gemini Flash for vision; fallback to filename for audio / opaque / bundles). Idempotent against `sha256` + `description_model`.
    - Render markdown per `format.md` § E (canonical TZ, attributedBody fallback when `text` is null).
    - Compute `content_hash` (blake3 of body markdown).
    - Call `route(item, workspaces_config) -> destinations`.
@@ -45,7 +46,7 @@ One robot run = one local chat.db. (Future iCloud-only-device support adds per-d
 |---|---|
 | Month files | `workspaces/<ws>/raw/imessage/{individuals\|groups}/<slug>/<YYYY>/<YYYY-MM>__<slug>.md` |
 | Profile stubs | `workspaces/<ws>/raw/imessage/_profiles/<slug>.md` |
-| Attachment copies | `workspaces/<ws>/raw/imessage/{individuals\|groups}/<slug>/<YYYY>/_attachments/<id>.<ext>` |
+| Attachment descriptions | inlined in month-file frontmatter `attachments[]` (no binary copies; § G) |
 | Cursor | `_shell/cursors/imessage/<account>.txt` |
 | Ledger | `workspaces/<ws>/_meta/ingested.jsonl` |
 | Workspace log | `workspaces/<ws>/_meta/log.md` |

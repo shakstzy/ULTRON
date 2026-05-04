@@ -135,17 +135,17 @@ IMPLEMENTATION_READY = True
 First live run should be `--max-contacts 3` to validate end-to-end before
 unlocking the full archive.
 
-## 8. Crash recovery + orphan cleanup
-A SIGTERM mid-run (launchd timeout, OS shutdown) can leave **orphaned
-attachments**: copied to `_attachments/<id>.<ext>` after the budget check
-but before the cursor / ledger advance. On the next run, the renderer
-recomputes `attachment_id` for each attachment in the bucket and:
-- If `_attachments/<id>.<ext>` exists with matching sha256: re-link, do not re-copy.
-- If exists with mismatching sha256: collision-guard (per `format.md` § J.6); skip and warn.
-- If exists but the bucket no longer references it (e.g., chat re-routed): leave for an explicit `--gc-attachments` pass; never delete in the normal ingest path.
+## 8. Attachment description (Gemini)
+Attachments are **described, not copied** (`format.md` § G). The robot
+shells out to the `gemini` CLI with `@<path>` for vision over images and
+videos; audio / opaque payloads / bundles fall back to a filename-only
+body line.
 
-The flock at `/tmp/com.adithya.ultron.ingest-imessage.lock` prevents two
-runs from racing on the same `_attachments/` directory.
+- Default model: `gemini-3-flash-preview` (cost / speed; Pro reserved for adversarial review).
+- `gemini` CLI must be on `PATH` and authed (OAuth via `gemini auth`).
+- Idempotent: descriptions keyed by `sha256(source_binary) + description_model`. Re-runs reuse existing descriptions; only new / changed binaries hit the API.
+- v1 limitation: audio is **not** described via the CLI (the `@<path>` syntax does not pass audio bytes reliably; verified empirically). v1.5 wires audio understanding via REST.
+- A SIGTERM mid-run leaves no orphans (no binary copies, no `_attachments/` dir). The cursor advances only after the full month-file write.
 
 ## 9. Troubleshooting
 - **ROWID reset warning in logs**: chat.db was rebuilt (Mac migration,
@@ -155,8 +155,6 @@ runs from racing on the same `_attachments/` directory.
   pruned old binaries. Recover by going to **Messages** → **Settings** →
   **iMessage** and toggling "Keep Messages" to "Forever", then forcing a
   re-download. v1 logs the loss but does not retry.
-- **`attachment_pruned: true` on a month**: a single month exceeded the
-  100 MB copy budget. Bump the budget in `format.md` § G or accept the
-  pruning (sha256 + size still recorded for later reconciliation).
+- **`description: null` on many attachments**: those are kinds the v1 extractor doesn't handle (audio, opaque payloads, bundle directories). The body line falls back to filename-only. Real signal, not a bug.
 - **All contacts falling to `phone-...` or `unknown-...` slugs**:
   Apple Contacts permission denied. Re-grant per § 2.

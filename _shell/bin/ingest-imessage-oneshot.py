@@ -220,10 +220,24 @@ def bundle_description(src: Path, ext: str) -> str:
     return table.get(ext.lower(), f"{ext.lstrip('.')} bundle")
 
 
+# Patterns that indicate Gemini refused to read the file (sandbox / access).
+# Treat as failed extraction; return None so body falls back to filename.
+_REFUSAL_RE = re.compile(
+    r"(cannot access|cannot describe|cannot view|unable to (access|view|read)|"
+    r"outside (the |my )?(allowed )?workspace|outside the allowed|"
+    r"i (don't|do not) have (permission|access)|file path is outside)",
+    re.IGNORECASE,
+)
+
+# Messages attachments live outside any workspace; pass via --include-directories
+# so Gemini's plan-mode sandbox allows reads. Round-trip across the CLI fence.
+ATTACHMENTS_INCLUDE = str(Path.home() / "Library" / "Messages" / "Attachments")
+
+
 def gemini_describe(path: Path, kind: str) -> tuple[str | None, str | None]:
     """Returns (description, model) for a kind we extract; (None, None) otherwise.
 
-    v1: only `image` and `video` go through Gemini Flash. Audio / opaque /
+    v1: `image` / `video` / `text` go through Gemini Flash. Audio / opaque /
     bundles return (None, None) per format.md § G.
     """
     if kind not in ("image", "video", "text"):
@@ -236,6 +250,7 @@ def gemini_describe(path: Path, kind: str) -> tuple[str | None, str | None]:
         "-p", f"{prompt}\n\n@{path}",
         "-o", "text",
         "--approval-mode", "plan",
+        "--include-directories", ATTACHMENTS_INCLUDE,
     ]
     try:
         proc = subprocess.run(
@@ -252,6 +267,10 @@ def gemini_describe(path: Path, kind: str) -> tuple[str | None, str | None]:
     if not lines:
         return None, None
     desc = lines[-1]
+    # Defense in depth: if the response is a refusal / sandbox-error string,
+    # don't bake it into the markdown.
+    if _REFUSAL_RE.search(desc):
+        return None, None
     cap = 100 if kind in ("image", "video") else 200
     if len(desc) > cap:
         desc = desc[: cap - 1].rstrip() + "…"

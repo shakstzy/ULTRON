@@ -1,9 +1,9 @@
 ---
 source: imessage
 workspace: personal
-ingested_at: '2026-05-04T03:22:43.611042+00:00'
+ingested_at: '2026-05-04T03:47:08.281172+00:00'
 ingest_version: 1
-content_hash: blake3:37ccfa11b3adcf978b05776b363ffe510bc0f8583cf2589950001ac5b8dfe6b1
+content_hash: blake3:528737d8b5b3c2d3454165d4cbae2c5616580ade5c062b416d3bd504fe71952b
 provider_modified_at: '2026-05-03T21:46:24.510803-05:00'
 contact_slug: brennan-noah-austin
 contact_type: individual
@@ -26,9 +26,10 @@ attachments:
   sender: me
   sent_at: '2026-05-02T03:00:51.938203-05:00'
   sha256: faa8a0462b105d1a328169c5a77a766b26c0999cb80455439beb6e7a1d79c09f
-  copied_to_raw: true
-  attachment_path: _attachments/e9ff2f37e72213c5.pluginpayloadattachment
-  source_missing: false
+  description: null
+  description_model: null
+  extracted_at: null
+  source_available: true
 - id: 9d876ab9c6d1484a
   filename: 68AC7353-2EC3-408B-B722-8A84FE40DE1D.pluginPayloadAttachment
   mime: null
@@ -36,9 +37,10 @@ attachments:
   sender: me
   sent_at: '2026-05-02T03:00:51.938203-05:00'
   sha256: bd038c54b33d9de2ba59bf033c02ed3a9114c54f2eb30c516f99e8f96a153092
-  copied_to_raw: true
-  attachment_path: _attachments/9d876ab9c6d1484a.pluginpayloadattachment
-  source_missing: false
+  description: null
+  description_model: null
+  extracted_at: null
+  source_available: true
 - id: 585c1640cf31c2ba
   filename: AE15DC24-DD57-4CF4-9C17-75F540AEE27F.pluginPayloadAttachment
   mime: null
@@ -46,9 +48,10 @@ attachments:
   sender: me
   sent_at: '2026-05-02T03:00:51.938203-05:00'
   sha256: c6b70bb8fad3140d061883d678ec41d1694efbea85eced7ccaa5bba2e4434d0a
-  copied_to_raw: true
-  attachment_path: _attachments/585c1640cf31c2ba.pluginpayloadattachment
-  source_missing: false
+  description: null
+  description_model: null
+  extracted_at: null
+  source_available: true
 - id: 542996c0ecebd192
   filename: 79953058625__8374AF7F-8523-427A-8C15-C3FC8A869E55.HEIC
   mime: image/heic
@@ -56,9 +59,11 @@ attachments:
   sender: me
   sent_at: '2026-05-03T14:49:55.213306-05:00'
   sha256: 2acf07de9b65bd01740d09352456ea158af030c266cdee9d4f4dad8a79f3a564
-  copied_to_raw: true
-  attachment_path: _attachments/542996c0ecebd192.heic
-  source_missing: false
+  description: Cannot access the image because it is located outside the allowed workspace
+    directories.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-04T03:45:30.700766+00:00'
+  source_available: true
 - id: f9f657b1be384482
   filename: IMG_4717.png
   mime: image/png
@@ -66,9 +71,11 @@ attachments:
   sender: me
   sent_at: '2026-05-03T21:04:55.397000-05:00'
   sha256: 0d2a69e5528ab10a8d2b069557cf24b886c82dc3f5d87ef1f91735ac7ab942e3
-  copied_to_raw: true
-  attachment_path: _attachments/f9f657b1be384482.png
-  source_missing: false
+  description: Cannot access the image because its path is outside the allowed workspace
+    directories.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-04T03:45:46.622233+00:00'
+  source_available: true
 - id: d8cb3c20dbb9e9d4
   filename: IMG_1079.png
   mime: image/png
@@ -76,9 +83,11 @@ attachments:
   sender: me
   sent_at: '2026-05-03T21:08:12.431000-05:00'
   sha256: 2f3c3475d92090ee6f61b24b0343e131cff200c7d49a07ccdb08d585e5027173
-  copied_to_raw: true
-  attachment_path: _attachments/d8cb3c20dbb9e9d4.png
-  source_missing: false
+  description: "I am unable to view the image because the file path is outside my\
+    \ allowed workspace directory (`/Us\u2026"
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-04T03:45:59.725020+00:00'
+  source_available: true
 - id: de690ca02596dd9a
   filename: IMG_4132.png
   mime: image/png
@@ -86,9 +95,11 @@ attachments:
   sender: me
   sent_at: '2026-05-03T21:10:31.557000-05:00'
   sha256: 2f3c3475d92090ee6f61b24b0343e131cff200c7d49a07ccdb08d585e5027173
-  copied_to_raw: true
-  attachment_path: _attachments/de690ca02596dd9a.png
-  source_missing: false
+  description: Unable to access the image file as it is located outside the allowed
+    workspace directories.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-04T03:46:16.506803+00:00'
+  source_available: true
 - id: 0005876ef6c76b56
   filename: IMG_5723.png
   mime: image/png
@@ -96,9 +107,11 @@ attachments:
   sender: me
   sent_at: '2026-05-03T21:13:59.166000-05:00'
   sha256: dd181f86a3cda6dfc4c972b131715ac6724ca575098b38f084093532c30e9ccc
-  copied_to_raw: true
-  attachment_path: _attachments/0005876ef6c76b56.png
-  source_missing: false
+  description: "I cannot access this image because it is located outside the allowed\
+    \ workspace directories. Please\u2026"
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-04T03:46:37.243730+00:00'
+  source_available: true
 - id: 0feca5e84cfcc4b0
   filename: IMG_2507.png
   mime: image/png
@@ -106,9 +119,11 @@ attachments:
   sender: me
   sent_at: '2026-05-03T21:16:26.682000-05:00'
   sha256: 2575f364ea5afe22c936c748ec39203c3a07caeae0321563b332a8d0f8e4b153
-  copied_to_raw: true
-  attachment_path: _attachments/0feca5e84cfcc4b0.png
-  source_missing: false
+  description: I cannot view the image because it is located outside the allowed workspace
+    directories.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-04T03:46:56.491958+00:00'
+  source_available: true
 - id: 6ea27d0ecd17de52
   filename: IMG_2980.png
   mime: image/png
@@ -116,10 +131,11 @@ attachments:
   sender: me
   sent_at: '2026-05-03T21:20:48.034000-05:00'
   sha256: 5e6962d841c639c3c374eadf1eabebf5d9b0374a17ee87146e7739bacd86bfb3
-  copied_to_raw: true
-  attachment_path: _attachments/6ea27d0ecd17de52.png
-  source_missing: false
-attachment_pruned: false
+  description: I cannot access the file because it is located outside of my allowed
+    workspace directory.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-04T03:47:08.279771+00:00'
+  source_available: true
 chat_message_guids_count: 68
 deleted_upstream: null
 superseded_by: null
@@ -133,9 +149,9 @@ superseded_by: null
 
 ## 2026-05-02 (Saturday)
 
-**03:00 — me:** [file: 058C9693-A6EB-43E1-AFD3-D97C4E2DC86E.pluginPayloadAttachment, 1.4KB]
-**03:00 — me:** [file: 68AC7353-2EC3-408B-B722-8A84FE40DE1D.pluginPayloadAttachment, 299.2KB]
-**03:00 — me:** [file: AE15DC24-DD57-4CF4-9C17-75F540AEE27F.pluginPayloadAttachment, 18.6KB]
+**03:00 — me:** [file: 058C9693-A6EB-43E1-AFD3-D97C4E2DC86E.pluginPayloadAttachment]
+**03:00 — me:** [file: 68AC7353-2EC3-408B-B722-8A84FE40DE1D.pluginPayloadAttachment]
+**03:00 — me:** [file: AE15DC24-DD57-4CF4-9C17-75F540AEE27F.pluginPayloadAttachment]
 **03:00 — me:** https://maps.app.goo.gl/z4RjzPjtL8robTWK6?g_st=i&utm_campaign=ac-im
 **03:00 — me:** Is this otw
 **03:01 — Brennan:** Yes
@@ -179,18 +195,18 @@ superseded_by: null
 ## 2026-05-03 (Sunday)
 
 **01:10 — Brennan:** Lmk if down to chill after 6th
-**14:49 — me:** [image: 79953058625__8374AF7F-8523-427A-8C15-C3FC8A869E55.HEIC, 4.2MB]
+**14:49 — me:** [image: Cannot access the image because it is located outside the allowed workspace directories.]
 **14:50 — me:** Bro got a mike stand u can borrow next time u slide
 **14:50 — Brennan:** Bet that
 **19:27 — Brennan:** Wyd tn
 **21:04 — me:** Nothin much g wbu
-**21:04 — me:** [image: IMG_4717.png, 112.8KB]
+**21:04 — me:** [image: Cannot access the image because its path is outside the allowed workspace directories.]
 **21:05 — Brennan:** That beat fire?
 **21:05 — Brennan:** Just chillin rn going to Jake’s in a min a buddy is over there
 **21:05 — me:** Insane beat bruh
 **21:07 — Brennan:** Bro I want to make some rap tn but my goddamn setup I don’t understand how to work it with your template
 **21:07 — Brennan:** If you down to chill tn lmk
-**21:08 — me:** [image: IMG_1079.png, 106.5KB]
+**21:08 — me:** [image: I am unable to view the image because the file path is outside my allowed workspace directory (`/Us…]
 **21:08 — me:** This shit fire too
 **21:08 — me:** Bro yee defo could be down
 **21:08 — me:** Might have to call it early tho got early morning calls tomorrow
@@ -200,10 +216,10 @@ superseded_by: null
 **21:08 — me:** Prolly like 12:30 ish
 **21:08 — me:** Or 1 latest
 **21:09 — Brennan:** Okay bet I’ll lyk soon
-**21:10 — me:** [image: IMG_4132.png, 106.5KB]
-**21:13 — me:** [image: IMG_5723.png, 168.6KB]
-**21:16 — me:** [image: IMG_2507.png, 208.9KB]
+**21:10 — me:** [image: Unable to access the image file as it is located outside the allowed workspace directories.]
+**21:13 — me:** [image: I cannot access this image because it is located outside the allowed workspace directories. Please…]
+**21:16 — me:** [image: I cannot view the image because it is located outside the allowed workspace directories.]
 **21:16 — me:** Im storing all the heaters here
 **21:16 — Brennan:** :bet
-**21:20 — me:** [image: IMG_2980.png, 232.7KB]
+**21:20 — me:** [image: I cannot access the file because it is located outside of my allowed workspace directory.]
 **21:46 — Brennan:** Jake prolly not gonna come but I could pull up for a bit soon illl lyk for sure in about 15 mins

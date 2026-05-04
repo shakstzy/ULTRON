@@ -69,17 +69,17 @@ message_count: 142
 my_message_count: 71
 their_message_count: 71
 attachments:
-  - id: a3f8d901c2e7                      # blake3(filename + size + ROWID)[:12]
+  - id: a3f8d901c2e7                      # blake3(guid + size + attachment.ROWID)[:16]
     filename: IMG_2384.HEIC
     mime: image/heic
     size_bytes: 4321099
     sender: sydney-hayes                  # slug or "me"
     sent_at: 2026-04-04T18:43:00-05:00
-    sha256: <64-hex>                      # of binary content
-    copied_to_raw: true                   # true | false
-    attachment_path: _attachments/a3f8d901c2e7.heic   # null if not copied
-    source_missing: false                 # true if iCloud-pruned or migrated
-attachment_pruned: false                  # true if any attachment skipped due to copy budget
+    sha256: <64-hex>                      # of source binary at extract time (null if source unavailable)
+    description: "Two people grilling on a balcony at sunset"  # gemini output, ≤ 100 chars; null if unsupported kind
+    description_model: gemini-3-flash-preview                  # null if no extraction
+    extracted_at: 2026-05-04T03:30:00Z
+    source_available: true                # source binary readable at extract time
 chat_message_guids_count: 142             # advisory; chat.message.guid set captured for this month
 deleted_upstream: null
 superseded_by: null
@@ -100,7 +100,7 @@ Field rules: attachments listed even when `copied_to_raw: false` (sha256 + size_
 
 ## 2026-04-04 (Thursday)
 
-**18:43 — Sydney:** [image: IMG_2384.HEIC, 4.1MB]
+**18:43 — Sydney:** [image: Two people grilling on a balcony at sunset]
 **18:44 — me:** np
 > **18:45 — Sydney (replying to "np"):** thanks
 **19:02 — me:** [unsent at 19:03]
@@ -115,7 +115,7 @@ Conventions:
 - Message line: `**HH:MM — sender:** <body>`. Sender is Apple Contacts display name, or `me` for outgoing.
 - Reactions / tapbacks: `[reaction: <type> to "<original snippet ≤ 60 chars>"]`. Types: `love`, `like`, `dislike`, `laugh`, `emphasize`, `question`. Removed reactions are not rendered (latest state wins).
 - Replies: `> **HH:MM — sender (replying to "<snippet>"):** <body>`.
-- Attachments inline at sent moment: `[<kind>: <filename>, <size>]` where kind is `image | video | audio | file | app`. Size is human (e.g., `4.1MB`).
+- Attachments inline at sent moment: `[<kind>: <description>]` where kind is `image | video | audio | file | app`. Description is the Gemini-extracted summary from § G (≤ 100 chars). When the kind has no extracted description (audio, opaque payloads, bundles), fall back to `[<kind>: <filename>]`.
 - App messages (Apple Cash, polls, GamePigeon, link previews): `[app message: <balloon_bundle_id>]`. Never crash, never drop.
 - Edits: `**HH:MM — sender (edited):** <current text>`. Full edit history deferred to v1.5; v1 stores `is_edited: true` per-message metadata only.
 - Unsents: `**HH:MM — sender:** [unsent at HH:MM]`. Preserves existence.

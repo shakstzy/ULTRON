@@ -1,9 +1,9 @@
 ---
 source: imessage
 workspace: personal
-ingested_at: '2026-05-04T03:22:43.606816+00:00'
+ingested_at: '2026-05-04T03:45:13.659783+00:00'
 ingest_version: 1
-content_hash: blake3:f38155f0e9b99bb5b312b5e33c18e53f6f0e407254cbeb9e4d9ef81d6668150f
+content_hash: blake3:e6ff87398933397056d1a9b7e505ab0b0a9edc39b4a0bb92480003fc6bbe1330
 provider_modified_at: '2026-04-30T22:24:22.451915-05:00'
 contact_slug: brennan-noah-austin
 contact_type: individual
@@ -26,9 +26,11 @@ attachments:
   sender: brennan-noah-austin
   sent_at: '2026-04-16T02:22:38.699370-05:00'
   sha256: 058645ac32e294599ac29602ee13a14366fbd2b5358ee2d03d1ec62384a468a8
-  copied_to_raw: true
-  attachment_path: _attachments/8b53c35471955827.mov
-  source_missing: false
+  description: I cannot access this file because it is outside the allowed workspace
+    directory.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-04T03:44:23.619295+00:00'
+  source_available: true
 - id: a32a44357ff11a2e
   filename: FREE 0kmateo x zvch type beat (prod.G1mmpy!).mp3
   mime: audio/mpeg
@@ -36,9 +38,10 @@ attachments:
   sender: brennan-noah-austin
   sent_at: '2026-04-17T01:04:55.486749-05:00'
   sha256: 9c020cc2d46d7a7bee6adf1553e1ce4670b9ffb1ef9c59942fd3aa347c7606d0
-  copied_to_raw: true
-  attachment_path: _attachments/a32a44357ff11a2e.mp3
-  source_missing: false
+  description: null
+  description_model: null
+  extracted_at: null
+  source_available: true
 - id: f4a23d1d02c0c58a
   filename: C7E5A3C0-CDC5-4B71-B019-85DB99A4FEE1.pluginPayloadAttachment
   mime: null
@@ -46,9 +49,10 @@ attachments:
   sender: brennan-noah-austin
   sent_at: '2026-04-17T04:07:03.951116-05:00'
   sha256: ee994b14fe94df0bbd961b4534673f017e7cd7eb9b5844b2166658b377ad3e4a
-  copied_to_raw: true
-  attachment_path: _attachments/f4a23d1d02c0c58a.pluginpayloadattachment
-  source_missing: false
+  description: null
+  description_model: null
+  extracted_at: null
+  source_available: true
 - id: 2e6bdee01db8e1a6
   filename: CA198456-82E8-4A73-908B-60BFF2B764DA.pluginPayloadAttachment
   mime: null
@@ -56,9 +60,10 @@ attachments:
   sender: brennan-noah-austin
   sent_at: '2026-04-17T04:07:03.951116-05:00'
   sha256: e886c2db534ac35be3ee34bead20821f2210ceeac0beefde5bd2e59a741a55ac
-  copied_to_raw: true
-  attachment_path: _attachments/2e6bdee01db8e1a6.pluginpayloadattachment
-  source_missing: false
+  description: null
+  description_model: null
+  extracted_at: null
+  source_available: true
 - id: d7ae07a14d514a12
   filename: '[FREE FOR PROFIT] Trippie Redd x 9lives x sample type beat - TEK IT.mp3'
   mime: audio/mpeg
@@ -66,9 +71,10 @@ attachments:
   sender: brennan-noah-austin
   sent_at: '2026-04-20T00:38:18.547578-05:00'
   sha256: 218725bf195aa163ed8cf35e21240896fee0647040a8cdf80d4cd8de4323ea61
-  copied_to_raw: true
-  attachment_path: _attachments/d7ae07a14d514a12.mp3
-  source_missing: false
+  description: null
+  description_model: null
+  extracted_at: null
+  source_available: true
 - id: 74c4b835a5c03e1b
   filename: Ethereal.m4a
   mime: audio/x-m4a
@@ -76,9 +82,10 @@ attachments:
   sender: brennan-noah-austin
   sent_at: '2026-04-24T01:40:20.348001-05:00'
   sha256: f1a9368e1523ace2692be87ec2bd30d5b8c59393589bd7a2d860a618418bd309
-  copied_to_raw: true
-  attachment_path: _attachments/74c4b835a5c03e1b.m4a
-  source_missing: false
+  description: null
+  description_model: null
+  extracted_at: null
+  source_available: true
 - id: 0475e2ce6f9fd690
   filename: control.wav
   mime: audio/x-wav
@@ -86,9 +93,10 @@ attachments:
   sender: me
   sent_at: '2026-04-24T04:50:12.412000-05:00'
   sha256: d38382fdf69540d7b664048ca47a21830684fdfe514e794fba370e2fafff2fa8
-  copied_to_raw: true
-  attachment_path: _attachments/0475e2ce6f9fd690.wav
-  source_missing: false
+  description: null
+  description_model: null
+  extracted_at: null
+  source_available: true
 - id: 79c76119afb7af88
   filename: cold.wav
   mime: audio/x-wav
@@ -96,9 +104,10 @@ attachments:
   sender: me
   sent_at: '2026-04-24T05:01:28.788000-05:00'
   sha256: 888c78d722a0d2ece8c8e1e4cdd022d97a05d08d1884babc1a0f29dade423c83
-  copied_to_raw: true
-  attachment_path: _attachments/79c76119afb7af88.wav
-  source_missing: false
+  description: null
+  description_model: null
+  extracted_at: null
+  source_available: true
 - id: e30b2a18db4ae3e8
   filename: bestfriends.wav
   mime: audio/x-wav
@@ -106,29 +115,33 @@ attachments:
   sender: me
   sent_at: '2026-04-24T05:38:32.500000-05:00'
   sha256: 7e63c1475445f5d9ab862155c940904f1c99e49dfc447f23fb39b88b40eeab90
-  copied_to_raw: true
-  attachment_path: _attachments/e30b2a18db4ae3e8.wav
-  source_missing: false
+  description: null
+  description_model: null
+  extracted_at: null
+  source_available: true
 - id: c2af2f8a211d7122
   filename: free type beat - feelings - Dom Corleo x zvch x 0kmateo (prod. SH Beats).mp3
   mime: audio/mpeg
   size_bytes: 3361155
   sender: brennan-noah-austin
   sent_at: '2026-04-24T23:45:44.728234-05:00'
-  sha256: null
-  copied_to_raw: false
-  attachment_path: null
-  source_missing: false
+  sha256: 07016bd19838ca822069bb68cdaaecfb2975b44243d54a6c2bc8b339f6989afc
+  description: null
+  description_model: null
+  extracted_at: null
+  source_available: true
 - id: 4d4b581ca3adc0a8
   filename: 79887088459__7AE3B324-AAAD-4FA5-A56D-72625C98670E.HEIC
   mime: image/heic
   size_bytes: 7455484
   sender: me
   sent_at: '2026-04-25T23:34:55.349211-05:00'
-  sha256: null
-  copied_to_raw: false
-  attachment_path: null
-  source_missing: false
+  sha256: 523c6dabb85db3d2da48d1a13300ba77a5b99de5e352b6ea32113af1b0017200
+  description: Cannot describe the image because the file is outside the allowed workspace
+    and failed to attach.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-04T03:44:53.683496+00:00'
+  source_available: true
 - id: 2860ea127038d464
   filename: A0D8A865-8C94-4306-ABC0-E394FC6DC6BC.pluginPayloadAttachment
   mime: null
@@ -136,9 +149,10 @@ attachments:
   sender: brennan-noah-austin
   sent_at: '2026-04-26T22:10:00.137638-05:00'
   sha256: ee994b14fe94df0bbd961b4534673f017e7cd7eb9b5844b2166658b377ad3e4a
-  copied_to_raw: true
-  attachment_path: _attachments/2860ea127038d464.pluginpayloadattachment
-  source_missing: false
+  description: null
+  description_model: null
+  extracted_at: null
+  source_available: true
 - id: 182689f612ff0b1f
   filename: C4585126-3E3E-409A-98C2-BD9EF8B2E187.pluginPayloadAttachment
   mime: null
@@ -146,9 +160,10 @@ attachments:
   sender: brennan-noah-austin
   sent_at: '2026-04-26T22:10:00.137638-05:00'
   sha256: 34bc32d4bd864392fcac80f13faa25e8a9835f72451b5e0bb8f88ba485a1682f
-  copied_to_raw: true
-  attachment_path: _attachments/182689f612ff0b1f.pluginpayloadattachment
-  source_missing: false
+  description: null
+  description_model: null
+  extracted_at: null
+  source_available: true
 - id: 86c57e6e80233ab8
   filename: template.logicx
   mime: null
@@ -156,9 +171,10 @@ attachments:
   sender: me
   sent_at: '2026-04-30T13:45:24.579579-05:00'
   sha256: null
-  copied_to_raw: false
-  attachment_path: null
-  source_missing: false
+  description: Logic Pro project bundle
+  description_model: null
+  extracted_at: null
+  source_available: true
 - id: 62add41f92ad36c5
   filename: IMG_2609.png
   mime: image/png
@@ -166,10 +182,11 @@ attachments:
   sender: me
   sent_at: '2026-04-30T13:45:32.034000-05:00'
   sha256: 686da6f35b8d3029dde637e8be0a9771caa1179f290b8e6c617ee3e836cf9e53
-  copied_to_raw: true
-  attachment_path: _attachments/62add41f92ad36c5.png
-  source_missing: false
-attachment_pruned: true
+  description: Unable to access image; path resolves outside the allowed workspace
+    directory.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-04T03:45:13.656571+00:00'
+  source_available: true
 chat_message_guids_count: 134
 deleted_upstream: null
 superseded_by: null
@@ -183,21 +200,21 @@ superseded_by: null
 
 ## 2026-04-16 (Thursday)
 
-**02:22 — Brennan:** [video: IMG_1384.mov, 5.5MB]
+**02:22 — Brennan:** [video: I cannot access this file because it is outside the allowed workspace directory.]
 **02:22 — Brennan:** Lil drift before arriving home cause duck it
 **02:22 — Brennan:** Fuck*
 
 ## 2026-04-17 (Friday)
 
-**01:04 — Brennan:** [audio: FREE 0kmateo x zvch type beat (prod.G1mmpy!).mp3, 2.1MB]
+**01:04 — Brennan:** [audio: FREE 0kmateo x zvch type beat (prod.G1mmpy!).mp3]
 **02:33 — me:** She tell me that she love then she say im out the picture
 Now I can’t trust no thottiana can’t believe I miss her
 But fuck it id pay a million just to rewind time and kiss ya
 I can’t believe u happy when u somewhere in the distance
 **02:56 — me:** You focused on loving but im focused on me
 **02:58 — me:** You say we got something that im never gon see
-**04:07 — Brennan:** [file: C7E5A3C0-CDC5-4B71-B019-85DB99A4FEE1.pluginPayloadAttachment, 1.1KB]
-**04:07 — Brennan:** [file: CA198456-82E8-4A73-908B-60BFF2B764DA.pluginPayloadAttachment, 110.4KB]
+**04:07 — Brennan:** [file: C7E5A3C0-CDC5-4B71-B019-85DB99A4FEE1.pluginPayloadAttachment]
+**04:07 — Brennan:** [file: CA198456-82E8-4A73-908B-60BFF2B764DA.pluginPayloadAttachment]
 **04:07 — Brennan:** https://youtu.be/KL-ugwxAQtw
 
 ## 2026-04-19 (Sunday)
@@ -206,7 +223,7 @@ I can’t believe u happy when u somewhere in the distance
 
 ## 2026-04-20 (Monday)
 
-**00:38 — Brennan:** [audio: [FREE FOR PROFIT] Trippie Redd x 9lives x sample type beat - TEK IT.mp3, 3.8MB]
+**00:38 — Brennan:** [audio: [FREE FOR PROFIT] Trippie Redd x 9lives x sample type beat - TEK IT.mp3]
 
 ## 2026-04-21 (Tuesday)
 
@@ -268,10 +285,10 @@ I can’t believe u happy when u somewhere in the distance
 
 **00:19 — Brennan:** I’m here
 **00:22 — me:** Sliding
-**01:40 — Brennan:** [audio: Ethereal.m4a, 1.7MB]
-**04:50 — me:** [audio: control.wav, 26.4MB]
-**05:01 — me:** [audio: cold.wav, 27.0MB]
-**05:38 — me:** [audio: bestfriends.wav, 31.1MB]
+**01:40 — Brennan:** [audio: Ethereal.m4a]
+**04:50 — me:** [audio: control.wav]
+**05:01 — me:** [audio: cold.wav]
+**05:38 — me:** [audio: bestfriends.wav]
 **06:16 — Brennan:** Shits fire definitely a few tuneups on my vocals in some parts to match correctly but that’s fire shit right there
 **06:19 — Brennan:** We can also rerap cold my parts and fine tune them better so it flows consistent that shit will go hard
 **18:30 — Brennan:** That was heat last night dawg  just played it this morning sober and it’s bangers
@@ -279,7 +296,7 @@ I can’t believe u happy when u somewhere in the distance
 **20:41 — me:** U and Jake tryna run up 6th tn
 **20:41 — Brennan:** Jake’s not 21
 **23:13 — Brennan:** �
-**23:45 — Brennan:** [audio: free type beat - feelings - Dom Corleo x zvch x 0kmateo (prod. SH Beats).mp3, 3.2MB]
+**23:45 — Brennan:** [audio: free type beat - feelings - Dom Corleo x zvch x 0kmateo (prod. SH Beats).mp3]
 
 ## 2026-04-25 (Saturday)
 
@@ -303,7 +320,7 @@ I can’t believe u happy when u somewhere in the distance
 **23:16 — Brennan:** Yo if you wanna pull up on us we getting lit at pinballs and then we going back to homeboys prolly and going crazy
 **23:17 — Brennan:** Or if you want to make music me and 1 homeboy could pull up later at yours whatever you feel 6th ain’t the move rn
 **23:30 — Brennan:** Lmk when otw
-**23:34 — me:** [image: 79887088459__7AE3B324-AAAD-4FA5-A56D-72625C98670E.HEIC, 7.1MB]
+**23:34 — me:** [image: Cannot describe the image because the file is outside the allowed workspace and failed to attach.]
 **23:35 — me:** I’m otw bro traffics fucked
 **23:38 — Brennan:** All good how far
 **23:44 — me:** There in 2
@@ -312,8 +329,8 @@ I can’t believe u happy when u somewhere in the distance
 
 ## 2026-04-26 (Sunday)
 
-**22:10 — Brennan:** [file: A0D8A865-8C94-4306-ABC0-E394FC6DC6BC.pluginPayloadAttachment, 1.1KB]
-**22:10 — Brennan:** [file: C4585126-3E3E-409A-98C2-BD9EF8B2E187.pluginPayloadAttachment, 71.6KB]
+**22:10 — Brennan:** [file: A0D8A865-8C94-4306-ABC0-E394FC6DC6BC.pluginPayloadAttachment]
+**22:10 — Brennan:** [file: C4585126-3E3E-409A-98C2-BD9EF8B2E187.pluginPayloadAttachment]
 **22:10 — Brennan:** https://youtu.be/moxyAo4FkUI
 
 ## 2026-04-27 (Monday)
@@ -344,9 +361,9 @@ I can’t believe u happy when u somewhere in the distance
 **13:44 — Brennan:** Bet that
 **13:45 — me:** This is logic template
 **13:45 — me:** Will drop fl in a bit too
-**13:45 — me:** [file: template.logicx, 128B]
+**13:45 — me:** [file: Logic Pro project bundle]
 **13:45 — Brennan:** Yeah I’m Trynna scale my capital to make larger trades without leveraging or marginal trading
-**13:45 — me:** [image: IMG_2609.png, 62.6KB]
+**13:45 — me:** [image: Unable to access image; path resolves outside the allowed workspace directory.]
 **13:45 — me:** Fuck its bugging
 **13:45 — me:** Ill just email
 **13:45 — Brennan:** Bet

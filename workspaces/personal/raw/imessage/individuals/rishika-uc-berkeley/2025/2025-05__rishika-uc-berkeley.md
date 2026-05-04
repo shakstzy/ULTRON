@@ -1,7 +1,7 @@
 ---
 source: imessage
 workspace: personal
-ingested_at: '2026-05-04T21:56:53.008787+00:00'
+ingested_at: '2026-05-04T22:22:51.333625+00:00'
 ingest_version: 1
 content_hash: blake3:c9047c247b46a29e337f70537dbb3098395a02007ad9c2640605da393cab3651
 provider_modified_at: '2025-05-31T23:01:12.804116-05:00'

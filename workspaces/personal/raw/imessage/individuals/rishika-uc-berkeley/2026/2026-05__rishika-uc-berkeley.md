@@ -1,18 +1,18 @@
 ---
 source: imessage
 workspace: personal
-ingested_at: '2026-05-04T21:56:53.048552+00:00'
+ingested_at: '2026-05-04T22:22:51.371473+00:00'
 ingest_version: 1
-content_hash: blake3:c41eca15e4af52f7be44a3ff933ac40ba6b5676e3019b97eabff9bf48224fede
-provider_modified_at: '2026-05-04T16:27:32.834681-05:00'
+content_hash: blake3:73b38dffec654d77ac821b9cefbec11889168675e5f6b90339ca669afb544a30
+provider_modified_at: '2026-05-04T16:52:10.423000-05:00'
 contact_slug: rishika-uc-berkeley
 contact_type: individual
 month: 2026-05
 date_range:
 - '2026-05-02'
 - '2026-05-04'
-message_count: 14
-my_message_count: 6
+message_count: 16
+my_message_count: 8
 their_message_count: 8
 attachments:
 - id: 3ef2aefb8d2927ca
@@ -59,7 +59,7 @@ attachments:
   description_model: null
   extracted_at: null
   source_available: true
-chat_message_guids_count: 14
+chat_message_guids_count: 16
 deleted_upstream: null
 superseded_by: null
 contact_handles:
@@ -90,3 +90,5 @@ chat_guid: null
 **16:19 — me:** I miss ur head scratches
 **16:27 — Rishika:** [image: 79962280600__D2BC9025-D043-48DE-8E37-F1289D60B2C1.HEIC]
 **16:27 — Rishika:** i miss u being degen w me
+**16:52 — me:** U look good baby
+**16:52 — me:** Those eyes always got me

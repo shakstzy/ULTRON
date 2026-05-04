@@ -821,10 +821,28 @@ def ledger_path(workspace: str) -> Path:
     return ULTRON_ROOT / "workspaces" / workspace / "_meta" / "ingested.jsonl"
 
 
-def ledger_has(workspace: str, key: str, content_hash: str) -> bool:
+def ledger_key_for(account: str, thread_id: str) -> str:
+    """Account-namespaced ledger key. Two accounts that route to the same
+    workspace had identical legacy keys (`gmail:<thread_id>`) — Gmail thread
+    ids are mailbox-scoped, so a body-hash + tid collision across mailboxes
+    silently skipped the second account's write. Namespacing by account
+    prevents the cross-mailbox collision."""
+    return f"gmail:{account_slug(account)}:{thread_id}"
+
+
+def _legacy_ledger_key(key: str) -> str:
+    """Strip the account namespace to recover the legacy `gmail:<tid>` form
+    so back-compat reads can match pre-namespace ledger entries."""
+    parts = key.split(":", 2)
+    return f"gmail:{parts[2]}" if len(parts) == 3 else key
+
+
+def ledger_has(workspace: str, key: str, content_hash: str, account: str | None = None) -> bool:
     p = ledger_path(workspace)
     if not p.exists():
         return False
+    legacy_key = _legacy_ledger_key(key) if account else None
+    legacy_path_prefix = f"raw/gmail/{account_slug(account)}/" if account else None
     try:
         with p.open() as f:
             for line in f:
@@ -835,7 +853,18 @@ def ledger_has(workspace: str, key: str, content_hash: str) -> bool:
                     rec = json.loads(line)
                 except json.JSONDecodeError:
                     continue
-                if rec.get("key") == key and rec.get("content_hash") == content_hash:
+                rec_key = rec.get("key")
+                rec_hash = rec.get("content_hash")
+                if rec_key == key and rec_hash == content_hash:
+                    return True
+                # Back-compat: pre-namespace entries used `gmail:<tid>` only.
+                # Match them iff the recorded raw_path is for THIS account, so
+                # a second account routing to the same workspace cannot be
+                # tricked into skipping by the first account's legacy entry.
+                if (legacy_key
+                        and rec_key == legacy_key
+                        and rec_hash == content_hash
+                        and (rec.get("raw_path") or "").startswith(legacy_path_prefix or "\0")):
                     return True
     except OSError:
         pass
@@ -843,10 +872,23 @@ def ledger_has(workspace: str, key: str, content_hash: str) -> bool:
 
 
 def ledger_append(workspace: str, record: dict) -> None:
+    """Append one JSON line to the workspace ledger under an exclusive flock.
+    flock is per-mailbox elsewhere, but two ingest robots for different
+    accounts can route to the same workspace concurrently — without locking
+    here their buffered writes can interleave and corrupt the JSONL."""
     p = ledger_path(workspace)
     p.parent.mkdir(parents=True, exist_ok=True)
     with p.open("a") as f:
-        f.write(json.dumps(record, separators=(",", ":")) + "\n")
+        try:
+            fcntl.flock(f.fileno(), fcntl.LOCK_EX)
+            f.write(json.dumps(record, separators=(",", ":")) + "\n")
+            f.flush()
+            os.fsync(f.fileno())
+        finally:
+            try:
+                fcntl.flock(f.fileno(), fcntl.LOCK_UN)
+            except OSError:
+                pass
 
 
 # ---------------------------------------------------------------------------
@@ -1207,8 +1249,8 @@ def process_thread(svc, tid: str, account: str, workspaces_config: dict,
         content = fm + body_md
         m = re.search(r"^content_hash:\s*(\S+)", fm, re.MULTILINE)
         content_hash = m.group(1) if m else ""
-        ledger_key = f"gmail:{tid}"
-        already = ledger_has(ws, ledger_key, content_hash)
+        ledger_key = ledger_key_for(account, tid)
+        already = ledger_has(ws, ledger_key, content_hash, account=account)
 
         if args.dry_run:
             run_log.write(

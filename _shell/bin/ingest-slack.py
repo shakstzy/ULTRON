@@ -430,14 +430,32 @@ def hh_mm(d: dt.datetime) -> str:
     return d.strftime("%H:%M")
 
 
+def _file_line_for_attachment(f: dict, image_descriptions: dict[str, str]) -> str:
+    """Render an inline attachment placeholder. Images get the Gemini-
+    generated description (cached by file_id). Non-image attachments stay
+    as `[file: <name> — <size>]` with metadata only."""
+    name = f.get("name") or f.get("title") or "file"
+    size = fmt_size(f.get("size"))
+    mime = f.get("mimetype") or ""
+    fid = f.get("id") or ""
+    if mime.startswith("image/") and fid in image_descriptions:
+        desc = image_descriptions[fid]
+        return f"[image: {desc}]"
+    if mime.startswith("image/"):
+        return f"[image: {name} — {size} (description unavailable)]"
+    return f"[file: {name} — {size}]"
+
+
 def message_lines(msg: dict, users: UserCache, chan_name_by_id: dict,
+                  image_descriptions: dict[str, str],
                   *, indent: bool = False) -> list[str]:
     """Render one message (parent or reply) per Lock 5. Returns body lines.
 
     Reactions and bot messages already filtered upstream. This function
-    renders edits (current text), deletions ([deleted at HH:MM]),
-    and inline file placeholders.
-    """
+    renders edits (current text), deletions ([deleted at HH:MM]), and
+    inline file placeholders. Images carry a Gemini-generated description
+    when available; non-image files stay metadata-only with permalinks
+    captured in frontmatter."""
     sender = users.get(msg.get("user") or "")["display_name"]
     when = ts_to_local_dt(msg["ts"])
     prefix = "> " if indent else ""
@@ -459,9 +477,7 @@ def message_lines(msg: dict, users: UserCache, chan_name_by_id: dict,
     for f in msg.get("files") or []:
         if f.get("mode") == "tombstone":
             continue
-        name = f.get("name") or f.get("title") or "file"
-        size = fmt_size(f.get("size"))
-        file_lines.append(f"[file: {name} — {size}]")
+        file_lines.append(_file_line_for_attachment(f, image_descriptions))
 
     out: list[str] = [
         f"{prefix}{heading_marker} {hh_mm(when)} — {sender}",
@@ -480,7 +496,8 @@ def message_lines(msg: dict, users: UserCache, chan_name_by_id: dict,
 
 def render_day_body(container: dict, day: dt.date, parents_for_day: list[dict],
                     thread_cache: dict[str, list[dict]],
-                    users: UserCache, chan_name_by_id: dict) -> str:
+                    users: UserCache, chan_name_by_id: dict,
+                    image_descriptions: dict[str, str]) -> str:
     ctype = container["type"]
     name = container.get("name") or container.get("slug")
     weekday = day.strftime("%A")
@@ -500,12 +517,14 @@ def render_day_body(container: dict, day: dt.date, parents_for_day: list[dict],
 
     lines: list[str] = [title, ""]
     for parent in parents_for_day:
-        lines.extend(message_lines(parent, users, chan_name_by_id))
+        lines.extend(message_lines(parent, users, chan_name_by_id,
+                                   image_descriptions))
         replies = thread_cache.get(parent.get("thread_ts") or "", [])
         for r in replies:
             if r.get("ts") == parent.get("ts"):
                 continue
-            lines.extend(message_lines(r, users, chan_name_by_id, indent=True))
+            lines.extend(message_lines(r, users, chan_name_by_id,
+                                       image_descriptions, indent=True))
     return "\n".join(lines).rstrip() + "\n"
 
 
@@ -977,7 +996,9 @@ def process_container(*, client: SlackClient, container: dict,
                       lookback_days: int, max_days: int | None,
                       workspaces_config: dict, dry_run: bool,
                       run_id: str, ledger_index_by_ws: dict,
-                      no_attachments: bool) -> dict:
+                      no_attachments: bool,
+                      image_descriptions: dict[str, str],
+                      describe_images: bool, token: str) -> dict:
     summary = {"messages": 0, "files_written": 0, "deferred": False,
                "container_id": container["id"]}
 
@@ -1064,9 +1085,45 @@ def process_container(*, client: SlackClient, container: dict,
         d = ts_to_local_dt(m["ts"]).date()
         by_day.setdefault(d, []).append(m)
 
+    # Resolve image descriptions for every image attached to a parent or
+    # thread reply. Cache by Slack file_id so re-runs are free; failures
+    # leave the cache untouched and the renderer falls back to size meta.
+    if describe_images and not no_attachments:
+        all_msgs_with_files = list(parents) + [
+            r for replies in thread_cache.values() for r in replies
+        ]
+        image_files: list[dict] = []
+        seen_ids: set[str] = set()
+        for msg in all_msgs_with_files:
+            for f in msg.get("files") or []:
+                fid = f.get("id")
+                mime = f.get("mimetype") or ""
+                if (fid and fid not in seen_ids
+                        and fid not in image_descriptions
+                        and mime.startswith("image/")
+                        and f.get("mode") != "tombstone"
+                        and f.get("url_private")):
+                    seen_ids.add(fid)
+                    image_files.append(f)
+        if image_files:
+            sys.stderr.write(
+                f"  describing {len(image_files)} new image(s) via Gemini...\n"
+            )
+            for f in image_files:
+                desc = describe_image(
+                    token=token, file_id=f["id"], url_private=f["url_private"],
+                    mime=f.get("mimetype"), filename=f.get("name"),
+                    size_bytes=f.get("size"),
+                )
+                if desc:
+                    image_descriptions[f["id"]] = desc
+            # Persist incrementally so a crash mid-channel doesn't lose
+            # already-paid-for descriptions.
+            save_image_cache(workspace_slug, image_descriptions)
+
     for day, day_parents in sorted(by_day.items()):
         body = render_day_body(container, day, day_parents, thread_cache,
-                               users, chan_name_by_id)
+                               users, chan_name_by_id, image_descriptions)
         body_hash = "blake3:" + blake3_hex(body.encode("utf-8"))
         all_msgs_in_day = list(day_parents)
         for p in day_parents:
@@ -1264,7 +1321,11 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     ap.add_argument("--max-days", type=int, default=None)
     ap.add_argument("--reset-cursor", action="store_true")
     ap.add_argument("--reset-cursor-channel", default=None)
-    ap.add_argument("--no-attachments", action="store_true")
+    ap.add_argument("--no-attachments", action="store_true",
+                    help="Skip attachment metadata + image description.")
+    ap.add_argument("--no-images", action="store_true",
+                    help="Skip Gemini image description (faster re-renders; "
+                         "falls back to size+name placeholders).")
     ap.add_argument("--run-id",
                     default=dt.datetime.now().strftime("%Y%m%dT%H%M%S"))
     return ap.parse_args(argv)
@@ -1370,6 +1431,14 @@ def main() -> int:
         # Auth.test is the source of truth for team_id, full stop.
         team_id = auth_team_id or creds_team_id
 
+        # Persistent image-description cache (key = Slack file_id).
+        image_descriptions = load_image_cache(ws_slug)
+        describe_images = not args.no_images
+        if image_descriptions:
+            sys.stderr.write(
+                f"ingest-slack: loaded {len(image_descriptions)} cached image descriptions\n"
+            )
+
         # Workspace _profile.md (Lock 7): refresh on every run.
         try:
             update_workspace_profile(
@@ -1396,6 +1465,8 @@ def main() -> int:
                     dry_run=args.dry_run, run_id=args.run_id,
                     ledger_index_by_ws=ledger_index_by_ws,
                     no_attachments=args.no_attachments,
+                    image_descriptions=image_descriptions,
+                    describe_images=describe_images, token=token,
                 )
             except SlackError as e:
                 sys.stderr.write(

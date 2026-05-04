@@ -166,14 +166,20 @@ def _evaluate_predicate(thread: dict, predicate: str) -> bool:
 def _tokenize_rule(rule: str) -> list[tuple[bool, str]]:
     """Split a compound rule into (negated, predicate) tokens. Quoted
     phrases are preserved as single tokens and re-quoted so downstream
-    matchers see `subject:"X"` intact."""
+    matchers see `subject:"X"` intact.
+
+    Raises ValueError on orphan tokens (no `:`). Silent drop is unsafe:
+    `subject:Out of Office` would shlex-split to ['subject:Out', 'of',
+    'Office'] and degrade to `subject:"Out"`, matching anything containing
+    "Out". Multi-word subjects must be quoted: `subject:"Out of Office"`.
+    """
     try:
         lex = shlex.shlex(rule, posix=True)
         lex.whitespace_split = True
         lex.commenters = ""
         raw_tokens = list(lex)
-    except ValueError:
-        return []
+    except ValueError as exc:
+        raise ValueError(f"invalid rule {rule!r}: lex error ({exc})")
     out: list[tuple[bool, str]] = []
     for tok in raw_tokens:
         negated = False
@@ -181,7 +187,10 @@ def _tokenize_rule(rule: str) -> list[tuple[bool, str]]:
             negated = True
             tok = tok[1:]
         if ":" not in tok:
-            continue
+            raise ValueError(
+                f"invalid rule {rule!r}: orphan token {tok!r} has no predicate. "
+                f"Quote multi-word subject phrases: subject:\"text with spaces\"."
+            )
         head, _, tail = tok.partition(":")
         if head.lower() == "subject" and tail and not tail.startswith('"') \
                 and tail.lower() not in ("contains", "regex") \

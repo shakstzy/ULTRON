@@ -94,6 +94,77 @@ JSON: array of post dicts (or `{post, comments}` for the post subcommand). All r
 - Anonymous limit ~10 req/min; with OAuth env vars set, ~60 req/min. Don't fan out across many subs without asking.
 - For deep comment trees, prefer increasing `--depth` over re-calling — one fetch with `--depth 4` is cheaper than 4 nested fetches.
 
+## Ingest standard (saving threads to raw/)
+
+For archiving a Reddit thread under a workspace's `raw/` so it can be referenced later, graphified, or summarized:
+
+```bash
+reddit.py post <id|url> --save <workspace> [--top 50] [--depth 6]
+```
+
+This is the ONE supported save path. There is no separate ingest CLI — the `--save` flag IS the standard.
+
+**File path:** `~/ULTRON/workspaces/<ws>/raw/reddit/<subreddit>/<YYYY-MM-DD>__<post_id>__<title-slug>.md`
+- Date is the post's `created_utc`, not when you ran the command. Makes files sort chronologically by Reddit-time.
+- `<title-slug>` is lowercased, alphanum + hyphens, capped at 60 chars.
+- Workspace must already exist under `workspaces/`. Valid: `personal`, `eclipse`, `finance`, `health`, `seedbox`, `synapse` (script errors if not found).
+
+**Frontmatter (canonical fields, in order):**
+```yaml
+source: reddit
+workspace: <ws>
+ingested_at: <ISO 8601 UTC>          # when the file was written
+ingest_version: 1
+content_hash: sha256:<hex>           # of the rendered body, lets you detect drift on re-ingest
+provider_modified_at: <ISO 8601 UTC> # post's created_utc, parity with gmail's provider_modified_at
+post_id: <reddit id>
+permalink: https://reddit.com/<perm>
+url: <external link if non-self post, else null>
+subreddit: <sub>
+author: u/<...>
+title: "<title>"
+flair: <flair or null>
+score: <int>
+num_comments: <int>
+upvote_ratio: <float>
+nsfw: <bool>
+spoiler: <bool>
+locked: <bool>
+top_comments_captured: <actual N captured, may be < --top if thread was small>
+max_depth_captured: <D from --depth>
+```
+
+**Body shape (deterministic, recreate-able from data):**
+```markdown
+# <title>
+
+> r/<sub> · u/<author> · <score>↑ · <num_comments>c · <ago> · [<flair>]
+> <permalink>
+> external: <url>             # only present if external link
+
+## Selftext                    # only present if selftext non-empty
+
+<full selftext, no truncation>
+
+## Top <N> comments (depth <D>)
+
+- **u/foo** (123↑): <full body, multi-line preserved with indent>
+  - **u/bar** (45↑): <full reply>
+
+## External links cited in comments   # only present if any non-reddit links found
+
+- <url>
+- <url>
+```
+
+**Key rules:**
+1. Full bodies, no truncation (this is an archive, not a summary).
+2. `[deleted]` / `[removed]` comments dropped silently.
+3. "More comments" placeholders skipped (would need OAuth + morechildren; not worth the dep).
+4. Re-running on the same post overwrites the file. Use `content_hash` to detect drift if you cared about diffs.
+5. Default `--save` triggers wider capture: bump `--top` to 50 and `--depth` to 6 explicitly. (No automatic boost — caller's choice, keeps the flag honest.)
+6. ONLY ingest on explicit user intent ("save this thread", "archive this", "ingest to <ws>"). Don't auto-save on every read.
+
 ## Notes
 
 - API base: anonymous = `https://www.reddit.com<path>.json`; OAuth = `https://oauth.reddit.com<path>` (no .json suffix).

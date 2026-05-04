@@ -1085,6 +1085,35 @@ def process_container(*, client: SlackClient, container: dict,
         d = ts_to_local_dt(m["ts"]).date()
         by_day.setdefault(d, []).append(m)
 
+    # Pre-route check: every container's routing depends on metadata that's
+    # invariant across days (workspace_id, channel_name, channel_type), so a
+    # single probe is enough. If no workspace claims this container, skip
+    # the entire describe + render + write path — Gemini calls cost real
+    # money and unrouted descriptions never reach disk.
+    router_channel_type = {
+        "channel": "channel", "dm": "im", "group-dm": "mpim",
+    }.get(container["type"], container["type"])
+    probe_item = {
+        "slack_workspace_id": team_id,
+        "slack_workspace_slug": workspace_slug,
+        "container_type": container["type"],
+        "container_slug": _container_cursor_slug(container),
+        "container_id": container["id"],
+        "channel_name": container.get("name"),
+        "channel_type": router_channel_type,
+        "participants": [
+            {"slug": users.get(uid)["slug"], "slack_user_id": uid}
+            for uid in {m.get("user") for m in parents if m.get("user")}
+        ],
+        "date": "1970-01-01",
+    }
+    probe_destinations = call_router(probe_item, workspaces_config)
+    if not probe_destinations:
+        if not dry_run and latest_ts_seen is not None:
+            write_cursor(workspace_slug, _container_cursor_slug(container),
+                         f"{latest_ts_seen:.6f}")
+        return summary
+
     # Resolve image descriptions for every image attached to a parent or
     # thread reply. Cache by Slack file_id so re-runs are free; failures
     # leave the cache untouched and the renderer falls back to size meta.

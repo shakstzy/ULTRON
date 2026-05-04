@@ -1,0 +1,52 @@
+# ---
+# source: drive
+# workspace: personal
+# ingested_at: "2026-05-04T16:51:17-05:00"
+# ingest_version: 1
+# content_hash: "blake3:99f02be85db9628257fe3b55dc3b7c1dcd4e7825d760b912d987a74e5c29d203"
+# provider_modified_at: "2025-03-12T18:19:10.128Z"
+# drive_account: "adithya@outerscope.xyz"
+# drive_account_slug: adithya-outerscope
+# drive_file_id: 1DhsGy6cv_7PEq5JNXBxSDHpDV7wx0Oy7Wi4UolUeFnA
+# drive_file_id_short: 1dhsgy6c
+# drive_mime_type: application/vnd.google-apps.spreadsheet
+# drive_file_type: sheet
+# drive_file_name: InclusiveLayer MarketMap
+# drive_file_size_bytes: 6103
+# drive_web_view_link: "https://docs.google.com/spreadsheets/d/1DhsGy6cv_7PEq5JNXBxSDHpDV7wx0Oy7Wi4UolUeFnA/edit?usp=drivesdk"
+# drive_created_at: "2025-03-12T17:48:18.853Z"
+# drive_modified_at: "2025-03-12T18:19:10.128Z"
+# drive_version: ""
+# drive_folder_path: []
+# drive_folder_id_path: []
+# drive_designated_folder_id: 1aQen7BupLIHLA_Dvbo4FN34-ZxW0HWWE
+# drive_designated_folder_name: INCLUSIVELAYER
+# owner:
+#   email: "adithya@outerscope.xyz"
+#   display_name: Adithya Kumar
+# last_modifier:
+#   email: "adithya@outerscope.xyz"
+#   display_name: Adithya Kumar
+#   modified_at: "2025-03-12T18:19:10.128Z"
+# shared_with:
+#   - email: "adithya@outerscope.xyz"
+#     role: owner
+#     display_name: Adithya Kumar
+# text_extraction_method: native
+# text_extraction_succeeded: true
+# last_re_ingested_at: null
+# re_ingest_count: 0
+# multi_tab_sheet: false
+# sheet_tab_names: []
+# sheet_exported_tab: null
+# ---
+Name,What they Do,Why
+LayerZero Labs,"LayerZero is an omnichain interoperability protocol enabling seamless communication and asset transfers across blockchains. They’re focused on simplifying cross-chain interactions, a core overlap with InclusiveLayer’s mission","Their work on bridging fragmented blockchain ecosystems could leverage our SDK to simplify developer integration and provide a unified wallet interface for users across chains. Recent posts on X highlight their collaborations with chains like Aptos and Solana, indicating a need for accessible tools like ours"
+Axelar Network,"Axelar provides a decentralized cross-chain infrastructure for dApps, enabling secure and scalable interoperability. They’re active in DeFi and cross-chain messaging","Axelar’s focus on developer-friendly cross-chain solutions aligns with our SDK, which could enhance their offerings by simplifying wallet integrations and liquidity aggregation for their ecosystem of builders. Their X activity shows ongoing engagement with developers, a key target for us"
+Wormhole,"Wormhole is a cross-chain messaging protocol connecting over 20 blockchains, widely used for NFT and token bridges","Wormhole’s extensive chain support (EVM and non-EVM) matches our cross-chain capabilities. Their builders could use the SDK to streamline user onboarding and wallet management, reducing friction in cross-chain NFT or DeFi apps. Recent X posts emphasize their developer community"
+SushiSwap,"SushiSwap is a multichain DEX (decentralized exchange) operating on chains like Ethereum, Arbitrum, and Aptos, focusing on swapping, liquidity provision, and DeFi tools","SushiSwap’s multichain expansion could benefit from our liquidity aggregation and unified interface, making it easier for developers to build on their platform and for users to interact across wallets. Their X presence shows active updates on new chain integrations, signaling a need for simplified tooling"
+BuildOnBase,"Base is an Ethereum L2 chain by Coinbase, designed for low-cost, scalable dApps. The community on X is full of builders creating consumer-focused apps like DeFi protocols and NFT marketplaces","Base’s developer ecosystem could use our SDK to integrate with other chains and wallets effortlessly, enhancing cross-chain accessibility for their dApps. X posts from builders here often discuss scaling user adoption—our consumer chain focus could help"
+Maverick Protocol,Maverick Protocol is a DeFi project focused on efficient liquidity provision across chains like Ethereum and zkSync. @0xMav is an active contributor sharing updates on X,"Maverick’s cross-chain DeFi ambitions align with InclusiveLayer’s liquidity aggregation and developer tools. The SDK could simplify their wallet integrations and cross-chain liquidity sourcing, boosting their development pace"
+Tomo,"Tomo is a social wallet project aiming to onboard non-crypto users to Web3 via simple interfaces, active on X with community updates
+","Tomo’s focus on user-friendly blockchain access mirrors InclusiveLayer’s goal of onboarding developers and users. The SDK’s unified wallet support could enhance Tomo’s cross-chain social features, making it a strong candidate
+"

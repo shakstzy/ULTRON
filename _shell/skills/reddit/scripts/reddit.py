@@ -163,6 +163,175 @@ def extract_posts(data):
     return [c["data"] for c in data.get("data", {}).get("children", []) if c.get("kind") == "t3"]
 
 
+# --- ingest helpers ----------------------------------------------------
+
+def _slugify(s, maxlen=60):
+    s = (s or "").lower()
+    s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+    return s[:maxlen].rstrip("-") or "untitled"
+
+
+def _iso_utc(ts):
+    if ts is None:
+        return None
+    return _dt.datetime.fromtimestamp(ts, tz=_dt.timezone.utc).isoformat()
+
+
+def _yaml_scalar(v):
+    """Render a Python value as a safe YAML scalar."""
+    if v is None:
+        return "null"
+    if isinstance(v, bool):
+        return "true" if v else "false"
+    if isinstance(v, (int, float)):
+        return str(v)
+    s = str(v)
+    if s == "" or any(c in s for c in ":#'\"\n\r") or s.lower() in ("null", "true", "false") or s[0] in "!&*?|>%@`":
+        return json.dumps(s, ensure_ascii=False)
+    return s
+
+
+def _comment_full(c, depth, max_depth, links_out):
+    """Render a comment + nested replies with NO truncation. Mutates links_out."""
+    if c.get("kind") != "t1":
+        return ""
+    d = c.get("data", {})
+    body = (d.get("body") or "").strip()
+    if not body or body in ("[deleted]", "[removed]"):
+        return ""
+    author = d.get("author") or "[deleted]"
+    score = d.get("score", 0)
+    pad = "  " * depth + "- "
+    # collect external links
+    for u in re.findall(r"https?://[^\s)\]]+", body):
+        if "reddit.com" not in u:
+            links_out.append(u)
+    body_disp = body.replace("\n", "\n" + "  " * (depth + 1))
+    out = [f"{pad}**u/{author}** ({score}↑): {body_disp}"]
+    if depth < max_depth:
+        replies = d.get("replies")
+        if isinstance(replies, dict):
+            for child in replies.get("data", {}).get("children", []):
+                line = _comment_full(child, depth + 1, max_depth, links_out)
+                if line:
+                    out.append(line)
+    return "\n".join(out)
+
+
+def save_thread(post, comments, top_n, max_depth, workspace):
+    """Write a Reddit thread to workspaces/<ws>/raw/reddit/<sub>/<file>.md.
+
+    Returns the absolute path written. Idempotent on (post_id, content_hash).
+    """
+    ws_root = ULTRON_ROOT / "workspaces" / workspace
+    if not ws_root.is_dir():
+        raise SystemExit(f"workspace not found: {ws_root} (try: personal, eclipse, finance, health, seedbox, synapse)")
+
+    sub = post.get("subreddit", "unknown")
+    pid = post.get("id", "")
+    title = (post.get("title") or "").strip()
+    created_iso = _iso_utc(post.get("created_utc"))
+    date_part = (created_iso or _iso_utc(time.time()))[:10]
+    slug = _slugify(title)
+    fname = f"{date_part}__{pid}__{slug}.md"
+    out_dir = ws_root / "raw" / "reddit" / sub
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out_path = out_dir / fname
+
+    # body
+    selftext = (post.get("selftext") or "").strip()
+    perm = f"https://reddit.com{post.get('permalink', '')}"
+    ext_url = post.get("url_overridden_by_dest") or post.get("url") or ""
+    if ext_url and ("reddit.com" in ext_url):
+        ext_url = ""
+    flair = post.get("link_flair_text") or ""
+
+    body_lines = [f"# {title}", ""]
+    meta_bits = [
+        f"r/{sub}",
+        f"u/{post.get('author') or '[deleted]'}",
+        f"{post.get('score', 0)}↑",
+        f"{post.get('num_comments', 0)}c",
+        ago(post.get("created_utc")),
+    ]
+    if flair:
+        meta_bits.append(f"[{flair}]")
+    body_lines.append("> " + " · ".join(meta_bits))
+    body_lines.append(f"> {perm}")
+    if ext_url:
+        body_lines.append(f"> external: {ext_url}")
+    body_lines.append("")
+    if selftext:
+        body_lines.append("## Selftext")
+        body_lines.append("")
+        body_lines.append(selftext)
+        body_lines.append("")
+
+    # comments
+    body_lines.append(f"## Top {top_n} comments (depth {max_depth})")
+    body_lines.append("")
+    shown = 0
+    links = []
+    for c in comments:
+        line = _comment_full(c, 0, max_depth, links)
+        if line:
+            body_lines.append(line)
+            shown += 1
+            if shown >= top_n:
+                break
+    if shown == 0:
+        body_lines.append("(no comments captured)")
+    body_lines.append("")
+
+    if links:
+        # dedupe preserving order
+        seen, deduped = set(), []
+        for u in links:
+            if u not in seen:
+                seen.add(u)
+                deduped.append(u)
+        body_lines.append("## External links cited in comments")
+        body_lines.append("")
+        for u in deduped:
+            body_lines.append(f"- {u}")
+        body_lines.append("")
+
+    body = "\n".join(body_lines)
+    content_hash = "sha256:" + hashlib.sha256(body.encode("utf-8")).hexdigest()
+
+    # frontmatter
+    fm = {
+        "source": "reddit",
+        "workspace": workspace,
+        "ingested_at": _iso_utc(time.time()),
+        "ingest_version": INGEST_VERSION,
+        "content_hash": content_hash,
+        "provider_modified_at": created_iso,
+        "post_id": pid,
+        "permalink": perm,
+        "url": ext_url or None,
+        "subreddit": sub,
+        "author": f"u/{post.get('author') or '[deleted]'}",
+        "title": title,
+        "flair": flair or None,
+        "score": post.get("score", 0),
+        "num_comments": post.get("num_comments", 0),
+        "upvote_ratio": post.get("upvote_ratio"),
+        "nsfw": bool(post.get("over_18")),
+        "spoiler": bool(post.get("spoiler")),
+        "locked": bool(post.get("locked")),
+        "top_comments_captured": shown,
+        "max_depth_captured": max_depth,
+    }
+    fm_lines = ["---"]
+    for k, v in fm.items():
+        fm_lines.append(f"{k}: {_yaml_scalar(v)}")
+    fm_lines.append("---")
+    fm_lines.append("")
+    out_path.write_text("\n".join(fm_lines) + body, encoding="utf-8")
+    return out_path
+
+
 def cmd_search(args):
     params = {"q": args.query, "limit": args.limit, "sort": args.sort, "t": args.time}
     path = f"/r/{args.sub}/search" if args.sub else "/search"
@@ -262,6 +431,12 @@ def cmd_post(args):
     if args.json:
         print(json.dumps({"post": post, "comments": comments}, indent=2))
         return
+    if args.save:
+        path = save_thread(post, comments, args.top, args.depth, args.save)
+        print(f"saved: {path}")
+        print(f"  {len(comments)} comments fetched, captured up to top={args.top} depth={args.depth}")
+        return
+
     print(fmt_post(post))
     print()
     print("---")
@@ -354,6 +529,9 @@ def main():
     pp.add_argument("--top", type=int, default=10, help="top N comments")
     pp.add_argument("--depth", type=int, default=2, help="max reply depth")
     pp.add_argument("--links", action="store_true", help="extract URLs from shown comments")
+    pp.add_argument("--save", metavar="WORKSPACE",
+                    help="ingest thread to workspaces/<WS>/raw/reddit/<sub>/...md "
+                         "(bumps default --top + --depth recommended; raw archive, full bodies)")
     pp.set_defaults(fn=cmd_post)
 
     up = sub.add_parser("user", help="user's recent posts or comments", parents=[common])

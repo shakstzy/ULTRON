@@ -26,11 +26,13 @@ sources:
     workspace_slug: eclipse
     channels:
       - app-team
-      - eclipse-ugc
       - data-sourcing
       - deals
       - engineering
       - general
+      # eclipse-ugc dropped 2026-05-04: only `ugc` exists (archived public,
+      # 0 messages, not a member). If a private channel by that name exists,
+      # add it back here once the token has groups:read scope.
     include_dms_with: []        # routing-time DM allowlist; populate later
   drive: []        # deferred
   manual:

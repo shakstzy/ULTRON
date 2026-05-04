@@ -248,9 +248,18 @@ def _unrouted_default_for(ws_cfg: dict) -> str:
 
 
 def route(thread: dict, workspaces_config: dict) -> list[dict]:
-    """Returns list of {workspace, rule} entries, sorted by workspace."""
+    """Returns list of {workspace, rule} entries, sorted by workspace.
+
+    If an explicit account subscription matched (include fired) but its
+    excludes vetoed the thread, the unrouted-default fallback is suppressed
+    — the exclude is the user's intentional drop, not an "uncategorized"
+    signal. Without this, account-level exclude lists (e.g. shared
+    cold-pitch noise files) would all silently land back in the main
+    workspace under <unrouted-default>.
+    """
     matched: dict[str, str] = {}
     extras: dict[str, str] = {}
+    explicit_reject = False
 
     for ws, cfg in workspaces_config.items():
         block = _gmail_block(cfg)
@@ -284,13 +293,16 @@ def route(thread: dict, workspaces_config: dict) -> list[dict]:
                 inc_rules = [r if isinstance(r, str) and ":" in r else f"label:{r}" for r in inc]
                 exc_rules = [r if isinstance(r, str) and ":" in r else f"label:{r}" for r in exc]
                 fired = _first_matching_rule(thread, inc_rules)
-                if fired and not _evaluate_excludes(thread, exc_rules):
-                    matched[ws] = fired
-                    for rule in acct.get("rules", []) or []:
-                        also = rule.get("also_route_to") or []
-                        for target in also:
-                            if target in workspaces_config:
-                                extras[target] = f"also_route_to-from-{ws}"
+                if fired:
+                    if _evaluate_excludes(thread, exc_rules):
+                        explicit_reject = True
+                    else:
+                        matched[ws] = fired
+                        for rule in acct.get("rules", []) or []:
+                            also = rule.get("also_route_to") or []
+                            for target in also:
+                                if target in workspaces_config:
+                                    extras[target] = f"also_route_to-from-{ws}"
             continue
 
         # Legacy flat shape.
@@ -301,10 +313,15 @@ def route(thread: dict, workspaces_config: dict) -> list[dict]:
         include_rules = [r if isinstance(r, str) and ":" in r else f"label:{r}" for r in include]
         exclude_rules = [r if isinstance(r, str) and ":" in r else f"label:{r}" for r in exclude]
         fired = _first_matching_rule(thread, include_rules)
-        if fired and not _evaluate_excludes(thread, exclude_rules):
-            matched[ws] = fired
+        if fired:
+            if _evaluate_excludes(thread, exclude_rules):
+                explicit_reject = True
+            else:
+                matched[ws] = fired
 
     if not matched:
+        if explicit_reject:
+            return []
         # Per-workspace eval, not pooled. A non-main workspace declaring
         # `ingest_unrouted_default: skip` must NOT veto the main fallback.
         main = _main_workspace(workspaces_config)

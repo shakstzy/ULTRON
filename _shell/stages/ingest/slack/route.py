@@ -25,11 +25,16 @@ def _channel_match(meta: dict, channels: list[str]) -> bool:
 
 
 def _dm_match(meta: dict, participants_slugs: list[str]) -> bool:
+    """Match DMs by the OTHER participant's slug. The user always appears
+    in their own DMs, so the user's canonical slug is excluded before
+    matching — otherwise putting "adithya-shak-kumar" in `include_dms_with`
+    would route every DM."""
     if not participants_slugs:
         return False
     if meta.get("channel_type") not in {"im", "mpim"}:
         return False
     parts = {(p.get("slug") or "").lower() for p in meta.get("participants") or []}
+    parts.discard("adithya-shak-kumar")  # always-present self
     return any(s in parts for s in participants_slugs)
 
 

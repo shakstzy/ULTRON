@@ -31,8 +31,7 @@ sources:
       - engineering
       - eclipse-ugc        # private channel C0AR2P8H268, 6 members
       - general
-    include_dms_with:
-      - adithya-shak-kumar  # self-DM (smoke-test target)
+    include_dms_with: []   # no DM ingestion; channels-only per current scope
   drive: []        # deferred
   manual:
     watch_path: raw/manual/_inbox/

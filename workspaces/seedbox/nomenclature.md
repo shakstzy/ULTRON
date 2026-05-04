@@ -1,30 +1,34 @@
-# <Workspace> Nomenclature
+# Seedbox Nomenclature
 
-This file documents file-system conventions and the routing manual for this workspace. The wiki agent and lint agent both read this to know where things go.
+File-system conventions and routing manual for the seedbox workspace.
 
 ## File-system conventions
 
-- All raw archive files: `raw/<source>/<YYYY-MM>/<thread-slug>.md`
-- Thread slug format: `<participant-slug>-<YYYY-MM-DD>` (or `<topic-slug>-<YYYY-MM-DD>` for multi-party).
+- Gmail raw: `raw/gmail/adithya-outerscope/<YYYY>/<MM>/<YYYY-MM-DD>__<subject-slug>__<threadid8>.md` (locked by ingest pipeline; see `_shell/stages/ingest/gmail/format.md`).
 - Wiki entity pages: `wiki/entities/<type>/<slug>.md` (type matches `schema.md` types).
-- Wiki concept pages: `wiki/concepts/<concept-slug>.md`.
 - Wiki synthesis pages: `wiki/synthesis/<topic-slug>.md`.
 - `_meta/lint-<YYYY-MM-DD>.md` per lint run.
 
-## Routing table — by query type
+## Slug rules
 
-<populated at bootstrap from Q3 + Q6>
+- People: `<first>-<last>` lowercase kebab. Disambiguate with `<first>-<context>` for collisions.
+- Topics: short canonical name (`advisor-admin`, `ideas-exchange`, `prototyping-2026`).
+
+## Routing table — by query type
 
 | Query type | Read first |
 |---|---|
-| "Who is X?" | `wiki/entities/people/<x>.md`, then `[[@x]]` |
+| "Who is X (Seedbox team or external contact)?" | `wiki/entities/people/<x>.md`, then `[[@x]]` for global |
+| "What's the latest from Seedbox?" | `raw/gmail/adithya-outerscope/<latest-month>/...` |
+| "Status of advisor agreement / 83(b)?" | `wiki/synthesis/advisor-admin.md` |
+| "Ideas / prototyping threads?" | `wiki/synthesis/ideas-exchange.md` |
 
 ## When the wiki agent creates a new page
 
 1. Determine the entity type from `schema.md`.
 2. Use the page format from `schema.md`.
 3. File path: `wiki/entities/<type>/<slug>.md`.
-4. After creation, check whether `_global/entities/<type>/<slug>.md` exists. If yes, ensure the global stub's `## Backlinks` section will pick it up on the next `build-backlinks.py` run. If no, propose adding the entity to global in `_meta/learning-proposals.md` (audit-agent will recommend promotion).
+4. After creation, check whether `_global/entities/<type>/<slug>.md` exists. If yes, ensure the global stub's `## Backlinks` section picks it up on the next `build-backlinks.py` run. If no, propose adding the entity to global in `_meta/learning-proposals.md`.
 
 ## When the wiki agent updates an existing page
 
@@ -35,4 +39,4 @@ This file documents file-system conventions and the routing manual for this work
 
 ## When source naming conflicts
 
-If two raw threads collide on slug, append `-2`, `-3`, etc. Lint agent flags collisions weekly.
+If two raw threads collide on slug, the ingest pipeline disambiguates via the 8-char thread-id suffix. Wiki entity collisions: append `-2`, `-3`. Lint agent flags collisions weekly.

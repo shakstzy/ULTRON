@@ -26,7 +26,6 @@ participants:
   - bcc
 labels:
 - Eclipse
-- UNREAD
 - IMPORTANT
 - CATEGORY_PERSONAL
 first_message: '2026-04-23T23:23:14+00:00'

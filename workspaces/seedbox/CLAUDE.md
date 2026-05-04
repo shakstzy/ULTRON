@@ -1,41 +1,45 @@
 ---
-workspace: <workspace-slug>
-wiki: true                              # set false for pipeline-only workspaces
-exclude_from_super_graphify: false      # default false; set true for private workspaces
-ingest_unrouted_default: route_to_main  # or "skip" — overrides source default
+workspace: seedbox
+wiki: true
+exclude_from_super_graphify: false
+ingest_unrouted_default: skip
 ---
 
-# <Workspace Name> — Workspace Router
+# Seedbox — Workspace Router
 
-You are in workspace `<workspace-slug>` — <one-line domain description, populated at bootstrap>.
+You are in workspace `seedbox` — Adithya's advisory work for Seedbox Labs.
 
 ## What this workspace is
 
-<2-3 sentences. The bootstrap agent fills this from Q1.>
+Seedbox Labs is a startup where Adithya is an advisor. Founded / operated by Avery Haskell, Lara Daniel (Stein), and Abraham Choi (`seedboxlabs.co`). Adithya signed an advisor agreement with 83(b) filing in late 2025. Workspace tracks the advisory relationship: intro / pitch / advisor admin, ideas-exchange threads, forwards, and any product discussions that flow through email.
 
 ## Reading order on entry
 
 1. `schema.md` — entity types, page formats
 2. `learnings.md` — workspace meta-knowledge
-3. `identity.md` — workspace voice (overrides global; only if present)
-4. `style.md` — workspace tone (only if present)
-5. `nomenclature.md` — file-system routing
+3. `nomenclature.md` — file-system routing
 
-## Voice override
+(No identity.md / style.md override — uses global default voice.)
 
-<If Q4 = a, write: "This workspace uses the global default voice. See ~/ULTRON/CLAUDE.md.">
-<If Q4 = b, write: "See identity.md for the voice override.">
+## Voice
+
+Default ULTRON voice. Plain words. This is an advisory workspace, less business-deliberate than eclipse, more focused than personal.
 
 ## Hard rules (workspace-specific)
 
-<Populated at bootstrap from Q3 + Q4 + Q8.>
+1. Seedbox team / external contact references must resolve through `schema.md`'s `person` type.
+2. Ideas / product / pitch synthesis lives in `wiki/synthesis/`. Sensitive deal terms (cap table, valuation, equity %) live only in `raw/`.
+3. Commit messages: `chore(seedbox): <stage> <YYYY-MM-DD>`.
+4. The 83(b) filing thread and advisor agreement are governance-critical. Surface in wiki summary; full text only in raw.
 
 ## Routing table — common queries
 
 | Query | Path |
 |---|---|
-| Who is X? | `wiki/entities/people/<x>.md` → `[[@x]]` for global identity |
-| <other workspace-specific queries from Q3> | <path> |
+| Who is X (Seedbox team / referenced contact)? | `wiki/entities/people/<x>.md` then `[[@x]]` for global identity |
+| What's the latest from Seedbox? | `raw/gmail/adithya-outerscope/<latest-month>/...` |
+| Status of advisor agreement / 83(b) | `wiki/synthesis/advisor-admin.md` |
+| Ideas / prototyping threads | `wiki/synthesis/ideas-exchange.md` |
 
 ## Agents
 
@@ -44,4 +48,4 @@ You are in workspace `<workspace-slug>` — <one-line domain description, popula
 
 ## Sources
 
-Declared in `config/sources.yaml`.
+Declared in `config/sources.yaml`. Sole source: `label:Seedbox` from `adithya@outerscope.xyz`.

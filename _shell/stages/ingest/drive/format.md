@@ -66,6 +66,7 @@ drive_account: adithya@eclipse.builders
 drive_account_slug: adithya-eclipse
 drive_file_id: 1aBcD3F_g4HiJk5L6m_n7oPqR8sTuVwX
 drive_file_id_short: 1abcd3f_
+drive_raw_identity_id: 1aBcD3F_g4HiJk5L6m_n7oPqR8sTuVwX  # path-identity (= drive_file_id, except for shortcuts where it equals the shortcut's file id)
 drive_mime_type: application/vnd.google-apps.document
 drive_file_type: doc                   # pdf | doc | sheet | slide | other
 drive_file_name: "Q4 Investor Update — Final v3.docx"
@@ -89,12 +90,14 @@ last_modifier:
   email: adithya@eclipse.builders
   display_name: Adithya Kumar
   modified_at: 2026-04-22T18:42:11-05:00
-shared_with:                           # only if visible to the token
+shared_with:                           # populated via permissions.list (paginated)
   - { email: sydney@eclipse.audio, display_name: "Sydney Hayes", role: owner }
   - { email: adithya@eclipse.builders, display_name: "Adithya Kumar", role: writer }
+shared_with_visible: true              # false if permissions.list returned 403; shared_with is then []
 multi_tab_sheet: false                 # Sheets only; otherwise omit / false
 sheet_tab_names: []                    # Sheets only; all tab names
 sheet_exported_tab: null               # Sheets only; name of the exported tab
+sheet_metadata_visible: true           # Sheets only; false if Sheets API failed
 text_extraction_method: native         # native | pdftotext | markitdown | failed
 text_extraction_succeeded: true
 last_re_ingested_at: null              # ISO 8601 once re-ingested
@@ -336,9 +339,9 @@ ingest-drive.py
   --account <email>             required; e.g. adithya@outerscope.xyz
   [--workspaces <a,b,c>]        subset; default = every workspace claiming a folder
                                 from this account in its sources.yaml
-  [--mode reconcile|incremental] default: incremental
+  [--mode reconcile|incremental] default: reconcile (v1; flips to incremental once Lock 7 ships)
                                  reconcile = full Lock 6 enumeration
-                                 incremental = Lock 7 cursor-driven
+                                 incremental = Lock 7 cursor-driven (first-run falls back to reconcile)
   [--dry-run]                   parse + render, no writes/deletes; cursor untouched
   [--show]                      in --dry-run, print full content to stdout
   [--max-files <int>]           hard cap on files processed (debugging)

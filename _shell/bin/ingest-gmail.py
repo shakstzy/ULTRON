@@ -56,7 +56,7 @@ if str(_ROUTE_DIR) not in sys.path:
 import yaml  # noqa: E402
 import blake3  # noqa: E402
 import html2text  # noqa: E402
-from route import route as route_thread  # noqa: E402
+from route import route as route_thread, validate_workspaces_config  # noqa: E402
 
 
 # ---------------------------------------------------------------------------
@@ -904,7 +904,8 @@ def ledger_append(workspace: str, record: dict) -> None:
     """Append one JSON line to the workspace ledger under an exclusive flock.
     flock is per-mailbox elsewhere, but two ingest robots for different
     accounts can route to the same workspace concurrently — without locking
-    here their buffered writes can interleave and corrupt the JSONL."""
+    here their buffered writes can interleave and corrupt the JSONL.
+    Local-FS advisory lock only; not safe across NFS mounts."""
     p = ledger_path(workspace)
     p.parent.mkdir(parents=True, exist_ok=True)
     with p.open("a") as f:
@@ -912,7 +913,6 @@ def ledger_append(workspace: str, record: dict) -> None:
             fcntl.flock(f.fileno(), fcntl.LOCK_EX)
             f.write(json.dumps(record, separators=(",", ":")) + "\n")
             f.flush()
-            os.fsync(f.fileno())
         finally:
             try:
                 fcntl.flock(f.fileno(), fcntl.LOCK_UN)
@@ -1407,6 +1407,18 @@ def main() -> int:
                 f"Resolve in sources.yaml before re-running.\n"
             )
             run_log.write(f"FATAL slug collision {slug}: {emails}\n")
+        run_log.close()
+        return 2
+
+    # Validate rule grammar across all workspaces before any network call.
+    # Without this, a typo'd rule (e.g. unquoted multi-word subject) would
+    # raise mid-thread-loop, after Gmail fetches and partial writes, and
+    # block cursor advance with an ugly traceback instead of a clean error.
+    rule_errors = validate_workspaces_config(workspaces_config)
+    if rule_errors:
+        for err in rule_errors:
+            sys.stderr.write(f"ingest-gmail: invalid rule: {err}\n")
+            run_log.write(f"FATAL invalid rule: {err}\n")
         run_log.close()
         return 2
 

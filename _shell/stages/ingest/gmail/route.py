@@ -256,6 +256,52 @@ def _unrouted_default_for(ws_cfg: dict) -> str:
     return meta.get("ingest_unrouted_default") or DEFAULT_UNROUTED
 
 
+def validate_workspaces_config(workspaces_config: dict) -> list[str]:
+    """Run every include + exclude (inline + exclude_from) through the
+    tokenizer once. Returns a list of human-readable error strings; empty
+    list means valid. Catches typos and unquoted multi-word subjects up
+    front so a bad rule cannot abort an in-progress run halfway through
+    the thread loop, after Gmail fetches and partial writes have happened.
+    """
+    errors: list[str] = []
+
+    def _check(ws: str, where: str, rule: str) -> None:
+        if not isinstance(rule, str) or not rule.strip():
+            return
+        rule_str = rule if ":" in rule else f"label:{rule}"
+        try:
+            _tokenize_rule(rule_str)
+        except ValueError as exc:
+            errors.append(f"workspace={ws} {where} rule={rule!r}: {exc}")
+
+    for ws, cfg in workspaces_config.items():
+        block = _gmail_block(cfg)
+        if not block:
+            continue
+        accounts = block.get("accounts") if isinstance(block, dict) else None
+        if isinstance(accounts, list):
+            for a in accounts:
+                if not isinstance(a, dict):
+                    continue
+                api = a.get("api_query") or {}
+                acct_label = a.get("account") or "<unknown>"
+                for r in api.get("include") or []:
+                    _check(ws, f"account={acct_label} include", r)
+                for r in api.get("exclude") or []:
+                    _check(ws, f"account={acct_label} exclude", r)
+                for r in _excludes_from_field(api.get("exclude_from")):
+                    _check(ws, f"account={acct_label} exclude_from", r)
+            continue
+        api = block.get("api_query", {}) or {}
+        for r in (api.get("include") or block.get("labels") or []):
+            _check(ws, "include (legacy)", r)
+        for r in list(api.get("exclude") or block.get("exclude_labels") or []):
+            _check(ws, "exclude (legacy)", r)
+        for r in _excludes_from_field(api.get("exclude_from")):
+            _check(ws, "exclude_from (legacy)", r)
+    return errors
+
+
 def route(thread: dict, workspaces_config: dict) -> list[dict]:
     """Returns list of {workspace, rule} entries, sorted by workspace.
 
@@ -315,6 +361,14 @@ def route(thread: dict, workspaces_config: dict) -> list[dict]:
             continue
 
         # Legacy flat shape.
+        # The block IS the gmail config dict (per _gmail_block), so the
+        # account field lives directly on it. Without this filter, a
+        # legacy-shape workspace's rules would evaluate against threads
+        # from every other ingested account, silently routing mail into
+        # the wrong workspace.
+        legacy_account = block.get("account")
+        if legacy_account and thread.get("account") and legacy_account != thread["account"]:
+            continue
         api = block.get("api_query", {}) or {}
         include = api.get("include") or block.get("labels") or []
         exclude = list(api.get("exclude") or block.get("exclude_labels") or [])

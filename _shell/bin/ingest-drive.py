@@ -235,7 +235,9 @@ class DriveClient:
         return resp
 
     def list_permissions(self, file_id: str) -> tuple[list[dict], bool]:
-        """Returns (permissions, visible). Paginated. visible=False on 403."""
+        """Returns (permissions, visible). Paginated. visible=False ONLY on
+        403/404 (limited sharing visibility). Other HTTP errors propagate so
+        the run fails and the cursor doesn't advance."""
         out: list[dict] = []
         page = ""
         try:
@@ -257,7 +259,7 @@ class DriveClient:
         except urllib.error.HTTPError as e:
             if e.code in (403, 404):
                 return ([], False)
-            raise
+            raise  # 500/502/503/504/429-after-retries are run-fatal
 
     def export(self, file_id: str, mime: str, binary: bool = False):
         url = f"{DRIVE_API}/files/{urllib.parse.quote(file_id)}/export?mimeType={urllib.parse.quote(mime)}&supportsAllDrives=true"
@@ -278,7 +280,9 @@ class DriveClient:
         return resp["startPageToken"]
 
     def sheet_metadata(self, file_id: str) -> dict | None:
-        """Returns sheet metadata, or None if API call failed."""
+        """Returns sheet metadata, or None if Sheets API is genuinely
+        unavailable for this file (403/404 — Sheets API access not granted
+        or sheet hidden). Other HTTP errors propagate so the run fails."""
         url = (
             f"{SHEETS_API}/spreadsheets/{urllib.parse.quote(file_id)}"
             f"?fields=sheets.properties(title,index,sheetType)"
@@ -287,8 +291,10 @@ class DriveClient:
             resp = self._request(url)
             assert isinstance(resp, dict)
             return resp
-        except urllib.error.HTTPError:
-            return None
+        except urllib.error.HTTPError as e:
+            if e.code in (403, 404):
+                return None
+            raise  # 500/502/503/504/429-after-retries are run-fatal
 
 
 # ============================================================================
@@ -856,13 +862,15 @@ def reconcile(args, designated, client, account, workspaces_filter: dict[str, di
                 drive_file_type = MIME_ALLOWED[file_meta["mimeType"]]
                 ext = ".csv" if drive_file_type == "sheet" else ".md"
                 raw_identity_id = shortcut_origin_id or file_meta["id"]
-                live_keys.add(raw_identity_id)
 
                 # Slug: shortcut's name when applicable, else target/file name
                 slug_source = shortcut_visible_name or file_meta.get("name") or ""
                 slug_stem = file_slug(slug_source)
 
-                # Routing
+                # Routing — confirm the file is claimed by this workspace
+                # BEFORE marking the identity as "live" for delete protection.
+                # If a previously-routed file is no longer routed, its raw
+                # SHOULD be deleted by Phase 3.
                 routing_meta = {
                     "drive_account": account,
                     "drive_designated_folder_id": d["folder_id"],
@@ -873,6 +881,7 @@ def reconcile(args, designated, client, account, workspaces_filter: dict[str, di
                     skipped += 1
                     log({"action": "skip", "name": slug_source, "reason": "unrouted"})
                     continue
+                live_keys.add(raw_identity_id)
 
                 for r in routes:
                     ws = r["workspace"]

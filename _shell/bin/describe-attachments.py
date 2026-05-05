@@ -272,17 +272,30 @@ def parallel_describe(worklist, workers, needed, dry_run, checkpoint_every=100, 
     pending_lock = threading.Lock()
     checkpoints = [0]
 
+    # Track running counts across all completions
+    counts = {"success": 0, "rate_limit": 0, "other": 0}
+    counts_lock = threading.Lock()
+
     def maybe_checkpoint(force=False):
         with pending_lock:
             if not pending_buffer:
-                return
+                if force:
+                    pass
+                else:
+                    return
             if not force and len(pending_buffer) < checkpoint_every:
                 return
             snapshot = dict(pending_buffer)
             pending_buffer.clear()
-        patched = patch_files(needed, snapshot, dry_run)
+        if snapshot:
+            patched = patch_files(needed, snapshot, dry_run)
+        else:
+            patched = 0
         checkpoints[0] += 1
-        sys.stdout.write(f"\n  checkpoint #{checkpoints[0]}: {len(snapshot)} descs persisted, {patched} files updated\n")
+        with counts_lock:
+            c = dict(counts)
+        sys.stdout.write(f"\n  checkpoint #{checkpoints[0]}: {len(snapshot)} descs persisted ({patched} files); "
+                         f"running: {c['success']} ok, {c['rate_limit']} rate, {c['other']} other\n")
         sys.stdout.flush()
 
     def task(item):
@@ -314,6 +327,13 @@ def parallel_describe(worklist, workers, needed, dry_run, checkpoint_every=100, 
                 sys.stderr.write(f"\n  worker exception: {e}\n")
                 continue
             results[sha] = payload
+            with counts_lock:
+                if payload["description"]:
+                    counts["success"] += 1
+                elif payload.get("error") == "rate_limit":
+                    counts["rate_limit"] += 1
+                else:
+                    counts["other"] += 1
             if payload["description"]:
                 with pending_lock:
                     pending_buffer[sha] = payload

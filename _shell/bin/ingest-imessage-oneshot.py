@@ -370,6 +370,7 @@ def gemini_describe_once(path, kind, timeout=180):
     prompt = PROMPT_VISION if kind in ("image", "video") else PROMPT_TEXT
     cmd = [
         "gemini",
+        "-m", DESCRIPTION_MODEL,   # pin Flash explicitly; CLI auto-routes to Pro otherwise
         "-p", f"{prompt}\n\n@{path}",
         "-o", "text",
         "--approval-mode", "plan",

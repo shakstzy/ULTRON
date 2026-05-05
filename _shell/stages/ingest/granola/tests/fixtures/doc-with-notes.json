@@ -1,0 +1,810 @@
+{
+  "id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+  "created_at": "2025-12-23T16:28:38.203Z",
+  "notes": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "attrs": {
+          "id": "feecb987-8970-4c8d-944d-dce522dc542b"
+        }
+      }
+    ]
+  },
+  "title": "Outerscope weekly stand-up: podcast licensing and mobile app design",
+  "user_id": "128825ed-9058-4763-ba63-377934e5206e",
+  "cloned_from": null,
+  "notes_plain": "",
+  "transcribe": false,
+  "google_calendar_event": null,
+  "updated_at": "2026-03-03T14:12:56.502Z",
+  "deleted_at": null,
+  "type": "meeting",
+  "overview": null,
+  "public": false,
+  "people": {
+    "creator": {
+      "name": "Adithya",
+      "email": "adithya@outerscope.xyz",
+      "details": {
+        "person": {
+          "name": {
+            "fullName": "Adithya"
+          }
+        },
+        "company": {
+          "name": "Outerscope"
+        }
+      }
+    },
+    "attendees": []
+  },
+  "chapters": null,
+  "meeting_end_count": 1,
+  "notes_markdown": "",
+  "selected_template": null,
+  "valid_meeting": null,
+  "summary": null,
+  "affinity_note_id": null,
+  "has_shareable_link": true,
+  "show_private_notes": false,
+  "attachments": [],
+  "hubspot_note_url": null,
+  "creation_source": "macOS",
+  "subscription_plan_id": "granola.plan.business.v1",
+  "status": null,
+  "external_transcription_id": null,
+  "audio_file_handle": null,
+  "privacy_mode_enabled": false,
+  "workspace_id": "95cabeea-7414-4829-9e05-c77580a3612c",
+  "visibility": null,
+  "sharing_link_visibility": "public",
+  "notification_config": null,
+  "transcript_deleted_at": null,
+  "metadata": null,
+  "attio_shared_at": null,
+  "was_trashed": null,
+  "is_primary_event_note": null,
+  "ydoc_state": "AQLGwq2ECQAHAQtwcm9zZW1pcnJvcgMJcGFyYWdyYXBoKADGwq2ECQACaWQBdyRmZWVjYjk4Ny04OTcwLTRjOGQtOTQ0ZC1kY2U1MjJkYzU0MmIA",
+  "ydoc_version": 1,
+  "zoom_rtms_permission": null,
+  "is_scratchpad": null,
+  "last_indexed_at": "2026-04-14T13:14:06.951Z",
+  "document_user_role": null,
+  "last_viewed_panel": {
+    "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+    "created_at": "2025-12-23T16:39:33.012Z",
+    "title": "Summary",
+    "content": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "id": "1fb282cb-326c-4724-845a-b413f9358e66",
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Development Progress"
+            }
+          ]
+        },
+        {
+          "type": "bulletList",
+          "attrs": {
+            "tight": true
+          },
+          "content": [
+            {
+              "type": "listItem",
+              "attrs": {
+                "id": "82a06533-dd3b-4114-9bc4-3249c433bc6b"
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "id": "a6b18edc-a137-476e-b6bf-3b1de4badd99"
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Jamal working on live-coded landing page for "
+                    },
+                    {
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "http://dehumanapi.com",
+                            "target": "_blank",
+                            "rel": "noopener noreferrer nofollow",
+                            "class": null
+                          }
+                        }
+                      ],
+                      "text": "dehumanapi.com"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "attrs": {
+                "id": "95711d45-cb2f-45b8-885a-726d5d7041e3"
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "id": "956b0db2-cacf-47cf-9cf1-69677bd62702"
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "End-to-end test simulation for app click upload flow nearly complete"
+                    }
+                  ]
+                },
+                {
+                  "type": "bulletList",
+                  "attrs": {
+                    "tight": true
+                  },
+                  "content": [
+                    {
+                      "type": "listItem",
+                      "attrs": {
+                        "id": "5bcac741-3ce9-497f-bbe3-06660284198c"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "attrs": {
+                            "id": "02873010-826b-4552-8e20-578e8364a7d2"
+                          },
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "May need to switch from REST to JSON IPC if necessary"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "attrs": {
+                "id": "c3d613f0-395d-42cd-bd87-693ad49991d9"
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "id": "ceacdaa8-0906-4be7-8013-481f48c898bb"
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Mobile app designs finalized for script representation"
+                    }
+                  ]
+                },
+                {
+                  "type": "bulletList",
+                  "attrs": {
+                    "tight": true
+                  },
+                  "content": [
+                    {
+                      "type": "listItem",
+                      "attrs": {
+                        "id": "d69084e0-a37c-48f4-8666-0285b6bbce98"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "attrs": {
+                            "id": "107992ef-430a-494d-8dc7-8af9cd880b46"
+                          },
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Explored multiple options to improve script readability on mobile"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "attrs": {
+                        "id": "a61441ce-4ce9-4bf8-9add-9540de6b6c48"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "attrs": {
+                            "id": "04d36e66-2fc3-461d-b7a5-66c9ba014835"
+                          },
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Clear direction established for future mobile app development"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "attrs": {
+                        "id": "12ef36de-befd-48ba-a200-be302fb0a7e4"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "attrs": {
+                            "id": "6ac777d2-38f1-4bf4-8986-1297f25f89f2"
+                          },
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Loom video walkthrough to be shared with app team"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "id": "74f46198-c339-4881-ac77-f070444cf9e5",
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Data Acquisition & Licensing"
+            }
+          ]
+        },
+        {
+          "type": "bulletList",
+          "attrs": {
+            "tight": true
+          },
+          "content": [
+            {
+              "type": "listItem",
+              "attrs": {
+                "id": "61bc9a9a-0c13-4ee9-b73f-a50a91af8b35"
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "id": "f57d6005-dbb6-4f9c-9f88-a3fdc91e2821"
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Email outreach continuing with listen notes scraping"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "attrs": {
+                "id": "2de1c4ff-de90-4265-821f-df1b9011f3a3"
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "id": "549a7a55-a6c9-4856-b655-0c76b02470d5"
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Strong response rate: targeting 2k hours within 1-2 days"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "attrs": {
+                "id": "41412515-5518-41ab-b485-8b975830337a"
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "id": "2c2bb18f-f313-4d21-ab89-7d5ff779b0f1"
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Pricing settled at $25-30 per hour for most prospects"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "attrs": {
+                "id": "7e8b66bd-167d-47eb-8b6b-5113fd6a749d"
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "id": "4d047a98-6aa1-4bdd-878b-1492b2f79aa0"
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Potential exclusive deal: 3.2k hours from podcaster with two shows"
+                    }
+                  ]
+                },
+                {
+                  "type": "bulletList",
+                  "attrs": {
+                    "tight": true
+                  },
+                  "content": [
+                    {
+                      "type": "listItem",
+                      "attrs": {
+                        "id": "d7c03c93-1a45-45eb-a0c7-25705021fde5"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "attrs": {
+                            "id": "d65dfc23-9e21-49f4-833d-1b4c3d74b7ed"
+                          },
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "2000 hours + 1200 hours"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "attrs": {
+                        "id": "2e430c4f-1426-4932-9030-07a970b121eb"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "attrs": {
+                            "id": "92560f88-d2c4-4a81-bf62-94c1446819a6"
+                          },
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Exclusive AI training license"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "id": "cf49d2dd-f955-42ee-81c5-fb869adbd5ea",
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "MLG Sample Analysis"
+            }
+          ]
+        },
+        {
+          "type": "bulletList",
+          "attrs": {
+            "tight": true
+          },
+          "content": [
+            {
+              "type": "listItem",
+              "attrs": {
+                "id": "e75bf30f-b2ee-41c9-8960-e78af0007370"
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "id": "3088e9dc-0c6f-4958-a534-49ddddd953d6"
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Initial samples analyzed show consistent technical specs"
+                    }
+                  ]
+                },
+                {
+                  "type": "bulletList",
+                  "attrs": {
+                    "tight": true
+                  },
+                  "content": [
+                    {
+                      "type": "listItem",
+                      "attrs": {
+                        "id": "3d8b1351-2053-482f-8047-60e77576ad03"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "attrs": {
+                            "id": "7b72bb68-ee43-456a-a9a3-3c52defbbb9f"
+                          },
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Frequency range: 0-20 kilohertz across all samples"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "attrs": {
+                        "id": "9ed26fa9-e9b7-4b24-91f2-2e741d8e9d16"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "attrs": {
+                            "id": "71b2ca0b-cea0-43d8-aee3-0a934b2ba478"
+                          },
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Bitrate consistent throughout dataset"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "attrs": {
+                "id": "8648b3ee-2309-44d3-9501-184df1d9e79a"
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "id": "aa85448d-9679-43b7-b392-82298ccf82f2"
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Evaluation code likely broken based on multi-sample analysis"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "attrs": {
+                "id": "700aa49f-4179-4461-b2f1-eaf0ddbc2db1"
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "id": "8eeadde1-4841-4ee0-9edf-d36476a47e7a"
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Spanish samples require review (24-bit, 48kHz requirements)"
+                    }
+                  ]
+                },
+                {
+                  "type": "bulletList",
+                  "attrs": {
+                    "tight": true
+                  },
+                  "content": [
+                    {
+                      "type": "listItem",
+                      "attrs": {
+                        "id": "35525c0f-412a-4e25-bd3f-5ba6553ed7a6"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "attrs": {
+                            "id": "ca8c2ce9-aeaf-4efd-923f-f8f7ecfdafd4"
+                          },
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Higher quality requirements than English samples"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "attrs": {
+                        "id": "8355bc25-25e2-41ba-8b93-4a8875b7ee09"
+                      },
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "attrs": {
+                            "id": "8b37efbc-c558-4d46-981e-42e651490d2a"
+                          },
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Fewer samples available but need approval for recording this week"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "id": "b0917745-c6e3-4011-bbb5-3fa16b3a1ba1",
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Next Steps"
+            }
+          ]
+        },
+        {
+          "type": "bulletList",
+          "attrs": {
+            "tight": true
+          },
+          "content": [
+            {
+              "type": "listItem",
+              "attrs": {
+                "id": "348cd2e7-2e18-422c-a0b9-cea5f95d0f27"
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "id": "391f6e1b-1b3d-45c2-b4d7-f4baf752b686"
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Vedant: Provide logo and basic assets for UGC video creation"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "attrs": {
+                "id": "cf3650fb-7de1-4f89-a8a4-4238f39d42f7"
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "id": "4d267dd5-75fc-4328-93b1-2c0e1bbcecf4"
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Adithya: Complete MLG sample analysis for Spanish content and update tracking sheet"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "attrs": {
+                "id": "70e4a93c-cbb8-4c02-8117-42a40a8c6d48"
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "attrs": {
+                    "id": "4f6542a1-72d5-485e-8b40-321cf4bf9929"
+                  },
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Julian: Share notes from yesterday’s recording sessions and fix evaluation checks"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "deleted_at": null,
+    "template_slug": "v2:meeting-summary-consolidated",
+    "last_viewed_at": "2026-05-01T04:07:15.614Z",
+    "updated_at": "2026-05-01T04:07:32.310Z",
+    "content_updated_at": "2026-05-01T04:07:32.310Z",
+    "affinity_note_id": null,
+    "original_content": "<h3>Development Progress</h3>\n<ul>\n<li>Jamal working on live-coded landing page for <a href=\"http://dehumanapi.com\">dehumanapi.com</a></li>\n<li>End-to-end test simulation for app click upload flow nearly complete\n<ul>\n<li>May need to switch from REST to JSON IPC if necessary</li>\n</ul>\n</li>\n<li>Mobile app designs finalized for script representation\n<ul>\n<li>Explored multiple options to improve script readability on mobile</li>\n<li>Clear direction established for future mobile app development</li>\n<li>Loom video walkthrough to be shared with app team</li>\n</ul>\n</li>\n</ul>\n<h3>Data Acquisition &amp; Licensing</h3>\n<ul>\n<li>Email outreach continuing with listen notes scraping</li>\n<li>Strong response rate: targeting 2k hours within 1-2 days</li>\n<li>Pricing settled at $25-30 per hour for most prospects</li>\n<li>Potential exclusive deal: 3.2k hours from podcaster with two shows\n<ul>\n<li>2000 hours + 1200 hours</li>\n<li>Exclusive AI training license</li>\n</ul>\n</li>\n</ul>\n<h3>MLG Sample Analysis</h3>\n<ul>\n<li>Initial samples analyzed show consistent technical specs\n<ul>\n<li>Frequency range: 0-20 kilohertz across all samples</li>\n<li>Bitrate consistent throughout dataset</li>\n</ul>\n</li>\n<li>Evaluation code likely broken based on multi-sample analysis</li>\n<li>Spanish samples require review (24-bit, 48kHz requirements)\n<ul>\n<li>Higher quality requirements than English samples</li>\n<li>Fewer samples available but need approval for recording this week</li>\n</ul>\n</li>\n</ul>\n<h3>Next Steps</h3>\n<ul>\n<li>Vedant: Provide logo and basic assets for UGC video creation</li>\n<li>Adithya: Complete MLG sample analysis for Spanish content and update tracking sheet</li>\n<li>Julian: Share notes from yesterday’s recording sessions and fix evaluation checks</li>\n</ul>\n<hr>\n<p>Chat with meeting transcript: <a href=\"https://notes.granola.ai/t/8a248885-2e2c-45f6-bcce-ab7d8564d923\">https://notes.granola.ai/t/8a248885-2e2c-45f6-bcce-ab7d8564d923</a></p>\n",
+    "suggested_questions": null,
+    "generated_lines": [
+      {
+        "text": "Development Progress",
+        "matches": false
+      },
+      {
+        "text": "Jamal working on live-coded landing page for",
+        "matches": false
+      },
+      {
+        "text": "dehumanapi.com",
+        "matches": false
+      },
+      {
+        "text": "End-to-end test simulation for app click upload flow nearly complete",
+        "matches": false
+      },
+      {
+        "text": "May need to switch from REST to JSON IPC if necessary",
+        "matches": false
+      },
+      {
+        "text": "Mobile app designs finalized for script representation",
+        "matches": false
+      },
+      {
+        "text": "Explored multiple options to improve script readability on mobile",
+        "matches": false
+      },
+      {
+        "text": "Clear direction established for future mobile app development",
+        "matches": false
+      },
+      {
+        "text": "Loom video walkthrough to be shared with app team",
+        "matches": false
+      },
+      {
+        "text": "Data Acquisition &amp; Licensing",
+        "matches": false
+      },
+      {
+        "text": "Email outreach continuing with listen notes scraping",
+        "matches": false
+      },
+      {
+        "text": "Strong response rate: targeting 2k hours within 1-2 days",
+        "matches": false
+      },
+      {
+        "text": "Pricing settled at $25-30 per hour for most prospects",
+        "matches": false
+      },
+      {
+        "text": "Potential exclusive deal: 3.2k hours from podcaster with two shows",
+        "matches": false
+      },
+      {
+        "text": "2000 hours + 1200 hours",
+        "matches": false
+      },
+      {
+        "text": "Exclusive AI training license",
+        "matches": false
+      },
+      {
+        "text": "MLG Sample Analysis",
+        "matches": false
+      },
+      {
+        "text": "Initial samples analyzed show consistent technical specs",
+        "matches": false
+      },
+      {
+        "text": "Frequency range: 0-20 kilohertz across all samples",
+        "matches": false
+      },
+      {
+        "text": "Bitrate consistent throughout dataset",
+        "matches": false
+      },
+      {
+        "text": "Evaluation code likely broken based on multi-sample analysis",
+        "matches": false
+      },
+      {
+        "text": "Spanish samples require review (24-bit, 48kHz requirements)",
+        "matches": false
+      },
+      {
+        "text": "Higher quality requirements than English samples",
+        "matches": false
+      },
+      {
+        "text": "Fewer samples available but need approval for recording this week",
+        "matches": false
+      },
+      {
+        "text": "Next Steps",
+        "matches": false
+      },
+      {
+        "text": "Vedant: Provide logo and basic assets for UGC video creation",
+        "matches": false
+      },
+      {
+        "text": "Adithya: Complete MLG sample analysis for Spanish content and update tracking sheet",
+        "matches": false
+      },
+      {
+        "text": "Julian: Share notes from yesterday’s recording sessions and fix evaluation checks",
+        "matches": false
+      }
+    ],
+    "id": "c8933c8e-e07b-4e83-9fd1-9c2fe163b3cd",
+    "ydoc_state": "AcoBvKW2lwsABwELcHJvc2VtaXJyb3IDB2hlYWRpbmcHALyltpcLAAYEALyltpcLARREZXZlbG9wbWVudCBQcm9ncmVzcygAvKW2lwsAAmlkAXckMWZiMjgyY2ItMzI2Yy00NzI0LTg0NWEtYjQxM2Y5MzU4ZTY2KAC8pbaXCwAFbGV2ZWwBfQOHvKW2lwsAAwpidWxsZXRMaXN0BwC8pbaXCxgDCGxpc3RJdGVtBwC8pbaXCxkDCXBhcmFncmFwaAcAvKW2lwsaBgQAvKW2lwsbLUphbWFsIHdvcmtpbmcgb24gbGl2ZS1jb2RlZCBsYW5kaW5nIHBhZ2UgZm9yIIa8pbaXC0gEbGlua2R7ImhyZWYiOiJodHRwOi8vZGVodW1hbmFwaS5jb20iLCJ0YXJnZXQiOiJfYmxhbmsiLCJyZWwiOiJub29wZW5lciBub3JlZmVycmVyIG5vZm9sbG93IiwiY2xhc3MiOm51bGx9hLyltpcLSQ5kZWh1bWFuYXBpLmNvbYa8pbaXC1cEbGluawRudWxsKAC8pbaXCxoCaWQBdyRhNmIxOGVkYy1hMTM3LTQ3NmUtYjZiZi0zYjFkZTRiYWRkOTkoALyltpcLGgppc1NlbGVjdGVkAXkoALyltpcLGQJpZAF3JDgyYTA2NTMzLWRkM2ItNDExNC05YmM0LTMyNDljNDMzYmM2Yoe8pbaXCxkDCGxpc3RJdGVtBwC8pbaXC1wDCXBhcmFncmFwaAcAvKW2lwtdBgQAvKW2lwteREVuZC10by1lbmQgdGVzdCBzaW11bGF0aW9uIGZvciBhcHAgY2xpY2sgdXBsb2FkIGZsb3cgbmVhcmx5IGNvbXBsZXRlKAC8pbaXC10CaWQBdyQ5NTZiMGRiMi1jYWNmLTQ3Y2YtOWNmMS02OTY3N2JkNjI3MDIoALyltpcLXQppc1NlbGVjdGVkAXmHvKW2lwtdAwpidWxsZXRMaXN0BwC8pbaXC6UBAwhsaXN0SXRlbQcAvKW2lwumAQMJcGFyYWdyYXBoBwC8pbaXC6cBBgQAvKW2lwuoATVNYXkgbmVlZCB0byBzd2l0Y2ggZnJvbSBSRVNUIHRvIEpTT04gSVBDIGlmIG5lY2Vzc2FyeSgAvKW2lwunAQJpZAF3JDAyODczMDEwLTgyNmItNDU1Mi04ZTIwLTU3OGU4MzY0YTdkMigAvKW2lwunAQppc1NlbGVjdGVkAXkoALyltpcLpgECaWQBdyQ1YmNhYzc0MS0zY2U5LTQ5N2YtYmJlMy0wNjY2MDI4NDE5OGMoALyltpcLpQEFdGlnaHQBeCgAvKW2lwtcAmlkAXckOTU3MTFkNDUtY2IyZi00NWI4LTg4NWEtNzI2ZDVkNzA0MWUzh7yltpcLXAMIbGlzdEl0ZW0HALyltpcL4wEDCXBhcmFncmFwaAcAvKW2lwvkAQYEALyltpcL5QE2TW9iaWxlIGFwcCBkZXNpZ25zIGZpbmFsaXplZCBmb3Igc2NyaXB0IHJlcHJlc2VudGF0aW9uKAC8pbaXC+QBAmlkAXckY2VhY2RhYTgtMDkwNi00YmU3LTgwMTMtNDgxZjQ4Yzg5OGJiKAC8pbaXC+QBCmlzU2VsZWN0ZWQBeYe8pbaXC+QBAwpidWxsZXRMaXN0BwC8pbaXC54CAwhsaXN0SXRlbQcAvKW2lwufAgMJcGFyYWdyYXBoBwC8pbaXC6ACBgQAvKW2lwuhAkFFeHBsb3JlZCBtdWx0aXBsZSBvcHRpb25zIHRvIGltcHJvdmUgc2NyaXB0IHJlYWRhYmlsaXR5IG9uIG1vYmlsZSgAvKW2lwugAgJpZAF3JDEwNzk5MmVmLTQzMGEtNDk0ZC04ZGM3LThhZjljZDg4MGI0NigAvKW2lwugAgppc1NlbGVjdGVkAXkoALyltpcLnwICaWQBdyRkNjkwODRlMC1hMzdjLTQ4ZjQtODY2Ni0wMjg1YjZiYmNlOTiHvKW2lwufAgMIbGlzdEl0ZW0HALyltpcL5gIDCXBhcmFncmFwaAcAvKW2lwvnAgYEALyltpcL6AI9Q2xlYXIgZGlyZWN0aW9uIGVzdGFibGlzaGVkIGZvciBmdXR1cmUgbW9iaWxlIGFwcCBkZXZlbG9wbWVudCgAvKW2lwvnAgJpZAF3JDA0ZDM2ZTY2LTJmYzMtNDYxZC1iN2E1LTY2YzliYTAxNDgzNSgAvKW2lwvnAgppc1NlbGVjdGVkAXkoALyltpcL5gICaWQBdyRhNjE0NDFjZS00Y2U5LTRiZjgtOWFkZC05NTQwZGU2YjZjNDiHvKW2lwvmAgMIbGlzdEl0ZW0HALyltpcLqQMDCXBhcmFncmFwaAcAvKW2lwuqAwYEALyltpcLqwMxTG9vbSB2aWRlbyB3YWxrdGhyb3VnaCB0byBiZSBzaGFyZWQgd2l0aCBhcHAgdGVhbSgAvKW2lwuqAwJpZAF3JDZhYzc3N2QyLTM4ZjEtNGJmNC04OTg2LTEyOTdmMjVmODlmMigAvKW2lwuqAwppc1NlbGVjdGVkAXkoALyltpcLqQMCaWQBdyQxMmVmMzZkZS1iZWZkLTQ4YmEtYTIwMC1iZTMwMmZiMGE3ZTQoALyltpcLngIFdGlnaHQBeCgAvKW2lwvjAQJpZAF3JGMzZDYxM2YwLTM5NWQtNDJjZC1iZDg3LTY5M2FkNDk5OTFkOSgAvKW2lwsYBXRpZ2h0AXiHvKW2lwsYAwdoZWFkaW5nBwC8pbaXC+MDBgQAvKW2lwvkAxxEYXRhIEFjcXVpc2l0aW9uICYgTGljZW5zaW5nKAC8pbaXC+MDAmlkAXckNzRmNDYxOTgtYzMzOS00ODgxLWFjNzctZjA3MDQ0NGNmOWU1KAC8pbaXC+MDBWxldmVsAX0Dh7yltpcL4wMDCmJ1bGxldExpc3QHALyltpcLgwQDCGxpc3RJdGVtBwC8pbaXC4QEAwlwYXJhZ3JhcGgHALyltpcLhQQGBAC8pbaXC4YENEVtYWlsIG91dHJlYWNoIGNvbnRpbnVpbmcgd2l0aCBsaXN0ZW4gbm90ZXMgc2NyYXBpbmcoALyltpcLhQQCaWQBdyRmNTdkNjAwNS1kYmI2LTRmOWMtOWY4OC1hM2ZkYzkxZTI4MjEoALyltpcLhQQKaXNTZWxlY3RlZAF5KAC8pbaXC4QEAmlkAXckNjFiYzlhOWEtMGMxMy00ZWU5LWI3M2YtYTUwYTkxYWY4YjM1h7yltpcLhAQDCGxpc3RJdGVtBwC8pbaXC74EAwlwYXJhZ3JhcGgHALyltpcLvwQGBAC8pbaXC8AEOFN0cm9uZyByZXNwb25zZSByYXRlOiB0YXJnZXRpbmcgMmsgaG91cnMgd2l0aGluIDEtMiBkYXlzKAC8pbaXC78EAmlkAXckNTQ5YTdhNTUtYTZjOS00ODU2LWI2NTUtMGM3NmIwMjQ3MGQ1KAC8pbaXC78ECmlzU2VsZWN0ZWQBeSgAvKW2lwu+BAJpZAF3JDJkZTFjNGZmLWRlOTAtNDI2NS04MjFmLWRmMWI5MDExZjNhM4e8pbaXC74EAwhsaXN0SXRlbQcAvKW2lwv8BAMJcGFyYWdyYXBoBwC8pbaXC/0EBgQAvKW2lwv+BDVQcmljaW5nIHNldHRsZWQgYXQgJDI1LTMwIHBlciBob3VyIGZvciBtb3N0IHByb3NwZWN0cygAvKW2lwv9BAJpZAF3JDJjMmJiMThmLWYzMTMtNGQyMS1hYjg5LTdkNWZmNzc5YjBmMSgAvKW2lwv9BAppc1NlbGVjdGVkAXkoALyltpcL/AQCaWQBdyQ0MTQxMjUxNS01NTE4LTQxYWItYjQ4NS04Yjk3NTgzMDMzN2GHvKW2lwv8BAMIbGlzdEl0ZW0HALyltpcLtwUDCXBhcmFncmFwaAcAvKW2lwu4BQYEALyltpcLuQVCUG90ZW50aWFsIGV4Y2x1c2l2ZSBkZWFsOiAzLjJrIGhvdXJzIGZyb20gcG9kY2FzdGVyIHdpdGggdHdvIHNob3dzKAC8pbaXC7gFAmlkAXckNGQwNDdhOTgtNmFhMS00YmRkLTg3OGItMTQ5MmIyZjc5YWEwKAC8pbaXC7gFCmlzU2VsZWN0ZWQBeYe8pbaXC7gFAwpidWxsZXRMaXN0BwC8pbaXC/4FAwhsaXN0SXRlbQcAvKW2lwv/BQMJcGFyYWdyYXBoBwC8pbaXC4AGBgQAvKW2lwuBBhcyMDAwIGhvdXJzICsgMTIwMCBob3VycygAvKW2lwuABgJpZAF3JGQ2NWRmYzIzLTllMjEtNDlmNC04MzNkLTFiNGMzZDc0YjdlZCgAvKW2lwuABgppc1NlbGVjdGVkAXkoALyltpcL/wUCaWQBdyRkN2MwM2M5My0xYTQ1LTQ1ZWItYTBjNy0yNTcwNTAyMWZkZTWHvKW2lwv/BQMIbGlzdEl0ZW0HALyltpcLnAYDCXBhcmFncmFwaAcAvKW2lwudBgYEALyltpcLngYdRXhjbHVzaXZlIEFJIHRyYWluaW5nIGxpY2Vuc2UoALyltpcLnQYCaWQBdyQ5MjU2MGY4OC1kMmM0LTRhODEtYmY2Mi05NGMxNDQ2ODE5YTYoALyltpcLnQYKaXNTZWxlY3RlZAF5KAC8pbaXC5wGAmlkAXckMmU0MzBjNGYtMTQyNi00OTMyLTkwMzAtMDdhOTcwYjEyMWViKAC8pbaXC/4FBXRpZ2h0AXgoALyltpcLtwUCaWQBdyQ3ZThiNjZiZC0xNjdkLTQ3ZWItOGI2Yi01MTEzZmQ2YTc0OWQoALyltpcLgwQFdGlnaHQBeIe8pbaXC4MEAwdoZWFkaW5nBwC8pbaXC8IGBgQAvKW2lwvDBhNNTEcgU2FtcGxlIEFuYWx5c2lzKAC8pbaXC8IGAmlkAXckY2Y0OWQyZGQtZjk1NS00MmVlLTgxYzUtZmI4NjlhZGJkNWVhKAC8pbaXC8IGBWxldmVsAX0Dh7yltpcLwgYDCmJ1bGxldExpc3QHALyltpcL2QYDCGxpc3RJdGVtBwC8pbaXC9oGAwlwYXJhZ3JhcGgHALyltpcL2wYGBAC8pbaXC9wGOEluaXRpYWwgc2FtcGxlcyBhbmFseXplZCBzaG93IGNvbnNpc3RlbnQgdGVjaG5pY2FsIHNwZWNzKAC8pbaXC9sGAmlkAXckMzA4OGU5ZGMtMGM2Zi00OTU4LWE1MzQtNDlkZGRkZDk1M2Q2KAC8pbaXC9sGCmlzU2VsZWN0ZWQBeYe8pbaXC9sGAwpidWxsZXRMaXN0BwC8pbaXC5cHAwhsaXN0SXRlbQcAvKW2lwuYBwMJcGFyYWdyYXBoBwC8pbaXC5kHBgQAvKW2lwuaBzJGcmVxdWVuY3kgcmFuZ2U6IDAtMjAga2lsb2hlcnR6IGFjcm9zcyBhbGwgc2FtcGxlcygAvKW2lwuZBwJpZAF3JDdiNzJiYjY4LWVlNDMtNDU2YS1hOWEzLTNjNTJkZWZiYmI5ZigAvKW2lwuZBwppc1NlbGVjdGVkAXkoALyltpcLmAcCaWQBdyQzZDhiMTM1MS0yMDUzLTQ4MmYtODA0Ny02MGU3NzU3NmFkMDOHvKW2lwuYBwMIbGlzdEl0ZW0HALyltpcL0AcDCXBhcmFncmFwaAcAvKW2lwvRBwYEALyltpcL0gclQml0cmF0ZSBjb25zaXN0ZW50IHRocm91Z2hvdXQgZGF0YXNldCgAvKW2lwvRBwJpZAF3JDcxYjJjYTBiLWNlYTAtNDNkOC1hZWUzLTBhOTM0YjJiYTQ3OCgAvKW2lwvRBwppc1NlbGVjdGVkAXkoALyltpcL0AcCaWQBdyQ5ZWQyNmZhOS1lOWI3LTRiMjQtOTFmMi0yZTc0MWQ4ZTlkMTYoALyltpcLlwcFdGlnaHQBeCgAvKW2lwvaBgJpZAF3JGU3NWJmMzBmLWIyZWUtNDFjOS04OTYwLWU3OGFmMDAwNzM3MIe8pbaXC9oGAwhsaXN0SXRlbQcAvKW2lwv9BwMJcGFyYWdyYXBoBwC8pbaXC/4HBgQAvKW2lwv/BzxFdmFsdWF0aW9uIGNvZGUgbGlrZWx5IGJyb2tlbiBiYXNlZCBvbiBtdWx0aS1zYW1wbGUgYW5hbHlzaXMoALyltpcL/gcCaWQBdyRhYTg1NDQ4ZC05Njc5LTQzYjctYjM5Mi04MjI5OGNjZjgyZjIoALyltpcL/gcKaXNTZWxlY3RlZAF5KAC8pbaXC/0HAmlkAXckODY0OGIzZWUtMjMwOS00NGQzLTk1MDEtMTg0ZGYxZDllNzlhh7yltpcL/QcDCGxpc3RJdGVtBwC8pbaXC78IAwlwYXJhZ3JhcGgHALyltpcLwAgGBAC8pbaXC8EIO1NwYW5pc2ggc2FtcGxlcyByZXF1aXJlIHJldmlldyAoMjQtYml0LCA0OGtIeiByZXF1aXJlbWVudHMpKAC8pbaXC8AIAmlkAXckOGVlYWRkZTEtNDg0MS00ZWUwLTllZGYtZDM2NDc2YTQ3ZTdhKAC8pbaXC8AICmlzU2VsZWN0ZWQBeYe8pbaXC8AIAwpidWxsZXRMaXN0BwC8pbaXC/8IAwhsaXN0SXRlbQcAvKW2lwuACQMJcGFyYWdyYXBoBwC8pbaXC4EJBgQAvKW2lwuCCTBIaWdoZXIgcXVhbGl0eSByZXF1aXJlbWVudHMgdGhhbiBFbmdsaXNoIHNhbXBsZXMoALyltpcLgQkCaWQBdyRjYThjMmNlOS1hZWFmLTRlZmQtOTIzZi1mOGY3ZWNmZGFmZDQoALyltpcLgQkKaXNTZWxlY3RlZAF5KAC8pbaXC4AJAmlkAXckMzU1MjVjMGYtNDEyYS00ZTI1LWJkM2YtNWJhNjU1M2VkN2E2h7yltpcLgAkDCGxpc3RJdGVtBwC8pbaXC7YJAwlwYXJhZ3JhcGgHALyltpcLtwkGBAC8pbaXC7gJQUZld2VyIHNhbXBsZXMgYXZhaWxhYmxlIGJ1dCBuZWVkIGFwcHJvdmFsIGZvciByZWNvcmRpbmcgdGhpcyB3ZWVrKAC8pbaXC7cJAmlkAXckOGIzN2VmYmMtYzU1OC00ZDQ2LTk4MWUtNDJlNjUxNDkwZDJhKAC8pbaXC7cJCmlzU2VsZWN0ZWQBeSgAvKW2lwu2CQJpZAF3JDgzNTViYzI1LTI1ZTItNDFiYS04YjkzLTRhODg3NWI3ZWUwOSgAvKW2lwv/CAV0aWdodAF4KAC8pbaXC78IAmlkAXckNzAwYWE0OWYtNDE3OS00NDYxLWIyZjEtZWFmMGRkYmMyZGIxKAC8pbaXC9kGBXRpZ2h0AXiHvKW2lwvZBgMHaGVhZGluZwcAvKW2lwuACgYEALyltpcLgQoKTmV4dCBTdGVwcygAvKW2lwuACgJpZAF3JGIwOTE3NzQ1LWM2ZTMtNDAxMS1iYmI1LTNmYTE2YjNhMWJhMSgAvKW2lwuACgVsZXZlbAF9A4e8pbaXC4AKAwpidWxsZXRMaXN0BwC8pbaXC44KAwhsaXN0SXRlbQcAvKW2lwuPCgMJcGFyYWdyYXBoBwC8pbaXC5AKBgQAvKW2lwuRCjxWZWRhbnQ6IFByb3ZpZGUgbG9nbyBhbmQgYmFzaWMgYXNzZXRzIGZvciBVR0MgdmlkZW8gY3JlYXRpb24oALyltpcLkAoCaWQBdyQzOTFmNmUxYi0xYjNkLTQ1YzItYjRkNy1mNGJhZjc1MmI2ODYoALyltpcLkAoKaXNTZWxlY3RlZAF5KAC8pbaXC48KAmlkAXckMzQ4Y2QyZTctMmUxOC00MjJjLWEwYjktY2VhNWY5NWQwZjI3h7yltpcLjwoDCGxpc3RJdGVtBwC8pbaXC9EKAwlwYXJhZ3JhcGgHALyltpcL0goGBAC8pbaXC9MKU0FkaXRoeWE6IENvbXBsZXRlIE1MRyBzYW1wbGUgYW5hbHlzaXMgZm9yIFNwYW5pc2ggY29udGVudCBhbmQgdXBkYXRlIHRyYWNraW5nIHNoZWV0KAC8pbaXC9IKAmlkAXckNGQyNjdkZDUtNzVmYy00MzI4LTkzYjEtMmMwZTFiYmNlY2Y0KAC8pbaXC9IKCmlzU2VsZWN0ZWQBeSgAvKW2lwvRCgJpZAF3JGNmMzY1MGZiLTdkZTEtNGY4OS1hOGE0LTQyMzhmMzlkNDJmN4e8pbaXC9EKAwhsaXN0SXRlbQcAvKW2lwuqCwMJcGFyYWdyYXBoBwC8pbaXC6sLBgQAvKW2lwusC1NKdWxpYW46IFNoYXJlIG5vdGVzIGZyb20geWVzdGVyZGF54oCZcyByZWNvcmRpbmcgc2Vzc2lvbnMgYW5kIGZpeCBldmFsdWF0aW9uIGNoZWNrcygAvKW2lwurCwJpZAF3JDRmNjU0MmExLTcyZDUtNDg1ZS04YjQwLTMyMWNmNGJmOTkyOSgAvKW2lwurCwppc1NlbGVjdGVkAXkoALyltpcLqgsCaWQBdyQ3MGU0YTkzYy1jYmI4LTRjMDItODExNy00MmE0MGE4YzZkNDgoALyltpcLjgoFdGlnaHQBeAA=",
+    "ydoc_version": 1
+  },
+  "is_shared_direct": false
+}

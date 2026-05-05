@@ -1,0 +1,128 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": false,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#community/Eclipse_App_Team_and_Audio",
+      "color": {
+        "a": 1,
+        "rgb": 14041409
+      }
+    },
+    {
+      "query": "tag:#community/Smart_Contracts_and_ETH",
+      "color": {
+        "a": 1,
+        "rgb": 4287958
+      }
+    },
+    {
+      "query": "tag:#community/Audio_Data_and_TTS_Vendors",
+      "color": {
+        "a": 1,
+        "rgb": 10016321
+      }
+    },
+    {
+      "query": "tag:#community/Boomie_Mobile_App",
+      "color": {
+        "a": 1,
+        "rgb": 14041540
+      }
+    },
+    {
+      "query": "tag:#community/AI_Coding_Tools",
+      "color": {
+        "a": 1,
+        "rgb": 4314813
+      }
+    },
+    {
+      "query": "tag:#community/Eclipse_Sales_and_Compliance",
+      "color": {
+        "a": 1,
+        "rgb": 14062145
+      }
+    },
+    {
+      "query": "tag:#community/Solana_solar-eclipse_Infra",
+      "color": {
+        "a": 1,
+        "rgb": 6701526
+      }
+    },
+    {
+      "query": "tag:#community/Transcription_Pipeline_Backend",
+      "color": {
+        "a": 1,
+        "rgb": 4773441
+      }
+    },
+    {
+      "query": "tag:#community/Industry_Events_and_Token2022",
+      "color": {
+        "a": 1,
+        "rgb": 14041459
+      }
+    },
+    {
+      "query": "tag:#community/Boomie_Backend_Ops",
+      "color": {
+        "a": 1,
+        "rgb": 4300758
+      }
+    },
+    {
+      "query": "tag:#community/UGC_Creator_Campaign",
+      "color": {
+        "a": 1,
+        "rgb": 13293121
+      }
+    },
+    {
+      "query": "tag:#community/ETH_Bridge_Security",
+      "color": {
+        "a": 1,
+        "rgb": 12009942
+      }
+    },
+    {
+      "query": "tag:#community/Bridge_V3_Audit_OZ",
+      "color": {
+        "a": 1,
+        "rgb": 4314764
+      }
+    },
+    {
+      "query": "tag:#community/Bigtable_Archive_Node",
+      "color": {
+        "a": 1,
+        "rgb": 14049345
+      }
+    },
+    {
+      "query": "tag:#community/Rust_HTTP_Libraries",
+      "color": {
+        "a": 1,
+        "rgb": 4280022
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": 0.4,
+  "nodeSizeMultiplier": 1.6,
+  "lineSizeMultiplier": 0.8,
+  "collapse-forces": false,
+  "centerStrength": 0.4,
+  "repelStrength": 14,
+  "linkStrength": 0.7,
+  "linkDistance": 220,
+  "scale": 1,
+  "close": true
+}

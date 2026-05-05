@@ -1,0 +1,16 @@
+---
+source_file: "raw/slack/eclipse/channels/app-team/2026/04/2026-04-23__app-team.md"
+type: "document"
+community: "Boomie Mobile App"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Boomie_Mobile_App
+---
+
+# PostHog
+
+## Connections
+- [[Daniel (Frog)]] - `discusses` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Boomie_Mobile_App

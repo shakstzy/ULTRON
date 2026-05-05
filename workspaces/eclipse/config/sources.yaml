@@ -44,6 +44,13 @@ sources:
     watch_path: raw/manual/_inbox/
     after_ingest: move_to_dated_subdir
 
+  granola:
+    # User-created Granola folders (UI lists) whose meetings flow into this
+    # workspace. Exact-match by title (case-sensitive). Eclipse's Granola
+    # folder is named "ECLIPSE" upstream.
+    folders:
+      - ECLIPSE
+
 global_settings:
   attachments_inline: true
   vision_model: sonnet

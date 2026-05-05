@@ -1,0 +1,315 @@
+{
+  "segments_total": 60,
+  "segments": [
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:32:15.433Z",
+      "text": "Good morning, guys.",
+      "source": "microphone",
+      "id": "82b8e61a-0a84-45a0-ad5e-fe6924e27b09",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:32:15.913Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:33:17.055Z",
+      "text": "To the stand up the river. Internet was pretty shitty.",
+      "source": "system",
+      "id": "85ada8c3-5966-4d91-a4a3-a29c62e0d7e6",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:33:18.975Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:33:20.255Z",
+      "text": "I think it's still shitty.",
+      "source": "system",
+      "id": "ce6cb7d1-38ab-424f-91c6-9d0e4b346908",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:33:21.135Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:33:23.695Z",
+      "text": "Wait. Now you're responding too fast. That's good, because before, he was responding, like, eight seconds after, so I guess it's improved.",
+      "source": "system",
+      "id": "662c0c3b-ee32-4595-9550-5737fddd6c7b",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:33:30.175Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:33:30.415Z",
+      "text": "Now by 80%.",
+      "source": "system",
+      "id": "83a4d55c-f4f4-4dc3-b32f-c54e6800a6ff",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:33:31.375Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:33:38.015Z",
+      "text": "Yeah. Let's get started. My wifi is pretty bad, so I might cut out certain points.",
+      "source": "system",
+      "id": "4ec02083-fd33-4d35-b1bb-4c4f5727c8d4",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:33:42.655Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:33:43.695Z",
+      "text": "But, Jamal, you want to start.",
+      "source": "system",
+      "id": "d983ac8b-f80f-453e-8f9b-f7aff880b991",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:33:44.655Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:33:46.735Z",
+      "text": "Yeah, I'm working on a live coded landing page for dehumanapi. Com.",
+      "source": "system",
+      "id": "ac3a0cb7-1cf8-4fcc-89b8-ed8b595b63a0",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:33:52.095Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:33:53.375Z",
+      "text": "So I'll do that today.",
+      "source": "system",
+      "id": "089760b3-f79f-482b-b322-f75a961b045c",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:33:54.095Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:34:09.135Z",
+      "text": "Finish up some end to end test that I simulate the app click upload flow.",
+      "source": "system",
+      "id": "a268f338-332e-4ae7-b915-191042206c2c",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:34:15.855Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:34:17.055Z",
+      "text": "In the end test. So I think if it's ready.",
+      "source": "system",
+      "id": "4bfff7d6-ce7e-4f37-8ade-6f87e07064c8",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:34:20.095Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:34:21.855Z",
+      "text": "But it still restful. I'll ask if we need to change to JSON ipc, if that's necessary.",
+      "source": "system",
+      "id": "0c24d75e-8a67-4c59-9fcc-cbec839cab64",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:34:30.415Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:34:45.855Z",
+      "text": "So I worked on the designs for the mobile lab. I was exploring a couple of options for how we were going to represent the scripts, because it's kind of, like, really hard to read and really hard to kind of show how scripts are in general. So it's like, how can we make it easier, especially on a mobile app experience for users.",
+      "source": "system",
+      "id": "9ea0d3cb-37ac-45a9-8500-a7cdef433581",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:35:02.655Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:35:04.175Z",
+      "text": "So that's already done and we have kind of finalized it. I just walked over that. Would Sydney for this stand up. So, yeah, it's looking good so far.",
+      "source": "system",
+      "id": "cf43d2a8-7df7-49f9-a801-2a871217066f",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:35:12.015Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:35:13.215Z",
+      "text": "So we are in the right direction and it's pretty clear on how the mobile app is going to look like now.",
+      "source": "system",
+      "id": "a7b8049e-c543-42d1-82db-ef5e4be9638d",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:35:17.775Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:35:18.815Z",
+      "text": "From now on, I'll send, like, a Quick Loom video.",
+      "source": "system",
+      "id": "0e54747e-4711-4063-9653-1f0626e4b034",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:35:20.575Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:35:21.375Z",
+      "text": "For you guys in the app team as well. So you guys can see how the explorations on the play and how the mobile app in general would look like in the future.",
+      "source": "system",
+      "id": "c0101f60-cad6-461c-ad64-4fd1b79a6766",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:35:27.855Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:35:35.993Z",
+      "text": "Yeah, I sent out more emails yesterday. Continuing to scrape listen notes. Pretty standard stuff.",
+      "source": "microphone",
+      "id": "0b907afd-edbe-4fa5-b921-7a7b58e6b621",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:35:40.953Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:35:42.473Z",
+      "text": "Got a lot more hits yesterday, though, which is pretty nice. I think we should be closing on hopefully at least 2k hours within the next day or two.",
+      "source": "microphone",
+      "id": "08886494-cfd9-4868-9bfc-65f7343e517d",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:35:49.113Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:35:51.273Z",
+      "text": "I've forwarded a couple of those screenshots of some of these conversations.",
+      "source": "microphone",
+      "id": "78384044-f5ad-41cb-9eeb-cca01efc099e",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:35:54.553Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:35:56.473Z",
+      "text": "We're settling around 25-30 per hour on most of these folks.",
+      "source": "microphone",
+      "id": "ab0db0bb-2e38-4015-b114-c086d35dc0cf",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:35:59.913Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:36:00.953Z",
+      "text": "So that's pretty good.",
+      "source": "microphone",
+      "id": "12feb350-ab84-4aea-a4b9-7871bf4f6d3c",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:36:01.513Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:36:03.433Z",
+      "text": "We'll hopefully get a single deal closed, actually, with 3.2 K, which should be pretty good. He has, like. The guy I'm Talking to has two podcasts. One is 2000 hours, one is 1.2. It'd be an exclusive license to us for AI training. That's excellent.",
+      "source": "microphone",
+      "id": "e565f2dc-865a-49c2-aa2a-693c19fb418d",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:36:18.713Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:36:21.033Z",
+      "text": "In other news, also on the side, exploring UGC platforms. Vedant they'll probably ping you on Slack probably later today just to get some assets from you for that, but that's not too much of a priority.",
+      "source": "microphone",
+      "id": "f85f8886-db05-4c47-832e-908934dff315",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:36:32.233Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:36:33.913Z",
+      "text": "Focusing on. Also, I sent the script out to a couple folks yesterday.",
+      "source": "microphone",
+      "id": "306b5468-e5f6-44a4-b67a-6a49543557b1",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:36:36.633Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:36:38.633Z",
+      "text": "On Fiverr, so we'll see what happens there.",
+      "source": "microphone",
+      "id": "6e2da3c9-eb97-4a97-b98f-d24bcca33dd8",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:36:40.393Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:36:42.393Z",
+      "text": "But, yeah, that's about it.",
+      "source": "microphone",
+      "id": "cc9a69fb-ceba-473f-a8d3-c527f0c30d2b",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:36:43.273Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:36:43.833Z",
+      "text": "On my end.",
+      "source": "microphone",
+      "id": "ebffc678-fdb6-47ed-887f-a11e3aa7d71a",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:36:44.233Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:36:46.415Z",
+      "text": "What assets exactly do we need?",
+      "source": "system",
+      "id": "7ddfba7e-f914-4344-9162-ad9bfb49afed",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:36:47.615Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:36:48.793Z",
+      "text": "Just basically like the logo. Like super basic stuff, dude. So I'm basically creating two versions of promo video. One is sort of a green screen version. If you see those TikToks where folks have apps behind them.",
+      "source": "microphone",
+      "id": "a041439e-8c12-452f-8dbf-c154a74cfd1b",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:37:02.553Z",
+      "transcriber_user_id": null
+    },
+    {
+      "document_id": "0068bf02-1643-48bb-be7a-3adb674f8e21",
+      "start_timestamp": "2025-12-23T16:39:26.793Z",
+      "text": "Nice. See you guys.",
+      "source": "microphone",
+      "id": "1724250f-3dc1-408c-b95c-c79373e3eef6",
+      "is_final": true,
+      "end_timestamp": "2025-12-23T16:39:27.273Z",
+      "transcriber_user_id": null
+    }
+  ]
+}

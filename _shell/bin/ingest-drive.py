@@ -618,11 +618,18 @@ def serialize_md(file_path: Path, frontmatter: dict, body: str) -> None:
 
 
 def serialize_csv_with_sidecar(file_path: Path, frontmatter: dict, body: str) -> None:
-    """Write sidecar FIRST (so a body-without-sidecar window never exists),
-    then body. Both via atomic temp+rename."""
+    """Write the BODY first, then the sidecar. If a crash interrupts between
+    the two writes, the result is: new body + stale (or missing) sidecar.
+    The next reconcile reads the stale sidecar's provider_modified_at,
+    finds it doesn't match Drive's modifiedTime, and triggers a full
+    re-render that fixes both. The reverse order (sidecar-first) would
+    advertise the new content via NEW provider_modified_at while the body
+    on disk is still old → next reconcile would short-circuit on the
+    matching modified_at and never repair the body. Body-first is the
+    self-healing order."""
     sidecar = file_path.with_suffix(".csv.frontmatter.yaml")
-    _atomic_write_text(sidecar, emit_frontmatter_yaml(frontmatter) + "\n")
     _atomic_write_text(file_path, body)
+    _atomic_write_text(sidecar, emit_frontmatter_yaml(frontmatter) + "\n")
 
 
 def hard_delete(path: Path, log_action) -> None:
@@ -898,12 +905,17 @@ def reconcile(args, designated, client, account, workspaces_filter: dict[str, di
                             out_path = cand
                             break
                         existing_fm = _read_raw_frontmatter(cand)
-                        if existing_fm and existing_fm.get("drive_raw_identity_id") in (raw_identity_id, None):
-                            out_path = cand
-                            break
+                        if existing_fm:
+                            existing_identity = (
+                                existing_fm.get("drive_raw_identity_id")
+                                or existing_fm.get("drive_file_id")
+                            )
+                            if existing_identity == raw_identity_id:
+                                out_path = cand
+                                break
                         # collision: same path, different identity → try longer
                         log({"action": "collision-extend", "path": str(cand.relative_to(ULTRON_ROOT)),
-                             "id_short_attempted": idn, "next_attempt_length": length})
+                             "id_short_attempted": idn, "attempted_length": length})
                     if out_path is None:
                         failed.append((slug_source, "filename-collision-unresolved"))
                         log({"action": "fail", "name": slug_source, "reason": "filename-collision-unresolved"})
@@ -923,12 +935,12 @@ def reconcile(args, designated, client, account, workspaces_filter: dict[str, di
                             sheet_meta_cache[file_meta["id"]] = (sm, sm is not None)
                         sheet_meta, sheet_visible = sheet_meta_cache[file_meta["id"]]
 
-                    # Permissions (cache per file_id)
+                    # Permissions (cache per file_id). list_permissions() handles
+                    # 403/404 internally as visibility=false; let other HTTP
+                    # errors propagate so the run fails and the cursor doesn't
+                    # advance past partial state.
                     if file_meta["id"] not in perms_cache:
-                        try:
-                            perms_cache[file_meta["id"]] = client.list_permissions(file_meta["id"])
-                        except urllib.error.HTTPError:
-                            perms_cache[file_meta["id"]] = ([], False)
+                        perms_cache[file_meta["id"]] = client.list_permissions(file_meta["id"])
                     shared, shared_visible = perms_cache[file_meta["id"]]
 
                     # Render body only when modifiedTime advanced (or first ingest)

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-02-07T23:39:24.364476-06:00'
   sha256: 8d50983521af50c177edd6a168091675e36b910384596f186affd37457f85694
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Interior car view at night showing the lit dashboard and a city street
+    through the windshield.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:09:21.908722+00:00'
   source_available: true
 - id: 2b5851ae1a29171e
   filename: 79395460250__5148211D-E87B-407D-B0D4-974BF6582291.HEIC

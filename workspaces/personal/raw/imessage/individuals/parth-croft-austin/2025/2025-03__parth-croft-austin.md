@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-03-27T16:50:50.411285-05:00'
   sha256: b626d608d92f2dca50ff4af0422ecfa1cbd5edc0b043c63395ae89fa145c8457
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A screenshot defining the "77" sexual position, a side-entry variation
+    of spooning.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:48:53.154252+00:00'
   source_available: true
 chat_message_guids_count: 99
 deleted_upstream: null

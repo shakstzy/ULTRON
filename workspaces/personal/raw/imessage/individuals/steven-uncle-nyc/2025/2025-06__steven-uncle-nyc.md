@@ -22,9 +22,10 @@ attachments:
   sender: steven-uncle-nyc
   sent_at: '2025-06-14T21:08:07.042615-05:00'
   sha256: f537e808f637f72165720401261e35b833feed099d2da997ce106a6d6d883885
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Four men smile in a low-angle group photo, holding paper cups and a
+    slice of pizza.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:49:00.926077+00:00'
   source_available: true
 chat_message_guids_count: 5
 deleted_upstream: null

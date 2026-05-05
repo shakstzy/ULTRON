@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-02-10T20:56:42.784000-06:00'
   sha256: 9959b9008c8eeed82f70c253eb5352876bd51281d8660cddee8587fb07ad6012
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three smiling men take an upside-down selfie in a dimly lit venue with
+    string lights.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:15:34.059969+00:00'
   source_available: true
 chat_message_guids_count: 3
 deleted_upstream: null

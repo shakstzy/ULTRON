@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-08-02T22:14:17.053000-05:00'
   sha256: a9cf6400dcf151d00d9ca679b7ea12318c0b60a16c6ee8bfed9fa4d9fa1701af
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple Maps screenshot showing shared locations and a pin for Pseuhas
+    UC Berkeley NYC.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:16:02.774104+00:00'
   source_available: true
 - id: 2a13fc4302c18542
   filename: 77634830680__F4E83F07-0B2E-4E5C-8CDB-FB87B941A045.HEIC
@@ -44,9 +45,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-08-12T20:41:25.376641-05:00'
   sha256: 632e0bc1667d60d401e14928ca457f08b2ba607b2ebe4e8a64c70c27a47bde6e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Profile of a smiling woman with long dark hair wearing a pink ruffled
+    top.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:18:14.058143+00:00'
   source_available: true
 - id: c2ffa9f3526099e4
   filename: IMG_0946.PNG

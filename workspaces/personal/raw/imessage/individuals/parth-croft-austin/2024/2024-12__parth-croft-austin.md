@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-12-04T02:27:28.617161-06:00'
   sha256: bd471033ca90f7bd94f8637a81132fbebd295d4d02dd1cb13574397072e02b49
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Chat message from Amos Music Crypto LA mentioning Forbes 30u30 founders
+    and a Stanford PhD CTO.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:46:09.770416+00:00'
   source_available: true
 chat_message_guids_count: 15
 deleted_upstream: null

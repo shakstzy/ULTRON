@@ -330,9 +330,10 @@ attachments:
   sender: me
   sent_at: '2026-02-04T20:23:46.902000-06:00'
   sha256: e1a06012925b31b355e37e81d8d682d9a003629bd98931ebdffaee465c3b410f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Handwritten apology and love note from Adi to Rish on a crumpled brown
+    napkin.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:12:12.747483+00:00'
   source_available: true
 - id: fd8f5aa246689f43
   filename: IMG_5221.png

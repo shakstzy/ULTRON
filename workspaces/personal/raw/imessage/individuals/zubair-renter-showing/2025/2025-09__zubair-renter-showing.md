@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-09-03T16:52:10.415810-05:00'
   sha256: d469438bf6f54da5ea8f0ac79d4e51ee4af5a3b4cfc535a7e5794b8c448dd6e4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage thread with Riz regarding a rental property inquiry and follow-up
+    call attempts.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:11:54.098929+00:00'
   source_available: true
 - id: c5c5aab7157ef74e
   filename: IMG_2183.png
@@ -33,9 +34,9 @@ attachments:
   sender: zubair-renter-showing
   sent_at: '2025-09-03T21:18:53.494999-05:00'
   sha256: cd53a34903c7ec1f4c4c2132dc5effb66ee1be77a62e7814ad14d8361939ded7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Zillow identity verification error screen saying "Something went wrong!".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:09:27.419907+00:00'
   source_available: true
 - id: b9d6b1e34b4336c6
   filename: IMG_2182.png
@@ -44,9 +45,10 @@ attachments:
   sender: zubair-renter-showing
   sent_at: '2025-09-03T21:18:53.494999-05:00'
   sha256: e7603314df833113261efd23ef07cf5b803adffa4db173f74a50658fcf7e305e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Zillow rental application identity verification screen with phone (213)
+    800-5007 and SSN fields.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:11:56.822532+00:00'
   source_available: true
 - id: f8cd06565df4d2c0
   filename: IMG_2782.png

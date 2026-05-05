@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-12-25T17:54:36.504000-06:00'
   sha256: 6ec1322f1df2623dbb9259391a06aafa3fda3ce44c6dffcdf17f5266e0b82794
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A green plastic food container sits on a brown patterned doormat in
+    front of a gray door.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:46:10.227035+00:00'
   source_available: true
 - id: 38436ec42607f55b
   filename: IMG_3858.jpeg

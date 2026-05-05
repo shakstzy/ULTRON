@@ -22,9 +22,11 @@ attachments:
   sender: gabriel-renter
   sent_at: '2024-11-29T17:13:28.679858-06:00'
   sha256: 2c71a948d6b322234b0ca35d922bdc00d4a1fa0a17f0a0138e20486d4a8c81bd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a Wells Fargo bank statement for Gabriel Baro for the period
+    ending October 31, 2024. It summarizes transactions and balances for an Everyday
+    Checking and a Way2Save Savings account.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:09:01.300196+00:00'
   source_available: true
 - id: 16385027afa9662d
   filename: Bs9.pdf
@@ -33,9 +35,11 @@ attachments:
   sender: gabriel-renter
   sent_at: '2024-11-29T17:13:37.471374-06:00'
   sha256: d533856e15af761978332ec45b0ce4e0601f6a5faa93741f3428619c2772423f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a Wells Fargo combined statement for Gabriel Baro dated September
+    30, 2024. It details monthly transactions and balances for checking and savings
+    accounts.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:02:10.462883+00:00'
   source_available: true
 chat_message_guids_count: 13
 deleted_upstream: null

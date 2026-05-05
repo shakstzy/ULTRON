@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-02-06T13:29:03.482000-06:00'
   sha256: 28401c61bb51d106bcb21d73a071453233122eb4cb9b9d5d6d655d362f567b67
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Maps NYC transit route from Bowling Green to Sterling St via
+    the 4 and 2 subway lines.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:55:24.275032+00:00'
   source_available: true
 - id: 4f13921a49d2406d
   filename: 76056559598__F687050E-F20F-4F28-97B7-64A4EFB7E522.HEIC
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-02-06T14:13:25.085000-06:00'
   sha256: 996069b514455f2190fb97c7468426b0a8a758be643a3e7f3dab806b475024a9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Office signs for restrooms, Peloton bikes, reception, and the Willow
+    conference room.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:46:13.033873+00:00'
   source_available: true
 - id: 5d3f0fadbef437dd
   filename: IMG_7542.HEIC
@@ -44,9 +46,10 @@ attachments:
   sender: brandon-encrypto
   sent_at: '2025-02-06T14:14:05.635694-06:00'
   sha256: d8cf33e847d5ce659336b79945740391215857455f069af19e5eeed782b73239
-  description: null
-  description_model: null
-  extracted_at: null
+  description: People at laptops in a coworking space with a "Traction" presentation
+    on a foreground tablet.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:46:09.378237+00:00'
   source_available: true
 - id: 4efc338e820e01aa
   filename: IMG_2126.png
@@ -67,9 +70,10 @@ attachments:
   sender: brandon-encrypto
   sent_at: '2025-02-23T04:59:55.253711-06:00'
   sha256: 9a969eed33eaa5a9cca136a1083ffbc7caecff1533e80508f79a0457cbd5f3da
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Gray grab bar mounted on a white ceiling above a door with three brass
+    locks.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:46:10.428429+00:00'
   source_available: true
 chat_message_guids_count: 124
 deleted_upstream: null

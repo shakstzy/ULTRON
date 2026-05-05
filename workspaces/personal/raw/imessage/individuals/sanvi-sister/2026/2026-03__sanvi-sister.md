@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2026-03-27T20:16:51.181000-05:00'
   sha256: f8d50b492d9ad6ff70b9d39c58a97c950aa59a6819d571104da6aa05cdabc339
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Night traffic showing glowing red taillights and a Texas license plate
+    PFR-5601.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:50:03.811031+00:00'
   source_available: true
 chat_message_guids_count: 108
 deleted_upstream: null

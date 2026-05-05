@@ -99,9 +99,10 @@ attachments:
   sender: mom
   sent_at: '2026-05-02T17:39:25-05:00'
   sha256: eb63bb49ec492fb712a0e7494d69d5a578fc8edd23a12dec7d5e3fb2483c7fdb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three people by a plant wall; a young man flexes while holding a white
+    Huel bottle.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:59:21.830836+00:00'
   source_available: true
 - id: 5ce93f7e2690a6a6
   filename: PXL_20260502_221748496.jpg

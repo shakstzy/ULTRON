@@ -33,9 +33,10 @@ attachments:
   sender: jae-shervin-blockchain-la
   sent_at: '2024-03-29T17:18:36.697840-05:00'
   sha256: 2cb058ea77b051cc5aa877889b930fbe2c16b15224a03f3992f1ad87b286d092
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Luma event invite screenshot for Bitcoin Ordinals LA on March 29 in
+    Santa Monica.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:01:58.168909+00:00'
   source_available: true
 chat_message_guids_count: 29
 deleted_upstream: null

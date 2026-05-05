@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-02-04T20:29:52.191000-06:00'
   sha256: 63e927630a70c174f62211d25703b8bc56ba7c0ef16405d8d0150b35a67e2bf7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hinge profile of Aarushi, 23, in a blue bikini with lock-picking and
+    banana bread skills.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:15:35.032106+00:00'
   source_available: true
 - id: 1ace61c547883432
   filename: IMG_7782.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2026-02-04T21:59:11.673000-06:00'
   sha256: 1d2876dbbc40533effb26541f044f082f52b15431fe73de2bfa411a34fa68a2c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Couple kissing in a bathroom mirror selfie; man in stripes, woman in
+    a cream ribbed set.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:15:32.048782+00:00'
   source_available: true
 chat_message_guids_count: 21
 deleted_upstream: null

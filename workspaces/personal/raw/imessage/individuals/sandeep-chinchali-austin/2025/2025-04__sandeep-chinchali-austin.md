@@ -22,9 +22,11 @@ attachments:
   sender: me
   sent_at: '2025-04-24T23:36:20.367859-05:00'
   sha256: 28b7c22ec62ddbb9dc63042a8cb7b7a8a614301d740df6cd3504b597a96abfca
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This non-binding MOU outlines a partnership between Layer Labs and
+    DropMoney. DropMoney will build Autonomous Verifiable Services using Layer Labs'
+    WAVS tooling and restaking protocol.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:50:03.026828+00:00'
   source_available: true
 chat_message_guids_count: 47
 deleted_upstream: null

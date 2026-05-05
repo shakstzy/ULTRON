@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-08-16T23:43:47.537684-05:00'
   sha256: c735c780c411e49fc2cca44fdc5cce775d40b686705887bc61caca1186a19a14
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Synapse Web3 app automates a BTC buy task via chat and verifies the
+    transaction on Basescan.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:02:15.793788+00:00'
   source_available: true
 - id: 8f538dc35813be74
   filename: -7057252224621936888.MOV
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-08-16T23:43:47.537684-05:00'
   sha256: f3d06bf41a855919fa6c8d5c1e635e90d1b48fbd682a37e59d9817df510f90f0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Demo of Synapse Web3 app creating an automated BTC purchase task via
+    its chat interface.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:55:47.961987+00:00'
   source_available: true
 chat_message_guids_count: 11
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-10-05T00:25:45.508469-05:00'
   sha256: 9d74f0344bcbace896383a905eb1a09b2a6cb6f4257f3eaabf6e755d4956c3a6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 1997 engineering yearbook page with photos and handwritten notes for
+    Deepalakshmi and Durgesh.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:09:08.750746+00:00'
   source_available: true
 chat_message_guids_count: 1
 deleted_upstream: null

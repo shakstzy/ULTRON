@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-04-02T00:02:28.463547-05:00'
   sha256: 6544cc7a31c65ecdf4c79ad98bd646455309b4fe5912ecb10b63b58e5b5b912f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screen photo showing a contact entry for Ramesh Anna with the timestamp
+    13:21.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:52:10.468798+00:00'
   source_available: true
 - id: aad6d32f8c94c0d4
   filename: 79689262668__85A39D9D-2D8C-4AC7-A07E-CC88BC3B4F02.HEIC
@@ -44,9 +45,10 @@ attachments:
   sender: sanvi-sister
   sent_at: '2026-04-07T21:43:58.684136-05:00'
   sha256: 667970af1c6234a506f6c586875b1406ff01d2fa09e9af9cddee4b03ff49f026
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two women take a selfie indoors; one pouts with a sunflower in her
+    hair.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:48:58.633961+00:00'
   source_available: true
 - id: c7fafbcaedb2ce9f
   filename: 79766212319__99FB3F51-ECF9-4DE8-9705-AA63B6E4B086.HEIC
@@ -55,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2026-04-11T23:48:51.231646-05:00'
   sha256: 1b0d3ba601f724cef9e569f0af3fad244bf8d3480801cb5388c5a678cf97c9be
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Car dashboard at night facing a city street with "The Otis" sign and
+    red traffic lights.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:49:07.391996+00:00'
   source_available: true
 - id: 4e450be5bc87e10e
   filename: 63065.jpg
@@ -66,9 +69,10 @@ attachments:
   sender: sanvi-sister
   sent_at: '2026-04-16T19:19:56.880811-05:00'
   sha256: dc74d28612ca1e2f1b93c38536bc3cc95df043e8e7eab53149a176f463980a51
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Cracked iPhone showing a Snapchat conversation with Keira Gentile about
+    "Audi".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:49:05.159160+00:00'
   source_available: true
 - id: fb31506e371af756
   filename: 63066.jpg
@@ -88,9 +92,10 @@ attachments:
   sender: me
   sent_at: '2026-04-18T23:07:00.993192-05:00'
   sha256: bb822c800298325a2511014f3e3744baf80c791c25f668adef25a08e754c74fb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Rainy night view from a car's driver seat toward red traffic through
+    a smeared windshield.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:49:12.480003+00:00'
   source_available: true
 - id: db48a354279158d7
   filename: IMG_5385.png
@@ -99,9 +104,10 @@ attachments:
   sender: sanvi-sister
   sent_at: '2026-04-19T05:24:46.146177-05:00'
   sha256: 237c42dcf45545cb6fd8a37182e099929be6137b5b51fc1524c7703126a246da
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram post by shakstzy with a dark selfie video and a caption about
+    rewinding time.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:59:27.533935+00:00'
   source_available: true
 - id: 64ac8cca1d7dcccd
   filename: "Screenshot 2026-04-25 at 12.16.50\u202FPM.png"
@@ -143,9 +149,10 @@ attachments:
   sender: sanvi-sister
   sent_at: '2026-04-29T01:31:54.198895-05:00'
   sha256: 857c819cf1ecc5101e47ba05b9486e058467fc8293aa7510fceef9d88b946478
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Selfie of a woman sticking her tongue out and a man in a dark, purple-lit
+    club.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:52:11.474842+00:00'
   source_available: true
 - id: 6f667f93cc1ee686
   filename: IMG_5382.heic
@@ -154,9 +161,10 @@ attachments:
   sender: sanvi-sister
   sent_at: '2026-04-29T01:31:54.198895-05:00'
   sha256: e62f6717217a59149c3d4e1c2e9879c28e8a6ad085083fee3eb58a3681e5c625
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Low-angle sideways selfie of a curly-haired person in a white t-shirt
+    inside a dark car.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:52:12.290884+00:00'
   source_available: true
 - id: 9617a97d4ca99c53
   filename: IMG_5378.HEIC
@@ -165,9 +173,10 @@ attachments:
   sender: sanvi-sister
   sent_at: '2026-04-29T01:31:54.198895-05:00'
   sha256: 7fa9497dd026d2412019c7c9eb715caf9d0aca5ba3ba3cc76881dd1484cd3d1b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A group selfie of four people smiling under vibrant purple nightclub
+    lighting.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:52:19.475997+00:00'
   source_available: true
 - id: 75653277f3593eb7
   filename: IMG_5377.HEIC
@@ -176,9 +185,10 @@ attachments:
   sender: sanvi-sister
   sent_at: '2026-04-29T01:31:54.198895-05:00'
   sha256: a81dbdb7b6e1edd7875915da1d16686bcca658e6b100c2be44ba471b2c0bbca8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man kisses a smiling woman's cheek in a crowded venue with purple
+    lighting.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:59:26.322175+00:00'
   source_available: true
 - id: 857cc3f59f90f300
   filename: IMG_4662.HEIC
@@ -198,9 +208,10 @@ attachments:
   sender: sanvi-sister
   sent_at: '2026-04-29T01:31:54.198895-05:00'
   sha256: 526850ce1e2dda2b4a7e4ef60527b8981f5bec6155d738d68bfa7f33650971dc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man and woman in a red polka-dot top pose for a selfie in a purple-lit
+    club.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:03:02.126663+00:00'
   source_available: true
 - id: 3052c41fcdb0ee76
   filename: IMG_8308.jpeg
@@ -209,9 +220,9 @@ attachments:
   sender: me
   sent_at: '2026-04-29T01:37:59.916262-05:00'
   sha256: ab8fba5a66c296c9a09ff14535459f9ea7c894f43868314ebff823ed22561cb5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A couple kisses at night by the water with a city skyline in the background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:02:00.456189+00:00'
   source_available: true
 - id: b72ea7c5914ffded
   filename: IMG_8311.png
@@ -220,9 +231,10 @@ attachments:
   sender: me
   sent_at: '2026-04-29T01:38:39.504323-05:00'
   sha256: 2783324c7bb10ffdf9693b21ecbce484314f7e00c87fdd295b6b976f793eaff4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone contact edit screen for Sanvi Sister with phone number +1 (682)
+    802-9163.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:53:03.970980+00:00'
   source_available: true
 - id: 92d203299aa00d6f
   filename: IMG_8309.jpeg
@@ -253,9 +265,10 @@ attachments:
   sender: sanvi-sister
   sent_at: '2026-04-29T01:42:37.479248-05:00'
   sha256: e1f9f12d136973ab4cb4e1e9b60386b3fc42fd0c312d748ed647c912820bef0d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two people kissing in a dark, red-lit venue, captured in a blurry,
+    low-light photograph.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:55:16.824442+00:00'
   source_available: true
 - id: e01d4bcf27d639da
   filename: IMG_8308.jpeg
@@ -264,9 +277,9 @@ attachments:
   sender: me
   sent_at: '2026-04-29T05:34:12.247900-05:00'
   sha256: ab8fba5a66c296c9a09ff14535459f9ea7c894f43868314ebff823ed22561cb5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A couple kisses at night by the water with a city skyline in the background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:02:00.456189+00:00'
   source_available: true
 - id: a8d0c8f0a5009cf0
   filename: IMG_8309.jpeg
@@ -286,9 +299,9 @@ attachments:
   sender: me
   sent_at: '2026-04-29T05:34:12.247900-05:00'
   sha256: 3e616d23ba22e9051c761aa7eaec02a92977754cf7650398f8b021cec7a1f4b5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down night selfie of a smiling man and woman.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:52:18.491517+00:00'
   source_available: true
 - id: 0aa6ad417d513808
   filename: IMG_8301.jpeg
@@ -308,9 +321,9 @@ attachments:
   sender: me
   sent_at: '2026-04-29T05:34:12.247900-05:00'
   sha256: 3702e9aa40918eb88f4a6d1453c6b2084953ad84c235e0385593fc5961af68b8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A low-light close-up of a man kissing a woman's cheek.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:52:18.446791+00:00'
   source_available: true
 - id: 9b8a65caa08f0d26
   filename: IMG_8303.jpeg
@@ -319,9 +332,10 @@ attachments:
   sender: me
   sent_at: '2026-04-29T05:34:12.247900-05:00'
   sha256: 09020c26e70b1154e337e2e0f5fbf0a9d71c13b9ec0e2cfac11884ec27c82dc5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down night selfie of a couple on a bridge; one sticks their
+    tongue out.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:55:24.416337+00:00'
   source_available: true
 - id: db1075bf8bd0ac13
   filename: IMG_8291.jpeg
@@ -330,9 +344,10 @@ attachments:
   sender: me
   sent_at: '2026-04-29T05:34:12.247900-05:00'
   sha256: faa6543fbc3f9aa2bcedb381d684dd9ec5157bc24c952e11e8a6841feaeaf24a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Low-light, upside-down selfie of a man and woman looking down at the
+    camera.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:55:22.028835+00:00'
   source_available: true
 - id: 573dcb02bdf5e024
   filename: IMG_8304.jpeg
@@ -341,9 +356,10 @@ attachments:
   sender: me
   sent_at: '2026-04-29T05:34:12.247900-05:00'
   sha256: 182d18e6bf4bf177959493e1aa5fa8f44e9e586b7a2c01dcf87f2f4cf702b705
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Blurry, upside-down nighttime selfie of a man and woman with glowing
+    city lights.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:52:27.918085+00:00'
   source_available: true
 - id: b02eeb4a434fd166
   filename: IMG_8294.jpeg
@@ -352,9 +368,10 @@ attachments:
   sender: me
   sent_at: '2026-04-29T05:34:12.247900-05:00'
   sha256: 006d84119c754ad0a445c71b103e4db5bb421afbabd068ed6b1485c50400a6b7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down night selfie of a couple by a railing with a city skyline
+    across water.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:02:02.878723+00:00'
   source_available: true
 - id: dafa4cd3eec1ac27
   filename: IMG_8299.jpeg
@@ -429,9 +446,10 @@ attachments:
   sender: me
   sent_at: '2026-04-29T05:34:12.247900-05:00'
   sha256: 98d96d598868ae9fb3f710c051b360e0aa0717c5dee3572ef0228d8e403ca9c4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A couple kissing at night by a railing with a city skyline across the
+    water.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:05:15.095617+00:00'
   source_available: true
 - id: 07c1283b19198b5e
   filename: IMG_8300.jpeg
@@ -440,9 +458,10 @@ attachments:
   sender: me
   sent_at: '2026-04-29T05:34:12.247900-05:00'
   sha256: 5306939d81ce547623552a2de6deec6242bb34550420e4e4c2e805f781cc67ae
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down night photo of a couple by a railing with city lights reflected
+    in the water.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:59:26.093199+00:00'
   source_available: true
 - id: 359c2bf774b090bc
   filename: IMG_8298.jpeg
@@ -462,9 +481,10 @@ attachments:
   sender: me
   sent_at: '2026-04-29T05:34:12.247900-05:00'
   sha256: c409ff2d695a33f19d395e64236829d41c2d3d04e9275ee1597128ffb32a1608
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down night selfie of a man and woman by water with a lit city
+    skyline.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:05:58.399404+00:00'
   source_available: true
 - id: d3306f4bc71e86bc
   filename: IMG_8305.jpeg
@@ -506,9 +526,9 @@ attachments:
   sender: me
   sent_at: '2026-04-30T02:35:51.725000-05:00'
   sha256: edea12744d23a0a00586e1cd5ab685e901342407571f20406fbdaaf0408866a7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a message from "Sanvi Sister" saying "Lmk when ur gonna".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:01:55.861108+00:00'
   source_available: true
 chat_message_guids_count: 306
 deleted_upstream: null

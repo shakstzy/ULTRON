@@ -33,9 +33,11 @@ attachments:
   sender: me
   sent_at: '2024-12-05T10:44:51.374616-06:00'
   sha256: ddcc8c0d4c4bf383facd81c931fa70567c7ba5dfdae72be19401174068dc9647
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a lease addendum for a Sylmar, CA property dated August 14,
+    2024. It details house rules for the tenant, such as cleaning, guest limits, and
+    drug prohibitions.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:01:58.306379+00:00'
   source_available: true
 - id: c2b826f00a05f05a
   filename: Move_In_Inspection_-_1222_ts74360.pdf
@@ -55,9 +57,11 @@ attachments:
   sender: me
   sent_at: '2024-12-05T10:44:51.374616-06:00'
   sha256: 6ff79ca0e8443a117e1cc3c84ab331c7fb4dcef2a93f40db1d656396f6e7f643
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a house rules document for renters at 13245 Klein Ct. It details
+    shared living etiquette, prohibited activities, utility costs, and laundry room
+    protocols.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:05:14.454900+00:00'
   source_available: true
 - id: 7737edf423022bd0
   filename: Addendum_No_2_-_1221_ts80608.pdf
@@ -66,9 +70,11 @@ attachments:
   sender: me
   sent_at: '2024-12-05T10:44:51.374616-06:00'
   sha256: 05efbe9562f75c097e07ec5be35c6e18f84a60678bb28a719790645e62067e86
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is Addendum No. 2 for a rental agreement at 13245 Klein Ct. It
+    outlines house rules for Gabriel Baro and Kumar Nagarajan regarding utilities,
+    noise, and laundry usage.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:05:11.540395+00:00'
   source_available: true
 chat_message_guids_count: 26
 deleted_upstream: null

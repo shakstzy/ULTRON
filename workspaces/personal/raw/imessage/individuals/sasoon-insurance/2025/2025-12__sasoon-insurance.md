@@ -22,9 +22,10 @@ attachments:
   sender: sasoon-insurance
   sent_at: '2025-12-02T15:31:30.294330-06:00'
   sha256: 8b7c30f00fab0fa85238bbfd3ca21b5904e7f3de6ec4dd3b544793fc1ca66c1d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Blue Toyota front fender and black wheel inside an auto body repair
+    shop.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:09:13.355535+00:00'
   source_available: true
 - id: 301d733696dc80a7
   filename: IMG_8712.HEIC
@@ -44,9 +45,9 @@ attachments:
   sender: sasoon-insurance
   sent_at: '2025-12-02T15:31:30.294330-06:00'
   sha256: dd2659024f8d41c6ae18017c991f552a8283004c52ff8483f8426917e17b63f1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Front view of a blue Toyota Camry with California license plate 8NHL294.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:05:24.556306+00:00'
   source_available: true
 - id: 4f37c19427fe6f65
   filename: IMG_8713.HEIC
@@ -55,9 +56,9 @@ attachments:
   sender: sasoon-insurance
   sent_at: '2025-12-02T15:31:30.294330-06:00'
   sha256: a07454ed693df8dc8f017a82ca770c70b3344ad9fdfba3e290e3554438bdbcbe
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A finger points to a thin white scratch on a metallic blue car hood.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:09:14.419967+00:00'
   source_available: true
 - id: 57ef1136a8e2348a
   filename: IMG_8711.HEIC
@@ -66,9 +67,9 @@ attachments:
   sender: sasoon-insurance
   sent_at: '2025-12-02T15:31:30.294330-06:00'
   sha256: c27341b6a0ca0875aacbf1aefb8f0cab1833c71e3a7f03f741ac206ea8c42c62
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Blue Toyota Camry with black wheels parked in an auto repair shop.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:05:31.643307+00:00'
   source_available: true
 chat_message_guids_count: 22
 deleted_upstream: null

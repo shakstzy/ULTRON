@@ -77,9 +77,10 @@ attachments:
   sender: sasoon-insurance
   sent_at: '2025-10-27T19:11:43.033370-05:00'
   sha256: 35f9171bfcf36f4c2c114fdec4fde3a7612da33bc10e0e2e36fc838afe0f9a0b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Preliminary repair estimate for Adithya Shakthi Kumar's 2019 Toyota
+    Camry totaling $2,813.51.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:05:18.733681+00:00'
   source_available: true
 chat_message_guids_count: 66
 deleted_upstream: null

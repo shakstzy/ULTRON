@@ -22,9 +22,10 @@ attachments:
   sender: vishnu-rajan-austin
   sent_at: '2025-07-05T00:35:30.797315-05:00'
   sha256: e8c3637890f23cbdcccecd6e2630eb811ece4b7836189691cc2bd00a50b17931
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Purple Memoji with a blue mohawk and eyebrow piercings, laughing with
+    blue tears.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:05:54.046135+00:00'
   source_available: true
 chat_message_guids_count: 17
 deleted_upstream: null

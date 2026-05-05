@@ -33,9 +33,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-06-14T23:24:30.914903-05:00'
   sha256: a7fc3410bfba95aa4d46469ff3dcc955347d64eeefba73866bb51725068e0f38
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Arthaus Oakland building facade with colorful light projections at
+    night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:15:39.080718+00:00'
   source_available: true
 - id: 140f79c31ff951d8
   filename: IMG_9296.png
@@ -55,9 +56,10 @@ attachments:
   sender: me
   sent_at: '2025-06-19T15:19:49.967000-05:00'
   sha256: 7ab4261b425b41ca3f2b0748f3dcb4e8f4f5ba7e6df8f94e8f76ee92f9e7d567
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram story screenshot of two men arm wrestling at a table with
+    a 'Reaction sent' overlay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:15:31.366910+00:00'
   source_available: true
 - id: 30f08d41a00dd9d1
   filename: 77221937534__958F7BB7-DD70-4DB4-B7C2-FCEBE610004E.heic
@@ -77,9 +79,10 @@ attachments:
   sender: me
   sent_at: '2025-06-21T14:53:20.374000-05:00'
   sha256: 8d4251a395bd234adc34e87212c1d6efffbd935fbee006099ea805b7b75cffb8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google search result showing three photos of football linebacker Mychal
+    Kendricks.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:15:29.995214+00:00'
   source_available: true
 - id: 9d28104cb2e10fee
   filename: IMG_9809.PNG
@@ -88,9 +91,9 @@ attachments:
   sender: me
   sent_at: '2025-06-21T16:56:30.095480-05:00'
   sha256: de2658de5ba38396c114c8261d4da187dae3702dd8fa07b73f3d26298b37c58d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a chat with PHATCAWK asking to order "a g of K".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:18:10.086042+00:00'
   source_available: true
 - id: 4aa87e05b30bb01b
   filename: ScreenRecording_06-23-2025 00-29-52_1.MP4
@@ -110,9 +113,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-06-26T16:01:25.090517-05:00'
   sha256: 2d89b2a7d05543491d62794a5af60602bec7915117bcbcbbc4682cbaea71ac2d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Ticket screenshot for a Cornell x NYC Blockchain Social at The Hugh,
+    New York.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:15:46.545379+00:00'
   source_available: true
 - id: b0e2706616dcddcd
   filename: IMG_0849.png

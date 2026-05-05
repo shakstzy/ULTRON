@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-10-17T23:45:21.199951-05:00'
   sha256: 252c404e71622a191f4a16dbe8e1d8da4749deb11c66eb3bea5bd6458c01a96c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men smile for a selfie; one holds a green can with Bearbrick toys
+    in the background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:55:32.984286+00:00'
   source_available: true
 chat_message_guids_count: 2
 deleted_upstream: null

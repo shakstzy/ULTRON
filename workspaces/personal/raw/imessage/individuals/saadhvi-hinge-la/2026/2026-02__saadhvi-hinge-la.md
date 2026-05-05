@@ -22,9 +22,10 @@ attachments:
   sender: saadhvi-hinge-la
   sent_at: '2026-02-16T15:51:01.342699-06:00'
   sha256: 671253d2c89b4f0c8f620e238b8031872899fb9097778c812220ef5f6f39a361
-  description: null
-  description_model: null
-  extracted_at: null
+  description: GamePigeon Cup Pong game screen with red cups in a triangle on a green
+    table.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:11:48.714702+00:00'
   source_available: true
 - id: 42c25d5ae69af2d0
   filename: 24E544D1-B6FF-4400-8B2B-9978FA0499D9.pluginPayloadAttachment
@@ -44,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2026-02-16T18:46:29.608000-06:00'
   sha256: 92eddcf770b085bf150104a21952c15b53616d66f5b6c85409f26cff244c7e1e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Rainy car window view of a line of vehicles in traffic under a heavy
+    overcast sky.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:11:50.848404+00:00'
   source_available: true
 - id: d9eca9c609467310
   filename: AEF1B52D-BFF7-4946-8F8B-233F4E528EDC.pluginPayloadAttachment

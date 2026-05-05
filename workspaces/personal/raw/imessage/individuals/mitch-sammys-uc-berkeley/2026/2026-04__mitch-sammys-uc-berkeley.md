@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-04-13T22:02:57.999000-05:00'
   sha256: 2dc4372d73c9742584efb6b56dda6dd44d982efbbd591d048aec060429d9068b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram screenshot of Denver Diamond Dogs group chat discussing Acquire.Fi
+    and Consensus.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:16:14.407386+00:00'
   source_available: true
 chat_message_guids_count: 22
 deleted_upstream: null

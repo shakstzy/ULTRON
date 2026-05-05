@@ -22,9 +22,10 @@ attachments:
   sender: zubair-renter-showing
   sent_at: '2025-12-02T22:14:09.516897-06:00'
   sha256: 8472811b8f6d2194a873cbdb6fca6f4ed7e29ac4078ec27f5d8563fd0c755411
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Zelle receipt: $1,050.00 sent to ADITHYA KUMAR for "December Rent"
+    on Dec 3, 2025.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:09:22.896198+00:00'
   source_available: true
 chat_message_guids_count: 37
 deleted_upstream: null

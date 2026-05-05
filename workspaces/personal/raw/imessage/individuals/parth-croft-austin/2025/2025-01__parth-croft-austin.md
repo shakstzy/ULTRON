@@ -67,9 +67,10 @@ attachments:
   sender: parth-croft-austin
   sent_at: '2025-01-03T14:04:50.216335-06:00'
   sha256: b41e02bd343fbde0123208b97090eac4cc38273889293cead11ecb0ae4ece5f1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a VCard contact file for an individual named Chinmay. It primarily
+    stores a single mobile phone number.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:48:53.798598+00:00'
   source_available: true
 - id: ecef00be155bb79f
   filename: IMG_5565.png
@@ -78,9 +79,10 @@ attachments:
   sender: parth-croft-austin
   sent_at: '2025-01-28T02:54:37.571094-06:00'
   sha256: c43f0f296b4d314d71b636ddab0b49ca2ad77d568258f0a6b761866e1308d24d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Bloomberg bar chart of the top 10 single-day market cap losses, dominated
+    by Nvidia.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:55:27.419069+00:00'
   source_available: true
 chat_message_guids_count: 32
 deleted_upstream: null

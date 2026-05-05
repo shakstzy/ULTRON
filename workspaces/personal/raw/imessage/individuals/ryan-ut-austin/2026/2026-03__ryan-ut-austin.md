@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2026-03-14T15:43:08.988000-05:00'
   sha256: b7b97d5d59b1761190466181512434957893cb8572f0523e3daa6db5660e7d70
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Screenshot of an OpenClaw Austin: Builders & Beers meetup at Mort
+    Subite on March 14.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:09:17.886401+00:00'
   source_available: true
 - id: 7f9bfaa1f2dbf3e2
   filename: 5C0E4551-1361-4965-845B-4EDE7A13A54D.BD16D26E-6115-49F0-B400-5A11AA81752F.pluginPayloadAttachment

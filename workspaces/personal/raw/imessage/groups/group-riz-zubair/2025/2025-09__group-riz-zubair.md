@@ -22,9 +22,10 @@ attachments:
   sender: zubair-renter-showing
   sent_at: '2025-09-03T21:20:01.587207-05:00'
   sha256: e7603314df833113261efd23ef07cf5b803adffa4db173f74a50658fcf7e305e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Zillow rental application identity verification screen with phone (213)
+    800-5007 and SSN fields.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:11:56.822532+00:00'
   source_available: true
 - id: b5013dc7c4686910
   filename: IMG_2183.png
@@ -33,9 +34,9 @@ attachments:
   sender: zubair-renter-showing
   sent_at: '2025-09-03T21:20:01.587207-05:00'
   sha256: cd53a34903c7ec1f4c4c2132dc5effb66ee1be77a62e7814ad14d8361939ded7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Zillow identity verification error screen saying "Something went wrong!".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:09:27.419907+00:00'
   source_available: true
 - id: 70fb3b39d06be814
   filename: IMG_5062.png

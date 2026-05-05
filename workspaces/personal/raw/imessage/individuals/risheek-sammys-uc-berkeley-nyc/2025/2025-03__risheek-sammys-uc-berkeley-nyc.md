@@ -22,9 +22,10 @@ attachments:
   sender: risheek-sammys-uc-berkeley-nyc
   sent_at: '2025-03-16T01:27:29.724227-05:00'
   sha256: 1a004caf3bc11b1570adb1e012698fdc4b32c358a8bd2f09007be10dcb7109ef
-  description: null
-  description_model: null
-  extracted_at: null
+  description: People queue past a Caesars Palace directory sign towards the OMNIA
+    Nightclub.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:02:15.164788+00:00'
   source_available: true
 - id: 2cf7991dfa6897dc
   filename: IMG_7084.PNG

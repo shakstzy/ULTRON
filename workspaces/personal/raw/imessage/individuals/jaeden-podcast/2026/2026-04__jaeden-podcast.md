@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-04-07T17:54:53.530536-05:00'
   sha256: 1606c39ead39f3855e9704da2887e34856301e1ba720b757ca827f293c52bd65
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Technical specifications for .wav audio files, loudness levels, and
+    phonetic content.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:12:34.964991+00:00'
   source_available: true
 - id: 443de7094b53bbb6
   filename: IMG_1533.jpeg
@@ -33,9 +34,10 @@ attachments:
   sender: jaeden-podcast
   sent_at: '2026-04-10T06:25:17.384954-05:00'
   sha256: 34209de1687bd34e3fae3e18c7105b07b700b3bafa4f20f6dc7c63009afbd73c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mercury bank domestic wire and ACH transfer details for beneficiary
+    Fiund.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:15:24.471260+00:00'
   source_available: true
 - id: b64053f239e3437f
   filename: 87FF03FA-DD06-461B-B219-455D0C4A21B0.pluginPayloadAttachment
@@ -99,9 +101,10 @@ attachments:
   sender: me
   sent_at: '2026-04-30T00:26:02.886000-05:00'
   sha256: 8e499ac74afb014a337d7f48eb0495f73eb082efb9cad09c5b875702ff35e9fc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of Google Drive folder 'AI Applied' showing 4KB files from
+    jaedenschafer@gmail.com.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:15:31.346805+00:00'
   source_available: true
 - id: 63211ec1fdbbcda9
   filename: 82D8D28A-77CF-40F9-8077-15D1CD0A2411.pluginPayloadAttachment

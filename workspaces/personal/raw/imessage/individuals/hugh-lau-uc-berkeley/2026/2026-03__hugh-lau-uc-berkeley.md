@@ -22,9 +22,10 @@ attachments:
   sender: hugh-lau-uc-berkeley
   sent_at: '2026-03-22T19:10:31.248609-05:00'
   sha256: 1ac045688197aaec7178cdf984ae41f81c949f1aec0b03d1ee3fc80592e18c54
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men in a kitchen, one seated in a plaid shirt and another standing
+    by wooden cabinets.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:11:45.466954+00:00'
   source_available: true
 chat_message_guids_count: 4
 deleted_upstream: null

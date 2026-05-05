@@ -33,9 +33,10 @@ attachments:
   sender: zubair-renter-showing
   sent_at: '2026-01-19T12:51:37.659968-06:00'
   sha256: c86b0281fe6de85992803b737c31daa490d1eac3228b93a7382647d222ddc673
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two Dell monitors showing "No HDMI Cable" on a desk with a Jenga box
+    and red notebook.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:12:01.105578+00:00'
   source_available: true
 chat_message_guids_count: 35
 deleted_upstream: null

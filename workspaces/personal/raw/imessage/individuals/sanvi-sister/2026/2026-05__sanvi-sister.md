@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2026-05-01T15:37:48.709279-05:00'
   sha256: 12b906b96e00d73c0d09742e38372db7490649c46a156b4f9f1c721825a76898
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Flyer for beginner pottery classes starting May 14th, held Thursdays
+    from 6-9 PM.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:46:24.534147+00:00'
   source_available: true
 - id: f72286b186bc22a5
   filename: IMG_8333.PNG
@@ -55,9 +56,10 @@ attachments:
   sender: me
   sent_at: '2026-05-01T15:37:48.709279-05:00'
   sha256: 8e5e4c4396b436eb0722cb38951b72f1356413cabac6f6f7b61a6373187b4b17
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Flyer for Bella's beginner Wheel & Hand-Building Basics pottery class
+    starting May 14.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:46:24.811236+00:00'
   source_available: true
 - id: 35d3e33282f9b0c2
   filename: "Screenshot 2026-05-01 at 3.52.21\u202FPM.png"
@@ -66,9 +68,10 @@ attachments:
   sender: me
   sent_at: '2026-05-01T15:52:33.604682-05:00'
   sha256: 3fc44cc20cf6da64d4ae885f5c8666ae3b8f896c42e1761a237dafb797d47cb7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Do512 event listing for Friday Night Laughs at Rozco's Comedy Club
+    in Austin.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:46:34.091445+00:00'
   source_available: true
 - id: 32dae9095fd1cc23
   filename: IMG_8336.PNG
@@ -77,9 +80,9 @@ attachments:
   sender: me
   sent_at: '2026-05-01T15:56:57.309349-05:00'
   sha256: b0b0d4fa64dbe075cf60e5e0b66a41d99a4b4de4deb3639ed8d8de5b8bb177f8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of a SimpleTix order confirmation for adithya@outerscope.xyz.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:46:27.501929+00:00'
   source_available: true
 - id: a5dc2c7f94177753
   filename: IMG_8379.HEIC
@@ -132,9 +135,10 @@ attachments:
   sender: me
   sent_at: '2026-05-02T03:18:42.266824-05:00'
   sha256: f9cd81d99a74733de7c3a773d89c323f0e19e1cfe94283c302a52838ff5d29fe
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man and a woman posing in front of the Rozco's Comedy Club sign at
+    night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:50:03.764201+00:00'
   source_available: true
 - id: 1becda436f1afa8f
   filename: IMG_8376.heic
@@ -143,9 +147,10 @@ attachments:
   sender: me
   sent_at: '2026-05-02T03:18:42.266824-05:00'
   sha256: e9de57ad2973845ac90b7394b703aafe7f1a2b5eafc7558015ce568724065bcf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Close-up selfie of a man with a mustache and a woman smiling inside
+    a car.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:48:54.767249+00:00'
   source_available: true
 - id: f16eedee4808aaf5
   filename: IMG_8377.HEIC
@@ -165,9 +170,10 @@ attachments:
   sender: me
   sent_at: '2026-05-02T18:03:58.019000-05:00'
   sha256: eb63bb49ec492fb712a0e7494d69d5a578fc8edd23a12dec7d5e3fb2483c7fdb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three people by a plant wall; a young man flexes while holding a white
+    Huel bottle.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:59:21.830836+00:00'
   source_available: true
 chat_message_guids_count: 84
 deleted_upstream: null

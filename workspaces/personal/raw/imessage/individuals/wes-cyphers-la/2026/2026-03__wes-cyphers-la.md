@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-09T14:00:22.353000-05:00'
   sha256: aa60c2f517747c6795c7a10b3d85b1647ab0ffd3e26b548644b29bf2defae1ca
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A login screen for filerunner with email and password fields and a
+    red login button.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:59:24.917913+00:00'
   source_available: true
 - id: c730773f1d9a31fd
   filename: IMG_4949.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2026-03-09T14:00:22.353000-05:00'
   sha256: 1633c5c841e88bf27a25548d37f815384c81d6574de39c2e69cd928666ca1b4e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Sohonet Filerunner email notification for a "TPS WAV FILE" package
+    from Tyler Perry.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:09:08.742118+00:00'
   source_available: true
 - id: b5ac19f4a19049c1
   filename: 79609911387__7C828E41-D780-4016-A550-A1AB9FF21F84.HEIC
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2026-03-24T21:38:43.665016-05:00'
   sha256: 9d2dd0b1204d5ad3a93003fd4ba5a35ac394c2372d9fa5c087920e608ed5b95e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: PowerShell script setup.ps1 verifying NVIDIA GPU details and Ampere
+    architecture.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:09:01.354452+00:00'
   source_available: true
 - id: ec0055264fe0f1dc
   filename: 79609922364__6753BA06-F817-418B-A3AF-D03EDC15A485.HEIC

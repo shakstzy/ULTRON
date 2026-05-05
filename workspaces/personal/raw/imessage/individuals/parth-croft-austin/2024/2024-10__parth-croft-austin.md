@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-10-20T22:01:24.472032-05:00'
   sha256: 27957f5afe6ae838d9e03b9edabea2a1ac2fb9f79fb9ca830a0144bcc94d7edf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Maps screenshot of San Francisco showing The Castro and Painted
+    Ladies landmarks.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:46:12.593323+00:00'
   source_available: true
 chat_message_guids_count: 10
 deleted_upstream: null

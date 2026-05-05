@@ -22,9 +22,9 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-10-07T16:53:36.561406-05:00'
   sha256: 86946e42440e92b1c3a9e2ac491c813f29813fa1f4ae0380600d01ec51ae76bb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram post of a man playing piano in a wood-paneled room.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:16:09.348510+00:00'
   source_available: true
 chat_message_guids_count: 28
 deleted_upstream: null

@@ -33,9 +33,10 @@ attachments:
   sender: adi-hinge-austin
   sent_at: '2026-03-02T21:05:28.722132-06:00'
   sha256: 4933ed01ea2533a74162f58fbd69f528e15ef5ae4f89781872cbeab9e29faa76
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A yellow emoji face with closed eyes, blue tears, and a hand covering
+    its mouth.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:05:08.110307+00:00'
   source_available: true
 - id: 63067410d4397f16
   filename: B1E32D41-D424-4197-A371-807E536B5322.heic
@@ -44,9 +45,9 @@ attachments:
   sender: adi-hinge-austin
   sent_at: '2026-03-02T21:05:50.406514-06:00'
   sha256: f19397169da2ec2c3d567f7ae4fcc05d653a2acab69c9d511ac5e31509c44a8d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A blue circular face with a wide toothy grin wearing dark aviator sunglasses.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:05:08.945218+00:00'
   source_available: true
 chat_message_guids_count: 120
 deleted_upstream: null

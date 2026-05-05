@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2025-11-06T11:14:15.763718-06:00'
   sha256: 28f161b636413b560aeeea7c00d3147b49a4e24aebac2a850db4bf4cbadd88b7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "Calendar task for 'Claim Conversation \u2014 Annelies Gordon [5042193724]'\
+    \ on Thu Nov 6, 12:15-12:45 PM."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:05:17.779405+00:00'
   source_available: true
 - id: 5c71763a093cfe79
   filename: FILE_9548.pdf
@@ -44,9 +45,11 @@ attachments:
   sender: sasoon-insurance
   sent_at: '2025-11-21T16:53:02.464633-06:00'
   sha256: d5b1f1c400c1da17bc68544d53f068e315489163fe4d5c4bead2b9c57aed7d33
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is an Allstate insurance repair supplement for a 2019 Toyota Camry
+    collision claim. It details additional parts and labor, totaling a net repair
+    cost of $2,078.57.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:11:48.915538+00:00'
   source_available: true
 chat_message_guids_count: 47
 deleted_upstream: null

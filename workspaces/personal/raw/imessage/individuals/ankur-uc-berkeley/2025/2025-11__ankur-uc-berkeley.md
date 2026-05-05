@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-11-05T13:12:05.797000-06:00'
   sha256: c005a3a109edc7220a4bb07b12ab522799ca1cec639d86570122b8e9532e98de
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "Calendar event 'Ankur <> Adi' on Thu Nov 6, 12\u201312:30 PM, organized\
+    \ by adithya@outerscope.xyz."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:59:48.916108+00:00'
   source_available: true
 chat_message_guids_count: 5
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-10-02T11:53:58.124853-05:00'
   sha256: 897561a420e7dd0cc05d6b38af2ee9d746063d778bd537ea916cd169610c6b44
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Entrance of The Dutch restaurant with a black awning and decorative
+    corn stalks.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:12:07.777102+00:00'
   source_available: true
 chat_message_guids_count: 4
 deleted_upstream: null

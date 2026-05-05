@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2025-06-12T14:18:40.773000-05:00'
   sha256: ffaa4e861edd2ea1b7c955ee5c66a8298f6cd48087458eb387ac3c5356276899
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a text requesting Shak's resume and a blurb
+    about his 5 years experience.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T03:18:17.175046+00:00'
   source_available: true
 chat_message_guids_count: 22
 deleted_upstream: null

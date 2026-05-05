@@ -22,9 +22,10 @@ attachments:
   sender: sharaf-zaman-ut-austin
   sent_at: '2026-03-22T02:01:18.655719-05:00'
   sha256: af95d7ccafb8191717d250d0e64e0c190a86da5b5561a2d95346c0faa5323144
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Selfie of a young man with messy hair and the caption "i popped 15
+    shooters at 6th".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:59:27.133708+00:00'
   source_available: true
 chat_message_guids_count: 23
 deleted_upstream: null

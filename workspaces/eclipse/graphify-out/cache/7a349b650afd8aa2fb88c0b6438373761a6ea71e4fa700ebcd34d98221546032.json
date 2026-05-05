@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "sydney", "target": "eclipse-labs", "relation": "works_at", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/slack/eclipse/channels/engineering/2025/08/2025-08-10__engineering.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

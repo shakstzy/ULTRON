@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "samadhi-jay", "target": "eclipse-labs", "relation": "works_at", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/slack/eclipse/channels/engineering/2025/06/2025-06-08__engineering.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

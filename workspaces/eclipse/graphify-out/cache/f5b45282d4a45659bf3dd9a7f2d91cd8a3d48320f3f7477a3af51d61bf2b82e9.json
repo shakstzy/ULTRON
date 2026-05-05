@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "sydney", "target": "ethdenver", "relation": "discusses", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/slack/eclipse/channels/general/2026/03/2026-03-12__general.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

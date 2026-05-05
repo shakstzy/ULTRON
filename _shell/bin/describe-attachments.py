@@ -491,6 +491,7 @@ def main():
     print(f"workspace: {args.workspace}")
     print(f"workers:   {args.workers}")
     print(f"dry-run:   {args.dry_run}")
+    init_account_state()
 
     print(f"\nphase 1: scanning month files for missing descriptions...")
     needed = scan_workspace(ws_root)

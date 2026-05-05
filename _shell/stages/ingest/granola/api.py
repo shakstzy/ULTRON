@@ -141,7 +141,15 @@ class GranolaClient:
         return out
 
     def get_transcript(self, document_id: str) -> list[dict]:
-        resp = self.post("/v1/get-document-transcript", {"document_id": document_id})
+        """Return transcript segments. 404 → empty list (the doc was
+        never transcribed or the transcript was deleted). Anything else
+        propagates so the orchestrator can freeze the cursor."""
+        try:
+            resp = self.post("/v1/get-document-transcript", {"document_id": document_id})
+        except GranolaAPIError as e:
+            if "status=404" in str(e):
+                return []
+            raise
         if isinstance(resp, list):
             return resp
         return []

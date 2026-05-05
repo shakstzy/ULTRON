@@ -85,6 +85,46 @@ class AttendeesTest(unittest.TestCase):
         self.assertEqual(set(attendees[0].keys()), {"name", "email"})
 
 
+class AttendeeNameNullRenderTest(unittest.TestCase):
+    """Live data: many calendar-pulled attendees have only emails. Don't
+    render a `?` placeholder for missing names."""
+
+    def test_attendee_no_name_renders_email_only(self):
+        from render import render_body
+        doc = {
+            "id": "x",
+            "title": "T",
+            "created_at": "2026-04-13T18:00:00Z",
+            "updated_at": "2026-04-13T18:00:00Z",
+            "people": {
+                "creator": {"name": "Adithya", "email": "adi@out.x"},
+                "attendees": [{"email": "sydney@eclipse.builders"}],  # no name
+            },
+        }
+        segs = [seg("hi")]
+        md = render_body(doc, segs, ["ECLIPSE"])
+        self.assertIn("- <sydney@eclipse.builders>", md)
+        self.assertNotIn("- ? <", md)
+        self.assertNotIn("- ?\n", md)
+
+    def test_creator_with_only_email(self):
+        from render import render_body
+        doc = {
+            "id": "x",
+            "title": "T",
+            "created_at": "2026-04-13T18:00:00Z",
+            "updated_at": "2026-04-13T18:00:00Z",
+            "people": {
+                "creator": {"email": "adi@out.x"},  # no name
+                "attendees": [],
+            },
+        }
+        segs = [seg("hi")]
+        md = render_body(doc, segs, ["ECLIPSE"])
+        self.assertIn("- (creator) <adi@out.x>", md)
+        self.assertNotIn("**?**", md)
+
+
 class DurationStrTest(unittest.TestCase):
     def test_minutes_seconds(self):
         self.assertEqual(duration_str(125_000), "2m 5s")

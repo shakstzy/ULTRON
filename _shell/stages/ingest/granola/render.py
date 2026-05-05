@@ -224,15 +224,23 @@ def render_body(
         lines.append("## Attendees")
         lines.append("")
         if creator:
-            cn = creator.get("name") or "?"
+            cn = creator.get("name")
             ce = creator.get("email") or ""
-            email_part = f" <{ce}>" if ce else ""
-            lines.append(f"- **{cn}** (creator){email_part}")
+            if cn and ce:
+                lines.append(f"- **{cn}** (creator) <{ce}>")
+            elif cn:
+                lines.append(f"- **{cn}** (creator)")
+            elif ce:
+                lines.append(f"- (creator) <{ce}>")
         for a in attendees:
-            an = a.get("name") or "?"
+            an = a.get("name")
             ae = a.get("email") or ""
-            email_part = f" <{ae}>" if ae else ""
-            lines.append(f"- {an}{email_part}")
+            if an and ae:
+                lines.append(f"- {an} <{ae}>")
+            elif an:
+                lines.append(f"- {an}")
+            elif ae:
+                lines.append(f"- <{ae}>")
         lines.append("")
 
     # Calendar event section (omit if null)

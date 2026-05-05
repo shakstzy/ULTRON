@@ -1,9 +1,9 @@
 ---
 source: granola
 workspace: eclipse
-ingested_at: '2026-05-05T02:07:56.333013Z'
+ingested_at: '2026-05-05T02:18:27.417627Z'
 ingest_version: 1
-content_hash: blake3:9d31cb976b7fd902ae04514449a2b17c88c21e80c7a8eda8554e4b1171fbe843
+content_hash: blake3:8e9c686c8b3bdf4c1f7babc15b36ef0f978d887e75e68b5de1d9597dc06011df
 provider_modified_at: '2025-11-11T17:19:40.053Z'
 account: adithya@outerscope.xyz
 account_slug: adithya-outerscope
@@ -52,11 +52,11 @@ routed_by:
 ## Attendees
 
 - **Adithya** (creator) <adithya@outerscope.xyz>
-- ? <cemal@eclipse.builders>
-- ? <julien@eclipse.builders>
-- ? <daniel@eclipse.builders>
-- ? <sydney@eclipse.builders>
-- ? <adi@eclipse.builders>
+- <cemal@eclipse.builders>
+- <julien@eclipse.builders>
+- <daniel@eclipse.builders>
+- <sydney@eclipse.builders>
+- <adi@eclipse.builders>
 
 ## Calendar Event
 

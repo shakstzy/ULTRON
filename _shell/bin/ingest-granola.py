@@ -352,11 +352,25 @@ def main() -> int:
             docs = [d for d in docs if (d.get("updated_at") or "") > cursor]
             run_log.append(f"cursor filter: {before} → {len(docs)}")
 
-        # Ingest loop
-        max_updated_at = cursor or ""
+        # Process in updated_at-ascending order so the cursor can advance
+        # safely up to the last consecutively-successful doc. If a doc
+        # fails, every doc after it (in updated_at order) stays before the
+        # cursor advance for THIS run; the next run will see them as
+        # "newer than cursor" and replay.
+        docs.sort(key=lambda d: (d.get("updated_at") or "", d.get("id") or ""))
+
+        cursor_safe = cursor or ""
+        cursor_frozen = False
         wrote_count = 0
         skipped_count = 0
+        failed_count = 0
         ingest_at_iso = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+
+        def _freeze(reason: str, doc_id: str) -> None:
+            nonlocal cursor_frozen
+            if not cursor_frozen:
+                run_log.append(f"  CURSOR FROZEN at {cursor_safe!r} due to {doc_id[:8]} {reason}")
+            cursor_frozen = True
 
         for doc in docs:
             doc_id = doc.get("id")
@@ -370,6 +384,8 @@ def main() -> int:
                 transcript_segments = client.get_transcript(doc_id)
             except Exception as e:
                 run_log.append(f"  transcript-fail {doc_id[:8]}: {e}")
+                failed_count += 1
+                _freeze("transcript-fail", doc_id)
                 continue
 
             # Pre-filter
@@ -377,6 +393,10 @@ def main() -> int:
             if skip:
                 run_log.append(f"  skip {doc_id[:8]} {reason}")
                 skipped_count += 1
+                # Skip is a deterministic decision, NOT a failure — cursor advances.
+                ua = doc.get("updated_at") or ""
+                if not cursor_frozen and ua > cursor_safe:
+                    cursor_safe = ua
                 continue
 
             # Render body
@@ -387,56 +407,75 @@ def main() -> int:
             decisions = route_doc(doc, workspaces_config)
             if not decisions:
                 run_log.append(f"  unrouted {doc_id[:8]}")
+                # Unrouted is a config decision, not a failure.
+                ua = doc.get("updated_at") or ""
+                if not cursor_frozen and ua > cursor_safe:
+                    cursor_safe = ua
                 continue
 
             # Filename / path
             rel_path = doc_subpath(doc, acct_slug)
 
             # Per workspace
+            doc_failed = False
             for d in decisions:
                 ws_slug = d["workspace"]
                 workspace_root = ULTRON_ROOT / "workspaces" / ws_slug
-                # Frontmatter is workspace-scoped (records routed_by for this ws).
                 this_routed = [d]
-                fm = build_frontmatter(
-                    doc=doc, ws_slug=ws_slug,
-                    account_email=account_email,
-                    account_slug_value=acct_slug,
-                    ingested_at=ingest_at_iso,
-                    content_hash_value=ch,
-                    body=body,
-                    folder_titles=doc["folder_titles"],
-                    folders_with_ids=folders_with_ids,
-                    transcript_segments=transcript_segments,
-                    routed_by=this_routed,
-                )
-                full_md = fm + body
-                action = write_doc_for_workspace(
-                    workspace_root=workspace_root,
-                    rel_path=rel_path,
-                    body=body,
-                    full_markdown=full_md,
-                    doc_id=doc_id,
-                    ch=ch,
-                    routed_by=this_routed,
-                    dry_run=args.dry_run,
-                    log=run_log,
-                )
+                try:
+                    fm = build_frontmatter(
+                        doc=doc, ws_slug=ws_slug,
+                        account_email=account_email,
+                        account_slug_value=acct_slug,
+                        ingested_at=ingest_at_iso,
+                        content_hash_value=ch,
+                        body=body,
+                        folder_titles=doc["folder_titles"],
+                        folders_with_ids=folders_with_ids,
+                        transcript_segments=transcript_segments,
+                        routed_by=this_routed,
+                    )
+                    full_md = fm + body
+                    action = write_doc_for_workspace(
+                        workspace_root=workspace_root,
+                        rel_path=rel_path,
+                        body=body,
+                        full_markdown=full_md,
+                        doc_id=doc_id,
+                        ch=ch,
+                        routed_by=this_routed,
+                        dry_run=args.dry_run,
+                        log=run_log,
+                    )
+                except Exception as e:
+                    run_log.append(f"  write-fail {doc_id[:8]} ws={ws_slug}: {e}")
+                    failed_count += 1
+                    doc_failed = True
+                    continue
+
                 if action == "skipped":
                     skipped_count += 1
                 else:
                     wrote_count += 1
 
+            if doc_failed:
+                _freeze("write-fail", doc_id)
+                continue
+
             ua = doc.get("updated_at") or ""
-            if ua > max_updated_at:
-                max_updated_at = ua
+            if not cursor_frozen and ua > cursor_safe:
+                cursor_safe = ua
 
-        # Advance cursor
-        if not args.dry_run and max_updated_at and max_updated_at != cursor:
-            write_cursor(cursor_path, max_updated_at)
-            run_log.append(f"cursor advanced to {max_updated_at}")
+        # Advance cursor only to the last consecutively-successful doc.
+        if not args.dry_run and cursor_safe and cursor_safe != cursor:
+            write_cursor(cursor_path, cursor_safe)
+            run_log.append(f"cursor advanced to {cursor_safe}")
+        elif cursor_frozen:
+            run_log.append(f"cursor NOT advanced (frozen at {cursor_safe!r})")
 
-        run_log.append(f"done; wrote={wrote_count} skipped={skipped_count}")
+        run_log.append(
+            f"done; wrote={wrote_count} skipped={skipped_count} failed={failed_count}"
+        )
         log_path.write_text("\n".join(run_log) + "\n")
         print("\n".join(run_log[-12:]))
         return 0

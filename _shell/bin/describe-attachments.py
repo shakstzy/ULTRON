@@ -252,9 +252,12 @@ def build_path_map(needed_sha_set, workers):
 
 
 # ---------------------------------------------------------------------------
-# Phase 3: parallel Gemini describe
+# Phase 3: parallel Gemini describe (with periodic checkpoint)
 # ---------------------------------------------------------------------------
-def parallel_describe(worklist, workers, on_progress=None):
+def parallel_describe(worklist, workers, needed, dry_run, checkpoint_every=100, on_progress=None):
+    """Run parallel Gemini describe. Periodically checkpoints completed
+    descriptions to disk by patching frontmatters in batches, so that
+    a quota exhaustion / kill mid-run preserves all progress so far."""
     results = {}
     if not worklist:
         return results
@@ -262,6 +265,24 @@ def parallel_describe(worklist, workers, on_progress=None):
     total = len(worklist)
     startup_jitter_done = set()
     jitter_lock = threading.Lock()
+
+    # Checkpoint buffer
+    pending_buffer = {}
+    pending_lock = threading.Lock()
+    checkpoints = [0]
+
+    def maybe_checkpoint(force=False):
+        with pending_lock:
+            if not pending_buffer:
+                return
+            if not force and len(pending_buffer) < checkpoint_every:
+                return
+            snapshot = dict(pending_buffer)
+            pending_buffer.clear()
+        patched = patch_files(needed, snapshot, dry_run)
+        checkpoints[0] += 1
+        sys.stdout.write(f"\n  checkpoint #{checkpoints[0]}: {len(snapshot)} descs persisted, {patched} files updated\n")
+        sys.stdout.flush()
 
     def task(item):
         tid = threading.get_ident()
@@ -292,9 +313,20 @@ def parallel_describe(worklist, workers, on_progress=None):
                 sys.stderr.write(f"\n  worker exception: {e}\n")
                 continue
             results[sha] = payload
+            if payload["description"]:
+                with pending_lock:
+                    pending_buffer[sha] = payload
             done[0] += 1
             if on_progress and (done[0] % 25 == 0 or done[0] == total):
                 on_progress(done[0], total)
+            # Checkpoint when buffer reaches threshold
+            with pending_lock:
+                buffer_size = len(pending_buffer)
+            if buffer_size >= checkpoint_every:
+                maybe_checkpoint()
+
+    # Final flush
+    maybe_checkpoint(force=True)
     return results
 
 
@@ -395,19 +427,14 @@ def main():
             sys.stdout.write("\n")
 
     started = time.monotonic()
-    descriptions = parallel_describe(worklist, args.workers, on_progress=progress)
+    descriptions = parallel_describe(
+        worklist, args.workers, needed, args.dry_run,
+        checkpoint_every=100, on_progress=progress,
+    )
     elapsed = time.monotonic() - started
     succeeded = sum(1 for d in descriptions.values() if d["description"])
     failed = len(descriptions) - succeeded
-    print(f"  succeeded: {succeeded}  failed: {failed}  elapsed: {elapsed:.0f}s")
-
-    if not descriptions:
-        print("no descriptions produced")
-        return
-
-    print(f"\nphase 4: patching frontmatters...")
-    patched = patch_files(needed, descriptions, args.dry_run)
-    print(f"  patched: {patched} files")
+    print(f"\n  succeeded: {succeeded}  failed: {failed}  elapsed: {elapsed:.0f}s")
 
     print(f"\ndone. Re-run ingest-imessage-oneshot.py to update body lines.")
 

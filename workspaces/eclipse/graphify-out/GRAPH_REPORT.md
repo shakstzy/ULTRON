@@ -210,3 +210,19 @@ Nodes (1): Duolingo
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
+
+- **What's the status of the Eclipse ETH Bridge audit and remediations?**
+  → _ETH Bridge Security and OZ Audit clusters are highly cohesive (0.12, 0.22) and cross-reference Olivier and Michael's work._
+
+- **Which audio data vendors are we currently transacting with vs. just evaluating?**
+  → _c2 (Audio Data Sourcing) has many deal_with and customer_of edges — clarifies real pipeline state._
+
+- **What's blocking the Boomie mobile app launch and who owns each blocker?**
+  → _c3 (Boomie Mobile App) bridges Daniel, Cemal, Clerk auth, App Store review — likely critical-path._
+
+- **What did the Microsoft podcast deal involve and is it still live?**
+  → _BM cluster (c9) only mentions it once — high-value, low-coverage in graph, worth pulling raw._
+
+- **Why is solar-eclipse semantically similar to Agave?**
+  → _Cross-community surprise edge (0.80) — likely shared Solana validator-fork heritage worth documenting._
+

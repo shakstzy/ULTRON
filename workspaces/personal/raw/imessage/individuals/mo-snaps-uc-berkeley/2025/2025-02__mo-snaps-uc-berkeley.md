@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-02-03T01:49:35.515486-06:00'
   sha256: 983cc48df297021a4befafb5f1dccc500679586b60231d609059fbb78b475e48
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple Maps transit route from Lower East Side to Secaucus Junction
+    departing at 3:39 AM.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:20:13.936489+00:00'
   source_available: true
 - id: f51c5c44084f6046
   filename: IMG_5678.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-02-15T17:57:46.727000-06:00'
   sha256: 09e243b72120d6fb5fd5836edd726f2d5e62798baacb438d22d7688dbec5b0d0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Maps transit route from Astoria to North Bergen via the Q102
+    bus and M&E train.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:20:17.031276+00:00'
   source_available: true
 - id: 8ff4136ba24ddb59
   filename: 76136013411__DD47A47F-B495-433A-ADE3-23EFAC01DEA5.mov
@@ -44,9 +46,10 @@ attachments:
   sender: mo-snaps-uc-berkeley
   sent_at: '2025-02-15T18:55:50.805927-06:00'
   sha256: cfa63a46b3e8448e14b7b45f0c4da1cf5891fdf478a03812e869c64702f0ad76
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a green beanie sits in a dark car at night, looking at the
+    camera.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:22:57.451220+00:00'
   source_available: true
 - id: 80938009948a0ff9
   filename: 76136014657__322FE46C-44E9-4C77-A4AE-E7CC2215483C.mov
@@ -55,9 +58,9 @@ attachments:
   sender: mo-snaps-uc-berkeley
   sent_at: '2025-02-15T18:56:04.813512-06:00'
   sha256: 9896f68a3944cd125cea97bca388872512e3ac6fde9ad91bba0c860843a691c8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: BMW steering wheel, rain on a window, and purple ambient interior lighting.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:21:06.980463+00:00'
   source_available: true
 - id: d2bb667b8c187cb6
   filename: IMG_5692.PNG
@@ -77,9 +80,10 @@ attachments:
   sender: me
   sent_at: '2025-02-16T02:51:31.956000-06:00'
   sha256: b6844d88518ca9bb6889630b45cdab8b8bff80bcd5ad61f851654c450403359a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Map screenshot showing a 44-minute transit route to 707 Harmon Cove
+    Tower in Secaucus.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:20:19.335667+00:00'
   source_available: true
 - id: 00bd383d6ea7d6f0
   filename: IMG_5693.PNG
@@ -88,9 +92,10 @@ attachments:
   sender: me
   sent_at: '2025-02-16T02:58:55.302000-06:00'
   sha256: 489bf5048d363e22d0e97cf9d3e21749a45953c57d63d8852dbc3759651550b7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of transit directions for the 139 bus from Port Authority
+    with delay alerts.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:20:18.183085+00:00'
   source_available: true
 - id: 5ed73a0249a6152c
   filename: IMG_5695.PNG
@@ -121,9 +126,10 @@ attachments:
   sender: me
   sent_at: '2025-02-17T03:12:51.548000-06:00'
   sha256: 3cd5542d9351f058e40429707c0e9c2f827cdc20c31758b1cf773d74f05aeb2c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Transit directions from Penn Station to Secaucus Junction via the NEC
+    train at 5:11 AM.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:20:58.696048+00:00'
   source_available: true
 - id: f5d69a2c3e721cdb
   filename: IMG_5758.PNG
@@ -132,9 +138,10 @@ attachments:
   sender: me
   sent_at: '2025-02-20T01:10:12.718000-06:00'
   sha256: 7695decc2d785d6e0f71e764fd4220a58e69ecffae9a83126045e54f99fac897
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram Reel showing custom Juice WRLD "Goodbye & Good Riddance"
+    themed sneakers.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:21:28.367063+00:00'
   source_available: true
 - id: 46eb18c7be811197
   filename: IMG_5759.PNG
@@ -165,9 +172,10 @@ attachments:
   sender: mo-snaps-uc-berkeley
   sent_at: '2025-02-23T05:20:59.649278-06:00'
   sha256: 3f5f5bad81d3cb9990ab9ae3f72071b9916bb6f4d3891810f4602e7d5f3461b5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Lyft app screenshot showing a $11.64 ride from Harmon Cove to Secaucus
+    Junction.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:25:41.259064+00:00'
   source_available: true
 - id: b3e11fbe3b76a23b
   filename: IMG_5877.PNG
@@ -176,9 +184,10 @@ attachments:
   sender: me
   sent_at: '2025-02-23T05:21:26.512000-06:00'
   sha256: 44ac1ff2d53fa33af5b217bfe00b017dc8ddaa5f23365863fec0067be0de9a00
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Uber app screenshot showing ride options and prices for a trip in Secaucus,
+    New Jersey.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:21:07.960365+00:00'
   source_available: true
 - id: 359bdd1f71389cf1
   filename: IMG_5878.PNG
@@ -187,9 +196,10 @@ attachments:
   sender: me
   sent_at: '2025-02-23T05:22:04.225000-06:00'
   sha256: 12eb732d2eb92d58e1d08540d0afeba945c4ebbf26bdebfebe23b201b04c74cc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Venmo payment screen for Mohammed Alobaidi showing $0 and a 9-minute
+    Lyft notification.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:28:30.640715+00:00'
   source_available: true
 chat_message_guids_count: 134
 deleted_upstream: null

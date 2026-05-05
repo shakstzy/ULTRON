@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2025-09-30T22:39:52.974000-05:00'
   sha256: f020674730db50224411ce1ec420bb0e2d87690d2aef84e1a602ddfff8140ef9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Outerscope invoice INV-6 to Octane for $2,287.67, updated and sent
+    via Mercury.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:37:36.704236+00:00'
   source_available: true
 chat_message_guids_count: 14
 deleted_upstream: null

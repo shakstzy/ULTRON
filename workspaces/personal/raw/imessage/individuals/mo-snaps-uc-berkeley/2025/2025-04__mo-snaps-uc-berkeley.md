@@ -22,9 +22,10 @@ attachments:
   sender: mo-snaps-uc-berkeley
   sent_at: '2025-04-14T11:36:49.025105-05:00'
   sha256: d670492226632bcb8410484dfb7c9e94b29230dec2d07259e5c40a5eb9a97c57
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hand holding an Insta360 camera with a lens cap on a selfie stick over
+    a black bag.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:20:59.927205+00:00'
   source_available: true
 - id: 3ae6e90bf1e5976d
   filename: IMG_4870.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: mo-snaps-uc-berkeley
   sent_at: '2025-04-15T15:08:45.104273-05:00'
   sha256: a22db42d9cb93ab87ab693f417c58fa1053940ab04573e300e866754f936a89b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of the start of a Slack DM conversation with Saneel Sreeni
+    (saneel.xyz).
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:21:03.757332+00:00'
   source_available: true
 chat_message_guids_count: 18
 deleted_upstream: null

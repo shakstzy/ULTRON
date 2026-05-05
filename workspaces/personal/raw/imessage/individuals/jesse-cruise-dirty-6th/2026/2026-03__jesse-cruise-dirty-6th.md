@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-09T20:27:17.629529-05:00'
   sha256: e3a00439b852cbe65239adcd5a95b5bef7525bf24d5aa8a311b1d49fae1e18c9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: SeatGeek screenshot showing Sammy Virji concert dates for Nashville,
+    Atlanta, and Rothbury.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:32:48.133487+00:00'
   source_available: true
 chat_message_guids_count: 13
 deleted_upstream: null

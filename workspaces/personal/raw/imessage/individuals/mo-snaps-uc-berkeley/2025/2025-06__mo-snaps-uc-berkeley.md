@@ -22,9 +22,10 @@ attachments:
   sender: mo-snaps-uc-berkeley
   sent_at: '2025-06-05T18:44:55.886180-05:00'
   sha256: 5a4ea39ba71fc6e682957c6d57b27073b49d2fc6eca7daf87d10ca272b391f49
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Tribeca Festival and OKX Web3 branding on a grey building wall near
+    a red traffic light.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:22:45.646165+00:00'
   source_available: true
 - id: 1ee287ac1161870c
   filename: IMG_5416.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: mo-snaps-uc-berkeley
   sent_at: '2025-06-05T19:37:37.190198-05:00'
   sha256: 6361dfd8041a44f2ec9c94b69a3b11c569b380333609acc864d99f8a757e9f16
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple Maps driving directions from Brooklyn to Adithya Kumar's location
+    in Manhattan.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:23:12.006050+00:00'
   source_available: true
 chat_message_guids_count: 60
 deleted_upstream: null

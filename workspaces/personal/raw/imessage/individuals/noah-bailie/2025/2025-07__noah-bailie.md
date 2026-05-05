@@ -55,9 +55,10 @@ attachments:
   sender: me
   sent_at: '2025-07-09T21:56:36.163492-05:00'
   sha256: 520c53ad518569a8424c0d51d679f2fde678d5a091869aa994f1cd11f12a732a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot with Gayathri discussing trust issues and a FaceTime
+    video thumbnail.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:37:46.969325+00:00'
   source_available: true
 - id: ed7c4d22dadbb5cc
   filename: IMG_0416.PNG
@@ -66,9 +67,10 @@ attachments:
   sender: me
   sent_at: '2025-07-22T00:42:41.800000-05:00'
   sha256: 6311f8abb7b4961f0c41434429c28ad3ea34718a245c52bd7750d8b8f2f7e644
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Leonardo DiCaprio and Tobey Maguire in a post about 7-year friendships
+    lasting a lifetime.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:37:54.899049+00:00'
   source_available: true
 - id: 7ee690faad89ae0c
   filename: IMG_4860.jpeg
@@ -77,9 +79,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2025-07-31T12:21:41.422748-05:00'
   sha256: 69b35b4849c6b83068d184a32a5784cfc5e4d6168aca2a4e272ca876713c5149
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A Jeaux pre-roll tube, a Dockside Cannabis lighter, and a Buddies live
+    resin vape pouch.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:42:18.098959+00:00'
   source_available: true
 chat_message_guids_count: 148
 deleted_upstream: null

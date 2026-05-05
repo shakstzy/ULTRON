@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-01-03T00:41:31.909000-06:00'
   sha256: 4dc6471b063b00f070a44114482fb7d8277bb70193381dfcb1da671239cd8bc5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three men pose on a large jackalope statue in a purple-lit bar with
+    sports on a TV.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:43:06.965011+00:00'
   source_available: true
 chat_message_guids_count: 50
 deleted_upstream: null

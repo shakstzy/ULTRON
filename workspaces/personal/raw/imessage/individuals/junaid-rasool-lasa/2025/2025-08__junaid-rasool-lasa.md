@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-08-09T14:59:00.625574-05:00'
   sha256: 1a459d2ac94f5acef3e4945ad9f1cebc112b4a223fc2b02a89e12f92790662ce
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Clash Royale Social menu showing a pending 1v1 battle invite and a
+    friend leaderboard.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:28:31.917814+00:00'
   source_available: true
 chat_message_guids_count: 3
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-06-01T09:57:37.990025-05:00'
   sha256: 62be97444c5953c9ae26d74dc01a3e4e53725bb2d2b0ae7a850096ada4275c96
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat with Abi about a moon landing news link and an Akaash
+    Singh stand-up video.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:37:32.276421+00:00'
   source_available: true
 - id: cdb80de68f446d9b
   filename: IMG_9436.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-06-06T07:05:37.281000-05:00'
   sha256: 356606cc0941de2ac994c74e4893a7cc730da2c1d36eab6b53770e7fb1fee511
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone contact card for Arya Kumar with phone +1 (737) 226-2287 and
+    emergency contact label.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:38:18.370547+00:00'
   source_available: true
 - id: 4e8c11e7dca52829
   filename: IMG_4693.PNG

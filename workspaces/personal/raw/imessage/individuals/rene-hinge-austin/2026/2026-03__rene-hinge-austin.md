@@ -44,9 +44,10 @@ attachments:
   sender: rene-hinge-austin
   sent_at: '2026-03-01T20:43:12.131978-06:00'
   sha256: 3c6b2a44a1a1d9290d140fc3398e6961bf290cdda4aa7eec4c030ed93c98d903
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple Maps driving directions to Quail Creek Neighborhood Park in Austin,
+    Texas.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:32:14.590261+00:00'
   source_available: true
 - id: d47235fdee5a6d25
   filename: 2E5E29C2-220C-495D-BAE9-E284D3D7F125.pluginPayloadAttachment
@@ -110,9 +111,10 @@ attachments:
   sender: rene-hinge-austin
   sent_at: '2026-03-05T21:23:18.268866-06:00'
   sha256: 2261bf0d06ec08a11b90e3a6b9068854fa703836b70821adca80a34c7ab31d3a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple Maps screenshot showing a 29-minute drive to Round Rock West
+    Greenbelt Trailhead.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:37:55.639765+00:00'
   source_available: true
 - id: a822e88339069003
   filename: 85C8D4E6-699D-410B-A7F2-4C552005D0C8.1E6EF150-CC05-4A63-8B2C-E2793941D04D.pluginPayloadAttachment
@@ -132,9 +134,10 @@ attachments:
   sender: rene-hinge-austin
   sent_at: '2026-03-22T23:55:37-05:00'
   sha256: 27ef60068a17b9dca6e0130406725f29b22fd6b45d1865719e82c73149ff8e3c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A short-haired person in a yellow ribbed top resting their chin on
+    their hand by a white door.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:35:04.852056+00:00'
   source_available: true
 - id: 24a0dcdb8b7da51e
   filename: 123_1.jpeg

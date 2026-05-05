@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-07-29T21:45:16.484000-05:00'
   sha256: f9c55b4545dd17977cf0414db80d4bbf0cba67eb11a669349a2c25e98271e9b3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Maps screenshot showing a 13-minute walking route to The Oasis
+    Cafe in Manhattan.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:19:55.300476+00:00'
   source_available: true
 chat_message_guids_count: 65
 deleted_upstream: null

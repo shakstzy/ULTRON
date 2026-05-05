@@ -22,9 +22,10 @@ attachments:
   sender: gio-octane
   sent_at: '2025-04-26T18:31:01.375769-05:00'
   sha256: 058467d5fca34dda0f6b421b39faacdf839e4efa15c8f76b9fad527f4d7c3109
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a 2024 W-2 tax form for Adithya Kumar from Perspectus AI Inc.
+    It reports $11,500 in annual wages and lists federal, state, and payroll tax withholdings.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:37:37.403171+00:00'
   source_available: true
 chat_message_guids_count: 6
 deleted_upstream: null

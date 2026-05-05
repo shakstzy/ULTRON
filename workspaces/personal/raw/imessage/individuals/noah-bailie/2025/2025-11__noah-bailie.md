@@ -22,9 +22,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2025-11-06T10:49:09.600409-06:00'
   sha256: a1c9a42a3d32b6043c0188bce42b20b0daeec2804bd424b438514eba142feff3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Kronk from The Emperor's New Groove grins beneath the caption "mission
+    accomplished".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:37:29.084827+00:00'
   source_available: true
 - id: dc4e2eb57e591251
   filename: "Screenshot 2025-11-10 at 8.32.09\u202FAM.png"
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-11-10T10:32:35.345608-06:00'
   sha256: 310ba90c458ff3dcc06b3e50b3e82207c3acf22c2ca7654536249bc33db400f6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: An iMessage conversation displays a notification for an Apple Fitness+
+    invitation.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:37:40.340071+00:00'
   source_available: true
 chat_message_guids_count: 93
 deleted_upstream: null

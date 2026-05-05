@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-05-15T13:40:38.249392-05:00'
   sha256: e42eb2f1ea7f966188b8042546140ecf9150e54c66833bea402befe089ebe7c0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: App Store screenshot of 'Leaked App' by Mohammed Alobaidi with a purchase
+    confirmation overlay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:20:11.897834+00:00'
   source_available: true
 - id: 0b856f069aefb306
   filename: IMG_9214.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-05-30T05:44:49.933140-05:00'
   sha256: 5dbf64a995666f548772589187fdc69675e94f64b2a8172bc4aa686abd0fefe2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Instagram post: Sent raises $3.55M seed at $18.5M valuation for its
+    universal messaging API.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:20:11.985533+00:00'
   source_available: true
 chat_message_guids_count: 32
 deleted_upstream: null

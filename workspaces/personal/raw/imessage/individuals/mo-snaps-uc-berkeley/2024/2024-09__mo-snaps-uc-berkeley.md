@@ -22,9 +22,10 @@ attachments:
   sender: mo-snaps-uc-berkeley
   sent_at: '2024-09-25T17:03:45.375630-05:00'
   sha256: fac833ee1543403bf6696e41d70015297b18b081f0ba9dc132cbae72f3442da4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A hand enters code 1357 on a Schlage keypad lock, resulting in a red
+    error light.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:22:49.555553+00:00'
   source_available: true
 - id: 9ea3fba961f9b020
   filename: IMG_1489.jpeg
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2024-09-29T21:00:54.148000-05:00'
   sha256: 393fef067da8b03c2bfdbe294b76e282ee607513f342fe4eebd2531d752f347a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Deployment log showing a React 'no-unescaped-entities' error causing
+    build failure.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:25:01.666829+00:00'
   source_available: true
 - id: cc2f00f1515398bd
   filename: tmp.gif
@@ -55,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2024-09-29T21:05:02.769000-05:00'
   sha256: a021793d31cc1d1a7abf0206a484fa4b804a141605b0b074f96c9b261070c30c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: React code for a 'Planning & Strategy' section with icon and GTM strategy
+    description.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:24:26.804691+00:00'
   source_available: true
 - id: 5b450f297a8f2d1a
   filename: IMG_9086.jpeg
@@ -66,9 +69,10 @@ attachments:
   sender: me
   sent_at: '2024-09-29T21:24:10.799000-05:00'
   sha256: 2f6bb6b03458d0be4a2ca6816b32c5eea3dfdab0441af5a7674938039755a4ae
-  description: null
-  description_model: null
-  extracted_at: null
+  description: DNS dashboard for outerscope.xyz showing valid configuration and pending
+    SSL generation.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:25:03.012578+00:00'
   source_available: true
 - id: 4e93c84e9735d78b
   filename: IMG_5699.jpeg
@@ -77,9 +81,10 @@ attachments:
   sender: me
   sent_at: '2024-09-29T21:26:30.355000-05:00'
   sha256: 71dbd770017ea6c7cb4c8bac77030d052c6dd8c7260285cc14f7c94a265de0df
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile browser interface showing outerscope.xyz and a Squarespace website
+    link.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:28:29.353583+00:00'
   source_available: true
 - id: 5dce2d060bf120b4
   filename: "Screenshot 2024-09-29 at 10.26.54\u202FPM.jpeg"
@@ -99,9 +104,10 @@ attachments:
   sender: me
   sent_at: '2024-09-29T21:30:26.974000-05:00'
   sha256: f35c6fc4462427e705286073958189881f03d7f8bcc4e747a89b4dd67ada80c1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Dashboard showing production deployment statuses: building, ready,
+    and two errors.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:25:15.319480+00:00'
   source_available: true
 - id: 4173064721b6b4d9
   filename: IMG_1036.jpeg
@@ -110,9 +116,10 @@ attachments:
   sender: me
   sent_at: '2024-09-29T22:48:30.126000-05:00'
   sha256: 533995f4ab0f367f7bbb19bf95479f26a6a86c64f2e283b750785e6445d481b1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile screenshot of outerscope.xyz website showing a scrolling bug
+    in a chat.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:23:30.361958+00:00'
   source_available: true
 - id: dbbbdea5623ed84c
   filename: IMG_2396.PNG
@@ -121,9 +128,10 @@ attachments:
   sender: me
   sent_at: '2024-09-30T00:20:09.177817-05:00'
   sha256: fbcd315d8e72773102f3dda2bf6f1cd9aed0ee980ffee6923d0d67ca865f5b34
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Lyft ride route from Ride App Zone N2 to 46 W 17th St in NYC with a
+    1:23 AM arrival.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:22:59.959695+00:00'
   source_available: true
 chat_message_guids_count: 87
 deleted_upstream: null

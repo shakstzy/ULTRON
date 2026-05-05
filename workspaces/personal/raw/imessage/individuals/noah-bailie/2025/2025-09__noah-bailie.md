@@ -22,9 +22,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2025-09-18T02:51:16.930775-05:00'
   sha256: ad96901a9edf6e2759873637ecaf23efa428881ad6eb7a7437f45ee885a116ae
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A sticker of a white cat with black spots and its mouth open on a black
+    background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:37:29.099262+00:00'
   source_available: true
 - id: 8912b24dc89fd896
   filename: IMG_5036.jpeg
@@ -33,9 +34,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2025-09-19T16:19:13.359278-05:00'
   sha256: fef7c535d1b17619b37546c34d5ff2c07eaa235227cef818bc8440051883addd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Used glass dab banger and patterned carb cap on a desk next to a mechanical
+    keyboard.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:37:47.786379+00:00'
   source_available: true
 - id: ffb793257e74ba5f
   filename: IMG_1753.PNG
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-09-22T05:52:41.167968-05:00'
   sha256: d8489ae8157a6bc399c9586a82b7ef10cb4eb89fab48db1625e7d9421d4d5c41
-  description: null
-  description_model: null
-  extracted_at: null
+  description: POV of a mountain bike race at 28 km/h with a subtitle about Emeric
+    Lenzer closing in.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:35:21.537841+00:00'
   source_available: true
 chat_message_guids_count: 59
 deleted_upstream: null

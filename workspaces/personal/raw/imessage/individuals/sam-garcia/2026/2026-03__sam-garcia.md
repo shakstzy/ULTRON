@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2026-03-23T01:04:07.459200-05:00'
   sha256: ffb89c8c14d85665606604663c4369f8e067e61075df080b6a2556958843a9d0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Adi and Sam vow to achieve dreams and business success in this 20-year
+    time capsule video.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:37:56.428674+00:00'
   source_available: true
 - id: 8677ad3187410654
   filename: ms-c3qXWS.jpeg
@@ -55,9 +56,10 @@ attachments:
   sender: sam-garcia
   sent_at: '2026-03-23T21:49:05.754920-05:00'
   sha256: 730e2d6e60bddeae0c6c76d084ddf85b5b23bb1a2b10c2764c9bd02fc77ffa33
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Overhead view of a digital pool table with racked balls and a central
+    play button icon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:32:19.581640+00:00'
   source_available: true
 - id: 158546c3974b5cce
   filename: IMG_6080.jpeg
@@ -99,9 +101,9 @@ attachments:
   sender: me
   sent_at: '2026-03-28T15:13:57.942740-05:00'
   sha256: 61401bf93dfcf968f434cc3946ee52982e4513ddca44aeeba6bb630da7174f06
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A crushed gold Modelo Especial beer can lying on dry, patchy grass.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:37:30.652824+00:00'
   source_available: true
 - id: aa75da58612eb3ba
   filename: ms-jxZwGM.jpeg
@@ -132,9 +134,9 @@ attachments:
   sender: sam-garcia
   sent_at: '2026-03-28T17:21:07.317395-05:00'
   sha256: 116868ed9eeca3ae4d3be9bf43f37b77e435a943efd4249faa4aed9a4e7fe02b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Digital chessboard at starting positions with a green play button overlay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:34:58.846020+00:00'
   source_available: true
 - id: 17a46b40b92a4bcf
   filename: IMG_7594.png
@@ -154,9 +156,10 @@ attachments:
   sender: sam-garcia
   sent_at: '2026-03-31T23:41:44.307219-05:00'
   sha256: ed38b1f4640b82c2e12e4564935458936393f4527f46d1305b6ce64bcae11a0f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone home screen with apps and a man in a picture-in-picture video
+    window.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:32:26.747108+00:00'
   source_available: true
 chat_message_guids_count: 152
 deleted_upstream: null

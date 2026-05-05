@@ -22,9 +22,10 @@ attachments:
   sender: mo-snaps-uc-berkeley
   sent_at: '2024-03-29T17:18:17.238505-05:00'
   sha256: b32e64b393abf9fbca525e12e144cc81dd69b64f800c560670a232c89d8f2a8b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: TV playing The Kid LAROI documentary next to a PS5 console on a stand
+    with messy cables.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:23:00.151776+00:00'
   source_available: true
 - id: 3b2fd4cb30638b70
   filename: IMG_7407.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2024-03-29T17:19:19.280769-05:00'
   sha256: 352adb23e93ea982f56e35e92518a6631d2503ed471938f3dc5f18ebf94a6c25
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of leaked.fm showing a successful waitlist signup for Adithya
+    Kumar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:22:57.293730+00:00'
   source_available: true
 chat_message_guids_count: 17
 deleted_upstream: null

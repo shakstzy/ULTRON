@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2025-08-09T14:54:14.355538-05:00'
   sha256: aac42d86b66a8bb697e54ed2611d00c9c49f55df198b56ed58a7603c5818e8bc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Synapse Web3 app demo: dashboard, MCP store, and setting up an automated
+    BTC purchase task.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:42:42.618878+00:00'
   source_available: true
 chat_message_guids_count: 2
 deleted_upstream: null

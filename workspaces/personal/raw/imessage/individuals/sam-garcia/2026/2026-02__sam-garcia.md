@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-02-06T23:52:46.779000-06:00'
   sha256: 9bd021af5edd7efbf8db68e080e6e843d3bea0609cd0fcdc8b40a2f84d6b424e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Outdoor city sidewalk at night with a metal trash can, concrete stairs,
+    and a manhole cover.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:35:02.164234+00:00'
   source_available: true
 - id: 785f8773afa344d4
   filename: IMG_1319.png

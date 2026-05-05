@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-01-08T23:08:46.781849-06:00'
   sha256: f71429c03900e571517b91a8a7a924ce1718ed277081af6217c1e3c19b0c24e7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Horizontal LED light strips mounted on a tiled ceiling in a commercial
+    space.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:26:39.748837+00:00'
   source_available: true
 chat_message_guids_count: 3
 deleted_upstream: null

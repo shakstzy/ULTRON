@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2025-08-28T22:05:19.697284-05:00'
   sha256: 5e2d1805fd9e2ec9bc0275c4b2bea00242b3de93ed8fbb42239bb97cc9dcfedd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Toyota driving at night with Openpilot at 74 mph while on a call with
+    Griffin Noah.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:40:06.484935+00:00'
   source_available: true
 chat_message_guids_count: 26
 deleted_upstream: null

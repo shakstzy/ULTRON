@@ -55,9 +55,10 @@ attachments:
   sender: me
   sent_at: '2024-08-27T22:31:35.080000-05:00'
   sha256: eb2727a0bccd0f587cd6ea9935c180bcf3a658fbee1e5bfb989ea22c11ca9e96
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot showing several .wav audio files and chat about
+    music production.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:22:42.493577+00:00'
   source_available: true
 - id: 3ca391434d05d139
   filename: pocketrocket.m4a

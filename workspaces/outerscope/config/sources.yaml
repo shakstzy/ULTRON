@@ -1,0 +1,14 @@
+workspace: outerscope
+wiki: true
+sources:
+  drive:
+    accounts:
+    - account: adithya@outerscope.xyz
+      folders:
+      - id: 1aQen7BupLIHLA_Dvbo4FN34-ZxW0HWWE
+        name: INCLUSIVELAYER
+
+global_settings:
+  attachments_inline: true
+  vision_model: sonnet
+  hash_algorithm: blake3

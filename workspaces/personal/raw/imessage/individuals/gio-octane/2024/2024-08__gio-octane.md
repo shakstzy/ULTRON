@@ -22,9 +22,10 @@ attachments:
   sender: gio-octane
   sent_at: '2024-08-25T15:49:37.020473-05:00'
   sha256: 53233b8c54ccd4d8cfd623e6b020648506df3eed3c0257bf763e07dd97cd9c90
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Satellite map of Los Angeles showing a pin dropped at 13245 Klein Ct
+    in San Fernando.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:28:34.474079+00:00'
   source_available: true
 - id: 378393118dfebb0e
   filename: 74631190335__39A5BB87-A600-472D-A3CB-6E14EC066A53.HEIC

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-01T13:09:41.967000-06:00'
   sha256: e9d81cb6ccfab5a8ec400477f86defa5e59fe317845d1501e0fe76a745a5d41a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Zenith chat screenshot: a photo of a man in Paris and a joke about
+    fighting an orangutan.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:28:56.810819+00:00'
   source_available: true
 chat_message_guids_count: 7
 deleted_upstream: null

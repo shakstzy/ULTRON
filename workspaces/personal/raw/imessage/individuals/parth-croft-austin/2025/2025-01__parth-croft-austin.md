@@ -44,9 +44,10 @@ attachments:
   sender: parth-croft-austin
   sent_at: '2025-01-03T13:26:01.705186-06:00'
   sha256: 9b6026edf66450429ee3ca31c2139391d3f483e44cb0e66df665a838ee9e14ea
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a VCard file containing contact information for Richard Liu.
+    It stores his full name and a primary cellular telephone number.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:42:31.048857+00:00'
   source_available: true
 - id: 1f3aa3a0be63ad85
   filename: Aytahn Ben-Avi.vcf

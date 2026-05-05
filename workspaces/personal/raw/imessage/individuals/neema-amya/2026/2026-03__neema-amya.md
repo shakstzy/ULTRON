@@ -22,9 +22,11 @@ attachments:
   sender: neema-amya
   sent_at: '2026-03-23T12:19:50.355943-05:00'
   sha256: 956c33df9f16704dacd254e6d48049a57ed79eba009b775ad5f535d407bc014c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This job description is for a Founding Engineer role at Cardinal, a
+    San Francisco AI startup. The position involves building GTM infrastructure and
+    agents using TypeScript and Node.js.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:32:42.791129+00:00'
   source_available: true
 - id: 6ced8ae8eba523ef
   filename: AE900CD2-1233-453C-8713-D5484D2971FE.pluginPayloadAttachment

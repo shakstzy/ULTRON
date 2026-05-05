@@ -77,9 +77,10 @@ attachments:
   sender: me
   sent_at: '2026-03-05T00:49:14.626212-06:00'
   sha256: 3bdf2964af49b341df4f132f4c600fa33e0155e4634e4091f315f21daf83a811
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Selfie of a man in sunglasses next to a meme of an emo Grinch in an
+    MCR shirt.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:43:51.952408+00:00'
   source_available: true
 - id: 977629c4cc817c18
   filename: 0A8C85CD-F905-43B9-A126-E06C5AA66AA6.pluginPayloadAttachment
@@ -99,9 +100,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2026-03-25T00:44:12.952397-05:00'
   sha256: 3c4923f431c31bd690b77f2c73e431aa844959d27d381da1eaee8badeec90514
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A sideways close-up of a person's face with green eyes and fair, freckled
+    skin.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:42:17.033387+00:00'
   source_available: true
 - id: 47557438c26c3d0a
   filename: IMG_5356.jpeg
@@ -121,9 +123,10 @@ attachments:
   sender: me
   sent_at: '2026-03-25T01:32:13.262000-05:00'
   sha256: f5aa858759c0de9b2359a052584c8eaddb019bba9c5bbbc0bce15a37a92e8657
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Low-angle video call screenshot of a man in a teal shirt looking up
+    at a bright ceiling light.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:40:12.095203+00:00'
   source_available: true
 - id: 8cc158d1e4bff360
   filename: 24A3C65B-B53E-4F7A-AC42-87E6CF33B3B7.jpeg
@@ -132,9 +135,9 @@ attachments:
   sender: noah-bailie
   sent_at: '2026-03-31T01:37:03.467281-05:00'
   sha256: e970389caec10ba226882c6342c7f219266170915e67bd647c2b71a2827273d6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Purple translucent BOUTIQ V5 disposable vape on a textured grey fabric.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:43:03.038598+00:00'
   source_available: true
 - id: 6756a58fee08914d
   filename: IMG_5378.PNG
@@ -154,9 +157,10 @@ attachments:
   sender: me
   sent_at: '2026-03-31T13:54:41.263993-05:00'
   sha256: 8ce1c8c47d379a9616e9a121b5224f72b66cc0404650ed37c6f03f4159eea701
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of an incoming call from +1 (512) 906-5108 in Austin,
+    TX.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:40:13.483888+00:00'
   source_available: true
 - id: 9fb96282c0488b1e
   filename: 5A71BA75-7338-442D-BD5B-C2587A45E8A0.pluginPayloadAttachment

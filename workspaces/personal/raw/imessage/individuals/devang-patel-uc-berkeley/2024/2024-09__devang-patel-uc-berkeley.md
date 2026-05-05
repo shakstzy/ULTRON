@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-09-30T00:21:07.877074-05:00'
   sha256: fbcd315d8e72773102f3dda2bf6f1cd9aed0ee980ffee6923d0d67ca865f5b34
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Lyft ride route from Ride App Zone N2 to 46 W 17th St in NYC with a
+    1:23 AM arrival.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:22:59.959695+00:00'
   source_available: true
 chat_message_guids_count: 6
 deleted_upstream: null

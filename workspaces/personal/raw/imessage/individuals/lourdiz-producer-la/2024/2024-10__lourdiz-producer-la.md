@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-10-04T20:42:25.124238-05:00'
   sha256: f69af129f3f64a3c26a93872fe4007a317a98492eb02b46883b308535d7482bb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Spotify screenshot of the song "Cute" by Lourdiz featuring inner-lip
+    tattoo cover art.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:35:02.923453+00:00'
   source_available: true
 chat_message_guids_count: 3
 deleted_upstream: null

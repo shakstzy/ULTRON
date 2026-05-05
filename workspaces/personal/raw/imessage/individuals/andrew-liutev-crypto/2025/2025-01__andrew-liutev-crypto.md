@@ -22,9 +22,10 @@ attachments:
   sender: andrew-liutev-crypto
   sent_at: '2025-01-30T20:01:50.013249-06:00'
   sha256: 6864af1c1c36c57b7e849006309565b77a33c5de8e3800d3339d6ddb01883d5a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone contact card for Adi Kumar with phone +1 (512) 660-1911 and
+    a Kal Penn contact photo.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:19:52.358840+00:00'
   source_available: true
 chat_message_guids_count: 32
 deleted_upstream: null

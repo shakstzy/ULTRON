@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2026-03-30T23:40:17.777010-05:00'
   sha256: 639fc7c34c6a7821b4a8258731edba08e078b6c35534c7ee7719221381401e7e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of an email from a16z recruiting Adithya for a Speedrun
+    Investing Partner position.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:42:15.236693+00:00'
   source_available: true
 - id: 688b3d2b44e3b59d
   filename: IMG_7977.PNG

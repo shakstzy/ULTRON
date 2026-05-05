@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-02-04T12:54:44.836155-06:00'
   sha256: a1e7eecf0b177628a698110181ef47116753caa14a417fd41458a816e45b7c07
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Meet call screenshot with David Wender, Carl Anthony, and Adithya
+    Kumar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:19:52.937496+00:00'
   source_available: true
 - id: 74601e0ae606fbf4
   filename: IMG_5779.heic
@@ -33,9 +34,10 @@ attachments:
   sender: andrew-liutev-crypto
   sent_at: '2025-02-04T13:02:05.687711-06:00'
   sha256: b9406f9d46ebd5e50b4922eb57618c7c0cd61c8c542d5b1e78c4d4ac220431b8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Metaplex and Arcium 2025 Title Sponsor banners standing next to a painting
+    of a red animal.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:19:56.297735+00:00'
   source_available: true
 - id: 2c7b3b6edc83cbac
   filename: IMG_5781.heic
@@ -55,9 +57,10 @@ attachments:
   sender: andrew-liutev-crypto
   sent_at: '2025-02-04T13:02:05.687711-06:00'
   sha256: a219fbce3981d70e39fe85f8d00cd3a1d7c45436b55ce510dd09c72216b6ea47
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Modern open office with Colosseum and Sanctum banners, gaming chairs,
+    and exposed ductwork.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:20:02.034487+00:00'
   source_available: true
 - id: edbb5e8a44e2374f
   filename: IMG_7885.jpeg
@@ -66,9 +69,10 @@ attachments:
   sender: andrew-liutev-crypto
   sent_at: '2025-02-04T13:05:02.410117-06:00'
   sha256: 87e238da0f6674840f8eb4a9fd4a3d80cfdbbac5f4e9bcf393a49cf3f99767fc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Kumar drinks from a glass on a video call with Andrew L in front of
+    an Outerscope logo.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:19:59.154443+00:00'
   source_available: true
 - id: 666181c62db2e8b3
   filename: IMG_5671.PNG
@@ -77,9 +81,10 @@ attachments:
   sender: me
   sent_at: '2025-02-14T18:06:17.667000-06:00'
   sha256: 6b239bf74f53b5f976f87622639ff58d30370c200420863a81ddc7a9a47eeb66
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of an active 2-second phone call with Andrew Liutev
+    Crypto.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:19:58.497442+00:00'
   source_available: true
 chat_message_guids_count: 34
 deleted_upstream: null

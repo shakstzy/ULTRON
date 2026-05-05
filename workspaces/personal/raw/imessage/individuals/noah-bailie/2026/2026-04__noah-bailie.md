@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-04-03T02:17:57.482836-05:00'
   sha256: 4eecbb58c75decf304bb837580345dfe62231f04957070c87a910b290a5b563e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Close-up of the glowing orange cherry at the tip of a lit blunt or
+    cigar held by fingers.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:40:00.814595+00:00'
   source_available: true
 - id: c3782edbe17d9544
   filename: IMG_8454.png

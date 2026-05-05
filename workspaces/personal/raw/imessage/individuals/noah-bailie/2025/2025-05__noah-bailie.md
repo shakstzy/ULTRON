@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-05-10T18:19:22.516811-05:00'
   sha256: 3dcadb121127f13989a4d197f626badbbfef7e094c2af330e4aa3fac8f08c282
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Frontier boarding pass for Adithya S Kumar, flight F9 2890 from DEN
+    to AUS.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:40:00.106284+00:00'
   source_available: true
 - id: db4994f087dcbda1
   filename: 76932322808__BF15365F-A430-4A20-867C-31D63E727BD5.HEIC
@@ -55,9 +56,10 @@ attachments:
   sender: me
   sent_at: '2025-05-21T21:12:16.426000-05:00'
   sha256: f92f16ffb9e4daf046aeff0f6a77ef31b252446bd775edf0bcd19d19742e51fb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Map of Austin, Texas highlighting smoke shops and liquor stores near
+    Highway 183.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:42:14.475562+00:00'
   source_available: true
 - id: 28d37b399cfe935e
   filename: IMG_9892.jpeg
@@ -66,9 +68,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2025-05-22T20:58:23.100592-05:00'
   sha256: a237cf5de06003e2f0a99e715ca89881ad805403b616ca9d260d81ba7ad8abf0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Poster for the 2025 Hot Summer Nights concert series in Sherman, TX,
+    listing weekly performers.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:35:15.604978+00:00'
   source_available: true
 - id: 92d552241a29245c
   filename: IMG_1096.png
@@ -77,9 +80,10 @@ attachments:
   sender: me
   sent_at: '2025-05-24T00:08:03.505000-05:00'
   sha256: c70cdad23d568a8e892c34b9f2a68c1ee5e5ce9322af8e99fdf48fc1e8254099
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two young men smile for a selfie at night with the Texas A&M stadium
+    in the background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:35:07.302879+00:00'
   source_available: true
 - id: 57f19abca20aaf69
   filename: Audio Message.caf

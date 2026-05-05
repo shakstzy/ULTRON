@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-12-17T18:42:39.882000-06:00'
   sha256: 9397eb4fb5b196ac6c2ea24b5f0a82f98a7e966db0fb9049093577a50bb31ff5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a failed "traveling" reply followed by a "Supp"
+    message.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:40:01.703330+00:00'
   source_available: true
 - id: f47d00e03f818d89
   filename: IMG_2597.heic
@@ -33,9 +34,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2025-12-24T21:09:28.890864-06:00'
   sha256: c126cd605eee912c841d311fd4a3a709c8ee01768fccaeca06dd531e09d4b1e6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Six people pose in a church sanctuary with organ pipes and festive
+    Christmas wreaths.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:35:19.534158+00:00'
   source_available: true
 chat_message_guids_count: 22
 deleted_upstream: null

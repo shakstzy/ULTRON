@@ -22,9 +22,10 @@ attachments:
   sender: sam-garcia
   sent_at: '2026-01-02T19:53:53.290546-06:00'
   sha256: 2a5b9473ee4d66630c0f2d756163815c734e054ab1c24fef4915a5fc0aa2cc99
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dark mode Google Maps search for "6th street whole foods" in Austin,
+    Texas.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:37:34.866313+00:00'
   source_available: true
 - id: 1a635240b92a57b0
   filename: IMG_2935.png

@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2026-02-05T13:31:09.065645-06:00'
   sha256: 51324c589e6f51b85644146a69da6bca8eddf4c64deab9ab5a68cabfc070ede3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "Find My map tracking Aarti\u2019s Handbag at 42011 Fourth St W, Lancaster,\
+    \ CA."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:41:16.940552+00:00'
   source_available: true
 - id: c15e4cf19077aa47
   filename: IMG_5913.png
@@ -66,9 +67,10 @@ attachments:
   sender: me
   sent_at: '2026-02-05T13:53:36.651858-06:00'
   sha256: 1100f8e85e9a8622eafbb0678279f01d733e5f74d52fe77db64e5b90e9e3cb43
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dark digital map view of Triple 777 Liquor and Executive Inn near L
+    Street.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:40:01.418602+00:00'
   source_available: true
 - id: f44f0322567c3ac3
   filename: BDA7222D-CD7A-4C92-9CF2-09ED8DE02DED.pluginPayloadAttachment
@@ -88,9 +90,10 @@ attachments:
   sender: me
   sent_at: '2026-02-08T23:08:21.046909-06:00'
   sha256: a80f40e619fcaa61858098c066e4dcf6da0d1e1ffd4337786fcbd300f6a79c3c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Video player screenshot of "THE GOOD SIDE" in pink text over a yellow
+    sunburst background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:37:53.195299+00:00'
   source_available: true
 - id: 55a8fc6ffbf738c4
   filename: IMG_3550.png
@@ -99,9 +102,10 @@ attachments:
   sender: me
   sent_at: '2026-02-08T23:08:32.571294-06:00'
   sha256: 3bb18e49abe6bedd14a5302c634db0633ae10f2782a69abd700ca069c58a2ba0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: KXII 12 news graphic with "MOST WATCHED" text over a nighttime city
+    street view.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:42:27.896838+00:00'
   source_available: true
 - id: 7971740070f1f30f
   filename: IMG_4186.png
@@ -143,9 +147,10 @@ attachments:
   sender: me
   sent_at: '2026-02-20T00:57:35.141018-06:00'
   sha256: 75963c770e6e81a0b5c86883a6273944bc07aeaf1dad1f9f446a27ad964e4eaf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Starlight headliner inside a car at night with motion-blurred golden
+    lights through the window.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:40:31.841614+00:00'
   source_available: true
 - id: b9cc6e07d63dda28
   filename: 662DEEE8-36EC-409E-AE51-9FDEDC63B81D.pluginPayloadAttachment

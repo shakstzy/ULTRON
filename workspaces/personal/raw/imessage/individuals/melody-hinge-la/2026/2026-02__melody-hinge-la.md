@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-02-23T20:14:51.128000-06:00'
   sha256: 2c4e877da617a519b5213061cc9eb08107df162d48bfb5b4864d2feba6f7b7ea
-  description: null
-  description_model: null
-  extracted_at: null
+  description: GamePigeon Cup Pong game with ten red cups on a green table and a large
+    green play icon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:33:38.527954+00:00'
   source_available: true
 chat_message_guids_count: 7
 deleted_upstream: null

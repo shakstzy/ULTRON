@@ -22,9 +22,10 @@ attachments:
   sender: mo-snaps-uc-berkeley
   sent_at: '2025-11-08T23:10:10.152190-06:00'
   sha256: adc80a1b75b5bb6781f17c42ba94391777d10833d2f91e989d482288f367aa0f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone Notes screenshot reading "I'm gonna invite my my first wife
+    to my second wedding"
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:25:14.132663+00:00'
   source_available: true
 chat_message_guids_count: 3
 deleted_upstream: null

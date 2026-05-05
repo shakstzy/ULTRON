@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2024-04-26T23:19:17.965000-05:00'
   sha256: 7c66c29c3e3e768a8e40466f069d3d5bb836917de93ee469e0f5cbb2439a3340
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Wikipedia snippet: James Bourne writes 20% faster solo than when in
+    the band Busted.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:23:32.459502+00:00'
   source_available: true
 - id: 89d01fe9e8a64c80
   filename: httpswww.leaked.fmplayd34e7d45-4c41-4e19-995a-0a3ff5a135edlock.heic
@@ -44,9 +45,10 @@ attachments:
   sender: mo-snaps-uc-berkeley
   sent_at: '2024-04-29T19:03:41.314492-05:00'
   sha256: 8460a88095e4ed5eb8b18dfdd150d6c37c5d22ae0f538178ca11df13d7b8c015
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile screenshot of leaked.fm showing a "Lifestyle" card from shak
+    to [c-list].
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:22:43.137762+00:00'
   source_available: true
 - id: 9a4b9edfe3d41ba9
   filename: CARD_3653.vcf
@@ -66,9 +68,10 @@ attachments:
   sender: me
   sent_at: '2024-04-29T19:07:02.872000-05:00'
   sha256: daad5bd928c8e30bcabb6070b2967909cb4d563764782c4d2b3a000940c9605d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A dark mode message bubble containing the text "leaked" and a circular
+    "L" contact icon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:20:56.488234+00:00'
   source_available: true
 - id: f9a0d0e38f040c9a
   filename: "Screenshot 2024-04-29 at 5.11.51\u202FPM.heic"
@@ -77,9 +80,10 @@ attachments:
   sender: mo-snaps-uc-berkeley
   sent_at: '2024-04-29T19:11:59.604389-05:00'
   sha256: 502fdc5a2910c46407d1662c38908ad9e9309311c08d045a897e7425688f7fde
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "iPhone screenshot of an iMessage conversation with leaked\u2122 showing\
+    \ a \"Prodigy\" track card."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:20:54.813408+00:00'
   source_available: true
 chat_message_guids_count: 53
 deleted_upstream: null

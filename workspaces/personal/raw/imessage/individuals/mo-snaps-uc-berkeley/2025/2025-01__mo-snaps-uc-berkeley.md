@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-01-21T11:14:42.339887-06:00'
   sha256: b556b7012071a1ac31f162e081584dfeaacd3151940c9fbc7293d44c249c695d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Meet screenshot with Sarah Baxendell, David Schultz, Jake Hartnell,
+    and Adithya Kumar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:20:15.234224+00:00'
   source_available: true
 - id: 544f5e585c692733
   filename: IMG_0925.png
@@ -66,9 +67,10 @@ attachments:
   sender: me
   sent_at: '2025-01-22T20:34:13.881030-06:00'
   sha256: 5f0d03b22893ccf659b9dc88e05564e4a09a5e8b62729d76f699cbdbecc4af39
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Notion "quantum" integration settings with secret and enabled content/comment
+    capabilities.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:20:04.707842+00:00'
   source_available: true
 - id: 7d1786d53827d173
   filename: IMG_3705.png
@@ -77,9 +79,10 @@ attachments:
   sender: me
   sent_at: '2025-01-22T20:34:21.869023-06:00'
   sha256: f9aa1f2496ea659a8384dc86272c81af08987c3157d430be5e226cb91cff2a4c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Notion page settings menu for 'Weekly BD <> Product' showing an active
+    'quantum' connection.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:20:09.468443+00:00'
   source_available: true
 - id: b2cbc1aaba41a5c9
   filename: PNG image.png

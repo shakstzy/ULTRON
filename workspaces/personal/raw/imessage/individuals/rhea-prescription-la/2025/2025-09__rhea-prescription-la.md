@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-09-05T17:05:35.992000-05:00'
   sha256: 5fe3ab27bb82f6e231382221105f201cc32e60e090d7a97088370c6665bef5cd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage bubbles requesting studio rooms, writing sessions, and song
+    feedback from Caitlin.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:39:11.175896+00:00'
   source_available: true
 chat_message_guids_count: 5
 deleted_upstream: null

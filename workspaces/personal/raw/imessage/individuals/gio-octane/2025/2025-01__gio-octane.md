@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-01-29T14:05:46.202000-06:00'
   sha256: a756bc6542010a6c050c2593304e389d6a2fddb2427e18707dc8b5e9d6bde5e3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Jan 28 calendar screenshot showing 'Crypto Drinks' and a 'You're alone
+    on the call' overlay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:32:22.047634+00:00'
   source_available: true
 chat_message_guids_count: 33
 deleted_upstream: null

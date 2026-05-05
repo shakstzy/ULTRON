@@ -55,9 +55,10 @@ attachments:
   sender: me
   sent_at: '2025-02-06T15:59:11.469075-06:00'
   sha256: 64495a5ba66f46e8d52ba366151b7f02e35b0b3538d08077b9b7e5042e6bef51
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone Wi-Fi settings listing available networks like BrightStar Office
+    and Primary FiDi.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-05T02:46:05.787769+00:00'
   source_available: true
 - id: 36cba1da14248898
   filename: IMG_7662.HEIC

@@ -47,6 +47,15 @@ Direct, low-decoration prose. No hedging. Opinionated where evidence supports. N
 
 All stages run via `_shell/bin/run-stage.sh <stage> [<workspace>]`. See `_shell/stages/<stage>/CONTEXT.md` for each contract.
 
+## Scheduling
+
+Recurring jobs (ingest cron, lint, graphify, audit, weekly-review) are declared in YAML, not hand-written plist XML. Source of truth:
+
+- Per-workspace: `workspaces/<ws>/config/schedule.yaml`
+- Cross-workspace: `_shell/config/global-schedule.yaml`
+
+The `schedule` skill compiles those into launchd plists at `_shell/plists/` and loads them with `launchctl bootstrap`. Always invoke the skill — never write plist XML or call `launchctl` directly. Modes: `compile`, `load`, `unload`, `status`, `remove`. `load` requires explicit confirmation in chat.
+
 ## Where to go for what
 
 - New conversation about a person → check `_global/entities/people/<slug>.md` for backlinks, then drill into the workspace cited.

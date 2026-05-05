@@ -57,6 +57,33 @@ class AttendeesTest(unittest.TestCase):
         self.assertIsNone(creator)
         self.assertEqual(len(attendees), 1)
 
+    def test_strips_granola_details_from_creator(self):
+        # Granola's API returns creator with a nested "details" object
+        # (Affinity / HubSpot / company lookup state). We discard it.
+        people = {
+            "creator": {
+                "name": "Adithya",
+                "email": "adithya@outerscope.xyz",
+                "details": {"person": {"name": {"fullName": "Adithya"}}},
+            },
+            "attendees": [],
+        }
+        creator, _ = build_attendees(people)
+        self.assertEqual(set(creator.keys()), {"name", "email"})
+        self.assertNotIn("details", creator)
+
+    def test_strips_details_from_attendees_too(self):
+        people = {
+            "creator": None,
+            "attendees": [{
+                "name": "Sydney",
+                "email": "sydney@eclipse.audio",
+                "details": {"company": {"name": "Eclipse Labs"}},
+            }],
+        }
+        _, attendees = build_attendees(people)
+        self.assertEqual(set(attendees[0].keys()), {"name", "email"})
+
 
 class DurationStrTest(unittest.TestCase):
     def test_minutes_seconds(self):

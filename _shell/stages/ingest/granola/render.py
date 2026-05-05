@@ -17,15 +17,29 @@ _SOURCE_LABEL = {
 # Attendees
 # ---------------------------------------------------------------------------
 
+def _trim_person(p: dict | None) -> dict | None:
+    """Keep only {name, email} — strip Granola's nested `details` blob."""
+    if not isinstance(p, dict):
+        return None
+    email = (p.get("email") or "").strip().lower() or None
+    return {"name": p.get("name"), "email": email}
+
+
 def build_attendees(people: dict | None) -> tuple[dict | None, list[dict]]:
     """Return (creator, attendees) with the creator de-duped from attendees.
+
+    Both creator and attendees are trimmed to {name, email} only —
+    Granola's API returns a nested `details` object with company /
+    Affinity / HubSpot lookup state that we deliberately discard at the
+    raw layer. Wiki agents can re-enrich downstream.
 
     Dedup key: lowercased email. If creator.email is missing, fall back
     to lowercased-stripped name.
     """
     if not isinstance(people, dict):
         return None, []
-    creator = people.get("creator") if isinstance(people.get("creator"), dict) else None
+    creator_raw = people.get("creator") if isinstance(people.get("creator"), dict) else None
+    creator = _trim_person(creator_raw)
     raw_attendees = people.get("attendees") or []
 
     if creator:
@@ -36,18 +50,16 @@ def build_attendees(people: dict | None) -> tuple[dict | None, list[dict]]:
 
     out: list[dict] = []
     for a in raw_attendees:
-        if not isinstance(a, dict):
+        a_trim = _trim_person(a)
+        if not a_trim:
             continue
-        a_email = (a.get("email") or "").strip().lower()
-        a_name = (a.get("name") or "").strip().lower()
+        a_email = (a_trim.get("email") or "").strip().lower()
+        a_name = (a_trim.get("name") or "").strip().lower()
         if ckey_email and a_email == ckey_email:
             continue
         if not ckey_email and ckey_name and a_name == ckey_name:
             continue
-        out.append({
-            "name": a.get("name"),
-            "email": a_email or None,
-        })
+        out.append(a_trim)
     return creator, out
 
 

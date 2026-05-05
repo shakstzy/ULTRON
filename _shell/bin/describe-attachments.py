@@ -82,6 +82,76 @@ def _wait_cooldown():
         time.sleep(min(wait, 5.0))
 
 
+# ---------------------------------------------------------------------------
+# Account rotation: swap ~/.gemini/oauth_creds.json on rate-limit
+# ---------------------------------------------------------------------------
+ACCOUNTS_DIR = Path.home() / ".gemini" / "accounts"
+OAUTH_CREDS = Path.home() / ".gemini" / "oauth_creds.json"
+_account_lock = threading.Lock()
+_exhausted_accounts: set[str] = set()    # filenames known exhausted in this run
+_active_account_name = [None]            # name of currently-active account file
+
+
+def _list_accounts():
+    """Re-list accounts every call so new drops are picked up live."""
+    if not ACCOUNTS_DIR.exists():
+        return []
+    return sorted(ACCOUNTS_DIR.glob("*.json"))
+
+
+def _identify_active_account():
+    """Match current oauth_creds.json against accounts dir to find active one."""
+    if not OAUTH_CREDS.exists():
+        return None
+    try:
+        current = OAUTH_CREDS.read_bytes()
+    except OSError:
+        return None
+    for a in _list_accounts():
+        try:
+            if a.read_bytes() == current:
+                return a
+        except OSError:
+            continue
+    return None
+
+
+def init_account_state():
+    """Call once at startup to identify the active account."""
+    a = _identify_active_account()
+    if a:
+        _active_account_name[0] = a.name
+        print(f"  active account: {a.stem}")
+    accts = _list_accounts()
+    print(f"  rotation pool: {len(accts)} account(s) — {[a.stem for a in accts]}")
+
+
+def rotate_account():
+    """Swap to next non-exhausted account. Returns True if rotated, False if all spent."""
+    import shutil
+    with _account_lock:
+        # Mark current as exhausted (we're rotating because it hit 429)
+        if _active_account_name[0]:
+            _exhausted_accounts.add(_active_account_name[0])
+        accounts = _list_accounts()
+        for a in accounts:
+            if a.name in _exhausted_accounts:
+                continue
+            try:
+                shutil.copy2(a, OAUTH_CREDS)
+                _active_account_name[0] = a.name
+                _COOLDOWN_RELEASE_AT[0] = 0.0
+                sys.stdout.write(f"\n  >>> rotated to: {a.stem} (exhausted: {len(_exhausted_accounts)}/{len(accounts)})\n")
+                sys.stdout.flush()
+                return True
+            except OSError:
+                _exhausted_accounts.add(a.name)
+                continue
+        sys.stdout.write(f"\n  !!! all {len(accounts)} account(s) exhausted; backing off\n")
+        sys.stdout.flush()
+        return False
+
+
 def hash_file(path):
     """Compute sha256 of a file. Returns hex or None."""
     if not path.exists() or path.is_dir():
@@ -150,12 +220,18 @@ def gemini_describe_once(path, kind, timeout=180):
 
 
 def gemini_describe_with_retry(path, kind, max_retries=3):
+    """On rate_limit: try rotating to a fresh account FIRST (immediate retry).
+    Only fall back to cooldown if all accounts are exhausted."""
     delay = 5.0
     for attempt in range(max_retries + 1):
         _wait_cooldown()
         desc, model, err = gemini_describe_once(path, kind)
         if err != "rate_limit":
             return desc, model, err
+        # Rate limit: try rotating to next account
+        if rotate_account():
+            continue  # retry immediately with new account, don't increment delay
+        # All accounts exhausted; back off and wait for refill
         sleep_for = delay + random.uniform(0, delay)
         _request_cooldown(sleep_for)
         if attempt >= max_retries:

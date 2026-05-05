@@ -1,7 +1,7 @@
 ---
 source: granola
 workspace: eclipse
-ingested_at: '2026-05-05T02:06:46.648572Z'
+ingested_at: '2026-05-05T02:09:43.516905Z'
 ingest_version: 1
 content_hash: blake3:789759b1391627ec976a60b0a35ec96b5f6f78aa65220ea260b6def8f149af12
 provider_modified_at: '2026-03-03T14:12:56.502Z'
@@ -18,12 +18,6 @@ folders:
 creator:
   name: Adithya
   email: adithya@outerscope.xyz
-  details:
-    person:
-      name:
-        fullName: Adithya
-    company:
-      name: Outerscope
 attendees: []
 calendar_event: null
 transcript_segment_count: 60

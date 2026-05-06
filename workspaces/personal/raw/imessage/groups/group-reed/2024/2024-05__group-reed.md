@@ -22,9 +22,10 @@ attachments:
   sender: reed-hazard-lender
   sent_at: '2024-05-02T21:14:46.613151-05:00'
   sha256: 3c47c2028b1d5e4533136daa0f88540b8acef274c7fd5b618417f28205ee73cb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage from Shak asking about IRS transcript customer file number
+    CMG0000001.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:02:17.312188+00:00'
   source_available: true
 chat_message_guids_count: 2
 deleted_upstream: null

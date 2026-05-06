@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-10-18T23:37:29.268949-05:00'
   sha256: f1e3582fa167342468b2003bb8bae392671680755395fb01d08bc4a1afd35272
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Illuminated red IPPUDO BERKELEY sign on a modern building facade at
+    night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:58.068294+00:00'
   source_available: true
 chat_message_guids_count: 20
 deleted_upstream: null

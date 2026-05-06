@@ -33,9 +33,10 @@ attachments:
   sender: dad
   sent_at: '2024-08-25T20:00:39.457757-05:00'
   sha256: dc7ba570714d145d646132ebc4adf0e8fe66ae6ab8ca8577277a002ec2d769dc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A woman in a white shirt and red pants washes a man's feet in a bowl
+    on a porch.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:53:02.719458+00:00'
   source_available: true
 - id: 45be4e318c20ce23
   filename: image000000.jpg

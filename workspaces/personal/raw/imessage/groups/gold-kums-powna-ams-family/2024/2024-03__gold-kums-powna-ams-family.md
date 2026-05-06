@@ -33,9 +33,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-12T14:24:43-05:00'
   sha256: 7b6065de8ad4f00df99b9567256e836282b0576500a1f7633f0f2196e5355404
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Fried eggs, bacon, cheese, toast, and berries on a plate with Kirkland
+    coconut water.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:57:27.233301+00:00'
   source_available: true
 - id: 84731414411178e9
   filename: image.png
@@ -77,9 +78,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-12T21:34:23-05:00'
   sha256: 8992eda7483fc48da77c7d21ce9088d310d420cf5f52f24491e34161021b2847
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Pasta with tomato sauce and green vegetables in a clear glass storage
+    container.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:57:36.370256+00:00'
   source_available: true
 - id: aab1adcb659c80b8
   filename: image.png
@@ -88,9 +90,10 @@ attachments:
   sender: mom
   sent_at: '2024-03-12T22:57:06-05:00'
   sha256: 775236cdb39c8a412be3db11a20a583e604cd7887e1c6091667df68b83554b3a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A woman holding a mug, a boy in a red shirt, and a man with glasses
+    sit on a tan couch.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:58:13.213321+00:00'
   source_available: true
 - id: dae916268ee7a7af
   filename: image.png
@@ -143,9 +146,10 @@ attachments:
   sender: mom
   sent_at: '2024-03-15T14:06:11-05:00'
   sha256: a35b25abaaa8566818da56da445a393ffb60a72ff4545083a7c259917623fd2d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A toddler eats a snack in a high chair with the caption "OK UNCLE!!"
+    overlaid.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:57:58.155502+00:00'
   source_available: true
 - id: 620b27ef83f31a1a
   filename: IMG_7400.heic
@@ -154,9 +158,10 @@ attachments:
   sender: dad
   sent_at: '2024-03-16T12:14:34.021850-05:00'
   sha256: ec93a00cf7875f07ac9def3ca2ef75822adc12138cb753db99523ec8a8ff58df
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two women in bibs 5268 and 5270 celebrate holding hands at a race finish
+    line near a stadium.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:57:47.814458+00:00'
   source_available: true
 - id: 0151d7d51fbee0eb
   filename: IMG_7399.heic
@@ -176,9 +181,10 @@ attachments:
   sender: dad
   sent_at: '2024-03-16T12:15:17.149180-05:00'
   sha256: 893efa14787e64ea729e9eee6f0ccfb56782266104c161f91eff74dbac83d5c1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two women holding hands cheer as they cross a race finish line near
+    a stadium.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:59:10.989279+00:00'
   source_available: true
 - id: 2fb0ad644eb9dff3
   filename: image000000.jpg
@@ -187,9 +193,10 @@ attachments:
   sender: mom
   sent_at: '2024-03-17T13:38:12-05:00'
   sha256: 424764e3da07f4e60a75de07f1c613a673aff12a1a1005e9b82dc949b4430287
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LASA Robotics team members in purple shirts posing with an award at
+    a FIRST competition.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:57:20.644914+00:00'
   source_available: true
 - id: 78e525fa6e434be9
   filename: image000000.jpg
@@ -209,9 +216,9 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-17T15:04:49-05:00'
   sha256: 20a919c27c695873dd9dbafa4127e225b071047f5fe548718d9d7b8032bd0ab3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of Boston Marathon qualifying times for men by age group.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:58:37.479977+00:00'
   source_available: true
 - id: cff21ca19ebbe965
   filename: image000001.jpg
@@ -297,9 +304,9 @@ attachments:
   sender: me
   sent_at: '2024-03-19T14:33:40.139884-05:00'
   sha256: b420c63070dc97e4f921330c22259343e259673dd0d370ed398cf696921b0e52
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Wharton MBA banners on a street pole at Howard Street in San Francisco.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:59:28.148261+00:00'
   source_available: true
 - id: 9b0346957fabb3d7
   filename: image000000.jpg
@@ -352,9 +359,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-19T22:46:58-05:00'
   sha256: dcff90a9481f2a0ec03b8578d0cd628749dbbb5f92f13331d161561dd63988e3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: MyFitnessPal screenshot showing a food diary with 2,902 calories logged
+    and 8 remaining.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:58:58.963200+00:00'
   source_available: true
 - id: a741490f100f05d8
   filename: image000000.jpg
@@ -429,9 +437,9 @@ attachments:
   sender: mom
   sent_at: '2024-03-27T19:54:34-05:00'
   sha256: ca95d6a4471baa89f9e93a312982d539eff7c85701c1af863fbc70b5da5688af
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Split screen of two men in suits with overlaid text "GIVE ME YOUR VOTE!!".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:58:57.498297+00:00'
   source_available: true
 - id: 8a1a6b6c92fd806b
   filename: image.png
@@ -440,9 +448,9 @@ attachments:
   sender: mom
   sent_at: '2024-03-27T21:17:50-05:00'
   sha256: cd962150f6ed13ca0f3895c677278663b96d2b04524bd12f15a0f8d98daed3c6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man gardens on a lawn under a dark, stormy sky.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:58:19.690666+00:00'
   source_available: true
 - id: 937a094396c7570b
   filename: image000001.jpg
@@ -451,9 +459,9 @@ attachments:
   sender: mom
   sent_at: '2024-03-28T12:35:12-05:00'
   sha256: 3e393d82f498be6c3e9c1145ae6ceda5122b7f90fe67a21cd10fc5795c5f9969
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Thick oatmeal in a glass measuring cup and a white bowl of pale liquid.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:58:27.875468+00:00'
   source_available: true
 - id: 4bf58cdd430c9b88
   filename: image000000.jpg
@@ -484,9 +492,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-29T12:11:17-05:00'
   sha256: b2843a5973fc08bafa9a4d4fc75790756c9d1449331107a77ced866e11299ebd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Pixelated 3D avatar wearing blue goggles standing in a low-poly video
+    game or comic book shop.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:59:36.584592+00:00'
   source_available: true
 - id: a215b2e0b5185ee3
   filename: IMG_5491.png

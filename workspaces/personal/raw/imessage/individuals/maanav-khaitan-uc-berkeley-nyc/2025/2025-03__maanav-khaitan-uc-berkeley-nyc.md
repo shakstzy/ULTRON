@@ -102,9 +102,10 @@ attachments:
   sender: me
   sent_at: '2025-03-23T13:23:43.965000-05:00'
   sha256: 40948390eb7e9369f7287d54e93029fae2f207170b234f6ca149bce4ac6fbe6c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man's face with yellow hands on his forehead is centered inside a
+    sliced peach.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:25.762778+00:00'
   source_available: true
 - id: f7d54b3fd25b3598
   filename: IMG_0275.png

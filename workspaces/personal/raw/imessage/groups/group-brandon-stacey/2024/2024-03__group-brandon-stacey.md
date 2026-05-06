@@ -22,9 +22,10 @@ attachments:
   sender: stacey-brandon
   sent_at: '2024-03-15T10:22:23.830388-05:00'
   sha256: f8807bb79bec69393a9d38f13ca4f8efbe28070b980e21f042fe50130c010be2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Blue Toyota Camry and black Jaguar parked on a concrete driveway next
+    to a white wall.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:01:49.738375+00:00'
   source_available: true
 - id: f32e344de471ee10
   filename: IMG_2305.HEIC

@@ -55,9 +55,10 @@ attachments:
   sender: me
   sent_at: '2024-11-25T00:20:42.562000-06:00'
   sha256: 94efd99a5d38c30af3ab1d530262ccaba41c4cd8ad6a4534625c79ea1de6ff13
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Photo of a laptop screen showing a close-up of a bearded man's face
+    next to a backlit keyboard.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:33:01.472588+00:00'
   source_available: true
 - id: 53f7d2adfb761e10
   filename: IMG_5233.png

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-03-01T20:00:37.497000-06:00'
   sha256: a0a2fe6205d3f9df4ef5a074d0df8bfb9fce8c80c67c6417da8206a6a1636e2b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men pose for a selfie at ETHDenver 2025; Ian V. gives a thumbs
+    up.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:49.538703+00:00'
   source_available: true
 chat_message_guids_count: 3
 deleted_upstream: null

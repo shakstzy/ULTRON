@@ -92,9 +92,10 @@ attachments:
   sender: me
   sent_at: '2025-06-17T19:39:14.366000-05:00'
   sha256: 7fcd585f4fc98dea4705cd9518c3716516fa757c87cae8d34b7f880489efcd4e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Maps NYC transit directions to Union Square via the 6 subway
+    train.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:33:09.298918+00:00'
   source_available: true
 - id: 3fa568493df4b3e8
   filename: IMG_4516.PNG
@@ -127,9 +128,10 @@ attachments:
   sender: abraham-crypto-lightnodeventures-la
   sent_at: '2025-06-20T21:17:54.060743-05:00'
   sha256: 7ab74da8ae5c8fe693183eedfb3fba8a085e405ed0a4cc0982e8a087c7c2e377
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A large crowd socializes on a modern patio beside a swimming pool at
+    dusk.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:32.771603+00:00'
   source_available: true
 - id: 351fdc4c3130738f
   filename: IMG_0087.HEIC

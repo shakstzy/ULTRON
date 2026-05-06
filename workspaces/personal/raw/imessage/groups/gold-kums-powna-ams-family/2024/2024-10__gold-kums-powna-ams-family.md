@@ -44,9 +44,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-10-09T17:01:35-05:00'
   sha256: 5323eff284bd5418460567f0bb72cb210ba8aa011ed4d87cac95a540515508d8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two young men smiling in selfies outside the Liberal Arts and Science
+    Academy.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:54:59.152582+00:00'
   source_available: true
 - id: 29bf90ac7dc0522a
   filename: IMG_2942.JPG
@@ -88,9 +89,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-10-10T12:35:49-05:00'
   sha256: 0c0941e53051b8db06c85829b08cbc730c262b07f8d1d6544660d125fe9a5223
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A sheet of nori and a plastic-wrapped rice ball sit on a white paper
+    plate.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:57:56.601235+00:00'
   source_available: true
 - id: bb8afbd1d529a2c9
   filename: image000001.jpg
@@ -99,9 +101,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-10-10T12:35:49-05:00'
   sha256: 389b8979b0279b6abd2078aa6c7238bc647ca52d738985798475336f67ea78d0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A rice ball topped with shredded imitation crab on a sheet of roasted
+    seaweed.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:56:17.572865+00:00'
   source_available: true
 - id: 8e40bda0b8e456f3
   filename: 75037936690__7CF8DCD2-B82F-4CD5-BE31-4D79EC6D0ABA.HEIC
@@ -144,9 +147,10 @@ attachments:
   sender: me
   sent_at: '2024-10-16T16:01:46.993083-05:00'
   sha256: 986da361ad5ebc0d956289059993739836b65b963a9e23c98571dccffd2dbc9e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Flight confirmation for Adithya Kumar's Nov 22 trip from Chennai to
+    Austin via Doha.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:56:08.713338+00:00'
   source_available: true
 - id: b3590eb53e27eceb
   filename: "Screenshot 2024-10-20 at 10.04.43\u202FAM.heic"
@@ -177,9 +181,9 @@ attachments:
   sender: mom
   sent_at: '2024-10-21T19:16:17.714292-05:00'
   sha256: 94d0f69c61980cf9cc5b295d1a02e0bef17c2fc45e0b648a75be410b791e8f85
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Tina Fey waving enthusiastically with "YOU ROCK!!" text overlay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:56:35.782149+00:00'
   source_available: true
 - id: 8938ae995426244a
   filename: image000000.gif
@@ -188,9 +192,9 @@ attachments:
   sender: mom
   sent_at: '2024-10-24T18:55:49-05:00'
   sha256: 2df109a96ee0f075fd00c01c66ff61f47febb9b13eda581fb370827350728cc2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A sad, teary-eyed toddler pouts below the caption "I MISS YOU ALREADY".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:57:17.413005+00:00'
   source_available: true
 - id: 8a67e2ed7dd0f655
   filename: Screensho.jpg

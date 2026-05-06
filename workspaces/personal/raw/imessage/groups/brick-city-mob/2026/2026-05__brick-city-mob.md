@@ -44,9 +44,10 @@ attachments:
   sender: jake-garcia
   sent_at: '2026-05-02T17:43:00.045028-05:00'
   sha256: 60a27f09291c2ea1e149ccaafd2f4a91a9c9b45d24c64f32a2db231ebb7b8c13
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A blue Duralast 2-ton hydraulic trolley jack and a black lug wrench
+    on gray asphalt.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:51:44.173410+00:00'
   source_available: true
 - id: 7d7b7ef392b886ff
   filename: IMG_1500.JPG

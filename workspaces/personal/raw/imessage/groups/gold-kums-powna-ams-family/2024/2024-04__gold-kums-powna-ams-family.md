@@ -110,9 +110,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-08T11:17:52-05:00'
   sha256: bb118bddf99d990eceb2d2e2879cb1f5e87e4b5b942e8723d27fc5af5f868fd5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Newspaper clipping detailing April 8 solar eclipse safety and timing
+    for Williamson County.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:50:48.522047+00:00'
   source_available: true
 - id: ae485bf1be0212e8
   filename: 0be64d8a-9abc-40bb-ab37-acc032e6d0f6.jpg
@@ -132,9 +133,9 @@ attachments:
   sender: me
   sent_at: '2024-04-08T16:13:47.313241-05:00'
   sha256: 17d66302d9830d88a4ec5507f9d1902275f319b9b3c01d46fbc87fa3b601ab42
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Blue Toyota Camry with front bumper damage and a detached fender liner.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:51:01.204125+00:00'
   source_available: true
 - id: 11334b320fa38465
   filename: image.png
@@ -154,9 +155,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-08T19:13:00-05:00'
   sha256: eea9bdc97b3a27eb8920cbf288c43f08b6b5463eaf1a8d36a5b5420398939f95
-  description: null
-  description_model: null
-  extracted_at: null
+  description: WhatsApp chat showing dermatologist-recommended skincare products for
+    Vicky's sensitive skin.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:52:07.074880+00:00'
   source_available: true
 - id: 5105539e4a318d5c
   filename: image000000.jpg
@@ -286,9 +288,9 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-10T13:06:28-05:00'
   sha256: 8753ac555ca39c5ec3616970339c9a80b78d2177753e86c72288c5041cfa8180
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Orange chicken and chow mein noodles in a white styrofoam takeout container.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:53:26.769942+00:00'
   source_available: true
 - id: d0d7aa55a0bcf6a4
   filename: image000000.jpg
@@ -385,9 +387,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-10T19:01:14-05:00'
   sha256: 409734e66a56f08c56fd735896c4724c53e19d3b12a83a956f695221edbcf84c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A young man in a tan suit and lanyard poses on a beach before an amusement
+    park pier.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:52:29.907238+00:00'
   source_available: true
 - id: 4bf33e87777ab2a0
   filename: image000005.jpg
@@ -517,9 +520,10 @@ attachments:
   sender: dad
   sent_at: '2024-04-14T14:49:13-05:00'
   sha256: 7087c8601b5ff6961f93a4b483a3dd3a760a510e48403725ace30c6d11aa8dfd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A box of Krispy Kreme mini doughnuts and a floral thank-you card on
+    a grey countertop.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:51:30.228877+00:00'
   source_available: true
 - id: 758b7d25f2437ea8
   filename: image000000.jpg
@@ -594,9 +598,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-24T14:02:10-05:00'
   sha256: 01ab3638256676e0e5bfc2f5579dbd3b87671aadfb0306770deca246e66e62ce
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A tea bag steeps in a clear glass mug of yellow liquid resting on a
+    dark surface.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:51:16.470784+00:00'
   source_available: true
 - id: c62a2dc08a1eb0ab
   filename: IMG_8371.jpeg
@@ -605,9 +610,10 @@ attachments:
   sender: me
   sent_at: '2024-04-24T14:06:27.185232-05:00'
   sha256: 18befa72a60bd5f4da991552981797f05ec2b2c3eabc2f4946e78aa439812957
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Redfin screenshot: house at 14911 W Navarre Way, Sylmar, CA, sold
+    for $718,000 in Feb 2024.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:52:39.757307+00:00'
   source_available: true
 - id: 9b7c59286d8b7537
   filename: image.png
@@ -616,9 +622,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-24T14:11:53-05:00'
   sha256: d496c3adb7c35ddef297d63401420b4a61292c9743aefe7dcc67ccb99e705796
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Vedic Rashi chart for Austin, Texas, showing planetary positions on
+    April 24, 2024.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:51:47.930973+00:00'
   source_available: true
 - id: f9203eca6d286847
   filename: image000000.jpg
@@ -627,9 +634,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-24T18:37:48-05:00'
   sha256: a65acc6fd3574cd67f3056b4186b6746cbed4f342508ed707fd76a42410c89bf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A white bowl containing a mixture of cooked black and white chickpeas
+    with a metal spoon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:51:57.285547+00:00'
   source_available: true
 - id: d03e7ef22ff52a40
   filename: image000000.jpg
@@ -638,9 +646,9 @@ attachments:
   sender: mom
   sent_at: '2024-04-24T18:38:02-05:00'
   sha256: b0e14a0da096fdc4fcc03aec2eafdbed21818b1cca89479552d2e74f5d1ac71a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Sliced beet chips in a clear plastic container with a metal spoon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:53:08.659696+00:00'
   source_available: true
 - id: 9351e745c51bdc02
   filename: image000000.jpg
@@ -671,9 +679,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-24T18:38:51-05:00'
   sha256: 0c3ec6b6bf683c4a2b42bf2eddf0f072f65fa30ca946f45856f5a84758e7d3b2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Stainless steel pot containing a thick purple mash and an orange silicone
+    spatula.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:55:27.798251+00:00'
   source_available: true
 - id: d26d83d0a05ff4ad
   filename: image000000.jpg
@@ -682,9 +691,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-24T18:39:17-05:00'
   sha256: 7bdd0e374a0ed3b8e130c479ad101c74bcba74948483c48ac78ae368576d13e9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man and woman sit at a dining table with food, a window, and an ornate
+    gold mirror.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:52:47.677456+00:00'
   source_available: true
 - id: e711f7f3834df2fe
   filename: image000000.png
@@ -715,9 +725,10 @@ attachments:
   sender: dad
   sent_at: '2024-04-25T12:28:02.647507-05:00'
   sha256: fa1234e36bf58c7150c3d95013a54498497b52945491b2ae8ae919b41c7bc07d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Cabbage salad with blueberries, walnuts, sunflower, pumpkin, and black
+    sesame seeds.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:55:39.730719+00:00'
   source_available: true
 - id: 18753a4cbb05f1d9
   filename: image000000.jpg
@@ -748,9 +759,10 @@ attachments:
   sender: me
   sent_at: '2024-04-26T11:45:11.825453-05:00'
   sha256: 5b31676464e6717aa3d3f3fe6ae062ceecedf0859a934a19c5c3aa099dc5d433
-  description: null
-  description_model: null
-  extracted_at: null
+  description: WhatsApp chat with Mom about a delayed Bank of America transfer and
+    asking Appa for help.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:55:09.107366+00:00'
   source_available: true
 - id: 6ff6ae4635e7d2f5
   filename: image000000.jpg
@@ -803,9 +815,9 @@ attachments:
   sender: mom
   sent_at: '2024-04-27T22:23:04-05:00'
   sha256: 23e6c5e312a5deca7770291042d885880fb1f58b0fcd22f5acd9df5a5e97829d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Ornate statue of Hanuman adorned with flower garlands and a vada mala.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:54:38.002283+00:00'
   source_available: true
 - id: 39360dca5d843454
   filename: image.png
@@ -814,9 +826,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-27T22:25:41-05:00'
   sha256: 81e7c73f733ce75898b39df9a9994db551d440be16e805924a70a787fda68a13
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling group in traditional and casual attire posing before a white,
+    ornate temple entrance.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:54:09.058234+00:00'
   source_available: true
 - id: 0ddbfbc298e9524a
   filename: IMG_5330.png
@@ -836,9 +849,10 @@ attachments:
   sender: me
   sent_at: '2024-04-27T22:56:31.637243-05:00'
   sha256: 6764535f4484f436771b654bedd6c03ec7f6f2ae8569b5289340b2b80f4b2fbe
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A garland of fried savory vadas alongside orange, yellow, and purple
+    flower garlands.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:56:26.502481+00:00'
   source_available: true
 - id: 4f93130500597b03
   filename: image.png
@@ -847,9 +861,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-27T23:00:00-05:00'
   sha256: 8ba34b4031d90af7fbd64c69e1612ce5d4ee4f3f7dfb40ea7be24e46ffa1df52
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hindu deity base adorned with a large vada garland and vibrant flower
+    arrangements.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:55:53.303631+00:00'
   source_available: true
 - id: e1ddf2de37425f27
   filename: image.png
@@ -880,9 +895,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-29T12:34:43-05:00'
   sha256: a36793b3a7eadd2df7728207de9cb8a30123cd21c2885c99178d3dc0e190ef19
-  description: null
-  description_model: null
-  extracted_at: null
+  description: AP Classroom screenshot showing a 38/40 score on a 4th 9 Weeks Test
+    submitted on 04/29.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:54:47.087071+00:00'
   source_available: true
 - id: 242b2c3416576564
   filename: Borat_Borat_Very_Nice.gif

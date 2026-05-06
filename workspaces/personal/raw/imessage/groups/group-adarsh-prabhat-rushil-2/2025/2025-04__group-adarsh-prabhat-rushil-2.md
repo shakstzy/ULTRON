@@ -33,9 +33,9 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-04-23T12:17:51.553375-05:00'
   sha256: a8d05e1672e70e7f073161442d0c5057f438a9f20f03d09d6292b06cb223b4bc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling man wearing glasses and a white hoodie under blue lighting.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:02:47.057393+00:00'
   source_available: true
 - id: a87bd7ae6e046663
   filename: IMG_7347.png

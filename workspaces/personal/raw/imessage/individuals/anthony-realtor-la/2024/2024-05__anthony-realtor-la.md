@@ -22,9 +22,10 @@ attachments:
   sender: anthony-realtor-la
   sent_at: '2024-05-21T20:52:32.284787-05:00'
   sha256: d892c4ecfb1e3ba4011ffc7e127fa8affa1b8210f46025feb6db118738ff181b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a vCard contact file for Alex Contractor. It stores basic contact
+    details including a name and a telephone number.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:29.028592+00:00'
   source_available: true
 chat_message_guids_count: 7
 deleted_upstream: null

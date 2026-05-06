@@ -66,9 +66,10 @@ attachments:
   sender: me
   sent_at: '2025-03-21T22:33:53.254629-05:00'
   sha256: a8339904b89bb9897c9dba8088fcaf0c446b7944fea42e090512e27332271d1f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat between Prabhat Nuthakki and Saif Ali discussing someone's
+    'terrible' move-out.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:00:53.860784+00:00'
   source_available: true
 chat_message_guids_count: 39
 deleted_upstream: null

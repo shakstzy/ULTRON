@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: 1ae5d0f664b3136fc687a7c9c49417be91754188ca4ed494fcf4212d49c3057f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hinge chat screenshot with Suhas about building Legos, making biryani,
+    and an undie run pregame.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:53.269284+00:00'
   source_available: true
 - id: df84df8dc43c9807
   filename: PHOTO-2026-02-19-16-56-27.jpg
@@ -77,9 +78,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: d746a7f84b98af811183d61dbe395131fcf9a9a846bdfceb639dfd8c0bc2913a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Hinge chat screenshot: Will and user discuss building a million houses
+    and New Year''s Eve plans.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:56.058801+00:00'
   source_available: true
 - id: aaad7d22371ecdf6
   filename: PHOTO-2026-02-19-16-56-27.jpg
@@ -88,9 +90,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: a20b2a889eaf740ea4564518c0f115b1b80f003f134bf11736996d2bef489d55
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a dating app chat with Harsh featuring a car selfie and
+    initial greeting messages.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:20.839236+00:00'
   source_available: true
 - id: db6fe58b4d48e299
   filename: PHOTO-2026-02-19-16-56-27.jpg
@@ -99,9 +102,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: 5885ac98c9786c3aa38d57f7f95e2c62a5d8f21599b3e1e951f60af76126689e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hinge chat screenshot with Luke featuring his mirror selfie and a brief
+    text conversation.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:23.573522+00:00'
   source_available: true
 - id: ba5f2b8c8df74e19
   filename: PHOTO-2026-02-19-16-56-27.jpg
@@ -121,9 +125,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: 4bf56ad6353d66d4ca6527525e406c1b67a897abb5e5ebf60ff20ef5304f9aad
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a Hinge chat with Luke featuring his selfie and messages
+    "hey u:)" and "Heyy".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:50.167021+00:00'
   source_available: true
 - id: 12335db458805edc
   filename: PHOTO-2026-02-19-16-56-27.jpg
@@ -143,9 +148,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: ceae5914c9bf463edd7e993dc730782a772bdd15d8a3f76b6fb7e2db7ba12d87
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hinge chat screenshot with Will about building a million houses and
+    New Year's Eve plans.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:28.690255+00:00'
   source_available: true
 - id: fc56a6f3df6a528e
   filename: PHOTO-2026-02-19-16-56-27.jpg
@@ -154,9 +160,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: 111c30bea915f6792b810d4c8ca46418e208cab67b24f1f14777084a07a1f2be
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hinge chat screenshot with Shardul featuring his photo and 'hii'/'Heyy'
+    messages.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:34.771525+00:00'
   source_available: true
 - id: e502af26dcf09f2d
   filename: PHOTO-2026-02-19-16-56-27.jpg
@@ -165,9 +172,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: 5b9bac7a45ad20a8ddd25838d8b2f63f14475e34591265585c619f622275bf56
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hinge chat with Suhas discussing food and sharing the Instagram handle
+    aartip_4779.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:52.146381+00:00'
   source_available: true
 - id: 4fddcc66eeb1d7f0
   filename: PHOTO-2026-02-19-16-56-27.jpg
@@ -209,9 +217,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: 08b85b6f55d6413f0cf70b496ce1fb470324cf9d1907519661608d22751435a7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hinge chat screenshot with Suhas discussing building Legos, cooking
+    biryani, and finals week.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:33:06.505879+00:00'
   source_available: true
 - id: 48b4ab0d914bceaf
   filename: PHOTO-2026-02-19-16-56-27.jpg
@@ -242,9 +251,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: 5b9bac7a45ad20a8ddd25838d8b2f63f14475e34591265585c619f622275bf56
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hinge chat with Suhas discussing food and sharing the Instagram handle
+    aartip_4779.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:52.146381+00:00'
   source_available: true
 - id: 8ed184b82548345d
   filename: PHOTO-2026-02-19-16-56-27.jpg
@@ -253,9 +263,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: 7e7764d0545d38e526d7085fab28a4c0492a7ae9eb549aacd0663195707d5bb4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a Hinge chat with Zack discussing aerospace engineering
+    and law careers.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:48.173907+00:00'
   source_available: true
 - id: c1e0715ed5b84835
   filename: PHOTO-2026-02-19-16-56-27.jpg
@@ -275,9 +286,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: 08b85b6f55d6413f0cf70b496ce1fb470324cf9d1907519661608d22751435a7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hinge chat screenshot with Suhas discussing building Legos, cooking
+    biryani, and finals week.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:33:06.505879+00:00'
   source_available: true
 - id: a9b0f7841c6388a9
   filename: PHOTO-2026-02-19-16-56-27.jpg
@@ -308,9 +320,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: 020004341a1492362c79e9e631473a2c8cb1d3fbaccd05b6eacc8ccf6779f2e3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hinge chat screenshot where Aarti and Zack exchange greetings and talk
+    about studying for finals.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:58.618902+00:00'
   source_available: true
 - id: 1d8e2d55b5c9b810
   filename: PHOTO-2026-02-19-16-56-27.jpg

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-08-07T11:57:56.934000-05:00'
   sha256: 8563c6dc22bbc286b66af39f8b0eaf9dd3e80ba74a82009d9edc8e2d433bfec8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person with curly hair shows off a hand-rolled joint to the camera
+    in a dimly lit room.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:03:03.300168+00:00'
   source_available: true
 - id: 26bef4922333a3d5
   filename: IMG_1588.jpeg

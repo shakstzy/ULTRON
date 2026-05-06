@@ -90,9 +90,10 @@ attachments:
   sender: me
   sent_at: '2025-05-08T18:43:58.357162-05:00'
   sha256: 4a6591c2f41f7514b7629a9e7532405e4e737652573f3a6b5b27ee0e22b5c1a2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat with Daniel planning a quick meetup before a flight from
+    SFO via BART at 9:15.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:45.715343+00:00'
   source_available: true
 - id: f6129aefccbf79d8
   filename: IMG_0826.JPG

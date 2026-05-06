@@ -82,9 +82,10 @@ attachments:
   sender: maanav-khaitan-uc-berkeley-nyc
   sent_at: '2025-01-10T00:37:12.799211-06:00'
   sha256: ca71f98566b43512c657db19924b1a8127e4043c4a0f27df36a31fe67fc2b624
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Sideways, blurry photo of a person in green light holding a glowing
+    blue object.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:33.618647+00:00'
   source_available: true
 - id: 19681b3fa9aa90eb
   filename: IMG_5231.PNG
@@ -317,9 +318,10 @@ attachments:
   sender: me
   sent_at: '2025-01-30T17:07:47.414749-06:00'
   sha256: dfb16ea8e7df2193bf62663714aa5f93389b18123a3591db051d05431e46b180
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Jack Nicholson peering through a smashed door with "HERE'S JOHNNY"
+    text from The Shining.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:33:05.729137+00:00'
   source_available: true
 chat_message_guids_count: 258
 deleted_upstream: null

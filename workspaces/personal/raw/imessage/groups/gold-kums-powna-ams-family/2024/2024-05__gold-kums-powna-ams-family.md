@@ -22,9 +22,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-05-01T12:34:18-05:00'
   sha256: f709e8675bdb46e259f8862af10324f667592441d582826b92bf1d2db6ea1d15
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A hand holding an Otter Pops Louie-Bloo Raspberry ice pop next to a
+    slice of pizza.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:55:58.085536+00:00'
   source_available: true
 - id: 127ef8487165c95c
   filename: image.png
@@ -286,9 +287,9 @@ attachments:
   sender: mom
   sent_at: '2024-05-05T23:45:15-05:00'
   sha256: 2fa61fa2a197211e2f95ea6197e4f268c7d89dae233a0caef5516393d22c75e6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Peter Gibbons from Office Space smiling and nodding in agreement.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:54:17.570198+00:00'
   source_available: true
 - id: 0b9b14a178740957
   filename: image.png
@@ -297,9 +298,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-06T12:36:47-05:00'
   sha256: 92f10646706d1828152a5cba6350b289aaec12bfb83a5b3aa381aee125f857ee
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Educational flyer for Akshaya Tritiya with Goddess Lakshmi and 2024
+    New York festival timings.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:55:16.875880+00:00'
   source_available: true
 - id: 3e26a7de3de1a9a9
   filename: image.png

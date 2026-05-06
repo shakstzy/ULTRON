@@ -22,9 +22,10 @@ attachments:
   sender: mom
   sent_at: '2026-05-01T15:57:14-05:00'
   sha256: 6abea2e2998258e33bc8ff42e8093b0255b79aa331931c3823b5f33c5010d329
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling woman in pink and man in olive green pose for a selfie outside
+    a modern building.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:58:48.200893+00:00'
   source_available: true
 - id: 6f4dad6dc4fbe49e
   filename: PXL_20260501_194253253.jpg
@@ -55,9 +56,10 @@ attachments:
   sender: mom
   sent_at: '2026-05-01T15:57:16-05:00'
   sha256: 444113a67746888cebc1b4af4e93cf7025eaf970a6b4568ccd95b291edbdf7ff
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a green shirt and grey shorts using a Technogym shoulder press
+    machine.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:58:46.891750+00:00'
   source_available: true
 - id: dfecb5791dcb8cc3
   filename: image.png
@@ -66,9 +68,10 @@ attachments:
   sender: mom
   sent_at: '2026-05-01T16:54:15-05:00'
   sha256: b33f6398eef6a17ac076a12b64e191e2943ddf1d0dfdac04c90726751d89847b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: April-May gym schedule for East Communities YMCA showing court times
+    for Pickleball and Open Gym.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:01:16.846519+00:00'
   source_available: true
 - id: 63543b2410e2de7a
   filename: 1000219358.jpg
@@ -177,9 +180,9 @@ attachments:
   sender: me
   sent_at: '2026-05-02T17:40:20.634808-05:00'
   sha256: c7ac937a7e757b2a9704b7db6be90808b138961d25d79ab073cf5cd32dd6fdba
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A woman in a purple shirt uses a Technogym low row machine at a gym.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:59:47.221553+00:00'
   source_available: true
 - id: 477d40be9be46fe3
   filename: IMG_8388.HEIC
@@ -243,9 +246,10 @@ attachments:
   sender: me
   sent_at: '2026-05-02T17:40:20.673643-05:00'
   sha256: 92ff5b83e22a200f1c1b8ef243346b424e1272e708e2d547709591e53bce8a49
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A woman in a purple shirt uses a Technogym low row machine in a brightly
+    lit gym.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:02:08.011747+00:00'
   source_available: true
 - id: 9ff5cc162b3f8831
   filename: IMG_8391.HEIC
@@ -287,9 +291,10 @@ attachments:
   sender: mom
   sent_at: '2026-05-02T21:01:34-05:00'
   sha256: 07fc1751f86e2f6507b6801553ad54eae40a0262e25947e45d7864e2a9a52ad0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a black shirt stands behind a spiked square planter with small
+    green seedlings.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:01:57.003256+00:00'
   source_available: true
 - id: 605ba24f80e0476f
   filename: PXL_20260503_011422598.jpg
@@ -342,9 +347,9 @@ attachments:
   sender: mom
   sent_at: '2026-05-03T18:08:38-05:00'
   sha256: bd73ddba0e4a15e3393fe1f30a644b7bb11f94c16c1a5878f279fe8b26b55227
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three people pose with a teal and white "Y" mascot in an indoor gymnasium.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:59:27.442984+00:00'
   source_available: true
 - id: 0df88f888759e3fc
   filename: PXL_20260503_230413398.jpg
@@ -353,9 +358,10 @@ attachments:
   sender: mom
   sent_at: '2026-05-03T18:09:18-05:00'
   sha256: da3da595a75e9460d9602a44447968f8d92e91fbfa33c9c96423a108a83a7bbe
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Group selfie of five smiling people outside a brick building, one in
+    an Argentina soccer jersey.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:00:08.440157+00:00'
   source_available: true
 - id: 038fba08408e616a
   filename: PXL_20260504_020239381.jpg

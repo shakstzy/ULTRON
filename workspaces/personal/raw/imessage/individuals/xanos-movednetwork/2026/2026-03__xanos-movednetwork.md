@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-05T13:44:59.767000-06:00'
   sha256: fbfada2154c4e29dd3962f197bfe1eb09ab519ac4b4fd2d461049880313ecc9f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile screenshot of a Raya membership application status showing "Under
+    Review" for shakstzy.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:56.450377+00:00'
   source_available: true
 chat_message_guids_count: 29
 deleted_upstream: null

@@ -44,9 +44,10 @@ attachments:
   sender: mo-snaps-uc-berkeley
   sent_at: '2025-02-22T08:30:53.689353-06:00'
   sha256: 8cea96eec9c596e8e49441fa1727c2dad28400d76003cc764f6a7966db00ea83
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a map app showing Adithya's location near Delancey Street
+    in New York City.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:02:27.491319+00:00'
   source_available: true
 chat_message_guids_count: 35
 deleted_upstream: null

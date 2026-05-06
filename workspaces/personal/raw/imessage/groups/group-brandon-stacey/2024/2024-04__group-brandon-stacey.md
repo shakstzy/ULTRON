@@ -22,9 +22,9 @@ attachments:
   sender: stacey-brandon
   sent_at: '2024-04-01T17:20:07.070508-05:00'
   sha256: 5d8844bfd4a7e692ce7886b0e632463050bc384d8ef3856416fdd3ef43f0abe2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A label for ECOS hypoallergenic, plant-powered laundry detergent.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:59:43.653680+00:00'
   source_available: true
 - id: aff984b516ba7b3c
   filename: IMG_2870.HEIC

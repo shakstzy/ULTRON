@@ -121,9 +121,10 @@ attachments:
   sender: sam-garcia
   sent_at: '2026-02-19T14:29:51.804060-06:00'
   sha256: 8af3e5e81e1501d873586bb6b105464fe8f72332239f3d7490d0f4abf6b83350
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "iPhone call screen showing a 01:14:05 conversation with \"Mom \U0001F620\
+    \ & M&T Bank\"."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:02:39.485699+00:00'
   source_available: true
 - id: b0ed3d0deffa687e
   filename: 038A400D-B88B-402D-991C-484AD8E1EE2F.pluginPayloadAttachment

@@ -44,9 +44,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-07-03T12:09:30.506621-05:00'
   sha256: 2cc3ab071e43f564a236a707bdb9c893ef8e0644216bcaca53a5f81f45beef99
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person holds a red Smoke Buddy filter; a red vape is tucked into
+    their waistband.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:00:56.997875+00:00'
   source_available: true
 - id: e0ea2f3717adff3e
   filename: 77325537769__782418C7-B65C-46C1-BA73-BC95BCEE06C4.heic

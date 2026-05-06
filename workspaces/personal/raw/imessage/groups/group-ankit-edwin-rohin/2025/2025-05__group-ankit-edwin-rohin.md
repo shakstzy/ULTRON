@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-05-04T21:10:24.779670-05:00'
   sha256: 478b3d28d453b0ec2a25b4a55e883a7c4ed1f1c5a71a7c644fd65be45760e983
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'iMessage: Edwin suggests Sapphire gift shop on Telegraph in Berkeley
+    for shrooms.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:01:38.448064+00:00'
   source_available: true
 - id: 0763eb0d5267896a
   filename: 76819696178__3CBC3F84-4095-4CF6-8C1F-124F1AF0365C.HEIC
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-05-05T23:02:48.981886-05:00'
   sha256: 27edd78942103f861032b6d24a58e2b312310ca3f092e76ba9f031514969d1a9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A green box of 12 Heineken slim cans inside a black plastic shopping
+    bag.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:00:27.561172+00:00'
   source_available: true
 - id: d0738a05f2b1b35a
   filename: 76828818824__7C4D1EFD-C6A2-433B-B9C6-A43C1A160318.HEIC

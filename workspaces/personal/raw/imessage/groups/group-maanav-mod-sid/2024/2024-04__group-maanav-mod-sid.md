@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-04-26T20:12:07.354281-05:00'
   sha256: ca5d2363256fdf820d228a66835333927f6f50e53eaeb53e1211a4c7191ceafa
-  description: null
-  description_model: null
-  extracted_at: null
+  description: White Chipotle Rewards sticker on a brown paper bag promoting free
+    Chipotle.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:50:37.107974+00:00'
   source_available: true
 - id: 7f44c22e9bc781c1
   filename: tmp.gif

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-06-07T16:27:14.135000-05:00'
   sha256: b3b97c90cea8d79320c6b240748f4f6615a5959efb6e53d2506fe94123d9bd53
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Alcohol Checker alcohol tester box next to a SanDisk SSD and an orange
+    USB cable.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:44.568693+00:00'
   source_available: true
 - id: d8aecc080c0f795a
   filename: IMG_9657.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-06-14T09:31:09.614000-05:00'
   sha256: 49aeb098169fa5537b8c0b2a93e44c13448263cb2165ab46fedb5c1715bbeb51
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Facebook post announcing Berkeley M.E.T. grad Gurvir Kooner is joining
+    Palantir.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:33:03.098164+00:00'
   source_available: true
 - id: 7def78f526c75749
   filename: 77226683480__94F7AB0F-48C6-40A1-84CF-5C6A1FC76ACE.HEIC

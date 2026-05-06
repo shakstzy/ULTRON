@@ -45,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2025-02-03T13:43:36.164823-06:00'
   sha256: f917ddfc22c6c718d77506ca2e13d6180bde7186087218cc41bab90848415c16
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Map screenshot showing Coppelia and Magnolia Bakery near 14th Street
+    in Manhattan.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:20.163051+00:00'
   source_available: true
 - id: c1e35d0e7e5d09c3
   filename: IMG_5862.HEIC

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-01-05T09:27:45.233876-06:00'
   sha256: 5cf4d9ca7a62aa7e4bb83a4b84e91e9be048f10ed92d34488f7ae50ed4ecde69
-  description: null
-  description_model: null
-  extracted_at: null
+  description: American Airlines gate 26 counter displaying flight 1363 to Dallas/Fort
+    Worth.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:51:09.798554+00:00'
   source_available: true
 - id: 95a6af2ecd021fd3
   filename: IMG_7260.png

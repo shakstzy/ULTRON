@@ -22,9 +22,9 @@ attachments:
   sender: me
   sent_at: '2026-02-04T20:59:49.897000-06:00'
   sha256: 556d48a4fe8d3d10f1195504e702633b37b43b94d9b148e855b846134d168115
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dark mode text message bubble reading "U literally didn't even care".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:35.557028+00:00'
   source_available: true
 - id: 03004effe72a0970
   filename: IMG_6421.png
@@ -33,9 +33,10 @@ attachments:
   sender: kayla-hinge-dallas
   sent_at: '2026-02-05T18:27:53.266186-06:00'
   sha256: f41f3be552b416c379ccd471a4c38fee9b8b3b072db56ab195f30820046e9ba8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'iMessage screenshot: "I almost died" and "U literally didn''t even
+    care" sent to (512) 660-1911.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:23.126492+00:00'
   source_available: true
 chat_message_guids_count: 46
 deleted_upstream: null

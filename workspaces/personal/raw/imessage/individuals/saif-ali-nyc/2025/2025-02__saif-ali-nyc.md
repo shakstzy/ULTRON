@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2025-02-19T11:14:47.724009-06:00'
   sha256: a057506fa69330a4438b6bd63d1a2ad7e0fa09a099f1228774271505ab7d96de
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Map of the North Atlantic Ocean with a red location pin on the U.S.
+    East Coast.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:53.988774+00:00'
   source_available: true
 chat_message_guids_count: 84
 deleted_upstream: null

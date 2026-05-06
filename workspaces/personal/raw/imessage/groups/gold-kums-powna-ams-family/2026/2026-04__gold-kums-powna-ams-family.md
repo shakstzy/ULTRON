@@ -539,9 +539,10 @@ attachments:
   sender: me
   sent_at: '2026-04-15T13:23:19.211853-05:00'
   sha256: e239c9f43429470133f9c24494343996d0e1af772382a22e6ca4975c0f49dc94
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Negative cash flow analysis for Two Ten Communities duplexes in San
+    Antonio.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:59:12.899671+00:00'
   source_available: true
 - id: 495533ba9c5c2461
   filename: IMG_1284.png
@@ -605,9 +606,10 @@ attachments:
   sender: me
   sent_at: '2026-04-20T14:19:35.803354-05:00'
   sha256: 2f490a74e3147b9ab247de1362ef2ec7ea3d0b790210a4e878b86b649dc21816
-  description: null
-  description_model: null
-  extracted_at: null
+  description: a16z email requesting Adithya's availability for Technical Assistant
+    interviews.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:58:34.965352+00:00'
   source_available: true
 - id: 6de1063ca8d9a7af
   filename: IMG_2466.png
@@ -693,9 +695,9 @@ attachments:
   sender: arya-kumar
   sent_at: '2026-04-22T16:17:40-05:00'
   sha256: c1ca02433ee48f5e10c33090a33be425b34643321192029a05087b10be64b15f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling man in a Texas A&M sweatshirt posing in front of a campus building.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:58:38.750206+00:00'
   source_available: true
 - id: 9cb14fa24b87b919
   filename: IMG_8302.PNG
@@ -715,9 +717,10 @@ attachments:
   sender: mom
   sent_at: '2026-04-25T12:34:59-05:00'
   sha256: 6166d296359f8ce2ab8a4e09b3b0e8987eea720ae40a4f8f8394a61829e7aaea
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Amazon delivery confirmation for Adithya Kumar at 5509 Casco Walk,
+    Austin, TX.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:00:21.441795+00:00'
   source_available: true
 - id: acaa7119814277ec
   filename: image.png
@@ -759,9 +762,10 @@ attachments:
   sender: mom
   sent_at: '2026-04-26T16:59:35-05:00'
   sha256: 9cdb5cda3842b3a7819fc60b848e727b8f048252423b886e832d8876e31ce0c1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Lavender Chevrolet Camaro with Texas plates driving on a highway near
+    Brushy Creek Road.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:59:17.510597+00:00'
   source_available: true
 - id: a4d0b998b11709fe
   filename: 1000218059.jpg
@@ -792,9 +796,10 @@ attachments:
   sender: mom
   sent_at: '2026-04-29T14:54:34-05:00'
   sha256: 4d910f32c25788e89f570a2a56e1d0bd6be551b419cec2ab5a5a579285590265
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google search results for "fed meeting today" showing rates held steady
+    at 3.50%-3.75%.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:00:37.631448+00:00'
   source_available: true
 - id: e3ad79a971672a75
   filename: 1000218821.png

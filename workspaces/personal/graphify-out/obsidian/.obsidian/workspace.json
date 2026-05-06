@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rishika (UC Berkeley).md",
+                "file": "Arya Kumar (Adithya's brother).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Rishika (UC Berkeley)"
+              "title": "Arya Kumar (Adithya's brother)"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rishika (UC Berkeley).md",
+                "file": "Arya Kumar (Adithya's brother).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Rishika (UC Berkeley)"
+              "title": "Backlinks for Arya Kumar (Adithya's brother)"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rishika (UC Berkeley).md",
+                "file": "Arya Kumar (Adithya's brother).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Rishika (UC Berkeley)"
+              "title": "Outgoing links from Arya Kumar (Adithya's brother)"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rishika (UC Berkeley).md",
+                "file": "Arya Kumar (Adithya's brother).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Rishika (UC Berkeley)"
+              "title": "Outline of Arya Kumar (Adithya's brother)"
             }
           }
         ]
@@ -185,6 +185,7 @@
   },
   "active": "e87cee8eec30a04b",
   "lastOpenFiles": [
+    "Rishika (UC Berkeley).md",
     "Samara (Hinge, SDSunnyvale).md",
     "_COMMUNITY_Dating Roster (mixed).md"
   ]

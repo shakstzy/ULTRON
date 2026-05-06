@@ -1,47 +1,53 @@
 ---
-workspace: <workspace-slug>
-wiki: true                              # set false for pipeline-only workspaces
-exclude_from_super_graphify: false      # default false; set true for private workspaces
-ingest_unrouted_default: route_to_main  # or "skip" — overrides source default
+workspace: mosaic
+wiki: true
+exclude_from_super_graphify: false
+ingest_unrouted_default: skip
 ---
 
-# <Workspace Name> — Workspace Router
+# Mosaic — Workspace Router
 
-You are in workspace `<workspace-slug>` — <one-line domain description, populated at bootstrap>.
+You are in workspace `mosaic` — Mosaic, a project spawned from Outerscope.
 
 ## What this workspace is
 
-<2-3 sentences. The bootstrap agent fills this from Q1.>
+Mosaic is one of Adithya's Outerscope-spawned ventures. Sister venture to `synapse`. Parent: `outerscope`. Drive folders under `adithya@outerscope.xyz` and Granola meeting notes filed under the Mosaic folder upstream are the current canonical sources. No dedicated Google account yet.
+
+Personal / friends / fitness / music contexts go to their own workspaces, not here.
 
 ## Reading order on entry
 
 1. `schema.md` — entity types, page formats
 2. `learnings.md` — workspace meta-knowledge
-3. `identity.md` — workspace voice (overrides global; only if present)
-4. `style.md` — workspace tone (only if present)
-5. `nomenclature.md` — file-system routing
+3. `nomenclature.md` — file-system routing
 
-## Voice override
+(No identity.md / style.md override — uses global default voice.)
 
-<If Q4 = a, write: "This workspace uses the global default voice. See ~/ULTRON/CLAUDE.md.">
-<If Q4 = b, write: "See identity.md for the voice override.">
+## Voice
+
+Default ULTRON voice. Plain words. Business-deliberate (partners, product, contracts) without stiffness. Same register as outerscope.
 
 ## Hard rules (workspace-specific)
 
-<Populated at bootstrap from Q3 + Q4 + Q8.>
+1. Person / company / partner references must resolve through `schema.md`'s `person` and `company` types, link to `[[@slug]]` for global identity.
+2. Sensitive deal data (cap table, valuation, equity) lives only in `raw/`. Wiki summarizes existence and direction, not specifics.
+3. Commit messages: `chore(mosaic): <stage> <YYYY-MM-DD>`.
+4. Do NOT mix Mosaic content with `synapse`, `eclipse`, or `seedbox`. Cross-references via `[[@person]]` global stubs only.
 
 ## Routing table — common queries
 
 | Query | Path |
 |---|---|
-| Who is X? | `wiki/entities/people/<x>.md` → `[[@x]]` for global identity |
-| <other workspace-specific queries from Q3> | <path> |
+| Who is X (Mosaic team / partner / counterparty)? | `wiki/entities/people/<x>.md` then `[[@x]]` for global identity |
+| What's in the Mosaic Drive folder? | `raw/drive/adithya-outerscope/<...>` |
+| Granola notes for Mosaic meetings? | `raw/granola/<YYYY-MM>/...` |
+| Status of a Mosaic project / topic | `wiki/synthesis/<topic>.md` |
 
 ## Agents
 
 - `agents/wiki-agent.md` — used by ingest stage for wiki updates.
-- `agents/lint-agent.md` — used by lint stage for this workspace's health check.
+- `agents/lint-agent.md` — used by lint stage.
 
 ## Sources
 
-Declared in `config/sources.yaml`.
+Declared in `config/sources.yaml`. Cross-source routing rules live in `_shell/docs/source-routing.md`. Sources today: Drive (Mosaic-tagged folders under `adithya@outerscope.xyz`), Granola (folder: `MOSAIC` upstream).

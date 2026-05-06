@@ -1,47 +1,56 @@
 ---
-workspace: <workspace-slug>
-wiki: true                              # set false for pipeline-only workspaces
-exclude_from_super_graphify: false      # default false; set true for private workspaces
-ingest_unrouted_default: route_to_main  # or "skip" — overrides source default
+workspace: dating
+wiki: true
+exclude_from_super_graphify: true
+ingest_unrouted_default: skip
 ---
 
-# <Workspace Name> — Workspace Router
+# Dating — Workspace Router
 
-You are in workspace `<workspace-slug>` — <one-line domain description, populated at bootstrap>.
+You are in workspace `dating` — Adithya's dating-app activity and the people threaded through it.
 
 ## What this workspace is
 
-<2-3 sentences. The bootstrap agent fills this from Q1.>
+Tinder, Bumble, Hinge, and adjacent platforms. Browser-automated where possible (mirroring QUANTUM's tinder / bumble ban-aversion patterns: patchright, manual auth, strict pacing). Tracks matches, conversations, dates met, follow-ups, and the small set of relationships that develop into ongoing context.
+
+Private by design: `exclude_from_super_graphify: true` keeps these entities out of the cross-workspace graph.
 
 ## Reading order on entry
 
 1. `schema.md` — entity types, page formats
 2. `learnings.md` — workspace meta-knowledge
-3. `identity.md` — workspace voice (overrides global; only if present)
-4. `style.md` — workspace tone (only if present)
-5. `nomenclature.md` — file-system routing
+3. `identity.md` — workspace voice override
+4. `nomenclature.md` — file-system routing
 
 ## Voice override
 
-<If Q4 = a, write: "This workspace uses the global default voice. See ~/ULTRON/CLAUDE.md.">
-<If Q4 = b, write: "See identity.md for the voice override.">
+Personal, low-decoration, terse. Honest about pattern-matching without being clinical. See `identity.md`.
 
 ## Hard rules (workspace-specific)
 
-<Populated at bootstrap from Q3 + Q4 + Q8.>
+1. **HITL gates.** Every outbound message goes through `SEND`. No automated reply chains. Manual review of bot-drafted replies before send.
+2. **Manual auth only.** No stored credentials drive writeable sessions. Each platform requires fresh manual login. Session cookies in `_credentials/dating-<platform>.json`.
+3. **Ban-aversion.** Tinder: 100/day swipes, 20/hour messages, skip 1-2 days/week. Bumble: 50/day swipes, 10/hour messages, Date-mode only. Halt on Arkose / Turnstile / Face-Check / login-wall / captcha.
+4. **No API-direct.** Patchright + persistent Chrome profiles only.
+5. **Person privacy.** Each match is an entity in `wiki/entities/people/<first-name-context>.md`. Phone numbers and last names live only in `raw/`.
+6. **Excluded from cross-workspace graph.** This workspace does not contribute to the super graph or surface entities to other workspaces.
+7. Commit messages: `chore(dating): <stage> <YYYY-MM-DD>`.
 
 ## Routing table — common queries
 
 | Query | Path |
 |---|---|
-| Who is X? | `wiki/entities/people/<x>.md` → `[[@x]]` for global identity |
-| <other workspace-specific queries from Q3> | <path> |
+| Who is X (a match)? | `wiki/entities/people/<x>.md` |
+| Active conversations | `wiki/synthesis/active.md` |
+| Recent dates / met-IRL log | `wiki/synthesis/met-irl.md` |
+| Platform raw history | `raw/<platform>/<YYYY-MM>/...` |
+| iMessage threads with dating contacts | `raw/imessage/<latest>/<thread>.md` (filtered to `routes_to: dating` per source-routing) |
 
 ## Agents
 
 - `agents/wiki-agent.md` — used by ingest stage for wiki updates.
-- `agents/lint-agent.md` — used by lint stage for this workspace's health check.
+- `agents/lint-agent.md` — used by lint stage.
 
 ## Sources
 
-Declared in `config/sources.yaml`.
+Declared in `config/sources.yaml`. Cross-source routing in `_shell/docs/source-routing.md`. Sources today: manual exports until patchright bots are ported from QUANTUM. iMessage filtered by `routes_to: dating` rule on contact-set.

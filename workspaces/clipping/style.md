@@ -1,4 +1,4 @@
-# <Workspace> Style
+# Clipping Style
 
 ## Capitalization
 

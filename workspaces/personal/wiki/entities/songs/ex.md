@@ -16,7 +16,6 @@ genre_secondary: Pop
 explicit: true
 cover_path: ~/.quantum/distrokid/cover-ex.jpg
 ---
-
 ## Concept
 
 Hip-hop single. Cover features cracked/broken "EX" iconography with gold + dark cinematic palette. SHAKSTZY plaque branding.

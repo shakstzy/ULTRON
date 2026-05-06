@@ -1,4 +1,4 @@
-# <Workspace> Style
+# Mosaic Style
 
 ## Capitalization
 

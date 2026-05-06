@@ -1,4 +1,4 @@
-# <Workspace> Nomenclature
+# Mosaic Nomenclature
 
 This file documents file-system conventions and the routing manual for this workspace. The wiki agent and lint agent both read this to know where things go.
 

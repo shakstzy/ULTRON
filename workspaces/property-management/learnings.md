@@ -1,4 +1,4 @@
-# <Workspace> Workspace Learnings
+# Property Management Workspace Learnings
 
 Workspace meta-knowledge that the wiki and lint agents reload every turn. ≤ 200 lines. Updated only by accepting entries from `_meta/learning-proposals.md`.
 

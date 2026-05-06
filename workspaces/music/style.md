@@ -1,4 +1,4 @@
-# <Workspace> Style
+# Music Style
 
 ## Capitalization
 

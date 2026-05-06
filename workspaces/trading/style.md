@@ -1,4 +1,4 @@
-# <Workspace> Style
+# Trading Style
 
 ## Capitalization
 

@@ -1,4 +1,4 @@
-# <Workspace> Schema
+# OnlyFans Schema
 
 Workspace schema. Defines entity types, page formats, and the vocabulary the wiki agent uses when ingesting and synthesizing.
 

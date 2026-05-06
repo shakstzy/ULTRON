@@ -16,10 +16,9 @@ genre_secondary: Pop
 explicit: true
 cover_path: ~/.quantum/distrokid/cover-superdrugs.jpg
 previous_releases:
-  - released_at: pre-2026-05
-    note: Earlier upload existed; deleted manually before this re-upload.
+- released_at: pre-2026-05
+  note: Earlier upload existed; deleted manually before this re-upload.
 ---
-
 ## Concept
 
 Hip-hop single themed around the Superdrugs concept (pills, vials, neon chemistry). Pink/cyan neon cover with SHAKSTZY type at top, broken vials + pills + glowing liquid.

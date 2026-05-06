@@ -42,7 +42,7 @@ function isOwnerProbePath(href) {
 
 export async function runLogin({ force = false } = {}) {
   console.log('[zrm] Opening visible Chrome. Sign in to Zillow with your owner account.');
-  console.log('[zrm] Profile: ~/.shakos/chrome-profiles/zillow-rental-manager/');
+  console.log('[zrm] Profile: workspaces/rental-manager/state/chrome-profile/');
   console.log('[zrm] ToS note: automated access to Zillow may violate their ToS. Use at your discretion.');
 
   const ctx = await connectOrLaunch({ headless: false, force });

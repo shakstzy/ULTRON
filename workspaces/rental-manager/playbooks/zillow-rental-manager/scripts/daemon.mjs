@@ -17,9 +17,9 @@ import { spawn } from 'node:child_process';
 import { existsSync, readFileSync, writeFileSync, unlinkSync } from 'node:fs';
 import { join } from 'node:path';
 import { mkdir } from 'node:fs/promises';
+import { PROFILE_DIR } from './paths.mjs';
 
 const CHROME_BIN = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
-const PROFILE_DIR = process.env.ZRM_PROFILE_DIR || `${process.env.HOME}/.shakos/chrome-profiles/zillow-rental-manager`;
 const DAEMON_PIDFILE = join(PROFILE_DIR, '.daemon.pid');
 const DEBUG_PORT = parseInt(process.env.ZRM_DEBUG_PORT || '9222', 10);
 

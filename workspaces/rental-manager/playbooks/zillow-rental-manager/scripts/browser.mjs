@@ -11,15 +11,18 @@
 //   shutdown so the browser context closes before the process exits.
 
 import { chromium } from 'patchright';
-import { chromium as playwrightChromium } from 'playwright';
+// rebrowser-playwright patches the Runtime.enable CDP leak that stock Playwright
+// exposes (Gemini diagnostic 2026-05-05: PerimeterX scores Runtime.enable
+// instrumentation by triggering a synthetic JS error and reading the stack).
+// Used for the daemon-attach path against real Chrome.
+import { chromium as playwrightChromium } from 'rebrowser-playwright';
 import { chmod, mkdir } from 'node:fs/promises';
 import { existsSync, readFileSync, writeFileSync, unlinkSync, openSync, closeSync } from 'node:fs';
 import { join } from 'node:path';
 import { execSync } from 'node:child_process';
+import { PROFILE_DIR, BREAKER_FILE } from './paths.mjs';
 
-const PROFILE_DIR = process.env.ZRM_PROFILE_DIR || `${process.env.HOME}/.shakos/chrome-profiles/zillow-rental-manager`;
 const PIDFILE = join(PROFILE_DIR, '.skill.pid');
-const BREAKER_FILE = join(PROFILE_DIR, '.breaker.json');
 
 const ZILLOW_HOSTS = new Set(['www.zillow.com', 'zillow.com', 'rentals.zillow.com']);
 const STRIKE_DEBOUNCE_MS = 60 * 1000;

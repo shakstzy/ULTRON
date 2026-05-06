@@ -1,18 +1,13 @@
-// pacing.mjs -- velocity governor for the Zillow skill.
+// pacing.mjs -- velocity governor.
 //
-// PerimeterX's press-and-hold challenge fires on burst patterns (>10 calls in
-// 30s confirmed empirically). We pace EVERY user-driven action (page nav,
-// thread click, send) to a minimum 45-90s jittered gap. Hard caps prevent
-// any sustained-burst regression.
+// PerimeterX press-and-hold fires on burst patterns (>10 calls in 30s
+// empirically). We pace EVERY user-driven action (page nav, thread click,
+// send) to a minimum jittered gap with hourly + daily hard caps.
 //
-// State lives at ~/.shakos/playbook-output/zillow-rental-manager/state/pacing.json
-// and survives process restarts. Atomic writes (tmp+rename).
+// State at workspaces/rental-manager/state/pacing.json (atomic tmp+rename).
 
 import { existsSync, readFileSync, writeFileSync, renameSync, mkdirSync } from 'node:fs';
-import { join } from 'node:path';
-
-const STATE_DIR = process.env.ZRM_STATE_DIR || `${process.env.HOME}/.shakos/playbook-output/zillow-rental-manager/state`;
-const PACING_FILE = join(STATE_DIR, 'pacing.json');
+import { STATE_DIR, PACING_FILE, BREAKER_FILE } from './paths.mjs';
 
 // HARD CEILINGS — env CANNOT exceed these. Re-calibrated 2026-05-04 after
 // observing Adithya's manual browse fires 60+/hr without flagging. The
@@ -44,7 +39,6 @@ const MAX_GAP_MS = Math.max(parseInt(process.env.ZRM_MAX_GAP_MS || '10000', 10),
 // Applied unconditionally regardless of env. Breaker state lives in
 // browser.mjs's BREAKER_FILE; we read it lazily to avoid a circular import.
 const POST_FLAG_COOLDOWN_MS = 4 * 3600 * 1000;
-const BREAKER_FILE = `${process.env.HOME}/.shakos/chrome-profiles/zillow-rental-manager/.breaker.json`;
 
 function ensureDir() {
   if (!existsSync(STATE_DIR)) mkdirSync(STATE_DIR, { recursive: true });

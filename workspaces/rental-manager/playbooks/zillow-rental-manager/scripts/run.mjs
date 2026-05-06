@@ -75,7 +75,7 @@ Inbox + lead operations (drive UI, capture GraphQL responses):
   pull-inbox [--max=N] [--all] [--force-fetch]
                                     Pull conversation list, then for each unread (default) open the
                                     thread, capture full message + renter profile, and persist to
-                                    ~/QUANTUM/raw/rental-property/leads/<slug>.md
+                                    workspaces/rental-manager/raw/leads/<slug>.md
                                     --all: include read leads too (still skips archived + spam).
                                     --force-fetch: ignore checkpoint, re-fetch every targeted thread.
                                     Paced 45-90s between thread fetches. Hard caps: 20/hour, 100/day.
@@ -314,17 +314,13 @@ async function cmdSendReply(argv) {
 }
 
 async function cmdRebuildLeads(argv) {
-  // Reads every thread state file in ~/.shakos/.../state/threads/<cid>.json
-  // and writes the per-lead markdown using the CURRENT leadSlug schema. Lets
-  // us migrate to a disambiguated slug (e.g. first+last) and clean up orphans
-  // from the old schema -- without firing any paced GraphQL calls. Pure
-  // local file-to-file transform.
-  const { readdirSync, readFileSync, unlinkSync, statSync } = await import('node:fs');
+  // Re-derive every per-lead markdown from its thread-state JSON. Useful when
+  // the leadSlug schema changes — pure local file-to-file transform, no paced
+  // GraphQL calls.
+  const { readdirSync, readFileSync, unlinkSync } = await import('node:fs');
   const { join } = await import('node:path');
   const { writeLeadMarkdown, leadSlug } = await import('./storage.mjs');
-  const STATE_DIR = process.env.ZRM_STATE_DIR || `${process.env.HOME}/.shakos/playbook-output/zillow-rental-manager/state`;
-  const threadsDir = join(STATE_DIR, 'threads');
-  const QUANTUM_RAW = `${process.env.HOME}/QUANTUM/raw/rental-property/leads`;
+  const { THREADS_DIR: threadsDir, LEADS_DIR } = await import('./paths.mjs');
   const dryRun = !argv.apply;
 
   let stateFiles = [];
@@ -372,17 +368,17 @@ async function cmdRebuildLeads(argv) {
     }
   }
 
-  // Orphan cleanup pass: any *.md in QUANTUM_RAW whose slug is not in
+  // Orphan cleanup pass: any *.md in LEADS_DIR whose slug is not in
   // writtenSlugs is from the old schema. Delete (always with --apply).
   let mdFiles = [];
-  try { mdFiles = readdirSync(QUANTUM_RAW).filter(f => f.endsWith('.md')); } catch (_) {}
+  try { mdFiles = readdirSync(LEADS_DIR).filter(f => f.endsWith('.md')); } catch (_) {}
   let orphans = 0;
   for (const f of mdFiles) {
     const slug = f.replace(/\.md$/, '');
     if (writtenSlugs.has(slug)) continue;
     orphans++;
     if (!dryRun) {
-      try { unlinkSync(join(QUANTUM_RAW, f)); console.error(`[zrm rebuild]   deleted orphan ${f}`); }
+      try { unlinkSync(join(LEADS_DIR, f)); console.error(`[zrm rebuild]   deleted orphan ${f}`); }
       catch (e) { console.error(`[zrm rebuild]   FAILED to delete orphan ${f}: ${e.message}`); }
     } else {
       console.error(`[zrm rebuild]   would delete orphan ${f}`);

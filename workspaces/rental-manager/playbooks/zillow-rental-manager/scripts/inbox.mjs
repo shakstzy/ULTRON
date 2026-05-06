@@ -22,9 +22,9 @@ import {
 } from './storage.mjs';
 import { mkdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
+import { TMP_SCREENSHOT_DIR } from './paths.mjs';
 
 const INBOX_URL = 'https://www.zillow.com/rental-manager/inbox';
-const TMP_SCREENSHOT_DIR = `${process.env.HOME}/.shakos/playbook-output/zillow-rental-manager/tmp-screenshots`;
 
 function ensureTmpDir() { if (!existsSync(TMP_SCREENSHOT_DIR)) mkdirSync(TMP_SCREENSHOT_DIR, { recursive: true }); }
 

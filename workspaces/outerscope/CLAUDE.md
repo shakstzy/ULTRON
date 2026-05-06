@@ -11,7 +11,14 @@ You are in workspace `outerscope` — Adithya's Outerscope venture (InclusiveLay
 
 ## What this workspace is
 
-Drive-sourced product docs, contracts, market research, and partner materials for Outerscope. Currently scoped to designated Drive folders under `adithya@outerscope.xyz`. Gmail / iMessage related to Outerscope still routes to `personal` until a domain split is requested.
+Adithya's venture studio. Houses non-main-contract work: product docs, contracts, market research, partner materials, anything Outerscope-branded that does not belong in `eclipse` (separate company) or `synapse` / `mosaic` (child ventures with their own workspaces).
+
+Child ventures spawned from Outerscope:
+
+- `synapse` — pre-launch startup with its own `synps.xyz` domain and Google Workspace; tracks fundraising, accelerator programs, dev-tool relationships.
+- `mosaic` — Outerscope-housed project; Drive content + Granola notes routed under the `MOSAIC` folder upstream.
+
+Gmail / Drive / Granola routing across these three is centralized in `_shell/docs/source-routing.md`. Content tagged Mosaic / Synapse upstream flows to those workspaces, not here.
 
 ## Reading order on entry
 

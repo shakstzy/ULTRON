@@ -31,11 +31,14 @@ import { join } from 'node:path';
 import { execFileSync, spawnSync } from 'node:child_process';
 import { setTimeout as sleep } from 'node:timers/promises';
 import { readThreadState, writeThreadState } from './storage.mjs';
-
-const HOME = process.env.HOME;
-const STATE_DIR = process.env.ZRM_STATE_DIR || `${HOME}/.shakos/playbook-output/zillow-rental-manager/state`;
-const THREADS_DIR = join(STATE_DIR, 'threads');
-const RUN_LOG_DIR = join(STATE_DIR, 'batch-followup');
+import {
+  THREADS_DIR,
+  BATCH_FOLLOWUP_DIR as RUN_LOG_DIR,
+  LEADS_DIR,
+  APPLICATIONS_DIR,
+  APPLICATION_TEMPLATE_PATH,
+  WORKSPACE_ROOT
+} from './paths.mjs';
 const APP_LINK = 'https://www.zillow.com/renter-hub/applications/listing/258vhr7ge6q56/rental-application/?itc=rentalhdpapplynow';
 const ADDRESS = '13245 Klein Ct';
 const CITY = 'Sylmar';
@@ -374,7 +377,7 @@ async function maybeDownloadApplication(page, lead, opts) {
 
   const { leadSlug } = await import('./storage.mjs');
   const slug = leadSlug({ name: lead.name, listingAlias: lead.listing_alias, phone: lead.phone, conversationId: lead.conversation_id });
-  const outDir = join(process.env.HOME, 'QUANTUM/raw/rental-property/applications', slug);
+  const outDir = join(APPLICATIONS_DIR, slug);
   if (!existsSync(outDir)) mkdirSync(outDir, { recursive: true });
   const pdfPath = join(outDir, 'source.pdf');
 
@@ -426,12 +429,11 @@ async function maybeDownloadApplication(page, lead, opts) {
   }
 
   // Run Gemini parse with the standardized template.
-  const TPL_PATH = '/Users/shakstzy/SHAKOS/workspaces/rental-property/playbooks/zillow-rental-manager/scripts/application-template.md';
   let templateContent;
-  try { templateContent = readFileSync(TPL_PATH, 'utf8'); }
+  try { templateContent = readFileSync(APPLICATION_TEMPLATE_PATH, 'utf8'); }
   catch (e) { return { skipped: false, action: 'TEMPLATE_MISSING', error: e.message, pdf_path: pdfPath }; }
 
-  const promptBody = `You are parsing a Zillow rental application PDF for a landlord. The PDF is at @raw/rental-property/applications/${slug}/source.pdf
+  const promptBody = `You are parsing a Zillow rental application PDF for a landlord. The PDF is at ${pdfPath}
 
 Fill out the template below using ONLY data present in the PDF. For any field you cannot determine, write "_(not provided)_". Skip SSN, full bank-account numbers, full credit-card numbers, and any government-ID full numbers — write "(redacted by Claude policy)" instead. The "last 4" fields are OK if visible.
 
@@ -443,7 +445,7 @@ OUTPUT: just the filled-in markdown, no preamble, no closing remarks.`;
 
   const r = spawnSync('gemini', ['-m', 'gemini-3-pro-preview', '--approval-mode', 'plan', '-o', 'text', '-p', promptBody], {
     encoding: 'utf8',
-    cwd: join(process.env.HOME, 'QUANTUM'),
+    cwd: WORKSPACE_ROOT,
     timeout: 180000
   });
   if (r.status !== 0) {
@@ -454,7 +456,7 @@ OUTPUT: just the filled-in markdown, no preamble, no closing remarks.`;
   if (!parsedMd) return { skipped: false, action: 'GEMINI_EMPTY', pdf_path: pdfPath };
 
   // Append to lead .md.
-  const mdPath = join(process.env.HOME, 'QUANTUM/raw/rental-property/leads', `${slug}.md`);
+  const mdPath = join(LEADS_DIR, `${slug}.md`);
   if (!existsSync(mdPath)) return { skipped: false, action: 'LEAD_MD_MISSING', pdf_path: pdfPath };
   const stamp = new Date().toISOString();
   appendFileSync(mdPath, `\n\n## Application packet (parsed via Gemini ${stamp})\n\n${parsedMd}\n`);

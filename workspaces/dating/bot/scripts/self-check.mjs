@@ -18,8 +18,8 @@ async function exists(p) { try { await access(p); return true; } catch { return 
 try { await execFile("claude", ["--version"], { timeout: 5000 }); ok("claude CLI"); }
 catch { fail("claude CLI", "not on PATH; needed for drafting (no API key approach)"); }
 
-if (process.env.QUANTUM_SELF_PHONE) ok("QUANTUM_SELF_PHONE");
-else warn("QUANTUM_SELF_PHONE", "not set; HITL notifications disabled");
+if (process.env.DATING_SELF_PHONE) ok("DATING_SELF_PHONE");
+else warn("DATING_SELF_PHONE", "not set; HITL notifications disabled");
 
 const citiesFile = resolvePath(CONFIG_DIR, "cities.json");
 for (const [name, p] of [["caps.json", CAPS_FILE], ["selectors.json", SELECTORS_FILE], ["filter.json", FILTER_FILE], ["cities.json", citiesFile]]) {

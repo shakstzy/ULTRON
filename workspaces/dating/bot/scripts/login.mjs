@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Opens patchright Chromium to tinder.com and stays open until the user closes the window.
-// Use this for the one-time manual login. Profile persists at workspaces/tinder/.profile/.
+// Use this for the one-time manual login. Profile persists at workspaces/dating/.profile/.
 
 import { launchPersistent } from "../src/runtime/profile.mjs";
 

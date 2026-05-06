@@ -5,12 +5,12 @@ import { promisify } from "node:util";
 
 const execFile = promisify(_execFile);
 
-const SELF_PHONE = process.env.QUANTUM_SELF_PHONE;
+const SELF_PHONE = process.env.DATING_SELF_PHONE;
 
 export async function notifySelf(text) {
-  if (process.env.QUANTUM_NOTIFY_DISABLE === "1") return;
+  if (process.env.DATING_NOTIFY_DISABLE === "1") return;
   if (!SELF_PHONE) {
-    console.error("notifier: QUANTUM_SELF_PHONE env var not set, skipping");
+    console.error("notifier: DATING_SELF_PHONE env var not set, skipping");
     return;
   }
   const escaped = text.replace(/"/g, '\\"');

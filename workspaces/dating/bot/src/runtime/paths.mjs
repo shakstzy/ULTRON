@@ -7,7 +7,7 @@ const __dirname = dirname(__filename);
 
 export const BOT_ROOT = resolve(__dirname, "../..");
 export const WORKSPACE_ROOT = resolve(BOT_ROOT, "..");
-export const QUANTUM_ROOT = resolve(WORKSPACE_ROOT, "../..");
+export const ULTRON_ROOT = resolve(WORKSPACE_ROOT, "../..");
 
 export const CONFIG_DIR = resolve(WORKSPACE_ROOT, "config");
 export const VOICE_DIR = resolve(CONFIG_DIR, "voice");
@@ -18,9 +18,13 @@ export const SELECTORS_FILE = resolve(CONFIG_DIR, "selectors.json");
 
 export const PROFILE_DIR = resolve(WORKSPACE_ROOT, ".profile");
 
-export const RAW_DIR = resolve(QUANTUM_ROOT, "raw/tinder");
-export const INGEST_LOG = resolve(QUANTUM_ROOT, "raw/.ingest-log");
+export const RAW_DIR = resolve(WORKSPACE_ROOT, "raw/tinder");
+export const INGEST_LOG = resolve(WORKSPACE_ROOT, "raw/.ingest-log");
 export const WATERMARK_FILE = resolve(INGEST_LOG, "tinder.watermark");
+
+// TODO: switch to WORKSPACE_ROOT/raw/imessage once ULTRON ingests iMessage.
+// Reading legacy QUANTUM NDJSON shards in the meantime.
+export const IMESSAGE_DIR = "/Users/shakstzy/QUANTUM/raw/imessage";
 
 export const OUTBOUND_DIR = resolve(WORKSPACE_ROOT, "04-outbound");
 export const OB_DRAFTS = resolve(OUTBOUND_DIR, "drafts");
@@ -30,10 +34,12 @@ export const OB_SENT = resolve(OUTBOUND_DIR, "sent");
 export const OB_EXPIRED = resolve(OUTBOUND_DIR, "expired");
 export const OB_AUTO_SENT = resolve(OUTBOUND_DIR, "auto-sent");
 
-export const STATE_HOME = resolve(homedir(), ".quantum/tinder");
+export const STATE_HOME = resolve(homedir(), ".ultron/dating");
 export const HALT_FILE = resolve(STATE_HOME, ".halt");
 export const RATE_STATE_FILE = resolve(STATE_HOME, ".rate-state.json");
 export const SESSION_LOG = resolve(STATE_HOME, "sessions.ndjson");
+
+export const WIKI_PEOPLE_DIR = resolve(WORKSPACE_ROOT, "wiki/entities/people");
 
 export function monthShard(date = new Date()) {
   return date.toISOString().slice(0, 7);

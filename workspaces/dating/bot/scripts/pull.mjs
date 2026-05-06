@@ -18,7 +18,7 @@ try {
   const matches = await scrapeMatches(page);
   console.log(`matches:${matches.length}`);
 
-  const envLimit = parseInt(process.env.QUANTUM_TINDER_PULL_LIMIT || "0", 10);
+  const envLimit = parseInt(process.env.TINDER_PULL_LIMIT || "0", 10);
   const limit = envLimit > 0
     ? Math.min(matches.length, envLimit)
     : Math.min(matches.length, caps.scrape.thread_opens_per_session_max);

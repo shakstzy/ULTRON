@@ -13,14 +13,23 @@
 // Designed for graphify ingestion: stable slug, frontmatter foreign keys,
 // wikilink-able cross-refs between entities (phone -> imessage workspace).
 
-import { readFile, writeFile, readdir, rename, mkdir } from "node:fs/promises";
+import { readFile, writeFile, readdir, rename, mkdir, access } from "node:fs/promises";
 import { resolve } from "node:path";
 import lockfile from "proper-lockfile";
-import { RAW_DIR } from "./paths.mjs";
+import { RAW_DIR, WIKI_PEOPLE_DIR } from "./paths.mjs";
 import { resolveCity } from "./city.mjs";
 import { firstName, buildSlug, uniqueSlug } from "./slug.mjs";
 
 await mkdir(RAW_DIR, { recursive: true });
+await mkdir(WIKI_PEOPLE_DIR, { recursive: true });
+
+async function ensureWikiStub(slug) {
+  const path = resolve(WIKI_PEOPLE_DIR, `${slug}.md`);
+  try { await access(path); return; } catch {}
+  const today = new Date().toISOString().slice(0, 10);
+  const body = `---\nslug: ${slug}\ntype: person\nlast_touched: ${today}\n---\n\n## Context\n\nAuto-stubbed from raw/tinder/${slug}.md. Populate as conversations develop.\n\n## Active threads\n\n## Open questions\n\n## Backlinks\n`;
+  await writeFile(path, body);
+}
 
 // CODEX-CRIT-4+5: serialize all entity mutations behind a single global lock.
 // Per-slug locking would be ideal but is racy when slug allocation itself depends
@@ -414,6 +423,7 @@ export async function upsertMatch({ matchId, personId, name, source = "tinder", 
       profile_changes: "",
       visual: "",
     });
+    await ensureWikiStub(slug);
     return { slug, created: true, renamed: false, profile_diff: null };
   });
 }

@@ -7,7 +7,7 @@ import { execFile as _execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { readdir, readFile } from "node:fs/promises";
 import { resolve } from "node:path";
-import { QUANTUM_ROOT } from "./paths.mjs";
+import { IMESSAGE_DIR } from "./paths.mjs";
 
 const execFile = promisify(_execFile);
 
@@ -46,8 +46,6 @@ export async function findPhoneByName(firstName, lastName = null) {
     return normalizeDigits(stdout.trim());
   } catch { return null; }
 }
-
-const IMESSAGE_DIR = resolve(QUANTUM_ROOT, "raw/imessage");
 
 async function* iterRecentImessageShards(daysBack = 60) {
   let files;

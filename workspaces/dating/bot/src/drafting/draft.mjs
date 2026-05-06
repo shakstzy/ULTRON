@@ -89,7 +89,7 @@ export async function draftMessage({ context, intent }) {
   const prompt = buildPrompt({ context, intent, voice });
   const draftId = randomUUID();
 
-  const { stdout } = await execFile("claude", ["-p", prompt, "--model", process.env.QUANTUM_TINDER_MODEL || "sonnet"], {
+  const { stdout } = await execFile("claude", ["-p", prompt, "--model", process.env.TINDER_MODEL || "sonnet"], {
     timeout: 120000,
     maxBuffer: 1024 * 1024,
   });

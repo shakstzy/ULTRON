@@ -86,7 +86,7 @@ async function main() {
   const existingPending = new Set((await listQueue("pending")).map(p => p.meta.match_id));
   const existingApproved = new Set((await listQueue("approved")).map(p => p.meta.match_id));
 
-  const testLimit = parseInt(process.env.QUANTUM_TINDER_DECIDE_LIMIT || "0", 10);
+  const testLimit = parseInt(process.env.TINDER_DECIDE_LIMIT || "0", 10);
   if (testLimit > 0) console.log(`TEST MODE: decide capped at ${testLimit} drafts`);
   let queued = 0, autoQueued = 0, hitlQueued = 0, skipped = 0, draftCount = 0;
 
@@ -170,7 +170,7 @@ async function main() {
 
   const pendingCount = (await listQueue("pending")).length;
   if (pendingCount >= PENDING_NOTIFY_THRESHOLD) {
-    await notifySelf(`Tinder: ${pendingCount} drafts waiting. cd workspaces/tinder/04-outbound/pending && ls`);
+    await notifySelf(`Tinder: ${pendingCount} drafts waiting. cd workspaces/dating/04-outbound/pending && ls`);
   }
 
   await logSession({ event: "decide", queued, auto: autoQueued, hitl: hitlQueued, skipped, pending_total: pendingCount });

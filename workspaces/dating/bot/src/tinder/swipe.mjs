@@ -35,7 +35,7 @@ export async function swipeSession(page, { sessionMinutesMax = null } = {}) {
   const estMs = caps.swipes.per_session_max * avgGap * 1.5;
   const sessionMs = sessionMinutesMax ? sessionMinutesMax * 60 * 1000 : estMs;
   const sessionEnd = Date.now() + sessionMs;
-  const testLimit = parseInt(process.env.QUANTUM_TINDER_TEST_LIMIT || "0", 10);
+  const testLimit = parseInt(process.env.TINDER_TEST_LIMIT || "0", 10);
   const sessionMaxSwipes = testLimit > 0
     ? testLimit
     : jitter(caps.swipes.per_session_min, caps.swipes.per_session_max + 1);
@@ -52,7 +52,7 @@ export async function swipeSession(page, { sessionMinutesMax = null } = {}) {
     await microFidget(page);
 
     const profile = await readVisibleProfile(page);
-    if (process.env.QUANTUM_TINDER_DEBUG === "1") {
+    if (process.env.TINDER_DEBUG === "1") {
       const cardCount = await page.$$eval("[class*='recCard__img'][role='img'][aria-label]", els => els.length);
       const recCardCount = await page.$$eval("[class*='recCard']", els => els.length);
       const ariaImgCount = await page.$$eval("[role='img'][aria-label]", els => els.length);

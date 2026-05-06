@@ -305,7 +305,16 @@ export async function connectOrLaunch({ force = false, headless = false } = {}) 
     // don't apply -- stock Chrome IS the correct fingerprint.
     const browser = await playwrightChromium.connectOverCDP(cdpUrl);
     const contexts = browser.contexts();
-    const context = contexts[0] || await browser.newContext();
+    if (!contexts.length) {
+      // newContext() over CDP creates an incognito-like context NOT tied to the
+      // daemon's persistent profile, so cookies/storage/breaker state would
+      // diverge silently. Treat this as fatal (Codex adversarial review).
+      try { await browser.close(); } catch (_) {}
+      const err = new Error('CDP daemon has no default context (likely a stale or non-persistent Chrome). Restart with `node scripts/run.mjs daemon-stop && node scripts/run.mjs daemon-start`.');
+      err.code = 'CDP_NO_DEFAULT_CONTEXT';
+      throw err;
+    }
+    const context = contexts[0];
     installBreakerWatcher(context);
     // Tab hygiene: close everything except the first usable tab so we operate
     // on a known surface. about:blank or zillow.com is preferred. We MUST skip
@@ -362,7 +371,18 @@ export async function connectOrLaunch({ force = false, headless = false } = {}) 
 export async function warmUpZillow(page, { homepageWaitMs = 12000 } = {}) {
   const resp = await page.goto('https://www.zillow.com/', { waitUntil: 'domcontentloaded', timeout: 45000 });
   if (resp && resp.status() === 403) {
-    const err = new Error('Homepage warmup returned 403 (PerimeterX). IP or Chrome profile is flagged. Stop, do not proceed to target URLs. Wait several hours, then wipe the Chrome profile and re-login.');
+    // Stop the daemon proactively — leaving a flagged Chrome running means
+    // the next CDP attach inherits the poisoned state and re-trips on first
+    // request (Gemini adversarial review 2026-05-06). Operator workflow:
+    // wipe state/chrome-profile/, re-login from a clean network.
+    try {
+      const { stopDaemon } = await import('./daemon.mjs');
+      await stopDaemon();
+      console.error('[zrm] warmup 403 -> daemon stopped to prevent attach loop. Wipe state/chrome-profile/ and re-login.');
+    } catch (e) {
+      console.error(`[zrm] warmup 403 but daemon-stop failed: ${e.message}`);
+    }
+    const err = new Error('Homepage warmup returned 403 (PerimeterX). IP or Chrome profile is flagged. Daemon stopped. Wipe state/chrome-profile/ and re-login from a clean network.');
     err.code = 'WARMUP_403';
     throw err;
   }
@@ -371,7 +391,11 @@ export async function warmUpZillow(page, { homepageWaitMs = 12000 } = {}) {
 }
 
 async function persistZillowSessionCookies(context) {
-  const all = await context.cookies();
+  // Pass an explicit URL list so we get cookies regardless of which tabs are
+  // currently open. Gemini adversarial review 2026-05-06: bare cookies()
+  // returns only cookies for currently-loaded domains in some Playwright
+  // builds, which silently dropped Zillow session cookies on close.
+  const all = await context.cookies(['https://www.zillow.com', 'https://identity.zillow.com']);
   const ttl = Math.floor(Date.now() / 1000) + SESSION_COOKIE_TTL_DAYS * 24 * 3600;
   const upgraded = [];
   for (const c of all) {

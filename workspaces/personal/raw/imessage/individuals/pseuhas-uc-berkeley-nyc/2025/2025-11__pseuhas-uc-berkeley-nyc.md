@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-11-03T19:47:06.477422-06:00'
   sha256: 080bb0d275cb1f7c31623627300d021db0dc9c6edcb5983f7368a5289771c84d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Perplexity search results explaining the lack of formal research linking
+    Ganesha and psychedelics.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:26.455150+00:00'
   source_available: true
 - id: 931c6a5476d2ecf9
   filename: IMG_3060.PNG
@@ -45,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-11-04T09:29:34.512818-06:00'
   sha256: e43b74210174630921e263dac74d439f8bdfb41e34b6fe801736dfbd5f154e96
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling woman with dark wavy hair wearing a black tank top in a group
+    photo screenshot.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:04.309227+00:00'
   source_available: true
 - id: f0061cdd200e5c97
   filename: IMG_3058.PNG

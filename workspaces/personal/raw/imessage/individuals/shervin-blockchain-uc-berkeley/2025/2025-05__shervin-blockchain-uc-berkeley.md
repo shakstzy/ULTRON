@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-05-21T13:21:38.233214-05:00'
   sha256: 78d6a667c10f3606277ca8341f47174980885e591b711024cc1b495f9e19595c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram story screenshot of a $100 'CUT UP LESSONS' reckless driving
+    advertisement.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:23.821063+00:00'
   source_available: true
 chat_message_guids_count: 4
 deleted_upstream: null

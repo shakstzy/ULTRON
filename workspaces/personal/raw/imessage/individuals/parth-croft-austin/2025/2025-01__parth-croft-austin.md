@@ -58,9 +58,10 @@ attachments:
   sender: parth-croft-austin
   sent_at: '2025-01-03T13:27:40.408661-06:00'
   sha256: 11c36d27755ec32d009d432c87bd03fbc6fa7be69176ba80e1c27750083c531b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a VCard contact file for Aytahn Ben-Avi. It contains the individual's
+    name and a primary phone number for communication.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:03:14.193434+00:00'
   source_available: true
 - id: f72c036317ce1a3c
   filename: Chinmay.vcf

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-09-08T12:14:46.146641-05:00'
   sha256: 0401324fb2c5a8e8237cba3a4992ae73632ef9f39c6deaed515872dcfeb4d441
-  description: null
-  description_model: null
-  extracted_at: null
+  description: X profile of Inversion (@inversion_cap) featuring "Real GDP onchain"
+    messaging.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:29.095162+00:00'
   source_available: true
 - id: deb1bcdd8df6a2bb
   filename: IMG_4041.png

@@ -46,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-07-09T21:53:45.442093-05:00'
   sha256: af9c7bf6e9b125947d453d8afd8035c95d6758207467e17334c7a869c76b192e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a user apologizing to Gayathri for falling asleep,
+    featuring a video inset.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:38.740809+00:00'
   source_available: true
 - id: d341de14d416b295
   filename: IMG_0344.PNG

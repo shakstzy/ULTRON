@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-18T22:48:05.354665-05:00'
   sha256: bdcc2c3633b08e77d9395af582c71a79c223a09361fb143d3767ea01fa04bbe3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Four young men smiling for a selfie in a bar, with two wearing NVIDIA
+    GTC event lanyards.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:03:05.865985+00:00'
   source_available: true
 chat_message_guids_count: 1
 deleted_upstream: null

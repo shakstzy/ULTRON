@@ -22,9 +22,10 @@ attachments:
   sender: jurnee-hinge-austin
   sent_at: '2026-03-03T00:21:10.655444-06:00'
   sha256: 4e837d270f9ef624bc8d6716083faf8e4af9b21d5539b2bf5a8647330f908cd5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Selfie of a woman with curly hair and glasses under vivid pink and
+    purple lighting.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:50.733197+00:00'
   source_available: true
 chat_message_guids_count: 19
 deleted_upstream: null

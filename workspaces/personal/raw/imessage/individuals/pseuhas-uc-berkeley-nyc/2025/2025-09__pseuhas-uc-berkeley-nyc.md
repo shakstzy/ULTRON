@@ -22,9 +22,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-09-26T14:47:06.930941-05:00'
   sha256: c5e92de4f2cd7034311335007cd8de3d5ca3d696a624c8f4e17a27092e12cb5e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LinkedIn profile header for Anish Srinivasan, Director of Product Operations
+    at Commure.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:37.336651+00:00'
   source_available: true
 - id: be365843a5e091ec
   filename: ECE1DF44-09AF-4D94-90BA-3E5CC5466584.MOV

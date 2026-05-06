@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-05T23:16:04.588000-06:00'
   sha256: 9a040e3e2a56886e5b511c62a7480c405d05463c37c61b7c5ea563c57b5c278e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "A glass \"DIAMOND\" bong on a TV stand with the text overlay \"\U0001F33F\
+    \ + juice + grizzly\"."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:45.441630+00:00'
   source_available: true
 - id: 53239d627d2bc6b7
   filename: 79557202833__3B313353-57E4-4890-8B60-029747E02C2B.HEIC

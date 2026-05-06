@@ -102,9 +102,10 @@ attachments:
   sender: me
   sent_at: '2026-03-15T18:44:39.364000-05:00'
   sha256: 7398f077825ed446e0a9ad1cefa39d8ce72a5fa89cfaecce6ecfe6c3f47a844c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile app screenshot displaying a member directory for the Austin
+    SaaS & AI Founders group.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:45.599830+00:00'
   source_available: true
 - id: 0d8fb13e3acbe228
   filename: IMG_7736.PNG
@@ -113,9 +114,10 @@ attachments:
   sender: me
   sent_at: '2026-03-15T19:50:19.329000-05:00'
   sha256: df1bc907e39f9f18a327083126d7799e24f1114d8871a436d0addd1576e85e46
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of Google Maps navigation directing a left turn onto S I-35
+    Frontage Road.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:47.143503+00:00'
   source_available: true
 - id: 24192834694248d7
   filename: 1471F323-02B9-4E48-B515-28EFCDDB9329.pluginPayloadAttachment

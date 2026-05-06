@@ -22,9 +22,10 @@ attachments:
   sender: shlok-uc-berkeley-nyc
   sent_at: '2025-02-09T11:46:24.774417-06:00'
   sha256: 383a24ad91c86ec7c00782ba912ab896d03b00dab020394ce9d03c60bcb9635e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Photographer in green shoots a man in grey and woman in blue in a white
+    photo studio.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:55.302462+00:00'
   source_available: true
 chat_message_guids_count: 19
 deleted_upstream: null

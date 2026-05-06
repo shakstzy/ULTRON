@@ -46,9 +46,9 @@ attachments:
   sender: me
   sent_at: '2026-01-12T16:21:33.745000-06:00'
   sha256: b0de85aa12a6f3b7ecbf4bbf1623b0b1e90c93136df6adf70c00c6cccb8338af
-  description: null
-  description_model: null
-  extracted_at: null
+  description: NDA signature page between TPS AT FORT MAC, LLC and OUTERSCOPE, LLC.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:47.231283+00:00'
   source_available: true
 chat_message_guids_count: 49
 deleted_upstream: null

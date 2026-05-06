@@ -34,9 +34,10 @@ attachments:
   sender: zubair-renter-showing
   sent_at: '2025-11-11T19:13:21.812344-06:00'
   sha256: 5356e5d00614cd9497e711885c22765ab22981014bd8649ce5138f6f86fdb0f8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Successful $20.00 Zelle transfer to Aditya from SafeBalance account
+    6667 on Nov 12, 2025.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:55.174100+00:00'
   source_available: true
 chat_message_guids_count: 14
 deleted_upstream: null

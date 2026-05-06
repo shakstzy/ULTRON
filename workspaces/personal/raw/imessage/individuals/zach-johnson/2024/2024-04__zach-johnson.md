@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-04-04T12:40:43.125000-05:00'
   sha256: 8d3fe2bcdcf448d8a54f91f59ef7d792821b2410d6e31c59c282724d83ee2940
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person stands in a music production studio with large speakers and
+    neon lighting.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:20.666067+00:00'
   source_available: true
 - id: 42bf7ca2321a1fd7
   filename: IMG_9524.png
@@ -56,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2024-04-04T12:41:07.898000-05:00'
   sha256: 2f40c909f3af6339a8fd388f4de51bfba2f39f1274e3d3c82292675eea73211f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men in a studio with a microphone and chair, backlit by a large,
+    bright circular light.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:14.435916+00:00'
   source_available: true
 - id: 134ea195c5c7aff2
   filename: image.heic
@@ -67,9 +69,10 @@ attachments:
   sender: zach-johnson
   sent_at: '2024-04-06T01:50:33.256518-05:00'
   sha256: 25a3890177c6722bd55c040ae95724a0db02b76cf2c66c8a39d84d8297665032
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a leather jacket sings on a stage with blue lights and a glowing
+    neon grid floor.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:05.011745+00:00'
   source_available: true
 - id: 66c8f7e2402f9e51
   filename: image.heic
@@ -78,9 +81,10 @@ attachments:
   sender: zach-johnson
   sent_at: '2024-04-06T01:50:33.256518-05:00'
   sha256: 9f7ba8081a51b708ada8d2f140859c3a5c23ae1b3cf23956312c83f7c4473a63
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a brown leather jacket sings into a microphone on a blue-lit
+    stage.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:09.729619+00:00'
   source_available: true
 chat_message_guids_count: 22
 deleted_upstream: null

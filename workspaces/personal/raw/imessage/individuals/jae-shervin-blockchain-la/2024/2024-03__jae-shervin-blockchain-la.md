@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-03-20T01:43:15.747465-05:00'
   sha256: a5a3cce72e07b0704d6c16a38938543df4e0ecc33744af9011dab08514ca3ad9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dark venue with purple soundwave-style hanging lights and a large video
+    screen.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:53.407389+00:00'
   source_available: true
 - id: 2a506c69b98c1bed
   filename: IMG_3142.PNG

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-02-23T00:04:20.452000-06:00'
   sha256: 4e6aba542ee608053d22b788f263eb288375894444ba4e8b7d5ce99eab09410b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Sideways nighttime city street view from a car window with a PELOFTS.COM
+    building sign.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:48.591698+00:00'
   source_available: true
 - id: fe1bb13969d1413f
   filename: 79351951934__FD122DC6-FA61-482B-A09F-74F44C6EC04A.HEIC

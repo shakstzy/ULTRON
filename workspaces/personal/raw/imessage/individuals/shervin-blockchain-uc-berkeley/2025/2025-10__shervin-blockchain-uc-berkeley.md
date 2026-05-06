@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2025-10-26T22:01:12.588000-05:00'
   sha256: 4b157f95c54c5eb83daf5bf9850b2907e687afa2d2e6b73d7e857a1306f506f4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Edison Leung's email acceptance of a meeting with Adithya Kumar on
+    October 26, 2025.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:40.159755+00:00'
   source_available: true
 chat_message_guids_count: 11
 deleted_upstream: null

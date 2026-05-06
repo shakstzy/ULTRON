@@ -22,9 +22,10 @@ attachments:
   sender: lorenzo-mom
   sent_at: '2025-09-07T22:46:14.613879-05:00'
   sha256: 9c5a68d9b831b0d22700ddc4f11fe02df8c1274d447b8fa20cad705c780f8261
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Silver urn and terracotta pot under a black metal railing on a concrete
+    patio at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:56.787954+00:00'
   source_available: true
 chat_message_guids_count: 14
 deleted_upstream: null

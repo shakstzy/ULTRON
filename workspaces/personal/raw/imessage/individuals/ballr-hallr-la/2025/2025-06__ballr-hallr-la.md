@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-06-06T11:46:04.686000-05:00'
   sha256: f323604171254047147b5c10f6b0f043d268cdfeff295b5766b70c9328dae207
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Spotify artist profile for BallerHaller24 showing popular tracks and
+    a current playback bar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:52.021911+00:00'
   source_available: true
 - id: 7c3c780c8ba1d800
   filename: IMG_5757.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-06-21T14:32:18.370000-05:00'
   sha256: 4d2b87bf4ffdd036abc0fc267f5c4f45231076f3f76a31fb6f8346263bd995a8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Music player UI for the song "aint b best friends" by BallerHaller24
+    and Shak Stzy.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:43.467345+00:00'
   source_available: true
 chat_message_guids_count: 10
 deleted_upstream: null

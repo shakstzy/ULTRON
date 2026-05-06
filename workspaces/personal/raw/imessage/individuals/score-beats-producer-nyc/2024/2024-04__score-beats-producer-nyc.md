@@ -22,9 +22,10 @@ attachments:
   sender: score-beats-producer-nyc
   sent_at: '2024-04-22T20:11:55.541393-05:00'
   sha256: 35779946c33e8cfceea05037c480da6c0b6c4ec0d38f185ec87e8683939750f9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Dried shrooms for sale with prices: $45 (8th), $65 (Q), $100 (half),
+    and $185 (ounce).'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:03:03.554351+00:00'
   source_available: true
 chat_message_guids_count: 13
 deleted_upstream: null

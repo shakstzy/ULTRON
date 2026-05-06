@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-03-01T00:18:06.761000-06:00'
   sha256: 3eae4a7ace472d2509079293a84d27f866332a9f8d90373bfd86eb9488aef728
-  description: null
-  description_model: null
-  extracted_at: null
+  description: RSVP screen for Adithya Shakthi Kumar confirmed as 'On The List' for
+    one attendee.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:21.666985+00:00'
   source_available: true
 chat_message_guids_count: 51
 deleted_upstream: null

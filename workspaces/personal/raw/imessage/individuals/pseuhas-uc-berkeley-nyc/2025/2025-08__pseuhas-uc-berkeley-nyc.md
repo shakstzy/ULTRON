@@ -70,9 +70,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-08-16T17:12:23.051543-05:00'
   sha256: a1bf7dc40501d30598287ccbc4280f0f67a839145699a3f2ef50dce1f5a5e2c5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A group of people perform a Hindu puja ceremony with offerings and
+    ritual chanting.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:03:12.236053+00:00'
   source_available: true
 - id: 8e2b1c0b9165d6ae
   filename: IMG_7827.png
@@ -105,9 +106,10 @@ attachments:
   sender: me
   sent_at: '2025-08-18T15:55:27.863000-05:00'
   sha256: b4acac388f73bee1be35b45b5d0ea521a279c69d90c3a774ab44399eadb93919
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Randall Boggs from Monsters, Inc. grinning mischievously against a
+    checkered background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:03:08.882285+00:00'
   source_available: true
 - id: 2b32e15675122057
   filename: IMG_9053.png
@@ -116,9 +118,10 @@ attachments:
   sender: me
   sent_at: '2025-08-18T15:58:22.914000-05:00'
   sha256: 0574b57789c4da4b192d82ebb8df7ec0d040fd7eb7f5e05e4f93bdbbc53f2764
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mr. Waternoose from Monsters, Inc. pointing forward in a red vest and
+    bow tie.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:37.100627+00:00'
   source_available: true
 - id: d4eaf5174c6fed5d
   filename: IMG_6876.heic

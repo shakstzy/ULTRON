@@ -33,9 +33,10 @@ attachments:
   sender: ballr-hallr-la
   sent_at: '2024-11-05T22:40:32.601470-06:00'
   sha256: dc4f858f8065da3814404f4b6ebec38b13bb18a0f77a198a2349985c18380712
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of text messages regarding a music studio session and payment
+    status.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:49.918040+00:00'
   source_available: true
 - id: a84753eed1b550be
   filename: IMG_1738.jpeg
@@ -44,9 +45,10 @@ attachments:
   sender: ballr-hallr-la
   sent_at: '2024-11-05T22:46:48.988532-06:00'
   sha256: 187120bfbb10c9435fd16b2350089dbcec232caed17d665508ae5142e65ff48e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of rxknephew's Instagram profile grid featuring music videos,
+    photos, and a map.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:51.765196+00:00'
   source_available: true
 - id: fbf5657e7134c53d
   filename: IMG_1739.jpeg
@@ -55,9 +57,9 @@ attachments:
   sender: ballr-hallr-la
   sent_at: '2024-11-05T22:49:59.455454-06:00'
   sha256: 5707fe73c90519378b9e229296ecbfe2cd8a376c6cb4423fbb039eddb962adda
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of the Instagram profile for artist Rxk Nephew.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:47.597270+00:00'
   source_available: true
 - id: 5b7f04bce490f7bc
   filename: IMG_5049.png
@@ -66,9 +68,9 @@ attachments:
   sender: me
   sent_at: '2024-11-06T21:26:11.672706-06:00'
   sha256: 2436d43094f6445a0d920c92487e31dd0853083d64552240e60c5becccb163d4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Blue iMessage bubble asking "Hey caitlin is the studio open tn".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:45.304694+00:00'
   source_available: true
 chat_message_guids_count: 17
 deleted_upstream: null

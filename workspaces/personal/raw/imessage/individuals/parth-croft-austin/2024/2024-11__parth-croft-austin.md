@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2024-11-29T22:00:59.883000-06:00'
   sha256: 10c541c8c297738fe316d976a52d00b769cab41c85caa23d2b219045b58b92ef
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three young men take a nighttime selfie outside, with two flashing
+    peace signs.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:11.775479+00:00'
   source_available: true
 chat_message_guids_count: 61
 deleted_upstream: null

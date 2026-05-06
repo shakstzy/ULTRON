@@ -68,9 +68,10 @@ attachments:
   sender: me
   sent_at: '2025-10-27T15:20:11.444000-05:00'
   sha256: 30ea427b737133e3dafb841e6105c432325b9b131b50658c08a46db2ab4f9a4e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Itemized collision repair estimate for bumper, fender, and door parts,
+    labor, and paint.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:33.238927+00:00'
   source_available: true
 - id: 88869411c8a9ef42
   filename: IMG_9261.jpeg

@@ -22,9 +22,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-01-15T21:38:06.722287-06:00'
   sha256: 1b7fcd91b3e03963cf92dbffd4982974e81288cc668b080c92f6cee2e88e66bf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram screenshot of a man in a suit adjusting his watch with the
+    text BOSS.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:50.144236+00:00'
   source_available: true
 - id: 5e2bf6d72b0310a4
   filename: IMG_9344.MOV
@@ -44,9 +45,9 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-01-22T16:58:52.777716-06:00'
   sha256: 401eb4cb64c2174d1ba6d97c2e5efc8f960aa43e85cfc77e8172608ef3946a29
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A masked man weighs a live chicken on a hanging digital scale.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:58.564579+00:00'
   source_available: true
 - id: e67f3836a89ae3fc
   filename: IMG_9587.png
@@ -55,9 +56,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-01-26T14:11:03.769910-06:00'
   sha256: efa804f70a575717d4f81f2c53749594bde0b1c52e426427cc4c42ba9fafabd6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A mobile screenshot of a video call with a bearded man named Maneesh
+    in a white t-shirt.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:07.972606+00:00'
   source_available: true
 - id: 77bcb4e119a053c7
   filename: IMG_9588.PNG
@@ -66,9 +68,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-01-26T14:11:03.769910-06:00'
   sha256: 73f5c8c6524010888148b136f9530712c48e46775b636dfab0ecb86153151ccd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: FaceTime screenshot stating "Maneesh is unavailable" with call again
+    and record video buttons.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:03:06.844586+00:00'
   source_available: true
 chat_message_guids_count: 12
 deleted_upstream: null

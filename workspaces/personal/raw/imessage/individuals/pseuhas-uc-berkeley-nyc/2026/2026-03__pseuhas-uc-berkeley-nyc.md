@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-01T15:37:04.226000-06:00'
   sha256: 36b603e284800d6f967f32b454a197ab8d271db1cb0ac2c59eb850a598cd89ff
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dell monitor playing DJ YUNG VAMP - I SMOKIN DOPE BIH beside a Focusrite
+    and MIDI keyboard.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:36.020660+00:00'
   source_available: true
 - id: 819fad2d69f1012d
   filename: 79560234489__01699300-5A8B-4DDB-8D34-44120D44D709.HEIC
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2026-03-19T03:39:12.956203-05:00'
   sha256: af4b363338089cac90e47dbaf3d3a5d720b33b11031a6cd1b97cff03f03173c7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men pose for a selfie at Hotel Maria; one wears a black 'BELIEVE
+    THE HYPE' t-shirt.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:07.448556+00:00'
   source_available: true
 - id: d3a9b83fac0e428b
   filename: att.V6PLnm2YDfF3o0DsN7WJfTFovbPxud9EbE1hG46WmD8.JPG
@@ -44,9 +46,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-03-19T22:34:35.844487-05:00'
   sha256: 57a3cb9e6d980df177a340ec37b5897d3168bdb3f1b9df446c4d611b8e96983f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of news report on Joshua Camps' conviction for the murder
+    of tech CEO Tushar Atre.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:01.056976+00:00'
   source_available: true
 - id: 1b75c49331cb5c18
   filename: IMG_0175.mov

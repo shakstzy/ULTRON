@@ -44,9 +44,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-02-25T20:09:13.741695-06:00'
   sha256: 596997b9a7446502de25682aa7b09a5f3791c7a8d71bab301b22c121e00a2892
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Registration for Gensyn Mixer @ ETHDenver, Feb 25, 2025, 6PM at Yardbird
+    Table & Bar, Denver.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:35.758696+00:00'
   source_available: true
 - id: 62bf9550a8979c05
   filename: IMG_4955.PNG
@@ -55,9 +56,9 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-02-25T20:09:13.741695-06:00'
   sha256: 5f41f98177aa311537c3830a13ab864c9e547cf76258705e4a245f6f759c75e6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Luma QR code ticket for Shervin Beyk at the Gensyn Mixer @ ETHDenver.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:27.374535+00:00'
   source_available: true
 - id: a66476e341dcae94
   filename: IMG_4539.png

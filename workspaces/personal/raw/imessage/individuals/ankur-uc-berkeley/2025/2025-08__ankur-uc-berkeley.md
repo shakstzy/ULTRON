@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-08-14T12:17:01.745947-05:00'
   sha256: 7f4b05b91cb634f16019092df37bad3f5d5d72c875717151117c7576c2a157c2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Synapse Web3 app demo showing portfolio tracking, chat-based task automation,
+    and an MCP store.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:11.137373+00:00'
   source_available: true
 - id: c8822e978b63c35e
   filename: -5434798402986163788.MOV

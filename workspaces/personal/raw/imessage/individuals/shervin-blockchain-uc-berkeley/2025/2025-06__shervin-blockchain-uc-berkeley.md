@@ -22,9 +22,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-06-10T02:28:45.942548-05:00'
   sha256: c208e8aa4843104a5c7b349e000d24bd7cfcdfb75c32d796af2d8f0d74c11fed
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a Titleist visor and North Face vest smokes three cigarettes
+    at once.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:32.753329+00:00'
   source_available: true
 - id: 374a8a3634c72434
   filename: IMG_9575.PNG
@@ -45,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-06-10T02:34:04.328091-05:00'
   sha256: 6cbdb699f520e5271c9c7aba44a7f3ace0790896d83edecdbed756f8e1b14015
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Slack thread of Carola scheduling a meeting for June 12 at 4 PM CET
+    with Jake Hartnell.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:37.722907+00:00'
   source_available: true
 - id: 01f6ea0024bd8fd7
   filename: IMG_9577.PNG
@@ -56,9 +58,10 @@ attachments:
   sender: me
   sent_at: '2025-06-10T02:34:04.328091-05:00'
   sha256: cf0d6c3a991c13fdf4b7d1e446eb5f6813c8519e8ddb0b1838731382e855b10a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Slack chat: Jake and Carola scheduling a sync for Thursday the 12th
+    at 3:30 PM CET.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:43.885534+00:00'
   source_available: true
 - id: bb979dab7dd7db1d
   filename: IMG_9743.PNG
@@ -67,9 +70,9 @@ attachments:
   sender: me
   sent_at: '2025-06-19T15:24:39.646000-05:00'
   sha256: 8c9bb2d21edfada1b204dc56825d7d496f5be1f48e6a6d4c7d03af3674c3c027
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram story screenshot of two men arm wrestling at an outdoor table.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:47.034480+00:00'
   source_available: true
 - id: 81c145797ed2b2c0
   filename: ScreenRecording_06-23-2025 00-29-52_1.MP4

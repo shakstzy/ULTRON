@@ -22,9 +22,9 @@ attachments:
   sender: me
   sent_at: '2024-11-23T01:28:26.391000-06:00'
   sha256: efa896349116f5b1378ed3ffb6e9a17c45071b452ce794afabaaa5bf6518823a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three young men pose on a wooden pier at night under bright streetlights.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:56.969800+00:00'
   source_available: true
 - id: b3245f8918b2fed4
   filename: IMG_0772.JPG
@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2024-11-23T01:28:46.537000-06:00'
   sha256: e21195d5b2e0f8806fd6ef465b22a4a57d03d85cb5e1bdd1eee2f32d2c8d7187
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three young men eat at a table with plates of food under purple ambient
+    lighting.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:18.218548+00:00'
   source_available: true
 chat_message_guids_count: 23
 deleted_upstream: null

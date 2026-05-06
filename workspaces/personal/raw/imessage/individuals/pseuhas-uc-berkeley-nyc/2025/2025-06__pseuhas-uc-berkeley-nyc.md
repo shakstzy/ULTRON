@@ -151,9 +151,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-06-28T17:00:02.287683-05:00'
   sha256: 50f00c2d13beea18b0a3a6a784b4aae8eb9de2c588e97da554b2e11515d15a21
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a striped polo clinks beer glasses at a floral-decorated outdoor
+    restaurant.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:13.629900+00:00'
   source_available: true
 - id: 98fa022ec7e3a26f
   filename: 77286301666__38143E0D-52A2-45F9-A444-8DAB7C48E5B6.HEIC

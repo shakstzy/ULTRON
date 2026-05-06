@@ -58,9 +58,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-12-24T13:07:37.597819-06:00'
   sha256: a37a03b8dbcda3e129fdd200d6a09766f6886ab04d54f99397afa6a92ee89a03
-  description: null
-  description_model: null
-  extracted_at: null
+  description: UPS Store receipt from 12/24/2025 for a $38.64 Ground Residential shipment
+    in New York City.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:52.068525+00:00'
   source_available: true
 - id: 6807d0eadf445f4e
   filename: 78829605997__B18ABFAE-AE56-413B-AAA8-5DAB3285F848.heic
@@ -69,9 +70,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-12-24T13:07:47.420754-06:00'
   sha256: cd0e938a97447076f432d5cc1dc62a66a0eabf64022cd81fb71ebb202e3504a1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: UPS Store receipt for $38.64 ground residential shipping in New York
+    on 12/24/2025.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:54.711393+00:00'
   source_available: true
 - id: a2fb5d58ac2bfaba
   filename: IMG_7569.PNG
@@ -80,9 +82,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-12-31T15:29:21.106144-06:00'
   sha256: 7074a689feb7e8226df9abd70e2eec1ee2eedfd39ffaddee167b7bc997019875
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a graphic tee and glasses sits at an outdoor table with a water
+    bottle and coastal view.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:56.484037+00:00'
   source_available: true
 chat_message_guids_count: 42
 deleted_upstream: null

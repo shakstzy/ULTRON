@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-08-30T23:20:10.795879-05:00'
   sha256: 5ad19cbad8e4ab1320981e74384c1958214b189e252bfc538d1c9ca3900c91a2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A white Curry Pizza House box rests on a dark floor next to a striped
+    garment.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:57.592049+00:00'
   source_available: true
 chat_message_guids_count: 1
 deleted_upstream: null

@@ -57,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2026-04-13T22:47:17.142000-05:00'
   sha256: 0cf7dd9a76d0cc774b2f2ef6fd050e9ba3093da61d52676e1ee7cd6f2882a30e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot showing a mathematical sum of eight numbers totaling 455
+    on a dark background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:03:02.121691+00:00'
   source_available: true
 - id: b101ff7b16f01ee4
   filename: 05D07061-D2CE-496B-B893-3EB8DC139B90.pluginPayloadAttachment

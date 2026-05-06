@@ -22,9 +22,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2024-05-17T14:29:33.301970-05:00'
   sha256: 8a9b50696b5e677e1001fb1ee10f6a906e87ee88e18675bbc834ee36ba06c176
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A moray eel with prominent white eyes peeks out from an underwater
+    rocky reef.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:02.553219+00:00'
   source_available: true
 - id: db646267354a718b
   filename: IMG_3842.jpeg
@@ -33,9 +34,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2024-05-17T14:30:24.612724-05:00'
   sha256: 898645aadc572b446dd7deddf8ec1499ee84bdaff7e5b2b66a5ff88181852a30
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of Randall Boggs from Monsters, Inc. in a mobile
+    web browser.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:13.251826+00:00'
   source_available: true
 chat_message_guids_count: 89
 deleted_upstream: null

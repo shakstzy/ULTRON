@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-04-01T08:54:26.960109-05:00'
   sha256: ad9d9acb988751c96babde08e745aa680b4010ad065634e097861f6120dd1036
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram DM screenshot of a chat with Akhil about 'Cs' and 'tweakin'
+    over a Trump post.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:33.003132+00:00'
   source_available: true
 - id: 27d3a40d5f575662
   filename: IMG_8828.png
@@ -33,9 +34,9 @@ attachments:
   sender: me
   sent_at: '2025-04-01T08:55:28.077000-05:00'
   sha256: f84e4c94a2d23bcd1aed4a996b0e16d749ecffa6113d87cc2d7263ba11b94d08
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of the song "LIKE A CHINK BITCH (G6)" by Eric Reprid.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:36.404821+00:00'
   source_available: true
 - id: b73a277e726afcd4
   filename: IMG_7620.PNG
@@ -44,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2025-04-09T13:26:28.543931-05:00'
   sha256: 292320a2365a4801e23a12eedf5e26753157d961e6920b538a6604019043e31b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Slack thread between Adithya Kumar and Sam Cassatt about Dubai travel
+    and price breakdowns.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:34.765565+00:00'
   source_available: true
 chat_message_guids_count: 89
 deleted_upstream: null

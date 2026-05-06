@@ -118,9 +118,10 @@ attachments:
   sender: sanvi-sister
   sent_at: '2026-04-25T12:17:09.315062-05:00'
   sha256: 0d1a199aa60eaa37c9e9bc31f007190e31281f21dca8ef33b76acf4fb5ccbda1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot showing "thinking of uuuu", "Wyd tomorrow night",
+    and "Miss u princess".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:12.704302+00:00'
   source_available: true
 - id: dc6f7c452333d6a1
   filename: "Screenshot 2026-04-25 at 12.16.50\u202FPM.png"
@@ -129,9 +130,10 @@ attachments:
   sender: sanvi-sister
   sent_at: '2026-04-25T22:18:35.465974-05:00'
   sha256: 0d1a199aa60eaa37c9e9bc31f007190e31281f21dca8ef33b76acf4fb5ccbda1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot showing "thinking of uuuu", "Wyd tomorrow night",
+    and "Miss u princess".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:12.704302+00:00'
   source_available: true
 - id: 90db38bd79e73741
   filename: 79896331457__28D16EBB-68E8-40F3-B59F-212EE9B16A05.HEIC
@@ -258,9 +260,10 @@ attachments:
   sender: sanvi-sister
   sent_at: '2026-04-29T01:42:37.479248-05:00'
   sha256: 551d4bf522fbe27b8b2f3ea4d8b4535ab95c774365f215af5a35907e6f9de3b3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Friends at an arcade bar using a punching machine and a couple posing
+    for a selfie video.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:03:11.564789+00:00'
   source_available: true
 - id: df6355a500ef0129
   filename: IMG_5687.png
@@ -315,9 +318,9 @@ attachments:
   sender: me
   sent_at: '2026-04-29T05:34:12.247900-05:00'
   sha256: 30e67796ea67cc833c9951fae5ebb7a08936c46d017760a82b760db3cbcca471
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down night selfie of a man and woman with distant city lights.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:30.327055+00:00'
   source_available: true
 - id: 3e0e48b4418ffbd7
   filename: IMG_8290.jpeg
@@ -385,9 +388,10 @@ attachments:
   sender: me
   sent_at: '2026-04-29T05:34:12.247900-05:00'
   sha256: a6e0e07c01f67c6323cb72f1e58b48203e581afcd9d2dc29a18d50eb4e732501
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down night selfie of a couple with a city skyline reflected
+    in water behind them.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:01.009585+00:00'
   source_available: true
 - id: 9290385198e107d4
   filename: IMG_8306.jpeg
@@ -420,9 +424,10 @@ attachments:
   sender: me
   sent_at: '2026-04-29T05:34:12.247900-05:00'
   sha256: 6f2553576d2bafa2d38fc8ab4f16f279ab33a25667287fabcdd987b2cc5b5bb0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down night selfie of a smiling man and woman with a city skyline
+    across water.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:37.675636+00:00'
   source_available: true
 - id: 29400cae11acb256
   filename: IMG_8293.jpeg
@@ -442,9 +447,10 @@ attachments:
   sender: me
   sent_at: '2026-04-29T05:34:12.247900-05:00'
   sha256: 348d97bfbffcb9c50cdc7a1112d5ead6722e00ff87085495f471f57fe078921d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A couple kisses at night on a bridge overlooking a lit-up city skyline
+    and water.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:58.657754+00:00'
   source_available: true
 - id: 32926753be85fbfa
   filename: IMG_8295.jpeg

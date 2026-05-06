@@ -33,9 +33,10 @@ attachments:
   sender: ballr-hallr-la
   sent_at: '2024-10-02T12:43:22.034385-05:00'
   sha256: fca46b5c71b9cf882abeb8912c6f7db3213f943d1d2212346671bba914d1b5bc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram profile for @daylightmatthew showing his bio, follower count,
+    and recent photo grid.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:53.882448+00:00'
   source_available: true
 chat_message_guids_count: 27
 deleted_upstream: null

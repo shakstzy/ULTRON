@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-08-29T03:14:40.115375-05:00'
   sha256: a8d2bf24e44d28a6ed99572186bf70762c32586e8168e4d197551f0e57322a6d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A blue Toyota Camry parked in a private lot at night by a chain-link
+    fence and tow sign.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:15.589581+00:00'
   source_available: true
 chat_message_guids_count: 3
 deleted_upstream: null

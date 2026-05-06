@@ -22,9 +22,10 @@ attachments:
   sender: zach-johnson
   sent_at: '2024-08-26T13:00:00.575545-05:00'
   sha256: b1bebafb6b75b4784f9cde378d2b5f02e1d4982d53318b270e483363ee314c16
-  description: null
-  description_model: null
-  extracted_at: null
+  description: White baseball cap with a green embroidered geometric logo being held
+    by a hand.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:15.911352+00:00'
   source_available: true
 chat_message_guids_count: 90
 deleted_upstream: null

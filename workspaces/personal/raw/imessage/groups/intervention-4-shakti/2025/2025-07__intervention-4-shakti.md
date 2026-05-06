@@ -22,9 +22,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-07-17T05:05:31.579966-05:00'
   sha256: c208e8aa4843104a5c7b349e000d24bd7cfcdfb75c32d796af2d8f0d74c11fed
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a Titleist visor and North Face vest smokes three cigarettes
+    at once.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:32.753329+00:00'
   source_available: true
 - id: 737d060a3ac89844
   filename: 77447250657__422ED2C1-91FD-4036-9807-58C59E3E85CB.heic
@@ -88,9 +89,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-07-22T20:38:26.856634-05:00'
   sha256: 7074a689feb7e8226df9abd70e2eec1ee2eedfd39ffaddee167b7bc997019875
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a graphic tee and glasses sits at an outdoor table with a water
+    bottle and coastal view.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:56.484037+00:00'
   source_available: true
 - id: 1f6d7fbaa1903dd0
   filename: IMG_7582.mov

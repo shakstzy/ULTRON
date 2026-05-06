@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-18T02:38:42.996493-05:00'
   sha256: a2491be39b4461d48da38f98b43d19c63b895336d5fdf110c839eecb73e97e94
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple Maps screenshot showing a 14-minute driving route to 1337 Grant
+    Ave in San Francisco.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:17.719364+00:00'
   source_available: true
 - id: 7056ce36bc4ea666
   filename: IMG_7840.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2026-03-18T06:33:47.483000-05:00'
   sha256: 5089f0df442ceec6aa967183c0096002c1af4959004d0d8041b39a56bb745f2d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of an Uber business ride to 798 Post St in San Francisco
+    arriving at 4:43 AM.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:12.694163+00:00'
   source_available: true
 - id: 54b38a3ae3e505ce
   filename: IMG_6613.png
@@ -55,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2026-03-22T18:51:07.491188-05:00'
   sha256: caa6ac5481e15cd9a560fe29d8810e36e1fa822452ab9c51e28b3c521432187c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men taking a nighttime selfie on a city sidewalk; one wears a green
+    NVIDIA lanyard.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:40.539284+00:00'
   source_available: true
 - id: 576ab9acbbde526e
   filename: 45B4A304-FE7B-424C-B1F8-97FCF68E5DE3.heics
@@ -66,9 +69,10 @@ attachments:
   sender: me
   sent_at: '2026-03-31T02:07:23.021000-05:00'
   sha256: 401700c9300fed475f3bdfd2d3ee60756d1674b51d37e199ccd1673245d7115a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a black sweatshirt swings a motion-blurred guitar against
+    a solid black background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:16.474058+00:00'
   source_available: true
 chat_message_guids_count: 47
 deleted_upstream: null

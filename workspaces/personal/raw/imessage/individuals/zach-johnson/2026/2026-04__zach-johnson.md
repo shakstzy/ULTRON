@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-04-07T02:54:58.555036-05:00'
   sha256: 7aee22150ae193cde048e13a26019624e3c0823774f76b1f7aa9e0ce6311d1c9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of an Uber business ride to 798 Post St arriving
+    at 12:59 AM.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:13.892317+00:00'
   source_available: true
 - id: 16c22a58e6229eaf
   filename: "Screenshot 2026-04-08 at 3.13.28\u202FAM.png"
@@ -44,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2026-04-11T11:29:15.354396-05:00'
   sha256: 774f5be8dfd75b31c076f4d23edc21fa4eaafaa0286a5b6c5a33306c0a5cffc7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men take a selfie in front of a white Waymo self-driving car on
+    a city street.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:19.796485+00:00'
   source_available: true
 - id: 3bfa9ea30168db51
   filename: FUNSPOT.logicx.zip

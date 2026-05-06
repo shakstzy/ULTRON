@@ -22,9 +22,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2026-03-31T02:06:40.196137-05:00'
   sha256: 401700c9300fed475f3bdfd2d3ee60756d1674b51d37e199ccd1673245d7115a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a black sweatshirt swings a motion-blurred guitar against
+    a solid black background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:16.474058+00:00'
   source_available: true
 - id: 9730ec39bfc2ed21
   filename: "Screenshot 2026-03-31 at 6.11.03\u202FPM.png"

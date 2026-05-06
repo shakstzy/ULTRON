@@ -33,9 +33,9 @@ attachments:
   sender: me
   sent_at: '2025-08-03T04:42:17.096000-05:00'
   sha256: b9b99af39a28396be454f84df1d6274eab141b777b93d811d629fd1ba16f279b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hand holding an iPhone displaying a Spotify playlist inside a BMW.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:24.747587+00:00'
   source_available: true
 - id: f563fda7d2afda01
   filename: IMG_0704.PNG
@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2025-08-04T13:25:01.215000-05:00'
   sha256: aa1d5dc6bb50bff94a14090401404f2c6eb5305161205afd46bd12fe365cc283
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of a Google Meet call with Naveen Kumar sharing his
+    browser screen.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:54.187612+00:00'
   source_available: true
 - id: a0f470588b5c5359
   filename: B8FD676C-D41D-46EF-AF57-7B29D71B286A.MP4
@@ -55,9 +56,10 @@ attachments:
   sender: me
   sent_at: '2025-08-13T14:05:59.136000-05:00'
   sha256: 49e689e063d5802f0330f60882b24032c3fdaa1ce91c1ae19d45c88fc1b47c63
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Synapse Web3 app demo showing its dashboard, asset list, and automated
+    trading task creation.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:03:14.575441+00:00'
   source_available: true
 - id: 1325c3bcfe0dea8a
   filename: A16CB0B2-0D15-4516-B8D2-08F42AA4AF81.MP4
@@ -77,9 +79,10 @@ attachments:
   sender: me
   sent_at: '2025-08-16T13:21:57.711000-05:00'
   sha256: fcf17465f4a900b7da62bab54ab7db72af33b3d3d4644c575c8b6e043a12b674
-  description: null
-  description_model: null
-  extracted_at: null
+  description: UI "Select category" dropdown with a red error icon and a "No results"
+    notification.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:37.487289+00:00'
   source_available: true
 - id: 3c6540e8aad55c25
   filename: IMG_9523.PNG
@@ -88,9 +91,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-08-16T14:30:31.903908-05:00'
   sha256: 35285b0274a2ff0e9a4e0672699fcff27c6b1695d7cce0dcab6a59d0f3242cb3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: WhatsApp chat with Pegasus about adding a Parti.com link for Brian's
+    LA music studio stream.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:57.012973+00:00'
   source_available: true
 - id: 0a8bc36e7100cbbf
   filename: IMG_9524.PNG
@@ -99,9 +103,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-08-16T14:42:24.896756-05:00'
   sha256: efa9e869789751a8637bb489617520e1e25a70f42f6336476f0342232758f828
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a WhatsApp chat with Pegasus about a user named "confident
+    elk".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:48.345004+00:00'
   source_available: true
 - id: 314f588b76a40283
   filename: 77706745330__91B00D37-1C98-4462-B2F3-2597485A57FC.HEIC
@@ -199,9 +204,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-08-20T18:35:06.337620-05:00'
   sha256: 809e76db454e667a0b99a4ed945e8fb0350954a123c70ae7ad2e37266c9849c5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: macOS screen showing a Hinge date iMessage over an Ableton Live session
+    and a webcam feed.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:02:23.023780+00:00'
   source_available: true
 - id: 87141b6287a084bb
   filename: AUDIO_5461.m4a

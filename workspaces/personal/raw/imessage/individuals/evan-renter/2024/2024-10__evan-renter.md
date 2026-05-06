@@ -22,9 +22,10 @@ attachments:
   sender: evan-renter
   sent_at: '2024-10-01T00:11:42.163067-05:00'
   sha256: fa540c43e6731d185d297572839999b07a996d366df444b8f9812051d8eccf12
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Amazon Your Essentials End of Service notification shown on a device
+    screen.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:47.492896+00:00'
   source_available: true
 - id: bb9d0941c1060c49
   filename: IMG_3599.heic
@@ -33,9 +34,10 @@ attachments:
   sender: evan-renter
   sent_at: '2024-10-01T00:15:22.234223-05:00'
   sha256: dde8cdb48a4dc0d7c16ed1cdc464ac6ad8b43689e8ea7ba3695d5ba8e9eb5f68
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "A digital thermostat set to 62\xB0F cooling with an indoor temperature\
+    \ of 71\xB0F."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:22.949411+00:00'
   source_available: true
 - id: aa7d5b0f7c94a1f9
   filename: IMG_3351.PNG
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2024-10-21T13:29:08.776109-05:00'
   sha256: 1124e6010cab407e478858d65aded36d316e856cbb23092cff9b07aabd9a6440
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A delayed Delta flight DL1715 from SFO to LAX on Oct 21, 2024, in a
+    mobile tracking app.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:09:01.848110+00:00'
   source_available: true
 chat_message_guids_count: 39
 deleted_upstream: null

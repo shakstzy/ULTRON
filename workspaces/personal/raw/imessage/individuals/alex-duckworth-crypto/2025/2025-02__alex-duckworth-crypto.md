@@ -45,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2025-02-13T00:05:25.096000-06:00'
   sha256: 7f9b067a2072501e6eef0f395f5f4f733270d4b8dd31a52416a2574c19709a5a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person in a puffer jacket sits on a yellow-edged 110 Street NYC subway
+    platform.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:09:12.728658+00:00'
   source_available: true
 - id: dc96e9a89512c19a
   filename: IMG_5639.PNG
@@ -68,9 +69,10 @@ attachments:
   sender: me
   sent_at: '2025-02-13T00:23:27.721000-06:00'
   sha256: 26e96ea37d08eb801d219dd90806f782a6823835bec1c4d6c9c9577d8a71a645
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Wooden stairs and hardwood flooring viewed through a narrow horizontal
+    mail slot.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:53.791537+00:00'
   source_available: true
 - id: ffc559e3cf2de488
   filename: 76121066633__EA6AA9D8-0F23-47EB-A418-F3341B470CAD.HEIC
@@ -79,9 +81,10 @@ attachments:
   sender: me
   sent_at: '2025-02-14T01:24:32.150000-06:00'
   sha256: 9318bd5a93e1e298182216c38fd23dec63027cd6c02e61bf323f952de8e00c0d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Subway platform with a Stonewall sign on a green pillar and yellow
+    tactile paving.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:09:01.316176+00:00'
   source_available: true
 - id: c06fdd57e483c017
   filename: 76121121529__61034B4A-C6CD-450F-9B48-E59E48E84FFC.HEIC

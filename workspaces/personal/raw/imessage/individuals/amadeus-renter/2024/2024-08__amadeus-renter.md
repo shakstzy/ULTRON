@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-08-25T16:27:12.563000-05:00'
   sha256: 4aa0e2bf6bfb4377fdb6aa4983cd3e2edae75195150917911739e2d09aa5e520
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A white envelope from CA Health and Human Services resting on a large
+    cardboard box.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:09:10.889448+00:00'
   source_available: true
 - id: 2be483f7a58a398a
   filename: 74639912382__04E2AEBB-2947-44F6-A402-BF32872C1631.HEIC
@@ -45,9 +46,9 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-08-28T19:02:27.657872-05:00'
   sha256: ebc1212cab36587fca88e607564f5ac448bf68e0867392b68bf4f11bf5e14011
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Clear glass water pipe resting on a desk next to a computer monitor.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:52.357217+00:00'
   source_available: true
 - id: c40945af99f0a1ec
   filename: IMG_0807.heic
@@ -56,9 +57,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-08-29T22:32:18.960361-05:00'
   sha256: fd7398b5fa1dfa4c31d52960a27a13985c71093ba8541b7f5f0c2320c0bc14cf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A circular hole in a white textured wall with several black cables
+    running across it.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:11.555553+00:00'
   source_available: true
 - id: 393ab0f127a957b8
   filename: IMG_0808.heic

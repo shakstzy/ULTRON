@@ -22,9 +22,10 @@ attachments:
   sender: aashna-hinge-la
   sent_at: '2026-02-16T12:41:13.233104-06:00'
   sha256: b4d28b7a56b16e5a14fe3862bbf77652089c91c83026c5531864eb47ad164fe2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A 4x4 grid of wooden question mark tiles with a central green play
+    button overlay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:13.649444+00:00'
   source_available: true
 - id: de396cebd551bcab
   filename: ms-EAVcno.jpeg

@@ -33,9 +33,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-02-05T13:14:17.149389-06:00'
   sha256: bab8a8d6d141d5f69e87d88d909091831b55e16cc2e3f9c55e96e9a255df1411
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone Recents call log showing multiple calls from Aditya Shaq Kumar
+    and others.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:50.141304+00:00'
   source_available: true
 - id: 23e8f7c3bc296a0b
   filename: IMG_4836.heic
@@ -44,9 +45,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-02-28T18:44:53.923816-06:00'
   sha256: 2dfb80c74da7fff38e8d7509ef1cb851d01bd721ced349b9a5a9a54cb51a45be
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Broken blue floral tiles rest on dry soil among bare branches in a
+    black plastic pot.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:11.568664+00:00'
   source_available: true
 - id: 4d8a444d6e028308
   filename: IMG_4837.heic
@@ -55,9 +57,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-02-28T18:44:53.923816-06:00'
   sha256: 82b6cfddd8ac0622084c74cb51b3c4c0cd18285da3b91916c7a2530dfa719149
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Thorny dry branches in a grey pot next to a patterned ceramic elephant
+    statue.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:57.193174+00:00'
   source_available: true
 chat_message_guids_count: 78
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-06-27T00:02:00.658959-05:00'
   sha256: 431a5c2bdf4d46517a625a891aad7bc0ed940767dc415f0d2881ee6aff5c9f75
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men taking a selfie in front of a DJ booth and indoor plants at
+    a large venue.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:50.422520+00:00'
   source_available: true
 chat_message_guids_count: 5
 deleted_upstream: null

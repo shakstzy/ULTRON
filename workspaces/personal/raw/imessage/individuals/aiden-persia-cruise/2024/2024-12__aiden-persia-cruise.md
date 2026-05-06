@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-12-29T20:37:25.196600-06:00'
   sha256: 9065e25a0800b0a54f6bf56180810736100b544c44754e79c514c2c49cdeeff3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "White text on a black background reading: \"Aiden: It\u2019s not illegal\
+    \ unless you get caught.\""
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:40.988926+00:00'
   source_available: true
 - id: 554636aee8874e09
   filename: IMG_1318.png

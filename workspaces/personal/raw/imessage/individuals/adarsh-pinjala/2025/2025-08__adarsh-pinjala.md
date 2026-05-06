@@ -155,9 +155,10 @@ attachments:
   sender: me
   sent_at: '2025-08-30T01:59:09.421191-05:00'
   sha256: 482991feeca0a4ce30f85ef552c0da3170d75c57240c3868de4cc284163c05a3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple Maps view of Adarsh Pinjala's location at 2036 Lombard St, San
+    Francisco.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:38.028503+00:00'
   source_available: true
 chat_message_guids_count: 12
 deleted_upstream: null

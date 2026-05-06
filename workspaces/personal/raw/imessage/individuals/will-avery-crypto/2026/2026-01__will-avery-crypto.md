@@ -34,9 +34,10 @@ attachments:
   sender: will-avery-crypto
   sent_at: '2026-01-09T17:06:31.206995-06:00'
   sha256: e6d1d7287f6ee5ba2747bd18152e830e3095475a5c3ae75bf430006ae13366ec
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of Marc Andreessen laughing at a meme of Marco Rubio in
+    a Patagonia vest.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:45.399113+00:00'
   source_available: true
 - id: 4166f7e8346a76f6
   filename: IMG_1241.png
@@ -45,9 +46,9 @@ attachments:
   sender: will-avery-crypto
   sent_at: '2026-01-21T18:52:55.317225-06:00'
   sha256: 1682b509bfb276d165d2c04683b1dd2c3eb8cdcd52e63d67e5b03434f9428e92
-  description: null
-  description_model: null
-  extracted_at: null
+  description: System diagram for an Investment Commit Service and a crypto Coin Launchpad.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:22.086130+00:00'
   source_available: true
 - id: 0b6d3e92c53be02b
   filename: IMG_6451.png

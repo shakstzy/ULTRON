@@ -22,9 +22,9 @@ attachments:
   sender: me
   sent_at: '2025-01-09T16:49:19.884491-06:00'
   sha256: 18a7e1240e83df86a937eb7ebc6023805d84a809084f849fe1914b226b276b01
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage notification stating Evan disliked "Its nyc time most likely".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:10.504725+00:00'
   source_available: true
 - id: 97e46f2747ebd3cf
   filename: IMG_8357.png
@@ -66,9 +66,10 @@ attachments:
   sender: me
   sent_at: '2025-01-09T23:18:25.868004-06:00'
   sha256: 693efc7febddda71756dfa31c1e36806a12e5123a6ba18ceada7a607191ad73f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 2021 Los Angeles population pyramid showing age-sex distribution and
+    gender surpluses.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:27.620485+00:00'
   source_available: true
 - id: 3e00a836e67eefcc
   filename: IMG_4586.PNG
@@ -77,9 +78,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-01-22T12:15:04.886463-06:00'
   sha256: 0d779d4f116c900826244c8f8d3287f971cae7a22516d6c4c1b547e92b460a5b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: WhatsApp screenshot detailing move-out cleaning and inspection rules
+    for LA Klein Roommates.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:18.927218+00:00'
   source_available: true
 - id: 5726aafcd77890ec
   filename: IMG_4585.PNG
@@ -88,9 +90,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-01-22T12:15:16.097894-06:00'
   sha256: d9ca0a7fdd8193e58f4a848e26395f53047eace4f5f2b724004a1ad9d10736c0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage from Amber detailing Dec 7th move-out and cleaning rules for
+    LA Klein roommates.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:27.092995+00:00'
   source_available: true
 chat_message_guids_count: 191
 deleted_upstream: null

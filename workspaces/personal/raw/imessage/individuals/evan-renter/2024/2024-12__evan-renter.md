@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2024-12-08T23:39:26.699000-06:00'
   sha256: a06b122e3c5267c167f99a86a73a82f82da384d7dbcc5416b9b827b5c82731a8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Extreme close-up of seared meat topped with a bubbly, golden-brown
+    melted cheese crust.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:28.274192+00:00'
   source_available: true
 - id: 1b20c8aae9048b8b
   filename: IMG_4701.PNG
@@ -44,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2024-12-19T17:39:39.130000-06:00'
   sha256: 2eee128e5ce324b495e7c0a1ff018ae274320898d75df430838c8212304105ef
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a Lyft ride history showing dates, ride types, durations,
+    costs, and driver photos.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:45.153330+00:00'
   source_available: true
 - id: 8e67a015502e7cce
   filename: IMG_4700.PNG
@@ -55,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2024-12-19T17:39:39.130000-06:00'
   sha256: ad971393cb41cae6c077874ff87196799903db5a545ce5e884d47ffb872e96fb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Uber app Activity screen showing a $27.92 ride to Brickyard and a $4.63
+    Lime Scooter trip.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:30.837443+00:00'
   source_available: true
 chat_message_guids_count: 106
 deleted_upstream: null

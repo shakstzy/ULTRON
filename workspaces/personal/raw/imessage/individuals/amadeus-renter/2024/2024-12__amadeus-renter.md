@@ -273,9 +273,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-12-10T02:33:16.055663-06:00'
   sha256: 8a4894af848b6864b6ed1665644bd567cd7254e6c893c9c664319bb51bc14a24
-  description: null
-  description_model: null
-  extracted_at: null
+  description: TradingView 1h GBP/JPY candlestick chart with teal and purple supply/demand
+    zones.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:54.331801+00:00'
   source_available: true
 - id: 84f0fa285c46f617
   filename: IMG_1457.HEIC
@@ -284,9 +285,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-12-10T17:11:32.177416-06:00'
   sha256: 0dac873c9d0262ccc457bad24d27e3e3eb9ed8e3dde9a631ff63417b2b144a9e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: TradingView candlestick chart of Gold Futures (GC1!) showing a trade
+    setup on a monitor.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:04.051187+00:00'
   source_available: true
 - id: c4772c693bb4764e
   filename: IMG_1458.PNG

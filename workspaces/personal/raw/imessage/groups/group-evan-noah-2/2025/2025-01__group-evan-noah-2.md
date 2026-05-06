@@ -33,9 +33,10 @@ attachments:
   sender: noah-renter
   sent_at: '2025-01-24T15:19:58.259362-06:00'
   sha256: 70a6e24c9165632f5b97d4bf205c4d1e4df24192b708704ab7d9deaf7c84210c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Cluttered bathroom with cannabis-leaf rugs and a white vanity overflowing
+    with toiletries.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:09:11.957370+00:00'
   source_available: true
 - id: d2f860d72f1bb37a
   filename: image_1.JPG

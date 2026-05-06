@@ -33,9 +33,10 @@ attachments:
   sender: anjali-hinge-austin
   sent_at: '2026-03-07T18:02:28.058185-06:00'
   sha256: 46f5d8ed773875c58e824ff76de3435030cc949b172a97d761a0535f6fabc3c4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A woman with a nose ring sleeps in a blue shirt, hugging a fuzzy white
+    pillow.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:21.068000+00:00'
   source_available: true
 chat_message_guids_count: 66
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-09-13T12:49:55.416284-05:00'
   sha256: 0d3c256a652ddb30410e9a94b1cdd79271c44f45d3770b9f0788b2e032049cb6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Broken blue floral tile shards in a black planter with dry soil and
+    leafless branches.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:36.089314+00:00'
   source_available: true
 - id: ac95651764213f73
   filename: IMG_4837.heic
@@ -33,9 +34,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-09-13T12:49:55.416284-05:00'
   sha256: 2a26c695ea12002f4807fe01e7ee44c3fdb6f7b382ecb8023a44db0c72d97f02
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Thorny branches in a grey pot with bamboo stakes and a blue "SHALOM"
+    ceramic shard.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:12.979669+00:00'
   source_available: true
 - id: d100243f1eb10b82
   filename: IMG_1613.PNG
@@ -66,9 +68,10 @@ attachments:
   sender: me
   sent_at: '2025-09-19T20:32:06.772011-05:00'
   sha256: 5990d138ad96177b3e0bce99ffaaa757fd3899db028f670820e65afb8865baac
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Security camera notification showing a person on stairs at Sylmar Side
+    with snooze options.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:21.281537+00:00'
   source_available: true
 - id: 9fd2a746ea7c8a1a
   filename: IMG_6273.heic
@@ -77,9 +80,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-09-23T20:58:50.646075-05:00'
   sha256: 226f40928dd5c1263ad92b9177227b2d20249ccebd703c82062fb961c5aee245
-  description: null
-  description_model: null
-  extracted_at: null
+  description: California license plate 9JGP455 on a grey Volkswagen with a "WINN
+    VW" frame.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:11.799206+00:00'
   source_available: true
 - id: 8a28ba7da20b4612
   filename: ms-XvTNpu.jpeg
@@ -88,9 +92,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-09-27T23:49:34.293823-05:00'
   sha256: b4d28b7a56b16e5a14fe3862bbf77652089c91c83026c5531864eb47ad164fe2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A 4x4 grid of wooden question mark tiles with a central green play
+    button overlay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:13.649444+00:00'
   source_available: true
 - id: 224eb53895b224da
   filename: IMG_7297.png
@@ -99,9 +104,10 @@ attachments:
   sender: me
   sent_at: '2025-09-30T17:42:21.700529-05:00'
   sha256: aea7f9308a424a886f9b43b5f9442f1adeb8beaf77f6665c779a780124d3dd3b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Email snippet from Jason Chen to multiple recipients stating, "But,
+    he never signed it."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:10.740970+00:00'
   source_available: true
 chat_message_guids_count: 214
 deleted_upstream: null

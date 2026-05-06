@@ -57,9 +57,10 @@ attachments:
   sender: christine-bailie
   sent_at: '2025-11-05T15:55:19.219146-06:00'
   sha256: c121447e7f3a6499b3ab365bac329865b755b29d1ee656b99a25bed2f4cbca93
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three adults in formal attire pose for a family photo in front of a
+    brick fireplace.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:00.217486+00:00'
   source_available: true
 - id: 3cabd854bbafd007
   filename: IMG_0112.heic
@@ -80,9 +81,10 @@ attachments:
   sender: christine-bailie
   sent_at: '2025-11-05T15:55:19.219146-06:00'
   sha256: e81089bb91c3c96ba04b017f925230aafe2f24709783182e8e2cd7a99405efd6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a UNT shirt and an older woman pose in front of a "First Alert
+    Weather" radar screen.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:55.349538+00:00'
   source_available: true
 chat_message_guids_count: 7
 deleted_upstream: null

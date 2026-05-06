@@ -57,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2025-11-07T13:31:38.299000-06:00'
   sha256: f2327f25f22854b1fe00cc8ad22262738919b2c82080a4e42d82d1911fc3ff82
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone RCS chat with Maria about a technician's arrival and a freezer,
+    with an active call.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:53.699387+00:00'
   source_available: true
 - id: 6d348e7f8998ef86
   filename: IMG_9917.png
@@ -68,9 +69,10 @@ attachments:
   sender: me
   sent_at: '2025-11-07T13:32:33.535600-06:00'
   sha256: 25e74bf95ccc204ce4a0414c7acce87092369d4298c2dc6b77c066e5346e10fb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Text messages stating a technician is with a customer and will call
+    once he is on his way.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:51.973414+00:00'
   source_available: true
 - id: 5c711ab6bbed298b
   filename: IMG_3497.png
@@ -103,9 +105,10 @@ attachments:
   sender: me
   sent_at: '2025-11-16T22:06:51.208000-06:00'
   sha256: fa7a3cfa9224a49c3b5c683e89f719d35cd38bee7ef6531d6ca0d06400e3dee8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Maps satellite view of Los Angeles, Glendale, and Beverly Hills
+    on an iPhone.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:09:20.115579+00:00'
   source_available: true
 chat_message_guids_count: 282
 deleted_upstream: null

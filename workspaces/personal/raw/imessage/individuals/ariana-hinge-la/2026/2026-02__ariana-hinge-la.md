@@ -34,9 +34,10 @@ attachments:
   sender: ariana-hinge-la
   sent_at: '2026-02-21T20:40:26.650766-06:00'
   sha256: bce6bd2af56785f942c72bc1e4db85e82d5ded16f0bbc97a90a6c772bd792ebf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A Black woman with burgundy braids, glasses, and a "Backwoods" beanie
+    making a pouty face.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:42.589823+00:00'
   source_available: true
 - id: ba4d89da45fa307d
   filename: IMG_7095.jpeg

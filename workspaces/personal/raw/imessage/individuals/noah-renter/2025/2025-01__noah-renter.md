@@ -69,9 +69,10 @@ attachments:
   sender: me
   sent_at: '2025-01-22T22:55:00.301664-06:00'
   sha256: cf38d4ed5650edd7eec83de21a2e2ac490eb6b1da96884771d86c52823975d28
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a disagreement about cleaning duties after a
+    house party.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:29.554465+00:00'
   source_available: true
 - id: bfd5e37f6af0ef64
   filename: IMG_1196.png
@@ -116,9 +117,10 @@ attachments:
   sender: noah-renter
   sent_at: '2025-01-24T16:20:52.954363-06:00'
   sha256: 70a6e24c9165632f5b97d4bf205c4d1e4df24192b708704ab7d9deaf7c84210c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Cluttered bathroom with cannabis-leaf rugs and a white vanity overflowing
+    with toiletries.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:09:11.957370+00:00'
   source_available: true
 chat_message_guids_count: 69
 deleted_upstream: null

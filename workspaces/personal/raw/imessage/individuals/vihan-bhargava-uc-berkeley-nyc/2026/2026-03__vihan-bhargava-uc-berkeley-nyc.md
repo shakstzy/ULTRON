@@ -22,9 +22,10 @@ attachments:
   sender: vihan-bhargava-uc-berkeley-nyc
   sent_at: '2026-03-19T23:01:06.172582-05:00'
   sha256: b4d28b7a56b16e5a14fe3862bbf77652089c91c83026c5531864eb47ad164fe2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A 4x4 grid of wooden question mark tiles with a central green play
+    button overlay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:13.649444+00:00'
   source_available: true
 chat_message_guids_count: 9
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-10-06T22:41:18.272408-05:00'
   sha256: 395b8403bd2098f55b263820c0f7d9da1b3270f837afd32099abeb8faf814359
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile screenshot of USDJPY forex sell trades with a net profit of
+    3,483.71.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:32.882807+00:00'
   source_available: true
 - id: b281cd292bb8cc30
   filename: IMG_1012.PNG
@@ -127,9 +128,10 @@ attachments:
   sender: me
   sent_at: '2024-10-27T15:03:01.750726-05:00'
   sha256: 4daf0e45131a542951d4b4e2eb9cc254860e4eb5ceabb21116d8b09a8606a90c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man holds a green dabbing tool with amber cannabis concentrate on
+    the tip.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:37.781355+00:00'
   source_available: true
 chat_message_guids_count: 395
 deleted_upstream: null

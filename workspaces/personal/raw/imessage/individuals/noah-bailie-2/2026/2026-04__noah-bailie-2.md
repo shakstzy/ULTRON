@@ -88,9 +88,10 @@ attachments:
   sender: me
   sent_at: '2026-04-19T20:41:03.881561-05:00'
   sha256: d6e5d0d2d9cd6b20005254ed08393dabd10411e5ba7ba67e34b8a8d5a57528ef
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A hand holds a white "POWER" vape pen with a yellow oil cartridge in
+    a bathroom.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:09:02.938371+00:00'
   source_available: true
 - id: 6d34a82ae54afb52
   filename: IMG_9319.png
@@ -99,9 +100,10 @@ attachments:
   sender: me
   sent_at: '2026-04-28T02:25:04.961000-05:00'
   sha256: ad8e5766505432fa87878959c947241864616613a4d319844d8ef950ccb3a3e3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Somber animated woman in a business suit leans against a wall holding
+    a smartphone.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:59.490443+00:00'
   source_available: true
 - id: 50437798b0b7bf5a
   filename: IMG_2909.png

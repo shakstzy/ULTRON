@@ -44,9 +44,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-10-21T15:28:48.991677-05:00'
   sha256: 395abeaaef4916a8e7d8f425c1403716dc91dc894f3325fb2583134bb6ac310a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Food delivery app cart for Crazy Falafel showing Mediterranean dishes
+    and BOGO promotions.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:43.960924+00:00'
   source_available: true
 - id: 3d3a1775cce8f7ae
   filename: IMG_6402.png
@@ -66,9 +67,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-10-23T11:53:20.399622-05:00'
   sha256: e6dfdaea74f92f4194038176592d739bd1028a2fb4332ddd5ab96a4fb11e0204
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a vCard file for a contact named Sasoon. It contains their
+    name and primary phone number in a standard digital business card format.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:58.525513+00:00'
   source_available: true
 - id: 3b6407a5e2373e0a
   filename: 78296921713__B30ED528-6D9D-4855-86E3-F0847519E8FF.MOV
@@ -88,9 +90,9 @@ attachments:
   sender: me
   sent_at: '2025-10-27T16:17:41.614000-05:00'
   sha256: 9dedbaed3b76c019bf39716d51d95c047838d1924204560f1c081b0b96e7d259
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Email from Jen Nagle providing guest parking passcode 825885.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:58.913119+00:00'
   source_available: true
 - id: 58c4c55a9a8f125a
   filename: IMG_6440.PNG
@@ -99,9 +101,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-10-27T21:57:47.872165-05:00'
   sha256: eac86d9a8cc3f289602f50088ad11ef1fe71b85780848b14c9f49f20b59b8682
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Evan's group order screenshot showing Lahmajune, Mante, and Zaatar
+    bread for $29.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:01.015496+00:00'
   source_available: true
 - id: 66c61b6cbd6bfa85
   filename: IMG_6443.png
@@ -110,9 +113,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-10-28T14:20:16.122214-05:00'
   sha256: 52e1653c490a370293daf9418f8d1ee3472c9acd074820b9529ef8b12c0303cc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot listing roommate agreements for cleaning, repairs,
+    and trash with penalties.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:08.505029+00:00'
   source_available: true
 - id: 69a99426932563fb
   filename: IMG_2809.png
@@ -132,9 +136,10 @@ attachments:
   sender: me
   sent_at: '2025-10-30T12:32:49.663000-05:00'
   sha256: 832d3df7fd2bd871502307a9e2306fb611f0011ed3d0138d6ab2d1496ac0f59b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two dark green chat bubbles containing the text "Ajay <-> Adithya"
+    and "Bawar and Adith".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:22.475373+00:00'
   source_available: true
 chat_message_guids_count: 257
 deleted_upstream: null

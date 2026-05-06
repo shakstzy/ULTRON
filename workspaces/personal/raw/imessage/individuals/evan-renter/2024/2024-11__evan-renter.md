@@ -22,9 +22,10 @@ attachments:
   sender: evan-renter
   sent_at: '2024-11-07T10:22:26.907323-06:00'
   sha256: 874d86d243aecfff2b71ac7ab42d50ec891c76e40317fdbea24a75a665fc0470
-  description: null
-  description_model: null
-  extracted_at: null
+  description: MSI laptop showing a WhatsApp call from Arya Kumar and a large white
+    "N" sticker.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:37.247214+00:00'
   source_available: true
 chat_message_guids_count: 26
 deleted_upstream: null

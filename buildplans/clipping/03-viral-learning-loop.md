@@ -50,12 +50,12 @@ Outputs:
 
 Signal types:
 
-- `view_velocity_6h` — views in first 6 hours.
-- `view_velocity_24h` — views at 24 hour mark.
-- `peer_cohort_percentile` — percentile vs same-niche same-account same-week clips.
-- `suppression_score` — 1.0 if first-6h velocity is more than 2 std below cohort median.
-- `hook_pattern` — categorical tag from a small enum (controversy, named-stat, contrarian, story, list, question).
-- `template_id` — which Remotion composition was used.
+- `view_velocity_6h` - views in first 6 hours.
+- `view_velocity_24h` - views at 24 hour mark.
+- `peer_cohort_percentile` - percentile vs same-niche same-account same-week clips.
+- `suppression_score` - 1.0 if first-6h velocity is more than 2 std below cohort median.
+- `hook_pattern` - categorical tag from a small enum (controversy, named-stat, contrarian, story, list, question).
+- `template_id` - which Remotion composition was used.
 
 ### New module
 

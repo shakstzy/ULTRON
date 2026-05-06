@@ -22,9 +22,10 @@ attachments:
   sender: evan-renter
   sent_at: '2026-01-11T22:18:42.423876-06:00'
   sha256: 7070112ddf8612e69be24a40fa5e270f114a7ca92818abf1380db0500b55a081
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man tours a messy home while venting about his roommate's lack of
+    cleanliness.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:09:20.771520+00:00'
   source_available: true
 - id: 49e140b73488a1b7
   filename: morty mug - Google Search.heic
@@ -44,9 +45,10 @@ attachments:
   sender: evan-renter
   sent_at: '2026-01-24T00:06:15.007967-06:00'
   sha256: 5139898400858fb65091139fedbf7a05a138673cb722a42fef16780a51696e50
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A kitchen island cluttered with stainless steel pots, a white bowl,
+    and food containers.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:55.795138+00:00'
   source_available: true
 - id: 7f7635f33d9e7c0e
   filename: 79098522744__38094E50-6491-482C-A78E-1B8C4DF2B77F.HEIC
@@ -55,9 +57,9 @@ attachments:
   sender: me
   sent_at: '2026-01-24T16:07:18.212000-06:00'
   sha256: d58094609ebde0609dab49a2eb1e2785b8382ec1c0e889984e9a6a151300e7a0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A small, jagged hole in an off-white textured wall.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:33.100153+00:00'
   source_available: true
 - id: 066e22ebc98da019
   filename: 79098523677__DD58BFE4-A9A9-4EE0-BD50-E708E006C828.HEIC
@@ -66,9 +68,10 @@ attachments:
   sender: me
   sent_at: '2026-01-24T16:07:25.548000-06:00'
   sha256: 211fa7386cdcfa78a1751358eecfb46850d49aadb810c010ce22103c78081360
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A beige textured wall with several small white spackle patches and
+    a few tiny holes.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:42.669367+00:00'
   source_available: true
 - id: 75481c3cfd6c412c
   filename: DF6DAFD5-792C-4118-98D7-EE36AC0331A6.HEIC
@@ -77,9 +80,10 @@ attachments:
   sender: me
   sent_at: '2026-01-24T16:07:39.684000-06:00'
   sha256: 8b64ccacc7c0fced990ea37022f711c5d3edaf0db763c90e3d1238dd74bcd1f2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Textured white wall with several small puncture holes and a sharp diagonal
+    shadow.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:38.397439+00:00'
   source_available: true
 chat_message_guids_count: 60
 deleted_upstream: null

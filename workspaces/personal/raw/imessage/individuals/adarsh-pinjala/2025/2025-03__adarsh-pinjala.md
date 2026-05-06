@@ -99,9 +99,11 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-03-13T15:16:00.553102-05:00'
   sha256: faa2ef377f3f9d1e0c0f597643efd9b490bc66a42da592eb520a274a8034ed56
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a vCard file containing contact information for an individual
+    named Niraj. It includes his name, a preferred home phone number, and an embedded
+    profile photo.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:09:07.365498+00:00'
   source_available: true
 chat_message_guids_count: 28
 deleted_upstream: null

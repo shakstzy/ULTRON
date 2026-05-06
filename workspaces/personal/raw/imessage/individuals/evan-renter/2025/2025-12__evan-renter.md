@@ -46,9 +46,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-12-26T13:31:25.144893-06:00'
   sha256: 989cc9bfc9dc30cf5005fa207a40be676832929078087415b545315447a08714
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a five-point roommate agreement for utilities,
+    cleaning, and repairs.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:15.354585+00:00'
   source_available: true
 - id: 64c0d9e02ac7e230
   filename: "Screenshot 2025-12-26 at 12.28.01\u202FPM.jpeg"

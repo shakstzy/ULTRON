@@ -22,9 +22,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-08-14T03:21:47.781137-05:00'
   sha256: 115b218ecf1dd6c934c3d6a22235855871d7546529d19a6aa02f1df45887750c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Evan's Hinge profile screenshot listing relationship values and a photo
+    of two men in a club.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:18.624293+00:00'
   source_available: true
 - id: bdb3678de6f86505
   filename: IMG_6054.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-08-14T03:21:47.781137-05:00'
   sha256: 5caff815d0e3bacabce9660dc41d9a47e5d34ca54f8e6a075834ebf5be036f9b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Evan's contact profile with a silhouette and a portrait on a lakeside
+    balcony.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:11.782852+00:00'
   source_available: true
 - id: f047c275e79970c6
   filename: IMG_6048.png
@@ -44,9 +46,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-08-14T03:21:47.781137-05:00'
   sha256: 8347aa37a7af6f9502bb568a71fbef95401559a28d4cf48f6e59ecbc2dcfbf43
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a dating profile for Evan with icebreaker options and
+    a voice note prompt.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:52.295778+00:00'
   source_available: true
 - id: 5b0195b780a57e68
   filename: IMG_6046.PNG
@@ -55,9 +58,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-08-14T03:21:47.781137-05:00'
   sha256: 66436adf4740fca1bda9f83788810650b611c3489f4a4c126cc1fa54fe0d108d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of Evan's dating profile with he/him/they/them pronouns
+    and a beach photo.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:02.037168+00:00'
   source_available: true
 - id: c953c6b0670ca08d
   filename: IMG_6053.PNG
@@ -66,9 +70,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-08-14T03:21:47.781137-05:00'
   sha256: a03b01e504c18aa592db17ed873adc7148ce151ec7ef50564fb4d71e8816d3aa
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of Evan's dating profile showing a party photo and his list
+    of political causes.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:55.274957+00:00'
   source_available: true
 - id: 6e46da0914028e68
   filename: IMG_6049.png
@@ -88,9 +93,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-08-14T03:21:47.781137-05:00'
   sha256: 25706f20eadf4f95767d9b982fe565f617adc6b8a05da0d25201903d6b16e472
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of Evan's dating profile featuring a car photo and icebreaker
+    prompts.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:04.197544+00:00'
   source_available: true
 - id: 15eb0247ff3ec7d7
   filename: IMG_6051.PNG
@@ -99,9 +105,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-08-14T03:21:47.781137-05:00'
   sha256: 20a7c161ef7e08d248035857de3816f8cfe06fedc398f9f4f78bcf0803e3a8e9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Two photos of Evan: one in front of the White House and another with
+    a corn mascot.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:09.585568+00:00'
   source_available: true
 - id: 3258d8c98c339ed3
   filename: IMG_6050.png
@@ -242,9 +249,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-08-15T03:26:17.229218-05:00'
   sha256: 83b91481fa681961cbf724d2f074a41dccef4944b0d2f5fb7b5d2aac7cd58965
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google AI Overview screenshot debunking the "Jewish nose" antisemitic
+    stereotype.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:09.875589+00:00'
   source_available: true
 - id: a9ea16b6f0881799
   filename: 77718679663__E2447281-3813-418C-9FEA-570E537E7907.MOV
@@ -253,9 +261,10 @@ attachments:
   sender: me
   sent_at: '2025-08-18T00:13:24.793465-05:00'
   sha256: 7067882e7dc58d02c38ed548ea1e2be3a99ea5e3c523412f1d2fd8fa1403138a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Car interior with a twinkling starlight headliner and a Rick and Morty
+    sticker.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:59.978335+00:00'
   source_available: true
 - id: 7f8d245f18435c72
   filename: IMG_6163.heic
@@ -264,9 +273,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-08-29T16:05:13.684816-05:00'
   sha256: f6061e48a4f7459dc8a07f632a18b12457bc5916b6af6776e28412e1ab289c06
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A KFC plastic bowl with a fluted lid sits on a white surface next to
+    a refrigerator.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:03.293729+00:00'
   source_available: true
 chat_message_guids_count: 172
 deleted_upstream: null

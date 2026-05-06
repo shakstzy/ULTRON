@@ -46,9 +46,10 @@ attachments:
   sender: varun-houston
   sent_at: '2025-04-24T15:23:25.306095-05:00'
   sha256: 9861c5bb313b359be9a218738abb14a700bf3a5a01e31f058181e361e28fcf49
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A black Volkswagen parked on a residential street beside a wooden fence
+    and houses.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:09:10.715102+00:00'
   source_available: true
 - id: b4df23aea20cf5b1
   filename: IMG_7847.HEIC

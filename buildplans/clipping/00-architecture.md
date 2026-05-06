@@ -17,14 +17,14 @@ A SQLite control plane at `~/.quantum/clipping/clipping.db` is the source of tru
 
 - `campaigns` (slug, source, payer, niche, rate_per_1k_usd, scam_score, verified_at, status, rules_json)
 - `sources` (source_video_id, url, creator, audio_hash, campaign_id, rights_status, rights_evidence, filepath)
-- `transcripts` (source_id, model_version, audio_hash, filepath) — UNIQUE on (source_id, model_version), cached forever
+- `transcripts` (source_id, model_version, audio_hash, filepath) - UNIQUE on (source_id, model_version), cached forever
 - `clip_candidates` (source_id, campaign_id, start_s, end_s, hook, rank_score, ngram_hash, perceptual_hash, duplicate_score, status)
 - `renders` (candidate_id, template, filepath, render_hash)
 - `qa_reviews` (candidate_id, reviewer, decision, reasons, per-check booleans, platform_risk_score)
 - `accounts` (alias, platform, zernio_account_id, niche, daily_post_cap, hourly_post_cap, status)
-- `gate_decisions` (candidate_id, account_id, passed, failed_checks, full_checks_json, caption) — see Gate Enforcement below
+- `gate_decisions` (candidate_id, account_id, passed, failed_checks, full_checks_json, caption) - see Gate Enforcement below
 - `publish_attempts` (candidate_id, render_id, account_id, gate_decision_id NOT NULL, status, caption, zernio_post_id, platform_url)
-- `metrics_snapshots` (publish_attempt_id, views, likes, comments, shares, measured_at) — time series, INSERT-only
+- `metrics_snapshots` (publish_attempt_id, views, likes, comments, shares, measured_at) - time series, INSERT-only
 - `payout_claims` (campaign_id, publish_attempt_id, expected_usd, paid_usd, status)
 
 ## Gate enforcement at the schema layer
@@ -78,20 +78,20 @@ Stages 04 through 06 enforce the 10-check gate.
 
 Every check must be green or the publish_attempt is created with status='dry_run' (failed-gate variant); none of the failed checks can post.
 
-1. `campaign_verified` — `campaigns.status='active' AND verified_at IS NOT NULL`
-2. `rights_check` — `sources.rights_status` in (`authorized`, `campaign_allowed`, `fair_use_review`)
-3. `duplicate_check` — `duplicate_score == 0.0` (any match fails; previously was <0.5 which let duplicates through)
-4. `account_cadence_available` — under daily and hourly caps
-5. `account_niche_fit` — exact match between campaign niche and account niche
-6. `originality_check` — at least one transformative element (hook overlay or custom captions)
-7. `disclosure_resolved` — caption passes tightened disclosure regex (URLs stripped, standalone tokens required)
-8. `qa_status` — latest `qa_reviews` decision is `approve`
-9. `platform_risk_score` — under 30 for the target platform
-10. `banned_niche_clean` — no hits against banned-niches regex (gambling, crypto-trading, manosphere, OnlyFans, conspiracy, get-rich-quick, etc.)
+1. `campaign_verified` - `campaigns.status='active' AND verified_at IS NOT NULL`
+2. `rights_check` - `sources.rights_status` in (`authorized`, `campaign_allowed`, `fair_use_review`)
+3. `duplicate_check` - `duplicate_score == 0.0` (any match fails; previously was <0.5 which let duplicates through)
+4. `account_cadence_available` - under daily and hourly caps
+5. `account_niche_fit` - exact match between campaign niche and account niche
+6. `originality_check` - at least one transformative element (hook overlay or custom captions)
+7. `disclosure_resolved` - caption passes tightened disclosure regex (URLs stripped, standalone tokens required)
+8. `qa_status` - latest `qa_reviews` decision is `approve`
+9. `platform_risk_score` - under 30 for the target platform
+10. `banned_niche_clean` - no hits against banned-niches regex (gambling, crypto-trading, manosphere, OnlyFans, conspiracy, get-rich-quick, etc.)
 
 ## North-star metric
 
-`paid_views_per_approved_publish` — tracked daily by `track.py northstar`. Anything that does not move this metric is decoration.
+`paid_views_per_approved_publish` - tracked daily by `track.py northstar`. Anything that does not move this metric is decoration.
 
 ## State paths
 

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-08-27T14:18:30.141082-05:00'
   sha256: 8ea93188716631c42b5694d2a26813bdb05e7d79498d4f8532ff0ba1c59b7f89
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram search results for "Monad" showing various contacts and global
+    group chats.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:09:03.410945+00:00'
   source_available: true
 - id: 1e6b4680a6c056cb
   filename: IMG_8129.jpeg
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2024-08-29T10:50:55.023000-05:00'
   sha256: de4c5ed365da3f506b235c69a633c7a770033db1df92bfed643db9e1a3347030
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Wisey ad for an adult ADHD test claiming hypersexuality is an ADHD
+    response, not infidelity.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:21.777347+00:00'
   source_available: true
 - id: 12c950fcb0cb180d
   filename: IMG_1107.jpeg
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2024-08-29T12:51:49.073000-05:00'
   sha256: 9d637cd06b4080a79f4c2b1c3ca8af774c39c90f4f64ce0a2ed03a69f0170ade
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Search AI Overview screenshot explaining the genetic basis of
+    ADHD.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:25.498297+00:00'
   source_available: true
 - id: 2a703e69f211efe0
   filename: IMG_0225.PNG
@@ -55,9 +58,10 @@ attachments:
   sender: me
   sent_at: '2024-08-30T20:21:20.302000-05:00'
   sha256: 8162b7fd911a5b03afcc846d90090619dec50d43abe6f4d88beb84abc85b5bf5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: White Whirlpool top-freezer refrigerator on a wood floor next to cases
+    of bottled water.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:32.211415+00:00'
   source_available: true
 - id: 3db052f5749d9e69
   filename: IMG_0226.PNG

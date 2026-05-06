@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2024-10-18T02:18:29.924264-05:00'
   sha256: 2db8b68d0e588d25a8271435276a4ff8d55bb350e10737e7126f18c60b1f52c7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Maps BART directions from Bay Fair to Dublin/Pleasanton on the
+    Blue-N line for $5.55.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:08:33.848499+00:00'
   source_available: true
 chat_message_guids_count: 16
 deleted_upstream: null

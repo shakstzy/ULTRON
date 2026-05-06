@@ -21,7 +21,7 @@ for (const e of entities) {
   byStatus[e.meta.status || "?"] = (byStatus[e.meta.status || "?"] || 0) + 1;
 }
 
-console.log("=== quantum-tinder status ===");
+console.log("=== dating/tinder status ===");
 console.log(`halted: ${halted}${halted ? ` (${haltReason})` : ""}`);
 console.log(`today swipes: ${counters.day.swipe || 0} / ${caps.swipes.per_day}`);
 console.log(`hour msgs: ${counters.hour.message || 0} / ${caps.messages.per_hour}`);

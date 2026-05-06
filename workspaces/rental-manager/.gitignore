@@ -1,17 +1,12 @@
-# Operational state. Survives restarts but not git-tracked.
-# Run markers (.start/.done/.aborted/.crashed) ARE tracked via the !whitelist
-# below so we have a forensic trail of past batches in version control.
-state/chrome-profile/
-state/threads/
-state/audit/
-state/network/
-state/tmp-screenshots/
-state/pacing.json
-state/breaker.json
-state/threads.jsonl
+# Operational state — survives restarts but not git-tracked.
+# Gemini adversarial review 2026-05-06: tracking run markers in git was an
+# anti-pattern; execution state would pollute the repo on every batch.
+state/
 
-# Track the run-marker sidecars but not the heavyweight ndjson stream.
-state/batch-followup/*.ndjson
+# Application packets (PDFs are heavy + may contain renter PII).
+# Parsed-and-redacted markdown is appended to raw/leads/<slug>.md instead.
+raw/applications/*/source.pdf
+raw/applications/*/source.png
 
 # Node deps — npm install reproduces.
 playbooks/*/node_modules/

@@ -1,9 +1,9 @@
 {
-  "name": "quantum-tinder-bot",
+  "name": "dating-tinder-bot",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Patchright-driven Tinder automation for QUANTUM. Human-paced, ban-aversion priority. No api.gotinder.com.",
+  "description": "Patchright-driven Tinder automation for ULTRON dating workspace. Human-paced, ban-aversion priority. No api.gotinder.com.",
   "scripts": {
     "postinstall": "patchright install chromium",
     "swipe": "node scripts/swipe.mjs",

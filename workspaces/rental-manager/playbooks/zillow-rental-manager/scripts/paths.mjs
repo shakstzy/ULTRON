@@ -6,6 +6,7 @@
 
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { existsSync } from 'node:fs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -14,6 +15,16 @@ const __dirname = dirname(__filename);
 export const SCRIPTS_DIR = __dirname;
 export const PLAYBOOK_ROOT = resolve(SCRIPTS_DIR, '..');
 export const WORKSPACE_ROOT = resolve(PLAYBOOK_ROOT, '..', '..');
+
+// Fast-fail: if scripts/ get moved to a different depth, all derived paths
+// silently point at the wrong place. Verify the anchors we expect (Codex
+// adversarial review 2026-05-06).
+if (!existsSync(join(PLAYBOOK_ROOT, 'package.json'))) {
+  throw new Error(`paths.mjs anchor missing: expected ${PLAYBOOK_ROOT}/package.json. Did you move scripts/ to a different depth?`);
+}
+if (!existsSync(join(WORKSPACE_ROOT, 'CLAUDE.md'))) {
+  throw new Error(`paths.mjs anchor missing: expected ${WORKSPACE_ROOT}/CLAUDE.md. Workspace root resolution is wrong.`);
+}
 
 // Operational state — survives restarts, gitignored except for a few markers.
 export const STATE_DIR = process.env.ZRM_STATE_DIR || join(WORKSPACE_ROOT, 'state');

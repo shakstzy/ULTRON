@@ -22,9 +22,10 @@ attachments:
   sender: jamal-nyc
   sent_at: '2025-06-22T16:14:24.273852-05:00'
   sha256: 1a931234b9ac41b5de18ce864dd560c3cd86bb40c0a47a785768b2e25aa3ef6a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A crowded indoor wave pool under a massive vaulted glass ceiling at
+    a water park.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:10.312622+00:00'
   source_available: true
 - id: dc750502f80c81d3
   filename: IMG_5393.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-06-23T18:54:04.161000-05:00'
   sha256: 9e05984f560f4a6f6227159b886f6be9ac7a51e0d0d868ec89828be92136f1f3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Lu.ma invite for ETHGlobal Happy Hour Brooklyn on Mon Jun 23, 6-10
+    PM at Warehouse.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:57.403902+00:00'
   source_available: true
 chat_message_guids_count: 119
 deleted_upstream: null

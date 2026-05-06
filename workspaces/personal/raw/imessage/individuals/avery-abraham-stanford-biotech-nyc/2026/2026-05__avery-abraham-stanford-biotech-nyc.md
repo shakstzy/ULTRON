@@ -55,9 +55,10 @@ attachments:
   sender: me
   sent_at: '2026-05-01T12:52:44.048000-05:00'
   sha256: d7419118d4429b319fa3b666b4e4c645d490745e38688009be489ec8518d811e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LinkedIn header for Adithya Shakthi Kumar, Outerscope founder and Stanford/Berkeley
+    graduate.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:43.196960+00:00'
   source_available: true
 - id: 44e95114cde5d0bc
   filename: IMG_8969.HEIC
@@ -77,9 +78,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-05-01T13:06:45.276509-05:00'
   sha256: 84a48ff09f7a73b9f91f8c625e723f837f0a0ae684aa695af14f25a2fb446b64
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A dark-haired woman in a patterned dress blowing a kiss at an outdoor
+    restaurant table.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:23.855706+00:00'
   source_available: true
 - id: cbf082afd1f59dfc
   filename: IMG_7195.jpeg
@@ -88,9 +90,9 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-05-01T13:06:45.276509-05:00'
   sha256: b0b6228e8da87f8bbb1f982dfe700557ccc1acdbaf40efbced0d6b10224fad39
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A blonde woman in a red gingham bikini posing poolside in the sun.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:54.775215+00:00'
   source_available: true
 - id: c725f63068f17fcb
   filename: a25bea5e-aa43-417d-95ac-57e6375769d7.JPG
@@ -99,9 +101,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-05-01T13:07:21.174960-05:00'
   sha256: f2aaacc613fe5148ff9d614d9a9cfd37394fc5b8c4c0c8cdfca8366dd4e42aea
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A nude woman with wet hair and sand on her skin poses on a beach with
+    turquoise water.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:15.352538+00:00'
   source_available: true
 - id: b9ada23b247ee6cd
   filename: C60E54FD-72FA-40BE-8DE2-3E001C2DEDF7.pluginPayloadAttachment
@@ -143,9 +146,10 @@ attachments:
   sender: me
   sent_at: '2026-05-02T03:51:07.594000-05:00'
   sha256: 509e975719e6b2a1e581c9c3c96a54a6ab70eecf605503fa98c63deacb8da8d1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Alex Ziskind YouTube screenshot: splitting an LLM between a DGX Spark
+    and a Mac.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:12.450692+00:00'
   source_available: true
 - id: ad48d03f3028e8a4
   filename: Audio Message.caf
@@ -165,9 +169,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-05-02T08:06:28.915863-05:00'
   sha256: c7cd442cea00d9cebadcd994e011a2f4af9a82ee708318aab96c5212baff8441
-  description: null
-  description_model: null
-  extracted_at: null
+  description: WhatsApp chat with Lara Daniel discussing DNA fragmentation and project
+    timelines.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:07.350843+00:00'
   source_available: true
 - id: 8653a46f92dc6129
   filename: "Screenshot 2026-05-02 at 9.06.40\u202FAM.png"
@@ -209,9 +214,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-05-02T08:15:07.696884-05:00'
   sha256: 155ab934d21e02a493c0c0381d5e876ed57be4dd3cc42d3a9947b5673dcfbca8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person in a blue lace top pets a spotted Bengal cat on a grey leather
+    sofa.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:24.836369+00:00'
   source_available: true
 - id: 5d6fc75db16bf9f7
   filename: Audio Message.caf
@@ -254,9 +260,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-05-02T09:34:37.237595-05:00'
   sha256: 72cfe8b7c2e6cf7a673ec43b7d21785ec4099b7dabb3720ad380ce46d8eeb3db
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Laura and Avery pitch Seedbox, an at-home sperm quality and fertility
+    testing device.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:44.534293+00:00'
   source_available: true
 - id: 35328bfd0000de04
   filename: IMG_9057.HEIC
@@ -265,9 +272,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-05-02T10:18:33.052032-05:00'
   sha256: 95e5b78bd5280c8d3ed9bfe8616339661a19c992e112f5e2343160eb5b94d744
-  description: null
-  description_model: null
-  extracted_at: null
+  description: White powder in a glass jar with a green spoon and a small purple packet
+    on a wooden desk.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:39.266521+00:00'
   source_available: true
 - id: 0e23e621a9cd3543
   filename: "Screenshot 2026-05-02 at 11.18.35\u202FAM.png"
@@ -309,9 +317,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-05-04T12:38:10.924905-05:00'
   sha256: cb65597fc20385b792d5228b18637509b770e91e8f96c679f70ee2f1a91d5f9f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Classical art meme parodying historical cycles using 'Real shit' and
+    'chillin' slang.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:43.540838+00:00'
   source_available: true
 chat_message_guids_count: 369
 deleted_upstream: null

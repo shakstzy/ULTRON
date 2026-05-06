@@ -79,9 +79,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-03-09T18:24:20.105488-05:00'
   sha256: 2682aa19b05c19ceafa991725d7bc8556f3606a2ea823730c7b2ca573b0b1d2f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Fans in Jaquez Jr. and O'Neal jerseys wait behind Kaseya Center barriers
+    in purple light.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:03.325289+00:00'
   source_available: true
 - id: 773d1b69c00c9cc1
   filename: IMG_5822.png
@@ -124,9 +125,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-03-10T00:49:19.950307-05:00'
   sha256: 40fc8a440425ef30bd81258eedc53332f4087f0944cd239e7a7f401dd7455ec9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men smiling in a wood-paneled room; one in a green Nike shirt,
+    the other in a blue polo.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:46.283662+00:00'
   source_available: true
 - id: 513aaf847bcda719
   filename: IMG_5894.HEIC
@@ -135,9 +137,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-03-10T00:49:19.950307-05:00'
   sha256: 86e173927a7972ccdfb6e11c209e3a909dcaff93ad4a73a1ca07521abd781a04
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men smiling for a selfie; one wears a green Nike shirt, the other
+    a light blue shirt.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:00.364982+00:00'
   source_available: true
 - id: 9164a41b2ef2a5bf
   filename: CA8B16DB-77D9-4C40-93DF-5CBF015DAAFE.pluginPayloadAttachment
@@ -190,9 +193,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-03-20T09:49:53.489390-05:00'
   sha256: 8a51e306ed77411f31fc67ee011fdeef6aa10e51616f782bfe43a7d23c1775ae
-  description: null
-  description_model: null
-  extracted_at: null
+  description: WhatsApp screenshot of Lara Daniel asking Adithya about meeting times
+    and location.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:11.688726+00:00'
   source_available: true
 - id: abd3f031a3c107c9
   filename: IMG_6845.heic
@@ -201,9 +205,9 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-03-21T13:50:19.582798-05:00'
   sha256: be17fa9f63339142bc4f337d4d2267d0071a0dcd9c78d7e857d4adec241f6798
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Five women smile and pose with wine glasses at an outdoor cafe table.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:33.753502+00:00'
   source_available: true
 - id: 9194f778795f0a58
   filename: IMG_5934.png
@@ -212,9 +216,10 @@ attachments:
   sender: me
   sent_at: '2026-03-23T19:56:32.298000-05:00'
   sha256: 97ecbe7b8606fc9be4702d490dd04478c03d108added9064024ec43126bf578c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Gmail screenshot: Adithya Kumar sends Seedbox Labs PRDs and requests
+    a meeting with Lara.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:26:32.412996+00:00'
   source_available: true
 - id: a8cefdc5f6a00693
   filename: 253A250E-4005-4308-937B-D265BAB4B8A7.pluginPayloadAttachment
@@ -267,9 +272,10 @@ attachments:
   sender: me
   sent_at: '2026-03-27T14:06:06.180756-05:00'
   sha256: 132a56949123225f1d4c3d3220fc396c88205be93a276836ecfb18fdb24b52fa
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple Store specs for a Mac Studio with M4 Max, 48GB unified memory,
+    and 512GB SSD.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:26:31.084618+00:00'
   source_available: true
 - id: aa30e3618ff59734
   filename: IMG_0406.png
@@ -300,9 +306,10 @@ attachments:
   sender: me
   sent_at: '2026-03-27T14:39:21.664366-05:00'
   sha256: d606582f46fad8d9d24bacdff0550a26bb245aedeb1c887bc29a5149ad103765
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Recommendation to upgrade to M4 Max with 64GB RAM to run 14B AI models
+    locally.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:26:34.624872+00:00'
   source_available: true
 - id: 1476074d1eae1530
   filename: IMG_8167.png
@@ -311,9 +318,10 @@ attachments:
   sender: me
   sent_at: '2026-03-27T14:39:27.096207-05:00'
   sha256: a4e98429901643b1f57bd0216bd848d8d135e708d90db1d9fdbb45c9ae3295ef
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Cost analysis for 16 AI agents totaling over $3,000 monthly in LLM
+    API token expenses.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:26:41.916154+00:00'
   source_available: true
 - id: 9ca4810276578077
   filename: IMG_6157.png
@@ -322,9 +330,10 @@ attachments:
   sender: me
   sent_at: '2026-03-27T17:25:14.024101-05:00'
   sha256: 21491dcb5f6f0cf3114904be23c912114ede53eb08bf439578c1468559d0b4e3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Best Buy page for a Silver Apple Mac Studio (M4 Max, 512GB SSD) listed
+    for $1,999.00.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:26:55.440788+00:00'
   source_available: true
 - id: 907bed68615181ba
   filename: IMG_3638.png
@@ -333,9 +342,10 @@ attachments:
   sender: me
   sent_at: '2026-03-27T17:40:47.129165-05:00'
   sha256: 2056a2dfac928e7305e5f19fbdf364b4f2ef26169253415888c9f586c594639f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Text detailing M3 Ultra pros: 512GB memory for AI/LLM and 80-core
+    GPU for 3D/VFX workloads.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:55.309148+00:00'
   source_available: true
 - id: d78d0088f5f5a4b1
   filename: IMG_9589.png
@@ -344,9 +354,10 @@ attachments:
   sender: me
   sent_at: '2026-03-27T17:44:00.394416-05:00'
   sha256: ec89e4caf2a6d195f747c04d17c717e4235a87d6b98d838d2dec82fa22b3cd41
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A $9,699.99 NVIDIA RTX PRO 6000 GPU listing with a mustachioed man's
+    face overlay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:34.119773+00:00'
   source_available: true
 - id: 57e182c20ebdc5fa
   filename: 52BD676B-4417-4F27-9FAE-3143F0FD793F.pluginPayloadAttachment
@@ -366,9 +377,10 @@ attachments:
   sender: me
   sent_at: '2026-03-27T17:52:09.068707-05:00'
   sha256: d2882c243a86e9bc3680669468137cdcb95b4407156103b11dfc594ecaf56f65
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Costco listing for a 16" MacBook Pro (M5 Max, 48GB RAM, 2TB SSD) in
+    Space Black for $4,349.99.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:26:45.190486+00:00'
   source_available: true
 - id: e9ed11f8688aba85
   filename: IMG_6494.png
@@ -377,9 +389,10 @@ attachments:
   sender: me
   sent_at: '2026-03-27T17:57:03.064676-05:00'
   sha256: 8a1d5a95964d34153b7defd2764821abfeda9dd466e90caa3e0c22d02438f5be
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "Apple Store screenshot showing 14\u201316 week shipping and 32-core\
+    \ CPU specs."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:26:46.091949+00:00'
   source_available: true
 - id: 79973c1293d99f0e
   filename: IMG_6380.png
@@ -399,9 +412,10 @@ attachments:
   sender: me
   sent_at: '2026-03-27T18:13:11.161018-05:00'
   sha256: 0f7097cc5a51490749114c42a126704d02fb6ee5f284037a8ef86fe0a7f6319b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Text comparing M5 Max and DGX Spark AI performance with a $15k hardware
+    budget breakdown.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:26:44.908289+00:00'
   source_available: true
 - id: 7ad0ec5dc8752434
   filename: IMG_7953.png
@@ -421,9 +435,10 @@ attachments:
   sender: me
   sent_at: '2026-03-27T18:19:06.412049-05:00'
   sha256: a14524df1ef60deff1a01a269190a1fc0da18b744db7871043c4d602ccefbf94
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Chat screenshot recommending 128GB RAM for OpenClaw agents and local
+    LLMs on a MacBook.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:00.795073+00:00'
   source_available: true
 - id: a050ad2ebea88874
   filename: 2542D2F2-1DC4-46E8-BF16-A0AC57319EC8.pluginPayloadAttachment
@@ -465,9 +480,11 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-03-27T18:28:23.880804-05:00'
   sha256: 2402c04df72ab4b6e28a9d170d7053ec7c46fdfc2a882bba2c32d73178ee515b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This Apple guest order confirmation is for a 16-inch MacBook Pro (M5
+    Max) in Space Black. It was placed March 27, 2026, for delivery to Adithya K between
+    April 9 and 16.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:31.424965+00:00'
   source_available: true
 - id: 3ca402a8bd7fa647
   filename: IMG_6205.png
@@ -476,9 +493,10 @@ attachments:
   sender: me
   sent_at: '2026-03-29T20:34:43.601000-05:00'
   sha256: 6a824c0c63ff92258b612b054acb3f85a8228b409e3bf1505f141828489f4e69
-  description: null
-  description_model: null
-  extracted_at: null
+  description: eBay listing for a new $6,000 Mac Studio M3 Ultra with 512GB RAM and
+    4TB SSD.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:39.625120+00:00'
   source_available: true
 - id: 797049a092148416
   filename: IMG_9548.png
@@ -498,9 +516,10 @@ attachments:
   sender: me
   sent_at: '2026-03-30T03:57:19.463395-05:00'
   sha256: 087d69118918e370a793c68f7ab58d3d5fc664c03670bc83d598fc2bde3de10f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dashboard UI showing an iMessage task for Avery with live JSON session
+    output.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:26:54.863063+00:00'
   source_available: true
 - id: 1f7eebe3113ff984
   filename: 04FD5363-2805-4B34-A94E-80631E54ACF2.pluginPayloadAttachment
@@ -520,9 +539,10 @@ attachments:
   sender: me
   sent_at: '2026-03-30T11:01:59.843135-05:00'
   sha256: f86f991e9734499776205955d344a76f644bb98a0131ee7c984eedc6410528db
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Product page for a $7,499 2025 Apple Mac Studio with M3 Ultra, 256GB
+    RAM, and 1TB SSD.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:18.040402+00:00'
   source_available: true
 - id: 2ac8753a62680324
   filename: IMG_6836.png
@@ -531,9 +551,9 @@ attachments:
   sender: me
   sent_at: '2026-03-30T11:02:26.249995-05:00'
   sha256: 564c38145add3c9aa7924af176ab996a368fd18ab89d1688349515d22e8e7d66
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple Store memory selection page showing 24GB, 48GB, and 64GB options.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:26:51.483462+00:00'
   source_available: true
 - id: 180e9fd9f495a2f0
   filename: 340E9167-CFF0-4332-8CFB-87C8B1539656.pluginPayloadAttachment
@@ -564,9 +584,10 @@ attachments:
   sender: me
   sent_at: '2026-03-30T11:06:40.884504-05:00'
   sha256: 55dac644bce84c7ca39ac9a92e34ac1ca82c426acdf970ec94c7a6869ba05722
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Apple delivery info: 14-16 week shipping to 78724 or July 29 pickup
+    at Apple Domain NORTHSIDE.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:26:56.762755+00:00'
   source_available: true
 - id: b7189a79f1b88160
   filename: IMG_5277.png
@@ -575,9 +596,10 @@ attachments:
   sender: me
   sent_at: '2026-03-30T11:08:52.875387-05:00'
   sha256: f0d49a91a8c63daec376cb60ad31c490fa8d730900cbbd975817a274ce0a5ff7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Adorama listing for a $7,499 Apple Mac Studio (M3 Ultra, 256GB RAM,
+    1TB SSD).
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:17.178426+00:00'
   source_available: true
 - id: b3caafae33731760
   filename: IMG_5699.png
@@ -586,9 +608,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-03-30T11:11:53.623355-05:00'
   sha256: 37cda8b9da9976e9dcecdbf5186d56c0160fe8237feb4f2f5f415e5e2aa6d5eb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple store screenshot showing 96GB and selected 256GB Mac unified
+    memory options.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:11.807357+00:00'
   source_available: true
 - id: d0654f2f7a62e847
   filename: IMG_6827.png
@@ -597,9 +620,10 @@ attachments:
   sender: me
   sent_at: '2026-03-30T11:12:48.228154-05:00'
   sha256: 8ca6ec8489aea0b30c479b7bd2f108eaaf2fd7996150a69bf19a278361c4e523
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hardware analysis recommending NVIDIA DGX Spark and M5 Max MacBook
+    Pro for local AI inference.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:52.924338+00:00'
   source_available: true
 - id: a89913768d84ebcf
   filename: A664D98C-950F-4854-AEFB-EE314A5E5F46.pluginPayloadAttachment
@@ -619,9 +643,10 @@ attachments:
   sender: me
   sent_at: '2026-03-30T11:17:10.262100-05:00'
   sha256: b6882bbe914dc2424d502386841f8c231ca83dc9e73c0ebc713091930b969080
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Specs for an Apple Mac Studio with M4 Max chip, 40-core GPU, and 64GB
+    RAM.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:05.803645+00:00'
   source_available: true
 - id: 531594697bd8a0b4
   filename: IMG_5285.png
@@ -630,9 +655,10 @@ attachments:
   sender: me
   sent_at: '2026-03-30T11:17:47.121018-05:00'
   sha256: 8449501c0fd1ac1ae1969b917dd652aac48a9ead34773ef25d3e95428ece5072
-  description: null
-  description_model: null
-  extracted_at: null
+  description: YouTube screenshot of Jeff Geerling's video thumbnail showing a rack
+    of four Mac Studios.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:20.197780+00:00'
   source_available: true
 - id: b714b95553055a0a
   filename: DA225A5F-1A9F-4E54-B9AB-649CE5EC15A7.pluginPayloadAttachment
@@ -685,9 +711,10 @@ attachments:
   sender: me
   sent_at: '2026-03-31T22:03:19.694000-05:00'
   sha256: 692b665190c5d152530f01f9833f42a103bc006c008fafbcfaa4d13b91430af4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Comparison of DGX Spark and Mac hardware performance for AI inference
+    and prefill.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:49.026224+00:00'
   source_available: true
 chat_message_guids_count: 525
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-02-08T15:34:46.169000-06:00'
   sha256: 605ca02af27b6e43ad7ed9f8d481a69f1a2b66a95c351194614a09805f4ee8c6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple Maps screenshot of a 9-minute driving route from Bel Air Apartments
+    to Ashbrook Ln.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:28.692694+00:00'
   source_available: true
 - id: e566474c9f6fb2fd
   filename: ms-0kstct.jpeg

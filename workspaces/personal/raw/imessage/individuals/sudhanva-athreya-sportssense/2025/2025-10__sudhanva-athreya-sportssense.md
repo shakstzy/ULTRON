@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-10-16T01:08:24.111092-05:00'
   sha256: 5d152c1a7bf6b009ef439e81d698ef3d118fb396c5ca6f8affb4acde36e4af36
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Selfie of two men in front of a black event backdrop with "LAVA" and
+    "EB3" logos.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:50.292428+00:00'
   source_available: true
 chat_message_guids_count: 15
 deleted_upstream: null

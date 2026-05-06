@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-12-06T02:10:35.345000-06:00'
   sha256: 3571a7293f51a5022e63a7a040444ad75d3f920889de3168a126cfb0fe77089f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Antimetal GTM Associate job posting in NYC offering $100k-$200k plus
+    equity.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:22.025799+00:00'
   source_available: true
 - id: 43d99154733ca15b
   filename: Adithya Kumar.pdf

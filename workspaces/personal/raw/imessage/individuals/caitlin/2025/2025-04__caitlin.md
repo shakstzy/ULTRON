@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2025-04-29T16:05:33.480227-05:00'
   sha256: fdce068b413270ac5e32dff70ddf8ce6e43608e3d8fabdbc78dd066cdfcebefb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Person in a BAPE tee and Starknet cap leans against a tree by a barbed-wire
+    fence.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:58.031898+00:00'
   source_available: true
 - id: fd9720655b4e81f0
   filename: IMG_8202.JPG
@@ -44,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2025-04-29T16:06:00.181617-05:00'
   sha256: feb0ef6fd56642fce21dff23e6b23f03f646da183c18513c9b6172807c0db45b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a cap and sunglasses leans against a white pillar next to a
+    metal gate at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:18.994906+00:00'
   source_available: true
 chat_message_guids_count: 15
 deleted_upstream: null

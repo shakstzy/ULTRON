@@ -22,9 +22,10 @@ attachments:
   sender: presley-hinge-austin
   sent_at: '2026-03-11T22:29:40.831757-05:00'
   sha256: ac128c0d0398859839631528873926bea675fbec3c95adef59387802a854a90c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person with long brown hair kneels on a bed wearing a light-colored
+    thong, seen from behind.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:05.999945+00:00'
   source_available: true
 - id: 7e744c0b8c639be6
   filename: IMG_0342.heic

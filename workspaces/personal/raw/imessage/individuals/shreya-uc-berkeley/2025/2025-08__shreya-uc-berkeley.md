@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-08-14T12:15:40.304993-05:00'
   sha256: fbab114a0c5d19e7c008a4cee689f979c5fc104886d2b6306581c71ea1048b60
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Synapse Web3 app walkthrough: crypto dashboard, chat-based task automation,
+    and an MCP store.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:15.597261+00:00'
   source_available: true
 - id: 6940fce1b0b49919
   filename: -5434798402986163788.MOV

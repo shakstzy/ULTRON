@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-01-09T14:29:29.316648-06:00'
   sha256: 0a4c2095f9a13e16417d320d97251c4107fca4a992cadbec8093969153c6a3cb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: '"Incubations Sync" meeting at 12:29 PM and $LL governance token protocol
+    details.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:18.369021+00:00'
   source_available: true
 - id: a30ff8178792f839
   filename: IMG_2294.png
@@ -67,9 +68,10 @@ attachments:
   sender: me
   sent_at: '2026-01-21T14:14:44.735327-06:00'
   sha256: e1889275e8b9e5fd7ef614f877a4eac7d88bd4d706aacb97de6223bd0e9938a0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Joni menstrual care graphic showing a "FREE TAMPONS" dispenser with
+    CPG and SaaS tags.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:22.191247+00:00'
   source_available: true
 - id: e863400aeae3e9d4
   filename: IMG_0988.png
@@ -90,9 +92,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-01-22T21:43:14.529310-06:00'
   sha256: 60bab120c65f70540b1137319d3c32462cda9db20dacf754421107168784e976
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Data flow and file structure for a venture diligence agent using Attio,
+    Granola, and Claude LLMs.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:26:44.632718+00:00'
   source_available: true
 - id: 3ea2ed3c5f0adcd7
   filename: 1F055E7B-2B42-43F7-830B-EA82DA6D36D0.pluginPayloadAttachment

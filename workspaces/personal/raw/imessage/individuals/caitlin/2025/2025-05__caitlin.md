@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-05-15T13:39:44.927750-05:00'
   sha256: 81bda6a73646d6d80e562c3d3c1602414e8d63ec4da6b451864464333a574102
-  description: null
-  description_model: null
-  extracted_at: null
+  description: ASCAP dashboard for Outerscope Records with Member ID 7154932 showing
+    zero registered works.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:18.443294+00:00'
   source_available: true
 - id: 70abd13165cae9b1
   filename: IMG_1243.png
@@ -55,9 +56,10 @@ attachments:
   sender: me
   sent_at: '2025-05-22T22:39:45.458000-05:00'
   sha256: aa8b4a70a40f6c5ef6a9b5bb0b2ce8135e53abd359e34ad68070bdefb522aef6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'ASCAP form asking about PRO membership with red text stating: You
+    are already a Member.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:26.079324+00:00'
   source_available: true
 - id: 2008037d0fe31691
   filename: IMG_8634.png
@@ -66,9 +68,10 @@ attachments:
   sender: me
   sent_at: '2025-05-22T22:40:56.951000-05:00'
   sha256: 27d525999735e080463fbdb540031287107075d021586ee3639d3c14ad6aad82
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Adithya Kumar''s music rights dashboard showing Member ID #7154933
+    and IPI #1201860597.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:45.863208+00:00'
   source_available: true
 - id: 6072a6ed09a41cff
   filename: IMG_4689.png
@@ -77,9 +80,10 @@ attachments:
   sender: me
   sent_at: '2025-05-22T22:42:52.650000-05:00'
   sha256: 764a144ec1ac959dc3204c85b84cd206020c4c669b2afb5f85c770adfb3fbbd6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Adithya Kumar''s profile showing Member ID #7154933 and IPI Name Number
+    #1201860597.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:08.619799+00:00'
   source_available: true
 - id: 1b383af2c82598c7
   filename: IMG_2272.png
@@ -88,9 +92,10 @@ attachments:
   sender: me
   sent_at: '2025-05-22T22:42:52.650000-05:00'
   sha256: 6e0897133bf9c2aad2232617ca5802eb79630a8f9cb1dba3068ceade60e0a881
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Outerscope Records header showing Member ID #7154932 and IPI Name
+    Number #1201860499.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:23.635159+00:00'
   source_available: true
 chat_message_guids_count: 39
 deleted_upstream: null

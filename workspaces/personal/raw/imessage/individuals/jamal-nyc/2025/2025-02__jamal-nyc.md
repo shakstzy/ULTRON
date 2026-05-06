@@ -33,9 +33,10 @@ attachments:
   sender: jamal-nyc
   sent_at: '2025-02-23T18:22:03.114496-06:00'
   sha256: da8ad69707d8d4d03f48f220613dc4e90d49230b1934df3eb924de9c8ef82099
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person uses a roller to apply white paint in a room with cloth-covered
+    furniture.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:06.704214+00:00'
   source_available: true
 chat_message_guids_count: 163
 deleted_upstream: null

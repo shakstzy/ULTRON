@@ -22,9 +22,10 @@ attachments:
   sender: jake-garcia
   sent_at: '2026-04-16T18:21:38.282885-05:00'
   sha256: 23e57a107a567fdfda028b79cd5ce34d564934f8a7f38008bf18fca866bb0ab9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Cover of "Criminal and Addictive Thinking" workbook, second edition,
+    from the Minnesota DOC.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:31.120318+00:00'
   source_available: true
 chat_message_guids_count: 34
 deleted_upstream: null

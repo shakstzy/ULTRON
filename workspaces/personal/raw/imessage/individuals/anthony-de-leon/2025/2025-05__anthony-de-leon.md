@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-05-02T16:43:56.689290-05:00'
   sha256: f5f82da17fdba08eb50fceb716de043964b5e53b815a77663bfa7a6cdbe3a8f8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Selfie of two men in blue light; one in an LA Dodgers hat, the other
+    giving a peace sign.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:05.357842+00:00'
   source_available: true
 - id: a2fba7181565041d
   filename: camphoto_1423418003.JPG
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-05-02T19:36:45.081704-05:00'
   sha256: 5428c8aa715ccb1ece86b3ba691b95be177fe010f09b6b66c4fc7f45e6c87569
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men take a selfie in a nightclub with a DJ booth and bar in the
+    background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:15.130547+00:00'
   source_available: true
 chat_message_guids_count: 7
 deleted_upstream: null

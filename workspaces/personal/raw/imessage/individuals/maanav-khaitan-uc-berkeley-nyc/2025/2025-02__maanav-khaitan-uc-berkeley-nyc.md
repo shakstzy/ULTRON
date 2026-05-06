@@ -55,9 +55,10 @@ attachments:
   sender: me
   sent_at: '2025-02-21T22:31:46.143000-06:00'
   sha256: 830e85e653cefbb5ef80aacace50ce756164db218c70b59f3c6b9c081360e4cf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down selfie of two young men posing with hand signs in a red-lit
+    venue.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:03.305188+00:00'
   source_available: true
 chat_message_guids_count: 74
 deleted_upstream: null

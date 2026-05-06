@@ -22,9 +22,10 @@ attachments:
   sender: vina-nyc
   sent_at: '2025-08-11T16:54:44.444239-05:00'
   sha256: f723e5447b764d0531a40c6e4773575ef1d17020e1131f44c4c7c3314bb081f0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Maps screenshot showing the Tompkins Square Park Dog Run in
+    New York City.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:00.321710+00:00'
   source_available: true
 chat_message_guids_count: 55
 deleted_upstream: null

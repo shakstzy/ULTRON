@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-08-03T04:30:12.979000-05:00'
   sha256: 440fffac4166f2ecc3d807e656c555201b6330e0aca46d9d8e476905a4cbfbe1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men in a Cal hoodie and Columbia fleece pose by a car with a Thule
+    roof rack.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:04.490952+00:00'
   source_available: true
 - id: 3c68ba4c59cf4719
   filename: 77590625716__9A91C836-8597-46D9-9C62-E3888086B41C.MOV
@@ -33,9 +34,9 @@ attachments:
   sender: me
   sent_at: '2025-08-03T04:31:02.885000-05:00'
   sha256: 0ac8a635d72207cd36fdf53a2a2ef998f7a4aa767cf1c01a8227a5a3f2c166fa
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling man and a resting woman cuddle in bed under a blanket.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:00.613034+00:00'
   source_available: true
 chat_message_guids_count: 9
 deleted_upstream: null

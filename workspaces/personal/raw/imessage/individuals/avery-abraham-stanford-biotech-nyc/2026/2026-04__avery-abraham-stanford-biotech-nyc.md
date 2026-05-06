@@ -867,9 +867,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-09T10:51:40.724482-05:00'
   sha256: 2a34741d4b402bd443c4764a6b7752049173be10a1576338ac4244d617a8f44e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man presents "The Problem" slide in an office with a Seedbox laptop
+    in the foreground.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:26:55.065000+00:00'
   source_available: true
 - id: 23925f801f730b21
   filename: A026B995-1CA6-4121-8830-88514E2F9CCB.pluginPayloadAttachment
@@ -1163,9 +1164,10 @@ attachments:
   sender: me
   sent_at: '2026-04-13T15:57:05.903000-05:00'
   sha256: 9f601e58b5b1dd4b688a6ec02e67ff11e7ab427cc29f5e97b087728245f5ce09
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hardware priority list for a multi-node AI cluster including DGX Sparks
+    and Mac Studio Ultras.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:07.092607+00:00'
   source_available: true
 - id: 42dfbb573b5ee684
   filename: IMG_9886.png
@@ -1405,9 +1407,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-13T20:30:17.040874-05:00'
   sha256: 9989589d734e733d1b2f7868326aa107cad84e7cae72af01bc33a3d47a1ee636
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Nighttime pan from the illuminated US Capitol dome to the Washington
+    Monument.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:26:27.712464+00:00'
   source_available: true
 - id: 3e94253fb02b779a
   filename: IMG_7623.HEIC
@@ -1563,9 +1566,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-15T14:08:36.106276-05:00'
   sha256: 3af6eb8823241a5ded52f71742392d26f0c82d2578e4b704c209aa9f46e31859
-  description: null
-  description_model: null
-  extracted_at: null
+  description: UPS tracking for 1ZE569860310172293 showing out for delivery in Austin,
+    TX.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:21.450063+00:00'
   source_available: true
 - id: f54781be1d1b2a8a
   filename: F3E23767-9767-4EE5-B68C-3919A578E4DA.pluginPayloadAttachment
@@ -1721,9 +1725,10 @@ attachments:
   sender: me
   sent_at: '2026-04-16T17:31:55.983000-05:00'
   sha256: a21e1179c9556059c7c1796450541418cc31571a9da26d5e58df66bae65c31b5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Technical notes on Exo's RDMA over Thunderbolt 5 and Ethernet connectivity
+    for GPU clustering.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:26:54.206788+00:00'
   source_available: true
 - id: 2663983d22791121
   filename: IMG_5465.png
@@ -1877,9 +1882,9 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-19T13:22:18.281932-05:00'
   sha256: f0a0aebc5856601cd7d6a9231604840ca5659a34077e681f9f0795d558a54693
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of an ongoing 43:16 minute phone call with "Mom".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:45.266794+00:00'
   source_available: true
 - id: 2e818b20e1efad7a
   filename: Audio Message.caf
@@ -2015,9 +2020,10 @@ attachments:
   sender: me
   sent_at: '2026-04-21T20:34:22.386000-05:00'
   sha256: e4d3a0e9ed545426ec374f4e077bfd24964481db2f4b6739f43bae6c00929626
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Screenshot of "Adjust usage" options: $100/mo for 5x usage vs $200/mo
+    for 20x usage.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:26:42.623453+00:00'
   source_available: true
 - id: 5946a087a03350f5
   filename: IMG_9704.png
@@ -2139,9 +2145,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-22T05:12:44.222621-05:00'
   sha256: 9376cd47cd476dc8415dbe2f433de6f728c39de9d2e5ebb8c47a19c553618ca7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A hand holds a large carved wooden phallus in a modern apartment living
+    room.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:06.166080+00:00'
   source_available: true
 - id: 09e862d9013e5bb9
   filename: 7E7FB96D-5A05-4D19-A53C-1C101A5CC229.pluginPayloadAttachment
@@ -2229,9 +2236,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-23T13:11:33.693861-05:00'
   sha256: b8887bf34168a358797accb39e8c29a1ad7eff0bb85bf2325e3af98f8fdae444
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a Y Combinator email reminder for the Summer 2026 application
+    deadline on 5/4.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:26:32.698737+00:00'
   source_available: true
 - id: 1574dbc3bb051867
   filename: IMG_0006.heic
@@ -2319,9 +2327,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-28T11:24:13.687599-05:00'
   sha256: e1acddc90f404b7e2a435fcf0012a1d617c63835f4ea190a5d30afc4e295ee2d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple order notice denying refund or replacement for W1626023391 after
+    carrier review.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:08.957571+00:00'
   source_available: true
 - id: f098a24f03fbad31
   filename: IMG_1575.png

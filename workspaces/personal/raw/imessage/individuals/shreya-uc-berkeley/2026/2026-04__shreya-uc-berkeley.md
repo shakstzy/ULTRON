@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-04-02T23:54:45.498128-05:00'
   sha256: 35c1c70796a951eff5652a4015ff0c6fe821244dfe7ff14378b392d7453f1958
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a 12 PM Google Meet event for Shreya and Adithya on Friday,
+    April 3.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:50.916950+00:00'
   source_available: true
 chat_message_guids_count: 13
 deleted_upstream: null

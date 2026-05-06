@@ -22,9 +22,9 @@ attachments:
   sender: me
   sent_at: '2026-02-08T22:54:45.326015-06:00'
   sha256: 382698affdd95ace50d5524531928000cee5970b158cdb43d9864fa2350bd0f3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Maps showing two driving routes from central Texas to Alabama.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:25.658055+00:00'
   source_available: true
 - id: 4eacc0fd2d75f95d
   filename: ms-fwSuGn.jpeg

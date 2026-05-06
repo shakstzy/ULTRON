@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-03-10T19:25:13.760000-05:00'
   sha256: 9bcc715fcbc98581a673b3eeea53b3c68ed033564348d61f78ad4eb7915c5a54
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men smile at an outdoor table; one wears sunglasses, the other
+    a Weyland-Yutani t-shirt.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:17.002259+00:00'
   source_available: true
 chat_message_guids_count: 10
 deleted_upstream: null

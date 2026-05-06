@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-11-21T16:54:12.306321-06:00'
   sha256: 97050c51ed76bbfd14e9049b8ff1d17d6af2790521091e8417251bfa2bbc2cea
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone call log showing a 40-second incoming call from unknown number
+    +54 11 7134 6660.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:40.485143+00:00'
   source_available: true
 chat_message_guids_count: 12
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-02-21T22:29:58.398000-06:00'
   sha256: 830e85e653cefbb5ef80aacace50ce756164db218c70b59f3c6b9c081360e4cf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down selfie of two young men posing with hand signs in a red-lit
+    venue.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:03.305188+00:00'
   source_available: true
 - id: c0c5ebfe07d52cb7
   filename: 76189144605__450919BD-A8E8-4BCB-9982-2C3CA28E7477.HEIC
@@ -44,9 +45,9 @@ attachments:
   sender: aryan-goyal-uc-berkeley
   sent_at: '2025-02-22T23:04:03.571085-06:00'
   sha256: 1673d926e40aee602b9b7f771fac25460222a1cf20a69729afbfea2ac8103f25
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two young men posing for a selfie indoors, one wearing a pink sweatshirt.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:17.376236+00:00'
   source_available: true
 chat_message_guids_count: 54
 deleted_upstream: null

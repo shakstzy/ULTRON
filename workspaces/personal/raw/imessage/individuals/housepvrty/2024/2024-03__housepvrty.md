@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2024-03-16T02:37:30.353000-05:00'
   sha256: 1abd938958d0386ad6cdff6e608be224031065617c1f95c055a71b45e7b50ddc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Red "Too many requests from your IP address" error message on a dark
+    background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:44.910161+00:00'
   source_available: true
 chat_message_guids_count: 5
 deleted_upstream: null

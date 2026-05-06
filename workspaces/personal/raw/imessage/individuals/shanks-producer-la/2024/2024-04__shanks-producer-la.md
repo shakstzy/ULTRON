@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-04-25T01:38:06.261550-05:00'
   sha256: be40b0f588833e42be80eed6ea326be73a2291463ff30ac64adbc963020c6bc6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Samsung monitor showing a music database for "shanks._support_164b"
+    with an active audio player.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:08.903318+00:00'
   source_available: true
 - id: cf1d91162a69c2d2
   filename: support164b_shanks..mp3

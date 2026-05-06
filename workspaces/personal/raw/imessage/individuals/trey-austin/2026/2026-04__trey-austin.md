@@ -99,9 +99,10 @@ attachments:
   sender: me
   sent_at: '2026-04-22T12:26:43.909000-05:00'
   sha256: 71a6a94c07760d42f9aeb5973942483e8a2cd4dcdd5d558262c8c744dd03e98a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Logic Pro session "weirdo" at 158 BPM with an iMessage overlay from
+    Shak Stzy.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:09.856488+00:00'
   source_available: true
 chat_message_guids_count: 14
 deleted_upstream: null

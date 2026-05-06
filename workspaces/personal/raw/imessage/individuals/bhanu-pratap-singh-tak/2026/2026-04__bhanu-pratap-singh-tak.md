@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-04-08T22:54:40.293267-05:00'
   sha256: 76f43d988ea5189dddac7cce8470a5f7f50436de22225414bb911b88ffd5fccc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men smile for a selfie; one wears a blue patterned shirt and a
+    'NEWMAN' lanyard.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:11.340690+00:00'
   source_available: true
 chat_message_guids_count: 3
 deleted_upstream: null

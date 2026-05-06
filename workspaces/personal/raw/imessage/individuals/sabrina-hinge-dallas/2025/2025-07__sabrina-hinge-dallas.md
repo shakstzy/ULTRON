@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-07-10T18:58:03.926528-05:00'
   sha256: 804fdaf46c412c31a6b1ed7ff95f2f3974c995e0dc534439f1a9c6b7227d7400
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Translation app screenshot showing 'kothai shekso???' translated to
+    'Where is the sex???'.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:31.432594+00:00'
   source_available: true
 chat_message_guids_count: 24
 deleted_upstream: null

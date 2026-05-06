@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-03-11T18:01:40.718877-05:00'
   sha256: 135538de2d904fd8c8e3dcdfa696f7628cf8e46a5536199ab02f032febbf3342
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man lip-syncs 'Gucci Bag' in a nighttime music video draft with green
+    lighting effects.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:37.139039+00:00'
   source_available: true
 - id: db6692fddaf86382
   filename: guccibagdraftsnopictureinpicture.MOV
@@ -33,9 +34,9 @@ attachments:
   sender: me
   sent_at: '2024-03-11T18:01:49.281717-05:00'
   sha256: ab4c741123f25f80be72ee91d41014037dfd6889f4d0c9f757d754b93ca12906
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Music video of a man rapping at night on a street with lyrics on screen.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:13.652801+00:00'
   source_available: true
 - id: 45af4678dcd4944e
   filename: guccibagdraftsslowcuts.MOV
@@ -44,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2024-03-11T18:01:57.399592-05:00'
   sha256: 918f515a780c23aa1f95610612602bfa7af19782abff39984f566ca7d6980ff1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man rapping on a dark suburban street at night with green lights and
+    lyric subtitles.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:34.949229+00:00'
   source_available: true
 - id: 9950cb1dc739ea6e
   filename: guccibagdraftwindows.MOV
@@ -55,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2024-03-11T18:02:07.788762-05:00'
   sha256: 4d61f0a79c93692910ac19bc1aec97fff92aa62a7fc68442943d9e68bd79ee87
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Music video of a man in a black cap and hoodie rapping on a dark residential
+    street.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:15.996302+00:00'
   source_available: true
 - id: b28e75163d0cab11
   filename: guccibagpaloalto.MOV

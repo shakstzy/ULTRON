@@ -33,9 +33,10 @@ attachments:
   sender: prabhat-nuthakki-uc-berkeley
   sent_at: '2024-10-22T13:49:03.566985-05:00'
   sha256: 7756142942b2fcfe79a6b4e6fa2b9231a5c64a651ed64e5c98e4f99582ab4c27
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a conversation with Jake regarding a friend's
+    recent hospital stay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:51.388096+00:00'
   source_available: true
 - id: 54e651fe6db627f1
   filename: IMG_3374.PNG
@@ -44,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2024-10-22T13:50:59.763249-05:00'
   sha256: 5f71cb48455ba9a3715fb3af2a6ea093b69ca8022e21ce9a7825476f20322883
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Find My map of Rushil Jha at Norwalk Hospital ER with a message from
+    Prabhat Nuthakki.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:58.587251+00:00'
   source_available: true
 chat_message_guids_count: 134
 deleted_upstream: null

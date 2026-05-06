@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-10-24T23:03:23.474000-05:00'
   sha256: 4ab3753fd1cf722289250411b99bbf789f892a51af744139eeb811b693d70270
-  description: null
-  description_model: null
-  extracted_at: null
+  description: YouTube thumbnail for Devang Jhabakh's journey from DPS Sharjah to
+    UC Berkeley.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:43.756785+00:00'
   source_available: true
 - id: b87f96e753ec0ffa
   filename: IMG_8961.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-10-24T23:03:33.116000-05:00'
   sha256: c5a3a0085987eeca26e8cb49ced4d60a9e645c9dfebb08fb26fdc1fd27326c8c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling man with glasses and a beard in a headshot cutout with a
+    white border.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:40.351403+00:00'
   source_available: true
 - id: 6b32826cd5a07fe9
   filename: IMG_1664.png
@@ -55,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2025-10-25T13:56:59.768703-05:00'
   sha256: af16e03a98c1b09b9fa45593bedb437654b8817a4a181bbf7d1222e804bfaf37
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Security alert screenshot showing a person on 'Sylmar 3rd Floor' with
+    motion snooze options.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:28:39.499408+00:00'
   source_available: true
 - id: f4c22aa1098030dc
   filename: IMG_6873.png
@@ -66,9 +69,10 @@ attachments:
   sender: me
   sent_at: '2025-10-31T11:06:48.300000-05:00'
   sha256: f9380f7b1e0d0eb8c61da9400ff62dbc43970a9e5dfbc8129054c16711ecc996
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Ashok Elluswamy's X post supporting Elon Musk's AI leadership and the
+    Tesla shareholder vote.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:14.000653+00:00'
   source_available: true
 - id: ec838045d3a599fb
   filename: IMG_5510.png
@@ -132,9 +136,10 @@ attachments:
   sender: me
   sent_at: '2025-10-31T13:32:17.325000-05:00'
   sha256: eaf570a58dfc96ed5ac778607a4027c01bdb0edcdf97949637e99b18c369f9f1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Stoke Space job application form for Adithya Kumar with a resume validation
+    error.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:18.971950+00:00'
   source_available: true
 - id: 32a80759e31906c0
   filename: IMG_7636.jpeg

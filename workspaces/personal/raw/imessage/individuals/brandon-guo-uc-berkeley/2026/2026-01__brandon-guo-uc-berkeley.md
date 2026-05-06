@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-01-27T21:00:23.811172-06:00'
   sha256: d143c91c21d64bcb498e39c63188fc81a8197c7aac0ed9e6911051612a9dc2be
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Code Competency Interview with Brandon Guo from 2:15 PM to 2:45 PM
+    PST.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:36.344253+00:00'
   source_available: true
 chat_message_guids_count: 3
 deleted_upstream: null

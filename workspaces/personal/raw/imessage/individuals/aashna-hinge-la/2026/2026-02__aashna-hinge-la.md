@@ -45,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2026-02-16T12:50:42.528000-06:00'
   sha256: 35ba2850d6673fc29482b4c245e976a8630af603b33a60a70d84b00098e42eff
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 4x4 grid of wooden question mark tiles with a play button overlay on
+    a green background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:26.769119+00:00'
   source_available: true
 - id: 0021cf95c6059206
   filename: ms-KdyAZF.jpeg
@@ -56,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2026-02-16T12:53:37.048000-06:00'
   sha256: 35ba2850d6673fc29482b4c245e976a8630af603b33a60a70d84b00098e42eff
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 4x4 grid of wooden question mark tiles with a play button overlay on
+    a green background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:27:26.769119+00:00'
   source_available: true
 - id: e10c8233c627f173
   filename: 41D00B46-29B8-4E61-9EBF-60EFA0894450.pluginPayloadAttachment

@@ -22,9 +22,10 @@ attachments:
   sender: prabhat-nuthakki-uc-berkeley
   sent_at: '2024-04-07T00:37:29.152045-05:00'
   sha256: c5f7012e6efb1ffd4bd3c93ea8d82c1c3e5f527a197ea05c8326fda9b3464331
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A WSOP.com poker hand rankings chart listing combinations from Royal
+    Flush to One Pair.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:03.345370+00:00'
   source_available: true
 chat_message_guids_count: 17
 deleted_upstream: null

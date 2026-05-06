@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-06T10:38:28.949025-06:00'
   sha256: 6de33225eb6a144f0b1bdd0192cff08b9e421fc4c7b14b77770ab40986f97235
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram Reel about J&J's FDA-approved ketamine spray and a comment
+    comparing it to 80s crack.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:26:21.634590+00:00'
   source_available: true
 - id: 366aebf52ebe1841
   filename: 327C4703-6D15-4817-A378-992E6B7C83A6.pluginPayloadAttachment
@@ -66,9 +67,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-03-09T18:23:59.714561-05:00'
   sha256: 5b967f62777ca03ce6e68b56165658a69fe442c99a8f005ad765b7dbb8054450
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Blurry low-angle photo of two men indoors with a white ceiling and
+    green panel.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:26:24.932062+00:00'
   source_available: true
 - id: 1adad9318bad5620
   filename: IMG_5821.HEIC
@@ -88,9 +90,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-03-09T18:24:26.409404-05:00'
   sha256: 02661cd6cc8d738cd005561f8a8fb68ba12c892d4d22c0c37b8277009a1b8b71
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iOS contact edit screen for Austin "AJ" Diggs (+1 562-599-9691), Miami
+    Heat agent.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:26:20.441937+00:00'
   source_available: true
 - id: c70c1f0a116a95a5
   filename: IMG_5823.png

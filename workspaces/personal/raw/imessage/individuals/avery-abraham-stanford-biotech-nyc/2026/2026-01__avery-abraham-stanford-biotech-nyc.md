@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2026-01-21T14:14:12.795653-06:00'
   sha256: 9254e3e4c5da7d8c16484fba35b7aedcc23ab9c5b703b97059c0ce0034264f37
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Promotional slide for Chava, a reproductive health platform for young
+    women in Latin America.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:26:02.615871+00:00'
   source_available: true
 - id: 2c84ae0d4661ec77
   filename: IMG_5792.png
@@ -77,9 +78,10 @@ attachments:
   sender: me
   sent_at: '2026-01-21T14:14:56.186182-06:00'
   sha256: 9286456c985e0fec71d9639c380d89de04cab15185e319f08d20cd8bbadfba97
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hopstair mental health app overview showing UI mockups and founder
+    Nadine Pfeifer.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:26:23.896417+00:00'
   source_available: true
 - id: d30bc65cac057bf9
   filename: Image-1.png

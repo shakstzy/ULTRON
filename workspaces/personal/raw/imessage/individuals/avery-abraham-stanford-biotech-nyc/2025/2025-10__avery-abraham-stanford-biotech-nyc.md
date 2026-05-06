@@ -139,9 +139,10 @@ attachments:
   sender: me
   sent_at: '2025-10-25T20:00:40.434954-05:00'
   sha256: 57cb277dd0f1834876be98d50edf0232a671340bfba4fc8159518b505164e2f5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Abraham Choi's follow-up emails sharing the Seedbox pitch deck and
+    Harvard research links.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:23:19.123266+00:00'
   source_available: true
 - id: 003a7b56014ce244
   filename: 78327502684__17158F19-1774-4C48-B130-88BE3CDF7CE2.HEIC
@@ -256,9 +257,10 @@ attachments:
   sender: me
   sent_at: '2025-10-27T23:58:09.338017-05:00'
   sha256: c9a9cce97bab955d6adb93e3effa39fdfdb910a9f771e8ad864869edf8d6e620
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Selfie of a man and woman in front of a large, ancient-style Buddhist
+    wall mural.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:22:36.757679+00:00'
   source_available: true
 - id: 17f93575919e7267
   filename: IMG_0402.JPG
@@ -325,9 +327,9 @@ attachments:
   sender: me
   sent_at: '2025-10-30T17:55:05.828000-05:00'
   sha256: f202591db2d47f78202137bc80e1551371a5cacc163d4516c5ecf9912fd01bd9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A gray humanoid robot crouches in a kitchen while loading an open dishwasher.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:22:51.720602+00:00'
   source_available: true
 - id: 1de37ca24df58f8c
   filename: IMG_7477.png
@@ -359,9 +361,10 @@ attachments:
   sender: me
   sent_at: '2025-10-30T18:03:42.718000-05:00'
   sha256: a78f2746521dc56a0304309c53da7613078bca83aa1ef00160c361ba138cd960
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Tweet by Jonathan Liu announcing a dating app launch with a cinematic
+    image of a couple kissing.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:23:33.611586+00:00'
   source_available: true
 - id: 1d9c50166d1cc3b1
   filename: IMG_1016.png
@@ -381,9 +384,11 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-10-31T02:48:10.885332-05:00'
   sha256: d71d934a03a873ea47daa686ba0e54a4538dfdfd730b69d73462a146ed236589
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a Seedbox Labs pitch deck for an at-home fertility and longevity
+    biomarker testing device. It covers their AI analysis platform, clinical validation,
+    and fundraising goals.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:23:11.469979+00:00'
   source_available: true
 - id: 45a267a88dbb3f38
   filename: Seedbox Labs Deck Extended Version.pdf
@@ -392,9 +397,11 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-10-31T09:40:25.664395-05:00'
   sha256: 9f3c2dfb603e10167cbefca20136e0e1269de418e1164b0e954caeb118f15054
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Seedbox Labs is an AI-powered at-home biomarker platform for male fertility
+    and longevity. It uses Harvard-developed tech to provide clinical-grade sperm
+    analysis for health tracking.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:22:38.035499+00:00'
   source_available: true
 - id: 228af8f5bebb475d
   filename: IMG_0633.png
@@ -403,9 +410,10 @@ attachments:
   sender: me
   sent_at: '2025-10-31T09:41:52.665000-05:00'
   sha256: d082ca84236c9512ec1934814745930349c72ea25474ec55107a80646caa07d1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Portrait of Bhaskar Ghosh wearing a blue button-down shirt against
+    a dark background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:22:47.818821+00:00'
   source_available: true
 - id: ddb3ca6cc17f489c
   filename: IMG_0844.png

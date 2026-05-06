@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2025-11-04T11:47:54.795000-06:00'
   sha256: 3cfedb2b28c1552d0f3e788cef8a4d35e987f92df3426a0132f9cd369faed054
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in white robe with cash stacks and $100 bills shaped like a woman
+    on a bed.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:23:10.574329+00:00'
   source_available: true
 - id: 828060cb329943cd
   filename: Seedbox At-Home Semen Analysis Spec.docx
@@ -66,9 +67,10 @@ attachments:
   sender: me
   sent_at: '2025-11-06T16:50:24.101866-06:00'
   sha256: bfca6476d7bc3bb3303e0365ce23e595c9f1471bbc2b62429f180e94887ff1ac
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Digital calendar view showing a dense daily schedule of color-coded
+    meetings for Adithya.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:23:44.796653+00:00'
   source_available: true
 - id: bba8f259633df91b
   filename: IMG_5221.png
@@ -88,9 +90,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-07T16:31:15.400271-06:00'
   sha256: 2f402e9d20b2ffb37303a8015ba4525728659150209329b8b06dee456a932ef1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat with Stephanie about Seedbox investment interest from
+    founder Justin Mares.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:24:25.324266+00:00'
   source_available: true
 - id: 647395e0cba99ed7
   filename: IMG_1055.PNG
@@ -135,9 +138,10 @@ attachments:
   sender: me
   sent_at: '2025-11-08T17:47:36.701007-06:00'
   sha256: 0dc2fa8c12584b5df6f07d545476bad515bb6760ce0d01aeba019ead4a5da360
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Seedbox Labs founders pitch an at-home male fertility tracking device
+    to Y Combinator.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:23:37.116549+00:00'
   source_available: true
 - id: 32431e7c2a8672d7
   filename: IMG_2100.png
@@ -226,9 +230,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-12T13:42:00.662266-06:00'
   sha256: 75a0fb703a765970b3ea8645ca388dac52882a1d240e0b67238a34ded5bad49c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram chat with Jeremy Gar about a Mystic Ventures Calendly link
+    and rescheduling.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:23:10.081278+00:00'
   source_available: true
 - id: 35a6ddb8abbda351
   filename: Hadi Call 11-12-25.docx
@@ -248,9 +253,11 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-12T15:58:43.166234-06:00'
   sha256: b8dae523ea7037e88a8a2963a7c45c3cf3ad798ee9876e6b5f2ed03c0b8d6abb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Seedbox Labs is an AI-powered at-home device for male fertility and
+    longevity biomarker testing. This pitch deck outlines its clinical technology,
+    market opportunity, and strategic roadmap.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:24:17.350023+00:00'
   source_available: true
 - id: cd68575962c9f3d9
   filename: PNG image.png
@@ -259,9 +266,9 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-12T15:59:49.616497-06:00'
   sha256: dc5818522fd082dcc095b9a991136c6ebca8b9f3531e13917bd6b17ef28b6e29
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a video call with a man in a black hoodie and white earbuds.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:22:55.071642+00:00'
   source_available: true
 - id: 4257ace203d2d103
   filename: Call with Jeremy Gardner and Mack - Mystic Ventures - 11-12-2025.docx
@@ -293,9 +300,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-12T22:52:27.245791-06:00'
   sha256: 6333876cc944142f25e790f4262b212c293fe5c98b41f5ab846a15e677e9eada
-  description: null
-  description_model: null
-  extracted_at: null
+  description: ChatGPT screenshot of an engineering spec for the Seedbox sperm analysis
+    hardware prototype.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:23:15.353414+00:00'
   source_available: true
 - id: d05a9115d3029bdc
   filename: PNG image.png
@@ -304,9 +312,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-12T23:17:56.703645-06:00'
   sha256: 892c1f1c7cff61c5174656651daa89a67814c2ad386835d5ce0274a0d535c58b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a Gmail inbox listing introduction emails from Stephanie
+    Oestreicher.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:24:38.305231+00:00'
   source_available: true
 - id: f23d53413d457c70
   filename: IMG_1258.PNG
@@ -315,9 +324,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-12T23:58:15.729681-06:00'
   sha256: 222570683637e368b72c480c79d39d178d4bf10c53264cf945f1caad2145232c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LinkedIn connection request from Bashar Alismail, M.D., M.B.A., a HealthTech
+    cofounder.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:23:00.584345+00:00'
   source_available: true
 - id: 9243f7b38c7ec0cd
   filename: PNG image.png
@@ -326,9 +336,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-13T00:23:58.708475-06:00'
   sha256: 42a81d450c1324b78ec1e744bb531cdb19a29bcfb0e64dd08863c148b4382850
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Text explaining retroactive DNA fragmentation index (DFI) computation
+    from saved image pixels.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:23:44.798856+00:00'
   source_available: true
 - id: 4b416c7ae0055809
   filename: Image-1.png
@@ -348,9 +359,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-13T11:35:32.247677-06:00'
   sha256: e398abf1cadf099f3857f3044292dd3b63f2f29a393dd181bb602be3f6b91ca1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Nordic Gamer meme illustration of a blonde bearded man in profile with
+    the text "Yes."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:23:38.417165+00:00'
   source_available: true
 - id: 8b22129aa73a1aaf
   filename: IMG_1280.MOV
@@ -370,9 +382,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-17T17:56:41.428112-06:00'
   sha256: e30f49efef35a4f22429ebfacf66e9191474391a45c452d118bcebfa1a7b1ea2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Comic comparing boss, leader, and introvert pulling carts to an introvert
+    driving an AI train.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:22:35.913468+00:00'
   source_available: true
 - id: 0237b9bbc99e63de
   filename: IMG_8204.png
@@ -405,9 +418,10 @@ attachments:
   sender: me
   sent_at: '2025-11-22T03:07:54.508729-06:00'
   sha256: 7fd18bd9ed3a1cc6ba4661917de871b8ca198fb58f00ad063f51c382fed82aa4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of an email from Avery Haskell discussing Bryan Johnson
+    and Andrew Schultz.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:24:20.218542+00:00'
   source_available: true
 - id: 1544a82939235a0c
   filename: PNG image.png
@@ -416,9 +430,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-23T11:40:09.734212-06:00'
   sha256: 442f0b7daa3e4e69868b9e36b11733e6c031c63d89660f4fedffcd3b1b9e24c5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Video call screenshot of Jonathan Anomaly presenting an embryo adult
+    IQ prediction chart.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:22:50.283187+00:00'
   source_available: true
 - id: 2d0196ed73d1fe60
   filename: PNG image.png
@@ -438,9 +453,10 @@ attachments:
   sender: me
   sent_at: '2025-11-23T18:50:32.915000-06:00'
   sha256: 146af15c7220a25d40b6c8ddcc32b9981bc735276c9b4d4b3442b7ce6db35e8b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage thread about removing Seedbox from social media and Nucleus
+    Genomics plagiarism.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:24:33.869695+00:00'
   source_available: true
 - id: 4193f2342be0a381
   filename: PNG image.png
@@ -449,9 +465,9 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-24T15:05:36.186272-06:00'
   sha256: 8ad6ebcb6e9d513f96daa4c4b74833767801bc346c4f5f8357d4ae1cef4336fa
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of Granola AI stating Josh might invest $1 to $1.5 million.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:23:42.289551+00:00'
   source_available: true
 - id: 517ecd19339c5c84
   filename: PNG image.png
@@ -482,9 +498,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-24T16:15:31.516872-06:00'
   sha256: 6e4d4e7d6dcb0c57d65acc70bfbcf1cc88ad529b42196a4324725156dab3f34d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Email from Avery Haskell to Josh Manchester about Seedbox Labs' sperm
+    health device and deck.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:23:54.187428+00:00'
   source_available: true
 - id: 1b6acfa5ad115ecd
   filename: IMG_1833.png
@@ -504,9 +521,11 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-25T14:38:40.731849-06:00'
   sha256: aed23c20116021e330d57dc326d05a58c960403883d0287aa0e4b2d447e7c6c8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This 2017 research article details a low-cost smartphone system for
+    point-of-care semen analysis. It uses microfluidics to screen for male infertility
+    with 98% accuracy in under five seconds.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:23:15.242111+00:00'
   source_available: true
 - id: 778bdb9a64b34f4e
   filename: Nature BME 2021-Main Manuscript.pdf
@@ -548,9 +567,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-28T08:37:03.864174-06:00'
   sha256: 231a9ab2b04b3e584c4656cb1ecdf85d31683358b0522309a1b584476578cde7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Labeled diagram of the internal components in a handheld microfluidic
+    diagnostic device.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:23:10.675306+00:00'
   source_available: true
 - id: c66b1811ac071e90
   filename: IMG_0030.png
@@ -559,9 +579,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-28T14:28:51.442321-06:00'
   sha256: bc667805022aaeab44a517fd18aa3b6c722ada05edc80c92beb17bcd1525aba3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Annotated cross-section showing internal components of a handheld microfluidic
+    device.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:23:30.525124+00:00'
   source_available: true
 - id: f8cb7b2dd881f505
   filename: Cloud AI Microscopy Spec Revision.pdf

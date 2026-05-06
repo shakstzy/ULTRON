@@ -45,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2025-12-01T01:39:09.416119-06:00'
   sha256: cdc36aa620f60b5f1fd5b1ac55df627356420ede61af6fe582041086cd08760f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A hand holding an exposed circuit board with a fan inside a car, wired
+    to the rearview mirror.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:23:19.202958+00:00'
   source_available: true
 - id: 07b22848c93cbede
   filename: Picture6.png
@@ -56,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2025-12-01T01:39:09.416119-06:00'
   sha256: c4b1163698acac3eea980f4a1c09171a15e7b04330dc5e83bba2fddac98b9008
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Circuit and schematic diagrams for an Arduino MKR1000 with GPS and
+    pulse oximeter.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:23:15.451481+00:00'
   source_available: true
 - id: 6527a6ee31e2c6a6
   filename: IMG_2050.png
@@ -79,9 +81,10 @@ attachments:
   sender: me
   sent_at: '2025-12-03T10:23:49.461000-06:00'
   sha256: f5757da1e45bf413d2e54f43164049c72ac3c909f4df56adddabf465c3e1d4a1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "Bryan Johnson stands between a man with a lanyard and a man in an\
+    \ \"I \u2764\uFE0F BANGKOK\" shirt."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:23:24.476115+00:00'
   source_available: true
 - id: 061710bab999dae1
   filename: gemini_generated_video_905401DA.mov
@@ -170,9 +173,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-12-08T14:39:08.316563-06:00'
   sha256: 11515429f90acb71408d0ba260f7431dc8cde820f6fab375af7bbc2b7dbe664e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Adithya Kumar's "Let's Ask ChatGPT Before We Think" award from Granola
+    Crunched 2025.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:24:06.879828+00:00'
   source_available: true
 - id: 0c1a8bc54bdc0fa8
   filename: PNG image.png
@@ -181,9 +185,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-12-08T14:43:56.316948-06:00'
   sha256: 82b4092931a254bada59335deb7e0243f611251a40c50ac45a6edc296b776720
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat with Jeremy about a $5M cap close, SAFE signatures, and
+    $50k in funding.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:24:13.747286+00:00'
   source_available: true
 - id: f4aede6a21feb247
   filename: PNG image.png
@@ -203,9 +208,11 @@ attachments:
   sender: me
   sent_at: '2025-12-09T00:12:38.703836-06:00'
   sha256: 1a3a62ecd92425653bbbf93594b2a88265c2282fb89874f2ee69d0f24c72a3f9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This science fair data book documents a project for non-invasive skin
+    cancer detection. It uses Raman spectroscopy and deep learning to classify tissue
+    samples with high accuracy.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:23:53.240418+00:00'
   source_available: true
 - id: 511595b24960e0a7
   filename: Science Fair Board 2023 - TO PRINT.pdf
@@ -309,9 +316,10 @@ attachments:
   sender: me
   sent_at: '2025-12-09T00:19:48.409025-06:00'
   sha256: e54dbbb157c3e35f6106687f620962eaba8e3899f298b0d11927440ff4351204
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Group photo on stage at the Texas State Science and Engineering Fair
+    hosted at UTSA.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:23:41.343043+00:00'
   source_available: true
 - id: 59db79347df596a4
   filename: IMG_4813.PNG
@@ -320,9 +328,10 @@ attachments:
   sender: me
   sent_at: '2025-12-09T12:58:46.876023-06:00'
   sha256: 9d691ca9a5afc39d7bed13582679f54b6ade62e67bb14992a4c7e8599492bbc4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of the Dropbox Sign signature submission confirmation
+    page.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:23:03.314504+00:00'
   source_available: true
 - id: fd9bba1963bafc4e
   filename: IMG_6065.png
@@ -331,9 +340,10 @@ attachments:
   sender: me
   sent_at: '2025-12-09T15:49:47.814000-06:00'
   sha256: 127a636843fff72871a837342f3f31dfc8d59188a9a3fbd5185ad2b0d20a6156
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Signature submission confirmation showing two hands of different skin
+    tones high-fiving.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:24:41.271720+00:00'
   source_available: true
 - id: a9d891f36b833a7d
   filename: PNG image.png
@@ -342,9 +352,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-12-12T17:25:39.357047-06:00'
   sha256: 71b6bf6002bf164a5a61366f055be7af2a5b5e283bc9c00cca23c00cf3bf5166
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Gmail thread screenshot about a $20k Seedbox Labs investment and wire
+    transfer.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:24:15.468081+00:00'
   source_available: true
 - id: 19474c29209f25bb
   filename: PNG image.png

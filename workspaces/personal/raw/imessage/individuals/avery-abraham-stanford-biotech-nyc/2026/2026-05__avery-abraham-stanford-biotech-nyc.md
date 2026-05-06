@@ -231,9 +231,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-05-02T08:23:24.344549-05:00'
   sha256: a994eb569d5b9a3a84bcb5759b6f9a9c81e032e0da9d7d6729d8b4014e3ab531
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram post showing Jensen Huang in his iconic black leather jacket
+    with two men.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:26:01.136948+00:00'
   source_available: true
 - id: 90040d61d0b99f6e
   filename: "Screenshot 2026-05-02 at 9.31.03\u202FAM.png"

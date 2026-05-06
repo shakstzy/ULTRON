@@ -22,6 +22,7 @@ from __future__ import annotations
 import base64
 import json
 import os
+import pty
 import shutil
 import signal
 import subprocess
@@ -72,16 +73,21 @@ def main():
     print("=== backing up current oauth_creds.json (if any) ===")
     backup_creds()
 
-    print("=== launching gemini interactive — browser will open ===")
+    print("=== launching gemini interactive (with pty) — browser will open ===")
     print(">>> CLICK THROUGH the Google login in the browser when it appears <<<")
     print()
+    # gemini interactive requires a TTY. Allocate a pty so the CLI keeps
+    # running while we poll for creds out-of-band.
+    master_fd, slave_fd = pty.openpty()
     proc = subprocess.Popen(
         ["gemini"],
-        stdin=subprocess.DEVNULL,
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
+        stdin=slave_fd,
+        stdout=slave_fd,
+        stderr=slave_fd,
         start_new_session=True,
+        close_fds=True,
     )
+    os.close(slave_fd)  # parent keeps master_fd to keep pty alive
 
     new_email = None
     waited = 0.0
@@ -105,7 +111,7 @@ def main():
             print("!!! timed out waiting for browser auth (or unparseable creds)")
             return 2
     finally:
-        # Kill gemini subprocess
+        # Kill gemini subprocess and close the pty
         try:
             os.killpg(os.getpgid(proc.pid), signal.SIGTERM)
         except (ProcessLookupError, OSError):
@@ -117,6 +123,10 @@ def main():
                 os.killpg(os.getpgid(proc.pid), signal.SIGKILL)
             except (ProcessLookupError, OSError):
                 pass
+        try:
+            os.close(master_fd)
+        except OSError:
+            pass
 
     # Save the new account
     dest = ACCOUNTS_DIR / f"{new_email}.json"

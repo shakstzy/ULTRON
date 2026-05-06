@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "rishika_uc_berkeley", "target": "uc_berkeley", "relation": "studies_at", "confidence": "EXTRACTED", "confidence_score": 0.9, "source_file": "raw/imessage/groups/xx/2025/2025-04__xx.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

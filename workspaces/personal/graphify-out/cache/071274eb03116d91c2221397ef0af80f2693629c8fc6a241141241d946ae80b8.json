@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "ryan_ut_austin", "target": "synps", "relation": "discussed_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/individuals/ryan-ut-austin/2025/2025-10__ryan-ut-austin.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

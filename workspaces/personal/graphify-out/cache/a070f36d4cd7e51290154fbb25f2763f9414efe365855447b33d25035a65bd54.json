@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "adithya", "target": "ankit_rish_friend", "relation": "messages_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/_profiles/ankit-rish-friend.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

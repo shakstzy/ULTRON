@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "saif_ali_nyc", "target": "adithya", "relation": "messages_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/individuals/saif-ali-nyc/2024/2024-03__saif-ali-nyc.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

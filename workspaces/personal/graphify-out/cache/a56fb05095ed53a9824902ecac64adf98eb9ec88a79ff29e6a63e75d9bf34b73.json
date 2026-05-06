@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "amadeus_renter", "target": "forex_trading", "relation": "discussed_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/individuals/amadeus-renter/2024/2024-10__amadeus-renter.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

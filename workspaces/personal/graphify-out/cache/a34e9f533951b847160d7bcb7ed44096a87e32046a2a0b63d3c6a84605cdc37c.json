@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "jake", "target": "adithya", "relation": "messages_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/groups/group-jake-noah-sam/2026/2026-05__group-jake-noah-sam.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

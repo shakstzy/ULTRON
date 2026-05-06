@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "rushil_jha", "target": "saif_ali", "relation": "discussed_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/_profiles/group-group-rushil-saif.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

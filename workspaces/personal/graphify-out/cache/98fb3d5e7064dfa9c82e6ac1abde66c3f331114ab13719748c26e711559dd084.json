@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "nathan_prabhat", "target": "adithya", "relation": "messages_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/individuals/nathan-prabhat-uc-berkeley/2025/2025-02__nathan-prabhat-uc-berkeley.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

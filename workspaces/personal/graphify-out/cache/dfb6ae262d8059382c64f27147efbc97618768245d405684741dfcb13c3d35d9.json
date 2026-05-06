@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [], "hyperedges": [{"id": "he_berkeley_crew", "label": "UC Berkeley friend group", "members": ["adithya", "prabhat_nuthakki", "pseuhas", "rushil_jha"], "relation": "co_attended", "source_file": "raw/imessage/individuals/prabhat-nuthakki-uc-berkeley/2024/2024-05__prabhat-nuthakki-uc-berkeley.md", "confidence": "INFERRED", "confidence_score": 0.85}]}

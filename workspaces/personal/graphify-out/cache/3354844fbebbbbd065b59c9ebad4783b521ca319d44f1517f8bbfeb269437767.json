@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "rad_nfvnetwork", "target": "adithya", "relation": "messages_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/_profiles/rad-nfvnetwork.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

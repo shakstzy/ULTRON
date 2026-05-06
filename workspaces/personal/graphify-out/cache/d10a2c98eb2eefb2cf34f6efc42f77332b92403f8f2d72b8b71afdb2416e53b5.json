@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "shiv_nagamandla", "target": "adithya", "relation": "messages_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/_profiles/shiv-nagamandla.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

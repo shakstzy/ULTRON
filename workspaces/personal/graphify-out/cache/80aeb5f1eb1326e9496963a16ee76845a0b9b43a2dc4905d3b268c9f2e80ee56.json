@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "zander_middle_school", "target": "adithya", "relation": "messages_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/_profiles/zander-middle-school.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

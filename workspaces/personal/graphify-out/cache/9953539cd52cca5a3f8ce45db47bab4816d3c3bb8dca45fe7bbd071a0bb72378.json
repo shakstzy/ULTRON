@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "alex_duckworth_crypto", "target": "forex_trading", "relation": "discussed_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/individuals/alex-duckworth-crypto/2024/2024-12__alex-duckworth-crypto.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

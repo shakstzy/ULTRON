@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "carlos_mychal_kendrick_nyc_mets", "target": "adithya", "relation": "messages_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/_profiles/carlos-mychal-kendrick-nyc-mets.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

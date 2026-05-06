@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "adithya", "target": "synapse", "relation": "related_to", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/individuals/david-bloom-the-house-fund/2026/2026-01__david-bloom-the-house-fund.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

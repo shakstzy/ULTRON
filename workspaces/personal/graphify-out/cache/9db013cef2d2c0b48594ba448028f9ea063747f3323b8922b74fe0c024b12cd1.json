@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "steve_renter_showing", "target": "adithya", "relation": "messages_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/_profiles/steve-renter-showing.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

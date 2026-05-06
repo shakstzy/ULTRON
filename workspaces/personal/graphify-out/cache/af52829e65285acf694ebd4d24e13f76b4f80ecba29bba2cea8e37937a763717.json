@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "avery_abraham", "target": "adithya", "relation": "messages_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/groups/group-avery-2/2026/2026-04__group-avery-2.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

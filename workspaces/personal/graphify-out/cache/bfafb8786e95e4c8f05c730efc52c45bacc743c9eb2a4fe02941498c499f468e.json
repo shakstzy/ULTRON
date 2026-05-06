@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "filip_evan_friend", "target": "adithya", "relation": "messages_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/_profiles/group-group-evan-filip.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

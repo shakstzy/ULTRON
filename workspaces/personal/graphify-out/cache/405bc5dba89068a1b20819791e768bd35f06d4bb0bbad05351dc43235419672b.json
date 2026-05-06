@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "adithya", "target": "adrian_roomate_uc_berkeley", "relation": "discussed_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/individuals/adrian-roomate-uc-berkeley/2024/2024-10__adrian-roomate-uc-berkeley.md", "source_location": null, "weight": 0.8}], "hyperedges": []}

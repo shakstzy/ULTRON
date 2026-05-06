@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "louie_gomez", "target": "lourdiz_producer_la", "relation": "discussed_with", "confidence": "INFERRED", "confidence_score": 0.7, "source_file": "raw/imessage/individuals/lourdiz-producer-la/2025/2025-08__lourdiz-producer-la.md", "source_location": null, "weight": 0.7}], "hyperedges": []}

@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "cris_renter", "target": "adithya", "relation": "discussed_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/individuals/cris-renter/2024/2024-12__cris-renter.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

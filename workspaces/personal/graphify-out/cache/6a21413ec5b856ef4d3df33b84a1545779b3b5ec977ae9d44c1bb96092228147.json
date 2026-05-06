@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "ankit_uc_berkeley", "target": "adithya", "relation": "messages_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/individuals/ankit-uc-berkeley/2024/2024-10__ankit-uc-berkeley.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

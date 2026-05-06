@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "pari_uncle", "target": "adithya", "relation": "discussed_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/individuals/pari-uncle/2025/2025-11__pari-uncle.md", "source_location": null, "weight": 0.8}], "hyperedges": []}

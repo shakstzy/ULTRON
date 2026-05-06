@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "adithya", "target": "will_avery_crypto", "relation": "messages_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/groups/group-will/2026/2026-02__group-will.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

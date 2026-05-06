@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "daniel_kim_uc_berkeley", "target": "adithya", "relation": "messages_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/individuals/daniel-kim-uc-berkeley/2025/2025-03__daniel-kim-uc-berkeley.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

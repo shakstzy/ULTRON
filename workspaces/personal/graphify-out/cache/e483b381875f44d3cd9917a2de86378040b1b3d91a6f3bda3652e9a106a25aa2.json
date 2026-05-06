@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "dimpal_aarti", "target": "adithya", "relation": "messages_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/individuals/dimpal-aarti/2025/2025-12__dimpal-aarti.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

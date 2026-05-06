@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "rio_root_la", "target": "adithya", "relation": "messages_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/individuals/rio-root-la/2024/2024-04__rio-root-la.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

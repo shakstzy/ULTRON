@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "mychal_kendricks", "target": "adithya", "relation": "messages_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/individuals/mychal-kendricks-malik-crypto-nfl-producer-la/2025/2025-07__mychal-kendricks-malik-crypto-nfl-producer-la.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

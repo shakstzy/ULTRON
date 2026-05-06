@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "stacey_brandon", "target": "adithya", "relation": "messages_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/individuals/stacey-brandon/2024/2024-03__stacey-brandon.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

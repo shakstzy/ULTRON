@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "adithya", "target": "outerscope", "relation": "works_at", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/individuals/gio-octane/2025/2025-09__gio-octane.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

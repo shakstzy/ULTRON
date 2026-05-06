@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "ryan_ogren", "target": "mychal_kendricks", "relation": "co_attended", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/_profiles/group-group-caitlin-mychal-ryan.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

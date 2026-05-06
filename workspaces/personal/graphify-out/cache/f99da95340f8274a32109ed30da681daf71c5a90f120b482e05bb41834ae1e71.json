@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "sam_mcgrath_la", "target": "adithya", "relation": "discussed_with", "confidence": "INFERRED", "confidence_score": 0.8, "source_file": "raw/imessage/individuals/sam-mcgrath-la/2024/2024-11__sam-mcgrath-la.md", "source_location": null, "weight": 0.8}], "hyperedges": []}

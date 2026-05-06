@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "mom", "target": "adithya", "relation": "messages_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/individuals/mom/2024/2024-03__mom.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

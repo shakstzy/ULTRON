@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "john_renter", "target": "klein_ct_property", "relation": "related_to", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/groups/group-dad-john-mom/2026/2026-02__group-dad-john-mom.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

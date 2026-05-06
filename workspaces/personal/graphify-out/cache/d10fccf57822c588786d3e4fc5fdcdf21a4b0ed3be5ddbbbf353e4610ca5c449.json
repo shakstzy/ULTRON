@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "edwin_gregory", "target": "adithya", "relation": "messages_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/individuals/edwin-gregory-uc-berkeley/2024/2024-05__edwin-gregory-uc-berkeley.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

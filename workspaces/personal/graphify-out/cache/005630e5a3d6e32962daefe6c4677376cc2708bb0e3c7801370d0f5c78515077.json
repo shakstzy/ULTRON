@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "adithya", "target": "anthony_realtor", "relation": "messages_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/groups/group-anthony-dad-mom/2024/2024-11__group-anthony-dad-mom.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

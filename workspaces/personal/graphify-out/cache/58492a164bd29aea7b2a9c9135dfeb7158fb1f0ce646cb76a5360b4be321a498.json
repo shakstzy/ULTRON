@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "adithya", "target": "aleena_hinge_austin", "relation": "messages_with", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/_profiles/aleena-hinge-austin.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "jeanetta_renter", "target": "klein_court_property", "relation": "related_to", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/individuals/jeanetta-renter-showing/2025/2025-08__jeanetta-renter-showing.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

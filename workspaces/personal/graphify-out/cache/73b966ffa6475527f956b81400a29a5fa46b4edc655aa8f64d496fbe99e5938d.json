@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "adithya", "target": "austin_tx", "relation": "mentioned_by", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "raw/imessage/individuals/rushil-jha-uc-berkeley-nyc/2025/2025-07__rushil-jha-uc-berkeley-nyc.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

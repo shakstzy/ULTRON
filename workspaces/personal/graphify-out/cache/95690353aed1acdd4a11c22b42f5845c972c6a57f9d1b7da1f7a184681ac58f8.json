@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [], "hyperedges": [{"id": "la_friend_group_filip_evan", "label": "LA social circle: Adithya, Evan, Filip", "members": ["adithya", "evan_renter", "filip_evan_friend"], "relation": "co_attended", "source_file": "raw/imessage/individuals/filip-evan-friend/2025/2025-08__filip-evan-friend.md", "source_location": null, "weight": 1.0}]}

@@ -61,19 +61,14 @@ After all answers collected, populate the workspace from the `_template/` skelet
 
 If Q2 = b (no wiki), skip schema/learnings/wiki/ entirely.
 
-## Plist generation
+## Schedule declaration
 
-After workspace files are written, generate plists at `_shell/plists/`:
+After workspace files are written, populate `workspaces/<new-ws>/config/schedule.yaml` from the Q7 answers. Use the eclipse / personal / health / finance schedule.yaml files as the canonical shape (`sources:` + `workspace_jobs:` + cron strings). Per-source crons that ingest per-account (gmail, drive) must list `accounts:`. The `schedule` skill compiles all schedule.yaml files into plists at `_shell/plists/`.
 
-- `com.adithya.ultron.ingest-<ws>.plist` (per Q7 ingest time)
-- `com.adithya.ultron.lint-<ws>.plist` (per Q7 lint time)
-
-Stagger ingests by 5 minutes if multiple workspaces are bootstrapped in sequence.
-
-DO NOT auto-load. Tell Adithya the load command:
+DO NOT auto-compile or auto-load. Tell Adithya:
 ```
-ln -sf ~/ULTRON/_shell/plists/com.adithya.ultron.ingest-<ws>.plist ~/Library/LaunchAgents/
-launchctl load ~/Library/LaunchAgents/com.adithya.ultron.ingest-<ws>.plist
+/schedule compile           # regenerates plists from schedule.yaml
+/schedule load <name>       # explicit load after review (chat confirmation)
 ```
 
 ## Validation

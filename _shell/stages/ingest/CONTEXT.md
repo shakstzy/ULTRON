@@ -35,7 +35,7 @@ def route(item: dict, all_sources_yaml: dict) -> list[str]:
 ```
 
 ## Invocation
-`run-stage.sh ingest <workspace>` (per-workspace dispatcher) OR `run-stage.sh ingest <source> <account>` (per-account dispatcher; fans to all subscribed workspaces). The schedule skill currently emits the per-(source,account) form.
+`run-stage.sh ingest <workspace>` (per-workspace dispatcher) OR `run-stage.sh ingest-source <source> <account>` (per-account dispatcher; fans to all subscribed workspaces). The schedule skill emits the per-(source,account) form.
 
 ## Idempotency
 Yes. Re-running consumes nothing already in `ingested.jsonl` by `(source, key)`. Same-key + same-content_hash = skip. Same-key + different content_hash = overwrite at the deterministic path.

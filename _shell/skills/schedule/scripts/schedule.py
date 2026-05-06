@@ -79,8 +79,7 @@ def render_plist_dict(job: dict) -> dict:
     cmd = (
         f"flock -n /tmp/{shlex.quote(label)}.lock "
         f"{shlex.quote(str(ULTRON_ROOT))}/_shell/bin/run-stage.sh "
-        f"{args_quoted} "
-        f">> {shlex.quote(str(ULTRON_ROOT))}/_logs/{shlex.quote(label)}.log 2>&1"
+        f"{args_quoted}"
     )
     intervals = cron_to_intervals(job["cron"])
 

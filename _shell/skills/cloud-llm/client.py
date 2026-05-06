@@ -1,15 +1,10 @@
-"""Cloud LLM dispatcher (Python). Mirrors scripts/cycle.mjs.
+"""Cloud LLM dispatcher.
 
-Default engine: Gemini Pro vision via the `gemini` CLI, cycling 3 cached accounts.
-On quota errors: rotate creds; on all gemini exhausted: fall through to `claude -p`
-with sonnet.
-
-Consumers (instagram-summary, future) import this instead of duplicating the
-CLI invocation + retry logic.
+Gemini Pro/Flash via the `gemini` CLI, cycling cached accounts on 429.
+Falls through to `claude -p sonnet` when all Gemini accounts are exhausted.
 """
 from __future__ import annotations
 
-import os
 import re
 import shutil
 import subprocess

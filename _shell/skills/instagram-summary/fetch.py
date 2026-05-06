@@ -19,7 +19,7 @@ from instaloader import Instaloader, Post
 from instaloader.exceptions import InstaloaderException, LoginRequiredException
 
 # Cloud LLM dispatch lives in the cloud-llm skill so providers/models change in one place.
-sys.path.insert(0, "/Users/shakstzy/QUANTUM/_core/skills/cloud-llm")
+sys.path.insert(0, "/Users/shakstzy/ULTRON/_shell/skills/cloud-llm")
 from client import describe_images, CloudLLMUnreachable
 
 SHORTCODE_RE = re.compile(
@@ -50,7 +50,7 @@ def fetch_post(url: str) -> dict:
     try:
         post = Post.from_shortcode(L.context, shortcode(url))
     except LoginRequiredException:
-        return {"error": "LoginRequired: run `~/.quantum/instagram-summary/.venv/bin/instaloader --login=<username>` once."}
+        return {"error": "LoginRequired: run `~/.ultron/instagram-summary/.venv/bin/instaloader --login=<username>` once."}
     except InstaloaderException as e:
         return {"error": f"{type(e).__name__}: {e}"}
     return {"post": post}
@@ -142,8 +142,7 @@ def transcribe(audio: Path) -> str:
 def analyze_visual(images: list[Path], caption: str, kind: str, transcript: str = "") -> str:
     """Vision+text synthesis delegated to the shared cloud-llm skill.
 
-    Engine cycle (URL, models, accounts) lives in `_core/skills/cloud-llm/client.py`:
-    gemini Pro across cached accounts → gemini Flash → claude -p sonnet.
+    Engine cycle lives in `~/ULTRON/_shell/skills/cloud-llm/client.py`.
     """
     visual_desc = "frames sampled across the reel" if kind == "reel" else "images from the post"
     audio_line = f"AUDIO TRANSCRIPT: {transcript or '(no speech)'}\n\n" if kind == "reel" else ""

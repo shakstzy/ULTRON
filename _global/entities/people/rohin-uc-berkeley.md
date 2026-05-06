@@ -1,0 +1,32 @@
+---
+source: apple-contacts
+workspace: _global
+ingested_at: 2026-05-06T22:18:21.371463+00:00
+ingest_version: 1
+content_hash: blake2b:bb63afe894bdc4b65d25a61a94742ce5
+provider_modified_at: 2026-05-06T22:18:21.371463+00:00
+
+title: Rohin UC Berkeley
+slug: rohin-uc-berkeley
+type: person
+canonical_uri: lifeos:_global/entities/people/rohin-uc-berkeley
+aliases: []
+identifiers:
+  email: []
+  phone: ["+18584420098"]
+  slack: []
+last_synced: 2026-05-06T22:18:21.371463+00:00
+global: true
+---
+
+# Rohin UC Berkeley
+
+## Notes
+
+(populated by user / wiki agent)
+
+## Backlinks
+
+<!-- AUTO-GENERATED-BACKLINKS — do not edit manually -->
+
+- (no workspace pages reference this entity)

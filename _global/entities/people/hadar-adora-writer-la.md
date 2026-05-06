@@ -1,0 +1,32 @@
+---
+source: apple-contacts
+workspace: _global
+ingested_at: 2026-05-06T22:18:21.382419+00:00
+ingest_version: 1
+content_hash: blake2b:ff03fb78aa32759a044bfb83c17836c8
+provider_modified_at: 2026-05-06T22:18:21.382419+00:00
+
+title: Hadar Adora Writer LA
+slug: hadar-adora-writer-la
+type: person
+canonical_uri: lifeos:_global/entities/people/hadar-adora-writer-la
+aliases: []
+identifiers:
+  email: []
+  phone: ["+19177053513"]
+  slack: []
+last_synced: 2026-05-06T22:18:21.382419+00:00
+global: true
+---
+
+# Hadar Adora Writer LA
+
+## Notes
+
+(populated by user / wiki agent)
+
+## Backlinks
+
+<!-- AUTO-GENERATED-BACKLINKS — do not edit manually -->
+
+- (no workspace pages reference this entity)

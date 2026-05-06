@@ -240,7 +240,7 @@ case "$STAGE" in
     claude_invoke "" "$RUN_DIR/output/result.json" "$RUN_DIR/output/stderr.log" || EC=$?
     ;;
   apple-contacts-sync)
-    python3 "$ULTRON_ROOT/_shell/skills/contacts-sync/scripts/sync.py" \
+    "$ULTRON_ROOT/.venv/bin/python3" "$ULTRON_ROOT/_shell/skills/contacts-sync/scripts/sync.py" \
       > "$RUN_DIR/output/contacts-sync.log" 2>&1 || EC=$?
     ;;
   ledger-compact)

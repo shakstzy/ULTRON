@@ -1,0 +1,32 @@
+---
+source: apple-contacts
+workspace: _global
+ingested_at: 2026-05-06T22:18:21.332757+00:00
+ingest_version: 1
+content_hash: blake2b:6b413eebfc7288d475fb18eb872093e4
+provider_modified_at: 2026-05-06T22:18:21.332757+00:00
+
+title: Jaxxy Producer LA
+slug: jaxxy-producer-la
+type: person
+canonical_uri: lifeos:_global/entities/people/jaxxy-producer-la
+aliases: []
+identifiers:
+  email: []
+  phone: ["+18186127688"]
+  slack: []
+last_synced: 2026-05-06T22:18:21.332757+00:00
+global: true
+---
+
+# Jaxxy Producer LA
+
+## Notes
+
+(populated by user / wiki agent)
+
+## Backlinks
+
+<!-- AUTO-GENERATED-BACKLINKS — do not edit manually -->
+
+- (no workspace pages reference this entity)

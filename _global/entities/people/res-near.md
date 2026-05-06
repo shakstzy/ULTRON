@@ -1,0 +1,32 @@
+---
+source: apple-contacts
+workspace: _global
+ingested_at: 2026-05-06T22:18:21.430763+00:00
+ingest_version: 1
+content_hash: blake2b:bb21bd386aae9b0b1442df4b235a774b
+provider_modified_at: 2026-05-06T22:18:21.430763+00:00
+
+title: Res | NEAR
+slug: res-near
+type: person
+canonical_uri: lifeos:_global/entities/people/res-near
+aliases: []
+identifiers:
+  email: []
+  phone: []
+  slack: []
+last_synced: 2026-05-06T22:18:21.430763+00:00
+global: true
+---
+
+# Res | NEAR
+
+## Notes
+
+(populated by user / wiki agent)
+
+## Backlinks
+
+<!-- AUTO-GENERATED-BACKLINKS — do not edit manually -->
+
+- (no workspace pages reference this entity)

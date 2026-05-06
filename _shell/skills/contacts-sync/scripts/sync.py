@@ -114,33 +114,62 @@ end listToJson
 
 
 def query_contacts() -> list[dict] | None:
-    """Returns list of contact dicts or None on permission failure."""
+    """Returns list of contact dicts or None on permission failure.
+
+    Uses the macOS Contacts framework via pyobjc — same approach as
+    `ingest-imessage-oneshot.py`. The previous AppleScript-based reader
+    failed with a parser error on this machine.
+    """
     try:
-        result = subprocess.run(
-            ["osascript", "-e", APPLESCRIPT],
-            capture_output=True, text=True, timeout=120,
+        from Contacts import (  # type: ignore
+            CNContactStore, CNContactFetchRequest,
+            CNContactGivenNameKey, CNContactFamilyNameKey,
+            CNContactNicknameKey, CNContactOrganizationNameKey,
+            CNContactPhoneNumbersKey, CNContactEmailAddressesKey,
         )
-    except (FileNotFoundError, subprocess.TimeoutExpired) as e:
-        sys.stderr.write(f"contacts-sync: osascript unavailable: {e}\n")
+    except ImportError as e:
+        sys.stderr.write(f"contacts-sync: Contacts framework unavailable: {e}\n")
         return None
 
-    if result.returncode != 0:
-        sys.stderr.write(f"contacts-sync: osascript failed: {result.stderr.strip()}\n")
-        return None
-
-    out = result.stdout.strip()
-    if not out:
-        return []
+    store = CNContactStore.alloc().init()
+    keys = [CNContactGivenNameKey, CNContactFamilyNameKey, CNContactNicknameKey,
+            CNContactOrganizationNameKey, CNContactPhoneNumbersKey,
+            CNContactEmailAddressesKey]
+    req = CNContactFetchRequest.alloc().initWithKeysToFetch_(keys)
 
     entries: list[dict] = []
-    for line in out.splitlines():
-        line = line.strip()
-        if not line:
-            continue
-        try:
-            entries.append(json.loads(line))
-        except json.JSONDecodeError:
-            sys.stderr.write(f"contacts-sync: failed to parse contact entry: {line[:80]}\n")
+
+    def cb(contact, stop):
+        given = (contact.givenName() or "").strip()
+        family = (contact.familyName() or "").strip()
+        nick = (contact.nickname() or "").strip()
+        org = (contact.organizationName() or "").strip()
+        name = (given + " " + family).strip() or nick or org
+        emails = []
+        for e in contact.emailAddresses():
+            v = str(e.value() or "").strip()
+            if v:
+                emails.append(v)
+        phones = []
+        for p in contact.phoneNumbers():
+            v = (p.value().stringValue() or "").strip()
+            if v:
+                phones.append(v)
+        if not name and not emails and not phones:
+            return
+        entries.append({
+            "name": name,
+            "emails": emails,
+            "phones": phones,
+            "modified": "",
+        })
+
+    try:
+        store.enumerateContactsWithFetchRequest_error_usingBlock_(req, None, cb)
+    except Exception as e:
+        sys.stderr.write(f"contacts-sync: Contacts enumeration failed: {e}\n")
+        return None
+
     return entries
 
 

@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6595615bb2ce8c7f",
+        "id": "61cb67bd3abaa7db",
         "type": "tabs",
         "children": [
           {
-            "id": "72b3239f716e64eb",
+            "id": "e87cee8eec30a04b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Rishika (UC Berkeley).md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Rishika (UC Berkeley)"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Rishika (UC Berkeley).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Rishika (UC Berkeley)"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Rishika (UC Berkeley).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Rishika (UC Berkeley)"
             }
           },
           {
@@ -150,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Rishika (UC Berkeley).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Rishika (UC Berkeley)"
             }
           }
         ]
@@ -176,8 +183,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "72b3239f716e64eb",
+  "active": "e87cee8eec30a04b",
   "lastOpenFiles": [
+    "Samara (Hinge, SDSunnyvale).md",
     "_COMMUNITY_Dating Roster (mixed).md"
   ]
 }

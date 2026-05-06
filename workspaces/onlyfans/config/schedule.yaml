@@ -1,0 +1,20 @@
+# <workspace> — declared launchd cadence
+
+workspace: <workspace-slug>
+
+jobs:
+  - name: ingest-<workspace>
+    stage: ingest
+    schedule:
+      hour: 2
+      minute: 30
+    plist_label: com.adithya.ultron.ingest-<workspace>
+
+  - name: lint-<workspace>
+    stage: lint
+    schedule:
+      hour: 4
+      minute: 0
+    plist_label: com.adithya.ultron.lint-<workspace>
+
+# audit and weekly-review are global (cross-workspace), declared in _shell/plists/

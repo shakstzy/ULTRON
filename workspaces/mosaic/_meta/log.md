@@ -1,4 +1,4 @@
-# <Workspace> Operations Log
+# Mosaic Operations Log
 
 Append-only. One line per meaningful change.
 

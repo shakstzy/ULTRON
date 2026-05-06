@@ -1,4 +1,4 @@
-# <Workspace> Operations Log
+# Music Operations Log
 
 Append-only. One line per meaningful change.
 

@@ -1,0 +1,24 @@
+# rental-manager — declared launchd cadence
+#
+# Compiled to ~/ULTRON/_shell/plists/com.adithya.ultron.<job>.plist by the
+# `schedule` skill. Loading is gated on explicit user CONFIRM.
+
+workspace: rental-manager
+
+jobs:
+  - name: ingest-rental-manager
+    stage: ingest
+    schedule:
+      hour: 8
+      minute: 30
+    plist_label: com.adithya.ultron.ingest-rental-manager
+
+  - name: lint-rental-manager
+    stage: lint
+    schedule:
+      hour: 4
+      minute: 15
+    plist_label: com.adithya.ultron.lint-rental-manager
+
+# audit and weekly-review are global (cross-workspace), declared in
+# _shell/plists/. Daemon health-check + breaker-status job is a follow-up.

@@ -83,7 +83,7 @@ export function leadSlug({ name, listingAlias, phone, conversationId }) {
 }
 
 // -----------------------------
-// Tier 1: QUANTUM raw markdown
+// Tier 1: per-lead markdown
 // -----------------------------
 
 function frontmatter(obj) {
@@ -146,7 +146,7 @@ function renderRenterProfile(rp) {
 }
 
 /**
- * Write or update the per-lead markdown file in QUANTUM/raw/rental-property/leads/.
+ * Write or update the per-lead markdown file in workspaces/rental-manager/raw/leads/.
  * Idempotent: rewrites the entire file each call from observed state.
  *
  * lead shape:

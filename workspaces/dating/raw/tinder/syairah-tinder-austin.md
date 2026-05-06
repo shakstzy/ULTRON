@@ -1,0 +1,59 @@
+---
+slug: "syairah-tinder-austin"
+first_name: "syairah"
+source: "tinder"
+city: "austin"
+match_id: "62d1114b8ee7bf01006c3ee3688d5defabea267a7a47867a"
+person_id: null
+phone: null
+status: "new"
+first_seen: "2026-05-04T21:47:24.782Z"
+last_activity: "2026-05-04T21:47:24.782Z"
+last_scrape: "2026-05-05T01:05:50.312Z"
+previous_slugs: []
+---
+
+## Profile
+
+- age: 20
+- distance_mi: 1229
+- height_cm: 160
+- bio: "Love experiencing new things , traveling , hiking etc definitely an out doors person"
+- looking_for: "New friends"
+- pronouns: "She/Her"
+- photo_verified: true
+- interests: Active Lifestyle, Travel, Mountains, Nature, Outdoors, Hiking, Painting, Musical Instrument, Drawing, Art
+- basics.zodiac: "Gemini"
+- basics.family_plans: "Not sure yet"
+- lifestyle.pets: "Dog"
+- lifestyle.drinking: "Socially on weekends"
+- lifestyle.cannabis: "Yes"
+- lifestyle.workout: "Often"
+- photos_count: 6
+
+## Profile changes
+
+(none yet)
+
+## Visual
+
+<!-- engine=gemini-flash account=avery@seedboxlabs.co ts=2026-05-05T01:06:12.933Z -->
+
+- vibe: eclectic artsy-baddie
+- settings: modern apartment interiors, lakeside reservoir, wildflower fields
+- activities: mirror selfies, painting, nature excursions, tending to pet
+- props: painting easel, large blue teddy bear, decorative globe, large driftwood branch, gold arm cuffs
+- pets: white Silkie chicken
+- group_context: alone in all photos
+- style_signals: boho-chic, crop tops, maxi skirts, sarongs, nose ring, gold jewelry, braids and long wavy hair
+- environments: home / outdoor nature mix
+- notable_signals: pet chicken on shoulder, art studio setup at home, distinctive gold arm jewelry
+- red_flags: (none observed)
+
+## Conversation
+
+(no messages yet)
+
+## Outbound log
+
+(none)

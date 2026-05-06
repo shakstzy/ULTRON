@@ -1,4 +1,4 @@
-# Schema Proposals — <Workspace>
+# Schema Proposals — Music
 
 Lint agent appends proposals here. Adithya promotes to `schema.md` weekly.
 

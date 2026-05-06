@@ -1,4 +1,4 @@
-# <Workspace> Operations Log
+# Property Management Operations Log
 
 Append-only. One line per meaningful change.
 

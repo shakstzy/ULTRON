@@ -94,7 +94,7 @@ Global flags:
   --live                            (send-reply only) actually click Send instead of dry-run
 
 Env:
-  ZRM_PROFILE_DIR                   Override profile dir (default ~/.shakos/chrome-profiles/zillow-rental-manager)
+  ZRM_PROFILE_DIR                   Override profile dir (default workspaces/rental-manager/state/chrome-profile)
   ZRM_DEBUG_PORT                    CDP debug port (default 9222)
   ZRM_PROXY=http://user:pass@host:port   Residential proxy (legacy launch mode only). Consumer VPNs refused.
   ZRM_MIN_GAP_MS                    Min gap between paced ops (default 45000)
@@ -395,13 +395,13 @@ async function cmdExplore(argv) {
   installGracefulShutdown(() => ctx.close());
   try {
     // Tap every inbox/graphql POST while Adithya browses. Records to
-    // ~/.shakos/playbook-output/zillow-rental-manager/network/<date>/. No
-    // pacing -- pacing only fires before scripted ops, not page-driven calls.
+    // workspaces/rental-manager/state/network/<date>/. No pacing -- pacing
+    // only fires before scripted ops, not page-driven calls.
     installGlobalGraphqlTap(ctx.page);
     if (!argv.skipWarmup) await warmUpZillow(ctx.page);
     await ctx.page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 });
     console.log(`[zrm] Opened ${sanitizeUrl(url)}. Global GraphQL tap is recording every inbox/graphql POST.`);
-    console.log(`[zrm] Captures landing at ~/.shakos/playbook-output/zillow-rental-manager/network/`);
+    console.log(`[zrm] Captures landing at workspaces/rental-manager/state/network/`);
     console.log(`[zrm] Browse normally (click leads, send replies, view profiles). Ctrl-C to close.`);
     await new Promise((resolve) => {
       process.once('SIGINT', resolve);

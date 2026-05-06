@@ -1,0 +1,120 @@
+{
+  "name_age": {
+    "text": "Zoe25",
+    "class": "Fxs(1) Fxw(w) M(0) D(i) Typs(display-1-strong)",
+    "tag": "H1",
+    "parent_class": "Ov(h) Ws(nw) Ell"
+  },
+  "pane_root": {
+    "tag": "DIV",
+    "class": "Pos(r)--ml Z(1) Bgc($c-ds-background-primary) Ov(h) Expand profileContent",
+    "id": "",
+    "role": null,
+    "text_excerpt": "Zoe25Photo VerifiedLooking for💘Long-term partnerAbout meJust a silly gooseEssentialsPhoto Verified5 miles awayMy dream job is…I don’t dream of workingBasicsLove StyleThoughtful gesturesZodiacVirgoCommunication StyleBetter in personLifestylePetsDogSmokingNon-smokerWorkoutOftenDrinkingSocially on weekendsInterestsBinge-Watching TV showsConcertsMindfulnessRoad TripsTrying New ThingsWorking outCountr"
+  },
+  "sections": [
+    {
+      "heading": "Looking for",
+      "parent_class": "D(f) Ai(c) Mb(16px)",
+      "parent_text": "Looking for"
+    },
+    {
+      "heading": "About me",
+      "parent_class": "D(f) Ai(c) Mb(8px)",
+      "parent_text": "About me"
+    },
+    {
+      "heading": "Essentials",
+      "parent_class": "D(f) Ai(c) Mb(16px)",
+      "parent_text": "Essentials"
+    },
+    {
+      "heading": "My dream job is…",
+      "parent_class": "D(f) Ai(c) Mb(8px)",
+      "parent_text": "My dream job is…"
+    },
+    {
+      "heading": "Basics",
+      "parent_class": "D(f) Ai(c) Mb(16px)",
+      "parent_text": "Basics"
+    },
+    {
+      "heading": "Lifestyle",
+      "parent_class": "D(f) Ai(c) Mb(16px)",
+      "parent_text": "Lifestyle"
+    },
+    {
+      "heading": "Interests",
+      "parent_class": "D(f) Ai(c) Mb(16px)",
+      "parent_text": "Interests"
+    }
+  ],
+  "h3_items": [
+    {
+      "heading": "Love Style",
+      "value": "Thoughtful gestures",
+      "parent_class": "D(b) W(100%)"
+    },
+    {
+      "heading": "Zodiac",
+      "value": "Virgo",
+      "parent_class": "D(b) W(100%)"
+    },
+    {
+      "heading": "Communication Style",
+      "value": "Better in person",
+      "parent_class": "D(b) W(100%)"
+    },
+    {
+      "heading": "Pets",
+      "value": "Dog",
+      "parent_class": "D(b) W(100%)"
+    },
+    {
+      "heading": "Smoking",
+      "value": "Non-smoker",
+      "parent_class": "D(b) W(100%)"
+    },
+    {
+      "heading": "Workout",
+      "value": "Often",
+      "parent_class": "D(b) W(100%)"
+    },
+    {
+      "heading": "Drinking",
+      "value": "Socially on weekends",
+      "parent_class": "D(b) W(100%)"
+    }
+  ],
+  "distance_text": "5 miles away",
+  "distance_value": 5,
+  "about_me": {
+    "parent_text": "",
+    "next_sibling_text": "",
+    "next_sibling_class": ""
+  },
+  "imgs_in_pane": 7,
+  "img_samples": [
+    {
+      "alt": "",
+      "src_host": "static-assets.gotinder.com"
+    },
+    {
+      "alt": "",
+      "src_host": "static-assets.gotinder.com"
+    },
+    {
+      "alt": "",
+      "src_host": "static-assets.gotinder.com"
+    },
+    {
+      "alt": "",
+      "src_host": "static-assets.gotinder.com"
+    },
+    {
+      "alt": "",
+      "src_host": "static-assets.gotinder.com"
+    }
+  ],
+  "job_school_hints": []
+}

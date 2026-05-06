@@ -1,0 +1,20 @@
+# rental-manager — declared ingestion sources
+#
+# Pipeline-only workspace. No gmail/slack/granola sources. The "sources"
+# are the platforms we drive: Zillow today, Apartments.com / Facebook
+# Marketplace / Craigslist later.
+
+workspace: rental-manager
+wiki: false
+
+sources:
+  - id: zillow-rental-manager
+    type: browser-automation
+    bin: ../../workspaces/rental-manager/playbooks/zillow-rental-manager/scripts/run.mjs
+    config:
+      command: pull-inbox
+      args: ["--max=50"]
+    output_path: raw/leads/
+
+global_settings:
+  attachments_inline: true

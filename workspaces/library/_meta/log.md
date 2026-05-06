@@ -1,4 +1,4 @@
-# <Workspace> Operations Log
+# Library Operations Log
 
 Append-only. One line per meaningful change.
 

@@ -11,7 +11,7 @@
 // Pacing: sendReply's internal enforceMinPacing is the only paced gate per
 // lead, so 102 sends = 102 paced calls = fits inside the 120/hr cap.
 //
-// Run log lives at ~/.shakos/playbook-output/zillow-rental-manager/state/
+// Run log lives under workspaces/rental-manager/state/
 // batch-followup/<runId>.json so the run is resumable. Pass --resume <runId>
 // to pick up where an interrupted run left off.
 //

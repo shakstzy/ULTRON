@@ -1,4 +1,4 @@
-# <Workspace> Wiki — Index
+# Dating Wiki — Index
 
 Top-level navigation for this workspace's wiki.
 
@@ -8,7 +8,7 @@ Top-level navigation for this workspace's wiki.
 
 ## Entities
 
-- [[entities/people/]] — all people
+(no entity pages yet — populated as the wiki agent encounters people, companies, and other entity types declared in `schema.md`)
 
 ## Synthesis
 

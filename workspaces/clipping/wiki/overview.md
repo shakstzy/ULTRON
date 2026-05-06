@@ -1,4 +1,4 @@
-# <Workspace> Overview
+# Clipping Overview
 
 <populated at bootstrap from Q1 + Q3>
 

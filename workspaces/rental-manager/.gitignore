@@ -1,0 +1,20 @@
+# Operational state. Survives restarts but not git-tracked.
+# Run markers (.start/.done/.aborted/.crashed) ARE tracked via the !whitelist
+# below so we have a forensic trail of past batches in version control.
+state/chrome-profile/
+state/threads/
+state/audit/
+state/network/
+state/tmp-screenshots/
+state/pacing.json
+state/breaker.json
+state/threads.jsonl
+
+# Track the run-marker sidecars but not the heavyweight ndjson stream.
+state/batch-followup/*.ndjson
+
+# Node deps — npm install reproduces.
+playbooks/*/node_modules/
+
+# OS noise
+**/.DS_Store

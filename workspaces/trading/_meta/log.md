@@ -1,4 +1,4 @@
-# <Workspace> Operations Log
+# Trading Operations Log
 
 Append-only. One line per meaningful change.
 

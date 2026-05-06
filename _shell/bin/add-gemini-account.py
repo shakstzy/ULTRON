@@ -1,19 +1,21 @@
 #!/usr/bin/env python3
 """
-add-gemini-account.py — drive ONE Gemini OAuth flow without touching the
-user's active gemini session.
+add-gemini-account.py — drive ONE Gemini OAuth flow.
 
 Per memory: user only clicks the browser. Claude does everything else.
 
-Strategy (Terminal.app + isolated HOME):
-  1. Make a temp HOME dir with a copy of ~/.gemini/settings.json.
-  2. Open a Terminal.app window running `HOME=<tmp> gemini` interactive.
-     Gemini sees no oauth_creds.json there, opens a browser for OAuth,
-     and writes new credentials to <tmp>/.gemini/oauth_creds.json once
-     the user clicks through.
-  3. Poll <tmp>/.gemini/oauth_creds.json. When seen + parseable, decode
-     the JWT id_token, copy the creds into ~/.gemini/accounts/<email>.json.
-  4. Close the Terminal window. Clean up the temp dir.
+Strategy (no Terminal.app, no TUI, no pty):
+  1. Make a temp HOME dir with a copy of ~/.gemini/settings.json
+     (so oauth-personal auth mode is selected).
+  2. Run `gemini -p "ping"` headless with HOME set to the temp dir.
+     Gemini prints "Opening authentication page in your browser.
+     Do you want to continue? [Y/n]:" — we feed "Y\\n" to stdin.
+     Gemini auto-opens a browser to the OAuth URL.
+  3. User clicks through Google login. Gemini receives the callback,
+     writes <tmp>/.gemini/oauth_creds.json.
+  4. Poll for new creds. Decode JWT id_token to get email. Copy creds
+     to ~/.gemini/accounts/<email>.json.
+  5. Kill subprocess. Clean up.
 
 Returns 0 on success and prints the new account email; non-zero on failure.
 """
@@ -23,6 +25,7 @@ import base64
 import json
 import os
 import shutil
+import signal
 import subprocess
 import sys
 import tempfile
@@ -53,44 +56,11 @@ def decode_email(creds_path):
         return None
 
 
-def open_terminal_with_command(cmd):
-    """Open Terminal.app and run `cmd` inside a new window. Returns the
-    window's id so we can close it later."""
-    # Escape double quotes for AppleScript
-    cmd_escaped = cmd.replace("\\", "\\\\").replace('"', '\\"')
-    script = (
-        f'tell application "Terminal"\n'
-        f'  activate\n'
-        f'  set newTab to do script "{cmd_escaped}"\n'
-        f'  return id of window 1\n'
-        f'end tell'
-    )
-    out = subprocess.run(
-        ["osascript", "-e", script],
-        capture_output=True, text=True,
-    )
-    if out.returncode != 0:
-        sys.stderr.write(f"osascript error: {out.stderr}\n")
-        return None
-    try:
-        return int(out.stdout.strip())
-    except ValueError:
-        return None
-
-
-def close_terminal_window(window_id):
-    if window_id is None:
-        return
-    script = f'tell application "Terminal" to close (every window whose id is {window_id})'
-    subprocess.run(["osascript", "-e", script], capture_output=True)
-
-
 def main():
     ACCOUNTS_DIR.mkdir(parents=True, exist_ok=True)
     if not GLOBAL_SETTINGS.exists():
-        sys.exit("ERROR: ~/.gemini/settings.json missing — bootstrap an initial gemini auth first")
+        sys.exit("ERROR: ~/.gemini/settings.json missing")
 
-    # Set up isolated HOME with the same auth-method config as global
     tmp_home = Path(tempfile.mkdtemp(prefix="gemini-auth-"))
     tmp_gemini = tmp_home / ".gemini"
     tmp_gemini.mkdir(parents=True, exist_ok=True)
@@ -98,17 +68,27 @@ def main():
     new_oauth = tmp_gemini / "oauth_creds.json"
 
     print(f"=== isolated HOME: {tmp_home} ===")
-    print(f"=== opening Terminal.app with `HOME={tmp_home} gemini` ===")
+    print("=== launching gemini headless; sending 'Y' to bootstrap OAuth ===")
     print(">>> CLICK THROUGH the Google login when the browser pops <<<")
     print()
 
-    # Build the command run inside Terminal.app
-    inner = f'export HOME={tmp_home}; gemini; exit'
-    window_id = open_terminal_with_command(inner)
-    if window_id is None:
-        sys.stderr.write("could not open Terminal window\n")
-        shutil.rmtree(tmp_home, ignore_errors=True)
-        return 2
+    env = os.environ.copy()
+    env["HOME"] = str(tmp_home)
+
+    proc = subprocess.Popen(
+        ["gemini", "-p", "ping", "-o", "text"],
+        stdin=subprocess.PIPE,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        env=env,
+        start_new_session=True,
+    )
+    # Send Y to confirm browser-auth prompt
+    try:
+        proc.stdin.write(b"Y\n")
+        proc.stdin.flush()
+    except (BrokenPipeError, OSError):
+        pass
 
     new_email = None
     waited = 0.0
@@ -117,17 +97,21 @@ def main():
             time.sleep(POLL_INTERVAL)
             waited += POLL_INTERVAL
             if new_oauth.exists():
-                time.sleep(0.5)  # let write settle
+                time.sleep(0.5)
                 email = decode_email(new_oauth)
                 if email:
                     new_email = email
                     break
+            if proc.poll() is not None and not new_oauth.exists():
+                # gemini exited without producing creds
+                stderr = proc.stderr.read().decode(errors="replace")[:500]
+                print(f"!!! gemini exited (code {proc.returncode}); stderr: {stderr}")
+                return 2
 
         if new_email is None:
-            print(f"!!! timed out after {MAX_WAIT_SEC}s waiting for new creds")
+            print(f"!!! timed out after {MAX_WAIT_SEC}s")
             return 2
 
-        # Save the new account
         dest = ACCOUNTS_DIR / f"{new_email}.json"
         shutil.copy2(new_oauth, dest)
         print(f"=== authed: {new_email} ===")
@@ -140,7 +124,17 @@ def main():
             print(f"  {a.stem}")
         return 0
     finally:
-        close_terminal_window(window_id)
+        try:
+            os.killpg(os.getpgid(proc.pid), signal.SIGTERM)
+        except (ProcessLookupError, OSError):
+            pass
+        try:
+            proc.wait(timeout=3)
+        except subprocess.TimeoutExpired:
+            try:
+                os.killpg(os.getpgid(proc.pid), signal.SIGKILL)
+            except (ProcessLookupError, OSError):
+                pass
         shutil.rmtree(tmp_home, ignore_errors=True)
 
 

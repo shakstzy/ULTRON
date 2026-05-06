@@ -33,9 +33,9 @@ attachments:
   sender: me
   sent_at: '2025-06-26T16:15:28.733933-05:00'
   sha256: 0729883e9ab96b89ac082162b0ebd996b115a15a3fe53a641e880580f5dc2c88
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a 12-minute PATH train route from 9 St to 33 St in Manhattan.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:09:32.979351+00:00'
   source_available: true
 chat_message_guids_count: 53
 deleted_upstream: null

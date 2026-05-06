@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2024-10-12T18:38:02.565000-05:00'
   sha256: 4e6763ef1d0fbcefd17f772697fa9cef6e87d98496819f215e1f740d0af82052
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men take a selfie in front of a Karate Combat pit with a fighter
+    and referee.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:12.745880+00:00'
   source_available: true
 chat_message_guids_count: 59
 deleted_upstream: null

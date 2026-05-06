@@ -22,9 +22,10 @@ attachments:
   sender: brandon-co-beats-la
   sent_at: '2026-04-28T16:55:51.224859-05:00'
   sha256: 007fc7eaf0e475aeef79609fd9be8994e7ea6e65e56e7a35d3478a9fd471a805
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Roku TV updating in a dark room with a Tomorrowland tapestry and a
+    computer desk setup.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:42.236328+00:00'
   source_available: true
 - id: cb1d5eb761e5d379
   filename: 0A22403E-6E0F-466D-92EC-5BCB9CD7166A.pluginPayloadAttachment

@@ -33,9 +33,10 @@ attachments:
   sender: austin-davis-renter-showing
   sent_at: '2024-12-20T18:17:58.916872-06:00'
   sha256: bb50661c677bab54788f5523404f03de3f2a066a4663182bc8187fb8c0d18c33
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a vCard contact file for an individual named Harold. It contains
+    his display name and primary phone number.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:10:26.279083+00:00'
   source_available: true
 - id: 2cce717cbdcf44ff
   filename: vader.m4a
@@ -154,9 +155,10 @@ attachments:
   sender: austin-davis-renter-showing
   sent_at: '2024-12-29T20:11:46.091704-06:00'
   sha256: 6d0250b58bbe8b724a912534fd668a056996765192c6902ac24f6241965a1659
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Small white and tan dog wags its tail while walking across a concrete
+    floor.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:10.931601+00:00'
   source_available: true
 - id: 79150d5fc634686b
   filename: Range Music Publishing Invoice .pdf.PNG
@@ -176,9 +178,10 @@ attachments:
   sender: austin-davis-renter-showing
   sent_at: '2024-12-29T21:00:42.138206-06:00'
   sha256: a580fecef36960503c8f604ffaee3eb451c696d867912ef36bfcfe4565d5f556
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Rental application UI with a "Past jobs" section and an "Add past job"
+    button.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:10:41.752521+00:00'
   source_available: true
 chat_message_guids_count: 173
 deleted_upstream: null

@@ -82,9 +82,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-08-14T03:21:47.781137-05:00'
   sha256: a9737ffd9c3a44627cd18b52a44270943aad7f0b6647d5734d39b6655d700b80
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of Evan's dating profile with controversial "Two truths
+    and a lie" speech claims.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:10:42.432663+00:00'
   source_available: true
 - id: 790ebafbc368e208
   filename: IMG_6047.png

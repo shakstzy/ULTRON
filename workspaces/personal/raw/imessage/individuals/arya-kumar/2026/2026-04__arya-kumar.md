@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-04-06T15:00:47.057194-05:00'
   sha256: a0c23375d68371058ebf8b23788c3679b2ce5a12ec5cbe4bccde38494140efb5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Visible Inner Circle confirmation screen showing an invitation for
+    (737) 226-2287.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:27.086359+00:00'
   source_available: true
 - id: 8f554a5717845359
   filename: 652BC7AB-8276-480D-871B-6E72CC00C19A.pluginPayloadAttachment

@@ -33,9 +33,9 @@ attachments:
   sender: me
   sent_at: '2025-10-04T00:42:02.062324-05:00'
   sha256: 0416a74eff3175682c032e2b67541424554a5d7f4b452931b9d1af18b0bd811d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Crowd walking through a grand, arched hall with indoor palm trees.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:28.664516+00:00'
   source_available: true
 - id: 3416ed8f8ea113b4
   filename: 78125106936__69458CDF-CF18-4104-A742-B84B4A4ACEBC.heic
@@ -44,9 +44,10 @@ attachments:
   sender: brandon-co-beats-la
   sent_at: '2025-10-04T01:17:11.889261-05:00'
   sha256: 57876a7d0907ae854ac2757b96428359bec5a99b72be3d32cc97ee82c0d77e59
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "Crowd in a blue-lit venue with a glowing \"BEER \xB7 WINE \xB7 FOOD\"\
+    \ sign."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:10:35.548319+00:00'
   source_available: true
 - id: f00b3a3f59c2aea9
   filename: download.MOV
@@ -55,9 +56,9 @@ attachments:
   sender: me
   sent_at: '2025-10-06T00:51:48.102481-05:00'
   sha256: 756e804517e7c2ff006147d9d8e685f44c4aae72cf490bc2fd4b594b4e518b6a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man climbs a tree, falls off, and runs face-first into a garage door.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:21.402332+00:00'
   source_available: true
 - id: 90b7e0c520a55455
   filename: IMG_2007.PNG

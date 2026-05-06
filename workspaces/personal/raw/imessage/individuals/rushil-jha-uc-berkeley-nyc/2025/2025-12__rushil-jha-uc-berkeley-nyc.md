@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-12-18T09:11:14.178000-06:00'
   sha256: 4f42031d2f9f5d62570b2bdca6eb088e548bc33676cf77ea8460d0c6e0aa15c5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Blurry close-up of a smiling man with dark curly hair, glasses, and
+    a beard.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:11.109861+00:00'
   source_available: true
 - id: 5e0ec5af335ab544
   filename: D5BFEA54-B22F-4C27-AC39-B1D20ED3C59D.jpeg
@@ -78,9 +79,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2025-12-18T09:22:18.967661-06:00'
   sha256: f6f29eb2a0531cdbffb366502d3462cd02e34ce8406c0b533d6a52dc3dea9c31
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Zillow real estate listing for a $1,190,000 2-bed condo at 425 Main
+    St, New York City.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:04.669756+00:00'
   source_available: true
 - id: 52f3bafd1a2c4731
   filename: IMG_5948.png
@@ -112,9 +114,10 @@ attachments:
   sender: me
   sent_at: '2025-12-18T10:29:16.723000-06:00'
   sha256: fabda9e46854591a838d516ba03c605d9ed576dd241de1de0179e5da19d4d4f2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "Video call screenshot of a Sei confidential eco updates presentation\
+    \ with Justin Barlow and AhYoung\u2026"
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:03.636775+00:00'
   source_available: true
 - id: df9fa8752cada1d8
   filename: IMG_4441.png
@@ -123,9 +126,10 @@ attachments:
   sender: me
   sent_at: '2025-12-18T11:28:36.792000-06:00'
   sha256: 751e3ef8a686087acd0a37c2054d808fb068729781fa936e5aa3a44732b3a0f5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Slack thread: Adithya Kumar clarifies he will share a document in
+    the channel.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:13.352864+00:00'
   source_available: true
 - id: 2767ace8393da67d
   filename: IMG_6733.png
@@ -146,9 +150,9 @@ attachments:
   sender: me
   sent_at: '2025-12-18T11:46:27.033000-06:00'
   sha256: 61d2e963065e1b935bbe45097a95745c1082018c3933410c39cf3166caa6eb68
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling man with glasses and over-ear headphones on a video call.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:14.286382+00:00'
   source_available: true
 - id: 97bbf2d20cbe2840
   filename: IMG_7371.png
@@ -204,9 +208,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2025-12-19T14:01:12.381176-06:00'
   sha256: 257d97ca24e616e83efb90dc37e99466606edae888f0081541032206c11c3865
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Map screenshot of 283 Griffith St, Jersey City, with a hand-drawn loop
+    around Croxton.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:23.502058+00:00'
   source_available: true
 - id: c4bf3cbbdafce07b
   filename: IMG_2149.png
@@ -227,9 +232,10 @@ attachments:
   sender: me
   sent_at: '2025-12-19T14:17:29.709000-06:00'
   sha256: 62490cdb10901be2874c2fa8a8d04f5be55101863e36777bd684ad0877e2b301
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Real estate listing for a $1,300,000 4bd/4ba home at 7 Park Ave, New
+    York, NY.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:13.198862+00:00'
   source_available: true
 - id: 96ad6788168f7aeb
   filename: IMG_5667.png

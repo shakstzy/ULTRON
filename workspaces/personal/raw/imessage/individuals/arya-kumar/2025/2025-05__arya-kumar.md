@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-05-03T21:50:07.797220-05:00'
   sha256: 18c140bc9471ad8d32259390ae5101ec8a46a26cc32320a6398b014fa1859a34
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Spotify mobile screenshot of Playboi SHVA's single "SET" with black-and-white
+    cover art.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:46.078972+00:00'
   source_available: true
 chat_message_guids_count: 35
 deleted_upstream: null

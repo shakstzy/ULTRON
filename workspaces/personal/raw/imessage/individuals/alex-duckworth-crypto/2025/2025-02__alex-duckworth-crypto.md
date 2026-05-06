@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-02-02T13:09:07.886000-06:00'
   sha256: 82b1bd989da1358f575b0f44c10a73e88e84e8780c02988df697a78e3ea6612d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram Reel meme showing an ornate gold astronaut and a grey alien
+    with humorous text.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:09:33.784861+00:00'
   source_available: true
 - id: 4799e2d1e7023a9c
   filename: IMG_5547.PNG

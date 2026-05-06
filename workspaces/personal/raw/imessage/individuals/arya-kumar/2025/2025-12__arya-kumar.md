@@ -67,9 +67,10 @@ attachments:
   sender: me
   sent_at: '2025-12-21T23:48:33.887000-06:00'
   sha256: 13097b6def8edbceaa244c1b232e92a2bff8d5e47eddbf117ac9bbcc372b9ebf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man holds thick stacks of cash to his ear and head as if talking
+    on a phone.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:35.247053+00:00'
   source_available: true
 - id: 34271f32b48ee0d8
   filename: "Screenshot 2025-12-23 at 10.44.17\u202FAM.png"
@@ -100,9 +101,10 @@ attachments:
   sender: me
   sent_at: '2025-12-27T23:42:11.098366-06:00'
   sha256: 4075b6e62f9dd4540a210ad7b52d25b1fa9a5a3cf84982ca2aa463475f6300aa
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram profile of Andrew Macre (@marketxmacre), a futures trader
+    with 67.9K followers.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:57.787668+00:00'
   source_available: true
 chat_message_guids_count: 87
 deleted_upstream: null

@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2024-04-12T00:09:29.120000-05:00'
   sha256: f7b857301a4d86e7975b4cc2e733b7db77a79ccd2aecba52aa7be9ea782fbd6b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Silhouetted person reclining in a chair against a large, glowing purple
+    circular light.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:10:52.193201+00:00'
   source_available: true
 - id: a667fefc13ff3e44
   filename: DSC02173.JPG
@@ -44,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2024-04-12T00:09:29.120000-05:00'
   sha256: 37fd4958856daf402d869b41f4811b7859e4ce97539d28b11366f96705486e02
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Silhouette of a person's profile against a bright, circular purple
+    glow.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:10:52.722598+00:00'
   source_available: true
 chat_message_guids_count: 15
 deleted_upstream: null

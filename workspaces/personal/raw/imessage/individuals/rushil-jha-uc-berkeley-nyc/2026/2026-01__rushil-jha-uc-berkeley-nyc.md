@@ -45,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2026-01-16T10:04:13.840125-06:00'
   sha256: 395e57c45927f1526bb8793a9a6d35bc80579ed91c3623116ebe5e986baadc9c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Toronto Raptors basketball game at the Air Canada Centre with players
+    on court.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:40.086988+00:00'
   source_available: true
 - id: f355a6f4b4ae1508
   filename: 1C7FE539-0406-49B9-ACE6-DE1258C693E1.pluginPayloadAttachment

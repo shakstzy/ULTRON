@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-08-01T18:44:00.577000-05:00'
   sha256: 25bf7f4eba1b31848d7f8bae2faa3d5faeb834a48fcdc3ea62a5b32b288cb7c7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram screenshot of gauthamismetta's Europe post with Wang and
+    Zuckerberg suggested reels.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:46.528665+00:00'
   source_available: true
 - id: 7332c470cd9052f8
   filename: IMG_0053.JPG
@@ -69,9 +70,10 @@ attachments:
   sender: me
   sent_at: '2025-08-03T04:34:55.597000-05:00'
   sha256: fb7f927800ccebf2c4691f5458c9a1a3273463237045e43244181552a9959a0c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a navy Berkeley hoodie holds a hand-rolled joint toward the
+    camera.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:10.292947+00:00'
   source_available: true
 - id: c78386d2dd180ec3
   filename: IMG_6655.PNG
@@ -103,9 +105,10 @@ attachments:
   sender: me
   sent_at: '2025-08-04T11:52:52.525000-05:00'
   sha256: a4fd7b677515f84ac5679ab82b72f2c52889502043784917b91bbcdfa08dafa8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person holds a translucent blue plastic vial containing green cannabis
+    flower.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:45.050702+00:00'
   source_available: true
 - id: bfdbb8b18b4943d7
   filename: IMG_0760.PNG

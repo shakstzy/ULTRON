@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-02-17T00:59:01.292582-06:00'
   sha256: 256fb59840738b4e4b7fbbb2c69f18077177300694e6fecf0b8cc0667c80cd1a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a leather jacket and sunglasses stands before the Roman Colosseum
+    at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:04.895709+00:00'
   source_available: true
 chat_message_guids_count: 11
 deleted_upstream: null

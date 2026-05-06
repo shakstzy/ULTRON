@@ -33,9 +33,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-10-20T20:37:00-05:00'
   sha256: 150a3f03ee799380eb86533b792f1902ae568b71d2cae29a82cd2db114967f6c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A blue Nintendo 3DS displaying a photo of a person using a backlit
+    laptop in a dark room.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:11.064420+00:00'
   source_available: true
 - id: c0fd716c336601d5
   filename: IMG_3414.PNG

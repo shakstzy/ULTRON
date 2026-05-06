@@ -34,9 +34,9 @@ attachments:
   sender: me
   sent_at: '2024-12-13T02:07:10.940224-06:00'
   sha256: c029571416b92c63fc0fbbc4753d27767aecb1ccd50d76de798d15d529da2cc9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 1h candlestick chart for Hyperliquid/USD showing a price surge to $17.40.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:09:29.586971+00:00'
   source_available: true
 chat_message_guids_count: 13
 deleted_upstream: null

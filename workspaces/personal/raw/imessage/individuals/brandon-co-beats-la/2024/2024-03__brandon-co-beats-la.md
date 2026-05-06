@@ -33,9 +33,10 @@ attachments:
   sender: brandon-co-beats-la
   sent_at: '2024-03-28T00:09:50.449372-05:00'
   sha256: b8888ea17e9b9cb50a5766b4a3bceaf33effb3ba67e232355fbc6d256dcd3969
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A bearded man with dark hair wearing a white t-shirt with his mouth
+    slightly open.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:16.499970+00:00'
   source_available: true
 chat_message_guids_count: 66
 deleted_upstream: null

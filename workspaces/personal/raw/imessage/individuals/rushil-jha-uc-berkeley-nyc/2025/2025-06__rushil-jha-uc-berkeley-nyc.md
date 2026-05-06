@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-06-23T16:57:13.811010-05:00'
   sha256: e057d8f501c8f5f2c982d8d18af8c02f3f9ab30879eec9d5199cf600f687dc99
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Luma invite for a CryptoMondays event at Sugar Mouse NYC on Monday,
+    June 23.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:27.283292+00:00'
   source_available: true
 - id: ce030c48c7fb530d
   filename: IMG_4740.png

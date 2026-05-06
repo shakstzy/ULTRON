@@ -22,9 +22,10 @@ attachments:
   sender: brandon-co-beats-la
   sent_at: '2024-11-01T16:09:11.563910-05:00'
   sha256: 12a6a9d704988dec7a8ddcb6cef4e3497a2e0e625a40f18c4c74f965e42a4112
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Order confirmation for EDC Las Vegas 2025 tickets, dated November 1,
+    2024.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:10:49.275291+00:00'
   source_available: true
 chat_message_guids_count: 1
 deleted_upstream: null

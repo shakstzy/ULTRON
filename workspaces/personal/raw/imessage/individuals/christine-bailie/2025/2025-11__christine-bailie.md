@@ -46,9 +46,10 @@ attachments:
   sender: christine-bailie
   sent_at: '2025-11-05T15:55:19.219146-06:00'
   sha256: 5927e93435f6451a934f85feb81f1530a1971a31edb4f61f9ce8df86cf758c44
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three people smile at a Topgolf-style driving range at night; one wears
+    a sunflower shirt.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:09:40.536367+00:00'
   source_available: true
 - id: 6e7cd2c5e6bd80df
   filename: IMG_0626.heic

@@ -33,9 +33,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-17T15:53:54-05:00'
   sha256: 5a1313b0fd2405d16c471d69b9f2e47c4602dd282631edf6220564f521b4cda9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person in a Batman shirt performs a dumbbell bench press with 40lb
+    weights in a gym.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:09.683033+00:00'
   source_available: true
 - id: 99aed5bae719c85c
   filename: image000000.jpg
@@ -44,9 +45,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-17T15:53:54-05:00'
   sha256: c618cde79477519c9b633b6eb4b17a9b1dcebcfdd4d89edfb523ce1a38c4383e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person in a Batman shirt does a dumbbell bench press with 40lb weights
+    in a gym.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:50.229685+00:00'
   source_available: true
 - id: 8e8230460d0c550a
   filename: image000000.jpg
@@ -55,9 +57,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-17T15:54:58-05:00'
   sha256: e22da83d00b04bfe307098902786b32b16517221383cddb4c1f9fbb566c6eb27
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Weekly weight graph showing an upward trend to 130.6 lb on March 13,
+    2024.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:22.627760+00:00'
   source_available: true
 - id: 2ceafc0cf27e403d
   filename: image000000.jpg
@@ -99,9 +102,10 @@ attachments:
   sender: me
   sent_at: '2024-03-29T13:17:05.304002-05:00'
   sha256: a0a5c80a61dcfad42809c864d695af6fc5b29d996c3298dba404368d6e30e48c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot sharing a Spotify "WATER" link and discussing a
+    podcast about "flow".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:16.511863+00:00'
   source_available: true
 chat_message_guids_count: 36
 deleted_upstream: null

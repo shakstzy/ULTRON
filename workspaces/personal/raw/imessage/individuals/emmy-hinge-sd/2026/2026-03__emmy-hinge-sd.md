@@ -22,9 +22,10 @@ attachments:
   sender: emmy-hinge-sd
   sent_at: '2026-03-17T01:54:59.356882-05:00'
   sha256: 4691fd3da11aed6a1ff7ce302e1c5e501f7e626b278b35da22909c021d4eafe7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Close-up of a ginger cat peeking from the bottom with large eyes on
+    a black background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:09:34.520449+00:00'
   source_available: true
 - id: 50edacb96c4000c8
   filename: RenderedImage.jpeg
@@ -33,9 +34,10 @@ attachments:
   sender: emmy-hinge-sd
   sent_at: '2026-03-17T01:56:40.129853-05:00'
   sha256: d86a51f29bb25e52eb5acafd7bec62e83be8e9c92b3cbd2c98c1b37cb2765570
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Bob Belcher sits in a car with his eyes tightly shut and hands clutching
+    his neck.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:09:40.952707+00:00'
   source_available: true
 chat_message_guids_count: 111
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-04-01T16:23:21.554795-05:00'
   sha256: a6f44e203c4ce87ab71e0dbadbb2dd0dea55704740d40e654a4a3d23becaddf3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone iMessage screenshot asking Sandeep about a16z's investment process
+    with Poseidon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:49.074526+00:00'
   source_available: true
 - id: 39f2b87f136b088f
   filename: IMG_7989.PNG
@@ -45,9 +46,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2026-04-01T16:54:33.230141-05:00'
   sha256: 119b230860e57e8ef8db1f21e6c07bd5683f1714b6093e71c3145c5846605672
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Stuart iMessage conversation bashing a16z Speedrun as "Temu y combinator"
+    and bad investors.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:44.932716+00:00'
   source_available: true
 - id: 694305755f5882ab
   filename: "Screenshot 2026-04-01 at 5.58.00\u202FPM.png"
@@ -79,9 +81,9 @@ attachments:
   sender: me
   sent_at: '2026-04-01T18:17:14.309985-05:00'
   sha256: 01fb09634c4391499ecc5e682addab713ebb51865ded33626d271926851a32da
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile screenshot of David Ulevitch's Andreessen Horowitz bio page.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:58.851505+00:00'
   source_available: true
 - id: 8659d3315bec71a0
   filename: IMG_7883.png
@@ -90,9 +92,10 @@ attachments:
   sender: me
   sent_at: '2026-04-03T00:29:49.279079-05:00'
   sha256: 5458aab7923bb875b1a8e9698965f88d7d2a3d85c19724cff7a95d9358ace37a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: People stand near a giant wooden table and chair art installation in
+    a museum.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:54.274321+00:00'
   source_available: true
 chat_message_guids_count: 86
 deleted_upstream: null

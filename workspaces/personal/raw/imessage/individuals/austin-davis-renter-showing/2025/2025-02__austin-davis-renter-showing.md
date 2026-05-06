@@ -22,9 +22,11 @@ attachments:
   sender: me
   sent_at: '2025-02-03T14:01:07.130000-06:00'
   sha256: 8307caf5a1898558ff661194249cf38d199575d08e03b01dc00d31308588e2e0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This VCF file is an electronic contact card for Evan Renter. It contains
+    his full name, a cellular phone number, and an encoded profile image for digital
+    address book applications.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:10:24.140013+00:00'
   source_available: true
 chat_message_guids_count: 4
 deleted_upstream: null

@@ -132,9 +132,10 @@ attachments:
   sender: me
   sent_at: '2024-10-11T22:03:48.121717-05:00'
   sha256: 4e6763ef1d0fbcefd17f772697fa9cef6e87d98496819f215e1f740d0af82052
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men take a selfie in front of a Karate Combat pit with a fighter
+    and referee.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:12.745880+00:00'
   source_available: true
 - id: b36148f20c953894
   filename: IMG_3146.PNG

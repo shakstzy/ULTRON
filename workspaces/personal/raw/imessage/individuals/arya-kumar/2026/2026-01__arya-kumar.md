@@ -33,9 +33,9 @@ attachments:
   sender: arya-kumar
   sent_at: '2026-01-03T13:45:33.932604-06:00'
   sha256: e9ad436733e112055409d51ef3c5e5d019a483445fd82c8f094bdb0ac82b8fad
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Texas Learner Driver License for Arya Shiva Kumar of Austin, Texas.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:26.486017+00:00'
   source_available: true
 - id: b75e7a672480417d
   filename: IMG_7451.MOV
@@ -44,9 +44,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2026-01-03T15:48:25.001877-06:00'
   sha256: 2061e0cc8949738d471a3a5efc00e92365dfdd06db22769d4c20e8c94ada0926
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person in a yellow hoodie fires a handgun at a target at an indoor
+    shooting range.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:43.471545+00:00'
   source_available: true
 - id: b8567b93d508975f
   filename: IMG_7454.MOV
@@ -55,9 +56,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2026-01-03T15:48:25.001877-06:00'
   sha256: ac092487e88a9aa13d6dabd8db013a47901abf8ed7f149f2238de0a8c830e84d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person in a yellow hoodie fires a pink handgun at a target in an
+    indoor shooting range.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:42.326950+00:00'
   source_available: true
 - id: c67af12cd86389f3
   filename: IMG_7453.MOV
@@ -77,9 +79,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2026-01-03T15:48:25.001877-06:00'
   sha256: 126506230fa4334a254bf278c95caaafd2ba6ff3be73ca776effa231e2c6a614
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Person in a yellow hoodie fires a handgun at a target in an indoor
+    shooting range.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:42.923413+00:00'
   source_available: true
 - id: 0a25dab130b9e51a
   filename: IMG_7449.MOV
@@ -88,9 +91,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2026-01-03T15:48:25.001877-06:00'
   sha256: d481f24c56ac1cb76d3517d46ae45dae3e86e1d9ee91e015351a03c6f91159fa
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person in a yellow hoodie fires a handgun at a paper target at an
+    indoor shooting range.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:44.912911+00:00'
   source_available: true
 - id: f8fd226ee1b944d9
   filename: IMG_7448.MOV
@@ -99,9 +103,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2026-01-03T15:48:25.001877-06:00'
   sha256: 4e6bbce93b2b8338cca262cefc185148e3c9f945cf73562c1dc4f0176bb100de
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person in a yellow hoodie fires a handgun at a target in an indoor
+    shooting range.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:35.830342+00:00'
   source_available: true
 - id: e6e9de6c3cbf45f8
   filename: IMG_7450.MOV

@@ -93,9 +93,10 @@ attachments:
   sender: ariana-hinge-la
   sent_at: '2026-02-21T20:40:26.650766-06:00'
   sha256: ec48f2fffb66341988e55230d62620ec546b22055f8b1df8ce6ccec3c83a542a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Person with braids and glasses posing with pointed black nails in a
+    kitchen selfie.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:10:14.965885+00:00'
   source_available: true
 chat_message_guids_count: 44
 deleted_upstream: null

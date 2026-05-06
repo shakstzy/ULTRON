@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-08-19T23:16:37.700955-05:00'
   sha256: df2473783f5a9282f52cf5a8683c73f6bb0b6c12e12ef7e20eb31a60f8bf18b8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Close-up of grey textured fabric with stray hairs and a white curved
+    line.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:20.084726+00:00'
   source_available: true
 chat_message_guids_count: 26
 deleted_upstream: null

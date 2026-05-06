@@ -34,9 +34,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2024-03-20T13:06:36.994564-05:00'
   sha256: 4edb10a607f1cf6861197191f1bca129c12476e0fff600fd3d59962a08431c31
-  description: null
-  description_model: null
-  extracted_at: null
+  description: FlightAware screenshot of scheduled SFO to JFK flight departures for
+    various airlines.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:45.189487+00:00'
   source_available: true
 - id: a58fb91eb023a3ef
   filename: IMG_3962.PNG

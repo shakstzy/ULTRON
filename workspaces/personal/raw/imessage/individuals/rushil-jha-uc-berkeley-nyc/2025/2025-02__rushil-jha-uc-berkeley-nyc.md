@@ -56,9 +56,10 @@ attachments:
   sender: me
   sent_at: '2025-02-04T16:07:54.185000-06:00'
   sha256: 8466a405c21b2a36ac4c2bb31b59513c79f30859b23c1f56ef69a2a32c0bfd41
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Maps 18-minute transit route from Union Square to Fairway Market
+    of Chelsea.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:36.211293+00:00'
   source_available: true
 - id: 99a73168a4d4ebcd
   filename: IMG_5522.PNG

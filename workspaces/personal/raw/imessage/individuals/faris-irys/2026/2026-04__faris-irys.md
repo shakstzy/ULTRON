@@ -22,9 +22,9 @@ attachments:
   sender: me
   sent_at: '2026-04-07T16:49:20.685663-05:00'
   sha256: 6a70e03993a118d3d15031132f33556d98716aac3e2343c443c06b6ce00ca38f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Table of Speedinvest team members and their professional email addresses.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:09:41.291766+00:00'
   source_available: true
 - id: aa44886b21fbc565
   filename: IMG_0517.png
@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2026-04-07T16:51:17.047855-05:00'
   sha256: e2ce3167b2588c7c24add7c461c5a3370b8cd83a8fcea51dabb07cb2416bd01c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Spreadsheet listing names and @spartangroup.io email addresses for
+    Spartan Group contacts.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:09:41.793675+00:00'
   source_available: true
 chat_message_guids_count: 16
 deleted_upstream: null

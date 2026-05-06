@@ -55,9 +55,10 @@ attachments:
   sender: me
   sent_at: '2025-11-11T21:47:27.437000-06:00'
   sha256: 73982cb0307563ea830b6c862d19ad21f75bb213015289ce413aff506309f0f0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Calendar event for Veera and Nikita Sachdev on Thu Nov 13, 8-9 AM in
+    Los Angeles.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:50.409120+00:00'
   source_available: true
 - id: 1ca51cbd4079a742
   filename: IMG_5395.png

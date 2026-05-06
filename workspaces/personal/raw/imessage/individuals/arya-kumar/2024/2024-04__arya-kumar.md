@@ -22,9 +22,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-04T08:40:43-05:00'
   sha256: f8bb9ef09f7c0717474a123d26071b678140f3f4945a9308f2f4a3286e471d30
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Robinhood investing screen showing a $186.17 balance and a 61.58% ($70.95)
+    daily gain.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:02.038521+00:00'
   source_available: true
 - id: 020da08709b6a5da
   filename: image000000.jpg
@@ -33,9 +34,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-04T09:56:11-05:00'
   sha256: 46caf0970e72f397889a77486c08ad6360bcbf45ab6413f55891ea9798b8f9ab
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LASA Prom Matchmaking flyer featuring internet memes and a QR code
+    taped to a wall.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:03.765032+00:00'
   source_available: true
 - id: 8a47217fc1c93e4e
   filename: image000001.jpg
@@ -55,9 +57,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-10T11:00:21-05:00'
   sha256: 6d8c4d83be29b74d1218e84d6aeb51ec8c12c895f5044d99a49507439afe1445
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A black Toyota Camry TRD sedan driving on a highway under a cloudy
+    sky.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:05.662144+00:00'
   source_available: true
 - id: 53c845075a2b675c
   filename: image000000.jpg
@@ -66,9 +69,9 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-12T12:28:35-05:00'
   sha256: e3c8c039b0b6a6025963f8da7f9c651af82106e3e17452d6367434732422874d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram DM with Max Meisel discussing FBLA results and "sweaty schools."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:05.749594+00:00'
   source_available: true
 - id: 9a03b27b03c25586
   filename: image000001.jpg

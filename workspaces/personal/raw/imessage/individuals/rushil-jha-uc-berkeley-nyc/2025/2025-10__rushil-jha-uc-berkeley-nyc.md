@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-10-01T13:28:34.078000-05:00'
   sha256: de501297aa90136f0d20b3ae0274f2570b8d9f2291e65425b3d9d52698055597
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Zillow listing for a $349,000 8-bedroom multi-family home at 58 Saint
+    Nicholas Ave, Brooklyn.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:31.876001+00:00'
   source_available: true
 - id: 7d9d08172e9e05a3
   filename: IMG_4676.png
@@ -80,9 +81,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2025-10-22T19:13:28.800929-05:00'
   sha256: a7366dddff623599308de9c06b8693874f00d3c24a9d178e8d7a365419898e84
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Spirit flight confirmation (KW6IGQ) for LGA to ORD round trip on November
+    7-10, 2025.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:36.535982+00:00'
   source_available: true
 chat_message_guids_count: 81
 deleted_upstream: null

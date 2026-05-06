@@ -22,9 +22,10 @@ attachments:
   sender: brian-correll-music
   sent_at: '2025-03-06T16:56:52.583960-06:00'
   sha256: 6192b398af97a1d20bba944404c535104fc6eb6e857058026a35bb191d0c98de
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Rappin' The Rivers festival poster featuring Rick and Morty as rappers
+    in Cardwell, Montana.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:27.795447+00:00'
   source_available: true
 chat_message_guids_count: 31
 deleted_upstream: null

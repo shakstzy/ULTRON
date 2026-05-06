@@ -46,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-09-16T00:17:02.055645-05:00'
   sha256: 52c01cfa13392ce30f60b471c5aa4e76596c95c39f320285c08014d9e37c8721
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram story screenshot of an antisemitic infographic titled "THE
+    ZIONIST CYCLE."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:10:30.837531+00:00'
   source_available: true
 - id: 9a05489968c923f8
   filename: IMG_1065.png
@@ -57,9 +58,10 @@ attachments:
   sender: me
   sent_at: '2025-09-18T05:31:12.040961-05:00'
   sha256: d76e228f1fd0b4ddb6185e941a018286d93228590d1b6123b910d9d77db33cd2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Golf ticket pricing showing $595 for a single player and $2,200 for
+    a foursome.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:10:44.069859+00:00'
   source_available: true
 - id: 683493bd0e7589df
   filename: IMG_1687.PNG

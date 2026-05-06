@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-08-18T01:41:41.332000-05:00'
   sha256: 369916c406ee4bf1599e6bdc515dfaa57a9f7982b736f259521552cec0489754
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Splice notification banner stating the desktop app is limited by the
+    current subscription.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:10:47.124320+00:00'
   source_available: true
 - id: 0c76af528fa322ba
   filename: my heart.wav

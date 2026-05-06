@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2026-03-05T04:04:55.107134-06:00'
   sha256: d85ab9c125603fa8a6b4b7a8f651c418f41ff9f34577fa8034586651badf08d0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Chat screenshot of shakstzy asking THANOS app to humanize a robotic
+    iMessage reply to Rushil.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:53.409431+00:00'
   source_available: true
 - id: ddfa888aec794ecd
   filename: 79439797836__503FB0E4-81BA-4C0F-9010-404C5F34EF8C.HEIC

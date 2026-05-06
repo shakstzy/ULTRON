@@ -22,9 +22,10 @@ attachments:
   sender: austin-davis-renter-showing
   sent_at: '2025-01-05T18:41:54.671212-06:00'
   sha256: b583a9058267e8a9861c4e2109b903d781ed1b8f7b46488d2c697061a67dc932
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Zillow rental application form with the legal name Austin Allen Davis
+    entered.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:09:55.955508+00:00'
   source_available: true
 - id: 148ab207620c7a0f
   filename: Rental Applications  Zillow.jpeg
@@ -33,9 +34,9 @@ attachments:
   sender: austin-davis-renter-showing
   sent_at: '2025-01-05T18:42:08.415740-06:00'
   sha256: 5ba863be303e6c2dca1a2ed4b829c4eb32f09fe6983828635b83bfe6cbaa34bc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Zillow rental application for Austin Davis: (310) 367-3816 and austinallendavis@gmail.com.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:10:54.523523+00:00'
   source_available: true
 - id: 86f87c58fe9d518a
   filename: Rental Applications  Zillow.jpeg
@@ -44,9 +45,10 @@ attachments:
   sender: austin-davis-renter-showing
   sent_at: '2025-01-05T18:42:28.934333-06:00'
   sha256: 762295d03a3a695b575ac70465ae740256756f12ee1c52e88ab441a49f0902f1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a Zillow rental application's household info section
+    for occupant count.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:09:58.216693+00:00'
   source_available: true
 - id: b09ef783d7b0bbfb
   filename: Rental Applications  Zillow.jpeg
@@ -66,9 +68,10 @@ attachments:
   sender: austin-davis-renter-showing
   sent_at: '2025-01-05T18:43:17.878268-06:00'
   sha256: 3f2da08bd90f38930779f0ede49ef8dd0020880ecc23a06c62a818c65d4c7a79
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a Zillow rental application showing identity verified
+    until October 30, 2025.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:09:47.676386+00:00'
   source_available: true
 - id: a5a618814d2dbf6d
   filename: Rental Applications  Zillow.jpeg
@@ -132,9 +135,10 @@ attachments:
   sender: austin-davis-renter-showing
   sent_at: '2025-01-11T17:31:38.964558-06:00'
   sha256: ce3c526603c8acd074fe32d628c7f8f2664c94bdc4a355204f88a78e13ee7311
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a Zillow page confirming that a rental application has
+    been submitted.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:09:51.936723+00:00'
   source_available: true
 - id: ee96cc049bf3c5ce
   filename: IMG_8093.png
@@ -143,9 +147,10 @@ attachments:
   sender: me
   sent_at: '2025-01-13T23:58:15.976222-06:00'
   sha256: 2e4a11d75da25af50e8af8d7e7602aa869b23036be5482e02bec560d7af89669
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Residential lease for 13245 Klein Ct, Sylmar, CA: Kumar Nagarajan
+    to Austin Allen Davis, $1,000/mo.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:10:05.708199+00:00'
   source_available: true
 - id: 09676b9b579b0631
   filename: IMG_5630.PNG
@@ -154,9 +159,10 @@ attachments:
   sender: austin-davis-renter-showing
   sent_at: '2025-01-14T23:16:54.723183-06:00'
   sha256: 8770c97c70813e3cd425e183cf85864e72cb65d087b7bf0ea9f38e86e5421626
-  description: null
-  description_model: null
-  extracted_at: null
+  description: DocuSign email screenshot for a lease agreement at 13245 Klein Ct,
+    Sylmar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:10:07.231619+00:00'
   source_available: true
 - id: 4d162647957a3779
   filename: IMG_5401.PNG
@@ -165,9 +171,9 @@ attachments:
   sender: me
   sent_at: '2025-01-28T19:42:56.631000-06:00'
   sha256: 32a16b6d5fa3718e653b41bfddcd5751d767252c15803cfb0dbe4c57b38d2bb2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Venmo QR code screenshot for Kumar Nagarajan with username @Kumar-Nagarajan.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:10:04.800743+00:00'
   source_available: true
 - id: 5509cb7fbb5aaba4
   filename: "Screenshot 2025-01-30 at 4.07.25\u202FPM.jpeg"
@@ -187,9 +193,9 @@ attachments:
   sender: austin-davis-renter-showing
   sent_at: '2025-01-30T15:08:06.674787-06:00'
   sha256: 24f2155b6e489ac6eefb49d6f18f7b3ac613cb805e22b6f19811f9df73045242
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A screenshot displaying the confirmation number 118jlv3jq.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:10:19.116794+00:00'
   source_available: true
 - id: af30c3752806c1b3
   filename: "Screenshot 2025-01-31 at 9.29.38\u202FAM.jpeg"
@@ -198,9 +204,10 @@ attachments:
   sender: austin-davis-renter-showing
   sent_at: '2025-01-31T08:29:48.966345-06:00'
   sha256: 830786356a8c954ee89b9e64fab71d501b8a9134b037a8e5f8b26abee65ddc08
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Venmo payment receipt for a transaction to @Kumar-Nagarajan on January
+    31, 2025.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:10:13.155874+00:00'
   source_available: true
 chat_message_guids_count: 295
 deleted_upstream: null

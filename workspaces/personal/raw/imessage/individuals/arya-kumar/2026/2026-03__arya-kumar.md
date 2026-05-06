@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2026-03-02T04:45:39.609000-06:00'
   sha256: 30d0821e9d3baf8fe212cdbd53aa1a1277acb035e809300987dd7ffbc62b10c1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram profile for judysfamilycafe featuring 595K followers and
+    pinned video reels.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:25.408198+00:00'
   source_available: true
 - id: 3bb16634bf88189c
   filename: IMG_0790.png

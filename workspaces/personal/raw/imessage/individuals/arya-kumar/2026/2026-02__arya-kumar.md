@@ -33,9 +33,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2026-02-06T17:58:27.929511-06:00'
   sha256: 66f5a439090bb9de4277ce481aef804066457d660c409c6779f748ce11d7dd3e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man with bright red hair wearing black overalls leans against a dark
+    grey SUV.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:28.718901+00:00'
   source_available: true
 chat_message_guids_count: 6
 deleted_upstream: null

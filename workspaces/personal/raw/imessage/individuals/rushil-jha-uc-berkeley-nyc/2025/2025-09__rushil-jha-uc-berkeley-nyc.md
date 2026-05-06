@@ -45,9 +45,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2025-09-05T20:23:36.665430-05:00'
   sha256: 189a11e066bd74de43742375de73d90f45369b188e8c7b4c6f3e5dbd86fcfda6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a Find My map showing Adi Shak Stzy at 411 Kelton Ave,
+    Los Angeles.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:21.419537+00:00'
   source_available: true
 - id: d3cc5a70ddd9b003
   filename: 77893260820__69D3913B-1064-488F-86E0-F180108370D1.HEIC
@@ -56,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2025-09-07T05:10:20.797298-05:00'
   sha256: 327cbb52ee0087a5503cdb286ed30fd735b0c16937ad03c617e51063328ddf96
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Small bronze Manneken Pis figurine on a dark gray countertop next to
+    a purple object.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:32.325972+00:00'
   source_available: true
 - id: 1563e5bf194fd787
   filename: IMG_1440.PNG
@@ -103,9 +105,10 @@ attachments:
   sender: me
   sent_at: '2025-09-10T16:48:52.489803-05:00'
   sha256: 89ea13a6591fea6623c32dc2334b2c2bfbd6240531482ea429bd98d771fd25fc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: $53 Spirit Airlines flight NK 2223 from Newark to Los Angeles on Tuesday,
+    September 30.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:11:40.752732+00:00'
   source_available: true
 - id: 7a630ad3bbee2f85
   filename: IMG_8833.png

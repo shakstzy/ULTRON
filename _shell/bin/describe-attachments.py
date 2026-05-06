@@ -196,6 +196,7 @@ def gemini_describe_once(path, kind, account, timeout=180):
     ]
     env = os.environ.copy()
     env["HOME"] = str(account[1])  # account home dir
+    env["GEMINI_CLI_TRUST_WORKSPACE"] = "true"  # bypass trust prompt in per-account HOME
     try:
         proc = subprocess.run(cmd, capture_output=True, text=True,
                               timeout=timeout, env=env)

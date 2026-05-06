@@ -1,0 +1,402 @@
+[
+  {
+    "chunk_num": 1,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_001.txt"
+  },
+  {
+    "chunk_num": 2,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_002.txt"
+  },
+  {
+    "chunk_num": 3,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_003.txt"
+  },
+  {
+    "chunk_num": 4,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_004.txt"
+  },
+  {
+    "chunk_num": 5,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_005.txt"
+  },
+  {
+    "chunk_num": 6,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_006.txt"
+  },
+  {
+    "chunk_num": 7,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_007.txt"
+  },
+  {
+    "chunk_num": 8,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_008.txt"
+  },
+  {
+    "chunk_num": 9,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_009.txt"
+  },
+  {
+    "chunk_num": 10,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_010.txt"
+  },
+  {
+    "chunk_num": 11,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_011.txt"
+  },
+  {
+    "chunk_num": 12,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_012.txt"
+  },
+  {
+    "chunk_num": 13,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_013.txt"
+  },
+  {
+    "chunk_num": 14,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_014.txt"
+  },
+  {
+    "chunk_num": 15,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_015.txt"
+  },
+  {
+    "chunk_num": 16,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_016.txt"
+  },
+  {
+    "chunk_num": 17,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_017.txt"
+  },
+  {
+    "chunk_num": 18,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_018.txt"
+  },
+  {
+    "chunk_num": 19,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_019.txt"
+  },
+  {
+    "chunk_num": 20,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_020.txt"
+  },
+  {
+    "chunk_num": 21,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_021.txt"
+  },
+  {
+    "chunk_num": 22,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_022.txt"
+  },
+  {
+    "chunk_num": 23,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_023.txt"
+  },
+  {
+    "chunk_num": 24,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_024.txt"
+  },
+  {
+    "chunk_num": 25,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_025.txt"
+  },
+  {
+    "chunk_num": 26,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_026.txt"
+  },
+  {
+    "chunk_num": 27,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_027.txt"
+  },
+  {
+    "chunk_num": 28,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_028.txt"
+  },
+  {
+    "chunk_num": 29,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_029.txt"
+  },
+  {
+    "chunk_num": 30,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_030.txt"
+  },
+  {
+    "chunk_num": 31,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_031.txt"
+  },
+  {
+    "chunk_num": 32,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_032.txt"
+  },
+  {
+    "chunk_num": 33,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_033.txt"
+  },
+  {
+    "chunk_num": 34,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_034.txt"
+  },
+  {
+    "chunk_num": 35,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_035.txt"
+  },
+  {
+    "chunk_num": 36,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_036.txt"
+  },
+  {
+    "chunk_num": 37,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_037.txt"
+  },
+  {
+    "chunk_num": 38,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_038.txt"
+  },
+  {
+    "chunk_num": 39,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_039.txt"
+  },
+  {
+    "chunk_num": 40,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_040.txt"
+  },
+  {
+    "chunk_num": 41,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_041.txt"
+  },
+  {
+    "chunk_num": 42,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_042.txt"
+  },
+  {
+    "chunk_num": 43,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_043.txt"
+  },
+  {
+    "chunk_num": 44,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_044.txt"
+  },
+  {
+    "chunk_num": 45,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_045.txt"
+  },
+  {
+    "chunk_num": 46,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_046.txt"
+  },
+  {
+    "chunk_num": 47,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_047.txt"
+  },
+  {
+    "chunk_num": 48,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_048.txt"
+  },
+  {
+    "chunk_num": 49,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_049.txt"
+  },
+  {
+    "chunk_num": 50,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_050.txt"
+  },
+  {
+    "chunk_num": 51,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_051.txt"
+  },
+  {
+    "chunk_num": 52,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_052.txt"
+  },
+  {
+    "chunk_num": 53,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_053.txt"
+  },
+  {
+    "chunk_num": 54,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_054.txt"
+  },
+  {
+    "chunk_num": 55,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_055.txt"
+  },
+  {
+    "chunk_num": 56,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_056.txt"
+  },
+  {
+    "chunk_num": 57,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_057.txt"
+  },
+  {
+    "chunk_num": 58,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_058.txt"
+  },
+  {
+    "chunk_num": 59,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_059.txt"
+  },
+  {
+    "chunk_num": 60,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_060.txt"
+  },
+  {
+    "chunk_num": 61,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_061.txt"
+  },
+  {
+    "chunk_num": 62,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_062.txt"
+  },
+  {
+    "chunk_num": 63,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_063.txt"
+  },
+  {
+    "chunk_num": 64,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_064.txt"
+  },
+  {
+    "chunk_num": 65,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_065.txt"
+  },
+  {
+    "chunk_num": 66,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_066.txt"
+  },
+  {
+    "chunk_num": 67,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_067.txt"
+  },
+  {
+    "chunk_num": 68,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_068.txt"
+  },
+  {
+    "chunk_num": 69,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_069.txt"
+  },
+  {
+    "chunk_num": 70,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_070.txt"
+  },
+  {
+    "chunk_num": 71,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_071.txt"
+  },
+  {
+    "chunk_num": 72,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_072.txt"
+  },
+  {
+    "chunk_num": 73,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_073.txt"
+  },
+  {
+    "chunk_num": 74,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_074.txt"
+  },
+  {
+    "chunk_num": 75,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_075.txt"
+  },
+  {
+    "chunk_num": 76,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_076.txt"
+  },
+  {
+    "chunk_num": 77,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_077.txt"
+  },
+  {
+    "chunk_num": 78,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_078.txt"
+  },
+  {
+    "chunk_num": 79,
+    "n_files": 50,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_079.txt"
+  },
+  {
+    "chunk_num": 80,
+    "n_files": 22,
+    "manifest_path": "/Users/shakstzy/ULTRON/workspaces/personal/graphify-out/.graphify_chunk_files_080.txt"
+  }
+]

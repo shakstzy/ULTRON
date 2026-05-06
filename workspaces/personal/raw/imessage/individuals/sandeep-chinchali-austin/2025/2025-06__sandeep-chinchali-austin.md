@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-06-09T01:47:30.210000-05:00'
   sha256: 70bd2954d5cd63bf1b326249d2287023d81d25fa20095587822a72d79042acfe
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple Maps screenshot of Untitled At 3 Freeman Alley hotel in the Lower
+    East Side, NYC.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:44.636493+00:00'
   source_available: true
 chat_message_guids_count: 53
 deleted_upstream: null

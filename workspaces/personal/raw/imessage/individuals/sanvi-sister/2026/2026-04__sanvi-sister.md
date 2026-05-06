@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2026-04-03T02:03:55.630000-05:00'
   sha256: 3ff3a87d71508a60220d7a8a257405ddb65aaca28b01d4a4fca0c0c323fc87a0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: AI chat interface showing interview prep research for a16z Speedrun
+    GP Jonathan Lai.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:58.119599+00:00'
   source_available: true
 - id: ae3d22fd42d9db20
   filename: 20260407_203247_11CFB3.JPEG
@@ -81,9 +82,10 @@ attachments:
   sender: sanvi-sister
   sent_at: '2026-04-16T19:19:56.880811-05:00'
   sha256: eae76139da5f1cc1a1c5a5dd9cafdc17544704992f889cfad854b03d4f591121
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person holds a cracked iPhone displaying a Snapchat conversation
+    with Keira Gentile.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:51.991551+00:00'
   source_available: true
 - id: 01f9eea11fdb7283
   filename: 79826438282__EB852CD5-0AD4-4415-8A45-D3F7D483F90A.HEIC
@@ -138,9 +140,9 @@ attachments:
   sender: me
   sent_at: '2026-04-27T01:15:25.075732-05:00'
   sha256: bede2324558b3715785980d43f1bacbfee02e5b9f16872462226ce7108d8ffa7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Person at a desk in a dark room with guitars and a white softbox umbrella.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:58.119835+00:00'
   source_available: true
 - id: 69c75896433f8800
   filename: IMG_5688.jpeg
@@ -197,9 +199,10 @@ attachments:
   sender: sanvi-sister
   sent_at: '2026-04-29T01:31:54.198895-05:00'
   sha256: 34cf1414a77ff91fe0010bf647742f81fab79993b267bfef5b06f132f9c35389
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man kisses a woman's forehead while she sticks her tongue out in
+    a nighttime selfie.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:01.191213+00:00'
   source_available: true
 - id: 94da72576b75395d
   filename: IMG_5685.png
@@ -243,9 +246,10 @@ attachments:
   sender: me
   sent_at: '2026-04-29T01:38:40.314463-05:00'
   sha256: e5e09d59d5a720e63e19efc0665ebd5452d70290c09b2030be7a3aa4824e7d95
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down night photo of a couple with a city skyline and water in
+    the background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:06.482932+00:00'
   source_available: true
 - id: 813afd718f1ae2ef
   filename: IMG_4663.mov
@@ -288,9 +292,10 @@ attachments:
   sender: me
   sent_at: '2026-04-29T05:34:12.247900-05:00'
   sha256: e5e09d59d5a720e63e19efc0665ebd5452d70290c09b2030be7a3aa4824e7d95
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down night photo of a couple with a city skyline and water in
+    the background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:06.482932+00:00'
   source_available: true
 - id: a0c5fcc96a161cdf
   filename: IMG_8302.jpeg
@@ -391,9 +396,10 @@ attachments:
   sender: me
   sent_at: '2026-04-29T05:34:12.247900-05:00'
   sha256: ed7510178b8f82433924a954d51f68b4e0e8663c76550e87d7b37988f2ae0c0a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man kisses a woman's cheek at night by a waterfront with a city skyline
+    in the background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:26.345854+00:00'
   source_available: true
 - id: 7780d322eda7b0a5
   filename: IMG_8297.jpeg
@@ -402,9 +408,10 @@ attachments:
   sender: me
   sent_at: '2026-04-29T05:34:12.247900-05:00'
   sha256: 43f0c569b57014de90834459851754dddbfaf2aec26bf0ba845c5142d2273ee0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down night selfie of a couple with a city skyline and water
+    in the background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:06.740151+00:00'
   source_available: true
 - id: 4ebfd6bfef867759
   filename: IMG_8292.jpeg
@@ -470,9 +477,10 @@ attachments:
   sender: me
   sent_at: '2026-04-29T05:34:12.247900-05:00'
   sha256: de6d4a6be47d5a750de25ecaf39dcfd7704eee7de4e12bca745e41ec5e6dabe3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down nighttime selfie of a smiling couple with a city skyline
+    and bridge railing.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:14.820876+00:00'
   source_available: true
 - id: dd916bbda7c9f7fa
   filename: IMG_8307.jpeg
@@ -493,9 +501,10 @@ attachments:
   sender: me
   sent_at: '2026-04-29T05:34:12.247900-05:00'
   sha256: b705a68afda3ae9595bfd8e9631433877e93771beb94a4a1f1a7c2c6c6949efc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down night selfie of a pouting woman and smiling man by a river
+    with a city skyline.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:44.504654+00:00'
   source_available: true
 - id: 8aa18bd01dea2495
   filename: IMG_8288.JPG
@@ -504,9 +513,10 @@ attachments:
   sender: me
   sent_at: '2026-04-29T05:34:13.993592-05:00'
   sha256: b842a77c7079e2acd43edfd3b7f4e6f55a15e6211e46a9a658a89d29f231201a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person stands on a pier at night with a 5' 10" height measurement
+    overlay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:08.864297+00:00'
   source_available: true
 - id: 5804899284ccc0dd
   filename: IMG_8289.jpeg

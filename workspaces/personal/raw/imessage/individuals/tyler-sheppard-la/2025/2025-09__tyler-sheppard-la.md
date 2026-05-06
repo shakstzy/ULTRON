@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-09-13T18:39:35.628892-05:00'
   sha256: ae01a77d73d032585a8553b2a91995efc67d6b66ff2cf63c4dd59a8551462453
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dark mode screenshot of emotional, all-caps notes about heartbreak
+    and toxic relationships.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:13.456001+00:00'
   source_available: true
 - id: a58cd067f513e55b
   filename: 01 Automatic.mp3

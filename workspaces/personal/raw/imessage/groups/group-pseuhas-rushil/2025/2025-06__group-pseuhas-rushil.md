@@ -154,9 +154,10 @@ attachments:
   sender: me
   sent_at: '2025-06-27T06:05:48.301332-05:00'
   sha256: 9c37eec7db04923905e38b02195b6a9c54f2bacd31c83f1fd1d08c294e4e88ce
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Hinge screenshot: a user replies "Can I be that snake" to Anusha''s
+    fear of toilet snakes.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:37.960919+00:00'
   source_available: true
 - id: 0629478a5eddc6f6
   filename: IMG_7392.PNG

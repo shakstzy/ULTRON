@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2026-04-03T02:24:14.988443-05:00'
   sha256: ce0f75183a77fe698ea3f2a2a565f3c3a93bc289cf00f68a2740a2924aa41f14
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Amazon product page for a 'Proof That Tony Stark Has a Heart' Arc Reactor
+    replica.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:44.122454+00:00'
   source_available: true
 - id: c75bf81069e03b29
   filename: 79790296471__009B6AF7-FD98-4CAA-9724-5341C575D41A.jpeg

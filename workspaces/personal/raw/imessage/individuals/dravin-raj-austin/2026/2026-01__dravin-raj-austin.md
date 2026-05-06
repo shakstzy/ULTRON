@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-01-02T20:07:47.150000-06:00'
   sha256: eb2a51d04c4e929dd597f17030112360ae5e33fcf010c10d060a6be45dc6b4f1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Whole Foods Market Google Maps listing and location at 525 N Lamar
+    Blvd, Austin, TX.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:22.178687+00:00'
   source_available: true
 chat_message_guids_count: 12
 deleted_upstream: null

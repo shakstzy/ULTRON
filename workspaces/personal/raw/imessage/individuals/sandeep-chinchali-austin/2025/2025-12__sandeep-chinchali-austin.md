@@ -34,9 +34,9 @@ attachments:
   sender: sandeep-chinchali-austin
   sent_at: '2025-12-31T22:48:13.129219-06:00'
   sha256: 93d41dd064f0dc7a4fd4ce7ca2b6b0c8dc0d43200b51144671e1848155ac2732
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A newborn baby sleeps in a striped hospital beanie and swaddle blanket.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:43.358801+00:00'
   source_available: true
 chat_message_guids_count: 43
 deleted_upstream: null

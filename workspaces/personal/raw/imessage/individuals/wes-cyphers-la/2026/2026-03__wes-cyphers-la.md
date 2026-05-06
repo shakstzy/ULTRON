@@ -58,9 +58,10 @@ attachments:
   sender: me
   sent_at: '2026-03-24T21:40:33.876710-05:00'
   sha256: 4a7e52e374de08ec29165032b5cca77d519de4115cbf0249286d8b4eeb875a71
-  description: null
-  description_model: null
-  extracted_at: null
+  description: File tree for "TYLERPERRY" project with folders for audio, data, and
+    models on a computer screen.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:05.169064+00:00'
   source_available: true
 - id: 5452a32cadf35306
   filename: 79610824975__2D6490F9-D240-459C-9741-72EDC44201A9.HEIC
@@ -69,9 +70,10 @@ attachments:
   sender: me
   sent_at: '2026-03-25T00:11:05.058659-05:00'
   sha256: b611b58a49e541a95266b4a46056e59e60612faa30677e07f5d42c2389043144
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Screen showing GAN training metrics: epoch 59/500, gen/disc loss,
+    and 6.3 hours remaining.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:03.860419+00:00'
   source_available: true
 - id: 901b770c5906c3d0
   filename: 79617240242__6465C0C3-1BDF-40D7-B822-7A47B65EA550.HEIC
@@ -80,9 +82,10 @@ attachments:
   sender: me
   sent_at: '2026-03-25T18:00:11.376263-05:00'
   sha256: a54d29fd50d6c54a133d1dac2f27fa8e58380c93277ffe66de6c34a63ff58352
-  description: null
-  description_model: null
-  extracted_at: null
+  description: AI training status screen showing epoch 320/500, 64% progress, and
+    loss metrics.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:14.107328+00:00'
   source_available: true
 - id: 201b46b8bead0677
   filename: 79617242856__DD9B3A6D-AFB6-4A20-ACDD-CC78EC43345F.HEIC

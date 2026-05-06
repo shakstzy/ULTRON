@@ -22,9 +22,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-04-01T18:58:42.357139-05:00'
   sha256: d9a18e2e67a8bef8094e39b73b61d08a3b5193109e292aec6635cbc50f3a0f97
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Shervin action figure in packaging with bong, ZYN, white powder bag,
+    and Backwoods accessories.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:36.862408+00:00'
   source_available: true
 chat_message_guids_count: 3
 deleted_upstream: null

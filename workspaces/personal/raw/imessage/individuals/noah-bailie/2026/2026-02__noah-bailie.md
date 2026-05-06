@@ -56,9 +56,10 @@ attachments:
   sender: me
   sent_at: '2026-02-05T13:31:28.887693-06:00'
   sha256: 71700b1bea92c95096ded0ca8fff06dc15e7d379d83dea92a0c4e0571c536d4f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Find My map locating "Aarti's Handbag" at 42011 Fourth St W, Lancaster,
+    CA.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:41.563082+00:00'
   source_available: true
 - id: a1e9b32283fd7e48
   filename: IMG_6217.png
@@ -126,9 +127,10 @@ attachments:
   sender: me
   sent_at: '2026-02-08T23:09:12.134585-06:00'
   sha256: 1b08aea06abea6c559d133d2086089fcb94ddd863babc69fb6f042764ed6c4cf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A young news anchor with curly hair and a goatee reporting for KXII
+    12.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:46.795023+00:00'
   source_available: true
 - id: 7dc946a729d0fc04
   filename: IMG_2256.png
@@ -137,9 +139,10 @@ attachments:
   sender: me
   sent_at: '2026-02-08T23:09:41.102880-06:00'
   sha256: 600b84c8f717b4dfeb36084b1393f960ba0153985704666a1c4b3fc93d01341b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A close-up of physical Bitcoin tokens within a video player at the
+    10:09 mark.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:47.805049+00:00'
   source_available: true
 - id: f0c0252a24480939
   filename: IMG_7292.heic

@@ -22,9 +22,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2025-08-19T22:48:25.717391-05:00'
   sha256: 49e708f4f14b3fb5eec8b83e3026644c1100c4521504d7ff3b5d6411ee54d0ca
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down night view of numbered brick gas station pillars and a
+    lighted blue canopy.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:42.853150+00:00'
   source_available: true
 - id: fcaf04b2fb83fc0f
   filename: D6BA9360-1469-4159-9A40-FC0BA5BD630C.MOV

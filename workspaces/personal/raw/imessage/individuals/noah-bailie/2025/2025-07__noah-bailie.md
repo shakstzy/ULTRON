@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-07-03T18:20:57.791800-05:00'
   sha256: e9cec30808716f225c90aeaba0941bf25a225191c509f11cdeff33f3e7bdc0b1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Maps route to Sherman, TX and a notification from Noah Bailie
+    about a 7 PM start.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:50.009789+00:00'
   source_available: true
 - id: 4ac579b1cccda9d5
   filename: 77328298161__4C461FB7-984B-4B3D-92E5-D9D4039BA4CF.jpeg
@@ -33,9 +34,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2025-07-03T19:53:15.659060-05:00'
   sha256: 0614c4977dc451bb496f73e513d4127dfba1212a94742a35883fee242edbc738
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down view of a crowd in lawn chairs at a "Lights on the Lake"
+    outdoor concert stage.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:41.991436+00:00'
   source_available: true
 - id: d124f7c5ebeb3cd0
   filename: IMG_0343.PNG

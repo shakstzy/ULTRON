@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2026-02-28T00:57:11.218000-06:00'
   sha256: 8378b1a0034c08ace947d7c2005e759f7732bad6e166d1df9b8a45e0a4c52790
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A crowded bar with people under green decorative lights and a Texas
+    flag.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:37.617785+00:00'
   source_available: true
 chat_message_guids_count: 38
 deleted_upstream: null

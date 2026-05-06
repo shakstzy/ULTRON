@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2026-02-23T00:05:34.796000-06:00'
   sha256: 547e9be3dde80667ce0badeab0d0617f6af5d0b362ba431233a95a46a3c0654b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Toyota car interior at night facing a brightly lit tunnel with a grid-patterned
+    ceiling.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:11.496947+00:00'
   source_available: true
 chat_message_guids_count: 69
 deleted_upstream: null

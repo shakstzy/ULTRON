@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2025-11-04T09:29:34.512818-06:00'
   sha256: ceca5f2a7b09aec2702e451b96c8d10df5804a3f3ca71cc8d4959a44e1e0ffbd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Close-up screenshot of an Airheads Soft Bites candy bag with the red
+    smiling balloon logo.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:39.733702+00:00'
   source_available: true
 - id: d4f9d6d186184280
   filename: IMG_3059.PNG
@@ -55,9 +56,9 @@ attachments:
   sender: me
   sent_at: '2025-11-04T09:30:02.424843-06:00'
   sha256: 4d727f47effc88df740497bed65ea52f74bd3a8b6ac1d341f0359d9a57c974a5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Profile of a smiling young man in a black shirt by a sunny lake.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:37.892856+00:00'
   source_available: true
 - id: 449875c2e4e1ff52
   filename: IMG_8620.PNG
@@ -77,9 +78,10 @@ attachments:
   sender: me
   sent_at: '2025-11-04T09:39:36.720793-06:00'
   sha256: c967b235651814fd74c5ef814bb8d7ec851eeb939ed369df883baeb309754d31
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of the Goblin Barrel card from the Clash Royale Wiki
+    on Fandom.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:38.994044+00:00'
   source_available: true
 chat_message_guids_count: 32
 deleted_upstream: null

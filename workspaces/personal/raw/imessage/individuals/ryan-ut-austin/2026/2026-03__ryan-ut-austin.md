@@ -22,9 +22,10 @@ attachments:
   sender: ryan-ut-austin
   sent_at: '2026-03-01T04:06:52.974199-06:00'
   sha256: 735aecfe8def3e7837251df0ca6a40f065b17881ad9cd10053c85cf36ffad303
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Tweet reporting a mass shooting at Buford's bar in Austin with emergency
+    vehicles.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:21.329379+00:00'
   source_available: true
 - id: ef753af2b18452ca
   filename: IMG_0808.HEIC
@@ -33,9 +34,10 @@ attachments:
   sender: ryan-ut-austin
   sent_at: '2026-03-14T04:09:02.051536-05:00'
   sha256: 2439f0d5a3f982b9b309e9963b6122d8c181b6c802f3f995b6eca2a2114038bc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A woman leans her head on a man with dark curly hair and a silver cross
+    necklace in a selfie.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:01.028201+00:00'
   source_available: true
 - id: b60ba86507391f1b
   filename: IMG_7729.PNG

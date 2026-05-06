@@ -22,9 +22,10 @@ attachments:
   sender: sam-garcia
   sent_at: '2026-03-22T23:36:30.335930-05:00'
   sha256: 778b8780cf90fabcbbae63e6507ddef72ef43317345e4dc23fca6faeebfc4868
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Top-down view of a green pool table with a cue ball, racked balls,
+    and a green play button icon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:31.668280+00:00'
   source_available: true
 - id: 48c554e6afa1dba3
   filename: 23F710F5-58BD-4D36-AE85-20A18DD08B47.mov
@@ -45,9 +46,10 @@ attachments:
   sender: sam-garcia
   sent_at: '2026-03-23T21:49:05.754920-05:00'
   sha256: 778b8780cf90fabcbbae63e6507ddef72ef43317345e4dc23fca6faeebfc4868
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Top-down view of a green pool table with a cue ball, racked balls,
+    and a green play button icon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:31.668280+00:00'
   source_available: true
 - id: 7352752610749da1
   filename: ms-c3qXWS.jpeg
@@ -112,9 +114,10 @@ attachments:
   sender: sam-garcia
   sent_at: '2026-03-28T17:11:21.619553-05:00'
   sha256: 778b8780cf90fabcbbae63e6507ddef72ef43317345e4dc23fca6faeebfc4868
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Top-down view of a green pool table with a cue ball, racked balls,
+    and a green play button icon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:31.668280+00:00'
   source_available: true
 - id: 64b2a3d396792678
   filename: ms-jxZwGM.jpeg
@@ -123,9 +126,10 @@ attachments:
   sender: sam-garcia
   sent_at: '2026-03-28T17:11:21.619553-05:00'
   sha256: 778b8780cf90fabcbbae63e6507ddef72ef43317345e4dc23fca6faeebfc4868
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Top-down view of a green pool table with a cue ball, racked balls,
+    and a green play button icon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:31.668280+00:00'
   source_available: true
 - id: dfe351fa6c0fe294
   filename: ms-59HQxk.jpeg
@@ -145,9 +149,10 @@ attachments:
   sender: me
   sent_at: '2026-03-29T18:17:31.974000-05:00'
   sha256: 59bd44b96e9109c7b2b225e43ae901c501cff0b120be8db0132110d2e0a3a637
-  description: null
-  description_model: null
-  extracted_at: null
+  description: DistroKid release page for Shak STZY's single "Mars" being transferred
+    to stores.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:24.073735+00:00'
   source_available: true
 - id: 25cb32e249609cf1
   filename: IMG_1750.png

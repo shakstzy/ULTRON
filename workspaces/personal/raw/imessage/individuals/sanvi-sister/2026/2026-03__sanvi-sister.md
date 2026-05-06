@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-08T20:03:35.544000-05:00'
   sha256: b30c45c8e096c7e3f7ea608880936b261d09c35a0ada7ae6b8fc0b9693950c97
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Night view of a tall lit building next to a graffitied wall and cars
+    parked on a street.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:47.928023+00:00'
   source_available: true
 - id: 61eda2ad2b2486a9
   filename: 12D1A40F-C12B-40BA-92D0-079AB338C2C2.pluginPayloadAttachment

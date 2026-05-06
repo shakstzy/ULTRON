@@ -67,9 +67,10 @@ attachments:
   sender: rene-hinge-austin
   sent_at: '2026-03-02T22:09:13.032212-06:00'
   sha256: 634a5a265a4751fbcc296c4fdca03ec5735dd109a0aa18c17ea33a71f9c66530
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A grassy field and bare trees at night, seen from a vehicle window
+    beside a tall concrete pole.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:28.920977+00:00'
   source_available: true
 - id: 90c180b6b0126ad8
   filename: D156A65F-B50A-4255-A103-AAFF7B8FC634.FCE26FBD-6F4C-4CC6-9B1D-678AFED62E91.pluginPayloadAttachment
@@ -148,9 +149,10 @@ attachments:
   sender: rene-hinge-austin
   sent_at: '2026-03-24T21:01:59-05:00'
   sha256: c2e824bc2ba0e6d21e9e0247de6b50797dfa495a15d906b0f8e6c4589fe30d10
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple Maps screenshot of a 49-minute driving route to 1201 E Rundberg
+    Ln in Austin avoiding tolls.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:25.212948+00:00'
   source_available: true
 chat_message_guids_count: 306
 deleted_upstream: null

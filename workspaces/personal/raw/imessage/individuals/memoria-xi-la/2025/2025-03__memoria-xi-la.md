@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-03-23T01:09:26.518000-05:00'
   sha256: a53e25a889796b3bc5ededb862792f910666fccaa6e6a8e9c09ed50d337e3c23
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of Spotify playing "Never Let Go" by Memoria XI with
+    highway album art.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:58.902233+00:00'
   source_available: true
 - id: 97a0675bf9047776
   filename: stunna.m4a

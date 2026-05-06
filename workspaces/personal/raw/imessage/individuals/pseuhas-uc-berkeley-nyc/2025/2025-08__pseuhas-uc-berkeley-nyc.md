@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-08-08T07:18:53.383275-05:00'
   sha256: 0cb06955a188af168972f1940966605f79fd21cff71588a9d6c4fca581c90805
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Close-up of textured gray asphalt with a small dark stain and embedded
+    light gravel.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:27.876082+00:00'
   source_available: true
 - id: 9a0d272c2ccb72d4
   filename: IMG_7756.PNG
@@ -57,9 +58,10 @@ attachments:
   sender: me
   sent_at: '2025-08-12T20:46:14.529620-05:00'
   sha256: 38bc0eb712460e8e86206149d6169779fe793fc23d9d896991b3d1585fa6bcbd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A cartoon green-skinned witch in a black hat and dress flying on a
+    broomstick.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:23.292188+00:00'
   source_available: true
 - id: 640311a932ba3486
   filename: BED771E1-8EC4-46C4-B17C-66CB5EE9805F.MOV
@@ -79,9 +81,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-08-18T15:50:55.875745-05:00'
   sha256: c0e53460ac170c4224ea2b2803b7860f6dbef55d75d8584edaf4169f7ec0ec2f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'iMessage screenshot: Invitation to a Satyanarayan Pooja on Aug 16
+    in Wilton, CT.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:39.339699+00:00'
   source_available: true
 - id: 11678a06c9555423
   filename: IMG_7054.png
@@ -90,9 +93,10 @@ attachments:
   sender: me
   sent_at: '2025-08-18T15:54:10.653000-05:00'
   sha256: d25af174b170292df54b4795ad821fb6fcb28c11484ec64eaa341e0a081d756a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mr. Burns from The Simpsons with red devil horns, grinning and steepling
+    his fingers.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:22.609936+00:00'
   source_available: true
 - id: a85f327171049f7c
   filename: IMG_7133.png
@@ -123,9 +127,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-08-19T17:19:34.892472-05:00'
   sha256: fa038d2ed0487dd1881ff4ddbd1c83937b33f73ff02daa4c889403d8c3eb2f9c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat with Bipul Aunty about Maa Kali temples and Rushil's
+    status.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:28.236651+00:00'
   source_available: true
 - id: bb97e315bc5cdb10
   filename: cbe63dfd-993e-4d40-8fe3-4cb8a3ffdee5.JPG
@@ -134,9 +139,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-08-19T17:20:10.851768-05:00'
   sha256: d78697475fa36dfc4b5cc1613e68ddde159c8140a59feaa6effd9ef8dba0e81f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Maa Kaali Puja flyer for Oct 19, 2025, at Hindu Mandir in CT, sponsored
+    by the Jha family.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:38.325509+00:00'
   source_available: true
 chat_message_guids_count: 214
 deleted_upstream: null

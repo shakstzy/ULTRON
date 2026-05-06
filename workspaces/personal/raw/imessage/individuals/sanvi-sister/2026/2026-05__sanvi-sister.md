@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-05-01T15:37:48.709279-05:00'
   sha256: 6ac6caefc88c9a219e560981a5c2e539b66258b752b642daf9c5425ae45ceef6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a $85 wheel throwing class booking page showing May 2026
+    dates and times.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:14.194988+00:00'
   source_available: true
 - id: 8011b0aea2cb2764
   filename: IMG_8332.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2026-05-01T15:37:48.709279-05:00'
   sha256: e98e1fb383c6f1bb8d2b5ec3cbdc08aa372e2a425efe961f4fc1fe8d1969e7d2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Austin Pottery May 2026 calendar showing a full Wheel Throwing OTC
+    class from 6:00-8:30 PM.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:58.343103+00:00'
   source_available: true
 - id: 9f84e5cc6c4702e3
   filename: IMG_8334.PNG
@@ -91,9 +93,10 @@ attachments:
   sender: me
   sent_at: '2026-05-02T03:18:42.266824-05:00'
   sha256: d168f6986e8d6d7423124971a38fa0114b3c28bd1f2311ef2190c79b656eb569
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down selfie of a man and woman in a dark setting, woman sticking
+    her tongue out.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:51.120050+00:00'
   source_available: true
 - id: ab7557dd8a1e591b
   filename: IMG_8375.heic
@@ -102,9 +105,10 @@ attachments:
   sender: me
   sent_at: '2026-05-02T03:18:42.266824-05:00'
   sha256: fc9afcccc7373d1bec81684e071306aa1ebaa4f00ec6ec21ad3da41036532918
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man and woman smiling for a nighttime selfie on an outdoor wooden
+    deck.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:52.810789+00:00'
   source_available: true
 - id: dd7ac0858adc5fd8
   filename: IMG_8373.heic
@@ -113,9 +117,10 @@ attachments:
   sender: me
   sent_at: '2026-05-02T03:18:42.266824-05:00'
   sha256: 36e73940e19bc4077a91862e5825ea779eb1ec0f929a4b63a441f0febfa6da36
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man and woman pose smiling in front of the Rozco's Comedy Club sign
+    at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:15.193197+00:00'
   source_available: true
 - id: 8f613c5405bdde3e
   filename: IMG_8378.HEIC
@@ -124,9 +129,9 @@ attachments:
   sender: me
   sent_at: '2026-05-02T03:18:42.266824-05:00'
   sha256: 6de9dc5907958c2cb555ed027874f80eaeeacb78c56f47dda614623e9d450f22
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down low-light selfie of a man with a mustache and a woman.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:55.100419+00:00'
   source_available: true
 - id: b38438d8874eae33
   filename: IMG_8374.heic
@@ -159,9 +164,9 @@ attachments:
   sender: me
   sent_at: '2026-05-02T03:18:42.266824-05:00'
   sha256: c34ce56b61feb846c820af6f8e93bc1c25c06dc950422d138f1f310846b53718
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Low-light selfie of a man and a woman lying together in the dark.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:53.585111+00:00'
   source_available: true
 - id: 5feb0a94ddb559f0
   filename: PXL_20260502_221748496.jpg

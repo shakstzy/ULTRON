@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-01-21T11:15:20.603830-06:00'
   sha256: f7cae2b8918a1e59641a9d945059a8a5682b7f3bdbe8d99a8784cc3fdda9f83d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: IDE tabs for Python files including shakbot.py, FINALBOT.PY, FINALTEST.PY,
+    and FINALCRM.PY.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:06.016585+00:00'
   source_available: true
 - id: 21a2d0716853f1f0
   filename: IMG_9461.png
@@ -45,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-01-22T18:07:08.778501-06:00'
   sha256: ba4d711eeac8e6d719f1b9ad92a1db90dca64f1b3b61894fe0e58f5ca468de7a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram API configuration page for 'Teleshak' showing API ID, hash,
+    and MTProto test server.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:26.862292+00:00'
   source_available: true
 - id: bdd71aad2f98d09c
   filename: user_session.session

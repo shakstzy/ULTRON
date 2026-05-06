@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-11-05T21:18:04.862652-06:00'
   sha256: 151a72962bb2548a9547a2f5950ca42f009a954604cdb6c3fb270a53677206c4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Allstate insurance claim 000807974662 assigning 20% liability to Kumar
+    for an accident.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:08.963958+00:00'
   source_available: true
 - id: 554763bdb54592b8
   filename: IMG_6504.png

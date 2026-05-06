@@ -22,9 +22,10 @@ attachments:
   sender: zubair-renter-showing
   sent_at: '2025-11-02T01:26:09.702844-06:00'
   sha256: 61c4e6875939a1bd854a8dfe0929c2f726281e4f8340526413fe9a0e659dab99
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot showing a $1,050.00 Zelle payment to Adithya kumar dated
+    Nov 02, 2025.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:04.319520+00:00'
   source_available: true
 - id: 1433d50b2d56ddf3
   filename: IMG_3420.PNG

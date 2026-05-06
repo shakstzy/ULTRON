@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-10-24T12:21:32.278124-05:00'
   sha256: 72378e39db58b86160fcfd01be4418ef69e0b800ab28e67f02a59cb12c049d82
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of insurance claim 0807974662 for a 2019 Toyota Camry with
+    inspection pending.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:44.487795+00:00'
   source_available: true
 - id: 955a46f1c85ceaee
   filename: IMG_2705.jpeg
@@ -44,9 +45,10 @@ attachments:
   sender: sasoon-insurance
   sent_at: '2025-10-24T16:50:06.042972-05:00'
   sha256: 2b81e76e571fa34a2ab37c529e245068f54bff05f502720cb329cc65320434e3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a $2,979.15 repair estimate from 210 Auto Body for a 2019 Toyota
+    Camry. It details front-end damage repairs for the bumper, headlamp, and fender.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:59.192182+00:00'
   source_available: true
 - id: fa992f04142ab817
   filename: IMG_9528.png

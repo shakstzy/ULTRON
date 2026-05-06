@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-04-23T16:56:56.167225-05:00'
   sha256: 3d2b7b95e568948402bb2f36ac3d15cf4943b1d967c5b7bfb2335066fbb0becf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Stainless gas stove with a cast iron skillet, white counter, and herringbone
+    backsplash.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:25.507335+00:00'
   source_available: true
 - id: b5c7e7a20963e12c
   filename: badones.wav

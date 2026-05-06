@@ -22,9 +22,10 @@ attachments:
   sender: sanaya-hinge-dallas
   sent_at: '2025-07-03T18:37:57.664721-05:00'
   sha256: c7375d2437223eee0a321c8467c02f24903f59f161cf0fd7bbd841e3e0b6b8b3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "\xDCma brand 2-gram double-tank disposable vape devices and their\
+    \ dual-flavor packaging are shown."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:09.903959+00:00'
   source_available: true
 chat_message_guids_count: 81
 deleted_upstream: null

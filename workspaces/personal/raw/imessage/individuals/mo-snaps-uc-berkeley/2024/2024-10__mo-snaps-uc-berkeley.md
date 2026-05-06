@@ -33,9 +33,11 @@ attachments:
   sender: me
   sent_at: '2024-10-27T11:25:12.908000-05:00'
   sha256: c900271debee64dea44a34778b6091371a1881f8110ee1b6dbe22e1709c2667d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is the 2024 pitch deck for Outerscope, a Web3 venture and GTM
+    advisory firm. It outlines their end-to-end services, client traction, and tiered
+    monthly retainer pricing structures.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:50.638010+00:00'
   source_available: true
 chat_message_guids_count: 16
 deleted_upstream: null

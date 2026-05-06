@@ -22,9 +22,10 @@ attachments:
   sender: zubair-renter-showing
   sent_at: '2026-01-04T23:46:31.168379-06:00'
   sha256: 1cc7b455c3467fc8be41e954c2ddee4516c4c30b84b1cb37008e48a55b907092
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot showing $1,050.00 sent from Riz to Adithya kumar for January
+    2026 rent.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:06.235544+00:00'
   source_available: true
 - id: 53e94741da311fbf
   filename: IMG_5045.jpeg

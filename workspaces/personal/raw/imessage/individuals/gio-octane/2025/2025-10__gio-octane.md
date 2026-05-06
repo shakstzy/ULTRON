@@ -22,9 +22,10 @@ attachments:
   sender: gio-octane
   sent_at: '2025-10-28T23:22:54.505927-05:00'
   sha256: f4f27ae88f3309f760fe4661d8a41f7ae1fa4bef13e4c86411bb925fd90d2d98
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mercury ACH payment receipt for $2,287.67 to Outerscope on October
+    20, 2025.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:16.905449+00:00'
   source_available: true
 chat_message_guids_count: 7
 deleted_upstream: null

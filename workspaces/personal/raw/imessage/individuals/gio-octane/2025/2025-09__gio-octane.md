@@ -22,9 +22,9 @@ attachments:
   sender: me
   sent_at: '2025-09-12T21:16:31.206129-05:00'
   sha256: b2daa8dd9b9c50d01e58f92613471ec590727da30241e3d8c7a0ccd1a2821638
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Overdue $2,287.67 invoice (INV-6) for Octane dated June 10.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:21.740282+00:00'
   source_available: true
 - id: e049b30b0b2319f4
   filename: IMG_5185.png

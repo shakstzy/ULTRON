@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-04-05T22:11:02.612000-05:00'
   sha256: 99324f0cd92378c0bb5a5dc28bb83691cce7c949572b1fc995a2654143c03df4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Map listing for Royal Blue Grocery in Austin, TX, showing it is open
+    and 7.4 miles away.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:58.896774+00:00'
   source_available: true
 chat_message_guids_count: 93
 deleted_upstream: null

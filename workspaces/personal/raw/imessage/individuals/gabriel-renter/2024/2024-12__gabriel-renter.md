@@ -22,9 +22,11 @@ attachments:
   sender: me
   sent_at: '2024-12-05T10:44:51.374616-06:00'
   sha256: 24c1b9bda72ff7483e92932b01dc62663f0529fc15cf98e6f3bf63ae6e21eaa4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a California residential lease agreement for a Sylmar property
+    between Gabriel Lucio Baro and Kumar Nagarajan. It details a fixed term from Dec
+    2024 to June 2025 with $1,000 monthly rent.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:09.870654+00:00'
   source_available: true
 - id: 6842c247169c8f6e
   filename: Addendum_No_1_-_1221_ts79048.pdf

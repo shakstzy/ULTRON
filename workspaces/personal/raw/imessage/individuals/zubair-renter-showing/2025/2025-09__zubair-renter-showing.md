@@ -57,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2025-09-23T18:30:29.572000-05:00'
   sha256: ff1ecc59d9148b9462542a7978d91b2f2383ae109c03b99bab4e66affbf389c7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Amazon order status for a brass entry door knob and a satin nickel
+    privacy door knob.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:05.056503+00:00'
   source_available: true
 chat_message_guids_count: 145
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-04-22T16:24:04.521810-05:00'
   sha256: ea67baa8d5ad16bd85675dfbc4ef51a5d2622588bb897ad6ee84dbba8a532958
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of an undelivered green "Happy bday dawg" SMS from
+    Friday, April 10.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:19.588471+00:00'
   source_available: true
 chat_message_guids_count: 6
 deleted_upstream: null

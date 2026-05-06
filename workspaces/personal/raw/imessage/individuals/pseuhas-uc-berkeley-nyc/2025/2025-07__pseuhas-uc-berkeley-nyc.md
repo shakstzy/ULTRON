@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2025-07-27T21:21:44.506000-05:00'
   sha256: 649e13ea462b69ff671729a078d0b65db183ecea78699a87902deed387524879
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Find My map screenshot showing Rushil Jha's location near Eleanor's
+    Pier in New York, NY.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:29.525671+00:00'
   source_available: true
 chat_message_guids_count: 29
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-10-25T16:58:43.595822-05:00'
   sha256: fcbd08a018cc5f3376547fb98955bdd2b2ff6aa166203ae7e8744f51edd372b5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone map showing driving directions from Corsicana to Sherman, Texas,
+    through Dallas.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:30.891221+00:00'
   source_available: true
 chat_message_guids_count: 81
 deleted_upstream: null

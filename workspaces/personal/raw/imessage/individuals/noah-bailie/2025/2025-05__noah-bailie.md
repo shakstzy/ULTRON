@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-05-18T23:53:53.538755-05:00'
   sha256: c2014f6b9b0b15bc6853740f35ae83283ca57fb733969f5c6928215ca0991be2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hand holding a Honey Badger Extracts Tropic Thunder shatter stick disposable
+    vape box.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:37.191342+00:00'
   source_available: true
 - id: 7a3b3214e23a7680
   filename: 76932333148__039B81E8-2FA4-4DD4-990C-D2CFBBA538D7.HEIC

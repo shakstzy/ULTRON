@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2024-08-25T15:51:57.821000-05:00'
   sha256: 9e8aadb05779192aaaaadfcea920a1cf50011da7feb85bf41a4fff560ee9cda6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person holding a 1kg bag of Cruz de Malta yerba mate in a mirror
+    selfie.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:24.161141+00:00'
   source_available: true
 chat_message_guids_count: 37
 deleted_upstream: null

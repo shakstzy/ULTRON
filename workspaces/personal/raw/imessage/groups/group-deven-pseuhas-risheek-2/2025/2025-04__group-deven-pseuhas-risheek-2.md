@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-04-01T19:00:04.230760-05:00'
   sha256: d9a18e2e67a8bef8094e39b73b61d08a3b5193109e292aec6635cbc50f3a0f97
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Shervin action figure in packaging with bong, ZYN, white powder bag,
+    and Backwoods accessories.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:36.862408+00:00'
   source_available: true
 - id: 26d5023d914e894c
   filename: 9BC866C6-8A53-4B2B-8B56-B238E1CA9FD3.PNG

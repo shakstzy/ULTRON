@@ -11,6 +11,15 @@ Project-local skills for ULTRON. Each skill lives at `_shell/skills/<name>/SKILL
 | **contacts-sync** | Sync Apple Contacts → `_global/entities/people/` canonical stubs | "sync contacts", "update people", "import my contacts" | yes |
 | **reddit** | Read Reddit (search, listings, post + comments, users, subreddit info) via stdlib Python CLI hitting `*.json` endpoints | "what's on r/X", "search reddit for X", "summarize this reddit thread", "is r/X active", any `reddit.com/comments/...` URL | yes |
 
+## External skills (sourced from outside ULTRON)
+
+These live in their source repo and are surfaced globally via `~/.claude/skills/<name>` symlinks. They do **not** follow ULTRON's `_shell/skills/` layout — keep edits in the source path.
+
+| Skill | Source | Purpose |
+|---|---|---|
+| **youtube-summary** | `QUANTUM/_core/skills/youtube-summary/` | Fetch YouTube transcript + summarize. Trigger: youtube.com / youtu.be URL + summarize/recap/tldr verb. |
+| **instagram-summary** | `QUANTUM/_core/skills/instagram-summary/` | Fetch IG post or reel (carousel up to 10, reel audio transcript via Whisper). Trigger: instagram.com /p/ /reel/ /reels/ /tv/ /share/ URL + summarize/recap verb. |
+
 ## How skills are wired
 
 1. The skill body (`SKILL.md`) sits at `_shell/skills/<name>/SKILL.md` with frontmatter `name:` and `description:`. The `description:` field MUST start with "Use this skill EVERY time" plus a clear trigger so Claude Code's skill matcher fires reliably.

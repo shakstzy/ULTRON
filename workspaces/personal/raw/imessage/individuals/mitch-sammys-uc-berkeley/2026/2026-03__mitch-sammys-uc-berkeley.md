@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-22T18:51:04.754758-05:00'
   sha256: f15e8d295535cf8d98d7ed3412461646f9d41f900bc78562a15013a5d33c5636
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men smile; one in a "BELIEVE THE HYPE" shirt, the other flashing
+    a peace sign.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:16.331503+00:00'
   source_available: true
 - id: dd9c61759dd0e768
   filename: 5E5318FB-7A00-4DEA-A299-77076A38522F.pluginPayloadAttachment

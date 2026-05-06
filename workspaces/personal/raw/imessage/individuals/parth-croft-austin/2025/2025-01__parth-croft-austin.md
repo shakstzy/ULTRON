@@ -34,9 +34,10 @@ attachments:
   sender: parth-croft-austin
   sent_at: '2025-01-03T13:24:07.954094-06:00'
   sha256: 44721f8ca81525651708727a5beca0302676aae86caaeef00e870ea3cfa51d5f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a vCard contact file for Aditya Desai. It provides his name
+    and a primary phone number.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:48.653156+00:00'
   source_available: true
 - id: 63e8ce417020c71b
   filename: Richard Liu.vcf

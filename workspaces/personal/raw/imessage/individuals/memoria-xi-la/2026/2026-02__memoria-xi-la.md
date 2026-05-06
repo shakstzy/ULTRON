@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-02-25T12:58:02.845000-06:00'
   sha256: 36751554f01e74c5e54e1dfd1458b8137ea0ad7b5f0acbbb7e8f1b3b505558e2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Sideways screen photo showing Partner Memo AI Labs.docx and highAsFuckwMemo0_0.MP4
+    files.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:27.084231+00:00'
   source_available: true
 chat_message_guids_count: 7
 deleted_upstream: null

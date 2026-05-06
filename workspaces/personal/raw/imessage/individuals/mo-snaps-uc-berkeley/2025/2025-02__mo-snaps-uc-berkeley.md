@@ -105,9 +105,10 @@ attachments:
   sender: me
   sent_at: '2025-02-16T03:05:23.926000-06:00'
   sha256: d919785ce6a093b1f694c8951c7afe9f6912e7f951a35d8afcd1e02f100adf8e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Transit map route from Times Square to North Bergen via the 1, 2, 3
+    subway and bus 139.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:57.739351+00:00'
   source_available: true
 - id: 997146e4f173384a
   filename: IMG_5696.PNG
@@ -152,9 +153,10 @@ attachments:
   sender: me
   sent_at: '2025-02-20T06:02:03.677000-06:00'
   sha256: ba649d9fb4cda658a9ed983ed14f86c090443fccedbbf5ec404b846371a09309
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Transit directions from Harmon Cove Towers to Times Square via the
+    129X bus and 1 subway line.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:05.944447+00:00'
   source_available: true
 - id: bd15fbad378d4aed
   filename: "Screenshot 2025-02-23 at 6.20.22\u202FAM.jpeg"
@@ -163,9 +165,10 @@ attachments:
   sender: mo-snaps-uc-berkeley
   sent_at: '2025-02-23T05:20:30.850524-06:00'
   sha256: e2a6a99dd0c5a123ecec690347f147a39b2119f2773b1bda45c25e02a4f5210e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of Uber ride options from Harmon Cove Towers to Secaucus
+    Junction station.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:08.456720+00:00'
   source_available: true
 - id: 5e483e27baa4cdcb
   filename: "Screenshot 2025-02-23 at 6.20.51\u202FAM.jpeg"

@@ -146,9 +146,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2026-03-31T01:46:13.620704-05:00'
   sha256: 239a36079898e21f90e1ce374aa7685e845a76ea479efbbdb4cf943bf47b3db4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A bearded man in a video call window over blurry text about mental
+    health and drug use.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:30.514937+00:00'
   source_available: true
 - id: 2856490b28e1da7b
   filename: IMG_7983.png
@@ -180,9 +181,10 @@ attachments:
   sender: me
   sent_at: '2026-03-31T21:00:34.378067-05:00'
   sha256: a46963baee8ea708ce6e9f599c63d2f839c7b8a1372459fb43072e19cb1c3607
-  description: null
-  description_model: null
-  extracted_at: null
+  description: WhatsApp screenshot of Nikki Family chat discussing travel to Irving
+    and Dennison.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:38.460895+00:00'
   source_available: true
 chat_message_guids_count: 77
 deleted_upstream: null

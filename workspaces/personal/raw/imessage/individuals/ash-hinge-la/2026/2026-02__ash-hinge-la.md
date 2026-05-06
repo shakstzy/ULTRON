@@ -22,9 +22,10 @@ attachments:
   sender: ash-hinge-la
   sent_at: '2026-02-04T21:13:43.653817-06:00'
   sha256: 778b8780cf90fabcbbae63e6507ddef72ef43317345e4dc23fca6faeebfc4868
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Top-down view of a green pool table with a cue ball, racked balls,
+    and a green play button icon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:31.668280+00:00'
   source_available: true
 - id: 79edcac0fcd2e261
   filename: ms-rhUmhv.jpeg

@@ -34,9 +34,10 @@ attachments:
   sender: sasoon-insurance
   sent_at: '2025-12-02T15:31:30.294330-06:00'
   sha256: 4e6bfaddb4f19c682364a9f4ca6cdbe0de09d6c91440a57813361d12287e5cf2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Close-up of a blue Toyota sedan's front wheel and fender in an auto
+    body shop.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:19.116014+00:00'
   source_available: true
 - id: f9a74c7eb1ced23b
   filename: IMG_8714.HEIC

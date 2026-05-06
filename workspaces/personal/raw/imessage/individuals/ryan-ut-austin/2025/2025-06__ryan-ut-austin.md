@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-06-12T12:57:31.362886-05:00'
   sha256: 54ecaaf91ab58f5b769437fa366030d9cb6edb00ea2f6da30f90ad57dfeffd76
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage asking for a referral to a Visa Summer 2025 Software Engineer
+    Intern role in Austin.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:05.198070+00:00'
   source_available: true
 - id: 137f2d808572c1fc
   filename: IMG_9601.PNG

@@ -165,9 +165,10 @@ attachments:
   sender: mo-snaps-uc-berkeley
   sent_at: '2024-12-13T09:54:08.634246-06:00'
   sha256: 274c8e94c77b2380567d78c22a137c311449b069ffc9af60b594eb04bde2e748
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone SoundCloud notification recommending music similar to Shak STZY
+    Vault.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:32.944839+00:00'
   source_available: true
 - id: fbe268dfd211f28f
   filename: "Screenshot 2024-12-20 at 5.48.41\u202FPM.jpeg"
@@ -188,9 +189,10 @@ attachments:
   sender: mo-snaps-uc-berkeley
   sent_at: '2024-12-20T16:50:13.916566-06:00'
   sha256: 3b89cf018263e0b6fe4d94e63e0e914ec71b38d1c21b8a45e630054c30678f18
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of Apple Music's "New Music Mix" for Mohammed featuring
+    songs by Juice WRLD.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:42.053324+00:00'
   source_available: true
 chat_message_guids_count: 61
 deleted_upstream: null

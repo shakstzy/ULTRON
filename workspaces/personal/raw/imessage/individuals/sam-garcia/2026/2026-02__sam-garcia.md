@@ -34,9 +34,10 @@ attachments:
   sender: sam-garcia
   sent_at: '2026-02-07T18:44:22.330314-06:00'
   sha256: 8415acc67d53cdbfdadd796b7bc7aebc87c19778f833efe53745d695774c93d6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a breakup where the sender rejects Hannah for
+    "sleeping around."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:30.977257+00:00'
   source_available: true
 chat_message_guids_count: 46
 deleted_upstream: null

@@ -44,9 +44,11 @@ attachments:
   sender: me
   sent_at: '2025-12-23T19:10:19.487762-06:00'
   sha256: b5ca2de66ee62edf1cc61089b82418387280785bb9915695d61e9888820ee761
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is Adithya Kumar's resume. It summarizes his leadership and engineering
+    roles in the blockchain space, including experience at SpaceX and various Web3
+    startups.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:43.773188+00:00'
   source_available: true
 - id: ef04469849570cdf
   filename: IMG_7108.png

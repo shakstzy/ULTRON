@@ -46,9 +46,10 @@ attachments:
   sender: mo-snaps-uc-berkeley
   sent_at: '2024-09-29T21:04:12.800152-05:00'
   sha256: a0421a424eda539fa54004432e0fa7528f2001694081bb26432e94b0b9cf471d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A tabby cat licking a black-and-white cat's forehead with "me" and
+    "you" text.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:12.868987+00:00'
   source_available: true
 - id: b5af80067a4a20ee
   filename: IMG_3764.jpeg
@@ -93,9 +94,10 @@ attachments:
   sender: mo-snaps-uc-berkeley
   sent_at: '2024-09-29T21:27:01.859790-05:00'
   sha256: 67602a8a4680023c854f892b369996d112e9b9e3ac2b413ca77538dd404aa7e7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile screenshot of the outerscope.xyz landing page for Web3 venture
+    solutions.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:12.530683+00:00'
   source_available: true
 - id: e3e485f259baf1fe
   filename: IMG_4842.jpeg

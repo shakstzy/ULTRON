@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-06T22:22:41.299000-06:00'
   sha256: 819fe1d7a41b867f415455401625e30dc69d767422ceb67169dc73fe7e970d57
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Submission confirmation for a16z speedrun application with a March
+    6, 2026 deadline.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:43.404403+00:00'
   source_available: true
 - id: 37a44c273b7be9e7
   filename: 21F689C7-5927-4D83-9F57-BD02E066FEB1.pluginPayloadAttachment
@@ -56,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2026-03-30T23:40:17.777010-05:00'
   sha256: 730767116ed3cb5ca09e93d3b77772702fc3b86c022c46ab0a4905c1d6e6c982
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Email from Izzy Newman-Sanders inviting Adithya to a call for the a16z
+    Speedrun Alpha.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:00:46.893256+00:00'
   source_available: true
 - id: 786e1c741f0fc230
   filename: IMG_7978.PNG

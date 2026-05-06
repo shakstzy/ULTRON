@@ -22,9 +22,10 @@ attachments:
   sender: wes-cyphers-la
   sent_at: '2026-01-07T09:16:16.397751-06:00'
   sha256: 1ab8435c2764d5f2e84fe9d056b02eb9cd4b79782a723b1b1aaec2461d577444
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Email from Robyne Gordon requesting corporate entity details and services
+    for an NDA.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:36.230445+00:00'
   source_available: true
 - id: 41a47a3d89de101f
   filename: IMG_3056.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2026-01-12T16:20:35.402000-06:00'
   sha256: 7a664cc52671dbc4848311f1f58cb1294e57da51c19b135968fbf2f7b21ebb96
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Email client showing no results for search 'nda' in Adithya Kumar's
+    outerscope.xyz account.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:05.946778+00:00'
   source_available: true
 - id: 46b0380d200803e8
   filename: IMG_3445.png

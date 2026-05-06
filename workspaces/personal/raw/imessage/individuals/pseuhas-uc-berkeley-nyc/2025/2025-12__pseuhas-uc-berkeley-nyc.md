@@ -34,9 +34,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-12-22T16:56:43.638275-06:00'
   sha256: fe7899b00660c4b3fd803f8ef6f6bcc4086d230cacc56e3e884c1b642bcd067e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a 2024 Fisker Ocean search result showing a blue SUV
+    and bankruptcy details.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:42.289314+00:00'
   source_available: true
 - id: d0e3d730f6211850
   filename: IMG_9217.heic
@@ -45,9 +46,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-12-22T16:56:43.638275-06:00'
   sha256: 6f5bd976e1ff0e857217c83a1fba7f314f59850922f23a8f2c09ebc73919010f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Backseat view of a white Tesla interior showing the driver and large
+    central touchscreen.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:46.014307+00:00'
   source_available: true
 - id: ecdb6c0dfd3a2f21
   filename: 78829605048__BF77809E-0934-4F10-9942-FC3CD720BCA8.heic

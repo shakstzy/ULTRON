@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-06-14T20:03:28.972000-05:00'
   sha256: ee6ffecf5b8ce6449e98bb70881e4592386743c76928f13dde75f1d143df0e25
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone contact card for Abraham Crypto at LightNodeVentures LA, phone
+    +1 (631) 599-1922.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:32.080548+00:00'
   source_available: true
 - id: 50091d42b331fc8c
   filename: IMG_7273.png
@@ -45,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-06-19T14:30:45.549107-05:00'
   sha256: f4b38fcec458a27996d92ab114c31d624df5c43d09a2598eb49013616bb23843
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage bubble text connecting Avery to pseuhas for a potential gram
+    sale.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:20.690265+00:00'
   source_available: true
 - id: 8df251574e37e965
   filename: "Screenshot 2025-06-19 at 4.19.36\u202FPM.jpeg"
@@ -125,9 +127,10 @@ attachments:
   sender: me
   sent_at: '2025-06-27T13:40:23.686000-05:00'
   sha256: 5ecabdbc93fff94e3e49a11143f9cbaaca17c5aaf0c640506e874857846ee518
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man wearing glasses and a backwards grey baseball cap looking to
+    the left.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:21.110623+00:00'
   source_available: true
 - id: c9d484b0e3707fc4
   filename: 1EF12FE9-A72A-435C-A4B8-85E837B27A42.PNG
@@ -136,9 +139,10 @@ attachments:
   sender: me
   sent_at: '2025-06-27T13:55:54.713870-05:00'
   sha256: 9c37eec7db04923905e38b02195b6a9c54f2bacd31c83f1fd1d08c294e4e88ce
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Hinge screenshot: a user replies "Can I be that snake" to Anusha''s
+    fear of toilet snakes.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:37.960919+00:00'
   source_available: true
 - id: a4d522c41f25bc3e
   filename: IMG_7402.heic
@@ -158,9 +162,10 @@ attachments:
   sender: me
   sent_at: '2025-06-28T23:10:22.282000-05:00'
   sha256: 2389c8b161351fe3d7f9a6b97f6be9a9ef6654b9c9fa26e1c1f33149b3535931
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Person in a white t-shirt and silver chain lies on dark pavement near
+    a metal ladder at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:21.947704+00:00'
   source_available: true
 - id: 1ce5ca09baa03ce8
   filename: IMG_0217.PNG
@@ -169,9 +174,10 @@ attachments:
   sender: me
   sent_at: '2025-06-29T04:07:55.431000-05:00'
   sha256: 8c7bb0a3ad0f590b882dfa6db5d67e540e3188a38a5e5261aa08f8f9e35c6eb1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a chat about cuddling and returning to the US
+    in late August.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:01:26.817331+00:00'
   source_available: true
 - id: 36addac78ecb3f91
   filename: ms-NpBzZa.jpeg

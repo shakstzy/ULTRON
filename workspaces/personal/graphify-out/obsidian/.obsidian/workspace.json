@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "79afb04d5d875258",
+        "id": "6595615bb2ce8c7f",
         "type": "tabs",
         "children": [
           {
-            "id": "f9086ab9c0d2c056",
+            "id": "72b3239f716e64eb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_COMMUNITY_Dating Roster (mixed).md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "_COMMUNITY_Dating Roster (mixed)"
+              "title": "New tab"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_COMMUNITY_Dating Roster (mixed).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for _COMMUNITY_Dating Roster (mixed)"
+              "title": "Backlinks"
             }
           },
           {
@@ -113,12 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_COMMUNITY_Dating Roster (mixed).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from _COMMUNITY_Dating Roster (mixed)"
+              "title": "Outgoing links"
             }
           },
           {
@@ -156,13 +150,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_COMMUNITY_Dating Roster (mixed).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of _COMMUNITY_Dating Roster (mixed)"
+              "title": "Outline"
             }
           }
         ]
@@ -183,6 +176,8 @@
       "bases:Create new base": false
     }
   },
-  "active": "f9086ab9c0d2c056",
-  "lastOpenFiles": []
+  "active": "72b3239f716e64eb",
+  "lastOpenFiles": [
+    "_COMMUNITY_Dating Roster (mixed).md"
+  ]
 }

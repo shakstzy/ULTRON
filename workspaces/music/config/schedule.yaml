@@ -1,0 +1,13 @@
+# music — declared launchd cadence
+
+workspace: music
+
+# No source-driven ingest crons until source-routing.md is populated. Once
+# music-labeled gmail and DistroKid scraper land, add hourly gmail and a
+# weekly distrokid pull.
+
+workspace_jobs:
+  lint:
+    cron: "0 4 * * *"  # Daily 04:00
+
+# audit, weekly-review, graphify-supermerge live in _shell/config/global-schedule.yaml.

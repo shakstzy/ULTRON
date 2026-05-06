@@ -1,0 +1,28 @@
+# mosaic — declared ingestion sources
+# Cross-source routing (per-account, per-label, per-folder) is centralized
+# in _shell/docs/source-routing.md. This file declares only what credentials
+# and source-types this workspace is wired to consume; routing rules
+# come from the routing matrix.
+
+workspace: mosaic
+wiki: true
+
+_workspace_meta:
+  ingest_unrouted_default: skip
+
+sources:
+  drive:
+    accounts:
+      - account: adithya@outerscope.xyz
+        # Folders routed to mosaic are declared in source-routing.md (drive rows).
+  granola:
+    folders:
+      - MOSAIC
+  manual:
+    watch_path: raw/manual/_inbox/
+    after_ingest: move_to_dated_subdir
+
+global_settings:
+  attachments_inline: true
+  vision_model: sonnet
+  hash_algorithm: blake3

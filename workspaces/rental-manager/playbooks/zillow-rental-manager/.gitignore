@@ -1,0 +1,6 @@
+# Local dev fixtures contain real lead PII captured during development.
+# Keep them on disk for replay/debug but never commit them.
+.dev-fixtures/
+
+# patchright/playwright caches if anything ends up here.
+node_modules/

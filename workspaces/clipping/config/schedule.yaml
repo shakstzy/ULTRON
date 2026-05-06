@@ -1,0 +1,12 @@
+# clipping — declared launchd cadence
+
+workspace: clipping
+
+# No source-driven ingest crons until each stage's robot is wired. When yt-dlp,
+# mlx-whisper, and metrics polling land, add stage-driven crons here.
+
+workspace_jobs:
+  lint:
+    cron: "0 4 * * *"  # Daily 04:00
+
+# audit, weekly-review, graphify-supermerge live in _shell/config/global-schedule.yaml.

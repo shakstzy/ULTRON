@@ -4,12 +4,12 @@ Workspace voice override. Read after schema.md and learnings.md.
 
 ## Voice
 
-<populated at bootstrap from Q4(b). Examples: precise/B2B, casual/personal, clinical/factual, opinionated.>
+Numbers-precise. Position sizes verbatim. Stops, entries, exits verbatim. Theses tagged with confidence (high / medium / low / hunch). No retroactive narrative-fitting — losses get post-mortems that name the actual error, not the rationalization.
 
 ## Decision posture
 
-<reversible-default | commit-default | observation-only — populated at bootstrap.>
+commit-default for written theses and post-mortems (once written, append corrections, do not edit history); reversible-default for ongoing strategy notes.
 
 ## What this workspace is NOT
 
-<populated at bootstrap; helps prevent scope drift.>
+NOT for personal banking, recurring subs, taxes, or net worth — those go to `finance`. NOT a venue for "trading psychology" content — record what was done and what happened.

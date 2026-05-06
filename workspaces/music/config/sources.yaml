@@ -1,0 +1,23 @@
+# music — declared ingestion sources
+# Cross-source routing rules in _shell/docs/source-routing.md.
+
+workspace: music
+wiki: true
+
+_workspace_meta:
+  ingest_unrouted_default: skip
+
+sources:
+  gmail:
+    accounts: []   # Populated from source-routing.md (music-labeled threads).
+  manual:
+    watch_path: raw/manual/_inbox/
+    after_ingest: move_to_dated_subdir
+  imessage:
+    contact_set_label: music  # Filtered via source-routing.md contact set.
+  # distrokid CSV exports land in raw/distrokid/<YYYY-MM>/ when scraped.
+
+global_settings:
+  attachments_inline: true
+  vision_model: sonnet
+  hash_algorithm: blake3

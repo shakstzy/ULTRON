@@ -1,0 +1,17 @@
+{
+  "name": "zillow-rental-manager-playbook",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "SHAKOS workspace playbook: drive Zillow Rental Manager for listing management, lead messaging, and follow-up cadence on Adithya's rental property",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "patchright": "1.59.4",
+    "playwright": "^1.60.0-alpha-1777575331000"
+  },
+  "scripts": {
+    "postinstall": "patchright install chrome"
+  }
+}

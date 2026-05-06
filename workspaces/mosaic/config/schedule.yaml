@@ -1,0 +1,13 @@
+# mosaic — declared launchd cadence
+
+workspace: mosaic
+
+# No source-driven ingest crons until source-routing.md is populated and
+# Drive credentials wired. Then add: drive (hourly waking), granola
+# (every 6h on the :30).
+
+workspace_jobs:
+  lint:
+    cron: "0 4 * * *"  # Daily 04:00
+
+# audit, weekly-review, graphify-supermerge live in _shell/config/global-schedule.yaml.

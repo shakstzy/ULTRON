@@ -1,0 +1,12 @@
+# dating — declared launchd cadence
+
+workspace: dating
+
+# No source-driven ingest crons until patchright bots ported. Manual ingest
+# runs on demand via `run-stage.sh ingest dating`.
+
+workspace_jobs:
+  lint:
+    cron: "0 4 * * *"  # Daily 04:00
+
+# audit, weekly-review, graphify-supermerge live in _shell/config/global-schedule.yaml.

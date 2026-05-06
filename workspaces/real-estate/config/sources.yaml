@@ -1,0 +1,22 @@
+# real-estate — declared ingestion sources
+# Cross-source routing rules in _shell/docs/source-routing.md.
+
+workspace: real-estate
+wiki: true
+
+_workspace_meta:
+  ingest_unrouted_default: skip
+
+sources:
+  gmail:
+    accounts: []   # Populated from source-routing.md once labels are fixed.
+  manual:
+    watch_path: raw/manual/_inbox/
+    after_ingest: move_to_dated_subdir
+  # redfin / zillow scrapes added when the ULTRON-local real-estate skill
+  # is ported from QUANTUM.
+
+global_settings:
+  attachments_inline: true
+  vision_model: sonnet
+  hash_algorithm: blake3

@@ -101,10 +101,16 @@ _exhausted: set[str] = set()     # account names exhausted in this run
 
 def init_account_state():
     """Set up an isolated HOME dir per account in the pool dir.
-    Each subprocess.run(gemini...) picks one and runs with HOME=<that dir>."""
+    Each subprocess.run(gemini...) picks one and runs with HOME=<that dir>.
+    Each per-account HOME needs both oauth_creds.json AND settings.json
+    (selectedType=oauth-personal); without settings.json, gemini fails
+    with 'Please set an Auth method'."""
     POOL_ROOT.mkdir(parents=True, exist_ok=True)
     if not ACCOUNTS_DIR.exists():
         sys.exit(f"no ~/.gemini/accounts/ dir; auth at least one account first")
+    global_settings = Path.home() / ".gemini" / "settings.json"
+    if not global_settings.exists():
+        sys.exit("ERROR: ~/.gemini/settings.json missing — bootstrap initial gemini auth first")
     for acct_file in sorted(ACCOUNTS_DIR.glob("*.json")):
         name = acct_file.stem
         home = POOL_ROOT / name
@@ -112,6 +118,7 @@ def init_account_state():
         gemini_dir.mkdir(parents=True, exist_ok=True)
         try:
             shutil.copy2(acct_file, gemini_dir / "oauth_creds.json")
+            shutil.copy2(global_settings, gemini_dir / "settings.json")
             ACCOUNTS.append((name, home))
         except OSError as e:
             sys.stderr.write(f"  WARNING: skipping {name} — {e}\n")

@@ -9,36 +9,36 @@
 - Token cost: 18,000 input · 3,500 output
 
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_Community 0|Community 0]]
-- [[_COMMUNITY_Community 1|Community 1]]
-- [[_COMMUNITY_Community 2|Community 2]]
-- [[_COMMUNITY_Community 3|Community 3]]
-- [[_COMMUNITY_Community 4|Community 4]]
-- [[_COMMUNITY_Community 5|Community 5]]
-- [[_COMMUNITY_Community 6|Community 6]]
-- [[_COMMUNITY_Community 7|Community 7]]
-- [[_COMMUNITY_Community 8|Community 8]]
-- [[_COMMUNITY_Community 9|Community 9]]
-- [[_COMMUNITY_Community 10|Community 10]]
-- [[_COMMUNITY_Community 11|Community 11]]
-- [[_COMMUNITY_Community 12|Community 12]]
-- [[_COMMUNITY_Community 13|Community 13]]
-- [[_COMMUNITY_Community 14|Community 14]]
-- [[_COMMUNITY_Community 15|Community 15]]
-- [[_COMMUNITY_Community 16|Community 16]]
-- [[_COMMUNITY_Community 17|Community 17]]
-- [[_COMMUNITY_Community 18|Community 18]]
-- [[_COMMUNITY_Community 19|Community 19]]
-- [[_COMMUNITY_Community 20|Community 20]]
-- [[_COMMUNITY_Community 21|Community 21]]
-- [[_COMMUNITY_Community 22|Community 22]]
-- [[_COMMUNITY_Community 23|Community 23]]
-- [[_COMMUNITY_Community 24|Community 24]]
-- [[_COMMUNITY_Community 25|Community 25]]
-- [[_COMMUNITY_Community 26|Community 26]]
-- [[_COMMUNITY_Community 27|Community 27]]
-- [[_COMMUNITY_Community 28|Community 28]]
-- [[_COMMUNITY_Community 29|Community 29]]
+- [[_COMMUNITY_Dating Roster (mixed)|Dating Roster (mixed)]]
+- [[_COMMUNITY_Austin Dating + Locals|Austin Dating + Locals]]
+- [[_COMMUNITY_LA Dating + LA Network|LA Dating + LA Network]]
+- [[_COMMUNITY_UC Berkeley + a16z|UC Berkeley + a16z]]
+- [[_COMMUNITY_Sylmar Property + Tenants|Sylmar Property + Tenants]]
+- [[_COMMUNITY_NYCUSC (Akshar circle)|NYC/USC (Akshar circle)]]
+- [[_COMMUNITY_CryptoWeb3 Network|Crypto/Web3 Network]]
+- [[_COMMUNITY_Amsterdam Trip + Festival Crew|Amsterdam Trip + Festival Crew]]
+- [[_COMMUNITY_Crypto Events + Investors|Crypto Events + Investors]]
+- [[_COMMUNITY_Rental Showings (LA)|Rental Showings (LA)]]
+- [[_COMMUNITY_Prescription Songs + Music|Prescription Songs + Music]]
+- [[_COMMUNITY_Hinge + AI Music Project|Hinge + AI Music Project]]
+- [[_COMMUNITY_LASA Classmates|LASA Classmates]]
+- [[_COMMUNITY_Bay Area + Slash|Bay Area + Slash]]
+- [[_COMMUNITY_LA Music Industry (Prescription)|LA Music Industry (Prescription)]]
+- [[_COMMUNITY_Startup Accelerators|Startup Accelerators]]
+- [[_COMMUNITY_Renter Showings 2026|Renter Showings 2026]]
+- [[_COMMUNITY_Sylmar House + Range Music|Sylmar House + Range Music]]
+- [[_COMMUNITY_Octane + Synapse AI|Octane + Synapse AI]]
+- [[_COMMUNITY_Bay Area Family|Bay Area Family]]
+- [[_COMMUNITY_AI Voice Modeling Project|AI Voice Modeling Project]]
+- [[_COMMUNITY_Sanvi (Sister) + Barcelona|Sanvi (Sister) + Barcelona]]
+- [[_COMMUNITY_LASA Alumni (Seattle)|LASA Alumni (Seattle)]]
+- [[_COMMUNITY_Forge Accelerator (Berkeley)|Forge Accelerator (Berkeley)]]
+- [[_COMMUNITY_LASA (LizLiam)|LASA (Liz/Liam)]]
+- [[_COMMUNITY_Indian Film Composers|Indian Film Composers]]
+- [[_COMMUNITY_Layer (Web3 Company)|Layer (Web3 Company)]]
+- [[_COMMUNITY_Crypto VC Firms|Crypto VC Firms]]
+- [[_COMMUNITY_Slash + Consensus|Slash + Consensus]]
+- [[_COMMUNITY_Sapient + LOTTO (Crypto)|Sapient + LOTTO (Crypto)]]
 - [[_COMMUNITY_Community 30|Community 30]]
 - [[_COMMUNITY_Community 31|Community 31]]
 - [[_COMMUNITY_Community 32|Community 32]]
@@ -227,123 +227,123 @@
 
 ## Communities
 
-### Community 0 - "Community 0"
+### Community 0 - "Dating Roster (mixed)"
 Cohesion: 0.01
 Nodes (326): Aarti (Dad), Aarti (ex-girlfriend), Abby (Hinge / Dallas), Abhi (NYC friend, group-abhi-akshar), Abhishek, Ace (intro to Tommy, GTM/VFX), Addi / Adithi (Hinge, Dallas/Austin), Adi (Hinge, Austin / UT) (+318 more)
 
-### Community 1 - "Community 1"
+### Community 1 - "Austin Dating + Locals"
 Cohesion: 0.02
 Nodes (211): Abhi (Hinge / Austin), Dr. Qin (Acupuncture Doctor, Austin), Aditya Desai (LASA / Austin), Aleena (Hinge, Austin), Alefia (Hinge, Austin), Amisha (Hinge, NYC/Jersey), Amru (Hinge, Dallas/Austin), Ana (Hinge, Austin) (+203 more)
 
-### Community 2 - "Community 2"
+### Community 2 - "LA Dating + LA Network"
 Cohesion: 0.02
 Nodes (171): Alan Rodrigo (music producer, LA), Alejandra (Tinder, LA), Ana (Hinge, LA), Anabhra (Hinge, LA), Ananya (Hinge, LA/Riverside), Andrew (Cedar, LA), Angelica (Hinge LA), Anisha (Hinge LA) (+163 more)
 
-### Community 3 - "Community 3"
+### Community 3 - "UC Berkeley + a16z"
 Cohesion: 0.02
 Nodes (136): Andreessen Horowitz (a16z), Aamir Khan (UC Berkeley), Aayush Cricket (UC Berkeley), Aayush (UC Berkeley), Adi Rao (UC Berkeley NYC), Adi Rao (UC Berkeley / NYC), Adrian (UC Berkeley roommate), Akash Bobba (UC Berkeley, Meta) (+128 more)
 
-### Community 4 - "Community 4"
+### Community 4 - "Sylmar Property + Tenants"
 Cohesion: 0.02
 Nodes (120): 210 Auto Body (Burbank CA), Aarti (ex-girlfriend, LA), Adamaris (Renter/Room Showing 2026), Adithya's Rental Property (LA), Alan (renter inquiry, Sylmar), Alena (prospective renter), Amadeus, Amadeus (renter, LA/Hollywood Hills) (+112 more)
 
-### Community 5 - "Community 5"
+### Community 5 - "NYC/USC (Akshar circle)"
 Cohesion: 0.02
 Nodes (97): Aasritha (NYC / Hinge), Abhi (NYC / Hinge), Abhi Shah (USC / Akshar / LA), Abraham (Crypto / LightNode Ventures, LA), Aditi (NYC, Hinge), Aggy (Akshar Prabhat, USC, San Ramon / NYC), Aggy (Akshar/Prabhat USC, San Ramon), Akshar (USC, NYC) (+89 more)
 
-### Community 6 - "Community 6"
+### Community 6 - "Crypto/Web3 Network"
 Cohesion: 0.04
 Nodes (64): Abraham (crypto / Light Node Ventures), Alex Duckworth (crypto), Alpin Yukseloglu (UC Berkeley / crypto/AI), Amos (Music/Crypto, LA), Andrew Liutev (Crypto), Andy (Blockchain, UC Berkeley), AthleteCoin, AthleteCoin (+56 more)
 
-### Community 7 - "Community 7"
+### Community 7 - "Amsterdam Trip + Festival Crew"
 Cohesion: 0.05
 Nodes (61): Adarsh (friend, pseu crew), Adarsh Pinjala, Amsterdam, Amsterdam Trip (March 2024), Ashank Parikh UC Berkeley, Ben (music/LA friend), Beyond Wonderland Festival, BlackRock (+53 more)
 
-### Community 8 - "Community 8"
+### Community 8 - "Crypto Events + Investors"
 Cohesion: 0.05
 Nodes (47): Ace (Brooklyn Crypto Meetup), Ajay (crypto/investor, LA), Antimetal, Bitcoin Ordinals LA (Event), Blockchain, Blocktimus (James Media Co), Crypto Contacts, Crypto Network (+39 more)
 
-### Community 9 - "Community 9"
+### Community 9 - "Rental Showings (LA)"
 Cohesion: 0.05
 Nodes (44): Apartment Rental, Bryan (Renter/Showing), Celeste (Renter), Cris (Renter / Mexican), Darshit (Renter, Showing), Darshit (Renter, Sylmar), David (Renter, Sylmar showing), Edgar (Rental Listing) (+36 more)
 
-### Community 10 - "Community 10"
+### Community 10 - "Prescription Songs + Music"
 Cohesion: 0.06
 Nodes (42): AI Music Tool (Serum/sample gen), Ain't Love (song), All I Have Was You (song), Caitlin (A&R, Prescription Songs), Caitlin (Prescription Studio contact), Donny (DonnyDARKPOP, producer), Dr. Luke, Dr. Luke (Prescription Songs LA) (+34 more)
 
-### Community 11 - "Community 11"
+### Community 11 - "Hinge + AI Music Project"
 Cohesion: 0.05
 Nodes (41): Aaliyah (Hinge / Austin), Aashna (Hinge / LA), Adithi (Hinge, LA / Westwood), AI Vocal Model Project (Tyler Perry), Akhila (Hinge, NYC), Aryan Goyal (UC Berkeley), Benti (Hinge, LA / USC), Bhavana (Hinge, Dallas/Austin) (+33 more)
 
-### Community 12 - "Community 12"
+### Community 12 - "LASA Classmates"
 Cohesion: 0.06
 Nodes (39): Arthur Embry (LASA), Arthur Embry (LASA), Arushi (LASA), Avik Ahuja (LASA), Bela McScoggin (LASA Austin), Chance Reeve, Chris Smith (LASA), Delvia Zhang (LASA) (+31 more)
 
-### Community 13 - "Community 13"
+### Community 13 - "Bay Area + Slash"
 Cohesion: 0.12
 Nodes (16): Divyesh Khatri, Durgi Uncle (Bay Area), FUNSPOT (Logic project / song), GDC (Game Developers Conference), Jae (Hinge SD), Jasmine Zhang (UC Berkeley), Kevin Bai (SF), Kevin Bai (Slash) (+8 more)
 
-### Community 14 - "Community 14"
+### Community 14 - "LA Music Industry (Prescription)"
 Cohesion: 0.14
 Nodes (15): Diana (Prescription Music lawyer), ElevenLabs (AI voice tool), Gavin Hadley, Groove Chambers (LA), Haan (music contact), Kevo (producer/LA), Kevo (Prescription Producer LA), Kyle Stemberger (Prescription LA) (+7 more)
 
-### Community 15 - "Community 15"
+### Community 15 - "Startup Accelerators"
 Cohesion: 0.15
 Nodes (13): a16z Speedrun, Andrew Yu (LaunchX), Kevin Bai, LaunchX, Michael Grimes (UC Berkeley, class of 2024), Minkyu (potential tech co-founder), MIT LaunchX SF, Poseidon AI (+5 more)
 
-### Community 16 - "Community 16"
+### Community 16 - "Renter Showings 2026"
 Cohesion: 0.22
 Nodes (9): David (Renter Showing), Elaine (Renter Showing), Eli (RenterManager Showing26), Ernestina (Renter Showing), Inannaini (Renter Showing), Jack (Renter Showing 2026), Jason (Renter Showing), Jason (Renter Showing 2293) (+1 more)
 
-### Community 17 - "Community 17"
+### Community 17 - "Sylmar House + Range Music"
 Cohesion: 0.4
 Nodes (5): Austin Allen Davis (Renter, Music Industry), Avinash (Granada Hills), Dad (Kumar), Range Music Publishing, Sylmar House (13245 Klein Ct, LA)
 
-### Community 18 - "Community 18"
+### Community 18 - "Octane + Synapse AI"
 Cohesion: 0.5
 Nodes (4): Gio (Octane / Perspectus AI), Octane, Octane / Perspectus AI, Synapse (AI evaluation platform)
 
-### Community 19 - "Community 19"
+### Community 19 - "Bay Area Family"
 Cohesion: 0.5
 Nodes (4): Bay Area, Nandini Aunty (Bay Area), Nikhil Nagarajan (Bay Area), Nivetha (Hinge/SF)
 
-### Community 20 - "Community 20"
+### Community 20 - "AI Voice Modeling Project"
 Cohesion: 0.5
 Nodes (4): AI voice modeling project, Cam (metal artist), Nerve (app / Ryan's project), Ryan (music mentor / Yale)
 
-### Community 21 - "Community 21"
+### Community 21 - "Sanvi (Sister) + Barcelona"
 Cohesion: 0.67
 Nodes (3): Barcelona trip (Sanvi 2026), Rozco's Comedy Club (Austin), Sanvi (Sister)
 
-### Community 22 - "Community 22"
+### Community 22 - "LASA Alumni (Seattle)"
 Cohesion: 0.67
 Nodes (3): Amit Sundaram (LASA, Seattle), LASA (Liberal Arts and Science Academy), Sam Hopper (LASA)
 
-### Community 23 - "Community 23"
+### Community 23 - "Forge Accelerator (Berkeley)"
 Cohesion: 0.67
 Nodes (3): Forge (Berkeley Builder Accelerator), Jaylem Brar (UC Berkeley / NYC), Jeff Sei
 
-### Community 24 - "Community 24"
+### Community 24 - "LASA (Liz/Liam)"
 Cohesion: 1.0
 Nodes (3): LASA (school), Liam (LASA), Liz Reed (LASA)
 
-### Community 25 - "Community 25"
+### Community 25 - "Indian Film Composers"
 Cohesion: 0.67
 Nodes (3): Anirudh Ravichander, Shruti (NYC / Hinge), Yuvan Shankar Raja
 
-### Community 26 - "Community 26"
+### Community 26 - "Layer (Web3 Company)"
 Cohesion: 0.67
 Nodes (3): Jake Hartnell (Co-founder, Layer), Layer (Web3 company, AVS tooling), Sam Cassatt (CSO, Layer)
 
-### Community 27 - "Community 27"
+### Community 27 - "Crypto VC Firms"
 Cohesion: 0.67
 Nodes (3): Faris Irys, Spartan Group (crypto VC), Speedinvest (VC)
 
-### Community 28 - "Community 28"
+### Community 28 - "Slash + Consensus"
 Cohesion: 0.67
 Nodes (3): Andy, Consensus Conference, Slash (startup, $41M Series B)
 
-### Community 29 - "Community 29"
+### Community 29 - "Sapient + LOTTO (Crypto)"
 Cohesion: 0.67
 Nodes (3): LOTTO (crypto project), Sapient (crypto dev company), Tyler (Sapient, crypto)
 

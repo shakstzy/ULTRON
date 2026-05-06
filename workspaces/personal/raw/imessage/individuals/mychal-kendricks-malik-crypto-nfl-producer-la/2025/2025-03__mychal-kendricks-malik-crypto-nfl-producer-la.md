@@ -33,9 +33,11 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-03-17T00:34:19.357216-05:00'
   sha256: 38040e6ae7c14356072f8ac226df4a9d08d1ccb9cc6ee98203f9c2b2cdc25472
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This pitch deck for Power Kinetics describes their robotic isokinetic
+    strength training systems. It details machine prototypes, performance analytics,
+    and target market segments.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:42.602398+00:00'
   source_available: true
 - id: dfac0e4b85cbd4a6
   filename: IMG_7192.PNG
@@ -77,9 +79,11 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-03-20T17:50:47.904210-05:00'
   sha256: 5da930546273942e786a7df6fda59beb3e8b583125f2e0fb3452c1ecd318566c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is the resume of Brian Hsu, a Mechanical Engineering student at
+    UC Berkeley. It details his internships at Northrop Grumman and Boeing, plus his
+    technical projects and skills.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:06.626981+00:00'
   source_available: true
 - id: b398112ae264f1c2
   filename: IMG_5844.heic
@@ -88,9 +92,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-03-20T17:51:12.770927-05:00'
   sha256: 3bbdaf695467f445edd1157bc726a585634f1466205ce05f700912f8a6aa05f0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Contract for CAD redesign of medical exercise machines: $37/hr, 15
+    hrs/week, 2% equity.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:16.021649+00:00'
   source_available: true
 - id: 926e341fffe22112
   filename: Resume - Zachary Zane.docx.pdf
@@ -121,9 +126,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-03-27T04:34:09.116057-05:00'
   sha256: 3cdea9b1f5bc30cd4dfb71dcf27ed477a2e0411777e583b6da72f49556255afa
-  description: null
-  description_model: null
-  extracted_at: null
+  description: People using specialized rehabilitation equipment in a physical therapy
+    clinic.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:10.142407+00:00'
   source_available: true
 - id: cacaf0dbe713c570
   filename: IMG_1807.heic
@@ -132,9 +138,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-03-27T04:34:09.116057-05:00'
   sha256: 070494423aed33106af0fb3cb86940b56acc194346fdab01f38739c4df0273bf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: People using specialized back rehabilitation machines in a physical
+    therapy clinic.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:21.370070+00:00'
   source_available: true
 - id: 9cb19db586fc3b47
   filename: IMG_1784.heic
@@ -143,9 +150,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-03-27T04:34:09.116057-05:00'
   sha256: a902fa2e7c6480158c99ee7961383f432ffcdc879a73a0b6ebbd845236410352
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A woman in a light blue top uses a yellow and black seated strength
+    machine in a mirrored gym.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:11.564205+00:00'
   source_available: true
 - id: 53de1d9fb4d2c3e6
   filename: IMG_1745.heic
@@ -165,9 +173,9 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-03-27T04:34:09.116057-05:00'
   sha256: 842ed3a5c693bf98407d86c2156fa3851829be6eab2505126672d397d11adaab
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person in a mint green shirt using a seated row machine in a gym.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:15.616506+00:00'
   source_available: true
 - id: 54204418bc6fb7a5
   filename: IMG_1793.heic
@@ -176,9 +184,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-03-27T04:34:09.116057-05:00'
   sha256: 2be0c19d392924dc45202a559be426382ebe53da481a3ded4e7089ae01cec5ee
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Physical therapy clinic with specialized exercise machines and a black
+    treatment table.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:16.559338+00:00'
   source_available: true
 - id: da49c2546a82334e
   filename: IMG_1804.heic
@@ -187,9 +196,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-03-27T04:34:09.116057-05:00'
   sha256: 51067038fc5420045f02dd9e76cff46772bd30f5d1ae375c972ae7b6e8b8349a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: People using specialized exercise machines in a physical therapy clinic
+    or gym.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:21.327160+00:00'
   source_available: true
 - id: 681285e821169f8b
   filename: IMG_1803.heic
@@ -209,9 +219,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-03-27T04:34:09.116057-05:00'
   sha256: ff87fb942f721179c48022063fa0276ab494a3b7b8ecce37193f27d492fa1902
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person adjusts the resistance dial on a Fast Twitch isokinetic gym
+    machine.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:38.494861+00:00'
   source_available: true
 - id: d0740f5c2d79195f
   filename: IMG_1806.heic
@@ -275,9 +286,9 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-03-27T04:34:09.116057-05:00'
   sha256: edab421db6a783696d4b58096b7176cb0d23429a16ac04ef370990a160994560
-  description: null
-  description_model: null
-  extracted_at: null
+  description: People exercising on yellow Isosport strength machines in a gym.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:25.247638+00:00'
   source_available: true
 - id: c2980182bdf867c1
   filename: IMG_1762.heic
@@ -286,9 +297,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-03-27T04:34:09.116057-05:00'
   sha256: d62ec884fc41e5dcf42e8d819366cc2b0b119ec73ed57eed1049fec685b1c768
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man exercises on a seated machine in a gym, partially obscured by
+    a blurred finger.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:31.724654+00:00'
   source_available: true
 - id: 4ecac222ef00085f
   filename: IMG_1764.heic

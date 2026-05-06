@@ -22,9 +22,10 @@ attachments:
   sender: monika-nyc
   sent_at: '2025-06-26T22:30:02.872169-05:00'
   sha256: 268e301b24c36ce3a352a28edf9f68cbf8480638f651cdc427d8120e2cacdfef
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Patrons sit at a crowded bar with hanging plants and glowing spherical
+    lamps in a dim lounge.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:36.376607+00:00'
   source_available: true
 chat_message_guids_count: 44
 deleted_upstream: null

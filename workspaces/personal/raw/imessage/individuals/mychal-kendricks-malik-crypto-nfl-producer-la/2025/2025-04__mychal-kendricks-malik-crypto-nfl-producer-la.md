@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-04-03T16:38:04.171526-05:00'
   sha256: d173902193a398a0e92b30e0ad2344ebfdd9d0dc44fbbaee5e5904fabb19de03
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Bearded man wearing headphones gives a peace sign in a selfie at a
+    Planet Fitness gym.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:41.231042+00:00'
   source_available: true
 chat_message_guids_count: 55
 deleted_upstream: null

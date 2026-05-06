@@ -99,9 +99,10 @@ attachments:
   sender: me
   sent_at: '2025-09-23T15:59:48.375000-05:00'
   sha256: de1dd0518be5c7f941db33487eddad824035040703bbc6ca6eb60259ec9e9536
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat with Caitlin and Ryan Ogren scheduling an 8pm music session
+    at Prescription.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:02.173265+00:00'
   source_available: true
 - id: 07b26eb86778a491
   filename: 78070873401__B59A49BF-6055-467F-8B80-47A63828E645.HEIC
@@ -110,9 +111,10 @@ attachments:
   sender: me
   sent_at: '2025-09-27T18:32:31.223996-05:00'
   sha256: 51c044961c3e3ca85836a21c62f78108110f17a0d44338238d435e37c14f4873
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Waiting area with grey and blue chairs, wood-patterned flooring, and
+    a restroom sign.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:00.068256+00:00'
   source_available: true
 - id: 8811f8436f426d93
   filename: IMG_1884.MOV

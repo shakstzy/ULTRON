@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2025-08-19T20:03:06.173574-05:00'
   sha256: 63c1912a932c832336bd317c60ac837e4d9da614deec13b5810218046c6441d4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A Veriff mobile browser confirmation screen for successfully submitted
+    verification data.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:39.751424+00:00'
   source_available: true
 chat_message_guids_count: 276
 deleted_upstream: null
@@ -337,7 +338,8 @@ chat_guid: null
 **17:18 — Arya:** Yooo my b
 **17:19 — Arya:** It's saying the back is too blurry to detect on the screen
 **17:19 — Arya:** Sent a link from the verification to your phone
-**17:53 — me:** Your verification link is https://veriff.me/s/QcSdeRQGPYour verification link is https://veriff.me/s/U2rdeB04D
+**17:53 — me:** Your verification link is https://veriff.me/s/QcSdeRQGP
+Your verification link is https://veriff.me/s/U2rdeB04D
 **18:04 — Arya:** unkal its not letting me verify when i scanned the barcode through the image it said too blurry
 **18:04 — Arya:** can you try through your phone if possible through the latest link it sent
 **18:07 — me:** Yeah, I need to go back home first, but will get it done there

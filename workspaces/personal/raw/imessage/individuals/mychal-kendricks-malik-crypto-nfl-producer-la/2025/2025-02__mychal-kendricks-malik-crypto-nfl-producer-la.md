@@ -33,9 +33,11 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-02-20T12:22:26.191145-06:00'
   sha256: 5c54d0518d88aee06810defe2e524bc5ff46c8837eb09bb29c40f99d9ba9f5d3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This resume for Carly Smith outlines her MIT/Harvard education and
+    mechanical engineering career. It focuses on co-founding medical device startups
+    and optimizing manufacturing for Stryker.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:32.243809+00:00'
   source_available: true
 chat_message_guids_count: 63
 deleted_upstream: null

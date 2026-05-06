@@ -22,9 +22,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-01-12T05:02:22.534302-06:00'
   sha256: da52bd477f8b035bc4d99d6dc6524a33681d02056bd8b10534fba68695050059
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Meet screenshot of 'power kinetics' logo design work in Adobe
+    Illustrator.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:57.932213+00:00'
   source_available: true
 - id: 2a292fa83b27d145
   filename: 459ca62f-ecea-400d-9b7a-0cf0930202c6.heic
@@ -44,9 +45,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-01-12T05:02:22.534302-06:00'
   sha256: d7f15ec38bb88537d01080a9536c4d597a171038935be6f8051427c02183ca2c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screen share of Adobe Illustrator designing the 'power kinetics' logo
+    during a Google Meet call.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:59.058369+00:00'
   source_available: true
 - id: 90213590ac0013c0
   filename: IMG_1017.png
@@ -55,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2025-01-15T14:13:23.198890-06:00'
   sha256: f3027f33d40971746c1aa93c3271951df31ab6f297a61133abd0a7724d48af8d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Black minimalist monogram combining letters 'P' and 'R' with Shutterstock
+    watermarks.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:57.666875+00:00'
   source_available: true
 chat_message_guids_count: 62
 deleted_upstream: null

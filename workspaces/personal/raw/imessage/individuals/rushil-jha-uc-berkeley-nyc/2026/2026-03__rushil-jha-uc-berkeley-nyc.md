@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-05T01:30:31.066621-06:00'
   sha256: 62a8c0133f2a4a4832c6724c133471e4df8e8e93d1ef9186b7dbfd98d4e8b838
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Close-up of a man wearing clubmaster sunglasses, a black jacket, and
+    a checkered scarf.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:31.832940+00:00'
   source_available: true
 - id: 34b41a64ff8a2082
   filename: IMG_5671.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2026-03-05T02:22:59.272066-06:00'
   sha256: ef1f18a7c614f4c77a38abcd65c37f8dc9443a3a52989c6b851eacc61255d155
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat with Rushil about UVA rankings and a friend starting
+    investment banking in NYC.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:02.460565+00:00'
   source_available: true
 - id: 6e025503709a26b5
   filename: IMG_3847.png

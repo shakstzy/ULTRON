@@ -220,9 +220,10 @@ attachments:
   sender: me
   sent_at: '2025-10-16T13:21:30.728000-05:00'
   sha256: e5eeae3db91c3a641c5a3d5ef9f6eb27de6bcf8aed974c049ccddd3ba0927733
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of Caitlin sharing an 11.4MB mp3 titled 'I Know
+    Better_1.0.mp3'.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:01.195174+00:00'
   source_available: true
 - id: bf40c5f1979a1ba3
   filename: IMG_3028.png
@@ -231,9 +232,10 @@ attachments:
   sender: me
   sent_at: '2025-10-20T17:53:09.161000-05:00'
   sha256: 483e27c43319332317963c984d36b3b7736a4b11d055ef876a3f7cde1a54d586
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'iMessage chat: Caitlin says Sat-Mon are closed; user asks if tomorrow
+    daytime is open.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:35.912968+00:00'
   source_available: true
 - id: 5f230f504a5eb763
   filename: MO_SHINJU_136_songstarter_shelter_G#min.wav

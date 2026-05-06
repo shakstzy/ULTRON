@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2025-11-11T21:42:55.034000-06:00'
   sha256: 43782d3ec9c3d9eb0be0c315fdc0c153b8280b3769c194ade07c4fc8148d7020
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Calendar event 'night session with yosef' on Wed Nov 12 from 9:30 PM
+    to 10 PM.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:59.353689+00:00'
   source_available: true
 - id: 80b90538b235dc52
   filename: IMG_7105.png
@@ -67,9 +68,10 @@ attachments:
   sender: me
   sent_at: '2025-11-11T21:48:47.279000-06:00'
   sha256: b5eb62fbd720db453fd06a5d9a9a6740710222f2ec7fddc68aea1a53c7173c06
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Digital calendar tags for meetings with Arjun, Cemal, Sydney, Bryant,
+    and Marv.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:02.147495+00:00'
   source_available: true
 - id: 0be4c57c15de47c9
   filename: IMG_2283.png
@@ -78,9 +80,10 @@ attachments:
   sender: me
   sent_at: '2025-11-11T21:48:47.279000-06:00'
   sha256: 058db2528ba2edf0856cef48a64d7e7418c244e95ffa80bca5ee6dedecb85e32
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Digital calendar view showing meetings like 'zodiac os strategy' and
+    'Product brainstorm'.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:08.044135+00:00'
   source_available: true
 - id: a24b8cfdc3a29ff5
   filename: KMRBI_TSL_165_melodic_stack_loop_thinkabout_Dm.m4a

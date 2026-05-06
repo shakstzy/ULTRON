@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2026-05-04T16:12:28.341000-05:00'
   sha256: 411dfea62c34db33ff04c8f9038688711a90bf7086006e5b6e32d2aa228e391d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot showing Rishika UC Berkeley chat with 68k messages auto-assigned
+    to Tier 1.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:28.629372+00:00'
   source_available: true
 - id: ede80da325599c7b
   filename: 79962218030__4A03E69C-8C28-4435-866E-9064DE39524D.HEIC
@@ -44,9 +45,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-05-04T16:16:35.887449-05:00'
   sha256: 6cc4488ef67c30c1744d40f96ff5f35c097901223c7cc8134917f9d64ecbc930
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Stadium Place entrance at 2310 with 'RESIDENT ACCESS' door and a+S
+    window graphics.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:04.409709+00:00'
   source_available: true
 - id: 3c029debd1c39ba7
   filename: 79962280600__D2BC9025-D043-48DE-8E37-F1289D60B2C1.HEIC
@@ -55,9 +57,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-05-04T16:27:13.178245-05:00'
   sha256: e3b465fe3895e52800d12149c481781aaac78a99d51e1bc52444d508a9140ebf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Woman in a red Berlin crop top holds a joint to her lips while leaning
+    out a window.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:50.885792+00:00'
   source_available: true
 chat_message_guids_count: 16
 deleted_upstream: null

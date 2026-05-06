@@ -22,9 +22,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-02T08:45:02.357038-06:00'
   sha256: e50ab165c31e253aa61a339829fd333ef1277c5c16154d5f9e1109a33af7453d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Woman in a light blue sequined saree and traditional jewelry posing
+    against draped curtains.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:18.019245+00:00'
   source_available: true
 - id: dbd34ad17aa74ce6
   filename: IMG_5033.heic
@@ -33,9 +34,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-02T08:45:02.357038-06:00'
   sha256: c387e04827cd69e9e3677a2a8d4f1b0af2fbbe567f5d472c5f353f7596b29f62
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Woman in a light blue embroidered sari and traditional jewelry posing
+    against white drapes.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:27.674945+00:00'
   source_available: true
 - id: 4c596d5d5361a6ff
   filename: FullSizeRender.heic
@@ -44,9 +46,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-02T08:45:35.107614-06:00'
   sha256: 934fb84cb43bd88e52c815b227759d6affa05f4b2a41e52e89bac52decddfb43
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Woman in a sequined mint saree and maang tikka poses against white
+    drapes.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:36.011762+00:00'
   source_available: true
 - id: d0caebb34e0a06a1
   filename: IMG_4992.heic
@@ -55,9 +58,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-02T08:46:06.077115-06:00'
   sha256: 4a386d75e09e1d5a507ac8f79a83a0fb7e07527469562e849d54d32f253b6f30
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Woman in a mint green embroidered saree and traditional jewelry posing
+    before draped curtains.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:09.400897+00:00'
   source_available: true
 - id: fe107689eb296634
   filename: FullSizeRender.heic
@@ -66,9 +70,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-02T08:48:49.297006-06:00'
   sha256: e95a92e2988e237f6c1249a9eb582982de037b8ed9181e9116b0969614f57dff
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two women kiss a bride in a yellow saree at a Gaye Holud ceremony with
+    floral decor.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:20.077514+00:00'
   source_available: true
 - id: 1754eaa03c3237ed
   filename: FullSizeRender.heic
@@ -88,9 +93,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-02T08:49:00.452594-06:00'
   sha256: 0eeda794c73ca5bf2cf098d0e30bd78611bc83980eb3d439a01d715a932196d7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Woman in a yellow saree and red blouse posing before a marigold-decorated
+    Haldi backdrop.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:32.248576+00:00'
   source_available: true
 - id: cf76ddcdea823c87
   filename: C2E4922E-0260-4E43-BC9E-39B29029423A.jpeg
@@ -99,9 +105,9 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-02T08:49:44.032760-06:00'
   sha256: a0d976553668de3278d2c27c63ff4bd3180528d82f59c8ce7e15ddeeb28acf7d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two women in traditional Bengali bridal attire posing for a selfie.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:14.395551+00:00'
   source_available: true
 - id: ee862b31f7b544de
   filename: FullSizeRender.heic
@@ -110,9 +116,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-02T08:51:17.172125-06:00'
   sha256: bf6731ae198bcd5332672b772735ec8818316699ed78cea14566bcdccffd4ef7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Woman in a floral top drinks beer in a bar featuring an ornate glass
+    chandelier.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:22.202756+00:00'
   source_available: true
 - id: 4db17afa9a235ac2
   filename: IMG_2653.heic
@@ -132,9 +139,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-03T04:52:44.188631-06:00'
   sha256: 87b94a769096c1941cbc9d3e9c93b0cc6a384a8a35c2b80f94dfb31888dfa7dc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A woman in a graduation gown holds her cap aloft in front of the UC
+    Berkeley Campanile.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:21.520050+00:00'
   source_available: true
 - id: a156ad787218b978
   filename: IMG_2754.heic
@@ -143,9 +151,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-03T04:52:44.188631-06:00'
   sha256: 78c04ec04a7841a9579dc31dc48428ec2df7a62faf560a04927fb106b15f7bef
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling woman in graduation regalia sits on a stone railing before
+    a neoclassical building.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:24.092584+00:00'
   source_available: true
 - id: 7ddea4bbcb6e0a5b
   filename: FullSizeRender.HEIC
@@ -176,9 +185,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-03T04:52:44.188631-06:00'
   sha256: 82f626b448bba08cc4f2399bf33412901050bf3b0634c130d9d418e113c47563
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A graduate tosses her mortarboard while posing between two massive
+    stone columns.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:28.844938+00:00'
   source_available: true
 - id: a0e8016133c8ecfe
   filename: IMG_9660.heic
@@ -198,9 +208,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-03T11:53:59.789993-06:00'
   sha256: bce6b2c5dd6abfa6d2067d0b761de95437023375814e5c3f13a31d0ddc5f95b8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: FaceTime screenshot showing a man's face from a low angle and a woman
+    in the top corner.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:33.843537+00:00'
   source_available: true
 - id: 1d0b72f0d23aec2b
   filename: 2f9b376e20ecffda-sticker.png
@@ -209,9 +220,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-03T12:55:18.403969-06:00'
   sha256: b5384a67c8f8f24426c1b7111424b05962f7bb8c8ddec03c789406a7b2989234
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A realistic 3D peach sticker with green leaves and a stem on a black
+    background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:41.857077+00:00'
   source_available: true
 - id: db6dbe604828930f
   filename: IMG_7903.png
@@ -231,9 +243,9 @@ attachments:
   sender: me
   sent_at: '2026-02-04T03:42:33.442342-06:00'
   sha256: 7fe0416bec1fb04bb811666888fa68942e962d6faf5c438e50a8a06ef002869e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling South Asian couple embraces on a rocky beach by the ocean.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:03.734272+00:00'
   source_available: true
 - id: add6ca9a66ed28e5
   filename: 3C2DFCE0-4B7E-4ABD-8189-F96FE8D738A3.png
@@ -342,9 +354,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-07T12:59:42.842209-06:00'
   sha256: c254e2763f27365c50df74522a5e6e1295d1d4e0ff884af4d93b29ece7e1ec7f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a heartfelt birthday message from Caroline to
+    Rishav.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:39.126870+00:00'
   source_available: true
 - id: db91c5a86e9972d8
   filename: IMG_0659.png
@@ -397,9 +410,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-14T00:00:59.538597-06:00'
   sha256: c5927c2c355ec96627390c3516b9ab6fb1ae8b06c8022ade1ce2d6cf3e9b7c84
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two women in black skirts and boots take a mirror selfie near gold
+    "22" balloons.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:38.634383+00:00'
   source_available: true
 - id: 787b2bd6ddca9a37
   filename: F5EC8DCF-ABD9-4D3B-9457-D007142897F8.pluginPayloadAttachment
@@ -430,9 +444,10 @@ attachments:
   sender: me
   sent_at: '2026-02-20T19:24:33.718000-06:00'
   sha256: c7b52de0e722ef4a158c8203177bd66686b138c0a55c0e5e0b2076fc53f2c5bf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man holds a red-bordered handwritten love note featuring a heart-themed
+    tic-tac-toe game.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:47.102108+00:00'
   source_available: true
 - id: 6792558934226e12
   filename: IMG_0741.heic
@@ -496,9 +511,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-22T22:21:12.042032-06:00'
   sha256: f4449d0c91c8056200163c56a9ea5b2d632f8b26b144220c9dbce4edf6e14b72
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A woman in a maroon lace top and black leather pants takes a mirror
+    selfie in a restroom.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:02.386897+00:00'
   source_available: true
 - id: e6ee2eebd7ff61af
   filename: IMG_0937.heic
@@ -507,9 +523,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-22T22:21:12.042032-06:00'
   sha256: 18c46951449ed4aeb617cf78536c31dbd4035ca3f680568b5d7313e2bf69cdda
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A woman smiles at a bar holding a yellow cocktail, with a 2026 Olympics
+    broadcast behind her.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:02.515732+00:00'
   source_available: true
 - id: 773b2d61f90396f3
   filename: IMG_0811.heic
@@ -518,9 +535,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-22T22:21:12.042032-06:00'
   sha256: 2c98fa5653bdf2f43e15a747c8c101576f6e4afc349585107d0477bada5dff63
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling woman posing with two large gold number 22 balloons in front
+    of string lights.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:55.883103+00:00'
   source_available: true
 - id: f35a0491357be197
   filename: 01AC8ED7-4A71-40D5-A1F7-17D68C313E80.pluginPayloadAttachment

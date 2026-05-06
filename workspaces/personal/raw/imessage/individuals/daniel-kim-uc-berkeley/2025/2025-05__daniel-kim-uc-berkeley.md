@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2025-05-08T20:03:00.722409-05:00'
   sha256: 9d9e260de4210c615623b2b18fd19b85b346f5f86ba18058280a39d474c01d39
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two smiling men indoors; one wears a black coat, the other a black
+    hoodie and pink shorts.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:51.440348+00:00'
   source_available: true
 chat_message_guids_count: 77
 deleted_upstream: null

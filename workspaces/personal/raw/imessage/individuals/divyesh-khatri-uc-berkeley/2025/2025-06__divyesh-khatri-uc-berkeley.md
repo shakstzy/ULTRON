@@ -33,9 +33,10 @@ attachments:
   sender: divyesh-khatri-uc-berkeley
   sent_at: '2025-06-29T21:42:47.754258-05:00'
   sha256: c98d3d703d03a7ed88d474acc755976ddbf7b8e9bd6eac0ef596381e3cccf6e5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Nighttime city street at Sheridan Square with pedestrians, police,
+    and scattered trash.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:14.159071+00:00'
   source_available: true
 chat_message_guids_count: 126
 deleted_upstream: null

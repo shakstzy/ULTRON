@@ -69,9 +69,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-17T15:55:36-05:00'
   sha256: 177dd95a8f4df34931758df43fb13b56f075af8689025f0172cacd49a13f1f21
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two wet, shirtless teenage boys pose with hand gestures beside an indoor
+    swimming pool.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:34.282564+00:00'
   source_available: true
 - id: ec9653fef17d2baa
   filename: image000000.jpg
@@ -80,9 +81,9 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-17T16:12:51-05:00'
   sha256: bab71b587261fe343d0abf68bdaadd904d0505c1f27dbbfea8ff28a890acf0d2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A hand holding an 11.5 oz can of V8 Plus Energy Orange Pineapple drink.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:38.676411+00:00'
   source_available: true
 - id: d75d5ce2eb7b2654
   filename: IMG_5533.png

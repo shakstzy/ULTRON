@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-06-04T12:18:15.106406-05:00'
   sha256: 3da89d1be566efa663095019bde889ffb3850c66c2647130e5783c38c0279aa0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Ticketmaster email confirming tickets for The Weeknd at MetLife Stadium
+    on June 7.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:30.396752+00:00'
   source_available: true
 - id: 01c9a1c75255bd70
   filename: IMG_3105.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-06-12T20:41:41.315000-05:00'
   sha256: 64821cfd0c76fdc2af4f399c836ad938fa8fc06bbccc17264a3af0bbeb4a8b2b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of the Synapse 'Intelligent Web3 Automation' site running
+    on localhost:5173.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:12.982385+00:00'
   source_available: true
 chat_message_guids_count: 151
 deleted_upstream: null

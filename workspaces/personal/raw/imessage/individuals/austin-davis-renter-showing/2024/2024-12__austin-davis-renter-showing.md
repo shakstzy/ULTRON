@@ -167,9 +167,10 @@ attachments:
   sender: austin-davis-renter-showing
   sent_at: '2024-12-29T20:56:23.673857-06:00'
   sha256: 0dc7d269a1c9bca38dc2cd0228cca638de5ebd1e31eabaea719153c4c798bedb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'FLGSHP LLC invoice #050 to Range Music Publishing for a $85,000 publishing
+    advance.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:04.860310+00:00'
   source_available: true
 - id: 9dd2e8e94a236f63
   filename: IMG_5435.jpg

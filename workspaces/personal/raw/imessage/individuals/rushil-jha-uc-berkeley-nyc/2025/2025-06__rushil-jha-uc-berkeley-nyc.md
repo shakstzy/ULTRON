@@ -94,9 +94,10 @@ attachments:
   sender: me
   sent_at: '2025-06-26T15:01:13.961771-05:00'
   sha256: af1c8fc96d90cce056e873f8139d61edbb345ab64bf4e1e92290d2e132b4fc89
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Invitation for Plume's NYC Office Opening Party at the Empire State
+    Building on June 26th.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:54.976611+00:00'
   source_available: true
 chat_message_guids_count: 430
 deleted_upstream: null

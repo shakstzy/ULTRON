@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-02-06T01:11:15.789968-06:00'
   sha256: 276dbbc094a5f2411f3945919f7bb9a797c888f2909b3860333aaa18c6aac187
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a black NY cap and hoodie leans against a brick wall in a
+    dark alley at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:14.083885+00:00'
   source_available: true
 - id: dc7dba691ee29c2d
   filename: IMG_7391.heic

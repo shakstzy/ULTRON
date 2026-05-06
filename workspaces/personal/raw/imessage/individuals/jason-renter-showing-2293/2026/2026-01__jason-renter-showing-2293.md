@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2026-01-28T17:23:25.487000-06:00'
   sha256: 1e639422134d7f8603efabc59ae21f5d1bbad255a341a471395f48e878a35421
-  description: null
-  description_model: null
-  extracted_at: null
+  description: White bathroom with a toilet, sink, oval mirror, and dark rectangular
+    floor tiles.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:19.418067+00:00'
   source_available: true
 - id: 939a3dbb9c45312b
   filename: IMG_6614.HEIC
@@ -44,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2026-01-28T17:23:25.487000-06:00'
   sha256: b4e79bdf483667799b06b113c3a6f5c118bf1ab25d016dc53cab6658fa5cf59e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Top-down view of a white bathtub with chrome fixtures and a hand pulling
+    a shower curtain.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:28.097292+00:00'
   source_available: true
 - id: 2f0985d0a4da23ef
   filename: IMG_6609.HEIC
@@ -55,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2026-01-28T17:23:25.487000-06:00'
   sha256: e52dce7b9385a8078865447c2dc03dda87c2d084f862d1c5e2c284a0a986a613
-  description: null
-  description_model: null
-  extracted_at: null
+  description: White paneled door with a black handle partially open, seen from a
+    low angle.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:05.848277+00:00'
   source_available: true
 - id: 3b86ef1b062c802d
   filename: IMG_6611.HEIC
@@ -66,9 +69,10 @@ attachments:
   sender: me
   sent_at: '2026-01-28T17:23:25.487000-06:00'
   sha256: f885c48d90ef1bf76a0b99ddc91a53e6ffcfaeead84bd4b5fedb577984e88100
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Open white door showing a transition from carpet to dark tile floor
+    and a black curtain.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:49.717861+00:00'
   source_available: true
 - id: d085ccaea62cd53f
   filename: IMG_6612.HEIC
@@ -88,9 +92,10 @@ attachments:
   sender: me
   sent_at: '2026-01-28T17:23:25.487000-06:00'
   sha256: 56224699ee6fa627af70f86ef85e6d09bf58f4c3f78ccfd0371c4aff60b9f506
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Under-stairs closet with sloped ceiling, wooden rod, and coiled cables
+    on dark carpet.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:29.568676+00:00'
   source_available: true
 chat_message_guids_count: 3
 deleted_upstream: null

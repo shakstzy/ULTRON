@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-02-03T09:48:39.380000-06:00'
   sha256: e7b69f9074b8e064dfe62026908ce344acebfbe084e842977b1d419150f342a6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Photo of a WIRED article about young engineers including Akash Bobba
+    and their ties to Meta.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:26.161794+00:00'
   source_available: true
 chat_message_guids_count: 5
 deleted_upstream: null

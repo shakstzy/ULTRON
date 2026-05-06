@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-02-03T10:19:14.696472-06:00'
   sha256: 5f015e2f5f7c3a7fb422daef8092861d9645c88be6424c942a248d27cf1f32a9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a digital calendar with many overlapping meeting blocks
+    and NYC GenAI events.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:08.997378+00:00'
   source_available: true
 - id: 409d76f8524216a8
   filename: IMG_5520.PNG
@@ -80,9 +81,10 @@ attachments:
   sender: me
   sent_at: '2025-02-19T11:06:24.428087-06:00'
   sha256: d3df2e0f0ea785fa76d311359253b8e2e435e8f508cc8aa3f0f14c67714a8420
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Meet call with Jake Hartnell and others over a technical requirements
+    spreadsheet.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:29.712091+00:00'
   source_available: true
 - id: 8b231a1d01779410
   filename: IMG_5745.PNG

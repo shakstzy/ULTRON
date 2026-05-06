@@ -82,9 +82,10 @@ attachments:
   sender: me
   sent_at: '2025-08-03T04:39:28.432000-05:00'
   sha256: 84b6aec5d0f986b7a7984da056aa28a1889e58cc59cd35e6f48a51612a467726
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "Filtered photo of a man in an 'I \u2764\uFE0F NY' hat making a peace\
+    \ sign in an iPhone messaging UI."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:32.484189+00:00'
   source_available: true
 - id: 88ad283f0ee84dd3
   filename: 6AA549EA-8026-44EF-BD94-6D78869CC473.MP4

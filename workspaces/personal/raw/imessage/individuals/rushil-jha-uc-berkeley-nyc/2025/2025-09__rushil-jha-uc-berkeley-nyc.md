@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-09-05T20:20:47.928000-05:00'
   sha256: 9561a61988c6121a1c52689bf188b539d32e1630f8e7dec76f595db7e15b8d03
-  description: null
-  description_model: null
-  extracted_at: null
+  description: macOS alert dialog stating FaceTime quit unexpectedly with Reopen,
+    Report, and Ignore buttons.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:10.769241+00:00'
   source_available: true
 - id: d8058e55e96b325a
   filename: IMG_7677.PNG

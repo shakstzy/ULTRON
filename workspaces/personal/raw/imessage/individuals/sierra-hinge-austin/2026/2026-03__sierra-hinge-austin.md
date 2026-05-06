@@ -22,9 +22,10 @@ attachments:
   sender: sierra-hinge-austin
   sent_at: '2026-03-22T00:04:02.856319-05:00'
   sha256: 3d42e7642b55834fa6068dda8eadef8acb1be75fcb4d409e979f7b8dd87f27c3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Austin map screenshot showing LBJ Early College High School and nearby
+    landmarks at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:33.737115+00:00'
   source_available: true
 chat_message_guids_count: 53
 deleted_upstream: null

@@ -58,9 +58,10 @@ attachments:
   sender: me
   sent_at: '2025-07-12T01:20:48.238367-05:00'
   sha256: 86b544626b36891fedd14bf29cea0d037284b99b46e60364a6636e4dd8afef03
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram profile screenshot of a smiling woman in a blue and white
+    floral halter top.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:46.848413+00:00'
   source_available: true
 - id: 5d02ddec66a739b2
   filename: IMG_0387.PNG

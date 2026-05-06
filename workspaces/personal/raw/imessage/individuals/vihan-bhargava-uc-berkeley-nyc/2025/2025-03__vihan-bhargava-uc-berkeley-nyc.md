@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-03-27T19:14:36.513000-05:00'
   sha256: f327d2d5c3032424ccddb03d8eceb22d2e561f43845f179dc4fc41d25b622504
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a chat with Mo Alobaidi about a Miami trip and
+    shared Find My map.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:33.962850+00:00'
   source_available: true
 - id: c96f8ceff01715bf
   filename: IMG_7321.PNG

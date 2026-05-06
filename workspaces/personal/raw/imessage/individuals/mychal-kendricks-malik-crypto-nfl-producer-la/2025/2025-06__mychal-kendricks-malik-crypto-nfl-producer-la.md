@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-06-01T22:25:29.336191-05:00'
   sha256: b30a68bc8d335efcb84933f6551bffaacda1b7fc1f1112e541f690c324bb23e1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Calendar event 'Mychal <> Shak' for June 4 at 8 PM with a sent invite
+    notification.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:39.661542+00:00'
   source_available: true
 - id: 024618644d13e838
   filename: IMG_0267.png
@@ -66,9 +67,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-06-20T08:47:55.741129-05:00'
   sha256: 4cb75d92b3208d534f479cd3be2b809f4a21804e20cd093735307bca0874e9ed
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person's leg and foot in a purple fiberglass cast resting on a blue
+    medical pad.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:42.575889+00:00'
   source_available: true
 - id: 73f7c1c9d5c330b1
   filename: IMG_6400.heic
@@ -132,9 +134,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-06-21T21:12:58.491251-05:00'
   sha256: faba85c58be42b0e0cd26f4154957ba325b2da8c6b2577a44e2dbae6c604cf58
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Lil' Frankie's table with yellow floral cloth, Naples Pizza menus,
+    and water glasses.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:45.913797+00:00'
   source_available: true
 - id: 50815e55bdaae1b4
   filename: IMG_0854.heic

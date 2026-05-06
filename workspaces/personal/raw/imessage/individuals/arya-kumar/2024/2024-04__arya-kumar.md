@@ -46,9 +46,9 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-10T11:00:21-05:00'
   sha256: d52428cb83215312a2a88c306b4cdefd7c892750b5050d516e24a3b3a58b78ae
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Black Lexus sedan driving on a highway, viewed through a vehicle window.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:29.847203+00:00'
   source_available: true
 - id: 7fcb35091c1c3621
   filename: image000000.jpg

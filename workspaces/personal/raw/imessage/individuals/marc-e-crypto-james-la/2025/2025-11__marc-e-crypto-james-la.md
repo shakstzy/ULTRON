@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-11-13T20:10:52.206000-06:00'
   sha256: 4d2cedd02ebe1b993f017f16dd7f9a10dd14d2a1597f7996d9afa9c39612061f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Recording studio with a condenser microphone, Pro Tools on screen,
+    and Yamaha studio monitors.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:24.286467+00:00'
   source_available: true
 - id: 020f040a60a40eec
   filename: 72145504756__1E58568E-04AF-47D8-8B58-87117FF9740B.HEIC
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-11-13T20:11:02.270000-06:00'
   sha256: 40149cfb042b5e4cb85df193f8c6863b29299c1bf6839f1139574d9cd16fbf46
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Recording studio desk with takeout fried rice, chicken, an MSI laptop,
+    and studio monitors.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:41.271000+00:00'
   source_available: true
 chat_message_guids_count: 39
 deleted_upstream: null

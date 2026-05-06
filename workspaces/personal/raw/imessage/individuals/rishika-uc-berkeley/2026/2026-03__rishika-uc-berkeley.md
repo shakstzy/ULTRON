@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-15T10:09:28.830000-05:00'
   sha256: aa96301aa4ea73193647a791cf4076f34f45d43af2ef4ad783feefe76b273c65
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A blue fish smoking a pipe with rising white smoke on a solid black
+    background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:53.924946+00:00'
   source_available: true
 - id: dfd704b5efbd4551
   filename: 0A407997-3073-4A26-889C-61A54CAAD1C0.pluginPayloadAttachment
@@ -55,9 +56,10 @@ attachments:
   sender: me
   sent_at: '2026-03-23T06:54:36.829188-05:00'
   sha256: 10560d81cf7e8eb7002675b600d43f3dffacdafde2225256dc08358fd424c80e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling man in a flat cap and a woman take a selfie at an outdoor
+    flea market with graffiti.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:44.378747+00:00'
   source_available: true
 - id: a57dcabe8d0ecb65
   filename: IMG_6894.jpeg
@@ -66,9 +68,10 @@ attachments:
   sender: me
   sent_at: '2026-03-23T06:54:59.755066-05:00'
   sha256: e3a82348d3cce8c98d5bd51983c84ea7bc3e80afb41dfa00c106fb1f1d7fab87
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man and woman pose on illuminated agate-inlaid stairs inside a modern
+    mall.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:44.414705+00:00'
   source_available: true
 chat_message_guids_count: 186
 deleted_upstream: null

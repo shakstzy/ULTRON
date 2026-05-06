@@ -67,9 +67,10 @@ attachments:
   sender: me
   sent_at: '2025-10-06T13:57:22.752771-05:00'
   sha256: a91f843e86af6566c65076167a331afd4dcf6f88e5bd720d33a70638c568ee89
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a video call with Steven, Avery, Abraham, and two AI
+    notetaker bots.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:16.427549+00:00'
   source_available: true
 chat_message_guids_count: 81
 deleted_upstream: null

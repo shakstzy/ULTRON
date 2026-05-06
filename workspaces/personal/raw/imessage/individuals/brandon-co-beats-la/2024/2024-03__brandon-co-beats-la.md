@@ -22,9 +22,10 @@ attachments:
   sender: brandon-co-beats-la
   sent_at: '2024-03-18T13:30:28.108970-05:00'
   sha256: fbf530bf49cbc460a8872efa8c494b3922b9127ab939bf66a2e559815682da50
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Crowd jumps and cheers at a nighttime Lollapalooza festival stage with
+    bright lights.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:04.941551+00:00'
   source_available: true
 - id: 8a9b4b68632b72fb
   filename: IMG_7295.heic

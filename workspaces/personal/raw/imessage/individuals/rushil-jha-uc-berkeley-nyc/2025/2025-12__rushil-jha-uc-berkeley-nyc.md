@@ -46,9 +46,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2025-12-18T09:14:50.263911-06:00'
   sha256: 5442d99a7cecf2b0f3c208cf69c16cb750ac1d8798d0d6642c4a273252616015
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man smiling in a blue Abbott Dash to the Finish Line 5K beanie among
+    trees.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:11.109864+00:00'
   source_available: true
 - id: c8a77335e814035b
   filename: IMG_8877.png

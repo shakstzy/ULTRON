@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-04-07T20:09:49.977311-05:00'
   sha256: 52c4d54032dc860191a87a00b36106169be04343b13ea8c228f5274e87be4e36
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Selfie of a man with a HUMAN[X] lanyard in front of the Metreon building
+    in San Francisco.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:46.611127+00:00'
   source_available: true
 - id: 452db11cd11826fa
   filename: IMG_5639.JPG
@@ -33,9 +34,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-04-10T15:24:19.651072-05:00'
   sha256: 3a5d14c085d1f96aa197daaa6e9098a7e86049bf194c59f5588eaa1b8265b0bb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A woman in a white hoodie selfies with a man in a black cap at San
+    Francisco Terminal 2.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:53.232816+00:00'
   source_available: true
 - id: 222915bdb25f9ec1
   filename: IMG_1192.png
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2026-04-17T16:53:56.593000-05:00'
   sha256: 6e9185c1b0bf4b588a59e587824cd1757d3f9e3f285872337fb75476529513e8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot showing "AirPods Pro von Me - Find My" status entry with
+    an icon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:55.595561+00:00'
   source_available: true
 - id: 5bc4c88a63ef6425
   filename: IMG_5660.png
@@ -55,9 +58,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-04-18T12:28:54.440083-05:00'
   sha256: ceadc9ecc00225af2bc363628a9097b0fe8ec16a46bb137fab2177c95c78e797
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of Rachel mentioning Adi at a bar, with an open
+    message context menu.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:56.574276+00:00'
   source_available: true
 - id: 754d88f0d4102202
   filename: IMG_8242.PNG
@@ -77,9 +81,10 @@ attachments:
   sender: me
   sent_at: '2026-04-22T22:33:33.153125-05:00'
   sha256: 1fe37efcadb06d498e862f92cef75cbaaf12c16525469a57dadd509f878d742d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man and woman stand on a sidewalk at night, holding street food in
+    paper wrappers.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:43.224273+00:00'
   source_available: true
 chat_message_guids_count: 66
 deleted_upstream: null

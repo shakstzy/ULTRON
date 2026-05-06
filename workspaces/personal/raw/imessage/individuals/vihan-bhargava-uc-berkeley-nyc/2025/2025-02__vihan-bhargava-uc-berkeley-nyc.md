@@ -22,9 +22,10 @@ attachments:
   sender: vihan-bhargava-uc-berkeley-nyc
   sent_at: '2025-02-21T22:44:22.902539-06:00'
   sha256: 9cbf7df45566940327050c90736e44580ee726ab232e847f3d7cbd9204c2ef2e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Pink neon waves and red light patterns on a dark wood wall in a crowded
+    bar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:04.347491+00:00'
   source_available: true
 - id: 4fda2b51d033f149
   filename: IMG_1183.HEIC
@@ -33,9 +34,10 @@ attachments:
   sender: vihan-bhargava-uc-berkeley-nyc
   sent_at: '2025-02-22T18:22:09.166374-06:00'
   sha256: 43a4c3516f849cec124749bf30d443fa7cb42ba473ec94bfc1ef104c70ccbcd0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two young men making peace signs; one is drinking from a gold Four
+    Loko can.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:12.704791+00:00'
   source_available: true
 - id: 483cb30e671cf93c
   filename: IMG_5871.PNG
@@ -55,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2025-02-22T21:33:05.664000-06:00'
   sha256: 841838e53fec0d1f64610cc667114968d2ceea37a3edc9c6214b890784903c5b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram Reel screenshot of macchugs holding malt liquor and Four
+    Loko for a drinking challenge.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:20.154906+00:00'
   source_available: true
 - id: 3e8e35077a1cd502
   filename: ms-5kxzAk.jpeg
@@ -66,9 +69,10 @@ attachments:
   sender: vihan-bhargava-uc-berkeley-nyc
   sent_at: '2025-02-23T03:46:04.220176-06:00'
   sha256: a62a9286e82f4c19481b8b42af7ae6527fb6296dbf68e404270d6c723f685b7d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Top-down view of a pool table with racked balls and a green play button
+    icon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:39.348017+00:00'
   source_available: true
 chat_message_guids_count: 91
 deleted_upstream: null

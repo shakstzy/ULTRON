@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-02T04:33:40.385000-06:00'
   sha256: 037d88d513358a6048a3ae2ebf6104362378fbb93b938a8e2517f9a1258a7f9b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram Reel screenshot of a laptop screen listing remote sales jobs
+    from paidinfull.vip.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:58.901867+00:00'
   source_available: true
 - id: 784843ffe2b92c48
   filename: "Screenshot 2026-03-02 at 4.34.48\u202FAM.png"

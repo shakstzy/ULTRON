@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-01-01T19:09:33.779594-06:00'
   sha256: cb356a1035fc5b263e769ccfd0c88d8c43d99f02c77e7e5eb1d94fc1de0f2bad
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two young men and a woman in sunglasses smile for a selfie at an airport
+    terminal.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:44.176217+00:00'
   source_available: true
 - id: 454c36a9393e9a06
   filename: 1000027152.jpeg
@@ -159,9 +160,10 @@ attachments:
   sender: me
   sent_at: '2026-01-03T17:21:02.520000-06:00'
   sha256: e88e10d7e67d311d42c412ee9c09e73430968bd01b0931f062385da5c010c9fb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile screenshot of the Clash Royale Wiki page for the 2 Elixir Goblins
+    card.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:14:01.967420+00:00'
   source_available: true
 - id: 55c6cc647f141ef7
   filename: IMG_1910.png
@@ -170,9 +172,10 @@ attachments:
   sender: me
   sent_at: '2026-01-03T17:21:02.520000-06:00'
   sha256: 7d96257de3bcf2c99c67e5b21da6617d709e516156027dc549c05db2b2ed3d1f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A young man in a blue Warriors shirt sits on stairs while holding a
+    smartphone.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:12:51.745263+00:00'
   source_available: true
 chat_message_guids_count: 15
 deleted_upstream: null

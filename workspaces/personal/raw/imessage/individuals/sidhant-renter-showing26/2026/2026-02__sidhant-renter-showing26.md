@@ -22,9 +22,10 @@ attachments:
   sender: sidhant-renter-showing26
   sent_at: '2026-02-09T12:21:03.438025-06:00'
   sha256: c537631cb178c711470b71a8e4d6854ed0e860a5150a42d327f0d709bb7bcd4a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Grey stucco house with address 13245, white windows, a garland, and
+    a hammock.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:34.021972+00:00'
   source_available: true
 - id: 721cb1b1b60e2e46
   filename: IMG_2874.png
@@ -33,9 +34,10 @@ attachments:
   sender: sidhant-renter-showing26
   sent_at: '2026-02-11T11:49:49.823242-06:00'
   sha256: b0d276af16844bcfb0d0b6e477dfe5ceef4ebf689539c273331471e02fb059d4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a $1,000 Zillow listing in Sylmar, CA with a text about
+    security deposits.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:13:26.255640+00:00'
   source_available: true
 chat_message_guids_count: 40
 deleted_upstream: null

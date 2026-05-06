@@ -269,9 +269,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-17T12:08:24-05:00'
   sha256: 1521601582e9a2fa16b951a39a952ec91e90fe67211a0bfc92e98f5f55e4c1b7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A DREAM HOME Mountain Mist Oak grey laminate flooring sample with a
+    $2.19 price tag.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:24.402966+00:00'
   source_available: true
 - id: a5ec3be325830f9c
   filename: image000004.jpg

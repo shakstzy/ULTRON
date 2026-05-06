@@ -45,9 +45,9 @@ attachments:
   sender: me
   sent_at: '2026-01-07T21:10:31.010000-06:00'
   sha256: b3dd2087b55919f60b81059acdaf4e96349e8228b0f65c36de628b5b56f89c6e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Southwest Airlines plane engine and wing on a tarmac at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:52.917403+00:00'
   source_available: true
 chat_message_guids_count: 21
 deleted_upstream: null

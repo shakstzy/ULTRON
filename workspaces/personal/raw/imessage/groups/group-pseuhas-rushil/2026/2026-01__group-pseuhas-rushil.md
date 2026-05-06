@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-01-28T10:23:10.362000-06:00'
   sha256: b33936347742eab7fedf838da774c2c1b37dc62ca67dc28b056021dea4f17cd4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a social media reel showing a man in a lime shirt and
+    a section of comments.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:10.182162+00:00'
   source_available: true
 - id: ed075f2567fd0c04
   filename: RenderedImage.heic
@@ -33,9 +34,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-01-28T14:23:39.987184-06:00'
   sha256: b1da482b028e9fe741e231911dae8371ff68729a4645d43b1dbef20675177936
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Bloomberg Terminal news feed with purple circles highlighting Torsten
+    Slok's name.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:32.855183+00:00'
   source_available: true
 - id: 4b9fab744d9a0111
   filename: IMG_9617.png
@@ -68,9 +70,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-01-28T18:43:28.605904-06:00'
   sha256: 04aca55ad78789ed989e73e1abae1fa952f4f4f350b2daaaaa6586846ffcaf6c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man wearing a navy quarter-zip with a red diamond monogram, blue
+    jeans, and a black watch.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:10.755023+00:00'
   source_available: true
 - id: c215632b24b00a39
   filename: C23617C5-45B6-42FB-A4C6-977F919C211F.pluginPayloadAttachment

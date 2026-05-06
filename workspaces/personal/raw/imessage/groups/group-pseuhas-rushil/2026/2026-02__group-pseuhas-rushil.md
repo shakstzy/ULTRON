@@ -33,9 +33,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-02-15T18:20:39.921351-06:00'
   sha256: 11a033f2c014a4894e652b971bb4a496408fbab04c9af34008eff9c8893ba5f0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LinkedIn post showing a job seeker using "Your name is in Eipstein
+    Files" as an email subject.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:35.537973+00:00'
   source_available: true
 chat_message_guids_count: 3
 deleted_upstream: null

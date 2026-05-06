@@ -81,9 +81,10 @@ attachments:
   sender: me
   sent_at: '2025-10-14T06:16:30.593709-05:00'
   sha256: 52fc709e0a74d7d4681bc88d006500ea0fc96cfe4029d4e32e8c583c384a6e37
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram profile for JR Cheetah featuring a bio and photos of a beach
+    and a poker table.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:46.242287+00:00'
   source_available: true
 - id: f2709dea9fa240df
   filename: IMG_0671.png
@@ -127,9 +128,10 @@ attachments:
   sender: me
   sent_at: '2025-10-30T14:05:44.676000-05:00'
   sha256: b78dbb7c148b032dd385d761943203c8d1c8121d744cd1a2489464961217244d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Large man in a leather jacket and sunglasses with a mechanical torso
+    on a city street.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:56.422847+00:00'
   source_available: true
 - id: 736656deba1ea8fe
   filename: IMG_3032.png

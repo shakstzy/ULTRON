@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-09-08T00:37:37.678899-05:00'
   sha256: 6ab0627a481615e2587d18d761bd46eb6d1891dd12e0fad4aab1bfa43cd31c99
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of an Instagram DM discussing a post of a man and his Minecraft
+    twin in Liverpool kits.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:38.080720+00:00'
   source_available: true
 - id: 5d763fd653e8fe4e
   filename: IMG_1445.PNG
@@ -45,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-09-08T00:37:37.678899-05:00'
   sha256: 37cf26233981d9adcaad183d2e800f2e3e822b99498b462cb6a5ab0540b121ed
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram story showing a hand holding the book "Kalki's Ponniyin Selvan
+    1".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:20.538670+00:00'
   source_available: true
 - id: 77c629f2d66f2744
   filename: IMG_8093.png
@@ -56,9 +58,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-09-09T15:27:50.814987-05:00'
   sha256: 4c590078c00dcbdfb264e409fab06849a77fc59f16cd1960b8d36ea31e96ed1e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram post by ssssssshlok showing a man in a white sweater pointing
+    toward a doorway.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:27.796405+00:00'
   source_available: true
 - id: 64f8935db49b6a33
   filename: IMG_7735.PNG
@@ -149,9 +152,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-09-21T17:18:45.455432-05:00'
   sha256: e40e6509668632abd825f4efc5a8a05782910e43d7d1d9b9dd5e7173b3585ed9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: AI app screenshot tracing the term "Enterprists" to a 2020 book by
+    Maneesh Vallurupalli.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:37.238824+00:00'
   source_available: true
 - id: a3bf479208976982
   filename: IMG_8238.PNG
@@ -220,9 +224,10 @@ attachments:
   sender: me
   sent_at: '2025-09-30T04:11:43.114000-05:00'
   sha256: 23519eda909620850e4337517dae5b6c46b1e58be177a2255061d05c435d3698
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram post by ssssssshlok showing three people sitting on a curb
+    at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:55.512505+00:00'
   source_available: true
 chat_message_guids_count: 98
 deleted_upstream: null

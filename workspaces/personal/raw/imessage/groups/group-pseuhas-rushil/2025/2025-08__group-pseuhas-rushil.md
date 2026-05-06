@@ -81,9 +81,10 @@ attachments:
   sender: me
   sent_at: '2025-08-03T12:55:37.782000-05:00'
   sha256: b4624afd07b9085ad3b71cfd27c9b3dc8499d6b694d10674d5ee62e7a617ca5a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: YouTube app screenshot featuring a Daniel Mints ice bath video and
+    an MIT AI course ad.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:24.444455+00:00'
   source_available: true
 - id: e810653eb7853b53
   filename: 77593818723__390E0B6C-0FB5-422A-9ED7-002C18F758EA.HEIC
@@ -116,9 +117,10 @@ attachments:
   sender: me
   sent_at: '2025-08-04T16:24:30.579000-05:00'
   sha256: 5c1f46c6e45e32d7c683fe7396d0aaf3e0d21d8c2c759e37fb779e14a0a7fa7e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A screen showing the time 5:24 and credit to Karthik Nagaraj for a
+    Google featured photo.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:45.249901+00:00'
   source_available: true
 - id: 303d0fb4cc41d695
   filename: IMG_9941.heic
@@ -150,9 +152,9 @@ attachments:
   sender: me
   sent_at: '2025-08-10T21:24:11.487591-05:00'
   sha256: 6efbd10da96384e692a37638bfd43abfb0c782694279bd646ee89aac269e06ad
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A black illuminated sign for the RIU Plaza Manhattan Times Square hotel.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:13.872773+00:00'
   source_available: true
 - id: d97cf2f8f6634e46
   filename: IMG_0905.MOV
@@ -209,9 +211,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-08-17T20:53:35.699554-05:00'
   sha256: 2969b912bdec6a7b0aeec74485a7bb3663a832bce0b281c5d32752e9bc5fcdff
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Find My app screenshot showing Rushil's live location at 333 E 60th
+    St, New York.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:23.326208+00:00'
   source_available: true
 - id: 22a1d61355f92a03
   filename: IMG_8937.heic
@@ -232,9 +235,9 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-08-21T21:16:13.397056-05:00'
   sha256: dcc48d87fc753e2945a1de3c4b8e042349740bea43becbba245ae935aca8705d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man holding vinyl records in a high-rise apartment with a city view.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:08.819212+00:00'
   source_available: true
 - id: 77fd9b1855eddbc1
   filename: IMG_7888.PNG
@@ -267,9 +270,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-08-22T21:51:16.715606-05:00'
   sha256: d2cc25f162ab359a399694974a8bd431b48315a6a6a0c2bf20e861c9baa330fd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram post of vihasr at Panorama Room NYC posing against a nighttime
+    city skyline.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:30.141384+00:00'
   source_available: true
 - id: 5dba1d8daa87770c
   filename: IMG_7934.PNG

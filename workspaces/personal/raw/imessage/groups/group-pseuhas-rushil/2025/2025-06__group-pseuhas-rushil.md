@@ -129,9 +129,10 @@ attachments:
   sender: me
   sent_at: '2025-06-27T02:48:51.515392-05:00'
   sha256: 343c0b5c658f6eab98f28e48b0a754b7bd7f772ca8474b6a4e538ec7c52628ed
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hinge profile for Vini showing mirror selfies in a black lace top and
+    a floral bikini.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:59:09.096224+00:00'
   source_available: true
 - id: 5689927f39223e2c
   filename: IMG_0192.PNG

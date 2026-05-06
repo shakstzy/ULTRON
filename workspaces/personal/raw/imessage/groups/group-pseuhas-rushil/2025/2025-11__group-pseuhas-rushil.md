@@ -22,9 +22,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-11-03T10:02:07.441760-06:00'
   sha256: 369504b6c15eea666a8a947fda9101292da741ddbdff97d8a093e02f3fb6f0c2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram story of two people in Barbie-themed costumes posing in front
+    of a mural.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:07.655749+00:00'
   source_available: true
 - id: 7cda30b7aa18aabe
   filename: IMG_7234.heic
@@ -44,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2025-11-06T03:56:43.112645-06:00'
   sha256: 4864f1c4f7bab2c292b122c64b5431ec0080b8351c082b8638a6a2fba4c88d51
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Ankith Woods biting a burrito in a Reel with the text "You ain't about
+    to be no darn rapper".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:49.962295+00:00'
   source_available: true
 - id: 295a2b759cfad280
   filename: IMG_5733.heic

@@ -82,9 +82,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-12-23T14:40:58.092530-06:00'
   sha256: b8b305e6a2cc73e34edb0461b7eb07d4064de79c053faf8e1ebb04d74462b076
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling man in a Knicks jacket and flag gloves posing before a large
+    Christmas tree.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:47.244123+00:00'
   source_available: true
 - id: 88bed194efb1c304
   filename: IMG_9252.PNG
@@ -105,9 +106,10 @@ attachments:
   sender: me
   sent_at: '2025-12-23T14:44:31.990000-06:00'
   sha256: b7ee0df266718fecb428515fb0cbb939c3768f1ab481c8b5c1b1d9c2353a1c12
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling young man with light brown hair and stubble in a white shirt
+    and dark blazer.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:21.927662+00:00'
   source_available: true
 - id: 730d885d035dbfde
   filename: "Screenshot 2025-12-28 at 8.12.48\u202FPM.png"

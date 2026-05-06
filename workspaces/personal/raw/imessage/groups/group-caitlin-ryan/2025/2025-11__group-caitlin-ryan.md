@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-11-13T00:36:52.694000-06:00'
   sha256: a63a0b5d2ef37c1b825c5d85f26d287d847a6d5283ce7bdcdca2842feea1be82
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Ergonomic chair at a music production desk with purple lighting and
+    DAW software on screen.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:14.592646+00:00'
   source_available: true
 - id: 770e82bc65f9ea86
   filename: Your Fool_1.0.mp3

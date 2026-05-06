@@ -58,9 +58,9 @@ attachments:
   sender: me
   sent_at: '2025-07-29T10:26:55.575000-05:00'
   sha256: 2a94371f81d3df54d3aa472ccfe5320419ece55cfd4d3b1fedadaf959496b080
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Disney's Quasimodo character in a green tunic against a black background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:58.623424+00:00'
   source_available: true
 - id: 48b4f8b1bc5bfea4
   filename: IMG_7158.png
@@ -93,9 +93,10 @@ attachments:
   sender: me
   sent_at: '2025-07-29T11:14:54.628024-05:00'
   sha256: 9e682e9ba454629b6734a642c79646142aa8aca8a9a0ccdb31df796ffc1f59ee
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smartphone screenshot of a Google Image search for Plants vs. Zombies
+    on Wikipedia.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:47.596721+00:00'
   source_available: true
 - id: abbcb80b1f696ac9
   filename: IMG_0528.PNG
@@ -116,9 +117,9 @@ attachments:
   sender: me
   sent_at: '2025-07-29T11:15:06.074421-05:00'
   sha256: cc27db761470af458298aaea57234290ea4a53f7918c75435d3c1bd9b8d600c0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A young man with messy hair lies on beige pillows while holding a smartphone.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:43.849697+00:00'
   source_available: true
 - id: 774b6e0729fa0156
   filename: IMG_0530.PNG
@@ -127,9 +128,10 @@ attachments:
   sender: me
   sent_at: '2025-07-29T11:15:59.725435-05:00'
   sha256: 5b54f5f0da1b784078182c7880c4e5a9d0d32b6de965b8903eb2c6341b869f9b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile screenshot of the cover art for the book 'The Art of Plants
+    vs. Zombies' on Kobo.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:52.138138+00:00'
   source_available: true
 - id: 978d1d606c9ae62d
   filename: IMG_0531.PNG
@@ -162,9 +164,10 @@ attachments:
   sender: me
   sent_at: '2025-07-29T11:17:12.390332-05:00'
   sha256: e0b03a50591e02f670c07e6167b5cb5b6799c205dc810c36ec9b5f25dbf37408
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Screenshot of the Goodreads page for the comic "Plants vs. Zombies:
+    Bully for You #2".'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:19.473953+00:00'
   source_available: true
 - id: 8e02b53b44eba311
   filename: IMG_0534.PNG
@@ -173,9 +176,10 @@ attachments:
   sender: me
   sent_at: '2025-07-29T11:17:40.771244-05:00'
   sha256: 39970cabe98e7352e35e3ef1e1da0df95a8864726fda6e9e1d392b4ce9de17a0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of Google Image results for Plants vs. Zombies featuring
+    a large Gargantuar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:28.222154+00:00'
   source_available: true
 - id: 2ee49acbe16a96c5
   filename: IMG_0535.PNG
@@ -220,9 +224,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-07-30T09:20:47.107674-05:00'
   sha256: f509d8c66a426fd217b871c19a9f19f3d5d2c5bb9ece44a93aea8c22f10468c1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Men sit on a couch with a laptop displaying code, Coors Light cans,
+    and a notebook.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:48.181451+00:00'
   source_available: true
 - id: 9d639f16f0f6de9f
   filename: 77560968469__36AB1D41-D508-4E3F-B36D-035083C53164.HEIC

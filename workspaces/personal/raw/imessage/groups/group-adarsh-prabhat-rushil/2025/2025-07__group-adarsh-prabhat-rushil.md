@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-07-03T13:31:03.217572-05:00'
   sha256: 0c90a13420eb3941ec4600a5458538459573da4604623b592ed6032024967a34
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a "CV menu" chat listing prices for drugs like Ski, K,
+    Bars, and Shrooms.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:59:13.635541+00:00'
   source_available: true
 - id: 73de43be1fc4818f
   filename: IMG_6220.png
@@ -45,9 +46,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-07-03T17:54:23.159096-05:00'
   sha256: 4997013cf1d177dbfb0151766844f35fa1eca81eb7e2c94010d5d61b13b8049f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram chat screenshot of a user asking "F R" to help source "some
+    blow."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:34.822610+00:00'
   source_available: true
 - id: f8cacb6293bbf490
   filename: IMG_6654.PNG
@@ -56,9 +58,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-07-09T13:06:43.101120-05:00'
   sha256: 27b00f863a9ca6a5c95fd0b3d32b83a72065ced480cc86c5293d762fe6e76d47
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram story requesting info on being SAed at PIKE with a UCTitleIX
+    link.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:12.061888+00:00'
   source_available: true
 - id: 338299820b4acf46
   filename: IMG_6653.PNG
@@ -67,9 +70,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-07-09T13:06:43.101120-05:00'
   sha256: d748e1eca487746dc460276ecee06dd433242d6b21864d79e327130315cc2bda
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram story listing names allegedly complicit in a drugging cover-up
+    by Zachary Neff.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:21.825043+00:00'
   source_available: true
 - id: eaa653391cea9b98
   filename: IMG_6655.png
@@ -89,9 +93,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2025-07-09T13:27:05.042279-05:00'
   sha256: 4c410c579b71d21c387ea6de9ecd7185277c34d5bafa77f220a74aed37dfd0b2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram story of Caitlyn Guntle's ASUC news with a 'took advantage
+    of me' text overlay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:26.837634+00:00'
   source_available: true
 - id: 292844f64596e817
   filename: IMG_6661.PNG
@@ -100,9 +105,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-07-10T17:44:23.599801-05:00'
   sha256: 808d4bcc45db148091adb1ba35e5fb931c53ef07a888b483db96b29ede4c174d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram post by Akash Ponna alleging rape at Pike fraternity and
+    UC Berkeley cover-up.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:26.461421+00:00'
   source_available: true
 - id: 268ccb1e67c4a933
   filename: IMG_7504.PNG
@@ -111,9 +117,9 @@ attachments:
   sender: prabhat-nuthakki-uc-berkeley
   sent_at: '2025-07-23T12:37:12.282279-05:00'
   sha256: 41c723c86ff79c794305f6f465712307737cbea51eb64eaedac0a5ef1df20bc9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Elon Musk's X post asking Andrej Karpathy to work together again.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:14.061192+00:00'
   source_available: true
 - id: 1d82faeed1faec3d
   filename: IMG_0723.png
@@ -122,9 +128,10 @@ attachments:
   sender: me
   sent_at: '2025-07-31T14:35:41.549000-05:00'
   sha256: f73f36f30d25403c048ec618f047248d075a12267d18a3779595f7c8243fed25
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram chat screenshot with a narwhal hug sticker and a photo of
+    three men.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:59:11.532586+00:00'
   source_available: true
 chat_message_guids_count: 124
 deleted_upstream: null

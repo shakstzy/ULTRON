@@ -22,9 +22,9 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-04-04T13:03:54.136988-05:00'
   sha256: 42f025ca750900def3acf7fd237a4d297fd722f29ee85391342be0fde71d923b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram story of a vintage BAT F.K.23 Bantam biplane in a museum.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:59:23.835682+00:00'
   source_available: true
 - id: dcd956ad97716a58
   filename: IMG_0057.png
@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2025-04-17T16:35:32.098000-05:00'
   sha256: f83b03cb4a6a1d9bdf19d0f540b26c3783b0b690e384909dbfb56d5250169383
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A table of travel expenses in Amsterdam and Brussels with Euro currency
+    conversion rates.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:09.344769+00:00'
   source_available: true
 - id: 80ea5bc1382f5d84
   filename: IMG_3196.png
@@ -44,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2025-04-17T16:37:14.858000-05:00'
   sha256: 83affbcfab2450cd1414f38e9e080ad7cebbbf10ca2f3f731738b190dbc1a65e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A scarred Chucky doll wearing "Good Guys" overalls standing against
+    a black background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:23.061312+00:00'
   source_available: true
 - id: 4814d3fe4d84f46c
   filename: IMG_5783.png
@@ -55,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2025-04-17T16:39:20.531000-05:00'
   sha256: 0226870c7f36371ad05eca55f1c6118ef1ccab7a5d01331131e78954d5477877
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Spreadsheet of Amazon orders and Amsterdam travel expenses with classification
+    and tag columns.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:31.596324+00:00'
   source_available: true
 - id: ee5a0a08d42f2d0d
   filename: 76661888214__6E323869-A97E-4435-98C5-2BED4D532B4B.HEIC
@@ -78,9 +81,10 @@ attachments:
   sender: me
   sent_at: '2025-04-18T20:30:50.419540-05:00'
   sha256: b750bdc47d57ebbb72459e3cbc9cf87317ce7adf62c56e76d2c2a32efc818839
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'iMessage screenshot: Aamir Khan declines a Monroe invitation to rest
+    for a frat event.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:07.037161+00:00'
   source_available: true
 chat_message_guids_count: 161
 deleted_upstream: null

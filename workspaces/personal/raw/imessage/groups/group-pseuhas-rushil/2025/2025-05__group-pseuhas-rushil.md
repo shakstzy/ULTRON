@@ -34,9 +34,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-05-31T09:38:22.494726-05:00'
   sha256: afdc38093dfc6fba2093e1ab494a7e5da3b876346cb5a2bf5a8d4f28d9f6f9a6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat discussing a $200/week stay, upfront payment, and bathroom
+    rules.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:36.626761+00:00'
   source_available: true
 - id: c4d3139f99d01e1f
   filename: IMG_9511.heic

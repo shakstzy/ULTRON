@@ -22,9 +22,9 @@ attachments:
   sender: saif-ali-nyc
   sent_at: '2025-08-20T14:13:01.402173-05:00'
   sha256: 67042c0342d4d6ff8a8998c88bd6587e51ad79a1514758ab8d0fc2134bca6521
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of a LinkedIn connection invite from Subhash Prasad.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:35.884856+00:00'
   source_available: true
 - id: 08ea4e1846ca8441
   filename: 77778196069__E13326CE-40E3-43D9-AC73-8FE801C02964.HEIC
@@ -45,9 +45,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-08-24T21:54:01.008798-05:00'
   sha256: ffc11463c07236701878430602e3cc5d99cb1506d3c1867b2f6720cb12b2e240
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram post reporting a $30M ICE-Palantir contract for an "ImmigrationOS"
+    platform.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:26.158089+00:00'
   source_available: true
 - id: de94c267bfd292ba
   filename: MOV_4470.MOV
@@ -56,9 +57,10 @@ attachments:
   sender: prabhat-nuthakki-uc-berkeley
   sent_at: '2025-08-24T22:08:38.772954-05:00'
   sha256: dec66a18d4c79e682a930bb1d406c338db29c092790714982a67da28de5e0541
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screen recording of a group video call with three men laughing and
+    smiling.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:39.742392+00:00'
   source_available: true
 chat_message_guids_count: 491
 deleted_upstream: null

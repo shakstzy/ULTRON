@@ -34,9 +34,9 @@ attachments:
   sender: me
   sent_at: '2025-09-10T00:25:05.390000-05:00'
   sha256: c935de8a6f965461082e5362f6aa66c41ce2b8370a8b7794e133bb1eb7e329d8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Perplexity screenshot displaying lyrics for a somber song titled "Crashing."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:25.683630+00:00'
   source_available: true
 - id: 1a134cb20e3816a9
   filename: IMG_6146.png
@@ -45,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2025-09-10T00:28:35.546000-05:00'
   sha256: 04bb52a3e4589b7b473fee30a46fc717bc6b82a5e330ef5e857820e89da4166e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of song lyrics for "Undrunk" by Fletcher with YouTube link
+    buttons.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:15.637551+00:00'
   source_available: true
 - id: 4045ff619afff09f
   filename: IMG_5883.png
@@ -56,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2025-09-11T23:09:31.928883-05:00'
   sha256: d791354cee25c5d2a78d3fd7c5b2e72e21e485c55ab09299cf24d966f1f9cfcf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a checklist with emotional notes and lyrics about heartbreak
+    in dark mode.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:46.129639+00:00'
   source_available: true
 - id: 57feb25490d37e43
   filename: you.wav

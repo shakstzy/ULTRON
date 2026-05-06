@@ -24,6 +24,14 @@ GEMINI_PRO_MODEL = "gemini-3-pro-preview"
 
 QUOTA_RE = re.compile(r"(429|exhausted|quota|rate.?limit)", re.IGNORECASE)
 
+# Workspace AI Ultra (avery) has effectively unlimited quota — always try first.
+# Adithya-personal accounts are AI Ultra backup. Anything else falls in alphabetically.
+GEMINI_ACCOUNT_PRIORITY = [
+    "avery@seedboxlabs.co",
+    "adithya@outerscope.xyz",
+    "adithya@eclipse.builders",
+]
+
 
 class CloudLLMUnreachable(RuntimeError):
     """Both gemini cycle and claude fallback failed. Caller should halt loud."""
@@ -32,7 +40,10 @@ class CloudLLMUnreachable(RuntimeError):
 def _list_gemini_accounts() -> list[str]:
     if not GEMINI_ACCOUNTS_DIR.exists():
         return []
-    return [p.stem for p in sorted(GEMINI_ACCOUNTS_DIR.glob("*.json"))]
+    found = {p.stem for p in GEMINI_ACCOUNTS_DIR.glob("*.json")}
+    ordered = [a for a in GEMINI_ACCOUNT_PRIORITY if a in found]
+    ordered += sorted(found - set(ordered))
+    return ordered
 
 
 def _rotate_gemini_account(email: str) -> None:

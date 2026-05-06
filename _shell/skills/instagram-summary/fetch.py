@@ -29,7 +29,6 @@ REEL_RE = re.compile(r"/(?:share/)?reels?/")
 
 WHISPER_MODEL = "small.en"
 N_FRAMES = 4
-MAX_TOKENS = 400
 CAROUSEL_CAP = 10
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605 Safari/605"
 

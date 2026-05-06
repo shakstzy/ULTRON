@@ -6,7 +6,7 @@ allowed-tools: Bash
 
 # youtube-summary
 
-Pulls a YouTube transcript via `youtube_transcript_api` and produces a summary. Runtime venv lives at `~/.quantum/youtube-summary/.venv/` (out-of-repo, not committed).
+Pulls a YouTube transcript via `youtube_transcript_api` and produces a summary. Pure local — no cloud LLM, no auth. Runtime venv at `~/.ultron/youtube-summary/.venv/`.
 
 ## When this fires
 
@@ -21,7 +21,7 @@ Trigger phrases (semantic, non-exhaustive): "summarize this youtube", "tldr this
 Do NOT fire for:
 - Non-YouTube video URLs (Vimeo, Loom, Twitch, X video posts).
 - YouTube channel or playlist pages without a specific video.
-- DRM-locked content or anything DRM-removal-adjacent.
+- DRM-locked content.
 - Music-video lyric extraction. Captions on music videos are usually wrong or absent.
 
 ## Procedure
@@ -30,13 +30,13 @@ Do NOT fire for:
 2. Run:
 
    ```
-   ~/.quantum/youtube-summary/.venv/bin/python -m youtube_transcript_api <VIDEO_ID> --languages en --format text
+   ~/.ultron/youtube-summary/.venv/bin/python -m youtube_transcript_api <VIDEO_ID> --languages en --format text
    ```
 
-3. stdout is the transcript, newline-separated. Read it, then produce a summary focused on:
-   - Core thesis or argument
+3. stdout is the transcript. Read it, then summarize:
+   - Core thesis
    - Key points in order
-   - Concrete takeaways or recommendations
+   - Concrete takeaways
 
 4. Match summary length to video length unless Adithya asks for more or less detail.
 
@@ -46,8 +46,6 @@ Do NOT fire for:
 - `VideoUnavailable`: private, deleted, or region-locked.
 - `RequestBlocked` / `IpBlocked`: YouTube is rate-limiting this IP. Retry later.
 
-## QUANTUM notes
+## ULTRON notes
 
-- Pure local CLI. No keychain, no network gate, no human-in-the-loop required.
-- If Adithya asks to save the summary, drop it under `raw/library/YYYY-MM-DD-<slug>.md` so the next Graphify run picks it up. Default filename slug: short kebab of video title.
-- Do NOT hand-edit `graphify-out/`. Let the Layer 3 lint timer re-extract.
+- If Adithya asks to save the summary, drop it under the appropriate workspace's `raw/library/YYYY-MM-DD-<slug>.md`. Slug is short kebab of video title.

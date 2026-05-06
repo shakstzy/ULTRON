@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-10-01T18:11:19.693000-05:00'
   sha256: d9ffc6774096034b583fd6f5077e9fda6f5d0b161014cb3773fa7fc0e59e4818
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Bearded man with a glossy liquid-metal skull mask merging with his
+    face.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:11.964827+00:00'
   source_available: true
 - id: ab601d11a4a0c3f3
   filename: IMG_7012.png
@@ -66,9 +67,10 @@ attachments:
   sender: me
   sent_at: '2025-10-03T13:21:03.260898-05:00'
   sha256: 9de61dde7f5f5309587f8046b977d7c745667a1fd82d7312e0fb9d662749f9cb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A young man performs a clean kickflip on a skateboard at night and
+    smiles at the camera.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:07.178609+00:00'
   source_available: true
 - id: 22efb57dcf173952
   filename: text-to-video-b3c9ff8e.MOV
@@ -77,9 +79,10 @@ attachments:
   sender: ryan-ogren
   sent_at: '2025-10-08T15:10:43.572372-05:00'
   sha256: 80c230457bb012518c20dffe26277766613a7ac57c0e08fc9f050fb7f848e1b6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A sad young man argues with parents, looks at a photo on his phone,
+    and skateboards at sunset.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:15.078088+00:00'
   source_available: true
 chat_message_guids_count: 113
 deleted_upstream: null

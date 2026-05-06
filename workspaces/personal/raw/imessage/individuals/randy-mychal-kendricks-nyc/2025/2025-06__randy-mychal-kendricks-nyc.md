@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-06-22T17:29:53.363000-05:00'
   sha256: 121bdec2da5c03b4169d321a947383aaa665c7dc8f682b6f590643329b5db247
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Five men pose on an orange couch at a bar with drinks and a pitcher
+    on the table.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:18:07.296433+00:00'
   source_available: true
 - id: b38ae77dcc771d67
   filename: ticket.pdf
@@ -33,9 +34,11 @@ attachments:
   sender: randy-mychal-kendricks-nyc
   sent_at: '2025-06-24T19:05:11.487590-05:00'
   sha256: ad7ccd13309f2acd41e2c1a3dae8715f54b99f1ee482c8a5ca6b3a79ac65dc4c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a registration ticket for the Permissionless IV conference
+    organized by Blockworks. It confirms a group ticket for Randy Song for the June
+    2025 event in Brooklyn.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:11.149324+00:00'
   source_available: true
 chat_message_guids_count: 35
 deleted_upstream: null

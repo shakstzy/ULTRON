@@ -128,9 +128,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-03T04:52:44.188631-06:00'
   sha256: dbcf67e57477d26c2c10466068d9d9e2232c7e6a860321fe4b5e62c5a783971c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A woman in graduation regalia poses under UC Berkeley's Sather Gate
+    on a rainy day.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:50.101567+00:00'
   source_available: true
 - id: f55d6547f3f15d04
   filename: FullSizeRender.HEIC
@@ -163,9 +164,9 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-03T04:52:44.188631-06:00'
   sha256: 5a7c1281390de1f5237093f102b845fef108c72c68ac97f557a8cdf67d19f38c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling woman in UC Berkeley graduation regalia sits on a stone wall.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:45.534138+00:00'
   source_available: true
 - id: de2ecdea522d567e
   filename: IMG_0584.jpeg
@@ -232,9 +233,10 @@ attachments:
   sender: me
   sent_at: '2026-02-04T03:41:56.399615-06:00'
   sha256: 711dca7f7b04270725a6bfa4ec9812d5ddcc2e1ce9fdbb8f5ded474a7d7bc019
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man and woman embrace on a beach at sunset with the Golden Gate Bridge
+    in the background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:28.287034+00:00'
   source_available: true
 - id: e9faeb939ebac0c3
   filename: IMG_0363.png
@@ -254,9 +256,9 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-04T05:55:50.827598-06:00'
   sha256: 7b77fd6087599490d3581e40652fe63eb45fec5f3af9d7827ecbe29ac3ca7ec5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A 3D-style peach emoji with green leaves on a black background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:26.849407+00:00'
   source_available: true
 - id: 708bd5938b26d254
   filename: 3C2DFCE0-4B7E-4ABD-8189-F96FE8D738A3.png
@@ -265,9 +267,9 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-04T05:56:40.414345-06:00'
   sha256: 7b77fd6087599490d3581e40652fe63eb45fec5f3af9d7827ecbe29ac3ca7ec5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A 3D-style peach emoji with green leaves on a black background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:26.849407+00:00'
   source_available: true
 - id: 3e24646123b37814
   filename: 3C2DFCE0-4B7E-4ABD-8189-F96FE8D738A3.png
@@ -276,9 +278,9 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-04T05:58:40.698365-06:00'
   sha256: 7b77fd6087599490d3581e40652fe63eb45fec5f3af9d7827ecbe29ac3ca7ec5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A 3D-style peach emoji with green leaves on a black background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:26.849407+00:00'
   source_available: true
 - id: e012bb5e7d5782c1
   filename: 3C2DFCE0-4B7E-4ABD-8189-F96FE8D738A3.png
@@ -287,9 +289,9 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-04T05:58:51.377022-06:00'
   sha256: 7b77fd6087599490d3581e40652fe63eb45fec5f3af9d7827ecbe29ac3ca7ec5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A 3D-style peach emoji with green leaves on a black background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:26.849407+00:00'
   source_available: true
 - id: cf33d0dc9b557136
   filename: 70F1A638-88DD-46F3-B998-A88F949AF7CE.png
@@ -309,9 +311,9 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-04T06:10:51.183805-06:00'
   sha256: 7b77fd6087599490d3581e40652fe63eb45fec5f3af9d7827ecbe29ac3ca7ec5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A 3D-style peach emoji with green leaves on a black background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:26.849407+00:00'
   source_available: true
 - id: 802094aae0a50680
   filename: 3C2DFCE0-4B7E-4ABD-8189-F96FE8D738A3.png
@@ -320,9 +322,9 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-04T06:11:04.055370-06:00'
   sha256: 7b77fd6087599490d3581e40652fe63eb45fec5f3af9d7827ecbe29ac3ca7ec5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A 3D-style peach emoji with green leaves on a black background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:26.849407+00:00'
   source_available: true
 - id: 5e45ac776cdf3913
   filename: 3C2DFCE0-4B7E-4ABD-8189-F96FE8D738A3.png
@@ -331,9 +333,9 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-04T06:19:14.242501-06:00'
   sha256: 7b77fd6087599490d3581e40652fe63eb45fec5f3af9d7827ecbe29ac3ca7ec5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A 3D-style peach emoji with green leaves on a black background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:26.849407+00:00'
   source_available: true
 - id: f2db36e7004138f5
   filename: IMG_3461.png
@@ -399,9 +401,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-12T23:22:02.617593-06:00'
   sha256: 7ed266be1f7c6f17129d986fc1e7d66fab2500d742e081ce38d08e81008d8210
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Wide-eyed yellow emoji with two buck teeth and a dazed look on a black
+    background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:04.103177+00:00'
   source_available: true
 - id: 28c39225c5245ac5
   filename: JPEG image-40FE-984A-64-14.JPEG
@@ -489,9 +492,10 @@ attachments:
   sender: me
   sent_at: '2026-02-22T20:08:59.152000-06:00'
   sha256: 996a7bcbc1fb16a78268a89c85a5fcc7156e73e9abf830a0a499c7258407a6aa
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Pencil sketches of a man and a face on two folded papers resting on
+    a dark carpet.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:49.362018+00:00'
   source_available: true
 - id: d1031ea8b0f85681
   filename: 79350553265__A28B14A4-7810-4628-BEEB-14A352E91C2F.HEIC

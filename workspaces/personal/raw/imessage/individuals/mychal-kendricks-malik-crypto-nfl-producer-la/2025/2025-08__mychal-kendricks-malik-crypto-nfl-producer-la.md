@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-08-19T04:51:59.100000-05:00'
   sha256: 0c888ed39d78384229377cc1dca0602ac347a8e6013d4cefef8019554214c84b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in black athletic gear tosses a golf ball into the air on a sunny
+    golf green.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:53.025760+00:00'
   source_available: true
 - id: 7cf2992f58992eb4
   filename: IMG_0175.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-08-19T04:52:13.742000-05:00'
   sha256: 86e72bfa236e392ae5ef30ea4761c7cc390dd2d11606ae3a617af04b89925d76
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in black vest walks on a golf green with scattered balls near a
+    flag and sand trap.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:08.986419+00:00'
   source_available: true
 - id: 6ae3f1315bb9419e
   filename: IMG_2110.png
@@ -55,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2025-08-23T22:49:41.946568-05:00'
   sha256: ce4ce72ba5a65fd60662a746fc7c0b98dace66c0b2cd3e93aee3887689cc9f08
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Friends smiling and flashing peace signs in a selfie at a crowded outdoor
+    night party.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:21.346579+00:00'
   source_available: true
 - id: b6d426bf853d93d9
   filename: IMG_1138.JPG
@@ -66,9 +69,10 @@ attachments:
   sender: me
   sent_at: '2025-08-23T22:49:41.946568-05:00'
   sha256: f29e97d721578ccfc3021bdff39d8c045e1f69c27466a5c2010fed2af342d60f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men take a selfie before a blue neon "KULTURA" sign; one gives
+    a thumbs up.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:21.339101+00:00'
   source_available: true
 - id: f09efc9b519b45ff
   filename: tmp.gif
@@ -77,9 +81,9 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-08-24T13:33:51.311601-05:00'
   sha256: b2fb08bf6ce28cb7ddf6411d74a0c36c544af22f5d774d1d29ed36e1b6808566
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Michael Jordan laughs intensely while covering his mouth with his hand.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:13.745248+00:00'
   source_available: true
 - id: 5eea7429c62185cb
   filename: -7057252224621936888.MOV
@@ -88,9 +92,10 @@ attachments:
   sender: me
   sent_at: '2025-08-28T22:50:54.480899-05:00'
   sha256: 81ce779b18ed709779c2c88405f945c3a5bcdac9f6d40fbd1b471666261d8406
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screen recording of the Synapse Web3 app creating a persistent BTC
+    DCA task via a chat interface.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:24.286293+00:00'
   source_available: true
 - id: 8c0c2accbf1b22b9
   filename: -5434798402986163788.MOV
@@ -99,9 +104,10 @@ attachments:
   sender: me
   sent_at: '2025-08-28T22:50:54.480899-05:00'
   sha256: 3aa7a7d869c1fc3f29e399da18bf624147ddabba4ee6872ca0f0b34024e6ecda
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Synapse Web3 demo showing automated Bitcoin DCA task execution and
+    Etherscan verification.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:46.843559+00:00'
   source_available: true
 - id: a98ba74340b98320
   filename: IMG_1222.png
@@ -110,9 +116,10 @@ attachments:
   sender: me
   sent_at: '2025-08-28T22:51:20.726769-05:00'
   sha256: a82354c5e10a729c0ebc5ec8357e7e755a1b204876c3944be5deee7af0d401c7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dark mode mobile calendar screenshot showing work sprints and gym sessions
+    for August 28-30.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:28.607117+00:00'
   source_available: true
 - id: 369fdef84ca1ab27
   filename: IMG_1224.png
@@ -121,9 +128,9 @@ attachments:
   sender: me
   sent_at: '2025-08-28T22:52:18.275627-05:00'
   sha256: c898a53bb7fb2865fa1423af823b7a4bfb0c7767a2d9608f8c0fdae7bd04203b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a dark-mode checklist for daily routines and meal planning.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:08.677199+00:00'
   source_available: true
 - id: 39f1de9d7b8b3690
   filename: IMG_1225.png
@@ -132,9 +139,10 @@ attachments:
   sender: me
   sent_at: '2025-08-28T22:52:18.275627-05:00'
   sha256: 15e9b5baf9c209647682e48e52c109248e8e93119c536f599108c628b4253abf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile screenshot of a task list showing meal plans and a Y Combinator
+    application entry.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:34.531079+00:00'
   source_available: true
 - id: 7894101e50b2155b
   filename: IMG_3242.heic
@@ -143,9 +151,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-08-28T23:03:53.894199-05:00'
   sha256: c4ed0d6df8ffdc456c1183c3cdec93a2b847a719e1713bec66b482e5f7bbc0ce
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Spotify artist profile for Yung Fazo showing 434.5K monthly listeners
+    and popular songs.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:33.834248+00:00'
   source_available: true
 - id: 3f0f81822fc91bb1
   filename: IMG_1230.png
@@ -154,9 +163,10 @@ attachments:
   sender: me
   sent_at: '2025-08-28T23:43:13.493178-05:00'
   sha256: 361b1ef6b2dca77cdba206055879184b772951204771215de5c413747a825ae8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple Music artist page for Shak Stzy featuring his single "Everything
+    You Are."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:00.753957+00:00'
   source_available: true
 - id: fd9f9f033f3656a8
   filename: -2766609594009799055.mov
@@ -165,9 +175,10 @@ attachments:
   sender: me
   sent_at: '2025-08-30T08:22:17.295648-05:00'
   sha256: ee30eedb2113c6739b56116d6b11c09e0f82ab87fc206fd70587f0a9ff8c7ef6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Synapse Web3 app demo showing portfolio tracking, automated trading
+    tasks, and an MCP store.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:42.176230+00:00'
   source_available: true
 - id: faf9c837bb3db027
   filename: -5434798402986163788.mov

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-01-28T17:23:25.487000-06:00'
   sha256: c723f70805b1db14b187ceadd1908ed9ca16b993e03c8ef950958bf65f5fd12d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Empty room with brown carpet, white walls, black window blinds, and
+    a round ceiling light.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:47.091450+00:00'
   source_available: true
 - id: 5f3fb842d6d48e9a
   filename: IMG_6615.HEIC

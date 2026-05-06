@@ -34,9 +34,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-01-12T05:02:22.534302-06:00'
   sha256: 8c82d82c59a7cc5a9638b634d17132d2bff13f6b0c6ed2dadf7393b47de5cacb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a video call showing an Adobe Illustrator session with
+    a yellow "KP" logo.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:38.047872+00:00'
   source_available: true
 - id: ad19903f621aff4d
   filename: 29deabd6-1b32-438d-a17f-856284ad9645.heic

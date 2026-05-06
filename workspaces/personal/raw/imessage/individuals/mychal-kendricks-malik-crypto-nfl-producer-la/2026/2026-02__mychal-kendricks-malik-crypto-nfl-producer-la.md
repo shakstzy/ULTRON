@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2026-02-13T23:41:17.084486-06:00'
   sha256: 6af477605646126cd1fef3082a429d57039694a4379b5797c83436ac165f248d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of navigation directions to Avalon Hollywood on Vine
+    Street in Los Angeles.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:18:08.717763+00:00'
   source_available: true
 - id: 26cf254baa84be8e
   filename: FA8D310E-884F-436A-9FF6-AEB691B445F6.pluginPayloadAttachment
@@ -55,9 +56,10 @@ attachments:
   sender: me
   sent_at: '2026-02-15T01:15:14.517617-06:00'
   sha256: 01b68fe313339981499284f5b9cd5244aa0b58219c64731530aebc3860eec719
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Crowded rave in a tunnel venue with "NIGHTRAVE" neon signs and a disco
+    ball.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:53.069142+00:00'
   source_available: true
 - id: 438afb765c9a6152
   filename: Audio Message.caf
@@ -77,9 +79,10 @@ attachments:
   sender: me
   sent_at: '2026-02-17T11:58:59.932364-06:00'
   sha256: e9280631bd38bc9edef8d85dd4842c0373b6f870e685a1c88b1dd88018446ad4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Grainy black and white ID headshot of a smiling young man with dark
+    hair.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:18:00.657444+00:00'
   source_available: true
 - id: fac2272a4a688d69
   filename: Onboarding Readme.pdf
@@ -242,9 +245,10 @@ attachments:
   sender: me
   sent_at: '2026-02-25T11:24:50.006000-06:00'
   sha256: 1795c40fd3f63568c82debf3c15867660833bf34abd86c1747d04d7da19eb880
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three men take an upside-down selfie outdoors with a city and hillside
+    background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:54.321993+00:00'
   source_available: true
 - id: 1673f95cd99b278a
   filename: IMG_7471.HEIC
@@ -253,9 +257,10 @@ attachments:
   sender: me
   sent_at: '2026-02-25T11:24:50.006000-06:00'
   sha256: e480219790b859d0779792ac4d62d9793204cad18b8a9de08844299d94bfc9cd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three men smiling for an outdoor selfie with a residential valley in
+    the background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:18:02.362593+00:00'
   source_available: true
 - id: 8b4f7fb08c66af50
   filename: IMG_7472.HEIC

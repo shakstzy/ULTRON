@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-02-28T00:47:55.512000-06:00'
   sha256: eb495ca1231c1c66e613b49f57e79fd912ba52a8323eb410cd430112f8e061d4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three men posing for a selfie in a brick-walled room; one holds a small
+    food skewer.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:18:55.056329+00:00'
   source_available: true
 chat_message_guids_count: 1
 deleted_upstream: null

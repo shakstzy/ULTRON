@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-06-19T03:23:06.962000-05:00'
   sha256: 126cd8dd97a6e112b0e6b1c1230ac4cdacc943a22572b56541b4a1ffdc67ea3c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of Adi introducing Mike and Mychal regarding athletecoin
+    and recovery analytics.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:50.465644+00:00'
   source_available: true
 - id: dbfdd4ffdeee745d
   filename: IMG_6402.heic
@@ -56,9 +57,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-06-20T08:47:55.741129-05:00'
   sha256: 4769a780326156db37205bca06ba7c33c5de3db9d15153389785084a7728aae4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Surgical retractor opening a heel incision to reveal a ruptured Achilles
+    tendon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:12.160774+00:00'
   source_available: true
 - id: 88684d0648aa9487
   filename: IMG_6404.heic
@@ -79,9 +81,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-06-20T08:47:55.741129-05:00'
   sha256: 1d762b06a3e7bfabda1558c33ff95796c9a7908d9f3b10cb3fd500c9ceb4507e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Surgical incision on a human heel exposing internal tissue during a
+    medical procedure.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:57.597796+00:00'
   source_available: true
 - id: 865d789e29068aed
   filename: IMG_9791.PNG
@@ -101,9 +104,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-06-21T01:20:50.756337-05:00'
   sha256: afcee8d660675409d91b2b6fbc39767135f5442376ed87dc63d530ae7f650fe4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Black cursive letter "K" with the number "18" centered above it on
+    a white background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:18:15.053025+00:00'
   source_available: true
 - id: ae3934f720c45205
   filename: IMG_9800.DNG
@@ -123,9 +127,10 @@ attachments:
   sender: me
   sent_at: '2025-06-21T16:56:24.810327-05:00'
   sha256: 4d564fe6c2a07d7c99cbfc33171b40e02bb830de3424e3be186c530f3db9ab56
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a messaging app showing a price list for various drugs
+    and cannabis products.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:00.772231+00:00'
   source_available: true
 - id: 0d8e820a21fae5c2
   filename: 77225112758__6AADD319-3988-4664-A8D5-9956CE078149.heic
@@ -146,9 +151,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-06-22T16:17:41.040451-05:00'
   sha256: b753f49412d8d7ec825488f002cba0722dc7e29f4a51d7e84d13e8d9de5f7202
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Five men posing at a bar table with drinks in front of a shelf full
+    of liquor bottles.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:30.229001+00:00'
   source_available: true
 - id: c0a26763ba221699
   filename: IMG_0855.heic
@@ -157,9 +163,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-06-22T16:17:41.040451-05:00'
   sha256: bef7c97a03c9a5d3e4f5e93fb855e9ad2f5d2643b4de8189fe9a10b6e39b965a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Five men posing with drinks on an orange leather couch in front of
+    a bar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:56.930905+00:00'
   source_available: true
 - id: 48ebd331ed993ba9
   filename: ScreenRecording_06-23-2025 00-29-52_1.MP4
@@ -179,9 +186,10 @@ attachments:
   sender: me
   sent_at: '2025-06-23T02:36:04.806000-05:00'
   sha256: ecfdaa9bf710f4d977a0a3fe1de47bd77cecfd93f878c8911250634763e038ed
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hand holding a card and yellow packet over a plate of white powder
+    under red light.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:56.216765+00:00'
   source_available: true
 - id: 9ddc07dd12f59741
   filename: ScreenRecording_06-23-2025 00-29-52_1.MP4
@@ -223,9 +231,10 @@ attachments:
   sender: me
   sent_at: '2025-06-26T01:21:32.946824-05:00'
   sha256: f59780204a2eecd16a28e5703170b67bca926dd9557560367ffd552bafe9bc57
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram chat with Halsey | MoonPay asking to link after a missed meeting
+    with Randy and Mychal.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:00.154904+00:00'
   source_available: true
 - id: 11f2026aec500de5
   filename: "Screenshot 2025-06-26 at 3.20.34\u202FAM.jpeg"
@@ -234,9 +243,10 @@ attachments:
   sender: me
   sent_at: '2025-06-26T02:20:47.041391-05:00'
   sha256: 07de7eec45a1fef4ae5b66d608121fbc564121df9473536759cd2b2107ee24f9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone contact card for 'Mom' with a photo of a couple and phone number
+    +1 (510) 449-9964.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:18:24.895038+00:00'
   source_available: true
 - id: eb675d679120fd39
   filename: IMG_0135.DNG

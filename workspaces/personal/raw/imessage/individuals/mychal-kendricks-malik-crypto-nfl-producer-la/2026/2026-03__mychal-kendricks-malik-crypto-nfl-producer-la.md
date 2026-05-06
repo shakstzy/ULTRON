@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-06T13:59:04.638671-06:00'
   sha256: f0b199c1dff4771650ff5a7b343fe7902f4871357b9268268ba20767fb873447
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Adithya Kumar presenting Mosaic's AI data supply chain slides in a
+    Google Meet.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:18:09.023364+00:00'
   source_available: true
 - id: 3e1092888d166be1
   filename: IMG_6702.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2026-03-20T18:14:00.887564-05:00'
   sha256: 2c3feaf7beba88c257245c42125aa0c3a66d99b84eb4fff21a4a2713c27e7fb3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Gmail notification from Brian Hsu for a shared Google Drive titled
+    "Software".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:38.741458+00:00'
   source_available: true
 - id: 0a7dbf9008e0b9d6
   filename: been gone.m4a
@@ -66,9 +68,10 @@ attachments:
   sender: me
   sent_at: '2026-03-25T19:01:24.678000-05:00'
   sha256: 8a0d5b63ae6dd289c21dda8477b62e0d0189f05fcb202cdb3b8e8f8c61518b88
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Fitness app UI showing 8W current power, 160W peak, 7% range, and concentric
+    extension graph.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:57.905033+00:00'
   source_available: true
 - id: 4554150fbdad09eb
   filename: IMG_5102.png
@@ -77,9 +80,10 @@ attachments:
   sender: me
   sent_at: '2026-03-26T21:00:07.231888-05:00'
   sha256: ac9ea6f638f753036c5975f190142c8cbf34511462ede7d8f3009f90489577cf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Power Kinetics landing page for hydraulic resistance training for NFL
+    and NBA teams.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:41.892505+00:00'
   source_available: true
 - id: 4f27364fc64c5519
   filename: 6A23440F-CF8C-4800-82FA-D7FC2A7FAA4F.pluginPayloadAttachment
@@ -99,9 +103,10 @@ attachments:
   sender: me
   sent_at: '2026-03-29T21:35:59.157533-05:00'
   sha256: d48f2b94a74165d16870b9982e054cdd06a33ffecbb895e217fa452105343fe0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Power Kinetics landing page showing a fitness analytics dashboard with
+    power output graphs.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:41.065291+00:00'
   source_available: true
 - id: 90cad012cb875dd7
   filename: 1F931DA2-220F-4D2C-ABC0-03817B4CC735.pluginPayloadAttachment
@@ -132,9 +137,10 @@ attachments:
   sender: me
   sent_at: '2026-03-30T04:05:46.396649-05:00'
   sha256: 6dc42e4632d418a7780f4871cfa4e5ca8764b7334f9661bb63bd03f6c479433b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dark-mode Athlete Roster dashboard with one active profile card for
+    Mychal.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:45.762956+00:00'
   source_available: true
 - id: ed4052b12116de6a
   filename: IMG_9434.png
@@ -143,9 +149,10 @@ attachments:
   sender: me
   sent_at: '2026-03-30T04:05:47.472420-05:00'
   sha256: 1847eb76a0e694c88255564fdf4bf830f96b955a3aa4b41da69525a73078af99
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A dark-mode modal titled 'Edit Mychal' for updating athlete profile
+    information and stats.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:18:49.638195+00:00'
   source_available: true
 - id: df11309e795381a5
   filename: IMG_9974.png
@@ -165,9 +172,10 @@ attachments:
   sender: me
   sent_at: '2026-03-30T04:06:05.653368-05:00'
   sha256: 69fc466a185aa47c7a269112929e16da7c8230ba117441c15f1205efd31f2ada
-  description: null
-  description_model: null
-  extracted_at: null
+  description: UI displaying PK and SHAK group selection cards and a "Group SHAK created"
+    toast.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:18:29.958157+00:00'
   source_available: true
 - id: eb316391f65370c5
   filename: IMG_8532.png
@@ -187,9 +195,10 @@ attachments:
   sender: me
   sent_at: '2026-03-30T04:06:20.121316-05:00'
   sha256: d8be0f25bab302ba8cf7f491be0a041049c05bd93d066dfdc6b28675ad1c4b49
-  description: null
-  description_model: null
-  extracted_at: null
+  description: '"Create New Athlete" modal for "ADITHYA" with a Supabase authentication
+    error in the background.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:46.888684+00:00'
   source_available: true
 - id: 9fec8bf9e4d972d4
   filename: IMG_3251.png
@@ -198,9 +207,10 @@ attachments:
   sender: me
   sent_at: '2026-03-30T04:06:24.867003-05:00'
   sha256: 556a285deb406c814a23424a45e96d0318df9910001a6303673f73c7ab3362dc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Red error message: No user account found for ''ADITHYA'', prompts
+    manual creation in Supabase.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:18:54.872021+00:00'
   source_available: true
 - id: af14f423d79e04bf
   filename: IMG_7194.png
@@ -231,9 +241,10 @@ attachments:
   sender: me
   sent_at: '2026-03-30T04:07:36.501898-05:00'
   sha256: f10e0f7b86fa7891d89852a7ae3853ff7a184fb267eed1d3b467b131ae56cbc8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a user profile for Adithya Shakthi Kumar with an emergency
+    contact entry form.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:18:19.830822+00:00'
   source_available: true
 - id: 2cce9d979a55e522
   filename: 3ACEA7F1-C453-4004-865B-4218E2617332.pluginPayloadAttachment

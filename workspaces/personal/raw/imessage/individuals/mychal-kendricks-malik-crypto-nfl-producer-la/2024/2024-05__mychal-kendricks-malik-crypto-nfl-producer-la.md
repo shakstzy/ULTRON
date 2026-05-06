@@ -22,9 +22,9 @@ attachments:
   sender: me
   sent_at: '2024-05-03T14:22:27.456831-05:00'
   sha256: 88d38733a87ad2bde86dd4467b6153f35186e04ff51bba521003a7277ee8d707
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Crushed granola or cereal flakes soaking at the bottom of a clear glass.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:18:28.306454+00:00'
   source_available: true
 chat_message_guids_count: 189
 deleted_upstream: null

@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2026-04-02T00:53:48.311000-05:00'
   sha256: 44de3020da5987acbf14c1ae35a75cdc56a606814ed43ab68213b0f15c92f250
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Intra-platform arb strategy: 100% win rate and $690K+ simulated PnL
+    across 73K trades.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:05.804592+00:00'
   source_available: true
 - id: c5e655ca470d3fc8
   filename: IMG_8010.PNG
@@ -55,9 +56,10 @@ attachments:
   sender: me
   sent_at: '2026-04-02T22:46:21.682000-05:00'
   sha256: a538b2e129424fa06dc6c1ad982fe6792b7181238cf7edf2cc0d7e49c6808eb9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile calendar screenshot of a 1 PM follow-up event with Mychal Powerkinetics
+    on April 2.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:13.582711+00:00'
   source_available: true
 - id: 3b7b4b916fa627ef
   filename: BB621AFC-9A96-4597-A585-9E4C97B0257C.pluginPayloadAttachment
@@ -88,9 +90,9 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2026-04-09T22:01:44.590092-05:00'
   sha256: 1035e7d8f9a98ea01211e1b6bfd200ec99e7a0b480a10c8c8d406606f6eaac1c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person carrying a Mac Studio box next to a glass and metal railing.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:18:25.934486+00:00'
   source_available: true
 - id: eb1ab99134b3e373
   filename: 065254D6-9C5C-4352-9173-AD0DC97740E5.pluginPayloadAttachment
@@ -110,9 +112,10 @@ attachments:
   sender: me
   sent_at: '2026-04-14T04:34:34.790000-05:00'
   sha256: 8e3b564b6634fd71b4278732422d7b765a02dbc21930013f5580d75254088abd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Tweet about a Chinese programmer's $868K profit from 28,000 AI-driven
+    Bitcoin trades.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:20.110097+00:00'
   source_available: true
 - id: 0a02b7f506b78d80
   filename: C293CF1B-830C-40DE-BF20-AF70D3154E7F.pluginPayloadAttachment
@@ -154,9 +157,10 @@ attachments:
   sender: me
   sent_at: '2026-04-21T13:50:28.491000-05:00'
   sha256: 5ab0240f4a91140ab6b7d73f534904fbe7b6242574d9a5adb6bbff069a048f8b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Status display showing 64% battery, a yellow bar, and 3h 09m remaining
+    to cycle.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:20.494266+00:00'
   source_available: true
 - id: 346402359e29e71d
   filename: IMG_5931.png
@@ -165,9 +169,10 @@ attachments:
   sender: me
   sent_at: '2026-04-21T14:29:34.811000-05:00'
   sha256: fa896439c99127c11e9934eaa1aa591a626a13d2ab54bfc4ca115aa8ae9db8f4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Ohmo.ai post about a Claude bot claiming $300,000 profit by exploiting
+    Polymarket price lags.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:15.762253+00:00'
   source_available: true
 - id: 8e4ad72e70cb09a4
   filename: 79849428008__9CEE66FB-AC75-4439-98AF-62320A1963C5.HEIC
@@ -209,9 +214,10 @@ attachments:
   sender: me
   sent_at: '2026-04-22T00:19:40.230000-05:00'
   sha256: 671ba1e9760e272a4f499ccb9076daf8b0cb6cf7d1b605f791f323db33c0a6fb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Agent CLI logs showing Python backtest strategy execution, PnL results,
+    and status updates.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:21.881582+00:00'
   source_available: true
 - id: 763607946b493fa2
   filename: 561C02B6-F5B8-4AC5-9F4E-E9A8223913F6.pluginPayloadAttachment
@@ -297,9 +303,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2026-04-24T15:23:48.443621-05:00'
   sha256: dc569f2dfd46844e1147a40f0500385dda6b07c7fb5d8ca6935fc17d26b623e6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google search result explaining Jiu Jitsu principles for using an opponent's
+    momentum.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:27.373551+00:00'
   source_available: true
 - id: 8525b045e4d269d7
   filename: 8CC98796-8C27-4C13-8396-9B6A55ACB28A.pluginPayloadAttachment
@@ -396,9 +403,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2026-04-24T19:42:15.142173-05:00'
   sha256: bb39f132825f08bdefee2011bcfabc6546cce1ebd6b08ef7f4a527289e9466d0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Parsec app on a laptop screen showing a host named 'Marvins-Mac-Studi'
+    next to a keyboard.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:37.985426+00:00'
   source_available: true
 - id: 9695d01006ffe299
   filename: IMG_7057.png
@@ -407,9 +415,10 @@ attachments:
   sender: me
   sent_at: '2026-04-24T20:37:59.359000-05:00'
   sha256: a92fa647a3c30e08f4811b767354164d0a76e2e6f71e024a98ad8c3053a04f61
-  description: null
-  description_model: null
-  extracted_at: null
+  description: macOS Notes app in a Parsec window displaying "Yo it works" dated April
+    24, 2026.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:18:45.959876+00:00'
   source_available: true
 - id: 09db86cddb02a1fc
   filename: 1029CFF8-F4F3-45E2-AEA5-128B51EE3A14.pluginPayloadAttachment
@@ -440,9 +449,10 @@ attachments:
   sender: me
   sent_at: '2026-04-24T20:47:40.993000-05:00'
   sha256: 248f2ecd24f0a92c34cda595cdb5b68d1f22f1bf7e3ff5487eec69a4560f197b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Seller listing for a Mac Studio M3 Ultra with 512GB RAM, 8TB SSD, and
+    80-core GPU.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:38.201308+00:00'
   source_available: true
 - id: 31455b914417c5bd
   filename: DD5DEE20-4E85-4C3A-B620-36D35D158A12.pluginPayloadAttachment
@@ -473,9 +483,10 @@ attachments:
   sender: me
   sent_at: '2026-04-28T01:03:45.991000-05:00'
   sha256: 3939c47013d12344c1a4c29646f9d59b3a5fedeb4ec792b881164151b4429e85
-  description: null
-  description_model: null
-  extracted_at: null
+  description: YouTube video preview about the psychological challenges of the 120-130
+    IQ range.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:41.379417+00:00'
   source_available: true
 - id: 88bdcbfe21be8250
   filename: 79908439441__A9E78B41-B1E9-4059-987D-D8DB49210D21.HEIC
@@ -484,9 +495,9 @@ attachments:
   sender: me
   sent_at: '2026-04-28T10:53:21.484212-05:00'
   sha256: 658ebcc56a9b9a806c8b0237f29e6b8d1ca81f29325130b581f93f559e4b0fe7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A gold-colored NVIDIA TITAN RTX graphics card resting on a wooden table.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:31.082335+00:00'
   source_available: true
 - id: e431125cf908d4d6
   filename: 2BC1F638-467D-498C-BFCA-3B594EE05026.pluginPayloadAttachment

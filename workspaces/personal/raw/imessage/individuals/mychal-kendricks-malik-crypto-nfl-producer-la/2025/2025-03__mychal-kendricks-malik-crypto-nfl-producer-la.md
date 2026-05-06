@@ -22,9 +22,11 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-03-17T00:33:59.961470-05:00'
   sha256: bbb7917521f43298725b79a74a62be93a0d4557bad306eae32e6bbbb7b4ca156
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is the CV of Robert Davis MD, founder of RD Heritage Group. It
+    details his global investment portfolio in biotech and energy alongside his career
+    in emergency medicine.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:34.223664+00:00'
   source_available: true
 - id: e61d532808fa00e8
   filename: FILE_6628.pdf
@@ -68,9 +70,10 @@ attachments:
   sender: me
   sent_at: '2025-03-18T00:53:27.773000-05:00'
   sha256: 8413e77af6304f1445d55344e16f20f1f3c887b656b2a3649024993cee019445
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Uber app showing driver Bryan in a silver Chevrolet Malibu arriving
+    at Genting Blvd.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:18:07.454711+00:00'
   source_available: true
 - id: cd3838611555ccc1
   filename: FILE_6755.pdf
@@ -115,9 +118,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-03-27T04:34:09.116057-05:00'
   sha256: 8daa1ec4f5ec9fa163a4bc45e503f816fc8ee51e44cb7fdccbf722747e9d9a30
-  description: null
-  description_model: null
-  extracted_at: null
+  description: An older man in a grey shirt uses a weight machine in a mirror-lined
+    gym.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:43.705775+00:00'
   source_available: true
 - id: 02e92f32a48055f5
   filename: IMG_1805.heic
@@ -208,9 +212,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-03-27T04:34:09.116057-05:00'
   sha256: fc2d3973b8675c0f084113093518c652fc117deaa970313016a7c2bdea01c623
-  description: null
-  description_model: null
-  extracted_at: null
+  description: An older man uses a high-tech seated exercise machine with a digital
+    monitor in a gym.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:11.538369+00:00'
   source_available: true
 - id: 471b251f553023f7
   filename: IMG_1799.mov
@@ -231,9 +236,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-03-27T04:34:09.116057-05:00'
   sha256: 867bba4c405eec1396ea4326fbaf69cb737a51cd32bc11908aa1455ccdf2a793
-  description: null
-  description_model: null
-  extracted_at: null
+  description: People using specialized exercise machines in a mirrored physical therapy
+    clinic.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:09.887237+00:00'
   source_available: true
 - id: 07342d92576c4d8b
   filename: IMG_1791.heic
@@ -331,9 +337,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-03-27T04:34:09.116057-05:00'
   sha256: 613ff38a111e94a93722830b0d627850e3185489deafdda70b94586d8b97118d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person performs leg extensions on a machine in a gym next to a weight
+    rack.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:59.370557+00:00'
   source_available: true
 chat_message_guids_count: 166
 deleted_upstream: null

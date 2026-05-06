@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-11-23T21:30:35.175929-06:00'
   sha256: b42fe177325ab2040b069704af5e79ac3258774ce5e417e242acf927485cab05
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A Clash Royale live match screenshot in overtime showing towers and
+    troops on the game board.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:10.555880+00:00'
   source_available: true
 chat_message_guids_count: 4
 deleted_upstream: null

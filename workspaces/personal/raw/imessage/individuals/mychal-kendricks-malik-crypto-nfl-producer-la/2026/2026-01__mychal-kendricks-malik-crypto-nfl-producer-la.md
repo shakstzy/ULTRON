@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-01-16T22:29:23.363433-06:00'
   sha256: 34c276696bcef74fef15b50266cccbbd864bc9bdc65df0368acdbee39dbea15e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Flyer for Flashback, a 2010s EDM tribute party at Avalon Hollywood
+    on Friday, January 16.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:39.728275+00:00'
   source_available: true
 chat_message_guids_count: 69
 deleted_upstream: null

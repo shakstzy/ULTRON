@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-11-16T13:33:21.058000-06:00'
   sha256: 02941964dc877de93695323a45f7cab7c13c1ffd2bb68c7e53fe6b578a84914c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram screenshot of a man tripping into a grassy ditch with visible
+    user comments.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:06.432691+00:00'
   source_available: true
 chat_message_guids_count: 56
 deleted_upstream: null

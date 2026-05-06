@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-12-03T20:25:25.877005-06:00'
   sha256: 8eef540cac0c2d1903a4969cfd68c9d8f671c2250249a0f17431d3b39a5473e5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of BitMart contacts Hao, Sean, Kaimin, and Victoria in a
+    messaging app list.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:34.731916+00:00'
   source_available: true
 - id: 62c7ebd9f8313b37
   filename: IMG_3490.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2024-12-03T20:25:53.583949-06:00'
   sha256: f9701e8f312fcbf73e5323b8e975a27c763daece0050d33577128827c814ccb3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram message from 'Sean | Bitmart' stating 'Sean. BitMart listing
+    ops' sent on April 20.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:58.028206+00:00'
   source_available: true
 - id: 9436087a82e53cd1
   filename: IMG_1286.png
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2024-12-03T20:26:21.527712-06:00'
   sha256: b70db7a46bfe1b2642cf5639390d2d3b5da5f23fa3270f87ca1e6bcabb25044a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Telegram chat screenshot: Hao | BitMart tells Adi "unfortunately no"
+    on October 22.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:57.161405+00:00'
   source_available: true
 - id: 0af09d9b0ed04357
   filename: 75541250670__3D9AB82C-4BF2-4AAA-93E5-3DFC401B2595.HEIC
@@ -55,9 +58,10 @@ attachments:
   sender: me
   sent_at: '2024-12-08T22:48:35.543000-06:00'
   sha256: 1824702246e3d290ee4684c4fdb56eabef4c3895f256339643f3cda505c5f397
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A living room TV showing a stock chart next to a white table with a
+    green water bottle.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:25.478605+00:00'
   source_available: true
 - id: f902d28c17582c99
   filename: IMG_1406.png
@@ -66,9 +70,10 @@ attachments:
   sender: me
   sent_at: '2024-12-18T14:16:39.510288-06:00'
   sha256: d0833ea0d06fd7e1323f730cfd781b12886ef1b6afd32cbb64acd140b486aa40
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of text messages to "Beta" demanding they leave a woman
+    alone to recover.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:18:08.880308+00:00'
   source_available: true
 - id: 68ea660282fae306
   filename: Audio Message.caf
@@ -88,9 +93,10 @@ attachments:
   sender: me
   sent_at: '2024-12-19T23:09:58.254438-06:00'
   sha256: 4aa24a1f37544a427153a2ad622bd2a5eca35cb3192c3c8bf2f68978010c876a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Relationship advice text explaining why not to contact a woman who
+    has blocked you.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:49.437400+00:00'
   source_available: true
 - id: 5fd071091ee29d60
   filename: ATHLETECOIN Whitepaper.pdf
@@ -99,9 +105,11 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2024-12-26T20:56:02.879851-06:00'
   sha256: 04cc992ed7c5a7cb54dfb211e359237e14018ed654836d770f837bc6bad9b123
-  description: null
-  description_model: null
-  extracted_at: null
+  description: AthleteCoin is a blockchain platform that tokenizes athletic performance
+    using specialized equipment. It rewards physical effort with digital assets while
+    supporting energy capture and NIL programs.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:47.582016+00:00'
   source_available: true
 chat_message_guids_count: 228
 deleted_upstream: null

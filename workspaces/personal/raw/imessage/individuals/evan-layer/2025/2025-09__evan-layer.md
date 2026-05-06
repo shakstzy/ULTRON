@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-09-05T21:03:53.709000-05:00'
   sha256: ee30eedb2113c6739b56116d6b11c09e0f82ab87fc206fd70587f0a9ff8c7ef6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Synapse Web3 app demo showing portfolio tracking, automated trading
+    tasks, and an MCP store.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:42.176230+00:00'
   source_available: true
 - id: 797b93cbcb6f2cd3
   filename: -5434798402986163788.MOV

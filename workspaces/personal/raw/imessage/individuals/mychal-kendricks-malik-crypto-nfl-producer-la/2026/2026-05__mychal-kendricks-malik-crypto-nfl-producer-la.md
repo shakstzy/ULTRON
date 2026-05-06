@@ -33,9 +33,9 @@ attachments:
   sender: me
   sent_at: '2026-05-04T16:12:57.754000-05:00'
   sha256: bdda07042b3bf68be1e94ca380eb9cfd5de5722c85a13768e4026af781ad60b9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Text identifying Tier 3 business chats like Apple and Spectrum as notifications.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:18:19.821649+00:00'
   source_available: true
 chat_message_guids_count: 38
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-04-01T14:25:28.491894-05:00'
   sha256: 195763759b1153d32b69b8330f38d70d9343f7b06d39c4811e8d46771b0da185
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a $600 payment to Marvin Kendricks for a 3-week stay
+    at Martian Properties 2 LLC.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:46.272143+00:00'
   source_available: true
 - id: 19c96972d0cccbe3
   filename: 73377707772__16473470-EE95-49C7-8C45-F1190AF40453.fullsizerender.HEIC
@@ -44,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2024-04-03T09:39:25.311121-05:00'
   sha256: 0d3193f0d52137872336d720f87bd278bff259ef4d17211bc030f775c21eb3fa
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Wooden armchair on a dark-tiled balcony seen through a black-framed
+    sliding glass door.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:49.716657+00:00'
   source_available: true
 - id: d95590d5b694b22e
   filename: 73421024461__D67B5785-4341-4F71-AFFF-E1DC823A26EF.HEIC
@@ -77,9 +79,10 @@ attachments:
   sender: me
   sent_at: '2024-04-11T22:55:05.643506-05:00'
   sha256: 776e7c6bc35477ca69abcc9e569e72625b1e8facc1b91cf4fc1cd3358d07c89c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: TV screen displaying the Amazon Prime Video page for the documentary
+    "Unacknowledged."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:57.123315+00:00'
   source_available: true
 - id: e3d0e93a830b02a7
   filename: IMG_7669.jpeg
@@ -99,9 +102,10 @@ attachments:
   sender: me
   sent_at: '2024-04-14T18:07:16.981954-05:00'
   sha256: 474dd4711ba81bf4af8ac450047aab3166afb962243864dca96ded9db1566e73
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Bedroom with a studio microphone, desk with electronics, and abstract
+    wall art.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:57.632336+00:00'
   source_available: true
 - id: f1a4ed787c37ca9d
   filename: IMG_8330.PNG
@@ -110,9 +114,10 @@ attachments:
   sender: me
   sent_at: '2024-04-22T17:55:18.536186-05:00'
   sha256: 4563f05692a08272d62f6b0cd6568313de30a4dfa2d4ca9c81ddc1773b5590a3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of $200.00 sent to Marvin Kendricks from Adi Berkeley Checking
+    account.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:18:42.477826+00:00'
   source_available: true
 - id: 7444917f930d1a5a
   filename: IMG_8880.png
@@ -132,9 +137,10 @@ attachments:
   sender: me
   sent_at: '2024-04-29T22:33:18.538000-05:00'
   sha256: 5b49ac3e817379c2d1c6073b5144cc685bc05ef0a08a889b5bc9e679aa19f07b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Photo of two men at an OKX event and a message about the athletecoin
+    listing strategy.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:18:14.484106+00:00'
   source_available: true
 - id: 6f088d120f9b38f4
   filename: IMG_8474.jpeg
@@ -143,9 +149,10 @@ attachments:
   sender: me
   sent_at: '2024-04-30T16:23:45.137843-05:00'
   sha256: 122d7a3da5911692a630b1ea69a3ec666f3d9a3683a02ded1cfdc9cbb8e89607
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram chat showing a Calendly meeting confirmation with Randy Song
+    for April 30, 2024.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:57.992667+00:00'
   source_available: true
 - id: 04878409d8623f5a
   filename: 73622473432__0F8920C9-3964-406A-8C15-DA5092319108.heic

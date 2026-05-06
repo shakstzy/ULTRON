@@ -132,9 +132,10 @@ attachments:
   sender: me
   sent_at: '2025-06-23T03:21:26.279000-05:00'
   sha256: ecfdaa9bf710f4d977a0a3fe1de47bd77cecfd93f878c8911250634763e038ed
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hand holding a card and yellow packet over a plate of white powder
+    under red light.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:15:56.216765+00:00'
   source_available: true
 - id: 96c52e35f21e5a06
   filename: ScreenRecording_06-23-2025 00-29-52_1.MP4

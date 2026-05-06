@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-10-12T12:25:36.738066-05:00'
   sha256: 147cc94befe2c5373db41901e86663626a08df2edfbe9521458d81122a04aefb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram contact profile for "Glenn | LAWYER" with username @GlennKY
+    and one shared photo.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:13.586091+00:00'
   source_available: true
 - id: cba4c7cbab4b7dc4
   filename: "Screenshot 2025-10-12 at 10.25.43\u202FAM.png"
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-10-12T12:25:50.338099-05:00'
   sha256: 77c545bbcb2dd4840f88458e63da057e1b28c5a5a407c67570d6226886aaddae
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram profile for "Karen | LAWYER" (@KryptoKarenEsq) showing a photo
+    of two people.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:06.586594+00:00'
   source_available: true
 - id: 892c063f5f80fbd4
   filename: IMG_0087.png
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-10-28T01:31:27.780000-05:00'
   sha256: 632f8a5387184013ab6c07b09921bde89e3aaf75ce9a1576a123a9436335a279
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men, one in maroon and one in a yellow Iowa shirt, pose on a sunny
+    street.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:02.637998+00:00'
   source_available: true
 chat_message_guids_count: 24
 deleted_upstream: null

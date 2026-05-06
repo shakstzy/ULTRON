@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-12-24T16:29:27.769295-06:00'
   sha256: 1872674c980dba52da16b4ffa66f5c9daf2b6ad46f90b41b55e6e0211e600612
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Triptych of a man posing in a dark alley, by a traditional temple,
+    and on a black Porsche.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:18:54.413423+00:00'
   source_available: true
 - id: 828ecf8a085c40e9
   filename: PNG image.png
@@ -44,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2025-12-24T17:19:38.109567-06:00'
   sha256: 0a5db35cd1f0ab40ec99be2381fef79bc6ddb9b31342958c37ea1cabfb7da7a4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a black suit and sunglasses rides a tiny orange bicycle in
+    the middle of an urban street.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:11.311287+00:00'
   source_available: true
 - id: 327f9cb16dc378ec
   filename: MPEG-4 movie.mov
@@ -55,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2025-12-24T17:43:59.060292-06:00'
   sha256: 48312f94b8206fb3233e830a01f37f3616bc2581e2d75103a9034dbfe090a92b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a Cardinals jersey sits on laundromat washing machines, gesturing
+    and rapping.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:18:16.249157+00:00'
   source_available: true
 - id: c0dd1aad49cd5075
   filename: 9fe55ec1-c293-4051-9f12-3fe421e3d26e.mov
@@ -198,9 +201,10 @@ attachments:
   sender: me
   sent_at: '2025-12-25T01:24:58.424653-06:00'
   sha256: 41e61ab42de67e876ffafca08d8130e44984c1d2724428dda625ca18f9a8fb4a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Sweating man in a suit with cowrie shell-covered hands and cowrie-masked
+    men behind.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:18:35.510407+00:00'
   source_available: true
 - id: 32db3db8dcc12102
   filename: IMG_5492.png

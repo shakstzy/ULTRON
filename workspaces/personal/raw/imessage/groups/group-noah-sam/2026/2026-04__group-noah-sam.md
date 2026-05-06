@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2026-04-01T14:47:56.522000-05:00'
   sha256: 44de3020da5987acbf14c1ae35a75cdc56a606814ed43ab68213b0f15c92f250
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Intra-platform arb strategy: 100% win rate and $690K+ simulated PnL
+    across 73K trades.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:05.804592+00:00'
   source_available: true
 - id: d6c157240224b7e9
   filename: 21CBA487-BD6D-42EE-81B6-F1533EEA8DB6.pluginPayloadAttachment

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-09-03T23:53:21.673000-05:00'
   sha256: 422c661fd43ea58643b518a90a9ed5c759fe9197e17061a7534360556f4e3296
-  description: null
-  description_model: null
-  extracted_at: null
+  description: SHAKCRM Telegram mini app development showing Python code and browser
+    debug console.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:17:23.574573+00:00'
   source_available: true
 - id: 031e50ac0b502b54
   filename: IMG_1419.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-09-06T15:56:37.707840-05:00'
   sha256: e610265266380d72cb1a53a6d8d0f44ed52f91c4c8c3b533d9c77c8927c9e7e3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram profile of Richard Garcia, a real estate investor with 1.5M
+    followers.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:16:41.034916+00:00'
   source_available: true
 chat_message_guids_count: 59
 deleted_upstream: null

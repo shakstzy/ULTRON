@@ -13,8 +13,12 @@ sources:
     after_ingest: move_to_dated_subdir
   imessage:
     contact_set_label: dating  # Filtered via source-routing.md contact set.
-  # tinder / bumble / hinge browser scrapes added when patchright bots
-  # are ported from QUANTUM into ULTRON-local form. Manual auth always.
+  tinder:
+    bot_path: bot/                              # patchright bot, hand-paced
+    raw_path: raw/tinder/                       # one .md per match (slug = <first>-tinder-<city>)
+    schedule: setup/                            # plists at _shell/plists/com.adithya.ultron.dating-tinder-*
+    auto_stub: wiki/entities/people/<slug>.md   # bot creates wiki stubs on every new match
+  # bumble / hinge: same shape as tinder; bots not yet ported.
 
 global_settings:
   attachments_inline: true

@@ -32,7 +32,7 @@ There is no human-facing CLI. Cron fires `node scripts/<X>.mjs` directly (see `s
 
 ### Drafting via `claude -p`
 
-Drafts come from `claude -p`, which uses Adithya's Claude Code subscription  -  no separate API key. The voice profile (`config/voice/`) is composed into each prompt. Override model with `QUANTUM_TINDER_MODEL` (default: `sonnet`).
+Drafts come from `claude -p`, which uses Adithya's Claude Code subscription  -  no separate API key. The voice profile (`config/voice/`) is composed into each prompt. Override model with `TINDER_MODEL` (default: `sonnet`).
 
 ## Layout
 
@@ -65,7 +65,7 @@ bot/
       slug.mjs              # slug generator <first>-<source>-<city>[-<n>]
       imessage-xref.mjs     # Contacts lookup + iMessage activity scan
       queue.mjs             # 04-outbound/* file-based queue
-      halt.mjs              # ~/.quantum/tinder/.halt state
+      halt.mjs              # ~/.ultron/dating/.halt state
       notifier.mjs          # AppleScript -> self-iMessage when pending queue grows
     tinder/
       page.mjs              # navigation primitives
@@ -90,7 +90,7 @@ setup/
   selector-verify.md
   detection-ladder.md
   cron.md
-  com.shakstzy.quantum-tinder-{swipe,pull,send}.plist
+  (plists live at _shell/plists/com.adithya.ultron.dating-tinder-{swipe,pull,send}.plist)
 .profile/                   # gitignored; patchright persistent context lives here
 ```
 
@@ -131,7 +131,7 @@ Slug rule: `<first>-<source>-<city>` (lowercase, hyphenated). Collisions get `-2
 
 City buckets: **austin**, **sf**, **la**, **nyc** (others to be proposed). Resolution is phone area code first, then Tinder distance from Austin (≤100mi -> austin), else default home (austin). When city changes on rescrape, file is renamed and old slug appended to `previous_slugs` for backlink resolution.
 
-Session-level events (swipe sweeps, halts, selector drift, send actions) go to `~/.quantum/tinder/sessions.ndjson`  -  not the entity files. Entity files stay clean for graphify.
+Session-level events (swipe sweeps, halts, selector drift, send actions) go to `~/.ultron/dating/sessions.ndjson`  -  not the entity files. Entity files stay clean for graphify.
 
 ## Cross-workspace dependencies
 
@@ -159,7 +159,7 @@ HITL items expire to `expired/` after 6 hours. AppleScript pings Adithya's own i
 5. Zero matches in 7 days while swiping -> assume soft shadowban; halt; alert user
 6. Selector self-check fails on startup -> halt; run `selector-check.mjs` interactively
 
-State file: `~/.quantum/tinder/.halt`  -  presence blocks all sessions until removed (`rm` it).
+State file: `~/.ultron/dating/.halt`  -  presence blocks all sessions until removed (`rm` it).
 
 ## Learnings (agent-drafted, user-approved)
 

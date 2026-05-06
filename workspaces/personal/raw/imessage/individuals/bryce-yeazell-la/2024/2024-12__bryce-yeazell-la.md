@@ -33,9 +33,10 @@ attachments:
   sender: bryce-yeazell-la
   sent_at: '2024-12-13T23:32:19.175426-06:00'
   sha256: 3e99e50544fe316d5025e44a789a5d53135d927141258f9e67ae6202f5922308
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Two men posing in a kitchen: one with a red solo cup and one holding
+    a white paper plate.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:07.501502+00:00'
   source_available: true
 chat_message_guids_count: 10
 deleted_upstream: null

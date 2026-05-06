@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-05-02T21:13:06.027163-05:00'
   sha256: 6403b0d5f6d68444ae9f3f11172185ad3233907a7336139ce977c7167bb0e9a6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: IRS Get Transcript page for Adithya S Kumar with mortgage reason and
+    file CMG0000001.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:36.218791+00:00'
   source_available: true
 chat_message_guids_count: 4
 deleted_upstream: null

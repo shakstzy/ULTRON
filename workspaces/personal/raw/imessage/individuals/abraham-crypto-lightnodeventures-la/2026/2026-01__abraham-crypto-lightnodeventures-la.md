@@ -22,9 +22,10 @@ attachments:
   sender: abraham-crypto-lightnodeventures-la
   sent_at: '2026-01-07T16:33:49.315010-06:00'
   sha256: 9164e7358e409b73ce55782a7d63567d4300d7d2f464009c82958aa12734c987
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of Avery harassing the user with slurs and demanding
+    they remove Seedbox.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:59.320622+00:00'
   source_available: true
 - id: 6153b8b3f9fcf86c
   filename: IMG_6426.heic
@@ -33,9 +34,10 @@ attachments:
   sender: abraham-crypto-lightnodeventures-la
   sent_at: '2026-01-07T17:13:48.249246-06:00'
   sha256: 83f3c82e6fce4299ad28d12f6be316084758b772fc20d3fa6b011f6977ef9677
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot showing racist insults and threats from a contact
+    named Avery.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:35.454522+00:00'
   source_available: true
 chat_message_guids_count: 11
 deleted_upstream: null

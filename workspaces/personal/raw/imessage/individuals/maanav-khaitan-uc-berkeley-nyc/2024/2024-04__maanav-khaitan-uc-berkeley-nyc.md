@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-04-01T11:23:59.185000-05:00'
   sha256: c6548c8000ce2398adee9ddcf43c0efb079754b8b73975dd9d4e1d476725126e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Tweet of Aryan Sharma, Patrick Collison, Christina Caci, and Maanav
+    Khaitan on a city street.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:49.087840+00:00'
   source_available: true
 chat_message_guids_count: 6
 deleted_upstream: null

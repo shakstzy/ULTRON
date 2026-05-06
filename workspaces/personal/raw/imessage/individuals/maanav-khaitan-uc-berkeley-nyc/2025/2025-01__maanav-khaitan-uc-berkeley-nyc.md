@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-01-10T00:04:23.883141-06:00'
   sha256: 193eb4b5824d29255f4ffe618d63725324c826c09e621be943c062dce9768b88
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Portrait of Indian actor Suriya wearing a blue shirt against a bokeh
+    green background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:53.879572+00:00'
   source_available: true
 - id: 3f1cf16e57241f34
   filename: IMG_1583.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-01-10T00:09:15.983246-06:00'
   sha256: 33230e343fc645a7c9b71144b1f49335456d546d92f2238def5c4ab7e885b248
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Angry bearded cartoon man wearing a vest with dynamite sticks and holding
+    a detonator.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:59.064596+00:00'
   source_available: true
 - id: cea73f74dd8c19ae
   filename: IMG_5199.png
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-01-10T00:36:17.352386-06:00'
   sha256: 200c13d38fa8d42d24888acdec82fb39b40634a07f49088a0a334c6d0be4c51b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two smiling young men standing in front of a rocky coastline and ocean
+    waves.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:36.736251+00:00'
   source_available: true
 - id: d214aeb6eeeac033
   filename: IMG_1172.heic
@@ -55,9 +58,10 @@ attachments:
   sender: maanav-khaitan-uc-berkeley-nyc
   sent_at: '2025-01-10T00:37:12.799211-06:00'
   sha256: e27573f117ec9bd67a7fdc60779b7c56c2ae87ef1006da5b8e59ab4b3d1bb56b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men smiling; the man in the black t-shirt holds a Ghirardelli chocolate
+    gift box.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:07.925285+00:00'
   source_available: true
 - id: b0c36f0ee6bb327f
   filename: IMG_1177.heic
@@ -66,9 +70,10 @@ attachments:
   sender: maanav-khaitan-uc-berkeley-nyc
   sent_at: '2025-01-10T00:37:12.799211-06:00'
   sha256: 9fa7fb51970908b07de1b9810b8332c8c92912ef08bef50a0be8ea2fc6f21743
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A young man with dark hair in a black shirt poses before dark curtains
+    with warm side lighting.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:06.823770+00:00'
   source_available: true
 - id: b46ff20c0afadfc4
   filename: IMG_1168.heic
@@ -88,9 +93,10 @@ attachments:
   sender: me
   sent_at: '2025-01-10T12:19:20.481000-06:00'
   sha256: ef06f52a8d4b55222e564c2a92c289992ef05366e61a479da6d3a65e983e2925
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a map with a pin on 308 Sterling Street in Brooklyn,
+    New York.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:53.360393+00:00'
   source_available: true
 - id: 376700ced943e888
   filename: IMG_0705.png
@@ -110,9 +116,10 @@ attachments:
   sender: maanav-khaitan-uc-berkeley-nyc
   sent_at: '2025-01-28T20:06:20.609031-06:00'
   sha256: ab79cbde2e43eb24bfeb6cac80e049faf27cee7b982008f5b97c472865e9877b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man with glasses and a mustache in a blue suit and patterned tie
+    before a blurred city.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:57.921219+00:00'
   source_available: true
 - id: de5c2d21e31f97c1
   filename: IMG_1610.png
@@ -121,9 +128,10 @@ attachments:
   sender: me
   sent_at: '2025-01-28T20:07:42.691898-06:00'
   sha256: bb17f40a9fee9219071582b2ec5ea356bfa99cd0aa3def475887bd6c11fc506f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A North American river otter stands on ice, pinning a large fish with
+    its front paws.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:48.334738+00:00'
   source_available: true
 - id: cdd12abd6df86f26
   filename: IMG_8623.png
@@ -132,9 +140,10 @@ attachments:
   sender: me
   sent_at: '2025-01-28T20:09:58.493764-06:00'
   sha256: 6d0188ffb722cdff620a21675fb215222aacfb3ad877861e1a650caf3ebf02e6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Split-screen video call: a chin with a chain above and a man by a
+    Yellow Capital logo below.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:03.556783+00:00'
   source_available: true
 - id: b51be7d50b73dfb5
   filename: IMG_8654.png
@@ -143,9 +152,10 @@ attachments:
   sender: me
   sent_at: '2025-01-28T20:36:13.790431-06:00'
   sha256: ac7ff4bd912dc5ff3ebbab9367bbc9496d240e38e580de037c1ede376c1181ea
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A tan rhesus macaque monkey sits perched on a thin tree branch in a
+    sunlit forest.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:38.569538+00:00'
   source_available: true
 - id: b271fc738fa0215f
   filename: IMG_2258.png
@@ -154,9 +164,10 @@ attachments:
   sender: me
   sent_at: '2025-01-28T20:36:31.712859-06:00'
   sha256: c3fa12f988a86f51474941ad12b97677ee396301301a0b544bc6b63605c48ccf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Side-by-side selfies of a Celebes crested macaque, one featuring a
+    wide toothy grin.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:59.649517+00:00'
   source_available: true
 - id: d198912f9bbbcaee
   filename: IMG_7812.png
@@ -165,9 +176,10 @@ attachments:
   sender: me
   sent_at: '2025-01-28T20:37:03.245124-06:00'
   sha256: c105f2fc68bd37177b2194d70153cb53a0bcd9660fd25da18032eb033687d3e2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Grey elephant-seal-like creature with human-like hands folded against
+    a black background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:14.181825+00:00'
   source_available: true
 - id: 4a695fba49e262b1
   filename: IMG_0575.png
@@ -176,9 +188,10 @@ attachments:
   sender: me
   sent_at: '2025-01-28T20:37:15.384732-06:00'
   sha256: 58cd3db8d4dca54a8f36653667f516c90910ddaefda3d2cd7fcfdf7bd4227567
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A cortical homunculus model with disproportionately large hands, lips,
+    and tongue.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:03.255881+00:00'
   source_available: true
 - id: 6b2c089a4493d164
   filename: IMG_5054.heic
@@ -187,9 +200,9 @@ attachments:
   sender: maanav-khaitan-uc-berkeley-nyc
   sent_at: '2025-01-28T20:37:19.003795-06:00'
   sha256: ef7dc589fb274f98cb0a35e732fdf04013df60d5dfbe51971610f350cf8a8b9a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Yellow round creature with its tongue out under the caption "WOOF".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:45.156868+00:00'
   source_available: true
 - id: a2b19827beeb244a
   filename: IMG_7555.png
@@ -198,9 +211,10 @@ attachments:
   sender: me
   sent_at: '2025-01-28T20:38:09.907367-06:00'
   sha256: 3ba1d37e4eca9d17e67fa10cad49481c438844a00e00e0722ef662d9b4f25643
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Megamind smiles with arms spread wide against a shimmering background
+    of red and white bokeh.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:05.276713+00:00'
   source_available: true
 - id: ab9588f2bdf3aa12
   filename: IMG_9387.png
@@ -220,9 +234,10 @@ attachments:
   sender: maanav-khaitan-uc-berkeley-nyc
   sent_at: '2025-01-28T20:38:55.036993-06:00'
   sha256: 475868c6626c6bb40383783be601df27a527a219b74532aa9e280ab94758c38c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Blurry low-light screenshot of a bearded man's face under an iOS status
+    bar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:15.692567+00:00'
   source_available: true
 - id: e25b21a96c6b9f1f
   filename: IMG_2360.png
@@ -231,9 +246,10 @@ attachments:
   sender: me
   sent_at: '2025-01-28T20:39:47.761739-06:00'
   sha256: c271a61a4d4477c762f2fbc58100a5ce176bb65b1fc8bb812ec37efb5aa3b96b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Stylized purple illustration of a white grin with text "GRIN LIKE A
+    CHESHIRE CAT".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:08.988347+00:00'
   source_available: true
 - id: c2e1b14ad1bfa37e
   filename: IMG_0940.heic
@@ -242,9 +258,9 @@ attachments:
   sender: maanav-khaitan-uc-berkeley-nyc
   sent_at: '2025-01-28T20:40:08.326036-06:00'
   sha256: 57f710ba7fcabc819e80551d36da607d5e8ed591897e2cdfb3cbb1bfe37c371d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man wearing an orange kurta and sunglasses waves his right hand indoors.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:25.522025+00:00'
   source_available: true
 - id: eb47e779c83c54fc
   filename: IMG_2919.png
@@ -253,9 +269,10 @@ attachments:
   sender: me
   sent_at: '2025-01-28T20:40:18.399925-06:00'
   sha256: 438e416022da0238dfa16979c1a8a6728ca1eb6a3fbac5361ef94c2bfdb83a96
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A white bowl of Cookie Crisp cereal with milk and a spoon on a wooden
+    table.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:11.910556+00:00'
   source_available: true
 - id: e82c1a0f26d35e37
   filename: IMG_1454.heic
@@ -264,9 +281,10 @@ attachments:
   sender: maanav-khaitan-uc-berkeley-nyc
   sent_at: '2025-01-28T20:42:13.355721-06:00'
   sha256: bc38d108a3c1508ea14b8d2456342fa13740a4a9b93a2fd57ec9ec5604b038eb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram DM showing a video call grid of five men making overhead
+    steeple hand gestures.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:54.569057+00:00'
   source_available: true
 - id: 14a21d71495cb1f3
   filename: IMG_0702.png
@@ -275,9 +293,10 @@ attachments:
   sender: me
   sent_at: '2025-01-30T15:18:29.658893-06:00'
   sha256: 5f218fb6e89a9666d88a943bca074febbfbc9f0eb6fb9409878aac30084fceae
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LinkedIn post by Mark Edelstone featuring 2002 and 2023 photos with
+    NVIDIA CEO Jensen Huang.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:54.629663+00:00'
   source_available: true
 - id: 1bb79df78073348f
   filename: IMG_9292.png
@@ -286,9 +305,10 @@ attachments:
   sender: maanav-khaitan-uc-berkeley-nyc
   sent_at: '2025-01-30T15:19:43.069316-06:00'
   sha256: be40ce6ae885cda0d2b5ad6fc379409c835a1312d6ed3bd9b1267cbf84a01a1f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A low-resolution headshot of an East Asian man wearing a dark suit
+    and red tie.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:14.379832+00:00'
   source_available: true
 - id: 87373c7ce6b57257
   filename: IMG_2056.png

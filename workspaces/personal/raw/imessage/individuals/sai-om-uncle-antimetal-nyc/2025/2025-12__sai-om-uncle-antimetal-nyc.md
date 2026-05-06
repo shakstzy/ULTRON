@@ -47,9 +47,10 @@ attachments:
   sender: me
   sent_at: '2025-12-25T21:04:13.974705-06:00'
   sha256: eb3734a3264f94491a44e4f2bc4ee8f30ee6400b03d31d547351112bb8fb53ca
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Arize website featuring CI/CD experiments, LLM-as-a-Judge, and human
+    annotation tools.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:09.771394+00:00'
   source_available: true
 - id: 41e3bbd9b504aa80
   filename: 78846561572__A494A209-6697-4946-A4B5-3EC9857EAFA6.jpeg
@@ -58,9 +59,10 @@ attachments:
   sender: sai-om-uncle-antimetal-nyc
   sent_at: '2025-12-26T12:13:39.826912-06:00'
   sha256: bab641486bece928f821feb6ccf8e1ca074735b65ae7faecebd785decfc39912
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Photo of a Google Doc titled "Strategy: Evaluations" outlining principles
+    and a process matrix.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:46.357577+00:00'
   source_available: true
 - id: b459546114ad3939
   filename: IMG_2262.png
@@ -69,9 +71,10 @@ attachments:
   sender: me
   sent_at: '2025-12-31T17:49:29.141000-06:00'
   sha256: 804e0621815e033c2b70a6f8c70426d3a2dce4c9757845d4ba552297b89b7fb8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Adithya Kumar's chat messages pitching Synapse as an AI agent evaluation
+    and scoring platform.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:24.167143+00:00'
   source_available: true
 chat_message_guids_count: 48
 deleted_upstream: null

@@ -46,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-10-24T23:05:42.799000-05:00'
   sha256: 2d2d5dc77fabe2e637103714e2f9631a3ab71c39cf2072a111bf8ef619bd579f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three people smile below "8,000,000 Questions Asked!" text against
+    a white wall.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:21.673933+00:00'
   source_available: true
 - id: 285feecbb7d0c536
   filename: IMG_2714.PNG
@@ -125,9 +126,10 @@ attachments:
   sender: me
   sent_at: '2025-10-31T11:55:36.220000-05:00'
   sha256: cdca5e4acb7b95a6488ed9a270f9dd219951808c66a5fb95f432b8c3e7d4e461
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot with the text 'The gropist' and a drafted reply
+    about 'red tape topics'.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:53.305553+00:00'
   source_available: true
 - id: c37de6fc985f9c08
   filename: IMG_9619.png
@@ -148,9 +150,10 @@ attachments:
   sender: prabhat-nuthakki-uc-berkeley
   sent_at: '2025-10-31T13:35:52.847670-05:00'
   sha256: 1f39320e85c8ad29d3fce4789eca011068d2515e0f98517b3dac6624fa7f4d4c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Headshot of a bearded man with a "Berkeley Engineering" header in a
+    dark interface.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:29.422852+00:00'
   source_available: true
 chat_message_guids_count: 205
 deleted_upstream: null

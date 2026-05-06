@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2025-05-12T21:20:09.767955-05:00'
   sha256: ff1e5842f59d5710249e98c2e5ac48dfc807d5a3fecf96a1cce178ffba7ec73b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of story.foundation website promoting programmable
+    IP for AI.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:53.653395+00:00'
   source_available: true
 - id: 995dc0f225896b68
   filename: IMG_8900.PNG
@@ -44,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2025-05-13T19:48:42.665327-05:00'
   sha256: 9958550210db752b6a05059ccde97b2da646c91488e3914450ceeaeb2ca0542d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram chat "Cranking up Toronto" with messages about a party link
+    and an open bar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:56.408555+00:00'
   source_available: true
 - id: 00299bc989b3bb99
   filename: IMG_9037.PNG

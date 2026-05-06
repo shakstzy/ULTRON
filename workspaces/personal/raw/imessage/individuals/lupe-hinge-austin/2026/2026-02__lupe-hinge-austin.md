@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2026-02-27T21:52:34.846000-06:00'
   sha256: 43b630b4eddc39d5184b4b0b32df2e0ebdc3f98f8838597a76cd30dcf64ab1f2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Tilted night shot of a white car parked in front of a multi-story apartment
+    building.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:11.239496+00:00'
   source_available: true
 chat_message_guids_count: 56
 deleted_upstream: null

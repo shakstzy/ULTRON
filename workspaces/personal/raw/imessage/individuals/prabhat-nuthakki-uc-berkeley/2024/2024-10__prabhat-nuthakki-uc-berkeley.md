@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-10-19T02:53:31.818551-05:00'
   sha256: bce26d54333858b481fa289d462408face06e7e4eaaf2f092241d6645eaf609f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smartphone showing Google Maps navigation in a car at night next to
+    a fuel economy display.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:27.980829+00:00'
   source_available: true
 - id: 9c192543d94ad731
   filename: IMG_8111.jpeg

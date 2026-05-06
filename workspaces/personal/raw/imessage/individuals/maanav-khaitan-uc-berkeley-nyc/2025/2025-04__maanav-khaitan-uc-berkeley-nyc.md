@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-04-01T14:55:43.262000-05:00'
   sha256: 05fc10bb975fe1f6c38ccd8dd59cd34985aa8b54b383eb3684416c10648d4aee
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hriday Sheth's tweet showing an iMessage exchange scheduling a UC Berkeley
+    campus tour.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:58.304395+00:00'
   source_available: true
 - id: 8f5b12036bf3e8fb
   filename: IMG_8996.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-04-01T14:55:50.430000-05:00'
   sha256: fecf2f36d558468a78a824f8635b88a65fdd859b265396d7b39d9dbeb324e0b5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling young South Asian man wearing a white shirt in front of large
+    arched windows.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:17.229500+00:00'
   source_available: true
 - id: 9853258e4b4ac2d4
   filename: IMG_4181.png
@@ -44,9 +46,10 @@ attachments:
   sender: maanav-khaitan-uc-berkeley-nyc
   sent_at: '2025-04-01T14:59:06.747920-05:00'
   sha256: db6f7f1ea1b9c2ef03bd5a1fc53ddba1150740eed45c935a6fba77ef7f53dada
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Maanav Khaitan tells Hriday Sheth his friends are "probably just being
+    nice" about his haircut.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:18.179014+00:00'
   source_available: true
 - id: e837a7724d0c288e
   filename: IMG_9897.png
@@ -55,9 +58,10 @@ attachments:
   sender: maanav-khaitan-uc-berkeley-nyc
   sent_at: '2025-04-09T08:51:25.742076-05:00'
   sha256: f0aa1730d2037d3c3c2855a8d1b2447e8b5c082990efb3c4024e6b1d83e49c62
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men recording a podcast; one with a mustache speaks into a microphone
+    on a boom arm.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:27.254620+00:00'
   source_available: true
 chat_message_guids_count: 34
 deleted_upstream: null

@@ -33,9 +33,9 @@ attachments:
   sender: maanav-khaitan-uc-berkeley-nyc
   sent_at: '2025-03-22T00:10:56.361356-05:00'
   sha256: 0393f05c0544c32cfe8634ac6481efcd2edc63896b0fe645c02cc50bb0de2887
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man wearing a white dress shirt, maroon bow tie, and black suspenders.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:37.198829+00:00'
   source_available: true
 - id: f67ff4e982e8009e
   filename: IMG_4878.png
@@ -66,9 +66,10 @@ attachments:
   sender: me
   sent_at: '2025-03-23T13:16:12.690000-05:00'
   sha256: 749c3eb818e86105008779ec2afe70b2010282f5eb00374f57b61a5dd0cb9565
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling young man with glasses wearing a white 'California Tennis Classic'
+    t-shirt.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:17.343010+00:00'
   source_available: true
 - id: f6d8c861e880407d
   filename: IMG_1748.HEIC
@@ -77,9 +78,10 @@ attachments:
   sender: maanav-khaitan-uc-berkeley-nyc
   sent_at: '2025-03-23T13:22:37.292167-05:00'
   sha256: 3cf7839fff350d34cfbf7e6c1fe4dac003b2f5519a2edef5fef75f3e8c5bb700
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three young men smiling for a selfie on a hillside overlooking a sunlit
+    city landscape.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:42.487544+00:00'
   source_available: true
 - id: 36f3090b99960922
   filename: IMG_1090.jpeg
@@ -88,9 +90,10 @@ attachments:
   sender: maanav-khaitan-uc-berkeley-nyc
   sent_at: '2025-03-23T13:22:37.292167-05:00'
   sha256: b43e62ee9fa620b4548b317c69e224f5460a6d3437d8a05c1110bf4fb4b2e658
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Six young men in formal suits pose for an Instagram post by akshat28
+    about brotherhood.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:47.781818+00:00'
   source_available: true
 - id: c1bff3389ae1e4a7
   filename: IMG_1163.png
@@ -121,9 +124,10 @@ attachments:
   sender: me
   sent_at: '2025-03-23T13:23:57.057000-05:00'
   sha256: f581ec0c99af98e7c6c50a8dcfc58f20ade09b00c24f61ef3d066f512e120072
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man's face with glasses edited onto a Sacred Heart of Jesus religious
+    portrait.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:51.040049+00:00'
   source_available: true
 - id: 78f9dd5f54ab2bf2
   filename: IMG_5791.heic
@@ -132,9 +136,10 @@ attachments:
   sender: maanav-khaitan-uc-berkeley-nyc
   sent_at: '2025-03-23T13:24:13.864398-05:00'
   sha256: 5694b9cc501596468786a102be1b3b6fe5ff5af8795b8110a63b5512aaeb0871
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Explicit NSFW fan art of SpongeBob, Patrick, Squidward, and Mr. Krabs
+    in a group sexual act.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:56.489209+00:00'
   source_available: true
 chat_message_guids_count: 53
 deleted_upstream: null

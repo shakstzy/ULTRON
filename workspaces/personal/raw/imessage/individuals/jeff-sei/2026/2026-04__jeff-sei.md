@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-04-01T19:51:43.832000-05:00'
   sha256: c64d96af4ec6ee61b9811168cb948aec501df1e993b0c301801c270df5329f3a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Landing page for Forge, a zero-equity builder community for UC Berkeley
+    technical founders.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:28.230615+00:00'
   source_available: true
 - id: 756e6035ee2fe1ad
   filename: IMG_6362.png

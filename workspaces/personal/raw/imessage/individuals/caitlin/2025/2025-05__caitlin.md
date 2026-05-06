@@ -45,9 +45,9 @@ attachments:
   sender: me
   sent_at: '2025-05-21T17:57:57.983000-05:00'
   sha256: e2a9afb426088973f48e526a99df318b87e9084fccc183eed0e74ab2850839f9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: ASCAP email confirming IPI number 1201860499 for OUTERSCOPE RECORDS.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:53.452632+00:00'
   source_available: true
 - id: fb46f41831c9f22e
   filename: IMG_9357.png

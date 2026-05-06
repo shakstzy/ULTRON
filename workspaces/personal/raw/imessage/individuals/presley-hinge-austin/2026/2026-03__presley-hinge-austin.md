@@ -34,9 +34,10 @@ attachments:
   sender: presley-hinge-austin
   sent_at: '2026-03-11T22:29:40.831757-05:00'
   sha256: 0d664cba8fe668748457e22e5798c81bbf92a35a191f5dbab38a973d1731ac8c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person in a light thong on a bed beside a black and white celestial
+    wall tapestry.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:27.872643+00:00'
   source_available: true
 - id: a3f106b111520400
   filename: 79506436217__A1FB1F49-2E67-488A-911E-EC4C46BB04B7.heic
@@ -45,9 +46,10 @@ attachments:
   sender: presley-hinge-austin
   sent_at: '2026-03-12T22:12:52.476434-05:00'
   sha256: 6ab469b90b29d939ea54859f5c1daab93a81a38295be7c031c45d6fb21785910
-  description: null
-  description_model: null
-  extracted_at: null
+  description: An upside-down close-up of a person with a nose ring grimacing while
+    touching their lip.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:40.818977+00:00'
   source_available: true
 chat_message_guids_count: 186
 deleted_upstream: null

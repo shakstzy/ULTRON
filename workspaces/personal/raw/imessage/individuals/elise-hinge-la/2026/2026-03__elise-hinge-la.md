@@ -22,9 +22,10 @@ attachments:
   sender: elise-hinge-la
   sent_at: '2026-03-05T14:46:22.603854-06:00'
   sha256: 19678cfc71ff0c04ae49456b5cd4d278f279d87feab1ccf7808e29f8a0719129
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LinkedIn profile screenshot of Rohan Shah, founder of Conduit Commerce
+    and angel investor.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:22.220070+00:00'
   source_available: true
 chat_message_guids_count: 4
 deleted_upstream: null

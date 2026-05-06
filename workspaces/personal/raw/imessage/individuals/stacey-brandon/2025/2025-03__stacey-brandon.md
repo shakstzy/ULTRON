@@ -22,9 +22,10 @@ attachments:
   sender: stacey-brandon
   sent_at: '2025-03-22T18:40:20.100541-05:00'
   sha256: c60c42e0918a09cc208d62152783dcaa22d11c57ee346b428185044df78ba68e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple Maps pin at 13245 Klein Ct in Sylmar, CA, showing a 1h 31m drive
+    time.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:10.755312+00:00'
   source_available: true
 chat_message_guids_count: 41
 deleted_upstream: null

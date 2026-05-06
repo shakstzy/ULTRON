@@ -22,9 +22,10 @@ attachments:
   sender: prabhat-nuthakki-uc-berkeley
   sent_at: '2025-02-11T12:46:51.441272-06:00'
   sha256: 2323efd71e290177158e8f4f97bbfbb41c312603b912ad59e4369fa6a7fac882
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Brett Adcock tweet on OpenAI's $260B valuation and the upside of startup
+    employee equity.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:45.186162+00:00'
   source_available: true
 chat_message_guids_count: 17
 deleted_upstream: null

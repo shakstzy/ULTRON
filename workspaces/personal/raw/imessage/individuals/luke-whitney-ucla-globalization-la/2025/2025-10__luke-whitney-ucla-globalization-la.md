@@ -22,9 +22,10 @@ attachments:
   sender: luke-whitney-ucla-globalization-la
   sent_at: '2025-10-22T16:41:46.901987-05:00'
   sha256: 1d76a5f81f6d54292370670f3e076850089b8263cbfed697fd2143bdc4c772ac
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Photo of a screen displaying a 'Lecture attendance' QR code and tinyurl.com/gs102f25
+    link.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:09.820322+00:00'
   source_available: true
 chat_message_guids_count: 10
 deleted_upstream: null

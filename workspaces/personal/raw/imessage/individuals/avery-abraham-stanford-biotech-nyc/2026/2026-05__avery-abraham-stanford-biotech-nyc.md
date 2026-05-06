@@ -181,9 +181,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-05-02T08:06:45.881657-05:00'
   sha256: 5a844314e235655a4e934913ad005aeebfc842a86476fd7f265bbd08a3a5cf94
-  description: null
-  description_model: null
-  extracted_at: null
+  description: WhatsApp chat with Lara Daniel about fertility biomarkers and video
+    slide visuals.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:42.454511+00:00'
   source_available: true
 - id: 9427991b88444f93
   filename: Audio Message.caf

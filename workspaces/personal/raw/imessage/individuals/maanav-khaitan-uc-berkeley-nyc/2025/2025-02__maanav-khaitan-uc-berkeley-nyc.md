@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2025-02-03T09:18:38.896218-06:00'
   sha256: 02bc69bdd12529d8a604fde9982cada1df034c8a373fd7769e6531774785eed3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Benjamin Ryan tweet listing six engineers from a Wired article about
+    Elon Musk.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:01.713791+00:00'
   source_available: true
 - id: 67803e0596c0080a
   filename: IMG_1963.png

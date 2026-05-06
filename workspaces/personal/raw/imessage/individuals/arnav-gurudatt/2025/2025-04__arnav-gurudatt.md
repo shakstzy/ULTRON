@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-04-19T00:37:50.932818-05:00'
   sha256: 11185c122632ffc0fd2ca89fee34cb335a28b8124615a532b6f4dd6140fe7429
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down selfie of two men in a red-lit room, one in stripes making
+    a peace sign.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:24.903221+00:00'
   source_available: true
 chat_message_guids_count: 2
 deleted_upstream: null

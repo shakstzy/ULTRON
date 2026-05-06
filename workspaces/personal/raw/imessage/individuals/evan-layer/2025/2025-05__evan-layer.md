@@ -22,9 +22,10 @@ attachments:
   sender: evan-layer
   sent_at: '2025-05-24T13:01:24.994945-05:00'
   sha256: fbc90b4d0c261961ef4b4b6de51c793f6802367c7c5f02bfb85f270fce63cf4b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A newborn baby wearing a white beanie and a hospital wristband labeled
+    "Trinity".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:32.624604+00:00'
   source_available: true
 - id: 62243083168076ac
   filename: IMG_0260.heic

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-07T02:51:12.409518-06:00'
   sha256: a1f96ab2e2740766de514fb9f1231006272290db68e7e5215b0d300dff0d9a83
-  description: null
-  description_model: null
-  extracted_at: null
+  description: People at night under string lights; one wears a white Saints Super
+    Bowl XLIV champions shirt.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:46.182124+00:00'
   source_available: true
 chat_message_guids_count: 11
 deleted_upstream: null

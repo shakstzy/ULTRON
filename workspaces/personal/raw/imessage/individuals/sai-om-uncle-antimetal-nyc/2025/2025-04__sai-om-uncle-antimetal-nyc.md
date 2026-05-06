@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-04-02T21:06:42.243000-05:00'
   sha256: fa93312f8c2424ef42f2cff67d77aacc5dc3a198e8beeebce0b9c804fe18c3d8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two smiling men with tilaks; one in a green shirt and the other in
+    a blue shirt and orange shawl.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:39.713686+00:00'
   source_available: true
 chat_message_guids_count: 5
 deleted_upstream: null

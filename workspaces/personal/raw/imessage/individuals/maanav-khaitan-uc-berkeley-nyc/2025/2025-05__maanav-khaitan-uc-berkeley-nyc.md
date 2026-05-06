@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-05-04T22:42:05.061227-05:00'
   sha256: 990a11aad41bfc8b903c82e367c1cb20a61321d4681b921ceeb124584059543c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Nighttime view of a shingled house behind a wooden fence with illuminated
+    windows.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:27.489564+00:00'
   source_available: true
 - id: 8ab98970136b3b1c
   filename: IMG_5982.png
@@ -44,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2025-05-27T22:39:29.227144-05:00'
   sha256: e3fe4cc3360f5abce4d7ab16b3805e65cab9947d22290c2f425636881cb44d7c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage contact info for Ankur UC Berkeley showing phone number (818)
+    602-3397.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:29.361209+00:00'
   source_available: true
 - id: 70e88505f43d38c0
   filename: IMG_6333.heic
@@ -55,9 +57,10 @@ attachments:
   sender: maanav-khaitan-uc-berkeley-nyc
   sent_at: '2025-05-27T22:42:13.627907-05:00'
   sha256: 59fce2c0969e73ad19248873ad02afa977d90548c3691cf30758d7504b6b8e10
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling young man with a small earring wearing a colorful patterned
+    button-down shirt.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:25.516282+00:00'
   source_available: true
 chat_message_guids_count: 41
 deleted_upstream: null

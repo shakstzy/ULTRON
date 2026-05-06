@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2026-02-08T16:18:41.506000-06:00'
   sha256: d006fc0080244df983721c16e2a9000f73266c946eb5e883badb9db65542f535
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Walnut Creek Metro Park trailhead with "Begin Bike Route" signs, a
+    paved path, and bins.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:37.572825+00:00'
   source_available: true
 - id: e2a84096e84f1fff
   filename: 610658BA-1ADE-4D78-B97E-486C92420A1B.pluginPayloadAttachment

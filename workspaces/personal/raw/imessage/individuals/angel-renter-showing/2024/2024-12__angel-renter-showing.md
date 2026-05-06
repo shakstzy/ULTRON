@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-12-10T22:51:11.690800-06:00'
   sha256: 0f634465799b6a230f1e75c23d833c159cae43eeb51b835b3b3d08073b336fe4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Zillow Renter Hub dashboard showing rental application status and notification
+    cards.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:35.503439+00:00'
   source_available: true
 - id: 085d1be9a834bece
   filename: IMG_7479.heic
@@ -33,9 +34,10 @@ attachments:
   sender: angel-renter-showing
   sent_at: '2024-12-10T23:21:25.552247-06:00'
   sha256: 23b82c45a6110984356303461e7e343b276212462a4fb8e2d9ec64f47dceb5c7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: White room with grey carpet, hanging artificial vines, and pink butterfly
+    ceiling decals.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:47.665586+00:00'
   source_available: true
 - id: e379338f0e3a0d5b
   filename: IMG_2165.png

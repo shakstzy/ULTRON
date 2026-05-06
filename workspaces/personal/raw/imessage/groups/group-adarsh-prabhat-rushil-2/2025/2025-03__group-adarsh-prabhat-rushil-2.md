@@ -99,9 +99,10 @@ attachments:
   sender: me
   sent_at: '2025-03-21T15:52:42.961175-05:00'
   sha256: 2b24ab019a75af86cd71a6f983d351b0daa08e071afbad4af0214faa2818316f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A close-up portrait of a young man with dark hair and brown eyes against
+    a dark background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:58.203742+00:00'
   source_available: true
 - id: daeb58654b9d1f8c
   filename: IMG_8149.png

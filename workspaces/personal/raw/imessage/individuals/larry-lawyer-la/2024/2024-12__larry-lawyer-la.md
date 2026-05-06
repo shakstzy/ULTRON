@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-12-05T15:29:53.873000-06:00'
   sha256: ab501be1bedc303ef3ae548f359de821320b625de2d762b40a0efcfdfada7c01
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone iMessage screenshot of Diana Sanders asking Shak about legal
+    and email follow-up.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:43.286246+00:00'
   source_available: true
 - id: 24c8a3df6f12ae0b
   filename: IMG_7106.png

@@ -22,9 +22,10 @@ attachments:
   sender: maanav-khaitan-uc-berkeley-nyc
   sent_at: '2026-01-01T10:40:16.136910-06:00'
   sha256: 495e42d60a2fbad7afd1426e3afdc800a13919cf53a4839c19cbdeba0871c6c0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a man in an orange kurta with sunglasses and hands raised
+    in namaste.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:29.871271+00:00'
   source_available: true
 chat_message_guids_count: 5
 deleted_upstream: null

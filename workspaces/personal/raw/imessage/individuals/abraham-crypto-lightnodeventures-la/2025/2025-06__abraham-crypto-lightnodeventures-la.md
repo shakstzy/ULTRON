@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-06-14T19:36:43.038000-05:00'
   sha256: dd2c44c1c670103c1593cfefdb068c7642aa5e812c22221108a6028d0e3a11ff
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple Maps driving directions to 70 Hester St in New York City's Lower
+    East Side.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:20.747808+00:00'
   source_available: true
 - id: f14ab9b62be3e910
   filename: IMG_4465.heic
@@ -44,9 +45,9 @@ attachments:
   sender: abraham-crypto-lightnodeventures-la
   sent_at: '2025-06-15T12:43:09.744335-05:00'
   sha256: 943d0bbb723521f8264ea42c6289cf74e3311f92f289282dd5d6330ef16a9abd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Four men pose for a photo holding drinks and a small plate in a hallway.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:45.415293+00:00'
   source_available: true
 - id: 74b1ed705a8fbcd5
   filename: IMG_9720.PNG
@@ -55,9 +56,10 @@ attachments:
   sender: me
   sent_at: '2025-06-17T08:35:51.034963-05:00'
   sha256: 5d5b61feedb4c0a100486920110988b30001ace2ab31584af62a3c5433f143f5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile calendar screenshot showing June 17th meetings with Jake and
+    Avery Haskell.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:02.591637+00:00'
   source_available: true
 - id: cb98ab53bb0bd103
   filename: IMG_9722.PNG
@@ -66,9 +68,10 @@ attachments:
   sender: me
   sent_at: '2025-06-17T19:37:00.151000-05:00'
   sha256: e5c8e360ccb5d7a47d2704a612ed19cd32dd982d5a1cadcfc047139e69a7e0ac
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Manhattan Film Festival website screenshot listing Thriller Block films
+    for June 17 at 9PM.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:09.874461+00:00'
   source_available: true
 - id: d1b7863aa003129e
   filename: IMG_9723.PNG
@@ -77,9 +80,10 @@ attachments:
   sender: me
   sent_at: '2025-06-17T19:38:18.836000-05:00'
   sha256: ff537fd5cbaea188d9c9d385b1b66634bd503f40849b6f3797b19abd1e340289
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram invite from Springna Zhao for an AI documentary screening
+    in NYC on June 17.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:06.797781+00:00'
   source_available: true
 - id: e3bda0c5efcef016
   filename: IMG_9724.PNG
@@ -99,9 +103,10 @@ attachments:
   sender: abraham-crypto-lightnodeventures-la
   sent_at: '2025-06-17T19:39:55.284804-05:00'
   sha256: 227027bd9e462b065d35ebe11de00e0f18776ece1f8182bce574c49b4e9ceabd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a Manhattan Film Festival VIP invitation at Cinema Village
+    for June 17.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:48.283534+00:00'
   source_available: true
 - id: f7f2cd0fe3919c43
   filename: IMG_9725.PNG
@@ -110,9 +115,10 @@ attachments:
   sender: me
   sent_at: '2025-06-17T19:40:55.944000-05:00'
   sha256: b2c18fe0e0f263b0ab3b3da0db15d4f4b4e840886e46cead8ffc4a6bb1fd501a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Sold-out VIP invite for a Springna Zhao film screening at Cinema Village
+    in Manhattan.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:27.826516+00:00'
   source_available: true
 - id: 3bc70a6d0e94b465
   filename: IMG_4566.HEIC

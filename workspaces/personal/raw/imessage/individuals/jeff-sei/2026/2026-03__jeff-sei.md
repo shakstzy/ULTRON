@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2026-03-17T14:50:08.120364-05:00'
   sha256: 94395810fd33d5aef0105b122e8c8394701923c015202bb6a24ec9e084f5f0b8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Notes screenshot titled "it for Jeff" listing technical AI project
+    and agentic SEO ideas.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:13.624914+00:00'
   source_available: true
 - id: 9893c1c66e87d8b0
   filename: Forge Berkeley Builder Accelerator Full Plan.docx

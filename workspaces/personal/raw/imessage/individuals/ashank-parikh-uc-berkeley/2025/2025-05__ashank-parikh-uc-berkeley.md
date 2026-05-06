@@ -55,9 +55,10 @@ attachments:
   sender: me
   sent_at: '2025-05-07T23:49:22.193845-05:00'
   sha256: 668fd7cfbad243665ba91defafe7cd517da2d45cd65f8d25527d830a3e107de8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A shirtless man in a cap and a bearded man in a striped shirt take
+    a selfie in doorway 401.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:11.749851+00:00'
   source_available: true
 - id: c7bb656d628bc526
   filename: IMG_8634.PNG
@@ -66,9 +67,10 @@ attachments:
   sender: me
   sent_at: '2025-05-07T23:50:21.398731-05:00'
   sha256: b5eea37789918739edc2ff462902e5425d6049c3f528e76c02af106fd9866f59
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage group chat screenshot discussing math extra credit and plans
+    for "sliding" over.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:24.004515+00:00'
   source_available: true
 - id: c5a695f6829bba3c
   filename: IMG_8636.PNG
@@ -77,9 +79,9 @@ attachments:
   sender: me
   sent_at: '2025-05-08T17:59:30.443492-05:00'
   sha256: 127780fd4ae6065ef6bec12ea5fdb7075ff886f66924894554f90101e584d134
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat with Daniel planning a 5:00 PM meetup at 2310 Fulton.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:29.171886+00:00'
   source_available: true
 - id: b26eaea64eb8dd95
   filename: IMG_8637.PNG
@@ -121,9 +123,10 @@ attachments:
   sender: me
   sent_at: '2025-05-09T22:16:28.340880-05:00'
   sha256: d086e800f6ff9df5bbfb0d12b9df4c883cca967bbf02899dbe0097401fda7c6f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hand holding Popov vodka over a steep residential street at sunset
+    beside a person with dark hair.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:16.783632+00:00'
   source_available: true
 chat_message_guids_count: 143
 deleted_upstream: null

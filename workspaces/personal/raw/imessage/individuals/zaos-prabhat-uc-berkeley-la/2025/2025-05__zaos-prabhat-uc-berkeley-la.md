@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-05-05T19:12:25.440525-05:00'
   sha256: 165cc911716500b21542147f8c66b5659f8a7794d4df6d8ab5f116645cadf6a3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage group chat screenshot showing Rohin sharing a phone number
+    labeled "Shroom plug."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:43.642963+00:00'
   source_available: true
 chat_message_guids_count: 27
 deleted_upstream: null

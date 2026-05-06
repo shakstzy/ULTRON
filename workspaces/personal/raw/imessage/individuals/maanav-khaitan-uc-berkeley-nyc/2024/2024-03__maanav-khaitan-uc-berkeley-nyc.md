@@ -22,9 +22,9 @@ attachments:
   sender: maanav-khaitan-uc-berkeley-nyc
   sent_at: '2024-03-30T14:46:57.498837-05:00'
   sha256: a10cc1e073284d4f2ec747f1cd58af7ec24ae78dad0f08d41e32251c653da3b6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man smiling in a black hoodie with a large pink peace sign earring.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:59.494977+00:00'
   source_available: true
 chat_message_guids_count: 5
 deleted_upstream: null

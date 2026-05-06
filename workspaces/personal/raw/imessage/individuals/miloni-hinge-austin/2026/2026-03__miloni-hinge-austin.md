@@ -22,9 +22,9 @@ attachments:
   sender: miloni-hinge-austin
   sent_at: '2026-03-01T19:52:06.593625-06:00'
   sha256: 615fc05103cf001faff968f1e8d95bcdb2fd3d0adb2f0ff00d7b34cb441b047b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A chocolate Labrador with closed eyes basking in warm golden hour light.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:38.430388+00:00'
   source_available: true
 - id: f0af3f5139957921
   filename: 0F1F477B-AA46-4A92-9F49-3DDFB11D713D.JPG
@@ -33,9 +33,10 @@ attachments:
   sender: miloni-hinge-austin
   sent_at: '2026-03-02T20:01:23.422270-06:00'
   sha256: 0d1e99d2b5e7c68b07d33dcc1d1a717ead21fa7f97f7c5b95b3b2120936fbccb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A pencil sketch of a hunched, pale humanoid creature with large eyes
+    and long arms.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:38.649592+00:00'
   source_available: true
 chat_message_guids_count: 50
 deleted_upstream: null

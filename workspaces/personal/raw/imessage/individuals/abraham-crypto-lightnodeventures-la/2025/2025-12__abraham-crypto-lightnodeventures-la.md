@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-12-13T23:47:10.790000-06:00'
   sha256: 3280662f1e8e53f70dd6914a4e50d94631fb59f06678d87b0d1b0e8c3e4a2fd1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A surprised man in a black cap and a smiling man in a tan Champion
+    hoodie sit at a table.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:16.351459+00:00'
   source_available: true
 chat_message_guids_count: 12
 deleted_upstream: null

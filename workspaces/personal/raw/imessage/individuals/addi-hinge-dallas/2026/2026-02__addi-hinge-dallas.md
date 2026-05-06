@@ -55,9 +55,10 @@ attachments:
   sender: me
   sent_at: '2026-02-05T01:44:21.985000-06:00'
   sha256: 45f81b8e5d37b688e430a1bee4683745f7a115ababf7b783d83d91cfe6f5d017
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Snapchat error message stating access is temporarily disabled due to
+    unusual activity.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:01.857959+00:00'
   source_available: true
 - id: e04b7d9ee3d44011
   filename: IMG_6938.png
@@ -66,9 +67,10 @@ attachments:
   sender: me
   sent_at: '2026-02-05T01:50:55.264000-06:00'
   sha256: 6641d42bc76c54b274b79b89eb32616d582708136f84fbc40763547e5b9736ee
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A Snapchat error message stating that access is temporarily disabled
+    due to unusual activity.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:32.499169+00:00'
   source_available: true
 - id: c26fb9a3d7c690c3
   filename: ms-5kzjhw.jpeg

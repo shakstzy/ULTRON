@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-12-02T19:07:40.716443-06:00'
   sha256: 36c86d204c81bfceb4ce3d51ee1b07008789a0a8a47c31f5531b2b5217aae292
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dark-themed map of Austin, Texas, with a blue location dot near Highway
+    183.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:32:11.655172+00:00'
   source_available: true
 chat_message_guids_count: 9
 deleted_upstream: null

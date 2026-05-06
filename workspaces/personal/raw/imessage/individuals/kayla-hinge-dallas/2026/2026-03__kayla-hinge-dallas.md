@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-05T15:35:45.619000-06:00'
   sha256: 9be117eec2ca4c6996c4b390f15af66b040bbb1ac5f381e6c53853eeac75cce1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mirror selfie of a woman named Kayla from her verified Hinge dating
+    profile.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:56.612908+00:00'
   source_available: true
 chat_message_guids_count: 42
 deleted_upstream: null

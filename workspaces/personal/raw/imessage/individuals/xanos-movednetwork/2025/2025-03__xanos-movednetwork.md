@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-03-03T13:04:51.097000-06:00'
   sha256: 8f5c16a2a60914ac83e45881c6940037ec30fedab2ca0bd68b1610d2014f0a5a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A gray baseball cap with a white embroidered Hamsa symbol held by a
+    person's hand.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:51.151357+00:00'
   source_available: true
 - id: 7654dd7ce0841ddf
   filename: IMG_4473.png
@@ -88,9 +89,10 @@ attachments:
   sender: me
   sent_at: '2025-03-21T15:52:45.232888-05:00'
   sha256: 2b24ab019a75af86cd71a6f983d351b0daa08e071afbad4af0214faa2818316f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A close-up portrait of a young man with dark hair and brown eyes against
+    a dark background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:58.203742+00:00'
   source_available: true
 chat_message_guids_count: 41
 deleted_upstream: null

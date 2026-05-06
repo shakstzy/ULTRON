@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-04-03T15:25:44.523551-05:00'
   sha256: 9d2cbfe4fdae9bd37bfecf522c6fc21c21b86fed630ba9a0be5c08a0bc608561
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Song Information Form exhibit for a publishing agreement with Prescription
+    Songs LLC.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:21.549142+00:00'
   source_available: true
 chat_message_guids_count: 3
 deleted_upstream: null

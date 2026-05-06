@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-01-10T12:37:15.497310-06:00'
   sha256: 606e515ac09369f21c9c1231380f3b444294d925b52a68c10d7a32890cfbd173
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Pink Kirby smiling in front of a large olive star and three smaller
+    floating stars.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:30:36.729617+00:00'
   source_available: true
 - id: a0c59357a24b9402
   filename: IMG_0109.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-01-18T21:44:41.083925-06:00'
   sha256: 3a61d33e76a92d21c42666a94e2631568dcf363c282835e7abfe37d01410bfe0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A woman in black athletic gear leans on a barbell at a squat rack in
+    a gym.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:58.804938+00:00'
   source_available: true
 chat_message_guids_count: 26
 deleted_upstream: null

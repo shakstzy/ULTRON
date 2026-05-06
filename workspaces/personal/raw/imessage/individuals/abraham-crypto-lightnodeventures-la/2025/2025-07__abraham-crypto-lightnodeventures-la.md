@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-07-18T19:46:17.408000-05:00'
   sha256: 028e8b2f7b6979db51774e74af3dc4550859029a55d96c294e9c6093ecbadfed
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man takes a selfie in front of a large "I Heart NY" sign at an airport
+    terminal.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:10.969476+00:00'
   source_available: true
 chat_message_guids_count: 57
 deleted_upstream: null

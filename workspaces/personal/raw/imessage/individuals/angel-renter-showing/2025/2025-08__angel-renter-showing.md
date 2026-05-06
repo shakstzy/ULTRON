@@ -22,9 +22,10 @@ attachments:
   sender: angel-renter-showing
   sent_at: '2025-08-13T13:03:01.596546-05:00'
   sha256: f424d24a5c127cd002d624669af0320fcb6721ef5fb98daf7935df6ee935b5d6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Lease amendment for a Whippet mix ESA named Archie at 13245 Klein Ct,
+    dated 2/4/2025.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:31:43.422751+00:00'
   source_available: true
 chat_message_guids_count: 26
 deleted_upstream: null

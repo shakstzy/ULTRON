@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-18T00:53:28.880136-05:00'
   sha256: 6f3a98c6235168da6629cff936818530de6ef9d24abe2c2a83ebafbcc70c95e1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iOS contact for Neha Hair Tie UC Berkeley with phone (669) 234-2121
+    and active Lyft status.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:29:50.956104+00:00'
   source_available: true
 chat_message_guids_count: 2
 deleted_upstream: null

@@ -61,6 +61,11 @@ _RATE_LIMIT_RE = re.compile(
     r"user rate limit|rate exceeded)",
     re.IGNORECASE,
 )
+_INELIGIBLE_RE = re.compile(
+    r"(IneligibleTierError|ValidationRequiredError|"
+    r"not eligible for Gemini Code Assist|Account validation required)",
+    re.IGNORECASE,
+)
 
 _COOLDOWN_LOCK = threading.Lock()
 _COOLDOWN_RELEASE_AT = [0.0]
@@ -205,10 +210,16 @@ def gemini_describe_once(path, kind, account, timeout=180):
     except FileNotFoundError:
         return None, None, "no_cli"
 
-    combined = (proc.stdout or "") + "\n" + (proc.stderr or "")
-    if _RATE_LIMIT_RE.search(combined):
-        return None, None, "rate_limit"
+    # Order matters: returncode==0 is the source of truth for success.
+    # gemini-cli emits "exhausted your capacity... retrying" to stderr on
+    # transient rate limits then auto-retries and succeeds — we must NOT
+    # flag those as rate_limit. Only inspect stderr regex on actual failure.
+    stderr = proc.stderr or ""
+    if _INELIGIBLE_RE.search(stderr):
+        return None, None, "ineligible"
     if proc.returncode != 0:
+        if _RATE_LIMIT_RE.search(stderr):
+            return None, None, "rate_limit"
         return None, None, "failure"
     desc = (proc.stdout or "").strip()
     lines = [ln.strip() for ln in desc.splitlines() if ln.strip()]
@@ -245,7 +256,7 @@ def gemini_describe_with_retry(path, kind, max_retries=5):
                 _exhausted.clear()
             continue
         desc, model, err = gemini_describe_once(path, kind, account)
-        if err == "rate_limit":
+        if err in ("rate_limit", "ineligible"):
             mark_exhausted(account[0])
             continue  # try another account immediately
         return desc, model, err

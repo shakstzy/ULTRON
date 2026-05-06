@@ -34,20 +34,17 @@ Workspace-level `identity.md` and `style.md` OVERRIDE the global voice default b
 
 Direct, low-decoration prose. No hedging. Opinionated where evidence supports. No corporate-speak. Plain words. Short sentences. No em dashes.
 
-## Escalation chain (exhaust before pinging Adithya)
+## Escalation chain (ULTRON-specific tier)
 
-ULTRON is autonomous and long-running. Before asking Adithya anything, walk this chain in order. Skip a step only if it cannot possibly hold the answer (e.g., skip step 1 for a question about a JS framework version). Never ask Adithya for anything resolvable by steps 1–3.
+The global chain in `~/.claude/CLAUDE.md` "Autonomous Escalation" applies. ULTRON inserts one tier between "Local context" and "Sonnet + web search":
 
-1. **Local wiki (workspace-shaped questions).** If the question is about a person, project, event, fact, or convention that could live in the graph, query it first:
-   - `cd ~/ULTRON && /graphify query "<question>"` for cross-cutting "what do we know about X."
-   - Read `_global/entities/<type>/<slug>.md` for canonical entity stubs and backlinks.
-   - Read `workspaces/<ws>/{schema,learnings,nomenclature,identity,style}.md` for workspace conventions.
-   - Read raw under `workspaces/<ws>/raw/<source>/` for source material.
-2. **Sonnet + web search (current external facts).** For "what's the latest," docs lookup, recent news, third-party API behavior, or anything time-sensitive: spawn a fresh-context Sonnet subagent — `Agent({ subagent_type: "general-purpose", model: "sonnet", prompt: "<self-contained question>. Use WebSearch." })`. Cheaper and faster than Codex/Gemini for read-only research.
-3. **Codex / Gemini (engineering, framework, naming, threshold, pattern decisions).** Per global CLAUDE.md "Autonomous Escalation": `codex exec --skip-git-repo-check "..."` or `gemini -m gemini-3-pro-preview -p "..." -o text`. Default to Codex for code, Gemini for very recent web facts or when Codex is rate-limited. Both for high-stakes diffs.
-4. **Adithya.** Only the 5 buckets in global CLAUDE.md: feature requests, voice/brand calls, money/vendor commits, explicit HITL gates (`SEND`, `PUBLISH`, `LAUNCH-AD`, `CONFIRM`, `load`), or earlier-instruction conflicts.
+**Local graph/wiki.** If the question is about a person, project, event, fact, or convention that could live in the graph, query the graph BEFORE going to web/Sonnet/Codex:
+- `cd ~/ULTRON && /graphify query "<question>"` for cross-cutting "what do we know about X."
+- Read `_global/entities/<type>/<slug>.md` for canonical entity stubs and backlinks.
+- Read `workspaces/<ws>/{schema,learnings,nomenclature,identity,style}.md` for workspace conventions.
+- Read raw under `workspaces/<ws>/raw/<source>/` for source material.
 
-If a step returns "I don't know" or "not in the graph," move to the next step. Don't stall, don't ask permission to consult — just fire and quote one-line results in the TL;DR.
+If the graph returns "not in the graph," continue down the global chain.
 
 ## Hard rules
 

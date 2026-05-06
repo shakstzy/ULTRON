@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-03T00:29:50.460000-06:00'
   sha256: ac3d941047e536d5989619f4f8011fe4d46b5094b7b471d1a80bbf138c936d0f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: People walk on a city sidewalk at night past flashing red and blue
+    emergency lights.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:50:55.300939+00:00'
   source_available: true
 chat_message_guids_count: 27
 deleted_upstream: null

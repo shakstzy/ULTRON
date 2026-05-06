@@ -22,9 +22,10 @@ attachments:
   sender: lolly-hinge-austin
   sent_at: '2026-03-02T19:57:28.943853-06:00'
   sha256: 7d3fd80c8c021573f90f23ac39d0112a5af6035dd2ee85cf224f6c4b405bf6d9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Wall art featuring a glittery Coca-Cola painting, colorful canvases,
+    and two golden fans.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:50:49.233537+00:00'
   source_available: true
 chat_message_guids_count: 94
 deleted_upstream: null

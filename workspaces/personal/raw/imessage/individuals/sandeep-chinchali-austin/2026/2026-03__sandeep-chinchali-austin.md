@@ -67,9 +67,10 @@ attachments:
   sender: me
   sent_at: '2026-03-30T23:43:20.505705-05:00'
   sha256: 97dfe2c1f9ad3fd8066d6840a15907a951e37bd32c88222d434c7f2e4d1e4782
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Calendar screenshot showing a 'Sandeep <> Shakthi' meeting on Mar 31
+    at 2:30 PM.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:51:10.516958+00:00'
   source_available: true
 chat_message_guids_count: 44
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-08-24T19:51:28.788587-05:00'
   sha256: f7c44eeecd075f41322040599aed685e0ad2b4dc5ab3ebe23550d24bb5d66d7c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a black hoodie sits on a couch, speaks, and drinks from a glass
+    of white wine.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:51:39.208249+00:00'
   source_available: true
 chat_message_guids_count: 2
 deleted_upstream: null

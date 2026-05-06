@@ -180,9 +180,9 @@ attachments:
   sender: me
   sent_at: '2025-06-29T12:50:59.341000-05:00'
   sha256: b119176d611f5b6ae14c50bd83548f485e143d144db9c9b84d3ccd7f8eb6978d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: White Apple logo and "Cash" text centered on a dark gray background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:51:21.090281+00:00'
   source_available: true
 chat_message_guids_count: 438
 deleted_upstream: null

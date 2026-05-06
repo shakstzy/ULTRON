@@ -22,9 +22,10 @@ attachments:
   sender: parth-croft-austin
   sent_at: '2025-01-03T13:23:43.460040-06:00'
   sha256: 6b244dc3eeafd52d341a9923d3110ae88c04fd2e95724c67077a88a99dba47c1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This VCF file is a digital contact card for Avik Ahuja. It provides
+    his full name, a mobile phone number, and an encoded profile image.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:51:16.705940+00:00'
   source_available: true
 - id: 9b5a7b6890d6d18c
   filename: Aditya Desai.vcf

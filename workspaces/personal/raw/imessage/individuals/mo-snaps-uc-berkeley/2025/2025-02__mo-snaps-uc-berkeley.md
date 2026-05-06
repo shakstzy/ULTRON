@@ -69,9 +69,10 @@ attachments:
   sender: me
   sent_at: '2025-02-16T02:51:31.956000-06:00'
   sha256: 7d78f345d9f130fd0cbfe7cac65b5f475aba417df57af24ff6b55b4ba4311a75
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Transit app screenshot showing 190 bus directions from Port Authority
+    with delay alerts.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:50:19.672293+00:00'
   source_available: true
 - id: 6020ff1d79cae159
   filename: IMG_5691.PNG
@@ -115,9 +116,10 @@ attachments:
   sender: me
   sent_at: '2025-02-16T03:05:23.926000-06:00'
   sha256: 0ae002b727513813c276305ba0ca87bdc25d997cb9b62d0c1d9fb930dfc5593f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Transit app screenshot showing bus 139 directions, significant delays,
+    and a Lyft connection.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:50:23.896145+00:00'
   source_available: true
 - id: 0c3352dbea64e59e
   filename: IMG_5707.PNG

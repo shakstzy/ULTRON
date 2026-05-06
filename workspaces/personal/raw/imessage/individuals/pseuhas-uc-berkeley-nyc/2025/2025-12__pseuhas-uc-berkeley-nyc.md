@@ -22,9 +22,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-12-03T16:44:11.117914-06:00'
   sha256: 70cedfc9d166c750fb9ff04f9f49cd78ad5d1ce514a1d69afe8e9187a8a4f0fa
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'iMessage: Suhas is offered half a salary for a Sig assessment but
+    counters with a $50 fee.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:51:35.162543+00:00'
   source_available: true
 - id: 93c390557a0ce667
   filename: IMG_9216.PNG

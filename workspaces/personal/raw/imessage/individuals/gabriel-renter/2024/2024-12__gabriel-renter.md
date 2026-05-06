@@ -46,9 +46,11 @@ attachments:
   sender: me
   sent_at: '2024-12-05T10:44:51.374616-06:00'
   sha256: 1fb0f6560ea1348eff131e3bbe2c098daf90274e3e9f61cea5ab1465315625fb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This Move In Inspection form details the condition of a Sylmar, CA
+    rental property. It records the state of the home for tenant Gabriel Lucio Baro's
+    move-in on August 16, 2024.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:51:20.201627+00:00'
   source_available: true
 - id: 085da88259ee4a4b
   filename: House_Rules_for_Renters_-_13245_Klein_Ct_1_ts75921.pdf

@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2025-06-10T02:29:32.267228-05:00'
   sha256: f9ec1ced0cc54c2ad6f8319ebadc1ad5c31710317ef52f4b4dc84de3ebe6b935
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of a FaceTime call overlaying a Google search for
+    a blue Club Penguin.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:51:34.553480+00:00'
   source_available: true
 - id: 674d53e8aa66a7b5
   filename: IMG_9576.PNG

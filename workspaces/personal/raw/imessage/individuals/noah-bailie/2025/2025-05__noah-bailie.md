@@ -45,9 +45,9 @@ attachments:
   sender: me
   sent_at: '2025-05-18T23:55:37.055647-05:00'
   sha256: 49cf7f9fb1119e24e2785fe21747e45e6bbdfe12e65456c09e5419bb814290d8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A black vape pen charging via USB from a PC tower draped with a hoodie.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:50:49.676887+00:00'
   source_available: true
 - id: 20164d60024f0e22
   filename: IMG_7023.png

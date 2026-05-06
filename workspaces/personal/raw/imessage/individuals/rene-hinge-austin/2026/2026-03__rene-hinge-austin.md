@@ -89,9 +89,10 @@ attachments:
   sender: rene-hinge-austin
   sent_at: '2026-03-05T20:56:12.869864-06:00'
   sha256: e99898875f39a81b51d2c09dcc57f2f825c3d9d9d1a0d405f972c782b4bcf654
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of Apple Maps showing Walnut Creek Metro Park info and photos
+    in Austin, Texas.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:50:54.341010+00:00'
   source_available: true
 - id: f1b3b28354238626
   filename: 123_1.jpeg
@@ -100,9 +101,10 @@ attachments:
   sender: rene-hinge-austin
   sent_at: '2026-03-05T21:23:07.877648-06:00'
   sha256: 1c4fa600411235f222280aac8d4b84be88f186353a993eb4b22f0a55d13971ab
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple Maps info card for Randy Morrow Trail in Georgetown, TX, showing
+    a 14-mile route.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:50:37.688729+00:00'
   source_available: true
 - id: cb7f93f123b0e120
   filename: 123_1.jpeg

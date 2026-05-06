@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-10-16T15:08:44.314000-05:00'
   sha256: 5f015927d4f04410e9bb59e925f3220dc4c089f70d3e7d1fb39e83189d5b38ea
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Active call with Avery Abraham Stanford and incoming call from Ryan
+    UT Austin via iPhone.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:51:25.591700+00:00'
   source_available: true
 chat_message_guids_count: 39
 deleted_upstream: null

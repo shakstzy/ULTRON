@@ -176,9 +176,10 @@ attachments:
   sender: mo-snaps-uc-berkeley
   sent_at: '2024-12-20T16:49:47.279659-06:00'
   sha256: 5f5dd7bf7be5e9e2cd7554796632593e86bb55fc3f7d422d3cf781747e18c3a1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple Music Home screenshot showing New Music Mix with Shak Stzy and
+    Recently Played.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:50:25.706005+00:00'
   source_available: true
 - id: d97491b7c9b87900
   filename: "Screenshot 2024-12-20 at 5.50.01\u202FPM.jpeg"

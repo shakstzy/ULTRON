@@ -33,9 +33,9 @@ attachments:
   sender: me
   sent_at: '2025-10-24T13:17:19.243801-05:00'
   sha256: 34ac97ada90a369b0b8d5d2ed57e2831df124d60c3a61394f0649eb37632f4ba
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of Vehicle Identification Number (VIN) 4T1B11HK6KU288180.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:51:17.728613+00:00'
   source_available: true
 - id: c4a0b4263dee686c
   filename: FILE_1604.pdf

@@ -154,9 +154,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-08-16T20:31:27.553087-05:00'
   sha256: d06ebcebbe69869753b74141c6346cce2368e53fd84f75ee8baddc755fff0a4e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screen recording of a music production session in Ableton Live on a
+    laptop with a studio PIP.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:51:39.791816+00:00'
   source_available: true
 - id: dd8a093e12f37c1f
   filename: same time.wav

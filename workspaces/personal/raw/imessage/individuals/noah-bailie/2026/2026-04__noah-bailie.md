@@ -45,9 +45,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2026-04-14T18:43:15.693351-05:00'
   sha256: f403934ed9e0cc19d7b09a0972d5c06dd56518fc325872abd5e6c199f7733c2d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A bearded man and a woman lying on pillows, both extending their middle
+    fingers.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:51:02.377958+00:00'
   source_available: true
 chat_message_guids_count: 37
 deleted_upstream: null

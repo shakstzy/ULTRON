@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2024-04-04T12:40:54.556000-05:00'
   sha256: 439acdda8780ffd73c73855a5489d940d98a300e69115ff823ea1d0cac9ad802
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men silhouetted against a bright circular light in a red-lit recording
+    studio.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:51:28.742254+00:00'
   source_available: true
 - id: 4a2dd3cac782e77a
   filename: IMG_0145.png

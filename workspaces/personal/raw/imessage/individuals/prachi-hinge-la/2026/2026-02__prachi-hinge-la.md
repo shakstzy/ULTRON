@@ -34,9 +34,10 @@ attachments:
   sender: prachi-hinge-la
   sent_at: '2026-02-24T23:31:40.787665-06:00'
   sha256: 5f4b3a462924fd2e8cd91e33d240ba4137395e6dee8f7bfa8cc7b51bac02e293
-  description: null
-  description_model: null
-  extracted_at: null
+  description: UCLA social media post about Alysa Liu featuring a meme of Abby Lee
+    Miller cheering.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:51:18.835938+00:00'
   source_available: true
 chat_message_guids_count: 45
 deleted_upstream: null

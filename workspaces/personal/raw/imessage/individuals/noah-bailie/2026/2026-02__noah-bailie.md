@@ -114,9 +114,10 @@ attachments:
   sender: me
   sent_at: '2026-02-08T23:09:02.851549-06:00'
   sha256: 87124f9c79badd1bdb4715466a52c46a4e028cd671cacfeaf69e9f6df2f2323a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: KXII 12 news headline "CONTROVERSY OVER MEDICAL MARIJUANA" over bags
+    of cannabis in a display.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:51:00.169982+00:00'
   source_available: true
 - id: a05937a590e813f9
   filename: IMG_7427.png

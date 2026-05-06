@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2024-08-27T22:31:26.803000-05:00'
   sha256: 2119de5c823220b2cabcc2a04a5128279368ced369a9f0d65c2a45678b7b0b9a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage thread with multiple .wav audio recording attachments and
+    feedback on vocal mixes.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:50:25.432106+00:00'
   source_available: true
 - id: 5bcfe9e7d2af075c
   filename: IMG_2298.jpeg

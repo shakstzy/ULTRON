@@ -46,9 +46,10 @@ attachments:
   sender: andrew-liutev-crypto
   sent_at: '2025-02-04T13:02:05.687711-06:00'
   sha256: c7f5e476520f477e7ddb90d535e4523c2da91c7b70f8cf3db037d6f05c8a3dda
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Vertical banners for Solana Foundation, Paladin, and Coinbase in a
+    white industrial space.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:50:19.850548+00:00'
   source_available: true
 - id: fe01ea9325fcd51b
   filename: IMG_5784.heic

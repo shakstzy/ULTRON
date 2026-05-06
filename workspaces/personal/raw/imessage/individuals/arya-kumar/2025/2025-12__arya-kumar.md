@@ -56,9 +56,9 @@ attachments:
   sender: me
   sent_at: '2025-12-21T23:48:18.740000-06:00'
   sha256: b119176d611f5b6ae14c50bd83548f485e143d144db9c9b84d3ccd7f8eb6978d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: White Apple logo and "Cash" text centered on a dark gray background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:51:21.090281+00:00'
   source_available: true
 - id: ca1a26c6130a120a
   filename: tmp.gif

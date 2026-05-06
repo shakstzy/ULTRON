@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-11-26T09:13:46.459347-06:00'
   sha256: eb88f863100a952e14784dcb92a7fda92ec7c4b2039c7b78ee706953d318f54d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Digital map of Austin, Texas, showing neighborhoods and a blue location
+    marker.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:51:17.379311+00:00'
   source_available: true
 - id: 1c08b0f3adba3a2f
   filename: 75463205329__D83B8ED5-B988-4E35-9CA4-545F4FAD7B47.HEIC

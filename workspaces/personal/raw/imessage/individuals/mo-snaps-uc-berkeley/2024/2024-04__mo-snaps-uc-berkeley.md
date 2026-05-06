@@ -57,9 +57,10 @@ attachments:
   sender: mo-snaps-uc-berkeley
   sent_at: '2024-04-29T19:06:46.677080-05:00'
   sha256: 8c1106170fe3a27f5cd3ab1412971933dd8b79c4f06bd1f6df56aa146406b661
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a vCard file for a contact named "leaked". It contains a home
+    phone number and an associated profile picture.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T00:50:38.523635+00:00'
   source_available: true
 - id: 99075562bc8b4d6b
   filename: IMG_9267.png

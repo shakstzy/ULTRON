@@ -41,6 +41,8 @@ Default ULTRON voice. Plain words. Don't be stiff. This is the life-stuff worksp
 | What gear do I have? | `wiki/entities/gear/` (inventory) |
 | Where did I see Z play? | `wiki/entities/venues/<z>.md` |
 | Recent comms with someone? | `raw/imessage/<latest>/...` then `raw/gmail/<latest>/...` |
+| "Ship / drop / release / upload <track> to distrokid" | `_shell/skills/distrokid/SKILL.md` (impl in `~/QUANTUM/workspaces/distrokid/`) |
+| "Remove / takedown <track> from stores" | `_shell/skills/distrokid/SKILL.md` (HITL flow) |
 
 ## Agents
 

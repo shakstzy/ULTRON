@@ -17,7 +17,7 @@
 	<array>
 		<string>/bin/bash</string>
 		<string>-c</string>
-		<string>flock -n /tmp/com.adithya.ultron.ingest-gmail-adithya-shak-kumar-gmail.lock /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh ingest-source gmail adithya.shak.kumar@gmail.com &gt;&gt; /Users/shakstzy/ULTRON/_logs/com.adithya.ultron.ingest-gmail-adithya-shak-kumar-gmail.log 2&gt;&amp;1</string>
+		<string>flock -n /tmp/com.adithya.ultron.ingest-gmail-adithya-shak-kumar-gmail.lock /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh ingest-source gmail adithya.shak.kumar@gmail.com</string>
 	</array>
 	<key>RunAtLoad</key>
 	<false/>

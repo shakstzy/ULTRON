@@ -17,7 +17,7 @@
 	<array>
 		<string>/bin/bash</string>
 		<string>-c</string>
-		<string>flock -n /tmp/com.adithya.ultron.ingest-manual-default.lock /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh ingest-source manual default &gt;&gt; /Users/shakstzy/ULTRON/_logs/com.adithya.ultron.ingest-manual-default.log 2&gt;&amp;1</string>
+		<string>flock -n /tmp/com.adithya.ultron.ingest-manual-default.lock /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh ingest-source manual default</string>
 	</array>
 	<key>RunAtLoad</key>
 	<false/>

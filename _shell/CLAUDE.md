@@ -9,13 +9,14 @@ You are in `_shell/`, the operational machinery for ULTRON. None of the user's d
 - `agents/` — Cross-workspace agent prompts (`audit-agent.md`, `bootstrap-agent.md`). Per-workspace agents live at `workspaces/<ws>/agents/`.
 - `skills/` — Global skill manifests. Workspace-local skills live at `workspaces/<ws>/skills/`.
 - `runs/<RUN_ID>/` — Ephemeral per-run state. Created by `run-stage.sh`, archived after. Gitignored.
-- `plists/` — launchd plist source files. Versioned in git. Symlinked into `~/Library/LaunchAgents/` manually.
+- `plists/` — launchd plist files. Compiled from `schedule.yaml` and managed by the `schedule` skill (`compile` / `load` / `unload` / `status` / `remove`). Versioned in git as compiler output; do not hand-edit.
 - `budget.yaml` — API spend cap config (currently disabled — Adithya is on Claude Max sub).
 
 ## How to invoke a stage
 
 ```bash
 ~/ULTRON/_shell/bin/run-stage.sh <stage> [<workspace>]
+~/ULTRON/_shell/bin/run-stage.sh ingest-source <source> <account>   # per-(source, account) ingest
 ```
 
 The dispatcher acquires a flock, builds the prompt by concatenating root CLAUDE.md → stage CONTEXT.md → workspace CLAUDE.md (if scoped), then dispatches to the stage-specific handler.

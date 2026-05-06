@@ -17,7 +17,7 @@
 	<array>
 		<string>/bin/bash</string>
 		<string>-c</string>
-		<string>flock -n /tmp/com.adithya.ultron.audit.lock /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh audit &gt;&gt; /Users/shakstzy/ULTRON/_logs/com.adithya.ultron.audit.log 2&gt;&amp;1</string>
+		<string>flock -n /tmp/com.adithya.ultron.audit.lock /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh audit</string>
 	</array>
 	<key>RunAtLoad</key>
 	<false/>

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-01-28T22:43:01.772000-06:00'
   sha256: d5ac5d3757db7b920f4695727a6af2bb4c659291250ff019a2b7d0f3724deaae
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A black oval electronic keypad door lock with numbered buttons mounted
+    on a white door.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:28.075777+00:00'
   source_available: true
 chat_message_guids_count: 5
 deleted_upstream: null

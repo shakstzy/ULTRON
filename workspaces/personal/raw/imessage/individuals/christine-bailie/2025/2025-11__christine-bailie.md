@@ -22,9 +22,10 @@ attachments:
   sender: christine-bailie
   sent_at: '2025-11-05T15:55:19.219146-06:00'
   sha256: 2a24fe6f41b206d941046420ec24fa90c5ea9d3022ae7ae03264d22fb7a761d4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down selfie of a smiling bearded man and woman with glasses
+    outdoors at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:27.379901+00:00'
   source_available: true
 - id: 218c665ac0fb0545
   filename: IMG_0117.heic
@@ -33,9 +34,10 @@ attachments:
   sender: christine-bailie
   sent_at: '2025-11-05T15:55:19.219146-06:00'
   sha256: 393ceafb594117333d0830f297ea1f0f6599b5bc456317470f19d73890c2df1c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Woman and man in a UNT shirt pose in front of a 12 Media CBS/FOX Texoma
+    logo.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:27.917948+00:00'
   source_available: true
 - id: 0fe12b9d410fbbf4
   filename: IMG_2534.heic
@@ -66,9 +68,10 @@ attachments:
   sender: christine-bailie
   sent_at: '2025-11-05T15:55:19.219146-06:00'
   sha256: 5d3e1d430d2269380a22371acb9d3f7babcea8d0326d88ec1ca49fa106fca976
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a UNT shirt and an older woman pose in a news studio with
+    cameras and monitors.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:31.779418+00:00'
   source_available: true
 - id: 58c8e6ec4f7c7bdd
   filename: IMG_0106.heic

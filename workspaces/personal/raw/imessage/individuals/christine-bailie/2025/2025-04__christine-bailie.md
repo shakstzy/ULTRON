@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-04-10T16:23:24.803838-05:00'
   sha256: e1b3269ff20b7f11e3b6489554d73710b9bc87ab6b7a982dce5635829ba9235d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men smiling outside Freebirds, one in blue tie-dye making a peace
+    sign.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:27.665437+00:00'
   source_available: true
 chat_message_guids_count: 7
 deleted_upstream: null

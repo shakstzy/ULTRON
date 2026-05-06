@@ -44,9 +44,10 @@ attachments:
   sender: kelsey-renter-showing
   sent_at: '2026-01-29T16:02:50.215764-06:00'
   sha256: 6784006ed9dd8cc74ca064de953e934907745dcf4c1a844093b7353f50ba35b6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone contact card for Khaled (Adams Reality) with phone number +1
+    (956) 341-2866.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:57.188982+00:00'
   source_available: true
 - id: 2950cc55cd0983f6
   filename: 3499186613680243606.png

@@ -22,9 +22,10 @@ attachments:
   sender: ethan-uc-berkeley
   sent_at: '2025-04-20T18:38:59.279941-05:00'
   sha256: b4203b729796af7612322f3da266099b5deaee645324376c77dd23de3d60ce7f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Students lounging on UC Berkeley's Memorial Glade during an outdoor
+    campus event.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:09.997561+00:00'
   source_available: true
 chat_message_guids_count: 2
 deleted_upstream: null

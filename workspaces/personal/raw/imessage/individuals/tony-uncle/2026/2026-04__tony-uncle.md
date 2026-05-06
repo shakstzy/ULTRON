@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-04-21T13:42:31.704671-05:00'
   sha256: a1e1f24bfb8656f4814585c9dc2d33dd53a9e46df41ef1cc3a4b3a32aa434965
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Multiple terminal panes displaying Claude Code CLI logs, technical
+    plans, and status updates.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:13.808247+00:00'
   source_available: true
 - id: 4a213fc1e63cd4b8
   filename: IMG_3444.png

@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2024-08-26T16:05:35.478000-05:00'
   sha256: 0565750f634dbc50f5addbe42c47448e5ab267a0937a908156a439a6bccd9b0c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A clear glass water pipe with a black base resting horizontally against
+    a white wall.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:21.554225+00:00'
   source_available: true
 - id: 4eab8496e5021c07
   filename: IMG_0793.heic
@@ -66,9 +67,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-08-29T22:32:18.960361-05:00'
   sha256: 45204f0bf2c38ae8644d58cb790bc7dbb7d61500e82cfbe574bc3a510577a061
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A circular hole in white drywall surrounded by tangled black and white
+    cables.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:28.808747+00:00'
   source_available: true
 - id: 9b5391fb4312fdfb
   filename: IMG_0806.heic
@@ -77,9 +79,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-08-29T22:32:18.960361-05:00'
   sha256: 073da55f59995631ed5b7f523143c7dab32ddee1db81b65c1bf64f675a78d78a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A circular hole in a white drywall surface with black cables running
+    across it.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:41.711010+00:00'
   source_available: true
 - id: 4438b552d7fc9f47
   filename: IMG_0810.heic
@@ -88,9 +91,9 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-08-29T22:32:18.960361-05:00'
   sha256: 48c58a1b7c918a5f76a54d41a3c8c2b09438a35a4ea3b8e80a961181e2476f95
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Large hole in a white textured drywall behind several black power cables.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:48.248413+00:00'
   source_available: true
 - id: fa26102b3024180c
   filename: 74683700888__2A3EE036-42FA-45F4-B236-8CCA9E8587AE.heic

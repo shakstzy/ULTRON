@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2024-12-29T20:51:49.160522-06:00'
   sha256: 06f96fc08eaad5a72f5cebfbb95c6a13d0101e5685b6da4e21ba8b238ba8b241
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram profile screenshot for varunkapooor showing 552 followers
+    and 0 posts.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:18.552096+00:00'
   source_available: true
 chat_message_guids_count: 13
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-08-12T12:53:06.136107-05:00'
   sha256: b0c06977943d6190311ab9673959b291dd39c942803f1f10cf6fb0790c29765d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Aug 12, 2025 flight confirmation #CMLH9A from LGA to LAX departing
+    at 3:45pm.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:04:51.232328+00:00'
   source_available: true
 - id: af0d263fb90f4e5c
   filename: 77675773441__C79795DF-91FD-4E04-BCC3-42752DAFF752.HEIC
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-08-13T01:02:17.191516-05:00'
   sha256: 913b2f16c7dc25db79d96e7456d0493d6dadccdd9c5d68fef55ac86a0bbb00f6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A Southwest 737-MAX airplane cabin interior with blue mood lighting
+    and seatback screens.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:04:55.226430+00:00'
   source_available: true
 - id: a84035a05759bfae
   filename: IMG_0954.PNG
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-08-13T01:03:13.986261-05:00'
   sha256: b5be5eab78f8db671f36f070c0d89b82a5f4c87b305f0f5203375031d72151a2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Maps satellite view showing LAX airport and Westchester in Los
+    Angeles.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:44.171498+00:00'
   source_available: true
 - id: 822ab73a4e894913
   filename: IMG_0501.png
@@ -55,9 +58,10 @@ attachments:
   sender: me
   sent_at: '2025-08-17T15:06:20.047000-05:00'
   sha256: 32141004670f40ae5d71ee009e1e77385af7a0813d1760beca3f98d17ad66f82
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Uber Eats checkout screen showing a $12.25 burrito with steak and beef
+    barbacoa.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:39.829190+00:00'
   source_available: true
 - id: 3d8e062a2cf1f804
   filename: IMG_1233.PNG
@@ -66,9 +70,10 @@ attachments:
   sender: me
   sent_at: '2025-08-29T02:20:26.780057-05:00'
   sha256: 96247a1f82600392842dc7314f95abdcadff0d138d6e3e8af8b2cf6d2eb52972
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of Apple Music playing "I Don't Care..." by LUCKI
+    & Lil Yachty.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:20.138611+00:00'
   source_available: true
 chat_message_guids_count: 123
 deleted_upstream: null

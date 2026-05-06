@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-04T01:07:22.357000-06:00'
   sha256: a1e8324d9aecdced95574136b82ebd6f0ae9a163ee20ba6745931dcd859c246c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dual monitors displaying JSON configuration code and a PowerShell terminal
+    on a desk.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:35.281881+00:00'
   source_available: true
 - id: d7a991403100adc8
   filename: 79466767552__699BBC0C-CBF5-4C57-BF14-6084AAC0D512.HEIC
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2026-03-08T08:01:24.638118-05:00'
   sha256: 484520f1c241583c6b5c7431de7b58c24a5b63315393421a98c21215f7bd42f2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: View from a car window of city buildings and a side mirror reflecting
+    a street at dusk.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:10.070118+00:00'
   source_available: true
 - id: 941e13cae1f8f7d3
   filename: 79481440032__34FB5182-9186-4279-85EE-EFF2AA7CA3EB.HEIC
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2026-03-10T00:47:04.639353-05:00'
   sha256: b8f61bae5a57964a47a7ff55e42916dd4421737ddafa3f2d28aba6be184306d0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Night view from a car of THE MARK building (812) with parked cars and
+    a stop sign.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:18.776873+00:00'
   source_available: true
 chat_message_guids_count: 135
 deleted_upstream: null

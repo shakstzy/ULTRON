@@ -22,9 +22,9 @@ attachments:
   sender: me
   sent_at: '2025-06-25T17:58:24.659848-05:00'
   sha256: a970041408336bb28e2d9e662c26df22064662791aca7648d3528271aef3b69c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iOS map screenshot pinned at Union Ave & Irving Pl, Rutherford, NJ.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:32.484326+00:00'
   source_available: true
 - id: 4a7f4c47a3ff6ea7
   filename: IMG_0142.PNG

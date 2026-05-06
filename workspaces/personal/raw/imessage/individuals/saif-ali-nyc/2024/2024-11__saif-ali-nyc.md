@@ -66,9 +66,10 @@ attachments:
   sender: me
   sent_at: '2024-11-25T15:53:19.681736-06:00'
   sha256: 3d14564596913223d3c1a5d4aa22197f9f431c2bdc98def4215f23df23323ab0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Randall Boggs, the purple, eight-limbed lizard monster from Monsters,
+    Inc., smirking.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:02.446836+00:00'
   source_available: true
 - id: e299c0819fa19860
   filename: IMG_2529.png

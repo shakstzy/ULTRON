@@ -22,9 +22,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-12-19T01:14:41.706723-06:00'
   sha256: 980adf73a1791a4d13d9e72382bb60976972ca921fca5f30755a59ed639f0689
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Scattered floor debris including hair, dirt, a crumpled tissue, and
+    white paper squares.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:47.005157+00:00'
   source_available: true
 - id: 66e310074276fcfa
   filename: IMG_6757.heic
@@ -33,9 +34,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-12-19T01:14:41.706723-06:00'
   sha256: 3d15f1d60760c621aa458f3483f8de6e1ba7f1addd2661bf3696f62c927148ef
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A large white translucent plastic bag filled with items on a white
+    surface.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:41.180693+00:00'
   source_available: true
 - id: c98d9f4832ae0395
   filename: IMG_6896.png
@@ -55,9 +57,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-12-26T14:28:47.420894-06:00'
   sha256: c8ffaeb444c570c90cf694669a2ff784c918f693146075b6c09316092363edca
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A WhatsApp screenshot showing a "Screen capture blocked" privacy notice
+    with a green camera icon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:49.449118+00:00'
   source_available: true
 chat_message_guids_count: 100
 deleted_upstream: null

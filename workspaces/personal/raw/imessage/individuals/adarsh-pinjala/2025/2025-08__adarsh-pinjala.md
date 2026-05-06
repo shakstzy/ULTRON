@@ -143,9 +143,10 @@ attachments:
   sender: me
   sent_at: '2025-08-30T01:57:55.436929-05:00'
   sha256: eae2e14e95e571127ed3d4be8efcf5773a9f123d7686d764230a14235cf60727
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple Maps screenshot of BART transit directions from Berkeley to SF
+    Embarcadero Station.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:53.107125+00:00'
   source_available: true
 - id: eba14c433c8d6e6d
   filename: IMG_1253.PNG

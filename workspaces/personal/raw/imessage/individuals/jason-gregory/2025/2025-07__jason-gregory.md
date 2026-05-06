@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-07-30T20:36:51.552150-05:00'
   sha256: 7605509237cd7c7201531106a23307d7d785bf7b613ad551ec64c6636c5b2f14
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling bearded man in a black shirt makes a peace sign next to a blurry
+    reflection.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:47.605643+00:00'
   source_available: true
 chat_message_guids_count: 6
 deleted_upstream: null

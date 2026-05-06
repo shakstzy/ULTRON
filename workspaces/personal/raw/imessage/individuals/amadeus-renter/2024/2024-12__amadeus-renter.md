@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-12-05T03:06:12.903000-06:00'
   sha256: 0713e932a5688d2d27c16d7535d83c2eca39a43a3d8826f3fd07a473ab5865d4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Financial candlestick chart on a screen with a person's face in a video
+    overlay window.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:35.496579+00:00'
   source_available: true
 - id: ce829b627d935754
   filename: IMG_4270.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2024-12-05T12:52:35.387386-06:00'
   sha256: b7de0499ef5bd9408e6a3579bb642a1f1a3baeb7ef7f2e0ba3e826719b78a006
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Candlestick chart with a red oval highlighting a bearish reversal pattern
+    at a price peak.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:33.400781+00:00'
   source_available: true
 - id: dd600cbe2b5e1903
   filename: IMG_1898.png
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2024-12-05T12:55:13.978333-06:00'
   sha256: 0e661c6f26570f24cf0d8195ec4235e19776c6d787f527e86cd8de27ff5d642b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Candlestick stock chart with a red oval highlighting a price consolidation
+    zone.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:04.011171+00:00'
   source_available: true
 - id: 5b22063e1f388704
   filename: IMG_1443.PNG
@@ -55,9 +58,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-12-06T12:13:38.212381-06:00'
   sha256: 8e40feac12f07560b304f21e89fb3d424f4b05f97997f0f62276a0e40684b40a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: TradingView mobile screenshot of a GBP/JPY 1H candlestick chart with
+    a long position setup.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:44.600803+00:00'
   source_available: true
 - id: 7bfead19fe2d30f1
   filename: IMG_5788.png
@@ -66,9 +70,10 @@ attachments:
   sender: me
   sent_at: '2024-12-07T05:33:36.782091-06:00'
   sha256: eb0959e5fc82b5acbac07912eaf40254c6dcc1879c69cc148abb6e9e1bd4dcff
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Candlestick chart featuring Fibonacci retracement levels and purple
+    support/resistance zones.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:38.595406+00:00'
   source_available: true
 - id: ac8b481e603c6892
   filename: IMG_4035.png
@@ -77,9 +82,10 @@ attachments:
   sender: me
   sent_at: '2024-12-07T14:59:34.454656-06:00'
   sha256: 4da23eda0ab059e1dfa132173f006d86718e20c0376bd33c894d37212d99cc24
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A screenshot of currency exchange rates for USDJPY, GBPJPY, GBPUSD,
+    and NZDJPY.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:51.068934+00:00'
   source_available: true
 - id: 1896b329437a2df0
   filename: IMG_2088.png
@@ -88,9 +94,10 @@ attachments:
   sender: me
   sent_at: '2024-12-07T15:10:40.210190-06:00'
   sha256: 4641e7e92ac785059dec6147f74e7a2e18620b4a786c6d3d4112c0c348022501
-  description: null
-  description_model: null
-  extracted_at: null
+  description: AI search result explaining Inner Circle Trader (ICT) concepts like
+    liquidity and stop hunts.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:49.620150+00:00'
   source_available: true
 - id: c3eb2b3eade047ea
   filename: IMG_0752.png
@@ -99,9 +106,10 @@ attachments:
   sender: me
   sent_at: '2024-12-07T15:11:27.069952-06:00'
   sha256: 6720556b72a93985bb9a226fdd37394568b99429e286b9375e091f91d434259d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: USD/JPY candlestick chart showing a sharp crash below 144.991 and 141.889
+    support levels.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:54.281678+00:00'
   source_available: true
 - id: 8b3a92e2fa8f1963
   filename: IMG_0476.png
@@ -110,9 +118,10 @@ attachments:
   sender: me
   sent_at: '2024-12-07T15:12:25.229006-06:00'
   sha256: 7704051a9181024f28f1c3962730df887411f527c746b5c1202a31d41e200cd3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A financial candlestick chart showing a sharp price drop through horizontal
+    support levels.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:58.653598+00:00'
   source_available: true
 - id: c0fdfb7721bec9a4
   filename: IMG_8070.png
@@ -121,9 +130,10 @@ attachments:
   sender: me
   sent_at: '2024-12-07T15:14:46.697891-06:00'
   sha256: d11afdfac90a335c00e4284097573abbb56bbf86936ba41b53dda2152ea68c40
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Financial candlestick chart with support/resistance lines showing a
+    sharp price decline.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:54.274899+00:00'
   source_available: true
 - id: 22178a2253f057bc
   filename: IMG_3533.png
@@ -132,9 +142,10 @@ attachments:
   sender: me
   sent_at: '2024-12-07T15:15:03.339869-06:00'
   sha256: ef26f4a22446f5fec68023adf57523ec0615ac02f393da302038e416517fbacd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Daily USD/JPY candlestick chart with trendlines and support/resistance
+    zones.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:59.624471+00:00'
   source_available: true
 - id: e1a9ce3241d4d13f
   filename: 75486103633__F1E314E6-816F-4F31-88BF-A231B02F67AC.HEIC
@@ -143,9 +154,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-12-07T16:15:41.370013-06:00'
   sha256: 6660aa5a428528ec17469ae50be206375d1fe46f798c66ca998d82521f7f2319
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A monitor displaying a 5-minute USD/JPY chart with colored technical
+    analysis zones and levels.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:22.648866+00:00'
   source_available: true
 - id: 578c7ab2a357f72d
   filename: IMG_7709.PNG
@@ -154,9 +166,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-12-07T16:37:28.284994-06:00'
   sha256: 25bbbf1bf7a2a95b560f9605a4b604922208ffad69bd2e5faa23cb8d7f7c9a93
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile screenshot of a TradingView GBPJPY chart with active trade profit/loss
+    labels.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:53.439564+00:00'
   source_available: true
 - id: 1366ab3301caa057
   filename: IMG_6656.png
@@ -165,9 +178,10 @@ attachments:
   sender: me
   sent_at: '2024-12-07T17:25:25.362646-06:00'
   sha256: a58aacb7d15536eb89768f8c1784228eaac986fe15860cb51a47ca267b037f85
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Discord profile for "campfiresong" showing a membership date of April
+    24, 2016.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:00.231739+00:00'
   source_available: true
 - id: f59bfb70d7dfcbb9
   filename: IMG_4586.PNG
@@ -187,9 +201,10 @@ attachments:
   sender: me
   sent_at: '2024-12-07T19:37:39.887000-06:00'
   sha256: ff6ff5a552c1296c89d80d43c248741b9966165fbede569cb661c8a2270e3763
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a $35.00 payment from Adi Berkeley Checking to Amadeus
+    Renter.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:46.914844+00:00'
   source_available: true
 - id: 8aa43832fa22f037
   filename: IMG_7219.png
@@ -198,9 +213,10 @@ attachments:
   sender: me
   sent_at: '2024-12-08T04:54:19.336993-06:00'
   sha256: 56e90f9f7cf4285ed9e9aa04bc83f20963ba7d99f6703bc6e13edc13de5f945a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Text explaining why candlestick wicks define price highs and break
+    of structure (BOS).
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:09.900183+00:00'
   source_available: true
 - id: b55ec654103b8eba
   filename: IMG_1794.png
@@ -209,9 +225,10 @@ attachments:
   sender: me
   sent_at: '2024-12-08T17:42:24.768678-06:00'
   sha256: 9b48932fd5c7633e5542870b516ec5fe3f5bcb811063b6447e578f0c36beb3e2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Forex Market Time Zone Converter showing global trading sessions and
+    low Sunday trading volume.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:00.233987+00:00'
   source_available: true
 - id: 139369c731ff6b65
   filename: IMG_4604.PNG
@@ -220,9 +237,10 @@ attachments:
   sender: me
   sent_at: '2024-12-09T22:58:02.760000-06:00'
   sha256: c422dcf88dc1d07d70ea69cc087951e45a6221eedf9189f0d318d362d80fb81e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dark mode iPhone calendar view for December 9-10 showing events like
+    NY AI2WEB3 Bootcamp.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:02.331885+00:00'
   source_available: true
 - id: 4cbad69788e89530
   filename: IMG_4605.PNG
@@ -231,9 +249,10 @@ attachments:
   sender: me
   sent_at: '2024-12-09T22:58:19.378000-06:00'
   sha256: fb601ac76de2779503ec0652c043fc01c3c982ddc17eaa74b623cee0ff986f92
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dark-mode calendar screenshot with events for Dec 11-12 including "The
+    Game Awards."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:41.817842+00:00'
   source_available: true
 - id: 075821496dff2daf
   filename: 75549953909__EDCA4722-AAB1-41B6-B067-949D09DC4C8D.heic
@@ -242,9 +261,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-12-09T22:59:27.455372-06:00'
   sha256: b22c9920e430de4aad13942cfa381f16802043e491ff5c6e3554c7620f90be3e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: TradingView NZD/USD 1-hour candlestick chart with technical indicators
+    and a short position setup.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:36.758151+00:00'
   source_available: true
 - id: e4de24c9a7d65d22
   filename: IMG_1452.HEIC
@@ -286,9 +306,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-12-12T20:35:49.766516-06:00'
   sha256: 1b4ccb1a18637dc8da248241315175be7dfd7cbd1b56de949fcef1a17158b571
-  description: null
-  description_model: null
-  extracted_at: null
+  description: WhatsApp chat "Klein Rental Team" discussing room rentals and scheduling
+    showings.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:06.742705+00:00'
   source_available: true
 chat_message_guids_count: 296
 deleted_upstream: null

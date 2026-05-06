@@ -44,9 +44,10 @@ attachments:
   sender: noah-renter
   sent_at: '2025-01-24T15:19:58.259362-06:00'
   sha256: f86583ec421721d648e2352c2b21dfefdc2a8590146ad4ad005e5d942a9cfc6d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Cluttered bathroom featuring a toilet seat cover with a colorful cannabis
+    leaf design.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:15.253372+00:00'
   source_available: true
 chat_message_guids_count: 48
 deleted_upstream: null

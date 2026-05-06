@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-10T22:03:53.478000-05:00'
   sha256: 20dab57027530986db2045fb0b9bc18e61d0f810963b45dc64582290aeb9700f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dashboard metrics showing $87.46M liquidity, 7855 traders, and $7.65B
+    total volume.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:59.660100+00:00'
   source_available: true
 chat_message_guids_count: 23
 deleted_upstream: null

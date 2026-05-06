@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-01-25T23:22:07.700000-06:00'
   sha256: 1a497f42891985e255a25c6db6e8a4d508e7683766391ee4724132437563386e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Closet with hanging shirts on a rod, three red storage bins, and a
+    white laundry basket.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:37.056600+00:00'
   source_available: true
 chat_message_guids_count: 38
 deleted_upstream: null

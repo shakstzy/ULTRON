@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-26T22:42:39.624595-05:00'
   sha256: e548027f162c8d25855637104a8963433cb2d33665e0a506dd3b3a677429919d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hinge profile preview for Adithya, 23, who mentions producing for Doja
+    Cat and Tyga.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:04:50.618054+00:00'
   source_available: true
 chat_message_guids_count: 14
 deleted_upstream: null

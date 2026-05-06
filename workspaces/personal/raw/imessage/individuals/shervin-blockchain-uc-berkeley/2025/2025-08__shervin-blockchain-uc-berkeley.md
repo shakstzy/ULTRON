@@ -115,9 +115,9 @@ attachments:
   sender: me
   sent_at: '2025-08-16T15:04:27.884201-05:00'
   sha256: f7e47fa1438f4a97ff2fdee0912e2c63ad7d205d1aa8a8024b29aae4a68a516a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: OBS Studio 31.1.2 streaming settings window open on a macOS desktop.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:04:15.440566+00:00'
   source_available: true
 - id: 2868f80095400a23
   filename: my heart.m4a

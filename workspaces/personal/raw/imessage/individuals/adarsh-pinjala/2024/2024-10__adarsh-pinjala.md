@@ -22,9 +22,9 @@ attachments:
   sender: me
   sent_at: '2024-10-17T20:35:57.145423-05:00'
   sha256: 759cec6a267b025da6816d8ce473480a51f126a5df614a302ff91831cebd7525
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A hand holds a clear plastic cup filled with a frothy dark red beverage.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:50.803155+00:00'
   source_available: true
 - id: 6eb6f39bfc02e43b
   filename: IMG_3216.PNG

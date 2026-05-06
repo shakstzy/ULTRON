@@ -56,9 +56,10 @@ attachments:
   sender: david-bloom-the-house-fund
   sent_at: '2025-08-12T08:36:57.371477-05:00'
   sha256: 6e7583d7c8e739b81f16acf8fe419876852e273adef769d9c6243b5dd6b75db6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a calendar guest list for "Synapse <> House Fund" showing
+    nine invitees and RSVPs.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:20.382604+00:00'
   source_available: true
 - id: 6f626a3568c4cebc
   filename: IMG_7730.png
@@ -67,9 +68,9 @@ attachments:
   sender: me
   sent_at: '2025-08-12T10:12:58.121000-05:00'
   sha256: 4a9349bb9bc40c54eb4c5d52bb494cf7473d62f0542aa770bc66fe3e0f3ada29
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LinkedIn post announcing Mark Busalacchi as VP of Sales at Moonware.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:04:47.965108+00:00'
   source_available: true
 chat_message_guids_count: 88
 deleted_upstream: null

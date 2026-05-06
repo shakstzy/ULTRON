@@ -531,9 +531,10 @@ attachments:
   sender: me
   sent_at: '2026-04-29T05:34:13.993592-05:00'
   sha256: cff3e0df59c9ab17e0b3ccc26f80ea6ac3e0462cbe06e7ee7607d2e3ad0020f2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Close-up selfie of a man with a mustache and a woman pouting against
+    a dark background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:03:22.332311+00:00'
   source_available: true
 - id: bbe25db6b3594f60
   filename: IMG_4803.png

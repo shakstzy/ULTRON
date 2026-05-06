@@ -22,9 +22,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-11-03T16:58:38.382080-06:00'
   sha256: 3818eb88cf9c550f5ffa350f4f6876adc83022ede7e4d8bc6c6e7af16dc660f9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile trading app screenshot showing a $464.10 profit on a NZDUSD
+    sell position.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:40.308396+00:00'
   source_available: true
 - id: 935fecfe9f91dfe3
   filename: 75237219989__E89EA176-63BB-468F-851F-551B8AEDB018.heic
@@ -33,9 +34,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-11-03T18:16:46.753612-06:00'
   sha256: a1cfc9b91775c85ae5e613d58e08331ba4f6e5ef579c34b868c9e995a619f23d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Google Sheets trading journal showing trade columns and a #DIV/0!
+    win percentage error.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:42.761556+00:00'
   source_available: true
 chat_message_guids_count: 198
 deleted_upstream: null

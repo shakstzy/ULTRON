@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-03-22T11:51:06.581000-05:00'
   sha256: 2384837d8eff5c8fc2317a07f21d8f70e5b657ab49b811db7a9882cf6a634d68
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Texas Driver License for Adithya Shakthi Kumar at 12524 Enchanted Forest
+    Dr, Austin.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:35.536874+00:00'
   source_available: true
 chat_message_guids_count: 3
 deleted_upstream: null

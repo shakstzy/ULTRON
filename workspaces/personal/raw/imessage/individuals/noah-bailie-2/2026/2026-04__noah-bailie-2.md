@@ -110,9 +110,10 @@ attachments:
   sender: me
   sent_at: '2026-04-28T02:25:27.029000-05:00'
   sha256: 44560da9f2bc3ee335a94fd8603dad62acbfd1dbae74531ab5d6f00bdbbc2e01
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Animated woman in a blue blazer and light shirt stands profile-view
+    in a laboratory.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:20.557962+00:00'
   source_available: true
 - id: 12de929006750c37
   filename: IMG_6223.png
@@ -121,9 +122,10 @@ attachments:
   sender: me
   sent_at: '2026-04-28T02:25:36.998000-05:00'
   sha256: e0ed9210284bbd413cc2f2663f399379c1365bd0c1e207b2b32e76ff5a6c0095
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Animated balding man in a suit stands behind a rack of test tubes in
+    a science laboratory.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:45.327468+00:00'
   source_available: true
 - id: 9d7a7076cb56d8f8
   filename: 994D0800-701F-4C7D-BE80-40E5B231FA92.pluginPayloadAttachment
@@ -154,9 +156,10 @@ attachments:
   sender: me
   sent_at: '2026-04-30T02:44:23.932000-05:00'
   sha256: be9459a6c70946873635f58750921c83e7848bfd328f1700370a6ebf73d10444
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iOS contact card for Arya showing their location in Austin, TX and
+    phone number +1 737-226-2287.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:06.931241+00:00'
   source_available: true
 chat_message_guids_count: 141
 deleted_upstream: null

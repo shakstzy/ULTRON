@@ -34,9 +34,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-09-26T14:54:07.605834-05:00'
   sha256: e353630ba70f077b0a254181330322d9049d4e831c7f4d8dbf432d3666d5e9d8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: TV with red LED backlighting shows a 'SOW FROM HOME' interview call
+    beside snacks on a table.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:03:22.454230+00:00'
   source_available: true
 chat_message_guids_count: 5
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-12-05T13:39:25.448979-06:00'
   sha256: 9a31f4c1e5eb304ede42c5ab7badbbc18965725402d4693a18768e7404afee8a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A chat message from Adi stating "congrats on n1 announcement guys"
+    at 9:45 AM.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:29.144722+00:00'
   source_available: true
 chat_message_guids_count: 9
 deleted_upstream: null

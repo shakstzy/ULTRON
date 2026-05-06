@@ -22,9 +22,10 @@ attachments:
   sender: cris-renter
   sent_at: '2024-12-07T15:58:12.825594-06:00'
   sha256: e60c5326d43dbc4d5fa8d2ef8b7351e76d94ce863b6df33a08f857f6a8210405
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'iPhone Mail screenshot: email from Cristhian Urbina with a Document.pdf
+    attachment.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:11.445417+00:00'
   source_available: true
 - id: 06e686fafa1d2530
   filename: IMG_3994.heic
@@ -33,9 +34,10 @@ attachments:
   sender: cris-renter
   sent_at: '2024-12-07T15:59:27.886151-06:00'
   sha256: 48ec825090a25aa9eddb255b7e3bd27858a7ad760034f9c840041d31d9df0eb8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of three sent Gmail messages titled "Statements"
+    with PDF attachments.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:10.327126+00:00'
   source_available: true
 chat_message_guids_count: 47
 deleted_upstream: null

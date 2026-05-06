@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-15T17:58:32.531000-05:00'
   sha256: 0201152b4c738cd03d04222e7482f1b4d8576b69978371d019cb57424852052d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A white Lamborghini Diablo drives through a city street, filmed from
+    inside a car.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:50.645617+00:00'
   source_available: true
 - id: a3d34091e41ceb67
   filename: ips-484C83C2-4DCB-4E4B-B805-C997C510D0AD.MP4

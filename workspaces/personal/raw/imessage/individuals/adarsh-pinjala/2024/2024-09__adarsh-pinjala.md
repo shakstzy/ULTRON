@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-09-28T22:39:32.559428-05:00'
   sha256: 7f9184eb12dd7d582f02a0815ccf5f362db42f7f63549a77fc59e40c76f86817
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A green 12-pack box of Heineken slim cans featuring the brand's iconic
+    red star logo.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:55.565520+00:00'
   source_available: true
 chat_message_guids_count: 35
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-01-02T11:33:50.563238-06:00'
   sha256: 5f506eb56892ba6ab7266f3b86413b7359bb38b6bf50df51ec7d0ccdcc17f78b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Discord UI showing a 'TRADING' server's useful-links channel with forex
+    market tool links.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:11.995830+00:00'
   source_available: true
 - id: fd670aa61edf5a5d
   filename: IMG_7687.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-01-08T23:46:08.494565-06:00'
   sha256: cade455c3dd2d576db83b57aaec33edd1dc390153b4463926733d9fdd507b9b6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A 4-hour NZD/USD candlestick price chart on TradingView with a purple
+    50 EMA.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:10.764473+00:00'
   source_available: true
 - id: cc8ab60f6f7ba5c8
   filename: IMG_5268.png
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-01-08T23:47:17.993325-06:00'
   sha256: b0252364cb2ad263d7336e9480f7054606e917610bfebbd5b8e4ce23604940dd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Performance summary for NZD/USD Bar Replay showing +3.13 USD profit
+    and a 52.94% win rate.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:04.140077+00:00'
   source_available: true
 - id: a35f8ba2e86ad47f
   filename: IMG_4347.png
@@ -55,9 +58,10 @@ attachments:
   sender: me
   sent_at: '2025-01-23T15:37:32.402498-06:00'
   sha256: 202517d10c60e04cd49dae712be0417d3f161d84b284521adf86ddfacd364fa2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Flight #1658 itinerary: LAX (1:00 PM) to SFO (2:30 PM) on Monday,
+    January 27, 2025.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:13.971753+00:00'
   source_available: true
 - id: 15bcc8ac2fec74d2
   filename: IMG_7629.png
@@ -66,9 +70,10 @@ attachments:
   sender: me
   sent_at: '2025-01-23T15:39:26.642484-06:00'
   sha256: 205f9afbb4b7dbc95f215d1da8fb698139ec8fbb0b7d80ddd5980625cb164ea3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat between Noah and Evan Renter discussing bills, group
+    chat access, and money owed.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:16.557077+00:00'
   source_available: true
 - id: 5087786e677d8a6d
   filename: IMG_6218.png
@@ -77,9 +82,10 @@ attachments:
   sender: me
   sent_at: '2025-01-23T15:39:40.381179-06:00'
   sha256: b32c8c34622c6ef7e3811250fc6283a99882c063e94bcd72dc7c895e55dc42ee
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot discussing house cleaning scope and accountability
+    for a party mess.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:06.298363+00:00'
   source_available: true
 - id: 30796b9a1355368c
   filename: IMG_0337.png
@@ -88,9 +94,10 @@ attachments:
   sender: me
   sent_at: '2025-01-23T15:39:48.628957-06:00'
   sha256: 9c2befef232a6711c67ba55abdb33527ba9fb48f31429e5112595663e8b7cc27
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a dispute over house cleaning responsibilities
+    and lease terms.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:20.317475+00:00'
   source_available: true
 - id: 7963d9d4915fe3dd
   filename: IMG_5327.png
@@ -99,9 +106,10 @@ attachments:
   sender: me
   sent_at: '2025-01-23T15:40:04.876561-06:00'
   sha256: 29891d463260b56f8cc466d028ebc6f4c7974b6abe8412e7ad668396728fd5bf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a lease dispute with Evan regarding cleaning
+    and rent obligations.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:22.373859+00:00'
   source_available: true
 - id: ac13af388e104dc7
   filename: IMG_5326.png
@@ -110,9 +118,10 @@ attachments:
   sender: me
   sent_at: '2025-01-23T15:40:22.333289-06:00'
   sha256: 43a8363e871b7f0aed6f45c63193386e899b945f238a91e1d2a42abc2ac5691c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage with Evan Feldman about cleaning responsibilities after a
+    party and lease terms.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:13.473196+00:00'
   source_available: true
 - id: c623e49276deb8b9
   filename: IMG_2143.png
@@ -121,9 +130,10 @@ attachments:
   sender: me
   sent_at: '2025-01-23T15:50:40.192732-06:00'
   sha256: 6a238431878a0f1d4f8b7f73b807a9b221eabc1d36dc21ff1b96b1ad7c1b47c4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: American Airlines flight AA 1459 from Austin to Los Angeles on January
+    24, 2025, at 1:00 PM.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:08.629227+00:00'
   source_available: true
 - id: f75ebabc88e4a566
   filename: IMG_5344.PNG
@@ -132,9 +142,10 @@ attachments:
   sender: me
   sent_at: '2025-01-24T18:54:33.649000-06:00'
   sha256: 6d5dd1d5a57a2914774e320f7482ba8102efa7e436b389295aa915041a269c1d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of American Airlines flight AA1291 from Austin to Los Angeles
+    on January 24.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:53.093956+00:00'
   source_available: true
 - id: 98efc09397d19915
   filename: IMG_5358.PNG
@@ -143,9 +154,10 @@ attachments:
   sender: me
   sent_at: '2025-01-24T23:18:58.290000-06:00'
   sha256: 7fe591239a1368af8e199f35789cf3a717816d3fbb5a68d053cb5a0a961a577d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot showing FlyAway bus navigation from LAX to Van Nuys
+    Flyaway Terminal.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:27.341110+00:00'
   source_available: true
 chat_message_guids_count: 118
 deleted_upstream: null

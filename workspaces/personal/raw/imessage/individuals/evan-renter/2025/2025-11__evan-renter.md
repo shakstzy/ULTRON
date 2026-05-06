@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-11-05T21:37:29.596000-06:00'
   sha256: fa557234cbc450affcf630c7b0624dbe579a9c5daba5fde1c0249be609f68c3b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Lease terms: $100/mo utilities per tenant, $125 cap, and equal split
+    of excess costs.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:48.394981+00:00'
   source_available: true
 - id: 743716dd42aa03c9
   filename: IMG_8232.png
@@ -44,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2025-11-06T11:09:06.637824-06:00'
   sha256: f002cceae147630792c7f3492a15e882a12a67f337d1a56ec34bc26ea271cb0b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a dark-mode digital calendar showing scheduled meetings
+    and task blocks.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:49.844781+00:00'
   source_available: true
 - id: 8de17d6785b549cb
   filename: IMG_3108.PNG
@@ -77,9 +79,10 @@ attachments:
   sender: me
   sent_at: '2025-11-08T19:23:56.071334-06:00'
   sha256: ed8edebcc73e2e2221df449f7adce8b25e8a94512f05d8ff44269747fb61198b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Universal Audio RealVerb-Pro reverb plugin interface showing spectral
+    displays and controls.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:43.414974+00:00'
   source_available: true
 - id: 85d71ec915b544ef
   filename: IMG_5272.png
@@ -88,9 +91,10 @@ attachments:
   sender: me
   sent_at: '2025-11-09T18:42:27.195000-06:00'
   sha256: cc79cb5c6f30c4fba7c223ae91e0fdbf7ff779e5822c22e8f2f8a7b33a33cec0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Estimated delivery notification for a wire shelving unit on Wednesday,
+    Nov. 12.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:43.247983+00:00'
   source_available: true
 - id: 833418c80cb09bdc
   filename: "Screenshot 2025-11-16 at 8.06.31\u202FPM.png"

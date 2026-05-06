@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-11-25T15:58:11.190032-06:00'
   sha256: 3d14564596913223d3c1a5d4aa22197f9f431c2bdc98def4215f23df23323ab0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Randall Boggs, the purple, eight-limbed lizard monster from Monsters,
+    Inc., smirking.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:02.446836+00:00'
   source_available: true
 - id: 1fdbef6be8b463b9
   filename: IMG_0806.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2024-11-25T15:58:11.190032-06:00'
   sha256: d8516ce87f13644b92d3ef989dfde1cb1f3bb3c990ca5133345707d02f343d2b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling young man in a black suit, red bow tie, and gold chain standing
+    outdoors.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:31.205634+00:00'
   source_available: true
 - id: 76b6f825206210ee
   filename: IMG_7919.png
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2024-11-25T15:58:32.449492-06:00'
   sha256: bdfcda6dcc4ea113b0d0d1b12a3528b362df152b4f3a1bb487e98486fbc67653
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Adarsh Pinjala in a red polo shirt holding coffee outside a building
+    in San Ramon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:58.488859+00:00'
   source_available: true
 chat_message_guids_count: 12
 deleted_upstream: null

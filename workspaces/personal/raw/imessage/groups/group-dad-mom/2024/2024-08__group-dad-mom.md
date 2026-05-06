@@ -33,9 +33,9 @@ attachments:
   sender: me
   sent_at: '2024-08-29T23:05:45.539268-05:00'
   sha256: 48c58a1b7c918a5f76a54d41a3c8c2b09438a35a4ea3b8e80a961181e2476f95
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Large hole in a white textured drywall behind several black power cables.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:48.248413+00:00'
   source_available: true
 - id: a2686f6d046b8e8f
   filename: IMG_0198.PNG

@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2025-02-05T16:00:38.934000-06:00'
   sha256: 5d7d6a1f059d8026093a306584e6af35122637dde083c249af244da18d424c33
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Calendar invite for Ruby AI Happy Hour & Demo Night at Betaworks, NYC
+    on Feb 5.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:16.408600+00:00'
   source_available: true
 - id: 01d18bbc15df176a
   filename: 76111951890__B536F0CC-923F-4ED5-8468-B8F818A56CFB.HEIC
@@ -55,9 +56,10 @@ attachments:
   sender: me
   sent_at: '2025-02-13T00:17:43.406000-06:00'
   sha256: 630de6eb7b5debcb69aed3b850502e8bbeda0f4f01ecb26d9e634e8d71cc044d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple Maps screenshot of a route from Bedford Av station to 185 Wythe
+    Ave in Williamsburg.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:17.438717+00:00'
   source_available: true
 - id: d15e1d0eebb93d69
   filename: 76112060120__697F8623-C08B-405D-93B5-F04D719EAFD8.HEIC
@@ -99,9 +101,10 @@ attachments:
   sender: me
   sent_at: '2025-02-14T01:35:29.576000-06:00'
   sha256: d5b95e92c0951068a717eb5db269547400f0699c2db6f5b3c6d73eadce1c0528
-  description: null
-  description_model: null
-  extracted_at: null
+  description: NYC subway L train platform sign for Rockaway Pkwy and Canarsie with
+    a yellow edge.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:21.315090+00:00'
   source_available: true
 - id: 3cb290ed66890dcb
   filename: 76121174072__9C928BAE-CB02-4CB0-A1A7-2E22C893F74D.HEIC
@@ -110,9 +113,10 @@ attachments:
   sender: me
   sent_at: '2025-02-14T01:42:26.344000-06:00'
   sha256: ea94ba4eb1420dfd8b8deb9ce8b615936db1e06573957c20ddc9b6869ff194d8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Yellow riveted subway beam with a 14 Street sign against white wall
+    tiles.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:21.570824+00:00'
   source_available: true
 - id: 0d93da92cf8c8ed1
   filename: IMG_5666.PNG
@@ -121,9 +125,10 @@ attachments:
   sender: me
   sent_at: '2025-02-14T01:54:02.964000-06:00'
   sha256: 0b06663f8ef55a2101461b6aa42d637fd3ed73f8081ebf4929b397195f584046
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "Apple Maps screenshot showing a 4-minute walk to Herm\xE8s in Williamsburg,\
+    \ Brooklyn."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:37.660732+00:00'
   source_available: true
 chat_message_guids_count: 208
 deleted_upstream: null

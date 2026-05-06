@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-09-10T12:54:41.118179-05:00'
   sha256: 6a608f24dd13ab93d2f62bb4a1e912f98986ffd441e3bd1359259e91ae0ac703
-  description: null
-  description_model: null
-  extracted_at: null
+  description: White stucco window frame and mesh screen with a small sliding pet
+    door in the bottom corner.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:04:58.899697+00:00'
   source_available: true
 - id: 4da3abf32d89ff01
   filename: IMG_5494.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-09-22T18:07:16.761000-05:00'
   sha256: 39482e1e150c3d903005b035bc7a8dd22ab1c1f35b4da351529042052f76f84e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of an AI tool showing a "Study" feature tooltip for step-by-step
+    learning.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:10.291538+00:00'
   source_available: true
 - id: 5f7920054d25d55b
   filename: IMG_1818.PNG
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-09-26T03:05:45.753441-05:00'
   sha256: dd246666955bfbf4f9fd1efb59dba8284c3bb730f018606e9fe405ea36f9c6bc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Taco Bell order tracker screenshot for a Veggie Mexican Pizza at 1968
+    Glen Oaks Blvd.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:29.772254+00:00'
   source_available: true
 - id: aef736bac7d1580b
   filename: IMG_1825.png

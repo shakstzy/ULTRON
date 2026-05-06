@@ -22,9 +22,11 @@ attachments:
   sender: me
   sent_at: '2025-12-17T00:53:34.695000-06:00'
   sha256: 4dddea155e1f79ccc7c554de7de3883faf6f410e26cb5fd2939fea798265656e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a Los Angeles Superior Court orientation form for new California
+    state employees. It contains the official Oath of Allegiance and a work permission
+    declaration for non-citizens.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:52.477723+00:00'
   source_available: true
 - id: 3c317325ca79daf5
   filename: IMG_7154.heic
@@ -33,9 +35,10 @@ attachments:
   sender: me
   sent_at: '2025-12-29T19:40:43.123000-06:00'
   sha256: 5e7ad11cceff17e87cb388b957da770464833f9d4b94702504a038bf41724130
-  description: null
-  description_model: null
-  extracted_at: null
+  description: HDX 20x30x1 FPR 5 MERV 8 pleated furnace air filter 3-pack listing
+    for $14.27.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:43.756136+00:00'
   source_available: true
 - id: 4cb216f2ab7e11a9
   filename: IMG_9870.heic
@@ -44,9 +47,9 @@ attachments:
   sender: me
   sent_at: '2025-12-29T19:43:33.913000-06:00'
   sha256: 381b78b6971d16c5084079d3a141b6078bc01374ec1bbd2fa4d9a3bf8da0b411
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'San Fernando Store inventory status: 6 in stock at Aisle 14, Bay 018.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:57.557641+00:00'
   source_available: true
 - id: 92004ab9e1e5d782
   filename: IMG_4282.png
@@ -55,9 +58,10 @@ attachments:
   sender: me
   sent_at: '2025-12-29T19:43:50.644000-06:00'
   sha256: 99c38af1a09ea23b87e8f12d8ce0fe7eafac871582a8f5a65c8217703aad7221
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Chat screenshot requesting Home Depot air filters that require ID and
+    last 3-6 months.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:22.951864+00:00'
   source_available: true
 chat_message_guids_count: 21
 deleted_upstream: null

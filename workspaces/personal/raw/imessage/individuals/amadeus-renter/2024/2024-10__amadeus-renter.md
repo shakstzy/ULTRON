@@ -33,9 +33,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-10-06T22:41:18.272408-05:00'
   sha256: c4c37fb9de0e2d8f0cc2ad2a30ab189b4c28905f5086df76c77a008400afb20a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: MetaTrader screenshot showing 5,572.76 profit from three USDJPY sell
+    trades.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:20.681226+00:00'
   source_available: true
 - id: b6c33f8d13d1248f
   filename: IMG_1014.jpg
@@ -55,9 +56,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-10-13T21:56:47.379765-05:00'
   sha256: 04204c01cddd9902e4e6db9599ac5ba093c76787577283e816be11c96b8fc094
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram QR code for 'AMADEUS' featuring a teal 'A' icon and a black
+    doodle background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:21.962522+00:00'
   source_available: true
 - id: 08fcc97a722a52a6
   filename: IMG_3349.PNG
@@ -77,9 +79,10 @@ attachments:
   sender: me
   sent_at: '2024-10-21T18:34:53.442442-05:00'
   sha256: efa53dec22d3e078ad49e9e05233e9a432ee79ff96c295be962df9aab09396fa
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Maps transit directions for the FlyAway bus from LAX to Van
+    Nuys.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:13.615616+00:00'
   source_available: true
 - id: 210bfc78a9af6a47
   filename: IMG_3371.PNG
@@ -88,9 +91,10 @@ attachments:
   sender: me
   sent_at: '2024-10-21T18:54:09.837446-05:00'
   sha256: 9255c7ee7d3cb58cb254de29acebff28c7bb19dd1bab014c13d79d9fb746d118
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of transit directions for a FlyAway bus from LAX to Van
+    Nuys costing $9.75.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:31.205444+00:00'
   source_available: true
 - id: 12fbe0ede1214f8c
   filename: IMG_1151.PNG
@@ -99,9 +103,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-10-21T23:34:42.844995-05:00'
   sha256: 692ef31fb5fb12b3cbc1bd5e7190997baee7d3aac0bbbc206fe0d6f6406bc618
-  description: null
-  description_model: null
-  extracted_at: null
+  description: MetaTrader app screenshot showing a 1,550.67 profit from a GBPJPY forex
+    trade.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:26.285127+00:00'
   source_available: true
 - id: 923432c71217bbcb
   filename: IMG_1158.PNG
@@ -110,9 +115,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-10-24T01:04:34.910410-05:00'
   sha256: e91c9215170e2b3765e285f1f0d7824135907814135c728b01d1ec400e07edef
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Trading app screenshot showing a GBPJPY buy position with 1,613.38
+    USD profit.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:17.155945+00:00'
   source_available: true
 - id: a582323bc5c8d8f7
   filename: 75175217297__8B0F44AB-E7B8-4569-98C9-90E9226F90D0.HEIC

@@ -34,9 +34,9 @@ attachments:
   sender: me
   sent_at: '2026-03-18T19:14:02.868197-05:00'
   sha256: 2b987c39ea14ea4edeaf458566227daf24805447e51bd86221f30b191626fa79
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Adam Cai and Adithya smiling with a woman at an indoor gathering.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:03:42.010844+00:00'
   source_available: true
 chat_message_guids_count: 10
 deleted_upstream: null

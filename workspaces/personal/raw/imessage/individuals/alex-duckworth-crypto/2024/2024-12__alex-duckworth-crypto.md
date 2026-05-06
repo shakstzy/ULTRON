@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-12-13T02:04:48.436745-06:00'
   sha256: ae9f49e919df282e6fd5f9b3de320d3b9d60830fd5c6d5735b505287f60499e3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: GBP/JPY 15m candlestick chart showing supply/demand zones and a short
+    position trade setup.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:33.184656+00:00'
   source_available: true
 - id: 7300313edd74c4ad
   filename: IMG_3748.png

@@ -33,9 +33,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-02-24T20:20:06.079314-06:00'
   sha256: afe139d9adc0f6605a6ffcd7ba9f1ac6db493d8debc7f125ac1e94dca59e4918
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Standard ticket for Shervin Beyk for The Ethereum Ball at Meow Wolf
+    with a QR code.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:04:50.094168+00:00'
   source_available: true
 - id: 48e00cede08a0884
   filename: IMG_4954.png

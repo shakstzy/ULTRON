@@ -22,9 +22,10 @@ attachments:
   sender: will-avery-crypto
   sent_at: '2026-01-07T20:41:22.900554-06:00'
   sha256: 69811da10c0e1b818b22fe6ad0785c788edaa3cffe4aec3e8a9cde69f8ee066e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage with Darren confirming access to Trump Junior's fund via a
+    CTO named Nick.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:00.636199+00:00'
   source_available: true
 - id: 4d562bc0e9c95261
   filename: IMG_8739.png
@@ -55,9 +56,10 @@ attachments:
   sender: will-avery-crypto
   sent_at: '2026-01-28T15:36:10.718834-06:00'
   sha256: 30bcb356432703e3aa8ba3830fa62457943c4d14f844c8ef8d7e67e8b9c9dc4d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage with Darren about Shopify deductions and $30k legal fees for
+    a partnership strategy.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:13.842747+00:00'
   source_available: true
 chat_message_guids_count: 78
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: kareem-koujah-uc-berkeley
   sent_at: '2024-05-22T14:14:38.314653-05:00'
   sha256: 57a78476ab3b3090cd8146f08ccaee26d8bf871704ac8aa9e2da007557d43c4f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram post for the UC Berkeley AI Hackathon on June 22-23, 2024
+    at MLK Student Union.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:11.989798+00:00'
   source_available: true
 chat_message_guids_count: 1
 deleted_upstream: null

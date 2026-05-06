@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-11-04T21:15:09.456142-06:00'
   sha256: 2e5d6087b23eb07977e687fcce154265e790ea698d641947e352d5458d157785
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Airport passenger loading zone at night with cars parked and signs
+    for rental car returns.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:48.960501+00:00'
   source_available: true
 - id: ca8c4cd205684a1f
   filename: IMG_3083.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-11-04T22:09:41.329555-06:00'
   sha256: aceecf49a7e4d223cdb7873d5ea922b4268dc552103ddfc5fa935d97780e3f22
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram post announcing Zohran Mamdani as New York City's first Muslim
+    mayor.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:56.961890+00:00'
   source_available: true
 - id: ef0bcd70ea2c8959
   filename: "Screenshot 2025-11-07 at 1.38.38\u202FPM.png"
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-11-07T15:38:49.562000-06:00'
   sha256: 76a7e902bc3cd3ab3be55d27a617c8b1c1de74e19151c9eb4901ae20c938b0cc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Zelle payment review screen for $187.50 from Adi Berkeley Checking
+    to AML SERVICE.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:25.338528+00:00'
   source_available: true
 - id: 416d5fd73474f3a9
   filename: "Screenshot 2025-11-07 at 1.39.09\u202FPM.png"
@@ -55,9 +58,10 @@ attachments:
   sender: me
   sent_at: '2025-11-07T15:39:17.011000-06:00'
   sha256: d04801b949583df5ac979f760a6f7ea3486aacef8b144878b3db15bca869e776
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile screenshot confirming a $187.50 payment from Adi Berkeley Checking
+    to AML SERVICE.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:42.416239+00:00'
   source_available: true
 - id: 7d453b54efacda40
   filename: IMG_3300.png
@@ -66,9 +70,10 @@ attachments:
   sender: me
   sent_at: '2025-11-09T22:47:08.484000-06:00'
   sha256: ffc8d9d0bfa41305bab122174737eb9bc696ba071290ddf2541871b051e76714
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A "Sylmar Garden" status screen displaying a "Device Offline" message
+    and a warning icon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:06.320403+00:00'
   source_available: true
 - id: 3ddc275978a3fcdf
   filename: IMG_5001.png
@@ -88,9 +93,10 @@ attachments:
   sender: me
   sent_at: '2025-11-10T15:42:08.033237-06:00'
   sha256: 6fd9dc867341fa59ff5d6500ad901be37b2f939b68008516a86bc5fb10fd7d7d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Chat coordinating Apple Northridge pickup for Amadeus Vera with order
+    #W1375050927.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:33.253438+00:00'
   source_available: true
 - id: 4e704706ef6c54fa
   filename: IMG_3845.heic
@@ -99,9 +105,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2025-11-14T17:52:56.490113-06:00'
   sha256: 36d198caaa037391a8f794af86cf5a37b4eca4954099572b92322feaf5c05aa8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: FedEx "We missed you" door tag DT1072 7149 8911 with "Adithya" handwritten
+    on it.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:46.027057+00:00'
   source_available: true
 chat_message_guids_count: 62
 deleted_upstream: null

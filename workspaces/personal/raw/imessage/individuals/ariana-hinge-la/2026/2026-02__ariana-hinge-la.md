@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T20:22:52.673000-06:00'
   sha256: 0f009995efe44a3eb3a79a25fad451ca591a11b851d571ddb8b224dd3caff9d6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of Adithya's Hinge dating profile showing photos and personality
+    prompts.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:40.248238+00:00'
   source_available: true
 - id: 714a0ab950aaa8ee
   filename: IMG_6084.JPG
@@ -44,9 +45,10 @@ attachments:
   sender: ariana-hinge-la
   sent_at: '2026-02-21T20:40:26.650766-06:00'
   sha256: 9a5d6bbdf67c7ee36a204bd3032ab58bc390adcf052f04c501e2fa1e168f2fc9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mirror selfie of a Black woman in glasses, a black tank top, and "BIG
+    DOGS" sweatpants.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:38.125306+00:00'
   source_available: true
 - id: 4f042b8e8a2b0a9a
   filename: IMG_6794.JPG
@@ -55,9 +57,10 @@ attachments:
   sender: ariana-hinge-la
   sent_at: '2026-02-21T20:40:26.650766-06:00'
   sha256: e0f0b388729689381d1bf28ba39ccb5de1ba667ad86e393269f0a929faf2b0ee
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mirror selfie of a person in a navy hoodie and grey sweatpants, holding
+    a purple phone.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:33.888880+00:00'
   source_available: true
 - id: 669815c3424b6304
   filename: IMG_8983.jpeg
@@ -66,9 +69,10 @@ attachments:
   sender: ariana-hinge-la
   sent_at: '2026-02-21T20:40:26.650766-06:00'
   sha256: e5f2f59d3d1cf3d556ab22965fbb8405a4fac62f5fa9105fd666bab1121df20a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down close-up of a person with vibrant magenta hair and dark
+    eyeliner.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:45.414101+00:00'
   source_available: true
 - id: 21b3a62890a164da
   filename: IMG_6682.JPG

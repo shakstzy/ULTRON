@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-01-08T08:58:18.364952-06:00'
   sha256: 4c72c347751342538eb62196a1dba88fe259e79f24ad71b17e1e2a0d119c3566
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mom's message to tenants about rent obligations for an early lease
+    termination on December 7th.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:41.214230+00:00'
   source_available: true
 - id: 289795161b6bd363
   filename: IMG_5328.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-01-22T19:58:01.847000-06:00'
   sha256: b2930fafa301708dddec460f27ee479637ae13399e2ddd2e4c0985189c3be12a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage thread with Evan Feldman discussing cleaning a stove, microwave,
+    and "egg cabinet."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:42.448607+00:00'
   source_available: true
 - id: f84507e37885463d
   filename: IMG_5327.PNG
@@ -44,9 +46,9 @@ attachments:
   sender: me
   sent_at: '2025-01-22T19:58:01.847000-06:00'
   sha256: c5ff8241cc96542329eb59a851515027d2afaa0893703fbb53bd289c1b2504ae
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage dispute with Evan Feldman over lease terms and cleaning requirements.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:05.803057+00:00'
   source_available: true
 - id: 30961afa19d991d8
   filename: IMG_5326.PNG
@@ -55,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2025-01-22T19:58:01.847000-06:00'
   sha256: 818e7b4b750dd8a4c24f6c773a7ca233f8b65b78e5412e9b72a5fe88fcfb14e3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a dispute with Evan Feldman regarding house
+    cleaning and lease terms.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:21.490559+00:00'
   source_available: true
 - id: 8b20f642c8a2e9f1
   filename: IMG_3418.png
@@ -77,9 +80,10 @@ attachments:
   sender: noah-renter
   sent_at: '2025-01-24T13:10:13.304664-06:00'
   sha256: b64b7cc7f11273d1805647b4b2f97842be4c70b2687e651660b7b9fde0de3590
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a text to Noah stating a $275 charge for a deep
+    house cleaning.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:52.553083+00:00'
   source_available: true
 - id: e683eead346938fb
   filename: image_1.JPG
@@ -88,9 +92,10 @@ attachments:
   sender: noah-renter
   sent_at: '2025-01-24T16:20:52.954363-06:00'
   sha256: f86583ec421721d648e2352c2b21dfefdc2a8590146ad4ad005e5d942a9cfc6d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Cluttered bathroom featuring a toilet seat cover with a colorful cannabis
+    leaf design.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:07:15.253372+00:00'
   source_available: true
 - id: 3088ea2a4fbf9900
   filename: IMG_1199.PNG
@@ -99,9 +104,10 @@ attachments:
   sender: noah-renter
   sent_at: '2025-01-24T16:20:52.954363-06:00'
   sha256: 871b7e6a13bf5f12013a7d1d464dbf86362d7593657973eba579d767ee282f88
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a messy bathroom and a text about cleaning the
+    entire house.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:55.939023+00:00'
   source_available: true
 - id: aa1ebc19073152be
   filename: image_0.JPG

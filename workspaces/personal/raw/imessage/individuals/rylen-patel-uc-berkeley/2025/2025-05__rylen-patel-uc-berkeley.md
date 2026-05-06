@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-05-09T23:15:19.034311-05:00'
   sha256: 6573aeb2d8d97753daa50bf0b0d9fa78767418d716eadd3745ebbf62813270d6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google search screenshot showing EthCC8 dates in Cannes for June 30
+    - July 3, 2025.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:05:01.518139+00:00'
   source_available: true
 chat_message_guids_count: 7
 deleted_upstream: null

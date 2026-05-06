@@ -22,9 +22,10 @@ attachments:
   sender: varun-houston
   sent_at: '2025-04-10T20:53:27.673034-05:00'
   sha256: ddde4ebb03f88619b30af0c287514fadc54b890aa7de40b28dd5d5877d5c95b6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Satellite map of 3719 Elgin St in Houston with Milby Street circled
+    in white.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:34.005440+00:00'
   source_available: true
 - id: 2f58b87faf96f910
   filename: IMG_7839.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-04-24T09:28:40.898576-05:00'
   sha256: 606fb58a7d8b7280aa7ab167eb0e92f74d332a19131db3c072f41eb0696aa422
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple Maps screenshot of a 9-minute driving route to 3719 Elgin St
+    in Houston.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:42.000106+00:00'
   source_available: true
 - id: 22a0c8ec3d2a1ecb
   filename: IMG_8023.HEIC
@@ -55,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2025-04-24T16:54:04.076958-05:00'
   sha256: 70f89633aa4161fd7c667180b36ef3c90628791f028741026a5b31fd4272b189
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men taking a selfie on a street with a blue house and a red-patterned
+    building behind them.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:06:35.655110+00:00'
   source_available: true
 chat_message_guids_count: 31
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-02-19T20:13:32.477206-06:00'
   sha256: 81885b3d2f7f51d8dddd5432916dd903bcd883c259e933875f6902d92fba1983
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A trainer assists an athlete on a biofeedback leg machine in a mobile
+    workout trailer.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:19.288109+00:00'
   source_available: true
 - id: b0658d1d40a0ca7e
   filename: CarlySmithResume.pdf

@@ -93,9 +93,10 @@ attachments:
   sender: me
   sent_at: '2025-06-20T23:58:58.010000-05:00'
   sha256: 272ec69cb45332a5f4a3efe1bf835bbd5c211c9c24b767bc1134860c70e76c9f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of Google Maps showing the Moxy NYC Lower East Side
+    hotel.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:55.468857+00:00'
   source_available: true
 - id: 7e86d6e36c121029
   filename: Google Image Result.heic

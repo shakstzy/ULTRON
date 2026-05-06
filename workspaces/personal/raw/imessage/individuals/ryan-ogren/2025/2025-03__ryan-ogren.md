@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-03-04T11:15:55.136698-06:00'
   sha256: 3bcdab4618d3be00d70d40b2c40bea44cb425394edab72be6f7746ba3d26e01a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'iMessage screenshot: a text to Larry checking in on a contract status
+    from Feb 16.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:53.766242+00:00'
   source_available: true
 - id: 6e46a83cb131938a
   filename: IMG_3670.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-03-11T14:08:20.939209-05:00'
   sha256: fbeab62ab3a72565beea20cbdbfc7c65bdc9a57f1a162833ee8ba5dcc5878b1f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of contract negotiations with Larry regarding admin
+    rights and redlines.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:33.207894+00:00'
   source_available: true
 chat_message_guids_count: 23
 deleted_upstream: null

@@ -69,9 +69,10 @@ attachments:
   sender: me
   sent_at: '2025-12-24T18:06:08.074300-06:00'
   sha256: 0267305fc14bed6bbe39e3a723ca676ffc71a62831c0cdaa9be36c102701d703
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a suit and sunglasses sings while riding an orange BMX bike
+    down a city street.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:18.154434+00:00'
   source_available: true
 - id: e25d45abe0efa0bc
   filename: PNG image.png
@@ -80,9 +81,10 @@ attachments:
   sender: me
   sent_at: '2025-12-24T18:06:08.074300-06:00'
   sha256: de7fbc3cff875c32f1e29e41790ce292e2772bb5e38642039737d3becfd262d9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a tracksuit sits before a white studio backdrop flanked by
+    large photography lights.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:03.438581+00:00'
   source_available: true
 - id: 54e354b4853e765a
   filename: MPEG-4 movie.mov
@@ -124,9 +126,10 @@ attachments:
   sender: me
   sent_at: '2025-12-24T22:36:53.256208-06:00'
   sha256: 4f9bce7b6b92f81cbda795fac9a71bf4928f824d1506b8a30b08754845b7e7fb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a fur coat and green suit leans on a purple car in a tropical
+    jungle.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:07.075551+00:00'
   source_available: true
 - id: 003be018de29d272
   filename: a3ea800b-ada2-4952-9503-3d4b96fc95d3.png
@@ -135,9 +138,10 @@ attachments:
   sender: me
   sent_at: '2025-12-24T22:37:30.419650-06:00'
   sha256: 3281058fdf11ce9c6683c86c783bf29cd008a1d2ad7e6fbc2452e7a59381c797
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a fur coat and green suit leans on a purple Cadillac in a misty,
+    flower-covered jungle.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:30.309475+00:00'
   source_available: true
 - id: cf3a4c4fca3b411c
   filename: f880025c-fcfb-4d50-bd33-06577b2d6bf8.png
@@ -157,9 +161,10 @@ attachments:
   sender: me
   sent_at: '2025-12-24T22:47:31.059904-06:00'
   sha256: 950fcbcdecb6f6515a35f59ca02e25ba5963451da5198dddb279328a4a5debd1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man with a mustache and sunglasses wearing a fur collar and green
+    suit sings in a jungle setting.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:14.703408+00:00'
   source_available: true
 - id: b93f922a1e0fadda
   filename: MPEG-4 movie.mov
@@ -168,9 +173,10 @@ attachments:
   sender: me
   sent_at: '2025-12-24T22:56:34.539174-06:00'
   sha256: 0b76484d8a03b49c7a86a8dc16a62b86aacb161f272dd1dab01a7656c3d32d4b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in sunglasses and a fur collar sings a song in a lush, tropical
+    garden.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:27.568196+00:00'
   source_available: true
 - id: 8cc50d4351f6780a
   filename: MPEG-4 movie.mov
@@ -179,9 +185,10 @@ attachments:
   sender: me
   sent_at: '2025-12-24T23:08:14.990310-06:00'
   sha256: 931d4d2cffd6f680dd85e904155f0a4f9d49c6481e10bf5c2e5f7c8d8d1d7a73
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in fur coat and sunglasses performs beside a purple car in a lush
+    jungle archway.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:31.103022+00:00'
   source_available: true
 - id: d9773e9a1452c1d7
   filename: IMG_6231.png
@@ -224,9 +231,10 @@ attachments:
   sender: me
   sent_at: '2025-12-25T01:25:25.661365-06:00'
   sha256: 1eec351061cd73279612df4dbd6667f4e2b51ea73ba7b7bc2f6d4d0368a6e063
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a suit leans forward over orange bicycle handlebars with an
+    intense gaze.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:38.293417+00:00'
   source_available: true
 - id: eeec8dd11dcf2356
   filename: IMG_0942.png
@@ -246,9 +254,10 @@ attachments:
   sender: me
   sent_at: '2025-12-25T01:25:49.704669-06:00'
   sha256: 1c51c7880521563b0d7a78bdbf5793c536a65bb27c2556b50144c5b9f9923c92
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Bearded man in Louis Vuitton bandana and vest reaches toward the camera
+    in a desert.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:43.014581+00:00'
   source_available: true
 - id: 98771f29f76fd633
   filename: IMG_0151.png
@@ -268,9 +277,10 @@ attachments:
   sender: me
   sent_at: '2025-12-25T01:26:11.956483-06:00'
   sha256: 2d19cf3f0081a1bb6393758b5aae971e43233d81d39786597093b9a401ec91a1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men in fur-trimmed winter coats covered in snow against a neon
+    city backdrop.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:56.028622+00:00'
   source_available: true
 - id: d640a29305f0ee00
   filename: IMG_2654.png
@@ -279,9 +289,10 @@ attachments:
   sender: me
   sent_at: '2025-12-25T01:26:20.454398-06:00'
   sha256: c4a8076f793cc7d39853f98c60caca00e8c3982ddfa5a41765b9781dd167d6eb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men in fur coats squat in snow before glowing curved skyscrapers
+    during a night snowfall.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:56.319335+00:00'
   source_available: true
 - id: 7a1fb29913d09a19
   filename: IMG_0509.png

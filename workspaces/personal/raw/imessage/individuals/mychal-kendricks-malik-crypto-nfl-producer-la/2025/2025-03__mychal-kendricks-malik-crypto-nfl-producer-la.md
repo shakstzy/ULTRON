@@ -248,9 +248,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-03-27T04:34:09.116057-05:00'
   sha256: 38cf99acc5f375ff95a249a9c9fb92a7e969c95336c18a1a2270f40cddc3b3ea
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person in a green shirt uses a MedX lumbar extension machine in a
+    physical therapy clinic.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:22.987746+00:00'
   source_available: true
 - id: c7bf97a52aa4ceb4
   filename: IMG_1742.heic

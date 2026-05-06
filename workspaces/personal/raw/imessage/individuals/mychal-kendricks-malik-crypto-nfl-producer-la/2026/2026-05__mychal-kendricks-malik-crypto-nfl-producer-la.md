@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-05-01T16:10:16.597787-05:00'
   sha256: da21ec732182d5f1bbcd821dbb80684c836b702a9c0ece7466bb79729d963c9b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Selfie of a smiling man with a German Shepherd by a pool and house
+    with solar panels.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:40.157942+00:00'
   source_available: true
 - id: c5a66a60156e5a42
   filename: IMG_0968.png

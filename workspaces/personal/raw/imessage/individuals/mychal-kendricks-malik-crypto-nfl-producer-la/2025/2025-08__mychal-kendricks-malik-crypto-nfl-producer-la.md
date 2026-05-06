@@ -46,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-08-19T04:52:19.798000-05:00'
   sha256: 9b9f6a4d896d6c27050fea347744ad075014edf948a7f468a9de9d4b2b3de5ff
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a white hat and black vest stands on a golf green with several
+    balls.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:00.500154+00:00'
   source_available: true
 - id: 650de0fea26e5acf
   filename: IMG_1137.JPG
@@ -187,9 +188,10 @@ attachments:
   sender: me
   sent_at: '2025-08-30T08:22:17.295648-05:00'
   sha256: 5d42f9cce8a26ce62ec35e4b8d315d4641dc20d01219f08ca4eb792916c738f9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Demo of Synapse Web3 platform automating a BTC buy task and verifying
+    it on Base Scan.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:15.627851+00:00'
   source_available: true
 chat_message_guids_count: 87
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-10-07T20:42:19.570664-05:00'
   sha256: 44b1c325699165a920242e11dc0e07b11742161d5fa917f9beb60990e3439ef8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of sent texts to Larry regarding an RX response
+    and scheduling a chat.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:12.732423+00:00'
   source_available: true
 - id: 26244c2a61940b0c
   filename: midnight at the villa.wav

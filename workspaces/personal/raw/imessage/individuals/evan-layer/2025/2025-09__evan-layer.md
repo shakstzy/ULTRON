@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-09-05T21:04:00.514000-05:00'
   sha256: 5d42f9cce8a26ce62ec35e4b8d315d4641dc20d01219f08ca4eb792916c738f9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Demo of Synapse Web3 platform automating a BTC buy task and verifying
+    it on Base Scan.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:15.627851+00:00'
   source_available: true
 chat_message_guids_count: 13
 deleted_upstream: null

@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2024-12-17T00:40:18.924000-06:00'
   sha256: f78ecc59ae4fc5c788c50b01368b5f5467a62267f1bd5ab44dbcc03cbef1cb3d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Gmail screenshot of an email from Larry Katz about an Amigo/Prescription
+    agreement breach.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:54.094581+00:00'
   source_available: true
 - id: 73651843025279e0
   filename: IMG_9874.png
@@ -55,9 +56,10 @@ attachments:
   sender: me
   sent_at: '2024-12-17T13:51:38.915915-06:00'
   sha256: 6e91deac17a5a942306bb20f32dce35e55a3920fcb2afff14e874d316b738fd4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of messages negotiating publishing agreement advances and
+    a $1,750 attorney fee.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:21.977308+00:00'
   source_available: true
 - id: 4e1ef8caa9565c14
   filename: IMG_6549.png
@@ -66,9 +68,9 @@ attachments:
   sender: me
   sent_at: '2024-12-17T16:23:12.517499-06:00'
   sha256: 5be8f9ecaf9d04ef4d99e178236f1690f653f65312d71f54f9624e8bed99b490
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot detailing song earnings recoupment at a 75% rate.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:25.268700+00:00'
   source_available: true
 - id: f2edb4f80d9adc86
   filename: IMG_6623.png
@@ -77,9 +79,10 @@ attachments:
   sender: me
   sent_at: '2024-12-19T10:28:40.283927-06:00'
   sha256: 07530f732948568e1aa8dd9d4a1bbd55ba0fabb9c511339947590c8fb1c2ee7e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage conversation discussing whether to negotiate or sign a 'pub
+    deal'.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:42.029659+00:00'
   source_available: true
 chat_message_guids_count: 86
 deleted_upstream: null

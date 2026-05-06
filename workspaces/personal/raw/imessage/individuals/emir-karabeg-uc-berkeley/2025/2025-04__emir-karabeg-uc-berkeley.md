@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-04-29T12:33:02.870461-05:00'
   sha256: a7b6a0aeb4c0c6b971fbc0f7a41dfd4a27c7cf4d0ee05e7dcac365d660628dbe
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men record a nighttime selfie video in front of a tall, illuminated
+    geometric tower.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:33.684121+00:00'
   source_available: true
 chat_message_guids_count: 2
 deleted_upstream: null

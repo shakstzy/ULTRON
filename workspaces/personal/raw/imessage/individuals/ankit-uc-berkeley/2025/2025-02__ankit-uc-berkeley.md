@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-02-11T20:43:11.895000-06:00'
   sha256: 961a61d9cc69d0fce9a4c57d4ed0c4e41932b733b8dad6301b5640adb39368ed
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down selfie of two smiling men in a dimly lit bar with rows
+    of liquor bottles.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:18.739959+00:00'
   source_available: true
 chat_message_guids_count: 9
 deleted_upstream: null

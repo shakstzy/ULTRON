@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-12-01T01:38:06.503959-06:00'
   sha256: 3f87f71e901f1337eb590e05fa46ecf3c61a578608e9fb458ca86c02bc315972
-  description: null
-  description_model: null
-  extracted_at: null
+  description: DIY electronics with red/green buttons in 3D-printed boxes inside a
+    clear plastic container.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:42.056018+00:00'
   source_available: true
 - id: 9979eda2231fd9bd
   filename: PXL_20201224_031558577.PORTRAIT.jpeg
@@ -66,9 +67,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-12-02T18:24:44.926603-06:00'
   sha256: ba1b12904923e3795fb1bbd33cd604bd85a8850fe75184f11bb962c07ee6cb28
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'iMessage screenshot: Eugen and Avery discuss a side letter and schedule
+    a prototype meeting.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:34.847214+00:00'
   source_available: true
 - id: db735cd90041c7b1
   filename: IMG_2154.png
@@ -99,9 +101,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-12-04T18:04:32.580111-06:00'
   sha256: dda71603c50f7db8bb8ec33ef7150143ee12696f8028ecb388bb9cc56458b342
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Cross-section of the Seedbox v2.0 microfluidic digital holographic
+    microscope.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:51.920151+00:00'
   source_available: true
 - id: 8c5a82a3ea767a33
   filename: IMG_3846.png
@@ -110,9 +113,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-12-04T18:12:21.129638-06:00'
   sha256: 350e03b2ad066871187ea889a12c5535288603c2b8becad51e06d5e29013e28b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Labeled cross-section of the Seedbox v2.0 LF-DHM digital holographic
+    microscope.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:56.631188+00:00'
   source_available: true
 - id: b9ac9b0028eec9a8
   filename: IMG_9053.png
@@ -154,9 +158,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-12-08T14:38:30.135004-06:00'
   sha256: 934f41b9d11f3514332144dfba8d46b7dea68b62f9fc9a651496fc5bdd56aecc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Granola CRUNCHED 2025 card calling someone a closet engineer good at
+    raising money.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:44.383952+00:00'
   source_available: true
 - id: 07f22b78eccd5d97
   filename: IMG_3353.png
@@ -220,9 +225,11 @@ attachments:
   sender: me
   sent_at: '2025-12-09T00:13:40.440784-06:00'
   sha256: 1eabb08adb91deb530b2185ee02d0e37eca42c914043fa7b62c73009d7c6e27b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This science project board details Echo Vision, a wearable device helping
+    visually impaired people detect obstacles. It outlines the materials, software,
+    and testing of a $40 prototype.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:52.856567+00:00'
   source_available: true
 - id: 0d378c80aef5cc5b
   filename: IMG_4743.png
@@ -231,9 +238,10 @@ attachments:
   sender: me
   sent_at: '2025-12-09T00:14:08.069828-06:00'
   sha256: 3f6648ea1dd6ee20ea94026298ba0c1545c9532dff45d9e6aa957cbfd4a9601b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Photos of an EchoVision wearable prototype and graphs of its ultrasonic
+    distance accuracy.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:47.834542+00:00'
   source_available: true
 - id: 82d0d158b1857f0c
   filename: 2020scifairdatabook.pdf
@@ -242,9 +250,11 @@ attachments:
   sender: me
   sent_at: '2025-12-09T00:14:33.414221-06:00'
   sha256: 8f2106219c4068577cd81be7ba739aa6c8d7ed931242c33a50ed8119e45a0445
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This science fair data book details a low-cost malaria detection device.
+    It uses a ResNet algorithm to identify infections in blood smears for resource-limited
+    settings.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:47.452295+00:00'
   source_available: true
 - id: 1edf3f623ddc4b47
   filename: nocompressionblownupgraphs.pdf
@@ -275,9 +285,10 @@ attachments:
   sender: me
   sent_at: '2025-12-09T00:19:48.409025-06:00'
   sha256: fa3c2d431dd26b163b1266533b37d8dbbf1411d97206f02dc9fb3fe52cf95fd5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A cameraman films a student standing by a display board at the Austin
+    Regional Science Fair.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:47.304815+00:00'
   source_available: true
 - id: bd188a2690eb806f
   filename: IMG_4746.PNG
@@ -286,9 +297,10 @@ attachments:
   sender: me
   sent_at: '2025-12-09T00:19:48.409025-06:00'
   sha256: dbd2a468d516434f40aa13a5cfd2650fa5306f10a39adc2084e49b4f2f09d415
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Students on stage with a large check at the 2015 Austin Regional Science
+    Festival.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:56.944952+00:00'
   source_available: true
 - id: 152ed47af9644b35
   filename: IMG_4745.PNG

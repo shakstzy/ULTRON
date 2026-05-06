@@ -99,9 +99,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-07T16:31:39.559336-06:00'
   sha256: 7d197802ac3f58f0f7108f712eeb9366fa33da8d58e7e36f4c88f228ce9b1d56
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Justin Mares expresses interest in investing in Seedbox Labs in an
+    email to Avery Haskell.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:22:18.645728+00:00'
   source_available: true
 - id: 374dacf5d2f92a72
   filename: IMG_1069.PNG
@@ -110,9 +111,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-07T20:02:09.016329-06:00'
   sha256: f13a754c6636b34bcc7a328190a743c1cfd315882cf28729eaabe5597309c400
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram story post critiquing Cluely's business failure and Cava's
+    market bubble.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:22:00.821250+00:00'
   source_available: true
 - id: 55c358c3716b91cb
   filename: zoombg.png
@@ -121,9 +123,10 @@ attachments:
   sender: me
   sent_at: '2025-11-08T17:20:44.942505-06:00'
   sha256: 43c60e500e42885226ba0f69efffd26ef48007b2f8d80d15e91adc7e2388cb32
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A black SEEDBOX device with a blue glowing ring lens on a dark minimalist
+    background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:22:00.540951+00:00'
   source_available: true
 - id: eb79ff0e3ec89bac
   filename: YCAPP.mov
@@ -143,9 +146,10 @@ attachments:
   sender: me
   sent_at: '2025-11-08T17:55:48.037616-06:00'
   sha256: beb04be892f4c77327151a3faf04e9ac0136b9c51df45bebdaa8fd5212e9a4f7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A video progress bar showing 00:10 of 01:03 elapsed with a pause icon
+    and white seek slider.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:22:19.489556+00:00'
   source_available: true
 - id: 1e9f8582a4ec190f
   filename: ycvid.mov
@@ -154,9 +158,10 @@ attachments:
   sender: me
   sent_at: '2025-11-08T17:57:35.585507-06:00'
   sha256: 6bda9d130695958f8b7408518ec0d0ab853ce38cb39940cdcbaa4916542728be
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Seedbox Labs founders pitch their at-home male fertility tracking device
+    for YC.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:22:09.845590+00:00'
   source_available: true
 - id: a9a5c381768427ed
   filename: "Screenshot 2025-11-09 at 8.12.32\u202FPM.png"
@@ -165,9 +170,10 @@ attachments:
   sender: me
   sent_at: '2025-11-09T22:12:45.483831-06:00'
   sha256: f2ae69550df810d181780890cd9d084669f17ec7feb86fe4b955af309df011ba
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Email from Y Combinator confirming Seedbox Labs' Winter 2026 application
+    submission.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:22:11.611773+00:00'
   source_available: true
 - id: 6cb97d531021568f
   filename: Image-1.jpg
@@ -275,9 +281,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-12T22:49:48.191510-06:00'
   sha256: 2780fd4efb572a8c89c5f401f275fe86062c4ab24521565722bb5309b85268f6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a Gmail introduction email from Stephanie Oestreich to
+    Razan and Avery.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:22:20.097208+00:00'
   source_available: true
 - id: cd1064e6ad41ab4d
   filename: PNG image.png
@@ -374,9 +381,10 @@ attachments:
   sender: me
   sent_at: '2025-11-20T02:16:51.270000-06:00'
   sha256: 534ce1ad5a04abee5b5980ac8b5e4c93b4a776218f0fd6521e8fec08f3515123
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A text list of five cloud backend services, including Auth and Storage,
+    within a dashed box.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:22:33.197996+00:00'
   source_available: true
 - id: c0adc829396b910b
   filename: IMG_0391.png
@@ -385,9 +393,10 @@ attachments:
   sender: me
   sent_at: '2025-11-20T02:17:23.402000-06:00'
   sha256: 69ab69d8e088930f07fd525aa945b08e9c7727817ca7967cdce5c5c1d3224b24
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Heading "Dependencies & Integrations" with a bullet for manufacturing
+    partners.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:22:35.470914+00:00'
   source_available: true
 - id: 5461b73541189e39
   filename: "Screenshot 2025-11-22 at 6.07.34\u202FAM.png"

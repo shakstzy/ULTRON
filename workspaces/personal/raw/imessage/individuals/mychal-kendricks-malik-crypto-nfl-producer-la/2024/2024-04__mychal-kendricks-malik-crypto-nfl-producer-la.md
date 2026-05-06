@@ -34,9 +34,9 @@ attachments:
   sender: me
   sent_at: '2024-04-02T13:59:12.086449-05:00'
   sha256: 366d1c4ac46c4d1449baf1808f72d9f8080aa49914f16abacc00f6ef31a46ea6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Landscapers using a leaf blower to clean the stairs of house 3712.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:37.842928+00:00'
   source_available: true
 - id: 446e97cfba5d7482
   filename: 73384795721__C7B720A2-C268-4A18-8717-74CE01A4D471.HEIC
@@ -161,9 +161,10 @@ attachments:
   sender: me
   sent_at: '2024-04-30T21:54:00.731696-05:00'
   sha256: c04359f2952667fa40e7476863aca66b22ff0ea6e65cfe97fbfaedcd10b6643e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A glass with yellowish liquid and oats on a desk next to a keyboard
+    and plastic cup.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:22.127149+00:00'
   source_available: true
 chat_message_guids_count: 124
 deleted_upstream: null

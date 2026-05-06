@@ -91,9 +91,11 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2026-02-18T10:03:14.227270-06:00'
   sha256: 7c1478d4064b02ea70800d2c3568fa34ee3a0c739afa34ee3b159e449bfd2b9e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This PDF is an onboarding guide for Power Kinetics that records completed
+    work and operational systems. It outlines workstreams, timelines, and deliverables
+    to ensure team continuity.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:01.129020+00:00'
   source_available: true
 - id: ac703ea79b8795db
   filename: 658F20B0-F477-4691-95F1-2A0E94EF489B.pluginPayloadAttachment
@@ -234,9 +236,10 @@ attachments:
   sender: me
   sent_at: '2026-02-25T05:17:45.735000-06:00'
   sha256: e44efcc31d4960b7938a4bfe1bfa4a02998715924b51dd1aa1761263e948850f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a white hat and black vest stands on a golf course green near
+    a large tan clubhouse.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:34.669990+00:00'
   source_available: true
 - id: 90e5ae0843f92713
   filename: IMG_7470.HEIC
@@ -269,9 +272,10 @@ attachments:
   sender: me
   sent_at: '2026-02-25T11:24:50.006000-06:00'
   sha256: 9d3f8866828f598166dbd7190ba24471307c800b1d8b09897c99286092fc8f72
-  description: null
-  description_model: null
-  extracted_at: null
+  description: An upside-down selfie of three smiling men with a residential valley
+    in the background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:06.790482+00:00'
   source_available: true
 chat_message_guids_count: 157
 deleted_upstream: null

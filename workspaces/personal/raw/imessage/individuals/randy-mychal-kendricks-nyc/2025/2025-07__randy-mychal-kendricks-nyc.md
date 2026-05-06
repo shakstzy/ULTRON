@@ -22,9 +22,10 @@ attachments:
   sender: randy-mychal-kendricks-nyc
   sent_at: '2025-07-10T07:26:01.257395-05:00'
   sha256: 2e398e1dfcdd2beb2dbd03a6199589783d37085ceb867795e20707e93b353f1d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram chat screenshot of Shak and Coco Kee scheduling a call for
+    3pm EST.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:02.065252+00:00'
   source_available: true
 chat_message_guids_count: 7
 deleted_upstream: null

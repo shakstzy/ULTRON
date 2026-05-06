@@ -146,9 +146,10 @@ attachments:
   sender: me
   sent_at: '2026-04-21T13:37:08.460008-05:00'
   sha256: 21cd4e258b94cc32a1c8a9bb423f20ff4b0215249397ddefce4919aff917b715
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dell monitor displaying Claude Code logs for trading research and a
+    "mention-market mystery."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:30.067675+00:00'
   source_available: true
 - id: c45df1746909e06e
   filename: IMG_5899.png
@@ -181,9 +182,10 @@ attachments:
   sender: me
   sent_at: '2026-04-21T14:58:09.911241-05:00'
   sha256: 2bbc6bcaf0a196d91788145e763cb6e031dde38ba9dc5c73d28d5d64c7c23755
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Cluttered workstation with four screens of code, a microphone, and
+    a large tub of Dahi.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:18.756297+00:00'
   source_available: true
 - id: 8c9b721d89b7e91b
   filename: 8DECCDFA-38B8-4621-895B-1B170E43EA00.pluginPayloadAttachment
@@ -292,9 +294,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2026-04-23T19:10:07.956731-05:00'
   sha256: fc83df12ff3c4178935551903da98b81d1ef51400d31fe43867c46999ab5b3ad
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mac Studio setup with a LIFELONG portable monitor, Magic Keyboard,
+    and Magic Mouse.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:19.110228+00:00'
   source_available: true
 - id: a417a093738924ee
   filename: IMG_6033.PNG

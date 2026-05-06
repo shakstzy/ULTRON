@@ -33,9 +33,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-10-08T18:25:12.057781-05:00'
   sha256: fa9a2546cb1764f3acc3c9d7bb7e2d33e4105e2f85d93db6e96417dfcb180673
-  description: null
-  description_model: null
-  extracted_at: null
+  description: NIH R61/R33 grant review criteria for significance and innovation in
+    infertility research.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:56.520121+00:00'
   source_available: true
 - id: df92e538d7af7f9a
   filename: IMG_2054.png
@@ -44,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2025-10-09T23:31:12.265558-05:00'
   sha256: 00c8b588e06834e59932e3ac674653e947b1a60a7cb5e9816824f11564414193
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram profile for Alexis Johnson, Co-founder & CEO of Light Node
+    Ventures.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:15.806897+00:00'
   source_available: true
 - id: fa3f651460f6fd59
   filename: IMG_2057.png
@@ -66,9 +68,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-10-10T12:47:59.312781-05:00'
   sha256: 0d63e47e5cf7fe4150841d9c4b490b57d9026e7b4a7d876531dee51c8b8c640d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram DM from Avneet Saini with an emoji search for "heart h" over
+    a shared reel.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:38.010520+00:00'
   source_available: true
 - id: 795426be515accf5
   filename: IMG_9729.jpeg
@@ -77,9 +80,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-10-14T15:02:13.689149-05:00'
   sha256: 3384212f95a1eba8efcf5b1d525f3f9c02dfd998aa93871a9226f51687f8f502
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mirror selfie of a man in a green robe with a barber standing behind
+    him in a salon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:22.605912+00:00'
   source_available: true
 - id: 92a88040d5b38c8b
   filename: IMG_5129.png
@@ -88,9 +92,10 @@ attachments:
   sender: me
   sent_at: '2025-10-15T18:15:30.879000-05:00'
   sha256: 910d68ab4775dcc746faa2aa7235034ea4cb32deaafcc5c3ed137ec96cb59056
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of an AI chat response stating no files or memory are currently
+    loaded as context.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:37.859187+00:00'
   source_available: true
 - id: d418de9d384178d9
   filename: IMG_3292.png
@@ -99,9 +104,10 @@ attachments:
   sender: me
   sent_at: '2025-10-16T14:24:34.515000-05:00'
   sha256: 12f38daae30517b62b6b5f35108923fce61d6e2146cc2cb6e380151ec91ae8eb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A text request for longevity research and biomarker data ideas for
+    a Primary VC pitch deck.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:27.658050+00:00'
   source_available: true
 - id: 7e26b3ad9cf79f46
   filename: Seedbox Lab Pitch Deck_09_2025.pdf
@@ -121,9 +127,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-10-24T17:24:28.732360-05:00'
   sha256: 05e045ce7fbc70e1125c5efac8247970f9a01d3f4c5d024607ecc3ea49f5487f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dark mode notes discussing Abe's termination, a $1M fundraising pivot,
+    and a Denver meeting.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:36.778117+00:00'
   source_available: true
 - id: 9aefbe92634d07d2
   filename: IMG_2892.png
@@ -143,9 +150,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-10-27T11:23:58.872056-05:00'
   sha256: 0aae8dbe70cea76fcdec02a40273451bfa87be973edee421437b39cda1157ffd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: People eating tacos and salsa at a restaurant; one man wears a Kansas
+    City Chiefs hat.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:30.280790+00:00'
   source_available: true
 - id: e72e8ff3d428180d
   filename: IMG_0359.PNG
@@ -154,9 +162,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-10-27T19:52:14.756407-05:00'
   sha256: 2b204725011d116b90a575cf692b7b194ed57c3a08b53439f3a9443a1dba72a8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of an email thread about a Seedbox NIH proposal regarding
+    varicocele.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:29.945850+00:00'
   source_available: true
 - id: 2e14388d564c3ef3
   filename: PNG image.png
@@ -176,9 +185,10 @@ attachments:
   sender: me
   sent_at: '2025-10-27T23:33:23.935000-05:00'
   sha256: 868114299ed29b65de1062a05ea37002203b12806b03e6b09f07aabdf6929119
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Calendar invite for "Luca <> Adithya" on Oct 28 at 10 AM with 3 participants
+    including Republic.co.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:39.771236+00:00'
   source_available: true
 - id: bd09a9cfde420df5
   filename: IMG_4275.png
@@ -187,9 +197,10 @@ attachments:
   sender: me
   sent_at: '2025-10-27T23:33:32.279000-05:00'
   sha256: 7dd1fd42b9f5b81117f3fc084e9874a50611f466fdf35e47c4ca3c514e0d753a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Calendar invite for Seedbox Deck Work Meeting on Oct 28, 9-10 AM, with
+    4 participants.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:45.156490+00:00'
   source_available: true
 - id: 23f6684de4335ea0
   filename: IMG_5983.png
@@ -198,9 +209,10 @@ attachments:
   sender: me
   sent_at: '2025-10-27T23:37:28.004000-05:00'
   sha256: ad712728f232c0d361dee1bec2e95469bb5c5d27b5761da5a73b4d76cf94fffa
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Movie poster for Disney's Big Hero 6 featuring the inflatable robot
+    Baymax.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:57.133381+00:00'
   source_available: true
 - id: ed934edee2138feb
   filename: PNG image.png
@@ -209,9 +221,9 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-10-27T23:39:00.065570-05:00'
   sha256: af36caf0716cfda0e423bc41f3f60bc548c3b0bf642c761ba5f92c6a023605c0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of an iMessage chat discussing car repairs and Seedbox networking.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:08.361602+00:00'
   source_available: true
 - id: 90b2583ccebed5c6
   filename: IMG_8848.png
@@ -220,9 +232,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-10-27T23:49:22.924552-05:00'
   sha256: ab2ef1efe179323e014c2625ecfb32f0658d672650c773666e104adeff67a7c3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Woman in a white tweed set and gold heels on a street in West Village,
+    Manhattan.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:45.497561+00:00'
   source_available: true
 - id: 39e691dad3918f87
   filename: 95EB7E21-38F0-48E6-A3DB-703D2BB1D772.JPG
@@ -231,9 +244,10 @@ attachments:
   sender: me
   sent_at: '2025-10-27T23:55:51.138917-05:00'
   sha256: f18b582ee346b00cb32c32bbe9be0bec3f4b5741867194bf2eacd26514f70df5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Black and white mirror selfie of a man smiling behind a woman as she
+    takes their photo.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:46.567848+00:00'
   source_available: true
 - id: 5a5b0df08b842e93
   filename: IMG_0476.jpeg
@@ -253,9 +267,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-10-28T12:14:43.474566-05:00'
   sha256: 25db65316969266f96bd01dd07b29ee4f49313ee9337ff90b381cb03ba495664
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Infographic grid of high-profile investors for Bryan Johnson's $60M
+    Blueprint longevity project.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:59.645033+00:00'
   source_available: true
 - id: 3094ceaaebe5ba55
   filename: PNG image.png
@@ -275,9 +290,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-10-29T13:34:41.213718-05:00'
   sha256: bf5e5fbb04b9827bfef7fd6e1720c784049819c6788ddf087fbb87fe1d5a3f11
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mercury email confirming a $100,000.00 wire transfer into Seedbox Labs'
+    checking account.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:58.206463+00:00'
   source_available: true
 - id: 1219cc750718f014
   filename: IMG_0491.png
@@ -286,9 +302,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-10-29T14:52:02.249992-05:00'
   sha256: b5c9fd6b6c8338ab49ea2b40f9848c5d4a10bc31aade832f5c417bda9780df30
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Tyler messages about a ketamine business deal; user asks if it is digital
+    or brick and mortar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:56.331686+00:00'
   source_available: true
 - id: c2073e37e1b0a3cf
   filename: IMG_0492.png
@@ -319,9 +336,10 @@ attachments:
   sender: me
   sent_at: '2025-10-30T17:58:42.404000-05:00'
   sha256: 2db9faf8ddc94d99fecc66932b9d69d10651c12b959f3b1e8c59c919029076ef
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'X thread screenshot: Rob Freund discusses ketamine''s benefits and
+    addiction risks.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:18.867349+00:00'
   source_available: true
 - id: 706b995fbe03e08b
   filename: IMG_8761.png
@@ -396,9 +414,10 @@ attachments:
   sender: me
   sent_at: '2025-10-31T09:55:14.576000-05:00'
   sha256: 1414799d766cb7eed20ccc648326cd523400ca41ba0d9a97c82fa8dd981bf4a2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Pitch slide for Harvard-backed male fertility tech showing clinical
+    data and media recognition.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:34.086638+00:00'
   source_available: true
 - id: 397d6f5955a5bfe0
   filename: PNG image.png
@@ -418,9 +437,10 @@ attachments:
   sender: me
   sent_at: '2025-10-31T11:50:37.212000-05:00'
   sha256: 77fd832271ef47f59dd415245095c2b09e7c3c4c7dcdca0f0421b2768c3aa01a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: ChatGPT response explaining that deactivating a workspace hides chats
+    but doesn't wipe them.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:28.232686+00:00'
   source_available: true
 - id: d0d37f0309d635c5
   filename: PNG image.png
@@ -440,9 +460,10 @@ attachments:
   sender: me
   sent_at: '2025-10-31T12:58:24.654000-05:00'
   sha256: 6634e94a15ce3922f59b2bb8d1874d5e6a8f213448a06572e0faa420523cc16d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a Reddit thread discussing ChatGPT account sharing and
+    proxy setups.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:21.211482+00:00'
   source_available: true
 - id: 5fe279fc765293ca
   filename: "Screenshot 2025-10-31 at 10.10.26\u202FPM.png"

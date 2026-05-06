@@ -57,9 +57,9 @@ attachments:
   sender: me
   sent_at: '2026-03-25T15:25:04.419000-05:00'
   sha256: 91ea009a1810a7a2df8b1fe3c3f834c13c1970b8782cff8f2b663a916cac6cee
-  description: null
-  description_model: null
-  extracted_at: null
+  description: File tree for a TypeScript athlete recovery app using React and Supabase.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:18.064504+00:00'
   source_available: true
 - id: dd3fa47a9a3580ae
   filename: IMG_9762.png
@@ -219,9 +219,10 @@ attachments:
   sender: me
   sent_at: '2026-03-30T04:07:31.355449-05:00'
   sha256: 5d4a01b1ddb9beea7754e3ee70157ea330ffc8fda6c84d585836e84670790a9c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Admin profile page for Adithya Shakthi Kumar on a dark-themed management
+    dashboard.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:39.088486+00:00'
   source_available: true
 - id: c207a1375b9b1252
   filename: IMG_3611.png
@@ -230,9 +231,10 @@ attachments:
   sender: me
   sent_at: '2026-03-30T04:07:34.365390-05:00'
   sha256: c1c4424c4fe7f5b563c625ba660dd78e0dcc07d8e39449dd984459ff5c91658e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Athletic profile setup UI for Adithya Shakthi Kumar with sports and
+    physical metric fields.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:37.496500+00:00'
   source_available: true
 - id: 9196dab4f182602a
   filename: IMG_3598.png

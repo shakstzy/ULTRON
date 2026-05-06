@@ -22,9 +22,9 @@ attachments:
   sender: me
   sent_at: '2025-01-09T12:57:15.238910-06:00'
   sha256: 8a470bd5957f77e871cfa318d3b11f671b6250f086e26533bb67dedeab4ead55
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Game report leaderboard showing shakstzy in first place with 1437 points.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:51.011613+00:00'
   source_available: true
 chat_message_guids_count: 15
 deleted_upstream: null

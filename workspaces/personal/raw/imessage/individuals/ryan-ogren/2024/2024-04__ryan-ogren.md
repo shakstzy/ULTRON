@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-04-01T16:44:04.414638-05:00'
   sha256: 1595104d8bf1cfac463bdf1644869201cdb0d123c3107789d50f36771158463c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a conversation with Caitlin about scheduling
+    work sessions.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:44.132337+00:00'
   source_available: true
 - id: 12534168914e6863
   filename: IMG_7451.jpeg
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2024-04-01T16:44:31.923805-05:00'
   sha256: 023c9da3ce56a88daafe118eee20787bca7a1dd7a33268b15059a3a080ade039
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a chat with Tyler about crypto gaming and studio
+    weekday availability.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:48.336563+00:00'
   source_available: true
 - id: 3ac0361d675cd750
   filename: 73398635809__42ED4EFC-30C4-41C3-8147-1289A96BDCB8.jpeg
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2024-04-05T00:06:07.620164-05:00'
   sha256: 1b296cdfded191cabcea64fdb14d920cf7c5d989540f92cb37a6bb1aed5cc2f4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A laptop screen displaying a video editing timeline in DaVinci Resolve
+    Studio.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:00.208968+00:00'
   source_available: true
 - id: 64a576b0fbb48090
   filename: IMG_8210.JPG
@@ -66,9 +69,10 @@ attachments:
   sender: me
   sent_at: '2024-04-09T14:34:43.591000-05:00'
   sha256: dcd2b0aa0a8d671b21888f75726615d2fb6f26b0659cd27ba908bce8b752c5d0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in an orange tee and cap leans against stairs lit by warm string
+    lights at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:21.112612+00:00'
   source_available: true
 - id: c762495dacc107e7
   filename: IMG_8206.JPG
@@ -77,9 +81,10 @@ attachments:
   sender: me
   sent_at: '2024-04-09T14:34:43.591000-05:00'
   sha256: e977535a4b3ca56c3b96125338465cc322c5100149d1afec7be6ea79049fd019
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Person in headphones at a music workstation with a DAW and professional
+    microphone in a studio.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:01.104853+00:00'
   source_available: true
 - id: cb670cd031028bbd
   filename: IMG_8212.JPG
@@ -88,9 +93,10 @@ attachments:
   sender: me
   sent_at: '2024-04-09T14:34:43.591000-05:00'
   sha256: d8a50e359d433a5480a3ad7cf59074f16b34e9ab00bb5e4a8e51713801227941
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Person in a Starknet cap and graphic tee leaning against a tree at
+    night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:23.360354+00:00'
   source_available: true
 - id: 5e3b134130f96205
   filename: IMG_8215.JPG
@@ -99,9 +105,10 @@ attachments:
   sender: me
   sent_at: '2024-04-09T14:34:43.591000-05:00'
   sha256: 23019c514eaf69d246690ffd1d9cdb6bfccceebb884d972f16adf69ac5f45250
-  description: null
-  description_model: null
-  extracted_at: null
+  description: B&W photo of a man in a Starknet Summit hat and BAPE shirt by a tree
+    and barbed wire.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:52.313075+00:00'
   source_available: true
 - id: ac6684fa992a4a88
   filename: IMG_8217.JPG
@@ -110,9 +117,10 @@ attachments:
   sender: me
   sent_at: '2024-04-09T14:34:43.591000-05:00'
   sha256: 61e2a1f0fb7d0972e81918e443356bfc84cc377c0b4f76046c9fd0bdebe1efd9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in shades sits on a parking block by a 'PRESCRIPTION SONGS' sign
+    and a traffic cone.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:51.242052+00:00'
   source_available: true
 - id: 1c241198ede2d276
   filename: IMG_8200.JPG
@@ -121,9 +129,10 @@ attachments:
   sender: me
   sent_at: '2024-04-09T14:34:43.591000-05:00'
   sha256: 279d600b58b55bb9949533fb6e2901da9579dd2238d3c8fd8f7a6e6e8b68c820
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a graphic tee and Champion joggers leans against a white pillar
+    at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:05.347508+00:00'
   source_available: true
 - id: cda7ed08e3ae2869
   filename: IMG_8201.JPG
@@ -143,9 +152,10 @@ attachments:
   sender: me
   sent_at: '2024-04-09T14:34:43.591000-05:00'
   sha256: 08ee16ddeaa568df4c31f72d0381178a28e10d22b466f578f7449594a171077a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person in a striped sweater sits at a computer mixing music in a
+    recording studio.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:36.680559+00:00'
   source_available: true
 - id: 591562e514d4e09b
   filename: IMG_8202.JPG
@@ -154,9 +164,10 @@ attachments:
   sender: me
   sent_at: '2024-04-09T14:34:43.591000-05:00'
   sha256: 12fb7132833f1968e4d613783fb5acc08a82a77a24e813fa9995d155c0417fd8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in sunglasses and Nike Dunks leans against a white wall outdoors
+    at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:19:58.345037+00:00'
   source_available: true
 - id: fa1ec2ec4b5d0ca2
   filename: IMG_8209.JPG
@@ -165,9 +176,10 @@ attachments:
   sender: me
   sent_at: '2024-04-09T14:34:43.591000-05:00'
   sha256: 3fac05642b1fdb591055466ccb341f8737fbce1efe12ec65db811fcc376607f8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in an orange t-shirt sits on outdoor wooden stairs at night,
+    lit by warm string lights.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:09.150638+00:00'
   source_available: true
 - id: 82807a7ab71e6bac
   filename: IMG_8214.JPG
@@ -176,9 +188,10 @@ attachments:
   sender: me
   sent_at: '2024-04-09T14:34:43.591000-05:00'
   sha256: 9e329a2e3d3d497505ecc0a661edec0bdde338b8f16432b10439eb83f85a83fa
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a Starknet Summit 2023 cap and BAPE camo shirt leaning against
+    a tree at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:03.119764+00:00'
   source_available: true
 - id: a619333d9831d759
   filename: IMG_8213.JPG
@@ -198,9 +211,10 @@ attachments:
   sender: me
   sent_at: '2024-04-09T14:34:43.591000-05:00'
   sha256: bfd368d036c5a556daff080f35bd30ca090d3bf360c696ecc269b99fc86e8b17
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a graphic tee and cap leans against a white pillar by a metal
+    gate at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:07.461940+00:00'
   source_available: true
 - id: a1ca4cb36ad0a32d
   filename: IMG_8207.JPG
@@ -209,9 +223,10 @@ attachments:
   sender: me
   sent_at: '2024-04-09T14:34:43.591000-05:00'
   sha256: 4ef38222f54a4f1b9ba580b1d75960b329fe6996dd8a1c0ebf858bb8a21d8fb0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person in a striped shirt and cap wearing Audio-Technica headphones
+    in a dark studio.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:42.701109+00:00'
   source_available: true
 - id: 2c88605eba8efeb8
   filename: IMG_8211.JPG
@@ -220,9 +235,10 @@ attachments:
   sender: me
   sent_at: '2024-04-09T14:34:43.591000-05:00'
   sha256: 244c50c9b7261d6ce68e8c8fd750cec4eb1e92ea0718e369f276ce61793d0659
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a Starknet hat and camo-graphic tee leans against a tree by
+    a razor-wire fence at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:03.445740+00:00'
   source_available: true
 - id: a879f6c17f2a97c2
   filename: IMG_8205.JPG
@@ -242,9 +258,10 @@ attachments:
   sender: me
   sent_at: '2024-04-09T14:34:43.591000-05:00'
   sha256: 5be5fb83f50605148a766e3e66e2e1bcdda639f93c2503a178db0038f91fc4ee
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a Starknet beanie sits on a parking block at night next to a
+    reserved parking sign.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:20:20.306206+00:00'
   source_available: true
 - id: 7beece59ef8fe942
   filename: IMG_1509.png
@@ -253,9 +270,10 @@ attachments:
   sender: me
   sent_at: '2024-04-11T22:05:49.585000-05:00'
   sha256: c441aa70c949236501210380817d2e059b8d80acc0e18722508215e9eaa9b609
-  description: null
-  description_model: null
-  extracted_at: null
+  description: DaVinci Resolve timeline for 'lifeofshak 004' with an upside-down preview
+    and adjustment clip.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:37.019585+00:00'
   source_available: true
 - id: 17be74cfc460add5
   filename: IMG_8456.jpg
@@ -264,9 +282,10 @@ attachments:
   sender: me
   sent_at: '2024-04-28T15:17:04.190935-05:00'
   sha256: 254771700e0b2b7c5e7042278e56bac2f144fb9a6fd895690caff4fa8ee44158
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot with messages 'NYK', 'Sixers are ass', and 'Fuck
+    the sixers'.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T01:21:57.298778+00:00'
   source_available: true
 chat_message_guids_count: 87
 deleted_upstream: null

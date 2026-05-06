@@ -90,22 +90,86 @@ def serialize_fm(fm: dict, body: str) -> str:
     return f"---\n{out}---\n" + body.lstrip("\n")
 
 
+# Edges are persisted in the body under `## Relationships` so that contacts-sync
+# (which overwrites frontmatter on every run) cannot clobber them.
+RELATIONSHIPS_HEADING = "## Relationships"
+EDGE_LINE_RE = re.compile(
+    r"^- (?P<type>[A-Za-z][A-Za-z0-9_-]*) → \[\[(?P<target>[^\]]+)\]\]"
+    r"(?:\s+\((?P<meta>.+)\))?\s*$"
+)
+RELATIONSHIPS_SECTION_RE = re.compile(
+    r"(?ms)^## Relationships\s*\n(.*?)(?=^## |\Z)"
+)
+
+
+def _parse_meta(meta: str | None) -> dict:
+    if not meta:
+        return {}
+    out: dict = {}
+    for part in meta.split(";"):
+        part = part.strip()
+        if part.startswith("asserted "):
+            out["asserted"] = part[len("asserted "):].strip()
+        elif part.startswith("note:"):
+            note = part[len("note:"):].strip()
+            if len(note) >= 2 and note[0] == '"' and note[-1] == '"':
+                note = note[1:-1]
+            out["note"] = note
+    return out
+
+
 def parse_relationships(text: str) -> list[dict]:
-    fm, _body = parse_fm(text)
-    rels = fm.get("relationships")
-    if not isinstance(rels, list):
+    _, body = parse_fm(text)
+    m = RELATIONSHIPS_SECTION_RE.search(body)
+    if not m:
         return []
     out: list[dict] = []
-    for r in rels:
-        if isinstance(r, dict) and "type" in r and "target" in r:
-            out.append(dict(r))
+    for line in m.group(1).splitlines():
+        line = line.rstrip()
+        if not line.startswith("- "):
+            continue
+        em = EDGE_LINE_RE.match(line)
+        if not em:
+            continue
+        edge = {"type": em.group("type"), "target": em.group("target")}
+        edge.update(_parse_meta(em.group("meta")))
+        out.append(edge)
     return out
+
+
+def _format_edge(edge: dict) -> str:
+    parts = []
+    if edge.get("asserted"):
+        parts.append(f"asserted {edge['asserted']}")
+    if edge.get("note"):
+        parts.append(f'note: "{edge["note"]}"')
+    suffix = f" ({'; '.join(parts)})" if parts else ""
+    return f"- {edge['type']} → [[{edge['target']}]]{suffix}"
+
+
+def _render_section(edges: list[dict]) -> str:
+    if not edges:
+        return ""
+    sorted_edges = sorted(edges, key=lambda e: (e.get("type", ""), e.get("target", "")))
+    lines = [_format_edge(e) for e in sorted_edges]
+    return f"{RELATIONSHIPS_HEADING}\n\n" + "\n".join(lines) + "\n"
 
 
 def write_edges(text: str, edges: list[dict]) -> str:
     fm, body = parse_fm(text)
-    fm["relationships"] = edges
-    return serialize_fm(fm, body)
+    # Drop any legacy frontmatter `relationships:` key.
+    fm.pop("relationships", None)
+
+    new_section = _render_section(edges)
+    if RELATIONSHIPS_SECTION_RE.search(body):
+        if new_section:
+            body = RELATIONSHIPS_SECTION_RE.sub(new_section, body, count=1)
+        else:
+            body = RELATIONSHIPS_SECTION_RE.sub("", body, count=1).rstrip() + "\n"
+    elif new_section:
+        body = (body.rstrip() + "\n\n" + new_section) if body.strip() else new_section
+
+    return serialize_fm(fm, body) if fm else body
 
 
 def add_edge(page: Path, edge: dict) -> bool:

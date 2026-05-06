@@ -1,0 +1,17 @@
+---
+source_file: "raw/imessage/groups/group-mom-sidhant/2026/2026-02__group-mom-sidhant.md"
+type: "document"
+community: "Sylmar Property + Tenants"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Sylmar_Property_+_Tenants
+---
+
+# Sidhant (tenant / Orange County)
+
+## Connections
+- [[Adithya]] - `messages_with` [EXTRACTED]
+- [[Klein Court (LA property)]] - `related_to` [INFERRED]
+
+#graphify/document #graphify/EXTRACTED #community/Sylmar_Property_+_Tenants

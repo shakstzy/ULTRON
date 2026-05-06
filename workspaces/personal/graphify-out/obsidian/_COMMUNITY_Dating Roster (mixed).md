@@ -1,0 +1,415 @@
+---
+type: community
+cohesion: 0.01
+members: 327
+---
+
+# Dating Roster (mixed)
+
+**Cohesion:** 0.01 - loosely connected
+**Members:** 327 nodes
+
+## Members
+- [[2310 Fulton Street (Berkeley)]] - document - raw/imessage/individuals/alec-pi-kapp-uc-berkeley-6689/2025/2025-04__alec-pi-kapp-uc-berkeley-6689.md
+- [[Aaniyah (Hinge  San Antonio)]] - document - raw/imessage/individuals/aaniyah-hinge-sanantonio/2026/2026-02__aaniyah-hinge-sanantonio.md
+- [[Aarti (Dad)]] - person - raw/imessage/_profiles/aarti-dad.md
+- [[Aarti (ex-girlfriend)]] - document - raw/imessage/individuals/aarti-dad/2026/2026-02__aarti-dad.md
+- [[Abby (Hinge  Dallas)]] - document - raw/imessage/individuals/abby-hinge-dallas/2026/2026-02__abby-hinge-dallas.md
+- [[Abhi (NYC friend, group-abhi-akshar)]] - document - raw/imessage/groups/group-abhi-akshar-rushil/2025/2025-07__group-abhi-akshar-rushil.md
+- [[Abhishek]] - person - raw/imessage/_profiles/abhishek.md
+- [[Ace (intro to Tommy, GTMVFX)]] - document - raw/imessage/groups/group-ace/2025/2025-07__group-ace.md
+- [[Addi  Adithi (Hinge, DallasAustin)]] - document - raw/imessage/individuals/addi-hinge-dallas/2026/2026-02__addi-hinge-dallas.md
+- [[Adi (Hinge, Austin  UT)]] - document - raw/imessage/individuals/adi-hinge-austin/2026/2026-02__adi-hinge-austin.md
+- [[Adithya]] - document
+- [[Adriana (Hinge, AustinSanta Clara)]] - document - raw/imessage/individuals/adriana-hinge-austin/2026/2026-03__adriana-hinge-austin.md
+- [[Aiden (Persian, Cruise connection)]] - document - raw/imessage/individuals/aiden-persia-cruise/2024/2024-12__aiden-persia-cruise.md
+- [[Aisha (Hinge, Austin)]] - document - raw/imessage/individuals/aisha-hinge-austin/2025/2025-05__aisha-hinge-austin.md
+- [[Aisha (Hinge, LivermoreSD)]] - document - raw/imessage/individuals/aisha-hinge-sd/2026/2026-03__aisha-hinge-sd.md
+- [[Akshar (LA group)]] - document - raw/imessage/groups/group-akshar-parth/2025/2025-08__group-akshar-parth.md
+- [[Akshar (NYC friend, group-abhi-akshar)]] - document - raw/imessage/groups/group-abhi-akshar-rushil/2025/2025-07__group-abhi-akshar-rushil.md
+- [[Akshara (Hinge, Austin  West Campus)]] - document - raw/imessage/individuals/akshara-hinge-austin/2025/2025-07__akshara-hinge-austin.md
+- [[Alec (NYC)]] - document - raw/imessage/groups/group-alec-ashank/2025/2025-05__group-alec-ashank.md
+- [[Alex]] - document - raw/imessage/_profiles/alex.md
+- [[Ambal Balakrishnan (Mother)]] - person - raw/gmail/gmail-schema-adithya-shak-kumar.md
+- [[Ananya (LASA, Austin)]] - document - raw/imessage/individuals/ananya-lasa/2025/2025-01__ananya-lasa.md
+- [[Andy (Alajuani)]] - document - raw/imessage/individuals/andy-alajuani/2025/2025-11__andy-alajuani.md
+- [[Aniruth Narayanan (UC Berkeley)_1]] - document - raw/imessage/individuals/aniruth-narayanan-uc-berkeley/2026/2026-03__aniruth-narayanan-uc-berkeley.md
+- [[Anna]] - document - raw/imessage/_profiles/anna.md
+- [[Anthony De Leon]] - document - raw/imessage/individuals/anthony-de-leon/2025/2025-05__anthony-de-leon.md
+- [[Arjun Adapalli]] - document - raw/imessage/individuals/arjun-adapalli/2024/2024-07__arjun-adapalli.md
+- [[Arnav Gurudatt]] - document - raw/imessage/individuals/arnav-gurudatt/2025/2025-04__arnav-gurudatt.md
+- [[Ashank]] - document - raw/imessage/groups/unkal/2025/2025-05__unkal.md
+- [[Ashank (NYC)]] - document - raw/imessage/groups/group-alec-ashank/2025/2025-05__group-alec-ashank.md
+- [[Aurat (Amanda)]] - document - raw/imessage/individuals/aurat/2026/2026-02__aurat.md
+- [[Avik Ahuja (LASA, Houston)]] - document - raw/imessage/individuals/avik-ahuja-lasa/2025/2025-08__avik-ahuja-lasa.md
+- [[Beyond Wonderland Festival_1]] - document - raw/imessage/individuals/rushil-jha-uc-berkeley-nyc/2025/2025-08__rushil-jha-uc-berkeley-nyc.md
+- [[Bhanu Pratap Singh Tak_1]] - document - raw/imessage/individuals/bhanu-pratap-singh-tak/2026/2026-04__bhanu-pratap-singh-tak.md
+- [[Bhanu Pratap Singh Tak]] - document - raw/imessage/_profiles/bhanu-pratap-singh-tak.md
+- [[Bhavya Bakhda]] - document - raw/imessage/_profiles/group-intervention-4-shakti.md
+- [[Bibby (music contact)]] - document - raw/imessage/groups/group-bibby-dr-ryan/2025/2025-08__group-bibby-dr-ryan.md
+- [[Bilal (Akshar, USC  NYC)]] - document - raw/imessage/individuals/bilal-akshar-usc-nyc/2025/2025-07__bilal-akshar-usc-nyc.md
+- [[Bilal Akshar (USC, NYC)]] - document - raw/imessage/_profiles/bilal-akshar-usc-nyc.md
+- [[Blake Williams]] - document - raw/imessage/individuals/blake-williams/2026/2026-03__blake-williams.md
+- [[Brandon (roommatehousemate)]] - document - raw/imessage/groups/group-brandon-stacey/2024/2024-03__group-brandon-stacey.md
+- [[Brennan]] - document - raw/imessage/individuals/sam-garcia/2026/2026-04__sam-garcia.md
+- [[Buenos Aires Trip (Nov 2025)]] - document - raw/imessage/groups/gold-kums-powna-ams-family/2025/2025-11__gold-kums-powna-ams-family.md
+- [[Candice (fashion advisor)]] - document - raw/imessage/groups/group-candice-keith-ryan/2024/2024-04__group-candice-keith-ryan.md
+- [[Carlos (NYC)]] - document - raw/imessage/individuals/carlos-mychal-kendrick-nyc-mets/2025/2025-06__carlos-mychal-kendrick-nyc-mets.md
+- [[Chaitanya]] - document - raw/imessage/individuals/chaitanya/2025/2025-10__chaitanya.md
+- [[Chase Sherman]] - document - raw/imessage/individuals/chase-sherman/2025/2025-10__chase-sherman.md
+- [[Curtis Lee]] - document - raw/imessage/individuals/curtis-lee/2024/2024-07__curtis-lee.md
+- [[Dele Atanda]] - document - raw/imessage/individuals/dele-atanda/2025/2025-02__dele-atanda.md
+- [[Deven]] - document - raw/imessage/groups/group-deven-pseuhas-risheek-2/2025/2025-04__group-deven-pseuhas-risheek-2.md
+- [[Dhamo (Uncle)]] - document - raw/imessage/groups/group-dhamo-narayanan/2024/2024-04__group-dhamo-narayanan.md
+- [[Dhamo Uncle]] - document - raw/imessage/_profiles/group-group-dhamo-narayanan.md
+- [[Dheeraj]] - document - raw/imessage/groups/group-dheeraj/2025/2025-02__group-dheeraj.md
+- [[Diana Sanders (Prescription LA)]] - document - raw/imessage/_profiles/group-group-diana-keith-larry.md
+- [[Dimpal  Aarti]] - document - raw/imessage/individuals/dimpal-aarti/2026/2026-02__dimpal-aarti.md
+- [[Divyesh (Stanford)]] - document - raw/imessage/groups/group-divyesh-maxim/2024/2024-03__group-divyesh-maxim.md
+- [[Dr. Satasivan]] - document - raw/imessage/individuals/dr-satasivan/2026/2026-01__dr-satasivan.md
+- [[Dylan (music producer)]] - document - raw/imessage/groups/group-dylan-johny/2024/2024-03__group-dylan-johny.md
+- [[Edwin (UC Berkeley)]] - document - raw/imessage/groups/group-dravin-edwin-hunter/2025/2025-10__group-dravin-edwin-hunter.md
+- [[EigenLayer]] - document - raw/imessage/individuals/evan-layer/2025/2025-07__evan-layer.md
+- [[Erik]] - document - raw/imessage/groups/group-erik-pseuhas-rushil/2025/2025-06__group-erik-pseuhas-rushil.md
+- [[Erik (Rushil NYC)]] - document - raw/imessage/individuals/erik-rushil-nyc/2025/2025-06__erik-rushil-nyc.md
+- [[Ethan]] - document - raw/imessage/groups/unkal/2025/2025-01__unkal.md
+- [[Ethan Baldonado]] - document - raw/imessage/individuals/ethan-baldonado/2026/2026-03__ethan-baldonado.md
+- [[Extendo]] - document - raw/imessage/individuals/extendo/2025/2025-03__extendo.md
+- [[Fakhri (MIT LaunchX SF)]] - document - raw/imessage/groups/mit-launchx-sf/2025/2025-06__mit-launchx-sf.md
+- [[Family Group Chat (GoldKumsPownaAms)]] - document - raw/imessage/groups/gold-kums-powna-ams-family/2025/2025-08__gold-kums-powna-ams-family.md
+- [[Francesco]] - document - raw/imessage/groups/group-francesco-james/2025/2025-10__group-francesco-james.md
+- [[Gayathri]] - document - raw/imessage/individuals/noah-bailie/2025/2025-07__noah-bailie.md
+- [[Geno]] - document - raw/imessage/groups/group-geno-neek-tito/2024/2024-08__group-geno-neek-tito.md
+- [[Geshna (Philly)]] - document - raw/imessage/individuals/geshna-philly/2025/2025-07__geshna-philly.md
+- [[Group Adarsh & Rushil]] - document - raw/imessage/_profiles/group-group-adarsh-rushil.md
+- [[Group Adarsh & Saif]] - document - raw/imessage/_profiles/group-group-adarsh-saif.md
+- [[Group Adi & Shlok]] - document - raw/imessage/_profiles/group-group-adi-shlok.md
+- [[Group Adithya, Ryan & Tyler]] - document - raw/imessage/_profiles/group-group-adithya-ryan-tyler.md
+- [[Group Ajay & James (Crypto)]] - document - raw/imessage/_profiles/group-group-ajay-james.md
+- [[Group Akshar & Parth (USC NYC)]] - document - raw/imessage/_profiles/group-group-akshar-parth.md
+- [[Group Alec & Ashank (UC Berkeley)]] - document - raw/imessage/_profiles/group-group-alec-ashank.md
+- [[Group Amadeus & Arya Kumar]] - document - raw/imessage/_profiles/group-group-amadeus-arya.md
+- [[Group Amadeus & Bryan Renters]] - document - raw/imessage/_profiles/group-group-amadeus-bryan.md
+- [[Group Amadeus & Evan Renters]] - document - raw/imessage/_profiles/group-group-amadeus-evan.md
+- [[Group Amadeus & Evan Renters 2]] - document - raw/imessage/_profiles/group-group-amadeus-evan-2.md
+- [[Group Amadeus & Ziggy Renters]] - document - raw/imessage/_profiles/group-group-amadeus-ziggy.md
+- [[Group Amadeus, Angel & Austin Renters]] - document - raw/imessage/_profiles/group-group-amadeus-angel-austin.md
+- [[Group Amadeus, Angel & Austin Renters 2]] - document - raw/imessage/_profiles/group-group-amadeus-angel-austin-2.md
+- [[Group Amadeus, Angel & Dad (Renters)]] - document - raw/imessage/_profiles/group-group-amadeus-angel-dad.md
+- [[Group Amadeus, Angel & Evan Renters]] - document - raw/imessage/_profiles/group-group-amadeus-angel-evan.md
+- [[Group Amadeus, Angel & Evan Renters 2]] - document - raw/imessage/_profiles/group-group-amadeus-angel-evan-2.md
+- [[Group Amadeus, Ashley & Evan Renters]] - document - raw/imessage/_profiles/group-group-amadeus-ashley-evan.md
+- [[Group Amadeus, Austin & Evan Renters]] - document - raw/imessage/_profiles/group-group-amadeus-austin-evan.md
+- [[Group Amadeus, Brandon & Evan Renters]] - document - raw/imessage/_profiles/group-group-amadeus-brandon-evan.md
+- [[Group Amadeus, Cris & Evan Renters]] - document - raw/imessage/_profiles/group-group-amadeus-cris-evan.md
+- [[Group Amadeus, Darshit & Evan Renters]] - document - raw/imessage/_profiles/group-group-amadeus-darshit-evan.md
+- [[Group Amadeus, David & Evan Renters]] - document - raw/imessage/_profiles/group-group-amadeus-david-evan.md
+- [[Group Amadeus, Ernestina & Evan Renters]] - document - raw/imessage/_profiles/group-group-amadeus-ernestina-evan.md
+- [[Group Amadeus, Evan & Gabriel Renters]] - document - raw/imessage/_profiles/group-group-amadeus-evan-gabriel.md
+- [[Group Amadeus, Evan & Jason Renters]] - document - raw/imessage/_profiles/group-group-amadeus-evan-jason.md
+- [[Group Amadeus, Evan & Jose Renters]] - document - raw/imessage/_profiles/group-group-amadeus-evan-jose.md
+- [[Group Amadeus, Evan & Julia Renters]] - document - raw/imessage/_profiles/group-group-amadeus-evan-julia.md
+- [[Group Amadeus, Evan & Nedal Renters]] - document - raw/imessage/_profiles/group-group-amadeus-evan-nedal.md
+- [[Group Amadeus, Evan & Noah Renters]] - document - raw/imessage/_profiles/group-group-amadeus-evan-noah.md
+- [[Group Amadeus, Evan & Perla Renters]] - document - raw/imessage/_profiles/group-group-amadeus-evan-perla.md
+- [[Group Amadeus, Evan & Sasoon (Insurance)]] - document - raw/imessage/_profiles/group-group-amadeus-evan-sasoon.md
+- [[Group Amadeus, Evan & Stacey Renters]] - document - raw/imessage/_profiles/group-group-amadeus-evan-stacey.md
+- [[Group Amadeus, Evan & Yvette Renters]] - document - raw/imessage/_profiles/group-group-amadeus-evan-yvette.md
+- [[Group Amadeus, Noah & REI LA Renters]] - document - raw/imessage/_profiles/group-group-amadeus-noah-rei.md
+- [[Group Andy & Kevin (BlockchainSF)]] - document - raw/imessage/_profiles/group-group-andy-kevin.md
+- [[Group Angel & Mom]] - document - raw/imessage/_profiles/group-group-angel-mom.md
+- [[Group Ankit & Edwin (UC Berkeley)]] - document - raw/imessage/_profiles/group-group-ankit-edwin.md
+- [[Group Ankit, Edwin & Rohin (UC Berkeley)]] - document - raw/imessage/_profiles/group-group-ankit-edwin-rohin.md
+- [[Group Anthony, Dad & Mom (LA Realtor)]] - document - raw/imessage/_profiles/group-group-anthony-dad-mom.md
+- [[Group Anthony, Dad, Mom & Realtor (LA Rental 2)]] - document - raw/imessage/_profiles/group-group-anthony-dad-mom-2.md
+- [[Group Arthur, Dravin & Patrick (LASA Austin)]] - document - raw/imessage/_profiles/group-group-arthur-dravin-patrick.md
+- [[Group Arya & Caitlin]] - document - raw/imessage/_profiles/group-group-arya-caitlin.md
+- [[Group Arya (Hinge LA)]] - document - raw/imessage/_profiles/group-group-arya-2.md
+- [[Group Arya, Brandon & Dad (LA)]] - document - raw/imessage/_profiles/group-group-arya-brandon-dad.md
+- [[Group Arya, Caitlin, Ryan & Keith]] - document - raw/imessage/_profiles/group-group-arya-caitlin-keith.md
+- [[Group Arya, Dad, Mom & Family 2]] - document - raw/imessage/_profiles/group-group-arya-dad-mom-2.md
+- [[Group Austin Friends (Aniruddh, Dravin, Eva...)]] - document - raw/imessage/_profiles/group-group-aniruddh-dravin-eva.md
+- [[Group Griffin + Noah]] - document - raw/imessage/_profiles/group-group-griffin-noah.md
+- [[Group Griffin + Noah (2)]] - document - raw/imessage/_profiles/group-group-griffin-noah-2.md
+- [[Group Haan + Kevo (LA)]] - document - raw/imessage/_profiles/group-group-haan-kevo.md
+- [[Group Hunter + Rylen (UC Berkeley)]] - document - raw/imessage/_profiles/group-group-hunter-rylen.md
+- [[Group Hunter + Rylen (UC Berkeley, 2)]] - document - raw/imessage/_profiles/group-group-hunter-rylen-2.md
+- [[Group Isaac + Lewis (Renters)]] - document - raw/imessage/_profiles/group-group-isaac-lewis.md
+- [[Group Jacob + Noah + Sam (Austin)]] - document - raw/imessage/_profiles/group-group-jacob-noah-sam.md
+- [[Group Jake + Noah + Sam (Garcia)]] - document - raw/imessage/_profiles/group-group-jake-noah-sam.md
+- [[Group Jamal (NYC)]] - document - raw/imessage/_profiles/group-group-jamal.md
+- [[Group Jarrod + Nicole + Yosef (NashvilleLA Producers)]] - document - raw/imessage/_profiles/group-group-jarrod-nicole-yosef.md
+- [[Group Jason Gregory]] - document - raw/imessage/_profiles/group-group-jason.md
+- [[Group Jillian + Keith + Ryan (LA Prescription)]] - document - raw/imessage/_profiles/group-group-jillian-keith-ryan.md
+- [[Group John (Renter) + Mom]] - document - raw/imessage/_profiles/group-group-john-mom.md
+- [[Group Johny Hadar + Shanks (Producers LA)]] - document - raw/imessage/_profiles/group-group-johny-shanks.md
+- [[Group Jose (Renter) + Mom]] - document - raw/imessage/_profiles/group-group-jose-mom.md
+- [[Group KOKO + Keith + Ryan (LA Stylist)]] - document - raw/imessage/_profiles/group-group-koko-keith-ryan.md
+- [[Group Kalani + Ryan + Tyler (LA Prescription)]] - document - raw/imessage/_profiles/group-group-kalani-ryan-tyler.md
+- [[Group Keena (Renter) + Mom]] - document - raw/imessage/_profiles/group-group-keena-mom.md
+- [[Group Keith + Mom + Ryan]] - document - raw/imessage/_profiles/group-group-keith-mom-ryan.md
+- [[Group Keith + Ryan]] - document - raw/imessage/_profiles/group-group-keith-ryan.md
+- [[Group Keith + Ryan + Tyler (LA)]] - document - raw/imessage/_profiles/group-group-keith-ryan-tyler.md
+- [[Group Kelsey (Renter) + Mom]] - document - raw/imessage/_profiles/group-group-kelsey-mom.md
+- [[Group Kumar + Z (Austin Uncle)]] - document - raw/imessage/_profiles/group-group-kumar-z.md
+- [[Group LASA Friends (Aiden, Alex, Ananya...)]] - document - raw/imessage/_profiles/group-group-aiden-alex-ananya.md
+- [[Group LASA Friends (Amit, Avik, Chance...)]] - document - raw/imessage/_profiles/group-group-amit-avik-chance.md
+- [[Group Linh + Rishika (UC Berkeley)]] - document - raw/imessage/_profiles/group-group-linh-rishika.md
+- [[Group Louie + Tyler + Yosef (LA Producers)]] - document - raw/imessage/_profiles/group-group-louie-tyler-yosef.md
+- [[Group Lucy + Nick (LA Prescription)]] - document - raw/imessage/_profiles/group-group-lucy-nick.md
+- [[Group Luke (UCLA Globalization LA)]] - document - raw/imessage/_profiles/group-group-luke.md
+- [[Group Maanav + Mod + Sid (UC Berkeley)]] - document - raw/imessage/_profiles/group-group-maanav-mod-sid.md
+- [[Group Matt + Ryan + Score (RecordingLA)]] - document - raw/imessage/_profiles/group-group-matt-ryan-score.md
+- [[Group Mike + Zach (UC Berkeley)]] - document - raw/imessage/_profiles/group-group-mike-zach.md
+- [[Group Mikey + Zach (Silver Lining LA)]] - document - raw/imessage/_profiles/group-group-mikey-zach.md
+- [[Group Miles + Noah + Sam]] - document - raw/imessage/_profiles/group-group-miles-noah-sam.md
+- [[Group Mo + Pseuhas + Shervin (UC Berkeley)]] - document - raw/imessage/_profiles/group-group-mo-pseuhas-shervin.md
+- [[Group Mo + Ryan Xie]] - document - raw/imessage/_profiles/group-group-mo-ryan.md
+- [[Group Mo + Shervin (UC Berkeley)]] - document - raw/imessage/_profiles/group-group-mo-shervin.md
+- [[Group Mo + Shlok + Vihan (UC Berkeley NYC)]] - document - raw/imessage/_profiles/group-group-mo-shlok-vihan.md
+- [[Group Mo + Vihan (UC Berkeley NYC)]] - document - raw/imessage/_profiles/group-group-mo-vihan.md
+- [[Group Mom + REI (LA Rental)]] - document - raw/imessage/_profiles/group-group-mom-rei.md
+- [[Group Mom + Ryan Ogren]] - document - raw/imessage/_profiles/group-group-mom-ryan.md
+- [[Group Mom + Unknown (2)]] - document - raw/imessage/_profiles/group-group-mom-2.md
+- [[Group Mom + Unknown (3)]] - document - raw/imessage/_profiles/group-group-mom-3.md
+- [[Group Mom + Unknown (4)]] - document - raw/imessage/_profiles/group-group-mom-4.md
+- [[Group Mom + Unknown (5)]] - document - raw/imessage/_profiles/group-group-mom-5.md
+- [[Group Mom + Unknown (6)]] - document - raw/imessage/_profiles/group-group-mom-6.md
+- [[Group Mom + Unknown (7)]] - document - raw/imessage/_profiles/group-group-mom-7.md
+- [[Group Mom + Unknown (8)]] - document - raw/imessage/_profiles/group-group-mom-8.md
+- [[Group Mom + Unknown (9)]] - document - raw/imessage/_profiles/group-group-mom-9.md
+- [[Hanumankind (artist)]] - document - raw/imessage/groups/group-caitlin-ryan/2025/2025-08__group-caitlin-ryan.md
+- [[Home Slice Pizza (Austin)]] - document - raw/imessage/groups/group-amit-avik-chance/2025/2025-01__group-amit-avik-chance.md
+- [[Homepad]] - document - raw/imessage/individuals/homepad/2025/2025-12__homepad.md
+- [[Housepvrty (music producer)]] - document - raw/imessage/individuals/housepvrty/2024/2024-03__housepvrty.md
+- [[HumanX Conference (SF)]] - document - raw/imessage/individuals/mitch-sammys-uc-berkeley/2026/2026-04__mitch-sammys-uc-berkeley.md
+- [[Ian (SID)]] - document - raw/imessage/individuals/ian-sid/2024/2024-06__ian-sid.md
+- [[Jacob]] - document - raw/imessage/groups/group-jacob-noah-sam/2025/2025-03__group-jacob-noah-sam.md
+- [[Jacob Masuno (LASA)]] - document - raw/imessage/individuals/jacob-masuno-lasa/2025/2025-01__jacob-masuno-lasa.md
+- [[Jamal]] - document - raw/imessage/groups/group-jamal/2025/2025-07__group-jamal.md
+- [[James Harkin]] - document - raw/imessage/individuals/james-harkin/2025/2025-02__james-harkin.md
+- [[Jameson]] - document - raw/imessage/_profiles/jameson.md
+- [[Jarrod Gipson]] - document - raw/imessage/groups/group-jarrod-nicole-yosef/2025/2025-09__group-jarrod-nicole-yosef.md
+- [[Jason Gregory]] - document - raw/imessage/individuals/jason-gregory/2025/2025-07__jason-gregory.md
+- [[Jay Sethi]] - document - raw/imessage/individuals/jay-sethi/2024/2024-05__jay-sethi.md
+- [[Jean Parker (Producer  NYC)]] - document - raw/imessage/individuals/jean-parker-producer-la/2024/2024-04__jean-parker-producer-la.md
+- [[Jeff Marshall (W2App  Nexus)]] - document - raw/imessage/individuals/jeff-marshall/2024/2024-05__jeff-marshall.md
+- [[Jersey Jetski]] - document - raw/imessage/_profiles/jersey-jetski.md
+- [[Kalshi]] - document - raw/imessage/individuals/mychal-kendricks-malik-crypto-nfl-producer-la/2026/2026-04__mychal-kendricks-malik-crypto-nfl-producer-la.md
+- [[Kap Judge]] - document - raw/imessage/_profiles/kap-judge.md
+- [[Karthik Anna]] - document - workspaces/personal/raw/imessage/individuals/karthik-anna/2024/2024-08__karthik-anna.md
+- [[Ladi Saka (MerchTech)]] - document - raw/imessage/_profiles/ladi-saka-merch-tech.md
+- [[Larry (Adithya's music lawyer)]] - document - raw/imessage/groups/group-diana-larry-ryan/2024/2024-12__group-diana-larry-ryan.md
+- [[Laszlo Kopits (EF Program)_1]] - document - raw/imessage/individuals/laszlo-kopits-ef-program/2024/2024-08__laszlo-kopits-ef-program.md
+- [[Leaked]] - document - raw/imessage/_profiles/leaked.md
+- [[Lorenz Redlefsen (Austin)_1]] - document - raw/imessage/individuals/lorenz-redlefsen-austin/2025/2025-03__lorenz-redlefsen-austin.md
+- [[Lou (CryptoOracle)]] - document - raw/imessage/individuals/lou-cryptooracle/2024/2024-08__lou-cryptooracle.md
+- [[Luis]] - document - raw/imessage/_profiles/luis.md
+- [[Luis (Neighbor, LA)]] - document - raw/imessage/individuals/luis/2024/2024-05__luis.md
+- [[Luke (music exec)]] - document - raw/imessage/groups/group-keith-ryan/2024/2024-04__group-keith-ryan.md
+- [[Luke Whitney (UCLA Globalization class)]] - document - raw/imessage/individuals/luke-whitney-ucla-globalization-la/2025/2025-10__luke-whitney-ucla-globalization-la.md
+- [[MIT LaunchX SF alumni group]] - document - raw/imessage/groups/mit-launchx-sf/2025/2025-06__mit-launchx-sf.md
+- [[Maanav]] - document - raw/imessage/groups/group-maanav-mod-sid/2024/2024-04__group-maanav-mod-sid.md
+- [[Mack (Sound Factory LA)]] - document - raw/imessage/individuals/mack-post-sound-factory-la/2024/2024-12__mack-post-sound-factory-la.md
+- [[Magaly (Renter Showing)]] - document - raw/imessage/_profiles/magaly-renter-showing26.md
+- [[Magaly (RenterLA)]] - document - raw/imessage/individuals/magaly-renter-showing26/2026/2026-02__magaly-renter-showing26.md
+- [[Maria (Maintenance)]] - document - raw/imessage/_profiles/maria-maintanence.md
+- [[Maria (appliance maintenance coordinator)]] - document - raw/imessage/individuals/maria-maintanence/2025/2025-09__maria-maintanence.md
+- [[Mark Malstrom]] - document - raw/imessage/_profiles/group-group-christine-david-mark.md
+- [[Matt]] - document - raw/imessage/groups/group-matt-ryan-score/2024/2024-04__group-matt-ryan-score.md
+- [[Maxim (SpaceX)]] - document - raw/imessage/groups/group-divyesh-maxim/2024/2024-03__group-divyesh-maxim.md
+- [[Michael Apan (LA techblockchain connector)]] - document - raw/imessage/individuals/michael-apan/2025/2025-10__michael-apan.md
+- [[Michelle Allen (All State)]] - document - raw/imessage/_profiles/michelle-allen-all-state.md
+- [[Michelle Allen (Allstate insurance)]] - document - raw/imessage/individuals/michelle-allen-all-state/2025/2025-11__michelle-allen-all-state.md
+- [[Mike]] - document - raw/imessage/groups/group-mike-zach/2024/2024-08__group-mike-zach.md
+- [[Miles]] - document - raw/imessage/groups/group-miles-noah-sam/2026/2026-03__group-miles-noah-sam.md
+- [[Miles Noah]] - document - raw/imessage/individuals/miles-noah/2024/2024-08__miles-noah.md
+- [[Mod]] - document - raw/imessage/groups/group-maanav-mod-sid/2024/2024-04__group-maanav-mod-sid.md
+- [[Mom (Kumar)]] - document - raw/imessage/groups/group-austin-mom/2024/2024-12__group-austin-mom.md
+- [[Mychal (ex-Eagles player)]] - document - raw/imessage/groups/group-caitlin-mychal-ryan/2025/2025-08__group-caitlin-mychal-ryan.md
+- [[NOVA  Outerscope team]] - document - raw/imessage/groups/nova-outerscope/2025/2025-11__nova-outerscope.md
+- [[Nandini Aunty]] - document - raw/imessage/individuals/nandini-aunty-bay-area-california/2025/2025-10__nandini-aunty-bay-area-california.md
+- [[Nara (RenterShowing)]] - document - workspaces/personal/raw/imessage/_profiles/nara-renter-showing26.md
+- [[Narayanan (Dhamo Uncle Loma Linda)]] - document - raw/imessage/_profiles/group-group-dhamo-narayanan.md
+- [[Nathan Prabhat]] - document - raw/imessage/individuals/nathan-prabhat-uc-berkeley/2025/2025-04__nathan-prabhat-uc-berkeley.md
+- [[Nathan Tran]] - document - raw/imessage/individuals/nathan-tran-uc-berkeley/2026/2026-03__nathan-tran-uc-berkeley.md
+- [[Nedal (RenterShowing)]] - document - workspaces/personal/raw/imessage/_profiles/nedal-renter-showing.md
+- [[Neek]] - document - raw/imessage/groups/group-geno-neek-tito/2024/2024-08__group-geno-neek-tito.md
+- [[Neema Amya]] - document - workspaces/personal/raw/imessage/_profiles/neema-amya.md
+- [[Neeraj Prabhat]] - document - raw/imessage/individuals/neeraj-prabhat-adarsh-uc-berkeley/2025/2025-03__neeraj-prabhat-adarsh-uc-berkeley.md
+- [[Neil (Finality Capital NYC)]] - document - raw/imessage/individuals/neil-nick-finalitycapital-nyc/2025/2025-06__neil-nick-finalitycapital-nyc.md
+- [[Neil Towari]] - document - raw/imessage/individuals/neil-towari-uc-berkeley/2025/2025-07__neil-towari-uc-berkeley.md
+- [[Nina]] - document - workspaces/personal/raw/imessage/_profiles/nina.md
+- [[Nishad Naik (Uday's son)_1]] - document - raw/imessage/individuals/nishad-naik-uday-son/2024/2024-03__nishad-naik-uday-son.md
+- [[Nvidia GTC Conference]] - document - raw/imessage/individuals/aniruth-narayanan-uc-berkeley/2026/2026-03__aniruth-narayanan-uc-berkeley.md
+- [[Outerscope Records]] - document - raw/imessage/individuals/caitlin/2025/2025-05__caitlin.md
+- [[PEP 661 Sentinel Values (Python 3.15)]] - document - workspaces/personal/raw/reddit/Python/2026-04-28__1sxmg6z__pep-661-sentinel-values-has-been-accepted-for-release-in-3-1.md
+- [[Paige (HingeTinder SD)]] - document - raw/imessage/individuals/paige-hinge-sd/2026/2026-03__paige-hinge-sd.md
+- [[Pari Uncle (Austin)]] - document - raw/imessage/individuals/pari-uncle/2025/2025-10__pari-uncle.md
+- [[Parth (LA group)]] - document - raw/imessage/groups/group-akshar-parth/2025/2025-07__group-akshar-parth.md
+- [[Peter]] - document - raw/imessage/groups/group-peter-tyler-yosef/2025/2025-09__group-peter-tyler-yosef.md
+- [[Pi Kappa Alpha (Pi Kap)]] - document - raw/imessage/groups/group-arya-hunter-rylen/2025/2025-05__group-arya-hunter-rylen.md
+- [[Prasad Uncle (CPA)]] - document - raw/imessage/individuals/prasad-uncle-cpa/2025/2025-04__prasad-uncle-cpa.md
+- [[REI  Fernando (property manager)]] - document - raw/imessage/groups/group-anthony-dad-mom-2/2024/2024-05__group-anthony-dad-mom-2.md
+- [[Raz Evan (Inspector Friend)]] - document - raw/imessage/_profiles/raz-evan-inspector-friend.md
+- [[Rebecca Otto Cameron Jordan Mychal Kendricks]] - document - raw/imessage/_profiles/group-group-cameron-mychal-rebecca.md
+- [[Reed Hazard]] - document - raw/imessage/groups/group-reed/2024/2024-05__group-reed.md
+- [[Rene Noah]] - document - raw/imessage/_profiles/group-group-christine-david-mark.md
+- [[Rhea (Prescription Songs)]] - document - raw/imessage/groups/group-caitlin-dr-rhea/2025/2025-08__group-caitlin-dr-rhea.md
+- [[Rishika (Dad's contact, uncle)]] - document - raw/imessage/individuals/rishika-dad/2024/2024-11__rishika-dad.md
+- [[Riz (Zobayer's uncle  renter contact)]] - document - raw/imessage/individuals/riz-zobayer-renter-showing/2025/2025-09__riz-zobayer-renter-showing.md
+- [[Ryan (group contact)]] - document - raw/imessage/groups/group-adithya-ryan-tyler/2024/2024-07__group-adithya-ryan-tyler.md
+- [[Ryan McHargue]] - document - raw/imessage/individuals/ryan-mchargue/2025/2025-04__ryan-mchargue.md
+- [[Ryder Johnson (producer)]] - document - raw/imessage/groups/group-caitlin-rhea/2025/2025-05__group-caitlin-rhea.md
+- [[SKALE (blockchain startup)]] - document - raw/imessage/individuals/aamir-khan-uc-berkeley/2024/2024-08__aamir-khan-uc-berkeley.md
+- [[Sai]] - document - raw/imessage/groups/group-dravin-sai-sam/2026/2026-01__group-dravin-sai-sam.md
+- [[Sai Guraijala]] - document - raw/imessage/_profiles/sai-guraijala-austin-casco.md
+- [[Sam (Austin friend)]] - document - raw/imessage/groups/group-dravin-ryan-sam/2026/2026-03__group-dravin-ryan-sam.md
+- [[Sam (friendgaming)]] - document - raw/imessage/groups/group-brennan-noah-sam/2026/2026-05__group-brennan-noah-sam.md
+- [[Sam McGrath (LA)_1]] - document - raw/imessage/_profiles/sam-mcgrath-la.md
+- [[Samara (Hinge, SDSunnyvale)]] - document - raw/imessage/individuals/samara-hinge-sd/2026/2026-03__samara-hinge-sd.md
+- [[Sanaya (Hinge, Dallas)]] - document - raw/imessage/individuals/sanaya-hinge-dallas/2025/2025-07__sanaya-hinge-dallas.md
+- [[Sandeep (neighbor)]] - document - raw/imessage/groups/group-avinash-sandeep/2025/2025-12__group-avinash-sandeep.md
+- [[Saniyya (Hinge, Austin)]] - document - raw/imessage/individuals/saniyya-hinge-austin/2025/2025-07__saniyya-hinge-austin.md
+- [[Sansita (Hinge, LATorrance)]] - document - raw/imessage/individuals/sansita-hinge-la/2025/2025-08__sansita-hinge-la.md
+- [[Sarah Chieng (Austin)]] - document - raw/imessage/_profiles/sarah-chieng-austin.md
+- [[Sarah Chieng (Austin)_1]] - document - workspaces/personal/raw/imessage/individuals/sarah-chieng-austin/2026/2026-03__sarah-chieng-austin.md
+- [[Sashi Anna]] - document - workspaces/personal/raw/imessage/individuals/sashi-anna/2025/2025-04__sashi-anna.md
+- [[Sasoon]] - document - raw/imessage/groups/group-amadeus-evan-sasoon/2025/2025-11__group-amadeus-evan-sasoon.md
+- [[Savannah (Hinge Austin)]] - document - workspaces/personal/raw/imessage/individuals/savannah-hinge-austin/2026/2026-03__savannah-hinge-austin.md
+- [[Savitha (Hinge Dallas)]] - document - workspaces/personal/raw/imessage/individuals/savitha-hinge-dallas/2025/2025-07__savitha-hinge-dallas.md
+- [[Savraj Prabhat (USC LA)]] - document - workspaces/personal/raw/imessage/individuals/savraj-prabhat-usc-la/2024/2024-12__savraj-prabhat-usc-la.md
+- [[Savraj Prabhat (USCLA)]] - document - raw/imessage/_profiles/savraj-prabhat-usc-la.md
+- [[Sayli (NYCPrinceton)]] - document - workspaces/personal/raw/imessage/individuals/sayli-nyc/2025/2025-07__sayli-nyc.md
+- [[Score]] - document - raw/imessage/groups/group-ryan-score/2024/2024-04__group-ryan-score.md
+- [[Scott Broock]] - document - workspaces/personal/raw/imessage/individuals/scott-broock/2024/2024-10__scott-broock.md
+- [[Shahiya (Hinge LA)]] - document - workspaces/personal/raw/imessage/individuals/shahiya-hinge-la/2026/2026-02__shahiya-hinge-la.md
+- [[Shailee (Hinge Dallas)]] - document - workspaces/personal/raw/imessage/individuals/shailee-hinge-dallas/2026/2026-03__shailee-hinge-dallas.md
+- [[Shak Stzy (Music Artist)]] - document - raw/imessage/individuals/mychal-kendricks-malik-crypto-nfl-producer-la/2025/2025-08__mychal-kendricks-malik-crypto-nfl-producer-la.md
+- [[Shakthi (NYC, Hinge)]] - document - workspaces/personal/raw/imessage/individuals/shakthi-nyc/2025/2025-07__shakthi-nyc.md
+- [[Shante (TinderAustin)]] - document - workspaces/personal/raw/imessage/individuals/shante-hinge-austin/2026/2026-02__shante-hinge-austin.md
+- [[Sharaf Zaman (UT Austin)]] - document - raw/imessage/_profiles/sharaf-zaman-ut-austin.md
+- [[Sharaf Zaman (UT Austin)_1]] - document - workspaces/personal/raw/imessage/individuals/sharaf-zaman-ut-austin/2026/2026-03__sharaf-zaman-ut-austin.md
+- [[Shasta Subramaniam (Union CityLA)]] - document - workspaces/personal/raw/imessage/individuals/shasta-subramaniam-union-city-la/2025/2025-10__shasta-subramaniam-union-city-la.md
+- [[Shawn (prospective renter)]] - document - workspaces/personal/raw/imessage/individuals/shawn-renter-showing26/2026/2026-03__shawn-renter-showing26.md
+- [[Shefali (Hinge LA)]] - document - workspaces/personal/raw/imessage/individuals/shefali-hinge-la/2026/2026-02__shefali-hinge-la.md
+- [[Shervin (Crypto Recruiter)]] - document - raw/imessage/individuals/shervin-crypto-recruiter/2024/2024-08__shervin-crypto-recruiter.md
+- [[Sheyla (Renter, 2026)]] - document - raw/imessage/individuals/sheyla-renter-showing26/2026/2026-03__sheyla-renter-showing26.md
+- [[Shiv Nagamandla]] - document - raw/imessage/individuals/shiv-nagamandla/2026/2026-03__shiv-nagamandla.md
+- [[Shivani (Hinge, Austin)]] - document - raw/imessage/individuals/shivani-hinge-austin/2025/2025-04__shivani-hinge-austin.md
+- [[Shlok (NYC)]] - document - raw/imessage/groups/group-adi-shlok/2025/2025-06__group-adi-shlok.md
+- [[Shreya (New York)]] - document - raw/imessage/individuals/shreya-new-york/2024/2024-12__shreya-new-york.md
+- [[Shriya (NYC  Jersey)]] - document - raw/imessage/individuals/shriya-nyc/2025/2025-06__shriya-nyc.md
+- [[Shriya (Shaadi match)]] - document - raw/imessage/individuals/shriya-shaadi/2024/2024-11__shriya-shaadi.md
+- [[Shruthi (NYC  Hinge)]] - document - raw/imessage/individuals/shruthi-nyc/2025/2025-07__shruthi-nyc.md
+- [[Sid (group chat contact)]] - document - raw/imessage/groups/group-sid/2026/2026-01__group-sid.md
+- [[Sports Betting DEX Project]] - document - raw/imessage/groups/group-adarsh-prabhat-rushil-2/2025/2025-03__group-adarsh-prabhat-rushil-2.md
+- [[Sridhar Sundaram (Uncle)]] - document - raw/imessage/individuals/sridhar-sundaram-uncle/2025/2025-05__sridhar-sundaram-uncle.md
+- [[Sriram]] - document - raw/imessage/groups/group-mom-6/2025/2025-04__group-mom-6.md
+- [[Stacey (landlady)]] - document - raw/imessage/groups/group-brandon-stacey/2024/2024-03__group-brandon-stacey.md
+- [[Steven (NYC Friend)]] - document - raw/imessage/individuals/steven-uncle-nyc/2025/2025-06__steven-uncle-nyc.md
+- [[Sub Focus Concert (Shrine, LA)]] - document - raw/imessage/individuals/brandon-co-beats-la/2025/2025-10__brandon-co-beats-la.md
+- [[Sunnyvale Airbnb (524 E Washington Ave)]] - document - raw/imessage/individuals/miriah-hinge-sd/2026/2026-03__miriah-hinge-sd.md
+- [[Taylor]] - document - raw/imessage/_profiles/taylor.md
+- [[Tejes Srinivasan (NYC)]] - document - raw/imessage/individuals/tejes-srinivasan-nyc/2025/2025-07__tejes-srinivasan-nyc.md
+- [[Terri (renter showing)]] - document - raw/imessage/individuals/terri-renter-showing26/2026/2026-03__terri-renter-showing26.md
+- [[Thane Aunty Pari]] - document - raw/imessage/_profiles/group-group-arya-dad-mom-3.md
+- [[Tito]] - document - raw/imessage/groups/group-geno-neek-tito/2024/2024-08__group-geno-neek-tito.md
+- [[Tiya (NYC)]] - document - raw/imessage/individuals/tiya-nyc/2025/2025-06__tiya-nyc.md
+- [[Usha (Aunty, Bay Area  Santa Clara)]] - document - raw/imessage/individuals/usha-manju-aunty-bay-area/2025/2025-01__usha-manju-aunty-bay-area.md
+- [[Veer (Stylist LA)]] - document - raw/imessage/individuals/veer-stylist-la/2025/2025-07__veer-stylist-la.md
+- [[Victor Cardenas]] - document - raw/imessage/individuals/victor-cardenas/2025/2025-01__victor-cardenas.md
+- [[Vihaan]] - document - raw/imessage/individuals/maanav-khaitan-uc-berkeley-nyc/2025/2025-02__maanav-khaitan-uc-berkeley-nyc.md
+- [[Vishnu Rajan (Austin)]] - document - raw/imessage/individuals/vishnu-rajan-austin/2025/2025-07__vishnu-rajan-austin.md
+- [[Vitals (Producer LA)]] - document - raw/imessage/individuals/vitals-producer-la/2024/2024-04__vitals-producer-la.md
+- [[Warm Audio (gear brand)]] - document - raw/imessage/groups/group-matt-ryan-score/2024/2024-04__group-matt-ryan-score.md
+- [[Wes Cyphers (LA)]] - document - raw/imessage/_profiles/wes-cyphers-la.md
+- [[Yoshi (NYC, Hinge)]] - document - raw/imessage/individuals/yoshi-nyc/2025/2025-07__yoshi-nyc.md
+- [[Yoshiro (UCLA)]] - document - raw/imessage/individuals/yoshiro-ucla/2026/2026-02__yoshiro-ucla.md
+- [[Yvette (RenterShowing)]] - document - raw/imessage/_profiles/yvette-renter-showing.md
+- [[Yvs (Village LA)]] - document - raw/imessage/individuals/yvs-village-la/2024/2024-12__yvs-village-la.md
+- [[Z Austin Raj]] - document - raw/imessage/_profiles/group-group-rishika-z.md
+- [[Zach  Jesse (Brother, Cruise, Austin)]] - document - raw/imessage/_profiles/zach-jesse-brother-cruise-austin.md
+- [[Zahir (LASA connection)]] - document - raw/imessage/individuals/zahir-lasa/2025/2025-01__zahir-lasa.md
+- [[Zander (middle school  band)]] - document - raw/imessage/individuals/zander-middle-school/2024/2024-12__zander-middle-school.md
+- [[Zaos Prabhat (UC BerkeleyLA)]] - document - raw/imessage/_profiles/zaos-prabhat-uc-berkeley-la.md
+- [[Zenith Jahid]] - document - workspaces/personal/raw/imessage/individuals/zenith-jahid/2026/2026-03__zenith-jahid.md
+- [[Ziya (NYC  Hinge)]] - document - workspaces/personal/raw/imessage/individuals/ziya-nyc/2025/2025-06__ziya-nyc.md
+- [[Zoya (Hinge LA)]] - document - workspaces/personal/raw/imessage/individuals/zoya-hinge-la/2026/2026-02__zoya-hinge-la.md
+- [[outerscope.xyz (Venture Studio)]] - document - raw/imessage/groups/group-adarsh-prabhat-rushil/2024/2024-10__group-adarsh-prabhat-rushil.md
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Dating_Roster_(mixed)
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 198 edges to [[_COMMUNITY_Austin Dating + Locals]]
+- 139 edges to [[_COMMUNITY_LA Dating + LA Network]]
+- 115 edges to [[_COMMUNITY_UC Berkeley + a16z]]
+- 91 edges to [[_COMMUNITY_Sylmar Property + Tenants]]
+- 87 edges to [[_COMMUNITY_NYCUSC (Akshar circle)]]
+- 48 edges to [[_COMMUNITY_Amsterdam Trip + Festival Crew]]
+- 39 edges to [[_COMMUNITY_CryptoWeb3 Network]]
+- 38 edges to [[_COMMUNITY_Rental Showings (LA)]]
+- 36 edges to [[_COMMUNITY_Hinge + AI Music Project]]
+- 36 edges to [[_COMMUNITY_LASA Classmates]]
+- 34 edges to [[_COMMUNITY_Prescription Songs + Music]]
+- 32 edges to [[_COMMUNITY_Crypto Events + Investors]]
+- 22 edges to [[_COMMUNITY_Bay Area + Slash]]
+- 15 edges to [[_COMMUNITY_LA Music Industry (Prescription)]]
+- 8 edges to [[_COMMUNITY_Renter Showings 2026]]
+- 7 edges to [[_COMMUNITY_Startup Accelerators]]
+- 5 edges to [[_COMMUNITY_Sylmar House + Range Music]]
+- 3 edges to [[_COMMUNITY_Community 25]]
+- 3 edges to [[_COMMUNITY_Octane + Synapse AI]]
+- 3 edges to [[_COMMUNITY_Community 26]]
+- 3 edges to [[_COMMUNITY_Community 22]]
+- 3 edges to [[_COMMUNITY_Bay Area Family]]
+- 3 edges to [[_COMMUNITY_Indian Film Composers]]
+- 3 edges to [[_COMMUNITY_AI Voice Modeling Project]]
+- 3 edges to [[_COMMUNITY_Layer (Web3 Company)]]
+- 2 edges to [[_COMMUNITY_Community 60]]
+- 2 edges to [[_COMMUNITY_Community 46]]
+- 2 edges to [[_COMMUNITY_Community 21]]
+- 2 edges to [[_COMMUNITY_Community 51]]
+- 2 edges to [[_COMMUNITY_Community 47]]
+- 2 edges to [[_COMMUNITY_Community 35]]
+- 2 edges to [[_COMMUNITY_Community 33]]
+- 2 edges to [[_COMMUNITY_Sanvi (Sister)]]
+- 2 edges to [[_COMMUNITY_Community 57]]
+- 2 edges to [[_COMMUNITY_Community 42]]
+- 2 edges to [[_COMMUNITY_Community 53]]
+- 2 edges to [[_COMMUNITY_Community 30]]
+- 2 edges to [[_COMMUNITY_Slash + Consensus]]
+- 2 edges to [[_COMMUNITY_Community 55]]
+- 2 edges to [[_COMMUNITY_Community 40]]
+- 2 edges to [[_COMMUNITY_Community 38]]
+- 2 edges to [[_COMMUNITY_Community 50]]
+- 2 edges to [[_COMMUNITY_Community 34]]
+- 1 edge to [[_COMMUNITY_Community 62]]
+- 1 edge to [[_COMMUNITY_Community 45]]
+- 1 edge to [[_COMMUNITY_Community 61]]
+- 1 edge to [[_COMMUNITY_Community 37]]
+- 1 edge to [[_COMMUNITY_Community 49]]
+- 1 edge to [[_COMMUNITY_Community 59]]
+- 1 edge to [[_COMMUNITY_Community 48]]
+- 1 edge to [[_COMMUNITY_Community 32]]
+- 1 edge to [[_COMMUNITY_Community 56]]
+- 1 edge to [[_COMMUNITY_Community 31]]
+- 1 edge to [[_COMMUNITY_Community 39]]
+- 1 edge to [[_COMMUNITY_Community 36]]
+- 1 edge to [[_COMMUNITY_Community 29]]
+- 1 edge to [[_COMMUNITY_Community 52]]
+- 1 edge to [[_COMMUNITY_Community 54]]
+- 1 edge to [[_COMMUNITY_Community 58]]
+- 1 edge to [[_COMMUNITY_Community 63]]
+- 1 edge to [[_COMMUNITY_Community 44]]
+- 1 edge to [[_COMMUNITY_Community 43]]
+- 1 edge to [[_COMMUNITY_Community 41]]
+
+## Top bridge nodes
+- [[Adithya]] - degree 1355, connects to 63 communities
+- [[Dr. Satasivan]] - degree 2, connects to 1 community

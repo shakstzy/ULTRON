@@ -1,0 +1,16 @@
+---
+source_file: "raw/imessage/individuals/maria-maintanence/2025/2025-09__maria-maintanence.md"
+type: "document"
+community: "Dating Roster (mixed)"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Dating_Roster_(mixed)
+---
+
+# Maria (appliance maintenance coordinator)
+
+## Connections
+- [[Adithya]] - `messages_with` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Dating_Roster_(mixed)

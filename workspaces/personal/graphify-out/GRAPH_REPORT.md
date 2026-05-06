@@ -1,11 +1,12 @@
-# Graph Report - /Users/shakstzy/ULTRON/workspaces/personal/raw  (2026-05-05)
+# Graph Report - /Users/shakstzy/ULTRON/workspaces/personal/raw  (2026-05-06)
 
 ## Corpus Check
-- Large corpus: 3972 files · ~1,985,601 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder, or use --no-semantic to run AST-only.
+- 3972 files · ~1,985,601 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1565 nodes · 3149 edges · 67 communities detected
-- Extraction: 70% EXTRACTED · 29% INFERRED · 1% AMBIGUOUS · INFERRED: 912 edges (avg confidence: 0.82)
+- 1565 nodes · 3131 edges · 66 communities detected
+- Extraction: 71% EXTRACTED · 29% INFERRED · 0% AMBIGUOUS · INFERRED: 912 edges (avg confidence: 0.82)
 - Token cost: 18,000 input · 3,500 output
 
 ## Community Hubs (Navigation)
@@ -15,8 +16,8 @@
 - [[_COMMUNITY_UC Berkeley + a16z|UC Berkeley + a16z]]
 - [[_COMMUNITY_Sylmar Property + Tenants|Sylmar Property + Tenants]]
 - [[_COMMUNITY_NYCUSC (Akshar circle)|NYC/USC (Akshar circle)]]
-- [[_COMMUNITY_CryptoWeb3 Network|Crypto/Web3 Network]]
 - [[_COMMUNITY_Amsterdam Trip + Festival Crew|Amsterdam Trip + Festival Crew]]
+- [[_COMMUNITY_CryptoWeb3 Network|Crypto/Web3 Network]]
 - [[_COMMUNITY_Crypto Events + Investors|Crypto Events + Investors]]
 - [[_COMMUNITY_Rental Showings (LA)|Rental Showings (LA)]]
 - [[_COMMUNITY_Prescription Songs + Music|Prescription Songs + Music]]
@@ -28,17 +29,17 @@
 - [[_COMMUNITY_Renter Showings 2026|Renter Showings 2026]]
 - [[_COMMUNITY_Sylmar House + Range Music|Sylmar House + Range Music]]
 - [[_COMMUNITY_Octane + Synapse AI|Octane + Synapse AI]]
-- [[_COMMUNITY_Bay Area Family|Bay Area Family]]
 - [[_COMMUNITY_AI Voice Modeling Project|AI Voice Modeling Project]]
-- [[_COMMUNITY_Sanvi (Sister) + Barcelona|Sanvi (Sister) + Barcelona]]
-- [[_COMMUNITY_LASA Alumni (Seattle)|LASA Alumni (Seattle)]]
-- [[_COMMUNITY_Forge Accelerator (Berkeley)|Forge Accelerator (Berkeley)]]
-- [[_COMMUNITY_LASA (LizLiam)|LASA (Liz/Liam)]]
-- [[_COMMUNITY_Indian Film Composers|Indian Film Composers]]
+- [[_COMMUNITY_Bay Area Family|Bay Area Family]]
+- [[_COMMUNITY_Community 21|Community 21]]
+- [[_COMMUNITY_Community 22|Community 22]]
 - [[_COMMUNITY_Layer (Web3 Company)|Layer (Web3 Company)]]
-- [[_COMMUNITY_Crypto VC Firms|Crypto VC Firms]]
 - [[_COMMUNITY_Slash + Consensus|Slash + Consensus]]
-- [[_COMMUNITY_Sapient + LOTTO (Crypto)|Sapient + LOTTO (Crypto)]]
+- [[_COMMUNITY_Community 25|Community 25]]
+- [[_COMMUNITY_Community 26|Community 26]]
+- [[_COMMUNITY_Sanvi (Sister)|Sanvi (Sister)]]
+- [[_COMMUNITY_Indian Film Composers|Indian Film Composers]]
+- [[_COMMUNITY_Community 29|Community 29]]
 - [[_COMMUNITY_Community 30|Community 30]]
 - [[_COMMUNITY_Community 31|Community 31]]
 - [[_COMMUNITY_Community 32|Community 32]]
@@ -75,13 +76,12 @@
 - [[_COMMUNITY_Community 63|Community 63]]
 - [[_COMMUNITY_Community 64|Community 64]]
 - [[_COMMUNITY_Community 65|Community 65]]
-- [[_COMMUNITY_Community 66|Community 66]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Hinge (dating app)` - 194 edges
-2. `Los Angeles, CA` - 177 edges
-3. `UC Berkeley` - 128 edges
-4. `New York City` - 93 edges
+2. `Los Angeles, CA` - 176 edges
+3. `UC Berkeley` - 127 edges
+4. `New York City` - 91 edges
 5. `Austin, TX` - 81 edges
 6. `Austin, TX` - 70 edges
 7. `Music Production` - 46 edges
@@ -90,16 +90,16 @@
 10. `Klein Court (Adithya's rental property, Sylmar CA)` - 27 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Adi (Hinge, Austin / UT)` --mentioned_by--> `UC Berkeley`  [AMBIGUOUS]
-  raw/imessage/individuals/adi-hinge-austin/2026/2026-02__adi-hinge-austin.md → workspaces/personal/raw/imessage/individuals/zaos-prabhat-uc-berkeley-la/2024/2024-03__zaos-prabhat-uc-berkeley-la.md
-- `Zaos Prabhat (UC Berkeley/LA)` --semantically_similar_to--> `Prabhat Nuthakki (UC Berkeley)`  [AMBIGUOUS] [semantically similar]
-  raw/imessage/_profiles/zaos-prabhat-uc-berkeley-la.md → raw/imessage/groups/unkal/2024/2024-03__unkal.md
 - `Rue (Ruben / friend of Pseuhas, Berkeley)` --studies_at--> `UC Berkeley`  [INFERRED]
   raw/imessage/individuals/pseuhas-uc-berkeley-nyc/2025/2025-08__pseuhas-uc-berkeley-nyc.md → workspaces/personal/raw/imessage/individuals/zaos-prabhat-uc-berkeley-la/2024/2024-03__zaos-prabhat-uc-berkeley-la.md
-- `Harshil (UC Berkeley)` --semantically_similar_to--> `Columbia University`  [AMBIGUOUS] [semantically similar]
-  raw/imessage/individuals/harshil-uc-berkeley/2024/2024-05__harshil-uc-berkeley.md → raw/imessage/individuals/isiri-nyc/2025/2025-07__isiri-nyc.md
 - `Adarsh Pinjala` --studies_at--> `UC Berkeley`  [INFERRED]
   raw/imessage/individuals/adarsh-pinjala/2024/2024-03__adarsh-pinjala.md → workspaces/personal/raw/imessage/individuals/zaos-prabhat-uc-berkeley-la/2024/2024-03__zaos-prabhat-uc-berkeley-la.md
+- `Nick Guilmette (LA)` --lives_in--> `Los Angeles, CA`  [INFERRED]
+  workspaces/personal/raw/imessage/_profiles/nick-guilmette-la.md → raw/imessage/individuals/shevanti-hinge-la/2026/2026-02__shevanti-hinge-la.md
+- `Alpin Yukseloglu (UC Berkeley / crypto/AI)` --studies_at--> `UC Berkeley`  [INFERRED]
+  raw/imessage/individuals/alpin-yukseloglu-uc-berkeley/2025/2025-06__alpin-yukseloglu-uc-berkeley.md → workspaces/personal/raw/imessage/individuals/zaos-prabhat-uc-berkeley-la/2024/2024-03__zaos-prabhat-uc-berkeley-la.md
+- `Aniruth Narayanan (UC Berkeley)` --studies_at--> `UC Berkeley`  [INFERRED]
+  raw/imessage/_profiles/aniruth-narayanan-uc-berkeley.md → workspaces/personal/raw/imessage/individuals/zaos-prabhat-uc-berkeley-la/2024/2024-03__zaos-prabhat-uc-berkeley-la.md
 
 ## Hyperedges (group relationships)
 - **UC Berkeley friends/peers group** —  [EXTRACTED 1.00]
@@ -229,14 +229,14 @@
 
 ### Community 0 - "Dating Roster (mixed)"
 Cohesion: 0.01
-Nodes (326): Aarti (Dad), Aarti (ex-girlfriend), Abby (Hinge / Dallas), Abhi (NYC friend, group-abhi-akshar), Abhishek, Ace (intro to Tommy, GTM/VFX), Addi / Adithi (Hinge, Dallas/Austin), Adi (Hinge, Austin / UT) (+318 more)
+Nodes (327): Aaniyah (Hinge / San Antonio), Aarti (Dad), Aarti (ex-girlfriend), Abby (Hinge / Dallas), Abhi (NYC friend, group-abhi-akshar), Abhishek, Ace (intro to Tommy, GTM/VFX), Addi / Adithi (Hinge, Dallas/Austin) (+319 more)
 
 ### Community 1 - "Austin Dating + Locals"
-Cohesion: 0.02
-Nodes (211): Abhi (Hinge / Austin), Dr. Qin (Acupuncture Doctor, Austin), Aditya Desai (LASA / Austin), Aleena (Hinge, Austin), Alefia (Hinge, Austin), Amisha (Hinge, NYC/Jersey), Amru (Hinge, Dallas/Austin), Ana (Hinge, Austin) (+203 more)
+Cohesion: 0.01
+Nodes (212): Abhi (Hinge / Austin), Dr. Qin (Acupuncture Doctor, Austin), Aditya Desai (LASA / Austin), Aleena (Hinge, Austin), Alefia (Hinge, Austin), Amisha (Hinge, NYC/Jersey), Amru (Hinge, Dallas/Austin), Ana (Hinge, Austin) (+204 more)
 
 ### Community 2 - "LA Dating + LA Network"
-Cohesion: 0.02
+Cohesion: 0.01
 Nodes (171): Alan Rodrigo (music producer, LA), Alejandra (Tinder, LA), Ana (Hinge, LA), Anabhra (Hinge, LA), Ananya (Hinge, LA/Riverside), Andrew (Cedar, LA), Angelica (Hinge LA), Anisha (Hinge LA) (+163 more)
 
 ### Community 3 - "UC Berkeley + a16z"
@@ -251,13 +251,13 @@ Nodes (120): 210 Auto Body (Burbank CA), Aarti (ex-girlfriend, LA), Adamaris (Re
 Cohesion: 0.02
 Nodes (97): Aasritha (NYC / Hinge), Abhi (NYC / Hinge), Abhi Shah (USC / Akshar / LA), Abraham (Crypto / LightNode Ventures, LA), Aditi (NYC, Hinge), Aggy (Akshar Prabhat, USC, San Ramon / NYC), Aggy (Akshar/Prabhat USC, San Ramon), Akshar (USC, NYC) (+89 more)
 
-### Community 6 - "Crypto/Web3 Network"
-Cohesion: 0.04
-Nodes (64): Abraham (crypto / Light Node Ventures), Alex Duckworth (crypto), Alpin Yukseloglu (UC Berkeley / crypto/AI), Amos (Music/Crypto, LA), Andrew Liutev (Crypto), Andy (Blockchain, UC Berkeley), AthleteCoin, AthleteCoin (+56 more)
-
-### Community 7 - "Amsterdam Trip + Festival Crew"
+### Community 6 - "Amsterdam Trip + Festival Crew"
 Cohesion: 0.05
 Nodes (61): Adarsh (friend, pseu crew), Adarsh Pinjala, Amsterdam, Amsterdam Trip (March 2024), Ashank Parikh UC Berkeley, Ben (music/LA friend), Beyond Wonderland Festival, BlackRock (+53 more)
+
+### Community 7 - "Crypto/Web3 Network"
+Cohesion: 0.04
+Nodes (50): Abraham (crypto / Light Node Ventures), Alex Duckworth (crypto), Alpin Yukseloglu (UC Berkeley / crypto/AI), Andrew Liutev (Crypto), Andy (Blockchain, UC Berkeley), AthleteCoin, AthleteCoin, Avalon Hollywood (+42 more)
 
 ### Community 8 - "Crypto Events + Investors"
 Cohesion: 0.05
@@ -280,8 +280,8 @@ Cohesion: 0.06
 Nodes (39): Arthur Embry (LASA), Arthur Embry (LASA), Arushi (LASA), Avik Ahuja (LASA), Bela McScoggin (LASA Austin), Chance Reeve, Chris Smith (LASA), Delvia Zhang (LASA) (+31 more)
 
 ### Community 13 - "Bay Area + Slash"
-Cohesion: 0.12
-Nodes (16): Divyesh Khatri, Durgi Uncle (Bay Area), FUNSPOT (Logic project / song), GDC (Game Developers Conference), Jae (Hinge SD), Jasmine Zhang (UC Berkeley), Kevin Bai (SF), Kevin Bai (Slash) (+8 more)
+Cohesion: 0.07
+Nodes (29): Amos (Music/Crypto, LA), Brandon Encrypto, Coinbase, Crypto / Web3, Divyesh Khatri, Durgi Uncle (Bay Area), Encrypto.fun (crypto card startup), FUNSPOT (Logic project / song) (+21 more)
 
 ### Community 14 - "LA Music Industry (Prescription)"
 Cohesion: 0.14
@@ -303,177 +303,177 @@ Nodes (5): Austin Allen Davis (Renter, Music Industry), Avinash (Granada Hills),
 Cohesion: 0.5
 Nodes (4): Gio (Octane / Perspectus AI), Octane, Octane / Perspectus AI, Synapse (AI evaluation platform)
 
-### Community 19 - "Bay Area Family"
-Cohesion: 0.5
-Nodes (4): Bay Area, Nandini Aunty (Bay Area), Nikhil Nagarajan (Bay Area), Nivetha (Hinge/SF)
-
-### Community 20 - "AI Voice Modeling Project"
+### Community 19 - "AI Voice Modeling Project"
 Cohesion: 0.5
 Nodes (4): AI voice modeling project, Cam (metal artist), Nerve (app / Ryan's project), Ryan (music mentor / Yale)
 
-### Community 21 - "Sanvi (Sister) + Barcelona"
-Cohesion: 0.67
-Nodes (3): Barcelona trip (Sanvi 2026), Rozco's Comedy Club (Austin), Sanvi (Sister)
+### Community 20 - "Bay Area Family"
+Cohesion: 0.5
+Nodes (4): Bay Area, Nandini Aunty (Bay Area), Nikhil Nagarajan (Bay Area), Nivetha (Hinge/SF)
 
-### Community 22 - "LASA Alumni (Seattle)"
-Cohesion: 0.67
-Nodes (3): Amit Sundaram (LASA, Seattle), LASA (Liberal Arts and Science Academy), Sam Hopper (LASA)
-
-### Community 23 - "Forge Accelerator (Berkeley)"
-Cohesion: 0.67
-Nodes (3): Forge (Berkeley Builder Accelerator), Jaylem Brar (UC Berkeley / NYC), Jeff Sei
-
-### Community 24 - "LASA (Liz/Liam)"
-Cohesion: 1.0
-Nodes (3): LASA (school), Liam (LASA), Liz Reed (LASA)
-
-### Community 25 - "Indian Film Composers"
-Cohesion: 0.67
-Nodes (3): Anirudh Ravichander, Shruti (NYC / Hinge), Yuvan Shankar Raja
-
-### Community 26 - "Layer (Web3 Company)"
-Cohesion: 0.67
-Nodes (3): Jake Hartnell (Co-founder, Layer), Layer (Web3 company, AVS tooling), Sam Cassatt (CSO, Layer)
-
-### Community 27 - "Crypto VC Firms"
+### Community 21 - "Community 21"
 Cohesion: 0.67
 Nodes (3): Faris Irys, Spartan Group (crypto VC), Speedinvest (VC)
 
-### Community 28 - "Slash + Consensus"
+### Community 22 - "Community 22"
+Cohesion: 1.0
+Nodes (3): LASA (school), Liam (LASA), Liz Reed (LASA)
+
+### Community 23 - "Layer (Web3 Company)"
+Cohesion: 0.67
+Nodes (3): Jake Hartnell (Co-founder, Layer), Layer (Web3 company, AVS tooling), Sam Cassatt (CSO, Layer)
+
+### Community 24 - "Slash + Consensus"
 Cohesion: 0.67
 Nodes (3): Andy, Consensus Conference, Slash (startup, $41M Series B)
 
-### Community 29 - "Sapient + LOTTO (Crypto)"
+### Community 25 - "Community 25"
+Cohesion: 0.67
+Nodes (3): Amit Sundaram (LASA, Seattle), LASA (Liberal Arts and Science Academy), Sam Hopper (LASA)
+
+### Community 26 - "Community 26"
+Cohesion: 0.67
+Nodes (3): Forge (Berkeley Builder Accelerator), Jaylem Brar (UC Berkeley / NYC), Jeff Sei
+
+### Community 27 - "Sanvi (Sister)"
+Cohesion: 0.67
+Nodes (3): Barcelona trip (Sanvi 2026), Rozco's Comedy Club (Austin), Sanvi (Sister)
+
+### Community 28 - "Indian Film Composers"
+Cohesion: 0.67
+Nodes (3): Anirudh Ravichander, Shruti (NYC / Hinge), Yuvan Shankar Raja
+
+### Community 29 - "Community 29"
 Cohesion: 0.67
 Nodes (3): LOTTO (crypto project), Sapient (crypto dev company), Tyler (Sapient, crypto)
 
 ### Community 30 - "Community 30"
 Cohesion: 1.0
-Nodes (2): DistroKid (music distribution), Kraogotthesauce (music collaborator)
+Nodes (2): Ajay (Crypto/Game contact), James (Ajay intro)
 
 ### Community 31 - "Community 31"
 Cohesion: 1.0
-Nodes (2): ETHDenver 2025, Ian Vensel (Empire Strategies)
+Nodes (2): NFV Network, Rad (Brad / NFV Network)
 
 ### Community 32 - "Community 32"
 Cohesion: 1.0
-Nodes (2): Hair of the Dog (venue NYC/Austin), Kenny (Hair of the Dog)
+Nodes (2): LaToya P. (Serenity of Life Counseling), Spring Health
 
 ### Community 33 - "Community 33"
 Cohesion: 1.0
-Nodes (2): Houston, Varun (Houston)
+Nodes (2): Coca-Cola Scholars Program, Ritvik (Coke Scholars)
 
 ### Community 34 - "Community 34"
 Cohesion: 1.0
-Nodes (2): Nishad Naik (Uday's son), Uday (Nishad's father)
+Nodes (2): Score (Beats Producer NYC), Shanks (Producer LA)
 
 ### Community 35 - "Community 35"
 Cohesion: 1.0
-Nodes (2): Score (Beats Producer NYC), Shanks (Producer LA)
+Nodes (2): DistroKid (music distribution), Kraogotthesauce (music collaborator)
 
 ### Community 36 - "Community 36"
 Cohesion: 1.0
-Nodes (2): a16z Recruiting, Rusty Smith (a16z Recruiting)
+Nodes (2): OneSphere / Senal, Stark Zhang (OneSphere)
 
 ### Community 37 - "Community 37"
 Cohesion: 1.0
-Nodes (2): Kam (Shine Capital), Shine Capital
+Nodes (2): Cole (Jollymarket / NYC), NYC Blockchain Network
 
 ### Community 38 - "Community 38"
 Cohesion: 1.0
-Nodes (2): EF Program, Laszlo Kopits (EF Program)
+Nodes (2): Voice cloning / AI vocal model project, Wes (music client)
 
 ### Community 39 - "Community 39"
 Cohesion: 1.0
-Nodes (2): Aamir (UC Berkeley Haas grad), Ryan (UT Austin friend)
+Nodes (2): Ryan Xie, Yale
 
 ### Community 40 - "Community 40"
 Cohesion: 1.0
-Nodes (2): Ryan Xie, Yale
+Nodes (2): Johny (music connector), Shanks (producer)
 
 ### Community 41 - "Community 41"
 Cohesion: 1.0
-Nodes (2): Romi (battery company), Zubair
+Nodes (2): Cardinal (SF AI Startup), Neema Jamshidian
 
 ### Community 42 - "Community 42"
 Cohesion: 1.0
-Nodes (2): Jeremy Uribe (Producer / LA), Prescription Studios (LA)
+Nodes (2): Monte Carlo (startup, AI/GPU middleware), Tony (Uncle)
 
 ### Community 43 - "Community 43"
 Cohesion: 1.0
-Nodes (2): Ajay (Crypto/Game contact), James (Ajay intro)
+Nodes (2): Big Brain, Naman Kapasi
 
 ### Community 44 - "Community 44"
 Cohesion: 1.0
-Nodes (2): Cole (Jollymarket / NYC), NYC Blockchain Network
+Nodes (2): Hair of the Dog (venue NYC/Austin), Kenny (Hair of the Dog)
 
 ### Community 45 - "Community 45"
 Cohesion: 1.0
-Nodes (2): Johny (music connector), Shanks (producer)
+Nodes (2): Adam (Financial Modeling, with Kory), Kory (Financial Modeling)
 
 ### Community 46 - "Community 46"
 Cohesion: 1.0
-Nodes (2): Hunter, Rylen (UC Berkeley)
+Nodes (2): Ankit (Rish's friend), OMNIA Nightclub (Las Vegas)
 
 ### Community 47 - "Community 47"
 Cohesion: 1.0
-Nodes (2): SportsSense / Playmaker, Sudhanva Athreya (SportsSense)
+Nodes (2): ETHDenver 2025, Ian Vensel (Empire Strategies)
 
 ### Community 48 - "Community 48"
 Cohesion: 1.0
-Nodes (2): NFV Network, Rad (Brad / NFV Network)
+Nodes (2): EF Program, Laszlo Kopits (EF Program)
 
 ### Community 49 - "Community 49"
 Cohesion: 1.0
-Nodes (2): Voice cloning / AI vocal model project, Wes (music client)
+Nodes (2): Exxtra Video Editor, Video Editing
 
 ### Community 50 - "Community 50"
 Cohesion: 1.0
-Nodes (2): Big Brain, Naman Kapasi
+Nodes (2): Jeremy Uribe (Producer / LA), Prescription Studios (LA)
 
 ### Community 51 - "Community 51"
 Cohesion: 1.0
-Nodes (2): Ankit (Rish's friend), OMNIA Nightclub (Las Vegas)
+Nodes (2): Lorenzo (Neighbor, LA), Lorenzo's Mom (Neighbor, LA)
 
 ### Community 52 - "Community 52"
 Cohesion: 1.0
-Nodes (2): Ankur Uncle (Ankur Jain, Emergent Ventures), Emergent Ventures
+Nodes (2): Houston, Varun (Houston)
 
 ### Community 53 - "Community 53"
 Cohesion: 1.0
-Nodes (2): OneSphere / Senal, Stark Zhang (OneSphere)
+Nodes (2): Aamir (UC Berkeley Haas grad), Ryan (UT Austin friend)
 
 ### Community 54 - "Community 54"
 Cohesion: 1.0
-Nodes (2): Cardinal (SF AI Startup), Neema Jamshidian
+Nodes (2): Romi (battery company), Zubair
 
 ### Community 55 - "Community 55"
 Cohesion: 1.0
-Nodes (2): Jason (music/investor), SUNO (music AI)
+Nodes (2): Hunter, Rylen (UC Berkeley)
 
 ### Community 56 - "Community 56"
 Cohesion: 1.0
-Nodes (2): Exxtra Video Editor, Video Editing
+Nodes (2): Nishad Naik (Uday's son), Uday (Nishad's father)
 
 ### Community 57 - "Community 57"
 Cohesion: 1.0
-Nodes (2): Coca-Cola Scholars Program, Ritvik (Coke Scholars)
+Nodes (2): SportsSense / Playmaker, Sudhanva Athreya (SportsSense)
 
 ### Community 58 - "Community 58"
 Cohesion: 1.0
-Nodes (2): Adam (Financial Modeling, with Kory), Kory (Financial Modeling)
+Nodes (2): Jason (music/investor), SUNO (music AI)
 
 ### Community 59 - "Community 59"
 Cohesion: 1.0
-Nodes (2): Monte Carlo (startup, AI/GPU middleware), Tony (Uncle)
+Nodes (2): Kam (Shine Capital), Shine Capital
 
 ### Community 60 - "Community 60"
 Cohesion: 1.0
-Nodes (2): Lorenzo (Neighbor, LA), Lorenzo's Mom (Neighbor, LA)
+Nodes (2): a16z Recruiting, Rusty Smith (a16z Recruiting)
 
 ### Community 61 - "Community 61"
 Cohesion: 1.0
-Nodes (2): LaToya P. (Serenity of Life Counseling), Spring Health
+Nodes (2): Ankur Uncle (Ankur Jain, Emergent Ventures), Emergent Ventures
 
 ### Community 62 - "Community 62"
 Cohesion: 1.0
@@ -485,146 +485,102 @@ Nodes (1): Ayush (Blockchain, UC Berkeley)
 
 ### Community 64 - "Community 64"
 Cohesion: 1.0
-Nodes (1): Aaniyah (Hinge / San Antonio)
+Nodes (1): Narayanan (Uncle)
 
 ### Community 65 - "Community 65"
 Cohesion: 1.0
-Nodes (1): Narayanan (Uncle)
-
-### Community 66 - "Community 66"
-Cohesion: 1.0
 Nodes (1): Ashank (UC Berkeley)
 
-## Ambiguous Edges - Review These
-- `Adi (Hinge, Austin / UT)` → `UC Berkeley`  [AMBIGUOUS]
-  raw/imessage/individuals/adi-hinge-austin/2026/2026-03__adi-hinge-austin.md · relation: mentioned_by
-- `Los Angeles, CA` → `Maxim Kraft (SpaceX UC Berkeley)`  [AMBIGUOUS]
-  raw/imessage/_profiles/group-group-divyesh-maxim.md · relation: lives_in
-- `New York City` → `Binni (Austin, UT student)`  [AMBIGUOUS]
-  raw/imessage/individuals/binni/2026/2026-03__binni.md · relation: studies_at
-- `New York City` → `Shreeya (Hinge, San Jose/SJ)`  [AMBIGUOUS]
-  raw/imessage/individuals/shreeya-hinge-sd/2026/2026-03__shreeya-hinge-sd.md · relation: discussed_with
-- `Devang Patel (UC Berkeley)` → `Devang (UC Berkeley)`  [AMBIGUOUS]
-  raw/imessage/_profiles/devang-patel-uc-berkeley.md · relation: semantically_similar_to
-- `Divya (Hinge Austin 4098)` → `Divya (Hinge, Austin)`  [AMBIGUOUS]
-  raw/imessage/_profiles/divya-hinge-austin-4098.md · relation: semantically_similar_to
-- `Diya (NYC, 9395)` → `Diya (NYC, Hinge)`  [AMBIGUOUS]
-  raw/imessage/_profiles/diya-nyc-9395.md · relation: semantically_similar_to
-- `Donny (Producer LA)` → `Donut (Producer LA)`  [AMBIGUOUS]
-  raw/imessage/_profiles/donny-producer-la.md · relation: semantically_similar_to
-- `Eesha (Hinge LA)` → `Klein Court (LA property)`  [AMBIGUOUS]
-  raw/imessage/individuals/eesha-hinge-la/2026/2026-02__eesha-hinge-la.md · relation: discussed_with
-- `Gayathri (Hinge Dallas 2063)` → `Gayathri (Hinge Dallas)`  [AMBIGUOUS]
-  workspaces/personal/raw/imessage/_profiles/gayathri-hinge-dallas.md · relation: semantically_similar_to
-- `Prabhat Nuthakki (UC Berkeley)` → `Zaos Prabhat (UC Berkeley/LA)`  [AMBIGUOUS]
-  raw/imessage/_profiles/zaos-prabhat-uc-berkeley-la.md · relation: semantically_similar_to
-- `Harshil (UC Berkeley)` → `Columbia University`  [AMBIGUOUS]
-  raw/imessage/individuals/harshil-uc-berkeley/2024/2024-05__harshil-uc-berkeley.md · relation: semantically_similar_to
-- `Ishika (Hinge LA 7597)` → `Ishika (Hinge LA)`  [AMBIGUOUS]
-  raw/imessage/_profiles/ishika-hinge-la-7597.md · relation: semantically_similar_to
-- `Khushi (Hinge LA, USC grad)` → `Khushi (Hinge, Riverside CA)`  [AMBIGUOUS]
-  raw/imessage/individuals/khushi-hinge-la/2026/2026-02__khushi-hinge-la.md · relation: semantically_similar_to
-- `Kirti (Hinge Austin 2682)` → `Kirti (Hinge Austin, Round Rock)`  [AMBIGUOUS]
-  raw/imessage/individuals/kirti-hinge-austin/2025/2025-07__kirti-hinge-austin.md · relation: semantically_similar_to
-- `San Francisco` → `Roshni (Hinge / LA / Irvine)`  [AMBIGUOUS]
-  raw/imessage/individuals/roshni-hinge-la/2026/2026-02__roshni-hinge-la.md · relation: mentioned_by
-- `Riddhi (Hinge, Austin, 9500)` → `Riddhi (Hinge, Austin)`  [AMBIGUOUS]
-  raw/imessage/individuals/riddhi-hinge-austin/2026/2026-03__riddhi-hinge-austin.md · relation: semantically_similar_to
-- `Shervin (Crypto Recruiter)` → `Shervin (Blockchain, UC Berkeley)`  [AMBIGUOUS]
-  raw/imessage/individuals/shervin-crypto-recruiter/2024/2024-08__shervin-crypto-recruiter.md · relation: related_to
-
 ## Knowledge Gaps
-- **450 isolated node(s):** `Aarti (Dad)`, `Abby (Hinge / Dallas)`, `Abhishek`, `Addi / Adithi (Hinge, Dallas/Austin)`, `Adriana (Hinge, Austin/Santa Clara)` (+445 more)
+- **454 isolated node(s):** `Aarti (Dad)`, `Abby (Hinge / Dallas)`, `Abhishek`, `Addi / Adithi (Hinge, Dallas/Austin)`, `Adi (Hinge, Austin / UT)` (+449 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **Thin community `Community 30`** (2 nodes): `DistroKid (music distribution)`, `Kraogotthesauce (music collaborator)`
+- **Thin community `Community 30`** (2 nodes): `Ajay (Crypto/Game contact)`, `James (Ajay intro)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 31`** (2 nodes): `ETHDenver 2025`, `Ian Vensel (Empire Strategies)`
+- **Thin community `Community 31`** (2 nodes): `NFV Network`, `Rad (Brad / NFV Network)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 32`** (2 nodes): `Hair of the Dog (venue NYC/Austin)`, `Kenny (Hair of the Dog)`
+- **Thin community `Community 32`** (2 nodes): `LaToya P. (Serenity of Life Counseling)`, `Spring Health`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 33`** (2 nodes): `Houston`, `Varun (Houston)`
+- **Thin community `Community 33`** (2 nodes): `Coca-Cola Scholars Program`, `Ritvik (Coke Scholars)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 34`** (2 nodes): `Nishad Naik (Uday's son)`, `Uday (Nishad's father)`
+- **Thin community `Community 34`** (2 nodes): `Score (Beats Producer NYC)`, `Shanks (Producer LA)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 35`** (2 nodes): `Score (Beats Producer NYC)`, `Shanks (Producer LA)`
+- **Thin community `Community 35`** (2 nodes): `DistroKid (music distribution)`, `Kraogotthesauce (music collaborator)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 36`** (2 nodes): `a16z Recruiting`, `Rusty Smith (a16z Recruiting)`
+- **Thin community `Community 36`** (2 nodes): `OneSphere / Senal`, `Stark Zhang (OneSphere)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 37`** (2 nodes): `Kam (Shine Capital)`, `Shine Capital`
+- **Thin community `Community 37`** (2 nodes): `Cole (Jollymarket / NYC)`, `NYC Blockchain Network`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 38`** (2 nodes): `EF Program`, `Laszlo Kopits (EF Program)`
+- **Thin community `Community 38`** (2 nodes): `Voice cloning / AI vocal model project`, `Wes (music client)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 39`** (2 nodes): `Aamir (UC Berkeley Haas grad)`, `Ryan (UT Austin friend)`
+- **Thin community `Community 39`** (2 nodes): `Ryan Xie`, `Yale`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 40`** (2 nodes): `Ryan Xie`, `Yale`
+- **Thin community `Community 40`** (2 nodes): `Johny (music connector)`, `Shanks (producer)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 41`** (2 nodes): `Romi (battery company)`, `Zubair`
+- **Thin community `Community 41`** (2 nodes): `Cardinal (SF AI Startup)`, `Neema Jamshidian`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 42`** (2 nodes): `Jeremy Uribe (Producer / LA)`, `Prescription Studios (LA)`
+- **Thin community `Community 42`** (2 nodes): `Monte Carlo (startup, AI/GPU middleware)`, `Tony (Uncle)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 43`** (2 nodes): `Ajay (Crypto/Game contact)`, `James (Ajay intro)`
+- **Thin community `Community 43`** (2 nodes): `Big Brain`, `Naman Kapasi`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 44`** (2 nodes): `Cole (Jollymarket / NYC)`, `NYC Blockchain Network`
+- **Thin community `Community 44`** (2 nodes): `Hair of the Dog (venue NYC/Austin)`, `Kenny (Hair of the Dog)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 45`** (2 nodes): `Johny (music connector)`, `Shanks (producer)`
+- **Thin community `Community 45`** (2 nodes): `Adam (Financial Modeling, with Kory)`, `Kory (Financial Modeling)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 46`** (2 nodes): `Hunter`, `Rylen (UC Berkeley)`
+- **Thin community `Community 46`** (2 nodes): `Ankit (Rish's friend)`, `OMNIA Nightclub (Las Vegas)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 47`** (2 nodes): `SportsSense / Playmaker`, `Sudhanva Athreya (SportsSense)`
+- **Thin community `Community 47`** (2 nodes): `ETHDenver 2025`, `Ian Vensel (Empire Strategies)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 48`** (2 nodes): `NFV Network`, `Rad (Brad / NFV Network)`
+- **Thin community `Community 48`** (2 nodes): `EF Program`, `Laszlo Kopits (EF Program)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 49`** (2 nodes): `Voice cloning / AI vocal model project`, `Wes (music client)`
+- **Thin community `Community 49`** (2 nodes): `Exxtra Video Editor`, `Video Editing`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 50`** (2 nodes): `Big Brain`, `Naman Kapasi`
+- **Thin community `Community 50`** (2 nodes): `Jeremy Uribe (Producer / LA)`, `Prescription Studios (LA)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 51`** (2 nodes): `Ankit (Rish's friend)`, `OMNIA Nightclub (Las Vegas)`
+- **Thin community `Community 51`** (2 nodes): `Lorenzo (Neighbor, LA)`, `Lorenzo's Mom (Neighbor, LA)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 52`** (2 nodes): `Ankur Uncle (Ankur Jain, Emergent Ventures)`, `Emergent Ventures`
+- **Thin community `Community 52`** (2 nodes): `Houston`, `Varun (Houston)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 53`** (2 nodes): `OneSphere / Senal`, `Stark Zhang (OneSphere)`
+- **Thin community `Community 53`** (2 nodes): `Aamir (UC Berkeley Haas grad)`, `Ryan (UT Austin friend)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 54`** (2 nodes): `Cardinal (SF AI Startup)`, `Neema Jamshidian`
+- **Thin community `Community 54`** (2 nodes): `Romi (battery company)`, `Zubair`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 55`** (2 nodes): `Jason (music/investor)`, `SUNO (music AI)`
+- **Thin community `Community 55`** (2 nodes): `Hunter`, `Rylen (UC Berkeley)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 56`** (2 nodes): `Exxtra Video Editor`, `Video Editing`
+- **Thin community `Community 56`** (2 nodes): `Nishad Naik (Uday's son)`, `Uday (Nishad's father)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 57`** (2 nodes): `Coca-Cola Scholars Program`, `Ritvik (Coke Scholars)`
+- **Thin community `Community 57`** (2 nodes): `SportsSense / Playmaker`, `Sudhanva Athreya (SportsSense)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 58`** (2 nodes): `Adam (Financial Modeling, with Kory)`, `Kory (Financial Modeling)`
+- **Thin community `Community 58`** (2 nodes): `Jason (music/investor)`, `SUNO (music AI)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 59`** (2 nodes): `Monte Carlo (startup, AI/GPU middleware)`, `Tony (Uncle)`
+- **Thin community `Community 59`** (2 nodes): `Kam (Shine Capital)`, `Shine Capital`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 60`** (2 nodes): `Lorenzo (Neighbor, LA)`, `Lorenzo's Mom (Neighbor, LA)`
+- **Thin community `Community 60`** (2 nodes): `a16z Recruiting`, `Rusty Smith (a16z Recruiting)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 61`** (2 nodes): `LaToya P. (Serenity of Life Counseling)`, `Spring Health`
+- **Thin community `Community 61`** (2 nodes): `Ankur Uncle (Ankur Jain, Emergent Ventures)`, `Emergent Ventures`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 62`** (1 nodes): `Abi (Anna / SpaceX)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 63`** (1 nodes): `Ayush (Blockchain, UC Berkeley)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 64`** (1 nodes): `Aaniyah (Hinge / San Antonio)`
+- **Thin community `Community 64`** (1 nodes): `Narayanan (Uncle)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 65`** (1 nodes): `Narayanan (Uncle)`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 66`** (1 nodes): `Ashank (UC Berkeley)`
+- **Thin community `Community 65`** (1 nodes): `Ashank (UC Berkeley)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **What is the exact relationship between `Adi (Hinge, Austin / UT)` and `UC Berkeley`?**
-  _Edge tagged AMBIGUOUS (relation: mentioned_by) - confidence is low._
-- **What is the exact relationship between `Los Angeles, CA` and `Maxim Kraft (SpaceX UC Berkeley)`?**
-  _Edge tagged AMBIGUOUS (relation: lives_in) - confidence is low._
-- **What is the exact relationship between `New York City` and `Binni (Austin, UT student)`?**
-  _Edge tagged AMBIGUOUS (relation: studies_at) - confidence is low._
-- **What is the exact relationship between `New York City` and `Shreeya (Hinge, San Jose/SJ)`?**
-  _Edge tagged AMBIGUOUS (relation: discussed_with) - confidence is low._
-- **What is the exact relationship between `Devang Patel (UC Berkeley)` and `Devang (UC Berkeley)`?**
-  _Edge tagged AMBIGUOUS (relation: semantically_similar_to) - confidence is low._
-- **What is the exact relationship between `Divya (Hinge Austin 4098)` and `Divya (Hinge, Austin)`?**
-  _Edge tagged AMBIGUOUS (relation: semantically_similar_to) - confidence is low._
-- **What is the exact relationship between `Diya (NYC, 9395)` and `Diya (NYC, Hinge)`?**
-  _Edge tagged AMBIGUOUS (relation: semantically_similar_to) - confidence is low._
+- **Why does `Los Angeles, CA` connect `LA Dating + LA Network` to `Dating Roster (mixed)`, `Austin Dating + Locals`, `Sylmar Property + Tenants`, `NYC/USC (Akshar circle)`, `Crypto/Web3 Network`, `Crypto Events + Investors`, `Prescription Songs + Music`, `Hinge + AI Music Project`, `LASA Classmates`, `Bay Area + Slash`, `LA Music Industry (Prescription)`?**
+  _High betweenness centrality (0.024) - this node is a cross-community bridge._
+- **Why does `Austin, TX` connect `Austin Dating + Locals` to `Dating Roster (mixed)`, `Sylmar Property + Tenants`, `Amsterdam Trip + Festival Crew`, `Crypto Events + Investors`, `Hinge + AI Music Project`, `LASA Classmates`?**
+  _High betweenness centrality (0.012) - this node is a cross-community bridge._
+- **Why does `Evan (Renter, LA)` connect `Sylmar Property + Tenants` to `Dating Roster (mixed)`, `Rental Showings (LA)`, `Crypto/Web3 Network`?**
+  _High betweenness centrality (0.012) - this node is a cross-community bridge._
+- **Are the 51 inferred relationships involving `Adithya` (e.g. with `Ananya (LASA, Austin)` and `Angad (Austin)`) actually correct?**
+  _`Adithya` has 51 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 130 inferred relationships involving `Hinge (dating app)` (e.g. with `Amru (Hinge, Dallas/Austin)` and `Ana (Hinge, Austin)`) actually correct?**
+  _`Hinge (dating app)` has 130 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 125 inferred relationships involving `Los Angeles, CA` (e.g. with `Alejandra (Tinder, LA)` and `Anabhra (Hinge, LA)`) actually correct?**
+  _`Los Angeles, CA` has 125 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 83 inferred relationships involving `UC Berkeley` (e.g. with `Adarsh Pinjala` and `Adi Rao (UC Berkeley / NYC)`) actually correct?**
+  _`UC Berkeley` has 83 INFERRED edges - model-reasoned connections that need verification._

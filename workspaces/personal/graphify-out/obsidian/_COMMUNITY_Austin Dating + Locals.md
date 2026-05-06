@@ -1,0 +1,251 @@
+---
+type: community
+cohesion: 0.01
+members: 212
+---
+
+# Austin Dating + Locals
+
+**Cohesion:** 0.01 - loosely connected
+**Members:** 212 nodes
+
+## Members
+- [[Abhi (Hinge  Austin)]] - document - raw/imessage/individuals/abhi-hinge-austin/2026/2026-02__abhi-hinge-austin.md
+- [[Aditya Desai (LASA  Austin)]] - document - raw/imessage/individuals/aditya-desai/2025/2025-01__aditya-desai.md
+- [[Aleena (Hinge, Austin)]] - document - raw/imessage/individuals/aleena-hinge-austin/2026/2026-02__aleena-hinge-austin.md
+- [[Alefia (Hinge, Austin)]] - document - raw/imessage/individuals/alefia-hinge-austin/2025/2025-03__alefia-hinge-austin.md
+- [[Amisha (Hinge, NYCJersey)]] - document - raw/imessage/individuals/amisha-nyc/2025/2025-06__amisha-nyc.md
+- [[Amru (Hinge, DallasAustin)]] - document - raw/imessage/individuals/amru-hinge-dallas/2025/2025-03__amru-hinge-dallas.md
+- [[Ana (Hinge, Austin)]] - document - raw/imessage/individuals/ana-hinge-austin/2026/2026-03__ana-hinge-austin.md
+- [[Anai (Hinge, Austin)]] - document - raw/imessage/individuals/anai-hinge-austin/2026/2026-03__anai-hinge-austin.md
+- [[Ananya (Hinge, Austin)]] - document - raw/imessage/individuals/ananya-hinge-austin/2026/2026-03__ananya-hinge-austin.md
+- [[Angad (Austin)]] - document - raw/imessage/individuals/angad-austin/2026/2026-03__angad-austin.md
+- [[Anika (Hinge Austin 0555)]] - document - raw/imessage/individuals/anika-hinge-austin-0555/2026/2026-02__anika-hinge-austin-0555.md
+- [[Anika (Hinge Austin 2258)]] - document - raw/imessage/individuals/anika-hinge-austin/2026/2026-02__anika-hinge-austin.md
+- [[Anika (Hinge Austin 4148)]] - document - raw/imessage/individuals/anika-hinge-austin-4148/2025/2025-03__anika-hinge-austin-4148.md
+- [[Aniruddh Mishra (Austin)]] - document - raw/imessage/individuals/aniruddh-mishra-austin/2026/2026-03__aniruddh-mishra-austin.md
+- [[Anisha (Hinge Austin)]] - document - raw/imessage/individuals/anisha-hinge-austin/2026/2026-02__anisha-hinge-austin.md
+- [[Anisha (Hinge Dallas)]] - document - raw/imessage/individuals/anisha-hinge-dallas/2025/2025-07__anisha-hinge-dallas.md
+- [[Anita (Hinge AustinRockdale)]] - document - raw/imessage/individuals/anita-hinge-austin/2026/2026-02__anita-hinge-austin.md
+- [[Anjali Nagarajan (Hinge Austin)]] - document - raw/imessage/individuals/anjali-hinge-austin/2026/2026-03__anjali-hinge-austin.md
+- [[Anju (Hinge Dallas)]] - document - raw/imessage/individuals/anju-hinge-dallas/2025/2025-07__anju-hinge-dallas.md
+- [[Anna (Hinge, Las Vegas)]] - document - raw/imessage/individuals/anna-hinge-lasvegas/2026/2026-02__anna-hinge-lasvegas.md
+- [[Antara (Hinge, LA)]] - document - raw/imessage/individuals/antara-hinge-la/2025/2025-05__antara-hinge-la.md
+- [[Anusha (Hinge, Austin, 5817)]] - document - raw/imessage/individuals/anusha-hinge-austin-5817/2025/2025-05__anusha-hinge-austin-5817.md
+- [[Anusha (Hinge, Austin, Oracle)]] - document - raw/imessage/individuals/anusha-hinge-austin/2026/2026-02__anusha-hinge-austin.md
+- [[Apple Inc]] - document - raw/imessage/individuals/aniruddh-mishra-austin/2026/2026-03__aniruddh-mishra-austin.md
+- [[Areza (Hinge, Austin)]] - document - raw/imessage/individuals/areza-hinge-austin/2025/2025-03__areza-hinge-austin.md
+- [[Arianna (Hinge, Austin)]] - document - raw/imessage/individuals/arianna-hinge-austin/2026/2026-02__arianna-hinge-austin.md
+- [[Ariel (HingeTinder, Austin)]] - document - raw/imessage/individuals/ariel-hinge-austin/2026/2026-03__ariel-hinge-austin.md
+- [[Arielle (Hinge, LA  Canoga Park)]] - document - raw/imessage/individuals/arielle-hinge-la/2026/2026-02__arielle-hinge-la.md
+- [[Arlene (Hinge, LA)]] - document - raw/imessage/individuals/arlene-hinge-la/2025/2025-08__arlene-hinge-la.md
+- [[Armiyah (Hinge LA)]] - document - raw/imessage/_profiles/armiyah-hinge-la.md
+- [[Ashley (Hinge Austin)]] - document - raw/imessage/individuals/ashley-hinge-austin/2026/2026-02__ashley-hinge-austin.md
+- [[Audrey (Hinge LA, -2366)]] - document - raw/imessage/individuals/audrey-hinge-la-2366/2026/2026-02__audrey-hinge-la-2366.md
+- [[Austin Friend Group]] - document - raw/imessage/_profiles/group-group-aniruddh-dravin-eva.md
+- [[Austin, TX_1]] - document - raw/imessage/individuals/shiva-austin/2024/2024-11__shiva-austin.md
+- [[Austin, TX]] - document - raw/imessage/individuals/sai-guraijala-austin-casco/2026/2026-03__sai-guraijala-austin-casco.md
+- [[Austin, Texas]] - document - raw/imessage/individuals/riya-hinge-austin-nyc/2025/2025-07__riya-hinge-austin-nyc.md
+- [[Ava (Hinge Austin)]] - document - raw/imessage/individuals/ava-hinge-austin/2026/2026-03__ava-hinge-austin.md
+- [[Ayushi (Hinge Dallas)]] - document - raw/imessage/individuals/ayushi-hinge-dallas/2025/2025-07__ayushi-hinge-dallas.md
+- [[Balu (uncle, Austin)]] - document - raw/imessage/individuals/balu-sukanya-aunty-austin/2025/2025-05__balu-sukanya-aunty-austin.md
+- [[Balu Sukanya Aunty (Austin)]] - document - raw/imessage/_profiles/balu-sukanya-aunty-austin.md
+- [[Bela McScoggin (LASA, Austin)]] - document - raw/imessage/individuals/bela-mcscoggin-lasa-austin/2026/2026-02__bela-mcscoggin-lasa-austin.md
+- [[Bella (Tinder, AustinLA)]] - document - raw/imessage/individuals/bella-tinder-la/2026/2026-02__bella-tinder-la.md
+- [[Binni (Austin, UT student)]] - document - raw/imessage/individuals/binni/2026/2026-03__binni.md
+- [[Brennan Noah (Austin)]] - document - raw/imessage/individuals/brennan-noah-austin/2026/2026-04__brennan-noah-austin.md
+- [[Dallas]] - document
+- [[Decela (Hinge, Austin)]] - document - raw/imessage/individuals/decela-hinge-austin/2026/2026-03__decela-hinge-austin.md
+- [[Desiree (Hinge, Austin)]] - document - raw/imessage/individuals/desiree-hinge-austin/2026/2026-04__desiree-hinge-austin.md
+- [[Devna (Hinge, Austin)]] - document - raw/imessage/individuals/devna-hinge-austin/2026/2026-03__devna-hinge-austin.md
+- [[Dirty 6th (Austin)]] - document
+- [[Diva (Hinge, LA)]] - document - raw/imessage/individuals/diva-hinge-la/2026/2026-02__diva-hinge-la.md
+- [[Divya (Hinge Austin 4098)]] - document - raw/imessage/_profiles/divya-hinge-austin-4098.md
+- [[Divya (Hinge, Austin)]] - document - raw/imessage/individuals/divya-hinge-austin/2026/2026-02__divya-hinge-austin.md
+- [[Divya (Hinge, Dallas)]] - document - raw/imessage/individuals/divya-hinge-dallas/2025/2025-04__divya-hinge-dallas.md
+- [[Dixie (Hinge Austin)]] - document - raw/imessage/individuals/dixie-hinge-austin/2026/2026-02__dixie-hinge-austin.md
+- [[Dottie (Hinge Austin)]] - document - raw/imessage/individuals/dottie-hinge-austin/2026/2026-02__dottie-hinge-austin.md
+- [[Dr. Qin (Acupuncture Doctor, Austin)]] - document - raw/imessage/individuals/accupuncture-doctor-austin/2025/2025-03__accupuncture-doctor-austin.md
+- [[Dravin Raj (Austin)]] - document - raw/imessage/individuals/dravin-raj-austin/2026/2026-04__dravin-raj-austin.md
+- [[Eccha (Hinge Austin)]] - document - raw/imessage/individuals/eccha-hinge-austin/2025/2025-05__eccha-hinge-austin.md
+- [[Eesha (Hinge LA)]] - document - raw/imessage/individuals/eesha-hinge-la/2026/2026-02__eesha-hinge-la.md
+- [[Eldy (Hinge Austin)]] - document - raw/imessage/individuals/eldy-hinge-austin/2025/2025-07__eldy-hinge-austin.md
+- [[Elin (Hinge Philly)]] - document - raw/imessage/individuals/elin-hinge-philly/2026/2026-02__elin-hinge-philly.md
+- [[Elise (Hinge LA)]] - document - raw/imessage/individuals/elise-hinge-la/2024/2024-03__elise-hinge-la.md
+- [[Emmy (Hinge SD)]] - document - raw/imessage/individuals/emmy-hinge-sd/2026/2026-03__emmy-hinge-sd.md
+- [[Esha (Hinge LA)]] - document - raw/imessage/_profiles/esha-hinge-la.md
+- [[Gabriela (Hinge, SD)]] - document - raw/imessage/individuals/gabriela-hinge-sd/2026/2026-03__gabriela-hinge-sd.md
+- [[Gabriella (Hinge, Austin)]] - document - raw/imessage/individuals/gabriella-hinge-austin/2026/2026-03__gabriella-hinge-austin.md
+- [[Gayathri (Hinge Dallas 2063)]] - document - raw/imessage/individuals/gayathri-hinge-dallas-2063/2025/2025-05__gayathri-hinge-dallas-2063.md
+- [[Gayathri (Hinge Dallas)]] - document - raw/imessage/individuals/gayathri-hinge-dallas/2025/2025-07__gayathri-hinge-dallas.md
+- [[Gen (Hinge Austin)]] - document - raw/imessage/individuals/gen-hinge-austin/2026/2026-02__gen-hinge-austin.md
+- [[Graciela (Hinge Austin)]] - document - raw/imessage/individuals/graciela-hinge-austin/2026/2026-03__graciela-hinge-austin.md
+- [[Hansika (Hinge Austin)]] - document - raw/imessage/individuals/hansika-hinge-austin/2025/2025-07__hansika-hinge-austin.md
+- [[Harshini (Hinge Austin)]] - document - raw/imessage/individuals/harshini-hinge-austin/2025/2025-06__harshini-hinge-austin.md
+- [[Hazel (Hinge Austin)]] - document - raw/imessage/individuals/hazel-hinge-austin/2026/2026-02__hazel-hinge-austin.md
+- [[Hinge (dating app)]] - document - raw/imessage/individuals/varshika-hinge-dallas/2026/2026-03__varshika-hinge-dallas.md
+- [[Hinge (dating app)_1]] - document - raw/imessage/individuals/aleena-hinge-austin/2026/2026-02__aleena-hinge-austin.md
+- [[Ianna (Hinge Austin)]] - document - raw/imessage/individuals/ianna-hinge-austin/2026/2026-02__ianna-hinge-austin.md
+- [[JJ (Tinder  Austin)]] - document - raw/imessage/individuals/jj-hinge-austin/2026/2026-02__jj-hinge-austin.md
+- [[Jacob Kintlze (Austin)]] - document - raw/imessage/_profiles/group-group-jacob-noah-sam.md
+- [[Jacob Kintlze (Austin)_1]] - document - raw/imessage/_profiles/jacob-kintlze-austin.md
+- [[Jake (Austin friend)]] - document - raw/imessage/individuals/brennan-noah-austin/2026/2026-04__brennan-noah-austin.md
+- [[Jake Garcia]] - document - raw/imessage/individuals/jake-garcia/2026/2026-04__jake-garcia.md
+- [[Jaliah (Hinge Austin)]] - document - raw/imessage/individuals/jaliah-hinge-austin/2026/2026-03__jaliah-hinge-austin.md
+- [[Janet (Hinge Austin)]] - document - raw/imessage/individuals/janet-hinge-austin/2026/2026-02__janet-hinge-austin.md
+- [[Janice (Hinge Austin)]] - document - raw/imessage/individuals/janice-hinge-austin/2026/2026-03__janice-hinge-austin.md
+- [[Jannat (Hinge Austin)]] - document - raw/imessage/individuals/jannat-hinge-austin/2025/2025-07__jannat-hinge-austin.md
+- [[Jarrell  Round Rock (Rene's area)]] - document - raw/imessage/individuals/rene-hinge-austin/2026/2026-03__rene-hinge-austin.md
+- [[Jayani (Hinge  Austin)]] - document - raw/imessage/individuals/jayani-hinge-austin/2025/2025-03__jayani-hinge-austin.md
+- [[Jayna (Hinge  Austin)]] - document - raw/imessage/individuals/jayna-hinge-austin/2025/2025-07__jayna-hinge-austin.md
+- [[Jesse (met on cruise  Dirty 6th)]] - document - raw/imessage/individuals/jesse-cruise-dirty-6th/2025/2025-01__jesse-cruise-dirty-6th.md
+- [[Jocelyn (Hinge  Austin)]] - document - raw/imessage/individuals/jocelyn-hinge-austin/2026/2026-03__jocelyn-hinge-austin.md
+- [[Jodie (Hinge  Austin)]] - document - raw/imessage/individuals/jodie-hinge-austin/2025/2025-03__jodie-hinge-austin.md
+- [[Joy (Dallas, Pharmacy School)]] - document - raw/imessage/individuals/joy-dallas/2025/2025-07__joy-dallas.md
+- [[Juliette (Hinge, Austin)]] - document - raw/imessage/individuals/juliette-hinge-austin/2025/2025-03__juliette-hinge-austin.md
+- [[Jurnee (Hinge, Austin)]] - document - raw/imessage/individuals/jurnee-hinge-austin/2026/2026-03__jurnee-hinge-austin.md
+- [[Kara (Hinge Dallas)]] - document - workspaces/personal/raw/imessage/individuals/kara-hinge-dallas/2026/2026-02__kara-hinge-dallas.md
+- [[Karla (Hinge Austin)]] - document - workspaces/personal/raw/imessage/individuals/karla-hinge-austin/2026/2026-03__karla-hinge-austin.md
+- [[Karthik (Dallas)]] - document - workspaces/personal/raw/imessage/individuals/karthik-dallas/2025/2025-07__karthik-dallas.md
+- [[Kayla (Hinge Dallas)]] - document - workspaces/personal/raw/imessage/individuals/kayla-hinge-dallas/2025/2025-03__kayla-hinge-dallas.md
+- [[Kaylie (Hinge Austin)]] - document - workspaces/personal/raw/imessage/individuals/kaylie-hinge-austin/2025/2025-03__kaylie-hinge-austin.md
+- [[Kelly (Hinge Austin)]] - document - workspaces/personal/raw/imessage/individuals/kelly-hinge-austin/2026/2026-03__kelly-hinge-austin.md
+- [[Kenny (Hair of the Dog, NYCAustin)]] - document - raw/imessage/_profiles/kenny-hair-of-the-dog-nyc-austin.md
+- [[Keona (Hinge Austin)]] - document - workspaces/personal/raw/imessage/individuals/keona-hinge-austin/2026/2026-03__keona-hinge-austin.md
+- [[Khushi (Hinge Austin)]] - document - raw/imessage/individuals/khushi-hinge-austin/2025/2025-03__khushi-hinge-austin.md
+- [[Khushi (Hinge LA, USC grad)]] - document - raw/imessage/individuals/khushi-hinge-la/2026/2026-02__khushi-hinge-la.md
+- [[Kimaya (Hinge Austin)]] - document - raw/imessage/individuals/kimaya-hinge-austin/2025/2025-07__kimaya-hinge-austin.md
+- [[Kirti (Hinge Austin 2682)]] - document - raw/imessage/individuals/kirti-hinge-austin-2682/2026/2026-02__kirti-hinge-austin-2682.md
+- [[Kirti (Hinge Austin, Round Rock)]] - document - raw/imessage/individuals/kirti-hinge-austin/2025/2025-07__kirti-hinge-austin.md
+- [[Krisha (Hinge Austin, near UT)]] - document - raw/imessage/individuals/krisha-hinge-austin/2026/2026-04__krisha-hinge-austin.md
+- [[Kumar Varadhan (Uncle, Austin)]] - document - raw/imessage/_profiles/group-group-kumar-z.md
+- [[Kushi Jain (Hinge Philly)]] - document - raw/imessage/individuals/kushi-hinge-philly/2026/2026-03__kushi-hinge-philly.md
+- [[Laila (Hinge Austin, West Campus)]] - document - raw/imessage/individuals/laila-hinge-austin/2026/2026-02__laila-hinge-austin.md
+- [[Lauren (Hinge, Austin)]] - document - raw/imessage/individuals/lauren-hinge-austin/2026/2026-02__lauren-hinge-austin.md
+- [[Leeci (Hinge, Austin)]] - document - raw/imessage/individuals/leeci-hinge-austin/2026/2026-03__leeci-hinge-austin.md
+- [[Lena (Hinge, Austin)]] - document - raw/imessage/individuals/lena-hinge-austin/2026/2026-02__lena-hinge-austin.md
+- [[Lex (Hinge, LA)]] - document - raw/imessage/individuals/lex-hinge-la/2026/2026-02__lex-hinge-la.md
+- [[Linzie (Hinge, LA  Long Beach)]] - document - raw/imessage/individuals/linzie-hinge-la/2026/2026-02__linzie-hinge-la.md
+- [[Lolly (Hinge, Austin)]] - document - raw/imessage/individuals/lolly-hinge-austin/2026/2026-03__lolly-hinge-austin.md
+- [[Lorenz Redlefsen (Austin)]] - document - raw/imessage/_profiles/lorenz-redlefsen-austin.md
+- [[Lupe (Hinge Austin)]] - document - raw/imessage/individuals/lupe-hinge-austin/2026/2026-02__lupe-hinge-austin.md
+- [[Makaya (Hinge Austin)]] - document - raw/imessage/individuals/makaya-hinge-austin/2026/2026-03__makaya-hinge-austin.md
+- [[Manal (Hinge Austin)]] - document - raw/imessage/individuals/manal-hinge-austin/2025/2025-07__manal-hinge-austin.md
+- [[Mandira (Hinge Austin)]] - document - raw/imessage/individuals/mandira-hinge-austin/2026/2026-02__mandira-hinge-austin.md
+- [[Mane (Hinge LA)]] - document - raw/imessage/individuals/mane-hinge-la/2026/2026-02__mane-hinge-la.md
+- [[Mannah (Hinge Austin)]] - document - raw/imessage/individuals/mannah-hinge-austin/2026/2026-03__mannah-hinge-austin.md
+- [[Mansi (Hinge LA)]] - document - raw/imessage/individuals/mansi-hinge-la/2026/2026-02__mansi-hinge-la.md
+- [[Megan (Hinge match, San Antonio)]] - document - raw/imessage/individuals/megan-hinge-sanantonio/2026/2026-03__megan-hinge-sanantonio.md
+- [[Megann (Hinge match, LA)]] - document - raw/imessage/individuals/megann-hinge-la/2026/2026-02__megann-hinge-la.md
+- [[Mehak (Hinge match, Austin)]] - document - raw/imessage/individuals/mehak-hinge-austin/2025/2025-03__mehak-hinge-austin.md
+- [[Melody (Hinge match, LA)]] - document - raw/imessage/individuals/melody-hinge-la/2026/2026-02__melody-hinge-la.md
+- [[Methvindi (Hinge match, LA  Canoga Park)]] - document - raw/imessage/individuals/methvindi-hinge-la/2025/2025-08__methvindi-hinge-la.md
+- [[Mikaela (TinderHinge match, Austin)]] - document - raw/imessage/individuals/mikaela-hinge-austin/2026/2026-03__mikaela-hinge-austin.md
+- [[Miki (Hinge, SD)]] - document - raw/imessage/individuals/miki-hinge-sd/2026/2026-03__miki-hinge-sd.md
+- [[Miloni (Hinge, Austin)]] - document - raw/imessage/individuals/miloni-hinge-austin/2026/2026-03__miloni-hinge-austin.md
+- [[Miriah (Hinge, SDSJ)]] - document - raw/imessage/individuals/miriah-hinge-sd/2026/2026-03__miriah-hinge-sd.md
+- [[Miya (Hinge, Austin)]] - document - raw/imessage/individuals/miya-hinge-austin/2026/2026-02__miya-hinge-austin.md
+- [[Morgan (Hinge, HoustonAustin)]] - document - raw/imessage/individuals/morgan-hinge-houston/2026/2026-03__morgan-hinge-houston.md
+- [[Munji (HingeBumble, South Austin)]] - document - raw/imessage/individuals/munji-hinge-austin/2026/2026-03__munji-hinge-austin.md
+- [[Mykala (Hinge Austin)]] - document - raw/imessage/individuals/mykala-hinge-austin/2025/2025-07__mykala-hinge-austin.md
+- [[Naia (Hinge SD)]] - document - raw/imessage/individuals/naia-hinge-sd/2026/2026-03__naia-hinge-sd.md
+- [[Naomi (Hinge Austin)]] - document - raw/imessage/individuals/naomi-hinge-austin/2026/2026-02__naomi-hinge-austin.md
+- [[Natalie (Hinge SD)]] - document - raw/imessage/individuals/natalie-hinge-sd/2026/2026-03__natalie-hinge-sd.md
+- [[Nayely (Hinge, San Diego)]] - document - workspaces/personal/raw/imessage/_profiles/nayely-hinge-sd.md
+- [[Neha (Hinge Austin)]] - document - raw/imessage/individuals/neha-hinge-austin/2026/2026-02__neha-hinge-austin.md
+- [[Ngoc (Hinge, Austin)]] - document - workspaces/personal/raw/imessage/_profiles/ngoc-hinge-austin.md
+- [[Nikki (HingeDallas)]] - document - raw/imessage/individuals/nikki-hinge-dallas/2026/2026-02__nikki-hinge-dallas.md
+- [[Niyati (HingeAustin)]] - document - raw/imessage/individuals/niyati-hinge-austin/2026/2026-02__niyati-hinge-austin.md
+- [[Nvidia Conference (San JoseSunnyvale 2026)]] - document - raw/imessage/individuals/tess-hinge-sd/2026/2026-03__tess-hinge-sd.md
+- [[Oracle]] - document - raw/imessage/individuals/anusha-hinge-austin/2026/2026-02__anusha-hinge-austin.md
+- [[Preethi (LaunchX, Austin)]] - document - raw/imessage/individuals/preethi-launchx/2024/2024-10__preethi-launchx.md
+- [[Presley (Hinge, Austin)]] - document - raw/imessage/individuals/presley-hinge-austin/2026/2026-03__presley-hinge-austin.md
+- [[Raunak (Hinge, Austin)]] - document - raw/imessage/individuals/raunak-hinge-austin/2025/2025-03__raunak-hinge-austin.md
+- [[Rema Hariharan (Aunty, Austin)]] - document - raw/imessage/individuals/rema-hariharan-aunty-austin/2025/2025-10__rema-hariharan-aunty-austin.md
+- [[Rema Hariharan Aunty (Austin)]] - document - raw/imessage/_profiles/group-group-dad-mom-rema.md
+- [[Rene (Hinge, Austin)]] - document - raw/imessage/individuals/rene-hinge-austin/2026/2026-04__rene-hinge-austin.md
+- [[Reyshme (Aunty, Austin)]] - document - raw/imessage/individuals/reyshme-aunty-austin/2025/2025-07__reyshme-aunty-austin.md
+- [[Riddhi (Hinge, Austin)]] - document - raw/imessage/individuals/riddhi-hinge-austin/2025/2025-03__riddhi-hinge-austin.md
+- [[Riddhi (Hinge, Austin, 9500)]] - document - raw/imessage/individuals/riddhi-hinge-austin-9500/2026/2026-02__riddhi-hinge-austin-9500.md
+- [[Ritu (Hinge  Dallas med school)]] - document - raw/imessage/individuals/ritu-hinge-dallas/2026/2026-03__ritu-hinge-dallas.md
+- [[Riya (Hinge  Austin & NYC)]] - document - raw/imessage/individuals/riya-hinge-austin-nyc/2025/2025-07__riya-hinge-austin-nyc.md
+- [[Riya (Hinge  Dallas)]] - document - raw/imessage/individuals/riya-hinge-dallas/2025/2025-03__riya-hinge-dallas.md
+- [[Riya23 (Hinge  Austin)]] - document - raw/imessage/individuals/riya23-hinge-austin/2025/2025-03__riya23-hinge-austin.md
+- [[Rushu (Hinge, Dallas)]] - document - raw/imessage/individuals/rushu-hinge-dallas/2025/2025-04__rushu-hinge-dallas.md
+- [[Saagarika (Hinge Dallas)]] - document - raw/imessage/individuals/saagarika-hinge-dallas/2026/2026-03__saagarika-hinge-dallas.md
+- [[Sabrina (Hinge Austin)]] - document - raw/imessage/individuals/sabrina-hinge-austin/2026/2026-03__sabrina-hinge-austin.md
+- [[Sabrina (Hinge Dallas)]] - document - raw/imessage/individuals/sabrina-hinge-dallas/2025/2025-07__sabrina-hinge-dallas.md
+- [[Sai Guraijala (Austin  Casco)]] - document - raw/imessage/individuals/sai-guraijala-austin-casco/2025/2025-05__sai-guraijala-austin-casco.md
+- [[Sai Guraijala (Austin Casco)]] - document - raw/imessage/_profiles/group-group-dravin-sai-sam.md
+- [[Sammy Virji (DJ  artist)]] - document - raw/imessage/individuals/jesse-cruise-dirty-6th/2026/2026-03__jesse-cruise-dirty-6th.md
+- [[San Diego]] - document
+- [[Sandeep Chinchali Austin]] - document - raw/imessage/_profiles/group-group-avinash-sandeep.md
+- [[Shiva (Austin)]] - document - raw/imessage/individuals/shiva-austin/2024/2024-11__shiva-austin.md
+- [[Shree (Hinge, NYC)]] - document - raw/imessage/individuals/shree-hinge-nyc/2026/2026-02__shree-hinge-nyc.md
+- [[Shreeya (Hinge, San JoseSJ)]] - document - raw/imessage/individuals/shreeya-hinge-sd/2026/2026-03__shreeya-hinge-sd.md
+- [[Shreya (Hinge, Austin)]] - document - raw/imessage/individuals/shreya-hinge-austin/2026/2026-03__shreya-hinge-austin.md
+- [[Shreya (Hinge, Austin, 4354)]] - document - raw/imessage/individuals/shreya-hinge-austin-4354/2025/2025-03__shreya-hinge-austin-4354.md
+- [[Shriya (Hinge  Indiana)]] - document - raw/imessage/individuals/shriya-hinge-indiana/2026/2026-03__shriya-hinge-indiana.md
+- [[Shruthi (Hinge  Dallas)]] - document - raw/imessage/individuals/shruthi-hinge-dallas/2025/2025-10__shruthi-hinge-dallas.md
+- [[Shubhi (Hinge  LA)]] - document - raw/imessage/individuals/shubhi-hinge-la/2026/2026-02__shubhi-hinge-la.md
+- [[Sierra (Hinge  Austin East Side)]] - document - raw/imessage/individuals/sierra-hinge-austin/2026/2026-03__sierra-hinge-austin.md
+- [[Simon (Hinge  Austin)]] - document - raw/imessage/individuals/simon-hinge-austin/2025/2025-07__simon-hinge-austin.md
+- [[Skylar (Hinge  San Diego)]] - document - raw/imessage/individuals/skylar-hinge-sd/2026/2026-03__skylar-hinge-sd.md
+- [[Smera (Hinge  LA)]] - document - raw/imessage/individuals/smera-hinge-la/2025/2025-08__smera-hinge-la.md
+- [[Sonia (Hinge  LA-Bakersfield)]] - document - raw/imessage/individuals/sonia-hinge-la/2026/2026-02__sonia-hinge-la.md
+- [[Sree (Hinge  NYC-Jersey City)]] - document - raw/imessage/individuals/sree-hinge-nyc/2025/2025-08__sree-hinge-nyc.md
+- [[Sriya (Hinge Austin)]] - document - raw/imessage/individuals/sriya-hinge-austin/2026/2026-03__sriya-hinge-austin.md
+- [[Swathi (Hinge Austin)]] - document - raw/imessage/individuals/swathi-hinge-austin/2026/2026-02__swathi-hinge-austin.md
+- [[Taliyah (Hinge SD)]] - document - raw/imessage/individuals/taliyah-hinge-sd/2026/2026-03__taliyah-hinge-sd.md
+- [[Tanisha (Hinge Austin)]] - document - raw/imessage/individuals/tanisha-hinge-austin/2026/2026-02__tanisha-hinge-austin.md
+- [[Tanisha (Hinge LA)]] - document - raw/imessage/individuals/tanisha-hinge-la/2026/2026-02__tanisha-hinge-la.md
+- [[Taruni (Hinge Dallas)]] - document - raw/imessage/individuals/taruni-hinge-dallas/2026/2026-03__taruni-hinge-dallas.md
+- [[Taylor (Hinge LA)]] - document - raw/imessage/individuals/taylor-hinge-la/2025/2025-08__taylor-hinge-la.md
+- [[Teresa (Hinge Austin)]] - document - raw/imessage/individuals/teresa-hinge-austin/2026/2026-03__teresa-hinge-austin.md
+- [[Tess (Hinge, Santa ClaraSF Bay)]] - document - raw/imessage/individuals/tess-hinge-sd/2026/2026-03__tess-hinge-sd.md
+- [[Tisha (Hinge, Austin)]] - document - raw/imessage/individuals/tisha-hinge-austin/2025/2025-03__tisha-hinge-austin.md
+- [[Tobi (Hinge, Austin)]] - document - raw/imessage/individuals/tobi-hinge-austin/2026/2026-02__tobi-hinge-austin.md
+- [[Trisha (Hinge, NashvilleAlabama)]] - document - raw/imessage/individuals/trisha-hinge-alabama/2026/2026-02__trisha-hinge-alabama.md
+- [[UT Austin]] - document - raw/imessage/individuals/alefia-hinge-austin/2025/2025-03__alefia-hinge-austin.md
+- [[Urmi (Hinge, Dallas)]] - document - raw/imessage/individuals/urmi-hinge-dallas/2025/2025-03__urmi-hinge-dallas.md
+- [[Vaishnavi (Hinge, NC  Texas State)]] - document - raw/imessage/individuals/vaishnavi-hinge-nc/2026/2026-02__vaishnavi-hinge-nc.md
+- [[Vani (Hinge, Austin)]] - document - raw/imessage/individuals/vani-hinge-austin/2026/2026-02__vani-hinge-austin.md
+- [[Vanshika (Hinge, LAWeHo)]] - document - raw/imessage/individuals/vanshika-hinge-la/2026/2026-02__vanshika-hinge-la.md
+- [[Vanshika (Hinge, NYC)]] - document - raw/imessage/individuals/vanshika-hinge-nyc/2026/2026-02__vanshika-hinge-nyc.md
+- [[Varsha (Hinge, LA near USCDTLA)]] - document - raw/imessage/individuals/varsha-hinge-la/2026/2026-02__varsha-hinge-la.md
+- [[Varshika (Hinge Dallas)]] - document - raw/imessage/individuals/varshika-hinge-dallas/2026/2026-03__varshika-hinge-dallas.md
+- [[Vee (Hinge Austin)]] - document - raw/imessage/individuals/vee-hinge-austin/2026/2026-03__vee-hinge-austin.md
+- [[Walnut Creek Metro Park (Austin)]] - document - raw/imessage/individuals/miya-hinge-austin/2026/2026-02__miya-hinge-austin.md
+- [[Wampus (Austin bar)]] - document - raw/imessage/individuals/riddhi-hinge-austin-9500/2026/2026-02__riddhi-hinge-austin-9500.md
+- [[Yogitha (Hinge Austin)]] - document - raw/imessage/individuals/yogitha-hinge-austin/2026/2026-03__yogitha-hinge-austin.md
+- [[Z  Lakshmi Varadan (Austin)]] - document - raw/imessage/_profiles/group-group-kumar-z.md
+- [[Zaara (Hinge LA)]] - document - raw/imessage/individuals/zaara-hinge-la/2026/2026-02__zaara-hinge-la.md
+- [[Zilker Park (Austin)]] - document - raw/imessage/individuals/miloni-hinge-austin/2026/2026-03__miloni-hinge-austin.md
+- [[Zilker Park Austin]] - document - raw/imessage/individuals/sreya-hinge-austin/2026/2026-03__sreya-hinge-austin.md
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Austin_Dating_+_Locals
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 198 edges to [[_COMMUNITY_Dating Roster (mixed)]]
+- 56 edges to [[_COMMUNITY_LA Dating + LA Network]]
+- 11 edges to [[_COMMUNITY_NYCUSC (Akshar circle)]]
+- 9 edges to [[_COMMUNITY_Hinge + AI Music Project]]
+- 8 edges to [[_COMMUNITY_LASA Classmates]]
+- 5 edges to [[_COMMUNITY_Sylmar Property + Tenants]]
+- 5 edges to [[_COMMUNITY_Amsterdam Trip + Festival Crew]]
+- 3 edges to [[_COMMUNITY_Bay Area + Slash]]
+- 2 edges to [[_COMMUNITY_Crypto Events + Investors]]
+- 1 edge to [[_COMMUNITY_Startup Accelerators]]
+- 1 edge to [[_COMMUNITY_Bay Area Family]]
+
+## Top bridge nodes
+- [[Austin, TX_1]] - degree 81, connects to 6 communities
+- [[Austin, TX]] - degree 70, connects to 6 communities
+- [[Hinge (dating app)]] - degree 194, connects to 5 communities
+- [[Dravin Raj (Austin)]] - degree 8, connects to 4 communities
+- [[Brennan Noah (Austin)]] - degree 7, connects to 3 communities

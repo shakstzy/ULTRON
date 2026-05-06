@@ -44,9 +44,10 @@ attachments:
   sender: prabhat-nuthakki-uc-berkeley
   sent_at: '2026-04-10T15:20:40.841365-05:00'
   sha256: a1be75d13820bfb148bb1e946d8cefadd03b76ad96783c45d6a63d03b01450a7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Indian dinner featuring biryani, curries, and chicken 65 on a wooden
+    table with a Coke can.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:48:53.669174+00:00'
   source_available: true
 - id: 2f198ba2af36a438
   filename: 79754541063__0C39FFD2-FF0D-4FAB-9CEC-C02C3626A3D9.heic
@@ -55,9 +56,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-04-10T15:23:38.790535-05:00'
   sha256: 21e775ed67008b8ebb8cbc372fac1541b1a52dae18ddd8b32e8e4de30f00c2d0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Collider graphic of Spear announcing the Season 3 debut of 'Primal'
+    on streaming.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:49:40.955705+00:00'
   source_available: true
 - id: fcb38210cc029cc5
   filename: IMG_2051.png
@@ -66,9 +68,9 @@ attachments:
   sender: me
   sent_at: '2026-04-10T15:24:09.299620-05:00'
   sha256: d47d7d61e02f9706d1564011e8dacd912626a987263e9366abc36f58a6c837b9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Close-up of Spear from the show Primal with a shocked and angry expression.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:17.181476+00:00'
   source_available: true
 - id: 514296970e94344c
   filename: IMG_7003.png

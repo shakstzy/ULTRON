@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-10-02T15:43:04.195000-05:00'
   sha256: 43570839be589123bb1953ac18d752d39df7f339354cf58883f9ec281634c441
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage from Rushil Jha asking "Hey" and "What all do you sell" at
+    1:05 PM.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:36.141877+00:00'
   source_available: true
 chat_message_guids_count: 33
 deleted_upstream: null

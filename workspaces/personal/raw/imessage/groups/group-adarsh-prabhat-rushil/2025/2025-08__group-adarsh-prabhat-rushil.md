@@ -33,9 +33,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-08-24T21:32:48.859463-05:00'
   sha256: 83115d7581e5d3ccfb8f3f651207440b497605153185ad6c241bb85b5096f55b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LG monitor showing Blue Eye Samurai beside a Diet Coke can on a world
+    map desk mat.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:04.612003+00:00'
   source_available: true
 - id: 7313187cc54bdde2
   filename: IMG_6955.png

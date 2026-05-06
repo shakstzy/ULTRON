@@ -33,9 +33,9 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-11-03T10:51:03.761217-06:00'
   sha256: 2a2bfbbb401785bf1c8eaa8930f331529e5c6db589fae4b66414283dbed2e69a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A tall frosted glass bong featuring a gold-colored gear and cog pattern.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:59.159538+00:00'
   source_available: true
 - id: 29e20e790cabdb52
   filename: "Screenshot 2025-11-06 at 1.56.11\u202FAM.png"
@@ -55,9 +55,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-11-14T09:02:43.603595-06:00'
   sha256: c5f09f1aa2e51c43e1ee9656a7d196439c67193500e9840c245f5c42d4564f4a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a $15 glass coffee table listing with a $10 counter-offer
+    comment.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:23.578950+00:00'
   source_available: true
 - id: 8584e0acf638b09f
   filename: images.jpeg
@@ -66,9 +67,9 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2025-11-17T19:11:49.744519-06:00'
   sha256: 428aa95ffdc49fceb2c13007b379b4c8e18dfa423c2aa3908c1804364e7cba52
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Animated gorilla Johnny wearing a leather jacket and teal graphic tee.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:02.916384+00:00'
   source_available: true
 - id: 087edf92ebd5fbd9
   filename: IMG_8782.png
@@ -77,9 +78,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-11-20T02:57:49.691086-06:00'
   sha256: 1207e075c39a57f87a8666cc8b7984852d130ba3e7847f2b427b78d46d993c6f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a chat with Edwin showing a photo of a glass
+    bong on a table.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:17.007422+00:00'
   source_available: true
 - id: e34b598545702814
   filename: IMG_4772.png
@@ -88,9 +90,9 @@ attachments:
   sender: me
   sent_at: '2025-11-20T11:09:20.271461-06:00'
   sha256: 05c04a094c33a87420e836d1d12a0d33f78e5b633093e9c951bc570775683abd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a FaceTime video call with "Wifey" showing a man's face.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:04.926877+00:00'
   source_available: true
 - id: a6afcf265307f906
   filename: IMG_4121.png
@@ -99,9 +101,10 @@ attachments:
   sender: me
   sent_at: '2025-11-20T11:23:56.240773-06:00'
   sha256: 567c6562f9fb6979f687c3436dfb665a16a5b6609da978f432daee31f3993686
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot showing "I have a suprise..." and "Nah he's chill"
+    from Wifey (silenced).
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:07.800554+00:00'
   source_available: true
 - id: 1547bf8d234b66ec
   filename: IMG_8783.PNG
@@ -110,9 +113,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-11-20T12:05:37.506749-06:00'
   sha256: 94391a1ec1939fd914f0f748adbfd4d826dfc1c8e10728d144341614d9d5512d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LinkedIn profile screenshot for Rehan Rupawalla, an exited founder
+    currently at Mercor.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:13.761932+00:00'
   source_available: true
 - id: 9a3e9416d2a64e75
   filename: IMG_0590.gif
@@ -121,9 +125,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-11-20T16:15:27.775066-06:00'
   sha256: a6b31d385047acfe85a477040adf5cb46595464ccaee548a3c425856148df682
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Kash Patel widens his eyes at a podium in a GIF captioned "to my friend
+    Charlie Kirk".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:32.445864+00:00'
   source_available: true
 chat_message_guids_count: 242
 deleted_upstream: null

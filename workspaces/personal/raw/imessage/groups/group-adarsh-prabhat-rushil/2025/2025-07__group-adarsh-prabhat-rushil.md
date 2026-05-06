@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2025-07-03T17:53:04.025000-05:00'
   sha256: 5b3dbaa45d6f122de2feaa4cbf52066ef699facaab9afe67af10cad4d484669a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Group chat screenshot: Abraham introduces @shakstzy to F R regarding
+    "K".'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:57.825993+00:00'
   source_available: true
 - id: 75448428399ae286
   filename: IMG_6602.png
@@ -77,9 +78,9 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-07-09T13:17:53.596171-05:00'
   sha256: 840fa532e5d9faf147ee2bdc20decf713a9607580bf803b1fa24e69a7a4e1141
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram profile of akashponna, a UC Berkeley alumnus with 3,225 followers.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:05.994401+00:00'
   source_available: true
 - id: 5887cdc5e3c6456f
   filename: IMG_7215.PNG

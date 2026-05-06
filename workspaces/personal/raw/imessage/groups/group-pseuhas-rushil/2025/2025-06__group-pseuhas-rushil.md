@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-06-03T20:29:31.107000-05:00'
   sha256: d22aab2a308c34944edb1cc7306b7a4475a8cc550f8ecb3ddc16d202cdc6793e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Flight WN1092 itinerary for Adithya S Kumar from STL to LGA, departing
+    at 7:45 PM.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:46.436776+00:00'
   source_available: true
 - id: 3239130e6d0d841b
   filename: IMG_9425.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-06-04T18:20:53.820755-05:00'
   sha256: cfd8c267c76604984a768b2356d47d3e1d6f8feee4e39b3319b3655c9de30a9c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Venmo app showing 2025 transactions with Suhas Prasad, Rushil Jha,
+    and Nidhi Roychowdhury.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:58.090218+00:00'
   source_available: true
 - id: 76900bae8f81e702
   filename: voicemail-22872265440.m4a
@@ -55,9 +57,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-06-09T05:57:31.702219-05:00'
   sha256: 5fb4ab28eee50800f200ce7031bd7740a54b6e03ff362c892ff962ff274d31af
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone Recents log showing six missed calls from Adithya Kumar between
+    3:14 AM and 3:32 AM.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:43.247497+00:00'
   source_available: true
 - id: 9962f755d524523e
   filename: IMG_9581.PNG
@@ -66,9 +69,10 @@ attachments:
   sender: me
   sent_at: '2025-06-10T09:12:43.379591-05:00'
   sha256: d8c496efa32bbedec9de27fe31b7a93003ceba90ebe71c56026de18c9c317de4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Maps satellite view of barbershop search results in Carnegie
+    Hill and Long Island City.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:59.125490+00:00'
   source_available: true
 - id: a3e6794454e26c53
   filename: IMG_8731.png
@@ -77,9 +81,10 @@ attachments:
   sender: me
   sent_at: '2025-06-10T10:05:48.758000-05:00'
   sha256: 6a64c0e6c4879fa742b8efc9bfb7103febe893f45211dce6386cad825baa4438
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Maps listing for Fusion Salon showing a black and white photo
+    of a man's haircut.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:49.687357+00:00'
   source_available: true
 - id: af424618b37b6ec9
   filename: IMG_8578.png
@@ -88,9 +93,10 @@ attachments:
   sender: me
   sent_at: '2025-06-16T15:12:07.028000-05:00'
   sha256: 5d7c911329e39b81731ce021677298f39e7ff39acb0d6d68a5ea8317d1a77a9e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LinkedIn profile for Niggesh Kuppuswamy, a landscaping business owner
+    in Greater Chennai.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:57.323736+00:00'
   source_available: true
 - id: 5b845c9f230e4040
   filename: IMG_0172.PNG
@@ -99,9 +105,10 @@ attachments:
   sender: me
   sent_at: '2025-06-26T20:26:20.057085-05:00'
   sha256: 2dc6a64ba854b9874d08ac63439d2d743354d04761f8cf6e8836ecda43055341
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot where Riya calls the sender a 'fuck boy' after
+    being called 'cutie'.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:05.183960+00:00'
   source_available: true
 - id: bbd6517e84079e6b
   filename: IMG_0190.PNG
@@ -110,9 +117,10 @@ attachments:
   sender: me
   sent_at: '2025-06-27T02:48:12.655572-05:00'
   sha256: e4573626386443a170acc779e4efab33350c7d03cc5a97dc270ebf93293d6f6d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hinge dating profile screenshot of Vini wearing a blue traditional
+    Indian outfit.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:59.949402+00:00'
   source_available: true
 - id: 4ddf8b2307f35554
   filename: IMG_0191.PNG
@@ -132,9 +140,9 @@ attachments:
   sender: me
   sent_at: '2025-06-27T02:49:28.416152-05:00'
   sha256: ed043b6f582fdcc036589c40193ebaecf11aa7af0f72de130ebbea92a8b39edf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hinge profile for Vini, 23, who geeks out on Star Wars prequels.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:50.719716+00:00'
   source_available: true
 - id: d30895a762b33b39
   filename: IMG_0193.PNG
@@ -143,9 +151,10 @@ attachments:
   sender: me
   sent_at: '2025-06-27T03:43:44.917199-05:00'
   sha256: f9eeb5ec1c2898724f4fc3a8690c574f14471d48db29d9f833bb7b74b80e69e2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hinge profile for Anjaly with a photo of her and a friend and a travel
+    shot at a temple.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:12.523080+00:00'
   source_available: true
 - id: a133dd23e98d7499
   filename: IMG_0195.PNG
@@ -166,9 +175,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-06-27T07:39:44.505057-05:00'
   sha256: f97fe1f41f8ead26ac524e2107ca62b77cb4513726b3ec784100840034af631c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage from Basil Najjar about an options monitor screener and productionizing
+    Plotly code.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:56.256368+00:00'
   source_available: true
 - id: 3e9490e329617f11
   filename: IMG_7397.heic
@@ -177,9 +187,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-06-27T11:35:30.116966-05:00'
   sha256: 30d2cdf02b4ca82d4b04ec77e0a6903a353eaf694a0a5fbeb25b6a2c429446e3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Roasted lamb chops with green herb marinade on foil next to a bowl
+    of tzatziki sauce.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:55.286761+00:00'
   source_available: true
 - id: 0a7bd49d5ec4028b
   filename: IMG_0223.PNG
@@ -188,9 +199,10 @@ attachments:
   sender: me
   sent_at: '2025-06-30T16:45:39.713287-05:00'
   sha256: 71d27b7e13d6a86e1c3b9fbd5e75a608e869766d8878cf0d6976fb61548b98b2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a group chat titled "CV menu" listing various drugs and
+    shop pickup details.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:52.129379+00:00'
   source_available: true
 chat_message_guids_count: 182
 deleted_upstream: null

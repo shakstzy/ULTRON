@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-05-01T21:44:31.633265-05:00'
   sha256: 5a865d94dc86cd26c0050432fa0d7eaf94306b74ae591e9d8e6289f0cea37357
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a mortgage redisclosure email from CMG Home Loans for
+    Adithya Kumar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:56.683800+00:00'
   source_available: true
 - id: f50e795d2778f837
   filename: IMG_8500.PNG.jpeg
@@ -33,9 +34,9 @@ attachments:
   sender: me
   sent_at: '2024-05-01T21:44:35.604865-05:00'
   sha256: 2b2d401f279b120805649b60c0234a7b8058a06f63d539e6c8c294e4b32c39eb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of an ongoing 6:17 call with 'zard Lender' and 'Reed'.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:38.635915+00:00'
   source_available: true
 - id: 448a29194e6a305d
   filename: IMG_8499.PNG.jpeg
@@ -44,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2024-05-01T21:52:24.235212-05:00'
   sha256: 5a865d94dc86cd26c0050432fa0d7eaf94306b74ae591e9d8e6289f0cea37357
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a mortgage redisclosure email from CMG Home Loans for
+    Adithya Kumar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:56.683800+00:00'
   source_available: true
 - id: 9ba95153dbecef40
   filename: contact000000.vcf
@@ -55,9 +57,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-02T12:17:25-05:00'
   sha256: 52efa1707993e4683be1e70bf34d8a2a59222fd167c03b451aa4de1ad43d66bf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a VCard (VCF) contact file. It contains the name REI LA Fernando
+    Morales Rental and a mobile phone number.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:49.609681+00:00'
   source_available: true
 - id: 84b6de9c0ddcca1d
   filename: IMG_8509.jpeg
@@ -66,9 +69,10 @@ attachments:
   sender: me
   sent_at: '2024-05-02T14:30:42.479072-05:00'
   sha256: d83471ae7517ea4827614b1f8f9edc6174b0f0dceb1e66da4bf7c8d8d5294ede
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Redfin screenshot showing a map location for 15227 Villagio Way in
+    Los Angeles.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:15.609423+00:00'
   source_available: true
 - id: 454e5fd07226ec37
   filename: image.png
@@ -77,9 +81,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-02T14:33:41-05:00'
   sha256: d13d7a9b224ad3f73305d4c6aa2d7f8c18c9fbbe17632c2e69c0c754f6b24baf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Qualia email from Glen Oaks Escrow to confirm insurance for the 13245
+    Klein Court closing.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:25.052551+00:00'
   source_available: true
 - id: de2c3074bb01394d
   filename: image000001.jpg
@@ -88,9 +93,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-05T20:33:45-05:00'
   sha256: 07a9e89d6f0c85402da12a399cfe0da37f2ae6a382ecbd70f7e9d72946ca2f7d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Legal settlement check for $305.02 to Adithya Shakthi Kumar for Zhou
+    v. Cisco Systems.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:28.541786+00:00'
   source_available: true
 - id: 4127c2ccd61ff269
   filename: image000003.jpg
@@ -99,9 +105,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-05T20:33:45-05:00'
   sha256: 7af6d157a4304e61a3c9d2e39c69f1b63130e89d1bb08a89ed8f2e69b2713bb7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 2024 Form 1099-MISC for Adithya Shakthi Kumar showing $232.27 in other
+    income from Cisco Systems.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:48.463735+00:00'
   source_available: true
 - id: e283527ebd9ce229
   filename: image000002.jpg
@@ -110,9 +117,9 @@ attachments:
   sender: mom
   sent_at: '2024-05-05T20:33:45-05:00'
   sha256: e4957984972a9fb639bbf410590250f25e9424e1bff53bf4791e6dc93ce4915c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A 2024 Form W-2 Wage and Tax Statement for Adithya Shakthi Kumar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:52:06.036495+00:00'
   source_available: true
 - id: c422319fe398a362
   filename: image000000.jpg
@@ -121,9 +128,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-05T20:33:45-05:00'
   sha256: fa6b5441891bdb00c5fe1bea108c7f772d2ec39d6dd10d014ace892104b6de5c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: CMG Home Loans mail addressed to Adithya Kumar and Kumar Nagarajan
+    in Austin.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:29.646361+00:00'
   source_available: true
 - id: d387c66717febffc
   filename: image.png
@@ -132,9 +140,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-12T14:22:29-05:00'
   sha256: e0196680655fa22646e229229bdc16aa40f6bc11562f267da45f92e59a3f1b89
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A chat message at 2:21 PM says Sid is reaching out so the group can
+    go to lunch today.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:41.154511+00:00'
   source_available: true
 - id: 2c26f26c74f3fde4
   filename: image.png
@@ -143,9 +152,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-12T14:23:50-05:00'
   sha256: 3cfe1bda5da3da2bd7ef004b54307dabaa41d57cf2af9221978bb754483b2e62
-  description: null
-  description_model: null
-  extracted_at: null
+  description: WhatsApp chat about Sid organizing lunch and a meeting with CA family
+    in the East Bay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:41.780785+00:00'
   source_available: true
 - id: ab6fb86825359ee2
   filename: image.png
@@ -154,9 +164,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-12T14:36:26-05:00'
   sha256: ec445b22c847a4bf605a9cd02d019b6282007f9f4b35d6925d177fcaa944cf79
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Chat screenshot of a pink business card for RASA Indian Groceries in
+    Artesia, California.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:48.732165+00:00'
   source_available: true
 - id: 8c302cd1a452888e
   filename: image.png
@@ -165,9 +176,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-12T14:46:54-05:00'
   sha256: 6c40301433826a62c6b9a1a9280a0dd49a30a0f4ef6f39b47ea747186df55601
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Amber messages Denise a Sylmar address to request an estimate visit
+    this Thursday.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:41.869704+00:00'
   source_available: true
 - id: f808a64cbeaa9047
   filename: image.png
@@ -176,9 +188,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-12T15:59:06-05:00'
   sha256: 7163dfa949834369aeaeba707bd39b5462385639636b675ec049bfd1e1776ae1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Lord Ganesha seated on a throne holding sacred objects, framed by golden
+    temple bells.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:47.597903+00:00'
   source_available: true
 - id: 63da30123c79a067
   filename: image000000.jpg
@@ -187,9 +200,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-17T12:07:00-05:00'
   sha256: 27c91a21e67945cb9daa310ab71bf64198ee08df95827ecc019d98d0916be299
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LL Flooring promotional sign offering interest-free financing and 6.99%
+    APR.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:52:00.371642+00:00'
   source_available: true
 - id: d5083d83d5c50099
   filename: image000001.jpg
@@ -198,9 +212,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-17T12:07:00-05:00'
   sha256: e556399bcdcbc1d26fc8ca80ea6765e8e0cd5652fefc179365363755916adab2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A 'Manager's Special' price sheet listing discounted flooring products
+    and prices.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:52:02.152207+00:00'
   source_available: true
 - id: a3ca4316f5b4741f
   filename: image000002.jpg
@@ -220,9 +235,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-17T12:08:24-05:00'
   sha256: e41ac0f43b605a51f69c86dab476acff8f9185ad0aa22cc90cc0221d1072d51c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dream Home Stockholm Silver Oak laminate flooring sample on sale for
+    $1.79.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:52:00.089911+00:00'
   source_available: true
 - id: 002e2801b853017f
   filename: image000001.jpg
@@ -264,9 +280,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-17T12:08:24-05:00'
   sha256: f26bce9cef172358ceaea186420c4ddd8dd59623ae91004fc25982d8e297baca
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Nottingham Oak laminate flooring sample on sale for $2.62 per square
+    foot.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:49.948162+00:00'
   source_available: true
 - id: 98e7f3ea3fac7f3d
   filename: image000003.jpg
@@ -275,9 +292,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-17T12:09:51-05:00'
   sha256: 141897a26876f69cc8eb2105145c7c1a353c434f5e91942dd07730583371d8dc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: CoreLuxe Bavarian White Oak rigid vinyl plank flooring on sale for
+    $2.47/sq.ft.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:52:03.869894+00:00'
   source_available: true
 - id: 19dd7d2ba2d0dad0
   filename: image000001.jpg
@@ -286,9 +304,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-17T12:09:51-05:00'
   sha256: 499172515076cad71699e93d15d0ed547267ef8443735bbb85988f6681f50223
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Renature by CoreLuxe Toledo Oak vinyl plank flooring samples on sale
+    for $3.59.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:40.482528+00:00'
   source_available: true
 - id: ce9b71443cefbf08
   filename: image000000.jpg
@@ -297,9 +316,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-17T12:09:51-05:00'
   sha256: bd8b6a8ebc086ad7014eb161e41000fb9274408ee41e9b0ef1e8850b5cffc039
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Coreluxe Sheffield Oak rigid vinyl plank flooring sample on display
+    for $3.29.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:44.914526+00:00'
   source_available: true
 - id: bf13649522f3d8ee
   filename: image000002.jpg
@@ -308,9 +328,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-17T12:09:51-05:00'
   sha256: 23677bf2ab89afc5b286ac2b6e6e7f08bf15e1245b089b0dbf2762c0bbeeb244
-  description: null
-  description_model: null
-  extracted_at: null
+  description: CoreLuxe Norwegian Walnut rigid vinyl plank flooring sample on sale
+    for $2.69 per square foot.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:48.117841+00:00'
   source_available: true
 - id: 6ace794c4b704b68
   filename: image000004.jpg
@@ -319,9 +340,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-17T12:09:51-05:00'
   sha256: f22b49e094dd45020661e9e873c3b1241b2ddcf89265fc68cdcb4c978178a76f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: ReNature by CoreLuxe Oslo Elm rigid vinyl plank flooring sample priced
+    at $2.69/sq ft.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:52.752904+00:00'
   source_available: true
 - id: ca2b15e516349fc2
   filename: image000001.jpg
@@ -330,9 +352,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-17T12:11:51-05:00'
   sha256: 10a17ce480fccb4a912fc95c67c88fd34b6e161a488b6cd5712ef0593b433ae6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Toledo Oak rigid vinyl plank flooring sample with a $3.59 sale price
+    tag.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:55.558538+00:00'
   source_available: true
 - id: 73178a708a6def1f
   filename: image000000.jpg
@@ -341,9 +364,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-17T12:11:51-05:00'
   sha256: f51f7490d209bac54109fa15773d4ac9ca804e3b4d872fa5b8b047c9f2113645
-  description: null
-  description_model: null
-  extracted_at: null
+  description: CoreLuxe Sheffield Oak rigid vinyl plank flooring sample priced at
+    $3.29 per square foot.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:39.153120+00:00'
   source_available: true
 - id: 016f852d57cb2efb
   filename: image000002.jpg
@@ -352,9 +376,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-17T12:11:51-05:00'
   sha256: ee88b0b1b704f738fbaf385aa5aae6d4d1bf241b0f81b393c76fa40a241e1b3a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Norwegian Walnut rigid vinyl plank flooring on sale for $2.69 per square
+    foot.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:35.797783+00:00'
   source_available: true
 - id: 1398399bbdfc0384
   filename: image000000.jpg
@@ -363,9 +388,9 @@ attachments:
   sender: mom
   sent_at: '2024-05-17T15:59:42-05:00'
   sha256: 52504c2afc6bbb5d1f5ee5679d38f23fafe29179907ceeed89368a583d6cce3a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two square wood flooring samples resting on gray distressed wood planks.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:32.425620+00:00'
   source_available: true
 - id: cc464614bf8d8b63
   filename: image000000.jpg
@@ -374,9 +399,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-17T17:16:32-05:00'
   sha256: 0395bbf58545a6b3be21b363c3222e1ca8b44f04d8dbc2e5bf62a3b7011d20f8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Samsung front-load washing machine with All and OxiClean detergent
+    bottles on top.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:32.947443+00:00'
   source_available: true
 chat_message_guids_count: 336
 deleted_upstream: null

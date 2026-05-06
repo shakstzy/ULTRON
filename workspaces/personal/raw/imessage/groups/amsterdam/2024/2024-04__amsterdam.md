@@ -46,9 +46,10 @@ attachments:
   sender: phone-+18186963499
   sent_at: '2024-04-07T15:29:12.759858-05:00'
   sha256: 37f959bdd55782a8eabf5a7a22e1ecafaab2116df5f81b5f2e4a4ad0bcf53329
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three young men smile and pose outdoors with cans; one wears a blue
+    Berkeley hoodie.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:14:41.876747+00:00'
   source_available: true
 - id: 9e02ef0b0ea865e0
   filename: IMG_1872.jpeg

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-28T15:11:49.690066-05:00'
   sha256: 482ed95c76408ffbe6aac18509468f49004ef00e8717cb3446bf18d765b9d943
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Asphalt road bordering large trees, utility lines, and a grassy park
+    in the distance.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:50.040401+00:00'
   source_available: true
 chat_message_guids_count: 56
 deleted_upstream: null

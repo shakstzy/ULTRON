@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-31T00:04:33.617208-05:00'
   sha256: 968a258dd6c5b961b79c1133ae52d8c908037f02114949d02739072126b7f3f0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram screenshot of a man in sunglasses with a viral comment by
+    comedian Hasan Minhaj.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:58.237793+00:00'
   source_available: true
 - id: 45f9c195e709a0e1
   filename: 818CC0A6-24DE-4F89-AA59-CB908A00290A.pluginPayloadAttachment

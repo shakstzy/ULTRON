@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-12-25T21:07:07.262134-06:00'
   sha256: 04796c5bff6ce562ce5e6ba6c7a1d0e020e146af437a3fc4bdea70d292c56e47
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Satellite map of New Mexico showing Roswell, Ruidoso, and the Mescalero
+    Reservation.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:34.768945+00:00'
   source_available: true
 chat_message_guids_count: 1
 deleted_upstream: null

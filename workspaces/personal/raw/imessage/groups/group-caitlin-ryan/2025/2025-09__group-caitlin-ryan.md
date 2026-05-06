@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-09-05T17:15:21.097000-05:00'
   sha256: f4aba26eac1dcbedf2159495b52168053654a96fd4ca3ffc2e11dbfdfc11d998
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Audio player showing track 'LoseYou_MKmixV1.0' paused at 01:03 of 03:13
+    with a waveform.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:06.291417+00:00'
   source_available: true
 - id: 30eeb49591046336
   filename: IMG_8442.png

@@ -44,9 +44,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-01-28T14:24:47.309702-06:00'
   sha256: a1182a5bdc0503aa7d886e44861e9bec37e45242aaa51916fd53d91d3f69921d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat with Amanpatel requesting Shlok's location and a coffee
+    shop address.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:47.630143+00:00'
   source_available: true
 - id: 2b3c8ee08d48fe39
   filename: IMG_9618.png
@@ -55,9 +56,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-01-28T14:26:14.689630-06:00'
   sha256: c285dea1368abdef810a6f9a398762762a4c70c7131df75abae13eb05e1f7488
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat with Amanpatel discussing Shlok's location and his "water
+    of life" coffee lore.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:51.417455+00:00'
   source_available: true
 - id: efd7d22d60851ca3
   filename: IMG_9621.PNG

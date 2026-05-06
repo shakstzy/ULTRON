@@ -22,9 +22,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-09T22:14:17-05:00'
   sha256: 1ffbdf15ce9e03e62e185206fa2bc148cb1966f93e308fc740486b3f4c8f2a44
-  description: null
-  description_model: null
-  extracted_at: null
+  description: SpaceX identification card for Adithya Kumar featuring a black and
+    white portrait.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:22.977661+00:00'
   source_available: true
 - id: 622afa99b3d5f9e9
   filename: image.png
@@ -88,9 +89,9 @@ attachments:
   sender: mom
   sent_at: '2024-04-24T19:26:48-05:00'
   sha256: cdc33956693cb90626f9ed905cb568394fb43b2362789c37fe3f93a0e5f4df04
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "Calculator screenshot showing 705,000 \xF7 1,574 resulting in 447.90343074968."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:49:00.562538+00:00'
   source_available: true
 - id: 0d0df71deecff5a7
   filename: image000000.png
@@ -99,9 +100,9 @@ attachments:
   sender: mom
   sent_at: '2024-04-24T19:27:01.401043-05:00'
   sha256: 5a39cbe473eef52b974cd6a9f68f150d2ec36c032a6c1b56adebd6d955686cc9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "Calculator app showing the division 731,000 \xF7 1,780 equals 410.67415730337."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:49:30.103377+00:00'
   source_available: true
 - id: ee4f4add7a2aab8d
   filename: image000000.png
@@ -110,9 +111,9 @@ attachments:
   sender: mom
   sent_at: '2024-04-24T19:27:15.088730-05:00'
   sha256: 76f97e9ee02219f2efbc333ed8acfb352e2b9290a637c92121ad101662057863
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Calculator app showing 725,000 divided by 1,920 resulting in 377.6041666666.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:52:07.070429+00:00'
   source_available: true
 - id: db86be7cc5f6e40a
   filename: 73570757427__EC32E10F-DC42-4463-89B1-E1D8CBBBBA1D.heic
@@ -121,9 +122,10 @@ attachments:
   sender: me
   sent_at: '2024-04-24T22:13:06.002342-05:00'
   sha256: a6c51517f908d3b0d4a1268eb1053ab0be5a910c2ba20c13e88a7a0dbc49a08d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Laptop screen showing a Google Meet call recording a presentation on
+    "Crypto-native Modular AI."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:49:34.805559+00:00'
   source_available: true
 - id: 78612c7079e2cc74
   filename: image.png
@@ -132,9 +134,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-25T20:49:27-05:00'
   sha256: 8554dda4b08f15585e96b366282a8395afa4d5863580363c5ab0c2c0e024fa7f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Academic text discussing psilocybin's abuse potential and preclinical
+    research comparisons.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:48:59.319543+00:00'
   source_available: true
 - id: bd3c41698431e798
   filename: image.png
@@ -143,9 +146,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-25T20:50:36-05:00'
   sha256: 5ace0e92dcbfae6f8f65bf69a4d09e7105d120d68184bc0c30c6f97f8c382c54
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Text outlining physical and psychological risks of psilocybin and mushroom
+    misidentification.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:21.653142+00:00'
   source_available: true
 - id: b0801fd70738bafe
   filename: Lcn_Lawn.gif
@@ -154,9 +158,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-25T21:14:26-05:00'
   sha256: 0c3b70e313d6b8b98772f2cdd0eba0a988f04bcb2827d24b123cf92581d3a1c1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a green shirt throws hay from a wheelbarrow onto a lawn with
+    text "Throw 'er Down!".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:23.540592+00:00'
   source_available: true
 - id: 342e548131c59707
   filename: image.png
@@ -165,9 +170,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-29T11:15:22-05:00'
   sha256: 0ed707b392891126f6e4906aea5ce0fe5b117dfeba52092d269ce002e038e49e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Home inspection confirmation for 13245 Klein Court, LA, scheduled for
+    April 30, 2024.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:49:19.449029+00:00'
   source_available: true
 - id: c737270e243c6fc9
   filename: image.png
@@ -176,9 +182,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-29T12:58:23-05:00'
   sha256: 54348a3b8fce1938e8843bfb0be82e2db1c36cb33692dc06882f56550c615fdc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Email from a loan processor requesting financial documents from Adithya
+    and Kumar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:49:19.430243+00:00'
   source_available: true
 - id: dd8b7f88b51c7f77
   filename: image.png
@@ -187,9 +194,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-29T13:01:19-05:00'
   sha256: e90fd2fb4dd8375f8da7909f2ae6e9012086d716877919f6ed71212da41caab1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: KLEIN checklist of 13 home-buying tasks, including loan docs, HOA,
+    and move-in logistics.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:49:18.696585+00:00'
   source_available: true
 - id: 342431e8ae552315
   filename: image.png
@@ -198,9 +206,9 @@ attachments:
   sender: mom
   sent_at: '2024-04-30T11:54:54-05:00'
   sha256: d29ad0a7ec8482024959916acff3a487a639dbe91dd69f7de7cd1197ac6b692a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Chat message providing Brandon's name and phone number (626) 940-9716.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:49:36.822386+00:00'
   source_available: true
 - id: 307b4b41e0d73bc6
   filename: image.png
@@ -209,9 +217,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-30T17:11:51-05:00'
   sha256: e70f7d5dc457ef312c8c15a2298862be1e551f828b22cd31aeaef659405d1bb8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: WhatsApp chat screenshot listing links and tasks to review before an
+    inspection alignment call.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:49:21.943385+00:00'
   source_available: true
 - id: a2a8b1a0e2723ee1
   filename: image.png
@@ -220,9 +229,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-30T17:12:16-05:00'
   sha256: 1a5b08d9ce6d76c0b8a1fd6de6c3a9d29583074d970ccd9053253a89ef5c2ab1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: WhatsApp chat outlining home inspection instructions and renovation
+    estimate requirements.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:49:27.856659+00:00'
   source_available: true
 - id: d1c28e4e0c8719be
   filename: image.png
@@ -231,9 +241,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-30T17:12:25-05:00'
   sha256: dafb30d677c1f6bd60de23b354b32ac6e0b2faf469a2a9c5233e2ef097493d01
-  description: null
-  description_model: null
-  extracted_at: null
+  description: WhatsApp messages about prioritizing "must-fix" house repairs and an
+    as-is rental strategy.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:49:30.265209+00:00'
   source_available: true
 - id: b44391f63a71c480
   filename: image.png
@@ -242,9 +253,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-30T17:12:42-05:00'
   sha256: 4d6b7eede3ab867b31576a43c3b5dcadb83ccda5b6dac4b2eded075e6f23deab
-  description: null
-  description_model: null
-  extracted_at: null
+  description: WhatsApp chat screenshot detailing house inspection tasks, rental estimates,
+    and room selection.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:49:49.599539+00:00'
   source_available: true
 - id: 2d7e7de59cc75ba5
   filename: 73620910601__9E326EFA-64AB-4F36-87A5-7216B6AFFAC4.MOV.3gp
@@ -253,9 +265,10 @@ attachments:
   sender: me
   sent_at: '2024-04-30T17:32:20.936368-05:00'
   sha256: 70552b0fd79b21024c2fa42039e58352e6b0b71062cfd6bf8309a94c9dcbb577
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Handheld pan of a street with a pink tree and a balcony at building
+    13245.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:49:36.831307+00:00'
   source_available: true
 - id: 917c688669069c26
   filename: 73620944034__1C552C05-9DA9-47D4-9064-908D425B4101.MOV.3gp
@@ -264,9 +277,9 @@ attachments:
   sender: me
   sent_at: '2024-04-30T17:37:37.376276-05:00'
   sha256: a90228a21b97da46c84d99f9cb6d2cf72f9a65c98eed36e145b8a72bc6a232a8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Exterior pan of townhome garages and a wall-mounted security camera.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:20.533290+00:00'
   source_available: true
 - id: 993cc7f4a388c617
   filename: 73620949200__5881035C-8283-45BD-9C26-4A42479F62D4.MOV.3gp
@@ -275,9 +288,10 @@ attachments:
   sender: me
   sent_at: '2024-04-30T17:39:02.161752-05:00'
   sha256: e9047581150abb06f23fc5b4713f2b416f4797f79f6a91369587bfc2de845b2c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person walks across a stained concrete garage floor to point at a
+    notice on the wall.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:49:41.875837+00:00'
   source_available: true
 - id: 6acd112e50cbcd2a
   filename: IMG_8479.MOV.3gp
@@ -286,9 +300,9 @@ attachments:
   sender: me
   sent_at: '2024-04-30T17:42:18.818746-05:00'
   sha256: abaabefd3767454f91a9f10c76f87bc7401c8e8bad9c1a8e76245feaa767b03e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A circular light fixture glows brightly against a dark ceiling.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:49:45.402561+00:00'
   source_available: true
 - id: 4e0a06b8d63233bc
   filename: IMG_8481.MOV.3gp
@@ -297,9 +311,10 @@ attachments:
   sender: me
   sent_at: '2024-04-30T17:49:31.004874-05:00'
   sha256: 2858c1ed7bd088d4c63e3a06ee46af2577033db264f41b4318f0768c862a51a7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A room with a green wall and white printer pans right to dark blue
+    curtains.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:24.348110+00:00'
   source_available: true
 - id: efc52fe21e6244cd
   filename: 73621024175__F8F73D72-C62D-4D49-9C8A-F93EE49D68B1.MOV.3gp
@@ -308,9 +323,10 @@ attachments:
   sender: me
   sent_at: '2024-04-30T17:51:17.072848-05:00'
   sha256: b672bf8ea9f698bd33238e5bbd5dc4dd7eca33aa049bc0a790c420d433b9935c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Inspection of a stainless steel kitchen sink and the plumbing assembly
+    in the cabinet below.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:13.455056+00:00'
   source_available: true
 - id: f32e2adccaff8e6f
   filename: 73621036274__111C8AFC-2A53-4169-901B-DE0A30964DA9.MOV.3gp
@@ -319,9 +335,10 @@ attachments:
   sender: me
   sent_at: '2024-04-30T17:52:52.986695-05:00'
   sha256: de773ea00554ae7d723ab25e596065257616c0c5a4bbcf2821e6bf2f8dff88b2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A stainless steel GE dishwasher being opened in a kitchen with white
+    counters and wood flooring.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:11.931277+00:00'
   source_available: true
 - id: 438d0c3eb7fdc7af
   filename: 73621051109__6AE1DA9B-386C-41C9-AE61-53D26F8E3D14.mov
@@ -330,9 +347,10 @@ attachments:
   sender: me
   sent_at: '2024-04-30T17:55:38.457444-05:00'
   sha256: 70bdf6fd662a6c1eec312ebbbb5e17d3efa698212c32acd2ce1d94edf9b5376b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A stainless steel Samsung smart refrigerator with a touchscreen display
+    in a white kitchen.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:28.666746+00:00'
   source_available: true
 - id: d08c68dfc0487110
   filename: 73621066732__47EF0171-74B1-4240-82C6-19E9C1DAA19B.MOV.3gp
@@ -341,9 +359,9 @@ attachments:
   sender: me
   sent_at: '2024-04-30T17:57:56.037540-05:00'
   sha256: 590ae073ecbb8f58015eb4027f0d2208f0f6023c1486c36947de5dccebdef8ab
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A dark wooden furniture leg on a distressed grey wood-grain floor.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:14.610322+00:00'
   source_available: true
 - id: 30993850b69909e5
   filename: IMG_8486.MOV.3gp
@@ -352,9 +370,9 @@ attachments:
   sender: me
   sent_at: '2024-04-30T18:06:46.007832-05:00'
   sha256: 9b76461335aa9e0eb01b850eb0f92a35d55dbe9e0a076a3ed79f7bc5925ffa30
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Square black ceiling fixture with a white center on a white ceiling.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:38.099388+00:00'
   source_available: true
 - id: 2a9983d4e515f427
   filename: 73621187863__CA645235-34DE-404F-B7B9-8255EAB81A33.MOV.3gp
@@ -363,9 +381,9 @@ attachments:
   sender: me
   sent_at: '2024-04-30T18:18:05.071776-05:00'
   sha256: 5b784687ad0810f7bb85441c6117f3a5bb8684564ae5ed81d5e17dc09d30ee29
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A white ceiling-mounted smoke detector chirps to signal a low battery.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:19.222450+00:00'
   source_available: true
 chat_message_guids_count: 184
 deleted_upstream: null

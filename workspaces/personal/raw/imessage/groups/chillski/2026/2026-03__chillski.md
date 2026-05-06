@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2026-03-26T00:59:41.768000-05:00'
   sha256: f85e29a80d30f16ba93868eb9b9f366f21522c8fdb0bd5b6b5bb54bc54b862a2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a DistroKid email confirming audio verification for the
+    song titled "Mars".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:49:33.085499+00:00'
   source_available: true
 - id: b42fafb270bd5967
   filename: IMG_0023.jpeg
@@ -55,9 +56,10 @@ attachments:
   sender: me
   sent_at: '2026-03-26T21:52:58.771094-05:00'
   sha256: bc0537edb23d761fdc7ec81713945709fa27aebb29d9e5fba233d68daec6b1d0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three young men smiling in a hallway; one wears a backpack and another
+    wears orange shorts.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:49:18.661193+00:00'
   source_available: true
 chat_message_guids_count: 24
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-12-17T02:08:32.307000-06:00'
   sha256: c61cf62761019c158e813c662dfa8ad877816c7c95126ee128cc594cac15717b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Notification to book NYC offsite flights for March 2026, arriving 3/22
+    and returning 3/27.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:37.734299+00:00'
   source_available: true
 - id: 2d19e31d317469fc
   filename: IMG_9630.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-12-18T13:08:51.368000-06:00'
   sha256: a2165fd7eb41e5411d54df824742785c6e17798b0611dc9902a86f4248a697a4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A Discord message from "psu" saying "im flexible!" next to an avatar
+    of a man and a dog.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:37.500415+00:00'
   source_available: true
 - id: 02f942bf683fb31b
   filename: IMG_9397.png
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-12-23T14:36:08.395000-06:00'
   sha256: c021d8ecaa71038c25accc344478dbd65173207ece3412a30de9af326c06f9e5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot featuring a conversation with violent transphobic
+    remarks.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:38.507644+00:00'
   source_available: true
 - id: f622a3b403e2afb2
   filename: IMG_9250.PNG
@@ -55,9 +58,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-12-23T14:40:58.092530-06:00'
   sha256: 8bdfba411e951a2a051232237d5e4ea9800a2d17ac8ae464f9212e99cd1b3460
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man with arms raised poses by a red sleigh and reindeer statue outside
+    a brick church.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:03.364844+00:00'
   source_available: true
 - id: c1868a0b1fe6cd4e
   filename: IMG_9251.PNG
@@ -66,9 +70,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-12-23T14:40:58.092530-06:00'
   sha256: 9346f1ecc285600e74034af6a0fc06ef597c62376ee7b66b9dc919fa3c2ee12f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling man in a blue jacket posing with reindeer statues outside a
+    brick building.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:50.281650+00:00'
   source_available: true
 - id: 3880292331a13759
   filename: IMG_9246.PNG
@@ -88,9 +93,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-12-23T14:40:59.498426-06:00'
   sha256: 01345abe3466e39867ce33d44eb73ea1cea93a07c9228e2f45390e3c53ede914
-  description: null
-  description_model: null
-  extracted_at: null
+  description: '"The Octagon" app screenshot showing Nelson W.''s Christmas post with
+    photos of a sleigh.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:03.579002+00:00'
   source_available: true
 - id: f0aa12db12f74919
   filename: IMG_0698.png
@@ -110,9 +116,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2025-12-28T20:13:42.208862-06:00'
   sha256: 1c1195c0c4c3a98d5862e08ab2e2857aaaaae4aa20815dec083556bb0d5a2209
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LinkedIn profile for Nikhil J. with the headline "headline is a required
+    field."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:48.102486+00:00'
   source_available: true
 - id: 8521645d075df66d
   filename: IMG_6001.jpeg
@@ -121,9 +128,10 @@ attachments:
   sender: me
   sent_at: '2025-12-28T23:22:48.652344-06:00'
   sha256: 72f25f6f570008e9b18e43f2cec81aaa1bc6ba9b265925026092023613788c06
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a chat mocking a photo of a smiling man with
+    glasses.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:59.744448+00:00'
   source_available: true
 chat_message_guids_count: 24
 deleted_upstream: null

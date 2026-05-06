@@ -56,9 +56,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-03-17T19:42:35.044275-05:00'
   sha256: 4d70fdab658fca464e4075e96625df84f48e698cfd2a811758861b787dd002be
-  description: null
-  description_model: null
-  extracted_at: null
+  description: People and cocktails at a table in a dimly lit, red-hued nightclub
+    with neon accents.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:14:31.644642+00:00'
   source_available: true
 - id: 9a9f786c283ef9d2
   filename: IMG_7843.png

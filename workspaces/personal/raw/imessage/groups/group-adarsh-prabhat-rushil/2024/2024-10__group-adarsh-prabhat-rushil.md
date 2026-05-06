@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-10-10T14:28:32.327367-05:00'
   sha256: 64ecd9a5a1084f22d0a43f14a33fe0fe92f937762a8edb1be6b0d9892553a7e2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two glasses of beer, one with a lemon wedge, on a dark table with small
+    plates of food.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:07.036737+00:00'
   source_available: true
 chat_message_guids_count: 77
 deleted_upstream: null

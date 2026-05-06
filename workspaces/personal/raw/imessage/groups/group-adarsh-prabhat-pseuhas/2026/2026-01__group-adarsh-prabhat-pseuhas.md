@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2026-01-10T12:47:18.249000-06:00'
   sha256: 3548852ce811059742991f4e64cb469cc02f4ad726fd0b0324ff6ba0d8f82a49
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling man with highlighted hair in front of a glowing yellow neon
+    sign.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:49:23.779282+00:00'
   source_available: true
 - id: fbb2aa7fa0755e24
   filename: IMG_9516.PNG
@@ -66,9 +67,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-01-19T17:51:57.231219-06:00'
   sha256: f910ec0e2be0e943c8d5d186ab383454bdfe0940cf1461c08406c1ee9534d016
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man and woman in formal wear posing in front of "MINING AND METALLURGY"
+    wooden doors.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:48:51.151401+00:00'
   source_available: true
 - id: d763b1a93ba530a6
   filename: IMG_9519.PNG
@@ -77,9 +79,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-01-19T17:51:57.231219-06:00'
   sha256: 6852c79827d26492426282e4fdb6a1883935908f3c65a6b3df0f9820ffc494e8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a suit and two women in blazers smile in front of ornate wooden
+    double doors.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:49:43.315393+00:00'
   source_available: true
 - id: 49c3b75134238278
   filename: IMG_9517.PNG
@@ -132,9 +135,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-01-21T15:40:59.436802-06:00'
   sha256: 067618e430c485d47a4fe2a244f604580ccfa0c3c080116c8f22041f2ab41ec4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Commuters on a subway train, featuring a dark backpack with a basketball
+    keychain.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:45.068026+00:00'
   source_available: true
 - id: d75129a02e00ddc5
   filename: IMG_3934.png
@@ -143,9 +147,10 @@ attachments:
   sender: me
   sent_at: '2026-01-21T15:48:54.285413-06:00'
   sha256: bafb3585d1d2450592291f43b526ccc7ce7934bea5e75935218cd215d857f14b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Clash Royale screenshot of the Level 9 Epic Baby Dragon troop card
+    profile.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:49:24.101254+00:00'
   source_available: true
 chat_message_guids_count: 30
 deleted_upstream: null

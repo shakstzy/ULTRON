@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-05-31T09:30:13.928000-05:00'
   sha256: d129cbeeafcb1b8dc6b0bc58c7a1cc998cbfb18a71e505ce74fdb29ff02d555d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'iMessage screenshot: a text bubble about a $200/week payment and New
+    York housing concerns.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:41.355018+00:00'
   source_available: true
 - id: 2261ddf7505a82e4
   filename: IMG_7150.png
@@ -44,9 +45,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-05-31T14:32:09.275096-05:00'
   sha256: 00b1b6f03d9219f0c214f47cf78a189ec5f4da9335260825fd6b1313977abe0d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling man with an afro and round glasses wearing a white Eidsiva
+    sports jersey.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:28.441933+00:00'
   source_available: true
 - id: 68424acc1f2dd7b0
   filename: IMG_6626.heic
@@ -55,9 +57,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-05-31T14:32:41.145642-05:00'
   sha256: 2c972ec2c8df30de05b34aa08f68d2aebe69c762a77a12bb158c362982c7dada
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men smile and give thumbs up in a kitchen wearing a blue tee and
+    a white OBOS jersey.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:13.465959+00:00'
   source_available: true
 chat_message_guids_count: 27
 deleted_upstream: null

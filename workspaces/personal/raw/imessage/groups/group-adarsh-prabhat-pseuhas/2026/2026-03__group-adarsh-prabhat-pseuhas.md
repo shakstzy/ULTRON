@@ -55,9 +55,9 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2026-03-01T14:32:32.805064-06:00'
   sha256: 2d0210bbff714197049aa756d448ee17ebf9045fc8edb99117e99b1a35cdb351
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A headshot of Jeffrey Epstein against a black background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:48:58.274810+00:00'
   source_available: true
 - id: 2a9c57b6da5aa4e2
   filename: 2CF1ADE8-DF6F-4BA8-B2DE-7E81B6DBFCB7.pluginPayloadAttachment
@@ -77,9 +77,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2026-03-02T21:40:08.017057-06:00'
   sha256: d6b1ca6f52f5c9eb86174f5e2136da2c1be9f20a57e13f5596f7551343075338
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in samurai armor and sunburst headdress poses with a katana against
+    a battle mural.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:23.886238+00:00'
   source_available: true
 - id: 7ed685da2a66be30
   filename: IMG_7604.PNG

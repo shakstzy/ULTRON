@@ -22,9 +22,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-10-04T14:14:14.479172-05:00'
   sha256: eca5f1fd1f8a88d81f2f755fa170a7a780c5937b393744b007f6fdab89041e44
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Black baseball cap with an embroidered white "pwc" logo and a small
+    orange accent.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:58.090549+00:00'
   source_available: true
 - id: 591b7c3864af3b72
   filename: IMG_7876.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2025-10-06T14:59:52.177105-05:00'
   sha256: 850148d097dc5f9e38973b09a972f4a019cd407907526b82acf1bc35a6febd59
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram story of @jaysethii in a keffiyeh and thobe at an outdoor
+    cafe in Doha, Qatar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:02.598222+00:00'
   source_available: true
 - id: 8d1565ef0abd8ba7
   filename: IMG_8339.PNG
@@ -44,9 +46,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-10-06T15:14:26.899853-05:00'
   sha256: 6f78771748c8700fbd4e776c3bb81d0f393cdeaf4889471dff90f5511d0d35f6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of Apple Maps showing Rushil's live location on Randall's
+    Island, NY.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:08.048089+00:00'
   source_available: true
 - id: bc6fc04262d913d6
   filename: IMG_8342.png
@@ -66,9 +69,10 @@ attachments:
   sender: me
   sent_at: '2025-10-08T18:41:07.819000-05:00'
   sha256: 2af00405fb537f977d3f4988a467b17391851bd6818cd9a610951efdd312b56e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessages from Varshini inviting the user to speak at a Columbia event
+    about their startup.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:11.471846+00:00'
   source_available: true
 - id: f5d5d98e32ad644c
   filename: "Screenshot 2025-10-14 at 4.16.09\u202FAM.png"
@@ -88,9 +92,10 @@ attachments:
   sender: me
   sent_at: '2025-10-30T14:00:12.972000-05:00'
   sha256: dad378a5646fd501043fa4b1176ab393e5a6ce445a6902f010676dca0bca6d11
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A black crow stands on a piece of driftwood against a blurred sandy
+    background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:55.852538+00:00'
   source_available: true
 - id: 86812b19989f0df8
   filename: IMG_7931.png
@@ -99,9 +104,10 @@ attachments:
   sender: me
   sent_at: '2025-10-30T14:02:32.644000-05:00'
   sha256: 28bc85e125c3f03612af7fe8fa82662055f6a357977bede779d68a385ded5b9e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A cinematic shot of Jabba the Hutt, the slug-like crime lord from Star
+    Wars.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:10.418975+00:00'
   source_available: true
 - id: ca7402c90bbf7e51
   filename: IMG_0969.png
@@ -110,9 +116,9 @@ attachments:
   sender: me
   sent_at: '2025-10-30T14:03:15.619000-05:00'
   sha256: a609efa62fe5f65ef664d5962684a0d6805cb4fa44a9e7e16ab2fd6fe9e5d008
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Close-up of Jabba the Hutt from Star Wars gesturing with his hands.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:55.434747+00:00'
   source_available: true
 - id: a5d1922c22fad357
   filename: IMG_1978.png
@@ -132,9 +138,10 @@ attachments:
   sender: me
   sent_at: '2025-10-30T14:10:32.294000-05:00'
   sha256: 9c3fc4b95064ffbcac68f67f54b84d4cb90e3b47a92b5640a8441221daa3c923
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Four hands holding Nimbus Coffee cups in front of the shop's "NIMBUS
+    COFFEE" sign.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:59.170797+00:00'
   source_available: true
 - id: ca58f8f2d3597ecf
   filename: IMG_7192.png
@@ -143,9 +150,10 @@ attachments:
   sender: me
   sent_at: '2025-10-30T14:10:47.018000-05:00'
   sha256: 80237c7888d4f29628c5727069591b808f9f6a83b6deabfc6f28f70c94ec06b5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Severus Snape as a grumpy Starbucks barista wearing a brown apron over
+    black robes.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:13.138402+00:00'
   source_available: true
 - id: ed02e2da9e5e93f2
   filename: IMG_7436.jpeg
@@ -154,9 +162,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-10-30T14:51:05.706453-05:00'
   sha256: 5504057aab8a5cb71f0867645483615e0aadd0e565815311fa727d6c8777912a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling young man in a white shirt wearing a blue and gold UC Berkeley
+    graduation stole.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:04.649860+00:00'
   source_available: true
 - id: 6eb6be8f7d300e87
   filename: IMG_0373.png
@@ -165,9 +174,10 @@ attachments:
   sender: me
   sent_at: '2025-10-30T14:51:56.823000-05:00'
   sha256: a58c94d2fa781dcd11777c6c5e34b524264d898a96fdf3a5d29a1b4b26bd41e1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram Story screenshot of a man wearing a USA Olympics cap playing
+    a keyboard.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:08.087417+00:00'
   source_available: true
 - id: 533178451e867be8
   filename: 18C9FBC2-B5D7-4E91-BC40-FFA591282375-video.MOV
@@ -176,9 +186,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-10-30T15:49:15.992471-05:00'
   sha256: 7099ea0108764191761ba438c8b7619e03568f47db1f37fbb3c4b7cdcbb4b6be
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in an Olympics cap plays keyboard and sips a drink in an Instagram
+    story at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:02.117852+00:00'
   source_available: true
 - id: e88cb546df2763ab
   filename: IMG_8537.PNG
@@ -187,9 +198,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-10-30T18:06:07.633226-05:00'
   sha256: 3a323ad6e2055d8d8632bb96ac25dd6e9a75f29199f198b6d758af5123ec5d1a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hand holding giant Uno cards (three +4, one Reverse) in front of a
+    monitor and a laptop.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:09.141508+00:00'
   source_available: true
 chat_message_guids_count: 101
 deleted_upstream: null

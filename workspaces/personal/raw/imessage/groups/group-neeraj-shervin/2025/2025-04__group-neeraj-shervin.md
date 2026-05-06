@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-04-01T08:46:18.804928-05:00'
   sha256: 32688bbde6776e9d6b41b47b94f68b8d7199a20d4fb257c606d7604f6afa99e6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Circular profile photo screenshot of a woman with long hair and round
+    metal glasses.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:41.604769+00:00'
   source_available: true
 - id: a17030898d1bfe09
   filename: E0FD8C4F-B2BB-42C2-8AD7-5FCB8135D3A5.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-04-01T08:53:25.134045-05:00'
   sha256: f6a121fc60c65ba206ac5ef1ea7385a4b1868a748aa85f03f5ed9df2b993413b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A woman with green skin, brown hair, and large, black alien eyes in
+    a circular frame.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:46.276388+00:00'
   source_available: true
 - id: 03d9526fb3ec9c70
   filename: CBC28318-09C8-4F01-9350-5F85ED3847C9.PNG
@@ -44,9 +46,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-04-01T08:53:27.604894-05:00'
   sha256: 8a5655499a4b3ceece7f706dd472ec66fbedb24ab8d2b50ae7d7d6e34233c9d3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Person with long blonde hair wearing a green alien mask with large
+    black eyes.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:22.676137+00:00'
   source_available: true
 - id: 51d4603215a8d061
   filename: Prime_Cut_Research_-_FINAL_FIXED.pdf
@@ -55,9 +58,11 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-04-01T21:57:08.511360-05:00'
   sha256: 5596b5ff9c3ed576d0f9be8c490da858f62a8133e61cfc1ffecaf24eea5dff18
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This research report analyzes how diet and culture affect risk-taking
+    behaviors among Gen Z Indians. It finds that vegetarian and Gujarati backgrounds
+    correlate with increased risk aversion.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:42.728221+00:00'
   source_available: true
 - id: 0e8ed77f842a6c5a
   filename: IMG_4213.JPG
@@ -66,9 +71,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-04-13T08:32:40.201535-05:00'
   sha256: 05a0f1045775c07f66a2b08b0544701c215f678f33b1f6ceeb3962e7982fd315
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Young adults posing in an AMC theater lobby with a MacGuffins bar in
+    the background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:46.646096+00:00'
   source_available: true
 chat_message_guids_count: 11
 deleted_upstream: null

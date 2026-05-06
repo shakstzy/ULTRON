@@ -22,9 +22,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-05-26T11:15:55.955790-05:00'
   sha256: 7790e51ac9017aec637d368823a3bd43487801186a642a5902b98207a03c7b4d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Four people smile while riding an open-air train through a redwood
+    forest.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:14:27.262393+00:00'
   source_available: true
 - id: 46b0a29c5053634a
   filename: IMG_6049.heic
@@ -33,9 +34,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-05-26T11:26:20.307234-05:00'
   sha256: e15b69a5c08f602a748c258a27328a31fe8321341fe3b1fd383eb958468b56d4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A bearded man in a black tank top lies on a bed, covering his face
+    with a white pillow.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:14:36.738715+00:00'
   source_available: true
 chat_message_guids_count: 2
 deleted_upstream: null

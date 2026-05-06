@@ -58,9 +58,10 @@ attachments:
   sender: me
   sent_at: '2024-03-21T20:10:38.315632-05:00'
   sha256: 0e0680af41f303c9d570ac40427f889dca4ee079f10d338ff359b92b676b79d1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a hoodie holds a glass of Heineken beer in a bar with a guitar
+    mural.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:14:30.384604+00:00'
   source_available: true
 - id: 266bec20c8159a74
   filename: 73279973680__AA87AF34-7F5A-4807-8BCA-DCB3B810E8FF.fullsizerender.jpeg
@@ -129,9 +130,10 @@ attachments:
   sender: phone-+18186963499
   sent_at: '2024-03-24T00:54:53.931184-05:00'
   sha256: 1c24072159bd93df6f7e88b192083880c6f990c1ca01e1d12a64f3539fb7e0bc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of Amsterdam tram 5 schedule showing stops from Station
+    Zuid to Elandsgracht.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:14:33.701948+00:00'
   source_available: true
 - id: 79610d8cc5af5f22
   filename: IMG_4015.jpeg
@@ -209,9 +211,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2024-03-24T01:35:00.095557-05:00'
   sha256: fed8a65ef1234822dbd7e80c7b112fe396ab4a93889a7e0be92c176a3c247e10
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Five young men in hoodies posing at the Waterlooplein metro station
+    in Amsterdam.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:14:20.548061+00:00'
   source_available: true
 - id: 4012560b98c04490
   filename: IMG_4008.jpeg
@@ -254,9 +257,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2024-03-24T01:35:00.095557-05:00'
   sha256: fb8e3ed56e26bd84099fbbf0aa88e36705340ddb47d6e1b2348cc5f3fb0c3a12
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Five young men pose by a concrete pillar in the Waterlooplein metro
+    station.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:14:19.865417+00:00'
   source_available: true
 - id: f2297c8e9cee64d9
   filename: IMG_4006.jpeg
@@ -299,9 +303,10 @@ attachments:
   sender: maneesh-uc-berkeley
   sent_at: '2024-03-24T11:22:26.760788-05:00'
   sha256: 3667b05de9fbeb89f25c3f2f8b96287a86bd17947c471546b1a89bdd0e4caba0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Booking confirmation for an Amsterdam Booze Cruise for 8 adults on
+    March 24, 2024.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:14:25.919273+00:00'
   source_available: true
 - id: c325af001c95b320
   filename: IMG_4095.jpeg
@@ -417,9 +422,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2024-03-26T14:10:43.562656-05:00'
   sha256: 615ab5111a67929c0b85d8755032a2bb9665166b8124a4d37a36b2b1b37ba788
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google search result for Kantjil & De Tijger, an Indonesian restaurant
+    in Amsterdam.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:14:45.087869+00:00'
   source_available: true
 - id: b7fd82d458d2e69d
   filename: IMG_2890.jpeg
@@ -464,9 +470,10 @@ attachments:
   sender: me
   sent_at: '2024-03-27T21:02:09.956671-05:00'
   sha256: 1393eda637453a1c1f20b2cc929b0788fefd3311b5be029e154b9c8a6cda576d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Heineken Silver beer advertisement and a dome security camera seen
+    through glass.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:14:30.416650+00:00'
   source_available: true
 - id: f1b1228160032223
   filename: 73329425947__B561331D-4C7C-4136-BB6E-290DE18549D8.jpeg
@@ -486,9 +493,10 @@ attachments:
   sender: phone-+18186963499
   sent_at: '2024-03-29T09:19:02.940636-05:00'
   sha256: bd9b2f91e272bdf098b06efdc362b0e28c66764279a6c6f919ffa4bcfb3bb553
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A screenshot of an X post quoting Chloe Burrows' selfie with a racial
+    slur in the caption.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:14:29.104892+00:00'
   source_available: true
 - id: bc2fe3f95d9646c6
   filename: 73345898207__70A0AE93-4F04-4908-A8F5-92009998EE24.jpeg

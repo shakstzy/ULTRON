@@ -66,9 +66,10 @@ attachments:
   sender: me
   sent_at: '2025-11-02T23:56:36.824263-06:00'
   sha256: a02cc98de0cd52c3b974fdbca8f39be0ad46c706887030ee5ffc9909dbf69daf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Times of India article about 22-year-old self-made billionaires in
+    Silicon Valley.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:49:17.768483+00:00'
   source_available: true
 - id: 97d26662cdcecc06
   filename: IMG_7157.jpeg
@@ -143,9 +144,10 @@ attachments:
   sender: me
   sent_at: '2025-11-04T12:07:40.799061-06:00'
   sha256: 02d321328ed1c0c81892fd4590ce53bdaa5d9efe9256a1616501eeb9f7787b05
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Sam Altman and Elon Musk arguing on X about OpenAI's non-profit status
+    and Tesla.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:45.472028+00:00'
   source_available: true
 - id: ab09a7dd35819b6e
   filename: att.p5xqHvKQAgXJfxsIaERKNmlR2GzgwjRAQHxn15MDREA.JPG
@@ -176,9 +178,10 @@ attachments:
   sender: me
   sent_at: '2025-11-04T21:21:32.687051-06:00'
   sha256: e19026a2ca4ad36ffa17c0d696a93a43ef3f998ebb724d1a4cc1c0e547283970
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smartphone screenshot of a close-up photo of Sam Altman wearing a grey
+    sweater.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:48:59.520114+00:00'
   source_available: true
 - id: 741514cdb0d61dcd
   filename: IMG_3080.PNG
@@ -187,9 +190,10 @@ attachments:
   sender: me
   sent_at: '2025-11-04T21:21:32.687051-06:00'
   sha256: 155916d7285e414c5bee686b6fef1ff39d7850dc1712da8f001fc30ed61f860a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Pixelated Ferb Fletcher giving a thumbs up in a mobile screenshot from
+    a wiki page.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:35.133318+00:00'
   source_available: true
 - id: b87a1b906e73a7b7
   filename: 78401020870__595C2EC9-B5BD-4B47-BA79-27AE0E4049F7.heic
@@ -209,9 +213,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2025-11-05T11:10:40.241419-06:00'
   sha256: 9fe73f8bbfe51fbac96407579dd94ee31365d811d3f78577b2bd832d2c9f1920
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone lock screen with Uber Eats, X, and WhatsApp notifications over
+    a family photo.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:10.192778+00:00'
   source_available: true
 - id: c9c375c999d1f0de
   filename: IMG_8644.png
@@ -275,9 +280,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-11-13T10:57:36.330851-06:00'
   sha256: 5cffa725fddbfbffbcb516424af620ffed83c494a324671ae683b74410023d78
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram story of a black Mercedes G-Wagon purchased via bitcoin investment
+    profits.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:49:28.907495+00:00'
   source_available: true
 - id: d3ec43ca3f1ffac0
   filename: IMG_8132.png

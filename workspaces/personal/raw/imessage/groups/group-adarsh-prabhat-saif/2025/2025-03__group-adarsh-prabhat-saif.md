@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-03-31T15:00:13.646822-05:00'
   sha256: 44698603327044928966b7c8cd2e38811139a39ff903290623cf3d15d60bb243
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram post about BYD's new mega factory in Zhengzhou being the
+    size of San Francisco.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:07.280021+00:00'
   source_available: true
 chat_message_guids_count: 1
 deleted_upstream: null

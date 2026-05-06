@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-08-01T13:27:10.893000-05:00'
   sha256: 169ac2cc8bc8c24ceeaf6681959853bb08ea9f97e345e0142db35c6b56c66194
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Venmo app screenshot showing a "frozen account" banner above a feed
+    of recent transactions.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:22.509194+00:00'
   source_available: true
 - id: 0843fd3f037e43c9
   filename: IMG_7655.PNG
@@ -33,9 +34,9 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-08-01T13:27:58.082175-05:00'
   sha256: ec146fe1a6d1bcfd11bb2a9d5cd5c6e7f140854375d95e2271b9f6ff4d5fea1b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling young girl with dark hair wearing a lime green turtleneck.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:33.584452+00:00'
   source_available: true
 - id: 9e908a108fc22701
   filename: 77578575712__8A5FA7C3-58D5-4F75-82FA-4EA2E569AEC8.heic
@@ -44,9 +45,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-08-01T19:02:42.480075-05:00'
   sha256: 5aaaacc0cf383c21836306a938e6db59d033b89e6240c96cbd4ef2233d48bf14
-  description: null
-  description_model: null
-  extracted_at: null
+  description: YouTube profile selection on a TV screen next to a box of Drizzilicious
+    snacks.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:34.279991+00:00'
   source_available: true
 - id: 6886766a52e829af
   filename: IMG_7669.PNG
@@ -55,9 +57,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-08-02T11:37:24.258457-05:00'
   sha256: 3c145350244e03c1998aa5875bbe703fac577e25d3f8020ee57ec3c653b4a737
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a Google search result for the Star Wars character Supreme
+    Leader Snoke.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:24.914820+00:00'
   source_available: true
 - id: 75c1bbc14e14b95b
   filename: IMG_0602.PNG
@@ -66,9 +69,10 @@ attachments:
   sender: me
   sent_at: '2025-08-02T11:37:27.943000-05:00'
   sha256: 577264497b8ca694568a2580b1ad382e9e58cd73e032681f5f1054ca3ed9f282
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple Maps screenshot of Ludlow Coffee Supply in Manhattan's Lower
+    East Side.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:29.516316+00:00'
   source_available: true
 - id: 3cf2bfeaedf1c923
   filename: IMG_0695.PNG
@@ -88,9 +92,10 @@ attachments:
   sender: me
   sent_at: '2025-08-03T13:23:17.303000-05:00'
   sha256: a7a58c5d68c1616793119547e9cd3fb28c143d3772f136d95a4a7b5b2b17423b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: White Magic Mouse, nasal spray, rolled joint, and tangled cables on
+    a desk.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:35.389246+00:00'
   source_available: true
 - id: b6dbfada57d8132b
   filename: 77603469678__0C4BF64F-3CCF-40FF-ACF3-EB1F772B7223.heic
@@ -99,9 +104,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-08-04T16:11:43.994493-05:00'
   sha256: f5e33fbb007fee8f767d9f7b94231faacc0173c2b5307ef4562d7fb8e592c184
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Bloomberg Terminal screen showing Shake Shack Inc (SHAK US) stock trading
+    at $115.47.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:52.460359+00:00'
   source_available: true
 - id: 2031c7fe097cc587
   filename: 77603546478__6BB0B4EF-CC7E-4542-AA67-AEB0D0A9C328.HEIC
@@ -121,9 +127,9 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-08-08T17:45:37.464587-05:00'
   sha256: cda666f772ac361b8a2201cb140bd25e6c4d7bb0e21d15444d9ff2f0cba4a402
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of Ruben Gauna's Instagram profile with 0 posts and 15 followers.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:40.327462+00:00'
   source_available: true
 - id: eea5858b868fe8f9
   filename: IMG_0834.PNG
@@ -132,9 +138,10 @@ attachments:
   sender: me
   sent_at: '2025-08-09T12:18:52.544024-05:00'
   sha256: 5be11714c63a0d77d023fa2a86dbcebc6a855e0d3b6f297397e6ebd997f262ff
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram profile screenshot for Reuel Indurkar (reuel.i) showing 1,050
+    followers.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:37.016577+00:00'
   source_available: true
 - id: 71108ec2ac303a75
   filename: IMG_0906.MOV
@@ -154,9 +161,10 @@ attachments:
   sender: me
   sent_at: '2025-08-10T21:24:11.487591-05:00'
   sha256: 07a11308c6246bfe6e1a104bcdf062ca2237c05aa43ea29cec53c484262e3379
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A black SUV parked on a city street at night near a yellow Garrett
+    parking sign.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:58.195904+00:00'
   source_available: true
 - id: 98bfbac5882d743d
   filename: 86044A72-2ED7-422C-99B1-BECB42F51737.PNG
@@ -165,9 +173,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-08-13T18:32:55.456359-05:00'
   sha256: 3f0df2eff108032ba302478178a701701922587b4b2ed5a8d0a5a255aaf42e3c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A starry-skinned man in a suit with a golden halo and the title "THE
+    ENTROPIST".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:46.265087+00:00'
   source_available: true
 - id: 30f69d97cda3608b
   filename: IMG_7784.PNG
@@ -176,9 +185,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-08-14T17:51:56.073352-05:00'
   sha256: 0796406cd7281db2946cede6b8ca231113749e19a3711ce5081be122433e1088
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in black activewear on a checkered NYC plaza with One World Trade
+    Center behind him.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:40.640957+00:00'
   source_available: true
 - id: eb1997c9d5159224
   filename: IMG_7816.PNG
@@ -187,9 +197,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-08-17T18:47:07.503746-05:00'
   sha256: 5b83a80cff93aff88a3a9dde0a3575f8e7f65a6cfef3d7bcef8897f1f2b6e101
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram post of a man on a Citi Bike with a camera rig, captioned
+    "enough farming."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:50.842591+00:00'
   source_available: true
 - id: 7c35e6c6317f329d
   filename: IMG_7818.png
@@ -209,9 +220,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-08-21T20:47:01.315742-05:00'
   sha256: 187304839a2f423b53b88dcb98e164caaf2e09dde637e41bc8c57805a19e6bae
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'iMessage screenshot: Arya shares Edwin Gregory''s LinkedIn profile
+    as their 500th connection.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:35.257564+00:00'
   source_available: true
 - id: c4c871d960b9e75f
   filename: IMG_7887.PNG
@@ -231,9 +243,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-08-21T21:52:39.780153-05:00'
   sha256: c6a4093e96caf172648906cb7c01763a8c60656354e9b3a5bd45948ddcc4936f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a chat with Hugh featuring bigoted and homophobic
+    hate speech.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:41.420868+00:00'
   source_available: true
 - id: 3c37b430352fe9f9
   filename: IMG_1312.heic
@@ -242,9 +255,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-08-22T16:23:38.104605-05:00'
   sha256: 5bb7fc149dfa874104d8be2d655f8df0e9af7bb934edf6953501c391502b8eee
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of shloka.cola's Instagram profile with a Bay Area location
+    and zero posts.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:31.961615+00:00'
   source_available: true
 - id: 060fa0a6b9e717d7
   filename: IMG_7905.PNG
@@ -264,9 +278,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-08-27T07:34:43.155923-05:00'
   sha256: efd3d61149e24bdd5a8bf3e62e6d4b98ee4a3672bd8be01a36f372f8d8087f59
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LinkedIn profile of Bob Luo, a software engineer at Direct HR in Ningbo,
+    China.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:40.531910+00:00'
   source_available: true
 - id: 51e50dde32bb9d87
   filename: IMG_0710.jpeg
@@ -275,9 +290,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-08-27T07:36:02.072409-05:00'
   sha256: d22d4aa3b76e8856e9d785248ff08b8ba0914946072973320bd4dc9ce48c96c5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: '"Roopam Sarees" bridal wear sign hanging over a street corner near
+    a pet emergency clinic.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:55.622993+00:00'
   source_available: true
 - id: 5f6c888f199da1f4
   filename: IMG_7988.png
@@ -286,9 +302,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-08-30T18:54:30.940018-05:00'
   sha256: 7f52046e65e903a2764060415e9ab52325e97ec1718288e3f0420af4f641cc5c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple Maps screenshot showing Shakshit Kumar's live location at 2312
+    Fulton St, Berkeley, CA.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:46.785165+00:00'
   source_available: true
 chat_message_guids_count: 124
 deleted_upstream: null

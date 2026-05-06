@@ -22,9 +22,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-07-13T11:15:17.651645-05:00'
   sha256: 37e1885612f15c62d81782ebbe8d122fdbc7e52812bf049a7d6c9626303e2350
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Maps listing for psychiatrist Adam M. Rudolph, MD in Norwalk,
+    CT.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:13.341090+00:00'
   source_available: true
 - id: 60a2425a660175aa
   filename: IMG_7518.jpeg
@@ -33,9 +34,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-07-22T08:34:17.659195-05:00'
   sha256: 37e1885612f15c62d81782ebbe8d122fdbc7e52812bf049a7d6c9626303e2350
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Maps listing for psychiatrist Adam M. Rudolph, MD in Norwalk,
+    CT.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:13.341090+00:00'
   source_available: true
 - id: e1ac3b162013abe7
   filename: IMG_8432.png
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-07-29T10:26:51.217000-05:00'
   sha256: 8581c7bfb2b01df76064665a2de299852ad650b05107842a89ecddd90a7b84df
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling man in a white shirt and blue graduation stole standing before
+    a metal sculpture.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:44.714070+00:00'
   source_available: true
 - id: 02e1d15c7e5dd310
   filename: IMG_9529.png
@@ -66,9 +69,10 @@ attachments:
   sender: me
   sent_at: '2025-07-29T10:27:36.599000-05:00'
   sha256: 9c7a45ad8a07d1bad2819f6e6baae11f05570e21af81be9e24b4abe15d2c8ebd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LinkedIn profile of Rishi Krishnan, an NYU student at AM Studio in
+    Fremont, California.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:15.539411+00:00'
   source_available: true
 - id: 6ea98fb26d5b4399
   filename: IMG_0694.png
@@ -77,9 +81,10 @@ attachments:
   sender: me
   sent_at: '2025-07-29T10:27:44.762000-05:00'
   sha256: 60a77a78da66bf7e3ad4e4d856e88b27f92279a09c5a11d66c9dbe297152e871
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LinkedIn profile showing sound design roles and NYU Music Technology/CS
+    education.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:09.810975+00:00'
   source_available: true
 - id: e14747bb609654fc
   filename: IMG_0527.PNG
@@ -99,9 +104,10 @@ attachments:
   sender: me
   sent_at: '2025-07-29T11:14:54.628024-05:00'
   sha256: 0981daae0b6fafbebc731f55e60f0b5ba81b80e870f77c203bbfc8f14c28fc20
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile screenshot of a Plants vs. Zombies zombie in a suit from a Google
+    Image search.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:11.054234+00:00'
   source_available: true
 - id: 8b24a24decc645e2
   filename: 77549850101__7193A0CD-AB2F-4122-99C8-0AA45FB423B2.HEIC
@@ -132,9 +138,10 @@ attachments:
   sender: me
   sent_at: '2025-07-29T11:16:12.757946-05:00'
   sha256: cf79d84790f8b59e1e6da801e84245f8fbc0f353f15b7a0edb41ae341a5d95a1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile screenshot of a Google search result for "The Bizarre Lore of
+    Plants Vs Zombies".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:23.828759+00:00'
   source_available: true
 - id: b973c51039ab7c77
   filename: IMG_0532.PNG
@@ -143,9 +150,10 @@ attachments:
   sender: me
   sent_at: '2025-07-29T11:16:49.058346-05:00'
   sha256: 0f1d37295a2f128fcce308b6f096b243703433a6678b98bb3d448b1d87a7a76c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile screenshot of a Plants vs. Zombies Balloon Zombie illustration
+    on Steam Community.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:20.281385+00:00'
   source_available: true
 - id: d409db26c09649b6
   filename: IMG_0533.PNG
@@ -176,9 +184,10 @@ attachments:
   sender: me
   sent_at: '2025-07-29T11:18:01.285538-05:00'
   sha256: 851b7f707147dbf2f14af3268a1740c65c8e76b9aec0ec93a9aaa9e0f5b62f56
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile screenshot of a Plants vs. Zombies Buckethead Zombie in a brown
+    suit and red tie.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:02.926832+00:00'
   source_available: true
 - id: 05a452426ae3f35d
   filename: 84A37E04-E1C9-40EF-AAD5-7995EBCE8B14.mov
@@ -187,9 +196,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-07-30T08:16:39.960424-05:00'
   sha256: 483f5f4b97c82c0baa6da42a9e98bf78947a8388d6cf04038c04f25aa84ed461
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Commuters ascend a subway escalator, filmed from a low and tilted side
+    angle.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:18.131419+00:00'
   source_available: true
 - id: 01c635de10432e2d
   filename: 77557704474__B242E85E-267C-4BD6-99FC-1A7167809EE2.HEIC
@@ -198,9 +208,10 @@ attachments:
   sender: me
   sent_at: '2025-07-30T09:04:17.416000-05:00'
   sha256: 128d7539fc951474003723367e932af0d8700e7c9387339aad675a0a4eea1f3c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person with dark curly hair wearing a Jabra headset with a red cable,
+    looking downward.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:52.990004+00:00'
   source_available: true
 - id: 0dc73f8d9ea85b8f
   filename: 34A67947-BD5A-4C7A-A618-150ADEC9FEC0.mov
@@ -220,9 +231,10 @@ attachments:
   sender: me
   sent_at: '2025-07-30T18:08:10.650294-05:00'
   sha256: 8ad075ad115c1b150e1e4f8dc7a343c46b884c496a4c2fa594474e22c0371981
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hand holding a green Stella Artois beer bottle, showing the side label
+    and embossed glass.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:19.586708+00:00'
   source_available: true
 chat_message_guids_count: 55
 deleted_upstream: null

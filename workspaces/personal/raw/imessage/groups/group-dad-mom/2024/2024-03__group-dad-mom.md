@@ -22,9 +22,10 @@ attachments:
   sender: mom
   sent_at: '2024-03-18T12:20:59-05:00'
   sha256: 97bfc561e0b632373c6bd7b72e6e44b395298ec5c13c467e69725a33e389c8bb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mortgage update email requesting W2s, paystubs, and insurance for 12345
+    N Aragon way.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:37.970852+00:00'
   source_available: true
 - id: 07e7af2e99524ffc
   filename: image000000.png
@@ -33,9 +34,10 @@ attachments:
   sender: mom
   sent_at: '2024-03-28T13:05:09-05:00'
   sha256: 95aed830087002b7919019812b0460f08ad3ae0c2d4f1bdc4738be1bfe5ba67f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: WhatsApp group chat discussing real estate signatures, offer prices,
+    and a 12:30 PM home tour.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:35.798099+00:00'
   source_available: true
 chat_message_guids_count: 12
 deleted_upstream: null

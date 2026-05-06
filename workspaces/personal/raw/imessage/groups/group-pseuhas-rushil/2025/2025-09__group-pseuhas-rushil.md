@@ -22,9 +22,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-09-04T22:28:31.079864-05:00'
   sha256: e5c6c451e0c999b4aec2bb204db27563c01987aed43a58a1463058f649435fd7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Chicken curry garnished with cilantro being lifted from a pot next
+    to a jar of ghee.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:03.179089+00:00'
   source_available: true
 - id: a16baa20308a1e5a
   filename: IMG_1446.PNG
@@ -66,9 +67,9 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2025-09-13T14:55:37.755348-05:00'
   sha256: 2e9b0fc36852a48a6cc8233d83a74411e2804f8ebbd95e3c29d2df140495f811
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Venmo screenshot of Evan Feldman requesting $48.66 for "Lyft and drinks".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:16.106550+00:00'
   source_available: true
 - id: f3ef71c57babf21d
   filename: IMG_6521.gif
@@ -77,9 +78,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-09-13T16:50:27.036379-05:00'
   sha256: 56c068cfaf0e1070846f0863d2087f8b45e83abdbacdb7f3f3b27e4cb75df11b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling Hog Rider character from Clash of Clans with "HOG RIDERS"
+    text overlay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:31.304630+00:00'
   source_available: true
 - id: 7206798066bbe2cc
   filename: IMG_8170.PNG
@@ -88,9 +90,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-09-13T17:39:06.715793-05:00'
   sha256: d3897032c4b864f9e8bba8729813c03f4828d2a4a38b64a4bb7a8fa69077b34c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of Google search results for Star Wars character Supreme
+    Leader Snoke.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:58:04.789803+00:00'
   source_available: true
 - id: d873682b9e766c1a
   filename: IMG_8162.heic
@@ -99,9 +102,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-09-14T13:03:35.159685-05:00'
   sha256: 52eba0d7763ee3828ffaa11e03bc20c9a7362fb2f2217217f00b339e3f88c878
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Close-up of an orange and white cat with green eyes resting on a white
+    fuzzy blanket.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:30.625206+00:00'
   source_available: true
 - id: d566bfc9e0394793
   filename: IMG_9464.png
@@ -110,9 +114,10 @@ attachments:
   sender: me
   sent_at: '2025-09-14T19:40:02.630000-05:00'
   sha256: 17e9c590c8326347abe41473ddb7aadbae30f15adff0281a5bfaab7629825072
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a denim jacket presenting an iPhone 17 event against a night
+    city skyline.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:27.792705+00:00'
   source_available: true
 - id: d57e8ec30b51ea49
   filename: IMG_8202.PNG
@@ -132,9 +137,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-09-21T17:14:26.751505-05:00'
   sha256: 550292c82363085bcd5c9e41b1bcd59eeda2e12811f5bb3bff790fdbdfece7be
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A hand holding a 14g bag of Granddaddy Purple cannabis flower in front
+    of a glass bong.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:24.241695+00:00'
   source_available: true
 - id: 69e01717800b43e2
   filename: IMG_8239.PNG
@@ -154,9 +160,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-09-21T17:18:45.455432-05:00'
   sha256: 2d25468c7908ce2c60fe8590fba3edd0c6b780fc947255d11181521e062e549c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: AI app screenshot explaining Maneesh Vallurupalli's coining of the
+    term "Enterprist".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:22.994781+00:00'
   source_available: true
 - id: 5cba5a00545e1349
   filename: 9BC02D24-A4EA-4A76-AB5D-4C72DEEF645F.PNG
@@ -165,9 +172,10 @@ attachments:
   sender: me
   sent_at: '2025-09-22T05:53:47.507874-05:00'
   sha256: 0acf662ebe5682a00d21083d2d27255b9d6272e2da6f8c2d6eb257023aa5a629
-  description: null
-  description_model: null
-  extracted_at: null
+  description: UC Berkeley Class of 2024 graduates posing for a piggyback photo by
+    Sather Tower.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:58.129363+00:00'
   source_available: true
 - id: f6a0886b85e884ff
   filename: IMG_8241.PNG
@@ -176,9 +184,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-09-22T07:07:23.635669-05:00'
   sha256: 889488b10455d8dc8585ef098b3be9851081a2b9497db546ecee5fcb05beb03b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Instagram story: @hughlauuu wishing @anthonygreyes a happy birthday
+    at a sunset beach.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:26.403284+00:00'
   source_available: true
 - id: 0b4ced1edafe5fc1
   filename: IMG_9193.heic
@@ -187,9 +196,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-09-26T09:27:50.096246-05:00'
   sha256: fc51f7ff2f746a5092ce157ec2641c08845e229c3e4cca594b1314084660702f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LinkedIn profile screenshot for Shlok Gore, a musician and UC Berkeley
+    alum holding a keytar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:36.516325+00:00'
   source_available: true
 - id: d02295e8b4ea8869
   filename: IMG_8286.png
@@ -198,9 +208,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-09-28T12:11:06.322539-05:00'
   sha256: 676e3e462d8ab5a954e3db198dd3f304d8caacd0114aa6f55ba5f7295f0ea53f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of Rishi mocking a candidate's resume titles for
+    an SDR role.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:57:48.271191+00:00'
   source_available: true
 - id: 8d7cc269e59134db
   filename: IMG_1897.PNG

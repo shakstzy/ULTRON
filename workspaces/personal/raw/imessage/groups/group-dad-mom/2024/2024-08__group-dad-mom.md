@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2024-08-29T23:07:14.888875-05:00'
   sha256: 034b1aa7ce1f0c5ccde58ae73b5753405684bdc98f9291e70ce801ab625bde14
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat with Amadeus about repairing damaged drywall with a handyman
+    or his dad.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:48:56.119589+00:00'
   source_available: true
 chat_message_guids_count: 94
 deleted_upstream: null

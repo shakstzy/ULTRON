@@ -22,9 +22,10 @@ attachments:
   sender: ballr-hallr-la
   sent_at: '2024-10-09T02:44:22.025373-05:00'
   sha256: 079c5b22a8da0339632ffe228d70a2ea3b6f85ed134df6fb6320dcc77045688b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Men in robes and a stuffed giraffe at pearly gates for the song "Heaven"
+    by BallerHaller24.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:47.946222+00:00'
   source_available: true
 chat_message_guids_count: 24
 deleted_upstream: null

@@ -209,9 +209,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2025-10-31T12:16:18.407166-05:00'
   sha256: c66c1356e5c0dab85e5d0d6d5da628b1bc6774680de61599a46aae8f13f41274
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling man in a plaid shirt and sunglasses holds a case on a sidewalk
+    at W 42 St & 9 Av.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:53.338755+00:00'
   source_available: true
 - id: 3edc83ac3bbc27c2
   filename: IMG_8562.PNG
@@ -253,9 +254,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-10-31T18:41:57.972959-05:00'
   sha256: 456553cc30d5ba2e02c8bba572c6829c9b4938f077aee24a9b064c5822b93bc4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A thumb holding a smartphone in front of a blue necktie with red geometric
+    patterns.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:51:29.634156+00:00'
   source_available: true
 - id: dc2322641ae95ded
   filename: IMG_8202.PNG

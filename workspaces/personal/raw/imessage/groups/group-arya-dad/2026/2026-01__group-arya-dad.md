@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-01-06T14:23:36.044239-06:00'
   sha256: eb4e0b5932c2a1d4e84e4ef7e8b4eda7a20d8789217e15bdcf51fe3064ebda53
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A red Nike box, a white Nike Racing box, and a bag of chips on a black
+    leather couch.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:39.995631+00:00'
   source_available: true
 - id: 375ca2ffd5377b3c
   filename: Stopwatch.png
@@ -33,9 +34,9 @@ attachments:
   sender: me
   sent_at: '2026-01-07T17:05:59.672000-06:00'
   sha256: 854d10a75c7e997ebd57aaf0a845a1934354eda029cf25ee3b4406ca04e4267d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iOS Clock app stopwatch displaying 07:46.66 with a single lap at 07:46.68.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:56:52.289087+00:00'
   source_available: true
 - id: 12662c7b6a934613
   filename: IMG_6366.MOV

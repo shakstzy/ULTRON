@@ -83,73 +83,63 @@ def _wait_cooldown():
 
 
 # ---------------------------------------------------------------------------
-# Account rotation: swap ~/.gemini/oauth_creds.json on rate-limit
+# Per-worker account isolation: each gemini call pinned to its own HOME
+# pointing at one of N account creds. Workers fan out across all accounts
+# in round-robin, so 64 workers + 8 accounts = 8 workers per account in
+# parallel. No global oauth_creds.json contention; no thundering herd.
 # ---------------------------------------------------------------------------
+import shutil
+
 ACCOUNTS_DIR = Path.home() / ".gemini" / "accounts"
-OAUTH_CREDS = Path.home() / ".gemini" / "oauth_creds.json"
+POOL_ROOT = Path("/tmp/gemini-account-pool")  # per-account HOME dirs
+ACCOUNTS: list[tuple[str, Path]] = []         # (name, home_path)
+
 _account_lock = threading.Lock()
-_exhausted_accounts: set[str] = set()    # filenames known exhausted in this run
-_active_account_name = [None]            # name of currently-active account file
-
-
-def _list_accounts():
-    """Re-list accounts every call so new drops are picked up live."""
-    if not ACCOUNTS_DIR.exists():
-        return []
-    return sorted(ACCOUNTS_DIR.glob("*.json"))
-
-
-def _identify_active_account():
-    """Match current oauth_creds.json against accounts dir to find active one."""
-    if not OAUTH_CREDS.exists():
-        return None
-    try:
-        current = OAUTH_CREDS.read_bytes()
-    except OSError:
-        return None
-    for a in _list_accounts():
-        try:
-            if a.read_bytes() == current:
-                return a
-        except OSError:
-            continue
-    return None
+_acct_idx = [0]                  # round-robin counter
+_exhausted: set[str] = set()     # account names exhausted in this run
 
 
 def init_account_state():
-    """Call once at startup to identify the active account."""
-    a = _identify_active_account()
-    if a:
-        _active_account_name[0] = a.name
-        print(f"  active account: {a.stem}")
-    accts = _list_accounts()
-    print(f"  rotation pool: {len(accts)} account(s) — {[a.stem for a in accts]}")
+    """Set up an isolated HOME dir per account in the pool dir.
+    Each subprocess.run(gemini...) picks one and runs with HOME=<that dir>."""
+    POOL_ROOT.mkdir(parents=True, exist_ok=True)
+    if not ACCOUNTS_DIR.exists():
+        sys.exit(f"no ~/.gemini/accounts/ dir; auth at least one account first")
+    for acct_file in sorted(ACCOUNTS_DIR.glob("*.json")):
+        name = acct_file.stem
+        home = POOL_ROOT / name
+        gemini_dir = home / ".gemini"
+        gemini_dir.mkdir(parents=True, exist_ok=True)
+        try:
+            shutil.copy2(acct_file, gemini_dir / "oauth_creds.json")
+            ACCOUNTS.append((name, home))
+        except OSError as e:
+            sys.stderr.write(f"  WARNING: skipping {name} — {e}\n")
+    if not ACCOUNTS:
+        sys.exit("no accounts loaded into pool")
+    print(f"  pool: {len(ACCOUNTS)} account(s) — {[a[0] for a in ACCOUNTS]}")
+    print(f"  workers will round-robin across all accounts in parallel")
 
 
-def rotate_account():
-    """Swap to next non-exhausted account. Returns True if rotated, False if all spent."""
-    import shutil
+def get_next_account():
+    """Round-robin pick; skip exhausted. Returns (name, home_path) or None."""
     with _account_lock:
-        # Mark current as exhausted (we're rotating because it hit 429)
-        if _active_account_name[0]:
-            _exhausted_accounts.add(_active_account_name[0])
-        accounts = _list_accounts()
-        for a in accounts:
-            if a.name in _exhausted_accounts:
-                continue
-            try:
-                shutil.copy2(a, OAUTH_CREDS)
-                _active_account_name[0] = a.name
-                _COOLDOWN_RELEASE_AT[0] = 0.0
-                sys.stdout.write(f"\n  >>> rotated to: {a.stem} (exhausted: {len(_exhausted_accounts)}/{len(accounts)})\n")
-                sys.stdout.flush()
-                return True
-            except OSError:
-                _exhausted_accounts.add(a.name)
-                continue
-        sys.stdout.write(f"\n  !!! all {len(accounts)} account(s) exhausted; backing off\n")
+        live = [a for a in ACCOUNTS if a[0] not in _exhausted]
+        if not live:
+            return None
+        idx = _acct_idx[0] % len(live)
+        _acct_idx[0] += 1
+        return live[idx]
+
+
+def mark_exhausted(name):
+    with _account_lock:
+        if name in _exhausted:
+            return
+        _exhausted.add(name)
+        live = len(ACCOUNTS) - len(_exhausted)
+        sys.stdout.write(f"\n  >>> {name} exhausted ({len(_exhausted)}/{len(ACCOUNTS)} down, {live} live)\n")
         sys.stdout.flush()
-        return False
 
 
 def hash_file(path):
@@ -180,7 +170,10 @@ def kind_of(mime):
     return "file"
 
 
-def gemini_describe_once(path, kind, timeout=180):
+def gemini_describe_once(path, kind, account, timeout=180):
+    """Single Gemini CLI call with HOME pinned to a specific account dir.
+    `account` is (name, home_path); we set env HOME=<home_path> so the CLI
+    reads that account's oauth_creds.json instead of the global one."""
     if kind not in ("image", "video", "text"):
         return None, None, "unsupported"
     if not Path(path).exists() or Path(path).is_dir():
@@ -188,14 +181,17 @@ def gemini_describe_once(path, kind, timeout=180):
     prompt = PROMPT_VISION if kind in ("image", "video") else PROMPT_TEXT
     cmd = [
         "gemini",
-        "-m", DESCRIPTION_MODEL,   # pin Flash explicitly; CLI auto-routes to Pro otherwise
+        "-m", DESCRIPTION_MODEL,
         "-p", f"{prompt}\n\n@{path}",
         "-o", "text",
         "--approval-mode", "plan",
         "--include-directories", ATTACHMENTS_INCLUDE,
     ]
+    env = os.environ.copy()
+    env["HOME"] = str(account[1])  # account home dir
     try:
-        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
+        proc = subprocess.run(cmd, capture_output=True, text=True,
+                              timeout=timeout, env=env)
     except subprocess.TimeoutExpired:
         return None, None, "timeout"
     except FileNotFoundError:
@@ -219,25 +215,32 @@ def gemini_describe_once(path, kind, timeout=180):
     return desc, DESCRIPTION_MODEL, None
 
 
-def gemini_describe_with_retry(path, kind, max_retries=3):
-    """On rate_limit: try rotating to a fresh account FIRST (immediate retry).
-    Only fall back to cooldown if all accounts are exhausted."""
+def gemini_describe_with_retry(path, kind, max_retries=5):
+    """Pull a fresh account from the round-robin pool each attempt.
+    On rate_limit: mark that account exhausted, try another. Only after
+    ALL accounts exhausted do we cooldown-and-wait."""
     delay = 5.0
     for attempt in range(max_retries + 1):
         _wait_cooldown()
-        desc, model, err = gemini_describe_once(path, kind)
-        if err != "rate_limit":
-            return desc, model, err
-        # Rate limit: try rotating to next account
-        if rotate_account():
-            continue  # retry immediately with new account, don't increment delay
-        # All accounts exhausted; back off and wait for refill
-        sleep_for = delay + random.uniform(0, delay)
-        _request_cooldown(sleep_for)
-        if attempt >= max_retries:
-            return desc, model, err
-        time.sleep(sleep_for)
-        delay = min(delay * 2, 60)
+        account = get_next_account()
+        if account is None:
+            # All accounts exhausted; cooldown and try once more
+            sleep_for = delay + random.uniform(0, delay)
+            _request_cooldown(sleep_for)
+            time.sleep(sleep_for)
+            delay = min(delay * 2, 120)
+            if attempt >= max_retries:
+                return None, None, "all_exhausted"
+            # After waiting, clear exhausted set partially to give accounts
+            # a chance to refill (we can't know server-side; just retry)
+            with _account_lock:
+                _exhausted.clear()
+            continue
+        desc, model, err = gemini_describe_once(path, kind, account)
+        if err == "rate_limit":
+            mark_exhausted(account[0])
+            continue  # try another account immediately
+        return desc, model, err
     return None, None, "rate_limit"
 
 

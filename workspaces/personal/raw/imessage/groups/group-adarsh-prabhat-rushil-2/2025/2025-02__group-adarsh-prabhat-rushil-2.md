@@ -44,9 +44,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-02-13T14:56:09.078576-06:00'
   sha256: e8a1d6a003bd998ef9974a878a77b74b6c0f3e009d2227fc56f0fed808b60c0b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: News report detailing toxicology results for three fatal car crash
+    victims.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:03:26.342260+00:00'
   source_available: true
 - id: c287d69926aa4e3e
   filename: 8C9C7989-0441-4A61-A106-9255E91EB558.MOV

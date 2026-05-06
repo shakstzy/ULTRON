@@ -34,9 +34,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-04-01T19:01:42.660129-05:00'
   sha256: 6087a26dc90b6359a34846ce74bce08055f3b9e09dd6e2c46d8b1ab9fa887244
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Shervin action figure in packaging with Bitcoin, Ethereum, Solana,
+    a phone, and a Ledger.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:06:52.503817+00:00'
   source_available: true
 - id: e1ba1445b5c4f2dd
   filename: CEB4373C-05D6-463E-A369-41F1D8E3F552.jpeg

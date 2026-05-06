@@ -199,9 +199,10 @@ attachments:
   sender: sam-garcia
   sent_at: '2026-04-21T23:48:05.217332-05:00'
   sha256: 22a95f3d74ac326a5dda929efd0d0426609ee8951eff56aacd0176f52ad73d0c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person nods to music in a car at night and drives through a green
+    traffic light.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:03:11.112262+00:00'
   source_available: true
 - id: 3d184537d909658c
   filename: IMG_1847.HEIC

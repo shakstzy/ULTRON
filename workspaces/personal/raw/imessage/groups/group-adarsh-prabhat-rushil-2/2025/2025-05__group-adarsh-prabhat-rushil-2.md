@@ -33,9 +33,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-05-09T17:17:03.036458-05:00'
   sha256: d94dde2e3bc3e547c580196aa65eff7514627da584973184a855608846ad7243
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Slack chat: Adarsh accidentally asks Spencer Greco about WFH days;
+    Spencer says it is fine.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:03:51.371425+00:00'
   source_available: true
 - id: 7837a374993a2055
   filename: IMG_8220.png

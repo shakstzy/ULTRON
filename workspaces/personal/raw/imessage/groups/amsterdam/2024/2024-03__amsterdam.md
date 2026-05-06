@@ -22,9 +22,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2024-03-19T16:37:35.963220-05:00'
   sha256: 979699f910b09321cde5f3e451d9fac609f555613718dcfd4192423261bd0ff4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone Notes screenshot of a checked-off travel itinerary for a weekend
+    in Amsterdam.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:12:49.442177+00:00'
   source_available: true
 - id: af3c6eb28134aaf0
   filename: IMG_6526.jpeg
@@ -33,9 +34,10 @@ attachments:
   sender: prabhat-nuthakki-uc-berkeley
   sent_at: '2024-03-19T19:17:46.611855-05:00'
   sha256: ece0233d3680c58897319a9f0cfbcf88a5358481fd89943b5cb527d648517b70
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Viator booking: Amsterdam canal cruise for 6 adults on March 23, 2024
+    at 18:00 for $166.20.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:13:06.977964+00:00'
   source_available: true
 - id: 22a60d6fd8144bf8
   filename: IMG_2722.jpeg
@@ -44,9 +46,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2024-03-19T20:13:08.464792-05:00'
   sha256: 14006c37d0ee33adc42e93a8ce8618f922dd117e88e791c133174d0140baebd9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Viator confirmation for an Amsterdam booze cruise on March 22, 2024,
+    for 5 adults ($160.65).
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:12:58.195985+00:00'
   source_available: true
 - id: 2fb1673d7e7d4b8f
   filename: 73275260939__21BDFFD6-B23A-4BF4-9ED4-5714F6A424AA.jpeg
@@ -66,9 +69,10 @@ attachments:
   sender: me
   sent_at: '2024-03-22T06:29:25.202118-05:00'
   sha256: ac85899921c59a6c8bf6ec76a9d84caa101ae1727a03169ed1904e31193a3c33
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Four dark cars parked in a wet lot bordering a wooded walking path
+    under an overcast sky.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:13:20.111759+00:00'
   source_available: true
 - id: 339cbd31ed9c7fad
   filename: 73282627995__3AE8AADC-78FF-4825-9F34-45BE646F5F43.jpeg
@@ -88,9 +92,10 @@ attachments:
   sender: me
   sent_at: '2024-03-23T03:49:30.112696-05:00'
   sha256: b10fe27708186d586bf41f1afae674f1704637f8b022b62f5439725b335993f7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Budding and bare trees stand under a bright blue sky filled with fluffy
+    white clouds.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:13:21.066077+00:00'
   source_available: true
 - id: 510f4f172f5e18be
   filename: IMG_0849.jpeg
@@ -99,9 +104,10 @@ attachments:
   sender: saif-ali-nyc
   sent_at: '2024-03-23T13:52:18.749765-05:00'
   sha256: 5b097bab43471dda7deee3dc8ad132a21ccc2c4142669c248b71be4e5bdf583c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: WhatsApp message from Aurora for a Van Gogh Museum tour at Paulus Potterstraat
+    7.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:13:37.201562+00:00'
   source_available: true
 - id: 716ceb4100edc912
   filename: 04Y3ZY6BI4PT8VPVW5K6YHJ1DQI7O7EI.pdf
@@ -110,9 +116,11 @@ attachments:
   sender: saif-ali-nyc
   sent_at: '2024-03-23T14:20:38.271333-05:00'
   sha256: 7f589279958915a386e9c5b7792f3845c4e84f30cfcfcb660fa11ac20253c2c1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a GetYourGuide voucher for a Van Gogh Museum guided tour in
+    Amsterdam on March 24, 2024. It details the meeting point, schedule, and group
+    booking information for eight guests.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:13:40.171980+00:00'
   source_available: true
 - id: d3a7747d1671fc0e
   filename: IMG_1074.PNG
@@ -154,9 +162,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2024-03-24T01:35:00.095557-05:00'
   sha256: 3c3d7f8a40aad82c1a3622776ffef97afaad1f9facd5b8f3d05d12dec15e095a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A group of young men taking a sideways selfie in a room with a city
+    night view.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:13:09.259541+00:00'
   source_available: true
 - id: 00427d9ffad144f3
   filename: IMG_4033.jpeg
@@ -165,9 +174,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2024-03-24T01:35:00.095557-05:00'
   sha256: 83877cbee3815b281ba7dbd0fb02cd269023823ff7a22aecfb6f3ed10089c397
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down selfie of a group of young men in a modern apartment at
+    night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:12:58.323026+00:00'
   source_available: true
 - id: f3a8508690d8b71d
   filename: IMG_4005.jpeg
@@ -187,9 +197,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2024-03-24T01:35:00.095557-05:00'
   sha256: 683b2cbb00381a46f3e63e81a67f6b4d47121c8c3838abbbba36966732f272b9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men in coats and sweaters pose indoors in front of a wall-mounted
+    television.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:11:20.263063+00:00'
   source_available: true
 - id: 6c79d3523948a243
   filename: IMG_4007.jpeg
@@ -209,9 +220,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2024-03-24T01:35:00.095557-05:00'
   sha256: 9556abfd2fd6ce1eb0edd8ea5d4765028628d0590a60d367dbe86450c1430517
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Five young men posing and smiling in the Waterlooplein metro station
+    in Amsterdam.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:14:14.612770+00:00'
   source_available: true
 - id: d483e518ef9b1dee
   filename: IMG_4016.jpeg
@@ -220,9 +232,9 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2024-03-24T01:35:00.095557-05:00'
   sha256: 9d02e3756d7192e766031169e5495636cf42533433e376769a369cb61340f805
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men in coats and sweaters posing indoors by a television and chair.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:13:25.886281+00:00'
   source_available: true
 - id: c58a3c23b7cbddbb
   filename: 2A90E5A5-572C-458F-BBC0-38C1B8258344.MOV
@@ -264,9 +276,10 @@ attachments:
   sender: phone-+18186963499
   sent_at: '2024-03-24T02:07:28.692151-05:00'
   sha256: e3e374a996216d5493edcdd2290e221297aa0747905b47082015e1a51b4f23e8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person with dark hair sleeps on their side in a white bed wearing
+    dark clothing.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:13:15.144417+00:00'
   source_available: true
 - id: 5813eb526ea44ecc
   filename: 73296487652__65EEDCE8-210E-43F7-BF15-32E779E7654B.jpeg
@@ -308,9 +321,11 @@ attachments:
   sender: prabhat-nuthakki-uc-berkeley
   sent_at: '2024-03-25T04:28:53.071989-05:00'
   sha256: 959b24dfb8c8aefa4b0f6c107d32c8c0bd8a67c96b355cafb83fb701d22ecf36
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a set of NS International train tickets for Amsterdam-Brussels
+    travel on March 25, 2024. It includes youth-fare passes for several passengers
+    issued by Omio.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:13:30.298597+00:00'
   source_available: true
 - id: 63d67eb03d952111
   filename: IMG_6593.jpeg
@@ -319,9 +334,10 @@ attachments:
   sender: prabhat-nuthakki-uc-berkeley
   sent_at: '2024-03-25T06:18:29.596225-05:00'
   sha256: af066822f13d75f0a1dbd5c15f646a52999c4971a441c36d895fceab9587efdc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person sits hunched on a bathroom floor next to a toilet, smartphone,
+    and water bottle.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:12:09.102325+00:00'
   source_available: true
 - id: a7d201eb7239dcff
   filename: 73311405381__80738960-B959-415C-88A7-8EB0F2D88600.jpeg
@@ -341,9 +357,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2024-03-26T05:57:45.784547-05:00'
   sha256: bf6f5540627b0a812bb8f421743145dfc36f4fbd1df08e88352df3d78d094ee3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Heineken Experience Rooftop Combi Ticket for March 26, 2024, featuring
+    a QR code.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:14:04.795041+00:00'
   source_available: true
 - id: bc0744df36799f7a
   filename: IMG_4204.PNG
@@ -352,9 +369,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2024-03-26T05:57:45.784547-05:00'
   sha256: 8fcf07dc5441cb90b4a270c87fbf3a3371e5d9fb39b3eb332c2a24a5cab519c0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Heineken Experience Rooftop Combi Ticket for March 26, 2024, with a
+    QR code.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:13:05.260528+00:00'
   source_available: true
 - id: 75fa686b60d774d7
   filename: IMG_4203.PNG
@@ -363,9 +381,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2024-03-26T05:57:45.784547-05:00'
   sha256: 00b14fad7d39296215dc2ca7b22040d1a57599756175dc79237f636b7fbbf347
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Heineken Experience Rooftop Combi Ticket for March 26, 2024, with a
+    QR code and ticket number.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:14:13.489533+00:00'
   source_available: true
 - id: 69552f1ade031939
   filename: IMG_4205.PNG
@@ -374,9 +393,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2024-03-26T05:57:45.784547-05:00'
   sha256: 6fbe86b921cd65d1d1d05b773f7c4203ae73335731034ab832554bb4a80c99bd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Digital Heineken Experience Rooftop Combi Ticket for March 26, 2024,
+    featuring a QR code.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:14:03.341648+00:00'
   source_available: true
 - id: 105fddd3a57d858b
   filename: IMG_2888.jpeg
@@ -385,9 +405,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2024-03-26T14:10:19.566063-05:00'
   sha256: 849229949b23697a39e92fbecf8be1b98f6cb211dd15ba52780cebd6fafa7651
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Maps screenshot of Indonesisch Restaurant Long Pura listing
+    with food photos and buttons.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:14:08.612737+00:00'
   source_available: true
 - id: 1760f9f5019df9ed
   filename: IMG_2889.jpeg
@@ -407,9 +428,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2024-03-26T14:34:12.194623-05:00'
   sha256: 01b66b2f9b59a3c496166af84586056b82d1a2dda38d83bfec163e29a32bff89
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google search result screenshot for China Sichuan Restaurant on Warmoesstraat
+    in Amsterdam.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:13:37.135815+00:00'
   source_available: true
 - id: cd7b065e78722ed7
   filename: IMG_4348.jpeg
@@ -418,9 +440,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2024-03-27T02:50:55.772683-05:00'
   sha256: 253ba6f129e3b047275cd2c9b184cc2e8e557fbce3cc1462f86187dd39519623
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Spotify screenshot playing "Freed From Desire" by Gala with an "Added
+    to Rave" notification.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:12:50.930129+00:00'
   source_available: true
 - id: 987e088a5bc59442
   filename: 73322174597__70C891C6-B335-4E15-8714-683500A202C3.jpeg
@@ -429,9 +452,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2024-03-27T03:42:49.847126-05:00'
   sha256: 09f2281fafdb6c8c80f4631f1f8a361063d0a4dd917f5d305af5783622a7c944
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling man holding a green Heineken beer can to his forehead against
+    a slatted background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:13:04.310598+00:00'
   source_available: true
 - id: 1d41c33f969b67c8
   filename: 73328412350__7248BEC4-3837-4180-B057-59649BC1B6E7.jpeg
@@ -473,9 +497,10 @@ attachments:
   sender: me
   sent_at: '2024-03-29T21:36:56.044206-05:00'
   sha256: 66cb834f5e622d9296f8a48a44e8aeeefb4bc73772021c03cb3667fde369d984
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Neon beer signs, sports on TVs, shuffleboard, and a foosball table
+    in a wood-paneled bar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:13:07.513302+00:00'
   source_available: true
 - id: e3a4970eb3132ef5
   filename: 73346031016__53FC20B5-5689-4BB6-AF9A-D7A7734DB983.jpeg
@@ -495,9 +520,10 @@ attachments:
   sender: saif-ali-nyc
   sent_at: '2024-03-30T14:36:27.615613-05:00'
   sha256: e48dceb24261b398ca717ef9d57d688630b8e1736fc77f1d46f233191ec625bb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: PNC Bank notice to Saif T Ali regarding a suspended credit card account
+    ending in 7719.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:12:59.312874+00:00'
   source_available: true
 chat_message_guids_count: 918
 deleted_upstream: null

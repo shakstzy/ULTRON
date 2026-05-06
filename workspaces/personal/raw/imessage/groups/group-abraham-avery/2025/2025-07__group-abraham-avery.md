@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2025-07-29T00:31:23.661000-05:00'
   sha256: 1004175ba259829a8fbb6a1b7337833295b90edf6a924dfe1d0a73c6a40df1ec
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "Calendar event for Avery, Abraham, and Adithya on Tuesday, July 29,\
+    \ 2:00 PM \u2013 2:30 PM."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:07:40.586841+00:00'
   source_available: true
 - id: a2bba7721876748b
   filename: IMG_7007.png
@@ -77,9 +78,10 @@ attachments:
   sender: me
   sent_at: '2025-07-29T14:02:03.189000-05:00'
   sha256: 9b4254bec5fc745dc4777ec96090429d99f7695cc34ad82e3613bcba7ff9fcf0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a video call showing Avery Haskell and a Fireflies meeting
+    bot.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:09:59.991200+00:00'
   source_available: true
 chat_message_guids_count: 90
 deleted_upstream: null

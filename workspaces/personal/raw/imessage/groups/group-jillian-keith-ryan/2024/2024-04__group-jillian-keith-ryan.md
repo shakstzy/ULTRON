@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2024-04-28T23:35:44.161428-05:00'
   sha256: 65519e570dea34ce45f3588db4d7343942bb4f8ebc41b357ddb830210f6b2741
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'MacBook screen displaying the TikTok profile for @spac3xx_ with a
+    grid of #lifeofshak videos.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:05:43.365129+00:00'
   source_available: true
 chat_message_guids_count: 33
 deleted_upstream: null

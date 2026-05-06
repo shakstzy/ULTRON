@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-04-02T14:40:37.950085-05:00'
   sha256: 7125249722db7deb797289dfc1870f18a3236295aa958d1444c874569e57f95b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Heineken beer cases and Wagyu ground beef packages in a Costco warehouse
+    aisle.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:14:03.919445+00:00'
   source_available: true
 - id: 4c5d86e8dfc272f3
   filename: IMG_1875.jpeg
@@ -33,9 +34,10 @@ attachments:
   sender: phone-+18186963499
   sent_at: '2024-04-07T15:29:12.759858-05:00'
   sha256: 5df85941822f783072aa6258639db4ce79a64cf7e19c828f05947b5e6ec4845d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three men smiling and holding beer cans outdoors near palm trees and
+    a bounce house.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:13:10.838114+00:00'
   source_available: true
 - id: 26b111a2fd0b8681
   filename: IMG_1877.jpeg
@@ -55,9 +57,10 @@ attachments:
   sender: phone-+18186963499
   sent_at: '2024-04-07T15:29:12.759858-05:00'
   sha256: 68a2e5fb23bd34ccdafb57e8a007313eac45c8e56f5ef22114168e8720810d60
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling men pose with beer cans near palm trees and a red and blue
+    bouncy house.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:14:16.948213+00:00'
   source_available: true
 - id: b52db09aa23118e8
   filename: IMG_1874.jpeg
@@ -66,9 +69,10 @@ attachments:
   sender: phone-+18186963499
   sent_at: '2024-04-07T15:29:12.759858-05:00'
   sha256: 783b0ab02c26ffd9e7b91051756c15d08779a6a76c961fd3ef11a43b9950478e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Friends cheer and hold beverage cans at a sunny outdoor party with
+    palm trees.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:13:28.425049+00:00'
   source_available: true
 - id: 43825548b7f0a28b
   filename: IMG_1873.jpeg
@@ -88,9 +92,10 @@ attachments:
   sender: phone-+18186963499
   sent_at: '2024-04-07T15:29:12.759858-05:00'
   sha256: 6f7219d4f005fba54af791e27eab2c45ac7d51a5b5ba5550c8aba41b1216ce90
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two young men smile outdoors; one wears a Berkeley hoodie, the other
+    holds a Coors beer can.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:13:13.700075+00:00'
   source_available: true
 - id: ac8d49f1e4cf13f9
   filename: IMG_1876.jpeg
@@ -99,9 +104,10 @@ attachments:
   sender: phone-+18186963499
   sent_at: '2024-04-07T15:29:12.759858-05:00'
   sha256: f63611c6b3ebbe9aa47cb3951c270fe83a07384c5422365324ed3d1abdefaab4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three young men pose with drink cans in a sunny yard near palm trees
+    and a bouncy house.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:14:16.385953+00:00'
   source_available: true
 chat_message_guids_count: 4
 deleted_upstream: null

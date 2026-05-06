@@ -99,9 +99,10 @@ attachments:
   sender: me
   sent_at: '2024-08-28T16:41:54.477735-05:00'
   sha256: a83ecc697925b2a0e5e251c023f494fb105b5abb7cd9a9ac4df7b88604146206
-  description: null
-  description_model: null
-  extracted_at: null
+  description: News article screenshot on Nvidia's record $30.04bn revenue featuring
+    CEO Jensen Huang.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:04:20.181600+00:00'
   source_available: true
 - id: 8b346c6434dce0fa
   filename: IMG_0263.PNG
@@ -110,9 +111,10 @@ attachments:
   sender: me
   sent_at: '2024-08-31T14:33:41.293262-05:00'
   sha256: 4155385e00602e97d73107e097c859da20494a45300bf330137347c69ba22a22
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram chat with Jae Shervin Blockchain LA about recruiting AI devs
+    and equity allocation.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:06:02.370744+00:00'
   source_available: true
 - id: 89d406b8fb69eb26
   filename: IMG_1997.jpeg
@@ -121,9 +123,10 @@ attachments:
   sender: me
   sent_at: '2024-08-31T20:40:07.888000-05:00'
   sha256: ad59339c12e5eea31b9dd64b99c57821af56aee82413a3903e7a547fc21a33ef
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Blooma raises $15M Series A for its AI commercial real estate underwriting
+    platform.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:05:08.550768+00:00'
   source_available: true
 chat_message_guids_count: 798
 deleted_upstream: null

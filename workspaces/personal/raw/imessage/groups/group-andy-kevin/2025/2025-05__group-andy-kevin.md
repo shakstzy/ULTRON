@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2025-05-20T11:37:19.516516-05:00'
   sha256: 4c067f32863882005791844417183d8b99391255656c4a1346fdd945682d32bd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Telegram post screenshot: Slash raised $41M in Series B funding led
+    by Goodwater Capital.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:07:52.209594+00:00'
   source_available: true
 chat_message_guids_count: 33
 deleted_upstream: null

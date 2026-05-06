@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-05-03T14:21:50.059937-05:00'
   sha256: a30800f512938a79fd15376c6dc8d7d5d4472f739dbeecf9f22528dc1affeb9e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Chopped ginger soaking in a glass of water next to a yellow supplement
+    bottle.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:05:50.994572+00:00'
   source_available: true
 chat_message_guids_count: 6
 deleted_upstream: null

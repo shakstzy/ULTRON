@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2025-06-26T13:43:26.936903-05:00'
   sha256: 315ceeaf82519e3fd377b8fa0b896e6912d3889fd64d0f95f81fe42de81377be
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Calendar event screenshot for "Abraham Avery and Adi" on Friday, June
+    27 at 12:30 PM.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:07:58.667190+00:00'
   source_available: true
 chat_message_guids_count: 80
 deleted_upstream: null

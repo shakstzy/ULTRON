@@ -22,9 +22,9 @@ attachments:
   sender: will-avery-crypto
   sent_at: '2026-02-04T18:54:41.992329-06:00'
   sha256: 50c63dd2fec0af6c48125304d6a0dbf3dc4edbf2133fa6faa751159030c4313d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A domain marketplace listing for shop.finance, shop.money, and shop.investments.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:13:33.516046+00:00'
   source_available: true
 - id: 454983c7826940a1
   filename: IMG_7110.png
@@ -33,9 +33,10 @@ attachments:
   sender: will-avery-crypto
   sent_at: '2026-02-04T18:55:28.837165-06:00'
   sha256: 89e8f5808bac94f62572c258b23cf820fc6206af25a59f867e2bc4348dc2a378
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of shop.markets and shop.trading premium domains priced
+    at $1,300 each.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:12:51.779287+00:00'
   source_available: true
 chat_message_guids_count: 15
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-01-14T22:37:58.593458-06:00'
   sha256: 88b90ee6ae3a68b6ae7e5422010869e1f14df639178878808a7b5088620247f6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot showing two people coordinating a phone call over
+    text.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:03:58.181569+00:00'
   source_available: true
 - id: 0595e2c6c643660b
   filename: IMG_4031.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: saif-ali-nyc
   sent_at: '2025-01-23T20:50:33.804868-06:00'
   sha256: 986fb383a7f07d33bb4408e7d825f695d45920da1e51ce82a8d469b0fd87b2f4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a Google email to Saif Ali for APM Intern Summer 2025
+    interview scheduling.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:04:26.911378+00:00'
   source_available: true
 - id: 9521cfabb6faffc7
   filename: IMG_1870.png
@@ -44,9 +46,9 @@ attachments:
   sender: me
   sent_at: '2025-01-23T20:54:28.475718-06:00'
   sha256: 67565ef34c6a79e41ef5482eafddfca3beef634cd706fadc721611c6f31647c8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Snippet stating Google's APM program has an estimated 20% return rate.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:05:37.054333+00:00'
   source_available: true
 - id: 40dd72193fe25a36
   filename: IMG_6218.png

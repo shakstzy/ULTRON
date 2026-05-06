@@ -66,9 +66,10 @@ attachments:
   sender: me
   sent_at: '2025-04-17T16:41:29.763926-05:00'
   sha256: f87130bf7cd7f7fe3220658ac46bad57be47cedf91e8ed6e0b7b01b613fef4d0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Bearded man selfies at a table with an open laptop, green glass bottles,
+    and a drink.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:13:40.909793+00:00'
   source_available: true
 - id: 9d8d7c13c761f807
   filename: IMG_7734.PNG

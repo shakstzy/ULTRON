@@ -33,9 +33,10 @@ attachments:
   sender: phone-+16268228802
   sent_at: '2026-04-12T22:32:50.887242-05:00'
   sha256: 2b3039bf2f6d8f304c38f379bf2cf303e0081622388098576a0272c5d6b049d0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 3D CAD rendering of a seated leg extension machine with dual independent
+    rotating arms.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:06:07.498474+00:00'
   source_available: true
 - id: de057cc769c4e189
   filename: 6FFDA6BF-F9B2-413C-99B8-5D86753FB699.pluginPayloadAttachment

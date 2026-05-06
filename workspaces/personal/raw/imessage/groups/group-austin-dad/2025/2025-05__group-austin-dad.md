@@ -22,9 +22,10 @@ attachments:
   sender: austin-davis-renter-showing
   sent_at: '2025-05-24T18:55:05.858724-05:00'
   sha256: 4b19eb0edcc98a33d37331073034f3e174b5cebc35daf780167d1479b8bbcd84
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dirty dishes and a spoon soak in soapy water inside a stainless steel
+    kitchen sink.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:06:00.717830+00:00'
   source_available: true
 chat_message_guids_count: 18
 deleted_upstream: null

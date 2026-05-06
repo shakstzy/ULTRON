@@ -55,9 +55,9 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-04-24T09:42:23.511464-05:00'
   sha256: b0235b6124c2421b7bdc310c8e29fd523abe437a577c9d5e54455a3dc228743e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Miami Magic nitrous oxide tanks and a monitor discarded by a dumpster.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:03:37.745984+00:00'
   source_available: true
 - id: ad6ec3d068de6899
   filename: ScreenRecording_04-24-2025 10-02-06_1.MOV

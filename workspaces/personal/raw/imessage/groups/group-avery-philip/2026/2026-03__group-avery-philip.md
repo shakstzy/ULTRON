@@ -44,9 +44,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-03-17T19:42:35.044275-05:00'
   sha256: 1482c393365818a70e634844d79beb2f7b5e0aa3c77ffbd16dd5dfa175c286c3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Blurry red and blue-lit nightclub with dancers, water bottles, and
+    a star-patterned can.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:14:17.979674+00:00'
   source_available: true
 - id: 00f7a5bb513cbd68
   filename: IMG_5730.heic

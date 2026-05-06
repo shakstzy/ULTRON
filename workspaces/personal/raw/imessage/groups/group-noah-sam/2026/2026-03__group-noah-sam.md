@@ -66,9 +66,10 @@ attachments:
   sender: sam-garcia
   sent_at: '2026-03-26T13:19:43.411695-05:00'
   sha256: 17bbb1034a01e4dfceabf831ae7cc51a4856ef02ff013f6dc8f6519d3f0c2e56
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Men yell slurs at a silver Nissan Altima (Texas PBG-6645) as it drives
+    away at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:04:10.341319+00:00'
   source_available: true
 - id: 1e3ecc0f62106458
   filename: mars.m4a

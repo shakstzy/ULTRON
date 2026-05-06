@@ -22,9 +22,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-08T16:11:36-05:00'
   sha256: 02e282e7e2377aff8644776787e266223bd535bcb3b6d679e2b74b0e9c7f0a0a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A Google Photos "Memories together" collage of five photos featuring
+    two young men.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:05:28.069469+00:00'
   source_available: true
 - id: d306eba8fa259591
   filename: IMG_3121.jpeg
@@ -44,9 +45,10 @@ attachments:
   sender: christine-bailie
   sent_at: '2024-04-08T19:22:15.420510-05:00'
   sha256: 204e0eea257360f4dfea41e6f74ca212f869ae8be800d1bb0fcf3e00c24dae28
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A girl in solar eclipse glasses makes a surprised face while sitting
+    on an outdoor couch.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:04:58.733351+00:00'
   source_available: true
 - id: 428481ab73bd2713
   filename: IMG_3125.jpeg

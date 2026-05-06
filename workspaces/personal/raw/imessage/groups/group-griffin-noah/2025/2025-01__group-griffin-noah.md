@@ -33,9 +33,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2025-01-05T01:58:57.996306-06:00'
   sha256: bbbacc911bd6a9e34923eeee2b0a47de6fc9d5d1bb5cd8fbe8912b7a52bc9776
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man rides a mechanical jackalope under red lighting at the Jackalope
+    Bar & Grill Pizzeria.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:07:21.076429+00:00'
   source_available: true
 - id: d6f237261ac51891
   filename: IMG_4335.jpeg
@@ -99,9 +100,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2025-01-05T01:58:57.996306-06:00'
   sha256: 3f3c6545bb89444081881d8a3065a442ea081ab9b8d241926dba73e8738e4195
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three smiling young men posing for an upside-down selfie outdoors at
+    night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:06:17.878933+00:00'
   source_available: true
 - id: 7bf85c9449c7a85a
   filename: IMG_6602.mov
@@ -110,9 +112,10 @@ attachments:
   sender: griffin-noah-roomate
   sent_at: '2025-01-05T11:42:31.345165-06:00'
   sha256: 695c7b6a7a4b7ca1b445a664b5be11f926345567cff4da09ba4cdb0af6935b1a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men gesture and talk beside a rocky urban stream illuminated by
+    city lights at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:08:22.238720+00:00'
   source_available: true
 - id: '6452737882334770'
   filename: IMG_6601.HEIC

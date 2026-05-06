@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-08-03T04:37:34.631000-05:00'
   sha256: ef6006776df7c1ecb742806c253b5d5912cdad5832f2c1859667192afb45bebc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Four young men smiling in a bedroom with a glass bong, water bottles,
+    and snack bags.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:08:29.637601+00:00'
   source_available: true
 chat_message_guids_count: 2
 deleted_upstream: null

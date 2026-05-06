@@ -22,9 +22,10 @@ attachments:
   sender: sam-garcia
   sent_at: '2026-01-15T09:32:33.560925-06:00'
   sha256: c539fc36678dc82ffc607114ccc64a137cbf3e13bebaed987089e77d645aa9d3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Women in vibrant saris dance and celebrate with joyful expressions
+    at a festive gathering.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:04:37.372266+00:00'
   source_available: true
 - id: b9acc01a6952acb5
   filename: 0A9C0490-9442-4F7E-8C70-FEB87F4202ED.pluginPayloadAttachment

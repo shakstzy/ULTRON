@@ -122,9 +122,10 @@ attachments:
   sender: me
   sent_at: '2025-03-21T15:53:37.200900-05:00'
   sha256: 94f0dc543b8bd21cbe45bc46cf4519689b13b415e5fef26958240e5c7a384827
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage group chat screenshot showing a man's portrait and a text
+    bubble saying "Soo haws".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:05:38.877566+00:00'
   source_available: true
 - id: 5983917e345a231e
   filename: IMG_7400.png
@@ -133,9 +134,10 @@ attachments:
   sender: me
   sent_at: '2025-03-21T15:53:37.200900-05:00'
   sha256: d28f82c00ac4dbe030ce15193a351f0cc3d7be6b2fd20097f585fb09f866afa9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a conversation calling Suhas "wack" beside a
+    portrait photo.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:05:36.961480+00:00'
   source_available: true
 - id: ef4394bd9c13894b
   filename: IMG_6639.png

@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2024-05-02T20:09:47.874365-05:00'
   sha256: e42c227e483bf0526296510a164de238034d6087c42f7da665e785bdf07b538d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram screenshot of two men performing an acoustic song with the
+    text 'you say it's all easy'.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:06:48.102516+00:00'
   source_available: true
 chat_message_guids_count: 34
 deleted_upstream: null

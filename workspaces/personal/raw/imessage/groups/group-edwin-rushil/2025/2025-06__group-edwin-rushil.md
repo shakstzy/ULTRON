@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-06-14T14:52:13.372561-05:00'
   sha256: f9f91cbd5e334f514c78be8697d44c9534c191464401fe78ce45cf5c5a7c93d0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a JUWENIN brand delivery notice stating "Package was
+    left in a secur".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:06:28.249697+00:00'
   source_available: true
 chat_message_guids_count: 6
 deleted_upstream: null

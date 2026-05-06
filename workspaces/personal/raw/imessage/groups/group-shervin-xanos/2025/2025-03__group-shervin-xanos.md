@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2025-03-10T04:18:04.659443-05:00'
   sha256: 81e0a95ec8f7cc581778fb387f4360f737ed29a6970b7b5de9baa3c6ac77379b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'iMessage chat: selling cheap mushrooms in LA; recipient is currently
+    in Austin.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:07:08.732116+00:00'
   source_available: true
 chat_message_guids_count: 6
 deleted_upstream: null

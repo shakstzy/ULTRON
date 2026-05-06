@@ -55,9 +55,11 @@ attachments:
   sender: austin-davis-renter-showing
   sent_at: '2025-08-31T14:51:34.799830-05:00'
   sha256: a7216df1e4dd78ee6a057b891b7172473e026ec3c1f7246d2d329a43b783b22d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This lease addendum and payment demand for a Sylmar rental property
+    lists $2,020 in total charges. It cites violations including an unauthorized dog,
+    late rent, and a damaged rug.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T02:06:59.696643+00:00'
   source_available: true
 chat_message_guids_count: 47
 deleted_upstream: null

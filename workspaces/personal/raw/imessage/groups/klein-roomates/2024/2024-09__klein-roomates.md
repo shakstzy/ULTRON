@@ -58,9 +58,10 @@ attachments:
   sender: evan-renter
   sent_at: '2024-09-30T16:51:38.523556-05:00'
   sha256: 50c2a84734661415841b5ece6c44bbbf246e1b47337a84cab976c0e353608dff
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A plastic bag of oranges with visible black and white mold growth on
+    the fruit.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:06:38.515753+00:00'
   source_available: true
 chat_message_guids_count: 5
 deleted_upstream: null

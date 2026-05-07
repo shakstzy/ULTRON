@@ -81,9 +81,10 @@ attachments:
   sender: me
   sent_at: '2025-06-24T16:12:21.660082-05:00'
   sha256: 9aa2389bc093d54b1f5cca3c83ccc22ec2205c812399983aec0d5b2e83202b89
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A screen recording of incriminating iMessages discovered by the user's
+    partner on his phone.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T03:58:54.340651+00:00'
   source_available: true
 chat_message_guids_count: 307
 deleted_upstream: null

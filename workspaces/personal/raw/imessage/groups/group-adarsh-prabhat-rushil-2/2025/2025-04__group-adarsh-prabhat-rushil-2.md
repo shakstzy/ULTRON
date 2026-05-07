@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-04-23T12:16:42.824225-05:00'
   sha256: d7dc1659d44084d6d67b68dbcc4478d0eda8800e20841525acda2bcc55e85351
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Young men vape in a room while a monitor shows a YouTube-to-MP3 site
+    for a Coraline beat.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:05:13.089508+00:00'
   source_available: true
 - id: dc64e673fdd810a1
   filename: IMG_6084.PNG

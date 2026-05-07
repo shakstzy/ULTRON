@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-02-21T22:48:17.569000-06:00'
   sha256: a072a6d7a3b062d6bd45d19e16979499612805e77801fd89ec9c027d946069ac
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two young men making peace signs for a selfie in front of a blue-lit
+    brick wall.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:03:44.657909+00:00'
   source_available: true
 - id: 94708f779ebb93be
   filename: IMG_4439.PNG

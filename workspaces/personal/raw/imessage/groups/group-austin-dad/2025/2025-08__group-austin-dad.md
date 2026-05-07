@@ -22,9 +22,10 @@ attachments:
   sender: austin-davis-renter-showing
   sent_at: '2025-08-01T12:58:01.456141-05:00'
   sha256: 44d68ee8925f2ef55546a3b1441e7da83e6ef6a842b9c07f3148849d7d599826
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A pending $1,000 credit to a VISA Debit Card ending in 5826, dated
+    Aug 1, 2025.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:05:57.519450+00:00'
   source_available: true
 - id: c2c98710a282be10
   filename: E-Notice - Austin (1).pdf

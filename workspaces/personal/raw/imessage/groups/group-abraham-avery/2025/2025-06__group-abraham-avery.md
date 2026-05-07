@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-06-19T13:12:59.969000-05:00'
   sha256: 3772be69b0382f02e8fb8e6f09174b8c6855897f0c231780c115888d84a98729
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of a Costco Pharmacy "CV menu" group showing a pending
+    join request.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:06:53.450394+00:00'
   source_available: true
 - id: 305db1718fd935ef
   filename: IMG_0136.PNG

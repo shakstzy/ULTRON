@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2026-03-11T12:22:49.291222-05:00'
   sha256: 731d4bfa985d74557fcedccee24bc6736b241d52afcf3450b25b024624b92728
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Amazon order tracking for sim racing gear including a wheel, shifters,
+    and pedals.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:04:36.105995+00:00'
   source_available: true
 - id: 96412649fb91459b
   filename: 4E8EF516-4A2E-4CD3-B092-E9FE9EC93ACB.pluginPayloadAttachment

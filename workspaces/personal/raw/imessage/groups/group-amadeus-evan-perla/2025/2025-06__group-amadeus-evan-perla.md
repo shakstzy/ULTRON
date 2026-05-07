@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-06-10T13:24:14.468903-05:00'
   sha256: 0b61da09a916a4909043f0aa260a0cf0f02e9ecac43c15b728b321424634895d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Chat screenshot of Perla Garcia providing her phone number to schedule
+    a property tour.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:05:35.119337+00:00'
   source_available: true
 chat_message_guids_count: 16
 deleted_upstream: null

@@ -82,9 +82,10 @@ attachments:
   sender: saif-ali-nyc
   sent_at: '2024-03-22T13:52:32.389171-05:00'
   sha256: 1396381486b40529eb82893861091c0d429595c910feb2aaa0dce8a8251526e0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Six Heineken bottles, a green opener, Aquaphor, a black bag, and a
+    booklet on a black desk.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:09:11.184362+00:00'
   source_available: true
 - id: 7926aa3e4f6b8c20
   filename: 73287655704__D8304536-FF39-4EEE-AA07-03950B4556CE.fullsizerender.jpeg
@@ -142,9 +143,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2024-03-24T01:35:00.095557-05:00'
   sha256: c4d1dcfa4881e8933a198ad2763bf85289a43b03a7868f620152d6e8174bb343
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men in winter coats pose indoors; one wears grey tweed, the other
+    wears black with a scarf.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:09:26.449360+00:00'
   source_available: true
 - id: 130fcf69d49af603
   filename: IMG_4022.jpeg
@@ -189,9 +191,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2024-03-24T01:35:00.095557-05:00'
   sha256: 08f3393b48b2d274ea9bb8e767c7622f2f16a406fb2a8296e8d9df574ac2a199
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Five young men posing together in Amsterdam's Waterlooplein subway
+    station.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:09:32.178551+00:00'
   source_available: true
 - id: 93c26b4450b09cc3
   filename: IMG_4014.jpeg
@@ -247,9 +250,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2024-03-24T01:35:00.095557-05:00'
   sha256: 050e489a805ce5ec96eae938bb9f03d6f10b196a75dcb60d3d122841b6b91f21
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man laughs while filming someone grabbing multiple bottled drinks
+    from a cafe's display case.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:09:38.855036+00:00'
   source_available: true
 - id: 18db5724f76f9810
   filename: IMG_4009.jpeg
@@ -270,9 +274,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2024-03-24T01:35:00.095557-05:00'
   sha256: 2e3c1d477719a8e7f6612a3c3ed02e90f368d20fe2a2230279afb25d43cc2058
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Five young men pose together at the Waterlooplein metro station in
+    Amsterdam.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:09:23.679528+00:00'
   source_available: true
 - id: f0416d0a48407365
   filename: 73295684085__D9D01801-12E0-493C-93E5-9882F9E031C7.jpeg
@@ -293,9 +298,10 @@ attachments:
   sender: phone-+18186963499
   sent_at: '2024-03-24T04:21:37.312764-05:00'
   sha256: 67ad7e489701a69f690931c88508377399e864eab46a9e5938246ccfbd56e9d5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Framed 1888 self-portrait of Charles Laval on a museum wall with a
+    descriptive label.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:09:32.384581+00:00'
   source_available: true
 - id: 558114b463f90085
   filename: IMG_1999.jpg
@@ -316,9 +322,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2024-03-24T17:31:22.931852-05:00'
   sha256: 309af557a9d1329f2eecb71b9f16580609a9d075c6fd601d9a3dc2a168d85d6a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hand holding a locker receipt for Escape Amsterdam with locker 0393
+    and PIN 0716.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:09:33.169900+00:00'
   source_available: true
 - id: b8a8745c7234339b
   filename: Omio_Print_Tickets_FTFSRNF.pdf
@@ -484,9 +491,10 @@ attachments:
   sender: me
   sent_at: '2024-03-27T23:51:12.857174-05:00'
   sha256: db1b3dfa7e8ae092682468c5db6ad27db8a7747b63c82082e5403d13b168df05
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Glass bong, water bottle, and sunglasses on a blue car roof at night
+    near a Wells Fargo.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:09:36.443385+00:00'
   source_available: true
 - id: d6bba8e601cd1bec
   filename: IMG_1425.jpg
@@ -519,9 +527,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2024-03-29T21:58:40.377068-05:00'
   sha256: 29f6077797e13609d204bb651bce001860b172682b81648126dbf54290bf5b61
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a red hoodie and dark jacket holds a blue beer can in a low-angle
+    selfie.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:09:47.785187+00:00'
   source_available: true
 - id: a12b73f25412f69e
   filename: IMG_8492.jpeg

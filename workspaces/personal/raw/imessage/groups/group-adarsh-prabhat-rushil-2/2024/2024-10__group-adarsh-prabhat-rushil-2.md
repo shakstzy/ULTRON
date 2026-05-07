@@ -22,9 +22,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2024-10-05T15:25:23.974788-05:00'
   sha256: 336b8b9eb925259f256a3ed37fe089406c976a713f152188e8050347a31bd176
-  description: null
-  description_model: null
-  extracted_at: null
+  description: TikTok screenshot of a boy holding a "WOKE VS. COKE" sign at a Cal
+    football game.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:05:28.573613+00:00'
   source_available: true
 chat_message_guids_count: 2
 deleted_upstream: null

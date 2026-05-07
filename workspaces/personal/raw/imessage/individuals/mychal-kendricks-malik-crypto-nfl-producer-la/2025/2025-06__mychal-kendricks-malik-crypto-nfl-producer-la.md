@@ -177,9 +177,10 @@ attachments:
   sender: me
   sent_at: '2025-06-23T00:09:41.869000-05:00'
   sha256: 9aa2389bc093d54b1f5cca3c83ccc22ec2205c812399983aec0d5b2e83202b89
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A screen recording of incriminating iMessages discovered by the user's
+    partner on his phone.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T03:58:54.340651+00:00'
   source_available: true
 - id: 96d2a6cdaf61273f
   filename: 77235695813__A717707E-5F01-46B5-88D4-42B77DE39D63.HEIC
@@ -200,9 +201,10 @@ attachments:
   sender: me
   sent_at: '2025-06-23T03:15:39.518000-05:00'
   sha256: 9aa2389bc093d54b1f5cca3c83ccc22ec2205c812399983aec0d5b2e83202b89
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A screen recording of incriminating iMessages discovered by the user's
+    partner on his phone.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T03:58:54.340651+00:00'
   source_available: true
 - id: 42ef6d0ea6a30c03
   filename: IMG_9996.DNG

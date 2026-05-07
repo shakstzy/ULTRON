@@ -22,9 +22,9 @@ attachments:
   sender: me
   sent_at: '2025-08-20T13:22:03.142189-05:00'
   sha256: bf36fe0e4693219c415a0ae5e7b0f008b3fd950ccdbd5182d96289ad3cd22cc3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Trash bags and cardboard boxes piled on top of a blue car in a garage.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:05:29.128332+00:00'
   source_available: true
 chat_message_guids_count: 8
 deleted_upstream: null

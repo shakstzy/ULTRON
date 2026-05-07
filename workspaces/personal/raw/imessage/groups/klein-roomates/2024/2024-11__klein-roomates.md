@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-11-07T19:41:05.250682-06:00'
   sha256: 9804915297985180b0c88e4e6536bc1f98672ceb214edb00f8042c8b5861d901
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Email from Mack Hodges to Adithya regarding vehicle info for guest
+    parking codes.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:06:53.057128+00:00'
   source_available: true
 - id: a2cc542dec02be91
   filename: Vehicle Information Form Fillable.pdf
@@ -33,9 +34,11 @@ attachments:
   sender: me
   sent_at: '2024-11-07T19:42:44.811560-06:00'
   sha256: b154ae4c9f9a5e0ee6bc43102f2f11def7e36279ffdcfc6ce65949173becf438
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a vehicle information form for the Tovara Community Association.
+    It collects resident contact details and vehicle specs for property management
+    records.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:06:57.125002+00:00'
   source_available: true
 chat_message_guids_count: 22
 deleted_upstream: null

@@ -34,9 +34,10 @@ attachments:
   sender: evan-renter
   sent_at: '2024-10-08T12:46:57.274020-05:00'
   sha256: 231b8048d177ebea6383a44bf054d5fd2ddc2a660686ac025b101a4e6f669028
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dirty dishes in a kitchen sink beside white cabinets and a patterned
+    rug.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:06:31.313940+00:00'
   source_available: true
 - id: fff0c19f27944d70
   filename: 75010219616__A5D06F63-F497-4B6A-AA74-917668534359.jpeg
@@ -57,9 +58,10 @@ attachments:
   sender: evan-renter
   sent_at: '2024-10-14T13:13:37.051522-05:00'
   sha256: b97bdb5a30c2f2f7bc82fc89b32714dee7a4d5c8fb72884db499ef931dd3ab48
-  description: null
-  description_model: null
-  extracted_at: null
+  description: White kitchen cabinets and a sink with a black dish rack next to a
+    grey patterned runner rug.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:06:30.727674+00:00'
   source_available: true
 - id: e5394dfba4204048
   filename: IMG_3692.MOV
@@ -68,9 +70,10 @@ attachments:
   sender: evan-renter
   sent_at: '2024-10-14T13:13:37.051522-05:00'
   sha256: bfb9fe4f401fa0613652da20095e3f7778b0710babd8009a19c3658411e79745
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Handheld video of a kitchen with a gas stove, small appliances, and
+    a sink full of dishes.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:06:46.395324+00:00'
   source_available: true
 - id: fdc5af5220f5d5ac
   filename: IMG_3689.jpeg

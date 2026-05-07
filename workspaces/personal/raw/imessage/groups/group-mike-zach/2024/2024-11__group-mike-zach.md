@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-11-23T01:28:15.532000-06:00'
   sha256: bb863dbf3c636e36f889845c1bfd8d3e8faf89dffb57907967ed5e70ee804daa
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Four smiling young men in casual summer attire stand at a restaurant
+    entrance.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:03:47.857618+00:00'
   source_available: true
 chat_message_guids_count: 1
 deleted_upstream: null

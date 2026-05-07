@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-01-03T20:30:34.263000-06:00'
   sha256: 7f708f23b8036a2eef64073a45e3f0815140396fdd39357e466700d774bf2b3c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Night view of an Austin street with sidewalk trees, a Chase bank, and
+    The Iron Bear bar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:06:13.862662+00:00'
   source_available: true
 - id: 976979013b5a1f68
   filename: IMG_4338.mov
@@ -81,9 +82,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2025-01-05T01:58:57.996306-06:00'
   sha256: 062647eeaab6d2ac423b76810166587bf6a463c216a1c14ceaa1281f69328e28
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man poses on a giant jackalope statue inside a red-lit bar in Austin,
+    Texas.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:06:25.855113+00:00'
   source_available: true
 - id: 530508589786e9fb
   filename: IMG_4339.mov
@@ -140,9 +142,10 @@ attachments:
   sender: me
   sent_at: '2025-01-05T11:53:29.358000-06:00'
   sha256: 16c1d4cb5ee1188c355ac7e1e0d63b3410f46155702712f927819c150ad4f4a8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iOS Messages search results for 'Pseu' showing chat history with Rushil
+    Jha and Unkal.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:06:22.863110+00:00'
   source_available: true
 chat_message_guids_count: 28
 deleted_upstream: null

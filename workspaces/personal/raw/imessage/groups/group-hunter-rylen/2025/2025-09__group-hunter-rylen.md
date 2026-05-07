@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-09-18T15:21:12.946769-05:00'
   sha256: faba049e5771f82ea62285206d856cb303b119577acab1aec8cc813f89675fcd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'iMessage screenshot: Caitlin confirms the stu is open tomorrow, Friday,
+    and Saturday.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:04:32.722974+00:00'
   source_available: true
 chat_message_guids_count: 19
 deleted_upstream: null

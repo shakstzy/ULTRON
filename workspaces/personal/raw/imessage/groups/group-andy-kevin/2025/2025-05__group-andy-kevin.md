@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-05-12T13:36:15.451332-05:00'
   sha256: 756475ea18b445e7029be450338fcb6da08200036661e5482390b502e3edb0c9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: AWS VIP Welcome Reception invite for Consensus 2025 in Toronto featuring
+    an AWS hockey puck.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:07:07.446722+00:00'
   source_available: true
 - id: efb1769492a2c17b
   filename: IMG_9161.PNG

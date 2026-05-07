@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-07-01T16:32:57.797000-05:00'
   sha256: 99d15ed6a74c55235ac6823f1cb55ce53da60e2696df854a9834c7d9e24f89da
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Delivery app screenshot showing a pickup at 41 Peppermint Rd and a
+    Burger King meal ad.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:07:04.814391+00:00'
   source_available: true
 - id: 1047b919b85eeb65
   filename: IMG_0232.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-07-01T16:34:55.431000-05:00'
   sha256: 4a4d93fa0adce954a93b8a7f35e94f2c17561faf6fd96cbd98397dd8d542d5b1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Uber screenshot: black Toyota RAV4 (HUY7848) picking up a package
+    at 41 Peppermint Rd in 4 min.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:07:23.087513+00:00'
   source_available: true
 - id: c96fdfaceb16ed7c
   filename: IMG_5809.png
@@ -68,9 +70,10 @@ attachments:
   sender: me
   sent_at: '2025-07-29T00:41:46.490000-05:00'
   sha256: f53d52d00252abe49befcf7de582f659f9708a321b2c1c20c18b5e4cceee6264
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Seedboxlabs CRM sales dashboard listing NEAR and Maveron with VC tags
+    and pipeline stages.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:07:09.616011+00:00'
   source_available: true
 - id: 472b15ddfbb38f71
   filename: IMG_0422.png

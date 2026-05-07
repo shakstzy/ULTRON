@@ -34,9 +34,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2025-08-12T20:34:30.842863-05:00'
   sha256: 0fa498c517f9dbeea96c812ca997f21f51ef3e9e2e77f56ab2048926af15bf37
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Noah smiles next to his custom-built gaming PC in a 2018 Facebook post
+    screenshot.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:04:01.243761+00:00'
   source_available: true
 chat_message_guids_count: 31
 deleted_upstream: null

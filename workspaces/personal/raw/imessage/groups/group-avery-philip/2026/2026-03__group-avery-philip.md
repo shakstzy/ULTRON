@@ -33,9 +33,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-03-17T19:42:35.044275-05:00'
   sha256: b5273c6df7a9c032132b32c46a2fb17ee3d80c58be0fbbcb435198d8ab661d97
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of a FaceTime call to Springna Zhao with two men
+    in a Tesla.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:09:45.163255+00:00'
   source_available: true
 - id: 0ad566ead79ef247
   filename: IMG_5725.heic
@@ -68,9 +69,10 @@ attachments:
   sender: me
   sent_at: '2026-03-18T17:31:10.562797-05:00'
   sha256: 7eebbf93875b019c526b9a57b331adabd9445bc77cf2dba8a76bdfef647d7ef4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screen displaying several Luma links for NVIDIA GTC 2026 happy
+    hour events.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:09:42.436065+00:00'
   source_available: true
 chat_message_guids_count: 36
 deleted_upstream: null

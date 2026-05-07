@@ -102,9 +102,10 @@ attachments:
   sender: me
   sent_at: '2024-04-29T22:55:03.727000-05:00'
   sha256: 520aeb0175ab936d4073c0e548c21fab4d6f139f68b897909e8830067779af40
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A grid of eight social media video thumbnails with view counts and
+    song lyric overlays.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:05:48.808051+00:00'
   source_available: true
 chat_message_guids_count: 141
 deleted_upstream: null

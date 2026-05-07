@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-06-25T16:01:24.368000-05:00'
   sha256: 4026004aea9fcd618a1734e0fba43e907555a72912db6187e3c81ea3c4e0be35
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram profile for Halsey | MoonPay with phone +1 203 516 8398 and
+    username @halseyh.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:03:52.920473+00:00'
   source_available: true
 chat_message_guids_count: 2
 deleted_upstream: null

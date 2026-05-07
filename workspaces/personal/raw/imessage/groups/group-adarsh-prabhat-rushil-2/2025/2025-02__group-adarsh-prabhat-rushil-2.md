@@ -81,9 +81,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-02-15T23:14:25.695383-06:00'
   sha256: 3773763e60d20bca5620cd5a822eb1ca209486b41ddf27ea647b1fd146eece4d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Venmo profile for Tor Demuth-Gordon showing payments for clubbing,
+    tutoring, and a haircut.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:04:59.741799+00:00'
   source_available: true
 - id: 1542f6f9a470b8d4
   filename: 76176932814__370E1E48-8FEA-42C2-9893-1B178EE41F86.fullsizerender.HEIC

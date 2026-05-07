@@ -93,9 +93,10 @@ attachments:
   sender: me
   sent_at: '2025-01-23T20:58:52.121234-06:00'
   sha256: 8d8edb44cf28cfbedb802a19589b4b083f70fd4450b4e2d818d4d304e7bf1c61
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google APM1 compensation breakdown showing $163,482 average pay and
+    PM level hierarchy.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:04:54.112145+00:00'
   source_available: true
 - id: 4ebfcd2ae980f5a7
   filename: IMG_9932.gif
@@ -115,9 +116,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-01-24T16:31:45.745314-06:00'
   sha256: f50b880cd67602fb2144dd19d6ecc23427d863f207bd85c9f3c50092071b0e86
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LinkedIn 'People you may know' list for Sunya Abbasi, Natalie Whitsel,
+    and Jordan Archuleta.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:06:13.858740+00:00'
   source_available: true
 - id: 62875412cf86d64d
   filename: 75954502164__62C20223-9AE6-444C-AF28-D260B8071445.heic

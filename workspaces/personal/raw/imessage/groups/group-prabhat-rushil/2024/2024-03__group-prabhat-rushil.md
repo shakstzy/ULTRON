@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-03-22T06:18:11.197621-05:00'
   sha256: 7480da7328a8e54478238e1ae8442df148e2a56b8bbc4de97bb6615c1813cc61
-  description: null
-  description_model: null
-  extracted_at: null
+  description: The Hash Marihuana & Hemp Museum storefront illuminated at night in
+    Amsterdam.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:06:43.101160+00:00'
   source_available: true
 - id: 986c3bb7c04e9e06
   filename: IMG_7253.heic

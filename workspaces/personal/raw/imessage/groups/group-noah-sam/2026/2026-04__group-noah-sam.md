@@ -274,9 +274,10 @@ attachments:
   sender: sam-garcia
   sent_at: '2026-04-22T03:16:11.569118-05:00'
   sha256: 2acda1cc31ec4e0639b2ac60bddb6893e9c15f93dec2406f3465edf5bd045978
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google search results for "ina thea" showing news mugshots and a FaceTime
+    overlay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:04:08.613061+00:00'
   source_available: true
 - id: 7e9e8c39f7b5c43c
   filename: 20A4C4AF-317D-4027-A5C4-CF96A4C4C68D.pluginPayloadAttachment
@@ -440,9 +441,9 @@ attachments:
   sender: sam-garcia
   sent_at: '2026-04-30T22:50:42.092425-05:00'
   sha256: e66564af465c176379feee6c2af4abdc56ff421991fc1145db8082c46ec7aab1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A rose-gold metallic angel wing pendant held in the palm of a hand.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:05:19.524036+00:00'
   source_available: true
 - id: 84b6952871afa7f8
   filename: 886D9945-6BA5-4D1E-9AAD-4376CDC97AE8.pluginPayloadAttachment

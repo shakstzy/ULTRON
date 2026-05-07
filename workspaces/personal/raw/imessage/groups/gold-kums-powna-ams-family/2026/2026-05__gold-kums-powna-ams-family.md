@@ -82,9 +82,10 @@ attachments:
   sender: mom
   sent_at: '2026-05-01T18:46:35-05:00'
   sha256: 242d3ce68b730c4356b7394a5518362cb2cbfa7ffcc261c8642aa3bf5504a752
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling woman and a boy in an Abercrombie polo making a bug-eyed,
+    toothy face.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:03:33.964829+00:00'
   source_available: true
 - id: e2f58180bb3ed2e5
   filename: 1000219359.jpg
@@ -229,9 +230,9 @@ attachments:
   sender: me
   sent_at: '2026-05-02T17:40:20.659217-05:00'
   sha256: ab6e4c850301068ec78e51b190fa62fff666563461dfdcd26877d1f6aefe8bd3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Woman in a purple shirt using a Technogym low row machine in a gym.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:04:29.424272+00:00'
   source_available: true
 - id: 6c1aab0cc203a70a
   filename: IMG_8390.HEIC
@@ -274,9 +275,10 @@ attachments:
   sender: me
   sent_at: '2026-05-02T17:40:20.686382-05:00'
   sha256: 3ef9a406a46a2faa346d97f48124eb8eae32c3a2274463fc480fcf6d3737530b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Woman in a lilac shirt performs single-arm seated rows on a Technogym
+    machine.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:03:31.016961+00:00'
   source_available: true
 - id: 21241ef45e392248
   filename: IMG_8392.MOV
@@ -342,9 +344,10 @@ attachments:
   sender: mom
   sent_at: '2026-05-03T13:36:58-05:00'
   sha256: 87bee73cf57af9979cc62f2792c130481e67d585e7c27fa6e5787f4a39b806cf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LASA Class of 2026 graduation flyer listing event dates, deadlines,
+    and celebration details.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:03:35.582638+00:00'
   source_available: true
 - id: d15529d75c483add
   filename: PXL_20260503_222658981.jpg

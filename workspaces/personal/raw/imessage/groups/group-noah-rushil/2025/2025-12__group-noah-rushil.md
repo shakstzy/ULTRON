@@ -22,9 +22,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2025-12-26T20:05:30.644656-06:00'
   sha256: 6f11a7a86ae0b9cd8710313bab4552ce5a1093e31f98627d8eb2f67d541b7742
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Find My app screenshot showing location at Legacy West, 7800 Windrose
+    Ave, Plano, TX.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:05:37.417249+00:00'
   source_available: true
 chat_message_guids_count: 53
 deleted_upstream: null

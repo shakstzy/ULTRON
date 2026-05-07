@@ -69,9 +69,9 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-07-18T20:37:14.812644-05:00'
   sha256: 69e9f5578834f9b065e49c2026d71a72bf5f4648ac6c5a5894de37f62695e5db
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling person wearing a black "LAYER N" hoodie and "N" cap on a boat.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:03:40.899126+00:00'
   source_available: true
 - id: 0a460af0e316b5e6
   filename: IMG_7559.PNG
@@ -80,9 +80,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-07-18T20:37:18.884501-05:00'
   sha256: 1b9d1e9cb470228600a82a0b2b644d60393ffa26f88492bd8f95621bfaba6ea7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Back view of a person with dark hair wearing a long black coat near
+    a pond.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:05:06.318172+00:00'
   source_available: true
 chat_message_guids_count: 82
 deleted_upstream: null

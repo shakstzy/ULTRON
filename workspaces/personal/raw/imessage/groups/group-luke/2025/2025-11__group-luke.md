@@ -22,9 +22,10 @@ attachments:
   sender: phone-+16618022218
   sent_at: '2025-11-17T16:38:37.099248-06:00'
   sha256: f0f76dfb514b6eab0fc0bf5dc7f74996bf09bc2306ce974c3ea771f41fb9e869
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A QR code for attendance and a bitly link projected on a screen in
+    a lecture hall.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:03:58.730529+00:00'
   source_available: true
 chat_message_guids_count: 23
 deleted_upstream: null

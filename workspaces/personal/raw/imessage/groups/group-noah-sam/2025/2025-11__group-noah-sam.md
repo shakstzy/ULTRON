@@ -22,9 +22,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2025-11-17T18:30:02.422779-06:00'
   sha256: 8b5e0bd10d5782c7b1de850931634cc668d93bd837e0e4f4222d5e9b6307f51e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three young men smiling in front of a stone archway inscribed with
+    Latin text.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T04:03:54.438841+00:00'
   source_available: true
 chat_message_guids_count: 23
 deleted_upstream: null

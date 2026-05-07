@@ -1,0 +1,1577 @@
+---
+type: graph-audit
+generated_at: 2026-05-07T21:03:12+00:00
+scope: all
+total_items: 765
+---
+
+# Graph Audit — 2026-05-07 — all
+
+Mark each item then run `apply-audit.py` on this file.
+
+**Markers:**
+- `[x]` confirm (upgrade INFERRED→EXTRACTED, or keep edge as-is)
+- `[!]` reject (remove edge + blacklist this exact (src, rel, tgt) from future inference)
+- `[?]` still ambiguous (keep, will be re-surfaced on next audit pass)
+- `[ ]` unchecked (no decision yet — will be re-surfaced next pass)
+
+**Inline overrides** (after the edge line, on the same line):
+- ` → new_relation` to relabel the edge
+- ` ↔ flip` to reverse direction
+- ` ⇒ correct_target_slug` to redirect to a different target node
+
+## Workspace: `eclipse` (55 items)
+
+### Direction-suspect (institution acting as person, etc.) (26)
+
+- [ ] `Eclipse Labs` —`works_at`→ `Danny` (EXTRACTED 1.0) — slack/eclipse/channels/general/_profile.md
+  - <!-- eclipse | eclipse-labs | works_at | danny -->
+- [ ] `Eclipse Labs` —`works_at`→ `Fluffle` (INFERRED 0.7) — slack/eclipse/channels/engineering/2026/03/2026-03-30__engin
+  - <!-- eclipse | eclipse-labs | works_at | fluffle -->
+- [ ] `Eclipse Labs` —`works_at`→ `David` (EXTRACTED 1.0) — slack/eclipse/channels/general/2026/02/2026-02-10__general.m
+  - <!-- eclipse | eclipse-labs | works_at | david -->
+- [ ] `Eclipse Labs` —`works_at`→ `Alex Petrosyan` (EXTRACTED 1.0) — slack/eclipse/channels/engineering/2025/07/2025-07-11__engin
+  - <!-- eclipse | eclipse-labs | works_at | alex-petrosyan -->
+- [ ] `Eclipse Labs` —`works_at`→ `Yuri Albuquerque` (EXTRACTED 1.0) — slack/eclipse/channels/engineering/2025/08/2025-08-20__engin
+  - <!-- eclipse | eclipse-labs | works_at | yuri-albuquerque -->
+- [ ] `Eclipse Labs` —`works_at`→ `Samadhi (Jay)` (EXTRACTED 1.0) — slack/eclipse/channels/engineering/2025/07/2025-07-11__engin
+  - <!-- eclipse | eclipse-labs | works_at | samadhi-jay -->
+- [ ] `Eclipse Labs` —`works_at`→ `Michael Winters` (EXTRACTED 1.0) — slack/eclipse/channels/engineering/2025/09/2025-09-02__engin
+  - <!-- eclipse | eclipse-labs | works_at | michael -->
+- [ ] `Eclipse Labs` —`works_at`→ `Rob Hitchens` (EXTRACTED 1.0) — slack/eclipse/channels/engineering/2025/07/2025-07-11__engin
+  - <!-- eclipse | eclipse-labs | works_at | rob -->
+- [ ] `Eclipse Labs` —`works_at`→ `Olivier Desenfans` (EXTRACTED 1.0) — slack/eclipse/channels/engineering/2025/07/2025-07-16__engin
+  - <!-- eclipse | eclipse-labs | works_at | olivier-desenfans -->
+- [ ] `Eclipse Labs` —`works_at`→ `Anmol Arora` (EXTRACTED 1.0) — slack/eclipse/channels/engineering/2025/07/2025-07-27__engin
+  - <!-- eclipse | eclipse-labs | works_at | anmol -->
+- [ ] `Eclipse Labs` —`works_at`→ `Nagu` (EXTRACTED 1.0) — slack/eclipse/channels/engineering/2025/08/2025-08-20__engin
+  - <!-- eclipse | eclipse-labs | works_at | nagu -->
+- [ ] `Eclipse Labs` —`works_at`→ `Ben` (EXTRACTED 1.0) — slack/eclipse/channels/engineering/2025/07/2025-07-23__engin
+  - <!-- eclipse | eclipse-labs | works_at | ben -->
+- [ ] `Eclipse Labs` —`works_at`→ `Djordje Simovic` (EXTRACTED 1.0) — slack/eclipse/channels/engineering/2025/05/2025-05-09__engin
+  - <!-- eclipse | eclipse-labs | works_at | djordje-simovic -->
+- [ ] `Eclipse Labs` —`works_at`→ `Fikunmi Ajayi-Peters` (EXTRACTED 1.0) — slack/eclipse/channels/engineering/2025/07/2025-07-16__engin
+  - <!-- eclipse | eclipse-labs | works_at | fikunmi -->
+- [ ] `Eclipse Labs` —`works_at`→ `Bernhard Kauer` (EXTRACTED 1.0) — slack/eclipse/channels/engineering/2025/07/2025-07-30__engin
+  - <!-- eclipse | eclipse-labs | works_at | bernhard-kauer -->
+- [ ] `Eclipse Labs` —`works_at`→ `Vijay` (EXTRACTED 1.0) — slack/eclipse/channels/engineering/2025/08/2025-08-04__engin
+  - <!-- eclipse | eclipse-labs | works_at | vijay -->
+- [ ] `Eclipse Labs` —`works_at`→ `Jess Choi` (EXTRACTED 1.0) — slack/eclipse/channels/engineering/2025/05/2025-05-13__engin
+  - <!-- eclipse | eclipse-labs | works_at | jess-choi -->
+- [ ] `Eclipse Labs` —`works_at`→ `Supragya Raj` (EXTRACTED 1.0) — slack/eclipse/channels/engineering/2025/08/2025-08-11__engin
+  - <!-- eclipse | eclipse-labs | works_at | supragya-raj -->
+- [ ] `Eclipse Labs` —`works_at`→ `Dilkash Bichu` (EXTRACTED 1.0) — slack/eclipse/channels/engineering/2025/05/2025-05-19__engin
+  - <!-- eclipse | eclipse-labs | works_at | dkb -->
+- [ ] `Eclipse Labs` —`works_at`→ `Cooper Kernan` (EXTRACTED 1.0) — slack/eclipse/channels/engineering/2025/08/2025-08-04__engin
+  - <!-- eclipse | eclipse-labs | works_at | cooper -->
+- [ ] `Eclipse Labs` —`works_at`→ `Bulat Nasrulin` (EXTRACTED 1.0) — slack/eclipse/channels/engineering/2025/06/2025-06-10__engin
+  - <!-- eclipse | eclipse-labs | works_at | bulat-nasrulin -->
+- [ ] `Eclipse Labs` —`works_at`→ `Terry` (EXTRACTED 1.0) — slack/eclipse/channels/engineering/2025/07/2025-07-27__engin
+  - <!-- eclipse | eclipse-labs | works_at | terry -->
+- [ ] `Eclipse Labs` —`works_at`→ `Ren Yu Kong` (EXTRACTED 1.0) — slack/eclipse/channels/engineering/2025/10/2025-10-02__engin
+  - <!-- eclipse | eclipse-labs | works_at | ren-yu-kong -->
+- [ ] `Eclipse Labs` —`works_at`→ `Johnny` (EXTRACTED 1.0) — slack/eclipse/channels/engineering/2025/08/2025-08-04__engin
+  - <!-- eclipse | eclipse-labs | works_at | johnny -->
+- [ ] `Eclipse Labs` —`works_at`→ `Ben Livshits` (EXTRACTED 1.0) — slack/eclipse/channels/engineering/2025/08/2025-08-25__engin
+  - <!-- eclipse | eclipse-labs | works_at | ben-livshits -->
+- [ ] `Eclipse Labs` —`works_at`→ `THANOS` (EXTRACTED 1.0) — slack/eclipse/channels/general/_profile.md
+  - <!-- eclipse | eclipse-labs | works_at | thanos -->
+
+### AMBIGUOUS edges (graphify uncertain) (1)
+
+- [ ] `David AI` —`conceptually_related_to`→ `Babel Audio` (AMBIGUOUS 0.3) — slack/eclipse/channels/app-team/2026/04/2026-04-29__app-team
+  - <!-- eclipse | david-ai | conceptually_related_to | babel-audio -->
+
+### Low-confidence INFERRED (below threshold) (28)
+
+- [ ] `Julien Tregoat` —`discusses`→ `Ignite Logo Flash + Loading Screen Misalignment Bug` (INFERRED 0.7) — slack/eclipse/channels/app-team/2026/03/2026-03-17__app-team
+  - <!-- eclipse | julien | discusses | ignite-logo-flash-bug -->
+- [ ] `VJ (Vedant)` —`creator_of`→ `Wallet screenrecord asset for creators` (INFERRED 0.7) — slack/eclipse/channels/eclipse-ugc/2026/04/2026-04-08__eclip
+  - <!-- eclipse | vj | creator_of | ugc-wallet-screenrecord -->
+- [ ] `Human API (product positioning)` —`semantically_similar_to`→ `RentAHuman` (INFERRED 0.75) — slack/eclipse/channels/app-team/2026/02/2026-02-24__app-team
+  - <!-- eclipse | human_api | semantically_similar_to | rentahuman -->
+- [ ] `Claude Opus 4.5` —`semantically_similar_to`→ `Gemini (Google LLM)` (INFERRED 0.7) — slack/eclipse/channels/app-team/2026/02/2026-02-04__app-team
+  - <!-- eclipse | opus_45 | semantically_similar_to | gemini_model -->
+- [ ] `Claude Code` —`conceptually_related_to`→ `Claude Extension for Chrome` (INFERRED 0.8) — slack/eclipse/channels/engineering/2026/03/2026-03-27__engin
+  - <!-- eclipse | claude_code | conceptually_related_to | claude-extension-chrome -->
+- [ ] `ALAC lossless audio format` —`conceptually_related_to`→ `Mono Audio Recording (voice preference)` (INFERRED 0.7) — slack/eclipse/channels/app-team/2026/02/2026-02-20__app-team
+  - <!-- eclipse | alac_format | conceptually_related_to | mono_audio_recording -->
+- [ ] `Eclipse Labs` —`deal_with`→ `Cartesia` (INFERRED 0.8) — slack/eclipse/channels/general/2026/03/2026-03-03__general.m
+  - <!-- eclipse | eclipse-labs | deal_with | cartesia -->
+- [ ] `Eclipse Labs` —`deal_with`→ `Hume` (INFERRED 0.8) — slack/eclipse/channels/general/2026/03/2026-03-03__general.m
+  - <!-- eclipse | eclipse-labs | deal_with | hume -->
+- [ ] `Eclipse Labs` —`customer_of`→ `OpenAI` (INFERRED 0.7) — slack/eclipse/channels/general/2026/03/2026-03-03__general.m
+  - <!-- eclipse | eclipse-labs | customer_of | openai -->
+- [ ] `OpenClaw` —`conceptually_related_to`→ `Playwright` (INFERRED 0.7) — slack/eclipse/channels/engineering/2026/03/2026-03-27__engin
+  - <!-- eclipse | openclaw | conceptually_related_to | playwright -->
+- [ ] `Messy/Naturalistic Audio Premium Thesis` —`conceptually_related_to`→ `First Batch of Voice Samples` (INFERRED 0.7) — slack/eclipse/channels/app-team/2026/03/2026-03-24__app-team
+  - <!-- eclipse | messy-audio-thesis | conceptually_related_to | vox-samples-batch-1 -->
+- [ ] `Veronica B (Fluffle)` —`works_at`→ `Fluffle` (INFERRED 0.8) — slack/eclipse/channels/app-team/2026/04/2026-04-02__app-team
+  - <!-- eclipse | veronica-b | works_at | fluffle -->
+- [ ] `Jaeden Schafer` —`discusses`→ `Podcast host onboarding for Microsoft deal` (INFERRED 0.7) — slack/eclipse/channels/app-team/2026/04/2026-04-15__app-team
+  - <!-- eclipse | jaeden-schafer | discusses | podcast-deal-onboarding -->
+- [ ] `Human API (app)` —`works_at`→ `Sharon Hou` (INFERRED 0.7) — slack/eclipse/channels/eclipse-ugc/2026/04/2026-04-22__eclip
+  - <!-- eclipse | human-api | works_at | sharon-hou -->
+- [ ] `Human API (app)` —`works_at`→ `Katie Xu` (INFERRED 0.7) — slack/eclipse/channels/eclipse-ugc/2026/04/2026-04-22__eclip
+  - <!-- eclipse | human-api | works_at | katie-xu -->
+- [ ] `Human API (app)` —`works_at`→ `Karen Dong` (INFERRED 0.8) — slack/eclipse/channels/eclipse-ugc/2026/04/2026-04-25__eclip
+  - <!-- eclipse | human-api | works_at | karen-dong -->
+- [ ] `Human API (app)` —`implements`→ `UGC Campaign` (INFERRED 0.8) — slack/eclipse/channels/eclipse-ugc/2026/04/2026-04-25__eclip
+  - <!-- eclipse | human-api | implements | ugc-campaign -->
+- [ ] `Fluffle` —`uses`→ `Speaker Diarization` (INFERRED 0.7) — slack/eclipse/channels/engineering/2026/03/2026-03-30__engin
+  - <!-- eclipse | fluffle | uses | speaker-diarization -->
+- [ ] `AWS` —`conceptually_related_to`→ `RockawayX` (INFERRED 0.7) — slack/eclipse/channels/engineering/2025/06/2025-06-04__engin
+  - <!-- eclipse | aws | conceptually_related_to | rockawayx -->
+- [ ] `Michael Winters` —`implements`→ `Eclipse ETH Bridge` (INFERRED 0.8) — slack/eclipse/channels/engineering/2025/09/2025-09-02__engin
+  - <!-- eclipse | michael | implements | eclipse-eth-bridge -->
+- [ ] `Chris (Alucard)` —`works_at`→ `Matrica` (INFERRED 0.6) — slack/eclipse/channels/engineering/2025/05/2025-05-21__engin
+  - <!-- eclipse | chris | works_at | matrica -->
+- [ ] `Agave` —`semantically_similar_to`→ `solar-eclipse` (INFERRED 0.8) — slack/eclipse/channels/engineering/2025/05/2025-05-09__engin
+  - <!-- eclipse | agave | semantically_similar_to | solar-eclipse -->
+- [ ] `Backpack` —`semantically_similar_to`→ `L2Beat` (INFERRED 0.6) — slack/eclipse/channels/engineering/2025/05/2025-05-29__engin
+  - <!-- eclipse | backpack | semantically_similar_to | l2beat -->
+- [ ] `Syzygy` —`uses`→ `actix-web` (INFERRED 0.7) — slack/eclipse/channels/engineering/2025/08/2025-08-11__engin
+  - <!-- eclipse | syzygy | uses | actix-web -->
+- [ ] `RockawayX` —`conceptually_related_to`→ `Latitude` (INFERRED 0.7) — slack/eclipse/channels/engineering/2025/06/2025-06-04__engin
+  - <!-- eclipse | rockawayx | conceptually_related_to | latitude -->
+- [ ] `Gemini CLI` —`semantically_similar_to`→ `Ollama` (INFERRED 0.7) — slack/eclipse/channels/engineering/2025/06/2025-06-25__engin
+  - <!-- eclipse | gemini-cli | semantically_similar_to | ollama -->
+- [ ] `ABK Labs` —`implements`→ `Faremeter` (INFERRED 0.7) — slack/eclipse/channels/engineering/2025/08/2025-08-25__engin
+  - <!-- eclipse | abk-labs | implements | faremeter -->
+- [ ] `Two-Channel Audio Feature` —`conceptually_related_to`→ `Speaker Diarization` (INFERRED 0.8) — slack/eclipse/channels/engineering/2026/03/2026-03-31__engin
+  - <!-- eclipse | two-channel-audio-feature | conceptually_related_to | speaker-diarization -->
+
+## Workspace: `personal` (710 items)
+
+### Direction-suspect (institution acting as person, etc.) (276)
+
+- [ ] `Akash (The House Fund, UC Berkeley)` —`works_at`→ `The House Fund (VC)` (EXTRACTED 1.0) — imessage/_profiles/akash-the-house-fund-uc-berkeley.md
+  - <!-- personal | akash_the_house_fund_uc_berkeley | works_at | the_house_fund -->
+- [ ] `Rusty Smith (a16z Recruiting)` —`works_at`→ `a16z Recruiting` (EXTRACTED 1.0) — gmail/adithya-outerscope/2026/05/2026-05-04__accepted-adithy
+  - <!-- personal | rusty_smith_a16z | works_at | a16z_recruiting -->
+- [ ] `Austin, TX` —`lives_in`→ `Dad (Kumar)` (EXTRACTED 1.0) — imessage/groups/group-dad-mom/2026/2026-03__group-dad-mom.md
+  - <!-- personal | austin_tx | lives_in | dad -->
+- [ ] `Austin, TX` —`lives_in`→ `Mom (Adithya's mother)` (EXTRACTED 1.0) — imessage/groups/group-dad-mom/2026/2026-03__group-dad-mom.md
+  - <!-- personal | austin_tx | lives_in | mom -->
+- [ ] `Austin, TX` —`lives_in`→ `Dravin` (EXTRACTED 1.0) — imessage/groups/group-dravin-edwin-hunter/2025/2025-10__grou
+  - <!-- personal | austin_tx | lives_in | dravin -->
+- [ ] `Austin, TX` —`lives_in`→ `Arya Kumar (Adithya's brother)` (INFERRED 0.9) — imessage/individuals/arya-kumar/2024/2024-05__arya-kumar.md
+  - <!-- personal | austin_tx | lives_in | arya_kumar -->
+- [ ] `Austin, TX` —`lives_in`→ `Arushi (LASA)` (INFERRED 0.8) — imessage/individuals/arushi-lasa/2025/2025-01__arushi-lasa.m
+  - <!-- personal | austin_tx | lives_in | arushi_lasa -->
+- [ ] `Austin, TX` —`lives_in`→ `Jake Garcia` (INFERRED 0.8) — imessage/individuals/jake-garcia/2026/2026-04__jake-garcia.m
+  - <!-- personal | austin_tx | lives_in | jake_garcia -->
+- [ ] `Austin, TX` —`lives_in`→ `Rushu (Hinge, Dallas)` (INFERRED 0.8) — imessage/individuals/rushu-hinge-dallas/2025/2025-04__rushu-
+  - <!-- personal | austin_tx | lives_in | rushu_hinge_dallas -->
+- [ ] `New York City` —`lives_in`→ `Farbin (NYC, Hinge)` (EXTRACTED 1.0) — imessage/individuals/farbin-nyc/2025/2025-06__farbin-nyc.md
+  - <!-- personal | nyc | lives_in | farbin_nyc -->
+- [ ] `New York City` —`lives_in`→ `Saif Ali (NYC)` (EXTRACTED 1.0) — imessage/_profiles/group-amsterdam.md
+  - <!-- personal | nyc | lives_in | saif_ali_nyc -->
+- [ ] `New York City` —`lives_in`→ `Rushil Jha` (EXTRACTED 1.0) — imessage/_profiles/group-group-noah-rushil.md
+  - <!-- personal | nyc | lives_in | rushil_jha -->
+- [ ] `New York City` —`lives_in`→ `Carlos Mychal Kendricks NYC Mets` (EXTRACTED 1.0) — imessage/_profiles/group-group-carlos-mychal.md
+  - <!-- personal | nyc | lives_in | carlos_mychal_kendricks_nyc_mets -->
+- [ ] `New York City` —`lives_in`→ `Saif Ali` (EXTRACTED 1.0) — imessage/_profiles/group-group-prabhat-rushil-saif.md
+  - <!-- personal | nyc | lives_in | saif_ali -->
+- [ ] `New York City` —`lives_in`→ `Risheek` (EXTRACTED 1.0) — imessage/_profiles/group-group-pseuhas-risheek-santosh.md
+  - <!-- personal | nyc | lives_in | risheek -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Amos (Music/Crypto, LA)` (EXTRACTED 1.0) — imessage/individuals/amos-music-crypto-la/2024/2024-03__amos
+  - <!-- personal | los_angeles | lives_in | amos_music_crypto_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Ana (Hinge, LA)` (EXTRACTED 1.0) — imessage/individuals/ana-hinge-la/2026/2026-02__ana-hinge-la
+  - <!-- personal | los_angeles | lives_in | ana_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Anabhra (Hinge, LA)` (INFERRED 0.8) — imessage/individuals/anabhra-hinge-la/2025/2025-08__anabhra-
+  - <!-- personal | los_angeles | lives_in | anabhra_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Andrew (Cedar, LA)` (INFERRED 0.8) — imessage/individuals/andrew-cedar-la/2025/2025-08__andrew-ce
+  - <!-- personal | los_angeles | lives_in | andrew_cedar_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Anna (Tinder, LA)` (EXTRACTED 1.0) — imessage/individuals/anna-tinder-la/2026/2026-03__anna-tinde
+  - <!-- personal | los_angeles | lives_in | anna_tinder_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Antara (Hinge, LA)` (INFERRED 0.8) — imessage/individuals/antara-hinge-la/2025/2025-05__antara-hi
+  - <!-- personal | los_angeles | lives_in | antara_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Anthony (Realtor, LA)` (INFERRED 0.8) — imessage/_profiles/anthony-realtor-la.md
+  - <!-- personal | los_angeles | lives_in | anthony_realtor_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Ariana (Hinge, LA / Tarzana)` (EXTRACTED 1.0) — imessage/individuals/ariana-hinge-la/2026/2026-02__ariana-hi
+  - <!-- personal | los_angeles | lives_in | ariana_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Arka (Hinge, LA / Westwood)` (EXTRACTED 1.0) — imessage/individuals/arka-hinge-la/2026/2026-02__arka-hinge-
+  - <!-- personal | los_angeles | lives_in | arka_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Arlene (Hinge, LA)` (INFERRED 0.8) — imessage/_profiles/arlene-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | arlene_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Armiyah (Hinge LA)` (INFERRED 0.8) — imessage/_profiles/armiyah-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | armiyah_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Arya (Hinge, LA)` (EXTRACTED 1.0) — imessage/individuals/arya-hinge-la/2025/2025-08__arya-hinge-
+  - <!-- personal | los_angeles | lives_in | arya_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Ash (Hinge, LA)` (INFERRED 0.9) — imessage/individuals/ash-hinge-la/2026/2026-02__ash-hinge-la
+  - <!-- personal | los_angeles | lives_in | ash_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Audrey (Hinge LA, -2366)` (INFERRED 0.8) — imessage/_profiles/audrey-hinge-la-2366.md
+  - <!-- personal | los_angeles | lives_in | audrey_hinge_la_2366 -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Audrey (Hinge LA, -9380)` (EXTRACTED 1.0) — imessage/individuals/audrey-hinge-la/2026/2026-02__audrey-hi
+  - <!-- personal | los_angeles | lives_in | audrey_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `B Ham (LA, Music)` (INFERRED 0.8) — imessage/individuals/b-ham-la/2025/2025-08__b-ham-la.md
+  - <!-- personal | los_angeles | lives_in | b_ham_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Ballr Hallr LA` (INFERRED 0.8) — imessage/_profiles/ballr-hallr-la.md
+  - <!-- personal | los_angeles | lives_in | ballr_hallr_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Bella (Tinder LA)` (INFERRED 0.8) — imessage/_profiles/bella-tinder-la-9157.md
+  - <!-- personal | los_angeles | lives_in | bella_tinder_la_9157 -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Ben Silver Lining LA` (INFERRED 0.8) — imessage/_profiles/ben-silver-lining-la.md
+  - <!-- personal | los_angeles | lives_in | ben_silver_lining_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Benti (Hinge, LA / USC)` (EXTRACTED 1.0) — imessage/individuals/benti-hinge-la-8721/2026/2026-02__benti
+  - <!-- personal | los_angeles | lives_in | benti_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Bibby Grade A LA` (INFERRED 0.8) — imessage/_profiles/bibby-grade-a-la.md
+  - <!-- personal | los_angeles | lives_in | bibby_grade_a_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Brandon Co Beats LA` (INFERRED 0.8) — imessage/_profiles/brandon-co-beats-la.md
+  - <!-- personal | los_angeles | lives_in | brandon_co_beats_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Bryce Yeazell (LA/Caltech)` (EXTRACTED 1.0) — imessage/individuals/bryce-yeazell-la/2025/2025-11__bryce-ye
+  - <!-- personal | los_angeles | lives_in | bryce_yeazell_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `C-Tag / Chris Malik (Producer LA)` (INFERRED 0.85) — imessage/individuals/c-tag-malik-producer-la/2024/2024-04__c
+  - <!-- personal | los_angeles | lives_in | c_tag_malik_producer_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Cam Ryan` (INFERRED 0.85) — imessage/individuals/cam-ryan-producer-la/2025/2025-10__cam-
+  - <!-- personal | los_angeles | lives_in | cam_ryan_producer_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Cameel Hanna` (INFERRED 0.8) — imessage/_profiles/cameel-hanna-sound-factory-la.md
+  - <!-- personal | los_angeles | lives_in | cameel_hanna_sound_factory_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Candice (Stylist LA)` (INFERRED 0.8) — imessage/_profiles/candice-stylist-la.md
+  - <!-- personal | los_angeles | lives_in | candice_stylist_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Clint Gibbs (LA)` (INFERRED 0.8) — imessage/_profiles/clint-gibbs-la.md
+  - <!-- personal | los_angeles | lives_in | clint_gibbs_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Darnelle (Producer, Koko LA)` (INFERRED 0.8) — imessage/_profiles/darnelle-producer-koko-la.md
+  - <!-- personal | los_angeles | lives_in | darnelle_producer_koko_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Diva (Hinge, LA)` (INFERRED 0.8) — imessage/_profiles/diva-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | diva_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Donny (Producer LA)` (INFERRED 0.9) — imessage/individuals/donny-producer-la/2025/2025-09__donny-p
+  - <!-- personal | los_angeles | lives_in | donny_producer_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Donut (Producer LA)` (INFERRED 0.8) — imessage/_profiles/donut-producer-la.md
+  - <!-- personal | los_angeles | lives_in | donut_producer_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Farzana (Hinge, LA)` (EXTRACTED 1.0) — imessage/individuals/farzana-hinge-la/2026/2026-02__farzana-
+  - <!-- personal | los_angeles | lives_in | farzana_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Garima (Hinge, LA)` (EXTRACTED 1.0) — imessage/individuals/garima-hinge-la/2026/2026-02__garima-hi
+  - <!-- personal | los_angeles | lives_in | garima_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Gavin Hadley` (EXTRACTED 1.0) — imessage/_profiles/gavin-hadley-la.md
+  - <!-- personal | los_angeles | lives_in | gavin_hadley_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Geno Catalano` (EXTRACTED 1.0) — imessage/_profiles/geno-catalano-la.md
+  - <!-- personal | los_angeles | lives_in | geno_catalano_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `George Beall (BD Crypto Gauntlet)` (EXTRACTED 1.0) — imessage/_profiles/george-beall-bd-crypto-gauntlet-la.md
+  - <!-- personal | los_angeles | lives_in | george_beall_bd_crypto_gauntlet_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Groove Chambers (LA)` (EXTRACTED 1.0) — imessage/_profiles/groove-chambers-la.md
+  - <!-- personal | los_angeles | lives_in | groove_chambers_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Mychal Kendricks (AthleteCoin)` (EXTRACTED 1.0) — imessage/individuals/mychal-kendricks-malik-crypto-nfl-produ
+  - <!-- personal | los_angeles | lives_in | mychal_kendricks -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Lance (Pitch/Songwriting LA)` (INFERRED 0.8) — imessage/individuals/lance-pitch-songwriting-la/2025/2025-06
+  - <!-- personal | los_angeles | lives_in | lance_pitch_songwriting_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Dr. Luke (Prescription Songs LA)` (INFERRED 0.8) — imessage/_profiles/group-group-dr-jim.md
+  - <!-- personal | los_angeles | lives_in | dr_luke_prescription_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Rhea (Prescription, LA)` (INFERRED 0.8) — imessage/_profiles/rhea-prescription-la.md
+  - <!-- personal | los_angeles | lives_in | rhea_prescription_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Dylan (Producer LA)` (INFERRED 0.8) — imessage/_profiles/group-group-dylan-johny.md
+  - <!-- personal | los_angeles | lives_in | dylan_producer_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Johny Hadar (Producer, LA)` (INFERRED 0.8) — imessage/_profiles/johny-hadar-producer-la.md
+  - <!-- personal | los_angeles | lives_in | johny_hadar_producer_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Neek (LA)` (INFERRED 0.85) — imessage/_profiles/neek-la.md
+  - <!-- personal | los_angeles | lives_in | neek_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Geno Catalano (LA)` (INFERRED 0.85) — imessage/_profiles/group-group-geno-neek-tito.md
+  - <!-- personal | los_angeles | lives_in | geno_catalano -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Tito (Producer, LA)` (INFERRED 0.85) — imessage/_profiles/group-group-geno-neek-tito.md
+  - <!-- personal | los_angeles | lives_in | tito_producer -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Kevo (Prescription Producer, LA)` (INFERRED 0.85) — imessage/_profiles/group-group-haan-kevo.md
+  - <!-- personal | los_angeles | lives_in | kevo_producer -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Haan (LA)` (INFERRED 0.8) — imessage/_profiles/haan-la.md
+  - <!-- personal | los_angeles | lives_in | haan_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Shanks (Producer, LA)` (INFERRED 0.85) — imessage/_profiles/group-group-johny-shanks.md
+  - <!-- personal | los_angeles | lives_in | shanks_producer -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Johny Hadar (Producer, LA)` (INFERRED 0.85) — imessage/_profiles/group-group-johny-shanks.md
+  - <!-- personal | los_angeles | lives_in | johny_hadar -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Tyler Sheppard LA` (EXTRACTED 1.0) — imessage/_profiles/group-group-peter-tyler-yosef.md
+  - <!-- personal | los_angeles | lives_in | tyler_sheppard -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `KOKO (Ryan Stylist, LA)` (INFERRED 0.85) — imessage/_profiles/group-group-koko-keith-ryan.md
+  - <!-- personal | los_angeles | lives_in | koko_stylist -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Louie Gomez (Tyler Producer, LA)` (INFERRED 0.85) — imessage/_profiles/group-group-louie-tyler-yosef.md
+  - <!-- personal | los_angeles | lives_in | louie_gomez -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Yosef Producer LA` (EXTRACTED 1.0) — imessage/_profiles/group-group-peter-tyler-yosef.md
+  - <!-- personal | los_angeles | lives_in | yosef_producer -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Nick Guilmette` (INFERRED 0.85) — imessage/_profiles/group-group-lucy-nick.md
+  - <!-- personal | los_angeles | lives_in | nick_guilmette -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Luke Whitney (UCLA Globalization, LA)` (INFERRED 0.85) — imessage/_profiles/group-group-luke.md
+  - <!-- personal | los_angeles | lives_in | luke_whitney -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `REI LA (Fernando Morales, Rental)` (INFERRED 0.85) — imessage/_profiles/group-group-mom-rei.md
+  - <!-- personal | los_angeles | lives_in | rei_la_rental -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Peter Fenn LA` (EXTRACTED 1.0) — imessage/_profiles/group-group-peter-tyler-yosef.md
+  - <!-- personal | los_angeles | lives_in | peter_fenn -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Vitals Producer LA` (EXTRACTED 1.0) — imessage/_profiles/group-group-ryan-vitals.md
+  - <!-- personal | los_angeles | lives_in | vitals_producer -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Rahul Umapathy USC LA` (INFERRED 0.8) — imessage/_profiles/group-group-rahul.md
+  - <!-- personal | los_angeles | lives_in | rahul_umapathy -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Huma (Hinge LA)` (INFERRED 0.8) — imessage/_profiles/huma-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | huma_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Ishika (Hinge LA 7597)` (INFERRED 0.8) — imessage/_profiles/ishika-hinge-la-7597.md
+  - <!-- personal | los_angeles | lives_in | ishika_hinge_la_7597 -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Ishika (Hinge LA)` (INFERRED 0.8) — imessage/_profiles/ishika-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | ishika_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Jada (Hinge LA)` (INFERRED 0.8) — imessage/_profiles/jada-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | jada_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Jakkyboi (LA Music)` (INFERRED 0.8) — imessage/_profiles/jakkyboi-la-music.md
+  - <!-- personal | los_angeles | lives_in | jakkyboi_la_music -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `James Carr (Engineer / Vellese LA)` (INFERRED 0.8) — imessage/_profiles/james-carr-engineer-vellese-la.md
+  - <!-- personal | los_angeles | lives_in | james_carr_engineer_vellese_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Jaxxy (Producer LA)` (INFERRED 0.8) — imessage/individuals/jaxxy-producer-la/2024/2024-08__jaxxy-p
+  - <!-- personal | los_angeles | lives_in | jaxxy_producer_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Jeremy Uribe (Producer, LA)` (INFERRED 0.8) — imessage/_profiles/jeremy-uribe-producer-la.md
+  - <!-- personal | los_angeles | lives_in | jeremy_uribe_producer_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Kai (Producer, LA)` (INFERRED 0.8) — imessage/_profiles/kai-producer-la.md
+  - <!-- personal | los_angeles | lives_in | kai_producer_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Kaine (Songwriter, LA)` (INFERRED 0.8) — imessage/_profiles/kaine-songwriter-la.md
+  - <!-- personal | los_angeles | lives_in | kaine_songwriter_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Jugg (Artist, LA)` (INFERRED 0.8) — imessage/_profiles/jugg-artist-la.md
+  - <!-- personal | los_angeles | lives_in | jugg_artist_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Jxne (Artist, LA)` (INFERRED 0.8) — imessage/_profiles/jxne-artist-la.md
+  - <!-- personal | los_angeles | lives_in | jxne_artist_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `JT Huskins (Crypto, LA)` (INFERRED 0.8) — imessage/_profiles/jt-huskins-crypto-la.md
+  - <!-- personal | los_angeles | lives_in | jt_huskins_crypto_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Jayy (Hinge / LA)` (INFERRED 0.8) — imessage/_profiles/jayy-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | jayy_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Kaiya (Hinge, LA)` (INFERRED 0.8) — imessage/_profiles/kaiya-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | kaiya_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Kalani (Prescription/LA)` (INFERRED 0.8) — imessage/_profiles/kalani-prescription-la.md
+  - <!-- personal | los_angeles | lives_in | kalani_prescription_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Kamryn (Hinge, LA/Pasadena)` (INFERRED 0.8) — imessage/_profiles/kamryn-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | kamryn_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Karthika (Hinge LA)` (INFERRED 0.8) — imessage/_profiles/karthika-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | karthika_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Kamran Prabhat (USC, LA)` (INFERRED 0.8) — imessage/_profiles/kamran-prabhat-usc-la.md
+  - <!-- personal | los_angeles | lives_in | kamran_prabhat_usc_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Junaid Rasool (LASA)` (INFERRED 0.7) — imessage/_profiles/junaid-rasool-lasa.md
+  - <!-- personal | los_angeles | lives_in | junaid_rasool_lasa -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Kalen (LASA)` (INFERRED 0.7) — imessage/_profiles/kalen-lasa.md
+  - <!-- personal | los_angeles | lives_in | kalen_lasa -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Kevo (Prescription Producer LA)` (EXTRACTED 1.0) — imessage/individuals/kevo-prescription-producer-la/2025/2025
+  - <!-- personal | los_angeles | lives_in | kevo_prescription_producer_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Khushi (Hinge LA, USC grad)` (EXTRACTED 1.0) — imessage/individuals/khushi-hinge-la/2026/2026-02__khushi-hi
+  - <!-- personal | los_angeles | lives_in | khushi_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Kira (Tinder LA, Downtown)` (EXTRACTED 1.0) — imessage/individuals/kira-tinder-la/2026/2026-02__kira-tinde
+  - <!-- personal | los_angeles | lives_in | kira_tinder_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Kuji (Producer LA)` (INFERRED 0.8) — imessage/individuals/kuji-producer-la/2024/2024-12__kuji-pro
+  - <!-- personal | los_angeles | lives_in | kuji_producer_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Kyle Stemberger (Prescription, LA)` (INFERRED 0.8) — imessage/_profiles/kyle-stemberger-prescription-la.md
+  - <!-- personal | los_angeles | lives_in | kyle_stemberger_prescription_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Larry (Music Lawyer, LA)` (INFERRED 0.8) — imessage/_profiles/larry-lawyer-la.md
+  - <!-- personal | los_angeles | lives_in | larry_lawyer_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Lex (Hinge, LA)` (EXTRACTED 1.0) — imessage/individuals/lex-hinge-la/2026/2026-02__lex-hinge-la
+  - <!-- personal | los_angeles | lives_in | lex_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Linzie (Hinge, LA / Long Beach)` (INFERRED 0.8) — imessage/_profiles/linzie-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | linzie_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Louie Gomez Tyler (Producer, LA)` (INFERRED 0.8) — imessage/_profiles/louie-gomez-tyler-producer-la.md
+  - <!-- personal | los_angeles | lives_in | louie_gomez_tyler_producer_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Lourdiz (Producer, LA)` (INFERRED 0.8) — imessage/_profiles/lourdiz-producer-la.md
+  - <!-- personal | los_angeles | lives_in | lourdiz_producer_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Luke Whitney (UCLA Globalization, LA)` (INFERRED 0.8) — imessage/_profiles/luke-whitney-ucla-globalization-la.md
+  - <!-- personal | los_angeles | lives_in | luke_whitney_ucla_globalization_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Mack (Post Sound Factory LA)` (INFERRED 0.8) — imessage/_profiles/mack-post-sound-factory-la.md
+  - <!-- personal | los_angeles | lives_in | mack_post_sound_factory_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Malik 95 (Producer LA)` (INFERRED 0.8) — imessage/_profiles/malik-ninety-five-producer-la.md
+  - <!-- personal | los_angeles | lives_in | malik_ninety_five_producer_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Mane (Hinge LA)` (INFERRED 0.8) — imessage/individuals/mane-hinge-la/2026/2026-02__mane-hinge-
+  - <!-- personal | los_angeles | lives_in | mane_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Mansi (Hinge LA)` (INFERRED 0.8) — imessage/individuals/mansi-hinge-la/2026/2026-02__mansi-hing
+  - <!-- personal | los_angeles | lives_in | mansi_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Mara (Hinge LA)` (EXTRACTED 1.0) — imessage/individuals/mara-hinge-la/2026/2026-02__mara-hinge-
+  - <!-- personal | los_angeles | lives_in | mara_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Marc E (DJ / crypto, LA)` (INFERRED 0.8) — imessage/_profiles/marc-e-crypto-james-la.md
+  - <!-- personal | los_angeles | lives_in | marc_e_crypto_james_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Megann (Hinge match, LA)` (INFERRED 0.8) — imessage/_profiles/megann-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | megann_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Melody (Hinge match, LA)` (INFERRED 0.8) — imessage/_profiles/melody-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | melody_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Memoria XI (musician, LA/MD)` (INFERRED 0.8) — imessage/_profiles/memoria-xi-la.md
+  - <!-- personal | los_angeles | lives_in | memoria_xi_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Mike Crook` (INFERRED 0.8) — imessage/_profiles/mike-crook-la.md
+  - <!-- personal | los_angeles | lives_in | mike_crook_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Mike Smrtdeath` (INFERRED 0.8) — imessage/_profiles/mike-smrtdeath-la-music.md
+  - <!-- personal | los_angeles | lives_in | mike_smrtdeath_la_music -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Mikey LaSusa` (INFERRED 0.8) — imessage/_profiles/mikey-silver-lining-la.md
+  - <!-- personal | los_angeles | lives_in | mikey_silver_lining_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Mizzylott (Producer, LA)` (INFERRED 0.8) — imessage/_profiles/mizzylott-producer-la.md
+  - <!-- personal | los_angeles | lives_in | mizzylott_producer_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Mombru (producer, LA)` (EXTRACTED 1.0) — imessage/individuals/mombru-producer-la/2024/2024-12__mombru
+  - <!-- personal | los_angeles | lives_in | mombru_producer_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Moonee (Tinder, LA/Ventura)` (INFERRED 0.85) — imessage/_profiles/moonee-tinder-la.md
+  - <!-- personal | los_angeles | lives_in | moonee_tinder_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Mythree (Hinge LA)` (INFERRED 0.85) — imessage/_profiles/mythree-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | mythree_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Natasha (Hinge LA)` (INFERRED 0.85) — imessage/_profiles/natasha-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | natasha_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Neha (Hinge, LA)` (INFERRED 0.85) — imessage/_profiles/neha-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | neha_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Nick Guilmette (LA)` (INFERRED 0.85) — imessage/_profiles/nick-guilmette-la.md
+  - <!-- personal | los_angeles | lives_in | nick_guilmette_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Mychal Kendricks Malik (Crypto/NFL/Producer, LA)` (INFERRED 0.85) — imessage/_profiles/mychal-kendricks-malik-crypto-nfl-produce
+  - <!-- personal | los_angeles | lives_in | mychal_kendricks_malik_crypto_nfl_producer_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Olivia (Hinge LA)` (INFERRED 0.8) — imessage/_profiles/olivia-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | olivia_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Palak (Hinge LA / USC)` (INFERRED 0.8) — imessage/_profiles/palak-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | palak_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Pali (Hinge LA / Pasadena)` (INFERRED 0.8) — imessage/_profiles/pali-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | pali_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Patrick Luna (LA)` (INFERRED 0.8) — imessage/_profiles/patrick-luna-la.md
+  - <!-- personal | los_angeles | lives_in | patrick_luna_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Peter Fenn (LA)` (INFERRED 0.8) — imessage/_profiles/peter-fenn-la.md
+  - <!-- personal | los_angeles | lives_in | peter_fenn_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Prachi (Hinge, LA)` (INFERRED 0.8) — imessage/_profiles/prachi-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | prachi_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Prishaa (Hinge, LA)` (INFERRED 0.8) — imessage/_profiles/prishaa-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | prishaa_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Rahul Umapathy (USC LA)` (INFERRED 0.8) — imessage/_profiles/rahul-umapathy-usc-la.md
+  - <!-- personal | los_angeles | lives_in | rahul_umapathy_usc_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Ranjana (Tinder, LA)` (INFERRED 0.8) — imessage/_profiles/ranjana-tinder-la.md
+  - <!-- personal | los_angeles | lives_in | ranjana_tinder_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Rasam (Hinge, LA / Claremont)` (INFERRED 0.8) — imessage/_profiles/rasam-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | rasam_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Rei La (Fernando Morales Rental)` (INFERRED 0.8) — imessage/_profiles/rei-la-fernando-morales-rental.md
+  - <!-- personal | los_angeles | lives_in | rei_la_fernando_morales_rental -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Rhea (Hinge, LA)` (INFERRED 0.9) — imessage/_profiles/rhea-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | rhea_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Ria (Hinge, LA)` (INFERRED 0.9) — imessage/_profiles/ria-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | ria_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Rio (Root, LA)` (INFERRED 0.9) — imessage/_profiles/rio-root-la.md
+  - <!-- personal | los_angeles | lives_in | rio_root_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Roshni (Hinge / LA / Irvine)` (INFERRED 0.9) — imessage/_profiles/roshni-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | roshni_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Roxanne (Hinge / LA)` (INFERRED 0.9) — imessage/_profiles/roxanne-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | roxanne_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Ryan (Hinge, LA)` (EXTRACTED 1.0) — imessage/individuals/ryan-hinge-la/2026/2026-02__ryan-hinge-
+  - <!-- personal | los_angeles | lives_in | ryan_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Ryan Ryster (Producer, LA)` (INFERRED 0.9) — imessage/_profiles/ryan-ryster-producer-la.md
+  - <!-- personal | los_angeles | lives_in | ryan_ryster_producer_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Ryan (Silver Lining LA)` (INFERRED 0.9) — imessage/_profiles/ryan-silver-lining-la.md
+  - <!-- personal | los_angeles | lives_in | ryan_silver_lining_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Saadhvi (Hinge LA)` (INFERRED 0.9) — imessage/_profiles/saadhvi-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | saadhvi_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Sadhvi (Hinge LA)` (INFERRED 0.9) — imessage/_profiles/sadhvi-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | sadhvi_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Sahil Dutta (Producer, LA)` (EXTRACTED 1.0) — imessage/individuals/sahil-dutta-producer-la/2024/2024-08__s
+  - <!-- personal | los_angeles | lives_in | sahil_dutta_producer_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Tyler Sheppard (LA, music producer)` (INFERRED 0.9) — imessage/groups/group-ryan-tyler/2024/2024-07__group-ryan-ty
+  - <!-- personal | los_angeles | lives_in | tyler_sheppard_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Ballr Hallr (BallerHaller24)` (EXTRACTED 1.0) — imessage/individuals/ballr-hallr-la/2024/2024-08__ballr-hall
+  - <!-- personal | los_angeles | lives_in | ballr_hallr -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Brandon Co (beat producer, LA)` (EXTRACTED 1.0) — imessage/individuals/brandon-co-beats-la/2024/2024-03__brand
+  - <!-- personal | los_angeles | lives_in | brandon_co_beats -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Divya (Hinge LA)` (EXTRACTED 1.0) — imessage/individuals/divya-hinge-la/2026/2026-02__divya-hing
+  - <!-- personal | los_angeles | lives_in | divya_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Filip (Evan's friend, LA)` (INFERRED 0.9) — imessage/individuals/filip-evan-friend/2025/2025-09__filip-e
+  - <!-- personal | los_angeles | lives_in | filip_evan_friend -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Lance Baker (barber/creator LA)` (INFERRED 0.75) — imessage/individuals/lance-baker/2024/2024-03__lance-baker.m
+  - <!-- personal | los_angeles | lives_in | lance_baker -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Malik 95 (Producer LA)` (EXTRACTED 1.0) — imessage/individuals/malik-ninety-five-producer-la/2024/2024
+  - <!-- personal | los_angeles | lives_in | malik_95_producer -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Marc E (Crypto/James LA)` (EXTRACTED 1.0) — imessage/individuals/marc-e-crypto-james-la/2025/2025-11__ma
+  - <!-- personal | los_angeles | lives_in | marc_e_crypto -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Ryan Ogren` (INFERRED 0.8) — imessage/individuals/ryan-ogren/2024/2024-03__ryan-ogren.md
+  - <!-- personal | los_angeles | lives_in | ryan_ogren -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Ryan Ryster (Producer, LA)` (EXTRACTED 1.0) — imessage/individuals/ryan-ryster-producer-la/2024/2024-08__r
+  - <!-- personal | los_angeles | lives_in | ryan_ryster -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Ryan (Silver Lining, LA)` (EXTRACTED 1.0) — imessage/individuals/ryan-silver-lining-la/2024/2024-08__rya
+  - <!-- personal | los_angeles | lives_in | ryan_silver_lining -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Shree (Hinge, LA/Irvine)` (EXTRACTED 1.0) — imessage/individuals/shree-hinge-la/2026/2026-02__shree-hing
+  - <!-- personal | los_angeles | lives_in | shree_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Shevanti (Hinge, LA)` (INFERRED 0.8) — imessage/individuals/shevanti-hinge-la/2026/2026-02__shevant
+  - <!-- personal | los_angeles | lives_in | shevanti_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Shivani (Hinge, LA)` (INFERRED 0.8) — imessage/individuals/shivani-hinge-la/2025/2025-08__shivani-
+  - <!-- personal | los_angeles | lives_in | shivani_hinge_la -->
+- [ ] `Ankur (UC Berkeley)` —`works_at`→ `Pear VC` (EXTRACTED 1.0) — imessage/individuals/ankur-uc-berkeley/2025/2025-05__ankur-u
+  - <!-- personal | ankur_uc_berkeley | works_at | pear_vc -->
+- [ ] `New York City` —`lives_in`→ `Anuka (NYC, Hinge)` (INFERRED 0.8) — imessage/individuals/anuka-nyc/2025/2025-06__anuka-nyc.md
+  - <!-- personal | new_york_city | lives_in | anuka_nyc -->
+- [ ] `New York City` —`lives_in`→ `Areebah (NYC, Hinge)` (EXTRACTED 1.0) — imessage/individuals/areebah-nyc/2025/2025-06__areebah-nyc.m
+  - <!-- personal | new_york_city | lives_in | areebah_nyc -->
+- [ ] `New York City` —`lives_in`→ `Arya (Hinge, NYC)` (EXTRACTED 1.0) — imessage/individuals/arya-nyc/2025/2025-06__arya-nyc.md
+  - <!-- personal | new_york_city | lives_in | arya_nyc -->
+- [ ] `New York City` —`lives_in`→ `Athira (NYC/NJ, Hinge)` (INFERRED 0.8) — imessage/_profiles/athira-nyc.md
+  - <!-- personal | new_york_city | lives_in | athira_nyc -->
+- [ ] `New York City` —`lives_in`→ `Dhanvi (NYC, Hinge)` (INFERRED 0.8) — imessage/_profiles/dhanvi-nyc.md
+  - <!-- personal | new_york_city | lives_in | dhanvi_nyc -->
+- [ ] `New York City` —`lives_in`→ `Dheeraj (Arrow, NYC)` (INFERRED 0.8) — imessage/_profiles/dheeraj-arrow-nyc.md
+  - <!-- personal | new_york_city | lives_in | dheeraj_arrow_nyc -->
+- [ ] `New York City` —`lives_in`→ `Diya (NYC, 9395)` (INFERRED 0.85) — imessage/individuals/diya-nyc-9395/2025/2025-06__diya-nyc-93
+  - <!-- personal | new_york_city | lives_in | diya_nyc_9395 -->
+- [ ] `New York City` —`lives_in`→ `Diya (NYC, Hinge)` (INFERRED 0.8) — imessage/_profiles/diya-nyc.md
+  - <!-- personal | new_york_city | lives_in | diya_nyc -->
+- [ ] `New York City` —`lives_in`→ `Maanav Khaitan` (EXTRACTED 1.0) — imessage/individuals/maanav-khaitan-uc-berkeley-nyc/2024/202
+  - <!-- personal | new_york_city | lives_in | maanav_khaitan -->
+- [ ] `New York City` —`lives_in`→ `Jamal (NYC)` (EXTRACTED 1.0) — imessage/individuals/jamal-nyc/2025/2025-02__jamal-nyc.md
+  - <!-- personal | new_york_city | lives_in | jamal_nyc -->
+- [ ] `New York City` —`lives_in`→ `Score Beats (Producer, NYC)` (INFERRED 0.85) — imessage/_profiles/group-group-matt-ryan-score.md
+  - <!-- personal | new_york_city | lives_in | score_beats -->
+- [ ] `New York City` —`lives_in`→ `Gurleen (NYC)` (INFERRED 0.8) — imessage/_profiles/gurleen-nyc.md
+  - <!-- personal | new_york_city | lives_in | gurleen_nyc -->
+- [ ] `New York City` —`lives_in`→ `Isha (NYC)` (INFERRED 0.8) — imessage/_profiles/isha-nyc.md
+  - <!-- personal | new_york_city | lives_in | isha_nyc -->
+- [ ] `New York City` —`lives_in`→ `Ishita (Hinge NYC)` (INFERRED 0.8) — imessage/_profiles/ishita-hinge-nyc.md
+  - <!-- personal | new_york_city | lives_in | ishita_hinge_nyc -->
+- [ ] `New York City` —`lives_in`→ `Isiri (NYC / Columbia)` (INFERRED 0.8) — imessage/_profiles/isiri-nyc.md
+  - <!-- personal | new_york_city | lives_in | isiri_nyc -->
+- [ ] `New York City` —`lives_in`→ `JJ (NYC / music)` (INFERRED 0.8) — imessage/_profiles/jj-nyc.md
+  - <!-- personal | new_york_city | lives_in | jj_nyc -->
+- [ ] `New York City` —`lives_in`→ `Kamali (NYC/NJ, Hinge)` (INFERRED 0.8) — imessage/_profiles/kamali-nyc.md
+  - <!-- personal | new_york_city | lives_in | kamali_nyc -->
+- [ ] `New York City` —`lives_in`→ `Khushi (Hinge, Riverside CA)` (INFERRED 0.8) — imessage/_profiles/khushi-nyc.md
+  - <!-- personal | new_york_city | lives_in | khushi_nyc -->
+- [ ] `New York City` —`lives_in`→ `Krishna (NYC, met at Skinny Bar)` (INFERRED 0.8) — imessage/individuals/krishna-nyc/2025/2025-02__krishna-nyc.m
+  - <!-- personal | new_york_city | lives_in | krishna_nyc -->
+- [ ] `New York City` —`lives_in`→ `Matt Stefanina (NYC)` (INFERRED 0.8) — imessage/_profiles/matt-stefanina-nyc.md
+  - <!-- personal | new_york_city | lives_in | matt_stefanina_nyc -->
+- [ ] `New York City` —`lives_in`→ `Misha (Hinge, NYC)` (INFERRED 0.8) — imessage/_profiles/misha-nyc.md
+  - <!-- personal | new_york_city | lives_in | misha_nyc -->
+- [ ] `New York City` —`lives_in`→ `Mo (Hinge, NYC)` (INFERRED 0.8) — imessage/_profiles/mo-nyc.md
+  - <!-- personal | new_york_city | lives_in | mo_nyc -->
+- [ ] `New York City` —`lives_in`→ `Monika (NYC)` (INFERRED 0.85) — imessage/_profiles/monika-nyc.md
+  - <!-- personal | new_york_city | lives_in | monika_nyc -->
+- [ ] `New York City` —`lives_in`→ `Neha NYC` (INFERRED 0.85) — imessage/_profiles/neha-nyc.md
+  - <!-- personal | new_york_city | lives_in | neha_nyc -->
+- [ ] `New York City` —`lives_in`→ `Neil/Nick (Finality Capital, NYC)` (INFERRED 0.85) — imessage/_profiles/neil-nick-finalitycapital-nyc.md
+  - <!-- personal | new_york_city | lives_in | neil_nick_finalitycapital_nyc -->
+- [ ] `New York City` —`lives_in`→ `Nidhi (Hinge NYC)` (INFERRED 0.85) — imessage/_profiles/nidhi-hinge-nyc.md
+  - <!-- personal | new_york_city | lives_in | nidhi_hinge_nyc -->
+- [ ] `New York City` —`lives_in`→ `Nikitha (NYC/Hinge)` (INFERRED 0.85) — imessage/_profiles/nikitha-nyc.md
+  - <!-- personal | new_york_city | lives_in | nikitha_nyc -->
+- [ ] `New York City` —`lives_in`→ `Nikki (Hinge/NYC)` (INFERRED 0.85) — imessage/_profiles/nikki-hinge-nyc.md
+  - <!-- personal | new_york_city | lives_in | nikki_hinge_nyc -->
+- [ ] `New York City` —`lives_in`→ `Nira (Hinge/NYC)` (INFERRED 0.85) — imessage/_profiles/nira-hinge-nyc.md
+  - <!-- personal | new_york_city | lives_in | nira_hinge_nyc -->
+- [ ] `New York City` —`lives_in`→ `Older Tamil Bro NYC` (INFERRED 0.8) — imessage/_profiles/older-tamil-bro-nyc.md
+  - <!-- personal | new_york_city | lives_in | older_tamil_bro_nyc -->
+- [ ] `New York City` —`lives_in`→ `Parth Akshar (USC/NYC)` (INFERRED 0.7) — imessage/_profiles/parth-akshar-usc-nyc.md
+  - <!-- personal | new_york_city | lives_in | parth_akshar_usc_nyc -->
+- [ ] `New York City` —`lives_in`→ `Prateeksha (NYC / Hinge)` (EXTRACTED 1.0) — imessage/individuals/prateeksha-nyc/2025/2025-07__prateeksha
+  - <!-- personal | new_york_city | lives_in | prateeksha_nyc -->
+- [ ] `New York City` —`lives_in`→ `Prisha (Hinge, NYC)` (EXTRACTED 1.0) — imessage/individuals/prisha-hinge-nyc/2026/2026-02__prisha-h
+  - <!-- personal | new_york_city | lives_in | prisha_hinge_nyc -->
+- [ ] `New York City` —`lives_in`→ `Propita (NYC / Hinge)` (EXTRACTED 1.0) — imessage/individuals/propita-nyc/2025/2025-06__propita-nyc.m
+  - <!-- personal | new_york_city | lives_in | propita_nyc -->
+- [ ] `New York City` —`lives_in`→ `Radhika (NYC)` (INFERRED 0.8) — imessage/_profiles/radhika-nyc.md
+  - <!-- personal | new_york_city | lives_in | radhika_nyc -->
+- [ ] `New York City` —`lives_in`→ `Randy (NYC, crypto)` (INFERRED 0.8) — imessage/_profiles/randy-mychal-kendricks-nyc.md
+  - <!-- personal | new_york_city | lives_in | randy_mychal_kendricks_nyc -->
+- [ ] `New York City` —`lives_in`→ `Rashmi (Hinge, NYC)` (INFERRED 0.8) — imessage/_profiles/rashmi-hinge-nyc.md
+  - <!-- personal | new_york_city | lives_in | rashmi_hinge_nyc -->
+- [ ] `New York City` —`lives_in`→ `Rashmi (NYC, Hinge match)` (INFERRED 0.8) — imessage/_profiles/rashmi-nyc.md
+  - <!-- personal | new_york_city | lives_in | rashmi_nyc -->
+- [ ] `New York City` —`lives_in`→ `Rhea (Hinge, NYC)` (INFERRED 0.9) — imessage/_profiles/rhea-nyc.md
+  - <!-- personal | new_york_city | lives_in | rhea_nyc -->
+- [ ] `New York City` —`lives_in`→ `Riya (NYC)` (INFERRED 0.9) — imessage/_profiles/riya-nyc.md
+  - <!-- personal | new_york_city | lives_in | riya_nyc -->
+- [ ] `New York City` —`lives_in`→ `Riya North (NYC)` (INFERRED 0.9) — imessage/_profiles/riyanorth-nyc.md
+  - <!-- personal | new_york_city | lives_in | riyanorth_nyc -->
+- [ ] `New York City` —`lives_in`→ `Ruchi (NYC / Hinge)` (INFERRED 0.9) — imessage/_profiles/ruchi-nyc.md
+  - <!-- personal | new_york_city | lives_in | ruchi_nyc -->
+- [ ] `New York City` —`lives_in`→ `Sabaa (NYC)` (INFERRED 0.9) — imessage/_profiles/sabaa-nyc.md
+  - <!-- personal | new_york_city | lives_in | sabaa_nyc -->
+- [ ] `New York City` —`lives_in`→ `Sahiba (NYC)` (EXTRACTED 1.0) — imessage/individuals/sahiba-nyc/2025/2025-07__sahiba-nyc.md
+  - <!-- personal | new_york_city | lives_in | sahiba_nyc -->
+- [ ] `New York City` —`lives_in`→ `Sahithi (NYC)` (EXTRACTED 1.0) — imessage/individuals/sahithi-nyc/2025/2025-07__sahithi-nyc.m
+  - <!-- personal | new_york_city | lives_in | sahithi_nyc -->
+- [ ] `New York City` —`lives_in`→ `Rushil Jha` (EXTRACTED 1.0) — imessage/individuals/rushil-jha-uc-berkeley-nyc/2025/2025-09
+  - <!-- personal | new_york_city | lives_in | rushil_jha -->
+- [ ] `New York City` —`lives_in`→ `Saif Ali (NYC)` (EXTRACTED 1.0) — imessage/individuals/saif-ali-nyc/2025/2025-06__saif-ali-nyc
+  - <!-- personal | new_york_city | lives_in | saif_ali_nyc -->
+- [ ] `New York City` —`lives_in`→ `Aggy (Akshar Prabhat, USC, San Ramon / NYC)` (EXTRACTED 1.0) — imessage/individuals/aggy-akshar-prabhat-usc-san-ramon/2025/
+  - <!-- personal | new_york_city | lives_in | aggy_akshar_prabhat -->
+- [ ] `New York City` —`lives_in`→ `Brandon Encrypto` (EXTRACTED 1.0) — imessage/individuals/brandon-encrypto/2025/2025-02__brandon-
+  - <!-- personal | new_york_city | lives_in | brandon_encrypto -->
+- [ ] `New York City` —`lives_in`→ `Kareem Koujah` (EXTRACTED 1.0) — imessage/individuals/kareem-koujah-uc-berkeley/2026/2026-03_
+  - <!-- personal | new_york_city | lives_in | kareem_koujah -->
+- [ ] `New York City` —`lives_in`→ `Sakshi (NYC / LA)` (INFERRED 0.8) — imessage/individuals/sakshi-nyc/2026/2026-02__sakshi-nyc.md
+  - <!-- personal | new_york_city | lives_in | sakshi_nyc -->
+- [ ] `New York City` —`lives_in`→ `Shravani (NYC)` (INFERRED 0.85) — imessage/individuals/shravani-nyc/2025/2025-06__shravani-nyc
+  - <!-- personal | new_york_city | lives_in | shravani_nyc -->
+- [ ] `New York City` —`lives_in`→ `Varshni (NYC)` (EXTRACTED 1.0) — imessage/individuals/varshni-nyc/2025/2025-06__varshni-nyc.m
+  - <!-- personal | new_york_city | lives_in | varshni_nyc -->
+- [ ] `New York City` —`lives_in`→ `Veronica (NYC)` (INFERRED 0.9) — imessage/individuals/veronica-nyc/2025/2025-03__veronica-nyc
+  - <!-- personal | new_york_city | lives_in | veronica_nyc -->
+- [ ] `New York City` —`lives_in`→ `Vidhi (NYC)` (EXTRACTED 1.0) — imessage/individuals/vidhi-nyc/2025/2025-03__vidhi-nyc.md
+  - <!-- personal | new_york_city | lives_in | vidhi_nyc -->
+- [ ] `New York City` —`lives_in`→ `Vina (NYC)` (EXTRACTED 1.0) — imessage/individuals/vina-nyc/2025/2025-08__vina-nyc.md
+  - <!-- personal | new_york_city | lives_in | vina_nyc -->
+- [ ] `New York City` —`lives_in`→ `Will Slatton (NYC)` (EXTRACTED 1.0) — imessage/individuals/will-slatton-nyc/2025/2025-06__will-sla
+  - <!-- personal | new_york_city | lives_in | will_slatton_nyc -->
+- [ ] `Austin, TX` —`lives_in`→ `Dr. Satasivan` (INFERRED 0.6) — imessage/_profiles/dr-satasivan.md
+  - <!-- personal | austin | lives_in | dr_satasivan -->
+- [ ] `Austin, TX` —`lives_in`→ `Griffin Noah (Roommate)` (INFERRED 0.9) — imessage/_profiles/griffin-noah-roomate.md
+  - <!-- personal | austin | lives_in | griffin_noah_roommate -->
+- [ ] `Austin, TX` —`lives_in`→ `Jake Garcia` (INFERRED 0.8) — imessage/_profiles/group-brick-city-mob.md
+  - <!-- personal | austin | lives_in | jake_garcia -->
+- [ ] `Austin, TX` —`lives_in`→ `Jesse (met on cruise / Dirty 6th)` (INFERRED 0.7) — imessage/_profiles/jesse-cruise-dirty-6th.md
+  - <!-- personal | austin | lives_in | jesse_cruise_dirty_6th -->
+- [ ] `Austin, TX` —`lives_in`→ `Noah Bailie` (INFERRED 0.8) — imessage/groups/group-noah-sam/2026/2026-03__group-noah-sam.
+  - <!-- personal | austin | lives_in | noah_bailie -->
+- [ ] `UC Berkeley` —`studies_at`→ `Rushil Jha` (INFERRED 0.85) — imessage/individuals/rushil-jha-uc-berkeley-nyc/2025/2025-08
+  - <!-- personal | uc_berkeley | studies_at | rushil_jha -->
+- [ ] `UC Berkeley` —`studies_at`→ `Maanav Khaitan` (EXTRACTED 1.0) — imessage/individuals/maanav-khaitan-uc-berkeley-nyc/2024/202
+  - <!-- personal | uc_berkeley | studies_at | maanav_khaitan -->
+- [ ] `UC Berkeley` —`studies_at`→ `Divyesh Khatri` (INFERRED 0.8) — imessage/_profiles/group-group-divyesh-maanav.md
+  - <!-- personal | uc_berkeley | studies_at | divyesh_khatri -->
+- [ ] `UC Berkeley` —`studies_at`→ `Rylen Patel` (EXTRACTED 1.0) — imessage/individuals/rylen-patel-uc-berkeley/2024/2024-04__r
+  - <!-- personal | uc_berkeley | studies_at | rylen_patel -->
+- [ ] `UC Berkeley` —`studies_at`→ `Risheek` (EXTRACTED 1.0) — imessage/_profiles/group-group-pseuhas-risheek-santosh.md
+  - <!-- personal | uc_berkeley | studies_at | risheek -->
+- [ ] `UC Berkeley` —`studies_at`→ `Rishika (ex)` (EXTRACTED 1.0) — imessage/_profiles/group-group-rishika-z.md
+  - <!-- personal | uc_berkeley | studies_at | rishika -->
+- [ ] `UC Berkeley` —`studies_at`→ `Ankit` (INFERRED 0.8) — imessage/groups/group-ankit-edwin-rohin/2025/2025-05__group-
+  - <!-- personal | uc_berkeley | studies_at | ankit -->
+- [ ] `UC Berkeley` —`studies_at`→ `Saif Ali (NYC)` (EXTRACTED 1.0) — imessage/individuals/saif-ali-nyc/2024/2024-09__saif-ali-nyc
+  - <!-- personal | uc_berkeley | studies_at | saif_ali_nyc -->
+- [ ] `UC Berkeley` —`studies_at`→ `Edwin Gregory` (EXTRACTED 1.0) — imessage/individuals/edwin-gregory-uc-berkeley/2025/2025-03_
+  - <!-- personal | uc_berkeley | studies_at | edwin_gregory -->
+- [ ] `UC Berkeley` —`studies_at`→ `Emir Karabeg` (EXTRACTED 1.0) — imessage/individuals/emir-karabeg-uc-berkeley/2024/2024-05__
+  - <!-- personal | uc_berkeley | studies_at | emir_karabeg -->
+- [ ] `UC Berkeley` —`studies_at`→ `Kareem Koujah` (EXTRACTED 1.0) — imessage/individuals/kareem-koujah-uc-berkeley/2024/2024-05_
+  - <!-- personal | uc_berkeley | studies_at | kareem_koujah -->
+- [ ] `UC Berkeley` —`studies_at`→ `Kavish Loomba` (INFERRED 0.85) — imessage/individuals/kavish-loomba-uc-berkeley/2026/2026-03_
+  - <!-- personal | uc_berkeley | studies_at | kavish_loomba -->
+- [ ] `UC Berkeley` —`studies_at`→ `Nidhir Guggila` (EXTRACTED 1.0) — imessage/individuals/nidhir-guggila-uc-berkeley/2024/2024-05
+  - <!-- personal | uc_berkeley | studies_at | nidhir_guggila -->
+- [ ] `UC Berkeley` —`studies_at`→ `Zaos Prabhat` (EXTRACTED 1.0) — imessage/individuals/zaos-prabhat-uc-berkeley-la/2024/2024-0
+  - <!-- personal | uc_berkeley | studies_at | zaos_prabhat -->
+- [ ] `Anusha (Hinge, Austin, Oracle)` —`works_at`→ `Oracle` (EXTRACTED 1.0) — imessage/individuals/anusha-hinge-austin/2026/2026-02__anush
+  - <!-- personal | anusha_hinge_austin | works_at | oracle -->
+- [ ] `LASA (Liberal Arts and Science Academy)` —`studies_at`→ `Chance Reeve` (EXTRACTED 1.0) — imessage/_profiles/group-group-chance-griffin-nikhil.md
+  - <!-- personal | lasa | studies_at | chance_reeve_lasa -->
+- [ ] `LASA (Liberal Arts and Science Academy)` —`studies_at`→ `Delvia Zhang (LASA)` (EXTRACTED 1.0) — imessage/individuals/delvia-zhang-lasa/2025/2025-01__delvia-
+  - <!-- personal | lasa | studies_at | delvia_zhang_lasa -->
+- [ ] `LASA (Liberal Arts and Science Academy)` —`studies_at`→ `Eshita (LASA)` (EXTRACTED 1.0) — imessage/_profiles/eshita-lasa.md
+  - <!-- personal | lasa | studies_at | eshita_lasa -->
+- [ ] `LASA (Liberal Arts and Science Academy)` —`studies_at`→ `Evan (LASA)` (EXTRACTED 1.0) — imessage/_profiles/evan-lasa.md
+  - <!-- personal | lasa | studies_at | evan_lasa -->
+- [ ] `LASA (Liberal Arts and Science Academy)` —`studies_at`→ `Nikhil Lasa` (INFERRED 0.8) — imessage/_profiles/nikhil-lasa.md
+  - <!-- personal | lasa | studies_at | nikhil_lasa -->
+- [ ] `LASA (Liberal Arts and Science Academy)` —`studies_at`→ `Sam Hopper (LASA)` (EXTRACTED 1.0) — imessage/_profiles/group-group-chance-griffin-nikhil.md
+  - <!-- personal | lasa | studies_at | sam_hopper_lasa -->
+- [ ] `LASA (Liberal Arts and Science Academy)` —`studies_at`→ `Matthew Lorber (LASA, LA)` (INFERRED 0.9) — imessage/individuals/matthew-lorber-lasa/2025/2025-01__matth
+  - <!-- personal | lasa | studies_at | matthew_lorber_lasa -->
+- [ ] `LASA (Liberal Arts and Science Academy)` —`studies_at`→ `Maxi (LASA, Irvine/Cali)` (INFERRED 0.9) — imessage/individuals/maxi-lasa/2025/2025-01__maxi-lasa.md
+  - <!-- personal | lasa | studies_at | maxi_lasa -->
+- [ ] `LASA (Liberal Arts and Science Academy)` —`studies_at`→ `Nathan (LASA)` (INFERRED 0.8) — imessage/_profiles/nathan-lasa.md
+  - <!-- personal | lasa | studies_at | nathan_lasa -->
+- [ ] `LASA (Liberal Arts and Science Academy)` —`studies_at`→ `Ozzy (LASA)` (INFERRED 0.8) — imessage/_profiles/ozzy-lasa.md
+  - <!-- personal | lasa | studies_at | ozzy_lasa -->
+- [ ] `LASA (Liberal Arts and Science Academy)` —`studies_at`→ `Parth (LASA)` (INFERRED 0.8) — imessage/_profiles/parth-lasa.md
+  - <!-- personal | lasa | studies_at | parth_lasa -->
+- [ ] `LASA (Liberal Arts and Science Academy)` —`studies_at`→ `Pranav (LASA)` (INFERRED 0.8) — imessage/_profiles/pranav-lasa.md
+  - <!-- personal | lasa | studies_at | pranav_lasa -->
+- [ ] `LASA (Liberal Arts and Science Academy)` —`studies_at`→ `Rachel` (INFERRED 0.8) — imessage/_profiles/rachel-lasa-usc.md
+  - <!-- personal | lasa | studies_at | rachel_lasa_usc -->
+- [ ] `LASA (Liberal Arts and Science Academy)` —`studies_at`→ `Kalen (LASA)` (INFERRED 0.8) — imessage/individuals/kalen-lasa/2025/2025-01__kalen-lasa.md
+  - <!-- personal | lasa | studies_at | kalen_lasa -->
+- [ ] `Rishika (UC Berkeley)` —`works_at`→ `Deloitte` (EXTRACTED 1.0) — imessage/individuals/rishika-uc-berkeley/2025/2025-12__rishi
+  - <!-- personal | rishika_uc_berkeley | works_at | deloitte -->
+- [ ] `Rohin (UC Berkeley / Davis)` —`works_at`→ `BridgeLink (Rohin's SF startup)` (EXTRACTED 1.0) — imessage/individuals/rohin-uc-berkeley/2024/2024-10__rohin-u
+  - <!-- personal | rohin_uc_berkeley | works_at | bridgelink_sf -->
+- [ ] `Prabhat Nuthakki (UC Berkeley)` —`lives_in`→ `Chicago` (EXTRACTED 1.0) — imessage/individuals/prabhat-nuthakki-uc-berkeley/2025/2025-
+  - <!-- personal | prabhat_nuthakki | lives_in | chicago -->
+- [ ] `Mohammed Alobaidi (Mo)` —`works_at`→ `leaked.fm` (EXTRACTED 1.0) — imessage/individuals/mo-snaps-uc-berkeley/2024/2024-04__mo-s
+  - <!-- personal | mo_snaps_uc_berkeley | works_at | leaked_fm -->
+- [ ] `Mohammed Alobaidi (Mo)` —`lives_in`→ `Harmon Cove Towers (Secaucus, NJ)` (EXTRACTED 1.0) — imessage/individuals/mo-snaps-uc-berkeley/2025/2025-01__mo-s
+  - <!-- personal | mo_snaps_uc_berkeley | lives_in | harmon_cove_towers_secaucus -->
+- [ ] `Sandeep Chinchali` —`works_at`→ `Story Protocol` (EXTRACTED 1.0) — imessage/individuals/sandeep-chinchali-austin/2025/2025-04__
+  - <!-- personal | sandeep_chinchali | works_at | story_protocol -->
+- [ ] `USC (University of Southern California)` —`studies_at`→ `Rachel` (INFERRED 0.8) — imessage/_profiles/rachel-lasa-usc.md
+  - <!-- personal | usc | studies_at | rachel_lasa_usc -->
+- [ ] `USC (University of Southern California)` —`studies_at`→ `Rahul Umapathy (USC LA)` (INFERRED 0.8) — imessage/_profiles/rahul-umapathy-usc-la.md
+  - <!-- personal | usc | studies_at | rahul_umapathy_usc_la -->
+- [ ] `San Francisco` —`works_at`→ `Kevin Bai (Slash)` (EXTRACTED 1.0) — imessage/groups/mit-launchx-sf/2025/2025-06__mit-launchx-sf.
+  - <!-- personal | san_francisco | works_at | kevin_bai_slash -->
+- [ ] `Maxim Kraft (SpaceX / Vista Energy, UC Berkeley)` —`works_at`→ `SpaceX` (INFERRED 0.8) — imessage/_profiles/maxim-kraft-spacex-uc-berkeley.md
+  - <!-- personal | maxim_kraft_spacex_uc_berkeley | works_at | spacex -->
+- [ ] `Maxim Kraft (SpaceX / Vista Energy, UC Berkeley)` —`works_at`→ `Vista Energy (decentralized energy storage startup)` (EXTRACTED 1.0) — imessage/individuals/maxim-kraft-spacex-uc-berkeley/2024/202
+  - <!-- personal | maxim_kraft_spacex_uc_berkeley | works_at | vista_energy -->
+- [ ] `Rene (Hinge, Austin)` —`lives_in`→ `Jarrell / Round Rock (Rene's area)` (EXTRACTED 1.0) — imessage/individuals/rene-hinge-austin/2026/2026-03__rene-hi
+  - <!-- personal | rene_hinge_austin | lives_in | jarrell_round_rock_area -->
+- [ ] `Shreya (UC Berkeley / Greylock)` —`works_at`→ `Greylock Partners` (EXTRACTED 1.0) — imessage/individuals/shreya-uc-berkeley/2025/2025-08__shreya
+  - <!-- personal | shreya_uc_berkeley | works_at | greylock -->
+- [ ] `Shubhan Dua (UC Berkeley / AnswersAI)` —`works_at`→ `AnswersAI` (EXTRACTED 1.0) — imessage/individuals/shubhan-dua-uc-berkeley/2025/2025-06__s
+  - <!-- personal | shubhan_dua_uc_berkeley | works_at | answers_ai -->
+- [ ] `Jonathan Vincent` —`lives_in`→ `Klein Court (LA property)` (EXTRACTED 1.0) — imessage/groups/group-amadeus-angel-evan-2/2025/2025-10__gro
+  - <!-- personal | john_vincent | lives_in | klein_court_property -->
+- [ ] `Austin (Renter)` —`lives_in`→ `Klein Court (LA property)` (EXTRACTED 1.0) — imessage/groups/group-amadeus-angel-austin/2025/2025-08__gro
+  - <!-- personal | austin_renter | lives_in | klein_court_property -->
+- [ ] `Austin Allen Davis (Renter, Music Industry)` —`works_at`→ `Range Music Publishing` (EXTRACTED 1.0) — imessage/individuals/austin-davis-renter-showing/2025/2025-0
+  - <!-- personal | austin_davis | works_at | range_music_publishing -->
+- [ ] `Caitlin (Prescription Studio contact)` —`works_at`→ `Prescription Songs` (INFERRED 0.9) — imessage/groups/group-caitlin-keith-ryan-2/2024/2024-03__gro
+  - <!-- personal | caitlin_prescription | works_at | prescription_songs -->
+- [ ] `Layer (Web3 company, AVS tooling)` —`works_at`→ `Sam Cassatt (CSO, Layer)` (EXTRACTED 1.0) — imessage/individuals/shervin-blockchain-uc-berkeley/2025/202
+  - <!-- personal | layer_web3 | works_at | sam_cassatt -->
+- [ ] `Layer (Web3 company, AVS tooling)` —`works_at`→ `Jake Hartnell (Co-founder, Layer)` (EXTRACTED 1.0) — imessage/individuals/shervin-blockchain-uc-berkeley/2025/202
+  - <!-- personal | layer_web3 | works_at | jake_hartnell -->
+
+### Low-confidence INFERRED (below threshold) (303)
+
+- [ ] `Adithya` —`related_to`→ `Balu Sukanya Aunty (Austin)` (INFERRED 0.75) — imessage/_profiles/balu-sukanya-aunty-austin.md
+  - <!-- personal | adithya | related_to | balu_sukanya_aunty_austin -->
+- [ ] `Adithya` —`lives_in`→ `Griffin Noah (Roommate)` (INFERRED 0.8) — imessage/individuals/griffin-noah-roomate/2025/2025-03__grif
+  - <!-- personal | adithya | lives_in | griffin_noah_roommate -->
+- [ ] `Adithya` —`related_to`→ `Rema Hariharan (Aunty, Austin)` (INFERRED 0.8) — imessage/individuals/rema-hariharan-aunty-austin/2025/2025-1
+  - <!-- personal | adithya | related_to | rema_hariharan_aunty_austin -->
+- [ ] `Adithya` —`related_to`→ `Johny Hadar (Producer, LA)` (INFERRED 0.8) — imessage/individuals/johny-hadar-producer-la/2024/2024-03__j
+  - <!-- personal | adithya | related_to | johny_hadar_producer_la -->
+- [ ] `Adithya` —`related_to`→ `Nandini Aunty (Bay Area)` (INFERRED 0.75) — imessage/_profiles/nandini-aunty-bay-area-california.md
+  - <!-- personal | adithya | related_to | nandini_aunty_bay_area -->
+- [ ] `Adithya` —`related_to`→ `Coca-Cola Scholars Program` (INFERRED 0.8) — imessage/_profiles/ritvik-coke-scholars.md
+  - <!-- personal | adithya | related_to | coke_scholars -->
+- [ ] `Adithya` —`lives_in`→ `Shriya (NYC / Jersey)` (INFERRED 0.8) — imessage/individuals/shriya-nyc/2025/2025-06__shriya-nyc.md
+  - <!-- personal | adithya | lives_in | shriya_nyc -->
+- [ ] `Adithya` —`related_to`→ `Suchith Palyam (UC Berkeley)` (INFERRED 0.7) — imessage/individuals/suchith-palyam-uc-berkeley/2024/2024-05
+  - <!-- personal | adithya | related_to | suchith_palyam_uc_berkeley -->
+- [ ] `Adithya` —`related_to`→ `Suhas (UCLA)` (INFERRED 0.8) — imessage/individuals/suhas/2024/2024-04__suhas.md
+  - <!-- personal | adithya | related_to | suhas -->
+- [ ] `Adithya` —`related_to`→ `Tejes Srinivasan (NYC)` (INFERRED 0.8) — imessage/individuals/tejes-srinivasan-nyc/2025/2025-07__teje
+  - <!-- personal | adithya | related_to | tejes_srinivasan_nyc -->
+- [ ] `Adithya` —`related_to`→ `Pi Kappa Alpha (Pi Kap)` (INFERRED 0.7) — imessage/groups/group-arya-hunter-rylen/2025/2025-05__group-
+  - <!-- personal | adithya | related_to | pi_kap -->
+- [ ] `Adithya` —`related_to`→ `2019 Toyota Camry` (INFERRED 0.8) — imessage/individuals/dad-9967/2025/2025-10__dad-9967.md
+  - <!-- personal | adithya | related_to | toyota_camry_2019 -->
+- [ ] `Abhi (Hinge / Austin)` —`lives_in`→ `Austin, TX` (INFERRED 0.7) — imessage/individuals/abhi-hinge-austin/2026/2026-02__abhi-hi
+  - <!-- personal | abhi_hinge_austin | lives_in | austin_tx -->
+- [ ] `Abhi (NYC / Hinge)` —`lives_in`→ `New York City` (INFERRED 0.8) — imessage/individuals/abhi-nyc/2025/2025-08__abhi-nyc.md
+  - <!-- personal | abhi_nyc | lives_in | new_york_city -->
+- [ ] `Abraham (Crypto / LightNode Ventures, LA)` —`related_to`→ `Avery (Stanford Biotech / NYC)` (INFERRED 0.7) — imessage/_profiles/group-group-abraham-avery.md
+  - <!-- personal | abraham_crypto_lightnodeventures_la | related_to | avery_abraham_stanford_biotech_nyc -->
+- [ ] `Adamaris (Renter/Room Showing 2026)` —`related_to`→ `Klein Ct Rental Property (Sylmar, CA)` (INFERRED 0.8) — imessage/_profiles/adamaris-renter-showing26.md
+  - <!-- personal | adamaris_renter_showing26 | related_to | klein_ct_rental_property -->
+- [ ] `Adarsh Pinjala` —`studies_at`→ `UC Berkeley` (INFERRED 0.8) — imessage/_profiles/group-amsterdam.md
+  - <!-- personal | adarsh_pinjala | studies_at | uc_berkeley -->
+- [ ] `Adarsh Pinjala` —`related_to`→ `UC Berkeley Network` (INFERRED 0.7) — imessage/_profiles/group-group-adarsh-rushil.md
+  - <!-- personal | adarsh_pinjala | related_to | uc_berkeley_network -->
+- [ ] `Adi Rao (UC Berkeley / NYC)` —`lives_in`→ `New York City` (INFERRED 0.8) — imessage/individuals/adi-rao-uc-berkeley-nyc/2025/2025-02__a
+  - <!-- personal | adi_rao_uc_berkeley_nyc | lives_in | new_york_city -->
+- [ ] `Aditya Desai (LASA / Austin)` —`from`→ `Austin, TX` (INFERRED 0.75) — imessage/individuals/aditya-desai/2025/2025-01__aditya-desai
+  - <!-- personal | aditya_desai | from | austin_tx -->
+- [ ] `Alan (renter inquiry, Sylmar)` —`related_to`→ `Klein Ct Rental Property (Sylmar, CA)` (INFERRED 0.8) — imessage/_profiles/alan-renter-showing26.md
+  - <!-- personal | alan_renter_showing26 | related_to | klein_ct_rental_property -->
+- [ ] `Aleena (Hinge, Austin)` —`studies_at`→ `UT Austin` (INFERRED 0.75) — imessage/individuals/aleena-hinge-austin/2026/2026-03__aleen
+  - <!-- personal | aleena_hinge_austin | studies_at | ut_austin -->
+- [ ] `UC Berkeley Network` —`related_to`→ `Rushil Jha` (INFERRED 0.7) — imessage/_profiles/group-group-adarsh-rushil.md
+  - <!-- personal | uc_berkeley_network | related_to | rushil_jha -->
+- [ ] `UC Berkeley Network` —`related_to`→ `Shlok (UC Berkeley/NYC)` (INFERRED 0.7) — imessage/_profiles/group-group-adi-shlok.md
+  - <!-- personal | uc_berkeley_network | related_to | shlok_uc_berkeley -->
+- [ ] `UC Berkeley Network` —`related_to`→ `Adi Rao (UC Berkeley NYC)` (INFERRED 0.7) — imessage/_profiles/group-group-adi-shlok.md
+  - <!-- personal | uc_berkeley_network | related_to | adi_rao -->
+- [ ] `Music Production` —`related_to`→ `Ben Guitar UC Berkeley` (INFERRED 0.7) — imessage/_profiles/ben-guitar-uc-berkeley.md
+  - <!-- personal | music_production | related_to | ben_guitar_uc_berkeley -->
+- [ ] `Music Production` —`related_to`→ `Jakkyboi (LA Music)` (INFERRED 0.8) — imessage/_profiles/jakkyboi-la-music.md
+  - <!-- personal | music_production | related_to | jakkyboi_la_music -->
+- [ ] `Music Production` —`related_to`→ `Jaxxy (Producer LA)` (INFERRED 0.8) — imessage/_profiles/jaxxy-producer-la.md
+  - <!-- personal | music_production | related_to | jaxxy_producer_la -->
+- [ ] `Music Production` —`related_to`→ `Ryan (music mentor / Yale)` (INFERRED 0.8) — imessage/groups/group-caitlin-ryan/2025/2025-10__group-caitl
+  - <!-- personal | music_production | related_to | ryan -->
+- [ ] `Music Production` —`related_to`→ `Bibby (Grade A, LA)` (INFERRED 0.8) — imessage/individuals/bibby-grade-a-la/2026/2026-04__bibby-gr
+  - <!-- personal | music_production | related_to | bibby_grade_a -->
+- [ ] `Music Production` —`related_to`→ `Donut (Producer LA)` (INFERRED 0.8) — imessage/individuals/donut-producer-la/2024/2024-05__donut-p
+  - <!-- personal | music_production | related_to | donut_producer_la -->
+- [ ] `Austin, TX` —`lives_in`→ `Anusha (Hinge, Austin, 5817)` (INFERRED 0.8) — imessage/_profiles/anusha-hinge-austin-5817.md
+  - <!-- personal | austin_tx | lives_in | anusha_hinge_austin_5817 -->
+- [ ] `Austin, TX` —`lives_in`→ `Anusha (Hinge, Austin, Oracle)` (INFERRED 0.8) — imessage/_profiles/anusha-hinge-austin.md
+  - <!-- personal | austin_tx | lives_in | anusha_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Areza (Hinge, Austin)` (INFERRED 0.8) — imessage/_profiles/areza-hinge-austin.md
+  - <!-- personal | austin_tx | lives_in | areza_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Arianna (Hinge, Austin)` (INFERRED 0.8) — imessage/_profiles/arianna-hinge-austin.md
+  - <!-- personal | austin_tx | lives_in | arianna_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Ariel (Hinge/Tinder, Austin)` (INFERRED 0.8) — imessage/_profiles/ariel-hinge-austin.md
+  - <!-- personal | austin_tx | lives_in | ariel_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Ashley (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/ashley-hinge-austin.md
+  - <!-- personal | austin_tx | lives_in | ashley_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Ava (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/ava-hinge-austin.md
+  - <!-- personal | austin_tx | lives_in | ava_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Balu Sukanya Aunty (Austin)` (INFERRED 0.8) — imessage/_profiles/balu-sukanya-aunty-austin.md
+  - <!-- personal | austin_tx | lives_in | balu_sukanya_aunty_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Bela McScoggin (LASA Austin)` (INFERRED 0.8) — imessage/_profiles/bela-mcscoggin-lasa-austin.md
+  - <!-- personal | austin_tx | lives_in | bela_mcscoggin_lasa_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Carla (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/carla-hinge-austin.md
+  - <!-- personal | austin_tx | lives_in | carla_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Carolina (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/carolina-hinge-austin.md
+  - <!-- personal | austin_tx | lives_in | carolina_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Celine (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/celine-hinge-austin.md
+  - <!-- personal | austin_tx | lives_in | celine_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Clair (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/clair-hinge-austin.md
+  - <!-- personal | austin_tx | lives_in | clair_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Cleo (Hinge / College Station)` (INFERRED 0.8) — imessage/_profiles/cleo-hinge-austin.md
+  - <!-- personal | austin_tx | lives_in | cleo_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Sai Guraijala (Austin Casco)` (INFERRED 0.8) — imessage/_profiles/group-group-dravin-sai-sam.md
+  - <!-- personal | austin_tx | lives_in | sai_guraijala_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Kelly (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/kelly-hinge-austin.md
+  - <!-- personal | austin_tx | lives_in | kelly_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Kenny (Hair of the Dog, NYC/Austin)` (INFERRED 0.7) — imessage/_profiles/kenny-hair-of-the-dog-nyc-austin.md
+  - <!-- personal | austin_tx | lives_in | kenny_hair_of_the_dog_nyc_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Keona (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/keona-hinge-austin.md
+  - <!-- personal | austin_tx | lives_in | keona_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Khushi (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/khushi-hinge-austin.md
+  - <!-- personal | austin_tx | lives_in | khushi_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Kimaya (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/kimaya-hinge-austin.md
+  - <!-- personal | austin_tx | lives_in | kimaya_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Kirti (Hinge Austin 2682)` (INFERRED 0.8) — imessage/_profiles/kirti-hinge-austin-2682.md
+  - <!-- personal | austin_tx | lives_in | kirti_hinge_austin_2682 -->
+- [ ] `Austin, TX` —`lives_in`→ `Kirti (Hinge Austin, Round Rock)` (INFERRED 0.8) — imessage/_profiles/kirti-hinge-austin.md
+  - <!-- personal | austin_tx | lives_in | kirti_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Krisha (Hinge Austin, near UT)` (INFERRED 0.8) — imessage/_profiles/krisha-hinge-austin.md
+  - <!-- personal | austin_tx | lives_in | krisha_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Laila (Hinge Austin, West Campus)` (INFERRED 0.8) — imessage/_profiles/laila-hinge-austin.md
+  - <!-- personal | austin_tx | lives_in | laila_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Lauren (Hinge, Austin)` (INFERRED 0.8) — imessage/_profiles/lauren-hinge-austin.md
+  - <!-- personal | austin_tx | lives_in | lauren_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Leeci (Hinge, Austin)` (INFERRED 0.8) — imessage/_profiles/leeci-hinge-austin.md
+  - <!-- personal | austin_tx | lives_in | leeci_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Lena (Hinge, Austin)` (INFERRED 0.8) — imessage/_profiles/lena-hinge-austin.md
+  - <!-- personal | austin_tx | lives_in | lena_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Lolly (Hinge, Austin)` (INFERRED 0.8) — imessage/_profiles/lolly-hinge-austin.md
+  - <!-- personal | austin_tx | lives_in | lolly_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Lorenz Redlefsen (Austin)` (INFERRED 0.8) — imessage/_profiles/lorenz-redlefsen-austin.md
+  - <!-- personal | austin_tx | lives_in | lorenz_redlefsen_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Jaliah (Hinge Austin)` (INFERRED 0.8) — imessage/individuals/jaliah-hinge-austin/2026/2026-03__jalia
+  - <!-- personal | austin_tx | lives_in | jaliah_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Jannat (Hinge Austin)` (INFERRED 0.8) — imessage/individuals/jannat-hinge-austin/2025/2025-07__janna
+  - <!-- personal | austin_tx | lives_in | jannat_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Janice (Hinge Austin)` (INFERRED 0.8) — imessage/individuals/janice-hinge-austin/2026/2026-03__janic
+  - <!-- personal | austin_tx | lives_in | janice_hinge_austin -->
+- [ ] `Austin, TX` —`from`→ `Sam Garcia` (INFERRED 0.8) — imessage/individuals/sam-garcia/2025/2025-10__sam-garcia.md
+  - <!-- personal | austin_tx | from | sam_garcia -->
+- [ ] `New York City` —`lives_in`→ `Rushil Jha (UC Berkeley / NYC)` (INFERRED 0.8) — imessage/_profiles/group-amsterdam.md
+  - <!-- personal | nyc | lives_in | rushil_jha_uc_berkeley_nyc -->
+- [ ] `New York City` —`lives_in`→ `Pseuhas` (INFERRED 0.8) — imessage/_profiles/group-group-abraham-pseuhas-xanos.md
+  - <!-- personal | nyc | lives_in | pseuhas_uc_berkeley_nyc -->
+- [ ] `Los Angeles, CA` —`from`→ `Alejandra (Tinder, LA)` (INFERRED 0.8) — imessage/_profiles/alejandra-tinder-la.md
+  - <!-- personal | los_angeles | from | alejandra_tinder_la -->
+- [ ] `Los Angeles, CA` —`from`→ `Ananya (Hinge, LA/Riverside)` (INFERRED 0.8) — imessage/_profiles/ananya-hinge-la.md
+  - <!-- personal | los_angeles | from | ananya_hinge_la -->
+- [ ] `Los Angeles, CA` —`from`→ `Angelica (Hinge LA)` (INFERRED 0.8) — imessage/_profiles/angelica-hinge-la.md
+  - <!-- personal | los_angeles | from | angelica_hinge_la -->
+- [ ] `Los Angeles, CA` —`from`→ `Anisha (Hinge LA)` (INFERRED 0.8) — imessage/_profiles/anisha-hinge-la.md
+  - <!-- personal | los_angeles | from | anisha_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Arielle (Hinge, LA / Canoga Park)` (INFERRED 0.8) — imessage/_profiles/arielle-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | arielle_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Bella (Tinder, Austin/LA)` (INFERRED 0.8) — imessage/_profiles/bella-tinder-la.md
+  - <!-- personal | los_angeles | lives_in | bella_tinder_la -->
+- [ ] `Los Angeles, CA` —`from`→ `Silver Lining Studios` (INFERRED 0.7) — imessage/_profiles/ellie-silver-lining-studios.md
+  - <!-- personal | los_angeles | from | silver_lining_studios -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Jean Parker (Producer, LA)` (INFERRED 0.8) — imessage/_profiles/jean-parker-producer-la.md
+  - <!-- personal | los_angeles | lives_in | jean_parker_producer_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Mary (Tinder match, LA / Highland Park)` (INFERRED 0.8) — imessage/_profiles/mary-tinder-la.md
+  - <!-- personal | los_angeles | lives_in | mary_tinder_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Methvindi (Hinge match, LA / Canoga Park)` (INFERRED 0.8) — imessage/_profiles/methvindi-hinge-la.md
+  - <!-- personal | los_angeles | lives_in | methvindi_hinge_la -->
+- [ ] `Los Angeles, CA` —`lives_in`→ `Michael V (Silver Lining Studio, LA)` (INFERRED 0.8) — imessage/_profiles/michael-v-silver-lining-la.md
+  - <!-- personal | los_angeles | lives_in | michael_v_silver_lining_la -->
+- [ ] `Alex Duckworth (crypto)` —`related_to`→ `Andrew Liutev (Crypto)` (INFERRED 0.65) — imessage/_profiles/alex-duckworth-crypto.md
+  - <!-- personal | alex_duckworth_crypto | related_to | andrew_liutev_crypto -->
+- [ ] `Alpin Yukseloglu (UC Berkeley / crypto/AI)` —`related_to`→ `Andy (Blockchain, UC Berkeley)` (INFERRED 0.7) — imessage/_profiles/alpin-yukseloglu-uc-berkeley.md
+  - <!-- personal | alpin_yukseloglu_uc_berkeley | related_to | andy_blockchain_uc_berkeley -->
+- [ ] `Amisha (Hinge, NYC/Jersey)` —`from`→ `New York City` (INFERRED 0.8) — imessage/_profiles/amisha-nyc.md
+  - <!-- personal | amisha_nyc | from | new_york_city -->
+- [ ] `Amru (Hinge, Dallas/Austin)` —`from`→ `Dallas` (INFERRED 0.8) — imessage/_profiles/amru-hinge-dallas.md
+  - <!-- personal | amru_hinge_dallas | from | dallas -->
+- [ ] `Ana (Hinge, Austin)` —`from`→ `Austin, TX` (INFERRED 0.8) — imessage/_profiles/ana-hinge-austin.md
+  - <!-- personal | ana_hinge_austin | from | austin -->
+- [ ] `Anagha (NYC)` —`from`→ `New York City` (INFERRED 0.8) — imessage/_profiles/anagha-nyc.md
+  - <!-- personal | anagha_nyc | from | new_york_city -->
+- [ ] `Anai (Hinge, Austin)` —`from`→ `Austin, TX` (INFERRED 0.8) — imessage/_profiles/anai-hinge-austin.md
+  - <!-- personal | anai_hinge_austin | from | austin -->
+- [ ] `Ananya (Hinge, Austin)` —`from`→ `Austin, TX` (INFERRED 0.8) — imessage/_profiles/ananya-hinge-austin.md
+  - <!-- personal | ananya_hinge_austin | from | austin -->
+- [ ] `Ananya (NYC, Hinge, NJ)` —`lives_in`→ `New York City` (INFERRED 0.8) — imessage/individuals/ananya-nyc-0250/2025/2025-06__ananya-ny
+  - <!-- personal | ananya_nyc_0250 | lives_in | new_york_city -->
+- [ ] `Ananya (NYC, Hinge, 2509)` —`from`→ `New York City` (INFERRED 0.8) — imessage/_profiles/ananya-nyc-2509.md
+  - <!-- personal | ananya_nyc_2509 | from | new_york_city -->
+- [ ] `Ananya (NYC, Hinge)` —`from`→ `New York City` (INFERRED 0.8) — imessage/_profiles/ananya-nyc.md
+  - <!-- personal | ananya_nyc | from | new_york_city -->
+- [ ] `Aneesha (NYC, Hinge)` —`from`→ `New York City` (INFERRED 0.8) — imessage/_profiles/aneesha-nyc.md
+  - <!-- personal | aneesha_nyc | from | new_york_city -->
+- [ ] `Angad (Austin)` —`from`→ `Austin, TX` (INFERRED 0.8) — imessage/_profiles/angad-austin.md
+  - <!-- personal | angad_austin | from | austin -->
+- [ ] `Anika (Hinge Austin 0555)` —`from`→ `Austin, TX` (INFERRED 0.8) — imessage/_profiles/anika-hinge-austin-0555.md
+  - <!-- personal | anika_hinge_austin_0555 | from | austin -->
+- [ ] `Anika (Hinge Austin 4148)` —`from`→ `Austin, TX` (INFERRED 0.8) — imessage/_profiles/anika-hinge-austin-4148.md
+  - <!-- personal | anika_hinge_austin_4148 | from | austin -->
+- [ ] `Anika (Hinge Austin 2258)` —`from`→ `Austin, TX` (INFERRED 0.8) — imessage/_profiles/anika-hinge-austin.md
+  - <!-- personal | anika_hinge_austin | from | austin -->
+- [ ] `Aniruddh Mishra (Austin)` —`from`→ `Austin, TX` (INFERRED 0.8) — imessage/_profiles/aniruddh-mishra-austin.md
+  - <!-- personal | aniruddh_mishra_austin | from | austin -->
+- [ ] `Anisha (Hinge Austin)` —`from`→ `Austin, TX` (INFERRED 0.8) — imessage/_profiles/anisha-hinge-austin.md
+  - <!-- personal | anisha_hinge_austin | from | austin -->
+- [ ] `Anisha (Hinge Dallas)` —`from`→ `Dallas` (INFERRED 0.8) — imessage/_profiles/anisha-hinge-dallas.md
+  - <!-- personal | anisha_hinge_dallas | from | dallas -->
+- [ ] `Anita (Hinge Austin/Rockdale)` —`from`→ `Austin, TX` (INFERRED 0.8) — imessage/_profiles/anita-hinge-austin.md
+  - <!-- personal | anita_hinge_austin | from | austin -->
+- [ ] `Anjali Nagarajan (Hinge Austin)` —`from`→ `Austin, TX` (INFERRED 0.8) — imessage/_profiles/anjali-hinge-austin.md
+  - <!-- personal | anjali_hinge_austin | from | austin -->
+- [ ] `Anju (Hinge Dallas)` —`from`→ `Dallas` (INFERRED 0.8) — imessage/_profiles/anju-hinge-dallas.md
+  - <!-- personal | anju_hinge_dallas | from | dallas -->
+- [ ] `Ankit (UC Berkeley)` —`studies_at`→ `UC Berkeley` (INFERRED 0.8) — imessage/individuals/edwin-gregory-uc-berkeley/2025/2025-03_
+  - <!-- personal | ankit_uc_berkeley | studies_at | uc_berkeley -->
+- [ ] `Ankit (UC Berkeley)` —`related_to`→ `Ankur (UC Berkeley)` (INFERRED 0.7) — imessage/_profiles/ankit-uc-berkeley.md
+  - <!-- personal | ankit_uc_berkeley | related_to | ankur_uc_berkeley -->
+- [ ] `Ankita (Hinge NYC)` —`from`→ `New York City` (INFERRED 0.8) — imessage/_profiles/ankita-hinge-nyc.md
+  - <!-- personal | ankita_hinge_nyc | from | new_york_city -->
+- [ ] `New York City` —`lives_in`→ `Avery (Stanford Biotech / NYC)` (INFERRED 0.75) — imessage/_profiles/avery-abraham-stanford-biotech-nyc.md
+  - <!-- personal | new_york_city | lives_in | avery_abraham_stanford_biotech_nyc -->
+- [ ] `New York City` —`lives_in`→ `Pseuhas (UC Berkeley, NYC)` (INFERRED 0.8) — imessage/_profiles/group-group-mo-pseuhas-shervin.md
+  - <!-- personal | new_york_city | lives_in | pseuhas_uc_berkeley -->
+- [ ] `New York City` —`lives_in`→ `Risheek (Sammys UC Berkeley NYC)` (INFERRED 0.75) — imessage/_profiles/group-group-deven-pseuhas-risheek-2.md
+  - <!-- personal | new_york_city | lives_in | risheek_sammys_berkeley -->
+- [ ] `New York City` —`lives_in`→ `Shlok (UC Berkeley/NYC)` (INFERRED 0.8) — imessage/_profiles/group-group-mo-shlok-vihan.md
+  - <!-- personal | new_york_city | lives_in | shlok_uc_berkeley -->
+- [ ] `New York City` —`lives_in`→ `Jaylem Brar (UC Berkeley / NYC)` (INFERRED 0.7) — imessage/_profiles/jaylem-brar-uc-berkeley-nyc.md
+  - <!-- personal | new_york_city | lives_in | jaylem_brar_uc_berkeley_nyc -->
+- [ ] `New York City` —`from`→ `Kenny (Hair of the Dog, NYC/Austin)` (INFERRED 0.7) — imessage/_profiles/kenny-hair-of-the-dog-nyc-austin.md
+  - <!-- personal | new_york_city | from | kenny_hair_of_the_dog_nyc_austin -->
+- [ ] `New York City` —`lives_in`→ `Maanav Khaitan` (INFERRED 0.7) — imessage/_profiles/maanav-khaitan-uc-berkeley-nyc.md
+  - <!-- personal | new_york_city | lives_in | maanav_khaitan_uc_berkeley_nyc -->
+- [ ] `New York City` —`lives_in`→ `Om Uncle (New York)` (INFERRED 0.8) — imessage/_profiles/om-uncle-new-york.md
+  - <!-- personal | new_york_city | lives_in | om_uncle_new_york -->
+- [ ] `New York City` —`lives_in`→ `Pseuhas` (INFERRED 0.7) — imessage/_profiles/pseuhas-uc-berkeley-nyc.md
+  - <!-- personal | new_york_city | lives_in | pseuhas_uc_berkeley_nyc -->
+- [ ] `New York City` —`lives_in`→ `Risheek (Sammy's, UC Berkeley, NYC)` (INFERRED 0.7) — imessage/_profiles/risheek-sammys-uc-berkeley-nyc.md
+  - <!-- personal | new_york_city | lives_in | risheek_sammys_uc_berkeley_nyc -->
+- [ ] `New York City` —`lives_in`→ `Rushil Jha (UC Berkeley / NYC)` (INFERRED 0.8) — imessage/groups/unkal/2025/2025-01__unkal.md
+  - <!-- personal | new_york_city | lives_in | rushil_jha_uc_berkeley_nyc -->
+- [ ] `New York City` —`lives_in`→ `Ben (guitar, UC Berkeley / SF)` (INFERRED 0.7) — imessage/individuals/ben-guitar-uc-berkeley/2025/2025-08__be
+  - <!-- personal | new_york_city | lives_in | ben_guitar_berkeley -->
+- [ ] `New York City` —`related_to`→ `Karthika (Hinge LA)` (INFERRED 0.7) — imessage/individuals/karthika-hinge-la/2026/2026-02__karthik
+  - <!-- personal | new_york_city | related_to | karthika_hinge_la -->
+- [ ] `Austin, TX` —`lives_in`→ `Decela (Hinge, Austin)` (INFERRED 0.8) — imessage/_profiles/decela-hinge-austin.md
+  - <!-- personal | austin | lives_in | decela_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Desiree (Hinge, Austin)` (INFERRED 0.8) — imessage/_profiles/desiree-hinge-austin.md
+  - <!-- personal | austin | lives_in | desiree_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Devna (Hinge, Austin)` (INFERRED 0.8) — imessage/_profiles/devna-hinge-austin.md
+  - <!-- personal | austin | lives_in | devna_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Dravin Raj (Austin)` (INFERRED 0.8) — imessage/_profiles/dravin-raj-austin.md
+  - <!-- personal | austin | lives_in | dravin_raj_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Hansika (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/hansika-hinge-austin.md
+  - <!-- personal | austin | lives_in | hansika_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Harshini (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/harshini-hinge-austin.md
+  - <!-- personal | austin | lives_in | harshini_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Hazel (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/hazel-hinge-austin.md
+  - <!-- personal | austin | lives_in | hazel_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Ianna (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/ianna-hinge-austin.md
+  - <!-- personal | austin | lives_in | ianna_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Jacob Kintlze (Austin)` (INFERRED 0.8) — imessage/_profiles/jacob-kintlze-austin.md
+  - <!-- personal | austin | lives_in | jacob_kintlze_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Jaliah (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/jaliah-hinge-austin.md
+  - <!-- personal | austin | lives_in | jaliah_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Janet (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/janet-hinge-austin.md
+  - <!-- personal | austin | lives_in | janet_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Janice (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/janice-hinge-austin.md
+  - <!-- personal | austin | lives_in | janice_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Jannat (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/jannat-hinge-austin.md
+  - <!-- personal | austin | lives_in | jannat_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Jayani (Hinge / Austin)` (INFERRED 0.8) — imessage/_profiles/jayani-hinge-austin.md
+  - <!-- personal | austin | lives_in | jayani_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Jayna (Hinge / Austin)` (INFERRED 0.8) — imessage/_profiles/jayna-hinge-austin.md
+  - <!-- personal | austin | lives_in | jayna_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `JJ (Tinder / Austin)` (INFERRED 0.8) — imessage/_profiles/jj-hinge-austin.md
+  - <!-- personal | austin | lives_in | jj_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Jocelyn (Hinge / Austin)` (INFERRED 0.8) — imessage/_profiles/jocelyn-hinge-austin.md
+  - <!-- personal | austin | lives_in | jocelyn_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Jodie (Hinge / Austin)` (INFERRED 0.8) — imessage/_profiles/jodie-hinge-austin.md
+  - <!-- personal | austin | lives_in | jodie_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Juliette (Hinge, Austin)` (INFERRED 0.8) — imessage/_profiles/juliette-hinge-austin.md
+  - <!-- personal | austin | lives_in | juliette_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Jurnee (Hinge, Austin)` (INFERRED 0.8) — imessage/_profiles/jurnee-hinge-austin.md
+  - <!-- personal | austin | lives_in | jurnee_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Karla (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/karla-hinge-austin.md
+  - <!-- personal | austin | lives_in | karla_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Kaylie (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/kaylie-hinge-austin.md
+  - <!-- personal | austin | lives_in | kaylie_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Makaya (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/makaya-hinge-austin.md
+  - <!-- personal | austin | lives_in | makaya_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Manal (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/manal-hinge-austin.md
+  - <!-- personal | austin | lives_in | manal_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Mandira (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/mandira-hinge-austin.md
+  - <!-- personal | austin | lives_in | mandira_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Mannah (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/mannah-hinge-austin.md
+  - <!-- personal | austin | lives_in | mannah_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Mehak (Hinge match, Austin)` (INFERRED 0.8) — imessage/_profiles/mehak-hinge-austin.md
+  - <!-- personal | austin | lives_in | mehak_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Mikaela (Tinder/Hinge match, Austin)` (INFERRED 0.8) — imessage/_profiles/mikaela-hinge-austin.md
+  - <!-- personal | austin | lives_in | mikaela_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Miloni (Hinge, Austin)` (INFERRED 0.8) — imessage/_profiles/miloni-hinge-austin.md
+  - <!-- personal | austin | lives_in | miloni_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Miya (Hinge, Austin)` (INFERRED 0.8) — imessage/_profiles/miya-hinge-austin.md
+  - <!-- personal | austin | lives_in | miya_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Parth Croft (Austin/Stanford)` (INFERRED 0.8) — imessage/_profiles/parth-croft-austin.md
+  - <!-- personal | austin | lives_in | parth_croft_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Patrick (LASA Austin)` (INFERRED 0.8) — imessage/_profiles/patrick-lasa-austin.md
+  - <!-- personal | austin | lives_in | patrick_lasa_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Presley (Hinge, Austin)` (INFERRED 0.8) — imessage/_profiles/presley-hinge-austin.md
+  - <!-- personal | austin | lives_in | presley_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Raunak (Hinge, Austin)` (INFERRED 0.8) — imessage/_profiles/raunak-hinge-austin.md
+  - <!-- personal | austin | lives_in | raunak_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Ryan (UT Austin)` (INFERRED 0.8) — imessage/_profiles/ryan-ut-austin.md
+  - <!-- personal | austin | lives_in | ryan_ut_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Kimaya (Hinge Austin)` (INFERRED 0.8) — imessage/individuals/kimaya-hinge-austin/2025/2025-07__kimay
+  - <!-- personal | austin | lives_in | kimaya_hinge_austin -->
+- [ ] `Austin, TX` —`lives_in`→ `Kirti (Hinge Austin 2682)` (INFERRED 0.8) — imessage/individuals/kirti-hinge-austin-2682/2026/2026-02__k
+  - <!-- personal | austin | lives_in | kirti_hinge_austin_2682 -->
+- [ ] `Austin, TX` —`lives_in`→ `Krisha (Hinge Austin, near UT)` (INFERRED 0.8) — imessage/individuals/krisha-hinge-austin/2026/2026-04__krish
+  - <!-- personal | austin | lives_in | krisha_hinge_austin -->
+- [ ] `Dallas` —`lives_in`→ `Ayushi (Hinge Dallas)` (INFERRED 0.8) — imessage/_profiles/ayushi-hinge-dallas.md
+  - <!-- personal | dallas | lives_in | ayushi_hinge_dallas -->
+- [ ] `Dallas` —`lives_in`→ `Kara (Hinge Dallas)` (INFERRED 0.8) — imessage/_profiles/kara-hinge-dallas.md
+  - <!-- personal | dallas | lives_in | kara_hinge_dallas -->
+- [ ] `Dallas` —`lives_in`→ `Kayla (Hinge Dallas)` (INFERRED 0.8) — imessage/_profiles/kayla-hinge-dallas.md
+  - <!-- personal | dallas | lives_in | kayla_hinge_dallas -->
+- [ ] `Dallas` —`lives_in`→ `Joy (Dallas, Pharmacy School)` (INFERRED 0.8) — imessage/_profiles/joy-dallas.md
+  - <!-- personal | dallas | lives_in | joy_dallas -->
+- [ ] `Dallas` —`lives_in`→ `Karthik (Dallas)` (INFERRED 0.8) — imessage/_profiles/karthik-dallas.md
+  - <!-- personal | dallas | lives_in | karthik_dallas -->
+- [ ] `UC Berkeley` —`studies_at`→ `Chandler (SpaceX / UC Berkeley)` (INFERRED 0.8) — imessage/_profiles/chandler-spacex-uc-berkeley.md
+  - <!-- personal | uc_berkeley | studies_at | chandler_spacex_uc_berkeley -->
+- [ ] `UC Berkeley` —`studies_at`→ `Deven Matthews (Blockchain Berkeley)` (INFERRED 0.8) — imessage/_profiles/deven-matthews-blockchain-berkeley.md
+  - <!-- personal | uc_berkeley | studies_at | deven_matthews_blockchain_berkeley -->
+- [ ] `UC Berkeley` —`studies_at`→ `Maxim Kraft (SpaceX UC Berkeley)` (INFERRED 0.8) — imessage/_profiles/group-group-divyesh-maxim.md
+  - <!-- personal | uc_berkeley | studies_at | maxim_kraft -->
+- [ ] `UC Berkeley` —`studies_at`→ `Mike (UC Berkeley)` (INFERRED 0.8) — imessage/_profiles/mike-uc-berkeley.md
+  - <!-- personal | uc_berkeley | studies_at | mike_uc_berkeley -->
+- [ ] `UC Berkeley` —`studies_at`→ `Shervin (Blockchain/UC Berkeley)` (INFERRED 0.8) — imessage/_profiles/shervin-blockchain-uc-berkeley.md
+  - <!-- personal | uc_berkeley | studies_at | shervin_blockchain -->
+- [ ] `UC Berkeley` —`studies_at`→ `Shlok (UC Berkeley/NYC)` (INFERRED 0.8) — imessage/_profiles/shlok-uc-berkeley-nyc.md
+  - <!-- personal | uc_berkeley | studies_at | shlok_uc_berkeley -->
+- [ ] `UC Berkeley` —`studies_at`→ `Santosh Mathialgan (Sammy's / UC Berkeley)` (INFERRED 0.75) — imessage/_profiles/santosh-mathialgan-sammys-uc-berkeley-nyc
+  - <!-- personal | uc_berkeley | studies_at | santosh_mathialgan -->
+- [ ] `UC Berkeley` —`studies_at`→ `Hannah Warner (UC Berkeley)` (INFERRED 0.8) — imessage/_profiles/hannah-warner-uc-berkeley.md
+  - <!-- personal | uc_berkeley | studies_at | hannah_warner_uc_berkeley -->
+- [ ] `UC Berkeley` —`studies_at`→ `Harshil (UC Berkeley)` (INFERRED 0.8) — imessage/_profiles/harshil-uc-berkeley.md
+  - <!-- personal | uc_berkeley | studies_at | harshil_uc_berkeley -->
+- [ ] `UC Berkeley` —`studies_at`→ `Hugh Lau (UC Berkeley)` (INFERRED 0.8) — imessage/_profiles/hugh-lau-uc-berkeley.md
+  - <!-- personal | uc_berkeley | studies_at | hugh_lau_uc_berkeley -->
+- [ ] `UC Berkeley` —`studies_at`→ `Hunter (UC Berkeley / Sammys)` (INFERRED 0.8) — imessage/_profiles/hunter-uc-berkeley-sammys.md
+  - <!-- personal | uc_berkeley | studies_at | hunter_uc_berkeley_sammys -->
+- [ ] `UC Berkeley` —`studies_at`→ `James Dai (UC Berkeley)` (INFERRED 0.8) — imessage/_profiles/james-dai-uc-berkeley.md
+  - <!-- personal | uc_berkeley | studies_at | james_dai_uc_berkeley -->
+- [ ] `UC Berkeley` —`studies_at`→ `Jay (Blockchain / UC Berkeley)` (INFERRED 0.8) — imessage/_profiles/jay-blockchain-uc-berkeley.md
+  - <!-- personal | uc_berkeley | studies_at | jay_blockchain_uc_berkeley -->
+- [ ] `UC Berkeley` —`studies_at`→ `Jaylem Brar (UC Berkeley / NYC)` (INFERRED 0.8) — imessage/_profiles/jaylem-brar-uc-berkeley-nyc.md
+  - <!-- personal | uc_berkeley | studies_at | jaylem_brar_uc_berkeley_nyc -->
+- [ ] `UC Berkeley` —`studies_at`→ `Johnny Lee (UC Berkeley)` (INFERRED 0.8) — imessage/_profiles/johnny-lee-uc-berkeley.md
+  - <!-- personal | uc_berkeley | studies_at | johnny_lee_uc_berkeley -->
+- [ ] `UC Berkeley` —`studies_at`→ `Kareem Koujah (UC Berkeley)` (INFERRED 0.8) — imessage/_profiles/kareem-koujah-uc-berkeley.md
+  - <!-- personal | uc_berkeley | studies_at | kareem_koujah_uc_berkeley -->
+- [ ] `UC Berkeley` —`studies_at`→ `Kavish Loomba (UC Berkeley)` (INFERRED 0.8) — imessage/_profiles/kavish-loomba-uc-berkeley.md
+  - <!-- personal | uc_berkeley | studies_at | kavish_loomba_uc_berkeley -->
+- [ ] `UC Berkeley` —`studies_at`→ `Maanav Khaitan` (INFERRED 0.8) — imessage/_profiles/maanav-khaitan-uc-berkeley-nyc.md
+  - <!-- personal | uc_berkeley | studies_at | maanav_khaitan_uc_berkeley_nyc -->
+- [ ] `UC Berkeley` —`studies_at`→ `Matt Kang (UC Berkeley)` (INFERRED 0.8) — imessage/_profiles/matt-kang-uc-berkeley.md
+  - <!-- personal | uc_berkeley | studies_at | matt_kang_uc_berkeley -->
+- [ ] `UC Berkeley` —`studies_at`→ `Maxim Kraft (SpaceX / Vista Energy, UC Berkeley)` (INFERRED 0.8) — imessage/_profiles/maxim-kraft-spacex-uc-berkeley.md
+  - <!-- personal | uc_berkeley | studies_at | maxim_kraft_spacex_uc_berkeley -->
+- [ ] `UC Berkeley` —`studies_at`→ `Michael Grimes (UC Berkeley, class of 2024)` (INFERRED 0.8) — imessage/_profiles/michael-grimes-uc-berkeley.md
+  - <!-- personal | uc_berkeley | studies_at | michael_grimes_uc_berkeley -->
+- [ ] `UC Berkeley` —`studies_at`→ `Mitch (Sammy's, UC Berkeley)` (INFERRED 0.8) — imessage/_profiles/mitch-sammys-uc-berkeley.md
+  - <!-- personal | uc_berkeley | studies_at | mitch_sammys_uc_berkeley -->
+- [ ] `UC Berkeley` —`studies_at`→ `Mohammed Alobaidi (Mo)` (INFERRED 0.8) — imessage/_profiles/mo-snaps-uc-berkeley.md
+  - <!-- personal | uc_berkeley | studies_at | mo_snaps_uc_berkeley -->
+- [ ] `UC Berkeley` —`studies_at`→ `Riley Hernandez (UC Berkeley / Oakland)` (INFERRED 0.8) — imessage/individuals/riley-hernandez-uc-berkeley/2026/2026-0
+  - <!-- personal | uc_berkeley | studies_at | riley_hernandez_uc_berkeley -->
+- [ ] `UC Berkeley` —`studies_at`→ `Risheek (Sammy's, UC Berkeley, NYC)` (INFERRED 0.8) — imessage/individuals/risheek-sammys-uc-berkeley-nyc/2024/202
+  - <!-- personal | uc_berkeley | studies_at | risheek_sammys_uc_berkeley_nyc -->
+- [ ] `UC Berkeley` —`studies_at`→ `Rohan Vaidya (UC Berkeley)` (INFERRED 0.8) — imessage/individuals/rohan-vaidya-uc-berkeley/2026/2026-03__
+  - <!-- personal | uc_berkeley | studies_at | rohan_vaidya_uc_berkeley -->
+- [ ] `UC Berkeley` —`studies_at`→ `Shipransh (UC Berkeley)` (INFERRED 0.8) — imessage/_profiles/shipransh-uc-berkeley.md
+  - <!-- personal | uc_berkeley | studies_at | shipransh_uc_berkeley -->
+- [ ] `UC Berkeley` —`studies_at`→ `Rue (Ruben / friend of Pseuhas, Berkeley)` (INFERRED 0.8) — imessage/individuals/pseuhas-uc-berkeley-nyc/2025/2025-08__p
+  - <!-- personal | uc_berkeley | studies_at | rue -->
+- [ ] `UC Berkeley` —`studies_at`→ `Ryan (UT Austin)` (INFERRED 0.3) — imessage/individuals/ryan-ut-austin/2025/2025-01__ryan-ut-au
+  - <!-- personal | uc_berkeley | studies_at | ryan_ut_austin -->
+- [ ] `Crypto` —`related_to`→ `Xanos (Movednetwork)` (INFERRED 0.7) — imessage/_profiles/group-group-abraham-pseuhas-xanos.md
+  - <!-- personal | crypto | related_to | xanos_movednetwork -->
+- [ ] `Hinge (dating app)` —`related_to`→ `Ianna (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/ianna-hinge-austin.md
+  - <!-- personal | hinge | related_to | ianna_hinge_austin -->
+- [ ] `Hinge (dating app)` —`related_to`→ `Ishika (Hinge LA 7597)` (INFERRED 0.8) — imessage/_profiles/ishika-hinge-la-7597.md
+  - <!-- personal | hinge | related_to | ishika_hinge_la_7597 -->
+- [ ] `Hinge (dating app)` —`related_to`→ `Ishita (Hinge NYC)` (INFERRED 0.8) — imessage/_profiles/ishita-hinge-nyc.md
+  - <!-- personal | hinge | related_to | ishita_hinge_nyc -->
+- [ ] `Hinge (dating app)` —`related_to`→ `Jada (Hinge LA)` (INFERRED 0.8) — imessage/_profiles/jada-hinge-la.md
+  - <!-- personal | hinge | related_to | jada_hinge_la -->
+- [ ] `Hinge (dating app)` —`related_to`→ `Jae (Hinge SD)` (INFERRED 0.8) — imessage/_profiles/jae-hinge-sd.md
+  - <!-- personal | hinge | related_to | jae_hinge_sd -->
+- [ ] `Hinge (dating app)` —`related_to`→ `Jaliah (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/jaliah-hinge-austin.md
+  - <!-- personal | hinge | related_to | jaliah_hinge_austin -->
+- [ ] `Hinge (dating app)` —`related_to`→ `Janet (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/janet-hinge-austin.md
+  - <!-- personal | hinge | related_to | janet_hinge_austin -->
+- [ ] `Hinge (dating app)` —`related_to`→ `Janice (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/janice-hinge-austin.md
+  - <!-- personal | hinge | related_to | janice_hinge_austin -->
+- [ ] `Hinge (dating app)` —`related_to`→ `Jannat (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/jannat-hinge-austin.md
+  - <!-- personal | hinge | related_to | jannat_hinge_austin -->
+- [ ] `Hinge (dating app)` —`related_to`→ `Jayani (Hinge / Austin)` (INFERRED 0.8) — imessage/_profiles/jayani-hinge-austin.md
+  - <!-- personal | hinge | related_to | jayani_hinge_austin -->
+- [ ] `Hinge (dating app)` —`related_to`→ `Jayna (Hinge / Austin)` (INFERRED 0.8) — imessage/_profiles/jayna-hinge-austin.md
+  - <!-- personal | hinge | related_to | jayna_hinge_austin -->
+- [ ] `April (Angel's Landlord)` —`related_to`→ `Real Estate LA` (INFERRED 0.75) — imessage/_profiles/april-angel-landlord.md
+  - <!-- personal | april_angel_landlord | related_to | real_estate_la -->
+- [ ] `Arya Kumar (Adithya's brother)` —`related_to`→ `LA Rental Property` (INFERRED 0.8) — imessage/_profiles/group-group-amadeus-arya.md
+  - <!-- personal | arya_kumar | related_to | la_rental_property -->
+- [ ] `Arya Kumar (Adithya's brother)` —`related_to`→ `Caitlin (A&R, Prescription Songs)` (INFERRED 0.8) — imessage/_profiles/group-group-arya-caitlin.md
+  - <!-- personal | arya_kumar | related_to | caitlin -->
+- [ ] `Arya Kumar (Adithya's brother)` —`related_to`→ `Ryan Ogren` (INFERRED 0.7) — imessage/_profiles/group-group-arya-caitlin-keith.md
+  - <!-- personal | arya_kumar | related_to | ryan_ogren -->
+- [ ] `Ash (Renter Prospect)` —`related_to`→ `Real Estate LA` (INFERRED 0.7) — imessage/_profiles/ash-renter-showing.md
+  - <!-- personal | ash_renter_showing | related_to | real_estate_la -->
+- [ ] `Ashley (Renter Showing)` —`related_to`→ `Real Estate LA` (INFERRED 0.7) — imessage/_profiles/ashley-renter-showing.md
+  - <!-- personal | ashley_renter_showing | related_to | real_estate_la -->
+- [ ] `Austin Davis (Renter Showing)` —`related_to`→ `Real Estate LA` (INFERRED 0.7) — imessage/_profiles/austin-davis-renter-showing.md
+  - <!-- personal | austin_davis_renter_showing | related_to | real_estate_la -->
+- [ ] `Avery (Stanford Biotech / NYC)` —`studies_at`→ `Stanford` (INFERRED 0.8) — imessage/_profiles/avery-abraham-stanford-biotech-nyc.md
+  - <!-- personal | avery_abraham_stanford_biotech_nyc | studies_at | stanford -->
+- [ ] `Bala Kumar` —`related_to`→ `Jon Liu` (INFERRED 0.8) — imessage/individuals/bala-kumar/2026/2026-04__bala-kumar.md
+  - <!-- personal | bala_kumar | related_to | jon_liu -->
+- [ ] `LASA (Liberal Arts and Science Academy)` —`studies_at`→ `Chris Smith (LASA)` (INFERRED 0.8) — imessage/_profiles/chris-smith-lasa.md
+  - <!-- personal | lasa | studies_at | chris_smith_lasa -->
+- [ ] `LASA (Liberal Arts and Science Academy)` —`studies_at`→ `Patrick (LASA Austin)` (INFERRED 0.8) — imessage/_profiles/patrick-lasa-austin.md
+  - <!-- personal | lasa | studies_at | patrick_lasa_austin -->
+- [ ] `LASA (Liberal Arts and Science Academy)` —`studies_at`→ `Mitchell (LASA)` (INFERRED 0.8) — imessage/_profiles/mitchell-lasa.md
+  - <!-- personal | lasa | studies_at | mitchell_lasa -->
+- [ ] `Brandon Guo (UC Berkeley)` —`lives_in`→ `San Francisco` (INFERRED 0.8) — imessage/individuals/brandon-guo-uc-berkeley/2026/2026-03__b
+  - <!-- personal | brandon_guo_uc_berkeley | lives_in | san_francisco -->
+- [ ] `Cam Ryan` —`related_to`→ `Prescription Studio (LA)` (INFERRED 0.7) — imessage/individuals/clint-gibbs-la/2025/2025-08__clint-gibb
+  - <!-- personal | cam_ryan_producer_la | related_to | prescription_studio_la -->
+- [ ] `Christine Bailie` —`related_to`→ `David Bailie` (INFERRED 0.7) — imessage/_profiles/christine-bailie.md
+  - <!-- personal | christine_bailie | related_to | david_bailie -->
+- [ ] `Clint Gibbs (LA)` —`related_to`→ `Prescription Studio (LA)` (INFERRED 0.8) — imessage/individuals/clint-gibbs-la/2025/2025-08__clint-gibb
+  - <!-- personal | clint_gibbs_la | related_to | prescription_studio_la -->
+- [ ] `Dad (Kumar)` —`related_to`→ `LA Rental Property` (INFERRED 0.8) — imessage/_profiles/group-group-amadeus-angel-dad.md
+  - <!-- personal | dad | related_to | la_rental_property -->
+- [ ] `Dad (Kumar)` —`related_to`→ `Rema Aunty (veena teacher)` (INFERRED 0.7) — imessage/groups/group-dad-mom-rema/2025/2025-03__group-dad-m
+  - <!-- personal | dad | related_to | rema_aunty -->
+- [ ] `Danashi (UC Berkeley)` —`semantically_similar_to`→ `Daniel (blockchain, UC Berkeley)` (INFERRED 0.6) — imessage/individuals/danashi-uc-berkeley/2026/2026-03__danas
+  - <!-- personal | danashi_uc_berkeley | semantically_similar_to | daniel_blockchain_uc_berkeley -->
+- [ ] `David (Layer / Designer contact)` —`works_at`→ `Layer (Web3 company)` (INFERRED 0.8) — imessage/_profiles/david-layer.md
+  - <!-- personal | david_layer | works_at | layer -->
+- [ ] `Durgi Uncle (Bay Area)` —`lives_in`→ `San Francisco` (INFERRED 0.8) — imessage/individuals/durgi-uncle-bay-area/2026/2026-03__durg
+  - <!-- personal | durgi_uncle_bay_area | lives_in | san_francisco -->
+- [ ] `Evan Layer` —`works_at`→ `Ondo Finance` (INFERRED 0.8) — imessage/individuals/evan-layer/2025/2025-08__evan-layer.md
+  - <!-- personal | evan_layer | works_at | ondo_finance -->
+- [ ] `Renter Showing` —`related_to`→ `Inannaini (Renter Showing)` (INFERRED 0.8) — imessage/_profiles/inannaini-renter-showing.md
+  - <!-- personal | renter_showing | related_to | inannaini_renter_showing -->
+- [ ] `Renter Showing` —`related_to`→ `Jack (Renter Showing 2026)` (INFERRED 0.8) — imessage/_profiles/jack-renter-showing26.md
+  - <!-- personal | renter_showing | related_to | jack_renter_showing26 -->
+- [ ] `Renter Showing` —`related_to`→ `Jason (Renter Showing 2293)` (INFERRED 0.8) — imessage/_profiles/jason-renter-showing-2293.md
+  - <!-- personal | renter_showing | related_to | jason_renter_showing_2293 -->
+- [ ] `Renter Showing` —`related_to`→ `Jason (Renter Showing)` (INFERRED 0.8) — imessage/_profiles/jason-renter-showing.md
+  - <!-- personal | renter_showing | related_to | jason_renter_showing -->
+- [ ] `Prabhat Nuthakki (UC Berkeley)` —`related_to`→ `Zachary Falkowski (UC Berkeley)` (INFERRED 0.7) — imessage/_profiles/zachary-falkowski-uc-berkeley.md
+  - <!-- personal | prabhat_nuthakki_uc_berkeley | related_to | zachary_falkowski_uc_berkeley -->
+- [ ] `Jake Garcia` —`related_to`→ `Sam Garcia` (INFERRED 0.8) — imessage/_profiles/group-group-jake-noah-sam.md
+  - <!-- personal | jake_garcia | related_to | sam_garcia -->
+- [ ] `Xanos (Movednetwork)` —`related_to`→ `Outerscope LLC` (INFERRED 0.7) — imessage/individuals/xanos-movednetwork/2025/2025-03__xanos-
+  - <!-- personal | xanos_movednetwork | related_to | outerscope -->
+- [ ] `Ryan Ogren` —`works_at`→ `Prescription Songs` (INFERRED 0.8) — imessage/groups/group-caitlin-keith-ryan-2/2024/2024-03__gro
+  - <!-- personal | ryan_ogren | works_at | prescription_songs -->
+- [ ] `Ryan Ogren` —`related_to`→ `Koko (stylist)` (INFERRED 0.8) — imessage/groups/group-keith-ryan/2024/2024-04__group-keith-r
+  - <!-- personal | ryan_ogren | related_to | koko -->
+- [ ] `James (Cryptobitmag)` —`related_to`→ `Blockchain` (INFERRED 0.7) — imessage/_profiles/james-cryptobitmag.md
+  - <!-- personal | james_cryptobitmag | related_to | blockchain -->
+- [ ] `Parth Akshar (USC/NYC)` —`studies_at`→ `USC (University of Southern California)` (INFERRED 0.8) — imessage/_profiles/parth-akshar-usc-nyc.md
+  - <!-- personal | parth_akshar_usc_nyc | studies_at | usc -->
+- [ ] `Kevin Bai (SF)` —`lives_in`→ `San Francisco` (INFERRED 0.8) — imessage/_profiles/kevin-bai-sf.md
+  - <!-- personal | kevin_bai_sf | lives_in | san_francisco -->
+- [ ] `Lance (Pitch/Songwriting LA)` —`related_to`→ `Music Production (LA)` (INFERRED 0.8) — imessage/_profiles/lance-pitch-songwriting-la.md
+  - <!-- personal | lance_pitch_songwriting_la | related_to | music_production_la -->
+- [ ] `Mychal Kendricks (AthleteCoin)` —`related_to`→ `Carlos Mychal Kendricks NYC Mets` (INFERRED 0.8) — imessage/_profiles/group-group-carlos-mychal.md
+  - <!-- personal | mychal_kendricks | related_to | carlos_mychal_kendricks_nyc_mets -->
+- [ ] `Philip Liu (Avax)` —`related_to`→ `Crypto / Web3` (INFERRED 0.8) — imessage/_profiles/philip-liu-avax.md
+  - <!-- personal | philip_liu_avax | related_to | crypto_web3 -->
+- [ ] `Reed (Lender, Hazard)` —`related_to`→ `Klein Court (Adithya's rental property, Sylmar CA)` (INFERRED 0.8) — imessage/individuals/reed-hazard-lender/2024/2024-05__reed-h
+  - <!-- personal | reed_hazard_lender | related_to | klein_court_sylmar -->
+- [ ] `Divyesh Khatri` —`studies_at`→ `UC Berkeley / Stanford` (INFERRED 0.8) — imessage/individuals/divyesh-khatri-uc-berkeley/2025/2025-04
+  - <!-- personal | divyesh_khatri | studies_at | uc_berkeley_stanford -->
+- [ ] `Yosef (Producer, LA)` —`works_at`→ `Tyler / KW / Kuji (Producers)` (INFERRED 0.8) — imessage/individuals/yosef-producer-la/2025/2025-09__yosef-p
+  - <!-- personal | yosef_producer_la | works_at | tyler_kw_kuji -->
+- [ ] `Zach Johnson (friend, musician)` —`related_to`→ `FUNSPOT (Logic project / song)` (INFERRED 0.8) — imessage/individuals/zach-johnson/2026/2026-04__zach-johnson
+  - <!-- personal | zach_johnson | related_to | funspot_song -->
+- [ ] `Zubair (Renter Showing)` —`related_to`→ `Adithya's Rental Property (LA)` (INFERRED 0.8) — imessage/_profiles/zubair-renter-showing.md
+  - <!-- personal | zubair_renter_showing | related_to | adithya_rental_property_la -->
+- [ ] `Kevo (Prescription Producer, LA)` —`works_at`→ `Prescription (LA)` (INFERRED 0.75) — imessage/_profiles/group-group-haan-kevo.md
+  - <!-- personal | kevo_producer | works_at | prescription_la -->
+- [ ] `Nicole Beaubien` —`from`→ `Nashville` (INFERRED 0.8) — imessage/_profiles/group-group-jarrod-nicole-yosef.md
+  - <!-- personal | nicole_beaubien | from | nashville -->
+- [ ] `Jarrod Gipson (Producer, Nashville/LA)` —`from`→ `Nashville` (INFERRED 0.8) — imessage/_profiles/group-group-jarrod-nicole-yosef.md
+  - <!-- personal | jarrod_gipson | from | nashville -->
+- [ ] `Jillian (Prescription, LA)` —`works_at`→ `Prescription (LA)` (INFERRED 0.8) — imessage/_profiles/group-group-jillian-keith-ryan.md
+  - <!-- personal | jillian_prescription | works_at | prescription_la -->
+- [ ] `Kalani (Prescription, LA)` —`works_at`→ `Prescription (LA)` (INFERRED 0.8) — imessage/_profiles/group-group-kalani-ryan-tyler.md
+  - <!-- personal | kalani_prescription | works_at | prescription_la -->
+- [ ] `Lucy (Prescription, LA)` —`works_at`→ `Prescription (LA)` (INFERRED 0.8) — imessage/_profiles/group-group-lucy-nick.md
+  - <!-- personal | lucy_prescription | works_at | prescription_la -->
+- [ ] `Ryan (Silver Lining, LA)` —`works_at`→ `Silver Lining (LA)` (INFERRED 0.8) — imessage/_profiles/group-group-matt-ryan-score.md
+  - <!-- personal | ryan_silver_lining | works_at | silver_lining_la -->
+- [ ] `Mikey (Silver Lining, LA)` —`works_at`→ `Silver Lining (LA)` (INFERRED 0.8) — imessage/_profiles/group-group-mikey-zach.md
+  - <!-- personal | mikey_silver_lining | works_at | silver_lining_la -->
+- [ ] `Silver Lining (LA)` —`works_at`→ `Michael V (Silver Lining Studio, LA)` (INFERRED 0.8) — imessage/_profiles/michael-v-silver-lining-la.md
+  - <!-- personal | silver_lining_la | works_at | michael_v_silver_lining_la -->
+- [ ] `Silver Lining (LA)` —`works_at`→ `Mikey LaSusa` (INFERRED 0.8) — imessage/_profiles/mikey-silver-lining-la.md
+  - <!-- personal | silver_lining_la | works_at | mikey_silver_lining_la -->
+- [ ] `Sidhant Renter Showing26` —`semantically_similar_to`→ `Steve Renter Showing` (INFERRED 0.7) — imessage/_profiles/group-group-mom-sidhant.md
+  - <!-- personal | sidhant_renter | semantically_similar_to | steve_renter -->
+- [ ] `Malhaar (Nova)` —`works_at`→ `Nova` (INFERRED 0.7) — imessage/_profiles/malhaar-nova.md
+  - <!-- personal | malhaar_nova | works_at | nova -->
+- [ ] `Maansi (Nova)` —`works_at`→ `Nova` (INFERRED 0.7) — imessage/_profiles/maansi-nova.md
+  - <!-- personal | maansi_nova | works_at | nova -->
+- [ ] `Jae (Shervin Blockchain LA)` —`related_to`→ `Blockchain` (INFERRED 0.8) — imessage/_profiles/jae-shervin-blockchain-la.md
+  - <!-- personal | jae_shervin_blockchain_la | related_to | blockchain -->
+- [ ] `Jaeden (Podcast)` —`related_to`→ `Podcast` (INFERRED 0.8) — imessage/_profiles/jaeden-podcast.md
+  - <!-- personal | jaeden_podcast | related_to | podcast -->
+- [ ] `Jay (Blockchain / UC Berkeley)` —`related_to`→ `Blockchain` (INFERRED 0.8) — imessage/_profiles/jay-blockchain-uc-berkeley.md
+  - <!-- personal | jay_blockchain_uc_berkeley | related_to | blockchain -->
+- [ ] `Jesse (met on cruise / Dirty 6th)` —`related_to`→ `Dirty 6th (Austin)` (INFERRED 0.8) — imessage/_profiles/jesse-cruise-dirty-6th.md
+  - <!-- personal | jesse_cruise_dirty_6th | related_to | dirty_6th -->
+- [ ] `Jugg (Artist, LA)` —`related_to`→ `Music Production (LA)` (INFERRED 0.8) — imessage/_profiles/jugg-artist-la.md
+  - <!-- personal | jugg_artist_la | related_to | music_production_la -->
+- [ ] `JV (Producer)` —`related_to`→ `Music Production (LA)` (INFERRED 0.8) — imessage/_profiles/jv-producer.md
+  - <!-- personal | jv_producer | related_to | music_production_la -->
+- [ ] `Jxne (Artist, LA)` —`related_to`→ `Music Production (LA)` (INFERRED 0.8) — imessage/_profiles/jxne-artist-la.md
+  - <!-- personal | jxne_artist_la | related_to | music_production_la -->
+- [ ] `Kalani (Prescription/LA)` —`related_to`→ `Prescription (Recording Studio, LA)` (INFERRED 0.7) — imessage/individuals/kalani-prescription-la/2024/2024-03__ka
+  - <!-- personal | kalani_prescription_la | related_to | prescription_studio -->
+- [ ] `Kamran Prabhat (USC, LA)` —`studies_at`→ `USC (University of Southern California)` (INFERRED 0.8) — imessage/_profiles/kamran-prabhat-usc-la.md
+  - <!-- personal | kamran_prabhat_usc_la | studies_at | usc -->
+- [ ] `Music Production (LA)` —`related_to`→ `Kevo (Prescription Producer LA)` (INFERRED 0.8) — imessage/_profiles/kevo-prescription-producer-la.md
+  - <!-- personal | music_production_la | related_to | kevo_prescription_producer_la -->
+- [ ] `Music Production (LA)` —`related_to`→ `Kuji (Producer LA)` (INFERRED 0.8) — imessage/_profiles/kuji-producer-la.md
+  - <!-- personal | music_production_la | related_to | kuji_producer_la -->
+- [ ] `Music Production (LA)` —`related_to`→ `Louie Gomez Tyler (Producer, LA)` (INFERRED 0.8) — imessage/_profiles/louie-gomez-tyler-producer-la.md
+  - <!-- personal | music_production_la | related_to | louie_gomez_tyler_producer_la -->
+- [ ] `Music Production (LA)` —`related_to`→ `Lourdiz (Producer, LA)` (INFERRED 0.8) — imessage/_profiles/lourdiz-producer-la.md
+  - <!-- personal | music_production_la | related_to | lourdiz_producer_la -->
+- [ ] `Music Production (LA)` —`works_at`→ `Mack (Post Sound Factory LA)` (INFERRED 0.8) — imessage/_profiles/mack-post-sound-factory-la.md
+  - <!-- personal | music_production_la | works_at | mack_post_sound_factory_la -->
+- [ ] `Music Production (LA)` —`works_at`→ `Malik 95 (Producer LA)` (INFERRED 0.8) — imessage/_profiles/malik-ninety-five-producer-la.md
+  - <!-- personal | music_production_la | works_at | malik_ninety_five_producer_la -->
+- [ ] `Music Production (LA)` —`works_at`→ `Mike Smrtdeath` (INFERRED 0.8) — imessage/_profiles/mike-smrtdeath-la-music.md
+  - <!-- personal | music_production_la | works_at | mike_smrtdeath_la_music -->
+- [ ] `Music Production (LA)` —`works_at`→ `Mizzylott (Producer, LA)` (INFERRED 0.8) — imessage/_profiles/mizzylott-producer-la.md
+  - <!-- personal | music_production_la | works_at | mizzylott_producer_la -->
+- [ ] `Kevo (Prescription Producer LA)` —`works_at`→ `Prescription (music project)` (INFERRED 0.8) — imessage/_profiles/kevo-prescription-producer-la.md
+  - <!-- personal | kevo_prescription_producer_la | works_at | prescription_music -->
+- [ ] `Kyle Stemberger (Prescription, LA)` —`works_at`→ `Prescription (music project)` (INFERRED 0.8) — imessage/_profiles/kyle-stemberger-prescription-la.md
+  - <!-- personal | kyle_stemberger_prescription_la | works_at | prescription_music -->
+- [ ] `LaToya P. (Serenity of Life Counseling)` —`works_at`→ `Spring Health` (INFERRED 0.8) — imessage/_profiles/latoya-spring-health.md
+  - <!-- personal | latoya_spring_health | works_at | spring_health -->
+- [ ] `Liam (LASA)` —`studies_at`→ `LASA (school)` (INFERRED 0.8) — imessage/_profiles/liam-lasa.md
+  - <!-- personal | liam_lasa | studies_at | lasa_school -->
+- [ ] `Liz Reed (LASA)` —`studies_at`→ `LASA (school)` (INFERRED 0.8) — imessage/_profiles/liz-reed-lasa.md
+  - <!-- personal | liz_reed_lasa | studies_at | lasa_school -->
+- [ ] `San Francisco` —`lives_in`→ `Jasmine Zhang (UC Berkeley)` (INFERRED 0.8) — imessage/groups/mit-launchx-sf/2025/2025-06__mit-launchx-sf.
+  - <!-- personal | san_francisco | lives_in | jasmine_zhang_uc_berkeley -->
+- [ ] `Mychal Kendricks Malik (Crypto/NFL/Producer, LA)` —`related_to`→ `Crypto / NFL world` (INFERRED 0.8) — imessage/_profiles/mychal-kendricks-malik-crypto-nfl-produce
+  - <!-- personal | mychal_kendricks_malik_crypto_nfl_producer_la | related_to | crypto_nfl -->
+- [ ] `Nivetha (Hinge/SF)` —`lives_in`→ `Bay Area` (INFERRED 0.8) — imessage/_profiles/nivetha-hinge-sf.md
+  - <!-- personal | nivetha_hinge_sf | lives_in | bay_area -->
+- [ ] `Rachel` —`studies_at`→ `USC (University of Southern California)` (INFERRED 0.8) — imessage/individuals/rachel-lasa-usc/2024/2024-11__rachel-la
+  - <!-- personal | rachel_lasa_usc | studies_at | usc_la -->
+- [ ] `Ram (Router Protocol)` —`related_to`→ `Crypto / Web3` (INFERRED 0.8) — imessage/_profiles/ram-routerprotocol.md
+  - <!-- personal | ram_routerprotocol | related_to | crypto_web3 -->
+- [ ] `Sam Hopper (LASA)` —`studies_at`→ `LASA (Liberal Arts and Science Academy)` (INFERRED 0.75) — imessage/_profiles/sam-hopper-lasa.md
+  - <!-- personal | sam_hopper | studies_at | lasa_high_school -->
+- [ ] `Shipransh (UC Berkeley)` —`related_to`→ `Shlok (UC Berkeley, NYC)` (INFERRED 0.65) — imessage/individuals/shipransh-uc-berkeley/2026/2026-03__shi
+  - <!-- personal | shipransh_uc_berkeley | related_to | shlok_uc_berkeley_nyc -->
+- [ ] `Shreejal Luitel (UC Berkeley)` —`related_to`→ `Shlok (UC Berkeley, NYC)` (INFERRED 0.65) — imessage/individuals/shreejal-luitel-uc-berkeley/2024/2024-0
+  - <!-- personal | shreejal_luitel_uc_berkeley | related_to | shlok_uc_berkeley_nyc -->
+- [ ] `Ziggy (Renter Showing)` —`related_to`→ `Adithya's Rental Property (LA)` (INFERRED 0.8) — imessage/_profiles/ziggy-renter-showing.md
+  - <!-- personal | ziggy_renter_showing | related_to | adithya_rental_property_la -->
+- [ ] `Klein Ct property (Sylmar, CA)` —`related_to`→ `Jason (rental prospect)` (INFERRED 0.8) — imessage/groups/group-amadeus-evan-jason/2025/2025-06__group
+  - <!-- personal | klein_property | related_to | jason_prospect -->
+- [ ] `Klein Ct property (Sylmar, CA)` —`related_to`→ `Jose (rental prospect)` (INFERRED 0.8) — imessage/groups/group-amadeus-evan-jose/2025/2025-06__group-
+  - <!-- personal | klein_property | related_to | jose_prospect -->
+- [ ] `Klein Ct property (Sylmar, CA)` —`related_to`→ `Perla (rental prospect)` (INFERRED 0.8) — imessage/groups/group-amadeus-evan-perla/2025/2025-06__group
+  - <!-- personal | klein_property | related_to | perla_prospect -->
+- [ ] `Arya College Applications (2025-2026)` —`related_to`→ `Evan (Roommate)` (INFERRED 0.8) — imessage/groups/gold-kums-powna-ams-family/2025/2025-10__gol
+  - <!-- personal | arya_college_applications | related_to | evan_roommate -->
+- [ ] `Abraham (crypto / Light Node Ventures)` —`related_to`→ `Seedbox Labs (Biotech Startup)` (INFERRED 0.8) — imessage/groups/group-abraham-avery/2025/2025-06__group-abra
+  - <!-- personal | abraham_crypto_lightnodeventures | related_to | seedbox_labs -->
+- [ ] `Synapse Web3` —`related_to`→ `Power Kinetics` (INFERRED 0.7) — imessage/individuals/mychal-kendricks-malik-crypto-nfl-produ
+  - <!-- personal | synapse_web3 | related_to | power_kinetics -->
+- [ ] `Avinash (Granada Hills)` —`related_to`→ `Sylmar House (13245 Klein Ct, LA)` (INFERRED 0.6) — imessage/groups/group-avinash-sandeep/2025/2025-12__group-av
+  - <!-- personal | avinash_granada_hills | related_to | sylmar_house -->
+- [ ] `Dr. Luke` —`works_at`→ `Prescription Records` (INFERRED 0.8) — imessage/individuals/mychal-kendricks-malik-crypto-nfl-produ
+  - <!-- personal | dr_luke | works_at | prescription_records -->
+- [ ] `Haan (music contact)` —`related_to`→ `Prescription (Recording Studio, LA)` (INFERRED 0.7) — imessage/groups/group-haan-kevo/2025/2025-06__group-haan-kev
+  - <!-- personal | haan | related_to | prescription_studio -->
+- [ ] `Haan (music contact)` —`related_to`→ `Prescription (music label/collective LA)` (INFERRED 0.75) — imessage/individuals/kevo-prescription-producer-la/2025/2025
+  - <!-- personal | haan | related_to | prescription -->
+- [ ] `Saif (mutual friend)` —`studies_at`→ `Georgia Tech` (INFERRED 0.8) — imessage/individuals/adarsh-pinjala/2025/2025-03__adarsh-pin
+  - <!-- personal | saif | studies_at | georgia_tech -->
+- [ ] `Synps.xyz (AI startup)` —`related_to`→ `Encrypto.fun (crypto card startup)` (INFERRED 0.8) — imessage/individuals/brandon-encrypto/2025/2025-08__brandon-
+  - <!-- personal | synps_xyz | related_to | encrypto_fun -->
+- [ ] `Klein Court (Adithya's rental property, Sylmar CA)` —`related_to`→ `Raz Dembekjian (Inspector, Magnum Opus)` (INFERRED 0.7) — imessage/individuals/raz-evan-inspector-friend/2025/2025-10_
+  - <!-- personal | klein_court_sylmar | related_to | raz_evan_inspector -->
+- [ ] `Jeremy Uribe (Producer / LA)` —`related_to`→ `Prescription Studios (LA)` (INFERRED 0.8) — imessage/individuals/jeremy-uribe-producer-la/2024/2024-08__
+  - <!-- personal | jeremy_uribe_producer | related_to | prescription_studios_la -->
+- [ ] `Prescription (music label/collective LA)` —`related_to`→ `Ladi Saka (merch/tech contact)` (INFERRED 0.75) — imessage/individuals/ladi-saka-merch-tech/2025/2025-10__ladi
+  - <!-- personal | prescription | related_to | ladi_saka -->
+- [ ] `Neema Jamshidian` —`works_at`→ `Cardinal (SF AI Startup)` (INFERRED 0.8) — imessage/individuals/neema-amya/2026/2026-03__neema-amya.md
+  - <!-- personal | neema_jamshidian | works_at | cardinal_sf -->
+- [ ] `Nidhir Guggila` —`works_at`→ `OpenAI` (INFERRED 0.8) — imessage/individuals/nidhir-guggila-uc-berkeley/2025/2025-10
+  - <!-- personal | nidhir_guggila | works_at | openai -->
+- [ ] `Score (Beats Producer NYC)` —`related_to`→ `Shanks (Producer LA)` (INFERRED 0.7) — imessage/individuals/shanks-producer-la/2024/2024-04__shanks
+  - <!-- personal | score_beats_producer_nyc | related_to | shanks_producer_la -->
+
+### Co-occurrence INFERRED (mentioned/discussed_with/messages_with) (128)
+
+- [ ] `Adithya` —`co_attended`→ `Ananya (LASA, Austin)` (INFERRED 0.8) — imessage/individuals/ananya-lasa/2025/2025-01__ananya-lasa.m
+  - <!-- personal | adithya | co_attended | ananya_lasa -->
+- [ ] `Adithya` —`co_attended`→ `Angad (Austin)` (INFERRED 0.8) — imessage/individuals/angad-austin/2026/2026-03__angad-austin
+  - <!-- personal | adithya | co_attended | angad_austin -->
+- [ ] `Adithya` —`discussed_with`→ `Sam McGrath (LA)` (INFERRED 0.8) — imessage/individuals/sam-mcgrath-la/2024/2024-11__sam-mcgrat
+  - <!-- personal | adithya | discussed_with | sam_mcgrath_la -->
+- [ ] `Adithya` —`discussed_with`→ `Griffin Noah (Roommate)` (INFERRED 0.8) — imessage/_profiles/group-group-griffin-nikhil-noah.md
+  - <!-- personal | adithya | discussed_with | griffin_noah -->
+- [ ] `Adithya` —`discussed_with`→ `Score (Beats Producer, NYC)` (INFERRED 0.7) — imessage/_profiles/score-beats-producer-nyc.md
+  - <!-- personal | adithya | discussed_with | score_beats_producer -->
+- [ ] `Adithya` —`discussed_with`→ `Rene (Hinge, Austin)` (INFERRED 0.8) — imessage/individuals/rene-hinge-austin/2026/2026-04__rene-hi
+  - <!-- personal | adithya | discussed_with | rene_hinge_austin -->
+- [ ] `Adithya` —`discussed_with`→ `Rhea (Hinge, LA)` (INFERRED 0.7) — imessage/individuals/rhea-hinge-la/2026/2026-02__rhea-hinge-
+  - <!-- personal | adithya | discussed_with | rhea_hinge_la -->
+- [ ] `Adithya` —`mentioned_by`→ `Sahiba (NYC)` (INFERRED 0.7) — imessage/individuals/sahiba-nyc/2025/2025-07__sahiba-nyc.md
+  - <!-- personal | adithya | mentioned_by | sahiba_nyc -->
+- [ ] `Adithya` —`mentioned_by`→ `Sahithi (NYC)` (INFERRED 0.7) — imessage/individuals/sahithi-nyc/2025/2025-07__sahithi-nyc.m
+  - <!-- personal | adithya | mentioned_by | sahithi_nyc -->
+- [ ] `Adithya` —`discussed_with`→ `Shanks (Producer, LA)` (INFERRED 0.7) — imessage/_profiles/shanks-producer-la.md
+  - <!-- personal | adithya | discussed_with | shanks_producer -->
+- [ ] `Adithya` —`discussed_with`→ `Ziya (NYC / Hinge)` (INFERRED 0.8) — imessage/individuals/ziya-nyc/2025/2025-06__ziya-nyc.md
+  - <!-- personal | adithya | discussed_with | ziya_nyc -->
+- [ ] `Adithya` —`discussed_with`→ `Zoya (Hinge LA)` (INFERRED 0.8) — imessage/individuals/zoya-hinge-la/2026/2026-02__zoya-hinge-
+  - <!-- personal | adithya | discussed_with | zoya_hinge_la -->
+- [ ] `Adithya` —`mentioned_by`→ `Arya (Klein intro)` (INFERRED 0.7) — imessage/groups/group-amadeus-arya/2024/2024-10__group-amade
+  - <!-- personal | adithya | mentioned_by | arya_renter -->
+- [ ] `Adithya` —`discussed_with`→ `Silver Lining Studio (LA)` (INFERRED 0.8) — imessage/individuals/michael-v-silver-lining-la/2024/2024-04
+  - <!-- personal | adithya | discussed_with | silver_lining_studio -->
+- [ ] `Adithya` —`mentioned_by`→ `Sam (mutual friend, Noah)` (INFERRED 0.8) — imessage/individuals/noah-bailie/2024/2024-05__noah-bailie.m
+  - <!-- personal | adithya | mentioned_by | sam -->
+- [ ] `Adithya` —`discussed_with`→ `IAMGame (crypto/gaming project)` (INFERRED 0.85) — imessage/individuals/ajay-crypto/2025/2025-09__ajay-crypto.m
+  - <!-- personal | adithya | discussed_with | iamgame -->
+- [ ] `Adithya` —`discussed_with`→ `Divinity (crypto investment project)` (INFERRED 0.85) — imessage/individuals/ajay-crypto/2025/2025-10__ajay-crypto.m
+  - <!-- personal | adithya | discussed_with | divinity_project -->
+- [ ] `Adithya` —`co_attended`→ `LASA (Liberal Arts and Science Academy)` (INFERRED 0.85) — imessage/individuals/amit-sundaram-lasa/2025/2025-01__amit-s
+  - <!-- personal | adithya | co_attended | lasa_high_school -->
+- [ ] `Adithya` —`mentioned_by`→ `Range Music Publishing` (INFERRED 0.7) — imessage/individuals/austin-davis-renter-showing/2024/2024-1
+  - <!-- personal | adithya | mentioned_by | range_music_publishing -->
+- [ ] `Adithya` —`discussed_with`→ `EigenLayer` (INFERRED 0.7) — imessage/individuals/evan-layer/2025/2025-07__evan-layer.md
+  - <!-- personal | adithya | discussed_with | eigenlayer -->
+- [ ] `Adithya` —`mentioned_by`→ `Gayathri` (INFERRED 0.7) — imessage/individuals/noah-bailie/2025/2025-07__noah-bailie.m
+  - <!-- personal | adithya | mentioned_by | gayathri -->
+- [ ] `Adithya` —`co_attended`→ `Micron Conference (Palo Alto, 2026-03)` (INFERRED 0.8) — imessage/individuals/philip-liu-avax/2026/2026-03__philip-li
+  - <!-- personal | adithya | co_attended | micron_conference -->
+- [ ] `Adithya` —`discussed_with`→ `Istanbul (city, travel)` (INFERRED 0.8) — imessage/individuals/shervin-blockchain-uc-berkeley/2025/202
+  - <!-- personal | adithya | discussed_with | istanbul -->
+- [ ] `Adithya` —`mentioned_by`→ `PEP 661 Sentinel Values (Python 3.15)` (INFERRED 0.7) — reddit/Python/2026-04-28__1sxmg6z__pep-661-sentinel-values-h
+  - <!-- personal | adithya | mentioned_by | pep_661_sentinel_values -->
+- [ ] `Aamir Khan (UC Berkeley)` —`discussed_with`→ `Ryan (UT Austin)` (INFERRED 0.8) — imessage/_profiles/group-group-aamir-ryan.md
+  - <!-- personal | aamir_khan_uc_berkeley | discussed_with | ryan_ut_austin -->
+- [ ] `Abhi Shah (USC / Akshar / LA)` —`discussed_with`→ `Rushil Jha (UC Berkeley / NYC)` (INFERRED 0.8) — imessage/_profiles/group-group-abhi-akshar-rushil.md
+  - <!-- personal | abhi_usc_akshar_la | discussed_with | rushil_jha_uc_berkeley_nyc -->
+- [ ] `Abraham (Crypto / LightNode Ventures, LA)` —`discussed_with`→ `Pseuhas` (INFERRED 0.8) — imessage/_profiles/group-group-abraham-pseuhas-xanos.md
+  - <!-- personal | abraham_crypto_lightnodeventures_la | discussed_with | pseuhas_uc_berkeley_nyc -->
+- [ ] `Abraham (Crypto / LightNode Ventures, LA)` —`mentioned_by`→ `New York City` (INFERRED 0.75) — imessage/individuals/abraham-crypto-lightnodeventures-la/202
+  - <!-- personal | abraham_crypto_lightnodeventures_la | mentioned_by | new_york_city -->
+- [ ] `Adarsh Pinjala` —`discussed_with`→ `Rushil Jha (UC Berkeley / NYC)` (INFERRED 0.8) — imessage/_profiles/group-amsterdam.md
+  - <!-- personal | adarsh_pinjala | discussed_with | rushil_jha_uc_berkeley_nyc -->
+- [ ] `Adarsh Pinjala` —`discussed_with`→ `Prabhat Nuthakki (UC Berkeley)` (INFERRED 0.8) — imessage/_profiles/group-amsterdam.md
+  - <!-- personal | adarsh_pinjala | discussed_with | prabhat_nuthakki_uc_berkeley -->
+- [ ] `Hinge (Dating App)` —`mentioned_by`→ `Benti (Hinge, LA / USC)` (INFERRED 0.85) — imessage/_profiles/benti-hinge-la.md
+  - <!-- personal | hinge_dating | mentioned_by | benti_hinge_la -->
+- [ ] `Hinge (Dating App)` —`mentioned_by`→ `Bhavana (Hinge, Dallas/Austin)` (INFERRED 0.85) — imessage/_profiles/bhavana-hinge-dallas.md
+  - <!-- personal | hinge_dating | mentioned_by | bhavana_hinge_dallas -->
+- [ ] `Hinge (Dating App)` —`mentioned_by`→ `Carla (Hinge Austin)` (INFERRED 0.85) — imessage/_profiles/carla-hinge-austin.md
+  - <!-- personal | hinge_dating | mentioned_by | carla_hinge_austin -->
+- [ ] `Hinge (Dating App)` —`mentioned_by`→ `Carolina (Hinge Austin)` (INFERRED 0.85) — imessage/_profiles/carolina-hinge-austin.md
+  - <!-- personal | hinge_dating | mentioned_by | carolina_hinge_austin -->
+- [ ] `Hinge (Dating App)` —`mentioned_by`→ `Cat (Hinge SD)` (INFERRED 0.85) — imessage/_profiles/cat-hinge-sd.md
+  - <!-- personal | hinge_dating | mentioned_by | cat_hinge_sd -->
+- [ ] `Hinge (Dating App)` —`mentioned_by`→ `Celine (Hinge Austin)` (INFERRED 0.85) — imessage/_profiles/celine-hinge-austin.md
+  - <!-- personal | hinge_dating | mentioned_by | celine_hinge_austin -->
+- [ ] `Hinge (Dating App)` —`mentioned_by`→ `Clair (Hinge Austin)` (INFERRED 0.85) — imessage/_profiles/clair-hinge-austin.md
+  - <!-- personal | hinge_dating | mentioned_by | clair_hinge_austin -->
+- [ ] `Hinge (Dating App)` —`mentioned_by`→ `Cleo (Hinge / College Station)` (INFERRED 0.85) — imessage/_profiles/cleo-hinge-austin.md
+  - <!-- personal | hinge_dating | mentioned_by | cleo_hinge_austin -->
+- [ ] `Hinge (Dating App)` —`mentioned_by`→ `Daniela (Hinge, Chicago)` (INFERRED 0.85) — imessage/_profiles/daniela-hinge-chicago.md
+  - <!-- personal | hinge_dating | mentioned_by | daniela_hinge_chicago -->
+- [ ] `Andy (Blockchain, UC Berkeley)` —`mentioned_by`→ `Crypto` (INFERRED 0.8) — imessage/_profiles/andy-blockchain-uc-berkeley.md
+  - <!-- personal | andy_blockchain_uc_berkeley | mentioned_by | crypto -->
+- [ ] `Ankur (UC Berkeley)` —`mentioned_by`→ `Nvidia GTC (San Jose/SF)` (INFERRED 0.8) — imessage/individuals/ankur-uc-berkeley/2026/2026-03__ankur-u
+  - <!-- personal | ankur_uc_berkeley | mentioned_by | nvidia_gtc -->
+- [ ] `New York City` —`mentioned_by`→ `Aryan Goyal (UC Berkeley)` (INFERRED 0.8) — imessage/individuals/aryan-goyal-uc-berkeley/2025/2025-02__a
+  - <!-- personal | new_york_city | mentioned_by | aryan_goyal_uc_berkeley -->
+- [ ] `UC Berkeley` —`mentioned_by`→ `Nikhil Nagarajan` (INFERRED 0.7) — imessage/individuals/nikhil-nagarajan-bay-area/2025/2025-04_
+  - <!-- personal | uc_berkeley | mentioned_by | nikhil_nagarajan -->
+- [ ] `UC Berkeley` —`mentioned_by`→ `Prachi (Hinge, LA)` (INFERRED 0.7) — imessage/individuals/prachi-hinge-la/2026/2026-02__prachi-hi
+  - <!-- personal | uc_berkeley | mentioned_by | prachi_hinge_la -->
+- [ ] `Hinge (dating app)` —`mentioned_by`→ `Munji (Hinge/Bumble, South Austin)` (INFERRED 0.8) — imessage/_profiles/munji-hinge-austin.md
+  - <!-- personal | hinge | mentioned_by | munji_hinge_austin -->
+- [ ] `Hinge (dating app)` —`mentioned_by`→ `Mykala (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/mykala-hinge-austin.md
+  - <!-- personal | hinge | mentioned_by | mykala_hinge_austin -->
+- [ ] `Hinge (dating app)` —`mentioned_by`→ `Morgan (Hinge, Houston/Austin)` (INFERRED 0.8) — imessage/_profiles/morgan-hinge-houston.md
+  - <!-- personal | hinge | mentioned_by | morgan_hinge_houston -->
+- [ ] `Hinge (dating app)` —`mentioned_by`→ `Mythree (Hinge LA)` (INFERRED 0.8) — imessage/_profiles/mythree-hinge-la.md
+  - <!-- personal | hinge | mentioned_by | mythree_hinge_la -->
+- [ ] `Hinge (dating app)` —`mentioned_by`→ `Naia (Hinge SD)` (INFERRED 0.8) — imessage/_profiles/naia-hinge-sd.md
+  - <!-- personal | hinge | mentioned_by | naia_hinge_sd -->
+- [ ] `Hinge (dating app)` —`mentioned_by`→ `Naomi (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/naomi-hinge-austin.md
+  - <!-- personal | hinge | mentioned_by | naomi_hinge_austin -->
+- [ ] `Hinge (dating app)` —`mentioned_by`→ `Natalie (Hinge SD)` (INFERRED 0.8) — imessage/_profiles/natalie-hinge-sd.md
+  - <!-- personal | hinge | mentioned_by | natalie_hinge_sd -->
+- [ ] `Hinge (dating app)` —`mentioned_by`→ `Natasha (Hinge LA)` (INFERRED 0.8) — imessage/_profiles/natasha-hinge-la.md
+  - <!-- personal | hinge | mentioned_by | natasha_hinge_la -->
+- [ ] `Hinge (dating app)` —`mentioned_by`→ `Nayely (Hinge, San Diego)` (INFERRED 0.8) — imessage/_profiles/nayely-hinge-sd.md
+  - <!-- personal | hinge | mentioned_by | nayely_hinge_sd -->
+- [ ] `Hinge (dating app)` —`mentioned_by`→ `Neha (Hinge Austin)` (INFERRED 0.8) — imessage/_profiles/neha-hinge-austin.md
+  - <!-- personal | hinge | mentioned_by | neha_hinge_austin -->
+- [ ] `Hinge (dating app)` —`mentioned_by`→ `Neha (Hinge, LA)` (INFERRED 0.8) — imessage/_profiles/neha-hinge-la.md
+  - <!-- personal | hinge | mentioned_by | neha_hinge_la -->
+- [ ] `Hinge (dating app)` —`mentioned_by`→ `Ngoc (Hinge, Austin)` (INFERRED 0.8) — imessage/_profiles/ngoc-hinge-austin.md
+  - <!-- personal | hinge | mentioned_by | ngoc_hinge_austin -->
+- [ ] `Hinge (dating app)` —`mentioned_by`→ `Nidhi (Hinge NYC)` (INFERRED 0.8) — imessage/_profiles/nidhi-hinge-nyc.md
+  - <!-- personal | hinge | mentioned_by | nidhi_hinge_nyc -->
+- [ ] `Hinge (dating app)` —`mentioned_by`→ `Nikki (Hinge/Dallas)` (INFERRED 0.8) — imessage/_profiles/nikki-hinge-dallas.md
+  - <!-- personal | hinge | mentioned_by | nikki_hinge_dallas -->
+- [ ] `Hinge (dating app)` —`mentioned_by`→ `Nikki (Hinge/NYC)` (INFERRED 0.8) — imessage/_profiles/nikki-hinge-nyc.md
+  - <!-- personal | hinge | mentioned_by | nikki_hinge_nyc -->
+- [ ] `Hinge (dating app)` —`mentioned_by`→ `Nira (Hinge/NYC)` (INFERRED 0.8) — imessage/_profiles/nira-hinge-nyc.md
+  - <!-- personal | hinge | mentioned_by | nira_hinge_nyc -->
+- [ ] `Hinge (dating app)` —`mentioned_by`→ `Nivetha (Hinge/SF)` (INFERRED 0.8) — imessage/_profiles/nivetha-hinge-sf.md
+  - <!-- personal | hinge | mentioned_by | nivetha_hinge_sf -->
+- [ ] `Hinge (dating app)` —`mentioned_by`→ `Niyati (Hinge/Austin)` (INFERRED 0.8) — imessage/_profiles/niyati-hinge-austin.md
+  - <!-- personal | hinge | mentioned_by | niyati_hinge_austin -->
+- [ ] `Hinge (dating app)` —`mentioned_by`→ `Veronica (NYC)` (INFERRED 0.8) — imessage/individuals/veronica-nyc/2025/2025-07__veronica-nyc
+  - <!-- personal | hinge | mentioned_by | veronica_nyc -->
+- [ ] `Anton Lin (UC Berkeley)` —`mentioned_by`→ `Nvidia GTC (San Jose/SF)` (INFERRED 0.7) — imessage/individuals/anton-lin-uc-berkeley/2026/2026-03__ant
+  - <!-- personal | anton_lin_uc_berkeley | mentioned_by | nvidia_gtc -->
+- [ ] `Arya Kumar (Adithya's brother)` —`mentioned_by`→ `Nikhil Nagarajan` (INFERRED 0.8) — imessage/individuals/nikhil-nagarajan-bay-area/2025/2025-05_
+  - <!-- personal | arya_kumar | mentioned_by | nikhil_nagarajan -->
+- [ ] `Ashley (Hinge Austin)` —`mentioned_by`→ `Zilker Park Austin` (INFERRED 0.8) — imessage/individuals/ashley-hinge-austin/2026/2026-02__ashle
+  - <!-- personal | ashley_hinge_austin | mentioned_by | zilker_park -->
+- [ ] `Chance Reeve` —`co_attended`→ `Chris Smith (LASA)` (INFERRED 0.7) — imessage/_profiles/chance-reeve-lasa.md
+  - <!-- personal | chance_reeve_lasa | co_attended | chris_smith_lasa -->
+- [ ] `Cris (Renter / Mexican)` —`discussed_with`→ `Real Estate / Rental` (INFERRED 0.85) — imessage/_profiles/group-group-cris-evan-mom.md
+  - <!-- personal | cris_renter | discussed_with | real_estate_rental -->
+- [ ] `David Bailie` —`discussed_with`→ `Synapse (Adithya's startup)` (INFERRED 0.8) — imessage/individuals/david-bailie/2025/2025-05__david-bailie
+  - <!-- personal | david_bailie | discussed_with | synapse -->
+- [ ] `Donny (Producer LA)` —`co_attended`→ `Yosef (Producer, LA)` (INFERRED 0.8) — imessage/_profiles/group-group-donny-yosef.md
+  - <!-- personal | donny_producer_la | co_attended | yosef_producer_la -->
+- [ ] `Dr. Luke (Prescription Songs LA)` —`co_attended`→ `Ryan Ogren` (INFERRED 0.75) — imessage/_profiles/group-group-dr-ryan.md
+  - <!-- personal | dr_luke_prescription_la | co_attended | ryan_ogren -->
+- [ ] `Dr. Luke (Prescription Songs LA)` —`co_attended`→ `Jim Edmunds (Music-AI / NY)` (INFERRED 0.75) — imessage/_profiles/group-group-dr-jim.md
+  - <!-- personal | dr_luke_prescription_la | co_attended | jim_edmunds -->
+- [ ] `Dravin Raj (Austin)` —`co_attended`→ `Shiva (Austin)` (INFERRED 0.8) — imessage/_profiles/group-group-dravin-shiva.md
+  - <!-- personal | dravin_raj_austin | co_attended | shiva_austin -->
+- [ ] `Evan (Renter, LA)` —`discussed_with`→ `Real Estate / Rental` (INFERRED 0.85) — imessage/_profiles/group-group-cris-evan-mom.md
+  - <!-- personal | evan_renter | discussed_with | real_estate_rental -->
+- [ ] `Evan (Renter, LA)` —`co_attended`→ `Mychal Kendricks (AthleteCoin)` (INFERRED 0.75) — imessage/_profiles/group-group-evan-mychal.md
+  - <!-- personal | evan_renter | co_attended | mychal_kendricks -->
+- [ ] `Rushil Jha (UC Berkeley / NYC)` —`discussed_with`→ `Prabhat Nuthakki (UC Berkeley)` (INFERRED 0.8) — imessage/_profiles/group-amsterdam.md
+  - <!-- personal | rushil_jha_uc_berkeley_nyc | discussed_with | prabhat_nuthakki_uc_berkeley -->
+- [ ] `Noah Bailie` —`discussed_with`→ `Sam (mutual friend, Noah)` (INFERRED 0.8) — imessage/individuals/noah-bailie/2024/2024-05__noah-bailie.m
+  - <!-- personal | noah_bailie | discussed_with | sam -->
+- [ ] `Mom (Adithya's mother)` —`discussed_with`→ `Angel (Renter)` (INFERRED 0.7) — imessage/_profiles/group-group-angel-mom.md
+  - <!-- personal | mom | discussed_with | angel_renter -->
+- [ ] `Safwan (UC Berkeley)` —`co_attended`→ `Safwan (UC Berkeley)` (INFERRED 0.8) — imessage/groups/unkal/2025/2025-04__unkal.md
+  - <!-- personal | safwan_uc_berkeley | co_attended | safwan_uc_berkeley -->
+- [ ] `Rushil Jha` —`co_attended`→ `Edwin Gregory` (INFERRED 0.8) — imessage/_profiles/group-group-edwin-rushil.md
+  - <!-- personal | rushil_jha | co_attended | edwin_gregory -->
+- [ ] `Rushil Jha` —`discussed_with`→ `Klein Court (LA property)` (INFERRED 0.7) — imessage/groups/group-adarsh-prabhat-rushil-2/2025/2025-03__
+  - <!-- personal | rushil_jha | discussed_with | klein_court_property -->
+- [ ] `Rushil Jha` —`co_attended`→ `Prabhat` (INFERRED 0.8) — imessage/groups/group-ben-prabhat-rushil/2025/2025-08__group
+  - <!-- personal | rushil_jha | co_attended | prabhat -->
+- [ ] `Rushil Jha` —`co_attended`→ `Ben (music/LA friend)` (INFERRED 0.8) — imessage/groups/group-ben-prabhat-rushil/2025/2025-08__group
+  - <!-- personal | rushil_jha | co_attended | ben_music -->
+- [ ] `Rushil Jha` —`mentioned_by`→ `EthCC Cannes (June 2025)` (INFERRED 0.7) — imessage/individuals/rushil-jha-uc-berkeley-nyc/2025/2025-05
+  - <!-- personal | rushil_jha | mentioned_by | ethcc_cannes_2025 -->
+- [ ] `Ryan Ogren` —`co_attended`→ `Keith Varon` (INFERRED 0.75) — imessage/_profiles/group-group-keith-ryan.md
+  - <!-- personal | ryan_ogren | co_attended | keith_varon -->
+- [ ] `Angel (Renter)` —`co_attended`→ `Amadeus (Roommate)` (INFERRED 0.8) — imessage/individuals/angel-renter-showing/2024/2024-12__ange
+  - <!-- personal | angel_renter | co_attended | amadeus_roommate -->
+- [ ] `James (Cryptobitmag)` —`discussed_with`→ `Eclipse Labs` (INFERRED 0.7) — imessage/individuals/james-cryptobitmag/2026/2026-02__james-
+  - <!-- personal | james_cryptobitmag | discussed_with | eclipse_labs -->
+- [ ] `Edwin Gregory` —`discussed_with`→ `Citadel` (INFERRED 0.85) — imessage/individuals/edwin-gregory-uc-berkeley/2025/2025-03_
+  - <!-- personal | edwin_gregory | discussed_with | citadel -->
+- [ ] `Mychal Kendricks (AthleteCoin)` —`co_attended`→ `Covaughn AthleteCoin` (INFERRED 0.75) — imessage/_profiles/group-group-covaughn-mychal-randy.md
+  - <!-- personal | mychal_kendricks | co_attended | covaughn_athletecoin -->
+- [ ] `Mychal Kendricks (AthleteCoin)` —`co_attended`→ `Filip` (INFERRED 0.7) — imessage/individuals/mychal-kendricks-malik-crypto-nfl-produ
+  - <!-- personal | mychal_kendricks | co_attended | filip -->
+- [ ] `Prabhat Nuthakki (UC Berkeley)` —`discussed_with`→ `Pseuhas (UC Berkeley / NYC)` (INFERRED 0.8) — imessage/individuals/prabhat-nuthakki-uc-berkeley/2024/2024-
+  - <!-- personal | prabhat_nuthakki | discussed_with | pseuhas -->
+- [ ] `Nikhil Lasa` —`discussed_with`→ `Parth` (INFERRED 0.7) — imessage/individuals/nikhil-lasa/2025/2025-03__nikhil-lasa.m
+  - <!-- personal | nikhil_lasa | discussed_with | parth -->
+- [ ] `Covaughn AthleteCoin` —`discussed_with`→ `Blockchain Crypto` (INFERRED 0.8) — imessage/_profiles/group-group-covaughn-mychal-randy.md
+  - <!-- personal | covaughn_athletecoin | discussed_with | blockchain_crypto -->
+- [ ] `Reed (Lender, Hazard)` —`discussed_with`→ `Real Estate / Rental` (INFERRED 0.85) — imessage/_profiles/group-group-dad-mom-reed.md
+  - <!-- personal | reed_hazard_lender | discussed_with | real_estate_rental -->
+- [ ] `Fernando Morales (Realtor / Rental Agent, LA)` —`discussed_with`→ `Real Estate / Rental` (INFERRED 0.85) — imessage/_profiles/group-group-dad-mom-rei.md
+  - <!-- personal | rei_la_fernando_morales | discussed_with | real_estate_rental -->
+- [ ] `Shervin (Blockchain UC Berkeley)` —`discussed_with`→ `Blockchain Crypto` (INFERRED 0.8) — imessage/_profiles/group-group-deven-pseuhas-risheek-2.md
+  - <!-- personal | shervin_blockchain_berkeley | discussed_with | blockchain_crypto -->
+- [ ] `Deven Matthews (Blockchain Berkeley)` —`discussed_with`→ `Blockchain Crypto` (INFERRED 0.8) — imessage/_profiles/group-group-deven-pseuhas-risheek-2.md
+  - <!-- personal | deven_matthews | discussed_with | blockchain_crypto -->
+- [ ] `Deven Matthews (Blockchain Berkeley)` —`co_attended`→ `Pseuhas (UC Berkeley, NYC)` (INFERRED 0.8) — imessage/_profiles/group-group-deven-pseuhas-risheek-2.md
+  - <!-- personal | deven_matthews | co_attended | pseuhas_uc_berkeley -->
+- [ ] `Divyesh Khatri` —`mentioned_by`→ `GDC (Game Developers Conference)` (INFERRED 0.8) — imessage/individuals/divyesh-khatri-uc-berkeley/2026/2026-03
+  - <!-- personal | divyesh_khatri | mentioned_by | gdc_san_francisco -->
+- [ ] `Dylan (Producer LA)` —`co_attended`→ `Johny Hadar (Producer, LA)` (INFERRED 0.8) — imessage/_profiles/group-group-dylan-johny.md
+  - <!-- personal | dylan_producer_la | co_attended | johny_hadar_producer_la -->
+- [ ] `Edgar (Rental Listing)` —`discussed_with`→ `Real Estate / Rental` (INFERRED 0.8) — imessage/_profiles/group-group-edgar-mom.md
+  - <!-- personal | edgar_rental_listing | discussed_with | real_estate_rental -->
+- [ ] `Louie Gomez (Tyler Producer, LA)` —`discussed_with`→ `Lourdiz (Producer, LA)` (INFERRED 0.7) — imessage/individuals/lourdiz-producer-la/2025/2025-08__lourd
+  - <!-- personal | louie_gomez | discussed_with | lourdiz_producer_la -->
+- [ ] `Ryan (Silver Lining, LA)` —`co_attended`→ `Prescription Studios (LA)` (INFERRED 0.7) — imessage/individuals/ryan-silver-lining-la/2024/2024-08__rya
+  - <!-- personal | ryan_silver_lining | co_attended | prescription_studios -->
+- [ ] `Shervin (Blockchain/UC Berkeley)` —`co_attended`→ `Mo Snaps (UC Berkeley)` (INFERRED 0.75) — imessage/_profiles/group-group-mo-shervin.md
+  - <!-- personal | shervin_blockchain | co_attended | mo_snaps -->
+- [ ] `Junaid Rasool (LASA)` —`co_attended`→ `Kalen (LASA)` (INFERRED 0.7) — imessage/individuals/junaid-rasool-lasa/2025/2025-01__junaid
+  - <!-- personal | junaid_rasool_lasa | co_attended | kalen_lasa -->
+- [ ] `Kevo (Prescription Producer LA)` —`co_attended`→ `Kyle Stemberger (Prescription, LA)` (INFERRED 0.7) — imessage/_profiles/kevo-prescription-producer-la.md
+  - <!-- personal | kevo_prescription_producer_la | co_attended | kyle_stemberger_prescription_la -->
+- [ ] `Lauren (Hinge, Austin)` —`mentioned_by`→ `Zilker Park Austin` (INFERRED 0.8) — imessage/individuals/lauren-hinge-austin/2026/2026-03__laure
+  - <!-- personal | lauren_hinge_austin | mentioned_by | zilker_park -->
+- [ ] `Liam (LASA)` —`co_attended`→ `Liz Reed (LASA)` (INFERRED 0.8) — imessage/individuals/liam-lasa/2025/2025-01__liam-lasa.md
+  - <!-- personal | liam_lasa | co_attended | liz_reed_lasa -->
+- [ ] `Lolly (Hinge, Austin)` —`mentioned_by`→ `Zilker Park Austin` (INFERRED 0.8) — imessage/individuals/lolly-hinge-austin/2026/2026-03__lolly-
+  - <!-- personal | lolly_hinge_austin | mentioned_by | zilker_park -->
+- [ ] `Marc Porras (LASA, Austin)` —`co_attended`→ `Max Martin (LASA, Austin)` (INFERRED 0.7) — imessage/_profiles/max-martin-lasa.md
+  - <!-- personal | marc_porras_lasa | co_attended | max_martin_lasa -->
+- [ ] `Marc Porras (LASA, Austin)` —`co_attended`→ `Matthew Lorber (LASA, LA)` (INFERRED 0.7) — imessage/_profiles/matthew-lorber-lasa.md
+  - <!-- personal | marc_porras_lasa | co_attended | matthew_lorber_lasa -->
+- [ ] `Michael Grimes (UC Berkeley, class of 2024)` —`mentioned_by`→ `a16z Speedrun` (INFERRED 0.8) — imessage/individuals/michael-grimes-uc-berkeley/2026/2026-04
+  - <!-- personal | michael_grimes_uc_berkeley | mentioned_by | a16z_speedrun -->
+- [ ] `Michael V (Silver Lining Studio, LA)` —`co_attended`→ `Mikey LaSusa` (INFERRED 0.7) — imessage/_profiles/mikey-silver-lining-la.md
+  - <!-- personal | michael_v_silver_lining_la | co_attended | mikey_silver_lining_la -->
+- [ ] `Mod Yensuang (UC Berkeley)` —`mentioned_by`→ `Nvidia GTC (San Jose/SF)` (INFERRED 0.7) — imessage/individuals/mod-yensuang-uc-berkeley/2026/2026-03__
+  - <!-- personal | mod_yensuang_uc_berkeley | mentioned_by | nvidia_gtc -->
+- [ ] `Mooji (UC Berkeley)` —`mentioned_by`→ `Nvidia GTC (San Jose/SF)` (INFERRED 0.7) — imessage/individuals/mooji-uc-berkeley/2026/2026-03__mooji-u
+  - <!-- personal | mooji_uc_berkeley | mentioned_by | nvidia_gtc -->
+- [ ] `Shubhan Dua (UC Berkeley / AnswersAI)` —`co_attended`→ `Nvidia GTC (San Jose/SF)` (INFERRED 0.7) — imessage/individuals/shubhan-dua-uc-berkeley/2026/2026-03__s
+  - <!-- personal | shubhan_dua_uc_berkeley | co_attended | nvidia_gtc -->
+- [ ] `Smriti Panchal (UC Berkeley)` —`mentioned_by`→ `Nvidia GTC (San Jose/SF)` (INFERRED 0.7) — imessage/individuals/smriti-panchal-uc-berkeley/2026/2026-03
+  - <!-- personal | smriti_panchal_uc_berkeley | mentioned_by | nvidia_gtc -->
+- [ ] `Suhas (UCLA)` —`mentioned_by`→ `Klein Court (Adithya's rental property, Sylmar CA)` (INFERRED 0.7) — imessage/individuals/suhas/2024/2024-04__suhas.md
+  - <!-- personal | suhas | mentioned_by | klein_court_sylmar -->
+- [ ] `Tess (Hinge, Santa Clara/SF Bay)` —`mentioned_by`→ `Nvidia Conference (San Jose/Sunnyvale 2026)` (INFERRED 0.8) — imessage/individuals/tess-hinge-sd/2026/2026-03__tess-hinge-
+  - <!-- personal | tess_hinge_sd | mentioned_by | nvidia_conference -->
+- [ ] `Tony (Uncle)` —`mentioned_by`→ `Monte Carlo (startup, AI/GPU middleware)` (INFERRED 0.8) — imessage/individuals/tony-uncle/2024/2024-08__tony-uncle.md
+  - <!-- personal | tony_uncle | mentioned_by | monte_carlo_startup -->
+- [ ] `Varun Nair (UC Berkeley / SF)` —`discussed_with`→ `Nvidia GTC (San Jose/SF)` (INFERRED 0.8) — imessage/individuals/varun-nair-uc-berkeley/2026/2026-03__va
+  - <!-- personal | varun_nair_uc_berkeley | discussed_with | nvidia_gtc -->
+- [ ] `Viraj (UC Berkeley)` —`discussed_with`→ `Nvidia GTC (San Jose/SF)` (INFERRED 0.7) — imessage/individuals/viraj-uc-berkeley/2026/2026-03__viraj-u
+  - <!-- personal | viraj_uc_berkeley | discussed_with | nvidia_gtc -->
+- [ ] `Zubair` —`discussed_with`→ `Romi (battery company)` (INFERRED 0.8) — imessage/groups/group-evan-zubair/2025/2025-10__group-evan-z
+  - <!-- personal | zubair | discussed_with | romi -->
+- [ ] `Prescription Studio (LA)` —`discussed_with`→ `James Carr (Engineer, Vellese LA)` (INFERRED 0.8) — imessage/individuals/james-carr-engineer-vellese-la/2025/202
+  - <!-- personal | prescription_studio_la | discussed_with | james_carr_engineer -->
+- [ ] `Prescription Studio (LA)` —`mentioned_by`→ `Ryan (LA music collaborator)` (INFERRED 0.8) — imessage/individuals/mike-crook-la/2025/2025-08__mike-crook-
+  - <!-- personal | prescription_studio_la | mentioned_by | ryan_la_music -->
+- [ ] `6th Street (Austin nightlife)` —`co_attended`→ `Sanjana (Hinge, Austin)` (INFERRED 0.7) — imessage/individuals/sanjana-hinge-austin/2026/2026-04__sanj
+  - <!-- personal | sixth_street_austin | co_attended | sanjana_hinge_austin -->
+- [ ] `Jaylem Brar (UC Berkeley / NYC)` —`mentioned_by`→ `Forge (Berkeley Builder Accelerator)` (INFERRED 0.7) — imessage/individuals/jaylem-brar-uc-berkeley-nyc/2025/2025-0
+  - <!-- personal | jaylem_brar | mentioned_by | forge_berkeley -->
+- [ ] `Kevo (Prescription Producer LA)` —`discussed_with`→ `Maranatha (music project)` (INFERRED 0.7) — imessage/individuals/kevo-prescription-producer-la/2024/2024
+  - <!-- personal | kevo_prescription | discussed_with | maranatha_project -->
+
+### Missing reciprocals on symmetric relations (3)
+
+- [ ] `Adithya` —`friend`→ `Rohin (UC Berkeley / Davis)` (EXTRACTED 1.0) — manual/rohin-adithya-friendship.md
+  - <!-- personal | adithya | friend | rohin_uc_berkeley -->
+- [ ] `Adithya` —`ex_partner_of`→ `Rishika (UC Berkeley)` (EXTRACTED 1.0) — manual/adithya-rishika-ex.md
+  - <!-- personal | adithya | ex_partner_of | rishika_uc_berkeley -->
+- [ ] `Adithya` —`friend`→ `Rohan Vaidya (UC Berkeley)` (EXTRACTED 1.0) — manual/adithya-rohan-vaidya-friendship.md
+  - <!-- personal | adithya | friend | rohan_vaidya_uc_berkeley -->
+

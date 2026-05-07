@@ -18,7 +18,9 @@ units: 1
 year_built: 2022
 property_tax_rate: 0.0146
 hoa_monthly: 0.0
+annual_insurance: null
 zillow_url: "https://www.zillow.com/homedetails/5509-Casco-Walk-Austin-TX-78724/331628061_zpid/"
+redfin_url: null
 # rent (zillow comps unless overridden)
 rent_total_monthly: 3090
 rent_per_unit_monthly: 3090.0
@@ -38,6 +40,8 @@ capex_pct: 0.05
 insurance_annual_rate: 0.005
 warranty_maintenance_offset_year_1: 0.6
 ---
+
+
 
 
 
@@ -98,6 +102,8 @@ Stabilized, monthly:
 Edit any number in this file's frontmatter and re-run `re cashflow <address>` — outputs will recompute, your hand-authored sections (Pipeline notes, Backlinks) stay intact.
 
 ## Pipeline notes
+
+
 
 
 

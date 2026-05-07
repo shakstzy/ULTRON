@@ -459,18 +459,14 @@ def write_entity_page(
         for k in ("read_status", "delivered_at", "delivery_count"):
             if k in existing_fm:
                 fm[k] = existing_fm[k]
-        # If the body hasn't changed AND no frontmatter at all differs, skip.
-        # Compare every key in the union, not a hand-picked allowlist; missing
-        # source metadata changes like video_id, url, channel_handle, or
-        # published_at would otherwise be silently dropped.
+        # If the body hasn't changed AND every frontmatter key matches, skip.
+        # Compare the FULL key sets — keys present in only one side count as
+        # a change too, so an empty-out of an existing field still triggers
+        # a write.
         body_unchanged = content_hash(body) == content_hash(existing_body)
-        # Skip write only when proposed fm is a subset-match of existing fm
-        # (i.e., every key present in the proposed set has the same value
-        # in the existing set). last_touched intentionally excluded — the
-        # write itself updates it.
-        fm_unchanged = all(
-            existing_fm.get(k) == v for k, v in fm.items() if k != "last_touched"
-        )
+        existing_cmp = {k: v for k, v in existing_fm.items() if k != "last_touched"}
+        proposed_cmp = {k: v for k, v in fm.items() if k != "last_touched"}
+        fm_unchanged = existing_cmp == proposed_cmp
         if body_unchanged and fm_unchanged:
             return page_path
         fm["last_touched"] = today()
@@ -518,6 +514,8 @@ def ensure_person_stub(
         role = [role]
 
     with _PERSON_STUB_LOCK:
+        # Re-check existence inside the lock so two parallel "first creators"
+        # don't race past the existence check and both write a fresh stub.
         if page_path.exists():
             fm, body = read_md(page_path)
             existing = fm.get("role") or []
@@ -534,24 +532,24 @@ def ensure_person_stub(
             write_md(page_path, fm, body)
             return slug
 
-    fm = {
-        "slug": slug,
-        "type": "person",
-        "canonical_name": canonical_name,
-        "role": role,
-        "domain": domain,
-        "last_touched": today(),
-    }
-    body = (
-        "## Context\n\n"
-        f"_(stub created during ingest of related source on {today()})_\n\n"
-        "## Authored / hosted\n\n"
-        "_(populated as the wiki agent processes more sources)_\n\n"
-        "## Backlinks\n\n"
-        "_(auto-built by `_shell/bin/build-backlinks.py`)_\n"
-    )
-    write_md(page_path, fm, body)
-    return slug
+        fm = {
+            "slug": slug,
+            "type": "person",
+            "canonical_name": canonical_name,
+            "role": role,
+            "domain": domain,
+            "last_touched": today(),
+        }
+        body = (
+            "## Context\n\n"
+            f"_(stub created during ingest of related source on {today()})_\n\n"
+            "## Authored / hosted\n\n"
+            "_(populated as the wiki agent processes more sources)_\n\n"
+            "## Backlinks\n\n"
+            "_(auto-built by `_shell/bin/build-backlinks.py`)_\n"
+        )
+        write_md(page_path, fm, body)
+        return slug
 
 
 # ---------------------------------------------------------------------------

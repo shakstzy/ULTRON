@@ -14,3 +14,17 @@ cross_workspace:
     cron: "0 4 1 */3 *"             # 04:00 on the 1st of every 3rd month
   granola_reconcile:
     cron: "0 3 1,15 * *"            # 03:00 on 1st & 15th (biweekly --reset-cursor sweep, catches Granola folder reclassifications)
+
+# Long-running daemons (KeepAlive=true). Compiled to plists with no cron.
+daemons:
+  whatsapp_bridge:
+    # lharries/whatsapp-mcp Go bridge. Maintains the WhatsApp Web websocket
+    # session via whatsmeow and persists messages to local SQLite. Required
+    # by both _shell/bin/ingest-whatsapp.py (read) and the `whatsapp` skill
+    # (send). Pairing code only needed at first run / after auth expiry (~20d).
+    command: /Users/shakstzy/.local/bin/whatsapp-bridge
+    working_dir: /Users/shakstzy/.local/share/whatsapp-mcp/whatsapp-bridge
+    keep_alive: true
+    throttle_interval: 30
+    env:
+      WHATSAPP_PAIR_PHONE: "+15126601911"

@@ -9,6 +9,10 @@ sources:
       - adithya.shak.kumar@gmail.com
   imessage:
     cron: "0 */6 * * *"              # Every 6 hours; chat.db is local
+  whatsapp:
+    cron: "*/30 * * * *"             # Every 30 min; bridge SQLite is local + scan is sub-second
+    accounts:
+      - "+15126601911"
 
 workspace_jobs:
   lint:

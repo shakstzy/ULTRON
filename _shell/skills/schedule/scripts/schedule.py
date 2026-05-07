@@ -239,12 +239,83 @@ def _slot_count(cron: str) -> int:
         return 0
 
 
+def render_daemon_plist_dict(daemon: dict) -> dict:
+    """Build a plist for a long-running daemon (KeepAlive=true, no cron).
+
+    Daemons differ from scheduled jobs:
+      • RunAtLoad: True  → start as soon as launchctl loads the agent
+      • KeepAlive: True  → restart on crash / unexpected exit
+      • No StartCalendarInterval (not a cron)
+      • No cron-runner.py wrap (a daemon's "exit" is failure, not a discrete run)
+    """
+    label = daemon["label"]
+    program_args: list[str] = list(daemon.get("program_args") or [])
+    if not program_args:
+        cmd = daemon.get("command")
+        if not cmd:
+            raise ValueError(f"daemon {label!r}: missing 'command' or 'program_args'")
+        program_args = shlex.split(cmd)
+
+    env: dict[str, str] = {
+        "PATH": "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "ULTRON_ROOT": str(ULTRON_ROOT),
+        "HOME": str(Path.home()),
+    }
+    env.update(daemon.get("env") or {})
+
+    plist: dict = {
+        "Label": label,
+        "ProgramArguments": program_args,
+        "EnvironmentVariables": env,
+        "StandardOutPath": f"{ULTRON_ROOT}/_logs/{label}.out.log",
+        "StandardErrorPath": f"{ULTRON_ROOT}/_logs/{label}.err.log",
+        "WorkingDirectory": daemon.get("working_dir") or str(ULTRON_ROOT),
+        "RunAtLoad": True,
+        "KeepAlive": bool(daemon.get("keep_alive", True)),
+    }
+    if "throttle_interval" in daemon:
+        # ThrottleInterval (seconds) caps restart frequency. Default launchd
+        # value is 10s; bump to 30s+ for crash-loopy daemons to give logs a
+        # chance before the next attempt.
+        plist["ThrottleInterval"] = int(daemon["throttle_interval"])
+    return plist
+
+
+def collect_daemons() -> list[dict]:
+    """Read top-level `daemons:` from global-schedule.yaml. Each daemon → one plist.
+
+    YAML shape:
+        daemons:
+          whatsapp_bridge:
+            command: /abs/path/to/binary
+            working_dir: /abs/working/dir
+            keep_alive: true
+            throttle_interval: 30
+            env:
+              SOMEVAR: "value"
+    """
+    out: list[dict] = []
+    global_cfg = load_yaml(ULTRON_ROOT / "_shell" / "config" / "global-schedule.yaml")
+    daemons = (global_cfg or {}).get("daemons") or {}
+    for name, body in daemons.items():
+        body = body or {}
+        slug = name.replace("_", "-")
+        out.append({
+            "label": f"com.adithya.ultron.daemon-{slug}",
+            "kind": "daemon",
+            **body,
+        })
+    return out
+
+
 def render_plist(job: dict) -> bytes:
+    if job.get("kind") == "daemon":
+        return plistlib.dumps(render_daemon_plist_dict(job))
     return plistlib.dumps(render_plist_dict(job))
 
 
 def cmd_compile(args: argparse.Namespace) -> int:
-    jobs = collect_jobs()
+    jobs = collect_jobs() + collect_daemons()
     PLISTS_DIR.mkdir(parents=True, exist_ok=True)
     written: list[Path] = []
     skipped: list[tuple[str, str]] = []

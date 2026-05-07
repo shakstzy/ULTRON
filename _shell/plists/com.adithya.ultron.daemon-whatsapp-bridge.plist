@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>HOME</key>
+		<string>/Users/shakstzy</string>
+		<key>PATH</key>
+		<string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+		<key>ULTRON_ROOT</key>
+		<string>/Users/shakstzy/ULTRON</string>
+		<key>WHATSAPP_PAIR_PHONE</key>
+		<string>+15126601911</string>
+	</dict>
+	<key>KeepAlive</key>
+	<true/>
+	<key>Label</key>
+	<string>com.adithya.ultron.daemon-whatsapp-bridge</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Users/shakstzy/.local/bin/whatsapp-bridge</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.daemon-whatsapp-bridge.err.log</string>
+	<key>StandardOutPath</key>
+	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.daemon-whatsapp-bridge.out.log</string>
+	<key>ThrottleInterval</key>
+	<integer>30</integer>
+	<key>WorkingDirectory</key>
+	<string>/Users/shakstzy/.local/share/whatsapp-mcp/whatsapp-bridge</string>
+</dict>
+</plist>

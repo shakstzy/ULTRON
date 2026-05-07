@@ -23,7 +23,7 @@ ACCOUNT=""
 # 1. Stage validation BEFORE any state mutation.
 case "$STAGE" in
   ingest|lint|audit|bootstrap|weekly-review|query) ;;
-  apple-contacts-sync|ledger-compact|graphify-supermerge) ;;
+  apple-contacts-sync|ledger-compact|graphify-supermerge|graphify) ;;
   ingest-source)
     # Per (source, account) mode. Args: ingest-source <source> <account>.
     SOURCE="${2:-}"
@@ -42,7 +42,7 @@ esac
 
 # 2. Workspace requirement validation per stage.
 case "$STAGE" in
-  ingest|lint|bootstrap)
+  ingest|lint|bootstrap|graphify)
     if [[ -z "$WORKSPACE" ]]; then
       echo "$STAGE requires workspace" >&2
       exit 2
@@ -54,7 +54,7 @@ esac
 # Helper stages don't have a stages/<stage>/CONTEXT.md; they invoke a single
 # script and exit. ingest-source uses the source's substage CONTEXT.md.
 case "$STAGE" in
-  apple-contacts-sync|ledger-compact|graphify-supermerge) ;;
+  apple-contacts-sync|ledger-compact|graphify-supermerge|graphify) ;;
   ingest-source)
     if [[ ! -f "$ULTRON_ROOT/_shell/stages/ingest/$SOURCE/CONTEXT.md" ]]; then
       echo "missing source substage: $ULTRON_ROOT/_shell/stages/ingest/$SOURCE/CONTEXT.md" >&2
@@ -252,6 +252,28 @@ case "$STAGE" in
   graphify-supermerge)
     bash "$ULTRON_ROOT/_shell/bin/graphify-run.sh" \
       > "$RUN_DIR/output/graphify-supermerge.log" 2>&1 || EC=$?
+    ;;
+  graphify)
+    # Per-workspace Tier-1 maintenance. Re-extracts changed files into the
+    # existing graph at workspaces/<ws>/graphify-out/graph.json.
+    #
+    # Initial graph creation requires LLM orchestration via /graphify in
+    # Claude Code. This stage only handles incremental updates — if no graph
+    # exists yet, write a placeholder and exit 0 so launchd doesn't keep
+    # retrying.
+    GRAPH_DIR="$ULTRON_ROOT/workspaces/$WORKSPACE/graphify-out"
+    GRAPH_FILE="$GRAPH_DIR/graph.json"
+    OUT_LOG="$RUN_DIR/output/graphify.log"
+    if [[ ! -f "$GRAPH_FILE" ]]; then
+      echo "graphify: no graph at $GRAPH_FILE — run /graphify workspaces/$WORKSPACE/wiki interactively to bootstrap" > "$OUT_LOG"
+      EC=0
+    elif ! command -v graphify >/dev/null 2>&1; then
+      echo "graphify: CLI not on PATH ($PATH)" > "$OUT_LOG"
+      EC=0
+    else
+      cd "$ULTRON_ROOT/workspaces/$WORKSPACE" && \
+        graphify update wiki > "$OUT_LOG" 2>&1 || EC=$?
+    fi
     ;;
 esac
 

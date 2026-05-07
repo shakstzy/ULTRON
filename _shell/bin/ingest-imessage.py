@@ -274,6 +274,12 @@ def parse_args() -> argparse.Namespace:
                     help="Ingest only one contact (debugging).")
     ap.add_argument("--no-attachments", action="store_true",
                     help="Skip attachment copy phase entirely.")
+    # Compatibility with run-stage.sh `ingest-source` dispatcher, which calls
+    # every ingest robot with `--account <acct> --run-id <id>`. iMessage is
+    # account-less (chat.db is local) and doesn't track per-run state, so both
+    # are accepted and ignored.
+    ap.add_argument("--account", default=None, help=argparse.SUPPRESS)
+    ap.add_argument("--run-id", default=None, help=argparse.SUPPRESS)
     return ap.parse_args()
 
 

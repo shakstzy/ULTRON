@@ -1324,7 +1324,12 @@ def load_credentials(workspace_slug: str) -> dict | None:
 
 
 def lock_path_for(workspace_slug: str) -> str:
-    return f"/tmp/com.adithya.ultron.ingest-slack-{workspace_slug}.lock"
+    # NOTE: must NOT collide with the cron plist's outer `flock -n` path
+    # (which uses /tmp/com.adithya.ultron.ingest-slack-<ws>.lock). The outer
+    # holds an exclusive lock for the whole job; if the inner reuses the same
+    # path, fcntl.flock(LOCK_EX|LOCK_NB) here ALWAYS raises BlockingIOError
+    # under launchd, the script silently exits 0, and no work happens.
+    return f"/tmp/ultron-ingest-slack-{workspace_slug}.script.lock"
 
 
 def _try_lock(path: str):

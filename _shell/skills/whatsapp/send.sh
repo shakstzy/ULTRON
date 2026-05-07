@@ -50,10 +50,15 @@ done
 [[ -n "$FILE" && ! -f "$FILE" ]] && die "file not found: $FILE"
 
 # ─── File-path sensitive-dir denylist (data-exfil defense) ─────────────────────
-# Skill is callable by LLMs; an attacker prompt that targets a bridge-recipient
-# they control could try `--file ~/.ssh/id_rsa`. Reject obvious sensitive paths.
+# Skill is callable by LLMs; an attacker prompt could try `--file /tmp/innocent`
+# where /tmp/innocent is a symlink to $HOME/.ssh/id_rsa. We must follow the
+# symlink chain BEFORE checking the denylist — otherwise the bridge opens the
+# file via the OS, follows the symlink itself, and exfiltrates the secret.
 if [[ -n "$FILE" ]]; then
-  ABS_FILE=$(cd "$(dirname "$FILE")" && printf '%s/%s' "$(pwd -P)" "$(basename "$FILE")")
+  ABS_FILE=$(python3 -c 'import os, sys; print(os.path.realpath(sys.argv[1]))' "$FILE")
+  if [[ ! -f "$ABS_FILE" ]]; then
+    die "file not found after symlink resolve: $FILE → $ABS_FILE"
+  fi
   case "$ABS_FILE" in
     "$HOME/.ssh/"*|"$HOME/.aws/"*|"$HOME/.gnupg/"*|"$HOME/.config/"*|"$HOME/Library/Keychains/"*|"/etc/"*|"$ULTRON_ROOT/_credentials/"*)
       fail "refusing to send file in sensitive directory: $ABS_FILE" ;;

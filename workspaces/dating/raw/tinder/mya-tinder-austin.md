@@ -9,10 +9,10 @@ phone: null
 status: "new"
 first_seen: "2026-04-24T00:00:00Z"
 last_activity: "2026-04-24T10:45:00Z"
-last_scrape: "2026-05-07T05:04:25.259Z"
+last_scrape: "2026-05-07T20:13:41.564Z"
 previous_slugs: []
 migrated_from_shakos: "mya"
-last_profile_diff: "2026-05-07T05:04:25.259Z"
+last_profile_diff: "2026-05-07T20:13:41.564Z"
 ---
 
 ## Profile
@@ -74,6 +74,17 @@ last_profile_diff: "2026-05-07T05:04:25.259Z"
 ```json profile-diff
 {
   "ts": "2026-05-07T05:04:25.259Z",
+  "added": {
+    "photo_verified": false
+  },
+  "removed": {},
+  "changed": {}
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-07T20:13:41.564Z",
   "added": {
     "photo_verified": false
   },

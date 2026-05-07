@@ -9,14 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-04T21:47:54.688Z"
 last_activity: "2026-05-04T21:47:54.688Z"
-last_scrape: "2026-05-07T05:01:32.670Z"
+last_scrape: "2026-05-07T20:13:31.062Z"
 previous_slugs: []
+last_profile_diff: "2026-05-07T20:13:31.062Z"
 ---
 
 ## Profile
 
 - age: 25
-- distance_mi: 9025
+- distance_mi: 9018
 - looking_for: "Long-term, open to short"
 - photo_verified: true
 - interests: Running, Mountains, Sports
@@ -28,7 +29,19 @@ previous_slugs: []
 
 ## Profile changes
 
-(none yet)
+```json profile-diff
+{
+  "ts": "2026-05-07T20:13:31.062Z",
+  "added": {},
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 9025,
+      "to": 9018
+    }
+  }
+}
+```
 
 ## Visual
 

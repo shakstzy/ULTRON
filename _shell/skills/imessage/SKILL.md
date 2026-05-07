@@ -17,7 +17,9 @@ For contact add/lookup use `contacts-add` (write) and `contacts-sync` (read) —
 
 ## Recipient resolution (REQUIRED when sending on Adithya's behalf to a named person)
 
-NEVER ask Adithya for a phone number or email. Resolve, then confirm. Order:
+NEVER ask Adithya for a phone number or email. Resolve mechanically. ONLY surface a question when resolution is genuinely ambiguous — clean single-match resolution sends without asking.
+
+**Resolution order:**
 
 1. **Apple Contacts is ground truth.** Query Contacts.app via `osascript`:
    ```bash
@@ -35,13 +37,36 @@ NEVER ask Adithya for a phone number or email. Resolve, then confirm. Order:
    end tell
    EOF
    ```
-2. **Cross-check the entity stub** at `_global/entities/people/<slug>.md`. Stubs can be mislabeled — e.g. `aarti-mom.md` is "Aarti's mom" (a third party), NOT Adithya's mom (whose contact is named just "Mom"). If the stub disagrees with Apple Contacts, trust Contacts and surface the mismatch so Adithya can fix the stub.
+2. **Cross-check the entity stub** at `_global/entities/people/<slug>.md`. Stubs can be mislabeled — e.g. `aartis-mom.md` is "Aarti's mom" (a third party), NOT Adithya's mom (whose contact is named just "Mom"). If the stub disagrees with Apple Contacts, trust Contacts and surface the mismatch so Adithya can fix the stub.
 3. **Disambiguate relationships by exact contact name.** "My mom" = the contact literally named `Mom`. "My dad" = `Dad`. Names like `<X> Mom` / `<X> Dad` almost always mean "X's parent" (a third party), not Adithya's parent.
-4. **Multiple candidate matches?** List them (name + number + emails) and ask which. Don't guess.
-5. **Single confident match?** Show the draft, recipient, and resolved number on one line, then wait for an explicit "yes/send/go" before calling the send tool. Sends are gated per Adithya's standing rules.
-6. **Stub bug?** Note it in the reply so Adithya can fix `_global/entities/people/<slug>.md` or the `contacts-sync` skill — don't silently route around it.
 
-Skip the confirm step ONLY for halt-notification sends from bots to Adithya himself (the original cron use case), where the recipient is hardcoded and there's no third party.
+**When to ask Adithya** (and only these cases):
+
+- **Multiple candidates with the same name** — list them (name + number + emails) and ask which.
+- **Fuzzy / partial match with several hits** — e.g. "send to alex" matches three Alexes, ask which.
+- **Apple Contacts and the entity stub disagree** on the canonical handle — surface both, ask which to trust.
+- **No matches anywhere** — say so, ask for the right name or handle.
+
+**When NOT to ask:**
+
+- Single confident match across sources → just send. Do not echo "→ resolved to X, confirm?" for unambiguous lookups.
+- Adithya already specified the recipient unambiguously (e.g. "text Mom" → contact literally named "Mom").
+- Adithya already specified the message body → NEVER re-confirm the body. Auto-send.
+
+**One-time disambiguation = stable resolution.** When Adithya tells you how to resolve ("the alex from austin"), confirm once if needed, then fire and don't re-ask in the session. Save the disambiguation as a memory if it'll recur.
+
+**Stub bug?** Note it in the reply so Adithya can fix `_global/entities/people/<slug>.md` or the `contacts-sync` skill — don't silently route around it.
+
+## ALWAYS humanize the body before sending
+
+Before any `send.sh --text` call, run the body through the **humanizer** skill (`~/ULTRON/_shell/skills/humanizer/`, symlink to the global). Adithya does not want AI-flavored prose going out under his name — em-dashes, "rule of three," inflated symbolism, "I came across some questions that meant a lot to me," etc.
+
+Flow:
+1. Compose draft body in Adithya's natural voice (terse, lowercase, conversational, profanity OK in friend contexts).
+2. Invoke the humanizer skill on the draft. Use the returned text as the body.
+3. Pass that text to `send.sh --text "..."`.
+
+For halt-notification sends from cron bots to Adithya himself, skip the humanizer (those are explicitly machine-flavored).
 
 ## ALWAYS use `send.sh` — NEVER the MCP iMessage tool
 

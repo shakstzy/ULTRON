@@ -9,14 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-07T05:00:19.718Z"
 last_activity: "2026-05-07T05:00:19.718Z"
-last_scrape: "2026-05-07T05:00:19.718Z"
+last_scrape: "2026-05-07T20:12:41.337Z"
 previous_slugs: []
+last_profile_diff: "2026-05-07T20:12:41.337Z"
 ---
 
 ## Profile
 
 - age: 25
-- distance_mi: 9
+- distance_mi: 2
 - bio: "Looking for someone who can actually beat me at pool and that I can two step with. Bonus points if you know the good dive bars."
 - looking_for: "Long-term, open to short"
 - schools: Texas A&M University
@@ -32,7 +33,21 @@ previous_slugs: []
 
 ## Profile changes
 
-(none yet)
+```json profile-diff
+{
+  "ts": "2026-05-07T20:12:41.337Z",
+  "added": {
+    "photo_verified": false
+  },
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 9,
+      "to": 2
+    }
+  }
+}
+```
 
 ## Conversation
 

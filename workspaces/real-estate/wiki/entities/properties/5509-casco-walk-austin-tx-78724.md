@@ -3,9 +3,9 @@
 slug: "5509-casco-walk-austin-tx-78724"
 type: "property"
 address: "5509 Casco Walk Austin TX 78724"
-city: null
-state: null
-zip: null
+city: "Austin"
+state: "TX"
+zip: "78724"
 # status
 status: "prospect"
 purpose: "investment"
@@ -22,6 +22,8 @@ zillow_url: "https://www.zillow.com/homedetails/5509-Casco-Walk-Austin-TX-78724/
 # rent (zillow comps unless overridden)
 rent_total_monthly: 3090
 rent_per_unit_monthly: 3090.0
+radius_miles: 2.5
+beds_tolerance: 0
 # loan assumptions
 down_pct: 0.2
 interest_rate: 0.07
@@ -35,11 +37,6 @@ capex_pct: 0.05
 insurance_annual_rate: 0.005
 warranty_maintenance_offset_year_1: 0.6
 ---
-
-
-
-
-
 
 
 # 5509 Casco Walk Austin TX 78724
@@ -100,36 +97,8 @@ Edit any number in this file's frontmatter and re-run `re cashflow <address>` â€
 ## Pipeline notes
 
 
-
-
-
-
-
 - 2026-05-07 first looked.
 - Open questions:
 - Next action:
-
-## Financing
-
-
-
-
-
-
-Lender: Chase. Pre-approved at 6.875%.
-
-## Call notes
-
-
-
-
-
-
-```
-Spoke with seller agent.
-## Cash flow LOOK FAKE HEADING in code fence â€” should NOT be treated as section.
-```
-
-Real content after fence.
 
 ## Backlinks

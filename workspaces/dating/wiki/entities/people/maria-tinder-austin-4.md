@@ -1,0 +1,15 @@
+---
+slug: maria-tinder-austin-4
+type: person
+last_touched: 2026-05-07
+---
+
+## Context
+
+Auto-stubbed from raw/tinder/maria-tinder-austin-4.md. Populate as conversations develop.
+
+## Active threads
+
+## Open questions
+
+## Backlinks

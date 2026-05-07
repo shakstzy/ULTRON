@@ -1,0 +1,44 @@
+---
+slug: "maria-tinder-austin-4"
+first_name: "maria"
+source: "tinder"
+city: "austin"
+match_id: "62d1114b8ee7bf01006c3ee366fb34f62e572201007855cc"
+person_id: null
+phone: null
+status: "new"
+first_seen: "2026-05-07T20:12:21.763Z"
+last_activity: "2026-05-07T20:12:21.763Z"
+last_scrape: "2026-05-07T20:12:21.763Z"
+previous_slugs: []
+---
+
+## Profile
+
+- age: 21
+- distance_mi: 4
+- height_cm: 163
+- looking_for: "Still figuring it out"
+- jobs: barista at dutch bros
+- interests: Poetry, Roblox, Tarot
+- basics.zodiac: "Leo"
+- basics.education: "In College"
+- basics.family_plans: "Not sure yet"
+- basics.communication_style: "Big time texter"
+- lifestyle.drinking: "On special occasions"
+- lifestyle.smoking: "Non-smoker"
+- lifestyle.cannabis: "Never"
+- lifestyle.social_media: "Socially active"
+- photos_count: 8
+
+## Profile changes
+
+(none yet)
+
+## Conversation
+
+(no messages yet)
+
+## Outbound log
+
+(none)

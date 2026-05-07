@@ -1,0 +1,46 @@
+---
+slug: "alicia-tinder-austin"
+first_name: "alicia"
+source: "tinder"
+city: "austin"
+match_id: "62d1114b8ee7bf01006c3ee369469da7132003235de27be4"
+person_id: null
+phone: null
+status: "new"
+first_seen: "2026-05-07T20:12:27.644Z"
+last_activity: "2026-05-07T20:12:27.644Z"
+last_scrape: "2026-05-07T20:12:27.644Z"
+previous_slugs: []
+---
+
+## Profile
+
+- age: 23
+- distance_mi: 17
+- height_cm: 157
+- bio: "Looking for a date partner💞"
+- looking_for: "Long-term partner"
+- jobs: Woman, English, Spanish
+- photo_verified: true
+- interests: DIY, Latin music, Reading, Trying New Things, Nightlife, Drive-in Cinema, Bars, Comedy, Nintendo, Boba tea
+- basics.love_style: "Thoughtful gestures"
+- basics.communication_style: "Video chatter"
+- basics.zodiac: "Sagittarius"
+- basics.education: "High School"
+- lifestyle.drinking: "On special occasions"
+- lifestyle.pets: "Don't have but love"
+- lifestyle.workout: "Often"
+- lifestyle.smoking: "Social smoker"
+- photos_count: 8
+
+## Profile changes
+
+(none yet)
+
+## Conversation
+
+(no messages yet)
+
+## Outbound log
+
+(none)

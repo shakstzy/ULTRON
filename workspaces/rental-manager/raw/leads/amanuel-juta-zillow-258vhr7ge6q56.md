@@ -10,7 +10,7 @@ listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 6003031059229235438
 status_label: TOUR REQUESTED
 renter_us_state: CA
-last_pulled_at: "2026-05-06T22:23:41.478Z"
+last_pulled_at: "2026-05-07T02:51:44.766Z"
 ---
 
 # Amanuel Juta

@@ -10,7 +10,7 @@ listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 1646165578782140223
 status_label: INQUIRED
 renter_us_state: CA
-last_pulled_at: "2026-05-06T22:22:24.185Z"
+last_pulled_at: "2026-05-07T02:50:34.902Z"
 ---
 
 # Grace Closovschi

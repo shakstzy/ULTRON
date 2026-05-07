@@ -1,26 +1,23 @@
 ---
 # identity
-slug: 258-w-joanne-loop-a-b-buda-tx-78610
-type: property
-address: 258 W Joanne Loop A B Buda TX 78610
+slug: "258-w-joanne-loop-a-b-buda-tx-78610"
+type: "property"
+address: "258 W Joanne Loop #A & B Buda TX 78610"
 city: null
 state: null
 zip: null
 # status
-status: prospect
-purpose: investment
+status: "prospect"
+purpose: "investment"
 acquired_at: null
-last_touched: 2026-05-07
+last_touched: "2026-05-07"
 # property facts
 price: 500000
 sqft: 2600
 units: 2
-year_built: null
 property_tax_rate: 0.0165
 hoa_monthly: 53
-annual_insurance: null
 zillow_url: "https://www.zillow.com/homedetails/258-W-Joanne-Loop-A-B-Buda-TX-78610/444743265_zpid/"
-redfin_url: null
 # rent (zillow comps unless overridden)
 rent_total_monthly: 3030.0
 rent_per_unit_monthly: 1515.0
@@ -37,6 +34,7 @@ capex_pct: 0.05
 insurance_annual_rate: 0.005
 warranty_maintenance_offset_year_1: 0.6
 ---
+
 
 # 258 W Joanne Loop A B Buda TX 78610
 
@@ -94,6 +92,7 @@ Stabilized, monthly:
 Edit any number in this file's frontmatter and re-run `re cashflow <address>` — outputs will recompute, your hand-authored sections (Pipeline notes, Backlinks) stay intact.
 
 ## Pipeline notes
+
 
 - 2026-05-07 first looked.
 - Open questions:

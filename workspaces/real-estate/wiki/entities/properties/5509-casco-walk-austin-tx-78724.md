@@ -1,16 +1,16 @@
 ---
 # identity
-slug: 5509-casco-walk-austin-tx-78724
-type: property
-address: 5509 Casco Walk Austin TX 78724
+slug: "5509-casco-walk-austin-tx-78724"
+type: "property"
+address: "5509 Casco Walk Austin TX 78724"
 city: null
 state: null
 zip: null
 # status
-status: prospect
-purpose: investment
+status: "prospect"
+purpose: "investment"
 acquired_at: null
-last_touched: 2026-05-07
+last_touched: "2026-05-07"
 # property facts
 price: 566700
 sqft: 2458
@@ -24,7 +24,7 @@ rent_total_monthly: 3090
 rent_per_unit_monthly: 3090.0
 # loan assumptions
 down_pct: 0.2
-interest_rate: 0.085
+interest_rate: 0.07
 term_years: 30
 closing_pct: 0.03
 # operating assumptions
@@ -35,6 +35,8 @@ capex_pct: 0.05
 insurance_annual_rate: 0.005
 warranty_maintenance_offset_year_1: 0.6
 ---
+
+
 
 
 # 5509 Casco Walk Austin TX 78724
@@ -95,9 +97,27 @@ Edit any number in this file's frontmatter and re-run `re cashflow <address>` â€
 ## Pipeline notes
 
 
+
+
 - 2026-05-07 first looked.
-- 2026-05-07 ran what-if at 8.5%.
-- Open questions: appraisal vs list?
-- Next action: drive by
+- Open questions:
+- Next action:
+
+## Financing
+
+
+
+Lender: Chase. Pre-approved at 6.875%.
+
+## Call notes
+
+
+
+```
+Spoke with seller agent.
+## Cash flow LOOK FAKE HEADING in code fence â€” should NOT be treated as section.
+```
+
+Real content after fence.
 
 ## Backlinks

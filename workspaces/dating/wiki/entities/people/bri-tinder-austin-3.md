@@ -1,0 +1,15 @@
+---
+slug: bri-tinder-austin-3
+type: person
+last_touched: 2026-05-07
+---
+
+## Context
+
+Auto-stubbed from raw/tinder/bri-tinder-austin-3.md. Populate as conversations develop.
+
+## Active threads
+
+## Open questions
+
+## Backlinks

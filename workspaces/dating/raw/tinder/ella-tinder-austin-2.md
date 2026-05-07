@@ -8,7 +8,7 @@ person_id: "66be2eabbce5800100d6f738"
 phone: null
 status: "new"
 first_seen: "2026-04-09T00:00:00Z"
-last_activity: "2026-04-09T22:15:00Z"
+last_activity: "2026-05-07T01:52:31.200Z"
 last_scrape: "2026-05-01T06:40:18.274Z"
 previous_slugs: []
 migrated_from_shakos: "ella-3"
@@ -90,8 +90,10 @@ last_profile_diff: "2026-05-01T06:40:18.274Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 01:52 roadtripping across the country for a festival is either a great decision or a cry for help. which festival made it worth it
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 00:59 queued_auto (auto, opener) [draft:6fe0b522] lint=true "roadtripping across the country for a festival is either a great decision or a cry for help. which festival made it worth it"
+- 2026-05-07 01:52 sent (auto, auto-or-hitl) [draft:6fe0b522] lint=true "roadtripping across the country for a festival is either a great decision or a cry for help. which festival made it worth it"

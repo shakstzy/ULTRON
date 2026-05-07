@@ -160,7 +160,7 @@ superseded_by: null
 | `--workspace <ws>` | required; target workspace under `workspaces/` |
 | `--dry-run` | render to stdout (preview only), write nothing |
 | `--no-describe` | skip cloud-llm image descriptions (faster) |
-| `--max-pages N` | cap pagination pages (debug; default unlimited) |
+| `--max-pages N` | cap pagination pages (DEBUG only — partial pulls overwrite existing complete shards with truncated data; never use on real ingests with shards already on disk) |
 
 ## Pacing (detection-conscious)
 

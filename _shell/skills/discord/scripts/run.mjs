@@ -6,6 +6,7 @@
 
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { parseArgs } from 'node:util';
 import {
   die,
   ensureDeps,
@@ -15,33 +16,15 @@ import {
   openDmChannel
 } from './session.mjs';
 
-const PROFILE_DIR = process.env.DISCORD_PROFILE_DIR || `${process.env.HOME}/ULTRON/_credentials/browser-profiles/discord`;
-
-function parseArgs(argv) {
-  const positional = [];
-  const flags = {};
-  for (let i = 0; i < argv.length; i++) {
-    const a = argv[i];
-    if (a.startsWith('--')) {
-      const eq = a.indexOf('=');
-      if (eq > -1) {
-        flags[a.slice(2, eq)] = a.slice(eq + 1);
-      } else {
-        const key = a.slice(2);
-        const next = argv[i + 1];
-        if (next !== undefined && !next.startsWith('--')) {
-          flags[key] = next;
-          i++;
-        } else {
-          flags[key] = true;
-        }
-      }
-    } else {
-      positional.push(a);
-    }
-  }
-  return { positional, flags };
-}
+const ARG_OPTIONS = {
+  force: { type: 'boolean' },
+  workspace: { type: 'string' },
+  ws: { type: 'string' },
+  'dry-run': { type: 'boolean' },
+  'no-describe': { type: 'boolean' },
+  'max-pages': { type: 'string' },
+  help: { type: 'boolean', short: 'h' }
+};
 
 // Verbs.
 
@@ -168,8 +151,15 @@ Env:
 `);
 }
 
-const [, , verb, ...argvRaw] = process.argv;
-if (!verb || verb === 'help' || verb === '--help' || verb === '-h') {
+const { values: flags, positionals } = parseArgs({
+  args: process.argv.slice(2),
+  options: ARG_OPTIONS,
+  allowPositionals: true,
+  strict: false
+});
+const [verb, ...positional] = positionals;
+
+if (!verb || flags.help || verb === 'help') {
   printHelp();
   process.exit(verb ? 0 : 2);
 }
@@ -179,10 +169,8 @@ if (!VERBS[verb]) {
   process.exit(2);
 }
 
-const argv = parseArgs(argvRaw);
-
 try {
-  await VERBS[verb](argv);
+  await VERBS[verb]({ flags, positional });
 } catch (e) {
   die(`[error] ${e.message}`);
 }

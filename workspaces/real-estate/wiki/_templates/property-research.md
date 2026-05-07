@@ -37,6 +37,23 @@ Drop the merged JSON into `## Raw lookup` below, then promote the load-bearing n
 | Address | Status | $ | $/sqft | Beds | Sqft | Source |
 |---|---|---|---|---|---|---|
 
+## Cash flow
+
+```bash
+~/.claude/skills/real-estate/re cashflow "<address>"
+# duplex / multi-unit:
+~/.claude/skills/real-estate/re cashflow "<address>" --units 2 --rent-per-unit <amt>
+```
+
+Defaults are Central-TX investor (20% down, 7% rate, 30yr, 8% vacancy, 4% PM, 5% maintenance, 5% capex, 0.5% insurance, 3% closing). Two scenarios are emitted: `stabilized` and `year_1_with_warranty`.
+
+| Scenario | NOI / mo | Cash flow / mo | Cap rate | CoC | Breakeven rent |
+|---|---|---|---|---|---|
+| stabilized | | | | | |
+| year 1 (warranty) | | | | | |
+
+Verdict: <cash-flows | breaks even | bleeds — needed price drop OR rent jump>.
+
 ## Pipeline notes
 
 - <YYYY-MM-DD> first looked: <why this property>

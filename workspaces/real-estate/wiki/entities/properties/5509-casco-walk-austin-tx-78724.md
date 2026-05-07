@@ -39,14 +39,17 @@ warranty_maintenance_offset_year_1: 0.6
 
 
 
+
+
+
 # 5509 Casco Walk Austin TX 78724
 
 ## Cash flow
 
 | Scenario | NOI / mo | Cash flow / mo | Cap rate | CoC | Breakeven rent / mo |
 |---|---|---|---|---|---|
-| stabilized | $1,485 | $-2,001 | 3.14% | -18.43% | $5,656 |
-| year 1 (warranty) | $1,577 | $-1,909 | 3.34% | -17.57% | $5,446 |
+| stabilized | $1,485 | $-1,532 | 3.14% | -14.10% | $5,054 |
+| year 1 (warranty) | $1,577 | $-1,439 | 3.34% | -13.25% | $4,866 |
 
 ## Pro forma detail
 
@@ -63,8 +66,8 @@ Stabilized, monthly:
 | − Insurance | $-236 |
 | − HOA | $0 |
 | **= NOI** | $1,485 |
-| − Mortgage P+I | $-3,486 |
-| **= Cash flow** | $-2,001 |
+| − Mortgage P+I | $-3,016 |
+| **= Cash flow** | $-1,532 |
 
 ## Inputs used
 
@@ -74,10 +77,10 @@ Stabilized, monthly:
 | Sqft | 2458 |
 | Units | 1 |
 | Down pct | 20.00% |
-| Interest rate | 8.50% |
+| Interest rate | 7.00% |
 | Term | 30yr |
 | Loan amount | $453,360 |
-| Monthly P+I | $3,486 |
+| Monthly P+I | $3,016 |
 | Closing pct | 3.00% |
 | Total cash invested | $130,341 |
 | Property tax rate | 1.46% |
@@ -99,6 +102,9 @@ Edit any number in this file's frontmatter and re-run `re cashflow <address>` �
 
 
 
+
+
+
 - 2026-05-07 first looked.
 - Open questions:
 - Next action:
@@ -107,9 +113,15 @@ Edit any number in this file's frontmatter and re-run `re cashflow <address>` �
 
 
 
+
+
+
 Lender: Chase. Pre-approved at 6.875%.
 
 ## Call notes
+
+
+
 
 
 

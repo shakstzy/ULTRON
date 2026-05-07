@@ -3,16 +3,14 @@
 
 import { promises as fs } from "node:fs";
 import path from "node:path";
-import os from "node:os";
 import { chromium } from "patchright";
-import { PROFILE_DIR } from "./paths.mjs";
+import { PROFILE_DIR, LAUNCH_TS_FILE } from "./paths.mjs";
 
 const DEFAULT_VIEWPORT = { width: 1366, height: 820 };
 const DEFAULT_USER_AGENT = null;
 // Rapid sequential verbs trigger LinkedIn's /feed/ throttle. Cross-process file lock keeps
 // back-to-back CLI invocations >=30s apart.
 const MIN_INTER_LAUNCH_MS = 30_000;
-const LAUNCH_TS_FILE = path.join(os.homedir(), ".quantum", "linkedin", "state", "last-launch.ts");
 
 async function paceLaunch() {
   try {

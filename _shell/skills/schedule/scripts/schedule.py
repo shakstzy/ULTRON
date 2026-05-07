@@ -71,6 +71,30 @@ import plistlib
 import shlex
 
 
+def _load_cron_env() -> dict[str, str]:
+    """Read top-level `cron_env:` from global-schedule.yaml.
+
+    Single source of truth for env vars that every cron+daemon plist should inherit.
+    Tilde-expanded at compile time (launchd does not expand `~` in plist env values).
+    Empty/None values are skipped so a key can be neutralized by setting it to "".
+    Cached so workspace-yaml jobs don't re-parse global-schedule.yaml per call.
+    """
+    if hasattr(_load_cron_env, "_cache"):
+        return _load_cron_env._cache  # type: ignore[attr-defined]
+    cfg = load_yaml(ULTRON_ROOT / "_shell" / "config" / "global-schedule.yaml")
+    raw = (cfg or {}).get("cron_env") or {}
+    out: dict[str, str] = {}
+    for k, v in raw.items():
+        if v is None or v == "":
+            continue
+        s = str(v)
+        if s.startswith("~"):
+            s = os.path.expanduser(s)
+        out[str(k)] = s
+    _load_cron_env._cache = out  # type: ignore[attr-defined]
+    return out
+
+
 def render_plist_dict(job: dict) -> dict:
     """Build a plist dict ready for plistlib.dumps(). Args are shell-quoted.
 

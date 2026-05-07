@@ -1,6 +1,16 @@
 # ULTRON cross-workspace schedule. The schedule skill compiles this into
 # launchd plists at _shell/plists/.
 
+# Env vars injected into every cron+daemon plist's EnvironmentVariables block.
+# Single source of truth — change here, recompile, reload, every job picks it up.
+# `~` expands at compile time (launchd does not auto-expand). Empty values are skipped.
+#
+# CLAUDE_CONFIG_DIR isolates Claude Code auth for cron-fired jobs from interactive
+# sessions. Log in once: `CLAUDE_CONFIG_DIR=~/.claude-cron claude` (one browser
+# click). Cron jobs then never starve interactive quota.
+cron_env:
+  CLAUDE_CONFIG_DIR: ~/.claude-cron
+
 cross_workspace:
   graphify_supermerge:
     cron: "0 */6 * * *"             # Every 6 hours

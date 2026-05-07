@@ -1,4 +1,4 @@
-// Alert writer. Drops a markdown file into ~/.quantum/linkedin/alerts/ and yells on stderr.
+// Alert writer. Drops a markdown file into ~/.ultron/linkedin/alerts/ and yells on stderr.
 // Used by ban-signal handler and CLI on hard failures.
 
 import { promises as fs } from "node:fs";

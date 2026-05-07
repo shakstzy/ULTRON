@@ -8,7 +8,7 @@ person_id: "69d07b133d637a43533c653b"
 phone: null
 status: "new"
 first_seen: "2026-04-19T00:00:00Z"
-last_activity: "2026-04-19T22:11:00Z"
+last_activity: "2026-05-07T03:47:10.220Z"
 last_scrape: "2026-05-01T09:05:23.218Z"
 previous_slugs: []
 migrated_from_shakos: "mackenzie"
@@ -84,8 +84,10 @@ last_profile_diff: "2026-05-01T09:05:23.218Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 03:47 texas to bay area is a bold swap. what's the first thing you've tried to recreate in your new kitchen?
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:16 queued_auto (auto, opener) [draft:5186c4d6] lint=true "texas to bay area is a bold swap. what's the first thing you've tried to recreate in your new kitchen?"
+- 2026-05-07 03:47 sent (auto, auto-or-hitl) [draft:5186c4d6] lint=true "texas to bay area is a bold swap. what's the first thing you've tried to recreate in your new kitchen?"

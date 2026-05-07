@@ -8,7 +8,7 @@ person_id: "68623d5a5a433b386077ee5a"
 phone: null
 status: "new"
 first_seen: "2026-04-20T00:00:00Z"
-last_activity: "2026-04-20T04:52:00Z"
+last_activity: "2026-05-07T03:46:37.084Z"
 last_scrape: "2026-05-01T09:03:39.469Z"
 previous_slugs: []
 migrated_from_shakos: "lydia"
@@ -84,8 +84,10 @@ last_profile_diff: "2026-05-01T09:03:39.469Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 03:46 that bucket list entry is doing a lot of work for someone who lives in LA and owns a film camera
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:16 queued_auto (auto, opener) [draft:b470cab1] lint=true "that bucket list entry is doing a lot of work for someone who lives in LA and owns a film camera"
+- 2026-05-07 03:46 sent (auto, auto-or-hitl) [draft:b470cab1] lint=true "that bucket list entry is doing a lot of work for someone who lives in LA and owns a film camera"

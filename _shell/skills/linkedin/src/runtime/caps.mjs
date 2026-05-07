@@ -1,5 +1,5 @@
 // Daily / weekly counters + active-hours guard. Reads config/caps.json. Persists to
-// ~/.quantum/linkedin/state/rate-state.json with proper-lockfile.
+// ~/.ultron/linkedin/state/rate-state.json with proper-lockfile.
 
 import { promises as fs } from "node:fs";
 import { dirname } from "node:path";

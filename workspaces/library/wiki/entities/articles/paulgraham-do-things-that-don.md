@@ -8,14 +8,14 @@ published_at: null
 tags:
 - startups
 - growth-tactics
-- user-acquisition
 - founder-mindset
-- y-combinator
+- early-traction
 mentioned_concepts:
 - collison-installation
 - compound-growth
-- contained-fire
+- contained-fire-strategy
 - pulling-a-meraki
+- larval-startups
 mentioned_books: []
 slug: paulgraham-do-things-that-don
 read_status: ingested
@@ -27,24 +27,24 @@ bite_size_minutes: 2
 ---
 ## TL;DR
 
-Startups don't just organically explode into massive growth; they have to be kickstarted with intense, unscalable manual effort. As a founder, my job early on isn't to build a self-sustaining machine immediately, but to manually recruit my first users and give them an insanely great, handcrafted experience.
+Startups don't just magically take off if the product is good; they need to be manually cranked into motion. I have to do the unglamorous, unscalable grunt work—like recruiting users one by one and obsessively hand-holding them—until compounding growth naturally takes over.
 
 ## Key takeaways
 
-- The "Collison Installation": Don't just email a beta link. Physically take their laptop and set up the product for them on the spot, like the Stripe founders did.
-- Growth compounds invisibly. Going from 100 to 110 users feels like a failure in absolute numbers, but holding a 10% weekly growth rate turns into millions of users in two years.
-- Treat early users like royalty. Hand-written thank you notes (Wufoo) or flying out to physically take better apartment photos (Airbnb) build the feedback loops that actually save the product.
-- Act like a bespoke consultant for your very first user. Keep tweaking until you perfectly solve one person's exact problem, and you'll accidentally build what the broader market wants.
-- Use the "contained fire" strategy. Limit the initial launch to a hyper-specific, narrow niche (like Facebook exclusively at Harvard) so engagement burns white-hot before expanding.
-- Ignore the "Big Launch" myth. Simultaneous PR blitzes usually flop; manually recruiting a tiny, hardcore group of users who genuinely love the product is the only thing that moves the needle.
+- Forget the "big launch" myth; early momentum comes from manually dragging the first hundred users through the door, like the Stripe founders physically setting up their app on people's laptops.
+- I shouldn't judge my larval startup against established giants—the early stage is incredibly fragile and requires extreme, unscalable measures just to survive the first few months.
+- I need to obsess over the *experience* of being an early user, providing a level of extreme hand-holding and delight that big companies physically cannot match.
+- Instead of going broad, I should contain the fire by finding a hyper-specific, narrow market (like Facebook did at Harvard) and getting it scorching hot first.
+- If the software isn't ready, I can literally *be* the software for early clients—doing the backend work manually behind the scenes until I know exactly what needs automating.
+- I need to start treating my startup idea as a two-part vector: "what I'm building" plus "the manual hustle I'll use to acquire the first cohort."
 
 ## Quote
 
-"Actually startups take off because the founders make them take off." — Paul Graham, Do Things that Don't Scale
+"Actually startups take off because the founders make them take off." — Paul Graham, Essay
 
 ## Why it matters
 
-It destroys the Silicon Valley myth that writing perfect code will magically attract users. It forces me to get out of the IDE, stop hiding behind automation, and actually do the grueling, face-to-face sales work required to birth a product.
+When building my next product, it's a harsh reminder to stop agonizing over infinitely scalable architecture and just go physically sit with my first ten users. It kills the "build it and they will come" delusion that traps so many technical founders in my network.
 
 ## Connections
 

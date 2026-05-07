@@ -6,5 +6,8 @@
   "ledger_path": "/Users/shakstzy/ULTRON/_logs/cron-ledger.jsonl",
   "color_success": "10",
   "color_failure": "11",
-  "color_scheduled": "8"
+  "color_scheduled": "8",
+  "operator_phone": "+15126601911",
+  "audit_state_path": "/Users/shakstzy/ULTRON/_logs/cron-audit-state.json",
+  "audit_report_dir": "/Users/shakstzy/ULTRON/_logs"
 }

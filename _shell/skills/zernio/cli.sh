@@ -93,13 +93,27 @@ api() {
   die "HTTP ${http} from ${path}: ${resp}"
 }
 
-# Build a query string from key=value pairs, skipping empty values.
+# URL-encode a string. Pure bash so no python/jq dependency for query helpers.
+urlenc() {
+  local s="$1" i c out=""
+  for ((i=0; i<${#s}; i++)); do
+    c="${s:i:1}"
+    case "$c" in
+      [a-zA-Z0-9.~_-]) out+="$c" ;;
+      *) printf -v c '%%%02X' "'$c"; out+="$c" ;;
+    esac
+  done
+  printf '%s' "$out"
+}
+
+# Build a query string from key=value pairs. Values are URL-encoded; empty values skipped.
 qs() {
   local out=""
   for kv in "$@"; do
     local k="${kv%%=*}" v="${kv#*=}"
     [[ -z "$v" ]] && continue
-    if [[ -z "$out" ]]; then out="?${k}=${v}"; else out="${out}&${k}=${v}"; fi
+    local ev; ev=$(urlenc "$v")
+    if [[ -z "$out" ]]; then out="?${k}=${ev}"; else out="${out}&${k}=${ev}"; fi
   done
   printf '%s' "$out"
 }

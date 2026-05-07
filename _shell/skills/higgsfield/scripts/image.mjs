@@ -2,7 +2,7 @@
 // Primary flow: navigate, browse phase, type prompt, click generate, poll, download.
 
 import { launchContext } from './browser.mjs';
-import { browsePhase, humanClick, typeHuman, pauseJitter } from './behavior.mjs';
+import { browsePhase, pauseJitter } from './behavior.mjs';
 import { initState, readState, slugFromPrompt, timestampForRunId } from './state.mjs';
 import { downloadAll, finalize, preflight, getWallet, parseCostCap, walletTotal } from './job.mjs';
 import { submitViaUI, openHistoryPanel, scrapeUserAssets, waitForNewAssets, userIdFromJwtCapture, bestDownloadUrl, enableUnlimitedToggle, selectPicker, uploadReferenceImages, clearReferenceImages, clearPersistedAttachments } from './ui-submit.mjs';

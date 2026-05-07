@@ -1,6 +1,6 @@
 #!/bin/bash
 # zernio cli.sh - direct REST wrapper for the Zernio API (zernio.com/api/v1).
-# Merges QUANTUM's zernio-post (organic) + zernio-ads (paid) into one script.
+# Single-entry CLI for organic publishing AND paid ads (same API key).
 #
 # Reads (no gate):
 #   accounts                                       list connected social accounts

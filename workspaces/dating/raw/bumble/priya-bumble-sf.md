@@ -1,17 +1,18 @@
 ---
-slug: "priya-bumble-austin"
+slug: "priya-bumble-sf"
 first_name: "priya"
 source: "bumble"
-city: "austin"
+city: "sf"
 match_id: "zAhMACjIwMDE3OTM2MTAIe-K7hQAAAAAgBz4wZov7hWgC8hBdblCgP8Oue5g_aZiQLVFDgfdltJc"
 person_id: null
 phone: null
 status: "expired"
-expires_at: "2026-05-06T23:16:47.129Z"
+expires_at: "2026-05-07T05:30:07.374Z"
 first_seen: "2026-05-04T03:25:02.000Z"
 last_activity: "2026-05-06T23:16:48.134Z"
-last_scrape: "2026-05-06T23:16:48.133Z"
-previous_slugs: []
+last_scrape: "2026-05-07T05:30:08.379Z"
+previous_slugs:
+  - "priya-bumble-austin"
 ---
 
 ## Profile

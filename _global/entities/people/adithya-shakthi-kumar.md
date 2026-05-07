@@ -23,7 +23,8 @@ global: true
 
 ## Notes
 
-(populated by user / wiki agent)
+- Dated [[Rishika UC Berkeley]] during her UC Berkeley years; relationship has ended (ex-partner).
+- Friend of [[Rohin UC Berkeley]] from UC Berkeley days. Rohin sometimes hung out with Adithya during Rishika hangouts in Berkeley — any extracted edge between Rohin and Rishika is a co-occurrence artifact, not a real relationship.
 
 ## Backlinks
 

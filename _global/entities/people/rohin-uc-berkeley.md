@@ -23,7 +23,8 @@ global: true
 
 ## Notes
 
-(populated by user / wiki agent)
+- Friend of [[Adithya Shakthi Kumar]] from UC Berkeley.
+- No direct relationship to [[Rishika UC Berkeley]] — Rohin appeared in iMessage threads alongside Rishika because he was hanging out with Adithya during Adithya's hangouts with Rishika in Berkeley. Any extracted Rohin↔Rishika edge is a co-occurrence inference, not a real connection.
 
 ## Backlinks
 

@@ -23,7 +23,8 @@ global: true
 
 ## Notes
 
-- Lived at [[2310 Fulton Street (Berkeley)]] while attending UC Berkeley.
+- Ex-partner of [[Adithya Shakthi Kumar]]. Dated during her UC Berkeley years; relationship has ended.
+- Lived at [[2310 Fulton Street (Berkeley)]] while attending UC Berkeley with roommate [[Linh Pham Rishika Roomate]].
 
 ## Backlinks
 

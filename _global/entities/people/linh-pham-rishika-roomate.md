@@ -23,7 +23,8 @@ global: true
 
 ## Notes
 
-(populated by user / wiki agent)
+- Roommate of [[Rishika UC Berkeley]] at [[2310 Fulton Street (Berkeley)]] during Rishika's UC Berkeley years.
+- Slug is context-named (`linh-pham-rishika-roomate`) because the only known context for Linh in this graph is being Rishika's roommate. If she shows up in another context, rename via the alias skill.
 
 ## Backlinks
 

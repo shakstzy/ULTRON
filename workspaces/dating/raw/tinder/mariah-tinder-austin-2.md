@@ -8,7 +8,7 @@ person_id: "69a1f2350ae04d080279ccc7"
 phone: null
 status: "new"
 first_seen: "2026-04-09T00:00:00Z"
-last_activity: "2026-04-09T02:23:00Z"
+last_activity: "2026-05-07T03:49:46.707Z"
 last_scrape: "2026-05-01T09:24:42.060Z"
 previous_slugs: []
 migrated_from_shakos: "mariah-3"
@@ -83,8 +83,10 @@ last_profile_diff: "2026-05-01T09:24:42.060Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 03:49 your hamster looks judgy. what manga is he giving you grief about
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:18 queued_auto (auto, opener) [draft:2c11df22] lint=true "your hamster looks judgy. what manga is he giving you grief about"
+- 2026-05-07 03:49 sent (auto, auto-or-hitl) [draft:2c11df22] lint=true "your hamster looks judgy. what manga is he giving you grief about"

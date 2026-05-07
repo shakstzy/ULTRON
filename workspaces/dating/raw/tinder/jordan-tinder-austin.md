@@ -8,7 +8,7 @@ person_id: "6307df7cdd5689010027a102"
 phone: null
 status: "new"
 first_seen: "2026-04-22T00:00:00Z"
-last_activity: "2026-04-22T04:34:00Z"
+last_activity: "2026-05-07T02:36:27.841Z"
 last_scrape: "2026-05-01T07:50:54.848Z"
 previous_slugs: []
 migrated_from_shakos: "jordan-2"
@@ -85,8 +85,10 @@ last_profile_diff: "2026-05-01T07:50:54.848Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 02:36 the yap-to-funny ratio at UT is actually competitive, curious where you land on the scale
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:08 queued_auto (auto, opener) [draft:1b1396d2] lint=true "the yap-to-funny ratio at UT is actually competitive, curious where you land on the scale"
+- 2026-05-07 02:36 sent (auto, auto-or-hitl) [draft:1b1396d2] lint=true "the yap-to-funny ratio at UT is actually competitive, curious where you land on the scale"

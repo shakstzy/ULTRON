@@ -8,7 +8,7 @@ person_id: "63eda275379ab201008162dd"
 phone: null
 status: "new"
 first_seen: "2026-04-04T00:00:00Z"
-last_activity: "2026-04-04T06:15:00Z"
+last_activity: "2026-05-07T02:35:59.279Z"
 last_scrape: "2026-05-01T07:50:09.875Z"
 previous_slugs: []
 migrated_from_shakos: "jordan"
@@ -92,8 +92,10 @@ last_profile_diff: "2026-05-01T07:50:09.875Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 02:35 the spiderweb tattoo and red boots in the same outfit is a strong commitment. horror movies or live music converting you to ATX full time?
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:08 queued_auto (auto, opener) [draft:b5c1c776] lint=true "the spiderweb tattoo and red boots in the same outfit is a strong commitment. horror movies or live music converting you to ATX full time?"
+- 2026-05-07 02:35 sent (auto, auto-or-hitl) [draft:b5c1c776] lint=true "the spiderweb tattoo and red boots in the same outfit is a strong commitment. horror movies or live music converting you to ATX full time?"

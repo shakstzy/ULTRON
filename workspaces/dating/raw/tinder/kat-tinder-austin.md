@@ -8,7 +8,7 @@ person_id: "691d3200beab281cd2a39f2d"
 phone: null
 status: "new"
 first_seen: "2026-04-06T00:00:00Z"
-last_activity: "2026-04-06T04:01:00Z"
+last_activity: "2026-05-07T02:37:20.890Z"
 last_scrape: "2026-05-01T08:09:29.846Z"
 previous_slugs: []
 migrated_from_shakos: "kat-2"
@@ -90,8 +90,10 @@ last_profile_diff: "2026-05-01T08:09:29.846Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 02:37 heated rivalry is a niche fixation, what's episode 4 specifically doing to you
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:10 queued_auto (auto, opener) [draft:71d9b800] lint=true "heated rivalry is a niche fixation, what's episode 4 specifically doing to you"
+- 2026-05-07 02:37 sent (auto, auto-or-hitl) [draft:71d9b800] lint=true "heated rivalry is a niche fixation, what's episode 4 specifically doing to you"

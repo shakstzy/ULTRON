@@ -8,7 +8,7 @@ person_id: "69419875b54f8e7905e0e16a"
 phone: null
 status: "new"
 first_seen: "2026-04-17T00:00:00Z"
-last_activity: "2026-04-17T21:25:00Z"
+last_activity: "2026-05-07T02:36:52.176Z"
 last_scrape: "2026-05-01T07:53:37.047Z"
 previous_slugs: []
 migrated_from_shakos: "juliana-3"
@@ -106,8 +106,10 @@ last_profile_diff: "2026-05-01T07:53:37.047Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 02:36 the ATHLETE sash at 23 is a whole story. what's the sport?
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:08 queued_auto (auto, opener) [draft:c95fb0ed] lint=true "the ATHLETE sash at 23 is a whole story. what's the sport?"
+- 2026-05-07 02:36 sent (auto, auto-or-hitl) [draft:c95fb0ed] lint=true "the ATHLETE sash at 23 is a whole story. what's the sport?"

@@ -131,7 +131,7 @@ def list_existing_schedule_events(cfg):
         "--all-pages",
         "--json", "--results-only",
     ]
-    res = subprocess.run(args, capture_output=True, text=True, timeout=60)
+    res = subprocess.run(args, capture_output=True, text=True, timeout=180)
     if res.returncode != 0:
         sys.stderr.write(f"[projector] list events failed: {res.stderr}\n")
         return {}
@@ -167,7 +167,7 @@ def create_event(cfg, sid, spec):
         "--no-input",
         "--json",
     ]
-    res = subprocess.run(args, capture_output=True, text=True, timeout=60)
+    res = subprocess.run(args, capture_output=True, text=True, timeout=180)
     if res.returncode != 0:
         sys.stderr.write(f"[projector] create failed for {sid} ({spec['label']}): {res.stderr[:400]}\n")
         return False
@@ -179,7 +179,7 @@ def delete_event(cfg, event_id):
         GOG, "-a", cfg["account"], "cal", "delete", cfg["calendar_id"], event_id,
         "--force", "--no-input",
     ]
-    res = subprocess.run(args, capture_output=True, text=True, timeout=60)
+    res = subprocess.run(args, capture_output=True, text=True, timeout=180)
     if res.returncode != 0:
         sys.stderr.write(f"[projector] delete failed for {event_id}: {res.stderr[:400]}\n")
         return False

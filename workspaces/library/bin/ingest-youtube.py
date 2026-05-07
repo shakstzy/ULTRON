@@ -117,8 +117,11 @@ def filter_shorts(videos: list[dict], skip_shorts: bool = True) -> list[dict]:
         dur = v.get("duration")
         if dur is not None and dur < SHORTS_DURATION_THRESHOLD_SECONDS:
             continue
-        # Some flat results have url like .../shorts/<id> — exclude those too
-        url = v.get("url", "") or v.get("webpage_url", "")
+        # Some flat results have url like .../shorts/<id> — exclude those too.
+        # yt-dlp can return explicit null for url/webpage_url, so coerce to str.
+        url = v.get("url") or v.get("webpage_url") or ""
+        if not isinstance(url, str):
+            url = ""
         if "/shorts/" in url:
             continue
         out.append(v)
@@ -229,7 +232,7 @@ def ingest_video(video_id: str, *, allow_shorts_explicit: bool = False, overwrit
         title_short = co_book.get("slug")
         print(f"  [{video_id}] co-located under book: {title_short}")
 
-    slug = L.youtube_video_slug(title, channel_handle)
+    slug = L.youtube_video_slug(title, channel_handle, video_id=video_id)
 
     # Raw path
     if co_book:
@@ -403,13 +406,31 @@ def main() -> int:
             return 1
     elif kind == "channel":
         try:
-            ingest_channel(
-                args.url,
-                backfill=args.backfill,
-                parallel=args.parallel,
-                skip_shorts=not args.include_shorts_in_channel,
-                overwrite=args.overwrite,
-            )
+            if args.videos:
+                # Selective ingest: ignore --backfill, just hit the listed video IDs.
+                ids = [v.strip() for v in args.videos.split(",") if v.strip()]
+                successes = 0
+                failures = 0
+                for vid in ids:
+                    try:
+                        p = ingest_video(vid, allow_shorts_explicit=args.allow_shorts,
+                                         overwrite=args.overwrite)
+                        if p:
+                            successes += 1
+                        else:
+                            failures += 1
+                    except Exception as e:
+                        print(f"  [{vid}] FATAL: {e}", file=sys.stderr)
+                        failures += 1
+                print(f"  selective ingest: {successes} ok, {failures} failed")
+            else:
+                ingest_channel(
+                    args.url,
+                    backfill=args.backfill,
+                    parallel=args.parallel,
+                    skip_shorts=not args.include_shorts_in_channel,
+                    overwrite=args.overwrite,
+                )
         except Exception as e:
             print(f"  FATAL: {type(e).__name__}: {e}", file=sys.stderr)
             return 1

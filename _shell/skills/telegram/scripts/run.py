@@ -251,9 +251,8 @@ def cmd_reset_breaker(args) -> int:
 
 
 def cmd_login(args) -> int:
-    # Defer to login.py so its interactive prompts have a clean main loop.
     from login import run_login
-    return asyncio.run(run_login())
+    return asyncio.run(run_login(args))
 
 
 def main() -> int:
@@ -262,7 +261,11 @@ def main() -> int:
     common.add_argument("--json", action="store_true", help="output JSON")
     sub = p.add_subparsers(dest="cmd", required=True)
 
-    sub.add_parser("login", parents=[common], help="interactive phone+code auth (one-time)")
+    pl = sub.add_parser("login", parents=[common], help="phone+code auth (one-time)")
+    pl.add_argument("--send-code", action="store_true", help="phase 1: trigger Telegram code")
+    pl.add_argument("--code", help="phase 2: 5-digit code from Telegram")
+    pl.add_argument("--phone", help="override phone in telegram.json")
+    pl.add_argument("--password", help="2FA cloud password if set")
     sub.add_parser("whoami", parents=[common], help="confirm session")
 
     pc = sub.add_parser("chats", parents=[common], help="list dialogs")

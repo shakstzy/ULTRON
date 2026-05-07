@@ -105,9 +105,16 @@ def book_slug(title: str, author_name: str) -> str:
     return f"{last_slug}-{title_words_slug(title, n_words=3)}"
 
 
-def youtube_video_slug(title: str, channel_handle: str) -> str:
-    """`<channel-handle>-<title-4-words>`."""
-    return f"{slugify(channel_handle)}-{title_words_slug(title, n_words=4)}"
+def youtube_video_slug(title: str, channel_handle: str, video_id: str = "") -> str:
+    """`<channel-handle>-<title-4-words>[-<id5>]`. Channels reuse titles across
+    videos (e.g. Weekly Q&A), so we append 5 chars of video_id when supplied
+    to prevent collisions silently overwriting older entries."""
+    base = f"{slugify(channel_handle)}-{title_words_slug(title, n_words=4)}"
+    if video_id:
+        suffix = re.sub(r"[^A-Za-z0-9]", "", video_id)[:5].lower()
+        if suffix:
+            return f"{base}-{suffix}"
+    return base
 
 
 def paper_slug(title: str, first_author: str, year: int | str) -> str:
@@ -452,8 +459,19 @@ def write_entity_page(
         for k in ("read_status", "delivered_at", "delivery_count"):
             if k in existing_fm:
                 fm[k] = existing_fm[k]
-        # Hash compare body — skip if no meaningful change
-        if content_hash(body) == content_hash(existing_body):
+        # If the body hasn't changed AND no frontmatter at all differs, skip.
+        # Compare every key in the union, not a hand-picked allowlist; missing
+        # source metadata changes like video_id, url, channel_handle, or
+        # published_at would otherwise be silently dropped.
+        body_unchanged = content_hash(body) == content_hash(existing_body)
+        # Skip write only when proposed fm is a subset-match of existing fm
+        # (i.e., every key present in the proposed set has the same value
+        # in the existing set). last_touched intentionally excluded — the
+        # write itself updates it.
+        fm_unchanged = all(
+            existing_fm.get(k) == v for k, v in fm.items() if k != "last_touched"
+        )
+        if body_unchanged and fm_unchanged:
             return page_path
         fm["last_touched"] = today()
 
@@ -480,28 +498,41 @@ def _entity_folder(entity_type: str) -> str:
 # Person stub creation
 # ---------------------------------------------------------------------------
 
+_PERSON_STUB_LOCK = __import__("threading").Lock()
+
+
 def ensure_person_stub(
     canonical_name: str,
     role: str | list[str],
     domain: str | None = None,
 ) -> str:
-    """Create or update a workspace-local person stub. Returns the slug."""
+    """Create or update a workspace-local person stub. Returns the slug.
+
+    Thread-safe: parallel ingest workers can call this concurrently for the
+    same channel host without clobbering each other (file lock around RMW).
+    """
     slug = author_slug(canonical_name)
     page_path = WIKI / "entities" / "people" / f"{slug}.md"
 
     if isinstance(role, str):
         role = [role]
 
-    if page_path.exists():
-        fm, body = read_md(page_path)
-        roles = set(fm.get("role") or [])
-        roles.update(role)
-        fm["role"] = sorted(roles)
-        if domain and not fm.get("domain"):
-            fm["domain"] = domain
-        fm["last_touched"] = today()
-        write_md(page_path, fm, body)
-        return slug
+    with _PERSON_STUB_LOCK:
+        if page_path.exists():
+            fm, body = read_md(page_path)
+            existing = fm.get("role") or []
+            # If existing role was stored as a scalar string, treat it as a single role
+            # rather than iterating its characters (a real bug pre-fix).
+            if isinstance(existing, str):
+                existing = [existing]
+            roles = set(existing)
+            roles.update(role)
+            fm["role"] = sorted(roles)
+            if domain and not fm.get("domain"):
+                fm["domain"] = domain
+            fm["last_touched"] = today()
+            write_md(page_path, fm, body)
+            return slug
 
     fm = {
         "slug": slug,

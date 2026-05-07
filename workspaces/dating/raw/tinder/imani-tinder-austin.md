@@ -8,7 +8,7 @@ person_id: "69252b1a34919185db4f4984"
 phone: null
 status: "new"
 first_seen: "2026-04-11T00:00:00Z"
-last_activity: "2026-04-11T03:27:00Z"
+last_activity: "2026-05-07T01:55:44.430Z"
 last_scrape: "2026-05-01T07:21:47.923Z"
 previous_slugs: []
 migrated_from_shakos: "imani-2"
@@ -76,8 +76,10 @@ last_profile_diff: "2026-05-01T07:21:47.923Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 01:55 letterboxd it is. last thing on your list you'd actually fight someone over
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:04 queued_auto (auto, opener) [draft:f7b5dc36] lint=true "letterboxd it is. last thing on your list you'd actually fight someone over"
+- 2026-05-07 01:55 sent (auto, auto-or-hitl) [draft:f7b5dc36] lint=true "letterboxd it is. last thing on your list you'd actually fight someone over"

@@ -8,7 +8,7 @@ person_id: "69e46d231260b7206e231694"
 phone: null
 status: "new"
 first_seen: "2026-04-24T00:00:00Z"
-last_activity: "2026-04-24T10:45:00Z"
+last_activity: "2026-05-07T01:55:16.432Z"
 last_scrape: "2026-05-01T07:14:00.850Z"
 previous_slugs: []
 migrated_from_shakos: "halima"
@@ -101,8 +101,10 @@ last_profile_diff: "2026-05-01T07:14:00.850Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 01:55 went from going out to goat farm. do you leave those early too
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:01 queued_auto (auto, opener) [draft:e472a9aa] lint=true "went from going out to goat farm. do you leave those early too"
+- 2026-05-07 01:55 sent (auto, auto-or-hitl) [draft:e472a9aa] lint=true "went from going out to goat farm. do you leave those early too"

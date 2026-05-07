@@ -23,7 +23,7 @@ global: true
 
 ## Notes
 
-(populated by user / wiki agent)
+- Lived at [[2310 Fulton Street (Berkeley)]] while attending UC Berkeley.
 
 ## Backlinks
 

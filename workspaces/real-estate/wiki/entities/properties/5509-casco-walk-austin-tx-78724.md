@@ -22,6 +22,7 @@ zillow_url: "https://www.zillow.com/homedetails/5509-Casco-Walk-Austin-TX-78724/
 # rent (zillow comps unless overridden)
 rent_total_monthly: 3090
 rent_per_unit_monthly: 3090.0
+rent_comp_count: 5
 radius_miles: 2.5
 beds_tolerance: 0
 # loan assumptions
@@ -37,6 +38,8 @@ capex_pct: 0.05
 insurance_annual_rate: 0.005
 warranty_maintenance_offset_year_1: 0.6
 ---
+
+
 
 
 # 5509 Casco Walk Austin TX 78724
@@ -90,11 +93,13 @@ Stabilized, monthly:
 | Warranty maint offset (yr 1) | 60.00% |
 | Rent / mo (total) | $3,090 |
 | Rent / unit | $3,090 |
-| Rent comp count | override |
+| Rent comp count | 5 |
 
 Edit any number in this file's frontmatter and re-run `re cashflow <address>` — outputs will recompute, your hand-authored sections (Pipeline notes, Backlinks) stay intact.
 
 ## Pipeline notes
+
+
 
 
 - 2026-05-07 first looked.

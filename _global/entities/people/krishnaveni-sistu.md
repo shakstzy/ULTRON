@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.349427+00:00
+ingested_at: 2026-05-07T12:21:52.828404+00:00
 ingest_version: 1
 content_hash: blake2b:6be9164fd96422051283b852930408ea
-provider_modified_at: 2026-05-06T22:18:21.349427+00:00
+provider_modified_at: 2026-05-07T12:21:52.828404+00:00
 
 title: Krishnaveni Sistu
 slug: krishnaveni-sistu
@@ -15,7 +15,7 @@ identifiers:
   email: ["kasa.home@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.349427+00:00
+last_synced: 2026-05-07T12:21:52.828404+00:00
 global: true
 ---
 

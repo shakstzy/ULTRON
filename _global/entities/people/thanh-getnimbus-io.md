@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.402575+00:00
+ingested_at: 2026-05-07T12:21:52.865126+00:00
 ingest_version: 1
 content_hash: blake2b:c352b62511293d229ec5db813fe8481d
-provider_modified_at: 2026-05-06T22:18:21.402575+00:00
+provider_modified_at: 2026-05-07T12:21:52.865126+00:00
 
 title: Thành | GetNimbus.io
 slug: thanh-getnimbus-io
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.402575+00:00
+last_synced: 2026-05-07T12:21:52.865126+00:00
 global: true
 ---
 

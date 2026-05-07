@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.432244+00:00
+ingested_at: 2026-05-07T12:21:52.891801+00:00
 ingest_version: 1
 content_hash: blake2b:01550a898fe2002d22f4f2bf6e9db624
-provider_modified_at: 2026-05-06T22:18:21.432244+00:00
+provider_modified_at: 2026-05-07T12:21:52.891801+00:00
 
 title: Andrew Hardy Stanford LEAD
 slug: andrew-hardy-stanford-lead
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19193572112"]
   slack: []
-last_synced: 2026-05-06T22:18:21.432244+00:00
+last_synced: 2026-05-07T12:21:52.891801+00:00
 global: true
 ---
 

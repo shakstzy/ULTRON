@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.409124+00:00
+ingested_at: 2026-05-07T12:21:52.870146+00:00
 ingest_version: 1
 content_hash: blake2b:469072e0ae489be19c00201714ff6be2
-provider_modified_at: 2026-05-06T22:18:21.409124+00:00
+provider_modified_at: 2026-05-07T12:21:52.870146+00:00
 
 title: Stuart UT-Austin
 slug: stuart-ut-austin
@@ -15,7 +15,7 @@ identifiers:
   email: ["utaustinhsra@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.409124+00:00
+last_synced: 2026-05-07T12:21:52.870146+00:00
 global: true
 ---
 

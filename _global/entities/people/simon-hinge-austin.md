@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.430321+00:00
+ingested_at: 2026-05-07T12:21:52.890059+00:00
 ingest_version: 1
 content_hash: blake2b:7b1c5fbf6a16773185d7b590f74027b4
-provider_modified_at: 2026-05-06T22:18:21.430321+00:00
+provider_modified_at: 2026-05-07T12:21:52.890059+00:00
 
 title: Simon Hinge Austin
 slug: simon-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16822666837"]
   slack: []
-last_synced: 2026-05-06T22:18:21.430321+00:00
+last_synced: 2026-05-07T12:21:52.890059+00:00
 global: true
 ---
 

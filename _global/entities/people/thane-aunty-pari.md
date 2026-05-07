@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.456963+00:00
+ingested_at: 2026-05-07T12:21:52.909865+00:00
 ingest_version: 1
 content_hash: blake2b:52a586c2b367259f43f23480f5e82154
-provider_modified_at: 2026-05-06T22:18:21.456963+00:00
+provider_modified_at: 2026-05-07T12:21:52.909865+00:00
 
 title: Thane Aunty Pari
 slug: thane-aunty-pari
@@ -15,7 +15,7 @@ identifiers:
   email: ["thane_5@yahoo.com", "thane.pari@gmail.com"]
   phone: ["5129699917"]
   slack: []
-last_synced: 2026-05-06T22:18:21.456963+00:00
+last_synced: 2026-05-07T12:21:52.909865+00:00
 global: true
 ---
 

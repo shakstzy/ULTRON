@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.408216+00:00
+ingested_at: 2026-05-07T12:21:52.869268+00:00
 ingest_version: 1
 content_hash: blake2b:234f7dfc862ed5228a21561aead3c3cc
-provider_modified_at: 2026-05-06T22:18:21.408216+00:00
+provider_modified_at: 2026-05-07T12:21:52.869268+00:00
 
 title: Mikolaj | RedStone
 slug: mikolaj-redstone
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.408216+00:00
+last_synced: 2026-05-07T12:21:52.869268+00:00
 global: true
 ---
 

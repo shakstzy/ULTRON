@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.463978+00:00
+ingested_at: 2026-05-07T12:21:52.916349+00:00
 ingest_version: 1
 content_hash: blake2b:093301d5d73042b4d2f17611979a7010
-provider_modified_at: 2026-05-06T22:18:21.463978+00:00
+provider_modified_at: 2026-05-07T12:21:52.916349+00:00
 
 title: Sariwa | MindoAI
 slug: sariwa-mindoai
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.463978+00:00
+last_synced: 2026-05-07T12:21:52.916349+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.491790+00:00
+ingested_at: 2026-05-07T12:21:52.930004+00:00
 ingest_version: 1
 content_hash: blake2b:23f2b55d1e2e3e74ddab40f0ad53630a
-provider_modified_at: 2026-05-06T22:18:21.491790+00:00
+provider_modified_at: 2026-05-07T12:21:52.930004+00:00
 
 title: Nathan Prabhat UC Berkeley
 slug: nathan-prabhat-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19259227366"]
   slack: []
-last_synced: 2026-05-06T22:18:21.491790+00:00
+last_synced: 2026-05-07T12:21:52.930004+00:00
 global: true
 ---
 

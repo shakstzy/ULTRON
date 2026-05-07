@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.558211+00:00
+ingested_at: 2026-05-07T12:21:52.976348+00:00
 ingest_version: 1
 content_hash: blake2b:c10616cc9af56711c52ee080e7bb096f
-provider_modified_at: 2026-05-06T22:18:21.558211+00:00
+provider_modified_at: 2026-05-07T12:21:52.976348+00:00
 
 title: Tisha Hinge Austin
 slug: tisha-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14792248041"]
   slack: []
-last_synced: 2026-05-06T22:18:21.558211+00:00
+last_synced: 2026-05-07T12:21:52.976348+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.414426+00:00
+ingested_at: 2026-05-07T12:21:52.875651+00:00
 ingest_version: 1
 content_hash: blake2b:6d7af0ef2c805f42e8fef11d8faca92e
-provider_modified_at: 2026-05-06T22:18:21.414426+00:00
+provider_modified_at: 2026-05-07T12:21:52.875651+00:00
 
 title: Elin Hinge Philly
 slug: elin-hinge-philly
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14844773979"]
   slack: []
-last_synced: 2026-05-06T22:18:21.414426+00:00
+last_synced: 2026-05-07T12:21:52.875651+00:00
 global: true
 ---
 

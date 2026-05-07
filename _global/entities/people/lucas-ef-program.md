@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.387596+00:00
+ingested_at: 2026-05-07T12:21:52.853078+00:00
 ingest_version: 1
 content_hash: blake2b:5a82216bc52643c39b1942b72ed3831d
-provider_modified_at: 2026-05-06T22:18:21.387596+00:00
+provider_modified_at: 2026-05-07T12:21:52.853078+00:00
 
 title: Lucas EF Program
 slug: lucas-ef-program
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17815186434"]
   slack: []
-last_synced: 2026-05-06T22:18:21.387596+00:00
+last_synced: 2026-05-07T12:21:52.853078+00:00
 global: true
 ---
 

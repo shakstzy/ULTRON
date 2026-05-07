@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.562178+00:00
+ingested_at: 2026-05-07T12:21:52.979842+00:00
 ingest_version: 1
 content_hash: blake2b:e4f4b7e2e1fd411f2d8428aefe524336
-provider_modified_at: 2026-05-06T22:18:21.562178+00:00
+provider_modified_at: 2026-05-07T12:21:52.979842+00:00
 
 title: Jxne Artist LA
 slug: jxne-artist-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(347) 833-0214"]
   slack: []
-last_synced: 2026-05-06T22:18:21.562178+00:00
+last_synced: 2026-05-07T12:21:52.979842+00:00
 global: true
 ---
 

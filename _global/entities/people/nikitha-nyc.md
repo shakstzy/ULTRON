@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.546003+00:00
+ingested_at: 2026-05-07T12:21:52.965099+00:00
 ingest_version: 1
 content_hash: blake2b:74e16f9a63d94fd3cd95b8b474b251ce
-provider_modified_at: 2026-05-06T22:18:21.546003+00:00
+provider_modified_at: 2026-05-07T12:21:52.965099+00:00
 
 title: Nikitha NYC
 slug: nikitha-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17743295351"]
   slack: []
-last_synced: 2026-05-06T22:18:21.546003+00:00
+last_synced: 2026-05-07T12:21:52.965099+00:00
 global: true
 ---
 

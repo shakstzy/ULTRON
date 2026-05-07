@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.394939+00:00
+ingested_at: 2026-05-07T12:21:52.857272+00:00
 ingest_version: 1
 content_hash: blake2b:be7821cafa29f3140771476ceb7858d4
-provider_modified_at: 2026-05-06T22:18:21.394939+00:00
+provider_modified_at: 2026-05-07T12:21:52.857272+00:00
 
 title: Mehdi | SeshatLabs
 slug: mehdi-seshatlabs
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.394939+00:00
+last_synced: 2026-05-07T12:21:52.857272+00:00
 global: true
 ---
 

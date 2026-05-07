@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.491321+00:00
+ingested_at: 2026-05-07T12:21:52.929581+00:00
 ingest_version: 1
 content_hash: blake2b:9cb73d4d324f0d4e6821280c996ecb5c
-provider_modified_at: 2026-05-06T22:18:21.491321+00:00
+provider_modified_at: 2026-05-07T12:21:52.929581+00:00
 
 title: Sanaya Hinge Dallas
 slug: sanaya-hinge-dallas-3dda
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12142508079"]
   slack: []
-last_synced: 2026-05-06T22:18:21.491321+00:00
+last_synced: 2026-05-07T12:21:52.929581+00:00
 global: true
 ---
 

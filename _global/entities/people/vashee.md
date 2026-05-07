@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.465890+00:00
+ingested_at: 2026-05-07T12:21:52.917968+00:00
 ingest_version: 1
 content_hash: blake2b:b38ede849ba9168531e1f764b19083b1
-provider_modified_at: 2026-05-06T22:18:21.465890+00:00
+provider_modified_at: 2026-05-07T12:21:52.917968+00:00
 
 title: Vashee
 slug: vashee
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(949) 339-2424"]
   slack: []
-last_synced: 2026-05-06T22:18:21.465890+00:00
+last_synced: 2026-05-07T12:21:52.917968+00:00
 global: true
 ---
 

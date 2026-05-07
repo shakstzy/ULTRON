@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.454318+00:00
+ingested_at: 2026-05-07T12:21:52.907529+00:00
 ingest_version: 1
 content_hash: blake2b:6d4a5c97a5bfa48762afc085b6b6349a
-provider_modified_at: 2026-05-06T22:18:21.454318+00:00
+provider_modified_at: 2026-05-07T12:21:52.907529+00:00
 
 title: Zenith Jahid
 slug: zenith-jahid
@@ -15,7 +15,7 @@ identifiers:
   email: ["zenithjahid50@gmail.com", "zenith.mjahid@gmail.com"]
   phone: ["512-229-7866"]
   slack: []
-last_synced: 2026-05-06T22:18:21.454318+00:00
+last_synced: 2026-05-07T12:21:52.907529+00:00
 global: true
 ---
 

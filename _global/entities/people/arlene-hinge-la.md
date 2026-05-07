@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.433681+00:00
+ingested_at: 2026-05-07T12:21:52.893176+00:00
 ingest_version: 1
 content_hash: blake2b:eb26285d04e5931037b55b307208d94e
-provider_modified_at: 2026-05-06T22:18:21.433681+00:00
+provider_modified_at: 2026-05-07T12:21:52.893176+00:00
 
 title: Arlene Hinge LA
 slug: arlene-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16612047623"]
   slack: []
-last_synced: 2026-05-06T22:18:21.433681+00:00
+last_synced: 2026-05-07T12:21:52.893176+00:00
 global: true
 ---
 

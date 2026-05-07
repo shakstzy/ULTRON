@@ -1,9 +1,9 @@
 ---
 source: discord
 workspace: personal
-ingested_at: '2026-05-07T03:41:30.440Z'
+ingested_at: '2026-05-07T12:22:56.864Z'
 ingest_version: 1
-content_hash: sha256:11dfa09b47a9be528ccdaa3a53cf3a7a3f44726745b2f7baf380746c634f7241
+content_hash: sha256:271a55244089788900dad4bf6753b128c0d2410726beac4b2711c61ec80e733c
 provider_modified_at: '2025-12-25T20:54:17.659Z'
 contact_slug: shva-shvalockedin
 contact_type: individual
@@ -16,19 +16,19 @@ attachments:
   - message_id: '1445450955230543983'
     kind: image
     filename: image.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1445450954907320420/image.png?ex=69fcbd1a&is=69fb6b9a&hm=90bc5a64e2280294f70c5591a5a2bab2863af8082e55486fccbf1e03408e638a&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1445450954907320420/image.png?ex=69fd65da&is=69fc145a&hm=19b233a32a610b8fafaf30eb0b49f54c20e20758afd22939113d5b6411d617b6&'
     size: 40790
-    description: 'An email congratulating user SHVATrades on becoming a Topstep Funded Trader.'
+    description: null
   - message_id: '1446060760261328967'
     kind: image
     filename: image.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1446060760114532454/image.png?ex=69fcfac7&is=69fba947&hm=546e3fd7c16d4b93e3f9fcb2dd4a617329e2081408d9bac44444af358973b86a&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1446060760114532454/image.png?ex=69fda387&is=69fc5207&hm=31d81b202befcfbdf80613ef2ba06226dfa0cca2f212d1afe607c1147c9d62ec&'
     size: 22777
-    description: 'A dark mode YouTube interface showing the channel shvatrades with 11 subscribers and 11 video likes.'
+    description: null
   - message_id: '1453853382421778597'
     kind: file
     filename: message.txt
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1453853382405128222/message.txt?ex=69fcfbf9&is=69fbaa79&hm=709c14a9363bc2ca1400e6c2c34fa4699eefa3668d8fef6eeac305b45a375d98&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1453853382405128222/message.txt?ex=69fda4b9&is=69fc5339&hm=e7bdb437a8d5de0f1efcbab914cedb63e80968ab08fd627ea37b91f51374e52c&'
     size: 5777
     description: null
 discord_channel_id: '1292220510603575366'
@@ -44,7 +44,7 @@ superseded_by: null
 ## 2025-12-02 (Tuesday)
 
 **10:26 — SHVA:** 
-↳ image: image.png (40 KB) — "An email congratulating user SHVATrades on becoming a Topstep Funded Trader." — https://cdn.discordapp.com/attachments/1292220510603575366/1445450954907320420/image.png?ex=69fcbd1a&is=69fb6b9a&hm=90bc5a64e2280294f70c5591a5a2bab2863af8082e55486fccbf1e03408e638a&
+↳ image: image.png (40 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1445450954907320420/image.png?ex=69fd65da&is=69fc145a&hm=19b233a32a610b8fafaf30eb0b49f54c20e20758afd22939113d5b6411d617b6&
 **10:26 — SHVA:** ts nuts
 **10:57 — me:** Fire bruh congrats man
 **10:57 — me:** This is heat
@@ -57,7 +57,7 @@ superseded_by: null
 **00:04 — SHVA:** https://www.youtube.com/watch?v=B9vC8p9CngU&feature=youtu.be
 **02:47 — me:** this fire
 **02:49 — me:** boay got double digit subs now
-↳ image: image.png (22 KB) — "A dark mode YouTube interface showing the channel shvatrades with 11 subscribers and 11 video likes." — https://cdn.discordapp.com/attachments/1292220510603575366/1446060760114532454/image.png?ex=69fcfac7&is=69fba947&hm=546e3fd7c16d4b93e3f9fcb2dd4a617329e2081408d9bac44444af358973b86a&
+↳ image: image.png (22 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1446060760114532454/image.png?ex=69fda387&is=69fc5207&hm=31d81b202befcfbdf80613ef2ba06226dfa0cca2f212d1afe607c1147c9d62ec&
 
 ## 2025-12-08 (Monday)
 
@@ -86,4 +86,4 @@ https://capable-druid-db88db.netlify.app/
 ## 2025-12-25 (Thursday)
 
 **14:54 — SHVA:** 
-↳ file: message.txt (6 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1453853382405128222/message.txt?ex=69fcfbf9&is=69fbaa79&hm=709c14a9363bc2ca1400e6c2c34fa4699eefa3668d8fef6eeac305b45a375d98&
+↳ file: message.txt (6 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1453853382405128222/message.txt?ex=69fda4b9&is=69fc5339&hm=e7bdb437a8d5de0f1efcbab914cedb63e80968ab08fd627ea37b91f51374e52c&

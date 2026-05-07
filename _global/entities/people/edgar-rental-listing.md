@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.461615+00:00
+ingested_at: 2026-05-07T12:21:52.914036+00:00
 ingest_version: 1
 content_hash: blake2b:4fccc6bf51292606864e58bc24e82848
-provider_modified_at: 2026-05-06T22:18:21.461615+00:00
+provider_modified_at: 2026-05-07T12:21:52.914036+00:00
 
 title: Edgar Rental Listing
 slug: edgar-rental-listing
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18184274952"]
   slack: []
-last_synced: 2026-05-06T22:18:21.461615+00:00
+last_synced: 2026-05-07T12:21:52.914036+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.433287+00:00
+ingested_at: 2026-05-07T12:21:52.892860+00:00
 ingest_version: 1
 content_hash: blake2b:2e53f384ee695eb03d1604a9e12c4b18
-provider_modified_at: 2026-05-06T22:18:21.433287+00:00
+provider_modified_at: 2026-05-07T12:21:52.892860+00:00
 
 title: Sethu Odayappan LaunchX
 slug: sethu-odayappan-launchx
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(774) 266-8834"]
   slack: []
-last_synced: 2026-05-06T22:18:21.433287+00:00
+last_synced: 2026-05-07T12:21:52.892860+00:00
 global: true
 ---
 

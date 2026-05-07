@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.434370+00:00
+ingested_at: 2026-05-07T12:21:52.893704+00:00
 ingest_version: 1
 content_hash: blake2b:177b386072f75d1acd910581e777d1dc
-provider_modified_at: 2026-05-06T22:18:21.434370+00:00
+provider_modified_at: 2026-05-07T12:21:52.893704+00:00
 
 title: Bala Kumar
 slug: bala-kumar
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-964-7276"]
   slack: []
-last_synced: 2026-05-06T22:18:21.434370+00:00
+last_synced: 2026-05-07T12:21:52.893704+00:00
 global: true
 ---
 

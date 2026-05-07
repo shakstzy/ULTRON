@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.366602+00:00
+ingested_at: 2026-05-07T12:21:52.838274+00:00
 ingest_version: 1
 content_hash: blake2b:58cf9eabcbe609807c3f3c23f4e044bb
-provider_modified_at: 2026-05-06T22:18:21.366602+00:00
+provider_modified_at: 2026-05-07T12:21:52.838274+00:00
 
 title: Mahir INDIAN RAGA
 slug: mahir-indian-raga
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-777-5553"]
   slack: []
-last_synced: 2026-05-06T22:18:21.366602+00:00
+last_synced: 2026-05-07T12:21:52.838274+00:00
 global: true
 ---
 

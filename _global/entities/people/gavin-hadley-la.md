@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.571498+00:00
+ingested_at: 2026-05-07T12:21:52.988286+00:00
 ingest_version: 1
 content_hash: blake2b:69e2978d36e0ee08add2d2ea239da784
-provider_modified_at: 2026-05-06T22:18:21.571498+00:00
+provider_modified_at: 2026-05-07T12:21:52.988286+00:00
 
 title: Gavin Hadley LA
 slug: gavin-hadley-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19202685370"]
   slack: []
-last_synced: 2026-05-06T22:18:21.571498+00:00
+last_synced: 2026-05-07T12:21:52.988286+00:00
 global: true
 ---
 

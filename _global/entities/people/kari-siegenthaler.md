@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.539974+00:00
+ingested_at: 2026-05-07T12:21:52.958606+00:00
 ingest_version: 1
 content_hash: blake2b:281f312099c9da169e38814a0693e47e
-provider_modified_at: 2026-05-06T22:18:21.539974+00:00
+provider_modified_at: 2026-05-07T12:21:52.958606+00:00
 
 title: Kari Siegenthaler
 slug: kari-siegenthaler
@@ -15,7 +15,7 @@ identifiers:
   email: ["karisiegen@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.539974+00:00
+last_synced: 2026-05-07T12:21:52.958606+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.426857+00:00
+ingested_at: 2026-05-07T12:21:52.886534+00:00
 ingest_version: 1
 content_hash: blake2b:7bf07cf1a48b14289139b2dc387ea980
-provider_modified_at: 2026-05-06T22:18:21.426857+00:00
+provider_modified_at: 2026-05-07T12:21:52.886534+00:00
 
 title: Ethan Baldonado
 slug: ethan-baldonado
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-269-1050"]
   slack: []
-last_synced: 2026-05-06T22:18:21.426857+00:00
+last_synced: 2026-05-07T12:21:52.886534+00:00
 global: true
 ---
 

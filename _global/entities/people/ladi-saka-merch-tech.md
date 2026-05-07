@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.395962+00:00
+ingested_at: 2026-05-07T12:21:52.858205+00:00
 ingest_version: 1
 content_hash: blake2b:437b671170b908d08ef804f36e5130d6
-provider_modified_at: 2026-05-06T22:18:21.395962+00:00
+provider_modified_at: 2026-05-07T12:21:52.858205+00:00
 
 title: Ladi Saka Merch + Tech
 slug: ladi-saka-merch-tech
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(818) 640-9881"]
   slack: []
-last_synced: 2026-05-06T22:18:21.395962+00:00
+last_synced: 2026-05-07T12:21:52.858205+00:00
 global: true
 ---
 

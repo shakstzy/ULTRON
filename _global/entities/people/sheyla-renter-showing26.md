@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.577836+00:00
+ingested_at: 2026-05-07T12:21:52.993874+00:00
 ingest_version: 1
 content_hash: blake2b:b3d39a66b0aa357678d1b0615de8db9b
-provider_modified_at: 2026-05-06T22:18:21.577836+00:00
+provider_modified_at: 2026-05-07T12:21:52.993874+00:00
 
 title: Sheyla Renter Showing26
 slug: sheyla-renter-showing26
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18188566458"]
   slack: []
-last_synced: 2026-05-06T22:18:21.577836+00:00
+last_synced: 2026-05-07T12:21:52.993874+00:00
 global: true
 ---
 

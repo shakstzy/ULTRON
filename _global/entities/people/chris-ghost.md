@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.577431+00:00
+ingested_at: 2026-05-07T12:21:52.993620+00:00
 ingest_version: 1
 content_hash: blake2b:c0d85259c17809cacd9eaea8a1d2f95a
-provider_modified_at: 2026-05-06T22:18:21.577431+00:00
+provider_modified_at: 2026-05-07T12:21:52.993620+00:00
 
 title: Chris | Ghost
 slug: chris-ghost
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.577431+00:00
+last_synced: 2026-05-07T12:21:52.993620+00:00
 global: true
 ---
 

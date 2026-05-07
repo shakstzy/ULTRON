@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.324474+00:00
+ingested_at: 2026-05-07T12:21:52.805238+00:00
 ingest_version: 1
 content_hash: blake2b:2c595d4d4ac05895474fcaa42a19cba7
-provider_modified_at: 2026-05-06T22:18:21.324474+00:00
+provider_modified_at: 2026-05-07T12:21:52.805238+00:00
 
 title: Laila Hinge Austin
 slug: laila-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18328449165"]
   slack: []
-last_synced: 2026-05-06T22:18:21.324474+00:00
+last_synced: 2026-05-07T12:21:52.805238+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.461216+00:00
+ingested_at: 2026-05-07T12:21:52.913705+00:00
 ingest_version: 1
 content_hash: blake2b:563288e84a8e7c5d661c6c1fd9441f4a
-provider_modified_at: 2026-05-06T22:18:21.461216+00:00
+provider_modified_at: 2026-05-07T12:21:52.913705+00:00
 
 title: Vidhya FBLA Austin
 slug: vidhya-fbla-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(610) 972-0548"]
   slack: []
-last_synced: 2026-05-06T22:18:21.461216+00:00
+last_synced: 2026-05-07T12:21:52.913705+00:00
 global: true
 ---
 

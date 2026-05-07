@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.431130+00:00
+ingested_at: 2026-05-07T12:21:52.890892+00:00
 ingest_version: 1
 content_hash: blake2b:56f4420645eb11c0d589226345e45662
-provider_modified_at: 2026-05-06T22:18:21.431130+00:00
+provider_modified_at: 2026-05-07T12:21:52.890892+00:00
 
 title: John Renter Showing
 slug: john-renter-showing
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18185186184"]
   slack: []
-last_synced: 2026-05-06T22:18:21.431130+00:00
+last_synced: 2026-05-07T12:21:52.890892+00:00
 global: true
 ---
 

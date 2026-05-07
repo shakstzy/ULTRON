@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.438490+00:00
+ingested_at: 2026-05-07T12:21:52.897633+00:00
 ingest_version: 1
 content_hash: blake2b:b79ea7a4ccca82209e8d05d280c928f3
-provider_modified_at: 2026-05-06T22:18:21.438490+00:00
+provider_modified_at: 2026-05-07T12:21:52.897633+00:00
 
 title: Amru Hinge Dallas
 slug: amru-hinge-dallas
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14693899335"]
   slack: []
-last_synced: 2026-05-06T22:18:21.438490+00:00
+last_synced: 2026-05-07T12:21:52.897633+00:00
 global: true
 ---
 

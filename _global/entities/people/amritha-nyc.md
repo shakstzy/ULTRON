@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.386479+00:00
+ingested_at: 2026-05-07T12:21:52.852021+00:00
 ingest_version: 1
 content_hash: blake2b:56abdf5f3faf9334fe78e12d591a313f
-provider_modified_at: 2026-05-06T22:18:21.386479+00:00
+provider_modified_at: 2026-05-07T12:21:52.852021+00:00
 
 title: Amritha NYC
 slug: amritha-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17326668792"]
   slack: []
-last_synced: 2026-05-06T22:18:21.386479+00:00
+last_synced: 2026-05-07T12:21:52.852021+00:00
 global: true
 ---
 

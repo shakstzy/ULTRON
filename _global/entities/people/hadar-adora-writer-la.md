@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.382419+00:00
+ingested_at: 2026-05-07T12:21:52.847967+00:00
 ingest_version: 1
 content_hash: blake2b:ff03fb78aa32759a044bfb83c17836c8
-provider_modified_at: 2026-05-06T22:18:21.382419+00:00
+provider_modified_at: 2026-05-07T12:21:52.847967+00:00
 
 title: Hadar Adora Writer LA
 slug: hadar-adora-writer-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19177053513"]
   slack: []
-last_synced: 2026-05-06T22:18:21.382419+00:00
+last_synced: 2026-05-07T12:21:52.847967+00:00
 global: true
 ---
 

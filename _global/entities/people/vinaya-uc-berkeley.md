@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.349683+00:00
+ingested_at: 2026-05-07T12:21:52.828757+00:00
 ingest_version: 1
 content_hash: blake2b:18372a11f2c5e6c80455f4ae58b68568
-provider_modified_at: 2026-05-06T22:18:21.349683+00:00
+provider_modified_at: 2026-05-07T12:21:52.828757+00:00
 
 title: Vinaya UC Berkeley
 slug: vinaya-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18324930379"]
   slack: []
-last_synced: 2026-05-06T22:18:21.349683+00:00
+last_synced: 2026-05-07T12:21:52.828757+00:00
 global: true
 ---
 

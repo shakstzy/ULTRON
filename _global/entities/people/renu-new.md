@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.309846+00:00
+ingested_at: 2026-05-07T12:21:52.797438+00:00
 ingest_version: 1
 content_hash: blake2b:7e50b932c32cfc6b2f48b91797aad96b
-provider_modified_at: 2026-05-06T22:18:21.309846+00:00
+provider_modified_at: 2026-05-07T12:21:52.797438+00:00
 
 title: Renu New
 slug: renu-new
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+91 7397 741 456"]
   slack: []
-last_synced: 2026-05-06T22:18:21.309846+00:00
+last_synced: 2026-05-07T12:21:52.797438+00:00
 global: true
 ---
 

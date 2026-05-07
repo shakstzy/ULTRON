@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.554212+00:00
+ingested_at: 2026-05-07T12:21:52.972676+00:00
 ingest_version: 1
 content_hash: blake2b:5a67e3083f8777f707912dc230bba162
-provider_modified_at: 2026-05-06T22:18:21.554212+00:00
+provider_modified_at: 2026-05-07T12:21:52.972676+00:00
 
 title: lasa-nhs-gmail-b8c1
 slug: lasa-nhs-gmail-b8c1
@@ -15,7 +15,7 @@ identifiers:
   email: ["lasa.nhs@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.554212+00:00
+last_synced: 2026-05-07T12:21:52.972676+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.407516+00:00
+ingested_at: 2026-05-07T12:21:52.868656+00:00
 ingest_version: 1
 content_hash: blake2b:d7fbdf15362eac29e0a6c036ebc1a124
-provider_modified_at: 2026-05-06T22:18:21.407516+00:00
+provider_modified_at: 2026-05-07T12:21:52.868656+00:00
 
 title: Nader | EigenLayer
 slug: nader-eigenlayer
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.407516+00:00
+last_synced: 2026-05-07T12:21:52.868656+00:00
 global: true
 ---
 

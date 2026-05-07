@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.573335+00:00
+ingested_at: 2026-05-07T12:21:52.990515+00:00
 ingest_version: 1
 content_hash: blake2b:f9476f02bac8833753e9598264346acd
-provider_modified_at: 2026-05-06T22:18:21.573335+00:00
+provider_modified_at: 2026-05-07T12:21:52.990515+00:00
 
 title: Samarth Austin
 slug: samarth-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 737-239-4231"]
   slack: []
-last_synced: 2026-05-06T22:18:21.573335+00:00
+last_synced: 2026-05-07T12:21:52.990515+00:00
 global: true
 ---
 

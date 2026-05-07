@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.300788+00:00
+ingested_at: 2026-05-07T12:21:52.795077+00:00
 ingest_version: 1
 content_hash: blake2b:ef1a2d57e0a530fd0be749cd77e103c2
-provider_modified_at: 2026-05-06T22:18:21.300788+00:00
+provider_modified_at: 2026-05-07T12:21:52.795077+00:00
 
 title: Arianna Q0
 slug: arianna-q0
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 281-216-5340"]
   slack: []
-last_synced: 2026-05-06T22:18:21.300788+00:00
+last_synced: 2026-05-07T12:21:52.795077+00:00
 global: true
 ---
 

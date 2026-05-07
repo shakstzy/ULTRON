@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.571582+00:00
+ingested_at: 2026-05-07T12:21:52.988361+00:00
 ingest_version: 1
 content_hash: blake2b:3fd4674ea1bfdcd5918cfe8b1e095b2a
-provider_modified_at: 2026-05-06T22:18:21.571582+00:00
+provider_modified_at: 2026-05-07T12:21:52.988361+00:00
 
 title: Manisha Aunty Rishika
 slug: manisha-aunty-rishika
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16149569500"]
   slack: []
-last_synced: 2026-05-06T22:18:21.571582+00:00
+last_synced: 2026-05-07T12:21:52.988361+00:00
 global: true
 ---
 

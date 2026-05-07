@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.570913+00:00
+ingested_at: 2026-05-07T12:21:52.987642+00:00
 ingest_version: 1
 content_hash: blake2b:03e821776907fd6a670f98eb871bab04
-provider_modified_at: 2026-05-06T22:18:21.570913+00:00
+provider_modified_at: 2026-05-07T12:21:52.987642+00:00
 
 title: Brittany HOBY
 slug: brittany-hoby
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 830-391-5884"]
   slack: []
-last_synced: 2026-05-06T22:18:21.570913+00:00
+last_synced: 2026-05-07T12:21:52.987642+00:00
 global: true
 ---
 

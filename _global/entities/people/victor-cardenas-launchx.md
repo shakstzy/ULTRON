@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.339411+00:00
+ingested_at: 2026-05-07T12:21:52.820074+00:00
 ingest_version: 1
 content_hash: blake2b:f58f033e1a6e19ab28bec462c70d6754
-provider_modified_at: 2026-05-06T22:18:21.339411+00:00
+provider_modified_at: 2026-05-07T12:21:52.820074+00:00
 
 title: Victor Cardenas LaunchX
 slug: victor-cardenas-launchx
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+58 412-2226925"]
   slack: []
-last_synced: 2026-05-06T22:18:21.339411+00:00
+last_synced: 2026-05-07T12:21:52.820074+00:00
 global: true
 ---
 

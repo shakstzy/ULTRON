@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.565869+00:00
+ingested_at: 2026-05-07T12:21:52.982428+00:00
 ingest_version: 1
 content_hash: blake2b:9fe4764ec82a90d67bee33904d69fef4
-provider_modified_at: 2026-05-06T22:18:21.565869+00:00
+provider_modified_at: 2026-05-07T12:21:52.982428+00:00
 
 title: Patrick Luna LA
 slug: patrick-luna-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13055090120"]
   slack: []
-last_synced: 2026-05-06T22:18:21.565869+00:00
+last_synced: 2026-05-07T12:21:52.982428+00:00
 global: true
 ---
 

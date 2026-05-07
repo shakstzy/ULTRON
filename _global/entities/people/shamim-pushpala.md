@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.574941+00:00
+ingested_at: 2026-05-07T12:21:52.991873+00:00
 ingest_version: 1
 content_hash: blake2b:ec5d0d6de1bb8fc6bf41cbb2f521b990
-provider_modified_at: 2026-05-06T22:18:21.574941+00:00
+provider_modified_at: 2026-05-07T12:21:52.991873+00:00
 
 title: Shamim Pushpala
 slug: shamim-pushpala
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 (408) 306-0742"]
   slack: []
-last_synced: 2026-05-06T22:18:21.574941+00:00
+last_synced: 2026-05-07T12:21:52.991873+00:00
 global: true
 ---
 

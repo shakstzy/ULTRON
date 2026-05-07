@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.416003+00:00
+ingested_at: 2026-05-07T12:21:52.877100+00:00
 ingest_version: 1
 content_hash: blake2b:af0ac69b6555ee7d112e973efbf33b52
-provider_modified_at: 2026-05-06T22:18:21.416003+00:00
+provider_modified_at: 2026-05-07T12:21:52.877100+00:00
 
 title: Dewald | Yieldyeti
 slug: dewald-yieldyeti
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.416003+00:00
+last_synced: 2026-05-07T12:21:52.877100+00:00
 global: true
 ---
 

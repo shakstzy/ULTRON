@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.500060+00:00
+ingested_at: 2026-05-07T12:21:52.933574+00:00
 ingest_version: 1
 content_hash: blake2b:2d55bbbd0fb93a7ba591c088d2106bbd
-provider_modified_at: 2026-05-06T22:18:21.500060+00:00
+provider_modified_at: 2026-05-07T12:21:52.933574+00:00
 
 title: Mansi Hinge LA
 slug: mansi-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12033215019"]
   slack: []
-last_synced: 2026-05-06T22:18:21.500060+00:00
+last_synced: 2026-05-07T12:21:52.933574+00:00
 global: true
 ---
 

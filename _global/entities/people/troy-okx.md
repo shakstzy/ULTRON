@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.411517+00:00
+ingested_at: 2026-05-07T12:21:52.872456+00:00
 ingest_version: 1
 content_hash: blake2b:d0e15e312b4fd93b7b2abd3c7952282d
-provider_modified_at: 2026-05-06T22:18:21.411517+00:00
+provider_modified_at: 2026-05-07T12:21:52.872456+00:00
 
 title: Troy | OKX
 slug: troy-okx
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.411517+00:00
+last_synced: 2026-05-07T12:21:52.872456+00:00
 global: true
 ---
 

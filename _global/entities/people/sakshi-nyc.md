@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.557167+00:00
+ingested_at: 2026-05-07T12:21:52.975409+00:00
 ingest_version: 1
 content_hash: blake2b:2bc678a6cf3c04802dd1a252d3467c4d
-provider_modified_at: 2026-05-06T22:18:21.557167+00:00
+provider_modified_at: 2026-05-07T12:21:52.975409+00:00
 
 title: Sakshi NYC
 slug: sakshi-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18562853260"]
   slack: []
-last_synced: 2026-05-06T22:18:21.557167+00:00
+last_synced: 2026-05-07T12:21:52.975409+00:00
 global: true
 ---
 

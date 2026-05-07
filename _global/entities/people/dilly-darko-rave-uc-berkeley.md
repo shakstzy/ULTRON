@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.544059+00:00
+ingested_at: 2026-05-07T12:21:52.963207+00:00
 ingest_version: 1
 content_hash: blake2b:de1d6ba6c4a0410988832587c090417e
-provider_modified_at: 2026-05-06T22:18:21.544059+00:00
+provider_modified_at: 2026-05-07T12:21:52.963207+00:00
 
 title: Dilly Darko Rave UC Berkeley
 slug: dilly-darko-rave-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12094228062"]
   slack: []
-last_synced: 2026-05-06T22:18:21.544059+00:00
+last_synced: 2026-05-07T12:21:52.963207+00:00
 global: true
 ---
 

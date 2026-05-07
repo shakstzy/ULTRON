@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.311604+00:00
+ingested_at: 2026-05-07T12:21:52.798994+00:00
 ingest_version: 1
 content_hash: blake2b:eb7cc698502877b444250f6e0430f690
-provider_modified_at: 2026-05-06T22:18:21.311604+00:00
+provider_modified_at: 2026-05-07T12:21:52.798994+00:00
 
 title: Heather Ball
 slug: heather-ball
@@ -15,7 +15,7 @@ identifiers:
   email: ["hball4@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.311604+00:00
+last_synced: 2026-05-07T12:21:52.798994+00:00
 global: true
 ---
 

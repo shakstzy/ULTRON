@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.366425+00:00
+ingested_at: 2026-05-07T12:21:52.837915+00:00
 ingest_version: 1
 content_hash: blake2b:1dee66af2bc70ae870aee9899d7ea343
-provider_modified_at: 2026-05-06T22:18:21.366425+00:00
+provider_modified_at: 2026-05-07T12:21:52.837915+00:00
 
 title: Jae | Frax
 slug: jae-frax
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.366425+00:00
+last_synced: 2026-05-07T12:21:52.837915+00:00
 global: true
 ---
 

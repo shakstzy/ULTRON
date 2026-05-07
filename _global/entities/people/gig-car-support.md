@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.517204+00:00
+ingested_at: 2026-05-07T12:21:52.939625+00:00
 ingest_version: 1
 content_hash: blake2b:153fed9a99b7ac4982b17d0c37a00505
-provider_modified_at: 2026-05-06T22:18:21.517204+00:00
+provider_modified_at: 2026-05-07T12:21:52.939625+00:00
 
 title: Gig Car Support
 slug: gig-car-support
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["8004640889"]
   slack: []
-last_synced: 2026-05-06T22:18:21.517204+00:00
+last_synced: 2026-05-07T12:21:52.939625+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.535750+00:00
+ingested_at: 2026-05-07T12:21:52.954686+00:00
 ingest_version: 1
 content_hash: blake2b:d2df5df9d6dae60dfb808259323c062d
-provider_modified_at: 2026-05-06T22:18:21.535750+00:00
+provider_modified_at: 2026-05-07T12:21:52.954686+00:00
 
 title: Monika NYC
 slug: monika-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: ["monikavarma2303@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.535750+00:00
+last_synced: 2026-05-07T12:21:52.954686+00:00
 global: true
 ---
 

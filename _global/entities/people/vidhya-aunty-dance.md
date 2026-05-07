@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.516230+00:00
+ingested_at: 2026-05-07T12:21:52.938606+00:00
 ingest_version: 1
 content_hash: blake2b:ba84398ad53bba9048186688bb26eab7
-provider_modified_at: 2026-05-06T22:18:21.516230+00:00
+provider_modified_at: 2026-05-07T12:21:52.938606+00:00
 
 title: Vidhya Aunty Dance
 slug: vidhya-aunty-dance
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(512) 903-7607"]
   slack: []
-last_synced: 2026-05-06T22:18:21.516230+00:00
+last_synced: 2026-05-07T12:21:52.938606+00:00
 global: true
 ---
 

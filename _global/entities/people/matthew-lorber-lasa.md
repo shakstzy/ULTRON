@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.483742+00:00
+ingested_at: 2026-05-07T12:21:52.926584+00:00
 ingest_version: 1
 content_hash: blake2b:35e32b04b2653770217d90e14e40b9bb
-provider_modified_at: 2026-05-06T22:18:21.483742+00:00
+provider_modified_at: 2026-05-07T12:21:52.926584+00:00
 
 title: Matthew Lorber LASA
 slug: matthew-lorber-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(818) 585-4946"]
   slack: []
-last_synced: 2026-05-06T22:18:21.483742+00:00
+last_synced: 2026-05-07T12:21:52.926584+00:00
 global: true
 ---
 

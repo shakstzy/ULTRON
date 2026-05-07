@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.385678+00:00
+ingested_at: 2026-05-07T12:21:52.851315+00:00
 ingest_version: 1
 content_hash: blake2b:4d72a23977d86bf334ec28853f706fb1
-provider_modified_at: 2026-05-06T22:18:21.385678+00:00
+provider_modified_at: 2026-05-07T12:21:52.851315+00:00
 
 title: Naman Kapasi UC Berkeley
 slug: naman-kapasi-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(720) 467-1997"]
   slack: []
-last_synced: 2026-05-06T22:18:21.385678+00:00
+last_synced: 2026-05-07T12:21:52.851315+00:00
 global: true
 ---
 

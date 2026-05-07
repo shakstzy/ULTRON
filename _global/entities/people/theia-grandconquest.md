@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.378469+00:00
+ingested_at: 2026-05-07T12:21:52.844588+00:00
 ingest_version: 1
 content_hash: blake2b:368cf8ae868bc6d40ba42a4089216676
-provider_modified_at: 2026-05-06T22:18:21.378469+00:00
+provider_modified_at: 2026-05-07T12:21:52.844588+00:00
 
 title: Theia | GrandConquest
 slug: theia-grandconquest
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.378469+00:00
+last_synced: 2026-05-07T12:21:52.844588+00:00
 global: true
 ---
 

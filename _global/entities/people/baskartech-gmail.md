@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.573962+00:00
+ingested_at: 2026-05-07T12:21:52.991048+00:00
 ingest_version: 1
 content_hash: blake2b:91615106e355888c59453ce70219c790
-provider_modified_at: 2026-05-06T22:18:21.573962+00:00
+provider_modified_at: 2026-05-07T12:21:52.991048+00:00
 
 title: BaskarTech_Gmail
 slug: baskartech-gmail
@@ -15,7 +15,7 @@ identifiers:
   email: ["baskartech@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.573962+00:00
+last_synced: 2026-05-07T12:21:52.991048+00:00
 global: true
 ---
 

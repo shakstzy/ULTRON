@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.434763+00:00
+ingested_at: 2026-05-07T12:21:52.894120+00:00
 ingest_version: 1
 content_hash: blake2b:4b798158806f5f21a215cc6f1e3af33d
-provider_modified_at: 2026-05-06T22:18:21.434763+00:00
+provider_modified_at: 2026-05-07T12:21:52.894120+00:00
 
 title: Uri Commerical Real Estate
 slug: uri-commerical-real-estate
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12103158885"]
   slack: []
-last_synced: 2026-05-06T22:18:21.434763+00:00
+last_synced: 2026-05-07T12:21:52.894120+00:00
 global: true
 ---
 

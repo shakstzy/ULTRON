@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.512644+00:00
+ingested_at: 2026-05-07T12:21:52.936748+00:00
 ingest_version: 1
 content_hash: blake2b:2747c03bfa4873d003791dd265af49ee
-provider_modified_at: 2026-05-06T22:18:21.512644+00:00
+provider_modified_at: 2026-05-07T12:21:52.936748+00:00
 
 title: Ava Hinge Austin
 slug: ava-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16572501242"]
   slack: []
-last_synced: 2026-05-06T22:18:21.512644+00:00
+last_synced: 2026-05-07T12:21:52.936748+00:00
 global: true
 ---
 

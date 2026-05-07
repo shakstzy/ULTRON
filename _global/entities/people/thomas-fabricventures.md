@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.585963+00:00
+ingested_at: 2026-05-07T12:21:52.999105+00:00
 ingest_version: 1
 content_hash: blake2b:a6261c149179c08a8a4b3c54ae1b860e
-provider_modified_at: 2026-05-06T22:18:21.585963+00:00
+provider_modified_at: 2026-05-07T12:21:52.999105+00:00
 
 title: Thomas | FabricVentures
 slug: thomas-fabricventures
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.585963+00:00
+last_synced: 2026-05-07T12:21:52.999105+00:00
 global: true
 ---
 

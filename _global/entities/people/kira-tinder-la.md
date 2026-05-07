@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.366893+00:00
+ingested_at: 2026-05-07T12:21:52.838507+00:00
 ingest_version: 1
 content_hash: blake2b:0b0cc51828250030649102a7ffe12e04
-provider_modified_at: 2026-05-06T22:18:21.366893+00:00
+provider_modified_at: 2026-05-07T12:21:52.838507+00:00
 
 title: Kira Tinder LA
 slug: kira-tinder-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15106480201"]
   slack: []
-last_synced: 2026-05-06T22:18:21.366893+00:00
+last_synced: 2026-05-07T12:21:52.838507+00:00
 global: true
 ---
 

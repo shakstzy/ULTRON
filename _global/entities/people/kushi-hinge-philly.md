@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.397713+00:00
+ingested_at: 2026-05-07T12:21:52.859665+00:00
 ingest_version: 1
 content_hash: blake2b:eac04573f65ca714c19a22997c2b604d
-provider_modified_at: 2026-05-06T22:18:21.397713+00:00
+provider_modified_at: 2026-05-07T12:21:52.859665+00:00
 
 title: Kushi Hinge Philly
 slug: kushi-hinge-philly
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19453587166"]
   slack: []
-last_synced: 2026-05-06T22:18:21.397713+00:00
+last_synced: 2026-05-07T12:21:52.859665+00:00
 global: true
 ---
 

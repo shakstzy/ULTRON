@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.588556+00:00
+ingested_at: 2026-05-07T12:21:53.000087+00:00
 ingest_version: 1
 content_hash: blake2b:3e8dc5ee740f642db0b492c14eb48389
-provider_modified_at: 2026-05-06T22:18:21.588556+00:00
+provider_modified_at: 2026-05-07T12:21:53.000087+00:00
 
 title: Shipransh UC Berkeley
 slug: shipransh-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13413339654"]
   slack: []
-last_synced: 2026-05-06T22:18:21.588556+00:00
+last_synced: 2026-05-07T12:21:53.000087+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.396974+00:00
+ingested_at: 2026-05-07T12:21:52.859145+00:00
 ingest_version: 1
 content_hash: blake2b:601d33a6a55b26bcdf82775600e2e858
-provider_modified_at: 2026-05-06T22:18:21.396974+00:00
+provider_modified_at: 2026-05-07T12:21:52.859145+00:00
 
 title: Ali Taqvi
 slug: ali-taqvi
@@ -15,7 +15,7 @@ identifiers:
   email: ["crisis@ctmun.org"]
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.396974+00:00
+last_synced: 2026-05-07T12:21:52.859145+00:00
 global: true
 ---
 

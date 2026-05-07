@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.580380+00:00
+ingested_at: 2026-05-07T12:21:52.995618+00:00
 ingest_version: 1
 content_hash: blake2b:8a1b77dcef0061a9328b5effdd161422
-provider_modified_at: 2026-05-06T22:18:21.580380+00:00
+provider_modified_at: 2026-05-07T12:21:52.995618+00:00
 
 title: Noah Renter
 slug: noah-renter
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18472223813"]
   slack: []
-last_synced: 2026-05-06T22:18:21.580380+00:00
+last_synced: 2026-05-07T12:21:52.995618+00:00
 global: true
 ---
 

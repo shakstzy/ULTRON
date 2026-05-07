@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.344320+00:00
+ingested_at: 2026-05-07T12:21:52.825016+00:00
 ingest_version: 1
 content_hash: blake2b:e43dadf5b96ad0b28a943f6c0f14fc2e
-provider_modified_at: 2026-05-06T22:18:21.344320+00:00
+provider_modified_at: 2026-05-07T12:21:52.825016+00:00
 
 title: Shahiya Hinge LA
 slug: shahiya-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15625654365"]
   slack: []
-last_synced: 2026-05-06T22:18:21.344320+00:00
+last_synced: 2026-05-07T12:21:52.825016+00:00
 global: true
 ---
 

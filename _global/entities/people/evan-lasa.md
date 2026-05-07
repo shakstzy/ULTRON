@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.386782+00:00
+ingested_at: 2026-05-07T12:21:52.852363+00:00
 ingest_version: 1
 content_hash: blake2b:cafda31338976367bd79dfbf1831591a
-provider_modified_at: 2026-05-06T22:18:21.386782+00:00
+provider_modified_at: 2026-05-07T12:21:52.852363+00:00
 
 title: Evan LASA
 slug: evan-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17379323314"]
   slack: []
-last_synced: 2026-05-06T22:18:21.386782+00:00
+last_synced: 2026-05-07T12:21:52.852363+00:00
 global: true
 ---
 

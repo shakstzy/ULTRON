@@ -1,9 +1,9 @@
 ---
 source: discord
 workspace: personal
-ingested_at: '2026-05-07T03:41:58.863Z'
+ingested_at: '2026-05-07T12:22:56.865Z'
 ingest_version: 1
-content_hash: sha256:4455e7e068e18bb4bf0ea4def13eeb1b0fb4e13a9cd483d84d3d7d5ea33286d7
+content_hash: sha256:606def17042af6930936ce53b2a9a4fec4e1a8086b49d1f5304e73fc3419952a
 provider_modified_at: '2026-01-06T02:27:05.877Z'
 contact_slug: shva-shvalockedin
 contact_type: individual
@@ -18,13 +18,13 @@ attachments:
     filename: content.png
     url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1456463673106239668/content.png?ex=69fd407f&is=69fbeeff&hm=4f9c112c0e06e5fb95c684ccf0f1862daac7a52178303359d675dc4262876bcc&'
     size: 793361
-    description: 'A six-panel infographic detailing the features of Approach.AI, a web application for building real-world charisma.'
+    description: null
   - message_id: '1456834776504860928'
     kind: image
     filename: image.png
     url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1456834776295018658/image.png?ex=69fd489d&is=69fbf71d&hm=dfb6998184c4cfece3a6b024c2c5b5ee90f3321b44c44e44dbd76c8c85c39f94&'
     size: 482087
-    description: 'A document displays a short essay with blue highlights below a writing prompt with red highlights.'
+    description: null
 discord_channel_id: '1292220510603575366'
 discord_channel_kind: dm
 discord_recipient_id: '1285363977030729738'
@@ -42,7 +42,7 @@ superseded_by: null
 **19:43 — SHVA:** https://www.instagram.com/p/DS_WdDfjRq4/
 **19:45 — SHVA:** https://www.producthunt.com/p/general/introducing-approach-ai-the-1-web-app-to-build-real-world-charisma
 **19:46 — SHVA:** 
-↳ image: content.png (775 KB) — "A six-panel infographic detailing the features of Approach.AI, a web application for building real-world charisma." — https://cdn.discordapp.com/attachments/1292220510603575366/1456463673106239668/content.png?ex=69fd407f&is=69fbeeff&hm=4f9c112c0e06e5fb95c684ccf0f1862daac7a52178303359d675dc4262876bcc&
+↳ image: content.png (775 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1456463673106239668/content.png?ex=69fd407f&is=69fbeeff&hm=4f9c112c0e06e5fb95c684ccf0f1862daac7a52178303359d675dc4262876bcc&
 **20:39 — SHVA:** https://docs.google.com/document/d/1uUDslzz6zu_Dw9bZ3x6QmGGNKOBNR6nGNNF1l6W-Jcw/edit?tab=t.xar9dd97igb
 **22:37 — SHVA:** https://docs.google.com/document/d/123yzlpi3ZyxpIZnoIXLgHMUSEDFb1nCNwCyURoWkjs8/edit?usp=drivesdk
 **22:37 — SHVA:** https://docs.google.com/document/d/1sxQ_r3YSsfIwRH5dUzMY2Z5Ugq8pwnINBJXfcL5f8H0/edit?usp=drivesdk
@@ -115,7 +115,7 @@ State science fair finalist; built AI + Raman spectroscopy system for early skin
 **19:46 — me:** listen and reduce the haas essay down to 350 and use it
 **20:01 — me:** https://walterwrites.ai/
 **20:21 — me:** 
-↳ image: image.png (471 KB) — "A document displays a short essay with blue highlights below a writing prompt with red highlights." — https://cdn.discordapp.com/attachments/1292220510603575366/1456834776295018658/image.png?ex=69fd489d&is=69fbf71d&hm=dfb6998184c4cfece3a6b024c2c5b5ee90f3321b44c44e44dbd76c8c85c39f94&
+↳ image: image.png (471 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1456834776295018658/image.png?ex=69fd489d&is=69fbf71d&hm=dfb6998184c4cfece3a6b024c2c5b5ee90f3321b44c44e44dbd76c8c85c39f94&
 **20:21 — me:** heres a version under 350 that speaks about community
 **20:34 — SHVA:** https://docs.google.com/spreadsheets/d/10Z4k6HEDw81qgofP38dbS-0cb2T5p5EtPCKzrEdJGLc/edit?gid=1383438644#gid=1383438644
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.549696+00:00
+ingested_at: 2026-05-07T12:21:52.968589+00:00
 ingest_version: 1
 content_hash: blake2b:93b3845e81f35f40fa17358e27c07a8c
-provider_modified_at: 2026-05-06T22:18:21.549696+00:00
+provider_modified_at: 2026-05-07T12:21:52.968589+00:00
 
 title: Arne | ZeroGravity
 slug: arne-zerogravity
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+62 857-7707-8613", "+65 8929 9887"]
   slack: []
-last_synced: 2026-05-06T22:18:21.549696+00:00
+last_synced: 2026-05-07T12:21:52.968589+00:00
 global: true
 ---
 

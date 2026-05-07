@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.308625+00:00
+ingested_at: 2026-05-07T12:21:52.796542+00:00
 ingest_version: 1
 content_hash: blake2b:478845fff280c6b4eb675c2e557e3959
-provider_modified_at: 2026-05-06T22:18:21.308625+00:00
+provider_modified_at: 2026-05-07T12:21:52.796542+00:00
 
 title: Aniruddh Mishra Austin
 slug: aniruddh-mishra-austin
@@ -15,7 +15,7 @@ identifiers:
   email: ["aniruddhm17@gmail.com"]
   phone: ["(512) 355-1345"]
   slack: []
-last_synced: 2026-05-06T22:18:21.308625+00:00
+last_synced: 2026-05-07T12:21:52.796542+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.430239+00:00
+ingested_at: 2026-05-07T12:21:52.889989+00:00
 ingest_version: 1
 content_hash: blake2b:b7cda80e70b4bf5f62993d94bda411de
-provider_modified_at: 2026-05-06T22:18:21.430239+00:00
+provider_modified_at: 2026-05-07T12:21:52.889989+00:00
 
 title: Maneesh UC Berkeley
 slug: maneesh-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(703) 587-2779"]
   slack: []
-last_synced: 2026-05-06T22:18:21.430239+00:00
+last_synced: 2026-05-07T12:21:52.889989+00:00
 global: true
 ---
 

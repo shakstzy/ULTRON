@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.362848+00:00
+ingested_at: 2026-05-07T12:21:52.836969+00:00
 ingest_version: 1
 content_hash: blake2b:e10d65f833fc7501464e33f9367aae61
-provider_modified_at: 2026-05-06T22:18:21.362848+00:00
+provider_modified_at: 2026-05-07T12:21:52.836969+00:00
 
 title: James Harkin
 slug: james-harkin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 (307) 920-0178"]
   slack: []
-last_synced: 2026-05-06T22:18:21.362848+00:00
+last_synced: 2026-05-07T12:21:52.836969+00:00
 global: true
 ---
 

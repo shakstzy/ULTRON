@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.443198+00:00
+ingested_at: 2026-05-07T12:21:52.902604+00:00
 ingest_version: 1
 content_hash: blake2b:a5d2aef6818a6634051ff4d1c2127290
-provider_modified_at: 2026-05-06T22:18:21.443198+00:00
+provider_modified_at: 2026-05-07T12:21:52.902604+00:00
 
 title: Current Location
 slug: current-location
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.443198+00:00
+last_synced: 2026-05-07T12:21:52.902604+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.444207+00:00
+ingested_at: 2026-05-07T12:21:52.904127+00:00
 ingest_version: 1
 content_hash: blake2b:291150608b6e411ee3ec739f568e13d7
-provider_modified_at: 2026-05-06T22:18:21.444207+00:00
+provider_modified_at: 2026-05-07T12:21:52.904127+00:00
 
 title: Cynthia Shi BBS Berkeley
 slug: cynthia-shi-bbs-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 304-203-6998"]
   slack: []
-last_synced: 2026-05-06T22:18:21.444207+00:00
+last_synced: 2026-05-07T12:21:52.904127+00:00
 global: true
 ---
 

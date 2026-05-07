@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.421040+00:00
+ingested_at: 2026-05-07T12:21:52.881420+00:00
 ingest_version: 1
 content_hash: blake2b:92175a1c5b9effa0dc57678ec042db70
-provider_modified_at: 2026-05-06T22:18:21.421040+00:00
+provider_modified_at: 2026-05-07T12:21:52.881420+00:00
 
 title: Zakir Uncle Travel
 slug: zakir-uncle-travel
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+917550336044"]
   slack: []
-last_synced: 2026-05-06T22:18:21.421040+00:00
+last_synced: 2026-05-07T12:21:52.881420+00:00
 global: true
 ---
 

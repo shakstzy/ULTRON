@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.307212+00:00
+ingested_at: 2026-05-07T12:21:52.795675+00:00
 ingest_version: 1
 content_hash: blake2b:3b2c44aab3c965afd529ff7254aae9ab
-provider_modified_at: 2026-05-06T22:18:21.307212+00:00
+provider_modified_at: 2026-05-07T12:21:52.795675+00:00
 
 title: Abhi NYC
 slug: abhi-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17324916987"]
   slack: []
-last_synced: 2026-05-06T22:18:21.307212+00:00
+last_synced: 2026-05-07T12:21:52.795675+00:00
 global: true
 ---
 

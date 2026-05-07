@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.565564+00:00
+ingested_at: 2026-05-07T12:21:52.982095+00:00
 ingest_version: 1
 content_hash: blake2b:edbd893839c97dd5c20f6fe1d4ff670b
-provider_modified_at: 2026-05-06T22:18:21.565564+00:00
+provider_modified_at: 2026-05-07T12:21:52.982095+00:00
 
 title: Tatsu | Soneium
 slug: tatsu-soneium
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+81 90-3412-4565"]
   slack: []
-last_synced: 2026-05-06T22:18:21.565564+00:00
+last_synced: 2026-05-07T12:21:52.982095+00:00
 global: true
 ---
 

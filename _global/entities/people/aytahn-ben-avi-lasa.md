@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.568665+00:00
+ingested_at: 2026-05-07T12:21:52.985606+00:00
 ingest_version: 1
 content_hash: blake2b:ce0ff26f6249753240e96d3a0455fb37
-provider_modified_at: 2026-05-06T22:18:21.568665+00:00
+provider_modified_at: 2026-05-07T12:21:52.985606+00:00
 
 title: Aytahn Ben-Avi LASA
 slug: aytahn-ben-avi-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15126568404"]
   slack: []
-last_synced: 2026-05-06T22:18:21.568665+00:00
+last_synced: 2026-05-07T12:21:52.985606+00:00
 global: true
 ---
 

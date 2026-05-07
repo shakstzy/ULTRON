@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.419717+00:00
+ingested_at: 2026-05-07T12:21:52.880348+00:00
 ingest_version: 1
 content_hash: blake2b:7693c6b92c7dd3115c9bdbff86bd34b9
-provider_modified_at: 2026-05-06T22:18:21.419717+00:00
+provider_modified_at: 2026-05-07T12:21:52.880348+00:00
 
 title: Exxtra Video Editor
 slug: exxtra-video-editor
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13522787657"]
   slack: []
-last_synced: 2026-05-06T22:18:21.419717+00:00
+last_synced: 2026-05-07T12:21:52.880348+00:00
 global: true
 ---
 

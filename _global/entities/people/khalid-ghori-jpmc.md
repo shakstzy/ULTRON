@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.572492+00:00
+ingested_at: 2026-05-07T12:21:52.989381+00:00
 ingest_version: 1
 content_hash: blake2b:3bfcc242050170ab68112622b2c15fb8
-provider_modified_at: 2026-05-06T22:18:21.572492+00:00
+provider_modified_at: 2026-05-07T12:21:52.989381+00:00
 
 title: Khalid Ghori JPMC
 slug: khalid-ghori-jpmc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15127859369"]
   slack: []
-last_synced: 2026-05-06T22:18:21.572492+00:00
+last_synced: 2026-05-07T12:21:52.989381+00:00
 global: true
 ---
 

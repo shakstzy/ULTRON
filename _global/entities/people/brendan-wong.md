@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.402474+00:00
+ingested_at: 2026-05-07T12:21:52.865061+00:00
 ingest_version: 1
 content_hash: blake2b:18708f027cc9a8ec06f16ea69042351a
-provider_modified_at: 2026-05-06T22:18:21.402474+00:00
+provider_modified_at: 2026-05-07T12:21:52.865061+00:00
 
 title: Brendan Wong
 slug: brendan-wong
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17144881569"]
   slack: []
-last_synced: 2026-05-06T22:18:21.402474+00:00
+last_synced: 2026-05-07T12:21:52.865061+00:00
 global: true
 ---
 

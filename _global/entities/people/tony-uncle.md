@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.400758+00:00
+ingested_at: 2026-05-07T12:21:52.863423+00:00
 ingest_version: 1
 content_hash: blake2b:e6c07737a11ef7c8b7f14985dd77fd99
-provider_modified_at: 2026-05-06T22:18:21.400758+00:00
+provider_modified_at: 2026-05-07T12:21:52.863423+00:00
 
 title: Tony Uncle
 slug: tony-uncle
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12146681312"]
   slack: []
-last_synced: 2026-05-06T22:18:21.400758+00:00
+last_synced: 2026-05-07T12:21:52.863423+00:00
 global: true
 ---
 

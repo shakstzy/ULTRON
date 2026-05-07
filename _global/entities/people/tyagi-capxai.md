@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.566548+00:00
+ingested_at: 2026-05-07T12:21:52.982910+00:00
 ingest_version: 1
 content_hash: blake2b:ba71892903ed20dd7f87cee603cfd697
-provider_modified_at: 2026-05-06T22:18:21.566548+00:00
+provider_modified_at: 2026-05-07T12:21:52.982910+00:00
 
 title: Tyagi | CapxAI
 slug: tyagi-capxai
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.566548+00:00
+last_synced: 2026-05-07T12:21:52.982910+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.316252+00:00
+ingested_at: 2026-05-07T12:21:52.801547+00:00
 ingest_version: 1
 content_hash: blake2b:ee65195704410e15a110bf2e004e8d66
-provider_modified_at: 2026-05-06T22:18:21.316252+00:00
+provider_modified_at: 2026-05-07T12:21:52.801547+00:00
 
 title: Jainil UC Berkeley
 slug: jainil-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 341-333-8638"]
   slack: []
-last_synced: 2026-05-06T22:18:21.316252+00:00
+last_synced: 2026-05-07T12:21:52.801547+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.479398+00:00
+ingested_at: 2026-05-07T12:21:52.925007+00:00
 ingest_version: 1
 content_hash: blake2b:823842b2ac5846d8fdb18a14b2b69dfd
-provider_modified_at: 2026-05-06T22:18:21.479398+00:00
+provider_modified_at: 2026-05-07T12:21:52.925007+00:00
 
 title: Danny | Mumubit
 slug: danny-mumubit
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+66 93 882 7619"]
   slack: []
-last_synced: 2026-05-06T22:18:21.479398+00:00
+last_synced: 2026-05-07T12:21:52.925007+00:00
 global: true
 ---
 

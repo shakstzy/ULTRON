@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.399368+00:00
+ingested_at: 2026-05-07T12:21:52.862185+00:00
 ingest_version: 1
 content_hash: blake2b:554cc86b076e3105e43bf43fd4814ee6
-provider_modified_at: 2026-05-06T22:18:21.399368+00:00
+provider_modified_at: 2026-05-07T12:21:52.862185+00:00
 
 title: Seb Clerkie CTO
 slug: seb-clerkie-cto
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16505612955"]
   slack: []
-last_synced: 2026-05-06T22:18:21.399368+00:00
+last_synced: 2026-05-07T12:21:52.862185+00:00
 global: true
 ---
 

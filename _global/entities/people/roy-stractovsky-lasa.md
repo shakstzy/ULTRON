@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.568062+00:00
+ingested_at: 2026-05-07T12:21:52.984281+00:00
 ingest_version: 1
 content_hash: blake2b:c2050acaad9196284fff603f1f4655e6
-provider_modified_at: 2026-05-06T22:18:21.568062+00:00
+provider_modified_at: 2026-05-07T12:21:52.984281+00:00
 
 title: Roy Stractovsky LASA
 slug: roy-stractovsky-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(512) 369-9958", "+1 512-634-6889"]
   slack: []
-last_synced: 2026-05-06T22:18:21.568062+00:00
+last_synced: 2026-05-07T12:21:52.984281+00:00
 global: true
 ---
 

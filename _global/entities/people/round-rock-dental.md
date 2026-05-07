@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.492710+00:00
+ingested_at: 2026-05-07T12:21:52.930959+00:00
 ingest_version: 1
 content_hash: blake2b:2e65d2b487ae0714998d09fc782256db
-provider_modified_at: 2026-05-06T22:18:21.492710+00:00
+provider_modified_at: 2026-05-07T12:21:52.930959+00:00
 
 title: Round Rock Dental
 slug: round-rock-dental
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18664529162"]
   slack: []
-last_synced: 2026-05-06T22:18:21.492710+00:00
+last_synced: 2026-05-07T12:21:52.930959+00:00
 global: true
 ---
 

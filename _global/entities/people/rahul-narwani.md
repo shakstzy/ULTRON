@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.563751+00:00
+ingested_at: 2026-05-07T12:21:52.980788+00:00
 ingest_version: 1
 content_hash: blake2b:5acca50ad55b74978a078d21dedef4da
-provider_modified_at: 2026-05-06T22:18:21.563751+00:00
+provider_modified_at: 2026-05-07T12:21:52.980788+00:00
 
 title: Rahul Narwani
 slug: rahul-narwani
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+6594518076"]
   slack: []
-last_synced: 2026-05-06T22:18:21.563751+00:00
+last_synced: 2026-05-07T12:21:52.980788+00:00
 global: true
 ---
 

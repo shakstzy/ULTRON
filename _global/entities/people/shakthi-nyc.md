@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.514799+00:00
+ingested_at: 2026-05-07T12:21:52.937281+00:00
 ingest_version: 1
 content_hash: blake2b:44d0f63de657967577c15a4e9047de25
-provider_modified_at: 2026-05-06T22:18:21.514799+00:00
+provider_modified_at: 2026-05-07T12:21:52.937281+00:00
 
 title: Shakthi NYC
 slug: shakthi-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17328127418"]
   slack: []
-last_synced: 2026-05-06T22:18:21.514799+00:00
+last_synced: 2026-05-07T12:21:52.937281+00:00
 global: true
 ---
 

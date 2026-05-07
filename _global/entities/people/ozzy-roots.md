@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.560227+00:00
+ingested_at: 2026-05-07T12:21:52.978216+00:00
 ingest_version: 1
 content_hash: blake2b:71d08bc39f6a8e3e2f4677bc8c93084c
-provider_modified_at: 2026-05-06T22:18:21.560227+00:00
+provider_modified_at: 2026-05-07T12:21:52.978216+00:00
 
 title: Ozzy | Roots
 slug: ozzy-roots
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.560227+00:00
+last_synced: 2026-05-07T12:21:52.978216+00:00
 global: true
 ---
 

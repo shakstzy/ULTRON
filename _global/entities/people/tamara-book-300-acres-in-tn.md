@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.571922+00:00
+ingested_at: 2026-05-07T12:21:52.988635+00:00
 ingest_version: 1
 content_hash: blake2b:6795dc228df160cf3d3d2ced6bea7ea3
-provider_modified_at: 2026-05-06T22:18:21.571922+00:00
+provider_modified_at: 2026-05-07T12:21:52.988635+00:00
 
 title: Tamara Book (300 Acres In TN)
 slug: tamara-book-300-acres-in-tn
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12672414844"]
   slack: []
-last_synced: 2026-05-06T22:18:21.571922+00:00
+last_synced: 2026-05-07T12:21:52.988635+00:00
 global: true
 ---
 

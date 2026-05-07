@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.412665+00:00
+ingested_at: 2026-05-07T12:21:52.873861+00:00
 ingest_version: 1
 content_hash: blake2b:5d0eee0eee343e2ba00502d512be13bc
-provider_modified_at: 2026-05-06T22:18:21.412665+00:00
+provider_modified_at: 2026-05-07T12:21:52.873861+00:00
 
 title: Jerry | HydrogenLabs
 slug: jerry-hydrogenlabs
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 908-892-3784"]
   slack: []
-last_synced: 2026-05-06T22:18:21.412665+00:00
+last_synced: 2026-05-07T12:21:52.873861+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.334389+00:00
+ingested_at: 2026-05-07T12:21:52.815108+00:00
 ingest_version: 1
 content_hash: blake2b:07a2e33ca48a077511d64177797d2188
-provider_modified_at: 2026-05-06T22:18:21.334389+00:00
+provider_modified_at: 2026-05-07T12:21:52.815108+00:00
 
 title: Eric | Highvault
 slug: eric-highvault
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.334389+00:00
+last_synced: 2026-05-07T12:21:52.815108+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.574218+00:00
+ingested_at: 2026-05-07T12:21:52.991241+00:00
 ingest_version: 1
 content_hash: blake2b:21de3e40848de7d09aba50fcedb80616
-provider_modified_at: 2026-05-06T22:18:21.574218+00:00
+provider_modified_at: 2026-05-07T12:21:52.991241+00:00
 
 title: Miya Hinge Austin
 slug: miya-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15124170419"]
   slack: []
-last_synced: 2026-05-06T22:18:21.574218+00:00
+last_synced: 2026-05-07T12:21:52.991241+00:00
 global: true
 ---
 

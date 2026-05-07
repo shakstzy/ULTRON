@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.339679+00:00
+ingested_at: 2026-05-07T12:21:52.820355+00:00
 ingest_version: 1
 content_hash: blake2b:a5c173bdbcdde437eb0f54ad41fbf048
-provider_modified_at: 2026-05-06T22:18:21.339679+00:00
+provider_modified_at: 2026-05-07T12:21:52.820355+00:00
 
 title: Angad Austin
 slug: angad-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14698181386"]
   slack: []
-last_synced: 2026-05-06T22:18:21.339679+00:00
+last_synced: 2026-05-07T12:21:52.820355+00:00
 global: true
 ---
 

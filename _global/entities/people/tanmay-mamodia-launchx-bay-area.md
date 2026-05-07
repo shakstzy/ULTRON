@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.375123+00:00
+ingested_at: 2026-05-07T12:21:52.841410+00:00
 ingest_version: 1
 content_hash: blake2b:f1915f8f393afbbc356b0f550af52308
-provider_modified_at: 2026-05-06T22:18:21.375123+00:00
+provider_modified_at: 2026-05-07T12:21:52.841410+00:00
 
 title: Tanmay Mamodia LaunchX Bay Area
 slug: tanmay-mamodia-launchx-bay-area
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(925) 699-4928"]
   slack: []
-last_synced: 2026-05-06T22:18:21.375123+00:00
+last_synced: 2026-05-07T12:21:52.841410+00:00
 global: true
 ---
 

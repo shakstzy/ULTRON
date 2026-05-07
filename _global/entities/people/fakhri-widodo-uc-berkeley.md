@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.464240+00:00
+ingested_at: 2026-05-07T12:21:52.916676+00:00
 ingest_version: 1
 content_hash: blake2b:7108c64f3f2f42479bfe22dbba774ded
-provider_modified_at: 2026-05-06T22:18:21.464240+00:00
+provider_modified_at: 2026-05-07T12:21:52.916676+00:00
 
 title: Fakhri Widodo UC Berkeley
 slug: fakhri-widodo-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15125212724"]
   slack: []
-last_synced: 2026-05-06T22:18:21.464240+00:00
+last_synced: 2026-05-07T12:21:52.916676+00:00
 global: true
 ---
 

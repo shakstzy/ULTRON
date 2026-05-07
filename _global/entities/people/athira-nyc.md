@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.464562+00:00
+ingested_at: 2026-05-07T12:21:52.916956+00:00
 ingest_version: 1
 content_hash: blake2b:45448bf1b2bbd15368c87f6cc5ba085e
-provider_modified_at: 2026-05-06T22:18:21.464562+00:00
+provider_modified_at: 2026-05-07T12:21:52.916956+00:00
 
 title: Athira NYC
 slug: athira-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16099034975"]
   slack: []
-last_synced: 2026-05-06T22:18:21.464562+00:00
+last_synced: 2026-05-07T12:21:52.916956+00:00
 global: true
 ---
 

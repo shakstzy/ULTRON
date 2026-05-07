@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.535481+00:00
+ingested_at: 2026-05-07T12:21:52.954411+00:00
 ingest_version: 1
 content_hash: blake2b:66a67e0aed4d2a57c730a36413ecf30d
-provider_modified_at: 2026-05-06T22:18:21.535481+00:00
+provider_modified_at: 2026-05-07T12:21:52.954411+00:00
 
 title: Nick | Trustwallet
 slug: nick-trustwallet
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.535481+00:00
+last_synced: 2026-05-07T12:21:52.954411+00:00
 global: true
 ---
 

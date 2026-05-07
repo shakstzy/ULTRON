@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.424936+00:00
+ingested_at: 2026-05-07T12:21:52.885019+00:00
 ingest_version: 1
 content_hash: blake2b:a4b1f7f390bc407cf9d980d1fd4a61a6
-provider_modified_at: 2026-05-06T22:18:21.424936+00:00
+provider_modified_at: 2026-05-07T12:21:52.885019+00:00
 
 title: Vers | Hyacinth
 slug: vers-hyacinth
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 704-905-3374"]
   slack: []
-last_synced: 2026-05-06T22:18:21.424936+00:00
+last_synced: 2026-05-07T12:21:52.885019+00:00
 global: true
 ---
 

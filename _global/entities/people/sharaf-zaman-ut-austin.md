@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.565664+00:00
+ingested_at: 2026-05-07T12:21:52.982160+00:00
 ingest_version: 1
 content_hash: blake2b:07954c7e3b6e72095ba3b9d68f052cca
-provider_modified_at: 2026-05-06T22:18:21.565664+00:00
+provider_modified_at: 2026-05-07T12:21:52.982160+00:00
 
 title: Sharaf Zaman UT Austin
 slug: sharaf-zaman-ut-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15127044707"]
   slack: []
-last_synced: 2026-05-06T22:18:21.565664+00:00
+last_synced: 2026-05-07T12:21:52.982160+00:00
 global: true
 ---
 

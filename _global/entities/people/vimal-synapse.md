@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.574858+00:00
+ingested_at: 2026-05-07T12:21:52.991810+00:00
 ingest_version: 1
 content_hash: blake2b:5aca4ef3feaed9d3ae9595230867f9eb
-provider_modified_at: 2026-05-06T22:18:21.574858+00:00
+provider_modified_at: 2026-05-07T12:21:52.991810+00:00
 
 title: Vimal Synapse
 slug: vimal-synapse
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["917034941564"]
   slack: []
-last_synced: 2026-05-06T22:18:21.574858+00:00
+last_synced: 2026-05-07T12:21:52.991810+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.538285+00:00
+ingested_at: 2026-05-07T12:21:52.957158+00:00
 ingest_version: 1
 content_hash: blake2b:0dac8cbd9911ce89484b54b2d5ec72db
-provider_modified_at: 2026-05-06T22:18:21.538285+00:00
+provider_modified_at: 2026-05-07T12:21:52.957158+00:00
 
 title: Sathvik Baskaran
 slug: sathvik-baskaran
@@ -15,7 +15,7 @@ identifiers:
   email: ["sathvikbas@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.538285+00:00
+last_synced: 2026-05-07T12:21:52.957158+00:00
 global: true
 ---
 

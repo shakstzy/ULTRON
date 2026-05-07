@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.384458+00:00
+ingested_at: 2026-05-07T12:21:52.850007+00:00
 ingest_version: 1
 content_hash: blake2b:eedbc8d7c284671cc861e35db5c9166a
-provider_modified_at: 2026-05-06T22:18:21.384458+00:00
+provider_modified_at: 2026-05-07T12:21:52.850007+00:00
 
 title: Sam LASA
 slug: sam-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-660-1290"]
   slack: []
-last_synced: 2026-05-06T22:18:21.384458+00:00
+last_synced: 2026-05-07T12:21:52.850007+00:00
 global: true
 ---
 

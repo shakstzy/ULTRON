@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.398893+00:00
+ingested_at: 2026-05-07T12:21:52.861568+00:00
 ingest_version: 1
 content_hash: blake2b:284a8e16309d4597add086dd3d99f48d
-provider_modified_at: 2026-05-06T22:18:21.398893+00:00
+provider_modified_at: 2026-05-07T12:21:52.861568+00:00
 
 title: Conrad | Chainlink
 slug: conrad-chainlink
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.398893+00:00
+last_synced: 2026-05-07T12:21:52.861568+00:00
 global: true
 ---
 

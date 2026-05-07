@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.557711+00:00
+ingested_at: 2026-05-07T12:21:52.975968+00:00
 ingest_version: 1
 content_hash: blake2b:235e255628b1269c6bd68756fd1b8d5d
-provider_modified_at: 2026-05-06T22:18:21.557711+00:00
+provider_modified_at: 2026-05-07T12:21:52.975968+00:00
 
 title: Greg | Sphinx
 slug: greg-sphinx
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.557711+00:00
+last_synced: 2026-05-07T12:21:52.975968+00:00
 global: true
 ---
 

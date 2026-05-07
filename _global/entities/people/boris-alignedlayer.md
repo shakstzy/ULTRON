@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.346222+00:00
+ingested_at: 2026-05-07T12:21:52.826404+00:00
 ingest_version: 1
 content_hash: blake2b:71c3c53621b82e648d2d7afcde908ef1
-provider_modified_at: 2026-05-06T22:18:21.346222+00:00
+provider_modified_at: 2026-05-07T12:21:52.826404+00:00
 
 title: Boris | AlignedLayer
 slug: boris-alignedlayer
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 647-378-1022"]
   slack: []
-last_synced: 2026-05-06T22:18:21.346222+00:00
+last_synced: 2026-05-07T12:21:52.826404+00:00
 global: true
 ---
 

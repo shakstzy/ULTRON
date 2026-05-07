@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.342263+00:00
+ingested_at: 2026-05-07T12:21:52.823163+00:00
 ingest_version: 1
 content_hash: blake2b:a695f3bf1acb6368b054daf3ad0fe2cf
-provider_modified_at: 2026-05-06T22:18:21.342263+00:00
+provider_modified_at: 2026-05-07T12:21:52.823163+00:00
 
 title: Lupe Hinge Austin
 slug: lupe-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19034740503"]
   slack: []
-last_synced: 2026-05-06T22:18:21.342263+00:00
+last_synced: 2026-05-07T12:21:52.823163+00:00
 global: true
 ---
 

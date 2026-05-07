@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.539204+00:00
+ingested_at: 2026-05-07T12:21:52.957812+00:00
 ingest_version: 1
 content_hash: blake2b:0f3ea763e33b2c2f1b3e8cbc39854a5a
-provider_modified_at: 2026-05-06T22:18:21.539204+00:00
+provider_modified_at: 2026-05-07T12:21:52.957812+00:00
 
 title: Aman Patel UC Berkeley
 slug: aman-patel-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17327251130"]
   slack: []
-last_synced: 2026-05-06T22:18:21.539204+00:00
+last_synced: 2026-05-07T12:21:52.957812+00:00
 global: true
 ---
 

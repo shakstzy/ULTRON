@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.315562+00:00
+ingested_at: 2026-05-07T12:21:52.800954+00:00
 ingest_version: 1
 content_hash: blake2b:4bef7caefc0321cedad751a0b7bb43b9
-provider_modified_at: 2026-05-06T22:18:21.315562+00:00
+provider_modified_at: 2026-05-07T12:21:52.800954+00:00
 
 title: David B
 slug: david-b
@@ -15,7 +15,7 @@ identifiers:
   email: ["djmbetts@umich.edu"]
   phone: ["(734) 647-7119", "(734) 764-8762"]
   slack: []
-last_synced: 2026-05-06T22:18:21.315562+00:00
+last_synced: 2026-05-07T12:21:52.800954+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.418970+00:00
+ingested_at: 2026-05-07T12:21:52.879755+00:00
 ingest_version: 1
 content_hash: blake2b:01d5e9c7c608dab51ee4e01cd665b741
-provider_modified_at: 2026-05-06T22:18:21.418970+00:00
+provider_modified_at: 2026-05-07T12:21:52.879755+00:00
 
 title: greyson. ratcliff
 slug: greyson-ratcliff
@@ -15,7 +15,7 @@ identifiers:
   email: ["greyson.ratcliff@att.net"]
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.418970+00:00
+last_synced: 2026-05-07T12:21:52.879755+00:00
 global: true
 ---
 

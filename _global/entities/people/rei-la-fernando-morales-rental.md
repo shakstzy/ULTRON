@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.446356+00:00
+ingested_at: 2026-05-07T12:21:52.906268+00:00
 ingest_version: 1
 content_hash: blake2b:b5ae5699899b1a3b2e37a477fc6f4b58
-provider_modified_at: 2026-05-06T22:18:21.446356+00:00
+provider_modified_at: 2026-05-07T12:21:52.906268+00:00
 
 title: REI LA Fernando Morales Rental
 slug: rei-la-fernando-morales-rental
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1-818-266-5307"]
   slack: []
-last_synced: 2026-05-06T22:18:21.446356+00:00
+last_synced: 2026-05-07T12:21:52.906268+00:00
 global: true
 ---
 

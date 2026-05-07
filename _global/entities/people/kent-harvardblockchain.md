@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.330508+00:00
+ingested_at: 2026-05-07T12:21:52.810818+00:00
 ingest_version: 1
 content_hash: blake2b:a47b8e29316787688ae913bf08e0f30f
-provider_modified_at: 2026-05-06T22:18:21.330508+00:00
+provider_modified_at: 2026-05-07T12:21:52.810818+00:00
 
 title: Kent | HarvardBlockchain
 slug: kent-harvardblockchain
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.330508+00:00
+last_synced: 2026-05-07T12:21:52.810818+00:00
 global: true
 ---
 

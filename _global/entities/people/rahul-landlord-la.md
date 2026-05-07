@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.461761+00:00
+ingested_at: 2026-05-07T12:21:52.914267+00:00
 ingest_version: 1
 content_hash: blake2b:9e925d29fc0ff272ecb4a886972adba1
-provider_modified_at: 2026-05-06T22:18:21.461761+00:00
+provider_modified_at: 2026-05-07T12:21:52.914267+00:00
 
 title: Rahul Landlord LA
 slug: rahul-landlord-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 213-878-1623"]
   slack: []
-last_synced: 2026-05-06T22:18:21.461761+00:00
+last_synced: 2026-05-07T12:21:52.914267+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.330060+00:00
+ingested_at: 2026-05-07T12:21:52.810466+00:00
 ingest_version: 1
 content_hash: blake2b:1dc0c3301f5d72dba8c4fbf0acdf8a12
-provider_modified_at: 2026-05-06T22:18:21.330060+00:00
+provider_modified_at: 2026-05-07T12:21:52.810466+00:00
 
 title: Anand Uncle
 slug: anand-uncle-0ef1
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+91 99801 22627"]
   slack: []
-last_synced: 2026-05-06T22:18:21.330060+00:00
+last_synced: 2026-05-07T12:21:52.810466+00:00
 global: true
 ---
 

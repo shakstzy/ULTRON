@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.418519+00:00
+ingested_at: 2026-05-07T12:21:52.879420+00:00
 ingest_version: 1
 content_hash: blake2b:a8f78ee74d711393645c847e9b8e5d0e
-provider_modified_at: 2026-05-06T22:18:21.418519+00:00
+provider_modified_at: 2026-05-07T12:21:52.879420+00:00
 
 title: Dottie Hinge Austin
 slug: dottie-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12107123574"]
   slack: []
-last_synced: 2026-05-06T22:18:21.418519+00:00
+last_synced: 2026-05-07T12:21:52.879420+00:00
 global: true
 ---
 

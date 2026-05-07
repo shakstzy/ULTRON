@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.409824+00:00
+ingested_at: 2026-05-07T12:21:52.870715+00:00
 ingest_version: 1
 content_hash: blake2b:3c33ed5616205e81a5fc9687f6e513f5
-provider_modified_at: 2026-05-06T22:18:21.409824+00:00
+provider_modified_at: 2026-05-07T12:21:52.870715+00:00
 
 title: Surbhi Singh | KanaLabs
 slug: surbhi-singh-kanalabs
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.409824+00:00
+last_synced: 2026-05-07T12:21:52.870715+00:00
 global: true
 ---
 

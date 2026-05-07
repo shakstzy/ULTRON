@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.544312+00:00
+ingested_at: 2026-05-07T12:21:52.963519+00:00
 ingest_version: 1
 content_hash: blake2b:57acd59dcf79be0a31ed7fe6396f2b5d
-provider_modified_at: 2026-05-06T22:18:21.544312+00:00
+provider_modified_at: 2026-05-07T12:21:52.963519+00:00
 
 title: Ryan Noah Austin
 slug: ryan-noah-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15129246900"]
   slack: []
-last_synced: 2026-05-06T22:18:21.544312+00:00
+last_synced: 2026-05-07T12:21:52.963519+00:00
 global: true
 ---
 

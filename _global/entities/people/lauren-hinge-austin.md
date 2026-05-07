@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.481506+00:00
+ingested_at: 2026-05-07T12:21:52.926092+00:00
 ingest_version: 1
 content_hash: blake2b:f97b994214ef3ee7a340f8b03607e917
-provider_modified_at: 2026-05-06T22:18:21.481506+00:00
+provider_modified_at: 2026-05-07T12:21:52.926092+00:00
 
 title: Lauren Hinge Austin
 slug: lauren-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17374652375"]
   slack: []
-last_synced: 2026-05-06T22:18:21.481506+00:00
+last_synced: 2026-05-07T12:21:52.926092+00:00
 global: true
 ---
 

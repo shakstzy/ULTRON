@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.433480+00:00
+ingested_at: 2026-05-07T12:21:52.893018+00:00
 ingest_version: 1
 content_hash: blake2b:130852371d07178ff7a27b2ab7be5370
-provider_modified_at: 2026-05-06T22:18:21.433480+00:00
+provider_modified_at: 2026-05-07T12:21:52.893018+00:00
 
 title: Kristof | Pimlico
 slug: kristof-pimlico
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.433480+00:00
+last_synced: 2026-05-07T12:21:52.893018+00:00
 global: true
 ---
 

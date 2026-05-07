@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.462079+00:00
+ingested_at: 2026-05-07T12:21:52.914631+00:00
 ingest_version: 1
 content_hash: blake2b:0aac286d461bfbf22bb46ebf1b315669
-provider_modified_at: 2026-05-06T22:18:21.462079+00:00
+provider_modified_at: 2026-05-07T12:21:52.914631+00:00
 
 title: Liberty Home Guard
 slug: liberty-home-guard
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19175039065"]
   slack: []
-last_synced: 2026-05-06T22:18:21.462079+00:00
+last_synced: 2026-05-07T12:21:52.914631+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.437024+00:00
+ingested_at: 2026-05-07T12:21:52.896456+00:00
 ingest_version: 1
 content_hash: blake2b:1423a010e0d8820c917ffc3e4c2eb450
-provider_modified_at: 2026-05-06T22:18:21.437024+00:00
+provider_modified_at: 2026-05-07T12:21:52.896456+00:00
 
 title: Jasper Katzban
 slug: jasper-katzban
@@ -15,7 +15,7 @@ identifiers:
   email: ["jasperkatzban@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.437024+00:00
+last_synced: 2026-05-07T12:21:52.896456+00:00
 global: true
 ---
 

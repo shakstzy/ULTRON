@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.436732+00:00
+ingested_at: 2026-05-07T12:21:52.896254+00:00
 ingest_version: 1
 content_hash: blake2b:ab80cc16eaeaf321d6c92ec2b4db6906
-provider_modified_at: 2026-05-06T22:18:21.436732+00:00
+provider_modified_at: 2026-05-07T12:21:52.896254+00:00
 
 title: TM UC Berkeley
 slug: tm-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(925) 698-5244"]
   slack: []
-last_synced: 2026-05-06T22:18:21.436732+00:00
+last_synced: 2026-05-07T12:21:52.896254+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.493836+00:00
+ingested_at: 2026-05-07T12:21:52.931826+00:00
 ingest_version: 1
 content_hash: blake2b:1499f7dad7e95e895d2709efedfbe140
-provider_modified_at: 2026-05-06T22:18:21.493836+00:00
+provider_modified_at: 2026-05-07T12:21:52.931826+00:00
 
 title: Sid Intern SpaceX
 slug: sid-intern-spacex
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17134091075"]
   slack: []
-last_synced: 2026-05-06T22:18:21.493836+00:00
+last_synced: 2026-05-07T12:21:52.931826+00:00
 global: true
 ---
 

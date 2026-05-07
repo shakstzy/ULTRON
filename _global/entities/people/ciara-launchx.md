@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.589688+00:00
+ingested_at: 2026-05-07T12:21:53.001524+00:00
 ingest_version: 1
 content_hash: blake2b:07871e344b6941beb75456fb662bce51
-provider_modified_at: 2026-05-06T22:18:21.589688+00:00
+provider_modified_at: 2026-05-07T12:21:53.001524+00:00
 
 title: Ciara LaunchX
 slug: ciara-launchx
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+353 87 791 0680", "+1 929-431-8041"]
   slack: []
-last_synced: 2026-05-06T22:18:21.589688+00:00
+last_synced: 2026-05-07T12:21:53.001524+00:00
 global: true
 ---
 

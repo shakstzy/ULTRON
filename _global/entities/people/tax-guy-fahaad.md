@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.400145+00:00
+ingested_at: 2026-05-07T12:21:52.862863+00:00
 ingest_version: 1
 content_hash: blake2b:525f57e16c8e2ea496c0df8dfadb3df7
-provider_modified_at: 2026-05-06T22:18:21.400145+00:00
+provider_modified_at: 2026-05-07T12:21:52.862863+00:00
 
 title: Tax Guy Fahaad
 slug: tax-guy-fahaad
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(562) 249-9690"]
   slack: []
-last_synced: 2026-05-06T22:18:21.400145+00:00
+last_synced: 2026-05-07T12:21:52.862863+00:00
 global: true
 ---
 

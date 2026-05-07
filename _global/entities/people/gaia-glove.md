@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.540280+00:00
+ingested_at: 2026-05-07T12:21:52.958843+00:00
 ingest_version: 1
 content_hash: blake2b:40b116521ee4612d832c7b5a8089c8da
-provider_modified_at: 2026-05-06T22:18:21.540280+00:00
+provider_modified_at: 2026-05-07T12:21:52.958843+00:00
 
 title: Gaia Glove
 slug: gaia-glove
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 737-201-1402"]
   slack: []
-last_synced: 2026-05-06T22:18:21.540280+00:00
+last_synced: 2026-05-07T12:21:52.958843+00:00
 global: true
 ---
 

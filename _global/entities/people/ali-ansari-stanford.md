@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.347328+00:00
+ingested_at: 2026-05-07T12:21:52.827660+00:00
 ingest_version: 1
 content_hash: blake2b:bae8c9a1124cfb58806f73dff19ce360
-provider_modified_at: 2026-05-06T22:18:21.347328+00:00
+provider_modified_at: 2026-05-07T12:21:52.827660+00:00
 
 title: Ali Ansari Stanford
 slug: ali-ansari-stanford
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19496366918"]
   slack: []
-last_synced: 2026-05-06T22:18:21.347328+00:00
+last_synced: 2026-05-07T12:21:52.827660+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.552008+00:00
+ingested_at: 2026-05-07T12:21:52.970813+00:00
 ingest_version: 1
 content_hash: blake2b:5d39a2441019fb23ae658a6848d10bce
-provider_modified_at: 2026-05-06T22:18:21.552008+00:00
+provider_modified_at: 2026-05-07T12:21:52.970813+00:00
 
 title: Broncaccio
 slug: broncaccio
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-914-0259"]
   slack: []
-last_synced: 2026-05-06T22:18:21.552008+00:00
+last_synced: 2026-05-07T12:21:52.970813+00:00
 global: true
 ---
 

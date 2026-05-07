@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.429246+00:00
+ingested_at: 2026-05-07T12:21:52.888988+00:00
 ingest_version: 1
 content_hash: blake2b:ea38cf213af1e5896793b1525deacb64
-provider_modified_at: 2026-05-06T22:18:21.429246+00:00
+provider_modified_at: 2026-05-07T12:21:52.888988+00:00
 
 title: Ariana Hinge LA
 slug: ariana-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17626997012"]
   slack: []
-last_synced: 2026-05-06T22:18:21.429246+00:00
+last_synced: 2026-05-07T12:21:52.888988+00:00
 global: true
 ---
 

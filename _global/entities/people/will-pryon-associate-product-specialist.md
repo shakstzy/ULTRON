@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.571661+00:00
+ingested_at: 2026-05-07T12:21:52.988442+00:00
 ingest_version: 1
 content_hash: blake2b:a38ae0f537defdbe6058f5ccae0e6772
-provider_modified_at: 2026-05-06T22:18:21.571661+00:00
+provider_modified_at: 2026-05-07T12:21:52.988442+00:00
 
 title: Will Pryon Associate Product Specialist
 slug: will-pryon-associate-product-specialist
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16312586082"]
   slack: []
-last_synced: 2026-05-06T22:18:21.571661+00:00
+last_synced: 2026-05-07T12:21:52.988442+00:00
 global: true
 ---
 

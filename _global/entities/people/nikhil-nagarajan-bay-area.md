@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.545084+00:00
+ingested_at: 2026-05-07T12:21:52.964247+00:00
 ingest_version: 1
 content_hash: blake2b:77b031f4e55c0d9668c5f30b2c7978ea
-provider_modified_at: 2026-05-06T22:18:21.545084+00:00
+provider_modified_at: 2026-05-07T12:21:52.964247+00:00
 
 title: Nikhil Nagarajan Bay Area
 slug: nikhil-nagarajan-bay-area
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["9258548437"]
   slack: []
-last_synced: 2026-05-06T22:18:21.545084+00:00
+last_synced: 2026-05-07T12:21:52.964247+00:00
 global: true
 ---
 

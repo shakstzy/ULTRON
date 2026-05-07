@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.328375+00:00
+ingested_at: 2026-05-07T12:21:52.808868+00:00
 ingest_version: 1
 content_hash: blake2b:fe15a9ea21b245e2685a46ee26c56f1a
-provider_modified_at: 2026-05-06T22:18:21.328375+00:00
+provider_modified_at: 2026-05-07T12:21:52.808868+00:00
 
 title: Neha Hair Tie UC Berkeley
 slug: neha-hair-tie-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16692342121"]
   slack: []
-last_synced: 2026-05-06T22:18:21.328375+00:00
+last_synced: 2026-05-07T12:21:52.808868+00:00
 global: true
 ---
 

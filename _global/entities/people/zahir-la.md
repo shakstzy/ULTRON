@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.353763+00:00
+ingested_at: 2026-05-07T12:21:52.831995+00:00
 ingest_version: 1
 content_hash: blake2b:85faeaa68630479e228f73e8f40ffc13
-provider_modified_at: 2026-05-06T22:18:21.353763+00:00
+provider_modified_at: 2026-05-07T12:21:52.831995+00:00
 
 title: Zahir LA
 slug: zahir-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13108635780"]
   slack: []
-last_synced: 2026-05-06T22:18:21.353763+00:00
+last_synced: 2026-05-07T12:21:52.831995+00:00
 global: true
 ---
 

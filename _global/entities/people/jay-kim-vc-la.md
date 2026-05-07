@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.416632+00:00
+ingested_at: 2026-05-07T12:21:52.877616+00:00
 ingest_version: 1
 content_hash: blake2b:84e1cd67477f35d69459eaba2dda0b53
-provider_modified_at: 2026-05-06T22:18:21.416632+00:00
+provider_modified_at: 2026-05-07T12:21:52.877616+00:00
 
 title: Jay Kim VC LA
 slug: jay-kim-vc-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19165274676"]
   slack: []
-last_synced: 2026-05-06T22:18:21.416632+00:00
+last_synced: 2026-05-07T12:21:52.877616+00:00
 global: true
 ---
 

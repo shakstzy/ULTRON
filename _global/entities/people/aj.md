@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.455829+00:00
+ingested_at: 2026-05-07T12:21:52.908969+00:00
 ingest_version: 1
 content_hash: blake2b:3bd3119f506e80c12cea41838d7002af
-provider_modified_at: 2026-05-06T22:18:21.455829+00:00
+provider_modified_at: 2026-05-07T12:21:52.908969+00:00
 
 title: AJ
 slug: aj
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 786-797-7082"]
   slack: []
-last_synced: 2026-05-06T22:18:21.455829+00:00
+last_synced: 2026-05-07T12:21:52.908969+00:00
 global: true
 ---
 

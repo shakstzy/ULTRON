@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.309586+00:00
+ingested_at: 2026-05-07T12:21:52.797368+00:00
 ingest_version: 1
 content_hash: blake2b:5dc750d0d229ce043baf6d0ead67372d
-provider_modified_at: 2026-05-06T22:18:21.309586+00:00
+provider_modified_at: 2026-05-07T12:21:52.797368+00:00
 
 title: Jonathan Lor
 slug: jonathan-lor
@@ -15,7 +15,7 @@ identifiers:
   email: ["jonathan.r.lor@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.309586+00:00
+last_synced: 2026-05-07T12:21:52.797368+00:00
 global: true
 ---
 

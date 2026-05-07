@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.412188+00:00
+ingested_at: 2026-05-07T12:21:52.873358+00:00
 ingest_version: 1
 content_hash: blake2b:1f158101d5dbe3dbd84d14a3a192bb52
-provider_modified_at: 2026-05-06T22:18:21.412188+00:00
+provider_modified_at: 2026-05-07T12:21:52.873358+00:00
 
 title: Jj Hinge Austin
 slug: jj-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17033577999"]
   slack: []
-last_synced: 2026-05-06T22:18:21.412188+00:00
+last_synced: 2026-05-07T12:21:52.873358+00:00
 global: true
 ---
 

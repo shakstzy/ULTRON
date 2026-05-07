@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.566259+00:00
+ingested_at: 2026-05-07T12:21:52.982708+00:00
 ingest_version: 1
 content_hash: blake2b:0bc6a31ef9d0b9ec55b17fda59495bf8
-provider_modified_at: 2026-05-06T22:18:21.566259+00:00
+provider_modified_at: 2026-05-07T12:21:52.982708+00:00
 
 title: Robert Qiu EF
 slug: robert-qiu-ef
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14084825364"]
   slack: []
-last_synced: 2026-05-06T22:18:21.566259+00:00
+last_synced: 2026-05-07T12:21:52.982708+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.457591+00:00
+ingested_at: 2026-05-07T12:21:52.910318+00:00
 ingest_version: 1
 content_hash: blake2b:22f456b1f0b23f0c9b0625fa5b636ed8
-provider_modified_at: 2026-05-06T22:18:21.457591+00:00
+provider_modified_at: 2026-05-07T12:21:52.910318+00:00
 
 title: Matt Stefanina NYC
 slug: matt-stefanina-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14349623567"]
   slack: []
-last_synced: 2026-05-06T22:18:21.457591+00:00
+last_synced: 2026-05-07T12:21:52.910318+00:00
 global: true
 ---
 

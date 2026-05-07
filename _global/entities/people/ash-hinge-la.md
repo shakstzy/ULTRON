@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.354714+00:00
+ingested_at: 2026-05-07T12:21:52.832881+00:00
 ingest_version: 1
 content_hash: blake2b:036b519bb6c3016c315bd3924f4c7e4d
-provider_modified_at: 2026-05-06T22:18:21.354714+00:00
+provider_modified_at: 2026-05-07T12:21:52.832881+00:00
 
 title: Ash Hinge LA
 slug: ash-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17147206772"]
   slack: []
-last_synced: 2026-05-06T22:18:21.354714+00:00
+last_synced: 2026-05-07T12:21:52.832881+00:00
 global: true
 ---
 

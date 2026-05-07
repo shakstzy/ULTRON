@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.329681+00:00
+ingested_at: 2026-05-07T12:21:52.810160+00:00
 ingest_version: 1
 content_hash: blake2b:80d58772a9ed77a464b3b4a0505f24d0
-provider_modified_at: 2026-05-06T22:18:21.329681+00:00
+provider_modified_at: 2026-05-07T12:21:52.810160+00:00
 
 title: Dolph Briscoe
 slug: dolph-briscoe
@@ -15,7 +15,7 @@ identifiers:
   email: ["dolph.briscoe@austincc.edu"]
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.329681+00:00
+last_synced: 2026-05-07T12:21:52.810160+00:00
 global: true
 ---
 

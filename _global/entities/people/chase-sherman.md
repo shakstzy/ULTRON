@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.461844+00:00
+ingested_at: 2026-05-07T12:21:52.914335+00:00
 ingest_version: 1
 content_hash: blake2b:413a952d49d0af24503f1f65544aab47
-provider_modified_at: 2026-05-06T22:18:21.461844+00:00
+provider_modified_at: 2026-05-07T12:21:52.914335+00:00
 
 title: Chase Sherman
 slug: chase-sherman
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(310) 775-7605"]
   slack: []
-last_synced: 2026-05-06T22:18:21.461844+00:00
+last_synced: 2026-05-07T12:21:52.914335+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.462160+00:00
+ingested_at: 2026-05-07T12:21:52.914697+00:00
 ingest_version: 1
 content_hash: blake2b:88df964b7a4d37713f0779e222b24210
-provider_modified_at: 2026-05-06T22:18:21.462160+00:00
+provider_modified_at: 2026-05-07T12:21:52.914697+00:00
 
 title: Vineet | CypherCapital
 slug: vineet-cyphercapital
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+971 58 579 7897"]
   slack: []
-last_synced: 2026-05-06T22:18:21.462160+00:00
+last_synced: 2026-05-07T12:21:52.914697+00:00
 global: true
 ---
 

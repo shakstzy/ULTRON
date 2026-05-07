@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.411127+00:00
+ingested_at: 2026-05-07T12:21:52.872067+00:00
 ingest_version: 1
 content_hash: blake2b:b00ee5e46b56c67102aa2e404f971d72
-provider_modified_at: 2026-05-06T22:18:21.411127+00:00
+provider_modified_at: 2026-05-07T12:21:52.872067+00:00
 
 title: Abraham Choi NYC
 slug: abraham-choi-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16315991922"]
   slack: []
-last_synced: 2026-05-06T22:18:21.411127+00:00
+last_synced: 2026-05-07T12:21:52.872067+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.561884+00:00
+ingested_at: 2026-05-07T12:21:52.979646+00:00
 ingest_version: 1
 content_hash: blake2b:3ceaca3cd97baf6ce14c6316499a8a43
-provider_modified_at: 2026-05-06T22:18:21.561884+00:00
+provider_modified_at: 2026-05-07T12:21:52.979646+00:00
 
 title: Rahul Amara
 slug: rahul-amara
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(408) 504-4229"]
   slack: []
-last_synced: 2026-05-06T22:18:21.561884+00:00
+last_synced: 2026-05-07T12:21:52.979646+00:00
 global: true
 ---
 

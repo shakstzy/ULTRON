@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.459535+00:00
+ingested_at: 2026-05-07T12:21:52.912188+00:00
 ingest_version: 1
 content_hash: blake2b:6052def7738b6d40077d2840b739ccd4
-provider_modified_at: 2026-05-06T22:18:21.459535+00:00
+provider_modified_at: 2026-05-07T12:21:52.912188+00:00
 
 title: Rylen Patel UC Berkeley
 slug: rylen-patel-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: ["rylenpatel@gmail.com"]
   phone: ["+19492787033"]
   slack: []
-last_synced: 2026-05-06T22:18:21.459535+00:00
+last_synced: 2026-05-07T12:21:52.912188+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.548118+00:00
+ingested_at: 2026-05-07T12:21:52.966865+00:00
 ingest_version: 1
 content_hash: blake2b:3ac73fcc644d4b5e25fa2a800b217424
-provider_modified_at: 2026-05-06T22:18:21.548118+00:00
+provider_modified_at: 2026-05-07T12:21:52.966865+00:00
 
 title: Ajay Crypto
 slug: ajay-crypto
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13107961111"]
   slack: []
-last_synced: 2026-05-06T22:18:21.548118+00:00
+last_synced: 2026-05-07T12:21:52.966865+00:00
 global: true
 ---
 

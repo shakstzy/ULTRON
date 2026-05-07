@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.476585+00:00
+ingested_at: 2026-05-07T12:21:52.924149+00:00
 ingest_version: 1
 content_hash: blake2b:585bb6a3be013ad40a2526057abb27df
-provider_modified_at: 2026-05-06T22:18:21.476585+00:00
+provider_modified_at: 2026-05-07T12:21:52.924149+00:00
 
 title: Hannah Warner UC Berkeley
 slug: hannah-warner-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 408-663-6371"]
   slack: []
-last_synced: 2026-05-06T22:18:21.476585+00:00
+last_synced: 2026-05-07T12:21:52.924149+00:00
 global: true
 ---
 

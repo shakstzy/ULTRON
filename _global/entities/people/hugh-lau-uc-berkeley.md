@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.456440+00:00
+ingested_at: 2026-05-07T12:21:52.909414+00:00
 ingest_version: 1
 content_hash: blake2b:1d68d842b59237b90590115c4ac0150d
-provider_modified_at: 2026-05-06T22:18:21.456440+00:00
+provider_modified_at: 2026-05-07T12:21:52.909414+00:00
 
 title: Hugh Lau UC Berkeley
 slug: hugh-lau-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(858) 888-2863"]
   slack: []
-last_synced: 2026-05-06T22:18:21.456440+00:00
+last_synced: 2026-05-07T12:21:52.909414+00:00
 global: true
 ---
 

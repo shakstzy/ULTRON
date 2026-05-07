@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.399539+00:00
+ingested_at: 2026-05-07T12:21:52.862321+00:00
 ingest_version: 1
 content_hash: blake2b:95a19b4443380210746bc11ec5386bde
-provider_modified_at: 2026-05-06T22:18:21.399539+00:00
+provider_modified_at: 2026-05-07T12:21:52.862321+00:00
 
 title: Tennis Kid VAIDYA
 slug: tennis-kid-vaidya
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(832) 600-9918"]
   slack: []
-last_synced: 2026-05-06T22:18:21.399539+00:00
+last_synced: 2026-05-07T12:21:52.862321+00:00
 global: true
 ---
 

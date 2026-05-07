@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:18:21.312529+00:00
+ingested_at: 2026-05-07T12:21:52.799896+00:00
 ingest_version: 1
 content_hash: blake2b:9e47de5b53ec0a17c89703c1f5ececfd
-provider_modified_at: 2026-05-06T22:18:21.312529+00:00
+provider_modified_at: 2026-05-07T12:21:52.799896+00:00
 
 title: CryptoGorilla | KOL
 slug: cryptogorilla-kol
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:18:21.312529+00:00
+last_synced: 2026-05-07T12:21:52.799896+00:00
 global: true
 ---
 

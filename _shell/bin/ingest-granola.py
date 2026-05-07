@@ -70,6 +70,8 @@ def discover_workspaces(filter_slugs: set[str] | None = None) -> dict[str, dict]
         except yaml.YAMLError:
             continue
         sources = cfg.get("sources") or {}
+        if not isinstance(sources, dict):
+            continue
         gran = sources.get("granola")
         if not gran or not gran.get("folders"):
             continue

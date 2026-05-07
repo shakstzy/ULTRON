@@ -69,16 +69,24 @@ export function attachJwtCapture(context) {
   return state;
 }
 
-// Wait until the page emits at least one /user response. Higgsfield tool pages
-// fetch /user on initial load and again when the History panel opens, so this
-// usually returns quickly. Returns { ok, body } or { ok:false, reason }.
-export async function waitForUserBody(captureState, { timeoutMs = 30000 } = {}) {
+// Wait until the page emits a 200 /user response (Higgsfield's wallet endpoint).
+// Quirk: on initial tool-page load, the page's first /user call typically 401s
+// because Clerk's React-context token is stale by a second. Clerk silently
+// refreshes within ~3-5s but the page doesn't always retry /user. If we don't
+// see a body after `reloadAfterMs`, we force a page.reload() — the second boot
+// uses the now-fresh Clerk token and /user returns 200 with the wallet data.
+export async function waitForUserBody(captureState, page = null, { timeoutMs = 30000, reloadAfterMs = 6000 } = {}) {
   const start = Date.now();
+  let reloaded = false;
   while (Date.now() - start < timeoutMs) {
     if (captureState.lastUserBody) return { ok: true, body: captureState.lastUserBody };
-    await new Promise(r => setTimeout(r, 250));
+    if (!reloaded && page && (Date.now() - start) > reloadAfterMs) {
+      reloaded = true;
+      try { await page.reload({ waitUntil: 'load', timeout: 30000 }); } catch (_) {}
+    }
+    await new Promise(r => setTimeout(r, 300));
   }
-  return { ok: false, reason: 'no-/user-response-observed' };
+  return { ok: false, reason: 'no-/user-200-response-observed' };
 }
 
 // Extract DataDome/fingerprint-like headers from a captured request's header set.

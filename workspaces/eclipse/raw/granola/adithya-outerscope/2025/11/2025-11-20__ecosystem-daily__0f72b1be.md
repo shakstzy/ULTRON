@@ -1,7 +1,7 @@
 ---
 source: granola
 workspace: eclipse
-ingested_at: '2026-05-05T02:18:27.417627Z'
+ingested_at: '2026-05-07T04:23:57.244510Z'
 ingest_version: 1
 content_hash: blake3:37db4557128ec01213fb3701c28fc02675b4d80cf73151a2006f1e53ad8f99a4
 provider_modified_at: '2025-11-20T17:32:11.905Z'

@@ -3,7 +3,7 @@
 // tag along. Direct Node fetch would lack that context and get 403.
 
 import { transition, readState, writeState } from './state.mjs';
-import { getFreshJwt, extractReplayHeaders } from './jwt.mjs';
+import { getFreshJwt, extractReplayHeaders, waitForUserBody } from './jwt.mjs';
 import { hasCaptchaInDom, trigger403Breaker } from './browser.mjs';
 import { downloadCloudfront, unwrapImagesHiggsProxy } from './download.mjs';
 import { pause, pauseJitter } from './behavior.mjs';
@@ -40,18 +40,19 @@ export function parseCostCap(argv) {
 }
 
 export async function getWallet(page, jwtCapture) {
-  // PRIMARY PATH: read the page's own /user response, captured by jwt.mjs's
-  // response listener. Manual replay against /user with a captured JWT 401s
-  // because Clerk session tokens have a short TTL — by the time we replay the
-  // captured token, the page has already silently refreshed it via React
-  // context and the old one is invalid. Reading the page's own response body
-  // sidesteps the entire refresh dance.
+  // Read the page's own /user response (captured by jwt.mjs's response
+  // listener). If the page hasn't emitted a 200 /user yet, waitForUserBody
+  // will trigger a page.reload() to force re-fetch with a now-fresh Clerk
+  // token (the first boot's token is typically stale by ~5s and 401s, but
+  // Clerk silently refreshes; the reload uses the refreshed token).
+  if (!jwtCapture?.lastUserBody) {
+    await waitForUserBody(jwtCapture, page, { timeoutMs: 25000, reloadAfterMs: 5000 });
+  }
   if (jwtCapture?.lastUserBody) {
     const j = jwtCapture.lastUserBody;
     return { subscription_credits: j.subscription_credits, package_credits: j.package_credits, has_unlim: j.has_unlim, email: j.email, plan_type: j.plan_type, workspace_id: j.workspace_id, user_id: j.id };
   }
-  // FALLBACK: manual replay. Useful only if the page hasn't called /user yet
-  // (rare — the wallet pill in the UI calls it on every tool-page load).
+  // Last-resort manual replay (almost never used). Subject to Clerk JWT staleness 401s.
   let t;
   try { t = await getFreshJwt(page, jwtCapture); } catch (_) { return null; }
   try {

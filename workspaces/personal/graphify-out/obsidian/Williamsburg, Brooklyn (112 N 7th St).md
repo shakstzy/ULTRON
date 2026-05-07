@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/alex-duckworth-crypto/2025/2025-02__alex-duckworth-crypto.md"
 type: "document"
-community: "Crypto/Web3 Network"
+community: "Community 7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crypto/Web3_Network
+  - community/Community_7
 ---
 
 # Williamsburg, Brooklyn (112 N 7th St)
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `mentioned_by` [EXTRACTED]
 - [[Alex Duckworth (crypto)]] - `lives_in` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crypto/Web3_Network
+#graphify/document #graphify/EXTRACTED #community/Community_7

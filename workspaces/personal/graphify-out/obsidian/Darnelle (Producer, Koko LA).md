@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/darnelle-producer-koko-la/2025/2025-02__darnelle-producer-koko-la.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Darnelle (Producer, Koko LA)
@@ -15,4 +15,4 @@ tags:
 - [[Los Angeles, CA]] - `lives_in` [INFERRED]
 - [[Music Production]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/INFERRED #community/Community_2

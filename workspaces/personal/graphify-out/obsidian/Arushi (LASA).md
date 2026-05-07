@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/arushi-lasa/2025/2025-01__arushi-lasa.md"
 type: "document"
-community: "LASA Classmates"
+community: "Community 12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LASA_Classmates
+  - community/Community_12
 ---
 
 # Arushi (LASA)
@@ -15,4 +15,4 @@ tags:
 - [[Austin, TX]] - `lives_in` [INFERRED]
 - [[LASA (Liberal Arts and Science Academy)]] - `studies_at` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LASA_Classmates
+#graphify/document #graphify/EXTRACTED #community/Community_12

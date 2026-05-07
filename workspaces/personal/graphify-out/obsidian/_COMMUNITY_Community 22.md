@@ -22,9 +22,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Dating Roster (mixed)]]
+- 3 edges to [[_COMMUNITY_Community 0]]
 
 ## Top bridge nodes
-- [[LASA (school)]] - degree 3, connects to 1 community
 - [[Liam (LASA)]] - degree 3, connects to 1 community
 - [[Liz Reed (LASA)]] - degree 3, connects to 1 community
+- [[LASA (school)]] - degree 3, connects to 1 community

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/avik-ahuja-lasa.md"
 type: "document"
-community: "LASA Classmates"
+community: "Community 12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LASA_Classmates
+  - community/Community_12
 ---
 
 # Avik Ahuja (LASA)
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `messages_with` [EXTRACTED]
 - [[LASA (Liberal Arts and Science Academy)]] - `studies_at` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/LASA_Classmates
+#graphify/document #graphify/EXTRACTED #community/Community_12

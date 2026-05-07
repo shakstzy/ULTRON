@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/divyesh-khatri-uc-berkeley/2024/2024-03__divyesh-khatri-uc-berkeley.md"
 type: "document"
-community: "Bay Area + Slash"
+community: "Community 13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bay_Area_+_Slash
+  - community/Community_13
 ---
 
 # Crypto / Web3
@@ -20,4 +20,4 @@ tags:
 - [[Pseuwin]] - `related_to` [INFERRED]
 - [[Ram (Router Protocol)]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Bay_Area_+_Slash
+#graphify/document #graphify/EXTRACTED #community/Community_13

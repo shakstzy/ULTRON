@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/groups/group-dr-jim/2025/2025-08__group-dr-jim.md"
 type: "document"
-community: "Prescription Songs + Music"
+community: "Community 10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prescription_Songs_+_Music
+  - community/Community_10
 ---
 
 # AI Music Tool (Serum/sample gen)
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `related_to` [EXTRACTED]
 - [[Jim (musicAIlicensing)]] - `discussed_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prescription_Songs_+_Music
+#graphify/document #graphify/EXTRACTED #community/Community_10

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/sandeep-chinchali-austin/2026/2026-03__sandeep-chinchali-austin.md"
 type: "document"
-community: "Startup Accelerators"
+community: "Community 15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Startup_Accelerators
+  - community/Community_15
 ---
 
 # a16z Speedrun
@@ -16,4 +16,4 @@ tags:
 - [[Rushil Jha]] - `discussed_with` [EXTRACTED]
 - [[Sandeep Chinchali]] - `discussed_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Startup_Accelerators
+#graphify/document #graphify/EXTRACTED #community/Community_15

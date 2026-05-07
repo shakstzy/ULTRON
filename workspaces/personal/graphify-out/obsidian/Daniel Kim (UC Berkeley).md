@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/daniel-kim-uc-berkeley/2025/2025-05__daniel-kim-uc-berkeley.md"
 type: "document"
-community: "UC Berkeley + a16z"
+community: "Community 3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/UC_Berkeley_+_a16z
+  - community/Community_3
 ---
 
 # Daniel Kim (UC Berkeley)
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `messages_with` [EXTRACTED]
 - [[UC Berkeley]] - `from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/UC_Berkeley_+_a16z
+#graphify/document #graphify/EXTRACTED #community/Community_3

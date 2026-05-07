@@ -1,11 +1,11 @@
 ---
 source_file: "workspaces/personal/raw/imessage/_profiles/neek-la.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Neek (LA)
@@ -15,4 +15,4 @@ tags:
 - [[Group Geno + Neek + Tito (LA)]] - `mentioned_by` [EXTRACTED]
 - [[Los Angeles, CA]] - `lives_in` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/EXTRACTED #community/Community_2

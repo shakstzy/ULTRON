@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/evan-renter/2025/2025-01__evan-renter.md"
 type: "document"
-community: "NYC/USC (Akshar circle)"
+community: "Community 5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/NYC/USC_(Akshar_circle)
+  - community/Community_5
 ---
 
 # New York City
@@ -32,4 +32,4 @@ tags:
 - [[Saif Ali (NYC)]] - `lives_in` [EXTRACTED]
 - [[Santosh Mathialgan (Sammy's  UC Berkeley)]] - `lives_in` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/NYC/USC_(Akshar_circle)
+#graphify/document #graphify/EXTRACTED #community/Community_5

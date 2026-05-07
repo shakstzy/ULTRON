@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/ace-brooklyn-crypto-meetup/2025/2025-07__ace-brooklyn-crypto-meetup.md"
 type: "document"
-community: "Crypto Events + Investors"
+community: "Community 8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crypto_Events_+_Investors
+  - community/Community_8
 ---
 
 # Ace (Brooklyn Crypto Meetup)
@@ -16,4 +16,4 @@ tags:
 - [[Crypto Network]] - `related_to` [EXTRACTED]
 - [[ETH Bushwick Event]] - `co_attended` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crypto_Events_+_Investors
+#graphify/document #graphify/EXTRACTED #community/Community_8

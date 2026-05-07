@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/donny-producer-la/2025/2025-10__donny-producer-la.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Malik (Music)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Donny (Producer LA)]] - `mentioned_by` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/EXTRACTED #community/Community_2

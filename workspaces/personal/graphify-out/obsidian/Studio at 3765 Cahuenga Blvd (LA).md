@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/sam-mcgrath-la/2024/2024-04__sam-mcgrath-la.md"
 type: "document"
-community: "Bay Area + Slash"
+community: "Community 13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bay_Area_+_Slash
+  - community/Community_13
 ---
 
 # Studio at 3765 Cahuenga Blvd (LA)
@@ -15,4 +15,4 @@ tags:
 - [[Amos (MusicCrypto, LA)]] - `co_attended` [EXTRACTED]
 - [[Sam McGrath (LA)]] - `co_attended` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bay_Area_+_Slash
+#graphify/document #graphify/EXTRACTED #community/Community_13

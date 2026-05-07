@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/adarsh-pinjala/2024/2024-03__adarsh-pinjala.md"
 type: "document"
-community: "Amsterdam Trip + Festival Crew"
+community: "Community 6"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Amsterdam_Trip_+_Festival_Crew
+  - community/Community_6
 ---
 
 # Adarsh Pinjala
@@ -23,4 +23,4 @@ tags:
 - [[UC Berkeley Network]] - `related_to` [INFERRED]
 - [[unkal (group chat)]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Amsterdam_Trip_+_Festival_Crew
+#graphify/document #graphify/INFERRED #community/Community_6

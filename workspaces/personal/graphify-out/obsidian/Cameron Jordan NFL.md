@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/group-group-cameron-mychal-rebecca.md"
 type: "document"
-community: "Crypto/Web3 Network"
+community: "Community 7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crypto/Web3_Network
+  - community/Community_7
 ---
 
 # Cameron Jordan NFL
@@ -15,4 +15,4 @@ tags:
 - [[Mychal Kendricks (AthleteCoin)]] - `co_attended` [EXTRACTED]
 - [[NFL]] - `works_at` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crypto/Web3_Network
+#graphify/document #graphify/EXTRACTED #community/Community_7

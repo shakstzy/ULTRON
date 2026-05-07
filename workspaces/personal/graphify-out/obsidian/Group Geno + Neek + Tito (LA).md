@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/group-group-geno-neek-tito.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Group: Geno + Neek + Tito (LA)
@@ -16,4 +16,4 @@ tags:
 - [[Neek (LA)]] - `mentioned_by` [EXTRACTED]
 - [[Tito (Producer, LA)]] - `mentioned_by` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/EXTRACTED #community/Community_2

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/vera-hinge-la/2026/2026-02__vera-hinge-la.md"
 type: "document"
-community: "Bay Area + Slash"
+community: "Community 13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bay_Area_+_Slash
+  - community/Community_13
 ---
 
 # Vera (Hinge LA / Bakersfield)
@@ -15,4 +15,4 @@ tags:
 - [[Hinge (dating app)]] - `mentioned_by` [EXTRACTED]
 - [[San Francisco]] - `from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bay_Area_+_Slash
+#graphify/document #graphify/EXTRACTED #community/Community_13

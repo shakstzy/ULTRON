@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/group-mit-launchx-sf.md"
 type: "document"
-community: "Startup Accelerators"
+community: "Community 15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Startup_Accelerators
+  - community/Community_15
 ---
 
 # MIT LaunchX SF
@@ -14,4 +14,4 @@ tags:
 - [[Andrew Yu (LaunchX)]] - `related_to` [EXTRACTED]
 - [[Kevin Bai]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Startup_Accelerators
+#graphify/document #graphify/EXTRACTED #community/Community_15

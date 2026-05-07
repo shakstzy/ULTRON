@@ -20,7 +20,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Dating Roster (mixed)]]
+- 1 edge to [[_COMMUNITY_Community 0]]
 
 ## Top bridge nodes
 - [[Ayush (Blockchain, UC Berkeley)]] - degree 3, connects to 1 community

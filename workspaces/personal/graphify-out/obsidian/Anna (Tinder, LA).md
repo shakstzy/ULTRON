@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/anna-tinder-la/2026/2026-02__anna-tinder-la.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Anna (Tinder, LA)
@@ -15,4 +15,4 @@ tags:
 - [[Los Angeles, CA]] - `lives_in` [EXTRACTED]
 - [[Tinder (Dating App)]] - `mentioned_by` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/EXTRACTED #community/Community_2

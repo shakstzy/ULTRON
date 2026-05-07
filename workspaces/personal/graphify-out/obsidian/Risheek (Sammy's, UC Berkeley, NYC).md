@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/risheek-sammys-uc-berkeley-nyc/2024/2024-05__risheek-sammys-uc-berkeley-nyc.md"
 type: "document"
-community: "NYC/USC (Akshar circle)"
+community: "Community 5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/NYC/USC_(Akshar_circle)
+  - community/Community_5
 ---
 
 # Risheek (Sammy's, UC Berkeley, NYC)
@@ -16,4 +16,4 @@ tags:
 - [[New York City_1]] - `lives_in` [INFERRED]
 - [[UC Berkeley]] - `studies_at` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/NYC/USC_(Akshar_circle)
+#graphify/document #graphify/EXTRACTED #community/Community_5

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/dr-satasivan/2026/2026-01__dr-satasivan.md"
 type: "document"
-community: "Dating Roster (mixed)"
+community: "Community 0"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dating_Roster_(mixed)
+  - community/Community_0
 ---
 
 # Dr. Satasivan
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `messages_with` [EXTRACTED]
 - [[Austin, TX_1]] - `lives_in` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Dating_Roster_(mixed)
+#graphify/document #graphify/EXTRACTED #community/Community_0

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/geno-catalano-la/2025/2025-02__geno-catalano-la.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Geno Catalano
@@ -15,4 +15,4 @@ tags:
 - [[Los Angeles, CA]] - `lives_in` [EXTRACTED]
 - [[Westcove Partners]] - `works_at` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/EXTRACTED #community/Community_2

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/nora-renter-showing/2025/2025-08__nora-renter-showing.md"
 type: "document"
-community: "Rental Showings (LA)"
+community: "Community 9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Rental_Showings_(LA)
+  - community/Community_9
 ---
 
 # Nora Renter Showing
@@ -15,4 +15,4 @@ tags:
 - [[Klein StreetCourt Property]] - `related_to` [EXTRACTED]
 - [[Real Estate  Rentals]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Rental_Showings_(LA)
+#graphify/document #graphify/EXTRACTED #community/Community_9

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/groove-chambers-la/2024/2024-04__groove-chambers-la.md"
 type: "document"
-community: "LA Music Industry (Prescription)"
+community: "Community 14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Music_Industry_(Prescription)
+  - community/Community_14
 ---
 
 # Groove Chambers (LA)
@@ -15,4 +15,4 @@ tags:
 - [[Los Angeles, CA]] - `lives_in` [EXTRACTED]
 - [[Prescription (music project)]] - `mentioned_by` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Music_Industry_(Prescription)
+#graphify/document #graphify/EXTRACTED #community/Community_14

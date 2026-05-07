@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/groups/mit-launchx-sf/2025/2025-06__mit-launchx-sf.md"
 type: "document"
-community: "Bay Area + Slash"
+community: "Community 13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bay_Area_+_Slash
+  - community/Community_13
 ---
 
 # Kevin Bai (Slash)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[San Francisco]] - `works_at` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bay_Area_+_Slash
+#graphify/document #graphify/EXTRACTED #community/Community_13

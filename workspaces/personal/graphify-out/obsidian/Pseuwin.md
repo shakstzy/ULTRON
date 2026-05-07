@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/pseuwin-crypto/2024/2024-05__pseuwin-crypto.md"
 type: "document"
-community: "Bay Area + Slash"
+community: "Community 13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bay_Area_+_Slash
+  - community/Community_13
 ---
 
 # Pseuwin
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `messages_with` [EXTRACTED]
 - [[Crypto  Web3]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Bay_Area_+_Slash
+#graphify/document #graphify/EXTRACTED #community/Community_13

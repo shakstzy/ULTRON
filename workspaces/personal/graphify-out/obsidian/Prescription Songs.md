@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/rhea-prescription-la/2025/2025-09__rhea-prescription-la.md"
 type: "document"
-community: "Prescription Songs + Music"
+community: "Community 10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prescription_Songs_+_Music
+  - community/Community_10
 ---
 
 # Prescription Songs
@@ -21,4 +21,4 @@ tags:
 - [[Rhea (Prescription, LA)]] - `works_at` [EXTRACTED]
 - [[Ryan Ogren]] - `works_at` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Prescription_Songs_+_Music
+#graphify/document #graphify/EXTRACTED #community/Community_10

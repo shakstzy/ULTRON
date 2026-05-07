@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/john-renter-showing/2025/2025-07__john-renter-showing.md"
 type: "document"
-community: "Sylmar Property + Tenants"
+community: "Community 4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sylmar_Property_+_Tenants
+  - community/Community_4
 ---
 
 # John / Jonathan Vincent (Renter)
@@ -16,4 +16,4 @@ tags:
 - [[Klein Ct Property]] - `related_to` [EXTRACTED]
 - [[Rental Property]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sylmar_Property_+_Tenants
+#graphify/document #graphify/EXTRACTED #community/Community_4

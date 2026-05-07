@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/nishka-nova/2025/2025-11__nishka-nova.md"
 type: "document"
-community: "Crypto Events + Investors"
+community: "Community 8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crypto_Events_+_Investors
+  - community/Community_8
 ---
 
 # Nishka (NOVA)
@@ -15,4 +15,4 @@ tags:
 - [[NOVA (organization)]] - `works_at` [EXTRACTED]
 - [[Nova Outerscope Group]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crypto_Events_+_Investors
+#graphify/document #graphify/EXTRACTED #community/Community_8

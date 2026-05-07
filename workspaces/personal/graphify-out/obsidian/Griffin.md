@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/groups/group-griffin-noah/2025/2025-01__group-griffin-noah.md"
 type: "document"
-community: "Amsterdam Trip + Festival Crew"
+community: "Community 6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Amsterdam_Trip_+_Festival_Crew
+  - community/Community_6
 ---
 
 # Griffin
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `messages_with` [EXTRACTED]
 - [[Noah Bailie]] - `co_attended` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Amsterdam_Trip_+_Festival_Crew
+#graphify/document #graphify/EXTRACTED #community/Community_6

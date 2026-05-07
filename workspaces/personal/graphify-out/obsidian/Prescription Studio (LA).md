@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/sahil-dutta-producer-la/2024/2024-08__sahil-dutta-producer-la.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Prescription Studio (LA)
@@ -20,4 +20,4 @@ tags:
 - [[Ryan (LA music collaborator)]] - `mentioned_by` [INFERRED]
 - [[Sahil Dutta (Producer, LA)]] - `works_at` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/EXTRACTED #community/Community_2

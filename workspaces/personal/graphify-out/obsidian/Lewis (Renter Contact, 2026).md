@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/lewis-renter-showing26/2026/2026-01__lewis-renter-showing26.md"
 type: "document"
-community: "Sylmar Property + Tenants"
+community: "Community 4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sylmar_Property_+_Tenants
+  - community/Community_4
 ---
 
 # Lewis (Renter Contact, 2026)
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `messages_with` [EXTRACTED]
 - [[Rental Property]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sylmar_Property_+_Tenants
+#graphify/document #graphify/EXTRACTED #community/Community_4

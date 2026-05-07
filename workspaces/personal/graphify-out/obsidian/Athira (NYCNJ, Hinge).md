@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/athira-nyc/2025/2025-07__athira-nyc.md"
 type: "document"
-community: "NYC/USC (Akshar circle)"
+community: "Community 5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/NYC/USC_(Akshar_circle)
+  - community/Community_5
 ---
 
 # Athira (NYC/NJ, Hinge)
@@ -15,4 +15,4 @@ tags:
 - [[New Jersey]] - `from` [EXTRACTED]
 - [[New York City_1]] - `lives_in` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/NYC/USC_(Akshar_circle)
+#graphify/document #graphify/EXTRACTED #community/Community_5

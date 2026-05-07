@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/shubhan-dua-uc-berkeley/2025/2025-05__shubhan-dua-uc-berkeley.md"
 type: "document"
-community: "UC Berkeley + a16z"
+community: "Community 3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/UC_Berkeley_+_a16z
+  - community/Community_3
 ---
 
 # Shubhan Dua (UC Berkeley / AnswersAI)
@@ -17,4 +17,4 @@ tags:
 - [[Nvidia GTC (San JoseSF)]] - `co_attended` [INFERRED]
 - [[UC Berkeley]] - `studies_at` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/UC_Berkeley_+_a16z
+#graphify/document #graphify/EXTRACTED #community/Community_3

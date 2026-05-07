@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/noah-renter/2024/2024-06__noah-renter.md"
 type: "document"
-community: "Rental Showings (LA)"
+community: "Community 9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Rental_Showings_(LA)
+  - community/Community_9
 ---
 
 # Noah Renter
@@ -20,4 +20,4 @@ tags:
 - [[LA Rental Property]] - `related_to` [EXTRACTED]
 - [[Real Estate  Rentals]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Rental_Showings_(LA)
+#graphify/document #graphify/EXTRACTED #community/Community_9

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/nidhir-guggila-uc-berkeley/2024/2024-05__nidhir-guggila-uc-berkeley.md"
 type: "document"
-community: "UC Berkeley + a16z"
+community: "Community 3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/UC_Berkeley_+_a16z
+  - community/Community_3
 ---
 
 # Nidhir Guggila
@@ -15,4 +15,4 @@ tags:
 - [[OpenAI]] - `works_at` [INFERRED]
 - [[UC Berkeley]] - `studies_at` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/UC_Berkeley_+_a16z
+#graphify/document #graphify/EXTRACTED #community/Community_3

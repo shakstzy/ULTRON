@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/alefia-hinge-austin/2025/2025-03__alefia-hinge-austin.md"
 type: "document"
-community: "Austin Dating + Locals"
+community: "Community 1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Austin_Dating_+_Locals
+  - community/Community_1
 ---
 
 # Alefia (Hinge, Austin)
@@ -15,4 +15,4 @@ tags:
 - [[Hinge (dating app)_1]] - `referenced_by` [EXTRACTED]
 - [[UT Austin]] - `studies_at` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Austin_Dating_+_Locals
+#graphify/document #graphify/EXTRACTED #community/Community_1

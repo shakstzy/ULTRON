@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/group-group-dhamo-narayanan.md"
 type: "document"
-community: "Dating Roster (mixed)"
+community: "Community 0"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Dating_Roster_(mixed)
+  - community/Community_0
 ---
 
 # Dhamo Uncle
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Adithya]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Dating_Roster_(mixed)
+#graphify/document #graphify/INFERRED #community/Community_0

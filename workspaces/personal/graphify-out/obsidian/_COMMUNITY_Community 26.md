@@ -1,12 +1,12 @@
 ---
 type: community
-cohesion: 0.67
+cohesion: 1.00
 members: 3
 ---
 
 # Community 26
 
-**Cohesion:** 0.67 - moderately connected
+**Cohesion:** 1.00 - tightly connected
 **Members:** 3 nodes
 
 ## Members
@@ -22,9 +22,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Dating Roster (mixed)]]
+- 3 edges to [[_COMMUNITY_Community 0]]
 
 ## Top bridge nodes
 - [[Forge (Berkeley Builder Accelerator)]] - degree 3, connects to 1 community
-- [[Jaylem Brar (UC Berkeley  NYC)_1]] - degree 2, connects to 1 community
 - [[Jeff Sei]] - degree 2, connects to 1 community
+- [[Jaylem Brar (UC Berkeley  NYC)_1]] - degree 2, connects to 1 community

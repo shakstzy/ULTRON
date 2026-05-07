@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/patrick-luna-la/2024/2024-08__patrick-luna-la.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Patrick Luna (LA)
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `discussed_with` [EXTRACTED]
 - [[Los Angeles, CA]] - `lives_in` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/EXTRACTED #community/Community_2

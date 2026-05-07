@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/vihan-bhargava-uc-berkeley-nyc/2025/2025-02__vihan-bhargava-uc-berkeley-nyc.md"
 type: "document"
-community: "NYC/USC (Akshar circle)"
+community: "Community 5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/NYC/USC_(Akshar_circle)
+  - community/Community_5
 ---
 
 # Vihan Bhargava (UC Berkeley / NYC)
@@ -16,4 +16,4 @@ tags:
 - [[New York City_1]] - `lives_in` [EXTRACTED]
 - [[UC Berkeley]] - `studies_at` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/NYC/USC_(Akshar_circle)
+#graphify/document #graphify/EXTRACTED #community/Community_5

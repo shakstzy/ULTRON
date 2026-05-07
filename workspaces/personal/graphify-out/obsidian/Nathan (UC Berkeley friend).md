@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/groups/group-adarsh-nathan-prabhat/2024/2024-09__group-adarsh-nathan-prabhat.md"
 type: "document"
-community: "UC Berkeley + a16z"
+community: "Community 3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/UC_Berkeley_+_a16z
+  - community/Community_3
 ---
 
 # Nathan (UC Berkeley friend)
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `messages_with` [EXTRACTED]
 - [[UC Berkeley]] - `studies_at` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/UC_Berkeley_+_a16z
+#graphify/document #graphify/EXTRACTED #community/Community_3

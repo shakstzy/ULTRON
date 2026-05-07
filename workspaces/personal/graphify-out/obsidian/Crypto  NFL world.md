@@ -1,11 +1,11 @@
 ---
 source_file: "None"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Crypto / NFL world
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Mychal Kendricks Malik (CryptoNFLProducer, LA)]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/INFERRED #community/Community_2

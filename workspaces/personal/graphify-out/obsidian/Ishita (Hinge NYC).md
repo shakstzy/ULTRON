@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/ishita-hinge-nyc/2025/2025-08__ishita-hinge-nyc.md"
 type: "document"
-community: "NYC/USC (Akshar circle)"
+community: "Community 5"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/NYC/USC_(Akshar_circle)
+  - community/Community_5
 ---
 
 # Ishita (Hinge NYC)
@@ -15,4 +15,4 @@ tags:
 - [[Hinge (dating app)]] - `related_to` [INFERRED]
 - [[New York City_1]] - `lives_in` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/NYC/USC_(Akshar_circle)
+#graphify/document #graphify/INFERRED #community/Community_5

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/groups/group-donny-malik/2025/2025-10__group-donny-malik.md"
 type: "document"
-community: "Prescription Songs + Music"
+community: "Community 10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prescription_Songs_+_Music
+  - community/Community_10
 ---
 
 # Malik Maat (producer/keys)
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `messages_with` [EXTRACTED]
 - [[Donny (DonnyDARKPOP, producer)]] - `co_attended` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prescription_Songs_+_Music
+#graphify/document #graphify/EXTRACTED #community/Community_10

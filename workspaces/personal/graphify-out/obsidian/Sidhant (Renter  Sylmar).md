@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/sidhant-renter-showing26/2026/2026-01__sidhant-renter-showing26.md"
 type: "document"
-community: "Rental Showings (LA)"
+community: "Community 9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Rental_Showings_(LA)
+  - community/Community_9
 ---
 
 # Sidhant (Renter / Sylmar)
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `messages_with` [EXTRACTED]
 - [[Klein Court (Adithya's rental property, Sylmar CA)]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Rental_Showings_(LA)
+#graphify/document #graphify/EXTRACTED #community/Community_9

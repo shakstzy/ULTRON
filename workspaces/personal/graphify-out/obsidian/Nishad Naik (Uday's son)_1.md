@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/nishad-naik-uday-son/2024/2024-03__nishad-naik-uday-son.md"
 type: "document"
-community: "Dating Roster (mixed)"
+community: "Community 0"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dating_Roster_(mixed)
+  - community/Community_0
 ---
 
 # Nishad Naik (Uday's son)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Adithya]] - `messages_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dating_Roster_(mixed)
+#graphify/document #graphify/EXTRACTED #community/Community_0

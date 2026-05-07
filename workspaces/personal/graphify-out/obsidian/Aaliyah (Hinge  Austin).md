@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/aaliyah-hinge-austin/2026/2026-02__aaliyah-hinge-austin.md"
 type: "document"
-community: "Hinge + AI Music Project"
+community: "Community 11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hinge_+_AI_Music_Project
+  - community/Community_11
 ---
 
 # Aaliyah (Hinge / Austin)
@@ -15,4 +15,4 @@ tags:
 - [[Austin, TX]] - `lives_in` [EXTRACTED]
 - [[Hinge (Dating App)]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hinge_+_AI_Music_Project
+#graphify/document #graphify/EXTRACTED #community/Community_11

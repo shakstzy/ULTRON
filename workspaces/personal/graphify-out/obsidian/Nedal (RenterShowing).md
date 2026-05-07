@@ -1,11 +1,11 @@
 ---
 source_file: "workspaces/personal/raw/imessage/_profiles/nedal-renter-showing.md"
 type: "document"
-community: "Dating Roster (mixed)"
+community: "Community 0"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dating_Roster_(mixed)
+  - community/Community_0
 ---
 
 # Nedal (Renter/Showing)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Adithya]] - `messages_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dating_Roster_(mixed)
+#graphify/document #graphify/EXTRACTED #community/Community_0

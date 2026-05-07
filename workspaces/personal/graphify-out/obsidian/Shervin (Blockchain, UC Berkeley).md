@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/shervin-blockchain-uc-berkeley/2025/2025-03__shervin-blockchain-uc-berkeley.md"
 type: "document"
-community: "Crypto Events + Investors"
+community: "Community 8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crypto_Events_+_Investors
+  - community/Community_8
 ---
 
 # Shervin (Blockchain, UC Berkeley)
@@ -24,4 +24,4 @@ tags:
 - [[UC Berkeley]] - `studies_at` [EXTRACTED]
 - [[intervention-4-shakti (group chat)]] - `co_attended` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crypto_Events_+_Investors
+#graphify/document #graphify/EXTRACTED #community/Community_8

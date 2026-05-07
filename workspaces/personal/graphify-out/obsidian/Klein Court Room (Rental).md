@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/cris-renter/2024/2024-11__cris-renter.md"
 type: "document"
-community: "Rental Showings (LA)"
+community: "Community 9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Rental_Showings_(LA)
+  - community/Community_9
 ---
 
 # Klein Court Room (Rental)
@@ -15,4 +15,4 @@ tags:
 - [[Celeste (Renter)]] - `related_to` [EXTRACTED]
 - [[Cris (Renter  Mexican)]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Rental_Showings_(LA)
+#graphify/document #graphify/EXTRACTED #community/Community_9

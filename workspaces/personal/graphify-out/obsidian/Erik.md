@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/groups/group-erik-pseuhas-rushil/2025/2025-06__group-erik-pseuhas-rushil.md"
 type: "document"
-community: "Dating Roster (mixed)"
+community: "Community 0"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dating_Roster_(mixed)
+  - community/Community_0
 ---
 
 # Erik
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Adithya]] - `messages_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dating_Roster_(mixed)
+#graphify/document #graphify/EXTRACTED #community/Community_0

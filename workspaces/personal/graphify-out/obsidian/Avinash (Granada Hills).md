@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/groups/group-avinash-sandeep/2025/2025-12__group-avinash-sandeep.md"
 type: "document"
-community: "Sylmar House + Range Music"
+community: "Community 17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sylmar_House_+_Range_Music
+  - community/Community_17
 ---
 
 # Avinash (Granada Hills)
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `messages_with` [EXTRACTED]
 - [[Sylmar House (13245 Klein Ct, LA)]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Sylmar_House_+_Range_Music
+#graphify/document #graphify/EXTRACTED #community/Community_17

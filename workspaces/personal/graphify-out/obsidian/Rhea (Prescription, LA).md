@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/rhea-prescription-la/2024/2024-08__rhea-prescription-la.md"
 type: "document"
-community: "Prescription Songs + Music"
+community: "Community 10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prescription_Songs_+_Music
+  - community/Community_10
 ---
 
 # Rhea (Prescription, LA)
@@ -16,4 +16,4 @@ tags:
 - [[Los Angeles, CA]] - `lives_in` [INFERRED]
 - [[Prescription Songs]] - `works_at` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prescription_Songs_+_Music
+#graphify/document #graphify/EXTRACTED #community/Community_10

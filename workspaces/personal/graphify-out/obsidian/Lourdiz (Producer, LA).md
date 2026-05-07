@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/lourdiz-producer-la/2024/2024-06__lourdiz-producer-la.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Lourdiz (Producer, LA)
@@ -16,4 +16,4 @@ tags:
 - [[Louie Gomez (Tyler Producer, LA)]] - `discussed_with` [INFERRED]
 - [[Music Production (LA)]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/INFERRED #community/Community_2

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/trevor/2025/2025-01__trevor.md"
 type: "document"
-community: "LASA Classmates"
+community: "Community 12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LASA_Classmates
+  - community/Community_12
 ---
 
 # Trevor (LASA, DC)
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `discussed_with` [EXTRACTED]
 - [[LASA (Liberal Arts and Science Academy)]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LASA_Classmates
+#graphify/document #graphify/EXTRACTED #community/Community_12

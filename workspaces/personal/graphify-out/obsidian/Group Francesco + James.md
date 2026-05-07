@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/group-group-francesco-james.md"
 type: "document"
-community: "Crypto Events + Investors"
+community: "Community 8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crypto_Events_+_Investors
+  - community/Community_8
 ---
 
 # Group: Francesco + James
@@ -15,4 +15,4 @@ tags:
 - [[Francesco Hayes (Luxxera Healthcare)]] - `mentioned_by` [EXTRACTED]
 - [[James (Cryptobitmag)]] - `mentioned_by` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crypto_Events_+_Investors
+#graphify/document #graphify/EXTRACTED #community/Community_8

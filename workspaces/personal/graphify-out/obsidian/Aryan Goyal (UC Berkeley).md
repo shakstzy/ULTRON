@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/aryan-goyal-uc-berkeley/2025/2025-02__aryan-goyal-uc-berkeley.md"
 type: "document"
-community: "Hinge + AI Music Project"
+community: "Community 11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hinge_+_AI_Music_Project
+  - community/Community_11
 ---
 
 # Aryan Goyal (UC Berkeley)
@@ -16,4 +16,4 @@ tags:
 - [[UC Berkeley]] - `studies_at` [EXTRACTED]
 - [[Vihan (NYC friend)]] - `co_attended` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hinge_+_AI_Music_Project
+#graphify/document #graphify/EXTRACTED #community/Community_11

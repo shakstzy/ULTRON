@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/mychal-kendricks-malik-crypto-nfl-producer-la/2026/2026-04__mychal-kendricks-malik-crypto-nfl-producer-la.md"
 type: "document"
-community: "Dating Roster (mixed)"
+community: "Community 0"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dating_Roster_(mixed)
+  - community/Community_0
 ---
 
 # Kalshi
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Adithya]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dating_Roster_(mixed)
+#graphify/document #graphify/EXTRACTED #community/Community_0

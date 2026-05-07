@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/memoria-xi-la/2025/2025-03__memoria-xi-la.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Daks (music producer, Memoria XI collaborator)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Memoria XI (musician, LAMD)]] - `discussed_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/EXTRACTED #community/Community_2

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/groups/unkal/2025/2025-03__unkal.md"
 type: "document"
-community: "Hinge + AI Music Project"
+community: "Community 11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hinge_+_AI_Music_Project
+  - community/Community_11
 ---
 
 # Miami Trip (planned)
@@ -17,4 +17,4 @@ tags:
 - [[Rishika (UC Berkeley)]] - `discussed_with` [EXTRACTED]
 - [[Vihan (NYC friend)]] - `discussed_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hinge_+_AI_Music_Project
+#graphify/document #graphify/EXTRACTED #community/Community_11

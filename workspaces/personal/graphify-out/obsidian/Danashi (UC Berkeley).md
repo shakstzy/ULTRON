@@ -1,11 +1,11 @@
 ---
 source_file: "workspaces/personal/raw/imessage/individuals/danashi-uc-berkeley/2026/2026-03__danashi-uc-berkeley.md"
 type: "document"
-community: "UC Berkeley + a16z"
+community: "Community 3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/UC_Berkeley_+_a16z
+  - community/Community_3
 ---
 
 # Danashi (UC Berkeley)
@@ -16,4 +16,4 @@ tags:
 - [[Nvidia GTC (San JoseSF)]] - `mentioned_by` [EXTRACTED]
 - [[UC Berkeley]] - `studies_at` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/UC_Berkeley_+_a16z
+#graphify/document #graphify/EXTRACTED #community/Community_3

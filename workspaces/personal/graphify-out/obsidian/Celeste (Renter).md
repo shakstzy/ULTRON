@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/celeste-renter-showing/2025/2025-07__celeste-renter-showing.md"
 type: "document"
-community: "Rental Showings (LA)"
+community: "Community 9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Rental_Showings_(LA)
+  - community/Community_9
 ---
 
 # Celeste (Renter)
@@ -15,4 +15,4 @@ tags:
 - [[Klein Court Room (Rental)]] - `related_to` [EXTRACTED]
 - [[Real Estate  Renting]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Rental_Showings_(LA)
+#graphify/document #graphify/EXTRACTED #community/Community_9

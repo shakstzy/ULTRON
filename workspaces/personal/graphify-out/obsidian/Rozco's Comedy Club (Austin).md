@@ -1,11 +1,11 @@
 ---
 source_file: "workspaces/personal/raw/imessage/individuals/sanvi-sister/2026/2026-05__sanvi-05__sanvi-sister.md"
 type: "document"
-community: "Sanvi (Sister)"
+community: "Community 27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sanvi_(Sister)
+  - community/Community_27
 ---
 
 # Rozco's Comedy Club (Austin)
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `co_attended` [EXTRACTED]
 - [[Sanvi (Sister)]] - `co_attended` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sanvi_(Sister)
+#graphify/document #graphify/EXTRACTED #community/Community_27

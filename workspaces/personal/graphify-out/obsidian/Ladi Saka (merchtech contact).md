@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/ladi-saka-merch-tech/2025/2025-10__ladi-saka-merch-tech.md"
 type: "document"
-community: "LA Music Industry (Prescription)"
+community: "Community 14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Music_Industry_(Prescription)
+  - community/Community_14
 ---
 
 # Ladi Saka (merch/tech contact)
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `messages_with` [EXTRACTED]
 - [[Prescription (music labelcollective LA)]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Music_Industry_(Prescription)
+#graphify/document #graphify/EXTRACTED #community/Community_14

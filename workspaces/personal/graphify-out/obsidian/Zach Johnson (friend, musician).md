@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/zach-johnson/2024/2024-03__zach-johnson.md"
 type: "document"
-community: "Bay Area + Slash"
+community: "Community 13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bay_Area_+_Slash
+  - community/Community_13
 ---
 
 # Zach Johnson (friend, musician)
@@ -18,4 +18,4 @@ tags:
 - [[Yosef Producer LA]] - `discussed_with` [EXTRACTED]
 - [[unkal (group chat)]] - `co_attended` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bay_Area_+_Slash
+#graphify/document #graphify/EXTRACTED #community/Community_13

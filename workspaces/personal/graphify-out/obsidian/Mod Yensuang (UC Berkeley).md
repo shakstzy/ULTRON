@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/group-group-maanav-mod-sid.md"
 type: "document"
-community: "UC Berkeley + a16z"
+community: "Community 3"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/UC_Berkeley_+_a16z
+  - community/Community_3
 ---
 
 # Mod Yensuang (UC Berkeley)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[UC Berkeley]] - `studies_at` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/UC_Berkeley_+_a16z
+#graphify/document #graphify/INFERRED #community/Community_3

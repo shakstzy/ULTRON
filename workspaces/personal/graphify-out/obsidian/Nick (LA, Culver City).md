@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/rushil-jha-uc-berkeley-nyc/2025/2025-09__rushil-jha-uc-berkeley-nyc.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Nick (LA, Culver City)
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `mentioned_by` [EXTRACTED]
 - [[Los Angeles, CA]] - `lives_in` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/EXTRACTED #community/Community_2

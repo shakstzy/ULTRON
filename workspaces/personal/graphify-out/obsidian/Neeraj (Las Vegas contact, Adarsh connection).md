@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/groups/group-adarsh-neeraj/2025/2025-03__group-adarsh-neeraj.md"
 type: "document"
-community: "Amsterdam Trip + Festival Crew"
+community: "Community 6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Amsterdam_Trip_+_Festival_Crew
+  - community/Community_6
 ---
 
 # Neeraj (Las Vegas contact, Adarsh connection)
@@ -14,4 +14,4 @@ tags:
 - [[Adarsh (friend, pseu crew)]] - `mentioned_by` [EXTRACTED]
 - [[Adithya]] - `messages_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Amsterdam_Trip_+_Festival_Crew
+#graphify/document #graphify/EXTRACTED #community/Community_6

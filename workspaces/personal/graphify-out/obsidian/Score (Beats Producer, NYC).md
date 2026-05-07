@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/score-beats-producer-nyc.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Score (Beats Producer, NYC)
@@ -15,4 +15,4 @@ tags:
 - [[Music Production]] - `related_to` [EXTRACTED]
 - [[Ryan (Silver Lining, LA)]] - `discussed_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/EXTRACTED #community/Community_2

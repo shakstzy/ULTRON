@@ -1,11 +1,11 @@
 ---
 source_file: "None"
 type: "document"
-community: "Rental Showings (LA)"
+community: "Community 9"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Rental_Showings_(LA)
+  - community/Community_9
 ---
 
 # Real Estate / Renting
@@ -16,4 +16,4 @@ tags:
 - [[Cris (Renter  Mexican)]] - `related_to` [INFERRED]
 - [[Darshit (Renter, Showing)]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Rental_Showings_(LA)
+#graphify/document #graphify/INFERRED #community/Community_9

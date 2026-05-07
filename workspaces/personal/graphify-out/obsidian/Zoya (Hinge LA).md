@@ -1,11 +1,11 @@
 ---
 source_file: "workspaces/personal/raw/imessage/individuals/zoya-hinge-la/2026/2026-02__zoya-hinge-la.md"
 type: "document"
-community: "Dating Roster (mixed)"
+community: "Community 0"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Dating_Roster_(mixed)
+  - community/Community_0
 ---
 
 # Zoya (Hinge LA)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Adithya]] - `discussed_with` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Dating_Roster_(mixed)
+#graphify/document #graphify/INFERRED #community/Community_0

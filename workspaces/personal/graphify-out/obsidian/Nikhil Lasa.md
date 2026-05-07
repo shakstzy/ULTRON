@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/nikhil-lasa/2024/2024-10__nikhil-lasa.md"
 type: "document"
-community: "LASA Classmates"
+community: "Community 12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LASA_Classmates
+  - community/Community_12
 ---
 
 # Nikhil Lasa
@@ -17,4 +17,4 @@ tags:
 - [[Parth]] - `discussed_with` [INFERRED]
 - [[Parth Croft Austin]] - `discussed_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LASA_Classmates
+#graphify/document #graphify/EXTRACTED #community/Community_12

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/groups/group-diana-keith-larry/2025/2025-04__group-diana-keith-larry.md"
 type: "document"
-community: "LA Music Industry (Prescription)"
+community: "Community 14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Music_Industry_(Prescription)
+  - community/Community_14
 ---
 
 # Diana (Prescription Music lawyer)
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `messages_with` [EXTRACTED]
 - [[Prescription (music project)]] - `works_at` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Music_Industry_(Prescription)
+#graphify/document #graphify/EXTRACTED #community/Community_14

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/anthony-realtor-la/2024/2024-05__anthony-realtor-la.md"
 type: "document"
-community: "Sylmar Property + Tenants"
+community: "Community 4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sylmar_Property_+_Tenants
+  - community/Community_4
 ---
 
 # Anthony (Realtor, LA)
@@ -16,4 +16,4 @@ tags:
 - [[Los Angeles, CA]] - `lives_in` [INFERRED]
 - [[Real Estate LA]] - `works_at` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Sylmar_Property_+_Tenants
+#graphify/document #graphify/EXTRACTED #community/Community_4

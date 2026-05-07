@@ -1,11 +1,11 @@
 ---
 source_file: "None"
 type: "document"
-community: "Austin Dating + Locals"
+community: "Community 1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Austin_Dating_+_Locals
+  - community/Community_1
 ---
 
 # Dirty 6th (Austin)
@@ -14,4 +14,4 @@ tags:
 - [[Austin, TX_1]] - `related_to` [EXTRACTED]
 - [[Jesse (met on cruise  Dirty 6th)]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Austin_Dating_+_Locals
+#graphify/document #graphify/EXTRACTED #community/Community_1

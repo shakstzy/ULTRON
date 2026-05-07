@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/randy-mychal-kendricks-nyc/2025/2025-06__randy-mychal-kendricks-nyc.md"
 type: "document"
-community: "NYC/USC (Akshar circle)"
+community: "Community 5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/NYC/USC_(Akshar_circle)
+  - community/Community_5
 ---
 
 # Randy (NYC, crypto)
@@ -15,4 +15,4 @@ tags:
 - [[New York City_1]] - `lives_in` [INFERRED]
 - [[Permissionless IV Conference (Brooklyn, June 2025)]] - `co_attended` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/NYC/USC_(Akshar_circle)
+#graphify/document #graphify/EXTRACTED #community/Community_5

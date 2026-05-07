@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/group-group-nikhil-noah-parth.md"
 type: "document"
-community: "LASA Classmates"
+community: "Community 12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LASA_Classmates
+  - community/Community_12
 ---
 
 # Parth Croft Austin
@@ -17,4 +17,4 @@ tags:
 - [[Group Griffin + Nikhil + Noah + Parth (Austin)]] - `mentioned_by` [EXTRACTED]
 - [[Nikhil Lasa]] - `discussed_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LASA_Classmates
+#graphify/document #graphify/EXTRACTED #community/Community_12

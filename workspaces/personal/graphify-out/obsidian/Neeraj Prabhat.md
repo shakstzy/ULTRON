@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/neeraj-prabhat-adarsh-uc-berkeley/2025/2025-03__neeraj-prabhat-adarsh-uc-berkeley.md"
 type: "document"
-community: "Dating Roster (mixed)"
+community: "Community 0"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dating_Roster_(mixed)
+  - community/Community_0
 ---
 
 # Neeraj Prabhat
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Adithya]] - `messages_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dating_Roster_(mixed)
+#graphify/document #graphify/EXTRACTED #community/Community_0

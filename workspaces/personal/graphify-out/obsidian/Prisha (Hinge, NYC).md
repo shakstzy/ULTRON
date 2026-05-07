@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/prisha-hinge-nyc/2026/2026-02__prisha-hinge-nyc.md"
 type: "document"
-community: "NYC/USC (Akshar circle)"
+community: "Community 5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/NYC/USC_(Akshar_circle)
+  - community/Community_5
 ---
 
 # Prisha (Hinge, NYC)
@@ -15,4 +15,4 @@ tags:
 - [[Hinge (dating app)]] - `related_to` [INFERRED]
 - [[New York City_1]] - `lives_in` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/NYC/USC_(Akshar_circle)
+#graphify/document #graphify/EXTRACTED #community/Community_5

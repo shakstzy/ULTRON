@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/groups/group-pseuhas-rushil-saif/2025/2025-03__group-prabhat-rushil-saif.md"
 type: "document"
-community: "Amsterdam Trip + Festival Crew"
+community: "Community 6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Amsterdam_Trip_+_Festival_Crew
+  - community/Community_6
 ---
 
 # Saif Ali
@@ -18,4 +18,4 @@ tags:
 - [[Rushil Jha]] - `co_attended` [EXTRACTED]
 - [[unkal (group chat)]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Amsterdam_Trip_+_Festival_Crew
+#graphify/document #graphify/EXTRACTED #community/Community_6

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/mack-post-sound-factory-la.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Mack (Post Sound Factory LA)
@@ -15,4 +15,4 @@ tags:
 - [[Los Angeles, CA]] - `lives_in` [INFERRED]
 - [[Music Production (LA)]] - `works_at` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/INFERRED #community/Community_2

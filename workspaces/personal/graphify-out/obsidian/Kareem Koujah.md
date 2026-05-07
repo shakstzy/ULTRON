@@ -1,11 +1,11 @@
 ---
 source_file: "workspaces/personal/raw/imessage/individuals/kareem-koujah-uc-berkeley/2024/2024-05__kareem-koujah-uc-berkeley.md"
 type: "document"
-community: "NYC/USC (Akshar circle)"
+community: "Community 5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/NYC/USC_(Akshar_circle)
+  - community/Community_5
 ---
 
 # Kareem Koujah
@@ -15,4 +15,4 @@ tags:
 - [[New York City_1]] - `lives_in` [EXTRACTED]
 - [[UC Berkeley]] - `studies_at` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/NYC/USC_(Akshar_circle)
+#graphify/document #graphify/EXTRACTED #community/Community_5

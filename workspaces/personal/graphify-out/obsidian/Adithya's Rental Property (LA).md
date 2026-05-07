@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/groups/deus-shak-verb/2024/2024-09__deus-shak-verb.md"
 type: "document"
-community: "Sylmar Property + Tenants"
+community: "Community 4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sylmar_Property_+_Tenants
+  - community/Community_4
 ---
 
 # Adithya's Rental Property (LA)
@@ -17,4 +17,4 @@ tags:
 - [[Ziggy (Renter Showing)]] - `related_to` [INFERRED]
 - [[Zubair (Renter Showing)]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Sylmar_Property_+_Tenants
+#graphify/document #graphify/EXTRACTED #community/Community_4

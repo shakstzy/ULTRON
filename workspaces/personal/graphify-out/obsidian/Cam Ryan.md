@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/cam-ryan-producer-la/2025/2025-12__cam-ryan-producer-la.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Cam Ryan
@@ -16,4 +16,4 @@ tags:
 - [[Music Production]] - `related_to` [EXTRACTED]
 - [[Prescription Studio (LA)]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/EXTRACTED #community/Community_2

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/clint-gibbs-la/2024/2024-07__clint-gibbs-la.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Clint Gibbs (LA)
@@ -16,4 +16,4 @@ tags:
 - [[Luke (Music Contact)]] - `related_to` [EXTRACTED]
 - [[Prescription Studio (LA)]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/EXTRACTED #community/Community_2

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/thana-mclain-lasa/2025/2025-01__thana-mclain-lasa.md"
 type: "document"
-community: "LASA Classmates"
+community: "Community 12"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/LASA_Classmates
+  - community/Community_12
 ---
 
 # LASA (Liberal Arts and Science Academy)
@@ -41,4 +41,4 @@ tags:
 - [[Thana McLain (LASA)]] - `related_to` [EXTRACTED]
 - [[Trevor (LASA, DC)]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/LASA_Classmates
+#graphify/document #graphify/INFERRED #community/Community_12

@@ -1,11 +1,11 @@
 ---
 source_file: "workspaces/personal/raw/imessage/individuals/zaos-prabhat-uc-berkeley-la/2024/2024-03__zaos-prabhat-uc-berkeley-la.md"
 type: "document"
-community: "UC Berkeley + a16z"
+community: "Community 3"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/UC_Berkeley_+_a16z
+  - community/Community_3
 ---
 
 # UC Berkeley
@@ -139,4 +139,4 @@ tags:
 - [[Yash Purohit (UC Berkeley)]] - `studies_at` [INFERRED]
 - [[Zaos Prabhat]] - `studies_at` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/UC_Berkeley_+_a16z
+#graphify/document #graphify/INFERRED #community/Community_3

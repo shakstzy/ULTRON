@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/maanav-khaitan-uc-berkeley-nyc/2025/2025-05__maanav-khaitan-uc-berkeley-nyc.md"
 type: "document"
-community: "UC Berkeley + a16z"
+community: "Community 3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/UC_Berkeley_+_a16z
+  - community/Community_3
 ---
 
 # Synapse (Adithya's startup)
@@ -21,4 +21,4 @@ tags:
 - [[Nova Team]] - `related_to` [EXTRACTED]
 - [[The House Fund (VC)]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/UC_Berkeley_+_a16z
+#graphify/document #graphify/EXTRACTED #community/Community_3

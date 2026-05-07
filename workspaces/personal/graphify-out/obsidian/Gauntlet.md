@@ -1,11 +1,11 @@
 ---
 source_file: "workspaces/personal/raw/imessage/_profiles/george-beall-bd-crypto-gauntlet-la.md"
 type: "document"
-community: "Crypto/Web3 Network"
+community: "Community 7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crypto/Web3_Network
+  - community/Community_7
 ---
 
 # Gauntlet
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[George Beall (BD Crypto Gauntlet)]] - `works_at` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crypto/Web3_Network
+#graphify/document #graphify/EXTRACTED #community/Community_7

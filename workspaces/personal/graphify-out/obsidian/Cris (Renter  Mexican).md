@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/cris-renter/2024/2024-11__cris-renter.md"
 type: "document"
-community: "Rental Showings (LA)"
+community: "Community 9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Rental_Showings_(LA)
+  - community/Community_9
 ---
 
 # Cris (Renter / Mexican)
@@ -16,4 +16,4 @@ tags:
 - [[Real Estate  Rental]] - `discussed_with` [INFERRED]
 - [[Real Estate  Renting]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Rental_Showings_(LA)
+#graphify/document #graphify/EXTRACTED #community/Community_9

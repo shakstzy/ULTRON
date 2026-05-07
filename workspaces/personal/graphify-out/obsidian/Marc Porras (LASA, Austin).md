@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/marc-porras-lasa/2025/2025-01__marc-porras-lasa.md"
 type: "document"
-community: "LASA Classmates"
+community: "Community 12"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/LASA_Classmates
+  - community/Community_12
 ---
 
 # Marc Porras (LASA, Austin)
@@ -16,4 +16,4 @@ tags:
 - [[Matthew Lorber (LASA, LA)]] - `co_attended` [INFERRED]
 - [[Max Martin (LASA, Austin)]] - `co_attended` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/LASA_Classmates
+#graphify/document #graphify/INFERRED #community/Community_12

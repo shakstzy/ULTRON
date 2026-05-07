@@ -1,11 +1,11 @@
 ---
 source_file: "None"
 type: "document"
-community: "NYC/USC (Akshar circle)"
+community: "Community 5"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/NYC/USC_(Akshar_circle)
+  - community/Community_5
 ---
 
 # Finality Capital
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[NeilNick (Finality Capital, NYC)]] - `works_at` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/NYC/USC_(Akshar_circle)
+#graphify/document #graphify/INFERRED #community/Community_5

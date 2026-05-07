@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/group-group-covaughn-mychal-randy.md"
 type: "document"
-community: "Amsterdam Trip + Festival Crew"
+community: "Community 6"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Amsterdam_Trip_+_Festival_Crew
+  - community/Community_6
 ---
 
 # Covaughn AthleteCoin
@@ -15,4 +15,4 @@ tags:
 - [[Blockchain Crypto]] - `discussed_with` [INFERRED]
 - [[Mychal Kendricks (AthleteCoin)]] - `co_attended` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Amsterdam_Trip_+_Festival_Crew
+#graphify/document #graphify/INFERRED #community/Community_6

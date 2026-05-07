@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/avery-abraham-stanford-biotech-nyc/2025/2025-10__avery-abraham-stanford-biotech-nyc.md"
 type: "document"
-community: "Crypto/Web3 Network"
+community: "Community 7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crypto/Web3_Network
+  - community/Community_7
 ---
 
 # Avery Abraham (Stanford Biotech, NYC)
@@ -22,4 +22,4 @@ tags:
 - [[Will Athanas]] - `discussed_with` [EXTRACTED]
 - [[Will Avery (Crypto)]] - `co_attended` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crypto/Web3_Network
+#graphify/document #graphify/EXTRACTED #community/Community_7

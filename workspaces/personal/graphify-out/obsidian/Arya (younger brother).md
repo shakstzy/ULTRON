@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/groups/group-arya/2025/2025-12__group-arya.md"
 type: "document"
-community: "Sylmar Property + Tenants"
+community: "Community 4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sylmar_Property_+_Tenants
+  - community/Community_4
 ---
 
 # Arya (younger brother)
@@ -21,4 +21,4 @@ tags:
 - [[Mychal]] - `related_to` [INFERRED]
 - [[Rushil]] - `discussed_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sylmar_Property_+_Tenants
+#graphify/document #graphify/EXTRACTED #community/Community_4

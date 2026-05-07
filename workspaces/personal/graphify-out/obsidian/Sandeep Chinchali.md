@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/sandeep-chinchali-austin/2024/2024-07__sandeep-chinchali-austin.md"
 type: "document"
-community: "Startup Accelerators"
+community: "Community 15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Startup_Accelerators
+  - community/Community_15
 ---
 
 # Sandeep Chinchali
@@ -22,4 +22,4 @@ tags:
 - [[Synapse (AI evaluation startup)]] - `discussed_with` [EXTRACTED]
 - [[a16z Speedrun]] - `discussed_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Startup_Accelerators
+#graphify/document #graphify/EXTRACTED #community/Community_15

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/varshni-nyc/2025/2025-06__varshni-nyc.md"
 type: "document"
-community: "NYC/USC (Akshar circle)"
+community: "Community 5"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/NYC/USC_(Akshar_circle)
+  - community/Community_5
 ---
 
 # New York City
@@ -103,4 +103,4 @@ tags:
 - [[Vina (NYC)]] - `lives_in` [EXTRACTED]
 - [[Will Slatton (NYC)]] - `lives_in` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/NYC/USC_(Akshar_circle)
+#graphify/document #graphify/INFERRED #community/Community_5

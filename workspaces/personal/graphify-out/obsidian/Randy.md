@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/groups/group-covaughn-mychal-randy/2024/2024-05__group-covaughn-mychal-randy.md"
 type: "document"
-community: "Sylmar Property + Tenants"
+community: "Community 4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sylmar_Property_+_Tenants
+  - community/Community_4
 ---
 
 # Randy
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Mychal]] - `discussed_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sylmar_Property_+_Tenants
+#graphify/document #graphify/EXTRACTED #community/Community_4

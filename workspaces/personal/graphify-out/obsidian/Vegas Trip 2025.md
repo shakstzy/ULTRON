@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/groups/23109/2025/2025-02__23109.md"
 type: "document"
-community: "UC Berkeley + a16z"
+community: "Community 3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/UC_Berkeley_+_a16z
+  - community/Community_3
 ---
 
 # Vegas Trip 2025
@@ -15,4 +15,4 @@ tags:
 - [[Ankit]] - `related_to` [EXTRACTED]
 - [[Rishika Gorai]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/UC_Berkeley_+_a16z
+#graphify/document #graphify/EXTRACTED #community/Community_3

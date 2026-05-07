@@ -1,11 +1,11 @@
 ---
 source_file: "None"
 type: "document"
-community: "Crypto Events + Investors"
+community: "Community 8"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Crypto_Events_+_Investors
+  - community/Community_8
 ---
 
 # Blockchain
@@ -15,4 +15,4 @@ tags:
 - [[James (Cryptobitmag)]] - `related_to` [INFERRED]
 - [[Jay (Blockchain  UC Berkeley)]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Crypto_Events_+_Investors
+#graphify/document #graphify/INFERRED #community/Community_8

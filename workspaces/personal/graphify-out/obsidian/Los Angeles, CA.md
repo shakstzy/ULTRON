@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/shevanti-hinge-la/2026/2026-02__shevanti-hinge-la.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Los Angeles, CA
@@ -188,4 +188,4 @@ tags:
 - [[Wes Cyphers (Tyler Perry Studios)]] - `lives_in` [EXTRACTED]
 - [[Yosef Producer LA]] - `lives_in` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/INFERRED #community/Community_2

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/divyesh-khatri-uc-berkeley/2025/2025-06__divyesh-khatri-uc-berkeley.md"
 type: "document"
-community: "Bay Area + Slash"
+community: "Community 13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bay_Area_+_Slash
+  - community/Community_13
 ---
 
 # Divyesh Khatri
@@ -21,4 +21,4 @@ tags:
 - [[UC Berkeley]] - `studies_at` [INFERRED]
 - [[UC Berkeley  Stanford]] - `studies_at` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Bay_Area_+_Slash
+#graphify/document #graphify/EXTRACTED #community/Community_13

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/johny-hadar-producer-la/2024/2024-03__johny-hadar-producer-la.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Johny Hadar (Producer, LA)
@@ -18,4 +18,4 @@ tags:
 - [[Music Production]] - `works_at` [INFERRED]
 - [[Music Production (LA)]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/INFERRED #community/Community_2

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/group-group-ryan-vitals.md"
 type: "document"
-community: "Prescription Songs + Music"
+community: "Community 10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prescription_Songs_+_Music
+  - community/Community_10
 ---
 
 # Vitals Producer LA
@@ -16,4 +16,4 @@ tags:
 - [[Music Production]] - `related_to` [EXTRACTED]
 - [[Ryan Ogren]] - `discussed_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prescription_Songs_+_Music
+#graphify/document #graphify/EXTRACTED #community/Community_10

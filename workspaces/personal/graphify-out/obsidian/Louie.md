@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/groups/group-louie-tyler-yosef/2025/2025-11__group-louie-tyler-yosef.md"
 type: "document"
-community: "Prescription Songs + Music"
+community: "Community 10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prescription_Songs_+_Music
+  - community/Community_10
 ---
 
 # Louie
@@ -15,4 +15,4 @@ tags:
 - [[Tyler Sheppard (LA, music producer)]] - `co_attended` [EXTRACTED]
 - [[Yosef (Producer, LA)]] - `co_attended` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prescription_Songs_+_Music
+#graphify/document #graphify/EXTRACTED #community/Community_10

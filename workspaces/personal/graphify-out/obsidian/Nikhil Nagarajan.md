@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/nikhil-nagarajan-bay-area/2025/2025-05__nikhil-nagarajan-bay-area.md"
 type: "document"
-community: "UC Berkeley + a16z"
+community: "Community 3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/UC_Berkeley_+_a16z
+  - community/Community_3
 ---
 
 # Nikhil Nagarajan
@@ -16,4 +16,4 @@ tags:
 - [[Rylen Patel]] - `discussed_with` [EXTRACTED]
 - [[UC Berkeley]] - `mentioned_by` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/UC_Berkeley_+_a16z
+#graphify/document #graphify/EXTRACTED #community/Community_3

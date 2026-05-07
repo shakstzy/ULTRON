@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/nivetha-hinge-sf/2025/2025-07__nivetha-hinge-sf.md"
 type: "document"
-community: "Bay Area Family"
+community: "Community 20"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Bay_Area_Family
+  - community/Community_20
 ---
 
 # Nivetha (Hinge/SF)
@@ -15,4 +15,4 @@ tags:
 - [[Bay Area]] - `lives_in` [INFERRED]
 - [[Hinge (dating app)]] - `mentioned_by` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Bay_Area_Family
+#graphify/document #graphify/INFERRED #community/Community_20

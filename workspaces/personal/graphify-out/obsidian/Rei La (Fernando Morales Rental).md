@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/rei-la-fernando-morales-rental.md"
 type: "document"
-community: "Sylmar Property + Tenants"
+community: "Community 4"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Sylmar_Property_+_Tenants
+  - community/Community_4
 ---
 
 # Rei La (Fernando Morales Rental)
@@ -15,4 +15,4 @@ tags:
 - [[Los Angeles, CA]] - `lives_in` [INFERRED]
 - [[Rental Property]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Sylmar_Property_+_Tenants
+#graphify/document #graphify/INFERRED #community/Community_4

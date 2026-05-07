@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/jae-hinge-sd/2026/2026-03__jae-hinge-sd.md"
 type: "document"
-community: "Bay Area + Slash"
+community: "Community 13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bay_Area_+_Slash
+  - community/Community_13
 ---
 
 # Jae (Hinge SD)
@@ -15,4 +15,4 @@ tags:
 - [[Hinge (dating app)]] - `related_to` [INFERRED]
 - [[San Francisco]] - `lives_in` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bay_Area_+_Slash
+#graphify/document #graphify/EXTRACTED #community/Community_13

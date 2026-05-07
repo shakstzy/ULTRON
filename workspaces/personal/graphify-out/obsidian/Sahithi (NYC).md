@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/sahithi-nyc/2025/2025-07__sahithi-nyc.md"
 type: "document"
-community: "NYC/USC (Akshar circle)"
+community: "Community 5"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/NYC/USC_(Akshar_circle)
+  - community/Community_5
 ---
 
 # Sahithi (NYC)
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `mentioned_by` [INFERRED]
 - [[New York City_1]] - `lives_in` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/NYC/USC_(Akshar_circle)
+#graphify/document #graphify/INFERRED #community/Community_5

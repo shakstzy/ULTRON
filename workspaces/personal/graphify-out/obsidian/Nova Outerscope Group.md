@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/group-nova-outerscope.md"
 type: "document"
-community: "Crypto Events + Investors"
+community: "Community 8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crypto_Events_+_Investors
+  - community/Community_8
 ---
 
 # Nova Outerscope Group
@@ -17,4 +17,4 @@ tags:
 - [[Malhaar (Nova)]] - `related_to` [EXTRACTED]
 - [[Nishka (NOVA)]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crypto_Events_+_Investors
+#graphify/document #graphify/EXTRACTED #community/Community_8

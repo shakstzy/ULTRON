@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/jim-edmunds/2024/2024-06__jim-edmunds.md"
 type: "document"
-community: "Prescription Songs + Music"
+community: "Community 10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prescription_Songs_+_Music
+  - community/Community_10
 ---
 
 # Luke (Music contact / LA)
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `mentioned_by` [EXTRACTED]
 - [[Jim Edmunds (Music-AI  NY)]] - `discussed_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prescription_Songs_+_Music
+#graphify/document #graphify/EXTRACTED #community/Community_10

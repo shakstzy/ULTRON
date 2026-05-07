@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/philip-liu-avax/2026/2026-03__philip-liu-avax.md"
 type: "document"
-community: "Bay Area + Slash"
+community: "Community 13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bay_Area_+_Slash
+  - community/Community_13
 ---
 
 # Philip Liu (Avax)
@@ -16,4 +16,4 @@ tags:
 - [[Crypto  Web3]] - `related_to` [INFERRED]
 - [[Micron Conference (Palo Alto, 2026-03)]] - `co_attended` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bay_Area_+_Slash
+#graphify/document #graphify/EXTRACTED #community/Community_13

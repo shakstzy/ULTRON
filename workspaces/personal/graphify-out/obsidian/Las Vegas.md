@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/risheek-sammys-uc-berkeley-nyc/2025/2025-03__risheek-sammys-uc-berkeley-nyc.md"
 type: "document"
-community: "NYC/USC (Akshar circle)"
+community: "Community 5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/NYC/USC_(Akshar_circle)
+  - community/Community_5
 ---
 
 # Las Vegas
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `co_attended` [EXTRACTED]
 - [[Risheek (Sammy's, UC Berkeley, NYC)]] - `co_attended` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/NYC/USC_(Akshar_circle)
+#graphify/document #graphify/EXTRACTED #community/Community_5

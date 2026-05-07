@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/evan-layer/2025/2025-08__evan-layer.md"
 type: "document"
-community: "Crypto/Web3 Network"
+community: "Community 7"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Crypto/Web3_Network
+  - community/Community_7
 ---
 
 # Ondo Finance
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Evan Layer]] - `works_at` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Crypto/Web3_Network
+#graphify/document #graphify/INFERRED #community/Community_7

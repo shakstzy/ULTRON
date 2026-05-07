@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/bryce-yeazell-la/2024/2024-10__bryce-yeazell-la.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Caltech
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Bryce Yeazell (LACaltech)]] - `studies_at` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/EXTRACTED #community/Community_2

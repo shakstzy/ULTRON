@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/sam-garcia/2026/2026-03__sam-garcia.md"
 type: "document"
-community: "Sylmar Property + Tenants"
+community: "Community 4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sylmar_Property_+_Tenants
+  - community/Community_4
 ---
 
 # Dravin
@@ -15,4 +15,4 @@ tags:
 - [[Arya (younger brother)]] - `related_to` [EXTRACTED]
 - [[Austin, TX]] - `lives_in` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sylmar_Property_+_Tenants
+#graphify/document #graphify/EXTRACTED #community/Community_4

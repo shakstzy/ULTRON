@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/kevo-prescription-producer-la/2025/2025-06__kevo-prescription-producer-la.md"
 type: "document"
-community: "LA Music Industry (Prescription)"
+community: "Community 14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Music_Industry_(Prescription)
+  - community/Community_14
 ---
 
 # Haan (music contact)
@@ -16,4 +16,4 @@ tags:
 - [[Prescription (Recording Studio, LA)]] - `related_to` [INFERRED]
 - [[Prescription (music labelcollective LA)]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Music_Industry_(Prescription)
+#graphify/document #graphify/EXTRACTED #community/Community_14

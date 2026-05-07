@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/groups/group-amit-avik-chance/2025/2025-01__group-amit-avik-chance.md"
 type: "document"
-community: "Dating Roster (mixed)"
+community: "Community 0"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dating_Roster_(mixed)
+  - community/Community_0
 ---
 
 # Home Slice Pizza (Austin)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Adithya]] - `co_attended` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dating_Roster_(mixed)
+#graphify/document #graphify/EXTRACTED #community/Community_0

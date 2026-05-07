@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/paige-hinge-sd/2026/2026-03__paige-hinge-sd.md"
 type: "document"
-community: "Dating Roster (mixed)"
+community: "Community 0"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dating_Roster_(mixed)
+  - community/Community_0
 ---
 
 # Paige (Hinge/Tinder SD)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Adithya]] - `messages_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dating_Roster_(mixed)
+#graphify/document #graphify/EXTRACTED #community/Community_0

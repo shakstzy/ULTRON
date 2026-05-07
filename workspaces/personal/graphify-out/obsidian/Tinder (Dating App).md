@@ -1,11 +1,11 @@
 ---
 source_file: "None"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Tinder (Dating App)
@@ -14,4 +14,4 @@ tags:
 - [[Alejandra (Tinder, LA)]] - `mentioned_by` [INFERRED]
 - [[Anna (Tinder, LA)]] - `mentioned_by` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/INFERRED #community/Community_2

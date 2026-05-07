@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/groups/group-matt-ryan-score/2024/2024-04__group-matt-ryan-score.md"
 type: "document"
-community: "Dating Roster (mixed)"
+community: "Community 0"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dating_Roster_(mixed)
+  - community/Community_0
 ---
 
 # Warm Audio (gear brand)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Adithya]] - `mentioned_by` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dating_Roster_(mixed)
+#graphify/document #graphify/EXTRACTED #community/Community_0

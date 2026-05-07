@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/brandon-co-beats-la/2024/2024-03__brandon-co-beats-la.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Brandon Co (beat producer, LA)
@@ -16,4 +16,4 @@ tags:
 - [[Los Angeles, CA]] - `lives_in` [EXTRACTED]
 - [[Music Production]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/EXTRACTED #community/Community_2

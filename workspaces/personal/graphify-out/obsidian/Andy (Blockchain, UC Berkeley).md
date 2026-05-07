@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/andy-blockchain-uc-berkeley/2025/2025-04__andy-blockchain-uc-berkeley.md"
 type: "document"
-community: "Crypto/Web3 Network"
+community: "Community 7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crypto/Web3_Network
+  - community/Community_7
 ---
 
 # Andy (Blockchain, UC Berkeley)
@@ -16,4 +16,4 @@ tags:
 - [[Crypto]] - `mentioned_by` [INFERRED]
 - [[UC Berkeley]] - `studies_at` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crypto/Web3_Network
+#graphify/document #graphify/EXTRACTED #community/Community_7

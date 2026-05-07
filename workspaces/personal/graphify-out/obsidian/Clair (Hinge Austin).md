@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/clair-hinge-austin/2025/2025-08__clair-hinge-austin.md"
 type: "document"
-community: "Hinge + AI Music Project"
+community: "Community 11"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Hinge_+_AI_Music_Project
+  - community/Community_11
 ---
 
 # Clair (Hinge Austin)
@@ -15,4 +15,4 @@ tags:
 - [[Austin, TX]] - `lives_in` [INFERRED]
 - [[Hinge (Dating App)]] - `mentioned_by` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Hinge_+_AI_Music_Project
+#graphify/document #graphify/INFERRED #community/Community_11

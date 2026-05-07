@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/anika-hinge-austin-4148/2025/2025-03__anika-hinge-austin-4148.md"
 type: "document"
-community: "Austin Dating + Locals"
+community: "Community 1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Austin_Dating_+_Locals
+  - community/Community_1
 ---
 
 # Anika (Hinge Austin 4148)
@@ -16,4 +16,4 @@ tags:
 - [[Hinge (dating app)]] - `mentioned_by` [INFERRED]
 - [[Zilker Park (Austin)]] - `mentioned_by` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Austin_Dating_+_Locals
+#graphify/document #graphify/EXTRACTED #community/Community_1

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/paul-renter-showing26/2026/2026-03__paul-renter-showing26.md"
 type: "document"
-community: "Rental Showings (LA)"
+community: "Community 9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Rental_Showings_(LA)
+  - community/Community_9
 ---
 
 # Paul (Renter Showing 2026)
@@ -15,4 +15,4 @@ tags:
 - [[Klein StreetCourt Property]] - `related_to` [EXTRACTED]
 - [[Real Estate  Rentals]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Rental_Showings_(LA)
+#graphify/document #graphify/EXTRACTED #community/Community_9

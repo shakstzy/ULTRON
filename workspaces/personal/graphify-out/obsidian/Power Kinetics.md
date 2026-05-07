@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/mychal-kendricks-malik-crypto-nfl-producer-la/2026/2026-03__mychal-kendricks-malik-crypto-nfl-producer-la.md"
 type: "document"
-community: "Crypto/Web3 Network"
+community: "Community 7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crypto/Web3_Network
+  - community/Community_7
 ---
 
 # Power Kinetics
@@ -16,4 +16,4 @@ tags:
 - [[Synapse Web3]] - `related_to` [INFERRED]
 - [[Zach (Power Kinetics Engineer)]] - `works_at` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crypto/Web3_Network
+#graphify/document #graphify/EXTRACTED #community/Community_7

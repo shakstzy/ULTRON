@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/malhaar-nova/2025/2025-11__malhaar-nova.md"
 type: "document"
-community: "Crypto Events + Investors"
+community: "Community 8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crypto_Events_+_Investors
+  - community/Community_8
 ---
 
 # Malhaar (Nova)
@@ -17,4 +17,4 @@ tags:
 - [[Nova Outerscope Group]] - `related_to` [EXTRACTED]
 - [[Nova Team]] - `works_at` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crypto_Events_+_Investors
+#graphify/document #graphify/EXTRACTED #community/Community_8

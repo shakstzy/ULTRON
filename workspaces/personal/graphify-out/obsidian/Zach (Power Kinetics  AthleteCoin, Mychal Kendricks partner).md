@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/zach-mychal-kendricks-athletecoin/2026/2026-02__zach-mychal-kendricks-athletecoin.md"
 type: "document"
-community: "Crypto/Web3 Network"
+community: "Community 7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crypto/Web3_Network
+  - community/Community_7
 ---
 
 # Zach (Power Kinetics / AthleteCoin, Mychal Kendricks partner)
@@ -15,4 +15,4 @@ tags:
 - [[AthleteCoin]] - `works_at` [INFERRED]
 - [[Mychal Kendricks (AthleteCoin)]] - `works_at` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crypto/Web3_Network
+#graphify/document #graphify/EXTRACTED #community/Community_7

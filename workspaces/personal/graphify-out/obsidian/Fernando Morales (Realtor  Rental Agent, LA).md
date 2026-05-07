@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/rei-la-fernando-morales-rental/2024/2024-06__rei-la-fernando-morales-rental.md"
 type: "document"
-community: "Rental Showings (LA)"
+community: "Community 9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Rental_Showings_(LA)
+  - community/Community_9
 ---
 
 # Fernando Morales (Realtor / Rental Agent, LA)
@@ -15,4 +15,4 @@ tags:
 - [[Klein Court (Adithya's rental property, Sylmar CA)]] - `related_to` [EXTRACTED]
 - [[Real Estate  Rental]] - `discussed_with` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Rental_Showings_(LA)
+#graphify/document #graphify/EXTRACTED #community/Community_9

@@ -1,11 +1,11 @@
 ---
 source_file: "workspaces/personal/raw/imessage/_profiles/group-group-abraham-avery.md"
 type: "document"
-community: "NYC/USC (Akshar circle)"
+community: "Community 5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/NYC/USC_(Akshar_circle)
+  - community/Community_5
 ---
 
 # LightNode Ventures
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Abraham (Crypto  LightNode Ventures, LA)]] - `works_at` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/NYC/USC_(Akshar_circle)
+#graphify/document #graphify/EXTRACTED #community/Community_5

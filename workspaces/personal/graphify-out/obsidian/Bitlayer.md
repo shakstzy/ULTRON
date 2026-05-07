@@ -1,11 +1,11 @@
 ---
 source_file: "workspaces/personal/raw/imessage/_profiles/georg-bitlayer.md"
 type: "document"
-community: "Crypto/Web3 Network"
+community: "Community 7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crypto/Web3_Network
+  - community/Community_7
 ---
 
 # Bitlayer
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Georg (Bitlayer)]] - `works_at` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crypto/Web3_Network
+#graphify/document #graphify/EXTRACTED #community/Community_7

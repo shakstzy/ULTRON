@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/filip-evan-friend/2025/2025-01__filip-evan-friend.md"
 type: "document"
-community: "Sylmar Property + Tenants"
+community: "Community 4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sylmar_Property_+_Tenants
+  - community/Community_4
 ---
 
 # Filip (Evan's friend, LA)
@@ -17,4 +17,4 @@ tags:
 - [[Los Angeles, CA]] - `lives_in` [INFERRED]
 - [[swol-patrol (LA hangout group)]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sylmar_Property_+_Tenants
+#graphify/document #graphify/EXTRACTED #community/Community_4

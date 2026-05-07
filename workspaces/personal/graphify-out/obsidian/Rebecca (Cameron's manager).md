@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/groups/group-cameron-mychal-rebecca/2026/2026-05__group-cameron-mychal-rebecca.md"
 type: "document"
-community: "Sylmar Property + Tenants"
+community: "Community 4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sylmar_Property_+_Tenants
+  - community/Community_4
 ---
 
 # Rebecca (Cameron's manager)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Cameron]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sylmar_Property_+_Tenants
+#graphify/document #graphify/EXTRACTED #community/Community_4

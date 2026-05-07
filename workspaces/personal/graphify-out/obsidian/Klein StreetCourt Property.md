@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/noah-renter/2024/2024-06__noah-renter.md"
 type: "document"
-community: "Rental Showings (LA)"
+community: "Community 9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Rental_Showings_(LA)
+  - community/Community_9
 ---
 
 # Klein Street/Court Property
@@ -17,4 +17,4 @@ tags:
 - [[Paul (Renter Showing 2026)]] - `related_to` [EXTRACTED]
 - [[Perla (renter prospect)]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Rental_Showings_(LA)
+#graphify/document #graphify/EXTRACTED #community/Community_9

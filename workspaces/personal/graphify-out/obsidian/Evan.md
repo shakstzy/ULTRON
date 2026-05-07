@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/groups/group-evan-noah-2/2025/2025-01__group-evan-noah-2.md"
 type: "document"
-community: "Sylmar Property + Tenants"
+community: "Community 4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sylmar_Property_+_Tenants
+  - community/Community_4
 ---
 
 # Evan
@@ -17,4 +17,4 @@ tags:
 - [[Arya's College Applications (2025-26)]] - `related_to` [EXTRACTED]
 - [[Klein Ct property (Sylmar, CA)]] - `lives_in` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Sylmar_Property_+_Tenants
+#graphify/document #graphify/EXTRACTED #community/Community_4

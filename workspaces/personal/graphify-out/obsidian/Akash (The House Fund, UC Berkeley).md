@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/akash-the-house-fund-uc-berkeley.md"
 type: "person"
-community: "UC Berkeley + a16z"
+community: "Community 3"
 tags:
   - graphify/person
   - graphify/EXTRACTED
-  - community/UC_Berkeley_+_a16z
+  - community/Community_3
 ---
 
 # Akash (The House Fund, UC Berkeley)
@@ -15,4 +15,4 @@ tags:
 - [[The House Fund (VC)]] - `works_at` [EXTRACTED]
 - [[UC Berkeley Network]] - `related_to` [EXTRACTED]
 
-#graphify/person #graphify/EXTRACTED #community/UC_Berkeley_+_a16z
+#graphify/person #graphify/EXTRACTED #community/Community_3

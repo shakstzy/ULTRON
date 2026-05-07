@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/aryan-goyal-uc-berkeley/2025/2025-02__aryan-goyal-uc-berkeley.md"
 type: "document"
-community: "Hinge + AI Music Project"
+community: "Community 11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hinge_+_AI_Music_Project
+  - community/Community_11
 ---
 
 # Vihan (NYC friend)
@@ -16,4 +16,4 @@ tags:
 - [[Miami Trip (planned)]] - `discussed_with` [EXTRACTED]
 - [[Mohammed Alobaidi (Mo)]] - `discussed_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hinge_+_AI_Music_Project
+#graphify/document #graphify/EXTRACTED #community/Community_11

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/yvette-renter-showing/2026/2026-01__yvette-renter-showing.md"
 type: "document"
-community: "Rental Showings (LA)"
+community: "Community 9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Rental_Showings_(LA)
+  - community/Community_9
 ---
 
 # Klein Court (Adithya's rental property, Sylmar CA)
@@ -39,4 +39,4 @@ tags:
 - [[Sydney (Renter Showing)]] - `related_to` [EXTRACTED]
 - [[Yvette (Renter prospect, Sylmar)]] - `mentioned_by` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Rental_Showings_(LA)
+#graphify/document #graphify/EXTRACTED #community/Community_9

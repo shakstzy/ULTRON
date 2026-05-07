@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/mychal-kendricks-malik-crypto-nfl-producer-la/2025/2025-08__mychal-kendricks-malik-crypto-nfl-producer-la.md"
 type: "document"
-community: "Prescription Songs + Music"
+community: "Community 10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prescription_Songs_+_Music
+  - community/Community_10
 ---
 
 # Dr. Luke
@@ -15,4 +15,4 @@ tags:
 - [[Jim (musicAIlicensing)]] - `mentioned_by` [EXTRACTED]
 - [[Prescription Records]] - `works_at` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Prescription_Songs_+_Music
+#graphify/document #graphify/EXTRACTED #community/Community_10

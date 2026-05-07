@@ -1,11 +1,11 @@
 ---
 source_file: "None"
 type: "document"
-community: "Crypto/Web3 Network"
+community: "Community 7"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Crypto/Web3_Network
+  - community/Community_7
 ---
 
 # Crypto
@@ -24,4 +24,4 @@ tags:
 - [[Will Avery (Crypto)]] - `related_to` [EXTRACTED]
 - [[Xanos (Movednetwork)]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Crypto/Web3_Network
+#graphify/document #graphify/INFERRED #community/Community_7

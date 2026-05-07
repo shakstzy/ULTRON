@@ -1,11 +1,11 @@
 ---
 source_file: "workspaces/personal/raw/imessage/individuals/karthika-hinge-la/2026/2026-02__karthika-hinge-la.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Karthika (Hinge LA)
@@ -16,4 +16,4 @@ tags:
 - [[Los Angeles, CA]] - `lives_in` [INFERRED]
 - [[New York City_1]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/EXTRACTED #community/Community_2

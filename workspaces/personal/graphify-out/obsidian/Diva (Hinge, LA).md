@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/diva-hinge-la/2026/2026-02__diva-hinge-la.md"
 type: "document"
-community: "Austin Dating + Locals"
+community: "Community 1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Austin_Dating_+_Locals
+  - community/Community_1
 ---
 
 # Diva (Hinge, LA)
@@ -15,4 +15,4 @@ tags:
 - [[Hinge (dating app)]] - `mentioned_by` [EXTRACTED]
 - [[Los Angeles, CA]] - `lives_in` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Austin_Dating_+_Locals
+#graphify/document #graphify/EXTRACTED #community/Community_1

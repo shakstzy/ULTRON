@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/tyler-sheppard-la/2024/2024-08__tyler-sheppard-la.md"
 type: "document"
-community: "Prescription Songs + Music"
+community: "Community 10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prescription_Songs_+_Music
+  - community/Community_10
 ---
 
 # Luke's Studio (LA)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Tyler Sheppard (LA, music producer)]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prescription_Songs_+_Music
+#graphify/document #graphify/EXTRACTED #community/Community_10

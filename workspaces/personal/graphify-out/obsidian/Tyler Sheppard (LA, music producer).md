@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/tyler-sheppard-la/2024/2024-03__tyler-sheppard-la.md"
 type: "document"
-community: "Prescription Songs + Music"
+community: "Community 10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prescription_Songs_+_Music
+  - community/Community_10
 ---
 
 # Tyler Sheppard (LA, music producer)
@@ -22,4 +22,4 @@ tags:
 - [[Yosef (Producer, LA)]] - `co_attended` [EXTRACTED]
 - [[Yosef (musicianproducer, LA)]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prescription_Songs_+_Music
+#graphify/document #graphify/EXTRACTED #community/Community_10

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/ryan-ut-austin/2025/2025-01__ryan-ut-austin.md"
 type: "document"
-community: "Hinge + AI Music Project"
+community: "Community 11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hinge_+_AI_Music_Project
+  - community/Community_11
 ---
 
 # Ryan (UT Austin)
@@ -22,4 +22,4 @@ tags:
 - [[UC Berkeley]] - `studies_at` [INFERRED]
 - [[Visa]] - `mentioned_by` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hinge_+_AI_Music_Project
+#graphify/document #graphify/EXTRACTED #community/Community_11

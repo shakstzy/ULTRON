@@ -1,11 +1,11 @@
 ---
 source_file: "workspaces/personal/raw/imessage/individuals/sanvi-sister/2026/2026-04__sanvi-sister.md"
 type: "document"
-community: "Sanvi (Sister)"
+community: "Community 27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sanvi_(Sister)
+  - community/Community_27
 ---
 
 # Barcelona trip (Sanvi 2026)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Sanvi (Sister)]] - `mentioned_by` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sanvi_(Sister)
+#graphify/document #graphify/EXTRACTED #community/Community_27

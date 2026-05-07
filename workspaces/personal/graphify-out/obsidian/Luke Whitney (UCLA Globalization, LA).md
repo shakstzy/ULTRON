@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/group-group-luke.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Luke Whitney (UCLA Globalization, LA)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Los Angeles, CA]] - `lives_in` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/INFERRED #community/Community_2

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/group-group-jarrod-nicole-yosef.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Jarrod Gipson (Producer, Nashville/LA)
@@ -14,4 +14,4 @@ tags:
 - [[Music Production]] - `related_to` [EXTRACTED]
 - [[Nashville]] - `from` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/EXTRACTED #community/Community_2

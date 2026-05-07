@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/shervin-blockchain-uc-berkeley.md"
 type: "document"
-community: "Amsterdam Trip + Festival Crew"
+community: "Community 6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Amsterdam_Trip_+_Festival_Crew
+  - community/Community_6
 ---
 
 # Shervin (Blockchain/UC Berkeley)
@@ -20,4 +20,4 @@ tags:
 - [[UC Berkeley]] - `studies_at` [INFERRED]
 - [[Xanos MovedNetwork]] - `discussed_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Amsterdam_Trip_+_Festival_Crew
+#graphify/document #graphify/EXTRACTED #community/Community_6

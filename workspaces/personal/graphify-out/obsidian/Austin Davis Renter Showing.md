@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/group-group-austin-dad.md"
 type: "document"
-community: "Sylmar Property + Tenants"
+community: "Community 4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sylmar_Property_+_Tenants
+  - community/Community_4
 ---
 
 # Austin Davis Renter Showing
@@ -16,4 +16,4 @@ tags:
 - [[Evan (Renter, LA)]] - `co_attended` [EXTRACTED]
 - [[Mom (Adithya's mother)]] - `co_attended` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sylmar_Property_+_Tenants
+#graphify/document #graphify/EXTRACTED #community/Community_4

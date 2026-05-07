@@ -21,8 +21,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Dating Roster (mixed)]]
+- 2 edges to [[_COMMUNITY_Community 0]]
 
 ## Top bridge nodes
-- [[Monte Carlo (startup, AIGPU middleware)]] - degree 2, connects to 1 community
 - [[Tony (Uncle)]] - degree 2, connects to 1 community
+- [[Monte Carlo (startup, AIGPU middleware)]] - degree 2, connects to 1 community

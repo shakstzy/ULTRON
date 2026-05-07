@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/xanos-movednetwork/2025/2025-05__xanos-movednetwork.md"
 type: "document"
-community: "Hinge + AI Music Project"
+community: "Community 11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hinge_+_AI_Music_Project
+  - community/Community_11
 ---
 
 # Consensus Toronto 2025
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `co_attended` [EXTRACTED]
 - [[Xanos (Movednetwork)]] - `co_attended` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hinge_+_AI_Music_Project
+#graphify/document #graphify/EXTRACTED #community/Community_11

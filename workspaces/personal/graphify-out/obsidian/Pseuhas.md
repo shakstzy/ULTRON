@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/pseuhas-uc-berkeley-nyc/2025/2025-08__pseuhas-uc-berkeley-nyc.md"
 type: "document"
-community: "NYC/USC (Akshar circle)"
+community: "Community 5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/NYC/USC_(Akshar_circle)
+  - community/Community_5
 ---
 
 # Pseuhas
@@ -20,4 +20,4 @@ tags:
 - [[UC Berkeley]] - `studies_at` [EXTRACTED]
 - [[intervention-4-shakti (group chat)]] - `co_attended` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/NYC/USC_(Akshar_circle)
+#graphify/document #graphify/EXTRACTED #community/Community_5

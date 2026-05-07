@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/groups/group-diana-larry-ryan/2024/2024-12__group-diana-larry-ryan.md"
 type: "document"
-community: "LA Music Industry (Prescription)"
+community: "Community 14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Music_Industry_(Prescription)
+  - community/Community_14
 ---
 
 # Ryan (Prescription Music)
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `messages_with` [EXTRACTED]
 - [[Prescription (music project)]] - `works_at` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Music_Industry_(Prescription)
+#graphify/document #graphify/EXTRACTED #community/Community_14

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/sam-garcia/2025/2025-11__sam-garcia.md"
 type: "document"
-community: "Amsterdam Trip + Festival Crew"
+community: "Community 6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Amsterdam_Trip_+_Festival_Crew
+  - community/Community_6
 ---
 
 # Sam Garcia
@@ -22,4 +22,4 @@ tags:
 - [[Rushil Jha]] - `discussed_with` [EXTRACTED]
 - [[Shak STZY Music (DistroKid artist)]] - `discussed_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Amsterdam_Trip_+_Festival_Crew
+#graphify/document #graphify/EXTRACTED #community/Community_6

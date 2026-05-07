@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/riz-zobayer-renter-showing/2025/2025-09__riz-zobayer-renter-showing.md"
 type: "document"
-community: "Dating Roster (mixed)"
+community: "Community 0"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dating_Roster_(mixed)
+  - community/Community_0
 ---
 
 # Riz (Zobayer's uncle / renter contact)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Adithya]] - `discussed_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dating_Roster_(mixed)
+#graphify/document #graphify/EXTRACTED #community/Community_0

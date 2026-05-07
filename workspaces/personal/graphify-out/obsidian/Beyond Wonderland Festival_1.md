@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/rushil-jha-uc-berkeley-nyc/2025/2025-08__rushil-jha-uc-berkeley-nyc.md"
 type: "document"
-community: "Dating Roster (mixed)"
+community: "Community 0"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dating_Roster_(mixed)
+  - community/Community_0
 ---
 
 # Beyond Wonderland Festival
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Adithya]] - `co_attended` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dating_Roster_(mixed)
+#graphify/document #graphify/EXTRACTED #community/Community_0

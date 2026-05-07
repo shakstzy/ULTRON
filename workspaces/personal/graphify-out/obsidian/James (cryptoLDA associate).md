@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/richard-lda-crypto/2025/2025-10__richard-lda-crypto.md"
 type: "document"
-community: "Crypto/Web3 Network"
+community: "Community 7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crypto/Web3_Network
+  - community/Community_7
 ---
 
 # James (crypto/LDA associate)
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `discussed_with` [EXTRACTED]
 - [[Richard (LDA, Crypto)]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crypto/Web3_Network
+#graphify/document #graphify/EXTRACTED #community/Community_7

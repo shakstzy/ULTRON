@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/avery-abraham-stanford-biotech-nyc/2025/2025-11__avery-abraham-stanford-biotech-nyc.md"
 type: "document"
-community: "Crypto/Web3 Network"
+community: "Community 7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crypto/Web3_Network
+  - community/Community_7
 ---
 
 # Seedbox Labs (Biotech Startup)
@@ -16,4 +16,4 @@ tags:
 - [[Avery Abraham (Stanford Biotech, NYC)]] - `works_at` [EXTRACTED]
 - [[Avery Haskell (Seedbox Labs CEO)]] - `works_at` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Crypto/Web3_Network
+#graphify/document #graphify/EXTRACTED #community/Community_7

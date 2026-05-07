@@ -21,8 +21,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Dating Roster (mixed)]]
+- 2 edges to [[_COMMUNITY_Community 0]]
 
 ## Top bridge nodes
-- [[Lorenzo (Neighbor, LA)]] - degree 2, connects to 1 community
 - [[Lorenzo's Mom (Neighbor, LA)]] - degree 2, connects to 1 community
+- [[Lorenzo (Neighbor, LA)]] - degree 2, connects to 1 community

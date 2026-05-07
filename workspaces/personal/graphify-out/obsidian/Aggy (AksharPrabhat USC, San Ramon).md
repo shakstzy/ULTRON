@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/aggy-akshar-prabhat-usc-san-ramon.md"
 type: "person"
-community: "NYC/USC (Akshar circle)"
+community: "Community 5"
 tags:
   - graphify/person
   - graphify/EXTRACTED
-  - community/NYC/USC_(Akshar_circle)
+  - community/Community_5
 ---
 
 # Aggy (Akshar/Prabhat USC, San Ramon)
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `messages_with` [EXTRACTED]
 - [[USC LA Circle]] - `related_to` [EXTRACTED]
 
-#graphify/person #graphify/EXTRACTED #community/NYC/USC_(Akshar_circle)
+#graphify/person #graphify/EXTRACTED #community/Community_5

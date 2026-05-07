@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/shreya-uc-berkeley/2025/2025-08__shreya-uc-berkeley.md"
 type: "document"
-community: "UC Berkeley + a16z"
+community: "Community 3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/UC_Berkeley_+_a16z
+  - community/Community_3
 ---
 
 # Shreya (UC Berkeley / Greylock)
@@ -17,4 +17,4 @@ tags:
 - [[Synapse  synps.xyz]] - `mentioned_by` [EXTRACTED]
 - [[UC Berkeley]] - `studies_at` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/UC_Berkeley_+_a16z
+#graphify/document #graphify/EXTRACTED #community/Community_3

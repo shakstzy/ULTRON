@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/group-group-mikey-zach.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Mikey (Silver Lining, LA)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Silver Lining (LA)]] - `works_at` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/INFERRED #community/Community_2

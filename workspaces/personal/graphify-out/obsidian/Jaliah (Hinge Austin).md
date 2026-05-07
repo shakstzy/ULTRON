@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/jaliah-hinge-austin/2026/2026-03__jaliah-hinge-austin.md"
 type: "document"
-community: "Austin Dating + Locals"
+community: "Community 1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Austin_Dating_+_Locals
+  - community/Community_1
 ---
 
 # Jaliah (Hinge Austin)
@@ -16,4 +16,4 @@ tags:
 - [[Austin, TX_1]] - `lives_in` [INFERRED]
 - [[Hinge (dating app)]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Austin_Dating_+_Locals
+#graphify/document #graphify/INFERRED #community/Community_1

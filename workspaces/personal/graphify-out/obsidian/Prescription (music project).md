@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/gavin-hadley-la/2025/2025-08__gavin-hadley-la.md"
 type: "document"
-community: "LA Music Industry (Prescription)"
+community: "Community 14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Music_Industry_(Prescription)
+  - community/Community_14
 ---
 
 # Prescription (music project)
@@ -21,4 +21,4 @@ tags:
 - [[Music Publishing Deal (Prescription)]] - `related_to` [EXTRACTED]
 - [[Ryan (Prescription Music)]] - `works_at` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Music_Industry_(Prescription)
+#graphify/document #graphify/EXTRACTED #community/Community_14

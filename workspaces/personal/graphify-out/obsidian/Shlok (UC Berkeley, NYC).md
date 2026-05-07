@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/shlok-uc-berkeley-nyc/2024/2024-07__shlok-uc-berkeley-nyc.md"
 type: "document"
-community: "UC Berkeley + a16z"
+community: "Community 3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/UC_Berkeley_+_a16z
+  - community/Community_3
 ---
 
 # Shlok (UC Berkeley, NYC)
@@ -16,4 +16,4 @@ tags:
 - [[Shipransh (UC Berkeley)]] - `related_to` [INFERRED]
 - [[Shreejal Luitel (UC Berkeley)]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/UC_Berkeley_+_a16z
+#graphify/document #graphify/EXTRACTED #community/Community_3

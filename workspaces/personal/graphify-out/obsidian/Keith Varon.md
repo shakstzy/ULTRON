@@ -1,11 +1,11 @@
 ---
 source_file: "workspaces/personal/raw/imessage/individuals/keith-varon/2024/2024-06__keith-varon.md"
 type: "document"
-community: "Sylmar Property + Tenants"
+community: "Community 4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sylmar_Property_+_Tenants
+  - community/Community_4
 ---
 
 # Keith Varon
@@ -16,4 +16,4 @@ tags:
 - [[Maranatha (music project)]] - `related_to` [EXTRACTED]
 - [[Ryan Ogren]] - `co_attended` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Sylmar_Property_+_Tenants
+#graphify/document #graphify/EXTRACTED #community/Community_4

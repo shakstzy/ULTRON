@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/group-group-haan-kevo.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Kevo (Prescription Producer, LA)
@@ -15,4 +15,4 @@ tags:
 - [[Music Production]] - `related_to` [EXTRACTED]
 - [[Prescription (LA)]] - `works_at` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/INFERRED #community/Community_2

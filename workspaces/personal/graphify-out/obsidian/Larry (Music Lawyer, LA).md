@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/larry-lawyer-la/2024/2024-12__larry-lawyer-la.md"
 type: "document"
-community: "Prescription Songs + Music"
+community: "Community 10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prescription_Songs_+_Music
+  - community/Community_10
 ---
 
 # Larry (Music Lawyer, LA)
@@ -17,4 +17,4 @@ tags:
 - [[Prescription Songs]] - `discussed_with` [EXTRACTED]
 - [[Publishing Agreement (Prescription Songs)]] - `discussed_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prescription_Songs_+_Music
+#graphify/document #graphify/EXTRACTED #community/Community_10

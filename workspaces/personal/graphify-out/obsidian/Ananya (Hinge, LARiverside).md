@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/ananya-hinge-la/2026/2026-02__ananya-hinge-la.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Ananya (Hinge, LA/Riverside)
@@ -15,4 +15,4 @@ tags:
 - [[Hinge (dating app)]] - `mentioned_by` [INFERRED]
 - [[Los Angeles, CA]] - `from` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/INFERRED #community/Community_2

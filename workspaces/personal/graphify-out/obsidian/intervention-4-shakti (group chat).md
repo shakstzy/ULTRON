@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/groups/intervention-4-shakti/2025/2025-06__intervention-4-shakti.md"
 type: "document"
-community: "NYC/USC (Akshar circle)"
+community: "Community 5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/NYC/USC_(Akshar_circle)
+  - community/Community_5
 ---
 
 # intervention-4-shakti (group chat)
@@ -16,4 +16,4 @@ tags:
 - [[Rushil Jha (UC Berkeley  NYC)]] - `co_attended` [EXTRACTED]
 - [[Shervin (Blockchain, UC Berkeley)]] - `co_attended` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/NYC/USC_(Akshar_circle)
+#graphify/document #graphify/EXTRACTED #community/Community_5

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/hunter-uc-berkeley-sammys/2024/2024-04__hunter-uc-berkeley-sammys.md"
 type: "document"
-community: "Hinge + AI Music Project"
+community: "Community 11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hinge_+_AI_Music_Project
+  - community/Community_11
 ---
 
 # Hunter (UC Berkeley / Sammys)
@@ -16,4 +16,4 @@ tags:
 - [[Klein Court (LA property)]] - `mentioned_by` [EXTRACTED]
 - [[UC Berkeley]] - `studies_at` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Hinge_+_AI_Music_Project
+#graphify/document #graphify/EXTRACTED #community/Community_11

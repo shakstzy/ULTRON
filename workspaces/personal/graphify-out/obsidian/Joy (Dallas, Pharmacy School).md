@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/joy-dallas/2025/2025-07__joy-dallas.md"
 type: "document"
-community: "Austin Dating + Locals"
+community: "Community 1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Austin_Dating_+_Locals
+  - community/Community_1
 ---
 
 # Joy (Dallas, Pharmacy School)
@@ -15,4 +15,4 @@ tags:
 - [[Dallas]] - `lives_in` [INFERRED]
 - [[Joy (Dallas, Pharmacy School)]] - `lives_in` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Austin_Dating_+_Locals
+#graphify/document #graphify/EXTRACTED #community/Community_1

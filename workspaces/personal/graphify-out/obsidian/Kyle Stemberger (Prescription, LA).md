@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/kyle-stemberger-prescription-la.md"
 type: "document"
-community: "LA Music Industry (Prescription)"
+community: "Community 14"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/LA_Music_Industry_(Prescription)
+  - community/Community_14
 ---
 
 # Kyle Stemberger (Prescription, LA)
@@ -16,4 +16,4 @@ tags:
 - [[Los Angeles, CA]] - `lives_in` [INFERRED]
 - [[Prescription (music project)]] - `works_at` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/LA_Music_Industry_(Prescription)
+#graphify/document #graphify/INFERRED #community/Community_14

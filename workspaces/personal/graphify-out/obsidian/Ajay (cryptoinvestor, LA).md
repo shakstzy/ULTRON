@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/ajay-crypto/2025/2025-09__ajay-crypto.md"
 type: "document"
-community: "Crypto Events + Investors"
+community: "Community 8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crypto_Events_+_Investors
+  - community/Community_8
 ---
 
 # Ajay (crypto/investor, LA)
@@ -19,4 +19,4 @@ tags:
 - [[IAMGame (cryptogaming project)]] - `works_at` [EXTRACTED]
 - [[Los Angeles, CA]] - `lives_in` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crypto_Events_+_Investors
+#graphify/document #graphify/EXTRACTED #community/Community_8

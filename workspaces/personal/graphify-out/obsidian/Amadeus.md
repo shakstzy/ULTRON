@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/evan-renter/2024/2024-08__evan-renter.md"
 type: "document"
-community: "Sylmar Property + Tenants"
+community: "Community 4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sylmar_Property_+_Tenants
+  - community/Community_4
 ---
 
 # Amadeus
@@ -18,4 +18,4 @@ tags:
 - [[Klein Ct Property]] - `related_to` [EXTRACTED]
 - [[Klein Ct property (Sylmar, CA)]] - `lives_in` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Sylmar_Property_+_Tenants
+#graphify/document #graphify/EXTRACTED #community/Community_4

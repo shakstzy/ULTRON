@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/prabhat-nuthakki-uc-berkeley/2025/2025-03__prabhat-nuthakki-uc-berkeley.md"
 type: "document"
-community: "Amsterdam Trip + Festival Crew"
+community: "Community 6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Amsterdam_Trip_+_Festival_Crew
+  - community/Community_6
 ---
 
 # Chicago
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Prabhat Nuthakki (UC Berkeley)_1]] - `lives_in` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Amsterdam_Trip_+_Festival_Crew
+#graphify/document #graphify/EXTRACTED #community/Community_6

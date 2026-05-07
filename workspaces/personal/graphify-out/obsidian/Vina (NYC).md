@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/vina-nyc/2025/2025-08__vina-nyc.md"
 type: "document"
-community: "NYC/USC (Akshar circle)"
+community: "Community 5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/NYC/USC_(Akshar_circle)
+  - community/Community_5
 ---
 
 # Vina (NYC)
@@ -15,4 +15,4 @@ tags:
 - [[Hinge (dating app)]] - `mentioned_by` [EXTRACTED]
 - [[New York City_1]] - `lives_in` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/NYC/USC_(Akshar_circle)
+#graphify/document #graphify/EXTRACTED #community/Community_5

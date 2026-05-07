@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/abhi-usc-akshar-la/2025/2025-08__abhi-usc-akshar-la.md"
 type: "document"
-community: "NYC/USC (Akshar circle)"
+community: "Community 5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/NYC/USC_(Akshar_circle)
+  - community/Community_5
 ---
 
 # Abhi Shah (USC / Akshar / LA)
@@ -17,4 +17,4 @@ tags:
 - [[Rushil Jha (UC Berkeley  NYC)]] - `discussed_with` [INFERRED]
 - [[USC LA Circle]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/NYC/USC_(Akshar_circle)
+#graphify/document #graphify/EXTRACTED #community/Community_5

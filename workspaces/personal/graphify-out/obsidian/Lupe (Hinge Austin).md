@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/lupe-hinge-austin/2026/2026-02__lupe-hinge-austin.md"
 type: "document"
-community: "Austin Dating + Locals"
+community: "Community 1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Austin_Dating_+_Locals
+  - community/Community_1
 ---
 
 # Lupe (Hinge Austin)
@@ -15,4 +15,4 @@ tags:
 - [[Austin, TX]] - `lives_in` [EXTRACTED]
 - [[Hinge (dating app)_1]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Austin_Dating_+_Locals
+#graphify/document #graphify/EXTRACTED #community/Community_1

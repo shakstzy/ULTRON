@@ -1,11 +1,11 @@
 ---
 source_file: "None"
 type: "document"
-community: "Austin Dating + Locals"
+community: "Community 1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Austin_Dating_+_Locals
+  - community/Community_1
 ---
 
 # Dallas
@@ -25,4 +25,4 @@ tags:
 - [[Saagarika (Hinge Dallas)]] - `lives_in` [INFERRED]
 - [[Sabrina (Hinge Dallas)]] - `lives_in` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Austin_Dating_+_Locals
+#graphify/document #graphify/INFERRED #community/Community_1

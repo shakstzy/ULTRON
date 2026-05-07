@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/andrew-liutev-crypto/2025/2025-01__andrew-liutev-crypto.md"
 type: "document"
-community: "Crypto/Web3 Network"
+community: "Community 7"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Crypto/Web3_Network
+  - community/Community_7
 ---
 
 # Andrew Liutev (Crypto)
@@ -15,4 +15,4 @@ tags:
 - [[Alex Duckworth (crypto)]] - `related_to` [INFERRED]
 - [[Crypto]] - `mentioned_by` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Crypto/Web3_Network
+#graphify/document #graphify/INFERRED #community/Community_7

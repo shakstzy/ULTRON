@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/varshika-hinge-dallas/2026/2026-03__varshika-hinge-dallas.md"
 type: "document"
-community: "Austin Dating + Locals"
+community: "Community 1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Austin_Dating_+_Locals
+  - community/Community_1
 ---
 
 # Hinge (dating app)
@@ -206,4 +206,4 @@ tags:
 - [[Yolanda (Hinge Austin)]] - `related_to` [INFERRED]
 - [[Zaara (Hinge LA)]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Austin_Dating_+_Locals
+#graphify/document #graphify/INFERRED #community/Community_1

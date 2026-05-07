@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/sam-garcia/2026/2026-02__sam-garcia.md"
 type: "document"
-community: "Sylmar Property + Tenants"
+community: "Community 4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sylmar_Property_+_Tenants
+  - community/Community_4
 ---
 
 # Aarti (ex-girlfriend, LA)
@@ -18,4 +18,4 @@ tags:
 - [[Noah Bailie]] - `mentioned_by` [EXTRACTED]
 - [[Rushil Jha]] - `mentioned_by` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sylmar_Property_+_Tenants
+#graphify/document #graphify/EXTRACTED #community/Community_4

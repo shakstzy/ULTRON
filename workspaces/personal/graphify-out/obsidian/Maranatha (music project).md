@@ -1,11 +1,11 @@
 ---
 source_file: "workspaces/personal/raw/imessage/individuals/keith-varon/2026/2026-04__keith-varon.md"
 type: "document"
-community: "Sylmar Property + Tenants"
+community: "Community 4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sylmar_Property_+_Tenants
+  - community/Community_4
 ---
 
 # Maranatha (music project)
@@ -15,4 +15,4 @@ tags:
 - [[Keith Varon]] - `related_to` [EXTRACTED]
 - [[Kevo (Prescription Producer LA)_1]] - `discussed_with` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Sylmar_Property_+_Tenants
+#graphify/document #graphify/EXTRACTED #community/Community_4

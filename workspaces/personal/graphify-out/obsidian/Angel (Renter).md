@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/angel-renter-showing/2024/2024-12__angel-renter-showing.md"
 type: "document"
-community: "Sylmar Property + Tenants"
+community: "Community 4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sylmar_Property_+_Tenants
+  - community/Community_4
 ---
 
 # Angel (Renter)
@@ -18,4 +18,4 @@ tags:
 - [[Mom (Adithya's mother)]] - `discussed_with` [INFERRED]
 - [[Sylmar Rental Property (13245 Klein Ct)]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sylmar_Property_+_Tenants
+#graphify/document #graphify/EXTRACTED #community/Community_4

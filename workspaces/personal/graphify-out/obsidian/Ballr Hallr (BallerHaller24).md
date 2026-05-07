@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/ballr-hallr-la/2024/2024-08__ballr-hallr-la.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Ballr Hallr (BallerHaller24)
@@ -17,4 +17,4 @@ tags:
 - [[Music Production]] - `related_to` [EXTRACTED]
 - [[RXK Nephew (rapper)]] - `discussed_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/EXTRACTED #community/Community_2

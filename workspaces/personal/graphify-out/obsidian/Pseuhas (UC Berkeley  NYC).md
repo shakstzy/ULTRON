@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/pseuhas-uc-berkeley-nyc/2024/2024-05__pseuhas-uc-berkeley-nyc.md"
 type: "document"
-community: "Amsterdam Trip + Festival Crew"
+community: "Community 6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Amsterdam_Trip_+_Festival_Crew
+  - community/Community_6
 ---
 
 # Pseuhas (UC Berkeley / NYC)
@@ -22,4 +22,4 @@ tags:
 - [[UC Berkeley]] - `studies_at` [EXTRACTED]
 - [[Xanos]] - `messages_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Amsterdam_Trip_+_Festival_Crew
+#graphify/document #graphify/EXTRACTED #community/Community_6

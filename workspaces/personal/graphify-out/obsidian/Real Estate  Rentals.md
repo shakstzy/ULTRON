@@ -1,11 +1,11 @@
 ---
 source_file: "None"
 type: "document"
-community: "Rental Showings (LA)"
+community: "Community 9"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Rental_Showings_(LA)
+  - community/Community_9
 ---
 
 # Real Estate / Rentals
@@ -18,4 +18,4 @@ tags:
 - [[Ralph (Renter Prospect, Klein Court)]] - `related_to` [INFERRED]
 - [[Ray Hamili Renter Showing 2026]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Rental_Showings_(LA)
+#graphify/document #graphify/INFERRED #community/Community_9

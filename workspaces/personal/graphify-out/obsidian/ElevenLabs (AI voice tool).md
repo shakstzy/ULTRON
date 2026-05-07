@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/kevo-prescription-producer-la/2025/2025-03__kevo-prescription-producer-la.md"
 type: "document"
-community: "LA Music Industry (Prescription)"
+community: "Community 14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Music_Industry_(Prescription)
+  - community/Community_14
 ---
 
 # ElevenLabs (AI voice tool)
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `discussed_with` [EXTRACTED]
 - [[Kevo (Prescription Producer LA)]] - `mentioned_by` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Music_Industry_(Prescription)
+#graphify/document #graphify/EXTRACTED #community/Community_14

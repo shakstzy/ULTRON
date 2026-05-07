@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/lance-pitch-songwriting-la/2025/2025-06__lance-pitch-songwriting-la.md"
 type: "document"
-community: "Sylmar Property + Tenants"
+community: "Community 4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sylmar_Property_+_Tenants
+  - community/Community_4
 ---
 
 # Lance (Pitch/Songwriting LA)
@@ -17,4 +17,4 @@ tags:
 - [[Music Production]] - `related_to` [EXTRACTED]
 - [[Music Production (LA)]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Sylmar_Property_+_Tenants
+#graphify/document #graphify/EXTRACTED #community/Community_4

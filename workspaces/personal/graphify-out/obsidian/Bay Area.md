@@ -1,11 +1,11 @@
 ---
 source_file: "None"
 type: "document"
-community: "Bay Area Family"
+community: "Community 20"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Bay_Area_Family
+  - community/Community_20
 ---
 
 # Bay Area
@@ -15,4 +15,4 @@ tags:
 - [[Nikhil Nagarajan (Bay Area)]] - `lives_in` [INFERRED]
 - [[Nivetha (HingeSF)]] - `lives_in` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Bay_Area_Family
+#graphify/document #graphify/INFERRED #community/Community_20

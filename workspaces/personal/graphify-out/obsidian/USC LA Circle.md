@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/akshar-usc-nyc.md"
 type: "concept"
-community: "NYC/USC (Akshar circle)"
+community: "Community 5"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/NYC/USC_(Akshar_circle)
+  - community/Community_5
 ---
 
 # USC LA Circle
@@ -15,4 +15,4 @@ tags:
 - [[Aggy (AksharPrabhat USC, San Ramon)]] - `related_to` [EXTRACTED]
 - [[Akshar (USC, NYC)]] - `related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/NYC/USC_(Akshar_circle)
+#graphify/concept #graphify/EXTRACTED #community/Community_5

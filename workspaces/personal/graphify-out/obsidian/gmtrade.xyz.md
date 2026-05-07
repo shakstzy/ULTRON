@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/will-avery-crypto/2026/2026-03__will-avery-crypto.md"
 type: "document"
-community: "Crypto/Web3 Network"
+community: "Community 7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crypto/Web3_Network
+  - community/Community_7
 ---
 
 # gmtrade.xyz
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Will Avery (Crypto)]] - `works_at` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crypto/Web3_Network
+#graphify/document #graphify/EXTRACTED #community/Community_7

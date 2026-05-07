@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/dr-luke-prescription-la/2024/2024-04__dr-luke-prescription-la.md"
 type: "document"
-community: "Prescription Songs + Music"
+community: "Community 10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prescription_Songs_+_Music
+  - community/Community_10
 ---
 
 # Dr. Luke (Prescription Songs LA)
@@ -23,4 +23,4 @@ tags:
 - [[SCOR  Sweet (Web3 Sports Token)]] - `mentioned_by` [EXTRACTED]
 - [[Voice Cloning (RVC)]] - `discussed_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prescription_Songs_+_Music
+#graphify/document #graphify/EXTRACTED #community/Community_10

@@ -1,11 +1,11 @@
 ---
 source_file: "None"
 type: "document"
-community: "Bay Area + Slash"
+community: "Community 13"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Bay_Area_+_Slash
+  - community/Community_13
 ---
 
 # Music
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Amos (MusicCrypto, LA)]] - `mentioned_by` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Bay_Area_+_Slash
+#graphify/document #graphify/INFERRED #community/Community_13

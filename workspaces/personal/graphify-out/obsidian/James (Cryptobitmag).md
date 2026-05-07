@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/james-cryptobitmag/2025/2025-10__james-cryptobitmag.md"
 type: "document"
-community: "Crypto Events + Investors"
+community: "Community 8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crypto_Events_+_Investors
+  - community/Community_8
 ---
 
 # James (Cryptobitmag)
@@ -20,4 +20,4 @@ tags:
 - [[Group Francesco + James]] - `mentioned_by` [EXTRACTED]
 - [[Synapse (Web3 startup  crypto project)]] - `discussed_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crypto_Events_+_Investors
+#graphify/document #graphify/EXTRACTED #community/Community_8

@@ -1,11 +1,11 @@
 ---
 source_file: "workspaces/personal/raw/imessage/individuals/zaos-prabhat-uc-berkeley-la/2026/2026-03__zaos-prabhat-uc-berkeley-la.md"
 type: "document"
-community: "UC Berkeley + a16z"
+community: "Community 3"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/UC_Berkeley_+_a16z
+  - community/Community_3
 ---
 
 # Nvidia GTC (San Jose/SF)
@@ -24,4 +24,4 @@ tags:
 - [[Varun Nair (UC Berkeley  SF)]] - `discussed_with` [INFERRED]
 - [[Viraj (UC Berkeley)]] - `discussed_with` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/UC_Berkeley_+_a16z
+#graphify/document #graphify/INFERRED #community/Community_3

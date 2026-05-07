@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/yosef-producer-la/2025/2025-09__yosef-producer-la.md"
 type: "document"
-community: "Prescription Songs + Music"
+community: "Community 10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prescription_Songs_+_Music
+  - community/Community_10
 ---
 
 # Prescription (Recording Studio, LA)
@@ -19,4 +19,4 @@ tags:
 - [[Kalani (PrescriptionLA)]] - `related_to` [INFERRED]
 - [[Yosef (Producer, LA)]] - `discussed_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prescription_Songs_+_Music
+#graphify/document #graphify/EXTRACTED #community/Community_10

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/rhea-prescription-la/2024/2024-08__rhea-prescription-la.md"
 type: "document"
-community: "Prescription Songs + Music"
+community: "Community 10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prescription_Songs_+_Music
+  - community/Community_10
 ---
 
 # Caitlin (A&R, Prescription Songs)
@@ -19,4 +19,4 @@ tags:
 - [[Rhea (Prescription, LA)]] - `related_to` [EXTRACTED]
 - [[Ryan Ogren]] - `co_attended` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prescription_Songs_+_Music
+#graphify/document #graphify/EXTRACTED #community/Community_10

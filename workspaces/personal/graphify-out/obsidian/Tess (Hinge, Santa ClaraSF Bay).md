@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/tess-hinge-sd/2026/2026-03__tess-hinge-sd.md"
 type: "document"
-community: "Austin Dating + Locals"
+community: "Community 1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Austin_Dating_+_Locals
+  - community/Community_1
 ---
 
 # Tess (Hinge, Santa Clara/SF Bay)
@@ -15,4 +15,4 @@ tags:
 - [[Hinge (dating app)]] - `related_to` [INFERRED]
 - [[Nvidia Conference (San JoseSunnyvale 2026)]] - `mentioned_by` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Austin_Dating_+_Locals
+#graphify/document #graphify/INFERRED #community/Community_1

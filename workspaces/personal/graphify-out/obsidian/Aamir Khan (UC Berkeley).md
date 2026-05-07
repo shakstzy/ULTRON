@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/aamir-khan-uc-berkeley/2024/2024-05__aamir-khan-uc-berkeley.md"
 type: "document"
-community: "UC Berkeley + a16z"
+community: "Community 3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/UC_Berkeley_+_a16z
+  - community/Community_3
 ---
 
 # Aamir Khan (UC Berkeley)
@@ -16,4 +16,4 @@ tags:
 - [[UC Berkeley]] - `studies_at` [EXTRACTED]
 - [[UC Berkeley Network]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/UC_Berkeley_+_a16z
+#graphify/document #graphify/EXTRACTED #community/Community_3

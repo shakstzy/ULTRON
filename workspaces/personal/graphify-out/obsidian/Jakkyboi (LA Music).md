@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/jakkyboi-la-music/2024/2024-08__jakkyboi-la-music.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Jakkyboi (LA Music)
@@ -16,4 +16,4 @@ tags:
 - [[Music Production]] - `related_to` [INFERRED]
 - [[Prescription Studio (LA)]] - `discussed_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/EXTRACTED #community/Community_2

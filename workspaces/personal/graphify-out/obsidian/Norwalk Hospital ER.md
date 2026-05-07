@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/prabhat-nuthakki-uc-berkeley/2024/2024-10__prabhat-nuthakki-uc-berkeley.md"
 type: "document"
-community: "Amsterdam Trip + Festival Crew"
+community: "Community 6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Amsterdam_Trip_+_Festival_Crew
+  - community/Community_6
 ---
 
 # Norwalk Hospital ER
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Rushil Jha]] - `mentioned_by` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Amsterdam_Trip_+_Festival_Crew
+#graphify/document #graphify/EXTRACTED #community/Community_6

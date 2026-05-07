@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/naia-hinge-sd/2026/2026-03__naia-hinge-sd.md"
 type: "document"
-community: "Austin Dating + Locals"
+community: "Community 1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Austin_Dating_+_Locals
+  - community/Community_1
 ---
 
 # Naia (Hinge SD)
@@ -15,4 +15,4 @@ tags:
 - [[Hinge (dating app)]] - `mentioned_by` [INFERRED]
 - [[San Diego]] - `lives_in` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Austin_Dating_+_Locals
+#graphify/document #graphify/INFERRED #community/Community_1

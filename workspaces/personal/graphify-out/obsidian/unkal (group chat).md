@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/groups/unkal/2025/2025-01__unkal.md"
 type: "document"
-community: "Amsterdam Trip + Festival Crew"
+community: "Community 6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Amsterdam_Trip_+_Festival_Crew
+  - community/Community_6
 ---
 
 # unkal (group chat)
@@ -28,4 +28,4 @@ tags:
 - [[Saif Ali (NYC)]] - `co_attended` [EXTRACTED]
 - [[Zach Johnson (friend, musician)]] - `co_attended` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Amsterdam_Trip_+_Festival_Crew
+#graphify/document #graphify/EXTRACTED #community/Community_6

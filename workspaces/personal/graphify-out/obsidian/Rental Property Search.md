@@ -1,11 +1,11 @@
 ---
 source_file: "None"
 type: "document"
-community: "Rental Showings (LA)"
+community: "Community 9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Rental_Showings_(LA)
+  - community/Community_9
 ---
 
 # Rental Property Search
@@ -14,4 +14,4 @@ tags:
 - [[John (RenterHousemate, LA)]] - `related_to` [EXTRACTED]
 - [[Keena (Renter)_1]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Rental_Showings_(LA)
+#graphify/document #graphify/EXTRACTED #community/Community_9

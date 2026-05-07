@@ -1,11 +1,11 @@
 ---
 source_file: "None"
 type: "document"
-community: "Rental Showings (LA)"
+community: "Community 9"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Rental_Showings_(LA)
+  - community/Community_9
 ---
 
 # Apartment Rental
@@ -17,4 +17,4 @@ tags:
 - [[Kyle (RenterShowing)]] - `related_to` [INFERRED]
 - [[Lewis (RenterShowing, 2026)]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Rental_Showings_(LA)
+#graphify/document #graphify/INFERRED #community/Community_9

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/austin-davis-renter-showing/2025/2025-01__austin-davis-renter-showing.md"
 type: "document"
-community: "Sylmar House + Range Music"
+community: "Community 17"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Sylmar_House_+_Range_Music
+  - community/Community_17
 ---
 
 # Sylmar House (13245 Klein Ct, LA)
@@ -17,4 +17,4 @@ tags:
 - [[Dad (Kumar)_1]] - `related_to` [INFERRED]
 - [[Evan (Roommate)]] - `lives_in` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Sylmar_House_+_Range_Music
+#graphify/document #graphify/INFERRED #community/Community_17

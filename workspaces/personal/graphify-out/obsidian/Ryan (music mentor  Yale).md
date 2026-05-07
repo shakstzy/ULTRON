@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/groups/group-mo-ryan/2024/2024-04__group-mo-ryan.md"
 type: "document"
-community: "AI Voice Modeling Project"
+community: "Community 19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AI_Voice_Modeling_Project
+  - community/Community_19
 ---
 
 # Ryan (music mentor / Yale)
@@ -16,4 +16,4 @@ tags:
 - [[Music Production]] - `related_to` [INFERRED]
 - [[Nerve (app  Ryan's project)]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AI_Voice_Modeling_Project
+#graphify/document #graphify/EXTRACTED #community/Community_19

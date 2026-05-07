@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/zach-johnson/2026/2026-04__zach-johnson.md"
 type: "document"
-community: "Bay Area + Slash"
+community: "Community 13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bay_Area_+_Slash
+  - community/Community_13
 ---
 
 # FUNSPOT (Logic project / song)
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `related_to` [EXTRACTED]
 - [[Zach Johnson (friend, musician)]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Bay_Area_+_Slash
+#graphify/document #graphify/EXTRACTED #community/Community_13

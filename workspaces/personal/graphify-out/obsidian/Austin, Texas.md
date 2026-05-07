@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/riya-hinge-austin-nyc/2025/2025-07__riya-hinge-austin-nyc.md"
 type: "document"
-community: "Austin Dating + Locals"
+community: "Community 1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Austin_Dating_+_Locals
+  - community/Community_1
 ---
 
 # Austin, Texas
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `lives_in` [INFERRED]
 - [[Ritu (Hinge  Dallas med school)]] - `from` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Austin_Dating_+_Locals
+#graphify/document #graphify/INFERRED #community/Community_1

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/group-group-griffin-nikhil-noah.md"
 type: "document"
-community: "LASA Classmates"
+community: "Community 12"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/LASA_Classmates
+  - community/Community_12
 ---
 
 # Griffin Noah (Roommate)
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `discussed_with` [INFERRED]
 - [[Group Griffin + Nikhil + Noah + Parth (Austin)]] - `mentioned_by` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/LASA_Classmates
+#graphify/document #graphify/INFERRED #community/Community_12

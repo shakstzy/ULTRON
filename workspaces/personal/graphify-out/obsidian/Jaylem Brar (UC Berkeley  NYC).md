@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/jaylem-brar-uc-berkeley-nyc.md"
 type: "document"
-community: "NYC/USC (Akshar circle)"
+community: "Community 5"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/NYC/USC_(Akshar_circle)
+  - community/Community_5
 ---
 
 # Jaylem Brar (UC Berkeley / NYC)
@@ -15,4 +15,4 @@ tags:
 - [[New York City_1]] - `lives_in` [INFERRED]
 - [[UC Berkeley]] - `studies_at` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/NYC/USC_(Akshar_circle)
+#graphify/document #graphify/INFERRED #community/Community_5

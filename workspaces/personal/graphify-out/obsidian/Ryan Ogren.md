@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/ryan-ogren/2024/2024-03__ryan-ogren.md"
 type: "document"
-community: "Prescription Songs + Music"
+community: "Community 10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prescription_Songs_+_Music
+  - community/Community_10
 ---
 
 # Ryan Ogren
@@ -31,4 +31,4 @@ tags:
 - [[Vitals (producer)]] - `co_attended` [EXTRACTED]
 - [[Vitals Producer LA]] - `discussed_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prescription_Songs_+_Music
+#graphify/document #graphify/EXTRACTED #community/Community_10

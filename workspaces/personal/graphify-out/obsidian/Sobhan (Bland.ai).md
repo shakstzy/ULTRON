@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/divyesh-khatri-uc-berkeley/2024/2024-08__divyesh-khatri-uc-berkeley.md"
 type: "document"
-community: "Bay Area + Slash"
+community: "Community 13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bay_Area_+_Slash
+  - community/Community_13
 ---
 
 # Sobhan (Bland.ai)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Divyesh Khatri]] - `mentioned_by` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bay_Area_+_Slash
+#graphify/document #graphify/EXTRACTED #community/Community_13

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/deven-matthews-blockchain-berkeley/2024/2024-03__deven-matthews-blockchain-berkeley.md"
 type: "document"
-community: "UC Berkeley + a16z"
+community: "Community 3"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/UC_Berkeley_+_a16z
+  - community/Community_3
 ---
 
 # Blockchain at Berkeley
@@ -14,4 +14,4 @@ tags:
 - [[Deven Matthews (Blockchain Berkeley)]] - `related_to` [EXTRACTED]
 - [[UC Berkeley]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/UC_Berkeley_+_a16z
+#graphify/document #graphify/INFERRED #community/Community_3

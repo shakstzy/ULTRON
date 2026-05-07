@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/mikey-silver-lining-la/2024/2024-04__mikey-silver-lining-la.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Mikey LaSusa
@@ -16,4 +16,4 @@ tags:
 - [[Michael V (Silver Lining Studio, LA)]] - `co_attended` [INFERRED]
 - [[Silver Lining (LA)]] - `works_at` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/INFERRED #community/Community_2

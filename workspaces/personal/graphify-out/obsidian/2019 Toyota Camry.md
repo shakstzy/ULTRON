@@ -1,11 +1,11 @@
 ---
 source_file: "workspaces/personal/raw/imessage/individuals/dad-9967/2024/2024-05__dad-9967.md"
 type: "document"
-community: "Sylmar Property + Tenants"
+community: "Community 4"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Sylmar_Property_+_Tenants
+  - community/Community_4
 ---
 
 # 2019 Toyota Camry
@@ -14,4 +14,4 @@ tags:
 - [[Adithya]] - `related_to` [INFERRED]
 - [[Dad (Kumar Nagarajan)]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Sylmar_Property_+_Tenants
+#graphify/document #graphify/INFERRED #community/Community_4

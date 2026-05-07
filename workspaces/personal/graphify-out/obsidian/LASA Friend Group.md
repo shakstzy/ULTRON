@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/chance-reeve-lasa/2025/2025-01__chance-reeve-lasa.md"
 type: "document"
-community: "LASA Classmates"
+community: "Community 12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LASA_Classmates
+  - community/Community_12
 ---
 
 # LASA Friend Group
@@ -18,4 +18,4 @@ tags:
 - [[Dravin Raj (Austin)]] - `related_to` [EXTRACTED]
 - [[Patrick (LASA Austin)]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LASA_Classmates
+#graphify/document #graphify/EXTRACTED #community/Community_12

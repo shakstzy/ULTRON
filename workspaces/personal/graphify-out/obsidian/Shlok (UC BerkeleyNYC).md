@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/shlok-uc-berkeley-nyc.md"
 type: "document"
-community: "UC Berkeley + a16z"
+community: "Community 3"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/UC_Berkeley_+_a16z
+  - community/Community_3
 ---
 
 # Shlok (UC Berkeley/NYC)
@@ -16,4 +16,4 @@ tags:
 - [[UC Berkeley]] - `studies_at` [INFERRED]
 - [[UC Berkeley Network]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/UC_Berkeley_+_a16z
+#graphify/document #graphify/INFERRED #community/Community_3

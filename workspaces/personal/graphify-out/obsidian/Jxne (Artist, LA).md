@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/jxne-artist-la/2025/2025-08__jxne-artist-la.md"
 type: "document"
-community: "Prescription Songs + Music"
+community: "Community 10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prescription_Songs_+_Music
+  - community/Community_10
 ---
 
 # Jxne (Artist, LA)
@@ -16,4 +16,4 @@ tags:
 - [[Music Production (LA)]] - `related_to` [INFERRED]
 - [[Prescription (Recording Studio, LA)]] - `mentioned_by` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prescription_Songs_+_Music
+#graphify/document #graphify/EXTRACTED #community/Community_10

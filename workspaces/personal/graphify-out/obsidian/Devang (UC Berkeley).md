@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/devang-uc-berkeley/2026/2026-01__devang-uc-berkeley.md"
 type: "document"
-community: "UC Berkeley + a16z"
+community: "Community 3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/UC_Berkeley_+_a16z
+  - community/Community_3
 ---
 
 # Devang (UC Berkeley)
@@ -15,4 +15,4 @@ tags:
 - [[Synapse (Adithya's startup)]] - `discussed_with` [EXTRACTED]
 - [[UC Berkeley]] - `studies_at` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/UC_Berkeley_+_a16z
+#graphify/document #graphify/EXTRACTED #community/Community_3

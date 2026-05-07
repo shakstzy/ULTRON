@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/ram-routerprotocol/2025/2025-11__ram-routerprotocol.md"
 type: "document"
-community: "Bay Area + Slash"
+community: "Community 13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bay_Area_+_Slash
+  - community/Community_13
 ---
 
 # Router Protocol (crypto project)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Ram (Router Protocol)]] - `works_at` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bay_Area_+_Slash
+#graphify/document #graphify/EXTRACTED #community/Community_13

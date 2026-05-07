@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/zach-johnson/2026/2026-04__zach-johnson.md"
 type: "document"
-community: "Bay Area + Slash"
+community: "Community 13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bay_Area_+_Slash
+  - community/Community_13
 ---
 
 # San Francisco
@@ -24,4 +24,4 @@ tags:
 - [[Yolanda (Hinge Austin)]] - `lives_in` [EXTRACTED]
 - [[Zach Johnson (friend, musician)]] - `lives_in` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bay_Area_+_Slash
+#graphify/document #graphify/EXTRACTED #community/Community_13

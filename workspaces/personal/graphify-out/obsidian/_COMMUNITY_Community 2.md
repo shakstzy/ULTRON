@@ -1,0 +1,212 @@
+---
+type: community
+cohesion: 1.00
+members: 171
+---
+
+# Community 2
+
+**Cohesion:** 1.00 - tightly connected
+**Members:** 171 nodes
+
+## Members
+- [[Alan Rodrigo (music producer, LA)]] - document - raw/imessage/individuals/alan-rodrigo-producer-la/2024/2024-07__alan-rodrigo-producer-la.md
+- [[Alejandra (Tinder, LA)]] - document - raw/imessage/individuals/alejandra-tinder-la/2026/2026-02__alejandra-tinder-la.md
+- [[Ana (Hinge, LA)]] - document - raw/imessage/individuals/ana-hinge-la/2026/2026-02__ana-hinge-la.md
+- [[Anabhra (Hinge, LA)]] - document - raw/imessage/individuals/anabhra-hinge-la/2025/2025-08__anabhra-hinge-la.md
+- [[Ananya (Hinge, LARiverside)]] - document - raw/imessage/individuals/ananya-hinge-la/2026/2026-02__ananya-hinge-la.md
+- [[Andrew (Cedar, LA)]] - document - raw/imessage/individuals/andrew-cedar-la/2024/2024-12__andrew-cedar-la.md
+- [[Angelica (Hinge LA)]] - document - raw/imessage/individuals/angelica-hinge-la/2026/2026-02__angelica-hinge-la.md
+- [[Anisha (Hinge LA)]] - document - raw/imessage/individuals/anisha-hinge-la/2026/2026-02__anisha-hinge-la.md
+- [[Anna (Tinder, LA)]] - document - raw/imessage/individuals/anna-tinder-la/2026/2026-02__anna-tinder-la.md
+- [[Ariana (Hinge, LA  Tarzana)]] - document - raw/imessage/individuals/ariana-hinge-la/2026/2026-02__ariana-hinge-la.md
+- [[Arka (Hinge, LA  Westwood)]] - document - raw/imessage/individuals/arka-hinge-la/2026/2026-02__arka-hinge-la.md
+- [[Arya (Hinge, LA)]] - document - raw/imessage/individuals/arya-hinge-la/2025/2025-08__arya-hinge-la.md
+- [[Ash (Hinge, LA)]] - document - raw/imessage/individuals/ash-hinge-la/2026/2026-02__ash-hinge-la.md
+- [[Ashank Parikh (UC Berkeley)]] - document - raw/imessage/individuals/ashank-parikh-uc-berkeley/2025/2025-05__ashank-parikh-uc-berkeley.md
+- [[Audrey (Hinge LA, -9380)]] - document - raw/imessage/individuals/audrey-hinge-la/2026/2026-02__audrey-hinge-la.md
+- [[Avinash Chinchali LA]] - document - raw/imessage/_profiles/group-group-avinash-sandeep.md
+- [[B Ham (LA, Music)]] - document - raw/imessage/individuals/b-ham-la/2025/2025-08__b-ham-la.md
+- [[Ballr Hallr (BallerHaller24)]] - document - raw/imessage/individuals/ballr-hallr-la/2024/2024-08__ballr-hallr-la.md
+- [[Ballr Hallr LA]] - document - raw/imessage/_profiles/group-group-ballr.md
+- [[Bella (Tinder LA)]] - document - raw/imessage/_profiles/bella-tinder-la-9157.md
+- [[Ben (Silver Lining studio, LA)]] - document - raw/imessage/individuals/ben-silver-lining-la/2024/2024-03__ben-silver-lining-la.md
+- [[Ben Guitar UC Berkeley]] - document - raw/imessage/_profiles/group-group-ben-prabhat-rushil.md
+- [[Ben Silver Lining LA]] - document - raw/imessage/_profiles/group-group-ben-ryan.md
+- [[Bibby (Grade A, LA)]] - document - raw/imessage/individuals/bibby-grade-a-la/2026/2026-04__bibby-grade-a-la.md
+- [[Bibby Grade A LA]] - document - raw/imessage/_profiles/group-group-bibby-dr-ryan.md
+- [[Brandon Co (beat producer, LA)]] - document - raw/imessage/individuals/brandon-co-beats-la/2024/2024-03__brandon-co-beats-la.md
+- [[Brandon Co Beats LA]] - document - raw/imessage/_profiles/group-group-brandon-stacey.md
+- [[Brian Correll (Music)]] - document - raw/imessage/individuals/brian-correll-music/2024/2024-12__brian-correll-music.md
+- [[Brian Correll Utah Venue]] - document - raw/imessage/individuals/brian-correll-music/2025/2025-03__brian-correll-music.md
+- [[Bryce Yeazell (LACaltech)]] - document - raw/imessage/individuals/bryce-yeazell-la/2024/2024-03__bryce-yeazell-la.md
+- [[C-Tag  Chris Malik (Producer LA)]] - document - raw/imessage/individuals/c-tag-malik-producer-la/2024/2024-04__c-tag-malik-producer-la.md
+- [[Caltech]] - document - raw/imessage/individuals/bryce-yeazell-la/2024/2024-10__bryce-yeazell-la.md
+- [[Cam Ryan]] - document - raw/imessage/individuals/cam-ryan-producer-la/2025/2025-12__cam-ryan-producer-la.md
+- [[Cameel Hanna]] - document - raw/imessage/individuals/cameel-hanna-sound-factory-la/2024/2024-08__cameel-hanna-sound-factory-la.md
+- [[Candice (Stylist LA)]] - document - raw/imessage/individuals/candice-stylist-la/2024/2024-12__candice-stylist-la.md
+- [[Claremont (Rasam's school town)]] - document - raw/imessage/individuals/rasam-hinge-la/2026/2026-02__rasam-hinge-la.md
+- [[Clint Gibbs (LA)]] - document - raw/imessage/individuals/clint-gibbs-la/2024/2024-07__clint-gibbs-la.md
+- [[Crypto  NFL world]] - document
+- [[Daks (music producer, Memoria XI collaborator)]] - document - raw/imessage/individuals/memoria-xi-la/2025/2025-03__memoria-xi-la.md
+- [[Danny Mullen Show (comedy)]] - document - raw/imessage/individuals/ballr-hallr-la/2024/2024-08__ballr-hallr-la.md
+- [[Darnelle (Producer, Koko LA)]] - document - raw/imessage/individuals/darnelle-producer-koko-la/2025/2025-02__darnelle-producer-koko-la.md
+- [[Divya (Hinge LA)]] - document - raw/imessage/individuals/divya-hinge-la/2026/2026-02__divya-hinge-la.md
+- [[Donny (Producer LA)]] - document - raw/imessage/individuals/donny-producer-la/2025/2025-09__donny-producer-la.md
+- [[Donut (Producer LA)]] - document - raw/imessage/individuals/donut-producer-la/2024/2024-05__donut-producer-la.md
+- [[Dylan (Producer LA)]] - document - raw/imessage/_profiles/group-group-dylan-johny.md
+- [[Dylan Hyde (Producer)]] - document - raw/imessage/individuals/johny-hadar-producer-la/2024/2024-03__johny-hadar-producer-la.md
+- [[EDC Las Vegas 2025]] - document - raw/imessage/individuals/brandon-co-beats-la/2024/2024-11__brandon-co-beats-la.md
+- [[Ellie (Silver Lining Studios)]] - document - raw/imessage/individuals/ellie-silver-lining-studios/2024/2024-03__ellie-silver-lining-studios.md
+- [[Farzana (Hinge, LA)]] - document - raw/imessage/individuals/farzana-hinge-la/2026/2026-02__farzana-hinge-la.md
+- [[Garima (Hinge, LA)]] - document - raw/imessage/individuals/garima-hinge-la/2026/2026-02__garima-hinge-la.md
+- [[Geno Catalano]] - document - raw/imessage/individuals/geno-catalano-la/2025/2025-02__geno-catalano-la.md
+- [[Geno Catalano (LA)]] - document - raw/imessage/_profiles/group-group-geno-neek-tito.md
+- [[Group Geno + Neek + Tito (LA)]] - document - raw/imessage/_profiles/group-group-geno-neek-tito.md
+- [[Haan (LA)]] - document - raw/imessage/individuals/haan-la/2024/2024-12__haan-la.md
+- [[Huma (Hinge LA)]] - document - raw/imessage/individuals/huma-hinge-la/2026/2026-02__huma-hinge-la.md
+- [[Ishika (Hinge LA 7597)]] - document - raw/imessage/_profiles/ishika-hinge-la-7597.md
+- [[Ishika (Hinge LA)]] - document - raw/imessage/individuals/ishika-hinge-la/2026/2026-02__ishika-hinge-la.md
+- [[JV (Producer)]] - document - raw/imessage/individuals/jv-producer/2025/2025-04__jv-producer.md
+- [[Jada (Hinge LA)]] - document - raw/imessage/individuals/jada-hinge-la/2026/2026-03__jada-hinge-la.md
+- [[Jakkyboi (LA Music)]] - document - raw/imessage/individuals/jakkyboi-la-music/2024/2024-08__jakkyboi-la-music.md
+- [[James Carr (Engineer  Vellese LA)]] - document - raw/imessage/_profiles/james-carr-engineer-vellese-la.md
+- [[James Carr (Engineer, Vellese LA)]] - document - raw/imessage/individuals/james-carr-engineer-vellese-la/2025/2025-08__james-carr-engineer-vellese-la.md
+- [[Jarrod Gipson (Producer, NashvilleLA)]] - document - raw/imessage/_profiles/group-group-jarrod-nicole-yosef.md
+- [[Jaxxy (Producer LA)]] - document - raw/imessage/individuals/jaxxy-producer-la/2024/2024-08__jaxxy-producer-la.md
+- [[Jayy (Hinge  LA)]] - document - raw/imessage/individuals/jayy-hinge-la/2026/2026-02__jayy-hinge-la.md
+- [[Jean Parker (Producer, LA)]] - document - raw/imessage/_profiles/jean-parker-producer-la.md
+- [[Jeremy Uribe (Producer, LA)]] - document - raw/imessage/_profiles/jeremy-uribe-producer-la.md
+- [[Jillian (Prescription, LA)]] - document - raw/imessage/_profiles/group-group-jillian-keith-ryan.md
+- [[Johny Hadar (Producer, LA)]] - document - raw/imessage/individuals/johny-hadar-producer-la/2024/2024-03__johny-hadar-producer-la.md
+- [[Johny Hadar (Producer, LA)_1]] - document - raw/imessage/_profiles/group-group-johny-shanks.md
+- [[Jugg (Artist, LA)]] - document - raw/imessage/individuals/jugg-artist-la/2024/2024-11__jugg-artist-la.md
+- [[Junaid Rasool (LASA)]] - document - raw/imessage/individuals/junaid-rasool-lasa/2025/2025-01__junaid-rasool-lasa.md
+- [[KOKO (Ryan Stylist, LA)]] - document - raw/imessage/_profiles/group-group-koko-keith-ryan.md
+- [[Kai (Producer, LA)]] - document - raw/imessage/individuals/kai-producer-la/2024/2024-03__kai-producer-la.md
+- [[Kaine (Songwriter, LA)]] - document - raw/imessage/individuals/kaine-songwriter-la/2024/2024-04__kaine-songwriter-la.md
+- [[Kaiya (Hinge, LA)]] - document - raw/imessage/_profiles/kaiya-hinge-la.md
+- [[Kalani (Prescription, LA)]] - document - raw/imessage/_profiles/group-group-kalani-ryan-tyler.md
+- [[Kalani (PrescriptionLA)]] - document - raw/imessage/individuals/kalani-prescription-la/2024/2024-03__kalani-prescription-la.md
+- [[Kalen (LASA)]] - document - raw/imessage/individuals/kalen-lasa/2025/2025-01__kalen-lasa.md
+- [[Kamryn (Hinge, LAPasadena)]] - document - raw/imessage/individuals/kamryn-hinge-la/2025/2025-08__kamryn-hinge-la.md
+- [[Karthika (Hinge LA)]] - document - workspaces/personal/raw/imessage/individuals/karthika-hinge-la/2026/2026-02__karthika-hinge-la.md
+- [[Kevo (Prescription Producer, LA)]] - document - raw/imessage/_profiles/group-group-haan-kevo.md
+- [[Khushi (Hinge, Riverside CA)]] - document - raw/imessage/individuals/khushi-nyc/2025/2025-06__khushi-nyc.md
+- [[Kia Shervin (LAOC)]] - document - raw/imessage/individuals/kia-shervin-la/2024/2024-03__kia-shervin-la.md
+- [[Kira (Tinder LA, Downtown)]] - document - raw/imessage/individuals/kira-tinder-la/2026/2026-02__kira-tinder-la.md
+- [[Kuji (Producer LA)]] - document - raw/imessage/individuals/kuji-producer-la/2024/2024-12__kuji-producer-la.md
+- [[Lance Baker (barbercreator LA)]] - document - raw/imessage/individuals/lance-baker/2024/2024-03__lance-baker.md
+- [[Los Angeles, CA]] - document - raw/imessage/individuals/shevanti-hinge-la/2026/2026-02__shevanti-hinge-la.md
+- [[Louie Gomez (Tyler Producer, LA)]] - document - raw/imessage/individuals/louie-gomez-tyler-producer-la/2024/2024-04__louie-gomez-tyler-producer-la.md
+- [[Louie Gomez Tyler (Producer, LA)]] - document - raw/imessage/_profiles/louie-gomez-tyler-producer-la.md
+- [[Lourdiz (Producer, LA)]] - document - raw/imessage/individuals/lourdiz-producer-la/2024/2024-06__lourdiz-producer-la.md
+- [[Lucy (Prescription, LA)]] - document - raw/imessage/_profiles/group-group-lucy-nick.md
+- [[Luke (Music Contact)]] - document - raw/imessage/individuals/clint-gibbs-la/2024/2024-08__clint-gibbs-la.md
+- [[Luke Whitney (UCLA Globalization, LA)]] - document - raw/imessage/_profiles/group-group-luke.md
+- [[Luke Whitney (UCLA Globalization, LA)_1]] - document - raw/imessage/_profiles/luke-whitney-ucla-globalization-la.md
+- [[Mack (Post Sound Factory LA)]] - document - raw/imessage/_profiles/mack-post-sound-factory-la.md
+- [[Malik (Music)]] - document - raw/imessage/individuals/donny-producer-la/2025/2025-10__donny-producer-la.md
+- [[Malik (Producer Donny Tyler LA)]] - document - raw/imessage/_profiles/group-group-donny-malik.md
+- [[Malik 95 (Producer LA)]] - document - raw/imessage/_profiles/malik-ninety-five-producer-la.md
+- [[Malik 95 (Producer LA)_1]] - document - raw/imessage/individuals/malik-ninety-five-producer-la/2024/2024-03__malik-ninety-five-producer-la.md
+- [[Mara (Hinge LA)]] - document - raw/imessage/individuals/mara-hinge-la/2026/2026-02__mara-hinge-la.md
+- [[Marc E (CryptoJames LA)]] - document - raw/imessage/individuals/marc-e-crypto-james-la/2025/2025-11__marc-e-crypto-james-la.md
+- [[Marc E (DJ  crypto, LA)]] - document - raw/imessage/individuals/marc-e-crypto-james-la/2025/2025-12__marc-e-crypto-james-la.md
+- [[Mary (Tinder match, LA  Highland Park)]] - document - raw/imessage/individuals/mary-tinder-la/2026/2026-02__mary-tinder-la.md
+- [[Matt Crass (Recording School, LA)]] - document - raw/imessage/_profiles/group-group-matt-ryan-score.md
+- [[Memoria XI (musician, LAMD)]] - document - raw/imessage/individuals/memoria-xi-la/2025/2025-03__memoria-xi-la.md
+- [[Michael V (Silver Lining Studio, LA)]] - document - raw/imessage/individuals/michael-v-silver-lining-la/2024/2024-04__michael-v-silver-lining-la.md
+- [[Mike Crook]] - document - raw/imessage/individuals/mike-crook-la/2025/2025-08__mike-crook-la.md
+- [[Mike Smrtdeath]] - document - raw/imessage/individuals/mike-smrtdeath-la-music/2024/2024-12__mike-smrtdeath-la-music.md
+- [[Mikey (Silver Lining, LA)]] - document - raw/imessage/_profiles/group-group-mikey-zach.md
+- [[Mikey LaSusa]] - document - raw/imessage/individuals/mikey-silver-lining-la/2024/2024-04__mikey-silver-lining-la.md
+- [[Mizzylott (Producer, LA)]] - document - raw/imessage/individuals/mizzylott-producer-la/2024/2024-04__mizzylott-producer-la.md
+- [[Mombru (producer, LA)]] - document - raw/imessage/individuals/mombru-producer-la/2024/2024-12__mombru-producer-la.md
+- [[Moonee (Tinder, LAVentura)]] - document - raw/imessage/individuals/moonee-tinder-la/2026/2026-02__moonee-tinder-la.md
+- [[Music Production]] - document - raw/imessage/individuals/tyler-sheppard-la/2024/2024-03__tyler-sheppard-la.md
+- [[Music Production (LA)]] - document
+- [[Mychal Kendricks Malik (CryptoNFLProducer, LA)]] - document - workspaces/personal/raw/imessage/_profiles/mychal-kendricks-malik-crypto-nfl-producer-la.md
+- [[Mythree (Hinge LA)]] - document - raw/imessage/individuals/mythree-hinge-la/2026/2026-02__mythree-hinge-la.md
+- [[Nashville]] - document - raw/imessage/_profiles/group-group-jarrod-nicole-yosef.md
+- [[Natasha (Hinge LA)]] - document - raw/imessage/individuals/natasha-hinge-la/2026/2026-02__natasha-hinge-la.md
+- [[Neek (LA)]] - document - workspaces/personal/raw/imessage/_profiles/neek-la.md
+- [[Neha (Hinge, LA)]] - document - workspaces/personal/raw/imessage/_profiles/neha-hinge-la.md
+- [[Nick (LA, Culver City)]] - document - raw/imessage/individuals/rushil-jha-uc-berkeley-nyc/2025/2025-09__rushil-jha-uc-berkeley-nyc.md
+- [[Nick Guilmette]] - document - raw/imessage/individuals/nick-guilmette-la/2024/2024-12__nick-guilmette-la.md
+- [[Nick Guilmette (LA)]] - document - workspaces/personal/raw/imessage/_profiles/nick-guilmette-la.md
+- [[Nicole Beaubien]] - document - raw/imessage/groups/group-jarrod-nicole-yosef/2025/2025-09__group-jarrod-nicole-yosef.md
+- [[Olivia (Hinge LA)]] - document - raw/imessage/individuals/olivia-hinge-la/2026/2026-02__olivia-hinge-la.md
+- [[Palak (Hinge LA  USC)]] - document - raw/imessage/individuals/palak-hinge-la/2026/2026-02__palak-hinge-la.md
+- [[Pali (Hinge LA  Pasadena)]] - document - raw/imessage/individuals/pali-hinge-la/2026/2026-02__pali-hinge-la.md
+- [[Patrick Luna (LA)]] - document - raw/imessage/individuals/patrick-luna-la/2024/2024-08__patrick-luna-la.md
+- [[Peter Fenn (LA)]] - document - raw/imessage/individuals/peter-fenn-la/2025/2025-10__peter-fenn-la.md
+- [[Peter Fenn LA]] - document - raw/imessage/_profiles/group-group-peter-tyler-yosef.md
+- [[Prachi (Hinge, LA)]] - document - raw/imessage/individuals/prachi-hinge-la/2026/2026-02__prachi-hinge-la.md
+- [[Prescription (LA)]] - document - raw/imessage/_profiles/group-group-jillian-keith-ryan.md
+- [[Prescription Studio (LA)]] - document - raw/imessage/individuals/sahil-dutta-producer-la/2024/2024-08__sahil-dutta-producer-la.md
+- [[Prishaa (Hinge, LA)]] - document - raw/imessage/individuals/prishaa-hinge-la/2026/2026-02__prishaa-hinge-la.md
+- [[RXK Nephew (rapper)]] - document - raw/imessage/individuals/ballr-hallr-la/2024/2024-11__ballr-hallr-la.md
+- [[Rahul Umapathy USC LA]] - document - raw/imessage/_profiles/group-group-rahul.md
+- [[Ranjana (Tinder, LA)]] - document - raw/imessage/individuals/ranjana-tinder-la/2026/2026-02__ranjana-tinder-la.md
+- [[Rasam (Hinge, LA  Claremont)]] - document - raw/imessage/individuals/rasam-hinge-la/2026/2026-02__rasam-hinge-la.md
+- [[Recording Studio (LA area)]] - document - raw/imessage/individuals/arya-hinge-la/2025/2025-08__arya-hinge-la.md
+- [[Rhea (Hinge, LA)]] - document - raw/imessage/individuals/rhea-hinge-la/2026/2026-02__rhea-hinge-la.md
+- [[Ria (Hinge, LA)]] - document - raw/imessage/individuals/ria-hinge-la/2026/2026-02__ria-hinge-la.md
+- [[Rio (Root, LA)]] - document - raw/imessage/individuals/rio-root-la/2025/2025-01__rio-root-la.md
+- [[Roshni (Hinge  LA  Irvine)]] - document - raw/imessage/individuals/roshni-hinge-la/2026/2026-02__roshni-hinge-la.md
+- [[Roxanne (Hinge  LA)]] - document - raw/imessage/individuals/roxanne-hinge-la/2026/2026-02__roxanne-hinge-la.md
+- [[Ryan (Hinge, LA)]] - document - raw/imessage/individuals/ryan-hinge-la/2026/2026-02__ryan-hinge-la.md
+- [[Ryan (LA music collaborator)]] - document - raw/imessage/individuals/mike-crook-la/2025/2025-08__mike-crook-la.md
+- [[Ryan (Silver Lining LA)]] - document - raw/imessage/individuals/ryan-silver-lining-la/2024/2024-10__ryan-silver-lining-la.md
+- [[Ryan (Silver Lining, LA)]] - document - raw/imessage/individuals/ryan-silver-lining-la/2024/2024-08__ryan-silver-lining-la.md
+- [[Ryan Ryster (Producer, LA)]] - document - raw/imessage/_profiles/ryan-ryster-producer-la.md
+- [[Ryan Ryster (Producer, LA)_1]] - document - raw/imessage/individuals/ryan-ryster-producer-la/2024/2024-08__ryan-ryster-producer-la.md
+- [[Saadhvi (Hinge LA)]] - document - raw/imessage/individuals/saadhvi-hinge-la/2026/2026-02__saadhvi-hinge-la.md
+- [[Sadhvi (Hinge LA)]] - document - raw/imessage/individuals/sadhvi-hinge-la/2026/2026-02__sadhvi-hinge-la.md
+- [[Sahil Dutta (Producer, LA)]] - document - raw/imessage/individuals/sahil-dutta-producer-la/2024/2024-08__sahil-dutta-producer-la.md
+- [[Sakshi (NYC  LA)]] - document - raw/imessage/individuals/sakshi-nyc/2025/2025-07__sakshi-nyc.md
+- [[Score (Beats Producer, NYC)]] - document - raw/imessage/_profiles/score-beats-producer-nyc.md
+- [[Score Beats (Producer, NYC)]] - document - raw/imessage/_profiles/group-group-matt-ryan-score.md
+- [[Shanks (Producer, LA)]] - document - raw/imessage/_profiles/shanks-producer-la.md
+- [[Shevanti (Hinge, LA)]] - document - raw/imessage/individuals/shevanti-hinge-la/2026/2026-02__shevanti-hinge-la.md
+- [[Shivani (Hinge, LA)]] - document - raw/imessage/individuals/shivani-hinge-la/2025/2025-08__shivani-hinge-la.md
+- [[Shree (Hinge, LAIrvine)]] - document - raw/imessage/individuals/shree-hinge-la/2026/2026-02__shree-hinge-la.md
+- [[Silver Lining]] - document - raw/imessage/_profiles/group-group-ben-ryan.md
+- [[Silver Lining (LA)]] - document
+- [[Silver Lining Studio (LA)]] - document - raw/imessage/individuals/michael-v-silver-lining-la/2024/2024-04__michael-v-silver-lining-la.md
+- [[Silver Lining Studios]] - document - raw/imessage/individuals/ellie-silver-lining-studios/2024/2024-03__ellie-silver-lining-studios.md
+- [[Sound Factory LA]] - document - raw/imessage/individuals/cameel-hanna-sound-factory-la/2024/2024-08__cameel-hanna-sound-factory-la.md
+- [[Tinder (Dating App)]] - document
+- [[Tito (Producer, LA)]] - document - raw/imessage/_profiles/group-group-geno-neek-tito.md
+- [[Trey (Austin, musician)]] - document - raw/imessage/individuals/trey-austin/2025/2025-04__trey-austin.md
+- [[Westcove Partners]] - document - raw/imessage/individuals/geno-catalano-la/2025/2025-03__geno-catalano-la.md
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Community_2
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 139 edges to [[_COMMUNITY_Community 0]]
+- 56 edges to [[_COMMUNITY_Community 1]]
+- 18 edges to [[_COMMUNITY_Community 10]]
+- 9 edges to [[_COMMUNITY_Community 4]]
+- 6 edges to [[_COMMUNITY_Community 5]]
+- 5 edges to [[_COMMUNITY_Community 14]]
+- 4 edges to [[_COMMUNITY_Community 11]]
+- 4 edges to [[_COMMUNITY_Community 13]]
+- 4 edges to [[_COMMUNITY_Community 7]]
+- 4 edges to [[_COMMUNITY_Community 12]]
+- 3 edges to [[_COMMUNITY_Community 3]]
+- 2 edges to [[_COMMUNITY_Community 8]]
+- 1 edge to [[_COMMUNITY_Community 19]]
+
+## Top bridge nodes
+- [[Los Angeles, CA]] - degree 176, connects to 11 communities
+- [[Music Production]] - degree 46, connects to 7 communities
+- [[Music Production (LA)]] - degree 17, connects to 3 communities
+- [[Karthika (Hinge LA)]] - degree 4, connects to 3 communities
+- [[Prachi (Hinge, LA)]] - degree 4, connects to 3 communities

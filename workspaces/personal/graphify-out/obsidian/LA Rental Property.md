@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/group-group-amadeus-angel-evan.md"
 type: "document"
-community: "Sylmar Property + Tenants"
+community: "Community 4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sylmar_Property_+_Tenants
+  - community/Community_4
 ---
 
 # LA Rental Property
@@ -20,4 +20,4 @@ tags:
 - [[Noah Renter]] - `related_to` [EXTRACTED]
 - [[REI LA Fernando Morales (Rental)]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sylmar_Property_+_Tenants
+#graphify/document #graphify/EXTRACTED #community/Community_4

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/ajay-crypto.md"
 type: "concept"
-community: "Crypto Events + Investors"
+community: "Community 8"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Crypto_Events_+_Investors
+  - community/Community_8
 ---
 
 # Crypto Network
@@ -15,4 +15,4 @@ tags:
 - [[Ace (Brooklyn Crypto Meetup)]] - `related_to` [EXTRACTED]
 - [[Ajay (cryptoinvestor, LA)]] - `related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Crypto_Events_+_Investors
+#graphify/concept #graphify/EXTRACTED #community/Community_8

@@ -1,11 +1,11 @@
 ---
 source_file: "raw/gmail/gmail-schema-adithya-shak-kumar.md"
 type: "place"
-community: "Sylmar Property + Tenants"
+community: "Community 4"
 tags:
   - graphify/place
   - graphify/INFERRED
-  - community/Sylmar_Property_+_Tenants
+  - community/Community_4
 ---
 
 # Klein Ct Rental Property (Sylmar, CA)
@@ -15,4 +15,4 @@ tags:
 - [[Adithya]] - `related_to` [EXTRACTED]
 - [[Alan (renter inquiry, Sylmar)]] - `related_to` [INFERRED]
 
-#graphify/place #graphify/INFERRED #community/Sylmar_Property_+_Tenants
+#graphify/place #graphify/INFERRED #community/Community_4

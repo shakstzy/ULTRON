@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/benti-hinge-la-8721/2026/2026-02__benti-hinge-la-8721.md"
 type: "document"
-community: "Hinge + AI Music Project"
+community: "Community 11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hinge_+_AI_Music_Project
+  - community/Community_11
 ---
 
 # Benti (Hinge, LA / USC)
@@ -15,4 +15,4 @@ tags:
 - [[Hinge (Dating App)]] - `mentioned_by` [INFERRED]
 - [[Los Angeles, CA]] - `lives_in` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hinge_+_AI_Music_Project
+#graphify/document #graphify/EXTRACTED #community/Community_11

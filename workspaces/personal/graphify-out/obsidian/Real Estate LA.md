@@ -1,11 +1,11 @@
 ---
 source_file: "None"
 type: "document"
-community: "Sylmar Property + Tenants"
+community: "Community 4"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Sylmar_Property_+_Tenants
+  - community/Community_4
 ---
 
 # Real Estate LA
@@ -17,4 +17,4 @@ tags:
 - [[Ashley (Renter Showing)]] - `related_to` [INFERRED]
 - [[Austin Davis (Renter Showing)]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Sylmar_Property_+_Tenants
+#graphify/document #graphify/INFERRED #community/Community_4

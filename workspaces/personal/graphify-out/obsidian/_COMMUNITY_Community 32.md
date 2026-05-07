@@ -21,7 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Dating Roster (mixed)]]
+- 1 edge to [[_COMMUNITY_Community 0]]
 
 ## Top bridge nodes
 - [[LaToya P. (Serenity of Life Counseling)]] - degree 2, connects to 1 community

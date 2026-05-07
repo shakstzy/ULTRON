@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/_profiles/group-group-alec-ashank.md"
 type: "document"
-community: "UC Berkeley + a16z"
+community: "Community 3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/UC_Berkeley_+_a16z
+  - community/Community_3
 ---
 
 # UC Berkeley Network
@@ -31,4 +31,4 @@ tags:
 - [[Rushil Jha]] - `related_to` [INFERRED]
 - [[Shlok (UC BerkeleyNYC)]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/UC_Berkeley_+_a16z
+#graphify/document #graphify/EXTRACTED #community/Community_3

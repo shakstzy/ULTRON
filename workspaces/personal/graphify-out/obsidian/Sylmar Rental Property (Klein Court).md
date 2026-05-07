@@ -1,11 +1,11 @@
 ---
 source_file: "workspaces/personal/raw/imessage/individuals/zubair-renter-showing/2025/2025-08__zubair-renter-showing.md"
 type: "document"
-community: "Sylmar Property + Tenants"
+community: "Community 4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Sylmar_Property_+_Tenants
+  - community/Community_4
 ---
 
 # Sylmar Rental Property (Klein Court)
@@ -15,4 +15,4 @@ tags:
 - [[Ziggy (Renter Prospect)]] - `mentioned_by` [EXTRACTED]
 - [[Zubair  Zobayer Syed Ahmed (Renter)]] - `mentioned_by` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Sylmar_Property_+_Tenants
+#graphify/document #graphify/EXTRACTED #community/Community_4

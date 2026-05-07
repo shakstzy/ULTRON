@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/georg-bitlayer/2024/2024-11__georg-bitlayer.md"
 type: "document"
-community: "Crypto/Web3 Network"
+community: "Community 7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crypto/Web3_Network
+  - community/Community_7
 ---
 
 # Georg (Bitlayer)
@@ -15,4 +15,4 @@ tags:
 - [[Bitlayer]] - `works_at` [EXTRACTED]
 - [[Crypto]] - `related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Crypto/Web3_Network
+#graphify/document #graphify/EXTRACTED #community/Community_7

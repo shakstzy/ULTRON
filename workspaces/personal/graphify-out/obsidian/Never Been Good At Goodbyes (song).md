@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/groups/group-ryan-tyler/2024/2024-05__group-ryan-tyler.md"
 type: "document"
-community: "Prescription Songs + Music"
+community: "Community 10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prescription_Songs_+_Music
+  - community/Community_10
 ---
 
 # Never Been Good At Goodbyes (song)
@@ -15,4 +15,4 @@ tags:
 - [[Ryan Ogren]] - `discussed_with` [EXTRACTED]
 - [[Tyler Sheppard (LA, music producer)]] - `discussed_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prescription_Songs_+_Music
+#graphify/document #graphify/EXTRACTED #community/Community_10

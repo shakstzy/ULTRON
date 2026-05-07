@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/anusha-hinge-austin-5817/2025/2025-05__anusha-hinge-austin-5817.md"
 type: "document"
-community: "Austin Dating + Locals"
+community: "Community 1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Austin_Dating_+_Locals
+  - community/Community_1
 ---
 
 # Anusha (Hinge, Austin, 5817)
@@ -15,4 +15,4 @@ tags:
 - [[Austin, TX]] - `lives_in` [INFERRED]
 - [[Hinge (dating app)]] - `mentioned_by` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Austin_Dating_+_Locals
+#graphify/document #graphify/EXTRACTED #community/Community_1

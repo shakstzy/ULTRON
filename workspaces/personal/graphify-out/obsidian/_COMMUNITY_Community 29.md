@@ -1,12 +1,12 @@
 ---
 type: community
-cohesion: 0.67
+cohesion: 1.00
 members: 3
 ---
 
 # Community 29
 
-**Cohesion:** 0.67 - moderately connected
+**Cohesion:** 1.00 - tightly connected
 **Members:** 3 nodes
 
 ## Members
@@ -22,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Dating Roster (mixed)]]
+- 1 edge to [[_COMMUNITY_Community 0]]
 
 ## Top bridge nodes
 - [[Tyler (Sapient, crypto)]] - degree 3, connects to 1 community

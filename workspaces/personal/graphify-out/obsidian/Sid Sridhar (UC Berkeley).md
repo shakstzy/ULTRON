@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/sid-sridhar-uc-berkeley/2024/2024-05__sid-sridhar-uc-berkeley.md"
 type: "document"
-community: "UC Berkeley + a16z"
+community: "Community 3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/UC_Berkeley_+_a16z
+  - community/Community_3
 ---
 
 # Sid Sridhar (UC Berkeley)
@@ -15,4 +15,4 @@ tags:
 - [[Andreessen Horowitz (a16z)]] - `discussed_with` [EXTRACTED]
 - [[UC Berkeley]] - `studies_at` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/UC_Berkeley_+_a16z
+#graphify/document #graphify/EXTRACTED #community/Community_3

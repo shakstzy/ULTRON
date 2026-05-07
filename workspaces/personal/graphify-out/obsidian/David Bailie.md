@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/david-bailie/2025/2025-05__david-bailie.md"
 type: "document"
-community: "Amsterdam Trip + Festival Crew"
+community: "Community 6"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Amsterdam_Trip_+_Festival_Crew
+  - community/Community_6
 ---
 
 # David Bailie
@@ -16,4 +16,4 @@ tags:
 - [[Noah Bailie]] - `related_to` [INFERRED]
 - [[Synapse (Adithya's startup)]] - `discussed_with` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Amsterdam_Trip_+_Festival_Crew
+#graphify/document #graphify/INFERRED #community/Community_6

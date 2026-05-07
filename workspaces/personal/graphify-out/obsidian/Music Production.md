@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/tyler-sheppard-la/2024/2024-03__tyler-sheppard-la.md"
 type: "document"
-community: "LA Dating + LA Network"
+community: "Community 2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LA_Dating_+_LA_Network
+  - community/Community_2
 ---
 
 # Music Production
@@ -58,4 +58,4 @@ tags:
 - [[Yosef (Producer, LA)]] - `works_at` [INFERRED]
 - [[Yosef Producer LA]] - `related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LA_Dating_+_LA_Network
+#graphify/document #graphify/EXTRACTED #community/Community_2

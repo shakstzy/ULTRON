@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/george-beall-bd-crypto-gauntlet-la/2024/2024-12__george-beall-bd-crypto-gauntlet-la.md"
 type: "document"
-community: "Crypto/Web3 Network"
+community: "Community 7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crypto/Web3_Network
+  - community/Community_7
 ---
 
 # George Beall (BD Crypto Gauntlet)
@@ -16,4 +16,4 @@ tags:
 - [[Gauntlet]] - `works_at` [EXTRACTED]
 - [[Los Angeles, CA]] - `lives_in` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crypto/Web3_Network
+#graphify/document #graphify/EXTRACTED #community/Community_7

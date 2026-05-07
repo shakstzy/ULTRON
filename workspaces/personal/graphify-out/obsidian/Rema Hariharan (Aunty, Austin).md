@@ -1,11 +1,11 @@
 ---
 source_file: "raw/imessage/individuals/rema-hariharan-aunty-austin/2025/2025-10__rema-hariharan-aunty-austin.md"
 type: "document"
-community: "Austin Dating + Locals"
+community: "Community 1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Austin_Dating_+_Locals
+  - community/Community_1
 ---
 
 # Rema Hariharan (Aunty, Austin)
@@ -15,4 +15,4 @@ tags:
 - [[Austin, TX]] - `lives_in` [EXTRACTED]
 - [[Austin, TX_1]] - `lives_in` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Austin_Dating_+_Locals
+#graphify/document #graphify/INFERRED #community/Community_1

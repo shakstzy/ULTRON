@@ -1,11 +1,11 @@
 ---
 source_file: "None"
 type: "document"
-community: "Sylmar Property + Tenants"
+community: "Community 4"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Sylmar_Property_+_Tenants
+  - community/Community_4
 ---
 
 # Apartment Search / Renting
@@ -15,4 +15,4 @@ tags:
 - [[Amadeus (renter, LAHollywood Hills)]] - `mentioned_by` [INFERRED]
 - [[Angel (Renter Showing)]] - `mentioned_by` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Sylmar_Property_+_Tenants
+#graphify/document #graphify/INFERRED #community/Community_4

@@ -69,23 +69,6 @@ export async function humanClick(page, selector, options = {}) {
   await page.mouse.up();
 }
 
-export async function typeHuman(page, selector, text) {
-  const el = await page.waitForSelector(selector, { state: 'visible', timeout: 10000 });
-  await humanClick(page, el);
-  await sleep(rand(150, 400));
-  // WPM conversion: avg 5 chars per word, so chars/sec = wpm * 5 / 60
-  for (const ch of text) {
-    const wpm = rand(WPM_MIN, WPM_MAX);
-    const msPerChar = 60000 / (wpm * 5);
-    // Random fluctuation per char
-    const perChar = msPerChar * rand(0.6, 1.6);
-    await page.keyboard.type(ch, { delay: 0 });
-    await sleep(perChar);
-    // 5% chance of short thought-pause
-    if (Math.random() < 0.05) await sleep(rand(400, 900));
-  }
-}
-
 export async function wheelBurst(page, totalDelta) {
   // Decaying wheel deltas: start high, decay over 4-8 ticks
   const ticks = Math.floor(rand(4, 8));

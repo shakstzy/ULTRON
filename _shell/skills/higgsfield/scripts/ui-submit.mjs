@@ -5,7 +5,7 @@
 
 import { transition } from './state.mjs';
 import { hasCaptchaInDom, trigger403Breaker } from './browser.mjs';
-import { pause, pauseJitter } from './behavior.mjs';
+import { pause, pauseJitter, humanClick } from './behavior.mjs';
 import { extractUserIdFromJwt } from './jwt.mjs';
 import { unwrapImagesHiggsProxy } from './download.mjs';
 
@@ -272,13 +272,22 @@ export async function submitViaUI(page, context, runDir, {
     });
     console.error(`[ui-submit] chose Generate: "${chosen.text}" xywh=${JSON.stringify(chosen.xywh)} prompt-anchor=(${Math.round(promptAnchor.anchor.cx)},${Math.round(promptAnchor.anchor.cy)}) using-slug=${slug}`);
   }
-  // Move mouse off any hover-sensitive nav, scroll button into view, then force-click
-  // (bypass hit-testing so header overlays can't intercept the submit).
+  // The Generate button is the highest-stakes click — DataDome scrutinizes the
+  // primary action click hardest. Use humanClick (bezier mouse + dwell + native
+  // mouse.down/up) instead of force:true to avoid emitting `isTrusted=false`-style
+  // signals on the most behaviorally observable click in the flow. If the bezier
+  // path fails (e.g., a sticky overlay intercepts), fall back to force:true so
+  // the submit still goes through.
   await page.mouse.move(10, 10);
   await pause(150);
   await genBtnElement.scrollIntoViewIfNeeded().catch(() => {});
   await pause(100);
-  await genBtnElement.click({ timeout: 10000, force: true });
+  try {
+    await humanClick(page, genBtnElement);
+  } catch (humanErr) {
+    if (process.env.HF_DEBUG === '1') console.error(`[ui-submit] humanClick failed (${humanErr.message}); falling back to force-click`);
+    await genBtnElement.click({ timeout: 10000, force: true });
+  }
 
   let result;
   try {

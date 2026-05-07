@@ -7,7 +7,7 @@ import { waitForClerkReady } from './jwt.mjs';
 
 export async function runLogin() {
   console.log('[higgsfield] Opening visible Chrome. Sign in to higgsfield.ai with Google / Apple / Microsoft / email.');
-  console.log('[higgsfield] Profile: ~/.quantum/chrome-profiles/higgsfield/');
+  console.log('[higgsfield] Profile: /Users/shakstzy/ULTRON/_credentials/browser-profiles/higgsfield/');
   console.log('[higgsfield] ToS note: automated access may violate Higgsfield ToS. Use a burner account for heavy production use.');
 
   // Login requires a visible window; force-override the off-screen default.

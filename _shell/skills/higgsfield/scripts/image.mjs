@@ -11,7 +11,7 @@ import { verifyUaChConsistency } from './fingerprint.mjs';
 import { waitForCapturedJwt } from './jwt.mjs';
 import { join, resolve as pathResolve } from 'node:path';
 
-const OUTPUT_ROOT = process.env.HF_OUTPUT_DIR || `${process.env.HOME}/.quantum/skill-output/higgsfield`;
+const OUTPUT_ROOT = process.env.HF_OUTPUT_DIR || `/Users/shakstzy/ULTRON/_shell/skill-output/higgsfield`;
 
 // argv.ref is either a single string (one --ref flag) or an array (repeated flags,
 // normalized in run.mjs). Returns an array of paths.

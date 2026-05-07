@@ -38,7 +38,7 @@ import { waitForCapturedJwt } from './jwt.mjs';
 import { readFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join, resolve as pathResolve } from 'node:path';
 
-const OUTPUT_ROOT = process.env.HF_OUTPUT_DIR || `${process.env.HOME}/.quantum/skill-output/higgsfield`;
+const OUTPUT_ROOT = process.env.HF_OUTPUT_DIR || `/Users/shakstzy/ULTRON/_shell/skill-output/higgsfield`;
 // Reports: account-wide cap appears to be 8; per-model caps can be lower
 // (Nano Banana Pro "unlimited" reportedly caps at 4). Default to 4 to stay
 // under the strictest per-model cap; bump via --concurrency or env.

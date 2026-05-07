@@ -11,7 +11,7 @@ import { waitForCapturedJwt } from './jwt.mjs';
 import { collectRefs } from './image.mjs';
 import { join, resolve as pathResolve } from 'node:path';
 
-const OUTPUT_ROOT = process.env.HF_OUTPUT_DIR || `${process.env.HOME}/.quantum/skill-output/higgsfield`;
+const OUTPUT_ROOT = process.env.HF_OUTPUT_DIR || `/Users/shakstzy/ULTRON/_shell/skill-output/higgsfield`;
 const SLUG = 'marketing_studio_video';
 const EXPECTED_COST = 48;
 const VIDEO_EXTS = ['mp4', 'webm', 'mov'];

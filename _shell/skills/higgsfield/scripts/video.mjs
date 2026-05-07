@@ -18,7 +18,7 @@ const VIDEO_ASPECT_LABELS     = ['16:9', '9:16', '1:1', '4:3', '3:4', 'Auto'];
 const VIDEO_DURATION_LABELS   = ['3s', '5s', '8s', '10s', '15s', '3.0s', '5.0s', '8.0s', '10.0s', '15.0s'];
 const VIDEO_RESOLUTION_LABELS = ['720p', '1080p'];
 
-const OUTPUT_ROOT = process.env.HF_OUTPUT_DIR || `${process.env.HOME}/.quantum/skill-output/higgsfield`;
+const OUTPUT_ROOT = process.env.HF_OUTPUT_DIR || `/Users/shakstzy/ULTRON/_shell/skill-output/higgsfield`;
 const VIDEO_URL = 'https://higgsfield.ai/ai/video';
 
 // Catalog matches /ai/video model picker as of 2026-04-21 (see rules/site-map.json).

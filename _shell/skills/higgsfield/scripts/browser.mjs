@@ -8,7 +8,7 @@ import { chmod, mkdir } from 'node:fs/promises';
 import { existsSync, readFileSync, writeFileSync, unlinkSync, openSync, closeSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 
-const PROFILE_DIR = process.env.HF_PROFILE_DIR || `${process.env.HOME}/.quantum/chrome-profiles/higgsfield`;
+const PROFILE_DIR = process.env.HF_PROFILE_DIR || `/Users/shakstzy/ULTRON/_credentials/browser-profiles/higgsfield`;
 const PIDFILE = join(PROFILE_DIR, '.skill.pid');
 const BREAKER_FILE = join(PROFILE_DIR, '.breaker.json');
 

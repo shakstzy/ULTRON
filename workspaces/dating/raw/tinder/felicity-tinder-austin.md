@@ -8,7 +8,7 @@ person_id: "69e858a71952b2bb6178a523"
 phone: null
 status: "new"
 first_seen: "2026-04-23T00:00:00Z"
-last_activity: "2026-04-23T06:13:00Z"
+last_activity: "2026-05-07T01:53:29.320Z"
 last_scrape: "2026-05-01T07:00:18.079Z"
 previous_slugs: []
 migrated_from_shakos: "felicity"
@@ -96,8 +96,10 @@ last_profile_diff: "2026-05-01T07:00:18.079Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 01:53 the gossip girl cocktail raises the bar. do you actually watch or is it just the aesthetic
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:00 queued_auto (auto, opener) [draft:ac3c0ea2] lint=true "the gossip girl cocktail raises the bar. do you actually watch or is it just the aesthetic"
+- 2026-05-07 01:53 sent (auto, auto-or-hitl) [draft:ac3c0ea2] lint=true "the gossip girl cocktail raises the bar. do you actually watch or is it just the aesthetic"

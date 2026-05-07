@@ -8,7 +8,7 @@ person_id: "66628557a9fe300100bd4f84"
 phone: null
 status: "new"
 first_seen: "2026-04-05T00:00:00Z"
-last_activity: "2026-04-05T07:34:00Z"
+last_activity: "2026-05-07T01:52:58.429Z"
 last_scrape: "2026-05-01T06:56:12.870Z"
 previous_slugs: []
 migrated_from_shakos: "eva-2"
@@ -96,8 +96,10 @@ last_profile_diff: "2026-05-01T06:56:12.870Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 01:52 the King's Cross stop in your photos, you studying abroad or just passing through London?
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:00 queued_auto (auto, opener) [draft:ce28cff2] lint=true "the King's Cross stop in your photos, you studying abroad or just passing through London?"
+- 2026-05-07 01:52 sent (auto, auto-or-hitl) [draft:ce28cff2] lint=true "the King's Cross stop in your photos, you studying abroad or just passing through London?"

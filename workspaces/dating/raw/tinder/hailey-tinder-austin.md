@@ -8,7 +8,7 @@ person_id: "6972d62ff3e603394660a1f5"
 phone: null
 status: "new"
 first_seen: "2026-04-21T00:00:00Z"
-last_activity: "2026-04-21T15:21:00Z"
+last_activity: "2026-05-07T01:54:18.270Z"
 last_scrape: "2026-05-01T07:13:04.233Z"
 previous_slugs: []
 migrated_from_shakos: "hailey-2"
@@ -101,8 +101,10 @@ last_profile_diff: "2026-05-01T07:13:04.233Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 01:54 the D20 tattoo and "trauma dumping on the first date" energy in the same profile is a very specific kind of chaotic. natural 20 or nat 1 for how bad the overshare gets?
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:01 queued_auto (auto, opener) [draft:c698c841] lint=true "the D20 tattoo and \"trauma dumping on the first date\" energy in the same profile is a very specific kind of chaotic. natural 20 or nat 1 for how bad the overshare gets?"
+- 2026-05-07 01:54 sent (auto, auto-or-hitl) [draft:c698c841] lint=true "the D20 tattoo and \"trauma dumping on the first date\" energy in the same profile is a very specific kind of chaotic. natural 20 or nat 1 for how bad the overshare gets?"

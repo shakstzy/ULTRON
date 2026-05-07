@@ -68,7 +68,7 @@ Custom thumbnails not supported via API for Shorts.
 
 ## Scheduling
 
-When `publishNow=false` + `scheduledAtUtc` set, Zernio uploads as private then flips visibility at the scheduled time. `firstComment` posts only when visibility goes live.
+When `publishNow=false` + `scheduledAt` (ISO-8601 UTC) set, Zernio uploads as private then flips visibility at the scheduled time. `firstComment` posts only when visibility goes live.
 
 ## Errors
 

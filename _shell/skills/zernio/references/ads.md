@@ -141,11 +141,13 @@ Lookalike example:
   "adAccountId": "act_1234567890",
   "type": "lookalike",
   "name": "LAL 1% of US customers",
-  "sourceAudienceId": "6123456789",
+  "seedAudienceId": "6123456789",
   "country": "US",
   "ratio": 0.01
 }
 ```
+
+The unified Zernio wrapper field is `seedAudienceId` — use that everywhere. Some Meta-native examples in old docs called it `sourceAudienceId`; that's the platform-side name, not the field the Zernio API accepts.
 
 `delete-audience` is visible on the platform — any active campaign referencing it loses its target. Run `list-campaigns` first; pause referenced campaigns before deleting.
 

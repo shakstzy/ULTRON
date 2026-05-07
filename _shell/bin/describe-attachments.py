@@ -36,6 +36,7 @@ ULTRON_ROOT = Path(os.environ.get("ULTRON_ROOT", str(Path.home() / "ULTRON")))
 DB = Path.home() / "Library" / "Messages" / "chat.db"
 ATTACHMENTS_INCLUDE = str(Path.home() / "Library" / "Messages" / "Attachments")
 DESCRIPTION_MODEL = "gemini-3-flash-preview"
+CLAUDE_FALLBACK_MODEL = "sonnet"  # last resort when all gemini accounts exhausted
 DEFAULT_WORKERS = 32
 
 PROMPT_VISION = (
@@ -262,10 +263,44 @@ def gemini_describe_once(path, kind, account, timeout=180, model=None):
     return desc, model or DESCRIPTION_MODEL, None
 
 
-def gemini_describe_with_retry(path, kind, max_retries=5, model=None):
+def claude_describe_once(path, kind, timeout=180):
+    """Last-resort fallback when all gemini accounts exhausted.
+    Uses `claude -p sonnet` to describe the same path. Returns the same
+    (description, model, error_kind) shape as gemini_describe_once."""
+    if kind not in ("image", "video", "text"):
+        return None, None, "unsupported"
+    if not Path(path).exists() or Path(path).is_dir():
+        return None, None, "missing"
+    prompt = PROMPT_VISION if kind in ("image", "video") else PROMPT_TEXT
+    try:
+        proc = subprocess.run(
+            ["claude", "-p", f"{prompt}\n\n{path}", "--model", CLAUDE_FALLBACK_MODEL],
+            capture_output=True, text=True, timeout=timeout,
+        )
+    except subprocess.TimeoutExpired:
+        return None, None, "timeout"
+    except FileNotFoundError:
+        return None, None, "no_cli"
+    if proc.returncode != 0:
+        return None, None, "failure"
+    desc = (proc.stdout or "").strip()
+    if not desc:
+        return None, None, "empty"
+    if _REFUSAL_RE.search(desc):
+        return None, None, "refusal"
+    cap = 100 if kind in ("image", "video") else 200
+    if len(desc) > cap:
+        desc = desc[: cap - 1].rstrip() + "…"
+    return desc, f"claude-{CLAUDE_FALLBACK_MODEL}", None
+
+
+def gemini_describe_with_retry(path, kind, max_retries=5, model=None, claude_fallback=True):
     """Pull a fresh account from the round-robin pool each attempt.
     On rate_limit: mark that account exhausted, try another. Only after
-    ALL accounts exhausted do we cooldown-and-wait."""
+    ALL accounts exhausted do we cooldown-and-wait. After max_retries
+    of full pool exhaustion, optionally fall back to claude sonnet
+    (Adithya re-enabled this 2026-05-06 after gemini Preview quotas were
+    insufficient to finish the iMessage backfill)."""
     delay = 5.0
     for attempt in range(max_retries + 1):
         _wait_cooldown()
@@ -277,6 +312,13 @@ def gemini_describe_with_retry(path, kind, max_retries=5, model=None):
             time.sleep(sleep_for)
             delay = min(delay * 2, 120)
             if attempt >= max_retries:
+                if claude_fallback:
+                    desc, model_used, err = claude_describe_once(path, kind)
+                    if desc:
+                        _record_call("claude-sonnet", "success")
+                    else:
+                        _record_call("claude-sonnet", "other")
+                    return desc, model_used, err or "all_exhausted"
                 return None, None, "all_exhausted"
             # After waiting, clear exhausted set partially to give accounts
             # a chance to refill (we can't know server-side; just retry)

@@ -1,10 +1,40 @@
-# Super-Graph Report — graphify CLI not installed
+# Super-Graph Report
 
-`graphify` is not on PATH. Install:
+Generated 2026-05-07T03:57:14Z
 
-```
-uv tool install graphifyy && graphify install
-```
+## Per-workspace graphs merged (2)
 
-Then run `/graphify workspaces/<ws>/wiki` from inside Claude Code per workspace,
-and re-run this script to merge.
+- `workspaces/eclipse//graphify-out/graph.json` (eclipse)
+- `workspaces/personal//graphify-out/graph.json` (personal)
+
+## Merged graph
+
+`_graphify/super/graph.json`
+
+## Per-workspace reports
+
+- [eclipse](../workspaces/eclipse/graphify-out/GRAPH_REPORT.md)
+- [personal](../workspaces/personal/graphify-out/GRAPH_REPORT.md)
+
+## Missing per-workspace graphs
+- clipping
+- dating
+- finance
+- health
+- inclusive-layer
+- library
+- mosaic
+- music
+- outerscope
+- power-kinetics
+- property-management
+- rental-manager
+- seedbox
+- sei
+- synapse
+- trading
+- veera
+
+## Excluded from super-graph
+- onlyfans
+- real-estate

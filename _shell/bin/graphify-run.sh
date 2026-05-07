@@ -3,7 +3,7 @@
 #
 # Tier 1 (per-workspace) is run from inside Claude Code:
 #   /graphify workspaces/<ws>/wiki
-# It produces `workspaces/<ws>/_meta/graphify-out/{graph.json, GRAPH_REPORT.md}`.
+# It produces `workspaces/<ws>/graphify-out/{graph.json, GRAPH_REPORT.md}`.
 #
 # Tier 2 (this script) merges those per-workspace graph.json files into a
 # cross-workspace `_graphify/super/{graph.json, GRAPH_REPORT.md}`. The audit
@@ -20,6 +20,11 @@ ULTRON_ROOT="${ULTRON_ROOT:-$HOME/ULTRON}"
 SUPER_DIR="$ULTRON_ROOT/_graphify/super"
 RUN_DIR="$ULTRON_ROOT/_graphify/runs/$(date +%Y-%m-%d)"
 mkdir -p "$SUPER_DIR" "$RUN_DIR"
+
+# `graphify` is installed via `uv tool install` to ~/.local/bin, which is
+# not on launchd's default PATH. Prepend it so this script works under
+# both cron and interactive shells.
+export PATH="$HOME/.local/bin:$PATH"
 
 if ! command -v graphify >/dev/null 2>&1; then
   cat > "$SUPER_DIR/GRAPH_REPORT.md" <<'EOF'
@@ -52,7 +57,7 @@ for ws_dir in "$ULTRON_ROOT"/workspaces/*/; do
     continue
   fi
 
-  graph_file="$ws_dir/_meta/graphify-out/graph.json"
+  graph_file="$ws_dir/graphify-out/graph.json"
   if [[ -f "$graph_file" ]]; then
     GRAPHS+=("$graph_file")
   else
@@ -64,7 +69,7 @@ if (( ${#GRAPHS[@]} == 0 )); then
   {
     echo "# Super-Graph Report — no per-workspace graphs found"
     echo
-    echo "Tier-1 graphs (\`workspaces/<ws>/_meta/graphify-out/graph.json\`) do not exist for any workspace."
+    echo "Tier-1 graphs (\`workspaces/<ws>/graphify-out/graph.json\`) do not exist for any workspace."
     echo
     echo "Build them by running \`/graphify workspaces/<ws>/wiki\` from inside Claude Code per workspace."
     if (( ${#MISSING[@]} > 0 )); then
@@ -122,7 +127,7 @@ fi
   echo
   for g in "${GRAPHS[@]}"; do
     rel="${g#$ULTRON_ROOT/}"
-    ws="$(basename "$(dirname "$(dirname "$(dirname "$g")")")")"
+    ws="$(basename "$(dirname "$(dirname "$g")")")"
     echo "- \`$rel\` ($ws)"
   done
   echo
@@ -135,9 +140,9 @@ fi
   for ws_dir in "$ULTRON_ROOT/workspaces"/*/; do
     ws="$(basename "$ws_dir")"
     [[ "$ws" == _* ]] && continue
-    rpt="$ws_dir/_meta/graphify-out/GRAPH_REPORT.md"
+    rpt="$ws_dir/graphify-out/GRAPH_REPORT.md"
     if [[ -f "$rpt" ]]; then
-      rel_link="../workspaces/$ws/_meta/graphify-out/GRAPH_REPORT.md"
+      rel_link="../workspaces/$ws/graphify-out/GRAPH_REPORT.md"
       echo "- [$ws]($rel_link)"
     fi
   done

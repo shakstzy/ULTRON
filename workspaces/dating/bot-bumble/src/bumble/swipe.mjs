@@ -13,6 +13,21 @@ import { assertDateMode } from "../runtime/mode-guard.mjs";
 import { setHalt } from "../runtime/halt.mjs";
 import { logSession } from "../runtime/logger.mjs";
 
+// Bumble surfaces a "You missed!" / "Did you mean to swipe right?" prompt after
+// some passes when their algo thinks we mis-passed. Text-based detection is the
+// most durable signal across UI updates; selectors in selectors.json are a
+// secondary path (and currently unverified live).
+const MISSED_MATCH_TEXT_PATTERNS = [
+  /you missed/i,
+  /did you mean to swipe right/i,
+  /wait,?\s*go back/i,
+  /backtrack/i,
+];
+// Anti-bot: cap recoveries per session and skip a chunk randomly. Always-on
+// rewinding on every flagged pass is a clear bot signature.
+const SESSION_REWIND_MAX = 3;
+const RECOVERY_SKIP_PROBABILITY = 0.30;
+
 let _filter = null;
 async function loadFilter() {
   if (_filter) return _filter;
@@ -41,6 +56,142 @@ function passesFilter(profile, f) {
     if (!hasBio && !hasPrompts) return false;
   }
   return true;
+}
+
+// Probe for the missed-match modal. Cheap: tries each configured selector
+// (with safe try/catch around invalid CSS), then falls back to a single
+// innerText regex scan. Returns true if the modal appears present.
+async function detectMissedMatchModal(page, sels) {
+  const modalSel = sels.missed_match_modal;
+  if (modalSel?.selector) {
+    const candidates = [modalSel.selector, ...(modalSel.alt || [])].filter(Boolean);
+    for (const sel of candidates) {
+      try {
+        const el = await page.$(sel);
+        if (el) return true;
+      } catch { /* invalid pre-discovery selector; fall through */ }
+    }
+  }
+  try {
+    const sources = MISSED_MATCH_TEXT_PATTERNS.map(p => p.source);
+    return await page.evaluate((srcs) => {
+      const text = (document.body?.innerText || "").slice(0, 8000);
+      return srcs.some(s => new RegExp(s, "i").test(text));
+    }, sources);
+  } catch { return false; }
+}
+
+// Click whichever backtrack target Bumble offers. Modal-inline CTA is preferred
+// over the floating bottom-left rewind so the click surface matches what the
+// modal is telling the user to do.
+async function clickBacktrack(cursor, page, sels) {
+  for (const k of ["missed_match_backtrack_button", "rewind_button"]) {
+    const s = sels[k];
+    if (!s?.selector) continue;
+    const candidates = [s.selector, ...(s.alt || [])].filter(Boolean);
+    for (const sel of candidates) {
+      try {
+        const el = await page.$(sel);
+        if (el) { await humanClick(cursor, page, sel); return true; }
+      } catch { /* try next */ }
+    }
+  }
+  return false;
+}
+
+// Best-effort dismiss of the modal when we choose NOT to recover (random skip,
+// session cap, or backtrack target missing). Tries common close affordances,
+// then falls back to Escape so the next card can flow.
+async function dismissMissedMatchModal(page, cursor) {
+  const dismissSelectors = [
+    "[aria-label='Close']", "[aria-label='close']",
+    "button.popup__close", ".popup__close-button",
+    "[data-qa-role*='close']",
+  ];
+  for (const sel of dismissSelectors) {
+    try {
+      const el = await page.$(sel);
+      if (el) { await humanClick(cursor, page, sel); return; }
+    } catch { /* */ }
+  }
+  try { await page.keyboard.press("Escape"); } catch { /* */ }
+}
+
+/**
+ * After a pass click, check for Bumble's missed-match prompt. If present
+ * (and we haven't blown our per-session rewind cap or rolled the random skip):
+ * - pause humanly, click backtrack
+ * - re-read the card, re-evaluate filter (may now want like; or original pass
+ *   was forced by ratio cap and now has room)
+ * - click final action (like or pass again)
+ *
+ * Returns { recovered, finalAction }. recovered=true means a backtrack happened
+ * AND a follow-up action was clicked (caller should run scanForHalts and the
+ * card-change probe against the new state). finalAction is "like" or "pass"
+ * for the post-recovery decision; null when no recovery happened.
+ */
+async function recoverMissedMatch(page, cursor, originalProfile, filter, ratioCap, currentLiked, currentSwiped, sessionRewindsUsed) {
+  await sleep(jitter(450, 850));
+  const sels = await selectors();
+  const present = await detectMissedMatchModal(page, sels);
+  if (!present) return { recovered: false, finalAction: null, sessionRewindsUsed };
+
+  if (sessionRewindsUsed >= SESSION_REWIND_MAX) {
+    await dismissMissedMatchModal(page, cursor);
+    await logSession({ event: "missed_match_skipped", reason: "session_cap", profile: originalProfile.name || null });
+    return { recovered: false, finalAction: null, sessionRewindsUsed };
+  }
+  if (Math.random() < RECOVERY_SKIP_PROBABILITY) {
+    await dismissMissedMatchModal(page, cursor);
+    await logSession({ event: "missed_match_skipped", reason: "random", profile: originalProfile.name || null });
+    return { recovered: false, finalAction: null, sessionRewindsUsed };
+  }
+
+  await sleep(jitter(1400, 3000));
+  const clicked = await clickBacktrack(cursor, page, sels);
+  if (!clicked) {
+    await dismissMissedMatchModal(page, cursor);
+    await logSession({ event: "missed_match_skipped", reason: "backtrack_button_not_found", profile: originalProfile.name || null });
+    return { recovered: false, finalAction: null, sessionRewindsUsed };
+  }
+  const newRewindsUsed = sessionRewindsUsed + 1;
+
+  await sleep(jitter(700, 1400));
+  const reRead = await readVisibleCard(page);
+  // Sanity: if backtrack landed on a different person (rare/unexpected), bail
+  // rather than acting on the wrong profile.
+  if (reRead.name && originalProfile.name && reRead.name !== originalProfile.name) {
+    await logSession({ event: "missed_match_recovery_aborted", reason: "different_card_after_backtrack", original: originalProfile.name, after: reRead.name });
+    return { recovered: false, finalAction: null, sessionRewindsUsed: newRewindsUsed };
+  }
+
+  const inFilter = passesFilter(reRead, filter);
+  // Same ratio math as the main loop: if liking now would push us over cap, pass.
+  const wouldBeRatio = currentSwiped > 0 ? (currentLiked + (inFilter ? 1 : 0)) / (currentSwiped + 1) : (inFilter ? 1 : 0);
+  const wantLike = inFilter && wouldBeRatio <= ratioCap;
+
+  const buttonSel = wantLike ? sels.like_button : sels.pass_button;
+  const candidates = [buttonSel.selector, ...(buttonSel.alt || [])].filter(Boolean);
+  let acted = false;
+  for (const sel of candidates) {
+    try {
+      const el = await page.$(sel);
+      if (el) { await humanClick(cursor, page, sel); acted = true; break; }
+    } catch { /* try next */ }
+  }
+  if (!acted) {
+    await logSession({ event: "missed_match_recovery_failed", reason: "action_button_not_found", profile: reRead.name || originalProfile.name, intended: wantLike ? "like" : "pass" });
+    return { recovered: false, finalAction: null, sessionRewindsUsed: newRewindsUsed };
+  }
+
+  await logSession({
+    event: "missed_match_recovered",
+    profile: reRead.name || originalProfile.name,
+    final_action: wantLike ? "like" : "pass",
+    in_filter: inFilter,
+    session_rewinds_used: newRewindsUsed,
+  });
+  return { recovered: true, finalAction: wantLike ? "like" : "pass", sessionRewindsUsed: newRewindsUsed };
 }
 
 export async function swipeSession(page, { sessionMinutesMax = null } = {}) {
@@ -75,6 +226,7 @@ export async function swipeSession(page, { sessionMinutesMax = null } = {}) {
 
   let swiped = 0;
   let liked = 0;
+  let sessionRewinds = 0;
   let stopReason = "session_end";
 
   while (swiped < sessionMaxSwipes && Date.now() < sessionEnd) {
@@ -138,6 +290,25 @@ export async function swipeSession(page, { sessionMinutesMax = null } = {}) {
       break;
     }
 
+    // Missed-match recovery. Only runs after a pass — Bumble only surfaces
+    // "you missed" when we passed on someone their algo flags. If recovered,
+    // the second click happens inside the helper; we then re-scan halts
+    // before the card-change probe runs against the post-recovery state.
+    let finalDecision = wantLike ? "like" : "pass";
+    let recoveredFromMissedMatch = false;
+    if (!wantLike) {
+      const recovery = await recoverMissedMatch(page, cursor, profile, filter, ratioCap, liked, swiped, sessionRewinds);
+      sessionRewinds = recovery.sessionRewindsUsed;
+      if (recovery.recovered) {
+        recoveredFromMissedMatch = true;
+        finalDecision = recovery.finalAction;
+        try { await scanForHalts(page); } catch (e) {
+          stopReason = e.message;
+          break;
+        }
+      }
+    }
+
     // CODEX-R3-P0-5 + R4-P0-6 + R6-P0-1: verify the next card. Previous shape
     // released the reservation on stuck_card, but on Bumble a click can succeed
     // AND produce a match modal / upsell / verification interstitial that
@@ -186,14 +357,15 @@ export async function swipeSession(page, { sessionMinutesMax = null } = {}) {
     }
 
     await logSwipe({
-      decision: wantLike ? "like" : "pass",
+      decision: finalDecision,
       filter_pass: inFilter,
       ratio_after: wouldBeRatio,
       profile,
       day_count: reservation.dayUsed,
+      ...(recoveredFromMissedMatch ? { recovered_from_missed_match: true } : {}),
     });
     swiped += 1;
-    if (wantLike) liked += 1;
+    if (finalDecision === "like") liked += 1;
 
     await sleep(jitter(...caps.swipes.between_swipes_ms));
   }

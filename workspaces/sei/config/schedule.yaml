@@ -1,0 +1,10 @@
+# sei — declared launchd cadence
+# Past-job archive workspace; no active ingest crons.
+
+workspace: sei
+
+workspace_jobs:
+  lint:
+    cron: "0 4 * * *"  # Daily 04:00
+
+# audit, weekly-review, graphify-supermerge live in _shell/config/global-schedule.yaml.

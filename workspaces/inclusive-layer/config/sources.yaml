@@ -1,0 +1,27 @@
+# inclusive-layer — declared ingestion sources
+# Cross-source routing rules in _shell/docs/source-routing.md.
+# Past-contract archive workspace; no active ingest cron.
+
+workspace: inclusive-layer
+wiki: true
+
+_workspace_meta:
+  ingest_unrouted_default: skip
+
+sources:
+  drive:
+    accounts:
+      - account: adithya@outerscope.xyz
+        # Folder INCLUSIVELAYER under outerscope drive — declared in source-routing.md.
+  gmail:
+    accounts: []   # populated from source-routing.md (TBD label name)
+  granola:
+    folders: []    # TBD: confirm whether a Granola folder exists upstream
+  manual:
+    watch_path: raw/manual/_inbox/
+    after_ingest: move_to_dated_subdir
+
+global_settings:
+  attachments_inline: true
+  vision_model: sonnet
+  hash_algorithm: blake3

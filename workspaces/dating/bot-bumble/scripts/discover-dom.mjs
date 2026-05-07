@@ -99,6 +99,19 @@ const SURVEY = [
   { key: "turnstile_iframe", queries: [
     "iframe[src*='challenges.cloudflare.com']", "iframe[src*='turnstile']",
   ]},
+  { key: "missed_match_modal", queries: [
+    "[data-qa-role*='missed']", "[data-qa-role*='backtrack']", "[data-qa-role*='reconsider']",
+    "[class*='missed-match']", "[class*='reconsider']", "[class*='backtrack-popup']",
+    "[role='dialog']",
+  ]},
+  { key: "missed_match_backtrack_button", queries: [
+    "[data-qa-role*='backtrack-confirm']", "[data-qa-role*='missed-confirm']",
+    "button[aria-label*='Backtrack']", "button[aria-label*='Take another look']",
+  ]},
+  { key: "rewind_button", queries: [
+    "[data-qa-role='encounters-action-rewind']", "[data-qa-role*='rewind']",
+    "button[aria-label*='Rewind']", "button[aria-label*='Backtrack']",
+  ]},
 ];
 
 const { ctx, page } = await launchPersistent({ headless: false });

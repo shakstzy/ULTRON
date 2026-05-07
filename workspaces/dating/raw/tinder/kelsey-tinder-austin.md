@@ -8,7 +8,7 @@ person_id: "5ec0d4fff74ee70100d54f99"
 phone: null
 status: "new"
 first_seen: "2026-04-13T00:00:00Z"
-last_activity: "2026-04-13T06:54:00Z"
+last_activity: "2026-05-07T02:39:17.939Z"
 last_scrape: "2026-05-01T08:19:34.898Z"
 previous_slugs: []
 migrated_from_shakos: "kelsey"
@@ -90,8 +90,10 @@ last_profile_diff: "2026-05-01T08:19:34.898Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 02:39 that steer skull necklace plus a landscape painting is a very specific vibe. thrifted or gifted?
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:11 queued_auto (auto, opener) [draft:a7f67d2f] lint=true "that steer skull necklace plus a landscape painting is a very specific vibe. thrifted or gifted?"
+- 2026-05-07 02:39 sent (auto, auto-or-hitl) [draft:a7f67d2f] lint=true "that steer skull necklace plus a landscape painting is a very specific vibe. thrifted or gifted?"

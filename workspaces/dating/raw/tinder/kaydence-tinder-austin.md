@@ -8,7 +8,7 @@ person_id: "697460d36495d31e053cdeb4"
 phone: null
 status: "new"
 first_seen: "2026-03-29T00:00:00Z"
-last_activity: "2026-03-29T00:33:00Z"
+last_activity: "2026-05-07T02:38:06.105Z"
 last_scrape: "2026-05-01T08:15:15.191Z"
 previous_slugs: []
 migrated_from_shakos: "kaydence"
@@ -92,8 +92,10 @@ last_profile_diff: "2026-05-01T08:15:15.191Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 02:38 that card shuffle isn't a casual riffle. someone put in the time to teach you that. you actually play or just show up to tilt everyone at the table
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:11 queued_auto (auto, opener) [draft:f6ed2350] lint=true "that card shuffle isn't a casual riffle. someone put in the time to teach you that. you actually play or just show up to tilt everyone at the table"
+- 2026-05-07 02:38 sent (auto, auto-or-hitl) [draft:f6ed2350] lint=true "that card shuffle isn't a casual riffle. someone put in the time to teach you that. you actually play or just show up to tilt everyone at the table"

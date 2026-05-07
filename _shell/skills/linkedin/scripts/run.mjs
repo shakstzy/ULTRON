@@ -24,11 +24,21 @@ if (!verb || verb === "--help" || verb === "-h") {
 }
 
 // --workspace must be parsed BEFORE importing paths.mjs so RAW_DIR resolves
-// against the right tree. Same for ULTRON_LINKEDIN_SKIP_ACTIVE_HOURS pass-through.
-const wsIdx = rest.indexOf("--workspace");
-if (wsIdx >= 0) {
-  process.env.LINKEDIN_WORKSPACE = rest[wsIdx + 1];
-  rest.splice(wsIdx, 2);
+// against the right tree. We reject missing or flag-shaped values to avoid
+// silently turning `--workspace --no-write --profile foo` into a workspace
+// named "--no-write" that strips the safety flag. Last occurrence wins.
+{
+  let wsIdx = rest.indexOf("--workspace");
+  while (wsIdx >= 0) {
+    const wsVal = rest[wsIdx + 1];
+    if (wsVal === undefined || wsVal.startsWith("--")) {
+      console.error("--workspace requires a non-empty value, e.g. --workspace personal");
+      process.exit(1);
+    }
+    process.env.LINKEDIN_WORKSPACE = wsVal;
+    rest.splice(wsIdx, 2);
+    wsIdx = rest.indexOf("--workspace");
+  }
 }
 
 const verbs = {
@@ -59,6 +69,17 @@ try {
   process.exit(code ?? 0);
 } catch (err) {
   console.error(`[${verb}] ${err.code ?? "ERR"} ${err.message}`);
+  // Hard ban / checkpoint signal -> quarantine the profile and trip halt so the
+  // next run can't keep poking at a flagged session. Original QUANTUM CLI never
+  // wired this up; the SKILL.md claims it, so the dispatcher does it.
+  if (err && (err.code === "BAN_SIGNAL" || err.code === "CHECKPOINT")) {
+    try {
+      const { quarantineOnSignal } = await import("../src/linkedin/ban-signals.mjs");
+      await quarantineOnSignal(err);
+    } catch (qerr) {
+      console.error(`[${verb}] quarantine failed: ${qerr.message}`);
+    }
+  }
   process.exit(1);
 }
 

@@ -1,0 +1,10 @@
+{
+  "calendar_id": "c_e693ad38ce4be91cfdcbcd638d6dcaab819f394cc45fa88ca5e2ccec1af93b57@group.calendar.google.com",
+  "calendar_summary": "ULTRON Crons",
+  "account": "adithya@outerscope.xyz",
+  "timezone": "America/Chicago",
+  "ledger_path": "/Users/shakstzy/ULTRON/_logs/cron-ledger.jsonl",
+  "color_success": "10",
+  "color_failure": "11",
+  "color_scheduled": "8"
+}

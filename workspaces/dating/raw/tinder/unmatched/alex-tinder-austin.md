@@ -13,8 +13,8 @@ last_scrape: "2026-05-01T04:33:21.658Z"
 previous_slugs: []
 migrated_from_shakos: "alex-2"
 last_profile_diff: "2026-05-01T04:33:21.658Z"
-redirect_count: 6
-last_redirect: "2026-05-07T03:45:38.252Z"
+redirect_count: 7
+last_redirect: "2026-05-07T17:39:30.282Z"
 ---
 
 ## Profile

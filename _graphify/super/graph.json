@@ -33663,8 +33663,8 @@
     },
     {
       "relation": "works_at",
-      "confidence": "INFERRED",
-      "confidence_score": 0.9,
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "raw/imessage/individuals/sydney-huang-eclipse/2026/2026-03__sydney-huang-eclipse.md",
       "source_location": null,
       "weight": 0.9,
@@ -49766,14 +49766,14 @@
       "target": "riz_zobayer_renter_showing"
     },
     {
-      "relation": "messages_with",
+      "relation": "friend",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "raw/imessage/individuals/rohan-vaidya-uc-berkeley/2026/2026-03__rohan-vaidya-uc-berkeley.md",
+      "source_file": "raw/manual/adithya-rohan-vaidya-friendship.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "rohan_vaidya_uc_berkeley",
-      "_tgt": "adithya",
+      "_src": "adithya",
+      "_tgt": "rohan_vaidya_uc_berkeley",
       "source": "adithya",
       "target": "rohan_vaidya_uc_berkeley"
     },
@@ -52970,14 +52970,15 @@
       "target": "aarti"
     },
     {
-      "relation": "lives_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
+      "relation": "formerly_lived_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "raw/imessage/groups/group-evan-filip/2024/2024-12__group-evan-filip.md",
       "source_location": null,
       "weight": 0.8,
       "_src": "adithya",
       "_tgt": "los_angeles_ca",
+      "note": "Adithya moved back to Austin 2026-03 (~2 months before today, 2026-05-07)",
       "source": "adithya",
       "target": "los_angeles_ca"
     },
@@ -53631,8 +53632,8 @@
     },
     {
       "relation": "lives_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "raw/imessage/individuals/shiva-austin/2026/2026-02__shiva-austin.md",
       "source_location": null,
       "weight": 0.85,
@@ -53750,7 +53751,7 @@
       "target": "never_been_good_at_goodbyes_song"
     },
     {
-      "relation": "lives_in",
+      "relation": "formerly_lived_in",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "raw/imessage/individuals/sahil-dutta-producer-la/2024/2024-08__sahil-dutta-producer-la.md",
@@ -53758,6 +53759,7 @@
       "weight": 1.0,
       "_src": "adithya",
       "_tgt": "los_angeles",
+      "note": "Adithya moved back to Austin 2026-03 (~2 months before today, 2026-05-07)",
       "source": "adithya",
       "target": "los_angeles"
     },
@@ -55731,8 +55733,8 @@
     },
     {
       "relation": "lives_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.9,
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "raw/imessage/individuals/rishika-uc-berkeley/2026/2026-03__rishika-uc-berkeley.md",
       "source_location": null,
       "weight": 1.0,
@@ -64743,13 +64745,13 @@
     },
     {
       "relation": "studies_at",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "raw/imessage/individuals/rishika-uc-berkeley/2026/2026-03__rishika-uc-berkeley.md",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/manual/studies-at-direction-fix.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "rishika_uc_berkeley",
-      "_tgt": "uc_berkeley",
+      "_src": "uc_berkeley",
+      "_tgt": "rishika_uc_berkeley",
       "source": "uc_berkeley",
       "target": "rishika_uc_berkeley"
     },
@@ -65379,13 +65381,13 @@
     },
     {
       "relation": "studies_at",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "raw/imessage/individuals/rohin-uc-berkeley/2024/2024-10__rohin-uc-berkeley.md",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/manual/studies-at-direction-fix.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "rohin_uc_berkeley",
-      "_tgt": "uc_berkeley",
+      "_src": "uc_berkeley",
+      "_tgt": "rohin_uc_berkeley",
       "source": "uc_berkeley",
       "target": "rohin_uc_berkeley"
     },
@@ -71535,18 +71537,6 @@
     },
     {
       "relation": "related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.6,
-      "source_file": "raw/imessage/individuals/rohin-uc-berkeley/2024/2024-10__rohin-uc-berkeley.md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "rohin_uc_berkeley",
-      "_tgt": "rohan_vaidya_uc_berkeley",
-      "source": "rohin_uc_berkeley",
-      "target": "rohan_vaidya_uc_berkeley"
-    },
-    {
-      "relation": "related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "raw/imessage/_profiles/group-group-arthur-dravin-patrick.md",
@@ -73095,14 +73085,15 @@
     },
     {
       "relation": "lived_at",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "raw/manual/linh-pham-uc-berkeley-housing.md",
       "source_location": null,
       "weight": 1.0,
       "_src": "linh_pham",
       "_tgt": "fulton_street_2310",
       "inferred_from": "roommate(rishika_uc_berkeley)+lived_at(2310_fulton)",
+      "note": "inferred-confirmed via roommate(rishika)+lived_at",
       "source": "linh_pham",
       "target": "fulton_street_2310"
     },

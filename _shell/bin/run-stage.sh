@@ -271,8 +271,18 @@ case "$STAGE" in
       echo "graphify: CLI not on PATH ($PATH)" > "$OUT_LOG"
       EC=0
     else
-      cd "$ULTRON_ROOT/workspaces/$WORKSPACE" && \
-        graphify update wiki > "$OUT_LOG" 2>&1 || EC=$?
+      # Subshell so cd doesn't leak; capture exit explicitly because
+      # `graphify update` exits non-zero when the wiki has no code files
+      # to re-extract (which is the normal state for a markdown wiki).
+      ( cd "$ULTRON_ROOT/workspaces/$WORKSPACE" && graphify update wiki ) > "$OUT_LOG" 2>&1
+      gxc=$?
+      # Treat "no code files" as success — that's expected for markdown wikis.
+      if (( gxc != 0 )) && grep -q "No code files found" "$OUT_LOG" 2>/dev/null; then
+        echo "graphify: no code files (markdown-only wiki); update is a no-op." >> "$OUT_LOG"
+        EC=0
+      else
+        EC=$gxc
+      fi
     fi
     ;;
 esac

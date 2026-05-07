@@ -1,9 +1,9 @@
 ---
 source: discord
 workspace: personal
-ingested_at: '2026-05-07T12:22:56.864Z'
+ingested_at: '2026-05-07T12:26:47.453Z'
 ingest_version: 1
-content_hash: sha256:271a55244089788900dad4bf6753b128c0d2410726beac4b2711c61ec80e733c
+content_hash: sha256:289c84149e2184b7171e3026837c54578c342f014a40c0f9b4752532bda65aaa
 provider_modified_at: '2025-12-25T20:54:17.659Z'
 contact_slug: shva-shvalockedin
 contact_type: individual
@@ -18,13 +18,13 @@ attachments:
     filename: image.png
     url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1445450954907320420/image.png?ex=69fd65da&is=69fc145a&hm=19b233a32a610b8fafaf30eb0b49f54c20e20758afd22939113d5b6411d617b6&'
     size: 40790
-    description: null
+    description: 'An email congratulating SHVATrades on becoming a Topstep Funded Trader.'
   - message_id: '1446060760261328967'
     kind: image
     filename: image.png
     url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1446060760114532454/image.png?ex=69fda387&is=69fc5207&hm=31d81b202befcfbdf80613ef2ba06226dfa0cca2f212d1afe607c1147c9d62ec&'
     size: 22777
-    description: null
+    description: 'A social media interface showing user shvatrades with 11 subscribers, a notification bell, and 11 likes.'
   - message_id: '1453853382421778597'
     kind: file
     filename: message.txt
@@ -44,7 +44,7 @@ superseded_by: null
 ## 2025-12-02 (Tuesday)
 
 **10:26 — SHVA:** 
-↳ image: image.png (40 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1445450954907320420/image.png?ex=69fd65da&is=69fc145a&hm=19b233a32a610b8fafaf30eb0b49f54c20e20758afd22939113d5b6411d617b6&
+↳ image: image.png (40 KB) — "An email congratulating SHVATrades on becoming a Topstep Funded Trader." — https://cdn.discordapp.com/attachments/1292220510603575366/1445450954907320420/image.png?ex=69fd65da&is=69fc145a&hm=19b233a32a610b8fafaf30eb0b49f54c20e20758afd22939113d5b6411d617b6&
 **10:26 — SHVA:** ts nuts
 **10:57 — me:** Fire bruh congrats man
 **10:57 — me:** This is heat
@@ -57,7 +57,7 @@ superseded_by: null
 **00:04 — SHVA:** https://www.youtube.com/watch?v=B9vC8p9CngU&feature=youtu.be
 **02:47 — me:** this fire
 **02:49 — me:** boay got double digit subs now
-↳ image: image.png (22 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1446060760114532454/image.png?ex=69fda387&is=69fc5207&hm=31d81b202befcfbdf80613ef2ba06226dfa0cca2f212d1afe607c1147c9d62ec&
+↳ image: image.png (22 KB) — "A social media interface showing user shvatrades with 11 subscribers, a notification bell, and 11 likes." — https://cdn.discordapp.com/attachments/1292220510603575366/1446060760114532454/image.png?ex=69fda387&is=69fc5207&hm=31d81b202befcfbdf80613ef2ba06226dfa0cca2f212d1afe607c1147c9d62ec&
 
 ## 2025-12-08 (Monday)
 

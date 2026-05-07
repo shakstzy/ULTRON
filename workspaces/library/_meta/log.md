@@ -11,3 +11,4 @@ Append-only. One line per meaningful change.
 (empty — populated by stages as they run)
 - 2026-05-07T16:06:27 — ingest-article: paulgraham-do-things-that-don ("Do Things that Don't Scale")
 - 2026-05-07T16:07:18 — ingest-youtube-video: 3blue1brown-what-neural-network-deep ('But what is a neural network? | Deep learning chapter 1')
+- 2026-05-07T16:09:29 — ingest-paper: vaswani-attention-all-you-2017 ('Attention Is All You Need')

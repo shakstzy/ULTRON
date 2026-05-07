@@ -74,6 +74,68 @@ def download_to(url: str, dest: Path, max_bytes: int = 200_000_000) -> None:
             out.write(chunk)
 
 
+def try_direct_download(url: str, hint_ext_in_url: str = "") -> Path | None:
+    """Try downloading url as a book file (epub/pdf). Sniff Content-Type.
+    Returns path on success, None if response wasn't a book."""
+    tmp_dir = Path("/tmp") / f"library-book-{L.today()}"
+    tmp_dir.mkdir(parents=True, exist_ok=True)
+    # Probe headers first via a HEAD-style GET (urllib has no easy HEAD)
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT) as resp:
+            ctype = (resp.headers.get("Content-Type") or "").lower()
+            # Determine target ext from content-type or URL hint
+            if "epub" in ctype or ".epub" in hint_ext_in_url:
+                ext = "epub"
+            elif "pdf" in ctype or ".pdf" in hint_ext_in_url:
+                ext = "pdf"
+            else:
+                # Read first 4 bytes to sniff magic
+                first = resp.read(4)
+                if first.startswith(b"PK"):  # zip / epub container
+                    ext = "epub"
+                elif first.startswith(b"%PDF"):
+                    ext = "pdf"
+                else:
+                    return None
+                # We have magic bytes already + need to write rest
+                local = tmp_dir / f"download.{ext}"
+                with open(local, "wb") as out:
+                    out.write(first)
+                    written = len(first)
+                    while True:
+                        chunk = resp.read(64 * 1024)
+                        if not chunk:
+                            break
+                        written += len(chunk)
+                        if written > 200_000_000:
+                            raise RuntimeError("download exceeded 200MB")
+                        out.write(chunk)
+                if local.stat().st_size < 1024:
+                    return None
+                print(f"  downloaded {local.stat().st_size:,} bytes → {local}")
+                return local
+            # Standard path with known ext
+            local = tmp_dir / f"download.{ext}"
+            with open(local, "wb") as out:
+                written = 0
+                while True:
+                    chunk = resp.read(64 * 1024)
+                    if not chunk:
+                        break
+                    written += len(chunk)
+                    if written > 200_000_000:
+                        raise RuntimeError("download exceeded 200MB")
+                    out.write(chunk)
+            if local.stat().st_size < 1024:
+                return None
+            print(f"  downloaded {local.stat().st_size:,} bytes ({ctype}) → {local}")
+            return local
+    except Exception as e:
+        sys.stderr.write(f"  direct download failed: {type(e).__name__}: {e}\n")
+        return None
+
+
 # ---------------------------------------------------------------------------
 # Anna's Archive search + resolve
 # ---------------------------------------------------------------------------
@@ -279,20 +341,24 @@ def ingest_book(
             raise FileNotFoundError(local)
         meta = {"title": title, "author": author, "year": year, "language": "en", "format": local.suffix.lstrip(".")}
     else:
-        # URL or title-search
+        md5_url: str | None = None
+        local: Path | None = None
+
         if url and "annas-archive.org/md5/" in url:
             md5_url = url
-        elif url and url.startswith(("http://", "https://")) and url.endswith((".epub", ".pdf")):
-            # Direct file URL
-            ext = url.rsplit(".", 1)[1]
-            tmp_dir = Path("/tmp") / f"library-book-{L.today()}"
-            tmp_dir.mkdir(parents=True, exist_ok=True)
-            local = tmp_dir / f"download.{ext}"
-            print(f"  downloading {url} → {local}")
-            download_to(url, local)
-            meta = {"title": title, "author": author, "year": year, "language": "en", "format": ext}
-            md5_url = None
-        elif title and author:
+        elif url:
+            # Treat any other URL as a candidate direct download. Try once;
+            # sniff Content-Type / first bytes to confirm it's an epub or pdf.
+            local = try_direct_download(url, hint_ext_in_url=url.lower())
+            if local is None and title and author:
+                # Direct download didn't produce a usable book. Fall back to search.
+                print(f"  direct download did not yield epub/pdf; falling back to annas search")
+            elif local is not None:
+                ext = local.suffix.lstrip(".")
+                meta = {"title": title, "author": author, "year": year, "language": "en", "format": ext}
+        if local is None and md5_url is None:
+            if not (title and author):
+                raise ValueError("URL did not resolve and no title+author for fallback search")
             print(f"  searching annas-archive for: {title} | {author}")
             results = search_annas(f"{title} {author}", limit=5)
             if not results:
@@ -300,8 +366,6 @@ def ingest_book(
                 sys.exit(2)
             md5_url = results[0]["url"]
             print(f"  picking top result: {md5_url}")
-        else:
-            raise ValueError("title+author or url required")
 
         if md5_url:
             print(f"  resolving md5 page: {md5_url}")

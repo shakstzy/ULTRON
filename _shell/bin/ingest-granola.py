@@ -289,8 +289,11 @@ def main() -> int:
         f"granola ingest start  account={account_email}  run_id={run_id}  dry_run={args.dry_run}"
     ]
 
-    # flock
-    lock_path = f"/tmp/com.adithya.ultron.ingest-granola-{acct_slug}.lock"
+    # flock — must NOT collide with the cron plist's outer `flock -n` path
+    # (/tmp/com.adithya.ultron.ingest-granola-<acct>.lock). Same reasoning
+    # as ingest-slack.py — the outer flock would silently starve the inner
+    # one and the script would exit 0 doing zero work under launchd.
+    lock_path = f"/tmp/ultron-ingest-granola-{acct_slug}.script.lock"
     lock_fd = os.open(lock_path, os.O_WRONLY | os.O_CREAT, 0o600)
     try:
         try:

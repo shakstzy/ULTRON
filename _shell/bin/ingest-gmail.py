@@ -1363,8 +1363,15 @@ def process_thread(svc, tid: str, account: str, workspaces_config: dict,
 # ---------------------------------------------------------------------------
 
 def acquire_lock(account: str):
-    """flock the account-specific lock file. Returns the open fd or None."""
-    lock_path = Path("/tmp") / f"com.adithya.ultron.ingest-gmail-{account_slug(account)}.lock"
+    """flock the account-specific lock file. Returns the open fd or None.
+
+    NOTE: must NOT collide with the cron plist's outer `flock -n` path
+    (which uses /tmp/com.adithya.ultron.ingest-gmail-<account>.lock). The
+    outer holds an exclusive lock for the whole job; if the inner reuses
+    the same path, fcntl.flock(LOCK_EX|LOCK_NB) here ALWAYS raises
+    BlockingIOError under launchd, the script silently exits 0, and no
+    work happens."""
+    lock_path = Path("/tmp") / f"ultron-ingest-gmail-{account_slug(account)}.script.lock"
     fd = open(lock_path, "w")
     try:
         fcntl.flock(fd, fcntl.LOCK_EX | fcntl.LOCK_NB)

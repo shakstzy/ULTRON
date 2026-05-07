@@ -245,10 +245,13 @@ def render_body(
     out = [f"# {display_name} — {mon_name} {year}", ""]
 
     last_date = None
-    latest_ts = None
+    latest_dt: datetime.datetime | None = None
     for m in msgs:
         ts = parse_ts(m["timestamp"])
-        latest_ts = ts.isoformat() if (latest_ts is None or ts.isoformat() > latest_ts) else latest_ts
+        # Compare as aware datetime (handles DST + offset edge cases that
+        # break lexicographic ISO-string comparison around the fall-back hour).
+        if latest_dt is None or ts > latest_dt:
+            latest_dt = ts
         d = ts.date()
         if d != last_date:
             if last_date is not None:
@@ -274,7 +277,8 @@ def render_body(
         out.append(f"**{time_str} — {sender}:** {payload}")
 
     out.append("")
-    return "\n".join(out), latest_ts or msgs[-1]["timestamp"]
+    latest_iso = latest_dt.isoformat() if latest_dt else msgs[-1]["timestamp"]
+    return "\n".join(out), latest_iso
 
 
 # ---------------------------------------------------------------------------
@@ -297,9 +301,26 @@ def fm_value(v) -> str:
 
 def _yaml_str(s) -> str:
     s = str(s)
-    if re.search(r"[:#\[\]{}&*!|>'\"%@`,]|^\s|\s$", s) or s == "" or s.lower() in ("yes", "no", "true", "false", "null"):
-        return "'" + s.replace("'", "''") + "'"
-    return s
+    # Quote on: any control char, the YAML reserved punctuation, leading/trailing space,
+    # or values that would otherwise parse as bool/null. Multi-line strings always quote
+    # because PyYAML's safe_load would parse an unquoted multi-line as a parse error.
+    needs_quote = (
+        s == ""
+        or "\n" in s
+        or "\r" in s
+        or s.lower() in ("yes", "no", "true", "false", "null", "~")
+        or re.search(r"[:#\[\]{}&*!|>'\"%@`,]|^\s|\s$", s) is not None
+    )
+    if not needs_quote:
+        return s
+    # Single-quoted YAML: escape internal `'` by doubling. This is the only escape
+    # required (no backslash sequences interpreted in single-quoted scalars).
+    if "\n" in s or "\r" in s:
+        # Multi-line: emit double-quoted with explicit escapes (single-quoted YAML
+        # cannot represent embedded newlines as escape sequences).
+        escaped = s.replace("\\", "\\\\").replace('"', '\\"').replace("\n", "\\n").replace("\r", "\\r")
+        return '"' + escaped + '"'
+    return "'" + s.replace("'", "''") + "'"
 
 
 def render_frontmatter(d: dict) -> str:
@@ -322,6 +343,32 @@ def read_existing_hash(path: Path) -> str | None:
     except OSError:
         return None
     return None
+
+
+def read_existing_overrides(path: Path) -> dict:
+    """Pull manual overrides we must preserve across regen: deleted_upstream, superseded_by.
+    Per the script's immutable contract (mirrors imessage), these two fields are
+    write-once from upstream — the user (or a separate audit job) sets them.
+    Regenerating the shard MUST NOT silently revert them to null.
+    """
+    out: dict = {"deleted_upstream": None, "superseded_by": None}
+    if not path.exists():
+        return out
+    try:
+        head = path.read_text(errors="replace").split("---", 2)
+        if len(head) < 3:
+            return out
+        for line in head[1].splitlines():
+            stripped = line.strip()
+            for k in out.keys():
+                if stripped.startswith(f"{k}:"):
+                    raw = stripped.split(":", 1)[1].strip()
+                    raw = raw.strip("'\"")
+                    if raw and raw.lower() != "null":
+                        out[k] = raw
+    except OSError:
+        pass
+    return out
 
 
 # ---------------------------------------------------------------------------
@@ -351,12 +398,20 @@ def main() -> int:
         sys.stderr.write(f"bridge DB missing: {BRIDGE_DB}\n")
         return 1
 
-    # If invoked with --account, fail loud when the bridge's logged-in account doesn't match.
-    # Prevents accidentally ingesting a different account's data into the wrong workspace.
+    # If invoked with --account, fail loud when we can't verify the bridge owns that account.
+    # Prevents accidentally ingesting a different account's data into the wrong workspace OR
+    # writing a workspace's data when the bridge JID is unreadable (e.g., schema drift).
     if args.account:
         bridge_phone = my_jid_phone()
-        if bridge_phone and bridge_phone != args.account:
-            sys.stderr.write(f"account mismatch: bridge logged in as {bridge_phone}, ingest requested for {args.account}\n")
+        if not bridge_phone:
+            sys.stderr.write(
+                f"cannot verify bridge account (whatsmeow_device unreadable); refuse to ingest as {args.account}\n"
+            )
+            return 1
+        if bridge_phone != args.account:
+            sys.stderr.write(
+                f"account mismatch: bridge logged in as {bridge_phone}, ingest requested for {args.account}\n"
+            )
             return 1
 
     # exclusive lock
@@ -386,24 +441,50 @@ def main() -> int:
     for row in conn.execute("SELECT * FROM messages ORDER BY chat_jid, timestamp ASC").fetchall():
         msgs_per_chat[row["chat_jid"]].append(dict(row))
 
+    # ─── Slug-collision pre-pass ────────────────────────────────────────────────
+    # Two distinct chats can resolve to the same (kind_dir, slug). Without this,
+    # the second one overwrites the first's shards. Append a stable last-4-digit
+    # JID suffix to ALL members of any colliding group so each gets a unique dir.
+    chat_identity: dict[str, tuple[str, str, str]] = {}
+    slug_to_jids: dict[tuple[str, str], list[str]] = defaultdict(list)
+    for jid in msgs_per_chat:
+        if jid in SKIP_JIDS or jid_kind(jid) == "broadcast" or not msgs_per_chat[jid]:
+            continue
+        chat = chats.get(jid, {})
+        kd, slug, display = resolve_chat_identity(jid, chat.get("name"), contacts, wa_contacts, lid_map)
+        chat_identity[jid] = (kd, slug, display)
+        slug_to_jids[(kd, slug)].append(jid)
+
+    for (kd, slug), jids in slug_to_jids.items():
+        if len(jids) <= 1:
+            continue
+        for jid in jids:
+            digits = re.sub(r"\D", "", jid.split("@", 1)[0])
+            suffix = digits[-4:] if len(digits) >= 4 else (digits or "x")
+            kd_existing, _, display = chat_identity[jid]
+            chat_identity[jid] = (kd_existing, f"{slug}-{suffix}", display)
+        sys.stderr.write(f"slug-collision resolved on '{slug}' across {len(jids)} chats\n")
+
     written = 0
     skipped = 0
     chats_processed = 0
 
     for jid, msgs in msgs_per_chat.items():
-        if jid in SKIP_JIDS or jid_kind(jid) == "broadcast":
-            continue
-        if not msgs:
+        if jid not in chat_identity:
             continue
 
-        chat = chats.get(jid, {})
-        kind_dir, slug, display = resolve_chat_identity(jid, chat.get("name"), contacts, wa_contacts, lid_map)
+        kind_dir, slug, display = chat_identity[jid]
         is_group = kind_dir == "groups"
 
-        # bucket by YYYY-MM
+        # bucket by YYYY-MM using parsed datetime (not lexicographic substring),
+        # so DST / timezone-offset edge cases route to the correct month shard.
         by_month: dict[str, list] = defaultdict(list)
         for m in msgs:
-            month_key = m["timestamp"][:7]
+            try:
+                ts = parse_ts(m["timestamp"])
+            except (ValueError, TypeError):
+                continue
+            month_key = ts.strftime("%Y-%m")
             by_month[month_key].append(m)
 
         for month, month_msgs in by_month.items():

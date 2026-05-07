@@ -9,13 +9,15 @@
 #   Group by JID:    --group "120363405567809486@g.us" --text "<body>"
 #   File attachment: --to <recipient> --file /abs/path
 #
-# Bridge must be running on http://localhost:8080. Pre-flight: GET /api/send returns 405 (POST-only).
-# If the bridge is down, exit 4 and print a clear "bridge not running" message — never silently retry.
+# Bridge must be running on http://localhost:8080. If down, exit 4 with a clear message — never silently retry.
 #
 # Emits JSON on stdout:
 #   {"handoff":"ok","path":"phone|contact|group-by-slug|group-by-jid","recipient":"<jid>","bridge_response":"..."}
-# Exit 0 = bridge accepted handoff. Exit 2 = arg error. Exit 3 = resolution error. Exit 4 = bridge unreachable.
-# Delivery is verifiable only on the recipient side; this script does not claim delivery.
+# Exit codes:
+#   0 — bridge accepted handoff (delivery is verifiable only on the recipient side; this script does not claim delivery)
+#   2 — arg error (missing/conflicting flags, file missing, missing flag value)
+#   3 — resolution error (no contact / ambiguous contact / no group slug match / non-E.164 phone / bridge rejected send / file in sensitive dir)
+#   4 — bridge unreachable on localhost:8080
 
 set -euo pipefail
 
@@ -25,15 +27,19 @@ BRIDGE_DB="$HOME/.local/share/whatsapp-mcp/whatsapp-bridge/store/messages.db"
 
 die()  { echo "send.sh: $*" >&2; exit 2; }
 fail() { echo "send.sh: $*" >&2; exit 3; }
+need_value() {
+  # $1 = flag name, $2 = next arg count remaining
+  [[ $2 -ge 2 ]] || die "$1 requires a value"
+}
 
 TO=""; GROUP=""; TEXT=""; FILE=""
 while [[ $# -gt 0 ]]; do
   case "$1" in
-    --to)     TO="$2";     shift 2 ;;
-    --group)  GROUP="$2";  shift 2 ;;
-    --text)   TEXT="$2";   shift 2 ;;
-    --file)   FILE="$2";   shift 2 ;;
-    -h|--help) sed -n '2,18p' "$0"; exit 0 ;;
+    --to)     need_value "$1" "$#"; TO="$2";     shift 2 ;;
+    --group)  need_value "$1" "$#"; GROUP="$2";  shift 2 ;;
+    --text)   need_value "$1" "$#"; TEXT="$2";   shift 2 ;;
+    --file)   need_value "$1" "$#"; FILE="$2";   shift 2 ;;
+    -h|--help) sed -n '2,21p' "$0"; exit 0 ;;
     *) die "unknown flag: $1" ;;
   esac
 done
@@ -43,8 +49,23 @@ done
 [[ -z "$TEXT" && -z "$FILE" ]] && die "--text or --file required"
 [[ -n "$FILE" && ! -f "$FILE" ]] && die "file not found: $FILE"
 
+# ─── File-path sensitive-dir denylist (data-exfil defense) ─────────────────────
+# Skill is callable by LLMs; an attacker prompt that targets a bridge-recipient
+# they control could try `--file ~/.ssh/id_rsa`. Reject obvious sensitive paths.
+if [[ -n "$FILE" ]]; then
+  ABS_FILE=$(cd "$(dirname "$FILE")" && printf '%s/%s' "$(pwd -P)" "$(basename "$FILE")")
+  case "$ABS_FILE" in
+    "$HOME/.ssh/"*|"$HOME/.aws/"*|"$HOME/.gnupg/"*|"$HOME/.config/"*|"$HOME/Library/Keychains/"*|"/etc/"*|"$ULTRON_ROOT/_credentials/"*)
+      fail "refusing to send file in sensitive directory: $ABS_FILE" ;;
+  esac
+  case "$(basename "$ABS_FILE" | tr '[:upper:]' '[:lower:]')" in
+    *credential*|*secret*|*token*|*apikey*|*api_key*|*.pem|*.key|*.pkcs12|*.p12|.env|*.env)
+      fail "refusing to send file with sensitive name: $ABS_FILE" ;;
+  esac
+  FILE="$ABS_FILE"
+fi
+
 # ─── Pre-flight: bridge reachable? ─────────────────────────────────────────────
-# Outside-the-subshell `||` so `set -e` doesn't kill us on curl's connect error.
 HTTP_CODE=$(curl -sS -o /dev/null -w '%{http_code}' -m 3 -X POST "$BRIDGE_BASE/send" -d '{}' 2>/dev/null) || HTTP_CODE="000"
 if [[ "$HTTP_CODE" == "000" ]]; then
   echo "send.sh: bridge unreachable at $BRIDGE_BASE — start the WhatsApp bridge daemon first" >&2
@@ -60,21 +81,20 @@ if [[ -n "$GROUP" ]]; then
     RECIPIENT="$GROUP"
     PATH_TAG="group-by-jid"
   else
-    # Slug → JID lookup. Slug matches the kebab-cased chat name, so we re-slug
-    # candidates from the chats table and pick the one that matches.
-    JID=$(python3 - <<PY
-import re, sqlite3
-slug = "$GROUP".strip()
+    # Slug → JID lookup. Pass slug + db path as argv to the embedded Python so an
+    # attacker-controlled slug cannot break out of the heredoc and execute code.
+    JID=$(python3 - "$GROUP" "$BRIDGE_DB" <<'PY'
+import re, sqlite3, sys
+slug = sys.argv[1].strip()
+db = sys.argv[2]
 def kc(s):
     s = re.sub(r"[^\w\s-]", "", (s or "").lower())
     s = re.sub(r"[\s_]+", "-", s)
     s = re.sub(r"-+", "-", s).strip("-")
     return s or "unknown"
-con = sqlite3.connect("file:$BRIDGE_DB?mode=ro", uri=True)
-matches = [r[0] for r in con.execute("SELECT jid, name FROM chats WHERE jid LIKE '%@g.us'").fetchall() if False]
-# Re-do cleanly: enumerate, kebab the name, match slug.
+con = sqlite3.connect(f"file:{db}?mode=ro", uri=True)
 matches = []
-for jid, name in con.execute("SELECT jid, name FROM chats WHERE jid LIKE '%@g.us'").fetchall():
+for jid, name in con.execute("SELECT jid, name FROM chats WHERE jid LIKE \"%@g.us\"").fetchall():
     if kc(name) == slug:
         matches.append(jid)
 print("|".join(matches))
@@ -93,20 +113,23 @@ elif [[ "$TO" =~ ^\+[0-9]{7,15}$ ]]; then
   RECIPIENT="${TO#+}"
   PATH_TAG="phone"
 else
-  # Contact-name resolution via Apple Contacts (osascript). Returns one or more
-  # phone numbers; if multiple, we fail loud and ask the caller to pin a number.
-  PHONES=$(osascript <<APPLE 2>/dev/null
-tell application "Contacts"
+  # Apple Contacts resolution. Pass `$TO` as an osascript argv argument (NOT
+  # interpolated into the script source) so a contact name with quotes/backslashes
+  # can't inject AppleScript or `do shell script` commands.
+  PHONES=$(osascript -e '
+on run argv
+  set the_name to item 1 of argv
   set out to ""
-  repeat with p in (every person whose name is "$TO")
-    repeat with ph in phones of p
-      set out to out & (value of ph as string) & "|"
+  tell application "Contacts"
+    repeat with p in (every person whose name is the_name)
+      repeat with ph in phones of p
+        set out to out & (value of ph as string) & "|"
+      end repeat
     end repeat
-  end repeat
+  end tell
   return out
-end tell
-APPLE
-)
+end run
+' -- "$TO" 2>/dev/null || true)
   PHONES="${PHONES%|}"
   if [[ -z "$PHONES" ]]; then
     fail "no Apple Contact named '$TO' (try +E.164 directly)"
@@ -115,13 +138,14 @@ APPLE
   if [[ "$COUNT" -gt 1 ]]; then
     fail "contact '$TO' has $COUNT phones: $PHONES — pass +E.164 explicitly"
   fi
-  # Normalize: digits only, strip leading + and any formatting
-  E164=$(printf '%s' "$PHONES" | tr -dc '0-9+')
-  E164="${E164#+}"
-  if [[ -z "$E164" ]]; then
-    fail "contact '$TO' phone could not be normalized to E.164: $PHONES"
+  # Strict E.164: must start with `+`, contain only digits after, length 7-15.
+  # Without `+`, the leading country code is ambiguous (US (512)555-1234 →
+  # 5125551234 would route to a non-existent international number).
+  CANDIDATE=$(printf '%s' "$PHONES" | tr -d ' ()-.\t')
+  if [[ ! "$CANDIDATE" =~ ^\+[0-9]{7,15}$ ]]; then
+    fail "contact '$TO' phone is not E.164 (must start with + and country code): $PHONES"
   fi
-  RECIPIENT="$E164"
+  RECIPIENT="${CANDIDATE#+}"
   PATH_TAG="contact"
 fi
 
@@ -154,7 +178,6 @@ if [[ "$SUCCESS" != "true" ]]; then
   exit 3
 fi
 
-# Compose handoff JSON
 python3 -c '
 import json, sys
 print(json.dumps({

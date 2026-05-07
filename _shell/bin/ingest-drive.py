@@ -144,7 +144,11 @@ def cursor_path(account: str) -> Path:
 
 
 def lock_path(account: str) -> Path:
-    return Path(f"/tmp/com.adithya.ultron.ingest-drive-{account_slug(account)}.lock")
+    # NOTE: must NOT collide with the cron plist's outer `flock -n` path
+    # (/tmp/com.adithya.ultron.ingest-drive-<account>.lock). Same reasoning
+    # as ingest-slack.py — the outer flock would silently starve the inner
+    # one and the script would exit 0 doing zero work under launchd.
+    return Path(f"/tmp/ultron-ingest-drive-{account_slug(account)}.script.lock")
 
 
 # ============================================================================

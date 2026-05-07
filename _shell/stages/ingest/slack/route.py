@@ -20,6 +20,8 @@ def _slack_block(ws_cfg: dict) -> dict | None:
 def _channel_match(meta: dict, channels: list[str]) -> bool:
     if not channels:
         return False
+    if "*" in channels:
+        return True
     name = (meta.get("channel_name") or "").lstrip("#")
     return name in channels
 
@@ -28,13 +30,19 @@ def _dm_match(meta: dict, participants_slugs: list[str]) -> bool:
     """Match DMs by the OTHER participant's slug. The user always appears
     in their own DMs, so the user's canonical slug is excluded before
     matching — otherwise putting "adithya-shak-kumar" in `include_dms_with`
-    would route every DM."""
+    would route every DM.
+
+    "*" wildcard: include every 1:1 DM and every group DM with at least one
+    non-self participant. Use to land all human + bot DMs to disk; prune
+    later via explicit slug list if noise is too high."""
     if not participants_slugs:
         return False
     if meta.get("channel_type") not in {"im", "mpim"}:
         return False
     parts = {(p.get("slug") or "").lower() for p in meta.get("participants") or []}
     parts.discard("adithya-shak-kumar")  # always-present self
+    if "*" in participants_slugs:
+        return bool(parts)
     return any(s in parts for s in participants_slugs)
 
 

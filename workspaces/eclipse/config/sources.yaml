@@ -38,7 +38,8 @@ sources:
       - engineering
       - eclipse-ugc        # private channel C0AR2P8H268, 6 members
       - general
-    include_dms_with: []   # no DM ingestion; channels-only per current scope
+    include_dms_with:
+      - "*"                # all 1:1 DMs + every group DM I'm a member of
   drive: []        # deferred
   manual:
     watch_path: raw/manual/_inbox/

@@ -232,18 +232,38 @@ export async function submitViaUI(page, context, runDir, {
       return r.width > 40 && r.height > 20 && window.getComputedStyle(b).visibility !== 'hidden' && !b.disabled;
     });
     if (candidates.length === 0) return null;
-    // Cost filter: keep only buttons whose line-2 parses as the expected cost
-    // (if any match). If none match (e.g. page doesn't display cost), skip
-    // the filter.
+
+    // STRUCTURAL FILTER FIRST (cinema dual-Generate disambiguation):
+    // If an active tabpanel container exists, prefer Generate buttons inside it.
+    // Cinema-studio renders two tab panels (Image/Video). The active one has
+    // aria-hidden="false" or data-state="active". This is the most reliable
+    // signal for which Generate to click — adversarial review noted that cost-
+    // line2 alone breaks under promotions, dynamic pricing, or DOM changes.
     let pool = candidates;
+    const activePanels = Array.from(document.querySelectorAll(
+      '[role="tabpanel"][data-state="active"], ' +
+      '[role="tabpanel"]:not([hidden]):not([aria-hidden="true"])'
+    )).filter(p => {
+      const r = p.getBoundingClientRect();
+      return r.width > 40 && r.height > 40;
+    });
+    if (activePanels.length > 0) {
+      const inActivePanel = candidates.filter(b => activePanels.some(p => p.contains(b)));
+      if (inActivePanel.length > 0) pool = inActivePanel;
+    }
+
+    // COST FILTER (fallback / additional disambiguation):
+    // Keep only buttons whose innerText line-2 parses as the expected cost.
+    // Skip silently if no buttons match (e.g. unlim mode hides cost text).
     if (cost != null) {
-      const costMatch = candidates.filter(b => {
+      const costMatch = pool.filter(b => {
         const lines = (b.innerText || '').trim().split('\n').map(s => s.trim());
         const n = parseInt(lines[1] || '', 10);
         return isFinite(n) && n === cost;
       });
       if (costMatch.length > 0) pool = costMatch;
     }
+
     // Among the pool, prefer the LARGEST-by-area (outer wrapper; cinema
     // renders nested Generate <button>s where the inner span carries the text
     // but clicks don't fire the submit). Tiebreak by proximity to the prompt.

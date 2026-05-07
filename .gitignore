@@ -3,6 +3,7 @@
 # Run state, ephemeral
 _shell/runs/
 _shell/cursors/
+_shell/skill-output/
 _logs/
 _graphify/runs/
 

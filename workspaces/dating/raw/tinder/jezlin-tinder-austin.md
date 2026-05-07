@@ -8,7 +8,7 @@ person_id: "699bffa3baf7856991e545ab"
 phone: null
 status: "new"
 first_seen: "2026-04-10T00:00:00Z"
-last_activity: "2026-04-10T05:39:00Z"
+last_activity: "2026-05-07T02:35:17.568Z"
 last_scrape: "2026-05-01T07:47:53.221Z"
 previous_slugs: []
 migrated_from_shakos: "jezlin"
@@ -89,8 +89,10 @@ last_profile_diff: "2026-05-01T07:47:53.221Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 02:35 the "fashionably late" thing and the "big time texter" in the same profile is a lot to promise. which one gets the pass?
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:08 queued_auto (auto, opener) [draft:bb2940bc] lint=true "the \"fashionably late\" thing and the \"big time texter\" in the same profile is a lot to promise. which one gets the pass?"
+- 2026-05-07 02:35 sent (auto, auto-or-hitl) [draft:bb2940bc] lint=true "the \"fashionably late\" thing and the \"big time texter\" in the same profile is a lot to promise. which one gets the pass?"

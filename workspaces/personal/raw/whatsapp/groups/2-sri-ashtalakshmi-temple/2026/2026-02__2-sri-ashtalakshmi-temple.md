@@ -1,9 +1,9 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T02:43:49.007593+00:00'
+ingested_at: '2026-05-07T20:44:04.186318+00:00'
 ingest_version: 1
-content_hash: 'blake3:902a55f3c80df5a22f9548a9049d5beadd14c808e5014fdc7e9614ad0141f2e5'
+content_hash: 'blake3:04c73834d0a65c134dc8830621514655af5c46504b2c2d068fba92d64f30885b'
 provider_modified_at: '2026-02-28T18:23:21-06:00'
 contact_slug: 2-sri-ashtalakshmi-temple
 contact_type: group
@@ -23,7 +23,7 @@ superseded_by: null
 
 ## 2026-02-05 (Thursday)
 
-**23:42 — @248141987233877:** ॐ*
+**23:42 — Nihar:** ॐ*
 *|| Jai Srimannarayana! ||*
 Blessings from Sri Ashtalakshmi Sametha Venkateshwara Swamy Temple 🛕 🚩
 
@@ -48,11 +48,11 @@ Blessings from Sri Ashtalakshmi Sametha Venkateshwara Swamy Temple 🛕 🚩
 
 💐 Participate & Get The Blessings!! ✨
 May Sri Ashtalakshmi Sametha Venkateshwara Swamy, Hanuman, Sri Rama Parivara, Sri Siva Parivara & Bhadrakali Bless Us All! 🙏
-**23:45 — @248141987233877:** [image: image_20260506_181705.jpg]
+**23:45 — Nihar:** [image: image_20260506_181705.jpg]
 
 ## 2026-02-07 (Saturday)
 
-**18:07 — @248141987233877:** Jai Srimannarayana!
+**18:07 — Nihar:** Jai Srimannarayana!
 We Will be starting Sri Vishnu Sahasranama Prayanam by 6:30pm 
 Let’s all Participate & get the Blessings 
 If you can’t participate in person, Here is the link 
@@ -60,7 +60,7 @@ https://us02web.zoom.us/j/87366192511?pwd=dGQzQ2F3TlFlV0ZLd2Z0SWZ3c3ZxQT09
 
 ## 2026-02-13 (Friday)
 
-**00:47 — @248141987233877:** ॐ*
+**00:47 — Nihar:** ॐ*
 *|| Jai Srimannarayana! ||*
 Blessings from Sri Ashtalakshmi Sametha Venkateshwara Swamy Temple 🛕 🚩
 
@@ -86,11 +86,11 @@ Please see *flyer* for details
 
 💐 Participate & Get The Blessings!! ✨
 May Sri Ashtalakshmi Sametha Venkateshwara Swamy, Hanuman, Sri Rama Parivara, Sri Siva Parivara & Bhadrakali Bless Us All! 🙏
-**00:48 — @248141987233877:** [image: image_20260506_181705.jpg]
+**00:48 — Nihar:** [image: image_20260506_181705.jpg]
 
 ## 2026-02-14 (Saturday)
 
-**17:21 — @248141987233877:** Jai Srimannarayana!
+**17:21 — Nihar:** Jai Srimannarayana!
 We Will be starting Sri Vishnu Sahasranama Prayanam by 6:30pm 
 Let’s all Participate & get the Blessings 
 If you can’t participate in person, Here is the link 
@@ -98,11 +98,11 @@ https://us02web.zoom.us/j/87366192511?pwd=dGQzQ2F3TlFlV0ZLd2Z0SWZ3c3ZxQT09
 
 ## 2026-02-15 (Sunday)
 
-**20:59 — @248141987233877:** https://www.youtube.com/attribution_link?a=4kN99mUYuB1QcZnp&u=/live/bi-SKTKWOwo%3Ffeature%3Dem-lsb-owner
+**20:59 — Nihar:** https://www.youtube.com/attribution_link?a=4kN99mUYuB1QcZnp&u=/live/bi-SKTKWOwo%3Ffeature%3Dem-lsb-owner
 
 ## 2026-02-19 (Thursday)
 
-**22:12 — @248141987233877:** ॐ*
+**22:12 — Nihar:** ॐ*
 *|| Jai Srimannarayana! ||*
 Blessings from Sri Ashtalakshmi Sametha Venkateshwara Swamy Temple 🛕 🚩
 
@@ -127,7 +127,7 @@ May Sri Ashtalakshmi Sametha Venkateshwara Swamy, Hanuman, Sri Rama Parivara, Sr
 
 ## 2026-02-21 (Saturday)
 
-**20:29 — @135295831945268:** Jai Srimannarayana!
+**20:29 — +18185169109:** Jai Srimannarayana!
 We Will be starting Sri Vishnu Sahasranama Prayanam by 6:30pm 
 Let’s all Participate & get the Blessings 
 If you can’t participate in person, Here is the link 
@@ -135,7 +135,7 @@ https://us02web.zoom.us/j/87366192511?pwd=dGQzQ2F3TlFlV0ZLd2Z0SWZ3c3ZxQT09
 
 ## 2026-02-27 (Friday)
 
-**01:33 — @248141987233877:** *ॐ*
+**01:33 — Nihar:** *ॐ*
 *|| Jai Srimannarayana! ||*
 ✨Blessings from Sri Ashtalakshmi Sametha Venkateshwara Swamy Temple 🛕 🚩
 
@@ -165,11 +165,11 @@ https://us02web.zoom.us/j/87366192511?pwd=dGQzQ2F3TlFlV0ZLd2Z0SWZ3c3ZxQT09
 
 💐 Participate & Get The Blessings!! ✨
 May Sri Ashtalakshmi Sametha Venkateshwara Swamy, Hanuman, Sri Rama Parivara, Sri Siva Parivara & Bhadrakali Bless Us All! 🙏
-**22:01 — @146973898309839:** [image: image_20260506_181705.jpg]
+**22:01 — Prasad putta:** [image: image_20260506_181705.jpg]
 
 ## 2026-02-28 (Saturday)
 
-**18:23 — @248141987233877:** Jai Srimannarayana!
+**18:23 — Nihar:** Jai Srimannarayana!
 We Will be starting Sri Vishnu Sahasranama Prayanam by 6:30pm 
 Let’s all Participate & get the Blessings 
 If you can’t participate in person, Here is the link 

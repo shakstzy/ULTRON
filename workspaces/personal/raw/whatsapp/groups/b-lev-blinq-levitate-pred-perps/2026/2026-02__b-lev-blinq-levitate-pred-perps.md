@@ -1,9 +1,9 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T02:43:48.992166+00:00'
+ingested_at: '2026-05-07T20:44:04.166783+00:00'
 ingest_version: 1
-content_hash: 'blake3:fac1484faa268ca8bccfb8ab8a90b71fb98dbbfdfffdcbf963cd918dca7157bb'
+content_hash: 'blake3:f09b41957fd2dd6b5237715fc7131b8de2ecfc63df100adb5f2d8801ea5a33b9'
 provider_modified_at: '2026-02-17T14:56:54-06:00'
 contact_slug: b-lev-blinq-levitate-pred-perps
 contact_type: group
@@ -23,5 +23,5 @@ superseded_by: null
 
 ## 2026-02-17 (Tuesday)
 
-**14:53 — @221199556714585:** [image: image_20260506_181705.jpg]
-**14:56 — @221199556714585:** [image: image_20260506_181705.jpg]
+**14:53 — Vimal Synapse:** [image: image_20260506_181705.jpg]
+**14:56 — Vimal Synapse:** [image: image_20260506_181705.jpg]

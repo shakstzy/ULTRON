@@ -46,3 +46,7 @@ if you found something else, let me know, so I can remove you from my potential 
 ### 2026-03-09T19:31:37.757Z - Owner (Adithya)
 
 wanted to reping on the above, did you get a chance to tour the property
+
+### 2026-05-07T20:43:50.574Z - Owner (Adithya)
+
+hey Ashley, you still looking? if you're ready to apply, here's the link, $25 fee and 2-3 references: https://www.zillow.com/renter-hub/applications/listing/258vhr7ge6q56/rental-application/?itc=rentalhdpapplynow

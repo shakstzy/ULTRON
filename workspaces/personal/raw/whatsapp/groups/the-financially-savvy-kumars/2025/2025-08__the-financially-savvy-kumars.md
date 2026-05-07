@@ -1,9 +1,9 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T02:43:48.984351+00:00'
+ingested_at: '2026-05-07T20:44:04.156305+00:00'
 ingest_version: 1
-content_hash: 'blake3:62f119f9cab08fb9e407a233efa42e0aaf3fc3635a16c59cd8aa53610c9143f2'
+content_hash: 'blake3:7233e1a028e2f5804ccfd4dcf6556e8e8e8f407964a8a3ed4793ed531fbf99e5'
 provider_modified_at: '2025-08-23T23:42:09-05:00'
 contact_slug: the-financially-savvy-kumars
 contact_type: group
@@ -23,4 +23,4 @@ superseded_by: null
 
 ## 2025-08-23 (Saturday)
 
-**23:42 — +15104499964:** Inside 30-year-old billionaire Lucy Guo's intense daily routine https://share.google/pNYUaZhPee56ob8sV
+**23:42 — Mom:** Inside 30-year-old billionaire Lucy Guo's intense daily routine https://share.google/pNYUaZhPee56ob8sV

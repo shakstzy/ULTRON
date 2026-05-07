@@ -1,9 +1,9 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T02:43:48.993516+00:00'
+ingested_at: '2026-05-07T20:44:04.168255+00:00'
 ingest_version: 1
-content_hash: 'blake3:f7e6b8c5ab76effdbc51d72f38a5a87f4715f8a75a098612f3e72f84612be47a'
+content_hash: 'blake3:4d849f770a060e34f1c8f31508d204cd837d0bee60efee3b81106dde099ca2cf'
 provider_modified_at: '2026-03-31T11:59:50-05:00'
 contact_slug: aditya-and-sarick
 contact_type: group
@@ -23,11 +23,11 @@ superseded_by: null
 
 ## 2026-03-15 (Sunday)
 
-**16:31 — @103203853078768:** please meet at GTC
-**16:31 — @103203853078768:** @240574019965159 : if you can route some deals to poseidon happy to pay
+**16:31 — Sandeep Chinchali Austin:** please meet at GTC
+**16:31 — Sandeep Chinchali Austin:** @240574019965159 : if you can route some deals to poseidon happy to pay
 **16:36 — me:** Hey sarick hope you’re doing well
 **16:36 — me:** Would love to meet you on the ground
-**16:55 — @160932491731033:** Hey sounds great! What's your schedule looking like
+**16:55 — Sarick Shah:** Hey sounds great! What's your schedule looking like
 
 ## 2026-03-17 (Tuesday)
 
@@ -41,4 +41,4 @@ superseded_by: null
 
 ## 2026-03-31 (Tuesday)
 
-**11:59 — @160932491731033:** booked, talk to you friday 🙂
+**11:59 — Sarick Shah:** booked, talk to you friday 🙂

@@ -1,9 +1,9 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T02:43:48.987481+00:00'
+ingested_at: '2026-05-07T20:44:04.160141+00:00'
 ingest_version: 1
-content_hash: 'blake3:fccc09357872fb9669f0faeedc38b46843ecacceb17554feed2ae00179954102'
+content_hash: 'blake3:e40e4bcf144ff18a9f3379bd19551b31430a7482dda1714519457eb6d4af7b2e'
 provider_modified_at: '2026-02-01T12:54:13-06:00'
 contact_slug: francesco-nick
 contact_type: group
@@ -23,4 +23,4 @@ superseded_by: null
 
 ## 2026-02-01 (Sunday)
 
-**12:54 — @16647846928384:** Let me know if that works!
+**12:54 — Francesco Hayes Luxxera Healthcare:** Let me know if that works!

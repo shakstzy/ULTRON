@@ -1,9 +1,9 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T02:43:48.981789+00:00'
+ingested_at: '2026-05-07T20:44:04.152704+00:00'
 ingest_version: 1
-content_hash: 'blake3:2449ec31b9bf31b8c3b5fea6c5a84228a0d1b03153eda895a8175df1bc4b347f'
+content_hash: 'blake3:5c701ff15e30c5eab3245779a516eb97938fb7b041a0136d3365f4d7d4de1b55'
 provider_modified_at: '2026-04-30T07:10:41-05:00'
 contact_slug: devi-balu-family
 contact_type: group
@@ -23,78 +23,78 @@ superseded_by: null
 
 ## 2026-04-01 (Wednesday)
 
-**13:18 — @273288869752960:** [image: image_20260506_181704.jpg]
-**13:18 — @273288869752960:** Tirumala Srivari Annual Vasanthothsavam 3 rd day Snapana Tirumanjanam (Abhishekam) Sri Sridevi Sri Bhoodevi Sametha Sri Malayappaswamy & Sri Seetha Lakshmana Hanumath Sametha Sri Kodhantha Rama Swamy & Sri Aandal & Krishna Swamy
-**13:18 — @273288869752960:** [image: image_20260506_181704.jpg]
-**20:59 — @273288869752960:** [image: image_20260506_181704.jpg]
+**13:18 — Mom:** [image: image_20260506_181704.jpg]
+**13:18 — Mom:** Tirumala Srivari Annual Vasanthothsavam 3 rd day Snapana Tirumanjanam (Abhishekam) Sri Sridevi Sri Bhoodevi Sametha Sri Malayappaswamy & Sri Seetha Lakshmana Hanumath Sametha Sri Kodhantha Rama Swamy & Sri Aandal & Krishna Swamy
+**13:18 — Mom:** [image: image_20260506_181704.jpg]
+**20:59 — Mom:** [image: image_20260506_181704.jpg]
 
 ## 2026-04-06 (Monday)
 
-**19:22 — @273288869752960:** [image: image_20260506_181704.jpg]
-**20:25 — @273288869752960:** [image: image_20260506_181704.jpg]
+**19:22 — Mom:** [image: image_20260506_181704.jpg]
+**20:25 — Mom:** [image: image_20260506_181704.jpg]
 
 ## 2026-04-08 (Wednesday)
 
-**18:43 — @273288869752960:** https://www.instagram.com/p/DWavhopDOqq/?img_index=8&igsh=c2Z6amJ2c2xjb3Ux
+**18:43 — Mom:** https://www.instagram.com/p/DWavhopDOqq/?img_index=8&igsh=c2Z6amJ2c2xjb3Ux
 
 ## 2026-04-09 (Thursday)
 
-**19:54 — @126800420147335:** [image: image_20260506_181704.jpg]
+**19:54 — Dad:** [image: image_20260506_181704.jpg]
 
 ## 2026-04-10 (Friday)
 
-**23:11 — @273288869752960:** [video: video_20260506_181704.mp4]
+**23:11 — Mom:** [video: video_20260506_181704.mp4]
 
 ## 2026-04-11 (Saturday)
 
-**10:18 — @273288869752960:** https://www.instagram.com/reel/DW9cfKDRnD3/?igsh=MTByb2p1bm1jMTQybA==
+**10:18 — Mom:** https://www.instagram.com/reel/DW9cfKDRnD3/?igsh=MTByb2p1bm1jMTQybA==
 
 ## 2026-04-12 (Sunday)
 
-**13:04 — @273288869752960:** [image: image_20260506_181704.jpg]
-**13:04 — @273288869752960:** [image: image_20260506_181704.jpg]
-**22:53 — @273288869752960:** [image: image_20260506_181704.jpg]
+**13:04 — Mom:** [image: image_20260506_181704.jpg]
+**13:04 — Mom:** [image: image_20260506_181704.jpg]
+**22:53 — Mom:** [image: image_20260506_181704.jpg]
 
 ## 2026-04-13 (Monday)
 
-**20:27 — @273288869752960:** [image: image_20260506_181704.jpg]
-**20:34 — @273288869752960:** [image: image_20260506_181704.jpg]
+**20:27 — Mom:** [image: image_20260506_181704.jpg]
+**20:34 — Mom:** [image: image_20260506_181704.jpg]
 
 ## 2026-04-14 (Tuesday)
 
-**07:46 — @126800420147335:** [image: image_20260506_181704.jpg]
-**12:33 — @273288869752960:** [image: image_20260506_181704.jpg]
-**21:59 — @273288869752960:** [image: image_20260506_181704.jpg]
+**07:46 — Dad:** [image: image_20260506_181704.jpg]
+**12:33 — Mom:** [image: image_20260506_181704.jpg]
+**21:59 — Mom:** [image: image_20260506_181704.jpg]
 
 ## 2026-04-16 (Thursday)
 
-**07:50 — @126800420147335:** [image: image_20260506_181704.jpg]
+**07:50 — Dad:** [image: image_20260506_181704.jpg]
 
 ## 2026-04-18 (Saturday)
 
-**19:44 — @273288869752960:** [image: image_20260506_181704.jpg]
-**23:16 — @61542703857907:** [image: image_20260506_181704.jpg]
-**23:18 — @61542703857907:** Your kurumbu.
+**19:44 — Mom:** [image: image_20260506_181704.jpg]
+**23:16 — Meenuma India:** [image: image_20260506_181704.jpg]
+**23:18 — Meenuma India:** Your kurumbu.
 She running around with her body mass chasing you, with the edge of the item dipped in chocolate lava😂🤣😂🤣
-**23:19 — @61542703857907:** On another note, it's Balupa's cleaning item. 
+**23:19 — Meenuma India:** On another note, it's Balupa's cleaning item. 
 He could clean the entire planet surface with this one broom🤗
-**23:43 — @273288869752960:** Saw this in temple today and reminded of our heritage 😉
+**23:43 — Mom:** Saw this in temple today and reminded of our heritage 😉
 
 ## 2026-04-19 (Sunday)
 
-**10:35 — @273288869752960:** [image: image_20260506_181704.jpg]
-**11:01 — @273288869752960:** [image: image_20260506_181704.jpg]
-**12:35 — @273288869752960:** https://www.instagram.com/reel/DW-QtMskbrF/?igsh=NWw0dWxja2U5anR2
-**13:06 — @61542703857907:** [image: image_20260506_181704.jpg]
-**13:10 — @61542703857907:** [image: image_20260506_181704.jpg]
-**13:16 — @273288869752960:** I can hear Mommy saying yeruma madu🤣
-**13:17 — @61542703857907:** [audio: audio_20260506_181704.ogg]
-**16:38 — @273288869752960:** [image: image_20260506_181704.jpg]
-**20:59 — @126800420147335:** [image: image_20260506_181704.jpg]
+**10:35 — Mom:** [image: image_20260506_181704.jpg]
+**11:01 — Mom:** [image: image_20260506_181704.jpg]
+**12:35 — Mom:** https://www.instagram.com/reel/DW-QtMskbrF/?igsh=NWw0dWxja2U5anR2
+**13:06 — Meenuma India:** [image: image_20260506_181704.jpg]
+**13:10 — Meenuma India:** [image: image_20260506_181704.jpg]
+**13:16 — Mom:** I can hear Mommy saying yeruma madu🤣
+**13:17 — Meenuma India:** [audio: audio_20260506_181704.ogg]
+**16:38 — Mom:** [image: image_20260506_181704.jpg]
+**20:59 — Dad:** [image: image_20260506_181704.jpg]
 
 ## 2026-04-20 (Monday)
 
-**15:47 — @273288869752960:** Twenty years ago, Amma returned to her eternal home.
+**15:47 — Mom:** Twenty years ago, Amma returned to her eternal home.
 
 In that sacred moment, while our hearts held on, hers had already dissolved into peace—ready to merge with the Infinite. What we experienced as separation, she experienced as fullness.
 
@@ -167,34 +167,34 @@ Forever grateful. Always connected.
 
 Om Namaḥ Śivāya
 Om Shāntiḥ Shāntiḥ Shāntiḥ!
-**15:47 — @273288869752960:** [image: image_20260506_181704.jpg]
-**21:24 — @273288869752960:** [image: image_20260506_181704.jpg]
+**15:47 — Mom:** [image: image_20260506_181704.jpg]
+**21:24 — Mom:** [image: image_20260506_181704.jpg]
 
 ## 2026-04-21 (Tuesday)
 
-**00:41 — @61542703857907:** [audio: audio_20260506_181704.ogg]
-**19:09 — @273288869752960:** [image: image_20260506_181704.jpg]
-**19:09 — @273288869752960:** [image: image_20260506_181704.jpg]
-**21:59 — @126800420147335:** [image: image_20260506_181704.jpg]
+**00:41 — Meenuma India:** [audio: audio_20260506_181704.ogg]
+**19:09 — Mom:** [image: image_20260506_181704.jpg]
+**19:09 — Mom:** [image: image_20260506_181704.jpg]
+**21:59 — Dad:** [image: image_20260506_181704.jpg]
 
 ## 2026-04-24 (Friday)
 
-**00:03 — @273288869752960:** [document: The Complex Interplay Between Gut-Brain, Gut-Liver, and Liver-Brain Axes (Cristina Stasi).pdf]
-**21:49 — @126800420147335:** [image: image_20260506_181704.jpg]
+**00:03 — Mom:** [document: The Complex Interplay Between Gut-Brain, Gut-Liver, and Liver-Brain Axes (Cristina Stasi).pdf]
+**21:49 — Dad:** [image: image_20260506_181704.jpg]
 
 ## 2026-04-25 (Saturday)
 
-**09:11 — @126800420147335:** https://www.facebook.com/share/r/1E5ZSD9VEV/?mibextid=UalRPS
-**13:49 — @273288869752960:** [image: image_20260506_181704.jpg]
+**09:11 — Dad:** https://www.facebook.com/share/r/1E5ZSD9VEV/?mibextid=UalRPS
+**13:49 — Mom:** [image: image_20260506_181704.jpg]
 
 ## 2026-04-27 (Monday)
 
-**20:53 — @126800420147335:** [image: image_20260506_181704.jpg]
+**20:53 — Dad:** [image: image_20260506_181704.jpg]
 
 ## 2026-04-29 (Wednesday)
 
-**09:49 — @61542703857907:** [image: image_20260506_181704.jpg]
+**09:49 — Meenuma India:** [image: image_20260506_181704.jpg]
 
 ## 2026-04-30 (Thursday)
 
-**07:10 — @126800420147335:** [image: image_20260506_181704.jpg]
+**07:10 — Dad:** [image: image_20260506_181704.jpg]

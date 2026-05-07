@@ -1,17 +1,17 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T02:43:49.000570+00:00'
+ingested_at: '2026-05-07T20:44:04.177029+00:00'
 ingest_version: 1
-content_hash: 'blake3:0a3f6d98b26c57b83f7604ef7676af0a90e75750eeb42aa631bce35341d9e764'
-provider_modified_at: '2026-05-05T22:26:57-05:00'
+content_hash: 'blake3:dbd67d5b6cdbe3201acf923be47a0a2489bc668cbf630025392e18283ba00437'
+provider_modified_at: '2026-05-07T10:58:20-05:00'
 contact_slug: girija-nagarajan-family
 contact_type: group
 month: 2026-05
-date_range: [2026-05-01, 2026-05-05]
-message_count: 79
+date_range: [2026-05-01, 2026-05-07]
+message_count: 86
 my_message_count: 0
-their_message_count: 79
+their_message_count: 86
 attachments: []
 whatsapp_chat_jid: '15104499964-1417839295@g.us'
 whatsapp_chat_kind: group
@@ -23,70 +23,70 @@ superseded_by: null
 
 ## 2026-05-01 (Friday)
 
-**00:45 — @110458136715502:** Axis india today only projected 120-160 for TVK rest all projected less than 100.also note axis projection considered to be 80% + correct so far
-**01:02 — @97779393253611:** TVK would at the most secure 3 seats and nothing more ...that's for sure.  all projections would fall flat.  I want the AIADMK & BJP to lose deposit in every seat they contested
-**01:12 — @83803502551081:** I actually believe a bit of political chaos could lead to better solutions, chithappa. I’d expect something like 80 seats for DMK, 70 for AIADMK, around 50 for TVK, and a few for NTK. With this kind of split, the Tamil Nadu Assembly would be more competitive, and that could push for better decision-making. In the end, it wouldn’t matter as much who holds the Chief Minister position.
-**01:23 — @97779393253611:** But BJP should never be let in as it would spread its poisonous policy of riving the homogenous society on religious lines to suit its own interests.  AIADMK is a slave to the BJP and is anathema to growth...
-**01:43 — @83803502551081:** Kongu belt will be definitely for them chithapa
-**01:43 — @83803502551081:** Then around we don't have much of dominance by AIADMK
-**01:50 — @22291048054955:** I don't want anyone to rule...😓
-**01:50 — @22291048054955:** Nobody is doing good
-**01:50 — @22291048054955:** All are corrupted people
-**01:53 — @83803502551081:** Corruption is everywhere.. that's completely fine.  I'm much worried with Law and order especially on women and children.   Whichever party reduces this my support is for them.
-**01:54 — @22291048054955:** Women safety?? Definitely not DMK then
-**01:54 — @83803502551081:** So you feel safe under BJP?
-**01:54 — @22291048054955:** Not them as well
-**01:55 — @83803502551081:** Remember nitin gadkari
-**01:55 — @83803502551081:** Apo nee election la nillu 🤣🤣🤣
-**01:55 — @22291048054955:** Then should give chance for TVK only
-**01:55 — @22291048054955:** Evan vote pannuvan?
-**01:56 — @22291048054955:** No parties are safe for women here
-**01:56 — @83803502551081:** TVK has cadres with 60 cases [ not on women or children]
-**01:56 — @83803502551081:** Nane pana maata
-**01:57 — @83803502551081:** Gandhi kutitu varata
-**01:57 — @22291048054955:** Gandhi pathi unaku theriyuma..Avane oru porukki dha
-**01:57 — @22291048054955:** Senja thappa accept pannikita avan nallavana
-**01:58 — @83803502551081:** Personal things shouldn't be considered.
-**01:58 — @22291048054955:** Nee sonna women safety ku dha sonnan
-**01:58 — @83803502551081:** He didn't forced any one😁
-**01:58 — @22291048054955:** Oh hoo
-**01:58 — @22291048054955:** Sari chupp....Movie poda poranga..Let's switch off the phone
-**01:59 — @22291048054955:** Un aalu padam vera🤣
-**01:59 — @83803502551081:** People everyone are attracted towards celebrities from 1940s
-**01:59 — @83803502551081:** 😁
-**06:21 — @97779393253611:** 😂😂😂
-**07:31 — @126800420147335:** Unkodathan anbe safea feel pandren. Why don’t u stand in a constituency
-**07:52 — @83803502551081:** Ha ha chithapa enga avala sola solunga🤣
-**07:53 — @83803502551081:** Btw watched a movie name Kara.. Dhanush movie.. mudiyalllaaaaaa
-**08:43 — @22291048054955:** Yaru @83803502551081 kooda safe ah Chithappa🤣🤣🤣
-**08:44 — @22291048054955:** Epdi da na solluavan....🤣
-**08:47 — @83803502551081:** [video: video_20260506_181704.mp4]
-**10:59 — @97779393253611:** https://www.facebook.com/share/p/1bKn463EGt/
+**00:45 — Kannan Periappa:** Axis india today only projected 120-160 for TVK rest all projected less than 100.also note axis projection considered to be 80% + correct so far
+**01:02 — Srinivasan Periappa:** TVK would at the most secure 3 seats and nothing more ...that's for sure.  all projections would fall flat.  I want the AIADMK & BJP to lose deposit in every seat they contested
+**01:12 — Ramesh Anna:** I actually believe a bit of political chaos could lead to better solutions, chithappa. I’d expect something like 80 seats for DMK, 70 for AIADMK, around 50 for TVK, and a few for NTK. With this kind of split, the Tamil Nadu Assembly would be more competitive, and that could push for better decision-making. In the end, it wouldn’t matter as much who holds the Chief Minister position.
+**01:23 — Srinivasan Periappa:** But BJP should never be let in as it would spread its poisonous policy of riving the homogenous society on religious lines to suit its own interests.  AIADMK is a slave to the BJP and is anathema to growth...
+**01:43 — Ramesh Anna:** Kongu belt will be definitely for them chithapa
+**01:43 — Ramesh Anna:** Then around we don't have much of dominance by AIADMK
+**01:50 — Kaarunya Akka:** I don't want anyone to rule...😓
+**01:50 — Kaarunya Akka:** Nobody is doing good
+**01:50 — Kaarunya Akka:** All are corrupted people
+**01:53 — Ramesh Anna:** Corruption is everywhere.. that's completely fine.  I'm much worried with Law and order especially on women and children.   Whichever party reduces this my support is for them.
+**01:54 — Kaarunya Akka:** Women safety?? Definitely not DMK then
+**01:54 — Ramesh Anna:** So you feel safe under BJP?
+**01:54 — Kaarunya Akka:** Not them as well
+**01:55 — Ramesh Anna:** Remember nitin gadkari
+**01:55 — Ramesh Anna:** Apo nee election la nillu 🤣🤣🤣
+**01:55 — Kaarunya Akka:** Then should give chance for TVK only
+**01:55 — Kaarunya Akka:** Evan vote pannuvan?
+**01:56 — Kaarunya Akka:** No parties are safe for women here
+**01:56 — Ramesh Anna:** TVK has cadres with 60 cases [ not on women or children]
+**01:56 — Ramesh Anna:** Nane pana maata
+**01:57 — Ramesh Anna:** Gandhi kutitu varata
+**01:57 — Kaarunya Akka:** Gandhi pathi unaku theriyuma..Avane oru porukki dha
+**01:57 — Kaarunya Akka:** Senja thappa accept pannikita avan nallavana
+**01:58 — Ramesh Anna:** Personal things shouldn't be considered.
+**01:58 — Kaarunya Akka:** Nee sonna women safety ku dha sonnan
+**01:58 — Ramesh Anna:** He didn't forced any one😁
+**01:58 — Kaarunya Akka:** Oh hoo
+**01:58 — Kaarunya Akka:** Sari chupp....Movie poda poranga..Let's switch off the phone
+**01:59 — Kaarunya Akka:** Un aalu padam vera🤣
+**01:59 — Ramesh Anna:** People everyone are attracted towards celebrities from 1940s
+**01:59 — Ramesh Anna:** 😁
+**06:21 — Srinivasan Periappa:** 😂😂😂
+**07:31 — Dad:** Unkodathan anbe safea feel pandren. Why don’t u stand in a constituency
+**07:52 — Ramesh Anna:** Ha ha chithapa enga avala sola solunga🤣
+**07:53 — Ramesh Anna:** Btw watched a movie name Kara.. Dhanush movie.. mudiyalllaaaaaa
+**08:43 — Kaarunya Akka:** Yaru @83803502551081 kooda safe ah Chithappa🤣🤣🤣
+**08:44 — Kaarunya Akka:** Epdi da na solluavan....🤣
+**08:47 — Ramesh Anna:** [video: video_20260506_181704.mp4]
+**10:59 — Srinivasan Periappa:** https://www.facebook.com/share/p/1bKn463EGt/
 
 You would realize why BJP should never set its foot in Tamil Nadu and why India should be  rid of this party and all its stupid but cunning illiterate  goons
-**12:37 — @126800420147335:** As u said no politician can give u the protection. The only plausible chance is ur husband
-**12:38 — @126800420147335:** Ramesh kindal senchalum pasakara payan. He will surely take care of u
-**12:40 — @22291048054955:** [video: video_20260506_181704.mp4]
-**12:41 — @22291048054955:** 🤣🤣🤣🤣🤣🤣
-**12:41 — @83803502551081:** Haha
-**12:41 — @22291048054955:** Don't say it Chithappa..Dhanush fans sandai ku varuvanga😝😝
-**12:47 — @126800420147335:** I am like my president udar udarathulan 10k milesku anthandathan saiven
-**12:47 — @126800420147335:** Shoot I feel horrible to compare myself with my president
-**12:47 — @126800420147335:** :-)
-**13:10 — @83803502551081:** 🤣🤣🤣
-**14:19 — @22291048054955:** 🤣🤣🤣🤣
-**22:24 — @110458136715502:** [image: image_20260506_181704.jpg]
-**22:25 — @110458136715502:** [image: image_20260506_181704.jpg]
-**22:28 — @110458136715502:** [image: image_20260506_181704.jpg]
-**22:28 — @110458136715502:** [image: image_20260506_181704.jpg]
-**22:29 — @110458136715502:** [image: image_20260506_181704.jpg]
+**12:37 — Dad:** As u said no politician can give u the protection. The only plausible chance is ur husband
+**12:38 — Dad:** Ramesh kindal senchalum pasakara payan. He will surely take care of u
+**12:40 — Kaarunya Akka:** [video: video_20260506_181704.mp4]
+**12:41 — Kaarunya Akka:** 🤣🤣🤣🤣🤣🤣
+**12:41 — Ramesh Anna:** Haha
+**12:41 — Kaarunya Akka:** Don't say it Chithappa..Dhanush fans sandai ku varuvanga😝😝
+**12:47 — Dad:** I am like my president udar udarathulan 10k milesku anthandathan saiven
+**12:47 — Dad:** Shoot I feel horrible to compare myself with my president
+**12:47 — Dad:** :-)
+**13:10 — Ramesh Anna:** 🤣🤣🤣
+**14:19 — Kaarunya Akka:** 🤣🤣🤣🤣
+**22:24 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**22:25 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**22:28 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**22:28 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**22:29 — Kannan Periappa:** [image: image_20260506_181704.jpg]
 
 ## 2026-05-02 (Saturday)
 
-**07:24 — @97779393253611:** https://www.instagram.com/reel/DXyn6rFNXNH/?igsh=Z215c3YwbHIzbTM2
-**08:14 — @83803502551081:** Aaha sema.. we shall plan once chithapa
-**09:27 — @126800420147335:** https://www.facebook.com/share/r/1CuCgUhwcR/
-**22:34 — @97779393253611:** **#சாத்தான்குளம் வழக்கில் சம்பந்தப்பட்ட 9 காவலர்களுக்கும் மரண தண்டனை விதிக்கப்பட்டுள்ளது!**
+**07:24 — Srinivasan Periappa:** https://www.instagram.com/reel/DXyn6rFNXNH/?igsh=Z215c3YwbHIzbTM2
+**08:14 — Ramesh Anna:** Aaha sema.. we shall plan once chithapa
+**09:27 — Dad:** https://www.facebook.com/share/r/1CuCgUhwcR/
+**22:34 — Srinivasan Periappa:** **#சாத்தான்குளம் வழக்கில் சம்பந்தப்பட்ட 9 காவலர்களுக்கும் மரண தண்டனை விதிக்கப்பட்டுள்ளது!**
 
 இந்த வழக்கில், இத்தகைய வலுவான தீர்ப்பிற்கு வழிவகுத்த மிக முக்கியமான மற்றும் அரிதான சாட்சியம், **ஒரே ஒரு பெண்ணிடமிருந்து** கிடைத்தது!
 
@@ -126,28 +126,28 @@ You would realize why BJP should never set its foot in Tamil Nadu and why India 
 
 ## 2026-05-03 (Sunday)
 
-**01:46 — @110458136715502:** [image: image_20260506_181704.jpg]
-**01:56 — @110458136715502:** [image: image_20260506_181704.jpg]
-**12:20 — @97779393253611:** [image: image_20260506_181704.jpg]
-**12:20 — @97779393253611:** Wonderful article written after a thorough study...Being civil changes with situation...even the British who queue up for every public utility trun into hooligans when they enter into football grounds...Might have heard of the Olympic committee even contemplating banning British fans inside football stadia. I had a friend of mine rage about poor upkeep of toilets when he peed away from the pool designated for peeing. When asked to mend ways he retorted it is the duty of the cleaners as if he did not have an obligation to be civil...Indians especially the so called rich cavill at everything but when it comes to being polite towards others, are never so...This has to be taught from school days as the singaporeans do... Behave politely to others as you would expect others to be towards you
-**21:28 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:30 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:33 — @110458136715502:** [image: image_20260506_181704.jpg]
-**23:23 — @110458136715502:** [image: image_20260506_181704.jpg]
+**01:46 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**01:56 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**12:20 — Srinivasan Periappa:** [image: image_20260506_181704.jpg]
+**12:20 — Srinivasan Periappa:** Wonderful article written after a thorough study...Being civil changes with situation...even the British who queue up for every public utility trun into hooligans when they enter into football grounds...Might have heard of the Olympic committee even contemplating banning British fans inside football stadia. I had a friend of mine rage about poor upkeep of toilets when he peed away from the pool designated for peeing. When asked to mend ways he retorted it is the duty of the cleaners as if he did not have an obligation to be civil...Indians especially the so called rich cavill at everything but when it comes to being polite towards others, are never so...This has to be taught from school days as the singaporeans do... Behave politely to others as you would expect others to be towards you
+**21:28 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:30 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:33 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**23:23 — Kannan Periappa:** [image: image_20260506_181704.jpg]
 
 ## 2026-05-04 (Monday)
 
-**02:04 — @97779393253611:** [video: video_20260506_181704.mp4]
-**21:33 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:42 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:43 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:44 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:47 — @110458136715502:** [image: image_20260506_181704.jpg]
+**02:04 — Srinivasan Periappa:** [video: video_20260506_181704.mp4]
+**21:33 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:42 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:43 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:44 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:47 — Kannan Periappa:** [image: image_20260506_181704.jpg]
 
 ## 2026-05-05 (Tuesday)
 
-**00:03 — @110458136715502:** [image: image_20260506_181704.jpg]
-**12:25 — @97779393253611:** After 30yrs, DMK Lost in Kumbakonam
+**00:03 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**12:25 — Srinivasan Periappa:** After 30yrs, DMK Lost in Kumbakonam
 After 30yrs, DMK Lost in Katpadi
 After 25yrs, ADMK Lost in Mettupalayam
 After 25yrs, ADMK Lost in Avanashi
@@ -206,7 +206,20 @@ A man with just a 2yrs old party walked in,
 broke strongholds, rewrote equations and shook the entire political landscape in TN
 
 Remember the Name ~ Thalapathy Vijay 😎🔥
-**12:27 — @97779393253611:** [video: video_20260506_181704.mp4]
-**22:09 — @110458136715502:** [image: image_20260506_181704.jpg]
-**22:20 — @110458136715502:** [image: image_20260506_181704.jpg]
-**22:26 — @110458136715502:** [image: image_20260506_181704.jpg]
+**12:27 — Srinivasan Periappa:** [video: video_20260506_181704.mp4]
+**22:09 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**22:20 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**22:26 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+
+## 2026-05-06 (Wednesday)
+
+**21:56 — @110458136715502:** [image: image_20260506_215644.jpg]
+**21:57 — @110458136715502:** [image: image_20260506_215731.jpg]
+**21:58 — @110458136715502:** [image: image_20260506_215830.jpg]
+**22:02 — @110458136715502:** [image: image_20260506_220236.jpg]
+**22:18 — @161765782458372:** [video: video_20260506_221838.mp4]
+
+## 2026-05-07 (Thursday)
+
+**10:47 — @273288869752960:** [image: image_20260507_104726.jpg]
+**10:58 — @97779393253611:** The thing that comes up is Amma''s Adai.  Strewn with slices coconuts and a coarsely ground thoor dhall and besan flour...you can eat three hefty servings without feeling guilty about it

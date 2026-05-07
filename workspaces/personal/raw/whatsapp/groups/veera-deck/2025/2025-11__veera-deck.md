@@ -1,9 +1,9 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T02:43:48.986041+00:00'
+ingested_at: '2026-05-07T20:44:04.158678+00:00'
 ingest_version: 1
-content_hash: 'blake3:5bc8f1b881c28d56beb46461b24302b75eb9e0e97b7b5ad60a79f40866d6050d'
+content_hash: 'blake3:53757919d6527c655664c2f4ed9ec8e899ad63d0867f9c76e2d43e782a728bff'
 provider_modified_at: '2025-11-12T21:09:39-06:00'
 contact_slug: veera-deck
 contact_type: group
@@ -23,4 +23,4 @@ superseded_by: null
 
 ## 2025-11-12 (Wednesday)
 
-**21:09 — @241871167172784:** https://www.figma.com/design/YElx3oD79M8UFwuMm3jZjC/Veera-Decks?node-id=1058-52532&p=f&t=KTINAzK0MQIWSSA3-0
+**21:09 — Arjun Veera:** https://www.figma.com/design/YElx3oD79M8UFwuMm3jZjC/Veera-Decks?node-id=1058-52532&p=f&t=KTINAzK0MQIWSSA3-0

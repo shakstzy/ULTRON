@@ -1,9 +1,9 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T02:43:48.984813+00:00'
+ingested_at: '2026-05-07T20:44:04.156951+00:00'
 ingest_version: 1
-content_hash: 'blake3:a43b8556a090df946a8b2a114a09564bc166bcd8fc0999f9b969772910afd3df'
+content_hash: 'blake3:b795d65fb5ede9789d716710ff84d45a1431506ddd286498e031d2c3b843fc63'
 provider_modified_at: '2025-08-23T17:17:40-05:00'
 contact_slug: the-spiritual-and-religious-kumars
 contact_type: group
@@ -23,4 +23,4 @@ superseded_by: null
 
 ## 2025-08-23 (Saturday)
 
-**17:17 — +15104499964:** [image: image_20260506_181705.jpg]
+**17:17 — Mom:** [image: image_20260506_181705.jpg]

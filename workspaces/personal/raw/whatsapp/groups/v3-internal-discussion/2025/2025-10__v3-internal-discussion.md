@@ -1,9 +1,9 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T02:43:48.980453+00:00'
+ingested_at: '2026-05-07T20:44:04.150798+00:00'
 ingest_version: 1
-content_hash: 'blake3:eb1591e5cc8b562d2687fdf4dd87e62963e60343d7ed2c42df626a10b39361ab'
+content_hash: 'blake3:54d24c48016b916cb2ebc483c69a6e1e0efc0cd1010362ca57735c9d60e26e5c'
 provider_modified_at: '2025-10-30T04:44:58-05:00'
 contact_slug: v3-internal-discussion
 contact_type: group
@@ -23,4 +23,4 @@ superseded_by: null
 
 ## 2025-10-30 (Thursday)
 
-**04:44 — @253248502034529:** @46948321120351 @3045182148716
+**04:44 — Paul Anna REProject:** @46948321120351 @3045182148716

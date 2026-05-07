@@ -332,8 +332,16 @@ def gemini_describe_with_retry(path, kind, max_retries=5, model=None, claude_fal
             continue  # try another account immediately
         if desc:
             _record_call(account[0], "success")
-        else:
-            _record_call(account[0], "other")
+            return desc, model_used, err
+        _record_call(account[0], "other")
+        # Gemini gave up on this content (refusal/empty/timeout/failure).
+        # Try claude sonnet as a one-shot fallback before giving up.
+        if claude_fallback and err in ("refusal", "empty", "timeout", "failure"):
+            cdesc, cmodel, cerr = claude_describe_once(path, kind)
+            if cdesc:
+                _record_call("claude-sonnet", "success")
+                return cdesc, cmodel, None
+            _record_call("claude-sonnet", "other")
         return desc, model_used, err
     return None, None, "rate_limit"
 

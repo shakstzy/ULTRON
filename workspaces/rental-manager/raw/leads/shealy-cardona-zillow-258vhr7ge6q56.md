@@ -39,3 +39,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 ### 2026-04-05T16:17:43.417Z - Shealy Cardona
 
 I would like to schedule a tour.
+
+### 2026-05-07T20:44:03.535Z - Owner (Adithya)
+
+hey Shealy, happy to set up a tour. since you've got 2 occupants, the two 3rd-floor rooms with walk-in closets might be a good fit at $1000 each. what day works for you to come by?

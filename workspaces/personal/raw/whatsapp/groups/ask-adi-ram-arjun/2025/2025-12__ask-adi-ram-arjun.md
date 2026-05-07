@@ -1,9 +1,9 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T02:43:48.987050+00:00'
+ingested_at: '2026-05-07T20:44:04.159635+00:00'
 ingest_version: 1
-content_hash: 'blake3:90c2484057eb07d5ba9a306370a3ffa8f5ef33b52e8dd18efcae598f4d84cf56'
+content_hash: 'blake3:9c51e79e7628df11f6002f4c37791cd6fb77753e7dc624b0580814b7cf91b909'
 provider_modified_at: '2025-12-06T10:08:31-06:00'
 contact_slug: ask-adi-ram-arjun
 contact_type: group
@@ -23,4 +23,4 @@ superseded_by: null
 
 ## 2025-12-06 (Saturday)
 
-**10:08 — @241871167172784:** Hi @240574019965159 I’m planning to be in AD Tuesday am onwards
+**10:08 — Arjun Veera:** Hi @240574019965159 I’m planning to be in AD Tuesday am onwards

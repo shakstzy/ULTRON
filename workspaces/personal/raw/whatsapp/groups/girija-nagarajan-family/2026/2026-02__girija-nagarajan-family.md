@@ -1,9 +1,9 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T02:43:48.998489+00:00'
+ingested_at: '2026-05-07T20:44:04.173692+00:00'
 ingest_version: 1
-content_hash: 'blake3:0c5beefb1bc0d80546359c30763000a3337590e9a9840d234c24266fb0cd1269'
+content_hash: 'blake3:f8747cff44e1825938d664c8230bb8f2dd89e868d275dc2195a16a37dda79457'
 provider_modified_at: '2026-02-28T21:32:06-06:00'
 contact_slug: girija-nagarajan-family
 contact_type: group
@@ -23,64 +23,64 @@ superseded_by: null
 
 ## 2026-02-05 (Thursday)
 
-**20:10 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:12 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:20 — @110458136715502:** [image: image_20260506_181704.jpg]
+**20:10 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:12 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:20 — Kannan Periappa:** [image: image_20260506_181704.jpg]
 
 ## 2026-02-06 (Friday)
 
-**09:36 — @161765782458372:** https://www.instagram.com/reel/DUVt6NaANcL/?igsh=ejhrMGRtY2w0aHNs
-**20:35 — @110458136715502:** How is the new photo
-**20:35 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:37 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:38 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:42 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:45 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:46 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:48 — @110458136715502:** [image: image_20260506_181704.jpg]
+**09:36 — Ramjee Periappa:** https://www.instagram.com/reel/DUVt6NaANcL/?igsh=ejhrMGRtY2w0aHNs
+**20:35 — Kannan Periappa:** How is the new photo
+**20:35 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:37 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:38 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:42 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:45 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:46 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:48 — Kannan Periappa:** [image: image_20260506_181704.jpg]
 
 ## 2026-02-07 (Saturday)
 
-**11:01 — @97779393253611:** [image: image_20260506_181704.jpg]
-**20:44 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:46 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:48 — @110458136715502:** [image: image_20260506_181704.jpg]
+**11:01 — Srinivasan Periappa:** [image: image_20260506_181704.jpg]
+**20:44 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:46 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:48 — Kannan Periappa:** [image: image_20260506_181704.jpg]
 
 ## 2026-02-08 (Sunday)
 
-**10:15 — @97779393253611:** Watch Kalamkaval on Z5... a wonderful crime thriller where a villain Vinayak plays the cop whilst Mammootty,the hero plays the role of a serial killer...A gripping story you wouldn't like to miss. Watch it for sure
-**15:41 — @161765782458372:** [document: XYTIWT_1770586861096.pdf]
-**15:51 — @126800420147335:** What is this PDF document.  Is it safe to open?
-**20:05 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:07 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:10 — @110458136715502:** His flight ticket only
-**20:52 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:53 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:54 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:55 — @110458136715502:** [image: image_20260506_181704.jpg]
+**10:15 — Srinivasan Periappa:** Watch Kalamkaval on Z5... a wonderful crime thriller where a villain Vinayak plays the cop whilst Mammootty,the hero plays the role of a serial killer...A gripping story you wouldn't like to miss. Watch it for sure
+**15:41 — Ramjee Periappa:** [document: XYTIWT_1770586861096.pdf]
+**15:51 — Dad:** What is this PDF document.  Is it safe to open?
+**20:05 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:07 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:10 — Kannan Periappa:** His flight ticket only
+**20:52 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:53 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:54 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:55 — Kannan Periappa:** [image: image_20260506_181704.jpg]
 
 ## 2026-02-09 (Monday)
 
-**07:47 — @161765782458372:** https://www.instagram.com/reel/DTdC4e-kx0Q/?igsh=MWd0NXBlZGlxZnBiZg==
-**07:48 — @161765782458372:** My ticket to Lucknow… On an official visit
-**11:54 — @97779393253611:** And you are ready to believe a Bhakth's video  tutored by BJP whatsapp organization...sorry there are no takers for this other than BJP and the hate mongers associated with this party.
-**19:29 — @110458136715502:** [image: image_20260506_181704.jpg]
-**19:32 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:26 — @110458136715502:** [image: image_20260506_181704.jpg]
+**07:47 — Ramjee Periappa:** https://www.instagram.com/reel/DTdC4e-kx0Q/?igsh=MWd0NXBlZGlxZnBiZg==
+**07:48 — Ramjee Periappa:** My ticket to Lucknow… On an official visit
+**11:54 — Srinivasan Periappa:** And you are ready to believe a Bhakth's video  tutored by BJP whatsapp organization...sorry there are no takers for this other than BJP and the hate mongers associated with this party.
+**19:29 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**19:32 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:26 — Kannan Periappa:** [image: image_20260506_181704.jpg]
 
 ## 2026-02-10 (Tuesday)
 
-**05:58 — @110458136715502:** This is my report
-**05:58 — @110458136715502:** Fasting sugar 65mg,post prandial 145,HbA1C 6.9, urea 35, Creatinine 2.4mg
-**05:58 — @110458136715502:** Today's report
-**06:12 — @97779393253611:** Please share the lab report
-**06:14 — @97779393253611:** If fasting sugar is 65, the probability of HbA1C more than 6 is low. Please correlate
-**06:18 — @110458136715502:** It is the report
-**06:18 — @110458136715502:** https://bloodoxy.com/viewReportByReportID?id=544813
-**06:41 — @110458136715502:** Reports
-**06:48 — @97779393253611:** Post prandial is 155 not 145. . Average glucose levels is 145 which is still high.
-**07:33 — @110458136715502:** I will inform after meeting the Dr.
-**08:52 — @97779393253611:** வாரேவா! வரலாற்றிலேயே யாரும் நினைத்துப் பார்க்க முடியாத சாதனைகளைச் செய்கிறார், மோடிஜி!
+**05:58 — Kannan Periappa:** This is my report
+**05:58 — Kannan Periappa:** Fasting sugar 65mg,post prandial 145,HbA1C 6.9, urea 35, Creatinine 2.4mg
+**05:58 — Kannan Periappa:** Today's report
+**06:12 — Srinivasan Periappa:** Please share the lab report
+**06:14 — Srinivasan Periappa:** If fasting sugar is 65, the probability of HbA1C more than 6 is low. Please correlate
+**06:18 — Kannan Periappa:** It is the report
+**06:18 — Kannan Periappa:** https://bloodoxy.com/viewReportByReportID?id=544813
+**06:41 — Kannan Periappa:** Reports
+**06:48 — Srinivasan Periappa:** Post prandial is 155 not 145. . Average glucose levels is 145 which is still high.
+**07:33 — Kannan Periappa:** I will inform after meeting the Dr.
+**08:52 — Srinivasan Periappa:** வாரேவா! வரலாற்றிலேயே யாரும் நினைத்துப் பார்க்க முடியாத சாதனைகளைச் செய்கிறார், மோடிஜி!
 
 ஐந்து வருடத்திற்கும் மேலாக பி.எம்.கேர்ஸ் பண்ட் என பல்லாயிரக்கணக்கான கோடிகளை வசூலித்து 'ஸ்வாகா’ செய்யும் துணிச்சல் இது வரை இந்தியாவை ஆண்ட எந்த பிரதமருக்கும் இருந்ததில்லை…!
 
@@ -105,36 +105,36 @@ superseded_by: null
 இவை போன்று மக்கள் மனதில் எழுந்துள்ள எந்த சந்தேகத்திற்கும் பதில் சொல்ல வேண்டிய அவசியமே இல்லை என்று தில்லாக வலம் வருகிறீர்களே..ஜீ! அடடா, இந்த துணிச்சல் தான், 'இந்திய மக்கள் இளிச்சவாயர்கள்' என்ற உங்கள் நம்பிக்கைக்கு அத்தாட்சியாகிறது!
 
 சாவித்திரி கண்ணன்
-**09:16 — @161765782458372:** [image: image_20260506_181704.jpg]
-**09:36 — @110458136715502:** Great da my brother
-**19:58 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:00 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:09 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:14 — @110458136715502:** [video: video_20260506_181704.mp4]
+**09:16 — Ramjee Periappa:** [image: image_20260506_181704.jpg]
+**09:36 — Kannan Periappa:** Great da my brother
+**19:58 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:00 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:09 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:14 — Kannan Periappa:** [video: video_20260506_181704.mp4]
 
 ## 2026-02-11 (Wednesday)
 
-**01:44 — @161765782458372:** [image: image_20260506_181704.jpg]
-**09:38 — @161765782458372:** [image: image_20260506_181704.jpg]
-**09:41 — @161765782458372:** Do you know her running her own Dancing Academy… in Mumbai, has developed a course and has got the Tamil University approve of it… I would be meeting her to have it started as a course Nandhini Ashok is her name
-**19:57 — @110458136715502:** [image: image_20260506_181704.jpg]
-**19:59 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:10 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:15 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:23 — @110458136715502:** [video: video_20260506_181704.mp4]
-**20:24 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:30 — @161765782458372:** [image: image_20260506_181704.jpg]
+**01:44 — Ramjee Periappa:** [image: image_20260506_181704.jpg]
+**09:38 — Ramjee Periappa:** [image: image_20260506_181704.jpg]
+**09:41 — Ramjee Periappa:** Do you know her running her own Dancing Academy… in Mumbai, has developed a course and has got the Tamil University approve of it… I would be meeting her to have it started as a course Nandhini Ashok is her name
+**19:57 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**19:59 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:10 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:15 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:23 — Kannan Periappa:** [video: video_20260506_181704.mp4]
+**20:24 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:30 — Ramjee Periappa:** [image: image_20260506_181704.jpg]
 
 ## 2026-02-12 (Thursday)
 
-**20:17 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:21 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:24 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:49 — @110458136715502:** [image: image_20260506_181704.jpg]
+**20:17 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:21 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:24 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:49 — Kannan Periappa:** [image: image_20260506_181704.jpg]
 
 ## 2026-02-13 (Friday)
 
-**04:48 — @97779393253611:** *Why are men so happy?* 
+**04:48 — Srinivasan Periappa:** *Why are men so happy?* 
 
 A woman responded to this...
 
@@ -187,12 +187,12 @@ Whether they have a belly or not, if they have money, they get a lot of attentio
 And the worst part is that...
 
 Every single one of these things is absolutely true !!! 😅🤣😂
-**04:57 — @97779393253611:** [video: video_20260506_181704.mp4]
-**08:29 — @126800420147335:** https://www.facebook.com/share/r/1CCVYyYbFA/
-**20:39 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:41 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:44 — @110458136715502:** [video: video_20260506_181704.mp4]
-**20:57 — @110458136715502:** *சனி மஹாப்பிரதோஷம்*!!
+**04:57 — Srinivasan Periappa:** [video: video_20260506_181704.mp4]
+**08:29 — Dad:** https://www.facebook.com/share/r/1CCVYyYbFA/
+**20:39 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:41 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:44 — Kannan Periappa:** [video: video_20260506_181704.mp4]
+**20:57 — Kannan Periappa:** *சனி மஹாப்பிரதோஷம்*!!
 ---------------------------------------இன்று (14/02/2026) சகல வினைகள் போக்கும், நேரடியாக சிவனருளை பெற்று தரும்  அற்புதமான சனிப்பிரதோஷம். 
 நீண்ட பதிவு.
 நம் அனைவருக்கும் பயனுள்ளதாக இருக்கும் தயவுசெய்து பொறுத்துக்கொள்ளுங்கள். 🙏🙏🙏🙏
@@ -398,16 +398,16 @@ Every single one of these things is absolutely true !!! 😅🤣😂
 கரூர் சித்தர் பெருமானால் இலங்கை வேந்தன்  ராவனேஸ்வரனுக்கு அருளிய உலகில் உள்ள அனைத்து சித்திகளையும் வல்லமைகளையும் கொடுக்க கூடிய அபூர்வ சிவ பஞ்சாக்சர மந்திரம் இது. இந்த மந்திரமானது ராவண சம்கிதை என்ற நூலிலும் கரூர் மாந்திரிகம் என்ற அபூர்வ மாந்ரீக நூலிலும் உள்ளது. வாழ்க்கையில் இருக்கின்ற எப்பேர்ப்பட்ட தடைகளையும் உடைத்தெறிந்து, பக்தியுடன் ஜெபிப்பவர்களுக்கு மாபெரும் வல்லமையை வழங்கும் மந்திரம் இது....
 
           ஓம் நம சிவாய 🙏🙏🙏
-**23:19 — @97779393253611:** [video: video_20260506_181704.mp4]
+**23:19 — Srinivasan Periappa:** [video: video_20260506_181704.mp4]
 
 ## 2026-02-14 (Saturday)
 
-**01:07 — @110458136715502:** [image: image_20260506_181704.jpg]
-**05:07 — @97779393253611:** https://www.instagram.com/reel/DN7qYdHkeb8/?igsh=MWFlMTd2c29kdDcyMg==
-**05:22 — @161765782458372:** [video: video_20260506_181704.mp4]
-**05:43 — @161765782458372:** For all English & Shakespear lovers, interesting information about selected words & sentences through a melodious song.
-**05:43 — @161765782458372:** [video: video_20260506_181704.mp4]
-**07:06 — @97779393253611:** தமிழகத்தில் இன்று திடீர் பிரபலாமாகியிருக்கும் அமெரிக்க நகரான அட்லாண்டாவுக்கு மிக அருகில் ஒரு ஊரில் மகேந்திர படேல் எனும் 57 வயது நபர் மார்ச் 2025ல் கைது செய்யப்படுகிறார். காரணம், வால்மார்ட் எனும் கடையில் தன் இரண்டு வயது குழந்தையை தன்னிடமிருந்து பறித்து கடத்த அவர் முயற்சி செய்ததாக கரோலின் மில்லர் என்ற பெண் அளித்த புகார். அரசு தரப்பில் வழக்கு பதியப்பட்டு படேல் சிறையில் அடைக்கப் படுகிறார்.
+**01:07 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**05:07 — Srinivasan Periappa:** https://www.instagram.com/reel/DN7qYdHkeb8/?igsh=MWFlMTd2c29kdDcyMg==
+**05:22 — Ramjee Periappa:** [video: video_20260506_181704.mp4]
+**05:43 — Ramjee Periappa:** For all English & Shakespear lovers, interesting information about selected words & sentences through a melodious song.
+**05:43 — Ramjee Periappa:** [video: video_20260506_181704.mp4]
+**07:06 — Srinivasan Periappa:** தமிழகத்தில் இன்று திடீர் பிரபலாமாகியிருக்கும் அமெரிக்க நகரான அட்லாண்டாவுக்கு மிக அருகில் ஒரு ஊரில் மகேந்திர படேல் எனும் 57 வயது நபர் மார்ச் 2025ல் கைது செய்யப்படுகிறார். காரணம், வால்மார்ட் எனும் கடையில் தன் இரண்டு வயது குழந்தையை தன்னிடமிருந்து பறித்து கடத்த அவர் முயற்சி செய்ததாக கரோலின் மில்லர் என்ற பெண் அளித்த புகார். அரசு தரப்பில் வழக்கு பதியப்பட்டு படேல் சிறையில் அடைக்கப் படுகிறார்.
 சில வாரங்கள் கழித்து படேலின் வக்கீல் எல்லா மீடியாவிலும் தோன்றி சம்பவம் நடந்ததாக சொல்லப்பட்ட நேரத்தில் வால்மார்ட்டில் பதிவான சிசிடிவி கேமிரா காட்சிகளை வெளியிடுகிறார். 
 வீடியோவில் படேல் ஒரு நாள் இரவு வயதான தன் தாய்க்கு பாரசிடாமல் மருந்து வாங்க வால்மார்ட்க்கு போகிறார். அது ஒரு மிகப்பெரிய கடை. மருந்தை கொஞ்ச நேரம் தேடுகிறார். நடக்க முடியாதவர்கள் உட்கார்ந்த படியே ஷாப்பிங் செய்ய என்று இருக்கும் ஒரு ஸ்கூட்டரில் தனது இரண்டு சிறிய குழந்தைகளுடன் வரும் ஒரு பெண்மணியை காண்கிறார். அவரிடம் பேசுகிறார். அப்போது ஒரு குழந்தை கீழே விழப்போக அதை தாங்கிப் பிடித்து தாயிடம் கொடுக்கிறார். பிறகு பொறுமையாக நடந்து போய் மருந்துக்கு கவுண்ட்டரில் பில் போட்டுவிட்டு பார்க்கிங் லாட் போய் கார் எடுத்துக் கொண்டு வீட்டுக்குப் போகிறார். அந்தப் பெண்மணி இவரிடம் பேசுவது, இவருக்கு மருந்து இருக்கும் இடத்துக்கு வழி சொல்வது, சரியும் குழந்தையை படேல் பிடிப்பது, பொறுமையாக நடந்து போவது எல்லாம் வீடியோவில் இருக்கிறது. பொதுவாக யாராவது தங்கள் குழந்தையை கடத்த முயற்சி செய்தால் நார்மல் மனிதர்கள் செய்யும் செயல்களான கத்துவது,  கூச்சல் போடுவது போன்ற எதையும் அந்தப் பெண் செய்யவில்லை. திடகாத்திரமான அந்தப் பெண் - நடக்க முடியாமல் இல்லை, பசங்கள் விரும்பியதால் ஊனமுற்றோருக்கான ஸ்கூட்டரில் கடையை சுற்றினேன் என்று பிறகு சொன்னார் - தனது குழந்தையை ஒரு ஆள் பறிக்கிறானே என்று ஸ்கூட்டரை விட்டு எந்திரிக்க முயற்சி கூட செய்யவில்லை. படேல் போன பின்பு அந்தப் பக்கமாக வந்த இன்னொரு ஆளிடம் இயல்பாக எதோ பேசுகிறார். ஷாப்பிங்கை தொடர்கிறார். வீட்டுக்குப் போய் சாவகாசமாக புகார் அளிக்கிறார்.
 ப்ரச்னை என்னவென்றால் போலீஸ் படேலை கைது செய்யும் முன்பு அதே வீடியோவை பார்த்திருக்கிறது. வழக்கு பதிய முடிவு செய்யும் முன் அரசு தரப்பு ப்ராசிக்யூட்டரும் அதே வீடியோவை பார்த்திருக்கிறார். இருந்தும் மயிரே போச்சி என்று வழக்கு தொடுத்து கைது செய்து சிறையில் அடைத்திருக்கிறார்கள். 
@@ -425,87 +425,87 @@ Every single one of these things is absolutely true !!! 😅🤣😂
 4. தனக்கு எந்த விதத்திலும் சம்பந்தமே இல்லாத ஒரு அப்பாவி நபரின் வாழ்வை முற்றிலுமாக சீரழித்த ஒரு கொடும் செயலை, அது தவறு என்று தெரிந்தே, சுய நினைவோடு எவ்வித குற்றவுணர்வும் இன்றி இவர்கள் ஏன் செய்தார்கள் என்பது யாருக்குமே தெரியாது. 
 +++
 இதனால் அறியப்படும் நீதி: நீதியாவது…
-**19:47 — @83803502551081:** [image: image_20260506_181704.jpg]
-**19:47 — @83803502551081:** [image: image_20260506_181704.jpg]
-**19:47 — @83803502551081:** [image: image_20260506_181704.jpg]
-**19:47 — @83803502551081:** [image: image_20260506_181704.jpg]
-**19:47 — @83803502551081:** [image: image_20260506_181704.jpg]
-**19:47 — @83803502551081:** [image: image_20260506_181704.jpg]
-**19:47 — @83803502551081:** [image: image_20260506_181704.jpg]
-**19:47 — @83803502551081:** [image: image_20260506_181704.jpg]
-**19:47 — @83803502551081:** [image: image_20260506_181704.jpg]
-**21:44 — @110458136715502:** [image: image_20260506_181704.jpg]
-**22:52 — @110458136715502:** [image: image_20260506_181704.jpg]
-**22:55 — @110458136715502:** [video: video_20260506_181704.mp4]
-**22:58 — @110458136715502:** [image: image_20260506_181704.jpg]
+**19:47 — Ramesh Anna:** [image: image_20260506_181704.jpg]
+**19:47 — Ramesh Anna:** [image: image_20260506_181704.jpg]
+**19:47 — Ramesh Anna:** [image: image_20260506_181704.jpg]
+**19:47 — Ramesh Anna:** [image: image_20260506_181704.jpg]
+**19:47 — Ramesh Anna:** [image: image_20260506_181704.jpg]
+**19:47 — Ramesh Anna:** [image: image_20260506_181704.jpg]
+**19:47 — Ramesh Anna:** [image: image_20260506_181704.jpg]
+**19:47 — Ramesh Anna:** [image: image_20260506_181704.jpg]
+**19:47 — Ramesh Anna:** [image: image_20260506_181704.jpg]
+**21:44 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**22:52 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**22:55 — Kannan Periappa:** [video: video_20260506_181704.mp4]
+**22:58 — Kannan Periappa:** [image: image_20260506_181704.jpg]
 
 ## 2026-02-15 (Sunday)
 
-**00:37 — @161765782458372:** https://www.facebook.com/share/r/1CPBKtbBu5/?mibextid=wwXIfr
-**02:33 — @110458136715502:** [video: video_20260506_181704.mp4]
-**03:58 — @97779393253611:** https://www.instagram.com/reel/DUs1_mZCCcF/?igsh=NXJlMGJ1Mm5lenA=
-**06:45 — @97779393253611:** https://www.instagram.com/reel/DULv92ND9kN/?igsh=MXE2NHdrZGE0NnFraw==
-**06:45 — @97779393253611:** Gadkari the paedophile
-**07:12 — @97779393253611:** https://www.instagram.com/reel/DUcwrn_k3TH/?igsh=MWJyNnRnZjVscGNhaw==
-**07:13 — @97779393253611:** Anyone in the world in contention to win this year's Nobel for Medicine for discovering a panacea for Covid-19
-**20:02 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:07 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:11 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:13 — @110458136715502:** [video: video_20260506_181704.mp4]
-**21:53 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:55 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:57 — @110458136715502:** [image: image_20260506_181704.jpg]
-**22:29 — @110458136715502:** [video: video_20260506_181704.mp4]
+**00:37 — Ramjee Periappa:** https://www.facebook.com/share/r/1CPBKtbBu5/?mibextid=wwXIfr
+**02:33 — Kannan Periappa:** [video: video_20260506_181704.mp4]
+**03:58 — Srinivasan Periappa:** https://www.instagram.com/reel/DUs1_mZCCcF/?igsh=NXJlMGJ1Mm5lenA=
+**06:45 — Srinivasan Periappa:** https://www.instagram.com/reel/DULv92ND9kN/?igsh=MXE2NHdrZGE0NnFraw==
+**06:45 — Srinivasan Periappa:** Gadkari the paedophile
+**07:12 — Srinivasan Periappa:** https://www.instagram.com/reel/DUcwrn_k3TH/?igsh=MWJyNnRnZjVscGNhaw==
+**07:13 — Srinivasan Periappa:** Anyone in the world in contention to win this year's Nobel for Medicine for discovering a panacea for Covid-19
+**20:02 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:07 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:11 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:13 — Kannan Periappa:** [video: video_20260506_181704.mp4]
+**21:53 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:55 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:57 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**22:29 — Kannan Periappa:** [video: video_20260506_181704.mp4]
 
 ## 2026-02-16 (Monday)
 
-**19:14 — @161765782458372:** [video: video_20260506_181704.mp4]
-**20:02 — @110458136715502:** [video: video_20260506_181704.mp4]
-**21:23 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:47 — @83803502551081:** https://www.instagram.com/reel/DUYeeAIDQCh/?igsh=MTFyb3N6bzJnM3Zsdg==
-**22:54 — @97779393253611:** [video: video_20260506_181704.mp4]
+**19:14 — Ramjee Periappa:** [video: video_20260506_181704.mp4]
+**20:02 — Kannan Periappa:** [video: video_20260506_181704.mp4]
+**21:23 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:47 — Ramesh Anna:** https://www.instagram.com/reel/DUYeeAIDQCh/?igsh=MTFyb3N6bzJnM3Zsdg==
+**22:54 — Srinivasan Periappa:** [video: video_20260506_181704.mp4]
 
 ## 2026-02-17 (Tuesday)
 
-**02:00 — @110458136715502:** I had send in the morning
-**04:40 — @97779393253611:** Okay.  I didn't notice it.
-**21:41 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:44 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:45 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:51 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:54 — @110458136715502:** [image: image_20260506_181704.jpg]
+**02:00 — Kannan Periappa:** I had send in the morning
+**04:40 — Srinivasan Periappa:** Okay.  I didn't notice it.
+**21:41 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:44 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:45 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:51 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:54 — Kannan Periappa:** [image: image_20260506_181704.jpg]
 
 ## 2026-02-18 (Wednesday)
 
-**21:25 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:29 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:33 — @110458136715502:** [image: image_20260506_181704.jpg]
-**22:14 — @110458136715502:** [image: image_20260506_181704.jpg]
+**21:25 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:29 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:33 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**22:14 — Kannan Periappa:** [image: image_20260506_181704.jpg]
 
 ## 2026-02-19 (Thursday)
 
-**01:02 — @161765782458372:** [image: image_20260506_181704.jpg]
-**01:02 — @161765782458372:** An uninvited guest…
-**01:33 — @110458136715502:** Where
-**02:09 — @83803502551081:** Is it bronzeback, chithapa?
-**03:12 — @97779393253611:** [video: video_20260506_181704.mp4]
-**21:16 — @83803502551081:** https://www.instagram.com/reel/DU56BgektoW/?igsh=bGduanE2b2V1MTc3
-**21:25 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:31 — @110458136715502:** [image: image_20260506_181704.jpg]
+**01:02 — Ramjee Periappa:** [image: image_20260506_181704.jpg]
+**01:02 — Ramjee Periappa:** An uninvited guest…
+**01:33 — Kannan Periappa:** Where
+**02:09 — Ramesh Anna:** Is it bronzeback, chithapa?
+**03:12 — Srinivasan Periappa:** [video: video_20260506_181704.mp4]
+**21:16 — Ramesh Anna:** https://www.instagram.com/reel/DU56BgektoW/?igsh=bGduanE2b2V1MTc3
+**21:25 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:31 — Kannan Periappa:** [image: image_20260506_181704.jpg]
 
 ## 2026-02-21 (Saturday)
 
-**17:25 — @161765782458372:** [image: image_20260506_181704.jpg]
-**17:28 — @161765782458372:** [video: video_20260506_181704.mp4]
-**21:22 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:24 — @110458136715502:** [image: image_20260506_181704.jpg]
+**17:25 — Ramjee Periappa:** [image: image_20260506_181704.jpg]
+**17:28 — Ramjee Periappa:** [video: video_20260506_181704.mp4]
+**21:22 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:24 — Kannan Periappa:** [image: image_20260506_181704.jpg]
 
 ## 2026-02-22 (Sunday)
 
-**02:13 — @97779393253611:** https://www.instagram.com/reel/DU8AzaBCgoR/?igsh=MWhpNmNxYjF5OWJrdg==
-**05:17 — @97779393253611:** [image: image_20260506_181704.jpg]
-**09:55 — @161765782458372:** தீர்க்கதரிசி
-**09:55 — @161765782458372:** My granddaughter scored 98 on her math test.
+**02:13 — Srinivasan Periappa:** https://www.instagram.com/reel/DU8AzaBCgoR/?igsh=MWhpNmNxYjF5OWJrdg==
+**05:17 — Srinivasan Periappa:** [image: image_20260506_181704.jpg]
+**09:55 — Ramjee Periappa:** தீர்க்கதரிசி
+**09:55 — Ramjee Periappa:** My granddaughter scored 98 on her math test.
 
 I asked her, “Where did you lose the 2 points?”
 
@@ -516,31 +516,31 @@ She looked at me seriously and asked, “Isn’t 24 minutes correct?”
 I thought about it for a long time, then said to her:
 
 “Those 2 points… we can live without them.”￼
-**21:46 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:47 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:50 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:52 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:54 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:58 — @110458136715502:** [image: image_20260506_181704.jpg]
+**21:46 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:47 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:50 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:52 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:54 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:58 — Kannan Periappa:** [image: image_20260506_181704.jpg]
 
 ## 2026-02-23 (Monday)
 
-**01:34 — @97779393253611:** [video: video_20260506_181704.mp4]
-**21:04 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:07 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:12 — @110458136715502:** [image: image_20260506_181704.jpg]
+**01:34 — Srinivasan Periappa:** [video: video_20260506_181704.mp4]
+**21:04 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:07 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:12 — Kannan Periappa:** [image: image_20260506_181704.jpg]
 
 ## 2026-02-24 (Tuesday)
 
-**00:45 — @110458136715502:** [image: image_20260506_181704.jpg]
-**06:12 — @110458136715502:** [image: image_20260506_181704.jpg]
-**06:19 — @161765782458372:** For the 60 + only you
-**06:22 — @161765782458372:** தீர்க்கதரிசி இன்னைக்கு என்ன சொல்றார் ? England பாக்கி மேட்ச்?
-**06:29 — @161765782458372:** https://youtu.be/XJw_GAW_k7k?si=HwuisJryV0XfkWOB
-**06:33 — @161765782458372:** [video: video_20260506_181704.mp4]
-**10:25 — @97779393253611:** கே.எண். நேரு ஒரு மலை முழுங்கி. இந்த ஆள் இருக்கும் வரை நியாயம் என்பது என்ன என்றே தெரிய வாய்ப்பில்லை. பொறுக்கிகளின் தலைவன் தான் இந்த நேரு. மோடி ஒரு கொலைகார பைத்தியம் என்றால் இவன் ஒரு பண வெறிபிடித்த பைத்தியம்.
-**20:00 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:03 — @110458136715502:** Never expect others to give you what you deserve.
+**00:45 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**06:12 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**06:19 — Ramjee Periappa:** For the 60 + only you
+**06:22 — Ramjee Periappa:** தீர்க்கதரிசி இன்னைக்கு என்ன சொல்றார் ? England பாக்கி மேட்ச்?
+**06:29 — Ramjee Periappa:** https://youtu.be/XJw_GAW_k7k?si=HwuisJryV0XfkWOB
+**06:33 — Ramjee Periappa:** [video: video_20260506_181704.mp4]
+**10:25 — Srinivasan Periappa:** கே.எண். நேரு ஒரு மலை முழுங்கி. இந்த ஆள் இருக்கும் வரை நியாயம் என்பது என்ன என்றே தெரிய வாய்ப்பில்லை. பொறுக்கிகளின் தலைவன் தான் இந்த நேரு. மோடி ஒரு கொலைகார பைத்தியம் என்றால் இவன் ஒரு பண வெறிபிடித்த பைத்தியம்.
+**20:00 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:03 — Kannan Periappa:** Never expect others to give you what you deserve.
 People give what they can, what they know, what they have.
 If they are full of fear, they will be scary.
 If they are empty, they will give empty.
@@ -562,17 +562,17 @@ is not complaining.
 It's made up its mind.
 And you give it to yourself.
 🍂🪻☕️
-**21:40 — @110458136715502:** [image: image_20260506_181704.jpg]
-**23:59 — @110458136715502:** [video: video_20260506_181704.mp4]
+**21:40 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**23:59 — Kannan Periappa:** [video: video_20260506_181704.mp4]
 
 ## 2026-02-25 (Wednesday)
 
-**03:03 — @97779393253611:** கொஞ்சம் புரியவில்லை கடைசியில்
-**20:20 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:22 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:24 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:29 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:34 — @110458136715502:** இந்த உலகத்திலேயே சக்தி வாய்ந்தவர்கள் யார் தெரியுமா?
+**03:03 — Srinivasan Periappa:** கொஞ்சம் புரியவில்லை கடைசியில்
+**20:20 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:22 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:24 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:29 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:34 — Kannan Periappa:** இந்த உலகத்திலேயே சக்தி வாய்ந்தவர்கள் யார் தெரியுமா?
 
 👉 இழப்பதற்கு எதுவுமே இல்லாதவர்கள் தான்.
 
@@ -654,34 +654,34 @@ And you give it to yourself.
 இழப்பதற்கு எதுவுமில்லை என்று நினைக்கும் தருணமே
 வாழ்க்கை புதிதாக ஆரம்பிக்கும் தருணம்.
 🌷🙏
-**20:45 — @110458136715502:** [image: image_20260506_181704.jpg]
+**20:45 — Kannan Periappa:** [image: image_20260506_181704.jpg]
 
 ## 2026-02-26 (Thursday)
 
-**02:01 — @110458136715502:** India will win today match against Zimbabwe
-**04:12 — @97779393253611:** பாஜக ஆட்சியில் இருந்தால் கோமியம் குடித்தால் கொரோனா போகும் என்றும் சாப்பாடு தட்டுகளில் கரண்டி கொண்டு தாக்கினால் வைரல் காய்ச்சல் போகும் என்கிற வாட்ஸ்அப் விஞ்ஞானிகள் பலர் இருப்பர். ஆனால் வளர்ச்சி என்பது எள்ளளவும் இருக்காது. வளர்ச்சிக்கு அறிவு தேவை. கோமியம் குடிப்பவர்களுக்கு அது சாத்தியம் இல்லை.
-**04:12 — @97779393253611:** [image: image_20260506_181704.jpg]
-**05:27 — @22291048054955:** [image: image_20260506_181704.jpg]
-**05:27 — @22291048054955:** [image: image_20260506_181704.jpg]
-**05:27 — @22291048054955:** [image: image_20260506_181704.jpg]
-**05:27 — @22291048054955:** New pooja shelf arrived
-**06:44 — @22291048054955:** A new decor to our home..And a better looking pooja hall😄
-**20:25 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:30 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:32 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:01 — @110458136715502:** [image: image_20260506_181704.jpg]
+**02:01 — Kannan Periappa:** India will win today match against Zimbabwe
+**04:12 — Srinivasan Periappa:** பாஜக ஆட்சியில் இருந்தால் கோமியம் குடித்தால் கொரோனா போகும் என்றும் சாப்பாடு தட்டுகளில் கரண்டி கொண்டு தாக்கினால் வைரல் காய்ச்சல் போகும் என்கிற வாட்ஸ்அப் விஞ்ஞானிகள் பலர் இருப்பர். ஆனால் வளர்ச்சி என்பது எள்ளளவும் இருக்காது. வளர்ச்சிக்கு அறிவு தேவை. கோமியம் குடிப்பவர்களுக்கு அது சாத்தியம் இல்லை.
+**04:12 — Srinivasan Periappa:** [image: image_20260506_181704.jpg]
+**05:27 — Kaarunya Akka:** [image: image_20260506_181704.jpg]
+**05:27 — Kaarunya Akka:** [image: image_20260506_181704.jpg]
+**05:27 — Kaarunya Akka:** [image: image_20260506_181704.jpg]
+**05:27 — Kaarunya Akka:** New pooja shelf arrived
+**06:44 — Kaarunya Akka:** A new decor to our home..And a better looking pooja hall😄
+**20:25 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:30 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:32 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:01 — Kannan Periappa:** [image: image_20260506_181704.jpg]
 
 ## 2026-02-27 (Friday)
 
-**20:20 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:23 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:24 — @110458136715502:** [image: image_20260506_181704.jpg]
-**20:30 — @110458136715502:** [video: video_20260506_181704.mp4]
-**20:57 — @97779393253611:** [video: video_20260506_181704.mp4]
+**20:20 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:23 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:24 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**20:30 — Kannan Periappa:** [video: video_20260506_181704.mp4]
+**20:57 — Srinivasan Periappa:** [video: video_20260506_181704.mp4]
 
 ## 2026-02-28 (Saturday)
 
-**07:39 — @97779393253611:** ”திரும்பத் திரும்ப பிக்பாக்கெட்  அடிச்சிட்டு ஜெயிலுக்கு வர்றீயே, நீ திருந்தவே மாட்டியா?” என்றார் ஜட்ஜ் .
+**07:39 — Srinivasan Periappa:** ”திரும்பத் திரும்ப பிக்பாக்கெட்  அடிச்சிட்டு ஜெயிலுக்கு வர்றீயே, நீ திருந்தவே மாட்டியா?” என்றார் ஜட்ஜ் .
 
 “எவ்வளவு தரம் பிக்பாக்கெட் அடிச்சாலும் அதே தண்டனையே தர்றீங்களே, நீங்க சட்டத்தைத் திருத்த மாட்டீங்களா?” என்றான் பிக்பாக்கெட் பக்கிரி.
 
@@ -735,11 +735,11 @@ And you give it to yourself.
 .
 #குற்றம் #தண்டனை #நீதிபதி #நீதிமன்றம் #குற்றவாளி #நீதிகதை
 FB
-**19:24 — @161765782458372:** https://youtu.be/HaZAZGJgWBw
-**19:25 — @161765782458372:** https://youtu.be/y7wwfepXiJ4
-**19:31 — @161765782458372:** https://www.facebook.com/share/v/16PNZhm7S2/?mibextid=wwXIfr
-**19:41 — @161765782458372:** [image: image_20260506_181704.jpg]
-**19:41 — @161765782458372:** This is a vibrant piece of Madhubani (Mithila) art, a traditional folk painting style from the Mithila region of Bihar, India, and Nepal.
+**19:24 — Ramjee Periappa:** https://youtu.be/HaZAZGJgWBw
+**19:25 — Ramjee Periappa:** https://youtu.be/y7wwfepXiJ4
+**19:31 — Ramjee Periappa:** https://www.facebook.com/share/v/16PNZhm7S2/?mibextid=wwXIfr
+**19:41 — Ramjee Periappa:** [image: image_20260506_181704.jpg]
+**19:41 — Ramjee Periappa:** This is a vibrant piece of Madhubani (Mithila) art, a traditional folk painting style from the Mithila region of Bihar, India, and Nepal.
 The image depicts Surya, the Hindu Sun God, riding his celestial chariot.
 Key Iconography in the Artwork
 The painting is rich with traditional Hindu symbolism and specific elements associated with Surya:
@@ -753,13 +753,13 @@ You can identify the style as Madhubani through several distinct features:
  * Line Work: Bold, double-lined outlines filled with intricate patterns like hatches and dots.
  * Natural Motifs: The use of peacocks, lotuses, fish, and floral borders to fill every inch of the canvas (a concept known as horror vacui).
  * Two-Dimensionality: The figures are flat with large, almond-shaped eyes and pointed noses, a hallmark of this folk style.
-**19:45 — @161765782458372:** அடுத்தால உங்க வூட்டுக்கு வந்து போனா நெய் சோறு போடுவீங்களா காருண்யா தாயி ?
-**19:47 — @161765782458372:** குழுவில் கூடியிருக்கும் தகப்பன் சாமி போன்ற 60+ or 60யை நெருங்கும் கிழடுகளுக்கு
-**20:59 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:06 — @110458136715502:** [video: video_20260506_181704.mp4]
-**21:07 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:08 — @110458136715502:** [image: image_20260506_181704.jpg]
-**21:18 — @110458136715502:** *"Man must learn to live in harmony with nature."*--
+**19:45 — Ramjee Periappa:** அடுத்தால உங்க வூட்டுக்கு வந்து போனா நெய் சோறு போடுவீங்களா காருண்யா தாயி ?
+**19:47 — Ramjee Periappa:** குழுவில் கூடியிருக்கும் தகப்பன் சாமி போன்ற 60+ or 60யை நெருங்கும் கிழடுகளுக்கு
+**20:59 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:06 — Kannan Periappa:** [video: video_20260506_181704.mp4]
+**21:07 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:08 — Kannan Periappa:** [image: image_20260506_181704.jpg]
+**21:18 — Kannan Periappa:** *"Man must learn to live in harmony with nature."*--
 
 *Vivekananda*
 
@@ -824,5 +824,5 @@ It is one of history’s quiet ironies that modern India is ruled by a Narendra 
 *Today’s India often equates strength with extraction, speed, and spectacle.*
 
 *Sad and disappointing, but reality.*
-**21:20 — @97779393253611:** The irony in the similarity of names is that while the Bengal born Narendra is a saint, the Gujarat born Narendra is a fiend
-**21:32 — @110458136715502:** [image: image_20260506_181704.jpg]
+**21:20 — Srinivasan Periappa:** The irony in the similarity of names is that while the Bengal born Narendra is a saint, the Gujarat born Narendra is a fiend
+**21:32 — Kannan Periappa:** [image: image_20260506_181704.jpg]

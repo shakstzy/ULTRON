@@ -1,9 +1,9 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T02:43:48.986788+00:00'
+ingested_at: '2026-05-07T20:44:04.159265+00:00'
 ingest_version: 1
-content_hash: 'blake3:a5ccbe533050548f8ec24ff1816bb7cf0f185a534dd7b7b3db4738ea82b92743'
+content_hash: 'blake3:44f5ea53987d423ab214d9205730c12f9aa135673d20f99e6e290358933ff7c3'
 provider_modified_at: '2026-04-05T20:24:02-05:00'
 contact_slug: kinetics-commercial-expansion-ai
 contact_type: group
@@ -23,9 +23,9 @@ superseded_by: null
 
 ## 2026-04-05 (Sunday)
 
-**17:11 — @135480565870655:** What’s up you guys marv meet shak 
+**17:11 — Mychal Kendricks Malik Crypto NFL Producer LA:** What’s up you guys marv meet shak 
 Shak meet marv …
-**17:17 — @135480565870655:** Shak is software and acting CEO 
+**17:17 — Mychal Kendricks Malik Crypto NFL Producer LA:** Shak is software and acting CEO 
 
 Right now … Marv will be filling the roll of FCCO
 **20:24 — me:** gmgm great to meet you

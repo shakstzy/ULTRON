@@ -1,9 +1,9 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T02:43:49.001197+00:00'
+ingested_at: '2026-05-07T20:44:04.177928+00:00'
 ingest_version: 1
-content_hash: 'blake3:f9a44ea9bfed547630c23768a2de99d2c461e65d1e2e200652df45c1620fbdb4'
+content_hash: 'blake3:4bc18d73bf6cd36e9e1373d4e4ab5eb20a3cc4fa2798c181f569b9dc93bd360b'
 provider_modified_at: '2026-03-31T21:58:31-05:00'
 contact_slug: the-kumars
 contact_type: group
@@ -23,8 +23,8 @@ superseded_by: null
 
 ## 2026-03-02 (Monday)
 
-**11:47 — @273288869752960:** [image: image_20260506_181705.jpg]
-**11:47 — @273288869752960:** Jai srimannarayana, tonight (Monday night , march 2nd), we have lunar eclipse. ( In CST)
+**11:47 — Mom:** [image: image_20260506_181705.jpg]
+**11:47 — Mom:** Jai srimannarayana, tonight (Monday night , march 2nd), we have lunar eclipse. ( In CST)
 
 Finish up dinner before 10pm.
 
@@ -43,40 +43,40 @@ Happy devotional time.
 
 ## 2026-03-03 (Tuesday)
 
-**09:44 — @273288869752960:** One of the victim's in this weekend shooting..Savitha is a former LASA student and about to graduate from UT with dual degree. 😭 Tamilian.
-**09:44 — @273288869752960:** [image: image_20260506_181705.jpg]
-**22:20 — @273288869752960:** https://www.facebook.com/share/p/1AU9SsV9Ta/?mibextid=wwXIfr
+**09:44 — Mom:** One of the victim's in this weekend shooting..Savitha is a former LASA student and about to graduate from UT with dual degree. 😭 Tamilian.
+**09:44 — Mom:** [image: image_20260506_181705.jpg]
+**22:20 — Mom:** https://www.facebook.com/share/p/1AU9SsV9Ta/?mibextid=wwXIfr
 
 ## 2026-03-04 (Wednesday)
 
-**21:39 — @273288869752960:** Hello
-**21:53 — @273288869752960:** [image: image_20260506_181705.jpg]
-**21:53 — @273288869752960:** [image: image_20260506_181705.jpg]
+**21:39 — Mom:** Hello
+**21:53 — Mom:** [image: image_20260506_181705.jpg]
+**21:53 — Mom:** [image: image_20260506_181705.jpg]
 
 ## 2026-03-05 (Thursday)
 
 **19:48 — me:** .
 **19:51 — me:** hello, you're the ai
-**21:01 — @273288869752960:** [video: video_20260506_181705.mp4]
+**21:01 — Mom:** [video: video_20260506_181705.mp4]
 
 ## 2026-03-06 (Friday)
 
-**09:54 — @273288869752960:** The 6 Most Beautiful Parks for the Perfect Afternoon Walk in East Austin | The Goodwin https://share.google/thUttsCslmIWf5wg5
+**09:54 — Mom:** The 6 Most Beautiful Parks for the Perfect Afternoon Walk in East Austin | The Goodwin https://share.google/thUttsCslmIWf5wg5
 
 ## 2026-03-07 (Saturday)
 
-**10:19 — @273288869752960:** https://youtu.be/x55dgK79d4c?si=9JXj8ZmEZkDnpZsL
+**10:19 — Mom:** https://youtu.be/x55dgK79d4c?si=9JXj8ZmEZkDnpZsL
 
 ## 2026-03-08 (Sunday)
 
-**01:02 — @82708436877528:** [image: image_20260506_181705.jpg]
-**01:02 — @82708436877528:** [image: image_20260506_181705.jpg]
-**01:02 — @82708436877528:** [image: image_20260506_181705.jpg]
-**01:02 — @82708436877528:** [image: image_20260506_181705.jpg]
-**01:02 — @82708436877528:** [image: image_20260506_181705.jpg]
-**01:20 — @273288869752960:** Nice pics! Super!
-**14:10 — @126800420147335:** 1
-**15:10 — @273288869752960:** Families differ in how happy they are because of a mix of relationships, circumstances, and habits. No family is perfect, but certain factors tend to make a big difference. Here are some of the main ones:
+**01:02 — Arya Kumar:** [image: image_20260506_181705.jpg]
+**01:02 — Arya Kumar:** [image: image_20260506_181705.jpg]
+**01:02 — Arya Kumar:** [image: image_20260506_181705.jpg]
+**01:02 — Arya Kumar:** [image: image_20260506_181705.jpg]
+**01:02 — Arya Kumar:** [image: image_20260506_181705.jpg]
+**01:20 — Mom:** Nice pics! Super!
+**14:10 — Dad:** 1
+**15:10 — Mom:** Families differ in how happy they are because of a mix of relationships, circumstances, and habits. No family is perfect, but certain factors tend to make a big difference. Here are some of the main ones:
 
 1. Communication 💬
 
@@ -159,69 +159,69 @@ It’s a really interesting topic.
 
 ## 2026-03-10 (Tuesday)
 
-**21:33 — @273288869752960:** https://www.airbnb.com/rooms/1154516758001996763?unique_share_id=9e92c69c-142d-4a41-bb49-70379a0a1e8f&viralityEntryPoint=1&s=76
-**21:33 — @273288869752960:** https://docs.google.com/spreadsheets/d/1pQQcxrslsrp6KJ8_H1t5w8wgqetHSTjV/edit?usp=sharing&ouid=101004611686019228549&rtpof=true&sd=true
+**21:33 — Mom:** https://www.airbnb.com/rooms/1154516758001996763?unique_share_id=9e92c69c-142d-4a41-bb49-70379a0a1e8f&viralityEntryPoint=1&s=76
+**21:33 — Mom:** https://docs.google.com/spreadsheets/d/1pQQcxrslsrp6KJ8_H1t5w8wgqetHSTjV/edit?usp=sharing&ouid=101004611686019228549&rtpof=true&sd=true
 
 ## 2026-03-11 (Wednesday)
 
-**09:49 — @273288869752960:** [video: video_20260506_181705.mp4]
-**23:58 — @273288869752960:** [video: video_20260506_181705.mp4]
+**09:49 — Mom:** [video: video_20260506_181705.mp4]
+**23:58 — Mom:** [video: video_20260506_181705.mp4]
 
 ## 2026-03-12 (Thursday)
 
-**10:05 — @273288869752960:** [image: image_20260506_181705.jpg]
-**18:29 — @273288869752960:** [document: Venkateshwara_Brahmotsavam_2026.pdf]
-**18:29 — @273288869752960:** 9th Annual Sree Venkateshwara Brahmotsavam Celebrations starts on 19th March and ends on 26th Sri Rama Navami Day
+**10:05 — Mom:** [image: image_20260506_181705.jpg]
+**18:29 — Mom:** [document: Venkateshwara_Brahmotsavam_2026.pdf]
+**18:29 — Mom:** 9th Annual Sree Venkateshwara Brahmotsavam Celebrations starts on 19th March and ends on 26th Sri Rama Navami Day
 
 ## 2026-03-13 (Friday)
 
-**10:00 — @273288869752960:** [video: video_20260506_181705.mp4]
-**10:10 — @126800420147335:** Good old days
+**10:00 — Mom:** [video: video_20260506_181705.mp4]
+**10:10 — Dad:** Good old days
 
 ## 2026-03-14 (Saturday)
 
-**22:56 — @273288869752960:** [image: image_20260506_181705.jpg]
+**22:56 — Mom:** [image: image_20260506_181705.jpg]
 
 ## 2026-03-18 (Wednesday)
 
-**21:54 — @273288869752960:** https://www.instagram.com/reel/DV-yL_VAEq-/?igsh=ZmxqMGFxYm51anB4
+**21:54 — Mom:** https://www.instagram.com/reel/DV-yL_VAEq-/?igsh=ZmxqMGFxYm51anB4
 
 ## 2026-03-21 (Saturday)
 
-**11:24 — @273288869752960:** [video: video_20260506_181705.mp4]
-**22:36 — @273288869752960:** [image: image_20260506_181705.jpg]
-**22:36 — @273288869752960:** [image: image_20260506_181705.jpg]
-**22:36 — @273288869752960:** [image: image_20260506_181705.jpg]
-**22:36 — @273288869752960:** [image: image_20260506_181705.jpg]
+**11:24 — Mom:** [video: video_20260506_181705.mp4]
+**22:36 — Mom:** [image: image_20260506_181705.jpg]
+**22:36 — Mom:** [image: image_20260506_181705.jpg]
+**22:36 — Mom:** [image: image_20260506_181705.jpg]
+**22:36 — Mom:** [image: image_20260506_181705.jpg]
 
 ## 2026-03-22 (Sunday)
 
-**20:55 — @273288869752960:** [image: image_20260506_181705.jpg]
+**20:55 — Mom:** [image: image_20260506_181705.jpg]
 
 ## 2026-03-23 (Monday)
 
-**20:12 — @273288869752960:** [image: image_20260506_181705.jpg]
-**20:12 — @273288869752960:** [image: image_20260506_181705.jpg]
+**20:12 — Mom:** [image: image_20260506_181705.jpg]
+**20:12 — Mom:** [image: image_20260506_181705.jpg]
 
 ## 2026-03-24 (Tuesday)
 
-**20:42 — @273288869752960:** [image: image_20260506_181705.jpg]
+**20:42 — Mom:** [image: image_20260506_181705.jpg]
 
 ## 2026-03-25 (Wednesday)
 
-**11:03 — @273288869752960:** https://youtu.be/zZYRWgVBSrI?si=8q4cR_Wo4PYQxown
+**11:03 — Mom:** https://youtu.be/zZYRWgVBSrI?si=8q4cR_Wo4PYQxown
 
 ## 2026-03-27 (Friday)
 
-**20:25 — @273288869752960:** [video: video_20260506_181705.mp4]
+**20:25 — Mom:** [video: video_20260506_181705.mp4]
 
 ## 2026-03-28 (Saturday)
 
-**14:46 — @273288869752960:** https://www.instagram.com/reel/DDGPltjt-f9/?igsh=d3B1YWIwZ2Q4czRz
+**14:46 — Mom:** https://www.instagram.com/reel/DDGPltjt-f9/?igsh=d3B1YWIwZ2Q4czRz
 
 ## 2026-03-30 (Monday)
 
-**17:25 — @273288869752960:** Girls,
+**17:25 — Mom:** Girls,
 I love you all so much. You are like pillars of strength to me.
 Whenever I’m out of town, all of you—especially Reysh, Ambal, Aruna, and everyone—have taken such wonderful care of my parents. You were there during my beloved puppy’s last journey (even now, I’m tearing up thinking about it).
 Then when Dad got sick, once again Aparna stepped up and took care of the most important thing—his health checkup.
@@ -246,12 +246,12 @@ Sincerely,
 
 ## 2026-03-31 (Tuesday)
 
-**18:06 — @273288869752960:** https://www.instagram.com/reel/DVryYOdDctd/?igsh=d3Zrc2o5YnYyMmR2
-**19:34 — @273288869752960:** https://www.instagram.com/p/DWKZfM1DUFw/?img_index=8&igsh=MWU2c3YycHJ3YXhwaQ==
-**21:58 — @273288869752960:** Just fyi..and planning the TAMU fess for Sam(which includes Blinn and TAMU), it should be similar if no other credits applied or scholarships, this might be sometimes low if stayed outside:
+**18:06 — Mom:** https://www.instagram.com/reel/DVryYOdDctd/?igsh=d3Zrc2o5YnYyMmR2
+**19:34 — Mom:** https://www.instagram.com/p/DWKZfM1DUFw/?img_index=8&igsh=MWU2c3YycHJ3YXhwaQ==
+**21:58 — Mom:** Just fyi..and planning the TAMU fess for Sam(which includes Blinn and TAMU), it should be similar if no other credits applied or scholarships, this might be sometimes low if stayed outside:
 Tuition fees	$11,948.48
 accomodation	$9,102.00
 Food@college	$3,788.76
 Total for 1st year	$24,839.24
-**21:58 — @273288869752960:** Hello Ambal, Math placement will be scheduled based on your NSC date, may be 3-4 weeks before it will open
-**21:58 — @273288869752960:** From Ben
+**21:58 — Mom:** Hello Ambal, Math placement will be scheduled based on your NSC date, may be 3-4 weeks before it will open
+**21:58 — Mom:** From Ben

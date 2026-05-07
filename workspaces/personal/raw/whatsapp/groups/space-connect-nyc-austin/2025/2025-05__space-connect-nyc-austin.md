@@ -1,9 +1,9 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T02:43:48.985380+00:00'
+ingested_at: '2026-05-07T20:44:04.157750+00:00'
 ingest_version: 1
-content_hash: 'blake3:fb3f0539e79ca5f6274fe905369dad3085c45bb266560bf264d21cdf67cb2843'
+content_hash: 'blake3:1ba436208e9dd172bce6f14854cdbdbb39e4f3c6b7948f8244ed70f87a0b827e'
 provider_modified_at: '2025-05-03T03:24:55-05:00'
 contact_slug: space-connect-nyc-austin
 contact_type: group
@@ -23,4 +23,4 @@ superseded_by: null
 
 ## 2025-05-03 (Saturday)
 
-**03:24 — +16473773489:** @971585533444 ^
+**03:24 — Mike Gord Gda.group:** @971585533444 ^

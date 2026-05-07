@@ -1,9 +1,9 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T02:43:48.993726+00:00'
+ingested_at: '2026-05-07T20:44:04.168449+00:00'
 ingest_version: 1
-content_hash: 'blake3:09d25bdd4fb2abcd7370b9c575e55308b68e04dae40954fa7310dcada4958bd1'
+content_hash: 'blake3:20004a72659235adaab2808f975e2775a8d7b49a404f2e0c35a86a14ed83b5c8'
 provider_modified_at: '2026-04-03T14:02:09-05:00'
 contact_slug: aditya-and-sarick
 contact_type: group
@@ -25,9 +25,9 @@ superseded_by: null
 
 **23:55 — me:** hey sarick have a call right before ours that might end up running
 **23:56 — me:** would you mind if i pushed back our call by 30 just in case
-**23:58 — @160932491731033:** Ah I have a hard stop at 1230 could we do earlier maybe?
+**23:58 — Sarick Shah:** Ah I have a hard stop at 1230 could we do earlier maybe?
 
 ## 2026-04-03 (Friday)
 
-**13:43 — @160932491731033:** @240574019965159 ?? if not we could resched to monday
-**14:02 — @160932491731033:** in the call jic, but keep me posted if you’re running ultra late
+**13:43 — Sarick Shah:** @240574019965159 ?? if not we could resched to monday
+**14:02 — Sarick Shah:** in the call jic, but keep me posted if you’re running ultra late

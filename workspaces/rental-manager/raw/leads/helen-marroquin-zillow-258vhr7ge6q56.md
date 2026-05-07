@@ -77,3 +77,7 @@ Hello, Sorry but I hadn’t seen the messages. If I still need a place
 ### 2026-03-23T21:34:43.427Z - Owner (Adithya)
 
 what time would work best tomorrow or day after? please contact me at 5126601911
+
+### 2026-05-07T20:43:59.353Z - Owner (Adithya)
+
+no worries Helen. with an April move-in you've still got time. rooms are still open, $1000 to $1250 depending on the floor. what day works to swing by this week?

@@ -85,3 +85,7 @@ wanted to reping on the above, did you get a chance to tour the property
 ### 2026-03-25T20:37:55.125Z - Owner (Adithya)
 
 hey did you get a chance to tour?
+
+### 2026-05-07T20:44:11.177Z - Owner (Adithya)
+
+hey Jennifer, are you still looking? saw your application from a while back. let me know if you want to come tour or if you've already locked in somewhere.

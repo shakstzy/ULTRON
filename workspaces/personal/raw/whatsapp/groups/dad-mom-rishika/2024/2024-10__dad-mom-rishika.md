@@ -1,9 +1,9 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T02:43:48.983822+00:00'
+ingested_at: '2026-05-07T20:44:04.155371+00:00'
 ingest_version: 1
-content_hash: 'blake3:c5159ff6cd7ff4b06114b490e7ba0a3a9ac53551545a89560a0f508b2e3c70fd'
+content_hash: 'blake3:8cfef0a0b44bf37eadaff89a813cb39b547c7bc4568f1426986b12692e252c45'
 provider_modified_at: '2024-10-31T20:44:22-05:00'
 contact_slug: dad-mom-rishika
 contact_type: group
@@ -23,4 +23,4 @@ superseded_by: null
 
 ## 2024-10-31 (Thursday)
 
-**20:44 — +15104499964:** So happy to see y'all join lamp lighting 🙏💕
+**20:44 — Mom:** So happy to see y'all join lamp lighting 🙏💕

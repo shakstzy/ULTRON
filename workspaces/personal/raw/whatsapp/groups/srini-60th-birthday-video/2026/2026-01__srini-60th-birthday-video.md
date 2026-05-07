@@ -1,9 +1,9 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T02:43:48.991571+00:00'
+ingested_at: '2026-05-07T20:44:04.166096+00:00'
 ingest_version: 1
-content_hash: 'blake3:7f3537a6812e45cd5a62902a66304820714599846e0e5000eaa82744b29ef1dd'
+content_hash: 'blake3:e2d0b9b436b66cadf9300225fe2260b01a51b3021b4ecef4be484cffda929fc2'
 provider_modified_at: '2026-01-28T08:03:39-06:00'
 contact_slug: srini-60th-birthday-video
 contact_type: group
@@ -23,4 +23,4 @@ superseded_by: null
 
 ## 2026-01-28 (Wednesday)
 
-**08:03 — @22291048054955:** Super Chithi
+**08:03 — Kaarunya Akka:** Super Chithi

@@ -1,9 +1,9 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T02:43:49.008043+00:00'
+ingested_at: '2026-05-07T20:44:04.186860+00:00'
 ingest_version: 1
-content_hash: 'blake3:52197d6226bee5d8ef3470721ebe776894d0c355f2dfba65363de8bf5244c187'
+content_hash: 'blake3:73e8a681f5b16e5437f860621fc1cb95d5928676c47e6bb14825995c6955c7ef'
 provider_modified_at: '2026-04-29T19:36:57-05:00'
 contact_slug: 2-sri-ashtalakshmi-temple
 contact_type: group
@@ -23,7 +23,7 @@ superseded_by: null
 
 ## 2026-04-04 (Saturday)
 
-**18:36 — @248141987233877:** 🌸*Jai Srimannarayana!* 🌸
+**18:36 — Nihar:** 🌸*Jai Srimannarayana!* 🌸
 
 🙏 We Will be starting Sri Vishnu Sahasranama Prayanam by *6:30pm* 
 Let’s all Participate & get the Blessings ✨
@@ -33,7 +33,7 @@ https://us02web.zoom.us/j/87366192511?pwd=dGQzQ2F3TlFlV0ZLd2Z0SWZ3c3ZxQT09
 
 ## 2026-04-09 (Thursday)
 
-**22:47 — @248141987233877:** *ॐ*
+**22:47 — Nihar:** *ॐ*
 *|| Jai Srimannarayana! ||*
 ✨ Blessings from Sri Ashtalakshmi Sametha Venkateshwara Swamy Temple 🛕 🚩
 
@@ -61,7 +61,7 @@ May Sri Ashtalakshmi Sametha Venkateshwara Swamy, Hanuman, Sri Rama Parivara, Sr
 
 ## 2026-04-11 (Saturday)
 
-**17:11 — @248141987233877:** 🌸*Jai Srimannarayana!* 🌸
+**17:11 — Nihar:** 🌸*Jai Srimannarayana!* 🌸
 
 🙏 We Will be starting Sri Vishnu Sahasranama Prayanam by *6:30pm* 
 Let’s all Participate & get the Blessings ✨
@@ -71,11 +71,11 @@ https://us02web.zoom.us/j/87366192511?pwd=dGQzQ2F3TlFlV0ZLd2Z0SWZ3c3ZxQT09
 
 ## 2026-04-13 (Monday)
 
-**23:01 — @248141987233877:** [image: image_20260506_181705.jpg]
+**23:01 — Nihar:** [image: image_20260506_181705.jpg]
 
 ## 2026-04-14 (Tuesday)
 
-**09:19 — @248141987233877:** *ॐ*
+**09:19 — Nihar:** *ॐ*
 *|| Jai Srimannarayana! ||*
 ✨ *May Sri Ashtalakshmi Sametha Venkateshwara Swamy Bless Us All on the Auspicious Occasion of Vishu & Tamil New Year* 🛕 🚩
 
@@ -90,11 +90,11 @@ May Sri Ashtalakshmi Sametha Venkateshwara Swamy, Hanuman, Sri Rama Parivara, Sr
 
 ## 2026-04-15 (Wednesday)
 
-**23:04 — @248141987233877:** [image: image_20260506_181705.jpg]
+**23:04 — Nihar:** [image: image_20260506_181705.jpg]
 
 ## 2026-04-17 (Friday)
 
-**10:11 — @248141987233877:** *ॐ*
+**10:11 — Nihar:** *ॐ*
 *|| Jai Srimannarayana! ||*
 ✨ Blessings from Sri Ashtalakshmi Sametha Venkateshwara Swamy Temple 🛕 🚩
 
@@ -129,23 +129,23 @@ May Sri Ashtalakshmi Sametha Venkateshwara Swamy, Hanuman, Sri Rama Parivara, Sr
 
 ## 2026-04-18 (Saturday)
 
-**18:38 — @248141987233877:** 🌸*Jai Srimannarayana!* 🌸
+**18:38 — Nihar:** 🌸*Jai Srimannarayana!* 🌸
 
 🙏 We Will be starting Sri Vishnu Sahasranama Prayanam by *6:30pm* 
 Let’s all Participate & get the Blessings ✨
 
 If you can’t participate in person, Here is the link  🔗
 https://us02web.zoom.us/j/87366192511?pwd=dGQzQ2F3TlFlV0ZLd2Z0SWZ3c3ZxQT09
-**18:38 — @248141987233877:** [image: image_20260506_181705.jpg]
+**18:38 — Nihar:** [image: image_20260506_181705.jpg]
 
 ## 2026-04-19 (Sunday)
 
-**09:23 — @135295831945268:** Jai  Srimannarayana . Today is  
+**09:23 — +18185169109:** Jai  Srimannarayana . Today is  
 *AKSHAYATRITHYA. Means any prayer , Donation you do gives you endless divine blessings. Please participate and get the blessings.
 
 ## 2026-04-24 (Friday)
 
-**09:13 — @248141987233877:** *ॐ*
+**09:13 — Nihar:** *ॐ*
 *|| Jai Srimannarayana! ||*
 ✨ Blessings from Sri Ashtalakshmi Sametha Venkateshwara Swamy Temple 🛕 🚩
 
@@ -172,11 +172,11 @@ https://us02web.zoom.us/j/87366192511?pwd=dGQzQ2F3TlFlV0ZLd2Z0SWZ3c3ZxQT09
 
 💐 Participate & Get The Blessings!! ✨
 May Sri Ashtalakshmi Sametha Venkateshwara Swamy, Hanuman, Sri Rama Parivara, Sri Siva Parivara & Bhadrakali Bless Us All! 🙏
-**09:14 — @248141987233877:** [image: image_20260506_181705.jpg]
+**09:14 — Nihar:** [image: image_20260506_181705.jpg]
 
 ## 2026-04-25 (Saturday)
 
-**18:34 — @248141987233877:** 🌸*Jai Srimannarayana!* 🌸
+**18:34 — Nihar:** 🌸*Jai Srimannarayana!* 🌸
 
 🙏 We Will be starting Sri Vishnu Sahasranama Prayanam by *6:00pm* 
 Let’s all Participate & get the Blessings ✨
@@ -186,7 +186,7 @@ https://us02web.zoom.us/j/87366192511?pwd=dGQzQ2F3TlFlV0ZLd2Z0SWZ3c3ZxQT09
 
 ## 2026-04-28 (Tuesday)
 
-**23:50 — @248141987233877:** *ॐ*
+**23:50 — Nihar:** *ॐ*
 *|| Jai Srimannarayana! ||*
 ✨ Blessings from Sri Ashtalakshmi Sametha Venkateshwara Swamy Temple 🛕 🚩
 
@@ -222,7 +222,7 @@ May Sri Ashtalakshmi Sametha Venkateshwara Swamy, Hanuman, Sri Rama Parivara, Sr
 
 ## 2026-04-29 (Wednesday)
 
-**19:36 — @248141987233877:** *ॐ*
+**19:36 — Nihar:** *ॐ*
 *|| Jai Srimannarayana! ||*
 ✨ Blessings from Sri Ashtalakshmi Sametha Venkateshwara Swamy Temple 🛕 🚩
 

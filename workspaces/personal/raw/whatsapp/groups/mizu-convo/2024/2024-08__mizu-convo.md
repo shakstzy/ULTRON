@@ -1,9 +1,9 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T02:43:48.981226+00:00'
+ingested_at: '2026-05-07T20:44:04.151769+00:00'
 ingest_version: 1
-content_hash: 'blake3:e872e5c73211fb7cde2a3e77e1d97bffa57812d550567e6455e0413351b83689'
+content_hash: 'blake3:f21b2e752f7c82f3a9ce29208f02b49222d799b0042bb4a79e9a695eb97d1c7a'
 provider_modified_at: '2024-08-27T13:09:47-05:00'
 contact_slug: mizu-convo
 contact_type: group
@@ -23,4 +23,4 @@ superseded_by: null
 
 ## 2024-08-27 (Tuesday)
 
-**13:09 — +905397148747:** We’re being doxxed to partners/investors but for external comms we use anon handles
+**13:09 — Alpkan Ornek:** We’re being doxxed to partners/investors but for external comms we use anon handles

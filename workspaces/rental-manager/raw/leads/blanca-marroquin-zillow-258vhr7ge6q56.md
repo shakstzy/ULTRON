@@ -44,3 +44,7 @@ I would like to schedule a tour.
 ### 2026-03-23T21:34:56.709Z - Owner (Adithya)
 
 what time would work best tomorrow or day after? please contact me at 5126601911
+
+### 2026-05-07T20:43:55.174Z - Owner (Adithya)
+
+hey Blanca, still want to come check it out? rooms are open and ready. what day this week works for you? heads up pets are welcome and parking is available as an add-on.

@@ -1,9 +1,9 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T02:43:48.994509+00:00'
+ingested_at: '2026-05-07T20:44:04.169103+00:00'
 ingest_version: 1
-content_hash: 'blake3:80895710d4602df1537ec209abd4327fe394923a0ba71c410f1c57b40a21fc6f'
+content_hash: 'blake3:14c13049d839df6a673f0a8103f8287edb98a3687632af95ef39e2abedef56fb'
 provider_modified_at: '2026-04-07T22:34:02-05:00'
 contact_slug: kinetics-software
 contact_type: group
@@ -23,7 +23,7 @@ superseded_by: null
 
 ## 2026-04-01 (Wednesday)
 
-**22:44 — @112107320250494:** yup. sounds good. hope i can help
+**22:44 — Martin:** yup. sounds good. hope i can help
 
 ## 2026-04-02 (Thursday)
 
@@ -35,12 +35,12 @@ superseded_by: null
 
 ## 2026-04-06 (Monday)
 
-**21:41 — @112107320250494:** hi tried to call via a meeting i setup in calndly but failed to join
-**21:44 — @112107320250494:** my time window is closing. perhaps you could text and let me know what info you are looking for.
+**21:41 — Martin:** hi tried to call via a meeting i setup in calndly but failed to join
+**21:44 — Martin:** my time window is closing. perhaps you could text and let me know what info you are looking for.
 
 ## 2026-04-07 (Tuesday)
 
-**00:00 — @135480565870655:** Hey Martin I think shak will get back to you he must be busy with other matters I’m sorry for the hold up … I’ll reach out to him on his personal thread.
+**00:00 — Mychal Kendricks Malik Crypto NFL Producer LA:** Hey Martin I think shak will get back to you he must be busy with other matters I’m sorry for the hold up … I’ll reach out to him on his personal thread.
 **17:34 — me:** Hey Martin
 **17:34 — me:** I’m in sf this week on travel
-**22:34 — @112107320250494:** no problems. no rush from my end; contact me when its convenient
+**22:34 — Martin:** no problems. no rush from my end; contact me when its convenient

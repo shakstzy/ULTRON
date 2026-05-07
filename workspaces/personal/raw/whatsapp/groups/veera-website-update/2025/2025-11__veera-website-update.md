@@ -1,9 +1,9 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T02:43:48.991453+00:00'
+ingested_at: '2026-05-07T20:44:04.165946+00:00'
 ingest_version: 1
-content_hash: 'blake3:9bb8f04190eba87cbfca41aba16a187b202ad880f6d0f36dfe8fe9b6928d3441'
+content_hash: 'blake3:aa810aead0aa168fd24c0dba919660fa1c0febe8c816210ce8ef03b14e268cae'
 provider_modified_at: '2025-11-11T03:46:04-06:00'
 contact_slug: veera-website-update
 contact_type: group
@@ -23,4 +23,4 @@ superseded_by: null
 
 ## 2025-11-11 (Tuesday)
 
-**03:46 — @241871167172784:** “Your Global Financial OS” instead of super app?
+**03:46 — Arjun Veera:** “Your Global Financial OS” instead of super app?

@@ -1,9 +1,9 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T02:43:49.001452+00:00'
+ingested_at: '2026-05-07T20:44:04.178264+00:00'
 ingest_version: 1
-content_hash: 'blake3:8f2c81645c5e0c22281fa828cdef6c6e29bcb31e021ccbb119ca979c5543c9cd'
+content_hash: 'blake3:4fa4fdbae7657918dd629be46f99ee70e1165904459a44c1ea9076e414c1fbca'
 provider_modified_at: '2026-04-28T16:50:02-05:00'
 contact_slug: the-kumars
 contact_type: group
@@ -23,7 +23,7 @@ superseded_by: null
 
 ## 2026-04-03 (Friday)
 
-**14:48 — @273288869752960:** A clarification.  The Temple opens at 9:00 am, but priests do nithya sevas from 9:00 am to 9:30 am.  Below are the overall Temple timings.
+**14:48 — Mom:** A clarification.  The Temple opens at 9:00 am, but priests do nithya sevas from 9:00 am to 9:30 am.  Below are the overall Temple timings.
 
 *Important Announcement*
 *From April 4th, 2026 (Saturday), Austin Hindu Temple closes at 8:30 pm. Main gate closes at the same time and all temples doors will be locked sharp at 8:30 pm*
@@ -40,7 +40,7 @@ _Weekends:_
 09:30 am - 02:00 pm
 05:00 pm - 08:30 pm ( *Change in closing time*)
 Last Archana: 08:15 pm ( *Change in time* )
-**19:05 — @273288869752960:** From my neighbor 
+**19:05 — Mom:** From my neighbor 
 
 
 Take  1 cup sprouted oats
@@ -58,8 +58,8 @@ Along with yogurt and that soaked thing few spoons
 
 ## 2026-04-04 (Saturday)
 
-**13:37 — @273288869752960:** https://www.instagram.com/p/DWBpWXVDJLH/?img_index=11&igsh=MXFvdjF1MWl2YXdpaA==
-**16:20 — @273288869752960:** From Emperor Ashoka to today: The 2,300-year history behind Bhikkhu Pannakara’s April journey to Sri Lanka.
+**13:37 — Mom:** https://www.instagram.com/p/DWBpWXVDJLH/?img_index=11&igsh=MXFvdjF1MWl2YXdpaA==
+**16:20 — Mom:** From Emperor Ashoka to today: The 2,300-year history behind Bhikkhu Pannakara’s April journey to Sri Lanka.
 
 Sometimes, you look back at your own life and wince.
 You think about the bridges you burned, the times you reacted out of deep anger, or the choices you made when you were hurting and confused. You carry a silent, heavy belief that your past disqualifies you from finding true peace. You think, "I have made too many mistakes. It is simply too late for me to start over."
@@ -103,66 +103,66 @@ Drop the heavy baggage of your past. You are not your mistakes. You are the awar
 
 ## 2026-04-05 (Sunday)
 
-**16:21 — @273288869752960:** [image: image_20260506_181705.jpg]
-**16:21 — @273288869752960:** [image: image_20260506_181705.jpg]
-**16:21 — @273288869752960:** Gokul and Parvathy on their first big moment together!
-**16:21 — @273288869752960:** [image: image_20260506_181705.jpg]
-**16:21 — @273288869752960:** [image: image_20260506_181705.jpg]
-**16:21 — @273288869752960:** [image: image_20260506_181705.jpg]
-**16:21 — @273288869752960:** [image: image_20260506_181705.jpg]
-**16:21 — @273288869752960:** [image: image_20260506_181705.jpg]
-**20:15 — @273288869752960:** https://www.linkedin.com/in/gokul-kalyanasundaram-676ab2134/
+**16:21 — Mom:** [image: image_20260506_181705.jpg]
+**16:21 — Mom:** [image: image_20260506_181705.jpg]
+**16:21 — Mom:** Gokul and Parvathy on their first big moment together!
+**16:21 — Mom:** [image: image_20260506_181705.jpg]
+**16:21 — Mom:** [image: image_20260506_181705.jpg]
+**16:21 — Mom:** [image: image_20260506_181705.jpg]
+**16:21 — Mom:** [image: image_20260506_181705.jpg]
+**16:21 — Mom:** [image: image_20260506_181705.jpg]
+**20:15 — Mom:** https://www.linkedin.com/in/gokul-kalyanasundaram-676ab2134/
 
 ## 2026-04-07 (Tuesday)
 
-**09:34 — @273288869752960:** [video: video_20260506_181705.mp4]
-**09:35 — @273288869752960:** [video: video_20260506_181705.mp4]
+**09:34 — Mom:** [video: video_20260506_181705.mp4]
+**09:35 — Mom:** [video: video_20260506_181705.mp4]
 
 ## 2026-04-08 (Wednesday)
 
-**09:49 — @273288869752960:** [video: video_20260506_181705.mp4]
-**17:49 — @273288869752960:** https://www.instagram.com/reel/DVwqQLxCCu-/?igsh=MWNuazd3aTh2ZnB0Zg==
-**18:02 — @126800420147335:** [image: image_20260506_181705.jpg]
+**09:49 — Mom:** [video: video_20260506_181705.mp4]
+**17:49 — Mom:** https://www.instagram.com/reel/DVwqQLxCCu-/?igsh=MWNuazd3aTh2ZnB0Zg==
+**18:02 — Dad:** [image: image_20260506_181705.jpg]
 
 ## 2026-04-10 (Friday)
 
-**11:58 — @273288869752960:** https://www.cnbc.com/2026/04/09/military-draft-registration-automatic-iran-war.html
-**16:34 — @273288869752960:** https://www.google.com/maps/dir/1000+Garrett+Oaks+Ln,+Georgetown,+TX+78633/124+Meadow+Beauty+Ln,+Georgetown,+TX+78633/Hari+Hara+Kshethram+Temple,+375+King+Rea+Spur,+Georgetown,+TX+78633/Shiv+Durga+Shakti+Dham,+120+North+Hvn,+Liberty+Hill,+TX+78642/100+Private+Rd+907,+Liberty+Hill,+TX+78642/100+Montecilo+Dr,+Santa+Rita+Ranch,+TX+78628/216+Rieti+Pkwy,+Liberty+Hill,+TX+78642/Texas+Murugan+Temple,+775+Stubblefield+Ln,+Liberty+Hill,+TX+78642/125+Smoke+Signal+Ct,+Liberty+Hill,+TX+78462/@30.6949832,-97.8987845,13z/data=!4m56!4m55!1m5!1m1!1s0x865ad4b6d3d6bc01:0x54807cb8158a91e1!2m2!1d-97.7912552!2d30.7371892!1m5!1m1!1s0x865ad489aaf09fd5:0xbf3c323109b56!2m2!1d-97.8260449!2d30.7370851!1m5!1m1!1s0x865ad5006c2b5b97:0xdcf643539d3af7da!2m2!1d-97.8597012!2d30.7146529!1m5!1m1!1s0x865b2d89b34cd139:0x875d44e5bc62f290!2m2!1d-97.8812499!2d30.7273588!1m5!1m1!1s0x865ad5e6450cbcd5:0x21d60d4cf6ca25b!2m2!1d-97.8631602!2d30.677047!1m5!1m1!1s0x865ad57d15632391:0xfa04808fe5c0d534!2m2!1d-97.819132!2d30.662086!1m5!1m1!1s0x865b2a743f1ecb6f:0xaea83906de390b7c!2m2!1d-97.8461657!2d30.6548629!1m5!1m1!1s0x865ad71046b18ba3:0xeec939400f3eafaf!2m2!1d-97.9198745!2d30.6570135!1m5!1m1!1s0x865ad650ade537b5:0xcf3f082e6c9b5ea4!2m2!1d-97.905456!2d30.694973!3e0?entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D
+**11:58 — Mom:** https://www.cnbc.com/2026/04/09/military-draft-registration-automatic-iran-war.html
+**16:34 — Mom:** https://www.google.com/maps/dir/1000+Garrett+Oaks+Ln,+Georgetown,+TX+78633/124+Meadow+Beauty+Ln,+Georgetown,+TX+78633/Hari+Hara+Kshethram+Temple,+375+King+Rea+Spur,+Georgetown,+TX+78633/Shiv+Durga+Shakti+Dham,+120+North+Hvn,+Liberty+Hill,+TX+78642/100+Private+Rd+907,+Liberty+Hill,+TX+78642/100+Montecilo+Dr,+Santa+Rita+Ranch,+TX+78628/216+Rieti+Pkwy,+Liberty+Hill,+TX+78642/Texas+Murugan+Temple,+775+Stubblefield+Ln,+Liberty+Hill,+TX+78642/125+Smoke+Signal+Ct,+Liberty+Hill,+TX+78462/@30.6949832,-97.8987845,13z/data=!4m56!4m55!1m5!1m1!1s0x865ad4b6d3d6bc01:0x54807cb8158a91e1!2m2!1d-97.7912552!2d30.7371892!1m5!1m1!1s0x865ad489aaf09fd5:0xbf3c323109b56!2m2!1d-97.8260449!2d30.7370851!1m5!1m1!1s0x865ad5006c2b5b97:0xdcf643539d3af7da!2m2!1d-97.8597012!2d30.7146529!1m5!1m1!1s0x865b2d89b34cd139:0x875d44e5bc62f290!2m2!1d-97.8812499!2d30.7273588!1m5!1m1!1s0x865ad5e6450cbcd5:0x21d60d4cf6ca25b!2m2!1d-97.8631602!2d30.677047!1m5!1m1!1s0x865ad57d15632391:0xfa04808fe5c0d534!2m2!1d-97.819132!2d30.662086!1m5!1m1!1s0x865b2a743f1ecb6f:0xaea83906de390b7c!2m2!1d-97.8461657!2d30.6548629!1m5!1m1!1s0x865ad71046b18ba3:0xeec939400f3eafaf!2m2!1d-97.9198745!2d30.6570135!1m5!1m1!1s0x865ad650ade537b5:0xcf3f082e6c9b5ea4!2m2!1d-97.905456!2d30.694973!3e0?entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D
 
 ## 2026-04-12 (Sunday)
 
-**13:04 — @273288869752960:** [video: video_20260506_181705.mp4]
-**13:22 — @273288869752960:** [image: image_20260506_181705.jpg]
+**13:04 — Mom:** [video: video_20260506_181705.mp4]
+**13:22 — Mom:** [image: image_20260506_181705.jpg]
 
 ## 2026-04-14 (Tuesday)
 
-**18:17 — @273288869752960:** [image: image_20260506_181705.jpg]
+**18:17 — Mom:** [image: image_20260506_181705.jpg]
 
 ## 2026-04-15 (Wednesday)
 
-**19:11 — @273288869752960:** https://www.instagram.com/reel/C39AFcCJmow/?igsh=bDcwaTBwYWN1NGZu
-**19:11 — @273288869752960:** https://www.instagram.com/reel/C2oCvurpzWM/?igsh=MXVraGR6YmhrNzhhZw==
+**19:11 — Mom:** https://www.instagram.com/reel/C39AFcCJmow/?igsh=bDcwaTBwYWN1NGZu
+**19:11 — Mom:** https://www.instagram.com/reel/C2oCvurpzWM/?igsh=MXVraGR6YmhrNzhhZw==
 
 ## 2026-04-16 (Thursday)
 
-**21:12 — @273288869752960:** https://www.instagram.com/reel/DXM1EUPDYKv/?igsh=N25laXh6ZGZ3NmZx
+**21:12 — Mom:** https://www.instagram.com/reel/DXM1EUPDYKv/?igsh=N25laXh6ZGZ3NmZx
 
 ## 2026-04-18 (Saturday)
 
-**14:23 — @273288869752960:** [video: video_20260506_181705.mp4]
+**14:23 — Mom:** [video: video_20260506_181705.mp4]
 
 ## 2026-04-19 (Sunday)
 
-**00:21 — @273288869752960:** https://www.instagram.com/reel/DUvP05sEi0Y/?igsh=b3NnOXRxOXVzOWFh
-**11:08 — @273288869752960:** https://www.instagram.com/p/DXLYSX5jzmg/?img_index=6&igsh=MWlsb3BoemU0bTJ4Nw==
+**00:21 — Mom:** https://www.instagram.com/reel/DUvP05sEi0Y/?igsh=b3NnOXRxOXVzOWFh
+**11:08 — Mom:** https://www.instagram.com/p/DXLYSX5jzmg/?img_index=6&igsh=MWlsb3BoemU0bTJ4Nw==
 
 ## 2026-04-20 (Monday)
 
-**21:37 — @273288869752960:** [video: video_20260506_181705.mp4]
+**21:37 — Mom:** [video: video_20260506_181705.mp4]
 
 ## 2026-04-21 (Tuesday)
 
-**16:04 — @273288869752960:** https://pmc.ncbi.nlm.nih.gov/articles/PMC12992748/
+**16:04 — Mom:** https://pmc.ncbi.nlm.nih.gov/articles/PMC12992748/
 
 Results
 Vitamin D-deficient groups exhibited significantly lower serum 25OHD levels and showed increased mean arterial pressure, heart and respiratory rates, and reduced oxygen saturation under hypoxia. High-dose supplementation improved 25OHD levels and improved physiological measures, particularly in moderate hypoxia subgroups (p = 0.001).
@@ -172,17 +172,17 @@ Vitamin D deficiency combined with intermittent hypoxia increased mean arterial 
 
 ## 2026-04-23 (Thursday)
 
-**14:51 — @273288869752960:** https://techcrunch.com/2026/04/23/microsoft-offers-buyout-for-up-to-7-of-u-s-employees/
+**14:51 — Mom:** https://techcrunch.com/2026/04/23/microsoft-offers-buyout-for-up-to-7-of-u-s-employees/
 
 For the Microsoft employee(s) here
-**15:08 — @273288869752960:** [image: image_20260506_181705.jpg]
-**15:08 — @273288869752960:** [image: image_20260506_181705.jpg]
-**17:32 — @273288869752960:** [image: image_20260506_181705.jpg]
-**17:32 — @273288869752960:** [image: image_20260506_181705.jpg]
+**15:08 — Mom:** [image: image_20260506_181705.jpg]
+**15:08 — Mom:** [image: image_20260506_181705.jpg]
+**17:32 — Mom:** [image: image_20260506_181705.jpg]
+**17:32 — Mom:** [image: image_20260506_181705.jpg]
 
 ## 2026-04-24 (Friday)
 
-**09:45 — @273288869752960:** Why Indian Retirees  Can’t Spend the Money They Sacrificed Their Lives to Save
+**09:45 — Mom:** Why Indian Retirees  Can’t Spend the Money They Sacrificed Their Lives to Save
 
 Mr Sharma (a pseudonym for perhaps your father, uncle, or neighbour) is a success story of the great Indian middle-class dream.
 
@@ -256,17 +256,17 @@ The Bottom Line:
 Money is stored energy. You spent your life accumulating this energy. If you don’t release it in the form of joy, comfort, and experiences while you are alive, that energy goes to waste.
 
 You didn’t work for 40 years just to be the wealthiest patient in the hospital ward. Flip the switch. Buy the ticket. Turn on the AC. You earned it.
-**11:24 — @273288869752960:** https://www.instagram.com/reel/DWhJhpFGX7o/?igsh=MTNzdWN3NWlzOTl2NA==
+**11:24 — Mom:** https://www.instagram.com/reel/DWhJhpFGX7o/?igsh=MTNzdWN3NWlzOTl2NA==
 
 ## 2026-04-25 (Saturday)
 
-**13:02 — @273288869752960:** [image: image_20260506_181705.jpg]
-**13:51 — @273288869752960:** [video: video_20260506_181705.mp4]
+**13:02 — Mom:** [image: image_20260506_181705.jpg]
+**13:51 — Mom:** [video: video_20260506_181705.mp4]
 
 ## 2026-04-26 (Sunday)
 
-**11:33 — @273288869752960:** [video: video_20260506_181705.mp4]
+**11:33 — Mom:** [video: video_20260506_181705.mp4]
 
 ## 2026-04-28 (Tuesday)
 
-**16:50 — @273288869752960:** [video: video_20260506_181705.mp4]
+**16:50 — Mom:** [video: video_20260506_181705.mp4]

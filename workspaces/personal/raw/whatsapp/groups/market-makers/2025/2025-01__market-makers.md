@@ -1,9 +1,9 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T02:43:48.984964+00:00'
+ingested_at: '2026-05-07T20:44:04.157157+00:00'
 ingest_version: 1
-content_hash: 'blake3:764ed64e259928fc695dd9b68e3af74848f2335e9a911a95f4f66cff7f23c65a'
+content_hash: 'blake3:93baf30c352a2bb8a08e93c7f3ce99cb6c8ac2041b4577a7e64f511de329d176'
 provider_modified_at: '2025-01-18T00:41:35-06:00'
 contact_slug: market-makers
 contact_type: group
@@ -23,4 +23,4 @@ superseded_by: null
 
 ## 2025-01-18 (Saturday)
 
-**00:41 — +917708666155:** Now also a deal for 50k usdt. Is on process. If I don't process I wont have business further.
+**00:41 — Pranav Srivan Crypto:** Now also a deal for 50k usdt. Is on process. If I don't process I wont have business further.

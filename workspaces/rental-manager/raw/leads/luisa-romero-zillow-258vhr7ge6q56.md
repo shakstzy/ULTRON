@@ -1,0 +1,59 @@
+---
+slug: luisa-romero-zillow-258vhr7ge6q56
+source: zillow-rental-manager
+workspace: rental-manager
+name: Luisa Romero
+phone: "+18183595876"
+reference_email: "20mzmmdcabh3ri3h766hy02j4vz@convo.zillow.com"
+listing_alias: 258vhr7ge6q56
+listing_address: "13245 Klein Ct, Sylmar, CA 91342"
+conversation_id: 3367924774924327224
+status_label: TOUR REQUESTED
+renter_us_state: CA
+last_pulled_at: "2026-05-07T03:01:31.644Z"
+---
+
+# Luisa Romero
+
+Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
+
+- Status: `TOUR REQUESTED`
+- Phone: `+18183595876`
+- Zillow forwarding email: `20mzmmdcabh3ri3h766hy02j4vz@convo.zillow.com`
+- Conversation ID: `3367924774924327224`
+- Listing alias: `258vhr7ge6q56`
+
+## Renter profile
+
+- **credit**: 580 - 619
+- **desiredParking**: Needed
+- **incomeYearlyRange**: $0 - $34,999
+- **leaseLengthMonths**: 18
+- **moveInDate**: 05/20/2026
+- **numBedrooms**: 1
+- **numOccupants**: 2
+- **petDetails**: `[{"breed":null,"description":"a pet","size":null,"type":"Other","weightPounds":null,"__typename":"ZRM_RenterProfile_PetDetails"}]`
+- **updatedAtMs**: 1773935335738
+- **__typename**: ZRM_RenterProfile_Attributes
+
+## Messages
+
+### 2026-03-09T18:46:27.323Z - Luisa Romero
+
+I would like to schedule a tour.
+
+### 2026-03-09T19:27:10.038Z - Owner (Adithya)
+
+hey when would be best to view the property this week?
+
+### 2026-03-09T19:40:24.411Z - Luisa Romero
+
+saturday
+
+### 2026-03-12T00:31:12.197Z - Luisa Romero
+
+hi are you still renting ?
+
+### 2026-03-23T21:34:23.679Z - Owner (Adithya)
+
+what time would work best tomorrow or day after? please contact me at 5126601911

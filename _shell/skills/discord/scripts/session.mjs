@@ -45,13 +45,16 @@ class DiscordSession {
         await new Promise(r => setTimeout(r, retry * 1000));
         continue;
       }
-      if (res.status === 401) {
-        die('[discord] 401 unauthorized. Token may be invalidated. Run: node scripts/run.mjs login', 3);
+      if (res.status === 401 || res.status === 403) {
+        const { tripBreaker } = await import('./browser.mjs');
+        const next = tripBreaker();
+        die(`[discord] ${res.status} ${res.status === 401 ? 'unauthorized' : 'forbidden'}. Breaker now ${next.state}. Run: node scripts/run.mjs login`, 3);
       }
       if (!res.ok) {
         const code = res.body && typeof res.body === 'object' ? res.body.code : undefined;
-        const message = res.body && typeof res.body === 'object' ? res.body.message : res.body;
-        const e = new Error(`${method} ${path} -> ${res.status}${code ? ` code=${code}` : ''}${message ? ` ${message}` : ''}`);
+        const rawMsg = res.body && typeof res.body === 'object' ? res.body.message : res.body;
+        const safeMsg = typeof rawMsg === 'string' ? rawMsg.replace(/[\r\n]/g, ' ').slice(0, 120) : '';
+        const e = new Error(`${method} ${path} -> ${res.status}${code ? ` code=${code}` : ''}${safeMsg ? ` ${safeMsg}` : ''}`);
         e.status = res.status;
         e.code = code;
         throw e;
@@ -105,10 +108,9 @@ export async function listFriends(sess) {
 }
 
 export async function listDmRecipients(sess) {
+  // type === 1 is Discord's 1:1 DM channel — recipients[0] is guaranteed.
   const channels = await sess.call('GET', '/api/v9/users/@me/channels');
-  return (channels || [])
-    .filter(c => c.type === 1 && Array.isArray(c.recipients) && c.recipients.length === 1)
-    .map(c => c.recipients[0]);
+  return (channels || []).filter(c => c.type === 1).map(c => c.recipients[0]);
 }
 
 function matchUser(users, needle) {

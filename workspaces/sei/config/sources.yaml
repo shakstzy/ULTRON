@@ -12,7 +12,8 @@ sources:
   gmail:
     accounts: []   # populated from source-routing.md (TBD label + which mailbox)
   granola:
-    folders: []    # TBD: confirm whether a Sei Granola folder exists upstream
+    folders: 
+      - SEI    # TBD: confirm whether a Sei Granola folder exists upstream
   manual:
     watch_path: raw/manual/_inbox/
     after_ingest: move_to_dated_subdir

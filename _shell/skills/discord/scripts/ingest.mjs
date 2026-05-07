@@ -12,7 +12,7 @@
 //   * stripped: emoji-only filler, reactions, system messages (calls/pins/joins),
 //     bot messages
 
-import { existsSync, mkdirSync, writeFileSync, readFileSync, unlinkSync } from 'node:fs';
+import { existsSync, mkdirSync, writeFileSync, readFileSync, renameSync, unlinkSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { spawn } from 'node:child_process';
@@ -27,6 +27,9 @@ const TZ = 'America/Chicago';
 const PAGE_SIZE = 100;
 const PAGE_JITTER_MIN_MS = 1500;
 const PAGE_JITTER_MAX_MS = 4000;
+const MAX_IMAGE_BYTES = 25 * 1024 * 1024;
+const MAX_PARALLEL_DOWNLOADS = 4;
+const WORKSPACE_NAME_RE = /^[a-z][a-z0-9_-]{0,40}$/;
 
 function log(msg) { process.stderr.write(`[discord-ingest] ${msg}\n`); }
 function jitter(minMs, maxMs) {
@@ -34,12 +37,27 @@ function jitter(minMs, maxMs) {
   return new Promise(r => setTimeout(r, ms));
 }
 
+// Crash-safe write: tmp + rename is atomic on the same filesystem (POSIX guarantee),
+// so a kill mid-run can't leave a half-written .md or watermark.
+function atomicWrite(path, contents) {
+  const tmp = `${path}.tmp.${process.pid}`;
+  writeFileSync(tmp, contents);
+  renameSync(tmp, path);
+}
+
 function slugify(s) {
   return (s || 'unknown').toLowerCase().trim().replace(/[^a-z0-9._-]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60) || 'unknown';
 }
 
+// Reject names that could climb out of workspaces/ via `..` or absolute paths.
+// resolve() normalizes the input; we then assert the result is still a direct
+// child of workspaces/.
 function workspaceExists(ws) {
-  return existsSync(join(ULTRON_ROOT, 'workspaces', ws));
+  if (!WORKSPACE_NAME_RE.test(ws)) return false;
+  const wsRoot = resolve(ULTRON_ROOT, 'workspaces');
+  const target = resolve(wsRoot, ws);
+  if (dirname(target) !== wsRoot) return false;
+  return existsSync(target);
 }
 
 // Pull every message in the channel, newest -> oldest, paginating via `before=`.
@@ -145,11 +163,30 @@ async function describeImage(absPath) {
 async function downloadToTmp(url, filename) {
   const res = await fetch(url);
   if (!res.ok) throw new Error(`fetch ${url} -> ${res.status}`);
+  const cl = parseInt(res.headers.get('content-length') || '0', 10);
+  if (cl > MAX_IMAGE_BYTES) throw new Error(`image too large: ${cl} bytes (cap ${MAX_IMAGE_BYTES})`);
   const buf = Buffer.from(await res.arrayBuffer());
+  if (buf.length > MAX_IMAGE_BYTES) throw new Error(`image too large: ${buf.length} bytes`);
   const safeName = filename.replace(/[^a-zA-Z0-9._-]/g, '_').slice(0, 80);
   const path = join(tmpdir(), `discord-img-${Date.now()}-${Math.random().toString(36).slice(2, 8)}-${safeName}`);
   writeFileSync(path, buf);
   return path;
+}
+
+// Bounded-concurrency parallel map. Discord CDN tolerates fan-out but unbounded
+// Promise.all on hundreds of images would buffer them all to disk before describe runs.
+async function pmap(items, concurrency, fn) {
+  const out = new Array(items.length);
+  let cursor = 0;
+  const workers = Array.from({ length: Math.min(concurrency, items.length) }, async () => {
+    while (true) {
+      const i = cursor++;
+      if (i >= items.length) return;
+      out[i] = await fn(items[i], i);
+    }
+  });
+  await Promise.all(workers);
+  return out;
 }
 
 // Discord puts the parent in `referenced_message` only when it's still resolvable.
@@ -177,10 +214,10 @@ async function describeImagesForMonth(monthMessages) {
   }
   if (imageRefs.length === 0) return new Map();
 
-  const downloads = await Promise.all(imageRefs.map(async ref => {
+  const downloads = await pmap(imageRefs, MAX_PARALLEL_DOWNLOADS, async ref => {
     try { return { ...ref, path: await downloadToTmp(ref.url, ref.filename) }; }
     catch (e) { log(`  download failed for ${ref.filename}: ${e.message}`); return { ...ref, path: null }; }
-  }));
+  });
 
   const descByAttId = new Map();
   for (const d of downloads) {
@@ -247,8 +284,10 @@ async function renderMonth({ ws, friendSlug, recipient, channelId, monthKey, mon
         const sizeKb = a.size ? ` (${Math.round(a.size / 1024)} KB)` : '';
         const desc = (kind === 'image' && describe) ? (descByAttId.get(a.id) || null) : null;
         const descPart = desc ? ` — "${desc.replace(/"/g, "'")}"` : '';
-        lines.push(`↳ ${kind}: ${a.filename}${sizeKb}${descPart} — ${a.url}`);
-        attachmentsManifest.push({ message_id: m.id, kind, filename: a.filename, url: a.url, size: a.size || null, description: desc });
+        // Strip control chars from filename so a malicious upload can't break a line/inject markdown.
+        const safeFilename = (a.filename || 'unknown').replace(/[\x00-\x1f\x7f]/g, '_');
+        lines.push(`↳ ${kind}: ${safeFilename}${sizeKb}${descPart} — ${a.url}`);
+        attachmentsManifest.push({ message_id: m.id, kind, filename: safeFilename, url: a.url, size: a.size || null, description: desc });
       }
 
       const tsMs = new Date(m.timestamp).getTime();
@@ -373,10 +412,36 @@ export async function runIngest(argv) {
     const baseDir = join(ULTRON_ROOT, 'workspaces', ws, 'raw', 'discord', 'individuals', friendSlug);
     const recipientName = recipient.global_name || recipient.username || friendSlug;
 
+    const logDir = join(ULTRON_ROOT, 'workspaces', ws, 'raw', '.ingest-log', 'discord');
+    const watermarkPath = join(logDir, `${friendSlug}.json`);
+    const writeWatermark = (extra) => {
+      if (dryRun) return;
+      mkdirSync(logDir, { recursive: true });
+      const watermark = {
+        channel_id: channelId,
+        recipient_id: recipient.id,
+        recipient_username: recipient.username,
+        recipient_global_name: recipient.global_name,
+        last_full_pull_at: new Date().toISOString(),
+        newest_message_id: all.length > 0 ? all[all.length - 1].id : null,
+        oldest_message_id: all.length > 0 ? all[0].id : null,
+        raw_message_count: all.length,
+        kept_message_count: kept.length,
+        dropped_message_count: dropped.length,
+        ...extra
+      };
+      atomicWrite(watermarkPath, JSON.stringify(watermark, null, 2));
+    };
+
     let totalAttachments = 0;
     let writtenCount = 0;
     let unchangedCount = 0;
     const months = [...buckets.keys()].sort();
+    const monthsCompleted = [];
+
+    // Seed the watermark before any month writes so a mid-run crash leaves a record.
+    writeWatermark({ months_written: monthsCompleted, status: 'in_progress' });
+
     for (const monthKey of months) {
       const monthMessages = buckets.get(monthKey);
       const [year] = monthKey.split('-');
@@ -398,40 +463,26 @@ export async function runIngest(argv) {
       }
 
       // Skip-write guard: if the rendered body matches the existing file's content_hash,
-      // leave the file untouched so re-runs don't churn ingested_at across 12 months.
+      // leave the file untouched so re-runs don't churn ingested_at across N months.
       if (existsSync(outPath)) {
         const head = readFileSync(outPath, 'utf8').slice(0, 4096);
         const prev = head.match(/^content_hash:\s*sha256:([0-9a-f]{64})$/m);
         if (prev && prev[1] === contentHash) {
           unchangedCount++;
+          monthsCompleted.push(monthKey);
           continue;
         }
       }
 
       mkdirSync(outDir, { recursive: true });
-      writeFileSync(outPath, md);
+      atomicWrite(outPath, md);
       writtenCount++;
+      monthsCompleted.push(monthKey);
+      // Refresh watermark per-month so a crash here leaves an accurate record.
+      writeWatermark({ months_written: monthsCompleted, status: 'in_progress' });
     }
 
-    // Watermark / diagnostic file.
-    if (!dryRun && all.length > 0) {
-      const logDir = join(ULTRON_ROOT, 'workspaces', ws, 'raw', '.ingest-log', 'discord');
-      mkdirSync(logDir, { recursive: true });
-      const watermark = {
-        channel_id: channelId,
-        recipient_id: recipient.id,
-        recipient_username: recipient.username,
-        recipient_global_name: recipient.global_name,
-        last_full_pull_at: new Date().toISOString(),
-        newest_message_id: all[all.length - 1].id,
-        oldest_message_id: all[0].id,
-        raw_message_count: all.length,
-        kept_message_count: kept.length,
-        dropped_message_count: dropped.length,
-        months_written: months
-      };
-      writeFileSync(join(logDir, `${friendSlug}.json`), JSON.stringify(watermark, null, 2));
-    }
+    writeWatermark({ months_written: monthsCompleted, status: 'complete' });
 
     log(`done. months=${months.length} written=${writtenCount} unchanged=${unchangedCount} kept=${kept.length} attachments=${totalAttachments} dropped=${dropped.length}`);
   } finally {

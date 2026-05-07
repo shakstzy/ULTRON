@@ -5,8 +5,8 @@
 // Worker traffic, unlike window-level fetch monkeypatch).
 
 import { chromium } from 'patchright';
-import { chmod, mkdir } from 'node:fs/promises';
-import { existsSync, readFileSync, writeFileSync, unlinkSync } from 'node:fs';
+import { mkdir } from 'node:fs/promises';
+import { existsSync, readFileSync, writeFileSync, unlinkSync, openSync, writeSync, closeSync } from 'node:fs';
 import { join } from 'node:path';
 
 const PROFILE_DIR = process.env.DISCORD_PROFILE_DIR || `${process.env.HOME}/ULTRON/_credentials/browser-profiles/discord`;
@@ -22,16 +22,25 @@ function isAlive(pid) {
 }
 
 function acquirePidfile() {
-  if (existsSync(PIDFILE)) {
-    const old = parseInt(readFileSync(PIDFILE, 'utf8').trim(), 10);
-    if (old && isAlive(old)) {
-      throw new Error(`Profile locked by pid ${old}. Wait or kill it.`);
+  // Atomic create-or-fail. If the pidfile already exists from a dead run,
+  // unlink it once and retry; if it's owned by a live pid, refuse.
+  for (let tries = 0; tries < 2; tries++) {
+    try {
+      const fd = openSync(PIDFILE, 'wx');
+      writeSync(fd, String(process.pid));
+      closeSync(fd);
+      process.on('exit', releasePidfile);
+      process.on('SIGINT', () => { releasePidfile(); process.exit(130); });
+      process.on('SIGTERM', () => { releasePidfile(); process.exit(143); });
+      return;
+    } catch (e) {
+      if (e.code !== 'EEXIST') throw e;
+      const old = parseInt(readFileSync(PIDFILE, 'utf8').trim(), 10);
+      if (old && isAlive(old)) throw new Error(`Profile locked by pid ${old}. Wait or kill it.`);
+      try { unlinkSync(PIDFILE); } catch (_) {}
     }
   }
-  writeFileSync(PIDFILE, String(process.pid));
-  process.on('exit', releasePidfile);
-  process.on('SIGINT', () => { releasePidfile(); process.exit(130); });
-  process.on('SIGTERM', () => { releasePidfile(); process.exit(143); });
+  throw new Error('Could not acquire pidfile after retry');
 }
 
 function releasePidfile() {
@@ -114,8 +123,7 @@ export async function launchContext({ force = false, visible = false } = {}) {
     throw err;
   }
 
-  await mkdir(PROFILE_DIR, { recursive: true });
-  try { await chmod(PROFILE_DIR, 0o700); } catch (_) {}
+  await mkdir(PROFILE_DIR, { recursive: true, mode: 0o700 });
   acquirePidfile();
 
   const windowArgs = visible
@@ -157,17 +165,13 @@ export async function launchContext({ force = false, visible = false } = {}) {
   const cdp = await context.newCDPSession(page);
   await cdp.send('Network.enable');
   let capturedToken = null;
-  let lastCaptureAt = 0;
   cdp.on('Network.requestWillBeSent', (e) => {
     try {
       const url = e?.request?.url || '';
       if (url.indexOf('discord.com/api/') === -1) return;
       const headers = e.request.headers || {};
       const auth = headers.Authorization || headers.authorization;
-      if (auth && typeof auth === 'string' && auth.length > 20) {
-        capturedToken = auth;
-        lastCaptureAt = Date.now();
-      }
+      if (auth && typeof auth === 'string' && auth.length > 20) capturedToken = auth;
     } catch (_) {}
   });
 
@@ -176,7 +180,6 @@ export async function launchContext({ force = false, visible = false } = {}) {
     page,
     cdp,
     getCapturedToken: () => capturedToken,
-    getLastCaptureAt: () => lastCaptureAt,
     async close() {
       try { await snapshotStorageState(context); } catch (_) {}
       try { await context.close(); } finally { releasePidfile(); }

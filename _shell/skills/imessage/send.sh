@@ -57,35 +57,81 @@ fi
 # URL scheme pre-fills both recipients AND body, so we just need to press Return.
 # No body-typing keystrokes — eliminates the long-text / special-char / focus-race fragility.
 if [[ -n "$NEW_GROUP" ]]; then
-  # macOS imessage:// URL scheme takes comma-separated addresses in a single param,
-  # not multiple addresses= params. Reject empty input.
-  ADDR_LIST=""
+  # FIND-OR-CREATE semantics: if a group with exactly these participants already
+  # exists (any service binding), reuse it. Only create a new chat if none matches.
+  # This prevents Messages.app from spawning duplicate groups across iMessage/RCS/SMS
+  # variants when the participant set is already known.
+  RECIPIENTS=()
   IFS=',' read -ra TO_ARR <<<"$NEW_GROUP"
   for r in "${TO_ARR[@]}"; do
     r=$(echo "$r" | xargs)
-    [[ -z "$r" ]] && continue
-    [[ -n "$ADDR_LIST" ]] && ADDR_LIST+=","
-    ADDR_LIST+="$r"
+    [[ -z "$r" ]] && RECIPIENTS+=() || RECIPIENTS+=("$r")
   done
-  [[ -z "$ADDR_LIST" ]] && die "--new-group needs at least one recipient"
-  URL="imessage:?addresses=$(urlenc "$ADDR_LIST")&body=$(urlenc "$TEXT")"
+  [[ ${#RECIPIENTS[@]} -eq 0 ]] && die "--new-group needs at least one recipient"
 
-  echo "send.sh: opening $URL" >&2
+  # Build needles list (digit tails for phones, full string for emails) for AppleScript match.
+  EXPECTED_COUNT=${#RECIPIENTS[@]}
+  NEEDLES=""
+  for r in "${RECIPIENTS[@]}"; do
+    if [[ "$r" == *"@"* ]]; then n="$r"; else n=$(digits_tail "$r"); fi
+    NEEDLES+="$n|"
+  done
+  ESC_NEEDLES=$(esc "${NEEDLES%|}")
+
+  # Step 1: search for an existing chat with exactly this participant set.
+  EXISTING=$(osascript 2>/dev/null <<OSA || true
+tell application "Messages"
+  set needle_str to "$ESC_NEEDLES"
+  set AppleScript's text item delimiters to "|"
+  set needles to text items of needle_str
+  set AppleScript's text item delimiters to ""
+  set expected to $EXPECTED_COUNT
+  repeat with c in chats
+    try
+      if (count of participants of c) is expected then
+        set found to 0
+        repeat with p in participants of c
+          set h to handle of p as string
+          repeat with n in needles
+            if h contains (n as string) then
+              set found to found + 1
+              exit repeat
+            end if
+          end repeat
+        end repeat
+        if found is expected then
+          send $PAYLOAD_KIND to c
+          return "ok"
+        end if
+      end if
+    end try
+  end repeat
+  return "no-chat"
+end tell
+OSA
+)
+  if [[ "$EXISTING" == "ok" ]]; then
+    echo '{"handoff":"ok","path":"group-existing","note":"reused existing chat with this participant set"}'
+    exit 0
+  fi
+
+  # Step 2: no match — create the group via URL scheme + Return.
+  ADDR_LIST=$(IFS=','; echo "${RECIPIENTS[*]}")
+  URL="imessage:?addresses=$(urlenc "$ADDR_LIST")&body=$(urlenc "$TEXT")"
+  echo "send.sh: no existing group with these participants; opening $URL" >&2
   open "$URL"
-  # Compose window load + recipient resolution can take ~1.5s for groups.
-  # After body+addresses pre-fill, Return sends.
   ERR=$(osascript 2>&1 <<'OSA'
 tell application "Messages" to activate
 delay 1.5
 tell application "System Events" to key code 36
 OSA
 )
-  if [[ -z "$ERR" ]]; then
-    echo '{"handoff":"ok","path":"new-group"}'
-    exit 0
+  if [[ -n "$ERR" ]]; then
+    printf '{"handoff":"error","path":"group-create","error":"%s"}\n' "$(esc "$ERR")"
+    exit 3
   fi
-  printf '{"handoff":"error","path":"new-group","error":"%s"}\n' "$(esc "$ERR")"
-  exit 3
+  echo '{"handoff":"ok","path":"group-created","note":"created new group via URL scheme"}'
+  exit 0
 fi
 
 # ─── Mode: existing group by name ────────────────────────────────────────────
@@ -119,54 +165,16 @@ OSA
   exit 3
 fi
 
-# ─── Mode: existing group by participant set (--to comma-separated) ──────────
+# ─── Mode: multi-recipient via --to "+1,+2,+3" → delegates to find-or-create ─
+# This is identical semantics to --new-group; we route through that block by
+# re-execing ourselves with the right flag. Keeps one canonical code path for
+# group dedupe.
 if [[ "$TO" == *","* ]]; then
-  IFS=',' read -ra TO_ARR <<<"$TO"
-  EXPECTED_COUNT=${#TO_ARR[@]}
-  NEEDLES=""
-  for r in "${TO_ARR[@]}"; do
-    r=$(echo "$r" | xargs)
-    if [[ "$r" == *"@"* ]]; then n="$r"; else n=$(digits_tail "$r"); fi
-    NEEDLES+="$n|"
-  done
-  ESC_NEEDLES=$(esc "${NEEDLES%|}")
-  RESULT=$(osascript 2>/dev/null <<OSA || true
-tell application "Messages"
-  set needle_str to "$ESC_NEEDLES"
-  set AppleScript's text item delimiters to "|"
-  set needles to text items of needle_str
-  set AppleScript's text item delimiters to ""
-  set expected to $EXPECTED_COUNT
-  repeat with c in chats
-    try
-      if (count of participants of c) is expected then
-        set found to 0
-        repeat with p in participants of c
-          set h to handle of p as string
-          repeat with n in needles
-            if h contains (n as string) then
-              set found to found + 1
-              exit repeat
-            end if
-          end repeat
-        end repeat
-        if found is expected then
-          send $PAYLOAD_KIND to c
-          return "ok"
-        end if
-      end if
-    end try
-  end repeat
-  return "no-chat"
-end tell
-OSA
-)
-  if [[ "$RESULT" == "ok" ]]; then
-    echo '{"handoff":"ok","path":"group-by-participants"}'
-    exit 0
+  if [[ -n "$FILE" ]]; then
+    exec "$0" --new-group "$TO" --file "$FILE"
+  else
+    exec "$0" --new-group "$TO" --text "$TEXT"
   fi
-  echo '{"handoff":"error","path":"group-by-participants","reason":"no group chat with exactly these participants"}'
-  exit 3
 fi
 
 # ─── Mode: 1:1 (existing chat, then iMessage buddy fallback) ─────────────────

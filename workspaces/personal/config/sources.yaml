@@ -3990,6 +3990,10 @@ sources:
   manual:
     watch_path: raw/manual/_inbox/
     after_ingest: move_to_dated_subdir
+  granola:
+    folders:
+      - PERSONAL
+
 global_settings:
   attachments_inline: true
   vision_model: sonnet

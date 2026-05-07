@@ -70,27 +70,27 @@ This is intentionally simpler than QUANTUM's `macos-contacts-imessage` skill (wh
 ~/ULTRON/_shell/skills/imessage/send.sh --to friend@icloud.com --text "ping"
 ~/ULTRON/_shell/skills/imessage/send.sh --to +15125551234 --file /abs/path/to/screenshot.png
 
-# Existing group, by name (works only for explicitly-named groups)
+# Group, by exact name (existing only — named groups in Messages.app)
 ~/ULTRON/_shell/skills/imessage/send.sh --group "ATX BABY🤙" --text "what's the move tonight"
 
-# Existing group, by participant set (works for unnamed groups too)
-~/ULTRON/_shell/skills/imessage/send.sh --to "+15125551234,+15129998877,+15125550000" --text "..."
-
-# NEW group — creates the group via URL scheme + keystroke send
-~/ULTRON/_shell/skills/imessage/send.sh --new-group "+15125551234,+15129998877" --text "first message creates the chat"
+# Group, by participant set — FIND-OR-CREATE. Same flag for both. Idempotent.
+~/ULTRON/_shell/skills/imessage/send.sh --new-group "+15125551234,+15129998877" --text "..."
+~/ULTRON/_shell/skills/imessage/send.sh --to "+15125551234,+15129998877" --text "..."   # alias for --new-group
 ```
 
-Emits JSON on stdout: `{"handoff":"ok","path":"chat"|"buddy"|"group-by-name"|"group-by-participants"|"new-group"}`. Exit 0 = handoff accepted. Delivery is verifiable only in Messages.app UI; this script does not claim delivery.
+Emits JSON on stdout: `{"handoff":"ok","path":"chat"|"buddy"|"group-by-name"|"group-existing"|"group-created"}`. Exit 0 = handoff accepted. Delivery is verifiable only in Messages.app UI; this script does not claim delivery.
 
-## Group chat support
+## Group chat support — find-or-create semantics
 
-**Send to existing group:** AppleScript `send X to chat` preserves the chat's existing service binding, so a mixed iMessage+Android group (RCS or SMS) routes correctly without the caller knowing which. Use `--group "<name>"` for named groups or `--to "<h1>,<h2>,<h3>"` to match by participant set (works for unnamed groups; recipient count must match exactly).
+**One canonical chat per participant set.** `--new-group` (and the `--to "h1,h2,..."` alias) first scans for an existing chat with EXACTLY this participant set across any service binding (iMessage / RCS / SMS). If one exists, the message routes through it. Only if no match exists does the script create a new chat via the `imessage:?addresses=...&body=...` URL scheme. This prevents Messages.app from spawning duplicate iMessage / RCS / SMS variants when the participant set is already known.
 
-**Create NEW group:** Messages.app dictionary has no `make new chat` command, so we use the `imessage:?addresses=...&body=...` URL scheme: `open` pre-fills a compose window with the recipients AND the body, then one System Events keystroke (Return) sends. Messages auto-creates the group on first send. Caveats:
+**Service binding for groups:** AppleScript `send X to chat` preserves the chat's existing service binding, so mixed iMessage+Android groups (RCS or SMS) route correctly without the caller knowing which.
+
+**New-group creation caveats** (only fires when no existing match):
 - Requires **Accessibility** permission for the parent process (System Settings → Privacy & Security → Accessibility).
-- The single Return keystroke goes to the frontmost app, so Messages must end up frontmost. The script `activate`s it; a focus-stealing app racing for foreground would eat it.
+- The single Return keystroke goes to the frontmost app — script `activate`s Messages, but a focus-stealing app racing for foreground would eat it.
 - Verify the first send in Messages.app UI — handoff is not delivery.
-- For groups you'll send to repeatedly, create once with `--new-group` (or by hand), then use `--group` / `--to` for every subsequent send.
+- Mixed-service participants (one Android in an otherwise-iMessage group) can cause Messages to materialize TWO parallel chats (iMessage + SMS/RCS variants) on initial send. Once both exist, future `--new-group` calls reuse whichever the chat-iterator finds first; the duplicate must be deleted manually in Messages.app.
 
 ## Python consumer surface
 

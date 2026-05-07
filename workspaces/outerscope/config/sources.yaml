@@ -8,6 +8,10 @@ sources:
       - id: 1aQen7BupLIHLA_Dvbo4FN34-ZxW0HWWE
         name: INCLUSIVELAYER
 
+  granola:
+    folders:
+      - OUTERSCOPE
+
 global_settings:
   attachments_inline: true
   vision_model: sonnet

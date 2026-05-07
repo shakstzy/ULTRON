@@ -17,6 +17,10 @@ sources:
             - "label:SPAM"
             - "label:TRASH"
 
+  granola:
+    folders:
+      - SEEDBOX
+
 global_settings:
   attachments_inline: true
   vision_model: sonnet

@@ -18,6 +18,10 @@ sources:
     watch_path: raw/manual/_inbox/
     after_ingest: move_to_dated_subdir
 
+  granola:
+    folders:
+      - SYNAPSE
+
 global_settings:
   attachments_inline: true
   vision_model: sonnet

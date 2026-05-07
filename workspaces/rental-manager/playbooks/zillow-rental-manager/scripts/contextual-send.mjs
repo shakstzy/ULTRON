@@ -113,56 +113,23 @@ Length: 1-4 short sentences typically. Match the energy of their last message.
 OUTPUT: just the reply body. No quotes around it. No "Hi <name>!" greeting required if the conversation is mid-stream.`;
 }
 
-// Route through cloud-llm so we get gemini-account cycling for free
-// (multiple Workspace accounts share the call volume). On every account
-// exhausted, fall back to `claude -p sonnet` — eats the Max weekly cap
-// but keeps the run alive. Agent-learning 2026-05-06 confirms this is
-// the right pattern for batch LLM jobs >10 items.
-function cloudLlmAsk(prompt, { timeoutMs = 120_000 } = {}) {
-  const py = [
-    "import sys",
-    "sys.path.insert(0, '/Users/shakstzy/ULTRON/_shell/skills/cloud-llm')",
-    "from client import ask_text, CloudLLMUnreachable",
-    "import json",
-    "try:",
-    "    res = ask_text(sys.stdin.read())",
-    "    # cloud-llm.ask_text returns {'engine','account','output'} on success.",
-    "    text = res.get('output') if isinstance(res, dict) else res",
-    "    print(json.dumps({'ok': True, 'engine': res.get('engine') if isinstance(res, dict) else 'gemini', 'text': text or ''}))",
-    "except CloudLLMUnreachable as e:",
-    "    print(json.dumps({'ok': False, 'reason': 'gemini-exhausted', 'detail': str(e)}))",
-    "    sys.exit(2)",
-    "except Exception as e:",
-    "    print(json.dumps({'ok': False, 'reason': 'cloud-llm-error', 'detail': str(e)}))",
-    "    sys.exit(3)"
-  ].join('\n');
-  const r = spawnSync('python3', ['-c', py], {
+// Direct claude -p sonnet for the drafting. Gemini is reserved for visual
+// tasks per Adithya 2026-05-06 (claude is the better writer for voice +
+// style; gemini was burning prompt routing on a task it's not best at).
+// `claude -p` reads the prompt from argv or stdin and prints the response
+// to stdout. Eats the Max weekly cap; revisit if we hit it.
+function claudeAsk(prompt, { timeoutMs = 180_000 } = {}) {
+  const r = spawnSync('claude', ['-p', '--model', 'sonnet'], {
     input: prompt,
     encoding: 'utf8',
     timeout: timeoutMs,
     maxBuffer: 16 * 1024 * 1024
   });
-  // Try to parse stdout regardless of status — cloud-llm prints JSON either way.
-  let parsed = null;
-  try { parsed = JSON.parse((r.stdout || '').trim().split(/\r?\n/).pop() || ''); } catch (_) {}
-
-  if (r.status === 0 && parsed?.ok && parsed.text) {
-    return { engine: parsed.engine || 'gemini', text: parsed.text.trim() };
+  if (r.status !== 0 || !r.stdout) {
+    const detail = (r.stderr || r.error?.message || `exit=${r.status}`).slice(0, 500);
+    throw new Error(`claude failed: ${detail}`);
   }
-  // Gemini chain exhausted (or failed). Fall back to claude sonnet.
-  const failureDetail = parsed?.detail || r.stderr || `exit=${r.status}`;
-  console.error(`[cloud-llm] ${parsed?.reason || 'failed'}: ${String(failureDetail).slice(0, 200)}`);
-  console.error(`[cloud-llm] falling back to claude -p sonnet`);
-  const r2 = spawnSync('claude', ['-p', '--model', 'sonnet'], {
-    input: prompt,
-    encoding: 'utf8',
-    timeout: timeoutMs,
-    maxBuffer: 16 * 1024 * 1024
-  });
-  if (r2.status !== 0 || !r2.stdout) {
-    throw new Error(`cloud-llm AND sonnet fallback both failed. cloud-llm: ${failureDetail}; sonnet: ${(r2.stderr || 'no stderr').slice(0, 200)}`);
-  }
-  return { engine: 'claude-sonnet', text: r2.stdout.trim() };
+  return { engine: 'claude-sonnet', text: r.stdout.trim() };
 }
 
 function loadAllThreads() {
@@ -212,10 +179,10 @@ async function main() {
     let body, engine;
     try {
       const prompt = buildPrompt(t);
-      const res = cloudLlmAsk(prompt, { timeoutMs: 120_000 });
+      const res = claudeAsk(prompt, { timeoutMs: 180_000 });
       body = res.text;
       engine = res.engine;
-      if (!body) throw new Error('cloud-llm returned empty body');
+      if (!body) throw new Error('claude returned empty body');
     } catch (e) {
       summary.failed++;
       writeFileSync(join(DRAFTS_DIR, `${t.cid}-error.json`), JSON.stringify({ cid: t.cid, error: e.message }, null, 2));

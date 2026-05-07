@@ -52,4 +52,14 @@ Default ULTRON voice. Numbers verbatim. Comps cited by source (Redfin / Zillow /
 
 ## Sources
 
-Declared in `config/sources.yaml`. Cross-source routing in `_shell/docs/source-routing.md`. Sources today: gmail (real-estate-labeled threads from Adithya's primary mailbox), Redfin / Zillow scrapes via the future ULTRON-local `real-estate` skill, manual notes.
+Declared in `config/sources.yaml`. Cross-source routing in `_shell/docs/source-routing.md`. Sources today: gmail (real-estate-labeled threads from Adithya's primary mailbox), Redfin / Zillow / Travis CAD via the `real-estate` skill at `skills/real-estate/` (symlinked from `~/QUANTUM/_core/skills/real-estate/`), manual notes.
+
+## Property research workflow
+
+For any property prospect:
+
+```bash
+~/.claude/skills/real-estate/re lookup "<address>" --merged-only
+```
+
+Drop the JSON into a new page using `wiki/_templates/property-research.md` as the starting point. Use `re rent-estimate "<address>"` for rental comps and `re cad lookup "<address>"` for owner / appraised value when the address is in Travis County.

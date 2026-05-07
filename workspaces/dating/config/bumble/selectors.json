@@ -148,20 +148,8 @@
     "alt": [],
     "last_verified": null
   },
-  "missed_match_modal": {
-    "_note": "Bumble's 'You missed!' / 'Did you mean to swipe right?' prompt that surfaces after a pass when their algo thinks we mis-passed. Not observed live; selector + text fallback. swipe.mjs also runs an innerText regex scan as a durable fallback. Update via discover-dom.mjs after first sighting.",
-    "selector": "[data-qa-role*='missed'], [data-qa-role*='backtrack'], [data-qa-role*='reconsider']",
-    "alt": ["[class*='missed-match']", "[class*='reconsider']", "[class*='backtrack-popup']"],
-    "last_verified": null
-  },
-  "missed_match_backtrack_button": {
-    "_note": "CTA inside the missed-match modal that undoes the pass. Likely text 'Backtrack', 'Take another look', or 'Yes'. swipe.mjs falls back to rewind_button if this isn't found.",
-    "selector": "[data-qa-role*='backtrack-confirm'], [data-qa-role*='missed-confirm']",
-    "alt": ["button:has-text('Backtrack')", "button:has-text('Take another look')", "[aria-label*='Backtrack']"],
-    "last_verified": null
-  },
   "rewind_button": {
-    "_note": "Floating bottom-left << rewind button. Premium feature, always available. Used as fallback when the missed-match modal lacks an inline backtrack CTA.",
+    "_note": "Premium << rewind button. swipe.mjs clicks this after detecting Bumble's 'You missed!' / 'Did you mean to swipe right?' text via regex scan. Modal CSS not yet verified; we rely on text + this single click target. Update via discover-dom.mjs after first sighting.",
     "selector": "[data-qa-role='encounters-action-rewind']",
     "alt": ["[aria-label*='Rewind']", "[aria-label*='Backtrack']", "[data-qa-role*='rewind']"],
     "last_verified": null

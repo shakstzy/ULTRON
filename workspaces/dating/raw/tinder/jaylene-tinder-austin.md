@@ -8,7 +8,7 @@ person_id: null
 phone: null
 status: "new"
 first_seen: "2026-04-30T05:13:14.382Z"
-last_activity: "2026-04-30T05:13:14.382Z"
+last_activity: "2026-05-07T01:59:18.029Z"
 last_scrape: "2026-05-01T07:43:05.063Z"
 previous_slugs: []
 last_profile_diff: "2026-05-01T04:22:52.765Z"
@@ -86,8 +86,10 @@ last_profile_diff: "2026-05-01T04:22:52.765Z"
 ## Conversation
 
 (no messages yet)
+**you** 2026-05-07 01:59 the saigon art shop says grown up. the "i'm just a girl" bio says otherwise. which one wins
 
 ## Outbound log
 
 (none)
 - 2026-05-06 01:06 queued_auto (auto, opener) [draft:d5c38dcf] lint=true "the saigon art shop says grown up. the \"i'm just a girl\" bio says otherwise. which one wins"
+- 2026-05-07 01:59 sent (auto, auto-or-hitl) [draft:d5c38dcf] lint=true "the saigon art shop says grown up. the \"i'm just a girl\" bio says otherwise. which one wins"

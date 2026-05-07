@@ -23,7 +23,14 @@ export function attachJwtCapture(context) {
     lastPostCapturedAt: 0,
     // Same but any method — fallback if we never see a POST.
     lastAnyHeaders: null,
-    lastAnyCapturedAt: 0
+    lastAnyCapturedAt: 0,
+    // Most recent /user response body, captured directly from the page's own
+    // wallet pings. Bypasses the "captured JWT goes stale within seconds"
+    // problem: the page refreshes Clerk tokens via React context and we
+    // can't see that, but we CAN see the responses to the page's own /user
+    // GETs and parse them. This is how getWallet stays reliable.
+    lastUserBody: null,
+    lastUserCapturedAt: 0
   };
   context.on('request', req => {
     try {
@@ -45,7 +52,33 @@ export function attachJwtCapture(context) {
       }
     } catch (_) {}
   });
+  context.on('response', async resp => {
+    try {
+      const u = new URL(resp.url());
+      if (u.hostname !== 'fnf.higgsfield.ai') return;
+      if (u.pathname !== '/user') return;
+      if (resp.request().method() !== 'GET') return;
+      if (!resp.ok()) return;
+      const body = await resp.json().catch(() => null);
+      if (body && typeof body === 'object') {
+        state.lastUserBody = body;
+        state.lastUserCapturedAt = Date.now();
+      }
+    } catch (_) {}
+  });
   return state;
+}
+
+// Wait until the page emits at least one /user response. Higgsfield tool pages
+// fetch /user on initial load and again when the History panel opens, so this
+// usually returns quickly. Returns { ok, body } or { ok:false, reason }.
+export async function waitForUserBody(captureState, { timeoutMs = 30000 } = {}) {
+  const start = Date.now();
+  while (Date.now() - start < timeoutMs) {
+    if (captureState.lastUserBody) return { ok: true, body: captureState.lastUserBody };
+    await new Promise(r => setTimeout(r, 250));
+  }
+  return { ok: false, reason: 'no-/user-response-observed' };
 }
 
 // Extract DataDome/fingerprint-like headers from a captured request's header set.

@@ -40,11 +40,20 @@ export function parseCostCap(argv) {
 }
 
 export async function getWallet(page, jwtCapture) {
+  // PRIMARY PATH: read the page's own /user response, captured by jwt.mjs's
+  // response listener. Manual replay against /user with a captured JWT 401s
+  // because Clerk session tokens have a short TTL — by the time we replay the
+  // captured token, the page has already silently refreshed it via React
+  // context and the old one is invalid. Reading the page's own response body
+  // sidesteps the entire refresh dance.
+  if (jwtCapture?.lastUserBody) {
+    const j = jwtCapture.lastUserBody;
+    return { subscription_credits: j.subscription_credits, package_credits: j.package_credits, has_unlim: j.has_unlim, email: j.email, plan_type: j.plan_type, workspace_id: j.workspace_id, user_id: j.id };
+  }
+  // FALLBACK: manual replay. Useful only if the page hasn't called /user yet
+  // (rare — the wallet pill in the UI calls it on every tool-page load).
   let t;
   try { t = await getFreshJwt(page, jwtCapture); } catch (_) { return null; }
-  // Use Playwright's context-level request API (not page.evaluate + fetch).
-  // patchright runs evaluate in isolated world, where in-page fetch is flaky.
-  // context.request uses the context's cookies + gets past that.
   try {
     const r = await page.request.get('https://fnf.higgsfield.ai/user', {
       headers: replayHeaders(jwtCapture, t)

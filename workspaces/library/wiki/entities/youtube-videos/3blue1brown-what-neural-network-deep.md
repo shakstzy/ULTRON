@@ -23,9 +23,9 @@ mentioned_concepts:
 - activation-function
 mentioned_books: []
 slug: 3blue1brown-what-neural-network-deep
-read_status: ingested
-delivered_at: null
-delivery_count: 0
+read_status: delivered
+delivered_at: '2026-05-07'
+delivery_count: 1
 ingested_at: '2026-05-07'
 last_touched: '2026-05-07'
 bite_size_minutes: 2

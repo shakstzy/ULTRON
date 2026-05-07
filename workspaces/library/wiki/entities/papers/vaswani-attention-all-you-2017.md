@@ -28,9 +28,9 @@ mentioned_concepts:
 - sequence-transduction
 mentioned_books: []
 slug: vaswani-attention-all-you-2017
-read_status: ingested
-delivered_at: null
-delivery_count: 0
+read_status: delivered
+delivered_at: '2026-05-07'
+delivery_count: 1
 ingested_at: '2026-05-07'
 last_touched: '2026-05-07'
 bite_size_minutes: 2

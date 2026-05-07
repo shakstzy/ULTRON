@@ -17,7 +17,7 @@
 	<array>
 		<string>/bin/bash</string>
 		<string>-c</string>
-		<string>flock -n /tmp/com.adithya.ultron.graphify-personal.lock /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh graphify personal</string>
+		<string>flock -n /tmp/com.adithya.ultron.graphify-personal.lock /Users/shakstzy/ULTRON/_shell/bin/cron-runner.py com.adithya.ultron.graphify-personal -- /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh graphify personal</string>
 	</array>
 	<key>RunAtLoad</key>
 	<false/>

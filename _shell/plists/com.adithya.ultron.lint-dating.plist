@@ -17,7 +17,7 @@
 	<array>
 		<string>/bin/bash</string>
 		<string>-c</string>
-		<string>flock -n /tmp/com.adithya.ultron.lint-dating.lock /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh lint dating</string>
+		<string>flock -n /tmp/com.adithya.ultron.lint-dating.lock /Users/shakstzy/ULTRON/_shell/bin/cron-runner.py com.adithya.ultron.lint-dating -- /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh lint dating</string>
 	</array>
 	<key>RunAtLoad</key>
 	<false/>

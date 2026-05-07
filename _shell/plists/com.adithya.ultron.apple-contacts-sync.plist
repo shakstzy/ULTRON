@@ -17,7 +17,7 @@
 	<array>
 		<string>/bin/bash</string>
 		<string>-c</string>
-		<string>flock -n /tmp/com.adithya.ultron.apple-contacts-sync.lock /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh apple-contacts-sync</string>
+		<string>flock -n /tmp/com.adithya.ultron.apple-contacts-sync.lock /Users/shakstzy/ULTRON/_shell/bin/cron-runner.py com.adithya.ultron.apple-contacts-sync -- /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh apple-contacts-sync</string>
 	</array>
 	<key>RunAtLoad</key>
 	<false/>

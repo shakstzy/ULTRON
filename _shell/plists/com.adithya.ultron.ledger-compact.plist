@@ -17,7 +17,7 @@
 	<array>
 		<string>/bin/bash</string>
 		<string>-c</string>
-		<string>flock -n /tmp/com.adithya.ultron.ledger-compact.lock /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh ledger-compact</string>
+		<string>flock -n /tmp/com.adithya.ultron.ledger-compact.lock /Users/shakstzy/ULTRON/_shell/bin/cron-runner.py com.adithya.ultron.ledger-compact -- /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh ledger-compact</string>
 	</array>
 	<key>RunAtLoad</key>
 	<false/>

@@ -17,7 +17,7 @@
 	<array>
 		<string>/bin/bash</string>
 		<string>-c</string>
-		<string>flock -n /tmp/com.adithya.ultron.ingest-imessage-default.lock /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh ingest-source imessage default</string>
+		<string>flock -n /tmp/com.adithya.ultron.ingest-imessage-default.lock /Users/shakstzy/ULTRON/_shell/bin/cron-runner.py com.adithya.ultron.ingest-imessage-default -- /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh ingest-source imessage default</string>
 	</array>
 	<key>RunAtLoad</key>
 	<false/>

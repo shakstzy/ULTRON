@@ -17,7 +17,7 @@
 	<array>
 		<string>/bin/bash</string>
 		<string>-c</string>
-		<string>flock -n /tmp/com.adithya.ultron.graphify-supermerge.lock /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh graphify-supermerge</string>
+		<string>flock -n /tmp/com.adithya.ultron.graphify-supermerge.lock /Users/shakstzy/ULTRON/_shell/bin/cron-runner.py com.adithya.ultron.graphify-supermerge -- /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh graphify-supermerge</string>
 	</array>
 	<key>RunAtLoad</key>
 	<false/>

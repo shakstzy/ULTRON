@@ -17,7 +17,7 @@
 	<array>
 		<string>/bin/bash</string>
 		<string>-c</string>
-		<string>flock -n /tmp/com.adithya.ultron.lint-real-estate.lock /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh lint real-estate</string>
+		<string>flock -n /tmp/com.adithya.ultron.lint-real-estate.lock /Users/shakstzy/ULTRON/_shell/bin/cron-runner.py com.adithya.ultron.lint-real-estate -- /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh lint real-estate</string>
 	</array>
 	<key>RunAtLoad</key>
 	<false/>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Two swipe sessions per day, randomized within window. Lunch + evening, Adithya local time (CST).
+     Tighter caps than Tinder (50/day vs 100/day). Hand-written; orphan to schedule skill. -->
+<plist version="1.0">
+<dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>HOME</key><string>/Users/shakstzy</string>
+		<key>PATH</key><string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+		<key>ULTRON_ROOT</key><string>/Users/shakstzy/ULTRON</string>
+	</dict>
+	<key>Label</key><string>com.adithya.ultron.dating-bumble-swipe</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/bin/bash</string>
+		<string>-c</string>
+		<string>flock -n /tmp/com.adithya.ultron.dating-bumble-swipe.lock bash -c 'cd /Users/shakstzy/ULTRON/workspaces/dating/bot-bumble &amp;&amp; sleep $((RANDOM % 1800)) &amp;&amp; node scripts/swipe.mjs'</string>
+	</array>
+	<key>RunAtLoad</key><false/>
+	<key>StandardErrorPath</key><string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.dating-bumble-swipe.err.log</string>
+	<key>StandardOutPath</key><string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.dating-bumble-swipe.out.log</string>
+	<key>StartCalendarInterval</key>
+	<array>
+		<dict><key>Hour</key><integer>12</integer><key>Minute</key><integer>30</integer></dict>
+		<dict><key>Hour</key><integer>21</integer><key>Minute</key><integer>0</integer></dict>
+	</array>
+	<key>WorkingDirectory</key><string>/Users/shakstzy/ULTRON/workspaces/dating/bot-bumble</string>
+</dict>
+</plist>

@@ -29,3 +29,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 ### 2026-03-30T16:42:31.795Z - Claire Engler
 
 I'm a working professional with two jobs, but this is more than I would be able to afford. Is this price negotiable, and what would the utility costs be? Thank you in advance.
+
+### 2026-05-07T20:47:54.841Z - Owner (Adithya)
+
+hey Claire, pricing isn't really negotiable but I do have a range. the cheapest is a 3rd floor room with walk-in closet at $1000/mo (shared bath). utilities are a flat $100/mo per room and that covers water, electric, gas, and internet, so no surprises. if that fits the budget, happy to show you the place.

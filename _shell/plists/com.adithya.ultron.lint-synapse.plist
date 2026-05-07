@@ -12,25 +12,25 @@
 		<string>/Users/shakstzy/ULTRON</string>
 	</dict>
 	<key>Label</key>
-	<string>com.adithya.ultron.lint-property-management</string>
+	<string>com.adithya.ultron.lint-synapse</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>/bin/bash</string>
 		<string>-c</string>
-		<string>flock -n /tmp/com.adithya.ultron.lint-property-management.lock /Users/shakstzy/ULTRON/_shell/bin/cron-runner.py com.adithya.ultron.lint-property-management -- /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh lint property-management</string>
+		<string>flock -n /tmp/com.adithya.ultron.lint-synapse.lock /Users/shakstzy/ULTRON/_shell/bin/cron-runner.py com.adithya.ultron.lint-synapse -- /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh lint synapse</string>
 	</array>
 	<key>RunAtLoad</key>
 	<false/>
 	<key>StandardErrorPath</key>
-	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.lint-property-management.err.log</string>
+	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.lint-synapse.err.log</string>
 	<key>StandardOutPath</key>
-	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.lint-property-management.out.log</string>
+	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.lint-synapse.out.log</string>
 	<key>StartCalendarInterval</key>
 	<dict>
 		<key>Hour</key>
 		<integer>4</integer>
 		<key>Minute</key>
-		<integer>0</integer>
+		<integer>24</integer>
 	</dict>
 	<key>WorkingDirectory</key>
 	<string>/Users/shakstzy/ULTRON</string>

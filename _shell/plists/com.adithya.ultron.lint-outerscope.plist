@@ -12,25 +12,25 @@
 		<string>/Users/shakstzy/ULTRON</string>
 	</dict>
 	<key>Label</key>
-	<string>com.adithya.ultron.lint-health</string>
+	<string>com.adithya.ultron.lint-outerscope</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>/bin/bash</string>
 		<string>-c</string>
-		<string>flock -n /tmp/com.adithya.ultron.lint-health.lock /Users/shakstzy/ULTRON/_shell/bin/cron-runner.py com.adithya.ultron.lint-health -- /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh lint health</string>
+		<string>flock -n /tmp/com.adithya.ultron.lint-outerscope.lock /Users/shakstzy/ULTRON/_shell/bin/cron-runner.py com.adithya.ultron.lint-outerscope -- /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh lint outerscope</string>
 	</array>
 	<key>RunAtLoad</key>
 	<false/>
 	<key>StandardErrorPath</key>
-	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.lint-health.err.log</string>
+	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.lint-outerscope.err.log</string>
 	<key>StandardOutPath</key>
-	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.lint-health.out.log</string>
+	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.lint-outerscope.out.log</string>
 	<key>StartCalendarInterval</key>
 	<dict>
 		<key>Hour</key>
 		<integer>4</integer>
 		<key>Minute</key>
-		<integer>20</integer>
+		<integer>47</integer>
 	</dict>
 	<key>WorkingDirectory</key>
 	<string>/Users/shakstzy/ULTRON</string>

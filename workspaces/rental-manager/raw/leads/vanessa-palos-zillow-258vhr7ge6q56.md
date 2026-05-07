@@ -37,3 +37,7 @@ what time would work best tomorrow or day after? please contact me at 5126601911
 ### 2026-05-06T18:45:04.999Z - vanessa palos
 
 I am interested in this rental and would like to schedule a viewing. Please let me know when this would be possible.
+
+### 2026-05-07T20:47:21.548Z - Owner (Adithya)
+
+hey Vanessa, yes still available. 4 rooms open from $1000 to $1250, utilities are flat $100. what day this week works for you to come check it out?

@@ -45,3 +45,7 @@ I would like to schedule a tour.
 ### 2026-04-25T18:23:27.332Z - Kayla Hope Rangel
 
 I’m close by so anytime during the evening would work best
+
+### 2026-05-07T20:47:38.282Z - Owner (Adithya)
+
+hey Kayla, evenings work for me. how about tomorrow around 6:30? if not, name a day this week. pets are welcome btw, just lmk what kind. you can also call/text me at 5126601911.

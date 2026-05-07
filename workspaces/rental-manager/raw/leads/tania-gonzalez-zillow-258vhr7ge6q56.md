@@ -42,3 +42,7 @@ I would like to schedule a tour.
 ### 2026-04-24T05:29:51.240Z - Tania Gonzalez
 
 Tomorrow
+
+### 2026-05-07T20:48:23.941Z - Owner (Adithya)
+
+hey Tania, tomorrow works. what time? and parking is available as an add-on if you need it.

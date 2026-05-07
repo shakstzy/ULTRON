@@ -62,3 +62,7 @@ if you found something else, let me know, so I can remove you from my potential 
 ### 2026-03-09T19:30:54.080Z - Owner (Adithya)
 
 wanted to reping on the above, did you get a chance to tour the property
+
+### 2026-05-07T20:46:57.660Z - Owner (Adithya)
+
+hey brigido, still have rooms open if youre still looking. 3rd floor walk-in $1000, 2nd floor private bath $1200, 1st floor suite $1250, utilities flat $100/mo. let me know if you want to swing by and what day works.

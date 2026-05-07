@@ -47,3 +47,7 @@ what time would work best tomorrow or day after? please contact me at 5126601911
 ### 2026-03-23T22:43:17.829Z - Shawn Deghahni
 
 I could do tomorrow around 12 pm
+
+### 2026-05-07T20:47:59.009Z - Owner (Adithya)
+
+hey Shawn, are you still looking? rooms are still open if you want to come check it out. lmk a day that works and we can lock it in, or call me at 5126601911.

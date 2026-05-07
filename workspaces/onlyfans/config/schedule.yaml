@@ -6,8 +6,4 @@ workspace: onlyfans
 # and routing matrix populated. Manual ingest runs on demand via
 # `run-stage.sh ingest onlyfans`.
 
-workspace_jobs:
-  lint:
-    cron: "0 4 * * *"  # Daily 04:00
-
 # audit, weekly-review, graphify-supermerge live in _shell/config/global-schedule.yaml.

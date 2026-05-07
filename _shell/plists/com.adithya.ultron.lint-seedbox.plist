@@ -12,25 +12,25 @@
 		<string>/Users/shakstzy/ULTRON</string>
 	</dict>
 	<key>Label</key>
-	<string>com.adithya.ultron.lint-trading</string>
+	<string>com.adithya.ultron.lint-seedbox</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>/bin/bash</string>
 		<string>-c</string>
-		<string>flock -n /tmp/com.adithya.ultron.lint-trading.lock /Users/shakstzy/ULTRON/_shell/bin/cron-runner.py com.adithya.ultron.lint-trading -- /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh lint trading</string>
+		<string>flock -n /tmp/com.adithya.ultron.lint-seedbox.lock /Users/shakstzy/ULTRON/_shell/bin/cron-runner.py com.adithya.ultron.lint-seedbox -- /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh lint seedbox</string>
 	</array>
 	<key>RunAtLoad</key>
 	<false/>
 	<key>StandardErrorPath</key>
-	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.lint-trading.err.log</string>
+	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.lint-seedbox.err.log</string>
 	<key>StandardOutPath</key>
-	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.lint-trading.out.log</string>
+	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.lint-seedbox.out.log</string>
 	<key>StartCalendarInterval</key>
 	<dict>
 		<key>Hour</key>
 		<integer>4</integer>
 		<key>Minute</key>
-		<integer>0</integer>
+		<integer>49</integer>
 	</dict>
 	<key>WorkingDirectory</key>
 	<string>/Users/shakstzy/ULTRON</string>

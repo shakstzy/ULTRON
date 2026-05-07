@@ -12,9 +12,3 @@ sources:
     cron: "0 6 * * *"                # Daily 06:00 — health-labeled mail only
     accounts:
       - adithya.shak.kumar@gmail.com
-
-workspace_jobs:
-  lint:
-    cron: "20 4 * * *"               # Daily 04:20
-  graphify:
-    cron: "0 */12 * * *"             # Twice a day; less data than work workspaces

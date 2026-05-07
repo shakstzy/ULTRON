@@ -33,3 +33,7 @@ My husband and I are interested in your property. How many dogs do you allow and
 ### 2026-04-30T05:34:32.934Z - Angelita Torres
 
 My husband and I would like to schedule a tour.
+
+### 2026-05-07T20:48:03.167Z - Owner (Adithya)
+
+hey Angelita, dogs are welcome, no extra pet fee. for two people the 1st floor private suite ($1250, private bath + walk-in closet) or 2nd floor room with private bath ($1200) would be best. utilities flat $100/mo per room. what day works for you and your husband to swing by?

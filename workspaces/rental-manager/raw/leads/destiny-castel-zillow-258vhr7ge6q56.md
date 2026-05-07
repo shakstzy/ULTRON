@@ -40,3 +40,7 @@ I would like to schedule a tour.
 ### 2026-03-23T21:34:48.914Z - Owner (Adithya)
 
 what time would work best tomorrow or day after? please contact me at 5126601911
+
+### 2026-05-07T20:47:33.987Z - Owner (Adithya)
+
+hey Destiny, are you still looking? rooms are ready now. happy to set up a tour, just let me know what day works or give me a ring at 5126601911.

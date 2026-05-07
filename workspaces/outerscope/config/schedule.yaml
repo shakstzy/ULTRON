@@ -18,3 +18,9 @@ jobs:
     plist_label: com.adithya.ultron.lint-<workspace>
 
 # audit and weekly-review are global (cross-workspace), declared in _shell/plists/
+
+workspace_jobs:
+  lint:
+    cron: "47 4 * * *"
+  graphify:
+    cron: "0 */6 * * *"

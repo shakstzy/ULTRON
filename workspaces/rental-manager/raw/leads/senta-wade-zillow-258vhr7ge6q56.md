@@ -69,3 +69,7 @@ if you found something else, let me know, so I can remove you from my potential 
 ### 2026-03-09T19:31:06.717Z - Owner (Adithya)
 
 wanted to reping on the above, did you get a chance to tour the property
+
+### 2026-05-07T20:47:05.059Z - Owner (Adithya)
+
+hey Senta, checking in. did you ever get to come check out the place? if you're still looking, the rooms are ready to go and you can start the app here: https://www.zillow.com/renter-hub/applications/listing/258vhr7ge6q56/rental-application/?itc=rentalhdpapplynow

@@ -6,8 +6,10 @@ workspace: mosaic
 # Drive credentials wired. Then add: drive (hourly waking), granola
 # (every 6h on the :30).
 
+# audit, weekly-review, graphify-supermerge live in _shell/config/global-schedule.yaml.
+
 workspace_jobs:
   lint:
-    cron: "0 4 * * *"  # Daily 04:00
-
-# audit, weekly-review, graphify-supermerge live in _shell/config/global-schedule.yaml.
+    cron: "48 4 * * *"
+  graphify:
+    cron: "0 */6 * * *"

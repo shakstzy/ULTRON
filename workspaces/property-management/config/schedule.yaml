@@ -5,8 +5,4 @@ workspace: property-management
 # No source-driven ingest crons until source-routing.md is populated and
 # Zillow Rental Manager scrape skill is ported.
 
-workspace_jobs:
-  lint:
-    cron: "0 4 * * *"  # Daily 04:00
-
 # audit, weekly-review, graphify-supermerge live in _shell/config/global-schedule.yaml.

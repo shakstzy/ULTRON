@@ -12,19 +12,19 @@
 		<string>/Users/shakstzy/ULTRON</string>
 	</dict>
 	<key>Label</key>
-	<string>com.adithya.ultron.graphify-finance</string>
+	<string>com.adithya.ultron.graphify-sei</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>/bin/bash</string>
 		<string>-c</string>
-		<string>flock -n /tmp/com.adithya.ultron.graphify-finance.lock /Users/shakstzy/ULTRON/_shell/bin/cron-runner.py com.adithya.ultron.graphify-finance -- /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh graphify finance</string>
+		<string>flock -n /tmp/com.adithya.ultron.graphify-sei.lock /Users/shakstzy/ULTRON/_shell/bin/cron-runner.py com.adithya.ultron.graphify-sei -- /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh graphify sei</string>
 	</array>
 	<key>RunAtLoad</key>
 	<false/>
 	<key>StandardErrorPath</key>
-	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.graphify-finance.err.log</string>
+	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.graphify-sei.err.log</string>
 	<key>StandardOutPath</key>
-	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.graphify-finance.out.log</string>
+	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.graphify-sei.out.log</string>
 	<key>StartCalendarInterval</key>
 	<array>
 		<dict>
@@ -35,7 +35,19 @@
 		</dict>
 		<dict>
 			<key>Hour</key>
+			<integer>6</integer>
+			<key>Minute</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Hour</key>
 			<integer>12</integer>
+			<key>Minute</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Hour</key>
+			<integer>18</integer>
 			<key>Minute</key>
 			<integer>0</integer>
 		</dict>

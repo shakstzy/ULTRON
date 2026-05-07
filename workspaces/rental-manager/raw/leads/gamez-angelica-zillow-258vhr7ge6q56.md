@@ -45,3 +45,7 @@ I would like to schedule a tour.
 ### 2026-05-03T01:24:28.400Z - Gamez angelica
 
 I'm interested in your property.
+
+### 2026-05-07T20:47:29.885Z - Owner (Adithya)
+
+hey, still have rooms open. cheapest is $1000 for a 3rd floor room with walk-in closet (shared bath), $1200 for 2nd floor with private bath, $1250 for 1st floor private suite. utilities flat $100/mo. pets welcome. when do you want to come check it out?

@@ -38,3 +38,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 ### 2026-04-29T21:30:42.578Z - Charlotte Potter
 
 I would like to schedule a tour. I also have a German shepherd and she is super friendly and a sweet girl, but I did want to make a note of that in case that's a huge no straight off the bat!
+
+### 2026-05-07T20:47:25.738Z - Owner (Adithya)
+
+hey Charlotte, dogs are totally fine, German shepherd is welcome. there's a dog park nearby too. for one person + pup, the 1st floor private suite ($1250, private bath + walk-in closet) is probably your best bet. utilities flat $100/mo. what day works for you to come check it out?

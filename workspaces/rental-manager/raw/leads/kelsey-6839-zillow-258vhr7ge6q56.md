@@ -84,3 +84,7 @@ would you be able to do a two month lease to start
 ### 2026-04-09T17:32:57.952Z - Kelsey Graves
 
 Hey is the apt available
+
+### 2026-05-07T20:48:11.396Z - Owner (Adithya)
+
+hey Kelsey, sorry for the slow reply. yes the downstairs suite is still available. are you still good to move in? if so, let's get you on the books. you can call me at 5126601911 to coordinate next steps.

@@ -68,3 +68,7 @@ if you found something else, let me know, so I can remove you from my potential 
 ### 2026-03-09T19:31:39.121Z - Owner (Adithya)
 
 wanted to reping on the above, did you get a chance to tour the property
+
+### 2026-05-07T20:48:07.187Z - Owner (Adithya)
+
+hey Ruzanna, are you still looking? rooms still open and May 22 move-in works. if you and the others want to come check it out, lmk a day. you can also call me at 5126601911.

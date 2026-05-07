@@ -40,3 +40,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 ### 2026-04-29T05:14:46.278Z - Monica Galvan
 
 I would like to schedule a tour.
+
+### 2026-05-07T20:47:09.033Z - Owner (Adithya)
+
+hey Monica, happy to set up a tour. since it's two of you, I'd recommend the two 3rd floor rooms with walk-in closets at $1000 each, or the 2nd floor room with private bath at $1200. utilities are flat $100/mo per room. June 1 move-in works fine. what day this week or next can you swing by?

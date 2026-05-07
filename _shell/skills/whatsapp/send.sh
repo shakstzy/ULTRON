@@ -44,7 +44,8 @@ done
 [[ -n "$FILE" && ! -f "$FILE" ]] && die "file not found: $FILE"
 
 # ─── Pre-flight: bridge reachable? ─────────────────────────────────────────────
-HTTP_CODE=$(curl -sS -o /dev/null -w '%{http_code}' -m 3 -X POST "$BRIDGE_BASE/send" -d '{}' 2>/dev/null || echo "000")
+# Outside-the-subshell `||` so `set -e` doesn't kill us on curl's connect error.
+HTTP_CODE=$(curl -sS -o /dev/null -w '%{http_code}' -m 3 -X POST "$BRIDGE_BASE/send" -d '{}' 2>/dev/null) || HTTP_CODE="000"
 if [[ "$HTTP_CODE" == "000" ]]; then
   echo "send.sh: bridge unreachable at $BRIDGE_BASE — start the WhatsApp bridge daemon first" >&2
   exit 4
@@ -133,8 +134,10 @@ if sys.argv[3]: d["media_path"] = sys.argv[3]
 print(json.dumps(d))
 ' "$RECIPIENT" "$TEXT" "$FILE")
 
-RESP=$(curl -sS -m 30 -X POST -H 'Content-Type: application/json' -d "$PAYLOAD" "$BRIDGE_BASE/send")
-HTTP_CODE=$?
+RESP=$(curl -sS -m 30 -X POST -H 'Content-Type: application/json' -d "$PAYLOAD" "$BRIDGE_BASE/send" 2>&1) || {
+  echo "send.sh: bridge POST failed: $RESP" >&2
+  exit 4
+}
 
 # Extract success flag from the response
 SUCCESS=$(python3 -c '

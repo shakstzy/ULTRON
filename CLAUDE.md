@@ -60,4 +60,4 @@ If graph returns "not in the graph," continue down the global chain.
 
 Stages run via `_shell/bin/run-stage.sh <stage> [<workspace>]`. See `_shell/stages/<stage>/CONTEXT.md` per contract.
 
-Recurring jobs declared in `workspaces/<ws>/config/schedule.yaml` or `_shell/config/global-schedule.yaml`. Always invoke the `schedule` skill (`compile`/`load`/`unload`/`status`/`remove`) — never write plist XML or call `launchctl` directly. `load` requires explicit confirmation.
+Recurring jobs declared in `workspaces/<ws>/config/schedule.yaml` or `_shell/config/global-schedule.yaml`. Always invoke the `schedule` skill (`compile`/`load`/`unload`/`status`/`remove`) — never write plist XML or call `launchctl` directly. Schedule changes are ONE phase: edit yaml → compile → load (or unload+remove for retirements) → verify, no mid-pause. Crons only exist for workspaces with active routes/content; an empty workspace gets no lint/graphify cron.

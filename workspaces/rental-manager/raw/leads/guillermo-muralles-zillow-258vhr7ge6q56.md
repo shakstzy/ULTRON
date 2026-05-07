@@ -65,3 +65,7 @@ sure does today still work
 ### 2026-03-23T23:52:06.451Z - Owner (Adithya)
 
 feel free to give me a ring at 5126601911 we can coordinate
+
+### 2026-05-07T20:47:13.109Z - Owner (Adithya)
+
+hey Guillermo, are you still looking? if so, this Saturday or Sunday work for me, just lmk what time. you can also give me a ring at 5126601911 to coordinate.

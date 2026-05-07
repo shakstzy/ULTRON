@@ -6,11 +6,11 @@ city: "la"
 match_id: "zAhMACjIyOTA2OTQ2NzIIe-K7hQAAAAAgADTgBC-lRHqHmsdRCGLoW9oLMrSuucigI_ak-hBkk30"
 person_id: null
 phone: null
-status: "new"
-expires_at: "2026-05-05T03:29:45.270Z"
+status: "expired"
+expires_at: "2026-05-07T05:20:30.552Z"
 first_seen: "2026-05-04T03:29:45.278Z"
 last_activity: "2026-05-06T23:32:30.408Z"
-last_scrape: "2026-05-06T23:20:03.712Z"
+last_scrape: "2026-05-07T05:20:31.553Z"
 previous_slugs:
   - "aneela-bumble-austin"
 ---

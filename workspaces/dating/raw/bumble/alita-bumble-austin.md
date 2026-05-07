@@ -7,31 +7,40 @@ match_id: "zAhMACjIzNDg0MTAwNTEIe-K7hQAAAAAgvo8GcblQLzLn09LCL0CwX7z66GQREPQR8j4b
 person_id: null
 phone: null
 status: "expired"
-expires_at: "2026-05-06T23:17:41.466Z"
+expires_at: "2026-05-07T05:20:23.502Z"
 first_seen: "2026-05-04T03:23:54.988Z"
-last_activity: "2026-05-05T00:40:16.081Z"
-last_scrape: "2026-05-06T23:17:42.468Z"
+last_activity: "2026-05-07T05:20:24.504Z"
+last_scrape: "2026-05-07T05:20:24.503Z"
 previous_slugs: []
+last_profile_diff: "2026-05-07T05:20:24.503Z"
 ---
 
 ## Profile
 
-- age: 23
-- height: "5' 3''"
-- height_cm: 160
-- photo_verified: true
-- lifestyle_badges: ["5' 3''","Sometimes","Undergraduate degree","Socially","Woman","Relationship","Open to kids","Cancer","Liberal","Christian"]
-- prompts.0.q: "What makes a relationship great is"
-- prompts.0.a: "Open communication"
-- prompts.1.q: "To me, self-care is"
-- prompts.1.a: "Binging a new show and getting Açaí"
-- prompts.2.q: "My favorite way to do nothing is"
-- prompts.2.a: "Doom scrolling"
-- photos_count: 4
+- photos_count: 0
 
 ## Profile changes
 
-(none yet)
+```json profile-diff
+{
+  "ts": "2026-05-07T05:20:24.503Z",
+  "added": {},
+  "removed": {
+    "age": 23,
+    "height_cm": 160
+  },
+  "changed": {
+    "photo_verified": {
+      "from": true,
+      "to": false
+    },
+    "photos_count": {
+      "from": 4,
+      "to": 0
+    }
+  }
+}
+```
 
 ## Visual
 
@@ -55,6 +64,7 @@ previous_slugs: []
 **her** 2026-05-04 03:23 Watching Korean drama
 **her** 2026-05-04 03:23 Wbu
 **you** 2026-05-05 00:40 chilling at home, which drama you on? always need recs
+**her** 2026-05-07 05:20 Hike in the hills (i dont like sand)
 
 ## Outbound log
 

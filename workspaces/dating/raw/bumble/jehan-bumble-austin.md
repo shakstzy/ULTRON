@@ -7,10 +7,10 @@ match_id: "zAhMACjIzMjQ2NDMxMDcIe-K7hQAAAAAgEzPryQZdBjTBzTNBUQvWNHqBJjSWBW9XtVEc
 person_id: null
 phone: "+15126601911"
 status: "expired"
-expires_at: "2026-05-06T23:17:56.105Z"
+expires_at: "2026-05-07T05:10:24.678Z"
 first_seen: "2026-05-04T03:27:00.058Z"
-last_activity: "2026-05-04T23:34:53.077Z"
-last_scrape: "2026-05-06T23:17:57.108Z"
+last_activity: "2026-05-07T05:10:25.698Z"
+last_scrape: "2026-05-07T05:10:25.690Z"
 previous_slugs: []
 ---
 
@@ -58,6 +58,7 @@ previous_slugs: []
 **her** 2026-05-04 03:27 No bruh I mean u say ur only in town
 **her** 2026-05-04 03:27 Till Friday
 **you** 2026-05-04 23:34 yeah low stakes tho. you down or nah
+**her** 2026-05-07 05:10 I don’t do hook ups
 
 ## Outbound log
 

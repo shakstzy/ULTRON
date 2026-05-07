@@ -23,7 +23,7 @@ ACCOUNT=""
 # 1. Stage validation BEFORE any state mutation.
 case "$STAGE" in
   ingest|lint|audit|bootstrap|weekly-review|query) ;;
-  apple-contacts-sync|ledger-compact|graphify-supermerge|graphify) ;;
+  apple-contacts-sync|ledger-compact|graphify-supermerge|graphify|granola-reconcile) ;;
   ingest-source)
     # Per (source, account) mode. Args: ingest-source <source> <account>.
     SOURCE="${2:-}"
@@ -54,7 +54,7 @@ esac
 # Helper stages don't have a stages/<stage>/CONTEXT.md; they invoke a single
 # script and exit. ingest-source uses the source's substage CONTEXT.md.
 case "$STAGE" in
-  apple-contacts-sync|ledger-compact|graphify-supermerge|graphify) ;;
+  apple-contacts-sync|ledger-compact|graphify-supermerge|graphify|granola-reconcile) ;;
   ingest-source)
     if [[ ! -f "$ULTRON_ROOT/_shell/stages/ingest/$SOURCE/CONTEXT.md" ]]; then
       echo "missing source substage: $ULTRON_ROOT/_shell/stages/ingest/$SOURCE/CONTEXT.md" >&2
@@ -252,6 +252,11 @@ case "$STAGE" in
   graphify-supermerge)
     bash "$ULTRON_ROOT/_shell/bin/graphify-run.sh" \
       > "$RUN_DIR/output/graphify-supermerge.log" 2>&1 || EC=$?
+    ;;
+  granola-reconcile)
+    python3 "$ULTRON_ROOT/_shell/bin/ingest-granola.py" \
+      --account adithya@outerscope.xyz --reset-cursor --run-id "$RUN_ID" \
+      > "$RUN_DIR/output/granola-reconcile.log" 2>&1 || EC=$?
     ;;
   graphify)
     # Per-workspace Tier-1 maintenance. Re-extracts changed files into the

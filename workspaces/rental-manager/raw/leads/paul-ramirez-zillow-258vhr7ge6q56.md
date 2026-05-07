@@ -45,3 +45,7 @@ Paul Ramirez is still waiting for you to read this application
 ### 2026-03-23T21:33:00.774Z - Owner (Adithya)
 
 what time would work best tomorrow or day after? please contact me at 5126601911
+
+### 2026-05-07T20:45:18.035Z - Owner (Adithya)
+
+Hey Paul, got your application a while back. You still looking? If yes let's set up a tour or chat through next steps. If you went somewhere else just let me know.

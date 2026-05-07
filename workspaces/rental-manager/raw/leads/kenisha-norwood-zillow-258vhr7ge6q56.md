@@ -62,3 +62,7 @@ if you found something else, let me know, so I can remove you from my potential 
 ### 2026-03-09T19:31:02.802Z - Owner (Adithya)
 
 wanted to reping on the above, did you get a chance to tour the property
+
+### 2026-05-07T20:44:58.175Z - Owner (Adithya)
+
+Hey Kenisha, checking in one more time. Are you still looking? If yes I can get you in for a tour this week, otherwise I'll take you off the list. Either way is cool, just let me know.

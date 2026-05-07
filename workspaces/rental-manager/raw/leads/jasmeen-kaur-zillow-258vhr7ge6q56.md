@@ -41,3 +41,7 @@ I would like to schedule a tour.
 ### 2026-03-23T21:34:26.793Z - Owner (Adithya)
 
 what time would work best tomorrow or day after? please contact me at 5126601911
+
+### 2026-05-07T20:44:49.999Z - Owner (Adithya)
+
+Hey Jasmeen, still want to tour the Sylmar place? If you're rooming with someone we have two 3rd floor rooms with a shared bath that could work well together. Let me know what day this week is good.

@@ -46,3 +46,7 @@ and I will be out there till Tuesday if we can schedule something then. Let me k
 ### 2026-03-23T21:34:15.300Z - Owner (Adithya)
 
 what time would work best tomorrow or day after? please contact me at 5126601911
+
+### 2026-05-07T20:45:31.005Z - Owner (Adithya)
+
+Hey Kimberly, still looking? Happy to line up a tour for next time you're back from Frazier Park. Pets are welcome here too. Just send a Friday through Tuesday window that works and I'll lock it in.

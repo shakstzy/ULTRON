@@ -64,3 +64,7 @@ if you found something else, let me know, so I can remove you from my potential 
 ### 2026-03-09T19:31:16.620Z - Owner (Adithya)
 
 wanted to reping on the above, did you get a chance to tour the property
+
+### 2026-05-07T20:46:04.331Z - Owner (Adithya)
+
+hey briana, still have rooms open. did you get a chance to check out the photos? if you want to come by in person let me know what day works and ill meet you there.

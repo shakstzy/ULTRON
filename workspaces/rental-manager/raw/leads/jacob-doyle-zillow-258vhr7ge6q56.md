@@ -42,3 +42,7 @@ I would like to schedule a tour. Prefered contact through mobile. Thank you.
 ### 2026-03-25T20:37:34.679Z - Owner (Adithya)
 
 sure feel free to ring me at 5126601911 and stop by any time this week ill be at the property
+
+### 2026-05-07T20:45:47.508Z - Owner (Adithya)
+
+hey jacob, did you end up swinging by? pets are welcome btw so no issue there. let me know what day this week works and ill be at the property to show you around.

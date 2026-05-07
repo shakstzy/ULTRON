@@ -79,3 +79,7 @@ if you found something else, let me know, so I can remove you from my potential 
 ### 2026-03-09T19:31:11.871Z - Owner (Adithya)
 
 wanted to reping on the above, did you get a chance to tour the property
+
+### 2026-05-07T20:45:39.337Z - Owner (Adithya)
+
+Hey Mariana, last ping from me. Still searching for a place? If yes I'll set up a tour, if not I'll take you off my list. No pressure either way.

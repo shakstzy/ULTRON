@@ -42,3 +42,7 @@ I'm interested in your property. Hi are utilities included and when are they loo
 ### 2026-03-23T21:34:59.173Z - Owner (Adithya)
 
 what time would work best tomorrow or day after? please contact me at 5126601911
+
+### 2026-05-07T20:46:00.085Z - Owner (Adithya)
+
+hey danielle, utilities are $100/mo flat covering water, electric, gas, and internet. rooms are ready immediately so move-in is open whenever you need. parking is an add-on if you want it. you still looking? happy to have you come check it out, what day works?

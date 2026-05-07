@@ -80,3 +80,7 @@ if you found something else, let me know, so I can remove you from my potential 
 ### 2026-03-09T19:31:42.604Z - Owner (Adithya)
 
 wanted to reping on the above, did you get a chance to tour the property
+
+### 2026-05-07T20:46:08.486Z - Owner (Adithya)
+
+hey nancy, rooms are still open if youre still searching. 3rd floor with walk-in is $1000, 2nd floor with private bath $1200, 1st floor suite $1250, utilities flat $100/mo. want to swing by this week?

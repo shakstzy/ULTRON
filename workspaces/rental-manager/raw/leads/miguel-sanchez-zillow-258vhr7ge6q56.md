@@ -42,3 +42,7 @@ I'd like to schedule a viewing for Klein Ct, Sylmar, CA 91342, US. Please contac
 ### 2026-03-23T21:32:46.286Z - Owner (Adithya)
 
 what time would work best tomorrow or day after? please contact me at 5126601911
+
+### 2026-05-07T20:45:10.532Z - Owner (Adithya)
+
+Hey Miguel, never heard back. Still interested in coming to see the place? Rooms are open and ready to move in. Let me know a day that works.

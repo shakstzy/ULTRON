@@ -41,3 +41,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 ### 2026-04-21T21:44:58.164Z - Chris Pereida
 
 I'm interested in your property. I have a cat would that be a problem?
+
+### 2026-05-07T20:46:12.697Z - Owner (Adithya)
+
+hey chris, cat is totally fine, pets are welcome. rooms run $1000 (3rd floor walk-in), $1200 (2nd floor private bath), $1250 (1st floor suite). utilities flat $100/mo. with your may move-in we have time, want to come check it out?

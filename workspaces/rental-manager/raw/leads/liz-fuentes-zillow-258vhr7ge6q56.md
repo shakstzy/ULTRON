@@ -41,3 +41,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 
 Hello my name is Liz, I'm really interested in the room but I wanted to ask a couple questions 1. Is utilities included 2. Is there a credit check required 3. Is there reliable transportation nearby
 I don't have a car for the mean time.
+
+### 2026-05-07T20:44:54.048Z - Owner (Adithya)
+
+Hey Liz, quick answers: utilities are flat $100/mo per room (water, electric, gas, internet included). Yes there's a credit/background check through the Zillow application, $25 fee. There's bus access nearby but I'd say transit is just okay, not amazing. Pets are welcome. Want to come check it out?

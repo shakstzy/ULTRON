@@ -42,3 +42,7 @@ May I ask if this still available ? Is it a room or a studio like ?
 ### 2026-03-27T00:05:00.801Z - Maryam MCCOY
 
 I would like to see it in your convenience
+
+### 2026-05-07T20:44:41.889Z - Owner (Adithya)
+
+Hey Maryam, still available. It's rooms in a shared house, not a studio. Pricing runs $1000 for 3rd floor with shared bath, $1200 for 2nd floor with private bath, $1250 for the 1st floor private suite. Utilities are flat $100. When can you swing by?

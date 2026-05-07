@@ -45,3 +45,7 @@ I would like to schedule a tour.
 ### 2026-03-23T21:32:53.423Z - Owner (Adithya)
 
 what time would work best tomorrow or day after? please contact me at 5126601911
+
+### 2026-05-07T20:46:37.163Z - Owner (Adithya)
+
+hey penny, did you make it out to tour? pets are welcome and rooms are still open. let me know if youre still looking and what day works to come check it out.

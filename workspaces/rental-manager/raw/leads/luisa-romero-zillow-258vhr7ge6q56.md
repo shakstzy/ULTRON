@@ -57,3 +57,7 @@ hi are you still renting ?
 ### 2026-03-23T21:34:23.679Z - Owner (Adithya)
 
 what time would work best tomorrow or day after? please contact me at 5126601911
+
+### 2026-05-07T20:45:14.619Z - Owner (Adithya)
+
+Hey Luisa, yes still renting. Rooms are open and pets are welcome. If 2 of you are moving in together the two 3rd floor rooms with shared bath could pair up nicely. What Saturday works for a tour?

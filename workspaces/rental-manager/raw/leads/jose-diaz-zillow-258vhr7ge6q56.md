@@ -70,3 +70,7 @@ if you found something else, let me know, so I can remove you from my potential 
 ### 2026-03-09T19:31:18.261Z - Owner (Adithya)
 
 wanted to reping on the above, did you get a chance to tour the property
+
+### 2026-05-07T20:45:43.453Z - Owner (Adithya)
+
+hey jose, still have rooms open. 3rd floor with walk-in closet is $1000, 2nd floor with private bath is $1200, 1st floor suite with private bath and walk-in is $1250. utilities flat $100/mo. parking is an add-on. you still in the market? happy to have you swing by this week, what day works?

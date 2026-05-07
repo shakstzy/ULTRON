@@ -19,6 +19,7 @@ These live in their source repo and are surfaced globally via `~/.claude/skills/
 |---|---|---|
 | **youtube-summary** | `QUANTUM/_core/skills/youtube-summary/` | Fetch YouTube transcript + summarize. Trigger: youtube.com / youtu.be URL + summarize/recap/tldr verb. |
 | **instagram-summary** | `QUANTUM/_core/skills/instagram-summary/` | Fetch IG post or reel (carousel up to 10, reel audio transcript via Whisper). Trigger: instagram.com /p/ /reel/ /reels/ /tv/ /share/ URL + summarize/recap verb. |
+| **real-estate** | `QUANTUM/_core/skills/real-estate/` | Free Redfin / Zillow / Travis CAD research CLI: address lookup, Zestimate / Redfin Estimate, comps, rent estimate, owner names, polygon / bbox searches. Trigger: "look up <address>", "comps for X", "Zestimate", "owner of Y", "homes in <city>". Also workspace-linked at `workspaces/real-estate/skills/`. |
 
 ## How skills are wired
 

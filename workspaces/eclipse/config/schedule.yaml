@@ -10,6 +10,8 @@ sources:
       - adithya@eclipse.builders
   slack:
     cron: "0 8-23 * * *"
+    accounts:
+      - eclipse
   drive:
     cron: "30 */6 * * *"             # Every 6 hours at :30
     accounts:

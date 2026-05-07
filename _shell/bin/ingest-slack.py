@@ -1339,8 +1339,12 @@ def _try_lock(path: str):
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     ap = argparse.ArgumentParser(description="Slack robot.")
-    ap.add_argument("--workspace", required=True,
-                    help="Slack workspace slug (e.g., eclipse).")
+    ws_group = ap.add_mutually_exclusive_group(required=True)
+    ws_group.add_argument("--workspace",
+                          help="Slack workspace slug (e.g., eclipse).")
+    ws_group.add_argument("--account",
+                          help="Alias for --workspace, used by the per-(source,account) "
+                               "cron dispatcher. For Slack, the 'account' IS the workspace.")
     ap.add_argument("--containers", default=None,
                     help="Comma subset of {channels,dms,group-dms}; default: all.")
     ap.add_argument("--channel", default=None,
@@ -1357,7 +1361,10 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
                          "falls back to size+name placeholders).")
     ap.add_argument("--run-id",
                     default=dt.datetime.now().strftime("%Y%m%dT%H%M%S"))
-    return ap.parse_args(argv)
+    args = ap.parse_args(argv)
+    if args.account and not args.workspace:
+        args.workspace = args.account
+    return args
 
 
 def main() -> int:

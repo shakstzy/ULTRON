@@ -7,17 +7,32 @@ match_id: "zAhMACjE4Mzc5ODE4NDMIe-K7hQAAAAAgcM6KKZmdehdNUIT3esMxhS99Uuq65SU7Ki2h
 person_id: null
 phone: null
 status: "expired"
-expires_at: "2026-05-07T05:51:03.636Z"
+expires_at: "2026-05-07T20:29:32.223Z"
 first_seen: "2026-05-04T03:23:41.670Z"
 last_activity: "2026-05-05T01:48:03.237Z"
-last_scrape: "2026-05-07T05:51:04.640Z"
+last_scrape: "2026-05-07T20:29:33.229Z"
 previous_slugs: []
 last_profile_diff: "2026-05-07T05:51:04.640Z"
 ---
 
 ## Profile
 
-- photos_count: 0
+- age: 23
+- height: "5' 7''"
+- height_cm: 170
+- schools: Texas State University 2025
+- jobs: paralegal
+- lives_in: "San Marcos, TX"
+- hometown: "Fort Collins, CO"
+- photo_verified: true
+- lifestyle_badges: ["5' 7''","Active","Undergraduate degree","Socially","Woman","Relationship","Not sure yet","Sagittarius","Liberal"]
+- prompts.0.q: "My humble brag is"
+- prompts.0.a: "i worked with a murder & did not get murdered…"
+- prompts.1.q: "I’ve got the best recommendation for"
+- prompts.1.a: "movies ask me anything"
+- prompts.2.q: "If I had to describe dating me in 3 words"
+- prompts.2.a: "gnarly"
+- photos_count: 6
 
 ## Profile changes
 

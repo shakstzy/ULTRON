@@ -8,7 +8,7 @@ person_id: "69cc15bce324bb787372e987"
 phone: null
 status: "new"
 first_seen: "2026-04-17T00:00:00Z"
-last_activity: "2026-04-17T20:09:00Z"
+last_activity: "2026-05-07T01:58:17.744Z"
 last_scrape: "2026-05-01T07:37:52.750Z"
 previous_slugs: []
 migrated_from_shakos: "jam"
@@ -89,8 +89,10 @@ last_profile_diff: "2026-05-01T07:37:52.750Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 01:58 riding a Kawasaki to raves is a side quest all on its own. what's the boldest thing you've actually done this summer so far
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:05 queued_auto (auto, opener) [draft:52610a06] lint=true "riding a Kawasaki to raves is a side quest all on its own. what's the boldest thing you've actually done this summer so far"
+- 2026-05-07 01:58 sent (auto, auto-or-hitl) [draft:52610a06] lint=true "riding a Kawasaki to raves is a side quest all on its own. what's the boldest thing you've actually done this summer so far"

@@ -8,7 +8,7 @@ person_id: "694791574a92dba2a91caa59"
 phone: null
 status: "new"
 first_seen: "2026-04-22T00:00:00Z"
-last_activity: "2026-04-22T01:01:00Z"
+last_activity: "2026-05-07T01:57:44.015Z"
 last_scrape: "2026-05-01T07:31:10.873Z"
 previous_slugs: []
 migrated_from_shakos: "jaclyn"
@@ -106,8 +106,10 @@ last_profile_diff: "2026-05-01T07:31:10.873Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 01:57 ACL with a portable fan is either genius or a cry for help. which set made you actually need it
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:05 queued_auto (auto, opener) [draft:2409c906] lint=true "ACL with a portable fan is either genius or a cry for help. which set made you actually need it"
+- 2026-05-07 01:57 sent (auto, auto-or-hitl) [draft:2409c906] lint=true "ACL with a portable fan is either genius or a cry for help. which set made you actually need it"

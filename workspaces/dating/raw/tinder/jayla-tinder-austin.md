@@ -8,7 +8,7 @@ person_id: "66cd55532b29cf0100b4aae4"
 phone: null
 status: "new"
 first_seen: "2026-04-08T00:00:00Z"
-last_activity: "2026-04-08T03:37:00Z"
+last_activity: "2026-05-07T01:58:49.012Z"
 last_scrape: "2026-05-01T07:42:22.909Z"
 previous_slugs: []
 migrated_from_shakos: "jayla-marie"
@@ -97,8 +97,10 @@ last_profile_diff: "2026-05-01T07:42:22.909Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 01:58 barista who bakes and drinks boba, the holy trinity. what are you into baking right now
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:06 queued_auto (auto, opener) [draft:6d243d23] lint=true "barista who bakes and drinks boba, the holy trinity. what are you into baking right now"
+- 2026-05-07 01:58 sent (auto, auto-or-hitl) [draft:6d243d23] lint=true "barista who bakes and drinks boba, the holy trinity. what are you into baking right now"

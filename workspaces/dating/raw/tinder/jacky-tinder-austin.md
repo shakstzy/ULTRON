@@ -8,7 +8,7 @@ person_id: "68e313d8ec6acdd0f83a5af4"
 phone: null
 status: "new"
 first_seen: "2026-04-10T00:00:00Z"
-last_activity: "2026-04-10T08:03:00Z"
+last_activity: "2026-05-07T01:57:17.423Z"
 last_scrape: "2026-05-01T07:30:27.353Z"
 previous_slugs: []
 migrated_from_shakos: "jacky"
@@ -99,8 +99,10 @@ last_profile_diff: "2026-05-01T07:30:27.353Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 01:57 the spider tattoo and weeknd back to back is a very specific vibe. house of balloons era or just the banger?
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:05 queued_auto (auto, opener) [draft:f19cc3cb] lint=true "the spider tattoo and weeknd back to back is a very specific vibe. house of balloons era or just the banger?"
+- 2026-05-07 01:57 sent (auto, auto-or-hitl) [draft:f19cc3cb] lint=true "the spider tattoo and weeknd back to back is a very specific vibe. house of balloons era or just the banger?"

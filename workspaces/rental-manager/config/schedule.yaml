@@ -1,24 +1,18 @@
 # rental-manager — declared launchd cadence
 #
-# Compiled to ~/ULTRON/_shell/plists/com.adithya.ultron.<job>.plist by the
-# `schedule` skill. Loading is gated on explicit user CONFIRM.
+# Compiled to ~/ULTRON/_shell/plists/com.adithya.ultron.<job>-rental-manager.plist
+# by the `schedule` skill. Loading is gated on explicit user CONFIRM.
 
 workspace: rental-manager
 
-jobs:
-  - name: ingest-rental-manager
-    stage: ingest
-    schedule:
-      hour: 8
-      minute: 30
-    plist_label: com.adithya.ultron.ingest-rental-manager
-
-  - name: lint-rental-manager
-    stage: lint
-    schedule:
-      hour: 4
-      minute: 15
-    plist_label: com.adithya.ultron.lint-rental-manager
+workspace_jobs:
+  rental-cycle:
+    # Full owner-side cycle: ingest → auto-book → contextual-send → application-notifier.
+    # 3x daily — morning, mid-afternoon, evening Austin time (CDT/CST). Each
+    # cycle takes ~10–50 min depending on inbox size + LLM latency.
+    cron: "0 14,18,22 * * *"   # 09:00, 13:00, 17:00 CT (UTC = +5h in CDT)
+  lint:
+    cron: "15 4 * * *"         # Daily 04:15 — markdown / route audit
 
 # audit and weekly-review are global (cross-workspace), declared in
-# _shell/plists/. Daemon health-check + breaker-status job is a follow-up.
+# _shell/config/global-schedule.yaml.

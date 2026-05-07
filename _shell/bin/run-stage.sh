@@ -23,7 +23,7 @@ ACCOUNT=""
 # 1. Stage validation BEFORE any state mutation.
 case "$STAGE" in
   ingest|lint|audit|bootstrap|weekly-review|query) ;;
-  apple-contacts-sync|ledger-compact|graphify-supermerge|graphify|granola-reconcile) ;;
+  apple-contacts-sync|ledger-compact|graphify-supermerge|graphify|granola-reconcile|rental-cycle) ;;
   ingest-source)
     # Per (source, account) mode. Args: ingest-source <source> <account>.
     SOURCE="${2:-}"
@@ -54,7 +54,7 @@ esac
 # Helper stages don't have a stages/<stage>/CONTEXT.md; they invoke a single
 # script and exit. ingest-source uses the source's substage CONTEXT.md.
 case "$STAGE" in
-  apple-contacts-sync|ledger-compact|graphify-supermerge|graphify|granola-reconcile) ;;
+  apple-contacts-sync|ledger-compact|graphify-supermerge|graphify|granola-reconcile|rental-cycle) ;;
   ingest-source)
     if [[ ! -f "$ULTRON_ROOT/_shell/stages/ingest/$SOURCE/CONTEXT.md" ]]; then
       echo "missing source substage: $ULTRON_ROOT/_shell/stages/ingest/$SOURCE/CONTEXT.md" >&2
@@ -244,6 +244,12 @@ case "$STAGE" in
   apple-contacts-sync)
     "$ULTRON_ROOT/.venv/bin/python3" "$ULTRON_ROOT/_shell/skills/contacts-sync/scripts/sync.py" \
       > "$RUN_DIR/output/contacts-sync.log" 2>&1 || EC=$?
+    ;;
+  rental-cycle)
+    # Owner-side rental-manager full cycle: ingest → auto-book → contextual-send → application-notifier.
+    # All gated by ZRM_DRY_RUN=1 if you want a no-mutate run.
+    node "$ULTRON_ROOT/workspaces/rental-manager/playbooks/zillow-rental-manager/scripts/cron-cycle.mjs" \
+      > "$RUN_DIR/output/rental-cycle.log" 2>&1 || EC=$?
     ;;
   ledger-compact)
     python3 "$ULTRON_ROOT/_shell/bin/compact-ledger.py" \

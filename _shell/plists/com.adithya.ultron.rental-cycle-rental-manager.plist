@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>HOME</key>
+		<string>/Users/shakstzy</string>
+		<key>PATH</key>
+		<string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+		<key>ULTRON_ROOT</key>
+		<string>/Users/shakstzy/ULTRON</string>
+	</dict>
+	<key>Label</key>
+	<string>com.adithya.ultron.rental-cycle-rental-manager</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/bin/bash</string>
+		<string>-c</string>
+		<string>flock -n /tmp/com.adithya.ultron.rental-cycle-rental-manager.lock /Users/shakstzy/ULTRON/_shell/bin/cron-runner.py com.adithya.ultron.rental-cycle-rental-manager -- /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh rental-cycle rental-manager</string>
+	</array>
+	<key>RunAtLoad</key>
+	<false/>
+	<key>StandardErrorPath</key>
+	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.rental-cycle-rental-manager.err.log</string>
+	<key>StandardOutPath</key>
+	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.rental-cycle-rental-manager.out.log</string>
+	<key>StartCalendarInterval</key>
+	<array>
+		<dict>
+			<key>Hour</key>
+			<integer>14</integer>
+			<key>Minute</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Hour</key>
+			<integer>18</integer>
+			<key>Minute</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Hour</key>
+			<integer>22</integer>
+			<key>Minute</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>WorkingDirectory</key>
+	<string>/Users/shakstzy/ULTRON</string>
+</dict>
+</plist>

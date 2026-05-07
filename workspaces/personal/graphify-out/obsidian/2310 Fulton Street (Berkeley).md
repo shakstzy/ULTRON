@@ -11,8 +11,8 @@ tags:
 # 2310 Fulton Street (Berkeley)
 
 ## Connections
-- [[Adithya]] - `mentioned_by` [EXTRACTED]
-- [[Linh Pham (Rishika Roommate)]] - `lived_at` [INFERRED]
+- [[Linh Pham (Rishika Roommate)]] - `lived_at` [EXTRACTED]
 - [[Rishika (UC Berkeley)]] - `lived_at` [EXTRACTED]
+- [[Adithya]] - `mentioned_by` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_0

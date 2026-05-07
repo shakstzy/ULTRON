@@ -16,7 +16,7 @@ tags:
 - [[2310 Fulton Street (Berkeley)]] - `lived_at` [EXTRACTED]
 - [[PwC]] - `mentioned_by` [EXTRACTED]
 - [[Linh Pham (Rishika Roommate)]] - `related_to` [EXTRACTED]
-- [[UC Berkeley]] - `studies_at` [INFERRED]
+- [[UC Berkeley]] - `studies_at` [EXTRACTED]
 - [[Deloitte]] - `works_at` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_3

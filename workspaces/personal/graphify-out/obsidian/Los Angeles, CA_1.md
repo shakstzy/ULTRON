@@ -11,8 +11,8 @@ tags:
 # Los Angeles, CA
 
 ## Connections
-- [[Adithya]] - `lives_in` [INFERRED]
-- [[Evan (LA friendroommate)]] - `lives_in` [EXTRACTED]
+- [[Adithya]] - `formerly_lived_in` [EXTRACTED]
+- [[Evan (LA friendroommate)|Evan (LA friend/roommate)]] - `lives_in` [EXTRACTED]
 - [[Filip]] - `lives_in` [EXTRACTED]
 - [[Zach]] - `lives_in` [EXTRACTED]
 

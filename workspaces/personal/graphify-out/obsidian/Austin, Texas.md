@@ -4,14 +4,14 @@ type: "document"
 community: "Community 1"
 tags:
   - graphify/document
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/Community_1
 ---
 
 # Austin, Texas
 
 ## Connections
-- [[Adithya]] - `lives_in` [INFERRED]
-- [[Ritu (Hinge  Dallas med school)]] - `from` [EXTRACTED]
+- [[Ritu (Hinge  Dallas med school)|Ritu (Hinge / Dallas med school)]] - `from` [EXTRACTED]
+- [[Adithya]] - `lives_in` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Community_1
+#graphify/document #graphify/EXTRACTED #community/Community_1

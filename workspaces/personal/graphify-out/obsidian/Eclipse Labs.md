@@ -11,9 +11,9 @@ tags:
 # Eclipse Labs
 
 ## Connections
-- [[Adithya]] - `works_at` [INFERRED]
 - [[Jaeden (Podcast)]] - `discussed_with` [EXTRACTED]
 - [[James (Cryptobitmag)]] - `discussed_with` [INFERRED]
+- [[Adithya]] - `works_at` [EXTRACTED]
 - [[Malhaar (Nova)]] - `works_at` [EXTRACTED]
 - [[Sydney Huang (Eclipse)]] - `works_at` [EXTRACTED]
 

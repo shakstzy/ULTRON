@@ -13,9 +13,8 @@ tags:
 ## Connections
 - [[Edwin Gregory]] - `discussed_with` [EXTRACTED]
 - [[Adithya]] - `friend` [EXTRACTED]
-- [[Rohan Vaidya (UC Berkeley)]] - `related_to` [INFERRED]
 - [[UC Berkeley Network]] - `related_to` [EXTRACTED]
-- [[UC Berkeley]] - `studies_at` [INFERRED]
+- [[UC Berkeley]] - `studies_at` [EXTRACTED]
 - [[BridgeLink (Rohin's SF startup)]] - `works_at` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_3

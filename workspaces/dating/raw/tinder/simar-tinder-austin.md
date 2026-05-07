@@ -9,10 +9,10 @@ phone: null
 status: "new"
 first_seen: "2026-04-23T00:00:00Z"
 last_activity: "2026-04-23T01:40:00Z"
-last_scrape: "2026-05-01T19:56:35.529Z"
+last_scrape: "2026-05-07T05:04:36.287Z"
 previous_slugs: []
 migrated_from_shakos: "simar"
-last_profile_diff: "2026-05-01T19:56:35.529Z"
+last_profile_diff: "2026-05-07T05:04:36.287Z"
 ---
 
 ## Profile
@@ -78,6 +78,26 @@ last_profile_diff: "2026-05-01T19:56:35.529Z"
       "to": "My anthem Hun43rdA$AP RockyTESTING"
     }
   }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-07T05:04:36.287Z",
+  "added": {
+    "photo_verified": false,
+    "jobs": [
+      "English, Hindi, Punjabi"
+    ]
+  },
+  "removed": {
+    "jobs": [
+      "English",
+      "Hindi",
+      "Punjabi"
+    ]
+  },
+  "changed": {}
 }
 ```
 

@@ -9,10 +9,10 @@ phone: null
 status: "new"
 first_seen: "2026-04-23T00:00:00Z"
 last_activity: "2026-04-23T12:00:00Z"
-last_scrape: "2026-05-01T09:27:59.141Z"
+last_scrape: "2026-05-07T05:04:29.248Z"
 previous_slugs: []
 migrated_from_shakos: "marianna"
-last_profile_diff: "2026-05-01T09:27:59.141Z"
+last_profile_diff: "2026-05-07T05:04:29.248Z"
 ---
 
 ## Profile
@@ -76,6 +76,25 @@ last_profile_diff: "2026-05-01T09:27:59.141Z"
       "to": "First date wish list: Tacos, a walk, and a place we can actually talk > loud bars / Going Out 🕺dancing👗dress up⏳early🤫Shh -- don't tell"
     }
   }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-07T05:04:29.248Z",
+  "added": {
+    "photo_verified": false,
+    "jobs": [
+      "English, Spanish"
+    ]
+  },
+  "removed": {
+    "jobs": [
+      "English",
+      "Spanish"
+    ]
+  },
+  "changed": {}
 }
 ```
 

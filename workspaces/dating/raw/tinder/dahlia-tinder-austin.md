@@ -9,10 +9,10 @@ phone: null
 status: "new"
 first_seen: "2026-04-23T00:00:00Z"
 last_activity: "2026-04-23T06:20:00Z"
-last_scrape: "2026-05-01T06:12:59.732Z"
+last_scrape: "2026-05-07T05:04:32.860Z"
 previous_slugs: []
 migrated_from_shakos: "dahlia"
-last_profile_diff: "2026-05-01T06:12:59.732Z"
+last_profile_diff: "2026-05-07T05:04:32.860Z"
 ---
 
 ## Profile
@@ -84,6 +84,24 @@ last_profile_diff: "2026-05-01T06:12:59.732Z"
       "to": "TRANS GIRL looking for the loml in all the wrong places. Ideally looking for someone who's a fun hang and a good kisser. Bi men and alt girls who like late night fast food to the front please. Not interested in casual 🖤 First pic is most recent. Peep my son in the last photo 🖤"
     }
   }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-07T05:04:32.860Z",
+  "added": {
+    "jobs": [
+      "English, Spanish"
+    ]
+  },
+  "removed": {
+    "jobs": [
+      "English",
+      "Spanish"
+    ]
+  },
+  "changed": {}
 }
 ```
 

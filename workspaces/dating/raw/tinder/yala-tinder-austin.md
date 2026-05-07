@@ -9,9 +9,9 @@ phone: null
 status: "new"
 first_seen: "2026-04-30T05:13:17.154Z"
 last_activity: "2026-04-30T05:13:17.154Z"
-last_scrape: "2026-05-01T21:19:55.815Z"
+last_scrape: "2026-05-07T05:01:21.953Z"
 previous_slugs: []
-last_profile_diff: "2026-05-01T21:19:55.815Z"
+last_profile_diff: "2026-05-07T05:01:21.953Z"
 ---
 
 ## Profile
@@ -49,6 +49,17 @@ last_profile_diff: "2026-05-01T21:19:55.815Z"
       "Photo and ID Verified",
       "hostess at nunya"
     ]
+  },
+  "removed": {},
+  "changed": {}
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-07T05:01:21.953Z",
+  "added": {
+    "photo_verified": false
   },
   "removed": {},
   "changed": {}

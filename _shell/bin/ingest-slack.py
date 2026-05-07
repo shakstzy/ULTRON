@@ -1090,9 +1090,32 @@ def process_container(*, client: SlackClient, container: dict,
     # single probe is enough. If no workspace claims this container, skip
     # the entire describe + render + write path — Gemini calls cost real
     # money and unrouted descriptions never reach disk.
+    #
+    # Participants MUST come from container membership, not message authors.
+    # If we use authors, a self-only-authored DM batch loses self when the
+    # router discards `adithya-shak-kumar`, the probe returns [], and the
+    # cursor advances over real messages. So:
+    #   - 1:1 DM: counterparty is `container["user_id"]` (resolved in main()).
+    #   - group DM: members come from conversations.members (cached per run).
+    #   - channel: name-only match; participants list is irrelevant.
     router_channel_type = {
         "channel": "channel", "dm": "im", "group-dm": "mpim",
     }.get(container["type"], container["type"])
+    probe_member_ids: set[str] = set()
+    if container["type"] == "dm":
+        if container.get("user_id"):
+            probe_member_ids.add(container["user_id"])
+    elif container["type"] == "group-dm":
+        try:
+            for uid in client.paginate("conversations.members", key="members",
+                                       channel=container["id"], limit=200):
+                probe_member_ids.add(uid)
+        except SlackError as e:
+            if e.error in ("missing_scope", "not_found", "channel_not_found"):
+                # Fall back to message authors so we don't drop the container.
+                probe_member_ids = {m.get("user") for m in parents if m.get("user")}
+            else:
+                raise
     probe_item = {
         "slack_workspace_id": team_id,
         "slack_workspace_slug": workspace_slug,
@@ -1103,7 +1126,7 @@ def process_container(*, client: SlackClient, container: dict,
         "channel_type": router_channel_type,
         "participants": [
             {"slug": users.get(uid)["slug"], "slack_user_id": uid}
-            for uid in {m.get("user") for m in parents if m.get("user")}
+            for uid in probe_member_ids if uid
         ],
         "date": "1970-01-01",
     }

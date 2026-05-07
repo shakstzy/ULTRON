@@ -16,5 +16,5 @@ members:
   slack_user_id: U04QMPSF03Y
   display_name: sydney
 first_seen: '2026-05-02T22:29:48-05:00'
-last_updated: '2026-05-07T14:48:40-05:00'
+last_updated: '2026-05-07T15:00:12-05:00'
 ---

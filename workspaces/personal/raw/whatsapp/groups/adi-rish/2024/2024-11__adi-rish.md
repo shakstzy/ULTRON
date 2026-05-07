@@ -1,0 +1,26 @@
+---
+source: whatsapp
+workspace: personal
+ingested_at: '2026-05-07T02:43:48.984115+00:00'
+ingest_version: 1
+content_hash: 'blake3:c92b8ac4cb9d8a7a20ec401087195cf251b865856fb88dce142aadc91948f5f8'
+provider_modified_at: '2024-11-08T20:52:41-06:00'
+contact_slug: adi-rish
+contact_type: group
+month: 2024-11
+date_range: [2024-11-08, 2024-11-08]
+message_count: 1
+my_message_count: 1
+their_message_count: 0
+attachments: []
+whatsapp_chat_jid: '120363362296510338@g.us'
+whatsapp_chat_kind: group
+deleted_upstream: null
+superseded_by: null
+---
+
+# Adi <> Rish — November 2024
+
+## 2024-11-08 (Friday)
+
+**20:52 — me:** The past week has been filled with reminiscing on old memories and just solely thinking of how scared I am for the future. I’ve always had a nonchalant and carefree attitude towards life, but I feel powerless now when I think of the possibility without her by my side.

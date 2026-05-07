@@ -348,7 +348,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 198 edges to [[_COMMUNITY_Community 1]]
 - 139 edges to [[_COMMUNITY_Community 2]]
-- 116 edges to [[_COMMUNITY_Community 3]]
+- 117 edges to [[_COMMUNITY_Community 3]]
 - 91 edges to [[_COMMUNITY_Community 4]]
 - 87 edges to [[_COMMUNITY_Community 5]]
 - 48 edges to [[_COMMUNITY_Community 6]]
@@ -412,5 +412,5 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[Adithya]] - degree 1355, connects to 63 communities
+- [[2310 Fulton Street (Berkeley)]] - degree 3, connects to 1 community
 - [[Dr. Satasivan]] - degree 2, connects to 1 community
-- [[2310 Fulton Street (Berkeley)]] - degree 2, connects to 1 community

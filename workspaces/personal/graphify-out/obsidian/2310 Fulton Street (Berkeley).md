@@ -12,6 +12,7 @@ tags:
 
 ## Connections
 - [[Adithya]] - `mentioned_by` [EXTRACTED]
+- [[Linh Pham (Rishika Roommate)]] - `lived_at` [INFERRED]
 - [[Rishika (UC Berkeley)]] - `lived_at` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_0

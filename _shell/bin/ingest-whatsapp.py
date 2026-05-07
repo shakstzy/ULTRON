@@ -181,6 +181,8 @@ def render_body(display_name: str, month_str: str, msgs: list, is_group: bool, m
         latest_ts = ts.isoformat() if (latest_ts is None or ts.isoformat() > latest_ts) else latest_ts
         d = ts.date()
         if d != last_date:
+            if last_date is not None:
+                out.append("")  # blank line separating days
             out.append(f"## {d.isoformat()} ({WEEKDAYS[d.weekday()]})")
             out.append("")
             last_date = d
@@ -198,11 +200,7 @@ def render_body(display_name: str, month_str: str, msgs: list, is_group: bool, m
         else:
             payload = content if content else "[empty]"
 
-        # Indent multi-line content by 2 spaces under the bold header
-        if "\n" in payload:
-            lines = payload.split("\n")
-            payload = lines[0] + "\n" + "\n".join("    " + ln for ln in lines[1:])
-
+        # Multi-line content: keep newlines, no indent (4-space indent would trigger code blocks)
         out.append(f"**{time_str} — {sender}:** {payload}")
 
     out.append("")

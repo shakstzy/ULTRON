@@ -1,9 +1,9 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T02:43:03.718887+00:00'
+ingested_at: '2026-05-07T02:43:48.979949+00:00'
 ingest_version: 1
-content_hash: 'blake3:381ab03f75e1ac9a57c0597702a6d64bd4fda8a8f2d7c17cdce10ce76a70046a'
+content_hash: 'blake3:c4bb793d93e87e9994d688a3a1e49729f106f514aa85cdb1e13c5431f0ecd9c6'
 provider_modified_at: '2026-05-06T20:19:04-05:00'
 contact_slug: east-parke-main-group
 contact_type: group
@@ -25,11 +25,12 @@ superseded_by: null
 
 **08:06 — @79251005009992:** Hey neighbors. Does anyone happen to have a grass core aerator that I could borrow? Trying to fix a patch of grass that won’t seem to grow 🙂
 **10:30 — @115388641763386:** https://youtu.be/jATs0FwelsY
+
 ## 2026-05-03 (Sunday)
 
 **11:36 — @211754789417175:** Hello there,
-    
-    Did you figure out how to fix this problem?
+
+Did you figure out how to fix this problem?
 **18:22 — @72146894245930:** [video: video_20260506_181704.mp4]
 **18:23 — @72146894245930:** Any recommendation for lawn services in or near the neighborhood?
 **18:31 — @168624962711656:** What services are you looking for?
@@ -38,6 +39,7 @@ superseded_by: null
 **18:33 — @168624962711656:** No lawn care service will know your lawn better than yourself.
 **19:06 — @72146894245930:** Yeah. Haven't bought a trimmer and mower yet. Don't plan to for a while.
 **19:08 — @168624962711656:** It’s cheaper than a regular mow service. As for weeds, it can be a cheap fix if done at the right moments
+
 ## 2026-05-04 (Monday)
 
 **06:20 — @19125506158802:** I will say, Ryan has the best grass in the whole neighborhood!!
@@ -48,6 +50,7 @@ superseded_by: null
 **20:08 — @142227993026750:** Can we hire you for DIY on our grass?! lol 😅😂
 **21:47 — @99330077769923:** If I can get rid of the dang crabgrass I will be happy
 **22:09 — @168624962711656:** Getting rid of crabgrass is very doable.
+
 ## 2026-05-06 (Wednesday)
 
 **08:12 — @221856569274450:** Does anyone know if the mailbox key was changed?

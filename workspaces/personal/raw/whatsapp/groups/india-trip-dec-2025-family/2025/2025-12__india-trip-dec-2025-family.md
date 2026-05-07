@@ -1,0 +1,26 @@
+---
+source: whatsapp
+workspace: personal
+ingested_at: '2026-05-07T02:43:48.989219+00:00'
+ingest_version: 1
+content_hash: 'blake3:5e816bc22d201b90c628cb460e34d797780be415cb0e152278e11e09ac874f4c'
+provider_modified_at: '2025-12-31T21:34:43-06:00'
+contact_slug: india-trip-dec-2025-family
+contact_type: group
+month: 2025-12
+date_range: [2025-12-31, 2025-12-31]
+message_count: 1
+my_message_count: 0
+their_message_count: 1
+attachments: []
+whatsapp_chat_jid: '120363420627877408@g.us'
+whatsapp_chat_kind: group
+deleted_upstream: null
+superseded_by: null
+---
+
+# India Trip Dec 2025 Family — December 2025
+
+## 2025-12-31 (Wednesday)
+
+**21:34 — @161765782458372:** உனக்கு  ஏண்டா இவ்வளவு பெரிய வழுக்கை ?

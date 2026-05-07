@@ -11,6 +11,7 @@ tags:
 # Linh Pham (Rishika Roommate)
 
 ## Connections
+- [[2310 Fulton Street (Berkeley)]] - `lived_at` [INFERRED]
 - [[Rishika (UC Berkeley)]] - `related_to` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_3

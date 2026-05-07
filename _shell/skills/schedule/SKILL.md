@@ -29,12 +29,12 @@ Unloads + deletes the plist file from `_shell/plists/` AND the symlink. Use when
 Per `(account, source)` ingest plist (NOT per workspace):
 - Label: `com.adithya.ultron.ingest-<source>-<account-slug>`
 - Schedule: from `sources.<source>.cron` in any workspace's `schedule.yaml` (if multiple workspaces specify different crons for the same `(source, account)`, the **most frequent** wins).
-- Command: `flock -n /tmp/<label>.lock $ULTRON_ROOT/_shell/bin/run-stage.sh ingest-source <source> <account>`.
+- Command: `flock -n /tmp/<label>.lock $ULTRON_ROOT/_shell/bin/cron-runner.py <label> -- $ULTRON_ROOT/_shell/bin/run-stage.sh ingest-source <source> <account>`.
 
 Per-workspace lint / graphify / audit plists:
 - Label: `com.adithya.ultron.<job>-<workspace>`
 - Schedule: from `workspace_jobs.<job>.cron` in `workspaces/<ws>/config/schedule.yaml`.
-- Command: `flock + run-stage.sh <job> <workspace>`.
+- Command: `flock + cron-runner.py <label> -- run-stage.sh <job> <workspace>`.
 
 Cross-workspace plists (audit, weekly-review, graphify-supermerge, apple-contacts-sync, ledger-compact):
 - Label: `com.adithya.ultron.<job>`
@@ -45,6 +45,8 @@ Every plist includes:
 - `EnvironmentVariables`: `PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin`, `ULTRON_ROOT=<absolute>`, `HOME=<absolute>`.
 - `WorkingDirectory` → ULTRON root.
 - `RunAtLoad: false`.
+
+**cron-runner wrap (mandatory):** every compiled command goes through `_shell/bin/cron-runner.py <label> -- <inner>`. The wrapper appends a JSONL row to `_logs/cron-ledger.jsonl` and posts a colored event (green ✓ / red ✗) to the "ULTRON Crons" Google Calendar on `adithya@outerscope.xyz`. Calendar/ledger failures never fail the inner job. Future schedule events are managed by `_shell/bin/cron-projector.py`, which runs daily at 03:30 and reconciles plist files against calendar via stable hash of (label, slot).
 
 ## Cron string compilation
 

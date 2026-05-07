@@ -20,6 +20,7 @@ from __future__ import annotations
 import argparse
 import datetime
 import fcntl
+import hashlib
 import os
 import re
 import sqlite3
@@ -222,12 +223,17 @@ WEEKDAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", 
 
 
 def parse_ts(ts_str: str) -> datetime.datetime:
-    """Bridge stores 'YYYY-MM-DD HH:MM:SS-05:00' style. Try ISO first, fall back to a manual parse."""
+    """Bridge stores 'YYYY-MM-DD HH:MM:SS-05:00' style. Always returns an aware datetime
+    (defaults to UTC if the source row is naive) so all downstream comparisons stay
+    aware-vs-aware — Python raises TypeError when comparing naive with aware.
+    """
     try:
-        return datetime.datetime.fromisoformat(ts_str)
+        dt = datetime.datetime.fromisoformat(ts_str)
     except ValueError:
-        # SQLite sometimes prints with space instead of T
-        return datetime.datetime.fromisoformat(ts_str.replace(" ", "T"))
+        dt = datetime.datetime.fromisoformat(ts_str.replace(" ", "T"))
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=datetime.timezone.utc)
+    return dt
 
 
 def render_body(
@@ -458,11 +464,33 @@ def main() -> int:
     for (kd, slug), jids in slug_to_jids.items():
         if len(jids) <= 1:
             continue
+        # First pass: append last-4 of digit-only JID prefix as a stable, readable
+        # disambiguator. Two jids can in theory share the same last-4 (rare but
+        # possible — group jids carry timestamp tails), so we second-pass-validate.
         for jid in jids:
             digits = re.sub(r"\D", "", jid.split("@", 1)[0])
             suffix = digits[-4:] if len(digits) >= 4 else (digits or "x")
             kd_existing, _, display = chat_identity[jid]
             chat_identity[jid] = (kd_existing, f"{slug}-{suffix}", display)
+        # Second pass: detect any post-fix slug that's STILL not unique across this
+        # collision cluster, escalate those to a sha256(jid)[:8] prefix. Guaranteed
+        # unique. Stable across runs (deterministic from the JID).
+        suffixed_counts: dict[str, int] = defaultdict(int)
+        for jid in jids:
+            suffixed_counts[chat_identity[jid][1]] += 1
+        if any(c > 1 for c in suffixed_counts.values()):
+            for jid in jids:
+                if suffixed_counts[chat_identity[jid][1]] <= 1:
+                    continue
+                h = hashlib.sha256(jid.encode("utf-8")).hexdigest()[:8]
+                kd_existing, _, display = chat_identity[jid]
+                chat_identity[jid] = (kd_existing, f"{slug}-{h}", display)
+            sys.stderr.write(
+                f"slug-collision: '{slug}' last-4 still ambiguous; escalated to sha256 prefix\n"
+            )
+        # Final assertion: every jid in this cluster now has a unique slug.
+        final_slugs = {chat_identity[jid][1] for jid in jids}
+        assert len(final_slugs) == len(jids), f"slug collision unresolved for '{slug}'"
         sys.stderr.write(f"slug-collision resolved on '{slug}' across {len(jids)} chats\n")
 
     written = 0
@@ -478,6 +506,8 @@ def main() -> int:
 
         # bucket by YYYY-MM using parsed datetime (not lexicographic substring),
         # so DST / timezone-offset edge cases route to the correct month shard.
+        # Also pre-sort by parsed datetime — bridge ORDER BY is lexicographic,
+        # which can mis-order messages around DST fallback when offsets differ.
         by_month: dict[str, list] = defaultdict(list)
         for m in msgs:
             try:
@@ -485,7 +515,11 @@ def main() -> int:
             except (ValueError, TypeError):
                 continue
             month_key = ts.strftime("%Y-%m")
-            by_month[month_key].append(m)
+            by_month[month_key].append((ts, m))
+        # Sort each month's messages by parsed datetime, then drop the timestamp.
+        for k in list(by_month.keys()):
+            by_month[k].sort(key=lambda pair: pair[0])
+            by_month[k] = [m for _, m in by_month[k]]
 
         for month, month_msgs in by_month.items():
             year = month[:4]

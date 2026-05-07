@@ -285,6 +285,10 @@ def render_daemon_plist_dict(daemon: dict) -> dict:
         "ULTRON_ROOT": str(ULTRON_ROOT),
         "HOME": str(Path.home()),
     }
+    # Inherit cron_env (single source of truth in global-schedule.yaml) so the
+    # daemon plist gets the same CLAUDE_CONFIG_DIR / etc. as cron jobs. Daemon-
+    # specific `env:` in schedule.yaml wins on key collision.
+    env.update(_load_cron_env())
     env.update(daemon.get("env") or {})
 
     plist: dict = {

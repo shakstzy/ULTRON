@@ -63,7 +63,16 @@ try {
       console.error(`send_failed ${item.id}: ${e.message}`);
       // Two-strike auto-archive on thread redirect. Other failures don't increment.
       if (/thread_redirect/.test(e.message) && item.meta.slug) {
-        try { await recordRedirect(item.meta.slug); } catch (re) { console.error(`recordRedirect failed: ${re.message}`); }
+        try {
+          const r = await recordRedirect(item.meta.slug);
+          // If the entity got archived (this redirect or any prior brought count >= 2),
+          // move the orphaned queue item out of approved/ so we don't retry it forever.
+          if (r?.archived || r?.redirect_count >= 2) {
+            await moveQueueItem(item.id, "approved", "expired").catch(me => console.error(`expire-on-redirect failed: ${me.message}`));
+          }
+        } catch (re) {
+          console.error(`recordRedirect failed: ${re.message}`);
+        }
       }
       if (/HALTED/.test(e.message)) break;
     }

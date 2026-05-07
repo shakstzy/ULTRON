@@ -8,7 +8,7 @@ person_id: "62d206b2ba03c001004690f8"
 phone: null
 status: "new"
 first_seen: "2026-04-24T00:00:00Z"
-last_activity: "2026-04-24T10:45:00Z"
+last_activity: "2026-05-07T03:47:29.034Z"
 last_scrape: "2026-05-01T09:06:15.103Z"
 previous_slugs: []
 migrated_from_shakos: "mackinley"
@@ -84,8 +84,10 @@ last_profile_diff: "2026-05-01T09:06:15.103Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 03:47 what's the book you've been pushing on everyone lately
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:16 queued_auto (auto, opener) [draft:02ad8f7f] lint=true "what's the book you've been pushing on everyone lately"
+- 2026-05-07 03:47 sent (auto, auto-or-hitl) [draft:02ad8f7f] lint=true "what's the book you've been pushing on everyone lately"

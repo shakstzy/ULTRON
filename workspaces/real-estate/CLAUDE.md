@@ -1,7 +1,7 @@
 ---
 workspace: real-estate
 wiki: true
-exclude_from_super_graphify: false
+exclude_from_super_graphify: true
 ingest_unrouted_default: skip
 ---
 
@@ -34,6 +34,7 @@ Default ULTRON voice. Numbers verbatim. Comps cited by source (Redfin / Zillow /
 3. Comps and pricing data live in `raw/` (verbatim). Wiki synthesis surfaces takeaways, not raw comp tables.
 4. Closed-deal sensitive terms (final price, financing terms, equity) live only in `raw/`. Wiki notes the deal's existence and status.
 5. Commit messages: `chore(real-estate): <stage> <YYYY-MM-DD>`.
+6. **Siloed.** Investment property research stays inside this workspace. Never promote `property` entities to `_global/entities/properties/` and never write across to other workspaces. Workspace is excluded from super-graphify on purpose. People / companies that genuinely span workspaces (e.g. an agent who's also a personal contact) are the only thing that may go global, and only via explicit `promote-entity` invocation.
 
 ## Routing table — common queries
 

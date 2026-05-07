@@ -8,7 +8,7 @@ person_id: "6369dbfd466a8c0100e2e219"
 phone: null
 status: "new"
 first_seen: "2026-04-22T00:00:00Z"
-last_activity: "2026-04-22T03:55:00Z"
+last_activity: "2026-05-07T03:49:21.256Z"
 last_scrape: "2026-05-01T09:17:48.678Z"
 previous_slugs: []
 migrated_from_shakos: "malachite"
@@ -92,8 +92,10 @@ last_profile_diff: "2026-05-01T09:17:48.678Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 03:49 the doorframe covered in pokemon cards and CDs is genuinely one of the most chaotic interior design decisions i've seen and i respect it fully. what's the collection situation, catching up or already maxed out
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:17 queued_auto (auto, opener) [draft:d3233f98] lint=true "the doorframe covered in pokemon cards and CDs is genuinely one of the most chaotic interior design decisions i've seen and i respect it fully. what's the collection situation, catching up or already maxed out"
+- 2026-05-07 03:49 sent (auto, auto-or-hitl) [draft:d3233f98] lint=true "the doorframe covered in pokemon cards and CDs is genuinely one of the most chaotic interior design decisions i've seen and i respect it fully. what's the collection situation, catching up or already maxed out"

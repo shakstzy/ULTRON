@@ -11,13 +11,12 @@ tags:
 # Rishika (UC Berkeley)
 
 ## Connections
-- [[2310 Fulton Street (Berkeley)]] - `lived_at` [EXTRACTED]
-- [[Adithya]] - `discussed_with` [EXTRACTED]
-- [[Deloitte]] - `works_at` [EXTRACTED]
-- [[Linh Pham (Rishika Roommate)]] - `related_to` [EXTRACTED]
 - [[Miami Trip (planned)]] - `discussed_with` [EXTRACTED]
+- [[Adithya]] - `ex_partner_of` [EXTRACTED]
+- [[2310 Fulton Street (Berkeley)]] - `lived_at` [EXTRACTED]
 - [[PwC]] - `mentioned_by` [EXTRACTED]
-- [[Rohin (UC Berkeley  Davis)]] - `related_to` [INFERRED]
+- [[Linh Pham (Rishika Roommate)]] - `related_to` [EXTRACTED]
 - [[UC Berkeley]] - `studies_at` [INFERRED]
+- [[Deloitte]] - `works_at` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_3

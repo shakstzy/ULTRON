@@ -11,12 +11,11 @@ tags:
 # Rohin (UC Berkeley / Davis)
 
 ## Connections
-- [[Adithya]] - `discussed_with` [EXTRACTED]
-- [[BridgeLink (Rohin's SF startup)]] - `works_at` [EXTRACTED]
 - [[Edwin Gregory]] - `discussed_with` [EXTRACTED]
-- [[Rishika (UC Berkeley)]] - `related_to` [INFERRED]
+- [[Adithya]] - `friend` [EXTRACTED]
 - [[Rohan Vaidya (UC Berkeley)]] - `related_to` [INFERRED]
-- [[UC Berkeley]] - `studies_at` [INFERRED]
 - [[UC Berkeley Network]] - `related_to` [EXTRACTED]
+- [[UC Berkeley]] - `studies_at` [INFERRED]
+- [[BridgeLink (Rohin's SF startup)]] - `works_at` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Community_3

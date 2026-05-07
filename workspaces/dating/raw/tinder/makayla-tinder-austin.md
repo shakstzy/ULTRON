@@ -8,7 +8,7 @@ person_id: "69bcd569b9234541b31e3fed"
 phone: null
 status: "new"
 first_seen: "2026-04-06T00:00:00Z"
-last_activity: "2026-04-06T19:27:00Z"
+last_activity: "2026-05-07T03:48:27.474Z"
 last_scrape: "2026-05-01T09:15:15.136Z"
 previous_slugs: []
 migrated_from_shakos: "makayla"
@@ -91,8 +91,10 @@ last_profile_diff: "2026-05-01T09:15:15.136Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 03:48 the "Garden Grove CA" hat in Austin, you transplanted or just visiting the aesthetic
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:17 queued_auto (auto, opener) [draft:6d1fe941] lint=true "the \"Garden Grove CA\" hat in Austin, you transplanted or just visiting the aesthetic"
+- 2026-05-07 03:48 sent (auto, auto-or-hitl) [draft:6d1fe941] lint=true "the \"Garden Grove CA\" hat in Austin, you transplanted or just visiting the aesthetic"

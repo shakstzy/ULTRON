@@ -8,7 +8,7 @@ person_id: "69d530a444e6a632a9a62edd"
 phone: null
 status: "new"
 first_seen: "2026-04-11T00:00:00Z"
-last_activity: "2026-04-19T07:46:00Z"
+last_activity: "2026-05-07T03:47:57.884Z"
 last_scrape: "2026-05-01T09:09:48.454Z"
 previous_slugs: []
 migrated_from_shakos: "madison"
@@ -96,8 +96,10 @@ last_profile_diff: "2026-05-01T09:09:48.454Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 03:47 Pit Vipers at a ski resort is either peak or rock bottom, no in between. which mountain?
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:16 queued_auto (auto, opener) [draft:1d1b7b13] lint=true "Pit Vipers at a ski resort is either peak or rock bottom, no in between. which mountain?"
+- 2026-05-07 03:47 sent (auto, auto-or-hitl) [draft:1d1b7b13] lint=true "Pit Vipers at a ski resort is either peak or rock bottom, no in between. which mountain?"

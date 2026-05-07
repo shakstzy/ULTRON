@@ -70,9 +70,10 @@ attachments:
   sender: me
   sent_at: '2025-07-18T20:23:37.920000-05:00'
   sha256: faf29e6a34d47d30e29acb0342fb80ca1b8511c55205b12ed5d9791e4c7b1122
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of an iMessage group chat discussing tickets and
+    meeting up tonight.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:08.174311+00:00'
   source_available: true
 chat_message_guids_count: 219
 deleted_upstream: null

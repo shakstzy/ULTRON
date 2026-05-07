@@ -132,9 +132,10 @@ attachments:
   sender: me
   sent_at: '2026-04-23T16:19:39.518061-05:00'
   sha256: 720752f62529d45edb5347ff708afa98cbdbc82aab90d8ac667aeeb89fd6af07
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Laptop screen showing terminal panes with color-coded Claude Code engineering
+    and audit logs.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:59:52.535265+00:00'
   source_available: true
 chat_message_guids_count: 60
 deleted_upstream: null

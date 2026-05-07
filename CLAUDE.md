@@ -16,6 +16,7 @@ You are in `~/ULTRON/`, a markdown-only personal memory and knowledge management
 | `personal` | Music production, fitness lifestyle, dating, home, friends, music industry. |
 | `health` | Workouts, nutrition, vitals, sleep, supplements, medical history. |
 | `finance` | Accounts, transactions, investments, taxes, financial goals. |
+| `rental-manager` | Owner-side automation for Adithya's rental listings (Zillow Rental Manager). Pipeline-only, `wiki: false`. |
 
 Add more via `_shell/bin/run-stage.sh bootstrap <new-ws>`.
 

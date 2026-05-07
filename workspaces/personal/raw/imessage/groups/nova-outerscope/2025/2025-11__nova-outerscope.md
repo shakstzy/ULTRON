@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-11-08T19:07:31.300224-06:00'
   sha256: a3f1048d36bbff39c7fcaa505b719a796e700cbea83f26c6fab01a6ddddefb4d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google sharing dialog showing collaborators with edit access and their
+    email addresses.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:39:13.233056+00:00'
   source_available: true
 - id: 592e0386c8b0bd5d
   filename: IMG_7928.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-11-08T19:07:31.300224-06:00'
   sha256: fcce69aa0afc8c98d58545cc179fc61034d73066b6e65e2d929e4d58762be146
-  description: null
-  description_model: null
-  extracted_at: null
+  description: '"NOVA TEAM" Notion board showing pending Outerscope tasks due November
+    8, 2025.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:41:36.879057+00:00'
   source_available: true
 - id: c98e597611e3228c
   filename: IMG_4944.png
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-11-08T19:26:33.252208-06:00'
   sha256: f795cbfe7267a695e0c4dbcd302d6202987c2ba1c0aae03237b1a3805d58af25
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a weekly 5 PM Monday "nova // outerscope" calendar invite
+    with 6 participants.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:39:28.697340+00:00'
   source_available: true
 chat_message_guids_count: 34
 deleted_upstream: null

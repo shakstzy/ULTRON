@@ -45,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2025-09-05T17:46:04.059000-05:00'
   sha256: f89fcc8daa928f7608ccfd2bb42fc44c56deffb70ed8bb4d5bd3cee2dc059dd1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot about a move-in request, Zillow issues, and a current
+    tenant delay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:21.789562+00:00'
   source_available: true
 - id: 166b7e8f51738c1b
   filename: IMG_1899.PNG
@@ -56,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2025-09-30T17:50:37.575641-05:00'
   sha256: 6c69504aa64add81bc04d3a7ffdc3b73fa89b4633ecc282d437ce45019d82980
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Venmo profile for Kumar Nagarajan showing payments for "Sava" and "Mangos
+    - Ambal".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:28.846591+00:00'
   source_available: true
 chat_message_guids_count: 28
 deleted_upstream: null

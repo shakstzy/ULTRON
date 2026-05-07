@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-10-02T22:00:09.199290-05:00'
   sha256: ee97e543e7cdbce02592bb36b34fc1b10ca78627ac505f1a6a3ecafb0bda86b1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram chat introducing Arya's clothing brand to Adam Hubert via
+    an Instagram DM screenshot.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:07.208019+00:00'
   source_available: true
 - id: 07786058d5bf2e5a
   filename: image000001.jpg

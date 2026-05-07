@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-09-26T15:46:30.973334-05:00'
   sha256: c96b973fa1abe54ea26e3939ec0aa66ae2f1199ae76810b1ffcb98ab6d3ff737
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three men smiling in a recording studio with a mixing console and studio
+    monitors.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:56.949088+00:00'
   source_available: true
 chat_message_guids_count: 1
 deleted_upstream: null

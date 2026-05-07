@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2026-03-02T04:35:12.775000-06:00'
   sha256: 3dbad67fca8e27a75fb3217e54b869a6ed6391fbb591a69cb17c3d067428ad40
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram Reel screenshot of a car interior at night with a phone dialer
+    overlay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:36.440080+00:00'
   source_available: true
 - id: 47c8d67d26d8f5b0
   filename: "Screenshot 2026-03-02 at 4.45.24\u202FAM.png"
@@ -57,9 +58,10 @@ attachments:
   sender: me
   sent_at: '2026-03-11T20:40:54.889000-05:00'
   sha256: d8b2e71837fbfd6ac8f6d7bd114c20719d18cd04f981956068011aa7c586af09
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Amazon order for MOZA racing sim gear: R5 wheel, pedals, shifter,
+    and handbrake.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:34.865877+00:00'
   source_available: true
 - id: d82ccc206a65e5d5
   filename: EE707EFD-766A-451A-8DE8-606CEDDB6F95.pluginPayloadAttachment
@@ -79,9 +81,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2026-03-18T16:29:53.686270-05:00'
   sha256: 95adb4182ece7cc72cefd93b94b6566809f03c81265e6496aab6ae6ce1a02821
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Wise app showing a $1,297.00 USD balance and a recent deposit from
+    TopstepTrader LLC.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:44.265952+00:00'
   source_available: true
 - id: a85af4d6581b2e5e
   filename: ScreenRecording_03-19-2026 04-36-38_1.mov
@@ -90,9 +93,10 @@ attachments:
   sender: me
   sent_at: '2026-03-19T06:37:25.792263-05:00'
   sha256: c1d77beaf3c8a45264e585006ee3bec450ced7cb56c13a78171f16b35ac72357
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screen recording of Yung Shak's "Mona Lisa" playing on YouTube
+    Music.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:10.370635+00:00'
   source_available: true
 - id: 8e1ba46919d03ed2
   filename: Health Sync.shortcut
@@ -112,9 +116,10 @@ attachments:
   sender: me
   sent_at: '2026-03-23T19:49:46.519000-05:00'
   sha256: 122314147df79d224ec76daab0c0f753c05e37ec710f185dc911824551159939
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Amazon order update for Adithya Kumar in Austin, TX, showing a March
+    24 estimated delivery.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:37.694486+00:00'
   source_available: true
 chat_message_guids_count: 70
 deleted_upstream: null

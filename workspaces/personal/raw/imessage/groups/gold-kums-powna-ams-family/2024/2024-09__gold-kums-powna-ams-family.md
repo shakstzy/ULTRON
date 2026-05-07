@@ -22,9 +22,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-09-25T18:56:33.838793-05:00'
   sha256: f7455bceb3dfb15a753ef6907b52a6c8752ddd323beb7e0170968308ec14d4a1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A hand holds a labeled lab tube containing bright blue fluorescent
+    liquid under UV light.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:42.497825+00:00'
   source_available: true
 chat_message_guids_count: 15
 deleted_upstream: null

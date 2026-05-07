@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-11-23T02:22:17.272505-06:00'
   sha256: a4e6547f7fb72308915a506b8e1d27fa42e1d2d9299523b953f7298762800b10
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Snapchat screenshot of a physical photo of three men held over a laptop
+    keyboard.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:32:02.071278+00:00'
   source_available: true
 chat_message_guids_count: 3
 deleted_upstream: null

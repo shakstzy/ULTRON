@@ -22,9 +22,10 @@ attachments:
   sender: austin-davis-renter-showing
   sent_at: '2024-12-19T12:10:58.833098-06:00'
   sha256: e1e4253e8b0aac2277eaacad17ced6bb2d5571221b1a227198391bc0f40aca3a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a chat about scheduling a call and contacting
+    a landlord.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:05.950316+00:00'
   source_available: true
 - id: 96cfc51d535f8a34
   filename: Harold.vcf

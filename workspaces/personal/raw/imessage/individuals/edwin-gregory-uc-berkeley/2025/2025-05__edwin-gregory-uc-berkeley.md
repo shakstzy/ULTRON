@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2025-05-20T20:56:21.910872-05:00'
   sha256: dba23f42e5b4c373d04d71fb37e011d71f4ff87a352d59f4b78b9e9bcac1630f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of a 2MB Live Photo preview named preview.pvt with
+    a 04:58 recording pill.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:07.216198+00:00'
   source_available: true
 - id: 4edb89fc1ad35931
   filename: PNG image.jpeg
@@ -44,9 +45,9 @@ attachments:
   sender: edwin-gregory-uc-berkeley
   sent_at: '2025-05-20T20:58:14.555966-05:00'
   sha256: a4e1498940dab3f1154db3d4716a0e9dc459c2479030b6ce617ee30ca7354af7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a red sweatshirt sits on a couch while holding a lit joint.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:59:44.863777+00:00'
   source_available: true
 chat_message_guids_count: 34
 deleted_upstream: null

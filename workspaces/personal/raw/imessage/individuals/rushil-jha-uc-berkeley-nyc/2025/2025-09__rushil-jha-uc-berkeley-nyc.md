@@ -154,9 +154,10 @@ attachments:
   sender: me
   sent_at: '2025-09-25T02:34:11.901121-05:00'
   sha256: 301a355546441ca51ea1b6138f8742dc4d53beb5ef1c3a64ed67f801c2d34ba2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Screenshot of a news article: Kanye West sues a dentist over nitrous
+    oxide addiction.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:13.581157+00:00'
   source_available: true
 - id: ae897517d2115894
   filename: IMG_4838.png

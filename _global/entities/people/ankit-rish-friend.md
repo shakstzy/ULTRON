@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.728659+00:00
+ingested_at: 2026-05-06T22:18:21.307033+00:00
 ingest_version: 1
 content_hash: blake2b:ab1bcedff7159de89446f862522a7f2f
-provider_modified_at: 2026-05-06T22:17:40.728659+00:00
+provider_modified_at: 2026-05-06T22:18:21.307033+00:00
 
 title: Ankit Rish Friend
 slug: ankit-rish-friend
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16145566227"]
   slack: []
-last_synced: 2026-05-06T22:17:40.728659+00:00
+last_synced: 2026-05-06T22:18:21.307033+00:00
 global: true
 ---
 

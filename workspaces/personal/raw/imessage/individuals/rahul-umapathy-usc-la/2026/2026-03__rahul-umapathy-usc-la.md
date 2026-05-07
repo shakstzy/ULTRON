@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-22T18:51:23.180108-05:00'
   sha256: 5ce29e13c84d39ee59ebcf15cad9c39785a51d766cb8ae5d530fbbcc7fbb9ea8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two smiling men take a selfie in an office with glass partitions and
+    a $110M sign.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:46.503163+00:00'
   source_available: true
 chat_message_guids_count: 8
 deleted_upstream: null

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.861201+00:00
+ingested_at: 2026-05-06T22:18:21.534330+00:00
 ingest_version: 1
 content_hash: blake2b:df6891b6f097e4fb8fefe8fa30fb6923
-provider_modified_at: 2026-05-06T22:17:40.861201+00:00
+provider_modified_at: 2026-05-06T22:18:21.534330+00:00
 
 title: Charlie TNT Sports
 slug: charlie-tnt-sports
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14082068212"]
   slack: []
-last_synced: 2026-05-06T22:17:40.861201+00:00
+last_synced: 2026-05-06T22:18:21.534330+00:00
 global: true
 ---
 

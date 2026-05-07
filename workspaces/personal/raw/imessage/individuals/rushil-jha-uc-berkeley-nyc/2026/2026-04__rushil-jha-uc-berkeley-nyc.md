@@ -58,9 +58,9 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2026-04-01T16:58:09.790916-05:00'
   sha256: 138a5bcc8aea6090abaefa685781ae555c83dd4b9eb75cfcb89339d790147a68
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile screenshot of the a16z Investment Team page listing staff members.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:46.981818+00:00'
   source_available: true
 - id: 020adb4290d85bd7
   filename: IMG_2611.heic

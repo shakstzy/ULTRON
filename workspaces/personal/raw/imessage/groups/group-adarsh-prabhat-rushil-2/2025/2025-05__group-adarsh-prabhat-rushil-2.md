@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-05-02T11:44:59.719850-05:00'
   sha256: 7f6f5a9aac38bb757b6a969933adec5cff70a56055fefb43a7c07cef16c5b6c8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a chat with driver Saif Allah Khan in a BYD Han EV stating
+    "I've arrived".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:32:21.290482+00:00'
   source_available: true
 - id: 39f8a2da78001d6a
   filename: IMG_6228.PNG
@@ -45,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-05-11T13:44:31.658000-05:00'
   sha256: b0f6ab1d319972193f4a75dbd32740863894ea4cdd7f172f3bbc3bd657281f90
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Premium flight deal to Amsterdam, Netherlands for $552 roundtrip economy
+    at 45% off.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:32:31.823015+00:00'
   source_available: true
 chat_message_guids_count: 42
 deleted_upstream: null

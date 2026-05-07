@@ -48,9 +48,10 @@ attachments:
   sender: me
   sent_at: '2025-03-18T00:40:50.506000-05:00'
   sha256: 578b111ede9d9933562fe353b351432c3f9078482d16445a79a36ca2819239a3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Uber screenshot: Mychal''s silver Chevrolet Malibu (960U76) picking
+    up in 9 min in Las Vegas.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:52.670891+00:00'
   source_available: true
 - id: 8415dfa8a52b1b7b
   filename: IMG_7193.PNG
@@ -59,9 +60,10 @@ attachments:
   sender: me
   sent_at: '2025-03-18T00:45:12.181000-05:00'
   sha256: d2a713932f639e9cdd2a57ed719556a61298b801bccdeaffc9c861f7d54b2242
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Uber pickup by Mychal in a silver Chevrolet Malibu at Resorts World
+    Las Vegas.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:45:04.198069+00:00'
   source_available: true
 - id: 4fb53b45facfd5f4
   filename: IMG_7194.PNG
@@ -107,9 +109,11 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-03-20T17:55:35.462495-05:00'
   sha256: cf8d5de8905b23e17e1d86e3fa40b933ad81826e19c372da02f064513afb628f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is the professional resume of Zachary Alexander Zane, a student
+    at UC Berkeley. It details his experience in biotechnology, business consulting,
+    and clinical research.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:45:02.522906+00:00'
   source_available: true
 - id: d06755d6513856ed
   filename: IMG_1761.heic
@@ -166,9 +170,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-03-27T04:34:09.116057-05:00'
   sha256: 60f8bd9f069e3b75cca031c401baf0434d22e8062e7119d1522aa36f705a2fae
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Several men using reverse hyper machines in a brightly lit physical
+    therapy gym.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:58.137755+00:00'
   source_available: true
 - id: 9ddc4541434ba2df
   filename: IMG_1790.heic
@@ -260,9 +265,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-03-27T04:34:09.116057-05:00'
   sha256: 735447070e90f9053a6ce8565770fd99d260a5fec8424fca4d1f7e37d4cf6216
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two people using yellow-accented exercise equipment in a physical therapy
+    clinic.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:45:28.845129+00:00'
   source_available: true
 - id: 0403ebb36a58fb19
   filename: IMG_1787.heic
@@ -271,9 +277,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-03-27T04:34:09.116057-05:00'
   sha256: cc4654fa2b55d1e687f19051d8cdbfe6b3d3ce3600e9e5f30012c9cfa07d9fa4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two chiropractic adjustment tables and a subluxation chart in a clinical
+    treatment room.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:45:02.639297+00:00'
   source_available: true
 - id: d7db11ce8b32c678
   filename: IMG_1808.heic
@@ -282,9 +289,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-03-27T04:34:09.116057-05:00'
   sha256: 87c4f6cfee739001554561640ecd7c9499b420225cd395d730ddd11d34d0b152
-  description: null
-  description_model: null
-  extracted_at: null
+  description: An older man in a plaid shirt uses rehabilitation equipment in a physical
+    therapy clinic.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:45:01.654436+00:00'
   source_available: true
 - id: 45dbe1b637630008
   filename: IMG_1748.heic
@@ -316,9 +324,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-03-27T04:34:09.116057-05:00'
   sha256: c322c739b78fc40f04ab1b9fef360eb492ac62e4a89ab955d603ec868bd8e568
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person on a physical therapy machine in a clinic with mountain views
+    through the window.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:45:24.401218+00:00'
   source_available: true
 - id: 46ee60a7cccc867f
   filename: IMG_1795.heic
@@ -327,9 +336,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-03-27T04:34:09.116057-05:00'
   sha256: ded33aa83da90063f36ea5c5d92690d2a2149f6aa396870a1e19485cdcb7f48b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Gym interior with FT-ISOSPORT weight machines, massage chairs, and
+    a person exercising.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:45:19.461484+00:00'
   source_available: true
 - id: 3b47fbf9d47c3286
   filename: IMG_1744.heic

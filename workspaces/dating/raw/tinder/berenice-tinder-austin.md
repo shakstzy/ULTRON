@@ -8,7 +8,7 @@ person_id: "634f6a083629bb0100ef80bc"
 phone: null
 status: "new"
 first_seen: "2026-04-07T00:00:00Z"
-last_activity: "2026-04-07T04:12:00Z"
+last_activity: "2026-05-07T00:07:02.366Z"
 last_scrape: "2026-05-01T05:38:46.601Z"
 previous_slugs: []
 migrated_from_shakos: "berenice"
@@ -92,8 +92,10 @@ last_profile_diff: "2026-05-01T05:38:46.601Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 00:07 the mj ultimatum is noted. smooth criminal or off the wall?
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 00:47 queued_auto (auto, opener) [draft:7c4e14cc] lint=true "the mj ultimatum is noted. smooth criminal or off the wall?"
+- 2026-05-07 00:07 sent (auto, auto-or-hitl) [draft:7c4e14cc] lint=true "the mj ultimatum is noted. smooth criminal or off the wall?"

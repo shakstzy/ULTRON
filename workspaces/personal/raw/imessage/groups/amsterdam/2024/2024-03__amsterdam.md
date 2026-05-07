@@ -351,9 +351,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2024-03-25T21:47:55.674191-05:00'
   sha256: c175932defad05281301efda3e5ecc468cff70b520256f6b4f9a5bb2ec73d3a6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Handwritten note with Keukenhof bus routes from Schiphol, RAI, and
+    Leiden.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:48:03.293325+00:00'
   source_available: true
 - id: a2e3f9b8842e94e3
   filename: IMG_4206.PNG

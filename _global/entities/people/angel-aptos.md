@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.837835+00:00
+ingested_at: 2026-05-06T22:18:21.470790+00:00
 ingest_version: 1
 content_hash: blake2b:c0d86ae95586a44b87b9e5cea3c867f8
-provider_modified_at: 2026-05-06T22:17:40.837835+00:00
+provider_modified_at: 2026-05-06T22:18:21.470790+00:00
 
 title: Angel | Aptos
 slug: angel-aptos
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:17:40.837835+00:00
+last_synced: 2026-05-06T22:18:21.470790+00:00
 global: true
 ---
 

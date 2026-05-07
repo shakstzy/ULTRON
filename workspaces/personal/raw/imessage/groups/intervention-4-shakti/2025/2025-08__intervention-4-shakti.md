@@ -22,9 +22,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-08-15T18:52:16.826173-05:00'
   sha256: bd4ff35f1d9821a9e6dbc819545b79ce58dc637d6065c638892efdcd9697ffdc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man aggressively yells at and pushes another man out of a wood-paneled
+    room.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:49.011020+00:00'
   source_available: true
 chat_message_guids_count: 1
 deleted_upstream: null

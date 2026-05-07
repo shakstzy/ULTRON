@@ -209,6 +209,8 @@ case "$STAGE" in
       > "$RUN_DIR/output/backlinks.txt" 2>&1 || true
     "$ULTRON_ROOT/_shell/bin/graphify-run.sh" \
       > "$RUN_DIR/output/graphify.log" 2>&1 || true
+    "$ULTRON_ROOT/_shell/bin/audit-system-health.sh" \
+      > "$RUN_DIR/output/system-health.md" 2>&1 || true
     claude_invoke \
       "$ULTRON_ROOT/_shell/agents/audit-agent.md" \
       "$RUN_DIR/output/result.json" \

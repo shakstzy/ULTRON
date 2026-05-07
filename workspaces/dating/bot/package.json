@@ -10,6 +10,7 @@
     "pull": "node scripts/pull.mjs",
     "decide": "node scripts/decide.mjs",
     "send": "node scripts/send.mjs",
+    "visualize": "node scripts/visualize.mjs",
     "status": "node scripts/status.mjs",
     "selector-check": "node scripts/selector-check.mjs",
     "self-check": "node scripts/self-check.mjs"

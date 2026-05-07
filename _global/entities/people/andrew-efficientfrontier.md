@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.864784+00:00
+ingested_at: 2026-05-06T22:18:21.539490+00:00
 ingest_version: 1
 content_hash: blake2b:0bd5919170b6e5416cb190560c2559ce
-provider_modified_at: 2026-05-06T22:17:40.864784+00:00
+provider_modified_at: 2026-05-06T22:18:21.539490+00:00
 
 title: Andrew | EfficientFrontier
 slug: andrew-efficientfrontier
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 909-703-0902"]
   slack: []
-last_synced: 2026-05-06T22:17:40.864784+00:00
+last_synced: 2026-05-06T22:18:21.539490+00:00
 global: true
 ---
 

@@ -22,9 +22,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-03T19:05:25.158574-05:00'
   sha256: 55d92878a3dee63997639b017f86ca1f97c6774611147b002b45c84235a2a38b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Claude email: third-party harnesses require separate pay-as-you-go
+    billing starting April 4.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:36.838011+00:00'
   source_available: true
 - id: 3153f6e58ec22db1
   filename: 84C32EF0-996F-42E7-9C97-AB52E02428BF.pluginPayloadAttachment

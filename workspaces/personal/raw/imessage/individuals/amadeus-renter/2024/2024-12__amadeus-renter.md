@@ -190,9 +190,9 @@ attachments:
   sender: me
   sent_at: '2024-12-07T19:22:55.053000-06:00'
   sha256: ef8fc219ad45b335b6a44a5a5e32428b8f1f8c01f17e819a450dd38268229025
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A screenshot of Adithya Kumar's Venmo QR code with the username @shakstzy.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:41:26.116095+00:00'
   source_available: true
 - id: 754a605471248081
   filename: IMG_4587.PNG
@@ -297,9 +297,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-12-11T11:50:35.258723-06:00'
   sha256: f60b41598a38407e045fb093cc963443e95aa863579f5a54d519e055e939d994
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile screenshot of a USD/JPY candlestick chart featuring technical
+    analysis levels and labels.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:41:34.803802+00:00'
   source_available: true
 - id: 5068cb10db000cd4
   filename: IMG_1468.PNG

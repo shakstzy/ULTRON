@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-12-06T20:15:45.472000-06:00'
   sha256: 37691a4a3d88d9484e92791c385eba488a6beb0f4c4889334daabf7bd47633ad
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Email from Diana Sanders offering $1,750 for legal fees via a co-publishing
+    agreement advance.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:55.100750+00:00'
   source_available: true
 chat_message_guids_count: 15
 deleted_upstream: null

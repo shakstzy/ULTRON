@@ -22,9 +22,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2026-01-10T02:19:30.141377-06:00'
   sha256: f3c2ee6bde0491f52829b508bd346a65b6ed0ca5cc4bc294890a4dc1a9ac7dd4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram Reel screenshot of a boy with glasses discussing the Denver
+    Broncos.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:49.265007+00:00'
   source_available: true
 - id: c55611c7ceea3297
   filename: IMG_8518.HEIC
@@ -33,9 +34,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2026-01-10T02:49:56.915900-06:00'
   sha256: facc741a88921eeaae8e5a77ac353a4c72bf4db14dc6569ade4f61d68f1899f9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two young men smile in front of a pizza shop with a red neon sign at
+    night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:25.302435+00:00'
   source_available: true
 - id: a99ce53c80248d35
   filename: IMG_6430.PNG
@@ -56,9 +58,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-01-19T17:51:57.231219-06:00'
   sha256: b2ef5808c28e8cb3f5d6f98c7912d0e6978a790cf7721a106254787d1396d27f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Eleven people posing on a boat deck under a banner reading "Coffee
+    chats start August 22".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:57:10.051516+00:00'
   source_available: true
 - id: 9a64eab716fce95e
   filename: IMG_9518.PNG
@@ -91,9 +94,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-01-19T17:51:57.231219-06:00'
   sha256: f4b392068cdff8cef6df4f496256178a4526610bf4cf5945259c25e6b8990c9c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a striped scarf cheers on a boat under a "Coffee chats start
+    August 22" banner.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:20.040410+00:00'
   source_available: true
 - id: 7d181ac6a40c2804
   filename: IMG_9515.PNG
@@ -102,9 +106,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-01-19T17:51:57.231219-06:00'
   sha256: e2251a2071b1a640a25f82c5d5d85a7068b23701ff949cf6a587d6942ec9f69e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Six young men smiling for an outdoor group photo with a "FALL 2023"
+    banner overlay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:27.039240+00:00'
   source_available: true
 - id: 1626770a30193f60
   filename: IMG_9530.HEIC
@@ -113,9 +118,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-01-21T15:38:20.901192-06:00'
   sha256: 98d970e99d59afc94ac58108e9892a19b82d82005df7e7666515ee11ba2e3c30
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Passengers in an MTA subway car; a man in a black puffer jacket stands
+    using his smartphone.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:36.709439+00:00'
   source_available: true
 - id: a2bbdbd117aa4f24
   filename: IMG_9531.HEIC
@@ -124,9 +130,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-01-21T15:38:20.901192-06:00'
   sha256: cc9ede3b636b7e047c5fa39200083d0631b9ec37b1b8f0a80713f1ffc0a6093f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person in a black puffer jacket and blue backpack looks down at their
+    smartphone.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:20.853603+00:00'
   source_available: true
 - id: 0e1d9d6393b4722c
   filename: 79072445175__6AAFD602-C736-4326-BC5E-9180A906D95C.heic

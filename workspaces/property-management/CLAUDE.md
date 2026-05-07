@@ -44,6 +44,7 @@ Default ULTRON voice. Operational. Numbers verbatim (rent, security deposits, re
 | Active tenancies | `wiki/synthesis/active-tenancies.md` |
 | Open repair / maintenance items | `wiki/synthesis/maintenance-open.md` |
 | Recent inquiries from Zillow | `raw/zillow-rental-manager/<YYYY-MM>/...` |
+| Save a tenant / lead / vendor's phone / email to Apple Contacts | `_shell/skills/contacts-add/SKILL.md` |
 
 ## Agents
 

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-04-03T15:31:21.178018-05:00'
   sha256: 9dee78fab491ac5fb74873aa480d10d51b47638dfc5627143ad02aa0c8259950
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Music co-publishing agreement between Prescription Songs LLC and Adithya
+    Shakthi Kumar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:41.695903+00:00'
   source_available: true
 - id: ff724bce9675da03
   filename: Adobe Scan Apr 7, 2025.pdf
@@ -33,9 +34,11 @@ attachments:
   sender: me
   sent_at: '2025-04-09T13:32:26.602891-05:00'
   sha256: 676586f8b1886fd130d8e91c789474d490a31da9aad5f0a9d57d859b6d4747b8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a music co-publishing agreement between Adithya Kumar and several
+    publishers. It details the grant of rights, royalty splits, and advances for his
+    songs as of March 2025.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:57.178642+00:00'
   source_available: true
 chat_message_guids_count: 11
 deleted_upstream: null

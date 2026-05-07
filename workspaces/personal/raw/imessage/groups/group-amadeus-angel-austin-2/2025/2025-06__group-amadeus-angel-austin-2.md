@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-06-22T15:59:54.743586-05:00'
   sha256: e68aea4b0f7e919e410bcd8dfda74779e225d08b2a06e180a9b90bdafaed4338
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of an active iPhone call with (646) 680-9629 showing a duration
+    of 10:23.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:39:17.164079+00:00'
   source_available: true
 chat_message_guids_count: 11
 deleted_upstream: null

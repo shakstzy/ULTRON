@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.853489+00:00
+ingested_at: 2026-05-06T22:18:21.526677+00:00
 ingest_version: 1
 content_hash: blake2b:7c9c909a4cf5fe883899011ce96fbcc1
-provider_modified_at: 2026-05-06T22:17:40.853489+00:00
+provider_modified_at: 2026-05-06T22:18:21.526677+00:00
 
 title: Areza Hinge Austin
 slug: areza-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19729776000"]
   slack: []
-last_synced: 2026-05-06T22:17:40.853489+00:00
+last_synced: 2026-05-06T22:18:21.526677+00:00
 global: true
 ---
 

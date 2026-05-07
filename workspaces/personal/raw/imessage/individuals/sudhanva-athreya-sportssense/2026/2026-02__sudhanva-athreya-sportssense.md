@@ -22,9 +22,11 @@ attachments:
   sender: sudhanva-athreya-sportssense
   sent_at: '2026-02-03T21:03:25.009208-06:00'
   sha256: 8f20ff5339676f2638d999fa6c82ecf703107be2bfdc654c5edef8872205a4f5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a pitch deck for Playmaker, a personalized AI sports chatbot
+    by SportsSense. It outlines a subscription-based business model and a $2.5M fundraise
+    targeting a 2026 product launch.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:36.795755+00:00'
   source_available: true
 chat_message_guids_count: 2
 deleted_upstream: null

@@ -34,9 +34,10 @@ attachments:
   sender: aashna-hinge-la
   sent_at: '2026-02-16T12:41:13.233104-06:00'
   sha256: 2bc4df7094d5d39e75b15eafd01d429bb3c81ecdd80fd305d48ae94cbde2bb9e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A 4x4 grid of wooden tiles with question marks and a play icon on a
+    green background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:04.089740+00:00'
   source_available: true
 - id: b8a63da5a1e829a8
   filename: ms-GVWdMB.jpeg

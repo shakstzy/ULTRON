@@ -8,7 +8,7 @@ person_id: "68c5325eaa9ff49125ccb481"
 phone: null
 status: "new"
 first_seen: "2026-04-16T00:00:00Z"
-last_activity: "2026-04-16T04:05:00Z"
+last_activity: "2026-05-07T00:41:05.015Z"
 last_scrape: "2026-05-01T06:21:18.059Z"
 previous_slugs: []
 migrated_from_shakos: "debs"
@@ -71,8 +71,10 @@ last_profile_diff: "2026-05-01T06:21:18.059Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 00:41 that bio is setting an expectation. last concert that actually delivered?
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 00:56 queued_auto (auto, opener) [draft:02fa8639] lint=true "that bio is setting an expectation. last concert that actually delivered?"
+- 2026-05-07 00:41 sent (auto, auto-or-hitl) [draft:02fa8639] lint=true "that bio is setting an expectation. last concert that actually delivered?"

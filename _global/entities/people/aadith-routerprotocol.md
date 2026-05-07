@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.740519+00:00
+ingested_at: 2026-05-06T22:18:21.327101+00:00
 ingest_version: 1
 content_hash: blake2b:62eb712a502dbd95ce588e72129eebf7
-provider_modified_at: 2026-05-06T22:17:40.740519+00:00
+provider_modified_at: 2026-05-06T22:18:21.327101+00:00
 
 title: Aadith | RouterProtocol
 slug: aadith-routerprotocol
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:17:40.740519+00:00
+last_synced: 2026-05-06T22:18:21.327101+00:00
 global: true
 ---
 

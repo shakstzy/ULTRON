@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-05-12T19:12:22.879810-05:00'
   sha256: 341fecef35a9aa0f61501ffd6122c677bb9c42ad6205bc76063cb55aaa650260
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram profile of Wei (@Weidai0), Research Partner at 1kx, showing
+    bio and media.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:33.008437+00:00'
   source_available: true
 - id: 50a0bbecf6e2a161
   filename: IMG_8848.PNG
@@ -57,9 +58,10 @@ attachments:
   sender: me
   sent_at: '2025-05-14T20:29:41.222209-05:00'
   sha256: 12f45602c1512507f1ad16f6a443345e94583af0f7cf94dd8e7f5bb623309787
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Ticket for Consensus 2025 Opening Night Party in Toronto featuring
+    Dombresky as Disco Dom.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:39.404152+00:00'
   source_available: true
 - id: bacc3451be6d79e6
   filename: IMG_2980.PNG
@@ -68,9 +70,10 @@ attachments:
   sender: xanos-movednetwork
   sent_at: '2025-05-15T13:46:13.703187-05:00'
   sha256: 885ef262d4150c6ae2aba21c80044ad81b705b1ac09593df02a940c116717933
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a GMer digital ticket for Cafe GM Day 2 featuring a large
+    QR code.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:10.010059+00:00'
   source_available: true
 chat_message_guids_count: 148
 deleted_upstream: null

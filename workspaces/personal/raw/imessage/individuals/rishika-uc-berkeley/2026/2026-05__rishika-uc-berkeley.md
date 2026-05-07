@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-05-02T19:50:21.369679-05:00'
   sha256: d92b0bdcbf04415662a0141fedb35e4d5255bbeba6755f259e4c0946a05d192c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Grey t-shirt with a green cannabis leaf and the black serif text "I
+    CULTIVATE".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:43.492656+00:00'
   source_available: true
 - id: 53e1aff320b61f0a
   filename: IMG_5572.png

@@ -33,9 +33,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2025-12-21T22:31:53.371342-06:00'
   sha256: f5b5c690eb9ff2877ef7b122259c955140ea3e138f358463b72d8b096ac921a2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Memoji of a brown-skinned person in a grey beanie and black hoodie
+    making a 'call me' gesture.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:20.983699+00:00'
   source_available: true
 - id: 6ef348485b198bd3
   filename: ms-DSJ6te.jpeg
@@ -79,9 +80,10 @@ attachments:
   sender: me
   sent_at: '2025-12-23T10:44:30.809000-06:00'
   sha256: aaf142b5dbe2f770b1b9436796923221966dc4fec3fd05198d29a7d6058a75fb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram ad for Take Profit Trader offering 40% off futures accounts
+    using code NOFEE40.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:26.974193+00:00'
   source_available: true
 - id: 2a9c32215b201751
   filename: IMG_7200.png
@@ -90,9 +92,10 @@ attachments:
   sender: me
   sent_at: '2025-12-24T12:20:04.792267-06:00'
   sha256: 82432ce31e7e9ff0d56192540807f7fba074b7c7959900d9ac6850316c1994ff
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a $15,795 online listing for a black 2023 Tesla Model
+    3 with 83,350 miles.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:01.050689+00:00'
   source_available: true
 - id: 7a4d3619e207139a
   filename: "Screenshot 2025-12-27 at 10.41.48\u202FPM.png"

@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-05-21T17:56:15.485000-05:00'
   sha256: c0bb8e77fbe74fd8e4004847f256123053a624997330e4a04d75551487a5878e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Outerscope Records portal showing Member ID #7154932 and IPI #1201860499
+    with zero works.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:17.613557+00:00'
   source_available: true
 - id: 141025455e1661f9
   filename: IMG_3044.png

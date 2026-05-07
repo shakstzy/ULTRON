@@ -46,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2026-03-22T18:44:07.437708-05:00'
   sha256: 1572b78f0c99a80b904cf515a1d3a627b2832dd7d4ec16545fb564f4578fd89e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Four young men pose outside City Lights Books at night next to a large
+    colorful mural.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:35:52.948960+00:00'
   source_available: true
 - id: 3bdf0ddd84e2ad7c
   filename: IMG_7057.png

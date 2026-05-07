@@ -44,9 +44,10 @@ attachments:
   sender: prabhat-nuthakki-uc-berkeley
   sent_at: '2025-04-23T20:31:58.197127-05:00'
   sha256: ca48f58b21d80171b83e107c70fdabebcea7aa2ce4eb66b8af2929a28fe1f60f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Daily Cal post: 1 person stabbed and 2 detained outside Tap Haus on
+    Durant Avenue.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:32:40.161863+00:00'
   source_available: true
 - id: d64c231b007a56be
   filename: 76719853921__79FB97B8-2FFE-4A31-AD6F-6D532DBA3072.heic
@@ -77,9 +78,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-04-25T17:25:37.261301-05:00'
   sha256: eb3ce1500ddfe77f39b02c1337b45139da728f6e0470c337f564a4f5c6181193
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "Google Flights results for SMF to NCE round trip, June 30\u2013July\
+    \ 3, starting at $2,198."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:33:07.235150+00:00'
   source_available: true
 chat_message_guids_count: 42
 deleted_upstream: null

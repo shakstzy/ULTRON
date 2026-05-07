@@ -57,9 +57,10 @@ attachments:
   sender: austin-davis-renter-showing
   sent_at: '2025-01-05T18:42:43.981261-06:00'
   sha256: 135b58e37f694f87d84812a3965049db14324d3c7132e025488e8902655af4a3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a Zillow rental application asking if anyone smokes,
+    with "No" selected.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:42:34.583884+00:00'
   source_available: true
 - id: c0ba6e5f84c92aff
   filename: Rental Applications  Zillow.jpeg
@@ -80,9 +81,10 @@ attachments:
   sender: austin-davis-renter-showing
   sent_at: '2025-01-05T18:43:46.649118-06:00'
   sha256: 026399dc6463bcf51504e1c1ef2e3aa58d4123bfda85d2e19beba35e16bb6b40
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Zillow rental application showing $3,000 monthly income from self-employment
+    as a manager.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:42:59.741799+00:00'
   source_available: true
 - id: 6ffeaaaf457627ee
   filename: Rental Applications  Zillow.jpeg
@@ -91,9 +93,10 @@ attachments:
   sender: austin-davis-renter-showing
   sent_at: '2025-01-05T18:44:53.213478-06:00'
   sha256: 19d2d16f56adc98cdbe5dd5b9266f90a7c40882cbd45fe3428db7763554e125c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Zillow rental application showing a past A&R role at Transparent Arts
+    from 2021 to 2023.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:42:41.083885+00:00'
   source_available: true
 - id: a0425ff5a672e250
   filename: Rental Applications  Zillow.jpeg
@@ -102,9 +105,10 @@ attachments:
   sender: austin-davis-renter-showing
   sent_at: '2025-01-05T18:45:09.458198-06:00'
   sha256: daf7f5163a5fcc49302d984b41b4f136c98f270127f21e8352dd49679a45c4a3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a Zillow rental application's employment verification
+    and past jobs section.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:42:57.685007+00:00'
   source_available: true
 - id: 0e0ffc5154b5c312
   filename: "Screenshot 2025-01-09 at 8.42.27\u202FPM.jpeg"
@@ -113,9 +117,9 @@ attachments:
   sender: austin-davis-renter-showing
   sent_at: '2025-01-09T19:42:49.267541-06:00'
   sha256: e15c06f87630dfd198a879aee270e4a8a4688a6374ef21a8433181f7bc8f1d1c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: TransUnion credit report summary for Austin A Davis with a 714 VantageScore.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:08.036605+00:00'
   source_available: true
 - id: bc9baad8ba02ed9b
   filename: "Screenshot 2025-01-09 at 8.43.07\u202FPM.jpeg"
@@ -124,9 +128,10 @@ attachments:
   sender: austin-davis-renter-showing
   sent_at: '2025-01-09T19:43:15.247943-06:00'
   sha256: 61b631bf0fc1a26d3f0db06ca0bcd0fd6fa5dac51caedccb90077376042187e6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Credit report for Austin Davis showing a 714 VantageScore, employment,
+    and CA addresses.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:34.627740+00:00'
   source_available: true
 - id: 775cbae74a33286f
   filename: Rental Applications  Zillow.jpeg
@@ -182,9 +187,9 @@ attachments:
   sender: austin-davis-renter-showing
   sent_at: '2025-01-30T15:07:52.639588-06:00'
   sha256: 847255e07265905e59319eedee2c619dc17a3fd30643ea625dab52fdee2ba96e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Scheduled Zelle payment confirmation to Kumar Nagarjan (510-449-9967).
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:42:48.698197+00:00'
   source_available: true
 - id: ca6bcd5cbe6ac413
   filename: "Screenshot 2025-01-30 at 4.07.55\u202FPM.jpeg"

@@ -22,9 +22,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-02-05T18:20:44.330661-06:00'
   sha256: db15c6bfa7484add090b0e8c32ebac3684e52b5043eb397632e7bf676f21dcff
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat with Sharkos about temple plans and a FaceTime window
+    showing a bearded man.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:32.305745+00:00'
   source_available: true
 - id: 0102ad528702d81a
   filename: 79296289999__A7F1EC5F-0148-468A-B636-3598371490B7.HEIC
@@ -33,9 +34,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-02-16T13:30:48.024175-06:00'
   sha256: dbedae80cd43fc281ad227c84ebc987bfb7cca9dd1e2d12785a749007a49c42c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Blue comforter on a bed by an open door and a NY Giants Super Bowl
+    XXV banner.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:40.963812+00:00'
   source_available: true
 chat_message_guids_count: 43
 deleted_upstream: null

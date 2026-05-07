@@ -34,9 +34,10 @@ attachments:
   sender: abraham-crypto-lightnodeventures-la
   sent_at: '2025-06-15T12:43:09.744335-05:00'
   sha256: b6953eb2142f6666d2084f4bc00ee9efd283946e550f6daf5eb8354cf2c514b6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Four men pose together indoors with tan cups; one winks while another
+    makes a peace sign.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:05.787856+00:00'
   source_available: true
 - id: a911acee1bc6fb4d
   filename: IMG_4466.heic

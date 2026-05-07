@@ -82,9 +82,10 @@ attachments:
   sender: me
   sent_at: '2025-10-31T11:17:07.701000-05:00'
   sha256: 4e45846fa56331ff1c30b401939bff2cd8b74b20cb5fe766d17588010c9fcacd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram screenshot of Nivetha from EigenLayer following up with Adithya
+    in August 2024.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:16.246525+00:00'
   source_available: true
 - id: 20cae4f410d1ee31
   filename: IMG_7064.png
@@ -93,9 +94,10 @@ attachments:
   sender: me
   sent_at: '2025-10-31T11:17:37.723000-05:00'
   sha256: a1108449b98df91e1e86fd3a0bcacfec56b0299966c3be81dd1f6600b1d08160
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "iMessage screenshot discussing Ashok\u2019s self-driving car vision\
+    \ and a group chat proposal."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:21.803776+00:00'
   source_available: true
 - id: 7a01bc012eedc04a
   filename: resume.docx
@@ -115,9 +117,10 @@ attachments:
   sender: me
   sent_at: '2025-10-31T11:31:24.078000-05:00'
   sha256: 9ee538458728285d7c4c20b8d7053b332b3a81d49d70039531f32d7d073f1b7a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Browser error page for pseu.ai displaying a DNS_PROBE_FINISHED_NXDOMAIN
+    failure message.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:20.555039+00:00'
   source_available: true
 - id: 60df847fd55daf5a
   filename: IMG_9660.png

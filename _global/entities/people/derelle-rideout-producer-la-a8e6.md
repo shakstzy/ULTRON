@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.864719+00:00
+ingested_at: 2026-05-06T22:18:21.539403+00:00
 ingest_version: 1
 content_hash: blake2b:635183d682d4830939a2adcbffe530fb
-provider_modified_at: 2026-05-06T22:17:40.864719+00:00
+provider_modified_at: 2026-05-06T22:18:21.539403+00:00
 
 title: Derelle Rideout Producer LA
 slug: derelle-rideout-producer-la-a8e6
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14147370452"]
   slack: []
-last_synced: 2026-05-06T22:17:40.864719+00:00
+last_synced: 2026-05-06T22:18:21.539403+00:00
 global: true
 ---
 

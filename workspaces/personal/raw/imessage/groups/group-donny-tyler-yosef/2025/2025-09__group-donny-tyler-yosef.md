@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-09-13T18:43:52.805295-05:00'
   sha256: 7eb55591bdef73408fde9d2c53bda167515f292d6d1dd18c5af5a825ad7af1e1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A list of emotional notes about heartbreak and exes in a dark-themed
+    user interface.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:35.229707+00:00'
   source_available: true
 - id: b49c8dea7880acb4
   filename: IMG_6860.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-09-13T18:44:28.434790-05:00'
   sha256: 7eb55591bdef73408fde9d2c53bda167515f292d6d1dd18c5af5a825ad7af1e1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A list of emotional notes about heartbreak and exes in a dark-themed
+    user interface.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:35.229707+00:00'
   source_available: true
 - id: fa7854b385047b8b
   filename: IMG_1511.jpg
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-09-14T01:07:45.848701-05:00'
   sha256: 4f8ab181e52bf9b038761ee0b3ec3c2ad61fd74123c3fc610540ecd894d36570
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'iMessage screenshot: Filipp said if songs aren''t top 100 he''s molesting
+    shak, with HA HA.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:37.734779+00:00'
   source_available: true
 chat_message_guids_count: 12
 deleted_upstream: null

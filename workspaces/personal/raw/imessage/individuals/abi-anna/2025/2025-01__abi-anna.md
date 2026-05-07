@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-01-15T02:58:58.098402-06:00'
   sha256: cd66eb46114e5f78707b9130413bb969b99955c31ecf0c43c699e8150373a135
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Staff monitor computer consoles in the Firefly Aerospace mission control
+    center.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:49.473452+00:00'
   source_available: true
 chat_message_guids_count: 9
 deleted_upstream: null

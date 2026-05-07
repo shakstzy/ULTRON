@@ -35,6 +35,93 @@ def load_sources_config(workspace: str) -> dict:
     return yaml.safe_load(cfg_path.read_text()) or {}
 
 
+def normalize_sources(cfg: dict) -> list[dict]:
+    """Tolerate both list-shape and dict-shape `sources:` in sources.yaml.
+
+    list-shape (legacy):
+        sources:
+          - id: gmail-eclipse
+            type: gmail
+            ...
+
+    dict-shape (current template):
+        sources:
+          gmail:
+            accounts: [...]
+          slack:
+            workspace_id: ...
+
+    Returns a list of dicts; each has at least `type` and `id`.
+    """
+    raw = cfg.get("sources", []) or []
+    workspace = cfg.get("workspace", "unknown")
+    if isinstance(raw, list):
+        return raw
+    if isinstance(raw, dict):
+        out: list[dict] = []
+        for src_type, src_cfg in raw.items():
+            entry: dict = {"type": src_type, "id": f"{src_type}-{workspace}"}
+            if isinstance(src_cfg, dict):
+                entry.update(src_cfg)
+            out.append(entry)
+        return out
+    return []
+
+
+def load_source_routing() -> list[dict]:
+    """Parse the markdown routing table at _shell/docs/source-routing.md.
+
+    Returns a list of row dicts: source, account, scope, routes_to, exclude, notes.
+    Empty list if the file is missing.
+    """
+    p = ULTRON_ROOT / "_shell" / "docs" / "source-routing.md"
+    if not p.exists():
+        return []
+    rows: list[dict] = []
+    in_table = False
+    for line in p.read_text().splitlines():
+        s = line.strip()
+        if (
+            s.startswith("|")
+            and "source" in s
+            and "account" in s
+            and "scope" in s
+            and "routes_to" in s
+        ):
+            in_table = True
+            continue
+        if in_table and s.startswith("|---"):
+            continue
+        if in_table and s.startswith("|"):
+            cells = [c.strip() for c in s.strip("|").split("|")]
+            if len(cells) >= 4:
+                rows.append({
+                    "source": cells[0],
+                    "account": cells[1],
+                    "scope": cells[2],
+                    "routes_to": cells[3],
+                    "exclude": cells[4] if len(cells) > 4 else "",
+                    "notes": cells[5] if len(cells) > 5 else "",
+                })
+        elif in_table and (s.startswith("#") or s.startswith("```")):
+            in_table = False
+    return rows
+
+
+def workspace_has_routing(workspace: str, source_type: str, routing: list[dict]) -> bool:
+    """True if ≥ 1 non-TBD row routes (source_type, _) to workspace."""
+    for r in routing:
+        if r["source"] != source_type:
+            continue
+        targets = [w.strip() for w in r["routes_to"].split(",")]
+        if workspace not in targets:
+            continue
+        if "TBD" in r["routes_to"] or "TBD" in r["notes"]:
+            continue
+        return True
+    return False
+
+
 def load_existing_raw_paths(workspace: str) -> set[str]:
     log = ULTRON_ROOT / "workspaces" / workspace / "_meta" / "ingested.jsonl"
     if not log.exists():
@@ -70,8 +157,14 @@ def main() -> int:
     run_id = sys.argv[2]
 
     cfg = load_sources_config(workspace)
-    sources = cfg.get("sources", []) or []
+    cfg.setdefault("workspace", workspace)
+    sources = normalize_sources(cfg)
     wiki_enabled = cfg.get("wiki", False)
+    routing = load_source_routing()
+
+    # Source types that are gated by source-routing.md (network sources).
+    # `manual` is workspace-local; never gated by the central routing matrix.
+    routing_gated = {"gmail", "drive", "slack", "granola", "fireflies", "imessage", "whatsapp"}
 
     bin_dir = ULTRON_ROOT / "_shell" / "bin"
     run_dir = ULTRON_ROOT / "_shell" / "runs" / run_id
@@ -86,14 +179,25 @@ def main() -> int:
 
     for source in sources:
         source_id = source.get("id", "<unknown>")
+        stype = source.get("type", "")
         bin_name = source.get("bin")
         if not bin_name:
-            stype = source.get("type", "")
             bin_name = f"ingest-{stype}.py"
         script = bin_dir / bin_name
         if not script.exists():
             sys.stderr.write(f"ingest-driver: missing script {script} for source {source_id}\n")
             continue
+
+        # Gate by source-routing.md: refuse to run if every routing row for
+        # (workspace, source_type) is marked TBD. Manual / local sources are
+        # exempt from this check.
+        if stype in routing_gated and routing:
+            if not workspace_has_routing(workspace, stype, routing):
+                sys.stderr.write(
+                    f"ingest-driver: SKIP {source_id} — no non-TBD routing rules in "
+                    f"_shell/docs/source-routing.md for ({stype} -> {workspace}).\n"
+                )
+                continue
 
         out_log = log_dir / f"{workspace}-{source_id}.out.log"
         err_log = log_dir / f"{workspace}-{source_id}.err.log"

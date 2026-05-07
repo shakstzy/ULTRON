@@ -57,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2025-01-23T20:54:44.429443-06:00'
   sha256: 98f9627e83cea6b2c310fb9c2feb246f8046dc7815f92fb1234bcd8e41e66e0b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Snippet from Candor.co stating Google's APM program has a ~0.55% acceptance
+    rate.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:37:07.443611+00:00'
   source_available: true
 - id: 7bbdc111f56fc2b7
   filename: IMG_9815.png
@@ -68,9 +69,10 @@ attachments:
   sender: me
   sent_at: '2025-01-23T20:56:29.341428-06:00'
   sha256: fc6c8e5717782bf7328ff2cecf221b303d959997ea5e555f35647573f15be375
-  description: null
-  description_model: null
-  extracted_at: null
+  description: VS Code window showing Python code and a CleanMyMac 'Heavy memory usage'
+    notification.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:35:06.672325+00:00'
   source_available: true
 - id: 5789f9a1372f5ce2
   filename: IMG_1651.png
@@ -79,9 +81,10 @@ attachments:
   sender: me
   sent_at: '2025-01-23T20:58:45.483171-06:00'
   sha256: ea9c82fbc41edd8d7878217c075277ef5ed6164cd7dcc21c9772204704ab75a6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: US Palantir Software Engineer salary data showing a $227K average total
+    compensation package.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:35:23.559564+00:00'
   source_available: true
 - id: a5915cbafb22970d
   filename: IMG_4492.png
@@ -101,9 +104,9 @@ attachments:
   sender: saif-ali-nyc
   sent_at: '2025-01-23T21:02:33.090263-06:00'
   sha256: c5fb7b228a911b8b0432484612077fa7dc24427a970f90fde546d8d2f63193bc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Barack Obama performs a mic drop at a podium while wearing a tuxedo.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:37:34.160922+00:00'
   source_available: true
 - id: 18479393df5a1027
   filename: 75945067482__F4FA56C4-2281-4E36-9217-2F80DC76B9C6.heic
@@ -123,9 +126,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-01-25T18:48:57.152004-06:00'
   sha256: 58736335d450abf1dfd36595fc2f4bbdd8bd0edd3d7b18519c3e816613bb26b7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A car's side mirror overlooks a snowy, foggy field with sparse pine
+    trees and dormant bushes.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:35:48.905899+00:00'
   source_available: true
 - id: dfbc6d9646ffee5f
   filename: IMG_5368.MOV
@@ -145,9 +149,10 @@ attachments:
   sender: me
   sent_at: '2025-01-28T17:33:40.489719-06:00'
   sha256: 4d7ad397653bb28e37c1f865d277924dfa26cd37fb7427ccdc303878e6e616a6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat about Europe plans with a screenshot of EthCC 2025 dates
+    in Cannes.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:35:19.580669+00:00'
   source_available: true
 - id: 3bcbcc6405340ef0
   filename: IMG_7160.PNG
@@ -156,9 +161,10 @@ attachments:
   sender: prabhat-nuthakki-uc-berkeley
   sent_at: '2025-01-29T11:35:19.141905-06:00'
   sha256: 3e3490ee403d01690897d875b3aad096a0b8e626bc6c983be61f252582b07dcb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot showing Jane Street's $120.19/hr Summer 2025 intern pay
+    and $25k bonus in NYC.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:35:38.318364+00:00'
   source_available: true
 - id: 9ef676bcb15360dc
   filename: IMG_5106.PNG
@@ -167,9 +173,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-01-29T15:38:04.502465-06:00'
   sha256: 212c64a3a96629bf9d80bb6999294a1d77e0a4e15aa02a2bd5fc706a5cf189aa
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google search results for "alibaba ai" news about Alibaba's AI model
+    surpassing DeepSeek.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:36:18.651428+00:00'
   source_available: true
 - id: 6676066a05d66833
   filename: IMG_5126.PNG
@@ -178,9 +185,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-01-30T15:45:54.995122-06:00'
   sha256: 0f37d8b334d4f477ba15ea03650a93fec0be9dae1ee0e3c753049616a91fb47c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a Reddit thread about SDE job postings requiring LeetCode
+    profiles.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:36:47.101806+00:00'
   source_available: true
 chat_message_guids_count: 204
 deleted_upstream: null

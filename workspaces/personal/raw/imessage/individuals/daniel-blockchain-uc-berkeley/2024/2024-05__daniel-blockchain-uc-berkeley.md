@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-05-03T22:22:50.299651-05:00'
   sha256: a32022fb9fee98a7ccfdce889f43078311a5dda94a857704f1c021d745c85ee8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men smiling for a selfie under outdoor string lights; one gives
+    a thumbs up.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:27.866710+00:00'
   source_available: true
 chat_message_guids_count: 1
 deleted_upstream: null

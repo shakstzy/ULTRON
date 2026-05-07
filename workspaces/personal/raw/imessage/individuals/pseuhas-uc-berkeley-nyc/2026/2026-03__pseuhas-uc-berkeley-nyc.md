@@ -58,9 +58,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-03-19T22:34:47.923811-05:00'
   sha256: 32d80d899b95d4f22943128891c0a19f2508059f7fac0000ccf1f2b9396a8541
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a blue sweater hits a 'Combo Boxer' arcade machine and scores
+    871.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:36:14.888476+00:00'
   source_available: true
 chat_message_guids_count: 9
 deleted_upstream: null

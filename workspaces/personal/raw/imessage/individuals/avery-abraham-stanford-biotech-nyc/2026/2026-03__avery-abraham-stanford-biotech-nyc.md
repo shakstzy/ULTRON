@@ -103,9 +103,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-03-09T18:24:40.300498-05:00'
   sha256: f72927085a29a19ee56ecd08ae1aac0e98e69f5bd24539e6298543b757e7d9c0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage thread where Avery Haskell pitches a male fertility startup
+    to Austin "AJ".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:50.289699+00:00'
   source_available: true
 - id: 51f119a1e3ef4173
   filename: AA0AE0B2-0426-4758-AAFC-90F0523297BF.pluginPayloadAttachment
@@ -160,9 +161,11 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-03-11T13:36:37.706424-05:00'
   sha256: 891e2a2ab19dc11cf698475629b87fec7b8b9036dbd768d9704ceb62391ce6f4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Seedbox pitch deck for a Harvard-built, at-home sperm analysis device.
+    It outlines their AI-powered diagnostic hardware and vision for a broader male
+    health platform.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:32.462179+00:00'
   source_available: true
 - id: 830a2155734d4e84
   filename: D8E4CA9C-C597-4F85-9B0E-52A4FC56E133.pluginPayloadAttachment
@@ -250,9 +253,10 @@ attachments:
   sender: me
   sent_at: '2026-03-27T14:02:49.844832-05:00'
   sha256: af50c5bb38a2d25d8f138ec00d14d1c945c193bdedede1be332dabafd212903c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Product page for an out-of-stock Mac Studio M4 Max listing its port
+    and display specs.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:51.698181+00:00'
   source_available: true
 - id: 84e54a0405627dee
   filename: IMG_8757.png
@@ -261,9 +265,10 @@ attachments:
   sender: me
   sent_at: '2026-03-27T14:04:32.820793-05:00'
   sha256: 2cb00749fa989cf56e5dadebf92afa49bc4b237a4b7c3a1ea4528ef1af8369b7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple Store screenshot comparing 36GB and 64GB unified memory pricing
+    and delivery.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:46.666246+00:00'
   source_available: true
 - id: 8a0a05e597b2e6bc
   filename: IMG_6309.png
@@ -284,9 +289,10 @@ attachments:
   sender: me
   sent_at: '2026-03-27T14:06:22.976663-05:00'
   sha256: 1cdbce730437b68751ba7d730885174d8999193f8977188a07e2d0ae01ceddb7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Retail listing for Apple Mac Studio M3 Ultra and M4 Max models showing
+    prices and availability.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:36.152762+00:00'
   source_available: true
 - id: 0b8157a6dcc3fbd4
   filename: 1C0DC99F-CE1B-4CB5-B9BB-EA0ED518D9AD.pluginPayloadAttachment
@@ -401,9 +407,10 @@ attachments:
   sender: me
   sent_at: '2026-03-27T18:11:23.604745-05:00'
   sha256: affca140e8d9f407af6e0eb11215f923fe52769c0107f4082fc911e6e1b4d4af
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google AI Overview comparing M5 Max MacBook Pro (2026) and M3 Ultra
+    Mac Studio performance.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:45.604153+00:00'
   source_available: true
 - id: 359d7edc4a522718
   filename: IMG_2839.png
@@ -424,9 +431,10 @@ attachments:
   sender: me
   sent_at: '2026-03-27T18:17:45.226165-05:00'
   sha256: 6b741b0cf311cf52f1d0ef3a9de996b615fbbb077e13ce7bc2fbdd09e50e59d5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Chat screenshot about AI hardware strategy using Claude API, MacBook,
+    and DGX Spark.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:47.730944+00:00'
   source_available: true
 - id: c4871cd8b8fdc249
   filename: IMG_6056.png
@@ -505,9 +513,10 @@ attachments:
   sender: me
   sent_at: '2026-03-29T20:37:58.219575-05:00'
   sha256: c650f4e3cf805e1662f8c098a96ffec4e94e9aa08c7d211bff97771e4d0eb306
-  description: null
-  description_model: null
-  extracted_at: null
+  description: eBay screenshot of a $4,995.38 Apple Mac Studio M3 Ultra with 256GB
+    RAM and 4TB SSD.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:53.919451+00:00'
   source_available: true
 - id: 07e77b833a6a9529
   filename: IMG_0153.png
@@ -573,9 +582,10 @@ attachments:
   sender: me
   sent_at: '2026-03-30T11:03:39.969858-05:00'
   sha256: ac2765796e7faeba01061764cb3f6eb97d1432d81f91d2f9c9933200cec47fbb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple Store checkout showing $7,899 price, 14-16 week shipping, and
+    July 29 pickup.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:51.698481+00:00'
   source_available: true
 - id: 6336f92136723350
   filename: IMG_6355.png
@@ -700,9 +710,10 @@ attachments:
   sender: me
   sent_at: '2026-03-31T22:02:51.488000-05:00'
   sha256: 10d209a4957432b3b83147da39981ff2346311344e551d8ec615e5c2e57388d2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Amazon product listings for NVIDIA DGX Spark and GMKtec AI Mini PC
+    supercomputers.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:25.114888+00:00'
   source_available: true
 - id: 0da7f51c123988a0
   filename: IMG_9964.png

@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2026-03-15T18:08:15.909000-05:00'
   sha256: a0843d68518171cf5ae6316ca9e243b89cdb1f3b1befd153a33425ff799ffd89
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person wearing a VR headset uses a Moza racing simulator setup to
+    practice drifting.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:42:12.931893+00:00'
   source_available: true
 chat_message_guids_count: 33
 deleted_upstream: null

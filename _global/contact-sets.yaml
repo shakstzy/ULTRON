@@ -1,0 +1,45 @@
+# Contact Sets
+#
+# Named sets of contacts used by source-routing.md to filter source-native streams
+# (iMessage, WhatsApp, Telegram) into the right workspace.
+#
+# Membership:
+# - Each set is a list of canonical contact identifiers (E.164 phone, lowercase email,
+#   or platform handle).
+# - A contact may belong to multiple sets. The ingest driver routes the message to
+#   each matching workspace.
+# - A contact in NO named set falls through to the source's default workspace
+#   (per `source-routing.md` `(default)` row, currently `personal`).
+#
+# Conflict handling:
+# - If a single contact is in two sets that route to different workspaces with
+#   `ingest_unrouted_default: skip`, the message lands in BOTH workspaces (dedupe
+#   by content hash still works).
+# - Lint agent flags contacts that appear in 3+ sets as ambiguous.
+#
+# Edits take effect on the next `run-stage.sh ingest <ws>` or per-source ingest call.
+# Adithya fills these. Empty sets are a valid intermediate state.
+
+sets:
+  dating:
+    description: Contacts who came from a dating-app match and have moved to iMessage / phone.
+    members: []        # add as: ["+15125551234", ...] or ["@imessage-handle", ...]
+
+  music:
+    description: Music-industry contacts (collaborators, engineers, label / venue contacts).
+    members: []
+
+  property-mgmt:
+    description: Tenants, leads, vendors, contractors for rental units.
+    members: []
+
+  fitness-coach:
+    description: Trainer, nutritionist, PT, therapist contacts (route to health).
+    members: []
+
+  finance-pro:
+    description: Accountant, financial advisor, broker contacts (route to finance).
+    members: []
+
+# Add more named sets as workspace-routing requirements emerge. Naming convention:
+# kebab-case, prefer the workspace name as suffix when a set maps 1:1 to a workspace.

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-12-05T17:38:10.497158-06:00'
   sha256: 397d8e6fde046488bd0ccd32b6240452e80cd1415a047fbd8648ff287c763c12
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dark-mode text message bubble about trying and checking if fees will
+    be covered.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:48.569802+00:00'
   source_available: true
 chat_message_guids_count: 11
 deleted_upstream: null

@@ -1,0 +1,61 @@
+---
+slug: "alita-bumble-austin"
+first_name: "alita"
+source: "bumble"
+city: "austin"
+match_id: "zAhMACjIzNDg0MTAwNTEIe-K7hQAAAAAgvo8GcblQLzLn09LCL0CwX7z66GQREPQR8j4bAcH1dIU"
+person_id: null
+phone: null
+status: "expired"
+expires_at: "2026-05-06T23:17:41.466Z"
+first_seen: "2026-05-04T03:23:54.988Z"
+last_activity: "2026-05-05T00:40:16.081Z"
+last_scrape: "2026-05-06T23:17:42.468Z"
+previous_slugs: []
+---
+
+## Profile
+
+- age: 23
+- height: "5' 3''"
+- height_cm: 160
+- photo_verified: true
+- lifestyle_badges: ["5' 3''","Sometimes","Undergraduate degree","Socially","Woman","Relationship","Open to kids","Cancer","Liberal","Christian"]
+- prompts.0.q: "What makes a relationship great is"
+- prompts.0.a: "Open communication"
+- prompts.1.q: "To me, self-care is"
+- prompts.1.a: "Binging a new show and getting Açaí"
+- prompts.2.q: "My favorite way to do nothing is"
+- prompts.2.a: "Doom scrolling"
+- photos_count: 4
+
+## Profile changes
+
+(none yet)
+
+## Visual
+
+<!-- engine=gemini-pro account=avery@seedboxlabs.co ts=2026-05-04T03:40:16.324Z -->
+
+- vibe: casual collegiate, relaxed everyday
+- settings: urban street at night, bedroom, outdoor greenery, bathroom
+- activities: graduating, going out/nightlife
+- props: graduation gown, smartphone with textured grid case, dried flowers in vase, bathroom toiletries
+- pets: (none observed)
+- group_context: alone in all photos
+- style_signals: casual and comfortable, oversized graphic tees, button-up cardigans, light wash jeans, long dark hair styled both straight and wavy
+- environments: home / outdoor / nightlife mix
+- notable_signals: Illinois College graphic t-shirt, graduation gown indicating recent grad, distinct grid-textured phone case
+- red_flags: (none observed)
+
+## Conversation
+
+**her** 2026-05-04 03:23 Beach day>>> hike
+**you** 2026-05-04 03:23 Wyddd
+**her** 2026-05-04 03:23 Watching Korean drama
+**her** 2026-05-04 03:23 Wbu
+**you** 2026-05-05 00:40 chilling at home, which drama you on? always need recs
+
+## Outbound log
+
+- 2026-05-05 00:40 sent (auto, reply) [draft:71139b3b] lint=true "chilling at home, which drama you on? always need recs"

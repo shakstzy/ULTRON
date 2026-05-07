@@ -22,9 +22,10 @@ attachments:
   sender: evan-renter
   sent_at: '2024-10-08T12:46:57.274020-05:00'
   sha256: ae7fe2f5b19b70c5f34f7ee2985b6aa5e3023efd6d0f6865c530015a383dfb20
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A white Grin floss pick on a white napkin over a brown marbled stone
+    surface.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:41:16.349526+00:00'
   source_available: true
 - id: e5fffd51f576edf7
   filename: 75010234543__CF06CA42-5333-4996-9744-6109838BB1FB.jpeg
@@ -44,9 +45,10 @@ attachments:
   sender: evan-renter
   sent_at: '2024-10-08T12:46:57.274020-05:00'
   sha256: 5de707db9e4260edd040f81ddb088351c3697553570338b6f65c8477aa6a49fa
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A black trash bin inside a kitchen cabinet overflowing with empty white
+    eggshells.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:41:05.346883+00:00'
   source_available: true
 - id: 375c56cad6c64221
   filename: 75062212866__922EECFD-24AC-45A7-9E6B-53E1FAAB9559.jpeg
@@ -77,9 +79,10 @@ attachments:
   sender: evan-renter
   sent_at: '2024-10-14T13:13:37.051522-05:00'
   sha256: 44569417257b61ca349651f3af63cc06ae7b24a415f5edf31f1d77bec80e6110
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Five white trash bags with yellow and red drawstrings sitting on a
+    dark floor.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:40:40.381545+00:00'
   source_available: true
 - id: 31e77c0a638466ed
   filename: IMG_3757.MOV
@@ -88,9 +91,9 @@ attachments:
   sender: evan-renter
   sent_at: '2024-10-18T02:08:10.076616-05:00'
   sha256: e43a8c37b8ce46255687799679780040076fb59a7cbbf7e1250922dcd84c89bf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Ants crawling on a white wall near electrical outlets and a Ring keypad.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:40:47.185487+00:00'
   source_available: true
 chat_message_guids_count: 6
 deleted_upstream: null

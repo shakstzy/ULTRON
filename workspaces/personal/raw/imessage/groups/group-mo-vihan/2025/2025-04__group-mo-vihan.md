@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-04-26T20:34:51.421956-05:00'
   sha256: 2be9c71ee896b4858f77639b31bdcdd35dfaea8cd88e8ce5f93f2d90573983a7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram story of South Beach hotel booking for May 2025 with 'NFTCLT'
+    promo code applied.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:28:31.363083+00:00'
   source_available: true
 chat_message_guids_count: 6
 deleted_upstream: null

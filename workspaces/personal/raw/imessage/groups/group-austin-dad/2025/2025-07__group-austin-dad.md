@@ -22,9 +22,9 @@ attachments:
   sender: austin-davis-renter-showing
   sent_at: '2025-07-21T12:00:04.500326-05:00'
   sha256: 7e697e939cea86abb5e11d40b0e2aeffa69dbba4cfae9c004e1918ed63910643
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Pending $955.10 transfer from Kira Hunston on July 16 at 6:59 AM.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:38:54.558986+00:00'
   source_available: true
 chat_message_guids_count: 38
 deleted_upstream: null

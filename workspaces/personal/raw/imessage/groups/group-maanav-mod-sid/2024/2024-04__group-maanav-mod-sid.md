@@ -34,9 +34,10 @@ attachments:
   sender: sid-sridhar-uc-berkeley
   sent_at: '2024-04-26T20:14:28.483974-05:00'
   sha256: 4032377ec55925c85f727bdae6844d3130628e6ee08222d2f214db31d6f70014
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two metallic figures face each other on a checkered floor with glowing
+    pink icons in the sky.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:47.161656+00:00'
   source_available: true
 - id: 61cd7a0e21f96ad0
   filename: Audio Message.caf

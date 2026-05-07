@@ -70,9 +70,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-06-21T12:23:02.220191-05:00'
   sha256: df428a9e53cb7f300924bdd875f23e2c6928bf347d5fb889353e11ffcc5f1108
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a blue shirt jogs past the Moti Mahal Delux Indian Cuisine
+    storefront.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:35:42.569674+00:00'
   source_available: true
 - id: e5cfac22269dd9cf
   filename: IMG_7442.png

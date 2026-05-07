@@ -45,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: 078dfa72e59740d6207de6944580a31c61984509f61b78b8d7c538f60a18cdbd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hinge chat screenshot where Eric says "You're so perfect" and the user
+    mentions compatibility.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:48.125384+00:00'
   source_available: true
 - id: a6be9552d5206fed
   filename: PHOTO-2026-02-19-16-56-27.jpg
@@ -56,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: 0a5d437d07c60a608e09ce4f2b87265d46a15a97e5c22bf50b424b818b391640
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hinge chat screenshot with Suhas discussing biryani, a Taco Bell order,
+    and vegetarianism.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:14.803244+00:00'
   source_available: true
 - id: d17fb1f9e861933f
   filename: PHOTO-2026-02-19-16-56-27.jpg
@@ -67,9 +69,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: 67a0334f4a62678bc7925007d6d4dd0cc423d102343f03354d6d63ab1789da1f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dating app chat with Suhas debating ranch on pizza and building a Lego
+    set near UCLA.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:21.651628+00:00'
   source_available: true
 - id: 213742fd0692f95f
   filename: PHOTO-2026-02-19-16-56-27.jpg
@@ -114,9 +117,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: 11c38cfc8a032f1517b9f5cf3b659426b62f1163088ed0dd584d2b320601b0d4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hinge chat screenshot with Suhas discussing biryani and vegetarian
+    Taco Bell orders.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:50.301320+00:00'
   source_available: true
 - id: 5a2718747bd7c8cc
   filename: PHOTO-2026-02-19-16-56-27.jpg
@@ -137,9 +141,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: 1ee977bc675b24783e1fd5a43547209e0159d81499b6f4d485b4098881ca4ec3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dating app chat with Chris, showing a video like and his message "heyy
+    whats up !".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:06.330616+00:00'
   source_available: true
 - id: 100bd370f9b71818
   filename: PHOTO-2026-02-19-16-56-27.jpg
@@ -184,9 +189,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: 078dfa72e59740d6207de6944580a31c61984509f61b78b8d7c538f60a18cdbd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hinge chat screenshot where Eric says "You're so perfect" and the user
+    mentions compatibility.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:48.125384+00:00'
   source_available: true
 - id: 1ecfdb2aaf08bdce
   filename: PHOTO-2026-02-19-16-56-27.jpg
@@ -195,9 +201,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: 11c38cfc8a032f1517b9f5cf3b659426b62f1163088ed0dd584d2b320601b0d4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hinge chat screenshot with Suhas discussing biryani and vegetarian
+    Taco Bell orders.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:50.301320+00:00'
   source_available: true
 - id: 112b231c387e3c04
   filename: PHOTO-2026-02-19-16-56-27.jpg
@@ -206,9 +213,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: 67a0334f4a62678bc7925007d6d4dd0cc423d102343f03354d6d63ab1789da1f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dating app chat with Suhas debating ranch on pizza and building a Lego
+    set near UCLA.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:21.651628+00:00'
   source_available: true
 - id: 52d5a2a41187134c
   filename: PHOTO-2026-02-19-16-56-27.jpg
@@ -229,9 +237,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: 2ad70df69180e041c12fd9e1ec56b3df5b00e6cb547ce13f994198e19b9819d6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Tinder chat with Malek showing a concert selfie and a message with
+    his Instagram handle.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:53.099604+00:00'
   source_available: true
 - id: 2f638d47c14328d3
   filename: PHOTO-2026-02-19-16-56-27.jpg
@@ -240,9 +249,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: 2f6d9b59c0514a605615016599116ae4e7ba7f4bb3002c3fa5d631a1383ab5f9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hinge chat screenshot showing a liked photo of Andrew playing a grand
+    piano.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:13.030795+00:00'
   source_available: true
 - id: 1a3604e010c87db4
   filename: PHOTO-2026-02-19-16-56-27.jpg
@@ -275,9 +285,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: 5e8f76110eca0cde4422f57540fe258d46d58be91c0a7e660cfcee348b834185
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hinge chat with Suhas debating ranch on pizza and planning to build
+    Legos at UCLA.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:20.526829+00:00'
   source_available: true
 - id: c906b38ffc05665f
   filename: PHOTO-2026-02-19-16-56-27.jpg
@@ -298,9 +309,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: fac75339adbd478b34a56fd42bd43338d70a99f6ce1405569e2204050d3be10a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hinge chat screenshot with Will about building houses and New Year's
+    plans.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:23.618940+00:00'
   source_available: true
 - id: d6642b54dcf38c21
   filename: PHOTO-2026-02-19-16-56-27.jpg
@@ -309,9 +321,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: 8acf0eddd2990f6487893d77caf9a8522345c8cb3631ffe339639540c00f48f3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dating app chat screenshot with Suhas about food and the Instagram
+    handle aartip_4779.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:19.302601+00:00'
   source_available: true
 - id: 38bd972e8ac6175b
   filename: PHOTO-2026-02-19-16-56-27.jpg
@@ -332,9 +345,10 @@ attachments:
   sender: me
   sent_at: '2026-02-21T10:28:09.410000-06:00'
   sha256: e5cf4265c034549dffa6b8d01343c91f7c9a68401bd87c5d52d8570dc3117c49
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hinge chat screenshot where Eric says "You're so perfect" in response
+    to a liked photo.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:24.242570+00:00'
   source_available: true
 chat_message_guids_count: 4
 deleted_upstream: null

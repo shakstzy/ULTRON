@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-02-27T10:52:28.645000-06:00'
   sha256: 8d9ba33a0fe05334c339a3119ef668a2b1690d11bce895658cb033a68f774347
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram DM conversation with parth.juth featuring snowman photos
+    and laughing emojis.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:41:44.210327+00:00'
   source_available: true
 chat_message_guids_count: 1
 deleted_upstream: null

@@ -33,9 +33,9 @@ attachments:
   sender: me
   sent_at: '2025-01-09T23:17:49.367783-06:00'
   sha256: 8e846a0e30f9343c00cb69f37d4a98ca6c1023e670b71287c1e1cbc5c6ad5789
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Bar chart of the 2023 Los Angeles resident population by age and sex.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:41:58.441790+00:00'
   source_available: true
 - id: b633c8633223164d
   filename: IMG_3185.png
@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2025-01-09T23:18:03.138586-06:00'
   sha256: d6cf9d41a3aca248c13aa686df28705e8ecca34423c413040747527490e72278
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Bar chart of New York, NY population by age group, showing 25-29 as
+    the largest demographic.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:42:12.918421+00:00'
   source_available: true
 - id: 8e3888595d8dadc4
   filename: IMG_5911.png
@@ -55,9 +56,10 @@ attachments:
   sender: me
   sent_at: '2025-01-09T23:18:13.454569-06:00'
   sha256: 234b3948f7197c20c42edb9966faae62e4e39e5f6247b86b7bb66c87ae6a4209
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 2021 New York City population pyramid chart categorized by age, gender,
+    and surplus.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:41:54.809143+00:00'
   source_available: true
 - id: b96805703cfc3de3
   filename: IMG_2858.png

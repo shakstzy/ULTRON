@@ -80,9 +80,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-23T22:17:51-05:00'
   sha256: 67470c5fe006d6ce7f7484e76dec9c93a88c06acf17e5feb30a0b8f60a7e9acc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a Google search result for DK Metcalf's top speed of
+    22.6 MPH.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:28.507731+00:00'
   source_available: true
 - id: 2764fbe53f6c4016
   filename: image000000.jpg
@@ -91,9 +92,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-26T18:01:07-05:00'
   sha256: cdc440b37a060694fa33841d257823d97a62ecb7a5c486d948e5fbbd25583fc4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Magazine spread about Stephen Etter's financial literacy class for
+    Cal athletes.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:32.052500+00:00'
   source_available: true
 chat_message_guids_count: 95
 deleted_upstream: null

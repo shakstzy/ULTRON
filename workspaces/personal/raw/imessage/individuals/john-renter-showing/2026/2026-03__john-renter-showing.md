@@ -55,9 +55,10 @@ attachments:
   sender: john-renter-showing
   sent_at: '2026-03-16T19:43:27.710300-05:00'
   sha256: 4ff56742d6f4ab08127436e1b19f9eeab1076abe879a7336225470b9b0f5e2f6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a FedEx SMS notification confirming package receipt with
+    a tracking link.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:42.501983+00:00'
   source_available: true
 - id: 11cf2f9da291988c
   filename: IMG_1674.png

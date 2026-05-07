@@ -34,9 +34,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-07-17T14:15:11.592447-05:00'
   sha256: 7496a9992343800cb0cbbe7654a138b770bd151dea52038ab4f268bfa02fbe5d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Framed artwork of Mahatma Gandhi with the quote "WHERE THERE IS LOVE
+    THERE IS LIFE" on a wall.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:44.547866+00:00'
   source_available: true
 - id: 1c9420ce7ad49c4e
   filename: IMG_7558.PNG
@@ -56,9 +57,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-07-20T14:25:57.046346-05:00'
   sha256: 6e06806251a4916de5fdbe1a5fdf8d93aefb5c8fddd01117081e932e2b0e4f26
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling woman in a black crop top and tan pants posing with her middle
+    fingers up.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:25.344420+00:00'
   source_available: true
 - id: 59ced93bfbfb0a91
   filename: 82E1EE97-8807-4A0A-9085-D5788D9E9DA4.mov
@@ -67,9 +69,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-07-22T20:38:17.876635-05:00'
   sha256: e6e736fe738d779125a9ab42a75f52e3dca4683cd43fec76b561190370e81dbb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man hits a glass bong, exhales smoke, and makes a wide-eyed, intense
+    expression.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:31.839739+00:00'
   source_available: true
 - id: 0e1f190e5561cf77
   filename: IMG_7570.png
@@ -78,9 +81,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-07-22T20:38:26.856634-05:00'
   sha256: 3fe482bbb937c0d94adc2af3b426200e02532b339fad62e0c376fb7187c4c3cf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram post screenshot reporting the death of Telugu actor Fish
+    Venkat at age 53.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:41.916364+00:00'
   source_available: true
 - id: db94da080b845b9b
   filename: IMG_7569.PNG
@@ -101,9 +105,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-07-23T16:40:18.325625-05:00'
   sha256: 311bac1deff3437b2aa37a65833e69bab1edd8a42e09f536e940efe1c126bf4b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a dark hoodie peeks into the frame from the bottom next to
+    white window blinds.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:46.337317+00:00'
   source_available: true
 chat_message_guids_count: 36
 deleted_upstream: null

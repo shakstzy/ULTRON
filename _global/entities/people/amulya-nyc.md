@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.856291+00:00
+ingested_at: 2026-05-06T22:18:21.529720+00:00
 ingest_version: 1
 content_hash: blake2b:a6710264e65c0bb516248085f092ca20
-provider_modified_at: 2026-05-06T22:17:40.856291+00:00
+provider_modified_at: 2026-05-06T22:18:21.529720+00:00
 
 title: Amulya NYC
 slug: amulya-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17329979670"]
   slack: []
-last_synced: 2026-05-06T22:17:40.856291+00:00
+last_synced: 2026-05-06T22:18:21.529720+00:00
 global: true
 ---
 

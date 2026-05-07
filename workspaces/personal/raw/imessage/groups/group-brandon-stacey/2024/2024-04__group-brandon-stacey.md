@@ -33,9 +33,9 @@ attachments:
   sender: stacey-brandon
   sent_at: '2024-04-01T17:20:07.070508-05:00'
   sha256: 9a5aab1e849f27daeec2a7525e5862a12f6aa66ad0e07df6019fe659425d3cb2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Box of Tide Free & Gentle powder laundry detergent.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:10:13.111013+00:00'
   source_available: true
 - id: 68ce54287706f9e9
   filename: 73371447789__0EC00C0B-E1B0-4567-9F10-1D00BDCB2FAB.HEIC
@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2024-04-01T20:34:46.997053-05:00'
   sha256: 29c3cf535ac20081b58d1943fa76a9c642704f8210da23e2e61b8584e6301c1b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Tide Free & Gentle and Tide with Downy detergent bottles on a store
+    shelf priced at $12.99.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:09:55.564898+00:00'
   source_available: true
 chat_message_guids_count: 6
 deleted_upstream: null

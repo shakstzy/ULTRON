@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2024-04-28T22:43:43.386000-05:00'
   sha256: 8c0e15e959b3750ad1b16b62885e47e5ef7ecca5a2907c282fa488133a35b165
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Flyer offering 40% off Warm Audio gear at Sweetwater for Full Sail
+    University students.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:54:42.663597+00:00'
   source_available: true
 chat_message_guids_count: 12
 deleted_upstream: null

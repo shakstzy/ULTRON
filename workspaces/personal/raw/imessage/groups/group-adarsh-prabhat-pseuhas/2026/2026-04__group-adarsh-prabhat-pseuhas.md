@@ -33,9 +33,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-04-10T12:05:17.872620-05:00'
   sha256: 4bb2b5cf7337d2e3e50eb16c3c15641b0fbbb6c4b3397422c525229626a21749
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram post of Sahith Vallurupalli's mugshot for a Driving While
+    Impaired charge.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:17.335415+00:00'
   source_available: true
 - id: 2db3d23ee17a36ea
   filename: 79754516800__5DF945D6-6E15-4DBF-8473-CF40AC9F412B.fullsizerender.HEIC
@@ -79,9 +80,10 @@ attachments:
   sender: me
   sent_at: '2026-04-10T15:24:15.456291-05:00'
   sha256: bded93fa4e48cbbe2e94cedfcaf1ef03316e70d38a458a83b0710640c4101304
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A circular close-up of a smiling man's face showing his teeth and dark
+    eyes.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:56.103127+00:00'
   source_available: true
 - id: fa0ae467d26d3ef9
   filename: 79754557658__11237F0A-CAEA-47C8-AF0A-137D4D8DBA7D.heic
@@ -90,9 +92,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-04-10T15:26:21.538837-05:00'
   sha256: a3ad9ee245140480734c095629d8adde5c383810fe5b6ba1ecfeef821c325b74
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of an Adult Swim announcement for Genndy Tartakovsky's Primal
+    Season 3.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:25.987812+00:00'
   source_available: true
 - id: 3aac6ca92a6721be
   filename: 1948F0D5-D1DC-41DF-9F8D-E71F7AA18884.pluginPayloadAttachment

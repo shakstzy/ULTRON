@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-08-03T04:29:47.416000-05:00'
   sha256: 107654aeff33d57cb57e8ed1a291d998a15d546b5f55280fa981971f9fdce38c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A bearded man holds a burrito while a man in a black hoodie stands
+    with his back turned.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:39:17.415925+00:00'
   source_available: true
 chat_message_guids_count: 3
 deleted_upstream: null

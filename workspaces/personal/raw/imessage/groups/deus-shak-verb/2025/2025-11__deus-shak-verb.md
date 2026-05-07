@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-11-09T18:51:35.908000-06:00'
   sha256: 4b85c73208f2dcb692864e681d7a83ae0d5cda4cffaed3728d248380d25dba8e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot listing cannabis deals and pricing for Herbal Remedies Caregivers
+    in Sylmar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:10.799188+00:00'
   source_available: true
 chat_message_guids_count: 25
 deleted_upstream: null

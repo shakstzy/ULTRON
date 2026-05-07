@@ -22,9 +22,10 @@ attachments:
   sender: saif-ali-nyc
   sent_at: '2025-02-01T21:01:58.794868-06:00'
   sha256: 605d55b160f423d1c59079a33b269fed70aa3b943cbe8ed547ff42bfac2905b6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Young men play poker at a table with Michelob Ultra beers, Coca-Cola,
+    and a $20 bill.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:33:22.994744+00:00'
   source_available: true
 - id: 7b3e7e6a82fa9424
   filename: 76015835456__01DEFF63-1A25-462D-9CB8-CB2E7EB9B23E.HEIC
@@ -33,9 +34,9 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2025-02-01T21:06:44.741423-06:00'
   sha256: 1bb0a5133ff39c093d166087103b7df4fbdd63aa257749ef36001cc9e921dff4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling man with red light on his face in a dark, slatted indoor environment.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:35:54.026383+00:00'
   source_available: true
 - id: 2e8d0c42e73a2be7
   filename: IMG_9277.png
@@ -56,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2025-02-15T14:14:17.480000-06:00'
   sha256: 4ca1f87ddbe3b24e74c257a72bf627ed8b69bf3a90655a53b1bc47a48b5a206a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person in a hoodie smiles while holding small metal canisters near
+    an open window.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:34:01.166104+00:00'
   source_available: true
 - id: 8497e3957273cf1f
   filename: IMG_5689.PNG
@@ -67,9 +69,10 @@ attachments:
   sender: me
   sent_at: '2025-02-15T22:52:20.733000-06:00'
   sha256: e3d5fb3805fb4b0737c258cce111fb921b6da0b9ba821622bc211a5767b9ae9d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile screenshot of Google search results for "stanford" showing Stanford
+    University.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:34:20.630457+00:00'
   source_available: true
 - id: c3fb934872d69982
   filename: IMG_5382.PNG
@@ -89,9 +92,10 @@ attachments:
   sender: prabhat-nuthakki-uc-berkeley
   sent_at: '2025-02-20T12:35:38.719859-06:00'
   sha256: f815747b5649a2f961a8e40e66060ae9d8184799313780eb72df94947a6fc505
-  description: null
-  description_model: null
-  extracted_at: null
+  description: High-angle window view of the Willis Tower and Chicago skyline over
+    the river and a bridge.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:34:32.384706+00:00'
   source_available: true
 - id: 7ae7dc604e7a9129
   filename: 76176965234__1B3C9444-1E24-4DDC-BEAA-5736939FF364.heic
@@ -100,9 +104,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-02-20T12:41:20.471005-06:00'
   sha256: c37a392d631935d1c639d2e19fab20c2daeb5eead6a3b03592a31853756677c0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Southwest Airlines 'Wanna Get Away' flight price summary totaling $427.36
+    on a laptop screen.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:36:33.819061+00:00'
   source_available: true
 - id: 8aebd1769d4a4e3e
   filename: CARD_9606.vcf
@@ -111,9 +116,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-02-20T18:18:56.527085-06:00'
   sha256: f6cce8c5830cb482d237e6faf5e32ef731fe4c65e159cf344636ac5ffdbe7f65
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a vCard contact file exported from an iPhone. It contains basic
+    contact information for an individual named Ian, including his primary phone number.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:41:52.093506+00:00'
   source_available: true
 chat_message_guids_count: 233
 deleted_upstream: null

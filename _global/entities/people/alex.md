@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.724081+00:00
+ingested_at: 2026-05-06T22:18:21.295682+00:00
 ingest_version: 1
 content_hash: blake2b:0af673b90cbcc70ce80988bcc820ecbe
-provider_modified_at: 2026-05-06T22:17:40.724081+00:00
+provider_modified_at: 2026-05-06T22:18:21.295682+00:00
 
 title: Alex
 slug: alex
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(215) 578-6361"]
   slack: []
-last_synced: 2026-05-06T22:17:40.724081+00:00
+last_synced: 2026-05-06T22:18:21.295682+00:00
 global: true
 ---
 

@@ -82,9 +82,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-02T08:48:49.297006-06:00'
   sha256: de25f97d859712f31d5c1ec5a41746c5c62280c0ec8bc50f2c9d6c5a2024478c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Woman in a yellow saree sits in a golden lotus bowl against a floral
+    green backdrop.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:39.965140+00:00'
   source_available: true
 - id: 0a28cbadba83ae63
   filename: IMG_5185.HEIC
@@ -175,9 +176,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-03T04:52:44.188631-06:00'
   sha256: 9c331341fee39f49401ccb9aead68e2ff6135dd45097cc1bee6e09e578bd648e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A woman in Berkeley graduation regalia sits on a velvet sofa holding
+    a cocktail.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:42.838684+00:00'
   source_available: true
 - id: 9a8ef9e886679659
   filename: IMG_2651.heic
@@ -198,9 +200,9 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-03T04:52:44.188631-06:00'
   sha256: 9af3ee22579c4f9c9942458b5fe548b4ddeea530020a5b68ecd7140c2e30e933
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling woman in UC Berkeley graduation regalia posing in a classroom.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:35.268244+00:00'
   source_available: true
 - id: 36de94b8aa641cff
   filename: IMG_5206.PNG
@@ -300,9 +302,9 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-04T06:00:52.583985-06:00'
   sha256: bf875ae92a6d35e9e754e252a6d7b6efdf64a895d978b084ab6fefda44bc050a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A brown middle finger emoji on a solid black background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:50.441461+00:00'
   source_available: true
 - id: ba842d5544673e56
   filename: 3C2DFCE0-4B7E-4ABD-8189-F96FE8D738A3.png
@@ -368,9 +370,10 @@ attachments:
   sender: me
   sent_at: '2026-02-09T16:00:10.760168-06:00'
   sha256: 52822b8f73cdf479f5418690ba687346a180adb27d975ee6ad3c88cd3d6fece4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Selfie of a man and a woman in front of a grey apartment door with
+    the label "3D".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:48.297929+00:00'
   source_available: true
 - id: 547bec43cf45e90a
   filename: stupid bitchass idiot.m4a
@@ -390,9 +393,9 @@ attachments:
   sender: me
   sent_at: '2026-02-12T23:20:31.137000-06:00'
   sha256: 61b0f791c42ac5adbcc46000a355cb08875935b9d7d004f42c38fdb3b66a1d67
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Blurry night reflection of a blue neon sign and city lights in a window.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:45:15.557563+00:00'
   source_available: true
 - id: d28f616790bd89dc
   filename: DA770A3D-D5F5-4D5C-A342-CF751B97E473.heic
@@ -436,9 +439,10 @@ attachments:
   sender: me
   sent_at: '2026-02-19T23:49:29.774617-06:00'
   sha256: e9e37b063eaa3359d12f651c31dec9b727d977288d84f930699bdd7734212f95
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Digital beer pong game showing red cups in a triangle on a green table
+    with a play button overlay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:45.335340+00:00'
   source_available: true
 - id: ce90e0db5663259c
   filename: 732DD243-22B0-421D-AB56-CE52A3496892.HEIC
@@ -459,9 +463,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-20T23:33:06.701459-06:00'
   sha256: c088c697a21ce5f616b4431d9d87faf54c1dc20e8363cdd14aacffba4a81d49e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling woman sits before a 'Happy Birthday Rishika!' white cake with
+    a lit candle.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:48.472046+00:00'
   source_available: true
 - id: f1384bc1f1e8d19f
   filename: C5A96598-0970-438D-87BA-B01C13A153EB.JPG
@@ -470,9 +475,10 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-20T23:33:06.701459-06:00'
   sha256: 8bd6b60ab4d4924578d5e82bd2eede0da22ce0a18750218fedf1374aa69a487e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: White cream cake with strawberries, a lit candle, and a "Happy Birthday
+    Rishika!" plaque.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:50.665862+00:00'
   source_available: true
 - id: 6958842649a33ed5
   filename: 79350524837__B50D46CA-159F-4F25-8A26-6CD321C54522.HEIC
@@ -481,9 +487,10 @@ attachments:
   sender: me
   sent_at: '2026-02-22T20:07:43.084000-06:00'
   sha256: ffd43233bd9cce3090bfe92faf1d4f2edc9cac7890cf11886dccc921a7ddc331
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A finger points at a Met Museum map and a Wonder Wheel fun card on
+    grey carpet.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:45:17.206334+00:00'
   source_available: true
 - id: 30ac339bf78ac21e
   filename: 79350533068__356C7041-DA97-4EE7-8349-B5C0B0686F56.HEIC
@@ -504,9 +511,10 @@ attachments:
   sender: me
   sent_at: '2026-02-22T20:12:23.068000-06:00'
   sha256: ed394d18dfa601203cb4283dd861881852ffdfdaaaec19acfd1cb48a21fa2111
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A 22nd birthday card for Adi with a photo of a couple kissing, lying
+    on a grey carpet.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:45:31.885302+00:00'
   source_available: true
 - id: b10cdc85aa3ded4a
   filename: IMG_4537_Original.jpeg
@@ -562,9 +570,9 @@ attachments:
   sender: rishika-uc-berkeley
   sent_at: '2026-02-23T14:42:46.002451-06:00'
   sha256: bf875ae92a6d35e9e754e252a6d7b6efdf64a895d978b084ab6fefda44bc050a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A brown middle finger emoji on a solid black background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:50.441461+00:00'
   source_available: true
 chat_message_guids_count: 847
 deleted_upstream: null

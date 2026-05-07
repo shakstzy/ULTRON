@@ -34,9 +34,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-09T22:15:51-05:00'
   sha256: 1fc74b402486ca22201b54d61fac5c5ddc6d8901b9c7c6faa9831036887c5ecf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Video frame of a crypto dashboard showing Top Gainer and Top Loser
+    lists.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:35.459709+00:00'
   source_available: true
 - id: 246168cddeae81dd
   filename: 73441276164__ED6F7632-13CB-43E7-8D09-47555722F976.HEIC.jpeg
@@ -45,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2024-04-09T22:33:10.225557-05:00'
   sha256: 3b92d91928eb3fc0e273e5aca8800702c32529ca799e8e1c105aff9aa27b4f29
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Wide view of a Los Angeles Lakers basketball game in progress at Crypto.com
+    Arena.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:35.227677+00:00'
   source_available: true
 - id: d3ca3cc3c0b2fd71
   filename: image.png
@@ -56,9 +58,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-09T22:36:46-05:00'
   sha256: d818e297cb1300f996156921a54c90e3d3c5e54f2cfa4c852ad796f3ef1678be
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A black and white ID card for Adithya Kumar featuring his portrait
+    and name.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:30.805098+00:00'
   source_available: true
 - id: a73200c94c0d3e5d
   filename: image.png
@@ -67,9 +70,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-23T15:42:33-05:00'
   sha256: fa9426c4f452630d66edb67befd954d069de7e1f776a7ceadd95b4842773cde3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Email from Leigh Warnick listing documentation required for Kumar and
+    Adithya's new loan.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:38.419053+00:00'
   source_available: true
 - id: cd4adfba982e8d8b
   filename: image.png
@@ -78,9 +82,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-23T15:42:53-05:00'
   sha256: 34abab772b70977573ecf811a5bba17fecfeb177cc29ffaa434c98d60ab8d7c1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of chat messages asking Shak if 11 AM works and then suggesting
+    12:30 PM.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:37.197938+00:00'
   source_available: true
 - id: 543689219b51d66a
   filename: image000000.png

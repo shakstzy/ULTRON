@@ -8,7 +8,7 @@ person_id: "67f73baa9976c435ba89b4e8"
 phone: null
 status: "new"
 first_seen: "2026-04-06T00:00:00Z"
-last_activity: "2026-04-06T14:44:00Z"
+last_activity: "2026-05-07T00:39:13.346Z"
 last_scrape: "2026-05-01T06:06:00.264Z"
 previous_slugs: []
 migrated_from_shakos: "claire-2"
@@ -84,8 +84,10 @@ last_profile_diff: "2026-05-01T06:06:00.264Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 00:39 slugs swim cap is a bold choice. what's your fastest animal fact
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 00:52 queued_auto (auto, opener) [draft:fb8557cb] lint=true "slugs swim cap is a bold choice. what's your fastest animal fact"
+- 2026-05-07 00:39 sent (auto, auto-or-hitl) [draft:fb8557cb] lint=true "slugs swim cap is a bold choice. what's your fastest animal fact"

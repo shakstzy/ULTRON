@@ -22,9 +22,10 @@ attachments:
   sender: nathan-prabhat-uc-berkeley
   sent_at: '2024-09-26T16:04:55.780993-05:00'
   sha256: 5d0b50b89cf80a406870baa48e4e8845347da9cff6ee811a0e0fe162a3892e42
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A yellow smiling face emoji with a single blue teardrop on its right
+    cheek.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:29:19.393140+00:00'
   source_available: true
 chat_message_guids_count: 23
 deleted_upstream: null

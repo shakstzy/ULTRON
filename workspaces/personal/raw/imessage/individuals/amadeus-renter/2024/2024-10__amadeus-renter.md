@@ -46,9 +46,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-10-06T22:41:18.272408-05:00'
   sha256: becf4d8ed5b05f458f1eda3b993bf0999bf6d1b7f559494e600a6cff69f37b2b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot showing three profitable USDJPY sell trades from October
+    7, 2024.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:41:32.202929+00:00'
   source_available: true
 - id: e4d762d8e1b4b618
   filename: t_me-14243547387.jpeg
@@ -69,9 +70,10 @@ attachments:
   sender: me
   sent_at: '2024-10-21T13:21:45.103601-05:00'
   sha256: 524c26194d33ac0aa73520f230d1f315e7cdff8e6d1abf3bce3172a83eab0d4b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Delta flight DL1715 SFO to LAX status screen for Oct 21, 2024, with
+    a coastal flight map.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:41:35.547801+00:00'
   source_available: true
 - id: 93f51879f60fcd58
   filename: IMG_3370.PNG

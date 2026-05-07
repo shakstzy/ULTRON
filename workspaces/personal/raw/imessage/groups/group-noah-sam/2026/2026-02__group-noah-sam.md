@@ -44,9 +44,10 @@ attachments:
   sender: sam-garcia
   sent_at: '2026-02-07T23:47:46.580760-06:00'
   sha256: 34baba0681582ea6e5be5bbbac25cf666235409932cae88c49c953cba6f473a0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Spotify screenshot of JKL's 'BLACK AND WHITE' with a FaceTime overlay
+    of a man's face.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:32:13.318545+00:00'
   source_available: true
 - id: a1f8ed1fa6970031
   filename: FA3377DA-5830-4560-8AA0-747BA6BB559F.pluginPayloadAttachment

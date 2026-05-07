@@ -57,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2024-04-07T14:17:33.631372-05:00'
   sha256: 2b355f43580bef55c202b85c6c1404effd668a1ef7bc747e50f05c9ccc99a95f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dark blue car's black front wheel parked on an asphalt road with dappled
+    tree shadows.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:45:17.236564+00:00'
   source_available: true
 - id: e154fb6c150e307b
   filename: IMG_7564.jpeg
@@ -68,9 +69,10 @@ attachments:
   sender: me
   sent_at: '2024-04-09T17:42:36.719118-05:00'
   sha256: b5c814a3065bf6e443860b11c9720af14072c4de0dd1da219779195fb63d27b2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: AXS mobile ticket for Lakers vs. Golden State on April 9, 2024, in
+    VIP Suite C33.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:45:30.839470+00:00'
   source_available: true
 - id: 0ddd0dafdf4ae2f9
   filename: IMG_7650.heic
@@ -91,9 +93,9 @@ attachments:
   sender: me
   sent_at: '2024-04-12T13:11:46.475957-05:00'
   sha256: d2bb53052be31c99abe1c08b25d72a6c125b8c664bc152beb235aa20535ca2c8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Amazon delivery photo of a package by a black gate at 3712 Berry Dr.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:45:22.109084+00:00'
   source_available: true
 - id: c59ad3785553800f
   filename: 73482881263__54B192CE-6E7F-47BB-99BB-8C1977B805C0.HEIC
@@ -126,9 +128,10 @@ attachments:
   sender: me
   sent_at: '2024-04-29T21:47:15.097000-05:00'
   sha256: 6f108a6bf1d1e4b8463ca660c7140e92aaef444ead8fe9015f6dbc2c64c1549b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Meeting confirmation with Randy Song for April 30, 2024, from 2:00pm
+    to 2:30pm PT.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:45:24.339158+00:00'
   source_available: true
 - id: 9e7156c3e3079db2
   filename: IMG_5864.png

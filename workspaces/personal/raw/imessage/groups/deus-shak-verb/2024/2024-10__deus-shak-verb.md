@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-10-08T13:34:27.710000-05:00'
   sha256: aa9f09c794955560d41e2f9db360b2574062da1e2d55d3310fa95d7ac25c5d4f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Amazon order confirmation for a Nest thermostat shipping to Adithya
+    Kumar in Sylmar, CA.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:49.399564+00:00'
   source_available: true
 - id: 2e56da2e1c2d80cf
   filename: IMG_1021.heic
@@ -33,9 +34,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-10-08T14:06:03.209435-05:00'
   sha256: 65493ed8fc9c85760fc77eab2424364a920fe3f95fdc206f46a870ea58133ad0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A GE microwave showing a broken plastic mounting bracket on the door
+    handle.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:56.723303+00:00'
   source_available: true
 - id: b08f5f28a2ceb4dd
   filename: IMG_2945.PNG
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2024-10-09T13:01:45.580070-05:00'
   sha256: c395212147153cb9d447ab35efede33bb908d16549a0d89071bb8674dcf30c4c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Amex flight confirmation for Adithya''s Oct 12 trip from SLC to LAX,
+    booking #6503-9948.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:47.310718+00:00'
   source_available: true
 - id: 6986ba5061b8e97c
   filename: IMG_3599.heic
@@ -55,9 +58,10 @@ attachments:
   sender: evan-renter
   sent_at: '2024-10-16T14:32:39.924391-05:00'
   sha256: 933f738583dff9197e7fccd7f3aadf58321ac44c44c0eee13d4cc412bc12467a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "A Nest thermostat set to 62\xB0F cooling with an indoor temperature\
+    \ of 71\xB0F."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:42.233309+00:00'
   source_available: true
 - id: 3c577a5f905e8f68
   filename: IMG_3759.mov
@@ -66,9 +70,10 @@ attachments:
   sender: evan-renter
   sent_at: '2024-10-18T16:46:50.764575-05:00'
   sha256: 37bcc8b9e1be44344ae7541faa2a1e4487ac491f45994b99404ba794f0b3eccf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Ants crawling on a white kitchen wall and baseboard, starting from
+    a Nest thermostat.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:47.821185+00:00'
   source_available: true
 - id: 124189993e553c24
   filename: IMG_3760.mov
@@ -77,9 +82,10 @@ attachments:
   sender: evan-renter
   sent_at: '2024-10-18T16:53:37.656035-05:00'
   sha256: d24b9a5d184fbb510f8a65dcbd24d302a55a6f93f38dcdbbbc0b8c38254b9954
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Handheld pan across a sunlit living room with a shaggy white rug and
+    a kitchen area.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:52.590424+00:00'
   source_available: true
 - id: b174558128519243
   filename: Audio Message.caf
@@ -99,9 +105,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-10-23T15:37:50.483197-05:00'
   sha256: e62304044b4679447b66e30247cc586f625ea833913b148a3ca7545ccd9d7f8b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A Lookah glass water pipe sits on a desk in front of a monitor displaying
+    Discord.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:03:03.306837+00:00'
   source_available: true
 - id: 7f7005cd24877747
   filename: IMG_1188.heic
@@ -110,9 +117,9 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-10-31T19:05:26.929991-05:00'
   sha256: 1010a182272957613af437b1ed23d72a597f56643f6c8a8dd6a60d4b90495891
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two cans of Neon 5X premium butane gas lighter refill with red caps.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:53.753433+00:00'
   source_available: true
 chat_message_guids_count: 246
 deleted_upstream: null

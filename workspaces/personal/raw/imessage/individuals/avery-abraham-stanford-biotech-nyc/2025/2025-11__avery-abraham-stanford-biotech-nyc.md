@@ -22,9 +22,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-02T11:56:13.863761-06:00'
   sha256: 2871b6452c66d7b70d21e01108baab73bdda309d1f1a37eb6713201eb194a772
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Elon Musk tweet screenshot advising to compress a 10-year plan into
+    6 months.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:48:41.177696+00:00'
   source_available: true
 - id: 818b0bc60086829b
   filename: IMG_9913.png
@@ -56,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2025-11-06T11:13:03.266902-06:00'
   sha256: e8f50b92db85f8a3587ec7101801d0a06c4585937cc296210032ddd882b207ce
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Digital calendar view showing green and blue meeting blocks for Adi
+    and various contacts.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:48:42.576418+00:00'
   source_available: true
 - id: 559da5e00a90ef3a
   filename: IMG_2901.png
@@ -79,9 +81,10 @@ attachments:
   sender: me
   sent_at: '2025-11-07T14:08:08.873710-06:00'
   sha256: ca333ff0bc976f45891a66bf6d3ae6fe696ae2edcf579222fbead460db72a016
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Meet calendar invite for "Avery <> Adi" on Friday, Nov 7, from
+    3:30 PM to 5:30 PM.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:48:48.855161+00:00'
   source_available: true
 - id: b11cc5d093596fcc
   filename: IMG_1057.png
@@ -186,9 +189,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-11T15:17:53.056645-06:00'
   sha256: 8d4646be7047e476082effcb251f668eb331e93134814732af91d65ead20a69b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Virgin vs. Chad meme contrasting overqualified and AI-reliant Y Combinator
+    applicants.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:48:49.128254+00:00'
   source_available: true
 - id: 80753c65c86edd4b
   filename: IMG_0667.png
@@ -197,9 +201,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-11T15:33:08.406783-06:00'
   sha256: 868aa043370f79ba1ffb4b0e3ef67eff8b7db91fe44d0d160e8b8b541a9ab662
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Black briefs in a SEEDBOX box with the slogan "PLANT GOOD SEEDS" and
+    a smiling sperm icon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:47.988375+00:00'
   source_available: true
 - id: 67083d6a9cde5b84
   filename: IMG_1248.PNG
@@ -208,9 +213,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-12T13:14:39.882094-06:00'
   sha256: d4b658b877be117f3a114712fedf6b6cb36dfd57f108ccae4025163fd77842dc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'LinkedIn message thread: Avery pitches a fertility tech project to
+    Francois Chaubard.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:48:47.968548+00:00'
   source_available: true
 - id: d9f818813fbb34ee
   filename: IMG_0667.png
@@ -219,9 +225,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-12T13:23:23.410191-06:00'
   sha256: 868aa043370f79ba1ffb4b0e3ef67eff8b7db91fe44d0d160e8b8b541a9ab662
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Black briefs in a SEEDBOX box with the slogan "PLANT GOOD SEEDS" and
+    a smiling sperm icon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:47.988375+00:00'
   source_available: true
 - id: e5761abcf303f408
   filename: "Screenshot 2025-11-12 at 2.41.55\u202FPM.png"
@@ -348,9 +355,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-13T11:32:34.073628-06:00'
   sha256: f7828abf76d8905130607b865d300b2510172d6fc414edd5fafb4aa465bb5fa4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Email header from Jeffrey E. to Peter Thiel (2014) subject: "That
+    was fun , see you in 3 weeks".'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:48:58.241340+00:00'
   source_available: true
 - id: ba3cdf25793b22cc
   filename: IMG_6675.jpeg
@@ -371,9 +379,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-13T17:55:49.404534-06:00'
   sha256: 35159b2ae281a1c52d5db69dce8dc69b1af1fb7816c5a8a46f568d1e63031a2c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Formal reception in a grand wood-paneled room with portraits and an
+    American flag.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:17.754408+00:00'
   source_available: true
 - id: e4c6a12dde295cb0
   filename: Image-1.png
@@ -442,9 +451,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-23T11:48:32.119116-06:00'
   sha256: bf240809604301d6194e8c6676aef94ccca641b8c79483a628c68b5b6cacb4a6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Meet screenshot with Avery Haskell, Hadi Shafiee, and a Fireflies.ai
+    Notetaker.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:43.783748+00:00'
   source_available: true
 - id: 6e6c9c59a4d8a199
   filename: IMG_5556.png
@@ -476,9 +486,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-24T15:07:16.150957-06:00'
   sha256: 6e76d42712a271bb312b1e66481cda61dd7f9f7755beae80b316d5a80ed48164
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat discussing fundraising, speaking at conferences, and
+    the company Herasight.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:34.065458+00:00'
   source_available: true
 - id: f8e87b10de92b099
   filename: PNG image.png
@@ -487,9 +498,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-24T15:07:40.859387-06:00'
   sha256: 4e3f52feafc22664c66cf9eb1d819003847100bed77726fa431c26c2abbc1d1d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage from Hadi mentioning Dhaha from Launchpad is from a rich Saudi
+    family.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:08.304674+00:00'
   source_available: true
 - id: b6013001be2ba7fa
   filename: IMG_1807.PNG
@@ -510,9 +522,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-25T12:58:27.733798-06:00'
   sha256: 88fb2b696cb59c30238c22a5541905f75a4827e737601edb8b6393a6b3d4ac02
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of Jeremy describing a rough week and promising
+    a "path" soon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:02.496538+00:00'
   source_available: true
 - id: e25d772fcf35d1f3
   filename: Sci Transl Med.pdf
@@ -534,9 +547,11 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-25T14:38:40.731849-06:00'
   sha256: 00eecc7145d3290f37befebf7aade630530e3025ecffeaa070b97a7b98cd30ed
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This 2021 Nature BME paper presents MD-nets for medical image analysis.
+    It uses adversarial learning to adapt models to different imaging systems without
+    needing new expert labels.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:01.510004+00:00'
   source_available: true
 - id: 876a96223565bf32
   filename: Nature BME 2021 Supplementary.pdf
@@ -545,9 +560,11 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-25T14:38:40.731849-06:00'
   sha256: a96b294ddb838c479ba0ec02d4cb08f842414ce194c36aefb58d4977e216d448
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Supplementary material for a study on adversarial networks in medical
+    imaging. It details custom 3D-printed microscopes, dataset structures, and model
+    performance metrics.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:40.280813+00:00'
   source_available: true
 - id: f7b041c4afcabd03
   filename: IMG_1916.png
@@ -591,9 +608,11 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-11-28T14:47:51.903309-06:00'
   sha256: 3eb292327ff3dc7c960ac3883caca991f5c38371c43c48763fc4716f3eb738f2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This engineering spec defines the Seedbox Labs v1.0, a medical IoT
+    device for male fertility testing. It details a standalone hardware design that
+    offloads diagnostic AI analysis to the cloud.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:05.902338+00:00'
   source_available: true
 chat_message_guids_count: 891
 deleted_upstream: null

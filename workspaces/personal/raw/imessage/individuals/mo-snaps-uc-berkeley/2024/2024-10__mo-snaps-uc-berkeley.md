@@ -22,9 +22,11 @@ attachments:
   sender: me
   sent_at: '2024-10-27T11:24:54.118000-05:00'
   sha256: 1c92243116f0393ba69674b97db0c27b1b694d52788946d1c27f0961a66e2f27
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is an official brochure for Outerscope, a Web3 venture and GTM
+    advisory firm. It details their core services, tiered pricing, and founder Adithya
+    Kumar's background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:35:16.832299+00:00'
   source_available: true
 - id: 2aec396ab7eb675f
   filename: outerscope deck.pdf

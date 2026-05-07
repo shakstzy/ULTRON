@@ -33,9 +33,11 @@ attachments:
   sender: me
   sent_at: '2025-08-01T17:35:28.990000-05:00'
   sha256: 9e242ed8a3f11177089d721d08a376f6dece47c8336a414f0122926f5801d82c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a formal "Notice to Pay Rent or Quit" issued to Austin Allen
+    Davis. It demands $2,000 in unpaid rent for June and July 2025 within three days
+    to avoid eviction.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:40:11.464654+00:00'
   source_available: true
 - id: 2378b1b9fc0b6ec2
   filename: Lease Addendum & Payment Demand.pdf
@@ -44,9 +46,11 @@ attachments:
   sender: me
   sent_at: '2025-08-27T21:40:02.281048-05:00'
   sha256: f20dfe35371c509ed73c7313efd363fe9721ad2b697d503eb0318b75e2b165f4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This lease addendum notifies Austin Allen Davis of $2,020 in charges
+    for unauthorized pet violations and late rent. It demands full payment to landlord
+    Kumar Nagarajan by September 5, 2025.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:38:25.631640+00:00'
   source_available: true
 - id: 0d5bbe752bdcc86c
   filename: Lease_Addendum_Signature_Ready.pdf

@@ -22,9 +22,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-06-28T11:06:40.601719-05:00'
   sha256: 75acaee4b8b637bf0d2efb33ad26eea926addd5ff2e8e6db960a12c8d6aaf15e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage group chat about event wait-lists and Gautham securing the
+    final two spots.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:48.157819+00:00'
   source_available: true
 chat_message_guids_count: 17
 deleted_upstream: null

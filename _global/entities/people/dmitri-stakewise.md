@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.871755+00:00
+ingested_at: 2026-05-06T22:18:21.548640+00:00
 ingest_version: 1
 content_hash: blake2b:752d268f6562a707a843b7016a416a0b
-provider_modified_at: 2026-05-06T22:17:40.871755+00:00
+provider_modified_at: 2026-05-06T22:18:21.548640+00:00
 
 title: Dmitri | Stakewise
 slug: dmitri-stakewise
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:17:40.871755+00:00
+last_synced: 2026-05-06T22:18:21.548640+00:00
 global: true
 ---
 

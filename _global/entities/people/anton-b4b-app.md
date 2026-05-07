@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.876993+00:00
+ingested_at: 2026-05-06T22:18:21.554766+00:00
 ingest_version: 1
 content_hash: blake2b:3e375867c279486c6b28e781d92c509b
-provider_modified_at: 2026-05-06T22:17:40.876993+00:00
+provider_modified_at: 2026-05-06T22:18:21.554766+00:00
 
 title: Anton | B4B.app
 slug: anton-b4b-app
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:17:40.876993+00:00
+last_synced: 2026-05-06T22:18:21.554766+00:00
 global: true
 ---
 

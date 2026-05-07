@@ -34,9 +34,10 @@ attachments:
   sender: phone-+15129065108
   sent_at: '2026-03-31T18:11:14.047600-05:00'
   sha256: 75f7404ad6dabe5e992627b09f04d3d9f0ee7784075af56fa5c0ccc83ede92e3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Apple Maps directions for a 279-mile drive to 3415 Southbend Dr via
+    Georgetown, TX.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:38:39.185235+00:00'
   source_available: true
 chat_message_guids_count: 82
 deleted_upstream: null

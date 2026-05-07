@@ -46,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2024-12-30T14:10:52.218641-06:00'
   sha256: 7af37023f278b5d94d0e197556bf62ddb229b0adf21162b40c73975b072b4ad6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Email regarding Angel signing a lease with Gabriel's name and a request
+    for a new signature.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:23.572647+00:00'
   source_available: true
 chat_message_guids_count: 174
 deleted_upstream: null

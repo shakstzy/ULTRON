@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2026-02-19T23:47:51.555876-06:00'
   sha256: e9e37b063eaa3359d12f651c31dec9b727d977288d84f930699bdd7734212f95
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Digital beer pong game showing red cups in a triangle on a green table
+    with a play button overlay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:45.335340+00:00'
   source_available: true
 - id: 58227e9b99725473
   filename: ms-V2qS3v.jpeg
@@ -44,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2026-02-20T00:20:21.755865-06:00'
   sha256: 017fee46c3aa2b0c7e95077bfeca8cc688d3bae657ca7cd5f103135bc26fe56a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Digital red pool table with a cue ball, racked balls, and a large central
+    play button.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:41:20.951478+00:00'
   source_available: true
 chat_message_guids_count: 152
 deleted_upstream: null

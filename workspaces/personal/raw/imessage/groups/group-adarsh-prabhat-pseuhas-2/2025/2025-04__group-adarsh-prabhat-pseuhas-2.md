@@ -22,9 +22,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-04-01T15:56:48.025665-05:00'
   sha256: 41162d0a06f467c815243ac033a260eb26135f0f0a784e2eddf4f90af3a55a98
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of Adarsh and Maneesh discussing a dealer and planning
+    a FaceTime call.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:25.394207+00:00'
   source_available: true
 - id: 6275e46c48a07e71
   filename: IMG_7394.PNG
@@ -33,9 +34,9 @@ attachments:
   sender: me
   sent_at: '2025-04-01T16:07:49.079173-05:00'
   sha256: 457a304a465b38ba19ea447c5bf361e35ea41d3d9936da4c608c39ade232f0b7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a video call between two bearded men, one wearing glasses.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:09.692479+00:00'
   source_available: true
 - id: 753c0be18c74f1c6
   filename: IMG_7363.PNG
@@ -44,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2025-04-01T16:07:49.079173-05:00'
   sha256: bc5245054cd4d06b92b85e803d1897e1b3784fdb3714bbd01b5f8030c414c61c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile screenshot of the character Kronk from The Emperor's New Groove
+    smirking.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:27.202805+00:00'
   source_available: true
 - id: 2f26a8eb9a9b7a4d
   filename: IMG_7425.PNG
@@ -55,9 +57,9 @@ attachments:
   sender: me
   sent_at: '2025-04-01T16:08:18.345415-05:00'
   sha256: 71fcbc4fbbbeb7cff7fb759a8dbf8150066a8c3a264548e0124f5ae57d2f615b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of an fbi.gov page showing a portrait of Osama bin Laden.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:30.768998+00:00'
   source_available: true
 - id: fe1dbf0e0d039a4f
   filename: IMG_6364.jpeg
@@ -66,9 +68,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-04-01T16:10:31.142158-05:00'
   sha256: 2bf4856a7879f500807c4707d666532972656f80fab5db23549563b2cf16d71f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Cartoon illustration of a man with a black face wearing a yellow headscarf
+    and blue robe.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:11.872542+00:00'
   source_available: true
 - id: 11d5417fd56f312b
   filename: IMG_6513.png
@@ -77,9 +80,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-04-01T18:09:06.848203-05:00'
   sha256: ed543424d28dcaf0cd41c55f472bc45ba2cbf95f844c488ccba1519c38a51f3a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone Find My screenshot showing Rushil's live location at 447 E 9th
+    St, New York.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:14.996305+00:00'
   source_available: true
 - id: 675df58bb2765528
   filename: IMG_7456.jpg
@@ -88,9 +92,10 @@ attachments:
   sender: me
   sent_at: '2025-04-02T19:23:44.100000-05:00'
   sha256: 11a80ba185b90458a30e4511c023f41aa016570ebe90d8c696d8c5ab6add56a2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iOS notification showing 52 new iMessages from Pseuhas UC Berkeley
+    and Prabhat Nuthakki.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:17.863921+00:00'
   source_available: true
 - id: 942c7db2dbcb7392
   filename: IMG_0982.heic
@@ -99,9 +104,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-04-02T19:35:46.015655-05:00'
   sha256: dda6b8d13c5d6b11c1917852a508060b39cdef4d3a4c3ec3609e51834d23bec7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone notifications from Ashok Jha's number with family messages and
+    heart reactions.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:15.424870+00:00'
   source_available: true
 - id: ad58c025f3d1f3e8
   filename: 5DB5393E-7022-4737-B1F3-1C40D18A1A32.heic
@@ -110,9 +116,10 @@ attachments:
   sender: me
   sent_at: '2025-04-07T15:01:06.958071-05:00'
   sha256: 03a622492f47965e67b501045a41262b11007738b28f7912a71dcce45a370618
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Elephant head on a human body wearing a black suit and green tie against
+    a dark background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:20.389110+00:00'
   source_available: true
 - id: 09b125abbfa97f55
   filename: 93DD1383-F559-4E6A-B7F4-8A2A4775DC52.heic
@@ -121,9 +128,10 @@ attachments:
   sender: me
   sent_at: '2025-04-07T15:01:24.174160-05:00'
   sha256: df1ed1a91f10b3982869af91ba46408a95231a99fdc7428871b5b5a159693060
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A woolly mammoth standing on a small motorboat over splashing water
+    against a black background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:15.705765+00:00'
   source_available: true
 - id: 25db12517dba21f3
   filename: IMG_6567.png
@@ -132,9 +140,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-04-07T18:49:15.181896-05:00'
   sha256: 94ed033886436a0c3bce38bb0741937ff94ef90ab4660520cf0911e9030c313c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a conversation about a relative's exhaustion
+    and medical blood work.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:20.272771+00:00'
   source_available: true
 - id: caea1af112c3d772
   filename: IMG_6566.png
@@ -143,9 +152,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-04-07T18:49:15.181896-05:00'
   sha256: 149db5d59c38e6ea7c64f2cc291ac77e3fc491bcde678de63861f9e0567855ce
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a person thanking Suhas for taking someone to
+    the gym and cooking.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:20.440689+00:00'
   source_available: true
 - id: 125d62030f08967c
   filename: IMG_6558.png
@@ -154,9 +164,9 @@ attachments:
   sender: me
   sent_at: '2025-04-07T20:29:00.741000-05:00'
   sha256: 69e7d19453fc93af2494ab68854c8c34367bad14ac59b83ae23a0b2ce7ec68e4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage from Aamir Khan UC Berkeley saying "Pseu haas" at 8:27 PM.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:20.493752+00:00'
   source_available: true
 - id: 26f7bd74115c97ec
   filename: CD5F0FB8-5565-4836-B477-2BDF645C8F09.mov
@@ -165,9 +175,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-04-10T16:28:54.623334-05:00'
   sha256: 82e06b0a69b650f272fc0cc78e58f6b5b401b8241bbf8ed44f9f2b4dd30bb719
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man with glasses and a beard lip-syncs to Kanye West's "Vultures"
+    in a vertical selfie video.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:34.296289+00:00'
   source_available: true
 - id: 775c19d965e6d4cc
   filename: 76613221499__409327CE-9005-41D2-A21D-F42C2EA28D5D.heic
@@ -176,9 +187,9 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-04-12T01:30:18.991583-05:00'
   sha256: 546f3e9ff02ecb487086f7473f8afe4ba8dde0281e3a3558e6e4074b040e2037
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man with headphones holds a clear glass bottle in a low-angle selfie.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:22.540010+00:00'
   source_available: true
 - id: 6782b58f17d8866e
   filename: IMG_2424.HEIC
@@ -187,9 +198,9 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-04-13T11:10:13.571911-05:00'
   sha256: 2d9fda70753640a5fdf34074cb3307592683064fc4eb9f4a31e473296f5f1039
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Four people smiling for a selfie inside a restaurant with large windows.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:28.926565+00:00'
   source_available: true
 chat_message_guids_count: 312
 deleted_upstream: null

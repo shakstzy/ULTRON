@@ -22,9 +22,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2025-10-01T14:05:10.233342-05:00'
   sha256: ddfc8a922ceea1ea65c7e4cb715fca9104c98f0e195ae634cd0bdd9dfe3b5a92
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A bald Black man with a mustache stares intently at another man's profile
+    in a close-up shot.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:05.721898+00:00'
   source_available: true
 - id: b5b70e99c967fd6d
   filename: IMG_5638.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-10-28T01:33:12.936000-05:00'
   sha256: 5c9564be95a0280bc5810397a2211185c12397d6fd91848df08f6b668aabbb74
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a black cap sits on a carpeted floor using a laptop with a
+    phone propped on the screen.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:03.276856+00:00'
   source_available: true
 - id: 4e1e815bff4b2ed6
   filename: IMG_8312.png
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-10-28T01:37:17.285000-05:00'
   sha256: bb9f12344a21a4a62b9bde8aa048ae3a374dd2e066343c01180333c908a35103
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two floor mattresses and a laptop on dark wood floors in a sparse room
+    with five windows.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:05.173073+00:00'
   source_available: true
 chat_message_guids_count: 50
 deleted_upstream: null

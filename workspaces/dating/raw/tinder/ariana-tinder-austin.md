@@ -8,7 +8,7 @@ person_id: "69db42692bb64a400934994a"
 phone: null
 status: "new"
 first_seen: "2026-04-17T00:00:00Z"
-last_activity: "2026-04-17T20:09:00Z"
+last_activity: "2026-05-06T23:10:32.204Z"
 last_scrape: "2026-05-01T05:13:58.995Z"
 previous_slugs: []
 migrated_from_shakos: "ariana-2"
@@ -84,8 +84,10 @@ last_profile_diff: "2026-05-01T05:13:58.995Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-06 23:10 that 1975 poster tells me you have opinions. chocolate era or bfiafl?
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 00:42 queued_auto (auto, opener) [draft:ced9bb00] lint=true "that 1975 poster tells me you have opinions. chocolate era or bfiafl?"
+- 2026-05-06 23:10 sent (auto, auto-or-hitl) [draft:ced9bb00] lint=true "that 1975 poster tells me you have opinions. chocolate era or bfiafl?"

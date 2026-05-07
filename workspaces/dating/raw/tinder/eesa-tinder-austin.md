@@ -8,7 +8,7 @@ person_id: "690e56ae0ae04dc99b366ff2"
 phone: null
 status: "new"
 first_seen: "2026-04-24T00:00:00Z"
-last_activity: "2026-04-24T10:45:00Z"
+last_activity: "2026-05-07T00:42:15.857Z"
 last_scrape: "2026-05-01T06:34:26.215Z"
 previous_slugs: []
 migrated_from_shakos: "eesa"
@@ -93,8 +93,10 @@ last_profile_diff: "2026-05-01T06:34:26.215Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 00:42 that vintage camera at a concert is either very intentional or a great way to lose it. what do you shoot on?
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 00:58 queued_auto (auto, opener) [draft:221bc513] lint=true "that vintage camera at a concert is either very intentional or a great way to lose it. what do you shoot on?"
+- 2026-05-07 00:42 sent (auto, auto-or-hitl) [draft:221bc513] lint=true "that vintage camera at a concert is either very intentional or a great way to lose it. what do you shoot on?"

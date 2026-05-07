@@ -69,9 +69,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2026-01-03T15:48:25.001877-06:00'
   sha256: a7596a90eb3685b506542d972b99e77e77b9ee0c09846caa4cd0d0869127dcb6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person in a tan hoodie fires a suppressed rifle at a target in an
+    indoor shooting range.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:55.398184+00:00'
   source_available: true
 - id: 234589c85a5240b2
   filename: IMG_7455.MOV
@@ -116,9 +117,9 @@ attachments:
   sender: arya-kumar
   sent_at: '2026-01-03T15:48:25.001877-06:00'
   sha256: 7f0c64d11d4738e69063efb32736746989bb032270b0b1482a7999673aa3ff40
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person in a yellow hoodie fires a handgun at an indoor shooting range.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:45.038675+00:00'
   source_available: true
 - id: 6f652b39a24e374b
   filename: IMG_7457.MOV
@@ -127,9 +128,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2026-01-03T15:48:25.001877-06:00'
   sha256: 57cf5d9d1af6a79961fb686c96b4093288a6a370ada242eb6fecaa05ed09aa04
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a yellow hoodie fires a suppressed rifle at an indoor shooting
+    range.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:01.948846+00:00'
   source_available: true
 - id: 25b93925d25d977f
   filename: IMG_7452.MOV
@@ -138,9 +140,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2026-01-03T15:48:25.001877-06:00'
   sha256: 7ec8e6e22b9d44c63aa2be6d67324146bfef3e0734160c586de36243d826f0ee
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person in a yellow hoodie shoots a rifle at targets in an indoor
+    range.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:45:05.781998+00:00'
   source_available: true
 - id: 6f8ace70328221e1
   filename: IMG_7456.MOV
@@ -149,9 +152,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2026-01-03T15:48:25.001877-06:00'
   sha256: 188980092e544832da6f2b2ab2ee00d50f5e6d4f406c341a24c4f715294ac73a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person in a yellow hoodie fires a rifle at a target in an indoor
+    shooting range.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:23.478020+00:00'
   source_available: true
 - id: 425a1cb917c875b9
   filename: IMG_9217.png

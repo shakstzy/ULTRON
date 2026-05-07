@@ -22,9 +22,10 @@ attachments:
   sender: abraham-crypto-lightnodeventures-la
   sent_at: '2025-06-17T17:54:50.972731-05:00'
   sha256: c0def98c7bd7dadb6890563d11efb426603baba97a1ef2dff5333b72a03d17ef
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot showing a pending join request for a "CV menu" Costco
+    Pharmacy group.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:09:57.382345+00:00'
   source_available: true
 chat_message_guids_count: 41
 deleted_upstream: null

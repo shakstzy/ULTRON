@@ -8,7 +8,7 @@ person_id: "6118b96611e67b010031c596"
 phone: null
 status: "new"
 first_seen: "2026-04-16T00:00:00Z"
-last_activity: "2026-04-16T16:24:00Z"
+last_activity: "2026-05-07T00:36:30.328Z"
 last_scrape: "2026-05-01T05:48:15.140Z"
 previous_slugs: []
 migrated_from_shakos: "calla"
@@ -86,8 +86,10 @@ last_profile_diff: "2026-05-01T05:48:15.140Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 00:36 the lower back pain is probably from hauling that poker chip stack around. what's the buy-in?
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 00:48 queued_auto (auto, opener) [draft:2e8b08c1] lint=true "the lower back pain is probably from hauling that poker chip stack around. what's the buy-in?"
+- 2026-05-07 00:36 sent (auto, auto-or-hitl) [draft:2e8b08c1] lint=true "the lower back pain is probably from hauling that poker chip stack around. what's the buy-in?"

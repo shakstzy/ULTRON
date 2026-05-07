@@ -18,7 +18,14 @@ sources:
     raw_path: raw/tinder/                       # one .md per match (slug = <first>-tinder-<city>)
     schedule: setup/                            # plists at _shell/plists/com.adithya.ultron.dating-tinder-*
     auto_stub: wiki/entities/people/<slug>.md   # bot creates wiki stubs on every new match
-  # bumble / hinge: same shape as tinder; bots not yet ported.
+  bumble:
+    bot_path: bot-bumble/                       # patchright bot, hand-paced; reply-mostly (Bumble women initiate)
+    raw_path: raw/bumble/                       # one .md per match (slug = <first>-bumble-<city>)
+    config_path: config/bumble/                 # caps.json, schedule.json, filter.json, selectors.json, cities.json, voice/
+    outbound_path: 04-outbound/bumble/          # drafts/pending/approved/sent/expired/auto-sent (auto since 2026-05-04)
+    state_home: ~/.ultron/dating/bumble/        # halt, rate-state, sessions.ndjson, deleted/
+    schedule: setup/bumble/                     # plists at _shell/plists/com.adithya.ultron.dating-bumble-*
+  # hinge: not yet ported.
 
 global_settings:
   attachments_inline: true

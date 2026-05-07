@@ -70,9 +70,9 @@ attachments:
   sender: me
   sent_at: '2026-04-22T22:33:33.153125-05:00'
   sha256: 65888b6d240386c105b8b5e708276f3fbd44999b07026977bf9ffa6e5c1a4c78
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a grey hoodie leans in toward a woman with long dark hair.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:12.969460+00:00'
   source_available: true
 - id: 720c568b05e1028a
   filename: IMG_8241.jpeg

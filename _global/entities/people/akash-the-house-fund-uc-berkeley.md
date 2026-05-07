@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.820241+00:00
+ingested_at: 2026-05-06T22:18:21.442956+00:00
 ingest_version: 1
 content_hash: blake2b:f6858e217ceedf9f10b6b05d2011792f
-provider_modified_at: 2026-05-06T22:17:40.820241+00:00
+provider_modified_at: 2026-05-06T22:18:21.442956+00:00
 
 title: Akash The House Fund UC Berkeley
 slug: akash-the-house-fund-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(818) 983-8398"]
   slack: []
-last_synced: 2026-05-06T22:17:40.820241+00:00
+last_synced: 2026-05-06T22:18:21.442956+00:00
 global: true
 ---
 

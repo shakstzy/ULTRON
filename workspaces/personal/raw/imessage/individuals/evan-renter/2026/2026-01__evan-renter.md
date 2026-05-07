@@ -34,9 +34,10 @@ attachments:
   sender: evan-renter
   sent_at: '2026-01-14T03:16:30.792116-06:00'
   sha256: 2fa2aab0f54f952df82ed7dc062ada82992d811b4516bf9c55be847335faffce
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of Google search results for Rick and Morty head-shaped
+    ceramic mugs.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:42:03.323409+00:00'
   source_available: true
 - id: 52e21c6a56deea03
   filename: IMG_0400.HEIC

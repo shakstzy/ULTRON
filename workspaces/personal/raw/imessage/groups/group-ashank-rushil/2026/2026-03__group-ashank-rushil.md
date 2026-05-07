@@ -22,9 +22,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2026-03-03T23:43:01.216758-06:00'
   sha256: 536fb0125d28b5fce9b33a3701cda37bca3a1b361386cce6c52dbbce19bace30
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Four-panel comparison of Hiroshima and Detroit in 1945 and 2015 with
+    a racist caption.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:47.007872+00:00'
   source_available: true
 chat_message_guids_count: 37
 deleted_upstream: null

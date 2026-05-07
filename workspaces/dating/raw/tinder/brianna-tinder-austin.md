@@ -8,7 +8,7 @@ person_id: "5ecc28c5709a7d01002397af"
 phone: null
 status: "new"
 first_seen: "2026-04-19T00:00:00Z"
-last_activity: "2026-04-19T04:20:00Z"
+last_activity: "2026-05-07T00:35:57.995Z"
 last_scrape: "2026-05-01T05:45:21.635Z"
 previous_slugs: []
 migrated_from_shakos: "brianna"
@@ -90,8 +90,10 @@ last_profile_diff: "2026-05-01T05:45:21.635Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 00:35 aquarium pitch accepted. new orleans or do you have somewhere with better jellyfish in mind
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 00:48 queued_auto (auto, opener) [draft:4e7320a8] lint=true "aquarium pitch accepted. new orleans or do you have somewhere with better jellyfish in mind"
+- 2026-05-07 00:35 sent (auto, auto-or-hitl) [draft:4e7320a8] lint=true "aquarium pitch accepted. new orleans or do you have somewhere with better jellyfish in mind"

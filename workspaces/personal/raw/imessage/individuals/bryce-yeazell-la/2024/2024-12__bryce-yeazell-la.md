@@ -22,9 +22,9 @@ attachments:
   sender: bryce-yeazell-la
   sent_at: '2024-12-13T23:29:48.981824-06:00'
   sha256: 991f9a75a59006146224099fbf2cddbcc82d207002b90b990fa56b580673543a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two young men posing with award ribbons and a certificate at a ceremony.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:42.141776+00:00'
   source_available: true
 - id: e971f57027c682ce
   filename: IMG_2493.heic

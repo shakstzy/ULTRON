@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.885717+00:00
+ingested_at: 2026-05-06T22:18:21.566056+00:00
 ingest_version: 1
 content_hash: blake2b:c81ad4dbf6d56017a1b7ee9cfb04d3cc
-provider_modified_at: 2026-05-06T22:17:40.885717+00:00
+provider_modified_at: 2026-05-06T22:18:21.566056+00:00
 
 title: DeFiniTed | MC2Finance
 slug: definited-mc2finance
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:17:40.885717+00:00
+last_synced: 2026-05-06T22:18:21.566056+00:00
 global: true
 ---
 

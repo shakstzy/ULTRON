@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-12-23T16:40:44.651000-06:00'
   sha256: df7d608d2427dab746a9e4792a30e39f3be8c5d04d479ca5e7f9eff8c1e0c1c8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Calendar event "Stark <> Adithya" scheduled for Tuesday, Dec 23 at
+    5 PM with 3 participants.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:54:46.508760+00:00'
   source_available: true
 - id: bde2d14917e65621
   filename: Image-1.jpg
@@ -33,9 +34,9 @@ attachments:
   sender: me
   sent_at: '2025-12-23T19:10:19.487762-06:00'
   sha256: 7fea43a4b016802908ec09c41884319078cd888b9a046f4ed44dab9c97d5fdd7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A white "OUTERSCOPE" logo with a swirling ring icon on a black background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:54:47.455104+00:00'
   source_available: true
 - id: 421096cd819e500a
   filename: Adithya Kumar.pdf
@@ -57,9 +58,10 @@ attachments:
   sender: me
   sent_at: '2025-12-24T00:05:11.218000-06:00'
   sha256: 6cbae34cd713e8167f356f5192000f1cd506b82ba1dd62458ae51c936af416d1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Calendar invite for "Adithya <> Stark" on Dec 24 at 11 AM with
+    a Google Meet link.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:54:57.366991+00:00'
   source_available: true
 chat_message_guids_count: 27
 deleted_upstream: null

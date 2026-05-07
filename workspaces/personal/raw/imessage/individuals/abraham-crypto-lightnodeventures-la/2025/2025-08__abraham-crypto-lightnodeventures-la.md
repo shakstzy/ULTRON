@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-08-04T21:27:07.695000-05:00'
   sha256: 9539259bdbbff5522a84f946962c101e5b291c56f6b2da89f82e32f6e72e8e93
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat with Avery Abraham regarding a couch favor and a Synapse
+    Litepaper link.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:05.537077+00:00'
   source_available: true
 chat_message_guids_count: 10
 deleted_upstream: null

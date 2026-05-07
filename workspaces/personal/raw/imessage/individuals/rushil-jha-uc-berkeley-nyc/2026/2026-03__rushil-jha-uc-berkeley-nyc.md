@@ -58,9 +58,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2026-03-05T04:07:03.943257-06:00'
   sha256: 280a49d573395225617b1b4d156ef4ad51cd56d4c1674038f431a9eaa842c2c5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Ruinart Champagne Blanc de Blancs and Cristal bottles lying horizontally
+    on a wooden shelf.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:22.124043+00:00'
   source_available: true
 chat_message_guids_count: 352
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-12-08T23:38:59.840000-06:00'
   sha256: a708ca0b78e6d30a0c2b65724cc4d8af1fbc10c8f0f9ce725a47623196c7bbea
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Laptop screen showing a video call with four people and a shared document
+    about the BERA token.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:42:03.902236+00:00'
   source_available: true
 - id: 05005966b5b5c233
   filename: 75541556024__68266A50-BB9E-4D6B-BFC3-4D76A8AD44CC.HEIC

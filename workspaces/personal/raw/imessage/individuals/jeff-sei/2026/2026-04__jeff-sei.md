@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2026-04-01T19:51:51.252000-05:00'
   sha256: b76365dd5350be22e4a132e1d968e1d1282159a43994c09241722f70213fc1da
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Forge startup accelerator benefits: $10K credits, 1:1 mentorship,
+    Demo Day, and alumni network.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:27.982853+00:00'
   source_available: true
 - id: 18157a7b6969ca49
   filename: Forge Operational Playbook - GTM Strategy.docx

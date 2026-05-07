@@ -22,9 +22,9 @@ attachments:
   sender: me
   sent_at: '2025-02-13T00:37:13.212378-06:00'
   sha256: 2be4cc6dc45fe21b88920da3c054b15e4a0c3e7f7b11e9b4bbdc881a5c0a8702
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LinkedIn profile snippet for Ayush Aggarwal, Founding Engineer at Predicate.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:54:28.983709+00:00'
   source_available: true
 - id: 9594a233a8be1e5a
   filename: IMG_9027.png
@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2025-02-13T00:38:26.067324-06:00'
   sha256: 8ccccbc80ea8c9d8fe7c49aa46074119e28af6542cd3a8b3c2d2b16fa401577c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two young South Asian men smile for a selfie, one wearing a bright
+    orange quarter-zip sweater.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:54:48.259374+00:00'
   source_available: true
 chat_message_guids_count: 14
 deleted_upstream: null

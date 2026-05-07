@@ -69,9 +69,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-11-04T09:38:07.050933-06:00'
   sha256: 302bf013c1b182352ca3bb5a274e5a74f6a638a1bb1d5631e1c10e1b0d747bfe
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling man in a red jacket and silver chain posing in front of snowy
+    mountains.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:36:01.228106+00:00'
   source_available: true
 - id: d57bc2e12f7ad5ae
   filename: IMG_3061.PNG

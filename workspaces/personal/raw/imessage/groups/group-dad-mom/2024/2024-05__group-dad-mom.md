@@ -224,9 +224,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-17T12:08:24-05:00'
   sha256: 6d915c1479833cc05d7e3be7ae6e27851fa62ed8a37aa6af803bd1dd93341039
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dream Home Alpenheim Oak Laminate grey flooring sample on sale for
+    $1.99.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:35.218165+00:00'
   source_available: true
 - id: d7eb3491ae28e329
   filename: image000000.jpg
@@ -247,9 +248,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-17T12:08:24-05:00'
   sha256: 9523eb51ec87fba30b100f35613860d36c5a46d660527f61810b36a08d983f5c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A display of Dream Home Arctic Hackberry grey wood-look laminate flooring
+    with a price tag.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:32.604321+00:00'
   source_available: true
 - id: 6b3dd8a4600048de
   filename: image000003.jpg
@@ -258,9 +260,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-17T12:08:24-05:00'
   sha256: eb16e31c757eeb625cc3fe35a22df905efa04db7bfb3728f803f7a4e300cf181
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Display of grey 'Shelter Bay Oak' laminate flooring samples with price
+    tags.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:41.955176+00:00'
   source_available: true
 - id: 5cf8db157dc28fe8
   filename: image000005.jpg

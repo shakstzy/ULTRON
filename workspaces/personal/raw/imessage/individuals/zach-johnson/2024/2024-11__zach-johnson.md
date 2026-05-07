@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2024-11-23T01:28:46.537000-06:00'
   sha256: 48979941140254f50a9d9dbe7baf50ccda2f16187ea2004730c54a2ffd037f4a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three young men pose on a wooden overlook at a beach during a cloudy
+    sunset.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:35:41.431189+00:00'
   source_available: true
 - id: b6b74b80af5658d3
   filename: 9FDD35FC-ECF6-4D2F-AC61-2F1F28C79169.jpg

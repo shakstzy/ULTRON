@@ -22,9 +22,10 @@ attachments:
   sender: phone-+19707791386
   sent_at: '2026-03-13T12:06:23.482879-05:00'
   sha256: f16bfd1cb35af220b7251f9ed520ac01d3221724b86e118d8fe8b11f9bf4ef5e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of a Gmail from Jim apologizing to Georgia for an
+    8-year late reply.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:04.302861+00:00'
   source_available: true
 - id: 49bd45ac7a5b778f
   filename: IMG_5228.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: phone-+19707791386
   sent_at: '2026-03-13T12:06:23.482879-05:00'
   sha256: 6d3bb45416d13d318302b3888c6d5f7b71ef48814c786f05c9f4695088d4ed64
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Email screenshot describing the history and clients of imagery company
+    Snapshots of the Past.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:39.586192+00:00'
   source_available: true
 - id: cbfe8b8811733db4
   filename: IMG_5227.PNG
@@ -44,9 +46,10 @@ attachments:
   sender: phone-+19707791386
   sent_at: '2026-03-13T12:06:23.482879-05:00'
   sha256: 8ba93240b4f296e970e039f9691003cd8a0e0e1d8286839b69b24e6008771aad
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of an email from an entrepreneur discussing resilience and
+    shared career paths.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:41.222994+00:00'
   source_available: true
 - id: ebe71e6dbf68f9e0
   filename: IMG_5226.PNG
@@ -55,9 +58,10 @@ attachments:
   sender: phone-+19707791386
   sent_at: '2026-03-13T12:06:23.482879-05:00'
   sha256: 4cf1cb3c5622b605dc412a9b501ad4738c6a3a7da5993f9fdfd74d3973b204ba
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Email screenshot apologizing for an 8-year silence and mentioning Y
+    Combinator S25 and Mantis.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:35.587111+00:00'
   source_available: true
 - id: 1b0a7a9e75c58ce9
   filename: IMG_5229.PNG
@@ -66,9 +70,10 @@ attachments:
   sender: phone-+19707791386
   sent_at: '2026-03-13T12:06:23.482879-05:00'
   sha256: 45d7858a5fc0e171debd4dbb9acd2efed621a30ebb322f26ffd299329afd980b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of an email expressing interest in a Head of Business Ops
+    role and networking.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:18.037513+00:00'
   source_available: true
 - id: 034142b1efc3cdab
   filename: IMG_5225.PNG
@@ -77,9 +82,10 @@ attachments:
   sender: phone-+19707791386
   sent_at: '2026-03-13T12:06:23.482879-05:00'
   sha256: 6b33ea26871ef3f08ced411d269e5e03caba1e232e89abdb700a5a1263b9d59f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "Screenshot of Jim\u2019s email to Georgia about his 2018 ShopHome.org\
+    \ pitch at MIT."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:51.656719+00:00'
   source_available: true
 chat_message_guids_count: 6
 deleted_upstream: null

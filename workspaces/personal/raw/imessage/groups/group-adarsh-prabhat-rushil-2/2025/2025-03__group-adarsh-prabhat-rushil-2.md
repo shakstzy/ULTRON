@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-03-04T17:36:05.875000-06:00'
   sha256: 5b8d83299fbe38d24f2a7f7c8b77a408e9d99f3017c217541100465a170a8751
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'iMessage screenshot: Carly discusses Fast Twitch hardware plans; Cam
+    Jordan replies.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:34:11.487387+00:00'
   source_available: true
 - id: f84c5d745e719a4c
   filename: IMG_6552.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-03-04T17:36:49.036000-06:00'
   sha256: fa19751b152726f9a5fc4bf3172007e1419b41ad73e4b68a66aa1e39a6f5d58e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram DM with Mychal Kendricks, a shared reel, and an iMessage
+    banner from Saif Ali.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:35:03.810077+00:00'
   source_available: true
 - id: bf450c6eff2794fe
   filename: IMG_0611.png
@@ -44,9 +46,9 @@ attachments:
   sender: me
   sent_at: '2025-03-12T14:55:15.408079-05:00'
   sha256: 02acc43c135557bfa8473ae84de540ca30f0ac0567b232c84003fa0bacb9f227
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling man with a beard holding a yellow concentrate dab on a tool.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:36:07.298049+00:00'
   source_available: true
 - id: bbe1347dfe61285b
   filename: IMG_5332.png
@@ -55,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2025-03-12T14:55:34.676296-05:00'
   sha256: 8cc4557adb0d2d5f3e1b6a28810e8e016dad3f3335f2018487f56f83003eb379
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Baymax from Big Hero 6 waving his large inflatable hand in a city street
+    background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:35:45.641393+00:00'
   source_available: true
 - id: 9ff5b80ad1bdd882
   filename: 76354280214__7BDA85DB-9BF6-42E4-94D2-8BC4F2D1B8CD.HEIC
@@ -66,9 +69,9 @@ attachments:
   sender: me
   sent_at: '2025-03-19T22:58:49.191000-05:00'
   sha256: b1c23316c9f2738adc6cfccfbc5e07fbd0cb422adf7370a5e11f5093e75fe526
-  description: null
-  description_model: null
-  extracted_at: null
+  description: New Jersey driver's license for Ali Saif Tahir from Edison, NJ.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:34:41.014201+00:00'
   source_available: true
 - id: 905ab816e00db124
   filename: IMG_3971.png
@@ -77,9 +80,10 @@ attachments:
   sender: me
   sent_at: '2025-03-21T01:47:52.794007-05:00'
   sha256: 37632a9dfc339ec0edafc245161371dd73d251ef32a5866906765cf26e89ab36
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A film credit for Saif Ali Khan overlaying a crowded stadium in New
+    York.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:34:51.567260+00:00'
   source_available: true
 - id: 7ead05490fec78bd
   filename: IMG_3607.png
@@ -88,9 +92,9 @@ attachments:
   sender: me
   sent_at: '2025-03-21T15:52:16.344609-05:00'
   sha256: d03a928277996b6c5b9babdf2dbd1213b5beb849ce7dbbfc5c1ae49c9646ca68
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Close-up of a man with a buzzed haircut wearing a red checkered shirt.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:10:04.027801+00:00'
   source_available: true
 - id: ecd9d618783c19c7
   filename: IMG_4097.png
@@ -111,9 +115,10 @@ attachments:
   sender: me
   sent_at: '2025-03-21T15:53:37.200900-05:00'
   sha256: ef1a3ebc6673013d499d733be1d937497a0ae3339d131dcf1b580df28f8fa94c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "iMessage screenshot: \"Bruh I don't be fw Suhas \U0001F480\" timestamped\
+    \ Today 3:52 PM."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:35:04.136226+00:00'
   source_available: true
 - id: eb952186b2966a49
   filename: IMG_1822.png
@@ -146,9 +151,9 @@ attachments:
   sender: me
   sent_at: '2025-03-21T15:54:20.396652-05:00'
   sha256: cb4d0496c072e18ef7da4b47a46ba597d684cf0ac1e504b55b1b0dba8b59ed56
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A bearded man with wide-open eyes staring intensely in a close-up selfie.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:36:38.188426+00:00'
   source_available: true
 chat_message_guids_count: 215
 deleted_upstream: null

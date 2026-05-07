@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-03-22T17:21:58.724000-05:00'
   sha256: bb7852b1b06fd89865cf77ba82f633838ba4ea8daad6f56b2bda1fa05705a11d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person in black rests on an Intex air mattress near a grey sofa and
+    a large window.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:44.896457+00:00'
   source_available: true
 chat_message_guids_count: 44
 deleted_upstream: null

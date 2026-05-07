@@ -118,9 +118,9 @@ attachments:
   sender: evan-renter
   sent_at: '2025-08-14T03:21:47.781137-05:00'
   sha256: 26dba17467fa28f2f2ec20fb14ace80d33f0885360bfb6c7057128af65ae07eb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hinge dating profile for Evan, a 30-year-old consultant from Brooklyn.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:41:49.945559+00:00'
   source_available: true
 - id: 8b04f3519137d0da
   filename: champagne.m4a

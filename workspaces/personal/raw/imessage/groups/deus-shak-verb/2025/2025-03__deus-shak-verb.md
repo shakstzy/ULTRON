@@ -22,9 +22,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-03-07T03:23:34.349211-06:00'
   sha256: 3426b70056630946bdc684ae7d462cafb5e8876ef3f5662ab949ccb4c46769c8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A Nest thermostat in Eco mode displaying 56 and an indoor temperature
+    of 61.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:59.514643+00:00'
   source_available: true
 - id: 41bdcfd4c33afbcc
   filename: IMG_6565.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-03-07T03:40:58.677000-06:00'
   sha256: 3b35f1f34a4e3e2d732c00045543f905317e26eaac2872ae8375b5b3420c981c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smart home app screenshot showing an offline 'Entryway' device due
+    to Wi-Fi disconnection.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:59.459481+00:00'
   source_available: true
 chat_message_guids_count: 28
 deleted_upstream: null

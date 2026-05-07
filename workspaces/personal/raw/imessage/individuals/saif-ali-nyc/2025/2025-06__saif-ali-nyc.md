@@ -46,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-06-22T01:34:04.774969-05:00'
   sha256: 783adee4017fed0c4466946fff9bab5f9b15dd64fd108ebfc9e62eda9814b31a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Glowing bottle of liquor on a table with an ice bucket and several
+    empty glasses.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:48.262483+00:00'
   source_available: true
 chat_message_guids_count: 363
 deleted_upstream: null

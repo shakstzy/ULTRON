@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.781786+00:00
+ingested_at: 2026-05-06T22:18:21.394685+00:00
 ingest_version: 1
 content_hash: blake2b:8fecea6d80b5ca3513ea26096edc7e58
-provider_modified_at: 2026-05-06T22:17:40.781786+00:00
+provider_modified_at: 2026-05-06T22:18:21.394685+00:00
 
 title: Alex Tan
 slug: alex-tan
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-888-5327"]
   slack: []
-last_synced: 2026-05-06T22:17:40.781786+00:00
+last_synced: 2026-05-06T22:18:21.394685+00:00
 global: true
 ---
 

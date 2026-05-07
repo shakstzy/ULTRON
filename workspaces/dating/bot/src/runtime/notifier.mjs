@@ -1,11 +1,12 @@
-// Sends a self-iMessage via AppleScript when pending queue grows past threshold.
-// Cron has no Claude, so we can't use the iMessage MCP — falling back to osascript.
+// Sends a self-iMessage when pending queue grows past threshold.
+// Cron has no Claude, so we shell out to ULTRON's imessage skill.
 import { execFile as _execFile } from "node:child_process";
 import { promisify } from "node:util";
 
 const execFile = promisify(_execFile);
 
 const SELF_PHONE = process.env.DATING_SELF_PHONE;
+const SEND_SH = "/Users/shakstzy/ULTRON/_shell/skills/imessage/send.sh";
 
 export async function notifySelf(text) {
   if (process.env.DATING_NOTIFY_DISABLE === "1") return;
@@ -13,13 +14,9 @@ export async function notifySelf(text) {
     console.error("notifier: DATING_SELF_PHONE env var not set, skipping");
     return;
   }
-  const escaped = text.replace(/"/g, '\\"');
-  const script = `
-    tell application "Messages"
-      set targetService to 1st service whose service type = iMessage
-      set targetBuddy to buddy "${SELF_PHONE}" of targetService
-      send "${escaped}" to targetBuddy
-    end tell`;
-  try { await execFile("osascript", ["-e", script], { timeout: 8000 }); }
-  catch (e) { console.error(`notifier: failed: ${e.message}`); }
+  try {
+    await execFile(SEND_SH, ["--to", SELF_PHONE, "--text", text], { timeout: 15000 });
+  } catch (e) {
+    console.error(`notifier: send.sh failed: ${e.stderr?.trim() || e.message}`);
+  }
 }

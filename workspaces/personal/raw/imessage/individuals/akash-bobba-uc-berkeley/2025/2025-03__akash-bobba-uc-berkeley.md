@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-03-27T16:03:17.991658-05:00'
   sha256: 9c2af331100c540310243b441045cbc29e3b65481ce0dcb434d4d5c136488646
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage bubbles asking about recruiting for bus ops, tech ops, and
+    IEOR roles.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:31.698342+00:00'
   source_available: true
 chat_message_guids_count: 3
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-05-04T16:42:17.437761-05:00'
   sha256: 98121c3792bc15c5693f6cb0f5a2b75a491b0488a03351e11bfa29b744c11a7b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a conversation with Ankit about sourcing shrooms
+    and acid in Berkeley.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:54:00.837451+00:00'
   source_available: true
 chat_message_guids_count: 22
 deleted_upstream: null

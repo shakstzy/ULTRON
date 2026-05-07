@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-03-22T02:49:38.138780-05:00'
   sha256: e79cb3527e7e32df0b86d95cd0c3bcc4b50f85244c44c9080c70aff814a5a2e0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling woman in a black strapless dress with a red forearm tattoo
+    leaning on a bar counter.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:47.345812+00:00'
   source_available: true
 - id: 108f48492c5df998
   filename: IMG_5457.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-03-22T02:50:59.917638-05:00'
   sha256: 9afe1a40815e03875cfe9737dbf694b5a1eea2b6e2279d1dd30e8ede8150281b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling woman in a palm tree bikini poses on a blue floating mat
+    in the ocean.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:52.971286+00:00'
   source_available: true
 - id: 513659a22740f6f0
   filename: 76439653698__D85882BB-0F20-449E-8F14-4B4E8E400F44.HEIC
@@ -44,9 +46,9 @@ attachments:
   sender: me
   sent_at: '2025-03-22T23:22:24.075000-05:00'
   sha256: 04871bbbd9b6d675aefbffa36150958d942b04067b576a4fbe160dd27b561582
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A container of Chobani Strawberry Blended Greek Yogurt.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:49.369196+00:00'
   source_available: true
 chat_message_guids_count: 46
 deleted_upstream: null

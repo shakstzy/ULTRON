@@ -1,11 +1,10 @@
-# Super-Graph Report — no per-workspace graphs found
+# Super-Graph Report — graphify CLI not installed
 
-Tier-1 graphs (`workspaces/<ws>/_meta/graphify-out/graph.json`) do not exist for any workspace.
+`graphify` is not on PATH. Install:
 
-Build them by running `/graphify workspaces/<ws>/wiki` from inside Claude Code per workspace.
+```
+uv tool install graphifyy && graphify install
+```
 
-## Missing per-workspace graphs
-- eclipse
-- finance
-- health
-- personal
+Then run `/graphify workspaces/<ws>/wiki` from inside Claude Code per workspace,
+and re-run this script to merge.

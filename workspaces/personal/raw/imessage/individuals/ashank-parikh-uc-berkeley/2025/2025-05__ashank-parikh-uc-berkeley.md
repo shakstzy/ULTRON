@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2025-05-07T23:49:11.693729-05:00'
   sha256: 3c7b650ec69abaed95c6004fd021501bf67e23284ac5cd77e054d2f3d103b9aa
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage group chat screenshot of three people discussing grades, math/ML,
+    and meeting up.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:09.399883+00:00'
   source_available: true
 - id: 844c931ec06c2146
   filename: IMG_8628.HEIC
@@ -102,9 +103,10 @@ attachments:
   sender: me
   sent_at: '2025-05-08T20:02:13.753146-05:00'
   sha256: bd91c73b7b1bb0c28bcd8211b1396d3064969a11db5007e91f9e9789d761fa08
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Seven young men pose for a photo indoors, one wearing a navy blue "Cal"
+    hoodie.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:20.944641+00:00'
   source_available: true
 - id: 6286b5e151e1afb6
   filename: 76853970414__4D01E99C-2B00-4D95-B2A7-0EBABDA92274.HEIC
@@ -113,9 +115,10 @@ attachments:
   sender: me
   sent_at: '2025-05-09T22:16:25.187135-05:00'
   sha256: c5c73dcd0f80dd74accb7774a3ddcc76222c90170361337805495e355441e689
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down selfie of two men on a street, one crouching with a bottle
+    of Popov vodka.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:40.860779+00:00'
   source_available: true
 - id: a0092de394c7df1f
   filename: 76853968881__62ADEB9F-32C3-4153-BB30-4F5E6A8592A9.HEIC

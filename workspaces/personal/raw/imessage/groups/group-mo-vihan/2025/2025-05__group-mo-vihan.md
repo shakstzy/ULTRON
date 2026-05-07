@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2025-05-11T13:48:26.438000-05:00'
   sha256: 1573338fa6c938384507c1b3ead97efd3f0c7cc208cf11e4b89628f613d32e54
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A $209 round-trip flight deal from Austin to Miami with summer and
+    fall 2025 travel dates.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:10:16.287129+00:00'
   source_available: true
 chat_message_guids_count: 22
 deleted_upstream: null

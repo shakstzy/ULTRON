@@ -8,7 +8,7 @@ person_id: null
 phone: null
 status: "new"
 first_seen: "2026-05-04T21:47:45.105Z"
-last_activity: "2026-05-04T21:47:45.105Z"
+last_activity: "2026-05-07T00:38:04.627Z"
 last_scrape: "2026-05-04T22:10:10.146Z"
 previous_slugs: []
 ---
@@ -58,8 +58,10 @@ previous_slugs: []
 ## Conversation
 
 (no messages yet)
+**you** 2026-05-07 00:38 caught the Parish marquee, is that the Riovaz show from last fall or are you just a regular
 
 ## Outbound log
 
 (none)
 - 2026-05-06 00:49 queued_auto (auto, opener) [draft:fe46b318] lint=true "caught the Parish marquee, is that the Riovaz show from last fall or are you just a regular"
+- 2026-05-07 00:38 sent (auto, auto-or-hitl) [draft:fe46b318] lint=true "caught the Parish marquee, is that the Riovaz show from last fall or are you just a regular"

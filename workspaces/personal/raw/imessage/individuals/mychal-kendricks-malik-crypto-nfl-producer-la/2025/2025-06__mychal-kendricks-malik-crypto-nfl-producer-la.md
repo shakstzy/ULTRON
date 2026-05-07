@@ -46,9 +46,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2025-06-20T08:47:55.741129-05:00'
   sha256: 014bf92d59f211879bf5cdaa953e4c5b8fc03cb8e9e04f8c47e913513a5f99eb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Gloved hands examine a vertical sutured incision on a patient's heel
+    in a surgical setting.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:45:21.003974+00:00'
   source_available: true
 - id: 80c8c6e318016568
   filename: IMG_6397.heic
@@ -221,9 +222,10 @@ attachments:
   sender: me
   sent_at: '2025-06-25T09:57:42.660855-05:00'
   sha256: 1cb9099fcf76e4929f53eb496bd8eb790612807be25f246d60e8109325fd4f0d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a heated argument over a handwritten note and
+    claims of deception.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:45:40.907874+00:00'
   source_available: true
 - id: aad3dd7733c79c50
   filename: IMG_0131.PNG

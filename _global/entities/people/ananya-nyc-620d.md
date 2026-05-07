@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.854633+00:00
+ingested_at: 2026-05-06T22:18:21.527962+00:00
 ingest_version: 1
 content_hash: blake2b:861c6820b71d0b029676a03876e468b5
-provider_modified_at: 2026-05-06T22:17:40.854633+00:00
+provider_modified_at: 2026-05-06T22:18:21.527962+00:00
 
 title: Ananya NYC
 slug: ananya-nyc-620d
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12018840250"]
   slack: []
-last_synced: 2026-05-06T22:17:40.854633+00:00
+last_synced: 2026-05-06T22:18:21.527962+00:00
 global: true
 ---
 

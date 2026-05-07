@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2026-03-30T23:39:59.442674-05:00'
   sha256: 461095cacfed4b0989e9d5adb36ff61de4337a68c932d6bf5f7fe1a55ef3bc6e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "A walkthrough of an empty apartment featuring a bathroom, a bedroom\
+    \ with dark carpet, and a glass t\u2026"
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:54:56.648516+00:00'
   source_available: true
 chat_message_guids_count: 10
 deleted_upstream: null

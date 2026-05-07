@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.878267+00:00
+ingested_at: 2026-05-06T22:18:21.556374+00:00
 ingest_version: 1
 content_hash: blake2b:6f96b1afa529f51a2432ff1bbb7452ff
-provider_modified_at: 2026-05-06T22:17:40.878267+00:00
+provider_modified_at: 2026-05-06T22:18:21.556374+00:00
 
 title: AT&T Mobility Contacts
 slug: at-t-mobility-contacts
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["*225#"]
   slack: []
-last_synced: 2026-05-06T22:17:40.878267+00:00
+last_synced: 2026-05-06T22:18:21.556374+00:00
 global: true
 ---
 

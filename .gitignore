@@ -33,3 +33,20 @@ venv/
 .idea/
 .vscode/
 *.swp
+
+# Bot working stores — keep on disk, do not track in git
+# (Chrome user profiles, node_modules, large outbound queue dirs)
+**/.profile/
+**/node_modules/
+**/.cache/
+**/.next/
+**/dist/
+
+# Outbound message queues — auto-managed by bots, churn too high for git
+**/04-outbound/auto-sent/
+**/04-outbound/expired/
+
+# Bulk media scratch — clipping pipeline writes large video files outside git
+# (declared per-workspace in clipping config)
+**/_scratch/
+**/scratch/

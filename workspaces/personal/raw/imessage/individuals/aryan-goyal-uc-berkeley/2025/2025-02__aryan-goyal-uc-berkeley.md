@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-02-21T22:30:57.428000-06:00'
   sha256: 670eb424f347142d8dd6ef4743dd66232153373837c59b5fbc3136acd6eca90f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Blurry, low-light photo of a person's face with a hand reaching across
+    the foreground.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:27.487521+00:00'
   source_available: true
 - id: 6316496875eef420
   filename: 76197984026__2491FA0C-25D6-4103-AD27-1271CD9FDF70.heic

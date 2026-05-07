@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-08-03T04:38:05.988000-05:00'
   sha256: 49386fe7444e8de4122765bebe9537bd1dac66602166b32a79167259aa18336c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men talk in a room featuring a New York Giants 4-time Super Bowl
+    banner.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:20.310319+00:00'
   source_available: true
 chat_message_guids_count: 24
 deleted_upstream: null

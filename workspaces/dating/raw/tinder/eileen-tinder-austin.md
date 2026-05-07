@@ -8,7 +8,7 @@ person_id: "684a0fb5a727caaec61ed497"
 phone: null
 status: "new"
 first_seen: "2026-04-08T00:00:00Z"
-last_activity: "2026-04-08T07:23:00Z"
+last_activity: "2026-05-07T00:42:44.508Z"
 last_scrape: "2026-05-01T06:35:10.589Z"
 previous_slugs: []
 migrated_from_shakos: "eileen-bohorquez"
@@ -99,8 +99,10 @@ last_profile_diff: "2026-05-01T06:35:10.589Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 00:42 gojo sticker on the case, jujutsu fan or just good taste in phone accessories?
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 00:58 queued_auto (auto, opener) [draft:66fbe3de] lint=true "gojo sticker on the case, jujutsu fan or just good taste in phone accessories?"
+- 2026-05-07 00:42 sent (auto, auto-or-hitl) [draft:66fbe3de] lint=true "gojo sticker on the case, jujutsu fan or just good taste in phone accessories?"

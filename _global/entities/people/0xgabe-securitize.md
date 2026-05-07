@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.786654+00:00
+ingested_at: 2026-05-06T22:18:21.399696+00:00
 ingest_version: 1
 content_hash: blake2b:f4780d53894b89cb63dca3c04c5ec034
-provider_modified_at: 2026-05-06T22:17:40.786654+00:00
+provider_modified_at: 2026-05-06T22:18:21.399696+00:00
 
 title: 0xGabe | Securitize
 slug: 0xgabe-securitize
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:17:40.786654+00:00
+last_synced: 2026-05-06T22:18:21.399696+00:00
 global: true
 ---
 

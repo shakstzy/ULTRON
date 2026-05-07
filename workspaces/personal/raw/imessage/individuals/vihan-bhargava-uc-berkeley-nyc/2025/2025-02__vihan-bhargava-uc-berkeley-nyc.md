@@ -46,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-02-22T21:33:05.664000-06:00'
   sha256: 3ef26a441c452040861bddfbf3f15c9b8e30deef88bbf54a8446a03ff96edc29
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram comments on a @macchugs post about drinking Four Lokos and
+    an 8ball.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:03.212747+00:00'
   source_available: true
 - id: 46fddca1ba7e8306
   filename: IMG_5872.PNG

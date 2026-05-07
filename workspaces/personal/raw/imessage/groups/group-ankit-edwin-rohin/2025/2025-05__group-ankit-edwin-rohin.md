@@ -46,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-05-07T00:23:15.173586-05:00'
   sha256: 4de2a07aae73e6a2bc203ffff941daece34e7d64251cf58b41301fa99d8cb9c5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men posing for a photo in a crowded, dimly lit bar with people
+    in the background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:10:09.492442+00:00'
   source_available: true
 - id: b703bc44ae42551b
   filename: 76828822659__46A3D01C-90A4-4363-B044-2CBAAD9AA743.jpeg
@@ -57,9 +58,10 @@ attachments:
   sender: rohin-uc-berkeley
   sent_at: '2025-05-07T00:23:54.118322-05:00'
   sha256: 16e4ac6d3e9c40a097276fda8e9401e6e44b227308b6b8d9fb83c5fda37bc251
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A hand holds a plastic cup of green liquid in front of a man using
+    a phone at a bar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:10:09.560582+00:00'
   source_available: true
 chat_message_guids_count: 190
 deleted_upstream: null

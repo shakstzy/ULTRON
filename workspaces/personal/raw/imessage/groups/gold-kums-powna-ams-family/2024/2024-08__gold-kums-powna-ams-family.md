@@ -22,9 +22,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-08-25T16:12:39.425602-05:00'
   sha256: 2f77cfb3b452d35647d3ad6e2415b528ab1034513ba701943592cd90bcc7c316
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three young men, one in a Hattori Hanzo shirt, posing by a ThunderCloud
+    Subs sign.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:36.994331+00:00'
   source_available: true
 - id: 8cf1b318943b64a0
   filename: IMG_1816.heic
@@ -45,9 +46,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-08-26T20:37:42.185815-05:00'
   sha256: eb6b810fc2a293f6d7f8ef9ff4f7e46e98b878764184bb36084a5f212d931c84
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Pan-seared salmon, steamed broccoli, and red grapes on a blue-rimmed
+    plate.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:35.068419+00:00'
   source_available: true
 - id: 9f5b7428d9fd9633
   filename: image.png
@@ -56,9 +58,10 @@ attachments:
   sender: mom
   sent_at: '2024-08-28T12:24:19.901480-05:00'
   sha256: 0cee725fb1564f6e0f3802cfd1e8b9da04b8462e66a2d23e38fc1fb609de92a0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'WSJ article: "Parenting Is Hazardous to Your Health, the Surgeon General
+    Warns."'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:37.559900+00:00'
   source_available: true
 - id: b0d9c3b6178377f1
   filename: image.png
@@ -67,9 +70,9 @@ attachments:
   sender: mom
   sent_at: '2024-08-28T19:28:37.731217-05:00'
   sha256: 28bd4498aaff3cdef074728c84c198df5ba3dca7e99f0b809e7c937a8889c725
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "Saut\xE9ed chopped green beans and spiced, crumbly lentils in a pan."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:43.099622+00:00'
   source_available: true
 - id: 5d9a6085cfcb0fdf
   filename: image.png
@@ -78,9 +81,9 @@ attachments:
   sender: mom
   sent_at: '2024-08-29T12:24:13.590461-05:00'
   sha256: f8a5fe882e5087d296d0fce05c636ecb1b7781d48695e18f9b1f903cb2b5f11a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A bowl of vegetable slaw with cubed tofu, shredded cabbage, and carrots.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:37.605344+00:00'
   source_available: true
 - id: df8a54c1c0b17fa7
   filename: 74b74170-b1f9-446b-a020-7375f22e9d2d.jpg
@@ -89,9 +92,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-08-29T12:25:11.330728-05:00'
   sha256: 88b3efd60095ba30b40b59fdd7be6cb9478bdf0a7308b929061bfea34caebb9f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A salad bowl with grilled chicken, corn, black beans, and lettuce,
+    drizzled with white sauce.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:39.104003+00:00'
   source_available: true
 - id: 64db7dd96a00cf57
   filename: image.png
@@ -100,9 +104,10 @@ attachments:
   sender: mom
   sent_at: '2024-08-30T13:04:00.129252-05:00'
   sha256: 14e63f8458f4a029290664135824ecd215dc5e0d18629dc1322d4c0f592038c1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A hand holding a blue-striped bowl filled with tofu, carrots, seeds,
+    and mixed greens.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:40.569867+00:00'
   source_available: true
 chat_message_guids_count: 298
 deleted_upstream: null

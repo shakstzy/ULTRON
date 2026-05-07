@@ -45,9 +45,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-01T10:16:53.976509-05:00'
   sha256: 11b87848f8672931e1f7f10de786b4b515bfa99c7a7d4018ffee18506114db6f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage thread about returning an Apple device and discussing cloud
+    computing costs.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:48:59.342253+00:00'
   source_available: true
 - id: 265c6385fc7c84f2
   filename: IMG_8408.png
@@ -90,9 +91,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-01T19:44:52.972930-05:00'
   sha256: 1e4b4b13b16b6415d986f1af83078d02b10f9a6a4615f0ff0382e9feac0621df
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram story by sumfattytuna reposting a tweet about a streamathon
+    and multi-screen setup.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:31.992114+00:00'
   source_available: true
 - id: 91e3b380cab4ab2c
   filename: 441EF740-6F15-4932-8525-28E34B6788AD.pluginPayloadAttachment
@@ -124,9 +126,10 @@ attachments:
   sender: me
   sent_at: '2026-04-01T19:47:37.590000-05:00'
   sha256: 05439da1a92b9f3139a18b626484f6044dae4290503aab7fdda4c1ec43a0d362
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Code editor tab for ultrapoly_strategy_expansion_42bbdac6.plan.md with
+    strikethrough BTC text.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:27.180676+00:00'
   source_available: true
 - id: e82dd9be7aa0e54c
   filename: IMG_2072.png
@@ -213,9 +216,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-02T14:05:46.945828-05:00'
   sha256: c17bbd2f3a06d822ae78ddb0f1fef8c9f252eb72a7f3979d6129f063bf600b7c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: X posts by John Coogan and Jordi Hays announcing OpenAI's acquisition
+    of TBPN.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:21.284847+00:00'
   source_available: true
 - id: 94bc09c4cea9ba3b
   filename: 0F325BB6-8AB9-41B8-8612-B38E335B29A8.pluginPayloadAttachment
@@ -383,9 +387,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-03T12:42:25.259318-05:00'
   sha256: bf202c00dbb3af28b62d44f95a2f51296d020aff4a7198d5eac5079f85fd1c18
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Video call screenshot of a man looking up in a bathroom with a smiling
+    man in a corner inset.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:23.223925+00:00'
   source_available: true
 - id: 8f5374f9e72c9133
   filename: IMG_6998.png
@@ -405,9 +410,10 @@ attachments:
   sender: me
   sent_at: '2026-04-03T18:57:53.878000-05:00'
   sha256: 3e53d95b41d91eb4b3af9013af84e2ba58a82aa1aecafb53956382042a39f23a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Claude Team email announcing pay-as-you-go billing for third-party
+    harnesses like OpenClaw.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:16.952708+00:00'
   source_available: true
 - id: 00760998b6a7d643
   filename: IMG_6415.png
@@ -462,9 +468,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-04T18:38:28.895446-05:00'
   sha256: 024de7f341c784eed65c6c18ef558a1c1201c4b58d7af0b02f38128a3e28e31f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Six people stand in front of a glass pyramid building at the Infosys
+    campus in Bangalore.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:23.733955+00:00'
   source_available: true
 - id: 19250d1f31705309
   filename: WhatsApp Image 2026-04-04 at 19.36.39 (8).jpeg
@@ -473,9 +480,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-04T18:38:32.891093-05:00'
   sha256: f8dcdfc6138d1714f68fd9c3454a2a7a6eb12396090e3a1e0fbe98a4b989c33f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Four men wearing garlands and headgear stand in front of an Infosys
+    reception desk.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:25.337079+00:00'
   source_available: true
 - id: 865d3448d26b59fd
   filename: WhatsApp Image 2026-04-04 at 19.36.39 (7).jpeg
@@ -520,9 +528,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-04T18:38:53.143265-05:00'
   sha256: fca06fc5e7177cddf3d8901b8f4cb9ae6a25f1d2b8d4fa5fd60ae22a72c16775
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Four men, three in RCB jerseys, stand before an intricately carved
+    ancient stone temple.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:33.973604+00:00'
   source_available: true
 - id: 89cd7e49dad47ecf
   filename: WhatsApp Image 2026-04-04 at 19.36.39 (3).jpeg
@@ -531,9 +540,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-04T18:38:59.300747-05:00'
   sha256: 3245884773fca7dd06d9fdf1da319443bb7b7a34a20bbe76ed29584ff9c0f5f1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Four men, three in Royal Challengers Bangalore jerseys, stand before
+    an ancient carved stone temple.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:37.568542+00:00'
   source_available: true
 - id: 0ba2be5b089a5a40
   filename: WhatsApp Image 2026-04-04 at 19.36.39 (2).jpeg
@@ -554,9 +564,9 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-04T18:39:13.251599-05:00'
   sha256: 5e875a7d2d5c93e4b965a5a7f4dc06f5924abd65407e6ee1f947bd1201b56246
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three men point at Caterpillar corporate behaviors on a wall.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:32.475416+00:00'
   source_available: true
 - id: 3fe098e9df40e799
   filename: WhatsApp Image 2026-04-04 at 19.36.39.jpeg
@@ -565,9 +575,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-04T18:39:21.838407-05:00'
   sha256: 22bcc53c8f49ca2dd8cd9aab673722aed83ada3d3c18c982a783bfa331cbd8a6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Team of roughly thirty employees posing in a Caterpillar office behind
+    desks and a printer.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:39.975596+00:00'
   source_available: true
 - id: bffbfb59e01f5e25
   filename: 6054C7D2-A686-46E7-9588-F489BCCAF03C.pluginPayloadAttachment
@@ -698,9 +709,10 @@ attachments:
   sender: me
   sent_at: '2026-04-06T17:52:40.740117-05:00'
   sha256: 4592da4790a76cd14f814cdbb1e1fa8f689eae85b7ff9d5b17c80c95582d5f09
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google search results for Andrei Karkar's arrest for rape and CEO position
+    at ERAS Holdings.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:44.371518+00:00'
   source_available: true
 - id: 64cfec38e3bad04f
   filename: 9BBDA8F5-7735-4AB5-B320-FCFF6EB67782.pluginPayloadAttachment
@@ -720,9 +732,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-06T18:02:31.035362-05:00'
   sha256: e0fdf0dd027d3eddd45fe3ba212799c1adb5399de60204dd004dfeec8924f42f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram story showing a person's shadow next to discarded bunny ears
+    on concrete.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:44.350362+00:00'
   source_available: true
 - id: 144014327476f834
   filename: "Screenshot 2026-04-06 at 7.12.00\u202FPM.png"
@@ -743,9 +756,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-07T11:57:03.397977-05:00'
   sha256: 697d3bf664b19030098ae5e897d925534a1eb043c05f19738c88924fe54e9186
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a chat with Manoj warning Avery Haskell about OpenClaw
+    security risks.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:38.659857+00:00'
   source_available: true
 - id: 5ca5bb2c7dc91c1d
   filename: IMG_6088.png
@@ -844,9 +858,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-09T10:51:40.724482-05:00'
   sha256: 2538a97b7271320e6f7639c670211e93a7aef579771914f34133741c3f7bbc81
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Glass office door for MITIMCo (MIT Investment Management Company) Suite
+    200.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:44.901760+00:00'
   source_available: true
 - id: 0f16504b0eb5c61d
   filename: IMG_7415.HEIC
@@ -935,9 +950,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-09T12:55:10.893595-05:00'
   sha256: 6d46ab192c1e638c9298b9777341c6fb6a6d0fa50fb54bb9a9927768334e91a0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Amazon Business email screenshot notifying of account removal and order
+    cancellation.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:29.331327+00:00'
   source_available: true
 - id: 787bd3f002eaaf70
   filename: IMG_4877.png
@@ -946,9 +962,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-09T13:00:18.457977-05:00'
   sha256: bf5b9aa2097afdd7f33567e2a8ae4df64a8c72f638dc29ef4cc33cc23edffaef
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Amazon order confirmation for a $4,699 NVIDIA DGX Spark AI desktop
+    sent to Adithya Kumar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:46.013026+00:00'
   source_available: true
 - id: 6c2651ce6bfc9841
   filename: IMG_6211.heic
@@ -1005,9 +1022,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-09T18:17:06.972775-05:00'
   sha256: c5ec8f4f0ea02c7801f6f06fdb9eff2ff953fd058738f403610dcc7c8439a3e5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Shipping options showing delivery dates and tiered costs for a $4,679.99
+    purchase.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:45.457831+00:00'
   source_available: true
 - id: 989ba7c159800dcd
   filename: IMG_8775.png
@@ -1016,9 +1034,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-09T18:24:50.398039-05:00'
   sha256: c38a08421881053edfe5c3d395a4f4e441e59846633e1d7404ce950490433b4c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Step-by-step tutorial for building a 'Deep researcher' agent in the
+    Claude Console.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:25.662055+00:00'
   source_available: true
 - id: b1a06db7a5cf01ec
   filename: 0491F0D8-7974-431B-8EB6-7DAEC1360DAB.pluginPayloadAttachment
@@ -1049,9 +1068,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-10T14:01:48.241248-05:00'
   sha256: 1f6d45933a6a67ea4859bb24b8c5f252788405e93a310db8d5edb58ba88d4597
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone lock screen at 3:01 PM with a Newegg shipment alert for an NVIDIA
+    DGX Spark.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:12.795912+00:00'
   source_available: true
 - id: 63728636c0680791
   filename: "Screenshot 2026-04-10 at 4.33.30\u202FPM.png"
@@ -1176,9 +1196,10 @@ attachments:
   sender: me
   sent_at: '2026-04-13T16:01:05.947000-05:00'
   sha256: 272a6e6a4416f75cb8da01757b60cb879d45e9f39910085997d019d0d59d8f7b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Strategy for a 1.1TB LLM cluster using M5 Max MacBooks for high-bandwidth
+    decoding.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:32.094932+00:00'
   source_available: true
 - id: 0b5f21aee3e2f33a
   filename: IMG_8272.png
@@ -1187,9 +1208,10 @@ attachments:
   sender: me
   sent_at: '2026-04-13T16:04:56.642000-05:00'
   sha256: adc9190471cc42b528bc515333fb944a1a7411a4d760238baec7124f6ccf165b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: AI cluster diagram with M5 MBPs, DGX Spark nodes, and 5090 eGPUs over
+    TB5 and QSFP.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:28.053949+00:00'
   source_available: true
 - id: e8512a9a18ddc01d
   filename: 56D7FD62-2B6F-451D-BD38-DBAF209CDAE1.pluginPayloadAttachment
@@ -1363,9 +1385,10 @@ attachments:
   sender: me
   sent_at: '2026-04-13T16:12:50.956000-05:00'
   sha256: 398e3bf4be6002b1d48333b8ad6ab793a6e68157766bc03149c3eb88b8ab0c52
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Advice on using an Ethernet switch to bridge Sparks and TB5 RDMA clusters
+    via EXO.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:51.543099+00:00'
   source_available: true
 - id: a1b677bbe730daf6
   filename: A22FC0C6-BD0D-489C-A604-9A9968D17C0B.pluginPayloadAttachment
@@ -1396,9 +1419,10 @@ attachments:
   sender: me
   sent_at: '2026-04-13T17:32:44.443000-05:00'
   sha256: 89547da1af32446b5dee4862513f67bc9257a8295cf9864f683ac032536db6d6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Text detailing SuperGrok Heavy's inclusion of $50/month in xAI API
+    credits.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:53.731195+00:00'
   source_available: true
 - id: c88921562986cb63
   filename: IMG_7625.MOV
@@ -1475,9 +1499,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-13T21:14:13.687326-05:00'
   sha256: 9bbfed2ae90f2d8b8c4051d4ecc25f47c4970854ce88c618dc8626f04d083925
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Text comparing 25M tokens to 50k-100k pages, 100M characters, and GPT-4o
+    context windows.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:07.811746+00:00'
   source_available: true
 - id: f0dc5728b34a5267
   filename: "Screenshot 2026-04-13 at 10.46.26\u202FPM.png"
@@ -1522,9 +1547,9 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-14T15:00:48.200793-05:00'
   sha256: 430352c5f4a6eab91ffc05bd8790d303600cb9f59b1882520fc92256b14e5be0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Avery and Henry Paulson Jr. pose at the Semafor World Economy conference.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:37.853571+00:00'
   source_available: true
 - id: 704ac3134c414534
   filename: "Screenshot 2026-04-15 at 10.31.37\u202FAM.png"
@@ -1533,9 +1558,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-15T09:32:11.040054-05:00'
   sha256: 452158d70db4a38f5557d3efb4b349b8422d6ef881c6b03417f3ae6cf890f046
-  description: null
-  description_model: null
-  extracted_at: null
+  description: UPS tracking screenshot for package 1ZE569860310172293 out for delivery
+    in Austin, TX.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:11.247116+00:00'
   source_available: true
 - id: 52ccb4847500d4f0
   filename: IMG_7751.HEIC
@@ -1544,9 +1570,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-15T13:06:12.196862-05:00'
   sha256: dc2d0e496a1c1d89f4812574a98772aded29419e00fbdcd7a4c450580def6607
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Semafor stage panel "Healthcare in a Transforming World" featuring
+    General Todd Blanche.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:03.151590+00:00'
   source_available: true
 - id: 416ff9531c902cc0
   filename: IMG_7752.mov
@@ -1555,9 +1582,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-15T13:06:31.312289-05:00'
   sha256: c95efa92cb98e24937977e61112f6d7328a808f7e68fba87d0e65bc7ac161b19
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Todd Blanche discusses the Jeffrey Epstein case at the Semafor World
+    Economy Summit.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:56.064139+00:00'
   source_available: true
 - id: a6f6cc8e130c6b23
   filename: "Screenshot 2026-04-15 at 3.08.25\u202FPM.png"
@@ -1600,9 +1628,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-15T23:00:37.511206-05:00'
   sha256: 94785364f1cf04fc12a94197dba9fb8279cd7a2511bd318eb9c946db84eef9da
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A Newegg notification confirming delivery of an NVIDIA DGX Spark hardware
+    package.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:37.838383+00:00'
   source_available: true
 - id: 1f00e01ee5177fab
   filename: Audio Message.caf
@@ -1679,9 +1708,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-16T16:21:28.193344-05:00'
   sha256: 111f01be2ec810d51c0351296940f5fae727323e5e2db775d5a368de1f23647c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Newegg Chat Bot offering a refund or replacement for a $4,679.99 PNY
+    hardware order.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:15.906977+00:00'
   source_available: true
 - id: 21c40e557e74744e
   filename: IMG_1529.png
@@ -1690,9 +1720,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-16T16:31:10.111590-05:00'
   sha256: 03c052d987f61cdf3c6888a5a70c1da48c84ebf548971d3dbb904c3754842ee5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a customer support chat about a shipping claim and item
+    replacement.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:22.689216+00:00'
   source_available: true
 - id: 39379f3099dafe25
   filename: IMG_7084.png
@@ -1940,9 +1971,10 @@ attachments:
   sender: me
   sent_at: '2026-04-21T13:50:58.896000-05:00'
   sha256: 67c1b72e487c868823ac3b07b60379aa04427f91b663209d3fc81c840811794d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A terminal status bar displaying 65% battery, 3h 09m remaining, and
+    a purple 5h indicator.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:22.062244+00:00'
   source_available: true
 - id: eedca8f6a1bc2f60
   filename: CB4E4663-7AD6-4B9A-89D1-43BAB5045B3A.pluginPayloadAttachment
@@ -2055,9 +2087,9 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-21T22:22:01.645011-05:00'
   sha256: a2fbcd3f9de967c3b7615bf98e782774c77def0c5ddbe61a7e0e637451e25977
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram Story viewer list showing 83 views for a night street photo.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:32.484221+00:00'
   source_available: true
 - id: 7a9a8a7157c584bf
   filename: IMG_9280.png
@@ -2066,9 +2098,10 @@ attachments:
   sender: me
   sent_at: '2026-04-22T00:46:35.425000-05:00'
   sha256: 19b566ce602546aa0b9cd03686b65f3e023393931ac42d0105f0379385266af8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'CLI log showing end-to-end testing progress for Codex #5 and Higgsfield
+    recon phases.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:25.743302+00:00'
   source_available: true
 - id: 84687e2912ca6cf9
   filename: IMG_2515.png
@@ -2134,9 +2167,10 @@ attachments:
   sender: me
   sent_at: '2026-04-22T03:52:35.791007-05:00'
   sha256: 7704a01f9e3a1fbce5750df95911129f521b3b23b80bf9a83759fbc2768db20b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Amazon listing for a Sabrent USB4 to 10 Gigabit Ethernet adapter priced
+    at $109.99.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:38.047276+00:00'
   source_available: true
 - id: 6921b0a3009cb5bc
   filename: IMG_8438.HEIC
@@ -2225,9 +2259,10 @@ attachments:
   sender: me
   sent_at: '2026-04-22T14:58:57.208811-05:00'
   sha256: 84db6397a0919b832d9dfe2431e56d620b8b1a35715d48b213d760317a67e8b1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Multi-monitor desk setup showing code under purple string lights with
+    a gaming chair.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:44.458789+00:00'
   source_available: true
 - id: 3a02be4e94b270c8
   filename: IMG_4433.heic
@@ -2260,9 +2295,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-04-23T15:12:52.714709-05:00'
   sha256: b99aaec8bcd0222f8896ce2f9b66d1edf8d7ecaee8f024d5f9fbe11c6ebd41dd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three naked women on a balcony overlooking a city, with one exhaling
+    a cloud of smoke.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:40.987055+00:00'
   source_available: true
 - id: 3b00be3b9c5d6b72
   filename: IMG_8245.png
@@ -2271,9 +2307,10 @@ attachments:
   sender: me
   sent_at: '2026-04-23T15:13:50.023652-05:00'
   sha256: 2c7cbc324e15479b4a9ca9dec743bf46c09ff59219b8e2f461f35cc8f0130c0b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a chat with Mychal from LA about understanding
+    and a sexual joke.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:42.893650+00:00'
   source_available: true
 - id: 939e969cf33eba9f
   filename: CF2FBB1E-6395-4E21-9E72-258E751A8BE8.pluginPayloadAttachment

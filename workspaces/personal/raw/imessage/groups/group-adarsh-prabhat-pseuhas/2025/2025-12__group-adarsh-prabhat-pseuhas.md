@@ -22,9 +22,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-12-08T10:00:10.235958-06:00'
   sha256: 67b0b3740d8559f512b698a617f531e082e4fb7f996c978882f9528eb4e14e88
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man stands with crossed arms by tangled wires and a Tamil "Best Money
+    Gold" advertisement.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:20.136451+00:00'
   source_available: true
 - id: ed98665cb1bb599f
   filename: IMG_5303.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-12-08T10:13:39.288000-06:00'
   sha256: e8af772f0caf55a23742d2eafff1389d807ad5a8585f5fc60b3183263a49fb90
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Brut India video screenshot of two women from "A big fat Indian lesbian
+    wedding."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:29.701913+00:00'
   source_available: true
 chat_message_guids_count: 4
 deleted_upstream: null

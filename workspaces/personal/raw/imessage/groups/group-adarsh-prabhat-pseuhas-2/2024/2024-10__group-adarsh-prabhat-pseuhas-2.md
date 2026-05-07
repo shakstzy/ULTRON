@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-10-24T14:26:37.454000-05:00'
   sha256: 7ced9558cfbc6bc35ccab1158f1b11de9beb3c4aa16caf1c6454cbd14dde3f4f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Roblox 2025 Associate Product Manager - New Grad job posting in San
+    Mateo, CA.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:25.000899+00:00'
   source_available: true
 - id: 206a74e1b2399b75
   filename: IMG_4685.jpeg
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2024-10-24T14:26:37.454000-05:00'
   sha256: 57d55ecb62d7a6362c6851fc72d636a353e3235a1332b8819c70952d19bd3814
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Associate Product Manager job post in San Francisco for 2025 graduates
+    with over 100 applicants.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:24.406369+00:00'
   source_available: true
 - id: 89f299d797cac80b
   filename: IMG_1568.jpeg
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2024-10-25T01:10:07.612000-05:00'
   sha256: 0aa31398e889244dcfed92e17e1b5cab2e7410cabf982578128b6fc3e6a85829
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Aerial view of a gas station and road with "SAIF ALI KHAN" text and
+    a play button overlay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:25.427359+00:00'
   source_available: true
 chat_message_guids_count: 4
 deleted_upstream: null

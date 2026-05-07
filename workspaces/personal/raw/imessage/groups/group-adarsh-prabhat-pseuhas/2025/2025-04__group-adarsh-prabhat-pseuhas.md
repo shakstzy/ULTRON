@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-04-04T19:20:36.866015-05:00'
   sha256: 5547da9d5a2e2a3077520900d8b13c7fde9f28c6c6f35d5cb5172fe8d39ab4c3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A blue Core Power strawberry protein shake bottle with a barcode and
+    nutritional claims.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:40.696173+00:00'
   source_available: true
 chat_message_guids_count: 2
 deleted_upstream: null

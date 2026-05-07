@@ -22,9 +22,9 @@ attachments:
   sender: evan-renter
   sent_at: '2024-11-02T12:10:24.768230-05:00'
   sha256: 6332a8c8cd13ef7bb32bdefe603d57df3c89c7c2db3469d9eec0e25774905aea
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hand holding a crumpled blue note that says "Do NOT touch" in marker.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:22.387912+00:00'
   source_available: true
 - id: fcb991b6a1f1e2a6
   filename: 75226036938__7359F5E6-0394-4249-9A67-92DB22E5E032.HEIC
@@ -33,9 +33,10 @@ attachments:
   sender: evan-renter
   sent_at: '2024-11-02T12:13:01.691138-05:00'
   sha256: 6e338c6a8e5e69bf453df25f386ea4d464a46ad50a18e7c64a42f20a0565b1c4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A bunch of overripe, dark brown bananas and a plastic bag in a clear
+    refrigerator drawer.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:22.612427+00:00'
   source_available: true
 - id: 6dbfe35cf7267ec1
   filename: IMG_4022.HEIC
@@ -44,9 +45,10 @@ attachments:
   sender: evan-renter
   sent_at: '2024-11-04T11:33:32.168141-06:00'
   sha256: 1487ae4659b3f198ee188992a1220e0da9c799295248b8d5f04dda1f1271a093
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Beige sofa with a patterned blanket next to a black backpack on a grey
+    shaggy rug.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:42.986776+00:00'
   source_available: true
 - id: 1d0ef773ab25a056
   filename: IMG_1197.heic
@@ -55,9 +57,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-11-04T11:55:52.653164-06:00'
   sha256: b8b28f724e6e7371a911b2f26c803abffee43691696a197527175b8f7c9fa6ab
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Four white trash bags with yellow drawstrings on concrete next to a
+    blue car.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:44.516596+00:00'
   source_available: true
 - id: b2df8bd2814736d1
   filename: IMG_3961.PNG
@@ -66,9 +69,10 @@ attachments:
   sender: evan-renter
   sent_at: '2024-11-04T16:40:40.637285-06:00'
   sha256: bd27d128ccf10cc892622c75778593e942909730508d1edb3955d4aa43e24041
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Facebook meme parodying Sean Combs as Eminem with the text overlay
+    "LUBE YOURSELF".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:45.105221+00:00'
   source_available: true
 - id: 22d42934885850b8
   filename: IMG_4028.JPG
@@ -77,9 +81,10 @@ attachments:
   sender: evan-renter
   sent_at: '2024-11-04T16:40:40.637285-06:00'
   sha256: 0008c4d646cd800a93a8380a1551b81e37eec2571bc83f087b14bcd7c78d92d4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Parody Hocus Pocus poster with P. Diddy as all three witches, titled
+    "Diddy Hocus Stroke Us".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:31.933688+00:00'
   source_available: true
 - id: 99163ccb8478bad4
   filename: IMG_3962.JPG
@@ -88,9 +93,10 @@ attachments:
   sender: evan-renter
   sent_at: '2024-11-04T16:40:40.637285-06:00'
   sha256: a7334ffa0431d470247ee3819d05d41a57e1ba961eb3dbc84e547438350f074e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Satirical poster titled "Diddle Shop of Horrors" with Diddy holding
+    baby oil next to Audrey II.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:25.216544+00:00'
   source_available: true
 - id: 236c7cd5550b2dde
   filename: IMG_4029.JPG
@@ -99,9 +105,10 @@ attachments:
   sender: evan-renter
   sent_at: '2024-11-04T16:40:40.637285-06:00'
   sha256: af5cc74db948751f5fcd65bff8a6e407436ad8cedead42e547de77d82b97e92d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Meme parodying 'Remember the Titans' with Sean Combs and text 'REMEMBER
+    THE TIGHT ONES'.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:47.106829+00:00'
   source_available: true
 - id: 03f808a08a48dd3c
   filename: IMG_4027.JPG
@@ -110,9 +117,10 @@ attachments:
   sender: evan-renter
   sent_at: '2024-11-04T16:40:40.637285-06:00'
   sha256: d37d4cd5b8d28270a2d9a0b7d968e2796d7815b212eb4cb1df62ac8fa4c7706f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Parody Little Debbie logo with Sean Combs' face and the text "Little
+    Diddy LUBE CAKES."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:32.909625+00:00'
   source_available: true
 - id: fc1538f0a71e70df
   filename: B45E8947-7518-4696-94F2-A327CCCCA6C8.png
@@ -121,9 +129,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-11-04T22:46:56.163955-06:00'
   sha256: f188f286e1e0a36b5f2322865a22e89e189a572d3603ce899624741b32e4b17e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smug 3D Gumball Watterson with heavy lids and a wide grin against a
+    black background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:27.582060+00:00'
   source_available: true
 - id: 7f1b34d4f15f1152
   filename: IMG_6450.png
@@ -132,9 +141,10 @@ attachments:
   sender: me
   sent_at: '2024-11-06T13:32:35.532887-06:00'
   sha256: a13720691d9a0146fed0fb4c3ba98a199778054fccb55b414264728d871a339e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Finance chart showing an asset at 75,332.26 USD with a 21.69%
+    monthly gain.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:30.431213+00:00'
   source_available: true
 - id: 53284ccb6dde8ac7
   filename: IMG_4422.PNG
@@ -143,9 +153,10 @@ attachments:
   sender: me
   sent_at: '2024-11-25T21:05:06.526000-06:00'
   sha256: 101262edfe3f8f5af1484d05eb28d25a37a8672e6d441d7f1aba08c767441297
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat between Gabriel, Evan, and Amadeus discussing a meeting
+    for tomorrow afternoon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:31.123174+00:00'
   source_available: true
 chat_message_guids_count: 229
 deleted_upstream: null

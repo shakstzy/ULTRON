@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-10-11T19:02:42.461000-05:00'
   sha256: 5ec567d11afab2d6846c5e40793d9b6c210e9ba483410bb60d413047c18769e6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Digital ticket for Karate Combat 50 issued to Adithya Kumar, featuring
+    a QR access code.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:05.475520+00:00'
   source_available: true
 - id: d4604261c0e201f3
   filename: IMG_3112.HEIC
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2024-10-12T18:38:02.565000-05:00'
   sha256: 168b28baa3d0bc3fbc81e7b5264b9f884533383d980d8a9844be038883d927c5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men pose indoors, one wearing a black graphic tee and the other
+    a purple button-down shirt.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:15.431995+00:00'
   source_available: true
 - id: 6bd29cf2897a1f58
   filename: IMG_3107.HEIC

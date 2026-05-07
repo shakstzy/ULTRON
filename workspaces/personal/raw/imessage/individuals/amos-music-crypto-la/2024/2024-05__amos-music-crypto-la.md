@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-05-04T15:19:34.014460-05:00'
   sha256: 919951947a62a2342b815ccfc3fc51921d2e55feee7c51ef3a44085b819ffec0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram chat screenshot of a Partiful RSVP link for the FreeWifi crypto
+    event at FarCon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:54:37.074544+00:00'
   source_available: true
 - id: 579128e457647e75
   filename: IMG_8594.jpeg
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2024-05-04T15:20:25.848168-05:00'
   sha256: a8d53dfaa486fc630d85012f465744de7a7bc209d1d2289f8fa822b4d0fbcf37
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Maps screenshot of 57 Windward Ave in Venice, CA, showing Live
+    View and a map pin.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:54:36.625229+00:00'
   source_available: true
 chat_message_guids_count: 32
 deleted_upstream: null

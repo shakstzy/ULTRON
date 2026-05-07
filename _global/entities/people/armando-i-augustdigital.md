@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.791973+00:00
+ingested_at: 2026-05-06T22:18:21.408426+00:00
 ingest_version: 1
 content_hash: blake2b:523373136a5a6bc968a9b906e443a885
-provider_modified_at: 2026-05-06T22:17:40.791973+00:00
+provider_modified_at: 2026-05-06T22:18:21.408426+00:00
 
 title: Armando I AugustDigital
 slug: armando-i-augustdigital
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:17:40.791973+00:00
+last_synced: 2026-05-06T22:18:21.408426+00:00
 global: true
 ---
 

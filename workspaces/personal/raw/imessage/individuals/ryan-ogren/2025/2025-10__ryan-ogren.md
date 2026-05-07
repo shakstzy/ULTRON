@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-10-01T18:16:45.664000-05:00'
   sha256: b1b8eb22a9a56a9ac26ed97ce566f8ed1bca6a488b74bf1f10e141b610ca3380
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man with a robotic terminator face and hand on the moon with Earth
+    in the background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:46:36.857953+00:00'
   source_available: true
 - id: 3166bbe37bcbc82b
   filename: IMG_0661 (1) copy.jpg
@@ -45,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-10-01T18:16:47.402000-05:00'
   sha256: 43c0799571f227c7193dae115f3b0dd6227a65cc93035789e45354df01db864d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A bearded man in a pink shirt and silver chain sits at a white table
+    with a sketch behind him.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:46:48.707649+00:00'
   source_available: true
 - id: 5ca2b554bbdd764c
   filename: Good Riddance 2.0.mp3

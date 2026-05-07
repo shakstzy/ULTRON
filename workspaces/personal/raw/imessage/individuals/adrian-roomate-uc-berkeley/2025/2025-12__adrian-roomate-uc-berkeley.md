@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-12-27T08:44:33.013795-06:00'
   sha256: 2e764a9774c82fa7f0fc125d872a6c0a08fb4c9d81c884abd230ede5c56c3d82
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Threads post screenshot showing a red trailer submerged in San Bernardino
+    County floodwaters.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:05.662740+00:00'
   source_available: true
 chat_message_guids_count: 9
 deleted_upstream: null

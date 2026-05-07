@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-05-31T20:56:31.609000-05:00'
   sha256: 5ce32f755ba1e826b13a58b4ebd9425cc9f9c41c19661e9676388b6276c0e90c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat with Amadeus about a broken garbage disposal and smelly
+    sink drainage issues.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:36:48.378985+00:00'
   source_available: true
 chat_message_guids_count: 3
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2025-04-18T00:32:37.903243-05:00'
   sha256: adcd47335218568dfaff7df3940ebd1a52edeea92ff9830fe27ad85305806d43
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Four young men in graphic t-shirts pose for an upside-down selfie at
+    sunset.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:49.389933+00:00'
   source_available: true
 - id: 1cf690d1db1407bd
   filename: 76674203204__AE3E7534-EDE2-4616-ABBE-DBB63610E656.jpeg
@@ -33,9 +34,9 @@ attachments:
   sender: noah-bailie
   sent_at: '2025-04-19T02:54:02.988417-05:00'
   sha256: 5decb36f3f9908659c6be7e179a6723ee8465b4ccfba0d2f3b8b1b58705ed6a2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Marvel Rivals victory screen showing 'TheTrueNoah' as MVP with 35 kills.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:08.706220+00:00'
   source_available: true
 chat_message_guids_count: 46
 deleted_upstream: null

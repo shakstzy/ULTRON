@@ -22,9 +22,10 @@ attachments:
   sender: malik-producer-donny-tyler-la
   sent_at: '2025-10-07T23:33:42.523259-05:00'
   sha256: fddbc40271aab074e94338d584db3f405fb7733b2df3651436befeb3685a7e40
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a VCF contact card for an individual named Malik. It contains
+    his email address, mobile phone number, and an embedded profile photograph.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:32.118639+00:00'
   source_available: true
 - id: 4aa15397590aa80b
   filename: MP3 audio.mp3

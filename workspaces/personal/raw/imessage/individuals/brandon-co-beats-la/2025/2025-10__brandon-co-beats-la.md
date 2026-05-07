@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-10-03T18:41:54.534918-05:00'
   sha256: 3308ad31f7877f62a749014570bd1541f725ebe990859c0f94feed615f8f2de9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot showing "no tickets available" for Shrine Auditorium & Expo
+    Hall.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:04.195164+00:00'
   source_available: true
 - id: c7f2bd8d422bd520
   filename: 78124931590__01F019F0-A749-4417-AA64-03DCC8881AA2.MOV

@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2024-04-10T19:44:02.464000-05:00'
   sha256: dae3d34e6c3f393353298bbfb788ade64e15ba3aae4a1bac1820937e3f8166ca
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Notion database tracking video project ideas with metadata for a "darkStudio"
+    entry.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:38:26.776717+00:00'
   source_available: true
 - id: 5a389a4477aae58f
   filename: IMG_7660.jpeg
@@ -44,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2024-04-11T23:56:16.605945-05:00'
   sha256: e5698b5b5ee8edd39a6c4b92cff56ea79e765a7cc7f7107b495a5d3dd227eb9d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of the TikTok profile "spac3xx" featuring "LIFEOFSHAK" video
+    thumbnails.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:37:39.734886+00:00'
   source_available: true
 - id: fd0de636d86c5845
   filename: 9E3921DE-571F-4A3D-A676-2F61818AD5FA.MOV
@@ -55,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2024-04-11T23:58:38.584734-05:00'
   sha256: 757c9ac9114a0c818eabaf544e4e68291da9e7d12fbf82462092db7e6ef17c51
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a bucket hat lip-syncing on a patio at sunset with a German
+    Shepherd in the background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:38:08.714420+00:00'
   source_available: true
 - id: b270c17757745c07
   filename: Ain't Love 1.5 (opt 2).mp3

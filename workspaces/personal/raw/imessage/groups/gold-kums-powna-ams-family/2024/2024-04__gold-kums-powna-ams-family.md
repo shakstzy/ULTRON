@@ -22,9 +22,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-05T14:22:19-05:00'
   sha256: 02a9265aafea4e08e72e7057c0472f971a159f5d80c820b33b2e2202ea3aea38
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Star chart app screenshot showing a total solar eclipse and labeled
+    planetary alignment.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:56.939623+00:00'
   source_available: true
 - id: 1c42f4c287f99c3b
   filename: image000000.jpg
@@ -33,9 +34,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-06T22:04:24-05:00'
   sha256: 4ec95d2ffabc8aa758eb42ecb2f577a45695922aef753a6c0826f8e011382a22
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a grey tactical mask making hand signs beside another man
+    in an orange shirt.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:45.194213+00:00'
   source_available: true
 - id: 20ed248ed80dbcf1
   filename: 73421034728__80D050FD-79B1-445E-916F-13EAC3356A6E.HEIC.jpeg
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2024-04-07T14:19:14.590884-05:00'
   sha256: 46eb5d399cf466229641867d05f4f7bf2e163a6cf6e7e1cd40a5d45280b48ecc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A blue car with a flat front tire is parked on a paved street in front
+    of a white house.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:44.693025+00:00'
   source_available: true
 - id: c00339fa653955a1
   filename: image000000.jpg
@@ -55,9 +58,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-07T14:21:37-05:00'
   sha256: 33957071907a58cc6fedbb131d31e63a6f983cdcc330f431d727809712a9dddd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Collage of four mirror selfies showing a shirtless young man flexing
+    his biceps.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:43.927214+00:00'
   source_available: true
 - id: 5ff3a1c35b10833e
   filename: 96f1f732-7b78-441a-b0a1-9f4a4fb3e249.jpg
@@ -66,9 +70,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-07T17:18:22-05:00'
   sha256: 73deb324a5f367134d7270ffcd75700707cce377634610ce596afa48f62e0066
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Iced milky drink with ice cubes and a red straw in a glass jar on a
+    dark desk.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:44.076296+00:00'
   source_available: true
 - id: 2e8bc196c03c3938
   filename: f924f152-326a-4ef4-bc74-a6f058ad8b03.jpg
@@ -77,9 +82,9 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-07T17:18:49-05:00'
   sha256: 51aafb350101499465b0724e1bd3d834b176b7d0f70974cc6a96cc028ad458fe
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a Texas Santa hat holding a jar of boba pearls towards the camera.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:46.945050+00:00'
   source_available: true
 - id: 91c1b3dcf1a1a827
   filename: image.png
@@ -88,9 +93,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-07T22:02:36-05:00'
   sha256: 11780e71cc24ede40bd8625ae38ac12a4976af6795a7bb44f5e067a8aea519bc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Vedic ritual guide and astrological advice for the April 8, 2024 solar
+    eclipse.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:05.780537+00:00'
   source_available: true
 - id: 395fc99dec4d5379
   filename: image.png
@@ -99,9 +105,9 @@ attachments:
   sender: mom
   sent_at: '2024-04-07T22:02:45-05:00'
   sha256: ce1212647ad299a92ee58f34671efc520f29d2f02abf01f14e506baf08b2aa4b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: April 8, 2024 solar eclipse and Sutak fasting timings for Austin, Texas.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:51.049015+00:00'
   source_available: true
 - id: b0bac0bdb5d31dd9
   filename: image.png
@@ -122,9 +128,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-08T12:29:22-05:00'
   sha256: 6e2d6481188738290f46fdd0cf7dd9e5f2fd4837288e3573ec1375c401057e51
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a black beanie, reflective sunglasses, and neck headphones against
+    a cloudy sky.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:47.611410+00:00'
   source_available: true
 - id: a27a6688783e7c55
   filename: IMG_7547.MOV
@@ -144,9 +151,9 @@ attachments:
   sender: mom
   sent_at: '2024-04-08T17:17:21-05:00'
   sha256: 7edb5ad1687e7e26c5349530b4b7220a48e92960eae363059551a5bf8d06e637
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling man in a car wearing a white hat on a video call with a woman.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:05.558794+00:00'
   source_available: true
 - id: c6eebadad3f62a5c
   filename: image.png
@@ -167,9 +174,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-08T19:13:50-05:00'
   sha256: ca65ec35fc055e2a252e2f2804bbdac851b4140c82ade48f4690fff9f2c40a29
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A small jet flies through a cloudy sky above trees and the top of a
+    person's head.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:53.659575+00:00'
   source_available: true
 - id: e6a165159db11dc3
   filename: image000001.jpg
@@ -178,9 +186,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-08T19:13:50-05:00'
   sha256: dcae34189b26a14d6fd4b25a91e41b15878da75afa48f59246aa98e9d48deaa7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Students gather outside a lit building under a dark, overcast twilight
+    sky.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:52.028626+00:00'
   source_available: true
 - id: b5ece9de9dfa5346
   filename: image.png
@@ -189,9 +198,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-09T08:34:35-05:00'
   sha256: 3d3ce4a9fa570bf26c627ecd08e47b6dc6067080af0f100cf8a07c7553be9a49
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Weekly fitness summary displaying 99,705 steps, 41.12 miles, and 8h
+    27m average restful sleep.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:15.077912+00:00'
   source_available: true
 - id: 2a41d0fd0587ded0
   filename: IMG_2749.png
@@ -200,9 +210,10 @@ attachments:
   sender: me
   sent_at: '2024-04-09T09:28:01.532828-05:00'
   sha256: 2368baf97441cf5cb5a5e56839fe2146a5984945334d70c4e6eac608467ba314
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Video call screenshot of a woman in a black shirt and a smiling young
+    man in a corner inset.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:06.589654+00:00'
   source_available: true
 - id: 3baff47f5017e655
   filename: 68dd828f-4631-4c09-82ba-6392da0ac2b8.jpg
@@ -211,9 +222,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-09T12:42:32-05:00'
   sha256: a57b9369c48bea817d4f67c477ef06c28c3b32da4dbcd710ce53db8da0c0df8a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Graded German school essay on pink paper about Austin's traffic system
+    with red ink feedback.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:55.021506+00:00'
   source_available: true
 - id: 12ffea6c353c5ece
   filename: image.png
@@ -222,9 +234,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-09T13:51:34-05:00'
   sha256: 070e1bcc594925a479b3ae6418fbf41072d0e22a24c11df929b2b624d66a3ddb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Yellow rice with mustard seeds and lentils in a blue-rimmed bowl with
+    a metal spoon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:53.599258+00:00'
   source_available: true
 - id: cc6c257f9788efa1
   filename: image.png
@@ -233,9 +246,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-09T13:51:56-05:00'
   sha256: e3f305cfbc1b0e7177363f980cd934b6e668901d5c97ca73e7ac51422a708f87
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "Saut\xE9ed onions, cherry tomatoes, and peanuts with spices in a black\
+    \ pan."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:54.504755+00:00'
   source_available: true
 - id: e25eeffec2662569
   filename: image000000.jpg
@@ -244,9 +258,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-09T15:00:31-05:00'
   sha256: 5aeca05645824aa289179fd2016535ee0f83e62be394bad2fc153a4f3a012953
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A glass containing a light brown beverage, printed with the text "ENJOY
+    EVERY MOMENT".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:52.548197+00:00'
   source_available: true
 - id: fdb60f9d5ca4e6b2
   filename: 73439275019__35E126A0-5841-496B-9915-D589BCE52151.fullsizerender.HEIC.jpeg
@@ -255,9 +270,10 @@ attachments:
   sender: me
   sent_at: '2024-04-09T16:59:46.266755-05:00'
   sha256: 3502d1f408cb6b36132256693fb32868c8ec0ba9214da9998b542cdc500b746b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Salad bowl, plate of croutons, orange juice, and a salad kit on a gray
+    kitchen counter.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:59.778826+00:00'
   source_available: true
 - id: 1ad8484d41ab6d90
   filename: image.png
@@ -266,9 +282,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-09T22:25:03-05:00'
   sha256: ace107a74043b54679203fa3aace49b05e565148f3a129429d60524ef6ce0ddf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Marble statues of Radha and Krishna in vibrant blue and pink traditional
+    attire.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:00.514191+00:00'
   source_available: true
 - id: 1d589342d4916e5d
   filename: image.png
@@ -277,9 +294,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-09T23:12:12-05:00'
   sha256: 3c02fb5180cf17ed22e323601b18b5a79cbbc7827829d28843fe5d76f11cf340
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three women in traditional Indian attire smile together inside a Hindu
+    temple.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:59.283933+00:00'
   source_available: true
 - id: 5973fd43809b16f0
   filename: image000001.jpg
@@ -299,9 +317,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-10T13:06:28-05:00'
   sha256: 5f52f471986cfc9bc23297a9daebeeb3581c5111a72d42ecb8ec87995b330519
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a beanie poses next to a Pink Panther statue holding a $1
+    sign in a store.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:02.115972+00:00'
   source_available: true
 - id: 9a4576b1c021b0f6
   filename: image.png
@@ -310,9 +329,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-10T14:49:03-05:00'
   sha256: c084cd08ef030c87d8fcf267ace2d5366f995b97a63fddb3a51aec65c155cdff
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Email waitlisting Arya for the 2024 UPenn Management & Technology Summer
+    Institute.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:05.966391+00:00'
   source_available: true
 - id: 48efe061b6149e55
   filename: image.png
@@ -321,9 +341,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-10T16:25:15-05:00'
   sha256: e05c935c415502d3ab23150912a1166c961d0c15ac4b6db94d2904629a02bb33
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Lentil curry in a black container next to a bowl of rice covered in
+    plastic wrap.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:19.194529+00:00'
   source_available: true
 - id: 3b37fcb033d7445d
   filename: image.png
@@ -332,9 +353,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-10T16:25:40-05:00'
   sha256: 673092d0957a276dc52c9340ec233e3ac66a43bddc365ace1951ae04c0028fce
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Takeout food in containers and a paper plate labeled "Ambal" on a grey
+    surface.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:06.754134+00:00'
   source_available: true
 - id: 35b7fe17eb499ce8
   filename: image.png
@@ -343,9 +365,9 @@ attachments:
   sender: mom
   sent_at: '2024-04-10T16:26:05-05:00'
   sha256: fc6b8655cd1b63b3146d8a56ecf0f0ff07607eed08d613049b730a6540804d3c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A white bowl of vegetable upma garnished with fresh curry leaves.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:06.722298+00:00'
   source_available: true
 - id: c3fb1411bcb6db54
   filename: image.png
@@ -354,9 +376,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-10T16:29:01-05:00'
   sha256: dc4c42c6cf037cd059b4c13ad6ee3cc2095c4a21fcc5e0a8bea4b619b9daf1a6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: White creamy dessert topped with sliced almonds and pistachios in a
+    black container.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:05.726106+00:00'
   source_available: true
 - id: 1971ad57f3baae4a
   filename: image000004.jpg
@@ -365,9 +388,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-10T19:01:14-05:00'
   sha256: 47b96f86ddb1a47778fb5dc1fe42a6ff231c22f831b4dd7f88598804d10a649b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a grey blazer and lanyard holds a drink on a beach with a
+    pier in the distance.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:06.708873+00:00'
   source_available: true
 - id: 6d01f8c8a88ca0d7
   filename: image000002.jpg
@@ -376,9 +400,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-10T19:01:14-05:00'
   sha256: b3d7a60d13095a321f2ddf5cb765dc233abdd1d88b4c9c213e03229e45d1c3af
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a suit and lanyard holds a cup, posing by a beach with a pier
+    and roller coaster.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:13.505356+00:00'
   source_available: true
 - id: 176f7ccf77995ff8
   filename: image000001.jpg
@@ -399,9 +424,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-10T19:01:14-05:00'
   sha256: 8515bf62043f14bd9637dc3f2eb6e5f619dd2932eb0824ea0720f54289ebb3e8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a blazer and lanyard holding a cup on a beach with a roller
+    coaster pier behind him.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:47.311179+00:00'
   source_available: true
 - id: 8ba6686d49c35fa1
   filename: image000003.jpg
@@ -410,9 +436,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-10T19:01:14-05:00'
   sha256: 1d5923bfada1360ca7de90033ddaa54d022a36ecb0421d88cb0081ccab15b2e7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a grey blazer and lanyard holding a cup on a beach with an amusement
+    pier background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:10.060685+00:00'
   source_available: true
 - id: 0d4d0ac7e44f3185
   filename: image000000.jpg
@@ -421,9 +448,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-10T19:22:56-05:00'
   sha256: 387e3b88905ffe73f04fde7b4ef0aba8f9e918cafc93db1a672b66e388dda109
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a suit stands in wooden lifeguard tower 27 on a sandy beach
+    at sunset.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:12.665352+00:00'
   source_available: true
 - id: bcbcc65fba1c8c6e
   filename: image.png
@@ -432,9 +460,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-10T21:47:17-05:00'
   sha256: 8e5d18869a35261223ddae36a06a1e8e8ac38ac1ce9f40dfb30a951a55b08059
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Woman holds an ornate yellow-fringed banner staff in a Hindu temple
+    beside a man in a dhoti.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:16.050937+00:00'
   source_available: true
 - id: 986d3acad895450e
   filename: image000000.jpg
@@ -443,9 +472,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-10T21:47:59-05:00'
   sha256: eb3d9039788e785b3655d8097a371df1ecc16149e1180f9d98a34c4542ffc964
-  description: null
-  description_model: null
-  extracted_at: null
+  description: People carry a palanquin with Hindu deities under a multi-headed cobra
+    in a temple.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:31.276638+00:00'
   source_available: true
 - id: 8edcd1a911a3f09c
   filename: image000000.jpg
@@ -454,9 +484,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-11T08:36:16-05:00'
   sha256: 16faccabebda6b1e08da59dd78f3bd416f1ce3b46e389897b8e981aa2f466e10
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Laptop, football, and a full breakfast spread sit on a white desk with
+    silver chairs.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:20.019095+00:00'
   source_available: true
 - id: a4038a6f82a8d3fa
   filename: image000000.png
@@ -465,9 +496,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-11T16:00:50-05:00'
   sha256: d8cb8074a08227ab3c58f270f2f1e5bb1bac706257c2a85e2f9a8dfde85b0ca7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man with curly hair and headphones on a video call with a pot on
+    a stove in the inset.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:15.285074+00:00'
   source_available: true
 - id: b48ad5c1beb2d346
   filename: image000000.png
@@ -476,9 +508,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-11T16:01:02-05:00'
   sha256: 9948ba03a0284a357321317448ae6dde9e854f77e689372c3912cb8449721863
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling curly-haired toddler in a bear outfit sits in a wooden rocking
+    chair on yellow backdrop.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:41.887293+00:00'
   source_available: true
 - id: 749bb7e05cb21907
   filename: image000000.jpg
@@ -487,9 +520,9 @@ attachments:
   sender: mom
   sent_at: '2024-04-12T15:08:11-05:00'
   sha256: 6392feeb713a19891cfe8984c33894da5d54e4a88dfb98f4f4c35547af26ee68
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Packaged dark grey Tony & Candice cotton pajamas with white piping.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:12.016048+00:00'
   source_available: true
 - id: d754c59f59b83c11
   filename: image.png
@@ -498,9 +531,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-12T15:18:52-05:00'
   sha256: 4f445facef3a66fed8a10258e13e3f0d05a9d77fa65a085a6af80f0a0e804764
-  description: null
-  description_model: null
-  extracted_at: null
+  description: WhatsApp chat between Ambal and Ben about Sam's FBLA achievement and
+    picking up Arya.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:17.771118+00:00'
   source_available: true
 - id: de285860aaeb0219
   filename: image000000.jpg
@@ -509,9 +543,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-12T17:20:46-05:00'
   sha256: cefcba0bb36438b98bce92ce1175e5896009332594e38b390aaee35feb6c4cbf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Glass containers of seasoned rice and curd rice next to a small bowl
+    of fried chilies.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:19.592868+00:00'
   source_available: true
 - id: d9ca367e37695065
   filename: IMG_7745.heic
@@ -532,9 +567,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-14T18:17:50-05:00'
   sha256: 1a3890d0212789ddb5f3fdc67d7cd88ffbe7e6d88d2438c8e0e167c4fd1b7e3d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Woman in a pink kurta and cream scarf carrying a blue floral tote bag
+    by a gray garage door.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:23.821789+00:00'
   source_available: true
 - id: 3cf89376e527eeeb
   filename: image000000.jpg
@@ -543,9 +579,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-23T17:54:43-05:00'
   sha256: 9e5a52927b0a0f3a7e9aee56e8cd92396e0fc8088d36da8d4ca7cefd70c6acac
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "Saut\xE9ed sprouted black beans, chickpeas, and sliced peppers in\
+    \ a dark frying pan."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:26.202140+00:00'
   source_available: true
 - id: d1ddec8205793568
   filename: image000001.jpg
@@ -554,9 +591,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-23T17:54:43-05:00'
   sha256: eaf65f9919ae286dffb84bb2e59424bf73b1e10f898726d317a52e9a93e35c4e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Sprouted chickpeas, black beans, and brown legumes in a white plastic
+    colander.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:20.606629+00:00'
   source_available: true
 - id: 79e9ffb7b7d207f1
   filename: image000000.jpg
@@ -565,9 +603,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-23T17:56:21-05:00'
   sha256: 39c7b6a08066d877ead42d4f117b1d93f9145f6f1d8cc00b7a47f4602cbc6e9c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Crispy golden-brown battered fritters resting on a wire mesh cooling
+    rack.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:22.541048+00:00'
   source_available: true
 - id: 03ef07367ac51f02
   filename: image.png
@@ -576,9 +615,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-23T18:19:49-05:00'
   sha256: 38df61e9cb2a45acf0d7f8c4b001f5ad3dc7619ef595dc8964408431b8ae2f2b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A red apple surrounded by five containers of South Indian rice and
+    mash dishes.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:41.887588+00:00'
   source_available: true
 - id: 78aa4c3ef9308b71
   filename: 73561175380__A21F827F-AF8C-4B61-BECF-A9E1B48CB188.heic
@@ -587,9 +627,10 @@ attachments:
   sender: me
   sent_at: '2024-04-23T19:35:59.126652-05:00'
   sha256: ef62625a4c22f985409c43e82fa9e7bc2d5426ea1046908d195dc8c535d49dbb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A Costco shopping cart containing baby spinach, eggs, pistachios, salad
+    kits, and juice.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:26.365869+00:00'
   source_available: true
 - id: 16574c8a70261672
   filename: image000000.jpg
@@ -657,9 +698,9 @@ attachments:
   sender: mom
   sent_at: '2024-04-24T18:38:27-05:00'
   sha256: e71f6362781adbe09aeb04ed5b0251ed494f3da574aaa393e0482d02b9cd1d52
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A clear glass bowl containing a mixture of chia seeds and milk or yogurt.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:24.054061+00:00'
   source_available: true
 - id: 3e52d3f5df101038
   filename: image000000.jpg
@@ -668,9 +709,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-24T18:38:38-05:00'
   sha256: 09a10d59590ffcdd4edd36a523f9ce8b9bc535d2ee555d7dbaababa5fd601774
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A metal spoon sits in the remains of white yogurt at the bottom of
+    a plastic container.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:26.259081+00:00'
   source_available: true
 - id: 802de5a71dcb9cc6
   filename: image000000.jpg
@@ -703,9 +745,9 @@ attachments:
   sender: mom
   sent_at: '2024-04-24T18:42:02-05:00'
   sha256: 48f84dbf5fb896c11ccfc7877e0dbf403dafed363db7cd3c944b72b21e774fd3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A swaddled newborn baby named Veer sleeping in a woven basket.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:46.657251+00:00'
   source_available: true
 - id: 47847a1994a6f7e8
   filename: image000001.jpg
@@ -714,9 +756,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-24T18:49:57-05:00'
   sha256: abbf0f8bbaf03bc5fd6680b888b963b7f7036eadbb09c60e8f8e4b64e1210f33
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A russet potato inside a red checkered microwave heating bag on a marble
+    board.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:26.219518+00:00'
   source_available: true
 - id: 8559e4049e7bae43
   filename: IMG_7813.heic
@@ -737,9 +780,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-25T12:29:05-05:00'
   sha256: 425a6ae7bfcfd6f3e0cb24cf883d1499270ba5dda0f418360ec50d1d4dc96c7a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A bowl of cabbage salad with black beans, carrots, sunflower seeds,
+    and pumpkin seeds.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:29.649929+00:00'
   source_available: true
 - id: 449d8b1794253e65
   filename: image000000.jpg
@@ -748,9 +792,9 @@ attachments:
   sender: mom
   sent_at: '2024-04-25T12:39:30-05:00'
   sha256: 4f92e79f538118c81b8b51ebdfef11c431afab4136664bd2389c74a8bb29295b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A metal spoon resting in a white bowl of thick, lumpy yogurt.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:29.179349+00:00'
   source_available: true
 - id: bdb2885a6db8accd
   filename: IMG_8399.jpeg
@@ -771,9 +815,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-26T12:15:00-05:00'
   sha256: e786fcf2fb80a3b622dda9113cd69632f784f9b6a483503b445aa1b34837cc30
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Shredded cabbage and kale salad with cranberries and seeds in a blue
+    and white striped bowl.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:31.622910+00:00'
   source_available: true
 - id: c5baafaf8e6f243a
   filename: image.png
@@ -782,9 +827,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-26T13:34:36-05:00'
   sha256: e84a646a86fd2254f391f526aac8d1a608f24c8199b27b2b3ec905363fc07fb2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Email rejecting a Travis County youth program applicant and suggesting
+    an Austin ISD internship.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:38.291867+00:00'
   source_available: true
 - id: 28fb6fba3c583959
   filename: image.png
@@ -793,9 +839,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-26T13:38:10-05:00'
   sha256: c830c71a2527385c7991afd4347474384ca51feef33b2cf20df5e5b0edf60e91
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Cleared dirt backyard with a brick patio, wooden fence, and tall cypress
+    trees.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:35.340843+00:00'
   source_available: true
 - id: 9e9d1f4778d2ad98
   filename: IMG_9570.png
@@ -804,9 +851,10 @@ attachments:
   sender: me
   sent_at: '2024-04-27T17:54:36.004225-05:00'
   sha256: 70ede1e70b65dcbbef036a3fc274e86303b1c232ce70b7b876f898b1608a263e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of four-year financial projections for net income, cash
+    flow, and appreciation.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:35.720055+00:00'
   source_available: true
 - id: 31e7773fe9e54215
   filename: image.png
@@ -838,9 +886,10 @@ attachments:
   sender: me
   sent_at: '2024-04-27T22:56:02.575582-05:00'
   sha256: e81f6afecf8b38a9ab730448978d15c8c456cbef30b1b2f8f69adcea4e80e573
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person in a white t-shirt and jeans with a hand resting on their
+    waist.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:48.760885+00:00'
   source_available: true
 - id: 168e38f1be011c22
   filename: IMG_7658.png
@@ -873,9 +922,9 @@ attachments:
   sender: mom
   sent_at: '2024-04-27T23:06:00-05:00'
   sha256: 22cd1d6335dd7a9441918890298b9ca50316a3724d078ce55e7886eb16388609
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three people in traditional Indian attire posing inside a Hindu temple.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:38.968889+00:00'
   source_available: true
 - id: 6882e60c7fb9e8eb
   filename: image.png
@@ -884,9 +933,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-27T23:09:51-05:00'
   sha256: 3106bfc096dbe0b6e53ee776b8e7e1fa31f9f306bdc6a0f9b7c78ec6f842be7b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A woman in an orange kurta and a boy in a white vest pose barefoot
+    inside a Hindu temple.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:39.722075+00:00'
   source_available: true
 - id: 8fd7ea3361c69c57
   filename: image000000.jpg
@@ -907,9 +957,10 @@ attachments:
   sender: mom
   sent_at: '2024-04-29T12:37:13-05:00'
   sha256: 01e4864083063bd6f649f97435c1aa42b53b67dacbdeffc531e287e98dca0441
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Borat sits in a grey suit and tie with the text "VERY NICE" overlaid
+    in white.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:38.166397+00:00'
   source_available: true
 - id: 8f1344e949457f44
   filename: 8ecec347-7a7c-40ed-a93b-86b20489bf3d.jpg
@@ -918,9 +969,9 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-29T18:14:33-05:00'
   sha256: 3f48eba74e4d0b3633b870f1908699559c98956fb0d3acc64558105932087596
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Milky boba tea in a glass jar with a red straw on a desk with a keyboard.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:38.549774+00:00'
   source_available: true
 - id: c866a0c7feae3d74
   filename: ba83cdc4-0af5-4243-99d0-d56be48a1487.jpg
@@ -929,9 +980,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-04-30T12:42:04-05:00'
   sha256: 0272767962c161b169616c97f286910e9d1d64639a46b3d6a3e7a5d0627e0ac6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Salad bowl with tomatoes and cheese next to a carton of TruMoo chocolate
+    milk.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:39.818235+00:00'
   source_available: true
 chat_message_guids_count: 304
 deleted_upstream: null

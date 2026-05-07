@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-04-25T19:34:59.446000-05:00'
   sha256: a11612a32a077e42f8a1f73f2e8b116959a12e0c05bfe9364e6fa34b2246b293
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three students pose with their breast cancer research poster in a school
+    library.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:09.173198+00:00'
   source_available: true
 chat_message_guids_count: 4
 deleted_upstream: null

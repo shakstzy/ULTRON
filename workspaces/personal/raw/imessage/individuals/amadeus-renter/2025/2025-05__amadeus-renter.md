@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-05-31T20:43:11.618000-05:00'
   sha256: 741d947f0b01c7a0eae9d779a764832154e4ada3a98e597550bf381691dbf20a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a garbage disposal reset video sent to Evan
+    Renter.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:41:24.097580+00:00'
   source_available: true
 chat_message_guids_count: 32
 deleted_upstream: null

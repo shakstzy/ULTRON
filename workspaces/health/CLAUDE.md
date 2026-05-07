@@ -7,11 +7,17 @@ ingest_unrouted_default: skip
 
 # Health — Workspace Router
 
-You are in workspace `health` — Adithya's health, fitness, nutrition, sleep, and medical context.
+You are in workspace `health` — Adithya's health, fitness, nutrition, sleep, and medical context. One workspace covers all of it; no separate `fitness` or `medical` split.
 
 ## What this workspace is
 
 Workout logs, nutrition, vitals (weight, BP, resting HR, HRV), sleep patterns, supplements taken, medical history (providers, visits, labs). Pure factual archive — synthesis surfaces patterns over time.
+
+What does NOT belong here:
+
+- Friends / social events at the gym (those go to `personal`)
+- Music played during workouts (that goes to `music`)
+- Health-related insurance billing (that goes to `finance`)
 
 ## Reading order on entry
 

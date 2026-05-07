@@ -22,9 +22,9 @@ attachments:
   sender: me
   sent_at: '2025-06-20T14:20:45.324000-05:00'
   sha256: 60a5b262cd16b1628f25aa7fd787bd25c6892a88fabbdd9f1066b5e266198af1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of a Neuhaus Belgian chocolate storefront video.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:27:41.025669+00:00'
   source_available: true
 - id: a61f825f56617034
   filename: IMG_0082.PNG
@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2025-06-22T19:30:20.245327-05:00'
   sha256: 3dc4644f6f3d7f6cc3b515ae9eb298455a62682b51975485d8ad666361517b56
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a camo shirt sits behind a table packed with dozens of empty
+    green Heineken bottles.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:10:01.673845+00:00'
   source_available: true
 chat_message_guids_count: 10
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: david-bloom-the-house-fund
   sent_at: '2025-08-08T17:55:45.833971-05:00'
   sha256: 76435383950537657e2839dcdded478b7e2ae1596d7e764c3e624dc01dc236ec
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A bar chart showing steady growth from Year 1 to Year 6, peaking above
+    20M.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:41:25.602395+00:00'
   source_available: true
 - id: 3ce51a023d19fe00
   filename: 6393228936730923475.MP4

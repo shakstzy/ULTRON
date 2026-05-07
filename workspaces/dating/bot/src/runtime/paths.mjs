@@ -19,6 +19,7 @@ export const SELECTORS_FILE = resolve(CONFIG_DIR, "selectors.json");
 export const PROFILE_DIR = resolve(WORKSPACE_ROOT, ".profile");
 
 export const RAW_DIR = resolve(WORKSPACE_ROOT, "raw/tinder");
+export const UNMATCHED_DIR = resolve(RAW_DIR, "unmatched");
 export const INGEST_LOG = resolve(WORKSPACE_ROOT, "raw/.ingest-log");
 export const WATERMARK_FILE = resolve(INGEST_LOG, "tinder.watermark");
 

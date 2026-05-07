@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-01-05T09:06:42.425000-06:00'
   sha256: 20463e1a9aed0f617f09d0b124529ae235ad8bc8e842c419b6ebdc9c5186879c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot showing American Airlines flight AA1706 status from
+    DFW to LAX.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:18.101105+00:00'
   source_available: true
 - id: 48e1c8e7bf6b79e8
   filename: IMG_5212.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-01-05T20:28:25.431000-06:00'
   sha256: a9c4f781045970aba6bf0c2f0345d3c7177db2e5c7553be928f4121e04bbcf11
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a text about hiring cleaners with the context
+    menu displayed.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:10.544749+00:00'
   source_available: true
 chat_message_guids_count: 71
 deleted_upstream: null

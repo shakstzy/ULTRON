@@ -46,9 +46,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-04-01T19:05:50.115380-05:00'
   sha256: 0469d1a0b808bbd1f9d757186cc185caa05c12c31382e5ab98fe6d79a9af6c67
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men in hoodies stand in front of ADAMO and MYBESTFRIENDS storefronts
+    on a sidewalk.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:39:43.646926+00:00'
   source_available: true
 chat_message_guids_count: 18
 deleted_upstream: null

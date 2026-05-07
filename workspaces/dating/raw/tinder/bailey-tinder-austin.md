@@ -8,7 +8,7 @@ person_id: "66cfcfb9f354b70100da61da"
 phone: null
 status: "new"
 first_seen: "2026-04-14T00:00:00Z"
-last_activity: "2026-04-14T08:56:00Z"
+last_activity: "2026-05-07T00:06:13.298Z"
 last_scrape: "2026-05-01T05:32:42.470Z"
 previous_slugs: []
 migrated_from_shakos: "bailey"
@@ -107,8 +107,10 @@ last_profile_diff: "2026-05-01T05:32:42.470Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 00:06 Raven cosplay is peak Halloween, what made you go Teen Titans over the obvious cape options
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 00:46 queued_auto (auto, opener) [draft:47930768] lint=true "Raven cosplay is peak Halloween, what made you go Teen Titans over the obvious cape options"
+- 2026-05-07 00:06 sent (auto, auto-or-hitl) [draft:47930768] lint=true "Raven cosplay is peak Halloween, what made you go Teen Titans over the obvious cape options"

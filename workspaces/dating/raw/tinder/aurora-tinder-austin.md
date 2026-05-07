@@ -8,7 +8,7 @@ person_id: "69aa3fa9f3e6031c8978e325"
 phone: null
 status: "new"
 first_seen: "2026-04-06T00:00:00Z"
-last_activity: "2026-04-06T22:28:00Z"
+last_activity: "2026-05-06T23:42:49.251Z"
 last_scrape: "2026-05-01T05:26:16.798Z"
 previous_slugs: []
 migrated_from_shakos: "aurora"
@@ -103,8 +103,10 @@ last_profile_diff: "2026-05-01T05:26:16.798Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-06 23:42 the Zero plush and Haunted Mansion the same trip or are you a "plan every ride" person vs "wander until you find the ghost
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 00:44 queued_auto (auto, opener) [draft:99ee627a] lint=true "the Zero plush and Haunted Mansion the same trip or are you a \"plan every ride\" person vs \"wander until you find the ghost"
+- 2026-05-06 23:42 sent (auto, auto-or-hitl) [draft:99ee627a] lint=true "the Zero plush and Haunted Mansion the same trip or are you a \"plan every ride\" person vs \"wander until you find the ghost"

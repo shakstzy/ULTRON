@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-17T14:50:08.120364-05:00'
   sha256: c6af28eb27eb45f3fd44d1de0ccb26b6d8123623a26d0942cc9a64a90a9c8568
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone note screenshot discussing agentic SEO, vibe code growth, and
+    multi-agent evaluation.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:45.590366+00:00'
   source_available: true
 - id: 6d78bbc493d0cfae
   filename: IMG_7794.PNG

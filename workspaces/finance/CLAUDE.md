@@ -7,11 +7,17 @@ ingest_unrouted_default: skip
 
 # Finance — Workspace Router
 
-You are in workspace `finance` — Adithya's accounts, transactions, investments, taxes, and financial goals.
+You are in workspace `finance` — Adithya's long-term financial picture.
 
 ## What this workspace is
 
-Bank accounts, brokerage accounts, retirement accounts, credit cards, transactions, holdings, recurring obligations, tax docs, financial goals. Pure factual archive — synthesis surfaces cash-flow patterns and net-worth trajectory over time.
+Bank accounts, credit cards, recurring obligations, long-term holdings (index funds, retirement, employer equity, real-estate equity rolled up), tax docs, financial goals, net-worth trajectory. Pure factual archive — synthesis surfaces cash-flow patterns and long-term trajectory over months / years.
+
+What does NOT belong here:
+
+- Active trading, P&L per strategy, day-trade theses, options, prediction markets → `trading`
+- Real-estate transactions in flight (buying / selling) → `real-estate`
+- Rental property cash flow at the unit level → `property-management` (rolled-up equity / monthly NOI lands here)
 
 ## Reading order on entry
 
@@ -37,10 +43,11 @@ Precise, conservative, low-emotion. Numbers cited verbatim. Currencies always ex
 |---|---|
 | What accounts do I have? | `wiki/entities/accounts/` |
 | Recent transactions on account X? | `raw/<source>/<latest>/...` for verbatim; `wiki/entities/accounts/<x>.md` for synthesis |
-| Holdings in brokerage Y? | `wiki/entities/accounts/<y>.md` `## Holdings` section |
+| Long-term holdings in brokerage / retirement Y? | `wiki/entities/accounts/<y>.md` `## Holdings` section |
 | Recurring monthly bills? | `wiki/synthesis/recurring-obligations.md` |
 | Net worth trajectory? | `wiki/synthesis/<year>-net-worth.md` |
 | Tax docs for year Y? | `raw/manual/<Y>/tax/...` |
+| Active-trading P&L? | `[[ws:trading/...]]` — out of scope here; cross-link only |
 
 ## Agents
 

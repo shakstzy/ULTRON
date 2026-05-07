@@ -82,9 +82,10 @@ attachments:
   sender: ariana-hinge-la
   sent_at: '2026-02-21T20:40:26.650766-06:00'
   sha256: 6617d58fd8e22b6747bf90816f307f4f53b017fd616ff4bf1a218867e57b4944
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling woman with glasses and braids takes a low-angle selfie while
+    lying in bed.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:41:43.395158+00:00'
   source_available: true
 - id: 3948cfa6dc390660
   filename: IMG_6793.JPG

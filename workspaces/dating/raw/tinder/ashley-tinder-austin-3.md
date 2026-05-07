@@ -8,7 +8,7 @@ person_id: "6982d380ba61b221aa5de26f"
 phone: null
 status: "new"
 first_seen: "2026-04-15T00:00:00Z"
-last_activity: "2026-04-15T00:27:00Z"
+last_activity: "2026-05-06T23:11:41.162Z"
 last_scrape: "2026-05-01T05:20:29.640Z"
 previous_slugs: []
 migrated_from_shakos: "ashley-4"
@@ -98,8 +98,10 @@ last_profile_diff: "2026-05-01T05:20:29.640Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-06 23:11 cheer uniform plus a polaroid wall is a very specific personality. are you actually organized or is that the only wall that looks good on camera
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 00:43 queued_auto (auto, opener) [draft:873a8cf8] lint=true "cheer uniform plus a polaroid wall is a very specific personality. are you actually organized or is that the only wall that looks good on camera"
+- 2026-05-06 23:11 sent (auto, auto-or-hitl) [draft:873a8cf8] lint=true "cheer uniform plus a polaroid wall is a very specific personality. are you actually organized or is that the only wall that looks good on camera"

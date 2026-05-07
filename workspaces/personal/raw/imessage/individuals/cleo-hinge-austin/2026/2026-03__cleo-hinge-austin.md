@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-14T03:50:06.985228-05:00'
   sha256: 321cbfe0d6ca4c88b410e86e023eb31435a92690a966c0d5ef91c66b1aceeb81
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Tinder profile preview for Adithya, 23, who mentions producing for
+    Doja Cat and Tyga.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:41:48.453397+00:00'
   source_available: true
 chat_message_guids_count: 33
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-09-13T13:57:35.154000-05:00'
   sha256: 95efb80c23c24057e9c827a27c31eb106523afdd1521c34336ee45847a28779e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage conversation about evicting a problematic tenant to rent a
+    room to Zobayer.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:54:07.258109+00:00'
   source_available: true
 - id: cc4b215eb1e04a57
   filename: IMG_1775.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-09-23T11:14:56.219706-05:00'
   sha256: c448d526504c28cf9cf8a7261ceda638fe304467a9250b955d1e0e17e6fd9fd6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat with Zobayer discussing a $900 rent and $150 utility
+    split for a 6-month lease.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:54:10.239160+00:00'
   source_available: true
 - id: 4be13829297d6e13
   filename: IMG_1907.MOV
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-09-30T22:27:08.413310-05:00'
   sha256: 025c47790bf64d05c6cc24373c5d0045ca88d0631d635a9e0798f7c80e2dca37
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a kitchen cuts a colorful cake and feeds pieces of it to his
+    friends.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:54:46.811640+00:00'
   source_available: true
 chat_message_guids_count: 18
 deleted_upstream: null

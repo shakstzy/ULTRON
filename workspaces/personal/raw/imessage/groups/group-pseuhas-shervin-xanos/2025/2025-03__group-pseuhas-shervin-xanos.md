@@ -22,9 +22,9 @@ attachments:
   sender: me
   sent_at: '2025-03-21T15:51:55.434536-05:00'
   sha256: d03a928277996b6c5b9babdf2dbd1213b5beb849ce7dbbfc5c1ae49c9646ca68
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Close-up of a man with a buzzed haircut wearing a red checkered shirt.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:10:04.027801+00:00'
   source_available: true
 - id: bd6c1066730f151d
   filename: IMG_2495.png
@@ -33,9 +33,9 @@ attachments:
   sender: me
   sent_at: '2025-03-21T22:25:34.785186-05:00'
   sha256: 81bc76dbdee472c0d6ef0e2eb131f0b4af201ab673f3d878cc36e4312cfaff58
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Close-up of a man with short dark hair, brown eyes, and a beard.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:10:02.343649+00:00'
   source_available: true
 - id: 8aa90afee4024531
   filename: IMG_5216.gif
@@ -44,9 +44,9 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-03-21T22:27:39.231992-05:00'
   sha256: 2c9e620e620331f8f9229de415e13031e42cbdb2f52064b9488328a9d331f47e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A glowing orange chess pawn pulsating in a dark corner.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:30:23.837217+00:00'
   source_available: true
 - id: 9314132ec5213ae7
   filename: IMG_3574.png
@@ -55,9 +55,10 @@ attachments:
   sender: me
   sent_at: '2025-03-21T22:28:50.022484-05:00'
   sha256: e223d8b580107e852e0ea70ff7bc138a70a3ebf91ff2323c1ba522390e0640cd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Polished wooden staircase newel post with an acorn finial circled in
+    red.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:29:10.595157+00:00'
   source_available: true
 - id: f1ec43a38d462dad
   filename: IMG_6592.png

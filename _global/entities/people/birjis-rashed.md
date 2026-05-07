@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.867313+00:00
+ingested_at: 2026-05-06T22:18:21.542870+00:00
 ingest_version: 1
 content_hash: blake2b:ab842f1efc5775b0417dc3ada0e32396
-provider_modified_at: 2026-05-06T22:17:40.867313+00:00
+provider_modified_at: 2026-05-06T22:18:21.542870+00:00
 
 title: Birjis Rashed
 slug: birjis-rashed
@@ -15,7 +15,7 @@ identifiers:
   email: ["birjis@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-06T22:17:40.867313+00:00
+last_synced: 2026-05-06T22:18:21.542870+00:00
 global: true
 ---
 

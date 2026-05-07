@@ -22,9 +22,10 @@ attachments:
   sender: harshini-hinge-austin
   sent_at: '2025-06-30T21:18:58.969418-05:00'
   sha256: 788db45bd5c27c2bebad3da4453a027a6586ad290b8da602a0d90eb94fcb9f57
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Little Island's concrete tulip pillars on the Hudson River at sunset
+    from a grassy bank.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:59:34.927667+00:00'
   source_available: true
 chat_message_guids_count: 4
 deleted_upstream: null

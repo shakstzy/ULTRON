@@ -22,9 +22,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-10-21T08:38:13.106251-05:00'
   sha256: fae55bf924c5f3834762a27e3ae508ea72f17d8741e1a2355da090dcadf2f334
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a car back seat gives a thumbs up while his song "Some Time"
+    plays on the screen.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:41:28.801698+00:00'
   source_available: true
 - id: c591ef06d8ee8309
   filename: IMG_0027.png

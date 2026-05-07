@@ -22,9 +22,9 @@ attachments:
   sender: me
   sent_at: '2024-12-02T13:10:24.343582-06:00'
   sha256: 8779faba8ac5273c15af77325222df913a01e2d5593767c6b2964878a69ec79b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A list of five Ayurvedic medicines for thyroid carcinoma control.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:47:01.571958+00:00'
   source_available: true
 - id: 16b9c68ffec76e31
   filename: IMG_2662.png
@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2024-12-03T20:39:32.581006-06:00'
   sha256: e45f2412c39010ca377f95cdd9b8f467f69ec1b4bf6e7007ea9497f204a23d62
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LK's message to Shak proposing a $1,750 retainer for a Co-Publishing
+    Agreement conversion.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:47:00.490808+00:00'
   source_available: true
 - id: c337ef8f7c8cfdae
   filename: 75611036840__0AF90B3A-F5E6-4834-811A-BCE810864BE8.HEIC

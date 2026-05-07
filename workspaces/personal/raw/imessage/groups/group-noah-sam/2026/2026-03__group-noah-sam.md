@@ -22,9 +22,10 @@ attachments:
   sender: sam-garcia
   sent_at: '2026-03-08T22:22:11.955256-05:00'
   sha256: 714041e6ecb54e777946c13fd1461526e6afec442fb7a5830f5349afbb379064
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A Proper Cannabis live rosin all-in-one vape pen and its box on a black
+    desk mat.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:33:29.599022+00:00'
   source_available: true
 - id: 2613b2fdca87ceac
   filename: IMG_3236.png

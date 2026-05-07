@@ -129,9 +129,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-09-17T23:24:02.982350-05:00'
   sha256: 464fff9e54e317215a90be0c90d6dba4285252ad388bf316e5b127e5171370e5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mirror selfie of a man in a beanie and sunglasses holding a white Yamaha
+    keytar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:22.697006+00:00'
   source_available: true
 - id: 14cf8da352aaec1d
   filename: RenderedImage.heic

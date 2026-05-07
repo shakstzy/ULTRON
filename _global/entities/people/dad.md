@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.897315+00:00
+ingested_at: 2026-05-06T22:18:21.580182+00:00
 ingest_version: 1
 content_hash: blake2b:ccf56229b1a2343177b52baa8acdd295
-provider_modified_at: 2026-05-06T22:17:40.897315+00:00
+provider_modified_at: 2026-05-06T22:18:21.580182+00:00
 
 title: Dad
 slug: dad
@@ -15,7 +15,7 @@ identifiers:
   email: ["knagaraj_d2d@yahoo.com", "nagarak@gmail.com", "knagaraj@visa.com"]
   phone: ["5104499967"]
   slack: []
-last_synced: 2026-05-06T22:17:40.897315+00:00
+last_synced: 2026-05-06T22:18:21.580182+00:00
 global: true
 ---
 

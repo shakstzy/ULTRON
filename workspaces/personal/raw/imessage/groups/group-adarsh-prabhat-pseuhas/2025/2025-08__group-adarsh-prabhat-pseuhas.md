@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-08-03T04:38:31.568000-05:00'
   sha256: d5737d38faa2cfa9dd0aedd38b1718895e664f127f2c6c6756bb0ed74afac380
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a plaid shirt sticks his tongue out while holding a lighter
+    and a smoking pipe.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:49.901195+00:00'
   source_available: true
 - id: 33e4c1ed85a0ae16
   filename: 77595198327__7C8AC6BB-C9DA-4FE1-9EFD-F45CA327103F.HEIC
@@ -33,9 +34,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-08-03T17:13:46.054698-05:00'
   sha256: e8d8ce896f247eb7cbfa190e4662435a779a0be4a6e4114467690c9f8e250ce3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A First Citizens Bank sign stands on a green lawn under a clear blue
+    sky.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:21.498266+00:00'
   source_available: true
 - id: 2ea585b26cfba80a
   filename: IMG_6799.heic
@@ -44,9 +46,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-08-08T22:22:28.872249-05:00'
   sha256: c4502234b012a53bbaee552550da1a4afdc9aa041308784c6c263d2ee239944b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Urban building facade with a white garage door, arched entryway, and
+    wrought-iron balcony.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:48.054122+00:00'
   source_available: true
 - id: a8011913e596f7ce
   filename: 82E1EE97-8807-4A0A-9085-D5788D9E9DA4.mov
@@ -55,9 +58,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-08-08T22:51:34.842435-05:00'
   sha256: 10ae0bb033e80f5daea6447c6ec1072fb4d40c1475a03ce39cdab8be36b14b75
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man hits a glass bong, exhales smoke, and makes a startled, wide-eyed
+    face at the camera.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:40.760859+00:00'
   source_available: true
 - id: a2aba656ef34e040
   filename: IMG_7723.PNG
@@ -66,9 +70,9 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-08-08T22:56:47.934377-05:00'
   sha256: 04788d5c2681a91d45987fcb3c388d92cf00d650ba5c4c799dabfab5bbb1704b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man on a balcony at night exhaling smoke from a tall glass bong.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:49.932895+00:00'
   source_available: true
 chat_message_guids_count: 22
 deleted_upstream: null

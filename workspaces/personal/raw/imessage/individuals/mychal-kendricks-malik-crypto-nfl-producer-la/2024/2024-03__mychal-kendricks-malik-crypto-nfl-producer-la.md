@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-03-29T11:56:41.575000-05:00'
   sha256: 3eaa2484b2cae60aadfdf37265aa144c03cc7bfebca0fdbbccb5987811afd51d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three young men wearing name tags pose with hand gestures at a restaurant
+    dinner table.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:45:49.330300+00:00'
   source_available: true
 chat_message_guids_count: 27
 deleted_upstream: null

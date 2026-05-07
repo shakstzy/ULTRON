@@ -22,9 +22,10 @@ attachments:
   sender: mom
   sent_at: '2024-08-27T10:42:15.846781-05:00'
   sha256: f3041efcf756430fb147ea752687ba79d65835b3ed714a9461be152d76c7dcf7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Real estate listing for a $1.08M, 4-bed home at 13827 Brussels Ave,
+    Sylmar, CA.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:25.173779+00:00'
   source_available: true
 - id: b92d212a9aad15b8
   filename: IMG_0810.heic

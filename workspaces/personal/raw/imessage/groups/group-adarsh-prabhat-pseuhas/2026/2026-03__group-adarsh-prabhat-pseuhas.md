@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2026-03-01T11:35:18.576000-06:00'
   sha256: 6e07a3288f2b8b9976caf1d968df3ee808bfb4c0b0ec503280ca5fa090d20b5e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Emergency vehicles with flashing lights at a nighttime scene in downtown
+    Austin.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:47.582048+00:00'
   source_available: true
 - id: d7c44592da61ef69
   filename: IMG_7944.PNG
@@ -44,9 +45,10 @@ attachments:
   sender: prabhat-nuthakki-uc-berkeley
   sent_at: '2026-03-01T13:48:38.866828-06:00'
   sha256: 346dbded153f29d139c4c4e84f53022af96e170615548ce81e0191e9dacd0bae
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a "PROPERTY OF ALLAH" hoodie and camouflage pants carrying a
+    rifle.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:34.612019+00:00'
   source_available: true
 - id: b320f7784d809065
   filename: 522267B4-BB35-4778-87F8-99B0C81E12260.heic
@@ -89,9 +91,10 @@ attachments:
   sender: me
   sent_at: '2026-03-02T21:41:38.724000-06:00'
   sha256: ee4ada6cee65fe07a1af00bd7b6e633ff18bb99b75bad6876f2b0f58a09d7606
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling man wearing a traditional Japanese samurai helmet and armored
+    costume.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:34.965419+00:00'
   source_available: true
 - id: 23c451661683ba14
   filename: IMG_7605.PNG
@@ -100,9 +103,10 @@ attachments:
   sender: me
   sent_at: '2026-03-02T21:41:38.724000-06:00'
   sha256: 0d5d4f950e35d5d450e3bf38de45e7d6cdbdb7afa8de980635127317f7f7a008
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile screenshot showing Binky Barnes from the show Arthur on a Fandom
+    wiki page.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:11.063414+00:00'
   source_available: true
 - id: 15f090b08b29c8ae
   filename: B95ACB3A-4FBC-4895-9F65-A299353B455D.pluginPayloadAttachment
@@ -122,9 +126,10 @@ attachments:
   sender: me
   sent_at: '2026-03-03T11:38:51.779000-06:00'
   sha256: e132dcef37d67867e7d653991f6d4a58afce0820bd95c8e015f72284bddc856b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of an iMessage from Adithya to Savitha Austin referencing
+    their Hinge match.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:09.096354+00:00'
   source_available: true
 - id: 34cb9332071a4446
   filename: IMG_2585.heic
@@ -133,9 +138,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-03-03T13:14:13.183362-06:00'
   sha256: a63cf90f0ffa0debc2ea1c6c062a38763f0ab13909072d4de99ebd3f5bc6b2f8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling man wearing a black samurai helmet and a blue sunburst graphic
+    t-shirt.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:13.946435+00:00'
   source_available: true
 - id: 365de4854caa8715
   filename: IMG_9384.heic
@@ -144,9 +150,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-03-03T22:43:25.732209-06:00'
   sha256: dfe30701b0f2ce94d49da87ceb4e0aa6cef9a8c0b1bce500c2140ac9910bf746
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iOS notifications for a missed FaceTime call from Ashank and Rushil,
+    and an alert from Cobu.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:26.579761+00:00'
   source_available: true
 chat_message_guids_count: 78
 deleted_upstream: null

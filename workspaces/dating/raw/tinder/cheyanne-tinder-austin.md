@@ -8,7 +8,7 @@ person_id: null
 phone: null
 status: "new"
 first_seen: "2026-05-04T21:47:51.103Z"
-last_activity: "2026-05-04T21:47:51.103Z"
+last_activity: "2026-05-07T00:38:47.001Z"
 last_scrape: "2026-05-04T22:10:58.917Z"
 previous_slugs: []
 last_profile_diff: "2026-05-04T22:10:58.917Z"
@@ -62,8 +62,10 @@ last_profile_diff: "2026-05-04T22:10:58.917Z"
 ## Conversation
 
 (no messages yet)
+**you** 2026-05-07 00:38 yankees cap in austin is a real choice. you actually from new york or just the kind of person who opens with "im insane" on their bio?
 
 ## Outbound log
 
 (none)
 - 2026-05-06 00:52 queued_auto (auto, opener) [draft:750e4e8f] lint=true "yankees cap in austin is a real choice. you actually from new york or just the kind of person who opens with \"im insane\" on their bio?"
+- 2026-05-07 00:38 sent (auto, auto-or-hitl) [draft:750e4e8f] lint=true "yankees cap in austin is a real choice. you actually from new york or just the kind of person who opens with \"im insane\" on their bio?"

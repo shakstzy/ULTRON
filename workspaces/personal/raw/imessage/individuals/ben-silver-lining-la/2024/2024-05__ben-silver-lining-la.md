@@ -22,9 +22,10 @@ attachments:
   sender: ben-silver-lining-la
   sent_at: '2024-05-01T03:11:50.171740-05:00'
   sha256: 0352c29ea30db5212f4b49a92dfacf92e0619caabaec86d3d6b47497150c5f5f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Nighttime security footage of people gathering on a patio with a red
+    couch and a fire pit.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:55:00.341547+00:00'
   source_available: true
 chat_message_guids_count: 8
 deleted_upstream: null

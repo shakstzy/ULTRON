@@ -22,9 +22,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2024-08-26T16:42:14.077958-05:00'
   sha256: b8524b6799f26a484ad802aad64fa0396e057c608cfd2f48701a2f582d798b08
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Text defining the Neurodiversity Hiring Program and its inclusive hiring
+    goals.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:36:05.888182+00:00'
   source_available: true
 - id: 74fb76e6c9a15246
   filename: 74648714384__5DFFFBD5-2126-41B6-83DE-509983653E7D.heic
@@ -33,9 +34,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2024-08-27T16:32:33.314126-05:00'
   sha256: 4dfdfa7dadeb8ad0756082eba3d89b9863e235e4100cc2e07cbe5d6d6fbfa407
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a HackerRank coding challenge showing a Python solution
+    with a time limit error.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:36:35.089163+00:00'
   source_available: true
 - id: e6bb31d60f8567bd
   filename: IMG_3680.jpeg
@@ -44,9 +46,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2024-08-27T16:40:11.909410-05:00'
   sha256: eb9946cb72fcea1e82085c738e44e3e21ed7e33153a42a67e4efb05e0b286b38
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of an NFL news alert about private equity firms being allowed
+    team part-ownership.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:37:06.260752+00:00'
   source_available: true
 - id: 0335b7834dcad034
   filename: IMG_1606.png
@@ -55,9 +58,10 @@ attachments:
   sender: me
   sent_at: '2024-08-27T17:09:35.038000-05:00'
   sha256: bb4d3bd09c3475ccae12330c820c3ff6752416fa8f53ec1e22acdda762322fea
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Roshan, the human baby from the animated movie Ice Age, standing and
+    gesturing.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:36:24.549341+00:00'
   source_available: true
 - id: d69a3d4696123990
   filename: IMG_9556.jpeg
@@ -66,9 +70,9 @@ attachments:
   sender: me
   sent_at: '2024-08-27T17:11:29.838000-05:00'
   sha256: aaf53b0672a8ff19f72f7a717d0cb1dc15b90c487320be3c4d17f5f1d6762659
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage from Rushil Jha UC Berkeley saying "Maybe after PhD."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:37:44.247818+00:00'
   source_available: true
 - id: 88aedb33e3466d70
   filename: IMG_6785.jpeg
@@ -88,9 +92,10 @@ attachments:
   sender: me
   sent_at: '2024-08-27T18:28:31.533000-05:00'
   sha256: ab53b266ffc16a15dac09d57db6e345e89f6d5a041af046cc2205af72d55699d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Cortical homunculus sculpture with massive hands and mouth against
+    a black background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:36:15.355420+00:00'
   source_available: true
 - id: 93163238a058ec8a
   filename: IMG_0177.PNG

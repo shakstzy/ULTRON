@@ -22,9 +22,9 @@ attachments:
   sender: me
   sent_at: '2025-11-05T16:53:29.474694-06:00'
   sha256: 03fd588841fd4334b794b41257381b17975a78ce1254690640da2e834c26b9da
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Lecture slide with a QR code and TinyURL link for tracking attendance.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:46.552687+00:00'
   source_available: true
 - id: 19481d9824bd643b
   filename: IMG_1032.jpeg
@@ -33,9 +33,10 @@ attachments:
   sender: luke-whitney-ucla-globalization-la
   sent_at: '2025-11-10T16:30:33.562510-06:00'
   sha256: 59877d21fd01af8ea5ef7fa39fcd4ea53582b38de61e42e18a0e0fc8d6bce1a9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Classroom projection screen showing a QR code and tinyurl link for
+    lecture attendance.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:29.966496+00:00'
   source_available: true
 chat_message_guids_count: 41
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-09-09T16:58:14.924000-05:00'
   sha256: 4ab0ea72373b42178226be4b5865c22aa487e584d18f824d6a34117ed78ccfc2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a residential lease addendum for a Sylmar property. It outlines
+    supplemental terms for utilities, parking, maintenance, and cleaning responsibilities.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:52:35.642057+00:00'
   source_available: true
 chat_message_guids_count: 11
 deleted_upstream: null

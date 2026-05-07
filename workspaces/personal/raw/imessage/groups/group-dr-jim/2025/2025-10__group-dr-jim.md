@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-10-11T00:33:15.643000-05:00'
   sha256: 940207ab0e94c2f5ac2a01af1c529e03472b7afcb25a9fe9ded8ebd9e6634189
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot pitching an AI music tool using Melodyne, GPT,
+    and RVC for vocal demos.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:38:40.960589+00:00'
   source_available: true
 chat_message_guids_count: 2
 deleted_upstream: null

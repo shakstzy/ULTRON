@@ -22,9 +22,10 @@ attachments:
   sender: addi-hinge-dallas
   sent_at: '2026-02-05T00:46:11.714053-06:00'
   sha256: 838881221186a38b5b4b0fc7edf70b7621203a5e0ae4af4b4168f0bf7cb6fb2d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A yellow winking emoji with blushing cheeks and a red heart, resting
+    its face on its hands.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:13.360134+00:00'
   source_available: true
 - id: 3ac9b141468df872
   filename: IMG_8098.jpeg
@@ -33,9 +34,10 @@ attachments:
   sender: addi-hinge-dallas
   sent_at: '2026-02-05T00:53:22.687193-06:00'
   sha256: 98b1d60d3b2f398f57cc517228ab20ad97c5c16d5dd00098b764653c03f334c1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram profile for adi_kamsetti with 0 posts and pink bow-themed
+    highlight icons.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:01.961751+00:00'
   source_available: true
 - id: 4c29b7c6e79791bf
   filename: D140DA0A-AF48-4DB2-AC51-A73B2E2A3FBB.heic
@@ -44,9 +46,9 @@ attachments:
   sender: addi-hinge-dallas
   sent_at: '2026-02-05T00:57:24.933892-06:00'
   sha256: fa524b35d2e1b69a9ad81eeb8b31611409b0ca5546b394f40732028ccbe8b626
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling cartoon of Roo from Winnie the Pooh wearing a blue sweater.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:19.969814+00:00'
   source_available: true
 - id: 57e15c5074cd84a8
   filename: IMG_4622.png

@@ -272,9 +272,10 @@ attachments:
   sender: me
   sent_at: '2026-04-23T15:13:45.871470-05:00'
   sha256: 3d5ae46725f6d26f0067db970b70397ffb110ef04cdf0db2f7f05ea883b7d576
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat about Claude access and a photo of three naked women
+    smoking on a balcony.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:46:07.657457+00:00'
   source_available: true
 - id: a3ec8be2ed1e7418
   filename: 79866828411__48EDC782-80AD-406F-A0E0-C490C3418736.HEIC
@@ -283,9 +284,10 @@ attachments:
   sender: me
   sent_at: '2026-04-23T15:18:13.403117-05:00'
   sha256: e4f64fb68094c7b3e90985b0e5a27625650e748427a978124f0d7c9c13fe738e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Oatmeal in a bowl, a Huel shaker with powder, and an Instant Pot on
+    a kitchen counter.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:45:29.383380+00:00'
   source_available: true
 - id: 6c8c505cf77c4f61
   filename: IMG_6029.heic

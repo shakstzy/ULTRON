@@ -8,7 +8,7 @@ person_id: "69ae1c1532c0ccf35d64f7ac"
 phone: null
 status: "new"
 first_seen: "2026-04-12T00:00:00Z"
-last_activity: "2026-04-12T01:37:00Z"
+last_activity: "2026-05-06T23:43:17.372Z"
 last_scrape: "2026-05-01T05:31:13.742Z"
 previous_slugs: []
 migrated_from_shakos: "ayana"
@@ -89,8 +89,10 @@ last_profile_diff: "2026-05-01T05:31:13.742Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-06 23:43 ok "bring back real yearners" is a very specific creed. what counts as a real one
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 00:45 queued_auto (auto, opener) [draft:053d293b] lint=true "ok \"bring back real yearners\" is a very specific creed. what counts as a real one"
+- 2026-05-06 23:43 sent (auto, auto-or-hitl) [draft:053d293b] lint=true "ok \"bring back real yearners\" is a very specific creed. what counts as a real one"

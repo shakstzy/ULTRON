@@ -22,9 +22,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-04-06T21:18:58.161894-05:00'
   sha256: cf352992803a109f696e3e206da0edb7d1ffa06f5739eae4a4dc80c8941167e0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: The Evil Queen as a witch lifting a trapdoor to emerge from a dark
+    cellar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:31.573199+00:00'
   source_available: true
 - id: c9b4ab18dde8d038
   filename: IMG_0309.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-04-06T21:21:05.522950-05:00'
   sha256: 7bfca73952844d74cc578fb056b52120dc57f3a94804a5121f39bb80b778e735
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat "Intervention 4 Shakti" discussing an Uber refund and
+    driver pay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:33.266942+00:00'
   source_available: true
 chat_message_guids_count: 6
 deleted_upstream: null

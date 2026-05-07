@@ -22,9 +22,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-07-01T13:59:22.977878-05:00'
   sha256: dbbd4a21362d55582b520aec4ba7036f162eef4263c07aea7e16597d168b2a88
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram story invite for an Independence Day party in Midtown East
+    on July 1, 2025.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:48:19.366136+00:00'
   source_available: true
 chat_message_guids_count: 12
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: aamir-khan-uc-berkeley
   sent_at: '2026-04-03T22:26:36.605281-05:00'
   sha256: a788e13fc740db76ab81f0925d92240d4c2c75ae92640f255ddca70cffd0d67c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of Spotify's Release Radar with Shak Stzy's "Not
+    In Love" circled in red.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:44.376225+00:00'
   source_available: true
 chat_message_guids_count: 1
 deleted_upstream: null

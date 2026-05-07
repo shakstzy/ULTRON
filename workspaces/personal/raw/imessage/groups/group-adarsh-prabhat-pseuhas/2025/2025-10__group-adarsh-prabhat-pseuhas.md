@@ -22,9 +22,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-10-20T12:05:41.139121-05:00'
   sha256: 4da639897d1b7a52ee37bf6607db00bbb98d09897738a5b05c088ae135dd4bc9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person on a bike with neon wheels and another playing tennis on a
+    blue court.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:56.097170+00:00'
   source_available: true
 - id: d9fb89cdd98fde99
   filename: IMG_7663.jpeg
@@ -33,9 +34,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-10-21T21:29:48.073158-05:00'
   sha256: cad7e63a353a7e7c1a04f5485a8804f503e1351de7b9bec2dbf1dca5136db9a3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Slack screenshot of users reacting with a custom ":adarsh-amsterdam:"
+    emoji.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:48.470912+00:00'
   source_available: true
 - id: 8f9e1931778b7ea6
   filename: IMG_9170.png
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-10-31T11:35:32.844000-05:00'
   sha256: bdca1eba3601baeb85c5fc6181349378ce41e510f23e83f96876e4afeb642de2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Domain registration page for pseu.ai showing a $49.99 first-year price
+    and a $194.98 total.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:49.716966+00:00'
   source_available: true
 - id: 4b60ea27afeb9f37
   filename: IMG_6400.png
@@ -55,9 +58,10 @@ attachments:
   sender: me
   sent_at: '2025-10-31T11:36:34.248000-05:00'
   sha256: d458844c4415235708724a38c2ee3ccd17f95d0e4b39636e9ad73296e9b17738
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Domain listing for pseu.com with a $29,999 purchase price and $1,439.96
+    monthly option.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:03.144839+00:00'
   source_available: true
 - id: 90141a8ecf9969c3
   filename: IMG_5545.png
@@ -66,9 +70,10 @@ attachments:
   sender: me
   sent_at: '2025-10-31T11:46:05.460000-05:00'
   sha256: e5defb475dea1b48a2dd2c737b1f6cd0580bdeeca13fff5ecf52a0ea0842c53f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: ACT website notification confirming a User ID has been sent to the
+    user's email address.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:12.056292+00:00'
   source_available: true
 - id: 8c3ff86e9d0c5290
   filename: IMG_7021.jpeg
@@ -77,9 +82,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-10-31T11:46:44.424720-05:00'
   sha256: 5a222a1dc57ffa32cdbe98d6bb2122c941cd579255f276522714857f7a228329
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A close-up of the pale, scarred orc Azog the Defiler from The Hobbit
+    films.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:13.010662+00:00'
   source_available: true
 - id: a7d8b3710ed24c24
   filename: IMG_8554.PNG
@@ -88,9 +94,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-10-31T11:47:44.494568-05:00'
   sha256: ac34a496b39ae78e4b3e36a0d9418bb7f09282c1518219ca8141db15a7411929
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google search results for Azog the Defiler, the Pale Orc from The Hobbit
+    film trilogy.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:11.544913+00:00'
   source_available: true
 - id: 51a12d8234c2ad50
   filename: IMG_7727.png
@@ -99,9 +106,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-10-31T11:49:01.868543-05:00'
   sha256: ad636e59d00f0dcac0fb680d1223f67e7e888f81a1168c940c565a36b47fae6b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A young man with dark, wavy hair wearing a red and black plaid shirt
+    over a black hoodie.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:57:22.158480+00:00'
   source_available: true
 - id: 86c506cf1939d61d
   filename: IMG_0840.jpeg
@@ -110,9 +118,10 @@ attachments:
   sender: me
   sent_at: '2025-10-31T11:49:54.384000-05:00'
   sha256: 5a222a1dc57ffa32cdbe98d6bb2122c941cd579255f276522714857f7a228329
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A close-up of the pale, scarred orc Azog the Defiler from The Hobbit
+    films.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:13.010662+00:00'
   source_available: true
 - id: 5e1f91d6e199b2fa
   filename: IMG_8555.PNG
@@ -121,9 +130,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-10-31T11:51:56.969496-05:00'
   sha256: 931ac4aca922ede2cf09c5761303f1d1f4cf888b9a1ba6563b4b97158fe33d1b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a mobile site showing "VENTURES" like The Entreprist,
+    Socionet, and ICEO.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:02.627734+00:00'
   source_available: true
 - id: aa8008658df62c94
   filename: IMG_7631.png
@@ -132,9 +142,10 @@ attachments:
   sender: prabhat-nuthakki-uc-berkeley
   sent_at: '2025-10-31T11:52:55.535322-05:00'
   sha256: cf91e54fec5c8375fdda63a3f456a6cdfede2d57cfe0226900b12058528c8d96
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "iPhone screenshot of Maneesh Vallurupalli\u2019s bio page with the\
+    \ word \"activist\" highlighted."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:03.547616+00:00'
   source_available: true
 - id: 195afb1107c3aab5
   filename: IMG_8556.PNG
@@ -143,9 +154,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-10-31T11:53:30.756254-05:00'
   sha256: ae0274b605a4f2d2ff5abffb2b56b124ff05ad8f8ea4d8644349571b5701c5ed
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Maneesh Vallurupalli's entrepreneurship and writing achievements on
+    a website screenshot.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:14.081389+00:00'
   source_available: true
 - id: ffeba9d8c2ce6b52
   filename: IMG_9856.png
@@ -154,9 +166,10 @@ attachments:
   sender: me
   sent_at: '2025-10-31T11:56:08.892000-05:00'
   sha256: d4931a8a002140f5163890aa2b0ba522324d1cd9c1d422d26bbf4450a3469a7a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: September 2018 ACT report showing a perfect 36 composite score and
+    a 10 in writing.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:57.576147+00:00'
   source_available: true
 - id: 76a13bed957ba0b6
   filename: IMG_7632.png
@@ -165,9 +178,10 @@ attachments:
   sender: prabhat-nuthakki-uc-berkeley
   sent_at: '2025-10-31T12:01:58.896559-05:00'
   sha256: 6c96dd1c9207fa09f41764e9fea4e52e1ebfcf34a44170a1047e1d13fd3f5e27
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of 'big hero six' search results and an iMessage
+    from L'Adarsh Pinjala.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:33.087487+00:00'
   source_available: true
 - id: 6079a16e9db42ae5
   filename: IMG_7634.jpeg
@@ -176,9 +190,10 @@ attachments:
   sender: prabhat-nuthakki-uc-berkeley
   sent_at: '2025-10-31T12:06:56.818506-05:00'
   sha256: ea97ec96075f568734f67c257c9cd75090be76aff054b295431d826cc063866e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Bearded man in a blonde wig and light blue suit, dressed as Tyler,
+    The Creator's Igor.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:07.025246+00:00'
   source_available: true
 - id: 30a5bf6fc18c7d4a
   filename: IMG_1583.png
@@ -187,9 +202,10 @@ attachments:
   sender: saif-ali-nyc
   sent_at: '2025-10-31T12:07:46.072866-05:00'
   sha256: aae3a226e58ab7f9a7e99797f04fa65e8b5a707e1f5ee4ba4c109274b70cff26
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling bearded man in a black t-shirt wearing a blonde bowl-cut wig
+    over his eyes.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:23.339098+00:00'
   source_available: true
 - id: eb4f123392736b29
   filename: IMG_7635.PNG
@@ -198,9 +214,10 @@ attachments:
   sender: prabhat-nuthakki-uc-berkeley
   sent_at: '2025-10-31T12:11:27.798677-05:00'
   sha256: 2671318307fd2781ad4d1c514b83a85ce9e12e1af64567a89b0d45b5c54750ad
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Kamala Harris gestures while seated at a table with a silver tumbler
+    in a dark room.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:25.832453+00:00'
   source_available: true
 - id: '9474103904034343'
   filename: 78362376757__D2C2ECD1-E918-47C2-AA44-C30E09CA9CBD.HEIC
@@ -221,9 +238,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-10-31T13:27:55.465765-05:00'
   sha256: 0f50e1634590ccf905363da85a0aa604bfcc9518887db3950fdd4843b47c145a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: FaceTime screenshot of two smiling South Asian men, one in a car at
+    night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:17.629131+00:00'
   source_available: true
 - id: 0023555aea03639e
   filename: 78364414105__2415ED58-0874-4B1A-A9D5-0E445413266A.HEIC
@@ -232,9 +250,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2025-10-31T17:55:49.043880-05:00'
   sha256: bffa28621a528ba11d5e14615bee30f8c1ca5ca5b26959fe3cfd3aee6977e98c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mirror selfie of a man wearing a white shirt, black vest, blue patterned
+    tie, and grey flat cap.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:40.963269+00:00'
   source_available: true
 - id: eebfe226dda40cbd
   filename: IMG_6049.jpeg
@@ -243,9 +262,9 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-10-31T18:30:55.881821-05:00'
   sha256: 4a17ed8e637667bcac1798edd3803396dccd4f83d6ccc09a7c2fd1555addfa88
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Young Mahatma Gandhi in a suit, seated in front of his law office sign.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:17.872721+00:00'
   source_available: true
 - id: 15ee6cd2caaa3949
   filename: IMG_7728.png
@@ -266,9 +285,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-10-31T19:25:39.802485-05:00'
   sha256: 464fff9e54e317215a90be0c90d6dba4285252ad388bf316e5b127e5171370e5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mirror selfie of a man in a beanie and sunglasses holding a white Yamaha
+    keytar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:22.697006+00:00'
   source_available: true
 - id: 79621c3aeadf5177
   filename: 51BC2058-5A61-4AA1-9944-688DDF0CCB55.MOV
@@ -277,9 +297,10 @@ attachments:
   sender: me
   sent_at: '2025-10-31T19:38:45.178854-05:00'
   sha256: 923d711c33187a258b125f3819748ab472244cc4824d9eabe454aec914defb3d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: FaceTime recording of Adarsh showing a sleeping person next to a NY
+    Giants banner.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:40.251359+00:00'
   source_available: true
 chat_message_guids_count: 235
 deleted_upstream: null

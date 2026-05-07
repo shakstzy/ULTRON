@@ -58,9 +58,10 @@ attachments:
   sender: me
   sent_at: '2025-09-27T21:38:25.914130-05:00'
   sha256: 6c43759b2c2aba30a61b9ab4e0f6d37a98280ed262910e6d9f28a4a0162d5014
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Topgolf email screenshot offering $25 off game play with promo code
+    FALL25.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:41:33.781173+00:00'
   source_available: true
 chat_message_guids_count: 117
 deleted_upstream: null

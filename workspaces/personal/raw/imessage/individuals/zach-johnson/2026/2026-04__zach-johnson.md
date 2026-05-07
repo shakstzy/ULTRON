@@ -34,9 +34,10 @@ attachments:
   sender: zach-johnson
   sent_at: '2026-04-08T05:13:59.348372-05:00'
   sha256: 3719be192ad504911ac8716b342bb207933edddcfc1d682c06ce55180134b2aa
-  description: null
-  description_model: null
-  extracted_at: null
+  description: YouTube screenshot of a man playing saxophone in a dimly lit room,
+    titled "le coup de soleil. sax".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:35:46.722533+00:00'
   source_available: true
 - id: ecba7a6900c9bc6a
   filename: IMG_8095.HEIC

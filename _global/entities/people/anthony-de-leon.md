@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.900977+00:00
+ingested_at: 2026-05-06T22:18:21.589220+00:00
 ingest_version: 1
 content_hash: blake2b:616db788ecbe496c0edebc949576afd0
-provider_modified_at: 2026-05-06T22:17:40.900977+00:00
+provider_modified_at: 2026-05-06T22:18:21.589220+00:00
 
 title: Anthony De leon
 slug: anthony-de-leon
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["2139268565"]
   slack: []
-last_synced: 2026-05-06T22:17:40.900977+00:00
+last_synced: 2026-05-06T22:18:21.589220+00:00
 global: true
 ---
 

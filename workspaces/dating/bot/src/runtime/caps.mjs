@@ -95,13 +95,13 @@ export async function readCounters() {
 
 export async function shouldSkipDay() {
   const caps = await loadCaps();
-  const state = await loadState();
-  state.skipPlan = state.skipPlan || {};
-  const today = todayKey();
-  if (state.skipPlan[today] === undefined) {
-    state.skipPlan[today] = Math.random() < caps.global.skip_day_probability;
-    for (const k of Object.keys(state.skipPlan)) if (k !== today) delete state.skipPlan[k];
-    await saveState(state);
-  }
-  return state.skipPlan[today];
+  return withState((state) => {
+    state.skipPlan = state.skipPlan || {};
+    const today = todayKey();
+    if (state.skipPlan[today] === undefined) {
+      state.skipPlan[today] = Math.random() < caps.global.skip_day_probability;
+      for (const k of Object.keys(state.skipPlan)) if (k !== today) delete state.skipPlan[k];
+    }
+    return state.skipPlan[today];
+  });
 }

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-10-21T14:40:46.977000-05:00'
   sha256: 8f7db66e916a9f7ac210184508d35b47c0beb9e3dba48b9a1a3bb6ebcc2d75c1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Text comparing ADHD meds Ritalin and Adderall to amphetamines, with
+    timestamp 43:07.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:39.248235+00:00'
   source_available: true
 chat_message_guids_count: 3
 deleted_upstream: null

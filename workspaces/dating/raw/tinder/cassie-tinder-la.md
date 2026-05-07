@@ -9,11 +9,11 @@ phone: null
 status: "active"
 first_seen: "2026-03-01T00:00:00Z"
 last_activity: "2026-03-02T05:02:00Z"
-last_scrape: "2026-05-01T05:51:35.205Z"
+last_scrape: "2026-05-06T22:49:33.247Z"
 previous_slugs:
   - "cassie-tinder-austin-2"
 migrated_from_shakos: "cassie"
-last_profile_diff: "2026-05-01T05:51:35.205Z"
+last_profile_diff: "2026-05-06T22:49:33.247Z"
 ---
 
 ## Profile
@@ -77,6 +77,32 @@ last_profile_diff: "2026-05-01T05:51:35.205Z"
   "changed": {}
 }
 ```
+
+```json profile-diff
+{
+  "ts": "2026-05-06T22:49:33.247Z",
+  "added": {
+    "photo_verified": false
+  },
+  "removed": {},
+  "changed": {}
+}
+```
+
+## Visual
+
+<!-- engine=gemini-pro account=avery@seedboxlabs.co ts=2026-05-06T22:49:54.318Z -->
+
+- vibe: active SoCal festival-goer
+- settings: gym locker rooms, outdoor brunch patio, Coachella (Spectra tower), lake/ocean, Venice Canals, Sanrio store, bamboo-style bar
+- activities: gym/working out, brunching, music festivals, jet skiing
+- props: bouquet of flowers, burger and mimosa, over-ear headphones, "Flight Academy" water bottle, cowboy hat, digital point-and-shoot camera, Hello Kitty plushies
+- pets: (none observed)
+- group_context: alone in most photos
+- style_signals: thigh script tattoo, festival fashion (cowboy hat & boots), long acrylic nails, over-ear headphones, patterned red phone case
+- environments: strong mix of outdoors, gym, travel/festivals, and social dining/bars
+- notable_signals: Coachella Spectra tower, Venice Canals, Hello Kitty plushies, "Flight Academy" water bottle, "Red Bull Vodka" license plate bar sign
+- red_flags: (none observed)
 
 ## Conversation
 

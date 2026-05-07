@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2026-02-16T17:33:02.157000-06:00'
   sha256: e9e37b063eaa3359d12f651c31dec9b727d977288d84f930699bdd7734212f95
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Digital beer pong game showing red cups in a triangle on a green table
+    with a play button overlay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:45.335340+00:00'
   source_available: true
 chat_message_guids_count: 20
 deleted_upstream: null

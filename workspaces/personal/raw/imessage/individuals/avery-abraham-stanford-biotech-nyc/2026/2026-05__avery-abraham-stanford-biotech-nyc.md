@@ -44,9 +44,10 @@ attachments:
   sender: me
   sent_at: '2026-05-01T12:51:31.761000-05:00'
   sha256: ed5b2df0b20eee4b4e6cd95590d8d5b4839422bb77cc7668f227437be442a4ec
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of AI Overview instructions for removing MacBook Activation
+    Lock.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:54.797359+00:00'
   source_available: true
 - id: eaf7209d5ca0d52f
   filename: IMG_7447.png
@@ -67,9 +68,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-05-01T13:05:51.929072-05:00'
   sha256: b28c502cdcd6d9d878989ec8134dffdc51c14d2fa8a8f7219a22d9803b6d8c10
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling woman in a white crop top and thong reaches into a black
+    dresser drawer.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:59.179996+00:00'
   source_available: true
 - id: 514634ec47be3f95
   filename: IMG_7198.jpeg
@@ -204,9 +206,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-05-02T08:12:56.211243-05:00'
   sha256: e7b1faad8298bf21786e043f2bbcf5be823975f032a878499349e727c92a8ab7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LinkedIn post screenshot announcing True Anomaly's $650M Series D space
+    industry funding.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:59.516323+00:00'
   source_available: true
 - id: f2870bf7ce96d886
   filename: b37e82fd-7262-4be5-baa2-45fb985199ed.JPG
@@ -250,9 +253,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-05-02T08:31:16.383761-05:00'
   sha256: dc68e8f56f3e1264019e7f125053576726f4d825163457a6aa5839bf24dadcb0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot with a vibe coding tweet and a text argument about
+    a MacBook refund.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:01.591747+00:00'
   source_available: true
 - id: d57c444429c24f8e
   filename: FINALYCVIDEO.mov
@@ -285,9 +289,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-05-02T10:18:50.304458-05:00'
   sha256: 0cc30626175323cf876e0434665c9e1c5ac75edcfdcc5a1f84c36fe193513720
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone lock screen at 11:18 AM with a beach wallpaper and a birthday
+    notification.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:09.838128+00:00'
   source_available: true
 - id: 413088d8a9711755
   filename: IMG_9932.png
@@ -296,9 +301,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-05-03T08:10:43.075761-05:00'
   sha256: fee369cf3b516baf1696f293d83f8e04404e84f30fb045289c0aa8649ec0bd33
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Amazon order confirmation for Seedbox Labs shipping to Avery Haskell
+    in NYC by May 8.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:05.346881+00:00'
   source_available: true
 - id: 256b113b3a95fb3a
   filename: "Screenshot 2026-05-04 at 12.37.47\u202FPM.png"
@@ -307,9 +313,9 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2026-05-04T11:37:58.517963-05:00'
   sha256: 0bf6666e8037371590da718f988e809e67d5c8faa26d359e6820a44384f1a7f4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LinkedIn notification for Aditya Singh's post titled "Claude and Effect".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:21.258987+00:00'
   source_available: true
 - id: 4c55054e7e293759
   filename: IMG_1628.PNG

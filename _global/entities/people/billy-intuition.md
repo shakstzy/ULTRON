@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.822140+00:00
+ingested_at: 2026-05-06T22:18:21.444569+00:00
 ingest_version: 1
 content_hash: blake2b:2fa006a514cf4dd556989de7ae6ba8ab
-provider_modified_at: 2026-05-06T22:17:40.822140+00:00
+provider_modified_at: 2026-05-06T22:18:21.444569+00:00
 
 title: Billy | Intuition
 slug: billy-intuition
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-06T22:17:40.822140+00:00
+last_synced: 2026-05-06T22:18:21.444569+00:00
 global: true
 ---
 

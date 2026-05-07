@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-04-06T15:55:01.150361-05:00'
   sha256: 68b207b999dcf9546e4bf07b8489db2789ddd46a5834fcca3d35acf24baf4e2d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of Suno AI interface for creating a "Drake Nicki" style
+    rap dancehall track.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:11.094151+00:00'
   source_available: true
 chat_message_guids_count: 10
 deleted_upstream: null

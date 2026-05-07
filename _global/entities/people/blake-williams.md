@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.850505+00:00
+ingested_at: 2026-05-06T22:18:21.522535+00:00
 ingest_version: 1
 content_hash: blake2b:9b89989da99d2236c4d9f430af40fef7
-provider_modified_at: 2026-05-06T22:17:40.850505+00:00
+provider_modified_at: 2026-05-06T22:18:21.522535+00:00
 
 title: Blake Williams
 slug: blake-williams
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(317) 308-9141"]
   slack: []
-last_synced: 2026-05-06T22:17:40.850505+00:00
+last_synced: 2026-05-06T22:18:21.522535+00:00
 global: true
 ---
 

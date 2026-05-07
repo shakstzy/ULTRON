@@ -46,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-02-04T15:55:16.233000-06:00'
   sha256: 1cb2e9e884dbaa2eefc958c6da0066f4ecf7d4b05a417f6333aa450bed443883
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Maps screenshot showing transit directions to La Vibra NYC in
+    Manhattan.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:25.882252+00:00'
   source_available: true
 - id: a77eae9b1bea1e91
   filename: IMG_5521.PNG

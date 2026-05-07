@@ -22,9 +22,9 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-11-01T06:01:34.007906-05:00'
   sha256: ec0f78bd17efbe9747ff8c2f04a1cbb931d3591a03d1fb4c3c5ca2f11eff3095
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A bearded man in a white t-shirt holding a lit joint outdoors at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:12.796687+00:00'
   source_available: true
 - id: 590b54475ddc3a54
   filename: 345AC516-D11D-432D-818E-7FA89D24BB2F-video.MOV
@@ -33,9 +33,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-11-01T15:09:49.924749-05:00'
   sha256: c9e275477f39d877d6929903887832faa55de116c0146b1be6e8de0403a323f4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A graduate in a BERKEE stole sips coffee and welcomes viewers to Shlok's
+    Coffee.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:27.942779+00:00'
   source_available: true
 - id: c3fdebb298d94471
   filename: FBA58036-BF63-4E37-B31F-5F0871C2B340-video.MOV
@@ -44,9 +45,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-11-01T15:16:09.333228-05:00'
   sha256: fdfd0b991228f00bc6a4a12fc11b5fd7fe03fa7f15ce8ec306c2c6731fbfbcee
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A Berkeley graduate holds a Philz Coffee bag and mentions serving the
+    "freshest of nitrous."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:44.569028+00:00'
   source_available: true
 - id: 928ab61e065c6d84
   filename: 99A4D2F5-5480-435C-BE3F-9C0DF143C2F0-video.MOV
@@ -55,9 +57,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-11-01T15:25:42.321667-05:00'
   sha256: a6b3059e89a905a7edf22dae7c16407ff0cf7d5e0a2c9b62f39666f184b43e05
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A young man asks to do "whips" then transforms into a distorted, elderly
+    face.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:28.159179+00:00'
   source_available: true
 - id: 41aeed1cb8215ba0
   filename: IMG_3027.PNG
@@ -78,9 +81,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2025-11-03T08:21:09.863225-06:00'
   sha256: 4024c6b96164787211d6456477bf30739c891b399c2ae7d4cdd4355f2c74ae06
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Fred's Team runners cross the Verrazzano-Narrows Bridge during the
+    N.Y.C. Marathon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:28.490669+00:00'
   source_available: true
 - id: 82d831367c2f9c10
   filename: IMG_8599.PNG
@@ -89,9 +93,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-11-03T08:46:03.098055-06:00'
   sha256: 4124229902e96504d38c1a878d3fd7b00f73579c07d96a0d9cd87a9501bacc27
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A blurry, low-resolution portrait of a man with dark hair wearing a
+    black shirt.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:48.360491+00:00'
   source_available: true
 - id: e8a6ec51e76a11fb
   filename: View recent photos.png
@@ -100,9 +105,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2025-11-03T08:46:59.880748-06:00'
   sha256: be8005bb81434bfa7e7b025aef8e90b4440a0de39ba0c2dd58904de4e4f61f1e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man wearing a navy blue Connecticut jersey with number 34 stands
+    on a beach.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:47.919386+00:00'
   source_available: true
 - id: 86686dda2c03d69c
   filename: IMG_7431.JPG
@@ -111,9 +117,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2025-11-03T08:48:29.902525-06:00'
   sha256: da948c07bc4827b9689b2b9ea3f12a6ee4231b649d47a8e11408d2e8cb1ff0f4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men holding finisher medals in front of a New York City Marathon
+    backdrop.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:30.711618+00:00'
   source_available: true
 - id: 9a1c95bb21e533a2
   filename: IMG_7440.JPG
@@ -122,9 +129,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2025-11-03T08:49:52.338999-06:00'
   sha256: 97951950338d16822037a2804165161327b018780c01b42f7ba9489d08f9689b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two runners pose with medals before a giant 2025 New York City Marathon
+    medal backdrop.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:44.968038+00:00'
   source_available: true
 - id: 45920d8458be00ee
   filename: IMG_3057.png
@@ -133,9 +141,9 @@ attachments:
   sender: me
   sent_at: '2025-11-04T01:12:11.377183-06:00'
   sha256: aa2e6a0bab2da0bd9dcb4740fa48851bda9194f2136e86032981a3bc4f474a05
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men holding drinks pose against the New York City skyline at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:08.759971+00:00'
   source_available: true
 - id: 5fb44933e717d263
   filename: "Screenshot 2025-11-04 at 12.07.24\u202FPM.png"
@@ -156,9 +164,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-11-04T13:26:56.796886-06:00'
   sha256: a79c6a1ef2900205c97f1b0868444a366951d86ce0c23440407c67d793034440
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LinkedIn post screenshot of Avik Jain's manifesto about RLHF, Jane
+    Street, and a hunger strike.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:44.622667+00:00'
   source_available: true
 - id: 2038bda17841f4ac
   filename: IMG_3078.png
@@ -167,9 +176,10 @@ attachments:
   sender: me
   sent_at: '2025-11-04T21:20:12.306208-06:00'
   sha256: a3f2e241b6ab40b218fb501317a29fd0045495243a47a51fc9f697daf5b76c12
-  description: null
-  description_model: null
-  extracted_at: null
+  description: ChatGPT screenshot detailing disputed forensic evidence regarding a
+    blood spatter pattern.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:40.012567+00:00'
   source_available: true
 - id: d8d21032be26b031
   filename: IMG_3079.PNG
@@ -202,9 +212,10 @@ attachments:
   sender: me
   sent_at: '2025-11-04T22:36:55.029323-06:00'
   sha256: d63d83dac7229a7ca63ae88ce879cd43ce2b6a3e309896d698e4343ff3653e59
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Car interior at night with blue illuminated dashboard buttons and a
+    rear-view mirror.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:11.361556+00:00'
   source_available: true
 - id: 65fc05f2515d37d2
   filename: "Screenshot 2025-11-05 at 12.10.27\u202FPM.png"
@@ -225,9 +236,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-11-06T13:19:17.899211-06:00'
   sha256: c94acda9ba388bef1475beec5c40694a10958a109b3f310a175a854f0c9324c8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "A man in a black shirt sits at a bar behind a large glass of ros\xE9\
+    \ wine."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:03.575308+00:00'
   source_available: true
 - id: e0d19d04edb946ff
   filename: IMG_7612.heic
@@ -236,9 +248,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-11-07T18:04:39.939412-06:00'
   sha256: 74973adfe47a20732189b9c691d14c920c0ed3b081b4dc50d89a21f872d08d99
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Profile of a man named Lalit with a "Deaf" tag and a 99% thumbs-up
+    rating.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:40.448996+00:00'
   source_available: true
 - id: 97e3c07cf1dce0fb
   filename: 78425309550__2991B21A-6094-499E-A99D-CB25BABAC8AF.HEIC
@@ -247,9 +260,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-11-07T18:05:50.020401-06:00'
   sha256: 1a7b261b3c4cbf89fbb4e4f5610ce2272c6149c6e11a612c3329591c69d5bd70
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Chicago's Marina City towers and skyscrapers illuminated at night along
+    the Chicago River.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:00.458501+00:00'
   source_available: true
 - id: 4baf59751a2ae836
   filename: IMG_8713.PNG
@@ -258,9 +272,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-11-13T10:57:36.330851-06:00'
   sha256: 73369a5ecb44110c124aee9a66d835f8fe7343d2db9886c55368b861d731b159
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram story from rubinjha.56 showing a $181,500 crypto balance
+    and a mentor shoutout.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:59.286598+00:00'
   source_available: true
 - id: df9aac0b70150d61
   filename: IMG_8712.PNG
@@ -269,9 +284,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-11-13T10:57:36.330851-06:00'
   sha256: cd70730813ef5d7aea04035f19cd87a4995fb6f5b63300710d0c59317b3f9267
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram story of a black Mercedes G-Wagon with text about bitcoin
+    trading success.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:09.944159+00:00'
   source_available: true
 - id: 963e4a9bad9fb270
   filename: IMG_8714.PNG
@@ -292,9 +308,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2025-11-13T11:10:20.365494-06:00'
   sha256: 329ffbc1bb532b8f9087975bbb55fff788c2a681566d1f2be44e2a3747f6eee8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage conversation with Rubin about unauthorized Robinhood access
+    via Instagram.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:54.763502+00:00'
   source_available: true
 - id: ba5b3a0ba1d8c3d5
   filename: IMG_8208.jpeg
@@ -303,9 +320,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-11-20T22:26:28.383238-06:00'
   sha256: d8a3817f4d694d682769c6ca0649727185390df259d014dd4a865b4be984bf3b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two young men holding plastic Walmart bags in front of a neutral gray
+    wall.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:54.021786+00:00'
   source_available: true
 - id: d19b4246731a41b0
   filename: A3383794-5726-4196-8354-678FA777F13E.PNG
@@ -314,9 +332,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-11-20T22:35:34.479028-06:00'
   sha256: d9fcfd322eeb53c5a2dd542be31a41dcc7917017084a1311932f56fc083f07ba
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Simpsons-style cartoon illustration of a family of four under the title
+    "THE VALLURUS".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:03.334123+00:00'
   source_available: true
 - id: e19d64ab3276f0d9
   filename: IMG_8794.PNG
@@ -325,9 +344,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-11-21T14:24:37.033083-06:00'
   sha256: d07dc1d3046d24c55c47a1837b84ebb08f36bedd155848ad809871c649962bb1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Flyer for a Cal vs. Stanford watch party at Tap Haus in Berkeley on
+    Saturday, Nov 22.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:56.629974+00:00'
   source_available: true
 - id: 8fbd8d86eb6ebf19
   filename: tmp.gif
@@ -336,9 +356,10 @@ attachments:
   sender: prabhat-nuthakki-uc-berkeley
   sent_at: '2025-11-21T15:08:13.093286-06:00'
   sha256: 04f5d8777b75d0850404b9a3a82e9da2e5db7531ba0e07bd14718bef8424fb17
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Conan O'Brien and Andy Richter toast as Conor McGregor laughs during
+    a split-screen interview.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:05.389053+00:00'
   source_available: true
 chat_message_guids_count: 172
 deleted_upstream: null

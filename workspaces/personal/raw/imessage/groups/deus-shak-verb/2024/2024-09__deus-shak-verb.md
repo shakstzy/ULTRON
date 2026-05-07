@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-09-27T18:58:17.146000-05:00'
   sha256: 2ff894e9e68ed61ff853c34bcb29add5cac734a5d59ae0ba988742f24febcfb9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Disassembled wooden chairs, a spare tire, and bags packed beside a
+    blue car in a garage.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:17.584977+00:00'
   source_available: true
 - id: 2ef9edfcebd78683
   filename: IMG_7741.jpeg
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2024-09-27T18:58:44.676000-05:00'
   sha256: e6462a48c89abcf824238bb04b14f0a5890f61c16bd2af085dfe1660017e3b9b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A rolled white mattress topper, cardboard box, and glass bong in a
+    cluttered hallway.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:11.294488+00:00'
   source_available: true
 - id: da357c65b235366c
   filename: IMG_8835.jpeg
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2024-09-27T18:59:49.304000-05:00'
   sha256: 436a08b3c553c2d6cc39634ee24ef98b9a6372b08632e1ba9b51bf3d8c15a64d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Used Starbucks cups, takeout bags, and a crumpled napkin on a brown
+    granite counter.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:13.393137+00:00'
   source_available: true
 - id: 7418e23d8478b694
   filename: IMG_5669.jpeg
@@ -55,9 +58,10 @@ attachments:
   sender: me
   sent_at: '2024-09-27T19:02:38.510000-05:00'
   sha256: 830a35d2738ac127cfa38375bdbd4b91861cfe7bfd0e6d2959aefa8f58a80b5e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Rolled white mattress leaning on a box and mailers near shoes and a
+    glass water pipe.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:34.090445+00:00'
   source_available: true
 - id: ed5400d6de22f7df
   filename: IMG_2344.PNG
@@ -66,9 +70,10 @@ attachments:
   sender: me
   sent_at: '2024-09-27T20:13:54.525572-05:00'
   sha256: 6f51b35464b9c6200e7a8e88df28dc79728bfcaee30150a08a70c9d5435817ac
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Roommate group chat screenshot with a photo of a messy closet and text
+    complaints.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:17.796330+00:00'
   source_available: true
 - id: 014060028d3f158e
   filename: IMG_3571.jpeg
@@ -77,9 +82,10 @@ attachments:
   sender: evan-renter
   sent_at: '2024-09-27T20:39:34.893888-05:00'
   sha256: 7f84cb89e1086daf58aa8c9a8624e059b4bae58a762127d43823653812d0a1b2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'iMessage screenshot: Noah Connor message about cleaning up with reaction
+    and context menus.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:23.408460+00:00'
   source_available: true
 - id: b0f548149cf6e1e1
   filename: IMG_0903.PNG
@@ -88,9 +94,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-09-27T21:44:32.807765-05:00'
   sha256: d177e356af48ca9ac0b3c21c276f42ce2caca6ac8840d8eef24e55a79560fbf3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: WhatsApp screenshot of Amadeus reporting housemate conflicts and food
+    theft to Ambal.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:21.673569+00:00'
   source_available: true
 - id: 177bd7130fe26d10
   filename: IMG_0905.PNG
@@ -99,9 +106,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-09-27T21:44:32.807765-05:00'
   sha256: 91db8fafba923e4f306f8cac65fe0a24e075ca867f3ecfb8fe71976e96f396dc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: WhatsApp screenshot of a text detailing roommate hygiene issues and
+    hostile behavior from Joko.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:15.910092+00:00'
   source_available: true
 - id: c0ff007b62aab3a6
   filename: IMG_0906.PNG
@@ -110,9 +118,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-09-27T21:44:32.807765-05:00'
   sha256: 9dc83a3ce8e40526ee34a33ab8df18d26cc1e251e0a0778cb8e99ec0ab64db56
-  description: null
-  description_model: null
-  extracted_at: null
+  description: WhatsApp chat screenshot detailing household disputes and defense of
+    a housemate named Evan.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:17.407984+00:00'
   source_available: true
 - id: e1fcfd9c9e4ac9f8
   filename: IMG_0904.PNG
@@ -121,9 +130,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-09-27T21:44:32.807765-05:00'
   sha256: 35551dfa5c1fe2cc7d6ceca02329ac26e72c9fce3f964d1271494dd4c37c30d6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: WhatsApp chat screenshot detailing complaints about roommates Noah,
+    Joko, and Bryson's mess.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:19.415847+00:00'
   source_available: true
 - id: e86a71f4d058af3c
   filename: IMG_0934.PNG
@@ -132,9 +142,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-09-27T23:23:52.394561-05:00'
   sha256: 9e71a62a2273876ae1a82de51d0c8a406a0ae5e02df5b0f877e9155aebd7aa89
-  description: null
-  description_model: null
-  extracted_at: null
+  description: WhatsApp chat screenshot about Noah covering for Bryson and Joko's
+    mess in a shared home.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:23.882430+00:00'
   source_available: true
 - id: e4a7c1982e742377
   filename: IMG_0933.PNG
@@ -143,9 +154,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-09-27T23:23:52.394561-05:00'
   sha256: edfd03b0726084aab0fdac797673f2f2384337c5e1b678b2733cc282d3e101eb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "WhatsApp chat discussing realtor issues and confirming Noah\u2019\
+    s phone number (847) 222-3813."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:22.404559+00:00'
   source_available: true
 - id: 0d333b19319b03e4
   filename: tmp.gif
@@ -154,9 +166,9 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-09-29T04:38:47.336141-05:00'
   sha256: df814449f2703c418fc0e1a9a068b260a6e5d24d976b352954359df741dc547a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Michael Scott from The Office tearfully nodding with an emotional expression.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:20.211988+00:00'
   source_available: true
 chat_message_guids_count: 130
 deleted_upstream: null

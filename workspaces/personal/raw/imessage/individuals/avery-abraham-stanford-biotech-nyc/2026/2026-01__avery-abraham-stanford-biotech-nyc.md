@@ -46,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2026-01-21T14:14:25.721859-06:00'
   sha256: daa53cd95b7abcb813e90bc06d704783b0ed38dcb979ab1684d48d7c6929ca8b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Eli Health startup slide for a Canadian at-home saliva hormone testing
+    medical device.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:50:35.806790+00:00'
   source_available: true
 - id: c9647e7948d93ecc
   filename: IMG_9297.png
@@ -57,9 +58,10 @@ attachments:
   sender: me
   sent_at: '2026-01-21T14:14:39.186264-06:00'
   sha256: 831486cb37b7855c78ebdc9b3242d9d6e44b8af2a9d07a0a0d6eceb471c27b8d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Slide for Elektra Health, a menopause digital platform with $98k design
+    capital invested.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:14.617940+00:00'
   source_available: true
 - id: b3e79a01516f397f
   filename: IMG_7311.png

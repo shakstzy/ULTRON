@@ -79,9 +79,10 @@ attachments:
   sender: me
   sent_at: '2024-11-27T16:28:54.580642-06:00'
   sha256: 5817c1a38a40f4b85c12fa8b39e0c431e481cfd5caafa040bbcc11d4a60bb438
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Text on Musk's drone push aiding Silicon Valley tech while disrupting
+    legacy defense firms.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:44.813813+00:00'
   source_available: true
 chat_message_guids_count: 336
 deleted_upstream: null

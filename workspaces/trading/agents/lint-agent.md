@@ -27,7 +27,11 @@ For entities mentioned in `wiki/` 3+ times that don't have their own entity page
 
 ### 5. Schema-specific rules
 
-<populated at bootstrap from Q8>
+- Verify all wiki pages have required frontmatter per their type in `schema.md`.
+- Flag entities with `last_touched > 90 days ago`. For `> 180 days`, recommend `status: archived`.
+- Flag any page that violates a hard rule from `CLAUDE.md`.
+- Flag any cross-workspace reference that does NOT use the `[[@slug]]` global form when a global stub exists.
+- For workspaces with sensitive boundaries, flag any wiki page containing data that should live in `raw/` only.
 
 ### 6. Schema-proposal accumulation
 Count entries in `_meta/schema-proposals.md` that are unaccepted for > 14 days. Surface.

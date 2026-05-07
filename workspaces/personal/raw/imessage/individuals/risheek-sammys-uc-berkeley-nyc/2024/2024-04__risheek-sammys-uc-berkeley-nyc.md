@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-04-27T11:14:35.694170-05:00'
   sha256: 2b2b63a9906ffc25b241b93690653e3322df3f792fad6335d631b8f26894b5fe
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Snapchat memorial post for Brandy (2000-2024) with a photo and emotional
+    tribute messages.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:35:15.417450+00:00'
   source_available: true
 chat_message_guids_count: 10
 deleted_upstream: null

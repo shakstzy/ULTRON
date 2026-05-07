@@ -22,9 +22,11 @@ attachments:
   sender: sudhanva-athreya-sportssense
   sent_at: '2026-03-21T16:13:23.296407-05:00'
   sha256: 0abc52641715c71f2a72efb6bd0efe8928c2e16faced862a80d0676432ad9cf4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This investor one-pager for SportsSense introduces Playmaker, a personalized
+    AI sports agent for fans. It outlines a $2.5M fundraising goal, market strategy,
+    team bios, and financial projections.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:09.361076+00:00'
   source_available: true
 chat_message_guids_count: 1
 deleted_upstream: null

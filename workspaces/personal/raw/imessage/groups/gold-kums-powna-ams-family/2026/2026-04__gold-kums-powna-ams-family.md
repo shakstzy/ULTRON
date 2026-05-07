@@ -297,9 +297,10 @@ attachments:
   sender: me
   sent_at: '2026-04-10T17:05:47.137624-05:00'
   sha256: 1b5f4190edc5b708960a9f300bbf3faa7548ea97bd226b8aa54910787d1bd7ea
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Email from Rusty Smith requesting interview availability for an a16z
+    Technical Assistant role.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:53.560232+00:00'
   source_available: true
 - id: 619a4efa9b2ac7ee
   filename: IMG_3418.png
@@ -319,9 +320,10 @@ attachments:
   sender: me
   sent_at: '2026-04-10T20:16:53.941269-05:00'
   sha256: a927a44b04f01d2709e6dd7c207ed83cb79ff29e11fc8be022451bb09a7a6213
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of an a16z interview confirmation for Adithya Kumar on April
+    14 and 17, 2026.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:08:02.413441+00:00'
   source_available: true
 - id: 79ef427d1734f15a
   filename: IMG_0022.png
@@ -341,9 +343,10 @@ attachments:
   sender: mom
   sent_at: '2026-04-13T16:11:33-05:00'
   sha256: 8f4afcc230328a4f452992c8d628d6912c7960ea82148aa5187e7cf7587b5746
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Keep checklist titled "Indian" listing Rice, Moong Dhal, Ragi,
+    and Jaggery.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:08:01.586965+00:00'
   source_available: true
 - id: 8d870cfb0039a865
   filename: 1000214206.png
@@ -473,9 +476,10 @@ attachments:
   sender: mom
   sent_at: '2026-04-15T08:47:30-05:00'
   sha256: 22da958ed8d4b55d60548fc2cfc8d264103ae9513c94001dc0be8fb7b680d598
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Email acceptance for Ambal Balakrishnan to a 10-day leadership course
+    in Kaufman, TX.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:57.034268+00:00'
   source_available: true
 - id: fc4d3b61ea9430c9
   filename: 1000214543.png
@@ -495,9 +499,10 @@ attachments:
   sender: me
   sent_at: '2026-04-15T13:20:33.710978-05:00'
   sha256: ed65d61c5bf3d605414ec5f4e8ac974847f06f5572d32a67a24152c59c81b3d3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Confirmation of a federal tax extension e-filing with a $1,000 payment
+    for April 15, 2026.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:58.601703+00:00'
   source_available: true
 - id: 036df45dec49aa37
   filename: IMG_9960.png
@@ -517,9 +522,10 @@ attachments:
   sender: me
   sent_at: '2026-04-15T13:23:10.997826-05:00'
   sha256: abf69add3816d82fa992352b8225932653ff69e0c4e9d1e4122d9680e5d82a57
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Investment metrics for Section 8 rental properties in Oklahoma City
+    and Birmingham.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:58.989624+00:00'
   source_available: true
 - id: 4ffe2f40cb4e96c1
   filename: IMG_3100.png
@@ -562,9 +568,10 @@ attachments:
   sender: me
   sent_at: '2026-04-15T13:23:25.981176-05:00'
   sha256: ce054fe23863b43fae049dd45c29a295526c7791c6a015b247d19243e98c47b2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Table comparing real estate investment cash requirements and shortfalls
+    for four properties.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:58.411871+00:00'
   source_available: true
 - id: 22bc29f2bbe198fe
   filename: IMG_3457.png
@@ -584,9 +591,10 @@ attachments:
   sender: mom
   sent_at: '2026-04-15T13:23:39-05:00'
   sha256: 43e93b88edd8cd2607076f7a096a99ad0d67f369b6bc12f75323c80529403247
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A mustached man in a suit shouting "IT'S BULLCRAP!" in a grainy reaction
+    GIF.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:08:00.269753+00:00'
   source_available: true
 - id: 43f61d73c96eee0a
   filename: 166724510400928664.gif
@@ -629,9 +637,10 @@ attachments:
   sender: me
   sent_at: '2026-04-20T16:06:25.456333-05:00'
   sha256: 2a8534ad7bf0c82b90eda017a735aab534bf427f8a538a91d10edbd9bc766a4c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Interior of a car passenger door looking out at a brick building and
+    green trees.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:08:21.746596+00:00'
   source_available: true
 - id: bc21662faf0e9700
   filename: 79841198232__25075EB8-B0C3-4B36-9188-D64606335C54.HEIC
@@ -673,9 +682,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2026-04-22T16:17:38-05:00'
   sha256: 75752cd006eea1612e3ea758d02c3677f7c7f856b32ef70554e058290e47c691
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a maroon Texas A&M hoodie and blue shorts smiles in front
+    of a university building.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:08:07.275684+00:00'
   source_available: true
 - id: 733f7b33ad84f06f
   filename: IMG_8301.PNG
@@ -740,9 +750,10 @@ attachments:
   sender: mom
   sent_at: '2026-04-26T16:59:28-05:00'
   sha256: 608ab6a7a9d4f2d42b8de9ce66d3c4ac47242bdfd6de138bd00df2523783f0a4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Lavender Chevrolet Camaro driving on a highway past modern apartments
+    and a water tower.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:08:05.249928+00:00'
   source_available: true
 - id: 7de0725049220304
   filename: 1000218060.jpg
@@ -785,9 +796,10 @@ attachments:
   sender: mom
   sent_at: '2026-04-28T17:17:02-05:00'
   sha256: 01dfb6e3b4d39747193ab118040d8c55cf45781e37b537d9eaffa37ee319b06d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Woman in striped shirt holding silver 100 and gold K balloons with
+    a large % symbol overlay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:08:21.818450+00:00'
   source_available: true
 - id: a856a3f724fd7a90
   filename: 1000218821.png
@@ -819,9 +831,9 @@ attachments:
   sender: mom
   sent_at: '2026-04-29T17:17:11-05:00'
   sha256: 19d9986cd824ce1c8299de2949190fbdf88343acbb8b0914463c0020673c91a5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of an email admitting Arya to UW-Madison from the waitlist.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:08:05.881934+00:00'
   source_available: true
 - id: f7668eaf2861577d
   filename: 1000218837.png
@@ -841,9 +853,10 @@ attachments:
   sender: mom
   sent_at: '2026-04-29T19:23:21-05:00'
   sha256: 7dc267eeca8b848b02c153807e62f1ef95c59678ad429bca701dc0d82d742a23
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Image search results for "olive cherry tomato on small stick"
+    appetizer skewers.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:08:11.479595+00:00'
   source_available: true
 - id: 21ba46ed4fda12aa
   filename: 800DED61-F661-4019-B5F3-FD03B4BDA7E7.pluginPayloadAttachment
@@ -863,9 +876,10 @@ attachments:
   sender: mom
   sent_at: '2026-04-30T21:12:37-05:00'
   sha256: df1bf5a553eb6ab9f9ad620177b4c00bc2742f73d823dd42067608141b8e03f7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: MyChart screenshot showing a normal left wrist X-ray report for a 17-year-old
+    male.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:28:03.482220+00:00'
   source_available: true
 - id: f8ae2ed4d8b84092
   filename: Screenshot_20260430-211227.png

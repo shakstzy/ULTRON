@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-04-02T12:52:14.802293-05:00'
   sha256: 0197af2631ef8e71ec511b1cc886947a706fbf64d4350ebd4b11436f3d19b215
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone lock screen showing Notion Mail notifications from Sarah Latino
+    for an a16z interview.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:54:46.876508+00:00'
   source_available: true
 chat_message_guids_count: 5
 deleted_upstream: null

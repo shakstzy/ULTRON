@@ -22,9 +22,11 @@ attachments:
   sender: me
   sent_at: '2025-11-05T18:03:15.151000-06:00'
   sha256: a1fd31ea9c900a89e5a88e9610d6c970da49a7abac6a58c593c6bc1600ae39b9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This PDF is a Junior Analyst Playbook for Outerscope Ventures focusing
+    on Web3 go-to-market strategies. It details the role's daily rituals, partner
+    pipeline management, and core workstreams.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:54:45.799796+00:00'
   source_available: true
 chat_message_guids_count: 13
 deleted_upstream: null

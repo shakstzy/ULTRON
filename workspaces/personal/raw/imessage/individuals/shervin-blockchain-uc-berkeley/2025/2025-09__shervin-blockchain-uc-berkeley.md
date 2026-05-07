@@ -34,9 +34,9 @@ attachments:
   sender: me
   sent_at: '2025-09-30T18:42:31.572383-05:00'
   sha256: 8aa35192ba420ede55fdbd3ed31915afbfd49039e6f9b296d748542c72760637
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Photo of two smiling men paired with text about Golden Visa requirements.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:40:52.038170+00:00'
   source_available: true
 chat_message_guids_count: 14
 deleted_upstream: null

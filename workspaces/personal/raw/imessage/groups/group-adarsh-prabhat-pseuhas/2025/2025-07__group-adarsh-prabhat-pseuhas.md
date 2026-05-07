@@ -22,9 +22,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-07-20T03:55:07.828963-05:00'
   sha256: 74814dec07dee2937fd9e980ea7705217501282952769d33b4799d74ba0c4000
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile advertisement for a nitrous oxide compensation claim from the
+    National Justice Center.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:15.399428+00:00'
   source_available: true
 - id: 9cc948ea4d300f57
   filename: 77469467004__56128182-1D54-4453-8DF1-0BA83B94CB28.heic
@@ -33,9 +34,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2025-07-20T03:57:54.857348-05:00'
   sha256: 1de5784d386315ff84ac01bc6f5393199827bc50c8c3aa452aa0d6ec921465a3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Broadly smiling man with messy dark hair winking in a close-up indoor
+    selfie.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:48.487915+00:00'
   source_available: true
 - id: 50575880e766898e
   filename: 77469472232__B892BC9C-555C-4EA5-9496-F6852A0D4233.heic
@@ -44,9 +46,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-07-20T03:58:45.675216-05:00'
   sha256: 5ba1cf07abbae9ceeed36039f7da0649fe838b5a0bfb1c711b7dceea635f79ca
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling bearded man with dark hair posing for a selfie against a
+    textured wall.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:49.858078+00:00'
   source_available: true
 chat_message_guids_count: 18
 deleted_upstream: null

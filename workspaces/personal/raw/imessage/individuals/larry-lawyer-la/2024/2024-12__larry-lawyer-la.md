@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2024-12-17T11:50:09.814149-06:00'
   sha256: b908c024972b8aa2e14b77e1160835d33b1de0998c71e4b83a40ea505a3af827
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage from Diana Sanders stating they won't pay upfront lawyer fees
+    until the deal closes.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:41.521499+00:00'
   source_available: true
 chat_message_guids_count: 43
 deleted_upstream: null

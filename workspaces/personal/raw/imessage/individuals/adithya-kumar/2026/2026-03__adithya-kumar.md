@@ -22,9 +22,10 @@ attachments:
   sender: adithya-kumar
   sent_at: '2026-03-05T21:19:09.924850-06:00'
   sha256: c87d102486bbe01abbf3510b5ec5cb4fd1e46fa94411ca601f64f7c158d8d070
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a chat with Adithya about setting up an agent
+    and echoing messages.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:59:58.445286+00:00'
   source_available: true
 - id: 0d1d352f7a5f04dc
   filename: IMG_7652.png
@@ -33,9 +34,10 @@ attachments:
   sender: adithya-kumar
   sent_at: '2026-03-05T21:19:10.079688-06:00'
   sha256: 3584232ba02bfe63d5fc123606169829f084d007f79e35555264d5af769343cd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot showing an automated agent mirroring messages and
+    setup questions.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:59:59.697749+00:00'
   source_available: true
 - id: eb12b2f10277f6a2
   filename: IMG_5563.png
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2026-03-05T21:35:13.862797-06:00'
   sha256: 6289e396b0cf0fc34036eaabd72a5bbb15b436223f75615aebd5119418dd0be2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot showing a test of bot logic for ignoring quoted
+    and echoed text blocks.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:05.035507+00:00'
   source_available: true
 chat_message_guids_count: 264
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-05-06T17:24:10.773558-05:00'
   sha256: 38a3fddf2ee427e4594d77ef8a1799b240ecb1bdb853eef9c9d0ccfe0951b4f9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Crypto portfolio showing gains on a laptop screen with "Luks gud send
+    it" text overlay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:35:31.280502+00:00'
   source_available: true
 chat_message_guids_count: 5
 deleted_upstream: null

@@ -45,9 +45,10 @@ attachments:
   sender: me
   sent_at: '2026-03-23T06:53:24.262547-05:00'
   sha256: da248e246684fcf202c8a643a1041c7c34460a9deec7a7ba4fa5612faf2c50ef
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man kisses a woman's head in Times Square at night with a Jack Daniel's
+    billboard behind them.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:47.721604+00:00'
   source_available: true
 - id: c114d0c76df6aa61
   filename: IMG_9613.jpeg

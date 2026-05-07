@@ -22,9 +22,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-02-20T18:17:54.120029-06:00'
   sha256: f6cce8c5830cb482d237e6faf5e32ef731fe4c65e159cf344636ac5ffdbe7f65
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a vCard contact file exported from an iPhone. It contains basic
+    contact information for an individual named Ian, including his primary phone number.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:41:52.093506+00:00'
   source_available: true
 chat_message_guids_count: 3
 deleted_upstream: null

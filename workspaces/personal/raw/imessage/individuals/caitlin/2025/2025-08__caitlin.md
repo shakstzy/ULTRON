@@ -22,9 +22,9 @@ attachments:
   sender: me
   sent_at: '2025-08-19T22:09:50.701075-05:00'
   sha256: 4576da4eac030ee409b9c550439201539eeb4de010640419c8596b9bad07724c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: MacBook running Ableton Live music software in a dimly lit studio environment.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:56.714770+00:00'
   source_available: true
 chat_message_guids_count: 42
 deleted_upstream: null

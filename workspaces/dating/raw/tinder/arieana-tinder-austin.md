@@ -8,7 +8,7 @@ person_id: "60b099398cb0390100593046"
 phone: null
 status: "new"
 first_seen: "2026-03-29T00:00:00Z"
-last_activity: "2026-03-29T20:32:00Z"
+last_activity: "2026-05-06T23:11:03.286Z"
 last_scrape: "2026-05-01T05:16:35.527Z"
 previous_slugs: []
 migrated_from_shakos: "arieana"
@@ -88,8 +88,10 @@ last_profile_diff: "2026-05-01T05:16:35.527Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-06 23:11 the 'his choice' caption is either a great story or a great warning sign. which one is it
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 00:43 queued_auto (auto, opener) [draft:0421c615] lint=true "the 'his choice' caption is either a great story or a great warning sign. which one is it"
+- 2026-05-06 23:11 sent (auto, auto-or-hitl) [draft:0421c615] lint=true "the 'his choice' caption is either a great story or a great warning sign. which one is it"

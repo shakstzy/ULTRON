@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-10-19T17:19:07.720963-05:00'
   sha256: ecfea1aee8d505c38f9d230eee1e39cdc12efbd01a0ed88edfb5dc2e92061915
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LinkedIn profile of Sonu Rai showing UC Berkeley education and project
+    management certifications.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:51.750091+00:00'
   source_available: true
 chat_message_guids_count: 59
 deleted_upstream: null

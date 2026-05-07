@@ -45,9 +45,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2025-01-05T01:58:57.996306-06:00'
   sha256: 16d58154f55a71618b85352fdfa0a29776d2a4713cd6dde63f2c93b0ae20d83b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man rides a giant jackalope statue inside The Jackalope bar in Austin,
+    Texas.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:40:02.841663+00:00'
   source_available: true
 - id: 4bf35c5ccf1a36ae
   filename: IMG_4336.jpeg
@@ -56,9 +57,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2025-01-05T01:58:57.996306-06:00'
   sha256: 4167e9aebb740e82dc1a584105b73e4f30d234f6b0d3d1ca36fe01f7e9b8dcaa
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in glasses flashes a peace sign while riding a mechanical bull
+    in a red-lit bar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:39:46.230928+00:00'
   source_available: true
 - id: bb30f23113340049
   filename: IMG_4341.jpeg
@@ -67,9 +69,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2025-01-05T01:58:57.996306-06:00'
   sha256: 762cfecc60a3699ade313bde58ae9eaa7345ef20a8c85cec7531d85d45c563a6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three young men smiling in an upside-down nighttime selfie outside
+    a house.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:39:48.022700+00:00'
   source_available: true
 - id: 2047b64606ea4ba5
   filename: IMG_4337.jpeg
@@ -89,9 +92,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2025-01-05T01:58:57.996306-06:00'
   sha256: 66cbef571018790cfb52d75b6120fe9e819b1ab540aa620c8701930f9e3ba570
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man eats street food on a festive, crowded city street at night near
+    Trinity St.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:40:21.663130+00:00'
   source_available: true
 - id: ad27522551e39d9c
   filename: IMG_4340.jpeg
@@ -124,9 +128,10 @@ attachments:
   sender: griffin-noah-roomate
   sent_at: '2025-01-05T11:42:31.345165-06:00'
   sha256: fe6a1081cef53c022533039b066594f40d6c4796ef7944d8e946fd2eb95b7b40
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Urban stream at night between stone walls with graffiti and city lights
+    in the distance.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:40:24.708924+00:00'
   source_available: true
 - id: 9ab754deba35eef2
   filename: IMG_5203.PNG

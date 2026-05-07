@@ -22,9 +22,10 @@ attachments:
   sender: noah-renter
   sent_at: '2024-12-19T12:58:36.810181-06:00'
   sha256: aacee175ce0e405b2c5cd66e7883178190aff872368592967f6dc84c9026238c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Black three-tier shelving unit with silver legs on a concrete floor
+    next to a white car.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:52:34.523126+00:00'
   source_available: true
 chat_message_guids_count: 49
 deleted_upstream: null

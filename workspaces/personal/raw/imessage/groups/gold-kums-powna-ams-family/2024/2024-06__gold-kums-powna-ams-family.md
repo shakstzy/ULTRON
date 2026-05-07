@@ -22,9 +22,10 @@ attachments:
   sender: mom
   sent_at: '2024-06-05T23:07:32-05:00'
   sha256: 0ca09bbe2f7a1137e54f3606f0320ed73b0996b06f094b46cbecd83da9a57679
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Shakthi in a red turtleneck points to a Berkeley MET card against a
+    brick wall in Austin.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:54.712210+00:00'
   source_available: true
 chat_message_guids_count: 194
 deleted_upstream: null

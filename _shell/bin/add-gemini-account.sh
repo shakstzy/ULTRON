@@ -8,11 +8,16 @@ mkdir -p "$ACCOUNTS_DIR"
 
 echo "=== logging out current gemini session ==="
 gemini auth logout 2>/dev/null || true
+# `gemini auth logout` does NOT always wipe oauth_creds.json. If it stays,
+# the next `gemini auth login` tries an API call against the stale account
+# first and 429s before OAuth even starts (observed 2026-05-06).
+rm -f "$HOME/.gemini/oauth_creds.json"
 
 echo
 echo "=== gemini auth login — browser will open. Click through Google login. ==="
+echo "=== auth times out after 5 min; complete the OAuth flow promptly. ==="
 echo
-gemini auth login
+yes | gemini auth login
 
 if [ ! -f "$HOME/.gemini/oauth_creds.json" ]; then
     echo "ERROR: oauth_creds.json not written; auth must have failed"

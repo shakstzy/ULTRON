@@ -22,9 +22,10 @@ attachments:
   sender: angel-renter-showing
   sent_at: '2025-01-30T16:24:43.899282-06:00'
   sha256: e3d08f4013c9b159d084b0beae1cae759b9167563cab00287502faf08b8835e9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Signed two-page California Fair Housing and Discrimination Advisory
+    form from December 2024.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:28.528507+00:00'
   source_available: true
 chat_message_guids_count: 40
 deleted_upstream: null

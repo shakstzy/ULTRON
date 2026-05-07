@@ -34,9 +34,9 @@ attachments:
   sender: evan-layer
   sent_at: '2025-05-24T13:01:24.994945-05:00'
   sha256: b3650664764b03f64ed32240a5030dbefdb12f1500f7ec1796f48108c336e62f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Bearded man smiling and cradling a newborn baby in a striped blanket.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:32.699977+00:00'
   source_available: true
 chat_message_guids_count: 18
 deleted_upstream: null

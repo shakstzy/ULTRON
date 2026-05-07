@@ -22,9 +22,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-05-05T19:46:06.559534-05:00'
   sha256: 33d0fa78a6d56e6559c8c3d8aa71ebfa7aa9daa06c475835b2ccaa8f8fed355b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram post of an emaciated man with the caption "Bro at least I'm
+    taller".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:42.368309+00:00'
   source_available: true
 chat_message_guids_count: 6
 deleted_upstream: null

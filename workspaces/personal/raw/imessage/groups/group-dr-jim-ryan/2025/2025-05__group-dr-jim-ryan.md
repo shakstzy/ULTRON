@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-05-25T20:10:04.248581-05:00'
   sha256: e3357574e3dfaeb98a7d4cd710563a84c001d2334da640e761f3f6a1577e691c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A laptop screen displaying a library of AI-generated songs on the Suno
+    music platform.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:17.232442+00:00'
   source_available: true
 chat_message_guids_count: 2
 deleted_upstream: null

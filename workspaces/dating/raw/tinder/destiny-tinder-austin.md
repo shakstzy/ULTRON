@@ -8,7 +8,7 @@ person_id: "6711cbcd142fda0100ab2352"
 phone: null
 status: "new"
 first_seen: "2026-04-15T00:00:00Z"
-last_activity: "2026-04-15T05:17:00Z"
+last_activity: "2026-05-07T00:41:38.490Z"
 last_scrape: "2026-05-01T06:27:53.497Z"
 previous_slugs: []
 migrated_from_shakos: "destiny-2"
@@ -93,8 +93,10 @@ last_profile_diff: "2026-05-01T06:27:53.497Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 00:41 that fish grip looks professional, you catch and release or do you actually cook them
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 00:57 queued_auto (auto, opener) [draft:3433f1a2] lint=true "that fish grip looks professional, you catch and release or do you actually cook them"
+- 2026-05-07 00:41 sent (auto, auto-or-hitl) [draft:3433f1a2] lint=true "that fish grip looks professional, you catch and release or do you actually cook them"

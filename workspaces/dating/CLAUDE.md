@@ -1,7 +1,7 @@
 ---
 workspace: dating
 wiki: true
-exclude_from_super_graphify: true
+exclude_from_super_graphify: false
 ingest_unrouted_default: skip
 ---
 
@@ -13,7 +13,7 @@ You are in workspace `dating` — Adithya's dating-app activity and the people t
 
 Tinder, Bumble, Hinge, and adjacent platforms. Browser-automated where possible (mirroring QUANTUM's tinder / bumble ban-aversion patterns: patchright, manual auth, strict pacing). Tracks matches, conversations, dates met, follow-ups, and the small set of relationships that develop into ongoing context.
 
-Private by design: `exclude_from_super_graphify: true` keeps these entities out of the cross-workspace graph.
+Participates in the cross-workspace graph: matches who become recurring people in your life can surface across workspaces via `[[@person]]` global stubs.
 
 ## Reading order on entry
 
@@ -32,9 +32,8 @@ Personal, low-decoration, terse. Honest about pattern-matching without being cli
 2. **Manual auth only.** No stored credentials drive writeable sessions. Each platform requires fresh manual login. Session cookies in `_credentials/dating-<platform>.json`.
 3. **Ban-aversion.** Tinder: 100/day swipes, 20/hour messages, skip 1-2 days/week. Bumble: 50/day swipes, 10/hour messages, Date-mode only. Halt on Arkose / Turnstile / Face-Check / login-wall / captcha.
 4. **No API-direct.** Patchright + persistent Chrome profiles only.
-5. **Person privacy.** Each match is an entity in `wiki/entities/people/<first-name-context>.md`. Phone numbers and last names live only in `raw/`.
-6. **Excluded from cross-workspace graph.** This workspace does not contribute to the super graph or surface entities to other workspaces.
-7. Commit messages: `chore(dating): <stage> <YYYY-MM-DD>`.
+5. **Person privacy.** Each match is an entity in `wiki/entities/people/<first-name-context>.md`. Phone numbers and last names live only in `raw/`. Wiki-level synthesis is fair game for the super graph; raw-level platform-specific detail is not graphed.
+6. Commit messages: `chore(dating): <stage> <YYYY-MM-DD>`.
 
 ## Routing table — common queries
 
@@ -45,6 +44,7 @@ Personal, low-decoration, terse. Honest about pattern-matching without being cli
 | Recent dates / met-IRL log | `wiki/synthesis/met-irl.md` |
 | Platform raw history | `raw/<platform>/<YYYY-MM>/...` |
 | iMessage threads with dating contacts | `raw/imessage/<latest>/<thread>.md` (filtered to `routes_to: dating` per source-routing) |
+| Save a match's phone / email to Apple Contacts | `_shell/skills/contacts-add/SKILL.md` |
 
 ## Agents
 

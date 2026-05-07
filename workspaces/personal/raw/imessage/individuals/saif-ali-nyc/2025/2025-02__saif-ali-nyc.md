@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-02-06T12:02:21.877919-06:00'
   sha256: 40d885d0b5dce5771f0fa26e1573b924db23f09741db3423ad98eb3e38f7dc66
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Packed weekly calendar with overlapping events like Nootropics DAO
+    and Mantra House.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:22.819064+00:00'
   source_available: true
 - id: 41ecd51f8eea7112
   filename: IMG_1367.png

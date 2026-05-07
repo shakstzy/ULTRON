@@ -22,9 +22,10 @@ attachments:
   sender: phone-+13214171521
   sent_at: '2025-06-09T16:31:56.423355-05:00'
   sha256: 7295e65ee77ab8141317a17b395b16faa73dc6894983a9c9d1d4247de6b2a6d2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Dark mode iOS screenshot of a Siri contact suggestion for "Maybe:
+    Shaan Patel".'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:52:41.363356+00:00'
   source_available: true
 - id: 04a976d2e2f111a6
   filename: Menu.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: phone-+16507769592
   sent_at: '2025-06-11T15:50:19.966420-05:00'
   sha256: f16d441a2090d3a66cb61a3b894c7ffbaf3e963dcb51fe412814df1202778038
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LaunchX Reunion sushi menu at Slash featuring nigiri, salmon carpaccio,
+    and specialty rolls.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:52:42.354193+00:00'
   source_available: true
 - id: bb739161461b32bd
   filename: IMG_1951.png
@@ -44,9 +46,10 @@ attachments:
   sender: phone-+17147324566
   sent_at: '2025-06-13T23:16:22.545013-05:00'
   sha256: ec02662d8b667b5d2101c964b0b5667bd508e0b4ab551ed48ce2aaf3e1c8d739
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LaunchX Instagram story of Group 1 students after an ImprovBoston session
+    at MIT.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:33.754354+00:00'
   source_available: true
 - id: 7659de57b653957d
   filename: IMG_8895.jpeg
@@ -55,9 +58,10 @@ attachments:
   sender: jasmine-zhang-uc-berkeley
   sent_at: '2025-06-14T02:32:58.490216-05:00'
   sha256: 68ed8e07917df4bd66c342d215230657972ff20bca2cce27474e08304ec2c90c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Twelve people pose in an industrial space with two US flags and a neon
+    'slash' sign.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:21.611963+00:00'
   source_available: true
 - id: d00a3decd1807ba5
   filename: IMG_8886.jpeg
@@ -66,9 +70,10 @@ attachments:
   sender: jasmine-zhang-uc-berkeley
   sent_at: '2025-06-14T02:32:58.490216-05:00'
   sha256: 297943721b2686dc4d1ec4cebdaee7350d2dd12aa2d0c80e1fbbe5b095a5951e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A group of people posing in front of a red neon "Slash" sign and two
+    American flags.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:52:55.740711+00:00'
   source_available: true
 - id: b5074f7ae6ff1e55
   filename: IMG_0250.jpeg
@@ -77,9 +82,10 @@ attachments:
   sender: phone-+19707791386
   sent_at: '2025-06-23T18:11:55.560079-05:00'
   sha256: 048b1964a1273d63072949d80e54016db302d750368509be2fedcb058359383c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: The startup-themed board game VENTURE featuring character cards, dice,
+    and colorful playing pieces.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:07.341322+00:00'
   source_available: true
 - id: 988b27e4d3f73cb0
   filename: 96D65CB6-B372-409F-894B-71950C2D3FE1.JPG
@@ -88,9 +94,10 @@ attachments:
   sender: phone-+19707791386
   sent_at: '2025-06-23T18:11:55.560079-05:00'
   sha256: 67cf189eceb4355b4702c68f60482bc73ac849e115af376720729eb1c78d5a28
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Black box titled "VENTURE" with a poem about Silicon Valley startup
+    culture.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:52:53.660111+00:00'
   source_available: true
 - id: 00377e51e5140eea
   filename: B96B37EE-E58E-40C9-94DF-10D3DE064FE0.JPG
@@ -99,9 +106,10 @@ attachments:
   sender: phone-+19707791386
   sent_at: '2025-06-23T18:11:55.560079-05:00'
   sha256: b1b87f22b05911402b590d2330cfd4994a9d65220ea5356efba185554cab36b2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: '"VENTURE" box with synthwave city art and the slogan "May The Capitalists
+    Prosper".'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:52:51.594060+00:00'
   source_available: true
 - id: 7794b4f3c8e63cfe
   filename: IMG_0255.jpeg
@@ -110,9 +118,10 @@ attachments:
   sender: phone-+19707791386
   sent_at: '2025-06-23T18:11:55.560079-05:00'
   sha256: 06b875587da1e6e8b77b5c26bcccb004af7dbb5ae2eb711ecdf58b12f5c0352c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Startup-themed board game with 'WORK' and 'LIFE' card decks and pink
+    game pieces.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:18.991269+00:00'
   source_available: true
 - id: 45b1aabd49c26b71
   filename: IMG_0259.jpeg
@@ -121,9 +130,10 @@ attachments:
   sender: phone-+19707791386
   sent_at: '2025-06-23T18:31:15.348848-05:00'
   sha256: d225840601e9cc3aa36fd87fe941617c7d07e7a1a888a04b8ef2689fc23e48c5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: '"VENTURE" board game box and "Butter Skunk" drinking game cube on
+    a grey surface.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:09.562392+00:00'
   source_available: true
 chat_message_guids_count: 71
 deleted_upstream: null

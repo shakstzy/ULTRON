@@ -82,9 +82,10 @@ attachments:
   sender: me
   sent_at: '2025-11-10T15:18:12.594988-06:00'
   sha256: a48d51b5ec06ff49e8c57c9b721093a3b4905cf83c1cbd074db705d81662c561
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Kayla and Adithya Kumar coordinate an Apple Northridge pickup for Amadeus
+    Vera in Slack.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:41:42.440436+00:00'
   source_available: true
 - id: 3ade8e8404dbbb08
   filename: IMG_1850.png

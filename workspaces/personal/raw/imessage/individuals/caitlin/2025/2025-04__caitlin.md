@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-04-29T16:05:23.813212-05:00'
   sha256: 195f92356f8b1e92426a0fdc3f5edcd1dfadf6d58124803e3a0fffa39a136634
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a Starknet hat sits in a Prescription Songs reserved parking
+    spot at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:17.537932+00:00'
   source_available: true
 - id: de8657ae09e57793
   filename: D78BCA57-121F-4961-AF88-3C046D4FAF8D.jpg

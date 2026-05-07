@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-08-01T11:56:07.227732-05:00'
   sha256: 901a9026960ba42167873d306721987ea1e438b5cb23984d18a9f07c893c8b51
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a UI showing "3 endorsements" and a button labeled "Endorsed"
+    with a checkmark.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:35:47.405640+00:00'
   source_available: true
 - id: 27416a0bfce43b62
   filename: IMG_6800.HEIC
@@ -148,9 +149,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-08-16T17:08:43.788981-05:00'
   sha256: a49823047d3f4612ea715fa1538ebf171e7275d99d37b9412978e7dff23ec995
-  description: null
-  description_model: null
-  extracted_at: null
+  description: MacBook Pro showing the Parti.com profile of @shakstzy with video tiles
+    and a live chat.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:35:58.068975+00:00'
   source_available: true
 - id: fca5162c9d53851b
   filename: 713c841d4c5e4a5ab85e528d9394e67f.MOV

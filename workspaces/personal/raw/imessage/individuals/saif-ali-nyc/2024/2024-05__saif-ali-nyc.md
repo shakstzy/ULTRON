@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-05-06T15:59:04.493000-05:00'
   sha256: c798e79a62801a325cc88b177d4aedbc16a2e14330e8f0d24730d62e0a524d5c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram screenshot of a character in a bull mask and ornate gold robe
+    pointing upward.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:57.560981+00:00'
   source_available: true
 - id: 27a52e753f232ba8
   filename: Audio Message.caf
@@ -88,9 +89,10 @@ attachments:
   sender: me
   sent_at: '2024-05-16T22:39:47.548000-05:00'
   sha256: e305aa326b1567f4ff4c331f60bd21a78e480cbbcb602041fadae7463d3ab663
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Saif Ali graduating with BAs in Computer Science and Economics, Class
+    of 2024.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:35.518460+00:00'
   source_available: true
 chat_message_guids_count: 152
 deleted_upstream: null

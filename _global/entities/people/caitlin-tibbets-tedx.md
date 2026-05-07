@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.877453+00:00
+ingested_at: 2026-05-06T22:18:21.555456+00:00
 ingest_version: 1
 content_hash: blake2b:4a02bcb56b61a40c0e9ac735335f1559
-provider_modified_at: 2026-05-06T22:17:40.877453+00:00
+provider_modified_at: 2026-05-06T22:18:21.555456+00:00
 
 title: Caitlin Tibbets Tedx
 slug: caitlin-tibbets-tedx
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-767-8749"]
   slack: []
-last_synced: 2026-05-06T22:17:40.877453+00:00
+last_synced: 2026-05-06T22:18:21.555456+00:00
 global: true
 ---
 

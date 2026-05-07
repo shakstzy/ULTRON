@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-10-24T11:59:11.129855-05:00'
   sha256: 5cbc635380a5f91200c24920dc31ad5d8be8ff7509db67a4b406d8ef7dbe9be0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screen showing a prompt to call +1 (701) 505-5050 and an active
+    0:58 call indicator.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:41.131186+00:00'
   source_available: true
 - id: 1f252c59f1e75e56
   filename: IMG_2698.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-10-24T11:59:11.129855-05:00'
   sha256: 79197f1c7aaf83abc363737335c5a60ceb3f84db5c7e6527185c734cd0880e3e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Allstate claim for a 2019 Toyota Camry showing a pending inspection
+    at XP Auto Center.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:39.957017+00:00'
   source_available: true
 chat_message_guids_count: 11
 deleted_upstream: null

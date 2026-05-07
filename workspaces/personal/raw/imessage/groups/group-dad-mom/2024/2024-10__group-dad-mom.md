@@ -22,9 +22,10 @@ attachments:
   sender: mom
   sent_at: '2024-10-20T19:52:05-05:00'
   sha256: 902568e77341a5e68a7aa24bff63ebb5c1b39b89fadc5a6180abfd0aa9008e7d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Zillow Rental Manager email confirming the live rental listing for
+    13245 Klein Ct.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:56:20.347333+00:00'
   source_available: true
 chat_message_guids_count: 9
 deleted_upstream: null

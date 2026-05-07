@@ -22,9 +22,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-07-10T17:49:44.005945-05:00'
   sha256: 328d49fa62103c3d2d746b724c4a690c51de3e27c4dd854f9c698fee8bd725fc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three males in orange sashes sit at a table with Bisleri water and
+    a Hindi event banner.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:35:45.458829+00:00'
   source_available: true
 - id: 30bb8bc180161d6f
   filename: IMG_4452.png

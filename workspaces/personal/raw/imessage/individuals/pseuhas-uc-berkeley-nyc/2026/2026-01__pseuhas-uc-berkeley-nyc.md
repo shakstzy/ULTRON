@@ -34,9 +34,9 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2026-01-22T16:58:52.777716-06:00'
   sha256: 68611d9ecc47b844a58d9be9fd8f45eaf688a1dd5353cd6e7291add612bc4d37
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Brown chickens in stacked metal transport cages.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:36:42.464169+00:00'
   source_available: true
 - id: 91bbb5ea3387c5ae
   filename: CF8B4853-AAED-4C9D-A796-CD183792E8E7.mov

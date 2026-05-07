@@ -6,8 +6,8 @@ Workspace schema. Defines entity types, page formats, and the vocabulary the wik
 
 | Type | Folder | Definition |
 |---|---|---|
-| person | `wiki/entities/people/` | A human in scope for this workspace. |
-<additional types from bootstrap Q3>
+| person | `wiki/entities/people/` | A human in scope for this workspace (team, partner, counterparty). |
+| company | `wiki/entities/companies/` | A company in scope (partner, vendor, customer, competitor). |
 
 ## Per-type page format
 
@@ -18,18 +18,34 @@ Workspace schema. Defines entity types, page formats, and the vocabulary the wik
 slug: <kebab>
 type: person
 canonical_name: <name>
-relationship: <enum>
+relationship: <team | partner | counterparty | advisor | other>
 last_touched: <YYYY-MM-DD>
 ---
 ```
 
 Body sections: `## Context`, `## Active threads`, `## Open questions`, `## Backlinks` (auto-built).
 
-<additional per-type formats from bootstrap>
+### company
+
+```yaml
+---
+slug: <kebab>
+type: company
+canonical_name: <name>
+relationship: <partner | vendor | customer | competitor | other>
+domain: <example.com>
+last_touched: <YYYY-MM-DD>
+---
+```
+
+Body sections: `## Context`, `## Active threads`, `## Backlinks`.
 
 ## Vocabulary
 
-<populated at bootstrap from Q3 + Q8>
+- "the project" — Mosaic itself
+- "the parent" — Outerscope
+- "sister project" — Synapse
+- "drive folder" — `MOSAIC` upstream under `adithya@outerscope.xyz`
 
 ## Schema change protocol
 

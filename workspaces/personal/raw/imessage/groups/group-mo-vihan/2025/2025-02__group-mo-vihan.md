@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-02-21T22:47:39.595000-06:00'
   sha256: 4df6e3d61a48fec829b2f65159b8c9c0b93f5537355e640b9bdeb8b6a6b2d4cc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Young man reclining in a dark setting with blue ambient lighting and
+    a hand reaching near him.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:10:10.562484+00:00'
   source_available: true
 - id: 763916261f007df1
   filename: 76189246979__0BC70F05-4DEC-45D5-9AC8-385125B9E248.HEIC

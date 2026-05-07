@@ -1,6 +1,6 @@
 ---
 name: cloud-llm
-description: Single dispatch point for cloud LLM calls — text or vision. Default engine is Gemini Pro via the gemini CLI, cycling Adithya's cached accounts on 429; falls through to `claude -p sonnet` when all gemini accounts are exhausted. Use this from any consumer skill (instagram-summary, etc.) instead of hitting gemini/claude CLIs directly.
+description: Single dispatch point for cloud LLM calls — text or vision. Gemini Pro/Flash via the gemini CLI, cycling Adithya's cached accounts on 429. Halts loud (CloudLLMUnreachable) when all accounts exhausted. Use this from any consumer skill (instagram-summary, etc.) instead of hitting gemini directly.
 allowed-tools: Bash
 ---
 

@@ -55,9 +55,10 @@ attachments:
   sender: me
   sent_at: '2026-04-12T22:05:34.786000-05:00'
   sha256: 96ded4261a46b17f3cf36dd9d287ee3a2abc5405fb53c719880b4bc80b356812
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Music player playing "Pattuma" from "Love Insurance Kompany" by Anirudh
+    Ravichander at 1:37.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:59:29.836872+00:00'
   source_available: true
 - id: aaaf711ec9057e6d
   filename: 1AA06F43-B7C7-400C-B8CC-13C52A27B6ED.pluginPayloadAttachment

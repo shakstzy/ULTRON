@@ -1,135 +1,208 @@
 #!/usr/bin/env python3
 """
-find-cross-workspace-slugs.py — deterministic detection of slugs that appear
-in 2+ workspaces (exact match) plus fuzzy matches above a similarity threshold.
+find-cross-workspace-slugs.py — aggregator over per-workspace Graphify
+output. Identifies entities appearing in 2+ workspaces and ranks them as
+promotion candidates.
 
-Output: `_shell/audit/promotion-candidates.md` with a markdown table listing
-every candidate, the workspaces it appears in, a confidence rating, and a
-recommended action (`/promote` for exact, `/alias --canonical <pick>` for
-fuzzy).
+Approach:
+  - Read every workspaces/<ws>/graphify-out/graph.json.
+  - For each node, derive a normalized matching key (lowercase, alphanum-only,
+    parenthetical disambiguators stripped).
+  - Aggregate by key. Filter to keys appearing in 2+ workspaces.
+  - Rank by total cross-workspace degree.
 
-Usage:
-    find-cross-workspace-slugs.py [--threshold 0.85] [--output <path>]
+Why no fuzzy match: ULTRON deliberately uses context-disambiguated slugs
+(e.g., `aaliyah-hinge-austin`, `abby-tinder-austin`). Fuzzy string matching
+on these is dangerous — `difflib` matches them at 0.85+ because of shared
+suffixes, producing false-positive alias suggestions for unrelated people.
+Exact normalized match on label is the only safe rule.
 
-Idempotent: re-running overwrites the candidates file.
+Output: `_shell/audit/promotion-candidates.md`. Idempotent — re-running
+overwrites this file.
+
+Usage: find-cross-workspace-slugs.py [--top N] [--min-degree D] [--stdout]
 """
 from __future__ import annotations
 
 import argparse
-import difflib
+import json
 import os
+import re
 import sys
 from collections import defaultdict
 from pathlib import Path
 
 ULTRON_ROOT = Path(os.environ.get("ULTRON_ROOT", str(Path.home() / "ULTRON")))
+WORKSPACES_DIR = ULTRON_ROOT / "workspaces"
+DEFAULT_OUTPUT = ULTRON_ROOT / "_shell" / "audit" / "promotion-candidates.md"
+
+# Skip community/cluster nodes — they aren't entities.
+EXCLUDE_PREFIXES = ("_community_", "community_", "_cluster_")
+
+# Skip generic terms that show up everywhere and aren't useful as
+# promotion candidates.
+GENERIC_LABELS = {
+    "user", "me", "i", "you", "they", "we",
+    "claude", "chatgpt", "gpt", "ai", "llm", "the user",
+}
 
 
-def collect_slugs() -> dict[str, dict[str, list[str]]]:
-    """Return {(type, slug): {ws: [page_paths]}} across all workspaces."""
-    out: dict[tuple[str, str], dict[str, list[str]]] = defaultdict(lambda: defaultdict(list))
-    workspaces_dir = ULTRON_ROOT / "workspaces"
-    if not workspaces_dir.exists():
-        return {}
-    for ws_dir in sorted(workspaces_dir.iterdir()):
+def norm_key(label: str | None, node_id: str | None) -> str:
+    """Normalize a label/id for cross-workspace matching.
+
+    - Lowercases, replaces non-alphanum with spaces, collapses whitespace.
+    - Strips parenthetical disambiguators ONLY if the remaining label has
+      2+ tokens. Single-token names with parens like `Alex (landlord)` and
+      `Alex (artist)` keep their parens so they don't collapse to the same
+      key (different people, common first name).
+    """
+    raw = (label or node_id or "").strip()
+    if not raw:
+        return ""
+    stripped = re.sub(r"\([^)]*\)", "", raw).strip()
+    if len(stripped.split()) >= 2:
+        raw = stripped
+    raw = re.sub(r"[^a-z0-9\s]+", " ", raw.lower())
+    return re.sub(r"\s+", " ", raw).strip()
+
+
+def load_workspace_graph(ws_dir: Path) -> tuple[list[dict], list[dict]] | None:
+    p = ws_dir / "graphify-out" / "graph.json"
+    if not p.exists():
+        return None
+    try:
+        g = json.loads(p.read_text())
+    except json.JSONDecodeError as e:
+        sys.stderr.write(f"warn: {ws_dir.name}: malformed graph.json ({e})\n")
+        return None
+    return g.get("nodes", []), g.get("links", [])
+
+
+def degree_index(links: list[dict]) -> dict[str, int]:
+    """Count edges per node id. Each link contributes one degree to the
+    source endpoint and one to the target endpoint. Graphify writes both
+    `source`/`target` (NetworkX) and `_src`/`_tgt` (legacy) on every edge —
+    use whichever pair is populated, never both, to avoid double-counting.
+    """
+    deg: dict[str, int] = defaultdict(int)
+    for l in links:
+        src = l.get("source") or l.get("_src")
+        tgt = l.get("target") or l.get("_tgt")
+        if isinstance(src, str):
+            deg[src] += 1
+        if isinstance(tgt, str):
+            deg[tgt] += 1
+    return deg
+
+
+def collect_candidates() -> dict[str, list[dict]]:
+    """Return {norm_key: [{ws, id, label, degree, community}]}."""
+    by_key: dict[str, list[dict]] = defaultdict(list)
+    if not WORKSPACES_DIR.exists():
+        return by_key
+
+    for ws_dir in sorted(WORKSPACES_DIR.iterdir()):
         if not ws_dir.is_dir() or ws_dir.name.startswith("_"):
             continue
-        entities_dir = ws_dir / "wiki" / "entities"
-        if not entities_dir.exists():
+        loaded = load_workspace_graph(ws_dir)
+        if loaded is None:
             continue
-        for type_dir in entities_dir.iterdir():
-            if not type_dir.is_dir():
+        nodes, links = loaded
+        deg = degree_index(links)
+
+        for n in nodes:
+            node_id = n.get("id") or ""
+            label = n.get("label") or n.get("norm_label") or node_id
+            if any(node_id.lower().startswith(p) for p in EXCLUDE_PREFIXES):
                 continue
-            for p in type_dir.glob("*.md"):
-                slug = p.stem
-                rel = str(p.relative_to(ULTRON_ROOT))
-                out[(type_dir.name, slug)][ws_dir.name].append(rel)
-    return {k: dict(v) for k, v in out.items()}
-
-
-def exact_matches(index: dict) -> list[dict]:
-    """Slugs of the same type appearing in 2+ workspaces."""
-    rows: list[dict] = []
-    for (type_, slug), wsmap in index.items():
-        if len(wsmap) >= 2:
-            rows.append({
-                "slug": slug,
-                "type": type_,
-                "workspaces": sorted(wsmap.keys()),
-                "confidence": "high (exact)",
-                "action": "/promote",
+            key = norm_key(label, node_id)
+            if not key or key in GENERIC_LABELS:
+                continue
+            by_key[key].append({
+                "workspace": ws_dir.name,
+                "id": node_id,
+                "label": label,
+                "degree": deg.get(node_id, 0),
+                "community": n.get("community"),
             })
-    return rows
+    return by_key
 
 
-def fuzzy_matches(index: dict, threshold: float, exact_keys: set[tuple[str, str]]) -> list[dict]:
-    """Slugs not in `exact_keys` that fuzzy-match an exact-key slug above threshold."""
-    rows: list[dict] = []
-    by_type_exact: dict[str, list[str]] = defaultdict(list)
-    for (type_, slug) in exact_keys:
-        by_type_exact[type_].append(slug)
-
-    for (type_, slug), wsmap in index.items():
-        if (type_, slug) in exact_keys:
-            continue
-        candidates = by_type_exact.get(type_, [])
-        # Also fuzzy-match against any slug present in another workspace under the same type.
-        same_type_singletons = [s for (t, s) in index if t == type_ and (t, s) not in exact_keys]
-        same_type_singletons.remove(slug)
-        candidate_pool = list(set(candidates) | set(same_type_singletons))
-        for cand in candidate_pool:
-            if cand == slug:
-                continue
-            ratio = difflib.SequenceMatcher(None, slug, cand).ratio()
-            if ratio >= threshold:
-                rows.append({
-                    "slug": slug,
-                    "type": type_,
-                    "workspaces": sorted(wsmap.keys()),
-                    "confidence": f"medium ({ratio:.2f} to {cand})",
-                    "action": f"/alias --canonical {cand}",
-                })
-                break   # one match is enough to flag
-    return rows
+def assess_confidence(entries: list[dict]) -> str:
+    """High if all workspaces use the same id; medium if the normalized
+    label matches but ids differ."""
+    ids = {e["id"] for e in entries if e.get("id")}
+    return "high" if len(ids) == 1 else "medium"
 
 
-def render(rows: list[dict]) -> str:
+def render(rows: list[dict], min_degree: int) -> str:
     lines = [
         "# Cross-Workspace Slug Candidates",
         "",
         "Generated by `_shell/bin/find-cross-workspace-slugs.py`. Idempotent — re-running overwrites this file.",
         "",
-        "| slug | type | workspaces | confidence | recommended action |",
-        "|---|---|---|---|---|",
+        "Source: per-workspace Graphify outputs (`graphify-out/graph.json`).",
+        "Match rule: exact normalized label across 2+ workspaces. No fuzzy matching (intentional — see script docstring).",
+        "",
+        f"_{len(rows)} candidates. Min summed degree: {min_degree}._",
+        "",
+        "| label | primary id | workspaces | total degree | confidence | recommended action |",
+        "|---|---|---|---|---|---|",
     ]
     if not rows:
-        lines.append("| (none) | | | | |")
+        lines.append("| (none) | | | | | |")
     else:
-        for r in sorted(rows, key=lambda r: (r["confidence"].startswith("medium"), r["type"], r["slug"])):
+        for r in rows:
+            ws_str = ", ".join(r["workspaces"])
+            action = "/promote" if r["confidence"] == "high" and r["total_degree"] >= 5 else "review"
             lines.append(
-                f"| {r['slug']} | {r['type']} | {', '.join(r['workspaces'])} | "
-                f"{r['confidence']} | {r['action']} |"
+                f"| {r['primary_label']} | `{r['primary_id']}` | {ws_str} "
+                f"| {r['total_degree']} | {r['confidence']} | {action} |"
             )
-    lines.append("")
-    return "\n".join(lines)
+    return "\n".join(lines) + "\n"
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--threshold", type=float, default=0.85)
-    ap.add_argument("--output")
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--top", type=int, default=200,
+                    help="Cap rows in output (default: 200).")
+    ap.add_argument("--min-degree", type=int, default=2,
+                    help="Skip candidates with summed degree below this (default: 2).")
+    ap.add_argument("--stdout", action="store_true",
+                    help="Print to stdout instead of writing the file.")
     args = ap.parse_args()
 
-    index = collect_slugs()
-    exact = exact_matches(index)
-    exact_keys = {(r["type"], r["slug"]) for r in exact}
-    fuzzy = fuzzy_matches(index, args.threshold, exact_keys)
+    by_key = collect_candidates()
 
-    out_path = Path(args.output) if args.output else (ULTRON_ROOT / "_shell" / "audit" / "promotion-candidates.md")
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(render(exact + fuzzy))
+    rows: list[dict] = []
+    for key, entries in by_key.items():
+        ws_set = {e["workspace"] for e in entries}
+        if len(ws_set) < 2:
+            continue
+        total_degree = sum(e["degree"] for e in entries)
+        if total_degree < args.min_degree:
+            continue
+        primary = max(entries, key=lambda e: e["degree"])
+        rows.append({
+            "key": key,
+            "primary_label": primary["label"],
+            "primary_id": primary["id"],
+            "workspaces": sorted(ws_set),
+            "total_degree": total_degree,
+            "confidence": assess_confidence(entries),
+        })
 
-    print(f"wrote {out_path}: {len(exact)} exact + {len(fuzzy)} fuzzy candidates")
+    rows.sort(key=lambda r: (-r["total_degree"], r["key"]))
+    rows = rows[: args.top]
+
+    out = render(rows, args.min_degree)
+    if args.stdout:
+        sys.stdout.write(out)
+        return 0
+
+    DEFAULT_OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    DEFAULT_OUTPUT.write_text(out)
+    print(f"wrote {DEFAULT_OUTPUT.relative_to(ULTRON_ROOT)} ({len(rows)} candidates)")
     return 0
 
 

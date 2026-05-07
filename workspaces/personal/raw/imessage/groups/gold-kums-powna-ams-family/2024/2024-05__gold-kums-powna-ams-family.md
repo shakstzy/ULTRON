@@ -34,9 +34,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-01T13:03:15-05:00'
   sha256: 3f726736e63cf0e914076f14e010ee2eae8f338f23a179b3d847bcebb71bc8b4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'WhatsApp message from Mliier: Federal Reserve kept interest rates
+    at 5.25%-5.50%.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:43.936715+00:00'
   source_available: true
 - id: 71753273c7ef8c05
   filename: image000000.jpg
@@ -45,9 +46,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-01T13:28:16-05:00'
   sha256: 4ec74af86bd9961cbe2cbe31801432b98c461146845c45a8f6f7f5d3a2ea9784
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "Saut\xE9ed peanuts, tomatoes, red onions, and garlic with whole coriander\
+    \ seeds in a black pan."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:45.945945+00:00'
   source_available: true
 - id: 8d39421de0d71d17
   filename: IMG_2787.png
@@ -56,9 +58,10 @@ attachments:
   sender: me
   sent_at: '2024-05-01T13:33:18.366782-05:00'
   sha256: eb94d958900b1b2967060a9f86986f843a0301537026057994343d293910d811
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Job posting for a Growth/Research Intern at Layer N in SF, NYC, or
+    remote.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:47.242952+00:00'
   source_available: true
 - id: 41b846bd31c75bdf
   filename: image.png
@@ -67,9 +70,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-01T15:54:52-05:00'
   sha256: 12ce3397f052126e5adbc3e470e96998351685567d27f1bf9a7ddf9db7e4c314
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage from sudi offering help with a home that will be on the market
+    soon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:45.565877+00:00'
   source_available: true
 - id: d04adb93d8489a65
   filename: image000000.jpg
@@ -78,9 +82,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-05-01T17:51:29-05:00'
   sha256: e6023bb10686ad85fcbf1e6ac99b237a1c84a1efb99dbc388667a7c2056dcd85
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Ash and used incense sticks on a wooden holder inside a silver oval
+    tray.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:51.142747+00:00'
   source_available: true
 - id: 3411e596c3d14940
   filename: image000000.jpg
@@ -89,9 +94,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-05-01T17:52:47-05:00'
   sha256: c88406cf2996c176c8193ba754cf2abfb32c45ef0ad60ecc7e3514664bff39a4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Discord screenshot showing a study conclusion linking incense use to
+    respiratory cancer risk.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:49.253786+00:00'
   source_available: true
 - id: 83865ee63c0f6e0c
   filename: image000001.jpg
@@ -100,9 +106,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-05-01T17:52:47-05:00'
   sha256: 61633b715f8177df913c555eea1be8d7a2e9a7de9b41a4f2204d815449512850
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Slack chat discussing incense carcinogens with PubMed citations and
+    photos of burners.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:56.329486+00:00'
   source_available: true
 - id: 8c82e14c8018c4a7
   filename: image000000.jpg
@@ -111,9 +118,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-01T19:35:51-05:00'
   sha256: e76435d8b40b0e8a3e4b5fb644392d45ded7016604785f5ac42aec169d2f8381
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in sunglasses and a palm leaf shirt stands in a room with orange
+    patterned curtains.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:50.375917+00:00'
   source_available: true
 - id: 2e751b411d84626e
   filename: image000001.jpg
@@ -122,9 +130,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-01T19:35:51-05:00'
   sha256: b641643022e2e023ecab62398470cf698cf19de2c98013fa8c1ca5eb72abd901
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a black cardigan and white shirt stands before a fiddle-leaf
+    fig and a painting.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:54.677150+00:00'
   source_available: true
 - id: b779937172ff29ee
   filename: image000000.jpg
@@ -133,9 +142,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-01T19:41:38-05:00'
   sha256: 308e7a07c31102b78f35984a5af6c2fadded9815de74db8914cb46c66e929a87
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man and woman in sun hats take a selfie at a park picnic with a red
+    canopy tent behind them.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:08.553884+00:00'
   source_available: true
 - id: d16284bb13ee9c5d
   filename: image000001.jpg
@@ -144,9 +154,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-02T12:26:08-05:00'
   sha256: ab89337707b2b11cfd634e62d980f39918da5c2ab20f2001c118e579e39d49c0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A woman in a pink shirt taking a selfie while a shirtless man flexes
+    at a kitchen table.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:03.934231+00:00'
   source_available: true
 - id: b7665674a7c4f153
   filename: image000000.jpg
@@ -155,9 +166,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-02T12:26:08-05:00'
   sha256: 6f7a607992efc96d408ff2c1cc71777df0a75c6dad978c04c4b72e3cca0450b6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A blue-rimmed bowl contains a creamy salad with shredded cabbage, carrots,
+    and black beans.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:56.790150+00:00'
   source_available: true
 - id: 3500f627b3a0c7a5
   filename: image.png
@@ -166,9 +178,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-02T19:13:58-05:00'
   sha256: 55fce09889a6cfae45e2b7a046d99d7c5c2d2fc2895079df658d2594c6225c78
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Intent to Enroll Confirmation for LASA Liberal Arts and Science Academy
+    (2024-2025).
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:51.498662+00:00'
   source_available: true
 - id: a0939b81d7a19446
   filename: image.png
@@ -177,9 +190,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-03T13:50:58-05:00'
   sha256: c09ff87a3889c168ef7deb2bdb0853e4ad170dc470d8c53f7b502ccf6b5373a1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Image search results for "MICROLIGHT" showing various ultralight
+    aircraft.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:54.243842+00:00'
   source_available: true
 - id: 709f31fa7ab38038
   filename: image.png
@@ -188,9 +202,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-03T13:51:13-05:00'
   sha256: 8f447b57820c4c1bcc137e4aa34762400bca350e3074f7fed443866b643039c3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A Google image search for "victoria falls microlight" showing people
+    flying over the falls.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:53.555846+00:00'
   source_available: true
 - id: 9483426ff034cf8d
   filename: image.png
@@ -199,9 +214,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-03T13:51:30-05:00'
   sha256: c49f1190f6d01dd1c71f25de66477777d0e7d0f7f45fb2a8f863bd942d452fbf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google image search results for "victoria falls helicopter tour" featuring
+    aerial flight photos.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:02.871503+00:00'
   source_available: true
 - id: ad14cdb72717427c
   filename: image.png
@@ -210,9 +226,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-03T13:54:39-05:00'
   sha256: 1cfcb2d8452248a7402e3ad6c3445fe772841aeab5422957786e47daa5b9fa42
-  description: null
-  description_model: null
-  extracted_at: null
+  description: ChatGPT screenshot describing Winelands, Cape Point, and Robben Island
+    in Cape Town.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:11.981865+00:00'
   source_available: true
 - id: a624f10f188bf617
   filename: image.png
@@ -221,9 +238,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-03T13:54:50-05:00'
   sha256: aabb13727ccdd4c6aa1ac7058c572271e96c739f003bf0481fb86ca927bd9e5f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'ChatGPT response recommending Cape Town travel options: Cape Point,
+    Boulders, and Winelands.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:54.458534+00:00'
   source_available: true
 - id: 540197db754ec3c7
   filename: Brian_Regan_Derp.gif
@@ -232,9 +250,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-03T13:58:39-05:00'
   sha256: 450b3dae30ebb66ca5d0aff657d85ff4ce41c5f220fa6f5d1bf28a016cd41a5f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Comedian Brian Regan making a cross-eyed mocking face with the text
+    "DUH" overlaid in a GIF.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:57.566289+00:00'
   source_available: true
 - id: 79761319dd4463e2
   filename: Waste_Of_Time_This_Is_Stupid.gif
@@ -243,9 +262,9 @@ attachments:
   sender: mom
   sent_at: '2024-05-03T14:00:25-05:00'
   sha256: 6788c6f56901e78a5da78467aa5410c93b0a27b18c6a07cbbd2c0485ad7235bf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hillary Clinton brushes her shoulder while testifying at a hearing.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:04.783169+00:00'
   source_available: true
 - id: d47b160378627d67
   filename: image.png
@@ -254,9 +273,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-03T15:16:27-05:00'
   sha256: 18c41a0f4f3d42346141dfece4f7ad26d9e5cac95f19160c2a1686ae617ee81f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Email for Arya Kumar's City of Austin internship at African American
+    Youth Harvest Foundation.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:27.477131+00:00'
   source_available: true
 - id: 68a7c19899fa3173
   filename: image.png
@@ -265,9 +285,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-04T13:24:21-05:00'
   sha256: 9594781d44fcd90a1a8d3c45135b695cf526d46d2c1abf44808bb37eccc92d47
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A schedule of Vedic astrological transits and planetary conjunctions
+    for May 2024.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:00.545848+00:00'
   source_available: true
 - id: 6a266464c085fcc1
   filename: image000000.jpg
@@ -276,9 +297,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-05T17:36:53-05:00'
   sha256: 3cdf96a200bdc85765ae0eb9144046b9ec714d8364c574ec04a30ab37ef1f17f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a black tracksuit jumps excitedly in a hilly field near a
+    river.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:03.892774+00:00'
   source_available: true
 - id: c93393369bb68ff9
   filename: image000000.gif
@@ -310,9 +332,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-06T13:42:14-05:00'
   sha256: 216f30c37633c3c0a3baf5aa688bcefce901025c53f66f366e2bfcd737e9fbe7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Chunks of avocado seasoned with salt and pepper in a blue and white
+    striped bowl.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:01.276000+00:00'
   source_available: true
 - id: 03bc6cbd193ff863
   filename: IMG_7907.HEIC
@@ -321,9 +344,10 @@ attachments:
   sender: dad
   sent_at: '2024-05-15T18:42:17.477227-05:00'
   sha256: e99689a8d734f8f80a74549f2ff935866e5a4684df71ebea2dca98cda20ed313
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two people shake hands on a stage before an audience and a seated panel
+    at a ceremony.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:08.676671+00:00'
   source_available: true
 - id: 0ddb37a986a2df87
   filename: IMG_7905.HEIC
@@ -332,9 +356,10 @@ attachments:
   sender: dad
   sent_at: '2024-05-15T18:42:17.477227-05:00'
   sha256: 239799f775b80617ac3b8e348a2066727587df7b76cab33f10d24a2e92c01a17
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Speakers sit at a blue table on a stage with a woman at a podium and
+    a seated audience.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:04.739548+00:00'
   source_available: true
 - id: f3c74825451aea16
   filename: IMG_8985.jpeg
@@ -343,9 +368,10 @@ attachments:
   sender: me
   sent_at: '2024-05-21T16:55:14.591474-05:00'
   sha256: 5e63ff00c35213345b7ec7f65ab8722683180d0739a9fdedb9daa79732a6bf4b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Maps screenshot showing 13245 Klein Ct, Sylmar, CA saved as
+    "Home."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:03.599392+00:00'
   source_available: true
 - id: 2bf5483762a7b735
   filename: IMG_8981.heic
@@ -354,9 +380,10 @@ attachments:
   sender: me
   sent_at: '2024-05-21T16:55:29.865660-05:00'
   sha256: 1ff9495eceb78fa4437fadea4ea42aa2221d459a3e9b305185dc59cad2393449
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man and woman pose with blue suitcases in an airport terminal near
+    a security checkpoint sign.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:18.596599+00:00'
   source_available: true
 - id: 0c8c0401d6e5cfe3
   filename: IMG_8982.heic
@@ -365,9 +392,10 @@ attachments:
   sender: me
   sent_at: '2024-05-21T16:55:29.865660-05:00'
   sha256: 086ec3ef751005746ef07ebb96e2b387cb6af5e5571835ab21bc1812ed5d90ed
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man and woman smile while posing with blue suitcases in an airport
+    terminal.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:23.763779+00:00'
   source_available: true
 - id: 8200449ad16c56e5
   filename: IMG_8983.heic
@@ -376,9 +404,10 @@ attachments:
   sender: me
   sent_at: '2024-05-21T16:55:29.865660-05:00'
   sha256: 4c0e7c8eb737c6250b663bc25f27e83cb0112a5eace2e9fd338e419c1d015f22
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man with long hair smiling for a selfie at a Southwest Airlines airport
+    bag drop.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:13.275200+00:00'
   source_available: true
 - id: f274ca3e4df459c2
   filename: image000000.jpg
@@ -387,9 +416,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-21T18:47:12-05:00'
   sha256: 94f7105c784b88e2c654a05127646f5cc36870a75f2f5038dc8e74e2bb5fa96a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Selfie of a woman in a black Adidas hat and purple shirt sitting in
+    a blue airplane seat.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:08.050726+00:00'
   source_available: true
 - id: 7236d3c182207052
   filename: image000000.png
@@ -398,9 +428,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-21T21:42:33-05:00'
   sha256: ced9c63dad3c356aa179f34768901adb3403e31dd5610ea5a3c26982e3ddcd4a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Southwest flight WN 858 status from LAX to AUS on May 21 showing it
+    landed at 9:39 PM.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:20.701054+00:00'
   source_available: true
 - id: 699d239ed31d4d2e
   filename: image000000.jpg
@@ -409,9 +440,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-21T22:26:20-05:00'
   sha256: 625b359bd00333c675224e1048d6e1ce3e984defe765ba0cada7cf6f0361189a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Forearm tattoo of Lord Shiva's face merged with a Trishula trident
+    in black ink.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:16.266353+00:00'
   source_available: true
 - id: a4694f07909cbd64
   filename: IMG_9003.heic
@@ -420,9 +452,9 @@ attachments:
   sender: me
   sent_at: '2024-05-22T00:06:38.687736-05:00'
   sha256: c4399070dadb94c392287526ac33317181e3cd5e1cbef67f2bc0e54241f8c307
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Master Lock wall-mounted key safe with a four-digit combination dial.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:47.358665+00:00'
   source_available: true
 chat_message_guids_count: 273
 deleted_upstream: null

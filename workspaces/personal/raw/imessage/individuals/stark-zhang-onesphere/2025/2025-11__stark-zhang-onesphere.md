@@ -22,9 +22,11 @@ attachments:
   sender: me
   sent_at: '2025-11-11T20:09:43.902132-06:00'
   sha256: 2767dd64678985080c76f1ea8c69b069d79707ac2eced21094b7b692008ebe84
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a pitch deck for Synapse, a platform for autonomous AI intent
+    execution in Web3. It outlines a modular agent system designed to simplify decentralized
+    commerce and automation.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:55:16.708199+00:00'
   source_available: true
 - id: c227e8a989804a5a
   filename: 78546355464__D2D054AE-35A7-4278-BA51-FE97E1C2E3AC.HEIC
@@ -33,9 +35,10 @@ attachments:
   sender: me
   sent_at: '2025-11-21T18:20:51.990566-06:00'
   sha256: f2d37981bb74e59f1c493a16e30f59fe2e4940a12fb18466bd892cccf0e95010
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Phone screen showing the Aster DEX partner dashboard on DexPal with
+    various trading metrics.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:54:52.092381+00:00'
   source_available: true
 chat_message_guids_count: 26
 deleted_upstream: null

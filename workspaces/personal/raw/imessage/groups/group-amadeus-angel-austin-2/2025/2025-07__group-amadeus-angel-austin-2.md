@@ -22,9 +22,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-07-05T16:44:32.975523-05:00'
   sha256: 6e54d9f6ce1731a64e728ddbf01fab9fdcc473dc44ce7c8cbff77194b3b04085
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A clogged kitchen garbage disposal fails to run when the wall switch
+    is toggled.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:36:59.405281+00:00'
   source_available: true
 - id: 2bff762b581c78af
   filename: 77355604952__738F4262-A2CA-48B6-9A48-D57024343398.mov
@@ -33,9 +34,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-07-06T23:41:16.236505-05:00'
   sha256: 574f4d60ccc94934b040e7de659d427e0a01be44e4b09bc3114c855ee4dfc7ca
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A Moen GXP33C 1/3 HP garbage disposal unit installed under a kitchen
+    sink.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:36:57.334628+00:00'
   source_available: true
 chat_message_guids_count: 7
 deleted_upstream: null

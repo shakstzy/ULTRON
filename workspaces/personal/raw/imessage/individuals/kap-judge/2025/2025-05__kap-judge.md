@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-05-16T00:42:02.400074-05:00'
   sha256: 8dc3a1a2c3e2c1844fc8359ce861b7b37e9a13d5e01c6bfd67cc88fe077ac1a8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three men taking a nighttime selfie in front of a white Ford GT with
+    blue racing stripes.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:40.603483+00:00'
   source_available: true
 chat_message_guids_count: 1
 deleted_upstream: null

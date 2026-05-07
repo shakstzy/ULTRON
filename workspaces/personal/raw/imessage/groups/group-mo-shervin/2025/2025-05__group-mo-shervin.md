@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-05-07T00:37:45.784970-05:00'
   sha256: 5d000e020a0d806800f79d906c186e23fd967aa52298b56c202b193a4c77dce4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Group selfie of young South Asian men in a crowded, dimly lit restaurant
+    or bar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:01.275349+00:00'
   source_available: true
 chat_message_guids_count: 2
 deleted_upstream: null

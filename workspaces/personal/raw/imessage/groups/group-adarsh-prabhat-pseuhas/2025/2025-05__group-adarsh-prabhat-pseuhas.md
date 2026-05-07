@@ -22,9 +22,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-05-17T21:57:02.959321-05:00'
   sha256: 108545612025a1876ab689e5d34628eb3e704fea11a2421d2cc7df5e293abf9b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Portrait of a person with wavy dark hair wearing black sunglasses and
+    smiling.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:17.206212+00:00'
   source_available: true
 - id: 0fa6c9dc68f3062f
   filename: IMG_6349.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-05-30T14:50:14.612216-05:00'
   sha256: 7c351d3fcf90a48d446288c36b09829be978c00260e36c73be5e294fd93490c3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two green "Baking Bad" branded 5.5L nitrous oxide tanks on a wooden
+    table.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:55:41.809747+00:00'
   source_available: true
 chat_message_guids_count: 10
 deleted_upstream: null

@@ -8,7 +8,7 @@
     "global_min_gap_ms": 950
   },
   "messages": {
-    "per_hour": 20,
+    "per_hour": 40,
     "between_messages_ms": [30000, 300000],
     "typing_ms_per_char": [60, 130]
   },
@@ -19,7 +19,7 @@
   },
   "global": {
     "skip_day_probability": 0.18,
-    "halt_state_path": "~/.quantum/tinder/.halt",
-    "rate_state_path": "~/.quantum/tinder/.rate-state.json"
+    "halt_state_path": "~/.ultron/dating/.halt",
+    "rate_state_path": "~/.ultron/dating/.rate-state.json"
   }
 }

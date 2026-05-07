@@ -112,9 +112,9 @@ attachments:
   sender: noah-bailie
   sent_at: '2026-03-25T00:44:12.952397-05:00'
   sha256: a5e32f17c66f62878f9629518964759badb6b11518ef8c4561b0507095ced5c7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Close-up selfie of a smiling woman with blonde hair and green eyes.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:35:32.020927+00:00'
   source_available: true
 - id: c4e76afa425aa134
   filename: IMG_3995.png

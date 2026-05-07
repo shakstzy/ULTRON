@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-05-02T18:07:13.127010-05:00'
   sha256: de2d10aa17722ab5f370a4cfc09951d932ac4de4c5a6092a64e0db4d0dea5659
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Saudia electronic ticket for Adithya Kumar from Dubai to San Francisco
+    on May 3, 2025.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:09.026169+00:00'
   source_available: true
 chat_message_guids_count: 21
 deleted_upstream: null

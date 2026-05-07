@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-06-01T01:07:45.666000-05:00'
   sha256: b6df2595c7ed0ab447c5a2ac1f9ddacaf547fa6221d1d3f4079500b36142939e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: YouTube screenshot of Akaash Singh's stand-up with "AEROSPACE ENGINEER"
+    text over the audience.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:32.741837+00:00'
   source_available: true
 chat_message_guids_count: 7
 deleted_upstream: null

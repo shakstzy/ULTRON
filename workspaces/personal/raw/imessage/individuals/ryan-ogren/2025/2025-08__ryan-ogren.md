@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-08-06T21:09:53.980000-05:00'
   sha256: 7f8f8de943ee61f9831c00ef871c2397295a34233cbd06d65ec0d0a4c6ba13f3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat coordinating an August meeting with Luke, mentioning
+    Ryan and Rhea.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:46:24.594998+00:00'
   source_available: true
 - id: 0e8071767db7466c
   filename: IT AIN'T LOVE DL 1.1.m4a

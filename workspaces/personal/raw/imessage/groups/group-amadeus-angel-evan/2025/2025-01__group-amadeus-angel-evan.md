@@ -33,9 +33,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2025-01-08T23:00:34.581159-06:00'
   sha256: 05acc8ac960eaab242b7414f4e6ef2d9bdfa49a069e6d48d79a21924f8b0d424
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Watch Duty app map showing Hurst and Divide wildfires and evacuation
+    zones near Burbank.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:32.719552+00:00'
   source_available: true
 chat_message_guids_count: 55
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-05T01:47:50.153620-06:00'
   sha256: 4eadc0df6e6f606b1cbf89e0470108ce1fc3a906ffa8036385c7852404372301
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of dark mode text bubbles discussing GPT's helpfulness and
+    mentioning "saif Ali".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:28.710279+00:00'
   source_available: true
 chat_message_guids_count: 26
 deleted_upstream: null

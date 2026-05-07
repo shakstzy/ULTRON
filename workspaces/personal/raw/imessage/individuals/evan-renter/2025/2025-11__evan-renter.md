@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-11-06T11:07:45.089626-06:00'
   sha256: b8a5dfd396c0be3c5f5f7002eb859d804e0995cfd7d68f7a387506c5bbf81137
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'DICE event page for LYNY: Noise to Dance to at The Catwalk, LA on
+    Nov 8, costing $27.81.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:41:46.726943+00:00'
   source_available: true
 - id: 2d9737c005e068a5
   filename: IMG_4387.png

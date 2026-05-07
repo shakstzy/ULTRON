@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.858551+00:00
+ingested_at: 2026-05-06T22:18:21.531107+00:00
 ingest_version: 1
 content_hash: blake2b:590b24b8f8c762d342b75efb717aa4a2
-provider_modified_at: 2026-05-06T22:17:40.858551+00:00
+provider_modified_at: 2026-05-06T22:18:21.531107+00:00
 
 title: Aiden Persia Cruise
 slug: aiden-persia-cruise
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 (818) 577-9866"]
   slack: []
-last_synced: 2026-05-06T22:17:40.858551+00:00
+last_synced: 2026-05-06T22:18:21.531107+00:00
 global: true
 ---
 

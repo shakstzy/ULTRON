@@ -22,9 +22,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2025-09-13T20:42:56.771387-05:00'
   sha256: 3aa408adb5c2583a9c8bb7d0f3b7f7d41ec7b67769743999392a3dbb1d5c0199
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Over-the-sink dish drying rack with bowls and mugs above a stainless
+    steel kitchen sink.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:09.414232+00:00'
   source_available: true
 - id: c87898095e335b79
   filename: IMG_1650.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-09-17T19:01:30.014543-05:00'
   sha256: 51261b3303ee58e13f6ecb13c312599cf78da08474a12bc097e80632b80a5a35
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of a calendar event titled WORK ORDER 11AM - 3PM
+    for Sep 25.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:01.677447+00:00'
   source_available: true
 - id: 9822f6293ac96916
   filename: IMG_2801.jpeg
@@ -44,9 +46,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2025-09-19T15:10:16.154879-05:00'
   sha256: 8cf95fd2d94bf9a4eceb540efdaefabc7f0e531752c364199b0fc1935759b16b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Startled lion close-up with a screaming monkey blurred in the dark
+    background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:01.330656+00:00'
   source_available: true
 - id: 2ef101d07c062a35
   filename: IMG_6265.MOV
@@ -55,9 +58,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-09-21T22:41:02.275222-05:00'
   sha256: dc2cdff7d58f8674b87a66e2d72fd91ed52dda3ce97c23185da3aed843d6fbaf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a suit dancing with a multi-colored LED glow stick in a purple-lit
+    venue.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:07.776674+00:00'
   source_available: true
 - id: 1cd889476aa20f08
   filename: IMG_1795.PNG
@@ -66,9 +70,10 @@ attachments:
   sender: me
   sent_at: '2025-09-24T12:31:22.100199-05:00'
   sha256: 0a7e6fe8c9f514b20459403a7c04d4ac517d160d1b80397dcc20a44d5b0f43d4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram post about a busted underground rave tunnel at a beach on
+    Coronado Island, San Diego.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:16.045461+00:00'
   source_available: true
 - id: 2ecbe77bffdcb29e
   filename: IMG_3548.png
@@ -77,9 +82,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2025-09-27T20:51:50.596375-05:00'
   sha256: be07a9bc314d7aecc2e2b27f1978926c414a17ab225c7b8b6efbfe2e75f940fd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of Topgolf Montebello mobile site with a time selection
+    dropdown menu open.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:10.575026+00:00'
   source_available: true
 chat_message_guids_count: 98
 deleted_upstream: null

@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2024-08-29T17:27:55.891000-05:00'
   sha256: b13753cb6647eda84b084be6a97d47e4c56becef19a79985f8c598217a43c34a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Ryan Ogren's message listing song titles including cecilia, falcone,
+    and uptopicelandic.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:47:04.614017+00:00'
   source_available: true
 - id: 2934eaaf0b958ab0
   filename: pocketrocket.m4a

@@ -58,9 +58,10 @@ attachments:
   sender: me
   sent_at: '2024-04-09T14:34:43.591000-05:00'
   sha256: 1ed2e024060b5343683af7ad52b080bef8e7ac77b29cb792abc573d831305990
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling man in a BAPE shirt and sunglasses leans against a tree next
+    to a barbed wire fence.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:47:19.032174+00:00'
   source_available: true
 - id: 32dac034ebe4ec89
   filename: IMG_8208.JPG
@@ -141,9 +142,10 @@ attachments:
   sender: me
   sent_at: '2024-04-09T14:34:43.591000-05:00'
   sha256: 21cd9953d7c17fdac096c0a3120c1fe48b261aba8b6b0a5f5f5967abbaf4b096
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in Nike Dunks and Champion sweats leans on a white pillar next
+    to a hedge at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:47:12.196403+00:00'
   source_available: true
 - id: 889466a1a6f85081
   filename: IMG_8204.JPG
@@ -200,9 +202,10 @@ attachments:
   sender: me
   sent_at: '2024-04-09T14:34:43.591000-05:00'
   sha256: 4721407fdf388e79c7a44376c41a23d630e2fd433a7e4f84066ec74f3fda8e22
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a cap and Nike Dunks sits on a parking curb next to a reserved
+    parking sign at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:47:14.009863+00:00'
   source_available: true
 - id: 25f6037f039be2d4
   filename: IMG_8203.JPG
@@ -247,9 +250,10 @@ attachments:
   sender: me
   sent_at: '2024-04-09T14:34:43.591000-05:00'
   sha256: 011f104ca28c3ea1863b7dda68850bd9f654ff0f34e0780671c0aba05c6d7aea
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person in a striped sweater records in a dimly lit music studio with
+    a DAW on screen.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:47:38.479244+00:00'
   source_available: true
 - id: ae591b3d90390303
   filename: IMG_8216.JPG

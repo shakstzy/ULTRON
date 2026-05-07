@@ -1,7 +1,7 @@
 """Cloud LLM dispatcher.
 
 Gemini Pro/Flash via the `gemini` CLI, cycling cached accounts on 429.
-Falls through to `claude -p sonnet` when all Gemini accounts are exhausted.
+Halts loud (CloudLLMUnreachable) when all Gemini accounts are exhausted.
 """
 from __future__ import annotations
 
@@ -108,21 +108,6 @@ def _run_gemini(prompt: str, image_refs: list[str], use_flash: bool = False) -> 
     return trimmed
 
 
-def _run_claude(prompt: str, abs_paths: list[Path]) -> str:
-    full_prompt = prompt
-    if abs_paths:
-        full_prompt = prompt + "\n\n" + "\n".join(str(p) for p in abs_paths)
-    proc = subprocess.run(
-        ["claude", "-p", full_prompt, "--model", "sonnet"],
-        capture_output=True,
-        text=True,
-        timeout=180,
-    )
-    if proc.returncode != 0:
-        raise RuntimeError(f"claude exit={proc.returncode}: {proc.stderr[:400]}")
-    return proc.stdout.strip()
-
-
 def _try_gemini_cycle(prompt: str, image_refs: list[str]) -> dict:
     accounts = _list_gemini_accounts()
     if not accounts:
@@ -145,37 +130,19 @@ def _try_gemini_cycle(prompt: str, image_refs: list[str]) -> dict:
 def describe_images(abs_paths: list[str | Path], prompt: str) -> dict:
     """Cloud vision call. Returns dict {engine, account, output}.
 
-    Default engine cycle: gemini Pro across all accounts → gemini Flash → claude sonnet.
-    Raises CloudLLMUnreachable if everything fails.
+    Cycles gemini Pro/Flash across all cached accounts. Raises
+    CloudLLMUnreachable when every account is exhausted — no fallback engine.
     """
     if not abs_paths:
         raise ValueError("describe_images: abs_paths must be non-empty")
     paths = [Path(p) for p in abs_paths]
     stage, image_refs = _stage_images(paths)
     try:
-        try:
-            return _try_gemini_cycle(prompt, image_refs)
-        except CloudLLMUnreachable as gemini_err:
-            try:
-                output = _run_claude(prompt, paths)
-                return {"engine": "claude-sonnet", "account": None, "output": output}
-            except Exception as claude_err:
-                raise CloudLLMUnreachable(
-                    f"both engines failed.\nGemini: {gemini_err}\nClaude: {claude_err}"
-                ) from claude_err
+        return _try_gemini_cycle(prompt, image_refs)
     finally:
         _cleanup_stage(stage)
 
 
 def ask_text(prompt: str) -> dict:
-    """Text-only cloud call. Same fallback chain, no image staging."""
-    try:
-        return _try_gemini_cycle(prompt, [])
-    except CloudLLMUnreachable as gemini_err:
-        try:
-            output = _run_claude(prompt, [])
-            return {"engine": "claude-sonnet", "account": None, "output": output}
-        except Exception as claude_err:
-            raise CloudLLMUnreachable(
-                f"both engines failed.\nGemini: {gemini_err}\nClaude: {claude_err}"
-            ) from claude_err
+    """Text-only cloud call. Same gemini-only cycle, no image staging."""
+    return _try_gemini_cycle(prompt, [])

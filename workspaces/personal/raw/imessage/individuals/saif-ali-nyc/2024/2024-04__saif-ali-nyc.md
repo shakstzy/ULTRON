@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-04-11T18:38:43.784892-05:00'
   sha256: 429740ce6a9c5dafaa45bdc666c4c092fc2ebbbe94eeb736fc474770c1e32245
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram Reel of a man showing a crypto portfolio of offensive Solana-based
+    meme coins.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:38.893623+00:00'
   source_available: true
 - id: 075d20440f2179b6
   filename: CS161_Project_3_Writeup.pdf
@@ -33,9 +34,11 @@ attachments:
   sender: me
   sent_at: '2024-04-25T04:02:44.565069-05:00'
   sha256: 6ae7a24e3f2875caea31125fabf9560eaedd2f8f80003a2c92607cb96302c08e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This UCB security project writeup details web exploits used to acquire
+    various task flags. It documents methods like SQL injection and XSS while recommending
+    specific defense strategies.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:29.642528+00:00'
   source_available: true
 - id: 256247a989132ffd
   filename: Audio Message.caf

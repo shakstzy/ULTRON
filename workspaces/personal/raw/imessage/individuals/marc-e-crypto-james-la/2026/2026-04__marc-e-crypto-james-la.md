@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-04-27T21:05:16.136446-05:00'
   sha256: 3c152d860467017fd06243e472f5b75e7b535b08404e50a09c63bf6ccc29f44e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram post by marc_illy showing a laptop on a balcony overlooking
+    a Langkawi beach.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:11.026436+00:00'
   source_available: true
 chat_message_guids_count: 3
 deleted_upstream: null

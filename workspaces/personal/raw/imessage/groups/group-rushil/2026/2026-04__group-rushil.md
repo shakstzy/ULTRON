@@ -22,9 +22,11 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2026-04-01T20:32:38.312461-05:00'
   sha256: 36a949bc08719011dcd1c93fffda990e29ed119942c7d18bf2465cb826a85270
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This document contains interview prep and application notes for various
+    venture capital firms. It features startup analyses and details the candidate's
+    professional background and interests.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:06:12.343391+00:00'
   source_available: true
 - id: d9c738e182df0fcb
   filename: Copy of Spectrum Equity.pdf
@@ -33,9 +35,11 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2026-04-01T20:32:47.963531-05:00'
   sha256: 74e0b96e43b968c76361d740557894190843f98bcfd32a436d073d613ef5007f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "This is an interview preparation guide for Spectrum Equity. It details\
+    \ the firm\u2019s investment strategy, analyzes portfolio companies, and prepares\
+    \ for behavioral and industry questions."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:47.903827+00:00'
   source_available: true
 - id: 4eb788e3504903d9
   filename: IMG_7993.PNG
@@ -44,9 +48,10 @@ attachments:
   sender: me
   sent_at: '2026-04-02T10:04:10.130631-05:00'
   sha256: 6e70fb63e4ba3842eb041acd85ab1e19182005c89fa5d21fb6c871ca2c4a0205
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Gmail screenshot of Rusty Smith at a16z requesting Adithya's availability
+    for a Speedrun role.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:39.466664+00:00'
   source_available: true
 chat_message_guids_count: 27
 deleted_upstream: null

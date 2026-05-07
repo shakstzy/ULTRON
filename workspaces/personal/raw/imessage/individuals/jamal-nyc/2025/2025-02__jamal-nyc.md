@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-02-23T18:05:00.031000-06:00'
   sha256: dafa298779417fe6a4e9d6fa019e5ae557c01e99cc4c78839103534a401ed3a6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat with Vihan planning to visit Joyface and Union Pool bars
+    in the city.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:08.586291+00:00'
   source_available: true
 - id: f4ac5ef66742f5a0
   filename: 76204930388__D14797BF-E779-4C4B-B01C-05DC7C5BA4A8.mov

@@ -22,9 +22,10 @@ attachments:
   sender: edwin-gregory-uc-berkeley
   sent_at: '2025-11-03T16:12:04.825996-06:00'
   sha256: 311ddc048b994de74a8efb7d39fa9932ede0906e6b6f3c490262590bc57f63c0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men in sunglasses posing at a crowded night venue with overhead
+    string lights.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:59:41.657564+00:00'
   source_available: true
 - id: 8eabbfca4f40147f
   filename: IMG_6296.heic
@@ -33,9 +34,9 @@ attachments:
   sender: edwin-gregory-uc-berkeley
   sent_at: '2025-11-03T16:12:04.825996-06:00'
   sha256: 37afb25fe4ca19cae5eeb645134073b0df7a79c3755da5c72a1ad0d71386d3bc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men posing for a photo in a crowded, pink-lit outdoor bar at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:59:47.299794+00:00'
   source_available: true
 - id: 7b2a13c3be6b8d21
   filename: IMG_6293.HEIC
@@ -44,9 +45,10 @@ attachments:
   sender: edwin-gregory-uc-berkeley
   sent_at: '2025-11-03T16:12:04.825996-06:00'
   sha256: 046934ac3e884ddb4b61b8bde25e2dbf85a61f0512577c7c95d708b4e0b8dbc9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men posing in a bar; one in a green sweatshirt with a peace sign,
+    the other in red plaid.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:23.150069+00:00'
   source_available: true
 - id: 269b984843f8d4c8
   filename: IMG_6298.HEIC
@@ -55,9 +57,10 @@ attachments:
   sender: edwin-gregory-uc-berkeley
   sent_at: '2025-11-03T16:12:04.825996-06:00'
   sha256: a564efd30d4b97e6bb5eaa225245f023ca169aab8916f5d971a07b114416a572
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A crowded outdoor party at night with people gathered under warm, festive
+    string lights.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:59:48.984073+00:00'
   source_available: true
 - id: 73af1646f82c30cf
   filename: IMG_6294.HEIC
@@ -66,9 +69,10 @@ attachments:
   sender: edwin-gregory-uc-berkeley
   sent_at: '2025-11-03T16:12:04.825996-06:00'
   sha256: 2b18468f6bf2268251957e39c40f84bddd1c68be655f249967384ed317a75609
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men pose; one in a red plaid shirt and the other in a green shirt
+    making a peace sign.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:59:48.990438+00:00'
   source_available: true
 - id: 66ab96510564b4ad
   filename: IMG_6295.HEIC
@@ -77,9 +81,10 @@ attachments:
   sender: edwin-gregory-uc-berkeley
   sent_at: '2025-11-03T16:12:04.825996-06:00'
   sha256: 3654e5d4b9fc9e1ea8eb5eea52329ef18e8a1e6fec4199f966962999bc5723d4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men posing; one in a green sweatshirt and the other in a red plaid
+    shirt labeled "Dick".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:59:52.726068+00:00'
   source_available: true
 - id: 813d8d7b671f8dd3
   filename: IMG_6297.HEIC
@@ -88,9 +93,10 @@ attachments:
   sender: edwin-gregory-uc-berkeley
   sent_at: '2025-11-03T16:12:04.825996-06:00'
   sha256: e0868a8eeec0d014bc10641de8fa8bb04e4ab531a5eb6078a3339f7496aa1509
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A bearded man makes a peace sign at a crowded outdoor bar with warm
+    red lighting at night.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:07.551757+00:00'
   source_available: true
 - id: 6159e2d509433a1f
   filename: IMG_6300.heic
@@ -99,9 +105,10 @@ attachments:
   sender: edwin-gregory-uc-berkeley
   sent_at: '2025-11-03T16:12:04.825996-06:00'
   sha256: e88b9e3f167a00025cda68a52288b688d63ee0c2b784d963fb7643aa506048f4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Friends in sunglasses pose and make a peace sign at a dimly lit venue
+    with string lights.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:59:53.919577+00:00'
   source_available: true
 - id: b6edaaa42a2d7c3d
   filename: IMG_6299.heic
@@ -110,9 +117,10 @@ attachments:
   sender: edwin-gregory-uc-berkeley
   sent_at: '2025-11-03T16:12:04.825996-06:00'
   sha256: 58f2eac25e49fd12f7282f7a1942c767c3b2f833b1ac63cc690c7ce9645d0ec2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: People dancing in a crowded, dimly lit bar under vibrant purple and
+    blue stage lighting.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:59:58.941501+00:00'
   source_available: true
 chat_message_guids_count: 7
 deleted_upstream: null

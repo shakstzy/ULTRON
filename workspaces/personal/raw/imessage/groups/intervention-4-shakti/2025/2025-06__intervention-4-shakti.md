@@ -22,9 +22,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-06-09T19:43:16.178504-05:00'
   sha256: a0a1764a1ce17aee7f3642c1772f6e1da312db28d64a853ec334ed54b8803a05
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Roz from Monsters, Inc. with her cat-eye glasses and a stern, grumpy
+    expression.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:40.656739+00:00'
   source_available: true
 - id: fc797d8d8decbf28
   filename: 211E99B4-19CB-414C-A1DF-0E817E9D29C7.mov
@@ -33,9 +34,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-06-09T19:45:03.924417-05:00'
   sha256: 0623364a3092b477e22e64c110448196856d8cff7345e124e7ebbf756178fe7c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man crouches on a hotel dresser, inflating a green balloon from a small
+    canister.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:57.105613+00:00'
   source_available: true
 - id: 1c8c48085072893c
   filename: IMG_7132.JPG
@@ -44,9 +46,9 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-06-09T19:47:04.836922-05:00'
   sha256: 866316a6d61cf11fc840f777c23c977ff01c3700a26db19063866b1dc93e9453
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Nick Cannon posing with his parents at an AFI FEST red carpet event.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:44.429936+00:00'
   source_available: true
 - id: 7d6f613dbf6b19d5
   filename: IMG_1052.gif
@@ -55,9 +57,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-06-09T20:23:41.074360-05:00'
   sha256: 55830c4da38dd818e69aade08db2435f05c12e871aaa603c7baba2de215376a9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A 3D-rendered green piranha with sharp teeth, red fins, and large bulging
+    eyes.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:44.385397+00:00'
   source_available: true
 - id: a857061691924851
   filename: IMG_2019.heic
@@ -66,9 +69,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-06-09T20:24:36.087587-05:00'
   sha256: 7f93a7fad09f6b553ba3016d0cd6ab6103af882d7e77c71591eeed7c0209d72e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling young man wearing glasses and a black beanie at a crowded
+    stadium.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:43.271781+00:00'
   source_available: true
 - id: bc5a486a933c602d
   filename: RenderedImage.jpg
@@ -77,9 +81,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-06-10T09:22:35.937303-05:00'
   sha256: e47467ee2e4cf706d5352ada8ed8a862f2f54aa26f47ab4feb5688ba3107e257
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A WhatsApp notification on an iPhone showing a message that says "See
+    you babe" with emojis.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:43.562733+00:00'
   source_available: true
 - id: 94f8b55708cb0364
   filename: EE1B525A-8EC5-4B4B-9CB5-6AC4879918E4.PNG
@@ -88,9 +93,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-06-11T09:26:28.867644-05:00'
   sha256: e09c57e097b961906b17026fdfb3467a74938cfe081547da25da02206d0c13cc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men napping on a dark tufted couch with a soda can and plastic
+    bag on the floor.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:49.066653+00:00'
   source_available: true
 - id: 61c097066e42ee36
   filename: IMG_0039.HEIC
@@ -99,9 +105,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-06-11T09:27:10.804383-05:00'
   sha256: 7a8f6ed9712e3e6b5bc1f8e42d00ad545a48e655c4713ed65072bddbd8b1252e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men sleep on a grey tufted couch next to a plastic bag and water
+    bottle.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:56.979600+00:00'
   source_available: true
 - id: 9155ea7100a458c2
   filename: IMG_7241.png
@@ -110,9 +117,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-06-11T12:35:52.877506-05:00'
   sha256: ba9b55acce1a7a2afaac82d79e238dc8376455c74c9743d98e6863caf9fdbf4a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Robinhood screenshot showing ASIC stock up 44.78% at $24.61 with a
+    green price graph.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:49.090968+00:00'
   source_available: true
 - id: a7f28152be514c05
   filename: IMG_4750.png
@@ -121,9 +129,10 @@ attachments:
   sender: me
   sent_at: '2025-06-11T12:56:16.428000-05:00'
   sha256: 7a9e67e5343bf29cf4ebe8d345f19ff9bc4eeedf9d446f2c652c97918e0b2cbf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Daily stock chart for Ategrity Specialty Holdings (ASIC) showing a
+    41.29% gain to $24.02.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:58.774838+00:00'
   source_available: true
 - id: 41c0e2afd1a56b96
   filename: IMG_7198.PNG
@@ -132,9 +141,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-06-11T17:01:13.679123-05:00'
   sha256: 302aeda7ded4eed3efe26f36444c8442f13b91341c801b8b431c4e6feb785e07
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LinkedIn profile screenshot for Shervin Beyk listing Trapping and Investments
+    as skills.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:57.865367+00:00'
   source_available: true
 - id: 51e9af288cf210f6
   filename: C269DBB2-5A0F-4ADA-A1C6-320ECFDDB8FC.mov
@@ -143,9 +153,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-06-12T07:36:37.151503-05:00'
   sha256: ff03e120b8dbb0bec6114bc2166505cb2ba947b0f2a11f57525371f6b150ea77
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a wicker chair holding a fan next to a TV displaying Fortnite
+    gameplay.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:20.512801+00:00'
   source_available: true
 - id: 87c98b8e5125ba75
   filename: IMG_9507.png
@@ -154,9 +165,10 @@ attachments:
   sender: me
   sent_at: '2025-06-12T12:59:38.414891-05:00'
   sha256: 17926e73623ba8f4ae2bc7bc31e1d9457f9fa5c0016d1b56a12da29b59dd55dd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A portrait of the Gungan character Jar Jar Binks from Star Wars against
+    a black background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:49.402930+00:00'
   source_available: true
 - id: ca025d508077e258
   filename: IMG_7737.png
@@ -165,9 +177,10 @@ attachments:
   sender: me
   sent_at: '2025-06-12T12:59:38.414891-05:00'
   sha256: 716105321c8c0a9af82441ae94642bafa32ad306f712c64eb1b3e27c57c12897
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three men smiling in a blue-lit club, posing with peace and thumbs
+    up gestures.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:02.598976+00:00'
   source_available: true
 - id: 05a7f80475b93f8d
   filename: IMG_5705.png
@@ -176,9 +189,10 @@ attachments:
   sender: me
   sent_at: '2025-06-12T12:59:56.867366-05:00'
   sha256: 8aaab1c768cb8e0ddba0b77a94d5cae76609b5487d7fdf09f435b7f3740d219d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men at Starknet Summit 2023; one smiles while the other flips the
+    bird.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:23.446648+00:00'
   source_available: true
 - id: 2f6721c910c96518
   filename: IMG_3288.png
@@ -187,9 +201,10 @@ attachments:
   sender: me
   sent_at: '2025-06-12T13:02:32.917865-05:00'
   sha256: 5209e7d3fa51affba40619a5e704e7b274ee295b56de3d9d6b7acd6ef347345b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two young men stand by a railing with a rugged, rocky mountain in the
+    background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:13.129974+00:00'
   source_available: true
 - id: d53be4f57b13d804
   filename: IMG_4292.png
@@ -198,9 +213,10 @@ attachments:
   sender: me
   sent_at: '2025-06-12T13:03:31.837657-05:00'
   sha256: cb32f9022467d4ed5b71426c9245a898e37f86ae48fb8c8178b6695fedb436a9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Jabba the Hutt, a large slug-like Star Wars alien, reclines in a dark
+    throne room.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:44.928229+00:00'
   source_available: true
 - id: 80d813c559162bd4
   filename: ScreenRecording_06-12-2025 21-38-49_1.mov
@@ -209,9 +225,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-06-12T13:42:54.089111-05:00'
   sha256: 79f6f797633a6b633912e02ae8eda2228ce2297a6846672b29bc96d022e12d78
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A meme of a White House press briefing cut with the Supa Hot Fire reaction
+    video.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:17.537458+00:00'
   source_available: true
 - id: 9e4357d7574a56c0
   filename: IMG_1884.gif
@@ -220,9 +237,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-06-12T14:15:21.386085-05:00'
   sha256: a7e0eff02019f4a233111b326a59af98f85252fb9e9c1cccadbc1c77caad7601
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Family Guy's Cookie Monster refuses a plate of cookies while in a hospital
+    bed.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:57.614746+00:00'
   source_available: true
 - id: 1a314a15ce18db9e
   filename: IMG_4800.heic
@@ -231,9 +249,9 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-06-13T22:36:12.407403-05:00'
   sha256: 6895a73570823d2a8fac502cbc6229bcec66a76ff1aa398aa86833cd4237ec0f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a tan jacket pokes the nose of a large, hairy troll statue.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:03.104613+00:00'
   source_available: true
 - id: 2202640bf3a1ea60
   filename: filtered-92527CAA-3183-492E-A748-8B28393D2D3C.mov
@@ -242,9 +260,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-06-14T10:42:43.376020-05:00'
   sha256: 92342583f9b6eea6d2cb2ef3bd3164df46d13e7bf61764537d768a3600222d29
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A scene from the show 'Mo' where Mo Amer's family gives him lean in
+    a styrofoam cup.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:15.733885+00:00'
   source_available: true
 - id: 0ffe3cbd00b19124
   filename: 50BB330B-D7BE-494A-BB69-FACB3A5F7072.heic
@@ -253,9 +272,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-06-17T08:51:04.237452-05:00'
   sha256: 6e06806251a4916de5fdbe1a5fdf8d93aefb5c8fddd01117081e932e2b0e4f26
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling woman in a black crop top and tan pants posing with her middle
+    fingers up.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:25.344420+00:00'
   source_available: true
 - id: f373b72a32932c40
   filename: 77186123902__F8921E87-2116-40FF-B1A5-F2234E330428.heic
@@ -264,9 +284,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-06-17T08:54:04.000987-05:00'
   sha256: ef7fb19b179be019923c9479c6389537b8209499a3953d2b3f01740bf8b4bfc2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Brass ashtray with Camel and Winston cigarette butts and ash on a dark
+    surface.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:02.992317+00:00'
   source_available: true
 - id: 8591a06fda8deb75
   filename: 52A134E3-9FC9-4BDE-B54C-A4B2F42B6BF9.heic
@@ -275,9 +296,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-06-17T08:54:44.778539-05:00'
   sha256: b1cfece45484254810e6da0fc77607d56db61d9443ff8d4bcdc70392b4d42da8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mutant ape NFT with a green slime crown, melting face, and mushroom-layered
+    body.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:23.308317+00:00'
   source_available: true
 - id: 478f22104ad97c73
   filename: B1D7F84E-5901-409B-990F-4C7818D05206.mov
@@ -286,9 +308,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2025-06-17T10:55:55.632864-05:00'
   sha256: 85622728db2e24f1fab542d51897411ff9b76af33d2379d1b4c70501bacc8bfb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a TikTok advises shitting yourself as a "big play" to ensure
+    you're remembered.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:08.368951+00:00'
   source_available: true
 - id: 74b826b987f3ac80
   filename: IMG_7423.png
@@ -297,9 +320,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-06-17T10:58:03.861982-05:00'
   sha256: d9f5a01aeb984e626ed0e2c069682143d188dfa2ce36562501cde3b4723464dc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram chat with Vanya | Ava Labs discussing Iranians, North Koreans,
+    and government dislike.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:42.176615+00:00'
   source_available: true
 - id: 4d92600c98124c85
   filename: IMG_7424.PNG
@@ -308,9 +332,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-06-17T10:58:03.861982-05:00'
   sha256: 7292e7e9bc19b802cd54d448c5184709338df678a7c63e906c4dcebcc0359af6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "Google Translate screenshot translating \"\uAE40\uC815\uC740\uB3FC\
+    \uC9C0\uC0C8\uB07C\" to \"Kim Jong-un piglet\"."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:06.408492+00:00'
   source_available: true
 - id: 9d41a1cf31de0a3c
   filename: IMG_7418.png
@@ -319,9 +344,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-06-17T10:58:03.861982-05:00'
   sha256: e1a072c68d19adfdc62fe5f29ef3920078e9d18c2fe8e15f4bac96fae3aff7ce
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram chat with Vanya (Ava Labs) sharing a Microsoft Teams link
+    that the user cannot join.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:16.298003+00:00'
   source_available: true
 - id: ada9350e3ceb99cb
   filename: IMG_7420.png
@@ -330,9 +356,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-06-17T10:58:03.861982-05:00'
   sha256: daa4369c33b40fed2d1434cd7a0028e30b3ea167e3c8c1e056339ca14131ee9e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram chat screenshot with Vanya | Ava Labs featuring a Korean text
+    copy-paste joke.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:21.916351+00:00'
   source_available: true
 - id: fe589f69aa845269
   filename: IMG_5391.jpeg
@@ -341,9 +368,10 @@ attachments:
   sender: me
   sent_at: '2025-06-17T11:03:03.174702-05:00'
   sha256: e24e2c412fcb6f69cffe0aee09a0e213ecb8551907c283f904a5f46f495b6963
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Han Solo in carbonite floats before Jabba the Hutt and Boba Fett in
+    Jabba's palace.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:14.516830+00:00'
   source_available: true
 - id: 465e8b5980450b7f
   filename: 50BB330B-D7BE-494A-BB69-FACB3A5F7072.heic
@@ -352,9 +380,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-06-17T11:04:15.842124-05:00'
   sha256: 6e06806251a4916de5fdbe1a5fdf8d93aefb5c8fddd01117081e932e2b0e4f26
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling woman in a black crop top and tan pants posing with her middle
+    fingers up.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:25.344420+00:00'
   source_available: true
 - id: 3a159b6768e88179
   filename: 52A134E3-9FC9-4BDE-B54C-A4B2F42B6BF9.heic
@@ -363,9 +392,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-06-17T11:05:59.656355-05:00'
   sha256: b1cfece45484254810e6da0fc77607d56db61d9443ff8d4bcdc70392b4d42da8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mutant ape NFT with a green slime crown, melting face, and mushroom-layered
+    body.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:23.308317+00:00'
   source_available: true
 - id: 100dab4888ccc686
   filename: A5A8F482-35CA-4381-B5D8-FF7DD674B3A5.mov
@@ -374,9 +404,10 @@ attachments:
   sender: shervin-blockchain-uc-berkeley
   sent_at: '2025-06-17T11:59:13.386703-05:00'
   sha256: 80bcde41328b62efff6ca6db5d062ab99c1a15ca40b22a12c63e874d15fd46eb
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a luxury van with red leather seats, a starlight ceiling, and
+    a large red Gucci bag.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:17.170623+00:00'
   source_available: true
 chat_message_guids_count: 353
 deleted_upstream: null

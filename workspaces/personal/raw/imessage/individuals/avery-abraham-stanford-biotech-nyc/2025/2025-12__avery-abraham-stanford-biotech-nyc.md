@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-12-01T01:38:06.503959-06:00'
   sha256: 789aac233e0fa3a559fc198be616a8bcb12ee3694ca186ceba113f4a9fbf5b57
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hand wearing a DIY electronic glove with an ultrasonic sensor and glowing
+    green light.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:48:19.098151+00:00'
   source_available: true
 - id: 414c90bf69a7a147
   filename: IMG_3582.JPG
@@ -93,9 +94,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-12-03T22:58:49.863404-06:00'
   sha256: 146df354de10c4a07d10838fc254fe7d75d13dd75fda9addcde6c5e2d65e8bb7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Seedbox device analyzing sperm motility and concentration via a smartphone
+    app.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:48:44.085028+00:00'
   source_available: true
 - id: d1d6d5e4381a6323
   filename: IMG_1804.png
@@ -128,9 +130,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-12-04T23:50:02.837009-06:00'
   sha256: 78764a4eb0c1d69627088959d6daccc8ad6a0135b7f82ec8b19af97b4b08b9f4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Labeled technical diagram of Seedbox Labs v2.1 men's sperm testing
+    device hardware.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:48:20.620604+00:00'
   source_available: true
 - id: fb74b1969c8be9e2
   filename: IMG_6738.png
@@ -139,9 +142,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-12-05T02:10:54.984735-06:00'
   sha256: faf4046ea18f922ad14acc32f1cb54d043350e7f30dcdfd25101e72e4f76b5f4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Technical schematic of the Seedbox Labs v2.2 microfluidic imaging system
+    architecture.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:48:27.527918+00:00'
   source_available: true
 - id: da367b86950de4b9
   filename: PNG image.png
@@ -150,9 +154,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-12-06T01:13:01.333246-06:00'
   sha256: 1b48c508c5000e5078a4de8db2aace89afb03ad3b28870a4a346afe161df331a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of Gemini UI showing a prompt to analyze v2.4 specs from
+    a Google Drive folder.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:48:29.394925+00:00'
   source_available: true
 - id: 7b82d54d0aca67eb
   filename: IMG_6301.png
@@ -197,9 +202,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-12-08T14:47:21.930404-06:00'
   sha256: 70e479aab6961c608dbb028541eef77d83422ad7dfd5302ce9bd1ba7e6a9d2e6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a WhatsApp chat about Tommy Wang's $100k Seedbox
+    investment.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:49:21.106629+00:00'
   source_available: true
 - id: de796319dcb2a13c
   filename: Science Fair Data Book.pdf
@@ -221,9 +227,11 @@ attachments:
   sender: me
   sent_at: '2025-12-09T00:13:04.569127-06:00'
   sha256: 170e928133b772e54b9561a8ccfd9ee2534ae748d5fd26acc7aa1cc9344ed393
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This 2023 science fair project details a non-invasive skin cancer detection
+    system using Raman spectroscopy and AI. It uses GANs for synthetic data, achieving
+    high accuracy in classifying skin cancer.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:48:42.708292+00:00'
   source_available: true
 - id: ca1a8c2a6caa7532
   filename: EchoVisionProjectBoard.pdf
@@ -270,9 +278,11 @@ attachments:
   sender: me
   sent_at: '2025-12-09T00:14:44.969451-06:00'
   sha256: 373c45745b0ab0b9fa1a8b0e465f1af7507fe7f670fe88dc3694fcb8cbdba5aa
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This research poster presents a ResNet-based AI algorithm for identifying
+    malaria in blood smears. It offers a high-accuracy, lightweight diagnostic solution
+    for low-resource medical environments.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:48:40.576808+00:00'
   source_available: true
 - id: 60e433020a6ce4d2
   filename: board - resized - hopefully final [Autosaved] (2).pptx
@@ -364,9 +374,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-12-15T00:27:03.391489-06:00'
   sha256: c1f34325443d16bbd0b9512fb30ac24810e6c4a596bb0fe401f416a9bdf258b7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: AI chat screenshot explaining VC positioning for holographic vs. lens-based
+    sperm analysis.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:48:41.929193+00:00'
   source_available: true
 - id: 5ccb66a449592b69
   filename: IMG_9200.jpeg
@@ -375,9 +386,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-12-15T23:53:58.351054-06:00'
   sha256: 0ae6ca35d5338bb7c84084a1b9d697f244717b07dee5fd5721871076819c8b58
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Portrait of Sheikh Tamim bin Hamad Al Thani, Emir of Qatar, in traditional
+    ghutra and bisht.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:48:46.634571+00:00'
   source_available: true
 - id: 49d3160ffd2fbc7f
   filename: Research Outreach Analysis.xlsx

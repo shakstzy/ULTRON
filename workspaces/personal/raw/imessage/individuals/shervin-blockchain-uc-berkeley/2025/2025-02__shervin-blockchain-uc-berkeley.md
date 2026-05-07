@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-02-17T20:58:29.769000-06:00'
   sha256: 2255967b88a33a4246cb199a2d23e30cc38585c4de1d21357e7ddd786272e05f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Video call screenshot with a Telegram notification from juhi kale mentioning
+    an Uber ride.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:36:02.285091+00:00'
   source_available: true
 - id: cfab493f5705a0b8
   filename: IMG_4882.PNG
@@ -68,9 +69,10 @@ attachments:
   sender: me
   sent_at: '2025-02-26T12:18:36.526319-06:00'
   sha256: 8239fa88d38b76731be0c5572d30bb6c4349be5718c9b57233c89ed8e35201ec
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Event flyer for NIFTY BRUH's "RAVE To Distract The Competition" at
+    The Dahlia in Denver.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:36:03.206179+00:00'
   source_available: true
 chat_message_guids_count: 114
 deleted_upstream: null

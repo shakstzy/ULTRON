@@ -22,9 +22,9 @@ attachments:
   sender: me
   sent_at: '2024-03-18T12:43:39.824268-05:00'
   sha256: 122a4bd7399b5eba7b15f2f5e11518ee761b0268e5a1028fff5ca96ef50940e7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Illuminated 'PROPER FOOD' sign at a modern airport or food court eatery.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:54:10.159575+00:00'
   source_available: true
 - id: 5b83c9bae7fbfdab
   filename: Archive.zip

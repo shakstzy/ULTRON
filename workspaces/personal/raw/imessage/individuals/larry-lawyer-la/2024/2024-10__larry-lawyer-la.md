@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-10-09T13:39:40.312173-05:00'
   sha256: 88309571b576a6292349bf9d088f358db952550ce404ec238bd0d33f30c1edd7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Delta flight 841 itinerary from SLC to LAX on Oct 12 (confirmation
+    H5JP27).
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:58.934047+00:00'
   source_available: true
 chat_message_guids_count: 12
 deleted_upstream: null

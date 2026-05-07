@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.819499+00:00
+ingested_at: 2026-05-06T22:18:21.442336+00:00
 ingest_version: 1
 content_hash: blake2b:85cc8c63dccc8930a1fd1103118f2db9
-provider_modified_at: 2026-05-06T22:17:40.819499+00:00
+provider_modified_at: 2026-05-06T22:18:21.442336+00:00
 
 title: Aaron Black Crypto LA
 slug: aaron-black-crypto-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 714-235-1330"]
   slack: []
-last_synced: 2026-05-06T22:17:40.819499+00:00
+last_synced: 2026-05-06T22:18:21.442336+00:00
 global: true
 ---
 

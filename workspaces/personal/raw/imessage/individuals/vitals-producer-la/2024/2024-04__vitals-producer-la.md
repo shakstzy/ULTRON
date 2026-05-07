@@ -22,9 +22,9 @@ attachments:
   sender: me
   sent_at: '2024-04-14T00:18:41.610112-05:00'
   sha256: e807fd08de2d34a266b7d99ef83ab490d6bda2f7a2f7742e1ff01a4e2a3898b5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Monitor showing a Pro Tools session next to a Yamaha studio speaker.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:53.207127+00:00'
   source_available: true
 chat_message_guids_count: 5
 deleted_upstream: null

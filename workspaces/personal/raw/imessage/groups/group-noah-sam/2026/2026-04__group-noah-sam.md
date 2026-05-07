@@ -89,9 +89,10 @@ attachments:
   sender: me
   sent_at: '2026-04-05T15:36:57.750120-05:00'
   sha256: daf2f72f5a5406edd055aee83540ae847ee8d6d0ba89bc1d54de56ca7962bf4b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of an NPC meme and text theorizing tech moguls are "positioned"
+    characters.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:31:11.194424+00:00'
   source_available: true
 - id: 76415286551ec4d9
   filename: B94DD850-BA0C-4F7A-B9CF-8661A7AA1F35.pluginPayloadAttachment
@@ -177,9 +178,10 @@ attachments:
   sender: sam-garcia
   sent_at: '2026-04-21T23:10:21.159565-05:00'
   sha256: 512486029972e181637e934ba9015bc921755e547e0996538f036fe66cb8ad4d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person displays a silver skeleton watch fully encrusted with shimmering
+    moissanite stones.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:30:54.311290+00:00'
   source_available: true
 - id: b8badcefd588f5d0
   filename: IMG_1799.heic
@@ -188,9 +190,10 @@ attachments:
   sender: sam-garcia
   sent_at: '2026-04-21T23:22:36.541465-05:00'
   sha256: 03cdfea6bc94117a5c62d08004803b17ebd0eed07a2ea669328ca2a80513e746
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling woman in a white dress posing in a field, captured through
+    a pixelated screen grid.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:31:20.795734+00:00'
   source_available: true
 - id: bdd8eec2aa87ee5e
   filename: CAA8BB0A-F9D7-4880-98AB-9C90E832D8E7.MOV
@@ -211,9 +214,10 @@ attachments:
   sender: sam-garcia
   sent_at: '2026-04-22T00:21:17.440983-05:00'
   sha256: 7a8cb598c9846feb7b08e9ca31fd215fcb2d3e65b0fb2d4880aa3e9a06529948
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Wrist X-ray of Sam J. Garcia at Ozark Orthopaedics with a handwritten
+    "voltaren gel" note.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:30:46.640006+00:00'
   source_available: true
 - id: ab902b4a7bf5a637
   filename: IMG_1847.heic
@@ -222,9 +226,10 @@ attachments:
   sender: sam-garcia
   sent_at: '2026-04-22T00:22:16.486726-05:00'
   sha256: 3ffb332fe4239bfedbfb8b70b9757d0a5d20ccdf9f118cfe3d807fb29cb9a37d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Wrist X-ray of Sam J Garcia with a red circle on the bone and a note
+    for voltaren gel.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:31:32.392386+00:00'
   source_available: true
 - id: 74c4f1e3cd751e1d
   filename: IMG_1347.JPG
@@ -233,9 +238,10 @@ attachments:
   sender: sam-garcia
   sent_at: '2026-04-22T00:41:45.261997-05:00'
   sha256: 733439dd3e95f3fc59ab2cd5cce8c60b88a56bc36508e3e019cb87ad3aa9ed86
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "Rose gold Patek Philippe Nautilus watch heavily set with baguette\
+    \ and pav\xE9 diamonds."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:33:16.414106+00:00'
   source_available: true
 - id: e52181dcc1648e91
   filename: IMG_1868.JPG
@@ -244,9 +250,10 @@ attachments:
   sender: sam-garcia
   sent_at: '2026-04-22T03:13:42.000339-05:00'
   sha256: ed094d205d1c3da76c48866fe3194516800502533cb00c5addbf7429a04ef8f6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Young woman in a white ruffled heart-print outfit posing against a
+    solid red background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:33:40.043168+00:00'
   source_available: true
 - id: f226e242d81d3b3e
   filename: IMG_1870.JPG
@@ -299,9 +306,10 @@ attachments:
   sender: me
   sent_at: '2026-04-22T04:04:29.848345-05:00'
   sha256: 733667151d6166377aa19c5ed42b6c8ec75366145a6b193340b657ac89163d27
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile screenshot of 40 Hz Alzheimer's search results with a picture-in-picture
+    video call.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:33:58.852686+00:00'
   source_available: true
 - id: 039d72ecca9dfc91
   filename: ScreenRecording_04-20-2026 23-04-09_1.mov

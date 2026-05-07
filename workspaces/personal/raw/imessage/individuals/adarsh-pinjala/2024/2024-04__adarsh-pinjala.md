@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-04-06T20:22:14.372443-05:00'
   sha256: 53838b34ae4aac28df8349c976478467c7bfb84a5b7ba643561cb59c5b354a0c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: People lounge on a sunlit grassy field next to a yellow John Deere
+    utility vehicle.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:41:54.530750+00:00'
   source_available: true
 chat_message_guids_count: 19
 deleted_upstream: null

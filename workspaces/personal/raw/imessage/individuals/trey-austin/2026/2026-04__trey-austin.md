@@ -22,9 +22,10 @@ attachments:
   sender: trey-austin
   sent_at: '2026-04-22T12:17:38.129437-05:00'
   sha256: e2ab9abf5dc58a7df0b4f5a8b821b606c21f24ef6de457b6d40e410286e99d25
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Flyer for TreysXwrld performing live at Blindside Lounge in Austin
+    on April 23rd.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:14.017583+00:00'
   source_available: true
 - id: 3e43a8142123e761
   filename: A76365CC-28B3-4152-B99C-ED0FA0A95C4E.pluginPayloadAttachment

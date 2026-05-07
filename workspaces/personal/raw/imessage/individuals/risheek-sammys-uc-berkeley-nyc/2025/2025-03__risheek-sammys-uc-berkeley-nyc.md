@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-03-16T01:51:19.977000-05:00'
   sha256: 78c3d75145b729b353fce307859e60566b1474ec182c74d6f6a67bea6d51b20a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Las Vegas Party Pass for Adithya Kumar (Mar 13-16) with a scannable
+    QR code.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:35:24.041446+00:00'
   source_available: true
 chat_message_guids_count: 53
 deleted_upstream: null

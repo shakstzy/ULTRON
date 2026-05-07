@@ -1,0 +1,44 @@
+---
+slug: maryam-mccoy-zillow-258vhr7ge6q56
+source: zillow-rental-manager
+workspace: rental-manager
+name: Maryam MCCOY
+phone: "+17864599841"
+reference_email: "1e01ez6s8wq0ei3xa5zbd28erta@convo.zillow.com"
+listing_alias: 258vhr7ge6q56
+listing_address: "13245 Klein Ct, Sylmar, CA 91342"
+conversation_id: 2375546479878140231
+status_label: INQUIRED
+renter_us_state: CA
+last_pulled_at: "2026-05-06T22:24:16.562Z"
+---
+
+# Maryam MCCOY
+
+Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
+
+- Status: `INQUIRED`
+- Phone: `+17864599841`
+- Zillow forwarding email: `1e01ez6s8wq0ei3xa5zbd28erta@convo.zillow.com`
+- Conversation ID: `2375546479878140231`
+- Listing alias: `258vhr7ge6q56`
+
+## Renter profile
+
+- **desiredParking**: Needed
+- **leaseLengthMonths**: 1
+- **moveInDate**: 04/01/2026
+- **numBedrooms**: 0
+- **numOccupants**: 1
+- **updatedAtMs**: 1774569462524
+- **__typename**: ZRM_RenterProfile_Attributes
+
+## Messages
+
+### 2026-03-27T00:01:53.558Z - Maryam MCCOY
+
+May I ask if this still available ? Is it a room or a studio like ?
+
+### 2026-03-27T00:05:00.801Z - Maryam MCCOY
+
+I would like to see it in your convenience

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-01-18T15:06:00.215859-06:00'
   sha256: e2eef7c913cbb0125b980445df750053a3c1087e54e2c00c577b2e753a5bbe4d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dexscreener chart for TRUMP/SOL on Raydium showing a $25.47 price and
+    recent buy activity.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:15.901321+00:00'
   source_available: true
 chat_message_guids_count: 33
 deleted_upstream: null

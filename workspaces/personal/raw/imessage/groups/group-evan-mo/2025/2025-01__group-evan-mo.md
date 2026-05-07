@@ -33,9 +33,10 @@ attachments:
   sender: mo-snaps-uc-berkeley
   sent_at: '2025-01-22T16:09:33.351986-06:00'
   sha256: 831a74cb2c209c7275ba25a793ea5d66fc5e957ee813de57475ce2b77da7693d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Album art for "CINNAMON.WAV" by SHAK STXY featuring a cinnamon stick
+    icon on a brown background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:49.654481+00:00'
   source_available: true
 - id: 44fc077dce3ce443
   filename: IMG_8152.png
@@ -44,9 +45,10 @@ attachments:
   sender: mo-snaps-uc-berkeley
   sent_at: '2025-01-22T16:10:33.997361-06:00'
   sha256: 8da3e7e5ce56154dc0e609de91bed8b94b426243b8e144b4e2eacbdbe52dc8f2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Cover art for "CINNAMON.WAV" by SHAK STYY featuring a cinnamon stick
+    on a brown background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:53.908730+00:00'
   source_available: true
 - id: b1e8670182bdcdaa
   filename: cinnamon.m4a

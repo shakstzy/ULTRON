@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-04-12T16:50:13.596533-05:00'
   sha256: 030d3b642ad360ccc6ab57d99999e7c05b385de18cbe9ea59fc5240fa1701e35
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Maps screenshot showing a 58-minute transit route to It's Boba
+    Time from Westwood.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:32.010831+00:00'
   source_available: true
 chat_message_guids_count: 24
 deleted_upstream: null

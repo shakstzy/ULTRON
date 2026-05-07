@@ -13,15 +13,80 @@
 // Designed for graphify ingestion: stable slug, frontmatter foreign keys,
 // wikilink-able cross-refs between entities (phone -> imessage workspace).
 
-import { readFile, writeFile, readdir, rename, mkdir, access } from "node:fs/promises";
+import { readFile, writeFile, readdir, rename, mkdir, access, unlink } from "node:fs/promises";
 import { resolve } from "node:path";
+import { execFile as _execFile } from "node:child_process";
+import { promisify } from "node:util";
 import lockfile from "proper-lockfile";
-import { RAW_DIR, WIKI_PEOPLE_DIR } from "./paths.mjs";
+import { RAW_DIR, UNMATCHED_DIR, WIKI_PEOPLE_DIR } from "./paths.mjs";
 import { resolveCity } from "./city.mjs";
 import { firstName, buildSlug, uniqueSlug } from "./slug.mjs";
 
+const execFile = promisify(_execFile);
+
+// When the bot extracts a phone from her messages, also create an Apple Contacts
+// entry. Skipped if a contact with this phone already exists. Note tags the source
+// so bot-created entries are identifiable later (search "via tinder" in Contacts).
+async function addToAppleContacts({ firstName: name, phone, source = "tinder" }) {
+  if (!phone || !name) return false;
+  const safeName = String(name).replace(/"/g, '\\"');
+  const safePhone = String(phone).replace(/"/g, '\\"');
+  const checkScript = `
+    tell application "Contacts"
+      set theMatches to (every person whose value of phones contains "${safePhone}")
+      return (count of theMatches) as string
+    end tell`;
+  try {
+    const { stdout } = await execFile("osascript", ["-e", checkScript], { timeout: 8000 });
+    if (parseInt(stdout.trim(), 10) > 0) return false;
+  } catch { /* fall through to create */ }
+  const createScript = `
+    tell application "Contacts"
+      set newPerson to make new person with properties {first name:"${safeName}", note:"via ${source}"}
+      tell newPerson
+        make new phone at end of phones with properties {label:"mobile", value:"${safePhone}"}
+      end tell
+      save
+    end tell`;
+  try {
+    await execFile("osascript", ["-e", createScript], { timeout: 8000 });
+    return true;
+  } catch (e) {
+    console.error(`addToAppleContacts(${name}): ${e.message}`);
+    return false;
+  }
+}
+
 await mkdir(RAW_DIR, { recursive: true });
+await mkdir(UNMATCHED_DIR, { recursive: true });
 await mkdir(WIKI_PEOPLE_DIR, { recursive: true });
+
+// Where an entity lives on disk depends on status: active in RAW_DIR, unmatched in UNMATCHED_DIR.
+function entityPathFor(slug, status) {
+  return status === "unmatched"
+    ? resolve(UNMATCHED_DIR, `${slug}.md`)
+    : resolve(RAW_DIR, `${slug}.md`);
+}
+
+// Find existing path regardless of status (file may have moved between dirs).
+async function findEntityPath(slug) {
+  const a = resolve(RAW_DIR, `${slug}.md`);
+  try { await access(a); return a; } catch {}
+  const b = resolve(UNMATCHED_DIR, `${slug}.md`);
+  try { await access(b); return b; } catch {}
+  return null;
+}
+
+// List markdown files across both dirs. Returns [{ name, dir }, ...].
+async function listAllFiles() {
+  const active = (await readdir(RAW_DIR).catch(() => []))
+    .filter(f => f.endsWith(".md"))
+    .map(f => ({ name: f, dir: RAW_DIR }));
+  const unmatched = (await readdir(UNMATCHED_DIR).catch(() => []))
+    .filter(f => f.endsWith(".md"))
+    .map(f => ({ name: f, dir: UNMATCHED_DIR }));
+  return [...active, ...unmatched];
+}
 
 async function ensureWikiStub(slug) {
   const path = resolve(WIKI_PEOPLE_DIR, `${slug}.md`);
@@ -288,22 +353,23 @@ export function parseLatestDiffJsonBlock(profileChangesMd) {
 }
 
 async function listExistingSlugs() {
-  const files = await readdir(RAW_DIR).catch(() => []);
-  return new Set(files.filter(f => f.endsWith(".md")).map(f => f.replace(/\.md$/, "")));
+  const files = await listAllFiles();
+  return new Set(files.map(f => f.name.replace(/\.md$/, "")));
 }
 
 export async function findEntityByMatchId(matchId) {
-  const files = (await readdir(RAW_DIR).catch(() => [])).filter(f => f.endsWith(".md"));
-  for (const f of files) {
-    const text = await readFile(resolve(RAW_DIR, f), "utf8");
+  const files = await listAllFiles();
+  for (const { name, dir } of files) {
+    const text = await readFile(resolve(dir, name), "utf8");
     const { meta } = parseFrontmatter(text);
-    if (meta.match_id === matchId) return { slug: f.replace(/\.md$/, ""), path: resolve(RAW_DIR, f), meta };
+    if (meta.match_id === matchId) return { slug: name.replace(/\.md$/, ""), path: resolve(dir, name), meta };
   }
   return null;
 }
 
 export async function loadEntity(slug) {
-  const path = resolve(RAW_DIR, `${slug}.md`);
+  const path = await findEntityPath(slug);
+  if (!path) throw new Error(`entity not found: ${slug}`);
   const text = await readFile(path, "utf8");
   const { meta, body } = parseFrontmatter(text);
   const sections = splitSections(body);
@@ -311,9 +377,14 @@ export async function loadEntity(slug) {
 }
 
 export async function saveEntity({ slug, meta, profile, conversation, outbound, profile_changes = "", visual = "" }) {
-  const path = resolve(RAW_DIR, `${slug}.md`);
-  await atomicWrite(path, renderEntity({ meta, profile, conversation, outbound, profile_changes, visual }));
-  return path;
+  const newPath = entityPathFor(slug, meta.status);
+  const oldPath = await findEntityPath(slug);
+  await atomicWrite(newPath, renderEntity({ meta, profile, conversation, outbound, profile_changes, visual }));
+  // If status flipped (active <-> unmatched) the file location changed; remove the stale copy.
+  if (oldPath && oldPath !== newPath) {
+    try { await unlink(oldPath); } catch {}
+  }
+  return newPath;
 }
 
 // CODEX-IMP-6+7+12: profile=null means "capture failed/skipped"; preserve existing
@@ -480,7 +551,10 @@ export async function appendMessages(slug, messages) {
       have.add(ident); // also dedupe within the incoming batch
       newLines.push(fmtMessageLine(m));
       if (m.ts && (!lastTs || m.ts > lastTs)) lastTs = m.ts;
-      if (!extractedPhone && !ent.meta.phone) {
+      // Only extract phones from HER messages — outbound (us) might contain
+      // our own number which would falsely populate her phone field and
+      // (with the auto-Contact wire) pollute Apple Contacts.
+      if (!extractedPhone && !ent.meta.phone && m.direction === "in") {
         const found = extractPhoneFromText(m.text);
         if (found) extractedPhone = found;
       }
@@ -493,7 +567,15 @@ export async function appendMessages(slug, messages) {
       phone: ent.meta.phone || extractedPhone || null,
     };
     await saveEntity({ slug, meta, profile: ent.profile, conversation, outbound: ent.outbound, profile_changes: ent.profile_changes, visual: ent.visual });
-    return { added: newLines.length, phone_discovered: extractedPhone };
+    let contactAdded = false;
+    if (extractedPhone) {
+      contactAdded = await addToAppleContacts({
+        firstName: ent.meta.first_name,
+        phone: extractedPhone,
+        source: ent.meta.source || "tinder",
+      });
+    }
+    return { added: newLines.length, phone_discovered: extractedPhone, contact_added: contactAdded };
   });
 }
 
@@ -507,6 +589,44 @@ export async function appendOutboundEvent(slug, { event, mode, intent, draftId, 
   });
 }
 
+// Two-strike auto-archive: increment a redirect counter when navigating to her
+// thread URL bounces to /app/matches (signal: she likely unmatched). At >= 2
+// consecutive redirects, flip status to "unmatched" so saveEntity moves the
+// file into raw/tinder/unmatched/. A successful thread open clears the counter.
+const REDIRECT_ARCHIVE_THRESHOLD = 2;
+
+export async function recordRedirect(slug) {
+  return await withEntityLock(async () => {
+    const ent = await loadEntity(slug);
+    const count = (ent.meta.redirect_count || 0) + 1;
+    const meta = {
+      ...ent.meta,
+      redirect_count: count,
+      last_redirect: new Date().toISOString(),
+    };
+    let archived = false;
+    if (count >= REDIRECT_ARCHIVE_THRESHOLD && meta.status !== "unmatched") {
+      meta.status = "unmatched";
+      archived = true;
+      console.log(`auto-archive:${slug} (${count} consecutive thread redirects)`);
+    }
+    await saveEntity({ slug, meta, profile: ent.profile, conversation: ent.conversation, outbound: ent.outbound, profile_changes: ent.profile_changes, visual: ent.visual });
+    return { redirect_count: count, archived };
+  });
+}
+
+export async function clearRedirects(slug) {
+  return await withEntityLock(async () => {
+    const ent = await loadEntity(slug);
+    if (!ent.meta.redirect_count) return { cleared: false };
+    const meta = { ...ent.meta };
+    delete meta.redirect_count;
+    delete meta.last_redirect;
+    await saveEntity({ slug, meta, profile: ent.profile, conversation: ent.conversation, outbound: ent.outbound, profile_changes: ent.profile_changes, visual: ent.visual });
+    return { cleared: true };
+  });
+}
+
 export async function setStatus(slug, status) {
   return await withEntityLock(async () => {
     const ent = await loadEntity(slug);
@@ -516,13 +636,13 @@ export async function setStatus(slug, status) {
 }
 
 export async function listAllEntities() {
-  const files = (await readdir(RAW_DIR).catch(() => [])).filter(f => f.endsWith(".md"));
+  const files = await listAllFiles();
   const out = [];
-  for (const f of files) {
-    const text = await readFile(resolve(RAW_DIR, f), "utf8");
+  for (const { name, dir } of files) {
+    const text = await readFile(resolve(dir, name), "utf8");
     const { meta, body } = parseFrontmatter(text);
     const sections = splitSections(body);
-    out.push({ slug: f.replace(/\.md$/, ""), meta, ...sections });
+    out.push({ slug: name.replace(/\.md$/, ""), meta, ...sections });
   }
   return out;
 }

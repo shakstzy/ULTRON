@@ -161,9 +161,10 @@ attachments:
   sender: me
   sent_at: '2026-03-30T04:05:56.736413-05:00'
   sha256: 05f8f2f24e1f450959570a2b9949136410a936bd9fd6d10cca85eda94c68a838
-  description: null
-  description_model: null
-  extracted_at: null
+  description: '"Create New Group" modal with "Enter group name" input and a digital
+    QWERTY keyboard.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:45:36.711482+00:00'
   source_available: true
 - id: ec8fa615b9f2722b
   filename: IMG_0234.png
@@ -184,9 +185,10 @@ attachments:
   sender: me
   sent_at: '2026-03-30T04:06:11.149410-05:00'
   sha256: 3813ec44a3e265551d1b6b5718b8fd5dc43db06d572d55c5643c30469c56009a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mac screenshot of SHAK Athletes interface with a 'No athletes found'
+    message on a dark grid.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:46:13.648889+00:00'
   source_available: true
 - id: c02f25d55699f38c
   filename: IMG_8741.png

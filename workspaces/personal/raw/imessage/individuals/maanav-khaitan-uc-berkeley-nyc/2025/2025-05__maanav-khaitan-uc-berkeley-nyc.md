@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-05-27T22:39:11.974952-05:00'
   sha256: 058f39f16ab1c30545724ef957cda3df8485df6e4a94de55413cbb74f67275c3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Adi's Slack message to Shreya about a pre-seed raise, including link
+    tinyurl.com/synps.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:27.048560+00:00'
   source_available: true
 - id: 525b78b542b50cb8
   filename: IMG_1912.png

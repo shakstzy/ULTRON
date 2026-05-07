@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.832864+00:00
+ingested_at: 2026-05-06T22:18:21.464152+00:00
 ingest_version: 1
 content_hash: blake2b:162105c225df69bf70abe484a7548c6b
-provider_modified_at: 2026-05-06T22:17:40.832864+00:00
+provider_modified_at: 2026-05-06T22:18:21.464152+00:00
 
 title: Colin | Kiln
 slug: colin-kiln
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+31 6 34124866"]
   slack: []
-last_synced: 2026-05-06T22:17:40.832864+00:00
+last_synced: 2026-05-06T22:18:21.464152+00:00
 global: true
 ---
 

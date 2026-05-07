@@ -9,7 +9,7 @@ phone: null
 status: "active"
 first_seen: "2026-02-16T00:00:00Z"
 last_activity: "2026-02-28T08:25:00Z"
-last_scrape: "2026-05-01T06:10:08.816Z"
+last_scrape: "2026-05-06T22:50:16.152Z"
 previous_slugs:
   - "claudia-tinder-austin-2"
 migrated_from_shakos: "claudia"
@@ -52,6 +52,21 @@ last_profile_diff: "2026-05-01T06:10:08.816Z"
   "changed": {}
 }
 ```
+
+## Visual
+
+<!-- engine=gemini-pro account=avery@seedboxlabs.co ts=2026-05-06T22:50:35.983Z -->
+
+- vibe: casual y2k nightlife
+- settings: apartment with string lights, Hollywood street, dive bar or music venue, green hedge wall, festive outdoor plaza
+- activities: nightlife, going out
+- props: flower-shaped string light lamp, art prints on wall, VIP guestlist sign
+- pets: (none observed)
+- group_context: mostly alone, one photo with a friend
+- style_signals: y2k fashion, graphic sweatshirt, trucker hat, velvet mini dress, flare jeans, large hoop earrings, wire-rimmed glasses
+- environments: home / outdoor / nightlife mix
+- notable_signals: "GIRLS ♥ MY SWAG" sweatshirt, "HOLLYWOOD California" trucker hat, unique flower lamp
+- red_flags: (none observed)
 
 ## Conversation
 

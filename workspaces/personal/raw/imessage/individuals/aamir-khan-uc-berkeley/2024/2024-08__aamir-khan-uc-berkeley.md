@@ -33,9 +33,10 @@ attachments:
   sender: aamir-khan-uc-berkeley
   sent_at: '2024-08-26T20:48:15.144047-05:00'
   sha256: 5b5d0114d34ee7490ad16245615a1d8bf9150fe13cbb80f926d65b0b722cb3b6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of an iMessage thread with Dante about a resume and job
+    openings at SKALE.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:19.245260+00:00'
   source_available: true
 chat_message_guids_count: 62
 deleted_upstream: null

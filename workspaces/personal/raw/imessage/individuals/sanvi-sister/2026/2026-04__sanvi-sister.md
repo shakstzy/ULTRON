@@ -436,9 +436,10 @@ attachments:
   sender: me
   sent_at: '2026-04-29T05:34:12.247900-05:00'
   sha256: cf3e08f0de14b68aa8e74addb57094ddd51f1495f1423531dbf8b949d52815a6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man kisses a woman on the cheek at night with a city skyline in the
+    background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:35:15.753185+00:00'
   source_available: true
 - id: 29fd8895c7f56637
   filename: IMG_8296.jpeg

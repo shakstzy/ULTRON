@@ -44,9 +44,9 @@ attachments:
   sender: me
   sent_at: '2026-04-24T21:11:35.206000-05:00'
   sha256: 9ba1a106f20e67fe5daa88286f38c222a887815f9f3bce1cd14ea0c98a044752
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dark-mode digital map of bars and clubs on 6th Street in Austin, Texas.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:25.285722+00:00'
   source_available: true
 - id: 8c02f1dff117f25e
   filename: A53CAB7A-AAD8-40E5-956A-A3DE2ABB4913.pluginPayloadAttachment

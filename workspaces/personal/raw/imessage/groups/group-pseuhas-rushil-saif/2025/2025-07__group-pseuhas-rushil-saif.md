@@ -22,9 +22,9 @@ attachments:
   sender: me
   sent_at: '2025-07-02T22:47:51.343710-05:00'
   sha256: eb16360f0a6486b8ceddec7042c8c7632ffd33d28b518e8eee156f1a56c29d44
-  description: null
-  description_model: null
-  extracted_at: null
+  description: New Jersey driver's license for Ali Saif Tahir.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:10:02.956881+00:00'
   source_available: true
 - id: 795a8bfcf8624283
   filename: IMG_7451.PNG
@@ -33,9 +33,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-07-03T06:45:15.443797-05:00'
   sha256: f9c68d4996a6c4b572549911785bbc0dc41b62c3c38651941b4357cb189f6b2b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of texts with JohnMathew negotiating a $500 deal for 8oz
+    of mushrooms.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:09:59.284523+00:00'
   source_available: true
 - id: 9affa463de739ba5
   filename: 77325536563__02B5EC3C-6F47-4E94-95EE-FE547AF65F91.heic
@@ -56,9 +57,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-07-03T12:09:41.951568-05:00'
   sha256: 499a13fc934779092830248f6e7b4852dcd1e8545cda9fd1bd72d953ef1fbd6b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A hand holds a red cylindrical portable air pump with a circular plastic
+    grille.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:10:07.640965+00:00'
   source_available: true
 - id: 0cce7ce8484a0413
   filename: IMG_7558.PNG

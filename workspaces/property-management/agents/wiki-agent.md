@@ -25,7 +25,10 @@ For each new raw file:
 
 ## Schema-specific rules
 
-<populated at bootstrap from the workspace's schema + Q8>
+- All wiki pages must follow the per-type frontmatter declared in `schema.md`. Reject pages missing required fields.
+- Cross-workspace entity references go through `[[@slug]]` (global) per `_shell/docs/entity-stub-format.md`.
+- Workspace hard rules in `CLAUDE.md` apply on every page write.
+- Sensitive content (per `CLAUDE.md` hard rules) lives in `raw/` only and never appears in `wiki/`.
 
 ## Outputs
 

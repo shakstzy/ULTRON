@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2026-04-02T21:57:35.454495-05:00'
   sha256: 9db6879c4b2a2bced804bc23011f16b9b7bd3f002e594cc3b87b1946378de5da
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Eight headshots of an investment team including Andrew Chen and Emily
+    Bennett.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:17.530681+00:00'
   source_available: true
 chat_message_guids_count: 4
 deleted_upstream: null

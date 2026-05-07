@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-03-04T13:01:21.217329-06:00'
   sha256: 57251787af0ec0e112cdfe7b2dba8afee0e7c1c4a1c8d8b32502cbf5cc8e47f0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Calendar snippet showing Business Development and Partnership Announcements
+    weekly meetings.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:29.492284+00:00'
   source_available: true
 - id: d71ecfa9d71a56a9
   filename: IMG_2648.png
@@ -45,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-03-04T14:32:49.494344-06:00'
   sha256: 98a50dd46105a994aa1a9e3259f6609dc1254d760adf6120e2a5ab5cfa56ab2b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google Meet screenshot with Sarah Baxendell, Abraham Choi, Alexis Johnson,
+    and Arth Patel.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:34.571337+00:00'
   source_available: true
 - id: 4bed182b914bcc36
   filename: IMG_6562.PNG
@@ -56,9 +58,10 @@ attachments:
   sender: me
   sent_at: '2025-03-06T04:35:20.687000-06:00'
   sha256: 5648e02efdbb9590b9c012cfbc2eeaebc8d137c7499c2d49cd4d4294625e3e0f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram DM from itsarya_k with shared reels and the text "I will
+    be bridging now."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:34.971334+00:00'
   source_available: true
 - id: f2ac6db32a4606f6
   filename: IMG_6568.PNG
@@ -67,9 +70,10 @@ attachments:
   sender: me
   sent_at: '2025-03-07T16:49:27.938000-06:00'
   sha256: 50207d9a6288e1771a8503095c263e5010cdf66a99639251a19a68335fa011ba
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram Story screenshot of a Spider-Man meme about hiding your true
+    self by not liking a reel.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:45.484569+00:00'
   source_available: true
 - id: b7b54e4c6f257bb4
   filename: IMG_6761.png
@@ -78,9 +82,10 @@ attachments:
   sender: me
   sent_at: '2025-03-11T12:15:04.835703-05:00'
   sha256: 073236cf38d7318b6895bda1faa56a038985aae7c8d2c72ac87d1cbff7f798d3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat with Aarushi Austin discussing a $2,500 budget for shoes,
+    clothes, and property.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:35.832939+00:00'
   source_available: true
 - id: 33f0f44737b0f931
   filename: IMG_7319.png

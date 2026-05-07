@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-06-18T14:34:35.952292-05:00'
   sha256: 8bbefd1a05570b0cffa43663f86bedc1275a0b3cc34ed7643fddb1d061e9dcd3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: NYC Eataly Vino storefront with red "Eataly Sale" signs advertising
+    up to 50% off wines.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:59.140115+00:00'
   source_available: true
 chat_message_guids_count: 31
 deleted_upstream: null

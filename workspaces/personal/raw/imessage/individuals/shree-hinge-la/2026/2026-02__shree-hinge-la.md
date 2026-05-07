@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2026-02-20T00:06:53.454203-06:00'
   sha256: 017fee46c3aa2b0c7e95077bfeca8cc688d3bae657ca7cd5f103135bc26fe56a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Digital red pool table with a cue ball, racked balls, and a large central
+    play button.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:41:20.951478+00:00'
   source_available: true
 chat_message_guids_count: 100
 deleted_upstream: null

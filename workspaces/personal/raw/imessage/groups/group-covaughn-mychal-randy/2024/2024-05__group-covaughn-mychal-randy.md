@@ -22,9 +22,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2024-05-01T17:02:43.699543-05:00'
   sha256: fe3387270e138109b2e819eb6d4b307228796dd9da78daa90c1ba4b9fa7001ee
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Howard from The Big Bang Theory sitting on a couch saying "Can I get
+    a Hallelujah!"
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:25.519679+00:00'
   source_available: true
 - id: 5ed3d4e9b0048f19
   filename: tmp.gif
@@ -33,9 +34,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2024-05-01T17:34:34.748858-05:00'
   sha256: 4751ccb92531c4b6fcfcc0314d86df490584c27e2d178f8f0d6f4bf7bba5895d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Abhishek Bachchan on a talk show with the caption "BRACE YOURSELF"
+    overlaying the image.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:25.882193+00:00'
   source_available: true
 chat_message_guids_count: 16
 deleted_upstream: null

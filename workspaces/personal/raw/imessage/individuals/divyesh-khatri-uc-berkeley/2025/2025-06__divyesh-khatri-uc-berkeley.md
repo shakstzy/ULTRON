@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-06-27T18:40:05.115000-05:00'
   sha256: 0b99166523683e5dd535f8054c2423f785647f38d12511ab20af170b102b20b1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Ticket for "DeFi After Hours @ Permissionless" at 10 Theatre Alley,
+    NYC, starting at 7 PM.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:47.945837+00:00'
   source_available: true
 - id: 2aee7bbd4998c8fc
   filename: 77294414676__636AED74-A50A-4E96-8814-202B8FAB12BE.mov

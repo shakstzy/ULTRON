@@ -22,9 +22,10 @@ attachments:
   sender: maanav-khaitan-uc-berkeley-nyc
   sent_at: '2025-03-22T00:10:56.361356-05:00'
   sha256: 37a652171423b61c83b07271cb1258598de6fe595a505940bdabe7c392f0572b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling young man in a black hoodie and jeans hangs from a tree branch
+    in a forest.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:48.870092+00:00'
   source_available: true
 - id: 726153ec6beb2473
   filename: IMG_0954.jpeg
@@ -44,9 +45,9 @@ attachments:
   sender: me
   sent_at: '2025-03-23T13:15:46.196000-05:00'
   sha256: 569ece55b9709121f483738ba473d44ac268dd30dc88dbe41c7ab7b96aba5e59
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Passport-style headshot of a man on a textured blue security background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:07.699933+00:00'
   source_available: true
 - id: 236278961e8dcd69
   filename: IMG_8393.png
@@ -55,9 +56,10 @@ attachments:
   sender: me
   sent_at: '2025-03-23T13:16:02.001000-05:00'
   sha256: 50fc959d75caeee771f554daadcd7f1b3813a164f2519b6d7f1bb0ac9f8da5e9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A group portrait of characters from the Japanese children's anime series
+    Anpanman.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:52.633112+00:00'
   source_available: true
 - id: 275317c6325a1216
   filename: IMG_1646.png
@@ -114,9 +116,10 @@ attachments:
   sender: me
   sent_at: '2025-03-23T13:23:51.296000-05:00'
   sha256: d27b7d52d6e8235e3fc31a3ba155419acd33eceadd6b3aa7f59de07c55da137c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Digital collage of a religious painting with friends' faces superimposed
+    on the figures.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:55.310291+00:00'
   source_available: true
 - id: beae475dc26599c1
   filename: IMG_1197.png

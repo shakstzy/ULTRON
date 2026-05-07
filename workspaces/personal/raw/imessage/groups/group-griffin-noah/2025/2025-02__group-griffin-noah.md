@@ -22,9 +22,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2025-02-05T18:20:47.920196-06:00'
   sha256: 9065e71bd41fd9aa000d0bb12a758696ad523b9cf9df40e57ffca197a8ffb694
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Pink Whitney Pink Lemonade shooters on a shelf next to Snoop Dogg's
+    Cali Cocktail boxes.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:41:35.625108+00:00'
   source_available: true
 chat_message_guids_count: 3
 deleted_upstream: null

@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-03-27T19:25:08.953000-05:00'
   sha256: ac99fb5536c3c2417362cc747b5419cc105019cc0e807cfb580932f615ba3f07
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Amazon app screenshot showing pending flower and condom orders with
+    $627 savings.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:49.480251+00:00'
   source_available: true
 - id: 57b92f235322755a
   filename: IMG_7373.PNG
@@ -45,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-03-31T01:15:52.581000-05:00'
   sha256: 886de59016e3cb6bd782b53fbcfe87e824dde62d730aa63073670417afe1b452
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iOS screenshot of Google search results for the 2025 Ultra Music Festival
+    in Miami.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:03.388531+00:00'
   source_available: true
 chat_message_guids_count: 139
 deleted_upstream: null

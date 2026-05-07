@@ -198,9 +198,10 @@ attachments:
   sender: me
   sent_at: '2025-12-18T11:49:29.207000-06:00'
   sha256: 19f0658b062bf6f2061b9b14db6607dc40f41cd44a4b49976a492a941cfe8263
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Disney's Maui, a muscular tattooed man with curly hair, holding a large
+    bone fishhook.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:11.740163+00:00'
   source_available: true
 - id: 62377ca514f4a987
   filename: IMG_8355.jpeg
@@ -269,9 +270,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2025-12-23T14:40:01.283470-06:00'
   sha256: f589dd86812b17cd7d2fe5c1afc02cbcf5c9d3e45e5f0c11827e691c9090e190
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screen recording of a Hinge dating profile for Ayesha, a 20-year-old
+    University of Michigan student.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:22.682383+00:00'
   source_available: true
 - id: b5a67da1c97bcb04
   filename: IMG_8373.PNG
@@ -292,9 +294,9 @@ attachments:
   sender: me
   sent_at: '2025-12-23T22:31:59.531000-06:00'
   sha256: 7c3f870538671829252712c4861f69435be1639570d3dd9e239251275a93e19c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iOS contact header for Rushil in Copper Canyon, TX with RJ initials.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:10.950373+00:00'
   source_available: true
 - id: 54dbf702fe878d04
   filename: IMG_3205.png

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-04-28T23:34:01.193655-05:00'
   sha256: 00ca4f93c5a7a4de494d9af7b3829b827fbca385457ea803da613f2afa908af1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: TikTok profile of @shakstzy_ showing 2,225 followers, 21.5K likes,
+    and a Linktree URL.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:40:27.180924+00:00'
   source_available: true
 - id: 61b78d019923bf59
   filename: IMG_8462.jpeg
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2024-04-28T23:34:01.193655-05:00'
   sha256: b43cb0a9e60f9dc895d361644b4feedc3ac86507c6c8be6ddb9cb694a44bb06d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: TikTok profile for user @spac3xx_ showing 320 followers and a grid
+    of video thumbnails.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:37:56.081136+00:00'
   source_available: true
 - id: fb66861fbb8a76e6
   filename: 73605809453__98BD6BBA-A61A-44BD-9B65-B590FA0B0BDA.jpeg

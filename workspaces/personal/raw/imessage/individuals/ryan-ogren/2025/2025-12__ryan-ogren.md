@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-12-24T17:16:18.494045-06:00'
   sha256: 32fe58f3f0139ded00d6f7872ad155e61b11c0f8164c96a24a584efe4414c3ed
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in Cardinals jersey shrugs while sitting on washing machines in
+    a teal-lit laundromat.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:46:02.052702+00:00'
   source_available: true
 - id: 0277ff0a49597ac3
   filename: IMG_0428.png
@@ -104,9 +105,10 @@ attachments:
   sender: me
   sent_at: '2025-12-24T18:24:52.170202-06:00'
   sha256: d9dc5e853134272ed925643d1dd4695662fb66a7b34a286d6c9b31d6a3a73260
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a denim jacket laughs in front of traditional architecture
+    and pink blossoms.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:46:26.114933+00:00'
   source_available: true
 - id: b617f511b80e209b
   filename: MPEG-4 movie.mov
@@ -115,9 +117,10 @@ attachments:
   sender: me
   sent_at: '2025-12-24T20:44:24.940337-06:00'
   sha256: ca733eefed51020ca584bf1ef08d95c954e007a53a77cf1efe32a83201eee7b2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a black hoodie and sunglasses sings in a studio while sitting
+    on a director's chair.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:47:06.071723+00:00'
   source_available: true
 - id: 7db615b8caf13e08
   filename: IMG_6953.png
@@ -266,9 +269,10 @@ attachments:
   sender: me
   sent_at: '2025-12-25T01:25:59.492660-06:00'
   sha256: ee4e0ea478fdc30755204433818b7ed249ffe61edc5876ab9801b2dd3064b9d0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man with a mustache and beard wearing a tan Gucci scarf in front
+    of a palm tree.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:46:17.075027+00:00'
   source_available: true
 - id: c459b4ec2d845eb6
   filename: IMG_4355.png
@@ -301,9 +305,10 @@ attachments:
   sender: me
   sent_at: '2025-12-25T01:26:34.015158-06:00'
   sha256: e352175b239fa299992c1a3c232d77d5a4f555a9c2858d804f2b8b2804237244
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in an astronaut suit with purple flowers filling his collar against
+    a pastel sky.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:46:54.839334+00:00'
   source_available: true
 - id: 1285dae61229b817
   filename: IMG_6174.png

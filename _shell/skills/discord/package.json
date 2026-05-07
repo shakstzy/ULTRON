@@ -1,0 +1,13 @@
+{
+  "name": "ultron-discord",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "ULTRON Discord skill: read/ingest DMs as Adithya via patchright Chrome session.",
+  "scripts": {
+    "postinstall": "patchright install chrome"
+  },
+  "dependencies": {
+    "patchright": "^1.52.5"
+  }
+}

@@ -22,9 +22,10 @@ attachments:
   sender: prabhat-nuthakki-uc-berkeley
   sent_at: '2025-10-03T07:33:22.695814-05:00'
   sha256: f6c0206f76b8f3d1245c06602be0fd6ab9e704e5a1beabb3d027cd2ab58eece2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of Rushil telling Brochacho he's at Amber Room
+    with a table.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:41.818942+00:00'
   source_available: true
 - id: 0c561f7800610605
   filename: IMG_1933.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-10-03T11:28:38.231310-05:00'
   sha256: 9eec97c664936ee0f7b79c4d1bf4b7d5b4c989bab29a0da95e07edb1e7e8248c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "iMessage chat with Rushil about Alice Deejay\u2019s \u201CBetter Off\
+    \ Alone\u201D and hitting nitrous to it."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:46.911949+00:00'
   source_available: true
 - id: 4fd2ee7b93db0781
   filename: 1FE9190E-444C-4AC2-B218-CD865A52F55A.MOV
@@ -44,9 +46,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-10-26T09:56:12.633515-05:00'
   sha256: 3842ffd5e487bb8601c50dd581459f46643ba1a9aed414c19f9c7590d54495a0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person sits on a bed by a window and uses a handheld device to blow
+    thick vapor into the air.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:39.242498+00:00'
   source_available: true
 chat_message_guids_count: 163
 deleted_upstream: null

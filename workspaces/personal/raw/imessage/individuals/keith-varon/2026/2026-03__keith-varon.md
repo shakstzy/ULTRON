@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-24T01:34:10.842915-05:00'
   sha256: 4420abe328c6ad353c2485df62f854a6d3dd4d5d6c0d271b0412ae42d235d1d9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram DM of a user asking @Shak STZY for a music feature on a "maranatha"
+    song.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:59:27.723773+00:00'
   source_available: true
 chat_message_guids_count: 7
 deleted_upstream: null

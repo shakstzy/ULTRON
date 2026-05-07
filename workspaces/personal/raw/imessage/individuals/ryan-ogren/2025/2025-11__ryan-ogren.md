@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-11-04T17:32:56.084577-06:00'
   sha256: 7d6d462e331ea9c239bc74a3cae658051f1006212196eef2534958c125ef2023
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram feed screenshot showing itssnowwife's music video announcement
+    with slushppy.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:47:03.131262+00:00'
   source_available: true
 chat_message_guids_count: 4
 deleted_upstream: null

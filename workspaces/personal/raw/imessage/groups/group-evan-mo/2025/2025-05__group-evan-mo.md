@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-05-22T22:59:23.693000-05:00'
   sha256: e830f4a854693f9c2032b5d8b233a37804581dcd70707b35bc158abb35cc24aa
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a 'gucci bag' note by Mo Alobaidi with an App Store download
+    prompt.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:50.434970+00:00'
   source_available: true
 - id: 3fb1485701adb215
   filename: C731C045-18AD-436E-8C91-DA03C1A48E6D.heic
@@ -33,9 +34,10 @@ attachments:
   sender: mo-snaps-uc-berkeley
   sent_at: '2025-05-22T23:00:07.496531-05:00'
   sha256: a2a6e83de090c9470606904cbc4b62403f669c72a6b972ca989c38c844a9e116
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Portrait of a bearded man smiling, wearing a white turban and robe
+    on a black background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:06.331887+00:00'
   source_available: true
 chat_message_guids_count: 34
 deleted_upstream: null

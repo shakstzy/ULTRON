@@ -56,9 +56,10 @@ attachments:
   sender: evan-renter
   sent_at: '2025-10-23T11:52:17.642792-05:00'
   sha256: 07953c0ca251b0f509f843d9f7916c81f6e29b8ab12fed5e5323d31334751169
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of Sasoon agreeing to give Mr. Feldman's friend
+    an accident repair quote.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:41:57.549895+00:00'
   source_available: true
 - id: 5d0c4b8764b1b8a5
   filename: Sasoon.vcf
@@ -125,9 +126,10 @@ attachments:
   sender: me
   sent_at: '2025-10-28T14:40:48.669091-05:00'
   sha256: 8e3ced006ae4777197ac51b40964046f8d59f6dd2743de7d6b7dcdc3115788e4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Text thread with John about rent status and a request to remove shoes
+    on the first floor.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:42:16.158251+00:00'
   source_available: true
 - id: b8aeb2b589321bc6
   filename: IMG_0856.png

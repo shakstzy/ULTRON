@@ -8,7 +8,7 @@ person_id: "60445ee45b7d3e0100db1e7c"
 phone: null
 status: "new"
 first_seen: "2026-04-07T00:00:00Z"
-last_activity: "2026-04-07T05:10:00Z"
+last_activity: "2026-05-07T00:37:11.150Z"
 last_scrape: "2026-05-01T05:49:03.854Z"
 previous_slugs: []
 migrated_from_shakos: "callie"
@@ -87,8 +87,10 @@ last_profile_diff: "2026-05-01T05:49:03.854Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 00:37 posing next to an "Unexploded Munitions" sign is either peak camping or you have very different risk tolerance than most people. which is it
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 00:48 queued_auto (auto, opener) [draft:972633ab] lint=true "posing next to an \"Unexploded Munitions\" sign is either peak camping or you have very different risk tolerance than most people. which is it"
+- 2026-05-07 00:37 sent (auto, auto-or-hitl) [draft:972633ab] lint=true "posing next to an \"Unexploded Munitions\" sign is either peak camping or you have very different risk tolerance than most people. which is it"

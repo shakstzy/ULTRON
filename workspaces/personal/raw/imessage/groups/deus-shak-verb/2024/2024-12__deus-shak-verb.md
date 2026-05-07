@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-12-03T16:33:42.541722-06:00'
   sha256: c73a09be90d368ec5313ef4bd03027fe1cb482738b9175875ae45886a7885960
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage list showing contacts RSVPing to a housewarming party via
+    Partiful.com.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:29.735189+00:00'
   source_available: true
 - id: 1aac2a16fde5238a
   filename: 7F476AC0-4F69-4AD2-80CE-5641F15C7EE1.png
@@ -33,9 +34,10 @@ attachments:
   sender: amadeus-renter
   sent_at: '2024-12-03T16:36:07.772228-06:00'
   sha256: c03904199ecef1e58e7336faf53cf9e547a6d09f01e24a65ac665c5d260db3c9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A ginger and white cat holding up a yellow fist emoji against a black
+    background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:29.396592+00:00'
   source_available: true
 - id: 94ae3804997f01a4
   filename: IMG_3700.png
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2024-12-04T09:11:24.514952-06:00'
   sha256: dd3354f48074249d522513908d7090e3692477486410abd34f9398083cabe3d3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Southwest WN 4667 from AUS to LAX on Dec 4: departs 2:50 PM, arrives
+    4:15 PM.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:36.882986+00:00'
   source_available: true
 - id: 8942b593a67b30f7
   filename: IMG_4529.PNG
@@ -55,9 +58,10 @@ attachments:
   sender: me
   sent_at: '2024-12-04T14:47:00.751000-06:00'
   sha256: 929b296245a0cb6321f25d27feafb22a47fa7efa56f3f36236ccff38a35a8755
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Southwest flight WN376 from Austin to Burbank on Dec 4, boarding 5:20
+    PM at Gate 18.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:40.142842+00:00'
   source_available: true
 - id: 0def6c3ddfe2d949
   filename: IMG_4599.PNG
@@ -66,9 +70,10 @@ attachments:
   sender: me
   sent_at: '2024-12-08T23:10:23.746000-06:00'
   sha256: f1c9f5fd18ebbed5deb20f5c312b40f2159ab6dad74f262394a1be545f3fe637
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Neighbors app post reporting potential gunshots near Los Angeles Mission
+    College in Sylmar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:34.432705+00:00'
   source_available: true
 - id: 2cd732fa067e887e
   filename: IMG_3989.png
@@ -77,9 +82,10 @@ attachments:
   sender: me
   sent_at: '2024-12-10T14:36:10.933737-06:00'
   sha256: a75d88db1cf5c77cc15638bda9f59ea2fa6d833e3a47f71304c0a9bc7bb72eb7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot showing an estimated delivery of a floor lamp for tomorrow,
+    Dec. 11.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:35.426717+00:00'
   source_available: true
 - id: d239af3d034b8325
   filename: IMG_4232.HEIC
@@ -88,9 +94,9 @@ attachments:
   sender: evan-renter
   sent_at: '2024-12-11T00:42:24.384116-06:00'
   sha256: 9966d270c53aa9c251d008a4054d7e2212ca26cceb79c0d6124fa175e7c5a0c0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A black three-shelf bookcase sitting outdoors on a concrete sidewalk.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:39.204172+00:00'
   source_available: true
 - id: 81ec27ae78777e87
   filename: stunna.wav
@@ -165,9 +171,10 @@ attachments:
   sender: me
   sent_at: '2024-12-17T06:34:37.850873-06:00'
   sha256: 96085b02b7931c02a457ee755cb06e0175135373c89aad11bebef2546b1b9433
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Flight itinerary for Adithya Kumar from LAX to AUS on Dec 18, 2024,
+    confirmation 3HSWIF.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:43.597797+00:00'
   source_available: true
 - id: b91c62938f053868
   filename: tmp.gif
@@ -176,9 +183,10 @@ attachments:
   sender: evan-renter
   sent_at: '2024-12-20T14:13:11.306006-06:00'
   sha256: eefe945ea7fe0640e3006c34558abb0a25682dc901bd7d614cbee49526669fbe
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Animated iridescent 3D text reading "Let Me be Clear" wobbles on a
+    bright orange background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:37.366009+00:00'
   source_available: true
 - id: e0808bedb4affeb6
   filename: IMG_7806.png
@@ -187,9 +195,10 @@ attachments:
   sender: me
   sent_at: '2024-12-29T21:24:20.255427-06:00'
   sha256: 2559742c1c5e243121fde793d7893aebe30cd041c781d18aa548470829db6cf8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: American Airlines flight AA 1291 itinerary from Austin to Los Angeles
+    on January 4, 2025.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:02:38.759901+00:00'
   source_available: true
 chat_message_guids_count: 407
 deleted_upstream: null

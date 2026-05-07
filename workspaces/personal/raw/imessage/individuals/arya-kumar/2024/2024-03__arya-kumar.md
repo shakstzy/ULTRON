@@ -92,9 +92,9 @@ attachments:
   sender: me
   sent_at: '2024-03-29T13:16:47.855684-05:00'
   sha256: 4aa3509206e534e2206d81b1d44241a39400bbf01cc994b3cfb9ce93f31ba20c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A hand holding a can of V8 +Energy Orange Pineapple drink.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:54.015050+00:00'
   source_available: true
 - id: 4be357de18e07dca
   filename: IMG_6292.png

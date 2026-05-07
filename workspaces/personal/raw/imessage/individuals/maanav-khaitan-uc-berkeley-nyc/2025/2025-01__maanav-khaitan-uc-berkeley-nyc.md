@@ -106,9 +106,10 @@ attachments:
   sender: me
   sent_at: '2025-01-22T20:40:39.496794-06:00'
   sha256: 2031001b6797ebd29c0d4dd6d61f9d37359c0871407aa29806e5c22e7f9848b0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'LinkedIn header for Ronit Chawla, a UC Berkeley AI developer with
+    an #OPENTOWORK profile badge.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:46.338399+00:00'
   source_available: true
 - id: 7cc78d551c813b68
   filename: IMG_5091.heic
@@ -224,9 +225,10 @@ attachments:
   sender: me
   sent_at: '2025-01-28T20:38:09.907367-06:00'
   sha256: 67ddd2b2305ab4fc4620671fe1005fb287bfbb3ff4fa331f3eba7a152893f4ae
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A close-up of Gollum from Lord of the Rings with large blue eyes and
+    sparse teeth.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:42.141771+00:00'
   source_available: true
 - id: ffefb7a77af3116a
   filename: IMG_4989.heic

@@ -34,9 +34,10 @@ attachments:
   sender: mom
   sent_at: '2026-05-01T15:57:14-05:00'
   sha256: 46bfe69ef64c1f0ac95395c3af23b1d35405b57559bea10a87337c7865626414
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man with a mustache sits at a Technogym pectoral fly machine in a
+    gym.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:08:09.146071+00:00'
   source_available: true
 - id: 469f48432a5cd3e8
   filename: PXL_20260501_193954985.jpg
@@ -45,9 +46,10 @@ attachments:
   sender: mom
   sent_at: '2026-05-01T15:57:15-05:00'
   sha256: d6a49bce48e626e11fc489536a14cb4001b7b23e9d304109fb96ad03be43a18b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in an olive tee and white shorts stands at a cable machine in
+    a gym.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:08:09.960723+00:00'
   source_available: true
 - id: e29baa2f13c9c014
   filename: PXL_20260501_191614436.jpg
@@ -91,9 +93,10 @@ attachments:
   sender: mom
   sent_at: '2026-05-01T18:46:36-05:00'
   sha256: 518d35694d21eea6c77a69108ada43d292dad94f6a3db8636db6512269ce2405
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling man with curly black hair and a woman in a purple shirt pose
+    for a selfie.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:08:12.390643+00:00'
   source_available: true
 - id: 0e665a4ce3e75bc6
   filename: PXL_20260502_221748496.jpg
@@ -125,9 +128,9 @@ attachments:
   sender: me
   sent_at: '2026-05-02T17:40:20.592063-05:00'
   sha256: fb6b7867a00355b76f7c27869f1267d099e7decd1dd6c0e31e3bc9a35f246661
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A woman in a purple shirt uses a Technogym low row machine in a gym.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:09:56.359505+00:00'
   source_available: true
 - id: 40cfbbd90e8994aa
   filename: IMG_8385.HEIC
@@ -147,9 +150,9 @@ attachments:
   sender: me
   sent_at: '2026-05-02T17:40:20.605481-05:00'
   sha256: 1c1f17e94d1fa0c9ae399205be00d273e1ea5257b8400f9b96f6ff679a9f9719
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A woman in a purple shirt uses a Technogym low row machine in a gym.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:08:25.178306+00:00'
   source_available: true
 - id: 64a3e6fbcd11d780
   filename: IMG_8387.HEIC.jpeg
@@ -158,9 +161,10 @@ attachments:
   sender: me
   sent_at: '2026-05-02T17:40:20.621464-05:00'
   sha256: 4d3c8a482474db06ea68f8d54293dda14a687340b7f1e8b5acbce436131c5630
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A woman in a pink shirt points her finger while seated on a Technogym
+    low row machine in a gym.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:08:27.914991+00:00'
   source_available: true
 - id: 8e68290a863ff42f
   filename: IMG_8387.HEIC
@@ -202,9 +206,10 @@ attachments:
   sender: me
   sent_at: '2026-05-02T17:40:20.647976-05:00'
   sha256: 4d6773fd49a61e7fb9a2c721d05f9eee59c0e663d5e426eef91fd4eddfab8a7f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A woman in a purple shirt uses a Technogym low row machine with a surprised
+    expression.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:10:20.974466+00:00'
   source_available: true
 - id: bdffe1aee37152ca
   filename: IMG_8389.HEIC
@@ -314,9 +319,10 @@ attachments:
   sender: mom
   sent_at: '2026-05-02T21:02:51-05:00'
   sha256: 756798ab489dfcdc6000176c61d5ae80f604e427748367d8b3e5353dda08a5d3
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Four people take a nighttime selfie in front of a large, white Hindu
+    temple gopuram.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:26:30.270017+00:00'
   source_available: true
 - id: 7bc1a1cce6a626f1
   filename: PXL_20260503_014218485.jpg
@@ -370,9 +376,10 @@ attachments:
   sender: mom
   sent_at: '2026-05-03T21:22:50-05:00'
   sha256: 2efdd82b4ca18e7bd3381240dfcf54fcab72bbc8a94a36f1cd03c80e4f29fe1d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man with curly dark hair and a mustache smiles while sitting at a
+    computer desk.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:27:50.109942+00:00'
   source_available: true
 - id: 3d6825aabc933541
   filename: IMG_3126.png
@@ -381,9 +388,9 @@ attachments:
   sender: me
   sent_at: '2026-05-03T22:21:37.957582-05:00'
   sha256: 045062b1e8def486a769722c4942f6dbe7fd01916f00f8108220039906b56a28
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hands wringing water from a white cloth over a blurred green background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:27:11.167401+00:00'
   source_available: true
 chat_message_guids_count: 33
 deleted_upstream: null

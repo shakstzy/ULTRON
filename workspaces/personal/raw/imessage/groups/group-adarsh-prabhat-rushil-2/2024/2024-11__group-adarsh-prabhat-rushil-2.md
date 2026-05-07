@@ -22,9 +22,9 @@ attachments:
   sender: me
   sent_at: '2024-11-30T01:19:02.907706-06:00'
   sha256: a10feca4c65d1eca03095e49c309fd762add99b34b40950ac2bce1af95eda068
-  description: null
-  description_model: null
-  extracted_at: null
+  description: News report showing a Tesla Cybertruck crashed into a tree in Piedmont.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:37:27.467928+00:00'
   source_available: true
 chat_message_guids_count: 5
 deleted_upstream: null

@@ -34,9 +34,10 @@ attachments:
   sender: christine-bailie
   sent_at: '2024-04-08T19:22:15.420510-05:00'
   sha256: cf4c1bed5614d416b753f425bc900fc0b36e12201c3523f60ac7a5efb9d35467
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A woman wearing blue solar eclipse glasses sits in a patio chair looking
+    up at the sky.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:37:26.182736+00:00'
   source_available: true
 - id: 122dfc89ec46fbb5
   filename: IMG_3117.jpeg
@@ -57,9 +58,10 @@ attachments:
   sender: christine-bailie
   sent_at: '2024-04-08T19:22:15.420510-05:00'
   sha256: a9097a97d7702b65397ef5c6ff3cfebf19d02da7728112018056968f7dffb2a8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a white t-shirt looking through yellow binoculars outdoors near
+    green trees.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:37:15.004323+00:00'
   source_available: true
 chat_message_guids_count: 10
 deleted_upstream: null

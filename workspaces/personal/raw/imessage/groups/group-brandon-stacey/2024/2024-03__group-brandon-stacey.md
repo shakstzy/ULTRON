@@ -34,9 +34,9 @@ attachments:
   sender: stacey-brandon
   sent_at: '2024-03-15T10:22:23.830388-05:00'
   sha256: ae275953a616790cf8eff5a5706576d6ae7bee04b636ba62b1adc0800f9a51c5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Blue car parked on a concrete driveway beside a white house and garage.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:27:22.712557+00:00'
   source_available: true
 chat_message_guids_count: 12
 deleted_upstream: null

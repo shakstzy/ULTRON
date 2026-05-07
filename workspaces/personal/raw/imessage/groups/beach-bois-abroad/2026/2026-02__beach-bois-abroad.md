@@ -44,9 +44,10 @@ attachments:
   sender: griffin-noah-roomate
   sent_at: '2026-02-15T13:33:27.803594-06:00'
   sha256: 4092f48d0057b66f9a4907112355ccd1111e1f3f2677cf532343937255314cf1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Duolingo screenshot showing a 688-day Spanish streak and Section 3,
+    Unit 111.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:31.888680+00:00'
   source_available: true
 - id: 8e2c9cad248c0149
   filename: IMG_1077.jpeg
@@ -55,9 +56,9 @@ attachments:
   sender: griffin-noah-roomate
   sent_at: '2026-02-15T13:33:27.803594-06:00'
   sha256: 825e3e1d1e7fc726b239f546ded8078e4792c5aead2cd189abf363a5931e1d64
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Duolingo Spanish progress: 688-day streak, Section 3, Unit 110, "Awakening."'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:42.561410+00:00'
   source_available: true
 - id: 831f2010e51c5754
   filename: IMG_5314.png
@@ -66,9 +67,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2026-02-15T15:56:51.517706-06:00'
   sha256: d16e016f2ac22e5bfe5e8874344273533209613ceed0bde23617c0be457ba324
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Duolingo app screenshot showing Spanish Section 3, Unit 28 'Talk about
+    the body' progress.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:34.690854+00:00'
   source_available: true
 chat_message_guids_count: 26
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-12-25T12:48:22.478073-06:00'
   sha256: 1dd0b88a0a402a9841513a1837643889b716a0bc4cdb30376d0d24433097be7e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: An Uber Eats notification stating that BHUWAN is on the way with a
+    delivery order.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:53:36.198321+00:00'
   source_available: true
 chat_message_guids_count: 1
 deleted_upstream: null

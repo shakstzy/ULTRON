@@ -102,6 +102,24 @@ ACCOUNTS: list[tuple[str, Path]] = []         # (name, home_path)
 _account_lock = threading.Lock()
 _acct_idx = [0]                  # round-robin counter
 _exhausted: set[str] = set()     # account names exhausted in this run
+_acct_stats: dict[str, dict[str, int]] = {}   # name -> {success, rate_limit, other}
+
+
+def reset_account_stats():
+    with _account_lock:
+        _acct_stats.clear()
+
+
+def account_stats() -> dict[str, dict[str, int]]:
+    """Snapshot of per-account success/error counts for cycling verification."""
+    with _account_lock:
+        return {n: dict(c) for n, c in _acct_stats.items()}
+
+
+def _record_call(name: str, kind: str) -> None:
+    with _account_lock:
+        c = _acct_stats.setdefault(name, {"success": 0, "rate_limit": 0, "other": 0})
+        c[kind] = c.get(kind, 0) + 1
 
 
 def init_account_state():
@@ -182,10 +200,12 @@ def kind_of(mime):
     return "file"
 
 
-def gemini_describe_once(path, kind, account, timeout=180):
+def gemini_describe_once(path, kind, account, timeout=180, model=None):
     """Single Gemini CLI call with HOME pinned to a specific account dir.
     `account` is (name, home_path); we set env HOME=<home_path> so the CLI
-    reads that account's oauth_creds.json instead of the global one."""
+    reads that account's oauth_creds.json instead of the global one.
+    `model` defaults to module-level DESCRIPTION_MODEL; pass to use a different
+    model (e.g. gemini-3-pro-preview when Flash quotas are depleted)."""
     if kind not in ("image", "video", "text"):
         return None, None, "unsupported"
     if not Path(path).exists() or Path(path).is_dir():
@@ -193,7 +213,7 @@ def gemini_describe_once(path, kind, account, timeout=180):
     prompt = PROMPT_VISION if kind in ("image", "video") else PROMPT_TEXT
     cmd = [
         "gemini",
-        "-m", DESCRIPTION_MODEL,
+        "-m", model or DESCRIPTION_MODEL,
         "-p", f"{prompt}\n\n@{path}",
         "-o", "text",
         "--approval-mode", "plan",
@@ -201,7 +221,15 @@ def gemini_describe_once(path, kind, account, timeout=180):
     ]
     env = os.environ.copy()
     env["HOME"] = str(account[1])  # account home dir
+    env["GEMINI_FORCE_FILE_STORAGE"] = "true"  # CRITICAL: prevents macOS Keychain from sharing OAuth across "isolated" workers
     env["GEMINI_CLI_TRUST_WORKSPACE"] = "true"  # bypass trust prompt in per-account HOME
+    # Scrub conflicting Google credential envs that would override OAuth file.
+    # Do NOT also set GEMINI_CLI_HOME — bundled CLI has inconsistent semantics
+    # for it across code paths (some treat as ~, others as ~/.gemini), causing
+    # auth lookups to land at <HOME>/.gemini/.gemini/settings.json.
+    for _v in ("GEMINI_API_KEY", "GOOGLE_API_KEY", "GOOGLE_GENAI_USE_VERTEXAI",
+               "GOOGLE_CLOUD_PROJECT", "CLOUDSDK_CONFIG", "GEMINI_CLI_HOME"):
+        env.pop(_v, None)
     try:
         proc = subprocess.run(cmd, capture_output=True, text=True,
                               timeout=timeout, env=env)
@@ -231,10 +259,10 @@ def gemini_describe_once(path, kind, account, timeout=180):
     cap = 100 if kind in ("image", "video") else 200
     if len(desc) > cap:
         desc = desc[: cap - 1].rstrip() + "…"
-    return desc, DESCRIPTION_MODEL, None
+    return desc, model or DESCRIPTION_MODEL, None
 
 
-def gemini_describe_with_retry(path, kind, max_retries=5):
+def gemini_describe_with_retry(path, kind, max_retries=5, model=None):
     """Pull a fresh account from the round-robin pool each attempt.
     On rate_limit: mark that account exhausted, try another. Only after
     ALL accounts exhausted do we cooldown-and-wait."""
@@ -255,11 +283,16 @@ def gemini_describe_with_retry(path, kind, max_retries=5):
             with _account_lock:
                 _exhausted.clear()
             continue
-        desc, model, err = gemini_describe_once(path, kind, account)
+        desc, model_used, err = gemini_describe_once(path, kind, account, model=model)
         if err in ("rate_limit", "ineligible"):
+            _record_call(account[0], "rate_limit")
             mark_exhausted(account[0])
             continue  # try another account immediately
-        return desc, model, err
+        if desc:
+            _record_call(account[0], "success")
+        else:
+            _record_call(account[0], "other")
+        return desc, model_used, err
     return None, None, "rate_limit"
 
 
@@ -353,7 +386,7 @@ def build_path_map(needed_sha_set, workers):
 # ---------------------------------------------------------------------------
 # Phase 3: parallel Gemini describe (with periodic checkpoint)
 # ---------------------------------------------------------------------------
-def parallel_describe(worklist, workers, needed, dry_run, checkpoint_every=100, on_progress=None):
+def parallel_describe(worklist, workers, needed, dry_run, checkpoint_every=100, on_progress=None, model=None):
     """Run parallel Gemini describe. Periodically checkpoints completed
     descriptions to disk by patching frontmatters in batches, so that
     a quota exhaustion / kill mid-run preserves all progress so far."""
@@ -403,11 +436,11 @@ def parallel_describe(worklist, workers, needed, dry_run, checkpoint_every=100, 
                 startup_jitter_done.add(tid)
                 time.sleep(random.uniform(0, 2.0))
         sha, path, kind = item
-        desc, model, err = gemini_describe_with_retry(Path(path), kind)
+        desc, model_used, err = gemini_describe_with_retry(Path(path), kind, model=model)
         if desc:
             return sha, {
                 "description": desc,
-                "model": model,
+                "model": model_used,
                 "extracted_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
                 "error": None,
             }
@@ -504,6 +537,11 @@ def main():
     ap.add_argument("--workspace", required=True)
     ap.add_argument("--workers", type=int, default=DEFAULT_WORKERS)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--limit", type=int, default=0,
+                    help="Smoke-test cap: only describe N attachments. 0 = no cap.")
+    ap.add_argument("--model", default=DESCRIPTION_MODEL,
+                    help=f"Override gemini model (default: {DESCRIPTION_MODEL}). "
+                         f"Use gemini-3-pro-preview when Flash quotas are depleted — Pro and Flash have separate quotas.")
     args = ap.parse_args()
 
     ws_root = ULTRON_ROOT / "workspaces" / args.workspace
@@ -538,6 +576,9 @@ def main():
         path, mime, kind = sha_to_path[sha]
         # Override scan kind with chat.db mime (more accurate)
         worklist.append((sha, path, kind))
+    if args.limit and args.limit < len(worklist):
+        worklist = worklist[: args.limit]
+        print(f"  --limit {args.limit} active: trimmed worklist to {len(worklist)}")
     print(f"\nphase 3: describing {len(worklist)} attachments ({args.workers}x parallel)...")
 
     def progress(done, total):
@@ -550,11 +591,22 @@ def main():
     descriptions = parallel_describe(
         worklist, args.workers, needed, args.dry_run,
         checkpoint_every=100, on_progress=progress,
+        model=args.model,
     )
     elapsed = time.monotonic() - started
     succeeded = sum(1 for d in descriptions.values() if d["description"])
     failed = len(descriptions) - succeeded
     print(f"\n  succeeded: {succeeded}  failed: {failed}  elapsed: {elapsed:.0f}s")
+
+    # Per-account attribution — proves cycling actually distributed work
+    stats = account_stats()
+    if stats:
+        print(f"\nper-account breakdown:")
+        for name in sorted(stats.keys()):
+            c = stats[name]
+            print(f"  {name:35s}  ok={c.get('success',0):4d}  rate={c.get('rate_limit',0):3d}  other={c.get('other',0):3d}")
+        used = sum(1 for c in stats.values() if c.get("success", 0) > 0)
+        print(f"  >>> {used}/{len(ACCOUNTS)} accounts produced at least one success")
 
     print(f"\ndone. Re-run ingest-imessage-oneshot.py to update body lines.")
 

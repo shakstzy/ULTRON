@@ -57,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2025-10-27T15:19:54.374000-05:00'
   sha256: 3b5a1c05e79ee1cfbf1538eecad7ecd05e8f4b4ebda04eac0f6ed5b9c856e83e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Automotive repair estimate summary for a 2019 Toyota Camry totaling
+    $1,184.89.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:35:06.884798+00:00'
   source_available: true
 - id: c80e04cf1f42d75c
   filename: IMG_1138.png

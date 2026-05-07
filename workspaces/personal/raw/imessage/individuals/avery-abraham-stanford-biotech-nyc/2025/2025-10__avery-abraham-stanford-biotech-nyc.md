@@ -57,9 +57,10 @@ attachments:
   sender: me
   sent_at: '2025-10-10T01:55:55.175853-05:00'
   sha256: 879363784eb1856b1556c01c54aebd9be59b719b19d06652af850ddcd8a036dc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram Reel meme of Ken Griffin dancing, mocking Citadel's order
+    flow manipulation.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:47:42.049283+00:00'
   source_available: true
 - id: 173eda4fc7c3c4a5
   filename: IMG_9500.PNG
@@ -116,9 +117,11 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-10-22T18:27:50.718047-05:00'
   sha256: 3ccf7a3bfcb648125b576fe0f27f949cca686e6ab80e076dd564a09fc763a360
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This pitch deck introduces Seedbox Lab's AI-powered at-home device
+    for medical-grade sperm testing. It details their mission to redefine men's health
+    through fertility and longevity tracking.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:48:38.866237+00:00'
   source_available: true
 - id: 20880e7876e66512
   filename: PNG image.png
@@ -175,9 +178,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-10-27T23:24:09.360445-05:00'
   sha256: 6e9d127f0f4382da3101fb64ce9ad70e3379649aa5186042d87f4906719b267f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Summary of WHOOP's $600M revenue, 1.5-2 million subscribers, and target
+    demographics.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:47:24.076285+00:00'
   source_available: true
 - id: 9c6ff2c09445f4f5
   filename: IMG_8732.png
@@ -281,9 +285,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-10-29T12:48:09.486989-05:00'
   sha256: 12200be37df665222e8057fecd8fd20f2b7418fcbdfebce4b237ffaa2ff799cf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Seedbox product roadmap slide detailing fertility and healthspan milestones
+    from 2026 to 2028+.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:48:12.702495+00:00'
   source_available: true
 - id: dd36b552a111f036
   filename: IMG_8882.png
@@ -316,9 +321,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-10-29T14:55:18.975471-05:00'
   sha256: 7951351254cff92256ca2413ab8661a7969eaf39c399888e28c4e3251e864631
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of Abraham inquiring about a ketamine clinic's
+    revenue, debt, and M&A.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:48:47.892616+00:00'
   source_available: true
 - id: 4eb055fbdc193f6f
   filename: IMG_4936.png
@@ -350,9 +356,10 @@ attachments:
   sender: me
   sent_at: '2025-10-30T18:00:44.688000-05:00'
   sha256: 504696c7d43d6f9cd0e8c4b56c79fd393aa583fcf53654d195300351dd361fdc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage with Avery Abraham showing a Seedbox email screenshot and
+    three unsent messages.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:47:48.400126+00:00'
   source_available: true
 - id: 7b76c1be9ffdf523
   filename: IMG_2169.png
@@ -373,9 +380,10 @@ attachments:
   sender: me
   sent_at: '2025-10-30T18:06:38.294000-05:00'
   sha256: eca9c28c3078ef03cafb3d7102526993e5105dfbca2a25562d685cf1857d8b0b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage showing a kitten TikTok and a joke about ketamine business
+    restructuring.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:48:05.392298+00:00'
   source_available: true
 - id: 9dbe04ad363aa1a3
   filename: Seedbox Labs Deck Extended Version.pdf
@@ -434,9 +442,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-10-31T11:17:43.446769-05:00'
   sha256: e87120bf472ff642dd92d1bdb64b0389f5898c45282e642c17bfb8e1c2b47cdf
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a ChatGPT notification stating Avery Haskell's workspace
+    has been deactivated.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:48:05.145152+00:00'
   source_available: true
 - id: 7890d4dd29639b2a
   filename: IMG_8045.png
@@ -457,9 +466,10 @@ attachments:
   sender: avery-abraham-stanford-biotech-nyc
   sent_at: '2025-10-31T12:54:56.524010-05:00'
   sha256: cdd9fa72ebceb3aee345de6297bdf7c648385c3dbdd7d7ddc4d285352449dd4d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: OpenAI Help Center screenshot explaining ChatGPT Pro usage caps and
+    restriction triggers.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:48:51.748226+00:00'
   source_available: true
 - id: 7b846135a948379b
   filename: IMG_3383.png
@@ -480,9 +490,10 @@ attachments:
   sender: me
   sent_at: '2025-10-31T22:10:43.229641-05:00'
   sha256: 47b6123003f9a756732b4a8f60436b9c957c090640de7abfca18ab5eb61aa1b4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a post arguing party animals are better founders over
+    a dark, red-lit venue.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:48:35.103625+00:00'
   source_available: true
 chat_message_guids_count: 1262
 deleted_upstream: null

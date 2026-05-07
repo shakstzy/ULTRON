@@ -34,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2024-04-04T12:40:50.285000-05:00'
   sha256: c5ac935b9b367518a160d8390a82060c38d7e5963722f80618c018fc95410c76
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men pose in a cyan-lit studio with a boom microphone and a circular
+    glowing light.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:35:45.353225+00:00'
   source_available: true
 - id: bc6577d8d69738c9
   filename: IMG_1990.png

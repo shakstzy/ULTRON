@@ -94,9 +94,10 @@ attachments:
   sender: me
   sent_at: '2026-03-25T18:00:38.079789-05:00'
   sha256: d40b0644e0e1d282b349907c95a44c7fe114f78289b07113f4cef8e3df0de9c0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Table of GAN training metrics showing 64% progress at epoch 320/500
+    with 19.537 generator loss.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:35:19.874171+00:00'
   source_available: true
 chat_message_guids_count: 45
 deleted_upstream: null

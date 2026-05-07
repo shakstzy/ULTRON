@@ -22,9 +22,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-17T16:53:28-05:00'
   sha256: e6caa05e5e9a3f0b2af5a70b2ca8cb061b98ffedfaf4cb6412ce6061d59f3722
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hand tightens a wobbly Moen kitchen faucet base and then turns on the
+    water.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:59:59.593826+00:00'
   source_available: true
 - id: f39fe67cf948dadf
   filename: image000000.jpg
@@ -33,9 +34,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-17T16:53:28-05:00'
   sha256: 86de6cf2caeb72b8a05eb8f1763452c0081b5fe2091a0838cf4443c206265448
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Brushed nickel Moen pull-down faucet on a white countertop in front
+    of a window.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:03.659217+00:00'
   source_available: true
 - id: 313087983167eb85
   filename: image000000.jpg
@@ -44,9 +46,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-17T16:57:26-05:00'
   sha256: d228c02ffd8d3315da9f7c237e5af3de750c54d802026c54b8c70a32687cacc0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Stainless steel undermount sink with a brushed metal gooseneck faucet
+    in a white countertop.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:05.122745+00:00'
   source_available: true
 - id: b66cba182a303bac
   filename: 73767719001__BF3006F3-35B2-4657-8C8E-45BFA345216E.heic
@@ -55,9 +58,10 @@ attachments:
   sender: dad
   sent_at: '2024-05-17T17:19:58.871551-05:00'
   sha256: 706727e76758d13a829689b5171ffc8204d9486f7339bfcb3e69e9e0a100332d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Pending $100 Zelle payment to Alex Martinez for painting work on May
+    17, 2024.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:16.774854+00:00'
   source_available: true
 - id: e06a56823f56ec2c
   filename: image000000.heic
@@ -66,9 +70,10 @@ attachments:
   sender: phone-+18054019431
   sent_at: '2024-05-17T17:22:39-05:00'
   sha256: 8220b568cbdad7eae15b2ba83c84dc65133f8bc960980ca24ee69590dcbfa3b7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: SMS notifications for BofA transfers of $800, $300, and $100 from various
+    senders.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:05.573123+00:00'
   source_available: true
 chat_message_guids_count: 34
 deleted_upstream: null

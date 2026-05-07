@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-09-21T17:08:46.991269-05:00'
   sha256: cf69ba0514a7414992bbb87553eb52c44466800d8afc53f1ba8b53f411307a29
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Car window view of a dramatic cloudy sky above a street with a 76 gas
+    station.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:54:26.246298+00:00'
   source_available: true
 chat_message_guids_count: 4
 deleted_upstream: null

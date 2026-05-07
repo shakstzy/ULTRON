@@ -22,9 +22,10 @@ attachments:
   sender: sahil-dutta-producer-la
   sent_at: '2025-10-20T12:09:06.364002-05:00'
   sha256: b2a85f82884fb9c9b439f7234049efec086db4bb5c3f7d817fe3ced44577e927
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Lit diya in an ornate blue bowl with "Happy Diwali" text and golden
+    bokeh lights.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:15.091712+00:00'
   source_available: true
 chat_message_guids_count: 24
 deleted_upstream: null

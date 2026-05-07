@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-10-31T12:05:24.777000-05:00'
   sha256: dc5563f8940bbfded06629aeb56be4d6e6a03ae1411122fc6235fe668c99485f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage notification showing Saif laughed at "The gropist" in a group
+    chat.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:16.649424+00:00'
   source_available: true
 - id: 97d1a610fcfdf411
   filename: IMG_1503.png
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2025-10-31T12:05:37.093000-05:00'
   sha256: 2a8a0e158b2722d047d953e21f26c946006eca17be745a73ece5a2b33bee9208
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a casual conversation mentioning "pseu", "the
+    gropist", and "RUEPER".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:53.732728+00:00'
   source_available: true
 chat_message_guids_count: 13
 deleted_upstream: null

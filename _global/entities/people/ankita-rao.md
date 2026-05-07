@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.743859+00:00
+ingested_at: 2026-05-06T22:18:21.332000+00:00
 ingest_version: 1
 content_hash: blake2b:9a95d06dd7244e2c8ce2b8753b2f273e
-provider_modified_at: 2026-05-06T22:17:40.743859+00:00
+provider_modified_at: 2026-05-06T22:18:21.332000+00:00
 
 title: Ankita Rao
 slug: ankita-rao
@@ -15,7 +15,7 @@ identifiers:
   email: ["ankita.rao57@k12.leanderisd.org"]
   phone: ["+1 512-619-3711"]
   slack: []
-last_synced: 2026-05-06T22:17:40.743859+00:00
+last_synced: 2026-05-06T22:18:21.332000+00:00
 global: true
 ---
 

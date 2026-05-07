@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-02-01T23:59:53.889000-06:00'
   sha256: 3b5cd3da5a1074a329e45ca0bc99b8ca5e726d1917389f1707db640317fc6554
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A text bubble saying "i am going to file a noise complaint" next to
+    a man's profile picture.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:42.813057+00:00'
   source_available: true
 - id: c55f0f24d1f55830
   filename: IMG_1731.png

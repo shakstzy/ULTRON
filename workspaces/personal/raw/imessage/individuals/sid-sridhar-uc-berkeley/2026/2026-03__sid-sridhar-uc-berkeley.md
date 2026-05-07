@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-03-18T01:00:27.305304-05:00'
   sha256: 1872dda3b9911ef2df88ccdad769df21914aa24b77116db674867a1d50772a81
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling man with a beard wearing a blue dress shirt, a striped tie,
+    and a black bag strap.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:58.989669+00:00'
   source_available: true
 chat_message_guids_count: 3
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-11-05T22:25:23.197133-06:00'
   sha256: 871c0c9288cfe30c98d29764b5ff2b4ad23d14a5b4ff77f7d95c9a4f0ca56e56
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Five young men posing for a selfie in a purple-lit music studio with
+    recording gear.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:41:13.594318+00:00'
   source_available: true
 - id: c8e8d302f72897a6
   filename: IMG_1735.heic

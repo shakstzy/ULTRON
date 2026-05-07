@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-06T22:17:40.902197+00:00
+ingested_at: 2026-05-06T22:18:21.590875+00:00
 ingest_version: 1
 content_hash: blake2b:e8fb56e784ecbc6b697e338d6b187409
-provider_modified_at: 2026-05-06T22:17:40.902197+00:00
+provider_modified_at: 2026-05-06T22:18:21.590875+00:00
 
 title: Cameron Jordan Mychal Kendricks NFL
 slug: cameron-jordan-mychal-kendricks-nfl
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16022929237"]
   slack: []
-last_synced: 2026-05-06T22:17:40.902197+00:00
+last_synced: 2026-05-06T22:18:21.590875+00:00
 global: true
 ---
 

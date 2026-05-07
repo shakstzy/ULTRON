@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-04-12T00:09:29.120000-05:00'
   sha256: c2adb939133f6ec69153bcbecbb7babd195882ef96efef7505eaa25fca8ea773
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Side profile silhouette of a person against a large circular purple
+    light.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:02.582421+00:00'
   source_available: true
 - id: 1b23b21c15b45bbe
   filename: DSC02174.JPG

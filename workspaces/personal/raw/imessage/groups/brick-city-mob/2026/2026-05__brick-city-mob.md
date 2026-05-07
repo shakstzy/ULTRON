@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2026-05-02T17:33:30.360053-05:00'
   sha256: 99e0a55be3b0afea437fa97849d2ad00a97d0b9a18a35fde8897ec0ee4cace2e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hand holding a pink vape pen with an amber oil cartridge over a desk
+    with a Geek Bar.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:28.188485+00:00'
   source_available: true
 - id: 3e9f39fdfcbc8d90
   filename: IMG_11F8C20F-B363-404C-BC69-36D7DA198957.jpeg
@@ -56,9 +57,10 @@ attachments:
   sender: brennan-noah-austin
   sent_at: '2026-05-02T17:44:48.186794-05:00'
   sha256: 508231467abcd6e742ddd7a9229765e9cfa76dc5ebf0087a5c0034250fa63974
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Sci-fi meme of a blue skeletal wizard in space with text about 'yart'
+    and 'chat gpt'.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:05:28.218829+00:00'
   source_available: true
 chat_message_guids_count: 24
 deleted_upstream: null

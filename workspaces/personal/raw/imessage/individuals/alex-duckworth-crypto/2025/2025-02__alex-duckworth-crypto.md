@@ -94,9 +94,10 @@ attachments:
   sender: me
   sent_at: '2025-02-14T01:33:49.694000-06:00'
   sha256: 3e13738c1cc293eed325c3819f8aff9ac1cd6bc161e122cd5ecba21fe741f3c5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Sideways shot of a white-tiled subway corridor with advertising posters
+    along the wall.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:41:47.131748+00:00'
   source_available: true
 - id: 031d6dbd7e4691db
   filename: 76121131968__8FFAB153-085A-4E5D-8C0F-304FA41B0321.HEIC

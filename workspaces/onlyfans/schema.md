@@ -6,31 +6,74 @@ Workspace schema. Defines entity types, page formats, and the vocabulary the wik
 
 | Type | Folder | Definition |
 |---|---|---|
-| person | `wiki/entities/people/` | A human in scope for this workspace. |
-<additional types from bootstrap Q3>
+| fan | `wiki/entities/fans/` | A subscriber. Slug is hashed (`fan-<short-hash>`); real handle / billing name lives only in `raw/`. |
+| campaign | `wiki/entities/campaigns/` | A content drop / PPV / mass-message push, dated. |
+| content-piece | `wiki/entities/content/` | A single piece of content (photo set, video, story). |
+| person | `wiki/entities/people/` | Collaborators, photographers, business contacts (NOT subscribers). |
+| company | `wiki/entities/companies/` | Platform, payment processors, agency partners. |
 
 ## Per-type page format
 
-### person
+### fan
 
 ```yaml
 ---
-slug: <kebab>
-type: person
-canonical_name: <name>
-relationship: <enum>
+slug: fan-<short-hash>
+type: fan
+joined_at: <YYYY-MM-DD>
+status: <active | churned | banned>
+tier: <free | basic | premium | vip>
 last_touched: <YYYY-MM-DD>
 ---
 ```
 
-Body sections: `## Context`, `## Active threads`, `## Open questions`, `## Backlinks` (auto-built).
+Body sections: `## Engagement summary`, `## Spend pattern`, `## Notes`, `## Backlinks`. NEVER include real handle or billing name in the wiki page; reference `raw/<source>/<id>` if needed.
 
-<additional per-type formats from bootstrap>
+### campaign
+
+```yaml
+---
+slug: <kebab>
+type: campaign
+launched_at: <YYYY-MM-DD>
+status: <draft | live | ended>
+content_type: <photo-set | video | ppv | mass-dm | story>
+gross_revenue_usd: <number>
+fan_reach: <number>
+---
+```
+
+Body sections: `## Goal`, `## Output`, `## Performance`, `## Lessons`, `## Backlinks`.
+
+### content-piece
+
+```yaml
+---
+slug: <kebab>
+type: content-piece
+created_at: <YYYY-MM-DD>
+format: <photo | video | story | gif>
+duration_seconds: <number>          # video only
+ppv_eligible: <true | false>
+---
+```
+
+### person
+
+Standard person frontmatter (see `_shell/docs/entity-stub-format.md`). Do NOT use this type for subscribers.
+
+### company
+
+Standard company frontmatter.
 
 ## Vocabulary
 
-<populated at bootstrap from Q3 + Q8>
+- "the platform" — OnlyFans
+- "fan" — subscriber (always slug-anonymized in wiki)
+- "PPV" — pay-per-view content
+- "mass DM" — one-to-many DM blast (PUBLISH-gated)
+- "drop" — scheduled content release
 
 ## Schema change protocol
 
-Schema changes are proposed in `_meta/schema-proposals.md` by the lint agent and applied by Adithya weekly. Lint agent never modifies this file directly.
+Schema changes are proposed in `_meta/schema-proposals.md` by the lint agent. Adithya applies changes weekly. Lint agent never modifies this file directly.

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-07-07T19:47:26.139971-05:00'
   sha256: 1c9b44b2c68154b46cb62d7bd9ed6b4bf19d21280a8e1f6e5ff34034b5d2295e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two smiling young men pose in a cave-themed room with rock walls and
+    animal murals.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:51:06.660626+00:00'
   source_available: true
 chat_message_guids_count: 4
 deleted_upstream: null

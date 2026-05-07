@@ -22,9 +22,9 @@ attachments:
   sender: me
   sent_at: '2024-03-28T21:17:27.899000-05:00'
   sha256: ade4c0cd49ece03eab47308170c574b55627a36cc0671681970fb2a8e0a0d222
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A map of Dubai's coast with a pin on the One&Only Royal Mirage hotel.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:52:58.190887+00:00'
   source_available: true
 chat_message_guids_count: 18
 deleted_upstream: null

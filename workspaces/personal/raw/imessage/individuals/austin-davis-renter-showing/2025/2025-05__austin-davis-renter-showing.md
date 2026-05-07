@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-05-11T13:03:46.283352-05:00'
   sha256: ec3f2050e92e8d8be70e597916a1d2c23ea982fc4956ffb3efc9c231d49d18db
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Venmo profile for Kumar Nagarajan with payment history for "Sava" and
+    "Mangos - Ambal".
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:42:52.283414+00:00'
   source_available: true
 chat_message_guids_count: 32
 deleted_upstream: null

@@ -22,9 +22,10 @@ attachments:
   sender: austin-davis-renter-showing
   sent_at: '2025-11-23T11:02:47.436144-06:00'
   sha256: 6c21900263ab7ab9c2846a9e2182f4c0060b1e6fa247348c62831b51c40426f2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Trinity Health document for Mercy Fitzgerald Emergency Department visit
+    on 11/23/2025.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:42:48.785815+00:00'
   source_available: true
 chat_message_guids_count: 46
 deleted_upstream: null

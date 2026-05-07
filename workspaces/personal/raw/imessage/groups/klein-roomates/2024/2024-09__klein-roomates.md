@@ -33,9 +33,10 @@ attachments:
   sender: evan-renter
   sent_at: '2024-09-30T12:10:59.475766-05:00'
   sha256: 3b57d5f651e864980f5e6fe969545016926883a43b6138ab117dca216202672c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Inside a refrigerator showing orange-capped bottles, yogurt, and packaged
+    turkey breast.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:41:25.292752+00:00'
   source_available: true
 - id: aca1e6ef3a49e56c
   filename: IMG_3595.jpeg
@@ -44,9 +45,10 @@ attachments:
   sender: evan-renter
   sent_at: '2024-09-30T16:51:38.523556-05:00'
   sha256: 3e3849685dea895d83ebb89ad657d8d3d11a52675d5cfe7c3a43828e9c0d3a7b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A pile of dust bunnies and a white plastic flosser on a grey wood plank
+    floor.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:41:00.254052+00:00'
   source_available: true
 - id: 7096c9ccdb2f4236
   filename: IMG_3594.jpeg

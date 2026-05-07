@@ -70,9 +70,10 @@ attachments:
   sender: me
   sent_at: '2026-01-28T18:39:10.645000-06:00'
   sha256: 21fc1eb58e5dfbcfd23faa36837b6507200338eebbe93a537e9a73b0a48153c6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Empty room with white walls, brown carpet, black curtains, and a doorway
+    to a tiled floor.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:41.482410+00:00'
   source_available: true
 - id: 2cc18680a823b23a
   filename: IMG_6611.HEIC

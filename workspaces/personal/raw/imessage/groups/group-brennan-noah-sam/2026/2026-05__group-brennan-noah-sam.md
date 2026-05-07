@@ -110,9 +110,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2026-05-03T16:07:52.234139-05:00'
   sha256: 8148a0c75e753cf1d561bcbe3ca30436d7f9a174431d7b96889b76a05b2b8efd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two men in blue shirts and hats take a selfie while holding a beer
+    at a NASCAR racetrack.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:52:38.586106+00:00'
   source_available: true
 chat_message_guids_count: 30
 deleted_upstream: null

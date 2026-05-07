@@ -253,9 +253,10 @@ attachments:
   sender: me
   sent_at: '2024-04-28T18:27:43.778894-05:00'
   sha256: f0215a81861f13ff624f06176dff08539aae5d27458c751524aaff9a75dfe0ae
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Monitor showing a Drake x Playboi Carti type beat YouTube video next
+    to a white beverage can.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:41.289908+00:00'
   source_available: true
 - id: cb8c0b2a0ecb8080
   filename: Falcone 1.2.mp3

@@ -22,9 +22,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-17T17:13:44-05:00'
   sha256: afa597b6ace06ead409a711100462f0523f8c684258e302088dcd738affd3589
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Washing machine detergent dispenser drawer with blue liquid soap and
+    visible residue.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:12.881504+00:00'
   source_available: true
 - id: ba3aa2a44b4f181b
   filename: image000000.jpg
@@ -33,9 +34,10 @@ attachments:
   sender: mom
   sent_at: '2024-05-17T17:13:44-05:00'
   sha256: 96e99523d0dc668bd131c109bdb404e5fd691b97f237eca7ba6b96a2b655e116
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Open black Samsung front-load washing machine showing the stainless
+    steel drum.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:06.794956+00:00'
   source_available: true
 chat_message_guids_count: 11
 deleted_upstream: null

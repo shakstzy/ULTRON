@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-04-28T13:59:39.693000-05:00'
   sha256: 99ee5ba8e9c427478ff942873659b3993b89bd39625b69ba6c931646ff70245c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Music track info for Vazhiyiraen by Anirudh Ravichander, Kwame Fyah,
+    and Vignesh Shivan.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:59:56.329660+00:00'
   source_available: true
 chat_message_guids_count: 81
 deleted_upstream: null

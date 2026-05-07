@@ -22,9 +22,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-11T20:39:27-05:00'
   sha256: 1fcdb05c8c2b3af74955ac83b5401e257cb2a5bedbaa3ebd022029c73b378582
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A hand holds a floral plate with a bacon grilled cheese sandwich and
+    three pickle spears.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:26.669321+00:00'
   source_available: true
 - id: 3e514980e558a428
   filename: image000000.jpg
@@ -45,9 +46,10 @@ attachments:
   sender: mom
   sent_at: '2024-03-12T16:30:49-05:00'
   sha256: 049585f8718de2cc0ef6ade06e0d2d4eb3c66f81781698f04618cf5b88c755bc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A yellow banner titled "Know Your Insanity" followed by text on maturity
+    and personal follies.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:30.154732+00:00'
   source_available: true
 - id: 0f3f927c28a70f80
   filename: 954c01fb-18b5-4e05-83de-1c349fdbcb14.jpg
@@ -56,9 +58,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-12T18:19:27-05:00'
   sha256: ed7b64d17117c83ccbf618062a568acc987ea064b9385923510a8232cb1b8d8a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "Saut\xE9ed spinach with garlic in a bowl and white porridge in a plastic\
+    \ container."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:26.048376+00:00'
   source_available: true
 - id: 14be9579ff01d19e
   filename: 62476ea9-1286-41d1-9a71-0057190f1bc1.jpg
@@ -67,9 +70,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-12T21:34:05-05:00'
   sha256: f710321b30a6fd77a96e4e86f0f93b8068359b048aad98f16c7670fbdcd752d1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Penne pasta with tomato sauce and rosemary in a glass container on
+    a desk by a keyboard.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:31.917096+00:00'
   source_available: true
 - id: 30e862b4764bcc57
   filename: 6caeea4e-fd41-455c-8698-1e72e7f98b24.jpg
@@ -102,9 +106,9 @@ attachments:
   sender: mom
   sent_at: '2024-03-12T22:57:16-05:00'
   sha256: 4e0efd5abc11e9da230b57281bb03096e6903237ff4a3ed89b54552f96f9ac4d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A girl in maroon and two boys sit on a tan couch in front of a staircase.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:38.690564+00:00'
   source_available: true
 - id: ae382866fe9d5bbc
   filename: image000000.jpg
@@ -113,9 +117,10 @@ attachments:
   sender: mom
   sent_at: '2024-03-13T13:22:40-05:00'
   sha256: 55cd10fa5f9efb2c9e37ebc244e8e778548cbe8d33c0953b89f12ce14253968d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A shirtless man grimaces for a selfie with a smiling woman at a table
+    with cookies and cereal.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:37.805433+00:00'
   source_available: true
 - id: c7cec2787749a4af
   filename: image.png
@@ -124,9 +129,10 @@ attachments:
   sender: mom
   sent_at: '2024-03-15T12:21:53-05:00'
   sha256: 3dab6965830003d3eea42e54729063996fdc66d20575193b265f9c2c80c5ca5f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: WhatsApp chat celebrating Gokul's orthopedic surgery residency match
+    at UPenn.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:30.951391+00:00'
   source_available: true
 - id: cf17746403dcfb45
   filename: image000000.jpg
@@ -135,9 +141,10 @@ attachments:
   sender: mom
   sent_at: '2024-03-15T12:29:48-05:00'
   sha256: 8880c3c582480aaa6ee94c0a69c0acd11c02839f33aead7a8213c561bb7d4201
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mixed salad and a glass bowl of oatmeal, both with metal spoons, on
+    a grey countertop.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:32.047250+00:00'
   source_available: true
 - id: aca32e8d25c7671e
   filename: Thumb_Okay.gif
@@ -170,9 +177,10 @@ attachments:
   sender: dad
   sent_at: '2024-03-16T12:14:34.021850-05:00'
   sha256: 2112e278f4a85aaecbaabf17453f51d107076bc73442882873744ad215757b4a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two women with bibs 5268 and 5270 hold hands and cheer at a race finish
+    line near a stadium.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:40.582010+00:00'
   source_available: true
 - id: 7f6db36ff5c24e39
   filename: IMG_7401.MOV.3gp
@@ -205,9 +213,10 @@ attachments:
   sender: mom
   sent_at: '2024-03-17T14:34:50-05:00'
   sha256: e3152e53d66c4fb83674159c4c9857045ee0019e6dee848b3bcb9d84508b240f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a Jordan jacket crouches in a raised garden bed next to a tall
+    wooden fence.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:28:41.205589+00:00'
   source_available: true
 - id: 8c68b9d00a65893f
   filename: image000000.jpg
@@ -227,9 +236,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-17T16:27:21-05:00'
   sha256: 71dd685256c8a5b1fae2a7b3126d60d169c8f4d6b03941ce668c86505447e9a2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Smiling teen with braces holds two gummies next to a bottle of L'il
+    Critters Gummy Vites.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:49.531077+00:00'
   source_available: true
 - id: f6466b1a10ae3c9c
   filename: image000000.jpg
@@ -238,9 +248,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-17T16:27:21-05:00'
   sha256: ca72cecba00f6d95ecf3291d219d84bc0de18576842ff7f872c977a739f3205f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A "WINO" glass of orange juice and vegetable fried rice on a desk with
+    a black keyboard.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:08:17.071961+00:00'
   source_available: true
 - id: 057e0fa16a6495cc
   filename: image000001.jpg
@@ -249,9 +260,9 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-18T08:04:02-05:00'
   sha256: e1340e8f4266408164e956469d1e45de2d57569cac5b0ec196ee26a48c853439
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A pullover, jeans, belt, socks, and beanie laid out on a wood floor.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:34.260106+00:00'
   source_available: true
 - id: 37f5943b8aab0ecc
   filename: image000000.jpg
@@ -260,9 +271,9 @@ attachments:
   sender: mom
   sent_at: '2024-03-18T12:21:02-05:00'
   sha256: 42590bc4ee49394bf2e4f9d51bc5011978cf5faf3e7d87dd302d4213b278bb14
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mung bean sprouts being cooked in a dark frying pan.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:35.958454+00:00'
   source_available: true
 - id: f44dd51561842330
   filename: c1c10f92-e157-478c-a555-18695d051d57.jpg
@@ -271,9 +282,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-18T12:21:08-05:00'
   sha256: 25d84c689c4cad4d9bb7c89dffc856ea3b399b6e8f7c3a1762306df89e3db708
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Burrito bowl with white sauce, a fruit cup, and a TruMoo chocolate
+    milk carton on a counter.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:38.470998+00:00'
   source_available: true
 - id: 5277a727e04da407
   filename: image000000.jpg
@@ -282,9 +294,9 @@ attachments:
   sender: mom
   sent_at: '2024-03-19T12:59:58-05:00'
   sha256: 074b45a7ae62c9d8eb06347f6c709f8573e95b161c124a19604e0953a6571a6c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Fresh mung bean sprouts in a black plastic container.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:37.584870+00:00'
   source_available: true
 - id: cf1244f50169657a
   filename: image000001.jpg
@@ -293,9 +305,10 @@ attachments:
   sender: mom
   sent_at: '2024-03-19T12:59:58-05:00'
   sha256: 73e4f935a659e009c44762691de554679ef817a72c64e2651f38341f0ee387df
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Thick yellow lentil and grain stew with whole peanuts and greens in
+    a blue patterned bowl.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:40.185449+00:00'
   source_available: true
 - id: 470ac0fca414022d
   filename: 73256961302__8A2E1DAA-DE0C-48EB-B07F-C5BE826CC880.fullsizerender.HEIC.jpeg
@@ -315,9 +328,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-19T17:33:08-05:00'
   sha256: 245b7a9831479170b0e0c2a97f97355b2fde210e36e18353462ab45837b030da
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Fitness app screenshot showing 132.0 lb weight, 21.2 BMI, and 10.9%
+    body fat for user arya.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:39.891903+00:00'
   source_available: true
 - id: baed7cb215702397
   filename: image000000.jpg
@@ -326,9 +340,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-19T17:36:04-05:00'
   sha256: a0de7f52a815b1f4f8c3bd5d499d52077676d1c650a28eaeceead56a34383a28
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person holds a glass container of oatmeal on a patio facing a fenced
+    suburban backyard.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:42.129762+00:00'
   source_available: true
 - id: 571027ae698b59b7
   filename: image000000.jpg
@@ -337,9 +352,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-19T22:46:48-05:00'
   sha256: 56fb49d50e6d6740244ad84ffcdf9d1f7cd2b3df44fa117bcce7b6b3e86f726c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Nutrition app screenshot showing 2,902 calories logged today with a
+    goal of 2,910.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:46.644094+00:00'
   source_available: true
 - id: aadaafb984731212
   filename: image000000.jpg
@@ -348,9 +364,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-19T22:46:57-05:00'
   sha256: fe569104d427e12b0522e157e7bd699d8bbebc6666df90fd4b52f16b2f947dd0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Nutrition app screenshot showing macro breakdown: 336g carbs, 75g
+    fat, and 161g protein.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:47.007902+00:00'
   source_available: true
 - id: 24d177e6fedfbd28
   filename: image000000.jpg
@@ -371,9 +388,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-19T22:47:00-05:00'
   sha256: e67c36d91410d279b9e4de57402fa9ea793a57375f0cc94352d317d78d3ff28f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: MyFitnessPal screenshot showing 8 calories remaining after logging
+    oatmeal, milk, and whey protein.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:47.131149+00:00'
   source_available: true
 - id: cd22902c8b17c20d
   filename: image000000.jpg
@@ -382,9 +400,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-19T22:47:03-05:00'
   sha256: 1df5ea67b88ee5939a3db7b9b63bca363c353c5ae01b2dcb90f43c5607e51564
-  description: null
-  description_model: null
-  extracted_at: null
+  description: MyFitnessPal log showing 2,902 calories consumed from a chicken bowl
+    and yogurt with 8 remaining.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:48.679756+00:00'
   source_available: true
 - id: 6c1a299a351925be
   filename: image000000.gif
@@ -393,9 +412,9 @@ attachments:
   sender: mom
   sent_at: '2024-03-19T22:47:11-05:00'
   sha256: 096c8eb583ecf17cb180c50f45ac0e63832da8abbc0414d82e2f4e4f4b3f480e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Jack Black performing a dramatic salute in front of a green chalkboard.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:43.701168+00:00'
   source_available: true
 - id: ddc39296579e7df9
   filename: image.png
@@ -404,9 +423,10 @@ attachments:
   sender: mom
   sent_at: '2024-03-20T11:47:36-05:00'
   sha256: e49be9f3b6ea77d45ca0bdefc1702bd6fa3799fa5fb95846250e220710fe09a2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Text conversation thanking Ambal Auntie for a gift card and celebrating
+    starting at Penn.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:51.701594+00:00'
   source_available: true
 - id: ac328639356dd049
   filename: b0a586f4-cfee-4f10-9f1c-1d85b4718456.jpg
@@ -415,9 +435,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-27T19:54:03-05:00'
   sha256: 0bb8fa15ed2fdf63337f8aa2850d8a82d97ff373ef0f45c32981a4534014e17c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Tortellini with broccoli and green beans on a blue-rimmed plate next
+    to a keyboard.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:46.947131+00:00'
   source_available: true
 - id: 1ce9f4fdb1643c2b
   filename: image000000.jpg
@@ -426,9 +447,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-27T19:54:04-05:00'
   sha256: ea62859be7c594a37c97ab67b5f3d6ef6e3563e35f88bd367dc7ab0d953cd455
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Tomato-sauced ravioli topped with green beans and broccoli on a desk
+    with a keyboard.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:51.087840+00:00'
   source_available: true
 - id: c89e6d2b3bbc3576
   filename: Bbcan_Bbcan5.gif
@@ -470,9 +492,9 @@ attachments:
   sender: mom
   sent_at: '2024-03-28T12:35:12-05:00'
   sha256: 7fa653697c83c779c000d21681a29b7ca37f78efdcc5f9ab8e460eee10e43104
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A thick yellow lentil dal or khichdi with green herbs in a glass container.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:48.421751+00:00'
   source_available: true
 - id: 9ceb4f257c9337c1
   filename: image000001.jpg
@@ -481,9 +503,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-29T12:11:17-05:00'
   sha256: 39e4b30543e12de7091b7185a04c59c5ff2200fc0ced430679941260eadd4e29
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Person in white sunglasses and a black beanie posing in a convenience
+    store snack aisle.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:51.391247+00:00'
   source_available: true
 - id: 5493ce235a6b56e1
   filename: image000000.jpg
@@ -504,9 +527,10 @@ attachments:
   sender: me
   sent_at: '2024-03-29T12:54:19.577906-05:00'
   sha256: ab27ca2fc635c908f1d7fbd16648dbe6868f8267c43e8120a2370bd68fcb2466
-  description: null
-  description_model: null
-  extracted_at: null
+  description: 'Real estate listing for a $625,000 4-bed, 3-bath home at 15946 Sherman
+    Way #12, Van Nuys, CA.'
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:58:51.797310+00:00'
   source_available: true
 - id: aabdba8a0c89bb8c
   filename: IMG_7379.png
@@ -515,9 +539,10 @@ attachments:
   sender: me
   sent_at: '2024-03-30T10:45:16.590657-05:00'
   sha256: fbb7dd58c4065d6ebfc9cff55708067dd67f27727863ebdd87149ec6ecc4231f
-  description: null
-  description_model: null
-  extracted_at: null
+  description: WhatsApp chat proposing rent or relocation for sellers stalling a real
+    estate closing.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:08:00.564184+00:00'
   source_available: true
 - id: 21c1377abdbf842d
   filename: image000000.jpg
@@ -526,9 +551,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-30T19:39:04-05:00'
   sha256: 96502bca03c2e504bd1c368fa8a4fe698794fd748f2871f97b3f1494dead6a9b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Toasted sausage bun, eggs with ketchup, mozzarella salad in a measuring
+    cup, and water.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:08:01.204590+00:00'
   source_available: true
 - id: 93a64a4e2bc8549b
   filename: image000000.jpg
@@ -537,9 +563,10 @@ attachments:
   sender: arya-kumar
   sent_at: '2024-03-30T19:42:16-05:00'
   sha256: 5b3f72220376ced6c54aeb598f0b35116cdc2b3bcd823318c15aa9ad9b533260
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Sausage in a bun, eggs with ketchup, spinach pasta salad, and water
+    on a gray countertop.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:07:54.248139+00:00'
   source_available: true
 chat_message_guids_count: 197
 deleted_upstream: null

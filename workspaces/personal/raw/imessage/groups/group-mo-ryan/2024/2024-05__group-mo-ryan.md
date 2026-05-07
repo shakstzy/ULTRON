@@ -22,9 +22,10 @@ attachments:
   sender: mo-snaps-uc-berkeley
   sent_at: '2024-05-02T16:51:52.865562-05:00'
   sha256: 89aa76a3a2daa4ebaa804c36b94c4742085d9f036c39640e671374725b93df90
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a floral shirt and black cap on a livestream with "Comment"
+    and "Dare" buttons.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:39:06.549963+00:00'
   source_available: true
 chat_message_guids_count: 8
 deleted_upstream: null

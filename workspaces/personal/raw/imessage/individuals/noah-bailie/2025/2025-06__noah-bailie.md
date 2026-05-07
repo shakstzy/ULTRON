@@ -46,9 +46,10 @@ attachments:
   sender: noah-bailie
   sent_at: '2025-06-08T17:21:32.980545-05:00'
   sha256: 3fd7e1bc94ff4bbe29d99ce1a34852781de54dc719a50db59c8a613cd2cc57ca
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dating app chat screenshot where Emily plans a date and asks the user
+    for his phone number.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:35:15.236535+00:00'
   source_available: true
 - id: 04fb817fa152b438
   filename: ScreenRecording_06-23-2025 00-29-52_1.MP4

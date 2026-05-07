@@ -28,6 +28,18 @@ function inferIntent(entity) {
   return "natural_reply";
 }
 
+const REENGAGE_AFTER_DAYS = 5;
+
+// Latest "sent" event timestamp from the outbound log (not draft/queue events).
+function lastSentTimestamp(entity) {
+  const lines = (entity.outbound || "").split("\n").filter(l => l.startsWith("- "));
+  for (let i = lines.length - 1; i >= 0; i--) {
+    const m = lines[i].match(/^- (\d{4}-\d{2}-\d{2} \d{2}:\d{2}) sent /);
+    if (m) return new Date(m[1].replace(" ", "T") + ":00Z").getTime();
+  }
+  return null;
+}
+
 function parseMessages(conversation) {
   return (conversation || "").split("\n").filter(l => l.startsWith("**")).map(line => {
     const m = line.match(/^\*\*(her|you)\*\*\s+\S+\s+\S+\s+(.*)$/);
@@ -92,10 +104,17 @@ async function main() {
 
   for (const ent of entities) {
     if (testLimit > 0 && draftCount >= testLimit) { skipped += 1; continue; }
-    if (ent.meta.status === "unmatched" || ent.meta.status === "gone_dark") { skipped += 1; continue; }
+    if (ent.meta.status === "unmatched") { skipped += 1; continue; }
     if (existingPending.has(ent.meta.match_id) || existingApproved.has(ent.meta.match_id)) { skipped += 1; continue; }
 
-    const intent = inferIntent(ent);
+    let intent = inferIntent(ent);
+    // 5-day re-engage: if we're waiting on her (intent null) and we haven't sent
+    // anything in REENGAGE_AFTER_DAYS days, queue a re-engagement draft.
+    if (!intent) {
+      const lastSent = lastSentTimestamp(ent);
+      const daysQuiet = lastSent ? (Date.now() - lastSent) / 86400000 : null;
+      if (daysQuiet !== null && daysQuiet >= REENGAGE_AFTER_DAYS) intent = "reengage_silence";
+    }
     if (!intent) { skipped += 1; continue; }
 
     // C4 fix: only look up phone if we have BOTH first AND last name (or already-known phone).
@@ -122,7 +141,7 @@ async function main() {
     catch (e) { console.error(`draft_failed ${ent.slug}: ${e.message}`); skipped += 1; continue; }
     draftCount += 1;
 
-    const autoEligible = (finalIntent === "opener" || finalIntent === "reengage_after_imessage_silence") && drafted.lint.pass;
+    const autoEligible = (finalIntent === "opener" || finalIntent === "reengage_after_imessage_silence" || finalIntent === "reengage_silence") && drafted.lint.pass;
     const stage = autoEligible ? "approved" : "pending";
     const id = `${new Date().toISOString().replace(/[:.]/g, "-")}-${ent.slug}`;
     const meta = {

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-01-13T23:52:41.088000-06:00'
   sha256: 535b0bc177ae1b69bfa285a6d3ce88c3507b2f38db532304d6201840233198fc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Laptop screen displaying a calendar with a flight to Los Angeles and
+    various meetings.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:44:23.368372+00:00'
   source_available: true
 chat_message_guids_count: 20
 deleted_upstream: null

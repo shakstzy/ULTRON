@@ -22,9 +22,10 @@ attachments:
   sender: ballr-hallr-la
   sent_at: '2024-10-02T12:39:13.001062-05:00'
   sha256: 29125d8567e0c23ff2d666b150062bff3d7ac35ced123fb4b2c087355866e345
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram profile of Dave Blunts (@iluvyoudaveblunts) showing 121K
+    followers and a post grid.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:40:53.332220+00:00'
   source_available: true
 - id: 39d221365e2cc5e6
   filename: IMG_1014.jpeg

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-09-28T23:58:12.119426-05:00'
   sha256: bb57b4fd3034381ca5cc74633bd60a9637619c235826abb425bb78aaf2160b17
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Stir-fry noodles in a white takeout box with a red dragon logo and
+    a metal fork.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:58.625204+00:00'
   source_available: true
 chat_message_guids_count: 66
 deleted_upstream: null

@@ -70,9 +70,9 @@ attachments:
   sender: me
   sent_at: '2024-08-30T21:13:25.980000-05:00'
   sha256: f1ad83b60420041ca3904126c0da0afd3d5e2c205494bea4e1cc9a02a5a0f1e6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Facebook Marketplace listing for a $50 stainless steel Frigidaire refrigerator.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:42:38.810113+00:00'
   source_available: true
 chat_message_guids_count: 136
 deleted_upstream: null

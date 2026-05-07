@@ -22,9 +22,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2026-01-08T13:40:15.844054-06:00'
   sha256: bf00a73257e427c016209849635e78d922b95ba8cb9ecf41cb0a88ef89b94f38
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a flight 167 itinerary from JFK to HND for Ashok, Bipul,
+    and Rushil Jha.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:43:27.635534+00:00'
   source_available: true
 - id: 3366b00a3f0a4902
   filename: "Screenshot 2026-01-08 at 2.40.32\u202FPM.png"

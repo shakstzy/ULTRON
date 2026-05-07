@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-04-02T03:12:27.362000-05:00'
   sha256: c49ce0a12ccdc6144df35d25037b552f6db02c8fe74a469212d117028ac60b52
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Marvel Rivals victory scoreboard showing player shakstzy as Punisher
+    with 34 kills and 1 death.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:39:56.656503+00:00'
   source_available: true
 chat_message_guids_count: 25
 deleted_upstream: null

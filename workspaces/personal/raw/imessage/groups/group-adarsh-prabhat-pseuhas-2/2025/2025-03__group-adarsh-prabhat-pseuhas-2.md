@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-03-21T22:30:05.378550-05:00'
   sha256: d9230b6048f47f1cbed2f21cedebf387678eac6b084cd3784038b2beaa5585ec
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat about Rushil needing an intervention for ordering whips
+    off Amazon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:31.848725+00:00'
   source_available: true
 - id: fd8dbfb56ead5c00
   filename: 080A8276-7CAB-4686-A625-2745FA1E15EC.mov
@@ -33,9 +34,10 @@ attachments:
   sender: prabhat-nuthakki-uc-berkeley
   sent_at: '2025-03-21T22:31:03.631039-05:00'
   sha256: 722a87b1ca1b24736511d6f3daa92cb60d4c4108e77332216b3dfff5c0f7ad65
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a kitchen opens a green Whip-it! nitrous oxide tank over a
+    box of N2O chargers.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:30.210291+00:00'
   source_available: true
 - id: 3ea3afedb0056170
   filename: IMG_4911.png
@@ -44,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-03-21T22:31:08.246629-05:00'
   sha256: ecf6573d753bafd3a96ea48ef81216e2cc2f9b64e2f9916cfaca3a0a0347ad8a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat from Pseuhas UC Berkeley about ordering whips and canisters
+    from Amazon.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:35.138435+00:00'
   source_available: true
 - id: 636192ddd2ff61b5
   filename: IMG_4339.png
@@ -55,9 +58,10 @@ attachments:
   sender: me
   sent_at: '2025-03-21T22:31:51.502615-05:00'
   sha256: bca003a87488d4a42f7516dbb814c0ffa94b341dd68dbfb2fcb717b869e33280
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage chat discussing someone's use of 15 whipped cream canisters
+    in four days.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:30.251064+00:00'
   source_available: true
 - id: 30c66c6cdb6e47d3
   filename: IMG_1584.png
@@ -66,9 +70,10 @@ attachments:
   sender: me
   sent_at: '2025-03-21T22:34:39.486552-05:00'
   sha256: f364b476c6a3344fd7afa8a7581cccf39922c586290b1332872f627ef17520b1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot from Pseuhas UC Berkeley mocking a person's "agentic"
+    job involving Excel.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:50.843248+00:00'
   source_available: true
 - id: 2c45755b647a8cde
   filename: IMG_6324.png
@@ -77,9 +82,10 @@ attachments:
   sender: me
   sent_at: '2025-03-21T22:36:07.234535-05:00'
   sha256: 538ee54441a4547f63994c1512abb894959c8874368dbc4e47b54a429e596925
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot from Pseuhas UC Berkeley about hearing a canister
+    for two hours straight.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:36.030211+00:00'
   source_available: true
 - id: 08ecf8690d0851ce
   filename: IMG_8166.png
@@ -88,9 +94,9 @@ attachments:
   sender: me
   sent_at: '2025-03-21T23:23:12.586690-05:00'
   sha256: 386d14a07cc0ad6234db30114cb9ba766c493fce45087f55b395a0d72c08afcc
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A smiling young man with dark hair and a mustache wearing a blue shirt.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:35.215643+00:00'
   source_available: true
 - id: f96c6614a4de7434
   filename: IMG_3091.png
@@ -99,9 +105,10 @@ attachments:
   sender: me
   sent_at: '2025-03-21T23:23:23.802504-05:00'
   sha256: 3e3b71ad80e84fd6164c274eb96a8bb989edd8a173a2de6936922b6c646a50f6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Randall Boggs, the purple lizard monster from Monsters, Inc., smirking
+    on a black background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:18.554888+00:00'
   source_available: true
 - id: c7501ead7818309c
   filename: IMG_5520.png
@@ -110,9 +117,10 @@ attachments:
   sender: me
   sent_at: '2025-03-21T23:24:05.368867-05:00'
   sha256: 7612748ba87b0edefd6fd6d8d5a0274bdfca794a12b90cbb6c2109fbb95a786e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: XLR8, a blue and black alien from Ben 10 with wheels on its feet and
+    a long striped tail.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:42.991157+00:00'
   source_available: true
 - id: dce1ddd24cbed982
   filename: IMG_9937.png
@@ -121,9 +129,10 @@ attachments:
   sender: me
   sent_at: '2025-03-21T23:24:30.758048-05:00'
   sha256: b5ba7a40a5df0a3b7eae397c10477fc44bdf31dede6a924f278059a0ddd28dae
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Close-up profile of the alien XLR8 from the Ben 10 reboot on Cartoon
+    Network.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:50.443986+00:00'
   source_available: true
 - id: c9e96fb2ff04d7b5
   filename: IMG_1785.png
@@ -132,9 +141,10 @@ attachments:
   sender: me
   sent_at: '2025-03-22T00:27:10.402663-05:00'
   sha256: d55763d6603bf602f6ffd3f6aa9e06cbbfbec07fbb3eebd0ff5633506766365c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Chamath Palihapitiya speaking into a microphone with two water bottles
+    in the foreground.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:38.877261+00:00'
   source_available: true
 - id: 3a67545eaac007f2
   filename: 76437408925__1252E62F-EB96-42F3-9ED2-A842A528E79D.heic
@@ -143,9 +153,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-03-22T17:08:16.038848-05:00'
   sha256: bb7852b1b06fd89865cf77ba82f633838ba4ea8daad6f56b2bda1fa05705a11d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person in black rests on an Intex air mattress near a grey sofa and
+    a large window.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:44.896457+00:00'
   source_available: true
 - id: 506ae6f4f07631c9
   filename: E0640346-681E-42CE-928F-7639204F7AC0.MOV
@@ -154,9 +165,10 @@ attachments:
   sender: me
   sent_at: '2025-03-30T16:24:09.079357-05:00'
   sha256: ee549d25e9b62c7fdebed55fe311e300973888a479d0d4d004609c08746e2b2e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man on a grey sofa inhales from an oversized pink Hozo vaping device
+    and exhales vapor.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:44.982206+00:00'
   source_available: true
 - id: 9cc853a932e359a2
   filename: 3A9329FA-67C3-4D58-90C2-71D5E9D3CD8D.mov
@@ -165,9 +177,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-03-30T16:26:30.901586-05:00'
   sha256: 66f1249100b67218d039ab49039875efc9d71f95106a597972764dfddff94938
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A pink helium tank floats and hovers over a wooden parquet floor in
+    a kitchen.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:47.075322+00:00'
   source_available: true
 - id: 7e42ee83799ec154
   filename: IMG_5075.png
@@ -176,9 +189,9 @@ attachments:
   sender: me
   sent_at: '2025-03-30T18:25:49.527000-05:00'
   sha256: dd247cc77970391b1b838abe2a72a680181badc3050ffede6415f5d8312ab7a7
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A cartoon of Dora the Explorer with bloodshot eyes holding a cigarette.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:42.270172+00:00'
   source_available: true
 - id: 31aba17b2b301226
   filename: IMG_7313.PNG
@@ -187,9 +200,10 @@ attachments:
   sender: prabhat-nuthakki-uc-berkeley
   sent_at: '2025-03-30T18:32:20.132722-05:00'
   sha256: ace0fc7735a15b6f71ca688fba35f7488eccc3c357e90a2a2fac1bcc0afaf823
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Cartoon man inhaling from a balloon in bed; nurse says, "He's addicted
+    to whippets."
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:48.982611+00:00'
   source_available: true
 - id: 2d03a5d03dbdd49f
   filename: IMG_9483.png
@@ -198,9 +212,10 @@ attachments:
   sender: me
   sent_at: '2025-03-30T18:37:25.048301-05:00'
   sha256: b7fe5d6c7aa24c5015a56fe13701acb745ec836c5763f4aae237b42fc74fe27c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Cartoon girl with a coin jar and purple balloon in a jungle outside
+    a BlackRock building.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:55.879001+00:00'
   source_available: true
 - id: aee3622e8a8e691c
   filename: IMG_3161.heic
@@ -209,9 +224,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-03-30T18:37:52.844796-05:00'
   sha256: 7c680a059219bf2ceadc77e3d063d9bfb581fe873b710d17002b7815b5a85747
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Cartoon of a man in a "SENIOR" hoodie sitting on a couch holding a
+    large pink water bottle.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:49.750887+00:00'
   source_available: true
 - id: 4b913a8b70dc38d7
   filename: 76507099007__3CC7C09C-5ECB-46D8-A720-9CDCB1B973A9.heic
@@ -220,9 +236,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-03-30T18:43:16.105414-05:00'
   sha256: f25eb3c1f8dfe21dad70e497d4e0f25fc9280432ddc3cde6255581c43d88b957
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two striped hampers overflowing with clothes next to a white dresser
+    on a wooden floor.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:58.444254+00:00'
   source_available: true
 - id: 9dff406cab4a5da1
   filename: IMG_6487.JPG
@@ -231,9 +248,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-03-30T18:59:46.044097-05:00'
   sha256: 37aa943850e57ff60eb594d6dabc90226af4331bb6847e66eb7fae50de5f5328
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of Siddharth Prasad suggesting a Tintin comic panel
+    prank for a roommate.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:51.279237+00:00'
   source_available: true
 - id: 6ba8a47f33509311
   filename: IMG_6488.png
@@ -242,9 +260,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-03-30T19:23:52.527733-05:00'
   sha256: 9c43b73062e30c3c608e02f50e2820ab2176120774ea3d438a2387704b3ec167
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iMessage screenshot of a flirty chat about meeting up at Roosevelt
+    Island.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:04.561499+00:00'
   source_available: true
 - id: 535f71ccf172f7c7
   filename: IMG_4630.png
@@ -253,9 +272,9 @@ attachments:
   sender: me
   sent_at: '2025-03-30T19:27:32.836751-05:00'
   sha256: 5cf057696b0068edd3b9216cac665ff6feb315ab0ebe07ad0f8b54d9135116b9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A young South Asian man with wavy black hair wearing a navy hoodie.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:51.891780+00:00'
   source_available: true
 - id: e1f72767467d9fda
   filename: IMG_6483.PNG
@@ -264,9 +283,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-03-30T19:27:48.093168-05:00'
   sha256: ad8cdd04b9526960e47f371e37d52fe37d89fa8a3055e82ce4a004687a9a5b8c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a Seniors 2020 hoodie sits on a couch holding a large pink
+    nitrous oxide canister.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:54.603114+00:00'
   source_available: true
 - id: 5ca5b16b698e7cfb
   filename: IMG_6494.png
@@ -275,9 +295,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-03-30T20:35:19.889733-05:00'
   sha256: 375fe93ef53f2850aafa01e69c6cfca34562681d995440166a72e64353fc3034
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram DM screenshot sharing a contact card for Bipul Auntie Jha
+    with a phone number.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:58.834147+00:00'
   source_available: true
 - id: 9719f372022852f4
   filename: IMG_6493.png
@@ -286,9 +307,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-03-30T20:35:19.889733-05:00'
   sha256: 85c266a376cff856fc66167ee0f85f4c7c393b95bc2c4f8ea3cfaedbf4ba513e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Instagram DM screenshot showing a contact card for 'bipul auntie jha'
+    shared in a chat.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:03.302349+00:00'
   source_available: true
 - id: 7049efa3e4695352
   filename: CARD_6909.vcf
@@ -297,9 +319,10 @@ attachments:
   sender: prabhat-nuthakki-uc-berkeley
   sent_at: '2025-03-31T14:22:05.676661-05:00'
   sha256: 057ea9cceed7b51842171eb728d6498dff04c182e4a0f6bb7ea57ba7498647f4
-  description: null
-  description_model: null
-  extracted_at: null
+  description: This is a vCard contact file for Ashok Jha. It stores his phone number
+    and organizational notes identifying him as a friend of Prabhat.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:02.111988+00:00'
   source_available: true
 - id: a3a7b8348b12fa11
   filename: IMG_3670.png
@@ -308,9 +331,10 @@ attachments:
   sender: me
   sent_at: '2025-03-31T14:22:37.817000-05:00'
   sha256: 73a9cdee5e17923f9ae0577a2fa6d9dac5e90b314a5176c8aa9a575f9fcdd5f9
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A spotted moray eel with its mouth open showing sharp teeth in a coral
+    reef.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:38.365971+00:00'
   source_available: true
 - id: 6b2277bc1066dc82
   filename: IMG_4717.png
@@ -319,9 +343,9 @@ attachments:
   sender: me
   sent_at: '2025-03-31T14:23:42.161000-05:00'
   sha256: b7fecffc3581f54a1afe5be20d2508fff1d04e8337bd3da7784a2efc1945f4bd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A close-up of a man with dark curly hair smiling.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:56.347633+00:00'
   source_available: true
 - id: a77b081357ce3832
   filename: IMG_8971.jpeg
@@ -330,9 +354,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-03-31T14:24:54.838847-05:00'
   sha256: e2a7d99c94e06676e6b6209e4369e659b42d27105658326b8a8013c3a51ec9e1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Jim Carrey's Grinch wearing a Santa hat and scowling with a grumpy,
+    suspicious expression.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:00:57.514906+00:00'
   source_available: true
 - id: a7210e946cdd445d
   filename: IMG_7359.png
@@ -341,9 +366,9 @@ attachments:
   sender: me
   sent_at: '2025-03-31T14:25:14.154000-05:00'
   sha256: c49ff7dc0b60ce268319e648083db04438109ce68df94856bde794babfcc690a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A pixelated close-up of a person's face with a purple tint.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:14.989878+00:00'
   source_available: true
 - id: ae6c56e04df977af
   filename: IMG_7714.png
@@ -352,9 +377,10 @@ attachments:
   sender: me
   sent_at: '2025-03-31T14:25:22.878000-05:00'
   sha256: 0d19654fc5fa6c9d097e5790e79212c2bf784777be34388e80fb29c16bffd7e5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a Berkeley hoodie holds a red bottle to his face in front of
+    a Giants banner.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:17.856430+00:00'
   source_available: true
 - id: 8c2f096ea9eb099e
   filename: IMG_1883.png
@@ -363,9 +389,10 @@ attachments:
   sender: me
   sent_at: '2025-03-31T14:26:05.303000-05:00'
   sha256: e81b0d24bee98ce79d9f8182a1d4ca98234c8f775b3a2d42b073d9954ec7399a
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Snapchat of people lounging in Berkeley with a bong and boxes of nitrous
+    oxide.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:03.304492+00:00'
   source_available: true
 - id: 8bbbef580c1d3188
   filename: IMG_0414.png
@@ -374,9 +401,9 @@ attachments:
   sender: me
   sent_at: '2025-03-31T14:26:26.668000-05:00'
   sha256: 3138bdfc6d685c5274fa0f928dcad25adb6e5ed6a5efeaa514af850084d44033
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Four young men in a room with Bud Light packs and black-and-red sneakers.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:03.322267+00:00'
   source_available: true
 - id: 1b513777af9d4cea
   filename: IMG_3649.png
@@ -385,9 +412,10 @@ attachments:
   sender: me
   sent_at: '2025-03-31T14:26:46.051000-05:00'
   sha256: 24fef15b47f1e434a06ae83edc21ee7d5085f303ffc6507882a5e3c7d6294f6d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Vertically stacked photos of a young man in a graduation sash and a
+    smiling man.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:03.432891+00:00'
   source_available: true
 - id: a927417dc4a7f8a3
   filename: IMG_7382.JPG
@@ -396,9 +424,9 @@ attachments:
   sender: me
   sent_at: '2025-03-31T18:55:19.983122-05:00'
   sha256: 18f495a600af810868dfa9e481acdb8ebc3bd9417d67f600a36c5eefda5b6949
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two gold Emmy Award statuettes side-by-side against a black background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:10.890552+00:00'
   source_available: true
 - id: 874ce3d8463e1645
   filename: IMG_7383.PNG
@@ -407,9 +435,10 @@ attachments:
   sender: me
   sent_at: '2025-03-31T18:58:19.361378-05:00'
   sha256: 1143e4741bea482b5a045e160f065f1e9ab667be397d3d6f4f6a79e7b84136dd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Screenshot of a Google search for a $7.99 bag of 80 Airheads mini bars
+    on Amazon.com.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:06.618463+00:00'
   source_available: true
 - id: 914663041345409a
   filename: IMG_7385.PNG
@@ -418,9 +447,10 @@ attachments:
   sender: me
   sent_at: '2025-03-31T19:02:03.154875-05:00'
   sha256: 195a267d5a2c1baab761056048da9a5cee1c635fcd4a6571fd0cecf27bdc7ca2
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Heath Ledger's Joker wearing a nurse uniform in a hospital room from
+    The Dark Knight.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:06.866806+00:00'
   source_available: true
 - id: d73331c9070d141a
   filename: 08BB3172-2D50-4E23-A312-32EA0AC57140.PNG
@@ -429,9 +459,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-03-31T19:19:17.721192-05:00'
   sha256: 8a06fc989fc0b363cb4f7b82a363fac849f6663da90536dc5ae5f99db17625aa
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Anime-style man in a blue SENIORS hoodie sits on a couch holding a
+    pink HINZO cylinder.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:12.872506+00:00'
   source_available: true
 - id: 4bb3d827e2a2d3c0
   filename: IMG_7386.PNG
@@ -440,9 +471,10 @@ attachments:
   sender: me
   sent_at: '2025-03-31T19:24:33.820973-05:00'
   sha256: d41a2d2c1f9b5b57f9ab74a2805c4015bd9490c556ca0faebc8cedc185488c52
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile screenshot of a Google search result showing Scrooge McDuck
+    in his money vault.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:14.898784+00:00'
   source_available: true
 - id: 7329131698a775a7
   filename: IMG_7388.PNG
@@ -451,9 +483,10 @@ attachments:
   sender: me
   sent_at: '2025-03-31T19:27:06.184359-05:00'
   sha256: 4bca3844d5fcc8b693649f0a7ea44240beaed10f23959d66670c7bb805b7bb04
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Mobile screenshot of a Google search for "nitrous oxide calories" in
+    dark mode.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:10.273216+00:00'
   source_available: true
 - id: d843349d84ff8ed3
   filename: IMG_7387.PNG
@@ -462,9 +495,10 @@ attachments:
   sender: me
   sent_at: '2025-03-31T19:27:06.184359-05:00'
   sha256: 538a592eba0c8241d80a5fa327142006095d822459b2ee30f83597b4d9358cbe
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Google search results for 'nitrous oxide death' warning of fatal hypoxia
+    and brain damage.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:15.896142+00:00'
   source_available: true
 - id: b0c65a5c0149de80
   filename: 76516014844__802282E4-6164-4BAF-86E3-14DDE3F7E688.heic
@@ -473,9 +507,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-03-31T19:29:14.657673-05:00'
   sha256: cf420ee82c55540abc51d9859e23bc10537405e9b4b025ddee5e717642b5576b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hand holding a House of Sacci cannabis jar next to rose wraps, a grinder,
+    and a bong.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:12.102981+00:00'
   source_available: true
 - id: 06a1b16f668eb8c4
   filename: 76516021880__234D114F-7E1D-47F8-A644-8856021C3AE8.mov
@@ -484,9 +519,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-03-31T19:30:50.571870-05:00'
   sha256: 52b79d5fdba8698b554d9be6d4a736303e16e468ee45f6fdf254c18e7d3dbb59
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hand removes a gold "1 OZ GROUND FLOWER" bag from a black Sacci jar
+    on a counter.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:39.939079+00:00'
   source_available: true
 - id: 6432db6f489800ca
   filename: 76516032818__2AAF49C0-62A6-4741-9DBE-105E6B1EC70D.heic
@@ -495,9 +531,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-03-31T19:32:15.991974-05:00'
   sha256: 062dc5a4b9f56fde01b662bded9fed07e4dbf857122661e0dfe7426e72343c88
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Hand holding a Sacci Devil's Drip indica cannabis container over a
+    cluttered kitchen counter.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:42.605947+00:00'
   source_available: true
 - id: 4747ed2eb90d0d7c
   filename: 76516146453__801BB82E-2F28-4741-AD75-DAAACA07FDE7.heic
@@ -506,9 +543,10 @@ attachments:
   sender: adarsh-pinjala
   sent_at: '2025-03-31T19:51:10.678663-05:00'
   sha256: d68ae542638b545656f809a8942ad909f9f7072dc80b683e581d59202497a304
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Glass bong and a green "B.O.B. STASH" cannabis flower packet on a wooden
+    floor.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:14.422814+00:00'
   source_available: true
 - id: 4b1bf161753fb6a8
   filename: IMG_7382.JPG
@@ -517,9 +555,9 @@ attachments:
   sender: me
   sent_at: '2025-03-31T20:08:16.470627-05:00'
   sha256: 18f495a600af810868dfa9e481acdb8ebc3bd9417d67f600a36c5eefda5b6949
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two gold Emmy Award statuettes side-by-side against a black background.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:10.890552+00:00'
   source_available: true
 - id: bc5e83ca4855b8ae
   filename: IMG_7390.PNG
@@ -528,9 +566,10 @@ attachments:
   sender: me
   sent_at: '2025-03-31T21:02:21.259378-05:00'
   sha256: b94b596777f5575b96e656d7d22333d92dce34b27f3008a5c13ea386beeb48e0
-  description: null
-  description_model: null
-  extracted_at: null
+  description: iPhone screenshot of a Google Image search for Timon and Pumbaa from
+    The Lion King.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:38.516796+00:00'
   source_available: true
 - id: c521f525cd070309
   filename: IMG_7392.PNG
@@ -539,9 +578,10 @@ attachments:
   sender: me
   sent_at: '2025-03-31T21:05:14.015069-05:00'
   sha256: c39342567c3923244cdbde047791e9956a1eb5152ee7d3a2e5ee551c660fbb33
-  description: null
-  description_model: null
-  extracted_at: null
+  description: LinkedIn profile screenshot of Shipransh Agrawal showing roles at Genpact
+    and Google.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:19.235147+00:00'
   source_available: true
 - id: a56f6f67cade7788
   filename: IMG_7317.PNG
@@ -550,9 +590,10 @@ attachments:
   sender: prabhat-nuthakki-uc-berkeley
   sent_at: '2025-03-31T21:07:25.465936-05:00'
   sha256: ad7afd6ba2503ef6da8d992a0f258dc547252dec72360e70bc6d0cff90688988
-  description: null
-  description_model: null
-  extracted_at: null
+  description: WhatsApp chat with John Dr j discussing tech layoffs and asking about
+    "whips" addiction.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:25.071926+00:00'
   source_available: true
 chat_message_guids_count: 1100
 deleted_upstream: null

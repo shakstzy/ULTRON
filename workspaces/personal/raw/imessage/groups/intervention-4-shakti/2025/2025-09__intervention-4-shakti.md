@@ -22,9 +22,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-09-01T11:29:17.776013-05:00'
   sha256: eb6e69f196418d7afe6d67eeca744a07a0b7e45978c8f9b30ec9c098ff634cb6
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Young people hanging out indoors with one person asleep on a couch
+    and another waving a can.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:32.982971+00:00'
   source_available: true
 - id: 5b533db716c78c64
   filename: IMG_8020.PNG
@@ -33,9 +34,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-09-01T11:30:04.775690-05:00'
   sha256: e67991fd8e217c8058cbc520d806c4c46df81b1f0c28cf9178ac8eee387fad02
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in a blue striped shirt and a woman in a dark top sit closely
+    together on a gray couch.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:23.382075+00:00'
   source_available: true
 - id: 7b45055d5ad75f70
   filename: ED92B3CD-2C77-4C7C-971A-9F5EFA9C0867.PNG
@@ -44,9 +46,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-09-05T14:50:38.307016-05:00'
   sha256: ddc430b12fdde01472c2e1006efc950fc235d75a99a0a34bc5a77119deb0346e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: An anxious woman with wide eyes and a sweat drop sits beside a smug
+    man on a couch.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:48.778581+00:00'
   source_available: true
 - id: 4000972f645b22b1
   filename: BB6EE2A1-19C3-47AA-B680-E25150A89515.PNG
@@ -55,9 +58,10 @@ attachments:
   sender: pseuhas-uc-berkeley-nyc
   sent_at: '2025-09-05T14:58:29.984741-05:00'
   sha256: f3003c80ff8b6bf577309cc17139a2adf26a4165fa118912f25d831836e3d8a1
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Warm illustration of a man in a striped shirt and a woman with green
+    eyes cuddling.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:31.179199+00:00'
   source_available: true
 - id: 7f1fae4bff537036
   filename: 77881731359__5440A8FF-E4FF-4A45-8FF3-4FF568E31EC3.HEIC
@@ -66,9 +70,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2025-09-05T21:08:44.897406-05:00'
   sha256: 3cba5c30568fab09c13fc1da58e18ae0ec7f3d70ff40037409428c41ce98adaa
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Sign for Little Ox Cafe next to a metal roll-up door on a beige textured
+    wall.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:54:49.837740+00:00'
   source_available: true
 chat_message_guids_count: 50
 deleted_upstream: null

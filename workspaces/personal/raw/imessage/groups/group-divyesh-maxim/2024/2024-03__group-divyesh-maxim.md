@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2024-03-19T14:36:36.126625-05:00'
   sha256: 1491b94dfc6866bb83d1c4ade6196eaef86c86eb8cb128c67439d22e6aefc00d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: White Prius and van at a crosswalk by the Salesforce Transit Center
+    in San Francisco.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:30:30.654695+00:00'
   source_available: true
 chat_message_guids_count: 22
 deleted_upstream: null

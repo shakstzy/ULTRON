@@ -22,9 +22,10 @@ attachments:
   sender: noah-renter
   sent_at: '2025-01-12T17:09:27.483721-06:00'
   sha256: 615dbd087f900d0cb4f4c8a0d2937417e9c91bb7acfa1667a205a1c2b8232c84
-  description: null
-  description_model: null
-  extracted_at: null
+  description: CA Residential Lease Agreement for 13245 Klein Ct, Sylmar, dated July
+    29, 2024.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T23:01:54.783290+00:00'
   source_available: true
 - id: 851fe372b32e75aa
   filename: image_0.JPG

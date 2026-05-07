@@ -93,9 +93,10 @@ attachments:
   sender: mo-snaps-uc-berkeley
   sent_at: '2025-01-22T21:06:19.753979-06:00'
   sha256: 46cda2d544bdde51e05b499af5c34bfcd2db22b1c4cc9708478c898f70991d43
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Dark-mode table listing Sarah Johnson, Mike Wilson, and John Smith
+    with Telegram handles.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:36:05.271813+00:00'
   source_available: true
 chat_message_guids_count: 114
 deleted_upstream: null

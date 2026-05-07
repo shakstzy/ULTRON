@@ -22,9 +22,10 @@ attachments:
   sender: mychal-kendricks-malik-crypto-nfl-producer-la
   sent_at: '2026-04-12T22:17:28.658159-05:00'
   sha256: bc4d9279221004a79ac55c5f1cd35e337d3cab27960353bad1eb0f58ee98829c
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Translucent 3D CAD model of a mechanical pump assembly with blue and
+    grey components.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-07T00:39:30.325530+00:00'
   source_available: true
 - id: 1517ab7aefafc5ae
   filename: IMG_6079.jpeg

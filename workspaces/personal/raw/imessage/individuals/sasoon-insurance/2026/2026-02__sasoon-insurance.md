@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2026-02-15T18:23:02.223000-06:00'
   sha256: 1d790b4b91d0cf8c2fa36fc9be21e8d5b3d9a472f7bd7ef5eb4d1b1a58276e86
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A video of rear-end damage on a beige Lexus, sent to Sasoon Insurance
+    for a repair estimate.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:36:19.127116+00:00'
   source_available: true
 - id: c875d0c4da087d0e
   filename: IMG_7180.MOV
@@ -33,9 +34,10 @@ attachments:
   sender: me
   sent_at: '2026-02-15T18:23:36.572000-06:00'
   sha256: 8dd031343d925b8ed3f3c726768e8cde4c6c28e03f40342fd25c566e7ff42fb8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Video of car accident damage on a beige Lexus sent to Sasoon Insurance
+    for a repair estimate.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:41:09.980167+00:00'
   source_available: true
 chat_message_guids_count: 12
 deleted_upstream: null

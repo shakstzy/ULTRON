@@ -69,9 +69,10 @@ attachments:
   sender: me
   sent_at: '2024-03-11T18:02:32.961024-05:00'
   sha256: 19e477477d4aa7f70c1ed6057ca1caa2c4a1db425e8578ac6079306b62e6eac8
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Music video of a man rapping 'Gucci Bag' at night on a Palo Alto street
+    with green lighting.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-06T22:53:26.693200+00:00'
   source_available: true
 chat_message_guids_count: 60
 deleted_upstream: null

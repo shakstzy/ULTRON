@@ -8,9 +8,10 @@ workspace: rental-manager
 workspace_jobs:
   rental-cycle:
     # Full owner-side cycle: ingest → auto-book → contextual-send → application-notifier.
-    # 3x daily — morning, mid-afternoon, evening Austin time (CDT/CST). Each
-    # cycle takes ~10–50 min depending on inbox size + LLM latency.
-    cron: "0 14,18,22 * * *"   # 09:00, 13:00, 17:00 CT (UTC = +5h in CDT)
+    # 3x daily — morning, early-afternoon, late-afternoon Austin time. Each
+    # cycle takes ~10–50 min depending on inbox size + LLM latency. launchd
+    # interprets these as LOCAL time (Mac is on CT).
+    cron: "0 9,13,17 * * *"   # 09:00, 13:00, 17:00 CT
   lint:
     cron: "15 4 * * *"         # Daily 04:15 — markdown / route audit
 

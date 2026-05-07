@@ -25,6 +25,9 @@
 //   --skip-contacts Skip the Apple Contacts mirror pass.
 //   --skip-imessage Skip the iMessage send pass.
 //   --skip-zillow   Skip the Zillow send pass.
+//   --via=email     Send replies through the lead's convo.zillow.com Gmail
+//                   relay (zero PerimeterX exposure, no daemon needed).
+//                   Default --via=portal preserves the legacy browser path.
 
 import { existsSync, readFileSync, readdirSync, writeFileSync, mkdirSync, appendFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -54,7 +57,7 @@ const STATUS_PRIORITY = {
 };
 
 function parseArgv(argv) {
-  const out = { dry: true, limit: null, only: null, resume: null, skipContacts: false, skipIMessage: false, skipZillow: false, skipApplications: false, slowRampLeads: 5, slowRampExtraMs: 25000 };
+  const out = { dry: true, limit: null, only: null, resume: null, skipContacts: false, skipIMessage: false, skipZillow: false, skipApplications: false, slowRampLeads: 5, slowRampExtraMs: 25000, via: 'portal' };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === '--live') { out.dry = false; }
@@ -67,6 +70,11 @@ function parseArgv(argv) {
     else if (a === '--skip-zillow') { out.skipZillow = true; }
     else if (a === '--skip-applications') { out.skipApplications = true; }
     else if (a === '--no-slow-ramp') { out.slowRampLeads = 0; }
+    else if (a === '--via=email' || (a === '--via' && argv[i+1] === 'email')) { out.via = 'email'; if (a === '--via') i++; }
+    else if (a === '--via=portal' || (a === '--via' && argv[i+1] === 'portal')) { out.via = 'portal'; if (a === '--via') i++; }
+  }
+  if (out.via !== 'email' && out.via !== 'portal') {
+    throw new Error(`unknown --via=${out.via}; expected 'email' or 'portal'`);
   }
   return out;
 }
@@ -86,6 +94,7 @@ function loadAllLeads() {
       listing_alias: st.listing_alias,
       name: (st.lead_name || '').trim(),
       phone: st.lead_phone || null,
+      reference_email: st.lead_reference_email || null,
       status_label: st.status_label || 'INQUIRED',
       messages: st.messages || []
     });
@@ -530,11 +539,17 @@ async function main() {
   // Cold-start = no human warm-up state in the JS runtime = PerimeterX 403.
   // The daemon survives our script restarts; only restarts when daemon-stop is
   // called explicitly or the host reboots.
+  // Browser-stack imports only matter on the portal path. Loading them on
+  // --via=email would still pull rebrowser-playwright through the import
+  // graph, which is fine, but we DON'T spin up the daemon or warm up.
   const { connectOrLaunch, installGracefulShutdown, warmUpZillow } = await import('./browser.mjs');
   const { sendReply, pullThread } = await import('./inbox.mjs');
   const { startDaemon, isDaemonAlive } = await import('./daemon.mjs');
+  // sendViaEmail is the gmail-relay path. Fully self-contained (no browser).
+  const { sendViaEmail } = await import('./email-send.mjs');
+  const needBrowser = !opts.skipZillow && opts.via === 'portal';
   let ctx = null;
-  if (!opts.skipZillow) {
+  if (needBrowser) {
     if (!isDaemonAlive()) {
       console.error('[batch] daemon not running, starting it...');
       const r = await startDaemon({ visible: true });
@@ -615,8 +630,22 @@ async function main() {
       if (!opts.skipZillow) {
         try {
           if (opts.dry) {
-            result.zillow = { dry: true, body_len: zBody.length };
-            console.error(`  zillow: DRY (${zBody.length} chars)`);
+            result.zillow = { dry: true, via: opts.via, body_len: zBody.length, to: opts.via === 'email' ? lead.reference_email : null };
+            console.error(`  zillow: DRY [via=${opts.via}] (${zBody.length} chars)${opts.via === 'email' ? ` -> ${lead.reference_email || '(NO RELAY)'}` : ''}`);
+          } else if (opts.via === 'email') {
+            // Gmail relay path. No browser, no portal nav, no PerimeterX.
+            // sendViaEmail mutates thread state + regenerates the lead .md
+            // internally so we DON'T also call appendOutboundAndRegenerate.
+            if (!lead.reference_email) {
+              result.zillow = { skipped: true, reason: 'no-convo-relay-captured' };
+              summary.zillow_failed++;
+              console.error(`  zillow: SKIP no convo.zillow.com relay (re-pull thread to capture)`);
+            } else {
+              const r = await sendViaEmail(lead.conversation_id, zBody, { dryRun: false });
+              result.zillow = { action: 'SENT_EMAIL', ok: r.ok, audit: r.audit_dir, to: r.to, gmail_message_id: r.gmail_message_id, subject: r.subject };
+              summary.zillow_sent++;
+              console.error(`  zillow: SENT (email-relay) gmail=${r.gmail_message_id || '?'} -> ${r.to}`);
+            }
           } else {
             // Direct nav + wait for textarea. Avoids pullThread's dependency on
             // the MessageList_GetConversation GraphQL op (name appears to have

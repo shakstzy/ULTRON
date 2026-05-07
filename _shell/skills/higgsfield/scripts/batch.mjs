@@ -4,9 +4,10 @@
 //   2. Sequentially type-prompt + click Generate for each spec, capturing each
 //      job_uuid from the POST response. The Higgsfield backend queues and
 //      processes jobs server-side in parallel.
-//   3. Concurrency cap: HF_MAX_CONCURRENT (default 4). When the inflight count
-//      reaches the cap, wait for any one job to complete before submitting the
-//      next. Higgsfield per-account cap ~8; per-model caps can be lower.
+//   3. Concurrency cap: HF_MAX_CONCURRENT (default 1, ceiling 8). Sequential
+//      UI submits avoid focus/picker races on a single browser; the wait/poll
+//      phase overlaps server-side. Bump to 2-4 for image jobs only if the UI
+//      is reliably stable. Account cap ~8; per-model caps can be lower.
 //   4. Completion detection: API poll first (platform.higgsfield.ai/requests/
 //      <uuid>/status), History-panel asset diffing as fallback.
 //
@@ -39,10 +40,12 @@ import { readFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join, resolve as pathResolve } from 'node:path';
 
 const OUTPUT_ROOT = process.env.HF_OUTPUT_DIR || `/Users/shakstzy/ULTRON/_shell/skill-output/higgsfield`;
-// Reports: account-wide cap appears to be 8; per-model caps can be lower
-// (Nano Banana Pro "unlimited" reportedly caps at 4). Default to 4 to stay
-// under the strictest per-model cap; bump via --concurrency or env.
-const DEFAULT_CONCURRENCY = parseInt(process.env.HF_MAX_CONCURRENT || '4', 10);
+// Default concurrency = 1 (sequential UI submits). Running parallel typing/
+// clicking on a single browser cross-wires keyboard focus and creates picker-
+// dropdown races (adversarial review flagged this). The wait/poll phase still
+// overlaps (server queues jobs server-side). Opt into higher concurrency via
+// --concurrency or HF_MAX_CONCURRENT, ceiling 8 (account cap).
+const DEFAULT_CONCURRENCY = parseInt(process.env.HF_MAX_CONCURRENT || '1', 10);
 const MAX_CONCURRENCY_CEILING = 8;
 const JOB_POLL_INTERVAL_MS = 4000;
 const JOB_POLL_TIMEOUT_MS = 12 * 60 * 1000; // 12 min per job

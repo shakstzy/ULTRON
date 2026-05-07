@@ -5,7 +5,7 @@ description: Publish to Instagram, YouTube, TikTok, Twitter/X, or Discord (serve
 
 # zernio
 
-Single skill for all Zernio API surface. Replaces the QUANTUM `zernio-post` + `zernio-ads` split — same API key, same base URL, two write tokens.
+Single skill for all Zernio API surface — organic publishing AND paid ads. Same API key, same base URL, two write tokens.
 
 Direct REST via `cli.sh` (curl + jq). NOT an MCP wrapper. The hosted Zernio MCP exposes 280+ tools that ambient-load into every session; this skill is opt-in.
 

@@ -14,11 +14,10 @@ import { setHalt } from "../runtime/halt.mjs";
 import { logSession } from "../runtime/logger.mjs";
 
 // Bumble surfaces "You missed!" / "Did you mean to swipe right?" after some
-// passes their algo flags. Text-based detection only — modal CSS isn't observed
-// live yet. Anti-bot: cap rewinds per session and randomly skip a chunk.
+// passes their algo flags. Operator priority: never miss a match. When the
+// modal shows, always rewind and like (skip filter re-eval entirely; trust
+// Bumble's algo). Text-based detection only — modal CSS not observed live yet.
 const MISSED_MATCH_RE = /(you missed|did you mean to swipe right|wait,?\s*go back|backtrack)/i;
-const SESSION_REWIND_MAX = 3;
-const RECOVERY_SKIP_PROBABILITY = 0.30;
 
 let _filter = null;
 async function loadFilter() {
@@ -61,45 +60,41 @@ async function tryClickFirst(cursor, page, selList) {
   return false;
 }
 
-// After a pass, check for Bumble's missed-match prompt. If present (and we
-// haven't blown our per-session rewind cap or rolled the random skip): click
-// rewind, re-read card, re-evaluate filter, re-swipe. Returns rewindsUsed
-// (always) and { recovered, finalAction } when a recovery click landed.
-async function recoverMissedMatch(page, cursor, profile, filter, ratioCap, liked, swiped, rewindsUsed) {
+// After a pass, check for Bumble's missed-match prompt. If present: rewind +
+// like. Halt scans bracket the rewind click so Turnstile/photo-verify popping
+// mid-recovery doesn't get blindly clicked. Sanity-check the restored card
+// matches the original profile before liking. Throws on halt (caller catches).
+async function recoverMissedMatch(page, cursor, profile) {
   await sleep(jitter(450, 850));
   let bodyText = "";
   try { bodyText = await page.evaluate(() => (document.body?.innerText || "").slice(0, 8000)); } catch {}
-  if (!MISSED_MATCH_RE.test(bodyText)) return { recovered: false, finalAction: null, rewindsUsed };
+  if (!MISSED_MATCH_RE.test(bodyText)) return { recovered: false };
 
-  if (rewindsUsed >= SESSION_REWIND_MAX || Math.random() < RECOVERY_SKIP_PROBABILITY) {
-    await page.keyboard.press("Escape").catch(() => {});
-    const reason = rewindsUsed >= SESSION_REWIND_MAX ? "session_cap" : "random";
-    await logSession({ event: "missed_match_skipped", reason, profile: profile.name || null });
-    return { recovered: false, finalAction: null, rewindsUsed };
-  }
-
+  await scanForHalts(page);
   await sleep(jitter(1400, 3000));
   const sels = await selectors();
   const rewindCandidates = [sels.rewind_button?.selector, ...(sels.rewind_button?.alt || [])];
   if (!await tryClickFirst(cursor, page, rewindCandidates)) {
     await page.keyboard.press("Escape").catch(() => {});
     await logSession({ event: "missed_match_skipped", reason: "rewind_not_found", profile: profile.name || null });
-    return { recovered: false, finalAction: null, rewindsUsed };
+    return { recovered: false };
   }
-  rewindsUsed += 1;
 
   await sleep(jitter(700, 1400));
+  await scanForHalts(page);
+
   const reRead = await readVisibleCard(page);
-  const inFilter = passesFilter(reRead, filter);
-  const wouldRatio = swiped > 0 ? (liked + (inFilter ? 1 : 0)) / (swiped + 1) : (inFilter ? 1 : 0);
-  const wantLike = inFilter && wouldRatio <= ratioCap;
-  const btn = wantLike ? sels.like_button : sels.pass_button;
-  if (!await tryClickFirst(cursor, page, [btn.selector, ...(btn.alt || [])])) {
-    await logSession({ event: "missed_match_recovery_failed", profile: reRead.name || profile.name, intended: wantLike ? "like" : "pass", rewindsUsed });
-    return { recovered: false, finalAction: null, rewindsUsed };
+  if (reRead.name && profile.name && reRead.name !== profile.name) {
+    await logSession({ event: "missed_match_recovery_aborted", reason: "different_card_after_backtrack", original: profile.name, after: reRead.name });
+    return { recovered: false };
   }
-  await logSession({ event: "missed_match_recovered", profile: reRead.name || profile.name, final_action: wantLike ? "like" : "pass", in_filter: inFilter, rewindsUsed });
-  return { recovered: true, finalAction: wantLike ? "like" : "pass", rewindsUsed };
+
+  if (!await tryClickFirst(cursor, page, [sels.like_button.selector, ...(sels.like_button.alt || [])])) {
+    await logSession({ event: "missed_match_recovery_failed", profile: reRead.name || profile.name });
+    return { recovered: false };
+  }
+  await logSession({ event: "missed_match_recovered", profile: reRead.name || profile.name });
+  return { recovered: true };
 }
 
 export async function swipeSession(page, { sessionMinutesMax = null } = {}) {
@@ -134,7 +129,6 @@ export async function swipeSession(page, { sessionMinutesMax = null } = {}) {
 
   let swiped = 0;
   let liked = 0;
-  let sessionRewinds = 0;
   let stopReason = "session_end";
 
   while (swiped < sessionMaxSwipes && Date.now() < sessionEnd) {
@@ -199,18 +193,22 @@ export async function swipeSession(page, { sessionMinutesMax = null } = {}) {
     }
 
     // Missed-match recovery. Only runs after a pass — Bumble only surfaces
-    // "you missed" when we passed on someone their algo flags. If recovered,
-    // the helper has already done a second click; re-scan halts before the
-    // card-change probe runs against the post-recovery state.
+    // "you missed" when we passed on someone their algo flags. Operator
+    // priority is never miss a match: rewind + like, no filter re-eval.
+    // recoverMissedMatch throws on halt; catch and break the loop.
     let finalDecision = wantLike ? "like" : "pass";
     let recoveredFromMissedMatch = false;
     if (!wantLike) {
-      const r = await recoverMissedMatch(page, cursor, profile, filter, ratioCap, liked, swiped, sessionRewinds);
-      sessionRewinds = r.rewindsUsed;
-      if (r.recovered) {
-        recoveredFromMissedMatch = true;
-        finalDecision = r.finalAction;
-        try { await scanForHalts(page); } catch (e) { stopReason = e.message; break; }
+      try {
+        const r = await recoverMissedMatch(page, cursor, profile);
+        if (r.recovered) {
+          recoveredFromMissedMatch = true;
+          finalDecision = "like";
+          await scanForHalts(page);
+        }
+      } catch (e) {
+        stopReason = e.message;
+        break;
       }
     }
 

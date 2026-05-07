@@ -25,7 +25,6 @@ import {
   writeLeadMarkdown,
   toLowerEmail
 } from './storage.mjs';
-import { enforceMinPacing } from './pacing.mjs';
 
 // Owner email is the From: address Zillow expects on relayed replies.
 // Override only for testing against a different listing.
@@ -101,7 +100,8 @@ export async function sendViaEmail(conversationId, body, opts = {}) {
     throw e;
   }
 
-  await enforceMinPacing(`email-send:${conversationId}`);
+  // No pacing gate here — we hit Gmail, not Zillow's PerimeterX. Gmail's
+  // own rate limits are far more permissive than Zillow's 120/hr cap.
 
   // Look up the Gmail thread so we can reply within it (preserves
   // In-Reply-To / References headers). Best-effort.

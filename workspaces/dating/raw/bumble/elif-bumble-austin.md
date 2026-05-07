@@ -7,17 +7,18 @@ match_id: "zAhMACjIzNzA3NTIzMDQIe-K7hQAAAAAgZEfKA9rgEvViqR2rLERmcUbtmMhoqiBbmgHK
 person_id: null
 phone: null
 status: "expired"
-expires_at: "2026-05-07T05:10:30.592Z"
+expires_at: "2026-05-07T20:27:59.319Z"
 first_seen: "2026-05-07T05:10:31.597Z"
 last_activity: "2026-05-07T05:10:31.599Z"
-last_scrape: "2026-05-07T05:10:31.597Z"
+last_scrape: "2026-05-07T20:28:00.321Z"
 previous_slugs: []
+last_profile_diff: "2026-05-07T20:28:00.321Z"
 ---
 
 ## Profile
 
 - age: 20
-- distance_mi: 10
+- distance_mi: 1
 - height: "5' 2''"
 - height_cm: 157
 - schools: UT Austin 2027
@@ -34,7 +35,19 @@ previous_slugs: []
 
 ## Profile changes
 
-(none yet)
+```json profile-diff
+{
+  "ts": "2026-05-07T20:28:00.321Z",
+  "added": {},
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 10,
+      "to": 1
+    }
+  }
+}
+```
 
 ## Conversation
 

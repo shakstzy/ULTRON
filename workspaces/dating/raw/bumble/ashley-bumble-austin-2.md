@@ -7,23 +7,21 @@ match_id: "zAhMACjE3NDQ5NjUyNTMIe-K7hQAAAAAgkKytX2ZTYkKERdvI6Lt6QooDIV_FHVKt4If5
 person_id: null
 phone: null
 status: "expired"
-expires_at: "2026-05-07T05:21:06.045Z"
+expires_at: "2026-05-07T20:27:45.504Z"
 first_seen: "2026-05-06T23:16:41.491Z"
 last_activity: "2026-05-06T23:16:41.494Z"
-last_scrape: "2026-05-07T05:21:07.046Z"
+last_scrape: "2026-05-07T20:27:46.506Z"
 previous_slugs: []
+last_profile_diff: "2026-05-07T20:27:46.506Z"
 ---
 
 ## Profile
 
 - age: 23
-- distance_mi: 2
 - height: "5' 4''"
 - height_cm: 163
 - schools: University of Texas at Austin 2027
 - jobs: Student at UT
-- lives_in: "Austin, TX"
-- hometown: "Alamo, TX"
 - photo_verified: true
 - lifestyle_badges: ["5' 4''","Sometimes","In college","Rarely","Never","Cis woman","Relationship","Not sure yet","Aquarius","Liberal","Spiritual"]
 - prompts.0.q: "A fun fact I’m obsessed with..."
@@ -36,7 +34,17 @@ previous_slugs: []
 
 ## Profile changes
 
-(none yet)
+```json profile-diff
+{
+  "ts": "2026-05-07T20:27:46.506Z",
+  "added": {},
+  "removed": {
+    "distance_mi": 2,
+    "lives_in": "Austin, TX"
+  },
+  "changed": {}
+}
+```
 
 ## Conversation
 

@@ -86,11 +86,11 @@ Emits JSON on stdout: `{"handoff":"ok","path":"chat"|"buddy"|"group-by-name"|"gr
 
 **Send to existing group:** AppleScript `send X to chat` preserves the chat's existing service binding, so a mixed iMessage+Android group (RCS or SMS) routes correctly without the caller knowing which. Use `--group "<name>"` for named groups or `--to "<h1>,<h2>,<h3>"` to match by participant set (works for unnamed groups; recipient count must match exactly).
 
-**Create NEW group:** Messages.app dictionary has no `make new chat` command, so we use the `imessage://?addresses=...` URL scheme: `open` pre-fills a compose window with the recipients, then a `System Events` keystroke types the body and presses Return. Messages auto-creates the group on first send. Caveats:
+**Create NEW group:** Messages.app dictionary has no `make new chat` command, so we use the `imessage:?addresses=...&body=...` URL scheme: `open` pre-fills a compose window with the recipients AND the body, then one System Events keystroke (Return) sends. Messages auto-creates the group on first send. Caveats:
 - Requires **Accessibility** permission for the parent process (System Settings → Privacy & Security → Accessibility).
-- GUI keystrokes go to the frontmost app, so Messages must end up frontmost. The script `activate`s it but a focus-stealing app (Bumble bot, etc.) racing for foreground will eat the keystrokes.
-- Fragile across macOS versions — Apple can change the compose window layout. Verify the first send in Messages.app UI.
-- One-time creation per group is preferable: do it manually once, then `--group` / `--to` for every subsequent send.
+- The single Return keystroke goes to the frontmost app, so Messages must end up frontmost. The script `activate`s it; a focus-stealing app racing for foreground would eat it.
+- Verify the first send in Messages.app UI — handoff is not delivery.
+- For groups you'll send to repeatedly, create once with `--new-group` (or by hand), then use `--group` / `--to` for every subsequent send.
 
 ## Python consumer surface
 

@@ -72,12 +72,19 @@ import shlex
 
 
 def render_plist_dict(job: dict) -> dict:
-    """Build a plist dict ready for plistlib.dumps(). Args are shell-quoted."""
+    """Build a plist dict ready for plistlib.dumps(). Args are shell-quoted.
+
+    Every plist is wrapped with cron-runner.py — captures exit/duration/stderr,
+    appends a JSONL row to the cron ledger, and posts a colored event to the
+    ULTRON Crons calendar. Calendar/ledger failures never fail the inner job.
+    """
     label = job["label"]
     args_str = job["args"]
     args_quoted = " ".join(shlex.quote(a) for a in args_str.split())
     cmd = (
         f"flock -n /tmp/{shlex.quote(label)}.lock "
+        f"{shlex.quote(str(ULTRON_ROOT))}/_shell/bin/cron-runner.py "
+        f"{shlex.quote(label)} -- "
         f"{shlex.quote(str(ULTRON_ROOT))}/_shell/bin/run-stage.sh "
         f"{args_quoted}"
     )

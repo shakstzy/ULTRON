@@ -53,7 +53,9 @@ else
   PAYLOAD_KIND="\"$ESC_VAL\""
 fi
 
-# ─── Mode: NEW group via URL scheme + keystroke send ─────────────────────────
+# ─── Mode: NEW group via imessage:// URL with body pre-filled ────────────────
+# URL scheme pre-fills both recipients AND body, so we just need to press Return.
+# No body-typing keystrokes — eliminates the long-text / special-char / focus-race fragility.
 if [[ -n "$NEW_GROUP" ]]; then
   ADDR_QUERY=""
   IFS=',' read -ra TO_ARR <<<"$NEW_GROUP"
@@ -64,26 +66,13 @@ if [[ -n "$NEW_GROUP" ]]; then
     ADDR_QUERY+="addresses=$(urlenc "$r")"
   done
   [[ -z "$ADDR_QUERY" ]] && die "--new-group needs at least one recipient"
+  ADDR_QUERY+="&body=$(urlenc "$TEXT")"
 
   open "imessage:?$ADDR_QUERY"
-  ESC_TEXT=$(esc "$TEXT")
-  ERR=$(osascript 2>&1 <<OSA
+  ERR=$(osascript 2>&1 <<'OSA'
 tell application "Messages" to activate
-delay 0.7
-tell application "System Events"
-  tell process "Messages"
-    -- Focus the body field
-    try
-      set frontmost to true
-    end try
-    delay 0.2
-    keystroke tab
-    delay 0.1
-    keystroke "$ESC_TEXT"
-    delay 0.3
-    key code 36
-  end tell
-end tell
+delay 0.5
+tell application "System Events" to key code 36
 OSA
 )
   if [[ -z "$ERR" ]]; then

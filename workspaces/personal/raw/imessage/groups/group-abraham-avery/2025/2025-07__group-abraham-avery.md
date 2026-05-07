@@ -56,9 +56,10 @@ attachments:
   sender: me
   sent_at: '2025-07-29T00:41:30.719000-05:00'
   sha256: e906ac3658295e1f80a08118321c32480a12a6ff91fc2796a00d97e2b295d851
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A CRM database interface displaying a list of companies and their industry
+    categories.
+  description_model: gemini-3-pro-preview
+  extracted_at: '2026-05-07T01:16:03.580743+00:00'
   source_available: true
 - id: 517077af50f55319
   filename: IMG_8763.png

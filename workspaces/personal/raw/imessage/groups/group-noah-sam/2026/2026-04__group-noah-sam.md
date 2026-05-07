@@ -262,9 +262,10 @@ attachments:
   sender: sam-garcia
   sent_at: '2026-04-22T03:13:42.000339-05:00'
   sha256: b3580ae69227aa05567b8e490dfca86753ed76322fe1d0f1c5265f4f72394260
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A woman with long braids models a fluffy white coat, patterned shorts,
+    and red boots.
+  description_model: gemini-3-pro-preview
+  extracted_at: '2026-05-07T01:10:25.012125+00:00'
   source_available: true
 - id: 1599f50da1c30f61
   filename: IMG_1900.png

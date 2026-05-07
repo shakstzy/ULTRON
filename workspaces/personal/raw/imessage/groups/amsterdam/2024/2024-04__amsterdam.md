@@ -82,9 +82,10 @@ attachments:
   sender: phone-+18186963499
   sent_at: '2024-04-07T15:29:12.759858-05:00'
   sha256: acb9c2293a19d78d3ee66c70c50b7c67b33b7d563ccf709406dff88cb8908f79
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Three young men celebrating with canned drinks outdoors on a sunny
+    day.
+  description_model: gemini-3-pro-preview
+  extracted_at: '2026-05-07T01:19:26.617746+00:00'
   source_available: true
 - id: c4ead8ecfe989087
   filename: IMG_1871.jpeg

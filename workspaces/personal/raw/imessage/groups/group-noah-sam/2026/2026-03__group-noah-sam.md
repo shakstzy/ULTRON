@@ -56,9 +56,10 @@ attachments:
   sender: me
   sent_at: '2026-03-13T02:04:16.286097-05:00'
   sha256: a2634f31a3f747c8e8469b20feb9df3fbf0fea201858b1c7cf1449aa5fcc424e
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A person wearing a VR headset plays a racing simulator using a steering
+    wheel and pedals.
+  description_model: gemini-3-pro-preview
+  extracted_at: '2026-05-07T01:12:59.648129+00:00'
   source_available: true
 - id: b1ce13b47f36b243
   filename: IMG_1676.MOV

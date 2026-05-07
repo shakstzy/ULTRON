@@ -33,9 +33,10 @@ attachments:
   sender: me
   sent_at: '2024-03-22T06:18:11.197621-05:00'
   sha256: 1995806f9488dd116435aa143ead3110f4b8ed31869f98fb93b069eb6cb28a8b
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Two people looking at a smartshop window displaying magic truffles
+    at night.
+  description_model: gemini-3-pro-preview
+  extracted_at: '2026-05-07T01:13:29.559142+00:00'
   source_available: true
 chat_message_guids_count: 48
 deleted_upstream: null

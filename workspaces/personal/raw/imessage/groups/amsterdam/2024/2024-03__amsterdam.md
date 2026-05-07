@@ -153,9 +153,10 @@ attachments:
   sender: rushil-jha-uc-berkeley-nyc
   sent_at: '2024-03-24T01:35:00.095557-05:00'
   sha256: b0d82e4f674f3bb4deca2cb571a85b2ac96fbbff4e0abd3f8d0b84ed6fc109ac
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Upside-down selfie of six young men indoors, one holding a Heineken
+    can.
+  description_model: gemini-3-pro-preview
+  extracted_at: '2026-05-07T01:19:15.953426+00:00'
   source_available: true
 - id: b9bb41a2785fe531
   filename: IMG_4046.jpeg

@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-05-11T13:48:13.110000-05:00'
   sha256: c9572d15bff7f7b4e72d5de84f1403c6aecca1718aef855297712d2e63cd0a6d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A flight deal for a $209 economy roundtrip ticket to Miami, United
+    States at 58% off.
+  description_model: gemini-3-pro-preview
+  extracted_at: '2026-05-07T01:10:03.439981+00:00'
   source_available: true
 - id: f6cd85abaa703919
   filename: IMG_2282.png

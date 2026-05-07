@@ -81,9 +81,10 @@ attachments:
   sender: me
   sent_at: '2024-08-27T17:13:40.428000-05:00'
   sha256: eeab95c7f464726a7356190e6809e03319902c0d9967fd21efccd8d6b4f30492
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Telegram chat where a traveling recruiter promises to book a meeting
+    upon returning home.
+  description_model: gemini-3-pro-preview
+  extracted_at: '2026-05-07T01:13:05.861256+00:00'
   source_available: true
 - id: 8091b8dcca0563a2
   filename: IMG_2537.jpeg

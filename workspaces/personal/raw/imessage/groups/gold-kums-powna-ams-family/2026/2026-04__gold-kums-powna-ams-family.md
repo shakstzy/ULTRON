@@ -660,9 +660,9 @@ attachments:
   sender: me
   sent_at: '2026-04-21T21:57:45.237836-05:00'
   sha256: 6b45c1e37b30c93c2c5be663f8ec887515cca8dfcea2252265194f26f06a846d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: '}'
+  description_model: gemini-3-pro-preview
+  extracted_at: '2026-05-07T01:10:16.176831+00:00'
   source_available: true
 - id: 3f9ed18474dab439
   filename: Two Ten Communities Duplex Investment_ Cash Flow Reality and Market Analysis.pdf

@@ -22,9 +22,10 @@ attachments:
   sender: evan-renter
   sent_at: '2024-09-28T17:34:03.441375-05:00'
   sha256: 0358fda64c16f72b7d63307942abe644b976e0feacbea31a07fbc6901382588d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: An empty, sunlit stainless steel kitchen sink with cleaning brushes
+    resting nearby.
+  description_model: gemini-3-pro-preview
+  extracted_at: '2026-05-07T01:13:49.022299+00:00'
   source_available: true
 - id: 11cf6ea00f78798b
   filename: IMG_3593.jpeg

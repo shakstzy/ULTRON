@@ -317,9 +317,10 @@ attachments:
   sender: me
   sent_at: '2025-12-25T01:26:43.153742-06:00'
   sha256: 84d812193ef2f15dde4242f62ec30158eceb87b5db5a828f716e9fd5e35340cd
-  description: null
-  description_model: null
-  extracted_at: null
+  description: "The image file exceeds the 20MB read limit and cannot be viewed in\
+    \ Plan Mode. Please provide a smal\u2026"
+  description_model: gemini-3-pro-preview
+  extracted_at: '2026-05-07T01:07:20.346469+00:00'
   source_available: true
 - id: d1c34a02f859fb42
   filename: IMG_8924.png

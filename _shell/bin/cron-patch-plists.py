@@ -13,6 +13,7 @@ import argparse
 import glob
 import pathlib
 import plistlib
+import shlex
 import shutil
 import sys
 
@@ -38,7 +39,7 @@ def patch_command(label, cmd):
         new = f"flock -n {lockfile} {RUNNER} {label} -- {inner}"
         return new, "wrapped-flock"
 
-    return f"{RUNNER} {label} -- {cmd}", "wrapped-bare"
+    return f"{RUNNER} {label} -- /bin/bash -c {shlex.quote(cmd)}", "wrapped-bare"
 
 
 def patch_plist(path: pathlib.Path, dry_run: bool):

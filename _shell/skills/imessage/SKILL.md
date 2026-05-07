@@ -43,6 +43,18 @@ NEVER ask Adithya for a phone number or email. Resolve, then confirm. Order:
 
 Skip the confirm step ONLY for halt-notification sends from bots to Adithya himself (the original cron use case), where the recipient is hardcoded and there's no third party.
 
+## ALWAYS use `send.sh` — NEVER the MCP iMessage tool
+
+The MCP tool `mcp__Read_and_Send_iMessages__send_imessage` forces the iMessage service even when the recipient is SMS-only. It returns "sent successfully" but the message lands as red "Not Delivered" in Messages.app. **Do not use it.**
+
+Use `~/ULTRON/_shell/skills/imessage/send.sh` instead. It tries the existing 1:1 chat first (preserves whatever service Messages.app already chose — iMessage / SMS / RCS), falling back to iMessage buddy only if no chat exists. This is the only path that handles SMS-only recipients correctly.
+
+```bash
+~/ULTRON/_shell/skills/imessage/send.sh --to +15104499964 --text "..."
+```
+
+If `send.sh` returns `{"handoff":"error",...}`, surface the error to Adithya — don't silently retry through the MCP tool.
+
 ## Send strategy
 
 1. **Existing 1:1 chat first.** If Messages.app already has a 1:1 chat with the recipient, send through it. This preserves whatever service binding Messages already chose (iMessage / SMS / RCS).

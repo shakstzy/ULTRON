@@ -6,10 +6,10 @@ ingest_version: 1
 content_hash: blake2b:8039cff911e5c78b8d9b632acb75c50b
 provider_modified_at: 2026-05-06T22:18:21.458499+00:00
 
-title: Aarti Mom
-slug: aarti-mom
+title: Aarti's Mom
+slug: aartis-mom
 type: person
-canonical_uri: lifeos:_global/entities/people/aarti-mom
+canonical_uri: lifeos:_global/entities/people/aartis-mom
 aliases: []
 identifiers:
   email: []
@@ -19,7 +19,7 @@ last_synced: 2026-05-06T22:18:21.458499+00:00
 global: true
 ---
 
-# Aarti Mom
+# Aarti's Mom
 
 ## Notes
 

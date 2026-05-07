@@ -126,7 +126,8 @@ function cloudLlmAsk(prompt, { timeoutMs = 120_000 } = {}) {
     "import json",
     "try:",
     "    res = ask_text(sys.stdin.read())",
-    "    text = res.get('text') if isinstance(res, dict) else res",
+    "    # cloud-llm.ask_text returns {'engine','account','output'} on success.",
+    "    text = res.get('output') if isinstance(res, dict) else res",
     "    print(json.dumps({'ok': True, 'engine': res.get('engine') if isinstance(res, dict) else 'gemini', 'text': text or ''}))",
     "except CloudLLMUnreachable as e:",
     "    print(json.dumps({'ok': False, 'reason': 'gemini-exhausted', 'detail': str(e)}))",
@@ -229,6 +230,7 @@ async function main() {
       status_label: t.status_label,
       relay: t.lead_reference_email,
       body,
+      engine,
       generated_at: new Date().toISOString(),
       message_count: (t.messages || []).length
     };

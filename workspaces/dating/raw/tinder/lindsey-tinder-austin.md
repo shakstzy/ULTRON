@@ -8,7 +8,7 @@ person_id: "64c4455c3f85f60100feaaa1"
 phone: null
 status: "new"
 first_seen: "2026-04-10T00:00:00Z"
-last_activity: "2026-04-10T22:20:00Z"
+last_activity: "2026-05-07T02:42:27.243Z"
 last_scrape: "2026-05-01T08:56:23.302Z"
 previous_slugs: []
 migrated_from_shakos: "lindsey"
@@ -94,8 +94,10 @@ last_profile_diff: "2026-05-01T08:56:23.302Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 02:42 college football analyst. UT homer or do you have takes that would get you thrown out of a tailgate?
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:15 queued_auto (auto, opener) [draft:38a8660f] lint=true "college football analyst. UT homer or do you have takes that would get you thrown out of a tailgate?"
+- 2026-05-07 02:42 sent (auto, auto-or-hitl) [draft:38a8660f] lint=true "college football analyst. UT homer or do you have takes that would get you thrown out of a tailgate?"

@@ -57,21 +57,26 @@ fi
 # URL scheme pre-fills both recipients AND body, so we just need to press Return.
 # No body-typing keystrokes — eliminates the long-text / special-char / focus-race fragility.
 if [[ -n "$NEW_GROUP" ]]; then
-  ADDR_QUERY=""
+  # macOS imessage:// URL scheme takes comma-separated addresses in a single param,
+  # not multiple addresses= params. Reject empty input.
+  ADDR_LIST=""
   IFS=',' read -ra TO_ARR <<<"$NEW_GROUP"
   for r in "${TO_ARR[@]}"; do
     r=$(echo "$r" | xargs)
     [[ -z "$r" ]] && continue
-    [[ -n "$ADDR_QUERY" ]] && ADDR_QUERY+="&"
-    ADDR_QUERY+="addresses=$(urlenc "$r")"
+    [[ -n "$ADDR_LIST" ]] && ADDR_LIST+=","
+    ADDR_LIST+="$r"
   done
-  [[ -z "$ADDR_QUERY" ]] && die "--new-group needs at least one recipient"
-  ADDR_QUERY+="&body=$(urlenc "$TEXT")"
+  [[ -z "$ADDR_LIST" ]] && die "--new-group needs at least one recipient"
+  URL="imessage:?addresses=$(urlenc "$ADDR_LIST")&body=$(urlenc "$TEXT")"
 
-  open "imessage:?$ADDR_QUERY"
+  echo "send.sh: opening $URL" >&2
+  open "$URL"
+  # Compose window load + recipient resolution can take ~1.5s for groups.
+  # After body+addresses pre-fill, Return sends.
   ERR=$(osascript 2>&1 <<'OSA'
 tell application "Messages" to activate
-delay 0.5
+delay 1.5
 tell application "System Events" to key code 36
 OSA
 )

@@ -8,7 +8,7 @@ person_id: "65d67777e138c60100b3dd44"
 phone: null
 status: "new"
 first_seen: "2026-04-05T00:00:00Z"
-last_activity: "2026-04-05T12:15:00Z"
+last_activity: "2026-05-07T02:41:52.471Z"
 last_scrape: "2026-05-01T08:52:26.687Z"
 previous_slugs: []
 migrated_from_shakos: "lillie"
@@ -89,8 +89,10 @@ last_profile_diff: "2026-05-01T08:52:26.687Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 02:41 that 2023 tour merch, which show was it
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:14 queued_auto (auto, opener) [draft:e3d34983] lint=true "that 2023 tour merch, which show was it"
+- 2026-05-07 02:41 sent (auto, auto-or-hitl) [draft:e3d34983] lint=true "that 2023 tour merch, which show was it"

@@ -1,5 +1,6 @@
 # library — declared ingestion sources
 # Cross-source routing rules in _shell/docs/source-routing.md.
+# All ingest is on-demand (pull-based). No scheduled ingestion.
 
 workspace: library
 wiki: true
@@ -11,10 +12,90 @@ sources:
   manual:
     watch_path: raw/manual/_inbox/
     after_ingest: move_to_dated_subdir
-  # defuddle article extracts, youtube transcript ingest, docling PDF parse
-  # added as the ULTRON-local copies of those skills are wired.
+    description: |
+      Free-form deposits (PDFs, EPUBs, transcripts dropped manually).
+      Lint stage routes them to the right raw/<type>/ folder by sniffing
+      file extension and content.
+
+  youtube-video:
+    handler: bin/ingest-youtube.py
+    accepts:
+      - "youtube.com/watch?v=*"
+      - "youtu.be/*"
+      - "youtube.com/shorts/*"   # only when URL is pasted directly
+      - "youtube.com/live/*"
+      - "youtube.com/embed/*"
+    skip_shorts_default: true
+    notes: |
+      Uses ~/.ultron/youtube-summary/.venv/bin/python -m youtube_transcript_api
+      for the transcript. Passes transcript to cloud-llm for synthesis.
+
+  youtube-channel:
+    handler: bin/ingest-youtube.py
+    accepts:
+      - "youtube.com/@*"
+      - "youtube.com/c/*"
+      - "youtube.com/channel/*"
+    backfill_default: all
+    skip_shorts_default: true
+    parallelize: true
+    notes: |
+      Uses yt-dlp --flat-playlist to enumerate videos, filters Shorts,
+      ingests each video in parallel via the per-account gemini pool
+      (per the agent-learning on parallel cloud-llm batch jobs).
+
+  reel:
+    handler: bin/ingest-reel.py
+    accepts:
+      - "instagram.com/p/*"
+      - "instagram.com/reel/*"
+      - "instagram.com/reels/*"
+      - "instagram.com/tv/*"
+      - "instagram.com/share/*"
+    notes: Wraps the instagram-summary skill. Visual via cloud-llm.
+
+  paper:
+    handler: bin/ingest-paper.py
+    accepts:
+      - "arxiv.org/abs/*"
+      - "arxiv.org/pdf/*"
+      - "doi.org/*"
+      - "*.pdf"
+    notes: |
+      Fetches PDF, runs docling for clean markdown, passes to cloud-llm
+      for takeaways. Stores PDF + markdown in raw/papers/ (gitignored).
+
+  book:
+    handler: bin/ingest-book.py
+    accepts:
+      - title-and-author: "<title>, <author>"
+      - "annas-archive.org/md5/*"
+      - "*.epub"
+      - "*.pdf"
+    validation:
+      title_fuzzy_match_min: 0.85
+      author_fuzzy_match_min: 0.7
+      language: en
+      format_preference: [epub, pdf]
+    notes: |
+      Searches Anna's Archive by title + author, picks best EPUB
+      (PDF fallback), runs pandoc to markdown, validates via sanity
+      check (chapter count, length range, expected keywords from a
+      Goodreads description fetch). On ambiguity stops and surfaces
+      top 3 candidates.
+
+  article:
+    handler: bin/ingest-article.py
+    accepts:
+      - "http://*"
+      - "https://*"
+    notes: |
+      Wraps defuddle if installed (npm install -g defuddle), falls
+      back to a stdlib HTTP fetch + readability heuristic if defuddle
+      is absent.
 
 global_settings:
   attachments_inline: true
-  vision_model: sonnet
+  vision_model: gemini-pro
   hash_algorithm: blake3
+  copyright_posture: takeaways-only

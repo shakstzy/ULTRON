@@ -499,6 +499,22 @@ def main() -> int:
                 skipped += 1
                 continue
 
+            # Preserve manual write-once overrides set on prior runs (per format contract).
+            overrides = read_existing_overrides(shard_file)
+
+            # date_range from parsed datetimes, not lexicographic substrings — keeps
+            # the range consistent with what the body actually rendered.
+            parsed_dates = []
+            for m in month_msgs:
+                try:
+                    parsed_dates.append(parse_ts(m["timestamp"]).date().isoformat())
+                except (ValueError, TypeError):
+                    pass
+            if parsed_dates:
+                date_range = [min(parsed_dates), max(parsed_dates)]
+            else:
+                date_range = [month_msgs[0]["timestamp"][:10], month_msgs[-1]["timestamp"][:10]]
+
             fm = {
                 "source": "whatsapp",
                 "workspace": workspace,
@@ -509,15 +525,15 @@ def main() -> int:
                 "contact_slug": slug,
                 "contact_type": "group" if is_group else "individual",
                 "month": month,
-                "date_range": [month_msgs[0]["timestamp"][:10], month_msgs[-1]["timestamp"][:10]],
+                "date_range": date_range,
                 "message_count": len(month_msgs),
                 "my_message_count": sum(1 for m in month_msgs if m["is_from_me"]),
                 "their_message_count": sum(1 for m in month_msgs if not m["is_from_me"]),
                 "attachments": [],
                 "whatsapp_chat_jid": jid,
                 "whatsapp_chat_kind": "group" if is_group else "dm",
-                "deleted_upstream": None,
-                "superseded_by": None,
+                "deleted_upstream": overrides.get("deleted_upstream"),
+                "superseded_by": overrides.get("superseded_by"),
             }
             text = render_frontmatter(fm) + "\n\n" + body
 

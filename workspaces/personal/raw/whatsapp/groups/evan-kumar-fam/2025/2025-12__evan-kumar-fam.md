@@ -1,7 +1,7 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T20:44:04.156520+00:00'
+ingested_at: '2026-05-07T20:58:28.694419+00:00'
 ingest_version: 1
 content_hash: 'blake3:56f7e05e733020ebc7b7cfee14a4a3707f13355378ad1e540ee395a6f05b5df6'
 provider_modified_at: '2025-12-29T19:40:45-06:00'
@@ -15,7 +15,7 @@ their_message_count: 0
 attachments: []
 whatsapp_chat_jid: '120363370914431188@g.us'
 whatsapp_chat_kind: group
-deleted_upstream: null
+deleted_upstream: '2026-05-07T00:00:00Z'
 superseded_by: null
 ---
 

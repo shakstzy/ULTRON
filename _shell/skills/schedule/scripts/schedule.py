@@ -271,13 +271,21 @@ def render_daemon_plist_dict(daemon: dict) -> dict:
         "StandardErrorPath": f"{ULTRON_ROOT}/_logs/{label}.err.log",
         "WorkingDirectory": daemon.get("working_dir") or str(ULTRON_ROOT),
         "RunAtLoad": True,
-        "KeepAlive": bool(daemon.get("keep_alive", True)),
+        # `KeepAlive: {SuccessfulExit: false}` restarts ONLY on non-zero exits, so
+        # if the daemon exits cleanly (e.g., to release a port for a manual rebuild)
+        # launchd respects that. With bare `KeepAlive: true` even clean exits would
+        # re-spawn, masking real shutdowns.
+        "KeepAlive": (
+            {"SuccessfulExit": False}
+            if bool(daemon.get("keep_alive", True))
+            else False
+        ),
     }
-    if "throttle_interval" in daemon:
-        # ThrottleInterval (seconds) caps restart frequency. Default launchd
-        # value is 10s; bump to 30s+ for crash-loopy daemons to give logs a
-        # chance before the next attempt.
-        plist["ThrottleInterval"] = int(daemon["throttle_interval"])
+    # ThrottleInterval (seconds) caps restart frequency. Auth-loss / config error
+    # crashes can otherwise spin at the launchd default 10s, hammering logs and
+    # potentially network endpoints. Default to 60s if not specified; raise for
+    # daemons that talk to rate-limited services.
+    plist["ThrottleInterval"] = int(daemon.get("throttle_interval", 60))
     return plist
 
 
@@ -375,11 +383,21 @@ def cmd_load(args: argparse.Namespace) -> int:
         if link.exists() or link.is_symlink():
             link.unlink()
         link.symlink_to(plist)
+        # bootout-before-bootstrap: launchctl bootstrap returns rc=5 ("already
+        # loaded") and silently keeps the OLD plist contents. After a recompile,
+        # we need to evict the stale agent first so launchd reloads from the new
+        # symlinked file. bootout rc != 0 is OK if the agent wasn't loaded.
+        label = plist.stem
+        subprocess.run(
+            ["launchctl", "bootout", f"gui/{os.getuid()}/{label}"],
+            check=False, capture_output=True,
+        )
         rc = subprocess.run(
             ["launchctl", "bootstrap", f"gui/{os.getuid()}", str(link)],
             check=False,
         ).returncode
-        # bootstrap returns 5 if already loaded; treat as success
+        # rc=5 should now only fire on truly-stuck agents; we still treat as success
+        # so the loop doesn't abort the rest of --all.
         if rc not in (0, 5):
             rc_total = rc
         print(f"  loaded: {plist.name} (launchctl rc={rc})")

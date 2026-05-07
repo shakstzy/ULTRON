@@ -51,3 +51,11 @@ venv/
 # (declared per-workspace in clipping config)
 **/_scratch/
 **/scratch/
+
+# Library workspace — full source content stays local (copyright posture)
+# Wiki takeaways commit normally; raw full text does not.
+workspaces/library/raw/books/
+workspaces/library/raw/papers/
+workspaces/library/raw/youtube/
+workspaces/library/raw/reels/
+workspaces/library/raw/articles/

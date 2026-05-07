@@ -1,7 +1,7 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T20:44:04.192170+00:00'
+ingested_at: '2026-05-07T20:57:54.001141+00:00'
 ingest_version: 1
 content_hash: 'blake3:455ee573562c45a3ab3844e94f9d81fd2c9eda33a024736af6856535f765ee90'
 provider_modified_at: '2026-02-13T06:01:19-06:00'

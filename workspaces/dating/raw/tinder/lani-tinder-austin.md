@@ -8,7 +8,7 @@ person_id: "6843952d5a433b2cc768d57f"
 phone: null
 status: "new"
 first_seen: "2026-04-18T00:00:00Z"
-last_activity: "2026-04-18T01:16:00Z"
+last_activity: "2026-05-07T02:40:26.579Z"
 last_scrape: "2026-05-01T08:35:51.937Z"
 previous_slugs: []
 migrated_from_shakos: "lani"
@@ -94,8 +94,10 @@ last_profile_diff: "2026-05-01T08:35:51.937Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 02:40 the digicam shot at that cliff with a danger sign is a bold choice for someone who says slow burn
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:12 queued_auto (auto, opener) [draft:1d97055f] lint=true "the digicam shot at that cliff with a danger sign is a bold choice for someone who says slow burn"
+- 2026-05-07 02:40 sent (auto, auto-or-hitl) [draft:1d97055f] lint=true "the digicam shot at that cliff with a danger sign is a bold choice for someone who says slow burn"

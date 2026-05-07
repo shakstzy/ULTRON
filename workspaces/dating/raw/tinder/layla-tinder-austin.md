@@ -8,7 +8,7 @@ person_id: "65b5fac64f23660100f1af5c"
 phone: null
 status: "new"
 first_seen: "2026-03-29T00:00:00Z"
-last_activity: "2026-03-29T03:11:00Z"
+last_activity: "2026-05-07T02:41:34.532Z"
 last_scrape: "2026-05-01T08:43:10.313Z"
 previous_slugs: []
 migrated_from_shakos: "layla"
@@ -101,8 +101,10 @@ last_profile_diff: "2026-05-01T08:43:10.313Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 02:41 dirty shirley and a kurt cobain poster is a very specific kind of person. what's currently on the playlist
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:13 queued_auto (auto, opener) [draft:0c438aa6] lint=true "dirty shirley and a kurt cobain poster is a very specific kind of person. what's currently on the playlist"
+- 2026-05-07 02:41 sent (auto, auto-or-hitl) [draft:0c438aa6] lint=true "dirty shirley and a kurt cobain poster is a very specific kind of person. what's currently on the playlist"

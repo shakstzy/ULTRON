@@ -45,10 +45,13 @@ Each row binds: **source** + **account** + **scope** (label / folder / channel /
 | gmail | adithya.shak.kumar@gmail.com | label:OnlyFans | onlyfans | | TBD: confirm label name |
 | gmail | adithya.shak.kumar@gmail.com | label:Trading | trading | | TBD: confirm label name |
 | gmail | adithya.shak.kumar@gmail.com | label:Library | library | | TBD: confirm label name |
-| drive | adithya@outerscope.xyz | folder:INCLUSIVELAYER | outerscope | | |
+| gmail | adithya@outerscope.xyz | label:InclusiveLayer | inclusive-layer | label:SPAM,label:TRASH | TBD: confirm label name |
+| gmail | adithya.shak.kumar@gmail.com | label:Sei | sei | | TBD: confirm label name + which mailbox holds Sei mail |
+| drive | adithya@outerscope.xyz | folder:INCLUSIVELAYER | inclusive-layer | | flipped from outerscope; folder name confirmed |
 | drive | adithya@outerscope.xyz | folder:MOSAIC | mosaic | | TBD: confirm exact folder name |
 | drive | adithya@outerscope.xyz | folder:SYNAPSE | synapse | | TBD: confirm exact folder name |
 | drive | adithya@synps.xyz | folder:SYNAPSE | synapse | | TBD: confirm if synapse drive content lives in synps.xyz vs outerscope.xyz |
+| drive | TBD | folder:SEI | sei | | TBD: which account hosts Sei drive content (if any), and whether credentials are still valid |
 | slack | T04472N6YUU | channel:app-team | eclipse | | eclipse-labs.slack.com |
 | slack | T04472N6YUU | channel:data-sourcing | eclipse | | |
 | slack | T04472N6YUU | channel:deals | eclipse | | |
@@ -59,6 +62,9 @@ Each row binds: **source** + **account** + **scope** (label / folder / channel /
 | granola | default | folder:MOSAIC | mosaic | | TBD: confirm exact folder name |
 | granola | default | folder:SYNAPSE | synapse | | TBD: confirm exact folder name |
 | granola | default | folder:OUTERSCOPE | outerscope | | TBD: confirm folder exists |
+| granola | default | folder:INCLUSIVELAYER | inclusive-layer | | TBD: confirm whether a Granola folder exists upstream |
+| granola | default | folder:SEI | sei | | TBD: confirm whether a Granola folder exists upstream |
+| slack | TBD | channel:* | sei | | TBD: was there a Sei Slack workspace; are credentials still valid |
 | imessage | local | contact-set:dating | dating | | TBD: define contact set in _global/contact-sets.yaml |
 | imessage | local | contact-set:music | music | | TBD: define contact set |
 | imessage | local | contact-set:property-mgmt | property-management | | TBD: tenants + vendors |
@@ -79,6 +85,8 @@ These rows above are marked `TBD`. Adithya fills them. Until filled, the ingest 
 - **trading** — gmail label; future exchange CSV import rows
 - **music** — gmail label, imessage contact-set; future DistroKid scrape row
 - **clipping** — gmail label; future yt-dlp / mlx-whisper / metrics-poll rows
+- **inclusive-layer** — gmail label confirmation, Granola folder confirmation (drive folder confirmed: INCLUSIVELAYER)
+- **sei** — gmail label + which mailbox; whether Drive / Slack credentials still valid; Granola folder confirmation
 
 ## Cross-workspace duplication
 

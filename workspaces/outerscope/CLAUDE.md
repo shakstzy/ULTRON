@@ -13,12 +13,13 @@ You are in workspace `outerscope` — Adithya's Outerscope venture (InclusiveLay
 
 Adithya's venture studio. Houses non-main-contract work: product docs, contracts, market research, partner materials, anything Outerscope-branded that does not belong in `eclipse` (separate company) or `synapse` / `mosaic` (child ventures with their own workspaces).
 
-Child ventures spawned from Outerscope:
+Child ventures and contracts spawned from / housed under Outerscope:
 
-- `synapse` — pre-launch startup with its own `synps.xyz` domain and Google Workspace; tracks fundraising, accelerator programs, dev-tool relationships.
-- `mosaic` — Outerscope-housed project; Drive content + Granola notes routed under the `MOSAIC` folder upstream.
+- `synapse` — active pre-launch startup with its own `synps.xyz` domain and Google Workspace; tracks fundraising, accelerator programs, dev-tool relationships.
+- `mosaic` — active Outerscope-housed project; Drive content + Granola notes under the `MOSAIC` folder upstream.
+- `inclusive-layer` — past growth-lead contract from earlier 2025; archive workspace, Drive content under the `INCLUSIVELAYER` folder.
 
-Gmail / Drive / Granola routing across these three is centralized in `_shell/docs/source-routing.md`. Content tagged Mosaic / Synapse upstream flows to those workspaces, not here.
+Gmail / Drive / Granola routing across all four is centralized in `_shell/docs/source-routing.md`. Content tagged Mosaic / Synapse / Inclusive Layer upstream flows to those workspaces, not here.
 
 ## Reading order on entry
 

@@ -8,7 +8,7 @@ person_id: "677899e58c545187f608a51a"
 phone: null
 status: "new"
 first_seen: "2026-04-21T00:00:00Z"
-last_activity: "2026-04-21T18:25:00Z"
+last_activity: "2026-05-07T02:39:50.714Z"
 last_scrape: "2026-05-01T08:25:05.438Z"
 previous_slugs: []
 migrated_from_shakos: "kia"
@@ -100,8 +100,10 @@ last_profile_diff: "2026-05-01T08:25:05.438Z"
 ## Conversation
 
 (no messages)
+**you** 2026-05-07 02:39 that bio is doing a lot of heavy lifting. what's actually in the rotation right now
 
 ## Outbound log
 
 (none — pre-migration)
 - 2026-05-06 01:12 queued_auto (auto, opener) [draft:c9c22dd6] lint=true "that bio is doing a lot of heavy lifting. what's actually in the rotation right now"
+- 2026-05-07 02:39 sent (auto, auto-or-hitl) [draft:c9c22dd6] lint=true "that bio is doing a lot of heavy lifting. what's actually in the rotation right now"

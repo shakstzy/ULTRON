@@ -8,7 +8,7 @@ person_id: null
 phone: null
 status: "new"
 first_seen: "2026-05-04T21:47:41.971Z"
-last_activity: "2026-05-04T21:47:41.971Z"
+last_activity: "2026-05-07T02:41:01.134Z"
 last_scrape: "2026-05-05T01:02:24.102Z"
 previous_slugs: []
 last_profile_diff: "2026-05-05T01:02:24.102Z"
@@ -59,8 +59,10 @@ last_profile_diff: "2026-05-05T01:02:24.102Z"
 ## Conversation
 
 (no messages yet)
+**you** 2026-05-07 02:41 Carolina Herrera and HEB mouthwash in the same frame is a very Austin combination. what's the occasion?
 
 ## Outbound log
 
 (none)
 - 2026-05-06 01:12 queued_auto (auto, opener) [draft:2d2a01ed] lint=true "Carolina Herrera and HEB mouthwash in the same frame is a very Austin combination. what's the occasion?"
+- 2026-05-07 02:41 sent (auto, auto-or-hitl) [draft:2d2a01ed] lint=true "Carolina Herrera and HEB mouthwash in the same frame is a very Austin combination. what's the occasion?"

@@ -4,15 +4,17 @@ Snapshot of what is built, what is pending, what each workspace owns. Updated wh
 
 Last updated: 2026-05-06.
 
-## Workspaces (16 total)
+## Workspaces (18 total)
 
 | slug | scope | wiki | private (super-graphify) | sources wired | maturity |
 |---|---|---|---|---|---|
 | eclipse | Eclipse Labs B2B ops | yes | no | gmail + slack + drive + granola + manual | live |
-| outerscope | venture studio (parent of mosaic + synapse) | yes | no | drive + manual | scaffolded |
+| outerscope | venture studio (parent of mosaic / synapse / inclusive-layer) | yes | no | drive + manual | scaffolded |
 | seedbox | advisory (Seedbox Labs) | yes | no | gmail (label:Seedbox) | scaffolded |
 | synapse | Synapse startup (synps.xyz) | yes | no | gmail (synps.xyz) + manual | scaffolded |
 | mosaic | Outerscope-spawned project | yes | no | drive + granola + manual (TBD folder names) | scaffolded |
+| inclusive-layer | past growth-lead contract (early 2025) | yes | no | drive (folder:INCLUSIVELAYER confirmed) + gmail TBD + granola TBD + manual | archive |
+| sei | past full-time (Sei Labs incubation growth lead) | yes | no | gmail TBD + granola TBD + manual; drive / slack credentials TBD | archive |
 | personal | catch-all (friends / family / home / day-to-day) | yes | no | gmail + imessage + manual | live |
 | health | fitness + nutrition + medical (one workspace) | yes | no | gmail + apple-health + manual | scaffolded |
 | finance | long-term holds + taxes + recurring | yes | no | gmail + plaid + manual | scaffolded |
@@ -44,17 +46,18 @@ Last updated: 2026-05-06.
 ### Tier 1 (foundation, blocks other work)
 
 - Populate [`_global/entities/`](\_global/entities/) — currently empty. Needs first canonical stubs for high-frequency people / companies / projects. Run `audit-agent` after first round of ingest to surface candidates.
-- Wire `gate.sh` callable functions from [HITL-gates.md](\_shell/docs/HITL-gates.md) spec. (Spec is done; impl pending.)
-- Wire agent-learnings auto-inject hook in [`.claude/settings.json`](\.claude/settings.json) (UserPromptSubmit, ≤1KB grep-injected).
-- Wire `ingest-driver.py` to read [`source-routing.md`](\_shell/docs/source-routing.md) and refuse TBD rows.
-- Update each new workspace's `agents/wiki-agent.md` and `agents/lint-agent.md` with workspace-specific `Schema-specific rules` sections (currently still generic templates).
+- ~~Wire `gate.sh` callable functions~~ — DONE: `_shell/bin/gate.sh` exists, self-tested.
+- ~~Wire agent-learnings auto-inject hook~~ — DONE: `.claude/settings.json` UserPromptSubmit hook fires `_shell/bin/inject-learnings.sh`.
+- ~~Wire `ingest-driver.py` to read source-routing.md~~ — DONE: parser + TBD-rejection live.
+- ~~Update workspace `agents/wiki-agent.md` and `lint-agent.md`~~ — DONE for all 11 new workspaces (9 + inclusive-layer + sei).
 
 ### Tier 2 (operational)
 
 - Bootstrap graphify (has never run; [`_graphify/GRAPH_REPORT.md`](\_graphify/GRAPH_REPORT.md) confirms no graphs).
 - Schedule the audit loop (every 30 min self-heal mirroring QUANTUM's icm-audit).
-- `.gitignore` hygiene: dating bot Chrome profile + node_modules currently 1.3GB+ tracked.
-- `schedule compile` to generate plists for the 9 new workspaces (lint job each); load deferred until Adithya says go.
+- ~~`.gitignore` hygiene~~ — DONE: bot data untracked via `git rm --cached`; .gitignore covers `**/.profile/`, `**/node_modules/`, outbound queue dirs, scratch dirs.
+- ~~`schedule compile` for new workspaces~~ — DONE: 42 plists compiled, all `plutil`-clean. `schedule load` deferred until Adithya says go.
+- Retire 4 legacy `ingest-<workspace>.plist` orphans (eclipse, finance, health, personal) once Adithya confirms.
 
 ### Tier 3 (skill ports, ULTRON-local copies, no symlinks)
 
@@ -72,9 +75,10 @@ Last updated: 2026-05-06.
 ## Routing matrix TBDs (Adithya fills)
 
 [`_shell/docs/source-routing.md`](\_shell/docs/source-routing.md) has rows marked `TBD` for:
-- gmail label names per workspace (real-estate, property-management, music, clipping, onlyfans, trading, library, mosaic, synapse)
-- drive folder names (MOSAIC, SYNAPSE, OUTERSCOPE)
-- granola folder names (MOSAIC, SYNAPSE, OUTERSCOPE)
+- gmail label names per workspace (real-estate, property-management, music, clipping, onlyfans, trading, library, mosaic, synapse, inclusive-layer, sei)
+- drive folder names (MOSAIC, SYNAPSE, OUTERSCOPE; SEI account + folder if it exists)
+- granola folder names (MOSAIC, SYNAPSE, OUTERSCOPE, INCLUSIVELAYER, SEI)
+- sei slack workspace (was there one + are credentials still valid)
 - imessage contact-set memberships in [`_global/contact-sets.yaml`](\_global/contact-sets.yaml) (dating, music, property-mgmt, fitness-coach, finance-pro)
 
-Once these are filled, ingest can run.
+Once these are filled, ingest can run for the affected workspaces. The driver currently refuses to fetch when only-TBD rules exist for a (workspace, source) pair.

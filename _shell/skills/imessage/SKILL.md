@@ -65,12 +65,32 @@ This is intentionally simpler than QUANTUM's `macos-contacts-imessage` skill (wh
 ## CLI
 
 ```bash
+# 1:1
 ~/ULTRON/_shell/skills/imessage/send.sh --to +15125551234 --text "halt: turnstile detected"
 ~/ULTRON/_shell/skills/imessage/send.sh --to friend@icloud.com --text "ping"
 ~/ULTRON/_shell/skills/imessage/send.sh --to +15125551234 --file /abs/path/to/screenshot.png
+
+# Existing group, by name (works only for explicitly-named groups)
+~/ULTRON/_shell/skills/imessage/send.sh --group "ATX BABY🤙" --text "what's the move tonight"
+
+# Existing group, by participant set (works for unnamed groups too)
+~/ULTRON/_shell/skills/imessage/send.sh --to "+15125551234,+15129998877,+15125550000" --text "..."
+
+# NEW group — creates the group via URL scheme + keystroke send
+~/ULTRON/_shell/skills/imessage/send.sh --new-group "+15125551234,+15129998877" --text "first message creates the chat"
 ```
 
-Emits JSON on stdout: `{"handoff":"ok","path":"chat"|"buddy"}`. Exit 0 = handoff accepted. Delivery is verifiable only in Messages.app UI; this script does not claim delivery.
+Emits JSON on stdout: `{"handoff":"ok","path":"chat"|"buddy"|"group-by-name"|"group-by-participants"|"new-group"}`. Exit 0 = handoff accepted. Delivery is verifiable only in Messages.app UI; this script does not claim delivery.
+
+## Group chat support
+
+**Send to existing group:** AppleScript `send X to chat` preserves the chat's existing service binding, so a mixed iMessage+Android group (RCS or SMS) routes correctly without the caller knowing which. Use `--group "<name>"` for named groups or `--to "<h1>,<h2>,<h3>"` to match by participant set (works for unnamed groups; recipient count must match exactly).
+
+**Create NEW group:** Messages.app dictionary has no `make new chat` command, so we use the `imessage://?addresses=...` URL scheme: `open` pre-fills a compose window with the recipients, then a `System Events` keystroke types the body and presses Return. Messages auto-creates the group on first send. Caveats:
+- Requires **Accessibility** permission for the parent process (System Settings → Privacy & Security → Accessibility).
+- GUI keystrokes go to the frontmost app, so Messages must end up frontmost. The script `activate`s it but a focus-stealing app (Bumble bot, etc.) racing for foreground will eat the keystrokes.
+- Fragile across macOS versions — Apple can change the compose window layout. Verify the first send in Messages.app UI.
+- One-time creation per group is preferable: do it manually once, then `--group` / `--to` for every subsequent send.
 
 ## Python consumer surface
 
@@ -93,7 +113,7 @@ No Full Disk Access required (this skill never reads `~/Library/Messages/chat.db
 
 ## When NOT to use
 
-- Group chats, tapbacks, message edits — AppleScript can't.
+- Tapbacks, message edits, reactions — AppleScript can't.
 - WhatsApp / Telegram / Signal / Slack — different skills.
 - High-volume bulk sends — macOS will throttle.
 - Anything where you need delivery confirmation — handoff ≠ delivery.

@@ -34,3 +34,7 @@ Hi Adithya, thanks for the quick response. I would like to take a tour either on
 ### 2026-01-26T21:30:32.000Z - laila hajjali
 
 Thank you. Phone number is 626-376-3741
+
+### 2026-05-08T22:17:44.771Z - Owner (Adithya)
+
+Got the number. Let's do Tuesday at 2pm. Sound good?

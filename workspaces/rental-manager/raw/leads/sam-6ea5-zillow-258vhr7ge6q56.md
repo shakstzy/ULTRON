@@ -26,3 +26,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 ### 2026-01-24T22:22:20.000Z - sam rodriguez
 
 how much is it for a private bedroom with a bathroom? thanks.
+
+### 2026-05-08T22:17:26.390Z - Owner (Adithya)
+
+Hey Sam. The rooms with private bathrooms are $1200 and $1250. Utilities are a flat $100 a month on top of that. Let me know what day works for you to swing by and take a look.

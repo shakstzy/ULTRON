@@ -26,3 +26,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 ### 2026-01-20T22:09:39.000Z - Emily Rabago
 
 Yes I am do u still have it available for 1, 000??
+
+### 2026-05-08T22:16:40.113Z - Owner (Adithya)
+
+Yeah I still have two open for $1,000. They're on the 3rd floor with walk-in closets. Let me know what times work for you to check the place out.

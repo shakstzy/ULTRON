@@ -20,6 +20,12 @@ def _slack_block(ws_cfg: dict) -> dict | None:
 def _channel_match(meta: dict, channels: list[str]) -> bool:
     if not channels:
         return False
+    # Wildcard must NOT match DMs/group-DMs even when set on the channels
+    # block — those are routed through `include_dms_with` instead. Without
+    # this guard, `channels: ["*"]` would silently route every im/mpim too
+    # (Codex finding #5).
+    if meta.get("channel_type") not in {"channel", "public_channel", "private_channel"}:
+        return False
     if "*" in channels:
         return True
     name = (meta.get("channel_name") or "").lstrip("#")

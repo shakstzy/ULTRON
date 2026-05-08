@@ -10,7 +10,7 @@ listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 729394983172024442
 status_label: INQUIRED
 renter_us_state: CA
-last_pulled_at: "2026-05-08T02:53:43.974Z"
+last_pulled_at: "2026-05-08T02:59:07.640Z"
 ---
 
 # vanessa
@@ -26,6 +26,10 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 
 ## Messages
 
-### 2026-03-09T22:08:38.000Z - vanessa palos
+### 2026-05-06T18:45:15.000Z - vanessa palos
 
 I am interested in this rental and would like to schedule a viewing. Please let me know when this would be possible.
+
+### 2026-05-07T20:47:20.000Z - Owner (Adithya)
+
+hey Vanessa, yes still available. 4 rooms open from $1000 to $1250, utilities are flat $100. what day this week works for you to come check it out?

@@ -131,6 +131,17 @@ LOCAL_PATH=$(jq -r '.local_path' "$RUN_DIR/metadata.json")
 - `rules/datadome-defenses.md` — stealth stack & breaker rules (reference)
 - `rules/output-conventions.md` — output folder layout & metadata.json schema (reference)
 
+## Smoke test status (last verified 2026-05-08)
+
+| Handler | Status | Notes |
+|---|---|---|
+| `image` | ✅ working | nano-banana-pro tested, free with `--unlim` |
+| `video` | ✅ working | seedance_2_0_fast 8s tested, free with `--unlim`. NOTE: 5s no longer accepted — use 8s minimum |
+| `marketing` | ⚠️ V2 rework needed | UI restructured 2026-04-30 (Product/App tabs + UGC/Hook/Setting sub-tabs). Generate clicks but no `/jobs/` POST fires. CLI flags (`--hook`, `--avatar`) wired but require post-recon UI flow. |
+| `cinema` | ⚠️ 3.5 partial | Mode switch fixed (aria-selected verification), `--genre`/`--style` wired. Generate clicks but no `/jobs/` POST fires — likely page-side gating (model/genre/style required). |
+
+For marketing/cinema fixes, run `node scripts/run.mjs recon` to dump current DOM, then use `--debug` flag to leave the browser open and inspect what Generate is doing.
+
 ## Out-of-scope (v1)
 
 - No audio gen, character/location creation, edit/remix/inpaint

@@ -11,9 +11,12 @@ import { join, resolve as pathResolve } from 'node:path';
 
 const OUTPUT_ROOT = process.env.HF_OUTPUT_DIR || `/Users/shakstzy/ULTRON/_shell/skill-output/higgsfield`;
 
+// Cinema 3.5 (verified live 2026-05-08): both image and video go through
+// /jobs/v2/cinematic_studio_{image,video}_3_5. The legacy `cinematic_studio_image`
+// slug 404s on V2 paths.
 const CINEMA_MODES = {
   video: { slug: 'cinematic_studio_video_3_5', cost: 96, resolution: '1080p', exts: ['mp4', 'webm', 'mov'] },
-  image: { slug: 'cinematic_studio_image',     cost: 2,  resolution: '1k',    exts: ['png', 'webp', 'jpg', 'jpeg'] }
+  image: { slug: 'cinematic_studio_image_3_5', cost: 2,  resolution: '1k',    exts: ['png', 'webp', 'jpg', 'jpeg'] }
 };
 
 export const CINEMA_MODE_CATALOG = CINEMA_MODES;

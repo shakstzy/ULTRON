@@ -122,11 +122,14 @@ def collect_desired(now):
 
 def list_existing_schedule_events(cfg):
     """Return {stable_id: (event_id, htmlLink)} for events tagged ultron_kind=schedule."""
+    now = datetime.datetime.now().astimezone()
+    window_start = (now - datetime.timedelta(days=14)).strftime("%Y-%m-%d")
+    window_end = (now + datetime.timedelta(days=400)).strftime("%Y-%m-%d")
     args = [
         GOG, "-a", cfg["account"], "cal", "events", cfg["calendar_id"],
         "--private-prop-filter", "ultron_kind=schedule",
-        "--from", "2020-01-01",
-        "--to", "2099-12-31",
+        "--from", window_start,
+        "--to", window_end,
         "--max", "2500",
         "--all-pages",
         "--json", "--results-only",
@@ -140,14 +143,14 @@ def list_existing_schedule_events(cfg):
     except json.JSONDecodeError:
         sys.stderr.write(f"[projector] list events: bad JSON\n")
         return {}
-    out = {}
+    out: dict[str, set[str]] = {}
     for ev in events:
-        if ev.get("recurringEventId"):
-            continue
         priv = (ev.get("extendedProperties") or {}).get("private") or {}
         sid = priv.get("ultron_stable_id")
-        if sid:
-            out[sid] = ev["id"]
+        if not sid:
+            continue
+        master_id = ev.get("recurringEventId") or ev["id"]
+        out.setdefault(sid, set()).add(master_id)
     return out
 
 
@@ -196,7 +199,14 @@ def main():
     existing = list_existing_schedule_events(cfg)
 
     to_create = [(sid, spec) for sid, spec in desired.items() if sid not in existing]
-    to_delete = [(sid, evid) for sid, evid in existing.items() if sid not in desired]
+    to_delete: list[tuple[str, str]] = []
+    for sid, master_ids in existing.items():
+        if sid in desired and len(master_ids) == 1:
+            continue
+        keep = None if sid not in desired else next(iter(master_ids))
+        for mid in master_ids:
+            if mid != keep:
+                to_delete.append((sid, mid))
 
     print(f"[projector] desired={len(desired)} existing={len(existing)} create={len(to_create)} delete={len(to_delete)}")
 
@@ -209,7 +219,7 @@ def main():
         if delete_event(cfg, evid):
             deleted += 1
 
-    print(f"[projector] done: created={created} deleted={deleted} unchanged={len(desired) - len(to_create)}")
+    print(f"[projector] done: created={created} deleted={deleted}")
 
 
 if __name__ == "__main__":

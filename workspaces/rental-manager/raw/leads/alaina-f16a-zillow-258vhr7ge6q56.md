@@ -26,3 +26,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 ### 2025-07-22T16:24:39.000Z - Alaina Alvarez
 
 I'm interested but had a few questions before considering. Is this for single occupancy only? How many housemates live here?
+
+### 2026-05-08T18:57:43.327Z - Owner (Adithya)
+
+Yeah it's single occupancy. Just one guy living there right now. John is 40 and super chill. Let me know what days work for you to check the place out.

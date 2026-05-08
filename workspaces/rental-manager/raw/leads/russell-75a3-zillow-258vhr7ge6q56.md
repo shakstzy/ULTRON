@@ -26,3 +26,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 ### 2025-07-07T04:28:48.000Z - Russell Henderson
 
 I'm interested in your property.
+
+### 2026-05-08T18:56:22.557Z - Owner (Adithya)
+
+Hey Russell. I still have four rooms open right now starting at $1000. When are you free to check the place out? Let me know what works.

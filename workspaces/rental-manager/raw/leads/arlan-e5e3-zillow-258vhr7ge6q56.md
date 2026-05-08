@@ -46,3 +46,7 @@ And possible gated parking
 ### 2026-03-02T21:17:22.000Z - Arlan Spotswood
 
 Hi, I’m still very interested in the place. I’ll be in the area this weekend would it be possible to set up a walkthrough for Sunday? If you happen to have any additional photos or videos of the location in the meantime, I’d really appreciate it. Looking forward to hearing from you. Thanks, Arlan
+
+### 2026-05-08T22:23:52.091Z - Owner (Adithya)
+
+Sunday works. I've got two rooms open with private bathrooms and parking is an option too. I'll just show you everything then. What time works for you?

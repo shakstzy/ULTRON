@@ -26,3 +26,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 ### 2026-02-26T15:32:26.000Z - Jessica Medrano
 
 Jessica Medrano Call or text: 661-417-4864 Hello, my name is Jessica Medrano. I run my own business and can provide my Articles of Incorporation and bank statements for verification if needed. I'm looking for a place like this for the short amount of time I'm typically home. It would only be me. I value my space and privacy, and I deeply respect other people's space as well. I'm responsible, clean, and mindful of shared environments. Please feel free to call or text me anytime. I look forward to hearing from you.
+
+### 2026-05-08T22:23:26.597Z - Owner (Adithya)
+
+Hey Jessica, that sounds like a great fit. I've got a few rooms open right now between $1,000 and $1,250 depending on if you want a private bathroom. Let's get you scheduled to check out the space. What days usually work best for you?

@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-06T22:47:17.950Z"
 last_activity: "2026-05-06T22:47:17.950Z"
-last_scrape: "2026-05-08T04:09:54.577Z"
+last_scrape: "2026-05-08T20:12:59.933Z"
 previous_slugs: []
-last_profile_diff: "2026-05-08T04:09:54.577Z"
+last_profile_diff: "2026-05-08T20:12:59.933Z"
 ---
 
 ## Profile
 
 - age: 19
-- distance_mi: 1471
+- distance_mi: 1467
 - bio: ":)) just know me"
 - looking_for: "Long-term, open to short"
 - jobs: Woman
@@ -58,6 +58,20 @@ last_profile_diff: "2026-05-08T04:09:54.577Z"
     "distance_mi": {
       "from": 1467,
       "to": 1471
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-08T20:12:59.933Z",
+  "added": {},
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 1471,
+      "to": 1467
     }
   }
 }

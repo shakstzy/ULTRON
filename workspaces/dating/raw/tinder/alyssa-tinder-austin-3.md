@@ -9,8 +9,9 @@ phone: null
 status: "new"
 first_seen: "2026-05-08T04:09:06.645Z"
 last_activity: "2026-05-08T04:09:06.645Z"
-last_scrape: "2026-05-08T04:09:06.645Z"
+last_scrape: "2026-05-08T20:12:12.354Z"
 previous_slugs: []
+last_profile_diff: "2026-05-08T20:12:12.354Z"
 ---
 
 ## Profile
@@ -34,7 +35,16 @@ previous_slugs: []
 
 ## Profile changes
 
-(none yet)
+```json profile-diff
+{
+  "ts": "2026-05-08T20:12:12.354Z",
+  "added": {
+    "photo_verified": false
+  },
+  "removed": {},
+  "changed": {}
+}
+```
 
 ## Conversation
 

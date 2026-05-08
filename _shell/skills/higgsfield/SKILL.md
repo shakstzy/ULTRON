@@ -137,9 +137,9 @@ LOCAL_PATH=$(jq -r '.local_path' "$RUN_DIR/metadata.json")
 |---|---|---|
 | `image` | ✅ working | nano-banana-pro tested, free with `--unlim` |
 | `video` | ✅ working | seedance_2_0_fast 8s tested, free with `--unlim`. NOTE: 5s no longer accepted by Seedance — use 8s minimum |
-| `cinema --mode video` | ✅ submit works | Slug `cinematic_studio_video_3_5` confirmed. POST returns 200 with `job_sets[0].id`. Asset matching needs `created_at >= submit_time` filter to avoid grabbing stale files (current "newest in History" picks pre-existing assets) |
-| `cinema --mode image` | ⚠️ prompt fills wrong panel | Slug fixed to `cinematic_studio_image_3_5`. Mode switch works (aria-selected verification). Cinema 3.5 renders BOTH image+video prompts simultaneously without [role=tabpanel] markup. Needs deeper panel-disambiguation work — currently fills video-panel prompt, image-panel stays empty, Generate gated |
-| `marketing` | ⚠️ V2 rework needed | UI restructured 2026-04-30 (Product/App tabs + UGC/Hook/Setting sub-tabs + 40+ avatar library). Generate clicks but no `/jobs/` POST fires. New CLI flags (`--hook`, `--avatar`) wired but require post-recon UI flow rebuild |
+| `cinema --mode video` | ✅ working | Slug `cinematic_studio_video_3_5`. POST 200, asset matching uses `minTimestampStr` filter to skip stale assets |
+| `cinema --mode image` | ✅ working | Slug `cinematic_studio_image` (no `_3_5` suffix). 113KB webp downloaded. Fix: removed mode-switch fast path so onClick lifecycle always fires |
+| `marketing` | ✅ working | V2 (2026-04-30) auto-bypasses "ADD YOUR PRODUCT" empty-state by clicking the first existing project tile in the left rail. Pass `--project-name "X"` to pick a specific project, `--project-id <uuid>` to navigate directly, or `--new` to create one (requires manual product setup) |
 
 ### Run recon to inventory current UI
 

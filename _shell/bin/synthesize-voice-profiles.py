@@ -89,8 +89,10 @@ CLAUDE_FALLBACK_MODEL = "sonnet"
 
 ACCOUNTS: list[tuple[str, Path]] = []
 _account_lock = threading.Lock()
-_acct_idx = [0]
-_exhausted: set[str] = set()
+_acct_idx: dict[str, int] = {GEMINI_FLASH_MODEL: 0, GEMINI_PRO_MODEL: 0}
+# Per-(account, model) exhaustion. Flash and Pro have separate quotas — one
+# being exhausted does not knock out the other.
+_exhausted: set[tuple[str, str]] = set()
 _acct_stats: dict[str, dict[str, int]] = {}
 
 
@@ -115,22 +117,24 @@ def init_account_state() -> None:
         sys.exit("error: no accounts loaded into pool")
 
 
-def get_next_account() -> tuple[str, Path] | None:
+def get_next_account_for_model(model: str) -> tuple[str, Path] | None:
     with _account_lock:
-        live = [a for a in ACCOUNTS if a[0] not in _exhausted]
+        live = [a for a in ACCOUNTS if (a[0], model) not in _exhausted]
         if not live:
             return None
-        idx = _acct_idx[0] % len(live)
-        _acct_idx[0] += 1
+        idx = _acct_idx.setdefault(model, 0) % len(live)
+        _acct_idx[model] = idx + 1
         return live[idx]
 
 
-def mark_exhausted(name: str) -> None:
+def mark_exhausted(name: str, model: str) -> None:
     with _account_lock:
-        if name not in _exhausted:
-            _exhausted.add(name)
-            live = len(ACCOUNTS) - len(_exhausted)
-            sys.stdout.write(f"  >>> {name} exhausted ({len(_exhausted)}/{len(ACCOUNTS)} down, {live} live)\n")
+        key = (name, model)
+        if key not in _exhausted:
+            _exhausted.add(key)
+            live = sum(1 for a in ACCOUNTS if (a[0], model) not in _exhausted)
+            short_model = "flash" if model == GEMINI_FLASH_MODEL else "pro"
+            sys.stdout.write(f"  >>> {name}/{short_model} exhausted ({live} {short_model} accounts live)\n")
             sys.stdout.flush()
 
 
@@ -140,7 +144,14 @@ def record_call(name: str, kind: str) -> None:
         c[kind] = c.get(kind, 0) + 1
 
 
-def gemini_call(prompt: str, account: tuple[str, Path], model: str, timeout: int = 240) -> tuple[str | None, str | None]:
+def gemini_call(prompt: str, account: tuple[str, Path], model: str, timeout: int = 90) -> tuple[str | None, str | None]:
+    """Single gemini CLI call with HOME isolation.
+
+    On timeout: post-check captured stderr for exhausted-quota signal. The CLI
+    enters an internal retry loop on 429 ("Attempt N failed: ... exhausted"),
+    so a long retry storm looks identical to a hung process. Short timeout
+    (90s default) + stderr scan kills retry hell early.
+    """
     cmd = ["gemini", "-m", model, "-p", prompt, "-o", "text"]
     env = os.environ.copy()
     env["HOME"] = str(account[1])
@@ -150,28 +161,35 @@ def gemini_call(prompt: str, account: tuple[str, Path], model: str, timeout: int
               "GOOGLE_CLOUD_PROJECT", "CLOUDSDK_CONFIG", "GEMINI_CLI_HOME"):
         env.pop(v, None)
     try:
-        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout, env=env)
-    except subprocess.TimeoutExpired:
+        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout, env=env, stdin=subprocess.DEVNULL)
+    except subprocess.TimeoutExpired as e:
+        # Salvage captured stderr to distinguish retry-loop (rate_limit) from
+        # genuine hang (timeout). Without this, all retry-loops look like timeouts
+        # and never trigger account rotation.
+        stderr = (e.stderr or b"").decode("utf-8", "replace") if isinstance(e.stderr, (bytes, bytearray)) else (e.stderr or "")
+        if QUOTA_RE.search(stderr):
+            return None, "rate_limit"
         return None, "timeout"
     except FileNotFoundError:
         return None, "no_cli"
     stderr = proc.stderr or ""
+    out = (proc.stdout or "").strip()
     if INELIGIBLE_RE.search(stderr):
         return None, "ineligible"
+    # Returncode 0 + non-empty output = success, even if stderr has retry chatter.
+    if proc.returncode == 0 and out:
+        return out, None
+    if QUOTA_RE.search(stderr):
+        return None, "rate_limit"
     if proc.returncode != 0:
-        if QUOTA_RE.search(stderr):
-            return None, "rate_limit"
         return None, f"failure: {stderr[:200]}"
-    out = (proc.stdout or "").strip()
-    if not out:
-        return None, "empty"
-    return out, None
+    return None, "empty"
 
 
 def claude_call(prompt: str, timeout: int = 360) -> tuple[str | None, str | None]:
     cmd = ["claude", "-p", prompt, "--model", CLAUDE_FALLBACK_MODEL]
     try:
-        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
+        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout, stdin=subprocess.DEVNULL)
     except subprocess.TimeoutExpired:
         return None, "timeout"
     except FileNotFoundError:
@@ -184,46 +202,49 @@ def claude_call(prompt: str, timeout: int = 360) -> tuple[str | None, str | None
     return out, None
 
 
-def cloud_call_with_retry(prompt: str, max_retries: int = 4) -> tuple[str | None, str | None, str | None]:
-    """Try gemini-pro first, then gemini-flash, rotating accounts on rate_limit.
-    Falls back to claude-sonnet when all gemini accounts exhausted.
-    Returns (output, engine, account_or_engine_name)."""
-    delay = 5.0
-    for attempt in range(max_retries + 1):
-        account = get_next_account()
+def _try_model_cycle(prompt: str, model: str, model_label: str) -> tuple[str | None, str | None]:
+    """Cycle through accounts with quota for this model. Returns (output, account_name).
+    Returns (None, None) when ALL accounts exhausted for this model.
+    """
+    while True:
+        account = get_next_account_for_model(model)
         if account is None:
-            # All gemini accounts exhausted. Try claude-sonnet fallback once,
-            # then cooldown and re-try gemini (quotas may refill).
-            out, err = claude_call(prompt)
-            if out:
-                record_call("claude-sonnet", "success")
-                return out, "claude-sonnet", "claude-sonnet"
-            record_call("claude-sonnet", "other")
-            if attempt >= max_retries:
-                return None, None, "all_exhausted"
-            sleep_for = delay + random.uniform(0, delay)
-            time.sleep(sleep_for)
-            delay = min(delay * 2, 120)
-            with _account_lock:
-                _exhausted.clear()
+            return None, None
+        out, err = gemini_call(prompt, account, model)
+        if out:
+            record_call(account[0], "success")
+            return out, account[0]
+        if err in ("rate_limit", "ineligible"):
+            record_call(account[0], "rate_limit")
+            mark_exhausted(account[0], model)
             continue
-        # Try Pro first (better quality for nuanced voice profiling)
-        for model_label, model_id in (("gemini-pro", GEMINI_PRO_MODEL), ("gemini-flash", GEMINI_FLASH_MODEL)):
-            out, err = gemini_call(prompt, account, model_id)
-            if out:
-                record_call(account[0], "success")
-                return out, model_label, account[0]
-            if err in ("rate_limit", "ineligible"):
-                # This model's quota dead on this account — try next model.
-                # Both models exhausted on this account → mark exhausted + rotate.
-                continue
-            # Non-quota error: skip this account for this target.
-            record_call(account[0], "other")
-            return None, None, f"{account[0]}: {err}"
-        # Both Pro and Flash hit rate_limit/ineligible on this account.
-        record_call(account[0], "rate_limit")
-        mark_exhausted(account[0])
-    return None, None, "max_retries"
+        # Non-quota error on this account: don't burn the account, but don't
+        # spin trying the same prompt again. Bail out of the cycle for this
+        # target and let the outer flow try the next model / fallback.
+        record_call(account[0], "other")
+        return None, None
+
+
+def cloud_call_with_retry(prompt: str) -> tuple[str | None, str | None, str | None]:
+    """Flash → Pro → claude-sonnet, with per-(account, model) exhaustion tracking.
+
+    Order: Flash first because (a) it's much faster on big prompts (60K chars: ~5s vs ~35s),
+    and (b) Pro daily quotas tend to hit harder on shared accounts in practice.
+
+    Returns (output, engine, source).
+    """
+    out, acct = _try_model_cycle(prompt, GEMINI_FLASH_MODEL, "gemini-flash")
+    if out:
+        return out, "gemini-flash", acct
+    out, acct = _try_model_cycle(prompt, GEMINI_PRO_MODEL, "gemini-pro")
+    if out:
+        return out, "gemini-pro", acct
+    out, err = claude_call(prompt)
+    if out:
+        record_call("claude-sonnet", "success")
+        return out, "claude-sonnet", "claude-sonnet"
+    record_call("claude-sonnet", "other")
+    return None, None, f"all_exhausted (claude_err={err})"
 
 
 # ---------------------------------------------------------------------------

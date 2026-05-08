@@ -106,6 +106,52 @@ export async function selectMarketingPreset(page, name) {
   return true;
 }
 
+// Marketing Studio V2 (2026-04-30) gates GENERATE behind an "ADD YOUR PRODUCT"
+// empty-state when no project is loaded. We bypass the modal by clicking an
+// existing project tile in the left rail. The project carries the product
+// configuration -- one-time setup, reusable across runs.
+//
+// Returns { action, name } where action is one of:
+//   'already_loaded' -- URL already has marketing-project-id
+//   'clicked'        -- successfully clicked an existing project tile
+//   'no_projects'    -- left rail is empty; caller must --new or --project-id
+async function selectFirstExistingProject(page, preferredName = null) {
+  const alreadyHas = await page.evaluate(() =>
+    new URL(location.href).searchParams.has('marketing-project-id'));
+  if (alreadyHas) return { action: 'already_loaded' };
+
+  const projects = await page.evaluate(() => {
+    const all = Array.from(document.querySelectorAll('button, [role="button"]'));
+    const projHeader = all.find(b => (b.innerText || '').trim() === 'Projects');
+    if (!projHeader) return [];
+    const hY = projHeader.getBoundingClientRect().y;
+    const found = [];
+    const skip = new Set(['New project', 'Url to Ad', 'Ad Reference', 'Projects', 'All generations', 'MARKETING']);
+    for (const b of all) {
+      const r = b.getBoundingClientRect();
+      if (r.x > 220 || r.x < 0) continue;
+      if (r.y < hY + 4) continue;
+      if (r.height > 80 || r.width < 60) continue;
+      const t = (b.innerText || '').trim();
+      const line1 = t.split('\n')[0].trim();
+      if (!line1 || skip.has(line1) || line1.length > 80) continue;
+      found.push({ line1, x: r.x + r.width / 2, y: r.y + r.height / 2 });
+      if (found.length >= 25) break;
+    }
+    return found;
+  });
+  if (projects.length === 0) return { action: 'no_projects' };
+
+  let target = projects[0];
+  if (preferredName) {
+    const m = projects.find(p => p.line1.toLowerCase() === preferredName.toLowerCase());
+    if (m) target = m;
+  }
+  await page.mouse.click(target.x, target.y);
+  await page.waitForTimeout(2500);
+  return { action: 'clicked', name: target.line1 };
+}
+
 export async function runMarketing(argv) {
   if (!argv.prompt) throw new Error('--prompt is required');
 
@@ -141,6 +187,18 @@ export async function runMarketing(argv) {
 
     await browsePhase(ctx.page);
     walletBefore = await preflight(ctx.page, runDir, { expectedCost: EXPECTED_COST, jwtCapture: ctx.jwtCapture, costCap: parseCostCap(argv) });
+
+    // V2 bypass: if we're not on a specific project (--project-id) and the
+    // user didn't ask to create a new one (--new), click the first existing
+    // project from the left rail. Without this, GENERATE is gated behind the
+    // "ADD YOUR PRODUCT" empty-state modal.
+    if (!argv.projectId && !argv.new) {
+      const proj = await selectFirstExistingProject(ctx.page, argv.projectName || null);
+      console.log(`[higgsfield] V2 project bypass: ${proj.action}${proj.name ? ' -> "' + proj.name + '"' : ''}`);
+      if (proj.action === 'no_projects') {
+        throw new Error('Marketing V2 has no existing projects to load. Set up a product manually in the higgsfield UI first, or pass --project-id <uuid>.');
+      }
+    }
 
     // Marketing Studio V2: panel-init click. The PRODUCT button (right rail)
     // is the default mode but its onClick handler must fire to wire the

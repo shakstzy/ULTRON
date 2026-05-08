@@ -1,0 +1,16 @@
+{
+  "name": "ultron-podcast-outreach",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Eclipse podcast licensing outreach pipeline — Listennotes CDP scrape, RSS owner-email extract, gmail send + label, reply scan + promote.",
+  "scripts": {
+    "postinstall": "patchright install chromium",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.5.1",
+    "patchright": "^1.59.4",
+    "yaml": "^2.6.1"
+  }
+}

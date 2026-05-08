@@ -1,0 +1,145 @@
+# Listennotes discovery seeds — fan-out variety for the discover stage.
+# seed-cursor.mjs walks this list deterministically, marks visited, wraps
+# around when exhausted. Each cron run pulls --seeds N (default 10) starting
+# from the cursor, then advances. Reshuffle on full-cycle.
+#
+# Two kinds of seeds:
+#   genre: best-podcasts/<slug> — Listennotes' curated genre boards
+#   query: search/?q=<urlencoded> — keyword search for niche/long-tail
+#
+# Bias toward conversational formats per the licensing-agreement contract
+# (dialogue between 2+ speakers, English).
+
+seeds:
+  # ----- Top genres (Listennotes' best-podcasts boards) -----
+  - { kind: genre, slug: business }
+  - { kind: genre, slug: technology }
+  - { kind: genre, slug: society-and-culture }
+  - { kind: genre, slug: news }
+  - { kind: genre, slug: science }
+  - { kind: genre, slug: education }
+  - { kind: genre, slug: health-and-fitness }
+  - { kind: genre, slug: comedy }
+  - { kind: genre, slug: arts }
+  - { kind: genre, slug: history }
+  - { kind: genre, slug: religion-and-spirituality }
+  - { kind: genre, slug: sports }
+  - { kind: genre, slug: tv-and-film }
+  - { kind: genre, slug: music }
+  - { kind: genre, slug: leisure }
+  - { kind: genre, slug: government }
+  - { kind: genre, slug: kids-and-family }
+  - { kind: genre, slug: fiction }
+  - { kind: genre, slug: true-crime }
+  - { kind: genre, slug: entrepreneurship }
+  - { kind: genre, slug: investing }
+  - { kind: genre, slug: marketing }
+  - { kind: genre, slug: management }
+  - { kind: genre, slug: careers }
+  - { kind: genre, slug: nonprofit }
+
+  # ----- Conversational-format keywords -----
+  - { kind: query, q: "interview podcast" }
+  - { kind: query, q: "longform interview" }
+  - { kind: query, q: "deep dive interview" }
+  - { kind: query, q: "founder interview" }
+  - { kind: query, q: "host and guest" }
+  - { kind: query, q: "podcast roundtable" }
+  - { kind: query, q: "two host podcast" }
+  - { kind: query, q: "co-host conversation" }
+  - { kind: query, q: "Q&A podcast" }
+  - { kind: query, q: "panel discussion podcast" }
+  - { kind: query, q: "fireside chat podcast" }
+  - { kind: query, q: "weekly conversation" }
+  - { kind: query, q: "expert interview series" }
+  - { kind: query, q: "candid conversation podcast" }
+  - { kind: query, q: "in-depth interview" }
+
+  # ----- Niche conversational verticals -----
+  - { kind: query, q: "AI researcher interview" }
+  - { kind: query, q: "biotech interview podcast" }
+  - { kind: query, q: "academic conversation" }
+  - { kind: query, q: "VC interview podcast" }
+  - { kind: query, q: "doctor interview podcast" }
+  - { kind: query, q: "lawyer podcast interview" }
+  - { kind: query, q: "scientist podcast interview" }
+  - { kind: query, q: "athlete interview podcast" }
+  - { kind: query, q: "musician interview podcast" }
+  - { kind: query, q: "author interview podcast" }
+  - { kind: query, q: "creator economy interview" }
+  - { kind: query, q: "indie founder podcast" }
+  - { kind: query, q: "operator interview podcast" }
+  - { kind: query, q: "engineering manager podcast" }
+  - { kind: query, q: "designer interview podcast" }
+  - { kind: query, q: "investor conversation" }
+  - { kind: query, q: "bootstrapper interview" }
+  - { kind: query, q: "remote work podcast interview" }
+  - { kind: query, q: "tech founder interview" }
+  - { kind: query, q: "indie hacker interview" }
+  - { kind: query, q: "solopreneur interview" }
+  - { kind: query, q: "consulting podcast interview" }
+  - { kind: query, q: "philosopher conversation" }
+  - { kind: query, q: "psychologist interview podcast" }
+  - { kind: query, q: "therapist interview podcast" }
+  - { kind: query, q: "educator interview podcast" }
+  - { kind: query, q: "teacher interview podcast" }
+  - { kind: query, q: "pastor interview podcast" }
+
+  # ----- Locale slices (English-only per contract clause 3) -----
+  - { kind: query, q: "UK interview podcast" }
+  - { kind: query, q: "Australian interview podcast" }
+  - { kind: query, q: "Canadian interview podcast" }
+  - { kind: query, q: "Indian interview podcast English" }
+  - { kind: query, q: "Irish interview podcast" }
+  - { kind: query, q: "New Zealand interview podcast" }
+  - { kind: query, q: "Singapore podcast interview" }
+  - { kind: query, q: "South African podcast interview" }
+
+  # ----- Mid-tail "best of" curations -----
+  - { kind: query, q: "best business podcast 2026" }
+  - { kind: query, q: "best technology podcast 2026" }
+  - { kind: query, q: "best science podcast 2026" }
+  - { kind: query, q: "best history podcast 2026" }
+  - { kind: query, q: "best startup podcast 2026" }
+  - { kind: query, q: "best AI podcast 2026" }
+  - { kind: query, q: "best health podcast 2026" }
+  - { kind: query, q: "best finance podcast 2026" }
+  - { kind: query, q: "underrated interview podcast" }
+  - { kind: query, q: "rising podcast interview" }
+  - { kind: query, q: "indie podcast interview" }
+
+  # ----- Long-tail topical -----
+  - { kind: query, q: "climate interview podcast" }
+  - { kind: query, q: "crypto founder interview" }
+  - { kind: query, q: "biotech founder interview" }
+  - { kind: query, q: "robotics interview podcast" }
+  - { kind: query, q: "neuroscience interview podcast" }
+  - { kind: query, q: "longevity podcast interview" }
+  - { kind: query, q: "physical therapy podcast interview" }
+  - { kind: query, q: "small business owner interview" }
+  - { kind: query, q: "real estate investor interview" }
+  - { kind: query, q: "ecommerce founder interview" }
+  - { kind: query, q: "SaaS founder interview" }
+  - { kind: query, q: "developer interview podcast" }
+  - { kind: query, q: "data science interview podcast" }
+  - { kind: query, q: "product manager interview podcast" }
+  - { kind: query, q: "marketing leader interview" }
+  - { kind: query, q: "growth interview podcast" }
+  - { kind: query, q: "sales leader interview podcast" }
+  - { kind: query, q: "HR interview podcast" }
+  - { kind: query, q: "fitness coach interview" }
+  - { kind: query, q: "nutritionist interview" }
+  - { kind: query, q: "chef interview podcast" }
+  - { kind: query, q: "wine interview podcast" }
+  - { kind: query, q: "travel interview podcast" }
+  - { kind: query, q: "outdoor adventure interview" }
+  - { kind: query, q: "parenting interview podcast" }
+  - { kind: query, q: "relationships interview podcast" }
+  - { kind: query, q: "mental health interview podcast" }
+  - { kind: query, q: "addiction recovery interview" }
+  - { kind: query, q: "spirituality interview podcast" }
+  - { kind: query, q: "buddhist interview podcast" }
+  - { kind: query, q: "leadership interview podcast" }
+  - { kind: query, q: "executive interview podcast" }
+  - { kind: query, q: "veteran interview podcast" }
+  - { kind: query, q: "first responder interview" }

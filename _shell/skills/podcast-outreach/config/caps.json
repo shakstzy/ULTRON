@@ -1,0 +1,13 @@
+{
+  "daily_send_cap": 2000,
+  "hourly_send_cap": 200,
+  "send_jitter_ms": [15000, 22000],
+  "discover_concurrency": 6,
+  "discover_per_seed_max": 50,
+  "discover_seed_default": 10,
+  "target_queue_size": 2500,
+  "reply_lookback_days": 14,
+  "reply_scan_max_threads": 500,
+  "low_quality_email_prefixes": ["noreply", "no-reply", "donotreply", "do-not-reply", "info", "support", "hello", "contact", "admin", "feedback", "marketing", "press", "media"],
+  "skip_solo_podcast_keywords": ["solo show", "monologue", "audiobook", "meditation", "asmr", "guided", "sleep stories"]
+}

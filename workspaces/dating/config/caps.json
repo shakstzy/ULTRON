@@ -1,14 +1,14 @@
 {
   "swipes": {
-    "per_day": 100,
-    "per_session_min": 18,
-    "per_session_max": 35,
+    "per_day": 150,
+    "per_session_min": 30,
+    "per_session_max": 60,
     "right_swipe_ratio_max": 0.5,
     "between_swipes_ms": [800, 2400],
     "global_min_gap_ms": 950
   },
   "messages": {
-    "per_hour": 40,
+    "per_hour": 60,
     "between_messages_ms": [30000, 300000],
     "typing_ms_per_char": [60, 130]
   },

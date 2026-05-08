@@ -142,6 +142,8 @@ def list_existing_schedule_events(cfg):
         return {}
     out = {}
     for ev in events:
+        if ev.get("recurringEventId"):
+            continue
         priv = (ev.get("extendedProperties") or {}).get("private") or {}
         sid = priv.get("ultron_stable_id")
         if sid:

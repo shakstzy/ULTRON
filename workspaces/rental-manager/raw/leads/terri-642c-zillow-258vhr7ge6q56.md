@@ -38,3 +38,7 @@ I have no info on how to get past the gate
 ### 2026-03-07T23:03:38.000Z - Terri Clement
 
 I'm in the guest parking
+
+### 2026-05-08T22:27:05.632Z - Owner (Adithya)
+
+Hey Terri, my bad I totally missed your first message. I'm not at the house right now to let you in. Let me know what other days work for you to swing by.

@@ -16,10 +16,14 @@ const SLUG = 'marketing_studio_video';
 const EXPECTED_COST = 48;
 const VIDEO_EXTS = ['mp4', 'webm', 'mov'];
 
-// Known marketing-studio preset tiles as of 2026-04-21. Used for validation
-// warnings only; the selector tries exact name match regardless.
+// Marketing Studio V2 content modes (released 2026-04-30). Validation hint
+// only -- the tile selector accepts any exact-name match.
 export const MARKETING_PRESETS = [
-  'UGC', 'Tutorial', 'Unboxing', 'Hyper Motion', 'Product Review',
+  // V2 (2026-04-30)
+  'UGC', 'Product Review', 'Tutorial', 'Unboxing', 'TV Spot',
+  'Virtual Try-On', 'UGC Virtual Try-On', 'Cleanshot UGC',
+  'Hyper Motion', 'Wild Card',
+  // Legacy V1 names kept for backwards compat
   'Testimonial', 'How-To', 'Founder Story', 'Product Showcase'
 ];
 

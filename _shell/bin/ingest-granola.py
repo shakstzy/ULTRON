@@ -34,15 +34,11 @@ if str(SUBSTAGE_DIR) not in sys.path:
     sys.path.insert(0, str(SUBSTAGE_DIR))
 
 # Substage modules (resolved via sys.path above).
-from auth import (  # noqa: E402
-    SUPABASE_PATH, get_access_token, get_account_email, parse_user_info,
-    read_supabase_raw,
-)
+from auth import get_account_email  # noqa: E402
 from api import GranolaClient  # noqa: E402
 from cursor import read_cursor, write_cursor  # noqa: E402
 from filter import should_skip  # noqa: E402
 from ledger import append_row, find_last_row  # noqa: E402
-from prosemirror import render_prosemirror  # noqa: E402  (re-export check)
 from render import render_body, transcript_duration_ms, build_attendees, build_calendar_event  # noqa: E402
 from route import route as route_doc  # noqa: E402
 from slug import account_slug, title_slug  # noqa: E402
@@ -351,10 +347,13 @@ def main() -> int:
         docs = client.get_documents_batch(ids_list)
         run_log.append(f"fetched {len(docs)} docs")
 
-        # Cursor filter (incremental)
+        # Cursor filter (incremental). `>=` (not `>`) so docs sharing the
+        # boundary timestamp re-process on the next run; the per-workspace
+        # ledger's content_hash check makes this cheap (skip-unchanged) and
+        # eliminates the same-timestamp-loss bug a strict `>` introduces.
         if cursor:
             before = len(docs)
-            docs = [d for d in docs if (d.get("updated_at") or "") > cursor]
+            docs = [d for d in docs if (d.get("updated_at") or "") >= cursor]
             run_log.append(f"cursor filter: {before} → {len(docs)}")
 
         # Process in updated_at-ascending order so the cursor can advance
@@ -483,7 +482,9 @@ def main() -> int:
         )
         log_path.write_text("\n".join(run_log) + "\n")
         print("\n".join(run_log[-12:]))
-        return 0
+        # Non-zero exit when any doc failed so the cron-runner ledger and
+        # launchctl status surface the problem instead of marking it green.
+        return 1 if failed_count else 0
     finally:
         try:
             fcntl.flock(lock_fd, fcntl.LOCK_UN)

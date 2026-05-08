@@ -30,14 +30,15 @@ class GranolaAPIError(Exception):
 
 class GranolaClient:
     def __init__(self, client_version: str = DEFAULT_CLIENT_VERSION,
-                 supabase_path=SUPABASE_PATH):
+                 supabase_path=SUPABASE_PATH, account: str | None = None):
         self.client_version = client_version
         self.supabase_path = supabase_path
+        self.account = account
         self._token: str | None = None
 
     def _ensure_token(self) -> str:
         if self._token is None:
-            self._token = get_access_token(self.supabase_path)
+            self._token = get_access_token(self.supabase_path, email=self.account)
         return self._token
 
     def _do_request(self, path: str, body: dict | None) -> tuple[int, bytes, dict]:

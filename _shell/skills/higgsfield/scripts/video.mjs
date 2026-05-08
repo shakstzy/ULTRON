@@ -21,22 +21,44 @@ const VIDEO_RESOLUTION_LABELS = ['720p', '1080p'];
 const OUTPUT_ROOT = process.env.HF_OUTPUT_DIR || `/Users/shakstzy/ULTRON/_shell/skill-output/higgsfield`;
 const VIDEO_URL = 'https://higgsfield.ai/ai/video';
 
-// Catalog matches /ai/video model picker as of 2026-04-21 (see rules/site-map.json).
-// Costs reflect empirically observed defaults (720p base). Using a non-existent slug throws.
-// If the picker adds new models, re-run `node scripts/probe-sitemap.mjs` and update below.
-// Video models: catalog key matches the frontend model selection. Some models
-// SHARE a backend POST slug (e.g. Seedance 2.0 and Seedance 2.0 Fast both POST
-// to /jobs/v2/seedance_2_0 with a "fast_mode" param in the body). We track
-// backend_slug explicitly; it defaults to the catalog key when not specified.
+// Catalog matches /ai/video model picker as of 2026-05-08. Backend slugs from
+// rules/tool-flows.md (verified against live POST traffic). Costs are empirical
+// defaults at 720p base; actual cost is captured post-submit.
+// New entries added 2026-05-08: Sora 2 family, Veo 3.1 family, Kling 2.6,
+// Wan 2.5/2.6, MiniMax Hailuo 02. Frontend labels follow Higgsfield's UI
+// naming -- if a label doesn't match, selectVideoModel throws with a clear
+// "model not found in picker" error so it's easy to patch.
 export const VIDEO_CATALOG = {
+  // Seedance
   'seedance_2_0_fast':       { cost: 15, family: 'seedance', frontend_label: 'Seedance 2.0 Fast',       backend_slug: 'seedance_2_0' },
   'seedance_2_0':            { cost: 40, family: 'seedance', frontend_label: 'Seedance 2.0',            backend_slug: 'seedance_2_0' },
+  // Kling
   'kling3_0':                { cost: 25, family: 'kling',    frontend_label: 'Kling 3.0',               backend_slug: 'kling3_0' },
   'kling3_0_motion_control': { cost: 35, family: 'kling_mc', frontend_label: 'Kling 3.0 Motion Control', backend_slug: 'kling3_0_motion_control' },
+  'kling2_6':                { cost: 25, family: 'kling',    frontend_label: 'Kling 2.6',              backend_slug: 'kling2_6' },
+  'kling2_6_motion_control': { cost: 35, family: 'kling_mc', frontend_label: 'Kling 2.6 Motion Control',backend_slug: 'kling2_6_motion_control' },
   'kling2_5_turbo':          { cost: 20, family: 'kling',    frontend_label: 'Kling 2.5 Turbo',         backend_slug: 'kling2_5_turbo' },
   'kling2_1':                { cost: 15, family: 'kling',    frontend_label: 'Kling 2.1',               backend_slug: 'kling2_1' },
+  'kling_omni_image':        { cost: 30, family: 'kling',    frontend_label: 'Kling Omni',              backend_slug: 'kling_omni_image' },
+  // Wan
   'wan2_7':                  { cost: 35, family: 'wan',      frontend_label: 'Wan 2.7',                 backend_slug: 'wan2_7' },
-  'minimax_hailuo':          { cost: 20, family: 'minimax',  frontend_label: 'Minimax Hailuo',          backend_slug: 'minimax_hailuo' }
+  'wan2_6':                  { cost: 30, family: 'wan',      frontend_label: 'Wan 2.6',                 backend_slug: 'wan2_6' },
+  'wan2_5':                  { cost: 25, family: 'wan',      frontend_label: 'Wan 2.5',                 backend_slug: 'wan2_5_video' },
+  'wan2_5_speak':            { cost: 30, family: 'wan',      frontend_label: 'Wan 2.5 Speak',           backend_slug: 'wan2_5_speak' },
+  'wan2_2':                  { cost: 20, family: 'wan',      frontend_label: 'Wan 2.2',                 backend_slug: 'wan2_2_video' },
+  'wan2_2_animate':          { cost: 25, family: 'wan',      frontend_label: 'Wan 2.2 Animate',         backend_slug: 'wan2_2_animate' },
+  // MiniMax Hailuo
+  'minimax_hailuo_02':       { cost: 22, family: 'minimax',  frontend_label: 'MiniMax Hailuo 02',       backend_slug: 'minimax_hailuo' },
+  'minimax_hailuo':          { cost: 20, family: 'minimax',  frontend_label: 'Minimax Hailuo',          backend_slug: 'minimax_hailuo' },
+  'minimax_fast':            { cost: 12, family: 'minimax',  frontend_label: 'MiniMax Fast',            backend_slug: 'minimax-fast' },
+  // Sora 2 (OpenAI on Higgsfield, added April 2026)
+  'sora_2':                  { cost: 60, family: 'sora',     frontend_label: 'Sora 2',                  backend_slug: 'open_sora_video' },
+  'sora_2_pro':              { cost: 80, family: 'sora',     frontend_label: 'Sora 2 Pro',              backend_slug: 'sora2_video' },
+  'sora_2_max':              { cost: 100,family: 'sora',     frontend_label: 'Sora 2 Max',              backend_slug: 'sora-2-max' },
+  // Veo 3.1 (Google on Higgsfield, added Feb-Mar 2026)
+  'veo3_1':                  { cost: 70, family: 'veo',      frontend_label: 'Veo 3.1',                 backend_slug: 'veo3_1' },
+  'veo3_1_lite':             { cost: 30, family: 'veo',      frontend_label: 'Veo 3.1 Lite',            backend_slug: 'veo3_1_lite' },
+  'veo3_1_speak':            { cost: 70, family: 'veo',      frontend_label: 'Veo 3.1 Speak',           backend_slug: 'veo3_1_speak' }
 };
 
 // Video extensions we look for in the History panel to confirm completion.

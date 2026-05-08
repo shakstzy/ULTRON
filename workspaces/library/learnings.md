@@ -16,6 +16,9 @@ See `identity.md`. One-line summary: internalized + scannable, one short author 
 
 - **Pull-based consumption.** Adithya asks "what's next," `library-next` returns one bite. No pushed digests. No scheduled notifications.
 - **Skip YouTube Shorts by default.** When ingesting a channel or playlist, filter out videos < 60 seconds. If Adithya pastes a Shorts URL directly, ingest it.
+- **Bulk ingest entry points.** `bin/ingest-batch.py` for multi-URL paste (positional, `--urls file`, or stdin) and the blog-series crawler (`--crawl <hub-url>`). `bin/ingest-book.py --author "<name>"` for author bibliography from annas-archive. All bulk modes support `--dry-run` and `--limit`.
+- **Crawler defaults to same-domain.** Blog crawler keeps links on the hub's host by default; pass `--allow-cross-domain` to override. Empty/bookmarklet/anchor hrefs and `mailto:`, `javascript:`, `tel:` links are dropped.
+- **Bulk operations are lossy on individual failures.** `ingest-batch` and `--author` mode catch IngestError per item, log it, and continue. The batch summary is the source of truth for what landed.
 - **Channel ingest semantics.** "Ingest everything" = full backfill of the channel's `/videos` tab (Shorts excluded). "Only X" or `--videos id1,id2` = selective. No subscribe-forward by default.
 - **Co-location is a wiki concern, not a capture concern.** All YouTube videos land at `raw/youtube/<channel>/<YYYY-MM>/<slug>.md` regardless of book relevance. Whether a video is "primarily about" a book in the corpus is decided by the wiki agent at synthesis time, not at ingest.
 - **Book validation chain (Anna's Archive).** Title fuzzy match ≥ 0.85, author fuzzy match ≥ 0.7, language=en, format=epub preferred. On failure, stop and surface the metadata so Adithya can re-run with a specific MD5 URL.

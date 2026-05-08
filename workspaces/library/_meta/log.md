@@ -2,3 +2,7 @@
 - 2026-05-07T20:39:41 — ingest-youtube: 3blue1brown-what-neural-network-deep-airca ('But what is a neural network? | Deep learning chapter 1')
 - 2026-05-07T20:39:52 — ingest-paper: vaswani-attention-all-you-2017 ('Attention Is All You Need')
 - 2026-05-07T20:40:33 — ingest-book: thoreau-walden ('Walden')
+- 2026-05-07T22:23:46 — ingest-article: paulgraham-how-do-what-you ('How to Do What You Love')
+- 2026-05-07T22:24:00 — ingest-paper: vaswani-attention-all-you-2017 ('Attention Is All You Need')
+- 2026-05-07T22:24:04 — ingest-youtube: 3blue1brown-what-neural-network-deep-airca ('But what is a neural network? | Deep learning chapter 1')
+- 2026-05-07T22:24:04 — ingest-batch: {'total': 3, 'ok': 3, 'skip': 0, 'error': 0, 'by_kind': {'article': 1, 'paper': 1, 'youtube-video': 1}}

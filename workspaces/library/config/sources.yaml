@@ -85,6 +85,21 @@ sources:
       Pure capture: defuddle (or stdlib heuristic fallback) →
       raw/articles/<YYYY-MM>/<slug>.md.
 
+  batch:
+    handler: bin/ingest-batch.py
+    accepts:
+      - multi-URL: "url1 url2 url3"
+      - url-file: "--urls list.txt"
+      - stdin: "--urls -"
+      - crawl: "--crawl <hub-url>"
+    notes: |
+      Multi-URL paste + blog-series crawler. Each URL is classified by
+      domain and dispatched to the matching ingest-*.py. Supports
+      --dry-run (classify-only), --limit, --include-pattern, and
+      --exclude-pattern. The blog crawler extracts <a href> links from
+      a hub page (same-domain by default, --allow-cross-domain to
+      override) and treats them as a multi-URL batch.
+
 global_settings:
   attachments_inline: true
   hash_algorithm: blake3

@@ -54,7 +54,8 @@ See `identity.md`. One-line summary: internalized + scannable, one short author 
 ## Ingest entry points
 
 ```bash
-bin/ingest-book.py "<title>" --author "<author>"
+# Single-source ingest (capture-only, writes to raw/)
+bin/ingest-book.py --title "<title>" --author "<author>"
 bin/ingest-book.py --url "https://annas-archive.org/md5/<md5>"
 bin/ingest-book.py --epub-path /path/to/book.epub --title X --author Y
 
@@ -66,6 +67,17 @@ bin/ingest-youtube.py "<channel-url>" --videos id1,id2,id3
 bin/ingest-reel.py "<instagram-url>"
 bin/ingest-paper.py "<arxiv-or-doi-or-pdf-url>"
 bin/ingest-article.py "<url>"
+
+# Bulk ingest
+bin/ingest-book.py --author "James Clear"                 # all books by author from annas-archive
+bin/ingest-book.py --author "James Clear" --limit 5 --dry-run
+
+bin/ingest-batch.py url1 url2 url3                        # multi-URL paste (positional)
+bin/ingest-batch.py --urls list.txt                       # one URL per line, # comments OK
+cat list.txt | bin/ingest-batch.py --urls -               # stdin
+bin/ingest-batch.py --crawl https://paulgraham.com/articles.html
+bin/ingest-batch.py --crawl <hub> --limit 5 --dry-run     # preview before downloading
+bin/ingest-batch.py --crawl <hub> --include-pattern '/posts/' --exclude-pattern '/tag/'
 
 # After ingest, build the wiki:
 /graphify --wiki workspaces/library

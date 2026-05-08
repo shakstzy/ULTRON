@@ -92,84 +92,35 @@ async function readCinemaGenerateCost(page) {
   });
 }
 
-// Switch cinema-studio to Image or Video mode. Cinema renders overlapping tab
-// widgets (one actual mode switcher + one stale/decorative) with identical
-// aria labels, so aria-selected alone is unreliable. We verify the switch via
-// the Generate button's cost readout: image = 2 credits, video = 96 credits.
-// Returns true once the cost reflects the requested mode.
+// Switch cinema-studio to Image or Video mode. Cinema 3.5 (May 2026) renders
+// up to THREE Image/Video tab pairs simultaneously: header strip (y<50),
+// left-rail mode switcher (x<260), and config-bar mode switcher (x>=300).
+// In 3.5 either the left-rail OR the config-bar tab actually controls the
+// active panel -- we don't know in advance which.
+//
+// Strategy: try each role=tab matching the label that isn't already
+// aria-selected. After each click, verify by checking aria-selected on the
+// clicked tab. Skip the header strip (y<50) which is browser/page nav.
 export async function selectCinemaMode(page, mode) {
   const label = mode === 'video' ? 'Video' : 'Image';
-  const targetCost = mode === 'video' ? 96 : 2;
   const dbg = process.env.HF_DEBUG === '1';
-  // Fast path: Generate already shows target cost.
-  const currentCost = await readCinemaGenerateCost(page);
-  if (dbg) console.error(`[cinema-mode] fast-path: targetCost=${targetCost} currentCost=${currentCost}`);
-  if (currentCost === targetCost) return true;
 
-  // Click a role=tab with target label that is NOT aria-selected.
-  //
-  // Critical filter: cinema-studio renders TWO Image/Video tab pairs. One at
-  // x~228 is actually a LEFT-SIDEBAR NAV LINK (clicking navigates to /upscale
-  // or similar, destroying the page). The REAL mode-switch tabs sit in the
-  // config bar at x>=300 alongside the prompt. Reject x<300 candidates.
-  const tabJs = await page.evaluateHandle(l => {
-    const lblLower = l.toLowerCase();
+  // Fast path: target tab already aria-selected somewhere on the page.
+  const alreadyActive = await page.evaluate(lbl => {
     const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
-    const candidates = [];
-    for (const t of tabs) {
+    return tabs.some(t => {
       const line1 = (t.innerText || '').trim().split('\n')[0].trim();
-      if (line1.toLowerCase() !== lblLower) continue;
-      if (t.getAttribute('aria-selected') === 'true') continue;
-      const r = t.getBoundingClientRect();
-      if (r.width < 20 || r.height < 20) continue;
-      if (r.x < 300) continue; // sidebar nav tab; clicking navigates away
-      if (window.getComputedStyle(t).visibility === 'hidden') continue;
-      candidates.push({ el: t, r });
-    }
-    if (candidates.length === 0) return null;
-    candidates.sort((a, b) => (b.r.y + b.r.height) - (a.r.y + a.r.height));
-    return candidates[0].el;
+      return line1.toLowerCase() === lbl.toLowerCase() && t.getAttribute('aria-selected') === 'true';
+    });
   }, label);
-  const tab = tabJs.asElement ? tabJs.asElement() : null;
-  if (dbg) console.error(`[cinema-mode] first-choice tab found: ${tab ? 'yes' : 'no'}`);
-  if (tab) {
-    await tab.scrollIntoViewIfNeeded().catch(() => {});
-    await tab.click({ force: true }).catch(() => {});
-    // Poll cost: panel transition may take 500-1500ms; Generate can briefly
-    // unmount. Wait up to 5s for cost to stabilize at target.
-    const start = Date.now();
-    let lastCost = null;
-    while (Date.now() - start < 5000) {
-      await page.waitForTimeout(250);
-      lastCost = await readCinemaGenerateCost(page);
-      if (lastCost === targetCost) {
-        if (dbg) console.error(`[cinema-mode] post-first-click cost=${lastCost} target=${targetCost} (settled in ${Date.now()-start}ms)`);
-        return true;
-      }
-    }
-    if (dbg) {
-      const diag = await page.evaluate(() => {
-        const url = location.href;
-        const btns = Array.from(document.querySelectorAll('button')).filter(b => /generate/i.test((b.innerText || '').trim()));
-        const dump = btns.slice(0, 8).map(b => {
-          const r = b.getBoundingClientRect();
-          return { text: (b.innerText || '').trim().slice(0, 40), xy: [Math.round(r.x), Math.round(r.y)], wh: [Math.round(r.width), Math.round(r.height)], vis: window.getComputedStyle(b).visibility };
-        });
-        const prompts = Array.from(document.querySelectorAll('div[role="textbox"][contenteditable="true"], textarea')).map(el => {
-          const r = el.getBoundingClientRect();
-          return { tag: el.tagName, place: el.getAttribute('placeholder') || el.getAttribute('data-placeholder') || '', xy: [Math.round(r.x), Math.round(r.y)], wh: [Math.round(r.width), Math.round(r.height)] };
-        });
-        return { url, btns: dump, prompts };
-      });
-      console.error(`[cinema-mode] post-first-click FAILED. url=${diag.url}`);
-      console.error(`[cinema-mode]   generate-like btns:`, JSON.stringify(diag.btns));
-      console.error(`[cinema-mode]   prompts:`, JSON.stringify(diag.prompts));
-    }
+  if (alreadyActive) {
+    if (dbg) console.error(`[cinema-mode] fast-path: ${label} tab already aria-selected`);
+    return true;
   }
-  // First click didn't flip. Try every remaining target-labelled tab until
-  // the Generate cost matches. Some layouts have an actual mode-switch tab
-  // plus decorative siblings; we only know which is which by outcome.
-  const allCandidates = await page.evaluate(l => {
+
+  // Click each non-active tab matching label until aria-selected flips.
+  // y<50 excludes header nav. width/height >=20 excludes invisible widgets.
+  const candidates = await page.evaluate(l => {
     const lblLower = l.toLowerCase();
     const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
     return tabs.map((t, i) => {
@@ -181,23 +132,38 @@ export async function selectCinemaMode(page, mode) {
         aria: t.getAttribute('aria-selected'),
         x: r.x, y: r.y, w: r.width, h: r.height, visible
       };
-    }).filter(x => x.line1.toLowerCase() === lblLower && x.x >= 300 && x.w >= 20 && x.h >= 20 && x.visible);
+    }).filter(x => x.line1.toLowerCase() === lblLower
+      && x.aria !== 'true'
+      && x.y >= 50
+      && x.w >= 20 && x.h >= 20
+      && x.visible);
   }, label);
-  for (const cand of allCandidates) {
+  if (dbg) console.error(`[cinema-mode] ${candidates.length} candidate ${label} tab(s):`, JSON.stringify(candidates.map(c => ({xy: [Math.round(c.x), Math.round(c.y)], wh: [Math.round(c.w), Math.round(c.h)]}))));
+
+  for (const cand of candidates) {
     const handle = await page.evaluateHandle(({ idx }) => {
       const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
       return tabs[idx] || null;
     }, { idx: cand.idx });
     const el = handle.asElement ? handle.asElement() : null;
     if (!el) continue;
-    if (dbg) console.error(`[cinema-mode] fallback click on candidate idx=${cand.idx} aria=${cand.aria}`);
+    if (dbg) console.error(`[cinema-mode] click candidate idx=${cand.idx} xy=[${Math.round(cand.x)},${Math.round(cand.y)}]`);
+    await el.scrollIntoViewIfNeeded().catch(() => {});
     await el.click({ force: true }).catch(() => {});
-    await page.waitForTimeout(400);
-    const c = await readCinemaGenerateCost(page);
-    if (dbg) console.error(`[cinema-mode] post-fallback-click cost=${c} target=${targetCost}`);
-    if (c === targetCost) return true;
+
+    // Verify by re-reading the same tab's aria-selected.
+    const start = Date.now();
+    while (Date.now() - start < 3000) {
+      await page.waitForTimeout(200);
+      const sel = await el.evaluate(t => t.getAttribute('aria-selected') === 'true').catch(() => false);
+      if (sel) {
+        if (dbg) console.error(`[cinema-mode] verified: tab idx=${cand.idx} aria-selected=true`);
+        return true;
+      }
+    }
+    if (dbg) console.error(`[cinema-mode] tab idx=${cand.idx} click did not flip aria-selected`);
   }
-  if (dbg) console.error(`[cinema-mode] FAILED to reach cost=${targetCost}; tried ${allCandidates.length} candidates`);
+  if (dbg) console.error(`[cinema-mode] FAILED: tried ${candidates.length} candidates, none flipped aria-selected`);
   return false;
 }
 

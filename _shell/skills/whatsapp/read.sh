@@ -111,26 +111,16 @@ if group_arg:
     if group_arg.endswith("@g.us"):
         target_jid = group_arg
     else:
-        # Mirror send.sh: try base slug AND collision-resolved suffix
-        groups = list(con.execute("SELECT jid, name FROM chats WHERE jid LIKE \"%@g.us\"").fetchall())
-        base = {jid: kc(name) for jid, name in groups}
-        buckets = defaultdict(list)
-        for jid, b in base.items():
-            buckets[b].append(jid)
-        suffixed = {}
-        for b, jids in buckets.items():
-            if len(jids) <= 1:
-                continue
-            for jid in jids:
-                d = re.sub(r"\D", "", jid.split("@", 1)[0])
-                suffixed[jid] = f"{b}-" + (d[-4:] if len(d) >= 4 else (d or "x"))
-        candidates = []
-        for jid, _ in groups:
-            cand = {base[jid]}
-            if jid in suffixed:
-                cand.add(suffixed[jid])
-            if group_arg in cand:
-                candidates.append(jid)
+        # Use the shared resolver — single source of truth for collision-resolved
+        # group slugs. Same algorithm as ingest, so any slug ingest emitted will
+        # resolve here, including sha256-suffixed slugs from second-pass collisions.
+        sys.path.insert(0, str(Path(__file__).resolve().parent if "__file__" in globals() else "/Users/shakstzy/ULTRON/_shell/skills/whatsapp"))
+        try:
+            from _resolve import resolve_group_by_slug  # type: ignore
+        except ImportError:
+            sys.path.insert(0, "/Users/shakstzy/ULTRON/_shell/skills/whatsapp")
+            from _resolve import resolve_group_by_slug  # type: ignore
+        candidates = resolve_group_by_slug(bridge_db, group_arg)
         if not candidates:
             sys.stderr.write(f"read.sh: no group chat matched slug '{group_arg}'\n")
             sys.exit(3)
@@ -184,14 +174,33 @@ if not target_jid:
 # Fetch chat name + last N messages
 chat_row = con.execute("SELECT name FROM chats WHERE jid = ?", (target_jid,)).fetchone()
 chat_name = chat_row[0] if chat_row else target_jid
+# Fetch a wider window than `limit` so we can re-sort by parsed datetime
+# (lex order on ISO-string-with-offset can mis-rank around DST fallback when
+# offsets differ). 3x is a generous defensive multiplier — bridge timestamps
+# are mostly aligned, but this protects rare boundary cases.
+fetch_n = max(limit * 3, limit + 50)
 rows = con.execute(
     "SELECT timestamp, sender, content, is_from_me, media_type, filename "
     "FROM messages WHERE chat_jid = ? ORDER BY timestamp DESC LIMIT ?",
-    (target_jid, limit),
+    (target_jid, fetch_n),
 ).fetchall()
 
-# Reverse to chronological order for output
-rows = list(reversed(rows))
+# Re-sort by parsed aware datetime (UTC fallback for naive inputs).
+def _parse(ts):
+    try:
+        import datetime
+        dt = datetime.datetime.fromisoformat(ts)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=datetime.timezone.utc)
+        return dt
+    except Exception:
+        return None
+
+with_dt = [(_parse(r[0]), r) for r in rows]
+with_dt = [(d, r) for d, r in with_dt if d is not None]
+with_dt.sort(key=lambda pair: pair[0], reverse=True)
+rows = [r for _, r in with_dt[:limit]]
+rows.reverse()  # chronological for output
 if not rows:
     sys.stderr.write(f"read.sh: no messages found for {target_jid}\n")
     sys.exit(0)

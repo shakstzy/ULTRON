@@ -9,8 +9,9 @@ phone: null
 status: "new"
 first_seen: "2026-05-07T20:12:27.644Z"
 last_activity: "2026-05-07T20:12:27.644Z"
-last_scrape: "2026-05-07T20:12:27.644Z"
+last_scrape: "2026-05-08T04:09:16.761Z"
 previous_slugs: []
+last_profile_diff: "2026-05-08T04:09:16.761Z"
 ---
 
 ## Profile
@@ -35,7 +36,23 @@ previous_slugs: []
 
 ## Profile changes
 
-(none yet)
+```json profile-diff
+{
+  "ts": "2026-05-08T04:09:16.761Z",
+  "added": {
+    "jobs": [
+      "English, Spanish"
+    ]
+  },
+  "removed": {
+    "jobs": [
+      "English",
+      "Spanish"
+    ]
+  },
+  "changed": {}
+}
+```
 
 ## Conversation
 

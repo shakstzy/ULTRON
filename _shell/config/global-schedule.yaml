@@ -19,6 +19,8 @@ cron_env:
   CLAUDE_CONFIG_DIR: ~/.claude-cron
 
 cross_workspace:
+  auditor_deadman:
+    cron: "*/30 * * * *"            # Every 30min — watchdog-of-the-watchdog. cron-auditor is the only thing that pages on stale jobs; if it crashes silently we go blind. This dead-man iMessages directly when cron-audit-state.json mtime > 1.5h.
   graphify_supermerge:
     cron: "0 */6 * * *"             # Every 6 hours
   audit:

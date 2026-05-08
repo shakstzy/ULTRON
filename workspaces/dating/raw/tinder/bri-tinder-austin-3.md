@@ -9,9 +9,9 @@ phone: null
 status: "new"
 first_seen: "2026-05-07T05:00:15.461Z"
 last_activity: "2026-05-07T05:00:15.461Z"
-last_scrape: "2026-05-07T20:12:38.742Z"
+last_scrape: "2026-05-08T04:09:27.667Z"
 previous_slugs: []
-last_profile_diff: "2026-05-07T20:12:38.742Z"
+last_profile_diff: "2026-05-08T04:09:27.667Z"
 ---
 
 ## Profile
@@ -39,6 +39,17 @@ last_profile_diff: "2026-05-07T20:12:38.742Z"
 ```json profile-diff
 {
   "ts": "2026-05-07T20:12:38.742Z",
+  "added": {
+    "photo_verified": false
+  },
+  "removed": {},
+  "changed": {}
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-08T04:09:27.667Z",
   "added": {
     "photo_verified": false
   },

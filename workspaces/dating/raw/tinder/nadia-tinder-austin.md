@@ -9,21 +9,21 @@ phone: null
 status: "new"
 first_seen: "2026-05-07T05:01:06.037Z"
 last_activity: "2026-05-07T05:01:06.037Z"
-last_scrape: "2026-05-07T20:13:11.489Z"
+last_scrape: "2026-05-08T04:10:00.556Z"
 previous_slugs: []
-last_profile_diff: "2026-05-07T20:13:11.489Z"
+last_profile_diff: "2026-05-08T04:10:00.556Z"
 ---
 
 ## Profile
 
 - age: 22
-- distance_mi: 1496
+- distance_mi: 1480
 - height_cm: 165
 - bio: "part-time neet full-time femcel 💔"
 - looking_for: "Still figuring it out"
 - schools: Also went to University of California, Berkeley
 - photo_verified: true
-- interests: Binge-Watching TV shows, X, Freelancing, Museums, Metaverse, Drawing, Trying New Things, Martial Arts, Art
+- interests: Binge-Watching TV shows, Virtual Reality, Metaverse, Art, X, Drawing, Trying New Things, Martial Arts, Museums, Freelancing
 - basics.communication_style: "Phone caller"
 - basics.love_style: "Compliments"
 - basics.zodiac: "Sagittarius"
@@ -51,6 +51,32 @@ last_profile_diff: "2026-05-07T20:13:11.489Z"
     ]
   },
   "changed": {}
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-08T04:10:00.556Z",
+  "added": {
+    "schools": [
+      "Also went to University of California, Berkeley"
+    ],
+    "interests": [
+      "Virtual Reality"
+    ]
+  },
+  "removed": {
+    "schools": [
+      "Also went to University of California",
+      "Berkeley"
+    ]
+  },
+  "changed": {
+    "distance_mi": {
+      "from": 1496,
+      "to": 1480
+    }
+  }
 }
 ```
 

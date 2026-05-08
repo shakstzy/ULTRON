@@ -23,7 +23,7 @@ ACCOUNT=""
 # 1. Stage validation BEFORE any state mutation.
 case "$STAGE" in
   ingest|lint|audit|bootstrap|weekly-review|query) ;;
-  apple-contacts-sync|ledger-compact|graphify-supermerge|graphify|granola-reconcile|rental-cycle|synthesize-voice-profiles|podcast-outreach) ;;
+  apple-contacts-sync|ledger-compact|graphify-supermerge|graphify|granola-reconcile|rental-cycle|synthesize-voice-profiles|podcast-outreach|auditor-deadman) ;;
   ingest-source)
     # Per (source, account) mode. Args: ingest-source <source> <account>.
     SOURCE="${2:-}"
@@ -54,7 +54,7 @@ esac
 # Helper stages don't have a stages/<stage>/CONTEXT.md; they invoke a single
 # script and exit. ingest-source uses the source's substage CONTEXT.md.
 case "$STAGE" in
-  apple-contacts-sync|ledger-compact|graphify-supermerge|graphify|granola-reconcile|rental-cycle|synthesize-voice-profiles|podcast-outreach) ;;
+  apple-contacts-sync|ledger-compact|graphify-supermerge|graphify|granola-reconcile|rental-cycle|synthesize-voice-profiles|podcast-outreach|auditor-deadman) ;;
   ingest-source)
     if [[ ! -f "$ULTRON_ROOT/_shell/stages/ingest/$SOURCE/CONTEXT.md" ]]; then
       echo "missing source substage: $ULTRON_ROOT/_shell/stages/ingest/$SOURCE/CONTEXT.md" >&2
@@ -280,6 +280,14 @@ case "$STAGE" in
   ledger-compact)
     python3 "$ULTRON_ROOT/_shell/bin/compact-ledger.py" \
       > "$RUN_DIR/output/compact-ledger.log" 2>&1 || EC=$?
+    ;;
+  auditor-deadman)
+    # Watchdog-of-the-watchdog: pages directly via iMessage if cron-auditor's
+    # state.json hasn't been updated within MAX_AUDITOR_LAG_HOURS. Wrapped via
+    # cron-runner so the auditor itself sees deadman entries in the ledger -
+    # both mutually monitor through different mechanisms.
+    "$ULTRON_ROOT/.venv/bin/python3" "$ULTRON_ROOT/_shell/bin/auditor-deadman.py" \
+      > "$RUN_DIR/output/auditor-deadman.log" 2>&1 || EC=$?
     ;;
   graphify-supermerge)
     bash "$ULTRON_ROOT/_shell/bin/graphify-run.sh" \

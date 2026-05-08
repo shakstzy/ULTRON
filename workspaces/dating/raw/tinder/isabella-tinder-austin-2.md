@@ -9,14 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-06T22:47:14.876Z"
 last_activity: "2026-05-06T22:47:14.876Z"
-last_scrape: "2026-05-07T20:13:01.768Z"
+last_scrape: "2026-05-08T04:09:50.903Z"
 previous_slugs: []
+last_profile_diff: "2026-05-08T04:09:50.903Z"
 ---
 
 ## Profile
 
 - age: 18
-- distance_mi: 8
+- distance_mi: 11
 - bio: "My go-to karaoke song is… Chossin’ Texas- Ella Langley"
 - looking_for: "Long-term partner"
 - schools: Saint Edward's University
@@ -33,7 +34,19 @@ previous_slugs: []
 
 ## Profile changes
 
-(none yet)
+```json profile-diff
+{
+  "ts": "2026-05-08T04:09:50.903Z",
+  "added": {},
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 8,
+      "to": 11
+    }
+  }
+}
+```
 
 ## Conversation
 

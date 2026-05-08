@@ -23,7 +23,7 @@ ACCOUNT=""
 # 1. Stage validation BEFORE any state mutation.
 case "$STAGE" in
   ingest|lint|audit|bootstrap|weekly-review|query) ;;
-  apple-contacts-sync|ledger-compact|graphify-supermerge|graphify|granola-reconcile|rental-cycle|synthesize-voice-profiles) ;;
+  apple-contacts-sync|ledger-compact|graphify-supermerge|graphify|granola-reconcile|rental-cycle|synthesize-voice-profiles|podcast-outreach) ;;
   ingest-source)
     # Per (source, account) mode. Args: ingest-source <source> <account>.
     SOURCE="${2:-}"
@@ -54,7 +54,7 @@ esac
 # Helper stages don't have a stages/<stage>/CONTEXT.md; they invoke a single
 # script and exit. ingest-source uses the source's substage CONTEXT.md.
 case "$STAGE" in
-  apple-contacts-sync|ledger-compact|graphify-supermerge|graphify|granola-reconcile|rental-cycle|synthesize-voice-profiles) ;;
+  apple-contacts-sync|ledger-compact|graphify-supermerge|graphify|granola-reconcile|rental-cycle|synthesize-voice-profiles|podcast-outreach) ;;
   ingest-source)
     if [[ ! -f "$ULTRON_ROOT/_shell/stages/ingest/$SOURCE/CONTEXT.md" ]]; then
       echo "missing source substage: $ULTRON_ROOT/_shell/stages/ingest/$SOURCE/CONTEXT.md" >&2
@@ -270,6 +270,12 @@ case "$STAGE" in
     # All gated by ZRM_DRY_RUN=1 if you want a no-mutate run.
     node "$ULTRON_ROOT/workspaces/rental-manager/playbooks/zillow-rental-manager/scripts/cron-cycle.mjs" \
       > "$RUN_DIR/output/rental-cycle.log" 2>&1 || EC=$?
+    ;;
+  podcast-outreach)
+    # Eclipse podcast licensing outreach: scan-replies → discover (if low) → send.
+    # Defaults to LIVE; pass DRY_RUN=1 in the env to force dry-run.
+    node "$ULTRON_ROOT/_shell/skills/podcast-outreach/scripts/cron-cycle.mjs" \
+      > "$RUN_DIR/output/podcast-outreach.log" 2>&1 || EC=$?
     ;;
   ledger-compact)
     python3 "$ULTRON_ROOT/_shell/bin/compact-ledger.py" \

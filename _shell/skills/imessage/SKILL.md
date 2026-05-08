@@ -76,7 +76,7 @@ After composing the in-voice draft, run it through the **humanizer** skill (`~/U
 Flow:
 1. Compose draft using the three-source context above (voice profile + summary + recent tail).
 2. Invoke the humanizer skill on the draft.
-3. Pass the humanized result to `send.sh --text "..."`.
+3. Write the humanized result to a temp file, then `send.sh --text-file /tmp/draft.txt`. Use `--text-file` (not `--text "..."`) for any draft you didn't write byte-for-byte yourself — avoids shell-quoting bugs with backticks, `$`, and newlines.
 
 For halt-notification sends from cron bots to Adithya himself, skip both voice-context and humanizer (those are explicitly machine-flavored).
 

@@ -27,11 +27,12 @@ esc() { printf '%s' "$1" | sed -e 's/\\/\\\\/g' -e 's/"/\\"/g'; }
 digits_tail() { printf '%s' "$1" | tr -d -c '0-9' | tail -c 10; }
 urlenc() { python3 -c 'import sys,urllib.parse;print(urllib.parse.quote(sys.argv[1],safe=""),end="")' "$1"; }
 
-TO=""; TEXT=""; FILE=""; GROUP=""; NEW_GROUP=""
+TO=""; TEXT=""; TEXT_FILE=""; FILE=""; GROUP=""; NEW_GROUP=""
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --to)        TO="$2";        shift 2 ;;
     --text)      TEXT="$2";      shift 2 ;;
+    --text-file) TEXT_FILE="$2"; shift 2 ;;
     --file)      FILE="$2";      shift 2 ;;
     --group)     GROUP="$2";     shift 2 ;;
     --new-group) NEW_GROUP="$2"; shift 2 ;;
@@ -39,8 +40,15 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
+# --text-file is the preferred path for any non-trivial draft (avoids shell quoting bugs
+# with quotes / backticks / $ / newlines). Either flag works; --text wins if both given.
+if [[ -z "$TEXT" && -n "$TEXT_FILE" ]]; then
+  [[ -f "$TEXT_FILE" ]] || die "--text-file not found: $TEXT_FILE"
+  TEXT=$(cat "$TEXT_FILE")
+fi
+
 [[ -z "$TO$GROUP$NEW_GROUP" ]] && die "--to, --group, or --new-group required"
-[[ -z "$TEXT$FILE" ]] && die "--text or --file required"
+[[ -z "$TEXT$FILE" ]] && die "--text, --text-file, or --file required"
 [[ -n "$FILE" && ! -f "$FILE" ]] && die "file not found: $FILE"
 [[ -n "$NEW_GROUP" && -n "$FILE" ]] && die "--new-group does not support --file (use --group after creation)"
 

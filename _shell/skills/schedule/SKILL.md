@@ -42,7 +42,7 @@ Cross-workspace plists (audit, weekly-review, graphify-supermerge, apple-contact
 
 Every plist includes:
 - `StandardOutPath` / `StandardErrorPath` → `_logs/<label>.{out,err}.log`.
-- `EnvironmentVariables`: `PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin`, `ULTRON_ROOT=<absolute>`, `HOME=<absolute>`.
+- `EnvironmentVariables`: `PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin`, `ULTRON_ROOT=<absolute>`, `HOME=<absolute>`, plus every key/value from the top-level `cron_env:` block in `_shell/config/global-schedule.yaml` (single source of truth for cross-job env — e.g. `CLAUDE_CONFIG_DIR=~/.claude-cron` to isolate cron Claude auth from interactive sessions). `~` is expanded at compile time. Daemon-specific `env:` overrides on key collision.
 - `WorkingDirectory` → ULTRON root.
 - `RunAtLoad: false`.
 

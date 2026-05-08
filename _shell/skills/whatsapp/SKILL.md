@@ -51,7 +51,12 @@ Sends are gated per Adithya's standing rules (explicit-permission action). Alway
 
 # File attachment (image / video / audio / document)
 ~/ULTRON/_shell/skills/whatsapp/send.sh --to +15125551234 --file /abs/path/to/photo.jpg
+
+# Dry-run — resolve recipient + validate payload, NEVER POST to bridge
+~/ULTRON/_shell/skills/whatsapp/send.sh --to "Sydney" --text "test" --dry-run
 ```
+
+**Use `--dry-run` for ANY smoke test of recipient resolution or file-path validation.** A 2026-05-07 incident sent a real "test" message to a real group chat during a slug-resolution smoke test. Adversarial review and integration testing must use `--dry-run` unless Adithya has explicitly confirmed in chat that a live test is OK.
 
 Emits JSON on stdout: `{"handoff":"ok","path":"phone|contact|group-by-slug|group-by-jid","recipient":"<jid-or-digits>","bridge_response":"..."}`. Exit 0 = bridge accepted handoff. Delivery is verifiable only on the recipient side; this skill does not claim delivery.
 
@@ -122,8 +127,25 @@ WhatsApp has aggressive anti-spam at the account level. The send.sh script impos
 - macOS Automation → grant Terminal/iTerm/Ghostty access to **Contacts** (System Settings → Privacy & Security → Automation). Without this, contact-name resolution returns empty.
 - Bridge must be running and authenticated. See `Daemonization`.
 
+## Read (one-off peek without ingesting)
+
+`read.sh` exists for "show me the last N messages from this chat" without re-running the full ingest. Same recipient resolution as `send.sh` (phone E.164, contact name, group slug, raw JID). Reads the bridge's local SQLite directly — bridge daemon does NOT need to be running, only have run+paired at some point.
+
+```bash
+# Last 20 messages from a group
+~/ULTRON/_shell/skills/whatsapp/read.sh --group east-parke-main-group
+
+# Last 5 messages from a 1:1 by contact name
+~/ULTRON/_shell/skills/whatsapp/read.sh --to "Sydney" --limit 5
+
+# Last 10 messages by JID (no resolution)
+~/ULTRON/_shell/skills/whatsapp/read.sh --to 15125551234@s.whatsapp.net --limit 10
+```
+
+Output is the same `**HH:MM — sender:** text` shape as the per-month markdown shards, prepended with a one-line chat header. Sender resolution: Apple Contacts → whatsmeow_contacts → phone → LID-prefix. For full historical search across all chats, point `grep` / graphify at `workspaces/<ws>/raw/whatsapp/` instead.
+
 ## Related
 
-- `_shell/bin/ingest-whatsapp.py` — the read path; per-(chat, month) markdown shards under `workspaces/<ws>/raw/whatsapp/`.
+- `_shell/bin/ingest-whatsapp.py` — the bulk read path; per-(chat, month) markdown shards under `workspaces/<ws>/raw/whatsapp/`.
 - `imessage` skill — sister skill for iMessage/SMS/RCS via Messages.app AppleScript.
 - `discord` / `telegram` — analogous skills for those platforms.

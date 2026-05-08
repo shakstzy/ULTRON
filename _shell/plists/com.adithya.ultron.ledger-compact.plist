@@ -4,6 +4,8 @@
 <dict>
 	<key>EnvironmentVariables</key>
 	<dict>
+		<key>CLAUDE_CONFIG_DIR</key>
+		<string>/Users/shakstzy/.claude-cron</string>
 		<key>HOME</key>
 		<string>/Users/shakstzy</string>
 		<key>PATH</key>

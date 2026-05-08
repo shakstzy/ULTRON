@@ -163,6 +163,15 @@ claude_invoke() {
 
 EC=0
 
+# Records a helper failure into EC, preserving the FIRST non-zero exit so a
+# late-stage success can't mask an earlier crash. Stage helpers in lint/audit
+# previously used `|| true` which silently dropped failures off the cron ledger.
+record_failure() {
+  local rc=$?
+  (( EC == 0 )) && EC=$rc
+  echo "[stage] helper failed (exit=$rc): $*" >&2
+}
+
 case "$STAGE" in
   ingest-source)
     # Per (source, account) ingest. Dispatches to the source's robot.
@@ -196,29 +205,29 @@ case "$STAGE" in
     ;;
   lint)
     "$ULTRON_ROOT/_shell/bin/check-routes.py" --workspace "$WORKSPACE" \
-      --output "$RUN_DIR/output/check-routes.txt" || true
+      --output "$RUN_DIR/output/check-routes.txt" || record_failure check-routes
     "$ULTRON_ROOT/_shell/bin/build-backlinks.py" --dry-run --workspace "$WORKSPACE" \
-      > "$RUN_DIR/output/backlinks.txt" 2>&1 || true
+      > "$RUN_DIR/output/backlinks.txt" 2>&1 || record_failure build-backlinks
     claude_invoke \
       "$ULTRON_ROOT/workspaces/$WORKSPACE/agents/lint-agent.md" \
       "$RUN_DIR/output/result.json" \
-      "$RUN_DIR/output/stderr.log" || EC=$?
+      "$RUN_DIR/output/stderr.log" || record_failure lint-agent
     ;;
   audit)
     "$ULTRON_ROOT/_shell/bin/build-backlinks.py" \
-      > "$RUN_DIR/output/backlinks.txt" 2>&1 || true
+      > "$RUN_DIR/output/backlinks.txt" 2>&1 || record_failure build-backlinks
     "$ULTRON_ROOT/_shell/bin/graphify-run.sh" \
-      > "$RUN_DIR/output/graphify.log" 2>&1 || true
+      > "$RUN_DIR/output/graphify.log" 2>&1 || record_failure graphify-run
     "$ULTRON_ROOT/_shell/bin/audit-system-health.sh" \
-      > "$RUN_DIR/output/system-health.md" 2>&1 || true
+      > "$RUN_DIR/output/system-health.md" 2>&1 || record_failure audit-system-health
     "$ULTRON_ROOT/.venv/bin/python3" "$ULTRON_ROOT/_shell/bin/find-cross-workspace-slugs.py" \
-      > "$RUN_DIR/output/cross-workspace-slugs.log" 2>&1 || true
+      > "$RUN_DIR/output/cross-workspace-slugs.log" 2>&1 || record_failure find-cross-workspace-slugs
     "$ULTRON_ROOT/.venv/bin/python3" "$ULTRON_ROOT/_shell/bin/generate-candidate-edges.py" \
-      > "$RUN_DIR/output/candidate-edges.log" 2>&1 || true
+      > "$RUN_DIR/output/candidate-edges.log" 2>&1 || record_failure generate-candidate-edges
     claude_invoke \
       "$ULTRON_ROOT/_shell/agents/audit-agent.md" \
       "$RUN_DIR/output/result.json" \
-      "$RUN_DIR/output/stderr.log" || EC=$?
+      "$RUN_DIR/output/stderr.log" || record_failure audit-agent
     ;;
   bootstrap)
     if [[ -d "$ULTRON_ROOT/workspaces/$WORKSPACE" ]]; then

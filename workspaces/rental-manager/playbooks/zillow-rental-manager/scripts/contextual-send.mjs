@@ -33,6 +33,7 @@ import { spawnSync } from 'node:child_process';
 import { STATE_DIR, THREADS_DIR } from './paths.mjs';
 import { readThreadState } from './storage.mjs';
 import { proposeTourSlots } from './calendar.mjs';
+import { llmAsk } from './llm-ask.mjs';
 
 const DRAFTS_DIR = join(STATE_DIR, 'drafts');
 
@@ -180,19 +181,7 @@ Length: 1-4 short sentences typically. Match the energy of their last message.
 OUTPUT: just the reply body. No quotes around it. No "Hi <name>!" greeting required if the conversation is mid-stream.`;
 }
 
-function claudeAsk(prompt, { timeoutMs = 180_000 } = {}) {
-  const r = spawnSync('claude', ['-p', '--model', 'sonnet'], {
-    input: prompt,
-    encoding: 'utf8',
-    timeout: timeoutMs,
-    maxBuffer: 16 * 1024 * 1024
-  });
-  if (r.status !== 0 || !r.stdout) {
-    const detail = (r.stderr || r.error?.message || `exit=${r.status}`).slice(0, 500);
-    throw new Error(`claude failed: ${detail}`);
-  }
-  return { engine: 'claude-sonnet', text: r.stdout.trim() };
-}
+// Drafting calls go through llmAsk (claude CLI primary, cloud-llm fallback).
 
 function loadAllThreads() {
   const out = [];
@@ -255,10 +244,11 @@ async function main() {
     let body, engine;
     try {
       const prompt = buildPrompt(t, t.bucket, slots);
-      const res = claudeAsk(prompt, { timeoutMs: 180_000 });
+      const res = llmAsk(prompt, { timeoutMs: 180_000 });
       body = res.text;
       engine = res.engine;
-      if (!body) throw new Error('claude returned empty body');
+      if (res.fallback_used) console.error(`  fallback used: claude_error=${(res.claude_error || '').slice(0, 80)}`);
+      if (!body) throw new Error('llmAsk returned empty body');
     } catch (e) {
       summary.failed++;
       writeFileSync(join(DRAFTS_DIR, `${t.cid}-error.json`), JSON.stringify({ cid: t.cid, error: e.message, bucket: t.bucket }, null, 2));

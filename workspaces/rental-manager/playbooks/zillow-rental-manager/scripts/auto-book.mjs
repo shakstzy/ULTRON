@@ -30,6 +30,7 @@ import { STATE_DIR, THREADS_DIR } from './paths.mjs';
 import { readThreadState, writeThreadState } from './storage.mjs';
 import { proposeTourSlots, createTourEvent } from './calendar.mjs';
 import { chooseBucket } from './contextual-send.mjs';
+import { llmAsk } from './llm-ask.mjs';
 
 const DRAFTS_DIR = join(STATE_DIR, 'drafts');
 const BOOK_LOG_DIR = join(STATE_DIR, 'book-runs');
@@ -53,19 +54,7 @@ function parseArgs(argv) {
 
 function ensureDir(p) { if (!existsSync(p)) mkdirSync(p, { recursive: true }); }
 
-function claudeAsk(prompt, { timeoutMs = 120_000 } = {}) {
-  const r = spawnSync('claude', ['-p', '--model', 'sonnet'], {
-    input: prompt,
-    encoding: 'utf8',
-    timeout: timeoutMs,
-    maxBuffer: 16 * 1024 * 1024
-  });
-  if (r.status !== 0 || !r.stdout) {
-    const detail = (r.stderr || r.error?.message || `exit=${r.status}`).slice(0, 500);
-    throw new Error(`claude failed: ${detail}`);
-  }
-  return r.stdout.trim();
-}
+// LLM calls go through llmAsk (claude CLI primary, cloud-llm fallback).
 
 // Ask claude to classify the latest inbound + extract a picked slot if any.
 // We deliberately ask for a tagged-line output (not JSON) because claude -p
@@ -108,7 +97,7 @@ Rules:
 - If they propose a NEW time not in the list, INTENT=NO_BOOK (we'll re-engage with new slots next round).
 - If they ask a question or want more info, INTENT=NO_BOOK.`;
 
-  const out = claudeAsk(prompt, { timeoutMs: 60_000 });
+  const out = llmAsk(prompt, { timeoutMs: 60_000 }).text;
   const lines = out.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
   const get = (key) => {
     const line = lines.find(l => l.toUpperCase().startsWith(key + ':'));

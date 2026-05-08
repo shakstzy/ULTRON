@@ -339,7 +339,12 @@ def main():
             lines.append(f"Cleaned {len(cleaned)} stale lock(s)")
         send_imessage(cfg, "\n".join(lines))
 
-    state_path.write_text(json.dumps(statuses, indent=2))
+    # Atomic write: a crash mid-write previously left a zero-byte state.json,
+    # which the next run silently swallows (parse fail → prior={}) and re-fires
+    # alerts for every job as if it were brand new.
+    tmp_path = state_path.with_suffix(state_path.suffix + ".tmp")
+    tmp_path.write_text(json.dumps(statuses, indent=2))
+    os.replace(tmp_path, state_path)
 
     counts = {}
     for s in statuses.values():

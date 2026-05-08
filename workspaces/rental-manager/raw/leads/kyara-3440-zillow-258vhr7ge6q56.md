@@ -30,3 +30,7 @@ hi im so sorry i missed the appointment
 ### 2025-09-08T01:55:03.000Z - Kyara Ayon
 
 im in a really tough spot and i got occupied trying to look at other places
+
+### 2026-05-08T22:11:41.094Z - Owner (Adithya)
+
+All good, don't worry about it. Let me know what days work for you to reschedule the tour.

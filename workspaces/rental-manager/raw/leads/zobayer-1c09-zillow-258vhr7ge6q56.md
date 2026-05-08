@@ -26,3 +26,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 ### 2025-08-31T19:12:20.000Z - Zobayer Ahmed
 
 I'm interested in your property. I'm a student from mission college, I am 23 years old.
+
+### 2026-05-08T22:10:50.266Z - Owner (Adithya)
+
+Hey Zobayer. Mission is right around the corner so the commute is super easy. I have four rooms open right now starting at $1000. Let me know what days work for you to swing by and check the place out.

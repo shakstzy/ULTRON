@@ -26,3 +26,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 ### 2025-09-03T15:19:17.000Z - Felicia S
 
 I am interested in this rental and would like to schedule a viewing. Please let me know when this would be possible. Will u let mom dad n child in for $1250
+
+### 2026-05-08T22:11:10.131Z - Owner (Adithya)
+
+The $1250 spot is a private suite in a shared house. Three people in there is going to be pretty tight. Let me know what days work for a tour if you still want to check it out.

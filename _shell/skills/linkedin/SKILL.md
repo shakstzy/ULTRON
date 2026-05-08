@@ -87,7 +87,13 @@ Re-run `login` only when a runtime verb reports `AUTH` / `CHECKPOINT`. Auto-relo
 
 ## Verbs
 
-All verbs go through `node scripts/run.mjs <verb> [flags]`. Common flag `--workspace <ws>` (default `personal`) controls where raw markdown writes land. Write verbs default to dry-run; pass `--send` to execute.
+All verbs go through `node scripts/run.mjs <verb> [flags]`. Common flag `--workspace <ws>` (default `network`) controls where raw markdown writes land. Write verbs default to dry-run; pass `--send` to execute.
+
+**Raw deposit format** follows the ULTRON workspace ingest standard (source / workspace / ingested_at / ingest_version / content_hash / provider_modified_at) plus LinkedIn-specific fields (linkedin_public_id, linkedin_url, linkedin_urn, connection_status) plus an `entity:` wikilink up to `_global/entities/people/<slug>.md` for graphify route-resolution. Body has `## Profile snapshot` (overwritten on re-pull) and append-only `## Threads` (dedup'd on day+direction+text).
+
+**Auto-promote.** `get-profile` creates a thin `_global/entities/people/<slug>.md` stub on first fetch, tagged `entity_status: provisional`. Idempotent — if contacts-sync already wrote a stub at that slug we leave it alone. Pass `--no-promote` to skip auto-creation when researching one-offs you don't want polluting the network graph. Promote provisional stubs to first-class with `/promote-entity`.
+
+**Redirect-honor.** Before writing a raw deposit, the upsert reads the target's frontmatter; if `redirect_to:` is set (left by `/alias` after a slug merge), the write resolves to canonical. This is what makes alias durable — future LinkedIn pulls don't re-create the duplicate.
 
 | Verb | Usage | Gate | Output |
 |------|-------|------|--------|

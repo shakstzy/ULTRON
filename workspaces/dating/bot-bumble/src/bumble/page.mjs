@@ -145,11 +145,14 @@ export async function readVisibleCard(page) {
 
     const txt = (el) => (el?.textContent || "").trim() || null;
 
-    // Name + age from dedicated selectors (no more textContent regex parsing).
+    // Name + age from dedicated selectors. Age element wraps leading comma in
+    // a <span class="comma">, so textContent reads ", 20" — parseInt(", 20")
+    // returns NaN. Regex out the digits, same pattern readThreadProfile uses.
     out.name = txt(root.querySelector(".encounters-story-profile__name"));
-    const ageStr = txt(root.querySelector(".encounters-story-profile__age"));
-    if (ageStr) {
-      const n = parseInt(ageStr, 10);
+    const ageStr = txt(root.querySelector(".encounters-story-profile__age")) || "";
+    const ageMatch = ageStr.match(/(\d+)/);
+    if (ageMatch) {
+      const n = parseInt(ageMatch[1], 10);
       if (!Number.isNaN(n)) out.age = n;
     }
 

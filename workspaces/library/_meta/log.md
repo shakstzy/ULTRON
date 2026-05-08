@@ -17,3 +17,13 @@
 - 2026-05-07T22:46:34 — ingest-article: paulgraham-how-do-great-work ('How to Do Great Work')
 - 2026-05-07T22:46:34 — ingest-article: paulgraham-having-kids ('Having Kids')
 - 2026-05-07T22:46:34 — ingest-batch: {'total': 2, 'ok': 2, 'skip': 0, 'error': 0, 'by_kind': {'article': 2}}
+- 2026-05-08T15:44:27 — ingest-article: paulgraham-beating-the-averages ('Beating the Averages')
+- 2026-05-08T15:44:42 — ingest-paper: vaswani-attention-all-you-2017 ('Attention Is All You Need')
+- 2026-05-08T15:44:45 — ingest-youtube: 3blue1brown-what-neural-network-deep-airca ('But what is a neural network? | Deep learning chapter 1')
+- 2026-05-08T15:44:45 — ingest-batch: {'total': 3, 'ok': 3, 'skip': 0, 'error': 0, 'by_kind': {'article': 1, 'paper': 1, 'youtube-video': 1}}
+- 2026-05-08T15:45:00 — ingest-article: paulgraham-the-brand-age ('The Brand Age')
+- 2026-05-08T15:45:00 — ingest-article: paulgraham-the-shape-of-the ('The Shape of the Essay Field')
+- 2026-05-08T15:45:00 — ingest-batch: {'total': 2, 'ok': 2, 'skip': 0, 'error': 0, 'by_kind': {'article': 2}}
+- 2026-05-08T15:45:28 — ingest-article: paulgraham-beating-the-averages ('Beating the Averages')
+- 2026-05-08T15:45:38 — ingest-paper: vaswani-attention-all-you-2017 ('Attention Is All You Need')
+- 2026-05-08T15:45:38 — ingest-batch: {'total': 2, 'ok': 2, 'skip': 0, 'error': 0, 'by_kind': {'article': 1, 'paper': 1}}

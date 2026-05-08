@@ -8,16 +8,16 @@ reference_email: "44h8fasq6tv9ei3cwg9mfyvjnm9@convo.zillow.com"
 listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 6900156176000155709
-status_label: INQUIRED
+status_label: TOUR REQUESTED
 renter_us_state: CA
-last_pulled_at: "2026-05-08T02:50:30.102Z"
+last_pulled_at: "2026-05-08T02:53:26.621Z"
 ---
 
 # Monica
 
 Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 
-- Status: `INQUIRED`
+- Status: `TOUR REQUESTED`
 - Phone: `+18189843627`
 - Zillow forwarding email: `44h8fasq6tv9ei3cwg9mfyvjnm9@convo.zillow.com`
 - Conversation ID: `6900156176000155709`

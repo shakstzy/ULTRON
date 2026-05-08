@@ -10,7 +10,7 @@ listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 308627147311401562
 status_label: INQUIRED
 renter_us_state: CA
-last_pulled_at: "2026-05-08T02:50:23.324Z"
+last_pulled_at: "2026-05-08T02:53:19.778Z"
 ---
 
 # morgan

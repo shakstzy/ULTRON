@@ -10,7 +10,7 @@ listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 8641201217419383936
 status_label: INQUIRED
 renter_us_state: CA
-last_pulled_at: "2026-05-08T02:50:55.360Z"
+last_pulled_at: "2026-05-08T02:53:51.119Z"
 ---
 
 # Ruzanna

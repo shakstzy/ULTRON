@@ -355,13 +355,27 @@ function syncThread(threadId, relayToCid, applicationNamesLc, opts) {
   const lastInbound = [...messages].reverse().find(m => m.direction === 'inbound');
   const lastOutbound = [...messages].reverse().find(m => m.direction === 'outbound');
 
-  // Application status override.
-  let statusLabel = statusHint;
-  if (leadName && applicationNamesLc.has(leadName.toLowerCase())) statusLabel = 'APPLICATION RECEIVED';
-
   // Merge with existing state (preserve fields the portal set: tour_event_id,
   // renter_profile, etc.) — Gmail-derived fields override their counterparts.
   const prior = readThreadState(cid) || {};
+
+  // Status rank: prior portal-derived state often has stronger signal than
+  // Gmail can infer (TOURED is portal-only; TOUR REQUESTED is portal-only
+  // — clicking "request a tour" doesn't change the email subject). Take MAX
+  // of prior + Gmail-inferred so we never downgrade real signal.
+  const STATUS_RANK = { 'INQUIRED': 0, 'TOUR REQUESTED': 1, 'TOURED': 2, 'APPLICATION RECEIVED': 3 };
+  const priorStatus = (prior.status_label || '').toUpperCase();
+  let statusLabel;
+  if (priorStatus === 'APPLICATION WITHDRAWN') {
+    statusLabel = prior.status_label;  // terminal — never overwrite
+  } else {
+    let gmailInferred = statusHint;
+    if (leadName && applicationNamesLc.has(leadName.toLowerCase())) gmailInferred = 'APPLICATION RECEIVED';
+    const priorRank = STATUS_RANK[priorStatus] ?? -1;
+    const gmailRank = STATUS_RANK[gmailInferred.toUpperCase()] ?? 0;
+    statusLabel = priorRank > gmailRank ? prior.status_label : gmailInferred;
+  }
+
   const merged = {
     ...prior,
     listing_alias: prior.listing_alias || LISTING_ALIAS,

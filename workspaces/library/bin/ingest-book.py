@@ -8,11 +8,13 @@ file at `raw/books/<author>/<slug>.md` with the universal envelope. The
 original EPUB stays alongside as `<slug>.epub` for re-extraction. NO
 cloud-llm. NO wiki writes.
 
-Three input modes:
+Four input modes:
   ingest-book.py --title "Walden" --author "Henry David Thoreau"
   ingest-book.py --url "https://annas-archive.org/md5/<32hex>"
   ingest-book.py --url "https://www.gutenberg.org/ebooks/205.epub.images" --title Walden --author "Henry David Thoreau" --skip-validation
   ingest-book.py --epub-path /path/to/book.epub --title X --author Y
+  ingest-book.py --author "James Clear"                   # bibliography: all books by author
+  ingest-book.py --author "James Clear" --limit 5 --dry-run
 """
 from __future__ import annotations
 
@@ -198,6 +200,98 @@ def attempt_download(candidate: dict, dest: Path) -> tuple[bool, str]:
             last_err = f"{type(e).__name__}: {e}"
             continue
     return False, last_err
+
+
+def discover_books_by_author(
+    author: str,
+    limit: int = 20,
+    title_min: float = 0.0,
+    author_min: float = 0.7,
+    over_fetch: int = 3,
+) -> list[dict]:
+    """Search annas-archive for books by a single author.
+
+    Strategy: search by author name → walk the top results → resolve each md5
+    page → keep candidates whose parsed author fuzzy-matches the requested
+    author. Stops once `limit` matches accumulate.
+
+    Returns a list of resolved metadata dicts (one per matching book), each
+    with at minimum `title`, `author`, `url`, `format`, `language` populated."""
+    raw_results = search_annas(author, limit=max(limit * over_fetch, limit + 5))
+    matched: list[dict] = []
+    seen_titles: set[str] = set()
+    for r in raw_results:
+        if len(matched) >= limit:
+            break
+        try:
+            meta = resolve_md5_page(r["url"])
+        except Exception as e:
+            sys.stderr.write(f"  resolve {r['url']}: {type(e).__name__}: {e}\n")
+            continue
+        meta_title = (meta.get("title") or "").strip()
+        meta_author = (meta.get("author") or "").strip()
+        if not meta_title or not meta_author:
+            continue
+        if fuzzy_ratio(meta_author, author) < author_min:
+            continue
+        if meta.get("language") and meta["language"] != "en":
+            continue
+        title_key = meta_title.lower()
+        if title_key in seen_titles:
+            continue
+        seen_titles.add(title_key)
+        matched.append(meta)
+    return matched
+
+
+def ingest_books_by_author(
+    author: str,
+    limit: int = 20,
+    dry_run: bool = False,
+    skip_validation: bool = False,
+) -> dict:
+    """Search annas-archive for all books matching `author`, then ingest each.
+
+    Returns a summary dict {matched, ingested, skipped, failed, items}."""
+    print(f"  searching annas-archive for author: {author!r}")
+    matched = discover_books_by_author(author, limit=limit)
+    print(f"  discovered {len(matched)} candidate books matching author={author!r}")
+    for i, m in enumerate(matched, 1):
+        print(f"    {i}. {m.get('title')!r} — {m.get('author')} ({m.get('format') or '?'}, {m.get('language') or '?'})")
+    if dry_run:
+        return {"matched": len(matched), "ingested": 0, "skipped": len(matched),
+                "failed": 0, "items": matched}
+
+    ingested = 0
+    failed = 0
+    items: list[dict] = []
+    for m in matched:
+        title = m.get("title")
+        try:
+            ingest_book(
+                title=title,
+                author=author,
+                url=m.get("url"),
+                epub_path=None,
+                isbn=None,
+                year=m.get("year"),
+                skip_validation=skip_validation,
+            )
+            ingested += 1
+            items.append({"title": title, "status": "ok"})
+        except IngestError as e:
+            print(f"  ! skipping {title!r}: {e}", file=sys.stderr)
+            failed += 1
+            items.append({"title": title, "status": "skip", "reason": str(e)})
+        except Exception as e:
+            print(f"  ! FATAL on {title!r}: {type(e).__name__}: {e}", file=sys.stderr)
+            failed += 1
+            items.append({"title": title, "status": "error", "reason": f"{type(e).__name__}: {e}"})
+    summary = {"matched": len(matched), "ingested": ingested, "skipped": 0,
+               "failed": failed, "items": items}
+    print(f"  --author summary: {summary['ingested']} ingested, {summary['failed']} failed (of {summary['matched']} matches)")
+    L.log_event(f"ingest-book --author {author!r}: {summary['ingested']}/{summary['matched']} ingested, {summary['failed']} failed")
+    return summary
 
 
 # ---------------------------------------------------------------------------
@@ -388,8 +482,24 @@ def main() -> int:
     ap.add_argument("--isbn")
     ap.add_argument("--year", type=int)
     ap.add_argument("--skip-validation", action="store_true")
+    ap.add_argument("--limit", type=int, default=20,
+                    help="for --author bibliography mode: max books to ingest")
+    ap.add_argument("--dry-run", action="store_true",
+                    help="for --author bibliography mode: discover but do not download/ingest")
     args = ap.parse_args()
+
+    bibliography_mode = bool(
+        args.author and not args.title and not args.url and not args.epub_path
+    )
     try:
+        if bibliography_mode:
+            summary = ingest_books_by_author(
+                args.author,
+                limit=args.limit,
+                dry_run=args.dry_run,
+                skip_validation=args.skip_validation,
+            )
+            return 0 if summary["matched"] > 0 else 2
         ingest_book(args.title, args.author, args.url, args.epub_path,
                     args.isbn, args.year, skip_validation=args.skip_validation)
     except IngestError as e:

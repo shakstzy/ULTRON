@@ -55,14 +55,25 @@ Future runs reuse the persistent profile silently. If session expires, run `logi
 ```bash
 node scripts/run.mjs image     --model nano-banana-pro --prompt "..." [--aspect 3:4] [--res 1k] [--batch 1] [--ref PATH]...
 node scripts/run.mjs image     --model soul-cinematic  --prompt "..." [--aspect 16:9]
-node scripts/run.mjs video     --model seedance_2_0_fast --prompt "..." [--duration 5s] [--ref PATH]
-node scripts/run.mjs marketing --preset UGC            --prompt "..." [--project-id X | --new] [--ref PATH]
-node scripts/run.mjs cinema    --mode image|video      --scene "..." [--project-id X | --new] [--duration 8s]
+node scripts/run.mjs video     --model seedance_2_0_fast --prompt "..." [--duration 8s] [--ref PATH]
+node scripts/run.mjs video     --model sora_2          --prompt "..."                # Sora 2 (added 2026-04)
+node scripts/run.mjs video     --model veo3_1          --prompt "..."                # Veo 3.1 (lip-sync)
+node scripts/run.mjs marketing --preset UGC            --prompt "..." [--project-id X | --new] [--ref PATH] [--hook NAME] [--avatar NAME]
+node scripts/run.mjs cinema    --mode image|video      --scene "..." [--project-id X | --new] [--duration 8s] [--genre Action|Horror|Comedy|Noir|Drama|Epic|General] [--style NAME]
 node scripts/run.mjs batch     --jobs <jobs.jsonl>     [--concurrency 1]    # sequential by default
 node scripts/run.mjs resume    <run-dir>                                    # download-only recovery
+node scripts/run.mjs recon                                                  # inventory new UI surfaces (writes JSON)
 node scripts/run.mjs status                                                 # wallet + breaker + pidfile
 node scripts/run.mjs reset-breaker                                          # clear 24h cooldown
 ```
+
+### Marketing Studio V2 (released 2026-04-30)
+
+10 content format modes: `UGC`, `Product Review`, `Tutorial`, `Unboxing`, `TV Spot`, `Virtual Try-On`, `UGC Virtual Try-On`, `Cleanshot UGC`, `Hyper Motion`, `Wild Card`. Pass via `--preset NAME`. Legacy V1 names (`Testimonial`, `How-To`, `Founder Story`, `Product Showcase`) still accepted. Viral hook templates and 40+ avatar library accessed via `--hook` / `--avatar` flags (selectors verified via `recon`).
+
+### Cinema Studio 3.5
+
+7 genre modes: `Action`, `Horror`, `Comedy`, `Noir`, `Drama`, `Epic`, `General`. 27 style options (see `rules/tool-flows.md`). Up to 9 reference images. Native audio sync (SFX + speech + music) on video mode.
 
 Global flags: `--output DIR`, `--dry-run`, `--debug`, `--force`, `--unlim`, `--free-gens`, `--cost-cap N`.
 

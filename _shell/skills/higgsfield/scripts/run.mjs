@@ -70,12 +70,13 @@ Commands:
   login                             One-time Clerk login (visible browser)
   image --model M --prompt "..."    Nano Banana Pro or Soul Cinematic
   video --model M --prompt "..."    AI Video (Kling / Seedance / Veo / Wan / Sora / Minimax slugs)
-  marketing --preset P --prompt ".." Marketing Studio (--project-id or --new)
-  cinema --mode image|video --scene "..."  Cinema Studio (--project-id or --new)
+  marketing --preset P --prompt ".." Marketing Studio V2 (--project-id or --new, --hook H, --avatar A)
+  cinema --mode image|video --scene "..."  Cinema Studio 3.5 (--project-id or --new, --genre G, --style S)
   batch --jobs <file.jsonl>         Submit N image jobs in parallel (shared browser)
   resume <run-dir>                  Resume a crashed run from its state.json
   status                            Show wallet balance + breaker state + active pidfile
   reset-breaker                     Reset the 403 circuit breaker (after you solve captcha manually)
+  recon                             Inventory new UI surfaces (writes JSON for selector updates)
 
 Global flags:
   --output DIR                      Override default output dir

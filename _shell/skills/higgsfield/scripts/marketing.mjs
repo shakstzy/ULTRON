@@ -36,6 +36,40 @@ async function selectPresetByName(page, name) {
   return true;
 }
 
+// Generic tile selector: finds the largest visible button/role-button with
+// line1 matching name. Reused for V2 viral hooks (Hermes Agent), avatar
+// library, and ad-effect tiles. Returns true if a tile was clicked.
+export async function selectMarketingTile(page, name) {
+  if (!name) return false;
+  const handleJs = await page.evaluateHandle(n => {
+    const all = Array.from(document.querySelectorAll(
+      'button, [role="button"], [role="option"], [role="menuitem"], [data-state]'
+    ));
+    const exact = [];
+    const ci = [];
+    for (const el of all) {
+      const t = (el.innerText || '').trim();
+      if (!t) continue;
+      const line1 = t.split('\n')[0].trim();
+      const r = el.getBoundingClientRect();
+      if (r.width < 40 || r.height < 30) continue;
+      if (window.getComputedStyle(el).visibility === 'hidden') continue;
+      if (line1 === n) exact.push({ el, r });
+      else if (line1.toLowerCase() === n.toLowerCase()) ci.push({ el, r });
+    }
+    const pool = exact.length > 0 ? exact : ci;
+    if (pool.length === 0) return null;
+    pool.sort((a, b) => (b.r.width * b.r.height) - (a.r.width * a.r.height));
+    return pool[0].el;
+  }, name);
+  const el = handleJs.asElement ? handleJs.asElement() : null;
+  if (!el) return false;
+  await el.scrollIntoViewIfNeeded().catch(() => {});
+  await el.click({ force: true }).catch(() => {});
+  await page.waitForTimeout(500);
+  return true;
+}
+
 // Click the preset tile whose label matches `name`. Prefers tiles where the
 // ENTIRE first line exactly matches `name`; falls back to contains-match on
 // label/title text. Uses Playwright click so React synthetic events fire.
@@ -111,6 +145,19 @@ export async function runMarketing(argv) {
     if (argv.preset) {
       const ok = await selectPresetByName(ctx.page, argv.preset);
       console.log(`[higgsfield] preset selection by name "${argv.preset}": ${ok ? 'clicked' : 'NOT FOUND (pre-selected state assumed)'}`);
+    }
+
+    // Marketing Studio V2: optional viral hook (Hermes Agent) + avatar library
+    // tile selection (best-effort, logs but does not throw on miss). Selectors
+    // verified via `node scripts/run.mjs recon` -- update if the tile shape
+    // changes in a future UI shift.
+    if (argv.hook) {
+      const ok = await selectMarketingTile(ctx.page, argv.hook);
+      console.log(`[higgsfield] viral hook "${argv.hook}": ${ok ? 'clicked' : 'NOT FOUND (continuing)'}`);
+    }
+    if (argv.avatar) {
+      const ok = await selectMarketingTile(ctx.page, argv.avatar);
+      console.log(`[higgsfield] avatar "${argv.avatar}": ${ok ? 'clicked' : 'NOT FOUND (continuing)'}`);
     }
 
     const userSub = userIdFromJwtCapture(ctx.jwtCapture);

@@ -109,20 +109,6 @@ def _pick_freshest(email: str | None = None) -> tuple[dict, dict]:
     return toks, info
 
 
-def read_supabase_raw(path: Path = SUPABASE_PATH) -> dict:
-    """Legacy entrypoint kept for callers that import it directly."""
-    with open(path) as f:
-        return json.load(f)
-
-
-def parse_tokens(raw: dict) -> dict:
-    return json.loads(raw["workos_tokens"])
-
-
-def parse_user_info(raw: dict) -> dict:
-    return json.loads(raw["user_info"])
-
-
 def get_access_token(path: Path = SUPABASE_PATH, email: str | None = None) -> str:
     toks, _ = _pick_freshest(email=email)
     return toks["access_token"]

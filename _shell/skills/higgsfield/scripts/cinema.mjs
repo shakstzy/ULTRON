@@ -18,6 +18,54 @@ const CINEMA_MODES = {
 
 export const CINEMA_MODE_CATALOG = CINEMA_MODES;
 
+// Cinema Studio 3.5 genre modes (released 2026-03-30). Validation hint only --
+// the tile selector accepts any exact-name match.
+export const CINEMA_GENRES = ['Action', 'Horror', 'Comedy', 'Noir', 'Drama', 'Epic', 'General'];
+
+// Cinema Studio style catalog (hardcoded in Higgsfield's bundle).
+export const CINEMA_STYLES = [
+  'Abstract Cartoon', 'Adventure Tales', 'Big Bob', 'Bikini Bottom', 'Child Art',
+  'Fairy Tale', 'Family Boss', 'Flat Cartoon', 'Gravity Force', 'Ink Sketch',
+  'Jack Horse', 'Old Anime', 'Old Cartoon', 'Pop Cartoon', 'Voxel Art',
+  'West Park', 'Balloon', 'Bender', 'Bricks', 'Clay', 'Crayon', 'Gumstyle',
+  'Manga', 'Muppet', 'Simps', 'Regular', 'General'
+];
+
+// Click a cinema-studio tile (genre or style) by name. Same pattern as
+// selectMarketingPreset: find the largest visible button/role-button with
+// line1 matching name. Falls back to case-insensitive match. Returns true
+// if a tile was clicked.
+async function selectCinemaTile(page, name) {
+  if (!name) return false;
+  const handleJs = await page.evaluateHandle(n => {
+    const all = Array.from(document.querySelectorAll(
+      'button, [role="button"], [role="option"], [role="menuitem"], [data-state]'
+    ));
+    const exact = [];
+    const ci = [];
+    for (const el of all) {
+      const t = (el.innerText || '').trim();
+      if (!t) continue;
+      const line1 = t.split('\n')[0].trim();
+      const r = el.getBoundingClientRect();
+      if (r.width < 40 || r.height < 30) continue;
+      if (window.getComputedStyle(el).visibility === 'hidden') continue;
+      if (line1 === n) exact.push({ el, r });
+      else if (line1.toLowerCase() === n.toLowerCase()) ci.push({ el, r });
+    }
+    const pool = exact.length > 0 ? exact : ci;
+    if (pool.length === 0) return null;
+    pool.sort((a, b) => (b.r.width * b.r.height) - (a.r.width * a.r.height));
+    return pool[0].el;
+  }, name);
+  const el = handleJs.asElement ? handleJs.asElement() : null;
+  if (!el) return false;
+  await el.scrollIntoViewIfNeeded().catch(() => {});
+  await el.click({ force: true }).catch(() => {});
+  await page.waitForTimeout(500);
+  return true;
+}
+
 // Read the "primary" Generate button's cost value (line 2). Cinema-studio
 // renders two overlapping Generate buttons (outer wrapper + inner): the outer
 // is the real primary and reflects the active mode (video=96, image=2); the
@@ -361,6 +409,18 @@ export async function runCinema(argv) {
     console.log(`[higgsfield] mode tab ${mode}: ${modeOk ? 'set' : 'FAILED_TO_SWITCH'}`);
     if (!modeOk) throw new Error(`Could not switch cinema mode to ${mode}; Generate cost did not flip to ${cfg.cost}`);
     await pauseJitter();
+
+    // Cinema Studio 3.5: optional genre + style tile selection (best-effort,
+    // logs but does not throw on miss so users can still submit if a tile
+    // moves around in a future UI shift).
+    if (argv.genre) {
+      const ok = await selectCinemaTile(ctx.page, argv.genre);
+      console.log(`[higgsfield] genre "${argv.genre}": ${ok ? 'clicked' : 'NOT FOUND (continuing)'}`);
+    }
+    if (argv.style) {
+      const ok = await selectCinemaTile(ctx.page, argv.style);
+      console.log(`[higgsfield] style "${argv.style}": ${ok ? 'clicked' : 'NOT FOUND (continuing)'}`);
+    }
 
     const userSub = userIdFromJwtCapture(ctx.jwtCapture);
     if (!userSub) throw new Error('Could not extract user_id from JWT.');

@@ -26,3 +26,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 ### 2025-06-18T10:36:32.000Z - Brenda Selene Aguilera
 
 New application request 13245 Klein Ct, Sylmar, CA, 91342. Brenda Selene Aguilera requested an application: Application submitted Send application Reply to Brenda You can also reply directly to this
+
+### 2026-05-08T18:54:47.507Z - Owner (Adithya)
+
+Hey Brenda, got your app request. Do you want to come check out the place first? Let me know what days and times work for you to swing by.

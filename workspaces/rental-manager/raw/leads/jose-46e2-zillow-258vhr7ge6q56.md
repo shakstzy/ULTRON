@@ -30,3 +30,7 @@ I'm interested in the room(s) you're renting, seems to be exactly what I'm looki
 ### 2025-06-13T21:27:01.000Z - Jose Armando
 
 You can reach me at my cell phone (818) 272-5742 - please text first. For a tour, I'm available tomorrow after 2pm or any day starting monday next week after 12pm.
+
+### 2026-05-08T18:54:06.646Z - Owner (Adithya)
+
+Hey Jose, tomorrow afternoon works. Let me know what time after 2pm you want to swing by.

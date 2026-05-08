@@ -30,3 +30,7 @@ I'd like to schedule a viewing for Klein Ct, Sylmar, CA 91342, US. Please contac
 ### 2025-07-03T03:36:00.000Z - Jeanetta Fuller
 
 Hi Adithya, could we do tomorrow afternoon?
+
+### 2026-05-08T18:55:05.881Z - Owner (Adithya)
+
+Tomorrow afternoon works. What time were you thinking?

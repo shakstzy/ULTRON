@@ -30,3 +30,7 @@ I'd like to schedule a viewing for Klein Ct, Sylmar, CA 91342, US. Please contac
 ### 2025-06-15T20:47:26.000Z - Demetrial Faciane
 
 Is this a room for rent or entire place.
+
+### 2026-05-08T18:54:20.267Z - Owner (Adithya)
+
+Just rooms for rent. I have four open right now starting at $1,000. Let me know what days and times work best for a tour.

@@ -26,3 +26,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 ### 2025-09-27T08:40:46.000Z - Renato Campos
 
 I'm looking for a place to live to be closed to Simi valley. I'll work for a tech company in their facilities up there. This place looks like a perfect fit for me. I want to have a tour after Tuesday 09/30. Thanks for your time, I hope see you soon!
+
+### 2026-05-08T22:14:07.487Z - Owner (Adithya)
+
+Hey Renato. The commute to Simi is super easy from here. I can show you the place after Tuesday. Let me know what days and times work best for you next week.

@@ -30,3 +30,7 @@ I would like to schedule a tour.
 ### 2025-09-22T14:37:08.000Z - Manuel Pérez
 
 What day are you available?
+
+### 2026-05-08T22:13:17.209Z - Owner (Adithya)
+
+Hey Manuel. I'm pretty flexible this week. What days and times work best for you to check it out?

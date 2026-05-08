@@ -26,3 +26,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 ### 2025-09-24T22:00:45.000Z - Isabel Janbahan
 
 I'd like to schedule a viewing for Klein Ct, Sylmar, CA 91342, US. Please contact me with more information!
+
+### 2026-05-08T22:13:34.505Z - Owner (Adithya)
+
+Hey Isabel. I can definitely show you the place on Klein Ct. I have 4 rooms open right now starting at $1000. Let me know what days work best for you to take a tour.

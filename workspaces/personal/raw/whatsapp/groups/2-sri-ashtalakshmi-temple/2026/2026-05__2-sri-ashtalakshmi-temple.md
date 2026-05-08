@@ -1,17 +1,17 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T21:17:08.874378+00:00'
+ingested_at: '2026-05-08T06:00:05.312610+00:00'
 ingest_version: 1
-content_hash: 'blake3:f1a43fed5a210dc89866c3fa6e9f46a88ca43e216680f73ea08a3b62b3d9a10d'
-provider_modified_at: '2026-05-07T00:08:38-05:00'
+content_hash: 'blake3:1e56b260cb56290f0e291a793cba3f8ff2a4899eb8fc77e3fdeadbeda26e8d6a'
+provider_modified_at: '2026-05-07T23:32:08-05:00'
 contact_slug: 2-sri-ashtalakshmi-temple
 contact_type: group
 month: 2026-05
 date_range: [2026-05-01, 2026-05-07]
-message_count: 3
+message_count: 4
 my_message_count: 0
-their_message_count: 3
+their_message_count: 4
 attachments: []
 whatsapp_chat_jid: '18187361819-1518208644@g.us'
 whatsapp_chat_kind: group
@@ -38,3 +38,29 @@ https://us02web.zoom.us/j/87366192511?pwd=dGQzQ2F3TlFlV0ZLd2Z0SWZ3c3ZxQT09
 ## 2026-05-07 (Thursday)
 
 **00:08 — @248141987233877:** [image: image_20260507_000909.jpg]
+**23:32 — @248141987233877:** *ॐ*
+*|| Jai Srimannarayana! ||*
+✨ Blessings from Sri Ashtalakshmi Sametha Venkateshwara Swamy Temple 🛕 🚩
+
+📆 5/8/2026 Friday
+⏱️ *10:30am Mahameru Khadgamala Kumkuma Archana, Lalitha Sahasranama Parayanam*
+⏱️ *6:00 pm MahaLakshmi Sahasranama Archana* 
+
+📆 5/9/2026 Saturday
+⏱️ 09:30am Sri Rama & Hanuman Vishesha Puja & Archana and Hanuman thaila abhishekam by devotees
+⏱️ 11:30am Sri Vishnu Sahasranama Parayanam & Archana
+⏱️ *05:30pm Sri Bhu Sametha Venkateshwara Swamy Kalyanam*
+
+📆 5/10/2025 Sunday 
+⏱️ *10:30am Sudarshana Narsimha & KaryaSiddhi Hanuman Homam*
+
+📆 5/11/2026 Monday
+*Grand Hanuman Jayanthi Celebrations* _Please see flyer for details_
+⏱️ *10:30am Abhishekam & Vishesha Puja*
+⏱️ *07:00pm RudraAbhishekam*
+
+📆 5/12/2026 Tuesday
+⏱️ *06:30pm Hanuman Chalisa Parayanam, Sree Rama & Hanuman Special Pooja & Bhajans*
+
+💐 Participate & Get The Blessings!! ✨
+May Sri Ashtalakshmi Sametha Venkateshwara Swamy, Hanuman, Sri Rama Parivara, Sri Siva Parivara & Bhadrakali Bless Us All! 🙏

@@ -1,17 +1,17 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-08T04:30:05.320626+00:00'
+ingested_at: '2026-05-08T06:00:05.310206+00:00'
 ingest_version: 1
-content_hash: 'blake3:634c60eeeb12fcc1145e57138ad0f4c613a88c6af0e4c379d5fe2d615e3c07d7'
-provider_modified_at: '2026-05-07T23:00:27-05:00'
+content_hash: 'blake3:0cc20c6f23597ead09203c55f1c8188f996676c59dc78389ffbb3f1c8bd8d064'
+provider_modified_at: '2026-05-08T00:56:51-05:00'
 contact_slug: selvanayaki-sriram-family
 contact_type: group
 month: 2026-05
-date_range: [2026-05-02, 2026-05-07]
-message_count: 12
+date_range: [2026-05-02, 2026-05-08]
+message_count: 14
 my_message_count: 0
-their_message_count: 12
+their_message_count: 14
 attachments: []
 whatsapp_chat_jid: '15104499964-1548215289@g.us'
 whatsapp_chat_kind: group
@@ -40,3 +40,8 @@ superseded_by: null
 
 Wishing you both happiness, good health, and many more years together. Hope your special day is filled with joy and nice moments.
 **23:00 — @175509644259514:** Thank you sangi and thank you mama
+
+## 2026-05-08 (Friday)
+
+**00:52 — @202284436856974:** Dear Ammu akka and Anna, Wishing you both a wonderful and happy anniversary❤️🎉🥂🥳🍾🎉❤️
+**00:56 — @175509644259514:** Thank you chinni

@@ -920,22 +920,33 @@ class Walker:
                 old_dir = folder_index.parent
                 try:
                     if not self.dry_run:
-                        # Only nuke the dir if everything in it belongs to this page.
-                        # Sub-page md files would have their own page_id frontmatter.
+                        # rmtree only if every .md in the folder is verifiably
+                        # ours — same notion_page_id, OR a child page from this
+                        # tree (we can't easily tell so we conservatively bail).
+                        # Unparseable / missing frontmatter must NOT be treated
+                        # as safe — could be unrelated user notes.
+                        my_id = _normalize_id(page["id"])
                         safe_to_remove = True
                         for child in old_dir.rglob("*"):
-                            if child.is_file() and child.suffix == ".md":
-                                cfm = _read_existing_fm(child)
-                                if cfm and cfm.get("notion_page_id") and \
-                                   cfm.get("notion_page_id") != _normalize_id(page["id"]):
-                                    safe_to_remove = False
-                                    break
+                            if not (child.is_file() and child.suffix == ".md"):
+                                continue
+                            cfm = _read_existing_fm(child)
+                            child_id = (cfm or {}).get("notion_page_id")
+                            child_source = (cfm or {}).get("source")
+                            # Refuse if: no frontmatter, non-notion source,
+                            # or notion page_id different from ours.
+                            if not cfm or child_source != "notion" or not child_id:
+                                safe_to_remove = False
+                                break
+                            if child_id != my_id:
+                                safe_to_remove = False
+                                break
                         if safe_to_remove:
                             shutil.rmtree(old_dir, ignore_errors=True)
                             self.log({"action": "orphan-cleanup-folder",
                                       "path": str(old_dir.relative_to(ULTRON_ROOT))})
                         else:
-                            sys.stderr.write(f"  skip folder orphan cleanup (other pages inside): {old_dir.name}\n")
+                            sys.stderr.write(f"  skip folder orphan cleanup (foreign content inside): {old_dir.name}\n")
                 except OSError as e:
                     sys.stderr.write(f"  orphan cleanup failed {old_dir.name}: {e}\n")
 

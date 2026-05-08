@@ -224,6 +224,11 @@ async function handlerFor(cmd) {
       await runRecon();
       return;
     }
+    if (cmd === 'recon-deep') {
+      const { runDeepRecon } = await import('./recon-deep.mjs');
+      await runDeepRecon();
+      return;
+    }
     if (cmd === 'resume') {
       const runDir = argv._[1];
       if (!runDir) { console.error('Usage: run.mjs resume <run-dir>'); process.exit(2); }

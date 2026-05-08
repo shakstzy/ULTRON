@@ -1,8 +1,8 @@
 ---
 source: "notion"
 workspace: "synapse"
-ingested_at: "2026-05-07T22:44:40-05:00"
-ingest_version: 1
+ingested_at: "2026-05-07T22:55:36-05:00"
+ingest_version: 2
 content_hash: "blake3:e3f0b2a06df5e387632aa167f67254f66c783032a8cc1072ac038ea7a2f4f2ab"
 provider_modified_at: "2026-03-26T00:23:00.000Z"
 notion_page_id: "20fa7b112c9d8046949ad17c0e977eb1"

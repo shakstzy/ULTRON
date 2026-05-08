@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.975343+00:00
+ingested_at: 2026-05-08T08:00:06.338921+00:00
 ingest_version: 1
 content_hash: blake2b:e318c2d848327fe7fd9e9d41c8f0df4c
-provider_modified_at: 2026-05-07T12:21:52.975343+00:00
+provider_modified_at: 2026-05-08T08:00:06.338921+00:00
 
 title: Kamal Nahas UC Berkeley
 slug: kamal-nahas-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15105420847"]
   slack: []
-last_synced: 2026-05-07T12:21:52.975343+00:00
+last_synced: 2026-05-08T08:00:06.338921+00:00
 global: true
 ---
 

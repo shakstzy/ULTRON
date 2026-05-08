@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.795992+00:00
+ingested_at: 2026-05-08T08:00:06.124924+00:00
 ingest_version: 1
 content_hash: blake2b:6ab2e78c06683dfcdcfe5454e64095db
-provider_modified_at: 2026-05-07T12:21:52.795992+00:00
+provider_modified_at: 2026-05-08T08:00:06.124924+00:00
 
 title: Eeswar Balasubramanian JPMC
 slug: eeswar-balasubramanian-jpmc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["2244282439"]
   slack: []
-last_synced: 2026-05-07T12:21:52.795992+00:00
+last_synced: 2026-05-08T08:00:06.124924+00:00
 global: true
 ---
 

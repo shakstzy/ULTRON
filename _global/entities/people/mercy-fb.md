@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.873278+00:00
+ingested_at: 2026-05-08T08:00:06.216913+00:00
 ingest_version: 1
 content_hash: blake2b:f7e780372cf9eab5d33933b036794bfa
-provider_modified_at: 2026-05-07T12:21:52.873278+00:00
+provider_modified_at: 2026-05-08T08:00:06.216913+00:00
 
 title: Mercy FB
 slug: mercy-fb
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14159525858"]
   slack: []
-last_synced: 2026-05-07T12:21:52.873278+00:00
+last_synced: 2026-05-08T08:00:06.216913+00:00
 global: true
 ---
 

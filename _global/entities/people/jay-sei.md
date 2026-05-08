@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.868869+00:00
+ingested_at: 2026-05-08T08:00:06.213345+00:00
 ingest_version: 1
 content_hash: blake2b:839dccaf79370d5559fe356d228b0771
-provider_modified_at: 2026-05-07T12:21:52.868869+00:00
+provider_modified_at: 2026-05-08T08:00:06.213345+00:00
 
 title: Jay | Sei
 slug: jay-sei
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-07T12:21:52.868869+00:00
+last_synced: 2026-05-08T08:00:06.213345+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.983634+00:00
+ingested_at: 2026-05-08T08:00:06.349240+00:00
 ingest_version: 1
 content_hash: blake2b:1c5a304b2876448ab374b76d437fc242
-provider_modified_at: 2026-05-07T12:21:52.983634+00:00
+provider_modified_at: 2026-05-08T08:00:06.349240+00:00
 
 title: dawgctor (TE engeeering )
 slug: dawgctor-te-engeeering
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+491638659383"]
   slack: []
-last_synced: 2026-05-07T12:21:52.983634+00:00
+last_synced: 2026-05-08T08:00:06.349240+00:00
 global: true
 ---
 

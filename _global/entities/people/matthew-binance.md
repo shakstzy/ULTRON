@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.942702+00:00
+ingested_at: 2026-05-08T08:00:06.300891+00:00
 ingest_version: 1
 content_hash: blake2b:f6435663184a65699b670a128062cb8d
-provider_modified_at: 2026-05-07T12:21:52.942702+00:00
+provider_modified_at: 2026-05-08T08:00:06.300891+00:00
 
 title: Matthew | Binance
 slug: matthew-binance
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-07T12:21:52.942702+00:00
+last_synced: 2026-05-08T08:00:06.300891+00:00
 global: true
 ---
 

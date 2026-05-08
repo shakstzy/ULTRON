@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.869566+00:00
+ingested_at: 2026-05-08T08:00:06.213603+00:00
 ingest_version: 1
 content_hash: blake2b:9cc281a6db8ffba8351a4498c60b4dc4
-provider_modified_at: 2026-05-07T12:21:52.869566+00:00
+provider_modified_at: 2026-05-08T08:00:06.213603+00:00
 
 title: Ethan Rushil UC Berkeley
 slug: ethan-rushil-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18054007639"]
   slack: []
-last_synced: 2026-05-07T12:21:52.869566+00:00
+last_synced: 2026-05-08T08:00:06.213603+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:53.003040+00:00
+ingested_at: 2026-05-08T08:00:06.369699+00:00
 ingest_version: 1
 content_hash: blake2b:2fa6b3758c866eb90127caa4c0f851a0
-provider_modified_at: 2026-05-07T12:21:53.003040+00:00
+provider_modified_at: 2026-05-08T08:00:06.369699+00:00
 
 title: Rebecca Otto Cameron Jordan Mychal Kendricks
 slug: rebecca-otto-cameron-jordan-mychal-kendr
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15127913149"]
   slack: []
-last_synced: 2026-05-07T12:21:53.003040+00:00
+last_synced: 2026-05-08T08:00:06.369699+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.896186+00:00
+ingested_at: 2026-05-08T08:00:06.248844+00:00
 ingest_version: 1
 content_hash: blake2b:4c6dee03bef4183cbb0ab1c74224d0ac
-provider_modified_at: 2026-05-07T12:21:52.896186+00:00
+provider_modified_at: 2026-05-08T08:00:06.248844+00:00
 
 title: Noah Shamus
 slug: noah-shamus
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19178416849"]
   slack: []
-last_synced: 2026-05-07T12:21:52.896186+00:00
+last_synced: 2026-05-08T08:00:06.248844+00:00
 global: true
 ---
 

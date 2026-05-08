@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.938527+00:00
+ingested_at: 2026-05-08T08:00:06.297008+00:00
 ingest_version: 1
 content_hash: blake2b:912b9229bd515baad20fd0fb3c62cc06
-provider_modified_at: 2026-05-07T12:21:52.938527+00:00
+provider_modified_at: 2026-05-08T08:00:06.297008+00:00
 
 title: Leo | LightNodeVentures
 slug: leo-lightnodeventures
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 804-245-3360"]
   slack: []
-last_synced: 2026-05-07T12:21:52.938527+00:00
+last_synced: 2026-05-08T08:00:06.297008+00:00
 global: true
 ---
 

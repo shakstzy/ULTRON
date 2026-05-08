@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.875354+00:00
+ingested_at: 2026-05-08T08:00:06.219305+00:00
 ingest_version: 1
 content_hash: blake2b:d5491c54add6cd638e542ceb230ddd00
-provider_modified_at: 2026-05-07T12:21:52.875354+00:00
+provider_modified_at: 2026-05-08T08:00:06.219305+00:00
 
 title: Da Iphone
 slug: da-iphone
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 910-764-6418"]
   slack: []
-last_synced: 2026-05-07T12:21:52.875354+00:00
+last_synced: 2026-05-08T08:00:06.219305+00:00
 global: true
 ---
 

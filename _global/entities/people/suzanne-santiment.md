@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.986231+00:00
+ingested_at: 2026-05-08T08:00:06.351276+00:00
 ingest_version: 1
 content_hash: blake2b:34fecdcf0b9604c5a6b2376ea2ff7387
-provider_modified_at: 2026-05-07T12:21:52.986231+00:00
+provider_modified_at: 2026-05-08T08:00:06.351276+00:00
 
 title: Suzanne | Santiment
 slug: suzanne-santiment
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-07T12:21:52.986231+00:00
+last_synced: 2026-05-08T08:00:06.351276+00:00
 global: true
 ---
 

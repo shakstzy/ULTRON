@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:53.000460+00:00
+ingested_at: 2026-05-08T08:00:06.367685+00:00
 ingest_version: 1
 content_hash: blake2b:aeb550ab6665470d1d2d43aef4ac58f8
-provider_modified_at: 2026-05-07T12:21:53.000460+00:00
+provider_modified_at: 2026-05-08T08:00:06.367685+00:00
 
 title: IT Helpdesk SpaceX
 slug: it-helpdesk-spacex
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["310 363 6999"]
   slack: []
-last_synced: 2026-05-07T12:21:53.000460+00:00
+last_synced: 2026-05-08T08:00:06.367685+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.969865+00:00
+ingested_at: 2026-05-08T08:00:06.331698+00:00
 ingest_version: 1
 content_hash: blake2b:87392458d410c898290d46df8979f041
-provider_modified_at: 2026-05-07T12:21:52.969865+00:00
+provider_modified_at: 2026-05-08T08:00:06.331698+00:00
 
 title: Madhavi_s
 slug: madhavi-s
@@ -15,7 +15,7 @@ identifiers:
   email: ["madhavi_s@yahoo.com"]
   phone: []
   slack: []
-last_synced: 2026-05-07T12:21:52.969865+00:00
+last_synced: 2026-05-08T08:00:06.331698+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.817863+00:00
+ingested_at: 2026-05-08T08:00:06.154528+00:00
 ingest_version: 1
 content_hash: blake2b:140e7ea189df4b109f6d3eaba75be68d
-provider_modified_at: 2026-05-07T12:21:52.817863+00:00
+provider_modified_at: 2026-05-08T08:00:06.154528+00:00
 
 title: Ming Lam
 slug: ming-lam
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 201-747-7807"]
   slack: []
-last_synced: 2026-05-07T12:21:52.817863+00:00
+last_synced: 2026-05-08T08:00:06.154528+00:00
 global: true
 ---
 

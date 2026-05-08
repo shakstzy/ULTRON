@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.898712+00:00
+ingested_at: 2026-05-08T08:00:06.252736+00:00
 ingest_version: 1
 content_hash: blake2b:09efdebc61ed07fc4d08a47540b38404
-provider_modified_at: 2026-05-07T12:21:52.898712+00:00
+provider_modified_at: 2026-05-08T08:00:06.252736+00:00
 
 title: Jon | Supra
 slug: jon-supra
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+886 987 637 933"]
   slack: []
-last_synced: 2026-05-07T12:21:52.898712+00:00
+last_synced: 2026-05-08T08:00:06.252736+00:00
 global: true
 ---
 

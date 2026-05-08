@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.792338+00:00
+ingested_at: 2026-05-08T08:00:06.117670+00:00
 ingest_version: 1
 content_hash: blake2b:e6ed2c544fbb9ed4e281275fad70148a
-provider_modified_at: 2026-05-07T12:21:52.792338+00:00
+provider_modified_at: 2026-05-08T08:00:06.117670+00:00
 
 title: Jeremy | TREATS
 slug: jeremy-treats
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-07T12:21:52.792338+00:00
+last_synced: 2026-05-08T08:00:06.117670+00:00
 global: true
 ---
 

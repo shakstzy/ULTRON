@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.996798+00:00
+ingested_at: 2026-05-08T08:00:06.365126+00:00
 ingest_version: 1
 content_hash: blake2b:102fc914d8f7f9d956a1c127a2261282
-provider_modified_at: 2026-05-07T12:21:52.996798+00:00
+provider_modified_at: 2026-05-08T08:00:06.365126+00:00
 
 title: Sameer UC Berkeley
 slug: sameer-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15024164342"]
   slack: []
-last_synced: 2026-05-07T12:21:52.996798+00:00
+last_synced: 2026-05-08T08:00:06.365126+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.855769+00:00
+ingested_at: 2026-05-08T08:00:06.199305+00:00
 ingest_version: 1
 content_hash: blake2b:c4b4cfeceb5841e98d5d1b847a46f828
-provider_modified_at: 2026-05-07T12:21:52.855769+00:00
+provider_modified_at: 2026-05-08T08:00:06.199305+00:00
 
 title: DougHype | KOL
 slug: doughype-kol
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-07T12:21:52.855769+00:00
+last_synced: 2026-05-08T08:00:06.199305+00:00
 global: true
 ---
 

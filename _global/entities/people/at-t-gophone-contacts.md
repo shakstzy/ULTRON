@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.988701+00:00
+ingested_at: 2026-05-08T08:00:06.355445+00:00
 ingest_version: 1
 content_hash: blake2b:7d5124b27ee943c7d68bf486134567a7
-provider_modified_at: 2026-05-07T12:21:52.988701+00:00
+provider_modified_at: 2026-05-08T08:00:06.355445+00:00
 
 title: AT&T GoPhone Contacts
 slug: at-t-gophone-contacts
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["*777#"]
   slack: []
-last_synced: 2026-05-07T12:21:52.988701+00:00
+last_synced: 2026-05-08T08:00:06.355445+00:00
 global: true
 ---
 

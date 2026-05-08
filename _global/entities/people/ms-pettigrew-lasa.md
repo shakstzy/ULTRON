@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.844946+00:00
+ingested_at: 2026-05-08T08:00:06.186186+00:00
 ingest_version: 1
 content_hash: blake2b:5c3de44bcacbf6b7527a5efc4b82a84a
-provider_modified_at: 2026-05-07T12:21:52.844946+00:00
+provider_modified_at: 2026-05-08T08:00:06.186186+00:00
 
 title: Ms. Pettigrew LASA
 slug: ms-pettigrew-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(512) 293-2133"]
   slack: []
-last_synced: 2026-05-07T12:21:52.844946+00:00
+last_synced: 2026-05-08T08:00:06.186186+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.955177+00:00
+ingested_at: 2026-05-08T08:00:06.316007+00:00
 ingest_version: 1
 content_hash: blake2b:ba446ea83eb33d6e52268f1f139b77b2
-provider_modified_at: 2026-05-07T12:21:52.955177+00:00
+provider_modified_at: 2026-05-08T08:00:06.316007+00:00
 
 title: OZ.eth | Lookonchain
 slug: oz-eth-lookonchain
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-07T12:21:52.955177+00:00
+last_synced: 2026-05-08T08:00:06.316007+00:00
 global: true
 ---
 

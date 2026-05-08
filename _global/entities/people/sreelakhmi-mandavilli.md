@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.944915+00:00
+ingested_at: 2026-05-08T08:00:06.302787+00:00
 ingest_version: 1
 content_hash: blake2b:e4dba1a35493b416d31defcbeb37b56f
-provider_modified_at: 2026-05-07T12:21:52.944915+00:00
+provider_modified_at: 2026-05-08T08:00:06.302787+00:00
 
 title: Sreelakhmi Mandavilli
 slug: sreelakhmi-mandavilli
@@ -15,7 +15,7 @@ identifiers:
   email: ["sreelakshmi.mandavilli@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-07T12:21:52.944915+00:00
+last_synced: 2026-05-08T08:00:06.302787+00:00
 global: true
 ---
 

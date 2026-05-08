@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.894564+00:00
+ingested_at: 2026-05-08T08:00:06.247612+00:00
 ingest_version: 1
 content_hash: blake2b:1ab4fce9e8f099f674e2a968c3c2bb09
-provider_modified_at: 2026-05-07T12:21:52.894564+00:00
+provider_modified_at: 2026-05-08T08:00:06.247612+00:00
 
 title: Brennan Giva Rave UC Berkeley
 slug: brennan-giva-rave-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(209) 872-2736"]
   slack: []
-last_synced: 2026-05-07T12:21:52.894564+00:00
+last_synced: 2026-05-08T08:00:06.247612+00:00
 global: true
 ---
 

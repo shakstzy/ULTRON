@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.876295+00:00
+ingested_at: 2026-05-08T08:00:06.220375+00:00
 ingest_version: 1
 content_hash: blake2b:8a4b4006cb937c5f1b9782ab9fbde6a5
-provider_modified_at: 2026-05-07T12:21:52.876295+00:00
+provider_modified_at: 2026-05-08T08:00:06.220375+00:00
 
 title: srinivasan
 slug: srinivasan
@@ -15,7 +15,7 @@ identifiers:
   email: ["rnsrini@yahoo.com"]
   phone: []
   slack: []
-last_synced: 2026-05-07T12:21:52.876295+00:00
+last_synced: 2026-05-08T08:00:06.220375+00:00
 global: true
 ---
 

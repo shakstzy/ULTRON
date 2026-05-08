@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.812452+00:00
+ingested_at: 2026-05-08T08:00:06.148782+00:00
 ingest_version: 1
 content_hash: blake2b:c2c9dd6e2d4a3ac021043f296e1217ce
-provider_modified_at: 2026-05-07T12:21:52.812452+00:00
+provider_modified_at: 2026-05-08T08:00:06.148782+00:00
 
 title: DeFiDave | Dinero
 slug: defidave-dinero
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 973-356-3515"]
   slack: []
-last_synced: 2026-05-07T12:21:52.812452+00:00
+last_synced: 2026-05-08T08:00:06.148782+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.891936+00:00
+ingested_at: 2026-05-08T08:00:06.244029+00:00
 ingest_version: 1
 content_hash: blake2b:210b94c8e47b8e0ee5b5639846a2060e
-provider_modified_at: 2026-05-07T12:21:52.891936+00:00
+provider_modified_at: 2026-05-08T08:00:06.244029+00:00
 
 title: Kim Pettigrew LASA
 slug: kim-pettigrew-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: ["kbpttgrw@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-07T12:21:52.891936+00:00
+last_synced: 2026-05-08T08:00:06.244029+00:00
 global: true
 ---
 

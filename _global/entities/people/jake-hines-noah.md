@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.831130+00:00
+ingested_at: 2026-05-08T08:00:06.171671+00:00
 ingest_version: 1
 content_hash: blake2b:77431f821f6608cb875d65e421804334
-provider_modified_at: 2026-05-07T12:21:52.831130+00:00
+provider_modified_at: 2026-05-08T08:00:06.171671+00:00
 
 title: Jake Hines Noah
 slug: jake-hines-noah
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15124611960"]
   slack: []
-last_synced: 2026-05-07T12:21:52.831130+00:00
+last_synced: 2026-05-08T08:00:06.171671+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.816736+00:00
+ingested_at: 2026-05-08T08:00:06.153074+00:00
 ingest_version: 1
 content_hash: blake2b:72de1393ad4b3bfe7e338b412c5fd6a1
-provider_modified_at: 2026-05-07T12:21:52.816736+00:00
+provider_modified_at: 2026-05-08T08:00:06.153074+00:00
 
 title: Christina EF Program
 slug: christina-ef-program
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16172338668"]
   slack: []
-last_synced: 2026-05-07T12:21:52.816736+00:00
+last_synced: 2026-05-08T08:00:06.153074+00:00
 global: true
 ---
 

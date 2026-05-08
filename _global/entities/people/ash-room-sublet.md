@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.992337+00:00
+ingested_at: 2026-05-08T08:00:06.360016+00:00
 ingest_version: 1
 content_hash: blake2b:8ff15182d52ffb0f83e666c3dea32442
-provider_modified_at: 2026-05-07T12:21:52.992337+00:00
+provider_modified_at: 2026-05-08T08:00:06.360016+00:00
 
 title: Ash Room Sublet
 slug: ash-room-sublet
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18587055429"]
   slack: []
-last_synced: 2026-05-07T12:21:52.992337+00:00
+last_synced: 2026-05-08T08:00:06.360016+00:00
 global: true
 ---
 

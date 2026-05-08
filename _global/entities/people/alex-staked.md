@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.833688+00:00
+ingested_at: 2026-05-08T08:00:06.175216+00:00
 ingest_version: 1
 content_hash: blake2b:b294b720da9791d04d6a8f703323295f
-provider_modified_at: 2026-05-07T12:21:52.833688+00:00
+provider_modified_at: 2026-05-08T08:00:06.175216+00:00
 
 title: Alex | Staked
 slug: alex-staked
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-07T12:21:52.833688+00:00
+last_synced: 2026-05-08T08:00:06.175216+00:00
 global: true
 ---
 

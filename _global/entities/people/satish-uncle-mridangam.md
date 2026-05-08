@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.901607+00:00
+ingested_at: 2026-05-08T08:00:06.256275+00:00
 ingest_version: 1
 content_hash: blake2b:d5a39ebe0f56e8977cb4ab04d1875222
-provider_modified_at: 2026-05-07T12:21:52.901607+00:00
+provider_modified_at: 2026-05-08T08:00:06.256275+00:00
 
 title: Satish Uncle Mridangam
 slug: satish-uncle-mridangam
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(512) 949-9256"]
   slack: []
-last_synced: 2026-05-07T12:21:52.901607+00:00
+last_synced: 2026-05-08T08:00:06.256275+00:00
 global: true
 ---
 

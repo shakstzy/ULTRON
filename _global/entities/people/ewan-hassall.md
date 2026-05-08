@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.936020+00:00
+ingested_at: 2026-05-08T08:00:06.295182+00:00
 ingest_version: 1
 content_hash: blake2b:316a74ecfb3a76078e5eb35406dda681
-provider_modified_at: 2026-05-07T12:21:52.936020+00:00
+provider_modified_at: 2026-05-08T08:00:06.295182+00:00
 
 title: ewan hassall
 slug: ewan-hassall
@@ -15,7 +15,7 @@ identifiers:
   email: ["hassall.ewan@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-07T12:21:52.936020+00:00
+last_synced: 2026-05-08T08:00:06.295182+00:00
 global: true
 ---
 

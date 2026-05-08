@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.861366+00:00
+ingested_at: 2026-05-08T08:00:06.205481+00:00
 ingest_version: 1
 content_hash: blake2b:f7bee056247a7b0913f5d4ca34953cef
-provider_modified_at: 2026-05-07T12:21:52.861366+00:00
+provider_modified_at: 2026-05-08T08:00:06.205481+00:00
 
 title: Boldrin | ZoWorld
 slug: boldrin-zoworld
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-07T12:21:52.861366+00:00
+last_synced: 2026-05-08T08:00:06.205481+00:00
 global: true
 ---
 

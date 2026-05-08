@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.804306+00:00
+ingested_at: 2026-05-08T08:00:06.137915+00:00
 ingest_version: 1
 content_hash: blake2b:2da34c7c4ec62af88b7ee0caa924e509
-provider_modified_at: 2026-05-07T12:21:52.804306+00:00
+provider_modified_at: 2026-05-08T08:00:06.137915+00:00
 
 title: Shawn/Kalou
 slug: shawn-kalou
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+852 9707 1414"]
   slack: []
-last_synced: 2026-05-07T12:21:52.804306+00:00
+last_synced: 2026-05-08T08:00:06.137915+00:00
 global: true
 ---
 

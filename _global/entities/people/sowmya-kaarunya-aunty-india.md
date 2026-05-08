@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.960279+00:00
+ingested_at: 2026-05-08T08:00:06.321681+00:00
 ingest_version: 1
 content_hash: blake2b:18920eaa3b8fee1387bf8a81182bfbf2
-provider_modified_at: 2026-05-07T12:21:52.960279+00:00
+provider_modified_at: 2026-05-08T08:00:06.321681+00:00
 
 title: Sowmya Kaarunya Aunty India
 slug: sowmya-kaarunya-aunty-india
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+919486405507"]
   slack: []
-last_synced: 2026-05-07T12:21:52.960279+00:00
+last_synced: 2026-05-08T08:00:06.321681+00:00
 global: true
 ---
 

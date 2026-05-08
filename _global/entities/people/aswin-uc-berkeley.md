@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.934225+00:00
+ingested_at: 2026-05-08T08:00:06.293978+00:00
 ingest_version: 1
 content_hash: blake2b:dd8bc34ae3bca9ff58ef36f49385cc3b
-provider_modified_at: 2026-05-07T12:21:52.934225+00:00
+provider_modified_at: 2026-05-08T08:00:06.293978+00:00
 
 title: Aswin UC Berkeley
 slug: aswin-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15107714983"]
   slack: []
-last_synced: 2026-05-07T12:21:52.934225+00:00
+last_synced: 2026-05-08T08:00:06.293978+00:00
 global: true
 ---
 

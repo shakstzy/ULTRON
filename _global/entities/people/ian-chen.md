@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.826668+00:00
+ingested_at: 2026-05-08T08:00:06.166909+00:00
 ingest_version: 1
 content_hash: blake2b:52ffe7bc49e69714566dba7fc9b5acc9
-provider_modified_at: 2026-05-07T12:21:52.826668+00:00
+provider_modified_at: 2026-05-08T08:00:06.166909+00:00
 
 title: Ian Chen
 slug: ian-chen
@@ -15,7 +15,7 @@ identifiers:
   email: ["icbuggie@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-07T12:21:52.826668+00:00
+last_synced: 2026-05-08T08:00:06.166909+00:00
 global: true
 ---
 

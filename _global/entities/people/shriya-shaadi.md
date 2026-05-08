@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.846314+00:00
+ingested_at: 2026-05-08T08:00:06.187400+00:00
 ingest_version: 1
 content_hash: blake2b:93daeef5825594fa427ea99723854205
-provider_modified_at: 2026-05-07T12:21:52.846314+00:00
+provider_modified_at: 2026-05-08T08:00:06.187400+00:00
 
 title: Shriya Shaadi
 slug: shriya-shaadi
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19712948207"]
   slack: []
-last_synced: 2026-05-07T12:21:52.846314+00:00
+last_synced: 2026-05-08T08:00:06.187400+00:00
 global: true
 ---
 

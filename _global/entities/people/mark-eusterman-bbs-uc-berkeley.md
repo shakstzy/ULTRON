@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.994239+00:00
+ingested_at: 2026-05-08T08:00:06.362385+00:00
 ingest_version: 1
 content_hash: blake2b:a6f438e357a5521c7d177d42ac0559f3
-provider_modified_at: 2026-05-07T12:21:52.994239+00:00
+provider_modified_at: 2026-05-08T08:00:06.362385+00:00
 
 title: Mark Eusterman BBS UC Berkeley
 slug: mark-eusterman-bbs-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(208) 995-3069"]
   slack: []
-last_synced: 2026-05-07T12:21:52.994239+00:00
+last_synced: 2026-05-08T08:00:06.362385+00:00
 global: true
 ---
 

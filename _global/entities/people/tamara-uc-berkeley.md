@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.978716+00:00
+ingested_at: 2026-05-08T08:00:06.342918+00:00
 ingest_version: 1
 content_hash: blake2b:d3d8122241b9b0d64d7cdde31ac18128
-provider_modified_at: 2026-05-07T12:21:52.978716+00:00
+provider_modified_at: 2026-05-08T08:00:06.342918+00:00
 
 title: Tamara UC Berkeley
 slug: tamara-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 949-610-5399"]
   slack: []
-last_synced: 2026-05-07T12:21:52.978716+00:00
+last_synced: 2026-05-08T08:00:06.342918+00:00
 global: true
 ---
 

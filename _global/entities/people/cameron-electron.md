@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.971704+00:00
+ingested_at: 2026-05-08T08:00:06.333728+00:00
 ingest_version: 1
 content_hash: blake2b:6b6442ed18fd56f29fd731db79dc6310
-provider_modified_at: 2026-05-07T12:21:52.971704+00:00
+provider_modified_at: 2026-05-08T08:00:06.333728+00:00
 
 title: Cameron | Electron
 slug: cameron-electron
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 941-735-8206", "+1 253-255-8079"]
   slack: []
-last_synced: 2026-05-07T12:21:52.971704+00:00
+last_synced: 2026-05-08T08:00:06.333728+00:00
 global: true
 ---
 

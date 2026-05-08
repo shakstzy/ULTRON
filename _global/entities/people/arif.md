@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.998707+00:00
+ingested_at: 2026-05-08T08:00:06.366488+00:00
 ingest_version: 1
 content_hash: blake2b:9636067806ed2c366b269af452e50e6f
-provider_modified_at: 2026-05-07T12:21:52.998707+00:00
+provider_modified_at: 2026-05-08T08:00:06.366488+00:00
 
 title: Arif
 slug: arif
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 978-460-7027"]
   slack: []
-last_synced: 2026-05-07T12:21:52.998707+00:00
+last_synced: 2026-05-08T08:00:06.366488+00:00
 global: true
 ---
 

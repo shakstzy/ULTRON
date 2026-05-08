@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.938740+00:00
+ingested_at: 2026-05-08T08:00:06.297221+00:00
 ingest_version: 1
 content_hash: blake2b:af9a1d1ad9a8917bc0123c6f192f01ea
-provider_modified_at: 2026-05-07T12:21:52.938740+00:00
+provider_modified_at: 2026-05-08T08:00:06.297221+00:00
 
 title: CY | Polygon
 slug: cy-polygon
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-07T12:21:52.938740+00:00
+last_synced: 2026-05-08T08:00:06.297221+00:00
 global: true
 ---
 

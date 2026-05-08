@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.945932+00:00
+ingested_at: 2026-05-08T08:00:06.303942+00:00
 ingest_version: 1
 content_hash: blake2b:fbb3fa7808a93472f8515709ac4c4f2e
-provider_modified_at: 2026-05-07T12:21:52.945932+00:00
+provider_modified_at: 2026-05-08T08:00:06.303942+00:00
 
 title: Victor Cardenas
 slug: victor-cardenas
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(424) 324-8487"]
   slack: []
-last_synced: 2026-05-07T12:21:52.945932+00:00
+last_synced: 2026-05-08T08:00:06.303942+00:00
 global: true
 ---
 

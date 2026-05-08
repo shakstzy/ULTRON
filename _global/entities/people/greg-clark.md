@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.970738+00:00
+ingested_at: 2026-05-08T08:00:06.332596+00:00
 ingest_version: 1
 content_hash: blake2b:9bc46b2edaf20b937c4109a7ba3b465d
-provider_modified_at: 2026-05-07T12:21:52.970738+00:00
+provider_modified_at: 2026-05-08T08:00:06.332596+00:00
 
 title: Greg Clark
 slug: greg-clark
@@ -15,7 +15,7 @@ identifiers:
   email: ["gbclark@utexas.edu"]
   phone: []
   slack: []
-last_synced: 2026-05-07T12:21:52.970738+00:00
+last_synced: 2026-05-08T08:00:06.332596+00:00
 global: true
 ---
 

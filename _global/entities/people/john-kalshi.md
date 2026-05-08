@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.855838+00:00
+ingested_at: 2026-05-08T08:00:06.199368+00:00
 ingest_version: 1
 content_hash: blake2b:50cabefe12405058bff889cca5d576f6
-provider_modified_at: 2026-05-07T12:21:52.855838+00:00
+provider_modified_at: 2026-05-08T08:00:06.199368+00:00
 
 title: John | Kalshi
 slug: john-kalshi
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-07T12:21:52.855838+00:00
+last_synced: 2026-05-08T08:00:06.199368+00:00
 global: true
 ---
 

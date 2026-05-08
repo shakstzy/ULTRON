@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.842508+00:00
+ingested_at: 2026-05-08T08:00:06.183721+00:00
 ingest_version: 1
 content_hash: blake2b:f330d3676e1d0ac06f8068a95a3373f6
-provider_modified_at: 2026-05-07T12:21:52.842508+00:00
+provider_modified_at: 2026-05-08T08:00:06.183721+00:00
 
 title: Arnav UC Berkeley
 slug: arnav-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17323185975"]
   slack: []
-last_synced: 2026-05-07T12:21:52.842508+00:00
+last_synced: 2026-05-08T08:00:06.183721+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.905547+00:00
+ingested_at: 2026-05-08T08:00:06.260170+00:00
 ingest_version: 1
 content_hash: blake2b:c188e89dc7e20cc495cef00dbc91eed3
-provider_modified_at: 2026-05-07T12:21:52.905547+00:00
+provider_modified_at: 2026-05-08T08:00:06.260170+00:00
 
 title: Esha Thakur
 slug: esha-thakur-7d3c
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["4252362196"]
   slack: []
-last_synced: 2026-05-07T12:21:52.905547+00:00
+last_synced: 2026-05-08T08:00:06.260170+00:00
 global: true
 ---
 

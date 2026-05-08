@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.879143+00:00
+ingested_at: 2026-05-08T08:00:06.224242+00:00
 ingest_version: 1
 content_hash: blake2b:e30954527f0473dde7a10b473f4ad8a2
-provider_modified_at: 2026-05-07T12:21:52.879143+00:00
+provider_modified_at: 2026-05-08T08:00:06.224242+00:00
 
 title: Connor Mayo
 slug: connor-mayo
@@ -15,7 +15,7 @@ identifiers:
   email: ["connor@mayo.cc"]
   phone: []
   slack: []
-last_synced: 2026-05-07T12:21:52.879143+00:00
+last_synced: 2026-05-08T08:00:06.224242+00:00
 global: true
 ---
 

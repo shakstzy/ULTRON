@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:53.002327+00:00
+ingested_at: 2026-05-08T08:00:06.369170+00:00
 ingest_version: 1
 content_hash: blake2b:c4fbbef5e70e3d567b6649f29a80bd13
-provider_modified_at: 2026-05-07T12:21:53.002327+00:00
+provider_modified_at: 2026-05-08T08:00:06.369170+00:00
 
 title: Ramesh Hariharan Uncle
 slug: ramesh-hariharan-uncle
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18589006737"]
   slack: []
-last_synced: 2026-05-07T12:21:53.002327+00:00
+last_synced: 2026-05-08T08:00:06.369170+00:00
 global: true
 ---
 

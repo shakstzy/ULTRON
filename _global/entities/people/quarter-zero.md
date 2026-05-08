@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.802262+00:00
+ingested_at: 2026-05-08T08:00:06.135582+00:00
 ingest_version: 1
 content_hash: blake2b:98de8f282b3ba539dc068f78ac34f670
-provider_modified_at: 2026-05-07T12:21:52.802262+00:00
+provider_modified_at: 2026-05-08T08:00:06.135582+00:00
 
 title: Quarter Zero
 slug: quarter-zero
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 805-335-8366"]
   slack: []
-last_synced: 2026-05-07T12:21:52.802262+00:00
+last_synced: 2026-05-08T08:00:06.135582+00:00
 global: true
 ---
 

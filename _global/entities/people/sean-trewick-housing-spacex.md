@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.983571+00:00
+ingested_at: 2026-05-08T08:00:06.349166+00:00
 ingest_version: 1
 content_hash: blake2b:4073327098aea508c3cc8e1d8de2aa6e
-provider_modified_at: 2026-05-07T12:21:52.983571+00:00
+provider_modified_at: 2026-05-08T08:00:06.349166+00:00
 
 title: Sean Trewick Housing SpaceX
 slug: sean-trewick-housing-spacex
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17245532379"]
   slack: []
-last_synced: 2026-05-07T12:21:52.983571+00:00
+last_synced: 2026-05-08T08:00:06.349166+00:00
 global: true
 ---
 

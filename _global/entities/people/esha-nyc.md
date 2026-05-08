@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.910062+00:00
+ingested_at: 2026-05-08T08:00:06.267364+00:00
 ingest_version: 1
 content_hash: blake2b:f3b96bdf3c67ca0f730e1bff098f9fc1
-provider_modified_at: 2026-05-07T12:21:52.910062+00:00
+provider_modified_at: 2026-05-08T08:00:06.267364+00:00
 
 title: Esha NYC
 slug: esha-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16099022703"]
   slack: []
-last_synced: 2026-05-07T12:21:52.910062+00:00
+last_synced: 2026-05-08T08:00:06.267364+00:00
 global: true
 ---
 

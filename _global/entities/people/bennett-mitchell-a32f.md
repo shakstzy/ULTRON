@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.906480+00:00
+ingested_at: 2026-05-08T08:00:06.261953+00:00
 ingest_version: 1
 content_hash: blake2b:85dfdac6201d784b28534e14cd7baf6a
-provider_modified_at: 2026-05-07T12:21:52.906480+00:00
+provider_modified_at: 2026-05-08T08:00:06.261953+00:00
 
 title: Bennett Mitchell
 slug: bennett-mitchell-a32f
@@ -15,7 +15,7 @@ identifiers:
   email: ["bennett.mitchell2134@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-07T12:21:52.906480+00:00
+last_synced: 2026-05-08T08:00:06.261953+00:00
 global: true
 ---
 

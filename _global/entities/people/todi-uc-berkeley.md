@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.887413+00:00
+ingested_at: 2026-05-08T08:00:06.237393+00:00
 ingest_version: 1
 content_hash: blake2b:c781882077599af20badfd4a1ada067e
-provider_modified_at: 2026-05-07T12:21:52.887413+00:00
+provider_modified_at: 2026-05-08T08:00:06.237393+00:00
 
 title: Todi UC Berkeley
 slug: todi-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(707) 486-2703"]
   slack: []
-last_synced: 2026-05-07T12:21:52.887413+00:00
+last_synced: 2026-05-08T08:00:06.237393+00:00
 global: true
 ---
 

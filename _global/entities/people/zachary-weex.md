@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-07T12:21:52.825373+00:00
+ingested_at: 2026-05-08T08:00:06.164633+00:00
 ingest_version: 1
 content_hash: blake2b:68504f794cf8769cee7eb52576798b2e
-provider_modified_at: 2026-05-07T12:21:52.825373+00:00
+provider_modified_at: 2026-05-08T08:00:06.164633+00:00
 
 title: Zachary | Weex
 slug: zachary-weex
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-07T12:21:52.825373+00:00
+last_synced: 2026-05-08T08:00:06.164633+00:00
 global: true
 ---
 

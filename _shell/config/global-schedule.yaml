@@ -8,6 +8,13 @@
 # CLAUDE_CONFIG_DIR isolates Claude Code auth for cron-fired jobs from interactive
 # sessions. Log in once: `CLAUDE_CONFIG_DIR=~/.claude-cron claude` (one browser
 # click). Cron jobs then never starve interactive quota.
+#
+# DO NOT run `schedule.py compile` under sudo — `~` and Path.home() would expand
+# to /var/root and silently shred every plist's HOME/CLAUDE_CONFIG_DIR.
+#
+# If you add a cron-fired script that hits the Anthropic API via the SDK directly
+# (not the `claude` CLI), CLAUDE_CONFIG_DIR is bypassed — you'll need to add
+# ANTHROPIC_API_KEY here too, or skip the SDK path for cron.
 cron_env:
   CLAUDE_CONFIG_DIR: ~/.claude-cron
 

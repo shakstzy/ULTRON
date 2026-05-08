@@ -1,0 +1,4 @@
+- 2026-05-07T20:39:32 — ingest-article: paulgraham-do-things-that-don ("Do Things that Don't Scale")
+- 2026-05-07T20:39:41 — ingest-youtube: 3blue1brown-what-neural-network-deep-airca ('But what is a neural network? | Deep learning chapter 1')
+- 2026-05-07T20:39:52 — ingest-paper: vaswani-attention-all-you-2017 ('Attention Is All You Need')
+- 2026-05-07T20:40:33 — ingest-book: thoreau-walden ('Walden')

@@ -238,7 +238,15 @@ def main() -> int:
 
     candidates = collect_candidates()
     if not candidates:
-        msg = "library is empty — ingest a source first"
+        # Distinguish "no ingest yet" from "ingest done, wiki not built"
+        raw_root = L.WORKSPACE / "raw"
+        any_raw = any(p.suffix == ".md" and p.name != ".gitkeep"
+                      for p in raw_root.rglob("*.md")) if raw_root.exists() else False
+        if any_raw:
+            msg = ("wiki not built — run `/graphify --wiki workspaces/library` "
+                   "to generate wiki entity pages from raw/, then re-run library-next")
+        else:
+            msg = "library is empty — run a `bin/ingest-*.py` first, then `/graphify --wiki workspaces/library`"
         print(msg if not args.json else json.dumps({"error": msg}), file=sys.stderr)
         return 2
 

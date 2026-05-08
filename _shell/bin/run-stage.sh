@@ -211,6 +211,10 @@ case "$STAGE" in
       > "$RUN_DIR/output/graphify.log" 2>&1 || true
     "$ULTRON_ROOT/_shell/bin/audit-system-health.sh" \
       > "$RUN_DIR/output/system-health.md" 2>&1 || true
+    "$ULTRON_ROOT/.venv/bin/python3" "$ULTRON_ROOT/_shell/bin/find-cross-workspace-slugs.py" \
+      > "$RUN_DIR/output/cross-workspace-slugs.log" 2>&1 || true
+    "$ULTRON_ROOT/.venv/bin/python3" "$ULTRON_ROOT/_shell/bin/generate-candidate-edges.py" \
+      > "$RUN_DIR/output/candidate-edges.log" 2>&1 || true
     claude_invoke \
       "$ULTRON_ROOT/_shell/agents/audit-agent.md" \
       "$RUN_DIR/output/result.json" \

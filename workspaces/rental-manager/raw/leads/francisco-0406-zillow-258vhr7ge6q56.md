@@ -47,3 +47,7 @@ hey Francisco, happy to set up a tour. for 3 people, the two 3rd floor rooms ($1
 ### 2026-05-07T21:08:10.000Z - Francisco Moreno
 
 Im available to go today!
+
+### 2026-05-08T18:50:29.522Z - Owner (Adithya)
+
+I'm booked up today. What times work for you guys tomorrow or this weekend?

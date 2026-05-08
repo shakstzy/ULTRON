@@ -46,3 +46,7 @@ hey Charlotte, dogs are totally fine, German shepherd is welcome. there's a dog 
 ### 2026-05-07T20:51:53.000Z - Charlotte Potter
 
 I can come by this weekend! Would Saturday work?
+
+### 2026-05-08T18:49:59.290Z - Owner (Adithya)
+
+Saturday works. What time were you thinking?

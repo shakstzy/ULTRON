@@ -42,3 +42,7 @@ Is 11:00 am a good time ?
 ### 2025-05-11T19:07:40.000Z - David Reyes
 
 Okay thanks I’ll be there tomorrow at 11:00 am
+
+### 2026-05-08T18:50:46.456Z - Owner (Adithya)
+
+11 am tomorrow works. Text me when you're on the way.

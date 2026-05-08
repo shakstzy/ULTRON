@@ -35,6 +35,10 @@ PLIST_DIR = "/Users/shakstzy/ULTRON/_shell/plists"
 LEDGER = "/Users/shakstzy/ULTRON/_logs/cron-ledger.jsonl"
 LOCK_GLOB = "/tmp/com.adithya.ultron.*.lock"
 IMESSAGE_SEND = "/Users/shakstzy/.claude/skills/imessage/send.sh"
+# Sentinel flag created after the first successful audit. Distinguishes a true
+# fresh install (suppress alerts) from a state.json that was deleted post-init
+# (don't suppress — the user lost state but the system was already running).
+INITIALIZED_FLAG = "/Users/shakstzy/ULTRON/_logs/cron-audit-initialized.flag"
 
 LOCK_STALE_HOURS = 2.0
 BROKEN_CONSECUTIVE = 3
@@ -392,7 +396,10 @@ def main():
         for label, info in jobs.items()
     }
     cleaned = cleanup_stale_locks(now)
-    cold_start = not state_path_exists(cfg)
+    # Cold-start = sentinel missing, NOT state.json missing. State.json being
+    # deleted post-install means we lost state, not that we're a fresh install
+    # — currently-flagged STALE/BROKEN jobs should still alert in that case.
+    cold_start = not pathlib.Path(INITIALIZED_FLAG).exists()
 
     report = build_report(statuses, cleaned, now)
     report_path = pathlib.Path(cfg["audit_report_dir"]) / f"cron-audit-{now:%Y-%m-%d}.md"
@@ -453,6 +460,10 @@ def main():
         fd = None
         os.replace(tmp_path, state_path)
         tmp_path = None
+        # Mark the auditor as initialized after the first successful state write.
+        # A subsequent state.json deletion will no longer be treated as cold-start.
+        if not pathlib.Path(INITIALIZED_FLAG).exists():
+            pathlib.Path(INITIALIZED_FLAG).write_text(now.isoformat())
     except OSError as e:
         sys.stderr.write(f"[auditor] state save failed: {e}\n")
         if fd is not None:

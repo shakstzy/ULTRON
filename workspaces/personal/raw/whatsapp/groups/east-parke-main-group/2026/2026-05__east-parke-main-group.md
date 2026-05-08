@@ -1,17 +1,17 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T21:17:08.836895+00:00'
+ingested_at: '2026-05-08T22:30:04.401668+00:00'
 ingest_version: 1
-content_hash: 'blake3:b2fb0fb8a17aeb06c8b06d47d0277ab19c85e14a627fb6616749515a0d9f33ae'
-provider_modified_at: '2026-05-06T20:19:04-05:00'
+content_hash: 'blake3:91c494a367e05fed683c088447ac8882e51bca7cf415a8f4030a69c9a41ce8cb'
+provider_modified_at: '2026-05-08T17:30:00-05:00'
 contact_slug: east-parke-main-group
 contact_type: group
 month: 2026-05
-date_range: [2026-05-02, 2026-05-06]
-message_count: 26
+date_range: [2026-05-02, 2026-05-08]
+message_count: 27
 my_message_count: 0
-their_message_count: 26
+their_message_count: 27
 attachments: []
 whatsapp_chat_jid: '120363023221027012@g.us'
 whatsapp_chat_kind: group
@@ -60,3 +60,19 @@ Did you figure out how to fix this problem?
 **19:45 — @99330077769923:** Do I just spray the crabgrass I see or the whole lawn?
 **20:18 — @168624962711656:** You can do spot treatment. Personally I mix a combination of ingredients myself that attack a variety of weeds and do a blanket treatment of the whole lawn. I do this once a year or sometimes none. The pre emergent treatment I do kills a high percentage of weeds before they germinate and the ones that survive you can’t see since I mow 1-2 times a weeks.
 **20:19 — @168624962711656:** If I’m busy and can’t mow then yeah they’ll show. That’s when I spray.
+
+## 2026-05-08 (Friday)
+
+**17:30 — @246402340896937:** Our house is available for rent 
+🏡 *Starting June 1*
+
+🎁 Specials: 50% OFF June month’s rent. 
+
+📍 6724 Ellsworth Walk, Austin TX 78724
+💰 *$3,300/mo* 
+
+🔹2632 sq ft - 4 Beds • 3 Baths • Office • Gameroom
+
+Please do share if you know anyone looking to rent. 
+
+🔗 Photos & apply: https://www.zillow.com/homedetails/6724-Ellsworth-Walk-Austin-TX-78724/331628066_zpid/

@@ -22,6 +22,17 @@ sources:
     folders:
       - SYNAPSE
 
+  notion:
+    # Each target is one root page or database from RENAISSANCE workspace.
+    # The runner recurses into child_page / child_database blocks automatically.
+    # Auth: macOS Keychain `quantum-notion`. The integration must be invited
+    # to each target page in Notion's UI.
+    targets:
+      - id: "20fa7b112c9d8046949ad17c0e977eb1"
+        kind: page
+        label: synapse-litepaper-v-1-1
+        url: "https://wistful-healer-62c.notion.site/Synapse-Litepaper-v-1-1-20fa7b112c9d8046949ad17c0e977eb1"
+
 global_settings:
   attachments_inline: true
   vision_model: sonnet

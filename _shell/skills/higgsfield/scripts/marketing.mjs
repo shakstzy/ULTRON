@@ -6,7 +6,7 @@ import { launchContext } from './browser.mjs';
 import { browsePhase, pauseJitter } from './behavior.mjs';
 import { initState, slugFromPrompt, timestampForRunId, transition } from './state.mjs';
 import { downloadAll, finalize, preflight, getWallet, parseCostCap, walletTotal } from './job.mjs';
-import { submitViaUI, openHistoryPanel, scrapeUserAssets, waitForNewAssets, userIdFromJwtCapture, bestDownloadUrl, enableUnlimitedToggle, uploadReferenceImages } from './ui-submit.mjs';
+import { submitViaUI, openHistoryPanel, scrapeUserAssets, waitForNewAssets, userIdFromJwtCapture, bestDownloadUrl, enableUnlimitedToggle, uploadReferenceImages, nowAsAssetTimestamp } from './ui-submit.mjs';
 import { waitForCapturedJwt } from './jwt.mjs';
 import { collectRefs } from './image.mjs';
 import { join, resolve as pathResolve } from 'node:path';
@@ -177,6 +177,7 @@ export async function runMarketing(argv) {
       console.log(`[higgsfield] uploaded ${u.uploaded} reference file(s): ${absPaths.join(', ')}`);
     }
 
+    const submitTimestamp = nowAsAssetTimestamp();
     const submission = await submitViaUI(ctx.page, ctx.context, runDir, {
       slug: SLUG, prompt: argv.prompt, responseTimeoutMs: 60000
     });
@@ -184,7 +185,8 @@ export async function runMarketing(argv) {
     await transition(runDir, 'polling', {});
     console.log('[higgsfield] waiting for marketing video asset (up to 30 min)...');
     const fresh = await waitForNewAssets(ctx.page, userSubstr, preSet, {
-      expectCount: 1, timeoutMs: 30 * 60 * 1000, pollMs: 5000, requireKind: 'video'
+      expectCount: 1, timeoutMs: 30 * 60 * 1000, pollMs: 5000, requireKind: 'video',
+      minTimestampStr: submitTimestamp
     });
     fresh.forEach(f => console.log(`  ${f.kind}: ${f.cdn}`));
 

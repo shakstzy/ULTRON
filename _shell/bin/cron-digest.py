@@ -29,7 +29,15 @@ def _ok(r: dict) -> bool:
 
 
 def main():
-    cfg = json.loads(pathlib.Path(CONFIG_PATH).read_text())
+    try:
+        cfg = json.loads(pathlib.Path(CONFIG_PATH).read_text())
+    except (OSError, json.JSONDecodeError) as e:
+        sys.stderr.write(f"[digest] config load failed: {e}\n")
+        sys.exit(1)
+    phone = cfg.get("operator_phone")
+    if not phone:
+        sys.stderr.write("[digest] config missing operator_phone; nothing to send\n")
+        sys.exit(1)
     now = datetime.datetime.now().astimezone()
     day_start = now.replace(hour=0, minute=0, second=0, microsecond=0)
 
@@ -92,7 +100,7 @@ def main():
 
     body = "\n".join(body_lines)
     res = subprocess.run(
-        [IMESSAGE_SEND, "--to", cfg["operator_phone"], "--text", body],
+        [IMESSAGE_SEND, "--to", phone, "--text", body],
         capture_output=True, text=True, timeout=30,
     )
     if res.returncode != 0:

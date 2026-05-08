@@ -6,7 +6,7 @@ import { launchContext } from './browser.mjs';
 import { browsePhase, pauseJitter } from './behavior.mjs';
 import { initState, slugFromPrompt, timestampForRunId } from './state.mjs';
 import { downloadAll, finalize, preflight, getWallet, parseCostCap, walletTotal } from './job.mjs';
-import { submitViaUI, openHistoryPanel, scrapeUserAssets, waitForNewAssets, userIdFromJwtCapture, bestDownloadUrl, enableUnlimitedToggle, selectPicker, uploadReferenceImages, clearReferenceImages, clearPersistedAttachments } from './ui-submit.mjs';
+import { submitViaUI, openHistoryPanel, scrapeUserAssets, waitForNewAssets, userIdFromJwtCapture, bestDownloadUrl, enableUnlimitedToggle, selectPicker, uploadReferenceImages, clearReferenceImages, clearPersistedAttachments, nowAsAssetTimestamp } from './ui-submit.mjs';
 import { waitForCapturedJwt } from './jwt.mjs';
 import { transition } from './state.mjs';
 import { collectRefs } from './image.mjs';
@@ -413,6 +413,7 @@ export async function runVideo(argv) {
       params_for_state.ref_files = absPaths;
     }
 
+    const submitTimestamp = nowAsAssetTimestamp();
     const submission = await submitViaUI(ctx.page, ctx.context, runDir, {
       slug: cat.backend_slug || slug,
       prompt: argv.prompt,
@@ -425,7 +426,8 @@ export async function runVideo(argv) {
       expectCount: 1,
       timeoutMs: 30 * 60 * 1000,
       pollMs: 5000,
-      requireKind: 'video'
+      requireKind: 'video',
+      minTimestampStr: submitTimestamp
     });
     console.log(`[higgsfield] detected ${fresh.length} new video asset(s)`);
     fresh.forEach(f => console.log(`  ${f.kind}: ${f.cdn}`));

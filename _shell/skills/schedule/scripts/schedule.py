@@ -378,9 +378,19 @@ def cmd_compile(args: argparse.Namespace) -> int:
             print(f"  {label}: {err}")
 
     # Orphan detection: existing plists that don't match any current job.
+    # PROTECTED set is the cron-observability stack — those plists are hand-
+    # written and intentionally NOT in schedule.yaml. Without this guard,
+    # `compile` flags them as orphans every run and a careless `/schedule
+    # remove` would tear down the entire monitoring layer.
+    PROTECTED = {
+        "com.adithya.ultron.cron-projector.plist",
+        "com.adithya.ultron.cron-projector-reconcile.plist",
+        "com.adithya.ultron.cron-auditor.plist",
+        "com.adithya.ultron.cron-digest.plist",
+    }
     existing = sorted(PLISTS_DIR.glob("com.adithya.ultron.*.plist"))
     intended = {p.name for p in written}
-    orphans = [p for p in existing if p.name not in intended]
+    orphans = [p for p in existing if p.name not in intended and p.name not in PROTECTED]
     if orphans:
         print("\nORPHAN plists (no matching schedule.yaml entry):")
         for p in orphans:

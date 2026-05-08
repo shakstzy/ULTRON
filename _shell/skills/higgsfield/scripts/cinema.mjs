@@ -4,7 +4,7 @@ import { launchContext } from './browser.mjs';
 import { browsePhase, pauseJitter } from './behavior.mjs';
 import { initState, slugFromPrompt, timestampForRunId, transition } from './state.mjs';
 import { downloadAll, finalize, preflight, getWallet, parseCostCap, walletTotal } from './job.mjs';
-import { submitViaUI, openHistoryPanel, scrapeUserAssets, waitForNewAssets, userIdFromJwtCapture, bestDownloadUrl, enableUnlimitedToggle, uploadReferenceImages } from './ui-submit.mjs';
+import { submitViaUI, openHistoryPanel, scrapeUserAssets, waitForNewAssets, userIdFromJwtCapture, bestDownloadUrl, enableUnlimitedToggle, uploadReferenceImages, nowAsAssetTimestamp } from './ui-submit.mjs';
 import { waitForCapturedJwt } from './jwt.mjs';
 import { collectRefs } from './image.mjs';
 import { join, resolve as pathResolve } from 'node:path';
@@ -408,16 +408,9 @@ export async function runCinema(argv) {
       console.log(`[higgsfield] uploaded ${u.uploaded} reference file(s): ${absPaths.join(', ')}`);
     }
 
-    // Cinema 3.5 renders BOTH image and video prompt textareas simultaneously
-    // (no [role=tabpanel] markup). Disambiguate by placeholder text: image mode
-    // prompt has "Describe your scene..." placeholder, video mode has "Enter a
-    // prompt...". Without this, prompt fills wrong panel and Generate is gated.
-    const promptSelector = mode === 'image'
-      ? 'div[role="textbox"][contenteditable="true"][data-placeholder*="Describe"], textarea[placeholder*="Describe"]'
-      : 'div[role="textbox"][contenteditable="true"][data-placeholder*="Enter a prompt"], textarea[placeholder*="Enter a prompt"]';
+    const submitTimestamp = nowAsAssetTimestamp();
     const submission = await submitViaUI(ctx.page, ctx.context, runDir, {
-      slug: cfg.slug, prompt: argv.scene, responseTimeoutMs: 60000, expectedCost: cfg.cost,
-      promptSelector
+      slug: cfg.slug, prompt: argv.scene, responseTimeoutMs: 60000, expectedCost: cfg.cost
     });
 
     await transition(runDir, 'polling', {});
@@ -425,7 +418,8 @@ export async function runCinema(argv) {
     console.log(`[higgsfield] waiting for cinema ${mode} asset (up to ${timeoutMs / 60000} min)...`);
     const fresh = await waitForNewAssets(ctx.page, userSubstr, preSet, {
       expectCount: 1, timeoutMs, pollMs: mode === 'video' ? 5000 : 3000,
-      requireKind: mode === 'video' ? 'video' : 'image'
+      requireKind: mode === 'video' ? 'video' : 'image',
+      minTimestampStr: submitTimestamp
     });
     fresh.forEach(f => console.log(`  ${f.kind}: ${f.cdn}`));
 

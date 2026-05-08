@@ -5,7 +5,7 @@ import { launchContext } from './browser.mjs';
 import { browsePhase, pauseJitter } from './behavior.mjs';
 import { initState, readState, slugFromPrompt, timestampForRunId } from './state.mjs';
 import { downloadAll, finalize, preflight, getWallet, parseCostCap, walletTotal } from './job.mjs';
-import { submitViaUI, openHistoryPanel, scrapeUserAssets, waitForNewAssets, userIdFromJwtCapture, bestDownloadUrl, enableUnlimitedToggle, selectPicker, uploadReferenceImages, clearReferenceImages, clearPersistedAttachments } from './ui-submit.mjs';
+import { submitViaUI, openHistoryPanel, scrapeUserAssets, waitForNewAssets, userIdFromJwtCapture, bestDownloadUrl, enableUnlimitedToggle, selectPicker, uploadReferenceImages, clearReferenceImages, clearPersistedAttachments, nowAsAssetTimestamp } from './ui-submit.mjs';
 import { transition } from './state.mjs';
 import { verifyUaChConsistency } from './fingerprint.mjs';
 import { waitForCapturedJwt } from './jwt.mjs';
@@ -267,6 +267,7 @@ export async function runImage(argv) {
     // through DataDome's JS stack. We capture the response via context.on('response').
     // The `body` we pre-built is NOT sent -- the page constructs its body from UI state.
     // We ensure UI defaults match our body (aspect/res/batch defaults align with config).
+    const submitTimestamp = nowAsAssetTimestamp();
     const submission = await submitViaUI(ctx.page, ctx.context, runDir, {
       slug: cat.backend_slug,
       prompt: argv.prompt
@@ -280,7 +281,8 @@ export async function runImage(argv) {
       expectCount,
       timeoutMs: 5 * 60 * 1000,
       pollMs: 3000,
-      requireKind: 'image'
+      requireKind: 'image',
+      minTimestampStr: submitTimestamp
     });
     console.log(`[higgsfield] detected ${fresh.length} new image(s)`);
     fresh.forEach(f => console.log(`  ${f.cdn}`));

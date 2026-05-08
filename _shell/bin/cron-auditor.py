@@ -380,6 +380,11 @@ def main():
 
     runs, ledger_start = load_ledger(cutoff)
     loaded = loaded_labels()
+    if loaded is None:
+        # launchctl unreachable. Don't classify (would read 0 jobs, wipe state,
+        # and flood alerts on next run). Fail loud and bail.
+        sys.stderr.write("[auditor] aborting: cannot enumerate loaded jobs\n")
+        sys.exit(1)
     jobs = parse_plist_jobs(loaded)
 
     statuses = {
@@ -414,7 +419,10 @@ def main():
         alert_diffs = []
         recovered = []
 
-    if alert_diffs or recovered:
+    if alert_diffs or recovered or cleaned:
+        # Stale-lock cleanups deserve their own ping even when no status flips
+        # — a cleaned lock is the visible footprint of a SIGKILLed run, which
+        # is something Adithya should know about.
         lines = [f"ULTRON cron audit @ {now:%H:%M}"]
         for d in alert_diffs:
             short = d["label"].replace("com.adithya.ultron.", "")
@@ -423,15 +431,36 @@ def main():
             short = d["label"].replace("com.adithya.ultron.", "")
             lines.append(f"✓ {short}: {d['from']} → HEALTHY")
         if cleaned:
-            lines.append(f"Cleaned {len(cleaned)} stale lock(s)")
+            lines.append(f"🔧 Cleaned {len(cleaned)} stale lock(s): " +
+                         ", ".join(c["lock"].replace("com.adithya.ultron.", "").replace(".lock", "") for c in cleaned[:5]))
         send_imessage(cfg, "\n".join(lines))
 
-    # Atomic write: a crash mid-write previously left a zero-byte state.json,
-    # which the next run silently swallows (parse fail → prior={}) and re-fires
-    # alerts for every job as if it were brand new.
-    tmp_path = state_path.with_suffix(state_path.suffix + ".tmp")
-    tmp_path.write_text(json.dumps(statuses, indent=2))
-    os.replace(tmp_path, state_path)
+    # Atomic write via per-call unique tmp (mkstemp) — a fixed `.tmp` path
+    # races if two auditors overlap (e.g. previous run still in its gog
+    # subprocess when next fires). A crash mid-write would also leave a
+    # zero-byte state.json, which the next run silently swallows
+    # (parse fail → prior={}) and re-fires alerts for every job.
+    fd = None
+    tmp_path = None
+    try:
+        fd, tmp_path = tempfile.mkstemp(
+            dir=str(state_path.parent), prefix=".audit-state-", suffix=".json.tmp"
+        )
+        with os.fdopen(fd, "w") as f:
+            f.write(json.dumps(statuses, indent=2))
+            f.flush()
+            os.fsync(f.fileno())
+        fd = None
+        os.replace(tmp_path, state_path)
+        tmp_path = None
+    except OSError as e:
+        sys.stderr.write(f"[auditor] state save failed: {e}\n")
+        if fd is not None:
+            try: os.close(fd)
+            except OSError: pass
+        if tmp_path is not None and os.path.exists(tmp_path):
+            try: os.unlink(tmp_path)
+            except OSError: pass
 
     counts = {}
     for s in statuses.values():

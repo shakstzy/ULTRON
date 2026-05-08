@@ -482,8 +482,15 @@ export const scrapeUserImages = scrapeUserAssets;
 // Wait until we observe N new user-owned images that weren't present pre-submit.
 // Returns the new images (oldest-first in submission order, newest-last).
 // requireKind: 'video' | 'image' | null. Video-kind includes video_thumbnail (we'll download the derived mp4).
+//
+// minTimestampStr: stale-asset guard (yyyymmddhhmmss form). When the History
+// panel is freshly mounted (--new project + tab switch), Higgsfield sometimes
+// repopulates with assets from OTHER projects whose CDN URLs aren't in the
+// preExistingSet — those would falsely register as "new". Filename-encoded
+// timestamps below the submit time are filtered out.
 export async function waitForNewAssets(page, userSub, preExistingSet, {
-  expectCount = 1, timeoutMs = 5 * 60 * 1000, pollMs = 3000, requireKind = null
+  expectCount = 1, timeoutMs = 5 * 60 * 1000, pollMs = 3000, requireKind = null,
+  minTimestampStr = null
 } = {}) {
   const start = Date.now();
   let last = [];
@@ -491,6 +498,10 @@ export async function waitForNewAssets(page, userSub, preExistingSet, {
     await openHistoryPanel(page);
     const all = await scrapeUserAssets(page, userSub);
     let fresh = all.filter(a => !preExistingSet.has(a.cdn) && !preExistingSet.has(a.derivedMp4Url || ''));
+    if (minTimestampStr) {
+      // localeCompare on yyyymmddhhmmss strings == lexicographic == chronological.
+      fresh = fresh.filter(a => a.timestamp && a.timestamp.localeCompare(minTimestampStr) >= 0);
+    }
     if (requireKind === 'video') {
       fresh = fresh.filter(a => a.kind === 'video' || a.kind === 'video_thumbnail');
     } else if (requireKind === 'image') {
@@ -503,6 +514,16 @@ export async function waitForNewAssets(page, userSub, preExistingSet, {
   const err = new Error(`Timed out waiting for ${expectCount} new asset(s). Observed ${last.length} fresh during wait.`);
   err.code = 'UI_POLL_TIMEOUT';
   throw err;
+}
+
+// Helper: build a yyyymmddhhmmss timestamp string for "now" (UTC).
+// Used as `minTimestampStr` to exclude pre-existing assets produced before
+// the current submit reaches the server. Server-side filename clocks may
+// drift ±a few seconds, so we subtract `slackSec` to avoid race rejection.
+export function nowAsAssetTimestamp(slackSec = 30) {
+  const t = new Date(Date.now() - slackSec * 1000);
+  const pad = n => String(n).padStart(2, '0');
+  return `${t.getUTCFullYear()}${pad(t.getUTCMonth() + 1)}${pad(t.getUTCDate())}${pad(t.getUTCHours())}${pad(t.getUTCMinutes())}${pad(t.getUTCSeconds())}`;
 }
 
 // Given a scraped asset, resolve the BEST download URL (prefer full mp4 over thumbnail).

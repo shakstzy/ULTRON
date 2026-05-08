@@ -32,22 +32,30 @@ need_value() {
   [[ $2 -ge 2 ]] || die "$1 requires a value"
 }
 
-TO=""; GROUP=""; TEXT=""; FILE=""; DRY_RUN=0
+TO=""; GROUP=""; TEXT=""; TEXT_FILE=""; FILE=""; DRY_RUN=0
 while [[ $# -gt 0 ]]; do
   case "$1" in
-    --to)      need_value "$1" "$#"; TO="$2";    shift 2 ;;
-    --group)   need_value "$1" "$#"; GROUP="$2"; shift 2 ;;
-    --text)    need_value "$1" "$#"; TEXT="$2";  shift 2 ;;
-    --file)    need_value "$1" "$#"; FILE="$2";  shift 2 ;;
-    --dry-run) DRY_RUN=1; shift ;;
-    -h|--help) sed -n '2,21p' "$0"; exit 0 ;;
+    --to)        need_value "$1" "$#"; TO="$2";        shift 2 ;;
+    --group)     need_value "$1" "$#"; GROUP="$2";     shift 2 ;;
+    --text)      need_value "$1" "$#"; TEXT="$2";      shift 2 ;;
+    --text-file) need_value "$1" "$#"; TEXT_FILE="$2"; shift 2 ;;
+    --file)      need_value "$1" "$#"; FILE="$2";      shift 2 ;;
+    --dry-run)   DRY_RUN=1; shift ;;
+    -h|--help)   sed -n '2,21p' "$0"; exit 0 ;;
     *) die "unknown flag: $1" ;;
   esac
 done
 
+# --text-file is the preferred path for AI-generated drafts (avoids shell-quoting
+# bugs with backticks / $ / quotes / newlines). --text wins if both given.
+if [[ -z "$TEXT" && -n "$TEXT_FILE" ]]; then
+  [[ -f "$TEXT_FILE" ]] || die "--text-file not found: $TEXT_FILE"
+  TEXT=$(cat "$TEXT_FILE")
+fi
+
 [[ -z "$TO$GROUP" ]] && die "--to or --group required"
 [[ -n "$TO" && -n "$GROUP" ]] && die "--to and --group are mutually exclusive"
-[[ -z "$TEXT" && -z "$FILE" ]] && die "--text or --file required"
+[[ -z "$TEXT" && -z "$FILE" ]] && die "--text, --text-file, or --file required"
 [[ -n "$FILE" && ! -f "$FILE" ]] && die "file not found: $FILE"
 
 # ─── File-path sensitive-dir denylist (data-exfil defense) ─────────────────────

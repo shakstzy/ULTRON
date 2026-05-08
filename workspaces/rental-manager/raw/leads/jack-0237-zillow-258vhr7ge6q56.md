@@ -26,3 +26,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 ### 2026-02-02T06:11:38.000Z - Jack D Zeidman
 
 I am a teacher and a published writer of fantasy. I would like to speak with you regarding your rental. I hope to hear from you soon. Thank you. Jack 818 578 5340
+
+### 2026-05-08T22:18:36.699Z - Owner (Adithya)
+
+Hey Jack. That sounds like a cool background. I still have 4 rooms open starting at $1000. Let's get you set up for a tour to check the place out. What days and times usually work for you?

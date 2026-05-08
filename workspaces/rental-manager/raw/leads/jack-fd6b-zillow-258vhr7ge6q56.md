@@ -30,3 +30,7 @@ I am a teacher and published writer of fantasy. Please send me your phone number
 ### 2026-02-11T20:20:07.000Z - hollywhie
 
 Please call me at 818 578 5340. Thank you. Jack On Wednesday, February 11, 2026 at 07:49:10 AM PST, Adithya Kumar <1fm3v71ayxt3mixcx18wxsu6ea@convo.zillow.com> wrote: | | | | Hello! Thank you for your interest in the property. Whats a good number to reach you at, and what date and time works best for you to schedule a tour? I look forward to meeting you! | | | | | | New message | | | Hurrah! You've received a reply to your inquiry at 13245 Klein Ct, Sylmar, CA 91342. You can reply directly to this email. | | | | Adithya Kumar says: | | Hello! Thank you for your interest in the property. Whats a good number to reach you at, and what date and time works best for you to schedule a tour? I look forward to meeting you! | | | | | | |
+
+### 2026-05-08T22:19:42.236Z - Owner (Adithya)
+
+Got your number. I'll give you a call soon to chat about the house. Let me know what days and times usually work best for you to do a tour.

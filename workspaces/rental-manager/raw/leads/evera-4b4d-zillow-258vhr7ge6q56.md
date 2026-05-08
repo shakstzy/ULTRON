@@ -34,3 +34,7 @@ You can reach me at 415-378-6679. So I’m moving to LA this March, I’m curren
 ### 2026-02-12T01:07:40.000Z - EVERA LI
 
 Or if you have any videos for the place is fine too
+
+### 2026-05-08T22:20:17.461Z - Owner (Adithya)
+
+Hey Evera. A Zoom tour works for me. Let me know what days and times are good for you.

@@ -26,3 +26,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 ### 2026-02-05T02:32:53.000Z - Faustino arteaga
 
 Good evening, I wasn't aware of the accepted tour, sometimes I don't get notifications from Zillow until I sign back in. Does another day work to schedule the tour
+
+### 2026-05-08T22:19:06.817Z - Owner (Adithya)
+
+All good man. Zillow notifications can be spotty. Let me know what day and time works best for you to check the place out.

@@ -6,9 +6,9 @@ name: Sri K
 reference_email: "2z15bfnjbyjqei30xcraqrr10rv@convo.zillow.com"
 listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
-conversation_id: gmail-19c681a7b1229902
+conversation_id: gmail-19cb06273cbf886a
 status_label: INQUIRED
-last_pulled_at: "2026-05-08T02:53:58.894Z"
+last_pulled_at: "2026-05-08T22:01:01.296Z"
 ---
 
 # Sri K
@@ -17,7 +17,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 
 - Status: `INQUIRED`
 - Zillow forwarding email: `2z15bfnjbyjqei30xcraqrr10rv@convo.zillow.com`
-- Conversation ID: `gmail-19c681a7b1229902`
+- Conversation ID: `gmail-19cb06273cbf886a`
 - Listing alias: `258vhr7ge6q56`
 
 
@@ -27,6 +27,6 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 
 Hello, This is Sri Hi! I came across your Zillow post about the available room and wanted to check if it's still available for immediate move-in. Thanks!
 
-### 2026-05-08T22:21:41.427Z - Owner (Adithya)
+### 2026-05-08T22:26:17.093Z - Owner (Adithya)
 
-Hey Sri. Yes, it's ready for immediate move-in. I have a few different rooms open right now starting at $1000. Let's set up a tour so you can check the place out. Let me know what days and times work for you.
+Hey Sri. Yeah, I still have a few rooms open and they're ready to go right now. Let's set up a tour so you can check the place out. Let me know what days work best for you.

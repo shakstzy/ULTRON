@@ -45,12 +45,24 @@ async function collectPodcastLinks(page, { perSeedMax }) {
   return links.slice(0, perSeedMax);
 }
 
-// Read RSS URL + title + description + host from the podcast detail page.
+// Read podcast metadata directly from Listennotes' "Claim this podcast" widget.
+// Every detail page embeds a <div id="claim-podcast-app"> with the full
+// channel metadata as data-* attributes, INCLUDING the owner email and the
+// RSS URL — the same data that's gated behind a login modal in the visible
+// "RSS" button. The widget itself is rendered server-side and visible without
+// auth.
+//
+// Empire example:
+//   <div id="claim-podcast-app"
+//        data-channel-uuid="..."
+//        data-channel-email="podcasts@blockworks.co"
+//        data-channel-rss="https://feeds.megaphone.fm/empire"
+//        data-channel-title="Empire"
+//        data-channel-image="...">
 async function extractDetailMeta(page) {
   return page.evaluate(() => {
     const out = {};
 
-    // 1. og: / twitter: tags often have title + description
     const og = (prop) =>
       document.querySelector(`meta[property="${prop}"]`)?.getAttribute("content") ||
       document.querySelector(`meta[name="${prop}"]`)?.getAttribute("content") ||
@@ -59,152 +71,66 @@ async function extractDetailMeta(page) {
     out.description = og("og:description") || null;
     out.canonical = document.querySelector('link[rel="canonical"]')?.getAttribute("href") || null;
 
-    // 2. RSS URL — Listennotes exposes it in a few places. Most reliable:
-    //    - Anchor with href ending in feed, /rss, /podcast.xml etc., often within an "RSS feed" button.
-    //    - Sometimes: <input value="https://...feed..."> for copy-to-clipboard.
-    //    - Fallback: scan all anchors for likely RSS hrefs.
-    const looksLikeRss = (u) => {
-      if (!u) return false;
-      const lower = u.toLowerCase();
-      if (lower.endsWith(".xml")) return true;
-      if (lower.includes("/rss")) return true;
-      if (lower.includes("/feed")) return true;
-      if (lower.includes("feed.xml")) return true;
-      if (lower.includes("podcast.xml")) return true;
-      return false;
-    };
+    // Primary path — claim widget data-channel-* attributes.
+    const claim = document.getElementById("claim-podcast-app");
+    if (claim) {
+      out.channel_email = claim.getAttribute("data-channel-email") || null;
+      out.channel_rss = claim.getAttribute("data-channel-rss") || null;
+      out.channel_title = claim.getAttribute("data-channel-title") || null;
+      out.channel_uuid = claim.getAttribute("data-channel-uuid") || null;
+    }
 
-    const rssCandidates = new Set();
-    document.querySelectorAll('a[href]').forEach((a) => {
-      const h = a.getAttribute("href") || "";
-      if (looksLikeRss(h) && !h.includes("listennotes.com")) rssCandidates.add(h);
-    });
-    document.querySelectorAll('input[type="text"], input[type="url"], input:not([type])').forEach((i) => {
-      const v = i.value || i.getAttribute("value") || "";
-      if (looksLikeRss(v) && !v.includes("listennotes.com")) rssCandidates.add(v);
-    });
-    // JSON-LD
+    // Author/host hint — JSON-LD Article schema has an author field.
+    let author = null;
     document.querySelectorAll('script[type="application/ld+json"]').forEach((s) => {
       try {
         const j = JSON.parse(s.textContent || "{}");
-        const stack = [j];
-        while (stack.length) {
-          const obj = stack.pop();
-          if (!obj || typeof obj !== "object") continue;
-          for (const [k, v] of Object.entries(obj)) {
-            if (typeof v === "string" && looksLikeRss(v) && !v.includes("listennotes.com")) {
-              rssCandidates.add(v);
-            } else if (typeof v === "object") {
-              stack.push(v);
-            }
-          }
+        if (j.author && typeof j.author === "object") {
+          author = author || j.author.name || j.author["@id"] || null;
         }
       } catch { /* skip */ }
     });
-
-    // Also look for the dedicated "RSS feed" button — Listennotes wraps the URL
-    // either in a link or a button-with-data attribute.
-    document.querySelectorAll('[data-rss], [data-rss-url]').forEach((el) => {
-      const v = el.getAttribute("data-rss") || el.getAttribute("data-rss-url");
-      if (v) rssCandidates.add(v);
-    });
-
-    out.rss_candidates = [...rssCandidates];
-
-    // 3. Author/host hint — Listennotes often shows "by <name>" in a span.
-    out.author_hint = document.querySelector('a[href*="/podcaster/"]')?.textContent?.trim()
-      || document.querySelector('[itemprop="author"]')?.textContent?.trim()
+    out.author_hint = author
+      || document.querySelector('a[href*="/podcaster/"]')?.textContent?.trim()
       || null;
 
     return out;
   });
 }
 
-// Run a CDP listener that scans every JSON response for email-shaped strings.
-// Pure defense-in-depth — if Listennotes ever ships an email field directly,
-// we'll catch it without changes. Returns a deactivator function.
-async function attachEmailSniffer(page, sink) {
-  let cdp;
-  try {
-    cdp = await page.context().newCDPSession(page);
-  } catch (e) {
-    // CDP attach failure is non-fatal — RSS extraction still runs.
-    return () => {};
+async function processPodcastDetail(page, url) {
+  await page.goto(url, { waitUntil: "domcontentloaded" });
+  await jitteredSleep(900, 1500);
+
+  const meta = await extractDetailMeta(page);
+
+  // Listennotes' channel email is the gold path. RSS feed is a secondary
+  // enrichment pass — gives us host name + latest episode, but isn't required.
+  let rssData = {};
+  if (meta.channel_rss) {
+    rssData = await extractFromRss(meta.channel_rss);
   }
-  await cdp.send("Network.enable");
 
-  const seenRequests = new Map(); // requestId -> mimeType
-  cdp.on("Network.responseReceived", (evt) => {
-    const mime = evt.response?.mimeType || "";
-    if (mime.includes("json") || mime.includes("javascript")) {
-      seenRequests.set(evt.requestId, mime);
-    }
-  });
-  cdp.on("Loading.finished", async (evt) => {
-    if (!seenRequests.has(evt.requestId)) return;
-    try {
-      const body = await cdp.send("Network.getResponseBody", { requestId: evt.requestId });
-      const txt = body.base64Encoded ? Buffer.from(body.body, "base64").toString("utf8") : (body.body || "");
-      const matches = txt.match(/[\w.+-]+@[\w-]+\.[\w.-]+/g);
-      if (matches) {
-        for (const m of matches) sink.add(m.toLowerCase());
-      }
-    } catch { /* swallow */ }
-  });
+  const email = (meta.channel_email && isValidEmail(meta.channel_email)) ? meta.channel_email
+              : (rssData.email && isValidEmail(rssData.email)) ? rssData.email
+              : null;
 
-  return async () => {
-    try { await cdp.detach(); } catch { /* ignore */ }
+  const podcastName = meta.channel_title
+    || rssData.podcast_name
+    || meta.title?.replace(/ \| Listen Notes$/, "")
+    || null;
+
+  return {
+    url,
+    email,
+    podcast_name: podcastName,
+    host_name: rssData.host_name || meta.author_hint || null,
+    recent_episode: rssData.latest_episode || null,
+    website: rssData.website || meta.canonical || null,
+    rss_url: meta.channel_rss || null,
+    description: rssData.description || meta.description || null,
+    listennotes_uuid: meta.channel_uuid || null,
   };
-}
-
-async function processPodcastDetail(page, url, { capsCfg }) {
-  const sniffSink = new Set();
-  const detach = await attachEmailSniffer(page, sniffSink);
-  try {
-    await page.goto(url, { waitUntil: "domcontentloaded" });
-    // Let lazy hydration / async fetches settle briefly.
-    await jitteredSleep(900, 1500);
-
-    const meta = await extractDetailMeta(page);
-    let rssData = {};
-    if (meta.rss_candidates && meta.rss_candidates.length) {
-      // Try each candidate until one yields a parseable feed.
-      for (const candidate of meta.rss_candidates) {
-        rssData = await extractFromRss(candidate);
-        if (rssData && rssData.email && isValidEmail(rssData.email)) {
-          rssData._source = candidate;
-          break;
-        }
-      }
-    }
-
-    // Pick best email: RSS owner email > sniffed (if a single, podcast-domain match)
-    const sniffEmails = [...sniffSink].filter(isValidEmail);
-    const podcastDomainHints = [meta.canonical, rssData?.website].filter(Boolean).map((u) => {
-      try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return null; }
-    }).filter(Boolean);
-    const sniffOnDomain = sniffEmails.find((e) => {
-      const d = e.split("@")[1];
-      return podcastDomainHints.some((h) => d === h || d.endsWith("." + h));
-    });
-
-    const email = (rssData.email && isValidEmail(rssData.email)) ? rssData.email
-                : sniffOnDomain || null;
-
-    return {
-      url,
-      email,
-      podcast_name: rssData.podcast_name || meta.title?.replace(/ \| Listen Notes$/, "") || null,
-      host_name: rssData.host_name || meta.author_hint || null,
-      recent_episode: rssData.latest_episode || null,
-      website: rssData.website || meta.canonical || null,
-      rss_url: rssData._source || (meta.rss_candidates?.[0] ?? null),
-      description: rssData.description || meta.description || null,
-      _sniff_count: sniffEmails.length,
-    };
-  } finally {
-    await detach();
-  }
 }
 
 // Public entry. Given an array of seeds, returns a flat array of candidates.
@@ -236,7 +162,7 @@ export async function discoverFromSeeds({ ctx, seeds, concurrency = 4, perSeedMa
           const p = await ctx.newPage();
           p.setDefaultTimeout(25_000);
           try {
-            return await processPodcastDetail(p, link, { capsCfg });
+            return await processPodcastDetail(p, link);
           } finally {
             try { await p.close(); } catch { /* ignore */ }
           }

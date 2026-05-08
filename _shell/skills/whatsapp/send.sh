@@ -32,13 +32,14 @@ need_value() {
   [[ $2 -ge 2 ]] || die "$1 requires a value"
 }
 
-TO=""; GROUP=""; TEXT=""; FILE=""
+TO=""; GROUP=""; TEXT=""; FILE=""; DRY_RUN=0
 while [[ $# -gt 0 ]]; do
   case "$1" in
-    --to)     need_value "$1" "$#"; TO="$2";     shift 2 ;;
-    --group)  need_value "$1" "$#"; GROUP="$2";  shift 2 ;;
-    --text)   need_value "$1" "$#"; TEXT="$2";   shift 2 ;;
-    --file)   need_value "$1" "$#"; FILE="$2";   shift 2 ;;
+    --to)      need_value "$1" "$#"; TO="$2";    shift 2 ;;
+    --group)   need_value "$1" "$#"; GROUP="$2"; shift 2 ;;
+    --text)    need_value "$1" "$#"; TEXT="$2";  shift 2 ;;
+    --file)    need_value "$1" "$#"; FILE="$2";  shift 2 ;;
+    --dry-run) DRY_RUN=1; shift ;;
     -h|--help) sed -n '2,21p' "$0"; exit 0 ;;
     *) die "unknown flag: $1" ;;
   esac
@@ -195,6 +196,21 @@ if sys.argv[2]: d["message"] = sys.argv[2]
 if sys.argv[3]: d["media_path"] = sys.argv[3]
 print(json.dumps(d))
 ' "$RECIPIENT" "$TEXT" "$FILE")
+
+# Dry-run: surface resolved recipient + payload, do NOT POST. Used for testing
+# recipient resolution / file denylist without risking an actual send.
+if [[ "$DRY_RUN" == "1" ]]; then
+  python3 -c '
+import json, sys
+print(json.dumps({
+    "handoff": "dry-run",
+    "path": sys.argv[1],
+    "recipient": sys.argv[2],
+    "would_post": json.loads(sys.argv[3]),
+}, indent=2))
+' "$PATH_TAG" "$RECIPIENT" "$PAYLOAD"
+  exit 0
+fi
 
 RESP=$(curl -sS -m 30 -X POST -H 'Content-Type: application/json' -d "$PAYLOAD" "$BRIDGE_BASE/send" 2>&1) || {
   echo "send.sh: bridge POST failed: $RESP" >&2

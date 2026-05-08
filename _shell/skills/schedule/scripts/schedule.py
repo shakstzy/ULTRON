@@ -114,14 +114,16 @@ def render_plist_dict(job: dict) -> dict:
     )
     intervals = cron_to_intervals(job["cron"])
 
+    env: dict[str, str] = {
+        "PATH": "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "ULTRON_ROOT": str(ULTRON_ROOT),
+        "HOME": str(Path.home()),
+    }
+    env.update(_load_cron_env())
     plist: dict = {
         "Label": label,
         "ProgramArguments": ["/bin/bash", "-c", cmd],
-        "EnvironmentVariables": {
-            "PATH": "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
-            "ULTRON_ROOT": str(ULTRON_ROOT),
-            "HOME": str(Path.home()),
-        },
+        "EnvironmentVariables": env,
         "StandardOutPath": f"{ULTRON_ROOT}/_logs/{label}.out.log",
         "StandardErrorPath": f"{ULTRON_ROOT}/_logs/{label}.err.log",
         "WorkingDirectory": str(ULTRON_ROOT),

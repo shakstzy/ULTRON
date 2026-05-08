@@ -11,6 +11,7 @@ Project-local skills for ULTRON. Each skill lives at `_shell/skills/<name>/SKILL
 | **contacts-sync** | Sync Apple Contacts → `_global/entities/people/` canonical stubs | "sync contacts", "update people", "import my contacts" | yes |
 | **reddit** | Read Reddit (search, listings, post + comments, users, subreddit info) via stdlib Python CLI hitting `*.json` endpoints | "what's on r/X", "search reddit for X", "summarize this reddit thread", "is r/X active", any `reddit.com/comments/...` URL | yes |
 | **telegram** | Read and send messages on Adithya's Telegram (DMs, groups, channels) via Telethon (MTProto user API). | "send <name> a telegram", "telegram <name>: <text>", "read my telegram dm with <name>", "list my telegram chats", "telegram whoami" | yes |
+| **phone** | Place outbound phone calls from the Mac via iPhone Continuity calling. AppleScript + tel: URL → FaceTime → cellular dial from Adithya's actual cell number. Default `--dry-run`, `--send` to dial. Phase 2 (real-time cloned-voice cold-call agent) pending ElevenLabs voice clone + Deepgram key. | "call <name>", "dial <number>", "ring <name>", "phone <name>", "cold-call X" | yes |
 
 ## External skills (sourced from outside ULTRON)
 

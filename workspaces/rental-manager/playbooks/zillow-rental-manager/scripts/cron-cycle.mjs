@@ -2,7 +2,9 @@
 //
 // Sequence (each step short-circuits cleanly on its own; downstream steps
 // continue):
-//   1. pull-inbox --all --force-fetch  (ingest fresh status + replies)
+//   1. gmail-ingest                    (Gmail-first lead + reply discovery —
+//                                       replaces PerimeterX-blocked portal
+//                                       scraper, see 2026-05-07 pivot)
 //   2. auto-book --live                (book leads who picked a tour time)
 //   3. contextual-send --live          (status-routed reply to anyone who
 //                                       spoke since our last outbound)
@@ -61,10 +63,11 @@ function main() {
 
   const steps = [];
 
-  // 1. INGEST
+  // 1. INGEST — Gmail-first. The legacy portal scraper (run.mjs pull-inbox)
+  // is no longer in this pipeline; PerimeterX 403'd it consistently.
   steps.push({
-    name: 'pull-inbox',
-    ...runStep('pull-inbox', ['run.mjs', 'pull-inbox', '--all', '--force-fetch'], { timeoutMs: 25 * 60_000 })
+    name: 'gmail-ingest',
+    ...runStep('gmail-ingest', ['gmail-ingest.mjs', '--days', '90'], { timeoutMs: 15 * 60_000 })
   });
 
   // 2. AUTO-BOOK (always live unless ZRM_DRY_RUN=1)
@@ -99,7 +102,7 @@ function main() {
 
   // Exit non-zero if ingest itself failed (downstream may still have done
   // useful work; we surface the most-critical failure for launchd).
-  if (failed.find(s => s.name === 'pull-inbox')) process.exit(2);
+  if (failed.find(s => s.name === 'gmail-ingest')) process.exit(2);
   if (failed.length) process.exit(1);
 }
 

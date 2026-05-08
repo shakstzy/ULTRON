@@ -91,14 +91,25 @@ function parseArgs(argv) {
 
 function ensureDir(p) { if (!existsSync(p)) mkdirSync(p, { recursive: true }); }
 
-// Map raw status_label to bucket. Null status treated as INQUIRED (initial
-// inquiry, no movement yet).
+// Map thread state to bucket. Multi-signal: status_label is the strongest
+// hint when present, but we also infer POST_TOUR from tour_event_id +
+// tour_slot_iso since Gmail-first ingest no longer surfaces Zillow's TOURED
+// status (was portal-only).
+//
+// Null status treated as INQUIRED (initial inquiry, no movement yet).
 export function chooseBucket(thread) {
   const sl = (thread.status_label || '').toUpperCase();
-  if (!sl || sl === 'INQUIRED') return 'INQUIRED';
+  if (sl.startsWith('APPLICATION')) return 'APPLIED'; // RECEIVED, WITHDRAWN, etc.
+  // POST_TOUR signal: we booked a tour, the slot has passed, no app yet.
+  if (thread.tour_event_id && thread.tour_slot_iso) {
+    const slotMs = Date.parse(thread.tour_slot_iso);
+    if (slotMs && slotMs < Date.now() - 30 * 60 * 1000) {
+      // Tour was at least 30 min ago — they should have toured by now.
+      return 'POST_TOUR';
+    }
+  }
   if (sl === 'TOUR REQUESTED' || sl === 'TOUR_REQUESTED') return 'TOUR_REQUESTED';
   if (sl === 'TOURED') return 'POST_TOUR';
-  if (sl.startsWith('APPLICATION')) return 'APPLIED'; // RECEIVED, WITHDRAWN, etc.
   return 'INQUIRED';
 }
 

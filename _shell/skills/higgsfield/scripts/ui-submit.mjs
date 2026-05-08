@@ -155,7 +155,14 @@ async function selectVisiblePromptAnchor(page, selector) {
     });
     return { handle: handles[0], anchor: a };
   }
-  // Rank by viewport-intersection area (how much of the element is visible).
+  // Multi-prompt page (cinema-studio renders Image AND Video panel prompts
+  // simultaneously). Both can have visRatio=1.0 -- a tie that fell back to
+  // DOM order, which historically picked the wrong panel for image mode.
+  // Two-stage rank:
+  //   1. Strongly prefer prompts INSIDE an active tabpanel (data-state="active",
+  //      not [hidden], not [aria-hidden=true]). This matches the same active-
+  //      panel logic used to pick the Generate button.
+  //   2. Tiebreak by viewport visRatio.
   const ranked = await Promise.all(handles.map(async (h, i) => {
     const score = await h.evaluate(el => {
       const r = el.getBoundingClientRect();
@@ -164,12 +171,30 @@ async function selectVisiblePromptAnchor(page, selector) {
       const iy = Math.max(0, Math.min(r.bottom, vh) - Math.max(r.top, 0));
       const visArea = ix * iy;
       const totalArea = Math.max(1, r.width * r.height);
-      return { visRatio: visArea / totalArea, cx: r.x + r.width / 2, cy: r.y + r.height / 2 };
+      // Walk up looking for a tabpanel ancestor + its active state.
+      let inActivePanel = false;
+      let p = el.parentElement;
+      while (p) {
+        if (p.getAttribute && p.getAttribute('role') === 'tabpanel') {
+          const hidden = p.hasAttribute('hidden') || p.getAttribute('aria-hidden') === 'true';
+          const stateActive = p.getAttribute('data-state') === 'active';
+          inActivePanel = stateActive || !hidden;
+          break;
+        }
+        p = p.parentElement;
+      }
+      return { visRatio: visArea / totalArea, cx: r.x + r.width / 2, cy: r.y + r.height / 2, inActivePanel };
     });
     return { i, handle: h, ...score };
   }));
-  ranked.sort((a, b) => b.visRatio - a.visRatio);
+  ranked.sort((a, b) => {
+    if (a.inActivePanel !== b.inActivePanel) return a.inActivePanel ? -1 : 1;
+    return b.visRatio - a.visRatio;
+  });
   const best = ranked[0];
+  if (process.env.HF_DEBUG === '1') {
+    console.error(`[ui-submit] prompt-anchor: ${ranked.length} candidate(s), chose i=${best.i} inActivePanel=${best.inActivePanel} cy=${Math.round(best.cy)}`);
+  }
   return { handle: best.handle, anchor: { cx: best.cx, cy: best.cy } };
 }
 

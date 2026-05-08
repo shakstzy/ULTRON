@@ -222,7 +222,7 @@ function htmlToText(html) {
   s = s.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, ' ');
   s = s.replace(/<[^>]+>/g, ' ');
   s = s.replace(/&nbsp;/gi, ' ').replace(/&amp;/gi, '&').replace(/&lt;/gi, '<').replace(/&gt;/gi, '>');
-  s = s.replace(/&quot;/gi, '"').replace(/&#39;/gi, "'");
+  s = s.replace(/&quot;/gi, '"').replace(/&#39;/gi, "'").replace(/&apos;/gi, "'");
   s = s.replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCharCode(parseInt(h, 16)));
   s = s.replace(/&#(\d+);/g, (_, d) => String.fromCharCode(parseInt(d, 10)));
   return s.replace(/\s+/g, ' ').trim();
@@ -388,6 +388,12 @@ function syncThread(threadId, relayToCid, applicationNamesLc, opts) {
   };
 
   if (opts.dry) {
+    if (process.env.ZRM_DEBUG_BODIES === '1') {
+      for (const mm of messages) {
+        const preview = mm.body.replace(/\s+/g, ' ').slice(0, 100);
+        console.error(`    ${mm.direction === 'inbound' ? 'IN ' : 'OUT'} ${mm.ts_iso?.slice(0,10) || '?'} ${preview}`);
+      }
+    }
     return { ok: true, dry: true, cid, relay, status: statusLabel, msgs: messages.length };
   }
 

@@ -39,16 +39,30 @@ BROKEN_CONSECUTIVE = 3
 GRACE_HOURS = 1.0
 
 
+LEDGER_TAIL_BYTES = 5 * 1024 * 1024  # only read last 5MB; anything older isn't relevant
+
+
 def load_ledger(cutoff: datetime.datetime) -> tuple[dict, datetime.datetime | None]:
-    """Returns (runs_by_label, oldest_ledger_start). The latter establishes the
-    'cron-runner has been live since X' boundary used for cold-start grace."""
+    """Returns (runs_by_label, oldest_ledger_start). Reads only the tail of the ledger
+    (LEDGER_TAIL_BYTES) so memory stays bounded as the file grows; oldest_ledger_start
+    is the earliest start in the read window. Cold-start grace requires it to be older
+    than expected_last_fire, so the bound only matters once the ledger is huge."""
     runs_by_label: dict[str, list[dict]] = {}
     oldest: datetime.datetime | None = None
-    if not pathlib.Path(LEDGER).exists():
+    p = pathlib.Path(LEDGER)
+    if not p.exists():
         return runs_by_label, None
-    with open(LEDGER) as f:
-        for line in f:
-            line = line.strip()
+    try:
+        size = p.stat().st_size
+    except OSError:
+        return runs_by_label, None
+    seek_to = max(0, size - LEDGER_TAIL_BYTES)
+    with open(p, "rb") as fb:
+        fb.seek(seek_to)
+        if seek_to > 0:
+            fb.readline()  # skip partial line
+        for raw in fb:
+            line = raw.decode("utf-8", errors="replace").strip()
             if not line:
                 continue
             try:
@@ -92,7 +106,26 @@ def parse_plist_jobs(loaded: set[str]) -> dict:
     return jobs
 
 
+def _safe_replace(dt: datetime.datetime, **kwargs) -> datetime.datetime | None:
+    try:
+        return dt.replace(**kwargs)
+    except ValueError:
+        return None
+
+
+def _last_day_of_month(year: int, month: int) -> int:
+    if month == 12:
+        nxt = datetime.date(year + 1, 1, 1)
+    else:
+        nxt = datetime.date(year, month + 1, 1)
+    return (nxt - datetime.timedelta(days=1)).day
+
+
 def prev_occurrence(slot: dict, now: datetime.datetime) -> datetime.datetime:
+    """Latest datetime <= now that matches this launchd slot.
+
+    Handles weekday=7 (Sun alias for 0), Feb 29 in non-leap years,
+    Day=31 in months with <31 days (clamps to last day of month)."""
     h = slot.get("Hour", 0)
     m = slot.get("Minute", 0)
     weekday = slot.get("Weekday")
@@ -111,25 +144,24 @@ def prev_occurrence(slot: dict, now: datetime.datetime) -> datetime.datetime:
         return candidate
 
     if month is not None and day is not None:
-        try:
-            candidate = now.replace(month=month, day=day, hour=h, minute=m, second=0, microsecond=0)
-        except ValueError:
-            return now - datetime.timedelta(days=365)
-        if candidate > now:
-            candidate = candidate.replace(year=now.year - 1)
-        return candidate
+        for year_offset in range(0, 4):
+            year = now.year - year_offset
+            cand = _safe_replace(now, year=year, month=month, day=day,
+                                 hour=h, minute=m, second=0, microsecond=0)
+            if cand is not None and cand <= now:
+                return cand
+        return now - datetime.timedelta(days=365)
 
     if day is not None:
-        try:
-            candidate = now.replace(day=day, hour=h, minute=m, second=0, microsecond=0)
-        except ValueError:
-            return now - datetime.timedelta(days=30)
-        if candidate > now:
-            if now.month == 1:
-                candidate = candidate.replace(year=now.year - 1, month=12)
-            else:
-                candidate = candidate.replace(month=now.month - 1)
-        return candidate
+        for month_offset in range(0, 13):
+            year = now.year + (now.month - 1 - month_offset) // 12
+            mo = ((now.month - 1 - month_offset) % 12) + 1
+            actual_day = min(day, _last_day_of_month(year, mo))
+            cand = _safe_replace(now, year=year, month=mo, day=actual_day,
+                                 hour=h, minute=m, second=0, microsecond=0)
+            if cand is not None and cand <= now:
+                return cand
+        return now - datetime.timedelta(days=30)
 
     candidate = now.replace(hour=h, minute=m, second=0, microsecond=0)
     if candidate > now:

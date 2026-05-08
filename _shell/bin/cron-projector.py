@@ -6,9 +6,17 @@ StartCalendarInterval blocks, and ensures one gray recurring event per (label, s
 exists on the calendar. Stable id = SHA1(label + slot-json)[:12], stored in the event's
 private extended properties for idempotent diffing.
 
+Idempotency uses a local state file (`_logs/cron-projector-state.json`) mapping
+stable_id → master_event_id. This avoids depending on a calendar list-with-date-window
+(which would miss yearly/quarterly recurrences). On `--reconcile`, the projector also
+queries the calendar with a wide window to detect drift between state and reality.
+
 Run hourly to keep the calendar in sync with the plists.
 """
 
+from __future__ import annotations
+
+import argparse
 import datetime
 import glob
 import hashlib
@@ -20,18 +28,40 @@ import sys
 
 CONFIG_PATH = "/Users/shakstzy/ULTRON/_shell/config/cron-calendar.json"
 PLIST_DIR = "/Users/shakstzy/ULTRON/_shell/plists"
+STATE_PATH = pathlib.Path("/Users/shakstzy/ULTRON/_logs/cron-projector-state.json")
 GOG = "/Users/shakstzy/.local/bin/gog"
 
 WEEKDAY_TO_BYDAY = ["SU", "MO", "TU", "WE", "TH", "FR", "SA"]
+WEEKDAY_NAMES = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 
 
-def stable_id(label, slot):
+def stable_id(label: str, slot: dict) -> str:
     payload = label + "|" + json.dumps(slot, sort_keys=True)
     return hashlib.sha1(payload.encode()).hexdigest()[:12]
 
 
-def next_occurrence(slot, now):
-    """Compute the next datetime in the future matching this launchd slot."""
+def _safe_replace(now: datetime.datetime, **kwargs) -> datetime.datetime | None:
+    """Return now.replace(**kwargs), or None if the result is an invalid date
+    (e.g. Feb 29 in a non-leap year, Day=31 in April)."""
+    try:
+        return now.replace(**kwargs)
+    except ValueError:
+        return None
+
+
+def _last_day_of_month(year: int, month: int) -> int:
+    if month == 12:
+        nxt = datetime.date(year + 1, 1, 1)
+    else:
+        nxt = datetime.date(year, month + 1, 1)
+    return (nxt - datetime.timedelta(days=1)).day
+
+
+def next_occurrence(slot: dict, now: datetime.datetime) -> datetime.datetime:
+    """Compute the next datetime in the future matching this launchd slot.
+
+    Handles edge cases: weekday=7 (Sun alias for 0), Feb 29 in non-leap years,
+    Day=31 in months with <31 days (clamps to last day of month)."""
     h = slot.get("Hour", 0)
     m = slot.get("Minute", 0)
     weekday = slot.get("Weekday")
@@ -39,28 +69,36 @@ def next_occurrence(slot, now):
     month = slot.get("Month")
 
     if weekday is not None:
+        # launchd Weekday: 0 or 7 = Sun. Convert to ISO (0=Mon..6=Sun).
         target_iso = (weekday - 1) % 7
         cur_iso = now.weekday()
         days_ahead = (target_iso - cur_iso) % 7
-        candidate = (now + datetime.timedelta(days=days_ahead)).replace(hour=h, minute=m, second=0, microsecond=0)
+        candidate = (now + datetime.timedelta(days=days_ahead)).replace(
+            hour=h, minute=m, second=0, microsecond=0
+        )
         if candidate <= now:
             candidate += datetime.timedelta(days=7)
         return candidate
 
     if month is not None and day is not None:
-        candidate = now.replace(month=month, day=day, hour=h, minute=m, second=0, microsecond=0)
-        if candidate <= now:
-            candidate = candidate.replace(year=now.year + 1)
-        return candidate
+        for year_offset in range(0, 4):
+            year = now.year + year_offset
+            cand = _safe_replace(now, year=year, month=month, day=day,
+                                 hour=h, minute=m, second=0, microsecond=0)
+            if cand is not None and cand > now:
+                return cand
+        return now + datetime.timedelta(days=365)
 
     if day is not None:
-        candidate = now.replace(day=day, hour=h, minute=m, second=0, microsecond=0)
-        if candidate <= now:
-            if now.month == 12:
-                candidate = candidate.replace(year=now.year + 1, month=1)
-            else:
-                candidate = candidate.replace(month=now.month + 1)
-        return candidate
+        for month_offset in range(0, 13):
+            year = now.year + (now.month - 1 + month_offset) // 12
+            mo = ((now.month - 1 + month_offset) % 12) + 1
+            actual_day = min(day, _last_day_of_month(year, mo))
+            cand = _safe_replace(now, year=year, month=mo, day=actual_day,
+                                 hour=h, minute=m, second=0, microsecond=0)
+            if cand is not None and cand > now:
+                return cand
+        return now + datetime.timedelta(days=30)
 
     candidate = now.replace(hour=h, minute=m, second=0, microsecond=0)
     if candidate <= now:
@@ -68,9 +106,9 @@ def next_occurrence(slot, now):
     return candidate
 
 
-def slot_to_rrule(slot):
+def slot_to_rrule(slot: dict) -> str:
     if "Weekday" in slot:
-        byday = WEEKDAY_TO_BYDAY[slot["Weekday"]]
+        byday = WEEKDAY_TO_BYDAY[slot["Weekday"] % 7]
         return f"RRULE:FREQ=WEEKLY;BYDAY={byday}"
     if "Month" in slot and "Day" in slot:
         return "RRULE:FREQ=YEARLY"
@@ -79,12 +117,12 @@ def slot_to_rrule(slot):
     return "RRULE:FREQ=DAILY"
 
 
-def slot_to_summary(label, slot):
+def slot_to_summary(label: str, slot: dict) -> str:
     short = label.replace("com.adithya.ultron.", "")
     h = slot.get("Hour", 0)
     m = slot.get("Minute", 0)
     if "Weekday" in slot:
-        wd = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][slot["Weekday"]]
+        wd = WEEKDAY_NAMES[slot["Weekday"] % 7]
         when = f"{wd} {h:02d}:{m:02d}"
     elif "Month" in slot and "Day" in slot:
         when = f"M{slot['Month']:02d}-D{slot['Day']:02d} {h:02d}:{m:02d}"
@@ -95,7 +133,7 @@ def slot_to_summary(label, slot):
     return f"⏱ {short} @ {when}"
 
 
-def collect_desired(now):
+def collect_desired(now: datetime.datetime) -> dict:
     desired = {}
     for path in sorted(glob.glob(f"{PLIST_DIR}/com.adithya.ultron.*.plist")):
         with open(path, "rb") as f:
@@ -120,41 +158,72 @@ def collect_desired(now):
     return desired
 
 
-def list_existing_schedule_events(cfg):
-    """Return {stable_id: (event_id, htmlLink)} for events tagged ultron_kind=schedule."""
+def load_state() -> dict:
+    if not STATE_PATH.exists():
+        return {}
+    try:
+        return json.loads(STATE_PATH.read_text())
+    except Exception:
+        return {}
+
+
+def save_state(state: dict) -> None:
+    STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    tmp = STATE_PATH.with_suffix(".json.tmp")
+    tmp.write_text(json.dumps(state, indent=2, sort_keys=True))
+    tmp.replace(STATE_PATH)
+
+
+def reconcile_with_calendar(cfg: dict, state: dict, days_back: int = 7, days_forward: int = 7) -> dict:
+    """Cross-check state against actual calendar. Drops state entries whose master
+    event no longer exists on the calendar (within the wider window we can see).
+    Returns the corrected state."""
     now = datetime.datetime.now().astimezone()
-    window_start = (now - datetime.timedelta(days=7)).strftime("%Y-%m-%d")
-    window_end = (now + datetime.timedelta(days=7)).strftime("%Y-%m-%d")
     args = [
         GOG, "-a", cfg["account"], "cal", "events", cfg["calendar_id"],
         "--private-prop-filter", "ultron_kind=schedule",
-        "--from", window_start,
-        "--to", window_end,
+        "--from", (now - datetime.timedelta(days=days_back)).strftime("%Y-%m-%d"),
+        "--to", (now + datetime.timedelta(days=days_forward)).strftime("%Y-%m-%d"),
         "--max", "2500",
         "--all-pages",
         "--json", "--results-only",
     ]
     res = subprocess.run(args, capture_output=True, text=True, timeout=180)
     if res.returncode != 0:
-        sys.stderr.write(f"[projector] list events failed: {res.stderr}\n")
-        return {}
+        sys.stderr.write(f"[projector] reconcile list failed: {res.stderr[:400]}\n")
+        return state
     try:
         events = json.loads(res.stdout)
     except json.JSONDecodeError:
-        sys.stderr.write(f"[projector] list events: bad JSON\n")
-        return {}
-    out: dict[str, set[str]] = {}
+        sys.stderr.write("[projector] reconcile list: bad JSON\n")
+        return state
+
+    seen_master_ids: set[str] = set()
+    for ev in events:
+        master_id = ev.get("recurringEventId") or ev["id"]
+        seen_master_ids.add(master_id)
+
+    # Only drop state entries whose stable_id appears in the window AT ALL
+    # (positive proof of absence). Outside-window entries are left alone.
+    window_stable_ids: set[str] = set()
     for ev in events:
         priv = (ev.get("extendedProperties") or {}).get("private") or {}
         sid = priv.get("ultron_stable_id")
-        if not sid:
-            continue
-        master_id = ev.get("recurringEventId") or ev["id"]
-        out.setdefault(sid, set()).add(master_id)
-    return out
+        if sid:
+            window_stable_ids.add(sid)
+
+    dropped = []
+    for sid, mid in list(state.items()):
+        if sid in window_stable_ids and mid not in seen_master_ids:
+            del state[sid]
+            dropped.append(sid)
+    if dropped:
+        sys.stderr.write(f"[projector] reconcile dropped {len(dropped)} stale state entries\n")
+    return state
 
 
-def create_event(cfg, sid, spec):
+def create_event(cfg: dict, sid: str, spec: dict) -> str | None:
+    """Create a recurring schedule event. Returns the master event id, or None on failure."""
     dtstart = spec["dtstart"]
     dtend = dtstart + datetime.timedelta(minutes=1)
     args = [
@@ -175,11 +244,16 @@ def create_event(cfg, sid, spec):
     res = subprocess.run(args, capture_output=True, text=True, timeout=180)
     if res.returncode != 0:
         sys.stderr.write(f"[projector] create failed for {sid} ({spec['label']}): {res.stderr[:400]}\n")
-        return False
-    return True
+        return None
+    try:
+        payload = json.loads(res.stdout)
+        return payload.get("id") or (payload.get("event") or {}).get("id")
+    except json.JSONDecodeError:
+        sys.stderr.write(f"[projector] create returned bad JSON for {sid}\n")
+        return None
 
 
-def delete_event(cfg, event_id):
+def delete_event(cfg: dict, event_id: str) -> bool:
     args = [
         GOG, "-a", cfg["account"], "cal", "delete", cfg["calendar_id"], event_id,
         "--force", "--no-input",
@@ -192,34 +266,39 @@ def delete_event(cfg, event_id):
 
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--reconcile", action="store_true",
+                    help="Cross-check state file against calendar before diffing")
+    args = ap.parse_args()
+
     cfg = json.loads(pathlib.Path(CONFIG_PATH).read_text())
     now = datetime.datetime.now().astimezone()
 
     desired = collect_desired(now)
-    existing = list_existing_schedule_events(cfg)
+    state = load_state()
 
-    to_create = [(sid, spec) for sid, spec in desired.items() if sid not in existing]
-    to_delete: list[tuple[str, str]] = []
-    for sid, master_ids in existing.items():
-        if sid in desired and len(master_ids) == 1:
-            continue
-        keep = None if sid not in desired else next(iter(master_ids))
-        for mid in master_ids:
-            if mid != keep:
-                to_delete.append((sid, mid))
+    if args.reconcile:
+        state = reconcile_with_calendar(cfg, state)
 
-    print(f"[projector] desired={len(desired)} existing={len(existing)} create={len(to_create)} delete={len(to_delete)}")
+    to_create = [(sid, spec) for sid, spec in desired.items() if sid not in state]
+    to_delete = [(sid, mid) for sid, mid in state.items() if sid not in desired]
+
+    print(f"[projector] desired={len(desired)} state={len(state)} create={len(to_create)} delete={len(to_delete)}")
 
     created = 0
     for sid, spec in to_create:
-        if create_event(cfg, sid, spec):
+        eid = create_event(cfg, sid, spec)
+        if eid:
+            state[sid] = eid
             created += 1
     deleted = 0
-    for sid, evid in to_delete:
-        if delete_event(cfg, evid):
+    for sid, mid in to_delete:
+        if delete_event(cfg, mid):
+            state.pop(sid, None)
             deleted += 1
 
-    print(f"[projector] done: created={created} deleted={deleted}")
+    save_state(state)
+    print(f"[projector] done: created={created} deleted={deleted} state_size={len(state)}")
 
 
 if __name__ == "__main__":

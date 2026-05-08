@@ -41,3 +41,7 @@ Hello, I have availability this Saturday around 2:30-3:00 if that’s good for y
 ### 2026-05-07T22:44:35.000Z - kanaiisl7
 
 Hello, I do have another question…. Do you accept service animals?
+
+### 2026-05-08T18:49:46.860Z - Owner (Adithya)
+
+yeah service animals are completely fine. saturday at 2:30 works for me. just keep me posted if you end up wanting to swing by earlier.

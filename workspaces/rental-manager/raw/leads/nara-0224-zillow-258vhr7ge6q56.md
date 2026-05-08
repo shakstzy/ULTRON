@@ -75,3 +75,7 @@ hey Nara, garage is sorted. you still want to come tour? what day this week work
 ### 2026-05-07T22:04:20.000Z - Nara Lee
 
 Hi, thanks for the update on the garage. Yes, I can tour today, if that works. I'll text you at that number also. Thanks.
+
+### 2026-05-08T14:44:37.941Z - Owner (Adithya)
+
+Today works. What time were you thinking?

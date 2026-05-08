@@ -47,3 +47,7 @@ Yeah the Sylmar place is still open. Rooms run $1000 to $1250 plus $100 flat for
 ### 2026-05-07T21:11:49.000Z - Brewster Garland
 
 OK AND HOW ABOUT AFTRER MOTHERS DAY Sent from my iPhone
+
+### 2026-05-08T18:49:11.494Z - Owner (Adithya)
+
+After Mother's Day works. What days next week are you usually free to check it out?

@@ -37,3 +37,7 @@ hey morgan, still available. rooms run $1000 to $1250 plus $100 flat for all uti
 ### 2026-05-07T21:26:45.000Z - Luxurious Clips
 
 I’m interested, I’m free after 6pm but if that does not work I am available on Sunday or Monday. With regards, Morgan.
+
+### 2026-05-08T18:49:29.452Z - Owner (Adithya)
+
+tonight after 6 works. what time is good for you?

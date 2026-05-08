@@ -47,3 +47,7 @@ hey Shealy, happy to set up a tour. since you've got 2 occupants, the two 3rd-fl
 ### 2026-05-07T20:51:51.000Z - Shealy Cardona
 
 I can also move out alone would it still be 1000?
+
+### 2026-05-08T14:44:23.810Z - Owner (Adithya)
+
+Yeah it's 1000 for one of those rooms if it's just you. Utilities are a flat 100 on top of that. Let me know what day works for you to come take a look.

@@ -30,3 +30,7 @@ I am interested in this rental and would like to schedule a viewing. Please let 
 ### 2026-02-27T05:24:28.000Z - Alexaandria
 
 Hi I have found a place but thank you for reaching out 
+
+### 2026-05-08T22:22:21.365Z - Owner (Adithya)
+
+No worries. Hit me up if anything falls through.

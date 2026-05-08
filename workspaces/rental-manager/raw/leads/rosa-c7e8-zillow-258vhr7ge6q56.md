@@ -26,3 +26,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 ### 2026-02-09T04:36:31.000Z - Rosa Santos
 
 I'm interested in your property. I am a student looking for affordable housing and a home closer to work and school and would like to know what are your requirements and a possible tour thank you.
+
+### 2026-05-08T22:20:31.731Z - Owner (Adithya)
+
+Hey Rosa. The main requirements are a quick Zillow application and a couple references. Let's set up a tour so you can check it out. What days or times usually work best for you?

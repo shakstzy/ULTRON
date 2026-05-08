@@ -6,9 +6,9 @@ name: George Cheng
 reference_email: "7h7z7ycjqcx4i3rc4sd72ued7r@convo.zillow.com"
 listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
-conversation_id: gmail-19c876383e657b0a
+conversation_id: gmail-19c54c93a1a39bfd
 status_label: INQUIRED
-last_pulled_at: "2026-05-08T22:01:02.828Z"
+last_pulled_at: "2026-05-08T02:54:00.238Z"
 ---
 
 # George Cheng
@@ -17,7 +17,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 
 - Status: `INQUIRED`
 - Zillow forwarding email: `7h7z7ycjqcx4i3rc4sd72ued7r@convo.zillow.com`
-- Conversation ID: `gmail-19c876383e657b0a`
+- Conversation ID: `gmail-19c54c93a1a39bfd`
 - Listing alias: `258vhr7ge6q56`
 
 
@@ -30,3 +30,7 @@ Hi Adithya, looking forward to come see the place Saturday! Thank you
 ### 2026-02-13T21:12:44.000Z - George Cheng
 
 Hi Adithya, following up to confirm 12pm showing for tomorrow. Thank you
+
+### 2026-05-08T22:21:07.024Z - Owner (Adithya)
+
+12pm tomorrow works. When are you trying to move in?

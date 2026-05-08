@@ -1,32 +1,23 @@
 #!/usr/bin/env python3
 """
-ingest-book.py — book ingest for the library workspace.
+ingest-book.py — capture a book into the library workspace's raw/.
+
+Pure capture: search Anna's Archive (or take a direct URL / local file),
+download the EPUB (PDF fallback), extract markdown via pandoc, write ONE
+file at `raw/books/<author>/<slug>.md` with the universal envelope. The
+original EPUB stays alongside as `<slug>.epub` for re-extraction. NO
+cloud-llm. NO wiki writes.
 
 Three input modes:
-  - title + author: search Anna's Archive, validate top-N candidates, download best EPUB
-  - URL: Anna's Archive MD5 page URL, or a direct .epub / .pdf URL
-  - local: path to an EPUB or PDF already on disk
-
-Pipeline:
-  1. Resolve to a local raw file (download if needed)
-  2. Validate (title fuzzy match ≥ 0.85, author fuzzy match ≥ 0.7, language=en, has chapters)
-  3. Run pandoc EPUB → markdown (or pdftotext fallback for PDF)
-  4. Synthesize wiki entity page via cloud-llm
-  5. Write raw + wiki, log
-
-On validation ambiguity (multi-candidate, low fuzzy match), prints top candidates
-and exits with code 2 — caller decides whether to retry with --url to disambiguate.
-
-Usage:
-  ingest-book.py --title "Atomic Habits" --author "James Clear"
-  ingest-book.py --url "https://annas-archive.org/md5/abcdef123..."
-  ingest-book.py --epub-path /path/to/book.epub --title "Walden" --author "Henry David Thoreau"
+  ingest-book.py --title "Walden" --author "Henry David Thoreau"
+  ingest-book.py --url "https://annas-archive.org/md5/<32hex>"
+  ingest-book.py --url "https://www.gutenberg.org/ebooks/205.epub.images" --title Walden --author "Henry David Thoreau" --skip-validation
+  ingest-book.py --epub-path /path/to/book.epub --title X --author Y
 """
 from __future__ import annotations
 
 import argparse
 import difflib
-import json
 import re
 import shutil
 import subprocess
@@ -40,17 +31,16 @@ import lib_common as L
 ANNAS_BASE = "https://annas-archive.org"
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/605.1.15 ULTRON/1.0"
 HTTP_TIMEOUT = 30
+SOURCE = "book"
 
 
 # ---------------------------------------------------------------------------
 # HTTP
 # ---------------------------------------------------------------------------
 
-def fetch(url: str, max_bytes: int | None = None) -> bytes:
+def fetch(url: str) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT) as resp:
-        if max_bytes is not None:
-            return resp.read(max_bytes)
         return resp.read()
 
 
@@ -59,7 +49,6 @@ def fetch_text(url: str) -> str:
 
 
 def download_to(url: str, dest: Path, max_bytes: int = 200_000_000) -> None:
-    """Download URL to dest (creates parents). Caps at max_bytes (default 200MB)."""
     dest.parent.mkdir(parents=True, exist_ok=True)
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT) as resp, open(dest, "wb") as out:
@@ -75,30 +64,27 @@ def download_to(url: str, dest: Path, max_bytes: int = 200_000_000) -> None:
 
 
 def try_direct_download(url: str, hint_ext_in_url: str = "") -> Path | None:
-    """Try downloading url as a book file (epub/pdf). Sniff Content-Type.
-    Returns path on success, None if response wasn't a book."""
+    """Try downloading url as a book file (epub/pdf). Sniffs Content-Type and
+    magic bytes when the URL doesn't end in a known extension."""
     tmp_dir = Path("/tmp") / f"library-book-{L.today()}"
     tmp_dir.mkdir(parents=True, exist_ok=True)
-    # Probe headers first via a HEAD-style GET (urllib has no easy HEAD)
     try:
         req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
         with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT) as resp:
             ctype = (resp.headers.get("Content-Type") or "").lower()
-            # Determine target ext from content-type or URL hint
+            ext: str | None = None
             if "epub" in ctype or ".epub" in hint_ext_in_url:
                 ext = "epub"
             elif "pdf" in ctype or ".pdf" in hint_ext_in_url:
                 ext = "pdf"
-            else:
-                # Read first 4 bytes to sniff magic
+            if ext is None:
                 first = resp.read(4)
-                if first.startswith(b"PK"):  # zip / epub container
+                if first.startswith(b"PK"):
                     ext = "epub"
                 elif first.startswith(b"%PDF"):
                     ext = "pdf"
                 else:
                     return None
-                # We have magic bytes already + need to write rest
                 local = tmp_dir / f"download.{ext}"
                 with open(local, "wb") as out:
                     out.write(first)
@@ -115,7 +101,6 @@ def try_direct_download(url: str, hint_ext_in_url: str = "") -> Path | None:
                     return None
                 print(f"  downloaded {local.stat().st_size:,} bytes → {local}")
                 return local
-            # Standard path with known ext
             local = tmp_dir / f"download.{ext}"
             with open(local, "wb") as out:
                 written = 0
@@ -137,33 +122,24 @@ def try_direct_download(url: str, hint_ext_in_url: str = "") -> Path | None:
 
 
 # ---------------------------------------------------------------------------
-# Anna's Archive search + resolve
+# Anna's Archive
 # ---------------------------------------------------------------------------
 
 def search_annas(query: str, lang: str = "en", ext: str = "epub", limit: int = 5) -> list[dict]:
-    """Scrape search results. Returns list of {md5, title, author, year, format, lang, size}.
-
-    Anna's Archive HTML is unstable — this parser is intentionally forgiving.
-    """
     url = f"{ANNAS_BASE}/search?q={urllib.parse.quote(query)}&ext={ext}&lang={lang}&sort=&display="
     try:
         html = fetch_text(url)
     except Exception as e:
         sys.stderr.write(f"  annas search failed: {e}\n")
         return []
-
-    # Each search result is wrapped around an <a href="/md5/<32-hex>"> with metadata
-    # in nearby <div>s. We pull the md5, then grab the visible text inside the result.
     results = []
     for m in re.finditer(r'<a [^>]*href="/md5/([a-f0-9]{32})"[^>]*>(.*?)</a>', html, re.DOTALL):
         md5 = m.group(1)
         block = m.group(2)
-        # Strip tags, condense whitespace
         text = re.sub(r"<[^>]+>", " ", block)
         text = re.sub(r"\s+", " ", text).strip()
         if not text:
             continue
-        # Heuristic parse: text is usually "Lang [ext] Size, Title, Author, Year"
         results.append({"md5": md5, "raw_text": text, "url": f"{ANNAS_BASE}/md5/{md5}"})
         if len(results) >= limit:
             break
@@ -171,62 +147,49 @@ def search_annas(query: str, lang: str = "en", ext: str = "epub", limit: int = 5
 
 
 def resolve_md5_page(url: str) -> dict:
-    """Fetch an Anna's Archive /md5/<hash> page and extract metadata + best download URL."""
     html = fetch_text(url)
     out = {"url": url, "title": None, "author": None, "year": None,
            "format": None, "language": None, "size": None, "download_urls": []}
-
     m = re.search(r'<meta property="og:title" content="([^"]+)"', html)
     if m:
         out["title"] = m.group(1).strip()
-
-    # Anna's Archive shows a header with title, then "by AUTHOR" then metadata pills
     m = re.search(r'<div class="text-3xl font-bold">([^<]+)</div>', html)
     if m and not out["title"]:
         out["title"] = m.group(1).strip()
     m = re.search(r'<div class="italic">([^<]+)</div>', html)
     if m:
         out["author"] = m.group(1).strip().lstrip("by ").strip()
-
-    # Extension / language / size pill — usually like "English [en], epub, 1.2MB"
     m = re.search(r'>\s*([A-Za-z]+)\s*\[([a-z]{2,3})\][^<]*?,\s*(epub|pdf|mobi|azw3)[^<]*?,\s*([0-9.]+\s*[KMG]B)', html)
     if m:
         out["language"] = m.group(2)
         out["format"] = m.group(3)
         out["size"] = m.group(4)
-
-    m = re.search(r'(\d{4})', html[:html.find("download") if "download" in html else 5000] or "")
-    if m and out.get("title"):
-        # Avoid ISBNs masquerading as years; restrict to 1800-current
+    m = re.search(r'(\d{4})', html[:5000])
+    if m:
         y = int(m.group(1))
         if 1800 <= y <= 2100:
             out["year"] = y
-
-    # Download links — look for "Slow downloads" / "Fast downloads" / external mirror links
     for href in re.findall(r'href="(/slow_download/[^"]+|/fast_download/[^"]+|https?://[^"]+\.(?:epub|pdf|mobi|azw3))"', html):
         if href.startswith("/"):
             out["download_urls"].append(ANNAS_BASE + href)
         else:
             out["download_urls"].append(href)
-
-    # Deduplicate while preserving order
     seen = set()
     out["download_urls"] = [u for u in out["download_urls"] if not (u in seen or seen.add(u))]
     return out
 
 
 def attempt_download(candidate: dict, dest: Path) -> tuple[bool, str]:
-    """Try each download_urls in order. Returns (success, message)."""
     if not candidate.get("download_urls"):
         return False, "no download URLs found on the md5 page"
     last_err = ""
     for url in candidate["download_urls"][:5]:
         try:
             download_to(url, dest)
-            if dest.stat().st_size > 1024:  # > 1KB sanity
+            if dest.stat().st_size > 1024:
                 return True, f"downloaded from {url}"
             dest.unlink(missing_ok=True)
-            last_err = f"downloaded file too small ({dest.stat().st_size if dest.exists() else 0} bytes)"
+            last_err = f"downloaded file too small"
         except Exception as e:
             last_err = f"{type(e).__name__}: {e}"
             continue
@@ -238,30 +201,20 @@ def attempt_download(candidate: dict, dest: Path) -> tuple[bool, str]:
 # ---------------------------------------------------------------------------
 
 def epub_to_markdown(epub_path: Path, out_path: Path) -> None:
-    """pandoc EPUB → markdown."""
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    cmd = [
-        "pandoc",
-        "-f", "epub",
-        "-t", "markdown",
-        "--wrap=none",
-        "-o", str(out_path),
-        str(epub_path),
-    ]
+    cmd = ["pandoc", "-f", "epub", "-t", "markdown", "--wrap=none", "-o", str(out_path), str(epub_path)]
     proc = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
     if proc.returncode != 0:
         raise RuntimeError(f"pandoc failed: {proc.stderr}")
 
 
 def pdf_to_markdown(pdf_path: Path, out_path: Path) -> None:
-    """Best-effort PDF → markdown via pdftotext if available, else pandoc."""
     out_path.parent.mkdir(parents=True, exist_ok=True)
     if shutil.which("pdftotext"):
         cmd = ["pdftotext", "-layout", str(pdf_path), str(out_path)]
         proc = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
         if proc.returncode == 0:
             return
-    # Fallback: pandoc tries via mupdf or similar
     cmd = ["pandoc", "-f", "pdf", "-t", "markdown", "--wrap=none", "-o", str(out_path), str(pdf_path)]
     proc = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
     if proc.returncode != 0:
@@ -285,7 +238,6 @@ def validate_metadata(
     title_min: float = 0.85,
     author_min: float = 0.7,
 ) -> tuple[bool, list[str]]:
-    """Returns (passed, reasons_for_failure)."""
     failures = []
     if expected_title and candidate.get("title"):
         ratio = fuzzy_ratio(candidate["title"], expected_title)
@@ -300,18 +252,13 @@ def validate_metadata(
     return len(failures) == 0, failures
 
 
-def sanity_check_markdown(md_path: Path) -> tuple[bool, list[str]]:
-    """Sanity check the extracted markdown."""
+def sanity_check_markdown(md_text: str) -> tuple[bool, list[str]]:
     failures = []
-    if not md_path.exists():
-        return False, ["markdown file does not exist"]
-    text = md_path.read_text(encoding="utf-8", errors="replace")
-    if len(text) < 5000:
-        failures.append(f"length {len(text)} chars, too short for a book")
-    if len(text) > 5_000_000:
-        failures.append(f"length {len(text)} chars, suspiciously large")
-    # Must have at least 3 chapter-like headings
-    chapters = re.findall(r"^#+ .{0,80}$", text, re.MULTILINE)
+    if len(md_text) < 5000:
+        failures.append(f"length {len(md_text)} chars, too short for a book")
+    if len(md_text) > 5_000_000:
+        failures.append(f"length {len(md_text)} chars, suspiciously large")
+    chapters = re.findall(r"^#+ .{0,80}$", md_text, re.MULTILINE)
     if len(chapters) < 3:
         failures.append(f"only {len(chapters)} headings; expected ≥ 3 chapters")
     return len(failures) == 0, failures
@@ -329,12 +276,10 @@ def ingest_book(
     isbn: str | None = None,
     year: int | None = None,
     skip_validation: bool = False,
-    overwrite: bool = False,
 ) -> Path:
     if not (title or url or epub_path):
         raise ValueError("must provide --title (with --author) or --url or --epub-path")
 
-    # Step 1: resolve to a local raw file
     if epub_path:
         local = Path(epub_path).expanduser().resolve()
         if not local.exists():
@@ -343,19 +288,15 @@ def ingest_book(
     else:
         md5_url: str | None = None
         local: Path | None = None
-
         if url and "annas-archive.org/md5/" in url:
             md5_url = url
         elif url:
-            # Treat any other URL as a candidate direct download. Try once;
-            # sniff Content-Type / first bytes to confirm it's an epub or pdf.
             local = try_direct_download(url, hint_ext_in_url=url.lower())
             if local is None and title and author:
-                # Direct download didn't produce a usable book. Fall back to search.
                 print(f"  direct download did not yield epub/pdf; falling back to annas search")
             elif local is not None:
-                ext = local.suffix.lstrip(".")
-                meta = {"title": title, "author": author, "year": year, "language": "en", "format": ext}
+                meta = {"title": title, "author": author, "year": year, "language": "en",
+                        "format": local.suffix.lstrip(".")}
         if local is None and md5_url is None:
             if not (title and author):
                 raise ValueError("URL did not resolve and no title+author for fallback search")
@@ -366,7 +307,6 @@ def ingest_book(
                 sys.exit(2)
             md5_url = results[0]["url"]
             print(f"  picking top result: {md5_url}")
-
         if md5_url:
             print(f"  resolving md5 page: {md5_url}")
             meta = resolve_md5_page(md5_url)
@@ -388,98 +328,60 @@ def ingest_book(
                 sys.exit(2)
             print(f"  {msg}")
 
-    # Step 2: extract to markdown
     final_title = meta.get("title") or title or local.stem
     final_author = meta.get("author") or author or "Unknown"
     final_year = meta.get("year") or year
     slug = L.book_slug(final_title, final_author)
-    book_dir = L.RAW / "books" / L.author_slug(final_author) / slug
+    book_dir = L.RAW / "books" / L.author_slug(final_author)
     book_dir.mkdir(parents=True, exist_ok=True)
 
-    # Move/copy raw file in
-    raw_book_path = book_dir / f"book{local.suffix.lower()}"
-    if local.resolve() != raw_book_path.resolve():
-        shutil.copy2(local, raw_book_path)
-    md_path = book_dir / "book.md"
-    print(f"  extracting → {md_path}")
-    if raw_book_path.suffix.lower() == ".epub":
-        epub_to_markdown(raw_book_path, md_path)
-    elif raw_book_path.suffix.lower() == ".pdf":
-        pdf_to_markdown(raw_book_path, md_path)
+    raw_artifact_path = book_dir / f"{slug}{local.suffix.lower()}"
+    if local.resolve() != raw_artifact_path.resolve():
+        shutil.copy2(local, raw_artifact_path)
+
+    body_path = book_dir / f"{slug}.body.md"
+    if raw_artifact_path.suffix.lower() == ".epub":
+        epub_to_markdown(raw_artifact_path, body_path)
+    elif raw_artifact_path.suffix.lower() == ".pdf":
+        pdf_to_markdown(raw_artifact_path, body_path)
     else:
-        raise RuntimeError(f"unsupported book format: {raw_book_path.suffix}")
+        raise RuntimeError(f"unsupported book format: {raw_artifact_path.suffix}")
+    body = body_path.read_text(encoding="utf-8", errors="replace")
+    body_path.unlink(missing_ok=True)
 
     if not skip_validation:
-        ok, failures = sanity_check_markdown(md_path)
+        ok, failures = sanity_check_markdown(body)
         if not ok:
             print("  ! sanity check failed:", file=sys.stderr)
             for f in failures:
                 print(f"    - {f}", file=sys.stderr)
             sys.exit(2)
 
-    # Step 3: write raw metadata.md
-    raw_metadata = {
+    raw_path = book_dir / f"{slug}.md"
+    extra = {
         "slug": slug,
         "title": final_title,
         "author": final_author,
         "year": final_year,
         "isbn": isbn,
-        "format": raw_book_path.suffix.lstrip(".").lower(),
-        "source_url": url,
-        "annas_md5": meta.get("url", "").rsplit("/", 1)[-1] if meta.get("url") else None,
-        "ingested_at": L.today(),
-        "raw_md_path": str(md_path.relative_to(L.WORKSPACE)),
-        "raw_book_sha256": L.file_sha256(raw_book_path),
-    }
-    L.write_md(book_dir / "metadata.md", raw_metadata, "")
-
-    # Step 4: synthesize via cloud-llm
-    print("  synthesizing wiki page via cloud-llm…")
-    md_text = md_path.read_text(encoding="utf-8", errors="replace")
-    # Trim chapters: keep ToC + first chapter + spread sample for synthesis
-    sample = chapter_sample(md_text, max_chars=80_000)
-    syn = L.synthesize(
-        metadata={"title": final_title, "author": final_author, "year": final_year, "type": "book"},
-        content=sample,
-        max_content_chars=80_000,
-    )
-    print(f"  synthesis engine={syn.get('_engine')} bullets={len(syn['takeaways'])} bite={syn['bite_size_minutes']}min")
-
-    # Step 5: ensure person stub + write entity page
-    author_slug_val = L.ensure_person_stub(final_author, role="author", domain=None)
-    base_fm = {
-        "type": "book",
-        "title": final_title,
-        "authors": [author_slug_val],
-        "isbn": isbn,
-        "year": final_year,
         "language": "en",
+        "format": raw_artifact_path.suffix.lstrip(".").lower(),
         "source_url": url,
-        "tags": [],
-        "mentioned_concepts": [],
-        "mentioned_books": [],
+        "annas_md5": (meta.get("url") or "").rsplit("/", 1)[-1] if meta.get("url") else None,
+        "artifact_sha256": L.file_sha256(raw_artifact_path),
     }
-    page = L.write_entity_page("book", slug, base_fm, syn, overwrite=overwrite)
-    print(f"  wrote {page.relative_to(L.WORKSPACE)}")
+    provider_modified_at = f"{final_year:04d}-01-01T00:00:00Z" if isinstance(final_year, int) else None
+    L.write_raw(
+        raw_path,
+        source=SOURCE,
+        body=body,
+        provider_modified_at=provider_modified_at,
+        extra=extra,
+    )
+    print(f"  wrote raw/{raw_path.relative_to(L.RAW)}")
     L.log_event(f"ingest-book: {slug} ({final_title!r})")
-    L.log_ingest("book", slug, "ok", {"author": final_author, "format": raw_metadata["format"]})
-    return page
-
-
-def chapter_sample(md_text: str, max_chars: int = 80_000) -> str:
-    """Return ToC + first chapter + sample from later chapters, capped to max_chars."""
-    if len(md_text) <= max_chars:
-        return md_text
-    # Find chapter headings
-    chapter_starts = [m.start() for m in re.finditer(r"^#+ .{0,80}$", md_text, re.MULTILINE)]
-    if len(chapter_starts) < 3:
-        return md_text[:max_chars]
-    head = md_text[:chapter_starts[3]] if len(chapter_starts) > 3 else md_text[:chapter_starts[1]]
-    head = head[: max_chars * 2 // 3]
-    # Sample the second half
-    second_start = chapter_starts[len(chapter_starts) // 2]
-    tail = md_text[second_start: second_start + max_chars // 3]
-    return head + "\n\n[...skip...]\n\n" + tail
+    L.log_ingest("book", slug, "ok", {"author": final_author, "format": extra["format"]})
+    return raw_path
 
 
 def main() -> int:
@@ -490,23 +392,11 @@ def main() -> int:
     ap.add_argument("--epub-path")
     ap.add_argument("--isbn")
     ap.add_argument("--year", type=int)
-    ap.add_argument("--skip-validation", action="store_true",
-                    help="skip fuzzy match + sanity check (use carefully)")
-    ap.add_argument("--overwrite", action="store_true",
-                    help="overwrite an existing wiki page (curator state preserved)")
+    ap.add_argument("--skip-validation", action="store_true")
     args = ap.parse_args()
-
     try:
-        ingest_book(
-            title=args.title,
-            author=args.author,
-            url=args.url,
-            epub_path=args.epub_path,
-            isbn=args.isbn,
-            year=args.year,
-            skip_validation=args.skip_validation,
-            overwrite=args.overwrite,
-        )
+        ingest_book(args.title, args.author, args.url, args.epub_path,
+                    args.isbn, args.year, skip_validation=args.skip_validation)
     except SystemExit:
         raise
     except Exception as e:

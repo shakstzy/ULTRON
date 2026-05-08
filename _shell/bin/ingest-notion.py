@@ -413,8 +413,15 @@ def _render_block(blk: dict, ctx: RenderCtx, depth: int) -> tuple[str, str | Non
 
     if t in ("heading_1", "heading_2", "heading_3"):
         level = {"heading_1": 1, "heading_2": 2, "heading_3": 3}[t]
-        # Toggle heading? Notion exposes is_toggleable + has_children — keep flat in v1.
-        return f"{'#' * level} {text}".rstrip(), None
+        head = f"{'#' * level} {text}".rstrip()
+        # Toggleable heading: Notion lets H1/H2/H3 hide a foldable body. children_md
+        # was fetched above when has_children is true; render it as a <details> body
+        # so the content isn't lost.
+        if children_md and payload.get("is_toggleable"):
+            return f"<details><summary>{head}</summary>\n\n{children_md}\n\n</details>", None
+        if children_md:
+            return f"{head}\n\n{children_md}", None
+        return head, None
 
     if t == "bulleted_list_item":
         body = f"- {text}"
@@ -1110,14 +1117,29 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     return p.parse_args(argv)
 
 
-_NOTION_URL_RE = re.compile(
-    r"(?:https?://[^/]+\.notion\.(?:so|site)/[^?#\s]*?)?-?([0-9a-f]{32})\b",
+# Notion exposes IDs in two forms:
+#   compact: 32 hex chars (e.g. 20fa7b112c9d8046949ad17c0e977eb1)
+#   dashed:  8-4-4-4-12 UUID (e.g. 20fa7b11-2c9d-8046-949a-d17c0e977eb1)
+# Either form can appear in copy-shared URLs and inline references. Match both.
+_NOTION_URL_COMPACT_RE = re.compile(r"([0-9a-f]{32})\b", re.IGNORECASE)
+_NOTION_URL_DASHED_RE = re.compile(
+    r"\b([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})\b",
     re.IGNORECASE,
 )
 
 
 def _id_from_url_or_raw(s: str) -> str:
-    m = _NOTION_URL_RE.search(s)
+    # Strip any URL query/fragment first so trailing IDs in `?p=…` query params
+    # don't outrank the path's primary ID.
+    if "://" in s:
+        s_clean = s.split("?", 1)[0].split("#", 1)[0]
+    else:
+        s_clean = s
+    # Try dashed UUID first — it's longer so it's an unambiguous match if present.
+    m = _NOTION_URL_DASHED_RE.search(s_clean)
+    if m:
+        return m.group(1).replace("-", "").lower()
+    m = _NOTION_URL_COMPACT_RE.search(s_clean)
     if m:
         return m.group(1).lower()
     cand = s.strip().replace("-", "").lower()

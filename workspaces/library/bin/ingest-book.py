@@ -69,19 +69,26 @@ def download_to(url: str, dest: Path, max_bytes: int = 200_000_000) -> None:
             out.write(chunk)
 
 
-def try_direct_download(url: str, hint_ext_in_url: str = "") -> Path | None:
+def try_direct_download(url: str, path_suffix_hint: str = "") -> Path | None:
     """Try downloading url as a book file (epub/pdf). Sniffs Content-Type and
-    magic bytes when the URL doesn't end in a known extension."""
+    magic bytes when the URL path doesn't end in a known extension.
+    `path_suffix_hint` should be the URL PATH suffix only (e.g. ".epub"),
+    NOT the full URL — substring matches on the full URL get fooled by
+    `?title=book.epub.html` style query strings.
+
+    Re-raises IngestError on hard limits (size cap). Returns None only when
+    the response is not a recognized book file."""
     tmp_dir = Path("/tmp") / f"library-book-{L.today()}"
     tmp_dir.mkdir(parents=True, exist_ok=True)
+    suffix = (path_suffix_hint or "").lower()
     try:
         req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
         with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT) as resp:
             ctype = (resp.headers.get("Content-Type") or "").lower()
             ext: str | None = None
-            if "epub" in ctype or ".epub" in hint_ext_in_url:
+            if "epub" in ctype or suffix == ".epub":
                 ext = "epub"
-            elif "pdf" in ctype or ".pdf" in hint_ext_in_url:
+            elif "pdf" in ctype or suffix == ".pdf":
                 ext = "pdf"
             if ext is None:
                 first = resp.read(4)
@@ -101,7 +108,8 @@ def try_direct_download(url: str, hint_ext_in_url: str = "") -> Path | None:
                             break
                         written += len(chunk)
                         if written > 200_000_000:
-                            raise RuntimeError("download exceeded 200MB")
+                            local.unlink(missing_ok=True)
+                            raise IngestError("download exceeded 200MB")
                         out.write(chunk)
                 if local.stat().st_size < 1024:
                     return None
@@ -116,12 +124,15 @@ def try_direct_download(url: str, hint_ext_in_url: str = "") -> Path | None:
                         break
                     written += len(chunk)
                     if written > 200_000_000:
-                        raise RuntimeError("download exceeded 200MB")
+                        local.unlink(missing_ok=True)
+                        raise IngestError("download exceeded 200MB")
                     out.write(chunk)
             if local.stat().st_size < 1024:
                 return None
             print(f"  downloaded {local.stat().st_size:,} bytes ({ctype}) → {local}")
             return local
+    except IngestError:
+        raise
     except Exception as e:
         sys.stderr.write(f"  direct download failed: {type(e).__name__}: {e}\n")
         return None
@@ -202,22 +213,23 @@ def attempt_download(candidate: dict, dest: Path) -> tuple[bool, str]:
     return False, last_err
 
 
-def discover_books_by_author(
-    author: str,
-    limit: int = 20,
-    title_min: float = 0.0,
-    author_min: float = 0.7,
-    over_fetch: int = 3,
-) -> list[dict]:
+DISCOVER_MAX_CANDIDATES = 30
+DISCOVER_AUTHOR_MIN = 0.7
+
+
+def discover_books_by_author(author: str, limit: int = 20) -> list[dict]:
     """Search annas-archive for books by a single author.
 
-    Strategy: search by author name → walk the top results → resolve each md5
-    page → keep candidates whose parsed author fuzzy-matches the requested
-    author. Stops once `limit` matches accumulate.
+    Strategy: search by author name → walk the top results (capped at
+    DISCOVER_MAX_CANDIDATES regardless of `limit` so common names don't
+    burn 60+ md5-page resolves) → keep candidates whose parsed author
+    fuzzy-matches at ≥ DISCOVER_AUTHOR_MIN. Stops once `limit` matches
+    accumulate.
 
     Returns a list of resolved metadata dicts (one per matching book), each
     with at minimum `title`, `author`, `url`, `format`, `language` populated."""
-    raw_results = search_annas(author, limit=max(limit * over_fetch, limit + 5))
+    candidate_cap = min(max(limit + 10, limit * 2), DISCOVER_MAX_CANDIDATES)
+    raw_results = search_annas(author, limit=candidate_cap)
     matched: list[dict] = []
     seen_titles: set[str] = set()
     for r in raw_results:
@@ -232,7 +244,7 @@ def discover_books_by_author(
         meta_author = (meta.get("author") or "").strip()
         if not meta_title or not meta_author:
             continue
-        if fuzzy_ratio(meta_author, author) < author_min:
+        if fuzzy_ratio(meta_author, author) < DISCOVER_AUTHOR_MIN:
             continue
         if meta.get("language") and meta["language"] != "en":
             continue
@@ -258,39 +270,40 @@ def ingest_books_by_author(
     print(f"  discovered {len(matched)} candidate books matching author={author!r}")
     for i, m in enumerate(matched, 1):
         print(f"    {i}. {m.get('title')!r} — {m.get('author')} ({m.get('format') or '?'}, {m.get('language') or '?'})")
-    if dry_run:
-        return {"matched": len(matched), "ingested": 0, "skipped": len(matched),
-                "failed": 0, "items": matched}
 
+    items: list[dict] = []
     ingested = 0
     failed = 0
-    items: list[dict] = []
-    for m in matched:
-        title = m.get("title")
-        try:
-            ingest_book(
-                title=title,
-                author=author,
-                url=m.get("url"),
-                epub_path=None,
-                isbn=None,
-                year=m.get("year"),
-                skip_validation=skip_validation,
-            )
-            ingested += 1
-            items.append({"title": title, "status": "ok"})
-        except IngestError as e:
-            print(f"  ! skipping {title!r}: {e}", file=sys.stderr)
-            failed += 1
-            items.append({"title": title, "status": "skip", "reason": str(e)})
-        except Exception as e:
-            print(f"  ! FATAL on {title!r}: {type(e).__name__}: {e}", file=sys.stderr)
-            failed += 1
-            items.append({"title": title, "status": "error", "reason": f"{type(e).__name__}: {e}"})
-    summary = {"matched": len(matched), "ingested": ingested, "skipped": 0,
-               "failed": failed, "items": items}
-    print(f"  --author summary: {summary['ingested']} ingested, {summary['failed']} failed (of {summary['matched']} matches)")
-    L.log_event(f"ingest-book --author {author!r}: {summary['ingested']}/{summary['matched']} ingested, {summary['failed']} failed")
+    if not dry_run:
+        for m in matched:
+            title = m.get("title")
+            try:
+                ingest_book(
+                    title=title,
+                    author=author,
+                    url=m.get("url"),
+                    epub_path=None,
+                    isbn=None,
+                    year=m.get("year"),
+                    skip_validation=skip_validation,
+                )
+                ingested += 1
+                items.append({"title": title, "status": "ok"})
+            except IngestError as e:
+                print(f"  ! skipping {title!r}: {e}", file=sys.stderr)
+                failed += 1
+                items.append({"title": title, "status": "skip", "reason": str(e)})
+            except Exception as e:
+                print(f"  ! FATAL on {title!r}: {type(e).__name__}: {e}", file=sys.stderr)
+                failed += 1
+                items.append({"title": title, "status": "error", "reason": f"{type(e).__name__}: {e}"})
+    summary = {"matched": len(matched), "ingested": ingested, "failed": failed,
+               "dry_run": dry_run, "items": items}
+    if dry_run:
+        print(f"  --author dry-run: would ingest {summary['matched']} books")
+    else:
+        print(f"  --author summary: {summary['ingested']} ingested, {summary['failed']} failed (of {summary['matched']} matches)")
+        L.log_event(f"ingest-book --author {author!r}: {summary['ingested']}/{summary['matched']} ingested, {summary['failed']} failed")
     return summary
 
 
@@ -303,7 +316,7 @@ def epub_to_markdown(epub_path: Path, out_path: Path) -> None:
     cmd = ["pandoc", "-f", "epub", "-t", "markdown", "--wrap=none", "-o", str(out_path), str(epub_path)]
     proc = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
     if proc.returncode != 0:
-        raise RuntimeError(f"pandoc failed: {proc.stderr}")
+        raise IngestError(f"pandoc failed: {proc.stderr.strip()[:200]}")
 
 
 def pdf_to_markdown(pdf_path: Path, out_path: Path) -> None:
@@ -316,7 +329,7 @@ def pdf_to_markdown(pdf_path: Path, out_path: Path) -> None:
     cmd = ["pandoc", "-f", "pdf", "-t", "markdown", "--wrap=none", "-o", str(out_path), str(pdf_path)]
     proc = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
     if proc.returncode != 0:
-        raise RuntimeError(f"pdf-to-markdown failed: {proc.stderr}")
+        raise IngestError(f"pdf-to-markdown failed: {proc.stderr.strip()[:200]}")
 
 
 # ---------------------------------------------------------------------------
@@ -389,7 +402,8 @@ def ingest_book(
         if url and "annas-archive.org/md5/" in url:
             md5_url = url
         elif url:
-            local = try_direct_download(url, hint_ext_in_url=url.lower())
+            url_path_suffix = Path(urllib.parse.urlsplit(url).path).suffix.lower()
+            local = try_direct_download(url, path_suffix_hint=url_path_suffix)
             if local is None and title and author:
                 print(f"  direct download did not yield epub/pdf; falling back to annas search")
             elif local is not None:
@@ -437,7 +451,7 @@ def ingest_book(
     elif raw_artifact_path.suffix.lower() == ".pdf":
         pdf_to_markdown(raw_artifact_path, body_path)
     else:
-        raise RuntimeError(f"unsupported book format: {raw_artifact_path.suffix}")
+        raise IngestError(f"unsupported book format: {raw_artifact_path.suffix}")
     body = body_path.read_text(encoding="utf-8", errors="replace")
     body_path.unlink(missing_ok=True)
 
@@ -499,7 +513,11 @@ def main() -> int:
                 dry_run=args.dry_run,
                 skip_validation=args.skip_validation,
             )
-            return 0 if summary["matched"] > 0 else 2
+            if summary["matched"] == 0:
+                return 2
+            if summary["dry_run"]:
+                return 0
+            return 1 if summary["failed"] > 0 else 0
         ingest_book(args.title, args.author, args.url, args.epub_path,
                     args.isbn, args.year, skip_validation=args.skip_validation)
     except IngestError as e:

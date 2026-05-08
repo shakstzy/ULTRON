@@ -45,11 +45,21 @@ def fetch(url: str) -> bytes:
         return resp.read()
 
 
-def download_to(url: str, dest: Path) -> None:
+def download_to(url: str, dest: Path, max_bytes: int = 200_000_000) -> None:
     dest.parent.mkdir(parents=True, exist_ok=True)
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT) as resp, open(dest, "wb") as out:
-        shutil.copyfileobj(resp, out)
+        written = 0
+        while True:
+            chunk = resp.read(64 * 1024)
+            if not chunk:
+                break
+            written += len(chunk)
+            if written > max_bytes:
+                out.close()
+                dest.unlink(missing_ok=True)
+                raise IngestError(f"download exceeded {max_bytes} bytes; aborting")
+            out.write(chunk)
 
 
 def arxiv_metadata(arxiv_id: str) -> dict:
@@ -178,11 +188,13 @@ def ingest_paper(
     print(f"  extracting markdown from {raw_pdf_path.name}")
     pdf_to_markdown(raw_pdf_path, md_intermediate)
     if not md_intermediate.exists() or md_intermediate.stat().st_size < 1000:
-        raise RuntimeError(f"extracted markdown too short ({md_intermediate.stat().st_size if md_intermediate.exists() else 0} bytes)")
+        size = md_intermediate.stat().st_size if md_intermediate.exists() else 0
+        raise IngestError(f"extracted markdown too short ({size} bytes)")
     body = md_intermediate.read_text(encoding="utf-8", errors="replace")
     md_intermediate.unlink(missing_ok=True)
 
     raw_path = paper_dir / f"{slug}.md"
+    raw_path = L.collision_safe_path(raw_path, source_url=meta.get("pdf_url") or target)
     extra = {
         "slug": slug,
         "title": final_title,

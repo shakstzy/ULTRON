@@ -26,5 +26,7 @@ workspace_jobs:
     cron: "0 4 * * *"                # Daily 04:00
   graphify:
     cron: "0 */6 * * *"              # Every 6 hours
+  podcast-outreach:
+    cron: "0 10 * * *"               # Daily 10:00 — scan replies, top up queue, send to daily cap
 
 # audit, weekly-review, graphify-supermerge live in _shell/config/global-schedule.yaml.

@@ -13,12 +13,6 @@ import { assertDateMode } from "../runtime/mode-guard.mjs";
 import { setHalt } from "../runtime/halt.mjs";
 import { logSession } from "../runtime/logger.mjs";
 
-// Bumble surfaces "You missed!" / "Did you mean to swipe right?" after some
-// passes their algo flags. Operator priority: never miss a match. When the
-// modal shows, always rewind and like (skip filter re-eval entirely; trust
-// Bumble's algo). Text-based detection only — modal CSS not observed live yet.
-const MISSED_MATCH_RE = /(you missed|did you mean to swipe right|wait,?\s*go back|backtrack)/i;
-
 let _filter = null;
 async function loadFilter() {
   if (_filter) return _filter;
@@ -47,54 +41,6 @@ function passesFilter(profile, f) {
     if (!hasBio && !hasPrompts) return false;
   }
   return true;
-}
-
-// Try selectors in order; click first match. Returns true on click.
-async function tryClickFirst(cursor, page, selList) {
-  for (const sel of selList.filter(Boolean)) {
-    try {
-      const el = await page.$(sel);
-      if (el) { await humanClick(cursor, page, sel); return true; }
-    } catch { /* skip invalid selector */ }
-  }
-  return false;
-}
-
-// After a pass, check for Bumble's missed-match prompt. If present: rewind +
-// like. Halt scans bracket the rewind click so Turnstile/photo-verify popping
-// mid-recovery doesn't get blindly clicked. Sanity-check the restored card
-// matches the original profile before liking. Throws on halt (caller catches).
-async function recoverMissedMatch(page, cursor, profile) {
-  await sleep(jitter(450, 850));
-  let bodyText = "";
-  try { bodyText = await page.evaluate(() => (document.body?.innerText || "").slice(0, 8000)); } catch {}
-  if (!MISSED_MATCH_RE.test(bodyText)) return { recovered: false };
-
-  await scanForHalts(page);
-  await sleep(jitter(1400, 3000));
-  const sels = await selectors();
-  const rewindCandidates = [sels.rewind_button?.selector, ...(sels.rewind_button?.alt || [])];
-  if (!await tryClickFirst(cursor, page, rewindCandidates)) {
-    await page.keyboard.press("Escape").catch(() => {});
-    await logSession({ event: "missed_match_skipped", reason: "rewind_not_found", profile: profile.name || null });
-    return { recovered: false };
-  }
-
-  await sleep(jitter(700, 1400));
-  await scanForHalts(page);
-
-  const reRead = await readVisibleCard(page);
-  if (reRead.name && profile.name && reRead.name !== profile.name) {
-    await logSession({ event: "missed_match_recovery_aborted", reason: "different_card_after_backtrack", original: profile.name, after: reRead.name });
-    return { recovered: false };
-  }
-
-  if (!await tryClickFirst(cursor, page, [sels.like_button.selector, ...(sels.like_button.alt || [])])) {
-    await logSession({ event: "missed_match_recovery_failed", profile: reRead.name || profile.name });
-    return { recovered: false };
-  }
-  await logSession({ event: "missed_match_recovered", profile: reRead.name || profile.name });
-  return { recovered: true };
 }
 
 export async function swipeSession(page, { sessionMinutesMax = null } = {}) {
@@ -190,26 +136,6 @@ export async function swipeSession(page, { sessionMinutesMax = null } = {}) {
       // Halt fired - reservation is correct (we did click), so don't release.
       stopReason = e.message;
       break;
-    }
-
-    // Missed-match recovery. Only runs after a pass — Bumble only surfaces
-    // "you missed" when we passed on someone their algo flags. Operator
-    // priority is never miss a match: rewind + like, no filter re-eval.
-    // recoverMissedMatch throws on halt; catch and break the loop.
-    let finalDecision = wantLike ? "like" : "pass";
-    let recoveredFromMissedMatch = false;
-    if (!wantLike) {
-      try {
-        const r = await recoverMissedMatch(page, cursor, profile);
-        if (r.recovered) {
-          recoveredFromMissedMatch = true;
-          finalDecision = "like";
-          await scanForHalts(page);
-        }
-      } catch (e) {
-        stopReason = e.message;
-        break;
-      }
     }
 
     // CODEX-R3-P0-5 + R4-P0-6 + R6-P0-1: verify the next card. Previous shape

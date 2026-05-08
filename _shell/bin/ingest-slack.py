@@ -212,9 +212,19 @@ class UserCache:
                 "user_id": user_id,
             }
         except SlackError:
+            # Even on users.info failure, force the canonical slug for the
+            # token's own user — otherwise a wildcard DM allowlist would
+            # leak self-DMs to disk because route._dm_match.discard only
+            # knows about CANONICAL_ME_SLUG (Codex finding #6).
+            if user_id == self.me_user_id:
+                slug = CANONICAL_ME_SLUG
+                display = "Adithya Kumar (me)"
+            else:
+                slug = user_id.lower()
+                display = user_id
             entry = {
-                "slug": user_id.lower(),
-                "display_name": user_id,
+                "slug": slug,
+                "display_name": display,
                 "real_name": "",
                 "email": "",
                 "user_id": user_id,
@@ -852,8 +862,10 @@ def now_iso() -> str:
 
 
 def _atomic_write(path: Path, text: str) -> None:
-    """Write `text` to `path` atomically with fsync on the file before
-    rename. Power-loss durability per Codex #10."""
+    """Write `text` to `path` atomically with fsync on the file AND parent
+    directory. `os.replace` is atomic for visibility but not durable across
+    power loss without a directory fsync — the rename can be lost while the
+    new inode survives, leaving a missing or stale entry."""
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(path.suffix + ".tmp")
     with tmp.open("w") as f:
@@ -861,6 +873,14 @@ def _atomic_write(path: Path, text: str) -> None:
         f.flush()
         os.fsync(f.fileno())
     tmp.replace(path)
+    # Directory fsync — ensure the rename itself reaches disk.
+    dir_fd = os.open(str(path.parent), os.O_RDONLY)
+    try:
+        os.fsync(dir_fd)
+    except OSError:
+        pass  # macOS HFS+ may not support directory fsync; best-effort.
+    finally:
+        os.close(dir_fd)
 
 
 def write_day_file(path: Path, frontmatter: dict, body: str) -> None:
@@ -998,7 +1018,8 @@ def process_container(*, client: SlackClient, container: dict,
                       run_id: str, ledger_index_by_ws: dict,
                       no_attachments: bool,
                       image_descriptions: dict[str, str],
-                      describe_images: bool, token: str) -> dict:
+                      describe_images: bool, token: str,
+                      mpim_members_cache: dict[str, set[str]]) -> dict:
     summary = {"messages": 0, "files_written": 0, "deferred": False,
                "container_id": container["id"]}
 
@@ -1106,16 +1127,30 @@ def process_container(*, client: SlackClient, container: dict,
         if container.get("user_id"):
             probe_member_ids.add(container["user_id"])
     elif container["type"] == "group-dm":
-        try:
-            for uid in client.paginate("conversations.members", key="members",
-                                       channel=container["id"], limit=200):
-                probe_member_ids.add(uid)
-        except SlackError as e:
-            if e.error in ("missing_scope", "not_found", "channel_not_found"):
-                # Fall back to message authors so we don't drop the container.
+        cid = container["id"]
+        if cid in mpim_members_cache:
+            probe_member_ids = set(mpim_members_cache[cid])
+        else:
+            try:
+                for uid in client.paginate("conversations.members", key="members",
+                                           channel=cid, limit=200):
+                    probe_member_ids.add(uid)
+                mpim_members_cache[cid] = set(probe_member_ids)
+            except (SlackError, RuntimeError) as e:
+                # Catch RuntimeError too — SlackClient.call raises that when
+                # 429 retries are exhausted. Without this catch, sustained
+                # rate-limit storms on the members API would kill the whole
+                # workspace run. Fall back to message authors and continue.
+                err = getattr(e, "error", str(e))
+                if isinstance(e, SlackError) and err in (
+                        "missing_scope", "not_found", "channel_not_found"):
+                    pass  # known shape — fall back silently
+                else:
+                    sys.stderr.write(
+                        f"ingest-slack: conversations.members failed for "
+                        f"{cid} ({err}); falling back to author probe.\n"
+                    )
                 probe_member_ids = {m.get("user") for m in parents if m.get("user")}
-            else:
-                raise
     probe_item = {
         "slack_workspace_id": team_id,
         "slack_workspace_slug": workspace_slug,
@@ -1515,6 +1550,10 @@ def main() -> int:
             sys.stderr.write(f"ingest-slack: workspace profile update failed: {exc}\n")
 
         summaries: list[tuple[str, dict]] = []
+        # Per-run cache for conversations.members on group DMs — without this
+        # every cron cycle would re-fetch the same membership for every
+        # mpim and could 429 the workspace (Codex finding #3).
+        mpim_members_cache: dict[str, set[str]] = {}
         for c in containers:
             label = c.get("name") or c.get("other_user_slug") or c["id"]
             sys.stderr.write(f"ingest-slack: processing {c['type']} {label}\n")
@@ -1531,10 +1570,12 @@ def main() -> int:
                     no_attachments=args.no_attachments,
                     image_descriptions=image_descriptions,
                     describe_images=describe_images, token=token,
+                    mpim_members_cache=mpim_members_cache,
                 )
-            except SlackError as e:
+            except (SlackError, RuntimeError) as e:
+                err = getattr(e, "error", str(e))
                 sys.stderr.write(
-                    f"  slack error on {label}: {e.error}; continuing.\n"
+                    f"  slack error on {label}: {err}; continuing.\n"
                 )
                 continue
             summaries.append((label, s))

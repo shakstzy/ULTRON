@@ -8,7 +8,6 @@ sources:
     cron: "0 4 * * *"                # Daily 04:00 — pick up overnight inbox drops
   apple-health:
     cron: "0 5 * * 0"                # Sundays 05:00 — pick up weekly export
-  gmail:
-    cron: "0 6 * * *"                # Daily 06:00 — health-labeled mail only
-    accounts:
-      - adithya.shak.kumar@gmail.com
+
+# Gmail intentionally left out — sources.yaml has `gmail: []` so nothing
+# routes here yet. Wire up later once health-relevant filters are scoped.

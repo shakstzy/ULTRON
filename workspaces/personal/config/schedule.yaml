@@ -13,6 +13,9 @@ sources:
     cron: "*/30 * * * *"             # Every 30 min; bridge SQLite is local + scan is sub-second
     accounts:
       - "+15126601911"
+  discord:
+    cron: "0 */6 * * *"              # Every 6 hours — refreshes any DM/group already on disk
+                                      # (watermarks under raw/.ingest-log/discord/ act as the watch list)
 
 workspace_jobs:
   lint:

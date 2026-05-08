@@ -1,7 +1,7 @@
 ---
 source: "notion"
 workspace: "synapse"
-ingested_at: "2026-05-07T21:00:13-05:00"
+ingested_at: "2026-05-07T21:05:04-05:00"
 ingest_version: 1
 content_hash: "blake3:e3f0b2a06df5e387632aa167f67254f66c783032a8cc1072ac038ea7a2f4f2ab"
 provider_modified_at: "2026-03-26T00:23:00.000Z"
@@ -16,8 +16,6 @@ notion_parent_path:
 notion_created_at: "2025-06-11T18:54:00.000Z"
 notion_last_edited_at: "2026-03-26T00:23:00.000Z"
 notion_archived: false
-notion_properties:
-  title: "Synapse Litepaper v 1.1"
 ---
 
 # Synapse Litepaper v 1.1

@@ -5,7 +5,7 @@ source: "bumble"
 city: "austin"
 match_id: "zAhMACjIzNDkzNDYxOTQIe-K7hQAAAAAgVhGnCvorf6huQn3A8tSuNgf8VfeaFn_ckjMX-R8GFaQ"
 person_id: null
-phone: "+15126601911"
+phone: null
 status: "expired"
 expires_at: "2026-05-06T00:34:44.428Z"
 first_seen: "2026-05-04T03:24:32.772Z"

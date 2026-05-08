@@ -108,21 +108,16 @@ export async function selectCinemaMode(page, mode) {
   const label = mode === 'video' ? 'Video' : 'Image';
   const dbg = process.env.HF_DEBUG === '1';
 
-  // Fast path: target tab already aria-selected somewhere on the page.
-  const alreadyActive = await page.evaluate(lbl => {
-    const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
-    return tabs.some(t => {
-      const line1 = (t.innerText || '').trim().split('\n')[0].trim();
-      return line1.toLowerCase() === lbl.toLowerCase() && t.getAttribute('aria-selected') === 'true';
-    });
-  }, label);
-  if (alreadyActive) {
-    if (dbg) console.error(`[cinema-mode] fast-path: ${label} tab already aria-selected`);
-    return true;
-  }
-
-  // Click each non-active tab matching label until aria-selected flips.
-  // y<50 excludes header nav. width/height >=20 excludes invisible widgets.
+  // No fast path. Always click the mode tab even if already aria-selected.
+  // Reason (Cinema 3.5, observed 2026-05-08): without a click that triggers
+  // the panel's onClick lifecycle, the submit handler never wires up and
+  // GENERATE clicks no-op (no /jobs POST). Cinema video happens to have
+  // worked because video's default-state mismatch meant we always clicked
+  // to switch into it. Image is the default mode, so the fast path skipped
+  // the click entirely, leaving submit handlers uninitialized.
+  //
+  // Force-click logic: y<50 excludes header nav. width/height >=20 excludes
+  // invisible widgets. We intentionally DO NOT skip aria-selected=true tabs.
   const candidates = await page.evaluate(l => {
     const lblLower = l.toLowerCase();
     const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
@@ -136,13 +131,17 @@ export async function selectCinemaMode(page, mode) {
         x: r.x, y: r.y, w: r.width, h: r.height, visible
       };
     }).filter(x => x.line1.toLowerCase() === lblLower
-      && x.aria !== 'true'
       && x.y >= 50
       && x.w >= 20 && x.h >= 20
       && x.visible);
   }, label);
-  if (dbg) console.error(`[cinema-mode] ${candidates.length} candidate ${label} tab(s):`, JSON.stringify(candidates.map(c => ({xy: [Math.round(c.x), Math.round(c.y)], wh: [Math.round(c.w), Math.round(c.h)]}))));
+  if (dbg) console.error(`[cinema-mode] ${candidates.length} candidate ${label} tab(s):`, JSON.stringify(candidates.map(c => ({xy: [Math.round(c.x), Math.round(c.y)], wh: [Math.round(c.w), Math.round(c.h)], aria: c.aria}))));
 
+  // Click EVERY matching tab (not just non-aria-selected) so all Radix tab
+  // widgets in the page reach a consistent state and onClick lifecycles fire.
+  // Cinema 3.5 has 2-3 tab systems; until they all align, submit handlers
+  // remain uninitialized.
+  let anyVerified = false;
   for (const cand of candidates) {
     const handle = await page.evaluateHandle(({ idx }) => {
       const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
@@ -150,22 +149,22 @@ export async function selectCinemaMode(page, mode) {
     }, { idx: cand.idx });
     const el = handle.asElement ? handle.asElement() : null;
     if (!el) continue;
-    if (dbg) console.error(`[cinema-mode] click candidate idx=${cand.idx} xy=[${Math.round(cand.x)},${Math.round(cand.y)}]`);
+    if (dbg) console.error(`[cinema-mode] click candidate idx=${cand.idx} xy=[${Math.round(cand.x)},${Math.round(cand.y)}] aria=${cand.aria}`);
     await el.scrollIntoViewIfNeeded().catch(() => {});
     await el.click({ force: true }).catch(() => {});
 
-    // Verify by re-reading the same tab's aria-selected.
     const start = Date.now();
-    while (Date.now() - start < 3000) {
-      await page.waitForTimeout(200);
+    while (Date.now() - start < 1500) {
+      await page.waitForTimeout(150);
       const sel = await el.evaluate(t => t.getAttribute('aria-selected') === 'true').catch(() => false);
       if (sel) {
         if (dbg) console.error(`[cinema-mode] verified: tab idx=${cand.idx} aria-selected=true`);
-        return true;
+        anyVerified = true;
+        break;
       }
     }
-    if (dbg) console.error(`[cinema-mode] tab idx=${cand.idx} click did not flip aria-selected`);
   }
+  if (anyVerified) return true;
   if (dbg) console.error(`[cinema-mode] FAILED: tried ${candidates.length} candidates, none flipped aria-selected`);
   return false;
 }

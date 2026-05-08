@@ -499,7 +499,12 @@ export async function appendMessages(slug, messages) {
       if (localIdents.has(ident)) continue; // already in local (matched by ordinal position)
       newLines.push(fmtMessageLine(m));
       if (m.ts && (!lastTs || m.ts > lastTs)) lastTs = m.ts;
-      if (!extractedPhone && !ent.meta.phone) {
+      // CRITICAL: only extract from her messages (direction === "in"). Mirrors
+      // Tinder. Without the direction guard, Adithya's own outbound "Im
+      // 5126601911 on imsg" leaks his number into 25/26 captured entity
+      // phones. (Bug discovered 2026-05-07; pre-fix entities have his number
+      // mis-stored as match.phone.)
+      if (!extractedPhone && !ent.meta.phone && m.direction === "in") {
         const found = extractPhoneFromText(m.text);
         if (found) extractedPhone = found;
       }

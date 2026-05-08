@@ -291,7 +291,9 @@ def _download_to(url: str, dest: Path, timeout: int = 60) -> bool:
         os.replace(tmp_path, dest)
         return True
     except (urllib.error.URLError, OSError) as e:
-        sys.stderr.write(f"  download failed {url[:80]}: {e}\n")
+        # Log only the path — Notion S3 URLs carry signed creds in query params.
+        path_only = urllib.parse.urlparse(url).path[:80]
+        sys.stderr.write(f"  download failed {path_only}: {e}\n")
         try:
             if "tmp_path" in locals():
                 tmp_path.unlink(missing_ok=True)  # type: ignore[arg-type]
@@ -875,6 +877,20 @@ class Walker:
         out_path = folder_index if has_subpages else single_path
         page_dir = out_path.parent  # folder for assets + child files
 
+        # Path-flip orphan cleanup: if the page used to be a leaf (single-file)
+        # and now has subpages, the old `<slug>__<id>.md` would be left orphaned
+        # next to the new `<slug>__<id>/index.md`. Detect and remove.
+        if has_subpages and single_path.exists() and single_path != out_path:
+            try:
+                if not self.dry_run:
+                    single_path.unlink()
+                self.log({"action": "orphan-cleanup-leaf",
+                          "path": str(single_path.relative_to(ULTRON_ROOT))})
+            except OSError as e:
+                sys.stderr.write(f"  orphan cleanup failed {single_path.name}: {e}\n")
+        # Reverse case (folder→leaf): if page had children but now doesn't,
+        # leave the old folder; v2 reconcile pass will sweep it.
+
         # Skip if unchanged.
         existing_fm = _read_existing_fm(out_path)
         unchanged = (
@@ -1095,6 +1111,22 @@ def _id_from_url_or_raw(s: str) -> str:
     sys.exit(f"ingest-notion: cannot parse Notion id from: {s!r}")
 
 
+def _acquire_flock(account: str):
+    """Per-account flock. Concurrent invocation exits 0 silently — same
+    contract as ingest-drive.py. Path is intentionally distinct from any
+    outer launchd plist's flock path to avoid silent starvation."""
+    import fcntl
+    lock_path = Path(f"/tmp/ultron-ingest-notion-{_slugify(account)}.script.lock")
+    fh = open(lock_path, "w")
+    try:
+        fcntl.flock(fh.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except BlockingIOError:
+        fh.close()
+        sys.stderr.write(f"ingest-notion: another run holds {lock_path.name}; exiting\n")
+        sys.exit(0)
+    return fh
+
+
 def main(argv: list[str]) -> int:
     args = parse_args(argv)
 
@@ -1108,6 +1140,10 @@ def main(argv: list[str]) -> int:
         if log_fh:
             log_fh.write(json.dumps(record, ensure_ascii=False) + "\n")
             log_fh.flush()
+
+    # Per-account flock. Skipped on dry-run so smoke tests can run in parallel
+    # with a real cron firing.
+    flock_fh = None if args.dry_run else _acquire_flock(args.account)
 
     token = _keychain_token()
     client = NotionClient(token)
@@ -1194,6 +1230,8 @@ def main(argv: list[str]) -> int:
     log({"action": "run-end", "stats": grand})
     if log_fh:
         log_fh.close()
+    if flock_fh is not None:
+        flock_fh.close()
     return 0 if grand["failed"] == 0 else 1
 
 

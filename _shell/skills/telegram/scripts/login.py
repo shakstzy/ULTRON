@@ -31,7 +31,7 @@ from session import (
 PENDING_CODE = CRED_DIR / ".telegram-code-pending"
 LOGIN_LOG = CRED_DIR / ".telegram-login.log"
 LOGIN_DONE = CRED_DIR / ".telegram-login-done"
-POLL_TIMEOUT_SECONDS = 600  # 10 min for Adithya to relay
+POLL_TIMEOUT_SECONDS = 1800  # 30 min for Adithya to relay
 
 
 def _log(msg: str) -> None:

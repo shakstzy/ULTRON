@@ -153,9 +153,10 @@ attachments:
   sender: me
   sent_at: '2025-12-24T22:37:39.239521-06:00'
   sha256: e3d6152aa46657293a63878f1c75223b6f92fa4e323d94a9e5d07161ad2327f5
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Man in a fur coat and green suit leans on a purple Cadillac in a misty,
+    flower-covered jungle.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-08T03:43:27.287655+00:00'
   source_available: true
 - id: cc7f5c943c1938d2
   filename: MPEG-4 movie.mov

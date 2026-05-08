@@ -10,7 +10,7 @@ listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 1728716552038978573
 status_label: INQUIRED
 renter_us_state: CA
-last_pulled_at: "2026-05-08T14:00:19.961Z"
+last_pulled_at: "2026-05-08T22:00:20.259Z"
 ---
 
 # Drawn
@@ -48,6 +48,6 @@ Yeah the Sylmar place is still open. Rooms run $1000 to $1250 plus $100 flat for
 
 OK AND HOW ABOUT AFTRER MOTHERS DAY Sent from my iPhone
 
-### 2026-05-08T18:49:11.494Z - Owner (Adithya)
+### 2026-05-08T18:49:10.000Z - Owner (Adithya)
 
 After Mother's Day works. What days next week are you usually free to check it out?

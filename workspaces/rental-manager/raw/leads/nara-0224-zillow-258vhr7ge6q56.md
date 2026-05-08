@@ -10,7 +10,7 @@ listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 1648507192483659690
 status_label: INQUIRED
 renter_us_state: CA
-last_pulled_at: "2026-05-08T14:00:18.980Z"
+last_pulled_at: "2026-05-08T22:00:19.269Z"
 ---
 
 # Nara
@@ -76,6 +76,6 @@ hey Nara, garage is sorted. you still want to come tour? what day this week work
 
 Hi, thanks for the update on the garage. Yes, I can tour today, if that works. I'll text you at that number also. Thanks.
 
-### 2026-05-08T14:44:37.941Z - Owner (Adithya)
+### 2026-05-08T14:44:37.000Z - Owner (Adithya)
 
 Today works. What time were you thinking?

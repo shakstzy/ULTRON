@@ -10,7 +10,7 @@ listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 308627147311401562
 status_label: INQUIRED
 renter_us_state: CA
-last_pulled_at: "2026-05-08T14:00:19.476Z"
+last_pulled_at: "2026-05-08T22:00:19.760Z"
 ---
 
 # morgan
@@ -38,6 +38,6 @@ hey morgan, still available. rooms run $1000 to $1250 plus $100 flat for all uti
 
 I’m interested, I’m free after 6pm but if that does not work I am available on Sunday or Monday. With regards, Morgan.
 
-### 2026-05-08T18:49:29.452Z - Owner (Adithya)
+### 2026-05-08T18:49:28.000Z - Owner (Adithya)
 
 tonight after 6 works. what time is good for you?

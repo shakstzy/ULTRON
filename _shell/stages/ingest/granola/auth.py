@@ -1,29 +1,99 @@
-"""Granola auth: token read + 401-driven WorkOS refresh. Lock 7 of format.md.
+"""Granola auth: read tokens that the desktop app maintains.
 
-Single source of truth: `~/Library/Application Support/Granola/supabase.json`.
-Refresh runs under flock at `/tmp/com.adithya.ultron.granola-token-refresh.lock`
-to avoid racing the desktop app's own refresh-token rotation.
+Desktop app is the SOLE refresh authority. We never call WorkOS ourselves
+— two refreshers fighting over a single rotating refresh-token guarantees
+one gets `Session has already ended.` on every run. Instead we just read
+whatever the desktop app wrote and trust it.
+
+Token sources (newest desktop schema first):
+  1. `stored-accounts.json` — current desktop app (≥ ~Apr 2026). Account
+     array; each entry has stringified `tokens` blob.
+  2. `supabase.json` — legacy schema. Single `workos_tokens` blob.
+
+`get_access_token()` picks whichever file exposes the freshest
+non-expired access_token, with `stored-accounts.json` winning ties.
 """
 from __future__ import annotations
 
 import base64
-import contextlib
-import fcntl
 import json
-import os
-import tempfile
 import time
-import urllib.request
 from pathlib import Path
 
-SUPABASE_PATH = Path.home() / "Library" / "Application Support" / "Granola" / "supabase.json"
-LOCK_PATH = "/tmp/com.adithya.ultron.granola-token-refresh.lock"
-WORKOS_REFRESH_URL = "https://api.workos.com/user_management/authenticate"
+GRANOLA_DIR = Path.home() / "Library" / "Application Support" / "Granola"
+SUPABASE_PATH = GRANOLA_DIR / "supabase.json"
+STORED_ACCOUNTS_PATH = GRANOLA_DIR / "stored-accounts.json"
+
+
+def _load_supabase(path: Path) -> tuple[dict, dict] | None:
+    """Returns (tokens_dict, user_info_dict) or None if file missing/malformed."""
+    try:
+        raw = json.loads(path.read_text())
+        toks = json.loads(raw["workos_tokens"])
+        info = json.loads(raw.get("user_info") or "{}")
+        if not toks.get("access_token"):
+            return None
+        return toks, info
+    except (FileNotFoundError, KeyError, json.JSONDecodeError):
+        return None
+
+
+def _load_stored_accounts(path: Path) -> tuple[dict, dict] | None:
+    """Same shape as _load_supabase, parsed from stored-accounts.json."""
+    try:
+        raw = json.loads(path.read_text())
+        accts = json.loads(raw["accounts"])
+        if not accts:
+            return None
+        a = accts[0]
+        toks = json.loads(a["tokens"])
+        info = json.loads(a.get("userInfo") or "{}")
+        if not toks.get("access_token"):
+            return None
+        return toks, info
+    except (FileNotFoundError, KeyError, json.JSONDecodeError):
+        return None
+
+
+def _token_exp(at: str) -> int:
+    parts = at.split(".")
+    if len(parts) != 3:
+        return 0
+    pad = parts[1] + "=" * ((4 - len(parts[1]) % 4) % 4)
+    try:
+        return int(json.loads(base64.urlsafe_b64decode(pad)).get("exp", 0))
+    except Exception:
+        return 0
+
+
+def _pick_freshest() -> tuple[dict, dict]:
+    """Pick the freshest token blob from either file. Raises if none usable."""
+    candidates = []
+    for label, loader, p in [
+        ("stored", _load_stored_accounts, STORED_ACCOUNTS_PATH),
+        ("supabase", _load_supabase, SUPABASE_PATH),
+    ]:
+        result = loader(p)
+        if result:
+            toks, info = result
+            candidates.append((_token_exp(toks["access_token"]), label, toks, info))
+    if not candidates:
+        raise RuntimeError(
+            f"no Granola tokens found in {STORED_ACCOUNTS_PATH} or {SUPABASE_PATH}; "
+            "open the Granola desktop app and sign in"
+        )
+    candidates.sort(key=lambda c: c[0], reverse=True)
+    exp, _label, toks, info = candidates[0]
+    if exp <= time.time():
+        raise RuntimeError(
+            f"all Granola access_tokens are expired (latest exp={exp}); "
+            "open the Granola desktop app to refresh, or sign in if needed"
+        )
+    return toks, info
 
 
 def read_supabase_raw(path: Path = SUPABASE_PATH) -> dict:
-    """Parse the supabase.json file. Returns the outer dict; the
-    `workos_tokens` and `user_info` fields are themselves JSON strings."""
+    """Legacy entrypoint kept for callers that import it directly."""
     with open(path) as f:
         return json.load(f)
 
@@ -37,105 +107,30 @@ def parse_user_info(raw: dict) -> dict:
 
 
 def get_access_token(path: Path = SUPABASE_PATH) -> str:
-    return parse_tokens(read_supabase_raw(path))["access_token"]
+    toks, _ = _pick_freshest()
+    return toks["access_token"]
 
 
 def get_account_email(path: Path = SUPABASE_PATH) -> str:
-    return parse_user_info(read_supabase_raw(path)).get("email", "")
+    _, info = _pick_freshest()
+    return info.get("email", "")
 
 
-def _jwt_payload(token: str) -> dict:
-    parts = token.split(".")
-    if len(parts) != 3:
-        return {}
-    pad = lambda s: s + "=" * ((4 - len(s) % 4) % 4)
-    try:
-        return json.loads(base64.urlsafe_b64decode(pad(parts[1])).decode())
-    except Exception:
-        return {}
+def refresh_token(stale_access_token: str, path: Path = SUPABASE_PATH) -> str:
+    """401-retry hook called by api.py.
 
-
-@contextlib.contextmanager
-def _file_lock(path: str):
-    """Exclusive-blocking flock. Released on context exit."""
-    fd = os.open(path, os.O_WRONLY | os.O_CREAT, 0o600)
-    try:
-        fcntl.flock(fd, fcntl.LOCK_EX)
-        yield
-    finally:
-        try:
-            fcntl.flock(fd, fcntl.LOCK_UN)
-        finally:
-            os.close(fd)
-
-
-def refresh_via_workos(refresh_token: str, client_id: str, timeout: int = 20) -> dict:
-    body = {
-        "grant_type": "refresh_token",
-        "refresh_token": refresh_token,
-        "client_id": client_id,
-    }
-    req = urllib.request.Request(
-        WORKOS_REFRESH_URL,
-        data=json.dumps(body).encode(),
-        headers={"Content-Type": "application/json", "Accept": "application/json"},
-        method="POST",
-    )
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return json.loads(r.read().decode())
-
-
-def _atomic_write_json(path: Path, payload: dict) -> None:
-    path = Path(path)
-    fd, tmp = tempfile.mkstemp(dir=str(path.parent), prefix=path.name + ".",
-                                suffix=".tmp")
-    try:
-        with os.fdopen(fd, "w") as f:
-            json.dump(payload, f)
-        os.replace(tmp, path)
-    except Exception:
-        try:
-            os.unlink(tmp)
-        except FileNotFoundError:
-            pass
-        raise
-
-
-def refresh_token(stale_access_token: str,
-                  path: Path = SUPABASE_PATH) -> str:
-    """Lock-protected refresh.
-
-    1. Acquire flock.
-    2. Re-read supabase.json. If file's access_token differs from the
-       stale one we 401'd on, the desktop app already rotated. Use it,
-       skip the refresh.
-    3. Otherwise call WorkOS, atomic-write back, return new token.
-
-    Raises on non-recoverable errors. Caller catches and fails loudly.
+    Desktop app handles all refresh; we just re-read the disk. If neither
+    file's access_token differs from the stale one we 401'd on, surface a
+    clear error so the cron's failure is actionable instead of cryptic.
     """
-    with _file_lock(LOCK_PATH):
-        raw = read_supabase_raw(path)
-        toks = parse_tokens(raw)
-        if toks["access_token"] != stale_access_token:
-            return toks["access_token"]
+    toks, _ = _pick_freshest()
+    fresh = toks["access_token"]
+    if fresh == stale_access_token:
+        raise RuntimeError(
+            "Granola desktop app has not refreshed the access_token since "
+            "our 401. Open the app (or sign in if it's stuck on the auth "
+            "screen) — it is the sole refresh authority."
+        )
+    return fresh
 
-        client_id = _jwt_payload(stale_access_token).get("client_id")
-        if not client_id:
-            raise RuntimeError("could not extract client_id from stale JWT")
-        resp = refresh_via_workos(toks["refresh_token"], client_id)
 
-        new_toks = dict(toks)
-        new_toks["access_token"] = resp["access_token"]
-        new_toks["refresh_token"] = resp.get("refresh_token", toks["refresh_token"])
-        new_toks["obtained_at"] = int(time.time() * 1000)
-        if "expires_in" in resp:
-            new_toks["expires_in"] = resp["expires_in"]
-        else:
-            payload = _jwt_payload(new_toks["access_token"])
-            if "exp" in payload:
-                new_toks["expires_in"] = max(0, int(payload["exp"] - time.time()))
-
-        new_raw = dict(raw)
-        new_raw["workos_tokens"] = json.dumps(new_toks)
-        _atomic_write_json(path, new_raw)
-        return new_toks["access_token"]

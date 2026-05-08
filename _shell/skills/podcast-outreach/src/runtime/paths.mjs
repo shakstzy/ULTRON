@@ -45,5 +45,7 @@ export const RAW_DEPOSIT_ROOT = path.join(
 );
 
 export const ACCOUNT_EMAIL = "adithya@eclipse.builders";
-export const LABEL_ARCHIVED = "Podcast/podcast - archived";
-export const LABEL_PRIORITY = "Podcast/podcast - priority";
+// Labels already exist in adithya@eclipse.builders Gmail — exact case, flat
+// (not nested under a parent "Podcast/" folder). Verified 2026-05-07.
+export const LABEL_ARCHIVED = "Podcast - Archived";
+export const LABEL_PRIORITY = "Podcast - Priority";

@@ -147,8 +147,8 @@ The body mirrors Adithya's Lisa email word-for-word, with the `Pushing The Limit
 ## Gmail labels
 
 Two labels managed by this skill, both nested under `Podcast`:
-- `Podcast/podcast - archived` (every send lands here)
-- `Podcast/podcast - priority` (replies get promoted here)
+- `Podcast - Archived` (every send lands here)
+- `Podcast - Priority` (replies get promoted here)
 
 Adithya's outbox conventions (per his global `archive-not-trash` agent-learning) — outreach mail is archived from inbox immediately on send, kept marked read, label-only navigation thereafter. Reply-promoted threads stay archived but are also marked unread per his `archive-unread-not-unarchive` rule.
 
@@ -157,11 +157,11 @@ The `labels.mjs` module ensures both labels exist on first run. If gog auth is b
 ## Reply scan logic
 
 Daily, `scan-replies`:
-1. `gog gmail threads list -a adithya@eclipse.builders --query 'label:"Podcast/podcast - archived" newer_than:14d'` → set of recent thread ids.
+1. `gog gmail threads list -a adithya@eclipse.builders --query 'label:"Podcast - Archived" newer_than:14d'` → set of recent thread ids.
 2. For each thread, `gog gmail threads get <tid> -j` → check if any message has `from != adithya@eclipse.builders` (i.e. an inbound reply).
 3. If inbound reply found:
-   - Remove `Podcast/podcast - archived` label.
-   - Add `Podcast/podcast - priority` label.
+   - Remove `Podcast - Archived` label.
+   - Add `Podcast - Priority` label.
    - Mark thread unread (per archive-unread agent-learning).
    - Append to `replies.jsonl`.
    - Send Adithya an `imessage` ping: `[podcast-outreach] reply from <podcast_name> (<email>): "<first 80 chars of reply>"`.

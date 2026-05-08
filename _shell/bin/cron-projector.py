@@ -90,11 +90,15 @@ def next_occurrence(slot: dict, now: datetime.datetime) -> datetime.datetime:
         return now + datetime.timedelta(days=365)
 
     if day is not None:
+        # launchd skips the month entirely when Day > the month's last day (e.g.,
+        # Day=31 in February). Match that — clamping would project a ghost event
+        # on the 28th that the auditor then misclassifies as STALE.
         for month_offset in range(0, 13):
             year = now.year + (now.month - 1 + month_offset) // 12
             mo = ((now.month - 1 + month_offset) % 12) + 1
-            actual_day = min(day, _last_day_of_month(year, mo))
-            cand = _safe_replace(now, year=year, month=mo, day=actual_day,
+            if day > _last_day_of_month(year, mo):
+                continue
+            cand = _safe_replace(now, year=year, month=mo, day=day,
                                  hour=h, minute=m, second=0, microsecond=0)
             if cand is not None and cand > now:
                 return cand
@@ -174,12 +178,18 @@ def save_state(state: dict) -> None:
     tmp.replace(STATE_PATH)
 
 
-def reconcile_with_calendar(cfg: dict, window_days: int = 90) -> dict:
-    """Rebuild state map from calendar contents. Use on first run to seed state, or
-    periodically to recover from drift. Returns a fresh state dict; existing local
-    state is replaced. Window covers daily/weekly/monthly cleanly; quarterly/yearly
-    slots will be missed when not in window — re-run reconcile near their fire time
-    if needed."""
+def reconcile_with_calendar(cfg: dict, window_days: int = 90) -> dict | None:
+    """List ultron_kind=schedule events from the calendar and group by stable_id.
+
+    Returns a dict (sid → master_event_id) on success, or None on any failure
+    (gog non-zero, partial JSON, timeout). Returning None instead of {} is
+    critical: an empty dict, when used to replace local state, would make every
+    desired schedule look "missing" and trigger creation of duplicate masters.
+
+    Window: a 14-day default covers daily/weekly/monthly cleanly. Yearly /
+    quarterly slots whose next fire falls outside the window are intentionally
+    not represented — caller must merge with existing state, never wholesale
+    replace."""
     now = datetime.datetime.now().astimezone()
     args = [
         GOG, "-a", cfg["account"], "cal", "events", cfg["calendar_id"],
@@ -190,15 +200,19 @@ def reconcile_with_calendar(cfg: dict, window_days: int = 90) -> dict:
         "--all-pages",
         "--json", "--results-only",
     ]
-    res = subprocess.run(args, capture_output=True, text=True, timeout=300)
+    try:
+        res = subprocess.run(args, capture_output=True, text=True, timeout=300)
+    except subprocess.TimeoutExpired:
+        sys.stderr.write("[projector] reconcile list timed out\n")
+        return None
     if res.returncode != 0:
         sys.stderr.write(f"[projector] reconcile list failed: {res.stderr[:400]}\n")
-        return {}
+        return None
     try:
         events = json.loads(res.stdout)
     except json.JSONDecodeError:
         sys.stderr.write("[projector] reconcile list: bad JSON\n")
-        return {}
+        return None
 
     state: dict[str, str] = {}
     for ev in events:
@@ -208,7 +222,7 @@ def reconcile_with_calendar(cfg: dict, window_days: int = 90) -> dict:
             continue
         master_id = ev.get("recurringEventId") or ev["id"]
         state[sid] = master_id  # last writer wins; all instances share same master
-    sys.stderr.write(f"[projector] reconcile: rebuilt state from {len(events)} events → {len(state)} stable_ids\n")
+    sys.stderr.write(f"[projector] reconcile: scanned {len(events)} events → {len(state)} stable_ids\n")
     return state
 
 
@@ -258,7 +272,9 @@ def delete_event(cfg: dict, event_id: str) -> bool:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--reconcile", action="store_true",
-                    help="Cross-check state file against calendar before diffing")
+                    help="Force a full 90-day reconcile: rebuild state from calendar")
+    ap.add_argument("--no-drift-check", action="store_true",
+                    help="Skip the lightweight per-run drift check")
     args = ap.parse_args()
 
     cfg = json.loads(pathlib.Path(CONFIG_PATH).read_text())
@@ -268,23 +284,51 @@ def main():
     state = load_state()
 
     if args.reconcile:
-        state = reconcile_with_calendar(cfg)
+        rebuilt = reconcile_with_calendar(cfg, window_days=90)
+        if rebuilt is None:
+            sys.exit("[projector] full reconcile failed; refusing to diff against empty state")
+        state = rebuilt
+
+    # Lightweight drift check: list calendar in 14d window. For every desired
+    # stable_id whose next fire falls in that window, if state claims we created
+    # it but the calendar doesn't show it, drop it from state so the create-loop
+    # below recreates it. Catches out-of-band deletes without risking duplication.
+    if not args.no_drift_check and not args.reconcile:
+        cal_view = reconcile_with_calendar(cfg, window_days=14)
+        if cal_view is not None:
+            window_start = now - datetime.timedelta(days=14)
+            window_end = now + datetime.timedelta(days=14)
+            drifted = []
+            for sid, spec in desired.items():
+                if sid not in state:
+                    continue
+                fire = spec["dtstart"]
+                if window_start <= fire <= window_end and sid not in cal_view:
+                    drifted.append(sid)
+            for sid in drifted:
+                sys.stderr.write(f"[projector] drift: {sid} ({desired[sid]['label']}) deleted out-of-band; will recreate\n")
+                state.pop(sid, None)
 
     to_create = [(sid, spec) for sid, spec in desired.items() if sid not in state]
     to_delete = [(sid, mid) for sid, mid in state.items() if sid not in desired]
 
     print(f"[projector] desired={len(desired)} state={len(state)} create={len(to_create)} delete={len(to_delete)}")
 
+    # Checkpoint state after every successful mutation. Without this, a crash
+    # mid-loop (network blip on call N of 218, OOM, SIGKILL) loses every prior
+    # creation — next run sees the same to_create list and duplicates them all.
     created = 0
     for sid, spec in to_create:
         eid = create_event(cfg, sid, spec)
         if eid:
             state[sid] = eid
+            save_state(state)
             created += 1
     deleted = 0
     for sid, mid in to_delete:
         if delete_event(cfg, mid):
             state.pop(sid, None)
+            save_state(state)
             deleted += 1
 
     save_state(state)

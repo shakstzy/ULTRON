@@ -34,17 +34,18 @@ def file_size(path: pathlib.Path) -> int:
         return 0
 
 
-def read_after(path: pathlib.Path, offset: int) -> str:
-    """Read bytes from `offset` to EOF as text. Empty string if file shrank or doesn't exist."""
+def read_tail(path: pathlib.Path, max_bytes: int) -> str:
+    """Read up to `max_bytes` from end of file as text. Empty if missing.
+
+    Bounded read protects against OOM when a job emits hundreds of MB of
+    stderr (we only ever surface the tail in the calendar event anyway)."""
     try:
         size = path.stat().st_size
     except FileNotFoundError:
         return ""
-    if size < offset:
-        offset = 0
     try:
         with open(path, "rb") as f:
-            f.seek(offset)
+            f.seek(max(0, size - max_bytes))
             return f.read().decode("utf-8", errors="replace")
     except OSError:
         return ""
@@ -81,9 +82,11 @@ def main():
     end_dt = datetime.datetime.now().astimezone()
     duration_ms = int((end_ts - start_ts) * 1000)
 
-    err_text = read_after(err_log, err_offset)
-    out_text = read_after(out_log, out_offset)
-    stderr_tail = err_text[-STDERR_TAIL_LIMIT:] if err_text else ""
+    # Byte deltas — file_size after vs offset captured at start. Cheap, no read.
+    err_delta = max(0, file_size(err_log) - err_offset)
+    out_delta = max(0, file_size(out_log) - out_offset)
+    # Tail-read only what we actually surface, bounded to STDERR_TAIL_LIMIT.
+    stderr_tail = read_tail(err_log, STDERR_TAIL_LIMIT) if err_delta else ""
     success = proc.returncode == 0
 
     row = {
@@ -94,8 +97,8 @@ def main():
         "exit_code": proc.returncode,
         "success": success,
         "cmd": cmd,
-        "stderr_chars": len(err_text),
-        "stdout_chars": len(out_text),
+        "stderr_bytes": err_delta,
+        "stdout_bytes": out_delta,
     }
     try:
         with open(cfg["ledger_path"], "a") as f:

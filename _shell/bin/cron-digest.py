@@ -17,6 +17,16 @@ import sys
 CONFIG_PATH = "/Users/shakstzy/ULTRON/_shell/config/cron-calendar.json"
 IMESSAGE_SEND = "/Users/shakstzy/.claude/skills/imessage/send.sh"
 
+# Generous bound: 218 jobs × ~10 runs/day × ~500 bytes/row ≈ 1MB/day. 8MB tail
+# easily covers today even with bursty days. Keeps daily digest O(constant).
+LEDGER_TAIL_BYTES = 8 * 1024 * 1024
+
+
+def _ok(r: dict) -> bool:
+    """True if the run succeeded. Older ledger rows pre-date the `success`
+    field — fall back to exit_code==0 so historical rows don't read as failed."""
+    return r.get("success", r.get("exit_code") == 0)
+
 
 def main():
     cfg = json.loads(pathlib.Path(CONFIG_PATH).read_text())
@@ -26,9 +36,14 @@ def main():
     ledger_path = pathlib.Path(cfg["ledger_path"])
     runs = []
     if ledger_path.exists():
-        with open(ledger_path) as f:
-            for line in f:
-                line = line.strip()
+        size = ledger_path.stat().st_size
+        seek_to = max(0, size - LEDGER_TAIL_BYTES)
+        with open(ledger_path, "rb") as f:
+            f.seek(seek_to)
+            if seek_to > 0:
+                f.readline()  # discard partial first line
+            for raw in f:
+                line = raw.decode("utf-8", errors="replace").strip()
                 if not line:
                     continue
                 try:
@@ -44,14 +59,14 @@ def main():
     if not runs:
         body_lines.append("No runs today.")
     else:
-        successes = sum(1 for r in runs if r.get("success"))
+        successes = sum(1 for r in runs if _ok(r))
         failures = len(runs) - successes
         total_runtime_h = sum(r.get("duration_ms", 0) for r in runs) / 1000.0 / 3600.0
         by_label: dict[str, dict] = {}
         for r in runs:
             slot = by_label.setdefault(r["label"], {"runs": 0, "fails": 0})
             slot["runs"] += 1
-            if not r.get("success"):
+            if not _ok(r):
                 slot["fails"] += 1
 
         body_lines.append(

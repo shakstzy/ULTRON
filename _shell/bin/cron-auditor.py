@@ -20,6 +20,7 @@ Writes:
 from __future__ import annotations
 
 import datetime
+import fcntl
 import glob
 import json
 import os
@@ -153,11 +154,14 @@ def prev_occurrence(slot: dict, now: datetime.datetime) -> datetime.datetime:
         return now - datetime.timedelta(days=365)
 
     if day is not None:
+        # launchd skips months whose last day < requested Day. Match that, else
+        # we'd compute a phantom "expected last fire" for Feb when Day=31.
         for month_offset in range(0, 13):
             year = now.year + (now.month - 1 - month_offset) // 12
             mo = ((now.month - 1 - month_offset) % 12) + 1
-            actual_day = min(day, _last_day_of_month(year, mo))
-            cand = _safe_replace(now, year=year, month=mo, day=actual_day,
+            if day > _last_day_of_month(year, mo):
+                continue
+            cand = _safe_replace(now, year=year, month=mo, day=day,
                                  hour=h, minute=m, second=0, microsecond=0)
             if cand is not None and cand <= now:
                 return cand
@@ -193,7 +197,13 @@ def classify(label: str, info: dict, runs: list[dict], now: datetime.datetime,
         status = "PRE_INSTALL"
     else:
         if hours_since_expected > GRACE_HOURS:
-            status = "STALE"
+            # Don't flag STALE if the job is currently running — long-running
+            # jobs (e.g., dating-bumble-send taking 25 min, ingest jobs taking
+            # an hour+) wouldn't have written their ledger row yet.
+            if is_lock_held(f"/tmp/{label}.lock"):
+                status = "HEALTHY"
+            else:
+                status = "STALE"
         else:
             status = "WAITING"
 
@@ -218,7 +228,30 @@ def classify(label: str, info: dict, runs: list[dict], now: datetime.datetime,
     }
 
 
+def is_lock_held(lock_path: str) -> bool:
+    """True iff some process currently holds an exclusive flock on the file.
+
+    We try to acquire the lock non-blocking; success means nobody else has it
+    (and we release immediately by closing the file). BlockingIOError = held."""
+    try:
+        with open(lock_path, "a") as f:
+            try:
+                fcntl.flock(f.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+                fcntl.flock(f.fileno(), fcntl.LOCK_UN)
+                return False
+            except BlockingIOError:
+                return True
+    except OSError:
+        return False
+
+
 def cleanup_stale_locks(now: datetime.datetime) -> list[dict]:
+    """Delete /tmp/com.adithya.ultron.*.lock files whose holder has died.
+
+    Probe via fcntl.flock (not lsof — `lsof` can be missing from launchd's PATH
+    or time out under load, in which case the previous lsof-based check would
+    fall through and unlink a live lock). The flock probe atomically tells us
+    whether any process holds an exclusive lock on the inode."""
     cleaned = []
     for lock in glob.glob(LOCK_GLOB):
         try:
@@ -228,12 +261,8 @@ def cleanup_stale_locks(now: datetime.datetime) -> list[dict]:
         age_hours = (now - mtime).total_seconds() / 3600.0
         if age_hours < LOCK_STALE_HOURS:
             continue
-        try:
-            res = subprocess.run(["lsof", lock], capture_output=True, text=True, timeout=5)
-            if res.returncode == 0 and res.stdout.strip():
-                continue
-        except Exception:
-            pass
+        if is_lock_held(lock):
+            continue
         try:
             os.unlink(lock)
             cleaned.append({"lock": os.path.basename(lock), "age_hours": round(age_hours, 1)})
@@ -345,17 +374,22 @@ def main():
 
     state_path = pathlib.Path(cfg["audit_state_path"])
     prior = {}
+    state_corrupt = False
     if state_path.exists():
         try:
             prior = json.loads(state_path.read_text())
         except Exception:
-            pass
+            # Zero-byte or partial JSON (e.g., interrupted write before the
+            # atomic-rename fix landed). Treating prior={} would re-fire alerts
+            # for every currently-flagged job. Suppress instead and rewrite.
+            state_corrupt = True
+            sys.stderr.write("[auditor] audit-state.json unreadable; suppressing alerts and rewriting\n")
 
     diffs = state_diff(prior, statuses)
     alert_diffs = [d for d in diffs if d["to"] in ("STALE", "BROKEN")]
     recovered = [d for d in diffs if d["to"] == "HEALTHY" and d["from"] in ("STALE", "BROKEN")]
 
-    if cold_start:
+    if cold_start or state_corrupt:
         alert_diffs = []
         recovered = []
 

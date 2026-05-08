@@ -174,51 +174,41 @@ def save_state(state: dict) -> None:
     tmp.replace(STATE_PATH)
 
 
-def reconcile_with_calendar(cfg: dict, state: dict, days_back: int = 7, days_forward: int = 7) -> dict:
-    """Cross-check state against actual calendar. Drops state entries whose master
-    event no longer exists on the calendar (within the wider window we can see).
-    Returns the corrected state."""
+def reconcile_with_calendar(cfg: dict, window_days: int = 90) -> dict:
+    """Rebuild state map from calendar contents. Use on first run to seed state, or
+    periodically to recover from drift. Returns a fresh state dict; existing local
+    state is replaced. Window covers daily/weekly/monthly cleanly; quarterly/yearly
+    slots will be missed when not in window — re-run reconcile near their fire time
+    if needed."""
     now = datetime.datetime.now().astimezone()
     args = [
         GOG, "-a", cfg["account"], "cal", "events", cfg["calendar_id"],
         "--private-prop-filter", "ultron_kind=schedule",
-        "--from", (now - datetime.timedelta(days=days_back)).strftime("%Y-%m-%d"),
-        "--to", (now + datetime.timedelta(days=days_forward)).strftime("%Y-%m-%d"),
+        "--from", (now - datetime.timedelta(days=window_days)).strftime("%Y-%m-%d"),
+        "--to", (now + datetime.timedelta(days=window_days)).strftime("%Y-%m-%d"),
         "--max", "2500",
         "--all-pages",
         "--json", "--results-only",
     ]
-    res = subprocess.run(args, capture_output=True, text=True, timeout=180)
+    res = subprocess.run(args, capture_output=True, text=True, timeout=300)
     if res.returncode != 0:
         sys.stderr.write(f"[projector] reconcile list failed: {res.stderr[:400]}\n")
-        return state
+        return {}
     try:
         events = json.loads(res.stdout)
     except json.JSONDecodeError:
         sys.stderr.write("[projector] reconcile list: bad JSON\n")
-        return state
+        return {}
 
-    seen_master_ids: set[str] = set()
-    for ev in events:
-        master_id = ev.get("recurringEventId") or ev["id"]
-        seen_master_ids.add(master_id)
-
-    # Only drop state entries whose stable_id appears in the window AT ALL
-    # (positive proof of absence). Outside-window entries are left alone.
-    window_stable_ids: set[str] = set()
+    state: dict[str, str] = {}
     for ev in events:
         priv = (ev.get("extendedProperties") or {}).get("private") or {}
         sid = priv.get("ultron_stable_id")
-        if sid:
-            window_stable_ids.add(sid)
-
-    dropped = []
-    for sid, mid in list(state.items()):
-        if sid in window_stable_ids and mid not in seen_master_ids:
-            del state[sid]
-            dropped.append(sid)
-    if dropped:
-        sys.stderr.write(f"[projector] reconcile dropped {len(dropped)} stale state entries\n")
+        if not sid:
+            continue
+        master_id = ev.get("recurringEventId") or ev["id"]
+        state[sid] = master_id  # last writer wins; all instances share same master
+    sys.stderr.write(f"[projector] reconcile: rebuilt state from {len(events)} events → {len(state)} stable_ids\n")
     return state
 
 
@@ -278,7 +268,7 @@ def main():
     state = load_state()
 
     if args.reconcile:
-        state = reconcile_with_calendar(cfg, state)
+        state = reconcile_with_calendar(cfg)
 
     to_create = [(sid, spec) for sid, spec in desired.items() if sid not in state]
     to_delete = [(sid, mid) for sid, mid in state.items() if sid not in desired]

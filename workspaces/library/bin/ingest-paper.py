@@ -35,6 +35,10 @@ ARXIV_ID_RE = re.compile(r"\b(\d{4}\.\d{4,5})(v\d+)?\b")
 SOURCE = "paper"
 
 
+class IngestError(Exception):
+    """Raised when ingest cannot complete. Caught by main() and by batch callers."""
+
+
 def fetch(url: str) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT) as resp:
@@ -154,11 +158,9 @@ def ingest_paper(
             download_to(info["url"], local_pdf)
             meta = {"title": title, "authors": [author] if author else [], "year": year, "pdf_url": info["url"]}
         elif info["kind"] == "doi":
-            print(f"  doi-only ingest not yet supported; pass an arxiv URL or --pdf-path", file=sys.stderr)
-            sys.exit(2)
+            raise IngestError("doi-only ingest not yet supported; pass an arxiv URL or --pdf-path")
         else:
-            print(f"  unsupported input shape: {target!r}", file=sys.stderr)
-            sys.exit(2)
+            raise IngestError(f"unsupported input shape: {target!r}")
 
     final_title = meta.get("title") or title or local_pdf.stem
     final_authors = meta.get("authors") or ([author] if author else ["Anonymous"])
@@ -220,8 +222,9 @@ def main() -> int:
         return 2
     try:
         ingest_paper(args.target, args.pdf_path, args.title, args.author, args.year)
-    except SystemExit:
-        raise
+    except IngestError as e:
+        print(f"  ! {e}", file=sys.stderr)
+        return 2
     except Exception as e:
         print(f"  FATAL: {type(e).__name__}: {e}", file=sys.stderr)
         return 1

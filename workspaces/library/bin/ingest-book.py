@@ -34,6 +34,10 @@ HTTP_TIMEOUT = 30
 SOURCE = "book"
 
 
+class IngestError(Exception):
+    """Raised when ingest cannot complete. Caught by main() and by batch callers."""
+
+
 # ---------------------------------------------------------------------------
 # HTTP
 # ---------------------------------------------------------------------------
@@ -299,12 +303,11 @@ def ingest_book(
                         "format": local.suffix.lstrip(".")}
         if local is None and md5_url is None:
             if not (title and author):
-                raise ValueError("URL did not resolve and no title+author for fallback search")
+                raise IngestError("URL did not resolve and no title+author for fallback search")
             print(f"  searching annas-archive for: {title} | {author}")
             results = search_annas(f"{title} {author}", limit=5)
             if not results:
-                print("  no search results", file=sys.stderr)
-                sys.exit(2)
+                raise IngestError("no search results from annas-archive")
             md5_url = results[0]["url"]
             print(f"  picking top result: {md5_url}")
         if md5_url:
@@ -313,19 +316,14 @@ def ingest_book(
             print(f"  parsed metadata: title={meta.get('title')!r} author={meta.get('author')!r} format={meta.get('format')} lang={meta.get('language')}")
             ok, failures = validate_metadata(meta, title, author) if not skip_validation else (True, [])
             if not ok:
-                print("  ! validation failed:", file=sys.stderr)
-                for f in failures:
-                    print(f"    - {f}", file=sys.stderr)
-                print("  re-run with --url <annas md5 url> to override.", file=sys.stderr)
-                sys.exit(2)
+                raise IngestError("validation failed: " + "; ".join(failures))
             ext = meta.get("format") or "epub"
             tmp_dir = Path("/tmp") / f"library-book-{L.today()}"
             tmp_dir.mkdir(parents=True, exist_ok=True)
             local = tmp_dir / f"download.{ext}"
             ok, msg = attempt_download(meta, local)
             if not ok:
-                print(f"  download failed: {msg}", file=sys.stderr)
-                sys.exit(2)
+                raise IngestError(f"download failed: {msg}")
             print(f"  {msg}")
 
     final_title = meta.get("title") or title or local.stem
@@ -352,10 +350,7 @@ def ingest_book(
     if not skip_validation:
         ok, failures = sanity_check_markdown(body)
         if not ok:
-            print("  ! sanity check failed:", file=sys.stderr)
-            for f in failures:
-                print(f"    - {f}", file=sys.stderr)
-            sys.exit(2)
+            raise IngestError("sanity check failed: " + "; ".join(failures))
 
     raw_path = book_dir / f"{slug}.md"
     extra = {
@@ -397,8 +392,9 @@ def main() -> int:
     try:
         ingest_book(args.title, args.author, args.url, args.epub_path,
                     args.isbn, args.year, skip_validation=args.skip_validation)
-    except SystemExit:
-        raise
+    except IngestError as e:
+        print(f"  ! {e}", file=sys.stderr)
+        return 2
     except Exception as e:
         print(f"  FATAL: {type(e).__name__}: {e}", file=sys.stderr)
         return 1

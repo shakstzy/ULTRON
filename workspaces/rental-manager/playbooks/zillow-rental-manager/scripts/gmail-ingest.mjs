@@ -22,8 +22,20 @@
 //   - Zillow-side status_label (TOUR REQUESTED, TOURED) — we infer from
 //     subject pattern + message content via downstream LLM routing.
 //   - Structured renter profile (credit, income, move-in) — never used for
-//     drafting anyway; LLM works fine without.
+//     drafting anyway; LLM works fine without. Existing portal-derived
+//     profiles are PRESERVED on merge (prior.renter_profile wins).
 //   - Application PDF download — defer until the user asks for it.
+//
+// Known limits (per Codex/Gemini adversarial review 2026-05-07):
+//   - Cross-platform collision: a lead messaging from both Zillow + Trulia
+//     gets distinct relay aliases → two threads → two replies. Single-listing
+//     workspace today, defer until we expand.
+//   - Portal-only "Decline" / "Archive" actions invisible to Gmail. Manual
+//     state edits (is_archived: true) are preserved on merge — that's the
+//     escape hatch.
+//   - Tour confirmation detection still LLM-judged in auto-book.mjs; we keep
+//     the conservative bar (explicit slot index match) to avoid hallucinated
+//     bookings.
 //
 // Idempotent. Cursor-less for v1 (Gmail is fast enough at 100-thread scale).
 // Future: track historyId for incremental sync.
@@ -89,36 +101,67 @@ function headersToMap(headers) {
   return out;
 }
 
+// Walk a Gmail payload tree to find the first text/html body (base64-decoded).
+// Most Zillow relay messages have body data directly at payload.body.data; some
+// nest inside multipart parts. Returns null if no HTML found.
+function decodeHtmlBody(payload) {
+  if (!payload) return null;
+  // Direct body.
+  if (payload.mimeType === 'text/html') {
+    const data = payload.body?.data;
+    if (data) {
+      try { return Buffer.from(data, 'base64').toString('utf-8'); }
+      catch (_) { /* fallthrough */ }
+    }
+  }
+  // Nested parts.
+  for (const part of payload.parts || []) {
+    const r = decodeHtmlBody(part);
+    if (r) return r;
+  }
+  // Some messages put HTML at the root regardless of mimeType claim.
+  const rootData = payload.body?.data;
+  if (rootData) {
+    try { return Buffer.from(rootData, 'base64').toString('utf-8'); }
+    catch (_) { /* swallow */ }
+  }
+  return null;
+}
+
 // Extract the lead's actual message text from a Zillow relay email body.
-// Zillow puts the message as preview chrome in a hidden <span>:
-//   <span style="display: none ...">{message}</span>
-// That span is the cleanest source. Falls back to gmail snippet if not found.
+// Primary: hidden preview <span style="display:none">{message}</span> — Zillow
+// puts the inbound message there as preview chrome. Verified clean for both
+// initial inquiries and replies (2026-05-07).
+//
+// Fallbacks per Codex/Gemini adversarial review (template fragility risk):
+//   1. Look for visible "Lead says:" pattern in plaintext-stripped body.
+//   2. Snippet (gmail's auto-generated preview).
 function extractRenterBody(htmlBody, snippet) {
+  // Primary: hidden preview span.
   if (htmlBody) {
-    const spanRe = /<span[^>]*display\s*:\s*none[^>]*>([\s\S]*?)<\/span>/i;
+    const spanRe = /<span[^>]*style\s*=\s*"[^"]*display\s*:\s*none[^"]*"[^>]*>([\s\S]*?)<\/span>/i;
     const m = htmlBody.match(spanRe);
     if (m) {
-      const stripped = m[1]
-        .replace(/<[^>]+>/g, ' ')
-        .replace(/&nbsp;/gi, ' ')
-        .replace(/&amp;/gi, '&')
-        .replace(/&lt;/gi, '<')
-        .replace(/&gt;/gi, '>')
-        .replace(/&quot;/gi, '"')
-        .replace(/&#39;/gi, "'")
-        .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCharCode(parseInt(h, 16)))
-        .replace(/&#(\d+);/g, (_, d) => String.fromCharCode(parseInt(d, 10)))
-        .replace(/\s+/g, ' ')
-        .trim();
+      const stripped = htmlToText(m[1]);
       if (stripped.length > 0) return stripped;
     }
   }
-  // Fallback: gmail snippet (already plaintext, ~200 char). Strip Zillow chrome
-  // "New message from a renter / Regarding your listing at: ..." that bleeds in.
+  // Fallback 1: full plaintext + scan for Zillow message blocks.
+  if (htmlBody) {
+    const text = htmlToText(htmlBody);
+    // Initial inquiry pattern: "<Name> says: <message> Reply to <Name>"
+    let m = text.match(/(?:says|wrote|writes):\s*([\s\S]*?)\s+(?:Reply to|Send Application|You can also reply|--)/i);
+    if (m && m[1].trim().length > 1) return m[1].trim().slice(0, 4000);
+    // Reply pattern: "received a reply ... <Name> says: <message>"
+    m = text.match(/received a reply[\s\S]{0,200}?says:\s*([\s\S]*?)\s+(?:Reply to|You can also reply|--)/i);
+    if (m && m[1].trim().length > 1) return m[1].trim().slice(0, 4000);
+  }
+  // Fallback 2: Gmail snippet (~200 char auto-preview). Strip Zillow chrome
+  // that bleeds in after the actual message.
   if (snippet) {
-    let s = String(snippet);
-    s = s.replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&amp;/g, '&');
-    s = s.split(/New message from a renter|Regarding your listing at/i)[0].trim();
+    let s = String(snippet)
+      .replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&amp;/g, '&');
+    s = s.split(/New message from a renter|Regarding your listing at|You've received a reply/i)[0].trim();
     return s || null;
   }
   return null;
@@ -171,8 +214,22 @@ function buildRelayToCidMap() {
   return map;
 }
 
+// Strip HTML to plaintext (entities decoded, whitespace collapsed).
+function htmlToText(html) {
+  if (!html) return '';
+  let s = html;
+  s = s.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, ' ');
+  s = s.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, ' ');
+  s = s.replace(/<[^>]+>/g, ' ');
+  s = s.replace(/&nbsp;/gi, ' ').replace(/&amp;/gi, '&').replace(/&lt;/gi, '<').replace(/&gt;/gi, '>');
+  s = s.replace(/&quot;/gi, '"').replace(/&#39;/gi, "'");
+  s = s.replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCharCode(parseInt(h, 16)));
+  s = s.replace(/&#(\d+);/g, (_, d) => String.fromCharCode(parseInt(d, 10)));
+  return s.replace(/\s+/g, ' ').trim();
+}
+
 // Pull recent applications-received notifications. Returns Set<lead-name-lc>
-// — best we can do without portal — and Set<relay-email> for thread-keyed.
+// — best we can do without portal.
 function pullApplicationReceivedSignals(days) {
   const since = `newer_than:${days}d`;
   const search = `from:no-reply@comet.zillow.com (subject:"new rental application" OR subject:"rental application waiting") ${since}`;
@@ -183,32 +240,37 @@ function pullApplicationReceivedSignals(days) {
     return { byName: new Set() };
   }
   const byName = new Set();
+  const listingNeedle = LISTING_ADDRESS.split(',')[0].toLowerCase().trim();
   for (const m of list) {
-    const subj = m.subject || '';
-    // The subject is "Rental application waiting for <addr>" or "You have a
-    // new rental application for <addr>" — the lead name isn't in the subject
-    // for these. We need the body. Skip if not the right listing.
-    if (!subj.toLowerCase().includes(LISTING_ADDRESS.split(',')[0].toLowerCase().trim())) continue;
-    // Best-effort: parse the body to extract the renter name.
+    if (!(m.subject || '').toLowerCase().includes(listingNeedle)) continue;
     try {
       const full = gogJson(['gmail', 'get', m.id], { allowEmpty: true });
-      const body = full?.body || '';
-      // Comet emails have "Hi Adithya, <Name> has applied" or similar.
-      const nm = body.match(/applied for\s+[^.]*?\bfrom\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)/) ||
-                 body.match(/<strong>([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)<\/strong>\s*has\s+applied/i) ||
-                 body.match(/applied to rent your property[^A-Z]*([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)/);
-      if (nm) byName.add(nm[1].toLowerCase());
-    } catch (_) { /* swallow, best-effort */ }
+      const text = htmlToText(full?.body || '');
+      // Body shape (verified 2026-05-07): "<Name> completed an application for
+      // 13245 Klein Ct. ... Hi Adithya, Great news! <Name> has completed their
+      // rental application for 13245 Klein Ct ..." The name appears multiple
+      // times; first match wins.
+      const m1 = text.match(/([A-Z][a-zA-Z'-]+(?:\s+[A-Z][a-zA-Z'-]+){0,2})\s+(?:has\s+)?completed\s+(?:an|their)\s+(?:rental\s+)?application/);
+      if (m1) byName.add(m1[1].toLowerCase());
+    } catch (_) { /* best-effort */ }
   }
   return { byName };
 }
 
 // List all Gmail threads tied to this listing's relay aliases.
+// Uses --all so we paginate beyond Gmail's 500-per-page cap (truth is ~300+
+// messages across ~200 threads at present).
 function listConvoThreads(days, limit) {
   const search = `from:convo.zillow.com newer_than:${days}d`;
-  const max = limit ? String(Math.min(limit * 3, 500)) : '500';
-  const messages = gogJson(['gmail', 'messages', 'list', search, '--max', max], { allowEmpty: true }) || [];
-  // Group by threadId.
+  const args = ['gmail', 'messages', 'list', search];
+  if (limit) {
+    args.push('--max', String(Math.min(limit * 3, 500)));
+  } else {
+    args.push('--all');
+  }
+  const messages = gogJson(args, { allowEmpty: true }) || [];
+  // Group by threadId. Sort threads by latest message date desc so we sync
+  // the freshest first (matters when --limit is set).
   const byThread = new Map();
   for (const m of messages) {
     const tid = m.threadId;
@@ -216,7 +278,11 @@ function listConvoThreads(days, limit) {
     if (!byThread.has(tid)) byThread.set(tid, []);
     byThread.get(tid).push(m);
   }
-  return Array.from(byThread.keys());
+  const ordered = Array.from(byThread.entries())
+    .map(([tid, ms]) => ({ tid, latest: Math.max(...ms.map(x => Date.parse(x.date || 0) || 0)) }))
+    .sort((a, b) => b.latest - a.latest)
+    .map(x => x.tid);
+  return ordered;
 }
 
 // Pull the full thread + parse out conversation messages + metadata.
@@ -256,15 +322,15 @@ function syncThread(threadId, relayToCid, applicationNamesLc, opts) {
     const isOutbound = !!fromAddr.email && fromAddr.email === OWNER_EMAIL.toLowerCase();
     if (!isInbound && !isOutbound) continue;
     const { ts_ms, ts_iso } = parseGmailDate(headers.date);
-    const subject = headers.subject || '';
-    const renterBody = isInbound
-      ? extractRenterBody(tdata?.body /* not present per-msg here */, m.snippet || '')
-      : null;
-    // For inbound, prefer renterBody; for outbound, the snippet is the reply
-    // (we sent it, it's our text with Zillow chrome appended sometimes).
+    const htmlBody = decodeHtmlBody(m.payload);
     const body = isInbound
-      ? (renterBody || m.snippet || '')
-      : (m.snippet || '').split(/On\s+\w+,?\s+\w+\s+\d+,?\s+\d{4}/i)[0].trim();
+      ? (extractRenterBody(htmlBody, m.snippet || '') || '')
+      // Outbound: we sent it. Strip the "On <date> ... wrote:" tail that
+      // Gmail prepends as quoted-reply chrome. Rest is our real text.
+      : (() => {
+          const t = htmlBody ? htmlToText(htmlBody) : (m.snippet || '');
+          return t.split(/On\s+\w{3},?\s+\w+\s+\d+,?\s+\d{4}/i)[0].trim();
+        })();
     if (!body) continue;
     messages.push({
       direction: isInbound ? 'inbound' : 'outbound',

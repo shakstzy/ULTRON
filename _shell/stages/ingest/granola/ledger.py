@@ -59,9 +59,25 @@ def append_row(
 
 
 def find_last_row(path: Path, *, source: str, key: str) -> dict | None:
-    """Latest ledger row for (source, key). None if absent."""
+    """Latest ledger row for (source, key). None if absent.
+
+    Reads the whole file per call. For ingest loops that touch many keys
+    in one run, prefer `build_index` once and look up by `(source, key)`
+    in the dict — O(file) once, O(1) per lookup, vs O(N·M) here.
+    """
     rows = load_rows(path)
     for row in reversed(rows):
         if row.get("source") == source and row.get("key") == key:
             return row
     return None
+
+
+def build_index(path: Path) -> dict[tuple[str, str], dict]:
+    """One-pass index of latest row per (source, key). For hot loops."""
+    idx: dict[tuple[str, str], dict] = {}
+    for row in load_rows(path):
+        s = row.get("source")
+        k = row.get("key")
+        if s is not None and k is not None:
+            idx[(s, k)] = row  # later rows overwrite earlier ones
+    return idx

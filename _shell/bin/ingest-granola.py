@@ -38,7 +38,7 @@ from auth import get_account_email  # noqa: E402
 from api import GranolaClient  # noqa: E402
 from cursor import read_cursor, write_cursor  # noqa: E402
 from filter import should_skip  # noqa: E402
-from ledger import append_row, find_last_row  # noqa: E402
+from ledger import append_row, build_index  # noqa: E402
 from render import render_body, transcript_duration_ms, build_attendees, build_calendar_event  # noqa: E402
 from route import route as route_doc  # noqa: E402
 from slug import account_slug, title_slug  # noqa: E402
@@ -179,6 +179,7 @@ def write_doc_for_workspace(
     routed_by: list[dict],
     dry_run: bool,
     log: list[str],
+    ledger_index: dict[tuple[str, str], dict] | None = None,
 ) -> str:
     """Write the rendered markdown for a single (workspace, doc) pair.
 
@@ -187,12 +188,19 @@ def write_doc_for_workspace(
       - Same key + same hash + DIFFERENT path → move file, ledger row.
       - Same key + different hash → overwrite at new path; remove old if path differs.
     Returns "wrote" / "moved" / "skipped" / "overwrote".
+
+    Pass `ledger_index` (built once per workspace via `build_index`) to keep
+    the lookup O(1). Without it we'd parse the whole jsonl per call.
     """
     ledger_path = workspace_root / "_meta" / "ingested.jsonl"
     abs_path = workspace_root / rel_path
     rel_str = str(rel_path)
 
-    last = find_last_row(ledger_path, source="granola", key=doc_id)
+    if ledger_index is not None:
+        last = ledger_index.get(("granola", doc_id))
+    else:
+        from ledger import find_last_row  # lazy: keep back-compat callers working
+        last = find_last_row(ledger_path, source="granola", key=doc_id)
 
     if last and last.get("content_hash") == ch and last.get("path") == rel_str:
         if abs_path.exists():
@@ -238,15 +246,17 @@ def write_doc_for_workspace(
             abs_path.write_text(full_markdown, encoding="utf-8")
 
     if not dry_run:
+        new_row = {
+            "source": "granola", "key": doc_id, "content_hash": ch,
+            "path": rel_str, "routed_by": routed_by, "action": action,
+        }
         append_row(
-            ledger_path,
-            source="granola",
-            key=doc_id,
-            content_hash=ch,
-            path=rel_str,
-            routed_by=routed_by,
-            action=action,
+            ledger_path, source="granola", key=doc_id,
+            content_hash=ch, path=rel_str,
+            routed_by=routed_by, action=action,
         )
+        if ledger_index is not None:
+            ledger_index[("granola", doc_id)] = new_row
     log.append(f"{action} {doc_id[:8]} {rel_str}")
     return action
 
@@ -309,6 +319,15 @@ def main() -> int:
         run_log.append(f"workspaces: {sorted(workspaces_config.keys())}")
         run_log.append(f"subscribed folders: {sorted(subscribed)}")
 
+        # Per-workspace ledger indices: load once now, look up O(1) per doc.
+        # Avoids the O(N·M) re-parse-per-doc cost as ledgers grow.
+        ledger_indices: dict[str, dict] = {
+            ws_slug: build_index(
+                ULTRON_ROOT / "workspaces" / ws_slug / "_meta" / "ingested.jsonl"
+            )
+            for ws_slug in workspaces_config
+        }
+
         # Cursor
         cursor_path = ULTRON_ROOT / "_shell" / "cursors" / "granola" / f"{acct_slug}.txt"
         if args.reset_cursor and cursor_path.exists():
@@ -317,7 +336,7 @@ def main() -> int:
         run_log.append(f"cursor: {cursor!r}")
 
         # API
-        client = GranolaClient()
+        client = GranolaClient(account=args.account or None)
 
         # Folders → doc_id → folder_titles map
         folders = client.list_folders()  # {folder_id: folder_dict}
@@ -450,6 +469,7 @@ def main() -> int:
                         routed_by=this_routed,
                         dry_run=args.dry_run,
                         log=run_log,
+                        ledger_index=ledger_indices.get(ws_slug),
                     )
                 except Exception as e:
                     run_log.append(f"  write-fail {doc_id[:8]} ws={ws_slug}: {e}")

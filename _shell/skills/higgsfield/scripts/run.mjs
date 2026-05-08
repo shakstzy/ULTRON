@@ -218,6 +218,11 @@ async function handlerFor(cmd) {
   ensureDeps();
 
   try {
+    if (cmd === 'recon') {
+      const { runRecon } = await import('./recon.mjs');
+      await runRecon();
+      return;
+    }
     if (cmd === 'resume') {
       const runDir = argv._[1];
       if (!runDir) { console.error('Usage: run.mjs resume <run-dir>'); process.exit(2); }

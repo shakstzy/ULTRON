@@ -91,9 +91,10 @@ class GranolaClient:
             text_preview = data.decode("utf-8", errors="replace")[:300]
 
             if status == 401 and not refreshed:
-                # Lock 7: re-read + refresh under flock; retry once.
+                # Lock 7: re-read; desktop app refreshes; we poll briefly.
                 stale = self._token
-                self._token = refresh_token(stale, self.supabase_path)
+                self._token = refresh_token(stale, self.supabase_path,
+                                             email=self.account)
                 refreshed = True
                 continue
 

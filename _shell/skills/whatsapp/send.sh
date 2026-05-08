@@ -72,10 +72,15 @@ if [[ -n "$FILE" ]]; then
 fi
 
 # ─── Pre-flight: bridge reachable? ─────────────────────────────────────────────
-HTTP_CODE=$(curl -sS -o /dev/null -w '%{http_code}' -m 3 -X POST "$BRIDGE_BASE/send" -d '{}' 2>/dev/null) || HTTP_CODE="000"
-if [[ "$HTTP_CODE" == "000" ]]; then
-  echo "send.sh: bridge unreachable at $BRIDGE_BASE — start the WhatsApp bridge daemon first" >&2
-  exit 4
+# Skip the preflight when --dry-run; dry-run validates resolution + denylist
+# locally and never touches the network, so it must work even when the bridge
+# is down (e.g., during smoke-tests / debugging).
+if [[ "$DRY_RUN" != "1" ]]; then
+  HTTP_CODE=$(curl -sS -o /dev/null -w '%{http_code}' -m 3 -X POST "$BRIDGE_BASE/send" -d '{}' 2>/dev/null) || HTTP_CODE="000"
+  if [[ "$HTTP_CODE" == "000" ]]; then
+    echo "send.sh: bridge unreachable at $BRIDGE_BASE — start the WhatsApp bridge daemon first" >&2
+    exit 4
+  fi
 fi
 
 # ─── Resolve recipient → bridge format ─────────────────────────────────────────
@@ -87,58 +92,9 @@ if [[ -n "$GROUP" ]]; then
     RECIPIENT="$GROUP"
     PATH_TAG="group-by-jid"
   else
-    # Slug → JID lookup. Mirrors the collision-resolution logic in ingest:
-    # - Each chat has a base slug (kebab of name) and may have a disambiguator
-    #   suffix when ingest detected multiple chats with the same base slug.
-    # - The user could supply either the base slug (no collision) or the
-    #   suffixed form (collision), so we accept either and dedupe at the end.
-    # - The full whatsmeow JID is the source of truth — passing slug + db
-    #   path as argv prevents Python heredoc injection.
-    JID=$(python3 - "$GROUP" "$BRIDGE_DB" <<'PY'
-import hashlib, re, sqlite3, sys
-from collections import defaultdict
-slug_in = sys.argv[1].strip()
-db = sys.argv[2]
-def kc(s):
-    s = re.sub(r"[^\w\s-]", "", (s or "").lower())
-    s = re.sub(r"[\s_]+", "-", s)
-    s = re.sub(r"-+", "-", s).strip("-")
-    return s or "unknown"
-con = sqlite3.connect(f"file:{db}?mode=ro", uri=True)
-groups = list(con.execute("SELECT jid, name FROM chats WHERE jid LIKE \"%@g.us\"").fetchall())
-# Build base→[jid] then assign each jid a suffixed slug iff its base is shared.
-base = {jid: kc(name) for jid, name in groups}
-buckets = defaultdict(list)
-for jid, b in base.items():
-    buckets[b].append(jid)
-def short_suffix(jid: str) -> str:
-    digits = re.sub(r"\D", "", jid.split("@", 1)[0])
-    return digits[-4:] if len(digits) >= 4 else (digits or "x")
-suffixed = {}
-for b, jids in buckets.items():
-    if len(jids) <= 1:
-        continue
-    used = set()
-    fallback = []
-    for jid in jids:
-        s = f"{b}-{short_suffix(jid)}"
-        if s in used:
-            fallback.append(jid)
-        else:
-            suffixed[jid] = s
-            used.add(s)
-    for jid in fallback:
-        suffixed[jid] = f"{b}-" + hashlib.sha256(jid.encode()).hexdigest()[:8]
-matches = []
-for jid, _ in groups:
-    candidates = {base[jid]}
-    if jid in suffixed:
-        candidates.add(suffixed[jid])
-    if slug_in in candidates:
-        matches.append(jid)
-print("|".join(matches))
-PY
-)
+    # Slug → JID via the shared resolver. Single source of truth for
+    # collision resolution; identical to ingest's algorithm.
+    JID=$(python3 ~/ULTRON/_shell/skills/whatsapp/_resolve.py --db "$BRIDGE_DB" --slug "$GROUP")
     if [[ -z "$JID" ]]; then
       fail "no group chat matched slug '$GROUP' in $BRIDGE_DB"
     fi

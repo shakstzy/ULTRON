@@ -62,7 +62,7 @@ async function createLabel(name, { send }) {
   const { stdout } = await gog([
     "-a", ACCOUNT_EMAIL,
     "gmail", "labels", "create",
-    "--name", name,
+    name,
     "-j",
   ]);
   let parsed;
@@ -109,9 +109,9 @@ export async function applyLabelToThread(threadId, labelId, { send } = { send: f
   }
   await gog([
     "-a", ACCOUNT_EMAIL,
-    "gmail", "threads", "modify",
+    "gmail", "thread", "modify",
     threadId,
-    "--add-label", labelId,
+    "--add", labelId,
   ]);
   await audit("label-apply", { threadId, labelId });
 }
@@ -123,9 +123,9 @@ export async function removeLabelFromThread(threadId, labelId, { send } = { send
   }
   await gog([
     "-a", ACCOUNT_EMAIL,
-    "gmail", "threads", "modify",
+    "gmail", "thread", "modify",
     threadId,
-    "--remove-label", labelId,
+    "--remove", labelId,
   ]);
   await audit("label-remove", { threadId, labelId });
 }
@@ -137,9 +137,9 @@ export async function markThreadUnread(threadId, { send } = { send: false }) {
   }
   await gog([
     "-a", ACCOUNT_EMAIL,
-    "gmail", "threads", "modify",
+    "gmail", "thread", "modify",
     threadId,
-    "--add-label", "UNREAD",
+    "--add", "UNREAD",
   ]);
   await audit("mark-unread", { threadId });
 }

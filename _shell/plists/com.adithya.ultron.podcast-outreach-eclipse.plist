@@ -14,26 +14,24 @@
 		<string>/Users/shakstzy/ULTRON</string>
 	</dict>
 	<key>Label</key>
-	<string>com.adithya.ultron.granola-reconcile</string>
+	<string>com.adithya.ultron.podcast-outreach-eclipse</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>/bin/bash</string>
 		<string>-c</string>
-		<string>flock -n /tmp/com.adithya.ultron.granola-reconcile.lock /Users/shakstzy/ULTRON/_shell/bin/cron-runner.py com.adithya.ultron.granola-reconcile -- /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh granola-reconcile</string>
+		<string>flock -n /tmp/com.adithya.ultron.podcast-outreach-eclipse.lock /Users/shakstzy/ULTRON/_shell/bin/cron-runner.py com.adithya.ultron.podcast-outreach-eclipse -- /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh podcast-outreach eclipse</string>
 	</array>
 	<key>RunAtLoad</key>
 	<false/>
 	<key>StandardErrorPath</key>
-	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.granola-reconcile.err.log</string>
+	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.podcast-outreach-eclipse.err.log</string>
 	<key>StandardOutPath</key>
-	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.granola-reconcile.out.log</string>
+	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.podcast-outreach-eclipse.out.log</string>
 	<key>StartCalendarInterval</key>
 	<dict>
 		<key>Hour</key>
-		<integer>6</integer>
+		<integer>10</integer>
 		<key>Minute</key>
-		<integer>0</integer>
-		<key>Weekday</key>
 		<integer>0</integer>
 	</dict>
 	<key>WorkingDirectory</key>

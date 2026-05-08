@@ -14,23 +14,23 @@
 		<string>/Users/shakstzy/ULTRON</string>
 	</dict>
 	<key>Label</key>
-	<string>com.adithya.ultron.granola-reconcile</string>
+	<string>com.adithya.ultron.synthesize-voice-profiles</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>/bin/bash</string>
 		<string>-c</string>
-		<string>flock -n /tmp/com.adithya.ultron.granola-reconcile.lock /Users/shakstzy/ULTRON/_shell/bin/cron-runner.py com.adithya.ultron.granola-reconcile -- /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh granola-reconcile</string>
+		<string>flock -n /tmp/com.adithya.ultron.synthesize-voice-profiles.lock /Users/shakstzy/ULTRON/_shell/bin/cron-runner.py com.adithya.ultron.synthesize-voice-profiles -- /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh synthesize-voice-profiles</string>
 	</array>
 	<key>RunAtLoad</key>
 	<false/>
 	<key>StandardErrorPath</key>
-	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.granola-reconcile.err.log</string>
+	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.synthesize-voice-profiles.err.log</string>
 	<key>StandardOutPath</key>
-	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.granola-reconcile.out.log</string>
+	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.synthesize-voice-profiles.out.log</string>
 	<key>StartCalendarInterval</key>
 	<dict>
 		<key>Hour</key>
-		<integer>6</integer>
+		<integer>4</integer>
 		<key>Minute</key>
 		<integer>0</integer>
 		<key>Weekday</key>

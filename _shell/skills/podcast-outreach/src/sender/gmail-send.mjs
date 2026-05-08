@@ -43,12 +43,14 @@ function gogSpawn(args, input) {
 
 export async function sendEmail({ to, subject, body, send }) {
   if (send) {
+    // `gog send` (alias for `gog gmail send`). Body via stdin avoids any shell
+    // expansion / argv-length issues on long bodies. `--body-file -` reads stdin.
     const args = [
       "-a", ACCOUNT_EMAIL,
-      "gmail", "messages", "send",
+      "send",
       "--to", to,
       "--subject", subject,
-      "--body-stdin",
+      "--body-file", "-",
       "-j",
     ];
     const { stdout } = await gogSpawn(args, body);
@@ -91,11 +93,14 @@ export async function sendEmail({ to, subject, body, send }) {
 // Used by reply scanner. Returns array of thread objects with `messages`
 // summary (from + date + snippet). Limits to recent windows for speed.
 export async function searchThreadsByQuery(query, { limit = 100 } = {}) {
+  // `gog gmail search` takes the query as positional args (Gmail query
+  // syntax). `--max` controls page size; we pass it explicitly because gog
+  // defaults to 10.
   const args = [
     "-a", ACCOUNT_EMAIL,
-    "gmail", "threads", "list",
-    "--query", query,
-    "--limit", String(limit),
+    "gmail", "search",
+    query,
+    "--max", String(limit),
     "-j",
   ];
   const { stdout } = await gogSpawn(args);
@@ -103,7 +108,7 @@ export async function searchThreadsByQuery(query, { limit = 100 } = {}) {
   try {
     parsed = JSON.parse(stdout);
   } catch {
-    throw new Error(`unable to parse gog gmail threads list output: ${stdout.slice(0, 200)}`);
+    throw new Error(`unable to parse gog gmail search output: ${stdout.slice(0, 200)}`);
   }
   return Array.isArray(parsed) ? parsed : (parsed.threads || []);
 }
@@ -111,7 +116,7 @@ export async function searchThreadsByQuery(query, { limit = 100 } = {}) {
 export async function getThread(threadId) {
   const args = [
     "-a", ACCOUNT_EMAIL,
-    "gmail", "threads", "get",
+    "gmail", "thread", "get",
     threadId,
     "-j",
   ];

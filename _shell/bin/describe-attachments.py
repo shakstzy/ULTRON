@@ -201,7 +201,7 @@ def kind_of(mime):
     return "file"
 
 
-def gemini_describe_once(path, kind, account, timeout=180, model=None):
+def gemini_describe_once(path, kind, account, timeout=420, model=None):
     """Single Gemini CLI call with HOME pinned to a specific account dir.
     `account` is (name, home_path); we set env HOME=<home_path> so the CLI
     reads that account's oauth_creds.json instead of the global one.

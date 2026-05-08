@@ -44,7 +44,7 @@ import yaml as _yaml
 
 ULTRON_ROOT = Path(os.environ.get("ULTRON_ROOT", str(Path.home() / "ULTRON")))
 LOGS_DIR = ULTRON_ROOT / "_logs"
-INGEST_VERSION = 1
+INGEST_VERSION = 2  # bump whenever block-render or skip-check semantics change
 
 NOTION_API = "https://api.notion.com/v1"
 NOTION_API_VERSION = "2022-06-28"
@@ -892,7 +892,10 @@ class Walker:
             sys.stderr.write(f"  block fetch failed for page {page['id'][:8]}: {e}\n")
             self.stats["failed"] += 1
             return None
+        # Archived child blocks shouldn't force folder layout — the user
+        # soft-deleted them in Notion, so they must not count.
         has_subpages = any(b.get("type") in ("child_page", "child_database")
+                           and not b.get("archived")
                            for b in blocks)
         out_path = folder_index if has_subpages else single_path
         page_dir = out_path.parent  # folder for assets + child files
@@ -1000,8 +1003,11 @@ class Walker:
                           "page_id": _normalize_id(page["id"])})
                 sys.stderr.write(f"  {action} {out_path.relative_to(ULTRON_ROOT)}\n")
 
-        # Recurse into subpages discovered in blocks.
+        # Recurse into subpages discovered in blocks. Skip archived
+        # children — they were soft-deleted in Notion.
         for blk in blocks:
+            if blk.get("archived"):
+                continue
             t = blk.get("type")
             if t == "child_page":
                 try:
@@ -1165,19 +1171,22 @@ _NOTION_URL_DASHED_RE = re.compile(
 
 
 def _id_from_url_or_raw(s: str) -> str:
-    # Strip any URL query/fragment first so trailing IDs in `?p=…` query params
-    # don't outrank the path's primary ID.
+    # Two-pass: prefer the URL path's primary id (so `?something=<other-uuid>`
+    # doesn't outrank the page slug). Fall back to the full string if the
+    # path holds no id — covers `?p=<uuid>` shapes and bare-id input.
+    candidates = []
     if "://" in s:
-        s_clean = s.split("?", 1)[0].split("#", 1)[0]
-    else:
-        s_clean = s
-    # Try dashed UUID first — it's longer so it's an unambiguous match if present.
-    m = _NOTION_URL_DASHED_RE.search(s_clean)
-    if m:
-        return m.group(1).replace("-", "").lower()
-    m = _NOTION_URL_COMPACT_RE.search(s_clean)
-    if m:
-        return m.group(1).lower()
+        path = s.split("?", 1)[0].split("#", 1)[0]
+        candidates.append(path)
+    candidates.append(s)
+    for c in candidates:
+        # Dashed UUID first — it's longer, so an unambiguous match if present.
+        m = _NOTION_URL_DASHED_RE.search(c)
+        if m:
+            return m.group(1).replace("-", "").lower()
+        m = _NOTION_URL_COMPACT_RE.search(c)
+        if m:
+            return m.group(1).lower()
     cand = s.strip().replace("-", "").lower()
     if re.fullmatch(r"[0-9a-f]{32}", cand):
         return cand

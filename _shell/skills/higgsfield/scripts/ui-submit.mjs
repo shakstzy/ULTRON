@@ -250,21 +250,33 @@ export async function submitViaUI(page, context, runDir, {
   // buttons whose innerText line-2 matches that number first, then pick by
   // proximity among matches.
   const genBtn = await page.evaluateHandle(({ anchor, cost }) => {
+    const vh = window.innerHeight;
+    const vw = window.innerWidth;
     const candidates = Array.from(document.querySelectorAll('button')).filter(b => {
       const t = (b.innerText || '').trim();
       if (!/^generate\b/i.test(t)) return false;
       const r = b.getBoundingClientRect();
-      return r.width > 40 && r.height > 20 && window.getComputedStyle(b).visibility !== 'hidden' && !b.disabled;
+      if (r.width <= 40 || r.height <= 20) return false;
+      if (window.getComputedStyle(b).visibility === 'hidden') return false;
+      if (b.disabled) return false;
+      // Viewport-visibility filter: Marketing V2 renders OFF-SCREEN dupes of
+      // GENERATE during layout transitions (e.g. y=-1597). Prefer buttons whose
+      // center is INSIDE the viewport. Fall back to all visible if none qualify.
+      const cx = r.x + r.width / 2;
+      const cy = r.y + r.height / 2;
+      b.__inViewport = (cx >= 0 && cx <= vw && cy >= 0 && cy <= vh);
+      return true;
     });
     if (candidates.length === 0) return null;
+    const inViewport = candidates.filter(b => b.__inViewport);
+    let pool = inViewport.length > 0 ? inViewport : candidates;
 
-    // STRUCTURAL FILTER FIRST (cinema dual-Generate disambiguation):
+    // STRUCTURAL FILTER (cinema dual-Generate disambiguation):
     // If an active tabpanel container exists, prefer Generate buttons inside it.
     // Cinema-studio renders two tab panels (Image/Video). The active one has
     // aria-hidden="false" or data-state="active". This is the most reliable
     // signal for which Generate to click — adversarial review noted that cost-
     // line2 alone breaks under promotions, dynamic pricing, or DOM changes.
-    let pool = candidates;
     const activePanels = Array.from(document.querySelectorAll(
       '[role="tabpanel"][data-state="active"], ' +
       '[role="tabpanel"]:not([hidden]):not([aria-hidden="true"])'

@@ -1550,6 +1550,7 @@ def main() -> int:
             sys.stderr.write(f"ingest-slack: workspace profile update failed: {exc}\n")
 
         summaries: list[tuple[str, dict]] = []
+        container_failures = 0
         # Per-run cache for conversations.members on group DMs — without this
         # every cron cycle would re-fetch the same membership for every
         # mpim and could 429 the workspace (Codex finding #3).
@@ -1577,15 +1578,22 @@ def main() -> int:
                 sys.stderr.write(
                     f"  slack error on {label}: {err}; continuing.\n"
                 )
+                container_failures += 1
                 continue
             summaries.append((label, s))
             if args.show and args.dry_run:
                 sys.stderr.write(f"    -> {s}\n")
 
         sys.stderr.write(
-            "ingest-slack: done. processed=%d files_written=%d\n"
-            % (len(summaries), sum(s[1]["files_written"] for s in summaries))
+            "ingest-slack: done. processed=%d files_written=%d failures=%d\n"
+            % (len(summaries), sum(s[1]["files_written"] for s in summaries), container_failures)
         )
+        # If every container failed, this is a workspace-wide outage (token
+        # expired, sustained 429, network down) masquerading as a healthy run.
+        # Surface it so cron-auditor flags it instead of seeing exit 0.
+        if containers and not summaries and container_failures > 0:
+            sys.stderr.write("ingest-slack: ALL containers failed — surfacing as non-zero\n")
+            return 1
         return 0
     finally:
         try:

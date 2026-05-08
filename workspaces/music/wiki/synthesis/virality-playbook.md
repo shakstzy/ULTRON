@@ -4,7 +4,9 @@ title: Virality Playbook — Indie Melodic Rap/Pop Short-Form
 sources:
   - deep_research_2026_05_07
   - grok_expert_2026_05_07
+  - codex_cross_check_2026_05_07
   - wantsandneedsbrand_format_study
+  # gemini cross-check exceeded 240s budget on 2026-05-07; not included
 last_updated: 2026-05-07
 genre_focus: melodic-rap / emo-rap / pop (Juice WRLD / Kid Laroi / sombr lane)
 ---
@@ -29,6 +31,13 @@ Volume × surgical hook selection × algorithmic-burner rotation. The 2019 model
 3. **Color-flash match** — dominant red → dominant red; cheapest to engineer
 4. **Eyeline match** — character looking screen-left → artist looking back from screen-right
 5. **Audio bridge** — door slam / lighter click sample-replaced by song's first transient
+
+**Concrete pair templates** (require at least one match per cut):
+- `object trajectory → body movement` (thrown shirt → outfit reveal)
+- `door / opening → scene reveal` (door swings → MV first scene)
+- `fall / drop motion → beat drop` (object falls → drop hits frame)
+- `camera whip → music-video camera whip` (whip-pan → whip-pan)
+- `same color block across cut` (red wall → red lighting)
 
 **Backwards snippet selection rule.** Pick the song's 7–15s window by what the corresponding music video's *first frame* looks like. Its dominant shape, color, motion vector dictates which setup clips can cut from. This is reverse from how indie artists usually pick snippets.
 

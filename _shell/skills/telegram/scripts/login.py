@@ -31,7 +31,7 @@ from session import (
 PENDING_CODE = CRED_DIR / ".telegram-code-pending"
 LOGIN_LOG = CRED_DIR / ".telegram-login.log"
 LOGIN_DONE = CRED_DIR / ".telegram-login-done"
-POLL_TIMEOUT_SECONDS = 1800  # 30 min for Adithya to relay
+POLL_TIMEOUT_SECONDS = 3600  # 1 hour for Adithya to relay
 
 
 def _log(msg: str) -> None:
@@ -76,7 +76,7 @@ async def _start_persistent_login(password: str | None) -> int:
         sent = await client.send_code_request(creds.phone)
         _log(f"code sent for {creds.phone}, hash={sent.phone_code_hash[:8]}...")
         # Visible signal to caller that the request is live and we're now waiting.
-        print(f"code sent to {creds.phone}; waiting for {PENDING_CODE} (10 min)")
+        print(f"code sent to {creds.phone}; waiting for {PENDING_CODE} ({POLL_TIMEOUT_SECONDS//60} min)")
         sys.stdout.flush()
 
         code = await _wait_for_code()

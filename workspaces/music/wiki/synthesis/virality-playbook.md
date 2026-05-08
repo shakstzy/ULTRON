@@ -85,8 +85,11 @@ Volume × surgical hook selection × algorithmic-burner rotation. The 2019 model
 | Platform | #1 signal | #2 | #3 | #4 |
 |---|---|---|---|---|
 | TikTok | 3-sec hold rate | sound-reuse / completion rate | shares | saves |
-| Reels | shares-via-DM | saves | watch time | comments |
-| Shorts | retention curve | search-keyword match | watch time | swipe-up rate |
+| Reels | watch time + sends-via-DM (Mosseri 2025) | saves | likes | comments |
+| Shorts | retention curve | engaged-views (post-Mar 2025 metric) | search-keyword match | watch time |
+
+**Per-post KPI schema** (cron tracks all of these per clip per platform):
+`hold_rate_3s`, `completion_rate`, `avg_watch_time`, `loop_rate`, `share_rate`, `send_rate`, `save_rate`, `comment_rate`, `profile_clicks`, `outbound_link_clicks`. YouTube Shorts also splits `views` (starts/replays, post-Mar-31-2025) vs `engaged_views` (the deeper retention metric — track both).
 
 ## AI tool stack (May 2026)
 
@@ -105,6 +108,16 @@ Volume × surgical hook selection × algorithmic-burner rotation. The 2019 model
 **Skip**: Runway Gen-4 (losing share, shallow audio integration)
 
 **The AI-as-VFX-layer rule.** Do NOT generate the artist performing. Generate the *world around* an existing iPhone-shot of the artist (set extension, sky replacement, color-grade). Human anchor stays real. AI face replacement is in the AI-slop blast radius — Spotify removed 75M+ AI tracks in 12 months; "slopperator" is a fan insult now.
+
+**Image-to-video prompt template** (image-to-video beats text-to-video for promo because the reference image locks identity, styling, composition):
+
+```
+vertical 9:16, the subject from reference image, one camera move,
+one action beat, one environmental motion, mood tied to lyric,
+5 seconds, cuttable on beat
+```
+
+Fewer rerolls per clip; consistent identity across the 30-clip burner flood.
 
 ## Aesthetic hierarchy (melodic-rap / emo-rap)
 
@@ -178,27 +191,43 @@ Goal for back-catalog: sound adoption (other creators using your track), not jus
 - Engage in comment sections under fan creates AS the artist (converts casual users to repeat creators)
 - Seed sound-page niche micro-trends via burner pages first, so when organic creators arrive the format already exists
 
-## Don't-do list
+## Don't-do list (encoded as pre-publish QA filters)
 
-- "Stream my new song on Spotify" hook — single highest-flop opener
-- Watermarks on cross-posts — Reels/Shorts both penalize TikTok watermarks; always re-export clean
-- Bad mastering for phone speakers — most TikTok plays on internal speakers; if low-end too dominant or vocal sits too low, completion drops. Re-master a "phone-speaker version" of every snippet
-- Hook on drop instead of vocal (see vocal-led section)
-- Music-only with no human anchor — algorithms now down-rank pure audio-visualizer content; even 0.5s of human face/movement at start re-classifies
-- Post clusters <4 hours apart on same account (clips compete with each other)
-- Long captions on Reels (hurts reach); long captions on TikTok (truncated)
-- Banned/shadowed hashtags (any tag whose search shows "recent posts hidden")
-- Botted views or comment manipulation — DistroKid forwards Spotify fraud penalties
-- Identical cross-posts (all 3 platforms identify and suppress)
+Any clip the pipeline generates must REJECT if it matches any of:
+- `logo_first_frame` — album cover or label logo as opener
+- `cta_in_first_3s` — "stream my new song" / "out now" verbatim text
+- `tiktok_watermark_visible` — Reels & Shorts both penalize cross-posted TT watermarks
+- `horizontal_crop` — anything not 9:16 vertical
+- `tiny_caption_text` — text under 32pt at 1080×1920
+- `music_starts_after_2.5s` — auto-trim setup until drop lands ≤2.5s
+- `no_human_anchor_first_500ms` — needs ≥0.5s of face/body/hand motion at start (algorithms down-rank pure audio-viz)
+- `hook_on_drop_not_vocal` — propagating sound must be vocal-led
+- `bad_phone_speaker_mix` — low-end too dominant or vocal too low (re-master "phone-speaker version")
+- `banned_hashtag_present` — any tag whose IG search shows "recent posts hidden"
+- `caption_over_150_chars_on_reels` — truncates engagement
+- `posted_within_4hr_of_last_same_account` — internal cannibalization
+- `ai_face_drift` — generated clip where the artist's face is inconsistent with reference
+- `identical_cross_post` — all 3 platforms detect and suppress (re-edit per platform)
 
 ## Workflow cadence (sustainable indie volume)
 
-- **1× weekly studio session (4 hrs)** → 30–50 raw clips (face B-roll, performance, lifestyle, talking-head)
-- **2× weekly AI-generation batch (2 hrs each)** → 20–40 AI clips (Veo 3.1 free + Higgsfield Cinema Studio)
-- **Daily 30-min editing block** → 4–8 finished clips by mixing one piece of each pool with a chosen 10-second snippet
-- **Scheduling**: Buffer/Later for Reels/Shorts, native scheduler for TikTok, cross-posting tool for burner network
+**Per single, per week** (the lead-song cycle):
+- **5 transition-drop edits** (the wants-and-needs format)
+- **3 POV lyric memes** (typography + driving B-roll)
+- **2 performance proof clips** (face / lip-sync)
+- **2 AI-world visualizers** (Higgsfield image-to-video, fantasy world)
+- **1 BTS/authenticity clip** (studio, behind-the-mic)
 
-Target: **15–40 daily algorithmic shots** across main + burners, sustainable indefinitely.
+= 13 finished clips per song per week. Distributed across main account (1–2/day) + 3–5 burner pages (2–4/day each).
+
+**Production cadence**:
+- 1× weekly studio session (4 hrs) → 30–50 raw clips (face B-roll, performance, lifestyle)
+- 2× weekly AI batch (2 hrs each) → 20–40 AI clips (Veo 3.1 free + Higgsfield)
+- Daily 30-min edit block → 4–8 finished clips
+
+**Auto-pruning**: keep only clip variants that beat your trailing-7-day median on `hold_rate_3s` AND `completion_rate`. Triple down on winning windows; drop dead patterns from rotation.
+
+Target: **15–40 daily algorithmic shots**, sustainable indefinitely.
 
 ## Caveats / known unknowns
 

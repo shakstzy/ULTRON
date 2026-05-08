@@ -195,6 +195,20 @@ async def cmd_send(args) -> int:
         sys.exit("empty message")
     async with open_client() as client:
         ent, chat_id = await _resolve_chat(client, args.chat)
+        if args.dry_run:
+            out = {
+                "dry_run": True,
+                "chat_id": chat_id,
+                "chat_title": _entity_title(ent),
+                "chat_kind": _kind_of(ent),
+                "text": text,
+                "would_send": True,
+            }
+            if args.json:
+                print(json.dumps(out, indent=2))
+            else:
+                print(f"DRY-RUN — would send to {out['chat_title']} (id={chat_id}, {out['chat_kind']}): {text!r}")
+            return 0
         msg = await client.send_message(ent, text)
         out = {
             "chat_id": chat_id,
@@ -280,6 +294,8 @@ def main() -> int:
     ps = sub.add_parser("send", parents=[common], help="send a text message")
     ps.add_argument("chat", help="chat id, @username, or name substring")
     ps.add_argument("text", nargs="+", help="message body")
+    ps.add_argument("--dry-run", action="store_true",
+                    help="resolve chat + render payload but do NOT send")
 
     sub.add_parser("status", parents=[common], help="credentials + session + breaker state")
     sub.add_parser("reset-breaker", parents=[common], help="clear 24h halt")

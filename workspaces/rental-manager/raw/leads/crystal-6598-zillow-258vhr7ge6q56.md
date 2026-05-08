@@ -9,7 +9,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 5397343185881733553
 status_label: APPLICATION WITHDRAWN
-last_pulled_at: "2026-05-08T02:54:42.090Z"
+last_pulled_at: "2026-05-08T03:01:11.475Z"
 ---
 
 # Crystal
@@ -36,6 +36,10 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 
 ## Messages
 
-### 2025-05-12T00:28:37.000Z - Crystal huanosta
+### 2026-02-26T20:56:22.000Z - Crystal huanosta
 
-New application request 13245 Klein Ct, Sylmar, CA, 91342. Crystal huanosta requested an application: Application submitted Send application Reply to Crystal You can also reply directly to this email.
+how much are your two bedrooms?
+
+### 2026-05-07T20:46:24.000Z - Owner (Adithya)
+
+hey crystal, rooms are still open if your timeline shifted. 3rd floor walk-in rooms are $1000, 2nd floor private bath $1200, 1st floor suite $1250, utilities flat $100/mo. pets welcome too. you still in the market?

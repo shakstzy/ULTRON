@@ -10,7 +10,7 @@ listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 126748019501630724
 status_label: TOUR REQUESTED
 renter_us_state: CA
-last_pulled_at: "2026-05-08T02:54:16.603Z"
+last_pulled_at: "2026-05-08T03:00:58.529Z"
 ---
 
 # Helen
@@ -37,6 +37,10 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 
 ## Messages
 
-### 2025-09-16T01:47:44.000Z - Helen marroquin
+### 2026-03-11T02:33:05.000Z - Helen marroquin
 
-I would like to schedule a tour.
+Hello, Sorry but I hadn’t seen the messages. If I still need a place
+
+### 2026-05-07T20:43:58.000Z - Owner (Adithya)
+
+no worries Helen. with an April move-in you've still got time. rooms are still open, $1000 to $1250 depending on the floor. what day works to swing by this week?

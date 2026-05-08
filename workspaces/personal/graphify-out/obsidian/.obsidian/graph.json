@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "avery",
+  "search": "pseu ",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -17,6 +17,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 2.3352007252396247,
+  "scale": 1.8002479524148312,
   "close": false
 }

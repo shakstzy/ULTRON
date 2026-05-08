@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "720f679ac4a41f22",
+        "id": "ed386ce3aaf4633b",
         "type": "tabs",
         "children": [
           {
-            "id": "ed3c4713f29ca297",
+            "id": "e3719fc23806159d",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Adarsh (friend, pseu crew).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Adarsh (friend, pseu crew)"
             }
           }
         ]
@@ -91,6 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Adarsh (friend, pseu crew).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Adarsh (friend, pseu crew)"
             }
           },
           {
@@ -109,11 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Adarsh (friend, pseu crew).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Adarsh (friend, pseu crew)"
             }
           },
           {
@@ -151,12 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Adarsh (friend, pseu crew).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Adarsh (friend, pseu crew)"
             }
           }
         ]
@@ -177,8 +184,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "ed3c4713f29ca297",
+  "active": "e3719fc23806159d",
   "lastOpenFiles": [
+    "Adarsh (friend, pseu crew).md",
+    "_COMMUNITY_Amsterdam Trip + Festival Crew.md",
+    "_COMMUNITY_CryptoWeb3 Network.md",
     "_COMMUNITY_Austin Dating + Locals.md",
     "Binni (Austin, UT student).md",
     "Linh Pham (Rishika Roommate).md",
@@ -201,9 +211,6 @@
     "_COMMUNITY_Community 13.md",
     "_COMMUNITY_Community 7.md",
     "_COMMUNITY_Community 2.md",
-    "_COMMUNITY_Community 6.md",
-    "_COMMUNITY_Community 4.md",
-    "_COMMUNITY_Community 8.md",
-    "_COMMUNITY_Community 1.md"
+    "_COMMUNITY_Community 6.md"
   ]
 }

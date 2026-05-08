@@ -606,11 +606,23 @@ def _enumerate_raw(account: str, ws: str, designated_folder_id: str) -> dict:
 # ============================================================================
 
 def _atomic_write_text(path: Path, content: str) -> None:
-    """Write text via temp + rename so partial writes never land at the final path."""
+    """Write text via temp + rename so partial writes never land at the final
+    path. Also fsync the parent directory after rename — without it, the
+    rename can be lost across power failure even though the new inode survives."""
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_name(path.name + f".tmp.{os.getpid()}")
-    tmp.write_text(content, encoding="utf-8")
+    with tmp.open("w", encoding="utf-8") as f:
+        f.write(content)
+        f.flush()
+        os.fsync(f.fileno())
     os.replace(tmp, path)
+    dir_fd = os.open(str(path.parent), os.O_RDONLY)
+    try:
+        os.fsync(dir_fd)
+    except OSError:
+        pass
+    finally:
+        os.close(dir_fd)
 
 
 def serialize_md(file_path: Path, frontmatter: dict, body: str) -> None:

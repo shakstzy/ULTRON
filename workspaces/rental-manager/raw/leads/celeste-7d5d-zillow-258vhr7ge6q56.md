@@ -26,3 +26,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 ### 2025-08-26T17:50:55.000Z - Celeste Arnold
 
 Hello, are emotional support dogs accepted?
+
+### 2026-05-08T18:58:32.685Z - Owner (Adithya)
+
+Yeah dogs are welcome here. Let me know what days work for you to check the place out.

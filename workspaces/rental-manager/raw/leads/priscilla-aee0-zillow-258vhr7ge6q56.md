@@ -26,3 +26,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 ### 2025-08-04T17:51:44.000Z - Priscilla Olaya
 
 I'd like to schedule a viewing for Klein Ct, Sylmar, CA 91342, US. Please contact me with more information! Are pets allowed?
+
+### 2026-05-08T18:57:56.993Z - Owner (Adithya)
+
+Hey Priscilla. Yes pets are totally welcome. Let me know what days and times work for you to come check it out.

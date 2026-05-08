@@ -82,11 +82,16 @@ def apply_accept(c: dict) -> tuple[bool, str]:
             "--canonical", c["obj"],
         ]
     elif c["kind"] == "link":
+        # Cooccurrence-derived edges (e.g. "knows") are inherently
+        # symmetric. Mark them so link.py writes the reciprocal edge.
+        symmetric_types = {"knows", "co_attended", "connected"}
         cmd = [
             sys.executable, str(LINK_SCRIPT),
             "add", c["subj"], c["type"], c["obj"],
             "--note", f"accepted from candidate {c['id']}",
         ]
+        if c["type"] in symmetric_types:
+            cmd.append("--symmetric")
     else:
         return False, f"unknown kind: {c['kind']}"
 

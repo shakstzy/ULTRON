@@ -1,6 +1,8 @@
 # Library Schema
 
-Workspace schema. Defines entity types, page formats, and the vocabulary the wiki agent uses when ingesting and synthesizing.
+Workspace schema. Defines entity types and **wiki page formats**. The wiki agent (run downstream by `/graphify --wiki workspaces/library` or a future lint stage) reads this when synthesizing wiki pages from `raw/`.
+
+> **Raw files** carry the universal envelope per `_shell/stages/ingest/CONTEXT.md` (source / workspace / ingested_at / ingest_version / content_hash / provider_modified_at) plus per-source fields. The schemas below describe the WIKI side, not the raw side.
 
 ## Entity types
 

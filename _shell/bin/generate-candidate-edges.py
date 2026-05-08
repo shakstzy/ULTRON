@@ -35,6 +35,7 @@ from pathlib import Path
 ULTRON_ROOT = Path(os.environ.get("ULTRON_ROOT", str(Path.home() / "ULTRON")))
 WORKSPACES_DIR = ULTRON_ROOT / "workspaces"
 SUPER_GRAPH = ULTRON_ROOT / "_graphify" / "super" / "graph.json"
+GLOBAL_ENTITIES = ULTRON_ROOT / "_global" / "entities"
 AUDIT_DIR = ULTRON_ROOT / "_shell" / "audit"
 CANDIDATES_FILE = AUDIT_DIR / "candidate_edges.jsonl"
 REJECTED_FILE = AUDIT_DIR / "rejected_edges.jsonl"
@@ -62,6 +63,48 @@ def edge_id(subj: str, obj: str, kind: str) -> str:
     """Stable id for dedup. Order-independent for symmetric kinds."""
     parts = sorted([subj, obj]) if kind in ("alias", "knows", "co_attended") else [subj, obj]
     return hashlib.blake2b(f"{kind}:{parts[0]}:{parts[1]}".encode(), digest_size=8).hexdigest()
+
+
+def build_slug_index() -> dict[str, str]:
+    """Index every existing entity slug under _global/entities/ AND each
+    workspace's wiki/entities/. Returns {normalized_form -> canonical_slug}.
+
+    Graphify uses underscored node ids; the skills look up files by slug
+    (typically hyphenated). This index lets us map graphify-id -> actual
+    file slug so accepted candidates can dispatch into link/alias cleanly.
+    """
+    index: dict[str, str] = {}
+
+    def _add(slug: str) -> None:
+        if not slug:
+            return
+        # Map both the slug as-is and its underscore-equivalent.
+        for form in {slug, slug.replace("-", "_"), slug.replace("_", "-")}:
+            index.setdefault(form.lower(), slug)
+
+    if GLOBAL_ENTITIES.exists():
+        for p in GLOBAL_ENTITIES.rglob("*.md"):
+            _add(p.stem)
+
+    if WORKSPACES_DIR.exists():
+        for ws in WORKSPACES_DIR.iterdir():
+            if not ws.is_dir() or ws.name.startswith("_"):
+                continue
+            ents = ws / "wiki" / "entities"
+            if not ents.exists():
+                continue
+            for p in ents.rglob("*.md"):
+                _add(p.stem)
+
+    return index
+
+
+def resolve_slug(node_id: str, index: dict[str, str]) -> str | None:
+    """Return the canonical file slug for a graphify node id, or None if
+    no entity file exists for it."""
+    if not node_id:
+        return None
+    return index.get(node_id.lower())
 
 
 def load_super() -> dict | None:
@@ -137,7 +180,7 @@ def load_existing_pending_ids() -> set[str]:
     return out
 
 
-def alias_candidates(per_ws: dict[str, list[dict]]) -> list[dict]:
+def alias_candidates(per_ws: dict[str, list[dict]], slug_index: dict[str, str]) -> list[dict]:
     """Same normalized label, different ids, 2+ workspaces."""
     by_key: dict[str, list[dict]] = defaultdict(list)
     for ws, nodes in per_ws.items():
@@ -152,34 +195,46 @@ def alias_candidates(per_ws: dict[str, list[dict]]) -> list[dict]:
         ws_set = {e["ws"] for e in entries}
         if len(ws_set) < 2:
             continue
-        ids = {e["id"] for e in entries}
-        if len(ids) <= 1:
-            # Same id across workspaces — already merged by super-graph.
-            continue
-        # Pick the longest id as the canonical proposal (most context).
-        canonical = max(ids, key=len)
+        # Resolve graphify node ids to actual on-disk entity slugs. Any
+        # candidate whose endpoints don't have entity files is skipped —
+        # link/alias would just fail, no point queueing.
+        resolved = []
         for e in entries:
-            if e["id"] == canonical:
+            slug = resolve_slug(e["id"], slug_index)
+            if slug is None:
+                continue
+            resolved.append({**e, "slug": slug})
+        if len({r["slug"] for r in resolved}) < 2:
+            continue
+
+        slugs = sorted({r["slug"] for r in resolved}, key=len, reverse=True)
+        canonical = slugs[0]
+        for r in resolved:
+            if r["slug"] == canonical:
                 continue
             out.append({
-                "id": edge_id(e["id"], canonical, "alias"),
+                "id": edge_id(r["slug"], canonical, "alias"),
                 "kind": "alias",
-                "subj": e["id"],
+                "subj": r["slug"],
                 "obj": canonical,
-                "subj_label": e["label"],
-                "obj_label": next(x["label"] for x in entries if x["id"] == canonical),
+                "subj_label": r["label"],
+                "obj_label": next(x["label"] for x in resolved if x["slug"] == canonical),
                 "type": "alias_of",
-                "reason": f"normalized label '{key}' appears in {len(ws_set)} workspaces with different ids",
+                "reason": f"normalized label '{key}' resolves to multiple entity slugs across {len(ws_set)} workspaces",
                 "confidence": 0.7,
                 "proposed_by": "label_overlap",
-                "evidence": {"workspaces": sorted(ws_set), "all_ids": sorted(ids)},
+                "evidence": {
+                    "workspaces": sorted(ws_set),
+                    "graphify_ids": sorted({r["id"] for r in resolved}),
+                    "resolved_slugs": slugs,
+                },
                 "status": "pending",
                 "created_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
             })
     return out
 
 
-def cooccurrence_candidates(super_g: dict, min_shared: int) -> list[dict]:
+def cooccurrence_candidates(super_g: dict, min_shared: int, slug_index: dict[str, str]) -> list[dict]:
     """Pairs with min_shared+ shared neighbors but no direct edge."""
     nodes = super_g.get("nodes", [])
     links = super_g.get("links", [])
@@ -218,20 +273,24 @@ def cooccurrence_candidates(super_g: dict, min_shared: int) -> list[dict]:
             continue
         if (a, b) in direct:
             continue
-        # Confidence climbs gently with shared count, capped.
+        a_slug = resolve_slug(a, slug_index)
+        b_slug = resolve_slug(b, slug_index)
+        # Skip pairs we can't apply against — both endpoints need entity files.
+        if a_slug is None or b_slug is None or a_slug == b_slug:
+            continue
         confidence = min(0.9, 0.4 + 0.05 * count)
         out.append({
-            "id": edge_id(a, b, "knows"),
+            "id": edge_id(a_slug, b_slug, "knows"),
             "kind": "link",
-            "subj": a,
-            "obj": b,
-            "subj_label": a,
-            "obj_label": b,
+            "subj": a_slug,
+            "obj": b_slug,
+            "subj_label": a_slug,
+            "obj_label": b_slug,
             "type": "knows",
             "reason": f"{count} shared neighbors, no direct edge",
             "confidence": round(confidence, 2),
             "proposed_by": "cooccurrence",
-            "evidence": {"shared_count": count},
+            "evidence": {"shared_count": count, "graphify_ids": [a, b]},
             "status": "pending",
             "created_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         })
@@ -254,15 +313,16 @@ def main() -> int:
     pending = load_existing_pending_ids()
     skip = rejected | pending
 
+    slug_index = build_slug_index()
     per_ws = load_per_workspace_nodes()
-    aliases = alias_candidates(per_ws)
+    aliases = alias_candidates(per_ws, slug_index)
     aliases = [c for c in aliases if c["id"] not in skip]
 
     cooccur: list[dict] = []
     if not args.no_cooccur:
         sg = load_super()
         if sg is not None:
-            cooccur = cooccurrence_candidates(sg, args.min_shared)
+            cooccur = cooccurrence_candidates(sg, args.min_shared, slug_index)
             cooccur = [c for c in cooccur if c["id"] not in skip]
 
     new_candidates = aliases + cooccur

@@ -43,6 +43,8 @@ Per-run artifacts: `~/.quantum/distrokid/runs/<timestamp>/` (screenshots, metada
 
 ## Procedure (ship a track)
 
+**Do NOT re-prompt for any parameter in "Locked defaults" below.** When Adithya says "ship <track>" / "upload <track>", that phrase is full pre-authorization for the entire skill — including release date (today), artist (Shak STZY), label (Outerscope), genre (Hip Hop/Rap → Pop), explicit (yes), all 23 stores + Snapchat + Roblox, and auto-generated cover art via gpt-images. **Generate the cover, default the date to today, run the upload.** Only re-prompt when Adithya explicitly overrides a default in the trigger message ("drop superdrugs as Pharma" → title override; "drop dime clean" → explicit=false). Asking "what artist?" / "do you have cover art?" / "what release date?" is wrong — those are answered.
+
 When Adithya says "ship <track>" / "upload <track>", do this:
 
 1. **Resolve the WAV path.** Logic projects bounce to one of two patterns:

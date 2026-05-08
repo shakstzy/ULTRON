@@ -6,3 +6,7 @@
 - 2026-05-07T22:24:00 — ingest-paper: vaswani-attention-all-you-2017 ('Attention Is All You Need')
 - 2026-05-07T22:24:04 — ingest-youtube: 3blue1brown-what-neural-network-deep-airca ('But what is a neural network? | Deep learning chapter 1')
 - 2026-05-07T22:24:04 — ingest-batch: {'total': 3, 'ok': 3, 'skip': 0, 'error': 0, 'by_kind': {'article': 1, 'paper': 1, 'youtube-video': 1}}
+- 2026-05-07T22:26:22 — ingest-article: paulgraham-how-do-great-work ('How to Do Great Work')
+- 2026-05-07T22:26:23 — ingest-article: paulgraham-having-kids ('Having Kids')
+- 2026-05-07T22:26:23 — ingest-article: paulgraham-how-lose-time-money ('How to Lose Time and Money')
+- 2026-05-07T22:26:23 — ingest-batch: {'total': 3, 'ok': 3, 'skip': 0, 'error': 0, 'by_kind': {'article': 3}}

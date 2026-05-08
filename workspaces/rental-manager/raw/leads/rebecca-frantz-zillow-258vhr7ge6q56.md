@@ -8,15 +8,15 @@ reference_email: "2ftvyqajv8pwuikrta5m6fp6ns@convo.zillow.com"
 listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 4135075795335991467
-status_label: TOURED
-last_pulled_at: "2026-05-07T03:03:57.642Z"
+status_label: INQUIRED
+last_pulled_at: "2026-05-08T02:51:02.748Z"
 ---
 
 # Rebecca Frantz
 
 Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 
-- Status: `TOURED`
+- Status: `INQUIRED`
 - Phone: `+13238297698`
 - Zillow forwarding email: `2ftvyqajv8pwuikrta5m6fp6ns@convo.zillow.com`
 - Conversation ID: `4135075795335991467`
@@ -36,49 +36,22 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 
 ## Messages
 
-### 2026-02-18T20:10:32.394Z - Owner (Adithya)
+### 2026-02-18T20:05:40.000Z - Rebecca Frantz
 
-Where are you
+Hi are you here for the tour?
 
-### 2026-02-18T20:12:14.946Z - Rebecca Frantz
+### 2026-02-18T20:12:16.000Z - Rebecca Frantz
 
 Was walking around the streets trying to find it
 
-### 2026-02-18T20:12:18.276Z - Rebecca Frantz
+### 2026-02-18T20:12:20.000Z - Rebecca Frantz
 
 Just arrived
 
-### 2026-02-18T20:13:18.960Z - Rebecca Frantz
+### 2026-02-18T20:13:24.000Z - Rebecca Frantz
 
 Tried ringing the doorbell
 
-### 2026-02-24T05:06:41.681Z - Owner (Adithya)
-
-Are you interested?
-https://www.zillow.com/homedetails/13245-Klein-Ct-Sylmar-CA-91342/244911856_zpid/?view=public
-
-I am going to do tours this week?
-
-### 2026-02-26T21:04:06.419Z - Owner (Adithya)
-
-https://photos.app.goo.gl/3ZJBjwiS8pp4kbGS8
-
-### 2026-02-26T21:21:11.899Z - Owner (Adithya)
-
-pls see pictures and let me know which level/rooms you are interested in and I'll arrange tour.
-
-### 2026-02-26T21:22:42.515Z - Owner (Adithya)
-
-if you found something else, let me know, so I can remove you from my potential renters list
-
-### 2026-03-02T21:10:01.574Z - Owner (Adithya)
-
-if you found something else, let me know, so I can remove you from my potential renters list
-
-### 2026-03-09T19:31:08.080Z - Owner (Adithya)
-
-wanted to reping on the above, did you get a chance to tour the property
-
-### 2026-05-07T20:45:35.106Z - Owner (Adithya)
+### 2026-05-07T20:45:34.000Z - Owner (Adithya)
 
 Hey Rebecca, circling back. Are you still considering the place? If you want to move forward here's the application: https://www.zillow.com/renter-hub/applications/listing/258vhr7ge6q56/rental-application/?itc=rentalhdpapplynow

@@ -408,8 +408,16 @@ export async function runCinema(argv) {
       console.log(`[higgsfield] uploaded ${u.uploaded} reference file(s): ${absPaths.join(', ')}`);
     }
 
+    // Cinema 3.5 renders BOTH image and video prompt textareas simultaneously
+    // (no [role=tabpanel] markup). Disambiguate by placeholder text: image mode
+    // prompt has "Describe your scene..." placeholder, video mode has "Enter a
+    // prompt...". Without this, prompt fills wrong panel and Generate is gated.
+    const promptSelector = mode === 'image'
+      ? 'div[role="textbox"][contenteditable="true"][data-placeholder*="Describe"], textarea[placeholder*="Describe"]'
+      : 'div[role="textbox"][contenteditable="true"][data-placeholder*="Enter a prompt"], textarea[placeholder*="Enter a prompt"]';
     const submission = await submitViaUI(ctx.page, ctx.context, runDir, {
-      slug: cfg.slug, prompt: argv.scene, responseTimeoutMs: 60000, expectedCost: cfg.cost
+      slug: cfg.slug, prompt: argv.scene, responseTimeoutMs: 60000, expectedCost: cfg.cost,
+      promptSelector
     });
 
     await transition(runDir, 'polling', {});

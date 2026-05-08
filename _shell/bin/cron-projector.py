@@ -123,8 +123,8 @@ def collect_desired(now):
 def list_existing_schedule_events(cfg):
     """Return {stable_id: (event_id, htmlLink)} for events tagged ultron_kind=schedule."""
     now = datetime.datetime.now().astimezone()
-    window_start = (now - datetime.timedelta(days=14)).strftime("%Y-%m-%d")
-    window_end = (now + datetime.timedelta(days=400)).strftime("%Y-%m-%d")
+    window_start = (now - datetime.timedelta(days=7)).strftime("%Y-%m-%d")
+    window_end = (now + datetime.timedelta(days=7)).strftime("%Y-%m-%d")
     args = [
         GOG, "-a", cfg["account"], "cal", "events", cfg["calendar_id"],
         "--private-prop-filter", "ultron_kind=schedule",

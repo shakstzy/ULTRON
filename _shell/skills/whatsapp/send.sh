@@ -79,15 +79,24 @@ if [[ -n "$FILE" ]]; then
   FILE="$ABS_FILE"
 fi
 
-# ─── Pre-flight: bridge reachable? ─────────────────────────────────────────────
+# ─── Pre-flight: bridge reachable AND healthy? ────────────────────────────────
 # Skip the preflight when --dry-run; dry-run validates resolution + denylist
 # locally and never touches the network, so it must work even when the bridge
 # is down (e.g., during smoke-tests / debugging).
+#
+# We classify HTTP codes:
+#   000 → no connection (bridge process down or port closed)         exit 4
+#   5xx → bridge running but unhealthy (auth expired, panic, etc.)   exit 5
+#   1xx-4xx → reachable; 4xx is expected here since {} fails schema  pass
 if [[ "$DRY_RUN" != "1" ]]; then
   HTTP_CODE=$(curl -sS -o /dev/null -w '%{http_code}' -m 3 -X POST "$BRIDGE_BASE/send" -d '{}' 2>/dev/null) || HTTP_CODE="000"
   if [[ "$HTTP_CODE" == "000" ]]; then
     echo "send.sh: bridge unreachable at $BRIDGE_BASE — start the WhatsApp bridge daemon first" >&2
     exit 4
+  fi
+  if [[ "$HTTP_CODE" =~ ^5[0-9][0-9]$ ]]; then
+    echo "send.sh: bridge returned $HTTP_CODE (unhealthy: probably auth expired / internal error). Inspect _logs/com.adithya.ultron.daemon-whatsapp-bridge.err.log" >&2
+    exit 5
   fi
 fi
 

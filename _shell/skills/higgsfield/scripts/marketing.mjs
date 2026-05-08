@@ -142,6 +142,16 @@ export async function runMarketing(argv) {
     await browsePhase(ctx.page);
     walletBefore = await preflight(ctx.page, runDir, { expectedCost: EXPECTED_COST, jwtCapture: ctx.jwtCapture, costCap: parseCostCap(argv) });
 
+    // Marketing Studio V2: panel-init click. The PRODUCT button (right rail)
+    // is the default mode but its onClick handler must fire to wire the
+    // submit handler. Without this, GENERATE clicks no-op (only DataDome
+    // /js fires, no /jobs POST). Same pattern as cinema 3.5 mode tabs.
+    // We click PRODUCT explicitly. Skip if --avatar (different mode).
+    if (!argv.avatar) {
+      const productClicked = await selectMarketingTile(ctx.page, 'PRODUCT');
+      console.log(`[higgsfield] V2 panel-init PRODUCT click: ${productClicked ? 'clicked' : 'NOT FOUND'}`);
+    }
+
     if (argv.preset) {
       const ok = await selectPresetByName(ctx.page, argv.preset);
       console.log(`[higgsfield] preset selection by name "${argv.preset}": ${ok ? 'clicked' : 'NOT FOUND (pre-selected state assumed)'}`);

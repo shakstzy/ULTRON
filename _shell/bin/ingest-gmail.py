@@ -1425,9 +1425,12 @@ def main() -> int:
 
     workspaces_config = load_all_workspaces_config()
     if not workspaces_config:
-        sys.stderr.write("ingest-gmail: no workspaces with sources.yaml found\n")
+        # No workspaces configured = misconfiguration, NOT idempotent success.
+        # Exit non-zero so the cron-auditor sees this as a failure instead of
+        # a healthy "nothing to ingest" run.
+        sys.stderr.write("ingest-gmail: no workspaces with sources.yaml found (misconfig)\n")
         run_log.close()
-        return 0
+        return 2
 
     collisions = detect_slug_collisions(workspaces_config)
     if collisions:

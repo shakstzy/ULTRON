@@ -83,15 +83,24 @@ Auth refresh: `POST https://clerk.higgsfield.ai/v1/client/sessions/<sid>/tokens`
 - Cost: 10 to 100 credits per model
 - Key controls in UI: Start frame (optional file), End frame (optional file), Multi-shot toggle, Model picker, Elements, Duration, Aspect ratio, Resolution
 
-## Marketing Studio
+## Marketing Studio V2 (released 2026-04-30)
 
 - Frontend URL: `https://higgsfield.ai/marketing-studio[?marketing-project-id=X]`
-- Backend slug: `marketing_studio_video`
-- Body keys: `preset_id`, `prompt`, `input_images`, `motion_id`
-- Preset catalog: dynamic. Skill fetches via authenticated `GET /presets?surface=marketing_studio_video` and caches per session. Known surface labels from analytics: `UGC`, `TV Spot`, `Hyper Motion`, `Unboxing`, `UGC Virtual Try On`, `Pro Virtual Try On`, `Tutorial`. These are human-readable; actual `preset_id` is fetched.
-- Cost: 40 to 48 credits
-- Modes: `UGC`, `PRODUCT`, `AVATAR`
-- Create-new vs operate-existing: if `--project-id` provided, navigate to project URL and submit within it; if `--new`, click `New project`, enter name, then submit.
+- Backend slug: `marketing_studio_video` (V1 — V2 slug TBD; smoke test 2026-05-08 timed out, use `recon` + `HF_DEBUG=1` to discover real V2 slug from page POSTs)
+- V2 layout (recon 2026-05-08):
+  - Left rail: `Product`/`App` mode tabs (x=297, role=tab)
+  - Center top: `UGC`, `Hook`, `Setting` config tabs (x=389-687, y=357)
+  - Left sidebar: `Url to Ad`, `Ad Reference` (x=6) — paste viral ad URL or upload reference
+  - Right: `PRODUCT`, `AVATAR`, `GENERATE` (x=959-1131, y=306, 80x80 each)
+  - Default project: a sample product (e.g. "Sleek Coffee Grinder") may auto-populate
+- Content modes (10 total): `UGC`, `Product Review`, `Tutorial`, `Unboxing`, `TV Spot`, `Virtual Try-On`, `UGC Virtual Try-On`, `Cleanshot UGC`, `Hyper Motion`, `Wild Card`. Legacy V1 names (`Testimonial`, `How-To`, `Founder Story`, `Product Showcase`) may still resolve.
+- Hermes Agent (viral hooks): "Pick a proven opener, Marketing Studio builds the rest around your product." Click `Hook` tab to access.
+- Avatar library: 40+ pre-built AI presenters (pin/rename/reuse). Click `AVATAR` button.
+- Ad Reference tool: upload a viral ad, AI extracts its structure and applies to your product. Click `Ad Reference` left sidebar.
+- Bulk variant generation: 50+ ad variants for A/B testing (V2 feature, exact UI TBD).
+- 20 ad effects (Ads & Products app library): Click to Ad, ASMR Add-On, Poster, Bullet Time Scene, Bullet Time White/Splash, Giant Product, Billboard Ad, Graffiti Ad, Truck Ad, Volcano Ad, Fridge Ad, Magic Button, Kick Ad, Packshot, Macroshot, Macro Scene, Chameleon, ASMR Host, ASMR Classic.
+- Cost: 40 to 48 credits per gen (V1); V2 cost TBD post-recon.
+- Skill flags: `--preset NAME` (preset selection), `--hook NAME` (viral hook), `--avatar NAME` (avatar library), `--project-id X | --new`.
 
 ## Cinema Studio
 
@@ -105,8 +114,10 @@ Auth refresh: `POST https://clerk.higgsfield.ai/v1/client/sessions/<sid>/tokens`
   - Cinema Studio cinematic base: `soul_cinema_studio`
 - Body keys: `model`, `prompt`, `style`, `characterSheetId`, `locationId`, `genre`, `mood`
 - Style catalog (hardcoded in bundle): `Abstract Cartoon`, `Adventure Tales`, `Big Bob`, `Bikini Bottom`, `Child Art`, `Fairy Tale`, `Family Boss`, `Flat Cartoon`, `Gravity Force`, `Ink Sketch`, `Jack Horse`, `Old Anime`, `Old Cartoon`, `Pop Cartoon`, `Voxel Art`, `West Park`, `Balloon`, `Bender`, `Bricks`, `Clay`, `Crayon`, `Gumstyle`, `Manga`, `Muppet`, `Simps`, `Regular`, `General`
-- Modes: Image tab or Video tab (separate slugs per). **Two Image/Video `role=tab` PAIRS render in the DOM**: one at x<300 is a left-sidebar NAV link that navigates to `/upscale` (destroys the page); the REAL mode switcher is in the config bar at x>=300 alongside the prompt. `selectCinemaMode` must reject x<300 candidates. Verify the click took effect via Generate-button cost readout (image=2, video=96).
-- Dual Generate buttons: cinema-studio renders TWO overlapping `<button>` elements with text "Generate": an outer wrapper and an inner span. Clicks on the inner don't submit. Pick the LARGEST-by-area candidate (this is what `submitViaUI` does by default when `expectedCost` is supplied).
+- Modes: Image tab or Video tab (separate slugs per). **Cinema 3.5 (May 2026) renders THREE Image/Video tab pairs in the DOM**: header strip (y<50, browser nav), left-rail (x<260), and config bar (x~356). Either left-rail OR config-bar tab actually controls the active panel — the working strategy is to click each role=tab matching label that is NOT aria-selected, then verify by re-reading aria-selected on the same element. `selectCinemaMode` does this in `cinema.mjs`; cost-readout verification is unreliable in 3.5 because BOTH Generate buttons (image=2, video=96) render simultaneously regardless of active mode.
+- Dual Generate buttons: cinema-studio renders TWO overlapping `<button>` elements with text "Generate" (image and video panel each have their own). Both visible simultaneously. Pick the one inside the active tabpanel (`[role="tabpanel"][data-state="active"]` or `[role="tabpanel"]:not([hidden]):not([aria-hidden="true"])`). `ui-submit.mjs` does this via structural filter first, cost-line2 filter second.
+- Cinema 3.5 additions: `Genre:` selector (Action/Horror/Comedy/Noir/Drama/Epic/General), `Style:` selector (27 options), `Camera:` per-shot control, `AI Director` toggle, `Audio` sync toggle, `Type` selector, `Character` linking, `Unlimited` toggle, `Edit` mode. Up to 9 reference images.
+- Skill flags: `--genre NAME` (best-effort tile click), `--style NAME` (best-effort tile click), `--mode image|video`, `--duration Ns`, `--ref PATH`.
 - Duration options: commonly 5s or 8s video; image is single-frame
 - Resolution: 1080p default for video
 - Create-new vs operate-existing: `--project-id` navigates to project; `--new` creates a fresh project first.

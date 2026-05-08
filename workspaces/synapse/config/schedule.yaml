@@ -1,26 +1,26 @@
-# <workspace> — declared launchd cadence
+# synapse — declared launchd cadence
+# Compiled by the `schedule` skill into _shell/plists/.
 
-workspace: <workspace-slug>
+workspace: synapse
 
-jobs:
-  - name: ingest-<workspace>
-    stage: ingest
-    schedule:
-      hour: 2
-      minute: 30
-    plist_label: com.adithya.ultron.ingest-<workspace>
+# Per-(source, account) ingest cadences. The schedule skill compiles each
+# unique (source, account) declared anywhere into one plist:
+#   com.adithya.ultron.ingest-<source>-<account-slug>
+# It runs `run-stage.sh ingest-source <source> <account>`, which dispatches to
+# `_shell/bin/ingest-<source>.py --account <account>`. If multiple workspaces
+# declare different crons for the same (source, account), the most frequent wins.
+sources:
+  notion:
+    # Default account = single Keychain token (service=quantum-notion).
+    # Twice-daily catches edits within ~12h while staying gentle on quota.
+    cron: "0 6,18 * * *"
 
-  - name: lint-<workspace>
-    stage: lint
-    schedule:
-      hour: 4
-      minute: 0
-    plist_label: com.adithya.ultron.lint-<workspace>
-
-# audit and weekly-review are global (cross-workspace), declared in _shell/plists/
-
+# Per-workspace housekeeping (lint + graphify).
 workspace_jobs:
   lint:
-    cron: "24 4 * * *"
+    cron: "30 4 * * *"
   graphify:
     cron: "0 */6 * * *"
+
+# audit, weekly-review, graphify-supermerge, apple-contacts-sync, ledger-compact
+# are cross-workspace; they live in _shell/config/global-schedule.yaml.

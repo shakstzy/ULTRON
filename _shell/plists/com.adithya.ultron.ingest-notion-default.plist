@@ -14,26 +14,34 @@
 		<string>/Users/shakstzy/ULTRON</string>
 	</dict>
 	<key>Label</key>
-	<string>com.adithya.ultron.lint-synapse</string>
+	<string>com.adithya.ultron.ingest-notion-default</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>/bin/bash</string>
 		<string>-c</string>
-		<string>flock -n /tmp/com.adithya.ultron.lint-synapse.lock /Users/shakstzy/ULTRON/_shell/bin/cron-runner.py com.adithya.ultron.lint-synapse -- /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh lint synapse</string>
+		<string>flock -n /tmp/com.adithya.ultron.ingest-notion-default.lock /Users/shakstzy/ULTRON/_shell/bin/cron-runner.py com.adithya.ultron.ingest-notion-default -- /Users/shakstzy/ULTRON/_shell/bin/run-stage.sh ingest-source notion default</string>
 	</array>
 	<key>RunAtLoad</key>
 	<false/>
 	<key>StandardErrorPath</key>
-	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.lint-synapse.err.log</string>
+	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.ingest-notion-default.err.log</string>
 	<key>StandardOutPath</key>
-	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.lint-synapse.out.log</string>
+	<string>/Users/shakstzy/ULTRON/_logs/com.adithya.ultron.ingest-notion-default.out.log</string>
 	<key>StartCalendarInterval</key>
-	<dict>
-		<key>Hour</key>
-		<integer>4</integer>
-		<key>Minute</key>
-		<integer>30</integer>
-	</dict>
+	<array>
+		<dict>
+			<key>Hour</key>
+			<integer>6</integer>
+			<key>Minute</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Hour</key>
+			<integer>18</integer>
+			<key>Minute</key>
+			<integer>0</integer>
+		</dict>
+	</array>
 	<key>WorkingDirectory</key>
 	<string>/Users/shakstzy/ULTRON</string>
 </dict>

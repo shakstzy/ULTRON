@@ -1045,9 +1045,14 @@ def _load_workspace_configs() -> dict[str, dict]:
 
 
 def _targets_for_workspace(ws_cfg: dict) -> list[dict]:
-    sources = (ws_cfg or {}).get("sources") or {}
-    notion = sources.get("notion") or {}
-    return notion.get("targets") or []
+    sources = (ws_cfg or {}).get("sources")
+    if not isinstance(sources, dict):
+        return []
+    notion = sources.get("notion")
+    if not isinstance(notion, dict):
+        return []
+    targets = notion.get("targets")
+    return targets if isinstance(targets, list) else []
 
 
 # ============================================================================
@@ -1060,6 +1065,9 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
         description="Notion → ULTRON raw markdown. See _shell/stages/ingest/notion/format.md",
     )
     p.add_argument("--workspace", help="Run only this workspace (default: all subscribed).")
+    p.add_argument("--account", default="default",
+                   help="Keychain account name selecting the integration token. "
+                        "Currently only 'default' is wired (service=quantum-notion).")
     p.add_argument("--url", help="Ad-hoc target URL or ID; bypasses sources.yaml. Requires --workspace.")
     p.add_argument("--label", help="Target label for --url. Default: derived from page title.")
     p.add_argument("--kind", choices=("page", "database"),

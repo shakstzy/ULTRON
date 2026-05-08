@@ -116,6 +116,9 @@ def ingest_article(
     slug = L.article_slug(title, domain)
     ym = (published[:7] if (published and len(published) >= 7) else L.today_year_month())
     raw_path = L.RAW / "articles" / ym / f"{slug}.md"
+    raw_path = L.collision_safe_path(raw_path, source_url=url)
+    if raw_path.stem != slug:
+        slug = raw_path.stem
 
     extra = {
         "slug": slug,

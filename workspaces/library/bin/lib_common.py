@@ -264,6 +264,23 @@ def write_raw(
     return path
 
 
+def collision_safe_path(path: Path, *, source_url: str | None) -> Path:
+    """Return `path` if it does not exist or its existing frontmatter `url` /
+    `source_url` matches `source_url`. Otherwise return a sibling with a
+    5-char URL-derived suffix to avoid silently overwriting a different item.
+
+    Bulk crawls (e.g. paulgraham.com 4-word title slugs) can collide; this
+    keeps each source-distinct item in its own file."""
+    if not path.exists() or not source_url:
+        return path
+    existing_fm, _ = read_md(path)
+    existing_url = existing_fm.get("url") or existing_fm.get("source_url") or ""
+    if existing_url == source_url:
+        return path
+    suffix = hashlib.sha256(source_url.encode("utf-8")).hexdigest()[:5]
+    return path.with_name(f"{path.stem}-{suffix}{path.suffix}")
+
+
 # ---------------------------------------------------------------------------
 # Logging
 # ---------------------------------------------------------------------------

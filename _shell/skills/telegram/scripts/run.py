@@ -276,9 +276,9 @@ def main() -> int:
     sub = p.add_subparsers(dest="cmd", required=True)
 
     pl = sub.add_parser("login", parents=[common], help="phone+code auth (one-time)")
-    pl.add_argument("--send-code", action="store_true", help="phase 1: trigger Telegram code")
-    pl.add_argument("--code", help="phase 2: 5-digit code from Telegram")
-    pl.add_argument("--phone", help="override phone in telegram.json")
+    pl.add_argument("--start", action="store_true",
+                    help="connect, send code, wait for --submit-code (run in background)")
+    pl.add_argument("--submit-code", help="relay 5-digit code to a running --start process")
     pl.add_argument("--password", help="2FA cloud password if set")
     sub.add_parser("whoami", parents=[common], help="confirm session")
 

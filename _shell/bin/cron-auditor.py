@@ -28,6 +28,7 @@ import pathlib
 import plistlib
 import subprocess
 import sys
+import tempfile
 
 CONFIG_PATH = "/Users/shakstzy/ULTRON/_shell/config/cron-calendar.json"
 PLIST_DIR = "/Users/shakstzy/ULTRON/_shell/plists"
@@ -81,8 +82,23 @@ def load_ledger(cutoff: datetime.datetime) -> tuple[dict, datetime.datetime | No
     return runs_by_label, oldest
 
 
-def loaded_labels() -> set[str]:
-    out = subprocess.run(["launchctl", "list"], capture_output=True, text=True)
+def loaded_labels() -> set[str] | None:
+    """Returns the set of currently-loaded ULTRON labels, or None on failure.
+
+    Failure (timeout, non-zero exit) is propagated as None so main() can skip
+    classification entirely. Without this, an empty stdout silently masks every
+    job, the state file gets wiped to {}, and the next successful run treats
+    every job as brand-new — flooding iMessage with NEW→STALE alerts."""
+    try:
+        out = subprocess.run(
+            ["launchctl", "list"], capture_output=True, text=True, timeout=15
+        )
+    except (subprocess.TimeoutExpired, OSError) as e:
+        sys.stderr.write(f"[auditor] launchctl list failed: {e}\n")
+        return None
+    if out.returncode != 0:
+        sys.stderr.write(f"[auditor] launchctl list non-zero ({out.returncode}): {out.stderr[:200]}\n")
+        return None
     labels = set()
     for line in out.stdout.splitlines():
         parts = line.split()
@@ -232,15 +248,20 @@ def is_lock_held(lock_path: str) -> bool:
     """True iff some process currently holds an exclusive flock on the file.
 
     We try to acquire the lock non-blocking; success means nobody else has it
-    (and we release immediately by closing the file). BlockingIOError = held."""
+    (and we release immediately by closing the file). BlockingIOError = held.
+
+    Open in read mode and treat ENOENT as "not held" — opening in "a" used to
+    create a zero-byte lockfile as a side effect, racing the real job's flock."""
     try:
-        with open(lock_path, "a") as f:
+        with open(lock_path, "r") as f:
             try:
                 fcntl.flock(f.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
                 fcntl.flock(f.fileno(), fcntl.LOCK_UN)
                 return False
             except BlockingIOError:
                 return True
+    except FileNotFoundError:
+        return False
     except OSError:
         return False
 

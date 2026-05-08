@@ -60,7 +60,7 @@ JSON_FENCE_RE = re.compile(r"^```(?:json|JSON)?\s*\n?(.*?)\n?```\s*$", re.DOTALL
 
 
 def parse_frontmatter(path: Path) -> tuple[dict, str]:
-    text = path.read_text()
+    text = path.read_text().replace("\r\n", "\n")
     if not text.startswith("---\n"):
         return {}, text
     end = text.find("\n---\n", 4)
@@ -101,29 +101,49 @@ def index_imessage_to_entity() -> dict[str, list[str]]:
     Aggregating instead of dropping silently: if two imsg profiles both point at
     `mom` (e.g. she has two phone numbers), both contribute messages to the
     single voice profile written to mom.md.
+
+    Tail-10 fallback only fires when the tail is unambiguously owned by a single
+    entity — international numbers (e.g. +1 US vs +44 UK) can share their last
+    10 digits, and a tail collision must NOT silently misroute messages.
     """
     if not PROFILES_DIR.is_dir():
         return {}
-    handle_to_entity: dict[str, str] = {}
+
+    full_to_entity: dict[str, str] = {}
+    email_to_entity: dict[str, str] = {}
+    tail_owners: dict[str, set[str]] = {}
+
     for stub in PEOPLE_DIR.glob("*.md"):
         fm, _ = parse_frontmatter(stub)
         ids = fm.get("identifiers") or {}
         for ph in ids.get("phone") or []:
             digits = "".join(c for c in ph if c.isdigit())
-            if digits:
-                handle_to_entity.setdefault(digits, stub.stem)
-                tail = digits[-10:]
-                if len(digits) >= 10:
-                    handle_to_entity.setdefault(tail, stub.stem)
+            if not digits:
+                continue
+            full_to_entity.setdefault(digits, stub.stem)
+            if len(digits) >= 10:
+                tail_owners.setdefault(digits[-10:], set()).add(stub.stem)
         for em in ids.get("email") or []:
-            handle_to_entity.setdefault(em.lower(), stub.stem)
+            email_to_entity.setdefault(em.lower(), stub.stem)
+
+    tail_to_entity: dict[str, str] = {
+        tail: next(iter(slugs)) for tail, slugs in tail_owners.items() if len(slugs) == 1
+    }
+
     mapping: dict[str, list[str]] = {}
     for prof in PROFILES_DIR.glob("*.md"):
         pfm, _ = parse_frontmatter(prof)
         for h in pfm.get("contact_handles") or []:
-            digits = "".join(c for c in h if c.isdigit()) if "@" not in h else ""
-            key = h.lower() if "@" in h else (digits if len(digits) > 10 else digits[-10:])
-            ent = handle_to_entity.get(key)
+            ent: str | None = None
+            if "@" in h:
+                ent = email_to_entity.get(h.lower())
+            else:
+                digits = "".join(c for c in h if c.isdigit())
+                if not digits:
+                    continue
+                ent = full_to_entity.get(digits) or (
+                    tail_to_entity.get(digits[-10:]) if len(digits) >= 10 else None
+                )
             if ent:
                 mapping.setdefault(ent, []).append(prof.stem)
                 break

@@ -1,7 +1,7 @@
 {
-  "_comment": "Default: swipe yes on every profile. No gates. Operator priority is never miss a match. If you want to gate again, set age_min/age_max, max_distance_mi, or auto_pass_if_no_bio_and_no_prompts back to live values.",
-  "age_min": null,
-  "age_max": null,
+  "_comment": "Filter: ages 18-26 only. Swipe yes on every profile in range; pass on out-of-range. No distance/bio gates.",
+  "age_min": 18,
+  "age_max": 26,
   "max_distance_mi": null,
   "right_swipe_if_in_filter": true,
   "auto_pass_if_distance_above": null,

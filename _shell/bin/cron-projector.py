@@ -8,10 +8,16 @@ private extended properties for idempotent diffing.
 
 Idempotency uses a local state file (`_logs/cron-projector-state.json`) mapping
 stable_id → master_event_id. This avoids depending on a calendar list-with-date-window
-(which would miss yearly/quarterly recurrences). On `--reconcile`, the projector also
-queries the calendar with a wide window to detect drift between state and reality.
+(which would miss yearly/quarterly recurrences).
 
-Run hourly to keep the calendar in sync with the plists.
+Three modes:
+  default              — fast diff against state file + lightweight 14-day drift check
+  --reconcile          — full 90-day rebuild (use for big drift recovery)
+  --no-drift-check     — pure state-file diff, no calendar list (offline-safe)
+
+Scheduled daily at 03:30 by com.adithya.ultron.cron-projector.plist. A monthly
+--reconcile cron catches drift on yearly/quarterly slots whose next fire falls
+outside the 14-day default window.
 """
 
 from __future__ import annotations
@@ -21,10 +27,12 @@ import datetime
 import glob
 import hashlib
 import json
+import os
 import pathlib
 import plistlib
 import subprocess
 import sys
+import tempfile
 
 CONFIG_PATH = "/Users/shakstzy/ULTRON/_shell/config/cron-calendar.json"
 PLIST_DIR = "/Users/shakstzy/ULTRON/_shell/plists"
@@ -172,10 +180,33 @@ def load_state() -> dict:
 
 
 def save_state(state: dict) -> None:
+    """Atomic write via per-call unique tmp path. Two concurrent projector runs
+    using a fixed `state.json.tmp` name would race and clobber each other —
+    mkstemp gives us a unique name per call. Disk-full or permissions errors
+    are caught and logged so a checkpoint failure doesn't abort the whole loop
+    (better to lose ONE checkpoint than the entire run's progress)."""
     STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
-    tmp = STATE_PATH.with_suffix(".json.tmp")
-    tmp.write_text(json.dumps(state, indent=2, sort_keys=True))
-    tmp.replace(STATE_PATH)
+    fd = None
+    tmp_path = None
+    try:
+        fd, tmp_path = tempfile.mkstemp(
+            dir=str(STATE_PATH.parent), prefix=".state-", suffix=".json.tmp"
+        )
+        with os.fdopen(fd, "w") as f:
+            f.write(json.dumps(state, indent=2, sort_keys=True))
+            f.flush()
+            os.fsync(f.fileno())
+        fd = None
+        os.replace(tmp_path, STATE_PATH)
+        tmp_path = None
+    except OSError as e:
+        sys.stderr.write(f"[projector] save_state failed: {e}\n")
+        if fd is not None:
+            try: os.close(fd)
+            except OSError: pass
+        if tmp_path is not None and os.path.exists(tmp_path):
+            try: os.unlink(tmp_path)
+            except OSError: pass
 
 
 def reconcile_with_calendar(cfg: dict, window_days: int = 90) -> dict | None:
@@ -227,7 +258,12 @@ def reconcile_with_calendar(cfg: dict, window_days: int = 90) -> dict | None:
 
 
 def create_event(cfg: dict, sid: str, spec: dict) -> str | None:
-    """Create a recurring schedule event. Returns the master event id, or None on failure."""
+    """Create a recurring schedule event. Returns master event id or None.
+
+    None means: don't record this sid in state. Critical: if `gog` exits 0 but
+    returns no id (quota nearly-out, partial response, schema change), we MUST
+    return None — otherwise next run sees the sid as still-missing and creates
+    it again, duplicating events on the calendar."""
     dtstart = spec["dtstart"]
     dtend = dtstart + datetime.timedelta(minutes=1)
     args = [
@@ -245,16 +281,24 @@ def create_event(cfg: dict, sid: str, spec: dict) -> str | None:
         "--no-input",
         "--json",
     ]
-    res = subprocess.run(args, capture_output=True, text=True, timeout=180)
+    try:
+        res = subprocess.run(args, capture_output=True, text=True, timeout=180)
+    except (FileNotFoundError, OSError, subprocess.TimeoutExpired) as e:
+        sys.stderr.write(f"[projector] create exec failed for {sid} ({spec['label']}): {e}\n")
+        return None
     if res.returncode != 0:
         sys.stderr.write(f"[projector] create failed for {sid} ({spec['label']}): {res.stderr[:400]}\n")
         return None
     try:
         payload = json.loads(res.stdout)
-        return payload.get("id") or (payload.get("event") or {}).get("id")
     except json.JSONDecodeError:
         sys.stderr.write(f"[projector] create returned bad JSON for {sid}\n")
         return None
+    eid = payload.get("id") or (payload.get("event") or {}).get("id")
+    if not eid:
+        sys.stderr.write(f"[projector] create returned no id for {sid} ({spec['label']}); will retry next run\n")
+        return None
+    return eid
 
 
 def delete_event(cfg: dict, event_id: str) -> bool:
@@ -262,7 +306,11 @@ def delete_event(cfg: dict, event_id: str) -> bool:
         GOG, "-a", cfg["account"], "cal", "delete", cfg["calendar_id"], event_id,
         "--force", "--no-input",
     ]
-    res = subprocess.run(args, capture_output=True, text=True, timeout=180)
+    try:
+        res = subprocess.run(args, capture_output=True, text=True, timeout=180)
+    except (FileNotFoundError, OSError, subprocess.TimeoutExpired) as e:
+        sys.stderr.write(f"[projector] delete exec failed for {event_id}: {e}\n")
+        return False
     if res.returncode != 0:
         sys.stderr.write(f"[projector] delete failed for {event_id}: {res.stderr[:400]}\n")
         return False

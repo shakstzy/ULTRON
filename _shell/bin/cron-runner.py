@@ -72,13 +72,15 @@ def main():
     out_offset = file_size(out_log)
 
     start_dt = datetime.datetime.now().astimezone()
-    start_ts = time.time()
+    start_ts = time.monotonic()
 
     # Inherit stdout/stderr — launchd already redirected them to .out/.err log files.
     # Real-time logging, no buffering, no OOM, no data loss on SIGKILL mid-run.
     proc = subprocess.run(cmd)
 
-    end_ts = time.time()
+    # monotonic for duration so an NTP step backwards mid-run can't produce a
+    # negative duration_ms in the ledger.
+    end_ts = time.monotonic()
     end_dt = datetime.datetime.now().astimezone()
     duration_ms = int((end_ts - start_ts) * 1000)
 

@@ -85,7 +85,7 @@ GEMINI_SETTINGS = Path.home() / ".gemini" / "settings.json"
 POOL_ROOT = Path("/tmp/gemini-voice-pool")
 GEMINI_PRO_MODEL = "gemini-3-pro-preview"
 GEMINI_FLASH_MODEL = "gemini-3-flash-preview"
-CLAUDE_FALLBACK_MODEL = "sonnet"
+CODEX_FALLBACK_NAME = "codex-gpt-5.5"
 
 ACCOUNTS: list[tuple[str, Path]] = []
 _account_lock = threading.Lock()
@@ -186,20 +186,43 @@ def gemini_call(prompt: str, account: tuple[str, Path], model: str, timeout: int
     return None, "empty"
 
 
-def claude_call(prompt: str, timeout: int = 360) -> tuple[str | None, str | None]:
-    cmd = ["claude", "-p", prompt, "--model", CLAUDE_FALLBACK_MODEL]
+def codex_call(prompt: str, timeout: int = 360) -> tuple[str | None, str | None]:
+    """Codex (gpt-5.5) fallback when all gemini accounts exhausted.
+
+    Uses `codex exec --output-last-message <file> <prompt>` so we get just the
+    final assistant message without the session chrome (workdir/model/etc).
+
+    Why not `claude -p`: Claude Code subprocesses don't inherit the parent
+    session's auth, so `claude -p` from inside a Claude Code task hits
+    "Not logged in · Please run /login" and exits 1 with empty stderr.
+    Codex CLI uses persistent oauth in `~/.codex/` that DOES survive
+    subprocess invocation.
+    """
+    out_fd, out_path = tempfile.mkstemp(prefix="codex-voice-", suffix=".txt")
+    os.close(out_fd)
     try:
-        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout, stdin=subprocess.DEVNULL)
-    except subprocess.TimeoutExpired:
-        return None, "timeout"
-    except FileNotFoundError:
-        return None, "no_cli"
-    if proc.returncode != 0:
-        return None, f"failure: {(proc.stderr or '')[:200]}"
-    out = (proc.stdout or "").strip()
-    if not out:
-        return None, "empty"
-    return out, None
+        cmd = ["codex", "exec", "--output-last-message", out_path, prompt]
+        try:
+            proc = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout, stdin=subprocess.DEVNULL)
+        except subprocess.TimeoutExpired:
+            return None, "timeout"
+        except FileNotFoundError:
+            return None, "no_cli"
+        if proc.returncode != 0:
+            return None, f"failure: rc={proc.returncode} stderr={(proc.stderr or '')[:200]}"
+        try:
+            text = Path(out_path).read_text()
+        except FileNotFoundError:
+            return None, "no_output_file"
+        out = text.strip()
+        if not out:
+            return None, "empty"
+        return out, None
+    finally:
+        try:
+            os.unlink(out_path)
+        except FileNotFoundError:
+            pass
 
 
 def _try_model_cycle(prompt: str, model: str, model_label: str) -> tuple[str | None, str | None]:
@@ -239,12 +262,12 @@ def cloud_call_with_retry(prompt: str) -> tuple[str | None, str | None, str | No
     out, acct = _try_model_cycle(prompt, GEMINI_PRO_MODEL, "gemini-pro")
     if out:
         return out, "gemini-pro", acct
-    out, err = claude_call(prompt)
+    out, err = codex_call(prompt)
     if out:
-        record_call("claude-sonnet", "success")
-        return out, "claude-sonnet", "claude-sonnet"
-    record_call("claude-sonnet", "other")
-    return None, None, f"all_exhausted (claude_err={err})"
+        record_call(CODEX_FALLBACK_NAME, "success")
+        return out, CODEX_FALLBACK_NAME, CODEX_FALLBACK_NAME
+    record_call(CODEX_FALLBACK_NAME, "other")
+    return None, None, f"all_exhausted (codex_err={err})"
 
 
 # ---------------------------------------------------------------------------

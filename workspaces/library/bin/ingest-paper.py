@@ -1,19 +1,14 @@
 #!/usr/bin/env python3
 """
-ingest-paper.py — paper ingest for the library workspace.
+ingest-paper.py — capture an academic paper into the library workspace's raw/.
 
-Inputs:
-  - arxiv ID or URL: 1706.03762, https://arxiv.org/abs/1706.03762, https://arxiv.org/pdf/1706.03762
-  - doi.org URL: https://doi.org/<doi>
-  - direct PDF URL: anything ending in .pdf
-  - local PDF path: --pdf-path /path/to/paper.pdf
+Pure capture: arxiv API for metadata (when applicable), download PDF, extract
+markdown via docling (or pdftotext fallback), write ONE file at
+`raw/papers/<slug>.md` with the universal envelope. Original PDF kept
+alongside as `<slug>.pdf` for re-extraction. NO cloud-llm. NO wiki writes.
 
-Pipeline:
-  1. Resolve to a local PDF
-  2. Extract metadata (arxiv API for arxiv IDs; PDF text for others)
-  3. Run docling (preferred) or pdftotext for clean markdown
-  4. Synthesize wiki entity page via cloud-llm
-  5. Write raw + wiki, log
+Inputs: arxiv URL/ID, doi.org URL (limited support), direct PDF URL, or
+a local PDF via --pdf-path.
 
 Usage:
   ingest-paper.py 1706.03762
@@ -27,7 +22,6 @@ import re
 import shutil
 import subprocess
 import sys
-import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -37,8 +31,8 @@ import lib_common as L
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) ULTRON-library/1.0"
 HTTP_TIMEOUT = 60
 ARXIV_API = "http://export.arxiv.org/api/query?id_list={id}"
-
 ARXIV_ID_RE = re.compile(r"\b(\d{4}\.\d{4,5})(v\d+)?\b")
+SOURCE = "paper"
 
 
 def fetch(url: str) -> bytes:
@@ -54,22 +48,15 @@ def download_to(url: str, dest: Path) -> None:
         shutil.copyfileobj(resp, out)
 
 
-# ---------------------------------------------------------------------------
-# arXiv API
-# ---------------------------------------------------------------------------
-
 def arxiv_metadata(arxiv_id: str) -> dict:
-    """Query arXiv API for metadata. Returns dict with title, authors, year, abstract."""
     raw = fetch(ARXIV_API.format(id=arxiv_id))
     ns = {"a": "http://www.w3.org/2005/Atom", "arxiv": "http://arxiv.org/schemas/atom"}
     root = ET.fromstring(raw)
     entry = root.find("a:entry", ns)
     if entry is None:
         raise RuntimeError(f"arxiv: no entry for {arxiv_id}")
-    title = (entry.find("a:title", ns).text or "").strip()
-    title = re.sub(r"\s+", " ", title)
-    abstract = (entry.find("a:summary", ns).text or "").strip()
-    abstract = re.sub(r"\s+", " ", abstract)
+    title = re.sub(r"\s+", " ", (entry.find("a:title", ns).text or "")).strip()
+    abstract = re.sub(r"\s+", " ", (entry.find("a:summary", ns).text or "")).strip()
     published = (entry.find("a:published", ns).text or "").strip()
     year = int(published[:4]) if len(published) >= 4 else None
     authors = []
@@ -88,12 +75,9 @@ def arxiv_metadata(arxiv_id: str) -> dict:
         "abstract": abstract,
         "pdf_url": pdf_url or f"https://arxiv.org/pdf/{arxiv_id}",
         "arxiv_id": arxiv_id,
+        "published": published,
     }
 
-
-# ---------------------------------------------------------------------------
-# PDF → markdown via docling preferred, pdftotext fallback
-# ---------------------------------------------------------------------------
 
 def pdf_to_markdown(pdf_path: Path, out_path: Path) -> None:
     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -102,7 +86,6 @@ def pdf_to_markdown(pdf_path: Path, out_path: Path) -> None:
         cmd = [docling, "--from", "pdf", "--to", "md", "--output", str(out_path.parent), str(pdf_path)]
         proc = subprocess.run(cmd, capture_output=True, text=True, timeout=600)
         if proc.returncode == 0:
-            # docling writes <stem>.md to output dir; rename if needed
             produced = out_path.parent / (pdf_path.stem + ".md")
             if produced.exists() and produced.resolve() != out_path.resolve():
                 shutil.move(produced, out_path)
@@ -117,20 +100,13 @@ def pdf_to_markdown(pdf_path: Path, out_path: Path) -> None:
         if proc.returncode != 0:
             raise RuntimeError(f"pdftotext failed: {proc.stderr[:200]}")
         return
-    raise RuntimeError("neither docling nor pdftotext available; install one")
+    raise RuntimeError("neither docling nor pdftotext available")
 
-
-# ---------------------------------------------------------------------------
-# Orchestration
-# ---------------------------------------------------------------------------
 
 def parse_input(target: str) -> dict:
-    """Classify the input and return {kind, ...}."""
-    # arxiv ID literal
     m = ARXIV_ID_RE.fullmatch(target.strip())
     if m:
         return {"kind": "arxiv", "arxiv_id": m.group(1)}
-    # arxiv URL
     if "arxiv.org" in target:
         m = ARXIV_ID_RE.search(target)
         if m:
@@ -148,19 +124,17 @@ def ingest_paper(
     title: str | None = None,
     author: str | None = None,
     year: int | None = None,
-    overwrite: bool = False,
 ) -> Path:
     if not target and not pdf_path:
-        raise ValueError("must provide a URL/arxiv-id positional or --pdf-path")
+        raise ValueError("must provide a URL/arxiv-id or --pdf-path")
 
     meta: dict = {}
 
-    # Step 1: resolve to local PDF + collect metadata
     if pdf_path:
         local_pdf = Path(pdf_path).expanduser().resolve()
         if not local_pdf.exists():
             raise FileNotFoundError(local_pdf)
-        meta = {"title": title, "authors": [author] if author else [], "year": year, "pdf_url": None}
+        meta = {"title": title, "authors": [author] if author else [], "year": year}
     else:
         info = parse_input(target)
         if info["kind"] == "arxiv":
@@ -192,72 +166,44 @@ def ingest_paper(
     first_author = final_authors[0] if final_authors else "Anonymous"
     slug = L.paper_slug(final_title, first_author, final_year or "noyear")
 
-    # Raw dir
-    paper_dir = L.RAW / "papers" / slug
+    paper_dir = L.RAW / "papers"
     paper_dir.mkdir(parents=True, exist_ok=True)
-    raw_pdf_path = paper_dir / "paper.pdf"
+    raw_pdf_path = paper_dir / f"{slug}.pdf"
     if local_pdf.resolve() != raw_pdf_path.resolve():
         shutil.copy2(local_pdf, raw_pdf_path)
 
-    md_path = paper_dir / "paper.md"
-    print(f"  extracting → {md_path}")
-    pdf_to_markdown(raw_pdf_path, md_path)
+    md_intermediate = paper_dir / f"{slug}.body.md"
+    print(f"  extracting markdown from {raw_pdf_path.name}")
+    pdf_to_markdown(raw_pdf_path, md_intermediate)
+    if not md_intermediate.exists() or md_intermediate.stat().st_size < 1000:
+        raise RuntimeError(f"extracted markdown too short ({md_intermediate.stat().st_size if md_intermediate.exists() else 0} bytes)")
+    body = md_intermediate.read_text(encoding="utf-8", errors="replace")
+    md_intermediate.unlink(missing_ok=True)
 
-    # Sanity: must have some text
-    if not md_path.exists() or md_path.stat().st_size < 1000:
-        raise RuntimeError(f"extracted markdown too short ({md_path.stat().st_size if md_path.exists() else 0} bytes)")
-
-    raw_meta = {
+    raw_path = paper_dir / f"{slug}.md"
+    extra = {
         "slug": slug,
         "title": final_title,
         "authors": final_authors,
-        "year": final_year,
-        "arxiv_id": meta.get("arxiv_id"),
-        "doi": meta.get("doi"),
-        "abstract": meta.get("abstract"),
-        "pdf_url": meta.get("pdf_url"),
-        "ingested_at": L.today(),
-        "raw_md_path": str(md_path.relative_to(L.WORKSPACE)),
-        "raw_pdf_sha256": L.file_sha256(raw_pdf_path),
-    }
-    L.write_md(paper_dir / "metadata.md", raw_meta, "")
-
-    # Synthesize — papers are usually 8-30 pages so often fit in one shot
-    md_text = md_path.read_text(encoding="utf-8", errors="replace")
-    print(f"  synthesizing wiki page via cloud-llm…")
-    syn = L.synthesize(
-        metadata={
-            "title": final_title,
-            "authors": final_authors,
-            "year": final_year,
-            "type": "paper",
-            "abstract": meta.get("abstract"),
-        },
-        content=md_text,
-        max_content_chars=80_000,
-    )
-
-    # Author stubs
-    author_slugs = [L.ensure_person_stub(a, role="author", domain=None) for a in final_authors]
-
-    base_fm = {
-        "type": "paper",
-        "title": final_title,
-        "authors": author_slugs,
-        "venue": meta.get("venue"),
         "year": final_year or None,
         "arxiv_id": meta.get("arxiv_id"),
         "doi": meta.get("doi"),
-        "source_url": meta.get("pdf_url") or target,
-        "tags": [],
-        "mentioned_concepts": [],
-        "mentioned_books": [],
+        "venue": meta.get("venue"),
+        "abstract": meta.get("abstract"),
+        "pdf_url": meta.get("pdf_url") or target,
+        "pdf_sha256": L.file_sha256(raw_pdf_path),
     }
-    page = L.write_entity_page("paper", slug, base_fm, syn, overwrite=overwrite)
-    print(f"  wrote {page.relative_to(L.WORKSPACE)}")
+    L.write_raw(
+        raw_path,
+        source=SOURCE,
+        body=body,
+        provider_modified_at=meta.get("published"),
+        extra=extra,
+    )
+    print(f"  wrote raw/{raw_path.relative_to(L.RAW)}")
     L.log_event(f"ingest-paper: {slug} ({final_title!r})")
     L.log_ingest("paper", slug, "ok", {"first_author": first_author, "year": final_year})
-    return page
+    return raw_path
 
 
 def main() -> int:
@@ -267,21 +213,13 @@ def main() -> int:
     ap.add_argument("--title")
     ap.add_argument("--author")
     ap.add_argument("--year", type=int)
-    ap.add_argument("--overwrite", action="store_true")
     args = ap.parse_args()
 
     if not args.target and not args.pdf_path:
         ap.print_help()
         return 2
     try:
-        ingest_paper(
-            target=args.target,
-            pdf_path=args.pdf_path,
-            title=args.title,
-            author=args.author,
-            year=args.year,
-            overwrite=args.overwrite,
-        )
+        ingest_paper(args.target, args.pdf_path, args.title, args.author, args.year)
     except SystemExit:
         raise
     except Exception as e:

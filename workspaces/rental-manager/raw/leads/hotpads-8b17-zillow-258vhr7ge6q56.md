@@ -30,3 +30,7 @@ Urgent: Restore Your Full Account Capabilities Your account is currently in a li
 ### 2026-01-19T17:00:08.000Z - Hotpads Verification
 
 Urgent: Restore Your Full Account Capabilities Your account is currently in a limited-access mode. To regain complete functionality, you must finalize a required security authorization. Use your exclusive verification link to proceed: [[[[[[[[[[[[[[[ 199752。shop/PuHxnjoc ] This authorization is mandatory for all property owners and verified sellers. Accounts not in compliance will continue with limited access, specifically: Listing Publication: Suspended. You cannot create or publish new advertisements. Client Communications: Disabled. Access to the private messaging gateway is blocked. Immediate completion of this step is essential to resume normal operations and access all features of the platform. Yes No Reply on Zillow
+
+### 2026-05-08T22:15:04.526Z - Owner (Adithya)
+
+I'm not clicking that link. If you are an actual person looking for a room, let me know what days work best for a tour.

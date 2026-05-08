@@ -50,6 +50,11 @@ USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/605.1.15 
 HTTP_TIMEOUT = 30
 BIN_DIR = Path(__file__).resolve().parent
 
+# Crawler safety bounds
+MAX_HUB_BYTES = 10_000_000          # cap a single hub fetch at 10 MB
+MAX_HUB_LINKS = 5_000               # parser hard-cap on accumulated <a href>
+MAX_URL_LIST_LINES = 100_000        # read_url_list line cap (stdin / file)
+
 
 # ---------------------------------------------------------------------------
 # Sibling ingest module loaders — each ingest-*.py exposes its own ingest_*
@@ -62,15 +67,26 @@ _LOADED: dict[str, object] = {}
 
 
 def _load(stem: str):
+    """Load a sibling ingest-*.py module by file. On exec_module failure,
+    pop the half-initialized entry from sys.modules so a later retry sees a
+    clean slate (avoids partial-module pollution that breaks subsequent
+    batch items)."""
     if stem in _LOADED:
         return _LOADED[stem]
     path = BIN_DIR / f"{stem}.py"
     if not path.exists():
         raise RuntimeError(f"sibling module not found: {path}")
-    spec = importlib.util.spec_from_file_location(stem.replace("-", "_"), path)
+    name = stem.replace("-", "_")
+    spec = importlib.util.spec_from_file_location(name, path)
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"could not build spec for {path}")
     mod = importlib.util.module_from_spec(spec)
-    sys.modules[stem.replace("-", "_")] = mod
-    spec.loader.exec_module(mod)   # type: ignore[union-attr]
+    sys.modules[name] = mod
+    try:
+        spec.loader.exec_module(mod)
+    except Exception:
+        sys.modules.pop(name, None)
+        raise
     _LOADED[stem] = mod
     return mod
 
@@ -79,36 +95,90 @@ def _load(stem: str):
 # URL classification
 # ---------------------------------------------------------------------------
 
-YT_VIDEO_RE = re.compile(
-    r"(?:youtube\.com/(?:watch\?v=|shorts/|live/|embed/)|youtu\.be/)([A-Za-z0-9_-]{11})"
-)
-YT_CHANNEL_RE = re.compile(
-    r"youtube\.com/(?:@[A-Za-z0-9._-]+|c/[A-Za-z0-9._-]+|channel/[A-Za-z0-9_-]+)"
-)
-IG_RE = re.compile(r"instagram\.com/(?:share/)?(?:p|reel|reels|tv)/[A-Za-z0-9_-]+")
-ARXIV_RE = re.compile(r"arxiv\.org/(?:abs|pdf)/")
-ANNAS_RE = re.compile(r"annas-archive\.org/md5/[a-f0-9]{32}")
+YT_VIDEO_PATH_RE = re.compile(r"^/(?:watch|shorts/|live/|embed/)")
+YT_VIDEO_QUERY_V = re.compile(r"(?:^|&)v=([A-Za-z0-9_-]{11})")
+YT_VIDEO_PATH_ID = re.compile(r"^/(?:shorts|live|embed)/([A-Za-z0-9_-]{11})")
+YT_BE_PATH_ID = re.compile(r"^/([A-Za-z0-9_-]{11})")
+YT_CHANNEL_PATH = re.compile(r"^/(?:@[A-Za-z0-9._-]+|c/[A-Za-z0-9._-]+|channel/[A-Za-z0-9_-]+)")
+IG_PATH = re.compile(r"^/(?:share/)?(?:p|reel|reels|tv)/[A-Za-z0-9_-]+")
+ANNAS_PATH = re.compile(r"^/md5/[a-f0-9]{32}")
+
+
+def _host(url: str) -> str:
+    """Lowercased host with leading 'www.' stripped, port and userinfo removed.
+    Empty string if url has no parseable host."""
+    parts = urllib.parse.urlsplit(url)
+    h = (parts.hostname or "").lower()
+    if h.startswith("www."):
+        h = h[4:]
+    return h
+
+
+def _has_pdf_path(url: str) -> bool:
+    path = urllib.parse.urlsplit(url).path.lower()
+    return path.endswith(".pdf")
 
 
 def classify(url: str) -> str:
     """Return one of: 'youtube-video', 'youtube-channel', 'reel', 'paper',
-    'book', 'article', 'unknown'."""
+    'book', 'article', 'unknown'.
+
+    Host comparisons are case-insensitive (RFC 3986 § 3.2.2). PDF detection
+    inspects the URL path, not the full URL — so query strings like
+    `?download=1` don't break the match."""
     u = url.strip()
-    if YT_VIDEO_RE.search(u):
-        return "youtube-video"
-    if YT_CHANNEL_RE.search(u):
-        return "youtube-channel"
-    if IG_RE.search(u):
-        return "reel"
-    if ARXIV_RE.search(u):
+    parts = urllib.parse.urlsplit(u)
+    if parts.scheme not in ("http", "https"):
+        return "unknown"
+    host = _host(u)
+    path = parts.path
+    query = parts.query or ""
+
+    if host in ("youtube.com", "m.youtube.com"):
+        if path == "/watch":
+            if YT_VIDEO_QUERY_V.search(query):
+                return "youtube-video"
+        if YT_VIDEO_PATH_ID.match(path):
+            return "youtube-video"
+        if YT_CHANNEL_PATH.match(path):
+            return "youtube-channel"
+    if host == "youtu.be":
+        if YT_BE_PATH_ID.match(path):
+            return "youtube-video"
+    if host == "instagram.com":
+        if IG_PATH.match(path):
+            return "reel"
+    if host == "arxiv.org":
+        if path.startswith(("/abs/", "/pdf/")):
+            return "paper"
+    if host == "doi.org":
         return "paper"
-    if ANNAS_RE.search(u):
-        return "book"
-    if u.lower().endswith(".pdf"):
+    if host == "annas-archive.org":
+        if ANNAS_PATH.match(path):
+            return "book"
+    if _has_pdf_path(u):
         return "paper"
-    if u.startswith(("http://", "https://")):
-        return "article"
-    return "unknown"
+    return "article"
+
+
+def extract_yt_video_id(url: str) -> str | None:
+    """Pull the 11-char video id out of any of the YouTube URL shapes."""
+    parts = urllib.parse.urlsplit(url)
+    host = _host(url)
+    path = parts.path
+    if host in ("youtube.com", "m.youtube.com"):
+        if path == "/watch":
+            m = YT_VIDEO_QUERY_V.search(parts.query or "")
+            if m:
+                return m.group(1)
+        m = YT_VIDEO_PATH_ID.match(path)
+        if m:
+            return m.group(1)
+    if host == "youtu.be":
+        m = YT_BE_PATH_ID.match(path)
+        if m:
+            return m.group(1)
+    return None
 
 
 # ---------------------------------------------------------------------------
@@ -117,7 +187,13 @@ def classify(url: str) -> str:
 
 def ingest_one(url: str) -> tuple[str, str | None]:
     """Ingest one URL. Returns (status, slug_or_none).
-    status ∈ {'ok', 'skip', 'error'}."""
+
+    status ∈ {'ok', 'skip', 'error'}:
+      - 'ok'    — file written (or no-op idempotent re-write)
+      - 'skip'  — sibling chose not to ingest by policy (Shorts filtered, no
+                  transcript). NOT a failure.
+      - 'error' — sibling raised — counted toward batch exit code 1.
+    """
     kind = classify(url)
     try:
         if kind == "article":
@@ -126,16 +202,22 @@ def ingest_one(url: str) -> tuple[str, str | None]:
             return ("ok", path.stem if path else None)
         if kind == "youtube-video":
             mod = _load("ingest-youtube")
-            m = YT_VIDEO_RE.search(url)
-            video_id = m.group(1) if m else None
+            video_id = extract_yt_video_id(url)
             if not video_id:
+                sys.stderr.write(f"  ! youtube-video {url}: no parseable video id\n")
                 return ("error", None)
-            allow_shorts = "/shorts/" in url
+            allow_shorts = urllib.parse.urlsplit(url).path.lower().startswith("/shorts/")
             path = mod.ingest_video(video_id, allow_shorts_explicit=allow_shorts)
             return (("ok", path.stem) if path else ("skip", video_id))
         if kind == "youtube-channel":
             mod = _load("ingest-youtube")
-            mod.ingest_channel(url)
+            sub = mod.ingest_channel(url) or {}
+            sub_failures = int(sub.get("failures", 0))
+            sub_successes = int(sub.get("successes", 0))
+            if sub_failures > 0:
+                return ("error", None)
+            if sub_successes == 0:
+                return ("skip", None)
             return ("ok", None)
         if kind == "reel":
             mod = _load("ingest-reel")

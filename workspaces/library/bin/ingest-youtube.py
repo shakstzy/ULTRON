@@ -34,6 +34,12 @@ SHORTS_DURATION_THRESHOLD_SECONDS = 60
 SOURCE = "youtube"
 
 
+class IngestError(Exception):
+    """Raised on real failures (metadata fetch, etc.). Sibling batch caller
+    treats this as a per-item error. ingest_video() returns None for policy
+    skips (Shorts filtered, no transcript)."""
+
+
 VIDEO_ID_RE = re.compile(
     r"(?:youtube\.com/(?:watch\?v=|shorts/|live/|embed/)|youtu\.be/)([A-Za-z0-9_-]{11})"
 )
@@ -123,8 +129,7 @@ def ingest_video(video_id: str, *, allow_shorts_explicit: bool = False) -> Path 
     try:
         meta = yt_metadata(video_id)
     except Exception as e:
-        print(f"  [{video_id}] metadata fetch failed: {e}", file=sys.stderr)
-        return None
+        raise IngestError(f"metadata fetch failed for {video_id}: {e}") from e
 
     title = meta.get("title") or video_id
     channel_name = meta.get("channel") or meta.get("uploader") or "unknown"
@@ -156,6 +161,9 @@ def ingest_video(video_id: str, *, allow_shorts_explicit: bool = False) -> Path 
     slug = L.youtube_video_slug(title, channel_handle, video_id=video_id)
     ym = (published_at[:7] if published_at else L.today_year_month())
     raw_path = L.RAW / "youtube" / L.slugify(channel_handle) / ym / f"{slug}.md"
+    raw_path = L.collision_safe_path(raw_path, source_url=f"https://www.youtube.com/watch?v={video_id}")
+    if raw_path.stem != slug:
+        slug = raw_path.stem
 
     extra = {
         "slug": slug,
@@ -202,6 +210,7 @@ def ingest_channel(
     print(f"  {len(videos)} videos after Shorts filter (skip_shorts={skip_shorts})")
 
     successes = 0
+    skips = 0
     failures = 0
     if parallel <= 1:
         for v in videos:
@@ -213,7 +222,10 @@ def ingest_channel(
                 if p:
                     successes += 1
                 else:
-                    failures += 1
+                    skips += 1
+            except IngestError as e:
+                print(f"  [{vid}] {e}", file=sys.stderr)
+                failures += 1
             except Exception as e:
                 print(f"  [{vid}] FATAL: {e}", file=sys.stderr)
                 failures += 1
@@ -228,12 +240,15 @@ def ingest_channel(
                     if p:
                         successes += 1
                     else:
-                        failures += 1
+                        skips += 1
+                except IngestError as e:
+                    print(f"  [{vid}] {e}", file=sys.stderr)
+                    failures += 1
                 except Exception as e:
                     print(f"  [{vid}] FATAL: {e}", file=sys.stderr)
                     failures += 1
 
-    summary = {"successes": successes, "failures": failures, "total": len(videos)}
+    summary = {"successes": successes, "skips": skips, "failures": failures, "total": len(videos)}
     print(f"  channel ingest summary: {summary}")
     L.log_event(f"ingest-channel: {channel_url} {summary}")
     return summary
@@ -259,6 +274,9 @@ def main() -> int:
                 payload,
                 allow_shorts_explicit=args.allow_shorts or is_shorts_url(args.url),
             )
+        except IngestError as e:
+            print(f"  ! {e}", file=sys.stderr)
+            return 2
         except Exception as e:
             print(f"  FATAL: {type(e).__name__}: {e}", file=sys.stderr)
             return 1
@@ -266,16 +284,21 @@ def main() -> int:
         try:
             if args.videos:
                 ids = [v.strip() for v in args.videos.split(",") if v.strip()]
-                successes, failures = 0, 0
+                successes, skips, failures = 0, 0, 0
                 for vid in ids:
                     try:
                         p = ingest_video(vid, allow_shorts_explicit=args.allow_shorts)
-                        successes += 1 if p else 0
-                        failures += 0 if p else 1
+                        if p:
+                            successes += 1
+                        else:
+                            skips += 1
+                    except IngestError as e:
+                        print(f"  [{vid}] {e}", file=sys.stderr)
+                        failures += 1
                     except Exception as e:
                         print(f"  [{vid}] FATAL: {e}", file=sys.stderr)
                         failures += 1
-                print(f"  selective ingest: {successes} ok, {failures} failed")
+                print(f"  selective ingest: {successes} ok, {skips} skipped, {failures} failed")
             else:
                 ingest_channel(
                     args.url,

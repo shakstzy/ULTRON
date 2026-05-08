@@ -874,11 +874,13 @@ class Walker:
         folder = parent_dir / f"{slug}__{idn}"
         return (folder, folder / "index.md")
 
-    def process_page(self, page: dict, parent_dir: Path, parent_path: list[str]) -> Path:
+    def process_page(self, page: dict, parent_dir: Path, parent_path: list[str]) -> Path | None:
+        """Returns the absolute path of the .md file written for this page,
+        or None if no file was written (skipped, archived, or upstream fetch failed)."""
         if page.get("archived") and not self.force:
             self.log({"action": "skip-archived", "id": page["id"]})
             self.stats["skipped"] += 1
-            return parent_dir
+            return None
 
         single_path, folder_index = self._page_filename_pair(page, parent_dir)
 
@@ -889,25 +891,50 @@ class Walker:
         except Exception as e:
             sys.stderr.write(f"  block fetch failed for page {page['id'][:8]}: {e}\n")
             self.stats["failed"] += 1
-            return parent_dir
+            return None
         has_subpages = any(b.get("type") in ("child_page", "child_database")
                            for b in blocks)
         out_path = folder_index if has_subpages else single_path
         page_dir = out_path.parent  # folder for assets + child files
 
-        # Path-flip orphan cleanup: if the page used to be a leaf (single-file)
-        # and now has subpages, the old `<slug>__<id>.md` would be left orphaned
-        # next to the new `<slug>__<id>/index.md`. Detect and remove.
+        # Path-flip orphan cleanup, both directions:
+        #   leaf → folder: old `<slug>__<id>.md` lingers next to new `index.md`
+        #   folder → leaf: old `<slug>__<id>/index.md` (and assets dir) linger next to new single-file
+        # The frontmatter's notion_page_id confirms it's the same page before unlink.
         if has_subpages and single_path.exists() and single_path != out_path:
-            try:
-                if not self.dry_run:
-                    single_path.unlink()
-                self.log({"action": "orphan-cleanup-leaf",
-                          "path": str(single_path.relative_to(ULTRON_ROOT))})
-            except OSError as e:
-                sys.stderr.write(f"  orphan cleanup failed {single_path.name}: {e}\n")
-        # Reverse case (folder→leaf): if page had children but now doesn't,
-        # leave the old folder; v2 reconcile pass will sweep it.
+            old_fm = _read_existing_fm(single_path)
+            if old_fm and old_fm.get("notion_page_id") == _normalize_id(page["id"]):
+                try:
+                    if not self.dry_run:
+                        single_path.unlink()
+                    self.log({"action": "orphan-cleanup-leaf",
+                              "path": str(single_path.relative_to(ULTRON_ROOT))})
+                except OSError as e:
+                    sys.stderr.write(f"  orphan cleanup failed {single_path.name}: {e}\n")
+        elif (not has_subpages) and folder_index.exists() and folder_index != out_path:
+            old_fm = _read_existing_fm(folder_index)
+            if old_fm and old_fm.get("notion_page_id") == _normalize_id(page["id"]):
+                old_dir = folder_index.parent
+                try:
+                    if not self.dry_run:
+                        # Only nuke the dir if everything in it belongs to this page.
+                        # Sub-page md files would have their own page_id frontmatter.
+                        safe_to_remove = True
+                        for child in old_dir.rglob("*"):
+                            if child.is_file() and child.suffix == ".md":
+                                cfm = _read_existing_fm(child)
+                                if cfm and cfm.get("notion_page_id") and \
+                                   cfm.get("notion_page_id") != _normalize_id(page["id"]):
+                                    safe_to_remove = False
+                                    break
+                        if safe_to_remove:
+                            shutil.rmtree(old_dir, ignore_errors=True)
+                            self.log({"action": "orphan-cleanup-folder",
+                                      "path": str(old_dir.relative_to(ULTRON_ROOT))})
+                        else:
+                            sys.stderr.write(f"  skip folder orphan cleanup (other pages inside): {old_dir.name}\n")
+                except OSError as e:
+                    sys.stderr.write(f"  orphan cleanup failed {old_dir.name}: {e}\n")
 
         # Skip if unchanged.
         existing_fm = _read_existing_fm(out_path)
@@ -995,7 +1022,7 @@ class Walker:
                 self.process_database(sub_db, parent_dir=page_dir,
                                       parent_path=parent_path + [_page_title(page)])
 
-        return page_dir
+        return out_path
 
     def process_database(self, db: dict, parent_dir: Path, parent_path: list[str]) -> Path:
         folder, index_path = self._db_paths(db, parent_dir)
@@ -1010,12 +1037,21 @@ class Walker:
         # Recurse into each row first so wikilinks resolve.
         row_links: list[str] = []
         for row in rows:
-            self.process_page(row, parent_dir=folder,
-                              parent_path=parent_path + [_rt_render(db.get("title") or []) or "DB"])
+            row_out = self.process_page(
+                row, parent_dir=folder,
+                parent_path=parent_path + [_rt_render(db.get("title") or []) or "DB"],
+            )
             title = _page_title(row)
             slug = _slugify(title)
             idn = _id8(row["id"])
-            row_links.append(f"- [[{slug}__{idn}|{title}]]")
+            # Pick the wikilink form that matches what process_page actually wrote
+            # (or what already exists on disk if process_page hit an error path).
+            leaf = folder / f"{slug}__{idn}.md"
+            folder_idx = folder / f"{slug}__{idn}" / "index.md"
+            target_is_folder = (row_out is not None and row_out.name == "index.md") \
+                or folder_idx.exists() and not leaf.exists()
+            link_target = f"{slug}__{idn}/index" if target_is_folder else f"{slug}__{idn}"
+            row_links.append(f"- [[{link_target}|{title}]]")
 
         # Build index.md
         title = _rt_render(db.get("title") or []) or "Untitled DB"

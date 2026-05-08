@@ -461,6 +461,9 @@ def ingest_book(
             raise IngestError("sanity check failed: " + "; ".join(failures))
 
     raw_path = book_dir / f"{slug}.md"
+    raw_path = L.collision_safe_path(raw_path, source_url=url or meta.get("url"))
+    if raw_path.stem != slug:
+        slug = raw_path.stem
     extra = {
         "slug": slug,
         "title": final_title,

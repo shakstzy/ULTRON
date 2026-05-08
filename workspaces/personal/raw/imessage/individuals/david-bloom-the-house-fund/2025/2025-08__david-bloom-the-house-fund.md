@@ -46,9 +46,10 @@ attachments:
   sender: me
   sent_at: '2025-08-09T14:53:00.262898-05:00'
   sha256: 0a10a85a645384122878981ad9e960feb306dfcd6978c7ea8de84fc24dd3f60d
-  description: null
-  description_model: null
-  extracted_at: null
+  description: Synapse Web3 app demo showing BTC DCA task creation and BaseScan transaction
+    verification.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-08T03:59:14.525466+00:00'
   source_available: true
 - id: ed6535190fab4b23
   filename: IMG_1404.PNG

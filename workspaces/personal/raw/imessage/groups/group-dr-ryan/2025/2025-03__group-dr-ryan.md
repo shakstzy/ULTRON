@@ -22,9 +22,10 @@ attachments:
   sender: me
   sent_at: '2025-03-10T14:12:25.443000-05:00'
   sha256: a17b8651088da6693b51dd9dadae860fab93329fb5226d9ff26b4ccf0e3cfe74
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A video of Adithya and his mother, sent to Ryan Ogren and Dr. Luke
+    in March 2025.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-08T04:12:39.787630+00:00'
   source_available: true
 chat_message_guids_count: 3
 deleted_upstream: null

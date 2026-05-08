@@ -247,9 +247,10 @@ attachments:
   sender: me
   sent_at: '2025-12-25T01:25:40.561185-06:00'
   sha256: 33750d51c42acf843feab9ba8c9e00b499a348907234b2ba1488098363bddb88
-  description: null
-  description_model: null
-  extracted_at: null
+  description: A man in an Arizona Cardinals jersey leans into the camera in a teal-lit
+    laundromat.
+  description_model: gemini-3-flash-preview
+  extracted_at: '2026-05-08T04:07:58.398349+00:00'
   source_available: true
 - id: f4c2946dfa86434f
   filename: IMG_2945.png

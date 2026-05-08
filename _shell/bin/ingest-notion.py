@@ -899,17 +899,19 @@ class Walker:
             )
             body_md = _render_blocks(blocks, ctx)
 
-            # Properties (only meaningful on database rows).
+            kind = "db_row" if (page.get("parent") or {}).get("type") == "database_id" else "page"
+
+            # Properties only meaningful on database rows. Top-level pages have a
+            # synthetic `title` property which duplicates notion_title — skip them.
             properties = page.get("properties") or {}
             props_compact: dict = {}
-            for name, prop in properties.items():
-                v = _render_property(prop)
-                if v is None or v == "" or v == []:
-                    continue
-                props_compact[name] = v
+            if kind == "db_row":
+                for name, prop in properties.items():
+                    v = _render_property(prop)
+                    if v is None or v == "" or v == []:
+                        continue
+                    props_compact[name] = v
 
-            kind = "db_row" if (page.get("parent") or {}).get("type") == "database_id" else "page"
-            full_path = " / ".join(parent_path + [_page_title(page)])
             header = f"# {_page_title(page)}\n"
             if kind == "db_row" and props_compact:
                 header += "\n" + _render_properties_block(properties) + "\n"

@@ -243,23 +243,43 @@ def ingest_one(url: str) -> tuple[str, str | None]:
 # ---------------------------------------------------------------------------
 
 class _LinkExtractor(HTMLParser):
-    def __init__(self):
+    """Streaming <a href> extractor. Caller passes a per-link `accept`
+    callback that decides whether to keep the link; parsing stops once the
+    callback signals enough links have been collected. This keeps memory
+    bounded for pathological pages with millions of links."""
+
+    def __init__(self, accept):
         super().__init__(convert_charrefs=True)
-        self.links: list[str] = []
+        self._accept = accept
+        self._stop = False
 
     def handle_starttag(self, tag, attrs):
-        if tag.lower() != "a":
+        if self._stop or tag.lower() != "a":
             return
         for k, v in attrs:
             if k.lower() == "href" and v:
-                self.links.append(v)
+                if self._accept(v) is False:
+                    self._stop = True
                 return
 
 
-def _fetch(url: str) -> str:
+def _fetch(url: str, max_bytes: int = MAX_HUB_BYTES) -> str:
+    """Stream up to `max_bytes` from `url`. Raises IngestError-like
+    RuntimeError on overflow so the crawl halts loudly instead of silently
+    truncating."""
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    chunks: list[bytes] = []
+    written = 0
     with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT) as resp:
-        raw = resp.read()
+        while True:
+            chunk = resp.read(64 * 1024)
+            if not chunk:
+                break
+            written += len(chunk)
+            if written > max_bytes:
+                raise RuntimeError(f"hub fetch exceeded {max_bytes} bytes; aborting")
+            chunks.append(chunk)
+    raw = b"".join(chunks)
     try:
         return raw.decode("utf-8")
     except UnicodeDecodeError:
@@ -289,47 +309,57 @@ def crawl_hub(
     exclude_pattern: str | None = None,
     limit: int | None = None,
 ) -> list[str]:
-    """Fetch a hub page, extract <a href> links, normalize and filter, return
-    a deduped list. By default constrains to the hub's domain — pass
-    allow_cross_domain=True to follow external links."""
+    """Fetch a hub page (capped at MAX_HUB_BYTES), extract <a href> links,
+    normalize and filter inline, return a deduped list. By default
+    constrains to the hub's host (with leading 'www.' stripped) — pass
+    allow_cross_domain=True to follow external links.
+
+    Filtering is done in the streaming HTMLParser callback so memory stays
+    bounded even on link-bomb pages: at most MAX_HUB_LINKS accepted entries
+    plus an O(1) seen-set live in memory.
+    """
     print(f"  fetching hub: {hub_url}")
     html = _fetch(hub_url)
-    parser = _LinkExtractor()
-    parser.feed(html)
 
-    base_host = urllib.parse.urlsplit(hub_url).netloc.lower()
+    base_host = _host(hub_url)
     inc_re = re.compile(include_pattern) if include_pattern else None
     exc_re = re.compile(exclude_pattern) if exclude_pattern else None
+    hard_cap = limit if (limit and limit > 0) else MAX_HUB_LINKS
 
     out: list[str] = []
     seen: set[str] = set()
-    skipped = {"empty": 0, "scheme": 0, "domain": 0, "self": 0, "include": 0, "exclude": 0, "dup": 0}
+    skipped = {"empty": 0, "domain": 0, "self": 0, "include": 0, "exclude": 0, "dup": 0}
     hub_norm = _normalize_link(hub_url, hub_url)
-    for href in parser.links:
+
+    def accept(href: str) -> bool:
+        """Return False to halt parsing once we have enough links."""
+        if len(out) >= hard_cap:
+            return False
         norm = _normalize_link(href, hub_url)
         if not norm:
             skipped["empty"] += 1
-            continue
+            return True
         if norm == hub_norm:
             skipped["self"] += 1
-            continue
-        host = urllib.parse.urlsplit(norm).netloc.lower()
-        if not allow_cross_domain and host != base_host:
+            return True
+        if not allow_cross_domain and _host(norm) != base_host:
             skipped["domain"] += 1
-            continue
+            return True
         if inc_re and not inc_re.search(norm):
             skipped["include"] += 1
-            continue
+            return True
         if exc_re and exc_re.search(norm):
             skipped["exclude"] += 1
-            continue
+            return True
         if norm in seen:
             skipped["dup"] += 1
-            continue
+            return True
         seen.add(norm)
         out.append(norm)
-        if limit and len(out) >= limit:
-            break
+        return len(out) < hard_cap
+
+    parser = _LinkExtractor(accept)
+    parser.feed(html)
     print(f"  extracted {len(out)} links ({skipped})")
     return out
 
@@ -364,26 +394,34 @@ def ingest_urls(urls: list[str], *, dry_run: bool = False) -> dict:
 
 def read_url_list(source: str, positional: list[str]) -> list[str]:
     """Load URLs from --urls source ('-' = stdin, else file path) plus any
-    positional args. Strips blanks and `#`-prefixed comments."""
-    urls: list[str] = []
-    if source:
-        if source == "-":
-            text = sys.stdin.read()
-        else:
-            text = Path(source).read_text(encoding="utf-8")
-        for line in text.splitlines():
-            line = line.strip()
-            if not line or line.startswith("#"):
-                continue
-            urls.append(line)
-    urls.extend(u.strip() for u in positional if u.strip())
-    seen: set[str] = set()
+    positional args. Strips blanks and `#`-prefixed comments. Streams
+    line-by-line so a large file/pipe doesn't sit in memory; capped at
+    MAX_URL_LIST_LINES."""
     out: list[str] = []
-    for u in urls:
-        if u in seen:
-            continue
-        seen.add(u)
-        out.append(u)
+    seen: set[str] = set()
+
+    def add(line: str):
+        line = line.strip()
+        if not line or line.startswith("#"):
+            return
+        if line in seen:
+            return
+        seen.add(line)
+        out.append(line)
+
+    if source:
+        stream = sys.stdin if source == "-" else open(source, "r", encoding="utf-8")
+        try:
+            for i, line in enumerate(stream):
+                if i >= MAX_URL_LIST_LINES:
+                    sys.stderr.write(f"  ! url list truncated at {MAX_URL_LIST_LINES} lines\n")
+                    break
+                add(line)
+        finally:
+            if source != "-":
+                stream.close()
+    for u in positional:
+        add(u)
     return out
 
 
@@ -426,7 +464,14 @@ def main() -> int:
             print("  no links extracted; nothing to ingest", file=sys.stderr)
             return 2
     else:
-        urls = read_url_list(args.urls_file, args.urls)
+        try:
+            urls = read_url_list(args.urls_file, args.urls)
+        except FileNotFoundError as e:
+            print(f"  url list not found: {e}", file=sys.stderr)
+            return 2
+        except OSError as e:
+            print(f"  could not read url list: {type(e).__name__}: {e}", file=sys.stderr)
+            return 1
         if args.include_pattern:
             inc = re.compile(args.include_pattern)
             urls = [u for u in urls if inc.search(u)]

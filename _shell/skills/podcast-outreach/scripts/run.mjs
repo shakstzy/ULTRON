@@ -308,18 +308,22 @@ async function vSend(args) {
   }
   step(`send: ${batch.length} message(s) (mode=${send ? "LIVE" : "dry-run"})`);
 
-  const archivedLabel = await findLabel(LABEL_ARCHIVED);
-  if (send && !archivedLabel) {
-    warn(`label "${LABEL_ARCHIVED}" missing; run ensure-labels --send first`);
-    // Stuff the batch back at the head — don't drop it on the floor.
-    const cur = await Queue.readAll();
-    const tmp = [...batch, ...cur];
-    await fs.writeFile(
-      path.join(STATE_HOME, "queue.jsonl"),
-      tmp.map((r) => JSON.stringify(r)).join("\n") + "\n",
-      "utf8",
-    );
-    return 1;
+  // Dry-run never touches gmail — no label lookup, no auth dependency.
+  let archivedLabel = null;
+  if (send) {
+    try {
+      archivedLabel = await findLabel(LABEL_ARCHIVED);
+    } catch (e) {
+      warn(`label lookup failed (likely gog auth): ${e.message}`);
+      warn(`re-queueing ${batch.length} popped rows; run: gog auth login ${ACCOUNT_EMAIL}`);
+      await Queue.append(batch);
+      return 1;
+    }
+    if (!archivedLabel) {
+      warn(`label "${LABEL_ARCHIVED}" missing; run ensure-labels --send first`);
+      await Queue.append(batch);
+      return 1;
+    }
   }
 
   let okCount = 0, failCount = 0, dupCount = 0;

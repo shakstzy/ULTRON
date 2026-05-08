@@ -10,3 +10,10 @@
 - 2026-05-07T22:26:23 — ingest-article: paulgraham-having-kids ('Having Kids')
 - 2026-05-07T22:26:23 — ingest-article: paulgraham-how-lose-time-money ('How to Lose Time and Money')
 - 2026-05-07T22:26:23 — ingest-batch: {'total': 3, 'ok': 3, 'skip': 0, 'error': 0, 'by_kind': {'article': 3}}
+- 2026-05-07T22:46:12 — ingest-article: paulgraham-how-do-what-you ('How to Do What You Love')
+- 2026-05-07T22:46:26 — ingest-paper: vaswani-attention-all-you-2017 ('Attention Is All You Need')
+- 2026-05-07T22:46:30 — ingest-youtube: 3blue1brown-what-neural-network-deep-airca ('But what is a neural network? | Deep learning chapter 1')
+- 2026-05-07T22:46:30 — ingest-batch: {'total': 3, 'ok': 3, 'skip': 0, 'error': 0, 'by_kind': {'article': 1, 'paper': 1, 'youtube-video': 1}}
+- 2026-05-07T22:46:34 — ingest-article: paulgraham-how-do-great-work ('How to Do Great Work')
+- 2026-05-07T22:46:34 — ingest-article: paulgraham-having-kids ('Having Kids')
+- 2026-05-07T22:46:34 — ingest-batch: {'total': 2, 'ok': 2, 'skip': 0, 'error': 0, 'by_kind': {'article': 2}}

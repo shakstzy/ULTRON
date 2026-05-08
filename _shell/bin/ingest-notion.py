@@ -362,6 +362,10 @@ def _render_blocks(blocks: list[dict], ctx: RenderCtx, depth: int = 0) -> str:
     out: list[str] = []
     in_list_kind: str | None = None
     for blk in blocks:
+        # Skip archived (soft-deleted) blocks — Notion still returns them
+        # via /blocks/<id>/children but they're hidden in the UI.
+        if blk.get("archived"):
+            continue
         t = blk.get("type")
         rendered, list_kind = _render_block(blk, ctx, depth)
         # blank line between non-list blocks; tighter spacing between list items
@@ -669,6 +673,13 @@ def _render_property(prop: dict) -> Any:
         prefix = u.get("prefix")
         num = u.get("number")
         return f"{prefix}-{num}" if prefix else num
+    if pt == "verification":
+        # Notion Wiki verification status: {state: "verified"|"expired", verified_by: {...}, date: {...}}
+        v = val or {}
+        return v.get("state") or None
+    if pt == "button":
+        # Buttons have no readable value — record presence only.
+        return "(button)"
     return val
 
 
@@ -898,6 +909,9 @@ class Walker:
             and existing_fm is not None
             and existing_fm.get("provider_modified_at") == page.get("last_edited_time")
             and existing_fm.get("notion_page_id") == _normalize_id(page["id"])
+            # Bumping INGEST_VERSION must invalidate cached files even if Notion
+            # didn't change — covers render-logic upgrades.
+            and existing_fm.get("ingest_version") == INGEST_VERSION
         )
         if unchanged:
             self.stats["unchanged"] += 1
@@ -1012,6 +1026,7 @@ class Walker:
             and existing_fm is not None
             and existing_fm.get("provider_modified_at") == db.get("last_edited_time")
             and existing_fm.get("notion_page_id") == _normalize_id(db["id"])
+            and existing_fm.get("ingest_version") == INGEST_VERSION
         )
         if unchanged:
             self.stats["unchanged"] += 1

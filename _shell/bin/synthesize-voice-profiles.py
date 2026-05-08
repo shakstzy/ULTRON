@@ -458,8 +458,11 @@ def synthesize_one(entity_slug: str, imsg_slugs: list[str], dry_run: bool, min_c
         return {"slug": entity_slug, "status": "cloud-error", "error": source or "unknown"}
 
     raw = strip_json_fences(out)
+    # strict=False allows literal newlines and other control chars inside JSON
+    # string values. Gemini-flash occasionally emits unescaped \n mid-string,
+    # which the default strict parser rejects.
     try:
-        parsed = json.loads(raw)
+        parsed = json.loads(raw, strict=False)
     except json.JSONDecodeError as e:
         return {"slug": entity_slug, "status": "bad-json", "error": str(e), "raw_head": raw[:200], "engine": engine}
 

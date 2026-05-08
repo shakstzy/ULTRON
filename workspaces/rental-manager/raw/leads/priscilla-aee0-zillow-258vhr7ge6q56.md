@@ -8,7 +8,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: gmail-1987635f7589aee0
 status_label: INQUIRED
-last_pulled_at: "2026-05-08T02:51:31.698Z"
+last_pulled_at: "2026-05-08T02:54:26.176Z"
 ---
 
 # Priscilla

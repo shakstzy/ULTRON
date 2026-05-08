@@ -8,7 +8,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: gmail-196c54a80af45b51
 status_label: INQUIRED
-last_pulled_at: "2026-05-08T02:51:46.280Z"
+last_pulled_at: "2026-05-08T02:54:40.624Z"
 ---
 
 # Rose

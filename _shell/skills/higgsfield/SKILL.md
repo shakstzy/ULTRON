@@ -136,11 +136,18 @@ LOCAL_PATH=$(jq -r '.local_path' "$RUN_DIR/metadata.json")
 | Handler | Status | Notes |
 |---|---|---|
 | `image` | ✅ working | nano-banana-pro tested, free with `--unlim` |
-| `video` | ✅ working | seedance_2_0_fast 8s tested, free with `--unlim`. NOTE: 5s no longer accepted — use 8s minimum |
-| `marketing` | ⚠️ V2 rework needed | UI restructured 2026-04-30 (Product/App tabs + UGC/Hook/Setting sub-tabs). Generate clicks but no `/jobs/` POST fires. CLI flags (`--hook`, `--avatar`) wired but require post-recon UI flow. |
-| `cinema` | ⚠️ 3.5 partial | Mode switch fixed (aria-selected verification), `--genre`/`--style` wired. Generate clicks but no `/jobs/` POST fires — likely page-side gating (model/genre/style required). |
+| `video` | ✅ working | seedance_2_0_fast 8s tested, free with `--unlim`. NOTE: 5s no longer accepted by Seedance — use 8s minimum |
+| `cinema --mode video` | ✅ submit works | Slug `cinematic_studio_video_3_5` confirmed. POST returns 200 with `job_sets[0].id`. Asset matching needs `created_at >= submit_time` filter to avoid grabbing stale files (current "newest in History" picks pre-existing assets) |
+| `cinema --mode image` | ⚠️ prompt fills wrong panel | Slug fixed to `cinematic_studio_image_3_5`. Mode switch works (aria-selected verification). Cinema 3.5 renders BOTH image+video prompts simultaneously without [role=tabpanel] markup. Needs deeper panel-disambiguation work — currently fills video-panel prompt, image-panel stays empty, Generate gated |
+| `marketing` | ⚠️ V2 rework needed | UI restructured 2026-04-30 (Product/App tabs + UGC/Hook/Setting sub-tabs + 40+ avatar library). Generate clicks but no `/jobs/` POST fires. New CLI flags (`--hook`, `--avatar`) wired but require post-recon UI flow rebuild |
 
-For marketing/cinema fixes, run `node scripts/run.mjs recon` to dump current DOM, then use `--debug` flag to leave the browser open and inspect what Generate is doing.
+### Run recon to inventory current UI
+
+```bash
+node scripts/run.mjs recon
+```
+
+Writes `_shell/skill-output/higgsfield/recon/<timestamp>.json` with all clickables on Marketing Studio V2 + Cinema Studio 3.5 + image/video model pickers. Use this to update selectors when Higgsfield ships UI changes.
 
 ## Out-of-scope (v1)
 

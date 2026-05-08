@@ -8,15 +8,15 @@ reference_email: "2ftvyqajv8pwuikrta5m6fp6ns@convo.zillow.com"
 listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 4135075795335991467
-status_label: INQUIRED
-last_pulled_at: "2026-05-08T02:51:02.748Z"
+status_label: TOURED
+last_pulled_at: "2026-05-08T02:53:58.402Z"
 ---
 
 # Rebecca Frantz
 
 Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 
-- Status: `INQUIRED`
+- Status: `TOURED`
 - Phone: `+13238297698`
 - Zillow forwarding email: `2ftvyqajv8pwuikrta5m6fp6ns@convo.zillow.com`
 - Conversation ID: `4135075795335991467`

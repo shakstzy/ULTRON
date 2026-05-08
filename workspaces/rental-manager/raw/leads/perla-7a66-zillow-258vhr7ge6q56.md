@@ -30,3 +30,7 @@ I'd like to schedule a viewing for Klein Ct, Sylmar, CA 91342, US. Please contac
 ### 2025-06-10T18:20:15.000Z - Perla garcia
 
 Hi my number is (818)493-8375 I’m free today and all week except friday
+
+### 2026-05-08T18:53:08.179Z - Owner (Adithya)
+
+Hey Perla. I can show you the place today or tomorrow. What time works best for you to swing by?

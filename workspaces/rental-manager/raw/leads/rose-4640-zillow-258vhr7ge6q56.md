@@ -30,3 +30,7 @@ Hi, Adithya. I have a random question. Do you know how many people live in this 
 ### 2025-05-25T20:02:36.000Z - Rose Danguy
 
 Ok, thanks for the reply.
+
+### 2026-05-08T18:52:03.856Z - Owner (Adithya)
+
+Just one guy right now. John, 40, super chill. 4 rooms are still open. Let me know what day works for you to take a look.

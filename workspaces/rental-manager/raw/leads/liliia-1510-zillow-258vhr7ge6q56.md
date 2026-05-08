@@ -34,3 +34,7 @@ I would like to schedule a tour. Would any of these dates work for you? Monday (
 ### 2025-05-27T14:57:04.000Z - Liliia Klemenkova
 
 friday morning?
+
+### 2026-05-08T18:52:14.622Z - Owner (Adithya)
+
+Friday morning works. What time were you thinking?

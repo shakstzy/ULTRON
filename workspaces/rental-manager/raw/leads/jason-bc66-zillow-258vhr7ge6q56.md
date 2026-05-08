@@ -34,3 +34,7 @@ It says it has attached garage. Is that like a personal garage that’s closed i
 ### 2025-06-14T02:52:48.000Z - Jason Boullion
 
 818 482-4680. Anytime is good Sent from Yahoo Mail for iPhone
+
+### 2026-05-08T18:53:49.690Z - Owner (Adithya)
+
+Yeah it's a fully enclosed personal garage with a door. Parking in there is an optional add-on if you want it. Since you said anytime works, let me know what day and time is best for you to check the place out.

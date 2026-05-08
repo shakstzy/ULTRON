@@ -26,3 +26,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 ### 2025-06-13T16:39:44.000Z - Christian Quintero
 
 New application request 13245 Klein Ct, Sylmar, CA, 91342. Christian Quintero requested an application: Application submitted Send application Reply to Christian You can also reply directly to this
+
+### 2026-05-08T18:53:22.014Z - Owner (Adithya)
+
+Hey Christian, saw your application request for the Klein Ct house. Let's get you in for a tour first. Let me know what days work for you this week.

@@ -57,16 +57,28 @@ NEVER ask Adithya for a phone number or email. Resolve mechanically. ONLY surfac
 
 **Stub bug?** Note it in the reply so Adithya can fix `_global/entities/people/<slug>.md` or the `contacts-sync` skill — don't silently route around it.
 
+## Voice fidelity — three-source context before drafting
+
+Before composing ANY iMessage body to a third party, assemble these into your scratch context:
+
+1. **Voice profile** — read `_global/entities/people/<entity-slug>.md` frontmatter. If `voice_profile:` is present, that's the canonical "how Adithya talks to this person" digest (tone register, vocabulary, abbreviations, emoji habits, message length). Use it as the dominant style anchor.
+2. **Conversation summary** — same stub, `conversation_summary:` field. Recent topics, ongoing threads, inside references. Pull this so the message lands in current context, not in a vacuum.
+3. **Recent message tail** — read the last shard at `workspaces/personal/raw/imessage/individuals/<imsg-slug>/<latest-year>/<latest-month>__<imsg-slug>.md` (or `groups/...` for group chats) to anchor on the most recent ~50 messages. The imessage profile slug is in `_profiles/<imsg-slug>.md` matched by phone/email — usually `<entity-slug>` or `<entity-slug>-2`.
+
+If `voice_profile:` is missing on the stub, run `python3 ~/ULTRON/_shell/bin/synthesize-voice-profiles.py --slug <entity-slug> --force` once to populate it, then proceed. The weekly cron (Sun 04:00) refreshes stale stubs automatically; the on-demand call covers cold contacts.
+
+Compose the draft IN that voice. If the voice profile says "no punctuation, abbreviations, sub-5-word messages," obey that — do not write paragraphs.
+
 ## ALWAYS humanize the body before sending
 
-Before any `send.sh --text` call, run the body through the **humanizer** skill (`~/ULTRON/_shell/skills/humanizer/`, symlink to the global). Adithya does not want AI-flavored prose going out under his name — em-dashes, "rule of three," inflated symbolism, "I came across some questions that meant a lot to me," etc.
+After composing the in-voice draft, run it through the **humanizer** skill (`~/ULTRON/_shell/skills/humanizer/`, symlink to the global). Adithya does not want AI tells going out under his name — em-dashes, rule-of-three, inflated symbolism, "I came across some questions that meant a lot to me," etc.
 
 Flow:
-1. Compose draft body in Adithya's natural voice (terse, lowercase, conversational, profanity OK in friend contexts).
-2. Invoke the humanizer skill on the draft. Use the returned text as the body.
-3. Pass that text to `send.sh --text "..."`.
+1. Compose draft using the three-source context above (voice profile + summary + recent tail).
+2. Invoke the humanizer skill on the draft.
+3. Pass the humanized result to `send.sh --text "..."`.
 
-For halt-notification sends from cron bots to Adithya himself, skip the humanizer (those are explicitly machine-flavored).
+For halt-notification sends from cron bots to Adithya himself, skip both voice-context and humanizer (those are explicitly machine-flavored).
 
 ## ALWAYS use `send.sh` — NEVER the MCP iMessage tool
 

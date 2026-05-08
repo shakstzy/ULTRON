@@ -31,6 +31,8 @@ cross_workspace:
     cron: "0 4 1 */3 *"             # 04:00 on the 1st of every 3rd month
   granola_reconcile:
     cron: "0 3 1,15 * *"            # 03:00 on 1st & 15th (biweekly --reset-cursor sweep, catches Granola folder reclassifications)
+  synthesize_voice_profiles:
+    cron: "0 4 * * 0"               # Sundays 04:00 — refresh voice_profile + conversation_summary for stale contacts (capped at 20/run)
 
 # Long-running daemons (KeepAlive=true). Compiled to plists with no cron.
 daemons:

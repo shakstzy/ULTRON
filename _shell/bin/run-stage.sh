@@ -23,7 +23,7 @@ ACCOUNT=""
 # 1. Stage validation BEFORE any state mutation.
 case "$STAGE" in
   ingest|lint|audit|bootstrap|weekly-review|query) ;;
-  apple-contacts-sync|ledger-compact|graphify-supermerge|graphify|granola-reconcile|rental-cycle) ;;
+  apple-contacts-sync|ledger-compact|graphify-supermerge|graphify|granola-reconcile|rental-cycle|synthesize-voice-profiles) ;;
   ingest-source)
     # Per (source, account) mode. Args: ingest-source <source> <account>.
     SOURCE="${2:-}"
@@ -54,7 +54,7 @@ esac
 # Helper stages don't have a stages/<stage>/CONTEXT.md; they invoke a single
 # script and exit. ingest-source uses the source's substage CONTEXT.md.
 case "$STAGE" in
-  apple-contacts-sync|ledger-compact|graphify-supermerge|graphify|granola-reconcile|rental-cycle) ;;
+  apple-contacts-sync|ledger-compact|graphify-supermerge|graphify|granola-reconcile|rental-cycle|synthesize-voice-profiles) ;;
   ingest-source)
     if [[ ! -f "$ULTRON_ROOT/_shell/stages/ingest/$SOURCE/CONTEXT.md" ]]; then
       echo "missing source substage: $ULTRON_ROOT/_shell/stages/ingest/$SOURCE/CONTEXT.md" >&2
@@ -248,6 +248,13 @@ case "$STAGE" in
   apple-contacts-sync)
     "$ULTRON_ROOT/.venv/bin/python3" "$ULTRON_ROOT/_shell/skills/contacts-sync/scripts/sync.py" \
       > "$RUN_DIR/output/contacts-sync.log" 2>&1 || EC=$?
+    ;;
+  synthesize-voice-profiles)
+    # Refresh voice_profile + conversation_summary on stale entity stubs.
+    # Default --limit 20 keeps quota usage bounded; bump in schedule.yaml if needed.
+    python3 "$ULTRON_ROOT/_shell/bin/synthesize-voice-profiles.py" \
+      --limit "${VOICE_PROFILE_LIMIT:-20}" \
+      > "$RUN_DIR/output/synthesize-voice-profiles.log" 2>&1 || EC=$?
     ;;
   rental-cycle)
     # Owner-side rental-manager full cycle: ingest → auto-book → contextual-send → application-notifier.

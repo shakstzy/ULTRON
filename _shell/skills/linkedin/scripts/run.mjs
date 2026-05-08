@@ -296,12 +296,12 @@ async function vPull(args) {
 
 async function vGetProfile(args) {
   if (!args.profile) {
-    console.error('Usage: run.mjs get-profile --profile <id_or_url> [--no-write] [--json]');
+    console.error('Usage: run.mjs get-profile --profile <id_or_url> [--no-write] [--no-promote] [--json]');
     return 1;
   }
   const { withSession } = await openSessionFactory();
   const { gate, record } = await import("../src/policy/rate-limits.mjs");
-  const { upsertPerson } = await import("../src/runtime/entity-store.mjs");
+  const { upsertPerson, upsertGlobalPersonStub } = await import("../src/runtime/entity-store.mjs");
   const { toSlug } = await import("../src/runtime/slug.mjs");
   const { urlOrIdToPublicId } = await import("../src/runtime/identity.mjs");
 
@@ -324,13 +324,34 @@ async function vGetProfile(args) {
       linkedin_url: result.url,
       linkedin_urn: result.profileUrn,
       name: result.displayName,
-      source: "manual_url",
       last_pulled_at: new Date().toISOString(),
     };
     const file = await upsertPerson({ slug, frontmatter: fm, profileSnapshot: result.sections.main_profile });
-    await record("get_profile", { target: publicId, extra: { slug, file } });
-    if (args.json) console.log(JSON.stringify({ slug, file, displayName: result.displayName, profileUrn: result.profileUrn, url: result.url }, null, 2));
-    else console.log(`OK  ${result.displayName ?? publicId}  ->  ${file}`);
+
+    // Auto-create thin provisional global stub unless opted out. Idempotent —
+    // if contacts-sync already wrote a stub at this slug we leave it alone.
+    let globalStub = null;
+    if (!args["no-promote"]) {
+      globalStub = await upsertGlobalPersonStub({
+        slug,
+        name: result.displayName,
+        linkedinPublicId: publicId,
+        linkedinUrl: result.url,
+      });
+    }
+
+    await record("get_profile", { target: publicId, extra: { slug, file, globalStub: globalStub?.file ?? null } });
+    if (args.json) {
+      console.log(JSON.stringify({
+        slug, file, displayName: result.displayName, profileUrn: result.profileUrn, url: result.url,
+        globalStub: globalStub?.file ?? null, globalStubCreated: globalStub?.created ?? false,
+      }, null, 2));
+    } else {
+      const stubLabel = globalStub
+        ? (globalStub.created ? `; created ${globalStub.file}` : `; existing ${globalStub.file}`)
+        : "";
+      console.log(`OK  ${result.displayName ?? publicId}  ->  ${file}${stubLabel}`);
+    }
     return 0;
   });
 }
@@ -574,7 +595,8 @@ Verbs:
   status [--json]                                    halt + budgets + recent actions
   diag [--url <u>]                                   screenshot + page-text + selector survey
   pull [--thread-limit N]                            inbox + each thread + invites (read-only)
-  get-profile --profile <id> [--no-write] [--json]   fetch a profile, optionally upsert markdown
+  get-profile --profile <id> [--no-write]            fetch a profile, optionally upsert markdown
+          [--no-promote] [--json]                    --no-promote skips auto-creating the global stub
   send-dm --profile <id> --text "..." [--send]       compose and send a DM
           [--to-connection] [--profile-urn <urn>]
   send-connect --profile <id> [--note "..."]         send a connection request
@@ -589,7 +611,7 @@ Verbs:
           [--json]
 
 Common:
-  --workspace <ws>    raw markdown writes under workspaces/<ws>/raw/linkedin/ (default: personal)
+  --workspace <ws>    raw markdown writes under workspaces/<ws>/raw/linkedin/ (default: network)
   --send              required to actually execute write verbs (default is dry-run)
 `);
 }

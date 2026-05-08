@@ -24,7 +24,7 @@ export const CAPS_FILE = resolve(CONFIG_DIR, "caps.json");
 
 export const PROFILE_DIR = resolve(ULTRON_ROOT, "_credentials/browser-profiles/linkedin");
 
-const WS = process.env.LINKEDIN_WORKSPACE || "personal";
+const WS = process.env.LINKEDIN_WORKSPACE || "network";
 export const WORKSPACE = WS;
 export const RAW_DIR = resolve(ULTRON_ROOT, "workspaces", WS, "raw/linkedin");
 

@@ -70,7 +70,8 @@ _shell/skills/linkedin/
 | Quarantined profiles | `~/.ultron/linkedin/quarantine/` |
 | Ban-signal alerts | `~/.ultron/linkedin/alerts/` |
 | Diag artifacts | `~/.ultron/linkedin/diag/<ts>/` |
-| Raw markdown deposits | `~/ULTRON/workspaces/<ws>/raw/linkedin/<slug>-linkedin.md` (default ws: `personal`) |
+| Raw markdown deposits | `~/ULTRON/workspaces/<ws>/raw/linkedin/<slug>-linkedin.md` (default ws: `network`) |
+| Auto-promoted global stubs | `~/ULTRON/_global/entities/people/<slug>.md` (`entity_status: provisional` until promoted) |
 
 ## First-time setup (once)
 

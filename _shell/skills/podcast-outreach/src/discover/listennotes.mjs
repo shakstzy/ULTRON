@@ -19,8 +19,15 @@ import { jitteredSleep } from "../runtime/humanize.mjs";
 
 const LN_BASE = "https://www.listennotes.com";
 
+// Genre URLs on Listennotes are gated behind a JS-driven dropdown — there's
+// no clean `/best-podcasts/<slug>/` pattern that returns podcast links.
+// Search URL works reliably for all seed types, so we route genre seeds
+// through search with "best <genre-as-words> podcast" as the query.
 function seedUrl(seed) {
-  if (seed.kind === "genre") return `${LN_BASE}/best-podcasts/${seed.slug}/`;
+  if (seed.kind === "genre") {
+    const phrase = `best ${seed.slug.replace(/-/g, " ")} podcast`;
+    return `${LN_BASE}/search/?q=${encodeURIComponent(phrase)}&sort_by_date=0&scope=podcast`;
+  }
   if (seed.kind === "query") return `${LN_BASE}/search/?q=${encodeURIComponent(seed.q)}&sort_by_date=0&scope=podcast`;
   throw new Error(`unknown seed kind: ${seed.kind}`);
 }

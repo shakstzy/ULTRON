@@ -1,14 +1,39 @@
-// Per-person markdown writer. One file per LinkedIn person at raw/linkedin/<slug>-linkedin.md.
-// Frontmatter merge (preserves existing values when a fetch returns less detail). Append-only
-// thread events under a "## Threads" section.
+// Per-person markdown writer for LinkedIn deposits.
+//
+// Writes to RAW_DIR (workspaces/<ws>/raw/linkedin/<slug>-linkedin.md) using the
+// ULTRON workspace raw ingest standard:
+//   source / workspace / ingested_at / ingest_version / content_hash /
+//   provider_modified_at  (header)
+//   then LinkedIn-specific fields, plus an `entity:` wikilink up to the
+//   _global/entities/people/<slug>.md stub for graphify route-resolution.
+//
+// Body sections:
+//   ## Profile snapshot   — innerText of LinkedIn <main> (overwritten on re-pull)
+//   ## Threads            — append-only event log, dedup'd on (day, direction, text)
+//
+// Cross-source dedup: BEFORE writing, we read the target file's frontmatter; if
+// `redirect_to:` is present we swap the slug to canonical and write THERE
+// instead. This is what makes `/alias` durable — future ingests honor the
+// merge automatically rather than re-creating the duplicate.
+//
+// Provides:
+//   upsertPerson({ slug, frontmatter, profileSnapshot, threadEvent })
+//   upsertGlobalPersonStub({ slug, name, linkedinPublicId, linkedinUrl })
+//     -> creates a thin _global/entities/people/<slug>.md stub if absent.
+//        Idempotent first-write-wins; never modifies an existing stub
+//        (contacts-sync owns the stub when it has one).
 
 import { promises as fs } from "node:fs";
-import { join } from "node:path";
+import { join, dirname } from "node:path";
+import { createHash } from "node:crypto";
 import lockfile from "proper-lockfile";
-import { RAW_DIR } from "./paths.mjs";
+import { RAW_DIR, WORKSPACE, ULTRON_ROOT } from "./paths.mjs";
 import { rawFilename } from "./slug.mjs";
 
 const FRONTMATTER_RE = /^---\n([\s\S]*?)\n---\n?/;
+const INGEST_VERSION = 1;
+
+const GLOBAL_PEOPLE_DIR = join(ULTRON_ROOT, "_global/entities/people");
 
 async function ensureRawDir() {
   await fs.mkdir(RAW_DIR, { recursive: true });
@@ -23,7 +48,8 @@ function parseFrontmatter(text) {
 }
 
 // Tiny YAML-flat parser. Handles only `key: value`, `key: "string"`, `key: [a, b]`. No nesting.
-// We control the writer so this is safe.
+// We control the writer for raw deposits so this is safe. For nested global-stub YAML
+// (written by contacts-sync), we only check for redirect_to and never round-trip.
 function parseYamlFlat(yaml) {
   const out = {};
   for (const line of yaml.split("\n")) {
@@ -64,6 +90,31 @@ function renderFrontmatter(fm) {
   return lines.join("\n");
 }
 
+function nowISO() { return new Date().toISOString(); }
+
+function sha256Hex(text) {
+  return "sha256:" + createHash("sha256").update(text, "utf8").digest("hex");
+}
+
+// Resolve a slug against a redirect stub at the would-be target path. If the
+// existing file's frontmatter has `redirect_to:` set, we follow the redirect
+// (one hop only — chained aliases are flagged but not resolved automatically;
+// run `/alias` to compact).
+async function resolveCanonicalSlug(slug) {
+  const file = join(RAW_DIR, rawFilename(slug));
+  let text;
+  try {
+    text = await fs.readFile(file, "utf8");
+  } catch {
+    return slug;
+  }
+  const { frontmatter } = parseFrontmatter(text);
+  if (frontmatter.redirect_to && typeof frontmatter.redirect_to === "string") {
+    return frontmatter.redirect_to;
+  }
+  return slug;
+}
+
 function mergeFrontmatter(existing, incoming, slug) {
   const merged = { ...existing, ...stripNulls(incoming) };
   // previous_slugs accumulates if slug changed
@@ -74,8 +125,8 @@ function mergeFrontmatter(existing, incoming, slug) {
     merged.previous_slugs = prev;
   }
   merged.slug = slug;
-  merged.first_seen = existing.first_seen ?? incoming.first_seen ?? new Date().toISOString();
-  merged.last_action_at = new Date().toISOString();
+  merged.first_seen = existing.first_seen ?? incoming.first_seen ?? nowISO();
+  merged.last_action_at = nowISO();
   return merged;
 }
 
@@ -83,10 +134,30 @@ function stripNulls(obj) {
   return Object.fromEntries(Object.entries(obj).filter(([, v]) => v !== null && v !== undefined && v !== ""));
 }
 
+// Apply the standard workspace raw ingest header on top of caller-supplied
+// LinkedIn-specific fields. Header is always recomputed at write time.
+function applyIngestHeader(fm, slug, providerModifiedAt, body) {
+  const ts = nowISO();
+  return {
+    source: "linkedin",
+    workspace: WORKSPACE,
+    ingested_at: ts,
+    ingest_version: INGEST_VERSION,
+    content_hash: sha256Hex(body),
+    provider_modified_at: providerModifiedAt ?? ts,
+    entity: `[[_global/entities/people/${slug}]]`,
+    ...fm,
+  };
+}
+
 export async function upsertPerson({ slug, frontmatter = {}, profileSnapshot = null, threadEvent = null }) {
   if (!slug) throw new Error("upsertPerson: slug required");
+
+  // Honor redirect stubs left by /alias — write to canonical, not the deprecated slug.
+  const canonicalSlug = await resolveCanonicalSlug(slug);
+
   await ensureRawDir();
-  const file = join(RAW_DIR, rawFilename(slug));
+  const file = join(RAW_DIR, rawFilename(canonicalSlug));
 
   // Lock target. proper-lockfile requires the path to exist; touch it first.
   try {
@@ -101,8 +172,6 @@ export async function upsertPerson({ slug, frontmatter = {}, profileSnapshot = n
       ? parseFrontmatter(existingText)
       : { frontmatter: {}, body: "" };
 
-    const mergedFm = mergeFrontmatter(existingFm, frontmatter, slug);
-
     let body = existingBody.trim();
     if (profileSnapshot) {
       body = upsertSection(body, "Profile snapshot", profileSnapshot);
@@ -110,7 +179,11 @@ export async function upsertPerson({ slug, frontmatter = {}, profileSnapshot = n
     if (threadEvent) {
       body = appendThreadEvent(body, threadEvent);
     }
-    const finalText = renderFrontmatter(mergedFm) + (body ? body + "\n" : "");
+
+    const mergedFm = mergeFrontmatter(existingFm, frontmatter, canonicalSlug);
+    const headerFm = applyIngestHeader(mergedFm, canonicalSlug, frontmatter.provider_modified_at, body);
+
+    const finalText = renderFrontmatter(headerFm) + (body ? body + "\n" : "");
     await atomicWrite(file, finalText);
   } finally {
     await release();
@@ -118,7 +191,55 @@ export async function upsertPerson({ slug, frontmatter = {}, profileSnapshot = n
   return file;
 }
 
+// Thin global person stub creator. First-write-wins and idempotent: if a
+// stub already exists at the target path (e.g. contacts-sync wrote one),
+// we leave it alone. The caller can still see the existing file by reading
+// the returned path.
+export async function upsertGlobalPersonStub({ slug, name, linkedinPublicId, linkedinUrl } = {}) {
+  if (!slug) throw new Error("upsertGlobalPersonStub: slug required");
+  await fs.mkdir(GLOBAL_PEOPLE_DIR, { recursive: true });
+  const file = join(GLOBAL_PEOPLE_DIR, `${slug}.md`);
+  try {
+    await fs.access(file);
+    return { file, created: false };
+  } catch { /* missing; create below */ }
+
+  const ts = nowISO();
+  const title = name || slug;
+  const safeTitle = JSON.stringify(title);
+  const body =
+    `---\n` +
+    `source: linkedin\n` +
+    `workspace: _global\n` +
+    `ingested_at: ${ts}\n` +
+    `ingest_version: ${INGEST_VERSION}\n` +
+    `content_hash: ${sha256Hex(title)}\n` +
+    `provider_modified_at: ${ts}\n` +
+    `\n` +
+    `title: ${safeTitle}\n` +
+    `slug: ${slug}\n` +
+    `type: person\n` +
+    `canonical_uri: lifeos:_global/entities/people/${slug}\n` +
+    `aliases: []\n` +
+    `identifiers:\n` +
+    `  email: []\n` +
+    `  phone: []\n` +
+    `  slack: []\n` +
+    `  linkedin: [${linkedinPublicId ? JSON.stringify(linkedinPublicId) : ""}]\n` +
+    `last_synced: ${ts}\n` +
+    `entity_status: provisional\n` +
+    `global: true\n` +
+    `---\n\n` +
+    `# ${title}\n\n` +
+    (linkedinUrl ? `LinkedIn: ${linkedinUrl}\n\n` : "") +
+    `## Notes\n\n` +
+    `_Auto-created from LinkedIn ingest. Promote with \`/promote-entity\` once the relationship matures._\n`;
+  await atomicWrite(file, body);
+  return { file, created: true };
+}
+
 async function atomicWrite(file, text) {
+  await fs.mkdir(dirname(file), { recursive: true });
   const tmp = file + ".tmp";
   await fs.writeFile(tmp, text, "utf8");
   await fs.rename(tmp, file);
@@ -134,19 +255,16 @@ function upsertSection(body, heading, content) {
 function appendThreadEvent(body, event) {
   // event = { ts: ISO, direction: "outbound"|"inbound"|"system", text: string }
   // Dedupe: skip if a same-day same-direction same-text line already exists.
-  // (Codex r2 P2: pull.mjs reruns on the same day duplicate system lines.)
   const heading = "## Threads";
-  const ts = event.ts ?? new Date().toISOString();
+  const ts = event.ts ?? nowISO();
   const dayBucket = ts.slice(0, 10); // YYYY-MM-DD
   const cleanText = event.text.replace(/\s+/g, " ").trim();
   const line = `### ${ts} — ${event.direction}: ${cleanText}`;
   if (body.includes(heading)) {
-    // Find the Threads block.
     const re = new RegExp(`(\\n## Threads\\n[\\s\\S]*?)(?=\\n## |$)`, "");
     const match = body.match(re);
     if (match) {
       const block = match[0];
-      // Dedupe key: same day + same direction + same text.
       const dupRe = new RegExp(
         `^### ${escapeRegex(dayBucket)}[^\\n]*\\s+\\u2014\\s+${escapeRegex(event.direction)}:\\s+${escapeRegex(cleanText)}\\s*$`,
         "m"

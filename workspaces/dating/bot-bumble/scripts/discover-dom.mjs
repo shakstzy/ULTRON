@@ -99,10 +99,6 @@ const SURVEY = [
   { key: "turnstile_iframe", queries: [
     "iframe[src*='challenges.cloudflare.com']", "iframe[src*='turnstile']",
   ]},
-  { key: "rewind_button", queries: [
-    "[data-qa-role='encounters-action-rewind']", "[data-qa-role*='rewind']",
-    "button[aria-label*='Rewind']", "button[aria-label*='Backtrack']",
-  ]},
 ];
 
 const { ctx, page } = await launchPersistent({ headless: false });

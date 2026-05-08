@@ -186,15 +186,14 @@ export async function swipeSession(page, { sessionMinutesMax = null } = {}) {
     }
 
     await logSwipe({
-      decision: finalDecision,
+      decision: wantLike ? "like" : "pass",
       filter_pass: inFilter,
       ratio_after: wouldBeRatio,
       profile,
       day_count: reservation.dayUsed,
-      ...(recoveredFromMissedMatch ? { recovered_from_missed_match: true } : {}),
     });
     swiped += 1;
-    if (finalDecision === "like") liked += 1;
+    if (wantLike) liked += 1;
 
     await sleep(jitter(...caps.swipes.between_swipes_ms));
   }

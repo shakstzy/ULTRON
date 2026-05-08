@@ -147,11 +147,5 @@
     "selector": "[class*='account-restriction'], [class*='unusual-activity']",
     "alt": [],
     "last_verified": null
-  },
-  "rewind_button": {
-    "_note": "Premium << rewind button. swipe.mjs clicks this after detecting Bumble's 'You missed!' / 'Did you mean to swipe right?' text via regex scan. Modal CSS not yet verified; we rely on text + this single click target. Update via discover-dom.mjs after first sighting.",
-    "selector": "[data-qa-role='encounters-action-rewind']",
-    "alt": ["[aria-label*='Rewind']", "[aria-label*='Backtrack']", "[data-qa-role*='rewind']"],
-    "last_verified": null
   }
 }

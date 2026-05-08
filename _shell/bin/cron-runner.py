@@ -4,14 +4,18 @@
 Usage:
     cron-runner.py <label> -- <cmd> [args...]
 
-Wraps a launchd job. Captures stdout/stderr (passthrough so launchd log paths still work),
-exit code, duration. Appends a JSONL row to the ledger and posts a colored event to the
-ULTRON Crons Google Calendar. Calendar/ledger failures never fail the underlying job.
+Wraps a launchd job. Inherits stdout/stderr from launchd's redirected fds (real-time
+logging, no memory buffering, no SIGKILL data loss). Captures exit code + duration +
+stderr-tail-from-disk. Appends a JSONL row to the ledger (file-locked) and posts a
+colored event to the ULTRON Crons Google Calendar. Calendar/ledger failures never fail
+the underlying job.
 """
 
+from __future__ import annotations
+
 import datetime
+import fcntl
 import json
-import os
 import pathlib
 import subprocess
 import sys
@@ -19,6 +23,31 @@ import time
 
 CONFIG_PATH = "/Users/shakstzy/ULTRON/_shell/config/cron-calendar.json"
 GOG = "/Users/shakstzy/.local/bin/gog"
+LOG_DIR = pathlib.Path("/Users/shakstzy/ULTRON/_logs")
+STDERR_TAIL_LIMIT = 1500
+
+
+def file_size(path: pathlib.Path) -> int:
+    try:
+        return path.stat().st_size
+    except FileNotFoundError:
+        return 0
+
+
+def read_after(path: pathlib.Path, offset: int) -> str:
+    """Read bytes from `offset` to EOF as text. Empty string if file shrank or doesn't exist."""
+    try:
+        size = path.stat().st_size
+    except FileNotFoundError:
+        return ""
+    if size < offset:
+        offset = 0
+    try:
+        with open(path, "rb") as f:
+            f.seek(offset)
+            return f.read().decode("utf-8", errors="replace")
+    except OSError:
+        return ""
 
 
 def main():
@@ -36,22 +65,26 @@ def main():
         proc = subprocess.run(cmd)
         sys.exit(proc.returncode)
 
+    err_log = LOG_DIR / f"{label}.err.log"
+    out_log = LOG_DIR / f"{label}.out.log"
+    err_offset = file_size(err_log)
+    out_offset = file_size(out_log)
+
     start_dt = datetime.datetime.now().astimezone()
     start_ts = time.time()
 
-    proc = subprocess.run(cmd, capture_output=True, text=True)
+    # Inherit stdout/stderr — launchd already redirected them to .out/.err log files.
+    # Real-time logging, no buffering, no OOM, no data loss on SIGKILL mid-run.
+    proc = subprocess.run(cmd)
 
     end_ts = time.time()
     end_dt = datetime.datetime.now().astimezone()
     duration_ms = int((end_ts - start_ts) * 1000)
 
-    if proc.stdout:
-        sys.stdout.write(proc.stdout)
-    if proc.stderr:
-        sys.stderr.write(proc.stderr)
-
+    err_text = read_after(err_log, err_offset)
+    out_text = read_after(out_log, out_offset)
+    stderr_tail = err_text[-STDERR_TAIL_LIMIT:] if err_text else ""
     success = proc.returncode == 0
-    stderr_tail = (proc.stderr or "")[-1500:]
 
     row = {
         "label": label,
@@ -61,12 +94,17 @@ def main():
         "exit_code": proc.returncode,
         "success": success,
         "cmd": cmd,
-        "stderr_chars": len(proc.stderr or ""),
-        "stdout_chars": len(proc.stdout or ""),
+        "stderr_chars": len(err_text),
+        "stdout_chars": len(out_text),
     }
     try:
         with open(cfg["ledger_path"], "a") as f:
-            f.write(json.dumps(row) + "\n")
+            try:
+                fcntl.flock(f.fileno(), fcntl.LOCK_EX)
+                f.write(json.dumps(row) + "\n")
+                f.flush()
+            finally:
+                fcntl.flock(f.fileno(), fcntl.LOCK_UN)
     except Exception as e:
         sys.stderr.write(f"[cron-runner] ledger write failed: {e}\n")
 

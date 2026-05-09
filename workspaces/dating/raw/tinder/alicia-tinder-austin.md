@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-07T20:12:27.644Z"
 last_activity: "2026-05-07T20:12:27.644Z"
-last_scrape: "2026-05-08T20:12:21.707Z"
+last_scrape: "2026-05-09T22:04:57.658Z"
 previous_slugs: []
-last_profile_diff: "2026-05-08T20:12:21.707Z"
+last_profile_diff: "2026-05-09T22:04:57.658Z"
 ---
 
 ## Profile
 
 - age: 23
-- distance_mi: 2
+- distance_mi: 5
 - height_cm: 157
 - bio: "Looking for a date partner💞"
 - looking_for: "Long-term partner"
@@ -72,6 +72,29 @@ last_profile_diff: "2026-05-08T20:12:21.707Z"
     "distance_mi": {
       "from": 17,
       "to": 2
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-09T22:04:57.658Z",
+  "added": {
+    "jobs": [
+      "English, Spanish"
+    ]
+  },
+  "removed": {
+    "jobs": [
+      "English",
+      "Spanish"
+    ]
+  },
+  "changed": {
+    "distance_mi": {
+      "from": 2,
+      "to": 5
     }
   }
 }

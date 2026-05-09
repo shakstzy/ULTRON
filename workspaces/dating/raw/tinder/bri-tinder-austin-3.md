@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-07T05:00:15.461Z"
 last_activity: "2026-05-07T05:00:15.461Z"
-last_scrape: "2026-05-08T20:12:32.949Z"
+last_scrape: "2026-05-09T22:05:06.404Z"
 previous_slugs: []
-last_profile_diff: "2026-05-08T20:12:32.949Z"
+last_profile_diff: "2026-05-09T22:05:06.404Z"
 ---
 
 ## Profile
 
 - age: 24
-- distance_mi: 12
+- distance_mi: 18
 - height_cm: 157
 - bio: "The hottest thing you can do is… Be a redhead 👨🏻‍🦰 / Perks of dating me... I’ll paint you anything 👩🏾‍🎨🎨"
 - looking_for: "Long-term, open to short"
@@ -69,6 +69,22 @@ last_profile_diff: "2026-05-08T20:12:32.949Z"
     "distance_mi": {
       "from": 18,
       "to": 12
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-09T22:05:06.404Z",
+  "added": {
+    "photo_verified": false
+  },
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 12,
+      "to": 18
     }
   }
 }

@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-07T05:00:08.257Z"
 last_activity: "2026-05-07T05:00:08.257Z"
-last_scrape: "2026-05-08T20:12:28.885Z"
+last_scrape: "2026-05-09T22:05:03.195Z"
 previous_slugs: []
-last_profile_diff: "2026-05-08T20:12:28.885Z"
+last_profile_diff: "2026-05-09T22:05:03.195Z"
 ---
 
 ## Profile
 
 - age: 21
-- distance_mi: 7
+- distance_mi: 2
 - bio: "level 11 on spanish duolingo 🔥🔥 I like playing volleyball, reading, a fun night playing darts with a beer, and board games (lowkey not much else)"
 - looking_for: "Long-term, open to short"
 - schools: science teacher at elementary school, The University of Texas at Austin
@@ -48,6 +48,20 @@ last_profile_diff: "2026-05-08T20:12:28.885Z"
     "bio": {
       "from": "level 11 Duolingo Spanish student🔥🔥 love reading & playing volleyball! i have a multitude of grandma hobbies always looking for my person",
       "to": "level 11 on spanish duolingo 🔥🔥 I like playing volleyball, reading, a fun night playing darts with a beer, and board games (lowkey not much else)"
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-09T22:05:03.195Z",
+  "added": {},
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 7,
+      "to": 2
     }
   }
 }

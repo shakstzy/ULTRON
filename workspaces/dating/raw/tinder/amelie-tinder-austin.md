@@ -9,14 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-07T05:00:34.841Z"
 last_activity: "2026-05-07T05:00:34.841Z"
-last_scrape: "2026-05-08T20:12:46.100Z"
+last_scrape: "2026-05-09T22:05:20.107Z"
 previous_slugs: []
+last_profile_diff: "2026-05-09T22:05:20.107Z"
 ---
 
 ## Profile
 
 - age: 22
-- distance_mi: 23
+- distance_mi: 19
 - height_cm: 160
 - bio: "Weird, funny, sometimes cute lol Have anxiety so I’m sorry In advance🤧 Need attention 24/7😅 5”3, Ik I’m short Swipe right and get to know me🙃 Relationships? Or Friendships?"
 - looking_for: "Long-term partner"
@@ -34,7 +35,19 @@ previous_slugs: []
 
 ## Profile changes
 
-(none yet)
+```json profile-diff
+{
+  "ts": "2026-05-09T22:05:20.107Z",
+  "added": {},
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 23,
+      "to": 19
+    }
+  }
+}
+```
 
 ## Conversation
 

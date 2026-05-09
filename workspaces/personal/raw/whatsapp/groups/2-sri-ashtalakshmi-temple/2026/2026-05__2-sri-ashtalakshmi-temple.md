@@ -1,17 +1,17 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-09T18:41:44.077496+00:00'
+ingested_at: '2026-05-09T20:42:52.047454+00:00'
 ingest_version: 1
-content_hash: 'blake3:8e6d2cbb957f0e4cdbc7f9dc7f992dfc26c0c57ef44193453ed3b922a400f811'
-provider_modified_at: '2026-05-09T13:13:01-05:00'
+content_hash: 'blake3:13a5ea686b515df9704b41cede7b4b170a666b4e19f95801554c442ce5751def'
+provider_modified_at: '2026-05-09T14:54:55-05:00'
 contact_slug: 2-sri-ashtalakshmi-temple
 contact_type: group
 month: 2026-05
 date_range: [2026-05-01, 2026-05-09]
-message_count: 5
+message_count: 9
 my_message_count: 0
-their_message_count: 5
+their_message_count: 9
 attachments: []
 whatsapp_chat_jid: '18187361819-1518208644@g.us'
 whatsapp_chat_kind: group
@@ -74,3 +74,7 @@ Let’s all Participate & get the Blessings ✨
 
 If you can’t participate in person, Here is the link  🔗
 https://us02web.zoom.us/j/87366192511?pwd=dGQzQ2F3TlFlV0ZLd2Z0SWZ3c3ZxQT09
+**14:53 — @135295831945268:** Jai Srimannarayana . Monday is HANUMAN JAYANTHI. what is Hanumanji favorite thing is Ram Namam. Please write Ram Namam on a paper make mala , on lemon or beetle leave . Bring and offer . He makes impossible to possible .
+**14:54 — @135295831945268:** Hope to see you all God bless you all
+**14:54 — @135295831945268:** Here is the flier for details
+**14:54 — @135295831945268:** [image: image_20260509_152706.jpg]

@@ -1,17 +1,17 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-09T17:12:21.137399+00:00'
+ingested_at: '2026-05-09T21:15:27.042086+00:00'
 ingest_version: 1
-content_hash: 'blake3:3b230b998cf4a98d0bac7f9f442d8f142ce0f86ffc78c7c5ca4684f278c08b59'
-provider_modified_at: '2026-05-09T11:25:46-05:00'
+content_hash: 'blake3:4dbb8e6ba1ac51d1649e0a58a0c972b9990171547c037b336df1cc96079835d6'
+provider_modified_at: '2026-05-09T15:55:06-05:00'
 contact_slug: east-parke-main-group
 contact_type: group
 month: 2026-05
 date_range: [2026-05-02, 2026-05-09]
-message_count: 28
+message_count: 30
 my_message_count: 0
-their_message_count: 28
+their_message_count: 30
 attachments: []
 whatsapp_chat_jid: '120363023221027012@g.us'
 whatsapp_chat_kind: group
@@ -80,3 +80,5 @@ Please do share if you know anyone looking to rent.
 ## 2026-05-09 (Saturday)
 
 **11:25 — @142661650493504:** Did anyone get a package that looks like medication? It said it was delivered, but I did not get anything so I’m assuming they dropped it off at the wrong place.
+**14:03 — @1280571375656:** [image: image_20260509_142615.jpg]
+**15:55 — @35545317158996:** Car# with MSW 5229 停在 Lewiston Way, please contact me.

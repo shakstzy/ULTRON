@@ -10,7 +10,7 @@ listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 6429606784788879790
 status_label: INQUIRED
 renter_us_state: CA
-last_pulled_at: "2026-05-08T22:00:18.227Z"
+last_pulled_at: "2026-05-09T21:56:04.635Z"
 ---
 
 # Kensey
@@ -50,6 +50,6 @@ yeah service animals are completely fine. saturday at 2:30 works for me. just ke
 
 Hello, Ok thx you for the confirmation. I got called into work for tomorrow and I know Mother’s Day is Sunday. So I wanted to see if I could schedule for next weekend. Do you have time to show the property next weekend? Do you do showings on Sunday? If not I can try to come next Saturday.
 
-### 2026-05-08T22:10:30.299Z - Owner (Adithya)
+### 2026-05-08T22:10:29.000Z - Owner (Adithya)
 
 all good. next weekend works and i can do sundays. let me know what day and time is best for you.

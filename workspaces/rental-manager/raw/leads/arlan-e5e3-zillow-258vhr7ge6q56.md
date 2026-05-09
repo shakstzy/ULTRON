@@ -8,7 +8,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: gmail-19c9ba094d1de5e3
 status_label: INQUIRED
-last_pulled_at: "2026-05-08T22:00:49.279Z"
+last_pulled_at: "2026-05-09T21:56:33.926Z"
 ---
 
 # Arlan
@@ -47,6 +47,6 @@ And possible gated parking
 
 Hi, I’m still very interested in the place. I’ll be in the area this weekend would it be possible to set up a walkthrough for Sunday? If you happen to have any additional photos or videos of the location in the meantime, I’d really appreciate it. Looking forward to hearing from you. Thanks, Arlan
 
-### 2026-05-08T22:23:52.091Z - Owner (Adithya)
+### 2026-05-08T22:23:51.000Z - Owner (Adithya)
 
 Sunday works. I've got two rooms open with private bathrooms and parking is an option too. I'll just show you everything then. What time works for you?

@@ -8,7 +8,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: gmail-19caba8d84cda254
 status_label: INQUIRED
-last_pulled_at: "2026-05-08T22:00:50.684Z"
+last_pulled_at: "2026-05-09T21:56:35.413Z"
 ---
 
 # Stephanie
@@ -27,6 +27,6 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 
 I would like to schedule a tour.
 
-### 2026-05-08T22:25:44.757Z - Owner (Adithya)
+### 2026-05-08T22:25:44.000Z - Owner (Adithya)
 
 Hey Stephanie. Let's set that up. What days and times usually work best for you to swing by?

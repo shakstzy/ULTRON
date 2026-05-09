@@ -8,7 +8,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: gmail-19c9bc7885b519e2
 status_label: INQUIRED
-last_pulled_at: "2026-05-08T22:01:01.808Z"
+last_pulled_at: "2026-05-09T21:56:46.579Z"
 ---
 
 # Angela
@@ -26,7 +26,3 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 ### 2026-02-14T23:28:08.000Z - Angela Soto
 
 Hello, I'm interested in this room. Are any utilities included in the rent? If not, what does the bill typically look like? Yes that's included in the rent! No utilities are included in the rent Reply on Zillow
-
-### 2026-05-08T22:24:09.193Z - Owner (Adithya)
-
-Utilities are a flat $100 a month and that covers water, gas, electric, and internet. Let me know what days work for you to swing by and take a tour.

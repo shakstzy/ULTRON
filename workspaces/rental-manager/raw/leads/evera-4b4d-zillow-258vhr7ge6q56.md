@@ -8,7 +8,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: gmail-19c3fcd1cec34b4d
 status_label: INQUIRED
-last_pulled_at: "2026-05-08T22:01:03.843Z"
+last_pulled_at: "2026-05-09T21:56:48.546Z"
 ---
 
 # EVERA
@@ -35,6 +35,6 @@ You can reach me at 415-378-6679. So I’m moving to LA this March, I’m curren
 
 Or if you have any videos for the place is fine too
 
-### 2026-05-08T22:20:17.461Z - Owner (Adithya)
+### 2026-05-08T22:20:16.000Z - Owner (Adithya)
 
 Hey Evera. A Zoom tour works for me. Let me know what days and times are good for you.

@@ -8,7 +8,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: gmail-19cc408850773035
 status_label: INQUIRED
-last_pulled_at: "2026-05-08T22:00:48.262Z"
+last_pulled_at: "2026-05-09T21:56:32.945Z"
 ---
 
 # Oliver
@@ -27,6 +27,6 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 
 I'd like to schedule a viewing for Klein Ct, Sylmar, CA 91342, US. Please contact me with more information!
 
-### 2026-05-08T22:26:33.040Z - Owner (Adithya)
+### 2026-05-08T22:26:32.000Z - Owner (Adithya)
 
 Hey Oliver. I've got four rooms open ranging from $1000 to $1250. They're ready for move-in right now. Let me know what days work best for you to take a look.

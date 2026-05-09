@@ -6,9 +6,9 @@ name: Jamie Chavez Nicasio
 reference_email: "43zw69uhfj6yti26avqx0k3jfvp@convo.zillow.com"
 listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
-conversation_id: gmail-19c9115a918ca148
+conversation_id: gmail-19c9bf2ad2db0825
 status_label: INQUIRED
-last_pulled_at: "2026-05-08T02:53:50.183Z"
+last_pulled_at: "2026-05-09T21:56:37.067Z"
 ---
 
 # Jamie Chavez Nicasio
@@ -17,7 +17,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 
 - Status: `INQUIRED`
 - Zillow forwarding email: `43zw69uhfj6yti26avqx0k3jfvp@convo.zillow.com`
-- Conversation ID: `gmail-19c9115a918ca148`
+- Conversation ID: `gmail-19c9bf2ad2db0825`
 - Listing alias: `258vhr7ge6q56`
 
 
@@ -71,6 +71,10 @@ May I tour tomorrow in the morning ?
 
 It’s just because I’m currently at work
 
-### 2026-05-08T22:22:53.866Z - Owner (Adithya)
+### 2026-05-08T22:22:53.000Z - Owner (Adithya)
 
 Tomorrow morning works. What time are you thinking?
+
+### 2026-05-08T22:24:23.000Z - Owner (Adithya)
+
+Hey Jamie, sounds good. I've got four rooms open right now. What days and times work best for you to check the place out?

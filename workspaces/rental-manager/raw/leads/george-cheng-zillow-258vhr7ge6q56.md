@@ -8,7 +8,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: gmail-19c876383e657b0a
 status_label: INQUIRED
-last_pulled_at: "2026-05-08T22:01:02.828Z"
+last_pulled_at: "2026-05-09T21:56:47.626Z"
 ---
 
 # George Cheng
@@ -30,7 +30,3 @@ Hi Adithya, looking forward to come see the place Saturday! Thank you
 ### 2026-02-13T21:12:44.000Z - George Cheng
 
 Hi Adithya, following up to confirm 12pm showing for tomorrow. Thank you
-
-### 2026-05-08T22:22:39.285Z - Owner (Adithya)
-
-Yeah 12pm tomorrow works. What's the best number to text you at?

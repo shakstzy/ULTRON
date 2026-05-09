@@ -8,7 +8,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: gmail-19c9c0c2a77bbd54
 status_label: INQUIRED
-last_pulled_at: "2026-05-08T22:00:48.750Z"
+last_pulled_at: "2026-05-09T21:56:33.472Z"
 ---
 
 # Justine
@@ -31,6 +31,10 @@ are service dogs okay ?
 
 Can I come see it tomorrow & could you send me N application? Please & thank you. On Mon, Mar 2, 2026 at 1:13 PM Adithya Kumar < 2zxh8qp1y9ejvihxu00gxgz70d@convo.zillow.com> wrote:
 
-### 2026-05-08T22:24:41.246Z - Owner (Adithya)
+### 2026-05-08T22:12:46.000Z - Owner (Adithya)
+
+Hey Justine. Glad you're interested. Let me know what days and times work best for you to do a tour.
+
+### 2026-05-08T22:24:40.000Z - Owner (Adithya)
 
 Tomorrow works for me. Here's the application link: https://www.zillow.com/renter-hub/applications/listing/258vhr7ge6q56/rental-application/?itc=rentalhdpapplynow. What time did you want to check the place out?

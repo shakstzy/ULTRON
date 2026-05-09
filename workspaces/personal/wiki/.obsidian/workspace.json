@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "6f24bac7e82e3971",
+    "id": "f68c4eaa6045c383",
     "type": "split",
     "children": [
       {
-        "id": "183a91bf7646b537",
+        "id": "01e97f33a7d79726",
         "type": "tabs",
         "children": [
           {
-            "id": "0a0c7f73a3a04a27",
+            "id": "04c07b55b5dc2e12",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -23,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "19f88db348f4e86e",
+    "id": "c8da6fea29145980",
     "type": "split",
     "children": [
       {
-        "id": "1913256bb51b843e",
+        "id": "ca86ae4c0db11043",
         "type": "tabs",
         "children": [
           {
-            "id": "78144b5c1b4da207",
+            "id": "1564908d11b5d084",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +44,7 @@
             }
           },
           {
-            "id": "cd4df273f787b0a2",
+            "id": "c09e44854f992c6b",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +61,7 @@
             }
           },
           {
-            "id": "4f052c17f536c0eb",
+            "id": "a59beaa49cfb7985",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -70,23 +70,22 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
   "right": {
-    "id": "278b7aa9d7d3dadd",
+    "id": "87006fbb693f8791",
     "type": "split",
     "children": [
       {
-        "id": "6f4408b77d2d110b",
+        "id": "b633c7d60e6e4235",
         "type": "tabs",
         "children": [
           {
-            "id": "7ab2b55a7245542c",
+            "id": "a981b23428cb0329",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -104,7 +103,7 @@
             }
           },
           {
-            "id": "3fefdff36811d5e2",
+            "id": "7a4e58c638471539",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -117,7 +116,7 @@
             }
           },
           {
-            "id": "8329f69e2e647070",
+            "id": "78c72bdcf8803c49",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -132,7 +131,7 @@
             }
           },
           {
-            "id": "a5c4c8d7d2fd3bb2",
+            "id": "49a7f0761371d46d",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -146,7 +145,7 @@
             }
           },
           {
-            "id": "75b497a217e07fae",
+            "id": "ad8d48f94f758681",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -177,33 +176,8 @@
       "bases:Create new base": false
     }
   },
-  "active": "0a0c7f73a3a04a27",
+  "active": "04c07b55b5dc2e12",
   "lastOpenFiles": [
-    "_COMMUNITY_Community 5.md",
-    "Stanford.md",
-    "Steven (NYC Friend).md",
-    "Sanaya (Hinge, Dallas).md",
-    "_COMMUNITY_Dating Roster (mixed).md",
-    "Hunter (UC Berkeley, Sammys).md",
-    "Adarsh (friend, pseu crew).md",
-    "_COMMUNITY_Amsterdam Trip + Festival Crew.md",
-    "_COMMUNITY_CryptoWeb3 Network.md",
-    "_COMMUNITY_Austin Dating + Locals.md",
-    "Binni (Austin, UT student).md",
-    "Linh Pham (Rishika Roommate).md",
-    "Rishika (UC Berkeley).md",
-    "2310 Fulton Street (Berkeley).md",
-    "_COMMUNITY_Community 23.md",
-    "_COMMUNITY_Community 19.md",
-    "_COMMUNITY_Community 17.md",
-    "_COMMUNITY_Community 24.md",
-    "_COMMUNITY_Community 28.md",
-    "_COMMUNITY_Community 27.md",
-    "_COMMUNITY_Community 20.md",
-    "_COMMUNITY_Community 18.md",
-    "_COMMUNITY_Community 14.md",
-    "_COMMUNITY_Community 16.md",
-    "_COMMUNITY_Community 10.md",
-    "_COMMUNITY_Community 9.md"
+    "entities/songs/finesse.md"
   ]
 }

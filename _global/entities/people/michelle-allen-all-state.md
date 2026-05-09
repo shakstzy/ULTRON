@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.150487+00:00
+ingested_at: 2026-05-09T08:00:03.812939+00:00
 ingest_version: 1
 content_hash: blake2b:ff4cfcd499ac73474fc8527819f28f49
-provider_modified_at: 2026-05-08T08:00:06.150487+00:00
+provider_modified_at: 2026-05-09T08:00:03.812939+00:00
 
 title: Michelle Allen All State
 slug: michelle-allen-all-state
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["9365602462"]
   slack: []
-last_synced: 2026-05-08T08:00:06.150487+00:00
+last_synced: 2026-05-09T08:00:03.812939+00:00
 global: true
 ---
 

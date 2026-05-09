@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.175277+00:00
+ingested_at: 2026-05-09T08:00:03.926953+00:00
 ingest_version: 1
 content_hash: blake2b:a0feccc95efd74fe27ea1c49030acfb5
-provider_modified_at: 2026-05-08T08:00:06.175277+00:00
+provider_modified_at: 2026-05-09T08:00:03.926953+00:00
 
 title: Mariela | InfluenceMedia
 slug: mariela-influencemedia
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-08T08:00:06.175277+00:00
+last_synced: 2026-05-09T08:00:03.926953+00:00
 global: true
 ---
 

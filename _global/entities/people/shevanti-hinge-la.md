@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.354794+00:00
+ingested_at: 2026-05-09T08:00:03.789555+00:00
 ingest_version: 1
 content_hash: blake2b:ae063225eb6210d2c26879c33a59e741
-provider_modified_at: 2026-05-08T08:00:06.354794+00:00
+provider_modified_at: 2026-05-09T08:00:03.789555+00:00
 
 title: Shevanti Hinge LA
 slug: shevanti-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14084441226"]
   slack: []
-last_synced: 2026-05-08T08:00:06.354794+00:00
+last_synced: 2026-05-09T08:00:03.789555+00:00
 global: true
 ---
 

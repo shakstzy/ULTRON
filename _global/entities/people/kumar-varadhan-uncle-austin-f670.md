@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.332383+00:00
+ingested_at: 2026-05-09T08:00:03.580196+00:00
 ingest_version: 1
 content_hash: blake2b:66a42348203917aa3064aa0653e3dc24
-provider_modified_at: 2026-05-08T08:00:06.332383+00:00
+provider_modified_at: 2026-05-09T08:00:03.580196+00:00
 
 title: Kumar Varadhan Uncle Austin
 slug: kumar-varadhan-uncle-austin-f670
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15125677276"]
   slack: []
-last_synced: 2026-05-08T08:00:06.332383+00:00
+last_synced: 2026-05-09T08:00:03.580196+00:00
 global: true
 ---
 

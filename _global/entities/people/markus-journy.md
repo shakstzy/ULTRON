@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.250597+00:00
+ingested_at: 2026-05-09T08:00:03.791459+00:00
 ingest_version: 1
 content_hash: blake2b:95b5a257988ce50792441404326eaa4b
-provider_modified_at: 2026-05-08T08:00:06.250597+00:00
+provider_modified_at: 2026-05-09T08:00:03.791459+00:00
 
 title: Markus | Journy
 slug: markus-journy
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+46 76 021 69 00"]
   slack: []
-last_synced: 2026-05-08T08:00:06.250597+00:00
+last_synced: 2026-05-09T08:00:03.791459+00:00
 global: true
 ---
 

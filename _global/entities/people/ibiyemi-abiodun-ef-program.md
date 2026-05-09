@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.313245+00:00
+ingested_at: 2026-05-09T08:00:03.823448+00:00
 ingest_version: 1
 content_hash: blake2b:e21f910d31cbe5610d318be9d49e6244
-provider_modified_at: 2026-05-08T08:00:06.313245+00:00
+provider_modified_at: 2026-05-09T08:00:03.823448+00:00
 
 title: Ibiyemi Abiodun EF Program
 slug: ibiyemi-abiodun-ef-program
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14253050247"]
   slack: []
-last_synced: 2026-05-08T08:00:06.313245+00:00
+last_synced: 2026-05-09T08:00:03.823448+00:00
 global: true
 ---
 

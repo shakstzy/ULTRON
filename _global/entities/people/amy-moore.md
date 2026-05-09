@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.181286+00:00
+ingested_at: 2026-05-09T08:00:03.676902+00:00
 ingest_version: 1
 content_hash: blake2b:c95174443806ba7bf82af92c920627b1
-provider_modified_at: 2026-05-08T08:00:06.181286+00:00
+provider_modified_at: 2026-05-09T08:00:03.676902+00:00
 
 title: Amy Moore
 slug: amy-moore
@@ -15,7 +15,7 @@ identifiers:
   email: ["amy.moore@austinisd.org"]
   phone: []
   slack: []
-last_synced: 2026-05-08T08:00:06.181286+00:00
+last_synced: 2026-05-09T08:00:03.676902+00:00
 global: true
 ---
 

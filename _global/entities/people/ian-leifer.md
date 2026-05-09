@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.176917+00:00
+ingested_at: 2026-05-09T08:00:03.915696+00:00
 ingest_version: 1
 content_hash: blake2b:33040aa73436047551b60a3e921ebc5b
-provider_modified_at: 2026-05-08T08:00:06.176917+00:00
+provider_modified_at: 2026-05-09T08:00:03.915696+00:00
 
 title: Ian Leifer
 slug: ian-leifer
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14153360737"]
   slack: []
-last_synced: 2026-05-08T08:00:06.176917+00:00
+last_synced: 2026-05-09T08:00:03.915696+00:00
 global: true
 ---
 

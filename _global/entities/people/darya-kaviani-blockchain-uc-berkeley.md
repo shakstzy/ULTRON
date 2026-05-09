@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.192334+00:00
+ingested_at: 2026-05-09T08:00:03.787620+00:00
 ingest_version: 1
 content_hash: blake2b:ee3b1e2bedfdef7f4dd4893b62b522cf
-provider_modified_at: 2026-05-08T08:00:06.192334+00:00
+provider_modified_at: 2026-05-09T08:00:03.787620+00:00
 
 title: Darya Kaviani Blockchain UC Berkeley
 slug: darya-kaviani-blockchain-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(408) 833-8655"]
   slack: []
-last_synced: 2026-05-08T08:00:06.192334+00:00
+last_synced: 2026-05-09T08:00:03.787620+00:00
 global: true
 ---
 

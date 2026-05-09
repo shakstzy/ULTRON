@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.221470+00:00
+ingested_at: 2026-05-09T08:00:03.667309+00:00
 ingest_version: 1
 content_hash: blake2b:17911340169bd4e06a1572d521ff9dc0
-provider_modified_at: 2026-05-08T08:00:06.221470+00:00
+provider_modified_at: 2026-05-09T08:00:03.667309+00:00
 
 title: Abhi USC Akshar LA
 slug: abhi-usc-akshar-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13129982713"]
   slack: []
-last_synced: 2026-05-08T08:00:06.221470+00:00
+last_synced: 2026-05-09T08:00:03.667309+00:00
 global: true
 ---
 

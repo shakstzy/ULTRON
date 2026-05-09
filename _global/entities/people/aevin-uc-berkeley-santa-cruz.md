@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.311946+00:00
+ingested_at: 2026-05-09T08:00:03.918585+00:00
 ingest_version: 1
 content_hash: blake2b:53258f2fbc61f09240ee29ac857b09ec
-provider_modified_at: 2026-05-08T08:00:06.311946+00:00
+provider_modified_at: 2026-05-09T08:00:03.918585+00:00
 
 title: Aevin UC Berkeley Santa Cruz
 slug: aevin-uc-berkeley-santa-cruz
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(209) 281-6224"]
   slack: []
-last_synced: 2026-05-08T08:00:06.311946+00:00
+last_synced: 2026-05-09T08:00:03.918585+00:00
 global: true
 ---
 

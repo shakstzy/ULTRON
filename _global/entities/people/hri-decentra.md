@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.303752+00:00
+ingested_at: 2026-05-09T08:00:03.910848+00:00
 ingest_version: 1
 content_hash: blake2b:12be58c130501263cf5cc2f9cbc0da9b
-provider_modified_at: 2026-05-08T08:00:06.303752+00:00
+provider_modified_at: 2026-05-09T08:00:03.910848+00:00
 
 title: Hri | Decentra
 slug: hri-decentra
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-08T08:00:06.303752+00:00
+last_synced: 2026-05-09T08:00:03.910848+00:00
 global: true
 ---
 

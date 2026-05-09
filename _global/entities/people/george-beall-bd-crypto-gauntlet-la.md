@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.264107+00:00
+ingested_at: 2026-05-09T08:00:03.720493+00:00
 ingest_version: 1
 content_hash: blake2b:b09d3e075945938e6309113b3a08371c
-provider_modified_at: 2026-05-08T08:00:06.264107+00:00
+provider_modified_at: 2026-05-09T08:00:03.720493+00:00
 
 title: George Beall BD Crypto Gauntlet LA
 slug: george-beall-bd-crypto-gauntlet-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 909-647-7557"]
   slack: []
-last_synced: 2026-05-08T08:00:06.264107+00:00
+last_synced: 2026-05-09T08:00:03.720493+00:00
 global: true
 ---
 

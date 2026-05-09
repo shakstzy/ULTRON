@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.230839+00:00
+ingested_at: 2026-05-09T08:00:03.825280+00:00
 ingest_version: 1
 content_hash: blake2b:03fe93b210e5162c6c62313a1543e9cf
-provider_modified_at: 2026-05-08T08:00:06.230839+00:00
+provider_modified_at: 2026-05-09T08:00:03.825280+00:00
 
 title: Dave | Karpatkey
 slug: dave-karpatkey
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-08T08:00:06.230839+00:00
+last_synced: 2026-05-09T08:00:03.825280+00:00
 global: true
 ---
 

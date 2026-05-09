@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.164551+00:00
+ingested_at: 2026-05-09T08:00:03.837248+00:00
 ingest_version: 1
 content_hash: blake2b:c765e9e16b7f0f086103b4a7deb4875a
-provider_modified_at: 2026-05-08T08:00:06.164551+00:00
+provider_modified_at: 2026-05-09T08:00:03.837248+00:00
 
 title: Vas | VelvetCapital
 slug: vas-velvetcapital
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-08T08:00:06.164551+00:00
+last_synced: 2026-05-09T08:00:03.837248+00:00
 global: true
 ---
 

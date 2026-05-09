@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.151576+00:00
+ingested_at: 2026-05-09T08:00:03.588251+00:00
 ingest_version: 1
 content_hash: blake2b:653fff7221d5d1e7cf64840f67c39e28
-provider_modified_at: 2026-05-08T08:00:06.151576+00:00
+provider_modified_at: 2026-05-09T08:00:03.588251+00:00
 
 title: Caleb UC Berkeley
 slug: caleb-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17088973840"]
   slack: []
-last_synced: 2026-05-08T08:00:06.151576+00:00
+last_synced: 2026-05-09T08:00:03.588251+00:00
 global: true
 ---
 

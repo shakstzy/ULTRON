@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.276514+00:00
+ingested_at: 2026-05-09T08:00:03.903984+00:00
 ingest_version: 1
 content_hash: blake2b:70f703a2d16bc178deb1f85ee8fb0f81
-provider_modified_at: 2026-05-08T08:00:06.276514+00:00
+provider_modified_at: 2026-05-09T08:00:03.903984+00:00
 
 title: Maria Counselor Launchx
 slug: maria-counselor-launchx
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(781) 205-0271"]
   slack: []
-last_synced: 2026-05-08T08:00:06.276514+00:00
+last_synced: 2026-05-09T08:00:03.903984+00:00
 global: true
 ---
 

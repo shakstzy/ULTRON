@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.235810+00:00
+ingested_at: 2026-05-09T08:00:03.908458+00:00
 ingest_version: 1
 content_hash: blake2b:2952d0de0bb5d53f795ff4301833e07c
-provider_modified_at: 2026-05-08T08:00:06.235810+00:00
+provider_modified_at: 2026-05-09T08:00:03.908458+00:00
 
 title: Sadhvi Hinge LA
 slug: sadhvi-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15623268777"]
   slack: []
-last_synced: 2026-05-08T08:00:06.235810+00:00
+last_synced: 2026-05-09T08:00:03.908458+00:00
 global: true
 ---
 

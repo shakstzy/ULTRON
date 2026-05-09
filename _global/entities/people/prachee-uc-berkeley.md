@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.191076+00:00
+ingested_at: 2026-05-09T08:00:03.608590+00:00
 ingest_version: 1
 content_hash: blake2b:2663d83fe22203b98df314f3d3f83251
-provider_modified_at: 2026-05-08T08:00:06.191076+00:00
+provider_modified_at: 2026-05-09T08:00:03.608590+00:00
 
 title: Prachee UC Berkeley
 slug: prachee-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14086096766"]
   slack: []
-last_synced: 2026-05-08T08:00:06.191076+00:00
+last_synced: 2026-05-09T08:00:03.608590+00:00
 global: true
 ---
 

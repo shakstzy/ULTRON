@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.174192+00:00
+ingested_at: 2026-05-09T08:00:03.829082+00:00
 ingest_version: 1
 content_hash: blake2b:2457e51eae64d553af37a920de5f2e9b
-provider_modified_at: 2026-05-08T08:00:06.174192+00:00
+provider_modified_at: 2026-05-09T08:00:03.829082+00:00
 
 title: Yoshi NYC
 slug: yoshi-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19739809145"]
   slack: []
-last_synced: 2026-05-08T08:00:06.174192+00:00
+last_synced: 2026-05-09T08:00:03.829082+00:00
 global: true
 ---
 

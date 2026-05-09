@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.360586+00:00
+ingested_at: 2026-05-09T08:00:03.645790+00:00
 ingest_version: 1
 content_hash: blake2b:e31117e9c92e8ffddc372079d59f7c4e
-provider_modified_at: 2026-05-08T08:00:06.360586+00:00
+provider_modified_at: 2026-05-09T08:00:03.645790+00:00
 
 title: Propita NYC
 slug: propita-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19297612392"]
   slack: []
-last_synced: 2026-05-08T08:00:06.360586+00:00
+last_synced: 2026-05-09T08:00:03.645790+00:00
 global: true
 ---
 

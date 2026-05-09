@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.218200+00:00
+ingested_at: 2026-05-09T08:00:03.849763+00:00
 ingest_version: 1
 content_hash: blake2b:d3e862083cb9816577bd8e90aa19032b
-provider_modified_at: 2026-05-08T08:00:06.218200+00:00
+provider_modified_at: 2026-05-09T08:00:03.849763+00:00
 
 title: Memo | Citrea
 slug: memo-citrea
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-08T08:00:06.218200+00:00
+last_synced: 2026-05-09T08:00:03.849763+00:00
 global: true
 ---
 

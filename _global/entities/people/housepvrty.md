@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.265897+00:00
+ingested_at: 2026-05-09T08:00:03.700425+00:00
 ingest_version: 1
 content_hash: blake2b:1bfa51d5c90726a7060282548c286c4c
-provider_modified_at: 2026-05-08T08:00:06.265897+00:00
+provider_modified_at: 2026-05-09T08:00:03.700425+00:00
 
 title: HousePvrty
 slug: housepvrty
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13476315880"]
   slack: []
-last_synced: 2026-05-08T08:00:06.265897+00:00
+last_synced: 2026-05-09T08:00:03.700425+00:00
 global: true
 ---
 

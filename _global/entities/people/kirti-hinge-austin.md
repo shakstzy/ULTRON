@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.119529+00:00
+ingested_at: 2026-05-09T08:00:03.559147+00:00
 ingest_version: 1
 content_hash: blake2b:0a0671008848dba7bb092a574b139361
-provider_modified_at: 2026-05-08T08:00:06.119529+00:00
+provider_modified_at: 2026-05-09T08:00:03.559147+00:00
 
 title: Kirti Hinge Austin
 slug: kirti-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15126532682"]
   slack: []
-last_synced: 2026-05-08T08:00:06.119529+00:00
+last_synced: 2026-05-09T08:00:03.559147+00:00
 global: true
 ---
 

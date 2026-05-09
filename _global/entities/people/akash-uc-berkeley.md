@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.317610+00:00
+ingested_at: 2026-05-09T08:00:03.728893+00:00
 ingest_version: 1
 content_hash: blake2b:4ad653b428bb17355bdb4e39b2451000
-provider_modified_at: 2026-05-08T08:00:06.317610+00:00
+provider_modified_at: 2026-05-09T08:00:03.728893+00:00
 
 title: Akash UC Berkeley
 slug: akash-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 989-560-7500"]
   slack: []
-last_synced: 2026-05-08T08:00:06.317610+00:00
+last_synced: 2026-05-09T08:00:03.728893+00:00
 global: true
 ---
 

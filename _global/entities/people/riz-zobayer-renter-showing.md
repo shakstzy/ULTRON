@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.218269+00:00
+ingested_at: 2026-05-09T08:00:03.770701+00:00
 ingest_version: 1
 content_hash: blake2b:023a6d7fd8a9d8eb793ddc7bbb7b4a18
-provider_modified_at: 2026-05-08T08:00:06.218269+00:00
+provider_modified_at: 2026-05-09T08:00:03.770701+00:00
 
 title: Riz Zobayer Renter Showing
 slug: riz-zobayer-renter-showing
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12133095691"]
   slack: []
-last_synced: 2026-05-08T08:00:06.218269+00:00
+last_synced: 2026-05-09T08:00:03.770701+00:00
 global: true
 ---
 

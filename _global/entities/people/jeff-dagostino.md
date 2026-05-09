@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.215439+00:00
+ingested_at: 2026-05-09T08:00:03.649191+00:00
 ingest_version: 1
 content_hash: blake2b:beec015020878cdffa6253e4a36831ee
-provider_modified_at: 2026-05-08T08:00:06.215439+00:00
+provider_modified_at: 2026-05-09T08:00:03.649191+00:00
 
 title: Jeff D’Agostino
 slug: jeff-dagostino
@@ -15,7 +15,7 @@ identifiers:
   email: ["jeff@btcknowledge.com"]
   phone: ["+1 3105025500"]
   slack: []
-last_synced: 2026-05-08T08:00:06.215439+00:00
+last_synced: 2026-05-09T08:00:03.649191+00:00
 global: true
 ---
 

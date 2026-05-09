@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.127363+00:00
+ingested_at: 2026-05-09T08:00:03.596445+00:00
 ingest_version: 1
 content_hash: blake2b:68f5f21ec6e383318a2d6c0057d4e0b0
-provider_modified_at: 2026-05-08T08:00:06.127363+00:00
+provider_modified_at: 2026-05-09T08:00:03.596445+00:00
 
 title: Radhika NYC
 slug: radhika-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18476243223"]
   slack: []
-last_synced: 2026-05-08T08:00:06.127363+00:00
+last_synced: 2026-05-09T08:00:03.596445+00:00
 global: true
 ---
 

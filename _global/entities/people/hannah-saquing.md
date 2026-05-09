@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.352591+00:00
+ingested_at: 2026-05-09T08:00:03.872877+00:00
 ingest_version: 1
 content_hash: blake2b:26175b833963882d5071e40b3f0f5156
-provider_modified_at: 2026-05-08T08:00:06.352591+00:00
+provider_modified_at: 2026-05-09T08:00:03.872877+00:00
 
 title: Hannah Saquing
 slug: hannah-saquing
@@ -15,7 +15,7 @@ identifiers:
   email: ["hannah.saquing@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-08T08:00:06.352591+00:00
+last_synced: 2026-05-09T08:00:03.872877+00:00
 global: true
 ---
 

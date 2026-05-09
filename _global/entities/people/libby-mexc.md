@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.343069+00:00
+ingested_at: 2026-05-09T08:00:03.644247+00:00
 ingest_version: 1
 content_hash: blake2b:b478208c0624d84e61543473f6609856
-provider_modified_at: 2026-05-08T08:00:06.343069+00:00
+provider_modified_at: 2026-05-09T08:00:03.644247+00:00
 
 title: Libby | MEXC
 slug: libby-mexc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-08T08:00:06.343069+00:00
+last_synced: 2026-05-09T08:00:03.644247+00:00
 global: true
 ---
 

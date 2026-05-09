@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.357479+00:00
+ingested_at: 2026-05-09T08:00:03.892584+00:00
 ingest_version: 1
 content_hash: blake2b:46416cd5ea9a76bd6d54d7d7c9b5f57b
-provider_modified_at: 2026-05-08T08:00:06.357479+00:00
+provider_modified_at: 2026-05-09T08:00:03.892584+00:00
 
 title: James Dai UC Berkeley
 slug: james-dai-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["8324919965"]
   slack: []
-last_synced: 2026-05-08T08:00:06.357479+00:00
+last_synced: 2026-05-09T08:00:03.892584+00:00
 global: true
 ---
 

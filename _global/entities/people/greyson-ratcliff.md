@@ -1,21 +1,21 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.225252+00:00
+ingested_at: 2026-05-09T08:00:03.842464+00:00
 ingest_version: 1
-content_hash: blake2b:01d5e9c7c608dab51ee4e01cd665b741
-provider_modified_at: 2026-05-08T08:00:06.225252+00:00
+content_hash: blake2b:9ff68ca3031269be7510571ed4baec87
+provider_modified_at: 2026-05-09T08:00:03.842464+00:00
 
-title: greyson. ratcliff
+title: Greyson Ratcliff
 slug: greyson-ratcliff
 type: person
 canonical_uri: lifeos:_global/entities/people/greyson-ratcliff
 aliases: []
 identifiers:
-  email: ["greyson.ratcliff@att.net"]
+  email: ["greyson.c.ratcliff@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-08T08:00:06.225252+00:00
+last_synced: 2026-05-09T08:00:03.842464+00:00
 global: true
 ---
 

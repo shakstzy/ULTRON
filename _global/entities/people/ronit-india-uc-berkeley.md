@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.172053+00:00
+ingested_at: 2026-05-09T08:00:03.746578+00:00
 ingest_version: 1
 content_hash: blake2b:6e9ea5ba0478eb4c0fade9c4fd646f2d
-provider_modified_at: 2026-05-08T08:00:06.172053+00:00
+provider_modified_at: 2026-05-09T08:00:03.746578+00:00
 
 title: Ronit India UC Berkeley
 slug: ronit-india-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+919810132444"]
   slack: []
-last_synced: 2026-05-08T08:00:06.172053+00:00
+last_synced: 2026-05-09T08:00:03.746578+00:00
 global: true
 ---
 

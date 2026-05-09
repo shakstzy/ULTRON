@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.365541+00:00
+ingested_at: 2026-05-09T08:00:03.640900+00:00
 ingest_version: 1
 content_hash: blake2b:8e756a19d22d3485ae085f297c700d41
-provider_modified_at: 2026-05-08T08:00:06.365541+00:00
+provider_modified_at: 2026-05-09T08:00:03.640900+00:00
 
 title: Pseuhas UC Berkeley NYC
 slug: pseuhas-uc-berkeley-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(408) 515-0312"]
   slack: []
-last_synced: 2026-05-08T08:00:06.365541+00:00
+last_synced: 2026-05-09T08:00:03.640900+00:00
 global: true
 ---
 

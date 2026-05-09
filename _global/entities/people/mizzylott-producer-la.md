@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.299212+00:00
+ingested_at: 2026-05-09T08:00:03.815322+00:00
 ingest_version: 1
 content_hash: blake2b:d9fe4ffd11c6cd92487bf1d84b21e8a7
-provider_modified_at: 2026-05-08T08:00:06.299212+00:00
+provider_modified_at: 2026-05-09T08:00:03.815322+00:00
 
 title: MizzyLott Producer LA
 slug: mizzylott-producer-la
@@ -15,7 +15,7 @@ identifiers:
   email: ["mizzysaidomg@gmail.com"]
   phone: ["(860) 261-8715", "(860) 261-8715"]
   slack: []
-last_synced: 2026-05-08T08:00:06.299212+00:00
+last_synced: 2026-05-09T08:00:03.815322+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.305589+00:00
+ingested_at: 2026-05-09T08:00:03.788673+00:00
 ingest_version: 1
 content_hash: blake2b:6b892fbea64b21d50f59b551048939a2
-provider_modified_at: 2026-05-08T08:00:06.305589+00:00
+provider_modified_at: 2026-05-09T08:00:03.788673+00:00
 
 title: Ryan Venture Studio Aaron Black
 slug: ryan-venture-studio-aaron-black
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13109629215"]
   slack: []
-last_synced: 2026-05-08T08:00:06.305589+00:00
+last_synced: 2026-05-09T08:00:03.788673+00:00
 global: true
 ---
 

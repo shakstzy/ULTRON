@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.354876+00:00
+ingested_at: 2026-05-09T08:00:03.707262+00:00
 ingest_version: 1
 content_hash: blake2b:ddbed2313459f1b0b86097dea9a9c07c
-provider_modified_at: 2026-05-08T08:00:06.354876+00:00
+provider_modified_at: 2026-05-09T08:00:03.707262+00:00
 
 title: Alpin Yukseloglu UC Berkeley
 slug: alpin-yukseloglu-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19173994692"]
   slack: []
-last_synced: 2026-05-08T08:00:06.354876+00:00
+last_synced: 2026-05-09T08:00:03.707262+00:00
 global: true
 ---
 

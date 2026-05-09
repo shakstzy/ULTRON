@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.293090+00:00
+ingested_at: 2026-05-09T08:00:03.743330+00:00
 ingest_version: 1
 content_hash: blake2b:a84d8357d2a78e00858ac33923f5344c
-provider_modified_at: 2026-05-08T08:00:06.293090+00:00
+provider_modified_at: 2026-05-09T08:00:03.743330+00:00
 
 title: Taruni Hinge Dallas
 slug: taruni-hinge-dallas
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18048142257"]
   slack: []
-last_synced: 2026-05-08T08:00:06.293090+00:00
+last_synced: 2026-05-09T08:00:03.743330+00:00
 global: true
 ---
 

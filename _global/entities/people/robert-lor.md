@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.228677+00:00
+ingested_at: 2026-05-09T08:00:03.727491+00:00
 ingest_version: 1
 content_hash: blake2b:3d5a1099f16f1fa055467bf38dfbce7a
-provider_modified_at: 2026-05-08T08:00:06.228677+00:00
+provider_modified_at: 2026-05-09T08:00:03.727491+00:00
 
 title: Robert Lor
 slug: robert-lor
@@ -15,7 +15,7 @@ identifiers:
   email: ["rlor@yahoo.com"]
   phone: []
   slack: []
-last_synced: 2026-05-08T08:00:06.228677+00:00
+last_synced: 2026-05-09T08:00:03.727491+00:00
 global: true
 ---
 

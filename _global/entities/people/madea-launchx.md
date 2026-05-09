@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.175673+00:00
+ingested_at: 2026-05-09T08:00:03.724891+00:00
 ingest_version: 1
 content_hash: blake2b:b55b0d97d8360b950c527676b00c315f
-provider_modified_at: 2026-05-08T08:00:06.175673+00:00
+provider_modified_at: 2026-05-09T08:00:03.724891+00:00
 
 title: Madea LaunchX
 slug: madea-launchx
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 917-756-0244"]
   slack: []
-last_synced: 2026-05-08T08:00:06.175673+00:00
+last_synced: 2026-05-09T08:00:03.724891+00:00
 global: true
 ---
 

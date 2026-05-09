@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.138852+00:00
+ingested_at: 2026-05-09T08:00:03.752867+00:00
 ingest_version: 1
 content_hash: blake2b:c323b10fa80aac7b9f6a55b785c9b3cf
-provider_modified_at: 2026-05-08T08:00:06.138852+00:00
+provider_modified_at: 2026-05-09T08:00:03.752867+00:00
 
 title: Adam | Berachain
 slug: adam-berachain
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-08T08:00:06.138852+00:00
+last_synced: 2026-05-09T08:00:03.752867+00:00
 global: true
 ---
 

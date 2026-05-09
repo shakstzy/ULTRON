@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.368389+00:00
+ingested_at: 2026-05-09T08:00:03.804730+00:00
 ingest_version: 1
 content_hash: blake2b:7bcc9a63a201b0556920958706362f63
-provider_modified_at: 2026-05-08T08:00:06.368389+00:00
+provider_modified_at: 2026-05-09T08:00:03.804730+00:00
 
 title: Riya Hinge Austin NYC
 slug: riya-hinge-austin-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15126509827"]
   slack: []
-last_synced: 2026-05-08T08:00:06.368389+00:00
+last_synced: 2026-05-09T08:00:03.804730+00:00
 global: true
 ---
 

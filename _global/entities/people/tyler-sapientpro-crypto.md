@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.269682+00:00
+ingested_at: 2026-05-09T08:00:03.692018+00:00
 ingest_version: 1
 content_hash: blake2b:a8827161eda60768c4b7576c20ffce5c
-provider_modified_at: 2026-05-08T08:00:06.269682+00:00
+provider_modified_at: 2026-05-09T08:00:03.692018+00:00
 
 title: Tyler SapientPro Crypto
 slug: tyler-sapientpro-crypto
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17329774369"]
   slack: []
-last_synced: 2026-05-08T08:00:06.269682+00:00
+last_synced: 2026-05-09T08:00:03.692018+00:00
 global: true
 ---
 

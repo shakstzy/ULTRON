@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.223836+00:00
+ingested_at: 2026-05-09T08:00:03.773908+00:00
 ingest_version: 1
 content_hash: blake2b:b334c66eb88093e3631234bc53ad9071
-provider_modified_at: 2026-05-08T08:00:06.223836+00:00
+provider_modified_at: 2026-05-09T08:00:03.773908+00:00
 
 title: Kai Producer Game Day
 slug: kai-producer-game-day
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19514884834"]
   slack: []
-last_synced: 2026-05-08T08:00:06.223836+00:00
+last_synced: 2026-05-09T08:00:03.773908+00:00
 global: true
 ---
 

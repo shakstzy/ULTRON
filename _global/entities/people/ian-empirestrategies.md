@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.221636+00:00
+ingested_at: 2026-05-09T08:00:03.917825+00:00
 ingest_version: 1
 content_hash: blake2b:142cca3d54c805a561f5a45e8960df11
-provider_modified_at: 2026-05-08T08:00:06.221636+00:00
+provider_modified_at: 2026-05-09T08:00:03.917825+00:00
 
 title: Ian | EmpireStrategies
 slug: ian-empirestrategies
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 (206) 518-1546"]
   slack: []
-last_synced: 2026-05-08T08:00:06.221636+00:00
+last_synced: 2026-05-09T08:00:03.917825+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.241765+00:00
+ingested_at: 2026-05-09T08:00:03.648954+00:00
 ingest_version: 1
 content_hash: blake2b:8a7cf0c3dec90246f6cd6f264f3a8506
-provider_modified_at: 2026-05-08T08:00:06.241765+00:00
+provider_modified_at: 2026-05-09T08:00:03.648954+00:00
 
 title: Andres Startup Pitch Tulsa
 slug: andres-startup-pitch-tulsa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19183444366"]
   slack: []
-last_synced: 2026-05-08T08:00:06.241765+00:00
+last_synced: 2026-05-09T08:00:03.648954+00:00
 global: true
 ---
 

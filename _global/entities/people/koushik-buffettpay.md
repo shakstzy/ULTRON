@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.311272+00:00
+ingested_at: 2026-05-09T08:00:03.926530+00:00
 ingest_version: 1
 content_hash: blake2b:34e9f26a778ba4ef8fcdb91a9cdf62ac
-provider_modified_at: 2026-05-08T08:00:06.311272+00:00
+provider_modified_at: 2026-05-09T08:00:03.926530+00:00
 
 title: Koushik | BuffettPay
 slug: koushik-buffettpay
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-08T08:00:06.311272+00:00
+last_synced: 2026-05-09T08:00:03.926530+00:00
 global: true
 ---
 

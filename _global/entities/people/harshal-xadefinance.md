@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.161123+00:00
+ingested_at: 2026-05-09T08:00:03.678424+00:00
 ingest_version: 1
 content_hash: blake2b:8fbfd7a0b8e814ca2834036b7b5c0bdd
-provider_modified_at: 2026-05-08T08:00:06.161123+00:00
+provider_modified_at: 2026-05-09T08:00:03.678424+00:00
 
 title: Harshal | XadeFinance
 slug: harshal-xadefinance
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 408-590-2287"]
   slack: []
-last_synced: 2026-05-08T08:00:06.161123+00:00
+last_synced: 2026-05-09T08:00:03.678424+00:00
 global: true
 ---
 

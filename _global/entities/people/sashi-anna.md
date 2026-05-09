@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.139119+00:00
+ingested_at: 2026-05-09T08:00:03.602410+00:00
 ingest_version: 1
 content_hash: blake2b:aff8bb8645c50f8c783e7f4b55657f05
-provider_modified_at: 2026-05-08T08:00:06.139119+00:00
+provider_modified_at: 2026-05-09T08:00:03.602410+00:00
 
 title: Sashi Anna
 slug: sashi-anna
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14258940361"]
   slack: []
-last_synced: 2026-05-08T08:00:06.139119+00:00
+last_synced: 2026-05-09T08:00:03.602410+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.245409+00:00
+ingested_at: 2026-05-09T08:00:03.647762+00:00
 ingest_version: 1
 content_hash: blake2b:dbcaa7feeff01241a20fb2ba48b589a3
-provider_modified_at: 2026-05-08T08:00:06.245409+00:00
+provider_modified_at: 2026-05-09T08:00:03.647762+00:00
 
 title: Allen Li
 slug: allen-li
@@ -15,7 +15,7 @@ identifiers:
   email: ["itsallenli@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-08T08:00:06.245409+00:00
+last_synced: 2026-05-09T08:00:03.647762+00:00
 global: true
 ---
 

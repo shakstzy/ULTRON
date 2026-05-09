@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.248995+00:00
+ingested_at: 2026-05-09T08:00:03.706124+00:00
 ingest_version: 1
 content_hash: blake2b:9aee9e72a46fdad2d29cdb6b39ec91a7
-provider_modified_at: 2026-05-08T08:00:06.248995+00:00
+provider_modified_at: 2026-05-09T08:00:03.706124+00:00
 
 title: Ratan UC Berkeley
 slug: ratan-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 571-620-9135"]
   slack: []
-last_synced: 2026-05-08T08:00:06.248995+00:00
+last_synced: 2026-05-09T08:00:03.706124+00:00
 global: true
 ---
 

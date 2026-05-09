@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.326357+00:00
+ingested_at: 2026-05-09T08:00:03.883664+00:00
 ingest_version: 1
 content_hash: blake2b:21b05672c0b4c161d16674545494dccb
-provider_modified_at: 2026-05-08T08:00:06.326357+00:00
+provider_modified_at: 2026-05-09T08:00:03.883664+00:00
 
 title: Mane Hinge LA
 slug: mane-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18184413597"]
   slack: []
-last_synced: 2026-05-08T08:00:06.326357+00:00
+last_synced: 2026-05-09T08:00:03.883664+00:00
 global: true
 ---
 

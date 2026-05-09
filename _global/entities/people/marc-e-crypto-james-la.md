@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.182749+00:00
+ingested_at: 2026-05-09T08:00:03.774458+00:00
 ingest_version: 1
 content_hash: blake2b:afa23572993b055c7555084045ebde38
-provider_modified_at: 2026-05-08T08:00:06.182749+00:00
+provider_modified_at: 2026-05-09T08:00:03.774458+00:00
 
 title: Marc E Crypto James LA
 slug: marc-e-crypto-james-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12139528774"]
   slack: []
-last_synced: 2026-05-08T08:00:06.182749+00:00
+last_synced: 2026-05-09T08:00:03.774458+00:00
 global: true
 ---
 

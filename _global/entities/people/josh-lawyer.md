@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.326572+00:00
+ingested_at: 2026-05-09T08:00:03.873272+00:00
 ingest_version: 1
 content_hash: blake2b:11edfafad3f5513217585a3f3207ffe8
-provider_modified_at: 2026-05-08T08:00:06.326572+00:00
+provider_modified_at: 2026-05-09T08:00:03.873272+00:00
 
 title: Josh | LAWYER
 slug: josh-lawyer
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-08T08:00:06.326572+00:00
+last_synced: 2026-05-09T08:00:03.873272+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.261204+00:00
+ingested_at: 2026-05-09T08:00:03.603680+00:00
 ingest_version: 1
 content_hash: blake2b:96c34b4302ff447f48297c293a8b7dbe
-provider_modified_at: 2026-05-08T08:00:06.261204+00:00
+provider_modified_at: 2026-05-09T08:00:03.603680+00:00
 
 title: Celine Hinge Austin
 slug: celine-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16122478523"]
   slack: []
-last_synced: 2026-05-08T08:00:06.261204+00:00
+last_synced: 2026-05-09T08:00:03.603680+00:00
 global: true
 ---
 

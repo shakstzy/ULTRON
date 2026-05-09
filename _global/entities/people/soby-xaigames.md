@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.178323+00:00
+ingested_at: 2026-05-09T08:00:03.738526+00:00
 ingest_version: 1
 content_hash: blake2b:090ba545b4925897d9d06c3a04d2581c
-provider_modified_at: 2026-05-08T08:00:06.178323+00:00
+provider_modified_at: 2026-05-09T08:00:03.738526+00:00
 
 title: Soby | XaiGames
 slug: soby-xaigames
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-08T08:00:06.178323+00:00
+last_synced: 2026-05-09T08:00:03.738526+00:00
 global: true
 ---
 

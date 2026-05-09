@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.222588+00:00
+ingested_at: 2026-05-09T08:00:03.770439+00:00
 ingest_version: 1
 content_hash: blake2b:6158ec0e3a3f77cd85b778426d5785d7
-provider_modified_at: 2026-05-08T08:00:06.222588+00:00
+provider_modified_at: 2026-05-09T08:00:03.770439+00:00
 
 title: Harshit | RuptureLabs
 slug: harshit-rupturelabs
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-08T08:00:06.222588+00:00
+last_synced: 2026-05-09T08:00:03.770439+00:00
 global: true
 ---
 

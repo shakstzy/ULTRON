@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.342612+00:00
+ingested_at: 2026-05-09T08:00:03.792295+00:00
 ingest_version: 1
 content_hash: blake2b:730e3c1baa1cf7844ad29c76c0d786cc
-provider_modified_at: 2026-05-08T08:00:06.342612+00:00
+provider_modified_at: 2026-05-09T08:00:03.792295+00:00
 
 title: Prakarsh | Spheron
 slug: prakarsh-spheron
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-08T08:00:06.342612+00:00
+last_synced: 2026-05-09T08:00:03.792295+00:00
 global: true
 ---
 

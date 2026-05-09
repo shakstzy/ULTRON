@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.249995+00:00
+ingested_at: 2026-05-09T08:00:03.778648+00:00
 ingest_version: 1
 content_hash: blake2b:3d9e46c390323c067eaf93f3aea97706
-provider_modified_at: 2026-05-08T08:00:06.249995+00:00
+provider_modified_at: 2026-05-09T08:00:03.778648+00:00
 
 title: Lalita - Yahoo
 slug: lalita-yahoo
@@ -15,7 +15,7 @@ identifiers:
   email: ["lperi76@yahoo.com"]
   phone: []
   slack: []
-last_synced: 2026-05-08T08:00:06.249995+00:00
+last_synced: 2026-05-09T08:00:03.778648+00:00
 global: true
 ---
 

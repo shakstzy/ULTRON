@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.167087+00:00
+ingested_at: 2026-05-09T08:00:03.751913+00:00
 ingest_version: 1
 content_hash: blake2b:7a417b67e9561f28db65466cf6993926
-provider_modified_at: 2026-05-08T08:00:06.167087+00:00
+provider_modified_at: 2026-05-09T08:00:03.751913+00:00
 
 title: Deepika Ganne
 slug: deepika-ganne
@@ -15,7 +15,7 @@ identifiers:
   email: ["dlganne@hotmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-08T08:00:06.167087+00:00
+last_synced: 2026-05-09T08:00:03.751913+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.219929+00:00
+ingested_at: 2026-05-09T08:00:03.607150+00:00
 ingest_version: 1
 content_hash: blake2b:a0f473cb7f29a87beb988497d82be3cc
-provider_modified_at: 2026-05-08T08:00:06.219929+00:00
+provider_modified_at: 2026-05-09T08:00:03.607150+00:00
 
 title: Kelly Hinge Austin
 slug: kelly-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12109903761"]
   slack: []
-last_synced: 2026-05-08T08:00:06.219929+00:00
+last_synced: 2026-05-09T08:00:03.607150+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.142480+00:00
+ingested_at: 2026-05-09T08:00:03.702829+00:00
 ingest_version: 1
 content_hash: blake2b:960aa7ef1cb6527d0b42874ca03a0afc
-provider_modified_at: 2026-05-08T08:00:06.142480+00:00
+provider_modified_at: 2026-05-09T08:00:03.702829+00:00
 
 title: Tathya UC Berkeley
 slug: tathya-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19496903641"]
   slack: []
-last_synced: 2026-05-08T08:00:06.142480+00:00
+last_synced: 2026-05-09T08:00:03.702829+00:00
 global: true
 ---
 

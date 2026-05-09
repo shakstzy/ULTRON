@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.166278+00:00
+ingested_at: 2026-05-09T08:00:03.894005+00:00
 ingest_version: 1
 content_hash: blake2b:782492d94951ff86ca2de130374578cd
-provider_modified_at: 2026-05-08T08:00:06.166278+00:00
+provider_modified_at: 2026-05-09T08:00:03.894005+00:00
 
 title: Harshini Hinge Austin
 slug: harshini-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15107378308"]
   slack: []
-last_synced: 2026-05-08T08:00:06.166278+00:00
+last_synced: 2026-05-09T08:00:03.894005+00:00
 global: true
 ---
 

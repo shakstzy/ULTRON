@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.256949+00:00
+ingested_at: 2026-05-09T08:00:03.856079+00:00
 ingest_version: 1
 content_hash: blake2b:088beb8ae6ac6d97b057a6778b768be2
-provider_modified_at: 2026-05-08T08:00:06.256949+00:00
+provider_modified_at: 2026-05-09T08:00:03.856079+00:00
 
 title: Gabriella Hinge Austin
 slug: gabriella-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17373859611"]
   slack: []
-last_synced: 2026-05-08T08:00:06.256949+00:00
+last_synced: 2026-05-09T08:00:03.856079+00:00
 global: true
 ---
 

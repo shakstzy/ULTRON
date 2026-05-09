@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.187334+00:00
+ingested_at: 2026-05-09T08:00:03.677552+00:00
 ingest_version: 1
 content_hash: blake2b:481e83390c868e6accbb13cd7e3583c9
-provider_modified_at: 2026-05-08T08:00:06.187334+00:00
+provider_modified_at: 2026-05-09T08:00:03.677552+00:00
 
 title: Natalie
 slug: natalie
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-317-0041"]
   slack: []
-last_synced: 2026-05-08T08:00:06.187334+00:00
+last_synced: 2026-05-09T08:00:03.677552+00:00
 global: true
 ---
 

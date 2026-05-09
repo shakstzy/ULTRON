@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.308415+00:00
+ingested_at: 2026-05-09T08:00:03.803446+00:00
 ingest_version: 1
 content_hash: blake2b:84eb72ad2755582d9867d4c6e1ead73e
-provider_modified_at: 2026-05-08T08:00:06.308415+00:00
+provider_modified_at: 2026-05-09T08:00:03.803446+00:00
 
 title: Alex | ClipFinance
 slug: alex-clipfinance
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-08T08:00:06.308415+00:00
+last_synced: 2026-05-09T08:00:03.803446+00:00
 global: true
 ---
 

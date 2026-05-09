@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.234462+00:00
+ingested_at: 2026-05-09T08:00:03.874574+00:00
 ingest_version: 1
 content_hash: blake2b:0447112669a30681eb88a1b2a99c2823
-provider_modified_at: 2026-05-08T08:00:06.234462+00:00
+provider_modified_at: 2026-05-09T08:00:03.874574+00:00
 
 title: Fabian Sandoval
 slug: fabian-sandoval
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 (510) 988-3109"]
   slack: []
-last_synced: 2026-05-08T08:00:06.234462+00:00
+last_synced: 2026-05-09T08:00:03.874574+00:00
 global: true
 ---
 

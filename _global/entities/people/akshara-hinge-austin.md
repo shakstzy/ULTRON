@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.243169+00:00
+ingested_at: 2026-05-09T08:00:03.603802+00:00
 ingest_version: 1
 content_hash: blake2b:41b3c141fba1cd1fd5af1ab77582b6ea
-provider_modified_at: 2026-05-08T08:00:06.243169+00:00
+provider_modified_at: 2026-05-09T08:00:03.603802+00:00
 
 title: Akshara Hinge Austin
 slug: akshara-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15128651940"]
   slack: []
-last_synced: 2026-05-08T08:00:06.243169+00:00
+last_synced: 2026-05-09T08:00:03.603802+00:00
 global: true
 ---
 

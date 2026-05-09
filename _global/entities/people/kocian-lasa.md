@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.282770+00:00
+ingested_at: 2026-05-09T08:00:03.785385+00:00
 ingest_version: 1
 content_hash: blake2b:902b3c2bc3263fbd24bc4326b967fe1d
-provider_modified_at: 2026-05-08T08:00:06.282770+00:00
+provider_modified_at: 2026-05-09T08:00:03.785385+00:00
 
 title: Kocian LASA
 slug: kocian-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-666-4207"]
   slack: []
-last_synced: 2026-05-08T08:00:06.282770+00:00
+last_synced: 2026-05-09T08:00:03.785385+00:00
 global: true
 ---
 

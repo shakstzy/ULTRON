@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.151363+00:00
+ingested_at: 2026-05-09T08:00:03.813476+00:00
 ingest_version: 1
 content_hash: blake2b:e5cc0e5ebd6ace7afe547ed2cde32b40
-provider_modified_at: 2026-05-08T08:00:06.151363+00:00
+provider_modified_at: 2026-05-09T08:00:03.813476+00:00
 
 title: Joey Laderer UC Berkeley
 slug: joey-laderer-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 949-345-5680"]
   slack: []
-last_synced: 2026-05-08T08:00:06.151363+00:00
+last_synced: 2026-05-09T08:00:03.813476+00:00
 global: true
 ---
 

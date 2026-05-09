@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.210971+00:00
+ingested_at: 2026-05-09T08:00:03.780707+00:00
 ingest_version: 1
 content_hash: blake2b:eb12e09fa444e8628806574d68956ab8
-provider_modified_at: 2026-05-08T08:00:06.210971+00:00
+provider_modified_at: 2026-05-09T08:00:03.780707+00:00
 
 title: Bert | Layer
 slug: bert-layer
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-08T08:00:06.210971+00:00
+last_synced: 2026-05-09T08:00:03.780707+00:00
 global: true
 ---
 

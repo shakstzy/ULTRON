@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.260889+00:00
+ingested_at: 2026-05-09T08:00:03.675866+00:00
 ingest_version: 1
 content_hash: blake2b:8d7e5e2ea8545296dd8f495f4c51b74e
-provider_modified_at: 2026-05-08T08:00:06.260889+00:00
+provider_modified_at: 2026-05-09T08:00:03.675866+00:00
 
 title: Jean Parker Producer LA
 slug: jean-parker-producer-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(631) 835-8665"]
   slack: []
-last_synced: 2026-05-08T08:00:06.260889+00:00
+last_synced: 2026-05-09T08:00:03.675866+00:00
 global: true
 ---
 

@@ -1,21 +1,21 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.180045+00:00
+ingested_at: 2026-05-09T08:00:03.624369+00:00
 ingest_version: 1
-content_hash: blake2b:28feb5f47bec6eca68cfa65376030901
-provider_modified_at: 2026-05-08T08:00:06.180045+00:00
+content_hash: blake2b:22c477b50f38cbde7110d8fd24b211b4
+provider_modified_at: 2026-05-09T08:00:03.624369+00:00
 
-title: Brandon | Encrypto
+title: Brandon Encrypto
 slug: brandon-encrypto
 type: person
 canonical_uri: lifeos:_global/entities/people/brandon-encrypto
 aliases: []
 identifiers:
   email: []
-  phone: ["+1 516-262-9447"]
+  phone: ["5162629447"]
   slack: []
-last_synced: 2026-05-08T08:00:06.180045+00:00
+last_synced: 2026-05-09T08:00:03.624369+00:00
 global: true
 ---
 

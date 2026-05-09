@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.166707+00:00
+ingested_at: 2026-05-09T08:00:03.602208+00:00
 ingest_version: 1
 content_hash: blake2b:42ca6b064818b1170ed19c1e28a33999
-provider_modified_at: 2026-05-08T08:00:06.166707+00:00
+provider_modified_at: 2026-05-09T08:00:03.602208+00:00
 
 title: Graciela Hinge Austin
 slug: graciela-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17373594719"]
   slack: []
-last_synced: 2026-05-08T08:00:06.166707+00:00
+last_synced: 2026-05-09T08:00:03.602208+00:00
 global: true
 ---
 

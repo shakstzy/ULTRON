@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.215017+00:00
+ingested_at: 2026-05-09T08:00:03.641154+00:00
 ingest_version: 1
 content_hash: blake2b:35a3f25cdc4ef98cc6778bf9db35ebc7
-provider_modified_at: 2026-05-08T08:00:06.215017+00:00
+provider_modified_at: 2026-05-09T08:00:03.641154+00:00
 
 title: Nick Bassist UC Berkeley
 slug: nick-bassist-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18188074005"]
   slack: []
-last_synced: 2026-05-08T08:00:06.215017+00:00
+last_synced: 2026-05-09T08:00:03.641154+00:00
 global: true
 ---
 

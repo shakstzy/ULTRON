@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.312051+00:00
+ingested_at: 2026-05-09T08:00:03.677696+00:00
 ingest_version: 1
 content_hash: blake2b:b579407531201603405e06e440bb7e86
-provider_modified_at: 2026-05-08T08:00:06.312051+00:00
+provider_modified_at: 2026-05-09T08:00:03.677696+00:00
 
 title: Krishna Vaidyanathan
 slug: krishna-vaidyanathan
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(512) 221-3040"]
   slack: []
-last_synced: 2026-05-08T08:00:06.312051+00:00
+last_synced: 2026-05-09T08:00:03.677696+00:00
 global: true
 ---
 

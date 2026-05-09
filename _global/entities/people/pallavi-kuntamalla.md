@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.347412+00:00
+ingested_at: 2026-05-09T08:00:03.628026+00:00
 ingest_version: 1
 content_hash: blake2b:39e493fb6c3d6be3b22a2c61e38fce84
-provider_modified_at: 2026-05-08T08:00:06.347412+00:00
+provider_modified_at: 2026-05-09T08:00:03.628026+00:00
 
 title: Pallavi Kuntamalla
 slug: pallavi-kuntamalla
@@ -15,7 +15,7 @@ identifiers:
   email: ["pallavi.kp@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-08T08:00:06.347412+00:00
+last_synced: 2026-05-09T08:00:03.628026+00:00
 global: true
 ---
 

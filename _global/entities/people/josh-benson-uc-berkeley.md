@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.284087+00:00
+ingested_at: 2026-05-09T08:00:03.829490+00:00
 ingest_version: 1
 content_hash: blake2b:d0be5a0e5a3129a1f5e18255b8050874
-provider_modified_at: 2026-05-08T08:00:06.284087+00:00
+provider_modified_at: 2026-05-09T08:00:03.829490+00:00
 
 title: Josh Benson UC Berkeley
 slug: josh-benson-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 805-570-1373"]
   slack: []
-last_synced: 2026-05-08T08:00:06.284087+00:00
+last_synced: 2026-05-09T08:00:03.829490+00:00
 global: true
 ---
 

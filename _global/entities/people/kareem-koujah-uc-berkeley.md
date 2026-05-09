@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.270118+00:00
+ingested_at: 2026-05-09T08:00:03.871374+00:00
 ingest_version: 1
 content_hash: blake2b:d22d46e463a6140f5d556df834dfd2e2
-provider_modified_at: 2026-05-08T08:00:06.270118+00:00
+provider_modified_at: 2026-05-09T08:00:03.871374+00:00
 
 title: Kareem Koujah UC Berkeley
 slug: kareem-koujah-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(714) 227-3538"]
   slack: []
-last_synced: 2026-05-08T08:00:06.270118+00:00
+last_synced: 2026-05-09T08:00:03.871374+00:00
 global: true
 ---
 

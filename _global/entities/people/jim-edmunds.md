@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.328238+00:00
+ingested_at: 2026-05-09T08:00:03.836906+00:00
 ingest_version: 1
 content_hash: blake2b:771af26a74544d3317294a0671526bd0
-provider_modified_at: 2026-05-08T08:00:06.328238+00:00
+provider_modified_at: 2026-05-09T08:00:03.836906+00:00
 
 title: Jim Edmunds
 slug: jim-edmunds
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16463517009"]
   slack: []
-last_synced: 2026-05-08T08:00:06.328238+00:00
+last_synced: 2026-05-09T08:00:03.836906+00:00
 global: true
 ---
 

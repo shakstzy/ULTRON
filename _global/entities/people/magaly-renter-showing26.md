@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.222716+00:00
+ingested_at: 2026-05-09T08:00:03.660918+00:00
 ingest_version: 1
 content_hash: blake2b:925fff07a94b3d76925ece07c1d6e97c
-provider_modified_at: 2026-05-08T08:00:06.222716+00:00
+provider_modified_at: 2026-05-09T08:00:03.660918+00:00
 
 title: Magaly Renter Showing26
 slug: magaly-renter-showing26
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19092286131"]
   slack: []
-last_synced: 2026-05-08T08:00:06.222716+00:00
+last_synced: 2026-05-09T08:00:03.660918+00:00
 global: true
 ---
 

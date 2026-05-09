@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.250981+00:00
+ingested_at: 2026-05-09T08:00:03.886366+00:00
 ingest_version: 1
 content_hash: blake2b:4e29890c6131109cbd36d30fa52e2c44
-provider_modified_at: 2026-05-08T08:00:06.250981+00:00
+provider_modified_at: 2026-05-09T08:00:03.886366+00:00
 
 title: Arthur Embry LASA
 slug: arthur-embry-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-825-7586"]
   slack: []
-last_synced: 2026-05-08T08:00:06.250981+00:00
+last_synced: 2026-05-09T08:00:03.886366+00:00
 global: true
 ---
 

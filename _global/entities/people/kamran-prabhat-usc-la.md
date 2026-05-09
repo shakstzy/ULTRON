@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.229717+00:00
+ingested_at: 2026-05-09T08:00:03.814934+00:00
 ingest_version: 1
 content_hash: blake2b:b7951915d4e0f7d8f9444a413ef306f2
-provider_modified_at: 2026-05-08T08:00:06.229717+00:00
+provider_modified_at: 2026-05-09T08:00:03.814934+00:00
 
 title: Kamran Prabhat USC LA
 slug: kamran-prabhat-usc-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19254217893"]
   slack: []
-last_synced: 2026-05-08T08:00:06.229717+00:00
+last_synced: 2026-05-09T08:00:03.814934+00:00
 global: true
 ---
 

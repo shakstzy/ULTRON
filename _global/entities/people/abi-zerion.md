@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.348347+00:00
+ingested_at: 2026-05-09T08:00:03.777110+00:00
 ingest_version: 1
 content_hash: blake2b:996b55d8da492b5fb5e84be744cb26c2
-provider_modified_at: 2026-05-08T08:00:06.348347+00:00
+provider_modified_at: 2026-05-09T08:00:03.777110+00:00
 
 title: Abi | Zerion
 slug: abi-zerion
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 415-716-1979"]
   slack: []
-last_synced: 2026-05-08T08:00:06.348347+00:00
+last_synced: 2026-05-09T08:00:03.777110+00:00
 global: true
 ---
 

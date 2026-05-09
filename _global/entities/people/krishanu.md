@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.130485+00:00
+ingested_at: 2026-05-09T08:00:03.862975+00:00
 ingest_version: 1
 content_hash: blake2b:4d6e2b7d0588ca7455e8733f027e6b55
-provider_modified_at: 2026-05-08T08:00:06.130485+00:00
+provider_modified_at: 2026-05-09T08:00:03.862975+00:00
 
 title: Krishanu
 slug: krishanu
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(512) 888-8974"]
   slack: []
-last_synced: 2026-05-08T08:00:06.130485+00:00
+last_synced: 2026-05-09T08:00:03.862975+00:00
 global: true
 ---
 

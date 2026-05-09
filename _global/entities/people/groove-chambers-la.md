@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.137718+00:00
+ingested_at: 2026-05-09T08:00:03.683412+00:00
 ingest_version: 1
 content_hash: blake2b:97d0fa00f53c7ac42c222ac386299958
-provider_modified_at: 2026-05-08T08:00:06.137718+00:00
+provider_modified_at: 2026-05-09T08:00:03.683412+00:00
 
 title: Groove Chambers LA
 slug: groove-chambers-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(770) 789-9277"]
   slack: []
-last_synced: 2026-05-08T08:00:06.137718+00:00
+last_synced: 2026-05-09T08:00:03.683412+00:00
 global: true
 ---
 

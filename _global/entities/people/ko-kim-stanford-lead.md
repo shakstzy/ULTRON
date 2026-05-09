@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.222652+00:00
+ingested_at: 2026-05-09T08:00:03.760869+00:00
 ingest_version: 1
 content_hash: blake2b:6fb1bd9d6dfa96ff4a4b5e8f54428642
-provider_modified_at: 2026-05-08T08:00:06.222652+00:00
+provider_modified_at: 2026-05-09T08:00:03.760869+00:00
 
 title: Ko Kim Stanford LEAD
 slug: ko-kim-stanford-lead
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14159337759"]
   slack: []
-last_synced: 2026-05-08T08:00:06.222652+00:00
+last_synced: 2026-05-09T08:00:03.760869+00:00
 global: true
 ---
 

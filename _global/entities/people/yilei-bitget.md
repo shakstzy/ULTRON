@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-08T08:00:06.172879+00:00
+ingested_at: 2026-05-09T08:00:03.888380+00:00
 ingest_version: 1
 content_hash: blake2b:2c69cf510a015f09bb1d19dec88a7ad5
-provider_modified_at: 2026-05-08T08:00:06.172879+00:00
+provider_modified_at: 2026-05-09T08:00:03.888380+00:00
 
 title: Yilei | Bitget
 slug: yilei-bitget
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-08T08:00:06.172879+00:00
+last_synced: 2026-05-09T08:00:03.888380+00:00
 global: true
 ---
 

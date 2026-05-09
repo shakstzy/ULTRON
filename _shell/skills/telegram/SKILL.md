@@ -120,3 +120,5 @@ All verbs print human-readable text by default. Add `--json` for structured outp
 | `FloodWaitError: wait N seconds` | Telethon auto-handles ≤ 60s. Longer = back off, breaker trips. |
 | `Chat not found` | `<chat>` matched zero or multiple dialogs. Use `chats --query <substr>` to find the right id, then pass numeric id. |
 | `BREAKER_HALTED` | Run `status`, investigate why, then `reset-breaker`. |
+| `PhoneCodeExpiredError` after just one resend | The user's Telegram app has multiple "Login code" messages stacked; they pasted an OLDER one. Tell them: "use the LATEST code, ignore the older ones." Never auto-resend without an explicit ask. |
+| `PasswordHashInvalidError` | 2FA password wrong. The code is consumed — must request a fresh code AND get the corrected password before retrying. |

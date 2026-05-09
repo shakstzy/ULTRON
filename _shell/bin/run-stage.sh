@@ -86,7 +86,17 @@ mkdir -p "$RUN_DIR/input" "$RUN_DIR/output"
 
 # 6. Idempotency lock. Exit 0 on contention is intentional: launchd treats it as
 # "already handled this run." If you want launchd to retry instead, change to 75.
-LOCK="/tmp/ultron-$STAGE-${WORKSPACE:-cross}.lock"
+# For ingest-source the lock is keyed on (source, account) so independent
+# per-account ingests run in parallel. Without this they all fell back to
+# ${WORKSPACE:-cross} → one shared "/tmp/ultron-ingest-source-cross.lock" →
+# at every :00 cron slot one winner ran and 3+ siblings silently exited 0
+# ("already handled"), starving entire hours for the losers.
+if [[ "$STAGE" == "ingest-source" ]]; then
+  ACCOUNT_LOCK_SLUG="$(printf '%s' "$ACCOUNT" | tr -c 'A-Za-z0-9' '-')"
+  LOCK="/tmp/ultron-ingest-source-${SOURCE}-${ACCOUNT_LOCK_SLUG}.lock"
+else
+  LOCK="/tmp/ultron-$STAGE-${WORKSPACE:-cross}.lock"
+fi
 exec 9>"$LOCK"
 if ! flock -n 9; then
   echo "ultron: another $STAGE${WORKSPACE:+ for $WORKSPACE} is running; exiting" >&2

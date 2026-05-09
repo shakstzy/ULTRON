@@ -1,17 +1,17 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-09T02:30:06.043008+00:00'
+ingested_at: '2026-05-09T16:39:25.101736+00:00'
 ingest_version: 1
-content_hash: 'blake3:c7a86a372ccbfa6970073e030289e4aef924e03fadee88f192c8bf1be7c56b58'
-provider_modified_at: '2026-05-08T21:02:32-05:00'
+content_hash: 'blake3:6782dc75909959254afde2cb8555d97c3ce507b4ad44f51388ea17cbd922ad14'
+provider_modified_at: '2026-05-09T10:47:58-05:00'
 contact_slug: girija-nagarajan-family
 contact_type: group
 month: 2026-05
-date_range: [2026-05-01, 2026-05-08]
-message_count: 89
+date_range: [2026-05-01, 2026-05-09]
+message_count: 104
 my_message_count: 0
-their_message_count: 89
+their_message_count: 104
 attachments: []
 whatsapp_chat_jid: '15104499964-1417839295@g.us'
 whatsapp_chat_kind: group
@@ -229,3 +229,22 @@ Remember the Name ~ Thalapathy Vijay 😎🔥
 ## 2026-05-08 (Friday)
 
 **21:02 — @161765782458372:** [image: image_20260508_210233.jpg]
+**23:35 — @273288869752960:** @161765782458372 and @97779393253611 
+I tried to call y'all
+**23:35 — @273288869752960:** [image: image_20260509_103907.jpg]
+**23:35 — @273288869752960:** Kumar pushed the knife on me
+**23:38 — @110458136715502:** [image: image_20260509_103907.jpg]
+**23:39 — @110458136715502:** [video: video_20260509_103907.mp4]
+**23:42 — @110458136715502:** [image: image_20260509_103907.jpg]
+**23:47 — @110458136715502:** [image: image_20260509_103907.jpg]
+**23:47 — @110458136715502:** [image: image_20260509_103908.jpg]
+**23:59 — @273288869752960:** [image: image_20260509_103908.jpg]
+
+## 2026-05-09 (Saturday)
+
+**00:06 — @22291048054955:** Chithi what's this?? What happened?
+**00:56 — @97779393253611:** Sorry I was asleep then...Woke up quite late...what happened...Any issue?
+**03:00 — @110458136715502:** What happened.very sorry
+**07:05 — @273288869752960:** Accidental cut, don't worry. 🙏
+**08:57 — @22291048054955:** Be careful Chithi
+**10:47 — @97779393253611:** https://www.instagram.com/reel/DReQoEWCJ5R/?igsh=MXhtam5kc3VsenQ1cw==

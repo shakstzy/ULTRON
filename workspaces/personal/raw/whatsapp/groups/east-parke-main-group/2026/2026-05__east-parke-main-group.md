@@ -1,17 +1,17 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-08T22:30:04.401668+00:00'
+ingested_at: '2026-05-09T17:12:21.137399+00:00'
 ingest_version: 1
-content_hash: 'blake3:91c494a367e05fed683c088447ac8882e51bca7cf415a8f4030a69c9a41ce8cb'
-provider_modified_at: '2026-05-08T17:30:00-05:00'
+content_hash: 'blake3:3b230b998cf4a98d0bac7f9f442d8f142ce0f86ffc78c7c5ca4684f278c08b59'
+provider_modified_at: '2026-05-09T11:25:46-05:00'
 contact_slug: east-parke-main-group
 contact_type: group
 month: 2026-05
-date_range: [2026-05-02, 2026-05-08]
-message_count: 27
+date_range: [2026-05-02, 2026-05-09]
+message_count: 28
 my_message_count: 0
-their_message_count: 27
+their_message_count: 28
 attachments: []
 whatsapp_chat_jid: '120363023221027012@g.us'
 whatsapp_chat_kind: group
@@ -76,3 +76,7 @@ Did you figure out how to fix this problem?
 Please do share if you know anyone looking to rent. 
 
 🔗 Photos & apply: https://www.zillow.com/homedetails/6724-Ellsworth-Walk-Austin-TX-78724/331628066_zpid/
+
+## 2026-05-09 (Saturday)
+
+**11:25 — @142661650493504:** Did anyone get a package that looks like medication? It said it was delivered, but I did not get anything so I’m assuming they dropped it off at the wrong place.

@@ -15,6 +15,9 @@ members:
 - slug: sydney
   slack_user_id: U04QMPSF03Y
   display_name: sydney
+- slug: julien
+  slack_user_id: U07V99QMTV5
+  display_name: julien じゅりえん
 first_seen: '2026-05-02T22:29:48-05:00'
-last_updated: '2026-05-08T21:00:10-05:00'
+last_updated: '2026-05-09T11:55:33-05:00'
 ---

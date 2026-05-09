@@ -21,5 +21,5 @@ members:
   slack_user_id: U0A993YPZ1Q
   display_name: Adithya Kumar (me)
 first_seen: '2026-05-04T16:31:36-05:00'
-last_updated: '2026-05-09T16:28:10-05:00'
+last_updated: '2026-05-09T17:00:13-05:00'
 ---

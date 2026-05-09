@@ -8,7 +8,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: gmail-19c9c15d4da5410b
 status_label: INQUIRED
-last_pulled_at: "2026-05-09T21:56:39.605Z"
+last_pulled_at: "2026-05-09T22:00:55.527Z"
 ---
 
 # Nathan Ptacnik

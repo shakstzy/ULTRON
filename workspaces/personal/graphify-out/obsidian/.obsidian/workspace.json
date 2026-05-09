@@ -11,10 +11,14 @@
             "id": "61078d1c8e6eff17",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "_COMMUNITY_Community 5.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "_COMMUNITY_Community 5"
             }
           }
         ]
@@ -179,6 +183,8 @@
   },
   "active": "61078d1c8e6eff17",
   "lastOpenFiles": [
+    "Stanford.md",
+    "_COMMUNITY_Community 5.md",
     "Steven (NYC Friend).md",
     "Sanaya (Hinge, Dallas).md",
     "_COMMUNITY_Dating Roster (mixed).md",
@@ -202,8 +208,6 @@
     "_COMMUNITY_Community 14.md",
     "_COMMUNITY_Community 16.md",
     "_COMMUNITY_Community 10.md",
-    "_COMMUNITY_Community 9.md",
-    "_COMMUNITY_Community 12.md",
-    "_COMMUNITY_Community 15.md"
+    "_COMMUNITY_Community 9.md"
   ]
 }

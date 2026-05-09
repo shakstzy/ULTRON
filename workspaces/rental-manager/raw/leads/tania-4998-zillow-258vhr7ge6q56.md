@@ -10,7 +10,7 @@ listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 916959689159145780
 status_label: TOUR REQUESTED
 renter_us_state: CA
-last_pulled_at: "2026-05-08T22:00:21.320Z"
+last_pulled_at: "2026-05-09T21:55:27.417Z"
 ---
 
 # Tania
@@ -54,3 +54,31 @@ hey Tania, tomorrow works. what time? and parking is available as an add-on if y
 ### 2026-05-08T18:50:13.000Z - Owner (Adithya)
 
 4 pm works. The address is 13245 Klein Ct. Text me when you get here.
+
+### 2026-05-08T22:08:00.000Z - Tania Gonzalez
+
+On my way
+
+### 2026-05-08T22:46:55.000Z - Tania Gonzalez
+
+Outside
+
+### 2026-05-08T22:46:56.000Z - Tania Gonzalez
+
+I’m here
+
+### 2026-05-08T22:49:57.000Z - Tania Gonzalez
+
+Hello
+
+### 2026-05-08T23:00:57.000Z - Tania Gonzalez
+
+Hello is 4:00 pm Can I see the room Or not? I have to go to work again
+
+### 2026-05-08T23:10:07.000Z - Tania Gonzalez
+
+Hello please answer me
+
+### 2026-05-08T23:30:20.000Z - Tania Gonzalez
+
+I going to work thank you for make Me lose my time

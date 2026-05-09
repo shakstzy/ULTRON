@@ -1,17 +1,17 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-08T04:30:05.318509+00:00'
+ingested_at: '2026-05-09T02:30:06.043008+00:00'
 ingest_version: 1
-content_hash: 'blake3:b9f153d01d8cbfb51025026fb0288238296287ba2113a09edd73cd163a14302b'
-provider_modified_at: '2026-05-07T22:51:12-05:00'
+content_hash: 'blake3:c7a86a372ccbfa6970073e030289e4aef924e03fadee88f192c8bf1be7c56b58'
+provider_modified_at: '2026-05-08T21:02:32-05:00'
 contact_slug: girija-nagarajan-family
 contact_type: group
 month: 2026-05
-date_range: [2026-05-01, 2026-05-07]
-message_count: 88
+date_range: [2026-05-01, 2026-05-08]
+message_count: 89
 my_message_count: 0
-their_message_count: 88
+their_message_count: 89
 attachments: []
 whatsapp_chat_jid: '15104499964-1417839295@g.us'
 whatsapp_chat_kind: group
@@ -225,3 +225,7 @@ Remember the Name ~ Thalapathy Vijay 😎🔥
 **10:58 — @97779393253611:** The thing that comes up is Amma''s Adai.  Strewn with slices coconuts and a coarsely ground thoor dhall and besan flour...you can eat three hefty servings without feeling guilty about it
 **22:49 — @110458136715502:** [image: image_20260507_224913.jpg]
 **22:51 — @110458136715502:** [image: image_20260507_225112.jpg]
+
+## 2026-05-08 (Friday)
+
+**21:02 — @161765782458372:** [image: image_20260508_210233.jpg]

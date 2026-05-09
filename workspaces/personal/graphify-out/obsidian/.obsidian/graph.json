@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "pseu ",
+  "search": "hunter",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -17,6 +17,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1.8002479524148312,
+  "scale": 2.1361583721108337,
   "close": false
 }

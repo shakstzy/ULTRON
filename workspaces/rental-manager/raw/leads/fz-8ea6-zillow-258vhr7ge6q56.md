@@ -38,3 +38,7 @@ Mostly Tuesdays and possibly Monday for Tuesday I go to school at mission colleg
 ### 2026-05-09T04:27:50.000Z - Fz Kingz
 
 And for Monday if I only work at one job then I’ll Be able to go in the afternoon
+
+### 2026-05-09T22:02:43.002Z - Owner (Adithya)
+
+Got it. I can do Monday at 2 PM or Tuesday at 5 PM. Which one works better for you?

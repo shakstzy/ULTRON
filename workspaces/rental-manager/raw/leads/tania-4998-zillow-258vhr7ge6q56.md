@@ -82,3 +82,7 @@ Hello please answer me
 ### 2026-05-08T23:30:20.000Z - Tania Gonzalez
 
 I going to work thank you for make Me lose my time
+
+### 2026-05-09T22:02:07.324Z - Owner (Adithya)
+
+sorry about yesterday Tania. I had an emergency come up and couldn't make it. I can show you the place Sunday at 11:30 AM or Monday at 2 PM. do either of those times work?

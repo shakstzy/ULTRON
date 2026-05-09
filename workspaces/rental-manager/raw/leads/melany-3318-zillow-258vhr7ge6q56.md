@@ -34,3 +34,7 @@ Hey Melany. I'd be happy to show you around. What days or times usually work bes
 ### 2026-05-08T22:37:48.000Z - Melany Alvizures
 
 Monday around 4/5 or Wednesday or Thursday would be great
+
+### 2026-05-09T22:03:01.742Z - Owner (Adithya)
+
+I'm actually booked for those times. I can do Sunday at 11:30am, Monday at 2pm, or Tuesday at 5pm. Do any of those work for you?

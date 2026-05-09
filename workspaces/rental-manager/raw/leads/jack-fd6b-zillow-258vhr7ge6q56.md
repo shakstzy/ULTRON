@@ -42,3 +42,7 @@ Got your number. I'll give you a call soon to chat about the house. Let me know 
 ### 2026-05-08T23:19:39.000Z - hollywhie
 
 Thank you for your response. Please call me at 747 202 3821. Thank you. Jack:) On Friday, May 8, 2026 at 03:18:41 PM PDT, <1fm3v71ayxt3mixcx18wxsu6ea@convo.zillow.com> wrote: Hey Jack. That sounds like a cool background. I still have 4 rooms open starting at $1000. Let's get you set up for a tour to check the place out. What days and times usually work for you?
+
+### 2026-05-09T22:02:27.175Z - Owner (Adithya)
+
+Got the updated number. I'll give you a call on that one soon. I can show you the place Sunday at 11:30 AM, Monday at 2 PM, or Tuesday at 5 PM. Which time works best for you?

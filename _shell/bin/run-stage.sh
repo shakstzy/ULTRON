@@ -29,10 +29,18 @@ case "$STAGE" in
     SOURCE="${2:-}"
     ACCOUNT="${3:-}"
     WORKSPACE=""   # not workspace-scoped
-    if [[ -z "$SOURCE" ]]; then
+    if [[ -z "$SOURCE" || -z "$ACCOUNT" ]]; then
       echo "ingest-source requires <source> <account>" >&2
       exit 2
     fi
+    # Lock path + RUN_DIR feed off these — refuse anything outside the
+    # safe charset to keep paths sane. SOURCE comes from a curated set of
+    # robot scripts; ACCOUNT can be an email/phone, so it gets slugged.
+    if [[ ! "$SOURCE" =~ ^[A-Za-z0-9_-]+$ ]]; then
+      echo "ingest-source: invalid source name (must match [A-Za-z0-9_-]): $SOURCE" >&2
+      exit 2
+    fi
+    ACCOUNT_LOCK_SLUG="$(printf '%s' "$ACCOUNT" | tr -c 'A-Za-z0-9' '-')"
     ;;
   *)
     echo "unknown stage: $STAGE" >&2
@@ -80,7 +88,15 @@ fi
 # 5. Ensure log dir exists before any tool tries to write there.
 mkdir -p "$ULTRON_ROOT/_logs"
 
-RUN_ID="$(date +%Y-%m-%dT%H-%M-%S)-${STAGE}${WORKSPACE:+-$WORKSPACE}"
+# For ingest-source the RUN_ID must include source+account, otherwise two
+# parallel jobs starting in the same second (now possible after the
+# per-(source,account) lock fix) share the same RUN_DIR and clobber each
+# other's `output/ingest-<source>.log` (e.g. gmail/eclipse vs gmail/personal).
+if [[ "$STAGE" == "ingest-source" ]]; then
+  RUN_ID="$(date +%Y-%m-%dT%H-%M-%S)-${STAGE}-${SOURCE}-${ACCOUNT_LOCK_SLUG}"
+else
+  RUN_ID="$(date +%Y-%m-%dT%H-%M-%S)-${STAGE}${WORKSPACE:+-$WORKSPACE}"
+fi
 RUN_DIR="$ULTRON_ROOT/_shell/runs/$RUN_ID"
 mkdir -p "$RUN_DIR/input" "$RUN_DIR/output"
 
@@ -92,7 +108,7 @@ mkdir -p "$RUN_DIR/input" "$RUN_DIR/output"
 # at every :00 cron slot one winner ran and 3+ siblings silently exited 0
 # ("already handled"), starving entire hours for the losers.
 if [[ "$STAGE" == "ingest-source" ]]; then
-  ACCOUNT_LOCK_SLUG="$(printf '%s' "$ACCOUNT" | tr -c 'A-Za-z0-9' '-')"
+  # ACCOUNT_LOCK_SLUG already computed above when STAGE=ingest-source.
   LOCK="/tmp/ultron-ingest-source-${SOURCE}-${ACCOUNT_LOCK_SLUG}.lock"
 else
   LOCK="/tmp/ultron-$STAGE-${WORKSPACE:-cross}.lock"

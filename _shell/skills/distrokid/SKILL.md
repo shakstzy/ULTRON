@@ -73,7 +73,6 @@ When Adithya says "ship <track>" / "upload <track>", do this:
      --title "<title>" \
      --cover "$HOME/.quantum/distrokid/cover-<slug>.jpg"
    ```
-   (Use `$HOME` rather than `~` inside double quotes — the shell does not tilde-expand inside quotes, and `existsSync` will fail on the literal `~/...` path.)
    Default is `--submit true` (full auto). Pass `--submit false` for a dry-run that fills the form and stops at the Continue button so Adithya can eyeball.
 6. **Verify success.** Look for `[url] https://distrokid.com/new/done/?albumuuid=<uuid>` in the output. If URL is still on `/new/` after submit → check `runs/<ts>/post-submit.png` for validation errors.
 7. **Update the song stub.** Add a frontmatter block to `~/ULTRON/workspaces/personal/wiki/entities/songs/<slug>.md` with `status: released`, `albumuuid: <uuid>`, `released: <ISO date>`. Create the file if it doesn't exist.
@@ -84,7 +83,7 @@ When Adithya says "ship <track>" / "upload <track>", do this:
 - Single, Shak STZY, today's date, Outerscope Records, English, Hip Hop/Rap → Pop.
 - Songwriter: Adithya Shakthi Kumar, "I wrote this song", music + lyrics.
 - Apple credits: Performer = Shak STZY (Singing & vocals), Producer = Shak STZY (Producer).
-- Explicit: Yes (hardcoded in upload.mjs; clean releases not yet supported — would need to verify the "No" radio's selector via `recon.mjs` before adding a `--explicit false` flag).
+- Explicit: Yes (hardcoded — clean releases not yet supported in upload.mjs).
 - Facebook profile: leave default "No" — selecting "Yes group" requires a real FB artist URL and DistroKid rejects without one.
 - All 7 mandatory checkboxes: yes (auto).
 - Paid extras (Social Media Pack, Leave a Legacy, Discovery Pack, Store Maximizer, DistroVid, Loudness Normalization): **all skip** unless Adithya specifies.

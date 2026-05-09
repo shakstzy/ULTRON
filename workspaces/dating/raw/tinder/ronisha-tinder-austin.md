@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-04T21:48:11.780Z"
 last_activity: "2026-05-04T21:48:11.780Z"
-last_scrape: "2026-05-08T20:13:31.150Z"
+last_scrape: "2026-05-09T22:06:02.413Z"
 previous_slugs: []
-last_profile_diff: "2026-05-08T20:13:31.150Z"
+last_profile_diff: "2026-05-09T22:06:02.413Z"
 ---
 
 ## Profile
 
 - age: 25
-- distance_mi: 24
+- distance_mi: 27
 - height_cm: 163
 - bio: "Just trying to make someone's son happy and give them the world. I'm very affectionate, and I'm hoping you'll be the same with me. I'm extremely big on communication as well. Also trying to go out to the club with someone that will enjoy it."
 - looking_for: "Long-term partner"
@@ -88,6 +88,22 @@ last_profile_diff: "2026-05-08T20:13:31.150Z"
   },
   "removed": {},
   "changed": {}
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-09T22:06:02.413Z",
+  "added": {
+    "photo_verified": false
+  },
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 24,
+      "to": 27
+    }
+  }
 }
 ```
 

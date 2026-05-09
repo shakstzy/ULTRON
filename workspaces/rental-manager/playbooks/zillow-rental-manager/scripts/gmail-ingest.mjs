@@ -69,22 +69,64 @@ function parseArgs(argv) {
   return out;
 }
 
-function gogJson(args, { allowEmpty = false } = {}) {
-  const r = spawnSync('gog', ['-a', OWNER_EMAIL, '-j', '--results-only', ...args], {
-    encoding: 'utf8',
-    maxBuffer: 64 * 1024 * 1024  // some thread payloads are large
-  });
-  if (r.status !== 0) {
+// Transient network errors (DNS hiccup, TCP reset, 5xx, timeout) bubble up
+// from gog as exit=1/4 with telltale strings in stderr. Retry up to 3x with
+// exponential backoff before giving up. Auth errors (no auth, invalid_grant)
+// fail fast — retrying won't fix them.
+const TRANSIENT_PATTERNS = [
+  /connection reset by peer/i,
+  /no such host/i,
+  /i\/o timeout/i,
+  /connection refused/i,
+  /tls handshake/i,
+  /unexpected EOF/i,
+  /HTTP 5\d\d/i,
+  /Internal error/i,
+  /backend error/i,
+  /rate limit/i
+];
+const NON_TRANSIENT_PATTERNS = [
+  /invalid_grant/i,
+  /Token has been expired/i,
+  /No auth for/i,
+  /unauthorized/i,
+  /forbidden/i
+];
+
+function isTransient(stderr) {
+  if (!stderr) return false;
+  if (NON_TRANSIENT_PATTERNS.some(re => re.test(stderr))) return false;
+  return TRANSIENT_PATTERNS.some(re => re.test(stderr));
+}
+
+function gogJson(args, { allowEmpty = false, maxAttempts = 3 } = {}) {
+  let lastErr = null;
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    const r = spawnSync('gog', ['-a', OWNER_EMAIL, '-j', '--results-only', ...args], {
+      encoding: 'utf8',
+      maxBuffer: 64 * 1024 * 1024  // some thread payloads are large
+    });
+    if (r.status === 0) {
+      const out = (r.stdout || '').trim();
+      if (!out) {
+        if (allowEmpty) return null;
+        throw new Error(`gog ${args.slice(0,4).join(' ')}... returned empty stdout`);
+      }
+      try { return JSON.parse(out); }
+      catch (e) { throw new Error(`gog non-JSON: ${out.slice(0, 200)}`); }
+    }
     const detail = (r.stderr || r.stdout || '').trim().slice(0, 500);
-    throw new Error(`gog ${args.slice(0,4).join(' ')}... failed (exit=${r.status}): ${detail}`);
+    lastErr = new Error(`gog ${args.slice(0,4).join(' ')}... failed (exit=${r.status}): ${detail}`);
+    // Auth/perm errors fail fast.
+    if (!isTransient(detail) || attempt === maxAttempts) {
+      throw lastErr;
+    }
+    // Transient: backoff (3s, 9s, 27s).
+    const delaySec = 3 * Math.pow(3, attempt - 1);
+    console.error(`[gmail-ingest] transient gog error (attempt ${attempt}/${maxAttempts}): ${detail.slice(0,180)} -- retry in ${delaySec}s`);
+    spawnSync('sleep', [String(delaySec)]);
   }
-  const out = (r.stdout || '').trim();
-  if (!out) {
-    if (allowEmpty) return null;
-    throw new Error(`gog ${args.slice(0,4).join(' ')}... returned empty stdout`);
-  }
-  try { return JSON.parse(out); }
-  catch (e) { throw new Error(`gog non-JSON: ${out.slice(0, 200)}`); }
+  throw lastErr;
 }
 
 // Parse "Display Name <email@host>" → { name, email }. Falls back when bare.

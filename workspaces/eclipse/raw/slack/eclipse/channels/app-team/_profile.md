@@ -9,7 +9,7 @@ topic: ''
 created: '2024-08-28T11:11:13-05:00'
 is_archived: false
 archived_at: null
-member_count: 16
+member_count: 15
 members:
 - slug: daniel
   slack_user_id: U04HQ1YK91Q
@@ -36,5 +36,5 @@ members:
   slack_user_id: USLACKBOT
   display_name: Slackbot
 first_seen: '2026-05-02T22:28:41-05:00'
-last_updated: '2026-05-08T14:07:30-05:00'
+last_updated: '2026-05-08T19:00:16-05:00'
 ---

@@ -11,14 +11,10 @@
             "id": "457d83f078c19362",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "wiki/entities/people/memoria-xi.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "memoria-xi"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/entities/people/memoria-xi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for memoria-xi"
+              "title": "Backlinks"
             }
           },
           {
@@ -113,12 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "wiki/entities/people/memoria-xi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from memoria-xi"
+              "title": "Outgoing links"
             }
           },
           {
@@ -156,13 +150,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "wiki/entities/people/memoria-xi.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of memoria-xi"
+              "title": "Outline"
             }
           }
         ]
@@ -185,6 +178,8 @@
   },
   "active": "457d83f078c19362",
   "lastOpenFiles": [
+    "wiki/entities/people/austin-davis-renter-showing.md",
+    "wiki/entities/people/memoria-xi.md",
     "wiki/concepts/adithya-business-portfolio.md",
     "wiki/entities/people/sai-om-uncle.md",
     "wiki/entities/people/jim-edmunds.md",
@@ -208,8 +203,6 @@
     "wiki/concepts/eclipse-labs.md",
     "wiki/concepts/klein-ct-property.md",
     "wiki/entities/groups/misc-small-groups.md",
-    "wiki/entities/groups/group-amadeus-angel.md",
-    "wiki/entities/groups/amsterdam.md",
-    "wiki/entities/groups/intervention-4-shakti.md"
+    "wiki/entities/groups/group-amadeus-angel.md"
   ]
 }

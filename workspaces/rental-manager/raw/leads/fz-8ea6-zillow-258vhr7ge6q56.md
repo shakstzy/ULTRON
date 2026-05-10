@@ -8,7 +8,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: gmail-19e0184bcd318ea6
 status_label: INQUIRED
-last_pulled_at: "2026-05-09T22:00:17.073Z"
+last_pulled_at: "2026-05-10T22:00:16.546Z"
 ---
 
 # Fz
@@ -39,6 +39,10 @@ Mostly Tuesdays and possibly Monday for Tuesday I go to school at mission colleg
 
 And for Monday if I only work at one job then I’ll Be able to go in the afternoon
 
-### 2026-05-09T22:02:43.002Z - Owner (Adithya)
+### 2026-05-09T22:02:42.000Z - Owner (Adithya)
 
 Got it. I can do Monday at 2 PM or Tuesday at 5 PM. Which one works better for you?
+
+### 2026-05-10T13:13:34.000Z - Fz Kingz
+
+I can do Tuesday 5-5:30

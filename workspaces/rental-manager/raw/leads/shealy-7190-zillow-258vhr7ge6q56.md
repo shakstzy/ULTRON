@@ -10,7 +10,7 @@ listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 1437876304138345868
 status_label: TOUR REQUESTED
 renter_us_state: CA
-last_pulled_at: "2026-05-09T22:00:23.111Z"
+last_pulled_at: "2026-05-10T22:00:16.104Z"
 ---
 
 # Shealy
@@ -51,3 +51,7 @@ I can also move out alone would it still be 1000?
 ### 2026-05-08T14:44:23.000Z - Owner (Adithya)
 
 Yeah it's 1000 for one of those rooms if it's just you. Utilities are a flat 100 on top of that. Let me know what day works for you to come take a look.
+
+### 2026-05-10T17:54:00.000Z - Shealy Cardona
+
+okay! when can i tour ?

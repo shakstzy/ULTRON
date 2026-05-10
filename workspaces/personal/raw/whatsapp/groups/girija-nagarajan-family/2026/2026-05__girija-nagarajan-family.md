@@ -1,17 +1,17 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-10T18:40:33.860379+00:00'
+ingested_at: '2026-05-10T22:00:05.041962+00:00'
 ingest_version: 1
-content_hash: 'blake3:d68a262a017a5eef4b7dca027a7adf013b792faa121f251c75ac1b887fdcc1e3'
-provider_modified_at: '2026-05-10T12:23:37-05:00'
+content_hash: 'blake3:bb6e7783d6e41d1f80fcfd056ef41aa60cec8114f4476c99ed3d3a7dd91cc693'
+provider_modified_at: '2026-05-10T16:55:00-05:00'
 contact_slug: girija-nagarajan-family
 contact_type: group
 month: 2026-05
 date_range: [2026-05-01, 2026-05-10]
-message_count: 120
+message_count: 121
 my_message_count: 0
-their_message_count: 120
+their_message_count: 121
 attachments: []
 whatsapp_chat_jid: '15104499964-1417839295@g.us'
 whatsapp_chat_kind: group
@@ -278,3 +278,4 @@ I tried to call y'all
 **11:22 — @273288869752960:** [image: image_20260510_112611.jpg]
 **12:14 — @83803502551081:** [image: image_20260510_122128.jpg]
 **12:23 — @83803502551081:** [image: image_20260510_132244.jpg]
+**16:55 — @273288869752960:** [image: image_20260510_165500.jpg]

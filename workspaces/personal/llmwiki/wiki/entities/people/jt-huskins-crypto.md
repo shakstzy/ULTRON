@@ -9,26 +9,23 @@ tags: [crypto, la, friend, trusted-contact]
 
 # JT Huskins
 
-Crypto-connected LA contact who Adithya turns to for personal advice. Described by Adithya as "typically wise w people related shit."
+Crypto-connected LA contact who Adithya turns to for personal advice. Described as "typically wise w people related shit."
 
 ## Recent state (February 2026)
 
-February 5, 1am: Adithya pings JT for life advice while depressed. JT is also going through a serious personal crisis: his dad was just diagnosed with stage 4 pancreatic cancer and he's heading to Irvine to see a doctor the next morning.
+February 5, 1am: Adithya pings JT depressed, needing life advice. JT is also in crisis: his father was just diagnosed with stage 4 pancreatic cancer and he is heading to Irvine to see a doctor.
 
-Despite that, JT commits to syncing the following afternoon. He is in LA at the same time as Adithya. Throughout the morning he updates Adithya ("driving to Irvine," "in the hospital") but stays warm and available.
-
-Adithya shares: five-month relationship ended because she was on dating apps the whole time, and four or five renters moved out of his property at once.
+Despite his own situation, JT commits to syncing the next afternoon and stays warm throughout the morning with status updates. Adithya shares: five-month relationship ended when he discovered she had been on dating apps the whole time, plus four or five renters moved out of his LA property simultaneously.
 
 ## Notable
 
-- JT's willingness to show up for Adithya while managing his own family health crisis is a strong signal of the relationship's depth.
-- Dual LA presence and crypto background — slug `jt-huskins-crypto-la` — but the relationship is personal, not transactional.
+- JT's willingness to show up while managing his father's stage 4 cancer diagnosis is a strong signal of relationship depth.
+- Both were in LA at the same time.
 
 ## Open questions
 
+- How is JT's father doing?
 - Did they actually sync that afternoon?
-- How did JT's father's cancer progress?
-- What is JT's specific crypto context?
 
 ## Backlinks
 

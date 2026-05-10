@@ -134,6 +134,10 @@ sources:
   - imessage:groups/group-ryan-score
   - imessage:groups/group-ryan-vitals
   - imessage:groups/group-shervin-xanos
+  - imessage:groups/group-amadeus-angel-austin
+  - imessage:groups/group-amadeus-angel-austin-2
+  - imessage:groups/group-caitlin-keith-ryan-2
+  - imessage:groups/group-caitlin-ryan
 tags: [groups, thin, miscellaneous, consolidated]
 ---
 
@@ -310,6 +314,10 @@ Multiple overlapping groups with Adithya's family attending to Arya (his brother
 - **group-rushil-saif** (Jan 2026, 1 msg): Adithya sends a file at 7am.
 - **group-ryan-score** variant — see music section.
 - **group-shervin-xanos** (Jun 2025, 3 msgs): Adithya shares an Instagram reel to Shervin and Xanos.
+- **group-amadeus-angel-austin** (Oct 2025, 28 msgs): Klein Ct household group (Amadeus, Angel, Zubair, Evan, Adithya). Household logistics — clothes in dryer, oven left on, Zubair sick with gum infection and no medical aid, mail sorting.
+- **group-amadeus-angel-austin-2** (Aug 2025, 8 msgs): Same household. Adithya calls out trash and kitchen mess, asks everyone to clean their side, Evan confirms.
+- **group-caitlin-keith-ryan-2** (Dec 2024, 10 msgs): Adithya drops 10 audio files into the Prescription Songs group — bugatti, loverboy, affection, stunna, cinnamon, levels, champagne, someone else, motion, vader. All one-way; just track delivery.
+- **group-caitlin-ryan** (Nov 2025, 5 msgs): Late-night session drop. Adithya sends 5 tracks (Your Fool, Stop, Poppin Bottles, No More, I Luv It When It Hurts). Caitlin: "i really like this oneeee / youtube beat?" Two-person sub-thread off main Prescription chat.
 
 ## Open questions
 

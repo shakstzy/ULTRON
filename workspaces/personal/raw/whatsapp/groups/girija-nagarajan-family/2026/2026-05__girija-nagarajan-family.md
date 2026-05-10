@@ -1,17 +1,17 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-10T05:00:00.372702+00:00'
+ingested_at: '2026-05-10T06:30:05.643390+00:00'
 ingest_version: 1
-content_hash: 'blake3:1a9d238a8db6f13116a8cd43522c97f32d080af83ec18a2f9d0e9a311f3be561'
-provider_modified_at: '2026-05-09T23:52:17-05:00'
+content_hash: 'blake3:0209cd4c771e53eed6cc41c12dbc42a1f8c2a600f3b204b056b9ca650e560127'
+provider_modified_at: '2026-05-10T01:29:03-05:00'
 contact_slug: girija-nagarajan-family
 contact_type: group
 month: 2026-05
-date_range: [2026-05-01, 2026-05-09]
-message_count: 110
+date_range: [2026-05-01, 2026-05-10]
+message_count: 112
 my_message_count: 0
-their_message_count: 110
+their_message_count: 112
 attachments: []
 whatsapp_chat_jid: '15104499964-1417839295@g.us'
 whatsapp_chat_kind: group
@@ -254,3 +254,8 @@ I tried to call y'all
 **23:29 — @110458136715502:** [image: image_20260509_232917.jpg]
 **23:30 — @110458136715502:** [image: image_20260509_233040.jpg]
 **23:52 — @161765782458372:** [image: image_20260509_235217.jpg]
+
+## 2026-05-10 (Sunday)
+
+**01:25 — @110458136715502:** I miss you Amma even you lived your life with for most time. Pray you love your kids and bless all.kannan.n
+**01:29 — @110458136715502:** I miss you Amma even you lived your life with me  for most time. Pray you love your kids and bless all.kannan.n

@@ -1,17 +1,17 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-10T02:00:06.059062+00:00'
+ingested_at: '2026-05-10T05:00:00.362325+00:00'
 ingest_version: 1
-content_hash: 'blake3:4e10b25e6431d24014294bf24bf6e731caa6f47b5a2b188c8bafb45a1b8951c3'
-provider_modified_at: '2026-05-09T20:47:24-05:00'
+content_hash: 'blake3:234b38df65338add3b20e4ebe80a438cbb04ee203b25ff8de94ddefbcc3c9fdf'
+provider_modified_at: '2026-05-09T23:33:29-05:00'
 contact_slug: baby-medhas-bhaktas
 contact_type: group
 month: 2026-05
 date_range: [2026-05-01, 2026-05-09]
-message_count: 25
+message_count: 26
 my_message_count: 0
-their_message_count: 25
+their_message_count: 26
 attachments: []
 whatsapp_chat_jid: '120363421666841901@g.us'
 whatsapp_chat_kind: group
@@ -59,3 +59,4 @@ Of course, Medha was the star of today's party for Reysh💕🙏
 **20:47 — @273288869752960:** Yes, would love to catch up before y'all leave. 
 Does tomorrow evening work?
 **20:47 — @273288869752960:** Happy first ever Mother's Day to @161173110525994
+**23:33 — @161173110525994:** Thank you so much Ambal!🤗 sorry we missed you when you came home! Let’s meet tomorrow! Wish you a very happy Mother’s Day too!!❤️

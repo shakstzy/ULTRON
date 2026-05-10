@@ -1,9 +1,9 @@
 ---
 source: discord
 workspace: personal
-ingested_at: '2026-05-10T05:03:28.340Z'
+ingested_at: '2026-05-10T11:09:23.203Z'
 ingest_version: 1
-content_hash: sha256:5a9ce11b38cecf4726ac5fad70bfcfd795f25d13bd20e7550dca21e892352ba1
+content_hash: sha256:8281e93bb25119a15599b80929f6a520b28e6f64664a0003ee4ac2e4be56db43
 provider_modified_at: '2026-01-06T02:27:05.877Z'
 contact_slug: shva-shvalockedin
 contact_type: individual
@@ -18,13 +18,13 @@ attachments:
     filename: content.png
     url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1456463673106239668/content.png?ex=6a0134ff&is=69ffe37f&hm=8099ccb2c3c46544bf4dbc54f4ca63ddbe0adbb2513100a6e1ba878c56c113e2&'
     size: 793361
-    description: 'A six-panel promotional graphic detailing the features of a charisma-building web application called Approach AI.'
+    description: 'A six-panel promotional graphic outlining the features of Approach AI, a web app for building social confidence.'
   - message_id: '1456834776504860928'
     kind: image
     filename: image.png
     url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1456834776295018658/image.png?ex=6a013d1d&is=69ffeb9d&hm=8fc60cd85d50e37342865f86c11fe0749263b842eb2f34de209adb3f7714957e&'
     size: 482087
-    description: 'An essay about a high school robotics team responding to a prompt about community.'
+    description: null
 discord_channel_id: '1292220510603575366'
 discord_channel_kind: dm
 discord_recipient_id: '1285363977030729738'
@@ -42,7 +42,7 @@ superseded_by: null
 **19:43 — SHVA:** https://www.instagram.com/p/DS_WdDfjRq4/
 **19:45 — SHVA:** https://www.producthunt.com/p/general/introducing-approach-ai-the-1-web-app-to-build-real-world-charisma
 **19:46 — SHVA:** 
-↳ image: content.png (775 KB) — "A six-panel promotional graphic detailing the features of a charisma-building web application called Approach AI." — https://cdn.discordapp.com/attachments/1292220510603575366/1456463673106239668/content.png?ex=6a0134ff&is=69ffe37f&hm=8099ccb2c3c46544bf4dbc54f4ca63ddbe0adbb2513100a6e1ba878c56c113e2&
+↳ image: content.png (775 KB) — "A six-panel promotional graphic outlining the features of Approach AI, a web app for building social confidence." — https://cdn.discordapp.com/attachments/1292220510603575366/1456463673106239668/content.png?ex=6a0134ff&is=69ffe37f&hm=8099ccb2c3c46544bf4dbc54f4ca63ddbe0adbb2513100a6e1ba878c56c113e2&
 **20:39 — SHVA:** https://docs.google.com/document/d/1uUDslzz6zu_Dw9bZ3x6QmGGNKOBNR6nGNNF1l6W-Jcw/edit?tab=t.xar9dd97igb
 **22:37 — SHVA:** https://docs.google.com/document/d/123yzlpi3ZyxpIZnoIXLgHMUSEDFb1nCNwCyURoWkjs8/edit?usp=drivesdk
 **22:37 — SHVA:** https://docs.google.com/document/d/1sxQ_r3YSsfIwRH5dUzMY2Z5Ugq8pwnINBJXfcL5f8H0/edit?usp=drivesdk
@@ -115,7 +115,7 @@ State science fair finalist; built AI + Raman spectroscopy system for early skin
 **19:46 — me:** listen and reduce the haas essay down to 350 and use it
 **20:01 — me:** https://walterwrites.ai/
 **20:21 — me:** 
-↳ image: image.png (471 KB) — "An essay about a high school robotics team responding to a prompt about community." — https://cdn.discordapp.com/attachments/1292220510603575366/1456834776295018658/image.png?ex=6a013d1d&is=69ffeb9d&hm=8fc60cd85d50e37342865f86c11fe0749263b842eb2f34de209adb3f7714957e&
+↳ image: image.png (471 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1456834776295018658/image.png?ex=6a013d1d&is=69ffeb9d&hm=8fc60cd85d50e37342865f86c11fe0749263b842eb2f34de209adb3f7714957e&
 **20:21 — me:** heres a version under 350 that speaks about community
 **20:34 — SHVA:** https://docs.google.com/spreadsheets/d/10Z4k6HEDw81qgofP38dbS-0cb2T5p5EtPCKzrEdJGLc/edit?gid=1383438644#gid=1383438644
 

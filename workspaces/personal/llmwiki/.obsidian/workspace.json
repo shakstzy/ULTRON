@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "234f738637cbfeea",
+        "id": "73df710e00b06c17",
         "type": "tabs",
         "children": [
           {
-            "id": "457d83f078c19362",
+            "id": "cf3b508f78eae225",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -176,8 +176,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "457d83f078c19362",
+  "active": "cf3b508f78eae225",
   "lastOpenFiles": [
+    "wiki/entities/people/amritha.md",
     "wiki/concepts/sixth-street-shooting-2026-03-01.md",
     "wiki/entities/people/savitha-hinge-dallas.md",
     "wiki/entities/people/yolanda-hinge-austin.md",
@@ -202,7 +203,6 @@
     "wiki/entities/people/riya-hinge-austin-nyc.md",
     "wiki/entities/people/sanaya-hinge-dallas.md",
     "wiki/entities/people/samya-hinge-philly.md",
-    "wiki/entities/people/amru-hinge-dallas.md",
-    "wiki/entities/people/anju-hinge-dallas.md"
+    "wiki/entities/people/amru-hinge-dallas.md"
   ]
 }

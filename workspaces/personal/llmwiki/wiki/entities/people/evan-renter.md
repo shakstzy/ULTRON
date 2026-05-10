@@ -35,7 +35,7 @@ This is a substantive piece of feedback Adithya received. Whether or not Adithya
 ## Notable
 
 - Music collab: there's a song they made together, name change pending (March 2026 message).
-- The "Austin Davis ordeal" referenced in December is presumably about [[wiki/entities/people/austin-davis-renter-showing]], a separate renter-related incident worth its own page.
+- The "Austin Davis ordeal" referenced in December is presumably about [[wiki/entities/people/austin-davis]], a separate renter-related incident worth its own page.
 
 ## Open questions
 

@@ -6,7 +6,7 @@ city: "austin"
 match_id: "zAhMACjIzNDUxNjIzMzUIe-K7hQAAAAAgW81CABZjfQDSbuH-PkKtSGQ-ra1r73xo1WwhZrRy09Y"
 person_id: null
 phone: null
-status: "expired"
+status: "new"
 expires_at: "2026-05-04T20:17:34.015Z"
 first_seen: "2026-05-04T02:31:04.801Z"
 last_activity: "2026-05-04T02:31:04.802Z"

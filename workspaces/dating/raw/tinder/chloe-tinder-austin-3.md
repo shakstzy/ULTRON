@@ -9,14 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-10T04:03:29.218Z"
 last_activity: "2026-05-10T04:03:29.218Z"
-last_scrape: "2026-05-10T04:03:29.218Z"
+last_scrape: "2026-05-10T22:05:11.395Z"
 previous_slugs: []
+last_profile_diff: "2026-05-10T22:05:11.395Z"
 ---
 
 ## Profile
 
 - age: 22
-- distance_mi: 4
+- distance_mi: 178
 - height_cm: 168
 - bio: "I like to party and have fun"
 - looking_for: "Still figuring it out · Open to exploring"
@@ -26,15 +27,44 @@ previous_slugs: []
 - interests: Spotify, Outdoors, Hiking, Rock music, Live Music, Aquarium, Bars, Foodie, Marvel, Tattoos
 - basics.zodiac: "Cancer"
 - basics.education: "Bachelors"
-- lifestyle.pets: "Dog"
+- basics.family_plans: "I want children"
+- basics.communication_style: "Better in person"
+- lifestyle.pets: "All the pets"
 - lifestyle.drinking: "Most Nights"
 - lifestyle.smoking: "Smoker"
-- lifestyle.cannabis: "Occasionally"
-- photos_count: 6
+- lifestyle.cannabis: "Never"
+- photos_count: 8
 
 ## Profile changes
 
-(none yet)
+```json profile-diff
+{
+  "ts": "2026-05-10T22:05:11.395Z",
+  "added": {
+    "basics.family_plans": "I want children",
+    "basics.communication_style": "Better in person"
+  },
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 4,
+      "to": 178
+    },
+    "photos_count": {
+      "from": 6,
+      "to": 8
+    },
+    "lifestyle.pets": {
+      "from": "Dog",
+      "to": "All the pets"
+    },
+    "lifestyle.cannabis": {
+      "from": "Occasionally",
+      "to": "Never"
+    }
+  }
+}
+```
 
 ## Conversation
 

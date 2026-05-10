@@ -1,17 +1,16 @@
 ---
-title: Brandon (CO Beats LA)
+title: Brandon (Co Beats)
 type: entity
 last_updated: 2026-05-09
 sources:
-  - imessage:individuals/brandon-co-beats-la
-tags: [music, la, light]
+  - imessage:individuals/brandon-co-beats-la (2026-04)
+tags: [music, la, beats]
 ---
 
-# Brandon (CO Beats)
+# Brandon (Co Beats)
 
-LA music contact. Light traffic. April 2026 he sends a Variety article on a Marvin Acuna TEDx event at Beverly Grove. Possibly an industry-event share.
+LA-based contact in the beats/music space. Sent Adithya a Variety article about Marvin Acuna's TEDx Beverly Grove event in April 2026.
 
-## Open questions
+## Backlinks
 
-- "CO" prefix in slug — Colorado, Cocoa, company, label name?
-- What's their working relationship?
+- [[wiki/concepts/music-collaborators-2026]]

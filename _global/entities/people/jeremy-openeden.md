@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.801192+00:00
+ingested_at: 2026-05-10T08:00:07.094878+00:00
 ingest_version: 1
 content_hash: blake2b:f5380b557eea2824d32a7a06633ef12d
-provider_modified_at: 2026-05-09T08:00:03.801192+00:00
+provider_modified_at: 2026-05-10T08:00:07.094878+00:00
 
 title: Jeremy | OpenEden
 slug: jeremy-openeden
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.801192+00:00
+last_synced: 2026-05-10T08:00:07.094878+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.764829+00:00
+ingested_at: 2026-05-10T08:00:07.074525+00:00
 ingest_version: 1
 content_hash: blake2b:f8aac3c4704654679f753cd183a48feb
-provider_modified_at: 2026-05-09T08:00:03.764829+00:00
+provider_modified_at: 2026-05-10T08:00:07.074525+00:00
 
 title: Vee Hinge Austin
 slug: vee-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18315855023"]
   slack: []
-last_synced: 2026-05-09T08:00:03.764829+00:00
+last_synced: 2026-05-10T08:00:07.074525+00:00
 global: true
 ---
 

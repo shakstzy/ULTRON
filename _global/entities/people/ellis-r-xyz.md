@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.586846+00:00
+ingested_at: 2026-05-10T08:00:06.962109+00:00
 ingest_version: 1
 content_hash: blake2b:962ca66cd92939910e20b3d42427f643
-provider_modified_at: 2026-05-09T08:00:03.586846+00:00
+provider_modified_at: 2026-05-10T08:00:06.962109+00:00
 
 title: Ellis | R.xyz
 slug: ellis-r-xyz
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 310-890-9517"]
   slack: []
-last_synced: 2026-05-09T08:00:03.586846+00:00
+last_synced: 2026-05-10T08:00:06.962109+00:00
 global: true
 ---
 

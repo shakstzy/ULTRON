@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.778915+00:00
+ingested_at: 2026-05-10T08:00:07.083339+00:00
 ingest_version: 1
 content_hash: blake2b:a5c40ba93fe67e6b0fc154b8dc91c0c7
-provider_modified_at: 2026-05-09T08:00:03.778915+00:00
+provider_modified_at: 2026-05-10T08:00:07.083339+00:00
 
 title: Pedro UC Berkeley
 slug: pedro-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(408) 826-1243"]
   slack: []
-last_synced: 2026-05-09T08:00:03.778915+00:00
+last_synced: 2026-05-10T08:00:07.083339+00:00
 global: true
 ---
 

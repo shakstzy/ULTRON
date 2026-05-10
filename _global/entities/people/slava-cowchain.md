@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.695743+00:00
+ingested_at: 2026-05-10T08:00:07.036005+00:00
 ingest_version: 1
 content_hash: blake2b:83a56b886861f2847889b4ec9b0b7938
-provider_modified_at: 2026-05-09T08:00:03.695743+00:00
+provider_modified_at: 2026-05-10T08:00:07.036005+00:00
 
 title: Slava | Cowchain
 slug: slava-cowchain
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.695743+00:00
+last_synced: 2026-05-10T08:00:07.036005+00:00
 global: true
 ---
 

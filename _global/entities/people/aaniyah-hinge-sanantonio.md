@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.850457+00:00
+ingested_at: 2026-05-10T08:00:07.123336+00:00
 ingest_version: 1
 content_hash: blake2b:343a2f3fc92569d871bc63346976117b
-provider_modified_at: 2026-05-09T08:00:03.850457+00:00
+provider_modified_at: 2026-05-10T08:00:07.123336+00:00
 
 title: Aaniyah Hinge SanAntonio
 slug: aaniyah-hinge-sanantonio
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18324416927"]
   slack: []
-last_synced: 2026-05-09T08:00:03.850457+00:00
+last_synced: 2026-05-10T08:00:07.123336+00:00
 global: true
 ---
 

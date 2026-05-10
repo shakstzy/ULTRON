@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.815576+00:00
+ingested_at: 2026-05-10T08:00:07.103316+00:00
 ingest_version: 1
 content_hash: blake2b:fac30cb8a32689d153c6fee6a3105afc
-provider_modified_at: 2026-05-09T08:00:03.815576+00:00
+provider_modified_at: 2026-05-10T08:00:07.103316+00:00
 
 title: Vish Valentino Bay Area
 slug: vish-valentino-bay-area
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19258009397"]
   slack: []
-last_synced: 2026-05-09T08:00:03.815576+00:00
+last_synced: 2026-05-10T08:00:07.103316+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.717697+00:00
+ingested_at: 2026-05-10T08:00:07.048071+00:00
 ingest_version: 1
 content_hash: blake2b:dd208ebac325bca0951139ad8e2fce5e
-provider_modified_at: 2026-05-09T08:00:03.717697+00:00
+provider_modified_at: 2026-05-10T08:00:07.048071+00:00
 
 title: Oliver UPenn
 slug: oliver-upenn
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 469-309-8842"]
   slack: []
-last_synced: 2026-05-09T08:00:03.717697+00:00
+last_synced: 2026-05-10T08:00:07.048071+00:00
 global: true
 ---
 

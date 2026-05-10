@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.865842+00:00
+ingested_at: 2026-05-10T08:00:07.132174+00:00
 ingest_version: 1
 content_hash: blake2b:a5c5e215b08d1daa1c70d29062d3146f
-provider_modified_at: 2026-05-09T08:00:03.865842+00:00
+provider_modified_at: 2026-05-10T08:00:07.132174+00:00
 
 title: Joe Rasberry Pi
 slug: joe-rasberry-pi
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(302) 561-5215"]
   slack: []
-last_synced: 2026-05-09T08:00:03.865842+00:00
+last_synced: 2026-05-10T08:00:07.132174+00:00
 global: true
 ---
 

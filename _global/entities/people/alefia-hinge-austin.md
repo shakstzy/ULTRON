@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.650571+00:00
+ingested_at: 2026-05-10T08:00:07.007297+00:00
 ingest_version: 1
 content_hash: blake2b:4450420b5163dca23d33166beee51ce8
-provider_modified_at: 2026-05-09T08:00:03.650571+00:00
+provider_modified_at: 2026-05-10T08:00:07.007297+00:00
 
 title: Alefia Hinge Austin
 slug: alefia-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12817349064"]
   slack: []
-last_synced: 2026-05-09T08:00:03.650571+00:00
+last_synced: 2026-05-10T08:00:07.007297+00:00
 global: true
 ---
 

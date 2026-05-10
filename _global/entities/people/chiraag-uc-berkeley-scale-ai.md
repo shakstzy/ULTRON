@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.826186+00:00
+ingested_at: 2026-05-10T08:00:07.108908+00:00
 ingest_version: 1
 content_hash: blake2b:b55d3e48c13eb25c48a79dd106b57932
-provider_modified_at: 2026-05-09T08:00:03.826186+00:00
+provider_modified_at: 2026-05-10T08:00:07.108908+00:00
 
 title: Chiraag UC Berkeley Scale AI
 slug: chiraag-uc-berkeley-scale-ai
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16508619598"]
   slack: []
-last_synced: 2026-05-09T08:00:03.826186+00:00
+last_synced: 2026-05-10T08:00:07.108908+00:00
 global: true
 ---
 

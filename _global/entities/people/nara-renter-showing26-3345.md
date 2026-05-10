@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.581470+00:00
+ingested_at: 2026-05-10T08:00:06.958962+00:00
 ingest_version: 1
 content_hash: blake2b:a09afefd4ebab5fb982a476524cfb57d
-provider_modified_at: 2026-05-09T08:00:03.581470+00:00
+provider_modified_at: 2026-05-10T08:00:06.958962+00:00
 
 title: Nara Renter Showing26
 slug: nara-renter-showing26-3345
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.581470+00:00
+last_synced: 2026-05-10T08:00:06.958962+00:00
 global: true
 ---
 

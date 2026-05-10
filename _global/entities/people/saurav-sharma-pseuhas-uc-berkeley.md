@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.801375+00:00
+ingested_at: 2026-05-10T08:00:07.094967+00:00
 ingest_version: 1
 content_hash: blake2b:a45a7f1e8ab5315d62e0e0439ab798fb
-provider_modified_at: 2026-05-09T08:00:03.801375+00:00
+provider_modified_at: 2026-05-10T08:00:07.094967+00:00
 
 title: Saurav Sharma Pseuhas UC Berkeley
 slug: saurav-sharma-pseuhas-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14088870594"]
   slack: []
-last_synced: 2026-05-09T08:00:03.801375+00:00
+last_synced: 2026-05-10T08:00:07.094967+00:00
 global: true
 ---
 

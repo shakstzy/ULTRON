@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.565604+00:00
+ingested_at: 2026-05-10T08:00:06.948001+00:00
 ingest_version: 1
 content_hash: blake2b:32e7cf37c1347fe4a6f9a6249115702e
-provider_modified_at: 2026-05-09T08:00:03.565604+00:00
+provider_modified_at: 2026-05-10T08:00:06.948001+00:00
 
 title: sarah-davis-austinisd
 slug: sarah-davis-austinisd
@@ -15,7 +15,7 @@ identifiers:
   email: ["sarah.davis@austinisd.org"]
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.565604+00:00
+last_synced: 2026-05-10T08:00:06.948001+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.564141+00:00
+ingested_at: 2026-05-10T08:00:06.946775+00:00
 ingest_version: 1
 content_hash: blake2b:cdda0ace6531cf3c1695890f7e3f8a85
-provider_modified_at: 2026-05-09T08:00:03.564141+00:00
+provider_modified_at: 2026-05-10T08:00:06.946775+00:00
 
 title: Diya NYC
 slug: diya-nyc-9a73
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 (732) 939-9395"]
   slack: []
-last_synced: 2026-05-09T08:00:03.564141+00:00
+last_synced: 2026-05-10T08:00:06.946775+00:00
 global: true
 ---
 

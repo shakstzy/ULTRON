@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.827628+00:00
+ingested_at: 2026-05-10T08:00:07.109738+00:00
 ingest_version: 1
 content_hash: blake2b:ddff11108fc7cd1a83af1b72795d40db
-provider_modified_at: 2026-05-09T08:00:03.827628+00:00
+provider_modified_at: 2026-05-10T08:00:07.109738+00:00
 
 title: Sahiba NYC
 slug: sahiba-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14253007353"]
   slack: []
-last_synced: 2026-05-09T08:00:03.827628+00:00
+last_synced: 2026-05-10T08:00:07.109738+00:00
 global: true
 ---
 

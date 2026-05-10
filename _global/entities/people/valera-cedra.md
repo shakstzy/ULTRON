@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.676775+00:00
+ingested_at: 2026-05-10T08:00:07.025145+00:00
 ingest_version: 1
 content_hash: blake2b:c3a6a41013fd6f4bb0982c0e1b8cd30a
-provider_modified_at: 2026-05-09T08:00:03.676775+00:00
+provider_modified_at: 2026-05-10T08:00:07.025145+00:00
 
 title: Valera | Cedra
 slug: valera-cedra
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.676775+00:00
+last_synced: 2026-05-10T08:00:07.025145+00:00
 global: true
 ---
 

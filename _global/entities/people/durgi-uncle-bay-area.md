@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.862330+00:00
+ingested_at: 2026-05-10T08:00:07.130090+00:00
 ingest_version: 1
 content_hash: blake2b:f4834b9ab5840a9009ab006831f9d249
-provider_modified_at: 2026-05-09T08:00:03.862330+00:00
+provider_modified_at: 2026-05-10T08:00:07.130090+00:00
 
 title: Durgi Uncle Bay Area
 slug: durgi-uncle-bay-area
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 (408) 306-6206"]
   slack: []
-last_synced: 2026-05-09T08:00:03.862330+00:00
+last_synced: 2026-05-10T08:00:07.130090+00:00
 global: true
 ---
 

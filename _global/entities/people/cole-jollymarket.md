@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.798346+00:00
+ingested_at: 2026-05-10T08:00:07.093407+00:00
 ingest_version: 1
 content_hash: blake2b:de0cc98172ba13da06af20f772739d67
-provider_modified_at: 2026-05-09T08:00:03.798346+00:00
+provider_modified_at: 2026-05-10T08:00:07.093407+00:00
 
 title: Cole | JollyMarket
 slug: cole-jollymarket
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 951-595-9452"]
   slack: []
-last_synced: 2026-05-09T08:00:03.798346+00:00
+last_synced: 2026-05-10T08:00:07.093407+00:00
 global: true
 ---
 

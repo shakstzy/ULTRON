@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.849634+00:00
+ingested_at: 2026-05-10T08:00:07.122844+00:00
 ingest_version: 1
 content_hash: blake2b:c4deb1c79bd3244ebc5019f21e2e0db6
-provider_modified_at: 2026-05-09T08:00:03.849634+00:00
+provider_modified_at: 2026-05-10T08:00:07.122844+00:00
 
 title: Natasha Hinge LA
 slug: natasha-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16572227607"]
   slack: []
-last_synced: 2026-05-09T08:00:03.849634+00:00
+last_synced: 2026-05-10T08:00:07.122844+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.585099+00:00
+ingested_at: 2026-05-10T08:00:06.960838+00:00
 ingest_version: 1
 content_hash: blake2b:bf24e9cbdbd8d3dd232049255cc517f6
-provider_modified_at: 2026-05-09T08:00:03.585099+00:00
+provider_modified_at: 2026-05-10T08:00:06.960838+00:00
 
 title: PlentyOfFish
 slug: plentyoffish
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15107304185"]
   slack: []
-last_synced: 2026-05-09T08:00:03.585099+00:00
+last_synced: 2026-05-10T08:00:06.960838+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.776002+00:00
+ingested_at: 2026-05-10T08:00:07.081986+00:00
 ingest_version: 1
 content_hash: blake2b:90f44145d727f5925de81643348d1382
-provider_modified_at: 2026-05-09T08:00:03.776002+00:00
+provider_modified_at: 2026-05-10T08:00:07.081986+00:00
 
 title: Arka Hinge LA
 slug: arka-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19515086427"]
   slack: []
-last_synced: 2026-05-09T08:00:03.776002+00:00
+last_synced: 2026-05-10T08:00:07.081986+00:00
 global: true
 ---
 

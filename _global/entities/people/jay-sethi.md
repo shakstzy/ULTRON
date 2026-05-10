@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.660677+00:00
+ingested_at: 2026-05-10T08:00:07.015230+00:00
 ingest_version: 1
 content_hash: blake2b:609a155f7caa833a2714d7078567b01a
-provider_modified_at: 2026-05-09T08:00:03.660677+00:00
+provider_modified_at: 2026-05-10T08:00:07.015230+00:00
 
 title: Jay Sethi
 slug: jay-sethi
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15103877874"]
   slack: []
-last_synced: 2026-05-09T08:00:03.660677+00:00
+last_synced: 2026-05-10T08:00:07.015230+00:00
 global: true
 ---
 

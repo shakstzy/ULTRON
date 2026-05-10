@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.925837+00:00
+ingested_at: 2026-05-10T08:00:07.166256+00:00
 ingest_version: 1
 content_hash: blake2b:3c847d5f8807f84987dc5c062e82ab2e
-provider_modified_at: 2026-05-09T08:00:03.925837+00:00
+provider_modified_at: 2026-05-10T08:00:07.166256+00:00
 
 title: Diego | Yellow
 slug: diego-yellow
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.925837+00:00
+last_synced: 2026-05-10T08:00:07.166256+00:00
 global: true
 ---
 

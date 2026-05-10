@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.882518+00:00
+ingested_at: 2026-05-10T08:00:07.141957+00:00
 ingest_version: 1
 content_hash: blake2b:9fddbf50a256c03b2e44b4339b77d5f1
-provider_modified_at: 2026-05-09T08:00:03.882518+00:00
+provider_modified_at: 2026-05-10T08:00:07.141957+00:00
 
 title: Roxanne Hinge LA
 slug: roxanne-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13237605527"]
   slack: []
-last_synced: 2026-05-09T08:00:03.882518+00:00
+last_synced: 2026-05-10T08:00:07.141957+00:00
 global: true
 ---
 

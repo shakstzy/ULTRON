@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.698330+00:00
+ingested_at: 2026-05-10T08:00:07.037544+00:00
 ingest_version: 1
 content_hash: blake2b:b7cfdc3c7ee5347ecf8649988141fe5b
-provider_modified_at: 2026-05-09T08:00:03.698330+00:00
+provider_modified_at: 2026-05-10T08:00:07.037544+00:00
 
 title: Nikhil Lyles LASA
 slug: nikhil-lyles-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: ["nikhil.lyles@gmail.com"]
   phone: ["+15125865769"]
   slack: []
-last_synced: 2026-05-09T08:00:03.698330+00:00
+last_synced: 2026-05-10T08:00:07.037544+00:00
 global: true
 ---
 

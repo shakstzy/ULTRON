@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.807374+00:00
+ingested_at: 2026-05-10T08:00:07.098906+00:00
 ingest_version: 1
 content_hash: blake2b:baa08e122aa408bbbad16390409baa40
-provider_modified_at: 2026-05-09T08:00:03.807374+00:00
+provider_modified_at: 2026-05-10T08:00:07.098906+00:00
 
 title: Varun Nair UC Berkeley
 slug: varun-nair-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 (510) 717-4587"]
   slack: []
-last_synced: 2026-05-09T08:00:03.807374+00:00
+last_synced: 2026-05-10T08:00:07.098906+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.576294+00:00
+ingested_at: 2026-05-10T08:00:06.955030+00:00
 ingest_version: 1
 content_hash: blake2b:1a23965026faab486797d227d1ae353a
-provider_modified_at: 2026-05-09T08:00:03.576294+00:00
+provider_modified_at: 2026-05-10T08:00:06.955030+00:00
 
 title: Audrey Hinge LA
 slug: audrey-hinge-la-08d5
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17473332366"]
   slack: []
-last_synced: 2026-05-09T08:00:03.576294+00:00
+last_synced: 2026-05-10T08:00:06.955030+00:00
 global: true
 ---
 

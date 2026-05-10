@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.902113+00:00
+ingested_at: 2026-05-10T08:00:07.152094+00:00
 ingest_version: 1
 content_hash: blake2b:151fe289beaccf482368b3ec04541caf
-provider_modified_at: 2026-05-09T08:00:03.902113+00:00
+provider_modified_at: 2026-05-10T08:00:07.152094+00:00
 
 title: Prakash Srivastava
 slug: prakash-srivastava
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.902113+00:00
+last_synced: 2026-05-10T08:00:07.152094+00:00
 global: true
 ---
 

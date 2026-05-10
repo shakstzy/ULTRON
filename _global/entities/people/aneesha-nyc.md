@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.892066+00:00
+ingested_at: 2026-05-10T08:00:07.147195+00:00
 ingest_version: 1
 content_hash: blake2b:8ffbe87c6c00b1d9979188d3beec13ad
-provider_modified_at: 2026-05-09T08:00:03.892066+00:00
+provider_modified_at: 2026-05-10T08:00:07.147195+00:00
 
 title: Aneesha NYC
 slug: aneesha-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19144683871"]
   slack: []
-last_synced: 2026-05-09T08:00:03.892066+00:00
+last_synced: 2026-05-10T08:00:07.147195+00:00
 global: true
 ---
 

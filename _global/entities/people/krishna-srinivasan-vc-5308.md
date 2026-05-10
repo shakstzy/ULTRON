@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.579889+00:00
+ingested_at: 2026-05-10T08:00:06.957783+00:00
 ingest_version: 1
 content_hash: blake2b:b6424c991bf7538ec1487aa10993ccc6
-provider_modified_at: 2026-05-09T08:00:03.579889+00:00
+provider_modified_at: 2026-05-10T08:00:06.957783+00:00
 
 title: Krishna Srinivasan VC
 slug: krishna-srinivasan-vc-5308
@@ -15,7 +15,7 @@ identifiers:
   email: ["krishna@liveoakvp.com", "krishna@liveoakvp.com"]
   phone: ["+15126325686"]
   slack: []
-last_synced: 2026-05-09T08:00:03.579889+00:00
+last_synced: 2026-05-10T08:00:06.957783+00:00
 global: true
 ---
 

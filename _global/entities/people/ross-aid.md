@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.754401+00:00
+ingested_at: 2026-05-10T08:00:07.069853+00:00
 ingest_version: 1
 content_hash: blake2b:caa3e289fe247ca4ece4c8682d5043b1
-provider_modified_at: 2026-05-09T08:00:03.754401+00:00
+provider_modified_at: 2026-05-10T08:00:07.069853+00:00
 
 title: Ross Aid
 slug: ross-aid
@@ -15,7 +15,7 @@ identifiers:
   email: ["RossFinAid@umich.edu"]
   phone: ["(734) 764-2129", "(734) 764-5139"]
   slack: []
-last_synced: 2026-05-09T08:00:03.754401+00:00
+last_synced: 2026-05-10T08:00:07.069853+00:00
 global: true
 ---
 

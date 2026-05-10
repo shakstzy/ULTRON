@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.911343+00:00
+ingested_at: 2026-05-10T08:00:07.158261+00:00
 ingest_version: 1
 content_hash: blake2b:208728e58d8b21e0f523c80866b59df4
-provider_modified_at: 2026-05-09T08:00:03.911343+00:00
+provider_modified_at: 2026-05-10T08:00:07.158261+00:00
 
 title: YVS Village LA
 slug: yvs-village-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18186439352"]
   slack: []
-last_synced: 2026-05-09T08:00:03.911343+00:00
+last_synced: 2026-05-10T08:00:07.158261+00:00
 global: true
 ---
 

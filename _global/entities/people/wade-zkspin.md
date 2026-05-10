@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.759576+00:00
+ingested_at: 2026-05-10T08:00:07.072275+00:00
 ingest_version: 1
 content_hash: blake2b:d45faf06960bd64aea76b991e0547f69
-provider_modified_at: 2026-05-09T08:00:03.759576+00:00
+provider_modified_at: 2026-05-10T08:00:07.072275+00:00
 
 title: Wade | zkSpin
 slug: wade-zkspin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+86 130 6110 1022"]
   slack: []
-last_synced: 2026-05-09T08:00:03.759576+00:00
+last_synced: 2026-05-10T08:00:07.072275+00:00
 global: true
 ---
 

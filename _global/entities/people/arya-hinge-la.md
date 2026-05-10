@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.696849+00:00
+ingested_at: 2026-05-10T08:00:07.036578+00:00
 ingest_version: 1
 content_hash: blake2b:eaab6f876f8b6c616a36989916f93422
-provider_modified_at: 2026-05-09T08:00:03.696849+00:00
+provider_modified_at: 2026-05-10T08:00:07.036578+00:00
 
 title: Arya Hinge LA
 slug: arya-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15106020499"]
   slack: []
-last_synced: 2026-05-09T08:00:03.696849+00:00
+last_synced: 2026-05-10T08:00:07.036578+00:00
 global: true
 ---
 

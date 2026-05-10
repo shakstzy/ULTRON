@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.676296+00:00
+ingested_at: 2026-05-10T08:00:07.024639+00:00
 ingest_version: 1
 content_hash: blake2b:b7534dfcf71340e989e49ce703514487
-provider_modified_at: 2026-05-09T08:00:03.676296+00:00
+provider_modified_at: 2026-05-10T08:00:07.024639+00:00
 
 title: Ace Brooklyn Crypto Meetup
 slug: ace-brooklyn-crypto-meetup
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19295499499"]
   slack: []
-last_synced: 2026-05-09T08:00:03.676296+00:00
+last_synced: 2026-05-10T08:00:07.024639+00:00
 global: true
 ---
 

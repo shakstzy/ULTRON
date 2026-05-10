@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.631167+00:00
+ingested_at: 2026-05-10T08:00:06.994713+00:00
 ingest_version: 1
 content_hash: blake2b:adc7edf7bc97ac10ba1f600e3ae098ca
-provider_modified_at: 2026-05-09T08:00:03.631167+00:00
+provider_modified_at: 2026-05-10T08:00:06.994713+00:00
 
 title: Sam Garcia
 slug: sam-garcia
@@ -15,7 +15,7 @@ identifiers:
   email: ["awesamninja@gmail.com"]
   phone: ["+1 512-769-6614"]
   slack: []
-last_synced: 2026-05-09T08:00:03.631167+00:00
+last_synced: 2026-05-10T08:00:06.994713+00:00
 global: true
 ---
 

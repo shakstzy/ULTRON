@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.835606+00:00
+ingested_at: 2026-05-10T08:00:07.113299+00:00
 ingest_version: 1
 content_hash: blake2b:813eceabee6cce4382ae266de54661bb
-provider_modified_at: 2026-05-09T08:00:03.835606+00:00
+provider_modified_at: 2026-05-10T08:00:07.113299+00:00
 
 title: Anita Hinge Austin
 slug: anita-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12103551337"]
   slack: []
-last_synced: 2026-05-09T08:00:03.835606+00:00
+last_synced: 2026-05-10T08:00:07.113299+00:00
 global: true
 ---
 

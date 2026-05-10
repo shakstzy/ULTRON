@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.618622+00:00
+ingested_at: 2026-05-10T08:00:06.984725+00:00
 ingest_version: 1
 content_hash: blake2b:e239da0ed94bb31eb9d143b3111aa921
-provider_modified_at: 2026-05-09T08:00:03.618622+00:00
+provider_modified_at: 2026-05-10T08:00:06.984725+00:00
 
 title: Tiffy | Plume
 slug: tiffy-plume
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.618622+00:00
+last_synced: 2026-05-10T08:00:06.984725+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.716393+00:00
+ingested_at: 2026-05-10T08:00:07.047424+00:00
 ingest_version: 1
 content_hash: blake2b:8cc001b1cc4106100a605cc3601bf08a
-provider_modified_at: 2026-05-09T08:00:03.716393+00:00
+provider_modified_at: 2026-05-10T08:00:07.047424+00:00
 
 title: Larthik
 slug: larthik
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["0507089670"]
   slack: []
-last_synced: 2026-05-09T08:00:03.716393+00:00
+last_synced: 2026-05-10T08:00:07.047424+00:00
 global: true
 ---
 

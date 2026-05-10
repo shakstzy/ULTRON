@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.613593+00:00
+ingested_at: 2026-05-10T08:00:06.981275+00:00
 ingest_version: 1
 content_hash: blake2b:7c64620a0549005c6390cffa6277f95e
-provider_modified_at: 2026-05-09T08:00:03.613593+00:00
+provider_modified_at: 2026-05-10T08:00:06.981275+00:00
 
 title: Munam | Chainsight
 slug: munam-chainsight
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 310-406-6001"]
   slack: []
-last_synced: 2026-05-09T08:00:03.613593+00:00
+last_synced: 2026-05-10T08:00:06.981275+00:00
 global: true
 ---
 

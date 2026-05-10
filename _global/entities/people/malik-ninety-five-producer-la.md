@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.919608+00:00
+ingested_at: 2026-05-10T08:00:07.163136+00:00
 ingest_version: 1
 content_hash: blake2b:cbcd960ee29fbac4e87e902b11727be1
-provider_modified_at: 2026-05-09T08:00:03.919608+00:00
+provider_modified_at: 2026-05-10T08:00:07.163136+00:00
 
 title: Malik Ninety Five Producer LA
 slug: malik-ninety-five-producer-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15049208346"]
   slack: []
-last_synced: 2026-05-09T08:00:03.919608+00:00
+last_synced: 2026-05-10T08:00:07.163136+00:00
 global: true
 ---
 

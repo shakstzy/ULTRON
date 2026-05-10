@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.890150+00:00
+ingested_at: 2026-05-10T08:00:07.146283+00:00
 ingest_version: 1
 content_hash: blake2b:d4ab6ed4d9877b4f6b95f8f38b00e931
-provider_modified_at: 2026-05-09T08:00:03.890150+00:00
+provider_modified_at: 2026-05-10T08:00:07.146283+00:00
 
 title: Guneet | Uber
 slug: guneet-uber
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.890150+00:00
+last_synced: 2026-05-10T08:00:07.146283+00:00
 global: true
 ---
 

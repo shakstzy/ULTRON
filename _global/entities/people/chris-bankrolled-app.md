@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.809265+00:00
+ingested_at: 2026-05-10T08:00:07.100149+00:00
 ingest_version: 1
 content_hash: blake2b:9f5aa89ca96e3e0cbb679f3291dbbaf4
-provider_modified_at: 2026-05-09T08:00:03.809265+00:00
+provider_modified_at: 2026-05-10T08:00:07.100149+00:00
 
 title: Chris | Bankrolled.app
 slug: chris-bankrolled-app
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.809265+00:00
+last_synced: 2026-05-10T08:00:07.100149+00:00
 global: true
 ---
 

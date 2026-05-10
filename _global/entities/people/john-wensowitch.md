@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.893106+00:00
+ingested_at: 2026-05-10T08:00:07.147612+00:00
 ingest_version: 1
 content_hash: blake2b:75608876c1db0c7d9b09382357f0383f
-provider_modified_at: 2026-05-09T08:00:03.893106+00:00
+provider_modified_at: 2026-05-10T08:00:07.147612+00:00
 
 title: John Wensowitch
 slug: john-wensowitch
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(214) 364-2767"]
   slack: []
-last_synced: 2026-05-09T08:00:03.893106+00:00
+last_synced: 2026-05-10T08:00:07.147612+00:00
 global: true
 ---
 

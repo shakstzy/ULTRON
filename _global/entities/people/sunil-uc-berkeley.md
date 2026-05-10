@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.648728+00:00
+ingested_at: 2026-05-10T08:00:07.005978+00:00
 ingest_version: 1
 content_hash: blake2b:5aeb6537edfc190bff0b08d571f3c409
-provider_modified_at: 2026-05-09T08:00:03.648728+00:00
+provider_modified_at: 2026-05-10T08:00:07.005978+00:00
 
 title: Sunil UC Berkeley
 slug: sunil-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(908) 510-6144"]
   slack: []
-last_synced: 2026-05-09T08:00:03.648728+00:00
+last_synced: 2026-05-10T08:00:07.005978+00:00
 global: true
 ---
 

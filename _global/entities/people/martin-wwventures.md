@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.615462+00:00
+ingested_at: 2026-05-10T08:00:06.982321+00:00
 ingest_version: 1
 content_hash: blake2b:77cf83a667490c19595a12edea9f5eeb
-provider_modified_at: 2026-05-09T08:00:03.615462+00:00
+provider_modified_at: 2026-05-10T08:00:06.982321+00:00
 
 title: Martin | WWVentures
 slug: martin-wwventures
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.615462+00:00
+last_synced: 2026-05-10T08:00:06.982321+00:00
 global: true
 ---
 

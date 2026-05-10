@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.727772+00:00
+ingested_at: 2026-05-10T08:00:07.053404+00:00
 ingest_version: 1
 content_hash: blake2b:ce035236ac33f1abb2e8f16b050a7949
-provider_modified_at: 2026-05-09T08:00:03.727772+00:00
+provider_modified_at: 2026-05-10T08:00:07.053404+00:00
 
 title: Steave | Keyrock
 slug: steave-keyrock
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.727772+00:00
+last_synced: 2026-05-10T08:00:07.053404+00:00
 global: true
 ---
 

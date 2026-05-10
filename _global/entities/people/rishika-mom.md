@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.754786+00:00
+ingested_at: 2026-05-10T08:00:07.070044+00:00
 ingest_version: 1
 content_hash: blake2b:9234ffd86234f16524d5fba7f54a13f7
-provider_modified_at: 2026-05-09T08:00:03.754786+00:00
+provider_modified_at: 2026-05-10T08:00:07.070044+00:00
 
 title: Rishika Mom
 slug: rishika-mom
@@ -15,7 +15,7 @@ identifiers:
   email: ["jhuma26@hotmail.com"]
   phone: ["+16145377038"]
   slack: []
-last_synced: 2026-05-09T08:00:03.754786+00:00
+last_synced: 2026-05-10T08:00:07.070044+00:00
 global: true
 ---
 

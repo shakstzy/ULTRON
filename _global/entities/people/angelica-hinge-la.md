@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.831631+00:00
+ingested_at: 2026-05-10T08:00:07.111711+00:00
 ingest_version: 1
 content_hash: blake2b:32ac3cc3db62c324d23300c90162ea63
-provider_modified_at: 2026-05-09T08:00:03.831631+00:00
+provider_modified_at: 2026-05-10T08:00:07.111711+00:00
 
 title: Angelica Hinge LA
 slug: angelica-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18186261480"]
   slack: []
-last_synced: 2026-05-09T08:00:03.831631+00:00
+last_synced: 2026-05-10T08:00:07.111711+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.716540+00:00
+ingested_at: 2026-05-10T08:00:07.047487+00:00
 ingest_version: 1
 content_hash: blake2b:a128da7b352337e5830e35df8088fd94
-provider_modified_at: 2026-05-09T08:00:03.716540+00:00
+provider_modified_at: 2026-05-10T08:00:07.047487+00:00
 
 title: Radharani
 slug: radharani
@@ -15,7 +15,7 @@ identifiers:
   email: ["rtupuri@yahoo.com"]
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.716540+00:00
+last_synced: 2026-05-10T08:00:07.047487+00:00
 global: true
 ---
 

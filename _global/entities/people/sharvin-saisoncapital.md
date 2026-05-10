@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.716794+00:00
+ingested_at: 2026-05-10T08:00:07.047693+00:00
 ingest_version: 1
 content_hash: blake2b:4ae78a68384173e1595d73467cecbe9c
-provider_modified_at: 2026-05-09T08:00:03.716794+00:00
+provider_modified_at: 2026-05-10T08:00:07.047693+00:00
 
 title: Sharvin | SaisonCapital
 slug: sharvin-saisoncapital
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.716794+00:00
+last_synced: 2026-05-10T08:00:07.047693+00:00
 global: true
 ---
 

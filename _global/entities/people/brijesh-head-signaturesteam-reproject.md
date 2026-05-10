@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.678750+00:00
+ingested_at: 2026-05-10T08:00:07.026002+00:00
 ingest_version: 1
 content_hash: blake2b:1b7b0e2bbe1f16816837fe1549d3841b
-provider_modified_at: 2026-05-09T08:00:03.678750+00:00
+provider_modified_at: 2026-05-10T08:00:07.026002+00:00
 
 title: Brijesh Head SignaturesTeam REProject
 slug: brijesh-head-signaturesteam-reproject
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+919943044411"]
   slack: []
-last_synced: 2026-05-09T08:00:03.678750+00:00
+last_synced: 2026-05-10T08:00:07.026002+00:00
 global: true
 ---
 

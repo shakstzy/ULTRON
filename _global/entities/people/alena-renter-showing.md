@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.712569+00:00
+ingested_at: 2026-05-10T08:00:07.045280+00:00
 ingest_version: 1
 content_hash: blake2b:a015d7f275e69c9f4e2ea2a88362981d
-provider_modified_at: 2026-05-09T08:00:03.712569+00:00
+provider_modified_at: 2026-05-10T08:00:07.045280+00:00
 
 title: Alena Renter Showing
 slug: alena-renter-showing
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18188004406"]
   slack: []
-last_synced: 2026-05-09T08:00:03.712569+00:00
+last_synced: 2026-05-10T08:00:07.045280+00:00
 global: true
 ---
 

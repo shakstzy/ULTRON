@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.757009+00:00
+ingested_at: 2026-05-10T08:00:07.071244+00:00
 ingest_version: 1
 content_hash: blake2b:409a8d23c05a56e1c364e289411bd590
-provider_modified_at: 2026-05-09T08:00:03.757009+00:00
+provider_modified_at: 2026-05-10T08:00:07.071244+00:00
 
 title: Robin | Kucoin
 slug: robin-kucoin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.757009+00:00
+last_synced: 2026-05-10T08:00:07.071244+00:00
 global: true
 ---
 

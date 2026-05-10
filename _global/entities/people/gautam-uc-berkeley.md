@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.709186+00:00
+ingested_at: 2026-05-10T08:00:07.043732+00:00
 ingest_version: 1
 content_hash: blake2b:7aae742d9beeca3ed903c6634634dc2a
-provider_modified_at: 2026-05-09T08:00:03.709186+00:00
+provider_modified_at: 2026-05-10T08:00:07.043732+00:00
 
 title: Gautam UC Berkeley
 slug: gautam-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16692889907"]
   slack: []
-last_synced: 2026-05-09T08:00:03.709186+00:00
+last_synced: 2026-05-10T08:00:07.043732+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.855181+00:00
+ingested_at: 2026-05-10T08:00:07.126047+00:00
 ingest_version: 1
 content_hash: blake2b:8aaaa3269891f4f245e011054a6b2f63
-provider_modified_at: 2026-05-09T08:00:03.855181+00:00
+provider_modified_at: 2026-05-10T08:00:07.126047+00:00
 
 title: Chris Intuit
 slug: chris-intuit
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14086216418"]
   slack: []
-last_synced: 2026-05-09T08:00:03.855181+00:00
+last_synced: 2026-05-10T08:00:07.126047+00:00
 global: true
 ---
 

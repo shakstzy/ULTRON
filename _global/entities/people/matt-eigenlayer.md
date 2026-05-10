@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.829219+00:00
+ingested_at: 2026-05-10T08:00:07.110788+00:00
 ingest_version: 1
 content_hash: blake2b:b81fb0e14e1c77b167647cf7c35217dc
-provider_modified_at: 2026-05-09T08:00:03.829219+00:00
+provider_modified_at: 2026-05-10T08:00:07.110788+00:00
 
 title: Matt | Eigenlayer
 slug: matt-eigenlayer
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.829219+00:00
+last_synced: 2026-05-10T08:00:07.110788+00:00
 global: true
 ---
 

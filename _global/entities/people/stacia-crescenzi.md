@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.757919+00:00
+ingested_at: 2026-05-10T08:00:07.071595+00:00
 ingest_version: 1
 content_hash: blake2b:9403c25189298a505cb88b16d9c51449
-provider_modified_at: 2026-05-09T08:00:03.757919+00:00
+provider_modified_at: 2026-05-10T08:00:07.071595+00:00
 
 title: Stacia Crescenzi
 slug: stacia-crescenzi
@@ -15,7 +15,7 @@ identifiers:
   email: ["stacia.crescenzi@austinisd.org"]
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.757919+00:00
+last_synced: 2026-05-10T08:00:07.071595+00:00
 global: true
 ---
 

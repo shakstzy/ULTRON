@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.747514+00:00
+ingested_at: 2026-05-10T08:00:07.065725+00:00
 ingest_version: 1
 content_hash: blake2b:0907d763c20ad0d8deba680e830eabb0
-provider_modified_at: 2026-05-09T08:00:03.747514+00:00
+provider_modified_at: 2026-05-10T08:00:07.065725+00:00
 
 title: Palak Hinge LA
 slug: palak-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17144891813"]
   slack: []
-last_synced: 2026-05-09T08:00:03.747514+00:00
+last_synced: 2026-05-10T08:00:07.065725+00:00
 global: true
 ---
 

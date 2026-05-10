@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.639630+00:00
+ingested_at: 2026-05-10T08:00:07.000357+00:00
 ingest_version: 1
 content_hash: blake2b:56b441bffe50413b429e652515d873e7
-provider_modified_at: 2026-05-09T08:00:03.639630+00:00
+provider_modified_at: 2026-05-10T08:00:07.000357+00:00
 
 title: Basha Uncle
 slug: basha-uncle
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14089059118"]
   slack: []
-last_synced: 2026-05-09T08:00:03.639630+00:00
+last_synced: 2026-05-10T08:00:07.000357+00:00
 global: true
 ---
 

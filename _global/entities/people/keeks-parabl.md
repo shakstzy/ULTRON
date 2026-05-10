@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.692844+00:00
+ingested_at: 2026-05-10T08:00:07.034553+00:00
 ingest_version: 1
 content_hash: blake2b:172ca0d66d01c1c74fd13de31a66a8e1
-provider_modified_at: 2026-05-09T08:00:03.692844+00:00
+provider_modified_at: 2026-05-10T08:00:07.034553+00:00
 
 title: Keeks | Parabl
 slug: keeks-parabl
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.692844+00:00
+last_synced: 2026-05-10T08:00:07.034553+00:00
 global: true
 ---
 

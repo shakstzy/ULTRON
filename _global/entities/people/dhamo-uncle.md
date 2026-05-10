@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.690442+00:00
+ingested_at: 2026-05-10T08:00:07.032991+00:00
 ingest_version: 1
 content_hash: blake2b:1884c79de61daf8503e61b6739cc943c
-provider_modified_at: 2026-05-09T08:00:03.690442+00:00
+provider_modified_at: 2026-05-10T08:00:07.032991+00:00
 
 title: Dhamo Uncle
 slug: dhamo-uncle
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15123003795"]
   slack: []
-last_synced: 2026-05-09T08:00:03.690442+00:00
+last_synced: 2026-05-10T08:00:07.032991+00:00
 global: true
 ---
 

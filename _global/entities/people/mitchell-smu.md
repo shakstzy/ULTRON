@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.677429+00:00
+ingested_at: 2026-05-10T08:00:07.025427+00:00
 ingest_version: 1
 content_hash: blake2b:a7fb9368c2843bddf0e8131932a77f8a
-provider_modified_at: 2026-05-09T08:00:03.677429+00:00
+provider_modified_at: 2026-05-10T08:00:07.025427+00:00
 
 title: Mitchell-SMU
 slug: mitchell-smu
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(405) 762-0447"]
   slack: []
-last_synced: 2026-05-09T08:00:03.677429+00:00
+last_synced: 2026-05-10T08:00:07.025427+00:00
 global: true
 ---
 

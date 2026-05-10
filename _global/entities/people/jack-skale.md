@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.687250+00:00
+ingested_at: 2026-05-10T08:00:07.030955+00:00
 ingest_version: 1
 content_hash: blake2b:624f449cdcc4e8f9f676afa8d9329aaa
-provider_modified_at: 2026-05-09T08:00:03.687250+00:00
+provider_modified_at: 2026-05-10T08:00:07.030955+00:00
 
 title: Jack | SKALE
 slug: jack-skale
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.687250+00:00
+last_synced: 2026-05-10T08:00:07.030955+00:00
 global: true
 ---
 

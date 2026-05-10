@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.632483+00:00
+ingested_at: 2026-05-10T08:00:06.995895+00:00
 ingest_version: 1
 content_hash: blake2b:920d12bdf3491a7222dab50cd615bf65
-provider_modified_at: 2026-05-09T08:00:03.632483+00:00
+provider_modified_at: 2026-05-10T08:00:06.995895+00:00
 
 title: Stephanie Roach
 slug: stephanie-roach
@@ -15,7 +15,7 @@ identifiers:
   email: ["stephanie.roach@leanderisd.org"]
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.632483+00:00
+last_synced: 2026-05-10T08:00:06.995895+00:00
 global: true
 ---
 

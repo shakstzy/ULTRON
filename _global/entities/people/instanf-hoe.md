@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.683848+00:00
+ingested_at: 2026-05-10T08:00:07.028553+00:00
 ingest_version: 1
 content_hash: blake2b:ab10f8adb513d3ce2c1ea8e6bfbdc409
-provider_modified_at: 2026-05-09T08:00:03.683848+00:00
+provider_modified_at: 2026-05-10T08:00:07.028553+00:00
 
 title: Instanf Hoe
 slug: instanf-hoe
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+9657775050"]
   slack: []
-last_synced: 2026-05-09T08:00:03.683848+00:00
+last_synced: 2026-05-10T08:00:07.028553+00:00
 global: true
 ---
 

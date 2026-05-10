@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.588872+00:00
+ingested_at: 2026-05-10T08:00:06.963588+00:00
 ingest_version: 1
 content_hash: blake2b:718b5230af45072a17c94f872492cae7
-provider_modified_at: 2026-05-09T08:00:03.588872+00:00
+provider_modified_at: 2026-05-10T08:00:06.963588+00:00
 
 title: Ryan Roomate
 slug: ryan-roomate
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 412-526-4746"]
   slack: []
-last_synced: 2026-05-09T08:00:03.588872+00:00
+last_synced: 2026-05-10T08:00:06.963588+00:00
 global: true
 ---
 

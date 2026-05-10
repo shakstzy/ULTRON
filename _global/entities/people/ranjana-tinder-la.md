@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.752483+00:00
+ingested_at: 2026-05-10T08:00:07.068654+00:00
 ingest_version: 1
 content_hash: blake2b:02c3179a094a6cea9f9f345f853412d5
-provider_modified_at: 2026-05-09T08:00:03.752483+00:00
+provider_modified_at: 2026-05-10T08:00:07.068654+00:00
 
 title: Ranjana Tinder LA
 slug: ranjana-tinder-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16693458641"]
   slack: []
-last_synced: 2026-05-09T08:00:03.752483+00:00
+last_synced: 2026-05-10T08:00:07.068654+00:00
 global: true
 ---
 

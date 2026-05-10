@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.625947+00:00
+ingested_at: 2026-05-10T08:00:06.990457+00:00
 ingest_version: 1
 content_hash: blake2b:4c4d4338ffd07f88cc30ab4dac5264bb
-provider_modified_at: 2026-05-09T08:00:03.625947+00:00
+provider_modified_at: 2026-05-10T08:00:06.990457+00:00
 
 title: Sahithi NYC
 slug: sahithi-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17034241782"]
   slack: []
-last_synced: 2026-05-09T08:00:03.625947+00:00
+last_synced: 2026-05-10T08:00:06.990457+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.688616+00:00
+ingested_at: 2026-05-10T08:00:07.031902+00:00
 ingest_version: 1
 content_hash: blake2b:53019b51adfbacd7ad6ef233d1b29f5a
-provider_modified_at: 2026-05-09T08:00:03.688616+00:00
+provider_modified_at: 2026-05-10T08:00:07.031902+00:00
 
 title: Sharmila Chatterjee
 slug: sharmila-chatterjee
@@ -15,7 +15,7 @@ identifiers:
   email: ["sharmila@mit.edu"]
   phone: ["+1 781-392-4043"]
   slack: []
-last_synced: 2026-05-09T08:00:03.688616+00:00
+last_synced: 2026-05-10T08:00:07.031902+00:00
 global: true
 ---
 

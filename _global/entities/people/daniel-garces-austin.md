@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.906534+00:00
+ingested_at: 2026-05-10T08:00:07.154790+00:00
 ingest_version: 1
 content_hash: blake2b:9d9245e98e3ad80860b3db66a01b3f0e
-provider_modified_at: 2026-05-09T08:00:03.906534+00:00
+provider_modified_at: 2026-05-10T08:00:07.154790+00:00
 
 title: Daniel Garces Austin
 slug: daniel-garces-austin
@@ -15,7 +15,7 @@ identifiers:
   email: ["degarces@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.906534+00:00
+last_synced: 2026-05-10T08:00:07.154790+00:00
 global: true
 ---
 

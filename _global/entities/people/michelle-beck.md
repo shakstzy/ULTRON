@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.822599+00:00
+ingested_at: 2026-05-10T08:00:07.107187+00:00
 ingest_version: 1
 content_hash: blake2b:51ee6d7e5313b06ddba441a2d2e7723f
-provider_modified_at: 2026-05-09T08:00:03.822599+00:00
+provider_modified_at: 2026-05-10T08:00:07.107187+00:00
 
 title: Michelle Beck
 slug: michelle-beck
@@ -15,7 +15,7 @@ identifiers:
   email: ["MLBeck@hillcountryedfoundation.org"]
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.822599+00:00
+last_synced: 2026-05-10T08:00:07.107187+00:00
 global: true
 ---
 

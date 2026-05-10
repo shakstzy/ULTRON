@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.779214+00:00
+ingested_at: 2026-05-10T08:00:07.083467+00:00
 ingest_version: 1
 content_hash: blake2b:c205c798673617784ea5e287b3fe55e4
-provider_modified_at: 2026-05-09T08:00:03.779214+00:00
+provider_modified_at: 2026-05-10T08:00:07.083467+00:00
 
 title: Ezra Garces Austin
 slug: ezra-garces-austin
@@ -15,7 +15,7 @@ identifiers:
   email: ["ezra.garces@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.779214+00:00
+last_synced: 2026-05-10T08:00:07.083467+00:00
 global: true
 ---
 

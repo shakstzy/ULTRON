@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.759180+00:00
+ingested_at: 2026-05-10T08:00:07.072140+00:00
 ingest_version: 1
 content_hash: blake2b:093f2f5ba65e36dc1bc282a8076c985b
-provider_modified_at: 2026-05-09T08:00:03.759180+00:00
+provider_modified_at: 2026-05-10T08:00:07.072140+00:00
 
 title: Debora UC Berkeley
 slug: debora-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(510) 610-6882"]
   slack: []
-last_synced: 2026-05-09T08:00:03.759180+00:00
+last_synced: 2026-05-10T08:00:07.072140+00:00
 global: true
 ---
 

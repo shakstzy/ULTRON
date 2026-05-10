@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.855303+00:00
+ingested_at: 2026-05-10T08:00:07.126112+00:00
 ingest_version: 1
 content_hash: blake2b:e73dda40d0a7be0830b850801697f956
-provider_modified_at: 2026-05-09T08:00:03.855303+00:00
+provider_modified_at: 2026-05-10T08:00:07.126112+00:00
 
 title: Sindhu Vasudevan Austin
 slug: sindhu-vasudevan-austin
@@ -15,7 +15,7 @@ identifiers:
   email: ["sursindhu11@gmail.com"]
   phone: ["(248) 756-0908"]
   slack: []
-last_synced: 2026-05-09T08:00:03.855303+00:00
+last_synced: 2026-05-10T08:00:07.126112+00:00
 global: true
 ---
 

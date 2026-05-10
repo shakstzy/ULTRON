@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.923945+00:00
+ingested_at: 2026-05-10T08:00:07.165368+00:00
 ingest_version: 1
 content_hash: blake2b:510279d2f9f84eb3132b5b61e3689a70
-provider_modified_at: 2026-05-09T08:00:03.923945+00:00
+provider_modified_at: 2026-05-10T08:00:07.165368+00:00
 
 title: Ralph | Gnosis
 slug: ralph-gnosis
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.923945+00:00
+last_synced: 2026-05-10T08:00:07.165368+00:00
 global: true
 ---
 

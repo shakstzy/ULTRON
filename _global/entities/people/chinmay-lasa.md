@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.663454+00:00
+ingested_at: 2026-05-10T08:00:07.017422+00:00
 ingest_version: 1
 content_hash: blake2b:36373a19e08c0f073c36e344d12cdc1c
-provider_modified_at: 2026-05-09T08:00:03.663454+00:00
+provider_modified_at: 2026-05-10T08:00:07.017422+00:00
 
 title: Chinmay LASA
 slug: chinmay-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(512) 839-5433"]
   slack: []
-last_synced: 2026-05-09T08:00:03.663454+00:00
+last_synced: 2026-05-10T08:00:07.017422+00:00
 global: true
 ---
 

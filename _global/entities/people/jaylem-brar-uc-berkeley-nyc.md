@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.639116+00:00
+ingested_at: 2026-05-10T08:00:06.999925+00:00
 ingest_version: 1
 content_hash: blake2b:0641c26e1c0799fba74b164e7fe2c915
-provider_modified_at: 2026-05-09T08:00:03.639116+00:00
+provider_modified_at: 2026-05-10T08:00:06.999925+00:00
 
 title: Jaylem Brar UC Berkeley NYC
 slug: jaylem-brar-uc-berkeley-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(310) 903-8966"]
   slack: []
-last_synced: 2026-05-09T08:00:03.639116+00:00
+last_synced: 2026-05-10T08:00:06.999925+00:00
 global: true
 ---
 

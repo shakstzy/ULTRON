@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.779506+00:00
+ingested_at: 2026-05-10T08:00:07.083605+00:00
 ingest_version: 1
 content_hash: blake2b:f9bc1448d6c182fd21cead8c8f3d8f35
-provider_modified_at: 2026-05-09T08:00:03.779506+00:00
+provider_modified_at: 2026-05-10T08:00:07.083605+00:00
 
 title: Thatha Mobile
 slug: thatha-mobile
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(956) 644-2345"]
   slack: []
-last_synced: 2026-05-09T08:00:03.779506+00:00
+last_synced: 2026-05-10T08:00:07.083605+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.915566+00:00
+ingested_at: 2026-05-10T08:00:07.161092+00:00
 ingest_version: 1
 content_hash: blake2b:ea11479cf0f006d3feaa49ddc876a23e
-provider_modified_at: 2026-05-09T08:00:03.915566+00:00
+provider_modified_at: 2026-05-10T08:00:07.161092+00:00
 
 title: LaToya Tufts
 slug: latoya-tufts
@@ -15,7 +15,7 @@ identifiers:
   email: ["latoya@smash.org"]
   phone: ["(912) 293-7838"]
   slack: []
-last_synced: 2026-05-09T08:00:03.915566+00:00
+last_synced: 2026-05-10T08:00:07.161092+00:00
 global: true
 ---
 

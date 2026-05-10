@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.818767+00:00
+ingested_at: 2026-05-10T08:00:07.105108+00:00
 ingest_version: 1
 content_hash: blake2b:bb21bd386aae9b0b1442df4b235a774b
-provider_modified_at: 2026-05-09T08:00:03.818767+00:00
+provider_modified_at: 2026-05-10T08:00:07.105108+00:00
 
 title: Res | NEAR
 slug: res-near
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.818767+00:00
+last_synced: 2026-05-10T08:00:07.105108+00:00
 global: true
 ---
 

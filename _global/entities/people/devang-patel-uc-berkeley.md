@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.876226+00:00
+ingested_at: 2026-05-10T08:00:07.138256+00:00
 ingest_version: 1
 content_hash: blake2b:7e19133afc58fb7a3abd2a4d40fbc8f8
-provider_modified_at: 2026-05-09T08:00:03.876226+00:00
+provider_modified_at: 2026-05-10T08:00:07.138256+00:00
 
 title: Devang Patel UC Berkeley
 slug: devang-patel-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["5164911753"]
   slack: []
-last_synced: 2026-05-09T08:00:03.876226+00:00
+last_synced: 2026-05-10T08:00:07.138256+00:00
 global: true
 ---
 

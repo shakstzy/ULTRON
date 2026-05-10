@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.594894+00:00
+ingested_at: 2026-05-10T08:00:06.968041+00:00
 ingest_version: 1
 content_hash: blake2b:3f709971be9f6ed7358b94d6e167244d
-provider_modified_at: 2026-05-09T08:00:03.594894+00:00
+provider_modified_at: 2026-05-10T08:00:06.968041+00:00
 
 title: Mia | MAD
 slug: mia-mad
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.594894+00:00
+last_synced: 2026-05-10T08:00:06.968041+00:00
 global: true
 ---
 

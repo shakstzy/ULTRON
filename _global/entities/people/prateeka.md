@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.688358+00:00
+ingested_at: 2026-05-10T08:00:07.031705+00:00
 ingest_version: 1
 content_hash: blake2b:909cbd202a562e3821553a089e1b9d54
-provider_modified_at: 2026-05-09T08:00:03.688358+00:00
+provider_modified_at: 2026-05-10T08:00:07.031705+00:00
 
 title: Prateeka
 slug: prateeka
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+971563611642"]
   slack: []
-last_synced: 2026-05-09T08:00:03.688358+00:00
+last_synced: 2026-05-10T08:00:07.031705+00:00
 global: true
 ---
 

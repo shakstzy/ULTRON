@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.603007+00:00
+ingested_at: 2026-05-10T08:00:06.974307+00:00
 ingest_version: 1
 content_hash: blake2b:a7fbdc0f6a95c0c5c92ef39211613bd2
-provider_modified_at: 2026-05-09T08:00:03.603007+00:00
+provider_modified_at: 2026-05-10T08:00:06.974307+00:00
 
 title: Lakshya | Certik
 slug: lakshya-certik
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.603007+00:00
+last_synced: 2026-05-10T08:00:06.974307+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.656707+00:00
+ingested_at: 2026-05-10T08:00:07.012743+00:00
 ingest_version: 1
 content_hash: blake2b:6e581385ae6e813503dce7fb4d646927
-provider_modified_at: 2026-05-09T08:00:03.656707+00:00
+provider_modified_at: 2026-05-10T08:00:07.012743+00:00
 
 title: Parth Shroff
 slug: parth-shroff
@@ -15,7 +15,7 @@ identifiers:
   email: ["parth.shroff5x@stu.austinisd.org"]
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.656707+00:00
+last_synced: 2026-05-10T08:00:07.012743+00:00
 global: true
 ---
 

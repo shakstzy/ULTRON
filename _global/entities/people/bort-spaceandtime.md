@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.681519+00:00
+ingested_at: 2026-05-10T08:00:07.027445+00:00
 ingest_version: 1
 content_hash: blake2b:453169ee151e2e8bc7c796fbba7a8e5d
-provider_modified_at: 2026-05-09T08:00:03.681519+00:00
+provider_modified_at: 2026-05-10T08:00:07.027445+00:00
 
 title: Bort | SpaceandTime
 slug: bort-spaceandtime
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.681519+00:00
+last_synced: 2026-05-10T08:00:07.027445+00:00
 global: true
 ---
 

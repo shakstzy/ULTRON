@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.783629+00:00
+ingested_at: 2026-05-10T08:00:07.085570+00:00
 ingest_version: 1
 content_hash: blake2b:6d08c38cdc7faa5d3e1a1c53e39acd3e
-provider_modified_at: 2026-05-09T08:00:03.783629+00:00
+provider_modified_at: 2026-05-10T08:00:07.085570+00:00
 
 title: Abraham Crypto LightNodeVentures LA
 slug: abraham-crypto-lightnodeventures-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16315991922"]
   slack: []
-last_synced: 2026-05-09T08:00:03.783629+00:00
+last_synced: 2026-05-10T08:00:07.085570+00:00
 global: true
 ---
 

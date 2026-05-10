@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.572655+00:00
+ingested_at: 2026-05-10T08:00:06.952893+00:00
 ingest_version: 1
 content_hash: blake2b:7fe71c05d1182c992a892c095b87c8c0
-provider_modified_at: 2026-05-09T08:00:03.572655+00:00
+provider_modified_at: 2026-05-10T08:00:06.952893+00:00
 
 title: Riddhi Hinge Austin
 slug: riddhi-hinge-austin-fdcf
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14696429500"]
   slack: []
-last_synced: 2026-05-09T08:00:03.572655+00:00
+last_synced: 2026-05-10T08:00:06.952893+00:00
 global: true
 ---
 

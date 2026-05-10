@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.783986+00:00
+ingested_at: 2026-05-10T08:00:07.085823+00:00
 ingest_version: 1
 content_hash: blake2b:fb2400131861e7c22982c408b4dc8e14
-provider_modified_at: 2026-05-09T08:00:03.783986+00:00
+provider_modified_at: 2026-05-10T08:00:07.085823+00:00
 
 title: Juanes | Multiplied
 slug: juanes-multiplied
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-09T08:00:03.783986+00:00
+last_synced: 2026-05-10T08:00:07.085823+00:00
 global: true
 ---
 

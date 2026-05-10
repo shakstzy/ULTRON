@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.896030+00:00
+ingested_at: 2026-05-10T08:00:07.149270+00:00
 ingest_version: 1
 content_hash: blake2b:9dc0277ddad209a749ff0bf338a6f591
-provider_modified_at: 2026-05-09T08:00:03.896030+00:00
+provider_modified_at: 2026-05-10T08:00:07.149270+00:00
 
 title: Aisha Hinge Austin
 slug: aisha-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18177712756"]
   slack: []
-last_synced: 2026-05-09T08:00:03.896030+00:00
+last_synced: 2026-05-10T08:00:07.149270+00:00
 global: true
 ---
 

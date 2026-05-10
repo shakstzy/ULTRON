@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.773488+00:00
+ingested_at: 2026-05-10T08:00:07.080543+00:00
 ingest_version: 1
 content_hash: blake2b:96467ee2a64ec4f0f9c4294299588fd0
-provider_modified_at: 2026-05-09T08:00:03.773488+00:00
+provider_modified_at: 2026-05-10T08:00:07.080543+00:00
 
 title: Zoya Hinge LA
 slug: zoya-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14257771960"]
   slack: []
-last_synced: 2026-05-09T08:00:03.773488+00:00
+last_synced: 2026-05-10T08:00:07.080543+00:00
 global: true
 ---
 

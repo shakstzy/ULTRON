@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.564911+00:00
+ingested_at: 2026-05-10T08:00:06.947351+00:00
 ingest_version: 1
 content_hash: blake2b:0d2eef2a1d7a94fdd28a14a7f811c510
-provider_modified_at: 2026-05-09T08:00:03.564911+00:00
+provider_modified_at: 2026-05-10T08:00:06.947351+00:00
 
 title: Harshil UC Berkeley
 slug: harshil-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 763-259-8560"]
   slack: []
-last_synced: 2026-05-09T08:00:03.564911+00:00
+last_synced: 2026-05-10T08:00:06.947351+00:00
 global: true
 ---
 

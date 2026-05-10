@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-09T08:00:03.772351+00:00
+ingested_at: 2026-05-10T08:00:07.080065+00:00
 ingest_version: 1
 content_hash: blake2b:1453008cae621ebfabf94e23e2191cb8
-provider_modified_at: 2026-05-09T08:00:03.772351+00:00
+provider_modified_at: 2026-05-10T08:00:07.080065+00:00
 
 title: JV Producer
 slug: jv-producer
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14153194913"]
   slack: []
-last_synced: 2026-05-09T08:00:03.772351+00:00
+last_synced: 2026-05-10T08:00:07.080065+00:00
 global: true
 ---
 

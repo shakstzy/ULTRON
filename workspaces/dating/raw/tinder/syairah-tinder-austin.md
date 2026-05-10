@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-04T21:47:24.782Z"
 last_activity: "2026-05-04T21:47:24.782Z"
-last_scrape: "2026-05-09T22:05:46.214Z"
+last_scrape: "2026-05-10T04:04:39.256Z"
 previous_slugs: []
-last_profile_diff: "2026-05-09T22:05:46.214Z"
+last_profile_diff: "2026-05-10T04:04:39.256Z"
 ---
 
 ## Profile
 
 - age: 20
-- distance_mi: 1224
+- distance_mi: 1229
 - height_cm: 160
 - bio: "Love experiencing new things , traveling , hiking etc definitely an out doors person"
 - looking_for: "New friends"
@@ -43,6 +43,20 @@ last_profile_diff: "2026-05-09T22:05:46.214Z"
     "distance_mi": {
       "from": 1229,
       "to": 1224
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-10T04:04:39.256Z",
+  "added": {},
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 1224,
+      "to": 1229
     }
   }
 }

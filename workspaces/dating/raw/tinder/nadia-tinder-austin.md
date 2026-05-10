@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-07T05:01:06.037Z"
 last_activity: "2026-05-07T05:01:06.037Z"
-last_scrape: "2026-05-09T22:05:39.964Z"
+last_scrape: "2026-05-10T04:04:33.289Z"
 previous_slugs: []
-last_profile_diff: "2026-05-09T22:05:39.964Z"
+last_profile_diff: "2026-05-10T04:04:33.289Z"
 ---
 
 ## Profile
 
 - age: 22
-- distance_mi: 1477
+- distance_mi: 1480
 - height_cm: 165
 - bio: "part-time neet full-time femcel 💔"
 - looking_for: "Still figuring it out"
@@ -116,6 +116,29 @@ last_profile_diff: "2026-05-09T22:05:39.964Z"
     "distance_mi": {
       "from": 1480,
       "to": 1477
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-10T04:04:33.289Z",
+  "added": {
+    "schools": [
+      "Also went to University of California, Berkeley"
+    ]
+  },
+  "removed": {
+    "schools": [
+      "Also went to University of California",
+      "Berkeley"
+    ]
+  },
+  "changed": {
+    "distance_mi": {
+      "from": 1477,
+      "to": 1480
     }
   }
 }

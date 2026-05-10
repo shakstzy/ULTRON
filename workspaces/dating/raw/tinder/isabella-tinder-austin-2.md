@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-06T22:47:14.876Z"
 last_activity: "2026-05-06T22:47:14.876Z"
-last_scrape: "2026-05-09T22:05:29.232Z"
+last_scrape: "2026-05-10T04:04:22.914Z"
 previous_slugs: []
-last_profile_diff: "2026-05-09T22:05:29.232Z"
+last_profile_diff: "2026-05-10T04:04:22.914Z"
 ---
 
 ## Profile
 
 - age: 18
-- distance_mi: 16
+- distance_mi: 11
 - bio: "My go-to karaoke song is… Chossin’ Texas- Ella Langley"
 - looking_for: "Long-term partner"
 - schools: Saint Edward's University
@@ -57,6 +57,20 @@ last_profile_diff: "2026-05-09T22:05:29.232Z"
     "distance_mi": {
       "from": 11,
       "to": 16
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-10T04:04:22.914Z",
+  "added": {},
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 16,
+      "to": 11
     }
   }
 }

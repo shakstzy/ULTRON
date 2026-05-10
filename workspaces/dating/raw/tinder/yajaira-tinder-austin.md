@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-06T22:48:40.016Z"
 last_activity: "2026-05-06T22:48:40.016Z"
-last_scrape: "2026-05-09T22:05:26.415Z"
+last_scrape: "2026-05-10T04:04:19.409Z"
 previous_slugs: []
-last_profile_diff: "2026-05-09T22:05:26.415Z"
+last_profile_diff: "2026-05-10T04:04:19.409Z"
 ---
 
 ## Profile
 
 - age: 22
-- distance_mi: 31
+- distance_mi: 35
 - height_cm: 162
 - bio: "If I had 20 minutes left to live, I would... I love a good trail 🥾 / My anthem Mr. BrightsideThe KillersHot Fuss"
 - looking_for: "Long-term, open to short"
@@ -142,6 +142,31 @@ last_profile_diff: "2026-05-09T22:05:26.415Z"
     "distance_mi": {
       "from": 35,
       "to": 31
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-10T04:04:19.409Z",
+  "added": {
+    "photo_verified": false,
+    "jobs": [
+      "English, Portuguese, Spanish"
+    ]
+  },
+  "removed": {
+    "jobs": [
+      "English",
+      "Portuguese",
+      "Spanish"
+    ]
+  },
+  "changed": {
+    "distance_mi": {
+      "from": 31,
+      "to": 35
     }
   }
 }

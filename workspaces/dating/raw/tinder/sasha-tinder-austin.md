@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-04-29T00:25:53.238Z"
 last_activity: "2026-04-29T00:25:53.238Z"
-last_scrape: "2026-05-09T22:05:56.105Z"
+last_scrape: "2026-05-10T04:04:48.115Z"
 previous_slugs: []
-last_profile_diff: "2026-05-09T22:05:56.105Z"
+last_profile_diff: "2026-05-10T04:04:48.115Z"
 ---
 
 ## Profile
 
 - age: 21
-- distance_mi: 1234
+- distance_mi: 1238
 - height_cm: 163
 - bio: "Aspiring kindergarten teacher Looking for long term love and a big family one day"
 - looking_for: "Long-term partner · Monogamy"
@@ -47,6 +47,20 @@ last_profile_diff: "2026-05-09T22:05:56.105Z"
     "distance_mi": {
       "from": 1238,
       "to": 1234
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-10T04:04:48.115Z",
+  "added": {},
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 1234,
+      "to": 1238
     }
   }
 }

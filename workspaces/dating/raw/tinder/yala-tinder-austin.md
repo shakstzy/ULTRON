@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-04-30T05:13:17.154Z"
 last_activity: "2026-04-30T05:13:17.154Z"
-last_scrape: "2026-05-09T22:05:52.724Z"
+last_scrape: "2026-05-10T04:04:45.033Z"
 previous_slugs: []
-last_profile_diff: "2026-05-09T22:05:52.724Z"
+last_profile_diff: "2026-05-10T04:04:45.033Z"
 ---
 
 ## Profile
 
 - age: 20
-- distance_mi: 1468
+- distance_mi: 1471
 - height_cm: 160
 - bio: "talk about beyoncé or the meaning of life idk"
 - looking_for: "New friends"
@@ -110,6 +110,22 @@ last_profile_diff: "2026-05-09T22:05:52.724Z"
     "distance_mi": {
       "from": 1471,
       "to": 1468
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-10T04:04:45.033Z",
+  "added": {
+    "photo_verified": false
+  },
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 1468,
+      "to": 1471
     }
   }
 }

@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-04T21:47:39.250Z"
 last_activity: "2026-05-04T21:47:39.250Z"
-last_scrape: "2026-05-09T22:05:50.097Z"
+last_scrape: "2026-05-10T04:04:42.219Z"
 previous_slugs: []
-last_profile_diff: "2026-05-09T22:05:50.097Z"
+last_profile_diff: "2026-05-10T04:04:42.219Z"
 ---
 
 ## Profile
 
 - age: 24
-- distance_mi: 12
+- distance_mi: 6
 - height_cm: 157
 - bio: "Kinda just seeing what out there , I love cars, movies ,animals, PlayStation . I stay working . I got my BFA in Photography 📸✨peep last pic"
 - looking_for: "Still figuring it out"
@@ -61,6 +61,20 @@ last_profile_diff: "2026-05-09T22:05:50.097Z"
     "distance_mi": {
       "from": 6,
       "to": 12
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-10T04:04:42.219Z",
+  "added": {},
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 12,
+      "to": 6
     }
   }
 }

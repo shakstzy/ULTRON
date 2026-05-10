@@ -26,6 +26,7 @@ Themes that span multiple entities. Read these first when answering a query that
 - [[wiki/concepts/family-tension]] : autonomy / authority dynamic with parents.
 - [[wiki/concepts/klein-ct-property]] : 13245 Klein Ct hub.
 - [[wiki/concepts/music-collaborators-2026]] : LA / Austin / SF producer pipeline + Prescription business pod.
+- [[wiki/concepts/sixth-street-shooting-2026-03-01]] : March 1 6th Street shooting; victim Savitha was Adithya's high-school connection.
 - [[wiki/concepts/uc-berkeley-cohort]] : Berkeley friend cluster, NYC and Bay branches.
 
 ## Entities — by cohort

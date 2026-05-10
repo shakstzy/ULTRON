@@ -13,6 +13,6 @@ Three-way intro (Mychal, Ram, Adithya). November 2025, 26 messages. Adithya conn
 
 ## Members
 
-- [[wiki/entities/people/mychal]]
+- [[wiki/entities/people/mychal-kendricks]]
 - Ram (ram in contacts)
 - Adithya

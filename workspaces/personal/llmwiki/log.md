@@ -52,6 +52,35 @@ Notable findings surfaced this batch (worth your attention):
 - **W3 surfaced**: jt-huskins-crypto stayed engaged through his own father's stage-4 cancer diagnosis; jean-parker sent his Dropbox loop archive for a Laroi/Beazy session; rhea positioned Caitlin as Adithya's primary A&R.
 - **W5 surfaced**: vina-nyc actually met IRL at Tompkins Square; riya-nyc's 43-msg post-breakup thread; preethi-launchx says Adithya stood her up.
 
-## [2026-05-09] ingest | W6-REDO Hinge cohort (in flight)
+## [2026-05-09] ingest | W6-REDO Hinge cohort (Sonnet)
 
-Re-running the 175 Hinge slugs through Sonnet. The Haiku-driven W6 generated template pages with leaked YAML frontmatter and generic placeholder text. Bad pages deleted, slug list regenerated, Sonnet worker spawned with explicit instructions on the failure mode. Results pending.
+Re-ran the 175 Hinge slugs through Sonnet (the Haiku-driven W6 had generated template-fill pages). Wall time ~19 minutes. Final tier distribution: 17 TIER 1, 77 TIER 2, 81 TIER 3 (skipped). Total Hinge cohort coverage: 5 pre-existing + 17 + 77 = ~99 pages, plus 81 entries surfaced as TIER 3 in the worker output.
+
+New high-signal threads surfaced this redo:
+- **emmy-hinge-sd**: only confirmed in-person hookup in the Hinge cohort (April 2026, SF Airbnb).
+- **sreya-hinge-austin**: emotionally raw thread tied to the **March 1, 2026 6th Street shooting at Bufords**. Both Adithya and Sreya knew the victim **Savitha** independently (high-school connection on his side). New concept page `sixth-street-shooting-2026-03-01.md` created.
+- **trisha-hinge-alabama**: most romantically open exchange. Tamil family imagined-future content.
+- **anjali-hinge-austin**: Tamil-language texting; persistent on her side, missed windows on his.
+- **gayathri-hinge-dallas**: Adithya showed up at her Dallas place at 3am to apologize for "what I had done last summer." Pattern echo of the DVRO "rocks at the window" admission.
+- **sriya-hinge-austin**, **presley-hinge-austin**: confirmed prior physical contact; could be relevant to the DVRO petitioner question.
+- **sabrina-hinge-austin**: explicit named-pattern callout — "this is the 5th time you asking me to hang out really late and it just doesnt seem respectful."
+
+## [2026-05-09] synthesis | post-swarm pass
+
+Updated:
+- `overview.md` (full rewrite covering career / family / romantic / property / friends / timeline).
+- `index.md` (cohort-organized navigation hub instead of flat 800-page list).
+- `wiki/synthesis/relationships-2026-05.md` (expanded with W6-REDO findings, DVRO petitioner candidate revisit).
+- `wiki/concepts/dvro-2026-02-03.md` (added Dimpal-Aarti angle).
+- `wiki/concepts/adithya-business-portfolio.md` (full rewrite; Outerscope, Forge, Selfpause/Jaeden, Ankur-uncle, network mentors).
+- `wiki/concepts/music-collaborators-2026.md` (full rewrite; Iann Dior credit, Prescription / Rhea / Caitlin, ~12 active producer pipelines).
+- `wiki/concepts/austin-rental-tenants.md` (added habitability complaints, Sidhant near-sign, prospect pipeline).
+- `wiki/concepts/austin-drug-circle.md` (extended with new substances/sources; ketamine, psilocybin trip groups, alcohol).
+- `wiki/concepts/klein-ct-property.md` (extended timeline, prior tenant cohort, LA property, habitability complaint).
+- New: `wiki/concepts/sixth-street-shooting-2026-03-01.md`.
+
+Lint cleanup: deleted empty `austin-davis-renter-showing.md` duplicate; deleted `noah-bailie-2.md` duplicate (folded into noah-bailie). Fixed broken wikilinks: austin-davis-renter-showing → austin-davis (auto-replaced across all pages); johnny-lee placeholder applied (no source page yet).
+
+Final page counts: ~770 people pages + 118 group pages = **~888 total entity pages**, up from 86 at the start of today's session.
+
+Outstanding: full Quality Review pass with finer dedup (some Hinge-city same-name slugs may be the same person across moves — e.g., possible Aaliyah variants); ingest of non-iMessage sources (gmail, granola, whatsapp, discord, reddit, manual).

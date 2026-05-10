@@ -66,7 +66,8 @@ See [[wiki/concepts/uc-berkeley-cohort]], [[wiki/concepts/austin-drug-circle]], 
 - **2025-Q3 to 2025-11**: Austin Davis non-payment escalation. Notice of Intent to Sue 2025-11-23. [[wiki/entities/people/larry-lawyer]] advised small-claims as the only realistic path.
 - **2025-09-15**: Aarti relationship begins.
 - **2025-12**: [[wiki/entities/groups/deus-shak-verb]] roommate ADHD intervention from Evan, with the "ADHD tax" inventory totaling tens of thousands.
-- **2026-02**: Aarti breakup; LA → Austin move; second car accident; Bufords (Austin bar) shooting on premises; **DVRO filed**.
+- **2026-02**: Aarti breakup; LA → Austin move; second car accident; **DVRO filed**.
+- **2026-03-01**: 6th Street shooting at Bufords. Adithya was at the venue, left 30 minutes before. Victim **Savitha** was a high-school connection. See [[wiki/concepts/sixth-street-shooting-2026-03-01]].
 - **2026-03-05**: Adithya tells [[wiki/entities/people/saif-ali]] about the DVRO.
 - **2026-04**: HumanX SF, GDC, a16z Speedrun interviews. [[wiki/entities/people/aurat]] thread peaks emotionally.
 - **2026-04-29**: Family incident (nose injury). Mom diagnosed with a cyst.

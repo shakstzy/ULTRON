@@ -9,11 +9,11 @@ tags: [business, mychal, networking, intro]
 
 # Group: Cameron-Mychal-Rebecca
 
-Three-person group created by [[wiki/entities/people/mychal]] as an intro. May 2026, 20 messages. Mychal: "Hey guys, I wanna make a quick intro." Adithya is not listed as a sender in the latest shard — he may be silent or just receiving. Mychal is connecting people in his orbit.
+Three-person group created by [[wiki/entities/people/mychal-kendricks]] as an intro. May 2026, 20 messages. Mychal: "Hey guys, I wanna make a quick intro." Adithya is not listed as a sender in the latest shard — he may be silent or just receiving. Mychal is connecting people in his orbit.
 
 ## Members
 
 - Cameron
-- [[wiki/entities/people/mychal]]
+- [[wiki/entities/people/mychal-kendricks]]
 - Rebecca
 - Adithya (likely)

@@ -11,11 +11,11 @@ tags: [business, crypto, tokenomics, mychal]
 
 Four-person business group (Covaughn, Mychal, Randy, Adithya). May 2024, 16 messages. Adithya opens with a calendly link asking to discuss "tokenomics, liquidity provisioning, exchange listing, and your thoughts on what your plan is for scaling/GTM." Mychal handles the coordination. Randy is involved.
 
-This is an early crypto/token project business thread. Cross-reference [[wiki/entities/people/mychal]] and [[wiki/entities/groups/group-covaughn-mychal]].
+This is an early crypto/token project business thread. Cross-reference [[wiki/entities/people/mychal-kendricks]] and [[wiki/entities/groups/group-covaughn-mychal]].
 
 ## Members
 
 - Covaughn
-- [[wiki/entities/people/mychal]]
+- [[wiki/entities/people/mychal-kendricks]]
 - Randy
 - Adithya

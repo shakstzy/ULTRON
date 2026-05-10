@@ -9,7 +9,7 @@ tags: [business, mychal, team, technology]
 
 # Group: Mychal (Team)
 
-Large group (Mychal + team, member count 3 in metadata but conversation references more people). April 2026. This is [[wiki/entities/people/mychal]] rallying a new business team around patented technology.
+Large group (Mychal + team, member count 3 in metadata but conversation references more people). April 2026. This is [[wiki/entities/people/mychal-kendricks]] rallying a new business team around patented technology.
 
 ## Notable thread
 
@@ -25,7 +25,7 @@ Marvin (MJ) introduces himself. Others react but don't introduce yet. Adithya is
 
 ## Members
 
-- [[wiki/entities/people/mychal]]
+- [[wiki/entities/people/mychal-kendricks]]
 - Marvin (MJ)
 - Adithya
 - Others unnamed

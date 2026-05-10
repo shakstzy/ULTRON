@@ -25,7 +25,7 @@ Inside-joke vocabulary on display: "PSHEUKHTI" (Saif mangling Adithya's name), "
 
 - [[wiki/entities/people/saif-ali]]
 - [[wiki/entities/people/prabhat]]
-- [[wiki/entities/people/aamir]]
+- [[wiki/entities/people/aamir-khan]]
 - [[wiki/entities/people/rushil-jha]]
 - Maneesh (mentioned, not yet entity stub)
 - Adithya

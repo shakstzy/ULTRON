@@ -13,4 +13,4 @@ LASA classmate now living in Houston. Adithya reached out March 2026 when he mov
 
 ## Recent state (March 2026)
 
-Single exchange: Adithya announces he's back in Austin; Avik says he's in Houston, offers to connect if Adithya visits or if he passes through Austin.
+Single exchange: Adithya announces he's back in Austin; Avik says he's in Houston, offers to connect if Adithya visits or passes through.

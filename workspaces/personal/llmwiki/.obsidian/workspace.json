@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8d9e25e202f61db3",
+        "id": "234f738637cbfeea",
         "type": "tabs",
         "children": [
           {
-            "id": "662f931259822340",
+            "id": "457d83f078c19362",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "wiki/concepts/austin-drug-circle.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "austin-drug-circle"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "wiki/concepts/austin-drug-circle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for austin-drug-circle"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "wiki/concepts/austin-drug-circle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from austin-drug-circle"
             }
           },
           {
@@ -150,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "wiki/concepts/austin-drug-circle.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of austin-drug-circle"
             }
           }
         ]
@@ -176,15 +183,21 @@
       "bases:Create new base": false
     }
   },
-  "active": "662f931259822340",
+  "active": "457d83f078c19362",
   "lastOpenFiles": [
+    "wiki/entities/people/david-bloom.md",
+    "wiki/entities/people/jaeden.md",
+    "wiki/entities/people/larry-lawyer.md",
+    "wiki/entities/groups/group-amadeus-angel-evan-2.md",
+    "wiki/concepts/music-collaborators-2026.md",
+    "wiki/entities/people/keith-varon.md",
+    "wiki/concepts/dvro-2026-02-03.md",
     "wiki/entities/people/abraham-crypto.md",
     "wiki/entities/groups/gold-kums-powna-ams-family.md",
     "wiki/concepts/eclipse-labs.md",
     "wiki/concepts/austin-drug-circle.md",
     "wiki/concepts/klein-ct-property.md",
     "wiki/concepts/adithya-business-portfolio.md",
-    "wiki/concepts/dvro-2026-02-03.md",
     "wiki/entities/groups/misc-small-groups.md",
     "wiki/entities/groups/group-amadeus-angel.md",
     "wiki/entities/groups/amsterdam.md",
@@ -197,12 +210,6 @@
     "wiki/entities/people/xanos.md",
     "wiki/entities/people/vihan-bhargava.md",
     "wiki/entities/people/tyler-sheppard.md",
-    "wiki/entities/people/stacey-brandon.md",
-    "wiki/entities/people/sandeep-chinchali.md",
-    "wiki/entities/people/ryan-ut-austin.md",
-    "wiki/entities/people/rohin.md",
-    "wiki/entities/people/rene-hinge-austin.md",
-    "wiki/entities/people/parth-croft.md",
-    "wiki/entities/people/memoria-xi.md"
+    "wiki/entities/people/stacey-brandon.md"
   ]
 }

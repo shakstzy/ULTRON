@@ -34,3 +34,7 @@ Hey Christine. I can show you the place. I've got time Sunday at 11:30 AM, Monda
 ### 2026-05-09T23:55:19.000Z - xtian hdz
 
 hi, perfect any of those times is great is there an application fee before I come out? and What di you require for rent? Thank you
+
+### 2026-05-10T22:02:42.406Z - Owner (Adithya)
+
+No fee before you tour. The app is $25 and you can do it after. Rooms are $1,000 to $1,250 a month depending on which one you want, plus a flat $100 for utilities. Let's lock in Monday at 11:30 AM Central. Does that work for you?

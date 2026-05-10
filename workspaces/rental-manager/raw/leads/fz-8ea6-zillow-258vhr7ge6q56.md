@@ -46,3 +46,7 @@ Got it. I can do Monday at 2 PM or Tuesday at 5 PM. Which one works better for y
 ### 2026-05-10T13:13:34.000Z - Fz Kingz
 
 I can do Tuesday 5-5:30
+
+### 2026-05-10T22:02:20.183Z - Owner (Adithya)
+
+My bad, Tuesday at 5 just filled up. I can do Monday at 11:30 AM, Tuesday at 2 PM, or Wednesday at 5 PM. Do any of those work for you?

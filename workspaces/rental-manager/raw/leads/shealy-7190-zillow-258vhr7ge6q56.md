@@ -55,3 +55,7 @@ Yeah it's 1000 for one of those rooms if it's just you. Utilities are a flat 100
 ### 2026-05-10T17:54:00.000Z - Shealy Cardona
 
 okay! when can i tour ?
+
+### 2026-05-10T22:01:53.561Z - Owner (Adithya)
+
+I can show the place tomorrow at 11:30 am, Tuesday at 2 pm, or Wednesday at 5 pm. Do any of those work for you?

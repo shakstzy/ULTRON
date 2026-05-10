@@ -1,17 +1,17 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-09T21:15:27.042086+00:00'
+ingested_at: '2026-05-10T12:30:04.632341+00:00'
 ingest_version: 1
-content_hash: 'blake3:4dbb8e6ba1ac51d1649e0a58a0c972b9990171547c037b336df1cc96079835d6'
-provider_modified_at: '2026-05-09T15:55:06-05:00'
+content_hash: 'blake3:8301b6c036ca75ebe8b87c80c2b8d38e9c3c9d3aa8ca0ddd46238960d84bc064'
+provider_modified_at: '2026-05-10T07:23:54-05:00'
 contact_slug: east-parke-main-group
 contact_type: group
 month: 2026-05
-date_range: [2026-05-02, 2026-05-09]
-message_count: 30
+date_range: [2026-05-02, 2026-05-10]
+message_count: 31
 my_message_count: 0
-their_message_count: 30
+their_message_count: 31
 attachments: []
 whatsapp_chat_jid: '120363023221027012@g.us'
 whatsapp_chat_kind: group
@@ -82,3 +82,7 @@ Please do share if you know anyone looking to rent.
 **11:25 — @142661650493504:** Did anyone get a package that looks like medication? It said it was delivered, but I did not get anything so I’m assuming they dropped it off at the wrong place.
 **14:03 — @1280571375656:** [image: image_20260509_142615.jpg]
 **15:55 — @35545317158996:** Car# with MSW 5229 停在 Lewiston Way, please contact me.
+
+## 2026-05-10 (Sunday)
+
+**07:23 — @99330077769923:** I will look into a spot treatment for the crab grass

@@ -1,17 +1,17 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-07T21:17:08.839338+00:00'
+ingested_at: '2026-05-10T03:00:02.654835+00:00'
 ingest_version: 1
-content_hash: 'blake3:c1be57c2afda1028e560cc89be54ccd8ed1f8bf52ebe1ff4199786f27d403edd'
-provider_modified_at: '2026-05-07T15:14:58-05:00'
+content_hash: 'blake3:384e21f96bac391b17146380cdc45b92eed07f4fb7b14d15994e52a4176794ec'
+provider_modified_at: '2026-05-09T21:49:40-05:00'
 contact_slug: devi-balu-family
 contact_type: group
 month: 2026-05
-date_range: [2026-05-02, 2026-05-07]
-message_count: 8
+date_range: [2026-05-02, 2026-05-09]
+message_count: 11
 my_message_count: 0
-their_message_count: 8
+their_message_count: 11
 attachments: []
 whatsapp_chat_jid: '120363313814441793@g.us'
 whatsapp_chat_kind: group
@@ -39,3 +39,9 @@ superseded_by: null
 
 listen to msgs from @61542703857907
 **15:14 — @273288869752960:** [audio: audio_20260507_151458.ogg]
+
+## 2026-05-09 (Saturday)
+
+**21:49 — @273288869752960:** [image: image_20260509_214919.jpg]
+**21:49 — @273288869752960:** [image: image_20260509_214921.jpg]
+**21:49 — @273288869752960:** Happy Mother's Day to Mommy! She rocked it.

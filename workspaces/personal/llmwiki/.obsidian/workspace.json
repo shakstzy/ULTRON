@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/concepts/adithya-business-portfolio.md",
+                "file": "wiki/entities/people/memoria-xi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "adithya-business-portfolio"
+              "title": "memoria-xi"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/concepts/adithya-business-portfolio.md",
+                "file": "wiki/entities/people/memoria-xi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for adithya-business-portfolio"
+              "title": "Backlinks for memoria-xi"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "wiki/concepts/adithya-business-portfolio.md",
+                "file": "wiki/entities/people/memoria-xi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from adithya-business-portfolio"
+              "title": "Outgoing links from memoria-xi"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "wiki/concepts/adithya-business-portfolio.md",
+                "file": "wiki/entities/people/memoria-xi.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of adithya-business-portfolio"
+              "title": "Outline of memoria-xi"
             }
           }
         ]
@@ -185,6 +185,7 @@
   },
   "active": "457d83f078c19362",
   "lastOpenFiles": [
+    "wiki/concepts/adithya-business-portfolio.md",
     "wiki/entities/people/sai-om-uncle.md",
     "wiki/entities/people/jim-edmunds.md",
     "wiki/entities/people/lorenzo.md",
@@ -206,7 +207,6 @@
     "wiki/entities/groups/gold-kums-powna-ams-family.md",
     "wiki/concepts/eclipse-labs.md",
     "wiki/concepts/klein-ct-property.md",
-    "wiki/concepts/adithya-business-portfolio.md",
     "wiki/entities/groups/misc-small-groups.md",
     "wiki/entities/groups/group-amadeus-angel.md",
     "wiki/entities/groups/amsterdam.md",

@@ -24,7 +24,7 @@ Later in April: "At work wsup" implies active, responsive.
 
 ## Notable
 
-- Adithya clusters Mike with Zach (Zachary Falkowski) and "Jonny" (likely [[wiki/entities/people/johnny-lee]]) for SF meetups.
+- Adithya clusters Mike with Zach (Zachary Falkowski) and "Jonny" (likely johnny-lee (no page yet)) for SF meetups.
 - Works in FiDi.
 
 ## Open questions

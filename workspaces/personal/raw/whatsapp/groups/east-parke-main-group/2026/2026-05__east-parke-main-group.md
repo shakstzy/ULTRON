@@ -1,17 +1,17 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-10T17:39:35.001182+00:00'
+ingested_at: '2026-05-10T22:32:04.091443+00:00'
 ingest_version: 1
-content_hash: 'blake3:2da52eb8b82051b2759d7bbf79ae4d0de26670addfbf4eb245df9b4088f9f318'
-provider_modified_at: '2026-05-10T12:20:49-05:00'
+content_hash: 'blake3:45637f25b1380c0dab5bdec2cb984108fcd021b16346ec601bf1e601b6f791e7'
+provider_modified_at: '2026-05-10T17:06:29-05:00'
 contact_slug: east-parke-main-group
 contact_type: group
 month: 2026-05
 date_range: [2026-05-02, 2026-05-10]
-message_count: 34
+message_count: 35
 my_message_count: 0
-their_message_count: 34
+their_message_count: 35
 attachments: []
 whatsapp_chat_jid: '120363023221027012@g.us'
 whatsapp_chat_kind: group
@@ -89,3 +89,4 @@ Please do share if you know anyone looking to rent.
 **10:30 — @99330077769923:** @ryan Tried to buy the quintessential and it said I needed to be a licensed professional, am I doing something wrong?
 **10:48 — @143400535892196:** [image: image_20260510_112610.jpg]
 **12:20 — @168624962711656:** I always bought mine straight from Amazon. Let me take a look if the rules have changed.
+**17:06 — @99330077769923:** If you can get me some I can pay.  Just don't let the cops know.  I don't need any issues with reh fuzz

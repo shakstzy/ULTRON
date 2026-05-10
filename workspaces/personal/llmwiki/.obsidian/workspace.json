@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/concepts/austin-drug-circle.md",
+                "file": "wiki/concepts/adithya-business-portfolio.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "austin-drug-circle"
+              "title": "adithya-business-portfolio"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/concepts/austin-drug-circle.md",
+                "file": "wiki/concepts/adithya-business-portfolio.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for austin-drug-circle"
+              "title": "Backlinks for adithya-business-portfolio"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "wiki/concepts/austin-drug-circle.md",
+                "file": "wiki/concepts/adithya-business-portfolio.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from austin-drug-circle"
+              "title": "Outgoing links from adithya-business-portfolio"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "wiki/concepts/austin-drug-circle.md",
+                "file": "wiki/concepts/adithya-business-portfolio.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of austin-drug-circle"
+              "title": "Outline of adithya-business-portfolio"
             }
           }
         ]
@@ -185,6 +185,16 @@
   },
   "active": "457d83f078c19362",
   "lastOpenFiles": [
+    "wiki/entities/people/sai-om-uncle.md",
+    "wiki/entities/people/jim-edmunds.md",
+    "wiki/entities/people/lorenzo.md",
+    "wiki/entities/people/filip.md",
+    "wiki/entities/people/noah-renter.md",
+    "wiki/entities/people/caitlin.md",
+    "wiki/entities/people/wes-cyphers.md",
+    "wiki/entities/people/will-avery.md",
+    "wiki/entities/people/jeff-sei.md",
+    "wiki/concepts/austin-drug-circle.md",
     "wiki/entities/people/david-bloom.md",
     "wiki/entities/people/jaeden.md",
     "wiki/entities/people/larry-lawyer.md",
@@ -195,21 +205,11 @@
     "wiki/entities/people/abraham-crypto.md",
     "wiki/entities/groups/gold-kums-powna-ams-family.md",
     "wiki/concepts/eclipse-labs.md",
-    "wiki/concepts/austin-drug-circle.md",
     "wiki/concepts/klein-ct-property.md",
     "wiki/concepts/adithya-business-portfolio.md",
     "wiki/entities/groups/misc-small-groups.md",
     "wiki/entities/groups/group-amadeus-angel.md",
     "wiki/entities/groups/amsterdam.md",
-    "wiki/entities/groups/intervention-4-shakti.md",
-    "wiki/entities/groups/group-caitlin-keith-ryan.md",
-    "wiki/entities/groups/group-noah-sam.md",
-    "wiki/entities/groups/klein-roomates.md",
-    "wiki/entities/groups/group-adarsh-prabhat-pseuhas.md",
-    "wiki/entities/groups/group-adarsh-prabhat-rushil.md",
-    "wiki/entities/people/xanos.md",
-    "wiki/entities/people/vihan-bhargava.md",
-    "wiki/entities/people/tyler-sheppard.md",
-    "wiki/entities/people/stacey-brandon.md"
+    "wiki/entities/groups/intervention-4-shakti.md"
   ]
 }

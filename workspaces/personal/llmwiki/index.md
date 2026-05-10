@@ -1,137 +1,114 @@
 # Index
 
-Catalog of every wiki page. Format: `[[path]] : one-line summary`. Read first on any query.
+Navigation hub for the wiki. After batch 4 (the 7-worker swarm), the entity directory has ~800 pages — too many to list in full here. This index gives cohort-level orientation. For a specific person, `ls wiki/entities/people/` and grep is faster than scanning a flat list.
 
-## Overview
+## Start here
 
-- [[wiki/overview]] : top-level orientation for the wiki.
+- [[wiki/overview]] : top-level orientation, current as of 2026-05-09.
+- [[log]] : append-only history of every ingest, query, and lint pass.
 
-## Entities
+## Synthesis pages
 
-### People — family
+Cross-cutting reads built from multiple entities:
 
-- [[wiki/entities/people/aarti-dad]] : Adithya's ex's father; recipient of his Feb 2026 breakup letter.
-- [[wiki/entities/people/arya]] : likely sibling, surname Kumar; sibling-banter tone.
-- [[wiki/entities/people/dad]] : Adithya's father; transactional 1:1, emotional content surfaces in dad-mom group.
-- [[wiki/entities/people/mom]] : Adithya's mother; highest-volume thread in the corpus.
+- [[wiki/synthesis/relationships-2026-05]] : May 2026 romantic state across Sanvi, Binni, Rishika, Aurat, plus active Hinge threads.
 
-### People — romantic
+## Concept pages
 
-- [[wiki/entities/people/aaliyah-hinge-austin]] : Hinge Austin match, dating phase March 2026.
-- [[wiki/entities/people/aurat]] : long-distance romantic interest April 2026; most emotionally exposed channel.
-- [[wiki/entities/people/binni]] : active romantic interest May 2026, sneaking past parents.
-- [[wiki/entities/people/kayla-hinge-dallas]] : hostile-flirty Hinge Dallas re-match.
-- [[wiki/entities/people/rene-hinge-austin]] : light Hinge Austin reactivation May 2026.
-- [[wiki/entities/people/rishika]] : UC Berkeley ex; largest 1:1 by volume; still actively engaging.
-- [[wiki/entities/people/rushu-hinge-dallas]] : Hinge Dallas, delivered a sharp critique Feb 2026.
-- [[wiki/entities/people/sanvi]] : active dating partner May 2026 (slug `-sister` is a contact-name artifact).
+Themes that span multiple entities. Read these first when answering a query that touches one of these areas.
 
-### People — friends
+- [[wiki/concepts/adithya-business-portfolio]] : Outerscope, Eclipse, Forge, SeedBox, a16z, Synapse, music, rentals.
+- [[wiki/concepts/austin-drug-circle]] : recurring substances and the friend cluster around them.
+- [[wiki/concepts/austin-rental-tenants]] : Klein Ct tenants, prospects, disputes both directions.
+- [[wiki/concepts/breakup-aarti-2026-02]] : Sept 2025 to Feb 2026 Aarti relationship arc.
+- [[wiki/concepts/dvro-2026-02-03]] : DVRO filed against Adithya in early 2026; Dimpal-Aarti as candidate-adjacent thread.
+- [[wiki/concepts/eclipse-labs]] : personal-side touchpoint to the Eclipse work.
+- [[wiki/concepts/family-tension]] : autonomy / authority dynamic with parents.
+- [[wiki/concepts/klein-ct-property]] : 13245 Klein Ct hub.
+- [[wiki/concepts/music-collaborators-2026]] : LA / Austin / SF producer pipeline + Prescription business pod.
+- [[wiki/concepts/uc-berkeley-cohort]] : Berkeley friend cluster, NYC and Bay branches.
 
-- [[wiki/entities/people/adarsh-pinjala]] : UC Berkeley NYC, anchors the largest group chats.
-- [[wiki/entities/people/dravin-raj]] : Austin, casual late-night meetups.
-- [[wiki/entities/people/edwin-gregory]] : UC Berkeley "Greg / Pseuwin," 4/20 drug pal.
-- [[wiki/entities/people/maanav-khaitan]] : UC Berkeley NYC, light contact.
-- [[wiki/entities/people/mo-snaps]] : UC Berkeley friend; birthday April 10.
-- [[wiki/entities/people/noah-bailie]] : close friend, drug pal, has partner Keira.
-- [[wiki/entities/people/parth-croft]] : Austin / UT-adjacent; references Bufords shooting.
-- [[wiki/entities/people/prabhat]] : UC Berkeley; mostly group-chat presence.
-- [[wiki/entities/people/pseuhas]] : UC Berkeley NYC, center of cohort vocabulary.
-- [[wiki/entities/people/rohin]] : transferred Berkeley → Davis, asked Adithya for crypto recruiting advice.
-- [[wiki/entities/people/rushil-jha]] : UC Berkeley currently in NYC.
-- [[wiki/entities/people/ryan-ut-austin]] : UT Austin contact, light.
-- [[wiki/entities/people/saif-ali]] : Berkeley NYC, legal-shaped advisor; March 2026 DVRO conversation.
-- [[wiki/entities/people/sam-garcia]] : friend, Austin, talks through interpersonal calls.
-- [[wiki/entities/people/shervin]] : UC Berkeley blockchain; birthday March 27.
-- [[wiki/entities/people/vihan-bhargava]] : UC Berkeley NYC, recently became a pilot.
+## Entities — by cohort
 
-### People — music collaborators
+Counts are approximate (W6-REDO in flight). Each cohort has a representative page list; for the full set, check the filesystem (`ls wiki/entities/people/` and grep frontmatter tags).
 
-- [[wiki/entities/people/ballr-hallr]] : LA, college-era music, unfinished recordings.
-- [[wiki/entities/people/brandon-co-beats]] : LA music light contact.
-- [[wiki/entities/people/brennan-noah-austin]] : Austin, music protege + cart source.
-- [[wiki/entities/people/caitlin]] : music industry contact handling royalty statements.
-- [[wiki/entities/people/keith-varon]] : professional collaborator, Maranatha tracks.
-- [[wiki/entities/people/memoria-xi]] : LA music friend.
-- [[wiki/entities/people/mychal-kendricks]] : LA music + crypto + ex-NFL; mentor figure.
-- [[wiki/entities/people/ryan-ogren]] : music collaborator; communicates in audio files.
-- [[wiki/entities/people/yosef]] : LA producer; sends type beats.
-- [[wiki/entities/people/zach-johnson]] : SF/LA music collaborator; "Zachio."
+### Family (~25 pages)
 
-### People — business / professional
+Tag: `family`. Exemplars:
 
-- [[wiki/entities/people/abraham-crypto]] : Lightnode Ventures LA, light crypto VC contact.
-- [[wiki/entities/people/ajay-crypto]] : LA crypto contact.
-- [[wiki/entities/people/amos-music-crypto]] : LA music+crypto.
-- [[wiki/entities/people/avery-abraham]] : SeedBox cofounder; YC application; high-friction working dynamic.
-- [[wiki/entities/people/brandon-encrypto]] : crypto Twitter promo (encrypto.fun).
-- [[wiki/entities/people/dr-luke]] : LA investor / advisor; recipient of crypto deal memos.
-- [[wiki/entities/people/gio-octane]] : crypto advisor; gave pitch feedback on Synapse.
-- [[wiki/entities/people/jamal-nyc]] : NYC light contact, no content.
-- [[wiki/entities/people/james-cryptobitmag]] : crypto operator, builder mode.
-- [[wiki/entities/people/sandeep-chinchali]] : Austin senior advisor, asked re a16z DD.
-- [[wiki/entities/people/stacey-brandon]] : housing-stay request April 2026.
-- [[wiki/entities/people/sydney-huang]] : Eclipse Labs CEO (work overflow).
-- [[wiki/entities/people/tyler-sheppard]] : LA, in Dr Luke's circle.
-- [[wiki/entities/people/xanos]] : Moved Network, dating-AI optimization.
+- [[wiki/entities/people/mom]], [[wiki/entities/people/dad]], [[wiki/entities/people/arya]], [[wiki/entities/people/sai-om-uncle]], [[wiki/entities/people/ankur-uncle]], [[wiki/entities/people/aarti-dad]] (ex's father).
 
-### People — renters and tenants
+### Romantic / dating (~70 pre-W6-REDO, ~250 post)
 
-- [[wiki/entities/people/amadeus-renter]] : Austin renter "Deus"; low-friction.
-- [[wiki/entities/people/angel-renter]] : Austin renter, peacekeeper voice.
-- [[wiki/entities/people/austin-davis]] : the lawsuit tenant; Klein Ct, five months unpaid rent.
-- [[wiki/entities/people/evan-renter]] : Austin renter "Verb"; delivered the Dec 2025 ADHD intervention.
-- [[wiki/entities/people/john-renter]] : late tenant, just landed assistant property manager job.
-- [[wiki/entities/people/zubair-renter]] : short stay, vacated Jan 2026 with refund dispute.
+Tag: `dating`, `hinge`, `romantic`. Exemplars:
 
-### People — services and utility
+- Active 2026: [[wiki/entities/people/sanvi]], [[wiki/entities/people/binni]], [[wiki/entities/people/aurat]].
+- Long-term ex / unresolved: [[wiki/entities/people/rishika]].
+- Hinge — substantive: [[wiki/entities/people/aaliyah-hinge-austin]], [[wiki/entities/people/kayla-hinge-dallas]], [[wiki/entities/people/rene-hinge-austin]], [[wiki/entities/people/rushu-hinge-dallas]], plus the post-W6-REDO cohort.
 
-- [[wiki/entities/people/sasoon-insurance]] : insurance / body shop; second car accident in Feb 2026.
+### UC Berkeley friends (~57 pages)
 
-### People — self-thread
+Tag: `uc-berkeley`. Exemplars:
 
-- [[wiki/entities/people/adithya-self]] : Adithya's own contact card; debugging an iMessage agent.
+- Core: [[wiki/entities/people/pseuhas]], [[wiki/entities/people/saif-ali]], [[wiki/entities/people/adarsh-pinjala]], [[wiki/entities/people/rushil-jha]], [[wiki/entities/people/prabhat]], [[wiki/entities/people/maanav-khaitan]], [[wiki/entities/people/vihan-bhargava]], [[wiki/entities/people/shervin]], [[wiki/entities/people/mo-snaps]], [[wiki/entities/people/edwin-gregory]], [[wiki/entities/people/rohin]].
+- Cluster groups: [[wiki/entities/groups/group-adarsh-prabhat-rushil]], [[wiki/entities/groups/group-adarsh-prabhat-pseuhas]].
 
-### People — light / deferred
+### Music collaborators (~88 with `music` tag)
 
-- [[wiki/entities/people/evan-layer]] : different Evan; light April ping.
+- Production: [[wiki/entities/people/keith-varon]], [[wiki/entities/people/yosef]], [[wiki/entities/people/ryan-ogren]], [[wiki/entities/people/zach-johnson]], [[wiki/entities/people/brennan-noah-austin]], [[wiki/entities/people/jean-parker]], [[wiki/entities/people/ballr-hallr]], [[wiki/entities/people/wes-cyphers]], [[wiki/entities/people/kraogotthesauce]], [[wiki/entities/people/trey-austin]].
+- A&R / business: [[wiki/entities/people/caitlin]], [[wiki/entities/people/rhea]].
+- Confirmed credit: [[wiki/entities/people/trevor]] (Iann Dior "Gucci Bag").
+- Mentor / cross-domain: [[wiki/entities/people/mychal-kendricks]], [[wiki/entities/people/dr-luke]].
 
-### Groups
+### Tenants and prospects (~60 with `renter` / `showing` / `klein-ct` tags)
 
-- [[wiki/entities/groups/amsterdam]] : 2024 travel group.
-- [[wiki/entities/groups/deus-shak-verb]] : Austin roommate group; site of Dec 2025 ADHD intervention.
-- [[wiki/entities/groups/gold-kums-powna-ams-family]] : extended family group chat.
-- [[wiki/entities/groups/group-adarsh-prabhat-pseuhas]] : Berkeley cohort; site of nitrous intervention + Manith jokes.
-- [[wiki/entities/groups/group-adarsh-prabhat-rushil]] : Berkeley cohort; international trip planning + Dubai.
-- [[wiki/entities/groups/group-amadeus-angel]] : Klein Ct roommate sub-groups.
-- [[wiki/entities/groups/group-caitlin-keith-ryan]] : music industry pod with demo batches.
-- [[wiki/entities/groups/group-dad-mom]] : parents three-way; load-bearing emotional content.
-- [[wiki/entities/groups/group-noah-sam]] : casual hangouts + Noah's hookup commentary.
-- [[wiki/entities/groups/intervention-4-shakti]] : group named for Adithya; April 2026 stub.
-- [[wiki/entities/groups/klein-roomates]] : Klein Ct roommate logistics 2024–2026.
-- [[wiki/entities/groups/misc-small-groups]] : 8 light groups consolidated (23109, group-pseuhas-rushil, group-keith-ryan, group-austin-dad, mit-launchx-sf, swol-patrol, unkal, xx).
+- Active / past tenants: [[wiki/entities/people/evan-renter]], [[wiki/entities/people/amadeus-renter]], [[wiki/entities/people/angel-renter]], [[wiki/entities/people/john-renter]], [[wiki/entities/people/zubair-renter]], [[wiki/entities/people/austin-davis]], [[wiki/entities/people/noah-renter]].
+- Lawyer: [[wiki/entities/people/larry-lawyer]].
+- Near-signed: [[wiki/entities/people/sidhant]].
+- ~17 prospect stubs at TIER 2.
 
-### Places
+### Business / professional / VC (~31 with `crypto`, plus other professional contacts)
 
-(none yet — see [[wiki/concepts/klein-ct-property]] as the closest hub)
+- Eclipse: [[wiki/entities/people/sydney-huang]], [[wiki/entities/people/jaeden]].
+- VC / investor / advisor: [[wiki/entities/people/dr-luke]], [[wiki/entities/people/sandeep-chinchali]], [[wiki/entities/people/gio-octane]], [[wiki/entities/people/david-bloom]], [[wiki/entities/people/jeff-sei]], [[wiki/entities/people/ankur-uncle]].
+- Cofounders / collaborators: [[wiki/entities/people/avery-abraham]] (SeedBox), [[wiki/entities/people/will-avery]] (gmtrade.xyz), [[wiki/entities/people/james-cryptobitmag]].
 
-## Concepts
+### Austin friend layer
 
-- [[wiki/concepts/adithya-business-portfolio]] : Eclipse, a16z, SeedBox, venture studio, Synapse, music, rentals.
-- [[wiki/concepts/austin-drug-circle]] : recurring substances and the Austin friend cluster around them.
-- [[wiki/concepts/austin-rental-tenants]] : Adithya's Austin rentals; multiple tenants and dynamics.
-- [[wiki/concepts/breakup-aarti-2026-02]] : timeline and stated framing of the Feb 2026 Aarti breakup.
-- [[wiki/concepts/dvro-2026-02-03]] : Domestic Violence Restraining Order filed against Adithya.
-- [[wiki/concepts/eclipse-labs]] : personal-side touchpoint to Adithya's primary work workspace.
-- [[wiki/concepts/family-tension]] : recurring autonomy / authority dynamic with parents.
-- [[wiki/concepts/klein-ct-property]] : the Austin rental property hub.
-- [[wiki/concepts/music-collaborators-2026]] : Ryan, Caitlin, Yosef, Keith, Zach, Brennan, Mychal cluster.
-- [[wiki/concepts/uc-berkeley-cohort]] : Berkeley friend cluster, NYC and Bay Area branches.
+- [[wiki/entities/people/noah-bailie]], [[wiki/entities/people/sam-garcia]], [[wiki/entities/people/dravin-raj]], [[wiki/entities/people/parth-croft]], [[wiki/entities/people/filip]], [[wiki/entities/people/lorenzo]].
+
+### Services and utility
+
+- [[wiki/entities/people/sasoon-insurance]], [[wiki/entities/people/larry-lawyer]].
+
+### Self-thread
+
+- [[wiki/entities/people/adithya-self]] (developer artifact, not a real person).
+
+## Groups
+
+Tag: `group`. ~118 dedicated pages plus two consolidation pages ([[wiki/entities/groups/misc-small-groups]] and [[wiki/entities/groups/misc-small-groups-2]]) covering the long tail of thin groups.
+
+Highlight pages:
+
+- Family: [[wiki/entities/groups/gold-kums-powna-ams-family]], [[wiki/entities/groups/group-dad-mom]].
+- Roommate: [[wiki/entities/groups/deus-shak-verb]], [[wiki/entities/groups/klein-roomates]], [[wiki/entities/groups/group-amadeus-angel]].
+- Berkeley core: [[wiki/entities/groups/group-adarsh-prabhat-rushil]], [[wiki/entities/groups/group-adarsh-prabhat-pseuhas]].
+- Music: [[wiki/entities/groups/group-caitlin-keith-ryan]].
+- Austin: [[wiki/entities/groups/group-noah-sam]], [[wiki/entities/groups/intervention-4-shakti]].
+- Travel: [[wiki/entities/groups/amsterdam]].
+
+## How to find a specific page
+
+For the LLM: this index is orientation, not exhaustive. To answer a specific query:
+
+1. If the query is about a named person, group, or place: `ls wiki/entities/people/ | grep -i <name>` then read the matched page.
+2. If it's about a theme: read the relevant concept page from the list above.
+3. If it's a cross-cutting question: read `relationships-2026-05` (synthesis) or any concept page that fits.
+4. If nothing turns up: grep frontmatter tags or full text across `wiki/`.
 
 ## Sources
 
-(none — iMessage shards are cited directly via entity-page `sources` frontmatter)
+iMessage shards are cited directly in entity-page `sources:` frontmatter. No per-shard source pages were generated; that level of granularity would balloon the wiki without compensating signal.
 
-## Synthesis
-
-- [[wiki/synthesis/relationships-2026-05]] : point-in-time read on Sanvi, Binni, Rishika, Aurat, plus Hinge / dating-app activity.
+The structured fact set across all 7 workers is at `/tmp/imw/all_facts.jsonl` (1,415 entries pre-W6-REDO).

@@ -1,9 +1,9 @@
 ---
 source: discord
 workspace: personal
-ingested_at: '2026-05-10T11:06:09.628Z'
+ingested_at: '2026-05-10T23:03:15.008Z'
 ingest_version: 1
-content_hash: sha256:a6137160c1b74cf0b466e1c93b10f27bfd3fde727fbb292a3e3a990af2bab9ae
+content_hash: sha256:a310276b6cadab491285d0b8b9dad8a47daa726f0b0b97c086b550d2d9bbaad5
 provider_modified_at: '2025-12-25T20:54:17.659Z'
 contact_slug: shva-shvalockedin
 contact_type: individual
@@ -16,19 +16,19 @@ attachments:
   - message_id: '1445450955230543983'
     kind: image
     filename: image.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1445450954907320420/image.png?ex=6a015a5a&is=6a0008da&hm=15ba11556ffa27823154aae4c94367d731cf24128fe8f7fb3cc81cfd5917f2af&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1445450954907320420/image.png?ex=6a02031a&is=6a00b19a&hm=2adfec0957fa828d8563d1bb010d9f95b65c636c4f8a59127e3abcfcb1bca1a9&'
     size: 40790
-    description: 'A congratulatory message from Topstep to SHVATrades for becoming a funded trader.'
+    description: 'A welcome email congratulating SHVATrades on becoming a Topstep Funded Trader.'
   - message_id: '1446060760261328967'
     kind: image
     filename: image.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1446060760114532454/image.png?ex=6a019807&is=6a004687&hm=cd772624cc0b7eb87af2ea92bc6737a8b3b48620d421ef9b001c9ac2681df4d7&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1446060760114532454/image.png?ex=6a0240c7&is=6a00ef47&hm=c7b6d1158bea90f51a5d246ee7b650631f8d5b3e80fdf154406d8b65546f235d&'
     size: 22777
-    description: 'A dark interface shows the username shvatrades with 11 subscribers, a notification bell, and 11 likes.'
+    description: 'A YouTube interface shows the channel shvatrades with 11 subscribers and 11 likes.'
   - message_id: '1453853382421778597'
     kind: file
     filename: message.txt
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1453853382405128222/message.txt?ex=6a019939&is=6a0047b9&hm=913834381cded15135a50d29f996d2aef51d8d95110973422998d9c42c75ab57&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1453853382405128222/message.txt?ex=6a0241f9&is=6a00f079&hm=d49c2731107935824998571ebee80cc22d7d7bcdafbe4b66addfab62ddde8d36&'
     size: 5777
     description: null
 discord_channel_id: '1292220510603575366'
@@ -44,7 +44,7 @@ superseded_by: null
 ## 2025-12-02 (Tuesday)
 
 **10:26 — SHVA:** 
-↳ image: image.png (40 KB) — "A congratulatory message from Topstep to SHVATrades for becoming a funded trader." — https://cdn.discordapp.com/attachments/1292220510603575366/1445450954907320420/image.png?ex=6a015a5a&is=6a0008da&hm=15ba11556ffa27823154aae4c94367d731cf24128fe8f7fb3cc81cfd5917f2af&
+↳ image: image.png (40 KB) — "A welcome email congratulating SHVATrades on becoming a Topstep Funded Trader." — https://cdn.discordapp.com/attachments/1292220510603575366/1445450954907320420/image.png?ex=6a02031a&is=6a00b19a&hm=2adfec0957fa828d8563d1bb010d9f95b65c636c4f8a59127e3abcfcb1bca1a9&
 **10:26 — SHVA:** ts nuts
 **10:57 — me:** Fire bruh congrats man
 **10:57 — me:** This is heat
@@ -57,7 +57,7 @@ superseded_by: null
 **00:04 — SHVA:** https://www.youtube.com/watch?v=B9vC8p9CngU&feature=youtu.be
 **02:47 — me:** this fire
 **02:49 — me:** boay got double digit subs now
-↳ image: image.png (22 KB) — "A dark interface shows the username shvatrades with 11 subscribers, a notification bell, and 11 likes." — https://cdn.discordapp.com/attachments/1292220510603575366/1446060760114532454/image.png?ex=6a019807&is=6a004687&hm=cd772624cc0b7eb87af2ea92bc6737a8b3b48620d421ef9b001c9ac2681df4d7&
+↳ image: image.png (22 KB) — "A YouTube interface shows the channel shvatrades with 11 subscribers and 11 likes." — https://cdn.discordapp.com/attachments/1292220510603575366/1446060760114532454/image.png?ex=6a0240c7&is=6a00ef47&hm=c7b6d1158bea90f51a5d246ee7b650631f8d5b3e80fdf154406d8b65546f235d&
 
 ## 2025-12-08 (Monday)
 
@@ -86,4 +86,4 @@ https://capable-druid-db88db.netlify.app/
 ## 2025-12-25 (Thursday)
 
 **14:54 — SHVA:** 
-↳ file: message.txt (6 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1453853382405128222/message.txt?ex=6a019939&is=6a0047b9&hm=913834381cded15135a50d29f996d2aef51d8d95110973422998d9c42c75ab57&
+↳ file: message.txt (6 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1453853382405128222/message.txt?ex=6a0241f9&is=6a00f079&hm=d49c2731107935824998571ebee80cc22d7d7bcdafbe4b66addfab62ddde8d36&

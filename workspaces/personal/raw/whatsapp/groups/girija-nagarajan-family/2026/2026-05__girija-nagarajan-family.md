@@ -1,17 +1,17 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-11T15:31:35.302124+00:00'
+ingested_at: '2026-05-11T19:00:05.522811+00:00'
 ingest_version: 1
-content_hash: 'blake3:7d7db779bba19fc3b882a04f0a41c49e455e642371f88a5e7dd30632b8cd4be9'
-provider_modified_at: '2026-05-11T08:15:51-05:00'
+content_hash: 'blake3:363fe06d1ca19ce27f2f996a68d00773dc57ef4aa5eb816ea58fda22b26f5a0b'
+provider_modified_at: '2026-05-10T23:51:39-05:00'
 contact_slug: girija-nagarajan-family
 contact_type: group
 month: 2026-05
-date_range: [2026-05-01, 2026-05-11]
-message_count: 162
+date_range: [2026-05-01, 2026-05-10]
+message_count: 148
 my_message_count: 0
-their_message_count: 162
+their_message_count: 148
 attachments: []
 whatsapp_chat_jid: '15104499964-1417839295@g.us'
 whatsapp_chat_kind: group
@@ -312,20 +312,3 @@ Madras medical college
 **23:48 — @110458136715502:** [image: image_20260511_004012.jpg]
 **23:49 — @110458136715502:** [image: image_20260511_004012.jpg]
 **23:51 — @110458136715502:** [image: image_20260511_004012.jpg]
-
-## 2026-05-11 (Monday)
-
-**03:15 — @97779393253611:** [video: video_20260511_031510.mp4]
-**03:15 — @97779393253611:** [image: image_20260511_031511.jpg]
-**03:15 — @97779393253611:** [image: image_20260511_031511.jpg]
-**03:15 — @97779393253611:** [video: video_20260511_031512.mp4]
-**03:15 — @97779393253611:** [image: image_20260511_031512.jpg]
-**03:15 — @97779393253611:** [image: image_20260511_031512.jpg]
-**03:15 — @97779393253611:** [image: image_20260511_031513.jpg]
-**05:49 — @161765782458372:** https://www.instagram.com/reel/DYJhUayqVdl/?igsh=MWFmbGdmM2xkZmVhcQ==
-**05:55 — @161765782458372:** https://www.facebook.com/share/r/18prQ3rZAJ/?mibextid=wwXIfr
-**06:21 — @126800420147335:** May God bless u for doing that
-**06:24 — @161765782458372:** https://www.facebook.com/share/r/1AxVosR33d/?mibextid=wwXIfr
-**07:56 — @110458136715502:** [video: video_20260511_075639.mp4]
-**08:15 — @161765782458372:** [image: image_20260511_081530.jpg]
-**08:15 — @161765782458372:** https://www.instagram.com/reel/DX3VRhGzqke/?igsh=MXhkeG8waGpueGNqOA==

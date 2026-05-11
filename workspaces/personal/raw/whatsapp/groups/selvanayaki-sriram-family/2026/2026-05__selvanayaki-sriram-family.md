@@ -1,17 +1,17 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-10T16:43:30.969169+00:00'
+ingested_at: '2026-05-11T19:00:05.524450+00:00'
 ingest_version: 1
-content_hash: 'blake3:f0b18a0cef4e3b2d770c12feebdac7ad5d9b7b166b004d3473adddc4042b5185'
-provider_modified_at: '2026-05-10T11:12:18-05:00'
+content_hash: 'blake3:8851b54289a103252f26cdeeb14c04a48d949536004d7e1bad3865c9cdac4518'
+provider_modified_at: '2026-05-11T13:53:03-05:00'
 contact_slug: selvanayaki-sriram-family
 contact_type: group
 month: 2026-05
-date_range: [2026-05-02, 2026-05-10]
-message_count: 17
+date_range: [2026-05-02, 2026-05-11]
+message_count: 20
 my_message_count: 0
-their_message_count: 17
+their_message_count: 20
 attachments: []
 whatsapp_chat_jid: '15104499964-1548215289@g.us'
 whatsapp_chat_kind: group
@@ -54,3 +54,9 @@ Wishing you both happiness, good health, and many more years together. Hope your
 
 **11:07 — @273288869752960:** [image: image_20260510_112610.jpg]
 **11:12 — @126800420147335:** Happy Mother’s Day
+
+## 2026-05-11 (Monday)
+
+**13:23 — @175509644259514:** Aruna mother in law passed away last night
+**13:48 — @273288869752960:** May her soul reach sadagati 🙏
+**13:53 — @61542703857907:** [audio: audio_20260511_135303.ogg]

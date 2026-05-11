@@ -1,62 +1,22 @@
 ---
 source: granola
 workspace: sei
-ingested_at: '2026-05-07T04:23:57.244510Z'
+ingested_at: '2026-05-11T21:15:08.699647Z'
 ingest_version: 1
-content_hash: blake3:e8fd663680931b604cd715938befdb2e343e2a21fcd3193c5323cc2d9cc52882
-provider_modified_at: '2026-05-01T04:02:14.761Z'
+content_hash: blake3:0a7e45756b59a1763d564dda87fbbfa9859b95cb2e45fa17c06e8eb86467153e
+provider_modified_at: '2026-05-08T19:53:55.578Z'
 account: adithya@outerscope.xyz
 account_slug: adithya-outerscope
 document_id: 6596fa8d-3f5e-4166-8196-11042f88daf5
 document_id_short: 6596fa8d
 title: Sei Labs all hands
 created_at: '2026-02-17T16:02:58.198Z'
-updated_at: '2026-05-01T04:02:14.761Z'
+updated_at: '2026-05-08T19:53:55.578Z'
 folders:
 - id: 3ca3cb55-d6e1-49ef-961a-8ba2469731a5
   title: SEI
-creator:
-  name: Adithya
-  email: adithya@outerscope.xyz
-attendees:
-- name: null
-  email: jay@seinetwork.io
-- name: null
-  email: jerry@seinetwork.io
-- name: null
-  email: gerald@seinetwork.io
-- name: Ecosystem Engineering
-  email: ecosystem-eng@seinetwork.io
-- name: Protocol Engineering
-  email: protocol-eng@seinetwork.io
-- name: null
-  email: clinton@seinetwork.io
-- name: null
-  email: yiren@seinetwork.io
-- name: null
-  email: kat@seinetwork.io
-- name: null
-  email: cody@seinetwork.io
-- name: null
-  email: dani@seinetwork.io
-- name: null
-  email: campbell@seinetwork.io
-- name: null
-  email: steven.cummings@seinetwork.io
-- name: null
-  email: masih@seinetwork.io
-- name: null
-  email: samer@seinetwork.io
-- name: null
-  email: alec@seinetwork.io
-- name: null
-  email: wen@seinetwork.io
-- name: null
-  email: mojtaba@seinetwork.io
-- name: null
-  email: mike@seinetwork.io
-- name: null
-  email: ryan@seinetwork.io
+creator: null
+attendees: []
 calendar_event:
   title: Sei Labs all hands
   start: '2026-02-17T10:00:00-06:00'
@@ -75,30 +35,7 @@ routed_by:
 
 # Sei Labs all hands
 
-> 2026-02-17T16:02:58.198Z · duration 36m 4s · 20 attendees
-
-## Attendees
-
-- **Adithya** (creator) <adithya@outerscope.xyz>
-- <jay@seinetwork.io>
-- <jerry@seinetwork.io>
-- <gerald@seinetwork.io>
-- Ecosystem Engineering <ecosystem-eng@seinetwork.io>
-- Protocol Engineering <protocol-eng@seinetwork.io>
-- <clinton@seinetwork.io>
-- <yiren@seinetwork.io>
-- <kat@seinetwork.io>
-- <cody@seinetwork.io>
-- <dani@seinetwork.io>
-- <campbell@seinetwork.io>
-- <steven.cummings@seinetwork.io>
-- <masih@seinetwork.io>
-- <samer@seinetwork.io>
-- <alec@seinetwork.io>
-- <wen@seinetwork.io>
-- <mojtaba@seinetwork.io>
-- <mike@seinetwork.io>
-- <ryan@seinetwork.io>
+> 2026-02-17T16:02:58.198Z · duration 36m 4s · 0 attendees
 
 ## Calendar Event
 

@@ -1,17 +1,17 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-10T16:43:30.956055+00:00'
+ingested_at: '2026-05-11T00:30:04.556004+00:00'
 ingest_version: 1
-content_hash: 'blake3:8261970c7b0a241890860ac1d3909bfaef6ec1800c8401933d5cbbd2f153a401'
-provider_modified_at: '2026-05-10T11:22:01-05:00'
+content_hash: 'blake3:0b9227d54df9f51c8c698f14f4c534193c98d1f9882735eda6fd60c05b3b6cb6'
+provider_modified_at: '2026-05-10T19:20:30-05:00'
 contact_slug: nikki-family
 contact_type: group
 month: 2026-05
 date_range: [2026-05-01, 2026-05-10]
-message_count: 23
+message_count: 26
 my_message_count: 0
-their_message_count: 23
+their_message_count: 26
 attachments: []
 whatsapp_chat_jid: '120363419673245346@g.us'
 whatsapp_chat_kind: group
@@ -63,3 +63,7 @@ I remember being in the car for mapillai oorvalam.
 
 I'll tell you about this experience when we meet live next time.
 **11:22 — @273288869752960:** How is Shreya kutty doing?
+**19:19 — @202284436856974:** This is from Amma appas marriage album that I had ...
+**19:20 — @202284436856974:** I was showing some
+Pics of our yosemite trip and sfo trip pics... Kumar anna u r  the talk ofthe town ... Shreya said u looked ao stylish
+**19:20 — @202284436856974:** She is doing  ok... she  was asking for ur number to mesaage u

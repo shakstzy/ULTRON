@@ -10,7 +10,7 @@ listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 1437876304138345868
 status_label: TOUR REQUESTED
 renter_us_state: CA
-last_pulled_at: "2026-05-11T15:31:50.896Z"
+last_pulled_at: "2026-05-11T22:00:19.367Z"
 ---
 
 # Shealy
@@ -64,6 +64,6 @@ I can show the place tomorrow at 11:30 am, Tuesday at 2 pm, or Wednesday at 5 pm
 
 i won’t be able monday or tuesday, for wednesday i work at 3 so it would have to be earlier
 
-### 2026-05-11T15:34:07.107Z - Owner (Adithya)
+### 2026-05-11T15:34:06.000Z - Owner (Adithya)
 
 I can do Wednesday at 2 pm. If that cuts it too close to work, we can do Thursday at 5 pm. Which one works better?

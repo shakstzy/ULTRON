@@ -8,7 +8,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: gmail-19e0852073bd3318
 status_label: INQUIRED
-last_pulled_at: "2026-05-11T15:31:49.661Z"
+last_pulled_at: "2026-05-11T22:00:17.432Z"
 ---
 
 # Melany
@@ -43,6 +43,18 @@ I'm actually booked for those times. I can do Sunday at 11:30am, Monday at 2pm, 
 
 I’m actually at work or at school during all of those times
 
-### 2026-05-11T15:34:48.987Z - Owner (Adithya)
+### 2026-05-11T15:34:48.000Z - Owner (Adithya)
 
 Got it. I can do Tuesday at 10 AM, Wednesday at 2 PM, or Thursday at 5 PM. Do any of those work?
+
+### 2026-05-11T16:26:49.000Z - Melany Alvizures
+
+Thursday at 5 would work perfect!
+
+### 2026-05-11T21:20:46.000Z - Owner (Adithya)
+
+Perfect. I'll put you down for Thursday at 5. What's the best number to reach you at?
+
+### 2026-05-11T21:59:03.000Z - Melany Alvizures
+
+8183887105

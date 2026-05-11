@@ -8,7 +8,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: gmail-19e0a1b0faefecae
 status_label: INQUIRED
-last_pulled_at: "2026-05-11T15:31:50.260Z"
+last_pulled_at: "2026-05-11T22:00:18.383Z"
 ---
 
 # christine
@@ -51,6 +51,14 @@ I am interested in looking to rent asap
 
 anything you may need for a documents or verification I could provide just let me know what that may be and is there a private bathroom?
 
-### 2026-05-11T15:35:13.323Z - Owner (Adithya)
+### 2026-05-11T15:35:12.000Z - Owner (Adithya)
 
 I can't waive the fee since it goes straight to Zillow for the background check. I do have two rooms open with private bathrooms. Let's do a tour first so you can see them. I have time Tuesday at 10 AM, Wednesday at 2 PM, or Thursday at 5 PM Central. Which time works for you?
+
+### 2026-05-11T15:50:29.000Z - xtian hdz
+
+I understand that part OK thank you so much. I hope you find some good candidates. Stay very blessed
+
+### 2026-05-11T21:21:07.000Z - Owner (Adithya)
+
+All good. You don't pay anything just to look. If you still want to check the place out, I have time Tuesday at 10:30 AM or Wednesday at 2:00 PM. Do either of those work?

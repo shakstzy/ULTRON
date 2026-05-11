@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-07T05:00:29.878Z"
 last_activity: "2026-05-07T05:00:29.878Z"
-last_scrape: "2026-05-11T04:18:39.084Z"
+last_scrape: "2026-05-11T20:10:48.779Z"
 previous_slugs: []
-last_profile_diff: "2026-05-11T04:18:39.084Z"
+last_profile_diff: "2026-05-11T20:10:48.779Z"
 ---
 
 ## Profile
 
 - age: 22
-- distance_mi: 1802
+- distance_mi: 1811
 - bio: "Law student 👩🏻‍💼 Not your type, I’m the upgrade ⚢🇵🇹"
 - looking_for: "Long-term partner"
 - jobs: Elle, English, French, Portuguese, Spanish
@@ -182,6 +182,31 @@ last_profile_diff: "2026-05-11T04:18:39.084Z"
     ]
   },
   "changed": {}
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-11T20:10:48.779Z",
+  "added": {
+    "jobs": [
+      "English, French, Portuguese, Spanish"
+    ]
+  },
+  "removed": {
+    "jobs": [
+      "English",
+      "French",
+      "Portuguese",
+      "Spanish"
+    ]
+  },
+  "changed": {
+    "distance_mi": {
+      "from": 1802,
+      "to": 1811
+    }
+  }
 }
 ```
 

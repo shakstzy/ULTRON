@@ -9,9 +9,9 @@ phone: null
 status: "new"
 first_seen: "2026-05-07T05:01:06.037Z"
 last_activity: "2026-05-07T05:01:06.037Z"
-last_scrape: "2026-05-11T04:19:01.128Z"
+last_scrape: "2026-05-11T20:11:12.332Z"
 previous_slugs: []
-last_profile_diff: "2026-05-11T04:19:01.128Z"
+last_profile_diff: "2026-05-11T20:11:12.332Z"
 ---
 
 ## Profile
@@ -165,6 +165,24 @@ last_profile_diff: "2026-05-11T04:19:01.128Z"
 ```json profile-diff
 {
   "ts": "2026-05-11T04:19:01.128Z",
+  "added": {
+    "schools": [
+      "Also went to University of California, Berkeley"
+    ]
+  },
+  "removed": {
+    "schools": [
+      "Also went to University of California",
+      "Berkeley"
+    ]
+  },
+  "changed": {}
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-11T20:11:12.332Z",
   "added": {
     "schools": [
       "Also went to University of California, Berkeley"

@@ -9,8 +9,9 @@ phone: null
 status: "new"
 first_seen: "2026-05-10T22:05:02.618Z"
 last_activity: "2026-05-10T22:05:02.618Z"
-last_scrape: "2026-05-11T04:18:00.696Z"
+last_scrape: "2026-05-11T20:10:07.615Z"
 previous_slugs: []
+last_profile_diff: "2026-05-11T20:10:07.615Z"
 ---
 
 ## Profile
@@ -18,12 +19,12 @@ previous_slugs: []
 - age: 20
 - distance_mi: 9167
 - height_cm: 163
-- bio: "🍵🌺 Are there any sincere guys around here 👀👀 🇹🇭"
+- bio: "🍵🌺 Are there any sincere guys around here 👀👀 Thailand🇹🇭"
 - looking_for: "Long-term, open to short · Monogamy"
 - jobs: Woman
 - sexuality: "Straight"
 - photo_verified: true
-- interests: Shopping, Badminton, Netflix, Travel
+- interests: Cars, Sushi, Disney, Travel, Badminton, Netflix
 - basics.zodiac: "Leo"
 - basics.education: "In College"
 - basics.communication_style: "Better in person"
@@ -36,7 +37,29 @@ previous_slugs: []
 
 ## Profile changes
 
-(none yet)
+```json profile-diff
+{
+  "ts": "2026-05-11T20:10:07.615Z",
+  "added": {
+    "interests": [
+      "Cars",
+      "Sushi",
+      "Disney"
+    ]
+  },
+  "removed": {
+    "interests": [
+      "Shopping"
+    ]
+  },
+  "changed": {
+    "bio": {
+      "from": "🍵🌺 Are there any sincere guys around here 👀👀 🇹🇭",
+      "to": "🍵🌺 Are there any sincere guys around here 👀👀 Thailand🇹🇭"
+    }
+  }
+}
+```
 
 ## Conversation
 

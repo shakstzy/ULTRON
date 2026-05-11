@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-08T04:09:09.505Z"
 last_activity: "2026-05-08T04:09:09.505Z"
-last_scrape: "2026-05-11T04:18:23.993Z"
+last_scrape: "2026-05-11T20:10:30.905Z"
 previous_slugs: []
-last_profile_diff: "2026-05-10T22:05:24.738Z"
+last_profile_diff: "2026-05-11T20:10:30.905Z"
 ---
 
 ## Profile
 
 - age: 20
-- distance_mi: 5291
+- distance_mi: 5913
 - height_cm: 157
 - bio: "Michelle looking for her barack"
 - looking_for: "Long-term partner · Monogamy"
@@ -74,6 +74,20 @@ last_profile_diff: "2026-05-10T22:05:24.738Z"
     "distance_mi": {
       "from": 6,
       "to": 5291
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-11T20:10:30.905Z",
+  "added": {},
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 5291,
+      "to": 5913
     }
   }
 }

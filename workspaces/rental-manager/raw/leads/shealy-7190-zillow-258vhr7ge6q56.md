@@ -63,3 +63,7 @@ I can show the place tomorrow at 11:30 am, Tuesday at 2 pm, or Wednesday at 5 pm
 ### 2026-05-10T22:06:08.000Z - Shealy Cardona
 
 i won’t be able monday or tuesday, for wednesday i work at 3 so it would have to be earlier
+
+### 2026-05-11T15:34:07.107Z - Owner (Adithya)
+
+I can do Wednesday at 2 pm. If that cuts it too close to work, we can do Thursday at 5 pm. Which one works better?

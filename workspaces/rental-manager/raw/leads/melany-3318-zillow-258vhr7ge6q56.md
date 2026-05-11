@@ -42,3 +42,7 @@ I'm actually booked for those times. I can do Sunday at 11:30am, Monday at 2pm, 
 ### 2026-05-11T05:45:23.000Z - Melany Alvizures
 
 I’m actually at work or at school during all of those times
+
+### 2026-05-11T15:34:48.987Z - Owner (Adithya)
+
+Got it. I can do Tuesday at 10 AM, Wednesday at 2 PM, or Thursday at 5 PM. Do any of those work?

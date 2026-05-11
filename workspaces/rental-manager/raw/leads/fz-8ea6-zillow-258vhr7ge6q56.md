@@ -62,3 +62,7 @@ Times
 ### 2026-05-11T07:33:26.000Z - Fz Kingz
 
 Like for Tuesday cause I have class at that time
+
+### 2026-05-11T15:34:27.480Z - Owner (Adithya)
+
+Tuesday I only have 10 AM open. If that doesn't work I can do Wednesday at 2 PM or Thursday at 5 PM. Which one is best for you?

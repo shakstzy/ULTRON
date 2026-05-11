@@ -50,3 +50,7 @@ I am interested in looking to rent asap
 ### 2026-05-11T00:06:40.000Z - xtian hdz
 
 anything you may need for a documents or verification I could provide just let me know what that may be and is there a private bathroom?
+
+### 2026-05-11T15:35:13.323Z - Owner (Adithya)
+
+I can't waive the fee since it goes straight to Zillow for the background check. I do have two rooms open with private bathrooms. Let's do a tour first so you can see them. I have time Tuesday at 10 AM, Wednesday at 2 PM, or Thursday at 5 PM Central. Which time works for you?

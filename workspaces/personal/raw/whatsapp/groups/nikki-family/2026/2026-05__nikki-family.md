@@ -1,17 +1,17 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-11T00:30:04.556004+00:00'
+ingested_at: '2026-05-11T02:30:05.057986+00:00'
 ingest_version: 1
-content_hash: 'blake3:0b9227d54df9f51c8c698f14f4c534193c98d1f9882735eda6fd60c05b3b6cb6'
-provider_modified_at: '2026-05-10T19:20:30-05:00'
+content_hash: 'blake3:cba63f47e6745f5eca3f0adaf4bc93071bc0f28fef3773455e2a8cd936948c08'
+provider_modified_at: '2026-05-10T21:22:50-05:00'
 contact_slug: nikki-family
 contact_type: group
 month: 2026-05
 date_range: [2026-05-01, 2026-05-10]
-message_count: 26
+message_count: 29
 my_message_count: 0
-their_message_count: 26
+their_message_count: 29
 attachments: []
 whatsapp_chat_jid: '120363419673245346@g.us'
 whatsapp_chat_kind: group
@@ -67,3 +67,6 @@ I'll tell you about this experience when we meet live next time.
 **19:20 — @202284436856974:** I was showing some
 Pics of our yosemite trip and sfo trip pics... Kumar anna u r  the talk ofthe town ... Shreya said u looked ao stylish
 **19:20 — @202284436856974:** She is doing  ok... she  was asking for ur number to mesaage u
+**21:16 — @273288869752960:** [image: image_20260510_212812.jpg]
+**21:16 — @273288869752960:** Kumar's Anna Ramjee took BW pic and made this
+**21:22 — @202284436856974:** Wow ... only u look the same😁

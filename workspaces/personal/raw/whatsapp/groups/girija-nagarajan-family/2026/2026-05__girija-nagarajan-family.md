@@ -1,17 +1,17 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-11T02:14:32.136801+00:00'
+ingested_at: '2026-05-11T02:30:05.069788+00:00'
 ingest_version: 1
-content_hash: 'blake3:1c70d2cbb5668ac2557eae2d8adce7966cd19922a4b2f27748969badea059c70'
-provider_modified_at: '2026-05-10T20:37:03-05:00'
+content_hash: 'blake3:347cf9dc825a4e1c380385d5d9808f315eab64f806c838c34614569c9cfd17ab'
+provider_modified_at: '2026-05-10T21:28:01-05:00'
 contact_slug: girija-nagarajan-family
 contact_type: group
 month: 2026-05
 date_range: [2026-05-01, 2026-05-10]
-message_count: 124
+message_count: 137
 my_message_count: 0
-their_message_count: 124
+their_message_count: 137
 attachments: []
 whatsapp_chat_jid: '15104499964-1417839295@g.us'
 whatsapp_chat_kind: group
@@ -282,3 +282,22 @@ I tried to call y'all
 **18:56 — @161765782458372:** [image: image_20260510_185640.jpg]
 **20:00 — @110458136715502:** Probably you ambal
 **20:37 — @161765782458372:** [image: image_20260510_203703.jpg]
+**21:14 — @161765782458372:** [image: image_20260510_212811.jpg]
+**21:15 — @273288869752960:** Yes
+**21:16 — @97779393253611:** [video: video_20260510_212811.mp4]
+**21:16 — @273288869752960:** Wow Ramjee. Looks great.
+**21:17 — @161765782458372:** Who are the others in the picture?
+**21:20 — @273288869752960:** Athai (Daddy's sister)
+Mama 
+Green saree is Mama's sister 
+Cream saree - I don't know who it is
+**21:21 — @273288869752960:** Mama was very handsome with great love for me and very generous heart. He passed away in his 40s due to heart attack. 
+They lived in Chidambaram.
+**21:21 — @273288869752960:** One sitting in center is Viji Athai ( my Appa's sister)
+
+Madras medical college
+**21:21 — @273288869752960:** [image: image_20260510_212812.jpg]
+**21:21 — @273288869752960:** [image: image_20260510_212812.jpg]
+**21:21 — @273288869752960:** Pic of Rajam Athai
+**21:24 — @161765782458372:** [image: image_20260510_212812.jpg]
+**21:28 — @161765782458372:** [image: image_20260510_212812.jpg]

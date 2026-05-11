@@ -1,17 +1,17 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-11T02:30:05.057986+00:00'
+ingested_at: '2026-05-11T03:00:05.580013+00:00'
 ingest_version: 1
-content_hash: 'blake3:cba63f47e6745f5eca3f0adaf4bc93071bc0f28fef3773455e2a8cd936948c08'
-provider_modified_at: '2026-05-10T21:22:50-05:00'
+content_hash: 'blake3:3c60f6f010bb18711f53ce3b66a44bf7c5734210ece15a9a84a92f6648043ef4'
+provider_modified_at: '2026-05-10T21:32:35-05:00'
 contact_slug: nikki-family
 contact_type: group
 month: 2026-05
 date_range: [2026-05-01, 2026-05-10]
-message_count: 29
+message_count: 30
 my_message_count: 0
-their_message_count: 29
+their_message_count: 30
 attachments: []
 whatsapp_chat_jid: '120363419673245346@g.us'
 whatsapp_chat_kind: group
@@ -70,3 +70,4 @@ Pics of our yosemite trip and sfo trip pics... Kumar anna u r  the talk ofthe to
 **21:16 — @273288869752960:** [image: image_20260510_212812.jpg]
 **21:16 — @273288869752960:** Kumar's Anna Ramjee took BW pic and made this
 **21:22 — @202284436856974:** Wow ... only u look the same😁
+**21:32 — @273288869752960:** [image: image_20260510_213405.jpg]

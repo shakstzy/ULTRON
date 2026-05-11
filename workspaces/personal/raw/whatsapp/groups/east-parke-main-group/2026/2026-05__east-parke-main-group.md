@@ -1,17 +1,17 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-10T23:00:05.678104+00:00'
+ingested_at: '2026-05-11T00:00:03.557982+00:00'
 ingest_version: 1
-content_hash: 'blake3:b5f9f4c4b34533fc3c2acb293e1ce2cec00eea5fca4cda1849b33df2836a3dec'
-provider_modified_at: '2026-05-10T17:32:50-05:00'
+content_hash: 'blake3:a8cf7b6c76cecc70d3172a3964e0195c04100794e60572a21093ab81e679fecf'
+provider_modified_at: '2026-05-10T18:44:23-05:00'
 contact_slug: east-parke-main-group
 contact_type: group
 month: 2026-05
 date_range: [2026-05-02, 2026-05-10]
-message_count: 36
+message_count: 40
 my_message_count: 0
-their_message_count: 36
+their_message_count: 40
 attachments: []
 whatsapp_chat_jid: '120363023221027012@g.us'
 whatsapp_chat_kind: group
@@ -91,3 +91,7 @@ Please do share if you know anyone looking to rent.
 **12:20 — @168624962711656:** I always bought mine straight from Amazon. Let me take a look if the rules have changed.
 **17:06 — @99330077769923:** If you can get me some I can pay.  Just don't let the cops know.  I don't need any issues with reh fuzz
 **17:32 — @19125506158802:** What if Ryan was a cop
+**18:38 — @168624962711656:** I looked into it and yeah seems like there are policy changes with Amazon. Search the name “Quinclorac” in Amazon instead. It’s the active ingredient in Quintessential. You’ll find plenty of options that are deliverable to Austin and work just as well if not better.
+**18:39 — @168624962711656:** No fuzz issues I promise.
+**18:39 — @99330077769923:** It's possible I was already aware of said nuisance
+**18:44 — @99330077769923:** Only concerned with 1920s style prohibition officers

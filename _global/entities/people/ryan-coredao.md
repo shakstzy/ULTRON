@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:06.969924+00:00
+ingested_at: 2026-05-11T08:00:07.507338+00:00
 ingest_version: 1
 content_hash: blake2b:94650251e3d5e2fa139960a6ee3f74d0
-provider_modified_at: 2026-05-10T08:00:06.969924+00:00
+provider_modified_at: 2026-05-11T08:00:07.507338+00:00
 
 title: Ryan | CoreDAO
 slug: ryan-coredao
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 805-358-6723"]
   slack: []
-last_synced: 2026-05-10T08:00:06.969924+00:00
+last_synced: 2026-05-11T08:00:07.507338+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.129435+00:00
+ingested_at: 2026-05-11T08:00:07.639590+00:00
 ingest_version: 1
 content_hash: blake2b:681e189afc8ad0ebac0ff91359ab0d4d
-provider_modified_at: 2026-05-10T08:00:07.129435+00:00
+provider_modified_at: 2026-05-11T08:00:07.639590+00:00
 
 title: Lynn | Manta
 slug: lynn-manta
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:07.129435+00:00
+last_synced: 2026-05-11T08:00:07.639590+00:00
 global: true
 ---
 

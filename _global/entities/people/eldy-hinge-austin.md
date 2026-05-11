@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.159494+00:00
+ingested_at: 2026-05-11T08:00:07.637977+00:00
 ingest_version: 1
 content_hash: blake2b:fd80e7e187718c07765621033f7c012a
-provider_modified_at: 2026-05-10T08:00:07.159494+00:00
+provider_modified_at: 2026-05-11T08:00:07.637977+00:00
 
 title: Eldy Hinge Austin
 slug: eldy-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14693212564"]
   slack: []
-last_synced: 2026-05-10T08:00:07.159494+00:00
+last_synced: 2026-05-11T08:00:07.637977+00:00
 global: true
 ---
 

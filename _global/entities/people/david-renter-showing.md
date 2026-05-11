@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.009381+00:00
+ingested_at: 2026-05-11T08:00:07.533285+00:00
 ingest_version: 1
 content_hash: blake2b:5a24c6271606d791aee302baf1680a6a
-provider_modified_at: 2026-05-10T08:00:07.009381+00:00
+provider_modified_at: 2026-05-11T08:00:07.533285+00:00
 
 title: David Renter Showing
 slug: david-renter-showing
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18182334068"]
   slack: []
-last_synced: 2026-05-10T08:00:07.009381+00:00
+last_synced: 2026-05-11T08:00:07.533285+00:00
 global: true
 ---
 

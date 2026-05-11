@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.091557+00:00
+ingested_at: 2026-05-11T08:00:07.617848+00:00
 ingest_version: 1
 content_hash: blake2b:a03058729826fa10981802a062487a2b
-provider_modified_at: 2026-05-10T08:00:07.091557+00:00
+provider_modified_at: 2026-05-11T08:00:07.617848+00:00
 
 title: Jorik | Nethermind
 slug: jorik-nethermind
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:07.091557+00:00
+last_synced: 2026-05-11T08:00:07.617848+00:00
 global: true
 ---
 

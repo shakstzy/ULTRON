@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.060288+00:00
+ingested_at: 2026-05-11T08:00:07.575110+00:00
 ingest_version: 1
 content_hash: blake2b:47dc263c8c2a0aed9872d733244156cb
-provider_modified_at: 2026-05-10T08:00:07.060288+00:00
+provider_modified_at: 2026-05-11T08:00:07.575110+00:00
 
 title: Fwiz | Optimism
 slug: fwiz-optimism
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:07.060288+00:00
+last_synced: 2026-05-11T08:00:07.575110+00:00
 global: true
 ---
 

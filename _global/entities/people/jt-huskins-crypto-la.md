@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.084917+00:00
+ingested_at: 2026-05-11T08:00:07.657948+00:00
 ingest_version: 1
 content_hash: blake2b:12a1b9baf8d38792e695e8af60a4de7c
-provider_modified_at: 2026-05-10T08:00:07.084917+00:00
+provider_modified_at: 2026-05-11T08:00:07.657948+00:00
 
 title: JT Huskins Crypto LA
 slug: jt-huskins-crypto-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14153028077"]
   slack: []
-last_synced: 2026-05-10T08:00:07.084917+00:00
+last_synced: 2026-05-11T08:00:07.657948+00:00
 global: true
 ---
 

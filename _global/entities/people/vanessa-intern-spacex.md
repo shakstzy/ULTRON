@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.100377+00:00
+ingested_at: 2026-05-11T08:00:07.503783+00:00
 ingest_version: 1
 content_hash: blake2b:45e794271f91924f43e5dc5170b6f82d
-provider_modified_at: 2026-05-10T08:00:07.100377+00:00
+provider_modified_at: 2026-05-11T08:00:07.503783+00:00
 
 title: Vanessa Intern SpaceX
 slug: vanessa-intern-spacex
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16263278027"]
   slack: []
-last_synced: 2026-05-10T08:00:07.100377+00:00
+last_synced: 2026-05-11T08:00:07.503783+00:00
 global: true
 ---
 

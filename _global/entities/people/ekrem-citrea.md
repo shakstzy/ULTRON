@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.045041+00:00
+ingested_at: 2026-05-11T08:00:07.561984+00:00
 ingest_version: 1
 content_hash: blake2b:fa53b74b9be30ed13aee82d2a7f8af84
-provider_modified_at: 2026-05-10T08:00:07.045041+00:00
+provider_modified_at: 2026-05-11T08:00:07.561984+00:00
 
 title: Ekrem | Citrea
 slug: ekrem-citrea
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:07.045041+00:00
+last_synced: 2026-05-11T08:00:07.561984+00:00
 global: true
 ---
 

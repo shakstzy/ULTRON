@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:06.947737+00:00
+ingested_at: 2026-05-11T08:00:07.487549+00:00
 ingest_version: 1
-content_hash: blake2b:8d43c6b01d05a0d3bfa85636b6eb2d85
-provider_modified_at: 2026-05-10T08:00:06.947737+00:00
+content_hash: blake2b:db7009831bb933da0ec7054841432198
+provider_modified_at: 2026-05-11T08:00:07.487549+00:00
 
 title: Kyara Renter Showing
 slug: kyara-renter-showing
@@ -13,9 +13,9 @@ canonical_uri: lifeos:_global/entities/people/kyara-renter-showing
 aliases: []
 identifiers:
   email: []
-  phone: ["7472941811"]
+  phone: ["+18188187457"]
   slack: []
-last_synced: 2026-05-10T08:00:06.947737+00:00
+last_synced: 2026-05-11T08:00:07.487549+00:00
 global: true
 ---
 

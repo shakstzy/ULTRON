@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.159908+00:00
+ingested_at: 2026-05-11T08:00:07.522316+00:00
 ingest_version: 1
 content_hash: blake2b:a623d40616c79b06e981957cdb1d12bf
-provider_modified_at: 2026-05-10T08:00:07.159908+00:00
+provider_modified_at: 2026-05-11T08:00:07.522316+00:00
 
 title: Reed Hazard Lender
 slug: reed-hazard-lender
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19499735226"]
   slack: []
-last_synced: 2026-05-10T08:00:07.159908+00:00
+last_synced: 2026-05-11T08:00:07.522316+00:00
 global: true
 ---
 

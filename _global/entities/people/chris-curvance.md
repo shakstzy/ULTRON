@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.156424+00:00
+ingested_at: 2026-05-11T08:00:07.669277+00:00
 ingest_version: 1
 content_hash: blake2b:02e3df98fe37110bac0773820602f96a
-provider_modified_at: 2026-05-10T08:00:07.156424+00:00
+provider_modified_at: 2026-05-11T08:00:07.669277+00:00
 
 title: Chris | Curvance
 slug: chris-curvance
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:07.156424+00:00
+last_synced: 2026-05-11T08:00:07.669277+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.044632+00:00
+ingested_at: 2026-05-11T08:00:07.528134+00:00
 ingest_version: 1
 content_hash: blake2b:231bf023ae23abaef076d95f6470203f
-provider_modified_at: 2026-05-10T08:00:07.044632+00:00
+provider_modified_at: 2026-05-11T08:00:07.528134+00:00
 
 title: Jersey Jetski
 slug: jersey-jetski
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17322018266"]
   slack: []
-last_synced: 2026-05-10T08:00:07.044632+00:00
+last_synced: 2026-05-11T08:00:07.528134+00:00
 global: true
 ---
 

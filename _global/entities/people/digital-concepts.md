@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.063504+00:00
+ingested_at: 2026-05-11T08:00:07.552643+00:00
 ingest_version: 1
 content_hash: blake2b:6282ee5905e7c6ba5b9d8ee3b167cccf
-provider_modified_at: 2026-05-10T08:00:07.063504+00:00
+provider_modified_at: 2026-05-11T08:00:07.552643+00:00
 
 title: Digital Concepts
 slug: digital-concepts
@@ -15,7 +15,7 @@ identifiers:
   email: ["contact@digitalconcepts.co"]
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:07.063504+00:00
+last_synced: 2026-05-11T08:00:07.552643+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.072407+00:00
+ingested_at: 2026-05-11T08:00:07.517403+00:00
 ingest_version: 1
 content_hash: blake2b:5f5e12a53af94cc24dd7082be9295d63
-provider_modified_at: 2026-05-10T08:00:07.072407+00:00
+provider_modified_at: 2026-05-11T08:00:07.517403+00:00
 
 title: Vincent Business
 slug: vincent-business
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15126808968"]
   slack: []
-last_synced: 2026-05-10T08:00:07.072407+00:00
+last_synced: 2026-05-11T08:00:07.517403+00:00
 global: true
 ---
 

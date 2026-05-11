@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.018888+00:00
+ingested_at: 2026-05-11T08:00:07.510225+00:00
 ingest_version: 1
 content_hash: blake2b:9baea029e12543174833fbf5bd627639
-provider_modified_at: 2026-05-10T08:00:07.018888+00:00
+provider_modified_at: 2026-05-11T08:00:07.510225+00:00
 
 title: Damsky | Koda
 slug: damsky-koda
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:07.018888+00:00
+last_synced: 2026-05-11T08:00:07.510225+00:00
 global: true
 ---
 

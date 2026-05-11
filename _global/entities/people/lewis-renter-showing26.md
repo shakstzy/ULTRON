@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.015885+00:00
+ingested_at: 2026-05-11T08:00:07.642007+00:00
 ingest_version: 1
 content_hash: blake2b:e652b63d4e7a870e67696aef68d060eb
-provider_modified_at: 2026-05-10T08:00:07.015885+00:00
+provider_modified_at: 2026-05-11T08:00:07.642007+00:00
 
 title: Lewis Renter Showing26
 slug: lewis-renter-showing26
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16613629260"]
   slack: []
-last_synced: 2026-05-10T08:00:07.015885+00:00
+last_synced: 2026-05-11T08:00:07.642007+00:00
 global: true
 ---
 

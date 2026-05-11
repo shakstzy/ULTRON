@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:06.954877+00:00
+ingested_at: 2026-05-11T08:00:07.491587+00:00
 ingest_version: 1
 content_hash: blake2b:c06aad046ea6deca29f8bd5b1776b1e6
-provider_modified_at: 2026-05-10T08:00:06.954877+00:00
+provider_modified_at: 2026-05-11T08:00:07.491587+00:00
 
 title: Anusha Hinge Austin
 slug: anusha-hinge-austin-1d0f
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12817251960"]
   slack: []
-last_synced: 2026-05-10T08:00:06.954877+00:00
+last_synced: 2026-05-11T08:00:07.491587+00:00
 global: true
 ---
 

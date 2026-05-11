@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.136432+00:00
+ingested_at: 2026-05-11T08:00:07.646475+00:00
 ingest_version: 1
 content_hash: blake2b:49202ae3f33441ed4380398534f25956
-provider_modified_at: 2026-05-10T08:00:07.136432+00:00
+provider_modified_at: 2026-05-11T08:00:07.646475+00:00
 
 title: Filippo | Trireme
 slug: filippo-trireme
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:07.136432+00:00
+last_synced: 2026-05-11T08:00:07.646475+00:00
 global: true
 ---
 

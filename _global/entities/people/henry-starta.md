@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.019534+00:00
+ingested_at: 2026-05-11T08:00:07.557049+00:00
 ingest_version: 1
 content_hash: blake2b:54fe853bd76539126d03b472092915a5
-provider_modified_at: 2026-05-10T08:00:07.019534+00:00
+provider_modified_at: 2026-05-11T08:00:07.557049+00:00
 
 title: Henry | Starta
 slug: henry-starta
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 323-350-6972"]
   slack: []
-last_synced: 2026-05-10T08:00:07.019534+00:00
+last_synced: 2026-05-11T08:00:07.557049+00:00
 global: true
 ---
 

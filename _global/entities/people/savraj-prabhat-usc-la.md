@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.132565+00:00
+ingested_at: 2026-05-11T08:00:07.643069+00:00
 ingest_version: 1
 content_hash: blake2b:61a41e8928d8e57f7e7090247ba54946
-provider_modified_at: 2026-05-10T08:00:07.132565+00:00
+provider_modified_at: 2026-05-11T08:00:07.643069+00:00
 
 title: Savraj Prabhat USC LA
 slug: savraj-prabhat-usc-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(925) 984-1756"]
   slack: []
-last_synced: 2026-05-10T08:00:07.132565+00:00
+last_synced: 2026-05-11T08:00:07.643069+00:00
 global: true
 ---
 

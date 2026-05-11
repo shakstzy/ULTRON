@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.156509+00:00
+ingested_at: 2026-05-11T08:00:07.669362+00:00
 ingest_version: 1
 content_hash: blake2b:aebc24e726da3cd3e13780ffb3259012
-provider_modified_at: 2026-05-10T08:00:07.156509+00:00
+provider_modified_at: 2026-05-11T08:00:07.669362+00:00
 
 title: Gen Hinge Austin
 slug: gen-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18323910436"]
   slack: []
-last_synced: 2026-05-10T08:00:07.156509+00:00
+last_synced: 2026-05-11T08:00:07.669362+00:00
 global: true
 ---
 

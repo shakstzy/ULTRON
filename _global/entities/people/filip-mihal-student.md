@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:06.951127+00:00
+ingested_at: 2026-05-11T08:00:07.489214+00:00
 ingest_version: 1
 content_hash: blake2b:fc7368da3af3d1eb1253e55bd582be84
-provider_modified_at: 2026-05-10T08:00:06.951127+00:00
+provider_modified_at: 2026-05-11T08:00:07.489214+00:00
 
 title: filip-mihal-student
 slug: filip-mihal-student
@@ -15,7 +15,7 @@ identifiers:
   email: ["filip.mihal@student.leaf.academy"]
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:06.951127+00:00
+last_synced: 2026-05-11T08:00:07.489214+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.157471+00:00
+ingested_at: 2026-05-11T08:00:07.586860+00:00
 ingest_version: 1
 content_hash: blake2b:eff1f94bf67be96b1db8d55b8fa3db47
-provider_modified_at: 2026-05-10T08:00:07.157471+00:00
+provider_modified_at: 2026-05-11T08:00:07.586860+00:00
 
 title: Brooke GREAT IDEAS
 slug: brooke-great-ideas
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-751-4081"]
   slack: []
-last_synced: 2026-05-10T08:00:07.157471+00:00
+last_synced: 2026-05-11T08:00:07.586860+00:00
 global: true
 ---
 

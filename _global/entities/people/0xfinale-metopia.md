@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.165700+00:00
+ingested_at: 2026-05-11T08:00:07.597242+00:00
 ingest_version: 1
 content_hash: blake2b:e5e9b28b584eece297ab5e2fa2c41f6a
-provider_modified_at: 2026-05-10T08:00:07.165700+00:00
+provider_modified_at: 2026-05-11T08:00:07.597242+00:00
 
 title: 0xFinale | Metopia
 slug: 0xfinale-metopia
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:07.165700+00:00
+last_synced: 2026-05-11T08:00:07.597242+00:00
 global: true
 ---
 

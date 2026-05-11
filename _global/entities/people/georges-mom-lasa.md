@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.073631+00:00
+ingested_at: 2026-05-11T08:00:07.643486+00:00
 ingest_version: 1
 content_hash: blake2b:73492ac66fd94191c560fe76264e9df1
-provider_modified_at: 2026-05-10T08:00:07.073631+00:00
+provider_modified_at: 2026-05-11T08:00:07.643486+00:00
 
 title: Georges Mom LASA
 slug: georges-mom-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(512) 797-8846"]
   slack: []
-last_synced: 2026-05-10T08:00:07.073631+00:00
+last_synced: 2026-05-11T08:00:07.643486+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.036215+00:00
+ingested_at: 2026-05-11T08:00:07.555216+00:00
 ingest_version: 1
 content_hash: blake2b:15e001b4d0fb180b323e18d2c2899107
-provider_modified_at: 2026-05-10T08:00:07.036215+00:00
+provider_modified_at: 2026-05-11T08:00:07.555216+00:00
 
 title: Hassan Khawaja
 slug: hassan-khawaja
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 510-461-7854"]
   slack: []
-last_synced: 2026-05-10T08:00:07.036215+00:00
+last_synced: 2026-05-11T08:00:07.555216+00:00
 global: true
 ---
 

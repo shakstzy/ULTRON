@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.143246+00:00
+ingested_at: 2026-05-11T08:00:07.569838+00:00
 ingest_version: 1
 content_hash: blake2b:741e14908a15adab9da541778e7bbdb0
-provider_modified_at: 2026-05-10T08:00:07.143246+00:00
+provider_modified_at: 2026-05-11T08:00:07.569838+00:00
 
 title: Mark UC Berkeley
 slug: mark-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15625657807"]
   slack: []
-last_synced: 2026-05-10T08:00:07.143246+00:00
+last_synced: 2026-05-11T08:00:07.569838+00:00
 global: true
 ---
 

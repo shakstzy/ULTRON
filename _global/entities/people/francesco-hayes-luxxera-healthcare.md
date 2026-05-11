@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.166926+00:00
+ingested_at: 2026-05-11T08:00:07.653874+00:00
 ingest_version: 1
 content_hash: blake2b:a0f6d00be3b9fb737094c1fef653c815
-provider_modified_at: 2026-05-10T08:00:07.166926+00:00
+provider_modified_at: 2026-05-11T08:00:07.653874+00:00
 
 title: Francesco Hayes Luxxera Healthcare
 slug: francesco-hayes-luxxera-healthcare
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(301) 266-7185"]
   slack: []
-last_synced: 2026-05-10T08:00:07.166926+00:00
+last_synced: 2026-05-11T08:00:07.653874+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.155407+00:00
+ingested_at: 2026-05-11T08:00:07.668473+00:00
 ingest_version: 1
 content_hash: blake2b:95b813e8ebd15acd6678c9723991fc98
-provider_modified_at: 2026-05-10T08:00:07.155407+00:00
+provider_modified_at: 2026-05-11T08:00:07.668473+00:00
 
 title: Thana McLain LASA
 slug: thana-mclain-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(512) 312-8888"]
   slack: []
-last_synced: 2026-05-10T08:00:07.155407+00:00
+last_synced: 2026-05-11T08:00:07.668473+00:00
 global: true
 ---
 

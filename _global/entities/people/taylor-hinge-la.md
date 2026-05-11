@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.138169+00:00
+ingested_at: 2026-05-11T08:00:07.613088+00:00
 ingest_version: 1
 content_hash: blake2b:4af0c5b0701f31b7cf44d450b5fc7980
-provider_modified_at: 2026-05-10T08:00:07.138169+00:00
+provider_modified_at: 2026-05-11T08:00:07.613088+00:00
 
 title: Taylor Hinge LA
 slug: taylor-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13108834081"]
   slack: []
-last_synced: 2026-05-10T08:00:07.138169+00:00
+last_synced: 2026-05-11T08:00:07.613088+00:00
 global: true
 ---
 

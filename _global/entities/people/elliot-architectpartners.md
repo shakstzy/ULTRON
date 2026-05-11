@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.053317+00:00
+ingested_at: 2026-05-11T08:00:07.537811+00:00
 ingest_version: 1
 content_hash: blake2b:1f5a8462947b1bbf39a0d8db6b6a33cc
-provider_modified_at: 2026-05-10T08:00:07.053317+00:00
+provider_modified_at: 2026-05-11T08:00:07.537811+00:00
 
 title: Elliot | ArchitectPartners
 slug: elliot-architectpartners
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:07.053317+00:00
+last_synced: 2026-05-11T08:00:07.537811+00:00
 global: true
 ---
 

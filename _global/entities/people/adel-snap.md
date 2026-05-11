@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.120487+00:00
+ingested_at: 2026-05-11T08:00:07.630514+00:00
 ingest_version: 1
 content_hash: blake2b:6b281d6fd457a70564527986efe4abae
-provider_modified_at: 2026-05-10T08:00:07.120487+00:00
+provider_modified_at: 2026-05-11T08:00:07.630514+00:00
 
 title: Adel Snap
 slug: adel-snap
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15109265576"]
   slack: []
-last_synced: 2026-05-10T08:00:07.120487+00:00
+last_synced: 2026-05-11T08:00:07.630514+00:00
 global: true
 ---
 

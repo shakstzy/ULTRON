@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.102303+00:00
+ingested_at: 2026-05-11T08:00:07.680224+00:00
 ingest_version: 1
 content_hash: blake2b:ddcad25ff5cb5513cdfce019a527079a
-provider_modified_at: 2026-05-10T08:00:07.102303+00:00
+provider_modified_at: 2026-05-11T08:00:07.680224+00:00
 
 title: Raz Evan Inspector Friend
 slug: raz-evan-inspector-friend
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16263468877"]
   slack: []
-last_synced: 2026-05-10T08:00:07.102303+00:00
+last_synced: 2026-05-11T08:00:07.680224+00:00
 global: true
 ---
 

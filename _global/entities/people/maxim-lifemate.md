@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.164451+00:00
+ingested_at: 2026-05-11T08:00:07.677121+00:00
 ingest_version: 1
 content_hash: blake2b:4555f1fc07ba822f1b17d8077d4d84be
-provider_modified_at: 2026-05-10T08:00:07.164451+00:00
+provider_modified_at: 2026-05-11T08:00:07.677121+00:00
 
 title: Maxim | Lifemate
 slug: maxim-lifemate
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+7 901 339-15-53"]
   slack: []
-last_synced: 2026-05-10T08:00:07.164451+00:00
+last_synced: 2026-05-11T08:00:07.677121+00:00
 global: true
 ---
 

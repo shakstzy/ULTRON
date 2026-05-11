@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.107122+00:00
+ingested_at: 2026-05-11T08:00:07.673481+00:00
 ingest_version: 1
 content_hash: blake2b:9308dc6ea3be6bbdf02d7e3f549f400e
-provider_modified_at: 2026-05-10T08:00:07.107122+00:00
+provider_modified_at: 2026-05-11T08:00:07.673481+00:00
 
 title: Wayne | FuelLabs
 slug: wayne-fuellabs
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:07.107122+00:00
+last_synced: 2026-05-11T08:00:07.673481+00:00
 global: true
 ---
 

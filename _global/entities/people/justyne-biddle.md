@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.128267+00:00
+ingested_at: 2026-05-11T08:00:07.645738+00:00
 ingest_version: 1
 content_hash: blake2b:214ca8c0d82237c21fb9c4a87c192194
-provider_modified_at: 2026-05-10T08:00:07.128267+00:00
+provider_modified_at: 2026-05-11T08:00:07.645738+00:00
 
 title: Justyne Biddle
 slug: justyne-biddle
@@ -15,7 +15,7 @@ identifiers:
   email: ["justyne.biddle@leanderisd.org"]
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:07.128267+00:00
+last_synced: 2026-05-11T08:00:07.645738+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.147970+00:00
+ingested_at: 2026-05-11T08:00:07.643968+00:00
 ingest_version: 1
 content_hash: blake2b:c85dcf4debc32cf1d5c1cd2941976aff
-provider_modified_at: 2026-05-10T08:00:07.147970+00:00
+provider_modified_at: 2026-05-11T08:00:07.643968+00:00
 
 title: Brennan Noah Austin
 slug: brennan-noah-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15128458988"]
   slack: []
-last_synced: 2026-05-10T08:00:07.147970+00:00
+last_synced: 2026-05-11T08:00:07.643968+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.111791+00:00
+ingested_at: 2026-05-11T08:00:07.665238+00:00
 ingest_version: 1
 content_hash: blake2b:2b0b8531de0e70552587a1052a73bf98
-provider_modified_at: 2026-05-10T08:00:07.111791+00:00
+provider_modified_at: 2026-05-11T08:00:07.665238+00:00
 
 title: Barbara Neill
 slug: barbara-neill
@@ -15,7 +15,7 @@ identifiers:
   email: ["barbara.neill@austinisd.org"]
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:07.111791+00:00
+last_synced: 2026-05-11T08:00:07.665238+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.034255+00:00
+ingested_at: 2026-05-11T08:00:07.643322+00:00
 ingest_version: 1
 content_hash: blake2b:ce1771f60c364cf9623ba0797fc44bd8
-provider_modified_at: 2026-05-10T08:00:07.034255+00:00
+provider_modified_at: 2026-05-11T08:00:07.643322+00:00
 
 title: Naruto11 | Avail
 slug: naruto11-avail
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:07.034255+00:00
+last_synced: 2026-05-11T08:00:07.643322+00:00
 global: true
 ---
 

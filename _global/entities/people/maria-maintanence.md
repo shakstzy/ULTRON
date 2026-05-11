@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:06.977149+00:00
+ingested_at: 2026-05-11T08:00:07.554041+00:00
 ingest_version: 1
 content_hash: blake2b:5322713908576e660958f9eddd0efa4a
-provider_modified_at: 2026-05-10T08:00:06.977149+00:00
+provider_modified_at: 2026-05-11T08:00:07.554041+00:00
 
 title: Maria Maintanence
 slug: maria-maintanence
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18188188204"]
   slack: []
-last_synced: 2026-05-10T08:00:06.977149+00:00
+last_synced: 2026-05-11T08:00:07.554041+00:00
 global: true
 ---
 

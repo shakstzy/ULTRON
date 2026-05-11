@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.059427+00:00
+ingested_at: 2026-05-11T08:00:07.574711+00:00
 ingest_version: 1
 content_hash: blake2b:b979d0c6737e69c4950d8b965dcb21b6
-provider_modified_at: 2026-05-10T08:00:07.059427+00:00
+provider_modified_at: 2026-05-11T08:00:07.574711+00:00
 
 title: Rushil Jha UC Berkeley NYC
 slug: rushil-jha-uc-berkeley-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: ["rushiljha@gmail.com"]
   phone: ["+12039063000"]
   slack: []
-last_synced: 2026-05-10T08:00:07.059427+00:00
+last_synced: 2026-05-11T08:00:07.574711+00:00
 global: true
 ---
 

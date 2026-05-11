@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.138433+00:00
+ingested_at: 2026-05-11T08:00:07.673562+00:00
 ingest_version: 1
 content_hash: blake2b:9175a1f6bb023b91db154d125254b4e6
-provider_modified_at: 2026-05-10T08:00:07.138433+00:00
+provider_modified_at: 2026-05-11T08:00:07.673562+00:00
 
 title: Anju Hinge Dallas
 slug: anju-hinge-dallas
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19723639138"]
   slack: []
-last_synced: 2026-05-10T08:00:07.138433+00:00
+last_synced: 2026-05-11T08:00:07.673562+00:00
 global: true
 ---
 

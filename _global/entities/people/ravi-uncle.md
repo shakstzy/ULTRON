@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.052604+00:00
+ingested_at: 2026-05-11T08:00:07.626219+00:00
 ingest_version: 1
 content_hash: blake2b:690c153042ed89d3af9dee1e62c0f0db
-provider_modified_at: 2026-05-10T08:00:07.052604+00:00
+provider_modified_at: 2026-05-11T08:00:07.626219+00:00
 
 title: Ravi Uncle
 slug: ravi-uncle
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["4084776274"]
   slack: []
-last_synced: 2026-05-10T08:00:07.052604+00:00
+last_synced: 2026-05-11T08:00:07.626219+00:00
 global: true
 ---
 

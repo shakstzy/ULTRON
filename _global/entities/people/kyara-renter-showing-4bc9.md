@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:06.949538+00:00
+ingested_at: 2026-05-11T08:00:07.496253+00:00
 ingest_version: 1
 content_hash: blake2b:db7009831bb933da0ec7054841432198
-provider_modified_at: 2026-05-10T08:00:06.949538+00:00
+provider_modified_at: 2026-05-11T08:00:07.496253+00:00
 
 title: Kyara Renter Showing
 slug: kyara-renter-showing-4bc9
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18188187457"]
   slack: []
-last_synced: 2026-05-10T08:00:06.949538+00:00
+last_synced: 2026-05-11T08:00:07.496253+00:00
 global: true
 ---
 

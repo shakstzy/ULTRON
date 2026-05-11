@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.162269+00:00
+ingested_at: 2026-05-11T08:00:07.674698+00:00
 ingest_version: 1
 content_hash: blake2b:f37bb9dfa55dec00dcc8bbcc03ab3639
-provider_modified_at: 2026-05-10T08:00:07.162269+00:00
+provider_modified_at: 2026-05-11T08:00:07.674698+00:00
 
 title: Naveen Vaidyamath Bay Area
 slug: naveen-vaidyamath-bay-area
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(925) 872-1381"]
   slack: []
-last_synced: 2026-05-10T08:00:07.162269+00:00
+last_synced: 2026-05-11T08:00:07.674698+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.135532+00:00
+ingested_at: 2026-05-11T08:00:07.514081+00:00
 ingest_version: 1
 content_hash: blake2b:b8b0ada9b211b154cb4517db4c003194
-provider_modified_at: 2026-05-10T08:00:07.135532+00:00
+provider_modified_at: 2026-05-11T08:00:07.514081+00:00
 
 title: Dheeraj Arrow NYC
 slug: dheeraj-arrow-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16072626780"]
   slack: []
-last_synced: 2026-05-10T08:00:07.135532+00:00
+last_synced: 2026-05-11T08:00:07.514081+00:00
 global: true
 ---
 

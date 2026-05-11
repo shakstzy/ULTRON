@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.132851+00:00
+ingested_at: 2026-05-11T08:00:07.643565+00:00
 ingest_version: 1
 content_hash: blake2b:3f6feff8be1f7810017edd6e0d43b111
-provider_modified_at: 2026-05-10T08:00:07.132851+00:00
+provider_modified_at: 2026-05-11T08:00:07.643565+00:00
 
 title: Shruthi NYC
 slug: shruthi-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19842692022"]
   slack: []
-last_synced: 2026-05-10T08:00:07.132851+00:00
+last_synced: 2026-05-11T08:00:07.643565+00:00
 global: true
 ---
 

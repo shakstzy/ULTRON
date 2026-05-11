@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:06.995468+00:00
+ingested_at: 2026-05-11T08:00:07.527531+00:00
 ingest_version: 1
 content_hash: blake2b:2153a3011b3338927cb56dd0de759cad
-provider_modified_at: 2026-05-10T08:00:06.995468+00:00
+provider_modified_at: 2026-05-11T08:00:07.527531+00:00
 
 title: Austin Fields - Server
 slug: austin-fields-server
@@ -15,7 +15,7 @@ identifiers:
   email: ["fieldsaj@us.ibm.com"]
   phone: ["(512) 508-0928"]
   slack: []
-last_synced: 2026-05-10T08:00:06.995468+00:00
+last_synced: 2026-05-11T08:00:07.527531+00:00
 global: true
 ---
 

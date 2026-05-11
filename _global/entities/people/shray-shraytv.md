@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.071871+00:00
+ingested_at: 2026-05-11T08:00:07.586200+00:00
 ingest_version: 1
 content_hash: blake2b:edb18ff59e5bdfc8d3084f5ff8b422d7
-provider_modified_at: 2026-05-10T08:00:07.071871+00:00
+provider_modified_at: 2026-05-11T08:00:07.586200+00:00
 
 title: Shray | ShrayTV
 slug: shray-shraytv
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 443-703-9371"]
   slack: []
-last_synced: 2026-05-10T08:00:07.071871+00:00
+last_synced: 2026-05-11T08:00:07.586200+00:00
 global: true
 ---
 

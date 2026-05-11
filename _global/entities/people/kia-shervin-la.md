@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:06.969257+00:00
+ingested_at: 2026-05-11T08:00:07.616789+00:00
 ingest_version: 1
 content_hash: blake2b:e8384fd04008b4f53b563a739febced9
-provider_modified_at: 2026-05-10T08:00:06.969257+00:00
+provider_modified_at: 2026-05-11T08:00:07.616789+00:00
 
 title: Kia Shervin LA
 slug: kia-shervin-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(949) 332-9401"]
   slack: []
-last_synced: 2026-05-10T08:00:06.969257+00:00
+last_synced: 2026-05-11T08:00:07.616789+00:00
 global: true
 ---
 

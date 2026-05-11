@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.153992+00:00
+ingested_at: 2026-05-11T08:00:07.667270+00:00
 ingest_version: 1
 content_hash: blake2b:1fd8793394ec049089d0dd0eab0f354f
-provider_modified_at: 2026-05-10T08:00:07.153992+00:00
+provider_modified_at: 2026-05-11T08:00:07.667270+00:00
 
 title: Hrishique 🛩️ DEVCON
 slug: hrishique-devcon
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+91 79 8502 5413"]
   slack: []
-last_synced: 2026-05-10T08:00:07.153992+00:00
+last_synced: 2026-05-11T08:00:07.667270+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.099794+00:00
+ingested_at: 2026-05-11T08:00:07.612705+00:00
 ingest_version: 1
 content_hash: blake2b:029cf34585d88cca7c3666893419b4c2
-provider_modified_at: 2026-05-10T08:00:07.099794+00:00
+provider_modified_at: 2026-05-11T08:00:07.612705+00:00
 
 title: John Jannone
 slug: john-jannone
@@ -15,7 +15,7 @@ identifiers:
   email: ["john@tealsk12.org", "v-jojann@microsoft.com"]
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:07.099794+00:00
+last_synced: 2026-05-11T08:00:07.612705+00:00
 global: true
 ---
 

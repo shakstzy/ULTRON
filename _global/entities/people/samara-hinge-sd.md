@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.089027+00:00
+ingested_at: 2026-05-11T08:00:07.603311+00:00
 ingest_version: 1
 content_hash: blake2b:5ffecd47676cf2d76de70394af346f0f
-provider_modified_at: 2026-05-10T08:00:07.089027+00:00
+provider_modified_at: 2026-05-11T08:00:07.603311+00:00
 
 title: Samara Hinge SD
 slug: samara-hinge-sd
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18312973138"]
   slack: []
-last_synced: 2026-05-10T08:00:07.089027+00:00
+last_synced: 2026-05-11T08:00:07.603311+00:00
 global: true
 ---
 

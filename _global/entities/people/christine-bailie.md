@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.140148+00:00
+ingested_at: 2026-05-11T08:00:07.634419+00:00
 ingest_version: 1
 content_hash: blake2b:8a3f5aa4821306ba3d86dfa0203a5847
-provider_modified_at: 2026-05-10T08:00:07.140148+00:00
+provider_modified_at: 2026-05-11T08:00:07.634419+00:00
 
 title: Christine Bailie
 slug: christine-bailie
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15127739851"]
   slack: []
-last_synced: 2026-05-10T08:00:07.140148+00:00
+last_synced: 2026-05-11T08:00:07.634419+00:00
 global: true
 ---
 

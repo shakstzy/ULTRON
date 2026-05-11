@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.007507+00:00
+ingested_at: 2026-05-11T08:00:07.531672+00:00
 ingest_version: 1
 content_hash: blake2b:8039cff911e5c78b8d9b632acb75c50b
-provider_modified_at: 2026-05-10T08:00:07.007507+00:00
+provider_modified_at: 2026-05-11T08:00:07.531672+00:00
 
 title: Aarti Mom
 slug: aarti-mom
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["7604472470"]
   slack: []
-last_synced: 2026-05-10T08:00:07.007507+00:00
+last_synced: 2026-05-11T08:00:07.531672+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.062155+00:00
+ingested_at: 2026-05-11T08:00:07.572574+00:00
 ingest_version: 1
 content_hash: blake2b:795817a385d83d51e9f6a111945a1458
-provider_modified_at: 2026-05-10T08:00:07.062155+00:00
+provider_modified_at: 2026-05-11T08:00:07.572574+00:00
 
 title: Michael Grimes UC Berkeley
 slug: michael-grimes-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: ["michael.grimes@berkeley.edu"]
   phone: ["+1 650-235-0018"]
   slack: []
-last_synced: 2026-05-10T08:00:07.062155+00:00
+last_synced: 2026-05-11T08:00:07.572574+00:00
 global: true
 ---
 

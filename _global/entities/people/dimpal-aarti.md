@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.155681+00:00
+ingested_at: 2026-05-11T08:00:07.668960+00:00
 ingest_version: 1
 content_hash: blake2b:4aa34beee4106c73b50553659be7f406
-provider_modified_at: 2026-05-10T08:00:07.155681+00:00
+provider_modified_at: 2026-05-11T08:00:07.668960+00:00
 
 title: Dimpal Aarti
 slug: dimpal-aarti
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13235992166"]
   slack: []
-last_synced: 2026-05-10T08:00:07.155681+00:00
+last_synced: 2026-05-11T08:00:07.668960+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.047781+00:00
+ingested_at: 2026-05-11T08:00:07.608799+00:00
 ingest_version: 1
 content_hash: blake2b:b794fc5ca47b9de0be1f3fe16e14c4d8
-provider_modified_at: 2026-05-10T08:00:07.047781+00:00
+provider_modified_at: 2026-05-11T08:00:07.608799+00:00
 
 title: Brian Denny
 slug: brian-denny
@@ -15,7 +15,7 @@ identifiers:
   email: ["briancdenny@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:07.047781+00:00
+last_synced: 2026-05-11T08:00:07.608799+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.026343+00:00
+ingested_at: 2026-05-11T08:00:07.663490+00:00
 ingest_version: 1
 content_hash: blake2b:992c98677180c8abf1ab52627974bfc8
-provider_modified_at: 2026-05-10T08:00:07.026343+00:00
+provider_modified_at: 2026-05-11T08:00:07.663490+00:00
 
 title: David Alarcon UPenn
 slug: david-alarcon-upenn
@@ -15,7 +15,7 @@ identifiers:
   email: ["dalarcon@sas.upenn.edu"]
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:07.026343+00:00
+last_synced: 2026-05-11T08:00:07.663490+00:00
 global: true
 ---
 

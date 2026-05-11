@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.123266+00:00
+ingested_at: 2026-05-11T08:00:07.561900+00:00
 ingest_version: 1
 content_hash: blake2b:27b2953c19b18cd3d254b8ef2d493c4f
-provider_modified_at: 2026-05-10T08:00:07.123266+00:00
+provider_modified_at: 2026-05-11T08:00:07.561900+00:00
 
 title: Vinay | RouterProtocol
 slug: vinay-routerprotocol
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:07.123266+00:00
+last_synced: 2026-05-11T08:00:07.561900+00:00
 global: true
 ---
 

@@ -1,21 +1,21 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.077333+00:00
+ingested_at: 2026-05-11T08:00:07.506735+00:00
 ingest_version: 1
-content_hash: blake2b:d0619ba32c387f7a60ae3532914b5a39
-provider_modified_at: 2026-05-10T08:00:07.077333+00:00
+content_hash: blake2b:3392997b20cc2e3174e16a6c2a491dd4
+provider_modified_at: 2026-05-11T08:00:07.506735+00:00
 
-title: Thatha
+title: Thatha.
 slug: thatha
 type: person
 canonical_uri: lifeos:_global/entities/people/thatha
 aliases: []
 identifiers:
   email: []
-  phone: ["+91 95664 42345"]
+  phone: ["+1 512-572-2700"]
   slack: []
-last_synced: 2026-05-10T08:00:07.077333+00:00
+last_synced: 2026-05-11T08:00:07.506735+00:00
 global: true
 ---
 

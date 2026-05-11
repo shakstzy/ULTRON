@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.062656+00:00
+ingested_at: 2026-05-11T08:00:07.577921+00:00
 ingest_version: 1
 content_hash: blake2b:68123efae813526b0e0e48d1e672bded
-provider_modified_at: 2026-05-10T08:00:07.062656+00:00
+provider_modified_at: 2026-05-11T08:00:07.577921+00:00
 
 title: Isaac (Chun Sheng) Lee Stanford LEAD
 slug: isaac-chun-sheng-lee-stanford-lead
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16504488830"]
   slack: []
-last_synced: 2026-05-10T08:00:07.062656+00:00
+last_synced: 2026-05-11T08:00:07.577921+00:00
 global: true
 ---
 

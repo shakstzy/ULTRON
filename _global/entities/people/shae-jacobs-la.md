@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:06.978685+00:00
+ingested_at: 2026-05-11T08:00:07.564434+00:00
 ingest_version: 1
 content_hash: blake2b:c902fa098fc022de1eb8eb264178cda8
-provider_modified_at: 2026-05-10T08:00:06.978685+00:00
+provider_modified_at: 2026-05-11T08:00:07.564434+00:00
 
 title: Shae Jacobs LA
 slug: shae-jacobs-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 (818) 966-4694"]
   slack: []
-last_synced: 2026-05-10T08:00:06.978685+00:00
+last_synced: 2026-05-11T08:00:07.564434+00:00
 global: true
 ---
 

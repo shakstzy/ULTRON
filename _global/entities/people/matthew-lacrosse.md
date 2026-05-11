@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:06.995744+00:00
+ingested_at: 2026-05-11T08:00:07.554788+00:00
 ingest_version: 1
 content_hash: blake2b:c5001461736071c481ad996a21cfe6bf
-provider_modified_at: 2026-05-10T08:00:06.995744+00:00
+provider_modified_at: 2026-05-11T08:00:07.554788+00:00
 
 title: Matthew LaCrosse
 slug: matthew-lacrosse
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(612) 203-0084"]
   slack: []
-last_synced: 2026-05-10T08:00:06.995744+00:00
+last_synced: 2026-05-11T08:00:07.554788+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.163405+00:00
+ingested_at: 2026-05-11T08:00:07.663093+00:00
 ingest_version: 1
 content_hash: blake2b:8dee3fe4f0f225985ff239e244baffb3
-provider_modified_at: 2026-05-10T08:00:07.163405+00:00
+provider_modified_at: 2026-05-11T08:00:07.663093+00:00
 
 title: Rohan Vaidya UC Berkeley
 slug: rohan-vaidya-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: ["galaxyofrohan@gmail.com"]
   phone: ["(925) 998-1053"]
   slack: []
-last_synced: 2026-05-10T08:00:07.163405+00:00
+last_synced: 2026-05-11T08:00:07.663093+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.084061+00:00
+ingested_at: 2026-05-11T08:00:07.640881+00:00
 ingest_version: 1
 content_hash: blake2b:ae7fdd409530e7cdf9817d4f76ce5990
-provider_modified_at: 2026-05-10T08:00:07.084061+00:00
+provider_modified_at: 2026-05-11T08:00:07.640881+00:00
 
 title: Mustafa Khan
 slug: mustafa-khan
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19259840366"]
   slack: []
-last_synced: 2026-05-10T08:00:07.084061+00:00
+last_synced: 2026-05-11T08:00:07.640881+00:00
 global: true
 ---
 

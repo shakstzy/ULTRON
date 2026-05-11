@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.073882+00:00
+ingested_at: 2026-05-11T08:00:07.588707+00:00
 ingest_version: 1
 content_hash: blake2b:3896cca3c866098716000f8acfe06e56
-provider_modified_at: 2026-05-10T08:00:07.073882+00:00
+provider_modified_at: 2026-05-11T08:00:07.588707+00:00
 
 title: Parth Akshar USC NYC
 slug: parth-akshar-usc-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16692819606"]
   slack: []
-last_synced: 2026-05-10T08:00:07.073882+00:00
+last_synced: 2026-05-11T08:00:07.588707+00:00
 global: true
 ---
 

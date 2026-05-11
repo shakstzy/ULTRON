@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.130721+00:00
+ingested_at: 2026-05-11T08:00:07.525584+00:00
 ingest_version: 1
 content_hash: blake2b:edfaa8a0f71a27da3b4a7e804e4a4d91
-provider_modified_at: 2026-05-10T08:00:07.130721+00:00
+provider_modified_at: 2026-05-11T08:00:07.525584+00:00
 
 title: Sal | Outerscope
 slug: sal-outerscope
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 416-209-2618"]
   slack: []
-last_synced: 2026-05-10T08:00:07.130721+00:00
+last_synced: 2026-05-11T08:00:07.525584+00:00
 global: true
 ---
 

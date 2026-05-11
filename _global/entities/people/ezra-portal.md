@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.144058+00:00
+ingested_at: 2026-05-11T08:00:07.568092+00:00
 ingest_version: 1
 content_hash: blake2b:55ac0ee52314a2ee3a68077376ff58a4
-provider_modified_at: 2026-05-10T08:00:07.144058+00:00
+provider_modified_at: 2026-05-11T08:00:07.568092+00:00
 
 title: Ezra | Portal
 slug: ezra-portal
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:07.144058+00:00
+last_synced: 2026-05-11T08:00:07.568092+00:00
 global: true
 ---
 

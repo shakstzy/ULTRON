@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.148719+00:00
+ingested_at: 2026-05-11T08:00:07.658132+00:00
 ingest_version: 1
 content_hash: blake2b:a477c24776168ccd008fb3dc4b8b4055
-provider_modified_at: 2026-05-10T08:00:07.148719+00:00
+provider_modified_at: 2026-05-11T08:00:07.658132+00:00
 
 title: Desiree Hinge Austin
 slug: desiree-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14323608213"]
   slack: []
-last_synced: 2026-05-10T08:00:07.148719+00:00
+last_synced: 2026-05-11T08:00:07.658132+00:00
 global: true
 ---
 

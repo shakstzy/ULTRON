@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.128861+00:00
+ingested_at: 2026-05-11T08:00:07.665651+00:00
 ingest_version: 1
 content_hash: blake2b:8355b68ef38a627555f7959d642ba697
-provider_modified_at: 2026-05-10T08:00:07.128861+00:00
+provider_modified_at: 2026-05-11T08:00:07.665651+00:00
 
 title: Ziya NYC
 slug: ziya-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17185814183"]
   slack: []
-last_synced: 2026-05-10T08:00:07.128861+00:00
+last_synced: 2026-05-11T08:00:07.665651+00:00
 global: true
 ---
 

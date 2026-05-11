@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.133477+00:00
+ingested_at: 2026-05-11T08:00:07.643886+00:00
 ingest_version: 1
 content_hash: blake2b:3b33b22cd67b447d8630d1f49ba7977b
-provider_modified_at: 2026-05-10T08:00:07.133477+00:00
+provider_modified_at: 2026-05-11T08:00:07.643886+00:00
 
 title: Ryan Ogren
 slug: ryan-ogren
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 609-705-1239"]
   slack: []
-last_synced: 2026-05-10T08:00:07.133477+00:00
+last_synced: 2026-05-11T08:00:07.643886+00:00
 global: true
 ---
 

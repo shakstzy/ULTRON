@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.074719+00:00
+ingested_at: 2026-05-11T08:00:07.572875+00:00
 ingest_version: 1
 content_hash: blake2b:fa038e47b166784455913ccb6763dd9f
-provider_modified_at: 2026-05-10T08:00:07.074719+00:00
+provider_modified_at: 2026-05-11T08:00:07.572875+00:00
 
 title: Max | Enflux.io
 slug: max-enflux-io
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:07.074719+00:00
+last_synced: 2026-05-11T08:00:07.572875+00:00
 global: true
 ---
 

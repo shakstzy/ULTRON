@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.004689+00:00
+ingested_at: 2026-05-11T08:00:07.560330+00:00
 ingest_version: 1
 content_hash: blake2b:f977fd4124412a7bbd23012d8397ac85
-provider_modified_at: 2026-05-10T08:00:07.004689+00:00
+provider_modified_at: 2026-05-11T08:00:07.560330+00:00
 
 title: Lionel | LightNodeVentures
 slug: lionel-lightnodeventures
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 804-477-4627", "+1 346-885-4611"]
   slack: []
-last_synced: 2026-05-10T08:00:07.004689+00:00
+last_synced: 2026-05-11T08:00:07.560330+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:06.997452+00:00
+ingested_at: 2026-05-11T08:00:07.524213+00:00
 ingest_version: 1
 content_hash: blake2b:a7d9b439168872631e198f1f2d35cd1c
-provider_modified_at: 2026-05-10T08:00:06.997452+00:00
+provider_modified_at: 2026-05-11T08:00:07.524213+00:00
 
 title: purna
 slug: purna
@@ -15,7 +15,7 @@ identifiers:
   email: ["purnabalijepally@yahoo.com"]
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:06.997452+00:00
+last_synced: 2026-05-11T08:00:07.524213+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:06.988919+00:00
+ingested_at: 2026-05-11T08:00:07.524951+00:00
 ingest_version: 1
 content_hash: blake2b:9a88703623328d73d0cc89995b28bdc7
-provider_modified_at: 2026-05-10T08:00:06.988919+00:00
+provider_modified_at: 2026-05-11T08:00:07.524951+00:00
 
 title: Rohan Krishnamurthy
 slug: rohan-krishnamurthy
@@ -15,7 +15,7 @@ identifiers:
   email: ["rohan@rohanrhythm.com", "rohankrishnamurthy@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:06.988919+00:00
+last_synced: 2026-05-11T08:00:07.524951+00:00
 global: true
 ---
 

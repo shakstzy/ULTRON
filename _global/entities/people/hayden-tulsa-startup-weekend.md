@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.120561+00:00
+ingested_at: 2026-05-11T08:00:07.671024+00:00
 ingest_version: 1
 content_hash: blake2b:dd74baa89b5aede2b361aa413f0eab40
-provider_modified_at: 2026-05-10T08:00:07.120561+00:00
+provider_modified_at: 2026-05-11T08:00:07.671024+00:00
 
 title: Hayden Tulsa Startup Weekend
 slug: hayden-tulsa-startup-weekend
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15632758506"]
   slack: []
-last_synced: 2026-05-10T08:00:07.120561+00:00
+last_synced: 2026-05-11T08:00:07.671024+00:00
 global: true
 ---
 

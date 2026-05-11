@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.031528+00:00
+ingested_at: 2026-05-11T08:00:07.550431+00:00
 ingest_version: 1
 content_hash: blake2b:8bfb671d50623330822382708ddd2f1a
-provider_modified_at: 2026-05-10T08:00:07.031528+00:00
+provider_modified_at: 2026-05-11T08:00:07.550431+00:00
 
 title: Sarah Truong (ROHP) UC Berkeley
 slug: sarah-truong-rohp-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(714) 391-1551"]
   slack: []
-last_synced: 2026-05-10T08:00:07.031528+00:00
+last_synced: 2026-05-11T08:00:07.550431+00:00
 global: true
 ---
 

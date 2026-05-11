@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.074811+00:00
+ingested_at: 2026-05-11T08:00:07.589102+00:00
 ingest_version: 1
 content_hash: blake2b:9ded7ff7902485bde118dd384477a9df
-provider_modified_at: 2026-05-10T08:00:07.074811+00:00
+provider_modified_at: 2026-05-11T08:00:07.589102+00:00
 
 title: Anish Q0
 slug: anish-q0
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 732-809-4846"]
   slack: []
-last_synced: 2026-05-10T08:00:07.074811+00:00
+last_synced: 2026-05-11T08:00:07.589102+00:00
 global: true
 ---
 

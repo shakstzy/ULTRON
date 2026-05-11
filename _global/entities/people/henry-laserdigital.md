@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.163343+00:00
+ingested_at: 2026-05-11T08:00:07.516965+00:00
 ingest_version: 1
 content_hash: blake2b:d783d5a1e57c32f7326b7631c6629f84
-provider_modified_at: 2026-05-10T08:00:07.163343+00:00
+provider_modified_at: 2026-05-11T08:00:07.516965+00:00
 
 title: Henry | LaserDigital
 slug: henry-laserdigital
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:07.163343+00:00
+last_synced: 2026-05-11T08:00:07.516965+00:00
 global: true
 ---
 

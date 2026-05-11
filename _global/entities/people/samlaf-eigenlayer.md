@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.102498+00:00
+ingested_at: 2026-05-11T08:00:07.615072+00:00
 ingest_version: 1
 content_hash: blake2b:d7ef89a3820e01469eae0b6d59290db2
-provider_modified_at: 2026-05-10T08:00:07.102498+00:00
+provider_modified_at: 2026-05-11T08:00:07.615072+00:00
 
 title: samlaf | Eigenlayer
 slug: samlaf-eigenlayer
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:07.102498+00:00
+last_synced: 2026-05-11T08:00:07.615072+00:00
 global: true
 ---
 

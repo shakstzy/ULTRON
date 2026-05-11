@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.042893+00:00
+ingested_at: 2026-05-11T08:00:07.599908+00:00
 ingest_version: 1
 content_hash: blake2b:8a21eb91b3a6adc744ffccf647ff4305
-provider_modified_at: 2026-05-10T08:00:07.042893+00:00
+provider_modified_at: 2026-05-11T08:00:07.599908+00:00
 
 title: Lou CryptoOracle
 slug: lou-cryptooracle
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 (310) 710-2271"]
   slack: []
-last_synced: 2026-05-10T08:00:07.042893+00:00
+last_synced: 2026-05-11T08:00:07.599908+00:00
 global: true
 ---
 

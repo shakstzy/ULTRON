@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.143701+00:00
+ingested_at: 2026-05-11T08:00:07.654502+00:00
 ingest_version: 1
 content_hash: blake2b:b00760dc92641475e44ff9ddfa87b678
-provider_modified_at: 2026-05-10T08:00:07.143701+00:00
+provider_modified_at: 2026-05-11T08:00:07.654502+00:00
 
 title: Chance Reeve LASA
 slug: chance-reeve-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(512) 769-7736"]
   slack: []
-last_synced: 2026-05-10T08:00:07.143701+00:00
+last_synced: 2026-05-11T08:00:07.654502+00:00
 global: true
 ---
 

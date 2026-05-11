@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:06.996032+00:00
+ingested_at: 2026-05-11T08:00:07.560138+00:00
 ingest_version: 1
 content_hash: blake2b:de42ba951b58573834cff5c047db7793
-provider_modified_at: 2026-05-10T08:00:06.996032+00:00
+provider_modified_at: 2026-05-11T08:00:07.560138+00:00
 
 title: Mo NYC
 slug: mo-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19193444816"]
   slack: []
-last_synced: 2026-05-10T08:00:06.996032+00:00
+last_synced: 2026-05-11T08:00:07.560138+00:00
 global: true
 ---
 

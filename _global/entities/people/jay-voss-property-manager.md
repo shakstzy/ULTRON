@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.076526+00:00
+ingested_at: 2026-05-11T08:00:07.590185+00:00
 ingest_version: 1
 content_hash: blake2b:a3ed409f284f879a2e482e4f606aa529
-provider_modified_at: 2026-05-10T08:00:07.076526+00:00
+provider_modified_at: 2026-05-11T08:00:07.590185+00:00
 
 title: Jay Voss Property Manager
 slug: jay-voss-property-manager
@@ -15,7 +15,7 @@ identifiers:
   email: ["vosspropertiesinfo@gmail.com", "jay.voss@hotmail.com"]
   phone: ["5126590644"]
   slack: []
-last_synced: 2026-05-10T08:00:07.076526+00:00
+last_synced: 2026-05-11T08:00:07.590185+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.000780+00:00
+ingested_at: 2026-05-11T08:00:07.607715+00:00
 ingest_version: 1
 content_hash: blake2b:50d86366cc3eb2f229c42ba8922a84f1
-provider_modified_at: 2026-05-10T08:00:07.000780+00:00
+provider_modified_at: 2026-05-11T08:00:07.607715+00:00
 
 title: Amos Music Crypto LA
 slug: amos-music-crypto-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 475-470-6627"]
   slack: []
-last_synced: 2026-05-10T08:00:07.000780+00:00
+last_synced: 2026-05-11T08:00:07.607715+00:00
 global: true
 ---
 

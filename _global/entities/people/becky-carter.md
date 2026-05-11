@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.111116+00:00
+ingested_at: 2026-05-11T08:00:07.623457+00:00
 ingest_version: 1
 content_hash: blake2b:020585e095fc8f76e726a0bc9c7c9943
-provider_modified_at: 2026-05-10T08:00:07.111116+00:00
+provider_modified_at: 2026-05-11T08:00:07.623457+00:00
 
 title: Becky Carter
 slug: becky-carter
@@ -15,7 +15,7 @@ identifiers:
   email: ["beckylcarter@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:07.111116+00:00
+last_synced: 2026-05-11T08:00:07.623457+00:00
 global: true
 ---
 

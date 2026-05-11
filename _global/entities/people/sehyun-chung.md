@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:06.965180+00:00
+ingested_at: 2026-05-11T08:00:07.503331+00:00
 ingest_version: 1
 content_hash: blake2b:59b26e3359190e81d0455bca7865ae14
-provider_modified_at: 2026-05-10T08:00:06.965180+00:00
+provider_modified_at: 2026-05-11T08:00:07.503331+00:00
 
 title: Sehyun Chung
 slug: sehyun-chung
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15162544771"]
   slack: []
-last_synced: 2026-05-10T08:00:06.965180+00:00
+last_synced: 2026-05-11T08:00:07.503331+00:00
 global: true
 ---
 

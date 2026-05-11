@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.073015+00:00
+ingested_at: 2026-05-11T08:00:07.588298+00:00
 ingest_version: 1
 content_hash: blake2b:18c1d5c751f2068151d23b49a54f53c5
-provider_modified_at: 2026-05-10T08:00:07.073015+00:00
+provider_modified_at: 2026-05-11T08:00:07.588298+00:00
 
 title: Mary
 slug: mary
@@ -15,7 +15,7 @@ identifiers:
   email: ["maryscherer@austin.rr.com"]
   phone: []
   slack: []
-last_synced: 2026-05-10T08:00:07.073015+00:00
+last_synced: 2026-05-11T08:00:07.588298+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:06.982179+00:00
+ingested_at: 2026-05-11T08:00:07.604887+00:00
 ingest_version: 1
 content_hash: blake2b:3d06047bddc5ee20865876ce2211ddb9
-provider_modified_at: 2026-05-10T08:00:06.982179+00:00
+provider_modified_at: 2026-05-11T08:00:07.604887+00:00
 
 title: Hetal LASA
 slug: hetal-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(512) 506-1050"]
   slack: []
-last_synced: 2026-05-10T08:00:06.982179+00:00
+last_synced: 2026-05-11T08:00:07.604887+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-10T08:00:07.083866+00:00
+ingested_at: 2026-05-11T08:00:07.653630+00:00
 ingest_version: 1
 content_hash: blake2b:4daa54969ffed0f283fed4e6a14ff1e4
-provider_modified_at: 2026-05-10T08:00:07.083866+00:00
+provider_modified_at: 2026-05-11T08:00:07.653630+00:00
 
 title: Riya23 Hinge Austin
 slug: riya23-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15128888201"]
   slack: []
-last_synced: 2026-05-10T08:00:07.083866+00:00
+last_synced: 2026-05-11T08:00:07.653630+00:00
 global: true
 ---
 

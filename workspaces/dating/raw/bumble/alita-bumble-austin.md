@@ -6,11 +6,11 @@ city: "austin"
 match_id: "zAhMACjIzNDg0MTAwNTEIe-K7hQAAAAAgvo8GcblQLzLn09LCL0CwX7z66GQREPQR8j4bAcH1dIU"
 person_id: null
 phone: null
-status: "new"
-expires_at: "2026-05-10T04:29:37.002Z"
+status: "expired"
+expires_at: "2026-05-11T04:28:55.684Z"
 first_seen: "2026-05-04T03:23:54.988Z"
 last_activity: "2026-05-07T20:28:07.480Z"
-last_scrape: "2026-05-10T04:29:38.003Z"
+last_scrape: "2026-05-11T04:28:56.685Z"
 previous_slugs: []
 last_profile_diff: "2026-05-07T05:20:24.503Z"
 ---

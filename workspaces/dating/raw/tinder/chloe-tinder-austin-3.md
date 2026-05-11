@@ -9,9 +9,9 @@ phone: null
 status: "new"
 first_seen: "2026-05-10T04:03:29.218Z"
 last_activity: "2026-05-10T04:03:29.218Z"
-last_scrape: "2026-05-10T22:05:11.395Z"
+last_scrape: "2026-05-11T04:18:11.463Z"
 previous_slugs: []
-last_profile_diff: "2026-05-10T22:05:11.395Z"
+last_profile_diff: "2026-05-11T04:18:11.463Z"
 ---
 
 ## Profile
@@ -19,7 +19,7 @@ last_profile_diff: "2026-05-10T22:05:11.395Z"
 - age: 22
 - distance_mi: 178
 - height_cm: 168
-- bio: "I like to party and have fun"
+- bio: "I like to party and have fun! Favorite movies are the Jurassic park movies! My spirt animal is a unicorn. I’m a plus size baddie."
 - looking_for: "Still figuring it out · Open to exploring"
 - jobs: Woman, English
 - pronouns: "She/Her"
@@ -61,6 +61,20 @@ last_profile_diff: "2026-05-10T22:05:11.395Z"
     "lifestyle.cannabis": {
       "from": "Occasionally",
       "to": "Never"
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-11T04:18:11.463Z",
+  "added": {},
+  "removed": {},
+  "changed": {
+    "bio": {
+      "from": "I like to party and have fun",
+      "to": "I like to party and have fun! Favorite movies are the Jurassic park movies! My spirt animal is a unicorn. I’m a plus size baddie."
     }
   }
 }

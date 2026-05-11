@@ -9,14 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-10T22:05:07.994Z"
 last_activity: "2026-05-10T22:05:07.994Z"
-last_scrape: "2026-05-10T22:05:07.994Z"
+last_scrape: "2026-05-11T04:18:07.755Z"
 previous_slugs: []
+last_profile_diff: "2026-05-11T04:18:07.755Z"
 ---
 
 ## Profile
 
 - age: 23
-- distance_mi: 1
+- distance_mi: 3
 - bio: "Only here to go on fun dates No hookups 5’8"
 - looking_for: "Still figuring it out"
 - schools: Texas State University
@@ -29,7 +30,19 @@ previous_slugs: []
 
 ## Profile changes
 
-(none yet)
+```json profile-diff
+{
+  "ts": "2026-05-11T04:18:07.755Z",
+  "added": {},
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 1,
+      "to": 3
+    }
+  }
+}
+```
 
 ## Conversation
 

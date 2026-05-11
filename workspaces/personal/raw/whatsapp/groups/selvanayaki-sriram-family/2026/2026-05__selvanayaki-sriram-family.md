@@ -1,17 +1,17 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-11T19:30:05.178261+00:00'
+ingested_at: '2026-05-11T21:00:06.096062+00:00'
 ingest_version: 1
-content_hash: 'blake3:e353cb83f6ced720251bfa687c1c78036614822fd118ff6446071b33521676ac'
-provider_modified_at: '2026-05-11T14:06:26-05:00'
+content_hash: 'blake3:c5e4fe5aa4d12b9215cc04ca1b61be089c24af7d9edb62fce6b0de6da1547bbf'
+provider_modified_at: '2026-05-11T15:43:09-05:00'
 contact_slug: selvanayaki-sriram-family
 contact_type: group
 month: 2026-05
 date_range: [2026-05-02, 2026-05-11]
-message_count: 22
+message_count: 23
 my_message_count: 0
-their_message_count: 22
+their_message_count: 23
 attachments: []
 whatsapp_chat_jid: '15104499964-1548215289@g.us'
 whatsapp_chat_kind: group
@@ -69,3 +69,4 @@ Pls take care of Appa 💖🙏🏻 who has had the loss of his life partner.
 
 I'll call Sai & Aruna this week to convey condolence.
 **14:06 — @61542703857907:** [audio: audio_20260511_140627.ogg]
+**15:43 — @202284436856974:** [audio: audio_20260511_154310.ogg]

@@ -7,10 +7,10 @@ match_id: "zAhMACjIyOTA2OTQ2NzIIe-K7hQAAAAAgADTgBC-lRHqHmsdRCGLoW9oLMrSuucigI_ak
 person_id: null
 phone: null
 status: "expired"
-expires_at: "2026-05-10T04:29:44.916Z"
+expires_at: "2026-05-11T04:28:19.999Z"
 first_seen: "2026-05-04T03:29:45.278Z"
-last_activity: "2026-05-06T23:32:30.408Z"
-last_scrape: "2026-05-10T04:29:45.917Z"
+last_activity: "2026-05-11T04:28:21.006Z"
+last_scrape: "2026-05-11T04:28:21.002Z"
 previous_slugs:
   - "aneela-bumble-austin"
 ---
@@ -21,6 +21,7 @@ previous_slugs:
 - height: "5' 1''"
 - height_cm: 155
 - jobs: Behavioral Therapist
+- hometown: "Santa Clarita, CA"
 - photo_verified: true
 - lifestyle_badges: ["5' 1''","Sometimes","Graduate degree","Rarely","Relationship","Open to kids","Pisces","Hindu"]
 - prompts.0.q: "The quickest way to my heart is"
@@ -54,6 +55,8 @@ previous_slugs:
 **you** 2026-05-04 03:29 Me too. Are you in Austin right now?
 **her** 2026-05-04 03:29 No I live in Los Angeles
 **you** 2026-05-06 23:32 Makes sense with the USC taekwondo gear. You moving to Austin or just visiting?
+**her** 2026-05-11 04:28 I never visited Texas so idk what you’re talking about
+**her** 2026-05-11 04:28 My friends studied in usc I didn’t
 
 ## Outbound log
 

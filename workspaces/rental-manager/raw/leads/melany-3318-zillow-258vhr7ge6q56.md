@@ -58,3 +58,7 @@ Perfect. I'll put you down for Thursday at 5. What's the best number to reach yo
 ### 2026-05-11T21:59:03.000Z - Melany Alvizures
 
 8183887105
+
+### 2026-05-11T22:01:38.603Z - Owner (Adithya)
+
+Got it. I'll text you there Thursday before 5. When are you looking to move in?

@@ -1,17 +1,17 @@
 ---
 source: whatsapp
 workspace: personal
-ingested_at: '2026-05-10T19:42:02.085224+00:00'
+ingested_at: '2026-05-11T11:30:06.078503+00:00'
 ingest_version: 1
-content_hash: 'blake3:7decd97bd5df9485e1a34902c7c970efcd14e067de29a7f7e2f4be12f40da898'
-provider_modified_at: '2026-05-10T13:53:55-05:00'
+content_hash: 'blake3:374a29c42f32314fa0b2428aaf018a04ca7c6d834991430d97d3c590c63f7fa4'
+provider_modified_at: '2026-05-11T06:24:59-05:00'
 contact_slug: devi-balu-family
 contact_type: group
 month: 2026-05
-date_range: [2026-05-02, 2026-05-10]
-message_count: 13
+date_range: [2026-05-02, 2026-05-11]
+message_count: 18
 my_message_count: 0
-their_message_count: 13
+their_message_count: 18
 attachments: []
 whatsapp_chat_jid: '120363313814441793@g.us'
 whatsapp_chat_kind: group
@@ -52,3 +52,11 @@ listen to msgs from @61542703857907
 **13:53 — @273288869752960:** https://www.sciencedaily.com/releases/2026/04/260407073850.htm?hl=en-US
 
 Vitamin D levels in midlife may play a bigger role in long-term brain health than previously thought. In a study following nearly 800 people over 16 years, those with higher vitamin D levels in their 30s and 40s had lower levels of tau protein later on, a key marker linked to dementia
+
+## 2026-05-11 (Monday)
+
+**06:24 — @273288869752960:** [image: image_20260511_062459.jpg]
+**06:24 — @273288869752960:** [image: image_20260511_062459.jpg]
+**06:24 — @273288869752960:** [image: image_20260511_062459.jpg]
+**06:24 — @273288869752960:** [image: image_20260511_062459.jpg]
+**06:24 — @273288869752960:** [image: image_20260511_062459.jpg]

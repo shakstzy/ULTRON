@@ -66,3 +66,7 @@ All good. You don't pay anything just to look. If you still want to check the pl
 ### 2026-05-11T22:58:17.000Z - xtian hdz
 
 thank you that's fine. I rather not I wish you can work something out with the landlord about the application fee cause I'm looking to rent but otherwise No and Thank you have a good rest of your day and get rest after work. Take care.
+
+### 2026-05-12T14:03:24.908Z - Owner (Adithya)
+
+I actually own the place. I just can't skip the background check. If you change your mind, do you want to swing by Wednesday at 10 AM, Thursday at 2 PM, or Friday at 5 PM Central?

@@ -61,3 +61,7 @@ Hello, I do apologize for the delay in my response. I wanted to reach out and se
 ### 2026-05-12T04:24:34.000Z - kanaiisl7
 
 Good evening, I do apologize about the back and forth on time. If the space is still available could we schedule for 11:45 on May 17?
+
+### 2026-05-12T14:02:26.182Z - Owner (Adithya)
+
+rooms are still open but i'm actually booked up on sunday. i have time wednesday at 10 am, thursday at 2 pm, or friday at 5 pm. do any of those work for you?

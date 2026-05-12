@@ -74,3 +74,7 @@ Do you happen to be available in like 15min today? I’m near the area
 ### 2026-05-11T22:09:59.000Z - Melany Alvizures
 
 If not it’s okay Thursday will do
+
+### 2026-05-12T14:02:59.686Z - Owner (Adithya)
+
+Sorry I missed this yesterday. I actually need to reschedule our Thursday slot. I can do Wednesday at 10 am, Thursday at 2 pm, or Friday at 5 pm. Which of those works for you?

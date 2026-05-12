@@ -71,3 +71,7 @@ I can do Wednesday at 2 pm. If that cuts it too close to work, we can do Thursda
 ### 2026-05-12T08:22:32.000Z - Shealy Cardona
 
 yes we can do wednesday at 2 pm we can’t do 1:30?
+
+### 2026-05-12T14:02:09.240Z - Owner (Adithya)
+
+I can't do 1:30 tomorrow. I've got a spot open at 10 am though. Does that work for you before you head to work?

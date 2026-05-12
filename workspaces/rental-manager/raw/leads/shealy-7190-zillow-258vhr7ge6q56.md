@@ -10,7 +10,7 @@ listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 1437876304138345868
 status_label: TOUR REQUESTED
 renter_us_state: CA
-last_pulled_at: "2026-05-11T22:00:19.367Z"
+last_pulled_at: "2026-05-12T14:00:14.517Z"
 ---
 
 # Shealy
@@ -67,3 +67,7 @@ i won’t be able monday or tuesday, for wednesday i work at 3 so it would have 
 ### 2026-05-11T15:34:06.000Z - Owner (Adithya)
 
 I can do Wednesday at 2 pm. If that cuts it too close to work, we can do Thursday at 5 pm. Which one works better?
+
+### 2026-05-12T08:22:32.000Z - Shealy Cardona
+
+yes we can do wednesday at 2 pm we can’t do 1:30?

@@ -10,7 +10,7 @@ listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 6429606784788879790
 status_label: INQUIRED
 renter_us_state: CA
-last_pulled_at: "2026-05-11T22:00:21.264Z"
+last_pulled_at: "2026-05-12T14:00:15.018Z"
 ---
 
 # Kensey
@@ -53,3 +53,11 @@ Hello, Ok thx you for the confirmation. I got called into work for tomorrow and 
 ### 2026-05-08T22:10:29.000Z - Owner (Adithya)
 
 all good. next weekend works and i can do sundays. let me know what day and time is best for you.
+
+### 2026-05-12T02:04:39.000Z - kanaiisl7
+
+Hello, I do apologize for the delay in my response. I wanted to reach out and see if the space is still available to tour. If it is could I schedule for Sunday May 17 around 2pm?
+
+### 2026-05-12T04:24:34.000Z - kanaiisl7
+
+Good evening, I do apologize about the back and forth on time. If the space is still available could we schedule for 11:45 on May 17?

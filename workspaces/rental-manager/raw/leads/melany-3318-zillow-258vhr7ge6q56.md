@@ -8,7 +8,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: gmail-19e0852073bd3318
 status_label: INQUIRED
-last_pulled_at: "2026-05-11T22:00:17.432Z"
+last_pulled_at: "2026-05-12T14:00:16.504Z"
 ---
 
 # Melany
@@ -59,6 +59,18 @@ Perfect. I'll put you down for Thursday at 5. What's the best number to reach yo
 
 8183887105
 
-### 2026-05-11T22:01:38.603Z - Owner (Adithya)
+### 2026-05-11T22:01:38.000Z - Owner (Adithya)
 
 Got it. I'll text you there Thursday before 5. When are you looking to move in?
+
+### 2026-05-11T22:01:43.000Z - Owner (Adithya)
+
+Got it. I'll text you on Thursday at 5. When are you trying to move in?
+
+### 2026-05-11T22:09:42.000Z - Melany Alvizures
+
+Do you happen to be available in like 15min today? I’m near the area
+
+### 2026-05-11T22:09:59.000Z - Melany Alvizures
+
+If not it’s okay Thursday will do

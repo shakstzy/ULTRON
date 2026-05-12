@@ -8,7 +8,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: gmail-19e0a1b0faefecae
 status_label: INQUIRED
-last_pulled_at: "2026-05-11T22:00:18.383Z"
+last_pulled_at: "2026-05-12T14:00:15.989Z"
 ---
 
 # christine
@@ -62,3 +62,7 @@ I understand that part OK thank you so much. I hope you find some good candid
 ### 2026-05-11T21:21:07.000Z - Owner (Adithya)
 
 All good. You don't pay anything just to look. If you still want to check the place out, I have time Tuesday at 10:30 AM or Wednesday at 2:00 PM. Do either of those work?
+
+### 2026-05-11T22:58:17.000Z - xtian hdz
+
+thank you that's fine. I rather not I wish you can work something out with the landlord about the application fee cause I'm looking to rent but otherwise No and Thank you have a good rest of your day and get rest after work. Take care.

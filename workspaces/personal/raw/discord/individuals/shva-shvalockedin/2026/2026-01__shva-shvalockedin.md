@@ -1,9 +1,9 @@
 ---
 source: discord
 workspace: personal
-ingested_at: '2026-05-12T05:03:06.954Z'
+ingested_at: '2026-05-12T11:03:22.910Z'
 ingest_version: 1
-content_hash: sha256:5e33fd96ad4ae3707cf8ee0e858a115beba108741c20c0e642658dfba2762645
+content_hash: sha256:f6f8d905f84027cf832090e032c5c869c317e5ecfdee11651555dc6deda2eee6
 provider_modified_at: '2026-01-06T02:27:05.877Z'
 contact_slug: shva-shvalockedin
 contact_type: individual
@@ -18,13 +18,13 @@ attachments:
     filename: content.png
     url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1456463673106239668/content.png?ex=6a03d7ff&is=6a02867f&hm=41b4481d115046964fd12b6a67a9705ec6a3b26be0077bdcc8fa48d4cfb33fd1&'
     size: 793361
-    description: 'A six-panel promotional infographic for Approach.AI, an app designed to build real-world charisma using AI-generated openers.'
+    description: 'A six-panel infographic details the features of Approach.AI, a web app designed to build social confidence.'
   - message_id: '1456834776504860928'
     kind: image
     filename: image.png
     url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1456834776295018658/image.png?ex=6a03e01d&is=6a028e9d&hm=4e5adeaba06bd9b391d4f9399bc06adf039f715c49a42f19a926854f6184fcad&'
     size: 482087
-    description: 'A document displaying a red-highlighted writing prompt and a blue-highlighted essay response.'
+    description: 'A document showing a community-themed prompt and a short personal essay about a robotics team.'
 discord_channel_id: '1292220510603575366'
 discord_channel_kind: dm
 discord_recipient_id: '1285363977030729738'
@@ -42,7 +42,7 @@ superseded_by: null
 **19:43 — SHVA:** https://www.instagram.com/p/DS_WdDfjRq4/
 **19:45 — SHVA:** https://www.producthunt.com/p/general/introducing-approach-ai-the-1-web-app-to-build-real-world-charisma
 **19:46 — SHVA:** 
-↳ image: content.png (775 KB) — "A six-panel promotional infographic for Approach.AI, an app designed to build real-world charisma using AI-generated openers." — https://cdn.discordapp.com/attachments/1292220510603575366/1456463673106239668/content.png?ex=6a03d7ff&is=6a02867f&hm=41b4481d115046964fd12b6a67a9705ec6a3b26be0077bdcc8fa48d4cfb33fd1&
+↳ image: content.png (775 KB) — "A six-panel infographic details the features of Approach.AI, a web app designed to build social confidence." — https://cdn.discordapp.com/attachments/1292220510603575366/1456463673106239668/content.png?ex=6a03d7ff&is=6a02867f&hm=41b4481d115046964fd12b6a67a9705ec6a3b26be0077bdcc8fa48d4cfb33fd1&
 **20:39 — SHVA:** https://docs.google.com/document/d/1uUDslzz6zu_Dw9bZ3x6QmGGNKOBNR6nGNNF1l6W-Jcw/edit?tab=t.xar9dd97igb
 **22:37 — SHVA:** https://docs.google.com/document/d/123yzlpi3ZyxpIZnoIXLgHMUSEDFb1nCNwCyURoWkjs8/edit?usp=drivesdk
 **22:37 — SHVA:** https://docs.google.com/document/d/1sxQ_r3YSsfIwRH5dUzMY2Z5Ugq8pwnINBJXfcL5f8H0/edit?usp=drivesdk
@@ -115,7 +115,7 @@ State science fair finalist; built AI + Raman spectroscopy system for early skin
 **19:46 — me:** listen and reduce the haas essay down to 350 and use it
 **20:01 — me:** https://walterwrites.ai/
 **20:21 — me:** 
-↳ image: image.png (471 KB) — "A document displaying a red-highlighted writing prompt and a blue-highlighted essay response." — https://cdn.discordapp.com/attachments/1292220510603575366/1456834776295018658/image.png?ex=6a03e01d&is=6a028e9d&hm=4e5adeaba06bd9b391d4f9399bc06adf039f715c49a42f19a926854f6184fcad&
+↳ image: image.png (471 KB) — "A document showing a community-themed prompt and a short personal essay about a robotics team." — https://cdn.discordapp.com/attachments/1292220510603575366/1456834776295018658/image.png?ex=6a03e01d&is=6a028e9d&hm=4e5adeaba06bd9b391d4f9399bc06adf039f715c49a42f19a926854f6184fcad&
 **20:21 — me:** heres a version under 350 that speaks about community
 **20:34 — SHVA:** https://docs.google.com/spreadsheets/d/10Z4k6HEDw81qgofP38dbS-0cb2T5p5EtPCKzrEdJGLc/edit?gid=1383438644#gid=1383438644
 

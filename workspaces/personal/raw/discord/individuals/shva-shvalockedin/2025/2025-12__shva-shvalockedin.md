@@ -1,9 +1,9 @@
 ---
 source: discord
 workspace: personal
-ingested_at: '2026-05-12T05:02:44.391Z'
+ingested_at: '2026-05-12T11:03:01.531Z'
 ingest_version: 1
-content_hash: sha256:5fdc34348c910bd0ff0e260914601c19120ce379999999cc6dbe96957e5f5ac9
+content_hash: sha256:450bf3fd7b2381e3a03e19d645d355568ce07953c7239fdbba60e3a1d615eb69
 provider_modified_at: '2025-12-25T20:54:17.659Z'
 contact_slug: shva-shvalockedin
 contact_type: individual
@@ -18,17 +18,17 @@ attachments:
     filename: image.png
     url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1445450954907320420/image.png?ex=6a03fd5a&is=6a02abda&hm=68a4fa960668865696c976cda349a4da4064e4b7d858fd2927fc10dede9e5831&'
     size: 40790
-    description: 'A congratulatory email from Topstep to SHVATrades on becoming a Topstep Funded Trader.'
+    description: 'An email notification congratulating SHVATrades on becoming a Topstep Funded Trader.'
   - message_id: '1446060760261328967'
     kind: image
     filename: image.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1446060760114532454/image.png?ex=6a039247&is=6a0240c7&hm=398050f9d521374db288c63af7870b34487fda3381936c6684164275acbd3ffb&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1446060760114532454/image.png?ex=6a043b07&is=6a02e987&hm=262e34ca8e66757c663e9a3e25fa0078f2170b39e2a83316f8468f4f372d1b0f&'
     size: 22777
-    description: 'A dark interface displaying username shvatrades, 11 subscribers, a notification bell, and 11 likes.'
+    description: 'A YouTube interface displaying the channel shvatrades with 11 subscribers, a notification bell, and 11 likes.'
   - message_id: '1453853382421778597'
     kind: file
     filename: message.txt
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1453853382405128222/message.txt?ex=6a039379&is=6a0241f9&hm=3ee1534caec90d897b000da237b008abe3636a888e74e6696971c2b902d1cfe1&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1453853382405128222/message.txt?ex=6a043c39&is=6a02eab9&hm=a0f42cabc07d98f832b424277aba7f8844b23c5db9dac9f3a1ba956e342c1842&'
     size: 5777
     description: null
 discord_channel_id: '1292220510603575366'
@@ -44,7 +44,7 @@ superseded_by: null
 ## 2025-12-02 (Tuesday)
 
 **10:26 — SHVA:** 
-↳ image: image.png (40 KB) — "A congratulatory email from Topstep to SHVATrades on becoming a Topstep Funded Trader." — https://cdn.discordapp.com/attachments/1292220510603575366/1445450954907320420/image.png?ex=6a03fd5a&is=6a02abda&hm=68a4fa960668865696c976cda349a4da4064e4b7d858fd2927fc10dede9e5831&
+↳ image: image.png (40 KB) — "An email notification congratulating SHVATrades on becoming a Topstep Funded Trader." — https://cdn.discordapp.com/attachments/1292220510603575366/1445450954907320420/image.png?ex=6a03fd5a&is=6a02abda&hm=68a4fa960668865696c976cda349a4da4064e4b7d858fd2927fc10dede9e5831&
 **10:26 — SHVA:** ts nuts
 **10:57 — me:** Fire bruh congrats man
 **10:57 — me:** This is heat
@@ -57,7 +57,7 @@ superseded_by: null
 **00:04 — SHVA:** https://www.youtube.com/watch?v=B9vC8p9CngU&feature=youtu.be
 **02:47 — me:** this fire
 **02:49 — me:** boay got double digit subs now
-↳ image: image.png (22 KB) — "A dark interface displaying username shvatrades, 11 subscribers, a notification bell, and 11 likes." — https://cdn.discordapp.com/attachments/1292220510603575366/1446060760114532454/image.png?ex=6a039247&is=6a0240c7&hm=398050f9d521374db288c63af7870b34487fda3381936c6684164275acbd3ffb&
+↳ image: image.png (22 KB) — "A YouTube interface displaying the channel shvatrades with 11 subscribers, a notification bell, and 11 likes." — https://cdn.discordapp.com/attachments/1292220510603575366/1446060760114532454/image.png?ex=6a043b07&is=6a02e987&hm=262e34ca8e66757c663e9a3e25fa0078f2170b39e2a83316f8468f4f372d1b0f&
 
 ## 2025-12-08 (Monday)
 
@@ -86,4 +86,4 @@ https://capable-druid-db88db.netlify.app/
 ## 2025-12-25 (Thursday)
 
 **14:54 — SHVA:** 
-↳ file: message.txt (6 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1453853382405128222/message.txt?ex=6a039379&is=6a0241f9&hm=3ee1534caec90d897b000da237b008abe3636a888e74e6696971c2b902d1cfe1&
+↳ file: message.txt (6 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1453853382405128222/message.txt?ex=6a043c39&is=6a02eab9&hm=a0f42cabc07d98f832b424277aba7f8844b23c5db9dac9f3a1ba956e342c1842&

@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-09T22:04:44.630Z"
 last_activity: "2026-05-09T22:04:44.630Z"
-last_scrape: "2026-05-11T20:10:24.906Z"
+last_scrape: "2026-05-12T04:02:59.570Z"
 previous_slugs: []
-last_profile_diff: "2026-05-10T04:03:36.609Z"
+last_profile_diff: "2026-05-12T04:02:59.570Z"
 ---
 
 ## Profile
 
 - age: 23
-- distance_mi: 142
+- distance_mi: 11
 - height_cm: 160
 - bio: "Ask me about my tomodachi miis 🤭 I’m a open book but will probably talk about my cat a lot I really wanna go on cute dates"
 - looking_for: "Long-term, open to short · Monogamy"
@@ -46,6 +46,20 @@ last_profile_diff: "2026-05-10T04:03:36.609Z"
     "distance_mi": {
       "from": 147,
       "to": 142
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-12T04:02:59.570Z",
+  "added": {},
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 142,
+      "to": 11
     }
   }
 }

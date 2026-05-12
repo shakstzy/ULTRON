@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-07T20:12:31.777Z"
 last_activity: "2026-05-07T20:12:31.777Z"
-last_scrape: "2026-05-11T20:10:41.309Z"
+last_scrape: "2026-05-12T04:03:16.443Z"
 previous_slugs: []
-last_profile_diff: "2026-05-10T04:03:55.359Z"
+last_profile_diff: "2026-05-12T04:03:16.443Z"
 ---
 
 ## Profile
 
 - age: 25
-- distance_mi: 6
+- distance_mi: 5
 - bio: "Sometimes you jus gatta have a bad day to have a good day"
 - looking_for: "Still figuring it out"
 - photo_verified: true
@@ -56,6 +56,20 @@ last_profile_diff: "2026-05-10T04:03:55.359Z"
     "distance_mi": {
       "from": 3,
       "to": 6
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-12T04:03:16.443Z",
+  "added": {},
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 6,
+      "to": 5
     }
   }
 }

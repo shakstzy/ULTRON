@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-10T04:03:33.128Z"
 last_activity: "2026-05-10T04:03:33.128Z"
-last_scrape: "2026-05-11T20:10:21.447Z"
+last_scrape: "2026-05-12T04:02:55.429Z"
 previous_slugs: []
-last_profile_diff: "2026-05-11T20:10:21.447Z"
+last_profile_diff: "2026-05-12T04:02:55.429Z"
 ---
 
 ## Profile
 
 - age: 23
-- distance_mi: 1502
+- distance_mi: 1500
 - bio: "a long drive kind of gal"
 - looking_for: "Short-term fun"
 - schools: Also went to University of California, Berkeley
@@ -89,6 +89,30 @@ last_profile_diff: "2026-05-11T20:10:21.447Z"
     ]
   },
   "changed": {}
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-12T04:02:55.429Z",
+  "added": {
+    "photo_verified": false,
+    "schools": [
+      "Also went to University of California, Berkeley"
+    ]
+  },
+  "removed": {
+    "schools": [
+      "Also went to University of California",
+      "Berkeley"
+    ]
+  },
+  "changed": {
+    "distance_mi": {
+      "from": 1502,
+      "to": 1500
+    }
+  }
 }
 ```
 

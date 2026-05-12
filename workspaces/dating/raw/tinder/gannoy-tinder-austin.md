@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-10T22:05:02.618Z"
 last_activity: "2026-05-10T22:05:02.618Z"
-last_scrape: "2026-05-11T20:10:07.615Z"
+last_scrape: "2026-05-12T04:02:42.777Z"
 previous_slugs: []
-last_profile_diff: "2026-05-11T20:10:07.615Z"
+last_profile_diff: "2026-05-12T04:02:42.777Z"
 ---
 
 ## Profile
 
 - age: 20
-- distance_mi: 9167
+- distance_mi: 9166
 - height_cm: 163
 - bio: "🍵🌺 Are there any sincere guys around here 👀👀 Thailand🇹🇭"
 - looking_for: "Long-term, open to short · Monogamy"
@@ -56,6 +56,20 @@ last_profile_diff: "2026-05-11T20:10:07.615Z"
     "bio": {
       "from": "🍵🌺 Are there any sincere guys around here 👀👀 🇹🇭",
       "to": "🍵🌺 Are there any sincere guys around here 👀👀 Thailand🇹🇭"
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-12T04:02:42.777Z",
+  "added": {},
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 9167,
+      "to": 9166
     }
   }
 }

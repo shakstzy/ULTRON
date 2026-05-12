@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.487634+00:00
+ingested_at: 2026-05-12T08:00:06.843787+00:00
 ingest_version: 1
 content_hash: blake2b:076d0a8f1890add4d6ff82401ed314f4
-provider_modified_at: 2026-05-11T08:00:07.487634+00:00
+provider_modified_at: 2026-05-12T08:00:06.843787+00:00
 
 title: Gayathri Hinge Dallas
 slug: gayathri-hinge-dallas-a56e
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15125772063"]
   slack: []
-last_synced: 2026-05-11T08:00:07.487634+00:00
+last_synced: 2026-05-12T08:00:06.843787+00:00
 global: true
 ---
 

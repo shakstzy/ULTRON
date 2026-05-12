@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.489309+00:00
+ingested_at: 2026-05-12T08:00:06.844864+00:00
 ingest_version: 1
 content_hash: blake2b:b9eb3048ff986a58f060cac9f6b57291
-provider_modified_at: 2026-05-11T08:00:07.489309+00:00
+provider_modified_at: 2026-05-12T08:00:06.844864+00:00
 
 title: Benti Hinge LA
 slug: benti-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18182828722"]
   slack: []
-last_synced: 2026-05-11T08:00:07.489309+00:00
+last_synced: 2026-05-12T08:00:06.844864+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.586356+00:00
+ingested_at: 2026-05-12T08:00:06.963392+00:00
 ingest_version: 1
 content_hash: blake2b:6cdec8a236a3c4dd2aaec6d9f34fdd0e
-provider_modified_at: 2026-05-11T08:00:07.586356+00:00
+provider_modified_at: 2026-05-12T08:00:06.963392+00:00
 
 title: Matheus Akira Tomoto HARVARD DRONE
 slug: matheus-akira-tomoto-harvard-drone
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["15 991377157"]
   slack: []
-last_synced: 2026-05-11T08:00:07.586356+00:00
+last_synced: 2026-05-12T08:00:06.963392+00:00
 global: true
 ---
 

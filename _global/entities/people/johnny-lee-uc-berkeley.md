@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.622817+00:00
+ingested_at: 2026-05-12T08:00:06.967362+00:00
 ingest_version: 1
 content_hash: blake2b:a2dd2e956ca0711b1e47408ccd495714
-provider_modified_at: 2026-05-11T08:00:07.622817+00:00
+provider_modified_at: 2026-05-12T08:00:06.967362+00:00
 
 title: Johnny Lee UC Berkeley
 slug: johnny-lee-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 408-203-3788"]
   slack: []
-last_synced: 2026-05-11T08:00:07.622817+00:00
+last_synced: 2026-05-12T08:00:06.967362+00:00
 global: true
 ---
 

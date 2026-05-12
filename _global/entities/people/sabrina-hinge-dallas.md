@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.572172+00:00
+ingested_at: 2026-05-12T08:00:06.950025+00:00
 ingest_version: 1
 content_hash: blake2b:f7dbe58c9b552e6dd5943d456e6e0858
-provider_modified_at: 2026-05-11T08:00:07.572172+00:00
+provider_modified_at: 2026-05-12T08:00:06.950025+00:00
 
 title: Sabrina Hinge Dallas
 slug: sabrina-hinge-dallas
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18177341880"]
   slack: []
-last_synced: 2026-05-11T08:00:07.572172+00:00
+last_synced: 2026-05-12T08:00:06.950025+00:00
 global: true
 ---
 

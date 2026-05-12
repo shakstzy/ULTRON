@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.587395+00:00
+ingested_at: 2026-05-12T08:00:06.963606+00:00
 ingest_version: 1
 content_hash: blake2b:cc51c323c4a1e1b2fe2ff499cda23448
-provider_modified_at: 2026-05-11T08:00:07.587395+00:00
+provider_modified_at: 2026-05-12T08:00:06.963606+00:00
 
 title: Jay | NEAR
 slug: jay-near
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-11T08:00:07.587395+00:00
+last_synced: 2026-05-12T08:00:06.963606+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.578826+00:00
+ingested_at: 2026-05-12T08:00:06.957102+00:00
 ingest_version: 1
 content_hash: blake2b:3efee5bd8fcaf5cdeb49c50f6af5b1c9
-provider_modified_at: 2026-05-11T08:00:07.578826+00:00
+provider_modified_at: 2026-05-12T08:00:06.957102+00:00
 
 title: Johny Hadar Producer LA
 slug: johny-hadar-producer-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18189157470"]
   slack: []
-last_synced: 2026-05-11T08:00:07.578826+00:00
+last_synced: 2026-05-12T08:00:06.957102+00:00
 global: true
 ---
 

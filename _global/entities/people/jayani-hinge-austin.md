@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.631479+00:00
+ingested_at: 2026-05-12T08:00:06.903379+00:00
 ingest_version: 1
 content_hash: blake2b:ecd69d77c3f5a88f4aee5a24de4ff1cc
-provider_modified_at: 2026-05-11T08:00:07.631479+00:00
+provider_modified_at: 2026-05-12T08:00:06.903379+00:00
 
 title: Jayani Hinge Austin
 slug: jayani-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19037221878"]
   slack: []
-last_synced: 2026-05-11T08:00:07.631479+00:00
+last_synced: 2026-05-12T08:00:06.903379+00:00
 global: true
 ---
 

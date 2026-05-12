@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.514297+00:00
+ingested_at: 2026-05-12T08:00:06.890285+00:00
 ingest_version: 1
 content_hash: blake2b:4e613c9b3d13c6b5de8b3c00154cb52b
-provider_modified_at: 2026-05-11T08:00:07.514297+00:00
+provider_modified_at: 2026-05-12T08:00:06.890285+00:00
 
 title: Veda Uncle
 slug: veda-uncle
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(925) 858-4038"]
   slack: []
-last_synced: 2026-05-11T08:00:07.514297+00:00
+last_synced: 2026-05-12T08:00:06.890285+00:00
 global: true
 ---
 

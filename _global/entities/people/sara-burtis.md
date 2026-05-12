@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.528533+00:00
+ingested_at: 2026-05-12T08:00:07.018128+00:00
 ingest_version: 1
 content_hash: blake2b:2cd65fcc5557f955caa8fb3a2dd978bd
-provider_modified_at: 2026-05-11T08:00:07.528533+00:00
+provider_modified_at: 2026-05-12T08:00:07.018128+00:00
 
 title: Sara Burtis
 slug: sara-burtis
@@ -15,7 +15,7 @@ identifiers:
   email: ["sara.burtis@leanderisd.org"]
   phone: []
   slack: []
-last_synced: 2026-05-11T08:00:07.528533+00:00
+last_synced: 2026-05-12T08:00:07.018128+00:00
 global: true
 ---
 

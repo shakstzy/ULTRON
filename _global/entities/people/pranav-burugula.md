@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.530445+00:00
+ingested_at: 2026-05-12T08:00:06.871201+00:00
 ingest_version: 1
 content_hash: blake2b:54eb3cca2aab9730739751ba3b25afef
-provider_modified_at: 2026-05-11T08:00:07.530445+00:00
+provider_modified_at: 2026-05-12T08:00:06.871201+00:00
 
 title: Pranav Burugula
 slug: pranav-burugula
@@ -15,7 +15,7 @@ identifiers:
   email: ["pranav.burugula@gmail.com"]
   phone: ["(914) 334-8457"]
   slack: []
-last_synced: 2026-05-11T08:00:07.530445+00:00
+last_synced: 2026-05-12T08:00:06.871201+00:00
 global: true
 ---
 

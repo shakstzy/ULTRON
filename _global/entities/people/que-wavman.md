@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.674204+00:00
+ingested_at: 2026-05-12T08:00:06.917465+00:00
 ingest_version: 1
 content_hash: blake2b:5d2e13a132f3c186480802fac63a1f38
-provider_modified_at: 2026-05-11T08:00:07.674204+00:00
+provider_modified_at: 2026-05-12T08:00:06.917465+00:00
 
 title: Que WavMan
 slug: que-wavman
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15712451985"]
   slack: []
-last_synced: 2026-05-11T08:00:07.674204+00:00
+last_synced: 2026-05-12T08:00:06.917465+00:00
 global: true
 ---
 

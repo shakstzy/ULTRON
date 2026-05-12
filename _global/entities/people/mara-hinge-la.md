@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.548267+00:00
+ingested_at: 2026-05-12T08:00:06.968429+00:00
 ingest_version: 1
 content_hash: blake2b:a5b66754f074448dfb08698b24ebce07
-provider_modified_at: 2026-05-11T08:00:07.548267+00:00
+provider_modified_at: 2026-05-12T08:00:06.968429+00:00
 
 title: Mara Hinge LA
 slug: mara-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17195020868"]
   slack: []
-last_synced: 2026-05-11T08:00:07.548267+00:00
+last_synced: 2026-05-12T08:00:06.968429+00:00
 global: true
 ---
 

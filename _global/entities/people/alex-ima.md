@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.661757+00:00
+ingested_at: 2026-05-12T08:00:06.973383+00:00
 ingest_version: 1
 content_hash: blake2b:6422dbeeb7b08237d9742bad83e6f313
-provider_modified_at: 2026-05-11T08:00:07.661757+00:00
+provider_modified_at: 2026-05-12T08:00:06.973383+00:00
 
 title: Alex | IMA
 slug: alex-ima
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 814-206-4049"]
   slack: []
-last_synced: 2026-05-11T08:00:07.661757+00:00
+last_synced: 2026-05-12T08:00:06.973383+00:00
 global: true
 ---
 

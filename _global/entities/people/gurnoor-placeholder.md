@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.600172+00:00
+ingested_at: 2026-05-12T08:00:06.978595+00:00
 ingest_version: 1
 content_hash: blake2b:fda22402247dee8ecfd08a8762807544
-provider_modified_at: 2026-05-11T08:00:07.600172+00:00
+provider_modified_at: 2026-05-12T08:00:06.978595+00:00
 
 title: Gurnoor | Placeholder
 slug: gurnoor-placeholder
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-11T08:00:07.600172+00:00
+last_synced: 2026-05-12T08:00:06.978595+00:00
 global: true
 ---
 

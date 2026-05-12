@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.521595+00:00
+ingested_at: 2026-05-12T08:00:07.007214+00:00
 ingest_version: 1
 content_hash: blake2b:db7d92822f8b8460c1292aea99baf032
-provider_modified_at: 2026-05-11T08:00:07.521595+00:00
+provider_modified_at: 2026-05-12T08:00:07.007214+00:00
 
 title: Juan Housemate UC Berkeley
 slug: juan-housemate-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15626076061"]
   slack: []
-last_synced: 2026-05-11T08:00:07.521595+00:00
+last_synced: 2026-05-12T08:00:07.007214+00:00
 global: true
 ---
 

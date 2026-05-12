@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.629828+00:00
+ingested_at: 2026-05-12T08:00:06.917400+00:00
 ingest_version: 1
 content_hash: blake2b:2dee47b3bd7c6a29f5cfe90f410e8866
-provider_modified_at: 2026-05-11T08:00:07.629828+00:00
+provider_modified_at: 2026-05-12T08:00:06.917400+00:00
 
 title: Rico | Stakefish
 slug: rico-stakefish
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-11T08:00:07.629828+00:00
+last_synced: 2026-05-12T08:00:06.917400+00:00
 global: true
 ---
 

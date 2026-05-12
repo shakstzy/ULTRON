@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.670154+00:00
+ingested_at: 2026-05-12T08:00:06.902012+00:00
 ingest_version: 1
 content_hash: blake2b:5c500843fe7c098e7ff3ae7fb90bdfda
-provider_modified_at: 2026-05-11T08:00:07.670154+00:00
+provider_modified_at: 2026-05-12T08:00:06.902012+00:00
 
 title: Shruthi DevTeam SignaturesTeam REProject
 slug: shruthi-devteam-signaturesteam-reproject
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+919943316165"]
   slack: []
-last_synced: 2026-05-11T08:00:07.670154+00:00
+last_synced: 2026-05-12T08:00:06.902012+00:00
 global: true
 ---
 

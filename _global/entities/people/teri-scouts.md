@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.637280+00:00
+ingested_at: 2026-05-12T08:00:07.019885+00:00
 ingest_version: 1
 content_hash: blake2b:ccbadd0fc3fb3e54db9717e8c72d2553
-provider_modified_at: 2026-05-11T08:00:07.637280+00:00
+provider_modified_at: 2026-05-12T08:00:07.019885+00:00
 
 title: Teri SCOUTS
 slug: teri-scouts
@@ -15,7 +15,7 @@ identifiers:
   email: ["treasurer@lasarobotics.org"]
   phone: ["(512) 567-2059"]
   slack: []
-last_synced: 2026-05-11T08:00:07.637280+00:00
+last_synced: 2026-05-12T08:00:07.019885+00:00
 global: true
 ---
 

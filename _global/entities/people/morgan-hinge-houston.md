@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.672251+00:00
+ingested_at: 2026-05-12T08:00:06.949731+00:00
 ingest_version: 1
 content_hash: blake2b:8081a57fa7c37a714f609eddb84c20ff
-provider_modified_at: 2026-05-11T08:00:07.672251+00:00
+provider_modified_at: 2026-05-12T08:00:06.949731+00:00
 
 title: Morgan Hinge Houston
 slug: morgan-hinge-houston
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18326750583"]
   slack: []
-last_synced: 2026-05-11T08:00:07.672251+00:00
+last_synced: 2026-05-12T08:00:06.949731+00:00
 global: true
 ---
 

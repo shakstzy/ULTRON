@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.647810+00:00
+ingested_at: 2026-05-12T08:00:06.907425+00:00
 ingest_version: 1
 content_hash: blake2b:d91d525b4b63f6ba423b5e650dded2cb
-provider_modified_at: 2026-05-11T08:00:07.647810+00:00
+provider_modified_at: 2026-05-12T08:00:06.907425+00:00
 
 title: Quang
 slug: quang
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(512) 592-2553"]
   slack: []
-last_synced: 2026-05-11T08:00:07.647810+00:00
+last_synced: 2026-05-12T08:00:06.907425+00:00
 global: true
 ---
 

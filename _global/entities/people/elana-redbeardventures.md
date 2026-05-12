@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.615293+00:00
+ingested_at: 2026-05-12T08:00:06.946724+00:00
 ingest_version: 1
 content_hash: blake2b:60037550dd807b0a12e0a95b3199cb12
-provider_modified_at: 2026-05-11T08:00:07.615293+00:00
+provider_modified_at: 2026-05-12T08:00:06.946724+00:00
 
 title: Elana | RedBeardVentures
 slug: elana-redbeardventures
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-11T08:00:07.615293+00:00
+last_synced: 2026-05-12T08:00:06.946724+00:00
 global: true
 ---
 

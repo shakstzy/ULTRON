@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.602297+00:00
+ingested_at: 2026-05-12T08:00:06.994171+00:00
 ingest_version: 1
 content_hash: blake2b:b858cc1c87b7909757619e573ebfa809
-provider_modified_at: 2026-05-11T08:00:07.602297+00:00
+provider_modified_at: 2026-05-12T08:00:06.994171+00:00
 
 title: Chris | IBCVentures
 slug: chris-ibcventures
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-11T08:00:07.602297+00:00
+last_synced: 2026-05-12T08:00:06.994171+00:00
 global: true
 ---
 

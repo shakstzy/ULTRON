@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.639129+00:00
+ingested_at: 2026-05-12T08:00:06.943524+00:00
 ingest_version: 1
 content_hash: blake2b:0542e60105e8ba28294f8dc956b75e71
-provider_modified_at: 2026-05-11T08:00:07.639129+00:00
+provider_modified_at: 2026-05-12T08:00:06.943524+00:00
 
 title: Adithya Shakthi Kumar
 slug: adithya-shakthi-kumar
@@ -15,7 +15,7 @@ identifiers:
   email: ["adithya.shak.kumar@gmail.com", "adithya.shak.kumar@berkeley.edu"]
   phone: ["(512) 660-1911"]
   slack: []
-last_synced: 2026-05-11T08:00:07.639129+00:00
+last_synced: 2026-05-12T08:00:06.943524+00:00
 global: true
 ---
 

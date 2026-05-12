@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.645339+00:00
+ingested_at: 2026-05-12T08:00:07.028499+00:00
 ingest_version: 1
 content_hash: blake2b:cbb08dc59d50502bc1c8ac9476d64bf8
-provider_modified_at: 2026-05-11T08:00:07.645339+00:00
+provider_modified_at: 2026-05-12T08:00:07.028499+00:00
 
 title: Yaseen Abdullah
 slug: yaseen-abdullah
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 801-882-6330"]
   slack: []
-last_synced: 2026-05-11T08:00:07.645339+00:00
+last_synced: 2026-05-12T08:00:07.028499+00:00
 global: true
 ---
 

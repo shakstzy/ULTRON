@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.657613+00:00
+ingested_at: 2026-05-12T08:00:07.000443+00:00
 ingest_version: 1
 content_hash: blake2b:2e24dba2fa2e8c7a9e869543f03e2c5e
-provider_modified_at: 2026-05-11T08:00:07.657613+00:00
+provider_modified_at: 2026-05-12T08:00:07.000443+00:00
 
 title: Sydney Renter Showing26
 slug: sydney-renter-showing26
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19092448074"]
   slack: []
-last_synced: 2026-05-11T08:00:07.657613+00:00
+last_synced: 2026-05-12T08:00:07.000443+00:00
 global: true
 ---
 

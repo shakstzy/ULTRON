@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.534869+00:00
+ingested_at: 2026-05-12T08:00:06.913077+00:00
 ingest_version: 1
 content_hash: blake2b:0edb408cfe53cdef46db37d55ec0df8d
-provider_modified_at: 2026-05-11T08:00:07.534869+00:00
+provider_modified_at: 2026-05-12T08:00:06.913077+00:00
 
 title: nirali devgan
 slug: nirali-devgan
@@ -15,7 +15,7 @@ identifiers:
   email: ["nirali.devgan@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-11T08:00:07.534869+00:00
+last_synced: 2026-05-12T08:00:06.913077+00:00
 global: true
 ---
 

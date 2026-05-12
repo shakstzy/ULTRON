@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.675767+00:00
+ingested_at: 2026-05-12T08:00:06.870583+00:00
 ingest_version: 1
 content_hash: blake2b:f38fe5d03bc98a2a771f2aaf6e32c69b
-provider_modified_at: 2026-05-11T08:00:07.675767+00:00
+provider_modified_at: 2026-05-12T08:00:06.870583+00:00
 
 title: Jayna Hinge Austin
 slug: jayna-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12103639254"]
   slack: []
-last_synced: 2026-05-11T08:00:07.675767+00:00
+last_synced: 2026-05-12T08:00:06.870583+00:00
 global: true
 ---
 

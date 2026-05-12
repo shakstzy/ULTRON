@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.542292+00:00
+ingested_at: 2026-05-12T08:00:06.921119+00:00
 ingest_version: 1
 content_hash: blake2b:f6b8aabc459597e6e3fc2d691b8324ac
-provider_modified_at: 2026-05-11T08:00:07.542292+00:00
+provider_modified_at: 2026-05-12T08:00:06.921119+00:00
 
 title: Smayan UC Berkeley
 slug: smayan-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19047287797"]
   slack: []
-last_synced: 2026-05-11T08:00:07.542292+00:00
+last_synced: 2026-05-12T08:00:06.921119+00:00
 global: true
 ---
 

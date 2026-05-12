@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.654109+00:00
+ingested_at: 2026-05-12T08:00:06.932446+00:00
 ingest_version: 1
 content_hash: blake2b:cb37123b6c16a74ea6c3e4ddf6ecd3e1
-provider_modified_at: 2026-05-11T08:00:07.654109+00:00
+provider_modified_at: 2026-05-12T08:00:06.932446+00:00
 
 title: Cleo Hinge Austin
 slug: cleo-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13852987869"]
   slack: []
-last_synced: 2026-05-11T08:00:07.654109+00:00
+last_synced: 2026-05-12T08:00:06.932446+00:00
 global: true
 ---
 

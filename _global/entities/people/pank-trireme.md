@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.594062+00:00
+ingested_at: 2026-05-12T08:00:06.971009+00:00
 ingest_version: 1
 content_hash: blake2b:4e057dc8fcf583a868b5c31b7f57c893
-provider_modified_at: 2026-05-11T08:00:07.594062+00:00
+provider_modified_at: 2026-05-12T08:00:06.971009+00:00
 
 title: Pank | Trireme
 slug: pank-trireme
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-11T08:00:07.594062+00:00
+last_synced: 2026-05-12T08:00:06.971009+00:00
 global: true
 ---
 

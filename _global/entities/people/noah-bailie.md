@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.585454+00:00
+ingested_at: 2026-05-12T08:00:06.962711+00:00
 ingest_version: 1
 content_hash: blake2b:a53ece934e466ff86088ff69994fd35c
-provider_modified_at: 2026-05-11T08:00:07.585454+00:00
+provider_modified_at: 2026-05-12T08:00:06.962711+00:00
 
 title: Noah Bailie
 slug: noah-bailie
@@ -15,7 +15,7 @@ identifiers:
   email: ["nebailie@gmail.com"]
   phone: ["+1 512-803-6395"]
   slack: []
-last_synced: 2026-05-11T08:00:07.585454+00:00
+last_synced: 2026-05-12T08:00:06.962711+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.648953+00:00
+ingested_at: 2026-05-12T08:00:06.982538+00:00
 ingest_version: 1
 content_hash: blake2b:61366c0ebdb34c8d3030144434869c4a
-provider_modified_at: 2026-05-11T08:00:07.648953+00:00
+provider_modified_at: 2026-05-12T08:00:06.982538+00:00
 
 title: Zane | Turnkey
 slug: zane-turnkey
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 908-251-4249"]
   slack: []
-last_synced: 2026-05-11T08:00:07.648953+00:00
+last_synced: 2026-05-12T08:00:06.982538+00:00
 global: true
 ---
 

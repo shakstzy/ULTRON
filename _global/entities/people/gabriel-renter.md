@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.537571+00:00
+ingested_at: 2026-05-12T08:00:07.042136+00:00
 ingest_version: 1
 content_hash: blake2b:5d3140293b4f87d88af675c7a5e3fded
-provider_modified_at: 2026-05-11T08:00:07.537571+00:00
+provider_modified_at: 2026-05-12T08:00:07.042136+00:00
 
 title: Gabriel Renter
 slug: gabriel-renter
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19515430021"]
   slack: []
-last_synced: 2026-05-11T08:00:07.537571+00:00
+last_synced: 2026-05-12T08:00:07.042136+00:00
 global: true
 ---
 

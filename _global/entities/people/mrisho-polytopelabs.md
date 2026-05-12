@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.629426+00:00
+ingested_at: 2026-05-12T08:00:06.896443+00:00
 ingest_version: 1
 content_hash: blake2b:0af03dcab9b3bc92bba4f63bbee74ea7
-provider_modified_at: 2026-05-11T08:00:07.629426+00:00
+provider_modified_at: 2026-05-12T08:00:06.896443+00:00
 
 title: Mrisho | PolytopeLabs
 slug: mrisho-polytopelabs
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+255 679 223 203"]
   slack: []
-last_synced: 2026-05-11T08:00:07.629426+00:00
+last_synced: 2026-05-12T08:00:06.896443+00:00
 global: true
 ---
 

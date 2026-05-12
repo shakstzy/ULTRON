@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.599737+00:00
+ingested_at: 2026-05-12T08:00:07.058236+00:00
 ingest_version: 1
 content_hash: blake2b:62fae408629b983a4899646e223628fc
-provider_modified_at: 2026-05-11T08:00:07.599737+00:00
+provider_modified_at: 2026-05-12T08:00:07.058236+00:00
 
 title: John Dorm Room Fund
 slug: john-dorm-room-fund
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13103438566"]
   slack: []
-last_synced: 2026-05-11T08:00:07.599737+00:00
+last_synced: 2026-05-12T08:00:07.058236+00:00
 global: true
 ---
 

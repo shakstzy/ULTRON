@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.531511+00:00
+ingested_at: 2026-05-12T08:00:06.909244+00:00
 ingest_version: 1
 content_hash: blake2b:196cfa3720249341cb8d6bfca6222a06
-provider_modified_at: 2026-05-11T08:00:07.531511+00:00
+provider_modified_at: 2026-05-12T08:00:06.909244+00:00
 
 title: Prisha Hinge NYC
 slug: prisha-hinge-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19299300927"]
   slack: []
-last_synced: 2026-05-11T08:00:07.531511+00:00
+last_synced: 2026-05-12T08:00:06.909244+00:00
 global: true
 ---
 

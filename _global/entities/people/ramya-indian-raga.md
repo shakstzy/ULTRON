@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.600002+00:00
+ingested_at: 2026-05-12T08:00:07.036445+00:00
 ingest_version: 1
 content_hash: blake2b:130a56f2a3ce95ad6c82e491975cdac3
-provider_modified_at: 2026-05-11T08:00:07.600002+00:00
+provider_modified_at: 2026-05-12T08:00:07.036445+00:00
 
 title: Ramya INDIAN RAGA
 slug: ramya-indian-raga
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-961-2983"]
   slack: []
-last_synced: 2026-05-11T08:00:07.600002+00:00
+last_synced: 2026-05-12T08:00:07.036445+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.677488+00:00
+ingested_at: 2026-05-12T08:00:07.060643+00:00
 ingest_version: 1
 content_hash: blake2b:73bde12df522583d609f9d82729c25d3
-provider_modified_at: 2026-05-11T08:00:07.677488+00:00
+provider_modified_at: 2026-05-12T08:00:07.060643+00:00
 
 title: Nikhita Hinge NYC
 slug: nikhita-hinge-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17323518507"]
   slack: []
-last_synced: 2026-05-11T08:00:07.677488+00:00
+last_synced: 2026-05-12T08:00:07.060643+00:00
 global: true
 ---
 

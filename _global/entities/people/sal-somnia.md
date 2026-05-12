@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.627910+00:00
+ingested_at: 2026-05-12T08:00:07.010019+00:00
 ingest_version: 1
 content_hash: blake2b:bb14e4bb88326f3935a012e995aa5454
-provider_modified_at: 2026-05-11T08:00:07.627910+00:00
+provider_modified_at: 2026-05-12T08:00:07.010019+00:00
 
 title: Sal | Somnia
 slug: sal-somnia
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-11T08:00:07.627910+00:00
+last_synced: 2026-05-12T08:00:07.010019+00:00
 global: true
 ---
 

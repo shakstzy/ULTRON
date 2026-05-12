@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.594436+00:00
+ingested_at: 2026-05-12T08:00:06.971187+00:00
 ingest_version: 1
 content_hash: blake2b:09cabb715081da5c554ad9ba080dd0eb
-provider_modified_at: 2026-05-11T08:00:07.594436+00:00
+provider_modified_at: 2026-05-12T08:00:06.971187+00:00
 
 title: Vrushal | LVModel
 slug: vrushal-lvmodel
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+91 95798 25954"]
   slack: []
-last_synced: 2026-05-11T08:00:07.594436+00:00
+last_synced: 2026-05-12T08:00:06.971187+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.605664+00:00
+ingested_at: 2026-05-12T08:00:06.983601+00:00
 ingest_version: 1
 content_hash: blake2b:62b34fa6e69f6353ce304b9c70a6b5d7
-provider_modified_at: 2026-05-11T08:00:07.605664+00:00
+provider_modified_at: 2026-05-12T08:00:06.983601+00:00
 
 title: Rachel LASA USC
 slug: rachel-lasa-usc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 (512) 650-5088"]
   slack: []
-last_synced: 2026-05-11T08:00:07.605664+00:00
+last_synced: 2026-05-12T08:00:06.983601+00:00
 global: true
 ---
 

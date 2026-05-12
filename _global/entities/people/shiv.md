@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.627299+00:00
+ingested_at: 2026-05-12T08:00:06.869569+00:00
 ingest_version: 1
 content_hash: blake2b:b0af62bd1026f3a1fb81b0839a96d741
-provider_modified_at: 2026-05-11T08:00:07.627299+00:00
+provider_modified_at: 2026-05-12T08:00:06.869569+00:00
 
 title: Shiv
 slug: shiv
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-937-6090"]
   slack: []
-last_synced: 2026-05-11T08:00:07.627299+00:00
+last_synced: 2026-05-12T08:00:06.869569+00:00
 global: true
 ---
 

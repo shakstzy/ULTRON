@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.555140+00:00
+ingested_at: 2026-05-12T08:00:06.933298+00:00
 ingest_version: 1
 content_hash: blake2b:369fe7054c1190e9a13fcca81c8a5d9f
-provider_modified_at: 2026-05-11T08:00:07.555140+00:00
+provider_modified_at: 2026-05-12T08:00:06.933298+00:00
 
 title: Yosef Producer LA
 slug: yosef-producer-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18453007658"]
   slack: []
-last_synced: 2026-05-11T08:00:07.555140+00:00
+last_synced: 2026-05-12T08:00:06.933298+00:00
 global: true
 ---
 

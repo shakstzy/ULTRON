@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.670945+00:00
+ingested_at: 2026-05-12T08:00:07.050221+00:00
 ingest_version: 1
 content_hash: blake2b:3f60a432e2af91a28215b89906842b92
-provider_modified_at: 2026-05-11T08:00:07.670945+00:00
+provider_modified_at: 2026-05-12T08:00:07.050221+00:00
 
 title: Ben Guitar UC Berkeley
 slug: ben-guitar-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12099966535"]
   slack: []
-last_synced: 2026-05-11T08:00:07.670945+00:00
+last_synced: 2026-05-12T08:00:07.050221+00:00
 global: true
 ---
 

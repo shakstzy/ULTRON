@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.634501+00:00
+ingested_at: 2026-05-12T08:00:06.890804+00:00
 ingest_version: 1
 content_hash: blake2b:884d1363620dae30818a0cf1f783ebd3
-provider_modified_at: 2026-05-11T08:00:07.634501+00:00
+provider_modified_at: 2026-05-12T08:00:06.890804+00:00
 
 title: Yang | Aiko
 slug: yang-aiko
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 408-832-7920"]
   slack: []
-last_synced: 2026-05-11T08:00:07.634501+00:00
+last_synced: 2026-05-12T08:00:06.890804+00:00
 global: true
 ---
 

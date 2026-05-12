@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.501017+00:00
+ingested_at: 2026-05-12T08:00:07.046085+00:00
 ingest_version: 1
 content_hash: blake2b:920702005f0d096c09d22b69a8a4609d
-provider_modified_at: 2026-05-11T08:00:07.501017+00:00
+provider_modified_at: 2026-05-12T08:00:07.046085+00:00
 
 title: Andrew | Intuition
 slug: andrew-intuition
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-11T08:00:07.501017+00:00
+last_synced: 2026-05-12T08:00:07.046085+00:00
 global: true
 ---
 

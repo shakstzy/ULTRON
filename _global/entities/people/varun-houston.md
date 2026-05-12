@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.503867+00:00
+ingested_at: 2026-05-12T08:00:07.037178+00:00
 ingest_version: 1
 content_hash: blake2b:242d9598ec5efc342c36c26e52ffafcb
-provider_modified_at: 2026-05-11T08:00:07.503867+00:00
+provider_modified_at: 2026-05-12T08:00:07.037178+00:00
 
 title: Varun Houston
 slug: varun-houston
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14698431198"]
   slack: []
-last_synced: 2026-05-11T08:00:07.503867+00:00
+last_synced: 2026-05-12T08:00:07.037178+00:00
 global: true
 ---
 

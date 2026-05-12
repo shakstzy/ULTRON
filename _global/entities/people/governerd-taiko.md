@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.567277+00:00
+ingested_at: 2026-05-12T08:00:06.972396+00:00
 ingest_version: 1
 content_hash: blake2b:52c1185c2e71503ce2175f474a9271b8
-provider_modified_at: 2026-05-11T08:00:07.567277+00:00
+provider_modified_at: 2026-05-12T08:00:06.972396+00:00
 
 title: GoverNerd | Taiko
 slug: governerd-taiko
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-11T08:00:07.567277+00:00
+last_synced: 2026-05-12T08:00:06.972396+00:00
 global: true
 ---
 

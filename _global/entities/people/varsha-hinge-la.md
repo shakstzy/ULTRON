@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.671922+00:00
+ingested_at: 2026-05-12T08:00:06.914615+00:00
 ingest_version: 1
 content_hash: blake2b:d65f064f067ebf8867747f4a48fa8c35
-provider_modified_at: 2026-05-11T08:00:07.671922+00:00
+provider_modified_at: 2026-05-12T08:00:06.914615+00:00
 
 title: Varsha Hinge LA
 slug: varsha-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15173884621"]
   slack: []
-last_synced: 2026-05-11T08:00:07.671922+00:00
+last_synced: 2026-05-12T08:00:06.914615+00:00
 global: true
 ---
 

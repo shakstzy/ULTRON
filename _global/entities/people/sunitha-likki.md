@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.559663+00:00
+ingested_at: 2026-05-12T08:00:06.938263+00:00
 ingest_version: 1
 content_hash: blake2b:45d356786a078ab89451559da7298ae8
-provider_modified_at: 2026-05-11T08:00:07.559663+00:00
+provider_modified_at: 2026-05-12T08:00:06.938263+00:00
 
 title: Sunitha Likki
 slug: sunitha-likki
@@ -15,7 +15,7 @@ identifiers:
   email: ["rslikki@yahoo.com"]
   phone: []
   slack: []
-last_synced: 2026-05-11T08:00:07.559663+00:00
+last_synced: 2026-05-12T08:00:06.938263+00:00
 global: true
 ---
 

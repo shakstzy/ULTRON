@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.558090+00:00
+ingested_at: 2026-05-12T08:00:07.012638+00:00
 ingest_version: 1
 content_hash: blake2b:4365ca55c33f0ceaf35980f61dba8f7b
-provider_modified_at: 2026-05-11T08:00:07.558090+00:00
+provider_modified_at: 2026-05-12T08:00:07.012638+00:00
 
 title: Bharat Uncle Easte Parke Austin
 slug: bharat-uncle-easte-parke-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["5039135186"]
   slack: []
-last_synced: 2026-05-11T08:00:07.558090+00:00
+last_synced: 2026-05-12T08:00:07.012638+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.630284+00:00
+ingested_at: 2026-05-12T08:00:07.020086+00:00
 ingest_version: 1
 content_hash: blake2b:e94de4c371be35ee34e42ca737e23bff
-provider_modified_at: 2026-05-11T08:00:07.630284+00:00
+provider_modified_at: 2026-05-12T08:00:07.020086+00:00
 
 title: Alan | Quai
 slug: alan-quai
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-11T08:00:07.630284+00:00
+last_synced: 2026-05-12T08:00:07.020086+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.675427+00:00
+ingested_at: 2026-05-12T08:00:07.034167+00:00
 ingest_version: 1
 content_hash: blake2b:dbc0efe16a839736e0b2bfc0eadcc16e
-provider_modified_at: 2026-05-11T08:00:07.675427+00:00
+provider_modified_at: 2026-05-12T08:00:07.034167+00:00
 
 title: Luis
 slug: luis
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17473332667"]
   slack: []
-last_synced: 2026-05-11T08:00:07.675427+00:00
+last_synced: 2026-05-12T08:00:07.034167+00:00
 global: true
 ---
 

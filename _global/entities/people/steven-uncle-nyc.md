@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.647883+00:00
+ingested_at: 2026-05-12T08:00:06.948294+00:00
 ingest_version: 1
 content_hash: blake2b:2a59b3eefcfaaec13e2bf6a765258f08
-provider_modified_at: 2026-05-11T08:00:07.647883+00:00
+provider_modified_at: 2026-05-12T08:00:06.948294+00:00
 
 title: Steven Uncle NYC
 slug: steven-uncle-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12123658833"]
   slack: []
-last_synced: 2026-05-11T08:00:07.647883+00:00
+last_synced: 2026-05-12T08:00:06.948294+00:00
 global: true
 ---
 

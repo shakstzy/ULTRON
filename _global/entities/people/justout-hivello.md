@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.656112+00:00
+ingested_at: 2026-05-12T08:00:07.037743+00:00
 ingest_version: 1
 content_hash: blake2b:a7eec686e5bf3a363bbbd7f9cd0f6bc5
-provider_modified_at: 2026-05-11T08:00:07.656112+00:00
+provider_modified_at: 2026-05-12T08:00:07.037743+00:00
 
 title: Justout | Hivello
 slug: justout-hivello
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 437-522-6354", "+1 306-951-0225"]
   slack: []
-last_synced: 2026-05-11T08:00:07.656112+00:00
+last_synced: 2026-05-12T08:00:07.037743+00:00
 global: true
 ---
 

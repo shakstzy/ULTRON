@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.537091+00:00
+ingested_at: 2026-05-12T08:00:06.915724+00:00
 ingest_version: 1
 content_hash: blake2b:baaf38a6f6ca5f72949d50a731c4d5a7
-provider_modified_at: 2026-05-11T08:00:07.537091+00:00
+provider_modified_at: 2026-05-12T08:00:06.915724+00:00
 
 title: Cian Cunningham
 slug: cian-cunningham
@@ -15,7 +15,7 @@ identifiers:
   email: ["cianedmond@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-11T08:00:07.537091+00:00
+last_synced: 2026-05-12T08:00:06.915724+00:00
 global: true
 ---
 

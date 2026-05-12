@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.641932+00:00
+ingested_at: 2026-05-12T08:00:06.878146+00:00
 ingest_version: 1
 content_hash: blake2b:be7b5998910ca873b87b419e0d5791f0
-provider_modified_at: 2026-05-11T08:00:07.641932+00:00
+provider_modified_at: 2026-05-12T08:00:06.878146+00:00
 
 title: Xanos | MovedNetwork
 slug: xanos-movednetwork
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 650-440-9804"]
   slack: []
-last_synced: 2026-05-11T08:00:07.641932+00:00
+last_synced: 2026-05-12T08:00:06.878146+00:00
 global: true
 ---
 

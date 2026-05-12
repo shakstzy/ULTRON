@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.545361+00:00
+ingested_at: 2026-05-12T08:00:06.936725+00:00
 ingest_version: 1
 content_hash: blake2b:a651afa32da710486d49d2ed52cf9993
-provider_modified_at: 2026-05-11T08:00:07.545361+00:00
+provider_modified_at: 2026-05-12T08:00:06.936725+00:00
 
 title: James | UFCFightClub
 slug: james-ufcfightclub
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-11T08:00:07.545361+00:00
+last_synced: 2026-05-12T08:00:06.936725+00:00
 global: true
 ---
 

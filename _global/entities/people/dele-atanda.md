@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.658830+00:00
+ingested_at: 2026-05-12T08:00:07.040118+00:00
 ingest_version: 1
 content_hash: blake2b:91f9f088743b23384ea74b579d223d63
-provider_modified_at: 2026-05-11T08:00:07.658830+00:00
+provider_modified_at: 2026-05-12T08:00:07.040118+00:00
 
 title: Dele Atanda
 slug: dele-atanda
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 (718) 286-9798"]
   slack: []
-last_synced: 2026-05-11T08:00:07.658830+00:00
+last_synced: 2026-05-12T08:00:07.040118+00:00
 global: true
 ---
 

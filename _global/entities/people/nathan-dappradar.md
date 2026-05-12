@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.617169+00:00
+ingested_at: 2026-05-12T08:00:06.998227+00:00
 ingest_version: 1
 content_hash: blake2b:568d9ab241b237bc8a059e2de288a366
-provider_modified_at: 2026-05-11T08:00:07.617169+00:00
+provider_modified_at: 2026-05-12T08:00:06.998227+00:00
 
 title: Nathan | DappRadar
 slug: nathan-dappradar
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+44 7429 392442"]
   slack: []
-last_synced: 2026-05-11T08:00:07.617169+00:00
+last_synced: 2026-05-12T08:00:06.998227+00:00
 global: true
 ---
 

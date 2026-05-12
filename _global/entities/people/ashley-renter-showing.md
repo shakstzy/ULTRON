@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.585933+00:00
+ingested_at: 2026-05-12T08:00:06.887926+00:00
 ingest_version: 1
 content_hash: blake2b:f4babf57b8eb6b45b1d0f823066c7a65
-provider_modified_at: 2026-05-11T08:00:07.585933+00:00
+provider_modified_at: 2026-05-12T08:00:06.887926+00:00
 
 title: Ashley Renter Showing
 slug: ashley-renter-showing
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18184421722"]
   slack: []
-last_synced: 2026-05-11T08:00:07.585933+00:00
+last_synced: 2026-05-12T08:00:06.887926+00:00
 global: true
 ---
 

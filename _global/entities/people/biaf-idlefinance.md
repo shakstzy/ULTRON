@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.584538+00:00
+ingested_at: 2026-05-12T08:00:06.962133+00:00
 ingest_version: 1
 content_hash: blake2b:8ab7c550ae61f6dec4e848dc88aaae5a
-provider_modified_at: 2026-05-11T08:00:07.584538+00:00
+provider_modified_at: 2026-05-12T08:00:06.962133+00:00
 
 title: Biaf | Idlefinance
 slug: biaf-idlefinance
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-11T08:00:07.584538+00:00
+last_synced: 2026-05-12T08:00:06.962133+00:00
 global: true
 ---
 

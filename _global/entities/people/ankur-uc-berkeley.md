@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.568357+00:00
+ingested_at: 2026-05-12T08:00:07.021862+00:00
 ingest_version: 1
 content_hash: blake2b:6b5651040f6ad8e7ed62c6bab4cc6a7a
-provider_modified_at: 2026-05-11T08:00:07.568357+00:00
+provider_modified_at: 2026-05-12T08:00:07.021862+00:00
 
 title: Ankur UC Berkeley
 slug: ankur-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(818) 602-3397"]
   slack: []
-last_synced: 2026-05-11T08:00:07.568357+00:00
+last_synced: 2026-05-12T08:00:07.021862+00:00
 global: true
 ---
 

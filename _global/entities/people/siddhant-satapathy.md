@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.655536+00:00
+ingested_at: 2026-05-12T08:00:07.023035+00:00
 ingest_version: 1
 content_hash: blake2b:4cc216b19df0b8a727d3d13dfbd9a431
-provider_modified_at: 2026-05-11T08:00:07.655536+00:00
+provider_modified_at: 2026-05-12T08:00:07.023035+00:00
 
 title: Siddhant Satapathy
 slug: siddhant-satapathy
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15103457641"]
   slack: []
-last_synced: 2026-05-11T08:00:07.655536+00:00
+last_synced: 2026-05-12T08:00:07.023035+00:00
 global: true
 ---
 

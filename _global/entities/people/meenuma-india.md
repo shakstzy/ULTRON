@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.490463+00:00
+ingested_at: 2026-05-12T08:00:06.852772+00:00
 ingest_version: 1
 content_hash: blake2b:80624f377bda30c36f6c7e8e4db9a382
-provider_modified_at: 2026-05-11T08:00:07.490463+00:00
+provider_modified_at: 2026-05-12T08:00:06.852772+00:00
 
 title: Meenuma India
 slug: meenuma-india
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+917397741456"]
   slack: []
-last_synced: 2026-05-11T08:00:07.490463+00:00
+last_synced: 2026-05-12T08:00:06.852772+00:00
 global: true
 ---
 

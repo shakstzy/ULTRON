@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.651707+00:00
+ingested_at: 2026-05-12T08:00:07.044643+00:00
 ingest_version: 1
 content_hash: blake2b:b99e407987738d21f75e7d504a2d3f54
-provider_modified_at: 2026-05-11T08:00:07.651707+00:00
+provider_modified_at: 2026-05-12T08:00:07.044643+00:00
 
 title: Moonee Tinder LA
 slug: moonee-tinder-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18058625935"]
   slack: []
-last_synced: 2026-05-11T08:00:07.651707+00:00
+last_synced: 2026-05-12T08:00:07.044643+00:00
 global: true
 ---
 

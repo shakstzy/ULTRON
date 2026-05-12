@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.645815+00:00
+ingested_at: 2026-05-12T08:00:06.956155+00:00
 ingest_version: 1
 content_hash: blake2b:5f73ae7ccfb9a25c6b49b2d096d5d21e
-provider_modified_at: 2026-05-11T08:00:07.645815+00:00
+provider_modified_at: 2026-05-12T08:00:06.956155+00:00
 
 title: Michael | VelvetCapital
 slug: michael-velvetcapital
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-11T08:00:07.645815+00:00
+last_synced: 2026-05-12T08:00:06.956155+00:00
 global: true
 ---
 

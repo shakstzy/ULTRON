@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.624793+00:00
+ingested_at: 2026-05-12T08:00:07.012112+00:00
 ingest_version: 1
 content_hash: blake2b:a5f97d5703202ea75b7d325e7ce3423e
-provider_modified_at: 2026-05-11T08:00:07.624793+00:00
+provider_modified_at: 2026-05-12T08:00:07.012112+00:00
 
 title: Yalini Verkada PM
 slug: yalini-verkada-pm
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15106031234"]
   slack: []
-last_synced: 2026-05-11T08:00:07.624793+00:00
+last_synced: 2026-05-12T08:00:07.012112+00:00
 global: true
 ---
 

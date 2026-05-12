@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.551240+00:00
+ingested_at: 2026-05-12T08:00:06.929740+00:00
 ingest_version: 1
 content_hash: blake2b:078ded460b8d4139fc120530cd601396
-provider_modified_at: 2026-05-11T08:00:07.551240+00:00
+provider_modified_at: 2026-05-12T08:00:06.929740+00:00
 
 title: Charlie Campbell
 slug: charlie-campbell
@@ -15,7 +15,7 @@ identifiers:
   email: ["tornadocharlie18@gmail.com"]
   phone: ["+1 512-810-0040"]
   slack: []
-last_synced: 2026-05-11T08:00:07.551240+00:00
+last_synced: 2026-05-12T08:00:06.929740+00:00
 global: true
 ---
 

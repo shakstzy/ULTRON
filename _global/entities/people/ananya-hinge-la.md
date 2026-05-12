@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.512018+00:00
+ingested_at: 2026-05-12T08:00:07.059352+00:00
 ingest_version: 1
 content_hash: blake2b:08d69342a356cce947ef8f3d8f194beb
-provider_modified_at: 2026-05-11T08:00:07.512018+00:00
+provider_modified_at: 2026-05-12T08:00:07.059352+00:00
 
 title: Ananya Hinge LA
 slug: ananya-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19493099311"]
   slack: []
-last_synced: 2026-05-11T08:00:07.512018+00:00
+last_synced: 2026-05-12T08:00:07.059352+00:00
 global: true
 ---
 

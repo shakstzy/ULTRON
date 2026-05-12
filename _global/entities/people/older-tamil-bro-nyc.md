@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.633939+00:00
+ingested_at: 2026-05-12T08:00:07.017273+00:00
 ingest_version: 1
 content_hash: blake2b:20f0331245e1625522ec2240311479e1
-provider_modified_at: 2026-05-11T08:00:07.633939+00:00
+provider_modified_at: 2026-05-12T08:00:07.017273+00:00
 
 title: Older Tamil Bro NYC
 slug: older-tamil-bro-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19179403998"]
   slack: []
-last_synced: 2026-05-11T08:00:07.633939+00:00
+last_synced: 2026-05-12T08:00:07.017273+00:00
 global: true
 ---
 

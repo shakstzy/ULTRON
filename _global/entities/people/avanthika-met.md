@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.677681+00:00
+ingested_at: 2026-05-12T08:00:06.913159+00:00
 ingest_version: 1
 content_hash: blake2b:77a8d1f285a1762cb4d55cfbc90820b7
-provider_modified_at: 2026-05-11T08:00:07.677681+00:00
+provider_modified_at: 2026-05-12T08:00:06.913159+00:00
 
 title: Avanthika MET
 slug: avanthika-met
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17703109561"]
   slack: []
-last_synced: 2026-05-11T08:00:07.677681+00:00
+last_synced: 2026-05-12T08:00:06.913159+00:00
 global: true
 ---
 

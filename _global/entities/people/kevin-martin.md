@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.564330+00:00
+ingested_at: 2026-05-12T08:00:07.020592+00:00
 ingest_version: 1
 content_hash: blake2b:6c7ba55790803d77ecfa4baa9c86caae
-provider_modified_at: 2026-05-11T08:00:07.564330+00:00
+provider_modified_at: 2026-05-12T08:00:07.020592+00:00
 
 title: Kevin Martin
 slug: kevin-martin
@@ -15,7 +15,7 @@ identifiers:
   email: ["kevin@texadmissions.com"]
   phone: []
   slack: []
-last_synced: 2026-05-11T08:00:07.564330+00:00
+last_synced: 2026-05-12T08:00:07.020592+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-11T08:00:07.582500+00:00
+ingested_at: 2026-05-12T08:00:06.965317+00:00
 ingest_version: 1
 content_hash: blake2b:b4d6ffcf1f19af69d6be1df8137ce9a9
-provider_modified_at: 2026-05-11T08:00:07.582500+00:00
+provider_modified_at: 2026-05-12T08:00:06.965317+00:00
 
 title: Darren CS188 UC Berkeley
 slug: darren-cs188-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16508269568"]
   slack: []
-last_synced: 2026-05-11T08:00:07.582500+00:00
+last_synced: 2026-05-12T08:00:06.965317+00:00
 global: true
 ---
 

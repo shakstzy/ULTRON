@@ -1,9 +1,9 @@
 ---
 source: discord
 workspace: personal
-ingested_at: '2026-05-12T05:01:44.079Z'
+ingested_at: '2026-05-12T11:01:45.459Z'
 ingest_version: 1
-content_hash: sha256:0ebd4b262d8917bda05c62772292c6af193f2857ec502a86338acb75f9582913
+content_hash: sha256:e4b32a06f628cb81d69221125da0701efa5e2ae6ccb41dac7d7e251b2df7e65a
 provider_modified_at: '2024-12-31T05:45:19.975Z'
 contact_slug: shva-shvalockedin
 contact_type: individual
@@ -18,25 +18,25 @@ attachments:
     filename: image.png
     url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313327990255386624/image.png?ex=6a03df01&is=6a028d81&hm=43492d7208c5b14d21d65f333d79d19aa2cba4f44d4f57bd0e870f2e6e054842&'
     size: 60856
-    description: 'A white warning triangle and the word TRANSITIONING appear on a dark textured background.'
+    description: 'A warning triangle icon and the text TRANSITIONING are displayed on a dark background.'
   - message_id: '1313328114029301795'
     kind: image
     filename: image.png
     url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313328113727442964/image.png?ex=6a03df1e&is=6a028d9e&hm=389327f5485783155aa5166914567cfdb3521d7b8d23781213af0bfc68c6b058&'
     size: 1574303
-    description: 'A video game screen shows an armored character and a message stating multiplayer is unavailable.'
+    description: 'A video game screen shows an armored character holding a rifle behind a message stating multiplayer is unavailable.'
   - message_id: '1313680295513292821'
     kind: image
     filename: redirectFileUrl.png
     url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313680294846664764/redirectFileUrl.png?ex=6a03d59d&is=6a02841d&hm=ead811c0352affeedd7edda6b5b02ab7eec37ccb3c657167d2fc504828e21982&'
     size: 1423629
-    description: 'A black hoodie displaying large white VOLTREY text lies flat on a table.'
+    description: 'A black hoodie with the word VOLTREX printed in white text across the chest.'
   - message_id: '1313680310344351827'
     kind: image
     filename: redirectFileUrl.png
     url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313680309992165376/redirectFileUrl.png?ex=6a03d5a0&is=6a028420&hm=f989ca1086744c6b201b67bd0c4874327e3058e1fcbc833326cd32bd9479e5bb&'
     size: 1432011
-    description: 'A black hoodie laid flat features wavy white text reading MONEY MAKES THE WORLD GO AROUND.'
+    description: 'A black hoodie displays the phrase MONEY MAKES THE WORLD GO AROUND in white stylized letters.'
 discord_channel_id: '1292220510603575366'
 discord_channel_kind: dm
 discord_recipient_id: '1285363977030729738'
@@ -50,17 +50,17 @@ superseded_by: null
 ## 2024-12-02 (Monday)
 
 **20:16 — me:** 
-↳ image: image.png (59 KB) — "A white warning triangle and the word TRANSITIONING appear on a dark textured background." — https://cdn.discordapp.com/attachments/1292220510603575366/1313327990255386624/image.png?ex=6a03df01&is=6a028d81&hm=43492d7208c5b14d21d65f333d79d19aa2cba4f44d4f57bd0e870f2e6e054842&
+↳ image: image.png (59 KB) — "A warning triangle icon and the text TRANSITIONING are displayed on a dark background." — https://cdn.discordapp.com/attachments/1292220510603575366/1313327990255386624/image.png?ex=6a03df01&is=6a028d81&hm=43492d7208c5b14d21d65f333d79d19aa2cba4f44d4f57bd0e870f2e6e054842&
 **20:17 — me:** 
-↳ image: image.png (1537 KB) — "A video game screen shows an armored character and a message stating multiplayer is unavailable." — https://cdn.discordapp.com/attachments/1292220510603575366/1313328113727442964/image.png?ex=6a03df1e&is=6a028d9e&hm=389327f5485783155aa5166914567cfdb3521d7b8d23781213af0bfc68c6b058&
+↳ image: image.png (1537 KB) — "A video game screen shows an armored character holding a rifle behind a message stating multiplayer is unavailable." — https://cdn.discordapp.com/attachments/1292220510603575366/1313328113727442964/image.png?ex=6a03df1e&is=6a028d9e&hm=389327f5485783155aa5166914567cfdb3521d7b8d23781213af0bfc68c6b058&
 
 ## 2024-12-03 (Tuesday)
 
 **19:32 — SHVA:** ↳ replying to SHVA ("(no text)"): **
 **19:36 — SHVA:** 
-↳ image: redirectFileUrl.png (1390 KB) — "A black hoodie displaying large white VOLTREY text lies flat on a table." — https://cdn.discordapp.com/attachments/1292220510603575366/1313680294846664764/redirectFileUrl.png?ex=6a03d59d&is=6a02841d&hm=ead811c0352affeedd7edda6b5b02ab7eec37ccb3c657167d2fc504828e21982&
+↳ image: redirectFileUrl.png (1390 KB) — "A black hoodie with the word VOLTREX printed in white text across the chest." — https://cdn.discordapp.com/attachments/1292220510603575366/1313680294846664764/redirectFileUrl.png?ex=6a03d59d&is=6a02841d&hm=ead811c0352affeedd7edda6b5b02ab7eec37ccb3c657167d2fc504828e21982&
 **19:36 — SHVA:** 
-↳ image: redirectFileUrl.png (1398 KB) — "A black hoodie laid flat features wavy white text reading MONEY MAKES THE WORLD GO AROUND." — https://cdn.discordapp.com/attachments/1292220510603575366/1313680309992165376/redirectFileUrl.png?ex=6a03d5a0&is=6a028420&hm=f989ca1086744c6b201b67bd0c4874327e3058e1fcbc833326cd32bd9479e5bb&
+↳ image: redirectFileUrl.png (1398 KB) — "A black hoodie displays the phrase MONEY MAKES THE WORLD GO AROUND in white stylized letters." — https://cdn.discordapp.com/attachments/1292220510603575366/1313680309992165376/redirectFileUrl.png?ex=6a03d5a0&is=6a028420&hm=f989ca1086744c6b201b67bd0c4874327e3058e1fcbc833326cd32bd9479e5bb&
 
 ## 2024-12-07 (Saturday)
 

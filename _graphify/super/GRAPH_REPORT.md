@@ -1,6 +1,6 @@
 # Super-Graph Report
 
-Generated 2026-05-12T05:00:00Z
+Generated 2026-05-12T11:00:05Z
 
 ## Per-workspace graphs merged (2)
 

@@ -73,3 +73,7 @@ Hello, Unfortunately those wouldn’t work. I have work and I currently live in 
 ### 2026-05-12T16:18:20.000Z - kanaiisl7
 
 Is there any way you could squeeze me in on Sunday? I am taking a train to sylmar. If not it’s ok I just wanted to ask.
+
+### 2026-05-12T18:02:21.977Z - Owner (Adithya)
+
+i can't squeeze you in on sunday. the tour is super quick though, so are you sure you can't make wednesday at 10 am, thursday at 2 pm, or friday at 5 pm work before we look at the 23rd?

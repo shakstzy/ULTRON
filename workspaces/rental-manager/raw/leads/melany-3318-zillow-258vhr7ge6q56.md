@@ -82,3 +82,7 @@ Sorry I missed this yesterday. I actually need to reschedule our Thursday slot. 
 ### 2026-05-12T14:17:10.000Z - Melany Alvizures
 
 No worries Thursday at 2 is great
+
+### 2026-05-12T18:02:37.213Z - Owner (Adithya)
+
+Perfect. I'll text you Thursday at 2. When are you looking to move in?

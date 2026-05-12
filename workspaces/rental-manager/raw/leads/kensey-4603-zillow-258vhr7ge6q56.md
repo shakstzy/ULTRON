@@ -81,3 +81,7 @@ i can't squeeze you in on sunday. the tour is super quick though, so are you sur
 ### 2026-05-12T18:39:30.000Z - kanaiisl7
 
 If I am able to schedule the showing tomorrow at 10am… could I send someone on my behalf? My father may be able to go I’m just waiting for confirmation from him. If not then I would have to schedule for a Saturday or Sunday.
+
+### 2026-05-12T22:01:54.856Z - Owner (Adithya)
+
+yeah your dad can go for you. my schedule actually shifted so i have 11:30 am open tomorrow instead of 10. does that work for him?

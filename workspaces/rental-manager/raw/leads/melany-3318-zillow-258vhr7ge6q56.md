@@ -90,3 +90,7 @@ Perfect. I'll text you Thursday at 2. When are you looking to move in?
 ### 2026-05-12T18:05:31.000Z - Melany Alvizures
 
 Thank you! I think June 3/4 would be ideal
+
+### 2026-05-12T22:02:09.905Z - Owner (Adithya)
+
+June works perfectly. I'll text you Thursday at 2.

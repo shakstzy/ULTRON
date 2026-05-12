@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-08T04:09:06.645Z"
 last_activity: "2026-05-08T04:09:06.645Z"
-last_scrape: "2026-05-12T04:03:02.432Z"
+last_scrape: "2026-05-12T20:11:26.888Z"
 previous_slugs: []
-last_profile_diff: "2026-05-12T04:03:02.432Z"
+last_profile_diff: "2026-05-12T20:11:26.888Z"
 ---
 
 ## Profile
 
 - age: 23
-- distance_mi: 13
+- distance_mi: 15
 - height_cm: 168
 - bio: "Not looking for anything serious, just someone to have fun with 💜"
 - looking_for: "Short-term, open to long"
@@ -122,6 +122,22 @@ last_profile_diff: "2026-05-12T04:03:02.432Z"
     "distance_mi": {
       "from": 15,
       "to": 13
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-12T20:11:26.888Z",
+  "added": {
+    "photo_verified": false
+  },
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 13,
+      "to": 15
     }
   }
 }

@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-11T04:17:57.614Z"
 last_activity: "2026-05-11T04:17:57.614Z"
-last_scrape: "2026-05-12T04:02:39.876Z"
+last_scrape: "2026-05-12T20:11:04.339Z"
 previous_slugs: []
-last_profile_diff: "2026-05-12T04:02:39.876Z"
+last_profile_diff: "2026-05-12T20:11:04.339Z"
 ---
 
 ## Profile
 
 - age: 21
-- distance_mi: 12
+- distance_mi: 14
 - bio: "future Dr👩🏼‍⚕️"
 - looking_for: "Still figuring it out"
 - schools: University of Oklahoma
@@ -49,6 +49,22 @@ last_profile_diff: "2026-05-12T04:02:39.876Z"
     "distance_mi": {
       "from": 14,
       "to": 12
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-12T20:11:04.339Z",
+  "added": {
+    "photo_verified": false
+  },
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 12,
+      "to": 14
     }
   }
 }

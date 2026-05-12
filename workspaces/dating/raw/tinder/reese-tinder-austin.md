@@ -9,7 +9,7 @@ phone: null
 status: "new"
 first_seen: "2026-05-09T22:04:44.630Z"
 last_activity: "2026-05-09T22:04:44.630Z"
-last_scrape: "2026-05-12T04:02:59.570Z"
+last_scrape: "2026-05-12T20:11:24.153Z"
 previous_slugs: []
 last_profile_diff: "2026-05-12T04:02:59.570Z"
 ---

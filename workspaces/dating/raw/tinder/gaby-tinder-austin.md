@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-10T22:05:05.499Z"
 last_activity: "2026-05-10T22:05:05.499Z"
-last_scrape: "2026-05-12T04:02:45.785Z"
+last_scrape: "2026-05-12T20:11:10.975Z"
 previous_slugs: []
-last_profile_diff: "2026-05-12T04:02:45.785Z"
+last_profile_diff: "2026-05-12T20:11:10.975Z"
 ---
 
 ## Profile
 
 - age: 20
-- distance_mi: 14
+- distance_mi: 5
 - height_cm: 175
 - looking_for: "Short-term, open to long"
 - jobs: Spanish
@@ -55,6 +55,20 @@ last_profile_diff: "2026-05-12T04:02:45.785Z"
     "distance_mi": {
       "from": 5,
       "to": 14
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-12T20:11:10.975Z",
+  "added": {},
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 14,
+      "to": 5
     }
   }
 }

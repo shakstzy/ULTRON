@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-11T04:17:54.525Z"
 last_activity: "2026-05-11T04:17:54.525Z"
-last_scrape: "2026-05-12T04:02:36.241Z"
+last_scrape: "2026-05-12T20:11:00.717Z"
 previous_slugs: []
-last_profile_diff: "2026-05-12T04:02:36.241Z"
+last_profile_diff: "2026-05-12T20:11:00.717Z"
 ---
 
 ## Profile
 
 - age: 22
-- distance_mi: 1234
+- distance_mi: 1229
 - height_cm: 157
 - bio: "yall are annoying need a man that can roll my blunts profesional yapper 🗣️"
 - looking_for: "Long-term, open to short"
@@ -78,6 +78,29 @@ last_profile_diff: "2026-05-12T04:02:36.241Z"
     "distance_mi": {
       "from": 1233,
       "to": 1234
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-12T20:11:00.717Z",
+  "added": {
+    "jobs": [
+      "English, Spanish"
+    ]
+  },
+  "removed": {
+    "jobs": [
+      "English",
+      "Spanish"
+    ]
+  },
+  "changed": {
+    "distance_mi": {
+      "from": 1234,
+      "to": 1229
     }
   }
 }

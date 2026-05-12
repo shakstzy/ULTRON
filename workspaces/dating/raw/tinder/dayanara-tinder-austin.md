@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-07T05:00:39.479Z"
 last_activity: "2026-05-07T05:00:39.479Z"
-last_scrape: "2026-05-12T04:03:29.719Z"
+last_scrape: "2026-05-12T20:11:55.085Z"
 previous_slugs: []
-last_profile_diff: "2026-05-12T04:03:29.719Z"
+last_profile_diff: "2026-05-12T20:11:55.085Z"
 ---
 
 ## Profile
 
 - age: 19
-- distance_mi: 1361
+- distance_mi: 1371
 - height_cm: 157
 - bio: "Im not here to waste my time on people who won’t value me for me, I neeed someone who will yearn. I love photography .. going out on the weekends with my camera and a new place to shoot photos, going out for coffee shopping and watching rom cons and scary movies."
 - looking_for: "Long-term, open to short"
@@ -166,6 +166,22 @@ last_profile_diff: "2026-05-12T04:03:29.719Z"
     "distance_mi": {
       "from": 1364,
       "to": 1361
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-12T20:11:55.085Z",
+  "added": {
+    "photo_verified": false
+  },
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 1361,
+      "to": 1371
     }
   }
 }

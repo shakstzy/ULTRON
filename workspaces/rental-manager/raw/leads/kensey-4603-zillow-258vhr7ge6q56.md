@@ -10,7 +10,7 @@ listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 6429606784788879790
 status_label: INQUIRED
 renter_us_state: CA
-last_pulled_at: "2026-05-12T14:00:15.018Z"
+last_pulled_at: "2026-05-12T18:00:20.439Z"
 ---
 
 # Kensey
@@ -62,6 +62,14 @@ Hello, I do apologize for the delay in my response. I wanted to reach out and se
 
 Good evening, I do apologize about the back and forth on time. If the space is still available could we schedule for 11:45 on May 17?
 
-### 2026-05-12T14:02:26.182Z - Owner (Adithya)
+### 2026-05-12T14:02:25.000Z - Owner (Adithya)
 
 rooms are still open but i'm actually booked up on sunday. i have time wednesday at 10 am, thursday at 2 pm, or friday at 5 pm. do any of those work for you?
+
+### 2026-05-12T16:04:53.000Z - kanaiisl7
+
+Hello, Unfortunately those wouldn’t work. I have work and I currently live in the ie. Do you have availability for May 23 or 24?
+
+### 2026-05-12T16:18:20.000Z - kanaiisl7
+
+Is there any way you could squeeze me in on Sunday? I am taking a train to sylmar. If not it’s ok I just wanted to ask.

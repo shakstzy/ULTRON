@@ -8,7 +8,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: gmail-19e0852073bd3318
 status_label: INQUIRED
-last_pulled_at: "2026-05-12T14:00:16.504Z"
+last_pulled_at: "2026-05-12T18:00:21.488Z"
 ---
 
 # Melany
@@ -75,6 +75,10 @@ Do you happen to be available in like 15min today? I’m near the area
 
 If not it’s okay Thursday will do
 
-### 2026-05-12T14:02:59.686Z - Owner (Adithya)
+### 2026-05-12T14:02:58.000Z - Owner (Adithya)
 
 Sorry I missed this yesterday. I actually need to reschedule our Thursday slot. I can do Wednesday at 10 am, Thursday at 2 pm, or Friday at 5 pm. Which of those works for you?
+
+### 2026-05-12T14:17:10.000Z - Melany Alvizures
+
+No worries Thursday at 2 is great

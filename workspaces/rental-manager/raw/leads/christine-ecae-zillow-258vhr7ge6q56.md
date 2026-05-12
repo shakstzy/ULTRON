@@ -8,7 +8,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: gmail-19e0a1b0faefecae
 status_label: INQUIRED
-last_pulled_at: "2026-05-12T14:00:15.989Z"
+last_pulled_at: "2026-05-12T18:00:20.982Z"
 ---
 
 # christine
@@ -67,6 +67,10 @@ All good. You don't pay anything just to look. If you still want to check the pl
 
 thank you that's fine. I rather not I wish you can work something out with the landlord about the application fee cause I'm looking to rent but otherwise No and Thank you have a good rest of your day and get rest after work. Take care.
 
-### 2026-05-12T14:03:24.908Z - Owner (Adithya)
+### 2026-05-12T14:03:24.000Z - Owner (Adithya)
 
 I actually own the place. I just can't skip the background check. If you change your mind, do you want to swing by Wednesday at 10 AM, Thursday at 2 PM, or Friday at 5 PM Central?
+
+### 2026-05-12T15:02:35.000Z - xtian hdz
+
+Morning/ If there's any way you can approve me and the omit the background fee I'm looking to rent asap after I see the place but ultimately sorry I am not doing an application$fee but will provide all else required and I pay my rent on time 100% for the past 5 years or few days prior I'm an entrepreneur and run a christian ministry - i'm not a criminal or anything. I'm just not sure my credit at this point I'm sick of paying application fees. I hope you understand. I can come see the place on Saturday and I'm looking to rent as soon as possible or by next week if you like me as a candidate and can make you feel confident in anything and all else you require to rent. Stay Very Blessed

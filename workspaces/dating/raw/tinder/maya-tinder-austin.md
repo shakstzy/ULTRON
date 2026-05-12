@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-07T05:01:09.303Z"
 last_activity: "2026-05-07T05:01:09.303Z"
-last_scrape: "2026-05-11T20:11:14.577Z"
+last_scrape: "2026-05-12T04:03:49.742Z"
 previous_slugs: []
-last_profile_diff: "2026-05-10T04:04:36.004Z"
+last_profile_diff: "2026-05-12T04:03:49.742Z"
 ---
 
 ## Profile
 
 - age: 22
-- distance_mi: 1266
+- distance_mi: 1264
 - height_cm: 175
 - bio: "Bay↔️LA 🇨🇴🇺🇸 If you know me irl…no you don’t Bang Bang❤️💛"
 - looking_for: "Long-term, open to short · Monogamy"
@@ -74,6 +74,20 @@ last_profile_diff: "2026-05-10T04:04:36.004Z"
     "distance_mi": {
       "from": 1262,
       "to": 1266
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-12T04:03:49.742Z",
+  "added": {},
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 1266,
+      "to": 1264
     }
   }
 }

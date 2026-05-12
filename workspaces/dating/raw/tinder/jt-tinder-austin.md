@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-06T22:47:21.288Z"
 last_activity: "2026-05-06T22:47:21.288Z"
-last_scrape: "2026-05-11T20:11:09.080Z"
+last_scrape: "2026-05-12T04:03:43.346Z"
 previous_slugs: []
-last_profile_diff: "2026-05-10T04:04:29.363Z"
+last_profile_diff: "2026-05-12T04:03:43.346Z"
 ---
 
 ## Profile
 
 - age: 25
-- distance_mi: 184
+- distance_mi: 185
 - looking_for: "Long-term, open to short"
 - jobs: Woman
 - sexuality: "Straight"
@@ -71,6 +71,20 @@ last_profile_diff: "2026-05-10T04:04:29.363Z"
     "distance_mi": {
       "from": 188,
       "to": 184
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-12T04:03:43.346Z",
+  "added": {},
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 184,
+      "to": 185
     }
   }
 }

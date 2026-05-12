@@ -8,7 +8,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: gmail-19e0852073bd3318
 status_label: INQUIRED
-last_pulled_at: "2026-05-12T18:00:21.488Z"
+last_pulled_at: "2026-05-12T22:00:20.094Z"
 ---
 
 # Melany
@@ -83,6 +83,10 @@ Sorry I missed this yesterday. I actually need to reschedule our Thursday slot. 
 
 No worries Thursday at 2 is great
 
-### 2026-05-12T18:02:37.213Z - Owner (Adithya)
+### 2026-05-12T18:02:36.000Z - Owner (Adithya)
 
 Perfect. I'll text you Thursday at 2. When are you looking to move in?
+
+### 2026-05-12T18:05:31.000Z - Melany Alvizures
+
+Thank you! I think June 3/4 would be ideal

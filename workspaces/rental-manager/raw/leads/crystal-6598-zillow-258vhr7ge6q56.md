@@ -9,7 +9,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 5397343185881733553
 status_label: APPLICATION WITHDRAWN
-last_pulled_at: "2026-05-12T18:01:00.189Z"
+last_pulled_at: "2026-05-12T22:00:58.638Z"
 ---
 
 # Crystal

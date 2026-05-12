@@ -8,7 +8,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: gmail-19e0a1b0faefecae
 status_label: INQUIRED
-last_pulled_at: "2026-05-12T18:00:20.982Z"
+last_pulled_at: "2026-05-12T22:00:20.628Z"
 ---
 
 # christine
@@ -75,6 +75,6 @@ I actually own the place. I just can't skip the background check. If you change 
 
 Morning/ If there's any way you can approve me and the omit the background fee I'm looking to rent asap after I see the place but ultimately sorry I am not doing an application$fee but will provide all else required and I pay my rent on time 100% for the past 5 years or few days prior I'm an entrepreneur and run a christian ministry - i'm not a criminal or anything. I'm just not sure my credit at this point I'm sick of paying application fees. I hope you understand. I can come see the place on Saturday and I'm looking to rent as soon as possible or by next week if you like me as a candidate and can make you feel confident in anything and all else you require to rent. Stay Very Blessed
 
-### 2026-05-12T18:03:03.040Z - Owner (Adithya)
+### 2026-05-12T18:03:02.000Z - Owner (Adithya)
 
 I hear you, but I can't make exceptions for the background check. I'm booked this Saturday. Can you swing by Wednesday at 10 AM, Thursday at 2 PM, or Friday at 5 PM Central?

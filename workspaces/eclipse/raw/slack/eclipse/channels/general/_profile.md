@@ -16,5 +16,5 @@ members:
   slack_user_id: U07V99QMTV5
   display_name: julien じゅりえん
 first_seen: '2026-05-02T22:29:48-05:00'
-last_updated: '2026-05-12T17:00:13-05:00'
+last_updated: '2026-05-12T18:00:10-05:00'
 ---

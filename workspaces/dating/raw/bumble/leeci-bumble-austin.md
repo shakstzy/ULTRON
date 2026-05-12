@@ -7,17 +7,18 @@ match_id: "zAhMACjIyNTAyODU1NjkIe-K7hQAAAAAghJtYawJkQScu1N2aCMGnEH4sWK1_-cp_wtMX
 person_id: null
 phone: null
 status: "expired"
-expires_at: "2026-05-11T20:26:40.385Z"
+expires_at: "2026-05-12T04:08:29.641Z"
 first_seen: "2026-05-04T03:27:38.035Z"
 last_activity: "2026-05-06T01:42:11.265Z"
-last_scrape: "2026-05-11T20:26:41.388Z"
+last_scrape: "2026-05-12T04:08:30.644Z"
 previous_slugs: []
-last_profile_diff: "2026-05-11T20:26:41.388Z"
+last_profile_diff: "2026-05-12T04:08:30.644Z"
 ---
 
 ## Profile
 
 - age: 19
+- distance_mi: 12
 - height: "5' 6''"
 - height_cm: 168
 - photo_verified: true
@@ -69,6 +70,17 @@ last_profile_diff: "2026-05-11T20:26:41.388Z"
   "removed": {
     "distance_mi": 12
   },
+  "changed": {}
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-12T04:08:30.644Z",
+  "added": {
+    "distance_mi": 12
+  },
+  "removed": {},
   "changed": {}
 }
 ```

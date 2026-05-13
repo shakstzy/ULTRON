@@ -70,3 +70,7 @@ Tuesday I only have 10 AM open. If that doesn't work I can do Wednesday at 2 PM 
 ### 2026-05-13T05:50:45.000Z - Fz Kingz
 
 What about next week
+
+### 2026-05-13T16:21:00.369Z - Owner (Adithya)
+
+I don't have next week mapped out yet. I can do this Thursday at 10 AM, Friday at 2 PM, or Saturday at 5 PM. Let me know if one of those works.

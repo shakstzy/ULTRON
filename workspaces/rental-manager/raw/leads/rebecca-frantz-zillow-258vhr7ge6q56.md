@@ -9,7 +9,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 4135075795335991467
 status_label: TOURED
-last_pulled_at: "2026-05-12T22:01:02.479Z"
+last_pulled_at: "2026-05-13T14:02:09.994Z"
 ---
 
 # Rebecca Frantz

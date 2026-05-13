@@ -10,7 +10,7 @@ listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 6429606784788879790
 status_label: INQUIRED
 renter_us_state: CA
-last_pulled_at: "2026-05-12T22:00:19.584Z"
+last_pulled_at: "2026-05-13T14:01:17.469Z"
 ---
 
 # Kensey
@@ -82,6 +82,6 @@ i can't squeeze you in on sunday. the tour is super quick though, so are you sur
 
 If I am able to schedule the showing tomorrow at 10am… could I send someone on my behalf? My father may be able to go I’m just waiting for confirmation from him. If not then I would have to schedule for a Saturday or Sunday.
 
-### 2026-05-12T22:01:54.856Z - Owner (Adithya)
+### 2026-05-12T22:01:54.000Z - Owner (Adithya)
 
 yeah your dad can go for you. my schedule actually shifted so i have 11:30 am open tomorrow instead of 10. does that work for him?

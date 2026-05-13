@@ -8,7 +8,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: gmail-19c9bf2ad2db0825
 status_label: INQUIRED
-last_pulled_at: "2026-05-12T22:00:54.238Z"
+last_pulled_at: "2026-05-13T14:01:59.680Z"
 ---
 
 # Jamie Chavez Nicasio

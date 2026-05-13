@@ -8,7 +8,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: gmail-19e0852073bd3318
 status_label: INQUIRED
-last_pulled_at: "2026-05-12T22:00:20.094Z"
+last_pulled_at: "2026-05-13T14:01:15.149Z"
 ---
 
 # Melany
@@ -91,6 +91,10 @@ Perfect. I'll text you Thursday at 2. When are you looking to move in?
 
 Thank you! I think June 3/4 would be ideal
 
-### 2026-05-12T22:02:09.905Z - Owner (Adithya)
+### 2026-05-12T22:02:09.000Z - Owner (Adithya)
 
 June works perfectly. I'll text you Thursday at 2.
+
+### 2026-05-13T07:17:02.000Z - Melany Alvizures
+
+Sounds good thank you

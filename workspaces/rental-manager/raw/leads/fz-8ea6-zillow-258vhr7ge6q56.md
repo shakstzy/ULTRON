@@ -8,7 +8,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: gmail-19e0184bcd318ea6
 status_label: INQUIRED
-last_pulled_at: "2026-05-12T22:00:22.560Z"
+last_pulled_at: "2026-05-13T14:01:15.768Z"
 ---
 
 # Fz
@@ -66,3 +66,7 @@ Like for Tuesday cause I have class at that time
 ### 2026-05-11T15:34:26.000Z - Owner (Adithya)
 
 Tuesday I only have 10 AM open. If that doesn't work I can do Wednesday at 2 PM or Thursday at 5 PM. Which one is best for you?
+
+### 2026-05-13T05:50:45.000Z - Fz Kingz
+
+What about next week

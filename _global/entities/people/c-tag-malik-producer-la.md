@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.908874+00:00
+ingested_at: 2026-05-13T08:10:49.805589+00:00
 ingest_version: 1
 content_hash: blake2b:51867fcee07eda900e363db72fb55a40
-provider_modified_at: 2026-05-12T08:00:06.908874+00:00
+provider_modified_at: 2026-05-13T08:10:49.805589+00:00
 
 title: C Tag Malik Producer LA
 slug: c-tag-malik-producer-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14842135034"]
   slack: []
-last_synced: 2026-05-12T08:00:06.908874+00:00
+last_synced: 2026-05-13T08:10:49.805589+00:00
 global: true
 ---
 

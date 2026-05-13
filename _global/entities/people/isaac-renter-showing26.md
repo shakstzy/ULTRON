@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.888687+00:00
+ingested_at: 2026-05-13T08:10:49.716695+00:00
 ingest_version: 1
 content_hash: blake2b:ae287cf1c270ce7efccf722755b05de1
-provider_modified_at: 2026-05-12T08:00:06.888687+00:00
+provider_modified_at: 2026-05-13T08:10:49.716695+00:00
 
 title: Isaac Renter Showing26
 slug: isaac-renter-showing26
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16612193417"]
   slack: []
-last_synced: 2026-05-12T08:00:06.888687+00:00
+last_synced: 2026-05-13T08:10:49.716695+00:00
 global: true
 ---
 

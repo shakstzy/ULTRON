@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.891358+00:00
+ingested_at: 2026-05-13T08:10:49.719458+00:00
 ingest_version: 1
 content_hash: blake2b:31568eacb0304b63c22d0732b826eb0e
-provider_modified_at: 2026-05-12T08:00:06.891358+00:00
+provider_modified_at: 2026-05-13T08:10:49.719458+00:00
 
 title: MURPHY
 slug: murphy
@@ -15,7 +15,7 @@ identifiers:
   email: ["garym7@austin.rr.com"]
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:06.891358+00:00
+last_synced: 2026-05-13T08:10:49.719458+00:00
 global: true
 ---
 

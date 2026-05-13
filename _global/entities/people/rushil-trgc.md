@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.934689+00:00
+ingested_at: 2026-05-13T08:10:49.846467+00:00
 ingest_version: 1
 content_hash: blake2b:1811bb302b8cec75163ce9b50ee3fca0
-provider_modified_at: 2026-05-12T08:00:06.934689+00:00
+provider_modified_at: 2026-05-13T08:10:49.846467+00:00
 
 title: Rushil | TRGC
 slug: rushil-trgc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+971 55 552 2871"]
   slack: []
-last_synced: 2026-05-12T08:00:06.934689+00:00
+last_synced: 2026-05-13T08:10:49.846467+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.045501+00:00
+ingested_at: 2026-05-13T08:10:49.962395+00:00
 ingest_version: 1
 content_hash: blake2b:c5ac25c9b58fd5c98ef8ec8cbe88240c
-provider_modified_at: 2026-05-12T08:00:07.045501+00:00
+provider_modified_at: 2026-05-13T08:10:49.962395+00:00
 
 title: Chris | Virtuals
 slug: chris-virtuals
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:07.045501+00:00
+last_synced: 2026-05-13T08:10:49.962395+00:00
 global: true
 ---
 

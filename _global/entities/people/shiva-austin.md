@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.884378+00:00
+ingested_at: 2026-05-13T08:10:49.712942+00:00
 ingest_version: 1
 content_hash: blake2b:9d3708d805be980a72ea450370a94b4b
-provider_modified_at: 2026-05-12T08:00:06.884378+00:00
+provider_modified_at: 2026-05-13T08:10:49.712942+00:00
 
 title: Shiva Austin
 slug: shiva-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-964-8652"]
   slack: []
-last_synced: 2026-05-12T08:00:06.884378+00:00
+last_synced: 2026-05-13T08:10:49.712942+00:00
 global: true
 ---
 

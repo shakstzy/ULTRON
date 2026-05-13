@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.032958+00:00
+ingested_at: 2026-05-13T08:10:49.950487+00:00
 ingest_version: 1
 content_hash: blake2b:85e23e6591deec84180179a182333604
-provider_modified_at: 2026-05-12T08:00:07.032958+00:00
+provider_modified_at: 2026-05-13T08:10:49.950487+00:00
 
 title: Kshitij Sachan UC Berkeley
 slug: kshitij-sachan-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14692473450"]
   slack: []
-last_synced: 2026-05-12T08:00:07.032958+00:00
+last_synced: 2026-05-13T08:10:49.950487+00:00
 global: true
 ---
 

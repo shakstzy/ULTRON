@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.020272+00:00
+ingested_at: 2026-05-13T08:10:49.937416+00:00
 ingest_version: 1
 content_hash: blake2b:ef95ec3c585c7143438a97018674106c
-provider_modified_at: 2026-05-12T08:00:07.020272+00:00
+provider_modified_at: 2026-05-13T08:10:49.937416+00:00
 
 title: Benson | Nubila
 slug: benson-nubila
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:07.020272+00:00
+last_synced: 2026-05-13T08:10:49.937416+00:00
 global: true
 ---
 

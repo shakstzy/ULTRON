@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.028786+00:00
+ingested_at: 2026-05-13T08:10:49.946083+00:00
 ingest_version: 1
 content_hash: blake2b:2f60d284e7a25b63bbd36e862e7989bf
-provider_modified_at: 2026-05-12T08:00:07.028786+00:00
+provider_modified_at: 2026-05-13T08:10:49.946083+00:00
 
 title: Pranav LASA
 slug: pranav-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-645-7282"]
   slack: []
-last_synced: 2026-05-12T08:00:07.028786+00:00
+last_synced: 2026-05-13T08:10:49.946083+00:00
 global: true
 ---
 

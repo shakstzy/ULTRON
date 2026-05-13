@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.916069+00:00
+ingested_at: 2026-05-13T08:10:49.823860+00:00
 ingest_version: 1
 content_hash: blake2b:10bd509feb3a7e6b5fed51a95dfd3460
-provider_modified_at: 2026-05-12T08:00:06.916069+00:00
+provider_modified_at: 2026-05-13T08:10:49.823860+00:00
 
 title: Saihaj Gulati
 slug: saihaj-gulati
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14252870100"]
   slack: []
-last_synced: 2026-05-12T08:00:06.916069+00:00
+last_synced: 2026-05-13T08:10:49.823860+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.021199+00:00
+ingested_at: 2026-05-13T08:10:49.938233+00:00
 ingest_version: 1
 content_hash: blake2b:f6e7ad0e32357cdd5c779b70d1a47491
-provider_modified_at: 2026-05-12T08:00:07.021199+00:00
+provider_modified_at: 2026-05-13T08:10:49.938233+00:00
 
 title: Eli RenterManager Showing26
 slug: eli-rentermanager-showing26
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18184392537"]
   slack: []
-last_synced: 2026-05-12T08:00:07.021199+00:00
+last_synced: 2026-05-13T08:10:49.938233+00:00
 global: true
 ---
 

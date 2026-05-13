@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.982388+00:00
+ingested_at: 2026-05-13T08:10:49.895304+00:00
 ingest_version: 1
 content_hash: blake2b:6f9e6a130d5658f587ff316fffac0fe5
-provider_modified_at: 2026-05-12T08:00:06.982388+00:00
+provider_modified_at: 2026-05-13T08:10:49.895304+00:00
 
 title: Adam RA UC Berkeley
 slug: adam-ra-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13108821380"]
   slack: []
-last_synced: 2026-05-12T08:00:06.982388+00:00
+last_synced: 2026-05-13T08:10:49.895304+00:00
 global: true
 ---
 

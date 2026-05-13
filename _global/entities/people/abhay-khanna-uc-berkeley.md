@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.955535+00:00
+ingested_at: 2026-05-13T08:10:49.868513+00:00
 ingest_version: 1
 content_hash: blake2b:c0fdfe4f54a69f9537174ec00ceb3db0
-provider_modified_at: 2026-05-12T08:00:06.955535+00:00
+provider_modified_at: 2026-05-13T08:10:49.868513+00:00
 
 title: Abhay Khanna UC Berkeley
 slug: abhay-khanna-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15129634843"]
   slack: []
-last_synced: 2026-05-12T08:00:06.955535+00:00
+last_synced: 2026-05-13T08:10:49.868513+00:00
 global: true
 ---
 

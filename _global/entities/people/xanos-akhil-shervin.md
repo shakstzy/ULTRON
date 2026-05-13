@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.945267+00:00
+ingested_at: 2026-05-13T08:10:49.857403+00:00
 ingest_version: 1
 content_hash: blake2b:9e6320db0ad2a9fc0307c8c4e134fe07
-provider_modified_at: 2026-05-12T08:00:06.945267+00:00
+provider_modified_at: 2026-05-13T08:10:49.857403+00:00
 
 title: Xanos Akhil Shervin
 slug: xanos-akhil-shervin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16504409804"]
   slack: []
-last_synced: 2026-05-12T08:00:06.945267+00:00
+last_synced: 2026-05-13T08:10:49.857403+00:00
 global: true
 ---
 

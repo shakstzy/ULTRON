@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.912215+00:00
+ingested_at: 2026-05-13T08:10:49.819752+00:00
 ingest_version: 1
 content_hash: blake2b:8d9c91514b69bab53b369342e0234594
-provider_modified_at: 2026-05-12T08:00:06.912215+00:00
+provider_modified_at: 2026-05-13T08:10:49.819752+00:00
 
 title: Garima Hinge LA
 slug: garima-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12138069119"]
   slack: []
-last_synced: 2026-05-12T08:00:06.912215+00:00
+last_synced: 2026-05-13T08:10:49.819752+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.877320+00:00
+ingested_at: 2026-05-13T08:10:49.705059+00:00
 ingest_version: 1
 content_hash: blake2b:e741ec8ac125149ee2d227b16d0cda5e
-provider_modified_at: 2026-05-12T08:00:06.877320+00:00
+provider_modified_at: 2026-05-13T08:10:49.705059+00:00
 
 title: Harold
 slug: harold
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14696886007"]
   slack: []
-last_synced: 2026-05-12T08:00:06.877320+00:00
+last_synced: 2026-05-13T08:10:49.705059+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.959053+00:00
+ingested_at: 2026-05-13T08:10:49.872494+00:00
 ingest_version: 1
 content_hash: blake2b:2ca84cbacc774395900ecaba8a0939d3
-provider_modified_at: 2026-05-12T08:00:06.959053+00:00
+provider_modified_at: 2026-05-13T08:10:49.872494+00:00
 
 title: Ryan UT Austin
 slug: ryan-ut-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17177047895", "+17177047895"]
   slack: []
-last_synced: 2026-05-12T08:00:06.959053+00:00
+last_synced: 2026-05-13T08:10:49.872494+00:00
 global: true
 ---
 

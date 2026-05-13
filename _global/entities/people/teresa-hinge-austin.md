@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.928214+00:00
+ingested_at: 2026-05-13T08:10:49.840107+00:00
 ingest_version: 1
 content_hash: blake2b:7b98e8a8c2de0bfac49d59b8a97413a4
-provider_modified_at: 2026-05-12T08:00:06.928214+00:00
+provider_modified_at: 2026-05-13T08:10:49.840107+00:00
 
 title: Teresa Hinge Austin
 slug: teresa-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13013669193"]
   slack: []
-last_synced: 2026-05-12T08:00:06.928214+00:00
+last_synced: 2026-05-13T08:10:49.840107+00:00
 global: true
 ---
 

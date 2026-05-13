@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.906994+00:00
+ingested_at: 2026-05-13T08:10:49.803743+00:00
 ingest_version: 1
 content_hash: blake2b:4ee176d0f1e39d704a8c9a543dcf8d42
-provider_modified_at: 2026-05-12T08:00:06.906994+00:00
+provider_modified_at: 2026-05-13T08:10:49.803743+00:00
 
 title: Kaylie Hinge Austin
 slug: kaylie-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12813811537"]
   slack: []
-last_synced: 2026-05-12T08:00:06.906994+00:00
+last_synced: 2026-05-13T08:10:49.803743+00:00
 global: true
 ---
 

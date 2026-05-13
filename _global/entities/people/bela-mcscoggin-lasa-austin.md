@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.905501+00:00
+ingested_at: 2026-05-13T08:10:49.780022+00:00
 ingest_version: 1
 content_hash: blake2b:e450b80504d61047aaa89dbe035affce
-provider_modified_at: 2026-05-12T08:00:06.905501+00:00
+provider_modified_at: 2026-05-13T08:10:49.780022+00:00
 
 title: Bela McScoggin LASA Austin
 slug: bela-mcscoggin-lasa-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17373423410"]
   slack: []
-last_synced: 2026-05-12T08:00:06.905501+00:00
+last_synced: 2026-05-13T08:10:49.780022+00:00
 global: true
 ---
 

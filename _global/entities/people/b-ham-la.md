@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.982880+00:00
+ingested_at: 2026-05-13T08:10:49.896029+00:00
 ingest_version: 1
 content_hash: blake2b:281ea04898584b2289b90964517ccfd4
-provider_modified_at: 2026-05-12T08:00:06.982880+00:00
+provider_modified_at: 2026-05-13T08:10:49.896029+00:00
 
 title: B Ham LA
 slug: b-ham-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17579456736"]
   slack: []
-last_synced: 2026-05-12T08:00:06.982880+00:00
+last_synced: 2026-05-13T08:10:49.896029+00:00
 global: true
 ---
 

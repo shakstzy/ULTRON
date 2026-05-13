@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.961760+00:00
+ingested_at: 2026-05-13T08:10:49.875442+00:00
 ingest_version: 1
 content_hash: blake2b:12e3646bf55256f078260cbac11085e8
-provider_modified_at: 2026-05-12T08:00:06.961760+00:00
+provider_modified_at: 2026-05-13T08:10:49.875442+00:00
 
 title: Jayesh Synapse
 slug: jayesh-synapse
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+919711881466"]
   slack: []
-last_synced: 2026-05-12T08:00:06.961760+00:00
+last_synced: 2026-05-13T08:10:49.875442+00:00
 global: true
 ---
 

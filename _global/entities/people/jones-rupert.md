@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.933673+00:00
+ingested_at: 2026-05-13T08:10:49.845671+00:00
 ingest_version: 1
 content_hash: blake2b:5c454d4a0cd90243e4da9f51066d71df
-provider_modified_at: 2026-05-12T08:00:06.933673+00:00
+provider_modified_at: 2026-05-13T08:10:49.845671+00:00
 
 title: Jones Rupert
 slug: jones-rupert
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+91 99624 56687"]
   slack: []
-last_synced: 2026-05-12T08:00:06.933673+00:00
+last_synced: 2026-05-13T08:10:49.845671+00:00
 global: true
 ---
 

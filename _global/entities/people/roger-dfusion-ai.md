@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.967675+00:00
+ingested_at: 2026-05-13T08:10:49.882411+00:00
 ingest_version: 1
 content_hash: blake2b:b0d4b5bab242bcd600f559f3bf29a487
-provider_modified_at: 2026-05-12T08:00:06.967675+00:00
+provider_modified_at: 2026-05-13T08:10:49.882411+00:00
 
 title: Roger | dFusion.ai
 slug: roger-dfusion-ai
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+65 9831 8568"]
   slack: []
-last_synced: 2026-05-12T08:00:06.967675+00:00
+last_synced: 2026-05-13T08:10:49.882411+00:00
 global: true
 ---
 

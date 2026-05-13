@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.989289+00:00
+ingested_at: 2026-05-13T08:10:49.904707+00:00
 ingest_version: 1
 content_hash: blake2b:6c1902666ad3c0652aff1a7f8673dc8b
-provider_modified_at: 2026-05-12T08:00:06.989289+00:00
+provider_modified_at: 2026-05-13T08:10:49.904707+00:00
 
 title: Greg Zynda
 slug: greg-zynda
@@ -15,7 +15,7 @@ identifiers:
   email: ["gzynda@tacc.utexas.edu"]
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:06.989289+00:00
+last_synced: 2026-05-13T08:10:49.904707+00:00
 global: true
 ---
 

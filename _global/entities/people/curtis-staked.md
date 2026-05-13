@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.969507+00:00
+ingested_at: 2026-05-13T08:10:49.884224+00:00
 ingest_version: 1
 content_hash: blake2b:1f7a2a8f6f01649140b333931371ba91
-provider_modified_at: 2026-05-12T08:00:06.969507+00:00
+provider_modified_at: 2026-05-13T08:10:49.884224+00:00
 
 title: Curtis | Staked
 slug: curtis-staked
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:06.969507+00:00
+last_synced: 2026-05-13T08:10:49.884224+00:00
 global: true
 ---
 

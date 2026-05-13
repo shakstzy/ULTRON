@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.002443+00:00
+ingested_at: 2026-05-13T08:10:49.918679+00:00
 ingest_version: 1
 content_hash: blake2b:1bd00a3168e45bb36fe2be0ebb20d4f8
-provider_modified_at: 2026-05-12T08:00:07.002443+00:00
+provider_modified_at: 2026-05-13T08:10:49.918679+00:00
 
 title: Filip Launchx
 slug: filip-launchx
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(650) 283-8537"]
   slack: []
-last_synced: 2026-05-12T08:00:07.002443+00:00
+last_synced: 2026-05-13T08:10:49.918679+00:00
 global: true
 ---
 

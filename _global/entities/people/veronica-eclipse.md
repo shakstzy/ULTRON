@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.984623+00:00
+ingested_at: 2026-05-13T08:10:49.898505+00:00
 ingest_version: 1
 content_hash: blake2b:f913308c071a970f04f569be417d3ccb
-provider_modified_at: 2026-05-12T08:00:06.984623+00:00
+provider_modified_at: 2026-05-13T08:10:49.898505+00:00
 
 title: Veronica | Eclipse
 slug: veronica-eclipse
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:06.984623+00:00
+last_synced: 2026-05-13T08:10:49.898505+00:00
 global: true
 ---
 

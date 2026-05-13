@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.054435+00:00
+ingested_at: 2026-05-13T08:10:49.971461+00:00
 ingest_version: 1
 content_hash: blake2b:85ce74718cce7fc2c91f54fc9dec869e
-provider_modified_at: 2026-05-12T08:00:07.054435+00:00
+provider_modified_at: 2026-05-13T08:10:49.971461+00:00
 
 title: Pseuwin Crypto
 slug: pseuwin-crypto
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19253229443"]
   slack: []
-last_synced: 2026-05-12T08:00:07.054435+00:00
+last_synced: 2026-05-13T08:10:49.971461+00:00
 global: true
 ---
 

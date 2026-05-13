@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.872319+00:00
+ingested_at: 2026-05-13T08:10:49.698980+00:00
 ingest_version: 1
 content_hash: blake2b:721f8f1562a506bdaae79986f086548a
-provider_modified_at: 2026-05-12T08:00:06.872319+00:00
+provider_modified_at: 2026-05-13T08:10:49.698980+00:00
 
 title: Arnav Gurudatt
 slug: arnav-gurudatt
@@ -15,7 +15,7 @@ identifiers:
   email: ["arnavgurudatt@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:06.872319+00:00
+last_synced: 2026-05-13T08:10:49.698980+00:00
 global: true
 ---
 

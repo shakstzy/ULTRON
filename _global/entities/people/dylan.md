@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.035871+00:00
+ingested_at: 2026-05-13T08:10:49.952781+00:00
 ingest_version: 1
 content_hash: blake2b:37f417a8b3d06dfea99c559aedf26678
-provider_modified_at: 2026-05-12T08:00:07.035871+00:00
+provider_modified_at: 2026-05-13T08:10:49.952781+00:00
 
 title: Dylan
 slug: dylan
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-364-3609"]
   slack: []
-last_synced: 2026-05-12T08:00:07.035871+00:00
+last_synced: 2026-05-13T08:10:49.952781+00:00
 global: true
 ---
 

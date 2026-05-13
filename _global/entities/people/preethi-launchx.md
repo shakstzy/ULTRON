@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.909959+00:00
+ingested_at: 2026-05-13T08:10:49.817549+00:00
 ingest_version: 1
 content_hash: blake2b:f52b5898ef754104c072b703ab4d00c3
-provider_modified_at: 2026-05-12T08:00:06.909959+00:00
+provider_modified_at: 2026-05-13T08:10:49.817549+00:00
 
 title: Preethi LaunchX
 slug: preethi-launchx
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(512) 777-1343"]
   slack: []
-last_synced: 2026-05-12T08:00:06.909959+00:00
+last_synced: 2026-05-13T08:10:49.817549+00:00
 global: true
 ---
 

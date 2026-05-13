@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.015057+00:00
+ingested_at: 2026-05-13T08:10:49.931910+00:00
 ingest_version: 1
 content_hash: blake2b:8d8a3603d971c357391bec0a7ddbcb23
-provider_modified_at: 2026-05-12T08:00:07.015057+00:00
+provider_modified_at: 2026-05-13T08:10:49.931910+00:00
 
 title: Lindsay | Lilypad
 slug: lindsay-lilypad
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 608-556-7743"]
   slack: []
-last_synced: 2026-05-12T08:00:07.015057+00:00
+last_synced: 2026-05-13T08:10:49.931910+00:00
 global: true
 ---
 

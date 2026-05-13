@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.942046+00:00
+ingested_at: 2026-05-13T08:10:49.853942+00:00
 ingest_version: 1
 content_hash: blake2b:2e467453e8da4dba99880067dac09f70
-provider_modified_at: 2026-05-12T08:00:06.942046+00:00
+provider_modified_at: 2026-05-13T08:10:49.853942+00:00
 
 title: Gio Octane
 slug: gio-octane
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13106250774"]
   slack: []
-last_synced: 2026-05-12T08:00:06.942046+00:00
+last_synced: 2026-05-13T08:10:49.853942+00:00
 global: true
 ---
 

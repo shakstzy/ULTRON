@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.061863+00:00
+ingested_at: 2026-05-13T08:10:50.016849+00:00
 ingest_version: 1
 content_hash: blake2b:3b1095ebfbf66a2db8fa68fac7a59025
-provider_modified_at: 2026-05-12T08:00:07.061863+00:00
+provider_modified_at: 2026-05-13T08:10:50.016849+00:00
 
 title: Vikram Deepak UC Berkeley
 slug: vikram-deepak-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 513-808-7997"]
   slack: []
-last_synced: 2026-05-12T08:00:07.061863+00:00
+last_synced: 2026-05-13T08:10:50.016849+00:00
 global: true
 ---
 

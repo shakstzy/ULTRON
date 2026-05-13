@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.014774+00:00
+ingested_at: 2026-05-13T08:10:49.931546+00:00
 ingest_version: 1
 content_hash: blake2b:09139867963896855445259b16306466
-provider_modified_at: 2026-05-12T08:00:07.014774+00:00
+provider_modified_at: 2026-05-13T08:10:49.931546+00:00
 
 title: Ishita Hinge NYC
 slug: ishita-hinge-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18482472893"]
   slack: []
-last_synced: 2026-05-12T08:00:07.014774+00:00
+last_synced: 2026-05-13T08:10:49.931546+00:00
 global: true
 ---
 

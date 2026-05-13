@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.919836+00:00
+ingested_at: 2026-05-13T08:10:49.827938+00:00
 ingest_version: 1
 content_hash: blake2b:f21cfd541c6544c5e7ce848a1a0a9322
-provider_modified_at: 2026-05-12T08:00:06.919836+00:00
+provider_modified_at: 2026-05-13T08:10:49.827938+00:00
 
 title: Adi Veera
 slug: adi-veera
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16173863204"]
   slack: []
-last_synced: 2026-05-12T08:00:06.919836+00:00
+last_synced: 2026-05-13T08:10:49.827938+00:00
 global: true
 ---
 

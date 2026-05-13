@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.018526+00:00
+ingested_at: 2026-05-13T08:10:49.935798+00:00
 ingest_version: 1
 content_hash: blake2b:d6248dad6404d92e0d386728c0285cb2
-provider_modified_at: 2026-05-12T08:00:07.018526+00:00
+provider_modified_at: 2026-05-13T08:10:49.935798+00:00
 
 title: Malik Producer Donny Tyler LA
 slug: malik-producer-donny-tyler-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19192734432"]
   slack: []
-last_synced: 2026-05-12T08:00:07.018526+00:00
+last_synced: 2026-05-13T08:10:49.935798+00:00
 global: true
 ---
 

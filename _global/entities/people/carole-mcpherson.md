@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.970035+00:00
+ingested_at: 2026-05-13T08:10:49.884743+00:00
 ingest_version: 1
 content_hash: blake2b:9ed5d016412168f7b0c2664a3fd8df28
-provider_modified_at: 2026-05-12T08:00:06.970035+00:00
+provider_modified_at: 2026-05-13T08:10:49.884743+00:00
 
 title: Carole McPherson
 slug: carole-mcpherson
@@ -15,7 +15,7 @@ identifiers:
   email: ["carole.mcpherson@austinisd.org"]
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:06.970035+00:00
+last_synced: 2026-05-13T08:10:49.884743+00:00
 global: true
 ---
 

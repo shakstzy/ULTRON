@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.045268+00:00
+ingested_at: 2026-05-13T08:10:49.962088+00:00
 ingest_version: 1
 content_hash: blake2b:1027b2fe49cf6ff21d666ba7942a2257
-provider_modified_at: 2026-05-12T08:00:07.045268+00:00
+provider_modified_at: 2026-05-13T08:10:49.962088+00:00
 
 title: Praveen Anna
 slug: praveen-anna
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+91 98841 22234"]
   slack: []
-last_synced: 2026-05-12T08:00:07.045268+00:00
+last_synced: 2026-05-13T08:10:49.962088+00:00
 global: true
 ---
 

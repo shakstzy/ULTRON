@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.006123+00:00
+ingested_at: 2026-05-13T08:10:49.923073+00:00
 ingest_version: 1
 content_hash: blake2b:1f5225ac504168e84b9749d333cb335d
-provider_modified_at: 2026-05-12T08:00:07.006123+00:00
+provider_modified_at: 2026-05-13T08:10:49.923073+00:00
 
 title: Extendo
 slug: extendo
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(760) 402-5621"]
   slack: []
-last_synced: 2026-05-12T08:00:07.006123+00:00
+last_synced: 2026-05-13T08:10:49.923073+00:00
 global: true
 ---
 

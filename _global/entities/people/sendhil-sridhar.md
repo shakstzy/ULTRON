@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.963315+00:00
+ingested_at: 2026-05-13T08:10:49.877368+00:00
 ingest_version: 1
 content_hash: blake2b:8d0ee1c8db311890b4cd72fb7988d864
-provider_modified_at: 2026-05-12T08:00:06.963315+00:00
+provider_modified_at: 2026-05-13T08:10:49.877368+00:00
 
 title: Sendhil Sridhar
 slug: sendhil-sridhar
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(737) 600-9534"]
   slack: []
-last_synced: 2026-05-12T08:00:06.963315+00:00
+last_synced: 2026-05-13T08:10:49.877368+00:00
 global: true
 ---
 

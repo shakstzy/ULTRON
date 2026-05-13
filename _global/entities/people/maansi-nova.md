@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.030400+00:00
+ingested_at: 2026-05-13T08:10:49.947791+00:00
 ingest_version: 1
 content_hash: blake2b:83c96fe414126bc639bd3866533fce51
-provider_modified_at: 2026-05-12T08:00:07.030400+00:00
+provider_modified_at: 2026-05-13T08:10:49.947791+00:00
 
 title: Maansi Nova
 slug: maansi-nova
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14694861252"]
   slack: []
-last_synced: 2026-05-12T08:00:07.030400+00:00
+last_synced: 2026-05-13T08:10:49.947791+00:00
 global: true
 ---
 

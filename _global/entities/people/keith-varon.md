@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.033408+00:00
+ingested_at: 2026-05-13T08:10:49.950967+00:00
 ingest_version: 1
 content_hash: blake2b:e64f453dbd651baea67d7343026c9220
-provider_modified_at: 2026-05-12T08:00:07.033408+00:00
+provider_modified_at: 2026-05-13T08:10:49.950967+00:00
 
 title: Keith Varon
 slug: keith-varon
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 925-683-8470"]
   slack: []
-last_synced: 2026-05-12T08:00:07.033408+00:00
+last_synced: 2026-05-13T08:10:49.950967+00:00
 global: true
 ---
 

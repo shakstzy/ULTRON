@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.022803+00:00
+ingested_at: 2026-05-13T08:10:49.939729+00:00
 ingest_version: 1
 content_hash: blake2b:6ca0f8f4b8f1db7bb06339977776686d
-provider_modified_at: 2026-05-12T08:00:07.022803+00:00
+provider_modified_at: 2026-05-13T08:10:49.939729+00:00
 
 title: Ashish | Blockphrase
 slug: ashish-blockphrase
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+91 90826 54501"]
   slack: []
-last_synced: 2026-05-12T08:00:07.022803+00:00
+last_synced: 2026-05-13T08:10:49.939729+00:00
 global: true
 ---
 

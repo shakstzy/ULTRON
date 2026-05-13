@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.907654+00:00
+ingested_at: 2026-05-13T08:10:49.804400+00:00
 ingest_version: 1
 content_hash: blake2b:041de84fad5066a6caa18719a1b1b10d
-provider_modified_at: 2026-05-12T08:00:06.907654+00:00
+provider_modified_at: 2026-05-13T08:10:49.804400+00:00
 
 title: Kevin Theodore LA
 slug: kevin-theodore-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15167600325"]
   slack: []
-last_synced: 2026-05-12T08:00:06.907654+00:00
+last_synced: 2026-05-13T08:10:49.804400+00:00
 global: true
 ---
 

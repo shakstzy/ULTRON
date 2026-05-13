@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.904514+00:00
+ingested_at: 2026-05-13T08:10:49.734142+00:00
 ingest_version: 1
 content_hash: blake2b:b0b9a8b3f1ce503e8eced1de37403fa1
-provider_modified_at: 2026-05-12T08:00:06.904514+00:00
+provider_modified_at: 2026-05-13T08:10:49.734142+00:00
 
 title: Abby Music UC Berkeley
 slug: abby-music-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15109448630"]
   slack: []
-last_synced: 2026-05-12T08:00:06.904514+00:00
+last_synced: 2026-05-13T08:10:49.734142+00:00
 global: true
 ---
 

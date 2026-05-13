@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.922950+00:00
+ingested_at: 2026-05-13T08:10:49.833355+00:00
 ingest_version: 1
 content_hash: blake2b:99eea4d5aca5f7e0f75a8c75efe6f879
-provider_modified_at: 2026-05-12T08:00:06.922950+00:00
+provider_modified_at: 2026-05-13T08:10:49.833355+00:00
 
 title: Suvarcha Laxminarayanan
 slug: suvarcha-laxminarayanan
@@ -15,7 +15,7 @@ identifiers:
   email: ["lsuvarcha@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:06.922950+00:00
+last_synced: 2026-05-13T08:10:49.833355+00:00
 global: true
 ---
 

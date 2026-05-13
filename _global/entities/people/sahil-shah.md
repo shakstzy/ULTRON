@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.883269+00:00
+ingested_at: 2026-05-13T08:10:49.711893+00:00
 ingest_version: 1
 content_hash: blake2b:32ea0a27e2851ca1506ffc764a2879e6
-provider_modified_at: 2026-05-12T08:00:06.883269+00:00
+provider_modified_at: 2026-05-13T08:10:49.711893+00:00
 
 title: Sahil Shah
 slug: sahil-shah
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(512) 865-8353"]
   slack: []
-last_synced: 2026-05-12T08:00:06.883269+00:00
+last_synced: 2026-05-13T08:10:49.711893+00:00
 global: true
 ---
 

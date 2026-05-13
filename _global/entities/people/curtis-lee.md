@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.994942+00:00
+ingested_at: 2026-05-13T08:10:49.911065+00:00
 ingest_version: 1
 content_hash: blake2b:0c874194cb1081efc092054c7ba1f417
-provider_modified_at: 2026-05-12T08:00:06.994942+00:00
+provider_modified_at: 2026-05-13T08:10:49.911065+00:00
 
 title: Curtis Lee
 slug: curtis-lee
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16265599626"]
   slack: []
-last_synced: 2026-05-12T08:00:06.994942+00:00
+last_synced: 2026-05-13T08:10:49.911065+00:00
 global: true
 ---
 

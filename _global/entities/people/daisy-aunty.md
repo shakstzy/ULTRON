@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.046657+00:00
+ingested_at: 2026-05-13T08:10:49.963872+00:00
 ingest_version: 1
 content_hash: blake2b:8356c89662c982765271172bf385b202
-provider_modified_at: 2026-05-12T08:00:07.046657+00:00
+provider_modified_at: 2026-05-13T08:10:49.963872+00:00
 
 title: Daisy Aunty
 slug: daisy-aunty
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 925-285-1073"]
   slack: []
-last_synced: 2026-05-12T08:00:07.046657+00:00
+last_synced: 2026-05-13T08:10:49.963872+00:00
 global: true
 ---
 

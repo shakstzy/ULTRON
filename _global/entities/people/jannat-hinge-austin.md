@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.985180+00:00
+ingested_at: 2026-05-13T08:10:49.899389+00:00
 ingest_version: 1
 content_hash: blake2b:2dd3aea1205b307506986fed738f9533
-provider_modified_at: 2026-05-12T08:00:06.985180+00:00
+provider_modified_at: 2026-05-13T08:10:49.899389+00:00
 
 title: Jannat Hinge Austin
 slug: jannat-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19795956063"]
   slack: []
-last_synced: 2026-05-12T08:00:06.985180+00:00
+last_synced: 2026-05-13T08:10:49.899389+00:00
 global: true
 ---
 

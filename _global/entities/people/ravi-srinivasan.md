@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.006723+00:00
+ingested_at: 2026-05-13T08:10:49.923633+00:00
 ingest_version: 1
 content_hash: blake2b:8fa07bc19fa9633b5f3dc6c99d42ef7a
-provider_modified_at: 2026-05-12T08:00:07.006723+00:00
+provider_modified_at: 2026-05-13T08:10:49.923633+00:00
 
 title: Ravi Srinivasan
 slug: ravi-srinivasan
@@ -15,7 +15,7 @@ identifiers:
   email: ["ravi.srinivasan@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:07.006723+00:00
+last_synced: 2026-05-13T08:10:49.923633+00:00
 global: true
 ---
 

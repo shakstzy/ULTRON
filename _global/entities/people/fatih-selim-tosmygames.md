@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.909663+00:00
+ingested_at: 2026-05-13T08:10:49.817212+00:00
 ingest_version: 1
 content_hash: blake2b:7c5623b8f0928bf1e7e01c0279c2e72d
-provider_modified_at: 2026-05-12T08:00:06.909663+00:00
+provider_modified_at: 2026-05-13T08:10:49.817212+00:00
 
 title: Fatih Selim | TosmyGames
 slug: fatih-selim-tosmygames
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:06.909663+00:00
+last_synced: 2026-05-13T08:10:49.817212+00:00
 global: true
 ---
 

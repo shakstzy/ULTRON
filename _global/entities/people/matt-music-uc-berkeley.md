@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.986467+00:00
+ingested_at: 2026-05-13T08:10:49.901078+00:00
 ingest_version: 1
 content_hash: blake2b:5480c3d665859b626d1e7be09208238f
-provider_modified_at: 2026-05-12T08:00:06.986467+00:00
+provider_modified_at: 2026-05-13T08:10:49.901078+00:00
 
 title: Matt Music UC Berkeley
 slug: matt-music-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16506199056"]
   slack: []
-last_synced: 2026-05-12T08:00:06.986467+00:00
+last_synced: 2026-05-13T08:10:49.901078+00:00
 global: true
 ---
 

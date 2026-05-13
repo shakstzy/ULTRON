@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.937950+00:00
+ingested_at: 2026-05-13T08:10:49.849501+00:00
 ingest_version: 1
 content_hash: blake2b:cee5fa495024e4e45a5babee14ccf94f
-provider_modified_at: 2026-05-12T08:00:06.937950+00:00
+provider_modified_at: 2026-05-13T08:10:49.849501+00:00
 
 title: Ellie Silver Lining Studios
 slug: ellie-silver-lining-studios
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16085196442"]
   slack: []
-last_synced: 2026-05-12T08:00:06.937950+00:00
+last_synced: 2026-05-13T08:10:49.849501+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.053154+00:00
+ingested_at: 2026-05-13T08:10:49.970459+00:00
 ingest_version: 1
 content_hash: blake2b:d2d34a2c36dd82a36e8d69220e75bf17
-provider_modified_at: 2026-05-12T08:00:07.053154+00:00
+provider_modified_at: 2026-05-13T08:10:49.970459+00:00
 
 title: Nester | Luganodes
 slug: nester-luganodes
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+380 63 780 4125"]
   slack: []
-last_synced: 2026-05-12T08:00:07.053154+00:00
+last_synced: 2026-05-13T08:10:49.970459+00:00
 global: true
 ---
 

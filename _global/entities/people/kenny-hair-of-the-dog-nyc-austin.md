@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.043414+00:00
+ingested_at: 2026-05-13T08:10:49.959993+00:00
 ingest_version: 1
 content_hash: blake2b:6146b5965bcf7977c089bc7036e52ef1
-provider_modified_at: 2026-05-12T08:00:07.043414+00:00
+provider_modified_at: 2026-05-13T08:10:49.959993+00:00
 
 title: Kenny Hair Of The Dog NYC Austin
 slug: kenny-hair-of-the-dog-nyc-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16465327363"]
   slack: []
-last_synced: 2026-05-12T08:00:07.043414+00:00
+last_synced: 2026-05-13T08:10:49.959993+00:00
 global: true
 ---
 

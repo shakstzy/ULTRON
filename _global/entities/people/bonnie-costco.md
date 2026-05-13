@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.972693+00:00
+ingested_at: 2026-05-13T08:10:49.887000+00:00
 ingest_version: 1
 content_hash: blake2b:f6c2e6a29e884748855f8286178bdc7f
-provider_modified_at: 2026-05-12T08:00:06.972693+00:00
+provider_modified_at: 2026-05-13T08:10:49.887000+00:00
 
 title: Bonnie Costco
 slug: bonnie-costco
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(509) 573-8657"]
   slack: []
-last_synced: 2026-05-12T08:00:06.972693+00:00
+last_synced: 2026-05-13T08:10:49.887000+00:00
 global: true
 ---
 

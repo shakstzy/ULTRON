@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.057199+00:00
+ingested_at: 2026-05-13T08:10:50.015020+00:00
 ingest_version: 1
 content_hash: blake2b:91b2241108e5d3430acbd0ca7cb29815
-provider_modified_at: 2026-05-12T08:00:07.057199+00:00
+provider_modified_at: 2026-05-13T08:10:50.015020+00:00
 
 title: Tristan | ElfaAI
 slug: tristan-elfaai
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:07.057199+00:00
+last_synced: 2026-05-13T08:10:50.015020+00:00
 global: true
 ---
 

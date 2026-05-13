@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.053428+00:00
+ingested_at: 2026-05-13T08:10:49.970678+00:00
 ingest_version: 1
 content_hash: blake2b:53eb82db7cfa4d5d145c761392d8e93d
-provider_modified_at: 2026-05-12T08:00:07.053428+00:00
+provider_modified_at: 2026-05-13T08:10:49.970678+00:00
 
 title: Tarun UC Berkeley
 slug: tarun-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 925-886-9179"]
   slack: []
-last_synced: 2026-05-12T08:00:07.053428+00:00
+last_synced: 2026-05-13T08:10:49.970678+00:00
 global: true
 ---
 

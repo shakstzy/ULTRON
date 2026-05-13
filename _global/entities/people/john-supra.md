@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.986893+00:00
+ingested_at: 2026-05-13T08:10:49.901785+00:00
 ingest_version: 1
 content_hash: blake2b:226acfa4599360f5281e12a91d06142b
-provider_modified_at: 2026-05-12T08:00:06.986893+00:00
+provider_modified_at: 2026-05-13T08:10:49.901785+00:00
 
 title: John | Supra
 slug: john-supra
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:06.986893+00:00
+last_synced: 2026-05-13T08:10:49.901785+00:00
 global: true
 ---
 

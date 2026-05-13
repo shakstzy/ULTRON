@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.005891+00:00
+ingested_at: 2026-05-13T08:10:49.922746+00:00
 ingest_version: 1
 content_hash: blake2b:ba167a1ec9d473e14ae97244cc6877b5
-provider_modified_at: 2026-05-12T08:00:07.005891+00:00
+provider_modified_at: 2026-05-13T08:10:49.922746+00:00
 
 title: Laszlo Kopits EF Program
 slug: laszlo-kopits-ef-program
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19145529494"]
   slack: []
-last_synced: 2026-05-12T08:00:07.005891+00:00
+last_synced: 2026-05-13T08:10:49.922746+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.938724+00:00
+ingested_at: 2026-05-13T08:10:49.850352+00:00
 ingest_version: 1
 content_hash: blake2b:0d5050378672acd32779042647db81f7
-provider_modified_at: 2026-05-12T08:00:06.938724+00:00
+provider_modified_at: 2026-05-13T08:10:49.850352+00:00
 
 title: Brandon Side Hustle Stack
 slug: brandon-side-hustle-stack
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16266287725"]
   slack: []
-last_synced: 2026-05-12T08:00:06.938724+00:00
+last_synced: 2026-05-13T08:10:49.850352+00:00
 global: true
 ---
 

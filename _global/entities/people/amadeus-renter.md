@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.010216+00:00
+ingested_at: 2026-05-13T08:10:49.926956+00:00
 ingest_version: 1
 content_hash: blake2b:bbb2dead5d9ff9a9dbbdefc4f657888a
-provider_modified_at: 2026-05-12T08:00:07.010216+00:00
+provider_modified_at: 2026-05-13T08:10:49.926956+00:00
 
 title: Amadeus Renter
 slug: amadeus-renter
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14243547387"]
   slack: []
-last_synced: 2026-05-12T08:00:07.010216+00:00
+last_synced: 2026-05-13T08:10:49.926956+00:00
 global: true
 ---
 

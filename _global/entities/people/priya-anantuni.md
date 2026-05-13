@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.054083+00:00
+ingested_at: 2026-05-13T08:10:49.971178+00:00
 ingest_version: 1
 content_hash: blake2b:31cea6bbbe70fffd502bbae6f4893d12
-provider_modified_at: 2026-05-12T08:00:07.054083+00:00
+provider_modified_at: 2026-05-13T08:10:49.971178+00:00
 
 title: Priya Anantuni
 slug: priya-anantuni
@@ -15,7 +15,7 @@ identifiers:
   email: ["priya_anantuni@hotmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:07.054083+00:00
+last_synced: 2026-05-13T08:10:49.971178+00:00
 global: true
 ---
 

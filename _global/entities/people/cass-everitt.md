@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.904583+00:00
+ingested_at: 2026-05-13T08:10:49.734292+00:00
 ingest_version: 1
 content_hash: blake2b:77d0f55c5d4b705cb6a762d6407450bb
-provider_modified_at: 2026-05-12T08:00:06.904583+00:00
+provider_modified_at: 2026-05-13T08:10:49.734292+00:00
 
 title: Cass Everitt
 slug: cass-everitt
@@ -15,7 +15,7 @@ identifiers:
   email: ["cass@xyzw.us"]
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:06.904583+00:00
+last_synced: 2026-05-13T08:10:49.734292+00:00
 global: true
 ---
 

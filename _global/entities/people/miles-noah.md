@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.877880+00:00
+ingested_at: 2026-05-13T08:10:49.705672+00:00
 ingest_version: 1
 content_hash: blake2b:12f6cec04c754709e4a734c559ac7792
-provider_modified_at: 2026-05-12T08:00:06.877880+00:00
+provider_modified_at: 2026-05-13T08:10:49.705672+00:00
 
 title: Miles Noah
 slug: miles-noah
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17048089071"]
   slack: []
-last_synced: 2026-05-12T08:00:06.877880+00:00
+last_synced: 2026-05-13T08:10:49.705672+00:00
 global: true
 ---
 

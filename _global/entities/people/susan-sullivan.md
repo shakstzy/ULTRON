@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.959126+00:00
+ingested_at: 2026-05-13T08:10:49.872594+00:00
 ingest_version: 1
 content_hash: blake2b:62d2c1c7ed7f525406d243946e98f00e
-provider_modified_at: 2026-05-12T08:00:06.959126+00:00
+provider_modified_at: 2026-05-13T08:10:49.872594+00:00
 
 title: Susan Sullivan
 slug: susan-sullivan
@@ -15,7 +15,7 @@ identifiers:
   email: ["susan.sullivan@leanderisd.org"]
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:06.959126+00:00
+last_synced: 2026-05-13T08:10:49.872594+00:00
 global: true
 ---
 

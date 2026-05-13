@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.000291+00:00
+ingested_at: 2026-05-13T08:10:49.916617+00:00
 ingest_version: 1
 content_hash: blake2b:49693a58ea48caa4ff0bca909fdadb67
-provider_modified_at: 2026-05-12T08:00:07.000291+00:00
+provider_modified_at: 2026-05-13T08:10:49.916617+00:00
 
 title: Dane | 4am.marketing
 slug: dane-4am-marketing
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:07.000291+00:00
+last_synced: 2026-05-13T08:10:49.916617+00:00
 global: true
 ---
 

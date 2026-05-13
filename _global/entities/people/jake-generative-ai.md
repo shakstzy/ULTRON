@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.876206+00:00
+ingested_at: 2026-05-13T08:10:49.703552+00:00
 ingest_version: 1
 content_hash: blake2b:1982bb9647038982d981394d07411ccb
-provider_modified_at: 2026-05-12T08:00:06.876206+00:00
+provider_modified_at: 2026-05-13T08:10:49.703552+00:00
 
 title: Jake GENERATIVE AI
 slug: jake-generative-ai
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(724) 996-5475"]
   slack: []
-last_synced: 2026-05-12T08:00:06.876206+00:00
+last_synced: 2026-05-13T08:10:49.703552+00:00
 global: true
 ---
 

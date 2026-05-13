@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.053708+00:00
+ingested_at: 2026-05-13T08:10:49.970889+00:00
 ingest_version: 1
 content_hash: blake2b:4710cd6b095bced542f20546e88a8676
-provider_modified_at: 2026-05-12T08:00:07.053708+00:00
+provider_modified_at: 2026-05-13T08:10:49.970889+00:00
 
 title: Cam Ryan Producer LA
 slug: cam-ryan-producer-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13104294232"]
   slack: []
-last_synced: 2026-05-12T08:00:07.053708+00:00
+last_synced: 2026-05-13T08:10:49.970889+00:00
 global: true
 ---
 

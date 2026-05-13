@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.967745+00:00
+ingested_at: 2026-05-13T08:10:49.882485+00:00
 ingest_version: 1
 content_hash: blake2b:6375bc15e89df23d4539abd54fef601b
-provider_modified_at: 2026-05-12T08:00:06.967745+00:00
+provider_modified_at: 2026-05-13T08:10:49.882485+00:00
 
 title: Deven Matthews Blockchain Berkeley
 slug: deven-matthews-blockchain-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13102271435"]
   slack: []
-last_synced: 2026-05-12T08:00:06.967745+00:00
+last_synced: 2026-05-13T08:10:49.882485+00:00
 global: true
 ---
 

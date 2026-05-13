@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.985528+00:00
+ingested_at: 2026-05-13T08:10:49.899775+00:00
 ingest_version: 1
 content_hash: blake2b:15ebab45e08b6fe85b3b96872a28d8b4
-provider_modified_at: 2026-05-12T08:00:06.985528+00:00
+provider_modified_at: 2026-05-13T08:10:49.899775+00:00
 
 title: Kraogotthesauce
 slug: kraogotthesauce
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14082043911"]
   slack: []
-last_synced: 2026-05-12T08:00:06.985528+00:00
+last_synced: 2026-05-13T08:10:49.899775+00:00
 global: true
 ---
 

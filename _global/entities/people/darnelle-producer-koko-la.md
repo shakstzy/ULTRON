@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.889663+00:00
+ingested_at: 2026-05-13T08:10:49.717605+00:00
 ingest_version: 1
 content_hash: blake2b:f226a6228f5926c68e9aec3f87f64f4b
-provider_modified_at: 2026-05-12T08:00:06.889663+00:00
+provider_modified_at: 2026-05-13T08:10:49.717605+00:00
 
 title: Darnelle Producer Koko LA
 slug: darnelle-producer-koko-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12138876866"]
   slack: []
-last_synced: 2026-05-12T08:00:06.889663+00:00
+last_synced: 2026-05-13T08:10:49.717605+00:00
 global: true
 ---
 

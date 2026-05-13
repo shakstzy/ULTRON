@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.987061+00:00
+ingested_at: 2026-05-13T08:10:49.901975+00:00
 ingest_version: 1
 content_hash: blake2b:516c4c2cee4da3258324147bbf08902e
-provider_modified_at: 2026-05-12T08:00:06.987061+00:00
+provider_modified_at: 2026-05-13T08:10:49.901975+00:00
 
 title: Juliette Hinge Austin
 slug: juliette-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15126653889"]
   slack: []
-last_synced: 2026-05-12T08:00:06.987061+00:00
+last_synced: 2026-05-13T08:10:49.901975+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.894136+00:00
+ingested_at: 2026-05-13T08:10:49.722624+00:00
 ingest_version: 1
 content_hash: blake2b:5e62fc58aeecdfa9f8ca6db9f549032a
-provider_modified_at: 2026-05-12T08:00:06.894136+00:00
+provider_modified_at: 2026-05-13T08:10:49.722624+00:00
 
 title: Rohit Dhamankar Austin
 slug: rohit-dhamankar-austin
@@ -15,7 +15,7 @@ identifiers:
   email: ["drohit@gmail.com", "rohit.s.dhamankar@gmail.com"]
   phone: ["+1 (512) 814-6820"]
   slack: []
-last_synced: 2026-05-12T08:00:06.894136+00:00
+last_synced: 2026-05-13T08:10:49.722624+00:00
 global: true
 ---
 

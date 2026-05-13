@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.996079+00:00
+ingested_at: 2026-05-13T08:10:49.912146+00:00
 ingest_version: 1
 content_hash: blake2b:09a3c7f41e06c8def6314908a817f148
-provider_modified_at: 2026-05-12T08:00:06.996079+00:00
+provider_modified_at: 2026-05-13T08:10:49.912146+00:00
 
 title: Mycaleum | DablClub
 slug: mycaleum-dablclub
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:06.996079+00:00
+last_synced: 2026-05-13T08:10:49.912146+00:00
 global: true
 ---
 

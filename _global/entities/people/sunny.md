@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.940296+00:00
+ingested_at: 2026-05-13T08:10:49.852192+00:00
 ingest_version: 1
 content_hash: blake2b:cfe87c09c7e8bf4f6590fefe0a2ef281
-provider_modified_at: 2026-05-12T08:00:06.940296+00:00
+provider_modified_at: 2026-05-13T08:10:49.852192+00:00
 
 title: Sunny
 slug: sunny
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+447376452071", "+447376452071"]
   slack: []
-last_synced: 2026-05-12T08:00:06.940296+00:00
+last_synced: 2026-05-13T08:10:49.852192+00:00
 global: true
 ---
 

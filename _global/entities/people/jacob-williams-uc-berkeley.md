@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.883634+00:00
+ingested_at: 2026-05-13T08:10:49.712230+00:00
 ingest_version: 1
 content_hash: blake2b:8b5fa31a8ebbf13e5b9175786e2e150d
-provider_modified_at: 2026-05-12T08:00:06.883634+00:00
+provider_modified_at: 2026-05-13T08:10:49.712230+00:00
 
 title: Jacob Williams UC Berkeley
 slug: jacob-williams-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 510-379-8865"]
   slack: []
-last_synced: 2026-05-12T08:00:06.883634+00:00
+last_synced: 2026-05-13T08:10:49.712230+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.982241+00:00
+ingested_at: 2026-05-13T08:10:49.895134+00:00
 ingest_version: 1
 content_hash: blake2b:30c7fa74e3656e4f55b47fbd666b3a17
-provider_modified_at: 2026-05-12T08:00:06.982241+00:00
+provider_modified_at: 2026-05-13T08:10:49.895134+00:00
 
 title: James | Bebop
 slug: james-bebop
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:06.982241+00:00
+last_synced: 2026-05-13T08:10:49.895134+00:00
 global: true
 ---
 

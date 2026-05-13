@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.031356+00:00
+ingested_at: 2026-05-13T08:10:49.948752+00:00
 ingest_version: 1
 content_hash: blake2b:dee189205a9ab5d4b292473011a47083
-provider_modified_at: 2026-05-12T08:00:07.031356+00:00
+provider_modified_at: 2026-05-13T08:10:49.948752+00:00
 
 title: Om Uncle New York
 slug: om-uncle-new-york
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15183304187"]
   slack: []
-last_synced: 2026-05-12T08:00:07.031356+00:00
+last_synced: 2026-05-13T08:10:49.948752+00:00
 global: true
 ---
 

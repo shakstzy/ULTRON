@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.908547+00:00
+ingested_at: 2026-05-13T08:10:49.805294+00:00
 ingest_version: 1
 content_hash: blake2b:d1d209f399b072a0be9e14b1cf139738
-provider_modified_at: 2026-05-12T08:00:06.908547+00:00
+provider_modified_at: 2026-05-13T08:10:49.805294+00:00
 
 title: Davide | Merkle
 slug: davide-merkle
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:06.908547+00:00
+last_synced: 2026-05-13T08:10:49.805294+00:00
 global: true
 ---
 

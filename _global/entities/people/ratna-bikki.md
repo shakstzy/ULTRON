@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.990571+00:00
+ingested_at: 2026-05-13T08:10:49.905994+00:00
 ingest_version: 1
 content_hash: blake2b:64189b6c32191249f24b3e562be60cfd
-provider_modified_at: 2026-05-12T08:00:06.990571+00:00
+provider_modified_at: 2026-05-13T08:10:49.905994+00:00
 
 title: Ratna Bikki
 slug: ratna-bikki
@@ -15,7 +15,7 @@ identifiers:
   email: ["rbikki@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:06.990571+00:00
+last_synced: 2026-05-13T08:10:49.905994+00:00
 global: true
 ---
 

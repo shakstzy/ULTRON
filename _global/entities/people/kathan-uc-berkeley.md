@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.047576+00:00
+ingested_at: 2026-05-13T08:10:49.964612+00:00
 ingest_version: 1
 content_hash: blake2b:2138a793963dc39f81f0a8b2d6db6781
-provider_modified_at: 2026-05-12T08:00:07.047576+00:00
+provider_modified_at: 2026-05-13T08:10:49.964612+00:00
 
 title: Kathan UC Berkeley
 slug: kathan-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 510-445-0123"]
   slack: []
-last_synced: 2026-05-12T08:00:07.047576+00:00
+last_synced: 2026-05-13T08:10:49.964612+00:00
 global: true
 ---
 

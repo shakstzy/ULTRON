@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.014701+00:00
+ingested_at: 2026-05-13T08:10:49.931459+00:00
 ingest_version: 1
 content_hash: blake2b:b7e340cc2b4d1f6a4c89d0f8234ffe80
-provider_modified_at: 2026-05-12T08:00:07.014701+00:00
+provider_modified_at: 2026-05-13T08:10:49.931459+00:00
 
 title: Andrew Yu LaunchX
 slug: andrew-yu-launchx
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(936) 206-0739"]
   slack: []
-last_synced: 2026-05-12T08:00:07.014701+00:00
+last_synced: 2026-05-13T08:10:49.931459+00:00
 global: true
 ---
 

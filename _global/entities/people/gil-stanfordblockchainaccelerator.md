@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.964194+00:00
+ingested_at: 2026-05-13T08:10:49.878661+00:00
 ingest_version: 1
 content_hash: blake2b:e13d81bb5f3d6c1e23b6e84bf7316cfd
-provider_modified_at: 2026-05-12T08:00:06.964194+00:00
+provider_modified_at: 2026-05-13T08:10:49.878661+00:00
 
 title: Gil | StanfordBlockchainAccelerator
 slug: gil-stanfordblockchainaccelerator
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:06.964194+00:00
+last_synced: 2026-05-13T08:10:49.878661+00:00
 global: true
 ---
 

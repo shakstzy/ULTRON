@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.978754+00:00
+ingested_at: 2026-05-13T08:10:49.891175+00:00
 ingest_version: 1
 content_hash: blake2b:71909fb9b29ddcd6b146e103865b6c99
-provider_modified_at: 2026-05-12T08:00:06.978754+00:00
+provider_modified_at: 2026-05-13T08:10:49.891175+00:00
 
 title: Anna
 slug: anna
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13238726596"]
   slack: []
-last_synced: 2026-05-12T08:00:06.978754+00:00
+last_synced: 2026-05-13T08:10:49.891175+00:00
 global: true
 ---
 

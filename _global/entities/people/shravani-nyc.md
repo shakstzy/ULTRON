@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.949241+00:00
+ingested_at: 2026-05-13T08:10:49.862463+00:00
 ingest_version: 1
 content_hash: blake2b:1d2c52db633536c588ea553442490de9
-provider_modified_at: 2026-05-12T08:00:06.949241+00:00
+provider_modified_at: 2026-05-13T08:10:49.862463+00:00
 
 title: Shravani NYC
 slug: shravani-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18607682575"]
   slack: []
-last_synced: 2026-05-12T08:00:06.949241+00:00
+last_synced: 2026-05-13T08:10:49.862463+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.892904+00:00
+ingested_at: 2026-05-13T08:10:49.721071+00:00
 ingest_version: 1
 content_hash: blake2b:12d9a8d9f8ff583a7198eb1d10195813
-provider_modified_at: 2026-05-12T08:00:06.892904+00:00
+provider_modified_at: 2026-05-13T08:10:49.721071+00:00
 
 title: Susanne
 slug: susanne
@@ -15,7 +15,7 @@ identifiers:
   email: ["susanne_guy@yahoo.com"]
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:06.892904+00:00
+last_synced: 2026-05-13T08:10:49.721071+00:00
 global: true
 ---
 

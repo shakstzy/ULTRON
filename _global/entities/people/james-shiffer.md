@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.872907+00:00
+ingested_at: 2026-05-13T08:10:49.699832+00:00
 ingest_version: 1
 content_hash: blake2b:022c88890adf1e0b0985d74e1a234651
-provider_modified_at: 2026-05-12T08:00:06.872907+00:00
+provider_modified_at: 2026-05-13T08:10:49.699832+00:00
 
 title: James Shiffer
 slug: james-shiffer
@@ -15,7 +15,7 @@ identifiers:
   email: ["jamesnshiffer@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:06.872907+00:00
+last_synced: 2026-05-13T08:10:49.699832+00:00
 global: true
 ---
 

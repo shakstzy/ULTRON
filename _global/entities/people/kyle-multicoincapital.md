@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.960723+00:00
+ingested_at: 2026-05-13T08:10:49.874316+00:00
 ingest_version: 1
 content_hash: blake2b:85388e0c934df638f74754da17ca745b
-provider_modified_at: 2026-05-12T08:00:06.960723+00:00
+provider_modified_at: 2026-05-13T08:10:49.874316+00:00
 
 title: Kyle | MulticoinCapital
 slug: kyle-multicoincapital
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:06.960723+00:00
+last_synced: 2026-05-13T08:10:49.874316+00:00
 global: true
 ---
 

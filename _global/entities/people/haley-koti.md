@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.059783+00:00
+ingested_at: 2026-05-13T08:10:50.016053+00:00
 ingest_version: 1
 content_hash: blake2b:8155f4856d04ab9d9f6937487af08c00
-provider_modified_at: 2026-05-12T08:00:07.059783+00:00
+provider_modified_at: 2026-05-13T08:10:50.016053+00:00
 
 title: Haley Koti
 slug: haley-koti
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 830-399-7359"]
   slack: []
-last_synced: 2026-05-12T08:00:07.059783+00:00
+last_synced: 2026-05-13T08:10:50.016053+00:00
 global: true
 ---
 

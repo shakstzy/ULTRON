@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.981165+00:00
+ingested_at: 2026-05-13T08:10:49.893849+00:00
 ingest_version: 1
 content_hash: blake2b:a8c06e3d12ca88ab3515aed46329d163
-provider_modified_at: 2026-05-12T08:00:06.981165+00:00
+provider_modified_at: 2026-05-13T08:10:49.893849+00:00
 
 title: Sofi
 slug: sofi
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["8449457634"]
   slack: []
-last_synced: 2026-05-12T08:00:06.981165+00:00
+last_synced: 2026-05-13T08:10:49.893849+00:00
 global: true
 ---
 

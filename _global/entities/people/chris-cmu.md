@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.985741+00:00
+ingested_at: 2026-05-13T08:10:49.900022+00:00
 ingest_version: 1
 content_hash: blake2b:03954c70dabe19ef8cb7c46eb8b6f1e8
-provider_modified_at: 2026-05-12T08:00:06.985741+00:00
+provider_modified_at: 2026-05-13T08:10:49.900022+00:00
 
 title: Chris CMU
 slug: chris-cmu
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(585) 766-1618"]
   slack: []
-last_synced: 2026-05-12T08:00:06.985741+00:00
+last_synced: 2026-05-13T08:10:49.900022+00:00
 global: true
 ---
 

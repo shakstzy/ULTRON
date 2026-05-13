@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.919399+00:00
+ingested_at: 2026-05-13T08:10:49.827451+00:00
 ingest_version: 1
 content_hash: blake2b:86fba38cf70c8b4d0a47bc9ef71d9340
-provider_modified_at: 2026-05-12T08:00:06.919399+00:00
+provider_modified_at: 2026-05-13T08:10:49.827451+00:00
 
 title: Jake Jones
 slug: jake-jones
@@ -15,7 +15,7 @@ identifiers:
   email: ["jakejonestx@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:06.919399+00:00
+last_synced: 2026-05-13T08:10:49.827451+00:00
 global: true
 ---
 

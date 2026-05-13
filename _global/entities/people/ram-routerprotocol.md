@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.844676+00:00
+ingested_at: 2026-05-13T08:10:49.683407+00:00
 ingest_version: 1
 content_hash: blake2b:823eba4201830c8f52d9137d5de311eb
-provider_modified_at: 2026-05-12T08:00:06.844676+00:00
+provider_modified_at: 2026-05-13T08:10:49.683407+00:00
 
 title: Ram RouterProtocol
 slug: ram-routerprotocol
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+971505784331"]
   slack: []
-last_synced: 2026-05-12T08:00:06.844676+00:00
+last_synced: 2026-05-13T08:10:49.683407+00:00
 global: true
 ---
 

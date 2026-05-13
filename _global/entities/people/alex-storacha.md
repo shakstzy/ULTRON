@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.000364+00:00
+ingested_at: 2026-05-13T08:10:49.916697+00:00
 ingest_version: 1
 content_hash: blake2b:441dc4b7f519b54e9a119a56443db22e
-provider_modified_at: 2026-05-12T08:00:07.000364+00:00
+provider_modified_at: 2026-05-13T08:10:49.916697+00:00
 
 title: Alex | Storacha
 slug: alex-storacha
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-12T08:00:07.000364+00:00
+last_synced: 2026-05-13T08:10:49.916697+00:00
 global: true
 ---
 

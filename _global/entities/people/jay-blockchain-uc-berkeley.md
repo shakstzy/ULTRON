@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.017426+00:00
+ingested_at: 2026-05-13T08:10:49.934499+00:00
 ingest_version: 1
 content_hash: blake2b:3b3183338bd0550d698d075c366f284b
-provider_modified_at: 2026-05-12T08:00:07.017426+00:00
+provider_modified_at: 2026-05-13T08:10:49.934499+00:00
 
 title: Jay Blockchain UC Berkeley
 slug: jay-blockchain-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16507032160"]
   slack: []
-last_synced: 2026-05-12T08:00:07.017426+00:00
+last_synced: 2026-05-13T08:10:49.934499+00:00
 global: true
 ---
 

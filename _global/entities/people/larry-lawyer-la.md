@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:06.940436+00:00
+ingested_at: 2026-05-13T08:10:49.852360+00:00
 ingest_version: 1
 content_hash: blake2b:d59e1632b635562da7aa922e450c8e71
-provider_modified_at: 2026-05-12T08:00:06.940436+00:00
+provider_modified_at: 2026-05-13T08:10:49.852360+00:00
 
 title: Larry Lawyer LA
 slug: larry-lawyer-la
@@ -15,7 +15,7 @@ identifiers:
   email: ["Larry@LKatzLaw.com"]
   phone: ["+12013158687"]
   slack: []
-last_synced: 2026-05-12T08:00:06.940436+00:00
+last_synced: 2026-05-13T08:10:49.852360+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-12T08:00:07.062001+00:00
+ingested_at: 2026-05-13T08:10:50.016938+00:00
 ingest_version: 1
 content_hash: blake2b:28feb5f47bec6eca68cfa65376030901
-provider_modified_at: 2026-05-12T08:00:07.062001+00:00
+provider_modified_at: 2026-05-13T08:10:50.016938+00:00
 
 title: Brandon | Encrypto
 slug: brandon-encrypto-463e
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 516-262-9447"]
   slack: []
-last_synced: 2026-05-12T08:00:07.062001+00:00
+last_synced: 2026-05-13T08:10:50.016938+00:00
 global: true
 ---
 

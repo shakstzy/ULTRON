@@ -7,17 +7,18 @@ match_id: "zAhMACjIzMTMwNTgwNjUIe-K7hQAAAAAg_RKpiph8LvKBhhcndQJi9h6s-5sv-fL2jo9U
 person_id: null
 phone: null
 status: "expired"
-expires_at: "2026-05-12T20:06:16.504Z"
+expires_at: "2026-05-13T07:44:28.148Z"
 first_seen: "2026-05-12T20:06:17.527Z"
 last_activity: "2026-05-12T20:06:17.529Z"
-last_scrape: "2026-05-12T20:06:17.527Z"
+last_scrape: "2026-05-13T07:44:29.154Z"
 previous_slugs: []
+last_profile_diff: "2026-05-13T07:44:29.154Z"
 ---
 
 ## Profile
 
 - age: 23
-- distance_mi: 59
+- distance_mi: 60
 - height: "5' 7''"
 - height_cm: 170
 - jobs: Digital Product Creator
@@ -35,7 +36,19 @@ previous_slugs: []
 
 ## Profile changes
 
-(none yet)
+```json profile-diff
+{
+  "ts": "2026-05-13T07:44:29.154Z",
+  "added": {},
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 59,
+      "to": 60
+    }
+  }
+}
+```
 
 ## Conversation
 

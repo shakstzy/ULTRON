@@ -12,9 +12,15 @@ is_archived: false
 archived_at: null
 member_count: 14
 members:
+- slug: daniel
+  slack_user_id: U04HQ1YK91Q
+  display_name: daniel
+- slug: cemal
+  slack_user_id: U07JEV700QJ
+  display_name: cemal
 - slug: julien
   slack_user_id: U07V99QMTV5
   display_name: julien じゅりえん
 first_seen: '2026-05-02T22:29:48-05:00'
-last_updated: '2026-05-14T14:00:11-05:00'
+last_updated: '2026-05-14T16:12:07-05:00'
 ---

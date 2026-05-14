@@ -34,3 +34,7 @@ Hey Marco. Sounds good. I can show you the place Friday at 10 AM, Saturday at 2 
 ### 2026-05-14T17:26:20.000Z - Marco Casillas
 
 Saturday at 2pm PST sounds good. I might arrive 15 minutes late,but would that still work for you?
+
+### 2026-05-14T18:02:31.413Z - Owner (Adithya)
+
+Yeah 2:15 PST is fine. What's the best number to reach you at?

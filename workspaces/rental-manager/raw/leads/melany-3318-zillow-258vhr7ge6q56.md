@@ -130,3 +130,7 @@ It’s okay I will leave the 2pm today
 ### 2026-05-14T17:08:09.000Z - Melany Alvizures
 
 I only wanted to change it because of driving back and. Forth between two other viewings but it’s okay
+
+### 2026-05-14T18:02:09.190Z - Owner (Adithya)
+
+Got it. Sorry about the driving back and forth. I'll text you right at 2.

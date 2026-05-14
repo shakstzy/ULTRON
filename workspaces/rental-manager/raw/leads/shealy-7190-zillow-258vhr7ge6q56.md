@@ -10,7 +10,7 @@ listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 1437876304138345868
 status_label: TOUR REQUESTED
 renter_us_state: CA
-last_pulled_at: "2026-05-14T14:08:33.163Z"
+last_pulled_at: "2026-05-14T18:00:23.041Z"
 ---
 
 # Shealy
@@ -92,6 +92,6 @@ or thursday?
 
 i can friday, is it possible to do it like at 1:30? i go into work at 2:30
 
-### 2026-05-14T15:32:58.533Z - Owner (Adithya)
+### 2026-05-14T15:32:58.000Z - Owner (Adithya)
 
 I can't do 1:30 on Friday. I have Friday at 10 am, Saturday at 2 pm, or Sunday at 5 pm. Do any of those work for you?

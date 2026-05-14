@@ -10,7 +10,7 @@ listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 6429606784788879790
 status_label: INQUIRED
 renter_us_state: CA
-last_pulled_at: "2026-05-14T14:08:35.480Z"
+last_pulled_at: "2026-05-14T18:00:24.109Z"
 ---
 
 # Kensey
@@ -90,6 +90,6 @@ yeah your dad can go for you. my schedule actually shifted so i have 11:30 am op
 
 Good morning, I do apologize about the delay. My dad never confirmed about the tour for today. Could we schedule for may 23 around 11:45?
 
-### 2026-05-14T15:33:22.625Z - Owner (Adithya)
+### 2026-05-14T15:33:22.000Z - Owner (Adithya)
 
 i'm not booking that far out yet. my schedule actually opened up this weekend. i can do friday at 10 am, saturday at 2 pm, or sunday at 5 pm. do any of those work?

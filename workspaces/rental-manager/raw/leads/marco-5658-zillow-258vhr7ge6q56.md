@@ -26,3 +26,7 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 ### 2026-05-13T22:37:14.000Z - Marco Casillas
 
 I would like to schedule a tour.
+
+### 2026-05-14T15:34:20.165Z - Owner (Adithya)
+
+Hey Marco. Sounds good. I can show you the place Friday at 10 AM, Saturday at 2 PM, or Sunday at 5 PM CT. Which of those works for you?

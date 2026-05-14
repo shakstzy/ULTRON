@@ -91,3 +91,7 @@ or thursday?
 ### 2026-05-14T12:44:37.000Z - Shealy Cardona
 
 i can friday, is it possible to do it like at 1:30? i go into work at 2:30
+
+### 2026-05-14T15:32:58.533Z - Owner (Adithya)
+
+I can't do 1:30 on Friday. I have Friday at 10 am, Saturday at 2 pm, or Sunday at 5 pm. Do any of those work for you?

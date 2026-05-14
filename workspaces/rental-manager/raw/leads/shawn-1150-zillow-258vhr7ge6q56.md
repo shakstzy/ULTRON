@@ -10,7 +10,7 @@ listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 8159259841227340447
 status_label: TOUR REQUESTED
 renter_us_state: CA
-last_pulled_at: "2026-05-14T14:49:36.283Z"
+last_pulled_at: "2026-05-14T15:05:56.031Z"
 ---
 
 # Shawn
@@ -36,10 +36,6 @@ Lead from Zillow Rental Manager for **13245 Klein Ct, Sylmar, CA 91342**.
 
 ## Messages
 
-### 2026-03-23T22:43:21.000Z - Shawn Deghahni
+### 2026-03-09T20:08:24.000Z - Shawn Deghahni
 
-I could do tomorrow around 12 pm
-
-### 2026-05-07T20:47:58.000Z - Owner (Adithya)
-
-hey Shawn, are you still looking? rooms are still open if you want to come check it out. lmk a day that works and we can lock it in, or call me at 5126601911.
+I would like to schedule a tour.

@@ -89,3 +89,7 @@ yeah your dad can go for you. my schedule actually shifted so i have 11:30 am op
 ### 2026-05-13T14:21:15.000Z - kanaiisl7
 
 Good morning, I do apologize about the delay. My dad never confirmed about the tour for today. Could we schedule for may 23 around 11:45?
+
+### 2026-05-14T15:33:22.625Z - Owner (Adithya)
+
+i'm not booking that far out yet. my schedule actually opened up this weekend. i can do friday at 10 am, saturday at 2 pm, or sunday at 5 pm. do any of those work?

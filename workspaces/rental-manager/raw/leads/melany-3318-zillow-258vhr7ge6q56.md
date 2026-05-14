@@ -114,3 +114,7 @@ I do have another viewing at 12 before hand but shouldn’t take long
 ### 2026-05-14T01:48:05.000Z - Melany Alvizures
 
 Is there any way to do maybe 12 and I’ll switch my other viewing if possible?
+
+### 2026-05-14T15:33:46.573Z - Owner (Adithya)
+
+I actually can't do 12 today. If 2 doesn't work for you anymore we can reschedule. I have Friday at 10 am, Saturday at 2 pm, or Sunday at 5 pm open. Let me know which of those works.

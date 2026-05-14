@@ -1,9 +1,9 @@
 ---
 source: discord
 workspace: personal
-ingested_at: '2026-05-14T09:08:54.037Z'
+ingested_at: '2026-05-14T15:32:54.641Z'
 ingest_version: 1
-content_hash: sha256:87b9ddb0eef13003683bb09176f781e394fb4ace4342fac7bb767e16f3e89ed1
+content_hash: sha256:0f6ab0d04513d095a82c642c680e8e73741865930f0ec0484bf244adb17b9373
 provider_modified_at: '2026-04-11T18:53:43.701Z'
 contact_slug: shva-shvalockedin
 contact_type: individual
@@ -16,9 +16,9 @@ attachments:
   - message_id: '1492598542622261419'
     kind: image
     filename: image.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1492598542228000979/image.png?ex=6a061a37&is=6a04c8b7&hm=6310d19900a9f346864ef071025215cda77d308a3eecf71971fed3ba044f3b69&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1492598542228000979/image.png?ex=6a06c2f7&is=6a057177&hm=832475fc777dd72038d246c583889d2bbd7225797b36d24520fcd754cfda9e00&'
     size: 209728
-    description: 'A table outlining the rules and slice titles for a hardcore gaming Wheel of Doom.'
+    description: 'A dark table outlines rules and physical penalties for a hardcore horror gaming challenge.'
 discord_channel_id: '1292220510603575366'
 discord_channel_kind: dm
 discord_recipient_id: '1285363977030729738'
@@ -32,4 +32,4 @@ superseded_by: null
 ## 2026-04-11 (Saturday)
 
 **13:53 — SHVA:** 
-↳ image: image.png (205 KB) — "A table outlining the rules and slice titles for a hardcore gaming Wheel of Doom." — https://cdn.discordapp.com/attachments/1292220510603575366/1492598542228000979/image.png?ex=6a061a37&is=6a04c8b7&hm=6310d19900a9f346864ef071025215cda77d308a3eecf71971fed3ba044f3b69&
+↳ image: image.png (205 KB) — "A dark table outlines rules and physical penalties for a hardcore horror gaming challenge." — https://cdn.discordapp.com/attachments/1292220510603575366/1492598542228000979/image.png?ex=6a06c2f7&is=6a057177&hm=832475fc777dd72038d246c583889d2bbd7225797b36d24520fcd754cfda9e00&

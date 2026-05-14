@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-07T20:12:21.763Z"
 last_activity: "2026-05-07T20:12:21.763Z"
-last_scrape: "2026-05-12T20:11:32.916Z"
+last_scrape: "2026-05-14T01:18:49.571Z"
 previous_slugs: []
-last_profile_diff: "2026-05-12T20:11:32.916Z"
+last_profile_diff: "2026-05-14T01:18:49.571Z"
 ---
 
 ## Profile
 
 - age: 21
-- distance_mi: 6
+- distance_mi: 4
 - height_cm: 163
 - looking_for: "Still figuring it out"
 - jobs: barista at dutch bros
@@ -145,6 +145,22 @@ last_profile_diff: "2026-05-12T20:11:32.916Z"
   },
   "removed": {},
   "changed": {}
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-14T01:18:49.571Z",
+  "added": {
+    "photo_verified": false
+  },
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 6,
+      "to": 4
+    }
+  }
 }
 ```
 

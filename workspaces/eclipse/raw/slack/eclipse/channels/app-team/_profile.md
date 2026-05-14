@@ -17,6 +17,9 @@ members:
 - slug: sydney
   slack_user_id: U04QMPSF03Y
   display_name: sydney
+- slug: bm
+  slack_user_id: U055RJ51URE
+  display_name: BM
 - slug: cemal
   slack_user_id: U07JEV700QJ
   display_name: cemal
@@ -36,5 +39,5 @@ members:
   slack_user_id: USLACKBOT
   display_name: Slackbot
 first_seen: '2026-05-02T22:28:41-05:00'
-last_updated: '2026-05-13T12:04:09-05:00'
+last_updated: '2026-05-13T20:17:33-05:00'
 ---

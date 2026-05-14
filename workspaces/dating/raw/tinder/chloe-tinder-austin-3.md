@@ -9,20 +9,22 @@ phone: null
 status: "new"
 first_seen: "2026-05-10T04:03:29.218Z"
 last_activity: "2026-05-10T04:03:29.218Z"
-last_scrape: "2026-05-12T20:11:17.462Z"
+last_scrape: "2026-05-14T01:18:32.581Z"
 previous_slugs: []
-last_profile_diff: "2026-05-12T20:11:17.462Z"
+last_profile_diff: "2026-05-14T01:18:32.581Z"
 ---
 
 ## Profile
 
 - age: 22
-- distance_mi: 181
+- distance_mi: 177
 - height_cm: 168
 - bio: "I like to party and have fun! Favorite movies are the Jurassic park movies! My spirt animal is a unicorn. I’m a plus size baddie."
 - looking_for: "Still figuring it out · Open to exploring"
 - jobs: Woman, English
+- lives_in: "Fort Worth"
 - pronouns: "She/Her"
+- sexuality: "Bisexual"
 - photo_verified: true
 - interests: Spotify, Outdoors, Hiking, Rock music, Live Music, Aquarium, Bars, Foodie, Marvel, Tattoos
 - basics.zodiac: "Cancer"
@@ -117,6 +119,23 @@ last_profile_diff: "2026-05-12T20:11:17.462Z"
     "distance_mi": {
       "from": 173,
       "to": 181
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-14T01:18:32.581Z",
+  "added": {
+    "lives_in": "Fort Worth",
+    "sexuality": "Bisexual"
+  },
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 181,
+      "to": 177
     }
   }
 }

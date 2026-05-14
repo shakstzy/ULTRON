@@ -9,14 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-12T20:10:53.952Z"
 last_activity: "2026-05-12T20:10:53.952Z"
-last_scrape: "2026-05-12T20:10:53.952Z"
+last_scrape: "2026-05-14T01:17:56.347Z"
 previous_slugs: []
+last_profile_diff: "2026-05-14T01:17:56.347Z"
 ---
 
 ## Profile
 
 - age: 21
-- distance_mi: 44
+- distance_mi: 56
 - bio: "looking for someone who knows cars so you can fix mine🫶"
 - looking_for: "Long-term partner · Monogamy"
 - schools: Texas A&M University
@@ -34,7 +35,21 @@ previous_slugs: []
 
 ## Profile changes
 
-(none yet)
+```json profile-diff
+{
+  "ts": "2026-05-14T01:17:56.347Z",
+  "added": {
+    "photo_verified": false
+  },
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 44,
+      "to": 56
+    }
+  }
+}
+```
 
 ## Conversation
 

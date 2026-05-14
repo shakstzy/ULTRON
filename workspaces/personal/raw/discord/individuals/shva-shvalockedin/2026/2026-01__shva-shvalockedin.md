@@ -1,9 +1,9 @@
 ---
 source: discord
 workspace: personal
-ingested_at: '2026-05-14T00:47:33.976Z'
+ingested_at: '2026-05-14T09:08:40.959Z'
 ingest_version: 1
-content_hash: sha256:a8319127d1bd4519b5d8bb4e9169c6746409aac203a4890cebf0664e66bd997c
+content_hash: sha256:e44274e0bee1733cf35e03200e6db134c63f7030e0aefb4b3b10edf6211a664a
 provider_modified_at: '2026-01-06T02:27:05.877Z'
 contact_slug: shva-shvalockedin
 contact_type: individual
@@ -16,15 +16,15 @@ attachments:
   - message_id: '1456463673382928504'
     kind: image
     filename: content.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1456463673106239668/content.png?ex=6a05d23f&is=6a0480bf&hm=8cb6871518396fcccf6d3e6a6b6c6010402edd634ea8e06385d6fe10c4fde8e0&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1456463673106239668/content.png?ex=6a067aff&is=6a05297f&hm=5eb1a367ebd13fda0a38aaaa6cba72d1cf784643b906ad0a649b73732420a75b&'
     size: 793361
-    description: 'A six-panel promotional infographic introduces Approach.AI, a web app designed to help users build real-world charisma.'
+    description: 'A six-panel promotional graphic introduces Approach AI, an app designed to build social confidence and charisma.'
   - message_id: '1456834776504860928'
     kind: image
     filename: image.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1456834776295018658/image.png?ex=6a05da5d&is=6a0488dd&hm=93eb8625c173a2354d0999707c601156c9fed20426e1e47fdda43a1856ee92ef&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1456834776295018658/image.png?ex=6a06831d&is=6a05319d&hm=8ee9d16b09d66828d5fa1af7dc0eccbd2677e719da5950b509cf5000f4794999&'
     size: 482087
-    description: 'A writing prompt about community followed by an essay response about a high school robotics team.'
+    description: 'A document showing an essay prompt with red highlights and a drafted response highlighted in blue.'
 discord_channel_id: '1292220510603575366'
 discord_channel_kind: dm
 discord_recipient_id: '1285363977030729738'
@@ -42,7 +42,7 @@ superseded_by: null
 **19:43 — SHVA:** https://www.instagram.com/p/DS_WdDfjRq4/
 **19:45 — SHVA:** https://www.producthunt.com/p/general/introducing-approach-ai-the-1-web-app-to-build-real-world-charisma
 **19:46 — SHVA:** 
-↳ image: content.png (775 KB) — "A six-panel promotional infographic introduces Approach.AI, a web app designed to help users build real-world charisma." — https://cdn.discordapp.com/attachments/1292220510603575366/1456463673106239668/content.png?ex=6a05d23f&is=6a0480bf&hm=8cb6871518396fcccf6d3e6a6b6c6010402edd634ea8e06385d6fe10c4fde8e0&
+↳ image: content.png (775 KB) — "A six-panel promotional graphic introduces Approach AI, an app designed to build social confidence and charisma." — https://cdn.discordapp.com/attachments/1292220510603575366/1456463673106239668/content.png?ex=6a067aff&is=6a05297f&hm=5eb1a367ebd13fda0a38aaaa6cba72d1cf784643b906ad0a649b73732420a75b&
 **20:39 — SHVA:** https://docs.google.com/document/d/1uUDslzz6zu_Dw9bZ3x6QmGGNKOBNR6nGNNF1l6W-Jcw/edit?tab=t.xar9dd97igb
 **22:37 — SHVA:** https://docs.google.com/document/d/123yzlpi3ZyxpIZnoIXLgHMUSEDFb1nCNwCyURoWkjs8/edit?usp=drivesdk
 **22:37 — SHVA:** https://docs.google.com/document/d/1sxQ_r3YSsfIwRH5dUzMY2Z5Ugq8pwnINBJXfcL5f8H0/edit?usp=drivesdk
@@ -115,7 +115,7 @@ State science fair finalist; built AI + Raman spectroscopy system for early skin
 **19:46 — me:** listen and reduce the haas essay down to 350 and use it
 **20:01 — me:** https://walterwrites.ai/
 **20:21 — me:** 
-↳ image: image.png (471 KB) — "A writing prompt about community followed by an essay response about a high school robotics team." — https://cdn.discordapp.com/attachments/1292220510603575366/1456834776295018658/image.png?ex=6a05da5d&is=6a0488dd&hm=93eb8625c173a2354d0999707c601156c9fed20426e1e47fdda43a1856ee92ef&
+↳ image: image.png (471 KB) — "A document showing an essay prompt with red highlights and a drafted response highlighted in blue." — https://cdn.discordapp.com/attachments/1292220510603575366/1456834776295018658/image.png?ex=6a06831d&is=6a05319d&hm=8ee9d16b09d66828d5fa1af7dc0eccbd2677e719da5950b509cf5000f4794999&
 **20:21 — me:** heres a version under 350 that speaks about community
 **20:34 — SHVA:** https://docs.google.com/spreadsheets/d/10Z4k6HEDw81qgofP38dbS-0cb2T5p5EtPCKzrEdJGLc/edit?gid=1383438644#gid=1383438644
 

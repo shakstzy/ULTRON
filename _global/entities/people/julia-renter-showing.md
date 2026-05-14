@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.732139+00:00
+ingested_at: 2026-05-14T08:00:19.321507+00:00
 ingest_version: 1
 content_hash: blake2b:f2961d96b755d25b5de6d68038e05763
-provider_modified_at: 2026-05-13T08:10:49.732139+00:00
+provider_modified_at: 2026-05-14T08:00:19.321507+00:00
 
 title: Julia Renter Showing
 slug: julia-renter-showing
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12134448918"]
   slack: []
-last_synced: 2026-05-13T08:10:49.732139+00:00
+last_synced: 2026-05-14T08:00:19.321507+00:00
 global: true
 ---
 

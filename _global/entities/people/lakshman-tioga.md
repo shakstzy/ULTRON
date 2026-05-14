@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.882557+00:00
+ingested_at: 2026-05-14T08:00:19.462937+00:00
 ingest_version: 1
 content_hash: blake2b:37ba88111145ff260c5ee8a11e0870b3
-provider_modified_at: 2026-05-13T08:10:49.882557+00:00
+provider_modified_at: 2026-05-14T08:00:19.462937+00:00
 
 title: Lakshman | Tioga
 slug: lakshman-tioga
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.882557+00:00
+last_synced: 2026-05-14T08:00:19.462937+00:00
 global: true
 ---
 

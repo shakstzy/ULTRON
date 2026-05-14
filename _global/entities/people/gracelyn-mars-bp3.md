@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.919082+00:00
+ingested_at: 2026-05-14T08:00:19.498933+00:00
 ingest_version: 1
 content_hash: blake2b:4390f4556acd849258934bff4b91ad78
-provider_modified_at: 2026-05-13T08:10:49.919082+00:00
+provider_modified_at: 2026-05-14T08:00:19.498933+00:00
 
 title: Gracelyn Mars BP3
 slug: gracelyn-mars-bp3
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15127797957"]
   slack: []
-last_synced: 2026-05-13T08:10:49.919082+00:00
+last_synced: 2026-05-14T08:00:19.498933+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.969730+00:00
+ingested_at: 2026-05-14T08:00:19.548200+00:00
 ingest_version: 1
 content_hash: blake2b:d2a75136dfc65aaa2b1d5c2a82036f5e
-provider_modified_at: 2026-05-13T08:10:49.969730+00:00
+provider_modified_at: 2026-05-14T08:00:19.548200+00:00
 
 title: Maxime | DraperAssociates
 slug: maxime-draperassociates
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.969730+00:00
+last_synced: 2026-05-14T08:00:19.548200+00:00
 global: true
 ---
 

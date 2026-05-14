@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.964472+00:00
+ingested_at: 2026-05-14T08:00:19.542548+00:00
 ingest_version: 1
 content_hash: blake2b:7e4d7f2a7810f89e3d57b77f628327fa
-provider_modified_at: 2026-05-13T08:10:49.964472+00:00
+provider_modified_at: 2026-05-14T08:00:19.542548+00:00
 
 title: Studio Silver Lining LA
 slug: studio-silver-lining-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(818) 856-8044"]
   slack: []
-last_synced: 2026-05-13T08:10:49.964472+00:00
+last_synced: 2026-05-14T08:00:19.542548+00:00
 global: true
 ---
 

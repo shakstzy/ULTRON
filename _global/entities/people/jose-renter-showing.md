@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.684029+00:00
+ingested_at: 2026-05-14T08:00:19.276811+00:00
 ingest_version: 1
 content_hash: blake2b:84875fc6a579cbad182a51fd7ccfe66d
-provider_modified_at: 2026-05-13T08:10:49.684029+00:00
+provider_modified_at: 2026-05-14T08:00:19.276811+00:00
 
 title: Jose Renter Showing
 slug: jose-renter-showing
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18186267129"]
   slack: []
-last_synced: 2026-05-13T08:10:49.684029+00:00
+last_synced: 2026-05-14T08:00:19.276811+00:00
 global: true
 ---
 

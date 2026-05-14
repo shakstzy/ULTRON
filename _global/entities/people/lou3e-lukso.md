@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.717765+00:00
+ingested_at: 2026-05-14T08:00:19.308423+00:00
 ingest_version: 1
 content_hash: blake2b:5b0eae000a32def7455463f1559bfc3c
-provider_modified_at: 2026-05-13T08:10:49.717765+00:00
+provider_modified_at: 2026-05-14T08:00:19.308423+00:00
 
 title: Lou3e 🆙 | Lukso
 slug: lou3e-lukso
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.717765+00:00
+last_synced: 2026-05-14T08:00:19.308423+00:00
 global: true
 ---
 

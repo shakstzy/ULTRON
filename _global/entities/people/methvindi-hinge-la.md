@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:50.014761+00:00
+ingested_at: 2026-05-14T08:00:19.552401+00:00
 ingest_version: 1
 content_hash: blake2b:acdf9657bf7c8dea63beb974166833b6
-provider_modified_at: 2026-05-13T08:10:50.014761+00:00
+provider_modified_at: 2026-05-14T08:00:19.552401+00:00
 
 title: Methvindi Hinge LA
 slug: methvindi-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13236176148"]
   slack: []
-last_synced: 2026-05-13T08:10:50.014761+00:00
+last_synced: 2026-05-14T08:00:19.552401+00:00
 global: true
 ---
 

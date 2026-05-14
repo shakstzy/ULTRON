@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.866549+00:00
+ingested_at: 2026-05-14T08:00:19.415470+00:00
 ingest_version: 1
 content_hash: blake2b:7f426fb4996f32b0d504fbe6601650f0
-provider_modified_at: 2026-05-13T08:10:49.866549+00:00
+provider_modified_at: 2026-05-14T08:00:19.415470+00:00
 
 title: Jeff Sei
 slug: jeff-sei
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19259848679"]
   slack: []
-last_synced: 2026-05-13T08:10:49.866549+00:00
+last_synced: 2026-05-14T08:00:19.415470+00:00
 global: true
 ---
 

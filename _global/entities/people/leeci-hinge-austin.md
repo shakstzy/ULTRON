@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.971107+00:00
+ingested_at: 2026-05-14T08:00:19.549818+00:00
 ingest_version: 1
 content_hash: blake2b:e28749f5ab5d42a4ef428c61accf871e
-provider_modified_at: 2026-05-13T08:10:49.971107+00:00
+provider_modified_at: 2026-05-14T08:00:19.549818+00:00
 
 title: Leeci Hinge Austin
 slug: leeci-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17372188033"]
   slack: []
-last_synced: 2026-05-13T08:10:49.971107+00:00
+last_synced: 2026-05-14T08:00:19.549818+00:00
 global: true
 ---
 

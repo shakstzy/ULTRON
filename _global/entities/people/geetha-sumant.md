@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.894235+00:00
+ingested_at: 2026-05-14T08:00:19.478550+00:00
 ingest_version: 1
 content_hash: blake2b:6140469830072445af8efcc20cee4a91
-provider_modified_at: 2026-05-13T08:10:49.894235+00:00
+provider_modified_at: 2026-05-14T08:00:19.478550+00:00
 
 title: Geetha Sumant
 slug: geetha-sumant
@@ -15,7 +15,7 @@ identifiers:
   email: ["geetha_sumant@yahoo.com"]
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.894235+00:00
+last_synced: 2026-05-14T08:00:19.478550+00:00
 global: true
 ---
 

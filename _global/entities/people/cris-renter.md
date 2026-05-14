@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.858862+00:00
+ingested_at: 2026-05-14T08:00:19.386635+00:00
 ingest_version: 1
 content_hash: blake2b:75bb4cae3d93633661e6c8cecdefcf6e
-provider_modified_at: 2026-05-13T08:10:49.858862+00:00
+provider_modified_at: 2026-05-14T08:00:19.386635+00:00
 
 title: Cris Renter
 slug: cris-renter
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18183357991"]
   slack: []
-last_synced: 2026-05-13T08:10:49.858862+00:00
+last_synced: 2026-05-14T08:00:19.386635+00:00
 global: true
 ---
 

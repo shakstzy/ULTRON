@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.881254+00:00
+ingested_at: 2026-05-14T08:00:19.461640+00:00
 ingest_version: 1
 content_hash: blake2b:77396e34ab11910bce1319b40aa511e1
-provider_modified_at: 2026-05-13T08:10:49.881254+00:00
+provider_modified_at: 2026-05-14T08:00:19.461640+00:00
 
 title: Mateo Brunel LaunchX
 slug: mateo-brunel-launchx
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-809-0005"]
   slack: []
-last_synced: 2026-05-13T08:10:49.881254+00:00
+last_synced: 2026-05-14T08:00:19.461640+00:00
 global: true
 ---
 

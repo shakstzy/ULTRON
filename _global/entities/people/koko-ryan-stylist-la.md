@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.941840+00:00
+ingested_at: 2026-05-14T08:00:19.519791+00:00
 ingest_version: 1
 content_hash: blake2b:d34c6703e0c973029e354546844b622c
-provider_modified_at: 2026-05-13T08:10:49.941840+00:00
+provider_modified_at: 2026-05-14T08:00:19.519791+00:00
 
 title: KOKO Ryan Stylist LA
 slug: koko-ryan-stylist-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19099380373"]
   slack: []
-last_synced: 2026-05-13T08:10:49.941840+00:00
+last_synced: 2026-05-14T08:00:19.519791+00:00
 global: true
 ---
 

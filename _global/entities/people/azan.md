@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.925350+00:00
+ingested_at: 2026-05-14T08:00:19.503881+00:00
 ingest_version: 1
 content_hash: blake2b:3fa695c06e9bc85845b5081c433482dc
-provider_modified_at: 2026-05-13T08:10:49.925350+00:00
+provider_modified_at: 2026-05-14T08:00:19.503881+00:00
 
 title: Azan
 slug: azan
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 209-321-2947"]
   slack: []
-last_synced: 2026-05-13T08:10:49.925350+00:00
+last_synced: 2026-05-14T08:00:19.503881+00:00
 global: true
 ---
 

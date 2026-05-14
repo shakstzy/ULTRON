@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.859581+00:00
+ingested_at: 2026-05-14T08:00:19.387160+00:00
 ingest_version: 1
 content_hash: blake2b:41fc2c908753263f23004bfba2b0024c
-provider_modified_at: 2026-05-13T08:10:49.859581+00:00
+provider_modified_at: 2026-05-14T08:00:19.387160+00:00
 
 title: Apple Inc.
 slug: apple-inc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["1-800-MY-APPLE"]
   slack: []
-last_synced: 2026-05-13T08:10:49.859581+00:00
+last_synced: 2026-05-14T08:00:19.387160+00:00
 global: true
 ---
 

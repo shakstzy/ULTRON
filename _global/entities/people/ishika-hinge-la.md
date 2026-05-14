@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.681147+00:00
+ingested_at: 2026-05-14T08:00:19.274418+00:00
 ingest_version: 1
 content_hash: blake2b:8ac1e68acffc2b7b9f6d9812f6e0ce30
-provider_modified_at: 2026-05-13T08:10:49.681147+00:00
+provider_modified_at: 2026-05-14T08:00:19.274418+00:00
 
 title: Ishika Hinge LA
 slug: ishika-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15712467597"]
   slack: []
-last_synced: 2026-05-13T08:10:49.681147+00:00
+last_synced: 2026-05-14T08:00:19.274418+00:00
 global: true
 ---
 

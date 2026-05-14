@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.864723+00:00
+ingested_at: 2026-05-14T08:00:19.413410+00:00
 ingest_version: 1
 content_hash: blake2b:bc534223d54e3300145fc02014f91e72
-provider_modified_at: 2026-05-13T08:10:49.864723+00:00
+provider_modified_at: 2026-05-14T08:00:19.413410+00:00
 
 title: Marc Porras LASA
 slug: marc-porras-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-740-2279"]
   slack: []
-last_synced: 2026-05-13T08:10:49.864723+00:00
+last_synced: 2026-05-14T08:00:19.413410+00:00
 global: true
 ---
 

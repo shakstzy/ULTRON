@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.928973+00:00
+ingested_at: 2026-05-14T08:00:19.507412+00:00
 ingest_version: 1
 content_hash: blake2b:1aeaa873c67d5954de8d3b92c936c32b
-provider_modified_at: 2026-05-13T08:10:49.928973+00:00
+provider_modified_at: 2026-05-14T08:00:19.507412+00:00
 
 title: Alex Entrepreneur
 slug: alex-entrepreneur
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15129152151"]
   slack: []
-last_synced: 2026-05-13T08:10:49.928973+00:00
+last_synced: 2026-05-14T08:00:19.507412+00:00
 global: true
 ---
 

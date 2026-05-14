@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.916377+00:00
+ingested_at: 2026-05-14T08:00:19.496256+00:00
 ingest_version: 1
 content_hash: blake2b:b52b4ae4024ac3d5e07d543f71e1230a
-provider_modified_at: 2026-05-13T08:10:49.916377+00:00
+provider_modified_at: 2026-05-14T08:00:19.496256+00:00
 
 title: Michael | CVE
 slug: michael-cve
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.916377+00:00
+last_synced: 2026-05-14T08:00:19.496256+00:00
 global: true
 ---
 

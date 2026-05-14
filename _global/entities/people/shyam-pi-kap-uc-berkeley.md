@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.709584+00:00
+ingested_at: 2026-05-14T08:00:19.300628+00:00
 ingest_version: 1
 content_hash: blake2b:4c1ea392e53200f301d222e9e2016a03
-provider_modified_at: 2026-05-13T08:10:49.709584+00:00
+provider_modified_at: 2026-05-14T08:00:19.300628+00:00
 
 title: Shyam Pi Kap UC Berkeley
 slug: shyam-pi-kap-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15598929491"]
   slack: []
-last_synced: 2026-05-13T08:10:49.709584+00:00
+last_synced: 2026-05-14T08:00:19.300628+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.859723+00:00
+ingested_at: 2026-05-14T08:00:19.387252+00:00
 ingest_version: 1
 content_hash: blake2b:964c4f39bf481314d62658f19df7a860
-provider_modified_at: 2026-05-13T08:10:49.859723+00:00
+provider_modified_at: 2026-05-14T08:00:19.387252+00:00
 
 title: Huma Hinge LA
 slug: huma-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18044990239"]
   slack: []
-last_synced: 2026-05-13T08:10:49.859723+00:00
+last_synced: 2026-05-14T08:00:19.387252+00:00
 global: true
 ---
 

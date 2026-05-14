@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.915318+00:00
+ingested_at: 2026-05-14T08:00:19.494993+00:00
 ingest_version: 1
 content_hash: blake2b:776cdf5c602e10418b3ddae7f4e02a77
-provider_modified_at: 2026-05-13T08:10:49.915318+00:00
+provider_modified_at: 2026-05-14T08:00:19.494993+00:00
 
 title: JJ NYC
 slug: jj-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16468308833"]
   slack: []
-last_synced: 2026-05-13T08:10:49.915318+00:00
+last_synced: 2026-05-14T08:00:19.494993+00:00
 global: true
 ---
 

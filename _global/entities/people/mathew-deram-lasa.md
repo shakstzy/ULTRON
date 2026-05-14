@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.821185+00:00
+ingested_at: 2026-05-14T08:00:19.331955+00:00
 ingest_version: 1
 content_hash: blake2b:3e9e2b67b156a7a95b90fbc9a37882f7
-provider_modified_at: 2026-05-13T08:10:49.821185+00:00
+provider_modified_at: 2026-05-14T08:00:19.331955+00:00
 
 title: Mathew Deram LASA
 slug: mathew-deram-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: ["mathew.deram@austinisd.org"]
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.821185+00:00
+last_synced: 2026-05-14T08:00:19.331955+00:00
 global: true
 ---
 

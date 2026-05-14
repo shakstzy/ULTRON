@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.939463+00:00
+ingested_at: 2026-05-14T08:00:19.517414+00:00
 ingest_version: 1
 content_hash: blake2b:cca24a9bd773e4d34e0cedaf7ce9e54b
-provider_modified_at: 2026-05-13T08:10:49.939463+00:00
+provider_modified_at: 2026-05-14T08:00:19.517414+00:00
 
 title: APARNA SHARMA
 slug: aparna-sharma
@@ -15,7 +15,7 @@ identifiers:
   email: ["aparna319@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.939463+00:00
+last_synced: 2026-05-14T08:00:19.517414+00:00
 global: true
 ---
 

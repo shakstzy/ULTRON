@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.893373+00:00
+ingested_at: 2026-05-14T08:00:19.477621+00:00
 ingest_version: 1
 content_hash: blake2b:87f123d6e28a2e77b6ef36f3eac41b83
-provider_modified_at: 2026-05-13T08:10:49.893373+00:00
+provider_modified_at: 2026-05-14T08:00:19.477621+00:00
 
 title: Vanshika Hinge LA
 slug: vanshika-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14252814747"]
   slack: []
-last_synced: 2026-05-13T08:10:49.893373+00:00
+last_synced: 2026-05-14T08:00:19.477621+00:00
 global: true
 ---
 

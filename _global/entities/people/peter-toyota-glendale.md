@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.964543+00:00
+ingested_at: 2026-05-14T08:00:19.542622+00:00
 ingest_version: 1
 content_hash: blake2b:696ef0107f9348a79a1257f1ca5e6db0
-provider_modified_at: 2026-05-13T08:10:49.964543+00:00
+provider_modified_at: 2026-05-14T08:00:19.542622+00:00
 
 title: Peter Toyota Glendale
 slug: peter-toyota-glendale
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18185724762"]
   slack: []
-last_synced: 2026-05-13T08:10:49.964543+00:00
+last_synced: 2026-05-14T08:00:19.542622+00:00
 global: true
 ---
 

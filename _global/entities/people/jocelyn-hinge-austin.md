@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.819993+00:00
+ingested_at: 2026-05-14T08:00:19.331097+00:00
 ingest_version: 1
 content_hash: blake2b:e2e10e2647f4da19e738b1412af42d69
-provider_modified_at: 2026-05-13T08:10:49.819993+00:00
+provider_modified_at: 2026-05-14T08:00:19.331097+00:00
 
 title: Jocelyn Hinge Austin
 slug: jocelyn-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19728043310"]
   slack: []
-last_synced: 2026-05-13T08:10:49.819993+00:00
+last_synced: 2026-05-14T08:00:19.331097+00:00
 global: true
 ---
 

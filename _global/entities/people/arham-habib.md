@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.966576+00:00
+ingested_at: 2026-05-14T08:00:19.544609+00:00
 ingest_version: 1
 content_hash: blake2b:c2f4a4c1625b3e2f0a55916911a43a28
-provider_modified_at: 2026-05-13T08:10:49.966576+00:00
+provider_modified_at: 2026-05-14T08:00:19.544609+00:00
 
 title: Arham Habib
 slug: arham-habib
@@ -15,7 +15,7 @@ identifiers:
   email: ["arham.habib@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.966576+00:00
+last_synced: 2026-05-14T08:00:19.544609+00:00
 global: true
 ---
 

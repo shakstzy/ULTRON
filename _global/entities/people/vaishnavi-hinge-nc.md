@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.909707+00:00
+ingested_at: 2026-05-14T08:00:19.489465+00:00
 ingest_version: 1
 content_hash: blake2b:e162b417713e1fa962fde940f2abff1a
-provider_modified_at: 2026-05-13T08:10:49.909707+00:00
+provider_modified_at: 2026-05-14T08:00:19.489465+00:00
 
 title: Vaishnavi Hinge NC
 slug: vaishnavi-hinge-nc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17373464734"]
   slack: []
-last_synced: 2026-05-13T08:10:49.909707+00:00
+last_synced: 2026-05-14T08:00:19.489465+00:00
 global: true
 ---
 

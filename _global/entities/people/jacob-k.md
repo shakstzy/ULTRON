@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.724478+00:00
+ingested_at: 2026-05-14T08:00:19.314443+00:00
 ingest_version: 1
 content_hash: blake2b:589124396cc963966fa3d45317fa94ab
-provider_modified_at: 2026-05-13T08:10:49.724478+00:00
+provider_modified_at: 2026-05-14T08:00:19.314443+00:00
 
 title: Jacob k
 slug: jacob-k
@@ -15,7 +15,7 @@ identifiers:
   email: ["jkintzle02@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.724478+00:00
+last_synced: 2026-05-14T08:00:19.314443+00:00
 global: true
 ---
 

@@ -1,9 +1,9 @@
 ---
 source: discord
 workspace: personal
-ingested_at: '2026-05-13T19:47:39.948Z'
+ingested_at: '2026-05-14T07:42:53.285Z'
 ingest_version: 1
-content_hash: sha256:93000f62c5694231f5d20dc195900b9f87652c86ab6c014da7444450f3496743
+content_hash: sha256:03333c68795aea9b453065ddc97f77b03c8326c0c26a51a95fa12f09b7e9eabd
 provider_modified_at: '2025-03-31T00:07:34.176Z'
 contact_slug: shva-shvalockedin
 contact_type: individual
@@ -16,7 +16,7 @@ attachments:
   - message_id: '1346699330802942033'
     kind: audio
     filename: all_mine.mp3
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1346699330366607400/all_mine.mp3?ex=6a05f6bc&is=6a04a53c&hm=a32948db81f80d202cccab87e5c03942e20646264b99a34c1e8812e4d1cbca39&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1346699330366607400/all_mine.mp3?ex=6a069f7c&is=6a054dfc&hm=69e4adf133cb406ca8b1634058e66c3798e79cc438ef7e57f5f43cd6bbb6dade&'
     size: 1537325
     description: null
 discord_channel_id: '1292220510603575366'
@@ -32,7 +32,7 @@ superseded_by: null
 ## 2025-03-04 (Tuesday)
 
 **22:22 — SHVA:** 
-↳ audio: all_mine.mp3 (1501 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1346699330366607400/all_mine.mp3?ex=6a05f6bc&is=6a04a53c&hm=a32948db81f80d202cccab87e5c03942e20646264b99a34c1e8812e4d1cbca39&
+↳ audio: all_mine.mp3 (1501 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1346699330366607400/all_mine.mp3?ex=6a069f7c&is=6a054dfc&hm=69e4adf133cb406ca8b1634058e66c3798e79cc438ef7e57f5f43cd6bbb6dade&
 
 ## 2025-03-19 (Wednesday)
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.922431+00:00
+ingested_at: 2026-05-14T08:00:19.501477+00:00
 ingest_version: 1
 content_hash: blake2b:def251291c36cf6aff4c2cc0256888d2
-provider_modified_at: 2026-05-13T08:10:49.922431+00:00
+provider_modified_at: 2026-05-14T08:00:19.501477+00:00
 
 title: Stan | Blocksense
 slug: stan-blocksense
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+359 88 828 5916"]
   slack: []
-last_synced: 2026-05-13T08:10:49.922431+00:00
+last_synced: 2026-05-14T08:00:19.501477+00:00
 global: true
 ---
 

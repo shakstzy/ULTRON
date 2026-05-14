@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.718590+00:00
+ingested_at: 2026-05-14T08:00:19.309230+00:00
 ingest_version: 1
 content_hash: blake2b:2e493e2d777fe37551b7a85e9410d0f6
-provider_modified_at: 2026-05-13T08:10:49.718590+00:00
+provider_modified_at: 2026-05-14T08:00:19.309230+00:00
 
 title: Shivani Hinge Austin
 slug: shivani-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13468180031"]
   slack: []
-last_synced: 2026-05-13T08:10:49.718590+00:00
+last_synced: 2026-05-14T08:00:19.309230+00:00
 global: true
 ---
 

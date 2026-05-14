@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.833686+00:00
+ingested_at: 2026-05-14T08:00:19.340851+00:00
 ingest_version: 1
 content_hash: blake2b:53523f5573149cd35c14c21dc6177f01
-provider_modified_at: 2026-05-13T08:10:49.833686+00:00
+provider_modified_at: 2026-05-14T08:00:19.340851+00:00
 
 title: Zedd Craigslist
 slug: zedd-craigslist
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17076204574"]
   slack: []
-last_synced: 2026-05-13T08:10:49.833686+00:00
+last_synced: 2026-05-14T08:00:19.340851+00:00
 global: true
 ---
 

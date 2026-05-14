@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.678693+00:00
+ingested_at: 2026-05-14T08:00:19.272605+00:00
 ingest_version: 1
 content_hash: blake2b:d606f52b7db5bc57409aa0bb100213a9
-provider_modified_at: 2026-05-13T08:10:49.678693+00:00
+provider_modified_at: 2026-05-14T08:00:19.272605+00:00
 
 title: Jason Renter Showing
 slug: jason-renter-showing
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18184824680"]
   slack: []
-last_synced: 2026-05-13T08:10:49.678693+00:00
+last_synced: 2026-05-14T08:00:19.272605+00:00
 global: true
 ---
 

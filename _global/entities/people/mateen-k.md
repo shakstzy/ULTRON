@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.964325+00:00
+ingested_at: 2026-05-14T08:00:19.542400+00:00
 ingest_version: 1
 content_hash: blake2b:e278136f1fdce9d9b4481270c02add2e
-provider_modified_at: 2026-05-13T08:10:49.964325+00:00
+provider_modified_at: 2026-05-14T08:00:19.542400+00:00
 
 title: Mateen K
 slug: mateen-k
@@ -15,7 +15,7 @@ identifiers:
   email: ["mateen@mateenk.com"]
   phone: ["+1 512-584-5136"]
   slack: []
-last_synced: 2026-05-13T08:10:49.964325+00:00
+last_synced: 2026-05-14T08:00:19.542400+00:00
 global: true
 ---
 

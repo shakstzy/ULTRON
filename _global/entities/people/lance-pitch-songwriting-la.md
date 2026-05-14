@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.864805+00:00
+ingested_at: 2026-05-14T08:00:19.413507+00:00
 ingest_version: 1
 content_hash: blake2b:c87e50eac305fef47c89cf20d7eca28e
-provider_modified_at: 2026-05-13T08:10:49.864805+00:00
+provider_modified_at: 2026-05-14T08:00:19.413507+00:00
 
 title: Lance Pitch Songwriting LA
 slug: lance-pitch-songwriting-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 (253) 227-4910"]
   slack: []
-last_synced: 2026-05-13T08:10:49.864805+00:00
+last_synced: 2026-05-14T08:00:19.413507+00:00
 global: true
 ---
 

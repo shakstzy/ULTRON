@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.960783+00:00
+ingested_at: 2026-05-14T08:00:19.539451+00:00
 ingest_version: 1
 content_hash: blake2b:39e000ee872af76746b84c3ab620ab4f
-provider_modified_at: 2026-05-13T08:10:49.960783+00:00
+provider_modified_at: 2026-05-14T08:00:19.539451+00:00
 
 title: Avanija Vedala
 slug: avanija-vedala
@@ -15,7 +15,7 @@ identifiers:
   email: ["vedala.avanija@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.960783+00:00
+last_synced: 2026-05-14T08:00:19.539451+00:00
 global: true
 ---
 

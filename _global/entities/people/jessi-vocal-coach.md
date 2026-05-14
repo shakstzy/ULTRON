@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.879772+00:00
+ingested_at: 2026-05-14T08:00:19.458268+00:00
 ingest_version: 1
 content_hash: blake2b:63a477df1a592e95f8fc73c30cfcfb66
-provider_modified_at: 2026-05-13T08:10:49.879772+00:00
+provider_modified_at: 2026-05-14T08:00:19.458268+00:00
 
 title: Jessi Vocal Coach
 slug: jessi-vocal-coach
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17077995173"]
   slack: []
-last_synced: 2026-05-13T08:10:49.879772+00:00
+last_synced: 2026-05-14T08:00:19.458268+00:00
 global: true
 ---
 

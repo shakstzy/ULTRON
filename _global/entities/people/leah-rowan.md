@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.707483+00:00
+ingested_at: 2026-05-14T08:00:19.298681+00:00
 ingest_version: 1
 content_hash: blake2b:284b9e6a5fc034b0594e13a394dd8c4d
-provider_modified_at: 2026-05-13T08:10:49.707483+00:00
+provider_modified_at: 2026-05-14T08:00:19.298681+00:00
 
 title: Leah Rowan
 slug: leah-rowan
@@ -15,7 +15,7 @@ identifiers:
   email: ["lroserow@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.707483+00:00
+last_synced: 2026-05-14T08:00:19.298681+00:00
 global: true
 ---
 

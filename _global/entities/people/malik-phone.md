@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.888022+00:00
+ingested_at: 2026-05-14T08:00:19.469755+00:00
 ingest_version: 1
 content_hash: blake2b:e378c438ee40ab8d9a7dbf98e3268683
-provider_modified_at: 2026-05-13T08:10:49.888022+00:00
+provider_modified_at: 2026-05-14T08:00:19.469755+00:00
 
 title: Malik Phone
 slug: malik-phone
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19547323133"]
   slack: []
-last_synced: 2026-05-13T08:10:49.888022+00:00
+last_synced: 2026-05-14T08:00:19.469755+00:00
 global: true
 ---
 

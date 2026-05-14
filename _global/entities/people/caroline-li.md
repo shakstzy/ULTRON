@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.859925+00:00
+ingested_at: 2026-05-14T08:00:19.387400+00:00
 ingest_version: 1
 content_hash: blake2b:ce6971e56666dfe3730b822a45bf9983
-provider_modified_at: 2026-05-13T08:10:49.859925+00:00
+provider_modified_at: 2026-05-14T08:00:19.387400+00:00
 
 title: Caroline Li
 slug: caroline-li
@@ -15,7 +15,7 @@ identifiers:
   email: ["caroline.li.atx@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.859925+00:00
+last_synced: 2026-05-14T08:00:19.387400+00:00
 global: true
 ---
 

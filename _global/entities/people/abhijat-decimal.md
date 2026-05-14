@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.890179+00:00
+ingested_at: 2026-05-14T08:00:19.473817+00:00
 ingest_version: 1
 content_hash: blake2b:1df1cb44d8b1537520080b915b9853e6
-provider_modified_at: 2026-05-13T08:10:49.890179+00:00
+provider_modified_at: 2026-05-14T08:00:19.473817+00:00
 
 title: Abhijat | Decimal
 slug: abhijat-decimal
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+91 90752 30424"]
   slack: []
-last_synced: 2026-05-13T08:10:49.890179+00:00
+last_synced: 2026-05-14T08:00:19.473817+00:00
 global: true
 ---
 

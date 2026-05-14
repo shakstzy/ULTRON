@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.913223+00:00
+ingested_at: 2026-05-14T08:00:19.492585+00:00
 ingest_version: 1
 content_hash: blake2b:d3c42ee7e3e028c888bf1b739aaf6db6
-provider_modified_at: 2026-05-13T08:10:49.913223+00:00
+provider_modified_at: 2026-05-14T08:00:19.492585+00:00
 
 title: Marvin Acuna Brandon
 slug: marvin-acuna-brandon
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13103677124"]
   slack: []
-last_synced: 2026-05-13T08:10:49.913223+00:00
+last_synced: 2026-05-14T08:00:19.492585+00:00
 global: true
 ---
 

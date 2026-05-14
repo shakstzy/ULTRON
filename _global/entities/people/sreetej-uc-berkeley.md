@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.965046+00:00
+ingested_at: 2026-05-14T08:00:19.543150+00:00
 ingest_version: 1
 content_hash: blake2b:930f13a72e4e5f1ac998242bdfbc8d6d
-provider_modified_at: 2026-05-13T08:10:49.965046+00:00
+provider_modified_at: 2026-05-14T08:00:19.543150+00:00
 
 title: Sreetej UC Berkeley
 slug: sreetej-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15033192110"]
   slack: []
-last_synced: 2026-05-13T08:10:49.965046+00:00
+last_synced: 2026-05-14T08:00:19.543150+00:00
 global: true
 ---
 

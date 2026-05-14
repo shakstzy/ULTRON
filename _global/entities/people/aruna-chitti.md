@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.948608+00:00
+ingested_at: 2026-05-14T08:00:19.526518+00:00
 ingest_version: 1
 content_hash: blake2b:17ff8d48267b28bffd65502d302b2591
-provider_modified_at: 2026-05-13T08:10:49.948608+00:00
+provider_modified_at: 2026-05-14T08:00:19.526518+00:00
 
 title: Aruna Chitti
 slug: aruna-chitti
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+919940057736"]
   slack: []
-last_synced: 2026-05-13T08:10:49.948608+00:00
+last_synced: 2026-05-14T08:00:19.526518+00:00
 global: true
 ---
 

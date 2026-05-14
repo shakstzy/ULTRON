@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.946844+00:00
+ingested_at: 2026-05-14T08:00:19.524232+00:00
 ingest_version: 1
 content_hash: blake2b:02a7dd52b1fcc5826d07c28e56505936
-provider_modified_at: 2026-05-13T08:10:49.946844+00:00
+provider_modified_at: 2026-05-14T08:00:19.524232+00:00
 
 title: Rapper Writer Dude
 slug: rapper-writer-dude
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(512) 563-0415"]
   slack: []
-last_synced: 2026-05-13T08:10:49.946844+00:00
+last_synced: 2026-05-14T08:00:19.524232+00:00
 global: true
 ---
 

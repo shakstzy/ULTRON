@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.929308+00:00
+ingested_at: 2026-05-14T08:00:19.507799+00:00
 ingest_version: 1
 content_hash: blake2b:bd83f8891bea5b504e148e0d451e3b79
-provider_modified_at: 2026-05-13T08:10:49.929308+00:00
+provider_modified_at: 2026-05-14T08:00:19.507799+00:00
 
 title: Aurat
 slug: aurat
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18313206618"]
   slack: []
-last_synced: 2026-05-13T08:10:49.929308+00:00
+last_synced: 2026-05-14T08:00:19.507799+00:00
 global: true
 ---
 

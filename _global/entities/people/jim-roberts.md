@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.911831+00:00
+ingested_at: 2026-05-14T08:00:19.491194+00:00
 ingest_version: 1
 content_hash: blake2b:a5acd1f2a1e755436b86b1d557792127
-provider_modified_at: 2026-05-13T08:10:49.911831+00:00
+provider_modified_at: 2026-05-14T08:00:19.491194+00:00
 
 title: Jim Roberts
 slug: jim-roberts
@@ -15,7 +15,7 @@ identifiers:
   email: ["jryj92@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.911831+00:00
+last_synced: 2026-05-14T08:00:19.491194+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.964398+00:00
+ingested_at: 2026-05-14T08:00:19.542474+00:00
 ingest_version: 1
 content_hash: blake2b:6f707ec324a73661af7872c553599ad1
-provider_modified_at: 2026-05-13T08:10:49.964398+00:00
+provider_modified_at: 2026-05-14T08:00:19.542474+00:00
 
 title: Veer Stylist LA
 slug: veer-stylist-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13108769131"]
   slack: []
-last_synced: 2026-05-13T08:10:49.964398+00:00
+last_synced: 2026-05-14T08:00:19.542474+00:00
 global: true
 ---
 

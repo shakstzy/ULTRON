@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.929043+00:00
+ingested_at: 2026-05-14T08:00:19.507506+00:00
 ingest_version: 1
 content_hash: blake2b:0fc2a41d9d16b206e7f3edd71ca8509f
-provider_modified_at: 2026-05-13T08:10:49.929043+00:00
+provider_modified_at: 2026-05-14T08:00:19.507506+00:00
 
 title: Shaz | Coinstore
 slug: shaz-coinstore
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.929043+00:00
+last_synced: 2026-05-14T08:00:19.507506+00:00
 global: true
 ---
 

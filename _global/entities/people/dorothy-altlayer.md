@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.833510+00:00
+ingested_at: 2026-05-14T08:00:19.340717+00:00
 ingest_version: 1
 content_hash: blake2b:57b1cfd91ca76b825cc2f3b3157272b6
-provider_modified_at: 2026-05-13T08:10:49.833510+00:00
+provider_modified_at: 2026-05-14T08:00:19.340717+00:00
 
 title: Dorothy | Altlayer
 slug: dorothy-altlayer
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.833510+00:00
+last_synced: 2026-05-14T08:00:19.340717+00:00
 global: true
 ---
 

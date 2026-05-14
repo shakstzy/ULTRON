@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.865977+00:00
+ingested_at: 2026-05-14T08:00:19.414761+00:00
 ingest_version: 1
 content_hash: blake2b:260c3531fcb8c064548241dfb9f22964
-provider_modified_at: 2026-05-13T08:10:49.865977+00:00
+provider_modified_at: 2026-05-14T08:00:19.414761+00:00
 
 title: Abby Hinge Dallas
 slug: abby-hinge-dallas
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18062283959"]
   slack: []
-last_synced: 2026-05-13T08:10:49.865977+00:00
+last_synced: 2026-05-14T08:00:19.414761+00:00
 global: true
 ---
 

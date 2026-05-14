@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.968240+00:00
+ingested_at: 2026-05-14T08:00:19.546844+00:00
 ingest_version: 1
 content_hash: blake2b:a0caaa59c9aedc7a8d1cfe4163dbaf8e
-provider_modified_at: 2026-05-13T08:10:49.968240+00:00
+provider_modified_at: 2026-05-14T08:00:19.546844+00:00
 
 title: Ozzy LASA
 slug: ozzy-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: ["oscaradillon@gmail.com", "OscarADillon@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.968240+00:00
+last_synced: 2026-05-14T08:00:19.546844+00:00
 global: true
 ---
 

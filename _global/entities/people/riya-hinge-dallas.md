@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.954077+00:00
+ingested_at: 2026-05-14T08:00:19.533067+00:00
 ingest_version: 1
 content_hash: blake2b:8a8bca4dd234e28ae74ced8824115515
-provider_modified_at: 2026-05-13T08:10:49.954077+00:00
+provider_modified_at: 2026-05-14T08:00:19.533067+00:00
 
 title: Riya Hinge Dallas
 slug: riya-hinge-dallas
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14695800401"]
   slack: []
-last_synced: 2026-05-13T08:10:49.954077+00:00
+last_synced: 2026-05-14T08:00:19.533067+00:00
 global: true
 ---
 

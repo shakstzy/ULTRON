@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.802639+00:00
+ingested_at: 2026-05-14T08:00:19.324532+00:00
 ingest_version: 1
 content_hash: blake2b:fc17a3848c6d15332e79dfdc3153243c
-provider_modified_at: 2026-05-13T08:10:49.802639+00:00
+provider_modified_at: 2026-05-14T08:00:19.324532+00:00
 
 title: Anirudh
 slug: anirudh
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.802639+00:00
+last_synced: 2026-05-14T08:00:19.324532+00:00
 global: true
 ---
 

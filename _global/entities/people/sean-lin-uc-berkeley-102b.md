@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.695175+00:00
+ingested_at: 2026-05-14T08:00:19.289245+00:00
 ingest_version: 1
 content_hash: blake2b:a4432afcfc0c2dd61e29b7b118de412c
-provider_modified_at: 2026-05-13T08:10:49.695175+00:00
+provider_modified_at: 2026-05-14T08:00:19.289245+00:00
 
 title: Sean Lin UC Berkeley 102B
 slug: sean-lin-uc-berkeley-102b
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19293833060"]
   slack: []
-last_synced: 2026-05-13T08:10:49.695175+00:00
+last_synced: 2026-05-14T08:00:19.289245+00:00
 global: true
 ---
 

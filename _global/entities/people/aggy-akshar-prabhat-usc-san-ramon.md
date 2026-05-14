@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.957296+00:00
+ingested_at: 2026-05-14T08:00:19.536256+00:00
 ingest_version: 1
 content_hash: blake2b:85e17beb3fa272c5041a419659ad9c0d
-provider_modified_at: 2026-05-13T08:10:49.957296+00:00
+provider_modified_at: 2026-05-14T08:00:19.536256+00:00
 
 title: Aggy Akshar Prabhat USC San Ramon
 slug: aggy-akshar-prabhat-usc-san-ramon
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19253441012"]
   slack: []
-last_synced: 2026-05-13T08:10:49.957296+00:00
+last_synced: 2026-05-14T08:00:19.536256+00:00
 global: true
 ---
 

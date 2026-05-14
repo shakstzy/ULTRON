@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.693566+00:00
+ingested_at: 2026-05-14T08:00:19.285149+00:00
 ingest_version: 1
 content_hash: blake2b:6d0d6a98edea342f1653f6d29fcf8e3e
-provider_modified_at: 2026-05-13T08:10:49.693566+00:00
+provider_modified_at: 2026-05-14T08:00:19.285149+00:00
 
 title: Mano Uncle
 slug: mano-uncle
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(638) 330-4846"]
   slack: []
-last_synced: 2026-05-13T08:10:49.693566+00:00
+last_synced: 2026-05-14T08:00:19.285149+00:00
 global: true
 ---
 

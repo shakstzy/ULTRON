@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.821411+00:00
+ingested_at: 2026-05-14T08:00:19.332147+00:00
 ingest_version: 1
 content_hash: blake2b:41bc06308f94fca774d0e93f9e217a09
-provider_modified_at: 2026-05-13T08:10:49.821411+00:00
+provider_modified_at: 2026-05-14T08:00:19.332147+00:00
 
 title: elGenby | Elfomo
 slug: elgenby-elfomo
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.821411+00:00
+last_synced: 2026-05-14T08:00:19.332147+00:00
 global: true
 ---
 

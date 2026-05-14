@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.714887+00:00
+ingested_at: 2026-05-14T08:00:19.305484+00:00
 ingest_version: 1
 content_hash: blake2b:6cbf440d81c17a9ebc437774dd124bf7
-provider_modified_at: 2026-05-13T08:10:49.714887+00:00
+provider_modified_at: 2026-05-14T08:00:19.305484+00:00
 
 title: Shanu | LYNC
 slug: shanu-lync
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+91 88528 20569"]
   slack: []
-last_synced: 2026-05-13T08:10:49.714887+00:00
+last_synced: 2026-05-14T08:00:19.305484+00:00
 global: true
 ---
 

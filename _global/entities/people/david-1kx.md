@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.917519+00:00
+ingested_at: 2026-05-14T08:00:19.497370+00:00
 ingest_version: 1
 content_hash: blake2b:a4d5ee72eb3137445514f0732982816d
-provider_modified_at: 2026-05-13T08:10:49.917519+00:00
+provider_modified_at: 2026-05-14T08:00:19.497370+00:00
 
 title: David | 1kx
 slug: david-1kx
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.917519+00:00
+last_synced: 2026-05-14T08:00:19.497370+00:00
 global: true
 ---
 

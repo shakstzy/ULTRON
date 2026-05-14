@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.705851+00:00
+ingested_at: 2026-05-14T08:00:19.297422+00:00
 ingest_version: 1
 content_hash: blake2b:24eb239e49debbb357ab6842b073989f
-provider_modified_at: 2026-05-13T08:10:49.705851+00:00
+provider_modified_at: 2026-05-14T08:00:19.297422+00:00
 
 title: Alex | BananaCapital
 slug: alex-bananacapital
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.705851+00:00
+last_synced: 2026-05-14T08:00:19.297422+00:00
 global: true
 ---
 

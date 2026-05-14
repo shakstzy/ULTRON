@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.824234+00:00
+ingested_at: 2026-05-14T08:00:19.334566+00:00
 ingest_version: 1
 content_hash: blake2b:d808565dbf73531e1bc4905d168d9fbd
-provider_modified_at: 2026-05-13T08:10:49.824234+00:00
+provider_modified_at: 2026-05-14T08:00:19.334566+00:00
 
 title: Issabelle Great Ideas
 slug: issabelle-great-ideas
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 702-757-5689"]
   slack: []
-last_synced: 2026-05-13T08:10:49.824234+00:00
+last_synced: 2026-05-14T08:00:19.334566+00:00
 global: true
 ---
 

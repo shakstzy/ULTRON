@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.968024+00:00
+ingested_at: 2026-05-14T08:00:19.546582+00:00
 ingest_version: 1
 content_hash: blake2b:8449516020b8b4500c8069a73529b370
-provider_modified_at: 2026-05-13T08:10:49.968024+00:00
+provider_modified_at: 2026-05-14T08:00:19.546582+00:00
 
 title: Austin Davis Renter Showing
 slug: austin-davis-renter-showing
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13103673816"]
   slack: []
-last_synced: 2026-05-13T08:10:49.968024+00:00
+last_synced: 2026-05-14T08:00:19.546582+00:00
 global: true
 ---
 

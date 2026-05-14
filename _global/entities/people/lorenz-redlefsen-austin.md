@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.931290+00:00
+ingested_at: 2026-05-14T08:00:19.509636+00:00
 ingest_version: 1
 content_hash: blake2b:3f10d208f604d4dd0162b0b46d18f6fa
-provider_modified_at: 2026-05-13T08:10:49.931290+00:00
+provider_modified_at: 2026-05-14T08:00:19.509636+00:00
 
 title: Lorenz Redlefsen Austin
 slug: lorenz-redlefsen-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 (650) 575-1974"]
   slack: []
-last_synced: 2026-05-13T08:10:49.931290+00:00
+last_synced: 2026-05-14T08:00:19.509636+00:00
 global: true
 ---
 

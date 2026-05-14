@@ -1,9 +1,9 @@
 ---
 source: discord
 workspace: personal
-ingested_at: '2026-05-13T19:47:39.947Z'
+ingested_at: '2026-05-14T07:42:53.282Z'
 ingest_version: 1
-content_hash: sha256:e70de07712f3a52f773ee9629baa3f05c8a23ef259768e2ffcd2c0e57d34bc8d
+content_hash: sha256:f9b004058089f89e6f715d2f256bf69cd32ee7ba11c4885ece0207aeaf272366
 provider_modified_at: '2025-01-21T02:31:19.906Z'
 contact_slug: shva-shvalockedin
 contact_type: individual
@@ -16,9 +16,9 @@ attachments:
   - message_id: '1325682910149480498'
     kind: image
     filename: image.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1325682909524525066/image.png?ex=6a05f8ab&is=6a04a72b&hm=ec35c70a6e7594ca775258826cbda0ae6f0ee4ab4fa99d0a23ba0a8cbfbc5249&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1325682909524525066/image.png?ex=6a06a16b&is=6a054feb&hm=601a36beddad942829be2812beabd2202f9b60f57df699a24111113e699b67dd&'
     size: 64550
-    description: 'A digital game report screen displaying final scores and statistics for three different players.'
+    description: 'A game report screen showing final scores and rankings for three players.'
 discord_channel_id: '1292220510603575366'
 discord_channel_kind: dm
 discord_recipient_id: '1285363977030729738'
@@ -46,7 +46,7 @@ superseded_by: null
 **21:22 — SHVA:** https://roadtriprivals.com/game/TFYKEB
 **21:51 — SHVA:** https://roadtriprivals.com/game/MUXDNR
 **22:30 — SHVA:** 
-↳ image: image.png (63 KB) — "A digital game report screen displaying final scores and statistics for three different players." — https://cdn.discordapp.com/attachments/1292220510603575366/1325682909524525066/image.png?ex=6a05f8ab&is=6a04a72b&hm=ec35c70a6e7594ca775258826cbda0ae6f0ee4ab4fa99d0a23ba0a8cbfbc5249&
+↳ image: image.png (63 KB) — "A game report screen showing final scores and rankings for three players." — https://cdn.discordapp.com/attachments/1292220510603575366/1325682909524525066/image.png?ex=6a06a16b&is=6a054feb&hm=601a36beddad942829be2812beabd2202f9b60f57df699a24111113e699b67dd&
 **22:31 — me:** https://roadtriprivals.com/game/PYPKYJ
 **22:35 — me:** https://roadtriprivals.com/game/IZTFYE
 **22:35 — SHVA:** https://roadtriprivals.com/game/DTHTQE

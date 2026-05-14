@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.971913+00:00
+ingested_at: 2026-05-14T08:00:19.550872+00:00
 ingest_version: 1
 content_hash: blake2b:1e1a51704bb7ad7638e86de4efaeaff8
-provider_modified_at: 2026-05-13T08:10:49.971913+00:00
+provider_modified_at: 2026-05-14T08:00:19.550872+00:00
 
 title: Q | Trireme
 slug: q-trireme
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.971913+00:00
+last_synced: 2026-05-14T08:00:19.550872+00:00
 global: true
 ---
 

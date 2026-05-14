@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.956445+00:00
+ingested_at: 2026-05-14T08:00:19.535413+00:00
 ingest_version: 1
 content_hash: blake2b:1f94baf7ee37d99c28c9a23be55092e6
-provider_modified_at: 2026-05-13T08:10:49.956445+00:00
+provider_modified_at: 2026-05-14T08:00:19.535413+00:00
 
 title: Nikki Hinge Dallas
 slug: nikki-hinge-dallas
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18326126747"]
   slack: []
-last_synced: 2026-05-13T08:10:49.956445+00:00
+last_synced: 2026-05-14T08:00:19.535413+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.876839+00:00
+ingested_at: 2026-05-14T08:00:19.433143+00:00
 ingest_version: 1
 content_hash: blake2b:329adf38f7a9262afa7e1ee812318a47
-provider_modified_at: 2026-05-13T08:10:49.876839+00:00
+provider_modified_at: 2026-05-14T08:00:19.433143+00:00
 
 title: Armiyah Hinge LA
 slug: armiyah-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18136477978"]
   slack: []
-last_synced: 2026-05-13T08:10:49.876839+00:00
+last_synced: 2026-05-14T08:00:19.433143+00:00
 global: true
 ---
 

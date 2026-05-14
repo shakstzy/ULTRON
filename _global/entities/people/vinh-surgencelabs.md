@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.936838+00:00
+ingested_at: 2026-05-14T08:00:19.515090+00:00
 ingest_version: 1
 content_hash: blake2b:19072a1e1b09ce238399e0c9b5f8c277
-provider_modified_at: 2026-05-13T08:10:49.936838+00:00
+provider_modified_at: 2026-05-14T08:00:19.515090+00:00
 
 title: Vinh | SurgenceLabs
 slug: vinh-surgencelabs
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.936838+00:00
+last_synced: 2026-05-14T08:00:19.515090+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.857302+00:00
+ingested_at: 2026-05-14T08:00:19.385595+00:00
 ingest_version: 1
 content_hash: blake2b:d1595eb2dd2af6f73d6ace5f127a536d
-provider_modified_at: 2026-05-13T08:10:49.857302+00:00
+provider_modified_at: 2026-05-14T08:00:19.385595+00:00
 
 title: Shakthi Cousin Family
 slug: shakthi-cousin-family
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15122931459"]
   slack: []
-last_synced: 2026-05-13T08:10:49.857302+00:00
+last_synced: 2026-05-14T08:00:19.385595+00:00
 global: true
 ---
 

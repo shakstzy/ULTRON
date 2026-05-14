@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.957535+00:00
+ingested_at: 2026-05-14T08:00:19.536474+00:00
 ingest_version: 1
 content_hash: blake2b:acd7de4f198eaa9795f7cc356e29dcd9
-provider_modified_at: 2026-05-13T08:10:49.957535+00:00
+provider_modified_at: 2026-05-14T08:00:19.536474+00:00
 
 title: Anisha Hinge Dallas
 slug: anisha-hinge-dallas
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16509605280"]
   slack: []
-last_synced: 2026-05-13T08:10:49.957535+00:00
+last_synced: 2026-05-14T08:00:19.536474+00:00
 global: true
 ---
 

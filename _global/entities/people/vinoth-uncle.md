@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.953709+00:00
+ingested_at: 2026-05-14T08:00:19.532583+00:00
 ingest_version: 1
 content_hash: blake2b:4bb954ed01109198db9a20cd293265e9
-provider_modified_at: 2026-05-13T08:10:49.953709+00:00
+provider_modified_at: 2026-05-14T08:00:19.532583+00:00
 
 title: Vinoth Uncle
 slug: vinoth-uncle
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15127508650"]
   slack: []
-last_synced: 2026-05-13T08:10:49.953709+00:00
+last_synced: 2026-05-14T08:00:19.532583+00:00
 global: true
 ---
 

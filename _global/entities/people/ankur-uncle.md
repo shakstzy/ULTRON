@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.861596+00:00
+ingested_at: 2026-05-14T08:00:19.388883+00:00
 ingest_version: 1
 content_hash: blake2b:2b533539177fca1b69f4d8b7ca324ac0
-provider_modified_at: 2026-05-13T08:10:49.861596+00:00
+provider_modified_at: 2026-05-14T08:00:19.388883+00:00
 
 title: Ankur Uncle
 slug: ankur-uncle
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["4084258686"]
   slack: []
-last_synced: 2026-05-13T08:10:49.861596+00:00
+last_synced: 2026-05-14T08:00:19.388883+00:00
 global: true
 ---
 

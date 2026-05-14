@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.855817+00:00
+ingested_at: 2026-05-14T08:00:19.384216+00:00
 ingest_version: 1
 content_hash: blake2b:1077d55d7e88b895c8d6951a819afd9d
-provider_modified_at: 2026-05-13T08:10:49.855817+00:00
+provider_modified_at: 2026-05-14T08:00:19.384216+00:00
 
 title: Zeke Dee Limitless Crypto LA Sarah
 slug: zeke-dee-limitless-crypto-la-sarah
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13108809193"]
   slack: []
-last_synced: 2026-05-13T08:10:49.855817+00:00
+last_synced: 2026-05-14T08:00:19.384216+00:00
 global: true
 ---
 

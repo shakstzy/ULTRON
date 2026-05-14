@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.731020+00:00
+ingested_at: 2026-05-14T08:00:19.320792+00:00
 ingest_version: 1
 content_hash: blake2b:edf1fee000948e152669e756e008d22a
-provider_modified_at: 2026-05-13T08:10:49.731020+00:00
+provider_modified_at: 2026-05-14T08:00:19.320792+00:00
 
 title: Laura Weiss
 slug: laura-weiss
@@ -15,7 +15,7 @@ identifiers:
   email: ["laura.weiss@leanderisd.org"]
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.731020+00:00
+last_synced: 2026-05-14T08:00:19.320792+00:00
 global: true
 ---
 

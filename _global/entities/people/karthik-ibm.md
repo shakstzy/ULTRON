@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.704632+00:00
+ingested_at: 2026-05-14T08:00:19.296559+00:00
 ingest_version: 1
 content_hash: blake2b:c2340de96ca280f5ee1144277fd9a645
-provider_modified_at: 2026-05-13T08:10:49.704632+00:00
+provider_modified_at: 2026-05-14T08:00:19.296559+00:00
 
 title: Karthik IBM
 slug: karthik-ibm
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(469) 996-6850"]
   slack: []
-last_synced: 2026-05-13T08:10:49.704632+00:00
+last_synced: 2026-05-14T08:00:19.296559+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.899541+00:00
+ingested_at: 2026-05-14T08:00:19.482938+00:00
 ingest_version: 1
 content_hash: blake2b:182fa4acd8e7b57b821386f5fa06f0fe
-provider_modified_at: 2026-05-13T08:10:49.899541+00:00
+provider_modified_at: 2026-05-14T08:00:19.482938+00:00
 
 title: Joe Ciccarelli
 slug: joe-ciccarelli
@@ -15,7 +15,7 @@ identifiers:
   email: ["joe.ciccarelli@leanderisd.org"]
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.899541+00:00
+last_synced: 2026-05-14T08:00:19.482938+00:00
 global: true
 ---
 

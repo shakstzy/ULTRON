@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.964898+00:00
+ingested_at: 2026-05-14T08:00:19.542993+00:00
 ingest_version: 1
 content_hash: blake2b:db8c4c21acfdb65f58abfa7e654e6bc0
-provider_modified_at: 2026-05-13T08:10:49.964898+00:00
+provider_modified_at: 2026-05-14T08:00:19.542993+00:00
 
 title: Maanav Khaitan UC Berkeley NYC
 slug: maanav-khaitan-uc-berkeley-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: ["maanav@berkeley.edu"]
   phone: ["+91 90008 44767", "+1 510-847-5711"]
   slack: []
-last_synced: 2026-05-13T08:10:49.964898+00:00
+last_synced: 2026-05-14T08:00:19.542993+00:00
 global: true
 ---
 

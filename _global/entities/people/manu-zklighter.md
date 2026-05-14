@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.900388+00:00
+ingested_at: 2026-05-14T08:00:19.483684+00:00
 ingest_version: 1
 content_hash: blake2b:9f82fe46240daad273af5bf23e05218b
-provider_modified_at: 2026-05-13T08:10:49.900388+00:00
+provider_modified_at: 2026-05-14T08:00:19.483684+00:00
 
 title: Manu | ZkLighter
 slug: manu-zklighter
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.900388+00:00
+last_synced: 2026-05-14T08:00:19.483684+00:00
 global: true
 ---
 

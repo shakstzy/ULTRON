@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.865586+00:00
+ingested_at: 2026-05-14T08:00:19.414363+00:00
 ingest_version: 1
 content_hash: blake2b:ef4b04665d4b2d25ec5ad90255523d4a
-provider_modified_at: 2026-05-13T08:10:49.865586+00:00
+provider_modified_at: 2026-05-14T08:00:19.414363+00:00
 
 title: Jae Shervin Blockchain LA
 slug: jae-shervin-blockchain-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12135514979"]
   slack: []
-last_synced: 2026-05-13T08:10:49.865586+00:00
+last_synced: 2026-05-14T08:00:19.414363+00:00
 global: true
 ---
 

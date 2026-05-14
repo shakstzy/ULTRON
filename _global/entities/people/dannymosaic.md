@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.933693+00:00
+ingested_at: 2026-05-14T08:00:19.512021+00:00
 ingest_version: 1
 content_hash: blake2b:08692ef34c628ee8744fe0c90eb7598d
-provider_modified_at: 2026-05-13T08:10:49.933693+00:00
+provider_modified_at: 2026-05-14T08:00:19.512021+00:00
 
 title: DannyMosaic
 slug: dannymosaic
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14076008814"]
   slack: []
-last_synced: 2026-05-13T08:10:49.933693+00:00
+last_synced: 2026-05-14T08:00:19.512021+00:00
 global: true
 ---
 

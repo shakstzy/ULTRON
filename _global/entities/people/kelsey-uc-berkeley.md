@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.915871+00:00
+ingested_at: 2026-05-14T08:00:19.495503+00:00
 ingest_version: 1
 content_hash: blake2b:2720b9808275b338c5eece38ece91217
-provider_modified_at: 2026-05-13T08:10:49.915871+00:00
+provider_modified_at: 2026-05-14T08:00:19.495503+00:00
 
 title: Kelsey UC Berkeley
 slug: kelsey-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 925-818-4505"]
   slack: []
-last_synced: 2026-05-13T08:10:49.915871+00:00
+last_synced: 2026-05-14T08:00:19.495503+00:00
 global: true
 ---
 

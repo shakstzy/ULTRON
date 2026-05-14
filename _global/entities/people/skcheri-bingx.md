@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.951261+00:00
+ingested_at: 2026-05-14T08:00:19.529545+00:00
 ingest_version: 1
 content_hash: blake2b:7391277b2c5ea21642d508804a943557
-provider_modified_at: 2026-05-13T08:10:49.951261+00:00
+provider_modified_at: 2026-05-14T08:00:19.529545+00:00
 
 title: SKCheri | BingX
 slug: skcheri-bingx
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.951261+00:00
+last_synced: 2026-05-14T08:00:19.529545+00:00
 global: true
 ---
 

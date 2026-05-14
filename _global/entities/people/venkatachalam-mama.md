@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.893063+00:00
+ingested_at: 2026-05-14T08:00:19.477289+00:00
 ingest_version: 1
 content_hash: blake2b:cc7016e2d7c08cdb38f64d3810e2f206
-provider_modified_at: 2026-05-13T08:10:49.893063+00:00
+provider_modified_at: 2026-05-14T08:00:19.477289+00:00
 
 title: Venkatachalam Mama
 slug: venkatachalam-mama
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["858-232-6459"]
   slack: []
-last_synced: 2026-05-13T08:10:49.893063+00:00
+last_synced: 2026-05-14T08:00:19.477289+00:00
 global: true
 ---
 

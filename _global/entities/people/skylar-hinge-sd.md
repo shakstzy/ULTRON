@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.881563+00:00
+ingested_at: 2026-05-14T08:00:19.461960+00:00
 ingest_version: 1
 content_hash: blake2b:6519de9cc700654abe86115864b95c1e
-provider_modified_at: 2026-05-13T08:10:49.881563+00:00
+provider_modified_at: 2026-05-14T08:00:19.461960+00:00
 
 title: Skylar Hinge SD
 slug: skylar-hinge-sd
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19253317759"]
   slack: []
-last_synced: 2026-05-13T08:10:49.881563+00:00
+last_synced: 2026-05-14T08:00:19.461960+00:00
 global: true
 ---
 

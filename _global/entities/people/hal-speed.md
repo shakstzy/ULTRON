@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.842735+00:00
+ingested_at: 2026-05-14T08:00:19.346748+00:00
 ingest_version: 1
 content_hash: blake2b:b73bd1621347c6330925051b0faa36da
-provider_modified_at: 2026-05-13T08:10:49.842735+00:00
+provider_modified_at: 2026-05-14T08:00:19.346748+00:00
 
 title: Hal Speed
 slug: hal-speed
@@ -15,7 +15,7 @@ identifiers:
   email: ["hal@halspeed.com"]
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.842735+00:00
+last_synced: 2026-05-14T08:00:19.346748+00:00
 global: true
 ---
 

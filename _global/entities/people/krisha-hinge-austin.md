@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.723676+00:00
+ingested_at: 2026-05-14T08:00:19.313600+00:00
 ingest_version: 1
 content_hash: blake2b:caa0b8261021368087d37c6f4662715b
-provider_modified_at: 2026-05-13T08:10:49.723676+00:00
+provider_modified_at: 2026-05-14T08:00:19.313600+00:00
 
 title: Krisha Hinge Austin
 slug: krisha-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15127090392"]
   slack: []
-last_synced: 2026-05-13T08:10:49.723676+00:00
+last_synced: 2026-05-14T08:00:19.313600+00:00
 global: true
 ---
 

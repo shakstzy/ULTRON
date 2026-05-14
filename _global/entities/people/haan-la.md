@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.934840+00:00
+ingested_at: 2026-05-14T08:00:19.513177+00:00
 ingest_version: 1
 content_hash: blake2b:078b99f8f116f309415b7067f007f555
-provider_modified_at: 2026-05-13T08:10:49.934840+00:00
+provider_modified_at: 2026-05-14T08:00:19.513177+00:00
 
 title: Haan LA
 slug: haan-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 747-275-3223"]
   slack: []
-last_synced: 2026-05-13T08:10:49.934840+00:00
+last_synced: 2026-05-14T08:00:19.513177+00:00
 global: true
 ---
 

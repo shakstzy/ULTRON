@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.937327+00:00
+ingested_at: 2026-05-14T08:00:19.515545+00:00
 ingest_version: 1
 content_hash: blake2b:bc1f7a7370cc7fd49711381b48909a8e
-provider_modified_at: 2026-05-13T08:10:49.937327+00:00
+provider_modified_at: 2026-05-14T08:00:19.515545+00:00
 
 title: Sylvain | IC3
 slug: sylvain-ic3
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.937327+00:00
+last_synced: 2026-05-14T08:00:19.515545+00:00
 global: true
 ---
 

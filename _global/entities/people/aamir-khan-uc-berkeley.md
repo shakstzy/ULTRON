@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.867303+00:00
+ingested_at: 2026-05-14T08:00:19.416184+00:00
 ingest_version: 1
 content_hash: blake2b:080797f9f884fc6862f2357317a4f75e
-provider_modified_at: 2026-05-13T08:10:49.867303+00:00
+provider_modified_at: 2026-05-14T08:00:19.416184+00:00
 
 title: Aamir Khan UC Berkeley
 slug: aamir-khan-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(404) 747-7188"]
   slack: []
-last_synced: 2026-05-13T08:10:49.867303+00:00
+last_synced: 2026-05-14T08:00:19.416184+00:00
 global: true
 ---
 

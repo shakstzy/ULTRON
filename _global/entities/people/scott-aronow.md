@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.843506+00:00
+ingested_at: 2026-05-14T08:00:19.347475+00:00
 ingest_version: 1
 content_hash: blake2b:003846888a3513393b3e165cbda99e09
-provider_modified_at: 2026-05-13T08:10:49.843506+00:00
+provider_modified_at: 2026-05-14T08:00:19.347475+00:00
 
 title: Scott Aronow
 slug: scott-aronow
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 215-932-0574"]
   slack: []
-last_synced: 2026-05-13T08:10:49.843506+00:00
+last_synced: 2026-05-14T08:00:19.347475+00:00
 global: true
 ---
 

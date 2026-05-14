@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.823580+00:00
+ingested_at: 2026-05-14T08:00:19.333996+00:00
 ingest_version: 1
 content_hash: blake2b:249ed49ace9f511031a2010c71efda66
-provider_modified_at: 2026-05-13T08:10:49.823580+00:00
+provider_modified_at: 2026-05-14T08:00:19.333996+00:00
 
 title: Alex Mancevski LASA
 slug: alex-mancevski-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: ["alexgmancevski@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.823580+00:00
+last_synced: 2026-05-14T08:00:19.333996+00:00
 global: true
 ---
 

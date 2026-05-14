@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.942686+00:00
+ingested_at: 2026-05-14T08:00:19.520432+00:00
 ingest_version: 1
 content_hash: blake2b:857b7814ca47c78710ff44a3b0e5ee74
-provider_modified_at: 2026-05-13T08:10:49.942686+00:00
+provider_modified_at: 2026-05-14T08:00:19.520432+00:00
 
 title: Kelvin Liu Uncle
 slug: kelvin-liu-uncle
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16509069689"]
   slack: []
-last_synced: 2026-05-13T08:10:49.942686+00:00
+last_synced: 2026-05-14T08:00:19.520432+00:00
 global: true
 ---
 

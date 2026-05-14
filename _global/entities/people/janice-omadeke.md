@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.971035+00:00
+ingested_at: 2026-05-14T08:00:19.549723+00:00
 ingest_version: 1
 content_hash: blake2b:d525c62ca26af0a5126cb2c10090c426
-provider_modified_at: 2026-05-13T08:10:49.971035+00:00
+provider_modified_at: 2026-05-14T08:00:19.549723+00:00
 
 title: Janice Omadeke
 slug: janice-omadeke
@@ -15,7 +15,7 @@ identifiers:
   email: ["janice@thementormethod.com"]
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.971035+00:00
+last_synced: 2026-05-14T08:00:19.549723+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.903791+00:00
+ingested_at: 2026-05-14T08:00:19.486121+00:00
 ingest_version: 1
 content_hash: blake2b:5ef4bf62bda5e0a8a2557256a591cf03
-provider_modified_at: 2026-05-13T08:10:49.903791+00:00
+provider_modified_at: 2026-05-14T08:00:19.486121+00:00
 
 title: Milla
 slug: milla
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(929) 366-7453"]
   slack: []
-last_synced: 2026-05-13T08:10:49.903791+00:00
+last_synced: 2026-05-14T08:00:19.486121+00:00
 global: true
 ---
 

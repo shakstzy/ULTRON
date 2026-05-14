@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-13T08:10:49.873428+00:00
+ingested_at: 2026-05-14T08:00:19.422657+00:00
 ingest_version: 1
 content_hash: blake2b:a2a5dd53435e622d911ad5d3b6aa1687
-provider_modified_at: 2026-05-13T08:10:49.873428+00:00
+provider_modified_at: 2026-05-14T08:00:19.422657+00:00
 
 title: Swaroop | Pi
 slug: swaroop-pi
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-13T08:10:49.873428+00:00
+last_synced: 2026-05-14T08:00:19.422657+00:00
 global: true
 ---
 

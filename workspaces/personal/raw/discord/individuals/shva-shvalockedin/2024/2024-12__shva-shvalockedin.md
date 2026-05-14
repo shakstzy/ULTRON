@@ -1,9 +1,9 @@
 ---
 source: discord
 workspace: personal
-ingested_at: '2026-05-13T19:23:23.124Z'
+ingested_at: '2026-05-14T07:16:40.378Z'
 ingest_version: 1
-content_hash: sha256:ae26cd13245a8de30dc580b82c27c4aca360fdb3bc3c68d08c929f33a0ce22c9
+content_hash: sha256:033e4bf4c4b0157cf14c8de029c7200039397f4d1ff8d7998e39605e066ffc56
 provider_modified_at: '2024-12-31T05:45:19.975Z'
 contact_slug: shva-shvalockedin
 contact_type: individual
@@ -16,27 +16,27 @@ attachments:
   - message_id: '1313327990557511690'
     kind: image
     filename: image.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313327990255386624/image.png?ex=6a05d941&is=6a0487c1&hm=343aa9c520bae75ebbb35d31fa200905fe69dfbe4b7dea6364529f55c72f5c45&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313327990255386624/image.png?ex=6a068201&is=6a053081&hm=1370e242c725262e10c67503538ee45eaa4afd853eb7aae2fb768ab8c05117aa&'
     size: 60856
-    description: 'A dark interface showing a white warning triangle icon followed by the word TRANSITIONING in capital letters.'
+    description: 'A dark interface displays a white warning triangle next to the word TRANSITIONING... in capital letters.'
   - message_id: '1313328114029301795'
     kind: image
     filename: image.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313328113727442964/image.png?ex=6a05d95e&is=6a0487de&hm=56bf1638ad094dc1ae7c2fd50aa7856d480f6e6c155cc251d42d4def1e09b019&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313328113727442964/image.png?ex=6a06821e&is=6a05309e&hm=3d8e1b2e85da0c6e7e9c47b0d38301df01c875a081608f0927b15dc3dd4ff555&'
     size: 1574303
-    description: 'A video game screen showing an armored character and a message stating multiplayer is unavailable.'
+    description: 'A video game menu shows an armored character and a message indicating that multiplayer is unavailable.'
   - message_id: '1313680295513292821'
     kind: image
     filename: redirectFileUrl.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313680294846664764/redirectFileUrl.png?ex=6a05cfdd&is=6a047e5d&hm=909009c17156ff5ec472ac037b7f61bf825e21f3e92254628e30f4458ed60ce5&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313680294846664764/redirectFileUrl.png?ex=6a06789d&is=6a05271d&hm=53644471f11772991bdef7bf23663df8a9c4022cca33d9589618c97a9b6bccda&'
     size: 1423629
-    description: 'A black hoodie with large white VOLTREX text across the chest rests on a flat surface.'
+    description: 'A black hoodie featuring the word VOLTREX in white letters lies flat on a table.'
   - message_id: '1313680310344351827'
     kind: image
     filename: redirectFileUrl.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313680309992165376/redirectFileUrl.png?ex=6a05cfe0&is=6a047e60&hm=004329b6662ef74a12d79b6786ddf067578ac0768fe9f04d0166b0cc18396096&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313680309992165376/redirectFileUrl.png?ex=6a0678a0&is=6a052720&hm=d00970b0ce9febaa24467d9dd0ff6162d08a37666bacf138e2a9ea3c97c65278&'
     size: 1432011
-    description: 'A black hoodie laid flat displays large wavy white text on the back.'
+    description: 'A black hoodie with large wavy white text on the back lies flat on a table.'
 discord_channel_id: '1292220510603575366'
 discord_channel_kind: dm
 discord_recipient_id: '1285363977030729738'
@@ -50,17 +50,17 @@ superseded_by: null
 ## 2024-12-02 (Monday)
 
 **20:16 — me:** 
-↳ image: image.png (59 KB) — "A dark interface showing a white warning triangle icon followed by the word TRANSITIONING in capital letters." — https://cdn.discordapp.com/attachments/1292220510603575366/1313327990255386624/image.png?ex=6a05d941&is=6a0487c1&hm=343aa9c520bae75ebbb35d31fa200905fe69dfbe4b7dea6364529f55c72f5c45&
+↳ image: image.png (59 KB) — "A dark interface displays a white warning triangle next to the word TRANSITIONING... in capital letters." — https://cdn.discordapp.com/attachments/1292220510603575366/1313327990255386624/image.png?ex=6a068201&is=6a053081&hm=1370e242c725262e10c67503538ee45eaa4afd853eb7aae2fb768ab8c05117aa&
 **20:17 — me:** 
-↳ image: image.png (1537 KB) — "A video game screen showing an armored character and a message stating multiplayer is unavailable." — https://cdn.discordapp.com/attachments/1292220510603575366/1313328113727442964/image.png?ex=6a05d95e&is=6a0487de&hm=56bf1638ad094dc1ae7c2fd50aa7856d480f6e6c155cc251d42d4def1e09b019&
+↳ image: image.png (1537 KB) — "A video game menu shows an armored character and a message indicating that multiplayer is unavailable." — https://cdn.discordapp.com/attachments/1292220510603575366/1313328113727442964/image.png?ex=6a06821e&is=6a05309e&hm=3d8e1b2e85da0c6e7e9c47b0d38301df01c875a081608f0927b15dc3dd4ff555&
 
 ## 2024-12-03 (Tuesday)
 
 **19:32 — SHVA:** ↳ replying to SHVA ("(no text)"): **
 **19:36 — SHVA:** 
-↳ image: redirectFileUrl.png (1390 KB) — "A black hoodie with large white VOLTREX text across the chest rests on a flat surface." — https://cdn.discordapp.com/attachments/1292220510603575366/1313680294846664764/redirectFileUrl.png?ex=6a05cfdd&is=6a047e5d&hm=909009c17156ff5ec472ac037b7f61bf825e21f3e92254628e30f4458ed60ce5&
+↳ image: redirectFileUrl.png (1390 KB) — "A black hoodie featuring the word VOLTREX in white letters lies flat on a table." — https://cdn.discordapp.com/attachments/1292220510603575366/1313680294846664764/redirectFileUrl.png?ex=6a06789d&is=6a05271d&hm=53644471f11772991bdef7bf23663df8a9c4022cca33d9589618c97a9b6bccda&
 **19:36 — SHVA:** 
-↳ image: redirectFileUrl.png (1398 KB) — "A black hoodie laid flat displays large wavy white text on the back." — https://cdn.discordapp.com/attachments/1292220510603575366/1313680309992165376/redirectFileUrl.png?ex=6a05cfe0&is=6a047e60&hm=004329b6662ef74a12d79b6786ddf067578ac0768fe9f04d0166b0cc18396096&
+↳ image: redirectFileUrl.png (1398 KB) — "A black hoodie with large wavy white text on the back lies flat on a table." — https://cdn.discordapp.com/attachments/1292220510603575366/1313680309992165376/redirectFileUrl.png?ex=6a0678a0&is=6a052720&hm=d00970b0ce9febaa24467d9dd0ff6162d08a37666bacf138e2a9ea3c97c65278&
 
 ## 2024-12-07 (Saturday)
 

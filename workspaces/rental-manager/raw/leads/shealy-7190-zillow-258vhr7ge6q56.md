@@ -83,3 +83,7 @@ I can't do 1:30 tomorrow. I've got a spot open at 10 am though. Does that work f
 ### 2026-05-13T01:14:01.000Z - Shealy Cardona
 
 or thursday?
+
+### 2026-05-14T00:45:49.764Z - Owner (Adithya)
+
+10 am tomorrow is booked. I can do Thursday at 2 pm or Friday at 2 pm. Do either of those work for you?

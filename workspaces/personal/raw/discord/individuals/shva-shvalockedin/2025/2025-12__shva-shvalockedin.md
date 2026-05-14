@@ -1,9 +1,9 @@
 ---
 source: discord
 workspace: personal
-ingested_at: '2026-05-13T14:02:25.062Z'
+ingested_at: '2026-05-14T00:45:52.991Z'
 ingest_version: 1
-content_hash: sha256:b6ff6a0dfe4d337474780b20592f282ee4ddb9aa224e94147f2edaa7082cb255
+content_hash: sha256:b5c994b6d4de76c25f423ef1a130794749d9d17ca6b0ab9e374340d90feeec33
 provider_modified_at: '2025-12-25T20:54:17.659Z'
 contact_slug: shva-shvalockedin
 contact_type: individual
@@ -16,15 +16,15 @@ attachments:
   - message_id: '1445450955230543983'
     kind: image
     filename: image.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1445450954907320420/image.png?ex=6a054eda&is=6a03fd5a&hm=78a8bc92dc22c4bb13687074a040ef2a51a1fae3c61287aef2540d53b37d5631&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1445450954907320420/image.png?ex=6a05f79a&is=6a04a61a&hm=1e9331c873976a7a42d2410e42d3f56e55d9a6a377f900ab0fdff4974caa1cca&'
     size: 40790
-    description: 'A digital message congratulating user SHVATrades on becoming a Topstep Funded Trader.'
+    description: 'An email congratulating SHVATrades on becoming a Topstep Funded Trader.'
   - message_id: '1446060760261328967'
     kind: image
     filename: image.png
     url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1446060760114532454/image.png?ex=6a058c87&is=6a043b07&hm=ab5b968db49197c93efa0b20ccbd0c1cb64064e5e6f923903a8ad21325df873e&'
     size: 22777
-    description: 'A digital interface for the channel shvatrades showing 11 subscribers, a notification bell, and 11 likes.'
+    description: 'A dark interface shows the channel shvatrades with 11 subscribers and a thumbs up button with 11 likes.'
   - message_id: '1453853382421778597'
     kind: file
     filename: message.txt
@@ -44,7 +44,7 @@ superseded_by: null
 ## 2025-12-02 (Tuesday)
 
 **10:26 — SHVA:** 
-↳ image: image.png (40 KB) — "A digital message congratulating user SHVATrades on becoming a Topstep Funded Trader." — https://cdn.discordapp.com/attachments/1292220510603575366/1445450954907320420/image.png?ex=6a054eda&is=6a03fd5a&hm=78a8bc92dc22c4bb13687074a040ef2a51a1fae3c61287aef2540d53b37d5631&
+↳ image: image.png (40 KB) — "An email congratulating SHVATrades on becoming a Topstep Funded Trader." — https://cdn.discordapp.com/attachments/1292220510603575366/1445450954907320420/image.png?ex=6a05f79a&is=6a04a61a&hm=1e9331c873976a7a42d2410e42d3f56e55d9a6a377f900ab0fdff4974caa1cca&
 **10:26 — SHVA:** ts nuts
 **10:57 — me:** Fire bruh congrats man
 **10:57 — me:** This is heat
@@ -57,7 +57,7 @@ superseded_by: null
 **00:04 — SHVA:** https://www.youtube.com/watch?v=B9vC8p9CngU&feature=youtu.be
 **02:47 — me:** this fire
 **02:49 — me:** boay got double digit subs now
-↳ image: image.png (22 KB) — "A digital interface for the channel shvatrades showing 11 subscribers, a notification bell, and 11 likes." — https://cdn.discordapp.com/attachments/1292220510603575366/1446060760114532454/image.png?ex=6a058c87&is=6a043b07&hm=ab5b968db49197c93efa0b20ccbd0c1cb64064e5e6f923903a8ad21325df873e&
+↳ image: image.png (22 KB) — "A dark interface shows the channel shvatrades with 11 subscribers and a thumbs up button with 11 likes." — https://cdn.discordapp.com/attachments/1292220510603575366/1446060760114532454/image.png?ex=6a058c87&is=6a043b07&hm=ab5b968db49197c93efa0b20ccbd0c1cb64064e5e6f923903a8ad21325df873e&
 
 ## 2025-12-08 (Monday)
 

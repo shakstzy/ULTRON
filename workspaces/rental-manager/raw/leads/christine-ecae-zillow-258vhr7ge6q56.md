@@ -82,3 +82,7 @@ I hear you, but I can't make exceptions for the background check. I'm booked thi
 ### 2026-05-12T22:21:55.000Z - xtian hdz
 
 I'm sorry no. Thank you anyway- Have a good day
+
+### 2026-05-14T00:47:42.045Z - Owner (Adithya)
+
+No worries. If you change your mind, I can show you the place Thursday at 2 PM, Friday at 2 PM, or Saturday at 5 PM Central. Let me know if one of those works.

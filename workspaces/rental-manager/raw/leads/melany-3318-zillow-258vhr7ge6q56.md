@@ -98,3 +98,7 @@ June works perfectly. I'll text you Thursday at 2.
 ### 2026-05-13T07:17:02.000Z - Melany Alvizures
 
 Sounds good thank you
+
+### 2026-05-14T00:47:23.022Z - Owner (Adithya)
+
+Sounds good. Just confirming Thursday at 2 PM still works best for you. I also have Friday at 2 PM or Saturday at 5 PM open. Let me know which one works.

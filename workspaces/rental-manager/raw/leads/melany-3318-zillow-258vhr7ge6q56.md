@@ -8,7 +8,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: gmail-19e0852073bd3318
 status_label: INQUIRED
-last_pulled_at: "2026-05-13T14:01:15.149Z"
+last_pulled_at: "2026-05-14T14:08:33.757Z"
 ---
 
 # Melany
@@ -99,6 +99,18 @@ June works perfectly. I'll text you Thursday at 2.
 
 Sounds good thank you
 
-### 2026-05-14T00:47:23.022Z - Owner (Adithya)
+### 2026-05-14T00:47:22.000Z - Owner (Adithya)
 
 Sounds good. Just confirming Thursday at 2 PM still works best for you. I also have Friday at 2 PM or Saturday at 5 PM open. Let me know which one works.
+
+### 2026-05-14T00:53:45.000Z - Melany Alvizures
+
+Thursday at 2 is still good
+
+### 2026-05-14T00:54:34.000Z - Melany Alvizures
+
+I do have another viewing at 12 before hand but shouldn’t take long
+
+### 2026-05-14T01:48:05.000Z - Melany Alvizures
+
+Is there any way to do maybe 12 and I’ll switch my other viewing if possible?

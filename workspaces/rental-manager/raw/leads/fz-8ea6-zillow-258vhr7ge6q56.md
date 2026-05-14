@@ -8,7 +8,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: gmail-19e0184bcd318ea6
 status_label: INQUIRED
-last_pulled_at: "2026-05-13T14:01:15.768Z"
+last_pulled_at: "2026-05-14T14:08:36.076Z"
 ---
 
 # Fz
@@ -71,6 +71,6 @@ Tuesday I only have 10 AM open. If that doesn't work I can do Wednesday at 2 PM 
 
 What about next week
 
-### 2026-05-13T16:21:00.369Z - Owner (Adithya)
+### 2026-05-13T16:20:59.000Z - Owner (Adithya)
 
 I don't have next week mapped out yet. I can do this Thursday at 10 AM, Friday at 2 PM, or Saturday at 5 PM. Let me know if one of those works.

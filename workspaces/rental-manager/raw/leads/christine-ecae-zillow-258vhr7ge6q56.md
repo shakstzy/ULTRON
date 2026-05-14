@@ -8,7 +8,7 @@ listing_alias: 258vhr7ge6q56
 listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: gmail-19e0a1b0faefecae
 status_label: INQUIRED
-last_pulled_at: "2026-05-13T14:01:16.837Z"
+last_pulled_at: "2026-05-14T14:08:36.657Z"
 ---
 
 # christine
@@ -83,6 +83,6 @@ I hear you, but I can't make exceptions for the background check. I'm booked thi
 
 I'm sorry no. Thank you anyway- Have a good day
 
-### 2026-05-14T00:47:42.045Z - Owner (Adithya)
+### 2026-05-14T00:47:41.000Z - Owner (Adithya)
 
 No worries. If you change your mind, I can show you the place Thursday at 2 PM, Friday at 2 PM, or Saturday at 5 PM Central. Let me know if one of those works.

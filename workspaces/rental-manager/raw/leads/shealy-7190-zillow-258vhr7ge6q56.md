@@ -10,7 +10,7 @@ listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 1437876304138345868
 status_label: TOUR REQUESTED
 renter_us_state: CA
-last_pulled_at: "2026-05-13T14:01:16.274Z"
+last_pulled_at: "2026-05-14T14:08:33.163Z"
 ---
 
 # Shealy
@@ -84,6 +84,10 @@ I can't do 1:30 tomorrow. I've got a spot open at 10 am though. Does that work f
 
 or thursday?
 
-### 2026-05-14T00:45:49.764Z - Owner (Adithya)
+### 2026-05-14T00:45:48.000Z - Owner (Adithya)
 
 10 am tomorrow is booked. I can do Thursday at 2 pm or Friday at 2 pm. Do either of those work for you?
+
+### 2026-05-14T12:44:37.000Z - Shealy Cardona
+
+i can friday, is it possible to do it like at 1:30? i go into work at 2:30

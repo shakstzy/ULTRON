@@ -10,7 +10,7 @@ listing_address: "13245 Klein Ct, Sylmar, CA 91342"
 conversation_id: 6429606784788879790
 status_label: INQUIRED
 renter_us_state: CA
-last_pulled_at: "2026-05-13T14:01:17.469Z"
+last_pulled_at: "2026-05-14T14:08:35.480Z"
 ---
 
 # Kensey
@@ -85,3 +85,7 @@ If I am able to schedule the showing tomorrow at 10am… could I send someone on
 ### 2026-05-12T22:01:54.000Z - Owner (Adithya)
 
 yeah your dad can go for you. my schedule actually shifted so i have 11:30 am open tomorrow instead of 10. does that work for him?
+
+### 2026-05-13T14:21:15.000Z - kanaiisl7
+
+Good morning, I do apologize about the delay. My dad never confirmed about the tour for today. Could we schedule for may 23 around 11:45?

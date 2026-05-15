@@ -1,9 +1,9 @@
 ---
 source: discord
 workspace: personal
-ingested_at: '2026-05-15T17:03:12.816Z'
+ingested_at: '2026-05-15T23:04:52.995Z'
 ingest_version: 1
-content_hash: sha256:013d75666002973f7a5cfe6748df9fe71f073167dabb995668240bcde8253f06
+content_hash: sha256:394a9043376f7ace8f029d8bf9ef53570800ae4c2e99d9292aca03d4feac0a45
 provider_modified_at: '2025-07-31T22:25:52.013Z'
 contact_slug: shva-shvalockedin
 contact_type: individual
@@ -90,7 +90,7 @@ attachments:
     filename: LUV02772.jpg
     url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394848538856521850/LUV02772.jpg?ex=6a086cae&is=6a071b2e&hm=233c949f454ef0f59f509846fe1d3168097d4ac7bcf9832d97ae14ca42e97716&'
     size: 691539
-    description: 'A smiling young man wearing a grey suit jacket, black shirt, and blue patterned tie.'
+    description: 'A smiling man wears a grey suit, black shirt, and blue patterned tie against a plain background.'
   - message_id: '1394872553620635784'
     kind: file
     filename: board_-_resized_-_hopefully_final_Autosaved.pptx
@@ -112,27 +112,27 @@ attachments:
   - message_id: '1399469357578457228'
     kind: image
     filename: image.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1399469357330862260/image.png?ex=6a0818a7&is=6a06c727&hm=bc21128f0732df15765216807f539bb073353f995887bb7a0e28d944218d6eab&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1399469357330862260/image.png?ex=6a08c167&is=6a076fe7&hm=f501f11d8467b60a46df16870dafcd038503ff86671cdff9129b06b2e8033330&'
     size: 239423
-    description: 'A digital database table lists university names and intended majors for tracking college applications.'
+    description: 'A digital table lists several university applications along with their targeted majors and programs.'
   - message_id: '1399471380373966987'
     kind: image
     filename: Screenshot_20250728_141931_Notion.jpg
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1399471380042612817/Screenshot_20250728_141931_Notion.jpg?ex=6a081a89&is=6a06c909&hm=5fcd8e41b2675811eb2f5b68ba2182957cd66848762bf7df3b397f703f70c9f7&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1399471380042612817/Screenshot_20250728_141931_Notion.jpg?ex=6a08c349&is=6a0771c9&hm=a4430168d27911887cadf739a6a4af79f884912fceb8e9b3e7864a82032f5023&'
     size: 155717
-    description: 'A screenshot of a mobile note displays college application links, login credentials, and a to-do list for essays.'
+    description: 'A mobile phone screenshot displaying college application links, login credentials, and a task list.'
   - message_id: '1400605411169669220'
     kind: image
     filename: image.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1400605410511159336/image.png?ex=6a08462f&is=6a06f4af&hm=a076a2e538499624ea6bc9ef7e6d9091b0c5f92d363bb3c0a67fbca8b68f484d&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1400605410511159336/image.png?ex=6a08eeef&is=6a079d6f&hm=3b6a44821ecb1a8d193e2a5a9fd85fcfb67416657310b0e7e24d464e23818f81&'
     size: 93110
-    description: 'A spreadsheet tracking high school volunteer and community service activities, including descriptions and hours.'
+    description: 'A spreadsheet logging high school volunteer and community service activities, accomplishments, and hours spent.'
   - message_id: '1400605411169669220'
     kind: image
     filename: image.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1400605410939113502/image.png?ex=6a08462f&is=6a06f4af&hm=927a3019debd41455b53ccdb6eb78919ffd05c4fbfc0ccce9f07328562a5d11f&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1400605410939113502/image.png?ex=6a08eeef&is=6a079d6f&hm=5f9312a4aff1ada6ecff48f329b0f8c1d727eff06926795910c27f377f4e4c7a&'
     size: 34200
-    description: 'A table listing work experience details for a private piano instructor and a Web3 consulting intern.'
+    description: 'A partial view of a spreadsheet showing job descriptions, character counts, and checkbox columns.'
 discord_channel_id: '1292220510603575366'
 discord_channel_kind: dm
 discord_recipient_id: '1285363977030729738'
@@ -187,7 +187,7 @@ https://docs.google.com/spreadsheets/d/1ELlPFYlqwDvYQdshOJR-H1Tks3TfnbR5iILpshD2
 
 **20:07 — SHVA:** https://austinscience.org/secondary/awards
 **20:10 — SHVA:** 
-↳ image: LUV02772.jpg (675 KB) — "A smiling young man wearing a grey suit jacket, black shirt, and blue patterned tie." — https://cdn.discordapp.com/attachments/1292220510603575366/1394848538856521850/LUV02772.jpg?ex=6a086cae&is=6a071b2e&hm=233c949f454ef0f59f509846fe1d3168097d4ac7bcf9832d97ae14ca42e97716&
+↳ image: LUV02772.jpg (675 KB) — "A smiling man wears a grey suit, black shirt, and blue patterned tie against a plain background." — https://cdn.discordapp.com/attachments/1292220510603575366/1394848538856521850/LUV02772.jpg?ex=6a086cae&is=6a071b2e&hm=233c949f454ef0f59f509846fe1d3168097d4ac7bcf9832d97ae14ca42e97716&
 **21:45 — me:** 
 ↳ file: board_-_resized_-_hopefully_final_Autosaved.pptx (1478 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394872552509407283/board_-_resized_-_hopefully_final_Autosaved.pptx?ex=6a08830b&is=6a07318b&hm=71143649b0833d7f3c77c54c489d42992ff5c2bf839c757c0e80c942c99080bd&
 ↳ file: Gaia_Glove_Patent_Specifications.docx (2101 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394872552874180688/Gaia_Glove_Patent_Specifications.docx?ex=6a08830c&is=6a07318c&hm=0d32707b46ef50e06187783271f2961f6e99e615bd0dd86132550fabf8e8fda6&
@@ -205,10 +205,10 @@ https://docs.google.com/spreadsheets/d/1ELlPFYlqwDvYQdshOJR-H1Tks3TfnbR5iILpshD2
 **14:11 — me:** and the tamu
 **14:11 — me:** and utd supplementals
 **14:11 — me:** where are those
-↳ image: image.png (234 KB) — "A digital database table lists university names and intended majors for tracking college applications." — https://cdn.discordapp.com/attachments/1292220510603575366/1399469357330862260/image.png?ex=6a0818a7&is=6a06c727&hm=bc21128f0732df15765216807f539bb073353f995887bb7a0e28d944218d6eab&
+↳ image: image.png (234 KB) — "A digital table lists several university applications along with their targeted majors and programs." — https://cdn.discordapp.com/attachments/1292220510603575366/1399469357330862260/image.png?ex=6a08c167&is=6a076fe7&hm=f501f11d8467b60a46df16870dafcd038503ff86671cdff9129b06b2e8033330&
 **14:19 — SHVA:** All on the main page
 **14:19 — SHVA:** 
-↳ image: Screenshot_20250728_141931_Notion.jpg (152 KB) — "A screenshot of a mobile note displays college application links, login credentials, and a to-do list for essays." — https://cdn.discordapp.com/attachments/1292220510603575366/1399471380042612817/Screenshot_20250728_141931_Notion.jpg?ex=6a081a89&is=6a06c909&hm=5fcd8e41b2675811eb2f5b68ba2182957cd66848762bf7df3b397f703f70c9f7&
+↳ image: Screenshot_20250728_141931_Notion.jpg (152 KB) — "A mobile phone screenshot displaying college application links, login credentials, and a task list." — https://cdn.discordapp.com/attachments/1292220510603575366/1399471380042612817/Screenshot_20250728_141931_Notion.jpg?ex=6a08c349&is=6a0771c9&hm=a4430168d27911887cadf739a6a4af79f884912fceb8e9b3e7864a82032f5023&
 **14:19 — SHVA:** My b didn't link it to the other sheet
 **14:29 — me:** Aight Fsfs
 
@@ -230,5 +230,5 @@ Activity list Wrap up
 5. Honors/ COVID 19 section: https://docs.google.com/document/d/1smznRDRAjfWRSeOL0yLBcUeIrva48CPlya_b6HYvDpo/edit?usp=sharing
 also I think it might be useful adding in the cap things I put for community in the UC activity list to the resume as I dont have too many community related activities lowk maybe to the actual activity list if they can be scaled up here they are as well:
 **17:25 — SHVA:** also more work experience things
-↳ image: image.png (91 KB) — "A spreadsheet tracking high school volunteer and community service activities, including descriptions and hours." — https://cdn.discordapp.com/attachments/1292220510603575366/1400605410511159336/image.png?ex=6a08462f&is=6a06f4af&hm=a076a2e538499624ea6bc9ef7e6d9091b0c5f92d363bb3c0a67fbca8b68f484d&
-↳ image: image.png (33 KB) — "A table listing work experience details for a private piano instructor and a Web3 consulting intern." — https://cdn.discordapp.com/attachments/1292220510603575366/1400605410939113502/image.png?ex=6a08462f&is=6a06f4af&hm=927a3019debd41455b53ccdb6eb78919ffd05c4fbfc0ccce9f07328562a5d11f&
+↳ image: image.png (91 KB) — "A spreadsheet logging high school volunteer and community service activities, accomplishments, and hours spent." — https://cdn.discordapp.com/attachments/1292220510603575366/1400605410511159336/image.png?ex=6a08eeef&is=6a079d6f&hm=3b6a44821ecb1a8d193e2a5a9fd85fcfb67416657310b0e7e24d464e23818f81&
+↳ image: image.png (33 KB) — "A partial view of a spreadsheet showing job descriptions, character counts, and checkbox columns." — https://cdn.discordapp.com/attachments/1292220510603575366/1400605410939113502/image.png?ex=6a08eeef&is=6a079d6f&hm=5f9312a4aff1ada6ecff48f329b0f8c1d727eff06926795910c27f377f4e4c7a&

@@ -1,9 +1,9 @@
 ---
 source: discord
 workspace: personal
-ingested_at: '2026-05-14T23:55:54.525Z'
+ingested_at: '2026-05-15T05:21:55.421Z'
 ingest_version: 1
-content_hash: sha256:232eb7dbb80ffc52ad17c42815110535c0c013415542908152838d717d35adcc
+content_hash: sha256:c56e868f6451c224d0db993a7b1ee7b06271111d50699bb3893389062bcd7ace
 provider_modified_at: '2024-11-30T19:02:57.788Z'
 contact_slug: shva-shvalockedin
 contact_type: individual
@@ -22,33 +22,33 @@ attachments:
   - message_id: '1311510017035472936'
     kind: image
     filename: '20241127_013225.jpg'
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1311510015596560534/20241127_013225.jpg?ex=6a072522&is=6a05d3a2&hm=f34f72742564ae77668020f820603059589aef9945beee76351a240084ff78e5&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1311510015596560534/20241127_013225.jpg?ex=6a07cde2&is=6a067c62&hm=01b7270b9819dd175c54fe58c690967d5ecd1d622aac1862e9256c673882cda5&'
     size: 475678
-    description: 'A wooden rack holds several stacked pieces of professional audio recording equipment.'
+    description: 'A wooden rack holds multiple stacked pieces of professional audio recording equipment with front-connected cables.'
   - message_id: '1311510017035472936'
     kind: image
     filename: '20241127_013230.jpg'
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1311510016305659924/20241127_013230.jpg?ex=6a072522&is=6a05d3a2&hm=966f2f6d68e2fc3c724c40746034c075adf69683dc354b05eb5b62d5d2416579&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1311510016305659924/20241127_013230.jpg?ex=6a07cde2&is=6a067c62&hm=ccb12a94cd447db9ed02174f65b460fb9c57f1d285e99c68b2202ac508d4019b&'
     size: 446729
-    description: 'A wooden rack containing several pieces of audio recording and processing equipment.'
+    description: 'A wooden rack holds various pieces of professional audio recording equipment connected by cables.'
   - message_id: '1311911985603936316'
     kind: image
     filename: exported-image_6.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1311911984463220767/exported-image_6.png?ex=6a0749ff&is=6a05f87f&hm=bb102f978e8f7f1672dd35d069ee8ba311486f09d7b99c6d95ae434d9582c0e6&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1311911984463220767/exported-image_6.png?ex=6a07f2bf&is=6a06a13f&hm=40b7cc59558865a77784fd1dc0fef72c291b0d7de1535520e87bb357ef29b548&'
     size: 82054
-    description: 'A white speckled dollar sign is centered on a solid black background.'
+    description: 'A white dollar sign made of static noise centered on a solid black background.'
   - message_id: '1311911985603936316'
     kind: image
     filename: exported-image_8.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1311911984928919633/exported-image_8.png?ex=6a0749ff&is=6a05f87f&hm=6c49c97b1372c668ed9dfcb99976f3efada1c44b3d231a31bd83e2b552123469&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1311911984928919633/exported-image_8.png?ex=6a07f2bf&is=6a06a13f&hm=8bf3ec91446e07eaf841c237f3730f2e6f60f86a56d0a063da21582620b0e274&'
     size: 112059
-    description: 'The grey text $ makes the world go around is centered on a solid black background.'
+    description: 'White text on a black background says $ makes the world go around.'
   - message_id: '1311911985603936316'
     kind: image
     filename: exported-image_9.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1311911985277042718/exported-image_9.png?ex=6a0749ff&is=6a05f87f&hm=686d15242095636044a34e0cbff51a9b5b6a0aa40ff991ec9bd35f3e3769cb77&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1311911985277042718/exported-image_9.png?ex=6a07f2bf&is=6a06a13f&hm=28fc9cb57ce0d057b6e0d8d2143f8a7a9abc034970e789e551471937ec7fb7a5&'
     size: 83886
-    description: 'White text reading VOLTREX centered on a solid black background.'
+    description: 'White textured uppercase text spelling VOLTREX. is centered on a solid black background.'
   - message_id: '1312493812618366986'
     kind: audio
     filename: Hate_Her_Friends_-_Juice_WRLD_Unreleased.mp3
@@ -86,16 +86,16 @@ superseded_by: null
 ## 2024-11-27 (Wednesday)
 
 **19:52 — SHVA:** 
-↳ image: 20241127_013225.jpg (465 KB) — "A wooden rack holds several stacked pieces of professional audio recording equipment." — https://cdn.discordapp.com/attachments/1292220510603575366/1311510015596560534/20241127_013225.jpg?ex=6a072522&is=6a05d3a2&hm=f34f72742564ae77668020f820603059589aef9945beee76351a240084ff78e5&
-↳ image: 20241127_013230.jpg (436 KB) — "A wooden rack containing several pieces of audio recording and processing equipment." — https://cdn.discordapp.com/attachments/1292220510603575366/1311510016305659924/20241127_013230.jpg?ex=6a072522&is=6a05d3a2&hm=966f2f6d68e2fc3c724c40746034c075adf69683dc354b05eb5b62d5d2416579&
+↳ image: 20241127_013225.jpg (465 KB) — "A wooden rack holds multiple stacked pieces of professional audio recording equipment with front-connected cables." — https://cdn.discordapp.com/attachments/1292220510603575366/1311510015596560534/20241127_013225.jpg?ex=6a07cde2&is=6a067c62&hm=01b7270b9819dd175c54fe58c690967d5ecd1d622aac1862e9256c673882cda5&
+↳ image: 20241127_013230.jpg (436 KB) — "A wooden rack holds various pieces of professional audio recording equipment connected by cables." — https://cdn.discordapp.com/attachments/1292220510603575366/1311510016305659924/20241127_013230.jpg?ex=6a07cde2&is=6a067c62&hm=ccb12a94cd447db9ed02174f65b460fb9c57f1d285e99c68b2202ac508d4019b&
 
 ## 2024-11-28 (Thursday)
 
 **21:17 — SHVA:** https://www.facebook.com/MarchMotorsports
 **22:29 — SHVA:** 
-↳ image: exported-image_6.png (80 KB) — "A white speckled dollar sign is centered on a solid black background." — https://cdn.discordapp.com/attachments/1292220510603575366/1311911984463220767/exported-image_6.png?ex=6a0749ff&is=6a05f87f&hm=bb102f978e8f7f1672dd35d069ee8ba311486f09d7b99c6d95ae434d9582c0e6&
-↳ image: exported-image_8.png (109 KB) — "The grey text $ makes the world go around is centered on a solid black background." — https://cdn.discordapp.com/attachments/1292220510603575366/1311911984928919633/exported-image_8.png?ex=6a0749ff&is=6a05f87f&hm=6c49c97b1372c668ed9dfcb99976f3efada1c44b3d231a31bd83e2b552123469&
-↳ image: exported-image_9.png (82 KB) — "White text reading VOLTREX centered on a solid black background." — https://cdn.discordapp.com/attachments/1292220510603575366/1311911985277042718/exported-image_9.png?ex=6a0749ff&is=6a05f87f&hm=686d15242095636044a34e0cbff51a9b5b6a0aa40ff991ec9bd35f3e3769cb77&
+↳ image: exported-image_6.png (80 KB) — "A white dollar sign made of static noise centered on a solid black background." — https://cdn.discordapp.com/attachments/1292220510603575366/1311911984463220767/exported-image_6.png?ex=6a07f2bf&is=6a06a13f&hm=40b7cc59558865a77784fd1dc0fef72c291b0d7de1535520e87bb357ef29b548&
+↳ image: exported-image_8.png (109 KB) — "White text on a black background says $ makes the world go around." — https://cdn.discordapp.com/attachments/1292220510603575366/1311911984928919633/exported-image_8.png?ex=6a07f2bf&is=6a06a13f&hm=8bf3ec91446e07eaf841c237f3730f2e6f60f86a56d0a063da21582620b0e274&
+↳ image: exported-image_9.png (82 KB) — "White textured uppercase text spelling VOLTREX. is centered on a solid black background." — https://cdn.discordapp.com/attachments/1292220510603575366/1311911985277042718/exported-image_9.png?ex=6a07f2bf&is=6a06a13f&hm=28fc9cb57ce0d057b6e0d8d2143f8a7a9abc034970e789e551471937ec7fb7a5&
 **22:30 — SHVA:** https://typedither.vercel.app/
 **22:30 — SHVA:** pretty hard
 

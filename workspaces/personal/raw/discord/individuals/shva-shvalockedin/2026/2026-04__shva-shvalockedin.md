@@ -1,9 +1,9 @@
 ---
 source: discord
 workspace: personal
-ingested_at: '2026-05-14T17:04:14.799Z'
+ingested_at: '2026-05-15T00:02:21.073Z'
 ingest_version: 1
-content_hash: sha256:20063fe10dcb73b4b8fa20370d2b17f0e9b714179b1bf2165ce594bfe81df9b8
+content_hash: sha256:d97357cbf546c06a3aec53dde4987b95d0040a6c0edc6291a7b51622b774c2b0
 provider_modified_at: '2026-04-11T18:53:43.701Z'
 contact_slug: shva-shvalockedin
 contact_type: individual
@@ -16,9 +16,9 @@ attachments:
   - message_id: '1492598542622261419'
     kind: image
     filename: image.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1492598542228000979/image.png?ex=6a06c2f7&is=6a057177&hm=832475fc777dd72038d246c583889d2bbd7225797b36d24520fcd754cfda9e00&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1492598542228000979/image.png?ex=6a076bb7&is=6a061a37&hm=46f06d132936da396ca8dcf34103dc505be14082f578e3ea8e92bf24b5194001&'
     size: 209728
-    description: 'A dark table lists various rules and gaming penalties for a Wheel of Doom challenge.'
+    description: 'A dark table displays rules and penalties for a game called The Hardcore Wheel of Doom.'
 discord_channel_id: '1292220510603575366'
 discord_channel_kind: dm
 discord_recipient_id: '1285363977030729738'
@@ -32,4 +32,4 @@ superseded_by: null
 ## 2026-04-11 (Saturday)
 
 **13:53 — SHVA:** 
-↳ image: image.png (205 KB) — "A dark table lists various rules and gaming penalties for a Wheel of Doom challenge." — https://cdn.discordapp.com/attachments/1292220510603575366/1492598542228000979/image.png?ex=6a06c2f7&is=6a057177&hm=832475fc777dd72038d246c583889d2bbd7225797b36d24520fcd754cfda9e00&
+↳ image: image.png (205 KB) — "A dark table displays rules and penalties for a game called The Hardcore Wheel of Doom." — https://cdn.discordapp.com/attachments/1292220510603575366/1492598542228000979/image.png?ex=6a076bb7&is=6a061a37&hm=46f06d132936da396ca8dcf34103dc505be14082f578e3ea8e92bf24b5194001&

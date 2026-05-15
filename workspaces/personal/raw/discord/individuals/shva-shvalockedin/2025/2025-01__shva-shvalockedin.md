@@ -1,9 +1,9 @@
 ---
 source: discord
 workspace: personal
-ingested_at: '2026-05-14T17:02:14.948Z'
+ingested_at: '2026-05-15T00:00:38.649Z'
 ingest_version: 1
-content_hash: sha256:e96bd5e0214aeaa724fd97e8e46c2ed59b3d0888c9e4ec42c1ef8df04ef2bf52
+content_hash: sha256:5fffd95665b2f1a5b42e914f8e4aa24231e4a949803ed185943df0868f1a3b49
 provider_modified_at: '2025-01-21T02:31:19.906Z'
 contact_slug: shva-shvalockedin
 contact_type: individual
@@ -18,7 +18,7 @@ attachments:
     filename: image.png
     url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1325682909524525066/image.png?ex=6a074a2b&is=6a05f8ab&hm=c05ed3d031feafd9a4713970f0298eaf6fe94c1b3328dd8fe862bb191dfb41b1&'
     size: 64550
-    description: 'A digital game report scoreboard displaying the ranks, scores, and statistics of three players.'
+    description: 'A digital game report leaderboard displays the final scores and match statistics for three players.'
 discord_channel_id: '1292220510603575366'
 discord_channel_kind: dm
 discord_recipient_id: '1285363977030729738'
@@ -46,7 +46,7 @@ superseded_by: null
 **21:22 — SHVA:** https://roadtriprivals.com/game/TFYKEB
 **21:51 — SHVA:** https://roadtriprivals.com/game/MUXDNR
 **22:30 — SHVA:** 
-↳ image: image.png (63 KB) — "A digital game report scoreboard displaying the ranks, scores, and statistics of three players." — https://cdn.discordapp.com/attachments/1292220510603575366/1325682909524525066/image.png?ex=6a074a2b&is=6a05f8ab&hm=c05ed3d031feafd9a4713970f0298eaf6fe94c1b3328dd8fe862bb191dfb41b1&
+↳ image: image.png (63 KB) — "A digital game report leaderboard displays the final scores and match statistics for three players." — https://cdn.discordapp.com/attachments/1292220510603575366/1325682909524525066/image.png?ex=6a074a2b&is=6a05f8ab&hm=c05ed3d031feafd9a4713970f0298eaf6fe94c1b3328dd8fe862bb191dfb41b1&
 **22:31 — me:** https://roadtriprivals.com/game/PYPKYJ
 **22:35 — me:** https://roadtriprivals.com/game/IZTFYE
 **22:35 — SHVA:** https://roadtriprivals.com/game/DTHTQE

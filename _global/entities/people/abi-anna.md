@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.415210+00:00
+ingested_at: 2026-05-15T08:12:17.989703+00:00
 ingest_version: 1
 content_hash: blake2b:2413e53ece0cf96871235ad43509759d
-provider_modified_at: 2026-05-14T08:00:19.415210+00:00
+provider_modified_at: 2026-05-15T08:12:17.989703+00:00
 
 title: Abi Anna
 slug: abi-anna
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15129654222"]
   slack: []
-last_synced: 2026-05-14T08:00:19.415210+00:00
+last_synced: 2026-05-15T08:12:17.989703+00:00
 global: true
 ---
 

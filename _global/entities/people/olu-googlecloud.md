@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.541786+00:00
+ingested_at: 2026-05-15T08:12:18.070169+00:00
 ingest_version: 1
 content_hash: blake2b:b8816947a25675baa9a4070e6fb07191
-provider_modified_at: 2026-05-14T08:00:19.541786+00:00
+provider_modified_at: 2026-05-15T08:12:18.070169+00:00
 
 title: Olu | GoogleCloud
 slug: olu-googlecloud
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.541786+00:00
+last_synced: 2026-05-15T08:12:18.070169+00:00
 global: true
 ---
 

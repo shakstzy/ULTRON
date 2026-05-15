@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.499490+00:00
+ingested_at: 2026-05-15T08:12:18.032119+00:00
 ingest_version: 1
 content_hash: blake2b:2264d5c9c587860d79d2f1506708d4ab
-provider_modified_at: 2026-05-14T08:00:19.499490+00:00
+provider_modified_at: 2026-05-15T08:12:18.032119+00:00
 
 title: Zach
 slug: zach
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-825-4446"]
   slack: []
-last_synced: 2026-05-14T08:00:19.499490+00:00
+last_synced: 2026-05-15T08:12:18.032119+00:00
 global: true
 ---
 

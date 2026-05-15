@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.493281+00:00
+ingested_at: 2026-05-15T08:12:18.027030+00:00
 ingest_version: 1
 content_hash: blake2b:2cd4e6ce9cd91e11bcc886ad4119dc44
-provider_modified_at: 2026-05-14T08:00:19.493281+00:00
+provider_modified_at: 2026-05-15T08:12:18.027030+00:00
 
 title: Jarrod Catalog
 slug: jarrod-catalog
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17203202637"]
   slack: []
-last_synced: 2026-05-14T08:00:19.493281+00:00
+last_synced: 2026-05-15T08:12:18.027030+00:00
 global: true
 ---
 

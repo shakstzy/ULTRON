@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.520892+00:00
+ingested_at: 2026-05-15T08:12:18.051328+00:00
 ingest_version: 1
 content_hash: blake2b:75a0d0a8e15be5bbf2a72e3ed3aa9ecc
-provider_modified_at: 2026-05-14T08:00:19.520892+00:00
+provider_modified_at: 2026-05-15T08:12:18.051328+00:00
 
 title: N. Kannan
 slug: n-kannan
@@ -15,7 +15,7 @@ identifiers:
   email: ["kannan1965@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.520892+00:00
+last_synced: 2026-05-15T08:12:18.051328+00:00
 global: true
 ---
 

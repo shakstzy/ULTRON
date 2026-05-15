@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.473731+00:00
+ingested_at: 2026-05-15T08:12:18.011106+00:00
 ingest_version: 1
 content_hash: blake2b:94a6d04720a6c5d5e2df5de68f0cd3e4
-provider_modified_at: 2026-05-14T08:00:19.473731+00:00
+provider_modified_at: 2026-05-15T08:12:18.011106+00:00
 
 title: Authorizer
 slug: authorizer
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["22395"]
   slack: []
-last_synced: 2026-05-14T08:00:19.473731+00:00
+last_synced: 2026-05-15T08:12:18.011106+00:00
 global: true
 ---
 

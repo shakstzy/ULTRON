@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.353968+00:00
+ingested_at: 2026-05-15T08:12:17.951606+00:00
 ingest_version: 1
 content_hash: blake2b:46bf6b971d8b6cde779f5c30b9f0ad3d
-provider_modified_at: 2026-05-14T08:00:19.353968+00:00
+provider_modified_at: 2026-05-15T08:12:17.951606+00:00
 
 title: Thuan | ElectricCapital
 slug: thuan-electriccapital
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.353968+00:00
+last_synced: 2026-05-15T08:12:17.951606+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.479555+00:00
+ingested_at: 2026-05-15T08:12:18.014883+00:00
 ingest_version: 1
 content_hash: blake2b:f8287158cb3fb5cac0e2fa004e03f129
-provider_modified_at: 2026-05-14T08:00:19.479555+00:00
+provider_modified_at: 2026-05-15T08:12:18.014883+00:00
 
 title: Ankita Hinge NYC
 slug: ankita-hinge-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14086366799"]
   slack: []
-last_synced: 2026-05-14T08:00:19.479555+00:00
+last_synced: 2026-05-15T08:12:18.014883+00:00
 global: true
 ---
 

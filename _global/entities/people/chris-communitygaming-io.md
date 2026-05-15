@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.433810+00:00
+ingested_at: 2026-05-15T08:12:17.998262+00:00
 ingest_version: 1
 content_hash: blake2b:eb607e0b944ce2eba54efca525250d36
-provider_modified_at: 2026-05-14T08:00:19.433810+00:00
+provider_modified_at: 2026-05-15T08:12:17.998262+00:00
 
 title: Chris | CommunityGaming.io
 slug: chris-communitygaming-io
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.433810+00:00
+last_synced: 2026-05-15T08:12:17.998262+00:00
 global: true
 ---
 

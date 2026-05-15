@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.354473+00:00
+ingested_at: 2026-05-15T08:12:17.951874+00:00
 ingest_version: 1
 content_hash: blake2b:e55a946e2aeb4711f99a8464c0923fac
-provider_modified_at: 2026-05-14T08:00:19.354473+00:00
+provider_modified_at: 2026-05-15T08:12:17.951874+00:00
 
 title: Salman | Polynomial
 slug: salman-polynomial
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.354473+00:00
+last_synced: 2026-05-15T08:12:17.951874+00:00
 global: true
 ---
 

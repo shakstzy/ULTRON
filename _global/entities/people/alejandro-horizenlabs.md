@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.341411+00:00
+ingested_at: 2026-05-15T08:12:17.939203+00:00
 ingest_version: 1
 content_hash: blake2b:5400927f1479dc866b17b4cbbcc960bc
-provider_modified_at: 2026-05-14T08:00:19.341411+00:00
+provider_modified_at: 2026-05-15T08:12:17.939203+00:00
 
 title: Alejandro | HorizenLabs
 slug: alejandro-horizenlabs
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.341411+00:00
+last_synced: 2026-05-15T08:12:17.939203+00:00
 global: true
 ---
 

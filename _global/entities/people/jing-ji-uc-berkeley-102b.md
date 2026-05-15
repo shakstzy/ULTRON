@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.547792+00:00
+ingested_at: 2026-05-15T08:12:18.075365+00:00
 ingest_version: 1
 content_hash: blake2b:801c24b9a6aaf20a7f041864cde77420
-provider_modified_at: 2026-05-14T08:00:19.547792+00:00
+provider_modified_at: 2026-05-15T08:12:18.075365+00:00
 
 title: Jing Ji UC Berkeley 102B
 slug: jing-ji-uc-berkeley-102b
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15109447399"]
   slack: []
-last_synced: 2026-05-14T08:00:19.547792+00:00
+last_synced: 2026-05-15T08:12:18.075365+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.347873+00:00
+ingested_at: 2026-05-15T08:12:17.946648+00:00
 ingest_version: 1
 content_hash: blake2b:188b50a0d941de475e6079bf3bf66558
-provider_modified_at: 2026-05-14T08:00:19.347873+00:00
+provider_modified_at: 2026-05-15T08:12:17.946648+00:00
 
 title: Mandira Hinge Austin
 slug: mandira-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14259740281"]
   slack: []
-last_synced: 2026-05-14T08:00:19.347873+00:00
+last_synced: 2026-05-15T08:12:17.946648+00:00
 global: true
 ---
 

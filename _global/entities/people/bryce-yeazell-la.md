@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.522550+00:00
+ingested_at: 2026-05-15T08:12:18.053080+00:00
 ingest_version: 1
 content_hash: blake2b:79927db4a251b09f767f4365041ddd18
-provider_modified_at: 2026-05-14T08:00:19.522550+00:00
+provider_modified_at: 2026-05-15T08:12:18.053080+00:00
 
 title: Bryce Yeazell LA
 slug: bryce-yeazell-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-354-6619"]
   slack: []
-last_synced: 2026-05-14T08:00:19.522550+00:00
+last_synced: 2026-05-15T08:12:18.053080+00:00
 global: true
 ---
 

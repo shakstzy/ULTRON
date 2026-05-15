@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.456123+00:00
+ingested_at: 2026-05-15T08:12:18.000195+00:00
 ingest_version: 1
 content_hash: blake2b:70c6cbe55864b08221937e250423a2e8
-provider_modified_at: 2026-05-14T08:00:19.456123+00:00
+provider_modified_at: 2026-05-15T08:12:18.000195+00:00
 
 title: Brittany PENN COMPUTER SCIENCE
 slug: brittany-penn-computer-science
@@ -15,7 +15,7 @@ identifiers:
   email: ["britp@upenn.edu"]
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.456123+00:00
+last_synced: 2026-05-15T08:12:18.000195+00:00
 global: true
 ---
 

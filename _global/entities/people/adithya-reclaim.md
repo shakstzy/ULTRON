@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.311507+00:00
+ingested_at: 2026-05-15T08:12:17.910771+00:00
 ingest_version: 1
 content_hash: blake2b:2258aaf4e69b850874a090e7fb239f37
-provider_modified_at: 2026-05-14T08:00:19.311507+00:00
+provider_modified_at: 2026-05-15T08:12:17.910771+00:00
 
 title: Adithya | Reclaim
 slug: adithya-reclaim
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.311507+00:00
+last_synced: 2026-05-15T08:12:17.910771+00:00
 global: true
 ---
 

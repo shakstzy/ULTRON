@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.304354+00:00
+ingested_at: 2026-05-15T08:12:17.904011+00:00
 ingest_version: 1
 content_hash: blake2b:8db26197fe9df21c2d0bf4ee3f44771c
-provider_modified_at: 2026-05-14T08:00:19.304354+00:00
+provider_modified_at: 2026-05-15T08:12:17.904011+00:00
 
 title: Edwin HOBY
 slug: edwin-hoby
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 830-776-1221"]
   slack: []
-last_synced: 2026-05-14T08:00:19.304354+00:00
+last_synced: 2026-05-15T08:12:17.904011+00:00
 global: true
 ---
 

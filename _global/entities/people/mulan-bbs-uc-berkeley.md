@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.313116+00:00
+ingested_at: 2026-05-15T08:12:17.912362+00:00
 ingest_version: 1
 content_hash: blake2b:7f73f9c4b44c55ba948a36dd2b9545be
-provider_modified_at: 2026-05-14T08:00:19.313116+00:00
+provider_modified_at: 2026-05-15T08:12:17.912362+00:00
 
 title: Mulan BBS UC Berkeley
 slug: mulan-bbs-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 925-353-6746"]
   slack: []
-last_synced: 2026-05-14T08:00:19.313116+00:00
+last_synced: 2026-05-15T08:12:17.912362+00:00
 global: true
 ---
 

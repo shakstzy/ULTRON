@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.485099+00:00
+ingested_at: 2026-05-15T08:12:18.020611+00:00
 ingest_version: 1
 content_hash: blake2b:a13c592a9d5070c9251222067a5191b7
-provider_modified_at: 2026-05-14T08:00:19.485099+00:00
+provider_modified_at: 2026-05-15T08:12:18.020611+00:00
 
 title: Siddarth Ganesan UC Berkeley
 slug: siddarth-ganesan-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14088326173"]
   slack: []
-last_synced: 2026-05-14T08:00:19.485099+00:00
+last_synced: 2026-05-15T08:12:18.020611+00:00
 global: true
 ---
 

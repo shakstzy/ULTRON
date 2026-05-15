@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.305188+00:00
+ingested_at: 2026-05-15T08:12:17.904831+00:00
 ingest_version: 1
 content_hash: blake2b:36ee8e05d065e53fdd55059bf4f261d6
-provider_modified_at: 2026-05-14T08:00:19.305188+00:00
+provider_modified_at: 2026-05-15T08:12:17.904831+00:00
 
 title: Nira Hinge NYC
 slug: nira-hinge-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15164747827"]
   slack: []
-last_synced: 2026-05-14T08:00:19.305188+00:00
+last_synced: 2026-05-15T08:12:17.904831+00:00
 global: true
 ---
 

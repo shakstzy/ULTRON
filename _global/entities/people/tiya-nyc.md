@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.318322+00:00
+ingested_at: 2026-05-15T08:12:17.916744+00:00
 ingest_version: 1
 content_hash: blake2b:f5d506454e784aaf507e0c0af1ac6634
-provider_modified_at: 2026-05-14T08:00:19.318322+00:00
+provider_modified_at: 2026-05-15T08:12:17.916744+00:00
 
 title: Tiya NYC
 slug: tiya-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16578885454"]
   slack: []
-last_synced: 2026-05-14T08:00:19.318322+00:00
+last_synced: 2026-05-15T08:12:17.916744+00:00
 global: true
 ---
 

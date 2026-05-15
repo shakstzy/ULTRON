@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.466274+00:00
+ingested_at: 2026-05-15T08:12:18.006551+00:00
 ingest_version: 1
 content_hash: blake2b:24619b5aadb5698c6e2dc0dfda01f18d
-provider_modified_at: 2026-05-14T08:00:19.466274+00:00
+provider_modified_at: 2026-05-15T08:12:18.006551+00:00
 
 title: Simon | OrbitEarn
 slug: simon-orbitearn
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.466274+00:00
+last_synced: 2026-05-15T08:12:18.006551+00:00
 global: true
 ---
 

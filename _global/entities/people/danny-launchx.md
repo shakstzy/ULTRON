@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.380054+00:00
+ingested_at: 2026-05-15T08:12:17.953371+00:00
 ingest_version: 1
 content_hash: blake2b:1145515f087b9d917bf644df2bbe66fa
-provider_modified_at: 2026-05-14T08:00:19.380054+00:00
+provider_modified_at: 2026-05-15T08:12:17.953371+00:00
 
 title: Danny LaunchX
 slug: danny-launchx
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(484) 714-7872"]
   slack: []
-last_synced: 2026-05-14T08:00:19.380054+00:00
+last_synced: 2026-05-15T08:12:17.953371+00:00
 global: true
 ---
 

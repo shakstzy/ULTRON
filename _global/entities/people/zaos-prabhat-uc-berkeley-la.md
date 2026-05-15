@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.525405+00:00
+ingested_at: 2026-05-15T08:12:18.055552+00:00
 ingest_version: 1
 content_hash: blake2b:920f31a21ab5aa2aa04bfd3e5cc4437f
-provider_modified_at: 2026-05-14T08:00:19.525405+00:00
+provider_modified_at: 2026-05-15T08:12:18.055552+00:00
 
 title: Zaos Prabhat UC Berkeley LA
 slug: zaos-prabhat-uc-berkeley-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19256401543"]
   slack: []
-last_synced: 2026-05-14T08:00:19.525405+00:00
+last_synced: 2026-05-15T08:12:18.055552+00:00
 global: true
 ---
 

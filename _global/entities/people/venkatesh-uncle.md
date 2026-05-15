@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.294231+00:00
+ingested_at: 2026-05-15T08:12:17.893200+00:00
 ingest_version: 1
 content_hash: blake2b:747b14a13baee5636eae371233c47f20
-provider_modified_at: 2026-05-14T08:00:19.294231+00:00
+provider_modified_at: 2026-05-15T08:12:17.893200+00:00
 
 title: Venkatesh Uncle
 slug: venkatesh-uncle
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19258582392"]
   slack: []
-last_synced: 2026-05-14T08:00:19.294231+00:00
+last_synced: 2026-05-15T08:12:17.893200+00:00
 global: true
 ---
 

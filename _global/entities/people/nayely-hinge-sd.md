@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.474819+00:00
+ingested_at: 2026-05-15T08:12:18.011481+00:00
 ingest_version: 1
 content_hash: blake2b:b8e785f888a6c946e3f96f3cae1f6a89
-provider_modified_at: 2026-05-14T08:00:19.474819+00:00
+provider_modified_at: 2026-05-15T08:12:18.011481+00:00
 
 title: Nayely Hinge SD
 slug: nayely-hinge-sd
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12107090614"]
   slack: []
-last_synced: 2026-05-14T08:00:19.474819+00:00
+last_synced: 2026-05-15T08:12:18.011481+00:00
 global: true
 ---
 

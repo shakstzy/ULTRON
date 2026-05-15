@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.324831+00:00
+ingested_at: 2026-05-15T08:12:17.923153+00:00
 ingest_version: 1
 content_hash: blake2b:eefba5ba1e32a2a7cbfcad648f0fb4c4
-provider_modified_at: 2026-05-14T08:00:19.324831+00:00
+provider_modified_at: 2026-05-15T08:12:17.923153+00:00
 
 title: Liam LASA
 slug: liam-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(512) 765-5426"]
   slack: []
-last_synced: 2026-05-14T08:00:19.324831+00:00
+last_synced: 2026-05-15T08:12:17.923153+00:00
 global: true
 ---
 

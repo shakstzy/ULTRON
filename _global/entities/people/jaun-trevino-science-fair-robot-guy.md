@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.516145+00:00
+ingested_at: 2026-05-15T08:12:18.046668+00:00
 ingest_version: 1
 content_hash: blake2b:416aea6510e96a96643effe36aa1eea3
-provider_modified_at: 2026-05-14T08:00:19.516145+00:00
+provider_modified_at: 2026-05-15T08:12:18.046668+00:00
 
 title: Jaun Trevino Science Fair Robot Guy.
 slug: jaun-trevino-science-fair-robot-guy
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(956) 407-9253"]
   slack: []
-last_synced: 2026-05-14T08:00:19.516145+00:00
+last_synced: 2026-05-15T08:12:18.046668+00:00
 global: true
 ---
 

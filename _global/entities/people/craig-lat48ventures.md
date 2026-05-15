@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.521936+00:00
+ingested_at: 2026-05-15T08:12:18.052386+00:00
 ingest_version: 1
 content_hash: blake2b:f6f941235c1b834bc74839ffab884705
-provider_modified_at: 2026-05-14T08:00:19.521936+00:00
+provider_modified_at: 2026-05-15T08:12:18.052386+00:00
 
 title: Craig | Lat48Ventures
 slug: craig-lat48ventures
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.521936+00:00
+last_synced: 2026-05-15T08:12:18.052386+00:00
 global: true
 ---
 

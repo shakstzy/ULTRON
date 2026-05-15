@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.500734+00:00
+ingested_at: 2026-05-15T08:12:18.033422+00:00
 ingest_version: 1
 content_hash: blake2b:bc3a97105cf4536a527c53825ef8ca1f
-provider_modified_at: 2026-05-14T08:00:19.500734+00:00
+provider_modified_at: 2026-05-15T08:12:18.033422+00:00
 
 title: Christian | Mintsuite
 slug: christian-mintsuite
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.500734+00:00
+last_synced: 2026-05-15T08:12:18.033422+00:00
 global: true
 ---
 

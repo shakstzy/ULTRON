@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.309578+00:00
+ingested_at: 2026-05-15T08:12:17.908810+00:00
 ingest_version: 1
 content_hash: blake2b:f7c5fa1ba9bfe73e12ddf5917a2c915d
-provider_modified_at: 2026-05-14T08:00:19.309578+00:00
+provider_modified_at: 2026-05-15T08:12:17.908810+00:00
 
 title: Faris | Irys
 slug: faris-irys
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 973-960-2267"]
   slack: []
-last_synced: 2026-05-14T08:00:19.309578+00:00
+last_synced: 2026-05-15T08:12:17.908810+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.312784+00:00
+ingested_at: 2026-05-15T08:12:17.912098+00:00
 ingest_version: 1
 content_hash: blake2b:6ecefa3897531fff3b8a8bcae7cc53f3
-provider_modified_at: 2026-05-14T08:00:19.312784+00:00
+provider_modified_at: 2026-05-15T08:12:17.912098+00:00
 
 title: Anastasia | MarsBase
 slug: anastasia-marsbase
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.312784+00:00
+last_synced: 2026-05-15T08:12:17.912098+00:00
 global: true
 ---
 

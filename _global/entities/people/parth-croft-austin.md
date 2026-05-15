@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.494506+00:00
+ingested_at: 2026-05-15T08:12:18.027880+00:00
 ingest_version: 1
 content_hash: blake2b:1e7b2c1b664dda22cf992c66a32042bb
-provider_modified_at: 2026-05-14T08:00:19.494506+00:00
+provider_modified_at: 2026-05-15T08:12:18.027880+00:00
 
 title: Parth Croft Austin
 slug: parth-croft-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-545-8881"]
   slack: []
-last_synced: 2026-05-14T08:00:19.494506+00:00
+last_synced: 2026-05-15T08:12:18.027880+00:00
 global: true
 ---
 

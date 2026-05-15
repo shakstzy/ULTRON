@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.483014+00:00
+ingested_at: 2026-05-15T08:12:18.018608+00:00
 ingest_version: 1
 content_hash: blake2b:3443770844f57ff20921e5f12e0ce113
-provider_modified_at: 2026-05-14T08:00:19.483014+00:00
+provider_modified_at: 2026-05-15T08:12:18.018608+00:00
 
 title: DaBing | MegaETH
 slug: dabing-megaeth
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.483014+00:00
+last_synced: 2026-05-15T08:12:18.018608+00:00
 global: true
 ---
 

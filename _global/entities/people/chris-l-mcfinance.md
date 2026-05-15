@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.547710+00:00
+ingested_at: 2026-05-15T08:12:18.075295+00:00
 ingest_version: 1
 content_hash: blake2b:6ffe1ea209c28e1bbac5ab81966f3968
-provider_modified_at: 2026-05-14T08:00:19.547710+00:00
+provider_modified_at: 2026-05-15T08:12:18.075295+00:00
 
 title: Chris l MCFinance
 slug: chris-l-mcfinance
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.547710+00:00
+last_synced: 2026-05-15T08:12:18.075295+00:00
 global: true
 ---
 

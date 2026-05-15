@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.505781+00:00
+ingested_at: 2026-05-15T08:12:18.038579+00:00
 ingest_version: 1
 content_hash: blake2b:415b56c7bc261295dd29ce738e379a76
-provider_modified_at: 2026-05-14T08:00:19.505781+00:00
+provider_modified_at: 2026-05-15T08:12:18.038579+00:00
 
 title: Justin Intern SpaceX
 slug: justin-intern-spacex
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15107357277"]
   slack: []
-last_synced: 2026-05-14T08:00:19.505781+00:00
+last_synced: 2026-05-15T08:12:18.038579+00:00
 global: true
 ---
 

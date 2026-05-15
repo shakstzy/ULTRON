@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.422438+00:00
+ingested_at: 2026-05-15T08:12:17.995102+00:00
 ingest_version: 1
 content_hash: blake2b:90044a03821d2a3351a9fb27b5b0b0f6
-provider_modified_at: 2026-05-14T08:00:19.422438+00:00
+provider_modified_at: 2026-05-15T08:12:17.995102+00:00
 
 title: Francisco
 slug: francisco
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 202-763-2120"]
   slack: []
-last_synced: 2026-05-14T08:00:19.422438+00:00
+last_synced: 2026-05-15T08:12:17.995102+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.419811+00:00
+ingested_at: 2026-05-15T08:12:17.993135+00:00
 ingest_version: 1
 content_hash: blake2b:5226fd00dc9c7020579738b73f5ac57b
-provider_modified_at: 2026-05-14T08:00:19.419811+00:00
+provider_modified_at: 2026-05-15T08:12:17.993135+00:00
 
 title: Srinivasan Periappa
 slug: srinivasan-periappa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+919677763089"]
   slack: []
-last_synced: 2026-05-14T08:00:19.419811+00:00
+last_synced: 2026-05-15T08:12:17.993135+00:00
 global: true
 ---
 

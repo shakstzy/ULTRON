@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.535814+00:00
+ingested_at: 2026-05-15T08:12:18.063860+00:00
 ingest_version: 1
 content_hash: blake2b:367d78bff18c63c02a755f8db30c4345
-provider_modified_at: 2026-05-14T08:00:19.535814+00:00
+provider_modified_at: 2026-05-15T08:12:18.063860+00:00
 
 title: Charlie | LAWYER
 slug: charlie-lawyer
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.535814+00:00
+last_synced: 2026-05-15T08:12:18.063860+00:00
 global: true
 ---
 

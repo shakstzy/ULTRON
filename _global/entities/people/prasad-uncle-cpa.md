@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.343472+00:00
+ingested_at: 2026-05-15T08:12:17.941948+00:00
 ingest_version: 1
 content_hash: blake2b:d94487cfbe4c3bfb3be90e9348195ab6
-provider_modified_at: 2026-05-14T08:00:19.343472+00:00
+provider_modified_at: 2026-05-15T08:12:17.941948+00:00
 
 title: Prasad Uncle CPA
 slug: prasad-uncle-cpa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15127503357"]
   slack: []
-last_synced: 2026-05-14T08:00:19.343472+00:00
+last_synced: 2026-05-15T08:12:17.941948+00:00
 global: true
 ---
 

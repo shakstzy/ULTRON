@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.466081+00:00
+ingested_at: 2026-05-15T08:12:18.006402+00:00
 ingest_version: 1
 content_hash: blake2b:85c8f4e7a69ad4ce487a7bb8392b3c13
-provider_modified_at: 2026-05-14T08:00:19.466081+00:00
+provider_modified_at: 2026-05-15T08:12:18.006402+00:00
 
 title: Divya | P2P
 slug: divya-p2p
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.466081+00:00
+last_synced: 2026-05-15T08:12:18.006402+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.322388+00:00
+ingested_at: 2026-05-15T08:12:17.920457+00:00
 ingest_version: 1
 content_hash: blake2b:65d21fd6f4644bbdf412697d8e197182
-provider_modified_at: 2026-05-14T08:00:19.322388+00:00
+provider_modified_at: 2026-05-15T08:12:17.920457+00:00
 
 title: Brandon Guo UC Berkeley
 slug: brandon-guo-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(303) 619-4539"]
   slack: []
-last_synced: 2026-05-14T08:00:19.322388+00:00
+last_synced: 2026-05-15T08:12:17.920457+00:00
 global: true
 ---
 

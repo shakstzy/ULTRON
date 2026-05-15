@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.342192+00:00
+ingested_at: 2026-05-15T08:12:17.940187+00:00
 ingest_version: 1
 content_hash: blake2b:de21c6b1d8bc139b77a005baecb58c94
-provider_modified_at: 2026-05-14T08:00:19.342192+00:00
+provider_modified_at: 2026-05-15T08:12:17.940187+00:00
 
 title: Nicole LaunchX
 slug: nicole-launchx
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["1 408-859-0718"]
   slack: []
-last_synced: 2026-05-14T08:00:19.342192+00:00
+last_synced: 2026-05-15T08:12:17.940187+00:00
 global: true
 ---
 

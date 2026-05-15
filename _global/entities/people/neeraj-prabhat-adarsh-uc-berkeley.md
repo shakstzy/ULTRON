@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.332429+00:00
+ingested_at: 2026-05-15T08:12:17.930348+00:00
 ingest_version: 1
 content_hash: blake2b:649c85369fe96c86b845b031922660f7
-provider_modified_at: 2026-05-14T08:00:19.332429+00:00
+provider_modified_at: 2026-05-15T08:12:17.930348+00:00
 
 title: Neeraj Prabhat Adarsh UC Berkeley
 slug: neeraj-prabhat-adarsh-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16505878115"]
   slack: []
-last_synced: 2026-05-14T08:00:19.332429+00:00
+last_synced: 2026-05-15T08:12:17.930348+00:00
 global: true
 ---
 

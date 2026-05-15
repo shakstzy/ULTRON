@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.340179+00:00
+ingested_at: 2026-05-15T08:12:17.937954+00:00
 ingest_version: 1
 content_hash: blake2b:a8a16d7d8fe4f1c13d405d0bf56c7939
-provider_modified_at: 2026-05-14T08:00:19.340179+00:00
+provider_modified_at: 2026-05-15T08:12:17.937954+00:00
 
 title: Justin UC Berkeley
 slug: justin-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(559) 917-4848"]
   slack: []
-last_synced: 2026-05-14T08:00:19.340179+00:00
+last_synced: 2026-05-15T08:12:17.937954+00:00
 global: true
 ---
 

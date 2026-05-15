@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.469250+00:00
+ingested_at: 2026-05-15T08:12:18.008645+00:00
 ingest_version: 1
 content_hash: blake2b:7d881bb35fe2c523775c6dce836f8af9
-provider_modified_at: 2026-05-14T08:00:19.469250+00:00
+provider_modified_at: 2026-05-15T08:12:18.008645+00:00
 
 title: Adith Narayanan
 slug: adith-narayanan
@@ -15,7 +15,7 @@ identifiers:
   email: ["adith85086@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.469250+00:00
+last_synced: 2026-05-15T08:12:18.008645+00:00
 global: true
 ---
 

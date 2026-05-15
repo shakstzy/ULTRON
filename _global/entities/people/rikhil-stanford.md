@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.486046+00:00
+ingested_at: 2026-05-15T08:12:18.021248+00:00
 ingest_version: 1
 content_hash: blake2b:036601ec3ee028e25b578841e1870cf7
-provider_modified_at: 2026-05-14T08:00:19.486046+00:00
+provider_modified_at: 2026-05-15T08:12:18.021248+00:00
 
 title: Rikhil Stanford
 slug: rikhil-stanford
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16303971753"]
   slack: []
-last_synced: 2026-05-14T08:00:19.486046+00:00
+last_synced: 2026-05-15T08:12:18.021248+00:00
 global: true
 ---
 

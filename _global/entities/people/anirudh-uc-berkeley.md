@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.324002+00:00
+ingested_at: 2026-05-15T08:12:17.922217+00:00
 ingest_version: 1
 content_hash: blake2b:a8d6aa1a5e9c16f294920a6253d5d82c
-provider_modified_at: 2026-05-14T08:00:19.324002+00:00
+provider_modified_at: 2026-05-15T08:12:17.922217+00:00
 
 title: Anirudh UC Berkeley
 slug: anirudh-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(510) 737-8136"]
   slack: []
-last_synced: 2026-05-14T08:00:19.324002+00:00
+last_synced: 2026-05-15T08:12:17.922217+00:00
 global: true
 ---
 

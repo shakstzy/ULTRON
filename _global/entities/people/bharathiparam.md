@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.496413+00:00
+ingested_at: 2026-05-15T08:12:18.029370+00:00
 ingest_version: 1
 content_hash: blake2b:e314ddf17075fee39c1472676fe7ccf3
-provider_modified_at: 2026-05-14T08:00:19.496413+00:00
+provider_modified_at: 2026-05-15T08:12:18.029370+00:00
 
 title: Bharathiparam
 slug: bharathiparam
@@ -15,7 +15,7 @@ identifiers:
   email: ["bharathiparam@yahoo.com"]
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.496413+00:00
+last_synced: 2026-05-15T08:12:18.029370+00:00
 global: true
 ---
 

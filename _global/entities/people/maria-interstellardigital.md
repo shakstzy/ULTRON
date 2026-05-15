@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.503002+00:00
+ingested_at: 2026-05-15T08:12:18.036106+00:00
 ingest_version: 1
 content_hash: blake2b:59ff6485f1ca4f4eba8534df518478bb
-provider_modified_at: 2026-05-14T08:00:19.503002+00:00
+provider_modified_at: 2026-05-15T08:12:18.036106+00:00
 
 title: Maria | InterstellarDigital
 slug: maria-interstellardigital
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 786-860-7741"]
   slack: []
-last_synced: 2026-05-14T08:00:19.503002+00:00
+last_synced: 2026-05-15T08:12:18.036106+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.508798+00:00
+ingested_at: 2026-05-15T08:12:18.040792+00:00
 ingest_version: 1
 content_hash: blake2b:3e1716d437f8651da1cb5921506bc028
-provider_modified_at: 2026-05-14T08:00:19.508798+00:00
+provider_modified_at: 2026-05-15T08:12:18.040792+00:00
 
 title: Krishna NYC
 slug: krishna-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19255490655"]
   slack: []
-last_synced: 2026-05-14T08:00:19.508798+00:00
+last_synced: 2026-05-15T08:12:18.040792+00:00
 global: true
 ---
 

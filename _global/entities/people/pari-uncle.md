@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.520191+00:00
+ingested_at: 2026-05-15T08:12:18.050538+00:00
 ingest_version: 1
 content_hash: blake2b:0e9567066fa26ddc1e65abdabf33435e
-provider_modified_at: 2026-05-14T08:00:19.520191+00:00
+provider_modified_at: 2026-05-15T08:12:18.050538+00:00
 
 title: Pari Uncle
 slug: pari-uncle
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15129699918"]
   slack: []
-last_synced: 2026-05-14T08:00:19.520191+00:00
+last_synced: 2026-05-15T08:12:18.050538+00:00
 global: true
 ---
 

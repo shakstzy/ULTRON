@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.511922+00:00
+ingested_at: 2026-05-15T08:12:18.043407+00:00
 ingest_version: 1
 content_hash: blake2b:8af665273b5ae31dd33b8daf3ee2920f
-provider_modified_at: 2026-05-14T08:00:19.511922+00:00
+provider_modified_at: 2026-05-15T08:12:18.043407+00:00
 
 title: Adithi Hinge LA
 slug: adithi-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19164621721"]
   slack: []
-last_synced: 2026-05-14T08:00:19.511922+00:00
+last_synced: 2026-05-15T08:12:18.043407+00:00
 global: true
 ---
 

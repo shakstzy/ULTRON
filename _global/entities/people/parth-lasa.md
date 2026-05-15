@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.539230+00:00
+ingested_at: 2026-05-15T08:12:18.067304+00:00
 ingest_version: 1
 content_hash: blake2b:4921ef5c9bbcb6db82d773c3cd6b0641
-provider_modified_at: 2026-05-14T08:00:19.539230+00:00
+provider_modified_at: 2026-05-15T08:12:18.067304+00:00
 
 title: Parth LASA
 slug: parth-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: ["parthmshroff@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.539230+00:00
+last_synced: 2026-05-15T08:12:18.067304+00:00
 global: true
 ---
 

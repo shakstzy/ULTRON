@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.551059+00:00
+ingested_at: 2026-05-15T08:12:18.077835+00:00
 ingest_version: 1
 content_hash: blake2b:477b6cf0ec49ca63c677ba2642e74269
-provider_modified_at: 2026-05-14T08:00:19.551059+00:00
+provider_modified_at: 2026-05-15T08:12:18.077835+00:00
 
 title: Dennis | Blockworks
 slug: dennis-blockworks
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.551059+00:00
+last_synced: 2026-05-15T08:12:18.077835+00:00
 global: true
 ---
 

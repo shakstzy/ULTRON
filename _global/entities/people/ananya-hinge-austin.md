@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.459402+00:00
+ingested_at: 2026-05-15T08:12:18.001548+00:00
 ingest_version: 1
 content_hash: blake2b:8a37f4e5c3fd478102f069527b148b9b
-provider_modified_at: 2026-05-14T08:00:19.459402+00:00
+provider_modified_at: 2026-05-15T08:12:18.001548+00:00
 
 title: Ananya Hinge Austin
 slug: ananya-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12624441568"]
   slack: []
-last_synced: 2026-05-14T08:00:19.459402+00:00
+last_synced: 2026-05-15T08:12:18.001548+00:00
 global: true
 ---
 

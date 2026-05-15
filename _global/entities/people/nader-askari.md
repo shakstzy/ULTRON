@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.530278+00:00
+ingested_at: 2026-05-15T08:12:18.059157+00:00
 ingest_version: 1
 content_hash: blake2b:b025168976ea31261dea889323f4c2fd
-provider_modified_at: 2026-05-14T08:00:19.530278+00:00
+provider_modified_at: 2026-05-15T08:12:18.059157+00:00
 
 title: Nader Askari
 slug: nader-askari
@@ -15,7 +15,7 @@ identifiers:
   email: ["Nader.askari@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.530278+00:00
+last_synced: 2026-05-15T08:12:18.059157+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.351929+00:00
+ingested_at: 2026-05-15T08:12:17.950063+00:00
 ingest_version: 1
 content_hash: blake2b:47e99f904f0fe8b0e64421ba8134a3d9
-provider_modified_at: 2026-05-14T08:00:19.351929+00:00
+provider_modified_at: 2026-05-15T08:12:17.950063+00:00
 
 title: Brennan Dury
 slug: brennan-dury
@@ -15,7 +15,7 @@ identifiers:
   email: ["brennandury@gmail.com", "brennandury52@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.351929+00:00
+last_synced: 2026-05-15T08:12:17.950063+00:00
 global: true
 ---
 

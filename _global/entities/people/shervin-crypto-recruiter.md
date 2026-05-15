@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.390265+00:00
+ingested_at: 2026-05-15T08:12:17.986838+00:00
 ingest_version: 1
 content_hash: blake2b:66b10b20578bef32ace948b0bceea5f9
-provider_modified_at: 2026-05-14T08:00:19.390265+00:00
+provider_modified_at: 2026-05-15T08:12:17.986838+00:00
 
 title: Shervin Crypto Recruiter
 slug: shervin-crypto-recruiter
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17172195423"]
   slack: []
-last_synced: 2026-05-14T08:00:19.390265+00:00
+last_synced: 2026-05-15T08:12:17.986838+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.388807+00:00
+ingested_at: 2026-05-15T08:12:17.973496+00:00
 ingest_version: 1
 content_hash: blake2b:a1176e24dbf227912c18a90a4d3903b4
-provider_modified_at: 2026-05-14T08:00:19.388807+00:00
+provider_modified_at: 2026-05-15T08:12:17.973496+00:00
 
 title: Natalie | FoxWallet
 slug: natalie-foxwallet
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.388807+00:00
+last_synced: 2026-05-15T08:12:17.973496+00:00
 global: true
 ---
 

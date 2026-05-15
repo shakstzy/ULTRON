@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.488853+00:00
+ingested_at: 2026-05-15T08:12:18.023441+00:00
 ingest_version: 1
 content_hash: blake2b:c94c034b18ea2d5f862ff00ef5a1fbd1
-provider_modified_at: 2026-05-14T08:00:19.488853+00:00
+provider_modified_at: 2026-05-15T08:12:18.023441+00:00
 
 title: Sathvik
 slug: sathvik
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(650) 627-6575"]
   slack: []
-last_synced: 2026-05-14T08:00:19.488853+00:00
+last_synced: 2026-05-15T08:12:18.023441+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.520505+00:00
+ingested_at: 2026-05-15T08:12:18.050886+00:00
 ingest_version: 1
 content_hash: blake2b:a9dd37382ba0eab7e552444085c0cbea
-provider_modified_at: 2026-05-14T08:00:19.520505+00:00
+provider_modified_at: 2026-05-15T08:12:18.050886+00:00
 
 title: Shaan  LaunchX
 slug: shaan-launchx
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(650) 776-9592"]
   slack: []
-last_synced: 2026-05-14T08:00:19.520505+00:00
+last_synced: 2026-05-15T08:12:18.050886+00:00
 global: true
 ---
 

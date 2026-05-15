@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.338691+00:00
+ingested_at: 2026-05-15T08:12:17.936230+00:00
 ingest_version: 1
 content_hash: blake2b:6f4fcf3a9e884e4fe867f5efc48c4f61
-provider_modified_at: 2026-05-14T08:00:19.338691+00:00
+provider_modified_at: 2026-05-15T08:12:17.936230+00:00
 
 title: Brian Correll Music
 slug: brian-correll-music
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15408453152"]
   slack: []
-last_synced: 2026-05-14T08:00:19.338691+00:00
+last_synced: 2026-05-15T08:12:17.936230+00:00
 global: true
 ---
 

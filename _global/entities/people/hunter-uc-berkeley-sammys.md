@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.341151+00:00
+ingested_at: 2026-05-15T08:12:17.938932+00:00
 ingest_version: 1
 content_hash: blake2b:599e26a8e4c68eba30097e591de0c517
-provider_modified_at: 2026-05-14T08:00:19.341151+00:00
+provider_modified_at: 2026-05-15T08:12:17.938932+00:00
 
 title: Hunter UC Berkeley Sammys
 slug: hunter-uc-berkeley-sammys
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12133266233"]
   slack: []
-last_synced: 2026-05-14T08:00:19.341151+00:00
+last_synced: 2026-05-15T08:12:17.938932+00:00
 global: true
 ---
 

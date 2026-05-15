@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.344509+00:00
+ingested_at: 2026-05-15T08:12:17.943362+00:00
 ingest_version: 1
 content_hash: blake2b:6556b551ce8c724c7cfb21af733793da
-provider_modified_at: 2026-05-14T08:00:19.344509+00:00
+provider_modified_at: 2026-05-15T08:12:17.943362+00:00
 
 title: B. Martin 🇪🇸
 slug: b-martin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+34 680 95 89 10"]
   slack: []
-last_synced: 2026-05-14T08:00:19.344509+00:00
+last_synced: 2026-05-15T08:12:17.943362+00:00
 global: true
 ---
 

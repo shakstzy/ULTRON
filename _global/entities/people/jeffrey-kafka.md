@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.344966+00:00
+ingested_at: 2026-05-15T08:12:17.943915+00:00
 ingest_version: 1
 content_hash: blake2b:a17c83c6e8113527799ba641fab5693d
-provider_modified_at: 2026-05-14T08:00:19.344966+00:00
+provider_modified_at: 2026-05-15T08:12:17.943915+00:00
 
 title: Jeffrey Kafka
 slug: jeffrey-kafka
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(650) 218-6023"]
   slack: []
-last_synced: 2026-05-14T08:00:19.344966+00:00
+last_synced: 2026-05-15T08:12:17.943915+00:00
 global: true
 ---
 

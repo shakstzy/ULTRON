@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.432907+00:00
+ingested_at: 2026-05-15T08:12:17.997998+00:00
 ingest_version: 1
 content_hash: blake2b:f4183e10278d51cd6c0c303d88feeed0
-provider_modified_at: 2026-05-14T08:00:19.432907+00:00
+provider_modified_at: 2026-05-15T08:12:17.997998+00:00
 
 title: Lakshmi Varadhan Aunty Austin
 slug: lakshmi-varadhan-aunty-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15129717276"]
   slack: []
-last_synced: 2026-05-14T08:00:19.432907+00:00
+last_synced: 2026-05-15T08:12:17.997998+00:00
 global: true
 ---
 

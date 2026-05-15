@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.548113+00:00
+ingested_at: 2026-05-15T08:12:18.075637+00:00
 ingest_version: 1
 content_hash: blake2b:17a6c98002a7b7b3d0919bd1a2df369b
-provider_modified_at: 2026-05-14T08:00:19.548113+00:00
+provider_modified_at: 2026-05-15T08:12:18.075637+00:00
 
 title: Nikhil | RapidNode
 slug: nikhil-rapidnode
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.548113+00:00
+last_synced: 2026-05-15T08:12:18.075637+00:00
 global: true
 ---
 

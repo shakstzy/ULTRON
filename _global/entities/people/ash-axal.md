@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.495356+00:00
+ingested_at: 2026-05-15T08:12:18.028575+00:00
 ingest_version: 1
 content_hash: blake2b:3bae322b658f192c4579a7c9235bbc37
-provider_modified_at: 2026-05-14T08:00:19.495356+00:00
+provider_modified_at: 2026-05-15T08:12:18.028575+00:00
 
 title: Ash | Axal
 slug: ash-axal
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.495356+00:00
+last_synced: 2026-05-15T08:12:18.028575+00:00
 global: true
 ---
 

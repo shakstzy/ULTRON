@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.509990+00:00
+ingested_at: 2026-05-15T08:12:18.041874+00:00
 ingest_version: 1
 content_hash: blake2b:2f7a280ef6b04cfc21c1a0027d689119
-provider_modified_at: 2026-05-14T08:00:19.509990+00:00
+provider_modified_at: 2026-05-15T08:12:18.041874+00:00
 
 title: Kyle Stemberger Prescription LA
 slug: kyle-stemberger-prescription-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14707659419"]
   slack: []
-last_synced: 2026-05-14T08:00:19.509990+00:00
+last_synced: 2026-05-15T08:12:18.041874+00:00
 global: true
 ---
 

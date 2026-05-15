@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.332499+00:00
+ingested_at: 2026-05-15T08:12:17.930413+00:00
 ingest_version: 1
 content_hash: blake2b:4c5930c8139aa087fb56d20d5cc89c0f
-provider_modified_at: 2026-05-14T08:00:19.332499+00:00
+provider_modified_at: 2026-05-15T08:12:17.930413+00:00
 
 title: Vina NYC
 slug: vina-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16617473071"]
   slack: []
-last_synced: 2026-05-14T08:00:19.332499+00:00
+last_synced: 2026-05-15T08:12:17.930413+00:00
 global: true
 ---
 

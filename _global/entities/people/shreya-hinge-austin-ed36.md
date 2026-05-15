@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.275384+00:00
+ingested_at: 2026-05-15T08:12:17.876054+00:00
 ingest_version: 1
 content_hash: blake2b:4d780cc095e95b2caf80d9a81a47bcee
-provider_modified_at: 2026-05-14T08:00:19.275384+00:00
+provider_modified_at: 2026-05-15T08:12:17.876054+00:00
 
 title: Shreya Hinge Austin
 slug: shreya-hinge-austin-ed36
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19452414354"]
   slack: []
-last_synced: 2026-05-14T08:00:19.275384+00:00
+last_synced: 2026-05-15T08:12:17.876054+00:00
 global: true
 ---
 

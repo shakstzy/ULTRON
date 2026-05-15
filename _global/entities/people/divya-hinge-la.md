@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.503239+00:00
+ingested_at: 2026-05-15T08:12:18.036362+00:00
 ingest_version: 1
 content_hash: blake2b:385cb039f35ffb0a661156049ff8c5d3
-provider_modified_at: 2026-05-14T08:00:19.503239+00:00
+provider_modified_at: 2026-05-15T08:12:18.036362+00:00
 
 title: Divya Hinge LA
 slug: divya-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19294069029"]
   slack: []
-last_synced: 2026-05-14T08:00:19.503239+00:00
+last_synced: 2026-05-15T08:12:18.036362+00:00
 global: true
 ---
 

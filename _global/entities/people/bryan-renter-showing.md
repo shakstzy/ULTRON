@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.314631+00:00
+ingested_at: 2026-05-15T08:12:17.913712+00:00
 ingest_version: 1
 content_hash: blake2b:057cfa0f66475643d81e4930105f5ec1
-provider_modified_at: 2026-05-14T08:00:19.314631+00:00
+provider_modified_at: 2026-05-15T08:12:17.913712+00:00
 
 title: Bryan Renter Showing
 slug: bryan-renter-showing
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13233620575"]
   slack: []
-last_synced: 2026-05-14T08:00:19.314631+00:00
+last_synced: 2026-05-15T08:12:17.913712+00:00
 global: true
 ---
 

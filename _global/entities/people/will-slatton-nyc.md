@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.294763+00:00
+ingested_at: 2026-05-15T08:12:17.893875+00:00
 ingest_version: 1
 content_hash: blake2b:2cc3cbdc14c3187900266ffedb7f20ff
-provider_modified_at: 2026-05-14T08:00:19.294763+00:00
+provider_modified_at: 2026-05-15T08:12:17.893875+00:00
 
 title: Will Slatton NYC
 slug: will-slatton-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17378881579"]
   slack: []
-last_synced: 2026-05-14T08:00:19.294763+00:00
+last_synced: 2026-05-15T08:12:17.893875+00:00
 global: true
 ---
 

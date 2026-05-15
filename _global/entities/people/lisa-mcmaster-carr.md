@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.466368+00:00
+ingested_at: 2026-05-15T08:12:18.006619+00:00
 ingest_version: 1
 content_hash: blake2b:cbe453ef888bba2312ef8c02ed4df197
-provider_modified_at: 2026-05-14T08:00:19.466368+00:00
+provider_modified_at: 2026-05-15T08:12:18.006619+00:00
 
 title: Lisa McMaster Carr
 slug: lisa-mcmaster-carr
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16306002373"]
   slack: []
-last_synced: 2026-05-14T08:00:19.466368+00:00
+last_synced: 2026-05-15T08:12:18.006619+00:00
 global: true
 ---
 

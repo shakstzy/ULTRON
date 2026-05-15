@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.350224+00:00
+ingested_at: 2026-05-15T08:12:17.948730+00:00
 ingest_version: 1
 content_hash: blake2b:42ea28217e39fd9a4387c8bf6ae9192d
-provider_modified_at: 2026-05-14T08:00:19.350224+00:00
+provider_modified_at: 2026-05-15T08:12:17.948730+00:00
 
 title: Model UN Tie Dude
 slug: model-un-tie-dude
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(512) 809-0414"]
   slack: []
-last_synced: 2026-05-14T08:00:19.350224+00:00
+last_synced: 2026-05-15T08:12:17.948730+00:00
 global: true
 ---
 

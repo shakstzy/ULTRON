@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.509406+00:00
+ingested_at: 2026-05-15T08:12:18.041331+00:00
 ingest_version: 1
 content_hash: blake2b:b2ce8595feaffc31c17cf577cc63c30a
-provider_modified_at: 2026-05-14T08:00:19.509406+00:00
+provider_modified_at: 2026-05-15T08:12:18.041331+00:00
 
 title: James Carr Engineer Vellese LA
 slug: james-carr-engineer-vellese-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(305) 753-7471"]
   slack: []
-last_synced: 2026-05-14T08:00:19.509406+00:00
+last_synced: 2026-05-15T08:12:18.041331+00:00
 global: true
 ---
 

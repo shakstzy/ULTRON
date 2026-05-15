@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.503958+00:00
+ingested_at: 2026-05-15T08:12:18.037013+00:00
 ingest_version: 1
 content_hash: blake2b:31d5380b2ecc91e09da6720dde61a545
-provider_modified_at: 2026-05-14T08:00:19.503958+00:00
+provider_modified_at: 2026-05-15T08:12:18.037013+00:00
 
 title: Yogitha Hinge Austin
 slug: yogitha-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15104748250"]
   slack: []
-last_synced: 2026-05-14T08:00:19.503958+00:00
+last_synced: 2026-05-15T08:12:18.037013+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.328904+00:00
+ingested_at: 2026-05-15T08:12:17.926974+00:00
 ingest_version: 1
 content_hash: blake2b:316e848dd15016211b800c92e6f2e8fd
-provider_modified_at: 2026-05-14T08:00:19.328904+00:00
+provider_modified_at: 2026-05-15T08:12:17.926974+00:00
 
 title: Will Lee UC Berkeley
 slug: will-lee-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(443) 716-6848"]
   slack: []
-last_synced: 2026-05-14T08:00:19.328904+00:00
+last_synced: 2026-05-15T08:12:17.926974+00:00
 global: true
 ---
 

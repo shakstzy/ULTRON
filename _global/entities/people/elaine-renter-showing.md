@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.335219+00:00
+ingested_at: 2026-05-15T08:12:17.933220+00:00
 ingest_version: 1
 content_hash: blake2b:81cccbdf5a5deed0c7e0ec7731a13e54
-provider_modified_at: 2026-05-14T08:00:19.335219+00:00
+provider_modified_at: 2026-05-15T08:12:17.933220+00:00
 
 title: Elaine Renter Showing
 slug: elaine-renter-showing
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18187441267"]
   slack: []
-last_synced: 2026-05-14T08:00:19.335219+00:00
+last_synced: 2026-05-15T08:12:17.933220+00:00
 global: true
 ---
 

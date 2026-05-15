@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.426749+00:00
+ingested_at: 2026-05-15T08:12:17.996538+00:00
 ingest_version: 1
 content_hash: blake2b:e74d9ce4d585433c689d85daf9b3c29c
-provider_modified_at: 2026-05-14T08:00:19.426749+00:00
+provider_modified_at: 2026-05-15T08:12:17.996538+00:00
 
 title: Rama Tenjerla
 slug: rama-tenjerla
@@ -15,7 +15,7 @@ identifiers:
   email: ["rtenjarl@yahoo.com"]
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.426749+00:00
+last_synced: 2026-05-15T08:12:17.996538+00:00
 global: true
 ---
 

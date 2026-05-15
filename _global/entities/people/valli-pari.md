@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.553597+00:00
+ingested_at: 2026-05-15T08:12:18.079890+00:00
 ingest_version: 1
 content_hash: blake2b:11d8a60e3b29c9f816549b94fc14051e
-provider_modified_at: 2026-05-14T08:00:19.553597+00:00
+provider_modified_at: 2026-05-15T08:12:18.079890+00:00
 
 title: Valli Pari
 slug: valli-pari
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15087458420"]
   slack: []
-last_synced: 2026-05-14T08:00:19.553597+00:00
+last_synced: 2026-05-15T08:12:18.079890+00:00
 global: true
 ---
 

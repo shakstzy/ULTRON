@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.541009+00:00
+ingested_at: 2026-05-15T08:12:18.069365+00:00
 ingest_version: 1
 content_hash: blake2b:b95e4c92eee992b53b066eb699463b35
-provider_modified_at: 2026-05-14T08:00:19.541009+00:00
+provider_modified_at: 2026-05-15T08:12:18.069365+00:00
 
 title: Mack Post Sound Factory LA
 slug: mack-post-sound-factory-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17813307618"]
   slack: []
-last_synced: 2026-05-14T08:00:19.541009+00:00
+last_synced: 2026-05-15T08:12:18.069365+00:00
 global: true
 ---
 

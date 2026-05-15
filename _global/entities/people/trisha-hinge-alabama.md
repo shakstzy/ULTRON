@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.318396+00:00
+ingested_at: 2026-05-15T08:12:17.916814+00:00
 ingest_version: 1
 content_hash: blake2b:e3c893e42f79edd455bd55f854048367
-provider_modified_at: 2026-05-14T08:00:19.318396+00:00
+provider_modified_at: 2026-05-15T08:12:17.916814+00:00
 
 title: Trisha Hinge Alabama
 slug: trisha-hinge-alabama
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12052611661"]
   slack: []
-last_synced: 2026-05-14T08:00:19.318396+00:00
+last_synced: 2026-05-15T08:12:17.916814+00:00
 global: true
 ---
 

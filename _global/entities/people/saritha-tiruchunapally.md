@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.478378+00:00
+ingested_at: 2026-05-15T08:12:18.013953+00:00
 ingest_version: 1
 content_hash: blake2b:ab0449d68cb691230ceed6c2cd03f41b
-provider_modified_at: 2026-05-14T08:00:19.478378+00:00
+provider_modified_at: 2026-05-15T08:12:18.013953+00:00
 
 title: Saritha Tiruchunapally
 slug: saritha-tiruchunapally
@@ -15,7 +15,7 @@ identifiers:
   email: ["stiruchunapally@yahoo.com"]
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.478378+00:00
+last_synced: 2026-05-15T08:12:18.013953+00:00
 global: true
 ---
 

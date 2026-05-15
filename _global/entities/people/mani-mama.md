@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.339849+00:00
+ingested_at: 2026-05-15T08:12:17.937615+00:00
 ingest_version: 1
 content_hash: blake2b:77f447ed0f71dcdb12b8ea8ed054d885
-provider_modified_at: 2026-05-14T08:00:19.339849+00:00
+provider_modified_at: 2026-05-15T08:12:17.937615+00:00
 
 title: Mani Mama
 slug: mani-mama
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14698317965"]
   slack: []
-last_synced: 2026-05-14T08:00:19.339849+00:00
+last_synced: 2026-05-15T08:12:17.937615+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.335475+00:00
+ingested_at: 2026-05-15T08:12:17.933425+00:00
 ingest_version: 1
 content_hash: blake2b:e12a1930dd2c5b1f8a9e2ae7ab3695a8
-provider_modified_at: 2026-05-14T08:00:19.335475+00:00
+provider_modified_at: 2026-05-15T08:12:17.933425+00:00
 
 title: Sandeep Chinchali Austin
 slug: sandeep-chinchali-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14084554861"]
   slack: []
-last_synced: 2026-05-14T08:00:19.335475+00:00
+last_synced: 2026-05-15T08:12:17.933425+00:00
 global: true
 ---
 

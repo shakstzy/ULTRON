@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.375301+00:00
+ingested_at: 2026-05-15T08:12:17.952468+00:00
 ingest_version: 1
 content_hash: blake2b:9abf4dc3cc5c49fd2ffe4f4a1fe14837
-provider_modified_at: 2026-05-14T08:00:19.375301+00:00
+provider_modified_at: 2026-05-15T08:12:17.952468+00:00
 
 title: Rhea Prescription LA
 slug: rhea-prescription-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12483462325"]
   slack: []
-last_synced: 2026-05-14T08:00:19.375301+00:00
+last_synced: 2026-05-15T08:12:17.952468+00:00
 global: true
 ---
 

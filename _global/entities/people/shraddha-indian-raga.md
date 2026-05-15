@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.466956+00:00
+ingested_at: 2026-05-15T08:12:18.007094+00:00
 ingest_version: 1
 content_hash: blake2b:21dc4cd53381f07d1d1634f9ca902721
-provider_modified_at: 2026-05-14T08:00:19.466956+00:00
+provider_modified_at: 2026-05-15T08:12:18.007094+00:00
 
 title: Shraddha INDIAN RAGA
 slug: shraddha-indian-raga
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 352-631-4459"]
   slack: []
-last_synced: 2026-05-14T08:00:19.466956+00:00
+last_synced: 2026-05-15T08:12:18.007094+00:00
 global: true
 ---
 

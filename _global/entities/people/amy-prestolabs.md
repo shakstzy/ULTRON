@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.418268+00:00
+ingested_at: 2026-05-15T08:12:17.992082+00:00
 ingest_version: 1
 content_hash: blake2b:6d001a8c507b70a9f1c059517e835eb2
-provider_modified_at: 2026-05-14T08:00:19.418268+00:00
+provider_modified_at: 2026-05-15T08:12:17.992082+00:00
 
 title: Amy | PrestoLabs
 slug: amy-prestolabs
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+82 10-9565-8972"]
   slack: []
-last_synced: 2026-05-14T08:00:19.418268+00:00
+last_synced: 2026-05-15T08:12:17.992082+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.509481+00:00
+ingested_at: 2026-05-15T08:12:18.041403+00:00
 ingest_version: 1
 content_hash: blake2b:eeeb5ada2faf2da34afb6d39b4e69aec
-provider_modified_at: 2026-05-14T08:00:19.509481+00:00
+provider_modified_at: 2026-05-15T08:12:18.041403+00:00
 
 title: Uday Uncle
 slug: uday-uncle
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16508143703"]
   slack: []
-last_synced: 2026-05-14T08:00:19.509481+00:00
+last_synced: 2026-05-15T08:12:18.041403+00:00
 global: true
 ---
 

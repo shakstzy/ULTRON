@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.499927+00:00
+ingested_at: 2026-05-15T08:12:18.032561+00:00
 ingest_version: 1
 content_hash: blake2b:be7c5d9d0ef173626781a7fde278bd4a
-provider_modified_at: 2026-05-14T08:00:19.499927+00:00
+provider_modified_at: 2026-05-15T08:12:18.032561+00:00
 
 title: John Taboada
 slug: john-taboada
@@ -15,7 +15,7 @@ identifiers:
   email: ["john@taboadalawfirm.com"]
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.499927+00:00
+last_synced: 2026-05-15T08:12:18.032561+00:00
 global: true
 ---
 

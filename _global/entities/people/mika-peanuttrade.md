@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.292380+00:00
+ingested_at: 2026-05-15T08:12:17.891138+00:00
 ingest_version: 1
 content_hash: blake2b:881faf83f4aebf96089a7913ded317fa
-provider_modified_at: 2026-05-14T08:00:19.292380+00:00
+provider_modified_at: 2026-05-15T08:12:17.891138+00:00
 
 title: Mika | PeanutTrade
 slug: mika-peanuttrade
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+31 6 37179080"]
   slack: []
-last_synced: 2026-05-14T08:00:19.292380+00:00
+last_synced: 2026-05-15T08:12:17.891138+00:00
 global: true
 ---
 

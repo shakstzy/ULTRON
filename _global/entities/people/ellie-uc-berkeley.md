@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.320561+00:00
+ingested_at: 2026-05-15T08:12:17.918736+00:00
 ingest_version: 1
 content_hash: blake2b:8fe0ce299a330dd0cba2360504fe1312
-provider_modified_at: 2026-05-14T08:00:19.320561+00:00
+provider_modified_at: 2026-05-15T08:12:17.918736+00:00
 
 title: Ellie UC Berkeley
 slug: ellie-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17143078926"]
   slack: []
-last_synced: 2026-05-14T08:00:19.320561+00:00
+last_synced: 2026-05-15T08:12:17.918736+00:00
 global: true
 ---
 

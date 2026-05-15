@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.544317+00:00
+ingested_at: 2026-05-15T08:12:18.072602+00:00
 ingest_version: 1
 content_hash: blake2b:823da83ef1ae55240c1c9d0b9e55052d
-provider_modified_at: 2026-05-14T08:00:19.544317+00:00
+provider_modified_at: 2026-05-15T08:12:18.072602+00:00
 
 title: Dora | Eigenlayer
 slug: dora-eigenlayer
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.544317+00:00
+last_synced: 2026-05-15T08:12:18.072602+00:00
 global: true
 ---
 

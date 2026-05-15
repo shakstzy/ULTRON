@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.484337+00:00
+ingested_at: 2026-05-15T08:12:18.019981+00:00
 ingest_version: 1
 content_hash: blake2b:334366be5554912928a9d164b578b893
-provider_modified_at: 2026-05-14T08:00:19.484337+00:00
+provider_modified_at: 2026-05-15T08:12:18.019981+00:00
 
 title: Summer | AlterimAi
 slug: summer-alterimai
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.484337+00:00
+last_synced: 2026-05-15T08:12:18.019981+00:00
 global: true
 ---
 

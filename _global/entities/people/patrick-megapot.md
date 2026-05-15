@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.385125+00:00
+ingested_at: 2026-05-15T08:12:17.957457+00:00
 ingest_version: 1
 content_hash: blake2b:da01fe5b6c5533d8b78f8d4505abc4ee
-provider_modified_at: 2026-05-14T08:00:19.385125+00:00
+provider_modified_at: 2026-05-15T08:12:17.957457+00:00
 
 title: Patrick | Megapot
 slug: patrick-megapot
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.385125+00:00
+last_synced: 2026-05-15T08:12:17.957457+00:00
 global: true
 ---
 

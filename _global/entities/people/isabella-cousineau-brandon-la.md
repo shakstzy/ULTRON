@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.284862+00:00
+ingested_at: 2026-05-15T08:12:17.885789+00:00
 ingest_version: 1
 content_hash: blake2b:119f19dac077c806cd99db1a9a00ab9d
-provider_modified_at: 2026-05-14T08:00:19.284862+00:00
+provider_modified_at: 2026-05-15T08:12:17.885789+00:00
 
 title: Isabella Cousineau Brandon LA
 slug: isabella-cousineau-brandon-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17207516858"]
   slack: []
-last_synced: 2026-05-14T08:00:19.284862+00:00
+last_synced: 2026-05-15T08:12:17.885789+00:00
 global: true
 ---
 

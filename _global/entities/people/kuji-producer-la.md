@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.501858+00:00
+ingested_at: 2026-05-15T08:12:18.034744+00:00
 ingest_version: 1
 content_hash: blake2b:7f5a442d6572a21de574eb82de35ee58
-provider_modified_at: 2026-05-14T08:00:19.501858+00:00
+provider_modified_at: 2026-05-15T08:12:18.034744+00:00
 
 title: Kuji Producer LA
 slug: kuji-producer-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+972545814463"]
   slack: []
-last_synced: 2026-05-14T08:00:19.501858+00:00
+last_synced: 2026-05-15T08:12:18.034744+00:00
 global: true
 ---
 

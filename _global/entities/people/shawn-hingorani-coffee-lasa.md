@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.467335+00:00
+ingested_at: 2026-05-15T08:12:18.007421+00:00
 ingest_version: 1
 content_hash: blake2b:a698b61394aa154320916702a9ea66f1
-provider_modified_at: 2026-05-14T08:00:19.467335+00:00
+provider_modified_at: 2026-05-15T08:12:18.007421+00:00
 
 title: Shawn Hingorani Coffee LASA
 slug: shawn-hingorani-coffee-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-810-0436"]
   slack: []
-last_synced: 2026-05-14T08:00:19.467335+00:00
+last_synced: 2026-05-15T08:12:18.007421+00:00
 global: true
 ---
 

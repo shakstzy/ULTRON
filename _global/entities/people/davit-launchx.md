@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.536778+00:00
+ingested_at: 2026-05-15T08:12:18.064727+00:00
 ingest_version: 1
 content_hash: blake2b:8c975159eb7e419ef8636d1f488807f4
-provider_modified_at: 2026-05-14T08:00:19.536778+00:00
+provider_modified_at: 2026-05-15T08:12:18.064727+00:00
 
 title: Davit LaunchX
 slug: davit-launchx
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(818) 400-0524"]
   slack: []
-last_synced: 2026-05-14T08:00:19.536778+00:00
+last_synced: 2026-05-15T08:12:18.064727+00:00
 global: true
 ---
 

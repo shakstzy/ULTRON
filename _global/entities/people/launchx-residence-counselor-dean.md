@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.526318+00:00
+ingested_at: 2026-05-15T08:12:18.056092+00:00
 ingest_version: 1
 content_hash: blake2b:fd01d459d4941f71d4b7b651f5e27000
-provider_modified_at: 2026-05-14T08:00:19.526318+00:00
+provider_modified_at: 2026-05-15T08:12:18.056092+00:00
 
 title: LaunchX Residence Counselor Dean
 slug: launchx-residence-counselor-dean
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(862) 228-3282"]
   slack: []
-last_synced: 2026-05-14T08:00:19.526318+00:00
+last_synced: 2026-05-15T08:12:18.056092+00:00
 global: true
 ---
 

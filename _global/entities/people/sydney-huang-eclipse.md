@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.538047+00:00
+ingested_at: 2026-05-15T08:12:18.065898+00:00
 ingest_version: 1
 content_hash: blake2b:7381febd140fddaa37a3f9bf32c930cf
-provider_modified_at: 2026-05-14T08:00:19.538047+00:00
+provider_modified_at: 2026-05-15T08:12:18.065898+00:00
 
 title: Sydney Huang Eclipse
 slug: sydney-huang-eclipse
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["323-828-8528"]
   slack: []
-last_synced: 2026-05-14T08:00:19.538047+00:00
+last_synced: 2026-05-15T08:12:18.065898+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.538483+00:00
+ingested_at: 2026-05-15T08:12:18.066424+00:00
 ingest_version: 1
 content_hash: blake2b:bdc54a5827a632dbe5f8e6d4d65a27dc
-provider_modified_at: 2026-05-14T08:00:19.538483+00:00
+provider_modified_at: 2026-05-15T08:12:18.066424+00:00
 
 title: Natalie Hinge SD
 slug: natalie-hinge-sd
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14087053104"]
   slack: []
-last_synced: 2026-05-14T08:00:19.538483+00:00
+last_synced: 2026-05-15T08:12:18.066424+00:00
 global: true
 ---
 

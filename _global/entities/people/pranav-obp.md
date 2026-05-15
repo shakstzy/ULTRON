@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.296299+00:00
+ingested_at: 2026-05-15T08:12:17.895272+00:00
 ingest_version: 1
 content_hash: blake2b:d9d9b68f81ea1bcbe94885d15b70a964
-provider_modified_at: 2026-05-14T08:00:19.296299+00:00
+provider_modified_at: 2026-05-15T08:12:17.895272+00:00
 
 title: Pranav OBP
 slug: pranav-obp
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 (847) 732-0621"]
   slack: []
-last_synced: 2026-05-14T08:00:19.296299+00:00
+last_synced: 2026-05-15T08:12:17.895272+00:00
 global: true
 ---
 

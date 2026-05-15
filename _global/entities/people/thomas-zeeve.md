@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.284983+00:00
+ingested_at: 2026-05-15T08:12:17.885960+00:00
 ingest_version: 1
 content_hash: blake2b:448dbb29790f70b47e91330175c5b4eb
-provider_modified_at: 2026-05-14T08:00:19.284983+00:00
+provider_modified_at: 2026-05-15T08:12:17.885960+00:00
 
 title: Thomas | Zeeve
 slug: thomas-zeeve
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.284983+00:00
+last_synced: 2026-05-15T08:12:17.885960+00:00
 global: true
 ---
 

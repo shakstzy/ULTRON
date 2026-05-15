@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.345547+00:00
+ingested_at: 2026-05-15T08:12:17.944523+00:00
 ingest_version: 1
 content_hash: blake2b:36cc9a2e7aa676d642136c919bb35a74
-provider_modified_at: 2026-05-14T08:00:19.345547+00:00
+provider_modified_at: 2026-05-15T08:12:17.944523+00:00
 
 title: Harsha Uncle
 slug: harsha-uncle
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 (408) 836-1495"]
   slack: []
-last_synced: 2026-05-14T08:00:19.345547+00:00
+last_synced: 2026-05-15T08:12:17.944523+00:00
 global: true
 ---
 

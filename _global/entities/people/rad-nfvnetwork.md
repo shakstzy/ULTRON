@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.481776+00:00
+ingested_at: 2026-05-15T08:12:18.017183+00:00
 ingest_version: 1
 content_hash: blake2b:ba599c3dbb5ceac4945082954daa8488
-provider_modified_at: 2026-05-14T08:00:19.481776+00:00
+provider_modified_at: 2026-05-15T08:12:18.017183+00:00
 
 title: ₿rad | NFVNetwork
 slug: rad-nfvnetwork
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 469-669-8878"]
   slack: []
-last_synced: 2026-05-14T08:00:19.481776+00:00
+last_synced: 2026-05-15T08:12:18.017183+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.435509+00:00
+ingested_at: 2026-05-15T08:12:17.998786+00:00
 ingest_version: 1
 content_hash: blake2b:05151e269b2a10f087d4b6087798c1c8
-provider_modified_at: 2026-05-14T08:00:19.435509+00:00
+provider_modified_at: 2026-05-15T08:12:17.998786+00:00
 
 title: Anai Hinge Austin
 slug: anai-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18178228867"]
   slack: []
-last_synced: 2026-05-14T08:00:19.435509+00:00
+last_synced: 2026-05-15T08:12:17.998786+00:00
 global: true
 ---
 

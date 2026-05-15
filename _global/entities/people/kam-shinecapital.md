@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.386490+00:00
+ingested_at: 2026-05-15T08:12:17.959030+00:00
 ingest_version: 1
 content_hash: blake2b:72d194d577484b581f21913f3bf4ee83
-provider_modified_at: 2026-05-14T08:00:19.386490+00:00
+provider_modified_at: 2026-05-15T08:12:17.959030+00:00
 
 title: Kam ShineCapital
 slug: kam-shinecapital
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17144741613"]
   slack: []
-last_synced: 2026-05-14T08:00:19.386490+00:00
+last_synced: 2026-05-15T08:12:17.959030+00:00
 global: true
 ---
 

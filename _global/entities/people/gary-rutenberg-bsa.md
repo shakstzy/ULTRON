@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.505323+00:00
+ingested_at: 2026-05-15T08:12:18.038184+00:00
 ingest_version: 1
 content_hash: blake2b:ac42212c57c6eae298598054e1c7b6a6
-provider_modified_at: 2026-05-14T08:00:19.505323+00:00
+provider_modified_at: 2026-05-15T08:12:18.038184+00:00
 
 title: Gary Rutenberg BSA
 slug: gary-rutenberg-bsa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(512) 388-5387"]
   slack: []
-last_synced: 2026-05-14T08:00:19.505323+00:00
+last_synced: 2026-05-15T08:12:18.038184+00:00
 global: true
 ---
 

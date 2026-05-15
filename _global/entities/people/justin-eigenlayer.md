@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.491268+00:00
+ingested_at: 2026-05-15T08:12:18.025568+00:00
 ingest_version: 1
 content_hash: blake2b:e2cc4e417e4c4e0945c2152ef7b0074c
-provider_modified_at: 2026-05-14T08:00:19.491268+00:00
+provider_modified_at: 2026-05-15T08:12:18.025568+00:00
 
 title: Justin | Eigenlayer
 slug: justin-eigenlayer
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.491268+00:00
+last_synced: 2026-05-15T08:12:18.025568+00:00
 global: true
 ---
 

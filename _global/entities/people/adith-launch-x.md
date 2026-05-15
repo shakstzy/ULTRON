@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.551154+00:00
+ingested_at: 2026-05-15T08:12:18.077897+00:00
 ingest_version: 1
 content_hash: blake2b:c4fc70aa4297cafd57d86c61efc63608
-provider_modified_at: 2026-05-14T08:00:19.551154+00:00
+provider_modified_at: 2026-05-15T08:12:18.077897+00:00
 
 title: Adith Launch X
 slug: adith-launch-x
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(480) 749-8254"]
   slack: []
-last_synced: 2026-05-14T08:00:19.551154+00:00
+last_synced: 2026-05-15T08:12:18.077897+00:00
 global: true
 ---
 

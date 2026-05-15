@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.501239+00:00
+ingested_at: 2026-05-15T08:12:18.034034+00:00
 ingest_version: 1
 content_hash: blake2b:9f1aaf1b25b262c377e2b192371ebe4d
-provider_modified_at: 2026-05-14T08:00:19.501239+00:00
+provider_modified_at: 2026-05-15T08:12:18.034034+00:00
 
 title: Charles | EtherFi
 slug: charles-etherfi
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.501239+00:00
+last_synced: 2026-05-15T08:12:18.034034+00:00
 global: true
 ---
 

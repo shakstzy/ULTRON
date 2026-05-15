@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.422344+00:00
+ingested_at: 2026-05-15T08:12:17.995039+00:00
 ingest_version: 1
 content_hash: blake2b:a721fae6231e10e339e0142e2d6280a0
-provider_modified_at: 2026-05-14T08:00:19.422344+00:00
+provider_modified_at: 2026-05-15T08:12:17.995039+00:00
 
 title: Niv Amos OneSphere
 slug: niv-amos-onesphere
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18574159455"]
   slack: []
-last_synced: 2026-05-14T08:00:19.422344+00:00
+last_synced: 2026-05-15T08:12:17.995039+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.386106+00:00
+ingested_at: 2026-05-15T08:12:17.958588+00:00
 ingest_version: 1
 content_hash: blake2b:4f3b4dd318df4418bb55f680ff6ee95e
-provider_modified_at: 2026-05-14T08:00:19.386106+00:00
+provider_modified_at: 2026-05-15T08:12:17.958588+00:00
 
 title: Forough Ashrafi Stanford LEAD
 slug: forough-ashrafi-stanford-lead
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13102100439"]
   slack: []
-last_synced: 2026-05-14T08:00:19.386106+00:00
+last_synced: 2026-05-15T08:12:17.958588+00:00
 global: true
 ---
 

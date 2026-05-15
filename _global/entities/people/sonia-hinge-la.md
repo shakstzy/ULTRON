@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.510665+00:00
+ingested_at: 2026-05-15T08:12:18.042472+00:00
 ingest_version: 1
 content_hash: blake2b:343e40a4bfe3f76b5107fcedebaa000c
-provider_modified_at: 2026-05-14T08:00:19.510665+00:00
+provider_modified_at: 2026-05-15T08:12:18.042472+00:00
 
 title: Sonia Hinge LA
 slug: sonia-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16614328775"]
   slack: []
-last_synced: 2026-05-14T08:00:19.510665+00:00
+last_synced: 2026-05-15T08:12:18.042472+00:00
 global: true
 ---
 

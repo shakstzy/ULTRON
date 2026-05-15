@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.343995+00:00
+ingested_at: 2026-05-15T08:12:17.942653+00:00
 ingest_version: 1
 content_hash: blake2b:ffaad6792ea26dfc7de2cde854e9c3af
-provider_modified_at: 2026-05-14T08:00:19.343995+00:00
+provider_modified_at: 2026-05-15T08:12:17.942653+00:00
 
 title: Om LASA
 slug: om-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 609-216-6034"]
   slack: []
-last_synced: 2026-05-14T08:00:19.343995+00:00
+last_synced: 2026-05-15T08:12:17.942653+00:00
 global: true
 ---
 

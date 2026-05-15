@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.424629+00:00
+ingested_at: 2026-05-15T08:12:17.996053+00:00
 ingest_version: 1
 content_hash: blake2b:fb2e620f0a46bb83c90a90be3eb4f0e6
-provider_modified_at: 2026-05-14T08:00:19.424629+00:00
+provider_modified_at: 2026-05-15T08:12:17.996053+00:00
 
 title: Angus UC Berkeley
 slug: angus-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["805 448 6743"]
   slack: []
-last_synced: 2026-05-14T08:00:19.424629+00:00
+last_synced: 2026-05-15T08:12:17.996053+00:00
 global: true
 ---
 

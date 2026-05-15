@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.416332+00:00
+ingested_at: 2026-05-15T08:12:17.990686+00:00
 ingest_version: 1
 content_hash: blake2b:aea774e2cf1bb282c82f3c0262af1007
-provider_modified_at: 2026-05-14T08:00:19.416332+00:00
+provider_modified_at: 2026-05-15T08:12:17.990686+00:00
 
 title: Pavan Teja
 slug: pavan-teja
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 (469) 389-2988"]
   slack: []
-last_synced: 2026-05-14T08:00:19.416332+00:00
+last_synced: 2026-05-15T08:12:17.990686+00:00
 global: true
 ---
 

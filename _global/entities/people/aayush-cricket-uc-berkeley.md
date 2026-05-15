@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.481857+00:00
+ingested_at: 2026-05-15T08:12:18.017273+00:00
 ingest_version: 1
 content_hash: blake2b:ef8aa912f4baf807a2ecb3a922406e3f
-provider_modified_at: 2026-05-14T08:00:19.481857+00:00
+provider_modified_at: 2026-05-15T08:12:18.017273+00:00
 
 title: Aayush Cricket UC Berkeley
 slug: aayush-cricket-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(763) 360-2030"]
   slack: []
-last_synced: 2026-05-14T08:00:19.481857+00:00
+last_synced: 2026-05-15T08:12:18.017273+00:00
 global: true
 ---
 

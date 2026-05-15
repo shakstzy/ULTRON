@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.330077+00:00
+ingested_at: 2026-05-15T08:12:17.928125+00:00
 ingest_version: 1
 content_hash: blake2b:eba51ff995a1729b8503d06f534bb320
-provider_modified_at: 2026-05-14T08:00:19.330077+00:00
+provider_modified_at: 2026-05-15T08:12:17.928125+00:00
 
 title: CK Aunty
 slug: ck-aunty
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15129654225"]
   slack: []
-last_synced: 2026-05-14T08:00:19.330077+00:00
+last_synced: 2026-05-15T08:12:17.928125+00:00
 global: true
 ---
 

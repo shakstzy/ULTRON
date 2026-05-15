@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.553522+00:00
+ingested_at: 2026-05-15T08:12:18.079822+00:00
 ingest_version: 1
 content_hash: blake2b:ca01b520ac790f261971340900cdbae5
-provider_modified_at: 2026-05-14T08:00:19.553522+00:00
+provider_modified_at: 2026-05-15T08:12:18.079822+00:00
 
 title: Richard Liu LASA
 slug: richard-liu-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1-512-815-6847"]
   slack: []
-last_synced: 2026-05-14T08:00:19.553522+00:00
+last_synced: 2026-05-15T08:12:18.079822+00:00
 global: true
 ---
 

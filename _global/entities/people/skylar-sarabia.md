@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.344902+00:00
+ingested_at: 2026-05-15T08:12:17.943852+00:00
 ingest_version: 1
 content_hash: blake2b:e1db3af3ab0c18f1c6b4c333fa97e7c8
-provider_modified_at: 2026-05-14T08:00:19.344902+00:00
+provider_modified_at: 2026-05-15T08:12:17.943852+00:00
 
 title: Skylar Sarabia
 slug: skylar-sarabia
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13107290332"]
   slack: []
-last_synced: 2026-05-14T08:00:19.344902+00:00
+last_synced: 2026-05-15T08:12:17.943852+00:00
 global: true
 ---
 

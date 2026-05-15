@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.331165+00:00
+ingested_at: 2026-05-15T08:12:17.929077+00:00
 ingest_version: 1
 content_hash: blake2b:b42729d26206c13bfe497e16fec97d45
-provider_modified_at: 2026-05-14T08:00:19.331165+00:00
+provider_modified_at: 2026-05-15T08:12:17.929077+00:00
 
 title: Shobana ContentWriter SignaturesTeam REProject
 slug: shobana-contentwriter-signaturesteam-rep
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+919487582241"]
   slack: []
-last_synced: 2026-05-14T08:00:19.331165+00:00
+last_synced: 2026-05-15T08:12:17.929077+00:00
 global: true
 ---
 

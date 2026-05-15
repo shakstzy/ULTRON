@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.298952+00:00
+ingested_at: 2026-05-15T08:12:17.898312+00:00
 ingest_version: 1
 content_hash: blake2b:fa45aa6454abdd6ed9d3cf6451512bd0
-provider_modified_at: 2026-05-14T08:00:19.298952+00:00
+provider_modified_at: 2026-05-15T08:12:17.898312+00:00
 
 title: Joseph | LayerBank
 slug: joseph-layerbank
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.298952+00:00
+last_synced: 2026-05-15T08:12:17.898312+00:00
 global: true
 ---
 

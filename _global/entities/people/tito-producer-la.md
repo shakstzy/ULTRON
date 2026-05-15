@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.517490+00:00
+ingested_at: 2026-05-15T08:12:18.047892+00:00
 ingest_version: 1
 content_hash: blake2b:5149eb691f44f749624a34c608958f6f
-provider_modified_at: 2026-05-14T08:00:19.517490+00:00
+provider_modified_at: 2026-05-15T08:12:18.047892+00:00
 
 title: Tito Producer LA
 slug: tito-producer-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 304-368-8559"]
   slack: []
-last_synced: 2026-05-14T08:00:19.517490+00:00
+last_synced: 2026-05-15T08:12:18.047892+00:00
 global: true
 ---
 

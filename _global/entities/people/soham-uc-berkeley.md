@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.297147+00:00
+ingested_at: 2026-05-15T08:12:17.896287+00:00
 ingest_version: 1
 content_hash: blake2b:d8463a9b3f79f74f0c410e99034ae554
-provider_modified_at: 2026-05-14T08:00:19.297147+00:00
+provider_modified_at: 2026-05-15T08:12:17.896287+00:00
 
 title: Soham UC Berkeley
 slug: soham-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["7145881895"]
   slack: []
-last_synced: 2026-05-14T08:00:19.297147+00:00
+last_synced: 2026-05-15T08:12:17.896287+00:00
 global: true
 ---
 

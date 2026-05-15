@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.493377+00:00
+ingested_at: 2026-05-15T08:12:18.027093+00:00
 ingest_version: 1
 content_hash: blake2b:0e3d3ef903d019b4bf90c8139735c41f
-provider_modified_at: 2026-05-14T08:00:19.493377+00:00
+provider_modified_at: 2026-05-15T08:12:18.027093+00:00
 
 title: Matthew Stewart HARVARD DRONE
 slug: matthew-stewart-harvard-drone
@@ -15,7 +15,7 @@ identifiers:
   email: ["matthew_stewart@g.harvard.edu"]
   phone: ["(617) 543-0728"]
   slack: []
-last_synced: 2026-05-14T08:00:19.493377+00:00
+last_synced: 2026-05-15T08:12:18.027093+00:00
 global: true
 ---
 

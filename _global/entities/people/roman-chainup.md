@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.348585+00:00
+ingested_at: 2026-05-15T08:12:17.947287+00:00
 ingest_version: 1
 content_hash: blake2b:51e18abf50ce4e272c991a4b58d96f07
-provider_modified_at: 2026-05-14T08:00:19.348585+00:00
+provider_modified_at: 2026-05-15T08:12:17.947287+00:00
 
 title: Roman | Chainup
 slug: roman-chainup
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+27 62 440 3758"]
   slack: []
-last_synced: 2026-05-14T08:00:19.348585+00:00
+last_synced: 2026-05-15T08:12:17.947287+00:00
 global: true
 ---
 

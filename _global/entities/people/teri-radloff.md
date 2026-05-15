@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.299333+00:00
+ingested_at: 2026-05-15T08:12:17.898733+00:00
 ingest_version: 1
 content_hash: blake2b:6e08543bb2526af52705e04083c6d6ca
-provider_modified_at: 2026-05-14T08:00:19.299333+00:00
+provider_modified_at: 2026-05-15T08:12:17.898733+00:00
 
 title: Teri Radloff
 slug: teri-radloff
@@ -15,7 +15,7 @@ identifiers:
   email: ["teri.radloff@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.299333+00:00
+last_synced: 2026-05-15T08:12:17.898733+00:00
 global: true
 ---
 

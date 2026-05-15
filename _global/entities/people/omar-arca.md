@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.341872+00:00
+ingested_at: 2026-05-15T08:12:17.939748+00:00
 ingest_version: 1
 content_hash: blake2b:8e97bfb4058673b006e8bb372dd920ad
-provider_modified_at: 2026-05-14T08:00:19.341872+00:00
+provider_modified_at: 2026-05-15T08:12:17.939748+00:00
 
 title: Omar | Arca
 slug: omar-arca
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.341872+00:00
+last_synced: 2026-05-15T08:12:17.939748+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.538257+00:00
+ingested_at: 2026-05-15T08:12:18.066163+00:00
 ingest_version: 1
 content_hash: blake2b:388991e6c7a232b5dd16cc01f2c9198a
-provider_modified_at: 2026-05-14T08:00:19.538257+00:00
+provider_modified_at: 2026-05-15T08:12:18.066163+00:00
 
 title: Kannan Ramesh
 slug: kannan-ramesh
@@ -15,7 +15,7 @@ identifiers:
   email: ["k.leoramesh@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.538257+00:00
+last_synced: 2026-05-15T08:12:18.066163+00:00
 global: true
 ---
 

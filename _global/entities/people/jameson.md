@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.537904+00:00
+ingested_at: 2026-05-15T08:12:18.065744+00:00
 ingest_version: 1
 content_hash: blake2b:59f78c4367a1d41eff2a74bc04047163
-provider_modified_at: 2026-05-14T08:00:19.537904+00:00
+provider_modified_at: 2026-05-15T08:12:18.065744+00:00
 
 title: Jameson
 slug: jameson
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13232471848"]
   slack: []
-last_synced: 2026-05-14T08:00:19.537904+00:00
+last_synced: 2026-05-15T08:12:18.065744+00:00
 global: true
 ---
 

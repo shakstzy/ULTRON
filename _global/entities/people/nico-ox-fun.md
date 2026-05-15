@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.506818+00:00
+ingested_at: 2026-05-15T08:12:18.039316+00:00
 ingest_version: 1
 content_hash: blake2b:b55d57d1e1097dd3252a9ec572b808e4
-provider_modified_at: 2026-05-14T08:00:19.506818+00:00
+provider_modified_at: 2026-05-15T08:12:18.039316+00:00
 
 title: Nico | Ox.Fun
 slug: nico-ox-fun
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.506818+00:00
+last_synced: 2026-05-15T08:12:18.039316+00:00
 global: true
 ---
 

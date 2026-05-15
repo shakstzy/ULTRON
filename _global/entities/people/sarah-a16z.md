@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.346577+00:00
+ingested_at: 2026-05-15T08:12:17.945465+00:00
 ingest_version: 1
 content_hash: blake2b:e4c467452ef3493684ea6acaf411d471
-provider_modified_at: 2026-05-14T08:00:19.346577+00:00
+provider_modified_at: 2026-05-15T08:12:17.945465+00:00
 
 title: Sarah A16Z
 slug: sarah-a16z
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16282866274"]
   slack: []
-last_synced: 2026-05-14T08:00:19.346577+00:00
+last_synced: 2026-05-15T08:12:17.945465+00:00
 global: true
 ---
 

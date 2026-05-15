@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.480574+00:00
+ingested_at: 2026-05-15T08:12:18.015773+00:00
 ingest_version: 1
 content_hash: blake2b:ce0fcb1b4b6cb6c7010b9ef317c594fc
-provider_modified_at: 2026-05-14T08:00:19.480574+00:00
+provider_modified_at: 2026-05-15T08:12:18.015773+00:00
 
 title: Ellery Buntel EF Program
 slug: ellery-buntel-ef-program
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17815183881"]
   slack: []
-last_synced: 2026-05-14T08:00:19.480574+00:00
+last_synced: 2026-05-15T08:12:18.015773+00:00
 global: true
 ---
 

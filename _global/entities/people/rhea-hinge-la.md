@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.383424+00:00
+ingested_at: 2026-05-15T08:12:17.955876+00:00
 ingest_version: 1
 content_hash: blake2b:c428d2262a3bb0fa8bcc0edc13c907c5
-provider_modified_at: 2026-05-14T08:00:19.383424+00:00
+provider_modified_at: 2026-05-15T08:12:17.955876+00:00
 
 title: Rhea Hinge LA
 slug: rhea-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17477243260"]
   slack: []
-last_synced: 2026-05-14T08:00:19.383424+00:00
+last_synced: 2026-05-15T08:12:17.955876+00:00
 global: true
 ---
 

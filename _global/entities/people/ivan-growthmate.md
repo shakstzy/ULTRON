@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.529083+00:00
+ingested_at: 2026-05-15T08:12:18.058168+00:00
 ingest_version: 1
 content_hash: blake2b:08c7d7b5dfe6071e450517f281b93441
-provider_modified_at: 2026-05-14T08:00:19.529083+00:00
+provider_modified_at: 2026-05-15T08:12:18.058168+00:00
 
 title: Ivan | GrowthMate
 slug: ivan-growthmate
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-14T08:00:19.529083+00:00
+last_synced: 2026-05-15T08:12:18.058168+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.499409+00:00
+ingested_at: 2026-05-15T08:12:18.032050+00:00
 ingest_version: 1
 content_hash: blake2b:2efa4c4f1669f5872e5a6d8836a1bdac
-provider_modified_at: 2026-05-14T08:00:19.499409+00:00
+provider_modified_at: 2026-05-15T08:12:18.032050+00:00
 
 title: Avik Ahuja Austin
 slug: avik-ahuja-austin
@@ -15,7 +15,7 @@ identifiers:
   email: ["Avikahuja100@gmail.com"]
   phone: ["(512) 690-1977"]
   slack: []
-last_synced: 2026-05-14T08:00:19.499409+00:00
+last_synced: 2026-05-15T08:12:18.032050+00:00
 global: true
 ---
 

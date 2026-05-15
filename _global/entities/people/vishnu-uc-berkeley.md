@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-14T08:00:19.315660+00:00
+ingested_at: 2026-05-15T08:12:17.914487+00:00
 ingest_version: 1
 content_hash: blake2b:70156af5aa7dd3901223ceff36a1e857
-provider_modified_at: 2026-05-14T08:00:19.315660+00:00
+provider_modified_at: 2026-05-15T08:12:17.914487+00:00
 
 title: Vishnu UC Berkeley
 slug: vishnu-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 925-819-2777"]
   slack: []
-last_synced: 2026-05-14T08:00:19.315660+00:00
+last_synced: 2026-05-15T08:12:17.914487+00:00
 global: true
 ---
 

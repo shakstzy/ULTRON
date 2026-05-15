@@ -1,9 +1,9 @@
 ---
 source: discord
 workspace: personal
-ingested_at: '2026-05-15T11:50:52.280Z'
+ingested_at: '2026-05-15T17:02:11.156Z'
 ingest_version: 1
-content_hash: sha256:90c4bdee4b985d1ccf77e7ad03bbd476fbb2cc97acd143a1c4c023b97197fb64
+content_hash: sha256:750bd6583f90190d1aa7202e8fcb311cf06768988b119eaf1d83c95819c5cde3
 provider_modified_at: '2024-12-31T05:45:19.975Z'
 contact_slug: shva-shvalockedin
 contact_type: individual
@@ -16,27 +16,27 @@ attachments:
   - message_id: '1313327990557511690'
     kind: image
     filename: image.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313327990255386624/image.png?ex=6a07d381&is=6a068201&hm=60b555e31a3cd784b472203af4cf2899856c2644ea159f1c40fd4d3057884b4b&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313327990255386624/image.png?ex=6a087c41&is=6a072ac1&hm=55dd13a60a8e77ed1ccb41dc2604bc8e5f3b01f59c83671cd9b4ba2c51da5ca6&'
     size: 60856
-    description: 'A warning triangle icon and the text TRANSITIONING... appear on a dark background.'
+    description: 'A dark interface displays a white warning triangle followed by the word TRANSITIONING.'
   - message_id: '1313328114029301795'
     kind: image
     filename: image.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313328113727442964/image.png?ex=6a07d39e&is=6a06821e&hm=a260d2517c721901e61940d334500586702aa80f394a1c240a06feb778b05029&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313328113727442964/image.png?ex=6a087c5e&is=6a072ade&hm=04d2022481b53cd3253085a63dffdf63f5526b178e967ab7544892c7db607274&'
     size: 1574303
-    description: 'A video game menu showing a blue armored character and a message stating multiplayer is unavailable.'
+    description: 'A video game screen displays an armored soldier and a message stating multiplayer is unavailable.'
   - message_id: '1313680295513292821'
     kind: image
     filename: redirectFileUrl.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313680294846664764/redirectFileUrl.png?ex=6a07ca1d&is=6a06789d&hm=6d33b16d14b2b321ce32fbbbf2b6a5e4d23c415f8c094b6260fc2a5eec16f2ff&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313680294846664764/redirectFileUrl.png?ex=6a0872dd&is=6a07215d&hm=4bdd871fe977a1886677d98846c2fc4c7fd48477f0ccdf0dc38ed65ca1087576&'
     size: 1423629
-    description: 'A black hoodie with the word VOLTREX printed in large white letters on the front.'
+    description: 'A black hoodie with large white VOLTREX lettering across the chest lies flat on a grey surface.'
   - message_id: '1313680310344351827'
     kind: image
     filename: redirectFileUrl.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313680309992165376/redirectFileUrl.png?ex=6a07ca20&is=6a0678a0&hm=6d849ea163c11450870274b49e00193bdaae1968ac57d582480ad83544c4ae8f&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313680309992165376/redirectFileUrl.png?ex=6a0872e0&is=6a072160&hm=7f65fc940113277fbc2d64a7f9a76fcb026cec60738cb01447a6ffc8f44b08cc&'
     size: 1432011
-    description: null
+    description: 'A black hoodie with large wavy white text on the back lies flat on a gray surface.'
 discord_channel_id: '1292220510603575366'
 discord_channel_kind: dm
 discord_recipient_id: '1285363977030729738'
@@ -50,17 +50,17 @@ superseded_by: null
 ## 2024-12-02 (Monday)
 
 **20:16 — me:** 
-↳ image: image.png (59 KB) — "A warning triangle icon and the text TRANSITIONING... appear on a dark background." — https://cdn.discordapp.com/attachments/1292220510603575366/1313327990255386624/image.png?ex=6a07d381&is=6a068201&hm=60b555e31a3cd784b472203af4cf2899856c2644ea159f1c40fd4d3057884b4b&
+↳ image: image.png (59 KB) — "A dark interface displays a white warning triangle followed by the word TRANSITIONING." — https://cdn.discordapp.com/attachments/1292220510603575366/1313327990255386624/image.png?ex=6a087c41&is=6a072ac1&hm=55dd13a60a8e77ed1ccb41dc2604bc8e5f3b01f59c83671cd9b4ba2c51da5ca6&
 **20:17 — me:** 
-↳ image: image.png (1537 KB) — "A video game menu showing a blue armored character and a message stating multiplayer is unavailable." — https://cdn.discordapp.com/attachments/1292220510603575366/1313328113727442964/image.png?ex=6a07d39e&is=6a06821e&hm=a260d2517c721901e61940d334500586702aa80f394a1c240a06feb778b05029&
+↳ image: image.png (1537 KB) — "A video game screen displays an armored soldier and a message stating multiplayer is unavailable." — https://cdn.discordapp.com/attachments/1292220510603575366/1313328113727442964/image.png?ex=6a087c5e&is=6a072ade&hm=04d2022481b53cd3253085a63dffdf63f5526b178e967ab7544892c7db607274&
 
 ## 2024-12-03 (Tuesday)
 
 **19:32 — SHVA:** ↳ replying to SHVA ("(no text)"): **
 **19:36 — SHVA:** 
-↳ image: redirectFileUrl.png (1390 KB) — "A black hoodie with the word VOLTREX printed in large white letters on the front." — https://cdn.discordapp.com/attachments/1292220510603575366/1313680294846664764/redirectFileUrl.png?ex=6a07ca1d&is=6a06789d&hm=6d33b16d14b2b321ce32fbbbf2b6a5e4d23c415f8c094b6260fc2a5eec16f2ff&
+↳ image: redirectFileUrl.png (1390 KB) — "A black hoodie with large white VOLTREX lettering across the chest lies flat on a grey surface." — https://cdn.discordapp.com/attachments/1292220510603575366/1313680294846664764/redirectFileUrl.png?ex=6a0872dd&is=6a07215d&hm=4bdd871fe977a1886677d98846c2fc4c7fd48477f0ccdf0dc38ed65ca1087576&
 **19:36 — SHVA:** 
-↳ image: redirectFileUrl.png (1398 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1313680309992165376/redirectFileUrl.png?ex=6a07ca20&is=6a0678a0&hm=6d849ea163c11450870274b49e00193bdaae1968ac57d582480ad83544c4ae8f&
+↳ image: redirectFileUrl.png (1398 KB) — "A black hoodie with large wavy white text on the back lies flat on a gray surface." — https://cdn.discordapp.com/attachments/1292220510603575366/1313680309992165376/redirectFileUrl.png?ex=6a0872e0&is=6a072160&hm=7f65fc940113277fbc2d64a7f9a76fcb026cec60738cb01447a6ffc8f44b08cc&
 
 ## 2024-12-07 (Saturday)
 

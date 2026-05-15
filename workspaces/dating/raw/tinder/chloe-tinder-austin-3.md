@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-10T04:03:29.218Z"
 last_activity: "2026-05-10T04:03:29.218Z"
-last_scrape: "2026-05-14T01:18:32.581Z"
+last_scrape: "2026-05-15T00:03:26.638Z"
 previous_slugs: []
-last_profile_diff: "2026-05-14T01:18:32.581Z"
+last_profile_diff: "2026-05-15T00:03:26.638Z"
 ---
 
 ## Profile
 
 - age: 22
-- distance_mi: 177
+- distance_mi: 180
 - height_cm: 168
 - bio: "I like to party and have fun! Favorite movies are the Jurassic park movies! My spirt animal is a unicorn. I’m a plus size baddie."
 - looking_for: "Still figuring it out · Open to exploring"
@@ -136,6 +136,20 @@ last_profile_diff: "2026-05-14T01:18:32.581Z"
     "distance_mi": {
       "from": 181,
       "to": 177
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-15T00:03:26.638Z",
+  "added": {},
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 177,
+      "to": 180
     }
   }
 }

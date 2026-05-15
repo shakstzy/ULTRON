@@ -9,15 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-10T22:05:07.994Z"
 last_activity: "2026-05-10T22:05:07.994Z"
-last_scrape: "2026-05-14T01:18:29.476Z"
+last_scrape: "2026-05-15T00:03:23.301Z"
 previous_slugs: []
-last_profile_diff: "2026-05-14T01:18:29.476Z"
+last_profile_diff: "2026-05-15T00:03:23.301Z"
 ---
 
 ## Profile
 
 - age: 23
-- distance_mi: 3
+- distance_mi: 1
 - bio: "Only here to go on fun dates No hookups 5’8"
 - looking_for: "Still figuring it out"
 - schools: Texas State University
@@ -81,6 +81,20 @@ last_profile_diff: "2026-05-14T01:18:29.476Z"
     "distance_mi": {
       "from": 1,
       "to": 3
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-15T00:03:23.301Z",
+  "added": {},
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 3,
+      "to": 1
     }
   }
 }

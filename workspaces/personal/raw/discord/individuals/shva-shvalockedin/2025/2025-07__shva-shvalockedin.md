@@ -1,9 +1,9 @@
 ---
 source: discord
 workspace: personal
-ingested_at: '2026-05-15T00:01:20.993Z'
+ingested_at: '2026-05-15T05:23:54.037Z'
 ingest_version: 1
-content_hash: sha256:eabc819d3aa27bebe14d6f5ab129dc3a2f23f7ce79becdceb362c052a43bb61e
+content_hash: sha256:99c997d5b7548224ee641244316e7c0db577311b7f2b699f5cad981079e9e518
 provider_modified_at: '2025-07-31T22:25:52.013Z'
 contact_slug: shva-shvalockedin
 contact_type: individual
@@ -16,97 +16,97 @@ attachments:
   - message_id: '1394492051009310761'
     kind: file
     filename: Breakthrough_Challenge_2023.pdf
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394492050619105322/Breakthrough_Challenge_2023.pdf?ex=6a0720ad&is=6a05cf2d&hm=83d7d81682551b5f1d1ba1a1a1018791b5d8b10629c16ca368e02cc572848911&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394492050619105322/Breakthrough_Challenge_2023.pdf?ex=6a07c96d&is=6a0677ed&hm=b5e159740d06e1a92c49ded04ed9a23df346e7f6950e856a3061c55a139ea1fb&'
     size: 151821
     description: null
   - message_id: '1394492483488190525'
     kind: file
     filename: Scienteer_2020_-_Pictures.pdf
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394492483081339010/Scienteer_2020_-_Pictures.pdf?ex=6a072114&is=6a05cf94&hm=272bbdd0c2771de90972337491113be09b172100a91cc44431a77c53e6b12609&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394492483081339010/Scienteer_2020_-_Pictures.pdf?ex=6a07c9d4&is=6a067854&hm=852952064871cb732169ace16a59b5f97156f153f10befa8341d766694b560b0&'
     size: 2667562
     description: null
   - message_id: '1394492483488190525'
     kind: file
     filename: Scienteer_2020.pdf
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394492483446112276/Scienteer_2020.pdf?ex=6a072114&is=6a05cf94&hm=31341282ec2d2e1be912efeb63a314991c94154731e6a8aa698838b4617c10d8&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394492483446112276/Scienteer_2020.pdf?ex=6a07c9d4&is=6a067854&hm=b1c82e613b0e2cabbc5f71c0cfcac0b7b1ec615c71a99df9a811ea51ecf79c66&'
     size: 7533239
     description: null
   - message_id: '1394493726910316775'
     kind: file
     filename: '2020sciencefairboard.pdf'
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394493726297948232/2020sciencefairboard.pdf?ex=6a07223c&is=6a05d0bc&hm=015c268f52af8da07b65340760c05d41c2386163fe5b6cdb7c634647536d37f2&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394493726297948232/2020sciencefairboard.pdf?ex=6a07cafc&is=6a06797c&hm=de39bd2d043400d1c3e7fd07f36c5cd3cf0f92bc399819f63b83b78b02f6e5f4&'
     size: 1396800
     description: null
   - message_id: '1394493870770880684'
     kind: file
     filename: '2019board-pdfdraft_1.pdf'
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394493869470781551/2019board-pdfdraft_1.pdf?ex=6a07225e&is=6a05d0de&hm=f35f5dbb6654981d893af1f24cace1b9578f41ce747d432fdc916861f50c4061&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394493869470781551/2019board-pdfdraft_1.pdf?ex=6a07cb1e&is=6a06799e&hm=94cd6de0af1df885290d876cc76a2f6ef2e6b6c58a11160eb83d04b146ee62f6&'
     size: 3484298
     description: null
   - message_id: '1394493870770880684'
     kind: file
     filename: Scienteer_2019.pdf
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394493869843812432/Scienteer_2019.pdf?ex=6a07225f&is=6a05d0df&hm=38f447bf3386dab4a1e50b4c86ab223971d4a295bf23e3440ab82e0f5b61c1ae&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394493869843812432/Scienteer_2019.pdf?ex=6a07cb1f&is=6a06799f&hm=5fe4a1a9c0228919cff35f9e305e457e318128fe02532a4994fb6b8f746a9293&'
     size: 2117749
     description: null
   - message_id: '1394493870770880684'
     kind: file
     filename: SciPy_2019_Submission_-_Adithya_Kumar.pdf
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394493870213169262/SciPy_2019_Submission_-_Adithya_Kumar.pdf?ex=6a07225f&is=6a05d0df&hm=a07adbbf3eafcfc96aa1be3b77b96d27202cf7bc6811b0ac4a32c83898aa3644&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394493870213169262/SciPy_2019_Submission_-_Adithya_Kumar.pdf?ex=6a07cb1f&is=6a06799f&hm=8ec2d45967720cc6501fe7112a6fb1d5250b49c0bca2ad27c52511945c4f5bde&'
     size: 243034
     description: null
   - message_id: '1394493870770880684'
     kind: file
     filename: Development_of_a_stereoscopic_optical_detection_algorithm_to_autonomously_construct_and_respond_to_an_accurate_real-time_disparity_map_of_foreign_environments_using_SGM_and_machine_learning.pdf
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394493870494191676/Development_of_a_stereoscopic_optical_detection_algorithm_to_autonomously_construct_and_respond_to_an_accurate_real-time_disparity_map_of_foreign_environments_using_SGM_and_machine_learning.pdf?ex=6a07225f&is=6a05d0df&hm=f4f6562c6147979ad786e6422250f6d9ba3bac45170f533e7360173485d4fa3b&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394493870494191676/Development_of_a_stereoscopic_optical_detection_algorithm_to_autonomously_construct_and_respond_to_an_accurate_real-time_disparity_map_of_foreign_environments_using_SGM_and_machine_learning.pdf?ex=6a07cb1f&is=6a06799f&hm=16665cf9ce249276f500a2de5309759771df0e6b3f6f96bf831cf2667365aeb2&'
     size: 232325
     description: null
   - message_id: '1394502766692536473'
     kind: file
     filename: Generative_Physics__A_Framework_for_Geometrically_and_Physically-Aware_4D_World_Models.pdf
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394502766394871932/Generative_Physics__A_Framework_for_Geometrically_and_Physically-Aware_4D_World_Models.pdf?ex=6a072aa8&is=6a05d928&hm=fa3719a3191b4206a65e3dcc007a194290834522bd079c174d91ee7e3804d70d&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394502766394871932/Generative_Physics__A_Framework_for_Geometrically_and_Physically-Aware_4D_World_Models.pdf?ex=6a07d368&is=6a0681e8&hm=3abc9080cf9b713c881ba04dca396f54b2fda18ffc797279506a790a47fb305a&'
     size: 186204
     description: null
   - message_id: '1394504343868407998'
     kind: file
     filename: The_Efficiency_Imperative__A_Dual-Frontier_Approach_to_Sustainable_and_Accessible_AI.pdf
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394504343444652123/The_Efficiency_Imperative__A_Dual-Frontier_Approach_to_Sustainable_and_Accessible_AI.pdf?ex=6a072c20&is=6a05daa0&hm=9eb2d7933953e98d996e15991f075834b82547bdb8dfdc5588c858625f8de55a&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394504343444652123/The_Efficiency_Imperative__A_Dual-Frontier_Approach_to_Sustainable_and_Accessible_AI.pdf?ex=6a07d4e0&is=6a068360&hm=48756028b1c04305a938639c009083cf817964b1962c1b979484c16ab3888c46&'
     size: 293923
     description: null
   - message_id: '1394505033550270568'
     kind: file
     filename: Engineering_Trust__A_Dual-Pronged_Approach_to_Verifiable_Safety_and_Provenance_in_Artificial_Intelligence.pdf
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394505033327837215/Engineering_Trust__A_Dual-Pronged_Approach_to_Verifiable_Safety_and_Provenance_in_Artificial_Intelligence.pdf?ex=6a072cc4&is=6a05db44&hm=7785eccc942ab918d241c2f07ab37347b476a5cac71e31e22c352451dd67c05e&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394505033327837215/Engineering_Trust__A_Dual-Pronged_Approach_to_Verifiable_Safety_and_Provenance_in_Artificial_Intelligence.pdf?ex=6a07d584&is=6a068404&hm=d41ba4309f82f3ce2e23982aaaf43f061e9f73d412e9438a1460527ce2849eed&'
     size: 311079
     description: null
   - message_id: '1394508007907262615'
     kind: file
     filename: Predicting_the_Unseen__Generative_Modeling_of_Protein_Conformational_Dynamics.pdf
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394508007555207250/Predicting_the_Unseen__Generative_Modeling_of_Protein_Conformational_Dynamics.pdf?ex=6a072f89&is=6a05de09&hm=be8a014f343e78971bf0b25aa837e14adb6ffc12e78f2c3a28cc2795829ccb2b&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394508007555207250/Predicting_the_Unseen__Generative_Modeling_of_Protein_Conformational_Dynamics.pdf?ex=6a07d849&is=6a0686c9&hm=ae1a7355f2c12e49562b1436962823cc4efadaf4e2ba707adc483d2afae4b1cd&'
     size: 294067
     description: null
   - message_id: '1394848539137544386'
     kind: image
     filename: LUV02772.jpg
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394848538856521850/LUV02772.jpg?ex=6a071b2e&is=6a05c9ae&hm=8cd80f2438c99cddf7151ef45c411c4a4c5e25c14dffa3e35b335c22008cc153&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394848538856521850/LUV02772.jpg?ex=6a07c3ee&is=6a06726e&hm=b642763e4a99c2811ea599ae08c30bdbc8b8c19e109bde974d9dd08d03b7a839&'
     size: 691539
-    description: 'A smiling young man wearing a grey blazer, black shirt, and patterned blue tie against a neutral background.'
+    description: 'A smiling young man wearing a light grey blazer, black shirt, and patterned blue tie.'
   - message_id: '1394872553620635784'
     kind: file
     filename: board_-_resized_-_hopefully_final_Autosaved.pptx
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394872552509407283/board_-_resized_-_hopefully_final_Autosaved.pptx?ex=6a07318b&is=6a05e00b&hm=47bd97bd1b71b784f37f64ffc6b49966f8e51ddada3020ab0da440bb469766a5&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394872552509407283/board_-_resized_-_hopefully_final_Autosaved.pptx?ex=6a07da4b&is=6a0688cb&hm=7349d525039b61e354c38e7cf9f2bdfa52e474e816214f715447dab336fda073&'
     size: 1513245
     description: null
   - message_id: '1394872553620635784'
     kind: file
     filename: Gaia_Glove_Patent_Specifications.docx
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394872552874180688/Gaia_Glove_Patent_Specifications.docx?ex=6a07318c&is=6a05e00c&hm=c47794649beb61702a62fd9f415027e43c83c92501cfe378210bd02e30258687&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394872552874180688/Gaia_Glove_Patent_Specifications.docx?ex=6a07da4c&is=6a0688cc&hm=bac7fa6f3f66637d96f053b786cfb3015c0568aa5ffb37d19d06d27b6c81aa1b&'
     size: 2151227
     description: null
   - message_id: '1394872553620635784'
     kind: file
     filename: Scienteer_2020_-_Pictures_1.pdf
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394872553276706816/Scienteer_2020_-_Pictures_1.pdf?ex=6a07318c&is=6a05e00c&hm=572db70cc4da1de100fe4cbd41ee0a56e3bbd1190c08311ffa72ebe57dc4bafc&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1394872553276706816/Scienteer_2020_-_Pictures_1.pdf?ex=6a07da4c&is=6a0688cc&hm=2d0aa190a054204a50a9cb8471d92426e25a1e7ffd1b77cf837322841e335bf2&'
     size: 2667562
     description: null
   - message_id: '1399469357578457228'
@@ -114,25 +114,25 @@ attachments:
     filename: image.png
     url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1399469357330862260/image.png?ex=6a076fe7&is=6a061e67&hm=cffec1a4359bb7741504317a092a8148623e9688db0ce5b6fb094778d935b192&'
     size: 239423
-    description: 'A dark mode table titled APPLICATIONS tracking various university applications and their intended majors or programs.'
+    description: 'A dark mode table tracks college applications, listing various university names alongside their intended majors.'
   - message_id: '1399471380373966987'
     kind: image
     filename: Screenshot_20250728_141931_Notion.jpg
     url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1399471380042612817/Screenshot_20250728_141931_Notion.jpg?ex=6a0771c9&is=6a062049&hm=cff5e6d144036734ed2f4a99e1d24881bab456af4e9a042ce6f4678163c63526&'
     size: 155717
-    description: 'A screenshot of a mobile phone displaying college application links, login credentials, and essay tasks.'
+    description: 'A mobile screenshot of a note containing college application links, email credentials, and essay tasks.'
   - message_id: '1400605411169669220'
     kind: image
     filename: image.png
     url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1400605410511159336/image.png?ex=6a079d6f&is=6a064bef&hm=8de7dbcf21e7cb41077d87a17b3ae7bd83015ea6f4c1047ad53d439d34b9a389&'
     size: 93110
-    description: 'A spreadsheet tracks a student''s volunteer and community service activities, detailing organizations, accomplishments, and hours.'
+    description: 'A spreadsheet document used to track volunteer and community service activities, including hours and accomplishments.'
   - message_id: '1400605411169669220'
     kind: image
     filename: image.png
     url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1400605410939113502/image.png?ex=6a079d6f&is=6a064bef&hm=899ae517c24923261c681625fdaede8d1a65d8a957308e5d66736a3e9164bb51&'
     size: 34200
-    description: 'A spreadsheet table showing professional experience descriptions, numerical data, and checkboxes for two different roles.'
+    description: 'A spreadsheet displaying work experience entries for a piano instructor and a Web3 consulting firm.'
 discord_channel_id: '1292220510603575366'
 discord_channel_kind: dm
 discord_recipient_id: '1285363977030729738'
@@ -161,37 +161,37 @@ https://docs.google.com/spreadsheets/d/1ELlPFYlqwDvYQdshOJR-H1Tks3TfnbR5iILpshD2
 **16:21 — SHVA:** https://docs.google.com/document/d/13-iSDRfF6UCC1TZedRTuyJnoSjdExXm4/edit?usp=sharing&ouid=104196400325651726582&rtpof=true&sd=true
 **20:09 — me:** https://docsend.com/content
 **20:33 — me:** 
-↳ file: Breakthrough_Challenge_2023.pdf (148 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394492050619105322/Breakthrough_Challenge_2023.pdf?ex=6a0720ad&is=6a05cf2d&hm=83d7d81682551b5f1d1ba1a1a1018791b5d8b10629c16ca368e02cc572848911&
+↳ file: Breakthrough_Challenge_2023.pdf (148 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394492050619105322/Breakthrough_Challenge_2023.pdf?ex=6a07c96d&is=6a0677ed&hm=b5e159740d06e1a92c49ded04ed9a23df346e7f6950e856a3061c55a139ea1fb&
 **20:35 — SHVA:** https://drive.google.com/drive/folders/16mcifuj15RM8Nz5Kcl_XrECAlwyS9A_d
 **20:35 — me:** 
-↳ file: Scienteer_2020_-_Pictures.pdf (2605 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394492483081339010/Scienteer_2020_-_Pictures.pdf?ex=6a072114&is=6a05cf94&hm=272bbdd0c2771de90972337491113be09b172100a91cc44431a77c53e6b12609&
-↳ file: Scienteer_2020.pdf (7357 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394492483446112276/Scienteer_2020.pdf?ex=6a072114&is=6a05cf94&hm=31341282ec2d2e1be912efeb63a314991c94154731e6a8aa698838b4617c10d8&
+↳ file: Scienteer_2020_-_Pictures.pdf (2605 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394492483081339010/Scienteer_2020_-_Pictures.pdf?ex=6a07c9d4&is=6a067854&hm=852952064871cb732169ace16a59b5f97156f153f10befa8341d766694b560b0&
+↳ file: Scienteer_2020.pdf (7357 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394492483446112276/Scienteer_2020.pdf?ex=6a07c9d4&is=6a067854&hm=b1c82e613b0e2cabbc5f71c0cfcac0b7b1ec615c71a99df9a811ea51ecf79c66&
 **20:40 — me:** 
-↳ file: 2020sciencefairboard.pdf (1364 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394493726297948232/2020sciencefairboard.pdf?ex=6a07223c&is=6a05d0bc&hm=015c268f52af8da07b65340760c05d41c2386163fe5b6cdb7c634647536d37f2&
+↳ file: 2020sciencefairboard.pdf (1364 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394493726297948232/2020sciencefairboard.pdf?ex=6a07cafc&is=6a06797c&hm=de39bd2d043400d1c3e7fd07f36c5cd3cf0f92bc399819f63b83b78b02f6e5f4&
 **20:40 — me:** poster for plasmodium
 **20:40 — me:** disparity map
-↳ file: 2019board-pdfdraft_1.pdf (3403 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394493869470781551/2019board-pdfdraft_1.pdf?ex=6a07225e&is=6a05d0de&hm=f35f5dbb6654981d893af1f24cace1b9578f41ce747d432fdc916861f50c4061&
-↳ file: Scienteer_2019.pdf (2068 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394493869843812432/Scienteer_2019.pdf?ex=6a07225f&is=6a05d0df&hm=38f447bf3386dab4a1e50b4c86ab223971d4a295bf23e3440ab82e0f5b61c1ae&
-↳ file: SciPy_2019_Submission_-_Adithya_Kumar.pdf (237 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394493870213169262/SciPy_2019_Submission_-_Adithya_Kumar.pdf?ex=6a07225f&is=6a05d0df&hm=a07adbbf3eafcfc96aa1be3b77b96d27202cf7bc6811b0ac4a32c83898aa3644&
-↳ file: Development_of_a_stereoscopic_optical_detection_algorithm_to_autonomously_construct_and_respond_to_an_accurate_real-time_disparity_map_of_foreign_environments_using_SGM_and_machine_learning.pdf (227 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394493870494191676/Development_of_a_stereoscopic_optical_detection_algorithm_to_autonomously_construct_and_respond_to_an_accurate_real-time_disparity_map_of_foreign_environments_using_SGM_and_machine_learning.pdf?ex=6a07225f&is=6a05d0df&hm=f4f6562c6147979ad786e6422250f6d9ba3bac45170f533e7360173485d4fa3b&
+↳ file: 2019board-pdfdraft_1.pdf (3403 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394493869470781551/2019board-pdfdraft_1.pdf?ex=6a07cb1e&is=6a06799e&hm=94cd6de0af1df885290d876cc76a2f6ef2e6b6c58a11160eb83d04b146ee62f6&
+↳ file: Scienteer_2019.pdf (2068 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394493869843812432/Scienteer_2019.pdf?ex=6a07cb1f&is=6a06799f&hm=5fe4a1a9c0228919cff35f9e305e457e318128fe02532a4994fb6b8f746a9293&
+↳ file: SciPy_2019_Submission_-_Adithya_Kumar.pdf (237 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394493870213169262/SciPy_2019_Submission_-_Adithya_Kumar.pdf?ex=6a07cb1f&is=6a06799f&hm=8ec2d45967720cc6501fe7112a6fb1d5250b49c0bca2ad27c52511945c4f5bde&
+↳ file: Development_of_a_stereoscopic_optical_detection_algorithm_to_autonomously_construct_and_respond_to_an_accurate_real-time_disparity_map_of_foreign_environments_using_SGM_and_machine_learning.pdf (227 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394493870494191676/Development_of_a_stereoscopic_optical_detection_algorithm_to_autonomously_construct_and_respond_to_an_accurate_real-time_disparity_map_of_foreign_environments_using_SGM_and_machine_learning.pdf?ex=6a07cb1f&is=6a06799f&hm=16665cf9ce249276f500a2de5309759771df0e6b3f6f96bf831cf2667365aeb2&
 **21:16 — me:** 
-↳ file: Generative_Physics__A_Framework_for_Geometrically_and_Physically-Aware_4D_World_Models.pdf (182 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394502766394871932/Generative_Physics__A_Framework_for_Geometrically_and_Physically-Aware_4D_World_Models.pdf?ex=6a072aa8&is=6a05d928&hm=fa3719a3191b4206a65e3dcc007a194290834522bd079c174d91ee7e3804d70d&
+↳ file: Generative_Physics__A_Framework_for_Geometrically_and_Physically-Aware_4D_World_Models.pdf (182 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394502766394871932/Generative_Physics__A_Framework_for_Geometrically_and_Physically-Aware_4D_World_Models.pdf?ex=6a07d368&is=6a0681e8&hm=3abc9080cf9b713c881ba04dca396f54b2fda18ffc797279506a790a47fb305a&
 **21:22 — me:** 
-↳ file: The_Efficiency_Imperative__A_Dual-Frontier_Approach_to_Sustainable_and_Accessible_AI.pdf (287 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394504343444652123/The_Efficiency_Imperative__A_Dual-Frontier_Approach_to_Sustainable_and_Accessible_AI.pdf?ex=6a072c20&is=6a05daa0&hm=9eb2d7933953e98d996e15991f075834b82547bdb8dfdc5588c858625f8de55a&
+↳ file: The_Efficiency_Imperative__A_Dual-Frontier_Approach_to_Sustainable_and_Accessible_AI.pdf (287 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394504343444652123/The_Efficiency_Imperative__A_Dual-Frontier_Approach_to_Sustainable_and_Accessible_AI.pdf?ex=6a07d4e0&is=6a068360&hm=48756028b1c04305a938639c009083cf817964b1962c1b979484c16ab3888c46&
 **21:25 — me:** 
-↳ file: Engineering_Trust__A_Dual-Pronged_Approach_to_Verifiable_Safety_and_Provenance_in_Artificial_Intelligence.pdf (304 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394505033327837215/Engineering_Trust__A_Dual-Pronged_Approach_to_Verifiable_Safety_and_Provenance_in_Artificial_Intelligence.pdf?ex=6a072cc4&is=6a05db44&hm=7785eccc942ab918d241c2f07ab37347b476a5cac71e31e22c352451dd67c05e&
+↳ file: Engineering_Trust__A_Dual-Pronged_Approach_to_Verifiable_Safety_and_Provenance_in_Artificial_Intelligence.pdf (304 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394505033327837215/Engineering_Trust__A_Dual-Pronged_Approach_to_Verifiable_Safety_and_Provenance_in_Artificial_Intelligence.pdf?ex=6a07d584&is=6a068404&hm=d41ba4309f82f3ce2e23982aaaf43f061e9f73d412e9438a1460527ce2849eed&
 **21:36 — me:** 
-↳ file: Predicting_the_Unseen__Generative_Modeling_of_Protein_Conformational_Dynamics.pdf (287 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394508007555207250/Predicting_the_Unseen__Generative_Modeling_of_Protein_Conformational_Dynamics.pdf?ex=6a072f89&is=6a05de09&hm=be8a014f343e78971bf0b25aa837e14adb6ffc12e78f2c3a28cc2795829ccb2b&
+↳ file: Predicting_the_Unseen__Generative_Modeling_of_Protein_Conformational_Dynamics.pdf (287 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394508007555207250/Predicting_the_Unseen__Generative_Modeling_of_Protein_Conformational_Dynamics.pdf?ex=6a07d849&is=6a0686c9&hm=ae1a7355f2c12e49562b1436962823cc4efadaf4e2ba707adc483d2afae4b1cd&
 
 ## 2025-07-15 (Tuesday)
 
 **20:07 — SHVA:** https://austinscience.org/secondary/awards
 **20:10 — SHVA:** 
-↳ image: LUV02772.jpg (675 KB) — "A smiling young man wearing a grey blazer, black shirt, and patterned blue tie against a neutral background." — https://cdn.discordapp.com/attachments/1292220510603575366/1394848538856521850/LUV02772.jpg?ex=6a071b2e&is=6a05c9ae&hm=8cd80f2438c99cddf7151ef45c411c4a4c5e25c14dffa3e35b335c22008cc153&
+↳ image: LUV02772.jpg (675 KB) — "A smiling young man wearing a light grey blazer, black shirt, and patterned blue tie." — https://cdn.discordapp.com/attachments/1292220510603575366/1394848538856521850/LUV02772.jpg?ex=6a07c3ee&is=6a06726e&hm=b642763e4a99c2811ea599ae08c30bdbc8b8c19e109bde974d9dd08d03b7a839&
 **21:45 — me:** 
-↳ file: board_-_resized_-_hopefully_final_Autosaved.pptx (1478 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394872552509407283/board_-_resized_-_hopefully_final_Autosaved.pptx?ex=6a07318b&is=6a05e00b&hm=47bd97bd1b71b784f37f64ffc6b49966f8e51ddada3020ab0da440bb469766a5&
-↳ file: Gaia_Glove_Patent_Specifications.docx (2101 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394872552874180688/Gaia_Glove_Patent_Specifications.docx?ex=6a07318c&is=6a05e00c&hm=c47794649beb61702a62fd9f415027e43c83c92501cfe378210bd02e30258687&
-↳ file: Scienteer_2020_-_Pictures_1.pdf (2605 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394872553276706816/Scienteer_2020_-_Pictures_1.pdf?ex=6a07318c&is=6a05e00c&hm=572db70cc4da1de100fe4cbd41ee0a56e3bbd1190c08311ffa72ebe57dc4bafc&
+↳ file: board_-_resized_-_hopefully_final_Autosaved.pptx (1478 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394872552509407283/board_-_resized_-_hopefully_final_Autosaved.pptx?ex=6a07da4b&is=6a0688cb&hm=7349d525039b61e354c38e7cf9f2bdfa52e474e816214f715447dab336fda073&
+↳ file: Gaia_Glove_Patent_Specifications.docx (2101 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394872552874180688/Gaia_Glove_Patent_Specifications.docx?ex=6a07da4c&is=6a0688cc&hm=bac7fa6f3f66637d96f053b786cfb3015c0568aa5ffb37d19d06d27b6c81aa1b&
+↳ file: Scienteer_2020_-_Pictures_1.pdf (2605 KB) — https://cdn.discordapp.com/attachments/1292220510603575366/1394872553276706816/Scienteer_2020_-_Pictures_1.pdf?ex=6a07da4c&is=6a0688cc&hm=2d0aa190a054204a50a9cb8471d92426e25a1e7ffd1b77cf837322841e335bf2&
 **22:49 — SHVA:** https://www.youtube.com/watch?v=SrQs9-3OIkk
 
 ## 2025-07-17 (Thursday)
@@ -205,10 +205,10 @@ https://docs.google.com/spreadsheets/d/1ELlPFYlqwDvYQdshOJR-H1Tks3TfnbR5iILpshD2
 **14:11 — me:** and the tamu
 **14:11 — me:** and utd supplementals
 **14:11 — me:** where are those
-↳ image: image.png (234 KB) — "A dark mode table titled APPLICATIONS tracking various university applications and their intended majors or programs." — https://cdn.discordapp.com/attachments/1292220510603575366/1399469357330862260/image.png?ex=6a076fe7&is=6a061e67&hm=cffec1a4359bb7741504317a092a8148623e9688db0ce5b6fb094778d935b192&
+↳ image: image.png (234 KB) — "A dark mode table tracks college applications, listing various university names alongside their intended majors." — https://cdn.discordapp.com/attachments/1292220510603575366/1399469357330862260/image.png?ex=6a076fe7&is=6a061e67&hm=cffec1a4359bb7741504317a092a8148623e9688db0ce5b6fb094778d935b192&
 **14:19 — SHVA:** All on the main page
 **14:19 — SHVA:** 
-↳ image: Screenshot_20250728_141931_Notion.jpg (152 KB) — "A screenshot of a mobile phone displaying college application links, login credentials, and essay tasks." — https://cdn.discordapp.com/attachments/1292220510603575366/1399471380042612817/Screenshot_20250728_141931_Notion.jpg?ex=6a0771c9&is=6a062049&hm=cff5e6d144036734ed2f4a99e1d24881bab456af4e9a042ce6f4678163c63526&
+↳ image: Screenshot_20250728_141931_Notion.jpg (152 KB) — "A mobile screenshot of a note containing college application links, email credentials, and essay tasks." — https://cdn.discordapp.com/attachments/1292220510603575366/1399471380042612817/Screenshot_20250728_141931_Notion.jpg?ex=6a0771c9&is=6a062049&hm=cff5e6d144036734ed2f4a99e1d24881bab456af4e9a042ce6f4678163c63526&
 **14:19 — SHVA:** My b didn't link it to the other sheet
 **14:29 — me:** Aight Fsfs
 
@@ -230,5 +230,5 @@ Activity list Wrap up
 5. Honors/ COVID 19 section: https://docs.google.com/document/d/1smznRDRAjfWRSeOL0yLBcUeIrva48CPlya_b6HYvDpo/edit?usp=sharing
 also I think it might be useful adding in the cap things I put for community in the UC activity list to the resume as I dont have too many community related activities lowk maybe to the actual activity list if they can be scaled up here they are as well:
 **17:25 — SHVA:** also more work experience things
-↳ image: image.png (91 KB) — "A spreadsheet tracks a student's volunteer and community service activities, detailing organizations, accomplishments, and hours." — https://cdn.discordapp.com/attachments/1292220510603575366/1400605410511159336/image.png?ex=6a079d6f&is=6a064bef&hm=8de7dbcf21e7cb41077d87a17b3ae7bd83015ea6f4c1047ad53d439d34b9a389&
-↳ image: image.png (33 KB) — "A spreadsheet table showing professional experience descriptions, numerical data, and checkboxes for two different roles." — https://cdn.discordapp.com/attachments/1292220510603575366/1400605410939113502/image.png?ex=6a079d6f&is=6a064bef&hm=899ae517c24923261c681625fdaede8d1a65d8a957308e5d66736a3e9164bb51&
+↳ image: image.png (91 KB) — "A spreadsheet document used to track volunteer and community service activities, including hours and accomplishments." — https://cdn.discordapp.com/attachments/1292220510603575366/1400605410511159336/image.png?ex=6a079d6f&is=6a064bef&hm=8de7dbcf21e7cb41077d87a17b3ae7bd83015ea6f4c1047ad53d439d34b9a389&
+↳ image: image.png (33 KB) — "A spreadsheet displaying work experience entries for a piano instructor and a Web3 consulting firm." — https://cdn.discordapp.com/attachments/1292220510603575366/1400605410939113502/image.png?ex=6a079d6f&is=6a064bef&hm=899ae517c24923261c681625fdaede8d1a65d8a957308e5d66736a3e9164bb51&

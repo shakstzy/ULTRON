@@ -9,14 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-15T00:02:39.384Z"
 last_activity: "2026-05-15T00:02:39.384Z"
-last_scrape: "2026-05-15T00:02:39.384Z"
+last_scrape: "2026-05-15T04:09:21.462Z"
 previous_slugs: []
+last_profile_diff: "2026-05-15T04:09:21.462Z"
 ---
 
 ## Profile
 
 - age: 20
-- distance_mi: 624
+- distance_mi: 627
 - height_cm: 170
 - bio: "Text me first ❤️ I love a good conversation"
 - looking_for: "Still figuring it out"
@@ -38,7 +39,19 @@ previous_slugs: []
 
 ## Profile changes
 
-(none yet)
+```json profile-diff
+{
+  "ts": "2026-05-15T04:09:21.462Z",
+  "added": {},
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 624,
+      "to": 627
+    }
+  }
+}
+```
 
 ## Conversation
 

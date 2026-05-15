@@ -23,9 +23,6 @@ members:
 - slug: cemal
   slack_user_id: U07JEV700QJ
   display_name: cemal
-- slug: julien
-  slack_user_id: U07V99QMTV5
-  display_name: julien じゅりえん
 - slug: vj
   slack_user_id: U09UCLZ9U1E
   display_name: VJ
@@ -39,5 +36,5 @@ members:
   slack_user_id: USLACKBOT
   display_name: Slackbot
 first_seen: '2026-05-02T22:28:41-05:00'
-last_updated: '2026-05-15T13:00:13-05:00'
+last_updated: '2026-05-15T15:06:07-05:00'
 ---

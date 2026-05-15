@@ -9,14 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-15T04:09:06.994Z"
 last_activity: "2026-05-15T04:09:06.994Z"
-last_scrape: "2026-05-15T04:09:06.994Z"
+last_scrape: "2026-05-15T20:23:21.135Z"
 previous_slugs: []
+last_profile_diff: "2026-05-15T20:23:21.135Z"
 ---
 
 ## Profile
 
 - age: 22
-- distance_mi: 1510
+- distance_mi: 1509
 - height_cm: 175
 - bio: "Writer and musician. EMT and future ER nurse, looking for someone who also is creative and likes adrenaline rushes"
 - looking_for: "Short-term, open to long"
@@ -30,7 +31,21 @@ previous_slugs: []
 
 ## Profile changes
 
-(none yet)
+```json profile-diff
+{
+  "ts": "2026-05-15T20:23:21.135Z",
+  "added": {
+    "photo_verified": false
+  },
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 1510,
+      "to": 1509
+    }
+  }
+}
+```
 
 ## Conversation
 

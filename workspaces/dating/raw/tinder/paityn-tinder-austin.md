@@ -9,14 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-14T01:17:49.188Z"
 last_activity: "2026-05-14T01:17:49.188Z"
-last_scrape: "2026-05-15T04:09:37.744Z"
+last_scrape: "2026-05-15T20:23:54.542Z"
 previous_slugs: []
+last_profile_diff: "2026-05-15T20:23:54.542Z"
 ---
 
 ## Profile
 
 - age: 19
-- distance_mi: 1
+- distance_mi: 825
 - height_cm: 193
 - bio: "good vibes good d ngl"
 - looking_for: "Short-term, open to long"
@@ -35,7 +36,19 @@ previous_slugs: []
 
 ## Profile changes
 
-(none yet)
+```json profile-diff
+{
+  "ts": "2026-05-15T20:23:54.542Z",
+  "added": {},
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 1,
+      "to": 825
+    }
+  }
+}
+```
 
 ## Conversation
 

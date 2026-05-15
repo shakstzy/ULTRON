@@ -9,14 +9,15 @@ phone: null
 status: "new"
 first_seen: "2026-05-15T04:09:03.589Z"
 last_activity: "2026-05-15T04:09:03.589Z"
-last_scrape: "2026-05-15T04:09:03.589Z"
+last_scrape: "2026-05-15T20:23:17.698Z"
 previous_slugs: []
+last_profile_diff: "2026-05-15T20:23:17.698Z"
 ---
 
 ## Profile
 
 - age: 24
-- distance_mi: 4
+- distance_mi: 6
 - height_cm: 180
 - bio: "i’m 24, i’m currently pursuing my bachelors in psychology"
 - looking_for: "Still figuring it out · Monogamy"
@@ -36,7 +37,19 @@ previous_slugs: []
 
 ## Profile changes
 
-(none yet)
+```json profile-diff
+{
+  "ts": "2026-05-15T20:23:17.698Z",
+  "added": {},
+  "removed": {},
+  "changed": {
+    "distance_mi": {
+      "from": 4,
+      "to": 6
+    }
+  }
+}
+```
 
 ## Conversation
 

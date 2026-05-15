@@ -9,9 +9,9 @@ phone: null
 status: "new"
 first_seen: "2026-05-10T22:05:02.618Z"
 last_activity: "2026-05-10T22:05:02.618Z"
-last_scrape: "2026-05-15T04:09:58.263Z"
+last_scrape: "2026-05-15T20:24:15.289Z"
 previous_slugs: []
-last_profile_diff: "2026-05-12T20:11:07.648Z"
+last_profile_diff: "2026-05-15T20:24:15.289Z"
 ---
 
 ## Profile
@@ -19,16 +19,16 @@ last_profile_diff: "2026-05-12T20:11:07.648Z"
 - age: 20
 - distance_mi: 9167
 - height_cm: 163
-- bio: "🍵🌺 Are there any sincere guys around here 👀👀 Thailand🇹🇭"
+- bio: "🍵🌺 Are there any sincere guys around here 👀👀 I’m from Thailand🇹🇭"
 - looking_for: "Long-term, open to short · Monogamy"
 - jobs: Woman
 - sexuality: "Straight"
 - photo_verified: true
-- interests: Cars, Sushi, Disney, Travel, Badminton, Netflix
-- basics.zodiac: "Leo"
+- interests: Instagram, Mountains, Travel, Disney, Badminton, Cars, Sushi, Netflix
+- basics.zodiac: "Virgo"
 - basics.education: "In College"
 - basics.communication_style: "Better in person"
-- basics.love_style: "Thoughtful gestures"
+- basics.love_style: "Time together"
 - lifestyle.pets: "Dog"
 - lifestyle.drinking: "On special occasions"
 - lifestyle.smoking: "Non-smoker"
@@ -84,6 +84,33 @@ last_profile_diff: "2026-05-12T20:11:07.648Z"
     "distance_mi": {
       "from": 9166,
       "to": 9167
+    }
+  }
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-15T20:24:15.289Z",
+  "added": {
+    "interests": [
+      "Instagram",
+      "Mountains"
+    ]
+  },
+  "removed": {},
+  "changed": {
+    "bio": {
+      "from": "🍵🌺 Are there any sincere guys around here 👀👀 Thailand🇹🇭",
+      "to": "🍵🌺 Are there any sincere guys around here 👀👀 I’m from Thailand🇹🇭"
+    },
+    "basics.zodiac": {
+      "from": "Leo",
+      "to": "Virgo"
+    },
+    "basics.love_style": {
+      "from": "Thoughtful gestures",
+      "to": "Time together"
     }
   }
 }

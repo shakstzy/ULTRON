@@ -9,9 +9,9 @@ phone: null
 status: "new"
 first_seen: "2026-05-11T04:17:54.525Z"
 last_activity: "2026-05-11T04:17:54.525Z"
-last_scrape: "2026-05-15T04:09:51.645Z"
+last_scrape: "2026-05-15T20:24:09.112Z"
 previous_slugs: []
-last_profile_diff: "2026-05-15T04:09:51.645Z"
+last_profile_diff: "2026-05-15T20:24:09.112Z"
 ---
 
 ## Profile
@@ -155,6 +155,24 @@ last_profile_diff: "2026-05-15T04:09:51.645Z"
 ```json profile-diff
 {
   "ts": "2026-05-15T04:09:51.645Z",
+  "added": {
+    "jobs": [
+      "English, Spanish"
+    ]
+  },
+  "removed": {
+    "jobs": [
+      "English",
+      "Spanish"
+    ]
+  },
+  "changed": {}
+}
+```
+
+```json profile-diff
+{
+  "ts": "2026-05-15T20:24:09.112Z",
   "added": {
     "jobs": [
       "English, Spanish"

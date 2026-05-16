@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.936163+00:00
+ingested_at: 2026-05-16T08:06:34.560396+00:00
 ingest_version: 1
 content_hash: blake2b:0b13ebbd162e6aa946b3cc042fc5442b
-provider_modified_at: 2026-05-15T08:12:17.936163+00:00
+provider_modified_at: 2026-05-16T08:06:34.560396+00:00
 
 title: Abhishek
 slug: abhishek
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15712587031"]
   slack: []
-last_synced: 2026-05-15T08:12:17.936163+00:00
+last_synced: 2026-05-16T08:06:34.560396+00:00
 global: true
 ---
 

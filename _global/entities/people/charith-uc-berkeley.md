@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.002493+00:00
+ingested_at: 2026-05-16T08:06:34.603726+00:00
 ingest_version: 1
 content_hash: blake2b:bd29f620150cad0dd5b8d7dcf200beea
-provider_modified_at: 2026-05-15T08:12:18.002493+00:00
+provider_modified_at: 2026-05-16T08:06:34.603726+00:00
 
 title: Charith UC Berkeley
 slug: charith-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17148760335"]
   slack: []
-last_synced: 2026-05-15T08:12:18.002493+00:00
+last_synced: 2026-05-16T08:06:34.603726+00:00
 global: true
 ---
 

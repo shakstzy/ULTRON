@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.037271+00:00
+ingested_at: 2026-05-16T08:06:34.636578+00:00
 ingest_version: 1
 content_hash: blake2b:73ec3aec890e2acfe73f24c72ec72194
-provider_modified_at: 2026-05-15T08:12:18.037271+00:00
+provider_modified_at: 2026-05-16T08:06:34.636578+00:00
 
 title: Bill Sutton Relativity
 slug: bill-sutton-relativity
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18478900891"]
   slack: []
-last_synced: 2026-05-15T08:12:18.037271+00:00
+last_synced: 2026-05-16T08:06:34.636578+00:00
 global: true
 ---
 

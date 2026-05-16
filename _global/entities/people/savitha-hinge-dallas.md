@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.066691+00:00
+ingested_at: 2026-05-16T08:06:34.665058+00:00
 ingest_version: 1
 content_hash: blake2b:a33c3e69a8b41843d61f8d3f877dc904
-provider_modified_at: 2026-05-15T08:12:18.066691+00:00
+provider_modified_at: 2026-05-16T08:06:34.665058+00:00
 
 title: Savitha Hinge Dallas
 slug: savitha-hinge-dallas
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17372264157"]
   slack: []
-last_synced: 2026-05-15T08:12:18.066691+00:00
+last_synced: 2026-05-16T08:06:34.665058+00:00
 global: true
 ---
 

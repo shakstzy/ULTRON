@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.927558+00:00
+ingested_at: 2026-05-16T08:06:34.551266+00:00
 ingest_version: 1
 content_hash: blake2b:6e209ab93c1f5ab0b59ada406fae1792
-provider_modified_at: 2026-05-15T08:12:17.927558+00:00
+provider_modified_at: 2026-05-16T08:06:34.551266+00:00
 
 title: Jake Garcia
 slug: jake-garcia
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15126509948"]
   slack: []
-last_synced: 2026-05-15T08:12:17.927558+00:00
+last_synced: 2026-05-16T08:06:34.551266+00:00
 global: true
 ---
 

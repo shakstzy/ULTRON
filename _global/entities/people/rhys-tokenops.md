@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.062587+00:00
+ingested_at: 2026-05-16T08:06:34.661142+00:00
 ingest_version: 1
 content_hash: blake2b:233d9ed86f113701269fd69ec222976e
-provider_modified_at: 2026-05-15T08:12:18.062587+00:00
+provider_modified_at: 2026-05-16T08:06:34.661142+00:00
 
 title: Rhys | TokenOps
 slug: rhys-tokenops
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:18.062587+00:00
+last_synced: 2026-05-16T08:06:34.661142+00:00
 global: true
 ---
 

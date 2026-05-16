@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.002695+00:00
+ingested_at: 2026-05-16T08:06:34.603920+00:00
 ingest_version: 1
 content_hash: blake2b:8ec8c59b9ec9d5538368eccb414765ea
-provider_modified_at: 2026-05-15T08:12:18.002695+00:00
+provider_modified_at: 2026-05-16T08:06:34.603920+00:00
 
 title: Jennifer Stanford LEAD
 slug: jennifer-stanford-lead
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16507367901"]
   slack: []
-last_synced: 2026-05-15T08:12:18.002695+00:00
+last_synced: 2026-05-16T08:06:34.603920+00:00
 global: true
 ---
 

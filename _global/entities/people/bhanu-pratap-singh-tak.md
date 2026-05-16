@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.059726+00:00
+ingested_at: 2026-05-16T08:06:34.658699+00:00
 ingest_version: 1
 content_hash: blake2b:8d9f343a9b0db99c8730b0019e58db68
-provider_modified_at: 2026-05-15T08:12:18.059726+00:00
+provider_modified_at: 2026-05-16T08:06:34.658699+00:00
 
 title: Bhanu Pratap Singh Tak
 slug: bhanu-pratap-singh-tak
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 (804) 312-7204"]
   slack: []
-last_synced: 2026-05-15T08:12:18.059726+00:00
+last_synced: 2026-05-16T08:06:34.658699+00:00
 global: true
 ---
 

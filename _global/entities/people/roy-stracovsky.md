@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.063393+00:00
+ingested_at: 2026-05-16T08:06:34.661968+00:00
 ingest_version: 1
 content_hash: blake2b:e88df3634702187605705c32384a98f2
-provider_modified_at: 2026-05-15T08:12:18.063393+00:00
+provider_modified_at: 2026-05-16T08:06:34.661968+00:00
 
 title: Roy Stračovský
 slug: roy-stracovsky
@@ -15,7 +15,7 @@ identifiers:
   email: ["royjstracovsky@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:18.063393+00:00
+last_synced: 2026-05-16T08:06:34.661968+00:00
 global: true
 ---
 

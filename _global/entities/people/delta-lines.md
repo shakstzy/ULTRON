@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.071808+00:00
+ingested_at: 2026-05-16T08:06:34.669956+00:00
 ingest_version: 1
 content_hash: blake2b:8e3180d36562cb9061daa3ba12e517ed
-provider_modified_at: 2026-05-15T08:12:18.071808+00:00
+provider_modified_at: 2026-05-16T08:06:34.669956+00:00
 
 title: Delta Lines
 slug: delta-lines
@@ -15,7 +15,7 @@ identifiers:
   email: ["kana@delta.com"]
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:18.071808+00:00
+last_synced: 2026-05-16T08:06:34.669956+00:00
 global: true
 ---
 

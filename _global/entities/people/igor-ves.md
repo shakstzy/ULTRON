@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.891922+00:00
+ingested_at: 2026-05-16T08:06:34.515149+00:00
 ingest_version: 1
 content_hash: blake2b:b4dfb82f4fdf66c2bd13fb9ed61b55f3
-provider_modified_at: 2026-05-15T08:12:17.891922+00:00
+provider_modified_at: 2026-05-16T08:06:34.515149+00:00
 
 title: Igor | VES
 slug: igor-ves
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:17.891922+00:00
+last_synced: 2026-05-16T08:06:34.515149+00:00
 global: true
 ---
 

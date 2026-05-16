@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.010917+00:00
+ingested_at: 2026-05-16T08:06:34.610905+00:00
 ingest_version: 1
 content_hash: blake2b:ef18847f228fc4c40675182e03d6b0d4
-provider_modified_at: 2026-05-15T08:12:18.010917+00:00
+provider_modified_at: 2026-05-16T08:06:34.610905+00:00
 
 title: Shannon Bergeron
 slug: shannon-bergeron
@@ -15,7 +15,7 @@ identifiers:
   email: ["shannon@corecollegeconsulting.com"]
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:18.010917+00:00
+last_synced: 2026-05-16T08:06:34.610905+00:00
 global: true
 ---
 

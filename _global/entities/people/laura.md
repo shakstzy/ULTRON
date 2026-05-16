@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.913150+00:00
+ingested_at: 2026-05-16T08:06:34.536924+00:00
 ingest_version: 1
 content_hash: blake2b:6e3c428b606ce99cd565a51d4fa6f5ea
-provider_modified_at: 2026-05-15T08:12:17.913150+00:00
+provider_modified_at: 2026-05-16T08:06:34.536924+00:00
 
 title: Laura
 slug: laura
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 239-560-7918"]
   slack: []
-last_synced: 2026-05-15T08:12:17.913150+00:00
+last_synced: 2026-05-16T08:06:34.536924+00:00
 global: true
 ---
 

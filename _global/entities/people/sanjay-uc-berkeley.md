@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.015430+00:00
+ingested_at: 2026-05-16T08:06:34.615617+00:00
 ingest_version: 1
 content_hash: blake2b:6cf7bf8f545f7647c6ea0634487991fe
-provider_modified_at: 2026-05-15T08:12:18.015430+00:00
+provider_modified_at: 2026-05-16T08:06:34.615617+00:00
 
 title: Sanjay UC Berkeley
 slug: sanjay-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 949-259-3385"]
   slack: []
-last_synced: 2026-05-15T08:12:18.015430+00:00
+last_synced: 2026-05-16T08:06:34.615617+00:00
 global: true
 ---
 

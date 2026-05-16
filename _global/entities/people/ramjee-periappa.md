@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.036828+00:00
+ingested_at: 2026-05-16T08:06:34.635950+00:00
 ingest_version: 1
 content_hash: blake2b:372793bd8b6364cbe57608202c808441
-provider_modified_at: 2026-05-15T08:12:18.036828+00:00
+provider_modified_at: 2026-05-16T08:06:34.635950+00:00
 
 title: Ramjee Periappa
 slug: ramjee-periappa
@@ -15,7 +15,7 @@ identifiers:
   email: ["ramjee.n@gmail.com"]
   phone: ["+918469815715"]
   slack: []
-last_synced: 2026-05-15T08:12:18.036828+00:00
+last_synced: 2026-05-16T08:06:34.635950+00:00
 global: true
 ---
 

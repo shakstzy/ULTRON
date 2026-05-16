@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.954193+00:00
+ingested_at: 2026-05-16T08:06:34.580309+00:00
 ingest_version: 1
 content_hash: blake2b:376ba79aaedc8128980f742d8c0d3f74
-provider_modified_at: 2026-05-15T08:12:17.954193+00:00
+provider_modified_at: 2026-05-16T08:06:34.580309+00:00
 
 title: Adamaris Renter Showing26
 slug: adamaris-renter-showing26
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18183071715"]
   slack: []
-last_synced: 2026-05-15T08:12:17.954193+00:00
+last_synced: 2026-05-16T08:06:34.580309+00:00
 global: true
 ---
 

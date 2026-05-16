@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.014207+00:00
+ingested_at: 2026-05-16T08:06:34.614409+00:00
 ingest_version: 1
 content_hash: blake2b:93e09c9216ad30c5e4ebe6380e5e9578
-provider_modified_at: 2026-05-15T08:12:18.014207+00:00
+provider_modified_at: 2026-05-16T08:06:34.614409+00:00
 
 title: Latha Kaliyur Aunty
 slug: latha-kaliyur-aunty
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15125070424"]
   slack: []
-last_synced: 2026-05-15T08:12:18.014207+00:00
+last_synced: 2026-05-16T08:06:34.614409+00:00
 global: true
 ---
 

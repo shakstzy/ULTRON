@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.988414+00:00
+ingested_at: 2026-05-16T08:06:34.589982+00:00
 ingest_version: 1
 content_hash: blake2b:9bbbf9132904033f9dec992a33f08e0d
-provider_modified_at: 2026-05-15T08:12:17.988414+00:00
+provider_modified_at: 2026-05-16T08:06:34.589982+00:00
 
 title: Yolanda Hinge Austin
 slug: yolanda-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17146312102"]
   slack: []
-last_synced: 2026-05-15T08:12:17.988414+00:00
+last_synced: 2026-05-16T08:06:34.589982+00:00
 global: true
 ---
 

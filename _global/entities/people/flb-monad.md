@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.894619+00:00
+ingested_at: 2026-05-16T08:06:34.517966+00:00
 ingest_version: 1
 content_hash: blake2b:049d04ad09723947dadfd1400df8c54a
-provider_modified_at: 2026-05-15T08:12:17.894619+00:00
+provider_modified_at: 2026-05-16T08:06:34.517966+00:00
 
 title: FLB | Monad
 slug: flb-monad
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:17.894619+00:00
+last_synced: 2026-05-16T08:06:34.517966+00:00
 global: true
 ---
 

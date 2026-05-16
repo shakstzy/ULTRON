@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.941233+00:00
+ingested_at: 2026-05-16T08:06:34.565737+00:00
 ingest_version: 1
 content_hash: blake2b:f798b048e8fe98952f777b6a9e1b7ef3
-provider_modified_at: 2026-05-15T08:12:17.941233+00:00
+provider_modified_at: 2026-05-16T08:06:34.565737+00:00
 
 title: Craig | AutoFinance
 slug: craig-autofinance
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:17.941233+00:00
+last_synced: 2026-05-16T08:06:34.565737+00:00
 global: true
 ---
 

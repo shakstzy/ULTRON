@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.888724+00:00
+ingested_at: 2026-05-16T08:06:34.511679+00:00
 ingest_version: 1
 content_hash: blake2b:f085783981d516f9347c5d50b3b12917
-provider_modified_at: 2026-05-15T08:12:17.888724+00:00
+provider_modified_at: 2026-05-16T08:06:34.511679+00:00
 
 title: Vani Hinge Austin
 slug: vani-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15129833281"]
   slack: []
-last_synced: 2026-05-15T08:12:17.888724+00:00
+last_synced: 2026-05-16T08:06:34.511679+00:00
 global: true
 ---
 

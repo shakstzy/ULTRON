@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.897537+00:00
+ingested_at: 2026-05-16T08:06:34.521156+00:00
 ingest_version: 1
 content_hash: blake2b:a86093035277ab7421337d4a775f07ad
-provider_modified_at: 2026-05-15T08:12:17.897537+00:00
+provider_modified_at: 2026-05-16T08:06:34.521156+00:00
 
 title: Antonio | Sentient
 slug: antonio-sentient
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:17.897537+00:00
+last_synced: 2026-05-16T08:06:34.521156+00:00
 global: true
 ---
 

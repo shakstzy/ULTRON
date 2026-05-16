@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.081460+00:00
+ingested_at: 2026-05-16T08:06:34.679331+00:00
 ingest_version: 1
 content_hash: blake2b:0894ce603916e1a2f708a0240a68af6c
-provider_modified_at: 2026-05-15T08:12:18.081460+00:00
+provider_modified_at: 2026-05-16T08:06:34.679331+00:00
 
 title: Sonia Renter Showing
 slug: sonia-renter-showing
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18187954364"]
   slack: []
-last_synced: 2026-05-15T08:12:18.081460+00:00
+last_synced: 2026-05-16T08:06:34.679331+00:00
 global: true
 ---
 

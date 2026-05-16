@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.078502+00:00
+ingested_at: 2026-05-16T08:06:34.676422+00:00
 ingest_version: 1
 content_hash: blake2b:3b062000bae3161c86fdc39f46eb49f1
-provider_modified_at: 2026-05-15T08:12:18.078502+00:00
+provider_modified_at: 2026-05-16T08:06:34.676422+00:00
 
 title: Jae Hinge SD
 slug: jae-hinge-sd
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19569756228"]
   slack: []
-last_synced: 2026-05-15T08:12:18.078502+00:00
+last_synced: 2026-05-16T08:06:34.676422+00:00
 global: true
 ---
 

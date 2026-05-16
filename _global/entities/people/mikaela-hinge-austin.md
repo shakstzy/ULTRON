@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.926704+00:00
+ingested_at: 2026-05-16T08:06:34.550486+00:00
 ingest_version: 1
 content_hash: blake2b:773aa3811d314069542911b533883938
-provider_modified_at: 2026-05-15T08:12:17.926704+00:00
+provider_modified_at: 2026-05-16T08:06:34.550486+00:00
 
 title: Mikaela Hinge Austin
 slug: mikaela-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18087220595"]
   slack: []
-last_synced: 2026-05-15T08:12:17.926704+00:00
+last_synced: 2026-05-16T08:06:34.550486+00:00
 global: true
 ---
 

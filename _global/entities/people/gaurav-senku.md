@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.948661+00:00
+ingested_at: 2026-05-16T08:06:34.574664+00:00
 ingest_version: 1
 content_hash: blake2b:404c6093859f3daf31a11165283529bd
-provider_modified_at: 2026-05-15T08:12:17.948661+00:00
+provider_modified_at: 2026-05-16T08:06:34.574664+00:00
 
 title: Gaurav | Senku
 slug: gaurav-senku
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+91 884 046 7953"]
   slack: []
-last_synced: 2026-05-15T08:12:17.948661+00:00
+last_synced: 2026-05-16T08:06:34.574664+00:00
 global: true
 ---
 

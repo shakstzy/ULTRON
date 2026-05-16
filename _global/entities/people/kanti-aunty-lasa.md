@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.886613+00:00
+ingested_at: 2026-05-16T08:06:34.509483+00:00
 ingest_version: 1
 content_hash: blake2b:f2d173161b5b522ee67c08b7901ae7bf
-provider_modified_at: 2026-05-15T08:12:17.886613+00:00
+provider_modified_at: 2026-05-16T08:06:34.509483+00:00
 
 title: Kanti Aunty LASA
 slug: kanti-aunty-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-848-2608"]
   slack: []
-last_synced: 2026-05-15T08:12:17.886613+00:00
+last_synced: 2026-05-16T08:06:34.509483+00:00
 global: true
 ---
 

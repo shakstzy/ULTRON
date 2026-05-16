@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.024453+00:00
+ingested_at: 2026-05-16T08:06:34.624149+00:00
 ingest_version: 1
 content_hash: blake2b:86e060a88084285ba737e3a1528f9ba9
-provider_modified_at: 2026-05-15T08:12:18.024453+00:00
+provider_modified_at: 2026-05-16T08:06:34.624149+00:00
 
 title: Patrick LASA Austin
 slug: patrick-lasa-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15128650555"]
   slack: []
-last_synced: 2026-05-15T08:12:18.024453+00:00
+last_synced: 2026-05-16T08:06:34.624149+00:00
 global: true
 ---
 

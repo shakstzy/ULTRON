@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.931259+00:00
+ingested_at: 2026-05-16T08:06:34.555022+00:00
 ingest_version: 1
 content_hash: blake2b:d350f41273a33349127f60ffe8548e63
-provider_modified_at: 2026-05-15T08:12:17.931259+00:00
+provider_modified_at: 2026-05-16T08:06:34.555022+00:00
 
 title: Junaid Rasool LASA
 slug: junaid-rasool-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: ["badjujunaid@gmail.com", "BadJujunaid@gmail.com", "jrasool2002@gmail.com"]
   phone: ["(512) 888-3350"]
   slack: []
-last_synced: 2026-05-15T08:12:17.931259+00:00
+last_synced: 2026-05-16T08:06:34.555022+00:00
 global: true
 ---
 

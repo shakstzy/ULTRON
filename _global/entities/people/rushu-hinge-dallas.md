@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.919958+00:00
+ingested_at: 2026-05-16T08:06:34.543738+00:00
 ingest_version: 1
 content_hash: blake2b:b0f7ed6553f0e3e2fe86cf6de7af27e0
-provider_modified_at: 2026-05-15T08:12:17.919958+00:00
+provider_modified_at: 2026-05-16T08:06:34.543738+00:00
 
 title: Rushu Hinge Dallas
 slug: rushu-hinge-dallas
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14697421004"]
   slack: []
-last_synced: 2026-05-15T08:12:17.919958+00:00
+last_synced: 2026-05-16T08:06:34.543738+00:00
 global: true
 ---
 

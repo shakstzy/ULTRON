@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.919373+00:00
+ingested_at: 2026-05-16T08:06:34.543091+00:00
 ingest_version: 1
 content_hash: blake2b:a5044fcbd1aa3fe8faa17782a5e8ca30
-provider_modified_at: 2026-05-15T08:12:17.919373+00:00
+provider_modified_at: 2026-05-16T08:06:34.543091+00:00
 
 title: Austin Global Lives UC Berkeley
 slug: austin-global-lives-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 408-442-9856"]
   slack: []
-last_synced: 2026-05-15T08:12:17.919373+00:00
+last_synced: 2026-05-16T08:06:34.543091+00:00
 global: true
 ---
 

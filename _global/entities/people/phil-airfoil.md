@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.933754+00:00
+ingested_at: 2026-05-16T08:06:34.557626+00:00
 ingest_version: 1
 content_hash: blake2b:0986b528701eab871130c8a748f2814f
-provider_modified_at: 2026-05-15T08:12:17.933754+00:00
+provider_modified_at: 2026-05-16T08:06:34.557626+00:00
 
 title: Phil | Airfoil
 slug: phil-airfoil
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:17.933754+00:00
+last_synced: 2026-05-16T08:06:34.557626+00:00
 global: true
 ---
 

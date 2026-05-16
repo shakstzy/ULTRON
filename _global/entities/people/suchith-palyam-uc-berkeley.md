@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.872285+00:00
+ingested_at: 2026-05-16T08:06:34.494235+00:00
 ingest_version: 1
 content_hash: blake2b:44d4a2963b88a61828930c5f19540c95
-provider_modified_at: 2026-05-15T08:12:17.872285+00:00
+provider_modified_at: 2026-05-16T08:06:34.494235+00:00
 
 title: Suchith Palyam UC Berkeley
 slug: suchith-palyam-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: ["suchithpalyam@gmail.com"]
   phone: ["+1 (512) 508-9066"]
   slack: []
-last_synced: 2026-05-15T08:12:17.872285+00:00
+last_synced: 2026-05-16T08:06:34.494235+00:00
 global: true
 ---
 

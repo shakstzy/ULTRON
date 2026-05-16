@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.055821+00:00
+ingested_at: 2026-05-16T08:06:34.654850+00:00
 ingest_version: 1
 content_hash: blake2b:40b7a511c4d40b9b3c181dbb812cfadb
-provider_modified_at: 2026-05-15T08:12:18.055821+00:00
+provider_modified_at: 2026-05-16T08:06:34.654850+00:00
 
 title: Jacob | NOPROJECT
 slug: jacob-noproject
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:18.055821+00:00
+last_synced: 2026-05-16T08:06:34.654850+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.044013+00:00
+ingested_at: 2026-05-16T08:06:34.643120+00:00
 ingest_version: 1
 content_hash: blake2b:5eafc24aa01c8705e17ba83675b3fbe8
-provider_modified_at: 2026-05-15T08:12:18.044013+00:00
+provider_modified_at: 2026-05-16T08:06:34.643120+00:00
 
 title: AM business
 slug: am-business
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(979) 845-5011"]
   slack: []
-last_synced: 2026-05-15T08:12:18.044013+00:00
+last_synced: 2026-05-16T08:06:34.643120+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.055085+00:00
+ingested_at: 2026-05-16T08:06:34.654109+00:00
 ingest_version: 1
 content_hash: blake2b:df242e69621edd51a24cd7e54ef36003
-provider_modified_at: 2026-05-15T08:12:18.055085+00:00
+provider_modified_at: 2026-05-16T08:06:34.654109+00:00
 
 title: Kevin Bai SF
 slug: kevin-bai-sf
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13108670973"]
   slack: []
-last_synced: 2026-05-15T08:12:18.055085+00:00
+last_synced: 2026-05-16T08:06:34.654109+00:00
 global: true
 ---
 

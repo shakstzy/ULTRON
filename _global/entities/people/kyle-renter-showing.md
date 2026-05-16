@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.994715+00:00
+ingested_at: 2026-05-16T08:06:34.596185+00:00
 ingest_version: 1
 content_hash: blake2b:2f1850b6eff2a5f53cf11d1e49237624
-provider_modified_at: 2026-05-15T08:12:17.994715+00:00
+provider_modified_at: 2026-05-16T08:06:34.596185+00:00
 
 title: Kyle Renter Showing
 slug: kyle-renter-showing
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12602003660"]
   slack: []
-last_synced: 2026-05-15T08:12:17.994715+00:00
+last_synced: 2026-05-16T08:06:34.596185+00:00
 global: true
 ---
 

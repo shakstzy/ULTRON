@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.941503+00:00
+ingested_at: 2026-05-16T08:06:34.565973+00:00
 ingest_version: 1
 content_hash: blake2b:1b63658a41b0fbfb9d2b913b96397f11
-provider_modified_at: 2026-05-15T08:12:17.941503+00:00
+provider_modified_at: 2026-05-16T08:06:34.565973+00:00
 
 title: Matthew Yang
 slug: matthew-yang
@@ -15,7 +15,7 @@ identifiers:
   email: ["matthewyang2002@hotmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:17.941503+00:00
+last_synced: 2026-05-16T08:06:34.565973+00:00
 global: true
 ---
 

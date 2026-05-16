@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.884702+00:00
+ingested_at: 2026-05-16T08:06:34.507348+00:00
 ingest_version: 1
 content_hash: blake2b:86cf2236c6a1d2b363ddfa7e0d9e1ab9
-provider_modified_at: 2026-05-15T08:12:17.884702+00:00
+provider_modified_at: 2026-05-16T08:06:34.507348+00:00
 
 title: Sumin's LASA
 slug: sumin-s-lasa-edb4
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15125670512"]
   slack: []
-last_synced: 2026-05-15T08:12:17.884702+00:00
+last_synced: 2026-05-16T08:06:34.507348+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.932405+00:00
+ingested_at: 2026-05-16T08:06:34.556207+00:00
 ingest_version: 1
 content_hash: blake2b:ee0f6eb5b3577750557b4a61cf2b7578
-provider_modified_at: 2026-05-15T08:12:17.932405+00:00
+provider_modified_at: 2026-05-16T08:06:34.556207+00:00
 
 title: Thiru Uncle Bay Area
 slug: thiru-uncle-bay-area
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14083906323"]
   slack: []
-last_synced: 2026-05-15T08:12:17.932405+00:00
+last_synced: 2026-05-16T08:06:34.556207+00:00
 global: true
 ---
 

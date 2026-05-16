@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.929752+00:00
+ingested_at: 2026-05-16T08:06:34.553507+00:00
 ingest_version: 1
 content_hash: blake2b:d2b8060db281e354cde0dbca51961d6d
-provider_modified_at: 2026-05-15T08:12:17.929752+00:00
+provider_modified_at: 2026-05-16T08:06:34.553507+00:00
 
 title: Clair Hinge Austin
 slug: clair-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19567087273"]
   slack: []
-last_synced: 2026-05-15T08:12:17.929752+00:00
+last_synced: 2026-05-16T08:06:34.553507+00:00
 global: true
 ---
 

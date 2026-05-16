@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.905230+00:00
+ingested_at: 2026-05-16T08:06:34.528778+00:00
 ingest_version: 1
 content_hash: blake2b:fcff1448e62ec8d6aef8c637541f86ef
-provider_modified_at: 2026-05-15T08:12:17.905230+00:00
+provider_modified_at: 2026-05-16T08:06:34.528778+00:00
 
 title: Alex Mancevski
 slug: alex-mancevski
@@ -15,7 +15,7 @@ identifiers:
   email: ["alexgmancevski@gmail.com", "alexmancevski@gmail.com"]
   phone: ["(512) 915-2151"]
   slack: []
-last_synced: 2026-05-15T08:12:17.905230+00:00
+last_synced: 2026-05-16T08:06:34.528778+00:00
 global: true
 ---
 

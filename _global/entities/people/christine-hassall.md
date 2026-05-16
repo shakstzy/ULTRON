@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.995348+00:00
+ingested_at: 2026-05-16T08:06:34.596851+00:00
 ingest_version: 1
 content_hash: blake2b:5483e7562dfadfa0b7595a90097ae764
-provider_modified_at: 2026-05-15T08:12:17.995348+00:00
+provider_modified_at: 2026-05-16T08:06:34.596851+00:00
 
 title: Christine Hassall
 slug: christine-hassall
@@ -15,7 +15,7 @@ identifiers:
   email: ["christine.hassall@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:17.995348+00:00
+last_synced: 2026-05-16T08:06:34.596851+00:00
 global: true
 ---
 

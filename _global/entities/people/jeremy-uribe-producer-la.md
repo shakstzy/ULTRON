@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.949800+00:00
+ingested_at: 2026-05-16T08:06:34.575808+00:00
 ingest_version: 1
 content_hash: blake2b:3e9de41b2f317cb3a36e6b720f934666
-provider_modified_at: 2026-05-15T08:12:17.949800+00:00
+provider_modified_at: 2026-05-16T08:06:34.575808+00:00
 
 title: Jeremy Uribe Producer LA
 slug: jeremy-uribe-producer-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17143516841"]
   slack: []
-last_synced: 2026-05-15T08:12:17.949800+00:00
+last_synced: 2026-05-16T08:06:34.575808+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.928871+00:00
+ingested_at: 2026-05-16T08:06:34.552667+00:00
 ingest_version: 1
 content_hash: blake2b:0a9648cdd19e96039309d9b33576e6ab
-provider_modified_at: 2026-05-15T08:12:17.928871+00:00
+provider_modified_at: 2026-05-16T08:06:34.552667+00:00
 
 title: Zach Keith Nightly Manager
 slug: zach-keith-nightly-manager
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16156844533"]
   slack: []
-last_synced: 2026-05-15T08:12:17.928871+00:00
+last_synced: 2026-05-16T08:06:34.552667+00:00
 global: true
 ---
 

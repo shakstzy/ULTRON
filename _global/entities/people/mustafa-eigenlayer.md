@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.949002+00:00
+ingested_at: 2026-05-16T08:06:34.575001+00:00
 ingest_version: 1
 content_hash: blake2b:564cdc6e9f14b7696788de9159df8a51
-provider_modified_at: 2026-05-15T08:12:17.949002+00:00
+provider_modified_at: 2026-05-16T08:06:34.575001+00:00
 
 title: Mustafa | Eigenlayer
 slug: mustafa-eigenlayer
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:17.949002+00:00
+last_synced: 2026-05-16T08:06:34.575001+00:00
 global: true
 ---
 

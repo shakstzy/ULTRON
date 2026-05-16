@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.915127+00:00
+ingested_at: 2026-05-16T08:06:34.538803+00:00
 ingest_version: 1
 content_hash: blake2b:17b37d896d0fe9da060b06e43fdc1a97
-provider_modified_at: 2026-05-15T08:12:17.915127+00:00
+provider_modified_at: 2026-05-16T08:06:34.538803+00:00
 
 title: Tim Guo Blockchain UC Berkeley
 slug: tim-guo-blockchain-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(626) 708-1258"]
   slack: []
-last_synced: 2026-05-15T08:12:17.915127+00:00
+last_synced: 2026-05-16T08:06:34.538803+00:00
 global: true
 ---
 

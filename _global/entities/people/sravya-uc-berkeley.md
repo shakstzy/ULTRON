@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.011979+00:00
+ingested_at: 2026-05-16T08:06:34.612062+00:00
 ingest_version: 1
 content_hash: blake2b:9f9417cbd2d3dc78161278771e39baeb
-provider_modified_at: 2026-05-15T08:12:18.011979+00:00
+provider_modified_at: 2026-05-16T08:06:34.612062+00:00
 
 title: Sravya UC Berkeley
 slug: sravya-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14845221550"]
   slack: []
-last_synced: 2026-05-15T08:12:18.011979+00:00
+last_synced: 2026-05-16T08:06:34.612062+00:00
 global: true
 ---
 

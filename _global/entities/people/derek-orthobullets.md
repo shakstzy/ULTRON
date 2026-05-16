@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.081521+00:00
+ingested_at: 2026-05-16T08:06:34.679394+00:00
 ingest_version: 1
 content_hash: blake2b:84dbd9783b75e3a666abfd8ca5b771cb
-provider_modified_at: 2026-05-15T08:12:18.081521+00:00
+provider_modified_at: 2026-05-16T08:06:34.679394+00:00
 
 title: Derek Orthobullets
 slug: derek-orthobullets
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19179035781"]
   slack: []
-last_synced: 2026-05-15T08:12:18.081521+00:00
+last_synced: 2026-05-16T08:06:34.679394+00:00
 global: true
 ---
 

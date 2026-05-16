@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.926024+00:00
+ingested_at: 2026-05-16T08:06:34.549806+00:00
 ingest_version: 1
 content_hash: blake2b:7f9fca7a4a9421df77881f07aa7583a8
-provider_modified_at: 2026-05-15T08:12:17.926024+00:00
+provider_modified_at: 2026-05-16T08:06:34.549806+00:00
 
 title: Rish UC Berkeley
 slug: rish-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15107101660"]
   slack: []
-last_synced: 2026-05-15T08:12:17.926024+00:00
+last_synced: 2026-05-16T08:06:34.549806+00:00
 global: true
 ---
 

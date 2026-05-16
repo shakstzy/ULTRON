@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.993271+00:00
+ingested_at: 2026-05-16T08:06:34.594717+00:00
 ingest_version: 1
 content_hash: blake2b:db8f14e5a752b773fd4c506e40c350ce
-provider_modified_at: 2026-05-15T08:12:17.993271+00:00
+provider_modified_at: 2026-05-16T08:06:34.594717+00:00
 
 title: Donald | Kiln
 slug: donald-kiln
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:17.993271+00:00
+last_synced: 2026-05-16T08:06:34.594717+00:00
 global: true
 ---
 

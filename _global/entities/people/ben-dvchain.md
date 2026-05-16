@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.022073+00:00
+ingested_at: 2026-05-16T08:06:34.621897+00:00
 ingest_version: 1
 content_hash: blake2b:28d25d8a300667132ac9f29240f4ee89
-provider_modified_at: 2026-05-15T08:12:18.022073+00:00
+provider_modified_at: 2026-05-16T08:06:34.621897+00:00
 
 title: Ben | DVChain
 slug: ben-dvchain
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:18.022073+00:00
+last_synced: 2026-05-16T08:06:34.621897+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.052825+00:00
+ingested_at: 2026-05-16T08:06:34.651692+00:00
 ingest_version: 1
 content_hash: blake2b:b6a48af6da927828eab48fe730f28ac2
-provider_modified_at: 2026-05-15T08:12:18.052825+00:00
+provider_modified_at: 2026-05-16T08:06:34.651692+00:00
 
 title: Paige Hinge SD
 slug: paige-hinge-sd
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19714197900"]
   slack: []
-last_synced: 2026-05-15T08:12:18.052825+00:00
+last_synced: 2026-05-16T08:06:34.651692+00:00
 global: true
 ---
 

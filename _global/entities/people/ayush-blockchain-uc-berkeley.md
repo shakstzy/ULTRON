@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.018166+00:00
+ingested_at: 2026-05-16T08:06:34.617784+00:00
 ingest_version: 1
 content_hash: blake2b:88251b66f336cb8ebb6b28897e6cc316
-provider_modified_at: 2026-05-15T08:12:18.018166+00:00
+provider_modified_at: 2026-05-16T08:06:34.617784+00:00
 
 title: Ayush Blockchain UC Berkeley
 slug: ayush-blockchain-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 408-805-6878"]
   slack: []
-last_synced: 2026-05-15T08:12:18.018166+00:00
+last_synced: 2026-05-16T08:06:34.617784+00:00
 global: true
 ---
 

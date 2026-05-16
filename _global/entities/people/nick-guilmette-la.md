@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.025969+00:00
+ingested_at: 2026-05-16T08:06:34.625602+00:00
 ingest_version: 1
 content_hash: blake2b:d1074650ae944ba989317b0594160540
-provider_modified_at: 2026-05-15T08:12:18.025969+00:00
+provider_modified_at: 2026-05-16T08:06:34.625602+00:00
 
 title: Nick Guilmette LA
 slug: nick-guilmette-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18609515381"]
   slack: []
-last_synced: 2026-05-15T08:12:18.025969+00:00
+last_synced: 2026-05-16T08:06:34.625602+00:00
 global: true
 ---
 

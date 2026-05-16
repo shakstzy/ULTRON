@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.903449+00:00
+ingested_at: 2026-05-16T08:06:34.527025+00:00
 ingest_version: 1
 content_hash: blake2b:addd4cb08b54848eefcca37d5d5c493f
-provider_modified_at: 2026-05-15T08:12:17.903449+00:00
+provider_modified_at: 2026-05-16T08:06:34.527025+00:00
 
 title: Adi Rao UC Berkeley NYC
 slug: adi-rao-uc-berkeley-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18582849064"]
   slack: []
-last_synced: 2026-05-15T08:12:17.903449+00:00
+last_synced: 2026-05-16T08:06:34.527025+00:00
 global: true
 ---
 

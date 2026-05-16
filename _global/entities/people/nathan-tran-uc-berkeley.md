@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.944834+00:00
+ingested_at: 2026-05-16T08:06:34.570646+00:00
 ingest_version: 1
 content_hash: blake2b:1e193f42eee3eea917cdf9a8495b13a5
-provider_modified_at: 2026-05-15T08:12:17.944834+00:00
+provider_modified_at: 2026-05-16T08:06:34.570646+00:00
 
 title: Nathan Tran UC Berkeley
 slug: nathan-tran-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 510-585-8399"]
   slack: []
-last_synced: 2026-05-15T08:12:17.944834+00:00
+last_synced: 2026-05-16T08:06:34.570646+00:00
 global: true
 ---
 

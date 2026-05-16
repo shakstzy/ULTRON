@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.909323+00:00
+ingested_at: 2026-05-16T08:06:34.532964+00:00
 ingest_version: 1
 content_hash: blake2b:c44293716b61e6795cc8af2bafad0e0a
-provider_modified_at: 2026-05-15T08:12:17.909323+00:00
+provider_modified_at: 2026-05-16T08:06:34.532964+00:00
 
 title: Tejes Srinivasan NYC
 slug: tejes-srinivasan-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15109319559"]
   slack: []
-last_synced: 2026-05-15T08:12:17.909323+00:00
+last_synced: 2026-05-16T08:06:34.532964+00:00
 global: true
 ---
 

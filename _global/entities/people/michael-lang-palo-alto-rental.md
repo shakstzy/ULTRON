@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.079491+00:00
+ingested_at: 2026-05-16T08:06:34.677409+00:00
 ingest_version: 1
 content_hash: blake2b:998d67f936b734c0e11974bd1870ba3e
-provider_modified_at: 2026-05-15T08:12:18.079491+00:00
+provider_modified_at: 2026-05-16T08:06:34.677409+00:00
 
 title: Michael Lang Palo Alto Rental
 slug: michael-lang-palo-alto-rental
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16505644624"]
   slack: []
-last_synced: 2026-05-15T08:12:18.079491+00:00
+last_synced: 2026-05-16T08:06:34.677409+00:00
 global: true
 ---
 

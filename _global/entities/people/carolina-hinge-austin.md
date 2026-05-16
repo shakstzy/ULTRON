@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.963842+00:00
+ingested_at: 2026-05-16T08:06:34.587025+00:00
 ingest_version: 1
 content_hash: blake2b:e73df9a193b3d2f3527e9ab1ac178ba3
-provider_modified_at: 2026-05-15T08:12:17.963842+00:00
+provider_modified_at: 2026-05-16T08:06:34.587025+00:00
 
 title: Carolina Hinge Austin
 slug: carolina-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15126655900"]
   slack: []
-last_synced: 2026-05-15T08:12:17.963842+00:00
+last_synced: 2026-05-16T08:06:34.587025+00:00
 global: true
 ---
 

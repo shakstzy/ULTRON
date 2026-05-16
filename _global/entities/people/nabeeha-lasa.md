@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.947018+00:00
+ingested_at: 2026-05-16T08:06:34.572932+00:00
 ingest_version: 1
 content_hash: blake2b:b6a8c326ac8b4eb7253de21350753bc0
-provider_modified_at: 2026-05-15T08:12:17.947018+00:00
+provider_modified_at: 2026-05-16T08:06:34.572932+00:00
 
 title: Nabeeha LASA
 slug: nabeeha-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-797-5298"]
   slack: []
-last_synced: 2026-05-15T08:12:17.947018+00:00
+last_synced: 2026-05-16T08:06:34.572932+00:00
 global: true
 ---
 

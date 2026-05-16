@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.028835+00:00
+ingested_at: 2026-05-16T08:06:34.628480+00:00
 ingest_version: 1
 content_hash: blake2b:93962f69a2c1776b803ab290ca7950f5
-provider_modified_at: 2026-05-15T08:12:18.028835+00:00
+provider_modified_at: 2026-05-16T08:06:34.628480+00:00
 
 title: Jeff Marshall
 slug: jeff-marshall
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13104355293"]
   slack: []
-last_synced: 2026-05-15T08:12:18.028835+00:00
+last_synced: 2026-05-16T08:06:34.628480+00:00
 global: true
 ---
 

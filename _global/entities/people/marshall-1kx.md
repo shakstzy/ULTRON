@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.911460+00:00
+ingested_at: 2026-05-16T08:06:34.535177+00:00
 ingest_version: 1
 content_hash: blake2b:3c07bb07afe1b3cbd9ea03b48ee03d06
-provider_modified_at: 2026-05-15T08:12:17.911460+00:00
+provider_modified_at: 2026-05-16T08:06:34.535177+00:00
 
 title: Marshall | 1kx
 slug: marshall-1kx
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:17.911460+00:00
+last_synced: 2026-05-16T08:06:34.535177+00:00
 global: true
 ---
 

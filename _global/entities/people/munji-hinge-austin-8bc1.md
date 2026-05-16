@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.878687+00:00
+ingested_at: 2026-05-16T08:06:34.500994+00:00
 ingest_version: 1
 content_hash: blake2b:4d16915c5be2bce87a2f044761197eb6
-provider_modified_at: 2026-05-15T08:12:17.878687+00:00
+provider_modified_at: 2026-05-16T08:06:34.500994+00:00
 
 title: Munji Hinge Austin
 slug: munji-hinge-austin-8bc1
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12105198074"]
   slack: []
-last_synced: 2026-05-15T08:12:17.878687+00:00
+last_synced: 2026-05-16T08:06:34.500994+00:00
 global: true
 ---
 

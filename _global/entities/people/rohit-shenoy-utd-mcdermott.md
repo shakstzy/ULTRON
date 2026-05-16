@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.039118+00:00
+ingested_at: 2026-05-16T08:06:34.638525+00:00
 ingest_version: 1
 content_hash: blake2b:07181603c87df88d2d21cb71546d4a26
-provider_modified_at: 2026-05-15T08:12:18.039118+00:00
+provider_modified_at: 2026-05-16T08:06:34.638525+00:00
 
 title: Rohit Shenoy UTD McDermott
 slug: rohit-shenoy-utd-mcdermott
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 480-235-6998"]
   slack: []
-last_synced: 2026-05-15T08:12:18.039118+00:00
+last_synced: 2026-05-16T08:06:34.638525+00:00
 global: true
 ---
 

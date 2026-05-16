@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.014336+00:00
+ingested_at: 2026-05-16T08:06:34.614550+00:00
 ingest_version: 1
 content_hash: blake2b:252351b2eb0135ae9938cd31d8d509da
-provider_modified_at: 2026-05-15T08:12:18.014336+00:00
+provider_modified_at: 2026-05-16T08:06:34.614550+00:00
 
 title: Sofia Moore
 slug: sofia-moore
@@ -15,7 +15,7 @@ identifiers:
   email: ["smoore735@gmail.com"]
   phone: ["+1 512-466-7716"]
   slack: []
-last_synced: 2026-05-15T08:12:18.014336+00:00
+last_synced: 2026-05-16T08:06:34.614550+00:00
 global: true
 ---
 

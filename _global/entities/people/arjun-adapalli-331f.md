@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.884775+00:00
+ingested_at: 2026-05-16T08:06:34.507423+00:00
 ingest_version: 1
 content_hash: blake2b:58ff32ab7185414eb70426f2408b387e
-provider_modified_at: 2026-05-15T08:12:17.884775+00:00
+provider_modified_at: 2026-05-16T08:06:34.507423+00:00
 
 title: Arjun Adapalli
 slug: arjun-adapalli-331f
@@ -15,7 +15,7 @@ identifiers:
   email: ["arjun_adapalli@yahoo.com", "arjunadapallimusic@gmail.com"]
   phone: ["(512) 758-9381"]
   slack: []
-last_synced: 2026-05-15T08:12:17.884775+00:00
+last_synced: 2026-05-16T08:06:34.507423+00:00
 global: true
 ---
 

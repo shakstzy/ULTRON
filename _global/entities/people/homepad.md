@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.020549+00:00
+ingested_at: 2026-05-16T08:06:34.620312+00:00
 ingest_version: 1
 content_hash: blake2b:c5ac986c4ae80da9e36221ef94f58590
-provider_modified_at: 2026-05-15T08:12:18.020549+00:00
+provider_modified_at: 2026-05-16T08:06:34.620312+00:00
 
 title: HomePad
 slug: homepad
@@ -15,7 +15,7 @@ identifiers:
   email: ["kumarhouseipad@icloud.com"]
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:18.020549+00:00
+last_synced: 2026-05-16T08:06:34.620312+00:00
 global: true
 ---
 

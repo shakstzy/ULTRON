@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.015306+00:00
+ingested_at: 2026-05-16T08:06:34.615483+00:00
 ingest_version: 1
 content_hash: blake2b:fbf95f8b8aad4fc8e17c0b2fbd58e3f2
-provider_modified_at: 2026-05-15T08:12:18.015306+00:00
+provider_modified_at: 2026-05-16T08:06:34.615483+00:00
 
 title: Amine Nedjai Gamma 1
 slug: amine-nedjai-gamma-1
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+447588492664"]
   slack: []
-last_synced: 2026-05-15T08:12:18.015306+00:00
+last_synced: 2026-05-16T08:06:34.615483+00:00
 global: true
 ---
 

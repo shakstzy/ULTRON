@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.925577+00:00
+ingested_at: 2026-05-16T08:06:34.549316+00:00
 ingest_version: 1
 content_hash: blake2b:f3836fa0344f4a435ddefe27bc6d0a91
-provider_modified_at: 2026-05-15T08:12:17.925577+00:00
+provider_modified_at: 2026-05-16T08:06:34.549316+00:00
 
 title: Misha NYC
 slug: misha-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12019254482"]
   slack: []
-last_synced: 2026-05-15T08:12:17.925577+00:00
+last_synced: 2026-05-16T08:06:34.549316+00:00
 global: true
 ---
 

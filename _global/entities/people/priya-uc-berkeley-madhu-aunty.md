@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.048624+00:00
+ingested_at: 2026-05-16T08:06:34.647761+00:00
 ingest_version: 1
 content_hash: blake2b:9dee8ae3bf2506f3924def9103e1294a
-provider_modified_at: 2026-05-15T08:12:18.048624+00:00
+provider_modified_at: 2026-05-16T08:06:34.647761+00:00
 
 title: Priya UC Berkeley Madhu Aunty
 slug: priya-uc-berkeley-madhu-aunty
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19254003952"]
   slack: []
-last_synced: 2026-05-15T08:12:18.048624+00:00
+last_synced: 2026-05-16T08:06:34.647761+00:00
 global: true
 ---
 

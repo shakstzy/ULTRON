@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.994062+00:00
+ingested_at: 2026-05-16T08:06:34.595514+00:00
 ingest_version: 1
 content_hash: blake2b:2a1067ac2fd30ada82995510bd6089bf
-provider_modified_at: 2026-05-15T08:12:17.994062+00:00
+provider_modified_at: 2026-05-16T08:06:34.595514+00:00
 
 title: Sanvi Sister
 slug: sanvi-sister
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16828029163"]
   slack: []
-last_synced: 2026-05-15T08:12:17.994062+00:00
+last_synced: 2026-05-16T08:06:34.595514+00:00
 global: true
 ---
 

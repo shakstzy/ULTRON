@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.036444+00:00
+ingested_at: 2026-05-16T08:06:34.635404+00:00
 ingest_version: 1
 content_hash: blake2b:22d339ae2a80af2f8017b99c9ed7ccfc
-provider_modified_at: 2026-05-15T08:12:18.036444+00:00
+provider_modified_at: 2026-05-16T08:06:34.635404+00:00
 
 title: Zander Middle School
 slug: zander-middle-school
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15123545719"]
   slack: []
-last_synced: 2026-05-15T08:12:18.036444+00:00
+last_synced: 2026-05-16T08:06:34.635404+00:00
 global: true
 ---
 

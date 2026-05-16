@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.074299+00:00
+ingested_at: 2026-05-16T08:06:34.672319+00:00
 ingest_version: 1
 content_hash: blake2b:41fac850003f52f9aa6fa4309bcaf2fd
-provider_modified_at: 2026-05-15T08:12:18.074299+00:00
+provider_modified_at: 2026-05-16T08:06:34.672319+00:00
 
 title: Shree Hinge NYC
 slug: shree-hinge-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19162807158"]
   slack: []
-last_synced: 2026-05-15T08:12:18.074299+00:00
+last_synced: 2026-05-16T08:06:34.672319+00:00
 global: true
 ---
 

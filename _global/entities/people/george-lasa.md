@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.059656+00:00
+ingested_at: 2026-05-16T08:06:34.658631+00:00
 ingest_version: 1
 content_hash: blake2b:8cf8dda148dd709f83ed0e8c55d31aac
-provider_modified_at: 2026-05-15T08:12:18.059656+00:00
+provider_modified_at: 2026-05-16T08:06:34.658631+00:00
 
 title: George LASA
 slug: george-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(512) 983-1993"]
   slack: []
-last_synced: 2026-05-15T08:12:18.059656+00:00
+last_synced: 2026-05-16T08:06:34.658631+00:00
 global: true
 ---
 

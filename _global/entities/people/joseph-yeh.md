@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.912640+00:00
+ingested_at: 2026-05-16T08:06:34.536346+00:00
 ingest_version: 1
 content_hash: blake2b:5d8ee0122ba0effc4b050567dbd94b8a
-provider_modified_at: 2026-05-15T08:12:17.912640+00:00
+provider_modified_at: 2026-05-16T08:06:34.536346+00:00
 
 title: Joseph Yeh
 slug: joseph-yeh
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16502087855"]
   slack: []
-last_synced: 2026-05-15T08:12:17.912640+00:00
+last_synced: 2026-05-16T08:06:34.536346+00:00
 global: true
 ---
 

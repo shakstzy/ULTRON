@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.013584+00:00
+ingested_at: 2026-05-16T08:06:34.613739+00:00
 ingest_version: 1
 content_hash: blake2b:bb70f43890912bc06ce4c7a9042c16a5
-provider_modified_at: 2026-05-15T08:12:18.013584+00:00
+provider_modified_at: 2026-05-16T08:06:34.613739+00:00
 
 title: Jason Gregory
 slug: jason-gregory
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(323) 363-5294"]
   slack: []
-last_synced: 2026-05-15T08:12:18.013584+00:00
+last_synced: 2026-05-16T08:06:34.613739+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.051942+00:00
+ingested_at: 2026-05-16T08:06:34.650705+00:00
 ingest_version: 1
 content_hash: blake2b:1a4fc3b9ee5540a56dda4b2f1e11dfab
-provider_modified_at: 2026-05-15T08:12:18.051942+00:00
+provider_modified_at: 2026-05-16T08:06:34.650705+00:00
 
 title: Adrian Roomate UC Berkeley
 slug: adrian-roomate-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17606016124"]
   slack: []
-last_synced: 2026-05-15T08:12:18.051942+00:00
+last_synced: 2026-05-16T08:06:34.650705+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.916944+00:00
+ingested_at: 2026-05-16T08:06:34.540660+00:00
 ingest_version: 1
 content_hash: blake2b:049e462c129395ae1a2623f4ee5a1dbb
-provider_modified_at: 2026-05-15T08:12:17.916944+00:00
+provider_modified_at: 2026-05-16T08:06:34.540660+00:00
 
 title: Lourdiz Producer LA
 slug: lourdiz-producer-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12103157026"]
   slack: []
-last_synced: 2026-05-15T08:12:17.916944+00:00
+last_synced: 2026-05-16T08:06:34.540660+00:00
 global: true
 ---
 

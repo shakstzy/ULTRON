@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.071940+00:00
+ingested_at: 2026-05-16T08:06:34.670088+00:00
 ingest_version: 1
 content_hash: blake2b:117ad6640c7c605e27e4f1413ddcb3eb
-provider_modified_at: 2026-05-15T08:12:18.071940+00:00
+provider_modified_at: 2026-05-16T08:06:34.670088+00:00
 
 title: Inannaini Renter Showing
 slug: inannaini-renter-showing
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16609091999"]
   slack: []
-last_synced: 2026-05-15T08:12:18.071940+00:00
+last_synced: 2026-05-16T08:06:34.670088+00:00
 global: true
 ---
 

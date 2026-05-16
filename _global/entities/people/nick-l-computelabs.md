@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.888027+00:00
+ingested_at: 2026-05-16T08:06:34.510816+00:00
 ingest_version: 1
 content_hash: blake2b:ad387d2c875d8f88aaac2f359f45823d
-provider_modified_at: 2026-05-15T08:12:17.888027+00:00
+provider_modified_at: 2026-05-16T08:06:34.510816+00:00
 
 title: Nick l ComputeLabs
 slug: nick-l-computelabs
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:17.888027+00:00
+last_synced: 2026-05-16T08:06:34.510816+00:00
 global: true
 ---
 

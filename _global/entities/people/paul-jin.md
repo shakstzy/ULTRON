@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.004297+00:00
+ingested_at: 2026-05-16T08:06:34.605379+00:00
 ingest_version: 1
 content_hash: blake2b:2f274227e143cdb688c3e84e12d5b4d7
-provider_modified_at: 2026-05-15T08:12:18.004297+00:00
+provider_modified_at: 2026-05-16T08:06:34.605379+00:00
 
 title: Paul Jin
 slug: paul-jin
@@ -15,7 +15,7 @@ identifiers:
   email: ["pauljinus@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:18.004297+00:00
+last_synced: 2026-05-16T08:06:34.605379+00:00
 global: true
 ---
 

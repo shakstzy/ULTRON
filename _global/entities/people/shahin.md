@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.998178+00:00
+ingested_at: 2026-05-16T08:06:34.599607+00:00
 ingest_version: 1
 content_hash: blake2b:7096e06fa244888749b9d2d79524e918
-provider_modified_at: 2026-05-15T08:12:17.998178+00:00
+provider_modified_at: 2026-05-16T08:06:34.599607+00:00
 
 title: Shahin
 slug: shahin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-969-9542"]
   slack: []
-last_synced: 2026-05-15T08:12:17.998178+00:00
+last_synced: 2026-05-16T08:06:34.599607+00:00
 global: true
 ---
 

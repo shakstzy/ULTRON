@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.015368+00:00
+ingested_at: 2026-05-16T08:06:34.615550+00:00
 ingest_version: 1
 content_hash: blake2b:d9b10dd53d97721bbfe95d2497b18160
-provider_modified_at: 2026-05-15T08:12:18.015368+00:00
+provider_modified_at: 2026-05-16T08:06:34.615550+00:00
 
 title: Aashna Hinge LA
 slug: aashna-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18184422869"]
   slack: []
-last_synced: 2026-05-15T08:12:18.015368+00:00
+last_synced: 2026-05-16T08:06:34.615550+00:00
 global: true
 ---
 

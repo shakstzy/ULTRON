@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.076693+00:00
+ingested_at: 2026-05-16T08:06:34.674570+00:00
 ingest_version: 1
 content_hash: blake2b:17d571afabaaf6667ee59067739f6346
-provider_modified_at: 2026-05-15T08:12:18.076693+00:00
+provider_modified_at: 2026-05-16T08:06:34.674570+00:00
 
 title: Abdus Driver Taxi
 slug: abdus-driver-taxi
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+971563854573"]
   slack: []
-last_synced: 2026-05-15T08:12:18.076693+00:00
+last_synced: 2026-05-16T08:06:34.674570+00:00
 global: true
 ---
 

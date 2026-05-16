@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.050201+00:00
+ingested_at: 2026-05-16T08:06:34.649099+00:00
 ingest_version: 1
 content_hash: blake2b:fcfd10821883fb4ee974be1ab0024ac5
-provider_modified_at: 2026-05-15T08:12:18.050201+00:00
+provider_modified_at: 2026-05-16T08:06:34.649099+00:00
 
 title: Sean Farhat UC Berkeley
 slug: sean-farhat-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(949) 903-1872"]
   slack: []
-last_synced: 2026-05-15T08:12:18.050201+00:00
+last_synced: 2026-05-16T08:06:34.649099+00:00
 global: true
 ---
 

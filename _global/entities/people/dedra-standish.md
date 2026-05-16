@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.960572+00:00
+ingested_at: 2026-05-16T08:06:34.586391+00:00
 ingest_version: 1
 content_hash: blake2b:8dcafefa2cf8316717d2ce890283ee05
-provider_modified_at: 2026-05-15T08:12:17.960572+00:00
+provider_modified_at: 2026-05-16T08:06:34.586391+00:00
 
 title: Dedra Standish
 slug: dedra-standish
@@ -15,7 +15,7 @@ identifiers:
   email: ["dedra.standish@austinisd.org"]
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:17.960572+00:00
+last_synced: 2026-05-16T08:06:34.586391+00:00
 global: true
 ---
 

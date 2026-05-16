@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.986187+00:00
+ingested_at: 2026-05-16T08:06:34.588081+00:00
 ingest_version: 1
 content_hash: blake2b:e36fa6878f2b694aa530a331350a6d8c
-provider_modified_at: 2026-05-15T08:12:17.986187+00:00
+provider_modified_at: 2026-05-16T08:06:34.588081+00:00
 
 title: UCB Tang
 slug: ucb-tang
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(510) 642-5700"]
   slack: []
-last_synced: 2026-05-15T08:12:17.986187+00:00
+last_synced: 2026-05-16T08:06:34.588081+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.888981+00:00
+ingested_at: 2026-05-16T08:06:34.511980+00:00
 ingest_version: 1
 content_hash: blake2b:8966c33dd812fa76e346b42b7d01ea75
-provider_modified_at: 2026-05-15T08:12:17.888981+00:00
+provider_modified_at: 2026-05-16T08:06:34.511980+00:00
 
 title: Jake UC Berkeley Guitar
 slug: jake-uc-berkeley-guitar
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12014028942"]
   slack: []
-last_synced: 2026-05-15T08:12:17.888981+00:00
+last_synced: 2026-05-16T08:06:34.511980+00:00
 global: true
 ---
 

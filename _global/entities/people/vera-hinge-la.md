@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.929624+00:00
+ingested_at: 2026-05-16T08:06:34.553383+00:00
 ingest_version: 1
 content_hash: blake2b:ccb86d37ef4396009d37d7064172dc3c
-provider_modified_at: 2026-05-15T08:12:17.929624+00:00
+provider_modified_at: 2026-05-16T08:06:34.553383+00:00
 
 title: Vera Hinge LA
 slug: vera-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16619036552"]
   slack: []
-last_synced: 2026-05-15T08:12:17.929624+00:00
+last_synced: 2026-05-16T08:06:34.553383+00:00
 global: true
 ---
 

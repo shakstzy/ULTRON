@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.895120+00:00
+ingested_at: 2026-05-16T08:06:34.518569+00:00
 ingest_version: 1
 content_hash: blake2b:31e7a80a85224caed9970f42e3cd867a
-provider_modified_at: 2026-05-15T08:12:17.895120+00:00
+provider_modified_at: 2026-05-16T08:06:34.518569+00:00
 
 title: Garrett Moore
 slug: garrett-moore
@@ -15,7 +15,7 @@ identifiers:
   email: ["gmoorenepats@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:17.895120+00:00
+last_synced: 2026-05-16T08:06:34.518569+00:00
 global: true
 ---
 

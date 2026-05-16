@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.914349+00:00
+ingested_at: 2026-05-16T08:06:34.538048+00:00
 ingest_version: 1
 content_hash: blake2b:fdd5fbb5c58e1b8af1f5a62c51b9d757
-provider_modified_at: 2026-05-15T08:12:17.914349+00:00
+provider_modified_at: 2026-05-16T08:06:34.538048+00:00
 
 title: Varsha Nekkanti UC Berkeley
 slug: varsha-nekkanti-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 408-614-3531"]
   slack: []
-last_synced: 2026-05-15T08:12:17.914349+00:00
+last_synced: 2026-05-16T08:06:34.538048+00:00
 global: true
 ---
 

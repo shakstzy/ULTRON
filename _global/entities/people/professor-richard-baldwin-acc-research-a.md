@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.043539+00:00
+ingested_at: 2026-05-16T08:06:34.642676+00:00
 ingest_version: 1
 content_hash: blake2b:e22e9ea395cbec66aff35c432cc07a7d
-provider_modified_at: 2026-05-15T08:12:18.043539+00:00
+provider_modified_at: 2026-05-16T08:06:34.642676+00:00
 
 title: Professor Richard Baldwin ACC Research Assistant
 slug: professor-richard-baldwin-acc-research-a
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13104378662"]
   slack: []
-last_synced: 2026-05-15T08:12:18.043539+00:00
+last_synced: 2026-05-16T08:06:34.642676+00:00
 global: true
 ---
 

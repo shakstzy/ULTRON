@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.881564+00:00
+ingested_at: 2026-05-16T08:06:34.504354+00:00
 ingest_version: 1
 content_hash: blake2b:a760e7cc9ae68626d04fa9c70bef6c87
-provider_modified_at: 2026-05-15T08:12:17.881564+00:00
+provider_modified_at: 2026-05-16T08:06:34.504354+00:00
 
 title: Shubhan Dua UC Berkeley
 slug: shubhan-dua-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13413338845"]
   slack: []
-last_synced: 2026-05-15T08:12:17.881564+00:00
+last_synced: 2026-05-16T08:06:34.504354+00:00
 global: true
 ---
 

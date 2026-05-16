@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.003154+00:00
+ingested_at: 2026-05-16T08:06:34.604399+00:00
 ingest_version: 1
 content_hash: blake2b:20d343489ee0d3813167421e3954bbcd
-provider_modified_at: 2026-05-15T08:12:18.003154+00:00
+provider_modified_at: 2026-05-16T08:06:34.604399+00:00
 
 title: Liz Reed LASA
 slug: liz-reed-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-998-7223"]
   slack: []
-last_synced: 2026-05-15T08:12:18.003154+00:00
+last_synced: 2026-05-16T08:06:34.604399+00:00
 global: true
 ---
 

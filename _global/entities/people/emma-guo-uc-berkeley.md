@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.990274+00:00
+ingested_at: 2026-05-16T08:06:34.591702+00:00
 ingest_version: 1
 content_hash: blake2b:df2a175c6247b2526d415dc6075982ab
-provider_modified_at: 2026-05-15T08:12:17.990274+00:00
+provider_modified_at: 2026-05-16T08:06:34.591702+00:00
 
 title: Emma Guo UC Berkeley
 slug: emma-guo-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["5103658350"]
   slack: []
-last_synced: 2026-05-15T08:12:17.990274+00:00
+last_synced: 2026-05-16T08:06:34.591702+00:00
 global: true
 ---
 

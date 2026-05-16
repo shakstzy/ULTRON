@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.949928+00:00
+ingested_at: 2026-05-16T08:06:34.575942+00:00
 ingest_version: 1
 content_hash: blake2b:bb958eb2ee335e5398773ae5a4f230ee
-provider_modified_at: 2026-05-15T08:12:17.949928+00:00
+provider_modified_at: 2026-05-16T08:06:34.575942+00:00
 
 title: Eesha Hinge LA
 slug: eesha-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19083133636"]
   slack: []
-last_synced: 2026-05-15T08:12:17.949928+00:00
+last_synced: 2026-05-16T08:06:34.575942+00:00
 global: true
 ---
 

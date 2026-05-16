@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.957192+00:00
+ingested_at: 2026-05-16T08:06:34.583260+00:00
 ingest_version: 1
 content_hash: blake2b:e50d02c38c38e3f515023e16c66ceb0b
-provider_modified_at: 2026-05-15T08:12:17.957192+00:00
+provider_modified_at: 2026-05-16T08:06:34.583260+00:00
 
 title: Remy Esprezzo
 slug: remy-esprezzo
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:17.957192+00:00
+last_synced: 2026-05-16T08:06:34.583260+00:00
 global: true
 ---
 

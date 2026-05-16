@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.955534+00:00
+ingested_at: 2026-05-16T08:06:34.581674+00:00
 ingest_version: 1
 content_hash: blake2b:072a7644946b90c6512569e0c1114247
-provider_modified_at: 2026-05-15T08:12:17.955534+00:00
+provider_modified_at: 2026-05-16T08:06:34.581674+00:00
 
 title: Z - Austin - Raj
 slug: z-austin-raj
@@ -15,7 +15,7 @@ identifiers:
   email: ["malvothevolvo@gmail.com"]
   phone: ["+17706244286", "+17706244286"]
   slack: []
-last_synced: 2026-05-15T08:12:17.955534+00:00
+last_synced: 2026-05-16T08:06:34.581674+00:00
 global: true
 ---
 

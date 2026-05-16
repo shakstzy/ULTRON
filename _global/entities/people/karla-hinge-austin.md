@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.050451+00:00
+ingested_at: 2026-05-16T08:06:34.649457+00:00
 ingest_version: 1
 content_hash: blake2b:bb1796b1d622896bc4ce8d83c20d0b0b
-provider_modified_at: 2026-05-15T08:12:18.050451+00:00
+provider_modified_at: 2026-05-16T08:06:34.649457+00:00
 
 title: Karla Hinge Austin
 slug: karla-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18702782262"]
   slack: []
-last_synced: 2026-05-15T08:12:18.050451+00:00
+last_synced: 2026-05-16T08:06:34.649457+00:00
 global: true
 ---
 

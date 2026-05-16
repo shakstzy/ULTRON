@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.017988+00:00
+ingested_at: 2026-05-16T08:06:34.617601+00:00
 ingest_version: 1
 content_hash: blake2b:8221883d611f085651d939e8b923b27c
-provider_modified_at: 2026-05-15T08:12:18.017988+00:00
+provider_modified_at: 2026-05-16T08:06:34.617601+00:00
 
 title: Rishi Jain UC Berkeley 61C
 slug: rishi-jain-uc-berkeley-61c
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(408) 768-6161"]
   slack: []
-last_synced: 2026-05-15T08:12:18.017988+00:00
+last_synced: 2026-05-16T08:06:34.617601+00:00
 global: true
 ---
 

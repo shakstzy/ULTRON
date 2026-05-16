@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.051237+00:00
+ingested_at: 2026-05-16T08:06:34.650082+00:00
 ingest_version: 1
 content_hash: blake2b:895d44ded09cbeae128f2535f9207f75
-provider_modified_at: 2026-05-15T08:12:18.051237+00:00
+provider_modified_at: 2026-05-16T08:06:34.650082+00:00
 
 title: Gigi Renter Showing
 slug: gigi-renter-showing
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["6575491230"]
   slack: []
-last_synced: 2026-05-15T08:12:18.051237+00:00
+last_synced: 2026-05-16T08:06:34.650082+00:00
 global: true
 ---
 

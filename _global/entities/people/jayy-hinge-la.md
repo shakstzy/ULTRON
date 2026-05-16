@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.046012+00:00
+ingested_at: 2026-05-16T08:06:34.645164+00:00
 ingest_version: 1
 content_hash: blake2b:f71282113a44e4f4ffeeb8d9b5d7693e
-provider_modified_at: 2026-05-15T08:12:18.046012+00:00
+provider_modified_at: 2026-05-16T08:06:34.645164+00:00
 
 title: Jayy Hinge LA
 slug: jayy-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19163465119"]
   slack: []
-last_synced: 2026-05-15T08:12:18.046012+00:00
+last_synced: 2026-05-16T08:06:34.645164+00:00
 global: true
 ---
 

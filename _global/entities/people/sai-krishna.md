@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.049759+00:00
+ingested_at: 2026-05-16T08:06:34.648684+00:00
 ingest_version: 1
 content_hash: blake2b:9bf7cc8270c8adaa8cb380ffad72ffc3
-provider_modified_at: 2026-05-15T08:12:18.049759+00:00
+provider_modified_at: 2026-05-16T08:06:34.648684+00:00
 
 title: Sai Krishna
 slug: sai-krishna
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+919950017566"]
   slack: []
-last_synced: 2026-05-15T08:12:18.049759+00:00
+last_synced: 2026-05-16T08:06:34.648684+00:00
 global: true
 ---
 

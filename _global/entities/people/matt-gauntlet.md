@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.047523+00:00
+ingested_at: 2026-05-16T08:06:34.646677+00:00
 ingest_version: 1
 content_hash: blake2b:aa64d257142a4a190c0f5533d01a97d9
-provider_modified_at: 2026-05-15T08:12:18.047523+00:00
+provider_modified_at: 2026-05-16T08:06:34.646677+00:00
 
 title: Matt | Gauntlet
 slug: matt-gauntlet
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:18.047523+00:00
+last_synced: 2026-05-16T08:06:34.646677+00:00
 global: true
 ---
 

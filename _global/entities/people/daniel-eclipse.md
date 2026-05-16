@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.045679+00:00
+ingested_at: 2026-05-16T08:06:34.644838+00:00
 ingest_version: 1
 content_hash: blake2b:71d29f376fec0e1a7e451bc839c5babd
-provider_modified_at: 2026-05-15T08:12:18.045679+00:00
+provider_modified_at: 2026-05-16T08:06:34.644838+00:00
 
 title: Daniel | Eclipse
 slug: daniel-eclipse
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:18.045679+00:00
+last_synced: 2026-05-16T08:06:34.644838+00:00
 global: true
 ---
 

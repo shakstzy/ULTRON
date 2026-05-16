@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.010340+00:00
+ingested_at: 2026-05-16T08:06:34.610436+00:00
 ingest_version: 1
 content_hash: blake2b:eb93a96a59cadc014d9ead8a5585ad71
-provider_modified_at: 2026-05-15T08:12:18.010340+00:00
+provider_modified_at: 2026-05-16T08:06:34.610436+00:00
 
 title: Alyssa Eckerman
 slug: alyssa-eckerman
@@ -15,7 +15,7 @@ identifiers:
   email: ["ahe2001@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:18.010340+00:00
+last_synced: 2026-05-16T08:06:34.610436+00:00
 global: true
 ---
 

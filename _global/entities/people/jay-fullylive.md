@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.046273+00:00
+ingested_at: 2026-05-16T08:06:34.645418+00:00
 ingest_version: 1
 content_hash: blake2b:a47bca4e0f2500a8ce7fa19ccdf8f5fb
-provider_modified_at: 2026-05-15T08:12:18.046273+00:00
+provider_modified_at: 2026-05-16T08:06:34.645418+00:00
 
 title: Jay | FullyLive
 slug: jay-fullylive
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:18.046273+00:00
+last_synced: 2026-05-16T08:06:34.645418+00:00
 global: true
 ---
 

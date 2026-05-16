@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.949466+00:00
+ingested_at: 2026-05-16T08:06:34.575467+00:00
 ingest_version: 1
 content_hash: blake2b:e388933f07d11c697134bdf988cd0788
-provider_modified_at: 2026-05-15T08:12:17.949466+00:00
+provider_modified_at: 2026-05-16T08:06:34.575467+00:00
 
 title: Prishaa Hinge LA
 slug: prishaa-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12814105753"]
   slack: []
-last_synced: 2026-05-15T08:12:17.949466+00:00
+last_synced: 2026-05-16T08:06:34.575467+00:00
 global: true
 ---
 

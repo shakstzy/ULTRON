@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.001986+00:00
+ingested_at: 2026-05-16T08:06:34.603214+00:00
 ingest_version: 1
 content_hash: blake2b:fa4b94b6b2a771c03841a4c8e3725814
-provider_modified_at: 2026-05-15T08:12:18.001986+00:00
+provider_modified_at: 2026-05-16T08:06:34.603214+00:00
 
 title: Avnish BBS UC Berkeley
 slug: avnish-bbs-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(805) 863-3626"]
   slack: []
-last_synced: 2026-05-15T08:12:18.001986+00:00
+last_synced: 2026-05-16T08:06:34.603214+00:00
 global: true
 ---
 

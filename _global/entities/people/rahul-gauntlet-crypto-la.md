@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.054712+00:00
+ingested_at: 2026-05-16T08:06:34.653786+00:00
 ingest_version: 1
 content_hash: blake2b:7736ef7da01cd235035d6e79aaa66462
-provider_modified_at: 2026-05-15T08:12:18.054712+00:00
+provider_modified_at: 2026-05-16T08:06:34.653786+00:00
 
 title: Rahul Gauntlet Crypto LA
 slug: rahul-gauntlet-crypto-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:18.054712+00:00
+last_synced: 2026-05-16T08:06:34.653786+00:00
 global: true
 ---
 

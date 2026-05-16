@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.946315+00:00
+ingested_at: 2026-05-16T08:06:34.572194+00:00
 ingest_version: 1
 content_hash: blake2b:05eaf0617a61b130508a90595ccf430f
-provider_modified_at: 2026-05-15T08:12:17.946315+00:00
+provider_modified_at: 2026-05-16T08:06:34.572194+00:00
 
 title: Christopher Nguyen
 slug: christopher-nguyen
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(737) 333-2924"]
   slack: []
-last_synced: 2026-05-15T08:12:17.946315+00:00
+last_synced: 2026-05-16T08:06:34.572194+00:00
 global: true
 ---
 

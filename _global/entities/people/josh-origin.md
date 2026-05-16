@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.016840+00:00
+ingested_at: 2026-05-16T08:06:34.616675+00:00
 ingest_version: 1
 content_hash: blake2b:a3187476e31e28eca0b52b42d5ab7235
-provider_modified_at: 2026-05-15T08:12:18.016840+00:00
+provider_modified_at: 2026-05-16T08:06:34.616675+00:00
 
 title: Josh | Origin
 slug: josh-origin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:18.016840+00:00
+last_synced: 2026-05-16T08:06:34.616675+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.065546+00:00
+ingested_at: 2026-05-16T08:06:34.664129+00:00
 ingest_version: 1
 content_hash: blake2b:3bce9d623ae327f12fc27d35b3975fbe
-provider_modified_at: 2026-05-15T08:12:18.065546+00:00
+provider_modified_at: 2026-05-16T08:06:34.664129+00:00
 
 title: Grant | Blocmates
 slug: grant-blocmates
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:18.065546+00:00
+last_synced: 2026-05-16T08:06:34.664129+00:00
 global: true
 ---
 

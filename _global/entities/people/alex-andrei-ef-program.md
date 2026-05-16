@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.940891+00:00
+ingested_at: 2026-05-16T08:06:34.565428+00:00
 ingest_version: 1
 content_hash: blake2b:dbd6d7ca5837054f70107ab4b21602ff
-provider_modified_at: 2026-05-15T08:12:17.940891+00:00
+provider_modified_at: 2026-05-16T08:06:34.565428+00:00
 
 title: Alex Andrei EF Program
 slug: alex-andrei-ef-program
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16364749180"]
   slack: []
-last_synced: 2026-05-15T08:12:17.940891+00:00
+last_synced: 2026-05-16T08:06:34.565428+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.001007+00:00
+ingested_at: 2026-05-16T08:06:34.602106+00:00
 ingest_version: 1
 content_hash: blake2b:e9ace3b413885e64bb116431d7af3a18
-provider_modified_at: 2026-05-15T08:12:18.001007+00:00
+provider_modified_at: 2026-05-16T08:06:34.602106+00:00
 
 title: Samuel Renter Showing
 slug: samuel-renter-showing
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["8182711226"]
   slack: []
-last_synced: 2026-05-15T08:12:18.001007+00:00
+last_synced: 2026-05-16T08:06:34.602106+00:00
 global: true
 ---
 

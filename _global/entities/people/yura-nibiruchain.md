@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.014146+00:00
+ingested_at: 2026-05-16T08:06:34.614342+00:00
 ingest_version: 1
 content_hash: blake2b:3dbb54435feebc918d5e48e5b92136b5
-provider_modified_at: 2026-05-15T08:12:18.014146+00:00
+provider_modified_at: 2026-05-16T08:06:34.614342+00:00
 
 title: Yura NibiruChain
 slug: yura-nibiruchain
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:18.014146+00:00
+last_synced: 2026-05-16T08:06:34.614342+00:00
 global: true
 ---
 

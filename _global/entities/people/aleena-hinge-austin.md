@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.013646+00:00
+ingested_at: 2026-05-16T08:06:34.613804+00:00
 ingest_version: 1
 content_hash: blake2b:9ac0889bf03379c252e86fed385312af
-provider_modified_at: 2026-05-15T08:12:18.013646+00:00
+provider_modified_at: 2026-05-16T08:06:34.613804+00:00
 
 title: Aleena Hinge Austin
 slug: aleena-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18329930912"]
   slack: []
-last_synced: 2026-05-15T08:12:18.013646+00:00
+last_synced: 2026-05-16T08:06:34.613804+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.029910+00:00
+ingested_at: 2026-05-16T08:06:34.629487+00:00
 ingest_version: 1
 content_hash: blake2b:85aede038c8903d52d606371e001888d
-provider_modified_at: 2026-05-15T08:12:18.029910+00:00
+provider_modified_at: 2026-05-16T08:06:34.629487+00:00
 
 title: Evan Private Room 1100
 slug: evan-private-room-1100
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13107045150"]
   slack: []
-last_synced: 2026-05-15T08:12:18.029910+00:00
+last_synced: 2026-05-16T08:06:34.629487+00:00
 global: true
 ---
 

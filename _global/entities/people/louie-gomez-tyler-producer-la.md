@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.886292+00:00
+ingested_at: 2026-05-16T08:06:34.509187+00:00
 ingest_version: 1
 content_hash: blake2b:d938c3618863e5c75a131a3f719ca7c1
-provider_modified_at: 2026-05-15T08:12:17.886292+00:00
+provider_modified_at: 2026-05-16T08:06:34.509187+00:00
 
 title: Louie Gomez Tyler Producer LA
 slug: louie-gomez-tyler-producer-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15625727824"]
   slack: []
-last_synced: 2026-05-15T08:12:17.886292+00:00
+last_synced: 2026-05-16T08:06:34.509187+00:00
 global: true
 ---
 

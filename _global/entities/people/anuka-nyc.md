@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.908405+00:00
+ingested_at: 2026-05-16T08:06:34.532025+00:00
 ingest_version: 1
 content_hash: blake2b:222b591f995b7950f2c319bab04fa7e9
-provider_modified_at: 2026-05-15T08:12:17.908405+00:00
+provider_modified_at: 2026-05-16T08:06:34.532025+00:00
 
 title: Anuka NYC
 slug: anuka-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17812409532"]
   slack: []
-last_synced: 2026-05-15T08:12:17.908405+00:00
+last_synced: 2026-05-16T08:06:34.532025+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.912298+00:00
+ingested_at: 2026-05-16T08:06:34.536005+00:00
 ingest_version: 1
 content_hash: blake2b:ba868e1c76048b4414aa66ae9eaf505e
-provider_modified_at: 2026-05-15T08:12:17.912298+00:00
+provider_modified_at: 2026-05-16T08:06:34.536005+00:00
 
 title: Andrew Liutev Crypto
 slug: andrew-liutev-crypto
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14168260302"]
   slack: []
-last_synced: 2026-05-15T08:12:17.912298+00:00
+last_synced: 2026-05-16T08:06:34.536005+00:00
 global: true
 ---
 

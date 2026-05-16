@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.052647+00:00
+ingested_at: 2026-05-16T08:06:34.651491+00:00
 ingest_version: 1
 content_hash: blake2b:f242acd1e28c6ad810869c8711729fd9
-provider_modified_at: 2026-05-15T08:12:18.052647+00:00
+provider_modified_at: 2026-05-16T08:06:34.651491+00:00
 
 title: Neek LA
 slug: neek-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 304-280-9449"]
   slack: []
-last_synced: 2026-05-15T08:12:18.052647+00:00
+last_synced: 2026-05-16T08:06:34.651491+00:00
 global: true
 ---
 

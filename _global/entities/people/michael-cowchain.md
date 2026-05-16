@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.907132+00:00
+ingested_at: 2026-05-16T08:06:34.530737+00:00
 ingest_version: 1
 content_hash: blake2b:1c29e540ff3373208b1d91fbc3c0e5fb
-provider_modified_at: 2026-05-15T08:12:17.907132+00:00
+provider_modified_at: 2026-05-16T08:06:34.530737+00:00
 
 title: Michael | Cowchain
 slug: michael-cowchain
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:17.907132+00:00
+last_synced: 2026-05-16T08:06:34.530737+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.055347+00:00
+ingested_at: 2026-05-16T08:06:34.654381+00:00
 ingest_version: 1
 content_hash: blake2b:55f36d1f4a350afbe0044fa8ad147560
-provider_modified_at: 2026-05-15T08:12:18.055347+00:00
+provider_modified_at: 2026-05-16T08:06:34.654381+00:00
 
 title: Ariel Hinge Austin
 slug: ariel-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15127603938"]
   slack: []
-last_synced: 2026-05-15T08:12:18.055347+00:00
+last_synced: 2026-05-16T08:06:34.654381+00:00
 global: true
 ---
 

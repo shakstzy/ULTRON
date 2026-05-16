@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.026313+00:00
+ingested_at: 2026-05-16T08:06:34.625935+00:00
 ingest_version: 1
 content_hash: blake2b:985674b778341cc679f0f21a7507fbad
-provider_modified_at: 2026-05-15T08:12:18.026313+00:00
+provider_modified_at: 2026-05-16T08:06:34.625935+00:00
 
 title: Shreejal Luitel UC Berkeley
 slug: shreejal-luitel-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15107344849"]
   slack: []
-last_synced: 2026-05-15T08:12:18.026313+00:00
+last_synced: 2026-05-16T08:06:34.625935+00:00
 global: true
 ---
 

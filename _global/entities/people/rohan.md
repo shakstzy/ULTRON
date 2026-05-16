@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.927418+00:00
+ingested_at: 2026-05-16T08:06:34.551123+00:00
 ingest_version: 1
 content_hash: blake2b:c4609d08c51852291158ebde31e7adf9
-provider_modified_at: 2026-05-15T08:12:17.927418+00:00
+provider_modified_at: 2026-05-16T08:06:34.551123+00:00
 
 title: Rohan
 slug: rohan
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 215-584-1493"]
   slack: []
-last_synced: 2026-05-15T08:12:17.927418+00:00
+last_synced: 2026-05-16T08:06:34.551123+00:00
 global: true
 ---
 

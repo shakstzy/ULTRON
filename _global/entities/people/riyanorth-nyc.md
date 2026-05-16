@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.936722+00:00
+ingested_at: 2026-05-16T08:06:34.560915+00:00
 ingest_version: 1
 content_hash: blake2b:30e46598c95cae2c2386a294e6bbad15
-provider_modified_at: 2026-05-15T08:12:17.936722+00:00
+provider_modified_at: 2026-05-16T08:06:34.560915+00:00
 
 title: RiyaNorth NYC
 slug: riyanorth-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16463848298"]
   slack: []
-last_synced: 2026-05-15T08:12:17.936722+00:00
+last_synced: 2026-05-16T08:06:34.560915+00:00
 global: true
 ---
 

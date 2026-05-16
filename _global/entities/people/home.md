@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.017018+00:00
+ingested_at: 2026-05-16T08:06:34.616809+00:00
 ingest_version: 1
 content_hash: blake2b:c0ae2eeecef7138b72f6c915a7790e8b
-provider_modified_at: 2026-05-15T08:12:18.017018+00:00
+provider_modified_at: 2026-05-16T08:06:34.616809+00:00
 
 title: Home
 slug: home
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(512) 215-4588"]
   slack: []
-last_synced: 2026-05-15T08:12:18.017018+00:00
+last_synced: 2026-05-16T08:06:34.616809+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.958410+00:00
+ingested_at: 2026-05-16T08:06:34.584211+00:00
 ingest_version: 1
 content_hash: blake2b:3c07a08d81d6dce973d15ecfcbdaeaa2
-provider_modified_at: 2026-05-15T08:12:17.958410+00:00
+provider_modified_at: 2026-05-16T08:06:34.584211+00:00
 
 title: Iman Hundal Prabhat UC Berkeley
 slug: iman-hundal-prabhat-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19164079663"]
   slack: []
-last_synced: 2026-05-15T08:12:17.958410+00:00
+last_synced: 2026-05-16T08:06:34.584211+00:00
 global: true
 ---
 

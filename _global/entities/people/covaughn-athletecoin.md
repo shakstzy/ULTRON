@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.887337+00:00
+ingested_at: 2026-05-16T08:06:34.510256+00:00
 ingest_version: 1
 content_hash: blake2b:6a62b29f63c57d5566abd2e6e3f29e7d
-provider_modified_at: 2026-05-15T08:12:17.887337+00:00
+provider_modified_at: 2026-05-16T08:06:34.510256+00:00
 
 title: Covaughn AthleteCoin
 slug: covaughn-athletecoin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15204400341"]
   slack: []
-last_synced: 2026-05-15T08:12:17.887337+00:00
+last_synced: 2026-05-16T08:06:34.510256+00:00
 global: true
 ---
 

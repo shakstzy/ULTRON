@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.884960+00:00
+ingested_at: 2026-05-16T08:06:34.507628+00:00
 ingest_version: 1
 content_hash: blake2b:281ee884101642e717d4dd50704f4668
-provider_modified_at: 2026-05-15T08:12:17.884960+00:00
+provider_modified_at: 2026-05-16T08:06:34.507628+00:00
 
 title: Anika Hinge Austin
 slug: anika-hinge-austin-fe36
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18622162258"]
   slack: []
-last_synced: 2026-05-15T08:12:17.884960+00:00
+last_synced: 2026-05-16T08:06:34.507628+00:00
 global: true
 ---
 

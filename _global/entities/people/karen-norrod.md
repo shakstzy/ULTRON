@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.025362+00:00
+ingested_at: 2026-05-16T08:06:34.625011+00:00
 ingest_version: 1
 content_hash: blake2b:a4a6eb81c952e0d561ae916039a5cea1
-provider_modified_at: 2026-05-15T08:12:18.025362+00:00
+provider_modified_at: 2026-05-16T08:06:34.625011+00:00
 
 title: Karen Norrod
 slug: karen-norrod
@@ -15,7 +15,7 @@ identifiers:
   email: ["knorrod@aol.com"]
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:18.025362+00:00
+last_synced: 2026-05-16T08:06:34.625011+00:00
 global: true
 ---
 

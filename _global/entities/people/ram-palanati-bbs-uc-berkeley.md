@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:18.017445+00:00
+ingested_at: 2026-05-16T08:06:34.617148+00:00
 ingest_version: 1
 content_hash: blake2b:2df82ecbf4c1eadd91d425d4a9432821
-provider_modified_at: 2026-05-15T08:12:18.017445+00:00
+provider_modified_at: 2026-05-16T08:06:34.617148+00:00
 
 title: Ram Palanati BBS UC Berkeley
 slug: ram-palanati-bbs-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 610-550-9344"]
   slack: []
-last_synced: 2026-05-15T08:12:18.017445+00:00
+last_synced: 2026-05-16T08:06:34.617148+00:00
 global: true
 ---
 

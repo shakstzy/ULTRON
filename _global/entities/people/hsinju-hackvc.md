@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.934091+00:00
+ingested_at: 2026-05-16T08:06:34.557972+00:00
 ingest_version: 1
 content_hash: blake2b:2701d79b60e9b5c512ee92923f3ace84
-provider_modified_at: 2026-05-15T08:12:17.934091+00:00
+provider_modified_at: 2026-05-16T08:06:34.557972+00:00
 
 title: HsinJu | HackVC
 slug: hsinju-hackvc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 415-349-0701"]
   slack: []
-last_synced: 2026-05-15T08:12:17.934091+00:00
+last_synced: 2026-05-16T08:06:34.557972+00:00
 global: true
 ---
 

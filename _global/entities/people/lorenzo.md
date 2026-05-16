@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.958501+00:00
+ingested_at: 2026-05-16T08:06:34.584277+00:00
 ingest_version: 1
 content_hash: blake2b:51741f3afd7f866bd685ead784132977
-provider_modified_at: 2026-05-15T08:12:17.958501+00:00
+provider_modified_at: 2026-05-16T08:06:34.584277+00:00
 
 title: Lorenzo
 slug: lorenzo
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13232512937"]
   slack: []
-last_synced: 2026-05-15T08:12:17.958501+00:00
+last_synced: 2026-05-16T08:06:34.584277+00:00
 global: true
 ---
 

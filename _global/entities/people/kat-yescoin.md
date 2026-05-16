@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.891296+00:00
+ingested_at: 2026-05-16T08:06:34.514453+00:00
 ingest_version: 1
 content_hash: blake2b:4ab376073aa5d5c2da668dab4df31be2
-provider_modified_at: 2026-05-15T08:12:17.891296+00:00
+provider_modified_at: 2026-05-16T08:06:34.514453+00:00
 
 title: Kat | Yescoin
 slug: kat-yescoin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-15T08:12:17.891296+00:00
+last_synced: 2026-05-16T08:06:34.514453+00:00
 global: true
 ---
 

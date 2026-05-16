@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-15T08:12:17.986997+00:00
+ingested_at: 2026-05-16T08:06:34.588737+00:00
 ingest_version: 1
 content_hash: blake2b:d1f5120d9163fdfe2456a5e1aee74d7a
-provider_modified_at: 2026-05-15T08:12:17.986997+00:00
+provider_modified_at: 2026-05-16T08:06:34.588737+00:00
 
 title: Professor Huntsinger UC Berkeley UGBA 104
 slug: professor-huntsinger-uc-berkeley-ugba-10
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14082196301"]
   slack: []
-last_synced: 2026-05-15T08:12:17.986997+00:00
+last_synced: 2026-05-16T08:06:34.588737+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.579030+00:00
+ingested_at: 2026-05-17T08:08:26.269622+00:00
 ingest_version: 1
 content_hash: blake2b:dbf92cfd0b762969842e57d098b1f9c6
-provider_modified_at: 2026-05-16T08:06:34.579030+00:00
+provider_modified_at: 2026-05-17T08:08:26.269622+00:00
 
 title: Tony | Lucid
 slug: tony-lucid
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.579030+00:00
+last_synced: 2026-05-17T08:08:26.269622+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.567681+00:00
+ingested_at: 2026-05-17T08:08:26.259560+00:00
 ingest_version: 1
 content_hash: blake2b:87d0ed57b9ec43d5563ff706dc70f475
-provider_modified_at: 2026-05-16T08:06:34.567681+00:00
+provider_modified_at: 2026-05-17T08:08:26.259560+00:00
 
 title: Max Martin LASA
 slug: max-martin-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-695-3928"]
   slack: []
-last_synced: 2026-05-16T08:06:34.567681+00:00
+last_synced: 2026-05-17T08:08:26.259560+00:00
 global: true
 ---
 

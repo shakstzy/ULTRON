@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.516820+00:00
+ingested_at: 2026-05-17T08:08:26.210393+00:00
 ingest_version: 1
 content_hash: blake2b:35bf5012718343f9f91efd7a8fb1d728
-provider_modified_at: 2026-05-16T08:06:34.516820+00:00
+provider_modified_at: 2026-05-17T08:08:26.210393+00:00
 
 title: Dom Ryder | Vemp
 slug: dom-ryder-vemp
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.516820+00:00
+last_synced: 2026-05-17T08:08:26.210393+00:00
 global: true
 ---
 

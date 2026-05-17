@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.604930+00:00
+ingested_at: 2026-05-17T08:08:26.296507+00:00
 ingest_version: 1
 content_hash: blake2b:6dc763fd56a96a876d5d4e7c34ae01fd
-provider_modified_at: 2026-05-16T08:06:34.604930+00:00
+provider_modified_at: 2026-05-17T08:08:26.296507+00:00
 
 title: Mihika UC Berkeley
 slug: mihika-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18585194483"]
   slack: []
-last_synced: 2026-05-16T08:06:34.604930+00:00
+last_synced: 2026-05-17T08:08:26.296507+00:00
 global: true
 ---
 

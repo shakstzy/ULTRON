@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.598936+00:00
+ingested_at: 2026-05-17T08:08:26.290223+00:00
 ingest_version: 1
 content_hash: blake2b:7c55cca870d5d981458df70b9ae74c67
-provider_modified_at: 2026-05-16T08:06:34.598936+00:00
+provider_modified_at: 2026-05-17T08:08:26.290223+00:00
 
 title: WeeHowe | TokkaLabs
 slug: weehowe-tokkalabs
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.598936+00:00
+last_synced: 2026-05-17T08:08:26.290223+00:00
 global: true
 ---
 

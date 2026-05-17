@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.523750+00:00
+ingested_at: 2026-05-17T08:08:26.216632+00:00
 ingest_version: 1
 content_hash: blake2b:37ef43b8bc054e0f9d3e8802a7f6fd3f
-provider_modified_at: 2026-05-16T08:06:34.523750+00:00
+provider_modified_at: 2026-05-17T08:08:26.216632+00:00
 
 title: Yoshiro UCLA
 slug: yoshiro-ucla
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14423852787"]
   slack: []
-last_synced: 2026-05-16T08:06:34.523750+00:00
+last_synced: 2026-05-17T08:08:26.216632+00:00
 global: true
 ---
 

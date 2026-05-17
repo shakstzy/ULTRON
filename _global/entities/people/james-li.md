@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.547547+00:00
+ingested_at: 2026-05-17T08:08:26.240438+00:00
 ingest_version: 1
 content_hash: blake2b:2a130d25f4f416ec377ce07c051877fb
-provider_modified_at: 2026-05-16T08:06:34.547547+00:00
+provider_modified_at: 2026-05-17T08:08:26.240438+00:00
 
 title: James Li
 slug: james-li
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(703) 862-9643"]
   slack: []
-last_synced: 2026-05-16T08:06:34.547547+00:00
+last_synced: 2026-05-17T08:08:26.240438+00:00
 global: true
 ---
 

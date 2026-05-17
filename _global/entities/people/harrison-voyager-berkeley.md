@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.559790+00:00
+ingested_at: 2026-05-17T08:08:26.252245+00:00
 ingest_version: 1
 content_hash: blake2b:c06d2cc6996695b6f5f9fd649511ffac
-provider_modified_at: 2026-05-16T08:06:34.559790+00:00
+provider_modified_at: 2026-05-17T08:08:26.252245+00:00
 
 title: Harrison Voyager Berkeley
 slug: harrison-voyager-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 628-226-5296"]
   slack: []
-last_synced: 2026-05-16T08:06:34.559790+00:00
+last_synced: 2026-05-17T08:08:26.252245+00:00
 global: true
 ---
 

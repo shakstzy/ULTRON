@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.563629+00:00
+ingested_at: 2026-05-17T08:08:26.255703+00:00
 ingest_version: 1
 content_hash: blake2b:e494bb4144e675971ec882a1bc2da610
-provider_modified_at: 2026-05-16T08:06:34.563629+00:00
+provider_modified_at: 2026-05-17T08:08:26.255703+00:00
 
 title: Daniel Kim UC Berkeley
 slug: daniel-kim-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19253939059"]
   slack: []
-last_synced: 2026-05-16T08:06:34.563629+00:00
+last_synced: 2026-05-17T08:08:26.255703+00:00
 global: true
 ---
 

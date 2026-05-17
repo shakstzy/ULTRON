@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.567899+00:00
+ingested_at: 2026-05-17T08:08:26.259738+00:00
 ingest_version: 1
 content_hash: blake2b:a7b65f80a0d53afef62e0b87328a0706
-provider_modified_at: 2026-05-16T08:06:34.567899+00:00
+provider_modified_at: 2026-05-17T08:08:26.259738+00:00
 
 title: Carlos Mychal Kendrick NYC Mets
 slug: carlos-mychal-kendrick-nyc-mets
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17326901810"]
   slack: []
-last_synced: 2026-05-16T08:06:34.567899+00:00
+last_synced: 2026-05-17T08:08:26.259738+00:00
 global: true
 ---
 

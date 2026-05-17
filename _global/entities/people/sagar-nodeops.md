@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.601832+00:00
+ingested_at: 2026-05-17T08:08:26.293526+00:00
 ingest_version: 1
 content_hash: blake2b:15cd18ef12a3e5a1b05a6aa822aec897
-provider_modified_at: 2026-05-16T08:06:34.601832+00:00
+provider_modified_at: 2026-05-17T08:08:26.293526+00:00
 
 title: Sagar | NodeOps
 slug: sagar-nodeops
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+91 97020 86946"]
   slack: []
-last_synced: 2026-05-16T08:06:34.601832+00:00
+last_synced: 2026-05-17T08:08:26.293526+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.659852+00:00
+ingested_at: 2026-05-17T08:08:26.353651+00:00
 ingest_version: 1
 content_hash: blake2b:fd034803b7b2b41477491beafd00b452
-provider_modified_at: 2026-05-16T08:06:34.659852+00:00
+provider_modified_at: 2026-05-17T08:08:26.353651+00:00
 
 title: Bart OnlyBags
 slug: bart-onlybags
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+32493559165"]
   slack: []
-last_synced: 2026-05-16T08:06:34.659852+00:00
+last_synced: 2026-05-17T08:08:26.353651+00:00
 global: true
 ---
 

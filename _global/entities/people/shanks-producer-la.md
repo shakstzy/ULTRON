@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.575067+00:00
+ingested_at: 2026-05-17T08:08:26.265790+00:00
 ingest_version: 1
 content_hash: blake2b:b1b561e8c39ed29321ddbd65da9b0df2
-provider_modified_at: 2026-05-16T08:06:34.575067+00:00
+provider_modified_at: 2026-05-17T08:08:26.265790+00:00
 
 title: Shanks Producer LA
 slug: shanks-producer-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13109626916"]
   slack: []
-last_synced: 2026-05-16T08:06:34.575067+00:00
+last_synced: 2026-05-17T08:08:26.265790+00:00
 global: true
 ---
 

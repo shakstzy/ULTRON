@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.577511+00:00
+ingested_at: 2026-05-17T08:08:26.268196+00:00
 ingest_version: 1
 content_hash: blake2b:f1c471321448e934a6e9f0f96b43a646
-provider_modified_at: 2026-05-16T08:06:34.577511+00:00
+provider_modified_at: 2026-05-17T08:08:26.268196+00:00
 
 title: Zain Maniyar Dubai Commerical Real Estate
 slug: zain-maniyar-dubai-commerical-real-estat
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+971558886091"]
   slack: []
-last_synced: 2026-05-16T08:06:34.577511+00:00
+last_synced: 2026-05-17T08:08:26.268196+00:00
 global: true
 ---
 

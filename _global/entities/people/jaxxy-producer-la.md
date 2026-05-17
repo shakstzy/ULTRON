@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.496010+00:00
+ingested_at: 2026-05-17T08:08:26.191847+00:00
 ingest_version: 1
 content_hash: blake2b:6b413eebfc7288d475fb18eb872093e4
-provider_modified_at: 2026-05-16T08:06:34.496010+00:00
+provider_modified_at: 2026-05-17T08:08:26.191847+00:00
 
 title: Jaxxy Producer LA
 slug: jaxxy-producer-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18186127688"]
   slack: []
-last_synced: 2026-05-16T08:06:34.496010+00:00
+last_synced: 2026-05-17T08:08:26.191847+00:00
 global: true
 ---
 

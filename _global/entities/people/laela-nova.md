@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.571204+00:00
+ingested_at: 2026-05-17T08:08:26.262057+00:00
 ingest_version: 1
 content_hash: blake2b:66c1886d6ae24f497a51355cb43f6e74
-provider_modified_at: 2026-05-16T08:06:34.571204+00:00
+provider_modified_at: 2026-05-17T08:08:26.262057+00:00
 
 title: Laela Nova
 slug: laela-nova
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12816824634"]
   slack: []
-last_synced: 2026-05-16T08:06:34.571204+00:00
+last_synced: 2026-05-17T08:08:26.262057+00:00
 global: true
 ---
 

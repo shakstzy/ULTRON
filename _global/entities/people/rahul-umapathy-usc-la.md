@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.638324+00:00
+ingested_at: 2026-05-17T08:08:26.330755+00:00
 ingest_version: 1
 content_hash: blake2b:942de92fc6832e24732ed0a8962c4ac0
-provider_modified_at: 2026-05-16T08:06:34.638324+00:00
+provider_modified_at: 2026-05-17T08:08:26.330755+00:00
 
 title: Rahul Umapathy USC LA
 slug: rahul-umapathy-usc-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12134317188"]
   slack: []
-last_synced: 2026-05-16T08:06:34.638324+00:00
+last_synced: 2026-05-17T08:08:26.330755+00:00
 global: true
 ---
 

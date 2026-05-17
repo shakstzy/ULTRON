@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.581878+00:00
+ingested_at: 2026-05-17T08:08:26.272606+00:00
 ingest_version: 1
 content_hash: blake2b:25b7e6b22d4ea3cfb6fc0281d0b7b229
-provider_modified_at: 2026-05-16T08:06:34.581878+00:00
+provider_modified_at: 2026-05-17T08:08:26.272606+00:00
 
 title: Samya Hinge Philly
 slug: samya-hinge-philly
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12247646087"]
   slack: []
-last_synced: 2026-05-16T08:06:34.581878+00:00
+last_synced: 2026-05-17T08:08:26.272606+00:00
 global: true
 ---
 

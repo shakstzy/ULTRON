@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.665836+00:00
+ingested_at: 2026-05-17T08:08:26.359734+00:00
 ingest_version: 1
 content_hash: blake2b:def79bccb0a3ccc62f52abbfa6d984d4
-provider_modified_at: 2026-05-16T08:06:34.665836+00:00
+provider_modified_at: 2026-05-17T08:08:26.359734+00:00
 
 title: Reza | Figment
 slug: reza-figment
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.665836+00:00
+last_synced: 2026-05-17T08:08:26.359734+00:00
 global: true
 ---
 

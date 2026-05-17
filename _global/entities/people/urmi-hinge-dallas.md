@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.635587+00:00
+ingested_at: 2026-05-17T08:08:26.328344+00:00
 ingest_version: 1
 content_hash: blake2b:f372a378ad0d3deae7f1171ac434a7a5
-provider_modified_at: 2026-05-16T08:06:34.635587+00:00
+provider_modified_at: 2026-05-17T08:08:26.328344+00:00
 
 title: Urmi Hinge Dallas
 slug: urmi-hinge-dallas
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12813893663"]
   slack: []
-last_synced: 2026-05-16T08:06:34.635587+00:00
+last_synced: 2026-05-17T08:08:26.328344+00:00
 global: true
 ---
 

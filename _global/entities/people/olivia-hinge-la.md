@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.612798+00:00
+ingested_at: 2026-05-17T08:08:26.304462+00:00
 ingest_version: 1
 content_hash: blake2b:ce9236cb3cdfbe07e8f5638cadd18d20
-provider_modified_at: 2026-05-16T08:06:34.612798+00:00
+provider_modified_at: 2026-05-17T08:08:26.304462+00:00
 
 title: Olivia Hinge LA
 slug: olivia-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18178975681"]
   slack: []
-last_synced: 2026-05-16T08:06:34.612798+00:00
+last_synced: 2026-05-17T08:08:26.304462+00:00
 global: true
 ---
 

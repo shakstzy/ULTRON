@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.677017+00:00
+ingested_at: 2026-05-17T08:08:26.371102+00:00
 ingest_version: 1
 content_hash: blake2b:5900de54fee620874fb2e5dcf4b28b0e
-provider_modified_at: 2026-05-16T08:06:34.677017+00:00
+provider_modified_at: 2026-05-17T08:08:26.371102+00:00
 
 title: Stephie Orthobullets
 slug: stephie-orthobullets
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18056185666"]
   slack: []
-last_synced: 2026-05-16T08:06:34.677017+00:00
+last_synced: 2026-05-17T08:08:26.371102+00:00
 global: true
 ---
 

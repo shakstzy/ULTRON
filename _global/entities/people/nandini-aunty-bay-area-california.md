@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.561638+00:00
+ingested_at: 2026-05-17T08:08:26.253955+00:00
 ingest_version: 1
 content_hash: blake2b:0a4e5cfcfdd8ff90c4eb900f51761bcb
-provider_modified_at: 2026-05-16T08:06:34.561638+00:00
+provider_modified_at: 2026-05-17T08:08:26.253955+00:00
 
 title: Nandini Aunty Bay Area California
 slug: nandini-aunty-bay-area-california
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 510-364-4695"]
   slack: []
-last_synced: 2026-05-16T08:06:34.561638+00:00
+last_synced: 2026-05-17T08:08:26.253955+00:00
 global: true
 ---
 

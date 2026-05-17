@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.673696+00:00
+ingested_at: 2026-05-17T08:08:26.367785+00:00
 ingest_version: 1
 content_hash: blake2b:7a42a2c23b3b5dd604ffbdc07162e1ee
-provider_modified_at: 2026-05-16T08:06:34.673696+00:00
+provider_modified_at: 2026-05-17T08:08:26.367785+00:00
 
 title: Naji Kelley
 slug: naji-kelley
@@ -15,7 +15,7 @@ identifiers:
   email: ["naji@blndedmedia.com"]
   phone: ["(512) 937-3228"]
   slack: []
-last_synced: 2026-05-16T08:06:34.673696+00:00
+last_synced: 2026-05-17T08:08:26.367785+00:00
 global: true
 ---
 

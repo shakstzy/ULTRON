@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.560170+00:00
+ingested_at: 2026-05-17T08:08:26.252583+00:00
 ingest_version: 1
 content_hash: blake2b:667fc4b0ba34114287f6e9607ab80d4e
-provider_modified_at: 2026-05-16T08:06:34.560170+00:00
+provider_modified_at: 2026-05-17T08:08:26.252583+00:00
 
 title: Tony Bertucci
 slug: tony-bertucci
@@ -15,7 +15,7 @@ identifiers:
   email: ["tony.bertucci@austinisd.org"]
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.560170+00:00
+last_synced: 2026-05-17T08:08:26.252583+00:00
 global: true
 ---
 

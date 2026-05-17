@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.561783+00:00
+ingested_at: 2026-05-17T08:08:26.254096+00:00
 ingest_version: 1
 content_hash: blake2b:1e7e25d43bf3a16d2d2ffb22d98c6ccf
-provider_modified_at: 2026-05-16T08:06:34.561783+00:00
+provider_modified_at: 2026-05-17T08:08:26.254096+00:00
 
 title: Rashmi NYC
 slug: rashmi-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16089824437"]
   slack: []
-last_synced: 2026-05-16T08:06:34.561783+00:00
+last_synced: 2026-05-17T08:08:26.254096+00:00
 global: true
 ---
 

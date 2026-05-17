@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.625739+00:00
+ingested_at: 2026-05-17T08:08:26.317868+00:00
 ingest_version: 1
 content_hash: blake2b:0aae091694de3aba08c242c5d2fe7146
-provider_modified_at: 2026-05-16T08:06:34.625739+00:00
+provider_modified_at: 2026-05-17T08:08:26.317868+00:00
 
 title: Rocka Mo UC Berkeley
 slug: rocka-mo-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17172033232"]
   slack: []
-last_synced: 2026-05-16T08:06:34.625739+00:00
+last_synced: 2026-05-17T08:08:26.317868+00:00
 global: true
 ---
 

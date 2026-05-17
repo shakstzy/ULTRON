@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.549645+00:00
+ingested_at: 2026-05-17T08:08:26.242444+00:00
 ingest_version: 1
 content_hash: blake2b:a1adae275f846d0efb437c2872cd46b2
-provider_modified_at: 2026-05-16T08:06:34.549645+00:00
+provider_modified_at: 2026-05-17T08:08:26.242444+00:00
 
 title: Ayushi Hinge Dallas
 slug: ayushi-hinge-dallas
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13463071341"]
   slack: []
-last_synced: 2026-05-16T08:06:34.549645+00:00
+last_synced: 2026-05-17T08:08:26.242444+00:00
 global: true
 ---
 

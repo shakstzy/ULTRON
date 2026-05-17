@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.524129+00:00
+ingested_at: 2026-05-17T08:08:26.217003+00:00
 ingest_version: 1
 content_hash: blake2b:64e1ac59b20d13164fe1279d6fd9532b
-provider_modified_at: 2026-05-16T08:06:34.524129+00:00
+provider_modified_at: 2026-05-17T08:08:26.217003+00:00
 
 title: Abhi Hinge Austin
 slug: abhi-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15128289369"]
   slack: []
-last_synced: 2026-05-16T08:06:34.524129+00:00
+last_synced: 2026-05-17T08:08:26.217003+00:00
 global: true
 ---
 

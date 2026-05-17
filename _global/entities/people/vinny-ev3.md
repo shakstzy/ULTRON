@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.532896+00:00
+ingested_at: 2026-05-17T08:08:26.225598+00:00
 ingest_version: 1
 content_hash: blake2b:2bdba2555cfa230b1477f9ede0387b13
-provider_modified_at: 2026-05-16T08:06:34.532896+00:00
+provider_modified_at: 2026-05-17T08:08:26.225598+00:00
 
 title: Vinny | EV3
 slug: vinny-ev3
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.532896+00:00
+last_synced: 2026-05-17T08:08:26.225598+00:00
 global: true
 ---
 

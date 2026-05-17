@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.623886+00:00
+ingested_at: 2026-05-17T08:08:26.316110+00:00
 ingest_version: 1
 content_hash: blake2b:2faeaa002a6254e3d58d06d109ae2f1a
-provider_modified_at: 2026-05-16T08:06:34.623886+00:00
+provider_modified_at: 2026-05-17T08:08:26.316110+00:00
 
 title: Paola | Webisoft
 slug: paola-webisoft
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 786-464-7951"]
   slack: []
-last_synced: 2026-05-16T08:06:34.623886+00:00
+last_synced: 2026-05-17T08:08:26.316110+00:00
 global: true
 ---
 

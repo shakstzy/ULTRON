@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.621176+00:00
+ingested_at: 2026-05-17T08:08:26.313277+00:00
 ingest_version: 1
 content_hash: blake2b:d28aea4b98b02fa38bdeb1cc201fcd82
-provider_modified_at: 2026-05-16T08:06:34.621176+00:00
+provider_modified_at: 2026-05-17T08:08:26.313277+00:00
 
 title: Sharon Reed
 slug: sharon-reed
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 (512) 923-7848"]
   slack: []
-last_synced: 2026-05-16T08:06:34.621176+00:00
+last_synced: 2026-05-17T08:08:26.313277+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.541269+00:00
+ingested_at: 2026-05-17T08:08:26.233218+00:00
 ingest_version: 1
 content_hash: blake2b:6ed151aedf3f52e50c8325af54b3d9e3
-provider_modified_at: 2026-05-16T08:06:34.541269+00:00
+provider_modified_at: 2026-05-17T08:08:26.233218+00:00
 
 title: Neil Towari UC Berkeley
 slug: neil-towari-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["6465737514"]
   slack: []
-last_synced: 2026-05-16T08:06:34.541269+00:00
+last_synced: 2026-05-17T08:08:26.233218+00:00
 global: true
 ---
 

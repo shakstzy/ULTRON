@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.668384+00:00
+ingested_at: 2026-05-17T08:08:26.362717+00:00
 ingest_version: 1
 content_hash: blake2b:e87e00741343b7013fedf90cc5721084
-provider_modified_at: 2026-05-16T08:06:34.668384+00:00
+provider_modified_at: 2026-05-17T08:08:26.362717+00:00
 
 title: Pali Hinge LA
 slug: pali-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16692148800"]
   slack: []
-last_synced: 2026-05-16T08:06:34.668384+00:00
+last_synced: 2026-05-17T08:08:26.362717+00:00
 global: true
 ---
 

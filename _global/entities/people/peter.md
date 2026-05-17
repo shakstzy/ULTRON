@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.514960+00:00
+ingested_at: 2026-05-17T08:08:26.208882+00:00
 ingest_version: 1
 content_hash: blake2b:a65078c6893c761591578aeae825c02c
-provider_modified_at: 2026-05-16T08:06:34.514960+00:00
+provider_modified_at: 2026-05-17T08:08:26.208882+00:00
 
 title: Peter
 slug: peter
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(978) 223-3176"]
   slack: []
-last_synced: 2026-05-16T08:06:34.514960+00:00
+last_synced: 2026-05-17T08:08:26.208882+00:00
 global: true
 ---
 

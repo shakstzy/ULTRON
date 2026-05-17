@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.531432+00:00
+ingested_at: 2026-05-17T08:08:26.224229+00:00
 ingest_version: 1
 content_hash: blake2b:e487ea2e03f7ba2c19740eb65b5e644e
-provider_modified_at: 2026-05-16T08:06:34.531432+00:00
+provider_modified_at: 2026-05-17T08:08:26.224229+00:00
 
 title: Kavish Loomba UC Berkeley
 slug: kavish-loomba-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(760) 983-9698"]
   slack: []
-last_synced: 2026-05-16T08:06:34.531432+00:00
+last_synced: 2026-05-17T08:08:26.224229+00:00
 global: true
 ---
 

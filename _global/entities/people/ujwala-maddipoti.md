@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.566195+00:00
+ingested_at: 2026-05-17T08:08:26.258265+00:00
 ingest_version: 1
 content_hash: blake2b:13374e2bb74469b6ad97a03db63ce5db
-provider_modified_at: 2026-05-16T08:06:34.566195+00:00
+provider_modified_at: 2026-05-17T08:08:26.258265+00:00
 
 title: Ujwala Maddipoti
 slug: ujwala-maddipoti
@@ -15,7 +15,7 @@ identifiers:
   email: ["ujram@yahoo.com"]
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.566195+00:00
+last_synced: 2026-05-17T08:08:26.258265+00:00
 global: true
 ---
 

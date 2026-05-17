@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.533925+00:00
+ingested_at: 2026-05-17T08:08:26.226498+00:00
 ingest_version: 1
 content_hash: blake2b:2034090c3e71988275dd08a3202bfa86
-provider_modified_at: 2026-05-16T08:06:34.533925+00:00
+provider_modified_at: 2026-05-17T08:08:26.226498+00:00
 
 title: Arya Kapoor UC Berkeley
 slug: arya-kapoor-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["8054058386"]
   slack: []
-last_synced: 2026-05-16T08:06:34.533925+00:00
+last_synced: 2026-05-17T08:08:26.226498+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.603279+00:00
+ingested_at: 2026-05-17T08:08:26.294781+00:00
 ingest_version: 1
 content_hash: blake2b:ecb232e9cb21990ac27f559240b36e6a
-provider_modified_at: 2026-05-16T08:06:34.603279+00:00
+provider_modified_at: 2026-05-17T08:08:26.294781+00:00
 
 title: Hotel Toronto
 slug: hotel-toronto
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16479042580"]
   slack: []
-last_synced: 2026-05-16T08:06:34.603279+00:00
+last_synced: 2026-05-17T08:08:26.294781+00:00
 global: true
 ---
 

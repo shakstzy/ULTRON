@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.630217+00:00
+ingested_at: 2026-05-17T08:08:26.322564+00:00
 ingest_version: 1
 content_hash: blake2b:972e4034e6d5613f4e717434238220bc
-provider_modified_at: 2026-05-16T08:06:34.630217+00:00
+provider_modified_at: 2026-05-17T08:08:26.322564+00:00
 
 title: Robert Blockchain UC Berkeley
 slug: robert-blockchain-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14243847745"]
   slack: []
-last_synced: 2026-05-16T08:06:34.630217+00:00
+last_synced: 2026-05-17T08:08:26.322564+00:00
 global: true
 ---
 

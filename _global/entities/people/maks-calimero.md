@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.588803+00:00
+ingested_at: 2026-05-17T08:08:26.279872+00:00
 ingest_version: 1
 content_hash: blake2b:6c6254090ccf51e51452d2ca90e27b1c
-provider_modified_at: 2026-05-16T08:06:34.588803+00:00
+provider_modified_at: 2026-05-17T08:08:26.279872+00:00
 
 title: Maks | Calimero
 slug: maks-calimero
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.588803+00:00
+last_synced: 2026-05-17T08:08:26.279872+00:00
 global: true
 ---
 

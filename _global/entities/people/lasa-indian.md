@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.588549+00:00
+ingested_at: 2026-05-17T08:08:26.279584+00:00
 ingest_version: 1
 content_hash: blake2b:7b2b5815c1746dae2b2b0742a417b2de
-provider_modified_at: 2026-05-16T08:06:34.588549+00:00
+provider_modified_at: 2026-05-17T08:08:26.279584+00:00
 
 title: Lasa Indian
 slug: lasa-indian
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-363-3425"]
   slack: []
-last_synced: 2026-05-16T08:06:34.588549+00:00
+last_synced: 2026-05-17T08:08:26.279584+00:00
 global: true
 ---
 

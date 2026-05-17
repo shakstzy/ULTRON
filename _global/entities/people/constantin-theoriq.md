@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.565819+00:00
+ingested_at: 2026-05-17T08:08:26.257820+00:00
 ingest_version: 1
 content_hash: blake2b:8874ed8c4dab19a324996fa398856f9d
-provider_modified_at: 2026-05-16T08:06:34.565819+00:00
+provider_modified_at: 2026-05-17T08:08:26.257820+00:00
 
 title: Constantin | Theoriq
 slug: constantin-theoriq
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.565819+00:00
+last_synced: 2026-05-17T08:08:26.257820+00:00
 global: true
 ---
 

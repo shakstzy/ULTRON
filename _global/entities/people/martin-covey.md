@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.636044+00:00
+ingested_at: 2026-05-17T08:08:26.328699+00:00
 ingest_version: 1
 content_hash: blake2b:5408a28701f78588b082f70b9eef4301
-provider_modified_at: 2026-05-16T08:06:34.636044+00:00
+provider_modified_at: 2026-05-17T08:08:26.328699+00:00
 
 title: Martin | Covey
 slug: martin-covey
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.636044+00:00
+last_synced: 2026-05-17T08:08:26.328699+00:00
 global: true
 ---
 

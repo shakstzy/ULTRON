@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.595181+00:00
+ingested_at: 2026-05-17T08:08:26.286283+00:00
 ingest_version: 1
 content_hash: blake2b:4d8010c62b1ea01a42db73eca1b142ed
-provider_modified_at: 2026-05-16T08:06:34.595181+00:00
+provider_modified_at: 2026-05-17T08:08:26.286283+00:00
 
 title: Martin | Blocksense
 slug: martin-blocksense
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.595181+00:00
+last_synced: 2026-05-17T08:08:26.286283+00:00
 global: true
 ---
 

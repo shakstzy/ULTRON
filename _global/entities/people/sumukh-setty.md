@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.614814+00:00
+ingested_at: 2026-05-17T08:08:26.306509+00:00
 ingest_version: 1
 content_hash: blake2b:dd2bf83f136b3eebc7fe23d4d8b87d30
-provider_modified_at: 2026-05-16T08:06:34.614814+00:00
+provider_modified_at: 2026-05-17T08:08:26.306509+00:00
 
 title: Sumukh Setty
 slug: sumukh-setty
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(408) 577-7392"]
   slack: []
-last_synced: 2026-05-16T08:06:34.614814+00:00
+last_synced: 2026-05-17T08:08:26.306509+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.657240+00:00
+ingested_at: 2026-05-17T08:08:26.350952+00:00
 ingest_version: 1
 content_hash: blake2b:6eab2be57e771381aa4fb3f107bdd74d
-provider_modified_at: 2026-05-16T08:06:34.657240+00:00
+provider_modified_at: 2026-05-17T08:08:26.350952+00:00
 
 title: Savannah Hinge Austin
 slug: savannah-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12544219568"]
   slack: []
-last_synced: 2026-05-16T08:06:34.657240+00:00
+last_synced: 2026-05-17T08:08:26.350952+00:00
 global: true
 ---
 

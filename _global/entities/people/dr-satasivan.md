@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.533998+00:00
+ingested_at: 2026-05-17T08:08:26.226565+00:00
 ingest_version: 1
 content_hash: blake2b:b518befb9791180cb4d7e02195473d64
-provider_modified_at: 2026-05-16T08:06:34.533998+00:00
+provider_modified_at: 2026-05-17T08:08:26.226565+00:00
 
 title: Dr. Satasivan
 slug: dr-satasivan
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(512) 731-9278"]
   slack: []
-last_synced: 2026-05-16T08:06:34.533998+00:00
+last_synced: 2026-05-17T08:08:26.226565+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.642304+00:00
+ingested_at: 2026-05-17T08:08:26.334881+00:00
 ingest_version: 1
 content_hash: blake2b:2a4710bcff832a1f4883b29811308859
-provider_modified_at: 2026-05-16T08:06:34.642304+00:00
+provider_modified_at: 2026-05-17T08:08:26.334881+00:00
 
 title: Daniel UC Berkeley
 slug: daniel-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 510-737-9122"]
   slack: []
-last_synced: 2026-05-16T08:06:34.642304+00:00
+last_synced: 2026-05-17T08:08:26.334881+00:00
 global: true
 ---
 

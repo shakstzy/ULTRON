@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.592724+00:00
+ingested_at: 2026-05-17T08:08:26.283806+00:00
 ingest_version: 1
 content_hash: blake2b:183a71048676c84bd89f683adc24cc97
-provider_modified_at: 2026-05-16T08:06:34.592724+00:00
+provider_modified_at: 2026-05-17T08:08:26.283806+00:00
 
 title: Emanuele | MountainProtocol
 slug: emanuele-mountainprotocol
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.592724+00:00
+last_synced: 2026-05-17T08:08:26.283806+00:00
 global: true
 ---
 

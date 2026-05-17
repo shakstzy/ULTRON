@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.622903+00:00
+ingested_at: 2026-05-17T08:08:26.315093+00:00
 ingest_version: 1
 content_hash: blake2b:c236d9517a466c9cd40b04d85bcc156e
-provider_modified_at: 2026-05-16T08:06:34.622903+00:00
+provider_modified_at: 2026-05-17T08:08:26.315093+00:00
 
 title: Dev | Axal
 slug: dev-axal
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.622903+00:00
+last_synced: 2026-05-17T08:08:26.315093+00:00
 global: true
 ---
 

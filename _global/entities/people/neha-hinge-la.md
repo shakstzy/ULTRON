@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.493734+00:00
+ingested_at: 2026-05-17T08:08:26.189672+00:00
 ingest_version: 1
 content_hash: blake2b:96d379812987faf71ae9590b5928c6d8
-provider_modified_at: 2026-05-16T08:06:34.493734+00:00
+provider_modified_at: 2026-05-17T08:08:26.189672+00:00
 
 title: Neha Hinge LA
 slug: neha-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14254425900"]
   slack: []
-last_synced: 2026-05-16T08:06:34.493734+00:00
+last_synced: 2026-05-17T08:08:26.189672+00:00
 global: true
 ---
 

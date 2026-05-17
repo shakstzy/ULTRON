@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.620174+00:00
+ingested_at: 2026-05-17T08:08:26.312260+00:00
 ingest_version: 1
 content_hash: blake2b:61ccde1f05140f3917ab6d784d5a972d
-provider_modified_at: 2026-05-16T08:06:34.620174+00:00
+provider_modified_at: 2026-05-17T08:08:26.312260+00:00
 
 title: Jada Hinge LA
 slug: jada-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18175035864"]
   slack: []
-last_synced: 2026-05-16T08:06:34.620174+00:00
+last_synced: 2026-05-17T08:08:26.312260+00:00
 global: true
 ---
 

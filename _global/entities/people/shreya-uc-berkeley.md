@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.677085+00:00
+ingested_at: 2026-05-17T08:08:26.371170+00:00
 ingest_version: 1
 content_hash: blake2b:6ed9f55274ec46ebdca5316a6c65ca5d
-provider_modified_at: 2026-05-16T08:06:34.677085+00:00
+provider_modified_at: 2026-05-17T08:08:26.371170+00:00
 
 title: Shreya UC Berkeley
 slug: shreya-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14087683294"]
   slack: []
-last_synced: 2026-05-16T08:06:34.677085+00:00
+last_synced: 2026-05-17T08:08:26.371170+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.673024+00:00
+ingested_at: 2026-05-17T08:08:26.367118+00:00
 ingest_version: 1
 content_hash: blake2b:266e7857200253b5838c9d752f77b3a5
-provider_modified_at: 2026-05-16T08:06:34.673024+00:00
+provider_modified_at: 2026-05-17T08:08:26.367118+00:00
 
 title: Russ | Exabits
 slug: russ-exabits
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.673024+00:00
+last_synced: 2026-05-17T08:08:26.367118+00:00
 global: true
 ---
 

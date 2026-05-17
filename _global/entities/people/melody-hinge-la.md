@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.590524+00:00
+ingested_at: 2026-05-17T08:08:26.281616+00:00
 ingest_version: 1
 content_hash: blake2b:2f0324a8a706a779188dfb0a1cc7e8ec
-provider_modified_at: 2026-05-16T08:06:34.590524+00:00
+provider_modified_at: 2026-05-17T08:08:26.281616+00:00
 
 title: Melody Hinge LA
 slug: melody-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13236793584"]
   slack: []
-last_synced: 2026-05-16T08:06:34.590524+00:00
+last_synced: 2026-05-17T08:08:26.281616+00:00
 global: true
 ---
 

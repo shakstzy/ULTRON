@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.568418+00:00
+ingested_at: 2026-05-17T08:08:26.260199+00:00
 ingest_version: 1
 content_hash: blake2b:6929d5a18cc3b08101a2c1cdef57e61d
-provider_modified_at: 2026-05-16T08:06:34.568418+00:00
+provider_modified_at: 2026-05-17T08:08:26.260199+00:00
 
 title: Fabiana
 slug: fabiana
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+52 81 2063 3718"]
   slack: []
-last_synced: 2026-05-16T08:06:34.568418+00:00
+last_synced: 2026-05-17T08:08:26.260199+00:00
 global: true
 ---
 

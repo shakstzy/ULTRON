@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.656204+00:00
+ingested_at: 2026-05-17T08:08:26.349947+00:00
 ingest_version: 1
 content_hash: blake2b:ad5448d15a339893065df627a97750bf
-provider_modified_at: 2026-05-16T08:06:34.656204+00:00
+provider_modified_at: 2026-05-17T08:08:26.349947+00:00
 
 title: Janet Hinge Austin
 slug: janet-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17372303236"]
   slack: []
-last_synced: 2026-05-16T08:06:34.656204+00:00
+last_synced: 2026-05-17T08:08:26.349947+00:00
 global: true
 ---
 

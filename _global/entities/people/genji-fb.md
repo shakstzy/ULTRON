@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.611589+00:00
+ingested_at: 2026-05-17T08:08:26.303236+00:00
 ingest_version: 1
 content_hash: blake2b:84fc8b4ec1a783401105adf4f50e343d
-provider_modified_at: 2026-05-16T08:06:34.611589+00:00
+provider_modified_at: 2026-05-17T08:08:26.303236+00:00
 
 title: Genji FB
 slug: genji-fb
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17345761803"]
   slack: []
-last_synced: 2026-05-16T08:06:34.611589+00:00
+last_synced: 2026-05-17T08:08:26.303236+00:00
 global: true
 ---
 

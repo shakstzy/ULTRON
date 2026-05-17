@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.501696+00:00
+ingested_at: 2026-05-17T08:08:26.197463+00:00
 ingest_version: 1
 content_hash: blake2b:189b6bccdf8a653a91f92e828981211d
-provider_modified_at: 2026-05-16T08:06:34.501696+00:00
+provider_modified_at: 2026-05-17T08:08:26.197463+00:00
 
 title: Nishka Nova
 slug: nishka-nova-0cc6
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14699687649"]
   slack: []
-last_synced: 2026-05-16T08:06:34.501696+00:00
+last_synced: 2026-05-17T08:08:26.197463+00:00
 global: true
 ---
 

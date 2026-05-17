@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.597110+00:00
+ingested_at: 2026-05-17T08:08:26.288458+00:00
 ingest_version: 1
 content_hash: blake2b:5669aed11943dc34803fc9c75d5b4aff
-provider_modified_at: 2026-05-16T08:06:34.597110+00:00
+provider_modified_at: 2026-05-17T08:08:26.288458+00:00
 
 title: Vai Kota UC Berkeley
 slug: vai-kota-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 (510) 304-6131"]
   slack: []
-last_synced: 2026-05-16T08:06:34.597110+00:00
+last_synced: 2026-05-17T08:08:26.288458+00:00
 global: true
 ---
 

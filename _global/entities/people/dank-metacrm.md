@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.595582+00:00
+ingested_at: 2026-05-17T08:08:26.286895+00:00
 ingest_version: 1
 content_hash: blake2b:5297726ea15e6933d1bc564b9e6be3e0
-provider_modified_at: 2026-05-16T08:06:34.595582+00:00
+provider_modified_at: 2026-05-17T08:08:26.286895+00:00
 
 title: Dank | MetaCRM
 slug: dank-metacrm
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.595582+00:00
+last_synced: 2026-05-17T08:08:26.286895+00:00
 global: true
 ---
 

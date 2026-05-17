@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.576352+00:00
+ingested_at: 2026-05-17T08:08:26.267047+00:00
 ingest_version: 1
 content_hash: blake2b:2d9d1bd5b2c5f1c783ce4cdfff54f4ca
-provider_modified_at: 2026-05-16T08:06:34.576352+00:00
+provider_modified_at: 2026-05-17T08:08:26.267047+00:00
 
 title: Salma LASA
 slug: salma-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-791-0264"]
   slack: []
-last_synced: 2026-05-16T08:06:34.576352+00:00
+last_synced: 2026-05-17T08:08:26.267047+00:00
 global: true
 ---
 

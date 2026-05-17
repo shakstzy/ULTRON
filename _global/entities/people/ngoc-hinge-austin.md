@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.627050+00:00
+ingested_at: 2026-05-17T08:08:26.319273+00:00
 ingest_version: 1
 content_hash: blake2b:e7944ac455f0ffe8dfb46d2afdf26eb6
-provider_modified_at: 2026-05-16T08:06:34.627050+00:00
+provider_modified_at: 2026-05-17T08:08:26.319273+00:00
 
 title: Ngoc Hinge Austin
 slug: ngoc-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17752210759"]
   slack: []
-last_synced: 2026-05-16T08:06:34.627050+00:00
+last_synced: 2026-05-17T08:08:26.319273+00:00
 global: true
 ---
 

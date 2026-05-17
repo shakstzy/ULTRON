@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.672960+00:00
+ingested_at: 2026-05-17T08:08:26.367055+00:00
 ingest_version: 1
 content_hash: blake2b:e8329cc2e660843a1a7164c64d18f413
-provider_modified_at: 2026-05-16T08:06:34.672960+00:00
+provider_modified_at: 2026-05-17T08:08:26.367055+00:00
 
 title: Alan Rodrigo Producer LA
 slug: alan-rodrigo-producer-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(703) 470-8432"]
   slack: []
-last_synced: 2026-05-16T08:06:34.672960+00:00
+last_synced: 2026-05-17T08:08:26.367055+00:00
 global: true
 ---
 

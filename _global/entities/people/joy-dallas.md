@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.619431+00:00
+ingested_at: 2026-05-17T08:08:26.311563+00:00
 ingest_version: 1
 content_hash: blake2b:ef465a4fee8aa4877c9c6caa8525ba3a
-provider_modified_at: 2026-05-16T08:06:34.619431+00:00
+provider_modified_at: 2026-05-17T08:08:26.311563+00:00
 
 title: Joy Dallas
 slug: joy-dallas
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19403011377"]
   slack: []
-last_synced: 2026-05-16T08:06:34.619431+00:00
+last_synced: 2026-05-17T08:08:26.311563+00:00
 global: true
 ---
 

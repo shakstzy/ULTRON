@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.632848+00:00
+ingested_at: 2026-05-17T08:08:26.325368+00:00
 ingest_version: 1
 content_hash: blake2b:169fabaf7c0ec7bec7be48b5f837d47b
-provider_modified_at: 2026-05-16T08:06:34.632848+00:00
+provider_modified_at: 2026-05-17T08:08:26.325368+00:00
 
 title: Mitchell LASA
 slug: mitchell-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-954-3941"]
   slack: []
-last_synced: 2026-05-16T08:06:34.632848+00:00
+last_synced: 2026-05-17T08:08:26.325368+00:00
 global: true
 ---
 

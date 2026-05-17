@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.606466+00:00
+ingested_at: 2026-05-17T08:08:26.298130+00:00
 ingest_version: 1
 content_hash: blake2b:5d3c6b5a503554d5ebc534532d429f90
-provider_modified_at: 2026-05-16T08:06:34.606466+00:00
+provider_modified_at: 2026-05-17T08:08:26.298130+00:00
 
 title: kala
 slug: kala
@@ -15,7 +15,7 @@ identifiers:
   email: ["slekha8000@yahoo.com"]
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.606466+00:00
+last_synced: 2026-05-17T08:08:26.298130+00:00
 global: true
 ---
 

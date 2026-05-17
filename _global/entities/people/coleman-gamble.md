@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.512534+00:00
+ingested_at: 2026-05-17T08:08:26.206784+00:00
 ingest_version: 1
 content_hash: blake2b:0f73976ade7cf2ce50e009a9a049f887
-provider_modified_at: 2026-05-16T08:06:34.512534+00:00
+provider_modified_at: 2026-05-17T08:08:26.206784+00:00
 
 title: Coleman Gamble
 slug: coleman-gamble
@@ -15,7 +15,7 @@ identifiers:
   email: ["cjgamble24@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.512534+00:00
+last_synced: 2026-05-17T08:08:26.206784+00:00
 global: true
 ---
 

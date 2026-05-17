@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.587089+00:00
+ingested_at: 2026-05-17T08:08:26.278055+00:00
 ingest_version: 1
 content_hash: blake2b:4e739827a1287e6e24375f1a2c50fbfd
-provider_modified_at: 2026-05-16T08:06:34.587089+00:00
+provider_modified_at: 2026-05-17T08:08:26.278055+00:00
 
 title: Ed Long
 slug: ed-long
@@ -15,7 +15,7 @@ identifiers:
   email: ["ed_long@me.com"]
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.587089+00:00
+last_synced: 2026-05-17T08:08:26.278055+00:00
 global: true
 ---
 

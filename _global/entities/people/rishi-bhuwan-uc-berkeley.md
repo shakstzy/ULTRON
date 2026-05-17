@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.648481+00:00
+ingested_at: 2026-05-17T08:08:26.342282+00:00
 ingest_version: 1
 content_hash: blake2b:751d0fd354e307bbef932bafb90fb0a6
-provider_modified_at: 2026-05-16T08:06:34.648481+00:00
+provider_modified_at: 2026-05-17T08:08:26.342282+00:00
 
 title: Rishi Bhuwan UC Berkeley
 slug: rishi-bhuwan-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14159109992"]
   slack: []
-last_synced: 2026-05-16T08:06:34.648481+00:00
+last_synced: 2026-05-17T08:08:26.342282+00:00
 global: true
 ---
 

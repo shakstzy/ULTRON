@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.561388+00:00
+ingested_at: 2026-05-17T08:08:26.253732+00:00
 ingest_version: 1
 content_hash: blake2b:6f6a623d2b1078e673b463e6e5ae28a3
-provider_modified_at: 2026-05-16T08:06:34.561388+00:00
+provider_modified_at: 2026-05-17T08:08:26.253732+00:00
 
 title: Janani Rajagopalan
 slug: janani-rajagopalan
@@ -15,7 +15,7 @@ identifiers:
   email: ["janani.rajagopalan@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.561388+00:00
+last_synced: 2026-05-17T08:08:26.253732+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.655641+00:00
+ingested_at: 2026-05-17T08:08:26.349385+00:00
 ingest_version: 1
 content_hash: blake2b:c4af3bee7666666fd2885471a9bee1ef
-provider_modified_at: 2026-05-16T08:06:34.655641+00:00
+provider_modified_at: 2026-05-17T08:08:26.349385+00:00
 
 title: Anuj UC Berkeley
 slug: anuj-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17148017170"]
   slack: []
-last_synced: 2026-05-16T08:06:34.655641+00:00
+last_synced: 2026-05-17T08:08:26.349385+00:00
 global: true
 ---
 

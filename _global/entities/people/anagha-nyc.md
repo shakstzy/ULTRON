@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.625873+00:00
+ingested_at: 2026-05-17T08:08:26.318003+00:00
 ingest_version: 1
 content_hash: blake2b:dd7f57881a28dfa678f5421c1aeb4ce9
-provider_modified_at: 2026-05-16T08:06:34.625873+00:00
+provider_modified_at: 2026-05-17T08:08:26.318003+00:00
 
 title: Anagha NYC
 slug: anagha-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17323190824"]
   slack: []
-last_synced: 2026-05-16T08:06:34.625873+00:00
+last_synced: 2026-05-17T08:08:26.318003+00:00
 global: true
 ---
 

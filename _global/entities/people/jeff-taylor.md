@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.640242+00:00
+ingested_at: 2026-05-17T08:08:26.332758+00:00
 ingest_version: 1
 content_hash: blake2b:2275b5519dd5568bf0cedde189a9fa8d
-provider_modified_at: 2026-05-16T08:06:34.640242+00:00
+provider_modified_at: 2026-05-17T08:08:26.332758+00:00
 
 title: Jeff Taylor
 slug: jeff-taylor
@@ -15,7 +15,7 @@ identifiers:
   email: ["Jeff.Taylor@austintexas.gov"]
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.640242+00:00
+last_synced: 2026-05-17T08:08:26.332758+00:00
 global: true
 ---
 

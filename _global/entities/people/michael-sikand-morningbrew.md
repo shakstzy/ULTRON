@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.564956+00:00
+ingested_at: 2026-05-17T08:08:26.256888+00:00
 ingest_version: 1
 content_hash: blake2b:fee5314aa65cd2c1c8e4de906db5c940
-provider_modified_at: 2026-05-16T08:06:34.564956+00:00
+provider_modified_at: 2026-05-17T08:08:26.256888+00:00
 
 title: Michael Sikand MorningBrew
 slug: michael-sikand-morningbrew
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14085072749"]
   slack: []
-last_synced: 2026-05-16T08:06:34.564956+00:00
+last_synced: 2026-05-17T08:08:26.256888+00:00
 global: true
 ---
 

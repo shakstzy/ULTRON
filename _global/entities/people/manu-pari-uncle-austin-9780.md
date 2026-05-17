@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.500279+00:00
+ingested_at: 2026-05-17T08:08:26.196090+00:00
 ingest_version: 1
 content_hash: blake2b:8fcaded0ea1b8640cfdaf03185ac2d85
-provider_modified_at: 2026-05-16T08:06:34.500279+00:00
+provider_modified_at: 2026-05-17T08:08:26.196090+00:00
 
 title: Manu Pari Uncle Austin
 slug: manu-pari-uncle-austin-9780
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14092014250"]
   slack: []
-last_synced: 2026-05-16T08:06:34.500279+00:00
+last_synced: 2026-05-17T08:08:26.196090+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.634568+00:00
+ingested_at: 2026-05-17T08:08:26.327274+00:00
 ingest_version: 1
 content_hash: blake2b:bfae4321f3f74e82278e26ef55931dd7
-provider_modified_at: 2026-05-16T08:06:34.634568+00:00
+provider_modified_at: 2026-05-17T08:08:26.327274+00:00
 
 title: Ramesh Srinivasan
 slug: ramesh-srinivasan
@@ -15,7 +15,7 @@ identifiers:
   email: ["ramesh.srini@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.634568+00:00
+last_synced: 2026-05-17T08:08:26.327274+00:00
 global: true
 ---
 

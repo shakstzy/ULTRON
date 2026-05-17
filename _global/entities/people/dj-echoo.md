@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.658365+00:00
+ingested_at: 2026-05-17T08:08:26.352041+00:00
 ingest_version: 1
 content_hash: blake2b:ec079741d926b36525f70704488eb8ca
-provider_modified_at: 2026-05-16T08:06:34.658365+00:00
+provider_modified_at: 2026-05-17T08:08:26.352041+00:00
 
 title: Dj Echoo
 slug: dj-echoo
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15125503539"]
   slack: []
-last_synced: 2026-05-16T08:06:34.658365+00:00
+last_synced: 2026-05-17T08:08:26.352041+00:00
 global: true
 ---
 

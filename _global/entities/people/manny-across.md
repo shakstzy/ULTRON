@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.646544+00:00
+ingested_at: 2026-05-17T08:08:26.340337+00:00
 ingest_version: 1
 content_hash: blake2b:77e7b21f15fbd2a874e66d5c7e7588c4
-provider_modified_at: 2026-05-16T08:06:34.646544+00:00
+provider_modified_at: 2026-05-17T08:08:26.340337+00:00
 
 title: Manny | Across
 slug: manny-across
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.646544+00:00
+last_synced: 2026-05-17T08:08:26.340337+00:00
 global: true
 ---
 

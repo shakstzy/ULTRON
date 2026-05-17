@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.638894+00:00
+ingested_at: 2026-05-17T08:08:26.331347+00:00
 ingest_version: 1
 content_hash: blake2b:404f9a3fae1b188afcc45c3a61add33e
-provider_modified_at: 2026-05-16T08:06:34.638894+00:00
+provider_modified_at: 2026-05-17T08:08:26.331347+00:00
 
 title: Aaliyah Hinge Austin
 slug: aaliyah-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14154042088"]
   slack: []
-last_synced: 2026-05-16T08:06:34.638894+00:00
+last_synced: 2026-05-17T08:08:26.331347+00:00
 global: true
 ---
 

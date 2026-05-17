@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.677277+00:00
+ingested_at: 2026-05-17T08:08:26.371371+00:00
 ingest_version: 1
 content_hash: blake2b:774fe0c88ee660296441c43c32ee236f
-provider_modified_at: 2026-05-16T08:06:34.677277+00:00
+provider_modified_at: 2026-05-17T08:08:26.371371+00:00
 
 title: Ronit UC Berkeley
 slug: ronit-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15107178577"]
   slack: []
-last_synced: 2026-05-16T08:06:34.677277+00:00
+last_synced: 2026-05-17T08:08:26.371371+00:00
 global: true
 ---
 

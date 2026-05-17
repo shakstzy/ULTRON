@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.536993+00:00
+ingested_at: 2026-05-17T08:08:26.229164+00:00
 ingest_version: 1
 content_hash: blake2b:d5530e90f6cea5ffb8322e34a6e02f06
-provider_modified_at: 2026-05-16T08:06:34.536993+00:00
+provider_modified_at: 2026-05-17T08:08:26.229164+00:00
 
 title: Pranav Nathan Plano
 slug: pranav-nathan-plano
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(972) 838-0598"]
   slack: []
-last_synced: 2026-05-16T08:06:34.536993+00:00
+last_synced: 2026-05-17T08:08:26.229164+00:00
 global: true
 ---
 

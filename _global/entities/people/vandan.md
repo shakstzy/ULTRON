@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.628719+00:00
+ingested_at: 2026-05-17T08:08:26.320997+00:00
 ingest_version: 1
 content_hash: blake2b:45d48b5e0f8e64a86182e96e23a5a6fc
-provider_modified_at: 2026-05-16T08:06:34.628719+00:00
+provider_modified_at: 2026-05-17T08:08:26.320997+00:00
 
 title: Vandan
 slug: vandan
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12147359618"]
   slack: []
-last_synced: 2026-05-16T08:06:34.628719+00:00
+last_synced: 2026-05-17T08:08:26.320997+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.599198+00:00
+ingested_at: 2026-05-17T08:08:26.290503+00:00
 ingest_version: 1
 content_hash: blake2b:c071f53f81a0979164b1f7ff9e72df53
-provider_modified_at: 2026-05-16T08:06:34.599198+00:00
+provider_modified_at: 2026-05-17T08:08:26.290503+00:00
 
 title: Eva Gandhi Austin
 slug: eva-gandhi-austin
@@ -15,7 +15,7 @@ identifiers:
   email: ["evag365@gmail.com"]
   phone: ["+1 512-221-4041"]
   slack: []
-last_synced: 2026-05-16T08:06:34.599198+00:00
+last_synced: 2026-05-17T08:08:26.290503+00:00
 global: true
 ---
 

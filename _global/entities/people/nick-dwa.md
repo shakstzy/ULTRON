@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.597044+00:00
+ingested_at: 2026-05-17T08:08:26.288387+00:00
 ingest_version: 1
 content_hash: blake2b:84882a7db889929116639f6c8de2980b
-provider_modified_at: 2026-05-16T08:06:34.597044+00:00
+provider_modified_at: 2026-05-17T08:08:26.288387+00:00
 
 title: Nick | DWA
 slug: nick-dwa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 914-708-0887"]
   slack: []
-last_synced: 2026-05-16T08:06:34.597044+00:00
+last_synced: 2026-05-17T08:08:26.288387+00:00
 global: true
 ---
 

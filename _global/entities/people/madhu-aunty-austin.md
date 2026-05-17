@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.590249+00:00
+ingested_at: 2026-05-17T08:08:26.281345+00:00
 ingest_version: 1
 content_hash: blake2b:73124529d5be860cee639db586e613c6
-provider_modified_at: 2026-05-16T08:06:34.590249+00:00
+provider_modified_at: 2026-05-17T08:08:26.281345+00:00
 
 title: Madhu Aunty Austin
 slug: madhu-aunty-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19254132274"]
   slack: []
-last_synced: 2026-05-16T08:06:34.590249+00:00
+last_synced: 2026-05-17T08:08:26.281345+00:00
 global: true
 ---
 

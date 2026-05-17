@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.606204+00:00
+ingested_at: 2026-05-17T08:08:26.297860+00:00
 ingest_version: 1
 content_hash: blake2b:95ab883cd4cb71c82774531e4e1b935f
-provider_modified_at: 2026-05-16T08:06:34.606204+00:00
+provider_modified_at: 2026-05-17T08:08:26.297860+00:00
 
 title: Charchit | QuillAI
 slug: charchit-quillai
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.606204+00:00
+last_synced: 2026-05-17T08:08:26.297860+00:00
 global: true
 ---
 

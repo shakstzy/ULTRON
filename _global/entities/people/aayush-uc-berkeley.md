@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.544810+00:00
+ingested_at: 2026-05-17T08:08:26.237169+00:00
 ingest_version: 1
 content_hash: blake2b:21ec2587e47bc781d5590786697d0394
-provider_modified_at: 2026-05-16T08:06:34.544810+00:00
+provider_modified_at: 2026-05-17T08:08:26.237169+00:00
 
 title: Aayush UC Berkeley
 slug: aayush-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 832-740-0771"]
   slack: []
-last_synced: 2026-05-16T08:06:34.544810+00:00
+last_synced: 2026-05-17T08:08:26.237169+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.637928+00:00
+ingested_at: 2026-05-17T08:08:26.330348+00:00
 ingest_version: 1
 content_hash: blake2b:4255cc92218086799b52fa9fdb4d0fce
-provider_modified_at: 2026-05-16T08:06:34.637928+00:00
+provider_modified_at: 2026-05-17T08:08:26.330348+00:00
 
 title: Connor Counselor Launchx
 slug: connor-counselor-launchx
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(508) 983-4522"]
   slack: []
-last_synced: 2026-05-16T08:06:34.637928+00:00
+last_synced: 2026-05-17T08:08:26.330348+00:00
 global: true
 ---
 

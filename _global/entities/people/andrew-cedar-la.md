@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.605316+00:00
+ingested_at: 2026-05-17T08:08:26.296907+00:00
 ingest_version: 1
 content_hash: blake2b:39636e446b20c037b0477dc13feffd74
-provider_modified_at: 2026-05-16T08:06:34.605316+00:00
+provider_modified_at: 2026-05-17T08:08:26.296907+00:00
 
 title: Andrew Cedar LA
 slug: andrew-cedar-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 (714) 878-4999"]
   slack: []
-last_synced: 2026-05-16T08:06:34.605316+00:00
+last_synced: 2026-05-17T08:08:26.296907+00:00
 global: true
 ---
 

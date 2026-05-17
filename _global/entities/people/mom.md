@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.663589+00:00
+ingested_at: 2026-05-17T08:08:26.357374+00:00
 ingest_version: 1
 content_hash: blake2b:77bdbf78ef3a35027ed4f63486570ac1
-provider_modified_at: 2026-05-16T08:06:34.663589+00:00
+provider_modified_at: 2026-05-17T08:08:26.357374+00:00
 
 title: Mom
 slug: mom
@@ -15,7 +15,7 @@ identifiers:
   email: ["ambal_d2d@yahoo.com", "ambalakr@gmail.com"]
   phone: ["+1 510-449-9964"]
   slack: []
-last_synced: 2026-05-16T08:06:34.663589+00:00
+last_synced: 2026-05-17T08:08:26.357374+00:00
 global: true
 ---
 

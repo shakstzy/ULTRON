@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.515506+00:00
+ingested_at: 2026-05-17T08:08:26.209296+00:00
 ingest_version: 1
 content_hash: blake2b:67328d892c8bac745a8bfc3c829aa4a5
-provider_modified_at: 2026-05-16T08:06:34.515506+00:00
+provider_modified_at: 2026-05-17T08:08:26.209296+00:00
 
 title: Arya Kumar
 slug: arya-kumar
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17372262287"]
   slack: []
-last_synced: 2026-05-16T08:06:34.515506+00:00
+last_synced: 2026-05-17T08:08:26.209296+00:00
 global: true
 ---
 

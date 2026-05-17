@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.578113+00:00
+ingested_at: 2026-05-17T08:08:26.268810+00:00
 ingest_version: 1
 content_hash: blake2b:173e2b3b282b342052765b911a7251be
-provider_modified_at: 2026-05-16T08:06:34.578113+00:00
+provider_modified_at: 2026-05-17T08:08:26.268810+00:00
 
 title: Alok UC Berkeley
 slug: alok-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(424) 273-0540"]
   slack: []
-last_synced: 2026-05-16T08:06:34.578113+00:00
+last_synced: 2026-05-17T08:08:26.268810+00:00
 global: true
 ---
 

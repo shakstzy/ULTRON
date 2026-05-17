@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.637333+00:00
+ingested_at: 2026-05-17T08:08:26.329740+00:00
 ingest_version: 1
 content_hash: blake2b:9c8519f1b3675a07a4facad2a6d7caca
-provider_modified_at: 2026-05-16T08:06:34.637333+00:00
+provider_modified_at: 2026-05-17T08:08:26.329740+00:00
 
 title: Ralph | Valory
 slug: ralph-valory
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.637333+00:00
+last_synced: 2026-05-17T08:08:26.329740+00:00
 global: true
 ---
 

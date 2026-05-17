@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.531891+00:00
+ingested_at: 2026-05-17T08:08:26.224603+00:00
 ingest_version: 1
 content_hash: blake2b:1fc6656d779ccbdf4d2af9081b6901fd
-provider_modified_at: 2026-05-16T08:06:34.531891+00:00
+provider_modified_at: 2026-05-17T08:08:26.224603+00:00
 
 title: Kush Desai
 slug: kush-desai
@@ -15,7 +15,7 @@ identifiers:
   email: ["kushkdesai@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.531891+00:00
+last_synced: 2026-05-17T08:08:26.224603+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.566743+00:00
+ingested_at: 2026-05-17T08:08:26.258717+00:00
 ingest_version: 1
 content_hash: blake2b:b5df98000fd374327e216d53e97b4b95
-provider_modified_at: 2026-05-16T08:06:34.566743+00:00
+provider_modified_at: 2026-05-17T08:08:26.258717+00:00
 
 title: Tina HOBY
 slug: tina-hoby
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 830-900-6965"]
   slack: []
-last_synced: 2026-05-16T08:06:34.566743+00:00
+last_synced: 2026-05-17T08:08:26.258717+00:00
 global: true
 ---
 

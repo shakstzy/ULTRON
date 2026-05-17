@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.624087+00:00
+ingested_at: 2026-05-17T08:08:26.316294+00:00
 ingest_version: 1
 content_hash: blake2b:e0e70be8d1ecc47cbf6586b790103860
-provider_modified_at: 2026-05-16T08:06:34.624087+00:00
+provider_modified_at: 2026-05-17T08:08:26.316294+00:00
 
 title: Bibby Grade A LA
 slug: bibby-grade-a-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13122418552"]
   slack: []
-last_synced: 2026-05-16T08:06:34.624087+00:00
+last_synced: 2026-05-17T08:08:26.316294+00:00
 global: true
 ---
 

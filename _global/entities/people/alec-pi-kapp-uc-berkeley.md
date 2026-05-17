@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.607216+00:00
+ingested_at: 2026-05-17T08:08:26.298873+00:00
 ingest_version: 1
 content_hash: blake2b:e26ca7a138da837ec76ffbadb5e4e98d
-provider_modified_at: 2026-05-16T08:06:34.607216+00:00
+provider_modified_at: 2026-05-17T08:08:26.298873+00:00
 
 title: Alec Pi Kapp UC Berkeley
 slug: alec-pi-kapp-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: ["smartalecalec@icloud.com"]
   phone: ["7604576689"]
   slack: []
-last_synced: 2026-05-16T08:06:34.607216+00:00
+last_synced: 2026-05-17T08:08:26.298873+00:00
 global: true
 ---
 

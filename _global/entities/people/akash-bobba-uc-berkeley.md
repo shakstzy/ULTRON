@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.586829+00:00
+ingested_at: 2026-05-17T08:08:26.277796+00:00
 ingest_version: 1
 content_hash: blake2b:1a05857ba7620a0bf880b5afeb7d19ae
-provider_modified_at: 2026-05-16T08:06:34.586829+00:00
+provider_modified_at: 2026-05-17T08:08:26.277796+00:00
 
 title: Akash Bobba UC Berkeley
 slug: akash-bobba-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19173532349"]
   slack: []
-last_synced: 2026-05-16T08:06:34.586829+00:00
+last_synced: 2026-05-17T08:08:26.277796+00:00
 global: true
 ---
 

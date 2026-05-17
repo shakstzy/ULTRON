@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.621304+00:00
+ingested_at: 2026-05-17T08:08:26.313409+00:00
 ingest_version: 1
 content_hash: blake2b:eefc503cbae489f7a65415d972494717
-provider_modified_at: 2026-05-16T08:06:34.621304+00:00
+provider_modified_at: 2026-05-17T08:08:26.313409+00:00
 
 title: Hansika Hinge Austin
 slug: hansika-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15125504329"]
   slack: []
-last_synced: 2026-05-16T08:06:34.621304+00:00
+last_synced: 2026-05-17T08:08:26.313409+00:00
 global: true
 ---
 

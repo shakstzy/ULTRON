@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.544521+00:00
+ingested_at: 2026-05-17T08:08:26.236838+00:00
 ingest_version: 1
 content_hash: blake2b:4bb61d1fe747381fb01d95dd1a8add87
-provider_modified_at: 2026-05-16T08:06:34.544521+00:00
+provider_modified_at: 2026-05-17T08:08:26.236838+00:00
 
 title: Sudhanva Athreya SportsSense
 slug: sudhanva-athreya-sportssense
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 (470) 642-5469"]
   slack: []
-last_synced: 2026-05-16T08:06:34.544521+00:00
+last_synced: 2026-05-17T08:08:26.236838+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.526267+00:00
+ingested_at: 2026-05-17T08:08:26.219311+00:00
 ingest_version: 1
 content_hash: blake2b:72cfde99cb6ccae2bb567f1da2b7cad0
-provider_modified_at: 2026-05-16T08:06:34.526267+00:00
+provider_modified_at: 2026-05-17T08:08:26.219311+00:00
 
 title: George Linderman YALE
 slug: george-linderman-yale
@@ -15,7 +15,7 @@ identifiers:
   email: ["george.linderman@yale.edu"]
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.526267+00:00
+last_synced: 2026-05-17T08:08:26.219311+00:00
 global: true
 ---
 

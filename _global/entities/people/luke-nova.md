@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.642111+00:00
+ingested_at: 2026-05-17T08:08:26.334680+00:00
 ingest_version: 1
 content_hash: blake2b:bfe2f1e0db34586910b62e30936af977
-provider_modified_at: 2026-05-16T08:06:34.642111+00:00
+provider_modified_at: 2026-05-17T08:08:26.334680+00:00
 
 title: Luke Nova
 slug: luke-nova
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19722566131"]
   slack: []
-last_synced: 2026-05-16T08:06:34.642111+00:00
+last_synced: 2026-05-17T08:08:26.334680+00:00
 global: true
 ---
 

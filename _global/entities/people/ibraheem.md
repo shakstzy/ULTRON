@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.617875+00:00
+ingested_at: 2026-05-17T08:08:26.309987+00:00
 ingest_version: 1
 content_hash: blake2b:12361148974fb04a66074dada04cb79a
-provider_modified_at: 2026-05-16T08:06:34.617875+00:00
+provider_modified_at: 2026-05-17T08:08:26.309987+00:00
 
 title: Ibraheem
 slug: ibraheem
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-961-0142"]
   slack: []
-last_synced: 2026-05-16T08:06:34.617875+00:00
+last_synced: 2026-05-17T08:08:26.309987+00:00
 global: true
 ---
 

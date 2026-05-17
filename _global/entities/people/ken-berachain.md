@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.656083+00:00
+ingested_at: 2026-05-17T08:08:26.349824+00:00
 ingest_version: 1
 content_hash: blake2b:86704c7594c0d1e244dc17fa10aa6e35
-provider_modified_at: 2026-05-16T08:06:34.656083+00:00
+provider_modified_at: 2026-05-17T08:08:26.349824+00:00
 
 title: Ken | Berachain
 slug: ken-berachain
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.656083+00:00
+last_synced: 2026-05-17T08:08:26.349824+00:00
 global: true
 ---
 

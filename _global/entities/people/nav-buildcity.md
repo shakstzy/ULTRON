@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.621242+00:00
+ingested_at: 2026-05-17T08:08:26.313340+00:00
 ingest_version: 1
 content_hash: blake2b:637b51ebb3cff223fb4b5d0b64689d3e
-provider_modified_at: 2026-05-16T08:06:34.621242+00:00
+provider_modified_at: 2026-05-17T08:08:26.313340+00:00
 
 title: Nav | BuildCity
 slug: nav-buildcity
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 201-275-7410"]
   slack: []
-last_synced: 2026-05-16T08:06:34.621242+00:00
+last_synced: 2026-05-17T08:08:26.313340+00:00
 global: true
 ---
 

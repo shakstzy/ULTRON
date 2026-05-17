@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.625337+00:00
+ingested_at: 2026-05-17T08:08:26.317485+00:00
 ingest_version: 1
 content_hash: blake2b:0a880542650a27f3d13b31e7611f254b
-provider_modified_at: 2026-05-16T08:06:34.625337+00:00
+provider_modified_at: 2026-05-17T08:08:26.317485+00:00
 
 title: Sam McGrath LA
 slug: sam-mcgrath-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17742653259"]
   slack: []
-last_synced: 2026-05-16T08:06:34.625337+00:00
+last_synced: 2026-05-17T08:08:26.317485+00:00
 global: true
 ---
 

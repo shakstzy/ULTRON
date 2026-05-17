@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.610152+00:00
+ingested_at: 2026-05-17T08:08:26.301739+00:00
 ingest_version: 1
 content_hash: blake2b:03d1a91529af413f390f88c593d387f1
-provider_modified_at: 2026-05-16T08:06:34.610152+00:00
+provider_modified_at: 2026-05-17T08:08:26.301739+00:00
 
 title: Usha Manju Aunty Bay Area
 slug: usha-manju-aunty-bay-area
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14084765778"]
   slack: []
-last_synced: 2026-05-16T08:06:34.610152+00:00
+last_synced: 2026-05-17T08:08:26.301739+00:00
 global: true
 ---
 

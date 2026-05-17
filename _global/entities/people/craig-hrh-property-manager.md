@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.657442+00:00
+ingested_at: 2026-05-17T08:08:26.351147+00:00
 ingest_version: 1
 content_hash: blake2b:672b7b397462e36990491e5abea19622
-provider_modified_at: 2026-05-16T08:06:34.657442+00:00
+provider_modified_at: 2026-05-17T08:08:26.351147+00:00
 
 title: Craig HRH Property Manager
 slug: craig-hrh-property-manager
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15122039976"]
   slack: []
-last_synced: 2026-05-16T08:06:34.657442+00:00
+last_synced: 2026-05-17T08:08:26.351147+00:00
 global: true
 ---
 

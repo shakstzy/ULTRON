@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.504053+00:00
+ingested_at: 2026-05-17T08:08:26.199477+00:00
 ingest_version: 1
 content_hash: blake2b:31aa970f9b47c11e5d5f14c88633f68b
-provider_modified_at: 2026-05-16T08:06:34.504053+00:00
+provider_modified_at: 2026-05-17T08:08:26.199477+00:00
 
 title: Rishika Dad
 slug: rishika-dad
@@ -15,7 +15,7 @@ identifiers:
   email: ["kajal07@yahoo.com"]
   phone: ["+16143781619"]
   slack: []
-last_synced: 2026-05-16T08:06:34.504053+00:00
+last_synced: 2026-05-17T08:08:26.199477+00:00
 global: true
 ---
 

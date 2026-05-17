@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.556631+00:00
+ingested_at: 2026-05-17T08:08:26.249462+00:00
 ingest_version: 1
 content_hash: blake2b:b46219cf6d7016d7ef5536e03e16c278
-provider_modified_at: 2026-05-16T08:06:34.556631+00:00
+provider_modified_at: 2026-05-17T08:08:26.249462+00:00
 
 title: Sansita Hinge LA
 slug: sansita-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14244457736"]
   slack: []
-last_synced: 2026-05-16T08:06:34.556631+00:00
+last_synced: 2026-05-17T08:08:26.249462+00:00
 global: true
 ---
 

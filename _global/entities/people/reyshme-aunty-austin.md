@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.573830+00:00
+ingested_at: 2026-05-17T08:08:26.264683+00:00
 ingest_version: 1
 content_hash: blake2b:e18368196a72bed87b463002432ab31d
-provider_modified_at: 2026-05-16T08:06:34.573830+00:00
+provider_modified_at: 2026-05-17T08:08:26.264683+00:00
 
 title: Reyshme Aunty Austin
 slug: reyshme-aunty-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18034743337"]
   slack: []
-last_synced: 2026-05-16T08:06:34.573830+00:00
+last_synced: 2026-05-17T08:08:26.264683+00:00
 global: true
 ---
 

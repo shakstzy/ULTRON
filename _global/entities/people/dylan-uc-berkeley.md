@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.545260+00:00
+ingested_at: 2026-05-17T08:08:26.237634+00:00
 ingest_version: 1
 content_hash: blake2b:657c86488c86f18380562588c43b56b8
-provider_modified_at: 2026-05-16T08:06:34.545260+00:00
+provider_modified_at: 2026-05-17T08:08:26.237634+00:00
 
 title: Dylan UC Berkeley
 slug: dylan-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1-510-926-2613"]
   slack: []
-last_synced: 2026-05-16T08:06:34.545260+00:00
+last_synced: 2026-05-17T08:08:26.237634+00:00
 global: true
 ---
 

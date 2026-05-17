@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.593714+00:00
+ingested_at: 2026-05-17T08:08:26.284823+00:00
 ingest_version: 1
 content_hash: blake2b:ae39cf63e88fabac9d04f983627660b5
-provider_modified_at: 2026-05-16T08:06:34.593714+00:00
+provider_modified_at: 2026-05-17T08:08:26.284823+00:00
 
 title: Neema Amya
 slug: neema-amya
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17147677736"]
   slack: []
-last_synced: 2026-05-16T08:06:34.593714+00:00
+last_synced: 2026-05-17T08:08:26.284823+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.597969+00:00
+ingested_at: 2026-05-17T08:08:26.289260+00:00
 ingest_version: 1
 content_hash: blake2b:8124e24710e080e81cb4727182b7b8d2
-provider_modified_at: 2026-05-16T08:06:34.597969+00:00
+provider_modified_at: 2026-05-17T08:08:26.289260+00:00
 
 title: Grettel Granados
 slug: grettel-granados
@@ -15,7 +15,7 @@ identifiers:
   email: ["grettel.granados@austinisd.org", "Grettel.Granados@austinisd.org"]
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.597969+00:00
+last_synced: 2026-05-17T08:08:26.289260+00:00
 global: true
 ---
 

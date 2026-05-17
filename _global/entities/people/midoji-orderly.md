@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.610367+00:00
+ingested_at: 2026-05-17T08:08:26.301946+00:00
 ingest_version: 1
 content_hash: blake2b:3ba7e816b6c6724883d86910ec2cab79
-provider_modified_at: 2026-05-16T08:06:34.610367+00:00
+provider_modified_at: 2026-05-17T08:08:26.301946+00:00
 
 title: Midoji | Orderly
 slug: midoji-orderly
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.610367+00:00
+last_synced: 2026-05-17T08:08:26.301946+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.650348+00:00
+ingested_at: 2026-05-17T08:08:26.344345+00:00
 ingest_version: 1
 content_hash: blake2b:fc8ad2c30efdadccf1aa968d1ff89118
-provider_modified_at: 2026-05-16T08:06:34.650348+00:00
+provider_modified_at: 2026-05-17T08:08:26.344345+00:00
 
 title: Venu Uncle Austin Rohit VC
 slug: venu-uncle-austin-rohit-vc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15124135886"]
   slack: []
-last_synced: 2026-05-16T08:06:34.650348+00:00
+last_synced: 2026-05-17T08:08:26.344345+00:00
 global: true
 ---
 

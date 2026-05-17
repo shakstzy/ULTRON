@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.619520+00:00
+ingested_at: 2026-05-17T08:08:26.311627+00:00
 ingest_version: 1
 content_hash: blake2b:6e50890e5876c137ea39b94ac3c15ac9
-provider_modified_at: 2026-05-16T08:06:34.619520+00:00
+provider_modified_at: 2026-05-17T08:08:26.311627+00:00
 
 title: Andy Alajuani
 slug: andy-alajuani
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14087028739"]
   slack: []
-last_synced: 2026-05-16T08:06:34.619520+00:00
+last_synced: 2026-05-17T08:08:26.311627+00:00
 global: true
 ---
 

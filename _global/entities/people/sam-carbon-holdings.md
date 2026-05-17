@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.527788+00:00
+ingested_at: 2026-05-17T08:08:26.220681+00:00
 ingest_version: 1
 content_hash: blake2b:48312d0bb397e3cdb731787835c0521d
-provider_modified_at: 2026-05-16T08:06:34.527788+00:00
+provider_modified_at: 2026-05-17T08:08:26.220681+00:00
 
 title: Sam CARBON Holdings
 slug: sam-carbon-holdings
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 404-405-5720"]
   slack: []
-last_synced: 2026-05-16T08:06:34.527788+00:00
+last_synced: 2026-05-17T08:08:26.220681+00:00
 global: true
 ---
 

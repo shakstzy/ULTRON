@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.535318+00:00
+ingested_at: 2026-05-17T08:08:26.227664+00:00
 ingest_version: 1
 content_hash: blake2b:3b9c01f8367b7cc86b62f6512d0f7e03
-provider_modified_at: 2026-05-16T08:06:34.535318+00:00
+provider_modified_at: 2026-05-17T08:08:26.227664+00:00
 
 title: Chris Crypto Penn
 slug: chris-crypto-penn
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17244227594"]
   slack: []
-last_synced: 2026-05-16T08:06:34.535318+00:00
+last_synced: 2026-05-17T08:08:26.227664+00:00
 global: true
 ---
 

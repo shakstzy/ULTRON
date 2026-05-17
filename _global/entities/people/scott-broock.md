@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.589309+00:00
+ingested_at: 2026-05-17T08:08:26.280407+00:00
 ingest_version: 1
 content_hash: blake2b:b6fa788b7b21be6df9ed3508ed622822
-provider_modified_at: 2026-05-16T08:06:34.589309+00:00
+provider_modified_at: 2026-05-17T08:08:26.280407+00:00
 
 title: Scott Broock
 slug: scott-broock
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(646) 773-2259"]
   slack: []
-last_synced: 2026-05-16T08:06:34.589309+00:00
+last_synced: 2026-05-17T08:08:26.280407+00:00
 global: true
 ---
 

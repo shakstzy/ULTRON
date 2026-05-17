@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.672074+00:00
+ingested_at: 2026-05-17T08:08:26.366168+00:00
 ingest_version: 1
 content_hash: blake2b:44153cb37edaece51fbaf72e7e1af571
-provider_modified_at: 2026-05-16T08:06:34.672074+00:00
+provider_modified_at: 2026-05-17T08:08:26.366168+00:00
 
 title: Stacey Brandon
 slug: stacey-brandon
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 310-435-3309"]
   slack: []
-last_synced: 2026-05-16T08:06:34.672074+00:00
+last_synced: 2026-05-17T08:08:26.366168+00:00
 global: true
 ---
 

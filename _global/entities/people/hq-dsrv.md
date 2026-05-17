@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.637666+00:00
+ingested_at: 2026-05-17T08:08:26.330070+00:00
 ingest_version: 1
 content_hash: blake2b:0b8dd08df2966de170205343d6da423e
-provider_modified_at: 2026-05-16T08:06:34.637666+00:00
+provider_modified_at: 2026-05-17T08:08:26.330070+00:00
 
 title: HQ | DSRV
 slug: hq-dsrv
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+82 10-8875-9371"]
   slack: []
-last_synced: 2026-05-16T08:06:34.637666+00:00
+last_synced: 2026-05-17T08:08:26.330070+00:00
 global: true
 ---
 

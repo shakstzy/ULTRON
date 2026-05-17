@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.657980+00:00
+ingested_at: 2026-05-17T08:08:26.351654+00:00
 ingest_version: 1
 content_hash: blake2b:79243e0ab83d206ff81274c0c0c97f33
-provider_modified_at: 2026-05-16T08:06:34.657980+00:00
+provider_modified_at: 2026-05-17T08:08:26.351654+00:00
 
 title: Jarrod Gipson Producer Nashville LA
 slug: jarrod-gipson-producer-nashville-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17196406338"]
   slack: []
-last_synced: 2026-05-16T08:06:34.657980+00:00
+last_synced: 2026-05-17T08:08:26.351654+00:00
 global: true
 ---
 

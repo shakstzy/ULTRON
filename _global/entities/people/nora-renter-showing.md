@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.538386+00:00
+ingested_at: 2026-05-17T08:08:26.230486+00:00
 ingest_version: 1
 content_hash: blake2b:bbaa9a2047661dfc6236352780588b9b
-provider_modified_at: 2026-05-16T08:06:34.538386+00:00
+provider_modified_at: 2026-05-17T08:08:26.230486+00:00
 
 title: Nora Renter Showing
 slug: nora-renter-showing
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18189327867"]
   slack: []
-last_synced: 2026-05-16T08:06:34.538386+00:00
+last_synced: 2026-05-17T08:08:26.230486+00:00
 global: true
 ---
 

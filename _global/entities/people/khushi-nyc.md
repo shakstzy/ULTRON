@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.578183+00:00
+ingested_at: 2026-05-17T08:08:26.268877+00:00
 ingest_version: 1
 content_hash: blake2b:495e9ea249b6c774596fe2b3e37f231f
-provider_modified_at: 2026-05-16T08:06:34.578183+00:00
+provider_modified_at: 2026-05-17T08:08:26.268877+00:00
 
 title: Khushi NYC
 slug: khushi-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19512357217"]
   slack: []
-last_synced: 2026-05-16T08:06:34.578183+00:00
+last_synced: 2026-05-17T08:08:26.268877+00:00
 global: true
 ---
 

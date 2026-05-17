@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.558618+00:00
+ingested_at: 2026-05-17T08:08:26.251283+00:00
 ingest_version: 1
 content_hash: blake2b:c18b8fe2928331d59089c9a157d3e566
-provider_modified_at: 2026-05-16T08:06:34.558618+00:00
+provider_modified_at: 2026-05-17T08:08:26.251283+00:00
 
 title: Nathan Johndrow
 slug: nathan-johndrow
@@ -15,7 +15,7 @@ identifiers:
   email: ["nathan.johndrow@leanderisd.org"]
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.558618+00:00
+last_synced: 2026-05-17T08:08:26.251283+00:00
 global: true
 ---
 

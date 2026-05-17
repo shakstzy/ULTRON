@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.675826+00:00
+ingested_at: 2026-05-17T08:08:26.369924+00:00
 ingest_version: 1
 content_hash: blake2b:764541aa5c03e4d41e6e08731f15289c
-provider_modified_at: 2026-05-16T08:06:34.675826+00:00
+provider_modified_at: 2026-05-17T08:08:26.369924+00:00
 
 title: Nidhi Hinge NYC
 slug: nidhi-hinge-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19739087347"]
   slack: []
-last_synced: 2026-05-16T08:06:34.675826+00:00
+last_synced: 2026-05-17T08:08:26.369924+00:00
 global: true
 ---
 

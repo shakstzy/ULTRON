@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.544313+00:00
+ingested_at: 2026-05-17T08:08:26.236614+00:00
 ingest_version: 1
 content_hash: blake2b:c92c3727e082d75cd84257a7f6b6d022
-provider_modified_at: 2026-05-16T08:06:34.544313+00:00
+provider_modified_at: 2026-05-17T08:08:26.236614+00:00
 
 title: Venilla UC Berkeley
 slug: venilla-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15105169580"]
   slack: []
-last_synced: 2026-05-16T08:06:34.544313+00:00
+last_synced: 2026-05-17T08:08:26.236614+00:00
 global: true
 ---
 

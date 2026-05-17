@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.596711+00:00
+ingested_at: 2026-05-17T08:08:26.288051+00:00
 ingest_version: 1
 content_hash: blake2b:4cd3d2e127d68a9085b3182248da52d5
-provider_modified_at: 2026-05-16T08:06:34.596711+00:00
+provider_modified_at: 2026-05-17T08:08:26.288051+00:00
 
 title: Sriranjani Marreddy
 slug: sriranjani-marreddy
@@ -15,7 +15,7 @@ identifiers:
   email: ["srisrimann@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.596711+00:00
+last_synced: 2026-05-17T08:08:26.288051+00:00
 global: true
 ---
 

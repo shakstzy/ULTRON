@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.552101+00:00
+ingested_at: 2026-05-17T08:08:26.244933+00:00
 ingest_version: 1
 content_hash: blake2b:c6350f409f0e82f08f98945c75aa77db
-provider_modified_at: 2026-05-16T08:06:34.552101+00:00
+provider_modified_at: 2026-05-17T08:08:26.244933+00:00
 
 title: Ernestina Renter Showing
 slug: ernestina-renter-showing
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17474659055"]
   slack: []
-last_synced: 2026-05-16T08:06:34.552101+00:00
+last_synced: 2026-05-17T08:08:26.244933+00:00
 global: true
 ---
 

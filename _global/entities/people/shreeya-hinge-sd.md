@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.648227+00:00
+ingested_at: 2026-05-17T08:08:26.342016+00:00
 ingest_version: 1
 content_hash: blake2b:b3a34d59f546117404fd69eba7f2ffd2
-provider_modified_at: 2026-05-16T08:06:34.648227+00:00
+provider_modified_at: 2026-05-17T08:08:26.342016+00:00
 
 title: Shreeya Hinge SD
 slug: shreeya-hinge-sd
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16693008872"]
   slack: []
-last_synced: 2026-05-16T08:06:34.648227+00:00
+last_synced: 2026-05-17T08:08:26.342016+00:00
 global: true
 ---
 

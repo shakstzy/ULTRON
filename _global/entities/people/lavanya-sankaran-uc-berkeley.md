@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.662502+00:00
+ingested_at: 2026-05-17T08:08:26.356290+00:00
 ingest_version: 1
 content_hash: blake2b:f447756d464f1688629f7d101e67018f
-provider_modified_at: 2026-05-16T08:06:34.662502+00:00
+provider_modified_at: 2026-05-17T08:08:26.356290+00:00
 
 title: Lavanya Sankaran UC Berkeley
 slug: lavanya-sankaran-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-660-0544"]
   slack: []
-last_synced: 2026-05-16T08:06:34.662502+00:00
+last_synced: 2026-05-17T08:08:26.356290+00:00
 global: true
 ---
 

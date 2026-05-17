@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.575534+00:00
+ingested_at: 2026-05-17T08:08:26.266246+00:00
 ingest_version: 1
 content_hash: blake2b:9b1c965e85fe18bf13cc0ad266c86c15
-provider_modified_at: 2026-05-16T08:06:34.575534+00:00
+provider_modified_at: 2026-05-17T08:08:26.266246+00:00
 
 title: Junior Marketplace
 slug: junior-marketplace
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17372727862"]
   slack: []
-last_synced: 2026-05-16T08:06:34.575534+00:00
+last_synced: 2026-05-17T08:08:26.266246+00:00
 global: true
 ---
 

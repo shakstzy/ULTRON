@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.670480+00:00
+ingested_at: 2026-05-17T08:08:26.364511+00:00
 ingest_version: 1
 content_hash: blake2b:0da49aeabf3c33b5c8e2363d8f4123d1
-provider_modified_at: 2026-05-16T08:06:34.670480+00:00
+provider_modified_at: 2026-05-17T08:08:26.364511+00:00
 
 title: Akhila Hinge NYC
 slug: akhila-hinge-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16307314352"]
   slack: []
-last_synced: 2026-05-16T08:06:34.670480+00:00
+last_synced: 2026-05-17T08:08:26.364511+00:00
 global: true
 ---
 

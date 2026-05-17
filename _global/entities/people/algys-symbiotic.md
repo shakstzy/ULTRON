@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.668567+00:00
+ingested_at: 2026-05-17T08:08:26.362867+00:00
 ingest_version: 1
 content_hash: blake2b:01a67170d5da74f5e352a5648444141f
-provider_modified_at: 2026-05-16T08:06:34.668567+00:00
+provider_modified_at: 2026-05-17T08:08:26.362867+00:00
 
 title: Algys | Symbiotic
 slug: algys-symbiotic
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.668567+00:00
+last_synced: 2026-05-17T08:08:26.362867+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.559292+00:00
+ingested_at: 2026-05-17T08:08:26.251841+00:00
 ingest_version: 1
 content_hash: blake2b:edb3058d7263f540d4a587ddbae11c97
-provider_modified_at: 2026-05-16T08:06:34.559292+00:00
+provider_modified_at: 2026-05-17T08:08:26.251841+00:00
 
 title: Aryan Goyal UC Berkeley
 slug: aryan-goyal-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["4089664594"]
   slack: []
-last_synced: 2026-05-16T08:06:34.559292+00:00
+last_synced: 2026-05-17T08:08:26.251841+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.671819+00:00
+ingested_at: 2026-05-17T08:08:26.365918+00:00
 ingest_version: 1
 content_hash: blake2b:c715f7aadd8754fe45f9b3ba34454a27
-provider_modified_at: 2026-05-16T08:06:34.671819+00:00
+provider_modified_at: 2026-05-17T08:08:26.365918+00:00
 
 title: Geshna Philly
 slug: geshna-philly
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14258777380"]
   slack: []
-last_synced: 2026-05-16T08:06:34.671819+00:00
+last_synced: 2026-05-17T08:08:26.365918+00:00
 global: true
 ---
 

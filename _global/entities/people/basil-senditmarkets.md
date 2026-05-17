@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.535247+00:00
+ingested_at: 2026-05-17T08:08:26.227599+00:00
 ingest_version: 1
 content_hash: blake2b:c18c00820b6dea0fc569c76da7c97dba
-provider_modified_at: 2026-05-16T08:06:34.535247+00:00
+provider_modified_at: 2026-05-17T08:08:26.227599+00:00
 
 title: Basil | SendItMarkets
 slug: basil-senditmarkets
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 516-356-0657"]
   slack: []
-last_synced: 2026-05-16T08:06:34.535247+00:00
+last_synced: 2026-05-17T08:08:26.227599+00:00
 global: true
 ---
 

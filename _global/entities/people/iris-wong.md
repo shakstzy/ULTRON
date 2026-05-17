@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.599821+00:00
+ingested_at: 2026-05-17T08:08:26.291213+00:00
 ingest_version: 1
 content_hash: blake2b:8c4b9172e2bd7187a06ccc97b7142ab2
-provider_modified_at: 2026-05-16T08:06:34.599821+00:00
+provider_modified_at: 2026-05-17T08:08:26.291213+00:00
 
 title: Iris Wong
 slug: iris-wong
@@ -15,7 +15,7 @@ identifiers:
   email: ["citrine19@gmail.com"]
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.599821+00:00
+last_synced: 2026-05-17T08:08:26.291213+00:00
 global: true
 ---
 

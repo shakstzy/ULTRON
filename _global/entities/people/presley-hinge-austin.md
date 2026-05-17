@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.621373+00:00
+ingested_at: 2026-05-17T08:08:26.313478+00:00
 ingest_version: 1
 content_hash: blake2b:f851b09ca7da4b0dab0f906ea6e7ff55
-provider_modified_at: 2026-05-16T08:06:34.621373+00:00
+provider_modified_at: 2026-05-17T08:08:26.313478+00:00
 
 title: Presley Hinge Austin
 slug: presley-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15125214828"]
   slack: []
-last_synced: 2026-05-16T08:06:34.621373+00:00
+last_synced: 2026-05-17T08:08:26.313478+00:00
 global: true
 ---
 

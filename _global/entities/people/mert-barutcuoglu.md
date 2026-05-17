@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.550806+00:00
+ingested_at: 2026-05-17T08:08:26.243578+00:00
 ingest_version: 1
 content_hash: blake2b:16bad77f4fe8b7c0ffad0f4a43fb7963
-provider_modified_at: 2026-05-16T08:06:34.550806+00:00
+provider_modified_at: 2026-05-17T08:08:26.243578+00:00
 
 title: Mert Barutcuoglu
 slug: mert-barutcuoglu
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+905335957015"]
   slack: []
-last_synced: 2026-05-16T08:06:34.550806+00:00
+last_synced: 2026-05-17T08:08:26.243578+00:00
 global: true
 ---
 

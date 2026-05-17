@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.578045+00:00
+ingested_at: 2026-05-17T08:08:26.268742+00:00
 ingest_version: 1
 content_hash: blake2b:472c5d73c51dc9c7aa080cd98c837997
-provider_modified_at: 2026-05-16T08:06:34.578045+00:00
+provider_modified_at: 2026-05-17T08:08:26.268742+00:00
 
 title: Derek Zhu UC Berkeley
 slug: derek-zhu-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15107668956"]
   slack: []
-last_synced: 2026-05-16T08:06:34.578045+00:00
+last_synced: 2026-05-17T08:08:26.268742+00:00
 global: true
 ---
 

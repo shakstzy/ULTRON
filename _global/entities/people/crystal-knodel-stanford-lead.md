@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.550269+00:00
+ingested_at: 2026-05-17T08:08:26.243041+00:00
 ingest_version: 1
 content_hash: blake2b:ee8e487e60a81e45b144f2436b3f61bd
-provider_modified_at: 2026-05-16T08:06:34.550269+00:00
+provider_modified_at: 2026-05-17T08:08:26.243041+00:00
 
 title: Crystal Knodel Stanford LEAD
 slug: crystal-knodel-stanford-lead
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18572030939"]
   slack: []
-last_synced: 2026-05-16T08:06:34.550269+00:00
+last_synced: 2026-05-17T08:08:26.243041+00:00
 global: true
 ---
 

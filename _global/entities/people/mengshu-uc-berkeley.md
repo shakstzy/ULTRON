@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.646480+00:00
+ingested_at: 2026-05-17T08:08:26.340272+00:00
 ingest_version: 1
 content_hash: blake2b:bb7db11a04eba28ff09bc022e80e800f
-provider_modified_at: 2026-05-16T08:06:34.646480+00:00
+provider_modified_at: 2026-05-17T08:08:26.340272+00:00
 
 title: Mengshu UC Berkeley
 slug: mengshu-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19493455075"]
   slack: []
-last_synced: 2026-05-16T08:06:34.646480+00:00
+last_synced: 2026-05-17T08:08:26.340272+00:00
 global: true
 ---
 

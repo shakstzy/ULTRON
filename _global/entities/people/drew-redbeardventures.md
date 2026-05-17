@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.540797+00:00
+ingested_at: 2026-05-17T08:08:26.232838+00:00
 ingest_version: 1
 content_hash: blake2b:5aa764a9542d3f1564b799e5cc891aa6
-provider_modified_at: 2026-05-16T08:06:34.540797+00:00
+provider_modified_at: 2026-05-17T08:08:26.232838+00:00
 
 title: Drew | RedBeardVentures
 slug: drew-redbeardventures
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 516-644-0630"]
   slack: []
-last_synced: 2026-05-16T08:06:34.540797+00:00
+last_synced: 2026-05-17T08:08:26.232838+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.646218+00:00
+ingested_at: 2026-05-17T08:08:26.339992+00:00
 ingest_version: 1
 content_hash: blake2b:49c25f5d06b58296f59a563688ea8e29
-provider_modified_at: 2026-05-16T08:06:34.646218+00:00
+provider_modified_at: 2026-05-17T08:08:26.339992+00:00
 
 title: James Herrigel
 slug: james-herrigel
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 773-704-7808"]
   slack: []
-last_synced: 2026-05-16T08:06:34.646218+00:00
+last_synced: 2026-05-17T08:08:26.339992+00:00
 global: true
 ---
 

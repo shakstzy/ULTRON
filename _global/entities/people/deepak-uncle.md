@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.578748+00:00
+ingested_at: 2026-05-17T08:08:26.269350+00:00
 ingest_version: 1
 content_hash: blake2b:a87797b3d402cdaf521bae88e148199d
-provider_modified_at: 2026-05-16T08:06:34.578748+00:00
+provider_modified_at: 2026-05-17T08:08:26.269350+00:00
 
 title: Deepak Uncle
 slug: deepak-uncle
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(210) 284-7311"]
   slack: []
-last_synced: 2026-05-16T08:06:34.578748+00:00
+last_synced: 2026-05-17T08:08:26.269350+00:00
 global: true
 ---
 

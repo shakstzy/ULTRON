@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.665505+00:00
+ingested_at: 2026-05-17T08:08:26.359306+00:00
 ingest_version: 1
 content_hash: blake2b:5a5075d9b5f5d7715a4c1c9cbdc0267b
-provider_modified_at: 2026-05-16T08:06:34.665505+00:00
+provider_modified_at: 2026-05-17T08:08:26.359306+00:00
 
 title: Sid | Sentient
 slug: sid-sentient
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.665505+00:00
+last_synced: 2026-05-17T08:08:26.359306+00:00
 global: true
 ---
 

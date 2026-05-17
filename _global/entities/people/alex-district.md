@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.626793+00:00
+ingested_at: 2026-05-17T08:08:26.318948+00:00
 ingest_version: 1
 content_hash: blake2b:6f3ece44e4313ebb1786581928ce9a20
-provider_modified_at: 2026-05-16T08:06:34.626793+00:00
+provider_modified_at: 2026-05-17T08:08:26.318948+00:00
 
 title: Alex | District
 slug: alex-district
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 703-314-8204"]
   slack: []
-last_synced: 2026-05-16T08:06:34.626793+00:00
+last_synced: 2026-05-17T08:08:26.318948+00:00
 global: true
 ---
 

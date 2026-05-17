@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.637863+00:00
+ingested_at: 2026-05-17T08:08:26.330278+00:00
 ingest_version: 1
 content_hash: blake2b:82286329db6b4ed00f6b38624ab71558
-provider_modified_at: 2026-05-16T08:06:34.637863+00:00
+provider_modified_at: 2026-05-17T08:08:26.330278+00:00
 
 title: Randy Mychal Kendricks NYC
 slug: randy-mychal-kendricks-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16266232946"]
   slack: []
-last_synced: 2026-05-16T08:06:34.637863+00:00
+last_synced: 2026-05-17T08:08:26.330278+00:00
 global: true
 ---
 

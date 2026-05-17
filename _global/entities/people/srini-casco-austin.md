@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.672827+00:00
+ingested_at: 2026-05-17T08:08:26.366927+00:00
 ingest_version: 1
 content_hash: blake2b:38222ff9e1a8c6b65a5c422776577245
-provider_modified_at: 2026-05-16T08:06:34.672827+00:00
+provider_modified_at: 2026-05-17T08:08:26.366927+00:00
 
 title: Srini Casco Austin
 slug: srini-casco-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19797030578"]
   slack: []
-last_synced: 2026-05-16T08:06:34.672827+00:00
+last_synced: 2026-05-17T08:08:26.366927+00:00
 global: true
 ---
 

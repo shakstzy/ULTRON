@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.544173+00:00
+ingested_at: 2026-05-17T08:08:26.236471+00:00
 ingest_version: 1
 content_hash: blake2b:15146791362915c7fbd0186697f73499
-provider_modified_at: 2026-05-16T08:06:34.544173+00:00
+provider_modified_at: 2026-05-17T08:08:26.236471+00:00
 
 title: Nidhir Guggila UC Berkeley
 slug: nidhir-guggila-uc-berkeley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 408-705-7310"]
   slack: []
-last_synced: 2026-05-16T08:06:34.544173+00:00
+last_synced: 2026-05-17T08:08:26.236471+00:00
 global: true
 ---
 

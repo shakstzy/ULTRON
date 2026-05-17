@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.526740+00:00
+ingested_at: 2026-05-17T08:08:26.219700+00:00
 ingest_version: 1
 content_hash: blake2b:fa3b5efe035a9715cbfc31f3d94e2157
-provider_modified_at: 2026-05-16T08:06:34.526740+00:00
+provider_modified_at: 2026-05-17T08:08:26.219700+00:00
 
 title: Peter Fenn LA
 slug: peter-fenn-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+17607022136"]
   slack: []
-last_synced: 2026-05-16T08:06:34.526740+00:00
+last_synced: 2026-05-17T08:08:26.219700+00:00
 global: true
 ---
 

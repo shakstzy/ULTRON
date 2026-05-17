@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.624822+00:00
+ingested_at: 2026-05-17T08:08:26.316980+00:00
 ingest_version: 1
 content_hash: blake2b:16c2ed04ca5dd50212bc9b4ab04dc98b
-provider_modified_at: 2026-05-16T08:06:34.624822+00:00
+provider_modified_at: 2026-05-17T08:08:26.316980+00:00
 
 title: Roy | LongHash
 slug: roy-longhash
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.624822+00:00
+last_synced: 2026-05-17T08:08:26.316980+00:00
 global: true
 ---
 

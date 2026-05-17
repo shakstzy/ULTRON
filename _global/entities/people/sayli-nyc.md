@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.599003+00:00
+ingested_at: 2026-05-17T08:08:26.290292+00:00
 ingest_version: 1
 content_hash: blake2b:ea2c5d1428a5eae204e76d8737401d49
-provider_modified_at: 2026-05-16T08:06:34.599003+00:00
+provider_modified_at: 2026-05-17T08:08:26.290292+00:00
 
 title: Sayli NYC
 slug: sayli-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19088680802"]
   slack: []
-last_synced: 2026-05-16T08:06:34.599003+00:00
+last_synced: 2026-05-17T08:08:26.290292+00:00
 global: true
 ---
 

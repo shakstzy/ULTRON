@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.591246+00:00
+ingested_at: 2026-05-17T08:08:26.282359+00:00
 ingest_version: 1
 content_hash: blake2b:a6a1f344fbc3230ef6e3f4e3ea52b974
-provider_modified_at: 2026-05-16T08:06:34.591246+00:00
+provider_modified_at: 2026-05-17T08:08:26.282359+00:00
 
 title: Kanishk | Across
 slug: kanishk-across
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.591246+00:00
+last_synced: 2026-05-17T08:08:26.282359+00:00
 global: true
 ---
 

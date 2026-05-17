@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.557002+00:00
+ingested_at: 2026-05-17T08:08:26.249781+00:00
 ingest_version: 1
 content_hash: blake2b:17b1a67391133b80a3e2ed9f0dbf665d
-provider_modified_at: 2026-05-16T08:06:34.557002+00:00
+provider_modified_at: 2026-05-17T08:08:26.249781+00:00
 
 title: Andrew Kim
 slug: andrew-kim
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 (408) 771-8624"]
   slack: []
-last_synced: 2026-05-16T08:06:34.557002+00:00
+last_synced: 2026-05-17T08:08:26.249781+00:00
 global: true
 ---
 

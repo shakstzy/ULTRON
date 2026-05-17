@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.643433+00:00
+ingested_at: 2026-05-17T08:08:26.337138+00:00
 ingest_version: 1
 content_hash: blake2b:c8c51b083792d19765c97ec7af480f6f
-provider_modified_at: 2026-05-16T08:06:34.643433+00:00
+provider_modified_at: 2026-05-17T08:08:26.337138+00:00
 
 title: Rachel
 slug: rachel
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-954-5255"]
   slack: []
-last_synced: 2026-05-16T08:06:34.643433+00:00
+last_synced: 2026-05-17T08:08:26.337138+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.663384+00:00
+ingested_at: 2026-05-17T08:08:26.357169+00:00
 ingest_version: 1
 content_hash: blake2b:33480f3f43bd9a01d31b3132d71606dd
-provider_modified_at: 2026-05-16T08:06:34.663384+00:00
+provider_modified_at: 2026-05-17T08:08:26.357169+00:00
 
 title: Dave | BitGo
 slug: dave-bitgo
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 925-494-1211"]
   slack: []
-last_synced: 2026-05-16T08:06:34.663384+00:00
+last_synced: 2026-05-17T08:08:26.357169+00:00
 global: true
 ---
 

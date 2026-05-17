@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.676683+00:00
+ingested_at: 2026-05-17T08:08:26.370762+00:00
 ingest_version: 1
 content_hash: blake2b:7182462acf26c52d687625c45e746e92
-provider_modified_at: 2026-05-16T08:06:34.676683+00:00
+provider_modified_at: 2026-05-17T08:08:26.370762+00:00
 
 title: Nico Neven EF Program
 slug: nico-neven-ef-program
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["(310) 699-2507"]
   slack: []
-last_synced: 2026-05-16T08:06:34.676683+00:00
+last_synced: 2026-05-17T08:08:26.370762+00:00
 global: true
 ---
 

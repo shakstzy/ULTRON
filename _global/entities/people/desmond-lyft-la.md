@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.620513+00:00
+ingested_at: 2026-05-17T08:08:26.312607+00:00
 ingest_version: 1
 content_hash: blake2b:45becb94e7e516b8c0ce239446ff86a9
-provider_modified_at: 2026-05-16T08:06:34.620513+00:00
+provider_modified_at: 2026-05-17T08:08:26.312607+00:00
 
 title: Desmond Lyft LA
 slug: desmond-lyft-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12019204568"]
   slack: []
-last_synced: 2026-05-16T08:06:34.620513+00:00
+last_synced: 2026-05-17T08:08:26.312607+00:00
 global: true
 ---
 

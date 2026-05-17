@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.628030+00:00
+ingested_at: 2026-05-17T08:08:26.320289+00:00
 ingest_version: 1
 content_hash: blake2b:cbea2d848e4b09310268da173092d6b8
-provider_modified_at: 2026-05-16T08:06:34.628030+00:00
+provider_modified_at: 2026-05-17T08:08:26.320289+00:00
 
 title: Taylor Housing
 slug: taylor-housing
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19259974871"]
   slack: []
-last_synced: 2026-05-16T08:06:34.628030+00:00
+last_synced: 2026-05-17T08:08:26.320289+00:00
 global: true
 ---
 

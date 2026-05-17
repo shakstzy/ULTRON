@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.586570+00:00
+ingested_at: 2026-05-17T08:08:26.277538+00:00
 ingest_version: 1
 content_hash: blake2b:9b4efdd45c5233ca10f848e6643fce8a
-provider_modified_at: 2026-05-16T08:06:34.586570+00:00
+provider_modified_at: 2026-05-17T08:08:26.277538+00:00
 
 title: Steve Brown
 slug: steve-brown
@@ -15,7 +15,7 @@ identifiers:
   email: ["Stephen_F_Brown@dell.com"]
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.586570+00:00
+last_synced: 2026-05-17T08:08:26.277538+00:00
 global: true
 ---
 

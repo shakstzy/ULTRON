@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.581051+00:00
+ingested_at: 2026-05-17T08:08:26.271773+00:00
 ingest_version: 1
 content_hash: blake2b:ef4c3c74580566684f6dfca1ed7f1d66
-provider_modified_at: 2026-05-16T08:06:34.581051+00:00
+provider_modified_at: 2026-05-17T08:08:26.271773+00:00
 
 title: Poornima Pokkula
 slug: poornima-pokkula
@@ -15,7 +15,7 @@ identifiers:
   email: ["ppoornima@email.com"]
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.581051+00:00
+last_synced: 2026-05-17T08:08:26.271773+00:00
 global: true
 ---
 

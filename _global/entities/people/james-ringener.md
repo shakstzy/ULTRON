@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.662171+00:00
+ingested_at: 2026-05-17T08:08:26.355945+00:00
 ingest_version: 1
 content_hash: blake2b:b208a45459ba99cd0d4c1f94f99eb2d9
-provider_modified_at: 2026-05-16T08:06:34.662171+00:00
+provider_modified_at: 2026-05-17T08:08:26.355945+00:00
 
 title: James Ringener
 slug: james-ringener
@@ -15,7 +15,7 @@ identifiers:
   email: ["Ringener@aol.com"]
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.662171+00:00
+last_synced: 2026-05-17T08:08:26.355945+00:00
 global: true
 ---
 

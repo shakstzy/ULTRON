@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.666691+00:00
+ingested_at: 2026-05-17T08:08:26.361006+00:00
 ingest_version: 1
 content_hash: blake2b:880faa35d142e4436c0ec5a2eeebd950
-provider_modified_at: 2026-05-16T08:06:34.666691+00:00
+provider_modified_at: 2026-05-17T08:08:26.361006+00:00
 
 title: Mychal Kendricks Malik Crypto NFL Producer LA
 slug: mychal-kendricks-malik-crypto-nfl-produc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15599166247"]
   slack: []
-last_synced: 2026-05-16T08:06:34.666691+00:00
+last_synced: 2026-05-17T08:08:26.361006+00:00
 global: true
 ---
 

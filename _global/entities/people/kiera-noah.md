@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.582086+00:00
+ingested_at: 2026-05-17T08:08:26.272807+00:00
 ingest_version: 1
 content_hash: blake2b:8a3c8dd7b0562f9ba82ba783f9a83440
-provider_modified_at: 2026-05-16T08:06:34.582086+00:00
+provider_modified_at: 2026-05-17T08:08:26.272807+00:00
 
 title: Kiera Noah
 slug: kiera-noah
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12816151869"]
   slack: []
-last_synced: 2026-05-16T08:06:34.582086+00:00
+last_synced: 2026-05-17T08:08:26.272807+00:00
 global: true
 ---
 

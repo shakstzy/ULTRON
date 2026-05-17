@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.607755+00:00
+ingested_at: 2026-05-17T08:08:26.299406+00:00
 ingest_version: 1
 content_hash: blake2b:5bec419fc1e663acf18052e07be1272a
-provider_modified_at: 2026-05-16T08:06:34.607755+00:00
+provider_modified_at: 2026-05-17T08:08:26.299406+00:00
 
 title: Adi | Magpie
 slug: adi-magpie
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-16T08:06:34.607755+00:00
+last_synced: 2026-05-17T08:08:26.299406+00:00
 global: true
 ---
 

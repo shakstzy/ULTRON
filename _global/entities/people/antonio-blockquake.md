@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-16T08:06:34.667000+00:00
+ingested_at: 2026-05-17T08:08:26.361389+00:00
 ingest_version: 1
 content_hash: blake2b:e252beede548a3f39300b7e3cdbf076e
-provider_modified_at: 2026-05-16T08:06:34.667000+00:00
+provider_modified_at: 2026-05-17T08:08:26.361389+00:00
 
 title: Antonio BlockQuake
 slug: antonio-blockquake
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13476806677"]
   slack: []
-last_synced: 2026-05-16T08:06:34.667000+00:00
+last_synced: 2026-05-17T08:08:26.361389+00:00
 global: true
 ---
 

@@ -11,5 +11,5 @@ me_canonical_slug: adithya-shak-kumar
 auth_token_path: _credentials/slack-eclipse.json
 auth_scopes: []
 first_seen: '2026-05-02T22:26:56-05:00'
-last_updated: '2026-05-15T18:00:17-05:00'
+last_updated: '2026-05-17T08:11:22-05:00'
 ---

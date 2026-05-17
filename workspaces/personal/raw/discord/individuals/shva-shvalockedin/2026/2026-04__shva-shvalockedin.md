@@ -1,9 +1,9 @@
 ---
 source: discord
 workspace: personal
-ingested_at: '2026-05-17T11:05:04.894Z'
+ingested_at: '2026-05-17T18:53:45.594Z'
 ingest_version: 1
-content_hash: sha256:2f1d4b6ba804d3e6e177833fb6fdb1aa632e85cc2f10777b7dfae0eb33c1cca7
+content_hash: sha256:8f9a64e09858f4219a806515fc587fcb02c32ef1d306999e0f57a31588d19c46
 provider_modified_at: '2026-04-11T18:53:43.701Z'
 contact_slug: shva-shvalockedin
 contact_type: individual
@@ -18,7 +18,7 @@ attachments:
     filename: image.png
     url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1492598542228000979/image.png?ex=6a0ab777&is=6a0965f7&hm=61517bd4824108b3b70868106b06ed5dcf0656bdb99919a28753108ea8a97a40&'
     size: 209728
-    description: 'A dark table titled The Hardcore Wheel of Doom lists various gaming challenges and their corresponding rules.'
+    description: 'A dark text table titled The Hardcore Wheel of Doom listing eight gaming challenge rules.'
 discord_channel_id: '1292220510603575366'
 discord_channel_kind: dm
 discord_recipient_id: '1285363977030729738'
@@ -32,4 +32,4 @@ superseded_by: null
 ## 2026-04-11 (Saturday)
 
 **13:53 — SHVA:** 
-↳ image: image.png (205 KB) — "A dark table titled The Hardcore Wheel of Doom lists various gaming challenges and their corresponding rules." — https://cdn.discordapp.com/attachments/1292220510603575366/1492598542228000979/image.png?ex=6a0ab777&is=6a0965f7&hm=61517bd4824108b3b70868106b06ed5dcf0656bdb99919a28753108ea8a97a40&
+↳ image: image.png (205 KB) — "A dark text table titled The Hardcore Wheel of Doom listing eight gaming challenge rules." — https://cdn.discordapp.com/attachments/1292220510603575366/1492598542228000979/image.png?ex=6a0ab777&is=6a0965f7&hm=61517bd4824108b3b70868106b06ed5dcf0656bdb99919a28753108ea8a97a40&

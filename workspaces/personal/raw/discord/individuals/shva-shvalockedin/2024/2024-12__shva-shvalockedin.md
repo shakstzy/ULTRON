@@ -1,9 +1,9 @@
 ---
 source: discord
 workspace: personal
-ingested_at: '2026-05-15T23:03:36.779Z'
+ingested_at: '2026-05-17T11:02:46.847Z'
 ingest_version: 1
-content_hash: sha256:4c4a703edfd0a3ea4ffc8b74445e08cdf54d8860fa13236d2104556819bb114d
+content_hash: sha256:08f56973532e7caee9ade90eb1649be40bfed9024444823b5acfa6c1b7712788
 provider_modified_at: '2024-12-31T05:45:19.975Z'
 contact_slug: shva-shvalockedin
 contact_type: individual
@@ -16,27 +16,27 @@ attachments:
   - message_id: '1313327990557511690'
     kind: image
     filename: image.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313327990255386624/image.png?ex=6a087c41&is=6a072ac1&hm=55dd13a60a8e77ed1ccb41dc2604bc8e5f3b01f59c83671cd9b4ba2c51da5ca6&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313327990255386624/image.png?ex=6a0a7681&is=6a092501&hm=71e3976056fd6e097468a98392624e86108b5a7af5f6d117ebd9ba0dd2ea0b47&'
     size: 60856
-    description: 'A dark panel displays a white warning triangle next to the text TRANSITIONING.'
+    description: 'A white warning triangle icon and the text TRANSITIONING... appear on a dark background.'
   - message_id: '1313328114029301795'
     kind: image
     filename: image.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313328113727442964/image.png?ex=6a087c5e&is=6a072ade&hm=04d2022481b53cd3253085a63dffdf63f5526b178e967ab7544892c7db607274&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313328113727442964/image.png?ex=6a0a769e&is=6a09251e&hm=84ff94be8bbb01ddeaec9fdc91291a2f0c96e2600fee85f622fa64ce537dd969&'
     size: 1574303
-    description: 'An armored video game character stands behind an on-screen message stating that multiplayer is unavailable.'
+    description: 'A video game menu displays an armored character alongside a message stating that multiplayer is unavailable.'
   - message_id: '1313680295513292821'
     kind: image
     filename: redirectFileUrl.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313680294846664764/redirectFileUrl.png?ex=6a0872dd&is=6a07215d&hm=4bdd871fe977a1886677d98846c2fc4c7fd48477f0ccdf0dc38ed65ca1087576&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313680294846664764/redirectFileUrl.png?ex=6a0a6d1d&is=6a091b9d&hm=7db3039953fc7d351b7654706c0c30646bd406b6f2a3dc2acebc80f454b65797&'
     size: 1423629
-    description: 'A black hoodie with large white text across the chest lies flat on a table.'
+    description: 'A black hoodie with large white VOLTREY text across the chest lies flat on a surface.'
   - message_id: '1313680310344351827'
     kind: image
     filename: redirectFileUrl.png
-    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313680309992165376/redirectFileUrl.png?ex=6a0872e0&is=6a072160&hm=7f65fc940113277fbc2d64a7f9a76fcb026cec60738cb01447a6ffc8f44b08cc&'
+    url: 'https://cdn.discordapp.com/attachments/1292220510603575366/1313680309992165376/redirectFileUrl.png?ex=6a0a6d20&is=6a091ba0&hm=78272586190cf48a2e4112b6279c1922ae4763167431b975d3970fa82432a4a4&'
     size: 1432011
-    description: 'A black hoodie with white wavy text reading MONEY MAKES THE WORLD GO AROUND on the back.'
+    description: 'A black hoodie lying flat with white text reading MONEY MAKES THE WORLD GO AROUND on the back.'
 discord_channel_id: '1292220510603575366'
 discord_channel_kind: dm
 discord_recipient_id: '1285363977030729738'
@@ -50,17 +50,17 @@ superseded_by: null
 ## 2024-12-02 (Monday)
 
 **20:16 — me:** 
-↳ image: image.png (59 KB) — "A dark panel displays a white warning triangle next to the text TRANSITIONING." — https://cdn.discordapp.com/attachments/1292220510603575366/1313327990255386624/image.png?ex=6a087c41&is=6a072ac1&hm=55dd13a60a8e77ed1ccb41dc2604bc8e5f3b01f59c83671cd9b4ba2c51da5ca6&
+↳ image: image.png (59 KB) — "A white warning triangle icon and the text TRANSITIONING... appear on a dark background." — https://cdn.discordapp.com/attachments/1292220510603575366/1313327990255386624/image.png?ex=6a0a7681&is=6a092501&hm=71e3976056fd6e097468a98392624e86108b5a7af5f6d117ebd9ba0dd2ea0b47&
 **20:17 — me:** 
-↳ image: image.png (1537 KB) — "An armored video game character stands behind an on-screen message stating that multiplayer is unavailable." — https://cdn.discordapp.com/attachments/1292220510603575366/1313328113727442964/image.png?ex=6a087c5e&is=6a072ade&hm=04d2022481b53cd3253085a63dffdf63f5526b178e967ab7544892c7db607274&
+↳ image: image.png (1537 KB) — "A video game menu displays an armored character alongside a message stating that multiplayer is unavailable." — https://cdn.discordapp.com/attachments/1292220510603575366/1313328113727442964/image.png?ex=6a0a769e&is=6a09251e&hm=84ff94be8bbb01ddeaec9fdc91291a2f0c96e2600fee85f622fa64ce537dd969&
 
 ## 2024-12-03 (Tuesday)
 
 **19:32 — SHVA:** ↳ replying to SHVA ("(no text)"): **
 **19:36 — SHVA:** 
-↳ image: redirectFileUrl.png (1390 KB) — "A black hoodie with large white text across the chest lies flat on a table." — https://cdn.discordapp.com/attachments/1292220510603575366/1313680294846664764/redirectFileUrl.png?ex=6a0872dd&is=6a07215d&hm=4bdd871fe977a1886677d98846c2fc4c7fd48477f0ccdf0dc38ed65ca1087576&
+↳ image: redirectFileUrl.png (1390 KB) — "A black hoodie with large white VOLTREY text across the chest lies flat on a surface." — https://cdn.discordapp.com/attachments/1292220510603575366/1313680294846664764/redirectFileUrl.png?ex=6a0a6d1d&is=6a091b9d&hm=7db3039953fc7d351b7654706c0c30646bd406b6f2a3dc2acebc80f454b65797&
 **19:36 — SHVA:** 
-↳ image: redirectFileUrl.png (1398 KB) — "A black hoodie with white wavy text reading MONEY MAKES THE WORLD GO AROUND on the back." — https://cdn.discordapp.com/attachments/1292220510603575366/1313680309992165376/redirectFileUrl.png?ex=6a0872e0&is=6a072160&hm=7f65fc940113277fbc2d64a7f9a76fcb026cec60738cb01447a6ffc8f44b08cc&
+↳ image: redirectFileUrl.png (1398 KB) — "A black hoodie lying flat with white text reading MONEY MAKES THE WORLD GO AROUND on the back." — https://cdn.discordapp.com/attachments/1292220510603575366/1313680309992165376/redirectFileUrl.png?ex=6a0a6d20&is=6a091ba0&hm=78272586190cf48a2e4112b6279c1922ae4763167431b975d3970fa82432a4a4&
 
 ## 2024-12-07 (Saturday)
 

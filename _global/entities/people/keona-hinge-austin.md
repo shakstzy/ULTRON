@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.360724+00:00
+ingested_at: 2026-05-20T19:28:19.314286+00:00
 ingest_version: 1
 content_hash: blake2b:c03cb58934236cb59d6f670f992d1291
-provider_modified_at: 2026-05-17T08:08:26.360724+00:00
+provider_modified_at: 2026-05-20T19:28:19.314286+00:00
 
 title: Keona Hinge Austin
 slug: keona-hinge-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15597449130"]
   slack: []
-last_synced: 2026-05-17T08:08:26.360724+00:00
+last_synced: 2026-05-20T19:28:19.314286+00:00
 global: true
 ---
 

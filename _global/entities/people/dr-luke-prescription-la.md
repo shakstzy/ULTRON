@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.252443+00:00
+ingested_at: 2026-05-20T19:28:18.926170+00:00
 ingest_version: 1
 content_hash: blake2b:d7918008ba93ce6c5aab4310f63434e0
-provider_modified_at: 2026-05-17T08:08:26.252443+00:00
+provider_modified_at: 2026-05-20T19:28:18.926170+00:00
 
 title: Dr. Luke Prescription LA
 slug: dr-luke-prescription-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19176222340"]
   slack: []
-last_synced: 2026-05-17T08:08:26.252443+00:00
+last_synced: 2026-05-20T19:28:18.926170+00:00
 global: true
 ---
 

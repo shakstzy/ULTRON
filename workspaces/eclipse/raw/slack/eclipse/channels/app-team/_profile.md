@@ -20,9 +20,15 @@ members:
 - slug: bm
   slack_user_id: U055RJ51URE
   display_name: BM
+- slug: chinghua
+  slack_user_id: U056A0YD9PG
+  display_name: ChingHua
 - slug: cemal
   slack_user_id: U07JEV700QJ
   display_name: cemal
+- slug: julien
+  slack_user_id: U07V99QMTV5
+  display_name: julien じゅりえん
 - slug: vj
   slack_user_id: U09UCLZ9U1E
   display_name: VJ
@@ -36,5 +42,5 @@ members:
   slack_user_id: USLACKBOT
   display_name: Slackbot
 first_seen: '2026-05-02T22:28:41-05:00'
-last_updated: '2026-05-17T14:00:18-05:00'
+last_updated: '2026-05-20T14:29:39-05:00'
 ---

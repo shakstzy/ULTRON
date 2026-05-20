@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.287579+00:00
+ingested_at: 2026-05-20T19:28:19.072612+00:00
 ingest_version: 1
 content_hash: blake2b:24d572bc82fbf17cde27ede7a776eab9
-provider_modified_at: 2026-05-17T08:08:26.287579+00:00
+provider_modified_at: 2026-05-20T19:28:19.072612+00:00
 
 title: Marcus | FintoniaGroup
 slug: marcus-fintoniagroup
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+60 12-308 6818"]
   slack: []
-last_synced: 2026-05-17T08:08:26.287579+00:00
+last_synced: 2026-05-20T19:28:19.072612+00:00
 global: true
 ---
 

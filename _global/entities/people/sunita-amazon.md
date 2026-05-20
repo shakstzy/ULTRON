@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.262669+00:00
+ingested_at: 2026-05-20T19:28:18.983663+00:00
 ingest_version: 1
 content_hash: blake2b:31ab07f5dab8d04a3332a80825c8274a
-provider_modified_at: 2026-05-17T08:08:26.262669+00:00
+provider_modified_at: 2026-05-20T19:28:18.983663+00:00
 
 title: Sunita Amazon
 slug: sunita-amazon
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15103836370"]
   slack: []
-last_synced: 2026-05-17T08:08:26.262669+00:00
+last_synced: 2026-05-20T19:28:18.983663+00:00
 global: true
 ---
 

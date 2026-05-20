@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.295578+00:00
+ingested_at: 2026-05-20T19:28:19.098230+00:00
 ingest_version: 1
 content_hash: blake2b:4243fcb25b37229643673b826f49ea14
-provider_modified_at: 2026-05-17T08:08:26.295578+00:00
+provider_modified_at: 2026-05-20T19:28:19.098230+00:00
 
 title: Celeste Renter Showing
 slug: celeste-renter-showing
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18187149843"]
   slack: []
-last_synced: 2026-05-17T08:08:26.295578+00:00
+last_synced: 2026-05-20T19:28:19.098230+00:00
 global: true
 ---
 

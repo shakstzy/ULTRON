@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.269008+00:00
+ingested_at: 2026-05-20T19:28:19.005847+00:00
 ingest_version: 1
 content_hash: blake2b:0375d0b14611342ce492b4358f7e8d18
-provider_modified_at: 2026-05-17T08:08:26.269008+00:00
+provider_modified_at: 2026-05-20T19:28:19.005847+00:00
 
 title: Baris | MintroAI
 slug: baris-mintroai
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-17T08:08:26.269008+00:00
+last_synced: 2026-05-20T19:28:19.005847+00:00
 global: true
 ---
 

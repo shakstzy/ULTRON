@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.332098+00:00
+ingested_at: 2026-05-20T19:28:19.214510+00:00
 ingest_version: 1
 content_hash: blake2b:12f4cb3a1b5de98480682389f6948f6e
-provider_modified_at: 2026-05-17T08:08:26.332098+00:00
+provider_modified_at: 2026-05-20T19:28:19.214510+00:00
 
 title: Kamryn Hinge LA
 slug: kamryn-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16267201053"]
   slack: []
-last_synced: 2026-05-17T08:08:26.332098+00:00
+last_synced: 2026-05-20T19:28:19.214510+00:00
 global: true
 ---
 

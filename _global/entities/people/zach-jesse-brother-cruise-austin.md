@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.305145+00:00
+ingested_at: 2026-05-20T19:28:19.131183+00:00
 ingest_version: 1
 content_hash: blake2b:bb405adf9d665d63e5d328f68b134449
-provider_modified_at: 2026-05-17T08:08:26.305145+00:00
+provider_modified_at: 2026-05-20T19:28:19.131183+00:00
 
 title: Zach Jesse Brother Cruise Austin
 slug: zach-jesse-brother-cruise-austin
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+19165190404"]
   slack: []
-last_synced: 2026-05-17T08:08:26.305145+00:00
+last_synced: 2026-05-20T19:28:19.131183+00:00
 global: true
 ---
 

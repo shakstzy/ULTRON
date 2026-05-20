@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.347666+00:00
+ingested_at: 2026-05-20T19:28:19.268521+00:00
 ingest_version: 1
 content_hash: blake2b:4ef6fc0c573cc5fde9fd57c2c24cd9e4
-provider_modified_at: 2026-05-17T08:08:26.347666+00:00
+provider_modified_at: 2026-05-20T19:28:19.268521+00:00
 
 title: Aidan Bauer EF SpaceX
 slug: aidan-bauer-ef-spacex
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+15087828853"]
   slack: []
-last_synced: 2026-05-17T08:08:26.347666+00:00
+last_synced: 2026-05-20T19:28:19.268521+00:00
 global: true
 ---
 

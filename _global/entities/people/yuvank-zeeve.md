@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.241966+00:00
+ingested_at: 2026-05-20T19:28:18.881579+00:00
 ingest_version: 1
 content_hash: blake2b:ff6c66fd057fa9eeca9cbba5e5beda77
-provider_modified_at: 2026-05-17T08:08:26.241966+00:00
+provider_modified_at: 2026-05-20T19:28:18.881579+00:00
 
 title: Yuvank | Zeeve
 slug: yuvank-zeeve
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-17T08:08:26.241966+00:00
+last_synced: 2026-05-20T19:28:18.881579+00:00
 global: true
 ---
 

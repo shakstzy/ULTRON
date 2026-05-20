@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.254028+00:00
+ingested_at: 2026-05-20T19:28:18.931843+00:00
 ingest_version: 1
 content_hash: blake2b:9a41c5e99b95e44c15cb3af330c00c2e
-provider_modified_at: 2026-05-17T08:08:26.254028+00:00
+provider_modified_at: 2026-05-20T19:28:18.931843+00:00
 
 title: Shriya NYC
 slug: shriya-nyc
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+12017745280"]
   slack: []
-last_synced: 2026-05-17T08:08:26.254028+00:00
+last_synced: 2026-05-20T19:28:18.931843+00:00
 global: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.281888+00:00
+ingested_at: 2026-05-20T19:28:19.053082+00:00
 ingest_version: 1
 content_hash: blake2b:e124a47d716b5fed965920b5eb08cfff
-provider_modified_at: 2026-05-17T08:08:26.281888+00:00
+provider_modified_at: 2026-05-20T19:28:19.053082+00:00
 
 title: Adarsh Pinjala
 slug: adarsh-pinjala
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14088767840"]
   slack: []
-last_synced: 2026-05-17T08:08:26.281888+00:00
+last_synced: 2026-05-20T19:28:19.053082+00:00
 global: true
 ---
 

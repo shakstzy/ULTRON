@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.195289+00:00
+ingested_at: 2026-05-20T19:28:18.622778+00:00
 ingest_version: 1
 content_hash: blake2b:a4ac218d5f476acec8407343413905f6
-provider_modified_at: 2026-05-17T08:08:26.195289+00:00
+provider_modified_at: 2026-05-20T19:28:18.622778+00:00
 
 title: sarah-harrelson2-austinisd
 slug: sarah-harrelson2-austinisd
@@ -15,7 +15,7 @@ identifiers:
   email: ["sarah.harrelson2@austinisd.org"]
   phone: []
   slack: []
-last_synced: 2026-05-17T08:08:26.195289+00:00
+last_synced: 2026-05-20T19:28:18.622778+00:00
 global: true
 ---
 

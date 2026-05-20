@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.336447+00:00
+ingested_at: 2026-05-20T19:28:19.222884+00:00
 ingest_version: 1
 content_hash: blake2b:609be5f3341b3a5bd4e42daa4c5bc089
-provider_modified_at: 2026-05-17T08:08:26.336447+00:00
+provider_modified_at: 2026-05-20T19:28:19.222884+00:00
 
 title: Steve Renter Showing
 slug: steve-renter-showing
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+18186214864"]
   slack: []
-last_synced: 2026-05-17T08:08:26.336447+00:00
+last_synced: 2026-05-20T19:28:19.222884+00:00
 global: true
 ---
 

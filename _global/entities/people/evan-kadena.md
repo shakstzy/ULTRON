@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.300851+00:00
+ingested_at: 2026-05-20T19:28:19.117286+00:00
 ingest_version: 1
 content_hash: blake2b:f57581741dcd2a266d512ddd28567644
-provider_modified_at: 2026-05-17T08:08:26.300851+00:00
+provider_modified_at: 2026-05-20T19:28:19.117286+00:00
 
 title: Evan | Kadena
 slug: evan-kadena
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-17T08:08:26.300851+00:00
+last_synced: 2026-05-20T19:28:19.117286+00:00
 global: true
 ---
 

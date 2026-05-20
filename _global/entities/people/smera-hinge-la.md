@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.289880+00:00
+ingested_at: 2026-05-20T19:28:19.081336+00:00
 ingest_version: 1
 content_hash: blake2b:1937befae62f4df909263f609858d02d
-provider_modified_at: 2026-05-17T08:08:26.289880+00:00
+provider_modified_at: 2026-05-20T19:28:19.081336+00:00
 
 title: Smera Hinge LA
 slug: smera-hinge-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+16099204138"]
   slack: []
-last_synced: 2026-05-17T08:08:26.289880+00:00
+last_synced: 2026-05-20T19:28:19.081336+00:00
 global: true
 ---
 

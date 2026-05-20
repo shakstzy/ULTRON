@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.322154+00:00
+ingested_at: 2026-05-20T19:28:19.184923+00:00
 ingest_version: 1
 content_hash: blake2b:a911d54d015bc6fd32446a00b0df7e79
-provider_modified_at: 2026-05-17T08:08:26.322154+00:00
+provider_modified_at: 2026-05-20T19:28:19.184923+00:00
 
 title: Kyle | Pyth
 slug: kyle-pyth
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-17T08:08:26.322154+00:00
+last_synced: 2026-05-20T19:28:19.184923+00:00
 global: true
 ---
 

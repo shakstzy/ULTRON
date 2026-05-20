@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.217386+00:00
+ingested_at: 2026-05-20T19:28:18.717770+00:00
 ingest_version: 1
 content_hash: blake2b:94b49f7bde9cfe7829312ec692cdfa48
-provider_modified_at: 2026-05-17T08:08:26.217386+00:00
+provider_modified_at: 2026-05-20T19:28:18.717770+00:00
 
 title: Geno Catalano LA
 slug: geno-catalano-la
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 304-281-9947"]
   slack: []
-last_synced: 2026-05-17T08:08:26.217386+00:00
+last_synced: 2026-05-20T19:28:18.717770+00:00
 global: true
 ---
 

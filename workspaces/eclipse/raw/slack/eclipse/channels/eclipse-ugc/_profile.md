@@ -27,5 +27,5 @@ members:
   slack_user_id: USLACKBOT
   display_name: Slackbot
 first_seen: '2026-05-04T16:07:17-05:00'
-last_updated: '2026-05-17T14:00:19-05:00'
+last_updated: '2026-05-20T14:29:40-05:00'
 ---

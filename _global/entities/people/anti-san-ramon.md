@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.372314+00:00
+ingested_at: 2026-05-20T19:28:19.356498+00:00
 ingest_version: 1
 content_hash: blake2b:c172eadb999f34c213910d961833c254
-provider_modified_at: 2026-05-17T08:08:26.372314+00:00
+provider_modified_at: 2026-05-20T19:28:19.356498+00:00
 
 title: Anti San Ramon
 slug: anti-san-ramon
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+14088056437"]
   slack: []
-last_synced: 2026-05-17T08:08:26.372314+00:00
+last_synced: 2026-05-20T19:28:19.356498+00:00
 global: true
 ---
 

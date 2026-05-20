@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.319550+00:00
+ingested_at: 2026-05-20T19:28:19.174551+00:00
 ingest_version: 1
 content_hash: blake2b:a52e8e5b5e6f04ce8f68b451bd93deb0
-provider_modified_at: 2026-05-17T08:08:26.319550+00:00
+provider_modified_at: 2026-05-20T19:28:19.174551+00:00
 
 title: Cameron Kleiman
 slug: cameron-kleiman
@@ -15,7 +15,7 @@ identifiers:
   email: ["ckleiman15@gmail.com"]
   phone: ["+1 512-865-7449"]
   slack: []
-last_synced: 2026-05-17T08:08:26.319550+00:00
+last_synced: 2026-05-20T19:28:19.174551+00:00
 global: true
 ---
 

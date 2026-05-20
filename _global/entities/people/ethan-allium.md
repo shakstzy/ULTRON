@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.298673+00:00
+ingested_at: 2026-05-20T19:28:19.109989+00:00
 ingest_version: 1
 content_hash: blake2b:a43e22d3d6403dba4e66624d338453ef
-provider_modified_at: 2026-05-17T08:08:26.298673+00:00
+provider_modified_at: 2026-05-20T19:28:19.109989+00:00
 
 title: Ethan | Allium
 slug: ethan-allium
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-17T08:08:26.298673+00:00
+last_synced: 2026-05-20T19:28:19.109989+00:00
 global: true
 ---
 

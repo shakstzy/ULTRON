@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.247571+00:00
+ingested_at: 2026-05-20T19:28:18.903865+00:00
 ingest_version: 1
 content_hash: blake2b:86c00ad29f7e4a6d89750d161d08f723
-provider_modified_at: 2026-05-17T08:08:26.247571+00:00
+provider_modified_at: 2026-05-20T19:28:18.903865+00:00
 
 title: Jacob Masuno LASA
 slug: jacob-masuno-lasa
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+13104653876"]
   slack: []
-last_synced: 2026-05-17T08:08:26.247571+00:00
+last_synced: 2026-05-20T19:28:18.903865+00:00
 global: true
 ---
 

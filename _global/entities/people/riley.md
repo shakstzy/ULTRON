@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.222126+00:00
+ingested_at: 2026-05-20T19:28:18.728484+00:00
 ingest_version: 1
 content_hash: blake2b:e4ab1dc5c1a18b8042822d6271ddef9a
-provider_modified_at: 2026-05-17T08:08:26.222126+00:00
+provider_modified_at: 2026-05-20T19:28:18.728484+00:00
 
 title: Riley
 slug: riley
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+1 512-865-0232"]
   slack: []
-last_synced: 2026-05-17T08:08:26.222126+00:00
+last_synced: 2026-05-20T19:28:18.728484+00:00
 global: true
 ---
 

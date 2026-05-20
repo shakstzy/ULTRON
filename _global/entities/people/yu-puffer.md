@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.254220+00:00
+ingested_at: 2026-05-20T19:28:18.932518+00:00
 ingest_version: 1
 content_hash: blake2b:c4206ad8c12247da34dfa1686c4f0339
-provider_modified_at: 2026-05-17T08:08:26.254220+00:00
+provider_modified_at: 2026-05-20T19:28:18.932518+00:00
 
 title: Yu | Puffer
 slug: yu-puffer
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-17T08:08:26.254220+00:00
+last_synced: 2026-05-20T19:28:18.932518+00:00
 global: true
 ---
 

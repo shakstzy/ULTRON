@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.369452+00:00
+ingested_at: 2026-05-20T19:28:19.341868+00:00
 ingest_version: 1
 content_hash: blake2b:ea6eb6a461573b82a3f5f7c6504752e4
-provider_modified_at: 2026-05-17T08:08:26.369452+00:00
+provider_modified_at: 2026-05-20T19:28:19.341868+00:00
 
 title: Joseph | GuardianLink
 slug: joseph-guardianlink
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: ["+91 80561 76377"]
   slack: []
-last_synced: 2026-05-17T08:08:26.369452+00:00
+last_synced: 2026-05-20T19:28:19.341868+00:00
 global: true
 ---
 

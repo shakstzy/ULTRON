@@ -1,10 +1,10 @@
 ---
 source: apple-contacts
 workspace: _global
-ingested_at: 2026-05-17T08:08:26.350580+00:00
+ingested_at: 2026-05-20T19:28:19.280425+00:00
 ingest_version: 1
 content_hash: blake2b:9bb25fef370fa9b5f6832ae54d24cfec
-provider_modified_at: 2026-05-17T08:08:26.350580+00:00
+provider_modified_at: 2026-05-20T19:28:19.280425+00:00
 
 title: Jerk | Eden
 slug: jerk-eden
@@ -15,7 +15,7 @@ identifiers:
   email: []
   phone: []
   slack: []
-last_synced: 2026-05-17T08:08:26.350580+00:00
+last_synced: 2026-05-20T19:28:19.280425+00:00
 global: true
 ---
 

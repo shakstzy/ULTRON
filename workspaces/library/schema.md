@@ -9,6 +9,7 @@ Workspace schema. Defines entity types and **wiki page formats**. The wiki agent
 | Type | Folder | Definition |
 |---|---|---|
 | book | `wiki/entities/books/` | A book ingested from Anna's Archive / LibGen, or a manual deposit. |
+| chapter | `wiki/entities/chapters/` | One chapter of a book. Only created when the book is chapterized (default). Skipped for books ingested with `--whole-book`. |
 | paper | `wiki/entities/papers/` | An academic paper (arxiv, doi, or PDF URL). |
 | article | `wiki/entities/articles/` | A web article / blog post via defuddle. |
 | podcast | `wiki/entities/podcasts/` | A podcast episode (transcript-based). Reserved for future ingest. |
@@ -45,6 +46,13 @@ The curator (`bin/library-next.py`) reads and writes these fields. The wiki agen
 
 ### book
 
+Raw layout: `raw/books/<author-slug>/<book-slug>/`
+  - `source.{epub,pdf}` — original artifact (gitignored)
+  - `_full.md` — standardized full-body markdown, universal envelope + book metadata
+  - `ch-NN-<slug>.md` × N — per-chapter files (omitted when `whole_book: true`)
+
+Wiki page (one per book):
+
 ```yaml
 ---
 slug: <author-last>-<title-3-words>     # e.g. clear-atomic-habits
@@ -56,9 +64,11 @@ year: <integer-or-null>
 language: en
 source_url: <annas-archive-url-or-null>
 ingested_at: <YYYY-MM-DD>
+whole_book: <bool>                       # true → no chapter entities, served whole
+chapter_count: <integer-or-null>         # 0 when whole_book: true
 read_status: ingested
 delivered_at: null
-bite_size_minutes: <integer>
+bite_size_minutes: <integer>             # for the book-level page; chapters have their own
 delivery_count: 0
 tags: [<tag>...]
 mentioned_concepts: []
@@ -67,7 +77,36 @@ last_touched: <YYYY-MM-DD>
 ---
 ```
 
-Body sections in order: `## TL;DR`, `## Key takeaways`, `## Quote`, `## Why it matters`, `## Connections`, `## Backlinks`.
+Body sections in order: `## TL;DR`, `## Key takeaways`, `## Quote`, `## Why it matters`, `## Connections`, `## Chapters` (list of `[[<book-slug>__ch-NN]]` links, omitted if whole_book), `## Backlinks`.
+
+### chapter
+
+Raw file: `raw/books/<author>/<book-slug>/ch-NN-<slug>.md` (produced by stage 03).
+
+Wiki page (one per chapter):
+
+```yaml
+---
+slug: <book-slug>__ch-NN                 # e.g. clear-atomic-habits__ch-03
+type: chapter
+title: <Chapter Title>
+parent_book: [[<book-slug>]]             # wikilink to the book page
+chapter_number: <integer>                # 1-based
+chapter_title: <Chapter Title>
+authors: [<person-slug>...]              # inherited from book
+ingested_at: <YYYY-MM-DD>
+read_status: ingested
+delivered_at: null
+bite_size_minutes: <integer>             # estimated from chapter word count / 200 wpm
+delivery_count: 0
+tags: [<tag>...]
+mentioned_concepts: []
+mentioned_books: []
+last_touched: <YYYY-MM-DD>
+---
+```
+
+Body sections in order: `## TL;DR`, `## Key takeaways`, `## Quote`, `## Why it matters`, `## Connections`, `## Backlinks`. Chapters are eligible curator bites just like top-level entities; the curator treats them as scored candidates alongside whole-book / paper / YT entries.
 
 ### paper
 

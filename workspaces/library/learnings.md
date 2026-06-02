@@ -8,9 +8,13 @@ See `identity.md`. One-line summary: internalized + scannable, one short author 
 
 ## Architecture (load-bearing)
 
-- **Ingest is capture-only.** `bin/ingest-*.py` scripts download content and write `raw/<source>/<path>.md` with the universal envelope. They do NOT call cloud-llm. They do NOT write to `wiki/`. This is per `_shell/stages/ingest/CONTEXT.md`.
-- **Wiki built downstream.** `/graphify --wiki workspaces/library` (or a future `_shell/stages/lint/library-wiki/` stage) reads `raw/` and produces `wiki/entities/`, `wiki/concepts/`, `wiki/synthesis/`.
-- **Curator reads wiki.** `bin/library-next.py` scans `wiki/entities/*` for pages with `read_status` frontmatter, scores them, returns one bite. When `wiki/` is empty, it tells the user to run `/graphify --wiki` first.
+- **Four-stage pipeline** (workspace-local, runnable independently):
+  - 01-ingest: `bin/ingest-*.py` writes capture-only to `raw/<source>/...md` with universal envelope. NO LLM. NO wiki writes.
+  - 02-extract: `bin/stage-extract-book.py` converts `source.{epub,pdf}` → `_full.md` per book. Idempotent on artifact SHA-256.
+  - 03-chapterize: `bin/stage-chapterize-book.py` splits `_full.md` on H1 / `Chapter N` boundaries → per-chapter files. Skipped when `whole_book: true`. Falls back to whole-book when no boundaries detected.
+  - 04-wiki-build: synthesizes wiki entity pages from raw. Currently `/graphify --wiki workspaces/library`; stage script TBD.
+- **Stage contracts** at `stages/<NN>-<name>/CONTEXT.md`. Stages 02→04 orchestrated by `bin/library-build.sh`.
+- **Curator reads wiki.** `bin/library-next.py` scans `wiki/entities/*` (incl. `chapters/`), scores them, returns one bite. When `wiki/` is empty, it tells the user to run `bin/library-build.sh --stage wiki` (or `/graphify --wiki workspaces/library`) first.
 
 ## Operational rules
 
@@ -21,6 +25,8 @@ See `identity.md`. One-line summary: internalized + scannable, one short author 
 - **Bulk operations are lossy on individual failures.** `ingest-batch` and `--author` mode catch IngestError per item, log it, and continue. The batch summary is the source of truth for what landed.
 - **Channel ingest semantics.** "Ingest everything" = full backfill of the channel's `/videos` tab (Shorts excluded). "Only X" or `--videos id1,id2` = selective. No subscribe-forward by default.
 - **Co-location is a wiki concern, not a capture concern.** All YouTube videos land at `raw/youtube/<channel>/<YYYY-MM>/<slug>.md` regardless of book relevance. Whether a video is "primarily about" a book in the corpus is decided by the wiki agent at synthesis time, not at ingest.
+- **Books live in a nested folder per book.** Layout: `raw/books/<author-slug>/<book-slug>/{source.epub, _full.md, ch-NN-<slug>.md...}`. Everything for one book (artifact + extracted body + chapter shards) lives under ONE directory.
+- **Chapter is the default bite unit for books.** Curator serves one chapter at a time. Mark a book `--whole-book` at ingest only when it has no useful internal structure (essay collections, very short books). The chapterize stage falls back to whole-book automatically when zero boundaries are detected.
 - **Book validation chain (Anna's Archive).** Title fuzzy match ≥ 0.85, author fuzzy match ≥ 0.7, language=en, format=epub preferred. On failure, stop and surface the metadata so Adithya can re-run with a specific MD5 URL.
 - **Copyright posture.** Full EPUB and PDF stay in `raw/` (gitignored). Wiki pages will contain takeaways + one ≤ 15 word quote per page. Per ULTRON global copyright rules.
 - **Concept promotion threshold.** Wiki agent (downstream) promotes a concept when it appears in 3+ source wiki pages.

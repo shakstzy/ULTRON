@@ -37,7 +37,7 @@ from pathlib import Path
 import lib_common as L
 
 ENTITY_TYPES_WITH_STATUS = {
-    "book", "paper", "article", "podcast", "lecture", "youtube-video", "reel",
+    "book", "chapter", "paper", "article", "podcast", "lecture", "youtube-video", "reel",
 }
 
 DELIVERED_REVISIT_DAYS = 30
@@ -68,7 +68,7 @@ def collect_candidates() -> list[tuple[Path, dict, str]]:
             continue   # people aren't bite candidates
         if type_dir.name == "youtube-channels":
             continue   # channels aggregate; not bites
-        if type_dir.name not in ("books", "papers", "articles", "podcasts",
+        if type_dir.name not in ("books", "chapters", "papers", "articles", "podcasts",
                                  "lectures", "youtube-videos", "reels"):
             continue
         for page in type_dir.glob("*.md"):

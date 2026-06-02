@@ -3,10 +3,15 @@
 ingest-book.py — capture a book into the library workspace's raw/.
 
 Pure capture: search Anna's Archive (or take a direct URL / local file),
-download the EPUB (PDF fallback), extract markdown via pandoc, write ONE
-file at `raw/books/<author>/<slug>.md` with the universal envelope. The
-original EPUB stays alongside as `<slug>.epub` for re-extraction. NO
-cloud-llm. NO wiki writes.
+download the EPUB (PDF fallback), extract markdown via pandoc, write a
+nested layout at `raw/books/<author>/<book-slug>/` with:
+    source.epub               # original artifact (gitignored)
+    _full.md                  # standardized full body with universal envelope
+
+Stage 02 (`stage-extract-book.py`) re-extracts when needed; stage 03
+(`stage-chapterize-book.py`) splits _full.md into per-chapter files.
+Passing `--whole-book` sets `whole_book: true` so stage 03 skips this book
+and the curator serves it as a single bite.
 
 Four input modes:
   ingest-book.py --title "Walden" --author "Henry David Thoreau"
@@ -15,11 +20,14 @@ Four input modes:
   ingest-book.py --epub-path /path/to/book.epub --title X --author Y
   ingest-book.py --author "James Clear"                   # bibliography: all books by author
   ingest-book.py --author "James Clear" --limit 5 --dry-run
+  ingest-book.py --title X --author Y --whole-book        # do not chapterize
 """
 from __future__ import annotations
 
 import argparse
 import difflib
+import hashlib
+import importlib.util
 import re
 import shutil
 import subprocess
@@ -30,7 +38,37 @@ from pathlib import Path
 
 import lib_common as L
 
+
+# ---------------------------------------------------------------------------
+# Sibling-stage loader — keep ingest from duplicating extractor logic.
+# ---------------------------------------------------------------------------
+
+_SIBLING_CACHE: dict[str, object] = {}
+
+
+def _load_sibling(stem: str):
+    if stem in _SIBLING_CACHE:
+        return _SIBLING_CACHE[stem]
+    here = Path(__file__).resolve().parent
+    spec = importlib.util.spec_from_file_location(stem.replace("-", "_"), here / f"{stem}.py")
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"could not load sibling: {stem}")
+    mod = importlib.util.module_from_spec(spec)
+    sys.modules[stem.replace("-", "_")] = mod
+    try:
+        spec.loader.exec_module(mod)
+    except Exception:
+        sys.modules.pop(stem.replace("-", "_"), None)
+        raise
+    _SIBLING_CACHE[stem] = mod
+    return mod
+
 ANNAS_BASE = "https://annas-archive.org"
+LIBGEN_MIRRORS = (                          # try in order, first reachable wins
+    "https://libgen.is",
+    "https://libgen.rs",
+    "https://libgen.li",
+)
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/605.1.15 ULTRON/1.0"
 HTTP_TIMEOUT = 30
 SOURCE = "book"
@@ -163,6 +201,132 @@ def search_annas(query: str, lang: str = "en", ext: str = "epub", limit: int = 5
     return results
 
 
+# ---------------------------------------------------------------------------
+# LibGen fallback (when annas is unreachable or returns no results)
+# ---------------------------------------------------------------------------
+
+LIBGEN_ROW_RE = re.compile(
+    r'<tr[^>]*?>(?P<row>.*?)</tr>', re.IGNORECASE | re.DOTALL,
+)
+
+
+def _libgen_first_reachable_mirror() -> str | None:
+    """Return the base URL of the first reachable libgen mirror, or None.
+    Uses a short HEAD probe so we don't burn 30s on every search."""
+    for base in LIBGEN_MIRRORS:
+        try:
+            req = urllib.request.Request(base, headers={"User-Agent": USER_AGENT})
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                if resp.status < 500:
+                    return base
+        except Exception:
+            continue
+    return None
+
+
+def search_libgen(query: str, lang: str = "english", ext: str = "epub",
+                  limit: int = 5) -> list[dict]:
+    """Search LibGen for `query`. Returns the same shape as `search_annas`:
+    [{md5, url, raw_text, title, author, ext}]. `url` here is the LibGen
+    book page (used by resolve_libgen_md5_page); md5 is the canonical key."""
+    base = _libgen_first_reachable_mirror()
+    if not base:
+        sys.stderr.write("  no libgen mirror reachable\n")
+        return []
+    qs = urllib.parse.urlencode({
+        "req": query, "open": "0", "res": "25",
+        "view": "simple", "phrase": "1", "column": "def",
+    })
+    url = f"{base}/search.php?{qs}"
+    try:
+        html = fetch_text(url)
+    except Exception as e:
+        sys.stderr.write(f"  libgen search failed: {e}\n")
+        return []
+    results: list[dict] = []
+    for m in LIBGEN_ROW_RE.finditer(html):
+        row = m.group("row")
+        # 9-column simple view: id, author, title, publisher, year, pages, lang, size, ext, dl-mirrors
+        md5_m = re.search(r'md5=([A-Fa-f0-9]{32})', row)
+        if not md5_m:
+            continue
+        md5 = md5_m.group(1).lower()
+        cells = re.findall(r'<td[^>]*>(.*?)</td>', row, re.DOTALL)
+        if len(cells) < 9:
+            continue
+        def _strip(s: str) -> str:
+            return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", s)).strip()
+        author = _strip(cells[1])
+        title = _strip(cells[2])
+        year = _strip(cells[4])
+        row_lang = _strip(cells[6]).lower()
+        row_ext = _strip(cells[8]).lower()
+        # Filter to our requested ext / lang. ext "epub"==target; allow "pdf" as
+        # second-choice when explicitly requested.
+        if ext and row_ext and ext.lower() != row_ext:
+            continue
+        if lang and row_lang and lang.lower() not in row_lang:
+            continue
+        results.append({
+            "md5": md5,
+            "url": f"{base}/book/index.php?md5={md5}",
+            "raw_text": f"{title} — {author}",
+            "title": title,
+            "author": author,
+            "year": year or None,
+            "format": row_ext or None,
+            "language": row_lang or None,
+            "_backend": "libgen",
+        })
+        if len(results) >= limit:
+            break
+    return results
+
+
+def resolve_libgen_md5_page(url: str, md5: str | None = None) -> dict:
+    """Resolve a libgen book page. LibGen exposes the artifact via mirror
+    links to library.lol / cdn / etc. The function returns the same shape
+    as resolve_md5_page for annas."""
+    out = {"url": url, "title": None, "author": None, "year": None,
+           "format": None, "language": None, "size": None, "download_urls": []}
+    try:
+        html = fetch_text(url)
+    except Exception as e:
+        sys.stderr.write(f"  libgen md5 page fetch failed: {e}\n")
+        return out
+    if not md5:
+        md5_m = re.search(r'md5=([A-Fa-f0-9]{32})', url)
+        if md5_m:
+            md5 = md5_m.group(1).lower()
+    if not md5:
+        return out
+    title_m = re.search(r'<title>(.+?)</title>', html, re.IGNORECASE | re.DOTALL)
+    if title_m:
+        out["title"] = re.sub(r"\s+", " ", title_m.group(1)).strip()
+    # LibGen pages list mirror links. Add the canonical library.lol mirror and
+    # any cdn.* links found in the page.
+    out["download_urls"].append(f"https://library.lol/main/{md5}")
+    out["download_urls"].append(f"http://libgen.li/ads.php?md5={md5}")
+    for href in re.findall(r'href="(https?://[^"]+/main/[A-Fa-f0-9]{32}[^"]*)"', html):
+        if href not in out["download_urls"]:
+            out["download_urls"].append(href)
+    # Format hint from URL or page
+    if re.search(r'\.epub', html, re.IGNORECASE):
+        out["format"] = "epub"
+    elif re.search(r'\.pdf', html, re.IGNORECASE):
+        out["format"] = "pdf"
+    return out
+
+
+def resolve_book_page(candidate: dict) -> dict:
+    """Backend-agnostic dispatch: route to annas or libgen resolver based on
+    where the candidate came from. Annas md5 pages are richer; libgen needs
+    its own resolver."""
+    if candidate.get("_backend") == "libgen":
+        return resolve_libgen_md5_page(candidate["url"], md5=candidate.get("md5"))
+    return resolve_md5_page(candidate["url"])
+
+
 def resolve_md5_page(url: str) -> dict:
     html = fetch_text(url)
     out = {"url": url, "title": None, "author": None, "year": None,
@@ -218,7 +382,8 @@ DISCOVER_AUTHOR_MIN = 0.7
 
 
 def discover_books_by_author(author: str, limit: int = 20) -> list[dict]:
-    """Search annas-archive for books by a single author.
+    """Search annas-archive for books by a single author. Falls back to
+    LibGen when annas returns empty or unreachable.
 
     Strategy: search by author name → walk the top results (capped at
     DISCOVER_MAX_CANDIDATES regardless of `limit` so common names don't
@@ -230,13 +395,24 @@ def discover_books_by_author(author: str, limit: int = 20) -> list[dict]:
     with at minimum `title`, `author`, `url`, `format`, `language` populated."""
     candidate_cap = min(max(limit + 10, limit * 2), DISCOVER_MAX_CANDIDATES)
     raw_results = search_annas(author, limit=candidate_cap)
+    backend = "annas"
+    if not raw_results:
+        raw_results = search_libgen(author, limit=candidate_cap)
+        backend = "libgen"
     matched: list[dict] = []
     seen_titles: set[str] = set()
     for r in raw_results:
         if len(matched) >= limit:
             break
         try:
-            meta = resolve_md5_page(r["url"])
+            if backend == "libgen" or r.get("_backend") == "libgen":
+                meta = resolve_libgen_md5_page(r["url"], md5=r.get("md5"))
+                # libgen rows already carry title/author/lang — carry forward
+                for k in ("title", "author", "format", "language", "year"):
+                    if not meta.get(k) and r.get(k):
+                        meta[k] = r[k]
+            else:
+                meta = resolve_md5_page(r["url"])
         except Exception as e:
             sys.stderr.write(f"  resolve {r['url']}: {type(e).__name__}: {e}\n")
             continue
@@ -246,7 +422,8 @@ def discover_books_by_author(author: str, limit: int = 20) -> list[dict]:
             continue
         if fuzzy_ratio(meta_author, author) < DISCOVER_AUTHOR_MIN:
             continue
-        if meta.get("language") and meta["language"] != "en":
+        meta_lang = (meta.get("language") or "").lower()
+        if meta_lang and meta_lang not in ("en", "english"):
             continue
         title_key = meta_title.lower()
         if title_key in seen_titles:
@@ -261,6 +438,7 @@ def ingest_books_by_author(
     limit: int = 20,
     dry_run: bool = False,
     skip_validation: bool = False,
+    whole_book: bool = False,
 ) -> dict:
     """Search annas-archive for all books matching `author`, then ingest each.
 
@@ -286,6 +464,7 @@ def ingest_books_by_author(
                     isbn=None,
                     year=m.get("year"),
                     skip_validation=skip_validation,
+                    whole_book=whole_book,
                 )
                 ingested += 1
                 items.append({"title": title, "status": "ok"})
@@ -311,35 +490,35 @@ def ingest_books_by_author(
 # Pandoc / pdftotext extraction
 # ---------------------------------------------------------------------------
 
-def epub_to_markdown(epub_path: Path, out_path: Path) -> None:
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    cmd = ["pandoc", "-f", "epub", "-t", "markdown", "--wrap=none", "-o", str(out_path), str(epub_path)]
-    proc = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
-    if proc.returncode != 0:
-        raise IngestError(f"pandoc failed: {proc.stderr.strip()[:200]}")
-
-
-def pdf_to_markdown(pdf_path: Path, out_path: Path) -> None:
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    if shutil.which("pdftotext"):
-        cmd = ["pdftotext", "-layout", str(pdf_path), str(out_path)]
-        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
-        if proc.returncode == 0:
-            return
-    cmd = ["pandoc", "-f", "pdf", "-t", "markdown", "--wrap=none", "-o", str(out_path), str(pdf_path)]
-    proc = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
-    if proc.returncode != 0:
-        raise IngestError(f"pdf-to-markdown failed: {proc.stderr.strip()[:200]}")
+# Extraction (epub_to_markdown / pdf_to_markdown / sanity_check_markdown)
+# moved to bin/stage-extract-book.py. Ingest is artifact + metadata stub only;
+# stage 02 owns the body. Old helpers removed to prevent drift.
 
 
 # ---------------------------------------------------------------------------
 # Validation
 # ---------------------------------------------------------------------------
 
+def _normalize_author(name: str) -> str:
+    """LibGen lists authors as `Last, First [Middle]`. Annas / native form is
+    `First [Middle] Last`. Normalize to "first last" tokens for comparison."""
+    s = name.lower().strip()
+    if "," in s:
+        # "Dalio, Ray" -> "Ray Dalio"
+        parts = [p.strip() for p in s.split(",", 1)]
+        if len(parts) == 2 and parts[1]:
+            s = f"{parts[1]} {parts[0]}"
+    # collapse non-letters / non-spaces
+    s = re.sub(r"[^a-z\s]", " ", s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
 def fuzzy_ratio(a: str, b: str) -> float:
     if not a or not b:
         return 0.0
-    return difflib.SequenceMatcher(None, a.lower(), b.lower()).ratio()
+    return difflib.SequenceMatcher(None,
+                                   _normalize_author(a),
+                                   _normalize_author(b)).ratio()
 
 
 def validate_metadata(
@@ -363,18 +542,6 @@ def validate_metadata(
     return len(failures) == 0, failures
 
 
-def sanity_check_markdown(md_text: str) -> tuple[bool, list[str]]:
-    failures = []
-    if len(md_text) < 5000:
-        failures.append(f"length {len(md_text)} chars, too short for a book")
-    if len(md_text) > 5_000_000:
-        failures.append(f"length {len(md_text)} chars, suspiciously large")
-    chapters = re.findall(r"^#+ .{0,80}$", md_text, re.MULTILINE)
-    if len(chapters) < 3:
-        failures.append(f"only {len(chapters)} headings; expected ≥ 3 chapters")
-    return len(failures) == 0, failures
-
-
 # ---------------------------------------------------------------------------
 # Orchestration
 # ---------------------------------------------------------------------------
@@ -387,6 +554,7 @@ def ingest_book(
     isbn: str | None = None,
     year: int | None = None,
     skip_validation: bool = False,
+    whole_book: bool = False,
 ) -> Path:
     if not (title or url or epub_path):
         raise ValueError("must provide --title (with --author) or --url or --epub-path")
@@ -412,15 +580,32 @@ def ingest_book(
         if local is None and md5_url is None:
             if not (title and author):
                 raise IngestError("URL did not resolve and no title+author for fallback search")
+            picked_candidate: dict | None = None
             print(f"  searching annas-archive for: {title} | {author}")
-            results = search_annas(f"{title} {author}", limit=5)
-            if not results:
-                raise IngestError("no search results from annas-archive")
-            md5_url = results[0]["url"]
-            print(f"  picking top result: {md5_url}")
+            annas_results = search_annas(f"{title} {author}", limit=5)
+            if annas_results:
+                picked_candidate = annas_results[0]
+                print(f"  annas top result: {picked_candidate['url']}")
+            else:
+                print("  no annas results, trying libgen")
+                libgen_results = search_libgen(f"{title} {author}", limit=5)
+                if libgen_results:
+                    picked_candidate = libgen_results[0]
+                    print(f"  libgen top result: {picked_candidate['url']}")
+            if not picked_candidate:
+                raise IngestError("no search results from annas-archive or libgen")
+            md5_url = picked_candidate["url"]
         if md5_url:
-            print(f"  resolving md5 page: {md5_url}")
-            meta = resolve_md5_page(md5_url)
+            print(f"  resolving book page: {md5_url}")
+            # Backend dispatch
+            if "libgen" in md5_url:
+                meta = resolve_libgen_md5_page(md5_url)
+                if not meta.get("title"):
+                    meta["title"] = title
+                if not meta.get("author"):
+                    meta["author"] = author
+            else:
+                meta = resolve_md5_page(md5_url)
             print(f"  parsed metadata: title={meta.get('title')!r} author={meta.get('author')!r} format={meta.get('format')} lang={meta.get('language')}")
             ok, failures = validate_metadata(meta, title, author) if not skip_validation else (True, [])
             if not ok:
@@ -437,33 +622,60 @@ def ingest_book(
     final_title = meta.get("title") or title or local.stem
     final_author = meta.get("author") or author or "Unknown"
     final_year = meta.get("year") or year
-    slug = L.book_slug(final_title, final_author)
-    book_dir = L.RAW / "books" / L.author_slug(final_author)
+
+    # Slug fallback for non-Latin titles/authors that ASCII-fold to empty.
+    raw_slug = L.book_slug(final_title, final_author)
+    if not raw_slug or raw_slug.startswith("-") or raw_slug == "unknown-":
+        digest = hashlib.sha256(f"{final_title}|{final_author}".encode("utf-8")).hexdigest()[:8]
+        raw_slug = f"book-{digest}"
+    slug = raw_slug
+
+    author_slug = L.author_slug(final_author)
+    if not author_slug:
+        author_slug = "author-" + hashlib.sha256(final_author.encode("utf-8")).hexdigest()[:6]
+
+    artifact_hash_pre = L.file_sha256(local)
+
+    # New nested layout: raw/books/<author-slug>/<book-slug>/{source.*, _full.md, ch-NN-*.md}
+    author_dir = L.RAW / "books" / author_slug
+    book_dir = author_dir / slug
+
+    # Collision check — only when the directory is non-empty AND looks like
+    # a previous ingest of a DIFFERENT source. Three signals (in order):
+    #   1. existing source_url ≠ incoming url
+    #   2. existing artifact_sha256 ≠ artifact_hash_pre (for --epub-path mode
+    #      where neither side has a source_url)
+    #   3. existing title differs significantly from final_title
+    if book_dir.exists() and any(book_dir.iterdir()):
+        full_path = book_dir / "_full.md"
+        existing_fm, _ = L.read_md(full_path) if full_path.exists() else ({}, "")
+        existing_url = (existing_fm.get("source_url") or "").strip()
+        existing_hash = (existing_fm.get("artifact_sha256")
+                         or existing_fm.get("source_hash") or "").strip()
+        existing_title = (existing_fm.get("title") or "").strip()
+        is_collision = False
+        if existing_url and url and existing_url != url:
+            is_collision = True
+        elif existing_hash and existing_hash != artifact_hash_pre:
+            is_collision = True
+        elif existing_title and final_title and fuzzy_ratio(existing_title, final_title) < 0.85:
+            is_collision = True
+        if is_collision:
+            disambig = hashlib.sha256(
+                (url or str(local) or artifact_hash_pre).encode("utf-8")
+            ).hexdigest()[:5]
+            slug = f"{raw_slug}-{disambig}"
+            book_dir = author_dir / slug
     book_dir.mkdir(parents=True, exist_ok=True)
 
-    raw_artifact_path = book_dir / f"{slug}{local.suffix.lower()}"
+    artifact_ext = local.suffix.lower().lstrip(".") or "epub"
+    raw_artifact_path = book_dir / f"source.{artifact_ext}"
     if local.resolve() != raw_artifact_path.resolve():
         shutil.copy2(local, raw_artifact_path)
 
-    body_path = book_dir / f"{slug}.body.md"
-    if raw_artifact_path.suffix.lower() == ".epub":
-        epub_to_markdown(raw_artifact_path, body_path)
-    elif raw_artifact_path.suffix.lower() == ".pdf":
-        pdf_to_markdown(raw_artifact_path, body_path)
-    else:
-        raise IngestError(f"unsupported book format: {raw_artifact_path.suffix}")
-    body = body_path.read_text(encoding="utf-8", errors="replace")
-    body_path.unlink(missing_ok=True)
-
-    if not skip_validation:
-        ok, failures = sanity_check_markdown(body)
-        if not ok:
-            raise IngestError("sanity check failed: " + "; ".join(failures))
-
-    raw_path = book_dir / f"{slug}.md"
-    raw_path = L.collision_safe_path(raw_path, source_url=url or meta.get("url"))
-    if raw_path.stem != slug:
-        slug = raw_path.stem
+    # Write a metadata-only stub _full.md so stage 02 has a place to land its
+    # body. NO source_hash here — stage 02 sets that after it extracts.
+    raw_path = book_dir / "_full.md"
     extra = {
         "slug": slug,
         "title": final_title,
@@ -471,22 +683,46 @@ def ingest_book(
         "year": final_year,
         "isbn": isbn,
         "language": "en",
-        "format": raw_artifact_path.suffix.lstrip(".").lower(),
+        "format": artifact_ext,
         "source_url": url,
         "annas_md5": (meta.get("url") or "").rsplit("/", 1)[-1] if meta.get("url") else None,
         "artifact_sha256": L.file_sha256(raw_artifact_path),
+        "whole_book": bool(whole_book),
+        "extract_status": "pending",      # stage 02 sets this to 'ok' or 'failed'
     }
     provider_modified_at = f"{final_year:04d}-01-01T00:00:00Z" if isinstance(final_year, int) else None
+    stub_body = (
+        "## Stub\n\n"
+        "_This file is a metadata stub written by `bin/ingest-book.py`. "
+        "Run `bin/library-build.sh --stage extract` "
+        "(or `bin/stage-extract-book.py`) to populate the body._\n"
+    )
     L.write_raw(
         raw_path,
         source=SOURCE,
-        body=body,
+        body=stub_body,
         provider_modified_at=provider_modified_at,
         extra=extra,
     )
-    print(f"  wrote raw/{raw_path.relative_to(L.RAW)}")
-    L.log_event(f"ingest-book: {slug} ({final_title!r})")
-    L.log_ingest("book", slug, "ok", {"author": final_author, "format": extra["format"]})
+    print(f"  wrote raw/{raw_path.relative_to(L.RAW)} (metadata stub)"
+          + (" (whole-book)" if whole_book else ""))
+
+    # Hand off to stage 02 for the actual extraction. This is the canonical
+    # extractor — keeps ingest and stage 02 from diverging.
+    stage2 = _load_sibling("stage-extract-book")
+    rec = stage2.extract_book(book_dir, force=True, dry_run=False)
+    stage2.log_record(rec)
+    if rec.get("status") not in ("ok", "noop"):
+        raise IngestError(
+            f"stage-extract-book failed for {slug}: {rec.get('reason') or rec.get('status')}"
+        )
+    print(f"  stage 02 extract: {rec['status']} "
+          f"({rec.get('body_chars', '?')} chars, {rec.get('heading_count', '?')} H1s)")
+
+    L.log_event(f"ingest-book: {slug} ({final_title!r})"
+                + (" [whole-book]" if whole_book else ""))
+    L.log_ingest("book", slug, "ok", {"author": final_author, "format": extra["format"],
+                                       "whole_book": bool(whole_book)})
     return raw_path
 
 
@@ -503,6 +739,8 @@ def main() -> int:
                     help="for --author bibliography mode: max books to ingest")
     ap.add_argument("--dry-run", action="store_true",
                     help="for --author bibliography mode: discover but do not download/ingest")
+    ap.add_argument("--whole-book", action="store_true",
+                    help="mark this ingest as whole-book — chapterize stage will skip it")
     args = ap.parse_args()
 
     bibliography_mode = bool(
@@ -515,6 +753,7 @@ def main() -> int:
                 limit=args.limit,
                 dry_run=args.dry_run,
                 skip_validation=args.skip_validation,
+                whole_book=args.whole_book,
             )
             if summary["matched"] == 0:
                 return 2
@@ -522,7 +761,8 @@ def main() -> int:
                 return 0
             return 1 if summary["failed"] > 0 else 0
         ingest_book(args.title, args.author, args.url, args.epub_path,
-                    args.isbn, args.year, skip_validation=args.skip_validation)
+                    args.isbn, args.year, skip_validation=args.skip_validation,
+                    whole_book=args.whole_book)
     except IngestError as e:
         print(f"  ! {e}", file=sys.stderr)
         return 2

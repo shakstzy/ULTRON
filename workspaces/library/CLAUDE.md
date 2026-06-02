@@ -51,6 +51,26 @@ See `identity.md`. One-line summary: internalized + scannable, one short author 
 | Synthesis on <topic>? | `wiki/synthesis/<topic>.md` |
 | Raw text of source X | `raw/<source>/<slug>.md` |
 
+## Pipeline (workspace-local stages)
+
+```
+01-ingest      bin/ingest-*.py                    raw/<source>/<path>.md
+02-extract     bin/stage-extract-book.py          EPUB/PDF → _full.md       (books only)
+03-chapterize  bin/stage-chapterize-book.py       _full.md → ch-NN-*.md     (books only, skipped for --whole-book)
+04-wiki-build  /graphify --wiki workspaces/library  raw → wiki/entities/, wiki/concepts/
+```
+
+Each stage's contract is at `stages/<NN>-<name>/CONTEXT.md`. Stages 02–04 run via `bin/library-build.sh` (orchestrator).
+
+## Book layout (nested per book under one raw/ root)
+
+```
+raw/books/<author-slug>/<book-slug>/
+├── source.epub           # gitignored (original artifact)
+├── _full.md              # standardized full-body markdown + envelope
+└── ch-NN-<slug>.md       # per-chapter files (skipped when whole_book: true)
+```
+
 ## Ingest entry points
 
 ```bash
@@ -58,10 +78,10 @@ See `identity.md`. One-line summary: internalized + scannable, one short author 
 bin/ingest-book.py --title "<title>" --author "<author>"
 bin/ingest-book.py --url "https://annas-archive.org/md5/<md5>"
 bin/ingest-book.py --epub-path /path/to/book.epub --title X --author Y
+bin/ingest-book.py --title X --author Y --whole-book      # mark as not-chapterized
 
 bin/ingest-youtube.py "<video-or-channel-url>"
 bin/ingest-youtube.py "<channel-url>" --backfill all
-bin/ingest-youtube.py "<channel-url>" --backfill 50
 bin/ingest-youtube.py "<channel-url>" --videos id1,id2,id3
 
 bin/ingest-reel.py "<instagram-url>"
@@ -71,26 +91,26 @@ bin/ingest-article.py "<url>"
 # Bulk ingest
 bin/ingest-book.py --author "James Clear"                 # all books by author from annas-archive
 bin/ingest-book.py --author "James Clear" --limit 5 --dry-run
-
 bin/ingest-batch.py url1 url2 url3                        # multi-URL paste (positional)
 bin/ingest-batch.py --urls list.txt                       # one URL per line, # comments OK
 cat list.txt | bin/ingest-batch.py --urls -               # stdin
 bin/ingest-batch.py --crawl https://paulgraham.com/articles.html
-bin/ingest-batch.py --crawl <hub> --limit 5 --dry-run     # preview before downloading
-bin/ingest-batch.py --crawl <hub> --include-pattern '/posts/' --exclude-pattern '/tag/'
 
-# After ingest, build the wiki:
-/graphify --wiki workspaces/library
+# Build the pipeline (stages 02 → 04)
+bin/library-build.sh                                      # all stages, all books
+bin/library-build.sh --stage extract                      # 02 only
+bin/library-build.sh --stage chapterize --book clear-atomic-habits
+bin/library-build.sh --force                              # re-run regardless of source_hash
 
 # Then ask for next bite:
-bin/library-next.py [--minutes N] [--type book|youtube-video|paper|...]
+bin/library-next.py [--minutes N] [--type book|chapter|youtube-video|paper|...]
 ```
 
 ## Agents
 
-- `agents/wiki-agent.md` — runs DOWNSTREAM of ingest (lint stage or graphify), not from `bin/ingest-*.py`. Synthesizes wiki entity pages from `raw/` per the schema.
+- `agents/wiki-agent.md` — runs DOWNSTREAM of ingest (stage 04 / graphify), not from `bin/ingest-*.py`. Synthesizes wiki entity pages from `raw/` per the schema.
 - `agents/lint-agent.md` — used by lint stage.
 
 ## Sources
 
-Declared in `config/sources.yaml`. Scheduled jobs in `config/schedule.yaml` (lint daily; no scheduled ingest, all ingest is on-demand).
+Declared in `config/sources.yaml`. v1 book source is Anna's Archive only (manual EPUB/PDF drops via `--epub-path` are always supported but are not a declared "source"). Other source types (YT, IG, papers, articles) remain as before.

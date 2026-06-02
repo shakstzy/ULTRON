@@ -12,6 +12,7 @@ Architecture (per `_shell/stages/ingest/CONTEXT.md`):
 """
 from __future__ import annotations
 
+import contextlib
 import datetime
 import hashlib
 import json
@@ -155,11 +156,67 @@ def read_md(path: Path) -> tuple[dict[str, Any], str]:
 
 
 def write_md(path: Path, fm: dict[str, Any], body: str) -> None:
+    """Atomic write: stage to a per-process tmpfile in the same dir, fsync,
+    then os.replace into place. Two siblings writing the same path race the
+    rename rather than corrupting partial bytes."""
     path.parent.mkdir(parents=True, exist_ok=True)
     out = render_frontmatter(fm) + body
     if not out.endswith("\n"):
         out += "\n"
-    path.write_text(out, encoding="utf-8")
+    tmp = path.with_name(f".{path.name}.{os.getpid()}.{os.urandom(4).hex()}.tmp")
+    try:
+        with open(tmp, "w", encoding="utf-8") as f:
+            f.write(out)
+            f.flush()
+            try:
+                os.fsync(f.fileno())
+            except OSError:
+                pass
+        os.replace(tmp, path)
+    except Exception:
+        try:
+            tmp.unlink()
+        except FileNotFoundError:
+            pass
+        raise
+
+
+@contextlib.contextmanager
+def book_lock(book_dir: Path, timeout: float = 0.0):
+    """Per-book advisory flock. Stages 02/03 acquire this around their
+    per-book mutations so two `library-build.sh` runs (or stage 02 +
+    stage 03 racing on the same book) don't corrupt _full.md or chapter
+    shards.
+
+    `timeout=0` means non-blocking — fails fast with BlockingIOError.
+    Pass a positive timeout to poll. The lockfile lives at
+    `<book_dir>/.lock` and is never deleted (zero-byte, reusable)."""
+    import fcntl
+    book_dir.mkdir(parents=True, exist_ok=True)
+    lock_path = book_dir / ".lock"
+    if not lock_path.exists():
+        lock_path.touch()
+    fp = open(lock_path, "r+")
+    try:
+        if timeout <= 0:
+            fcntl.flock(fp.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+        else:
+            import time
+            deadline = time.monotonic() + timeout
+            while True:
+                try:
+                    fcntl.flock(fp.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+                    break
+                except BlockingIOError:
+                    if time.monotonic() > deadline:
+                        raise
+                    time.sleep(0.1)
+        yield
+    finally:
+        try:
+            fcntl.flock(fp.fileno(), fcntl.LOCK_UN)
+        finally:
+            fp.close()
 
 
 # ---------------------------------------------------------------------------

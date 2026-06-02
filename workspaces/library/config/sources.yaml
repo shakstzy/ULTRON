@@ -64,17 +64,30 @@ sources:
     accepts:
       - title-and-author: "<title>, <author>"
       - "annas-archive.org/md5/*"
-      - "*.epub"
-      - "*.pdf"
+      - "*.epub"             # local file via --epub-path
+      - "*.pdf"              # local file via --epub-path (despite the flag name)
     validation:
       title_fuzzy_match_min: 0.85
       author_fuzzy_match_min: 0.7
       language: en
       format_preference: [epub, pdf]
+    chapterize:
+      default: true             # all books chapterized by default
+      override: --whole-book    # opt-out flag
+    pipeline:
+      - 01-ingest
+      - 02-extract              # idempotent re-extract (stage-extract-book.py)
+      - 03-chapterize           # split _full.md into ch-NN-*.md
+      - 04-wiki-build           # synthesize wiki entity pages
     notes: |
-      Pure capture: Anna's Archive search OR direct URL OR local file →
-      pandoc EPUB → markdown → raw/books/<author>/<slug>.md alongside
-      <slug>.epub (gitignored).
+      v1 source scope = Anna's Archive (online) + manual EPUB/PDF drops
+      (--epub-path). Pure capture writes a nested layout:
+        raw/books/<author>/<book-slug>/
+          ├── source.epub                  # gitignored
+          ├── _full.md                     # standardized full body
+          └── ch-NN-<slug>.md              # per-chapter shards (after stage 03)
+      Stages 02-04 run via bin/library-build.sh and are independently
+      re-runnable on a per-book scope.
 
   article:
     handler: bin/ingest-article.py
